@@ -2,7 +2,7 @@ import { getCurrentUser } from '@/app/auth';
 
 export async function apiUser() {
   const user = await getCurrentUser();
-  if (!user) throw new ApiError(401, 'Inicia sesión para guardar tu progreso.');
+  if (!user) throw new ApiError(401, 'Elige un nombre para guardar tu progreso.');
   return user;
 }
 

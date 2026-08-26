@@ -36,7 +36,7 @@ type MasteryRow = {
 };
 
 export async function ensureProfile(user: AppUser) {
-  const fallbackName = (user.fullName ?? user.email.split('@')[0] ?? 'Estudiante').slice(0, 40);
+  const fallbackName = (user.fullName ?? (user.email ? user.email.split('@')[0] : user.displayName) ?? 'Estudiante').slice(0, 40);
   await supabaseRest('profiles?on_conflict=id', {
     method: 'POST',
     prefer: 'resolution=ignore-duplicates,return=minimal',

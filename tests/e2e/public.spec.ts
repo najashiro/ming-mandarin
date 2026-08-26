@@ -18,9 +18,12 @@ test('el arcade y el audio sintético están disponibles sin cuenta', async ({ p
   await expect(page.getByRole('button', { name: /Escuchar/ }).first()).toBeVisible();
 });
 
-test('las funciones persistentes solicitan una cuenta', async ({ page, request }) => {
+test('las funciones persistentes solicitan un nombre', async ({ page, request }) => {
   await page.goto('/login?returnTo=/progress');
-  await expect(page.getByRole('heading', { name: 'Guarda tu aprendizaje' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: '¿Cómo quieres que te llamemos?' })).toBeVisible();
+  await expect(page.getByLabel('Tu nombre')).toBeVisible();
+  await expect(page.getByLabel('Correo')).toHaveCount(0);
+  await expect(page.getByLabel('Contraseña')).toHaveCount(0);
   const progress = await request.get('/api/progress');
   expect(progress.status()).toBe(401);
   const start = await request.post('/api/exam/start');

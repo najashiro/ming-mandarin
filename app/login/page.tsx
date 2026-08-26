@@ -7,5 +7,5 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
   const params = await searchParams;
   const returnTo = safeReturnPath(params.returnTo);
   if (await getCurrentUser()) redirect(returnTo);
-  return <SiteShell><main><LessonHeader eyebrow="账号 · CUENTA" title="Guarda tu aprendizaje" description="Crea una cuenta con correo o inicia sesión para sincronizar progreso, errores, examen y ranking."/><div className="shell narrow"><LoginForm returnTo={returnTo}/></div></main></SiteShell>;
+  return <SiteShell><main><LessonHeader eyebrow="名字 · TU PERFIL" title="¿Cómo quieres que te llamemos?" description="Elige un nombre una sola vez. Míng conservará tu progreso en este navegador sin pedir correo ni contraseña."/><div className="shell narrow"><LoginForm returnTo={returnTo}/></div></main></SiteShell>;
 }

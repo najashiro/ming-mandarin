@@ -13,6 +13,8 @@ Plataforma educativa para la Lección 1 **你最近怎么样？**. Incluye vocab
 
 No existe funcionalidad de certificados ni almacenamiento de archivos. Un examen perfecto se refleja únicamente en el historial y, si el estudiante lo autoriza, en el ranking.
 
+Los estudiantes eligen un nombre una sola vez. Supabase crea una sesión anónima persistente en ese navegador, sin correo ni contraseña. Si se borran las cookies o se cambia de dispositivo, esa identidad anónima no puede recuperarse.
+
 ## Variables de entorno
 
 Copia `.env.example` como `.env.local`:
@@ -59,7 +61,7 @@ No se insertan estudiantes, notas ni posiciones ficticias.
 ## Acceso
 
 - Las lecciones, juegos y ranking son públicos.
-- Cuenta por correo y contraseña para progreso, errores, práctica adaptativa, examen e inscripción voluntaria en el ranking.
+- Perfil por nombre con sesión anónima persistente para progreso, errores, práctica adaptativa, examen e inscripción voluntaria en el ranking.
 - `/admin/content` exige una cuenta incluida en `ADMIN_EMAILS`.
 
 ## Límites conocidos

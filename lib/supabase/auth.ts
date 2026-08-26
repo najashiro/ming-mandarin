@@ -9,6 +9,7 @@ export const AUTH_COOKIE_MAX_AGE = 60 * 60 * 24 * 30;
 export type SupabaseAuthUser = {
   id: string;
   email?: string;
+  is_anonymous?: boolean;
   user_metadata?: Record<string, unknown>;
 };
 

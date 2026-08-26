@@ -5,8 +5,9 @@ import { ACCESS_COOKIE, authRequest, REFRESH_COOKIE, type SupabaseAuthUser } fro
 export type AppUser = {
   userId: string;
   displayName: string;
-  email: string;
+  email: string | null;
   fullName: string | null;
+  isAnonymous: boolean;
 };
 
 export async function getCurrentUser(): Promise<AppUser | null> {
@@ -18,14 +19,16 @@ export async function getCurrentUser(): Promise<AppUser | null> {
       method: 'GET',
       headers: { authorization: `Bearer ${accessToken}` },
     });
-    const email = user.email ?? '';
-    if (!email) return null;
+    const email = user.email ?? null;
+    const isAnonymous = user.is_anonymous === true;
+    if (!email && !isAnonymous) return null;
     const fullName = typeof user.user_metadata?.full_name === 'string' ? user.user_metadata.full_name : null;
     return {
       userId: user.id,
       email,
       fullName,
-      displayName: fullName ?? email.split('@')[0] ?? 'Estudiante',
+      isAnonymous,
+      displayName: fullName ?? (email ? email.split('@')[0] : 'Estudiante'),
     };
   } catch {
     return null;
