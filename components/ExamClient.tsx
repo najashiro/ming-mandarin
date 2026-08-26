@@ -5,16 +5,73 @@ import Link from 'next/link';
 import type { ExamQuestion, ExamSection } from '@/seed/exam';
 import { SpeakButton } from './SpeakButton';
 
-type PublicQuestion = Omit<ExamQuestion,'answer'>;
-type ExamResult = { score:number; sectionScores:Record<ExamSection,number>; review:{id:string;section:ExamSection;correct:boolean}[]; certificateCode:string|null; durationSeconds:number };
-const labels:Record<ExamSection,string>={listening:'Comprensión auditiva',pinyin:'Pinyin y tonos',vocabulary:'Vocabulario',grammar:'Gramática',dialogue:'Diálogo',reading:'Lectura',hanzi:'Hanzi',communication:'Comunicación'};
+type PublicQuestion = Omit<ExamQuestion, 'answer'>;
+type ExamResult = {
+  score: number;
+  sectionScores: Record<ExamSection, number>;
+  review: { id: string; section: ExamSection; correct: boolean }[];
+  durationSeconds: number;
+};
 
-export function ExamClient(){
-  const [sessionId,setSessionId]=useState(''); const [questions,setQuestions]=useState<PublicQuestion[]>([]); const [answers,setAnswers]=useState<Record<string,string>>({}); const [result,setResult]=useState<ExamResult|null>(null); const [busy,setBusy]=useState(false); const [error,setError]=useState(''); const [certificateReady,setCertificateReady]=useState(false);
-  async function start(){setBusy(true);setError('');try{const response=await fetch('/api/exam/start',{method:'POST'});const body=await response.json() as {error?:string;sessionId:string;questions:PublicQuestion[]};if(!response.ok)throw new Error(body.error??'No se pudo iniciar.');setSessionId(body.sessionId);setQuestions(body.questions);}catch(cause){setError(cause instanceof Error?cause.message:'No se pudo iniciar.');}finally{setBusy(false);}}
-  async function submit(){if(Object.keys(answers).length<questions.length&&!confirm('Faltan respuestas. ¿Enviar de todos modos?'))return;setBusy(true);try{const response=await fetch('/api/exam/submit',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({sessionId,answers})});const body=await response.json() as ExamResult&{error?:string};if(!response.ok)throw new Error(body.error??'No se pudo enviar.');setResult(body);if(body.certificateCode)await createCertificate(body.certificateCode);}catch(cause){setError(cause instanceof Error?cause.message:'No se pudo enviar.');}finally{setBusy(false);}}
-  async function createCertificate(code:string){const canvas=document.createElement('canvas');canvas.width=1600;canvas.height=1000;const ctx=canvas.getContext('2d');if(!ctx)return;ctx.fillStyle='#f6f3eb';ctx.fillRect(0,0,1600,1000);ctx.strokeStyle='#1d6a59';ctx.lineWidth=12;ctx.strokeRect(48,48,1504,904);ctx.strokeStyle='#a23a2c';ctx.lineWidth=2;ctx.strokeRect(70,70,1460,860);ctx.textAlign='center';ctx.fillStyle='#1d6a59';ctx.font='700 48px Georgia';ctx.fillText('MÍNG · MANDARÍN ACTIVO',800,190);ctx.fillStyle='#17231f';ctx.font='700 92px serif';ctx.fillText('第一课大师',800,330);ctx.font='42px system-ui';ctx.fillText('Certificado de dominio · Lección 1',800,410);ctx.font='700 68px system-ui';ctx.fillText('100 / 100',800,555);ctx.font='34px system-ui';ctx.fillText('你最近怎么样？ · Nǐ zuìjìn zěnmeyàng?',800,650);ctx.fillStyle='#65716c';ctx.font='24px monospace';ctx.fillText(`Código verificable: ${code}`,800,765);ctx.fillText(new Date().toLocaleDateString('es-PE',{dateStyle:'long'}),800,815);ctx.fillStyle='#a23a2c';ctx.font='700 58px serif';ctx.fillText('明',800,900);const blob=await new Promise<Blob|null>((resolve)=>canvas.toBlob(resolve,'image/png'));if(!blob)return;const response=await fetch(`/api/certificates/${code}`,{method:'POST',headers:{'content-type':'image/png'},body:blob});if(response.ok)setCertificateReady(true);}
-  if(result)return <section className="exam-result"><p className="eyebrow">RESULTADO VERIFICADO EN SERVIDOR</p><strong>{result.score}<small>/100</small></strong><h2>{result.score===100?'第一课大师 · Dominio perfecto':result.score>=70?'Buen avance':'Hay conceptos que conviene repasar'}</h2><div className="score-grid">{Object.entries(result.sectionScores).map(([section,score])=><span key={section}><b>{score}</b>{labels[section as ExamSection]}</span>)}</div>{result.certificateCode&&<div className="certificate-callout"><h3>Certificado obtenido</h3><p>Código público: <b>{result.certificateCode}</b></p>{certificateReady?<><a className="button button-primary" href={`/api/certificates/${result.certificateCode}?file=1`}>Descargar PNG</a><Link href={`/certificate/${result.certificateCode}`}>Verificar públicamente</Link></>:<p>Preparando archivo PNG…</p>}</div>}<button type="button" onClick={()=>{setResult(null);setQuestions([]);setAnswers({});}}>Intentar de nuevo</button></section>;
-  if(!questions.length)return <section className="exam-intro"><div><p className="eyebrow">EXAMEN FINAL · 100 PUNTOS</p><h2>Demuestra lo aprendido</h2><p>20 preguntas · 8 competencias. Las respuestas se califican en el servidor. Solo 100/100 crea el certificado 第一课大师.</p></div><div className="exam-weights">{Object.values(labels).map(label=><span key={label}>{label}</span>)}</div>{error&&<p className="form-error">{error} <Link href="/signin-with-chatgpt?return_to=/lesson/1/exam">Iniciar sesión</Link></p>}<button className="button button-primary" disabled={busy} type="button" onClick={start}>{busy?'Preparando…':'Comenzar examen'}</button></section>;
-  return <section className="exam-form"><div className="practice-top"><div><p className="eyebrow">EXAMEN EN CURSO</p><h2>{Object.keys(answers).length}/{questions.length} respondidas</h2></div><span>100 puntos</span></div>{questions.map((question,index)=><article className="exam-question" key={question.id}><small>{index+1} · {labels[question.section]} · {question.points} pt</small><p>{question.prompt}</p>{question.audioText&&<SpeakButton text={question.audioText}/>} {question.options?<div className="option-grid">{question.options.map(option=><label className={answers[question.id]===option?'selected':''} key={option}><input type="radio" name={question.id} value={option} checked={answers[question.id]===option} onChange={()=>setAnswers(v=>({...v,[question.id]:option}))}/>{option}</label>)}</div>:<input value={answers[question.id]??''} onChange={(e)=>setAnswers(v=>({...v,[question.id]:e.target.value}))} placeholder="Escribe tu respuesta"/>}</article>)}{error&&<p className="form-error">{error}</p>}<button className="button button-dark" disabled={busy} type="button" onClick={submit}>{busy?'Calificando…':'Enviar examen'}</button></section>;
+const labels: Record<ExamSection, string> = {
+  listening: 'Comprensión auditiva', pinyin: 'Pinyin y tonos', vocabulary: 'Vocabulario', grammar: 'Gramática',
+  dialogue: 'Diálogo', reading: 'Lectura', hanzi: 'Hanzi', communication: 'Comunicación',
+};
+
+export function ExamClient() {
+  const [sessionId, setSessionId] = useState('');
+  const [questions, setQuestions] = useState<PublicQuestion[]>([]);
+  const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [result, setResult] = useState<ExamResult | null>(null);
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState('');
+
+  async function start() {
+    setBusy(true); setError('');
+    try {
+      const response = await fetch('/api/exam/start', { method: 'POST' });
+      const body = await response.json() as { error?: string; sessionId: string; questions: PublicQuestion[] };
+      if (!response.ok) throw new Error(body.error ?? 'No se pudo iniciar.');
+      setSessionId(body.sessionId); setQuestions(body.questions);
+    } catch (cause) { setError(cause instanceof Error ? cause.message : 'No se pudo iniciar.'); }
+    finally { setBusy(false); }
+  }
+
+  async function submit() {
+    if (Object.keys(answers).length < questions.length && !confirm('Faltan respuestas. ¿Enviar de todos modos?')) return;
+    setBusy(true); setError('');
+    try {
+      const response = await fetch('/api/exam/submit', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ sessionId, answers }) });
+      const body = await response.json() as ExamResult & { error?: string };
+      if (!response.ok) throw new Error(body.error ?? 'No se pudo enviar.');
+      setResult(body);
+    } catch (cause) { setError(cause instanceof Error ? cause.message : 'No se pudo enviar.'); }
+    finally { setBusy(false); }
+  }
+
+  if (result) return <section className="exam-result">
+    <p className="eyebrow">RESULTADO VERIFICADO EN SERVIDOR</p>
+    <strong>{result.score}<small>/100</small></strong>
+    <h2>{result.score === 100 ? '第一课大师 · Dominio perfecto' : result.score >= 70 ? 'Buen avance' : 'Hay conceptos que conviene repasar'}</h2>
+    <div className="score-grid">{Object.entries(result.sectionScores).map(([section, score]) => <span key={section}><b>{score}</b>{labels[section as ExamSection]}</span>)}</div>
+    <p className="rule-note">Tu mejor puntuación contará en el ranking solo si activas la participación desde tu perfil.</p>
+    <button type="button" onClick={() => { setResult(null); setQuestions([]); setAnswers({}); }}>Intentar de nuevo</button>
+  </section>;
+
+  if (!questions.length) return <section className="exam-intro">
+    <div><p className="eyebrow">EXAMEN FINAL · 100 PUNTOS</p><h2>Demuestra lo aprendido</h2><p>20 preguntas · 8 competencias. Las respuestas se califican en el servidor y el cliente no puede alterar la nota.</p></div>
+    <div className="exam-weights">{Object.values(labels).map((label) => <span key={label}>{label}</span>)}</div>
+    {error && <p className="form-error">{error} <Link href="/login?returnTo=/lesson/1/exam">Iniciar sesión</Link></p>}
+    <button className="button button-primary" disabled={busy} type="button" onClick={start}>{busy ? 'Preparando…' : 'Comenzar examen'}</button>
+  </section>;
+
+  return <section className="exam-form">
+    <div className="practice-top"><div><p className="eyebrow">EXAMEN EN CURSO</p><h2>{Object.keys(answers).length}/{questions.length} respondidas</h2></div><span>100 puntos</span></div>
+    {questions.map((question, index) => <article className="exam-question" key={question.id}>
+      <small>{index + 1} · {labels[question.section]} · {question.points} pt</small><p>{question.prompt}</p>
+      {question.audioText && <SpeakButton text={question.audioText}/>} {question.options ? <div className="option-grid">{question.options.map((option) => <label className={answers[question.id] === option ? 'selected' : ''} key={option}><input type="radio" name={question.id} value={option} checked={answers[question.id] === option} onChange={() => setAnswers((value) => ({ ...value, [question.id]: option }))}/>{option}</label>)}</div> : <input value={answers[question.id] ?? ''} onChange={(event) => setAnswers((value) => ({ ...value, [question.id]: event.target.value }))} placeholder="Escribe tu respuesta"/>}
+    </article>)}
+    {error && <p className="form-error">{error}</p>}
+    <button className="button button-dark" disabled={busy} type="button" onClick={submit}>{busy ? 'Calificando…' : 'Enviar examen'}</button>
+  </section>;
 }

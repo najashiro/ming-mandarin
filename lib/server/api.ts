@@ -1,7 +1,7 @@
-import { getChatGPTUser } from '@/app/chatgpt-auth';
+import { getCurrentUser } from '@/app/auth';
 
 export async function apiUser() {
-  const user = await getChatGPTUser();
+  const user = await getCurrentUser();
   if (!user) throw new ApiError(401, 'Inicia sesión para guardar tu progreso.');
   return user;
 }

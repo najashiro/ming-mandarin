@@ -8,5 +8,4 @@ export function scoreExamAnswers(answers:AnswerMap){
   const review=examBank.map(question=>{const correct=checkExamAnswer(question.section,question.answer,answers[question.id]??'');if(correct)sectionScores[question.section]+=question.points;return{id:question.id,section:question.section,correct};});
   return {score:Object.values(sectionScores).reduce((sum,value)=>sum+value,0),sectionScores,review};
 }
-export function isCertificateEligible(score:number){return score===100;}
 export function perfectAnswerFixture():AnswerMap{return Object.fromEntries(examBank.map(question=>[question.id,question.answer]));}

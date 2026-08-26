@@ -22,5 +22,5 @@ export const howYouLearn = [
   ['6', 'Conversa', 'Responde en situaciones de la Lección 1.'],
   ['7', 'Repite inteligentemente', 'Lo difícil vuelve antes.'],
   ['8', 'Demuestra lo aprendido', 'Supera el examen final.'],
-  ['9', 'Consigue el 100/100', 'Obtén 第一课大师.'],
+  ['9', 'Consigue el 100/100', 'Mejora tu posición en el ranking voluntario.'],
 ];
