@@ -1,0 +1,1 @@
+export function denseRankScores<T extends {score:number}>(rows:T[]){let rank=0;let previous:number|undefined;return [...rows].sort((a,b)=>b.score-a.score).map(row=>{if(row.score!==previous){rank+=1;previous=row.score;}return{...row,rank};});}

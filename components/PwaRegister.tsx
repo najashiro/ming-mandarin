@@ -1,0 +1,4 @@
+'use client';
+import { useEffect } from 'react';
+async function flushOfflineAttempts(){const key='ming-offline-attempts';const queue=JSON.parse(localStorage.getItem(key)??'[]') as unknown[];if(!queue.length)return;const pending=[];for(const attempt of queue){try{const response=await fetch('/api/practice',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(attempt)});if(!response.ok)pending.push(attempt);}catch{pending.push(attempt);}}localStorage.setItem(key,JSON.stringify(pending));}
+export function PwaRegister(){useEffect(()=>{if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js').catch(()=>undefined);flushOfflineAttempts();window.addEventListener('online',flushOfflineAttempts);return()=>window.removeEventListener('online',flushOfflineAttempts);},[]);return null;}

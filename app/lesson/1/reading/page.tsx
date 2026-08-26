@@ -1,0 +1,4 @@
+import { SiteShell, LessonHeader } from '@/components/SiteShell';
+import { PracticeEngine } from '@/components/PracticeEngine';
+import { exercises } from '@/seed/exercises';
+export default function ReadingPage(){const set=exercises.filter(item=>['reading','production'].includes(item.dimension));return <SiteShell><main><LessonHeader eyebrow="阅读 · LECTURA" title="Reading Detective" description="Localiza información, formula preguntas y traduce con el vocabulario ya estudiado."/><section className="reading-passage shell"><p className="eyebrow">TEXTO BREVE</p><h2>马大为最近很好。丁力波很忙。林娜不太忙，她也很好。宋华呢？她也很好。</h2><p>Mǎ Dàwéi zuìjìn hěn hǎo. Dīng Lìbō hěn máng. Lín Nà bú tài máng, tā yě hěn hǎo. Sòng Huá ne? Tā yě hěn hǎo.</p></section><div className="shell narrow"><PracticeEngine exercises={set} title="Comprensión y producción"/></div></main></SiteShell>}

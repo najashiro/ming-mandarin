@@ -1,0 +1,5 @@
+import { SiteShell, LessonHeader } from '@/components/SiteShell';
+import { ExamClient } from '@/components/ExamClient';
+import { getChatGPTUser } from '@/app/chatgpt-auth';
+import { getExamHistory } from '@/lib/server/persistence';
+export default async function ExamPage(){const user=await getChatGPTUser();const history=user?await getExamHistory(user):[];return <SiteShell><main><LessonHeader eyebrow="测验 · EXAMEN" title="Examen final · 100 puntos" description="Intentos ilimitados, historial real y certificado PNG únicamente con resultado perfecto verificado."/><section className="shell narrow"><ExamClient/></section>{user&&<section className="exam-history shell"><p className="eyebrow">HISTORIAL REAL</p><h2>Intentos anteriores</h2>{history.length?<div>{history.map(row=><article key={String(row.id)}><strong>{String(row.score)}/100</strong><span>{String(row.duration_seconds)} s</span><time>{new Date(Number(row.created_at)).toLocaleDateString('es-PE')}</time></article>)}</div>:<p className="empty-state">Tu primer resultado aparecerá aquí.</p>}</section>}</main></SiteShell>}

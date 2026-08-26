@@ -1,0 +1,4 @@
+import { SiteShell, LessonHeader } from '@/components/SiteShell';
+import { HanziCanvas } from '@/components/HanziCanvas';
+import { characters } from '@/seed/characters';
+export default function HanziPage(){return <SiteShell><main><LessonHeader eyebrow="汉字 · ESCRITURA" title="Hanzi y componentes" description="Separa reconocimiento y escritura. Practica sobre 米字格 con mouse, touch o stylus."/><section className="shell"><HanziCanvas characters={characters}/></section><section className="character-table shell"><h2>Inventario exigido</h2><div>{characters.map(item=><article key={item.id}><strong>{item.hanzi}</strong><p>{item.pinyin} · {item.meaning}</p><span>{item.strokeCount} trazos · radical {item.radical}</span><small>{item.writingRequired?'Escritura requerida':'Solo reconocimiento / repaso'}</small></article>)}</div></section></main></SiteShell>}

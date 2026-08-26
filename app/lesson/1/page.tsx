@@ -1,0 +1,5 @@
+import Link from 'next/link';
+import { SiteShell, LessonHeader } from '@/components/SiteShell';
+import { learningModules, howYouLearn } from '@/seed/modules';
+
+export default function LessonRoute(){return <SiteShell><main><LessonHeader title="你最近怎么样？" pinyin="Nǐ zuìjìn zěnmeyàng?" description="Aprende a presentarte, preguntar cómo está alguien y responder con naturalidad."/><section className="module-grid lesson-modules shell">{learningModules.map(module=><Link className="module-card is-open" href={module.href} key={module.number}><span className="module-number">{String(module.number).padStart(2,'0')}</span><div><h2>{module.title}</h2><p>{module.subtitle}</p></div><div className="concept-row">{module.concepts.map(concept=><span key={concept}>{concept}</span>)}</div></Link>)}</section><section className="how-section shell"><p className="eyebrow">CÓMO APRENDERÁS</p><h2>Nueve acciones, una sola ruta</h2><div>{howYouLearn.map(([number,title,description])=><article key={number}><span>{number}</span><h3>{title}</h3><p>{description}</p></article>)}</div></section></main></SiteShell>}
