@@ -5,12 +5,13 @@ import type { Exercise } from '@/data/types';
 import { scoreExamAnswers, type AnswerMap } from '@/lib/exam-score';
 import { computeMasteryUpdate } from '@/lib/mastery';
 import { isSuccessfulHanziAttempt } from '@/lib/hanzi/mastery';
-import type { HanziAttemptPayload, HanziSkillDimension } from '@/lib/hanzi/types';
+import { recommendHanziCharacters } from '@/lib/hanzi/progress';
+import type { HanziAttemptPayload, HanziProgressMap, HanziSkillDimension } from '@/lib/hanzi/types';
 import { comparePinyin, normalizeAnswer } from '@/lib/pinyin';
 import { supabaseRest } from '@/lib/supabase/rest';
-import { examBank } from '@/seed/exam';
+import { examQuestionsForSeed } from '@/seed/exam';
 import { exerciseById, exercises } from '@/seed/exercises';
-import { characters } from '@/seed/characters';
+import { characters, hanziStages, lesson1Characters } from '@/seed/characters';
 
 type ProfileRow = {
   id: string;
@@ -206,18 +207,58 @@ export async function recordHanziAttempt(user: AppUser, payload: HanziAttemptPay
     });
   }
 
-  return { correct, mastery: Math.round(mastery), xp: correct ? 8 : 2, skillDimension: payload.skillDimension };
+  return {
+    correct,
+    mastery: Math.round(mastery),
+    stability,
+    exposures: (current?.exposures ?? 0) + 1,
+    nextReviewAt: new Date(nextReviewAt).toISOString(),
+    xp: correct ? 8 : 2,
+    skillDimension: payload.skillDimension,
+  };
 }
 
 export async function getHanziMastery(user: AppUser) {
-  await ensureProfile(user);
-  const rows = await supabaseRest<MasteryRow[]>(`user_mastery?select=item_id,skill_dimension,mastery&user_id=eq.${user.userId}&item_type=eq.hanzi`);
+  const progress = await getHanziProgressMap(user);
   const result: Record<string, Partial<Record<HanziSkillDimension, number>>> = {};
-  for (const row of rows) {
-    if (!['recognition', 'stroke_order', 'writing'].includes(row.skill_dimension)) continue;
-    result[row.item_id] = { ...result[row.item_id], [row.skill_dimension]: Number(row.mastery) };
+  for (const [characterId, entry] of Object.entries(progress)) {
+    for (const dimension of ['recognition', 'stroke_order', 'writing'] as HanziSkillDimension[]) {
+      if (entry.dimensions[dimension]) result[characterId] = { ...result[characterId], [dimension]: entry.dimensions[dimension]!.mastery };
+    }
   }
   return result;
+}
+
+export async function getHanziProgressMap(user: AppUser): Promise<HanziProgressMap> {
+  await ensureProfile(user);
+  const [rows, errors] = await Promise.all([
+    supabaseRest<MasteryRow[]>(`user_mastery?select=item_id,skill_dimension,mastery,stability,exposures,last_seen_at,next_review_at&user_id=eq.${user.userId}&item_type=eq.hanzi`),
+    supabaseRest<Array<{ concept_id: string }>>(`error_notebook?select=concept_id&user_id=eq.${user.userId}&concept_type=eq.hanzi&resolved_at=is.null`),
+  ]);
+  const result: HanziProgressMap = {};
+  for (const row of rows) {
+    if (!['recognition', 'stroke_order', 'writing'].includes(row.skill_dimension)) continue;
+    const dimension = row.skill_dimension as HanziSkillDimension;
+    const current = result[row.item_id] ?? { dimensions: {}, openErrors: 0 };
+    current.dimensions[dimension] = {
+      mastery: Number(row.mastery), stability: Number(row.stability), exposures: Number(row.exposures),
+      nextReviewAt: row.next_review_at, lastSeenAt: row.last_seen_at,
+    };
+    result[row.item_id] = current;
+  }
+  for (const error of errors) {
+    const current = result[error.concept_id] ?? { dimensions: {}, openErrors: 0 };
+    current.openErrors += 1;
+    result[error.concept_id] = current;
+  }
+  return result;
+}
+
+export async function getDailyHanziPlan(user: AppUser, limit = 5) {
+  const progress = await getHanziProgressMap(user);
+  return recommendHanziCharacters(lesson1Characters, progress, limit).map((character) => ({
+    id: character.id, hanzi: character.hanzi, pinyin: character.pinyin, meaning: character.meaning, primaryStage: character.primaryStage,
+  }));
 }
 
 export async function getProgress(user: AppUser) {
@@ -246,14 +287,28 @@ export async function getProgress(user: AppUser) {
   };
   const bestScore = exams.length ? Math.max(...exams.map((item) => item.score)) : null;
   const general = mastery.length ? mastery.reduce((sum, row) => sum + row.average, 0) / mastery.length : 0;
-  const hanzi = masteryRows.filter((row) => row.item_type === 'hanzi').map((row) => ({
+  const curricularIds = new Set(lesson1Characters.map((character) => character.id));
+  const hanziRows = masteryRows.filter((row) => row.item_type === 'hanzi'
+    && curricularIds.has(row.item_id)
+    && ['recognition', 'stroke_order', 'writing'].includes(row.skill_dimension));
+  const hanzi = hanziRows.map((row) => ({
     character: characters.find((item) => item.id === row.item_id)?.hanzi ?? row.item_id,
     characterId: row.item_id,
     skillDimension: row.skill_dimension,
     mastery: Math.round(Number(row.mastery)),
     nextReviewAt: row.next_review_at,
   }));
-  return { profile: profileRows[0], mastery, hanzi, summary, unresolvedErrors: errors.length, due: dueRows.length, bestExam: { score: bestScore, attempts: exams.length }, general: Math.round(general) };
+  const studiedIds = new Set(hanziRows.filter((row) => row.exposures > 0).map((row) => row.item_id));
+  const hanziDimensions = (['recognition', 'stroke_order', 'writing'] as const).map((dimension) => {
+    const rows = hanziRows.filter((row) => row.skill_dimension === dimension);
+    return { dimension, average: rows.length ? Math.round(rows.reduce((sum, row) => sum + Number(row.mastery), 0) / rows.length) : 0 };
+  });
+  const hanziStagesProgress = hanziStages.map((stage) => ({
+    id: stage.id, title: stage.shortTitle, total: stage.characters.length,
+    studied: stage.characters.filter((hanziCharacter) => studiedIds.has(`c-${hanziCharacter}`)).length,
+  }));
+  const hanziSummary = { total: lesson1Characters.length, studied: studiedIds.size, dimensions: hanziDimensions, stages: hanziStagesProgress };
+  return { profile: profileRows[0], mastery, hanzi, hanziSummary, summary, unresolvedErrors: errors.length, due: dueRows.length, bestExam: { score: bestScore, attempts: exams.length }, general: Math.round(general) };
 }
 
 export async function getErrors(user: AppUser) {
@@ -300,7 +355,7 @@ export async function startExam(user: AppUser) {
       id: sessionId, user_id: user.userId, lesson_id: 'lesson-1', seed, started_at: new Date().toISOString(), status: 'active',
     },
   });
-  const questions = seededShuffle(examBank, seed).map((item) => {
+  const questions = seededShuffle(examQuestionsForSeed(seed), seed).map((item) => {
     const { answer, ...question } = item;
     void answer;
     return { ...question, options: question.options ? seededShuffle(question.options, `${seed}-${question.id}`) : undefined };
@@ -310,11 +365,11 @@ export async function startExam(user: AppUser) {
 
 export async function submitExam(user: AppUser, payload: { sessionId: string; answers: AnswerMap }) {
   await ensureProfile(user);
-  const sessions = await supabaseRest<Array<{ id: string; started_at: string; status: string }>>(`exam_sessions?select=id,started_at,status&id=eq.${payload.sessionId}&user_id=eq.${user.userId}&limit=1`);
+  const sessions = await supabaseRest<Array<{ id: string; seed: string; started_at: string; status: string }>>(`exam_sessions?select=id,seed,started_at,status&id=eq.${payload.sessionId}&user_id=eq.${user.userId}&limit=1`);
   const session = sessions[0];
   if (!session || session.status !== 'active') throw new Error('La sesión de examen no es válida o ya fue enviada.');
 
-  const { sectionScores, review, score } = scoreExamAnswers(payload.answers);
+  const { sectionScores, review, score } = scoreExamAnswers(payload.answers, examQuestionsForSeed(session.seed));
   const now = new Date();
   const durationSeconds = Math.max(1, Math.round((now.getTime() - new Date(session.started_at).getTime()) / 1000));
   const profileRows = await supabaseRest<ProfileRow[]>(`profiles?select=xp&id=eq.${user.userId}&limit=1`);

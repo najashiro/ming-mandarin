@@ -1,4 +1,4 @@
-export type SourceType = 'textbook' | 'workbook' | 'class_presentation' | 'phonetics_presentation';
+export type SourceType = 'textbook' | 'workbook' | 'class_presentation' | 'phonetics_presentation' | 'hanzi_worksheet';
 
 export type SourceRef = {
   type: SourceType;
@@ -56,6 +56,25 @@ export type CharacterEntry = {
   recognitionRequired: boolean;
   writingRequired: boolean;
   source: SourceRef;
+  sources?: SourceRef[];
+  sourceGroups?: HanziSourceCode[];
+  primaryStage?: HanziStageId;
+  curricular?: boolean;
+  radicalAudited?: boolean;
+  componentsAudited?: boolean;
+  words?: CharacterWord[];
+};
+
+export type HanziStageId = 1 | 2 | 3 | 4 | 5 | 6;
+
+export type HanziSourceCode = 'hanzi-1.1' | 'hanzi-1.2' | 'hanzi-1.3' | 'hanzi-1.4' | 'hanzi-1.5';
+
+export type CharacterWord = {
+  hanzi: string;
+  pinyin: string;
+  translation: string;
+  stage: HanziStageId;
+  href?: string;
 };
 
 export type Exercise = {

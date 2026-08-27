@@ -1,0 +1,53 @@
+{
+  "stages": [
+    {
+      "id": 1,
+      "title": "Fundamentos y números",
+      "shortTitle": "Fundamentos",
+      "chinese": "基础",
+      "description": "Trazos sencillos, control motor y números básicos.",
+      "characters": ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "百", "千"]
+    },
+    {
+      "id": 2,
+      "title": "Personas y saludos",
+      "shortTitle": "Saludos",
+      "chinese": "问候",
+      "description": "Personas, saludos y momentos del día.",
+      "characters": ["你", "我", "他", "好", "老", "师", "早", "上", "午", "下", "晚", "安", "再", "见"]
+    },
+    {
+      "id": 3,
+      "title": "Presentarse",
+      "shortTitle": "Presentarse",
+      "chinese": "自我介绍",
+      "description": "Nombre, apellido y primer encuentro.",
+      "characters": ["叫", "什", "么", "请", "问", "名", "字", "姓", "认", "识", "高", "兴", "也"]
+    },
+    {
+      "id": 4,
+      "title": "Presencia y cortesía",
+      "shortTitle": "Cortesía",
+      "chinese": "礼貌",
+      "description": "Presencia, invitaciones y agradecimiento.",
+      "characters": ["在", "吗", "进", "坐", "谢"]
+    },
+    {
+      "id": 5,
+      "title": "Estados y negación",
+      "shortTitle": "Estados",
+      "chinese": "状态",
+      "description": "Estados personales y patrones con 很、不、不太.",
+      "characters": ["很", "忙", "不", "太"]
+    },
+    {
+      "id": 6,
+      "title": "¿Cómo has estado?",
+      "shortTitle": "¿Cómo has estado?",
+      "chinese": "最近怎么样",
+      "description": "Integración final de 最近 y 怎么样.",
+      "characters": ["最", "近", "怎", "样"]
+    }
+  ],
+  "legacyCharacters": ["力", "生", "言", "人", "木", "羊", "井", "土", "林"]
+}

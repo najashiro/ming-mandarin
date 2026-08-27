@@ -44,6 +44,12 @@ Las migraciones canónicas son `supabase/migrations/0001_lesson_1.sql` y
 
 No se insertan estudiantes, notas ni posiciones ficticias.
 
+El inventario curricular Hanzi vive en el código y conserva IDs estables como
+`c-好`. La ampliación de 23 registros técnicos a 52 Hanzi curriculares no
+requiere una migración `0003`: las tablas existentes aceptan esos IDs y las
+tres dimensiones (`recognition`, `stroke_order` y `writing`) sin alterar ni
+reiniciar intentos, dominio, SRS o errores previos.
+
 ## Ejecución local
 
 1. Instala Node.js 22.13 o posterior.
@@ -62,11 +68,18 @@ No se insertan estudiantes, notas ni posiciones ficticias.
 
 ## Laboratorio Hanzi
 
-La ruta `/lesson/1/hanzi` usa Hanzi Writer con una selección local de
-`hanzi-writer-data`. Incluye cuatro pestañas reutilizables —Aprender,
-Componentes, Trazos y Practicar—, cuadrícula 米字格, animación con velocidad y
-pausa, respuesta SVG con números/puntos/flechas, paso a paso, despiece
-acumulativo y evaluación de orden y dirección con ayudas progresivas.
+La ruta `/lesson/1/hanzi` usa Hanzi Writer con los 52 Hanzi curriculares de la
+Lección 1 y una selección local de `hanzi-writer-data`. La interfaz los organiza
+en seis etapas pedagógicas (12 + 14 + 13 + 5 + 4 + 4) y permite combinar la
+etapa con estados derivados del progreso real: nuevos, aprendiendo, repasar y
+dominados. Las hojas 1.1–1.5 se conservan como trazabilidad editorial y filtros
+del panel administrativo, no como recorrido para el estudiante.
+
+El laboratorio incluye cuatro pestañas reutilizables —Aprender, Componentes,
+Trazos y Practicar—, cuadrícula 米字格, animación con velocidad y pausa,
+respuesta SVG con números/puntos/flechas, paso a paso, despiece acumulativo y
+evaluación de orden y dirección con ayudas progresivas. Cada carácter enlaza sus
+palabras o frases de contexto y señala cuándo reaparece en material ya trabajado.
 
 Los datos gráficos se cargan por carácter desde `public/hanzi-data/`; no se usa
 una CDN externa. Para volver a generarlos después de actualizar el inventario o

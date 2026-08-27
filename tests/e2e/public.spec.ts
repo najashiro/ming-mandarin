@@ -32,6 +32,7 @@ test('el repaso fonético distingue escritura, sandhi y aspiración', async ({ p
 test('el laboratorio Hanzi usa trazos reales, cuatro pestañas y práctica interactiva', async ({ page }) => {
   await page.goto('/lesson/1/hanzi');
   await expect(page.getByRole('heading', { name: 'Hanzi: forma, trazos y práctica' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: '0 / 52 estudiados' })).toBeVisible();
   await expect(page.getByRole('button', { name: /好 hǎo/ })).toHaveAttribute('aria-pressed', 'true');
   await expect(page.getByText('6 trazos verificados')).toBeVisible();
   for (const tab of ['Aprender', 'Componentes', 'Trazos', 'Practicar']) await expect(page.getByRole('tab', { name: tab })).toBeVisible();
@@ -48,6 +49,34 @@ test('el laboratorio Hanzi usa trazos reales, cuatro pestañas y práctica inter
   await expect(page.getByRole('button', { name: 'Con guía' })).toHaveClass(/selected/);
   await expect(page.getByTestId('hanzi-writer')).toBeVisible();
   await expect(page.getByRole('button', { name: 'Comenzar' })).toBeEnabled();
+});
+
+test('los filtros Hanzi siguen las seis etapas curriculares y se pueden combinar', async ({ page, isMobile }) => {
+  await page.addInitScript(() => localStorage.setItem('ming-hanzi-progress-v1', JSON.stringify({
+    'c-好:writing': { attempts: 1, completed: 1, mistakes: 1, lastPracticedAt: '2026-08-27T12:00:00.000Z' },
+  })));
+  await page.goto('/lesson/1/hanzi');
+  const grid = page.locator('.hanzi-picker-grid > button');
+  for (const [stage, label, count] of [[1, '1 Fundamentos', 12], [2, '2 Saludos', 14], [3, '3 Presentarse', 13], [4, '4 Cortesía', 5], [5, '5 Estados', 4], [6, '6 ¿Cómo has estado?', 4]] as const) {
+    if (isMobile) await page.locator('.stage-filter-mobile select').selectOption(String(stage));
+    else await page.getByRole('button', { name: label, exact: true }).click();
+    await expect(grid).toHaveCount(count);
+  }
+  if (isMobile) await page.locator('.stage-filter-mobile select').selectOption('2');
+  else await page.getByRole('button', { name: '2 Saludos', exact: true }).click();
+  await page.getByRole('button', { name: 'Repasar', exact: true }).click();
+  await expect(grid).toHaveCount(1);
+  await expect(page.getByRole('button', { name: /好 hǎo Repasar/ })).toBeVisible();
+});
+
+test('una evidencia de reconocimiento local persiste después de recargar', async ({ page }) => {
+  await page.goto('/lesson/1/hanzi?character=一');
+  await page.getByRole('button', { name: 'Lo reconozco' }).click();
+  await expect(page.getByText(/guardado en este dispositivo/)).toBeVisible();
+  await page.reload();
+  await page.getByRole('button', { name: 'Aprendiendo', exact: true }).click();
+  await expect(page.locator('.hanzi-picker-grid > button')).toHaveCount(1);
+  await expect(page.getByRole('button', { name: /一 yī Aprendiendo/ })).toBeVisible();
 });
 
 test('el laboratorio Hanzi no desborda en un teléfono', async ({ page, isMobile }) => {

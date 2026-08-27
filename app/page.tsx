@@ -2,8 +2,9 @@ import Link from 'next/link';
 import { SiteShell } from '@/components/SiteShell';
 import { SpeakButton } from '@/components/SpeakButton';
 import { learningModules } from '@/seed/modules';
+import { lesson1Characters } from '@/seed/characters';
 
-const stats=[['47','Entradas auditadas'],['17','Frases fundamentales'],['28','Juegos activos'],['100','Puntos del examen']];
+const stats=[['47','Entradas auditadas'],[String(lesson1Characters.length),'Hanzi curriculares'],['28','Juegos activos'],['100','Puntos del examen']];
 
 export default function Home(){return <SiteShell><main className="page-main">
   <section className="hero shell"><div className="hero-copy"><p className="eyebrow">第一课 · LECCIÓN 1</p><h1>你最近怎么样？</h1><p className="pinyin">Nǐ zuìjìn zěnmeyàng?</p><p className="translation">¿Cómo has estado?</p><p className="intro">Una plataforma completa para escuchar, recordar, construir y conversar. Tu progreso se guarda por concepto; tus errores deciden qué vuelve después.</p><div className="hero-actions"><Link className="button button-primary" href="/lesson/1/daily">Comenzar a aprender <span>→</span></Link><span className="time-note">◷ 10–15 min por sesión</span></div></div><aside className="ink-card"><div className="seal">近</div><p className="ink-kicker">FRASE DE HOY</p><p className="ink-hanzi">我很好。你呢？</p><p className="ink-pinyin">Wǒ hěn hǎo. Nǐ ne?</p><div className="ink-divider"/><p>Estoy muy bien. ¿Y tú?</p><SpeakButton text="我很好。你呢？"/></aside></section>

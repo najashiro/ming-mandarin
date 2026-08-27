@@ -2,14 +2,16 @@
 
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
+import type { CharacterEntry } from '@/data/types';
 import { loadHanziData } from '@/lib/hanzi/loader';
-import type { HanziCharacterData } from '@/lib/hanzi/types';
-import { characters } from '@/seed/characters';
+import type { HanziAttemptPayload, HanziCharacterData } from '@/lib/hanzi/types';
 import { HanziStrokeSvg } from './HanziStrokeSvg';
 import { HanziWriterStage, type HanziWriterStageHandle } from './HanziWriterStage';
 
-export function HanziArcade({ gameIndex, round, onScore }: { gameIndex: number; round: number; onScore: () => void }) {
-  const character = characters[(round + gameIndex) % characters.length];
+export function HanziArcade({ characters, gameIndex, round, onScore }: { characters: CharacterEntry[]; gameIndex: number; round: number; onScore: () => void }) {
+  const componentCandidates = characters.filter((item) => item.componentsAudited && item.components.length && item.radical);
+  const pool = [20, 21].includes(gameIndex) && componentCandidates.length ? componentCandidates : characters;
+  const character = pool[(round + gameIndex) % pool.length];
   const [data, setData] = useState<HanziCharacterData | null>(null);
   const [answer, setAnswer] = useState('');
   const [revealed, setRevealed] = useState(1);
@@ -25,6 +27,10 @@ export function HanziArcade({ gameIndex, round, onScore }: { gameIndex: number; 
 
   if (!data) return <p>Cargando reto Hanzi…</p>;
 
+  function saveAttempt(payload: HanziAttemptPayload) {
+    void fetch('/api/hanzi/practice', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(payload) }).catch(() => undefined);
+  }
+
   if (gameIndex === 19) return <div className="arcade-hanzi-layout">
     <HanziWriterStage
       ref={stage}
@@ -34,6 +40,7 @@ export function HanziArcade({ gameIndex, round, onScore }: { gameIndex: number; 
       onQuizComplete={(summary) => {
         setQuizActive(false);
         if (summary.mistakes === 0) onScore();
+        saveAttempt({ characterId: character.id, mode: 'guided', skillDimension: 'writing', completed: true, correctStrokes: summary.correctStrokes, mistakes: summary.mistakes, hintsUsed: 0, durationMs: summary.durationMs, usedAnswer: false });
         setMessage(summary.mistakes === 0 ? '无误 · Dojo perfecto.' : `Completado con ${summary.mistakes} ajustes.`);
       }}
     />
@@ -44,6 +51,7 @@ export function HanziArcade({ gameIndex, round, onScore }: { gameIndex: number; 
     function checkReveal() {
       if (answer.trim() === character.hanzi) {
         onScore();
+        saveAttempt({ characterId: character.id, mode: 'guided', skillDimension: 'recognition', completed: true, correctStrokes: 0, mistakes: 0, hintsUsed: Math.max(0, revealed - 1), durationMs: 1, usedAnswer: false });
         setRevealed(data!.strokes.length);
         setMessage('正确 · Lo reconociste.');
       } else {

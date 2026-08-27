@@ -1,5 +1,5 @@
 import type { Exercise } from '@/data/types';
-import { characters } from './characters';
+import { lesson1Characters } from './characters';
 import { coreVocabulary, vocabulary } from './vocabulary';
 
 const textbook = (pdfPage: number, printedPage: number) => ({
@@ -103,7 +103,7 @@ const manualExercises: Exercise[] = [
     options: ['1', '2', '3', '4', '5'], explanation: `${answer} lleva tono ${[3, 3, 3, 2, 4][index]}.`,
     rule: 'Observa la dirección de la marca tonal.', itemId: `tone-${answer}`, dimension: 'tone', difficulty: 1, source: textbook(54, 53),
   })),
-  ...characters.slice(0, 12).map((character): Exercise => ({
+  ...lesson1Characters.map((character): Exercise => ({
     id: `hanzi-${character.id}`, type: 'hanzi', prompt: `¿Cuántos trazos tiene ${character.hanzi}?`, answer: String(character.strokeCount),
     options: Array.from(new Set([character.strokeCount, character.strokeCount + 1, Math.max(1, character.strokeCount - 1), character.strokeCount + 2])).map(String),
     explanation: `${character.hanzi} tiene ${character.strokeCount} trazos.`, rule: 'Cuenta cada trazo continuo una vez.',
@@ -123,7 +123,7 @@ export function exerciseById(id: string) {
 }
 
 export function dailyExerciseIds(): string[] {
-  return ['meaning-v-你', 'pinyin-v-好', 'tone-nǐ', 'order-recent', 'dialogue-recent', 'hanzi-c-力', 'reading-libo'];
+  return ['meaning-v-你', 'pinyin-v-好', 'tone-nǐ', 'order-recent', 'dialogue-recent', 'hanzi-c-一', 'reading-libo'];
 }
 
 export const categories = [

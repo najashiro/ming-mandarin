@@ -30,3 +30,20 @@ export type HanziLocalProgress = {
   mistakes: number;
   lastPracticedAt: string;
 };
+
+export type HanziDimensionProgress = {
+  mastery: number;
+  stability: number;
+  exposures: number;
+  nextReviewAt: string | null;
+  lastSeenAt: string | null;
+};
+
+export type HanziProgressEntry = {
+  dimensions: Partial<Record<HanziSkillDimension, HanziDimensionProgress>>;
+  openErrors: number;
+};
+
+export type HanziProgressMap = Record<string, HanziProgressEntry>;
+
+export type HanziLearningState = 'new' | 'learning' | 'review' | 'mastered';

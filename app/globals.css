@@ -306,6 +306,19 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 
 /* Reusable Hanzi laboratory */
 .hanzi-workspace { width: min(1180px, calc(100% - 40px)); margin: 38px auto 0; }
+.hanzi-route { padding: 22px; background: linear-gradient(135deg,rgba(225,239,233,.82),rgba(255,251,243,.88)); }
+.hanzi-route-heading { display: flex; align-items: end; justify-content: space-between; gap: 20px; }
+.hanzi-route-heading h2 { margin: 0; font-size: 22px; }
+.hanzi-stage-progress { margin-top: 18px; display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); gap: 7px; }
+.hanzi-stage-progress button { min-width: 0; min-height: 94px; padding: 10px; position: relative; display: grid; grid-template-columns: auto 1fr; align-items: start; gap: 8px; border: 1px solid var(--line); border-radius: 9px; color: var(--ink); background: rgba(255,255,255,.78); text-align: left; cursor: pointer; }
+.hanzi-stage-progress button.selected { border-color: var(--jade); box-shadow: inset 0 0 0 1px var(--jade); }
+.hanzi-stage-progress button > span { width: 24px; height: 24px; display: grid; place-items: center; border-radius: 50%; color: white; background: var(--jade); font: 800 10px system-ui; }
+.hanzi-stage-progress button div { min-width: 0; display: grid; gap: 5px; }
+.hanzi-stage-progress button b { font-size: 10px; line-height: 1.25; }
+.hanzi-stage-progress button small { color: var(--muted); font-size: 8px; }
+.hanzi-stage-progress button i { height: 4px; overflow: hidden; border-radius: 9px; background: #e4ded2; }
+.hanzi-stage-progress button i em { height: 100%; display: block; border-radius: inherit; background: var(--jade); }
+.hanzi-stage-progress button > strong { position: absolute; right: -8px; top: 39px; z-index: 2; color: var(--amber); font-size: 11px; }
 .hanzi-character-picker { padding: 19px 22px; }
 .hanzi-picker-heading { display: flex; align-items: end; justify-content: space-between; gap: 18px; }
 .hanzi-picker-heading h2 { margin: 0; font-size: 19px; }
@@ -315,6 +328,17 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .hanzi-character-picker button small { color: var(--muted); font: 8px system-ui; }
 .hanzi-character-picker button.selected { border-color: var(--jade); color: white; background: var(--jade); box-shadow: 0 7px 20px rgba(29,106,89,.2); }
 .hanzi-character-picker button.selected small { color: #d7eee7; }
+.hanzi-filter-row { margin-top: 16px; display: grid; gap: 9px; }
+.stage-filter-desktop, .state-filter { display: flex; flex-wrap: wrap; gap: 6px; }
+.stage-filter-desktop button, .state-filter button, .hanzi-filter-empty button { min-height: 38px; padding: 7px 10px; border: 1px solid var(--line); border-radius: 7px; color: var(--jade); background: #fff; font: 750 9px system-ui; cursor: pointer; }
+.stage-filter-desktop button.selected, .state-filter button.selected { border-color: var(--jade); color: white; background: var(--jade); }
+.stage-filter-mobile { display: none; }
+.hanzi-picker-grid { margin-top: 15px; display: grid; grid-template-columns: repeat(12,minmax(48px,1fr)); gap: 7px; }
+.hanzi-picker-grid button { grid-template-rows: auto auto auto; }
+.hanzi-picker-grid button em { color: var(--muted); font: normal 700 7px system-ui; }
+.hanzi-picker-grid button.selected em { color: #d7eee7; }
+.hanzi-filter-empty { margin-top: 15px; padding: 18px; display: block !important; border: 1px dashed var(--line); border-radius: 8px; text-align: center; }
+.hanzi-filter-empty p { color: var(--muted); }
 .hanzi-character-hero { margin-top: 13px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 25px; background: linear-gradient(135deg,rgba(255,255,255,.84),rgba(224,236,229,.7)); }
 .hanzi-glyph { width: 112px; height: 112px; display: grid; place-items: center; border: 1px solid rgba(162,58,44,.22); border-radius: 6px 22px 6px 22px; color: var(--ink); background: #fffdf7; font: 600 77px SimSun,"Noto Serif SC",serif; }
 .hanzi-character-copy h2 { margin: 0; color: var(--jade); font: italic 700 27px Georgia,serif; }
@@ -360,6 +384,15 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .component-pieces strong { font: 600 62px SimSun,serif; }
 .component-source { padding: 14px 18px; border-left: 3px solid var(--amber); background: #f7efdf; }
 .component-source p { margin: 5px 0 0; color: #71512a; font-size: 11px; }
+.hanzi-context { margin-top: 22px; }
+.hanzi-context h3 { margin-bottom: 9px; font: 700 17px Georgia,serif; }
+.hanzi-context > div { display: grid; grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); gap: 7px; }
+.hanzi-context a, .hanzi-context article { min-width: 0; padding: 10px 12px; display: grid; gap: 2px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: #fff; }
+.hanzi-context strong { font: 600 20px SimSun,"Noto Serif SC",serif; }
+.hanzi-context span { color: var(--jade); font: italic 700 10px Georgia,serif; }
+.hanzi-context small { color: var(--muted); font-size: 8px; }
+.hanzi-context em { margin-top: 4px; color: var(--amber); font: normal 800 7px system-ui; text-transform: uppercase; }
+.context-empty { color: var(--muted); font-size: 11px; }
 .hanzi-panel-heading { display: flex; align-items: end; justify-content: space-between; gap: 18px; }
 .hanzi-panel-heading h2 { margin-bottom: 0; }
 .hanzi-subtabs, .practice-modes, .speed-picker { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -396,11 +429,27 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .hanzi-fallback, .hanzi-loading { margin-top: 14px; }
 .admin-hanzi-section { margin-top: 45px; }
 .admin-hanzi-section h2 { margin-bottom: 5px; font: 700 28px Georgia,serif; }
-.hanzi-audit-table > div { min-width: 1380px; grid-template-columns: 85px 55px 180px 190px 65px 90px 85px 1fr 145px; }
+.admin-source-filters { margin-top: 15px; display: flex; flex-wrap: wrap; gap: 7px; }
+.admin-source-filters a { min-height: 42px; padding: 8px 11px; display: flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 7px; color: var(--jade); background: #fff; font-size: 10px; font-weight: 750; }
+.admin-source-filters a.selected { color: #fff; background: var(--jade); border-color: var(--jade); }
+.admin-source-filters small { opacity: .72; }
+.hanzi-audit-table > div { min-width: 1540px; grid-template-columns: 55px 75px 145px 45px 55px 110px 240px 70px 105px 170px 65px; }
 .hanzi-audit-table .available { color: var(--jade); }
 .hanzi-audit-table .unavailable { color: var(--red); }
 .hanzi-progress-section { margin-top: 45px; }
 .hanzi-progress-section .section-heading a { color: var(--jade); font-size: 12px; font-weight: 750; }
+.hanzi-dimension-summary { margin: 18px 0 10px; display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; }
+.hanzi-dimension-summary article { padding: 14px; display: flex; align-items: center; justify-content: space-between; gap: 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--jade-soft); }
+.hanzi-dimension-summary span { color: var(--muted); font-size: 9px; text-transform: uppercase; }
+.hanzi-dimension-summary strong { color: var(--jade); font: 700 20px Georgia,serif; }
+.hanzi-stage-summary { margin: 10px 0 18px; display: grid; grid-template-columns: repeat(6,1fr); gap: 7px; }
+.hanzi-stage-summary article { padding: 10px; display: grid; grid-template-columns: auto 1fr; gap: 8px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+.hanzi-stage-summary article > span { width: 22px; height: 22px; display: grid; place-items: center; border-radius: 50%; color: #fff; background: var(--jade); font-size: 9px; font-weight: 800; }
+.hanzi-stage-summary article div { min-width: 0; display: grid; gap: 4px; }
+.hanzi-stage-summary b { font-size: 9px; }
+.hanzi-stage-summary small { color: var(--muted); font-size: 8px; }
+.hanzi-stage-summary i { height: 4px; overflow: hidden; border-radius: 8px; background: #e5dfd4; }
+.hanzi-stage-summary em { height: 100%; display: block; background: var(--jade); }
 .hanzi-progress-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); gap: 8px; }
 .hanzi-progress-grid article { padding: 14px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 10px; border: 1px solid var(--line); border-radius: 8px; background: rgba(255,255,255,.65); }
 .hanzi-progress-grid strong { font: 600 30px SimSun,serif; }
@@ -409,6 +458,10 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .daily-hanzi-card { margin-top: 16px; display: flex; align-items: center; justify-content: space-between; gap: 25px; background: linear-gradient(135deg,rgba(225,239,233,.85),rgba(255,251,243,.82)); }
 .daily-hanzi-card h2 { margin: 0; }
 .daily-hanzi-card p:not(.eyebrow) { margin-bottom: 0; }
+.daily-hanzi-list { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; }
+.daily-hanzi-list a { min-width: 48px; padding: 7px 8px; display: grid; place-items: center; border: 1px solid rgba(29,106,89,.2); border-radius: 7px; background: #fff; }
+.daily-hanzi-list strong { font: 600 23px SimSun,serif; }
+.daily-hanzi-list span { color: var(--muted); font-size: 8px; }
 .arcade-hanzi-layout { margin: 22px 0; display: grid; grid-template-columns: minmax(280px,420px) 1fr; align-items: center; gap: 38px; }
 .arcade-hanzi-layout .hanzi-writer-frame, .arcade-hanzi-layout .hanzi-answer-svg { background: #fffdf7; }
 .arcade-hanzi-layout h3 { font: 700 25px Georgia,serif; }
@@ -418,15 +471,29 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .arcade-hanzi-glyph { width: 180px; height: 180px; display: grid; place-items: center; border-radius: 15px; color: var(--ink); background: #fffdf7; font: 600 120px SimSun,serif; }
 
 @media(max-width:900px) {
+  .hanzi-stage-progress { grid-template-columns: repeat(3,1fr); }
+  .hanzi-stage-progress button > strong { display: none; }
   .hanzi-character-picker > div:last-child { grid-template-columns: repeat(8,1fr); }
+  .hanzi-picker-grid { grid-template-columns: repeat(8,1fr); }
   .hanzi-character-hero { grid-template-columns: auto 1fr; }
   .hanzi-mastery { grid-column: 1/-1; padding: 15px 0 0; grid-template-columns: repeat(3,1fr); border-top: 1px solid var(--line); border-left: 0; }
+  .hanzi-stage-summary { grid-template-columns: repeat(3,1fr); }
 }
 
 @media(max-width:650px) {
+  .hanzi-route-heading { align-items: stretch; flex-direction: column; }
+  .hanzi-route-heading .button { width: 100%; }
+  .hanzi-stage-progress { grid-template-columns: 1fr 1fr; }
+  .hanzi-stage-progress button { min-height: 78px; }
+  .stage-filter-desktop { display: none; }
+  .stage-filter-mobile { display: grid; gap: 5px; color: var(--muted); font-size: 9px; }
+  .stage-filter-mobile select { width: 100%; min-height: 44px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: white; }
+  .state-filter { display: grid; grid-template-columns: repeat(3,1fr); }
+  .hanzi-dimension-summary, .hanzi-stage-summary { grid-template-columns: 1fr 1fr; }
   .hanzi-workspace { width: min(100% - 28px,620px); margin-top: 25px; }
   .hanzi-character-picker, .hanzi-tab-panel, .hanzi-character-hero { padding: 20px 15px; }
   .hanzi-character-picker > div:last-child { grid-template-columns: repeat(5,1fr); }
+  .hanzi-picker-grid { grid-template-columns: repeat(5,1fr); }
   .hanzi-character-picker button { min-height: 54px; }
   .hanzi-character-hero { grid-template-columns: 82px 1fr; gap: 14px; }
   .hanzi-glyph { width: 82px; height: 82px; font-size: 57px; }
@@ -453,6 +520,8 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 
 @media(max-width:380px) {
   .hanzi-character-picker > div:last-child { grid-template-columns: repeat(4,1fr); }
+  .hanzi-picker-grid { grid-template-columns: repeat(4,1fr); }
+  .state-filter { grid-template-columns: 1fr 1fr; }
   .hanzi-badges { display: grid; grid-template-columns: 1fr; }
   .hanzi-mastery { grid-template-columns: 1fr; }
   .stroke-fan { grid-template-columns: 1fr; }

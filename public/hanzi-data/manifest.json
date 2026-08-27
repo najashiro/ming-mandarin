@@ -90,5 +90,157 @@
   "我": {
     "available": true,
     "strokeCount": 7
+  },
+  "一": {
+    "available": true,
+    "strokeCount": 1
+  },
+  "二": {
+    "available": true,
+    "strokeCount": 2
+  },
+  "三": {
+    "available": true,
+    "strokeCount": 3
+  },
+  "四": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "五": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "六": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "七": {
+    "available": true,
+    "strokeCount": 2
+  },
+  "八": {
+    "available": true,
+    "strokeCount": 2
+  },
+  "九": {
+    "available": true,
+    "strokeCount": 2
+  },
+  "十": {
+    "available": true,
+    "strokeCount": 2
+  },
+  "百": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "千": {
+    "available": true,
+    "strokeCount": 3
+  },
+  "他": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "老": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "师": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "早": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "上": {
+    "available": true,
+    "strokeCount": 3
+  },
+  "午": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "下": {
+    "available": true,
+    "strokeCount": 3
+  },
+  "晚": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "安": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "再": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "见": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "什": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "请": {
+    "available": true,
+    "strokeCount": 10
+  },
+  "问": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "字": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "高": {
+    "available": true,
+    "strokeCount": 10
+  },
+  "兴": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "也": {
+    "available": true,
+    "strokeCount": 3
+  },
+  "在": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "吗": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "谢": {
+    "available": true,
+    "strokeCount": 12
+  },
+  "很": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "忙": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "不": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "太": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "怎": {
+    "available": true,
+    "strokeCount": 9
   }
 }
