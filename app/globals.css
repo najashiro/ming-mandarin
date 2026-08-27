@@ -303,3 +303,157 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 
 @media(max-width:900px){.lesson-modules,.vocab-grid{grid-template-columns:1fr 1fr}.game-grid{grid-template-columns:repeat(3,1fr)}.hanzi-lab,.dialogue-grid,.progress-layout{grid-template-columns:1fr}.character-list>div{grid-template-columns:repeat(8,1fr)}.tone-table{grid-template-columns:repeat(3,1fr)}.how-section>div{grid-template-columns:1fr 1fr}}
 @media(max-width:650px){.page-hero{padding-top:45px}.page-hero h1{font-size:42px}.site-footer{display:block}.site-footer nav{margin-top:20px}.lesson-modules,.vocab-grid,.lab-grid,.grammar-grid,.clip-grid,.dialogue-text,.error-list{grid-template-columns:1fr}.lab-grid .wide{grid-column:auto}.game-grid{grid-template-columns:1fr 1fr}.phonetic-cards,.character-table>div{grid-template-columns:1fr}.tone-table{grid-template-columns:1fr}.section-heading{align-items:start;flex-direction:column}.sandhi-flow{grid-template-columns:1fr}.sandhi-flow>b{transform:rotate(90deg);justify-self:center}.option-grid{grid-template-columns:1fr}.toolbar{align-items:stretch;flex-direction:column}.toolbar label input{width:100%}.metric-grid,.audit-summary{grid-template-columns:1fr 1fr}.score-grid{grid-template-columns:1fr 1fr}.ranking-head,.ranking article{grid-template-columns:45px 1fr 65px 50px;padding-inline:8px;font-size:11px}.character-list>div{grid-template-columns:repeat(6,1fr)}.how-section>div{grid-template-columns:1fr}.practice-card{padding:22px}.self-rating{flex-direction:column}}
+
+/* Reusable Hanzi laboratory */
+.hanzi-workspace { width: min(1180px, calc(100% - 40px)); margin: 38px auto 0; }
+.hanzi-character-picker { padding: 19px 22px; }
+.hanzi-picker-heading { display: flex; align-items: end; justify-content: space-between; gap: 18px; }
+.hanzi-picker-heading h2 { margin: 0; font-size: 19px; }
+.hanzi-picker-heading > span { color: var(--muted); font-size: 10px; }
+.hanzi-character-picker > div:last-child { margin-top: 15px; display: grid; grid-template-columns: repeat(12, minmax(48px, 1fr)); gap: 7px; }
+.hanzi-character-picker button { min-width: 0; min-height: 58px; padding: 6px 3px; display: grid; place-items: center; gap: 2px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: #fff; font: 500 25px SimSun, "Noto Serif SC", serif; cursor: pointer; }
+.hanzi-character-picker button small { color: var(--muted); font: 8px system-ui; }
+.hanzi-character-picker button.selected { border-color: var(--jade); color: white; background: var(--jade); box-shadow: 0 7px 20px rgba(29,106,89,.2); }
+.hanzi-character-picker button.selected small { color: #d7eee7; }
+.hanzi-character-hero { margin-top: 13px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 25px; background: linear-gradient(135deg,rgba(255,255,255,.84),rgba(224,236,229,.7)); }
+.hanzi-glyph { width: 112px; height: 112px; display: grid; place-items: center; border: 1px solid rgba(162,58,44,.22); border-radius: 6px 22px 6px 22px; color: var(--ink); background: #fffdf7; font: 600 77px SimSun,"Noto Serif SC",serif; }
+.hanzi-character-copy h2 { margin: 0; color: var(--jade); font: italic 700 27px Georgia,serif; }
+.hanzi-character-copy h2 small { margin-left: 8px; color: var(--ink); font: 500 15px system-ui; }
+.hanzi-badges { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; }
+.hanzi-badges span { padding: 5px 8px; border-radius: 5px; color: var(--jade); background: var(--jade-soft); font-size: 9px; font-weight: 750; }
+.hanzi-badges .unavailable { color: var(--red); background: #f5dfda; }
+.hanzi-character-copy .source-note { margin: 10px 0 0; }
+.hanzi-mastery { min-width: 185px; padding-left: 22px; display: grid; gap: 9px; border-left: 1px solid var(--line); }
+.hanzi-mastery div { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.hanzi-mastery span { color: var(--muted); font-size: 9px; text-transform: uppercase; letter-spacing: .05em; }
+.hanzi-mastery b { color: var(--jade); font: 700 15px Georgia,serif; }
+.hanzi-tabs { margin-top: 18px; display: grid; grid-template-columns: repeat(4,1fr); border-bottom: 1px solid var(--line); }
+.hanzi-tabs button { min-height: 50px; border: 0; border-bottom: 3px solid transparent; color: var(--muted); background: transparent; font: 750 12px system-ui; cursor: pointer; }
+.hanzi-tabs button.selected { border-color: var(--jade); color: var(--jade); }
+.hanzi-tab-panel { margin-top: 14px; min-height: 510px; }
+.hanzi-learn-panel { display: grid; grid-template-columns: minmax(250px,.8fr) minmax(300px,1.2fr); align-items: center; gap: 36px; }
+.hanzi-panel-copy { max-width: 470px; }
+.hanzi-panel-copy > p:not(.eyebrow) { font-size: 13px; }
+.hanzi-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 20px 0; }
+.hanzi-controls > button:not(.button), .hanzi-subtabs button, .speed-picker button, .practice-modes button, .hanzi-fallback button { min-height: 44px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 7px; color: var(--jade); background: white; font: 750 11px system-ui; cursor: pointer; }
+.hanzi-controls button:disabled { opacity: .45; cursor: not-allowed; }
+.hanzi-writer-frame { width: min(100%,420px); aspect-ratio: 1; position: relative; margin-inline: auto; overflow: hidden; border: 2px solid #b8aa94; border-radius: 6px; background: #fffdf7; touch-action: none; }
+.hanzi-writer-frame.is-interactive { box-shadow: 0 15px 35px rgba(29,106,89,.1); }
+.hanzi-writer-target { position: relative; z-index: 2; width: 100%; height: 100%; }
+.hanzi-writer-target svg { display: block; max-width: 100%; height: auto; }
+.mizi-grid { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+.mizi-grid::before, .mizi-grid::after, .mizi-grid i { content: ''; position: absolute; opacity: .75; }
+.mizi-grid::before { left: 50%; top: 0; width: 1px; height: 100%; border-left: 1px dashed #c9c1b4; }
+.mizi-grid::after { top: 50%; left: 0; width: 100%; height: 1px; border-top: 1px dashed #c9c1b4; }
+.mizi-grid i:nth-child(1), .mizi-grid i:nth-child(2) { top: 50%; left: -21%; width: 142%; height: 1px; border-top: 1px dashed #ddd3c3; }
+.mizi-grid i:nth-child(1) { transform: rotate(45deg); }
+.mizi-grid i:nth-child(2) { transform: rotate(-45deg); }
+.hanzi-stage-status { position: absolute; inset: auto 10px 10px; z-index: 3; margin: 0; padding: 6px 8px; border-radius: 5px; background: rgba(255,253,247,.9); text-align: center; font-size: 10px; }
+.hanzi-stage-status.error { color: var(--red); }
+.components-panel > div:first-child { max-width: 740px; }
+.component-map { min-height: 280px; display: grid; grid-template-columns: .55fr auto 1.45fr; align-items: center; gap: 35px; }
+.component-map > b { color: var(--red); font-size: 30px; }
+.component-whole, .component-pieces article { padding: 22px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+.component-whole strong { font: 600 100px SimSun,serif; }
+.component-whole span, .component-pieces span { color: var(--muted); font-size: 9px; text-transform: uppercase; }
+.component-pieces { display: grid; grid-template-columns: repeat(auto-fit,minmax(115px,1fr)); gap: 10px; }
+.component-pieces strong { font: 600 62px SimSun,serif; }
+.component-source { padding: 14px 18px; border-left: 3px solid var(--amber); background: #f7efdf; }
+.component-source p { margin: 5px 0 0; color: #71512a; font-size: 11px; }
+.hanzi-panel-heading { display: flex; align-items: end; justify-content: space-between; gap: 18px; }
+.hanzi-panel-heading h2 { margin-bottom: 0; }
+.hanzi-subtabs, .practice-modes, .speed-picker { display: flex; flex-wrap: wrap; gap: 6px; }
+.hanzi-subtabs button.selected, .practice-modes button.selected, .speed-picker button.selected { border-color: var(--jade); color: white; background: var(--jade); }
+.stroke-answer-layout, .stroke-stage-layout, .practice-stage-layout { margin-top: 25px; display: grid; grid-template-columns: minmax(280px,1fr) minmax(230px,.8fr); align-items: center; gap: 38px; }
+.stroke-answer-layout > div { max-height: 420px; overflow: auto; }
+.stroke-answer-layout h3, .stroke-stage-layout h3, .practice-stage-layout h3 { font: 700 20px Georgia,serif; }
+.stroke-answer-layout p, .stroke-answer-layout li { color: var(--muted); font-size: 11px; line-height: 1.6; }
+.legend-dot { width: 10px; height: 10px; display: inline-block; border-radius: 50%; background: var(--jade); }
+.legend-arrow { color: var(--red); font-style: normal; font-weight: 900; }
+.hanzi-answer-svg { width: min(100%,420px); height: auto; display: block; margin-inline: auto; }
+.hanzi-answer-svg .mizi-paper { fill: #fffdf7; stroke: #b8aa94; stroke-width: 2; }
+.hanzi-answer-svg .mizi-lines { fill: none; stroke: #d8d0c2; stroke-width: 1; stroke-dasharray: 7 7; }
+.hanzi-answer-strokes { fill: #18332b; }
+.stroke-direction { fill: none; stroke: var(--red); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 5 4; opacity: .82; }
+.stroke-start { fill: var(--jade); stroke: white; stroke-width: 2; }
+.stroke-number { fill: var(--red); paint-order: stroke; stroke: #fffdf7; stroke-width: 5px; font: 800 14px system-ui; }
+.speed-picker { margin-top: 15px; }
+.stroke-fan { margin-top: 25px; display: grid; grid-template-columns: repeat(auto-fit,minmax(135px,1fr)); gap: 10px; }
+.stroke-fan article { position: relative; padding: 12px; border: 1px solid var(--line); border-radius: 9px; background: white; }
+.stroke-fan article > span { position: absolute; z-index: 2; top: 7px; left: 8px; padding: 3px 5px; border-radius: 4px; color: var(--jade); background: var(--jade-soft); font: 800 8px system-ui; }
+.hanzi-answer-svg.compact { width: 100%; }
+.hanzi-confirm-row { margin-top: 25px; display: flex; justify-content: flex-end; }
+.practice-stage-layout { align-items: start; }
+.practice-stage-layout aside { padding-top: 12px; }
+.practice-counters { display: grid; grid-template-columns: repeat(3,1fr); border: 1px solid var(--line); border-radius: 9px; background: #fff; }
+.practice-counters span { padding: 12px 7px; display: grid; gap: 3px; border-right: 1px solid var(--line); color: var(--muted); text-align: center; font-size: 8px; text-transform: uppercase; }
+.practice-counters span:last-child { border: 0; }
+.practice-counters b { color: var(--jade); font: 700 19px Georgia,serif; }
+.practice-feedback { min-height: 58px; margin: 16px 0; padding: 12px 14px; border-left: 3px solid var(--jade); color: var(--ink) !important; background: var(--jade-soft); font-size: 11px; }
+.privacy-note { margin: 10px auto 0; max-width: 420px; color: var(--muted); text-align: center; font-size: 9px; }
+.hanzi-save-message { margin: 13px 0 0; padding: 11px 14px; border-radius: 8px; color: var(--jade); background: var(--jade-soft); font-size: 11px; }
+.hanzi-save-message a { margin-left: 8px; text-decoration: underline; font-weight: 800; }
+.hanzi-fallback, .hanzi-loading { margin-top: 14px; }
+.admin-hanzi-section { margin-top: 45px; }
+.admin-hanzi-section h2 { margin-bottom: 5px; font: 700 28px Georgia,serif; }
+.hanzi-audit-table > div { min-width: 1380px; grid-template-columns: 85px 55px 180px 190px 65px 90px 85px 1fr 145px; }
+.hanzi-audit-table .available { color: var(--jade); }
+.hanzi-audit-table .unavailable { color: var(--red); }
+.hanzi-progress-section { margin-top: 45px; }
+.hanzi-progress-section .section-heading a { color: var(--jade); font-size: 12px; font-weight: 750; }
+.hanzi-progress-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); gap: 8px; }
+.hanzi-progress-grid article { padding: 14px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 10px; border: 1px solid var(--line); border-radius: 8px; background: rgba(255,255,255,.65); }
+.hanzi-progress-grid strong { font: 600 30px SimSun,serif; }
+.hanzi-progress-grid span { color: var(--muted); font-size: 9px; }
+.hanzi-progress-grid b { color: var(--jade); font: 700 14px Georgia,serif; }
+.daily-hanzi-card { margin-top: 16px; display: flex; align-items: center; justify-content: space-between; gap: 25px; background: linear-gradient(135deg,rgba(225,239,233,.85),rgba(255,251,243,.82)); }
+.daily-hanzi-card h2 { margin: 0; }
+.daily-hanzi-card p:not(.eyebrow) { margin-bottom: 0; }
+.arcade-hanzi-layout { margin: 22px 0; display: grid; grid-template-columns: minmax(280px,420px) 1fr; align-items: center; gap: 38px; }
+.arcade-hanzi-layout .hanzi-writer-frame, .arcade-hanzi-layout .hanzi-answer-svg { background: #fffdf7; }
+.arcade-hanzi-layout h3 { font: 700 25px Georgia,serif; }
+.arcade-hanzi-layout p { color: #bdc8c3; line-height: 1.6; }
+.arcade-hanzi-layout a:not(.button) { color: #9bd4c5; font-size: 11px; }
+.arcade-hanzi-layout.compact-game { grid-template-columns: 180px 1fr; }
+.arcade-hanzi-glyph { width: 180px; height: 180px; display: grid; place-items: center; border-radius: 15px; color: var(--ink); background: #fffdf7; font: 600 120px SimSun,serif; }
+
+@media(max-width:900px) {
+  .hanzi-character-picker > div:last-child { grid-template-columns: repeat(8,1fr); }
+  .hanzi-character-hero { grid-template-columns: auto 1fr; }
+  .hanzi-mastery { grid-column: 1/-1; padding: 15px 0 0; grid-template-columns: repeat(3,1fr); border-top: 1px solid var(--line); border-left: 0; }
+}
+
+@media(max-width:650px) {
+  .hanzi-workspace { width: min(100% - 28px,620px); margin-top: 25px; }
+  .hanzi-character-picker, .hanzi-tab-panel, .hanzi-character-hero { padding: 20px 15px; }
+  .hanzi-character-picker > div:last-child { grid-template-columns: repeat(5,1fr); }
+  .hanzi-character-picker button { min-height: 54px; }
+  .hanzi-character-hero { grid-template-columns: 82px 1fr; gap: 14px; }
+  .hanzi-glyph { width: 82px; height: 82px; font-size: 57px; }
+  .hanzi-character-copy h2 { font-size: 22px; }
+  .hanzi-character-copy h2 small { display: block; margin: 3px 0 0; font-size: 12px; }
+  .hanzi-character-copy .source-note { grid-column: 1/-1; }
+  .hanzi-tabs { overflow-x: auto; grid-template-columns: repeat(4,minmax(100px,1fr)); }
+  .hanzi-learn-panel, .stroke-answer-layout, .stroke-stage-layout, .practice-stage-layout { grid-template-columns: 1fr; }
+  .hanzi-learn-panel .hanzi-panel-copy { order: 2; }
+  .hanzi-panel-heading { align-items: start; flex-direction: column; }
+  .hanzi-subtabs, .practice-modes { width: 100%; display: grid; grid-template-columns: 1fr 1fr; }
+  .component-map { grid-template-columns: 1fr; gap: 12px; }
+  .component-map > b { transform: rotate(90deg); justify-self: center; }
+  .component-whole strong { font-size: 75px; }
+  .component-pieces strong { font-size: 52px; }
+  .stroke-fan { grid-template-columns: 1fr 1fr; }
+  .practice-stage-layout { gap: 16px; }
+  .hanzi-controls .button { width: auto; }
+  .daily-hanzi-card { align-items: stretch; flex-direction: column; }
+  .daily-hanzi-card .button { width: 100%; }
+  .arcade-hanzi-layout, .arcade-hanzi-layout.compact-game { grid-template-columns: 1fr; }
+  .arcade-hanzi-glyph { width: 140px; height: 140px; font-size: 90px; }
+}
+
+@media(max-width:380px) {
+  .hanzi-character-picker > div:last-child { grid-template-columns: repeat(4,1fr); }
+  .hanzi-badges { display: grid; grid-template-columns: 1fr; }
+  .hanzi-mastery { grid-template-columns: 1fr; }
+  .stroke-fan { grid-template-columns: 1fr; }
+}

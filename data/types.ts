@@ -43,12 +43,16 @@ export type GrammarPoint = {
 
 export type CharacterEntry = {
   id: string;
+  lessonId: string;
   hanzi: string;
   pinyin: string;
   meaning: string;
   strokeCount: number;
   radical: string;
   components: string[];
+  structure?: string;
+  example?: string;
+  pedagogicalNote?: string;
   recognitionRequired: boolean;
   writingRequired: boolean;
   source: SourceRef;

@@ -1,6 +1,6 @@
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
-import { ACCESS_COOKIE, authRequest, REFRESH_COOKIE, type SupabaseAuthUser } from '@/lib/supabase/auth';
+import { ACCESS_COOKIE, authRequest, type SupabaseAuthUser } from '@/lib/supabase/auth';
 
 export type AppUser = {
   userId: string;

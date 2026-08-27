@@ -4,10 +4,13 @@ import type { AppUser } from '@/app/auth';
 import type { Exercise } from '@/data/types';
 import { scoreExamAnswers, type AnswerMap } from '@/lib/exam-score';
 import { computeMasteryUpdate } from '@/lib/mastery';
+import { isSuccessfulHanziAttempt } from '@/lib/hanzi/mastery';
+import type { HanziAttemptPayload, HanziSkillDimension } from '@/lib/hanzi/types';
 import { comparePinyin, normalizeAnswer } from '@/lib/pinyin';
 import { supabaseRest } from '@/lib/supabase/rest';
 import { examBank } from '@/seed/exam';
 import { exerciseById, exercises } from '@/seed/exercises';
+import { characters } from '@/seed/characters';
 
 type ProfileRow = {
   id: string;
@@ -127,13 +130,104 @@ export async function recordPracticeAttempt(user: AppUser, payload: { exerciseId
   };
 }
 
+export async function recordHanziAttempt(user: AppUser, payload: HanziAttemptPayload) {
+  await ensureProfile(user);
+  const character = characters.find((item) => item.id === payload.characterId);
+  if (!character) throw new Error('Carácter desconocido.');
+  if (!['guided', 'independent', 'exam'].includes(payload.mode)) throw new Error('Modo de práctica no válido.');
+  if (!['recognition', 'stroke_order', 'writing'].includes(payload.skillDimension)) throw new Error('Dimensión Hanzi no válida.');
+
+  const clean = {
+    correctStrokes: boundedInteger(payload.correctStrokes, 0, character.strokeCount),
+    mistakes: boundedInteger(payload.mistakes, 0, 999),
+    hintsUsed: boundedInteger(payload.hintsUsed, 0, 999),
+    durationMs: boundedInteger(payload.durationMs, 0, 3_600_000),
+  };
+  const attempt = { ...payload, ...clean };
+  const correct = isSuccessfulHanziAttempt(attempt);
+  const difficulty = payload.mode === 'guided' ? 3 : payload.mode === 'independent' ? 4 : 5;
+  const [currentRows, profileRows] = await Promise.all([
+    supabaseRest<MasteryRow[]>(`user_mastery?select=*&user_id=eq.${user.userId}&item_type=eq.hanzi&item_id=eq.${encodeURIComponent(character.id)}&skill_dimension=eq.${encodeURIComponent(payload.skillDimension)}&limit=1`),
+    supabaseRest<ProfileRow[]>(`profiles?select=*&id=eq.${user.userId}&limit=1`),
+  ]);
+  const current = currentRows[0];
+  const profile = profileRows[0];
+  const { mastery, stability, nextReviewAt } = computeMasteryUpdate({
+    previousMastery: Number(current?.mastery ?? 0),
+    previousStability: Number(current?.stability ?? 0.4),
+    difficulty,
+    correct,
+  });
+  const now = new Date().toISOString();
+  const timeZone = profile?.timezone || 'America/Lima';
+  const today = formatStudyDate(new Date(), timeZone);
+  const yesterday = formatStudyDate(new Date(Date.now() - 86_400_000), timeZone);
+  const studyStreak = profile?.last_study_date === today ? profile.streak : profile?.last_study_date === yesterday ? profile.streak + 1 : 1;
+
+  await supabaseRest('hanzi_attempts', {
+    method: 'POST', prefer: 'return=minimal', body: {
+      id: crypto.randomUUID(), user_id: user.userId, character_id: character.id, mode: payload.mode,
+      skill_dimension: payload.skillDimension, completed: payload.completed,
+      correct_strokes: clean.correctStrokes, mistakes: clean.mistakes, hints_used: clean.hintsUsed,
+      duration_ms: clean.durationMs, used_answer: payload.usedAnswer, created_at: now,
+    },
+  });
+  await supabaseRest('user_mastery?on_conflict=user_id,item_type,item_id,skill_dimension', {
+    method: 'POST', prefer: 'resolution=merge-duplicates,return=minimal', body: {
+      user_id: user.userId, item_type: 'hanzi', item_id: character.id, skill_dimension: payload.skillDimension,
+      mastery, stability, difficulty, exposures: (current?.exposures ?? 0) + 1,
+      correct_count: (current?.correct_count ?? 0) + (correct ? 1 : 0),
+      incorrect_count: (current?.incorrect_count ?? 0) + (correct ? 0 : 1),
+      streak: correct ? (current?.streak ?? 0) + 1 : 0, last_seen_at: now, next_review_at: new Date(nextReviewAt).toISOString(),
+    },
+  });
+  await supabaseRest(`profiles?id=eq.${user.userId}`, {
+    method: 'PATCH', prefer: 'return=minimal', body: {
+      xp: (profile?.xp ?? 0) + (correct ? 8 : 2), streak: studyStreak, last_study_date: today,
+    },
+  });
+
+  const errorType = payload.skillDimension;
+  if (correct) {
+    await supabaseRest(`error_notebook?user_id=eq.${user.userId}&concept_id=eq.${encodeURIComponent(character.id)}&error_type=eq.${encodeURIComponent(errorType)}&resolved_at=is.null`, {
+      method: 'PATCH', prefer: 'return=minimal', body: { resolved_at: now },
+    });
+  } else {
+    const existing = await supabaseRest<Array<{ id: string; occurrences: number }>>(`error_notebook?select=id,occurrences&user_id=eq.${user.userId}&concept_id=eq.${encodeURIComponent(character.id)}&error_type=eq.${encodeURIComponent(errorType)}&limit=1`);
+    await supabaseRest('error_notebook?on_conflict=user_id,concept_id,error_type', {
+      method: 'POST', prefer: 'resolution=merge-duplicates,return=minimal', body: {
+        id: existing[0]?.id ?? crypto.randomUUID(), user_id: user.userId, concept_type: 'hanzi',
+        concept_id: character.id, error_type: errorType,
+        given_answer: `${clean.correctStrokes}/${character.strokeCount} trazos; ${clean.mistakes} errores; ${clean.hintsUsed} pistas`,
+        correct_answer: `${character.hanzi}: ${character.strokeCount} trazos en orden y dirección`,
+        rule: 'Practica el punto de inicio, el orden y la dirección con ayudas progresivas.',
+        occurrences: (existing[0]?.occurrences ?? 0) + 1, last_occurred_at: now, resolved_at: null,
+      },
+    });
+  }
+
+  return { correct, mastery: Math.round(mastery), xp: correct ? 8 : 2, skillDimension: payload.skillDimension };
+}
+
+export async function getHanziMastery(user: AppUser) {
+  await ensureProfile(user);
+  const rows = await supabaseRest<MasteryRow[]>(`user_mastery?select=item_id,skill_dimension,mastery&user_id=eq.${user.userId}&item_type=eq.hanzi`);
+  const result: Record<string, Partial<Record<HanziSkillDimension, number>>> = {};
+  for (const row of rows) {
+    if (!['recognition', 'stroke_order', 'writing'].includes(row.skill_dimension)) continue;
+    result[row.item_id] = { ...result[row.item_id], [row.skill_dimension]: Number(row.mastery) };
+  }
+  return result;
+}
+
 export async function getProgress(user: AppUser) {
   await ensureProfile(user);
   const now = new Date().toISOString();
-  const [profileRows, masteryRows, attempts, errors, dueRows, exams] = await Promise.all([
+  const [profileRows, masteryRows, attempts, hanziAttempts, errors, dueRows, exams] = await Promise.all([
     supabaseRest<ProfileRow[]>(`profiles?select=*&id=eq.${user.userId}&limit=1`),
     supabaseRest<MasteryRow[]>(`user_mastery?select=*&user_id=eq.${user.userId}`),
     supabaseRest<Array<{ correct: boolean; exercise_id: string }>>(`practice_attempts?select=correct,exercise_id&user_id=eq.${user.userId}`),
+    supabaseRest<Array<{ completed: boolean; character_id: string }>>(`hanzi_attempts?select=completed,character_id&user_id=eq.${user.userId}`),
     supabaseRest<Array<{ id: string }>>(`error_notebook?select=id&user_id=eq.${user.userId}&resolved_at=is.null`),
     supabaseRest<Array<{ item_id: string }>>(`user_mastery?select=item_id&user_id=eq.${user.userId}&next_review_at=lte.${encodeURIComponent(now)}`),
     supabaseRest<Array<{ score: number }>>(`exam_attempts?select=score&user_id=eq.${user.userId}`),
@@ -146,13 +240,20 @@ export async function getProgress(user: AppUser) {
     concepts: values.length,
   }));
   const summary = {
-    attempts: attempts.length,
-    correct: attempts.filter((item) => item.correct).length,
-    practiced: new Set(attempts.filter((item) => item.correct).map((item) => item.exercise_id)).size,
+    attempts: attempts.length + hanziAttempts.length,
+    correct: attempts.filter((item) => item.correct).length + hanziAttempts.filter((item) => item.completed).length,
+    practiced: new Set([...attempts.filter((item) => item.correct).map((item) => item.exercise_id), ...hanziAttempts.filter((item) => item.completed).map((item) => item.character_id)]).size,
   };
   const bestScore = exams.length ? Math.max(...exams.map((item) => item.score)) : null;
   const general = mastery.length ? mastery.reduce((sum, row) => sum + row.average, 0) / mastery.length : 0;
-  return { profile: profileRows[0], mastery, summary, unresolvedErrors: errors.length, due: dueRows.length, bestExam: { score: bestScore, attempts: exams.length }, general: Math.round(general) };
+  const hanzi = masteryRows.filter((row) => row.item_type === 'hanzi').map((row) => ({
+    character: characters.find((item) => item.id === row.item_id)?.hanzi ?? row.item_id,
+    characterId: row.item_id,
+    skillDimension: row.skill_dimension,
+    mastery: Math.round(Number(row.mastery)),
+    nextReviewAt: row.next_review_at,
+  }));
+  return { profile: profileRows[0], mastery, hanzi, summary, unresolvedErrors: errors.length, due: dueRows.length, bestExam: { score: bestScore, attempts: exams.length }, general: Math.round(general) };
 }
 
 export async function getErrors(user: AppUser) {
@@ -246,6 +347,11 @@ function checkExerciseAnswer(exercise: Exercise, answer: string) {
 
 function formatStudyDate(date: Date, timeZone: string) {
   return new Intl.DateTimeFormat('en-CA', { timeZone, year: 'numeric', month: '2-digit', day: '2-digit' }).format(date);
+}
+
+function boundedInteger(value: number, minimum: number, maximum: number) {
+  if (!Number.isFinite(value)) return minimum;
+  return Math.min(maximum, Math.max(minimum, Math.round(value)));
 }
 
 function seededShuffle<T>(items: readonly T[], seed: string): T[] {

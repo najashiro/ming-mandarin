@@ -31,7 +31,8 @@ ADMIN_EMAILS=najashiro@gmail.com
 
 ## Base de datos
 
-La migración canónica es `supabase/migrations/0001_lesson_1.sql`. Crea:
+Las migraciones canónicas son `supabase/migrations/0001_lesson_1.sql` y
+`supabase/migrations/0002_hanzi_lab.sql`. Crean:
 
 - perfiles vinculados a `auth.users`;
 - dominio por concepto y dimensión;
@@ -39,6 +40,7 @@ La migración canónica es `supabase/migrations/0001_lesson_1.sql`. Crea:
 - sesiones e intentos de examen;
 - la vista `leaderboard_public`, accesible solo desde el servidor;
 - políticas RLS para que cada estudiante solo pueda leer sus registros.
+- resúmenes de intentos Hanzi sin coordenadas ni trayectorias del estudiante.
 
 No se insertan estudiantes, notas ni posiciones ficticias.
 
@@ -57,6 +59,25 @@ No se insertan estudiantes, notas ni posiciones ficticias.
 - `npm run typecheck`: TypeScript estricto.
 - `npm run lint`: ESLint.
 - `npm run build`: compilación de producción de Next.js.
+
+## Laboratorio Hanzi
+
+La ruta `/lesson/1/hanzi` usa Hanzi Writer con una selección local de
+`hanzi-writer-data`. Incluye cuatro pestañas reutilizables —Aprender,
+Componentes, Trazos y Practicar—, cuadrícula 米字格, animación con velocidad y
+pausa, respuesta SVG con números/puntos/flechas, paso a paso, despiece
+acumulativo y evaluación de orden y dirección con ayudas progresivas.
+
+Los datos gráficos se cargan por carácter desde `public/hanzi-data/`; no se usa
+una CDN externa. Para volver a generarlos después de actualizar el inventario o
+las dependencias, ajusta la lista auditada de `scripts/sync-hanzi-data.mjs` y
+ejecuta `npm run hanzi:sync`. El script también conserva las copias de licencia.
+Consulta `THIRD_PARTY_NOTICES.md` para atribución y condiciones.
+
+Supabase persiste únicamente el resumen: carácter, modo, dimensión, resultado,
+aciertos, errores, ayudas y duración. Nunca se guardan coordenadas de escritura.
+Sin sesión, el navegador conserva un resumen local y ofrece elegir un nombre
+para sincronizar el progreso.
 
 ## Audio de pronunciación
 
@@ -88,5 +109,5 @@ generada por IA.
 ## Límites conocidos
 
 - Los cinco PDF no incluyen audio: los clips complementarios se etiquetan como voz generada por IA y requieren revisión docente antes de cada publicación.
-- El lienzo 米字格 valida conteo y ofrece guía visual; no afirma comprobar geométricamente orden y dirección de trazos.
+- La evaluación Hanzi tolera pequeñas diferencias caligráficas, pero exige el orden y la dirección de trazo configurados por el conjunto técnico.
 - Conviene una revisión docente final de la naturalidad del TTS, la explicación de 很 y los nombres de radicales.

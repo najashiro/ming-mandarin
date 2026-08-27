@@ -8,7 +8,7 @@ const source = (pdfPage: number, printedPage: number) => ({
 });
 
 const c = (hanzi: string, pinyin: string, meaning: string, strokeCount: number, radical: string, components: string[], pdfPage: number, printedPage: number, writingRequired = true): CharacterEntry => ({
-  id: `c-${hanzi}`, hanzi, pinyin, meaning, strokeCount, radical, components,
+  id: `c-${hanzi}`, lessonId: 'lesson-1', hanzi, pinyin, meaning, strokeCount, radical, components,
   recognitionRequired: true, writingRequired, source: source(pdfPage, printedPage),
 });
 

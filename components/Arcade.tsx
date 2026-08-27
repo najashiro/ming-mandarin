@@ -1,8 +1,9 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import type { Exercise } from '@/data/types';
 import { SpeakButton } from './SpeakButton';
+import { HanziArcade } from './hanzi/HanziArcade';
 
 const games = [
   ['Flashcards 8 direcciones','Recupera hanzi, pinyin, audio y significado.','meaning'],
@@ -36,10 +37,12 @@ const games = [
 ] as const;
 
 export function Arcade({ exercises }: { exercises: Exercise[] }) {
+  const rootRef=useRef<HTMLDivElement>(null);
   const [selected,setSelected]=useState<number|null>(null); const [round,setRound]=useState(0); const [answer,setAnswer]=useState(''); const [score,setScore]=useState(0); const [message,setMessage]=useState('');
+  useEffect(()=>{rootRef.current?.setAttribute('data-hydrated','true');},[]);
   const pool=useMemo(()=>selected===null?[]:exercises.filter((item)=>games[selected][2]==='all'||item.dimension===games[selected][2]),[selected,exercises]);
   const exercise=pool[round%Math.max(1,pool.length)]??exercises[round%exercises.length];
   function play(index:number){setSelected(index);setRound(0);setAnswer('');setScore(0);setMessage('');document.getElementById('arena')?.scrollIntoView({behavior:'smooth'});}
   function check(){const clean=(value:string)=>value.toLowerCase().replace(/[\s。！？?.,]/g,''); const ok=clean(answer)===clean(exercise.answer);setScore(v=>v+(ok?1:0));setMessage(ok?'正确 · ¡Acierto!':`Pista: ${exercise.rule}`);setTimeout(()=>{setRound(v=>v+1);setAnswer('');setMessage('');},900);}
-  return <><section className="game-grid shell">{games.map(([name,description],index)=><article key={name}><span>{String(index+1).padStart(2,'0')}</span><h2>{name}</h2><p>{description}</p><button type="button" onClick={()=>play(index)}>Jugar →</button></article>)}</section><section id="arena" className="arcade-arena shell">{selected===null?<div><p className="eyebrow">28 JUEGOS FUNCIONALES</p><h2>Elige un reto</h2><p>Cada juego usa exclusivamente el corpus auditado de la Lección 1.</p></div>:<><div className="practice-top"><div><p className="eyebrow">RONDA {round+1}</p><h2>{games[selected][0]}</h2></div><b>{score} aciertos</b></div>{['tone','audio'].includes(exercise.dimension)&&<SpeakButton text={exercise.answer}/>}<p className="question">{exercise.prompt}</p>{exercise.options?<div className="option-grid">{exercise.options.map(option=><button type="button" className={answer===option?'selected':''} onClick={()=>setAnswer(option)} key={option}>{option}</button>)}</div>:<input className="arcade-input" value={answer} onChange={(e)=>setAnswer(e.target.value)} onKeyDown={(e)=>e.key==='Enter'&&check()} placeholder="Tu respuesta"/>}{message&&<p className="rule-note">{message}</p>}<div className="arena-actions"><button className="button button-primary" type="button" onClick={check}>Comprobar</button><button type="button" onClick={()=>setSelected(null)}>Cerrar</button></div></>}</section></>;
+  return <div className="arcade-root" ref={rootRef}><section className="game-grid shell">{games.map(([name,description],index)=><article key={name}><span>{String(index+1).padStart(2,'0')}</span><h2>{name}</h2><p>{description}</p><button type="button" onClick={()=>play(index)}>Jugar →</button></article>)}</section><section id="arena" className="arcade-arena shell">{selected===null?<div><p className="eyebrow">28 JUEGOS FUNCIONALES</p><h2>Elige un reto</h2><p>Cada juego usa exclusivamente el corpus auditado de la Lección 1.</p></div>:<><div className="practice-top"><div><p className="eyebrow">RONDA {round+1}</p><h2>{games[selected][0]}</h2></div><b>{score} aciertos</b></div>{selected>=19&&selected<=22?<><HanziArcade key={`${selected}-${round}`} gameIndex={selected} round={round} onScore={()=>setScore(value=>value+1)}/><div className="arena-actions"><button type="button" onClick={()=>setRound(value=>value+1)}>Otro carácter</button><button type="button" onClick={()=>setSelected(null)}>Cerrar</button></div></>:<>{['tone','audio'].includes(exercise.dimension)&&<SpeakButton text={exercise.answer}/>}<p className="question">{exercise.prompt}</p>{exercise.options?<div className="option-grid">{exercise.options.map(option=><button type="button" className={answer===option?'selected':''} onClick={()=>setAnswer(option)} key={option}>{option}</button>)}</div>:<input className="arcade-input" value={answer} onChange={(e)=>setAnswer(e.target.value)} onKeyDown={(e)=>e.key==='Enter'&&check()} placeholder="Tu respuesta"/>}{message&&<p className="rule-note">{message}</p>}<div className="arena-actions"><button className="button button-primary" type="button" onClick={check}>Comprobar</button><button type="button" onClick={()=>setSelected(null)}>Cerrar</button></div></>}</>}</section></div>;
 }
