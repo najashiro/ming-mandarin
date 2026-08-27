@@ -12,7 +12,9 @@
     "lint": "eslint . --ignore-pattern .next",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "audio:generate": "node scripts/generate-pronunciation-audio.mjs",
+    "audio:verify": "node scripts/verify-pronunciation-audio.mjs"
   },
   "dependencies": {
     "next": "16.2.6",

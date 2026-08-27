@@ -1,21 +1,35 @@
 'use client';
 
 import { useState } from 'react';
+import pronunciation from '@/data/pronunciation.json';
 import { numberedPinyinToMarked } from '@/lib/pinyin';
 import { SpeakButton } from './SpeakButton';
 
 const toneKeys = ['ā','á','ǎ','à','ē','é','ě','è','ī','í','ǐ','ì','ō','ó','ǒ','ò','ū','ú','ǔ','ù','ǖ','ǘ','ǚ','ǜ','ü'];
-const toneRows = [
-  ['1', '˥', 'alto y sostenido', 'mā'], ['2', '˧˥', 'ascendente', 'má'], ['3', '˨˩˦', 'baja y sube', 'mǎ'], ['4', '˥˩', 'descendente', 'mà'], ['0', '·', 'neutro y ligero', 'ma'],
-];
+
+const clipFiles = new Map(pronunciation.clips.map((clip) => [clip.id, `/audio/pinyin/${clip.file}`]));
+const audioFor = (clipId: string) => clipFiles.get(clipId);
+const audioSequence = (...clipIds: string[]) => clipIds.map(audioFor).filter((source): source is string => Boolean(source));
+const normalizeNumbered = (value: string) => value.trim().toLowerCase().replace(/\s+/g, ' ');
+
+function ToneContour({ points, label, neutral = false }: { points: string; label: string; neutral?: boolean }) {
+  return <svg className={`tone-contour${neutral ? ' neutral' : ''}`} viewBox="0 0 100 90" role="img" aria-label={label}>
+    {[16, 31, 47, 63, 78].map((y) => <line key={y} x1="7" y1={y} x2="93" y2={y} />)}
+    <polyline points={points} />
+  </svg>;
+}
 
 export function PinyinLab() {
   const [numbered, setNumbered] = useState('ni3 hao3');
   const [writing, setWriting] = useState('');
+  const converted = numberedPinyinToMarked(numbered);
+  const converterExample = pronunciation.converterExamples.find((example) => normalizeNumbered(example.numbered) === normalizeNumbered(numbered));
+
   return <div className="lab-grid">
-    <section className="panel"><p className="eyebrow">CONVERSOR</p><h2>Número → marca tonal</h2><label className="answer-input"><span>Pinyin numerado</span><input value={numbered} onChange={(e) => setNumbered(e.target.value)} /></label><div className="conversion">{numberedPinyinToMarked(numbered)}</div><SpeakButton text={numberedPinyinToMarked(numbered)} /></section>
+    <section className="panel converter-panel"><p className="eyebrow">CONVERSOR</p><h2>Número → marca tonal</h2><label className="answer-input"><span>Pinyin numerado</span><input value={numbered} onChange={(e) => setNumbered(e.target.value)} /></label><div className="conversion">{converted}</div><div className="example-chips" aria-label="Ejemplos con audio">{pronunciation.converterExamples.slice(0, 6).map((example) => <button type="button" key={example.numbered} onClick={() => setNumbered(example.numbered)}>{example.numbered}</button>)}</div>{converterExample ? <SpeakButton text={`${converterExample.hanzi} · ${converted}`} speechText={converterExample.hanzi} audioSrc={audioFor(converterExample.clipId)} /> : <p className="audio-guidance">El conversor escribe cualquier pinyin. Para oírlo con precisión, elige un ejemplo vinculado a hanzi y audio.</p>}</section>
     <section className="panel"><p className="eyebrow">TECLADO TONAL</p><h2>Escribe con precisión</h2><label className="answer-input"><span>Texto</span><input value={writing} onChange={(e) => setWriting(e.target.value)} /></label><div className="tone-keyboard">{toneKeys.map((key) => <button type="button" key={key} onClick={() => setWriting((value) => value + key)}>{key}</button>)}</div></section>
-    <section className="panel wide"><p className="eyebrow">MAPA DE TONOS</p><h2>Escucha y compara</h2><div className="tone-table">{toneRows.map(([tone,curve,meaning,example]) => <article key={tone}><b>{tone === '0' ? 'Neutro' : `Tono ${tone}`}</b><strong>{curve}</strong><span>{meaning}</span><SpeakButton text={example} label={example} /></article>)}</div></section>
-    <section className="panel wide"><p className="eyebrow">z / c / s</p><h2>Aspiración y posición</h2><div className="phonetic-cards"><article><b>z</b><p>No aspirada. Punta de la lengua detrás de los dientes.</p><SpeakButton text="zǎo" label="zǎo" /></article><article><b>c</b><p>Aspirada. La misma zona, con expulsión clara de aire.</p><SpeakButton text="cǎo" label="cǎo" /></article><article><b>s</b><p>Fricativa continua; deja pasar el aire por un canal estrecho.</p><SpeakButton text="sǎo" label="sǎo" /></article></div><p className="source-note">Refuerzo fonético de las presentaciones de clase; la voz está marcada como sintética.</p></section>
+    <section className="panel wide"><div className="section-heading"><div><p className="eyebrow">MAPA DE TONOS</p><h2>Ve la altura, escucha el contraste</h2></div><SpeakButton text="妈、麻、马、骂、吗" speechText="妈，麻，马，骂，吗" audioSrc={audioSequence('tone-1-ma', 'tone-2-ma', 'tone-3-ma', 'tone-4-ma', 'tone-neutral-ma')} label="Escuchar serie" /></div><div className="tone-table">{pronunciation.tones.map((tone) => <article className="tone-card" key={tone.id}><header><b>{tone.label}</b><span>{tone.contour}</span></header><ToneContour points={tone.points} neutral={tone.id === '0'} label={`${tone.label}: ${tone.description}`} /><div className="tone-example"><strong>{tone.hanzi}</strong><div><em>{tone.pinyin}</em><small>{tone.meaning}</small></div></div><p>{tone.description}</p><SpeakButton text={`${tone.hanzi} · ${tone.pinyin}`} speechText={tone.hanzi} audioSrc={audioFor(tone.clipId)} label={tone.pinyin} /></article>)}</div><p className="map-note">Las líneas representan altura relativa, no volumen: 5 es alto y 1 es bajo.</p></section>
+    <section className="panel wide sandhi-panel"><p className="eyebrow">CAMBIO TONAL EN 你好</p><h2>Se escribe de una forma y normalmente se oye de otra</h2><div className="sandhi-flow"><div><span>Forma léxica</span><strong>nǐ hǎo</strong><small>3.º + 3.º</small></div><b aria-hidden="true">→</b><div><span>Habla natural</span><strong>ní hǎo</strong><small>2.º + 3.º</small></div></div><p>Cuando dos terceros tonos se encuentran, el primero se pronuncia como segundo tono. La ortografía pinyin no cambia: seguimos escribiendo <b>nǐ hǎo</b>.</p><SpeakButton text="你好 · ní hǎo" speechText="你好" audioSrc={audioFor('ni-hao-natural')} label="Oír habla natural" /></section>
+    <section className="panel wide"><div className="section-heading"><div><p className="eyebrow">z / c / s</p><h2>Posición compartida, aire diferente</h2></div><SpeakButton text="早、草、扫" speechText="早，草，扫" audioSrc={audioSequence('zao', 'cao', 'sao')} label="Comparar las tres" /></div><p className="articulation-lead">En las tres, la punta de la lengua trabaja muy cerca de la cara interna de los dientes inferiores. Pon una tira de papel frente a la boca para comprobar el aire.</p><div className="phonetic-cards">{pronunciation.initials.map((initial) => <article key={initial.letter}><header><b>{initial.letter}</b><div><strong>{initial.ipa}</strong><span>{initial.aspiration}</span></div></header><div className="airflow"><span>Aire</span><div aria-label={`Flujo de aire ${initial.airflow} de 3`}>{[1,2,3].map((level) => <i className={level <= initial.airflow ? 'active' : ''} key={level} />)}</div></div><p>{initial.articulation}</p><p className="paper-test">▱ {initial.test}</p><div className="initial-example"><strong>{initial.hanzi}</strong><span>{initial.pinyin}<small>{initial.meaning}</small></span></div><SpeakButton text={`${initial.hanzi} · ${initial.pinyin}`} speechText={initial.hanzi} audioSrc={audioFor(initial.clipId)} label={initial.pinyin} /></article>)}</div><p className="ai-disclosure">{pronunciation.disclosure} Si el archivo no carga, la web solo usa una voz local configurada explícitamente como china; nunca una voz inglesa.</p></section>
   </div>;
 }

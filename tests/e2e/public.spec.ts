@@ -5,7 +5,7 @@ test('la portada navega a las secciones públicas', async ({ page }) => {
   await expect(page.getByRole('heading', { name: '你最近怎么样？' })).toBeVisible();
   await page.getByRole('link', { name: /Ver ruta completa/ }).click();
   await expect(page).toHaveURL(/\/lesson\/1$/);
-  await page.getByRole('link', { name: /Vocabulario/ }).click();
+  await page.getByRole('link', { name: /Nombre y apellido/ }).click();
   await expect(page.getByRole('heading', { name: 'Vocabulario auditable' })).toBeVisible();
 });
 
@@ -16,6 +16,15 @@ test('el arcade y el audio sintético están disponibles sin cuenta', async ({ p
   await expect(page.locator('#arena')).toContainText('Flashcards');
   await page.goto('/lesson/1/vocabulary');
   await expect(page.getByRole('button', { name: /Escuchar/ }).first()).toBeVisible();
+});
+
+test('el repaso fonético distingue escritura, sandhi y aspiración', async ({ page }) => {
+  await page.goto('/lesson/1/pinyin');
+  await expect(page.getByText('nǐ hǎo', { exact: true }).first()).toBeVisible();
+  await expect(page.getByText('ní hǎo', { exact: true })).toBeVisible();
+  await expect(page.getByRole('button', { name: /Oír habla natural/ })).toBeVisible();
+  await expect(page.getByText('El papel debe moverse.')).toBeVisible();
+  await expect(page.getByText(/nunca una voz inglesa/)).toBeVisible();
 });
 
 test('las funciones persistentes solicitan un nombre', async ({ page, request }) => {

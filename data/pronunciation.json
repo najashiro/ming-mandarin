@@ -1,0 +1,91 @@
+{
+  "disclosure": "Voz generada por IA; no corresponde a una grabación humana.",
+  "clips": [
+    {
+      "id": "tone-1-ma",
+      "file": "tone-1-ma.mp3",
+      "input": "妈",
+      "expectedPinyin": "mā",
+      "instructions": "Pronuncia una sola vez la sílaba mā con el primer tono: alto, sostenido y completamente plano."
+    },
+    {
+      "id": "tone-2-ma",
+      "file": "tone-2-ma.mp3",
+      "input": "麻",
+      "expectedPinyin": "má",
+      "instructions": "Pronuncia una sola vez la sílaba má con el segundo tono: ascendente y claro."
+    },
+    {
+      "id": "tone-3-ma",
+      "file": "tone-3-ma.mp3",
+      "input": "马",
+      "expectedPinyin": "mǎ",
+      "instructions": "Pronuncia una sola vez la sílaba mǎ con el tercer tono completo de demostración: baja y vuelve a subir."
+    },
+    {
+      "id": "tone-4-ma",
+      "file": "tone-4-ma.mp3",
+      "input": "骂",
+      "expectedPinyin": "mà",
+      "instructions": "Pronuncia una sola vez la sílaba mà con el cuarto tono: caída firme, breve y clara."
+    },
+    {
+      "id": "tone-neutral-ma",
+      "file": "tone-neutral-ma.mp3",
+      "input": "吗",
+      "expectedPinyin": "ma",
+      "instructions": "Pronuncia una sola vez la partícula ma con tono neutro: breve, ligera y sin énfasis."
+    },
+    {
+      "id": "ni-hao-natural",
+      "file": "ni-hao-natural.mp3",
+      "input": "你好",
+      "expectedPinyin": "ní hǎo",
+      "instructions": "Pronuncia 你好 de manera natural en mandarín estándar, aplicando el cambio tonal habitual de tercer tono más tercer tono."
+    },
+    {
+      "id": "zao",
+      "file": "zao.mp3",
+      "input": "早",
+      "expectedPinyin": "zǎo",
+      "instructions": "Pronuncia una sola vez zǎo en mandarín estándar. Haz clara la consonante inicial z, no aspirada."
+    },
+    {
+      "id": "cao",
+      "file": "cao.mp3",
+      "input": "草",
+      "expectedPinyin": "cǎo",
+      "instructions": "Pronuncia una sola vez cǎo en mandarín estándar. Haz muy clara la aspiración de la consonante inicial c."
+    },
+    {
+      "id": "sao",
+      "file": "sao.mp3",
+      "input": "扫",
+      "expectedPinyin": "sǎo",
+      "instructions": "Pronuncia una sola vez sǎo en mandarín estándar. Mantén clara y continua la fricción de la consonante inicial s."
+    }
+  ],
+  "converterExamples": [
+    { "numbered": "ni3 hao3", "hanzi": "你好", "clipId": "ni-hao-natural" },
+    { "numbered": "ma1", "hanzi": "妈", "clipId": "tone-1-ma" },
+    { "numbered": "ma2", "hanzi": "麻", "clipId": "tone-2-ma" },
+    { "numbered": "ma3", "hanzi": "马", "clipId": "tone-3-ma" },
+    { "numbered": "ma4", "hanzi": "骂", "clipId": "tone-4-ma" },
+    { "numbered": "ma5", "hanzi": "吗", "clipId": "tone-neutral-ma" },
+    { "numbered": "zao3", "hanzi": "早", "clipId": "zao" },
+    { "numbered": "cao3", "hanzi": "草", "clipId": "cao" },
+    { "numbered": "sao3", "hanzi": "扫", "clipId": "sao" }
+  ],
+  "tones": [
+    { "id": "1", "label": "Tono 1", "contour": "55", "description": "alto y sostenido", "hanzi": "妈", "pinyin": "mā", "meaning": "mamá", "points": "10,16 90,16", "clipId": "tone-1-ma" },
+    { "id": "2", "label": "Tono 2", "contour": "35", "description": "sube con decisión", "hanzi": "麻", "pinyin": "má", "meaning": "cáñamo", "points": "10,70 90,16", "clipId": "tone-2-ma" },
+    { "id": "3", "label": "Tono 3", "contour": "214", "description": "baja y vuelve a subir", "hanzi": "马", "pinyin": "mǎ", "meaning": "caballo", "points": "10,48 48,78 90,30", "clipId": "tone-3-ma" },
+    { "id": "4", "label": "Tono 4", "contour": "51", "description": "cae rápido y firme", "hanzi": "骂", "pinyin": "mà", "meaning": "regañar", "points": "10,16 90,74", "clipId": "tone-4-ma" },
+    { "id": "0", "label": "Tono neutro", "contour": "·", "description": "breve y sin énfasis", "hanzi": "吗", "pinyin": "ma", "meaning": "partícula interrogativa", "points": "35,48 65,48", "clipId": "tone-neutral-ma" }
+  ],
+  "initials": [
+    { "letter": "z", "ipa": "[ts]", "aspiration": "no aspirada", "airflow": 1, "articulation": "Cierra el paso con la punta de la lengua detrás de los dientes y suelta sin soplo fuerte.", "test": "El papel casi no se mueve.", "hanzi": "早", "pinyin": "zǎo", "meaning": "temprano", "clipId": "zao" },
+    { "letter": "c", "ipa": "[tsʰ]", "aspiration": "aspirada", "airflow": 3, "articulation": "Usa la misma posición que z, pero libera una ráfaga clara de aire.", "test": "El papel debe moverse.", "hanzi": "草", "pinyin": "cǎo", "meaning": "hierba", "clipId": "cao" },
+    { "letter": "s", "ipa": "[s]", "aspiration": "fricción continua", "airflow": 2, "articulation": "Deja un canal estrecho entre lengua y dientes; el aire continúa, sin cierre inicial.", "test": "Puedes prolongar sss…", "hanzi": "扫", "pinyin": "sǎo", "meaning": "barrer", "clipId": "sao" }
+  ]
+}
