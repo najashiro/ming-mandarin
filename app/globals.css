@@ -127,7 +127,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
   .content-grid { grid-template-columns: 1fr; padding: 42px 0; }
   .today-card, .focus-card { padding: 25px 20px; }
   .module-grid { grid-template-columns: 1fr 1fr; }
-  .mobile-nav { position: fixed; inset: auto 0 0; z-index: 30; height: 68px; display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); background: rgba(252,250,245,.96); backdrop-filter: blur(15px); }
+  .mobile-nav { position: fixed; inset: auto 0 0; z-index: 30; height: 68px; display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1px solid var(--line); background: rgba(252,250,245,.96); backdrop-filter: blur(15px); }
   .mobile-nav a { display: grid; place-content: center; gap: 2px; text-align: center; color: var(--muted); font-size: 9px; font-weight: 700; }
   .mobile-nav a span { font: 18px/1 SimSun, serif; }
   .mobile-nav .is-active { color: var(--jade); }

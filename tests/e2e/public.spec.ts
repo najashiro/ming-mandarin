@@ -12,6 +12,7 @@ test('la portada navega a las secciones públicas', async ({ page }) => {
 test('el arcade y el audio sintético están disponibles sin cuenta', async ({ page }) => {
   await page.goto('/lesson/1/games');
   await expect(page.getByRole('heading', { name: '28 formas de practicar' })).toBeVisible();
+  await expect(page.locator('.mobile-nav a[href="/lesson/1/games"]')).toContainText('Juegos');
   await page.getByRole('button', { name: /Jugar/ }).first().click();
   await expect(page.locator('#arena')).toContainText('Flashcards');
   await page.goto('/lesson/1/vocabulary');

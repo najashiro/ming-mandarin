@@ -16,7 +16,7 @@ export async function SiteShell({ children }: { children: React.ReactNode }) {
       </header>
       {children}
       <footer className="site-footer shell"><div><b>明 Míng</b><p>Lección 1 · aprendizaje persistente y verificable.</p></div><nav><Link href="/leaderboard">Ranking</Link><Link href="/errors">Errores</Link>{isAdmin && <Link href="/admin/content">Fuentes</Link>}</nav></footer>
-      <nav className="mobile-nav" aria-label="Navegación móvil"><Link href="/"><span>⌂</span>Inicio</Link><Link href="/lesson/1"><span>路</span>Ruta</Link><Link href="/lesson/1/daily"><span>练</span>Práctica</Link><Link href="/progress"><span>升</span>Progreso</Link></nav>
+      <nav className="mobile-nav" aria-label="Navegación móvil"><Link href="/"><span>⌂</span>Inicio</Link><Link href="/lesson/1"><span>路</span>Ruta</Link><Link href="/lesson/1/daily"><span>练</span>Práctica</Link><Link href="/lesson/1/games"><span>游</span>Juegos</Link><Link href="/progress"><span>升</span>Progreso</Link></nav>
     </>
   );
 }
