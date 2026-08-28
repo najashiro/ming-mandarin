@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import { getCurrentUser, isAdminUser, signInPath } from '@/app/auth';
+import { getCurrentUser, isAuthorizedAdmin, signInPath } from '@/app/auth';
 
 export async function SiteShell({ children }: { children: React.ReactNode }) {
   const user = await getCurrentUser();
-  const isAdmin = isAdminUser(user);
+  const isAdmin = await isAuthorizedAdmin(user);
   return (
     <>
       <header className="topbar">

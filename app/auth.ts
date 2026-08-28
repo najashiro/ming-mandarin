@@ -1,6 +1,7 @@
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 import { ACCESS_COOKIE, authRequest, type SupabaseAuthUser } from '@/lib/supabase/auth';
+import { supabaseRest } from '@/lib/supabase/rest';
 
 export type AppUser = {
   userId: string;
@@ -44,10 +45,21 @@ export function isAdminUser(user: AppUser | null) {
   return Boolean(user.email && allowed.includes(user.email.toLowerCase()));
 }
 
+export async function isAuthorizedAdmin(user: AppUser | null) {
+  if (isAdminUser(user)) return true;
+  if (!user || user.isAnonymous) return false;
+  try {
+    const rows = await supabaseRest<Array<{ user_id: string }>>(`community_admins?select=user_id&user_id=eq.${encodeURIComponent(user.userId)}&limit=1`);
+    return rows.length > 0;
+  } catch {
+    return false;
+  }
+}
+
 export async function requireAdmin(returnTo: string): Promise<AppUser> {
   const user = await getCurrentUser();
   if (!user) redirect(`/admin/login?returnTo=${encodeURIComponent(safeReturnPath(returnTo))}`);
-  if (!isAdminUser(user)) redirect('/');
+  if (!(await isAuthorizedAdmin(user))) redirect('/');
   return user;
 }
 

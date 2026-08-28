@@ -1,4 +1,4 @@
-import { getCurrentUser, isAdminUser } from '@/app/auth';
+import { getCurrentUser, isAuthorizedAdmin } from '@/app/auth';
 
 export async function apiUser() {
   const user = await getCurrentUser();
@@ -8,7 +8,7 @@ export async function apiUser() {
 
 export async function apiAdmin() {
   const user = await apiUser();
-  if (!isAdminUser(user)) throw new ApiError(403, 'No tienes permiso para moderar la comunidad.');
+  if (!(await isAuthorizedAdmin(user))) throw new ApiError(403, 'No tienes permiso para moderar la comunidad.');
   return user;
 }
 
