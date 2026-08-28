@@ -11,6 +11,7 @@ export type SupabaseAuthUser = {
   email?: string;
   is_anonymous?: boolean;
   user_metadata?: Record<string, unknown>;
+  app_metadata?: Record<string, unknown>;
 };
 
 export type SupabaseTokenResponse = {

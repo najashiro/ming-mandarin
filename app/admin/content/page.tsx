@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import { redirect } from 'next/navigation';
-import { requireUser } from '@/app/auth';
+import { requireAdmin } from '@/app/auth';
 import { SiteShell, LessonHeader } from '@/components/SiteShell';
 import { vocabulary } from '@/seed/vocabulary';
 import { sentences } from '@/seed/sentences';
@@ -14,14 +13,13 @@ const filters: Array<['all' | HanziSourceCode, string]> = [
 ];
 
 export default async function AdminContent({ searchParams }: { searchParams: Promise<{ source?: string }> }) {
-  const [user, query] = await Promise.all([requireUser('/admin/content'), searchParams]);
-  const allow = (process.env.ADMIN_EMAILS ?? 'najashiro@gmail.com').split(',').map((value) => value.trim().toLowerCase()).filter(Boolean);
-  if (!user.email || !allow.includes(user.email.toLowerCase())) redirect('/');
+  const [, query] = await Promise.all([requireAdmin('/admin/content'), searchParams]);
   const active = filters.some(([code]) => code === query.source) ? query.source as 'all' | HanziSourceCode : 'all';
   const generalSources = [...vocabulary, ...sentences, ...grammarPoints];
   const filteredCharacters = active === 'all' ? lesson1Characters : lesson1Characters.filter((item) => item.sourceGroups?.includes(active));
   return <SiteShell><main>
     <LessonHeader eyebrow="ADMIN · AUDITORÍA" title="Trazabilidad del contenido" description="Vista protegida para revisar qué fuente y página respaldan cada elemento." />
+    <nav className="admin-nav shell" aria-label="Administración"><Link className="selected" href="/admin/content">Fuentes</Link><Link href="/admin/community">Comunidad</Link></nav>
     <section className="audit-summary shell"><article><b>{vocabulary.length}</b> palabras</article><article><b>{sentences.length}</b> frases</article><article><b>{grammarPoints.length}</b> reglas</article><article><b>{lesson1Characters.length}</b> Hanzi curriculares</article></section>
     <div className="audit-table shell"><div className="audit-head"><span>Elemento</span><span>Tipo</span><span>Archivo</span><span>Página</span></div>{generalSources.map((item, index) => <div key={`${item.id}-${index}`}><b>{'hanzi' in item ? String(item.hanzi) : 'title' in item ? String(item.title) : ''}</b><span>{item.source.type}</span><span>{item.source.file}</span><span>PDF {item.source.pdfPage}{item.source.printedPage ? ` / imp. ${item.source.printedPage}` : ''}</span></div>)}</div>
 

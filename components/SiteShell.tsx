@@ -1,10 +1,9 @@
 import Link from 'next/link';
-import { getCurrentUser, signInPath } from '@/app/auth';
+import { getCurrentUser, isAdminUser, signInPath } from '@/app/auth';
 
 export async function SiteShell({ children }: { children: React.ReactNode }) {
   const user = await getCurrentUser();
-  const adminEmails = (process.env.ADMIN_EMAILS ?? 'najashiro@gmail.com').split(',').map((value) => value.trim().toLowerCase());
-  const isAdmin = Boolean(user?.email && adminEmails.includes(user.email.toLowerCase()));
+  const isAdmin = isAdminUser(user);
   return (
     <>
       <header className="topbar">
@@ -15,7 +14,7 @@ export async function SiteShell({ children }: { children: React.ReactNode }) {
         <Link className="profile-chip" href={user ? '/profile' : signInPath('/profile')}><span aria-hidden="true">学</span><b>{user ? user.displayName : 'Guardar progreso'}</b></Link>
       </header>
       {children}
-      <footer className="site-footer shell"><div><b>明 Míng</b><p>Lección 1 · aprendizaje persistente y verificable.</p></div><nav><Link href="/leaderboard">Ranking</Link><Link href="/errors">Errores</Link>{isAdmin && <Link href="/admin/content">Fuentes</Link>}</nav></footer>
+      <footer className="site-footer shell"><div><b>明 Míng</b><p>Lección 1 · aprendizaje persistente y verificable.</p></div><nav><Link href="/leaderboard">Ranking</Link><Link href="/errors">Errores</Link>{isAdmin && <><Link href="/admin/content">Fuentes</Link><Link href="/admin/community">Comunidad</Link></>}</nav></footer>
       <nav className="mobile-nav" aria-label="Navegación móvil"><Link href="/"><span>⌂</span>Inicio</Link><Link href="/lesson/1"><span>路</span>Ruta</Link><Link href="/lesson/1/daily"><span>练</span>Práctica</Link><Link href="/lesson/1/games"><span>游</span>Juegos</Link><Link href="/progress"><span>升</span>Progreso</Link></nav>
     </>
   );

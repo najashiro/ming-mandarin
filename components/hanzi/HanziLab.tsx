@@ -10,6 +10,7 @@ import { classifyHanziLearningState, summarizeHanziStages, type LocalHanziProgre
 import type { HanziAttemptPayload, HanziCharacterData, HanziLearningState, HanziManifestEntry, HanziPracticeMode, HanziProgressMap, HanziSkillDimension } from '@/lib/hanzi/types';
 import { HanziStrokeSvg } from './HanziStrokeSvg';
 import { HanziWriterStage, type HanziWriterStageHandle, type QuizSummary } from './HanziWriterStage';
+import { CommunityButton } from '@/components/community/CommunityProvider';
 
 const tabs = ['Aprender', 'Componentes', 'Trazos', 'Practicar'] as const;
 type Tab = typeof tabs[number];
@@ -171,6 +172,7 @@ export function HanziLab({ characters, stages, manifest, initialProgress = {}, i
       <div className="hanzi-character-copy"><p className="eyebrow">ETAPA {character.primaryStage} · {stages.find((stage) => stage.id === character.primaryStage)?.title}</p><h2>{character.pinyin} <small>{character.meaning}</small></h2>
         <div className="hanzi-badges"><span>{technical?.strokeCount ?? character.strokeCount} trazos verificados</span>{character.radicalAudited && <span>Radical {character.radical}</span>}<span>Escritura requerida</span><span className={technical?.available ? 'available' : 'unavailable'}>{technical?.available ? 'Datos locales listos' : 'Datos no disponibles'}</span></div>
         <p className="source-note">Fuentes: {character.sourceGroups?.map((group) => group.replace('hanzi-', '')).join(' · ')}{character.sourceGroups?.includes('hanzi-1.5') ? ' · 1.5 es evidencia de repaso' : ''}.</p>
+        <CommunityButton label={`Preguntar sobre ${character.hanzi}`} context={{ concept: character.hanzi, skill: tab === 'Trazos' ? 'stroke-order' : tab === 'Practicar' ? 'hanzi-writing' : 'hanzi-recognition', route: `/lesson/1/hanzi?character=${encodeURIComponent(character.hanzi)}&tab=${encodeURIComponent(tab)}` }} />
       </div>
       <MasterySummary values={progress[character.id]?.dimensions} />
     </section>

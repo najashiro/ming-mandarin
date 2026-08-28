@@ -8,6 +8,7 @@ export type AppUser = {
   email: string | null;
   fullName: string | null;
   isAnonymous: boolean;
+  role: string | null;
 };
 
 export async function getCurrentUser(): Promise<AppUser | null> {
@@ -28,11 +29,26 @@ export async function getCurrentUser(): Promise<AppUser | null> {
       email,
       fullName,
       isAnonymous,
+      role: typeof user.app_metadata?.role === 'string' ? user.app_metadata.role : null,
       displayName: fullName ?? (email ? email.split('@')[0] : 'Estudiante'),
     };
   } catch {
     return null;
   }
+}
+
+export function isAdminUser(user: AppUser | null) {
+  if (!user || user.isAnonymous) return false;
+  if (user.role === 'admin' || user.role === 'moderator') return true;
+  const allowed = (process.env.ADMIN_EMAILS ?? '').split(',').map((value) => value.trim().toLowerCase()).filter(Boolean);
+  return Boolean(user.email && allowed.includes(user.email.toLowerCase()));
+}
+
+export async function requireAdmin(returnTo: string): Promise<AppUser> {
+  const user = await getCurrentUser();
+  if (!user) redirect(`/admin/login?returnTo=${encodeURIComponent(safeReturnPath(returnTo))}`);
+  if (!isAdminUser(user)) redirect('/');
+  return user;
 }
 
 export async function requireUser(returnTo: string): Promise<AppUser> {

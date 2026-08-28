@@ -31,8 +31,9 @@ ADMIN_EMAILS=najashiro@gmail.com
 
 ## Base de datos
 
-Las migraciones canónicas son `supabase/migrations/0001_lesson_1.sql` y
-`supabase/migrations/0002_hanzi_lab.sql`. Crean:
+Las migraciones canónicas son `supabase/migrations/0001_lesson_1.sql`,
+`supabase/migrations/0002_hanzi_lab.sql` y
+`supabase/migrations/0003_community_v1.sql`. Crean:
 
 - perfiles vinculados a `auth.users`;
 - dominio por concepto y dimensión;
@@ -41,6 +42,8 @@ Las migraciones canónicas son `supabase/migrations/0001_lesson_1.sql` y
 - la vista `leaderboard_public`, accesible solo desde el servidor;
 - políticas RLS para que cada estudiante solo pueda leer sus registros.
 - resúmenes de intentos Hanzi sin coordenadas ni trayectorias del estudiante.
+- preguntas y respuestas educativas contextuales, reacciones útiles, reportes,
+  bloqueos exclusivos de comunidad y auditoría de moderación.
 
 No se insertan estudiantes, notas ni posiciones ficticias.
 
@@ -91,6 +94,31 @@ Supabase persiste únicamente el resumen: carácter, modo, dimensión, resultado
 aciertos, errores, ayudas y duración. Nunca se guardan coordenadas de escritura.
 Sin sesión, el navegador conserva un resumen local y ofrece elegir un nombre
 para sincronizar el progreso.
+
+## Comunidad V1
+
+Las páginas educativas incluyen un botón discreto `💬` que abre un drawer en
+escritorio y un bottom sheet en móvil. El panel permanece cerrado y no solicita
+datos hasta que el estudiante lo abre. Las preguntas heredan automáticamente
+lección, sección, concepto, habilidad y ruta; el usuario nunca edita los tags
+técnicos.
+
+La comunidad utiliza el perfil anónimo existente del estudiante. Threads,
+respuestas, “Me ayudó”, reportes, edición y eliminación lógica pasan por API de
+servidor con validación, límites configurables y comprobación de bloqueos. No
+afectan XP, dominio, examen ni ranking. Realtime escucha exclusivamente una
+tabla de eventos sanitizados sin texto ni UUID de usuario; una recarga periódica
+mantiene el hilo funcional si el WebSocket falla.
+
+La moderación está disponible en `/admin/community`. El administrador entra por
+`/admin/login` con correo y contraseña de Supabase Auth y, además, debe estar en
+`ADMIN_EMAILS` o tener `app_metadata.role` con valor `admin`/`moderator`. Crea la
+cuenta y su contraseña únicamente en Supabase Dashboard; nunca las guardes en
+GitHub, migraciones, tests o variables `NEXT_PUBLIC_*`.
+
+`COMMUNITY_ENABLED=false` desactiva las API de comunidad sin afectar el estudio.
+Los límites por defecto también se guardan en `community_settings` y pueden
+ajustarse administrativamente en la base de datos.
 
 ## Audio de pronunciación
 
