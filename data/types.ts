@@ -90,3 +90,12 @@ export type Exercise = {
   difficulty: 1 | 2 | 3 | 4 | 5;
   source: SourceRef;
 };
+
+export type ListeningEntry = {
+  id: string;
+  lessonId: number;
+  hanzi: string;
+  pinyin: string;
+  translation: string;
+  audioSrc: string;
+};

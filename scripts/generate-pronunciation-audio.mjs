@@ -6,8 +6,10 @@ import { fileURLToPath } from 'node:url';
 
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectDirectory = path.resolve(scriptDirectory, '..');
-const manifestPath = path.join(projectDirectory, 'data', 'pronunciation.json');
-const outputDirectory = path.join(projectDirectory, 'public', 'audio', 'pinyin');
+const manifestDefinitions = [
+  { path: path.join(projectDirectory, 'data', 'pronunciation.json'), directory: path.join(projectDirectory, 'public', 'audio', 'pinyin') },
+  { path: path.join(projectDirectory, 'data', 'mandarin-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin') },
+];
 const localEnvironment = path.join(projectDirectory, '.env.audio.local');
 
 if (existsSync(localEnvironment)) process.loadEnvFile(localEnvironment);
@@ -22,9 +24,12 @@ if (!apiKey) {
   process.exit(1);
 }
 
-const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
-await mkdir(outputDirectory, { recursive: true });
-const selectedClips = only ? manifest.clips.filter((clip) => clip.id === only) : manifest.clips;
+const manifests = await Promise.all(manifestDefinitions.map(async (definition) => ({
+  ...definition,
+  clips: JSON.parse(await readFile(definition.path, 'utf8')).clips,
+})));
+const clips = manifests.flatMap((manifest) => manifest.clips.map((clip) => ({ ...clip, directory: manifest.directory })));
+const selectedClips = only ? clips.filter((clip) => clip.id === only) : clips;
 
 if (only && !selectedClips.length) {
   console.error(`No existe el clip solicitado: ${only}`);
@@ -39,7 +44,8 @@ const baseInstructions = [
 ].join(' ');
 
 for (const clip of selectedClips) {
-  const destination = path.join(outputDirectory, clip.file);
+  await mkdir(clip.directory, { recursive: true });
+  const destination = path.join(clip.directory, clip.file);
   if (!force && existsSync(destination)) {
     console.log(`Ya existe: ${clip.file}`);
     continue;
@@ -69,4 +75,4 @@ for (const clip of selectedClips) {
   await writeFile(destination, Buffer.from(await response.arrayBuffer()));
 }
 
-console.log(`Listo: ${selectedClips.length} clips generados en ${outputDirectory}`);
+console.log(`Listo: ${selectedClips.length} clips generados como recursos estáticos.`);

@@ -1,4 +1,4 @@
-import { readFile } from 'node:fs/promises';
+import { readFile, stat } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import process from 'node:process';
@@ -7,19 +7,20 @@ import { fileURLToPath } from 'node:url';
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectDirectory = path.resolve(scriptDirectory, '..');
 const localEnvironment = path.join(projectDirectory, '.env.audio.local');
-const manifestPath = path.join(projectDirectory, 'data', 'pronunciation.json');
-const audioDirectory = path.join(projectDirectory, 'public', 'audio', 'pinyin');
+const manifestDefinitions = [
+  { path: path.join(projectDirectory, 'data', 'pronunciation.json'), directory: path.join(projectDirectory, 'public', 'audio', 'pinyin') },
+  { path: path.join(projectDirectory, 'data', 'mandarin-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin') },
+];
 
 if (existsSync(localEnvironment)) process.loadEnvFile(localEnvironment);
 const apiKey = process.env.OPENAI_API_KEY?.trim();
-if (!apiKey) {
-  console.error('Falta OPENAI_API_KEY para verificar los clips.');
-  process.exit(1);
-}
-
-const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
+const manifests = await Promise.all(manifestDefinitions.map(async (definition) => ({
+  ...definition,
+  clips: JSON.parse(await readFile(definition.path, 'utf8')).clips,
+})));
+const clips = manifests.flatMap((manifest) => manifest.clips.map((clip) => ({ ...clip, directory: manifest.directory })));
 const only = process.argv.find((argument) => argument.startsWith('--only='))?.split('=', 2)[1];
-const selectedClips = only ? manifest.clips.filter((clip) => clip.id === only) : manifest.clips;
+const selectedClips = only ? clips.filter((clip) => clip.id === only) : clips;
 if (only && !selectedClips.length) {
   console.error(`No existe el clip solicitado: ${only}`);
   process.exit(1);
@@ -28,7 +29,19 @@ const normalize = (value) => value.replace(/[^\u3400-\u9fff]/g, '');
 const results = [];
 
 for (const clip of selectedClips) {
-  const filePath = path.join(audioDirectory, clip.file);
+  const filePath = path.join(clip.directory, clip.file);
+  const size = existsSync(filePath) ? (await stat(filePath)).size : 0;
+  if (size < 1024) throw new Error(`Audio ausente o vacío: ${clip.file}`);
+}
+
+console.log(`Archivos estáticos: ${selectedClips.length}/${selectedClips.length} presentes y no vacíos.`);
+if (!apiKey) {
+  console.log('Verificación de transcripción omitida: no hay OPENAI_API_KEY en este entorno.');
+  process.exit(0);
+}
+
+for (const clip of selectedClips) {
+  const filePath = path.join(clip.directory, clip.file);
   const form = new FormData();
   form.append('model', 'gpt-4o-mini-transcribe');
   form.append('language', 'zh');

@@ -10,6 +10,7 @@ import good from '@/public/hanzi-data/好.json';
 import evening from '@/public/hanzi-data/晚.json';
 import thanks from '@/public/hanzi-data/谢.json';
 import { characters, hanziSourceGroups, hanziStages, legacyCharacters, lesson1Characters } from '@/seed/characters';
+import { strokeNamesForCharacter } from '@/lib/hanzi/stroke-names';
 
 const attempt: HanziAttemptPayload = {
   characterId: 'c-好', mode: 'exam', skillDimension: 'writing', completed: true,
@@ -31,6 +32,14 @@ describe('laboratorio Hanzi', () => {
     const sets = cumulativeStrokeSets(goodData);
     expect(sets).toHaveLength(6);
     expect(sets.map((set) => set.length)).toEqual([1, 2, 3, 4, 5, 6]);
+  });
+
+  it('mantiene nombres técnicos separados de la dirección y evita nombres ambiguos', () => {
+    const names = strokeNamesForCharacter('好', goodData.strokes.length);
+    expect(names[0]).toEqual({ hanzi: '撇点', pinyin: 'piědiǎn' });
+    expect(names[1]).toEqual({ hanzi: '撇', pinyin: 'piě' });
+    expect(names[3]).toBeNull();
+    expect(names).toHaveLength(goodData.strokes.length);
   });
 
   it('valida datos y disponibilidad para todo el inventario de la lección', () => {

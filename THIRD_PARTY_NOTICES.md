@@ -22,3 +22,12 @@ The local stroke paths and medians are selected files from
 Only the character graphics needed by the current lesson are shipped. The
 application fetches those files lazily from its own origin and does not contact
 a third-party character-data CDN.
+
+## cnchar-order data
+
+The explicit stroke-name sequences used by the Hanzi lesson are a selected,
+compact subset derived from **cnchar-order 3.2.6**.
+
+- Project: https://github.com/theajack/cnchar
+- License: MIT
+- Stroke names and Hanyu Pinyin are normalized against Unicode's CJK Strokes catalog.

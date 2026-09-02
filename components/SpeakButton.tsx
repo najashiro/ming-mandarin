@@ -59,7 +59,19 @@ export function SpeakButton({ text, speechText, audioSrc, rate = 0.85, label = '
     }
   }, []);
 
+  function stop() {
+    playRunRef.current += 1;
+    if (audioRef.current) audioRef.current.pause();
+    if (activeAudio === audioRef.current) activeAudio = null;
+    window.speechSynthesis?.cancel();
+    setState('idle');
+  }
+
   async function play() {
+    if (state === 'playing' || state === 'loading') {
+      stop();
+      return;
+    }
     const run = ++playRunRef.current;
     setState('loading');
     if (activeAudio) activeAudio.pause();
@@ -97,6 +109,8 @@ export function SpeakButton({ text, speechText, audioSrc, rate = 0.85, label = '
           return;
         }
         if (activeAudio === audioRef.current) activeAudio = null;
+        if (run === playRunRef.current) setState('unavailable');
+        return;
       }
     }
 
@@ -106,9 +120,7 @@ export function SpeakButton({ text, speechText, audioSrc, rate = 0.85, label = '
     setState(spoken ? 'playing' : 'unavailable');
   }
 
-  const source = recordedSources.length > 1 ? 'serie IA grabada' : recordedSources.length === 1 ? 'voz IA grabada' : 'voz china local';
-  const status = state === 'loading' ? 'cargando' : state === 'playing' ? 'reproduciendo' : state === 'unavailable' ? 'sin voz china' : source;
-  const title = recordedSources.length ? 'Audio en mandarín; voz generada por IA' : 'Voz sintética china instalada en el dispositivo';
-
-  return <button className={`audio-button ${state}`} type="button" onClick={play} title={title} aria-label={`${label}: ${text}`} aria-live="polite"><span aria-hidden="true">{state === 'playing' ? '■' : '▶'}</span> {label}<small>{status}</small></button>;
+  const isActive = state === 'loading' || state === 'playing';
+  const visibleLabel = isActive ? 'Detener' : label;
+  return <button className={`audio-button ${state}`} type="button" onClick={play} aria-label={`${visibleLabel}: ${text}`} aria-live="polite"><span aria-hidden="true">{isActive ? '■' : '▶'}</span> {visibleLabel}</button>;
 }

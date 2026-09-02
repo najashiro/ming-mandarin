@@ -12,7 +12,7 @@ export type QuizSummary = {
 };
 
 export type HanziWriterStageHandle = {
-  animate(): void;
+  animate(onComplete?: () => void): void;
   pause(): void;
   resume(): void;
   show(): void;
@@ -121,7 +121,7 @@ export const HanziWriterStage = forwardRef<HanziWriterStageHandle, Props>(functi
   }, [character, showCharacter, showOutline, speed]);
 
   useImperativeHandle(ref, () => ({
-    animate: () => { void writerRef.current?.animateCharacter(); },
+    animate: (onComplete) => { void writerRef.current?.animateCharacter({ onComplete }); },
     pause: () => { void writerRef.current?.pauseAnimation(); },
     resume: () => { void writerRef.current?.resumeAnimation(); },
     show: () => { void writerRef.current?.showCharacter({ duration: 120 }); },

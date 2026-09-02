@@ -1,9 +1,9 @@
 export const learningModules = [
   { number: 0, title: 'Repaso fonético', subtitle: 'Inicial + final + tono', href: '/lesson/1/pinyin', concepts: ['Tonos', 'Marcas', 'z / c / s'] },
-  { number: 1, title: 'Saludos', subtitle: 'Saluda y responde', href: '/lesson/1/dialogues', concepts: ['你好', '您好', '你们好'] },
-  { number: 2, title: 'Nombre y apellido', subtitle: 'Preséntate', href: '/lesson/1/vocabulary', concepts: ['叫', '名字', '姓', '请问'] },
+  { number: 1, title: 'Saludos', subtitle: 'Saluda y responde', href: '/lesson/1/greetings', concepts: ['你好', '您好', '你们好'] },
+  { number: 2, title: 'Nombre y apellido', subtitle: 'Preséntate', href: '/lesson/1/name', concepts: ['叫', '名字', '姓', '请问'] },
   { number: 3, title: '¿Cómo has estado?', subtitle: 'Pregunta por alguien', href: '/lesson/1/dialogues', concepts: ['最近', '怎么样', '呢'] },
-  { number: 4, title: 'Estados', subtitle: 'Describe cómo estás', href: '/lesson/1/vocabulary', concepts: ['好', '忙', '困', '累'] },
+  { number: 4, title: 'Estados', subtitle: 'Describe cómo estás', href: '/lesson/1/states', concepts: ['好', '忙', '困', '累'] },
   { number: 5, title: 'Gramática', subtitle: 'Construye con precisión', href: '/lesson/1/grammar', concepts: ['吗', '很', '不', '也'] },
   { number: 6, title: 'Diálogos', subtitle: 'Interpreta los textos', href: '/lesson/1/dialogues', concepts: ['课文一', '课文二'] },
   { number: 7, title: 'Hanzi', subtitle: 'Seis etapas de escritura', href: '/lesson/1/hanzi', concepts: ['52 Hanzi', '笔顺', '复习'] },

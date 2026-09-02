@@ -7,6 +7,12 @@ const source = (pdfPage: number, printedPage: number) => ({
   printedPage,
 });
 
+const classSource = (pdfPage: number) => ({
+  type: 'class_presentation' as const,
+  file: '1.1 Presentación Curso Ciclo 1 - Junio a Julio 2026 Instituto Confucio 你最近怎么样.pdf',
+  pdfPage,
+});
+
 const s = (
   id: string,
   hanzi: string,
@@ -37,4 +43,12 @@ export const sentences: SentenceEntry[] = [
   s('s-not-too-busy', '我不太忙。', 'Wǒ bú tài máng.', 'No estoy muy ocupado/a.', ['我', '不', '太', '忙'], ['不太', 'predicado-adjetival'], 47, 46, 2),
   s('s-dawei-good', '大为好吗？', 'Dàwéi hǎo ma?', '¿Está bien Dawei?', ['大为', '好', '吗'], ['吗', 'pregunta-sí-no'], 47, 46, 2),
   s('s-he-too-good', '他也很好。', 'Tā yě hěn hǎo.', 'Él también está muy bien.', ['他', '也', '很', '好'], ['也', '很', 'orden'], 47, 46, 2),
+  {
+    id: 's-ninhao', hanzi: '您好！', pinyin: 'Nín hǎo!', translation: '¡Hola! (formal)',
+    tokens: ['您', '好'], grammarTags: ['saludo', 'formal'], difficulty: 1, source: classSource(20),
+  },
+  {
+    id: 's-nimenhao', hanzi: '你们好！', pinyin: 'Nǐmen hǎo!', translation: '¡Hola a todos!',
+    tokens: ['你们', '好'], grammarTags: ['saludo', 'plural'], difficulty: 1, source: classSource(19),
+  },
 ];
