@@ -242,5 +242,297 @@
   "怎": {
     "available": true,
     "strokeCount": 9
+  },
+  "刚": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "到": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "朋": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "友": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "学": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "这": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "是": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "那": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "您": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "贵": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "哪": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "国": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "习": {
+    "available": true,
+    "strokeCount": 3
+  },
+  "汉": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "语": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "北": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "京": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "中": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "秘": {
+    "available": true,
+    "strokeCount": 10
+  },
+  "鲁": {
+    "available": true,
+    "strokeCount": 12
+  },
+  "美": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "看": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "都": {
+    "available": true,
+    "strokeCount": 10
+  },
+  "要": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "大": {
+    "available": true,
+    "strokeCount": 3
+  },
+  "小": {
+    "available": true,
+    "strokeCount": 3
+  },
+  "和": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "喜": {
+    "available": true,
+    "strokeCount": 12
+  },
+  "欢": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "吃": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "包": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "子": {
+    "available": true,
+    "strokeCount": 3
+  },
+  "饺": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "米": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "饭": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "面": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "条": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "点": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "心": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "喝": {
+    "available": true,
+    "strokeCount": 12
+  },
+  "水": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "茶": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "咖": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "啡": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "可": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "乐": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "果": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "汁": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "爸": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "妈": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "家": {
+    "available": true,
+    "strokeCount": 10
+  },
+  "有": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "几": {
+    "available": true,
+    "strokeCount": 2
+  },
+  "口": {
+    "available": true,
+    "strokeCount": 3
+  },
+  "的": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "照": {
+    "available": true,
+    "strokeCount": 13
+  },
+  "片": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "做": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "工": {
+    "available": true,
+    "strokeCount": 3
+  },
+  "作": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "医": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "共": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "个": {
+    "available": true,
+    "strokeCount": 3
+  },
+  "两": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "姐": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "还": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "谁": {
+    "available": true,
+    "strokeCount": 10
+  },
+  "没": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "狗": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "哥": {
+    "available": true,
+    "strokeCount": 10
+  },
+  "弟": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "妹": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "张": {
+    "available": true,
+    "strokeCount": 7
   }
 }

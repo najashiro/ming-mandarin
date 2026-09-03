@@ -1,4 +1,4 @@
-import curriculum from '@/data/lesson1-hanzi.json';
+import curriculum from '@/data/lesson1-hanzi.json' with { type: 'json' };
 import type { CharacterEntry, CharacterWord, HanziSourceCode, HanziStageId, SourceRef } from '@/data/types';
 
 type CharacterMeta = readonly [pinyin: string, meaning: string, strokeCount: number];

@@ -1,44 +1,13 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { audioForMandarinText } from '@/lib/mandarin-audio';
 
 let activeAudio: HTMLAudioElement | null = null;
 
-async function findChineseVoice() {
-  if (!('speechSynthesis' in window)) return null;
-  let voices = window.speechSynthesis.getVoices();
-  if (!voices.length) {
-    voices = await new Promise<SpeechSynthesisVoice[]>((resolve) => {
-      const finish = () => {
-        window.speechSynthesis.removeEventListener('voiceschanged', finish);
-        resolve(window.speechSynthesis.getVoices());
-      };
-      window.speechSynthesis.addEventListener('voiceschanged', finish, { once: true });
-      window.setTimeout(finish, 1000);
-    });
-  }
-  return voices.find((voice) => voice.lang.toLowerCase() === 'zh-cn')
-    ?? voices.find((voice) => voice.lang.toLowerCase().startsWith('zh'))
-    ?? null;
-}
-
-export async function speakChinese(text: string, rate = 0.85, onFinish?: () => void) {
-  if (!('speechSynthesis' in window)) return false;
-  const voice = await findChineseVoice();
-  if (!voice) return false;
-  window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = 'zh-CN';
-  utterance.rate = rate;
-  utterance.voice = voice;
-  utterance.onend = () => onFinish?.();
-  utterance.onerror = () => onFinish?.();
-  window.speechSynthesis.speak(utterance);
-  return true;
-}
-
 type SpeakButtonProps = {
   text: string;
+  /** Conservado por compatibilidad; la reproducción curricular siempre usa audioSrc estático. */
   speechText?: string;
   audioSrc?: string | string[];
   rate?: number;
@@ -48,11 +17,12 @@ type SpeakButtonProps = {
   title?: string;
 };
 
-export function SpeakButton({ text, speechText, audioSrc, rate = 0.85, label = 'Escuchar', compact = false, ariaLabel, title }: SpeakButtonProps) {
+export function SpeakButton({ text, audioSrc, rate = 0.85, label = 'Escuchar', compact = false, ariaLabel, title }: SpeakButtonProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const playRunRef = useRef(0);
   const [state, setState] = useState<'idle' | 'loading' | 'playing' | 'unavailable'>('idle');
-  const recordedSources = Array.isArray(audioSrc) ? audioSrc : audioSrc ? [audioSrc] : [];
+  const resolvedAudio = audioSrc ?? audioForMandarinText(text);
+  const recordedSources = Array.isArray(resolvedAudio) ? resolvedAudio : resolvedAudio ? [resolvedAudio] : [];
 
   useEffect(() => () => {
     playRunRef.current += 1;
@@ -66,7 +36,6 @@ export function SpeakButton({ text, speechText, audioSrc, rate = 0.85, label = '
     playRunRef.current += 1;
     if (audioRef.current) audioRef.current.pause();
     if (activeAudio === audioRef.current) activeAudio = null;
-    window.speechSynthesis?.cancel();
     setState('idle');
   }
 
@@ -78,7 +47,6 @@ export function SpeakButton({ text, speechText, audioSrc, rate = 0.85, label = '
     const run = ++playRunRef.current;
     setState('loading');
     if (activeAudio) activeAudio.pause();
-    window.speechSynthesis?.cancel();
 
     if (recordedSources.length) {
       try {
@@ -117,10 +85,7 @@ export function SpeakButton({ text, speechText, audioSrc, rate = 0.85, label = '
       }
     }
 
-    const spoken = await speakChinese(speechText ?? text, rate, () => {
-      if (run === playRunRef.current) setState('idle');
-    });
-    setState(spoken ? 'playing' : 'unavailable');
+    setState('unavailable');
   }
 
   const isActive = state === 'loading' || state === 'playing';

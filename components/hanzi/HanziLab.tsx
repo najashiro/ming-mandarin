@@ -36,9 +36,11 @@ type Props = {
   initialProgress?: HanziProgressMap;
   initialCharacter?: string;
   initialTab?: Tab;
+  scopeLabel?: string;
+  route?: string;
 };
 
-export function HanziLab({ characters, stages, manifest, initialProgress = {}, initialCharacter = '好', initialTab = 'Aprender' }: Props) {
+export function HanziLab({ characters, stages, manifest, initialProgress = {}, initialCharacter = '好', initialTab = 'Aprender', scopeLabel = 'Lección 1', route = '/lesson/1/hanzi' }: Props) {
   const firstCharacter = characters.find((item) => item.hanzi === initialCharacter) ?? characters[0];
   const [selectedId, setSelectedId] = useState(firstCharacter.id);
   const [tab, setTab] = useState<Tab>(initialTab);
@@ -148,7 +150,7 @@ export function HanziLab({ characters, stages, manifest, initialProgress = {}, i
 
   return <div className="hanzi-workspace">
     <section className="panel hanzi-route" aria-label="Ruta pedagógica Hanzi">
-      <div className="hanzi-route-heading"><div><p className="eyebrow">RUTA HANZI · LECCIÓN 1</p><h2>{studied} / {characters.length} estudiados</h2></div><button className="button button-primary" type="button" onClick={continueLearning}>Continuar aprendiendo</button></div>
+      <div className="hanzi-route-heading"><div><p className="eyebrow">RUTA HANZI · {scopeLabel.toUpperCase()}</p><h2>{studied} / {characters.length} estudiados</h2></div><button className="button button-primary" type="button" onClick={continueLearning}>Continuar aprendiendo</button></div>
       <div className="hanzi-stage-progress">{stages.map((stage, index) => {
         const summary = stageSummary.find((item) => item.stage === stage.id)!;
         return <button type="button" className={stageFilter === stage.id ? 'selected' : ''} onClick={() => setStageFilter(stage.id)} key={stage.id}>
@@ -174,8 +176,7 @@ export function HanziLab({ characters, stages, manifest, initialProgress = {}, i
       <div className="hanzi-glyph">{character.hanzi}</div>
       <div className="hanzi-character-copy"><p className="eyebrow">ETAPA {character.primaryStage} · {stages.find((stage) => stage.id === character.primaryStage)?.title}</p><div className="hanzi-pronunciation-row"><h2>{character.pinyin} <small>{character.meaning}</small></h2><SpeakButton key={character.id} text={character.hanzi} speechText={character.hanzi} audioSrc={audioForMandarinText(character.hanzi)} compact ariaLabel={`Escuchar pronunciación de ${character.hanzi}`} title={`Escuchar ${character.hanzi}`} /></div>
         <div className="hanzi-badges"><span>{technical?.strokeCount ?? character.strokeCount} trazos verificados</span>{character.radicalAudited && <span>Radical {character.radical}</span>}<span>Escritura requerida</span><span className={technical?.available ? 'available' : 'unavailable'}>{technical?.available ? 'Datos locales listos' : 'Datos no disponibles'}</span></div>
-        <p className="source-note">Fuentes: {character.sourceGroups?.map((group) => group.replace('hanzi-', '')).join(' · ')}{character.sourceGroups?.includes('hanzi-1.5') ? ' · 1.5 es evidencia de repaso' : ''}.</p>
-        <CommunityButton label={`Preguntar sobre ${character.hanzi}`} context={{ concept: character.hanzi, skill: tab === 'Trazos' ? 'stroke-order' : tab === 'Practicar' ? 'hanzi-writing' : 'hanzi-recognition', route: `/lesson/1/hanzi?character=${encodeURIComponent(character.hanzi)}&tab=${encodeURIComponent(tab)}` }} />
+        <CommunityButton label={`Preguntar sobre ${character.hanzi}`} context={{ concept: character.hanzi, skill: tab === 'Trazos' ? 'stroke-order' : tab === 'Practicar' ? 'hanzi-writing' : 'hanzi-recognition', route: `${route}?character=${encodeURIComponent(character.hanzi)}&tab=${encodeURIComponent(tab)}` }} />
       </div>
       <MasterySummary values={progress[character.id]?.dimensions} />
     </section>
@@ -188,7 +189,7 @@ export function HanziLab({ characters, stages, manifest, initialProgress = {}, i
       {tab === 'Trazos' && <StrokesPanel key={character.id} character={character} data={data} onMastered={() => markDimension('stroke_order')} />}
       {tab === 'Practicar' && <PracticePanel key={character.id} character={character} data={data} onAttempt={persistAttempt} />}
     </>}
-    {saveMessage && <p className="hanzi-save-message" role="status">{saveMessage} {saveMessage.includes('nombre') && <Link href={`/login?returnTo=${encodeURIComponent('/lesson/1/hanzi')}`}>Elegir nombre →</Link>}</p>}
+    {saveMessage && <p className="hanzi-save-message" role="status">{saveMessage} {saveMessage.includes('nombre') && <Link href={`/login?returnTo=${encodeURIComponent(route)}`}>Elegir nombre →</Link>}</p>}
   </div>;
 }
 
