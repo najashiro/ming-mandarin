@@ -135,8 +135,10 @@ publican desde `public/audio/pinyin/`:
    clave al código, GitHub, el navegador ni una variable `NEXT_PUBLIC_`.
 2. Ejecuta `npm run audio:manifest` para sincronizar el inventario de L2/L3.
 3. Ejecuta `npm run audio:generate`.
-4. Ejecuta `npm run audio:verify` y revisa auditivamente los MP3 antes de
-   publicarlos. Para regenerarlos, usa `npm run audio:generate -- --force`.
+4. Ejecuta `npm run audio:verify:signal` para rechazar archivos silenciosos o
+   casi inaudibles. Después ejecuta `npm run audio:verify` y revisa auditivamente
+   los MP3 antes de publicarlos. Para regenerarlos, usa
+   `npm run audio:generate -- --force`.
    Para reemplazar solo uno, añade `--only=identificador-del-clip`.
 
 El generador usa `gpt-4o-mini-tts` con la voz `marin`; puedes elegir otra voz

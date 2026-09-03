@@ -40,4 +40,14 @@ describe('arquitectura curricular L1–L3', () => {
   it('no contiene fallback curricular speechSynthesis', () => {
     expect(readFileSync('components/SpeakButton.tsx', 'utf8')).not.toContain('speechSynthesis');
   });
+
+  it('verifica señal PCM antes de transcribir sin inducir una respuesta', () => {
+    const verifier = readFileSync('scripts/verify-pronunciation-audio.mjs', 'utf8');
+    expect(verifier).toContain('minimumRms');
+    expect(verifier).toContain('minimumPeak');
+    expect(verifier).toContain('minimumActiveRatio');
+    expect(verifier).toContain('SIN SEÑAL');
+    expect(verifier).toContain('transcriptionEquivalents');
+    expect(verifier).not.toContain("form.append('prompt'");
+  });
 });
