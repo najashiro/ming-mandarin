@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import type { ExamQuestion, ExamSection } from '@/seed/exam';
+import type { CurriculumScope } from '@/data/types';
+import { scopeDefinitions } from '@/seed/curriculum';
 import { SpeakButton } from './SpeakButton';
 
 type PublicQuestion = Omit<ExamQuestion, 'answer'>;
@@ -18,7 +20,7 @@ const labels: Record<ExamSection, string> = {
   dialogue: 'Diálogo', reading: 'Lectura', hanzi: 'Hanzi', communication: 'Comunicación',
 };
 
-export function ExamClient() {
+export function ExamClient({ scope = 'l1' }: { scope?: CurriculumScope }) {
   const [sessionId, setSessionId] = useState('');
   const [questions, setQuestions] = useState<PublicQuestion[]>([]);
   const [answers, setAnswers] = useState<Record<string, string>>({});
@@ -29,7 +31,7 @@ export function ExamClient() {
   async function start() {
     setBusy(true); setError('');
     try {
-      const response = await fetch('/api/exam/start', { method: 'POST' });
+      const response = await fetch('/api/exam/start', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ scope }) });
       const body = await response.json() as { error?: string; sessionId: string; questions: PublicQuestion[] };
       if (!response.ok) throw new Error(body.error ?? 'No se pudo iniciar.');
       setSessionId(body.sessionId); setQuestions(body.questions);
@@ -52,7 +54,7 @@ export function ExamClient() {
   if (result) return <section className="exam-result">
     <p className="eyebrow">RESULTADO VERIFICADO EN SERVIDOR</p>
     <strong>{result.score}<small>/100</small></strong>
-    <h2>{result.score === 100 ? '第一课大师 · Dominio perfecto' : result.score >= 70 ? 'Buen avance' : 'Hay conceptos que conviene repasar'}</h2>
+    <h2>{result.score === 100 ? `${scopeDefinitions[scope].shortLabel} · Dominio perfecto` : result.score >= 70 ? 'Buen avance' : 'Hay conceptos que conviene repasar'}</h2>
     <div className="score-grid">{Object.entries(result.sectionScores).map(([section, score]) => <span key={section}><b>{score}</b>{labels[section as ExamSection]}</span>)}</div>
     <p className="rule-note">Tu mejor puntuación contará en el ranking solo si activas la participación desde tu perfil.</p>
     <button type="button" onClick={() => { setResult(null); setQuestions([]); setAnswers({}); }}>Intentar de nuevo</button>
@@ -61,7 +63,7 @@ export function ExamClient() {
   if (!questions.length) return <section className="exam-intro">
     <div><p className="eyebrow">EXAMEN FINAL · 100 PUNTOS</p><h2>Demuestra lo aprendido</h2><p>20 preguntas · 8 competencias. Las respuestas se califican en el servidor y el cliente no puede alterar la nota.</p></div>
     <div className="exam-weights">{Object.values(labels).map((label) => <span key={label}>{label}</span>)}</div>
-    {error && <p className="form-error">{error} <Link href="/login?returnTo=/lesson/1/exam">Iniciar sesión</Link></p>}
+    {error && <p className="form-error">{error} <Link href={`/login?returnTo=${encodeURIComponent(scope === 'l1' ? '/lesson/1/exam' : `/study/${scope}/exam`)}`}>Iniciar sesión</Link></p>}
     <button className="button button-primary" disabled={busy} type="button" onClick={start}>{busy ? 'Preparando…' : 'Comenzar examen'}</button>
   </section>;
 

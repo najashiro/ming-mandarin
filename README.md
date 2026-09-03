@@ -1,13 +1,13 @@
 # Míng · Mandarín activo
 
-Plataforma educativa para la Lección 1 **你最近怎么样？**. Incluye vocabulario trazable, pinyin y tonos, clips de pronunciación en mandarín, gramática, diálogos, lectura, hanzi, 28 juegos, repetición espaciada, cuaderno de errores, examen de 100 puntos y ranking voluntario.
+Plataforma educativa para las Lecciones 1–3 del curso básico: **你最近怎么样？**, **你是哪国人？** y **你家有几口人？**. Incluye cinco alcances independientes (L1, L2, L3, L1+L2 y L1+L2+L3), contenido trazable, MP3 estáticos, Hanzi, 30 juegos, SRS, errores y exámenes de 100 puntos.
 
 ## Arquitectura
 
 - **Aplicación:** Next.js App Router, React, TypeScript y CSS responsive propio.
 - **Publicación:** Vercel conectado al repositorio GitHub.
 - **Backend:** Supabase Auth + PostgreSQL. El servidor valida la identidad, califica prácticas y exámenes y filtra todas las operaciones por usuario.
-- **Contenido:** el directorio `seed/` contiene el corpus auditado. Cada registro conserva archivo y página de origen.
+- **Contenido:** `seed/curriculum.ts` amplía el corpus histórico de L1 con L2/L3 y resuelve los alcances sin duplicar conceptos. Cada registro conserva archivo y página de origen para uso interno.
 - **Persistencia:** dominio, estabilidad, próxima revisión, intentos, errores, examen, XP, racha, preferencias y participación voluntaria en el ranking.
 - **PWA:** solo se cachean rutas educativas públicas. Las páginas de cuenta y las API nunca se almacenan en el service worker.
 
@@ -71,8 +71,9 @@ reiniciar intentos, dominio, SRS o errores previos.
 
 ## Laboratorio Hanzi
 
-La ruta `/lesson/1/hanzi` usa Hanzi Writer con los 52 Hanzi curriculares de la
-Lección 1 y una selección local de `hanzi-writer-data`. La interfaz los organiza
+La ruta histórica `/lesson/1/hanzi` conserva los 52 Hanzi de L1. Las rutas
+`/study/[scope]/hanzi` reutilizan el mismo laboratorio con los caracteres de L2,
+L3 y los alcances acumulativos. La interfaz los organiza
 en seis etapas pedagógicas (12 + 14 + 13 + 5 + 4 + 4) y permite combinar la
 etapa con estados derivados del progreso real: nuevos, aprendiendo, repasar y
 dominados. Las hojas 1.1–1.5 se conservan como trazabilidad editorial y filtros
@@ -122,9 +123,9 @@ ajustarse administrativamente en la base de datos.
 
 ## Audio de pronunciación
 
-El repaso fonético reproduce MP3 estáticos y usa hanzi —no letras pinyin— como
-entrada de pronunciación. Si un archivo falla, el navegador solo puede usar una
-voz configurada explícitamente como china; nunca selecciona una voz inglesa.
+El repaso fonético reproduce exclusivamente MP3 estáticos y usa hanzi —no letras
+pinyin— como entrada. Si falta un archivo, el botón informa que no está disponible;
+no usa `speechSynthesis` ni depende de voces instaladas en el dispositivo.
 
 Los clips se generan una sola vez con la API de voz de OpenAI y después se
 publican desde `public/audio/pinyin/`:
@@ -132,14 +133,14 @@ publican desde `public/audio/pinyin/`:
 1. Configura `OPENAI_API_KEY` de forma temporal en la terminal o crea el archivo
    ignorado `.env.audio.local` con una línea `OPENAI_API_KEY=...`. No copies la
    clave al código, GitHub, el navegador ni una variable `NEXT_PUBLIC_`.
-2. Ejecuta `npm run audio:generate`.
-3. Ejecuta `npm run audio:verify` y revisa auditivamente los nueve MP3 antes de
+2. Ejecuta `npm run audio:manifest` para sincronizar el inventario de L2/L3.
+3. Ejecuta `npm run audio:generate`.
+4. Ejecuta `npm run audio:verify` y revisa auditivamente los MP3 antes de
    publicarlos. Para regenerarlos, usa `npm run audio:generate -- --force`.
    Para reemplazar solo uno, añade `--only=identificador-del-clip`.
 
 El generador usa `gpt-4o-mini-tts` con la voz `marin`; puedes elegir otra voz
-mediante `OPENAI_TTS_VOICE`. La interfaz identifica claramente el audio como voz
-generada por IA.
+mediante `OPENAI_TTS_VOICE`. La tecnología no se expone en la interfaz del alumno.
 
 ## Acceso
 
@@ -149,6 +150,6 @@ generada por IA.
 
 ## Límites conocidos
 
-- Los cinco PDF no incluyen audio: los clips complementarios se etiquetan como voz generada por IA y requieren revisión docente antes de cada publicación.
+- Los PDF no incluyen audio: los clips estáticos requieren revisión docente antes de cada publicación.
 - La evaluación Hanzi tolera pequeñas diferencias caligráficas, pero exige el orden y la dirección de trazo configurados por el conjunto técnico.
 - Conviene una revisión docente final de la naturalidad del TTS, la explicación de 很 y los nombres de radicales.

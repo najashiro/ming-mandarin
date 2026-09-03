@@ -11,4 +11,6 @@ dist/
 test-results/
 playwright-report/
 coverage/
+tmp/
+Base de Datos/
 *.tsbuildinfo

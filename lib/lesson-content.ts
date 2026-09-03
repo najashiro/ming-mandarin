@@ -2,6 +2,8 @@ import type { ListeningEntry, SentenceEntry, VocabularyEntry } from '@/data/type
 import { audioForMandarinText } from '@/lib/mandarin-audio';
 import { sentences } from '@/seed/sentences';
 import { vocabulary } from '@/seed/vocabulary';
+import type { CurriculumScope } from '@/data/types';
+import { getCurriculum } from '@/seed/curriculum';
 
 export type VocabularyModuleId = 'name' | 'states';
 
@@ -36,5 +38,15 @@ export function getListeningEntriesForLessons(lessonIds: number[]): ListeningEnt
       translation: entry.translation,
       audioSrc,
     }];
+  });
+}
+
+export function getListeningEntriesForScope(scope: CurriculumScope): ListeningEntry[] {
+  const data = getCurriculum(scope);
+  const lessonId = data.definition.lessonIds.at(-1) ?? 1;
+  return data.vocabulary.flatMap((entry) => {
+    const audioSrc = audioForMandarinText(entry.hanzi);
+    if (!audioSrc || !/[\u3400-\u9fff]/.test(entry.hanzi)) return [];
+    return [{ id: entry.id, lessonId, hanzi: entry.hanzi, pinyin: entry.pinyin, translation: entry.translation, audioSrc }];
   });
 }

@@ -1,4 +1,4 @@
-const CACHE = 'ming-public-v5';
+const CACHE = 'ming-public-v6';
 const PUBLIC_ROUTES = new Set([
   '/', '/lesson/1', '/lesson/1/vocabulary', '/lesson/1/pinyin', '/lesson/1/listening',
   '/lesson/1/grammar', '/lesson/1/hanzi', '/lesson/1/dialogues', '/lesson/1/reading',
@@ -19,7 +19,7 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin || url.pathname.startsWith('/api/') || url.pathname.startsWith('/login')) return;
 
-  if (url.pathname.startsWith('/hanzi-data/') || url.pathname.startsWith('/licenses/')) {
+  if (url.pathname.startsWith('/hanzi-data/') || url.pathname.startsWith('/audio/') || url.pathname.startsWith('/licenses/')) {
     event.respondWith(caches.match(event.request).then((cached) => cached || fetch(event.request).then((response) => {
       if (response.ok) caches.open(CACHE).then((cache) => cache.put(event.request, response.clone()));
       return response;
@@ -28,7 +28,7 @@ self.addEventListener('fetch', (event) => {
   }
 
   event.respondWith(fetch(event.request).then((response) => {
-    const isPublicNavigation = event.request.mode === 'navigate' && PUBLIC_ROUTES.has(url.pathname);
+    const isPublicNavigation = event.request.mode === 'navigate' && (PUBLIC_ROUTES.has(url.pathname) || url.pathname.startsWith('/study/'));
     if (response.ok && isPublicNavigation) caches.open(CACHE).then((cache) => cache.put(event.request, response.clone()));
     return response;
   }).catch(async () => {

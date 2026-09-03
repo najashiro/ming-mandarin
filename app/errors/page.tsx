@@ -2,4 +2,13 @@ import Link from 'next/link';
 import { requireUser } from '@/app/auth';
 import { SiteShell, LessonHeader } from '@/components/SiteShell';
 import { getErrors } from '@/lib/server/persistence';
-export default async function ErrorsPage(){const user=await requireUser('/errors');const errors=await getErrors(user);return <SiteShell><main><LessonHeader eyebrow="错题本 · CUADERNO" title="Errores que enseñan" description="Cada fallo se agrupa por concepto y vuelve a la práctica hasta quedar resuelto."/><section className="error-list shell">{errors.length?errors.map((item)=><article className="panel" key={String(item.id)}><div><span>{String(item.error_type)}</span><b>{String(item.occurrences)}×</b></div><h2>{String(item.concept_id)}</h2><p><del>{String(item.given_answer)}</del> → <strong>{String(item.correct_answer)}</strong></p><p className="rule-note">{String(item.rule)}</p></article>):<div className="empty-state panel"><h2>Cuaderno vacío</h2><p>Todavía no hay errores abiertos. Una respuesta correcta futura también puede resolverlos.</p><Link className="button button-primary" href="/lesson/1/daily">Empezar práctica</Link></div>}</section></main></SiteShell>}
+import { curriculumScopes, isCurriculumScope, scopeDefinitions } from '@/seed/curriculum';
+
+export default async function ErrorsPage({searchParams}:{searchParams:Promise<{scope?:string}>}) {
+  const query=await searchParams;
+  const scope=query.scope&&isCurriculumScope(query.scope)?query.scope:'l1';
+  const user=await requireUser(`/errors?scope=${scope}`);
+  const errors=await getErrors(user,scope);
+  const practiceHref=scope==='l1'?'/lesson/1/daily':`/study/${scope}/daily`;
+  return <SiteShell><main><LessonHeader eyebrow={`错题本 · ${scopeDefinitions[scope].shortLabel}`} title="Errores que enseñan" description="Cada fallo vuelve a la práctica dentro del alcance seleccionado."/><nav className="curriculum-nav shell" aria-label="Alcance de errores">{curriculumScopes.map((item)=><Link className={item===scope?'selected':''} href={`/errors?scope=${item}`} key={item}>{scopeDefinitions[item].shortLabel}</Link>)}</nav><section className="error-list shell">{errors.length?errors.map((item)=><article className="panel" key={String(item.id)}><div><span>{String(item.error_type)}</span><b>{String(item.occurrences)}×</b></div><h2>{String(item.concept_id)}</h2><p><del>{String(item.given_answer)}</del> → <strong>{String(item.correct_answer)}</strong></p><p className="rule-note">{String(item.rule)}</p></article>):<div className="empty-state panel"><h2>Cuaderno vacío</h2><p>Todavía no hay errores abiertos en este alcance.</p><Link className="button button-primary" href={practiceHref}>Empezar práctica</Link></div>}</section></main></SiteShell>;
+}

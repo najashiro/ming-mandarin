@@ -11,17 +11,17 @@ function canonicalOrigin() {
 
 export const metadata: Metadata = {
   metadataBase: new URL(canonicalOrigin()),
-  title: { default: 'Míng · Lección 1 de mandarín', template: '%s · Míng' },
+  title: { default: 'Míng · Mandarín activo L1–L3', template: '%s · Míng' },
   description: 'Domina 你最近怎么样？ con práctica activa, pinyin, tonos, diálogos y hanzi.',
   applicationName: 'Míng · Mandarín activo',
   manifest: '/manifest.webmanifest',
   openGraph: {
     title: 'Míng · 你最近怎么样？',
-    description: 'Lección 1 de mandarín: práctica activa, examen verificable, ranking voluntario y progreso persistente.',
+    description: 'Lecciones 1–3 de mandarín: práctica activa, exámenes por alcance y progreso persistente.',
     locale: 'es_PE', type: 'website',
-    images: [{ url: '/og.png', width: 1536, height: 1024, alt: 'Míng, Mandarín activo, Lección 1: 你最近怎么样？' }],
+    images: [{ url: '/og.png', width: 1536, height: 1024, alt: 'Míng, Mandarín activo, Lecciones 1 a 3' }],
   },
-  twitter: { card: 'summary_large_image', title: 'Míng · Mandarín activo', description: 'Domina la Lección 1: 你最近怎么样？', images: ['/og.png'] },
+  twitter: { card: 'summary_large_image', title: 'Míng · Mandarín activo', description: 'Domina las Lecciones 1 a 3 con práctica acumulativa.', images: ['/og.png'] },
   icons: { icon: '/favicon.svg' },
 };
 

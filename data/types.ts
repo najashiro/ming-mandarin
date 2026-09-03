@@ -91,6 +91,9 @@ export type Exercise = {
   source: SourceRef;
 };
 
+export type LessonNumber = 1 | 2 | 3;
+export type CurriculumScope = 'l1' | 'l2' | 'l3' | 'l1-l2' | 'l1-l2-l3';
+
 export type ListeningEntry = {
   id: string;
   lessonId: number;

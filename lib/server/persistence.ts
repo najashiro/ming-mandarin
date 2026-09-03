@@ -1,7 +1,7 @@
 import 'server-only';
 
 import type { AppUser } from '@/app/auth';
-import type { Exercise } from '@/data/types';
+import type { CurriculumScope, Exercise } from '@/data/types';
 import { scoreExamAnswers, type AnswerMap } from '@/lib/exam-score';
 import { computeMasteryUpdate } from '@/lib/mastery';
 import { isSuccessfulHanziAttempt } from '@/lib/hanzi/mastery';
@@ -9,9 +9,9 @@ import { recommendHanziCharacters } from '@/lib/hanzi/progress';
 import type { HanziAttemptPayload, HanziProgressMap, HanziSkillDimension } from '@/lib/hanzi/types';
 import { comparePinyin, normalizeAnswer } from '@/lib/pinyin';
 import { supabaseRest } from '@/lib/supabase/rest';
-import { examQuestionsForSeed } from '@/seed/exam';
-import { exerciseById, exercises } from '@/seed/exercises';
-import { characters, hanziStages, lesson1Characters } from '@/seed/characters';
+import { examQuestionsForScope } from '@/seed/exam';
+import { exercises } from '@/seed/exercises';
+import { allCurriculumCharacters, exerciseForId, getCurriculum, isCurriculumScope } from '@/seed/curriculum';
 
 type ProfileRow = {
   id: string;
@@ -57,7 +57,7 @@ export async function ensureProfile(user: AppUser) {
 
 export async function recordPracticeAttempt(user: AppUser, payload: { exerciseId: string; answer: string; responseMs?: number; hintsUsed?: number; selfRating?: 'know' | 'doubt' | 'unknown' }) {
   await ensureProfile(user);
-  const exercise = exerciseById(payload.exerciseId);
+  const exercise = exerciseForId(payload.exerciseId);
   if (!exercise) throw new Error('Ejercicio desconocido.');
   const correct = checkExerciseAnswer(exercise, payload.answer);
 
@@ -133,7 +133,7 @@ export async function recordPracticeAttempt(user: AppUser, payload: { exerciseId
 
 export async function recordHanziAttempt(user: AppUser, payload: HanziAttemptPayload) {
   await ensureProfile(user);
-  const character = characters.find((item) => item.id === payload.characterId);
+  const character = allCurriculumCharacters.find((item) => item.id === payload.characterId);
   if (!character) throw new Error('Carácter desconocido.');
   if (!['guided', 'independent', 'exam'].includes(payload.mode)) throw new Error('Modo de práctica no válido.');
   if (!['recognition', 'stroke_order', 'writing'].includes(payload.skillDimension)) throw new Error('Dimensión Hanzi no válida.');
@@ -254,14 +254,14 @@ export async function getHanziProgressMap(user: AppUser): Promise<HanziProgressM
   return result;
 }
 
-export async function getDailyHanziPlan(user: AppUser, limit = 5) {
+export async function getDailyHanziPlan(user: AppUser, limit = 5, scope: CurriculumScope = 'l1') {
   const progress = await getHanziProgressMap(user);
-  return recommendHanziCharacters(lesson1Characters, progress, limit).map((character) => ({
+  return recommendHanziCharacters(getCurriculum(scope).characters, progress, limit).map((character) => ({
     id: character.id, hanzi: character.hanzi, pinyin: character.pinyin, meaning: character.meaning, primaryStage: character.primaryStage,
   }));
 }
 
-export async function getProgress(user: AppUser) {
+export async function getProgress(user: AppUser, scope: CurriculumScope = 'l1') {
   await ensureProfile(user);
   const now = new Date().toISOString();
   const [profileRows, masteryRows, attempts, hanziAttempts, errors, dueRows, exams] = await Promise.all([
@@ -269,30 +269,43 @@ export async function getProgress(user: AppUser) {
     supabaseRest<MasteryRow[]>(`user_mastery?select=*&user_id=eq.${user.userId}`),
     supabaseRest<Array<{ correct: boolean; exercise_id: string }>>(`practice_attempts?select=correct,exercise_id&user_id=eq.${user.userId}`),
     supabaseRest<Array<{ completed: boolean; character_id: string }>>(`hanzi_attempts?select=completed,character_id&user_id=eq.${user.userId}`),
-    supabaseRest<Array<{ id: string }>>(`error_notebook?select=id&user_id=eq.${user.userId}&resolved_at=is.null`),
+    supabaseRest<Array<{ id: string; concept_id: string }>>(`error_notebook?select=id,concept_id&user_id=eq.${user.userId}&resolved_at=is.null`),
     supabaseRest<Array<{ item_id: string }>>(`user_mastery?select=item_id&user_id=eq.${user.userId}&next_review_at=lte.${encodeURIComponent(now)}`),
     supabaseRest<Array<{ score: number }>>(`exam_attempts?select=score&user_id=eq.${user.userId}`),
   ]);
+  const curriculum = getCurriculum(scope);
+  const allowedConceptIds = new Set([
+    ...curriculum.vocabulary.map((item) => item.id), ...curriculum.sentences.map((item) => item.id),
+    ...curriculum.grammar.map((item) => item.id), ...curriculum.characters.map((item) => item.id),
+    ...curriculum.exercises.map((item) => item.itemId),
+  ]);
+  const exerciseIds = new Set(curriculum.exercises.map((item) => item.id));
+  const characterIds = new Set(curriculum.characters.map((item) => item.id));
+  const relevantMasteryRows = masteryRows.filter((row) => allowedConceptIds.has(row.item_id));
+  const relevantAttempts = attempts.filter((item) => exerciseIds.has(item.exercise_id));
+  const relevantHanziAttempts = hanziAttempts.filter((item) => characterIds.has(item.character_id));
+  const relevantErrors = errors.filter((item) => allowedConceptIds.has(item.concept_id));
+  const relevantDueRows = dueRows.filter((item) => allowedConceptIds.has(item.item_id));
   const dimensions = new Map<string, number[]>();
-  for (const row of masteryRows) dimensions.set(row.skill_dimension, [...(dimensions.get(row.skill_dimension) ?? []), Number(row.mastery)]);
+  for (const row of relevantMasteryRows) dimensions.set(row.skill_dimension, [...(dimensions.get(row.skill_dimension) ?? []), Number(row.mastery)]);
   const mastery = [...dimensions.entries()].map(([skill_dimension, values]) => ({
     skill_dimension,
     average: Math.round((values.reduce((sum, value) => sum + value, 0) / values.length) * 10) / 10,
     concepts: values.length,
   }));
   const summary = {
-    attempts: attempts.length + hanziAttempts.length,
-    correct: attempts.filter((item) => item.correct).length + hanziAttempts.filter((item) => item.completed).length,
-    practiced: new Set([...attempts.filter((item) => item.correct).map((item) => item.exercise_id), ...hanziAttempts.filter((item) => item.completed).map((item) => item.character_id)]).size,
+    attempts: relevantAttempts.length + relevantHanziAttempts.length,
+    correct: relevantAttempts.filter((item) => item.correct).length + relevantHanziAttempts.filter((item) => item.completed).length,
+    practiced: new Set([...relevantAttempts.filter((item) => item.correct).map((item) => item.exercise_id), ...relevantHanziAttempts.filter((item) => item.completed).map((item) => item.character_id)]).size,
   };
   const bestScore = exams.length ? Math.max(...exams.map((item) => item.score)) : null;
   const general = mastery.length ? mastery.reduce((sum, row) => sum + row.average, 0) / mastery.length : 0;
-  const curricularIds = new Set(lesson1Characters.map((character) => character.id));
-  const hanziRows = masteryRows.filter((row) => row.item_type === 'hanzi'
+  const curricularIds = new Set(curriculum.characters.map((character) => character.id));
+  const hanziRows = relevantMasteryRows.filter((row) => row.item_type === 'hanzi'
     && curricularIds.has(row.item_id)
     && ['recognition', 'stroke_order', 'writing'].includes(row.skill_dimension));
   const hanzi = hanziRows.map((row) => ({
-    character: characters.find((item) => item.id === row.item_id)?.hanzi ?? row.item_id,
+    character: allCurriculumCharacters.find((item) => item.id === row.item_id)?.hanzi ?? row.item_id,
     characterId: row.item_id,
     skillDimension: row.skill_dimension,
     mastery: Math.round(Number(row.mastery)),
@@ -303,20 +316,24 @@ export async function getProgress(user: AppUser) {
     const rows = hanziRows.filter((row) => row.skill_dimension === dimension);
     return { dimension, average: rows.length ? Math.round(rows.reduce((sum, row) => sum + Number(row.mastery), 0) / rows.length) : 0 };
   });
-  const hanziStagesProgress = hanziStages.map((stage) => ({
+  const hanziStagesProgress = curriculum.stages.map((stage) => ({
     id: stage.id, title: stage.shortTitle, total: stage.characters.length,
     studied: stage.characters.filter((hanziCharacter) => studiedIds.has(`c-${hanziCharacter}`)).length,
   }));
-  const hanziSummary = { total: lesson1Characters.length, studied: studiedIds.size, dimensions: hanziDimensions, stages: hanziStagesProgress };
-  return { profile: profileRows[0], mastery, hanzi, hanziSummary, summary, unresolvedErrors: errors.length, due: dueRows.length, bestExam: { score: bestScore, attempts: exams.length }, general: Math.round(general) };
+  const hanziSummary = { total: curriculum.characters.length, studied: studiedIds.size, dimensions: hanziDimensions, stages: hanziStagesProgress };
+  return { scope, profile: profileRows[0], mastery, hanzi, hanziSummary, summary, unresolvedErrors: relevantErrors.length, due: relevantDueRows.length, bestExam: { score: bestScore, attempts: exams.length }, general: Math.round(general) };
 }
 
-export async function getErrors(user: AppUser) {
+export async function getErrors(user: AppUser, scope?: CurriculumScope) {
   await ensureProfile(user);
-  return supabaseRest<Array<Record<string, unknown>>>(`error_notebook?select=id,concept_type,concept_id,error_type,given_answer,correct_answer,rule,occurrences,last_occurred_at&user_id=eq.${user.userId}&resolved_at=is.null&order=last_occurred_at.desc`);
+  const rows = await supabaseRest<Array<Record<string, unknown>>>(`error_notebook?select=id,concept_type,concept_id,error_type,given_answer,correct_answer,rule,occurrences,last_occurred_at&user_id=eq.${user.userId}&resolved_at=is.null&order=last_occurred_at.desc`);
+  if (!scope) return rows;
+  const data = getCurriculum(scope);
+  const allowed = new Set([...data.vocabulary.map((item) => item.id), ...data.sentences.map((item) => item.id), ...data.grammar.map((item) => item.id), ...data.characters.map((item) => item.id), ...data.exercises.map((item) => item.itemId)]);
+  return rows.filter((row) => allowed.has(String(row.concept_id)));
 }
 
-export async function getDailyExercises(user: AppUser) {
+export async function getDailyExercises(user: AppUser, scope: CurriculumScope = 'l1') {
   await ensureProfile(user);
   const now = new Date().toISOString();
   const [errors, due, practiced] = await Promise.all([
@@ -325,13 +342,14 @@ export async function getDailyExercises(user: AppUser) {
     supabaseRest<Array<{ exercise_id: string }>>(`practice_attempts?select=exercise_id&user_id=eq.${user.userId}`),
   ]);
   const seen = new Set<string>();
-  const chosen: typeof exercises = [];
-  const add = (item: (typeof exercises)[number] | undefined) => { if (item && !seen.has(item.id)) { seen.add(item.id); chosen.push(item); } };
-  for (const row of errors) add(exercises.find((item) => item.itemId === row.concept_id));
-  for (const row of due) add(exercises.find((item) => item.itemId === row.item_id && item.dimension === row.skill_dimension));
+  const scopedExercises = scope === 'l1' ? exercises : getCurriculum(scope).exercises;
+  const chosen: Exercise[] = [];
+  const add = (item: Exercise | undefined) => { if (item && !seen.has(item.id)) { seen.add(item.id); chosen.push(item); } };
+  for (const row of errors) add(scopedExercises.find((item) => item.itemId === row.concept_id));
+  for (const row of due) add(scopedExercises.find((item) => item.itemId === row.item_id && item.dimension === row.skill_dimension));
   const practicedIds = new Set(practiced.map((row) => row.exercise_id));
-  for (const item of exercises) { if (chosen.length >= 7) break; if (!practicedIds.has(item.id) && !chosen.some((selected) => selected.dimension === item.dimension)) add(item); }
-  for (const item of exercises) { if (chosen.length >= 7) break; add(item); }
+  for (const item of scopedExercises) { if (chosen.length >= 7) break; if (!practicedIds.has(item.id) && !chosen.some((selected) => selected.dimension === item.dimension)) add(item); }
+  for (const item of scopedExercises) { if (chosen.length >= 7) break; add(item); }
   return chosen.slice(0, 7);
 }
 
@@ -346,30 +364,31 @@ export async function updateProfile(user: AppUser, payload: { displayName: strin
   return { displayName: name, leaderboardOptIn: payload.leaderboardOptIn, timezone };
 }
 
-export async function startExam(user: AppUser) {
+export async function startExam(user: AppUser, scope: CurriculumScope = 'l1') {
   await ensureProfile(user);
   const sessionId = crypto.randomUUID();
   const seed = crypto.randomUUID();
   await supabaseRest('exam_sessions', {
     method: 'POST', prefer: 'return=minimal', body: {
-      id: sessionId, user_id: user.userId, lesson_id: 'lesson-1', seed, started_at: new Date().toISOString(), status: 'active',
+      id: sessionId, user_id: user.userId, lesson_id: scope, seed, started_at: new Date().toISOString(), status: 'active',
     },
   });
-  const questions = seededShuffle(examQuestionsForSeed(seed), seed).map((item) => {
+  const questions = seededShuffle(examQuestionsForScope(seed, scope), seed).map((item) => {
     const { answer, ...question } = item;
     void answer;
     return { ...question, options: question.options ? seededShuffle(question.options, `${seed}-${question.id}`) : undefined };
   });
-  return { sessionId, seed, questions };
+  return { sessionId, seed, scope, questions };
 }
 
 export async function submitExam(user: AppUser, payload: { sessionId: string; answers: AnswerMap }) {
   await ensureProfile(user);
-  const sessions = await supabaseRest<Array<{ id: string; seed: string; started_at: string; status: string }>>(`exam_sessions?select=id,seed,started_at,status&id=eq.${payload.sessionId}&user_id=eq.${user.userId}&limit=1`);
+  const sessions = await supabaseRest<Array<{ id: string; seed: string; lesson_id: string; started_at: string; status: string }>>(`exam_sessions?select=id,seed,lesson_id,started_at,status&id=eq.${payload.sessionId}&user_id=eq.${user.userId}&limit=1`);
   const session = sessions[0];
   if (!session || session.status !== 'active') throw new Error('La sesión de examen no es válida o ya fue enviada.');
 
-  const { sectionScores, review, score } = scoreExamAnswers(payload.answers, examQuestionsForSeed(session.seed));
+  const scope: CurriculumScope = isCurriculumScope(session.lesson_id) ? session.lesson_id : 'l1';
+  const { sectionScores, review, score } = scoreExamAnswers(payload.answers, examQuestionsForScope(session.seed, scope));
   const now = new Date();
   const durationSeconds = Math.max(1, Math.round((now.getTime() - new Date(session.started_at).getTime()) / 1000));
   const profileRows = await supabaseRest<ProfileRow[]>(`profiles?select=xp&id=eq.${user.userId}&limit=1`);

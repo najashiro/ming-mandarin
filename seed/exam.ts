@@ -58,6 +58,36 @@ export function examQuestionsForSeed(seed: string): ExamQuestion[] {
   return [...coreExamBank, hanziQuestions4[seedIndex(seed, 'hanzi-4', hanziQuestions4.length)], hanziQuestions6[seedIndex(seed, 'hanzi-6', hanziQuestions6.length)]];
 }
 
+export function examQuestionsForScope(seed: string, scope: CurriculumScope = 'l1'): ExamQuestion[] {
+  if (scope === 'l1') return examQuestionsForSeed(seed);
+  const { vocabulary, sentences, grammar, characters } = getCurriculum(scope);
+  const word = (index: number) => vocabulary[seedIndex(seed, `word-${index}`, vocabulary.length)];
+  const phrase = (index: number) => sentences[seedIndex(seed, `sentence-${index}`, sentences.length)];
+  const rule = (index: number) => grammar[seedIndex(seed, `grammar-${index}`, grammar.length)];
+  const character = (index: number) => characters[seedIndex(seed, `character-${index}`, characters.length)];
+  const distractors = (index: number) => [1, 5, 11].map((offset) => vocabulary[(seedIndex(seed, `distractor-${index}`, vocabulary.length) + offset) % vocabulary.length].translation.split(';')[0]);
+  const questions: ExamQuestion[] = [];
+  for (let index = 0; index < 20; index += 1) {
+    const section = (['listening','pinyin','vocabulary','grammar','dialogue','reading','hanzi','communication'] as ExamSection[])[index % 8];
+    const currentWord = word(index);
+    const currentPhrase = phrase(index);
+    const currentRule = rule(index);
+    const currentCharacter = character(index);
+    const id = `e-${scope}-${index + 1}`;
+    if (section === 'listening') questions.push({ id, section, points: 5, prompt: 'Escucha y elige el significado.', options: [currentWord.translation.split(';')[0], ...distractors(index)], answer: currentWord.translation.split(';')[0], audioText: currentWord.hanzi });
+    else if (section === 'pinyin') questions.push({ id, section, points: 5, prompt: `Escribe el pinyin con tono de ${currentWord.hanzi}.`, answer: currentWord.pinyin });
+    else if (section === 'vocabulary') questions.push({ id, section, points: 5, prompt: `¿Qué significa ${currentWord.hanzi}?`, options: [currentWord.translation.split(';')[0], ...distractors(index)], answer: currentWord.translation.split(';')[0] });
+    else if (section === 'grammar') questions.push({ id, section, points: 5, prompt: `Escribe este ejemplo del patrón “${currentRule.pattern}”: ${currentRule.examples[0]}`, answer: currentRule.examples[0].replace(/[。？！]/g, '') });
+    else if (section === 'dialogue') questions.push({ id, section, points: 5, prompt: `Escribe en chino: ${currentPhrase.translation}`, answer: currentPhrase.hanzi.replace(/[。？！]/g, '') });
+    else if (section === 'reading') questions.push({ id, section, points: 5, prompt: `${currentPhrase.hanzi} ¿Qué significa?`, answer: currentPhrase.translation });
+    else if (section === 'hanzi') questions.push({ id, section, points: 5, prompt: `¿Cuántos trazos tiene ${currentCharacter.hanzi}?`, options: Array.from(new Set([currentCharacter.strokeCount, currentCharacter.strokeCount + 1, Math.max(1, currentCharacter.strokeCount - 1), currentCharacter.strokeCount + 2])).map(String), answer: String(currentCharacter.strokeCount) });
+    else questions.push({ id, section, points: 5, prompt: `Produce la frase estudiada: ${currentPhrase.translation}`, answer: currentPhrase.hanzi.replace(/[。？！]/g, '') });
+  }
+  return questions;
+}
+
 export const examBank = examQuestionsForSeed('lesson-1-default');
 
 export const examTotal = examBank.reduce((total, question) => total + question.points, 0);
+import type { CurriculumScope } from '@/data/types';
+import { getCurriculum } from '@/seed/curriculum';
