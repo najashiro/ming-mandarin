@@ -2,6 +2,9 @@ import { describe, expect, it } from 'vitest';
 import { getGreetingSentences, getListeningEntriesForLessons, getVocabularyForModule } from '@/lib/lesson-content';
 import { hanziOptions, shuffleWithoutImmediateRepeat } from '@/lib/listen-recognize';
 import { audioForMandarinText } from '@/lib/mandarin-audio';
+import { lesson1Characters } from '@/seed/characters';
+import mandarinAudio from '@/data/mandarin-audio.json';
+import pronunciation from '@/data/pronunciation.json';
 
 describe('módulos pedagógicos de la Lección 1', () => {
   it('limita Nombre y apellido al subconjunto pertinente', () => {
@@ -23,6 +26,19 @@ describe('módulos pedagógicos de la Lección 1', () => {
       ...getVocabularyForModule('states').map((entry) => entry.hanzi),
     ];
     for (const text of texts) expect(audioForMandarinText(text)).toMatch(/^\/audio\/mandarin\/.+\.mp3$/);
+  });
+
+  it('asigna a cada Hanzi curricular un audio estático y reutiliza los clips existentes', () => {
+    const pinyinByHanzi = new Map(
+      [...pronunciation.clips, ...mandarinAudio.clips].map((clip) => [clip.input, clip.expectedPinyin.normalize('NFC')]),
+    );
+    for (const character of lesson1Characters) {
+      expect(audioForMandarinText(character.hanzi), `${character.hanzi} · ${character.pinyin}`).toMatch(/^\/audio\/(mandarin|pinyin)\/.+\.mp3$/);
+      expect(pinyinByHanzi.get(character.hanzi), character.hanzi).toBe(character.pinyin);
+    }
+    expect(audioForMandarinText('你')).toBe('/audio/mandarin/l1-v-ni.mp3');
+    expect(audioForMandarinText('早')).toBe('/audio/pinyin/zao.mp3');
+    expect(audioForMandarinText('吗')).toBe('/audio/pinyin/tone-neutral-ma.mp3');
   });
 });
 

@@ -43,9 +43,12 @@ type SpeakButtonProps = {
   audioSrc?: string | string[];
   rate?: number;
   label?: string;
+  compact?: boolean;
+  ariaLabel?: string;
+  title?: string;
 };
 
-export function SpeakButton({ text, speechText, audioSrc, rate = 0.85, label = 'Escuchar' }: SpeakButtonProps) {
+export function SpeakButton({ text, speechText, audioSrc, rate = 0.85, label = 'Escuchar', compact = false, ariaLabel, title }: SpeakButtonProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const playRunRef = useRef(0);
   const [state, setState] = useState<'idle' | 'loading' | 'playing' | 'unavailable'>('idle');
@@ -122,5 +125,8 @@ export function SpeakButton({ text, speechText, audioSrc, rate = 0.85, label = '
 
   const isActive = state === 'loading' || state === 'playing';
   const visibleLabel = isActive ? 'Detener' : label;
-  return <button className={`audio-button ${state}`} type="button" onClick={play} aria-label={`${visibleLabel}: ${text}`} aria-live="polite"><span aria-hidden="true">{isActive ? '■' : '▶'}</span> {visibleLabel}</button>;
+  const accessibleLabel = isActive ? `Detener pronunciación de ${text}` : ariaLabel ?? `${visibleLabel}: ${text}`;
+  return <button className={`audio-button ${state}${compact ? ' compact' : ''}`} type="button" onClick={play} aria-label={accessibleLabel} aria-live="polite" title={title}>
+    <span aria-hidden="true">{isActive ? '■' : compact ? '🔊' : '▶'}</span>{!compact && <> {visibleLabel}</>}
+  </button>;
 }

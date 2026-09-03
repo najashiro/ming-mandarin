@@ -49,6 +49,13 @@ test('el laboratorio Hanzi usa trazos reales, cuatro pestañas y práctica inter
   await expect(page.getByRole('heading', { name: 'Hanzi: forma, trazos y práctica' })).toBeVisible();
   await expect(page.getByRole('heading', { name: '0 / 52 estudiados' })).toBeVisible();
   await expect(page.getByRole('button', { name: /好 hǎo/ })).toHaveAttribute('aria-pressed', 'true');
+  const pronunciation = page.getByRole('button', { name: 'Escuchar pronunciación de 好' });
+  await expect(pronunciation).toBeVisible();
+  await expect(pronunciation).toHaveAttribute('title', 'Escuchar 好');
+  await page.getByRole('button', { name: /你 nǐ/ }).click();
+  await expect(page.getByRole('button', { name: 'Escuchar pronunciación de 你' })).toBeVisible();
+  await expect(page.locator('.hanzi-pronunciation-row .audio-button')).not.toHaveClass(/playing/);
+  await page.getByRole('button', { name: /好 hǎo/ }).click();
   await expect(page.getByText('6 trazos verificados')).toBeVisible();
   for (const tab of ['Aprender', 'Componentes', 'Trazos', 'Practicar']) await expect(page.getByRole('tab', { name: tab })).toBeVisible();
   await expect(page.getByTestId('hanzi-writer')).toBeVisible();

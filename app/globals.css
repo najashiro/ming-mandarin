@@ -343,6 +343,8 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .hanzi-glyph { width: 112px; height: 112px; display: grid; place-items: center; border: 1px solid rgba(162,58,44,.22); border-radius: 6px 22px 6px 22px; color: var(--ink); background: #fffdf7; font: 600 77px SimSun,"Noto Serif SC",serif; }
 .hanzi-character-copy h2 { margin: 0; color: var(--jade); font: italic 700 27px Georgia,serif; }
 .hanzi-character-copy h2 small { margin-left: 8px; color: var(--ink); font: 500 15px system-ui; }
+.hanzi-pronunciation-row { display: flex; align-items: center; gap: 9px; }
+.audio-button.compact { width: 32px; height: 32px; flex: 0 0 32px; justify-content: center; padding: 0; border-radius: 50%; font-size: 14px; line-height: 1; }
 .hanzi-badges { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; }
 .hanzi-badges span { padding: 5px 8px; border-radius: 5px; color: var(--jade); background: var(--jade-soft); font-size: 9px; font-weight: 750; }
 .hanzi-badges .unavailable { color: var(--red); background: #f5dfda; }
@@ -503,6 +505,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
   .hanzi-glyph { width: 82px; height: 82px; font-size: 57px; }
   .hanzi-character-copy h2 { font-size: 22px; }
   .hanzi-character-copy h2 small { display: block; margin: 3px 0 0; font-size: 12px; }
+  .hanzi-pronunciation-row { align-items: flex-start; }
   .hanzi-character-copy .source-note { grid-column: 1/-1; }
   .hanzi-tabs { overflow-x: auto; grid-template-columns: repeat(4,minmax(100px,1fr)); }
   .hanzi-learn-panel, .stroke-answer-layout, .stroke-stage-layout, .practice-stage-layout { grid-template-columns: 1fr; }
