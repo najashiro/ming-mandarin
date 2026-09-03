@@ -15,10 +15,10 @@ describe('pronunciación grabada', () => {
     }
   });
 
-  it('mantiene un manifiesto estático único para palabras y frases de la lección', () => {
+  it('mantiene un manifiesto estático único para palabras y frases de las lecciones', () => {
     expect(new Set(mandarinAudio.clips.map((clip) => clip.id)).size).toBe(mandarinAudio.clips.length);
     expect(new Set(mandarinAudio.clips.map((clip) => clip.file)).size).toBe(mandarinAudio.clips.length);
-    expect(mandarinAudio.clips.every((clip) => clip.lessonId === 1 && clip.file.endsWith('.mp3') && /[\u3400-\u9fff]/.test(clip.input))).toBe(true);
+    expect(mandarinAudio.clips.every((clip) => [1, 2, 3].includes(clip.lessonId) && clip.file.endsWith('.mp3') && /[\u3400-\u9fff]/.test(clip.input))).toBe(true);
   });
 
   it('conecta cada ejemplo visual con un clip conocido', () => {

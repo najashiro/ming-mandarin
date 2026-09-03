@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test';
 
 test('la portada navega a las secciones públicas', async ({ page }) => {
   await page.goto('/');
-  await expect(page.getByRole('heading', { name: '你最近怎么样？' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: '从认识到家庭' })).toBeVisible();
   await page.getByRole('link', { name: /Ver ruta completa/ }).click();
   await expect(page).toHaveURL(/\/lesson\/1$/);
   await page.getByRole('link', { name: /Nombre y apellido/ }).click();
@@ -13,8 +13,8 @@ test('la portada navega a las secciones públicas', async ({ page }) => {
 
 test('el arcade y el audio estático están disponibles sin cuenta', async ({ page }) => {
   await page.goto('/lesson/1/games');
-  await expect(page.getByRole('heading', { name: '29 formas de practicar' })).toBeVisible();
-  await expect(page.locator('.mobile-nav a[href="/lesson/1/games"]')).toContainText('Juegos');
+  await expect(page.getByRole('heading', { name: '30 formas de practicar' })).toBeVisible();
+  await expect(page.locator('.mobile-nav a[href="/study/l1-l2-l3/games"]')).toContainText('Juegos');
   await expect(page.locator('.arcade-root')).toHaveAttribute('data-hydrated', 'true');
   await expect(page.locator('.game-grid article').nth(0).getByRole('heading')).toHaveText('Flashcards');
   await expect(page.locator('.game-grid article').nth(1).getByRole('heading')).toHaveText('Dictado');
@@ -23,6 +23,40 @@ test('el arcade y el audio estático están disponibles sin cuenta', async ({ pa
   await expect(page.locator('#arena')).toContainText('Flashcards');
   await page.goto('/lesson/1/name');
   await expect(page.getByRole('button', { name: /Escuchar/ }).first()).toBeVisible();
+});
+
+test('L2, L3 y los repasos acumulativos conservan el alcance', async ({ page }) => {
+  for (const [scope, heading, word] of [
+    ['l2', '你是哪国人？', '美国'],
+    ['l3', '你家有几口人？', '照片'],
+    ['l1-l2', 'Repaso acumulativo L1 + L2', '饺子'],
+    ['l1-l2-l3', 'Repaso acumulativo L1 + L2 + L3', '医生'],
+  ] as const) {
+    await page.goto(`/study/${scope}`);
+    await expect(page.getByRole('heading', { name: heading })).toBeVisible();
+    await page.goto(`/study/${scope}/vocabulary`);
+    await expect(page.getByText(word, { exact: true }).first()).toBeVisible();
+    await expect(page.getByText(/Fuente|PDF p\./)).toHaveCount(0);
+  }
+});
+
+test('Hanzi L2 usa audio estático y Dictado Hanzi está disponible', async ({ page }) => {
+  await page.goto('/study/l2/hanzi');
+  await expect(page.getByRole('heading', { name: 'Hanzi: forma, sonido y trazos' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Escuchar pronunciación de 早' })).toBeVisible();
+  await expect(page.getByText(/voz IA|audio IA|voz china local|sin voz china/i)).toHaveCount(0);
+  await page.goto('/study/l2/games');
+  const card = page.locator('.game-grid article').filter({ hasText: 'Dictado Hanzi' });
+  await expect(card).toBeVisible();
+  await card.getByRole('button', { name: /Jugar/ }).click();
+  await expect(page.getByRole('heading', { name: '¿Qué has escuchado?' })).toBeVisible();
+});
+
+test('las rutas acumulativas no desbordan en móvil', async ({ page, isMobile }) => {
+  test.skip(!isMobile, 'Comprobación específica móvil.');
+  await page.goto('/study/l1-l2-l3/hanzi');
+  const dimensions = await page.evaluate(() => ({ viewport: window.innerWidth, content: document.documentElement.scrollWidth }));
+  expect(dimensions.content).toBeLessThanOrEqual(dimensions.viewport + 1);
 });
 
 test('Escucha y reconoce no revela pistas antes de acertar', async ({ page }) => {

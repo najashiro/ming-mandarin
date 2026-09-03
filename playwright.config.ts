@@ -10,10 +10,11 @@ export default defineConfig({
     { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
     { name: 'mobile', use: { ...devices['Pixel 7'] } },
   ],
-  webServer: {
-    command: `${nodeExecutable} node_modules/next/dist/bin/next dev`,
+  webServer: process.env.PLAYWRIGHT_EXTERNAL_SERVER === '1' ? undefined : {
+    command: `${nodeExecutable} scripts/e2e-server.mjs`,
     url: 'http://localhost:3000',
-    reuseExistingServer: true,
+    reuseExistingServer: process.env.PLAYWRIGHT_REUSE_SERVER === '1',
     timeout: 120_000,
+    gracefulShutdown: { signal: 'SIGTERM', timeout: 5_000 },
   },
 });
