@@ -5,6 +5,7 @@ import pronunciation from '@/data/pronunciation.json';
 import hanziManifest from '@/public/hanzi-data/manifest.json';
 import { curriculumScopes, getCurriculum } from '@/seed/curriculum';
 import { examQuestionsForScope } from '@/seed/exam';
+import { normalizeAnswer } from '@/lib/pinyin';
 
 const normalize = (value: string) => value.normalize('NFC').replace(/[^\u3400-\u9fff]/g, '');
 const audioTexts = new Set([...pronunciation.clips, ...manifest.clips].map((clip) => normalize(clip.input)));
@@ -51,6 +52,36 @@ describe('arquitectura curricular L1–L3', () => {
     ];
     expect(values.every((value) => value === value.normalize('NFC'))).toBe(true);
     expect(values.some((value) => /[\u0300-\u036f]/u.test(value))).toBe(false);
+  });
+
+  it.each(curriculumScopes)('%s entrega bloques válidos y barajados para cada ejercicio order', (scope) => {
+    const data = getCurriculum(scope);
+    const sentences = new Map(data.sentences.map((item) => [item.id, item]));
+    const orders = data.exercises.filter((exercise) => exercise.type === 'order');
+    expect(orders.length).toBeGreaterThan(0);
+    for (const exercise of orders) {
+      const options = exercise.options ?? [];
+      expect(options.length, exercise.id).toBeGreaterThanOrEqual(2);
+      expect(options.every((option) => option.trim().length > 0), exercise.id).toBe(true);
+      expect(normalizeAnswer(options.join('')), exercise.id).not.toBe(normalizeAnswer(exercise.answer));
+      expect([...normalizeAnswer(options.join(''))].sort().join(''), exercise.id)
+        .toBe([...normalizeAnswer(exercise.answer)].sort().join(''));
+
+      const sourceSentence = sentences.get(exercise.itemId);
+      if (sourceSentence) {
+        expect([...options].sort(), exercise.id).toEqual([...sourceSentence.tokens].sort());
+        expect(normalizeAnswer(sourceSentence.tokens.join('')), exercise.id).toBe(normalizeAnswer(exercise.answer));
+      }
+    }
+  });
+
+  it('segmenta y baraja pedagógicamente 陈老师，早上好！', () => {
+    const data = getCurriculum('l2');
+    const sentence = data.sentences.find((item) => item.id === 's-l2-morning');
+    const exercise = data.exercises.find((item) => item.id === 'l2-sentence-1');
+    expect(sentence?.tokens).toEqual(['陈老师', '早上好']);
+    expect(exercise?.options).toEqual(['早上好', '陈老师']);
+    expect(normalizeAnswer(sentence?.tokens.join('') ?? '')).toBe('陈老师早上好');
   });
 
   it('verifica señal PCM antes de transcribir sin inducir una respuesta', () => {

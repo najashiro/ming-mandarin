@@ -34,7 +34,7 @@ export function numberedSyllableToMarked(raw: string): string {
 }
 
 export function numberedPinyinToMarked(value: string): string {
-  return normalizeUnicode(value).split(/(\s+|-)/).map((part) => /\d$/.test(part) ? numberedSyllableToMarked(part) : part).join('');
+  return normalizeUnicode(value).replace(/([a-züv:]+)([0-5])/gi, (syllable) => numberedSyllableToMarked(syllable));
 }
 
 export function stripPinyinTones(value: string): string {
@@ -46,16 +46,25 @@ export function pinyinTone(value: string): number {
     const marked = markedToPlain.get(char);
     if (marked) return marked.tone;
   }
-  const numeric = value.match(/[1-5](?:\s|$)/);
-  return numeric ? Number(numeric[0].trim()) : 5;
+  const numeric = value.match(/[1-5]/);
+  return numeric ? Number(numeric[0]) : 5;
+}
+
+export function normalizePinyinForComparison(value: string): string {
+  return numberedPinyinToMarked(normalizeUnicode(value).toLowerCase()).replace(/[\s\-'’ʼ]+/gu, '');
 }
 
 export function comparePinyin(given: string, expected: string, requireTone = true): boolean {
-  const left = numberedPinyinToMarked(normalizeUnicode(given).toLowerCase());
-  const right = numberedPinyinToMarked(normalizeUnicode(expected).toLowerCase());
+  const left = normalizePinyinForComparison(given);
+  const right = normalizePinyinForComparison(expected);
   return requireTone ? left === right : stripPinyinTones(left) === stripPinyinTones(right);
 }
 
 export function normalizeAnswer(value: string): string {
   return normalizeUnicode(value).toLowerCase().replace(/[。！？?!,，]/g, '').replace(/\s+/g, '');
+}
+
+export function compareExerciseAnswer(type: string, given: string, expected: string): boolean {
+  const expectsPinyin = type === 'pinyin' && /[a-züāáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ]/i.test(expected);
+  return expectsPinyin ? comparePinyin(given, expected, true) : normalizeAnswer(given) === normalizeAnswer(expected);
 }

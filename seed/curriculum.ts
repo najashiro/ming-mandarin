@@ -4,7 +4,7 @@ import { exercises as lesson1Exercises } from '@/seed/exercises';
 import { grammarPoints as lesson1Grammar } from '@/seed/grammar';
 import { sentences as lesson1Sentences } from '@/seed/sentences';
 import { vocabulary as lesson1Vocabulary } from '@/seed/vocabulary';
-import { normalizePinyin } from '@/lib/pinyin';
+import { normalizeAnswer, normalizePinyin } from '@/lib/pinyin';
 
 export const scopeDefinitions: Record<CurriculumScope, { label: string; shortLabel: string; lessonIds: LessonNumber[]; title: string; description: string }> = {
   l1: { label: 'Lección 1', shortLabel: 'L1', lessonIds: [1], title: '你最近怎么样？', description: 'Saludos, identidad y estados personales.' },
@@ -130,9 +130,45 @@ export const lesson3Vocabulary = vocab(3, [
   ['陆雨平','Lù Yǔpíng','Lu Yuping','nombre propio',textbook3(4),'name'],
 ]);
 
-const sentence = (lesson: 2 | 3, id: string, hanzi: string, pinyin: string, translation: string, grammarTags: string[], source: SourceRef, difficulty: SentenceEntry['difficulty'] = 2): SentenceEntry => ({
-  id: `s-l${lesson}-${id}`, hanzi, pinyin: normalizePinyin(pinyin), translation, tokens: hanzi.replace(/[，。？！]/g, ' ').trim().split(/\s+/), grammarTags, difficulty, source,
-});
+const pedagogicalSentenceTokens: Record<string, string[]> = {
+  'l2-morning': ['陈老师', '早上好'],
+  'l2-introduce': ['这', '是', '我朋友', '他', '刚到', '北京'],
+  'l2-surname': ['请问', '您', '贵姓'],
+  'l2-nationality': ['你', '是', '哪国人'],
+  'l2-american': ['我', '是', '美国人'],
+  'l2-study': ['我', '在', '北京', '学习', '汉语'],
+  'l2-languages': ['我', '会说', '汉语', '和', '西班牙语'],
+  'l2-parents': ['我爸爸妈妈', '都', '是', '上海人'],
+  'l2-likes': ['我', '喜欢', '吃', '米饭', '和', '面条'],
+  'l2-which': ['那', '是', '什么'],
+  'l2-baozi': ['这', '是', '包子', '那', '是', '饺子'],
+  'l2-want-both': ['包子', '和', '饺子', '我', '都', '要'],
+  'l2-drink': ['你', '喝', '茶', '还是', '咖啡'],
+  'l3-how-many': ['你家', '有', '几口人'],
+  'l3-four': ['我家', '有', '四口人'],
+  'l3-photo': ['这', '是', '我家', '的', '照片'],
+  'l3-work-father': ['你爸爸', '做', '什么工作'],
+  'l3-doctor': ['我爸爸', '是', '医生'],
+  'l3-not-younger': ['他', '不是', '我弟弟', '是', '我哥哥'],
+  'l3-six': ['我家', '一共', '有', '六个人'],
+  'l3-two-sisters': ['我', '有', '两个姐姐'],
+  'l3-who-else': ['你家', '还', '有', '谁'],
+  'l3-no-sister': ['我', '没有', '妹妹'],
+  'l3-dog': ['贝贝', '是', '我们家', '的', '狗'],
+  'l3-pretty': ['这张照片', '真', '漂亮'],
+  'l3-daughter-age': ['你女儿', '今年', '几岁'],
+  'l3-piano': ['她', '今天晚上', '有', '钢琴课'],
+};
+
+const sentence = (lesson: 2 | 3, id: string, hanzi: string, pinyin: string, translation: string, grammarTags: string[], source: SourceRef, difficulty: SentenceEntry['difficulty'] = 2): SentenceEntry => {
+  const sentenceId = `s-l${lesson}-${id}`;
+  const tokens = pedagogicalSentenceTokens[`l${lesson}-${id}`];
+  if (!tokens) throw new Error(`Faltan bloques pedagógicos para ${sentenceId}.`);
+  if (tokens.length < 2 || tokens.some((token) => !token.trim()) || normalizeAnswer(tokens.join('')) !== normalizeAnswer(hanzi)) {
+    throw new Error(`Los bloques pedagógicos de ${sentenceId} no reconstruyen la frase.`);
+  }
+  return { id: sentenceId, hanzi, pinyin: normalizePinyin(pinyin), translation, tokens: [...tokens], grammarTags, difficulty, source };
+};
 
 export const lesson2Sentences: SentenceEntry[] = [
   sentence(2,'morning','陈老师，早上好！','Chén lǎoshī, zǎoshang hǎo!','¡Profesor Chen, buenos días!',['saludo'],presentation(2,8),1),
@@ -231,7 +267,22 @@ function makeLessonExercises(lesson: 2 | 3, words: VocabularyEntry[], chars: Cha
     explanation: `${word.hanzi} se escribe ${word.pinyin}.`, rule: 'Conserva las marcas tonales.', itemId: word.id, dimension: 'pinyin', difficulty: 3, source: word.source,
   }));
   const hanzi = chars.map((character): Exercise => ({ id: `l${lesson}-hanzi-${character.id}`, type: 'hanzi', prompt: `¿Cuántos trazos tiene ${character.hanzi}?`, answer: String(character.strokeCount), options: Array.from(new Set([character.strokeCount, character.strokeCount + 1, Math.max(1, character.strokeCount - 1), character.strokeCount + 2])).map(String), explanation: `${character.hanzi} tiene ${character.strokeCount} trazos.`, rule: 'Cuenta cada trazo continuo una vez.', itemId: character.id, dimension: 'hanzi', difficulty: 2, source: character.source }));
-  const production = sentences.slice(0, 10).map((item, index): Exercise => ({ id: `l${lesson}-sentence-${index + 1}`, type: index % 2 ? 'dialogue' : 'order', prompt: index % 2 ? item.translation : `Escribe en chino: ${item.translation}`, answer: item.hanzi.replace(/[。？！]/g,''), explanation: `${item.hanzi} · ${item.pinyin}`, rule: item.grammarTags.join(' · '), itemId: item.id, dimension: index % 2 ? 'production' : 'grammar', difficulty: item.difficulty, source: item.source }));
+  const production = sentences.slice(0, 10).map((item, index): Exercise => {
+    const isOrder = index % 2 === 0;
+    return {
+      id: `l${lesson}-sentence-${index + 1}`,
+      type: isOrder ? 'order' : 'dialogue',
+      prompt: isOrder ? `Escribe en chino: ${item.translation}` : item.translation,
+      answer: item.hanzi.replace(/[。？！]/g,''),
+      options: isOrder ? [...item.tokens.slice(1), item.tokens[0]] : undefined,
+      explanation: `${item.hanzi} · ${item.pinyin}`,
+      rule: item.grammarTags.join(' · '),
+      itemId: item.id,
+      dimension: isOrder ? 'grammar' : 'production',
+      difficulty: item.difficulty,
+      source: item.source,
+    };
+  });
   const rules = grammarPoints.map((point, index): Exercise => ({ id: `l${lesson}-grammar-${index + 1}`, type: 'pinyin', prompt: `Completa un ejemplo del patrón: ${point.pattern}`, answer: point.examples[0].replace(/[。？！]/g,''), explanation: point.explanation, rule: point.pattern, itemId: point.id, dimension: 'grammar', difficulty: 3, source: point.source }));
   return [...meanings, ...pinyin, ...production, ...rules, ...hanzi];
 }

@@ -78,6 +78,25 @@ test('el repaso fonético distingue escritura, sandhi y aspiración', async ({ p
   await expect(page.getByText(/voz china local|sin voz china|voz IA/i)).toHaveCount(0);
 });
 
+test('el constructor order de L2 muestra bloques pedagógicos y permite borrarlos', async ({ page }) => {
+  await page.route('**/api/practice', (route) => route.abort('internetdisconnected'));
+  await page.goto('/study/l2/grammar');
+  const practice = page.locator('.practice-card');
+  await expect(practice.getByText('Escribe en chino: ¡Profesor Chen, buenos días!')).toBeVisible();
+  await expect(practice.locator('.token-bank button')).toHaveText(['早上好', '陈老师']);
+  await practice.getByRole('button', { name: '陈老师', exact: true }).click();
+  await practice.getByRole('button', { name: '早上好', exact: true }).click();
+  await expect(practice.locator('.answer-line span')).toHaveText(['陈老师', '早上好']);
+  await practice.getByRole('button', { name: 'Borrar' }).click();
+  await expect(practice.getByText('Toca los bloques en el orden correcto')).toBeVisible();
+  await practice.getByRole('button', { name: '陈老师', exact: true }).click();
+  await practice.getByRole('button', { name: '早上好', exact: true }).click();
+  await practice.getByRole('button', { name: 'Comprobar' }).click();
+  await expect(practice.getByRole('heading', { name: /正确/ })).toBeVisible();
+  await practice.getByRole('button', { name: /Siguiente/ }).click();
+  await expect(practice.getByText('Escribe en chino: Disculpe, ¿cuál es su apellido?')).toBeVisible();
+});
+
 test('el pinyin de L1–L3 usa NFC y tipografía global sin diacríticos separados', async ({ page }) => {
   for (const route of [
     '/lesson/1',

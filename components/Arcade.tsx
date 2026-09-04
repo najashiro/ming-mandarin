@@ -7,7 +7,7 @@ import { ListenAndRecognize } from './ListenAndRecognize';
 import { SpeakButton } from './SpeakButton';
 import { shuffleWithoutImmediateRepeat } from '@/lib/listen-recognize';
 import { arcadeGames as games } from '@/data/arcade-games';
-import { comparePinyin, normalizeAnswer } from '@/lib/pinyin';
+import { compareExerciseAnswer } from '@/lib/pinyin';
 
 type Props = {
   exercises: Exercise[];
@@ -42,9 +42,7 @@ export function Arcade({ exercises, hanziCharacters, listeningEntries }: Props) 
   }
 
   function check() {
-    const ok = exercise.type === 'pinyin'
-      ? comparePinyin(answer, exercise.answer, true)
-      : normalizeAnswer(answer) === normalizeAnswer(exercise.answer);
+    const ok = compareExerciseAnswer(exercise.type, answer, exercise.answer);
     setScore((value) => value + (ok ? 1 : 0));
     setMessage(ok ? '正确 · ¡Acierto!' : `Pista: ${exercise.rule}`);
     window.setTimeout(() => { setRound((value) => value + 1); setAnswer(''); setMessage(''); }, 900);

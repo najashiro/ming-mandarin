@@ -7,7 +7,7 @@ import { computeMasteryUpdate } from '@/lib/mastery';
 import { isSuccessfulHanziAttempt } from '@/lib/hanzi/mastery';
 import { recommendHanziCharacters } from '@/lib/hanzi/progress';
 import type { HanziAttemptPayload, HanziProgressMap, HanziSkillDimension } from '@/lib/hanzi/types';
-import { comparePinyin, normalizeAnswer, normalizePinyin } from '@/lib/pinyin';
+import { compareExerciseAnswer, normalizePinyin } from '@/lib/pinyin';
 import { supabaseRest } from '@/lib/supabase/rest';
 import { examQuestionsForScope } from '@/seed/exam';
 import { exercises } from '@/seed/exercises';
@@ -417,8 +417,7 @@ export async function getLeaderboard() {
 }
 
 function checkExerciseAnswer(exercise: Exercise, answer: string) {
-  if (exercise.type === 'pinyin' && /[a-züāáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ]/i.test(exercise.answer)) return comparePinyin(answer, exercise.answer, true);
-  return normalizeAnswer(answer) === normalizeAnswer(exercise.answer);
+  return compareExerciseAnswer(exercise.type, answer, exercise.answer);
 }
 
 function formatStudyDate(date: Date, timeZone: string) {
