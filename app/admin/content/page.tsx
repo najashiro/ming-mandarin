@@ -5,6 +5,7 @@ import { hanziSourceGroups, legacyCharacters, lesson1Characters } from '@/seed/c
 import { getCurriculum } from '@/seed/curriculum';
 import manifest from '@/public/hanzi-data/manifest.json';
 import type { HanziSourceCode } from '@/data/types';
+import { PinyinText } from '@/components/PinyinText';
 
 const filters: Array<['all' | HanziSourceCode, string]> = [
   ['all', 'Todos'], ['hanzi-1.1', 'Hanzi 1.1'], ['hanzi-1.2', 'Hanzi 1.2'], ['hanzi-1.3', 'Hanzi 1.3'], ['hanzi-1.4', 'Hanzi 1.4'], ['hanzi-1.5', 'Hanzi 1.5 · Repaso'],
@@ -28,7 +29,7 @@ export default async function AdminContent({ searchParams }: { searchParams: Pro
     <div className="audit-table hanzi-audit-table shell"><div className="audit-head"><span>汉字</span><span>Pinyin</span><span>Significado</span><span>Etapa</span><span>Trazos</span><span>Grupos</span><span>Fuentes / páginas</span><span>Escritura</span><span>Radical</span><span>Componentes</span><span>Datos</span></div>{filteredCharacters.map((item) => {
       const technical = manifest[item.hanzi as keyof typeof manifest];
       const worksheets = item.sources?.filter((source) => source.type === 'hanzi_worksheet') ?? [];
-      return <div key={`hanzi-${item.id}`}><b>{item.hanzi}</b><span>{item.pinyin}</span><span>{item.meaning}</span><span>{item.primaryStage}</span><span>{technical?.strokeCount ?? '—'}</span><span>{item.sourceGroups?.map((group) => group.replace('hanzi-', '')).join(' · ')}</span><span>{worksheets.map((source) => `${source.file.match(/1\.[1-5]/)?.[0] ?? source.file} p.${source.pdfPage}`).join(' · ')}</span><strong>{item.writingRequired ? 'Sí' : 'No'}</strong><span>{item.radicalAudited ? item.radical : 'No auditado'}</span><span>{item.componentsAudited ? item.components.join(' + ') : 'No auditados'}</span><strong className={technical?.available ? 'available' : 'unavailable'}>{technical?.available ? 'Sí' : 'No'}</strong></div>;
+      return <div key={`hanzi-${item.id}`}><b>{item.hanzi}</b><span><PinyinText>{item.pinyin}</PinyinText></span><span>{item.meaning}</span><span>{item.primaryStage}</span><span>{technical?.strokeCount ?? '—'}</span><span>{item.sourceGroups?.map((group) => group.replace('hanzi-', '')).join(' · ')}</span><span>{worksheets.map((source) => `${source.file.match(/1\.[1-5]/)?.[0] ?? source.file} p.${source.pdfPage}`).join(' · ')}</span><strong>{item.writingRequired ? 'Sí' : 'No'}</strong><span>{item.radicalAudited ? item.radical : 'No auditado'}</span><span>{item.componentsAudited ? item.components.join(' + ') : 'No auditados'}</span><strong className={technical?.available ? 'available' : 'unavailable'}>{technical?.available ? 'Sí' : 'No'}</strong></div>;
     })}</div>
   </main></SiteShell>;
 }

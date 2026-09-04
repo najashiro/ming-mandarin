@@ -17,7 +17,8 @@
     "audio:manifest": "node scripts/sync-curriculum-audio-manifest.mjs",
     "audio:verify": "node scripts/verify-pronunciation-audio.mjs",
     "audio:verify:signal": "node scripts/verify-pronunciation-audio.mjs --signal-only",
-    "hanzi:sync": "node scripts/sync-hanzi-data.mjs"
+    "hanzi:sync": "node scripts/sync-hanzi-data.mjs",
+    "audit:pinyin": "node scripts/audit-pinyin.mjs"
   },
   "dependencies": {
     "hanzi-writer": "3.7.3",

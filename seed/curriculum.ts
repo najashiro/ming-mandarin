@@ -4,6 +4,7 @@ import { exercises as lesson1Exercises } from '@/seed/exercises';
 import { grammarPoints as lesson1Grammar } from '@/seed/grammar';
 import { sentences as lesson1Sentences } from '@/seed/sentences';
 import { vocabulary as lesson1Vocabulary } from '@/seed/vocabulary';
+import { normalizePinyin } from '@/lib/pinyin';
 
 export const scopeDefinitions: Record<CurriculumScope, { label: string; shortLabel: string; lessonIds: LessonNumber[]; title: string; description: string }> = {
   l1: { label: 'Lección 1', shortLabel: 'L1', lessonIds: [1], title: '你最近怎么样？', description: 'Saludos, identidad y estados personales.' },
@@ -34,7 +35,7 @@ const textbook3 = (pdfPage: number, printedPage?: number): SourceRef => ({
 
 type VocabTuple = readonly [hanzi: string, pinyin: string, translation: string, grammaticalType: string, source: SourceRef, category?: VocabularyEntry['category'], example?: string];
 const vocab = (lesson: 2 | 3, rows: readonly VocabTuple[]): VocabularyEntry[] => rows.map(([hanzi, pinyin, translation, grammaticalType, source, category = 'core', example]) => ({
-  id: `v-${hanzi}`, hanzi, pinyin: pinyin.normalize('NFC'), translation, grammaticalType, source, category, isCore: category === 'core', example,
+  id: `v-${hanzi}`, hanzi, pinyin: normalizePinyin(pinyin), translation, grammaticalType, source, category, isCore: category === 'core', example,
 }));
 
 export const lesson2Vocabulary = vocab(2, [
@@ -130,7 +131,7 @@ export const lesson3Vocabulary = vocab(3, [
 ]);
 
 const sentence = (lesson: 2 | 3, id: string, hanzi: string, pinyin: string, translation: string, grammarTags: string[], source: SourceRef, difficulty: SentenceEntry['difficulty'] = 2): SentenceEntry => ({
-  id: `s-l${lesson}-${id}`, hanzi, pinyin: pinyin.normalize('NFC'), translation, tokens: hanzi.replace(/[，。？！]/g, ' ').trim().split(/\s+/), grammarTags, difficulty, source,
+  id: `s-l${lesson}-${id}`, hanzi, pinyin: normalizePinyin(pinyin), translation, tokens: hanzi.replace(/[，。？！]/g, ' ').trim().split(/\s+/), grammarTags, difficulty, source,
 });
 
 export const lesson2Sentences: SentenceEntry[] = [
@@ -209,7 +210,7 @@ export const lesson2HanziStages = makeStages(2, l2CharacterMeta);
 export const lesson3HanziStages = makeStages(3, l3CharacterMeta);
 const characterSource = (lesson: 2 | 3, page: number): SourceRef => ({ type: 'hanzi_worksheet', file: lesson === 2 ? (page <= 2 ? 'Hanzi Leccion 2.1 - Ciclo 2 - Agosto a Setiembre 2026 Instituto Confucio.pdf' : 'Hanzi Leccion 2.2 - Ciclo 2 - Agosto a Setiembre 2026 Instituto Confucio.pdf') : 'Hanzi Leccion 3.1 - Ciclo 2 - Agosto a Setiembre 2026 Instituto Confucio.pdf', pdfPage: lesson === 2 && page > 2 ? page - 2 : page });
 const makeCharacters = (lesson: 2 | 3, rows: CharacterMeta[], stages: ReturnType<typeof makeStages>): CharacterEntry[] => rows.map(([hanzi,pinyin,meaning,strokeCount], index) => ({
-  id: `c-${hanzi}`, lessonId: `lesson-${lesson}`, hanzi, pinyin, meaning, strokeCount, radical: '', components: [], recognitionRequired: true, writingRequired: true,
+  id: `c-${hanzi}`, lessonId: `lesson-${lesson}`, hanzi, pinyin: normalizePinyin(pinyin), meaning, strokeCount, radical: '', components: [], recognitionRequired: true, writingRequired: true,
   source: characterSource(lesson, lesson === 2 ? (index < 30 ? (index < 15 ? 1 : 2) : (index < 45 ? 3 : 4)) : Math.min(3, Math.floor(index / 10) + 1)),
   sources: [characterSource(lesson, lesson === 2 ? (index < 30 ? (index < 15 ? 1 : 2) : (index < 45 ? 3 : 4)) : Math.min(3, Math.floor(index / 10) + 1))],
   sourceGroups: [], primaryStage: stages.find((stage) => stage.characters.includes(hanzi))?.id, curricular: true, radicalAudited: false, componentsAudited: false,

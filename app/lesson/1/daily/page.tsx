@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { requireUser } from '@/app/auth';
 import { SiteShell, LessonHeader } from '@/components/SiteShell';
+import { PinyinText } from '@/components/PinyinText';
 import { PracticeEngine } from '@/components/PracticeEngine';
 import { getDailyExercises, getDailyHanziPlan } from '@/lib/server/persistence';
 import { CommunityButton, CommunityContextProvider } from '@/components/community/CommunityProvider';
@@ -15,7 +16,7 @@ export default async function DailyPage() {
       <PracticeEngine exercises={set} title="Repaso intercalado" />
       <aside className="panel daily-hanzi-card">
         <div><p className="eyebrow">SESIÓN BREVE · HANZI</p><h2>Repaso acumulativo</h2><p>Errores, repasos vencidos, escritura débil y el siguiente carácter nuevo, en ese orden.</p>
-          <div className="daily-hanzi-list">{hanziPlan.map((item) => <Link href={`/lesson/1/hanzi?character=${encodeURIComponent(item.hanzi)}&mode=practice`} key={item.id}><strong>{item.hanzi}</strong><span>{item.pinyin}</span></Link>)}</div>
+          <div className="daily-hanzi-list">{hanziPlan.map((item) => <Link href={`/lesson/1/hanzi?character=${encodeURIComponent(item.hanzi)}&mode=practice`} key={item.id}><strong>{item.hanzi}</strong><span><PinyinText>{item.pinyin}</PinyinText></span></Link>)}</div>
         </div>
         <Link className="button button-primary" href="/lesson/1/hanzi?mode=practice">Practicar Hanzi</Link>
       </aside>

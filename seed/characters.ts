@@ -1,5 +1,6 @@
 import curriculum from '@/data/lesson1-hanzi.json' with { type: 'json' };
 import type { CharacterEntry, CharacterWord, HanziSourceCode, HanziStageId, SourceRef } from '@/data/types';
+import { normalizePinyin } from '@/lib/pinyin';
 
 type CharacterMeta = readonly [pinyin: string, meaning: string, strokeCount: number];
 
@@ -139,7 +140,7 @@ export const lesson1Characters: CharacterEntry[] = hanziStages.flatMap((stage) =
     id: `c-${hanzi}`,
     lessonId: 'lesson-1',
     hanzi,
-    pinyin: item[0].normalize('NFC'),
+    pinyin: normalizePinyin(item[0]),
     meaning: item[1],
     strokeCount: item[2],
     radical: audited?.radical ?? '',
@@ -158,7 +159,7 @@ export const lesson1Characters: CharacterEntry[] = hanziStages.flatMap((stage) =
 });
 
 const legacy = (hanzi: string, pinyin: string, meaning: string, strokeCount: number, radical: string, components: string[], pdfPage: number, printedPage: number): CharacterEntry => ({
-  id: `c-${hanzi}`, lessonId: 'lesson-1-supplementary', hanzi, pinyin, meaning, strokeCount, radical, components,
+  id: `c-${hanzi}`, lessonId: 'lesson-1-supplementary', hanzi, pinyin: normalizePinyin(pinyin), meaning, strokeCount, radical, components,
   recognitionRequired: true, writingRequired: true, source: textbook(pdfPage, printedPage), sources: [textbook(pdfPage, printedPage)],
   sourceGroups: [], curricular: false, radicalAudited: true, componentsAudited: true, words: contexts.filter((context) => context.hanzi.includes(hanzi)),
 });

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { getCurrentUser, isAuthorizedAdmin, signInPath } from '@/app/auth';
+import { PinyinText } from './PinyinText';
 
 export async function SiteShell({ children }: { children: React.ReactNode }) {
   const user = await getCurrentUser();
@@ -21,5 +22,5 @@ export async function SiteShell({ children }: { children: React.ReactNode }) {
 }
 
 export function LessonHeader({ eyebrow = '第一课 · LECCIÓN 1', title, pinyin, description }: { eyebrow?: string; title: string; pinyin?: string; description?: string }) {
-  return <section className="page-hero shell"><p className="eyebrow">{eyebrow}</p><h1>{title}</h1>{pinyin && <p className="pinyin">{pinyin}</p>}{description && <p>{description}</p>}</section>;
+  return <section className="page-hero shell"><p className="eyebrow">{eyebrow}</p><h1>{title}</h1>{pinyin && <p className="pinyin"><PinyinText>{pinyin}</PinyinText></p>}{description && <p>{description}</p>}</section>;
 }

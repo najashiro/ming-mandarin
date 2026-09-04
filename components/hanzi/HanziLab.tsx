@@ -13,6 +13,7 @@ import { HanziStrokeSvg } from './HanziStrokeSvg';
 import { HanziWriterStage, type HanziWriterStageHandle, type QuizSummary } from './HanziWriterStage';
 import { CommunityButton } from '@/components/community/CommunityProvider';
 import { SpeakButton } from '@/components/SpeakButton';
+import { PinyinText } from '@/components/PinyinText';
 import { audioForMandarinText } from '@/lib/mandarin-audio';
 
 const tabs = ['Aprender', 'Componentes', 'Trazos', 'Practicar'] as const;
@@ -168,13 +169,13 @@ export function HanziLab({ characters, stages, manifest, initialProgress = {}, i
       </div>
       {displayedCharacters.length ? <div className="hanzi-picker-grid">{displayedCharacters.map((item) => {
         const state = classifyHanziLearningState(item.id, progress[item.id], localProgress);
-        return <button type="button" className={item.id === character.id ? 'selected' : ''} aria-pressed={item.id === character.id} onClick={() => selectCharacter(item.id)} key={item.id}>{item.hanzi}<small>{item.pinyin}</small><em>{stateLabels[state]}</em></button>;
+        return <button type="button" className={item.id === character.id ? 'selected' : ''} aria-pressed={item.id === character.id} onClick={() => selectCharacter(item.id)} key={item.id}>{item.hanzi}<small><PinyinText>{item.pinyin}</PinyinText></small><em>{stateLabels[state]}</em></button>;
       })}</div> : <div className="hanzi-filter-empty"><p>No hay caracteres que coincidan con ambos filtros.</p><button type="button" onClick={() => { setStageFilter('all'); setStateFilter('all'); }}>Mostrar todos</button></div>}
     </section>
 
     <section className="hanzi-character-hero panel">
       <div className="hanzi-glyph">{character.hanzi}</div>
-      <div className="hanzi-character-copy"><p className="eyebrow">ETAPA {character.primaryStage} · {stages.find((stage) => stage.id === character.primaryStage)?.title}</p><div className="hanzi-pronunciation-row"><h2>{character.pinyin} <small>{character.meaning}</small></h2><SpeakButton key={character.id} text={character.hanzi} speechText={character.hanzi} audioSrc={audioForMandarinText(character.hanzi)} compact ariaLabel={`Escuchar pronunciación de ${character.hanzi}`} title={`Escuchar ${character.hanzi}`} /></div>
+      <div className="hanzi-character-copy"><p className="eyebrow">ETAPA {character.primaryStage} · {stages.find((stage) => stage.id === character.primaryStage)?.title}</p><div className="hanzi-pronunciation-row"><h2><PinyinText>{character.pinyin}</PinyinText> <small>{character.meaning}</small></h2><SpeakButton key={character.id} text={character.hanzi} speechText={character.hanzi} audioSrc={audioForMandarinText(character.hanzi)} compact ariaLabel={`Escuchar pronunciación de ${character.hanzi}`} title={`Escuchar ${character.hanzi}`} /></div>
         <div className="hanzi-badges"><span>{technical?.strokeCount ?? character.strokeCount} trazos verificados</span>{character.radicalAudited && <span>Radical {character.radical}</span>}<span>Escritura requerida</span><span className={technical?.available ? 'available' : 'unavailable'}>{technical?.available ? 'Datos locales listos' : 'Datos no disponibles'}</span></div>
         <CommunityButton label={`Preguntar sobre ${character.hanzi}`} context={{ concept: character.hanzi, skill: tab === 'Trazos' ? 'stroke-order' : tab === 'Practicar' ? 'hanzi-writing' : 'hanzi-recognition', route: `${route}?character=${encodeURIComponent(character.hanzi)}&tab=${encodeURIComponent(tab)}` }} />
       </div>
@@ -201,7 +202,7 @@ function MasterySummary({ values }: { values?: HanziProgressMap[string]['dimensi
 function ContextList({ character }: { character: CharacterEntry }) {
   if (!character.words?.length) return <p className="context-empty">Esta ficha se practica como forma básica antes de combinarla.</p>;
   return <div className="hanzi-context"><h3>Aparece en</h3><div>{character.words.map((word) => {
-    const content = <><strong>{word.hanzi}</strong><span>{word.pinyin}</span><small>{word.translation}</small>{word.stage > (character.primaryStage ?? word.stage) && <em>Este carácter ya lo conoces</em>}</>;
+    const content = <><strong>{word.hanzi}</strong><span><PinyinText>{word.pinyin}</PinyinText></span><small>{word.translation}</small>{word.stage > (character.primaryStage ?? word.stage) && <em>Este carácter ya lo conoces</em>}</>;
     return word.href ? <Link href={word.href} key={`${word.hanzi}-${word.pinyin}`}>{content}</Link> : <article key={`${word.hanzi}-${word.pinyin}`}>{content}</article>;
   })}</div></div>;
 }
@@ -224,7 +225,7 @@ function StrokesPanel({ character, data, onMastered }: { character: CharacterEnt
   const directions = useMemo(() => data.medians.map(strokeDirection), [data]);
   const strokeNames = useMemo(() => strokeNamesForCharacter(character.hanzi, data.strokes.length), [character.hanzi, data.strokes.length]);
   return <section className="panel hanzi-tab-panel strokes-panel"><div className="hanzi-panel-heading"><div><p className="eyebrow">03 · TRAZOS</p><h2>Orden, inicio y dirección</h2></div></div>
-    <div className="stroke-answer-layout"><HanziStrokeSvg character={character.hanzi} data={data} /><div><h3>Cómo leer los trazos</h3><p><i className="legend-dot" /> El punto marca dónde inicia cada trazo.</p><p><i className="legend-arrow">→</i> La línea roja indica el recorrido y su flecha, la dirección.</p><ol className="stroke-name-list">{directions.map((direction, index) => { const name = strokeNames[index]; return <li key={index}><b>{name ? `${index + 1} · ${name.hanzi} · ${name.pinyin}` : `Trazo ${index + 1}`}</b><span>Dirección: hacia {direction.label}.</span></li>; })}</ol></div></div>
+    <div className="stroke-answer-layout"><HanziStrokeSvg character={character.hanzi} data={data} /><div><h3>Cómo leer los trazos</h3><p><i className="legend-dot" /> El punto marca dónde inicia cada trazo.</p><p><i className="legend-arrow">→</i> La línea roja indica el recorrido y su flecha, la dirección.</p><ol className="stroke-name-list">{directions.map((direction, index) => { const name = strokeNames[index]; return <li key={index}><b>{name ? <>{index + 1} · {name.hanzi} · <PinyinText>{name.pinyin}</PinyinText></> : `Trazo ${index + 1}`}</b><span>Dirección: hacia {direction.label}.</span></li>; })}</ol></div></div>
     <div className="hanzi-confirm-row"><button className="button button-primary" type="button" onClick={onMastered}>Ya entiendo el orden</button></div>
   </section>;
 }

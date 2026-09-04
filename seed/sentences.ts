@@ -1,4 +1,5 @@
 import type { SentenceEntry } from '@/data/types';
+import { normalizePinyin } from '@/lib/pinyin';
 
 const source = (pdfPage: number, printedPage: number) => ({
   type: 'textbook' as const,
@@ -23,7 +24,7 @@ const s = (
   pdfPage: number,
   printedPage: number,
   difficulty: SentenceEntry['difficulty'] = 1,
-): SentenceEntry => ({ id, hanzi, pinyin, translation, tokens, grammarTags, difficulty, source: source(pdfPage, printedPage) });
+): SentenceEntry => ({ id, hanzi, pinyin: normalizePinyin(pinyin), translation, tokens, grammarTags, difficulty, source: source(pdfPage, printedPage) });
 
 export const sentences: SentenceEntry[] = [
   s('s-nihao', '你好！', 'Nǐ hǎo!', '¡Hola!', ['你', '好'], ['saludo'], 45, 44),

@@ -41,6 +41,18 @@ describe('arquitectura curricular L1–L3', () => {
     expect(readFileSync('components/SpeakButton.tsx', 'utf8')).not.toContain('speechSynthesis');
   });
 
+  it.each(['l1', 'l2', 'l3'] as const)('%s entrega todo el pinyin normalizado en NFC', (scope) => {
+    const data = getCurriculum(scope);
+    const values = [
+      ...data.vocabulary.map((item) => item.pinyin),
+      ...data.sentences.map((item) => item.pinyin),
+      ...data.characters.map((item) => item.pinyin),
+      ...data.characters.flatMap((item) => (item.words ?? []).map((word) => word.pinyin)),
+    ];
+    expect(values.every((value) => value === value.normalize('NFC'))).toBe(true);
+    expect(values.some((value) => /[\u0300-\u036f]/u.test(value))).toBe(false);
+  });
+
   it('verifica señal PCM antes de transcribir sin inducir una respuesta', () => {
     const verifier = readFileSync('scripts/verify-pronunciation-audio.mjs', 'utf8');
     expect(verifier).toContain('minimumRms');

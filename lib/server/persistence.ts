@@ -7,7 +7,7 @@ import { computeMasteryUpdate } from '@/lib/mastery';
 import { isSuccessfulHanziAttempt } from '@/lib/hanzi/mastery';
 import { recommendHanziCharacters } from '@/lib/hanzi/progress';
 import type { HanziAttemptPayload, HanziProgressMap, HanziSkillDimension } from '@/lib/hanzi/types';
-import { comparePinyin, normalizeAnswer } from '@/lib/pinyin';
+import { comparePinyin, normalizeAnswer, normalizePinyin } from '@/lib/pinyin';
 import { supabaseRest } from '@/lib/supabase/rest';
 import { examQuestionsForScope } from '@/seed/exam';
 import { exercises } from '@/seed/exercises';
@@ -60,6 +60,8 @@ export async function recordPracticeAttempt(user: AppUser, payload: { exerciseId
   const exercise = exerciseForId(payload.exerciseId);
   if (!exercise) throw new Error('Ejercicio desconocido.');
   const correct = checkExerciseAnswer(exercise, payload.answer);
+  const recordedAnswer = exercise.type === 'pinyin' ? normalizePinyin(payload.answer) : payload.answer;
+  const expectedAnswer = exercise.type === 'pinyin' ? normalizePinyin(exercise.answer) : exercise.answer;
 
   const [currentRows, profileRows] = await Promise.all([
     supabaseRest<MasteryRow[]>(`user_mastery?select=*&user_id=eq.${user.userId}&item_type=eq.${encodeURIComponent(exercise.type)}&item_id=eq.${encodeURIComponent(exercise.itemId)}&skill_dimension=eq.${encodeURIComponent(exercise.dimension)}&limit=1`),
@@ -82,7 +84,7 @@ export async function recordPracticeAttempt(user: AppUser, payload: { exerciseId
 
   await supabaseRest('practice_attempts', {
     method: 'POST', prefer: 'return=minimal', body: {
-      id: crypto.randomUUID(), user_id: user.userId, exercise_id: exercise.id, answer: payload.answer,
+      id: crypto.randomUUID(), user_id: user.userId, exercise_id: exercise.id, answer: recordedAnswer,
       correct, response_ms: payload.responseMs ?? 0, hints_used: payload.hintsUsed ?? 0, created_at: now,
     },
   });
@@ -110,8 +112,8 @@ export async function recordPracticeAttempt(user: AppUser, payload: { exerciseId
     await supabaseRest('error_notebook?on_conflict=user_id,concept_id,error_type', {
       method: 'POST', prefer: 'resolution=merge-duplicates,return=minimal', body: {
         id: existing[0]?.id ?? crypto.randomUUID(), user_id: user.userId, concept_type: exercise.type,
-        concept_id: exercise.itemId, error_type: exercise.dimension, given_answer: payload.answer,
-        correct_answer: exercise.answer, rule: exercise.rule, occurrences: (existing[0]?.occurrences ?? 0) + 1,
+        concept_id: exercise.itemId, error_type: exercise.dimension, given_answer: recordedAnswer,
+        correct_answer: expectedAnswer, rule: exercise.rule, occurrences: (existing[0]?.occurrences ?? 0) + 1,
         last_occurred_at: now, resolved_at: null,
       },
     });
@@ -122,8 +124,8 @@ export async function recordPracticeAttempt(user: AppUser, payload: { exerciseId
     mastery: Math.round(mastery),
     xp: correct ? 10 : 2,
     feedback: {
-      given: payload.answer,
-      expected: exercise.answer,
+      given: recordedAnswer,
+      expected: expectedAnswer,
       why: exercise.explanation,
       rule: exercise.rule,
       next: correct ? 'La próxima vez tendrás menos apoyo.' : 'Este concepto volverá pronto con una variante.',

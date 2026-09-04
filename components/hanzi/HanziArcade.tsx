@@ -7,6 +7,7 @@ import { loadHanziData } from '@/lib/hanzi/loader';
 import type { HanziAttemptPayload, HanziCharacterData } from '@/lib/hanzi/types';
 import { HanziStrokeSvg } from './HanziStrokeSvg';
 import { HanziWriterStage, type HanziWriterStageHandle } from './HanziWriterStage';
+import { PinyinText } from '@/components/PinyinText';
 
 export function HanziArcade({ characters, gameIndex, round, onScore }: { characters: CharacterEntry[]; gameIndex: number; round: number; onScore: () => void }) {
   const componentCandidates = characters.filter((item) => item.componentsAudited && item.components.length && item.radical);
@@ -44,7 +45,7 @@ export function HanziArcade({ characters, gameIndex, round, onScore }: { charact
         setMessage(summary.mistakes === 0 ? '无误 · Dojo perfecto.' : `Completado con ${summary.mistakes} ajustes.`);
       }}
     />
-    <div><h3>Escribe {character.hanzi}</h3><p>{character.pinyin} · {character.meaning}</p><p>{message || 'El mismo motor del laboratorio comprueba orden, inicio y dirección.'}</p><div className="arena-actions"><button className="button button-primary" type="button" disabled={quizActive} onClick={() => { setQuizActive(true); setMessage(''); stage.current?.startQuiz('guided'); }}>Comenzar dojo</button><Link href={`/lesson/1/hanzi?character=${encodeURIComponent(character.hanzi)}&mode=practice`}>Practicar y guardar →</Link></div></div>
+    <div><h3>Escribe {character.hanzi}</h3><p><PinyinText>{character.pinyin}</PinyinText> · {character.meaning}</p><p>{message || 'El mismo motor del laboratorio comprueba orden, inicio y dirección.'}</p><div className="arena-actions"><button className="button button-primary" type="button" disabled={quizActive} onClick={() => { setQuizActive(true); setMessage(''); stage.current?.startQuiz('guided'); }}>Comenzar dojo</button><Link href={`/lesson/1/hanzi?character=${encodeURIComponent(character.hanzi)}&mode=practice`}>Practicar y guardar →</Link></div></div>
   </div>;
 
   if (gameIndex === 22) {

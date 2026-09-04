@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { ListeningEntry } from '@/data/types';
 import { hanziOptions, shuffleWithoutImmediateRepeat } from '@/lib/listen-recognize';
+import { PinyinText } from './PinyinText';
 
 type Props = {
   entries: ListeningEntry[];
@@ -70,7 +71,7 @@ export function ListenAndRecognize({ entries, initialDeck, initialAudio, onClose
     <div className="listen-options" aria-label="Opciones de hanzi">{options.map((hanzi) => <button type="button" disabled={correct} onClick={() => choose(hanzi)} key={hanzi}>{hanzi}</button>)}</div>
     <div className="listen-feedback" aria-live="polite">
       {wrong && !correct && <p>Todavía no. Inténtalo de nuevo.</p>}
-      {correct && <div className="listen-answer"><b>✓ Correcto</b><strong>{current.hanzi}</strong><span>{current.pinyin}</span><p>{current.translation}</p></div>}
+      {correct && <div className="listen-answer"><b>✓ Correcto</b><strong>{current.hanzi}</strong><span><PinyinText>{current.pinyin}</PinyinText></span><p>{current.translation}</p></div>}
     </div>
     <div className="arena-actions">{correct && <button className="button button-primary" type="button" onClick={next}>Siguiente</button>}<button type="button" onClick={onClose}>Cerrar</button></div>
   </div>;

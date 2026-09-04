@@ -1,4 +1,5 @@
 import type { VocabularyEntry } from '@/data/types';
+import { normalizePinyin } from '@/lib/pinyin';
 
 const textbook = (pdfPage: number, printedPage: number) => ({
   type: 'textbook' as const,
@@ -24,7 +25,7 @@ const entry = (
 ): VocabularyEntry => ({
   id: `v-${hanzi}`,
   hanzi,
-  pinyin,
+  pinyin: normalizePinyin(pinyin),
   translation,
   grammaticalType,
   category,

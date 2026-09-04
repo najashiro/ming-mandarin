@@ -78,6 +78,42 @@ test('el repaso fonético distingue escritura, sandhi y aspiración', async ({ p
   await expect(page.getByText(/voz china local|sin voz china|voz IA/i)).toHaveCount(0);
 });
 
+test('el pinyin de L1–L3 usa NFC y tipografía global sin diacríticos separados', async ({ page }) => {
+  for (const route of [
+    '/lesson/1',
+    '/lesson/1/pinyin',
+    '/lesson/1/dialogues',
+    '/study/l2/dialogues',
+    '/study/l2/vocabulary',
+    '/study/l3/dialogues',
+    '/study/l3/hanzi',
+  ]) {
+    await page.goto(route);
+    const pinyin = page.locator('[lang="zh-Latn-pinyin"]');
+    await expect(pinyin.first()).toBeVisible();
+    const audit = await pinyin.evaluateAll((nodes) => nodes.map((node) => {
+      const text = node.textContent ?? '';
+      const style = getComputedStyle(node);
+      return {
+        isNfc: text === text.normalize('NFC'),
+        hasCombiningMark: /[\u0300-\u036f]/u.test(text),
+        fontFamily: style.fontFamily,
+        fontStyle: style.fontStyle,
+        letterSpacing: style.letterSpacing,
+      };
+    }));
+    expect(audit.every((item) => item.isNfc && !item.hasCombiningMark)).toBe(true);
+    expect(audit.every((item) => item.fontStyle === 'normal' && item.letterSpacing === 'normal')).toBe(true);
+    expect(audit.every((item) => /system-ui|Segoe UI|Noto Sans|Arial/i.test(item.fontFamily))).toBe(true);
+  }
+
+  await page.goto('/study/l2/dialogues');
+  await expect(page.getByText('Zhè shì wǒ péngyou, tā gāng dào Běijīng.', { exact: true })).toBeVisible();
+  await expect(page.getByText('Nǐ shì nǎ guó rén?', { exact: true })).toBeVisible();
+  await page.goto('/study/l3/dialogues');
+  await expect(page.getByText('Nǐ jiā yǒu jǐ kǒu rén?', { exact: true })).toBeVisible();
+});
+
 test('el laboratorio Hanzi usa trazos reales, cuatro pestañas y práctica interactiva', async ({ page }) => {
   await page.goto('/lesson/1/hanzi');
   await expect(page.getByRole('heading', { name: 'Hanzi: forma, trazos y práctica' })).toBeVisible();

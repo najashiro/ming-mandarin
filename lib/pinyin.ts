@@ -6,8 +6,12 @@ const toneMarks: Record<string, string[]> = {
 const markedToPlain = new Map<string, { vowel: string; tone: number }>();
 Object.entries(toneMarks).forEach(([vowel, marks]) => marks.forEach((mark, index) => markedToPlain.set(mark, { vowel, tone: index + 1 })));
 
+export function normalizePinyin(value: string): string {
+  return value.normalize('NFC');
+}
+
 export function normalizeUnicode(value: string): string {
-  return value.normalize('NFC').trim().replace(/\s+/g, ' ');
+  return normalizePinyin(value).trim().replace(/\s+/g, ' ');
 }
 
 export function numberedSyllableToMarked(raw: string): string {
