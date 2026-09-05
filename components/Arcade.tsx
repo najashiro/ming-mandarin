@@ -8,6 +8,7 @@ import { SpeakButton } from './SpeakButton';
 import { shuffleWithoutImmediateRepeat } from '@/lib/listen-recognize';
 import { arcadeGames as games } from '@/data/arcade-games';
 import { compareExerciseAnswer } from '@/lib/pinyin';
+import { trackAnalyticsEvent } from '@/lib/analytics/client';
 
 type Props = {
   exercises: Exercise[];
@@ -23,6 +24,7 @@ export function Arcade({ exercises, hanziCharacters, listeningEntries }: Props) 
   const [score, setScore] = useState(0);
   const [message, setMessage] = useState('');
   const [listenSession, setListenSession] = useState<{ deck: ListeningEntry[]; audio: HTMLAudioElement | null }>({ deck: [], audio: null });
+  const completionTracked = useRef(false);
   const game = selected === null ? null : games[selected];
 
   useEffect(() => { rootRef.current?.setAttribute('data-hydrated', 'true'); }, []);
@@ -37,23 +39,33 @@ export function Arcade({ exercises, hanziCharacters, listeningEntries }: Props) 
       if (audio) void audio.play().catch(() => undefined);
       setListenSession({ deck, audio });
     }
+    completionTracked.current = false;
+    trackAnalyticsEvent('game_started', { contentId: games[index].id });
     setSelected(index); setRound(0); setAnswer(''); setScore(0); setMessage('');
     document.getElementById('arena')?.scrollIntoView({ behavior: 'smooth' });
   }
 
   function check() {
     const ok = compareExerciseAnswer(exercise.type, answer, exercise.answer);
+    trackAnalyticsEvent('exercise_completed', { contentId: `${game?.id ?? 'game'}:${exercise.id}`, correct: ok });
+    completeGame();
     setScore((value) => value + (ok ? 1 : 0));
     setMessage(ok ? '正确 · ¡Acierto!' : `Pista: ${exercise.rule}`);
     window.setTimeout(() => { setRound((value) => value + 1); setAnswer(''); setMessage(''); }, 900);
   }
 
+  function completeGame() {
+    if (!game || completionTracked.current) return;
+    completionTracked.current = true;
+    trackAnalyticsEvent('game_completed', { contentId: game.id });
+  }
+
   return <div className="arcade-root" ref={rootRef}>
     <section className="game-grid shell">{games.map((item, index) => <article key={item.id}><span>{String(index + 1).padStart(2, '0')}</span><h2>{item.name}</h2><p>{item.description}</p><button type="button" onClick={() => play(index)}>Jugar →</button></article>)}</section>
     <section id="arena" className="arcade-arena shell">{!game ? <div><p className="eyebrow">{games.length} JUEGOS FUNCIONALES</p><h2>Elige un reto</h2><p>Cada juego usa exclusivamente el corpus del alcance seleccionado.</p></div> : <>
-      {game.kind === 'listen' || game.kind === 'hanzi-listen' ? <ListenAndRecognize entries={listenSession.deck} initialDeck={listenSession.deck} initialAudio={listenSession.audio} onClose={() => setSelected(null)} /> : <>
+      {game.kind === 'listen' || game.kind === 'hanzi-listen' ? <ListenAndRecognize entries={listenSession.deck} initialDeck={listenSession.deck} initialAudio={listenSession.audio} onClose={() => setSelected(null)} onComplete={(correct) => { trackAnalyticsEvent('exercise_completed', { contentId: `${game.id}:listening`, correct }); if (correct) completeGame(); }} /> : <>
         <div className="practice-top"><div><p className="eyebrow">RONDA {round + 1}</p><h2>{game.name}</h2></div><b>{score} aciertos</b></div>
-        {game.kind === 'hanzi' && game.hanziIndex !== undefined ? <><HanziArcade characters={hanziCharacters} key={`${game.id}-${round}`} gameIndex={game.hanziIndex} round={round} onScore={() => setScore((value) => value + 1)} /><div className="arena-actions"><button type="button" onClick={() => setRound((value) => value + 1)}>Otro carácter</button><button type="button" onClick={() => setSelected(null)}>Cerrar</button></div></> : <>
+        {game.kind === 'hanzi' && game.hanziIndex !== undefined ? <><HanziArcade characters={hanziCharacters} key={`${game.id}-${round}`} gameIndex={game.hanziIndex} round={round} onScore={() => setScore((value) => value + 1)} onComplete={completeGame} /><div className="arena-actions"><button type="button" onClick={() => setRound((value) => value + 1)}>Otro carácter</button><button type="button" onClick={() => setSelected(null)}>Cerrar</button></div></> : <>
           {['tone', 'audio'].includes(exercise.dimension) && <SpeakButton text={exercise.answer} />}
           <p className="question">{exercise.prompt}</p>
           {exercise.options ? <div className="option-grid">{exercise.options.map((option) => <button type="button" className={answer === option ? 'selected' : ''} onClick={() => setAnswer(option)} key={option}>{option}</button>)}</div> : <input className="arcade-input" value={answer} onChange={(event) => setAnswer(event.target.value)} onKeyDown={(event) => event.key === 'Enter' && check()} placeholder="Tu respuesta" />}

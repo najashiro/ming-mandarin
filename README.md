@@ -31,9 +31,8 @@ ADMIN_EMAILS=najashiro@gmail.com
 
 ## Base de datos
 
-Las migraciones canónicas son `supabase/migrations/0001_lesson_1.sql`,
-`supabase/migrations/0002_hanzi_lab.sql` y
-`supabase/migrations/0003_community_v1.sql`. Crean:
+Las migraciones canónicas están numeradas en `supabase/migrations/`, desde
+`0001_lesson_1.sql` hasta `0005_private_analytics.sql`. Crean:
 
 - perfiles vinculados a `auth.users`;
 - dominio por concepto y dimensión;
@@ -44,6 +43,9 @@ Las migraciones canónicas son `supabase/migrations/0001_lesson_1.sql`,
 - resúmenes de intentos Hanzi sin coordenadas ni trayectorias del estudiante.
 - preguntas y respuestas educativas contextuales, reacciones útiles, reportes,
   bloqueos exclusivos de comunidad y auditoría de moderación.
+- analítica privada agregada por día, lección, módulo y contenido. Sus tablas y
+  RPC no conceden acceso a `anon` ni `authenticated`; solo las consulta el
+  servidor después de comprobar que la cuenta es administradora.
 
 No se insertan estudiantes, notas ni posiciones ficticias.
 

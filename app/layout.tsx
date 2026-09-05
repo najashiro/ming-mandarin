@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { AnalyticsTracker } from '@/components/AnalyticsTracker';
 import { PwaRegister } from '@/components/PwaRegister';
 import './globals.css';
 
@@ -26,5 +27,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="es"><body>{children}<PwaRegister/></body></html>;
+  return <html lang="es"><body>{children}<AnalyticsTracker/><PwaRegister/></body></html>;
 }

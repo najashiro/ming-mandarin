@@ -9,6 +9,7 @@ test('la portada navega a las secciones públicas', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Nombre y apellido' })).toBeVisible();
   await expect(page.getByText('Vocabulario auditable')).toHaveCount(0);
   await expect(page.getByText(/Fuente|PDF p\./)).toHaveCount(0);
+  await expect(page.getByText(/Visitantes hoy|Estudiantes activos hoy|Tiempo de estudio hoy|Actividad diaria/)).toHaveCount(0);
 });
 
 test('el arcade y el audio estático están disponibles sin cuenta', async ({ page }) => {
@@ -178,21 +179,21 @@ test('el laboratorio Hanzi usa una ficha compacta, replay estable y cuatro pesta
   await expect(page.getByText('Ver de nuevo', { exact: true })).toHaveCount(0);
   const localBefore = await page.evaluate(() => localStorage.getItem('ming-hanzi-progress-v1'));
   const replayGeometry = async () => {
-    const [frame, button, panel] = await Promise.all([
-      page.locator('.hanzi-learn-panel .hanzi-writer-frame').boundingBox(),
-      replay.boundingBox(),
-      page.locator('.hanzi-learn-panel').boundingBox(),
-    ]);
-    if (!frame || !button || !panel) throw new Error('No se pudo medir la geometría del replay Hanzi.');
-    return {
-      width: button.width,
-      height: button.height,
-      top: button.y - frame.y,
-      right: frame.x + frame.width - button.x - button.width,
-      left: button.x - frame.x,
-      bottom: frame.y + frame.height - button.y - button.height,
-      panelHeight: panel.height,
-    };
+    return page.locator('.hanzi-learn-panel').evaluate((panel) => {
+      const frame = panel.querySelector<HTMLElement>('.hanzi-writer-frame')?.getBoundingClientRect();
+      const button = panel.querySelector<HTMLElement>('.hanzi-replay-control')?.getBoundingClientRect();
+      const panelBox = panel.getBoundingClientRect();
+      if (!frame || !button) throw new Error('No se pudo medir la geometría del replay Hanzi.');
+      return {
+        width: button.width,
+        height: button.height,
+        top: button.y - frame.y,
+        right: frame.x + frame.width - button.x - button.width,
+        left: button.x - frame.x,
+        bottom: frame.y + frame.height - button.y - button.height,
+        panelHeight: panelBox.height,
+      };
+    });
   };
   const before = await replayGeometry();
   expect(before.width).toBeGreaterThanOrEqual(44);

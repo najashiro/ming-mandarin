@@ -10,9 +10,10 @@ type Props = {
   initialDeck: ListeningEntry[];
   initialAudio: HTMLAudioElement | null;
   onClose: () => void;
+  onComplete?: (correct: boolean) => void;
 };
 
-export function ListenAndRecognize({ entries, initialDeck, initialAudio, onClose }: Props) {
+export function ListenAndRecognize({ entries, initialDeck, initialAudio, onClose, onComplete }: Props) {
   const [deck, setDeck] = useState(() => initialDeck.length ? initialDeck : shuffleWithoutImmediateRepeat(entries));
   const [index, setIndex] = useState(0);
   const [wrong, setWrong] = useState(false);
@@ -37,8 +38,10 @@ export function ListenAndRecognize({ entries, initialDeck, initialAudio, onClose
     if (hanzi === current.hanzi) {
       setCorrect(true);
       setWrong(false);
+      onComplete?.(true);
     } else {
       setWrong(true);
+      onComplete?.(false);
     }
   }
 

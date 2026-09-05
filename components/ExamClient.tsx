@@ -6,6 +6,7 @@ import type { ExamQuestion, ExamSection } from '@/seed/exam';
 import type { CurriculumScope } from '@/data/types';
 import { scopeDefinitions } from '@/seed/curriculum';
 import { SpeakButton } from './SpeakButton';
+import { trackAnalyticsEvent } from '@/lib/analytics/client';
 
 type PublicQuestion = Omit<ExamQuestion, 'answer'>;
 type ExamResult = {
@@ -35,6 +36,7 @@ export function ExamClient({ scope = 'l1' }: { scope?: CurriculumScope }) {
       const body = await response.json() as { error?: string; sessionId: string; questions: PublicQuestion[] };
       if (!response.ok) throw new Error(body.error ?? 'No se pudo iniciar.');
       setSessionId(body.sessionId); setQuestions(body.questions);
+      trackAnalyticsEvent('exam_started', { contentId: scope });
     } catch (cause) { setError(cause instanceof Error ? cause.message : 'No se pudo iniciar.'); }
     finally { setBusy(false); }
   }
@@ -47,6 +49,7 @@ export function ExamClient({ scope = 'l1' }: { scope?: CurriculumScope }) {
       const body = await response.json() as ExamResult & { error?: string };
       if (!response.ok) throw new Error(body.error ?? 'No se pudo enviar.');
       setResult(body);
+      trackAnalyticsEvent('exam_completed', { contentId: scope, correct: body.score >= 70 });
     } catch (cause) { setError(cause instanceof Error ? cause.message : 'No se pudo enviar.'); }
     finally { setBusy(false); }
   }

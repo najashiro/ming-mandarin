@@ -8,7 +8,7 @@ export async function apiUser() {
 
 export async function apiAdmin() {
   const user = await apiUser();
-  if (!(await isAuthorizedAdmin(user))) throw new ApiError(403, 'No tienes permiso para moderar la comunidad.');
+  if (!(await isAuthorizedAdmin(user))) throw new ApiError(403, 'No tienes permiso para acceder a la administración.');
   return user;
 }
 

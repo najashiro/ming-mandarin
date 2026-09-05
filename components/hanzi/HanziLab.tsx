@@ -15,6 +15,7 @@ import { CommunityButton } from '@/components/community/CommunityProvider';
 import { SpeakButton } from '@/components/SpeakButton';
 import { PinyinText } from '@/components/PinyinText';
 import { audioForMandarinText } from '@/lib/mandarin-audio';
+import { trackAnalyticsEvent } from '@/lib/analytics/client';
 
 const tabs = ['Aprender', 'Componentes', 'Trazos', 'Practicar'] as const;
 type Tab = typeof tabs[number];
@@ -287,7 +288,7 @@ function PracticePanel({ character, data, onAttempt }: { character: CharacterEnt
   function chooseMode(value: HanziPracticeMode) { stage.current?.cancelQuiz(); setMode(value); setReady(false); setStarted(false); setMistakes(0); setCorrect(0); setHints(0); setUsedAnswer(false); setAnswerVisible(false); setFeedback('Elige un modo y comienza cuando estés listo.'); }
   function start() { setStarted(true); setMistakes(0); setCorrect(0); setHints(0); setUsedAnswer(false); setFeedback('Empieza en el punto correcto y sigue la dirección del trazo.'); stage.current?.startQuiz(mode); }
   function reveal(show: boolean) { if (!started) return; setAnswerVisible(show); if (show) { setHints((value) => value + 1); setUsedAnswer(true); stage.current?.show(); } else stage.current?.hide(); }
-  function complete(summary: QuizSummary) { setStarted(false); setFeedback(summary.mistakes === 0 ? '完成 · Orden y dirección correctos.' : `Completado con ${summary.mistakes} ${summary.mistakes === 1 ? 'ajuste' : 'ajustes'}. Volverá en el repaso.`); void onAttempt({ characterId: character.id, mode, skillDimension: 'writing', completed: true, correctStrokes: summary.correctStrokes, mistakes: summary.mistakes, hintsUsed: hints, durationMs: summary.durationMs, usedAnswer }); }
+  function complete(summary: QuizSummary) { setStarted(false); setFeedback(summary.mistakes === 0 ? '完成 · Orden y dirección correctos.' : `Completado con ${summary.mistakes} ${summary.mistakes === 1 ? 'ajuste' : 'ajustes'}. Volverá en el repaso.`); trackAnalyticsEvent('hanzi_practiced', { contentId: character.hanzi, correct: summary.mistakes === 0 }); void onAttempt({ characterId: character.id, mode, skillDimension: 'writing', completed: true, correctStrokes: summary.correctStrokes, mistakes: summary.mistakes, hintsUsed: hints, durationMs: summary.durationMs, usedAnswer }); }
   return <section className="panel hanzi-tab-panel practice-panel">
     <div className="hanzi-panel-heading"><div><p className="eyebrow">04 · PRACTICAR</p><h2>Escribe {character.hanzi}</h2></div></div>
     <div className="practice-stage-layout"><div>

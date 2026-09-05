@@ -6,6 +6,7 @@ import type { Exercise } from '@/data/types';
 import { SpeakButton } from './SpeakButton';
 import { PinyinText } from './PinyinText';
 import { compareExerciseAnswer } from '@/lib/pinyin';
+import { trackAnalyticsEvent } from '@/lib/analytics/client';
 
 type Result = { correct: boolean; mastery: number; xp: number; feedback: { given: string; expected: string; why: string; rule: string; next: string } };
 
@@ -35,9 +36,10 @@ export function PracticeEngine({ exercises, title = 'Práctica guiada' }: { exer
       const body = await response.json() as Result & { error?: string };
       if (!response.ok) throw Object.assign(new Error(body.error ?? 'No se pudo guardar.'),{status:response.status});
       setResult(body);
+      trackAnalyticsEvent('exercise_completed', { contentId: exercise.id, correct: body.correct });
     } catch (cause) {
       const networkFailure=!('status' in (cause as object))&&(!navigator.onLine||cause instanceof TypeError);
-      if(networkFailure){const queue=JSON.parse(localStorage.getItem('ming-offline-attempts')??'[]') as unknown[];localStorage.setItem('ming-offline-attempts',JSON.stringify([...queue,payload]));const correct=compareExerciseAnswer(exercise.type,answer,exercise.answer);setResult({correct,mastery:0,xp:0,feedback:{given:answer,expected:exercise.answer,why:exercise.explanation,rule:exercise.rule,next:'Intento guardado en este dispositivo; se sincronizará al recuperar conexión.'}});}else setError(cause instanceof Error ? cause.message : 'No se pudo guardar.');
+      if(networkFailure){const queue=JSON.parse(localStorage.getItem('ming-offline-attempts')??'[]') as unknown[];localStorage.setItem('ming-offline-attempts',JSON.stringify([...queue,payload]));const correct=compareExerciseAnswer(exercise.type,answer,exercise.answer);setResult({correct,mastery:0,xp:0,feedback:{given:answer,expected:exercise.answer,why:exercise.explanation,rule:exercise.rule,next:'Intento guardado en este dispositivo; se sincronizará al recuperar conexión.'}});trackAnalyticsEvent('exercise_completed',{contentId:exercise.id,correct});}else setError(cause instanceof Error ? cause.message : 'No se pudo guardar.');
     }
     finally { setBusy(false); }
   }

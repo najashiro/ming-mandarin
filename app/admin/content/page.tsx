@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { requireAdmin } from '@/app/auth';
 import { SiteShell, LessonHeader } from '@/components/SiteShell';
+import { AdminNav } from '@/components/admin/AdminNav';
 import { hanziSourceGroups, legacyCharacters, lesson1Characters } from '@/seed/characters';
 import { getCurriculum } from '@/seed/curriculum';
 import manifest from '@/public/hanzi-data/manifest.json';
@@ -19,7 +20,7 @@ export default async function AdminContent({ searchParams }: { searchParams: Pro
   const filteredCharacters = active === 'all' ? curriculum.characters : lesson1Characters.filter((item) => item.sourceGroups?.includes(active));
   return <SiteShell><main>
     <LessonHeader eyebrow="ADMIN · AUDITORÍA" title="Trazabilidad del contenido" description="Vista protegida para revisar qué fuente y página respaldan cada elemento." />
-    <nav className="admin-nav shell" aria-label="Administración"><Link className="selected" href="/admin/content">Fuentes</Link><Link href="/admin/community">Comunidad</Link></nav>
+    <AdminNav active="content"/>
     <section className="audit-summary shell"><article><b>{curriculum.vocabulary.length}</b> palabras</article><article><b>{curriculum.sentences.length}</b> frases</article><article><b>{curriculum.grammar.length}</b> reglas</article><article><b>{curriculum.characters.length}</b> Hanzi curriculares</article></section>
     <div className="audit-table shell"><div className="audit-head"><span>Elemento</span><span>Tipo</span><span>Archivo</span><span>Página</span></div>{generalSources.map((item, index) => <div key={`${item.id}-${index}`}><b>{'hanzi' in item ? String(item.hanzi) : 'title' in item ? String(item.title) : ''}</b><span>{item.source.type}</span><span>{item.source.file}</span><span>PDF {item.source.pdfPage}{item.source.printedPage ? ` / imp. ${item.source.printedPage}` : ''}</span></div>)}</div>
 
