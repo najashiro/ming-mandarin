@@ -54,6 +54,19 @@ describe('arquitectura curricular L1–L3', () => {
     expect(values.some((value) => /[\u0300-\u036f]/u.test(value))).toBe(false);
   });
 
+  it.each(['l1', 'l2', 'l3'] as const)('%s entrega significado canónico para cada microtarjeta Hanzi', (scope) => {
+    const characters = getCurriculum(scope).characters;
+    expect(characters.filter((character) => !character.meaning.trim())).toEqual([]);
+  });
+
+  it('conserva los significados curriculares de las microtarjetas L2', () => {
+    const characters = getCurriculum('l2').characters;
+    expect(characters.find((character) => character.hanzi === '早')?.meaning).toBe('temprano');
+    expect(characters.find((character) => character.hanzi === '上')?.meaning).toBe('arriba; mañana');
+    expect(characters.find((character) => character.hanzi === '朋')?.meaning).toBe('amigo (en 朋友)');
+    expect(characters.find((character) => character.hanzi === '友')?.meaning).toBe('amigo');
+  });
+
   it.each(curriculumScopes)('%s entrega bloques válidos y barajados para cada ejercicio order', (scope) => {
     const data = getCurriculum(scope);
     const sentences = new Map(data.sentences.map((item) => [item.id, item]));

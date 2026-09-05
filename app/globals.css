@@ -5,6 +5,10 @@
   --jade: #1d6a59;
   --jade-dark: #124a3f;
   --jade-soft: #dce9e3;
+  --hanzi-new-bg: #eff8f4;
+  --hanzi-learning-bg: #fbf5e7;
+  --hanzi-review-bg: #f8ebe7;
+  --hanzi-mastered-bg: #e3efe8;
   --line: rgba(24, 51, 43, 0.13);
   --red: #a23a2c;
   --amber: #a96920;
@@ -336,7 +340,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .hanzi-picker-heading > span { color: var(--muted); font-size: 10px; }
 .hanzi-character-picker > div:last-child { margin-top: 15px; display: grid; grid-template-columns: repeat(12, minmax(48px, 1fr)); gap: 7px; }
 .hanzi-character-picker button { min-width: 0; min-height: 58px; padding: 6px 3px; display: grid; place-items: center; gap: 2px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: #fff; font: 500 25px SimSun, "Noto Serif SC", serif; cursor: pointer; }
-.hanzi-character-picker button small { color: var(--muted); font: 8px system-ui; }
+.hanzi-character-picker button small { color: var(--muted); font: 9px/1.15 var(--pinyin-font); }
 .hanzi-character-picker button.selected { border-color: var(--jade); color: white; background: var(--jade); box-shadow: 0 7px 20px rgba(29,106,89,.2); }
 .hanzi-character-picker button.selected small { color: #d7eee7; }
 .hanzi-filter-row { margin-top: 16px; display: grid; gap: 9px; }
@@ -345,8 +349,16 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .stage-filter-desktop button.selected, .state-filter button.selected { border-color: var(--jade); color: white; background: var(--jade); }
 .stage-filter-mobile { display: none; }
 .hanzi-picker-grid { margin-top: 15px; display: grid; grid-template-columns: repeat(12,minmax(48px,1fr)); gap: 7px; }
-.hanzi-picker-grid button { grid-template-rows: auto auto auto; }
-.hanzi-picker-grid button em { color: var(--muted); font: normal 700 7px system-ui; }
+.hanzi-picker-grid button { min-height: 82px; padding: 7px 4px; grid-template-rows: minmax(28px,auto) auto minmax(22px,auto); align-content: center; }
+.hanzi-picker-grid button small { color: var(--jade); font-size: 10px; }
+.hanzi-picker-grid button.state-new { background: var(--hanzi-new-bg); }
+.hanzi-picker-grid button.state-learning { background: var(--hanzi-learning-bg); }
+.hanzi-picker-grid button.state-review { background: var(--hanzi-review-bg); }
+.hanzi-picker-grid button.state-mastered { background: var(--hanzi-mastered-bg); }
+.hanzi-picker-grid button:not(.selected):hover { border-color: rgba(29,106,89,.34); }
+.hanzi-picker-grid button em { width: 100%; min-height: 2.35em; display: -webkit-box; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; color: var(--ink); font: normal 550 9px/1.18 system-ui; text-align: center; overflow-wrap: anywhere; }
+.hanzi-picker-grid button.selected { border-color: var(--jade); color: white; background: var(--jade); }
+.hanzi-picker-grid button.selected small,
 .hanzi-picker-grid button.selected em { color: #d7eee7; }
 .hanzi-filter-empty { margin-top: 15px; padding: 18px; display: block !important; border: 1px dashed var(--line); border-radius: 8px; text-align: center; }
 .hanzi-filter-empty p { color: var(--muted); }
@@ -368,10 +380,13 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .hanzi-tabs button { min-height: 50px; border: 0; border-bottom: 3px solid transparent; color: var(--muted); background: transparent; font: 750 12px system-ui; cursor: pointer; }
 .hanzi-tabs button.selected { border-color: var(--jade); color: var(--jade); }
 .hanzi-tab-panel { margin-top: 14px; min-height: 510px; }
-.hanzi-learn-panel { display: grid; grid-template-columns: minmax(250px,.8fr) minmax(300px,1.2fr); align-items: center; gap: 36px; }
+.hanzi-learn-panel { display: grid; grid-template-columns: minmax(300px,1.2fr) minmax(250px,.8fr); align-items: start; gap: 36px; }
+.hanzi-learn-visual { min-width: 0; display: grid; justify-items: center; }
 .hanzi-panel-copy { max-width: 470px; }
 .hanzi-panel-copy > p:not(.eyebrow) { font-size: 13px; }
 .hanzi-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 20px 0; }
+.hanzi-controls.hanzi-replay-control { width: min(100%,420px); min-height: 44px; justify-content: center; margin: 14px auto 0; }
+.hanzi-replay-control > button { min-width: 132px; }
 .hanzi-controls > button:not(.button), .hanzi-subtabs button, .speed-picker button, .practice-modes button, .hanzi-fallback button { min-height: 44px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 7px; color: var(--jade); background: white; font: 750 11px system-ui; cursor: pointer; }
 .hanzi-controls button:disabled { opacity: .45; cursor: not-allowed; }
 .hanzi-writer-frame { width: min(100%,420px); aspect-ratio: 1; position: relative; margin-inline: auto; overflow: hidden; border: 2px solid #b8aa94; border-radius: 6px; background: #fffdf7; touch-action: none; }
@@ -512,6 +527,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
   .hanzi-character-picker > div:last-child { grid-template-columns: repeat(5,1fr); }
   .hanzi-picker-grid { grid-template-columns: repeat(5,1fr); }
   .hanzi-character-picker button { min-height: 54px; }
+  .hanzi-picker-grid button { min-height: 86px; }
   .hanzi-character-hero { grid-template-columns: 82px 1fr; gap: 14px; }
   .hanzi-glyph { width: 82px; height: 82px; font-size: 57px; }
   .hanzi-character-copy h2 { font-size: 22px; }
@@ -520,7 +536,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
   .hanzi-character-copy .source-note { grid-column: 1/-1; }
   .hanzi-tabs { overflow-x: auto; grid-template-columns: repeat(4,minmax(100px,1fr)); }
   .hanzi-learn-panel, .stroke-answer-layout, .stroke-stage-layout, .practice-stage-layout { grid-template-columns: 1fr; }
-  .hanzi-learn-panel .hanzi-panel-copy { order: 2; }
+  .hanzi-learn-panel { gap: 28px; }
   .hanzi-panel-heading { align-items: start; flex-direction: column; }
   .hanzi-subtabs, .practice-modes { width: 100%; display: grid; grid-template-columns: 1fr 1fr; }
   .component-map { grid-template-columns: 1fr; gap: 12px; }

@@ -133,21 +133,44 @@ test('el pinyin de L1–L3 usa NFC y tipografía global sin diacríticos separad
   await expect(page.getByText('Nǐ jiā yǒu jǐ kǒu rén?', { exact: true })).toBeVisible();
 });
 
-test('el laboratorio Hanzi usa trazos reales, cuatro pestañas y práctica interactiva', async ({ page }) => {
+test('el laboratorio Hanzi usa trazos reales, cuatro pestañas y práctica interactiva', async ({ page, isMobile }) => {
   await page.goto('/lesson/1/hanzi');
   await expect(page.getByRole('heading', { name: 'Hanzi: forma, trazos y práctica' })).toBeVisible();
   await expect(page.getByRole('heading', { name: '0 / 52 estudiados' })).toBeVisible();
-  await expect(page.getByRole('button', { name: /好 hǎo/ })).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.getByRole('button', { name: '好, hǎo, bueno; bien, estado nuevo' })).toHaveAttribute('aria-pressed', 'true');
   const pronunciation = page.getByRole('button', { name: 'Escuchar pronunciación de 好' });
   await expect(pronunciation).toBeVisible();
   await expect(pronunciation).toHaveAttribute('title', 'Escuchar 好');
-  await page.getByRole('button', { name: /你 nǐ/ }).click();
+  await page.getByRole('button', { name: '你, nǐ, tú, estado nuevo' }).click();
   await expect(page.getByRole('button', { name: 'Escuchar pronunciación de 你' })).toBeVisible();
   await expect(page.locator('.hanzi-pronunciation-row .audio-button')).not.toHaveClass(/playing/);
-  await page.getByRole('button', { name: /好 hǎo/ }).click();
+  await page.getByRole('button', { name: '好, hǎo, bueno; bien, estado nuevo' }).click();
   await expect(page.getByText('6 trazos verificados')).toBeVisible();
   for (const tab of ['Aprender', 'Componentes', 'Trazos', 'Practicar']) await expect(page.getByRole('tab', { name: tab })).toBeVisible();
   await expect(page.getByTestId('hanzi-writer')).toBeVisible();
+  const replay = page.getByRole('button', { name: /Ver de nuevo/ });
+  await expect(replay).toBeVisible();
+  await expect(replay).toBeEnabled();
+  const panelBefore = await page.locator('.hanzi-learn-panel').boundingBox();
+  const buttonBefore = await replay.boundingBox();
+  await replay.click();
+  await page.waitForTimeout(100);
+  await expect(replay).toBeVisible();
+  await replay.click();
+  await replay.click();
+  await expect(page.getByTestId('hanzi-writer').locator('svg')).toHaveCount(1);
+  const panelDuring = await page.locator('.hanzi-learn-panel').boundingBox();
+  const buttonDuring = await replay.boundingBox();
+  expect(Math.abs((panelDuring?.height ?? 0) - (panelBefore?.height ?? 0))).toBeLessThanOrEqual(1);
+  const relativeButtonBefore = (buttonBefore?.y ?? 0) - (panelBefore?.y ?? 0);
+  const relativeButtonDuring = (buttonDuring?.y ?? 0) - (panelDuring?.y ?? 0);
+  expect(Math.abs(relativeButtonDuring - relativeButtonBefore)).toBeLessThanOrEqual(1);
+  if (isMobile) {
+    const frame = await page.locator('.hanzi-learn-panel .hanzi-writer-frame').boundingBox();
+    const eyebrow = await page.locator('.hanzi-learn-panel .eyebrow').boundingBox();
+    expect((frame?.y ?? 0) + (frame?.height ?? 0)).toBeLessThan(buttonDuring?.y ?? 0);
+    expect((buttonDuring?.y ?? 0) + (buttonDuring?.height ?? 0)).toBeLessThan(eyebrow?.y ?? 0);
+  }
   await expect(page.getByRole('button', { name: 'Ocultar carácter' })).toHaveCount(0);
   await expect(page.getByRole('button', { name: 'Animar' })).toHaveCount(0);
 
@@ -180,7 +203,7 @@ test('los filtros Hanzi siguen las seis etapas curriculares y se pueden combinar
   else await page.getByRole('button', { name: '2 Saludos', exact: true }).click();
   await page.getByRole('button', { name: 'Repasar', exact: true }).click();
   await expect(grid).toHaveCount(1);
-  await expect(page.getByRole('button', { name: /好 hǎo Repasar/ })).toBeVisible();
+  await expect(page.getByRole('button', { name: '好, hǎo, bueno; bien, estado repasar' })).toBeVisible();
 });
 
 test('una evidencia de reconocimiento local persiste después de recargar', async ({ page }) => {
@@ -190,7 +213,49 @@ test('una evidencia de reconocimiento local persiste después de recargar', asyn
   await page.reload();
   await page.getByRole('button', { name: 'Aprendiendo', exact: true }).click();
   await expect(page.locator('.hanzi-picker-grid > button')).toHaveCount(1);
-  await expect(page.getByRole('button', { name: /一 yī Aprendiendo/ })).toBeVisible();
+  await expect(page.getByRole('button', { name: '一, yī, uno, estado aprendiendo' })).toBeVisible();
+});
+
+test('las microtarjetas Hanzi muestran significado y estado sutil en cinco columnas móviles', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.addInitScript(() => localStorage.setItem('ming-hanzi-progress-v1', JSON.stringify({
+    'c-早:recognition': { attempts: 1, completed: 1, mistakes: 0, lastPracticedAt: '2026-09-04T10:00:00.000Z' },
+    'c-上:writing': { attempts: 1, completed: 1, mistakes: 1, lastPracticedAt: '2026-09-04T10:00:00.000Z' },
+  })));
+  await page.goto('/study/l2/hanzi');
+  const early = page.getByRole('button', { name: '早, zǎo, temprano, estado aprendiendo' });
+  const above = page.getByRole('button', { name: '上, shàng, arriba; mañana, estado repasar' });
+  const recent = page.getByRole('button', { name: '刚, gāng, recién, estado nuevo' });
+  await expect(early.locator('small')).toHaveText('zǎo');
+  await expect(early.locator('em')).toHaveText('temprano');
+  await expect(page.getByText('Nuevo', { exact: true })).toHaveCount(0);
+  await expect(early).toHaveAttribute('data-learning-state', 'learning');
+  await expect(above).toHaveAttribute('data-learning-state', 'review');
+  await expect(recent).toHaveAttribute('data-learning-state', 'new');
+  await recent.click();
+  const audit = await page.locator('.hanzi-picker-grid').evaluate((grid) => {
+    const cards = [...grid.querySelectorAll<HTMLButtonElement>('.hanzi-picker-card')];
+    const byState = (state: string) => cards.find((card) => card.dataset.learningState === state && !card.classList.contains('selected'));
+    const color = (state: string) => {
+      const card = byState(state);
+      return card ? getComputedStyle(card).backgroundColor : '';
+    };
+    const longMeaning = cards.find((card) => card.textContent?.includes('amigo (en 朋友)'))?.querySelector('em');
+    return {
+      columns: getComputedStyle(grid).gridTemplateColumns.split(' ').length,
+      newColor: color('new'),
+      learningColor: color('learning'),
+      reviewColor: color('review'),
+      masteredToken: getComputedStyle(document.documentElement).getPropertyValue('--hanzi-mastered-bg').trim(),
+      meaningClamped: longMeaning ? getComputedStyle(longMeaning).webkitLineClamp : '',
+      overflow: document.documentElement.scrollWidth - window.innerWidth,
+    };
+  });
+  expect(audit.columns).toBe(5);
+  expect(new Set([audit.newColor, audit.learningColor, audit.reviewColor]).size).toBe(3);
+  expect(audit.masteredToken).not.toBe('');
+  expect(audit.meaningClamped).toBe('2');
+  expect(audit.overflow).toBeLessThanOrEqual(1);
 });
 
 test('el laboratorio Hanzi no desborda en un teléfono', async ({ page, isMobile }) => {

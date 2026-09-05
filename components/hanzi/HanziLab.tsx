@@ -169,7 +169,8 @@ export function HanziLab({ characters, stages, manifest, initialProgress = {}, i
       </div>
       {displayedCharacters.length ? <div className="hanzi-picker-grid">{displayedCharacters.map((item) => {
         const state = classifyHanziLearningState(item.id, progress[item.id], localProgress);
-        return <button type="button" className={item.id === character.id ? 'selected' : ''} aria-pressed={item.id === character.id} onClick={() => selectCharacter(item.id)} key={item.id}>{item.hanzi}<small><PinyinText>{item.pinyin}</PinyinText></small><em>{stateLabels[state]}</em></button>;
+        const selected = item.id === character.id;
+        return <button type="button" className={`hanzi-picker-card state-${state}${selected ? ' selected' : ''}`} data-learning-state={state} aria-label={`${item.hanzi}, ${item.pinyin}, ${item.meaning}, estado ${stateLabels[state].toLowerCase()}`} aria-pressed={selected} onClick={() => selectCharacter(item.id)} key={item.id}>{item.hanzi}<small><PinyinText>{item.pinyin}</PinyinText></small><em>{item.meaning}</em></button>;
       })}</div> : <div className="hanzi-filter-empty"><p>No hay caracteres que coincidan con ambos filtros.</p><button type="button" onClick={() => { setStageFilter('all'); setStateFilter('all'); }}>Mostrar todos</button></div>}
     </section>
 
@@ -209,9 +210,8 @@ function ContextList({ character }: { character: CharacterEntry }) {
 
 function LearnPanel({ character, onMastered }: { character: CharacterEntry; onMastered: () => void }) {
   const stage = useRef<HanziWriterStageHandle>(null);
-  const [finished, setFinished] = useState(false);
-  function animateOnce() { setFinished(false); stage.current?.animate(() => setFinished(true)); }
-  return <section className="panel hanzi-tab-panel hanzi-learn-panel"><div className="hanzi-panel-copy"><p className="eyebrow">01 · APRENDER</p><h2>Observa el carácter completo</h2><p>Usa la cuadrícula 米字格 para comparar proporción y centro. La animación respeta el orden y la dirección de los datos técnicos.</p>{finished && <div className="hanzi-controls"><button type="button" onClick={animateOnce}>↻ Ver de nuevo</button></div>}<button className="button button-primary" type="button" onClick={onMastered}>Lo reconozco</button><ContextList character={character} /></div><HanziWriterStage ref={stage} character={character.hanzi} onReady={animateOnce} /></section>;
+  function animateOnce() { stage.current?.animate(); }
+  return <section className="panel hanzi-tab-panel hanzi-learn-panel"><div className="hanzi-learn-visual"><HanziWriterStage ref={stage} character={character.hanzi} onReady={animateOnce} /><div className="hanzi-controls hanzi-replay-control"><button type="button" onClick={animateOnce}>↻ Ver de nuevo</button></div></div><div className="hanzi-panel-copy"><p className="eyebrow">01 · APRENDER</p><h2>Observa el carácter completo</h2><p>Usa la cuadrícula 米字格 para comparar proporción y centro. La animación respeta el orden y la dirección de los datos técnicos.</p><button className="button button-primary" type="button" onClick={onMastered}>Lo reconozco</button><ContextList character={character} /></div></section>;
 }
 
 function ComponentsPanel({ character }: { character: CharacterEntry }) {
