@@ -133,48 +133,101 @@ test('el pinyin de L1–L3 usa NFC y tipografía global sin diacríticos separad
   await expect(page.getByText('Nǐ jiā yǒu jǐ kǒu rén?', { exact: true })).toBeVisible();
 });
 
-test('el laboratorio Hanzi usa trazos reales, cuatro pestañas y práctica interactiva', async ({ page, isMobile }) => {
+test('el laboratorio Hanzi usa una ficha compacta, replay estable y cuatro pestañas', async ({ page }) => {
+  const practiceRequests: string[] = [];
+  page.on('request', (request) => {
+    if (new URL(request.url()).pathname === '/api/hanzi/practice') practiceRequests.push(request.postData() ?? '');
+  });
   await page.goto('/lesson/1/hanzi');
   await expect(page.getByRole('heading', { name: 'Hanzi: forma, trazos y práctica' })).toBeVisible();
   await expect(page.getByRole('heading', { name: '0 / 52 estudiados' })).toBeVisible();
   await expect(page.getByRole('button', { name: '好, hǎo, bueno; bien, estado nuevo' })).toHaveAttribute('aria-pressed', 'true');
+  const hero = page.locator('.hanzi-character-hero');
+  await expect(hero.getByText('Datos locales listos', { exact: true })).toHaveCount(0);
+  await expect(hero.getByText('Datos no disponibles', { exact: true })).toHaveCount(0);
+  await expect(hero.locator('.hanzi-mastery')).toHaveCount(0);
+  await expect(hero).toContainText('6 trazos');
+  await expect(hero).not.toContainText('verificados');
+  const stageLabel = (await hero.locator('.eyebrow').innerText()).trim();
+  const stageParts = /^ETAPA\s+(\d+)(?:\s*·\s*(.+))?$/i.exec(stageLabel);
+  expect(stageParts, `Etiqueta de etapa inesperada: ${stageLabel}`).not.toBeNull();
+  if (stageParts?.[2]) expect(stageParts[2].toLocaleLowerCase('es')).not.toBe(`etapa ${stageParts[1]}`);
   const pronunciation = page.getByRole('button', { name: 'Escuchar pronunciación de 好' });
   await expect(pronunciation).toBeVisible();
   await expect(pronunciation).toHaveAttribute('title', 'Escuchar 好');
+  const audioBox = await pronunciation.boundingBox();
+  expect(audioBox?.width ?? 0).toBeGreaterThanOrEqual(44);
+  expect(audioBox?.height ?? 0).toBeGreaterThanOrEqual(44);
+  const audioRequest = page.waitForRequest((request) => /\/audio\/(?:mandarin|pinyin)\/.+\.mp3$/i.test(new URL(request.url()).pathname));
+  await pronunciation.click();
+  expect(new URL((await audioRequest).url()).pathname).toMatch(/\/audio\/(?:mandarin|pinyin)\/.+\.mp3$/i);
   await page.getByRole('button', { name: '你, nǐ, tú, estado nuevo' }).click();
   await expect(page.getByRole('button', { name: 'Escuchar pronunciación de 你' })).toBeVisible();
   await expect(page.locator('.hanzi-pronunciation-row .audio-button')).not.toHaveClass(/playing/);
   await page.getByRole('button', { name: '好, hǎo, bueno; bien, estado nuevo' }).click();
-  await expect(page.getByText('6 trazos verificados')).toBeVisible();
   for (const tab of ['Aprender', 'Componentes', 'Trazos', 'Practicar']) await expect(page.getByRole('tab', { name: tab })).toBeVisible();
   await expect(page.getByTestId('hanzi-writer')).toBeVisible();
-  const replay = page.getByRole('button', { name: /Ver de nuevo/ });
+  await expect(page.getByTestId('hanzi-writer').locator('svg')).toHaveCount(1);
+  await expect(page.locator('.hanzi-learn-panel .hanzi-stage-status')).toHaveCount(0);
+  const replay = page.getByRole('button', { name: 'Ver animación de nuevo', exact: true });
   await expect(replay).toBeVisible();
   await expect(replay).toBeEnabled();
-  const panelBefore = await page.locator('.hanzi-learn-panel').boundingBox();
-  const buttonBefore = await replay.boundingBox();
+  await replay.focus();
+  await expect(replay).toBeFocused();
+  await expect(replay).toHaveAttribute('title', 'Ver de nuevo');
+  await expect(page.getByText('Ver de nuevo', { exact: true })).toHaveCount(0);
+  const localBefore = await page.evaluate(() => localStorage.getItem('ming-hanzi-progress-v1'));
+  const replayGeometry = async () => {
+    const [frame, button, panel] = await Promise.all([
+      page.locator('.hanzi-learn-panel .hanzi-writer-frame').boundingBox(),
+      replay.boundingBox(),
+      page.locator('.hanzi-learn-panel').boundingBox(),
+    ]);
+    if (!frame || !button || !panel) throw new Error('No se pudo medir la geometría del replay Hanzi.');
+    return {
+      width: button.width,
+      height: button.height,
+      top: button.y - frame.y,
+      right: frame.x + frame.width - button.x - button.width,
+      left: button.x - frame.x,
+      bottom: frame.y + frame.height - button.y - button.height,
+      panelHeight: panel.height,
+    };
+  };
+  const before = await replayGeometry();
+  expect(before.width).toBeGreaterThanOrEqual(44);
+  expect(before.height).toBeGreaterThanOrEqual(44);
+  expect(before.top).toBeGreaterThanOrEqual(-1);
+  expect(before.right).toBeGreaterThanOrEqual(-1);
+  expect(before.left).toBeGreaterThanOrEqual(-1);
+  expect(before.bottom).toBeGreaterThanOrEqual(-1);
+  expect(before.top).toBeLessThanOrEqual(20);
+  expect(before.right).toBeLessThanOrEqual(20);
   await replay.click();
   await page.waitForTimeout(100);
   await expect(replay).toBeVisible();
+  const during = await replayGeometry();
   await replay.click();
   await replay.click();
   await expect(page.getByTestId('hanzi-writer').locator('svg')).toHaveCount(1);
-  const panelDuring = await page.locator('.hanzi-learn-panel').boundingBox();
-  const buttonDuring = await replay.boundingBox();
-  expect(Math.abs((panelDuring?.height ?? 0) - (panelBefore?.height ?? 0))).toBeLessThanOrEqual(1);
-  const relativeButtonBefore = (buttonBefore?.y ?? 0) - (panelBefore?.y ?? 0);
-  const relativeButtonDuring = (buttonDuring?.y ?? 0) - (panelDuring?.y ?? 0);
-  expect(Math.abs(relativeButtonDuring - relativeButtonBefore)).toBeLessThanOrEqual(1);
-  if (isMobile) {
-    const frame = await page.locator('.hanzi-learn-panel .hanzi-writer-frame').boundingBox();
-    const eyebrow = await page.locator('.hanzi-learn-panel .eyebrow').boundingBox();
-    expect((frame?.y ?? 0) + (frame?.height ?? 0)).toBeLessThan(buttonDuring?.y ?? 0);
-    expect((buttonDuring?.y ?? 0) + (buttonDuring?.height ?? 0)).toBeLessThan(eyebrow?.y ?? 0);
+  await page.waitForTimeout(6500);
+  await expect(replay).toBeVisible();
+  const after = await replayGeometry();
+  for (const sample of [during, after]) {
+    expect(Math.abs(sample.top - before.top)).toBeLessThanOrEqual(1);
+    expect(Math.abs(sample.right - before.right)).toBeLessThanOrEqual(1);
+    expect(Math.abs(sample.panelHeight - before.panelHeight)).toBeLessThanOrEqual(1);
   }
+  expect(practiceRequests).toEqual([]);
+  expect(await page.evaluate(() => localStorage.getItem('ming-hanzi-progress-v1'))).toBe(localBefore);
   await expect(page.getByRole('button', { name: 'Ocultar carácter' })).toHaveCount(0);
   await expect(page.getByRole('button', { name: 'Animar' })).toHaveCount(0);
 
+  await page.getByRole('tab', { name: 'Componentes' }).click();
+  await expect(page.getByRole('tab', { name: 'Componentes' })).toHaveAttribute('aria-selected', 'true');
+  await expect(replay).toHaveCount(0);
   await page.getByRole('tab', { name: 'Trazos' }).click();
+  await expect(replay).toHaveCount(0);
   await expect(page.getByTestId('stroke-direction')).toHaveCount(6);
   await expect(page.getByRole('button', { name: 'Respuesta' })).toHaveCount(0);
   await expect(page.getByRole('button', { name: 'Paso a paso' })).toHaveCount(0);
@@ -186,6 +239,85 @@ test('el laboratorio Hanzi usa trazos reales, cuatro pestañas y práctica inter
   await expect(page.getByRole('button', { name: 'Examen' })).toHaveCount(0);
   await expect(page.getByTestId('hanzi-writer')).toBeVisible();
   await expect(page.getByRole('button', { name: 'Comenzar' })).toBeEnabled();
+  await expect(replay).toHaveCount(0);
+
+  await page.getByRole('tab', { name: 'Aprender' }).click();
+  await expect(replay).toBeVisible();
+  await expect(page.getByTestId('hanzi-writer').locator('svg')).toHaveCount(1);
+  expect(practiceRequests).toEqual([]);
+  expect(await page.evaluate(() => localStorage.getItem('ming-hanzi-progress-v1'))).toBe(localBefore);
+});
+
+test('la ficha Hanzi conserva su jerarquía mobile-first en los anchos objetivo y desktop', async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name !== 'chromium', 'La matriz evita duplicar los mismos anchos en el proyecto móvil.');
+  const viewports = [
+    { width: 375, height: 812 },
+    { width: 390, height: 844 },
+    { width: 393, height: 852 },
+    { width: 430, height: 932 },
+    { width: 1280, height: 800 },
+  ];
+
+  for (const viewport of viewports) {
+    await page.setViewportSize(viewport);
+    await page.goto('/study/l2/hanzi?character=友');
+    const hero = page.locator('.hanzi-character-hero');
+    const audio = page.getByRole('button', { name: 'Escuchar pronunciación de 友' });
+    const replay = page.getByRole('button', { name: 'Ver animación de nuevo', exact: true });
+    await expect(page.getByTestId('hanzi-writer').locator('svg')).toHaveCount(1);
+    await expect(hero).toContainText('4 trazos');
+    await expect(hero).not.toContainText('verificados');
+    await expect(hero.getByText('Datos locales listos', { exact: true })).toHaveCount(0);
+    await expect(hero.getByText('Datos no disponibles', { exact: true })).toHaveCount(0);
+    await expect(hero.locator('.hanzi-mastery')).toHaveCount(0);
+    await expect(audio).toBeVisible();
+    await expect(replay).toBeVisible();
+
+    const stageLabel = (await hero.locator('.eyebrow').innerText()).trim();
+    const stageParts = /^ETAPA\s+(\d+)(?:\s*·\s*(.+))?$/i.exec(stageLabel);
+    expect(stageParts, `${viewport.width}px: etiqueta inesperada ${stageLabel}`).not.toBeNull();
+    if (stageParts?.[2]) expect(stageParts[2].toLocaleLowerCase('es')).not.toBe(`etapa ${stageParts[1]}`);
+
+    const [heroBox, glyphBox, audioBox, frameBox, replayBox] = await Promise.all([
+      hero.boundingBox(),
+      hero.locator('.hanzi-glyph').boundingBox(),
+      audio.boundingBox(),
+      page.locator('.hanzi-learn-panel .hanzi-writer-frame').boundingBox(),
+      replay.boundingBox(),
+    ]);
+    if (!heroBox || !glyphBox || !audioBox || !frameBox || !replayBox) throw new Error(`${viewport.width}px: no se pudo medir la ficha Hanzi.`);
+    expect(heroBox.height, `${viewport.width}px: cabecera demasiado alta`).toBeLessThanOrEqual(viewport.width <= 430 ? 150 : 180);
+    expect(heroBox.height).toBeLessThanOrEqual(glyphBox.height + 68);
+    expect(audioBox.width).toBeGreaterThanOrEqual(44);
+    expect(audioBox.height).toBeGreaterThanOrEqual(44);
+    expect(replayBox.width).toBeGreaterThanOrEqual(44);
+    expect(replayBox.height).toBeGreaterThanOrEqual(44);
+    expect(replayBox.x).toBeGreaterThanOrEqual(frameBox.x - 1);
+    expect(replayBox.y).toBeGreaterThanOrEqual(frameBox.y - 1);
+    expect(replayBox.x + replayBox.width).toBeLessThanOrEqual(frameBox.x + frameBox.width + 1);
+    expect(replayBox.y + replayBox.height).toBeLessThanOrEqual(frameBox.y + frameBox.height + 1);
+
+    const layout = await page.evaluate(() => {
+      const tabs = [...document.querySelectorAll<HTMLElement>('.hanzi-tabs [role="tab"]')].map((tab) => {
+        const box = tab.getBoundingClientRect();
+        return { left: box.left, right: box.right, height: box.height, fontSize: Number.parseFloat(getComputedStyle(tab).fontSize) };
+      });
+      const nav = document.querySelector<HTMLElement>('.mobile-nav');
+      const footer = document.querySelector<HTMLElement>('.site-footer');
+      return {
+        viewportWidth: window.innerWidth,
+        documentWidth: document.documentElement.scrollWidth,
+        tabs,
+        navHeight: nav && getComputedStyle(nav).display !== 'none' ? nav.getBoundingClientRect().height : 0,
+        footerPaddingBottom: footer ? Number.parseFloat(getComputedStyle(footer).paddingBottom) : 0,
+      };
+    });
+    expect(layout.documentWidth).toBeLessThanOrEqual(layout.viewportWidth + 1);
+    expect(layout.tabs).toHaveLength(4);
+    expect(layout.tabs.every((tab) => tab.left >= -1 && tab.right <= layout.viewportWidth + 1)).toBe(true);
+    expect(layout.tabs.every((tab) => tab.height >= 44 && tab.fontSize >= 11)).toBe(true);
+    if (viewport.width <= 430) expect(layout.footerPaddingBottom).toBeGreaterThanOrEqual(layout.navHeight);
+  }
 });
 
 test('los filtros Hanzi siguen las seis etapas curriculares y se pueden combinar', async ({ page, isMobile }) => {
@@ -193,6 +325,10 @@ test('los filtros Hanzi siguen las seis etapas curriculares y se pueden combinar
     'c-好:writing': { attempts: 1, completed: 1, mistakes: 1, lastPracticedAt: '2026-08-27T12:00:00.000Z' },
   })));
   await page.goto('/lesson/1/hanzi');
+  const stateFilters = page.getByRole('group', { name: 'Estado de aprendizaje' });
+  await expect(stateFilters.getByRole('button', { name: 'Por aprender', exact: true })).toBeVisible();
+  await expect(stateFilters.getByRole('button', { name: 'Nuevos', exact: true })).toHaveCount(0);
+  await expect(stateFilters.getByRole('button', { name: 'Aprendiendo', exact: true })).toHaveCount(0);
   const grid = page.locator('.hanzi-picker-grid > button');
   for (const [stage, label, count] of [[1, '1 Fundamentos', 12], [2, '2 Saludos', 14], [3, '3 Presentarse', 13], [4, '4 Cortesía', 5], [5, '5 Estados', 4], [6, '6 ¿Cómo has estado?', 4]] as const) {
     if (isMobile) await page.locator('.stage-filter-mobile select').selectOption(String(stage));
@@ -201,6 +337,8 @@ test('los filtros Hanzi siguen las seis etapas curriculares y se pueden combinar
   }
   if (isMobile) await page.locator('.stage-filter-mobile select').selectOption('2');
   else await page.getByRole('button', { name: '2 Saludos', exact: true }).click();
+  await page.getByRole('button', { name: 'Por aprender', exact: true }).click();
+  await expect(grid).toHaveCount(13);
   await page.getByRole('button', { name: 'Repasar', exact: true }).click();
   await expect(grid).toHaveCount(1);
   await expect(page.getByRole('button', { name: '好, hǎo, bueno; bien, estado repasar' })).toBeVisible();
@@ -208,11 +346,21 @@ test('los filtros Hanzi siguen las seis etapas curriculares y se pueden combinar
 
 test('una evidencia de reconocimiento local persiste después de recargar', async ({ page }) => {
   await page.goto('/lesson/1/hanzi?character=一');
+  const studyRequest = page.waitForRequest((request) => new URL(request.url()).pathname === '/api/hanzi/practice' && request.method() === 'POST');
   await page.getByRole('button', { name: 'Lo reconozco' }).click();
+  expect((await studyRequest).postDataJSON()).toEqual({ action: 'study', characterId: 'c-一' });
   await expect(page.getByText(/guardado en este dispositivo/)).toBeVisible();
+  const exposure = await page.evaluate(() => {
+    const local = JSON.parse(localStorage.getItem('ming-hanzi-progress-v1') || '{}') as Record<string, Record<string, unknown>>;
+    return local['c-一:recognition'];
+  });
+  expect(exposure).toMatchObject({ attempts: 0, completed: 0, mistakes: 0, studyExposures: 1 });
+  expect(exposure).not.toHaveProperty('mastery');
+  expect(exposure).not.toHaveProperty('stability');
+  expect(exposure).not.toHaveProperty('correctCount');
+  expect(exposure).not.toHaveProperty('xp');
   await page.reload();
-  await page.getByRole('button', { name: 'Aprendiendo', exact: true }).click();
-  await expect(page.locator('.hanzi-picker-grid > button')).toHaveCount(1);
+  await page.getByRole('button', { name: 'Por aprender', exact: true }).click();
   await expect(page.getByRole('button', { name: '一, yī, uno, estado aprendiendo' })).toBeVisible();
 });
 

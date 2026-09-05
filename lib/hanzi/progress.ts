@@ -14,7 +14,7 @@ function localEntries(characterId: string, local: LocalHanziProgressMap) {
 
 export function hasHanziEvidence(characterId: string, progress?: HanziProgressEntry, local: LocalHanziProgressMap = {}) {
   return Object.values(progress?.dimensions ?? {}).some((item) => (item?.exposures ?? 0) > 0)
-    || localEntries(characterId, local).some((item) => item.attempts > 0);
+    || localEntries(characterId, local).some((item) => item.attempts > 0 || (item.studyExposures ?? 0) > 0);
 }
 
 export function classifyHanziLearningState(
@@ -35,7 +35,7 @@ export function classifyHanziLearningState(
     const item = progress?.dimensions[dimension];
     return item && item.exposures > 0 && item.mastery < WEAK_DIMENSION_THRESHOLD;
   });
-  const unstable = values.some((item) => item && item.exposures > 0 && item.stability < LOW_STABILITY_THRESHOLD);
+  const unstable = values.some((item) => item && item.exposures > 0 && item.nextReviewAt && item.stability < LOW_STABILITY_THRESHOLD);
   if ((progress?.openErrors ?? 0) > 0 || due || weakWriting || unstable || localValues.some((item) => item.mistakes > 0)) return 'review';
   return 'learning';
 }

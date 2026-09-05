@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { cumulativeStrokeSets, getHanziTransform, strokeDirection, toScreenPoint } from '@/lib/hanzi/geometry';
 import { isHanziCharacterData } from '@/lib/hanzi/loader';
-import { isSuccessfulHanziAttempt, updateLocalHanziProgress } from '@/lib/hanzi/mastery';
+import { advanceHanziStudyExposure, isSuccessfulHanziAttempt, updateLocalHanziProgress, updateLocalHanziStudyExposure } from '@/lib/hanzi/mastery';
 import { classifyHanziLearningState, recommendHanziCharacters, summarizeHanziStages } from '@/lib/hanzi/progress';
 import type { HanziAttemptPayload, HanziCharacterData, HanziProgressMap } from '@/lib/hanzi/types';
 import manifest from '@/public/hanzi-data/manifest.json';
@@ -105,5 +105,52 @@ describe('laboratorio Hanzi', () => {
     const local = updateLocalHanziProgress(undefined, attempt, new Date('2026-08-27T10:00:00Z'));
     expect(local).toEqual({ attempts: 1, completed: 1, mistakes: 0, lastPracticedAt: '2026-08-27T10:00:00.000Z' });
     expect(local).not.toHaveProperty('coordinates');
+  });
+
+  it('registra estudio consciente sin convertirlo en un acierto evaluado', () => {
+    const now = new Date('2026-09-04T12:00:00Z');
+    const current = {
+      mastery: 37,
+      stability: 2.4,
+      difficulty: 4,
+      exposures: 3,
+      correctCount: 2,
+      incorrectCount: 1,
+      streak: 2,
+      lastSeenAt: '2026-09-01T12:00:00.000Z',
+      nextReviewAt: '2026-09-10T12:00:00.000Z',
+    };
+
+    expect(advanceHanziStudyExposure(current, now)).toEqual({
+      ...current,
+      exposures: 4,
+      lastSeenAt: '2026-09-04T12:00:00.000Z',
+    });
+
+    const local = updateLocalHanziStudyExposure(undefined, now);
+    expect(local).toEqual({
+      attempts: 0,
+      completed: 0,
+      mistakes: 0,
+      studyExposures: 1,
+      lastPracticedAt: '2026-09-04T12:00:00.000Z',
+    });
+    expect(classifyHanziLearningState('c-一', undefined, { 'c-一:recognition': local }, now)).toBe('learning');
+
+    const syncedStudyOnly: HanziProgressMap = {
+      'c-一': {
+        openErrors: 0,
+        dimensions: {
+          recognition: {
+            mastery: 0,
+            stability: 0,
+            exposures: 1,
+            nextReviewAt: null,
+            lastSeenAt: now.toISOString(),
+          },
+        },
+      },
+    };
+    expect(classifyHanziLearningState('c-一', syncedStudyOnly['c-一'], {}, now)).toBe('learning');
   });
 });

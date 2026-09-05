@@ -4,7 +4,7 @@ import type { AppUser } from '@/app/auth';
 import type { CurriculumScope, Exercise } from '@/data/types';
 import { scoreExamAnswers, type AnswerMap } from '@/lib/exam-score';
 import { computeMasteryUpdate } from '@/lib/mastery';
-import { isSuccessfulHanziAttempt } from '@/lib/hanzi/mastery';
+import { advanceHanziStudyExposure, isSuccessfulHanziAttempt } from '@/lib/hanzi/mastery';
 import { recommendHanziCharacters } from '@/lib/hanzi/progress';
 import type { HanziAttemptPayload, HanziProgressMap, HanziSkillDimension } from '@/lib/hanzi/types';
 import { compareExerciseAnswer, normalizePinyin } from '@/lib/pinyin';
@@ -418,6 +418,43 @@ export async function getLeaderboard() {
 
 function checkExerciseAnswer(exercise: Exercise, answer: string) {
   return compareExerciseAnswer(exercise.type, answer, exercise.answer);
+}
+
+export async function recordHanziStudyExposure(user: AppUser, characterId: string) {
+  await ensureProfile(user);
+  const character = allCurriculumCharacters.find((item) => item.id === characterId);
+  if (!character) throw new Error('Carácter desconocido.');
+
+  const currentRows = await supabaseRest<MasteryRow[]>(`user_mastery?select=*&user_id=eq.${user.userId}&item_type=eq.hanzi&item_id=eq.${encodeURIComponent(character.id)}&skill_dimension=eq.recognition&limit=1`);
+  const current = currentRows[0];
+  const exposure = advanceHanziStudyExposure(current ? {
+    mastery: Number(current.mastery),
+    stability: Number(current.stability),
+    difficulty: Number(current.difficulty),
+    exposures: current.exposures,
+    correctCount: current.correct_count,
+    incorrectCount: current.incorrect_count,
+    streak: current.streak,
+    lastSeenAt: current.last_seen_at,
+    nextReviewAt: current.next_review_at,
+  } : undefined);
+
+  await supabaseRest('user_mastery?on_conflict=user_id,item_type,item_id,skill_dimension', {
+    method: 'POST', prefer: 'resolution=merge-duplicates,return=minimal', body: {
+      user_id: user.userId, item_type: 'hanzi', item_id: character.id, skill_dimension: 'recognition',
+      mastery: exposure.mastery, stability: exposure.stability, difficulty: exposure.difficulty,
+      exposures: exposure.exposures, correct_count: exposure.correctCount, incorrect_count: exposure.incorrectCount,
+      streak: exposure.streak, last_seen_at: exposure.lastSeenAt, next_review_at: exposure.nextReviewAt,
+    },
+  });
+
+  return {
+    mastery: exposure.mastery,
+    stability: exposure.stability,
+    exposures: exposure.exposures,
+    nextReviewAt: exposure.nextReviewAt,
+    skillDimension: 'recognition' as const,
+  };
 }
 
 function formatStudyDate(date: Date, timeZone: string) {

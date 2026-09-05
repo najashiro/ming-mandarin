@@ -28,6 +28,7 @@ export type HanziLocalProgress = {
   attempts: number;
   completed: number;
   mistakes: number;
+  studyExposures?: number;
   lastPracticedAt: string;
 };
 

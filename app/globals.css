@@ -362,31 +362,29 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .hanzi-picker-grid button.selected em { color: #d7eee7; }
 .hanzi-filter-empty { margin-top: 15px; padding: 18px; display: block !important; border: 1px dashed var(--line); border-radius: 8px; text-align: center; }
 .hanzi-filter-empty p { color: var(--muted); }
-.hanzi-character-hero { margin-top: 13px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 25px; background: linear-gradient(135deg,rgba(255,255,255,.84),rgba(224,236,229,.7)); }
+.hanzi-character-hero { margin-top: 13px; padding: 24px; display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 25px; background: linear-gradient(135deg,rgba(255,255,255,.84),rgba(224,236,229,.7)); }
 .hanzi-glyph { width: 112px; height: 112px; display: grid; place-items: center; border: 1px solid rgba(162,58,44,.22); border-radius: 6px 22px 6px 22px; color: var(--ink); background: #fffdf7; font: 600 77px SimSun,"Noto Serif SC",serif; }
+.hanzi-character-copy { min-width: 0; }
 .hanzi-character-copy h2 { margin: 0; color: var(--jade); font: italic 700 27px Georgia,serif; }
-.hanzi-character-copy h2 small { margin-left: 8px; color: var(--ink); font: 500 15px system-ui; }
 .hanzi-pronunciation-row { display: flex; align-items: center; gap: 9px; }
+.hanzi-character-actions { display: flex; align-items: center; gap: 6px; }
 .audio-button.compact { width: 32px; height: 32px; flex: 0 0 32px; justify-content: center; padding: 0; border-radius: 50%; font-size: 14px; line-height: 1; }
-.hanzi-badges { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; }
-.hanzi-badges span { padding: 5px 8px; border-radius: 5px; color: var(--jade); background: var(--jade-soft); font-size: 9px; font-weight: 750; }
-.hanzi-badges .unavailable { color: var(--red); background: #f5dfda; }
+.hanzi-character-actions .audio-button.compact,
+.hanzi-character-actions .community-launcher.compact { width: 44px; height: 44px; min-height: 44px; flex: 0 0 44px; }
+.hanzi-character-meaning { margin: 2px 0 0; color: var(--ink); font-size: 14px; font-weight: 550; }
+.hanzi-character-meta { margin: 7px 0 0; color: var(--muted); font-size: 10px; font-weight: 700; }
 .hanzi-character-copy .source-note { margin: 10px 0 0; }
-.hanzi-mastery { min-width: 185px; padding-left: 22px; display: grid; gap: 9px; border-left: 1px solid var(--line); }
-.hanzi-mastery div { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-.hanzi-mastery span { color: var(--muted); font-size: 9px; text-transform: uppercase; letter-spacing: .05em; }
-.hanzi-mastery b { color: var(--jade); font: 700 15px Georgia,serif; }
 .hanzi-tabs { margin-top: 18px; display: grid; grid-template-columns: repeat(4,1fr); border-bottom: 1px solid var(--line); }
 .hanzi-tabs button { min-height: 50px; border: 0; border-bottom: 3px solid transparent; color: var(--muted); background: transparent; font: 750 12px system-ui; cursor: pointer; }
 .hanzi-tabs button.selected { border-color: var(--jade); color: var(--jade); }
 .hanzi-tab-panel { margin-top: 14px; min-height: 510px; }
 .hanzi-learn-panel { display: grid; grid-template-columns: minmax(300px,1.2fr) minmax(250px,.8fr); align-items: start; gap: 36px; }
-.hanzi-learn-visual { min-width: 0; display: grid; justify-items: center; }
+.hanzi-learn-visual { width: min(100%,420px); min-width: 0; position: relative; display: grid; justify-self: center; justify-items: center; }
 .hanzi-panel-copy { max-width: 470px; }
 .hanzi-panel-copy > p:not(.eyebrow) { font-size: 13px; }
 .hanzi-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 20px 0; }
-.hanzi-controls.hanzi-replay-control { width: min(100%,420px); min-height: 44px; justify-content: center; margin: 14px auto 0; }
-.hanzi-replay-control > button { min-width: 132px; }
+.hanzi-replay-control { width: 44px; height: 44px; position: absolute; z-index: 4; top: 8px; right: 8px; padding: 0; display: grid; place-items: center; border: 1px solid rgba(29,106,89,.26); border-radius: 50%; color: var(--jade); background: rgba(255,253,247,.94); box-shadow: 0 3px 10px rgba(18,74,63,.1); font: 800 20px/1 system-ui; cursor: pointer; touch-action: manipulation; }
+.hanzi-replay-control:hover { border-color: var(--jade); background: #fffdf7; }
 .hanzi-controls > button:not(.button), .hanzi-subtabs button, .speed-picker button, .practice-modes button, .hanzi-fallback button { min-height: 44px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 7px; color: var(--jade); background: white; font: 750 11px system-ui; cursor: pointer; }
 .hanzi-controls button:disabled { opacity: .45; cursor: not-allowed; }
 .hanzi-writer-frame { width: min(100%,420px); aspect-ratio: 1; position: relative; margin-inline: auto; overflow: hidden; border: 2px solid #b8aa94; border-radius: 6px; background: #fffdf7; touch-action: none; }
@@ -508,7 +506,6 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
   .hanzi-character-picker > div:last-child { grid-template-columns: repeat(8,1fr); }
   .hanzi-picker-grid { grid-template-columns: repeat(8,1fr); }
   .hanzi-character-hero { grid-template-columns: auto 1fr; }
-  .hanzi-mastery { grid-column: 1/-1; padding: 15px 0 0; grid-template-columns: repeat(3,1fr); border-top: 1px solid var(--line); border-left: 0; }
   .hanzi-stage-summary { grid-template-columns: repeat(3,1fr); }
 }
 
@@ -520,10 +517,11 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
   .stage-filter-desktop { display: none; }
   .stage-filter-mobile { display: grid; gap: 5px; color: var(--muted); font-size: 9px; }
   .stage-filter-mobile select { width: 100%; min-height: 44px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: white; }
-  .state-filter { display: grid; grid-template-columns: repeat(3,1fr); }
+  .state-filter { display: grid; grid-template-columns: repeat(2,1fr); }
   .hanzi-dimension-summary, .hanzi-stage-summary { grid-template-columns: 1fr 1fr; }
   .hanzi-workspace { width: min(100% - 28px,620px); margin-top: 25px; }
-  .hanzi-character-picker, .hanzi-tab-panel, .hanzi-character-hero { padding: 20px 15px; }
+  .hanzi-character-picker, .hanzi-tab-panel { padding: 20px 15px; }
+  .hanzi-character-hero { padding: 12px 15px; }
   .hanzi-character-picker > div:last-child { grid-template-columns: repeat(5,1fr); }
   .hanzi-picker-grid { grid-template-columns: repeat(5,1fr); }
   .hanzi-character-picker button { min-height: 54px; }
@@ -531,10 +529,9 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
   .hanzi-character-hero { grid-template-columns: 82px 1fr; gap: 14px; }
   .hanzi-glyph { width: 82px; height: 82px; font-size: 57px; }
   .hanzi-character-copy h2 { font-size: 22px; }
-  .hanzi-character-copy h2 small { display: block; margin: 3px 0 0; font-size: 12px; }
-  .hanzi-pronunciation-row { align-items: flex-start; }
+  .hanzi-pronunciation-row { align-items: center; }
   .hanzi-character-copy .source-note { grid-column: 1/-1; }
-  .hanzi-tabs { overflow-x: auto; grid-template-columns: repeat(4,minmax(100px,1fr)); }
+  .hanzi-tabs { overflow-x: visible; grid-template-columns: repeat(4,minmax(0,1fr)); }
   .hanzi-learn-panel, .stroke-answer-layout, .stroke-stage-layout, .practice-stage-layout { grid-template-columns: 1fr; }
   .hanzi-learn-panel { gap: 28px; }
   .hanzi-panel-heading { align-items: start; flex-direction: column; }
@@ -556,8 +553,6 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
   .hanzi-character-picker > div:last-child { grid-template-columns: repeat(4,1fr); }
   .hanzi-picker-grid { grid-template-columns: repeat(4,1fr); }
   .state-filter { grid-template-columns: 1fr 1fr; }
-  .hanzi-badges { display: grid; grid-template-columns: 1fr; }
-  .hanzi-mastery { grid-template-columns: 1fr; }
   .stroke-fan { grid-template-columns: 1fr; }
 }
 
