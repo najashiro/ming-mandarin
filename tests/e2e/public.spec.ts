@@ -234,11 +234,39 @@ test('el laboratorio Hanzi usa una ficha compacta, replay estable y cuatro pesta
   await expect(page.getByText('1 · 撇点 · piědiǎn')).toBeVisible();
 
   await page.getByRole('tab', { name: 'Practicar' }).click();
-  await expect(page.getByRole('button', { name: 'Con guía' })).toHaveClass(/selected/);
-  await expect(page.getByRole('button', { name: 'Sin guía' })).toBeVisible();
+  const practiceControls = page.getByRole('group', { name: 'Modo e inicio de práctica' });
+  const guided = practiceControls.getByRole('button', { name: 'Con guía', exact: true });
+  const independent = practiceControls.getByRole('button', { name: 'Sin guía', exact: true });
+  const startPractice = practiceControls.locator('.practice-start-button');
+  await expect(practiceControls.getByRole('button')).toHaveCount(3);
+  await expect(practiceControls.getByRole('button')).toHaveText(['Con guía', 'Sin guía', 'Comenzar']);
+  await expect(page.getByRole('button', { name: 'Comenzar', exact: true })).toHaveCount(1);
+  await expect(guided).toHaveClass(/selected/);
+  await expect(guided).toHaveAttribute('aria-pressed', 'true');
+  await expect(independent).toHaveAttribute('aria-pressed', 'false');
   await expect(page.getByRole('button', { name: 'Examen' })).toHaveCount(0);
   await expect(page.getByTestId('hanzi-writer')).toBeVisible();
-  await expect(page.getByRole('button', { name: 'Comenzar' })).toBeEnabled();
+  await expect(startPractice).toBeEnabled();
+  await startPractice.click();
+  await expect(startPractice).toHaveText('Práctica activa');
+  await expect(startPractice).toBeDisabled();
+  await expect(page.getByText('Empieza en el punto correcto y sigue la dirección del trazo.')).toBeVisible();
+  await independent.click();
+  await expect(independent).toHaveAttribute('aria-pressed', 'true');
+  await expect(guided).toHaveAttribute('aria-pressed', 'false');
+  await expect(page.getByRole('heading', { name: 'Cuadrícula sin contorno' })).toBeVisible();
+  await expect(startPractice).toHaveText('Comenzar');
+  await expect(startPractice).toBeEnabled();
+  await startPractice.click();
+  await expect(startPractice).toHaveText('Práctica activa');
+  await guided.click();
+  await independent.click();
+  await guided.click();
+  await expect(guided).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.getByRole('heading', { name: 'Guía visible y pistas progresivas' })).toBeVisible();
+  await expect(startPractice).toBeEnabled();
+  await startPractice.click();
+  await expect(startPractice).toHaveText('Práctica activa');
   await expect(replay).toHaveCount(0);
 
   await page.getByRole('tab', { name: 'Aprender' }).click();
@@ -246,6 +274,47 @@ test('el laboratorio Hanzi usa una ficha compacta, replay estable y cuatro pesta
   await expect(page.getByTestId('hanzi-writer').locator('svg')).toHaveCount(1);
   expect(practiceRequests).toEqual([]);
   expect(await page.evaluate(() => localStorage.getItem('ming-hanzi-progress-v1'))).toBe(localBefore);
+});
+
+test('Con guía, Sin guía y Comenzar permanecen en una sola fila responsive', async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name !== 'chromium', 'La matriz responsive se ejecuta una vez en Chromium.');
+  const browserErrors: string[] = [];
+  page.on('console', (message) => { if (message.type() === 'error') browserErrors.push(message.text()); });
+  page.on('pageerror', (error) => browserErrors.push(error.message));
+  const viewports = [320, 360, 375, 390, 393, 414, 430, 768, 1024];
+
+  for (const width of viewports) {
+    await page.setViewportSize({ width, height: width < 768 ? 844 : 900 });
+    await page.goto('/study/l2/hanzi?character=早&tab=Practicar');
+    const controls = page.getByRole('group', { name: 'Modo e inicio de práctica' });
+    const buttons = controls.getByRole('button');
+    const writer = page.locator('.practice-panel .hanzi-writer-frame');
+    await expect(controls.locator('.practice-start-button')).toBeEnabled();
+    await expect(buttons).toHaveCount(3);
+    await expect(buttons).toHaveText(['Con guía', 'Sin guía', 'Comenzar']);
+
+    const [controlsBox, writerBox, buttonBoxes, documentWidth] = await Promise.all([
+      controls.boundingBox(),
+      writer.boundingBox(),
+      buttons.evaluateAll((items) => items.map((item) => {
+        const box = item.getBoundingClientRect();
+        return { x: box.x, y: box.y, width: box.width, height: box.height, whiteSpace: getComputedStyle(item).whiteSpace };
+      })),
+      page.evaluate(() => document.documentElement.scrollWidth),
+    ]);
+    if (!controlsBox || !writerBox) throw new Error(`${width}px: no se pudo medir Practicar.`);
+    expect(buttonBoxes).toHaveLength(3);
+    expect(buttonBoxes.every((box) => Math.abs(box.y - buttonBoxes[0].y) <= 1), `${width}px: los botones saltaron de fila`).toBe(true);
+    expect(buttonBoxes.every((box) => Math.abs(box.height - buttonBoxes[0].height) <= 1)).toBe(true);
+    expect(buttonBoxes.every((box) => box.height >= 48 && box.height <= 52)).toBe(true);
+    expect(buttonBoxes.every((box) => box.whiteSpace === 'nowrap')).toBe(true);
+    expect(Math.max(...buttonBoxes.map((box) => box.width)) - Math.min(...buttonBoxes.map((box) => box.width))).toBeLessThanOrEqual(1);
+    expect(controlsBox.width).toBeLessThanOrEqual(writerBox.width + 1);
+    expect(writerBox.y - (controlsBox.y + controlsBox.height)).toBeGreaterThanOrEqual(12);
+    expect(writerBox.y - (controlsBox.y + controlsBox.height)).toBeLessThanOrEqual(16);
+    expect(documentWidth).toBeLessThanOrEqual(width + 1);
+  }
+  expect(browserErrors).toEqual([]);
 });
 
 test('la ficha Hanzi conserva su jerarquía mobile-first en los anchos objetivo y desktop', async ({ page }, testInfo) => {
