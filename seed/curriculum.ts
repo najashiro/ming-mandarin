@@ -1,4 +1,4 @@
-import type { CharacterEntry, CurriculumScope, Exercise, GrammarPoint, LessonNumber, SentenceEntry, SourceRef, VocabularyEntry } from '@/data/types';
+import type { CharacterEntry, CharacterWord, CurriculumScope, Exercise, GrammarPoint, HanziUnitId, LessonNumber, SentenceEntry, SourceRef, VocabularyEntry } from '@/data/types';
 import { canonicalCharacters, charactersForUnits, hanziUnits } from '@/seed/characters';
 import { exercises as lesson1Exercises } from '@/seed/exercises';
 import { grammarPoints as lesson1Grammar } from '@/seed/grammar';
@@ -231,9 +231,39 @@ export const lesson3Grammar: GrammarPoint[] = [
 export const lesson1HanziStages = hanziUnits.filter((unit) => unit.lesson === 1);
 export const lesson2HanziStages = hanziUnits.filter((unit) => unit.lesson === 2);
 export const lesson3HanziStages = hanziUnits.filter((unit) => unit.lesson === 3);
-export const lesson1Characters = charactersForUnits(['1.1','1.2']);
-export const lesson2Characters = charactersForUnits(['2.1','2.2']);
-export const lesson3Characters = charactersForUnits(['3.1','3.2']);
+const unitOrder: HanziUnitId[] = ['1.1','1.2','2.1','2.2','3.1','3.2'];
+const canonicalByHanzi = new Map(canonicalCharacters.map((character) => [character.hanzi,character]));
+
+function contextStage(text: string): HanziUnitId {
+  return [...text].reduce<HanziUnitId>((latest,hanzi) => {
+    const introducedIn = canonicalByHanzi.get(hanzi)?.introducedIn;
+    return introducedIn && unitOrder.indexOf(introducedIn) > unitOrder.indexOf(latest) ? introducedIn : latest;
+  },'1.1');
+}
+
+function contextualizeCharacters(characterList: CharacterEntry[], vocabulary: VocabularyEntry[], sentences: SentenceEntry[]) {
+  return characterList.map((character) => {
+    const words: CharacterWord[] = [
+      ...vocabulary
+        .filter((word) => [...word.hanzi].length > 1 && word.hanzi.includes(character.hanzi))
+        .map((word) => ({ hanzi:word.hanzi,pinyin:word.pinyin,translation:word.translation,stage:contextStage(word.hanzi) })),
+      ...sentences
+        .filter((sentence) => sentence.hanzi.includes(character.hanzi))
+        .map((sentence) => ({
+          hanzi:sentence.hanzi.replace(/[。？！]/g,''),
+          pinyin:sentence.pinyin.replace(/[.?!]/g,'').trim(),
+          translation:sentence.translation,
+          stage:contextStage(sentence.hanzi),
+        })),
+    ];
+    const uniqueWords = [...new Map(words.map((word) => [`${word.hanzi}:${word.pinyin.toLocaleLowerCase('es')}`,word])).values()].slice(0,8);
+    return { ...character, words:uniqueWords };
+  });
+}
+
+export const lesson1Characters = contextualizeCharacters(charactersForUnits(['1.1','1.2']),lesson1Vocabulary,lesson1Sentences);
+export const lesson2Characters = contextualizeCharacters(charactersForUnits(['2.1','2.2']),lesson2Vocabulary,lesson2Sentences);
+export const lesson3Characters = contextualizeCharacters(charactersForUnits(['3.1','3.2']),lesson3Vocabulary,lesson3Sentences);
 
 function makeLessonExercises(lesson: 2 | 3, words: VocabularyEntry[], chars: CharacterEntry[], sentences: SentenceEntry[], grammarPoints: GrammarPoint[]): Exercise[] {
   const meanings = words.filter((word) => word.category !== 'name').map((word, index): Exercise => ({
@@ -282,12 +312,16 @@ export function getCurriculum(scope: CurriculumScope) {
   const vocabulary = uniqueBy(selected.flatMap((item) => item.vocabulary), (item) => item.id);
   const sentences = uniqueBy(selected.flatMap((item) => item.sentences), (item) => item.id);
   const grammar = uniqueBy(selected.flatMap((item) => item.grammar), (item) => item.id);
-  const characters = uniqueBy(selected.flatMap((item) => item.characters), (item) => item.id);
+  const characters = contextualizeCharacters(uniqueBy(selected.flatMap((item) => item.characters), (item) => item.id),vocabulary,sentences);
   const exercises = uniqueBy(selected.flatMap((item) => item.exercises), (item) => item.id);
   const stages = hanziUnits.filter((unit) => definition.lessonIds.includes(unit.lesson));
   return { scope, definition, vocabulary, sentences, grammar, characters, exercises, stages, units: stages };
 }
 
 export const allCurriculumExercises = uniqueBy([lesson1Exercises, lesson2Exercises, lesson3Exercises].flat(), (item) => item.id);
-export const allCurriculumCharacters = canonicalCharacters;
+export const allCurriculumCharacters = contextualizeCharacters(
+  canonicalCharacters,
+  [...lesson1Vocabulary,...lesson2Vocabulary,...lesson3Vocabulary],
+  [...lesson1Sentences,...lesson2Sentences,...lesson3Sentences],
+);
 export function exerciseForId(id: string) { return allCurriculumExercises.find((item) => item.id === id); }

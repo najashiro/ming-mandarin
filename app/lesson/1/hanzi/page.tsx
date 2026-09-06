@@ -5,6 +5,7 @@ import manifest from '@/public/hanzi-data/manifest.json';
 import { getHanziProgressMap } from '@/lib/server/persistence';
 import type { HanziManifestEntry } from '@/lib/hanzi/types';
 import { canonicalCharacters, hanziUnits } from '@/seed/characters';
+import { allCurriculumCharacters } from '@/seed/curriculum';
 import { CommunityContextProvider } from '@/components/community/CommunityProvider';
 
 export const dynamic = 'force-dynamic';
@@ -26,7 +27,8 @@ export default async function HanziPage({ searchParams }: { searchParams: Promis
       description="Aprende con datos técnicos locales, observa el orden real y practica con mouse, touch o stylus. El sistema mide reconocimiento, orden y escritura por separado."
     />
     <HanziLab
-      characters={canonicalCharacters}
+      characters={allCurriculumCharacters}
+      canonicalHanzi={canonicalCharacters.map((character) => character.hanzi)}
       stages={hanziUnits}
       manifest={manifest as Record<string, HanziManifestEntry>}
       initialProgress={initialProgress}

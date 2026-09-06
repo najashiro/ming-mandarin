@@ -2,7 +2,6 @@ import curriculum from '@/data/lesson1-hanzi.json' with { type: 'json' };
 import manifest from '@/public/hanzi-data/manifest.json' with { type: 'json' };
 import type {
   CharacterEntry,
-  CharacterWord,
   HanziSourceCode,
   HanziSourceRole,
   HanziUnitDefinition,
@@ -83,19 +82,6 @@ const auditedMetadata: Record<string, { radical: string; components: string[]; s
   叫:{radical:'口',components:['口','丩'],source:textbook(60,59)},姓:{radical:'女',components:['女','生'],source:textbook(60,59)},么:{radical:'丿',components:['丿','厶'],source:textbook(60,59)},名:{radical:'口',components:['夕','口'],source:textbook(61,60)},最:{radical:'曰',components:['曰','耳','又'],source:textbook(61,60)},近:{radical:'辶',components:['斤','辶'],source:textbook(61,60)},认:{radical:'讠',components:['讠','人'],source:textbook(61,60)},识:{radical:'讠',components:['讠','只'],source:textbook(61,60)},样:{radical:'木',components:['木','羊'],source:textbook(61,60)},进:{radical:'辶',components:['井','辶'],source:textbook(61,60)},坐:{radical:'土',components:['人','人','土'],source:textbook(61,60)},你:{radical:'亻',components:['亻','尔'],source:textbook(58,57)},好:{radical:'女',components:['女','子'],source:textbook(46,45)},我:{radical:'戈',components:['手','戈'],source:textbook(46,45)},
 };
 
-const contexts: CharacterWord[] = [
-  {hanzi:'你好',pinyin:'nǐ hǎo',translation:'hola',stage:'1.1',href:'/lesson/1/dialogues'},
-  {hanzi:'老师',pinyin:'lǎoshī',translation:'profesor/a',stage:'1.1',href:'/lesson/1/vocabulary'},
-  {hanzi:'早上好',pinyin:'zǎoshang hǎo',translation:'buenos días',stage:'1.1',href:'/lesson/1/dialogues'},
-  {hanzi:'再见',pinyin:'zàijiàn',translation:'adiós',stage:'1.1',href:'/lesson/1/dialogues'},
-  {hanzi:'什么',pinyin:'shénme',translation:'qué',stage:'1.1',href:'/lesson/1/vocabulary'},
-  {hanzi:'请问',pinyin:'qǐngwèn',translation:'permítame preguntar',stage:'1.1',href:'/lesson/1/dialogues'},
-  {hanzi:'认识',pinyin:'rènshi',translation:'conocer',stage:'1.1',href:'/lesson/1/vocabulary'},
-  {hanzi:'高兴',pinyin:'gāoxìng',translation:'contento/a',stage:'1.1',href:'/lesson/1/dialogues'},
-  {hanzi:'最近',pinyin:'zuìjìn',translation:'recientemente',stage:'1.2',href:'/lesson/1/vocabulary'},
-  {hanzi:'怎么样',pinyin:'zěnmeyàng',translation:'cómo; qué tal',stage:'1.2',href:'/lesson/1/vocabulary'},
-];
-
 type Occurrence = { unit: RawUnit; role: HanziSourceRole };
 const order = [...new Set(rawUnits.flatMap((unit) => roles.flatMap((role) => uniqueCharacters(unit[role]))))];
 
@@ -133,7 +119,7 @@ export const canonicalCharacters: CharacterEntry[] = order.map((hanzi, curricula
     curricular:true,
     radicalAudited:Boolean(audited),
     componentsAudited:Boolean(audited),
-    words:contexts.filter((context) => context.hanzi.includes(hanzi)),
+    words:[],
   };
 });
 

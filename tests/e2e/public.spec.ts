@@ -416,6 +416,41 @@ test('los filtros Hanzi siguen los seis textos curriculares y distinguen nuevo d
   await expect(page.getByRole('button',{name:/^真, zhēn,/})).toHaveAttribute('data-curricular-state','new');
 });
 
+test('Trazos y Aparece en conservan detalle técnico, contexto y enlaces en iPhone portrait', async ({ page }) => {
+  await page.setViewportSize({ width:390,height:844 });
+  await page.goto('/lesson/1/hanzi?character=张&tab=Trazos');
+  const strokeNames = page.locator('.stroke-name-list > li');
+  await expect(strokeNames).toHaveCount(7);
+  await expect(strokeNames.first()).toContainText('1 · 横折 · héngzhé');
+  await expect(strokeNames.first()).toContainText('Dirección:');
+  await expect(page.getByText(/^Trazo 1$/)).toHaveCount(0);
+
+  await page.goto('/lesson/1/hanzi?character=么&tab=Componentes');
+  const contexts = page.locator('.components-panel .hanzi-context');
+  await expect(contexts.getByRole('heading',{name:'Aparece en'})).toBeVisible();
+  await expect(contexts).toContainText('什么');
+  await expect(contexts).toContainText('shénme');
+  await expect(contexts).toContainText('怎么样');
+  await expect(contexts).toContainText('zěnmeyàng');
+  expect(await contexts.innerText()).not.toMatch(/\b[123]\.[12]\b/);
+
+  await page.goto('/lesson/1/hanzi?character=照&tab=Componentes');
+  const photo = page.locator('.components-panel .hanzi-context article').filter({hasText:'照片'}).first();
+  await expect(photo).toContainText('zhàopiàn');
+  await expect(photo).toContainText('fotografía');
+  const relatedPhoto = photo.getByRole('link',{name:'Abrir ficha Hanzi de 片'});
+  const touchTarget = await relatedPhoto.boundingBox();
+  expect(touchTarget?.width).toBeGreaterThanOrEqual(44);
+  expect(touchTarget?.height).toBeGreaterThanOrEqual(44);
+  await relatedPhoto.click();
+  await expect(page.locator('.hanzi-glyph')).toHaveText('片');
+
+  await page.goto('/lesson/1/hanzi?character=张&tab=Componentes');
+  await expect(page.locator('.components-panel .hanzi-context')).toContainText('这张照片真漂亮');
+  const dimensions = await page.evaluate(() => ({ viewport:window.innerWidth,content:document.documentElement.scrollWidth }));
+  expect(dimensions.content).toBeLessThanOrEqual(dimensions.viewport + 1);
+});
+
 test('una evidencia de reconocimiento local persiste después de recargar', async ({ page }) => {
   await page.goto('/lesson/1/hanzi?character=一');
   const studyRequest = page.waitForRequest((request) => new URL(request.url()).pathname === '/api/hanzi/practice' && request.method() === 'POST');

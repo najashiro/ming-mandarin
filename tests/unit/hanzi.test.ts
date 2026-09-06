@@ -10,6 +10,7 @@ import good from '@/public/hanzi-data/好.json';
 import evening from '@/public/hanzi-data/晚.json';
 import thanks from '@/public/hanzi-data/谢.json';
 import { canonicalCharacters, characters, hanziSourceGroups, hanziUnits, legacyCharacters, lesson1Characters } from '@/seed/characters';
+import { allCurriculumCharacters } from '@/seed/curriculum';
 import { strokeNamesForCharacter } from '@/lib/hanzi/stroke-names';
 
 const attempt: HanziAttemptPayload = {
@@ -34,12 +35,20 @@ describe('laboratorio Hanzi', () => {
     expect(sets.map((set) => set.length)).toEqual([1, 2, 3, 4, 5, 6]);
   });
 
-  it('mantiene nombres técnicos separados de la dirección y evita nombres ambiguos', () => {
+  it('mantiene nombres técnicos separados de la dirección y conserva alternativas documentadas', () => {
     const names = strokeNamesForCharacter('好', goodData.strokes.length);
     expect(names[0]).toEqual({ hanzi: '撇点', pinyin: 'piědiǎn' });
     expect(names[1]).toEqual({ hanzi: '撇', pinyin: 'piě' });
-    expect(names[3]).toBeNull();
+    expect(names[3]).toEqual({ hanzi: '横撇 / 横钩', pinyin: 'héngpiě / hénggōu' });
     expect(names).toHaveLength(goodData.strokes.length);
+  });
+
+  it('dispone de nombre técnico y pinyin para cada trazo del corpus canónico', () => {
+    for (const character of canonicalCharacters) {
+      const names = strokeNamesForCharacter(character.hanzi,character.strokeCount);
+      expect(names,character.hanzi).toHaveLength(character.strokeCount);
+      expect(names.every((name) => Boolean(name?.hanzi && name.pinyin)),character.hanzi).toBe(true);
+    }
   });
 
   it('valida datos y disponibilidad para todo el inventario de la lección', () => {
@@ -68,7 +77,7 @@ describe('laboratorio Hanzi', () => {
 
   it('distingue introducción y repaso sin crear copias por unidad', () => {
     expect(Object.keys(hanziSourceGroups)).toEqual(['1.1','1.2','2.1','2.2','3.1','3.2']);
-    const particle = lesson1Characters.find((item) => item.hanzi === '么')!;
+    const particle = allCurriculumCharacters.find((item) => item.hanzi === '么')!;
     expect(particle.introducedIn).toBe('1.1');
     expect(particle.appearsIn).toEqual(['1.1','1.2']);
     expect(particle.words?.map((word) => word.hanzi)).toEqual(expect.arrayContaining(['什么', '怎么样']));
@@ -82,6 +91,15 @@ describe('laboratorio Hanzi', () => {
     expect(canonicalCharacters.find((item) => item.hanzi === '平')).toMatchObject({ introducedIn:'3.2',pinyin:'píng' });
     expect(canonicalCharacters.some((item) => item.hanzi === '萍')).toBe(false);
     expect(canonicalCharacters.every((item) => item.sources?.length && item.appearsIn.includes(item.introducedIn))).toBe(true);
+  });
+
+  it('deriva Aparece en del corpus léxico y no de una segunda lista manual', () => {
+    const particle = allCurriculumCharacters.find((item) => item.hanzi === '么')!;
+    expect(particle.words?.map((word) => word.hanzi)).toEqual(expect.arrayContaining(['什么','怎么样']));
+    for (const hanzi of ['照','片']) {
+      expect(allCurriculumCharacters.find((item) => item.hanzi === hanzi)?.words?.map((word) => word.hanzi)).toContain('照片');
+    }
+    expect(allCurriculumCharacters.find((item) => item.hanzi === '张')?.words?.map((word) => word.hanzi)).toContain('这张照片真漂亮');
   });
 
   it('marca las extensiones docentes auditadas y las lecturas polisémicas del corpus', () => {
