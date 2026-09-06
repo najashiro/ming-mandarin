@@ -20,7 +20,7 @@
       "shortTitle": "Texto 2",
       "chinese": "你最近怎么样？",
       "description": "Estado personal, presencia, cortesía y negación.",
-      "core": "你在吗请进坐谢最近怎么样很好我忙呢不太他",
+      "core": "你在吗请问进坐谢最近怎么样很好我忙呢不太他也",
       "teacherExtension": "困渴饿累",
       "support": ""
     },
@@ -32,7 +32,7 @@
       "shortTitle": "Texto 1",
       "chinese": "你是哪国人？",
       "description": "Presentaciones, nacionalidad, países y lenguas.",
-      "core": "陈老师你们早上好这是谁我朋友他刚到北京您贵姓哪国人学习汉语再见美",
+      "core": "陈老师你们早上好这那是谁我朋友他刚到北京您贵姓哪国人学生学习汉语再见美",
       "teacherExtension": "中国秘鲁英国德国法国日本西班牙加拿大墨西哥澳大利亚会说俄韩",
       "support": ""
     },
@@ -44,7 +44,7 @@
       "shortTitle": "Texto 2",
       "chinese": "你喜欢吃什么？",
       "description": "Comida, preferencias, bebidas y elección.",
-      "core": "点心好吃爸爸上海喜欢米饭妈妈北京面条饺子包大小看那都要和王云",
+      "core": "点心好吃爸爸上海喜欢米饭妈妈北京面条饺子包大小看这那都要和王云",
       "teacherExtension": "喝水茶咖啡可乐牛奶饮料果汁",
       "support": ""
     },

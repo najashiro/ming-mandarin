@@ -19,10 +19,10 @@ Este documento describe la arquitectura editorial interna. La interfaz del alumn
 | Unidad | Texto | Hanzi visibles | Hanzi introducidos |
 | --- | --- | ---: | ---: |
 | 1.1 | Lección 1 · Texto 1 | 40 | 40 |
-| 1.2 | Lección 1 · Texto 2 | 24 | 18 |
-| 2.1 | Lección 2 · Texto 1 | 55 | 43 |
-| 2.2 | Lección 2 · Texto 2 | 41 | 36 |
-| 3.1 | Lección 3 · Texto 1 | 36 | 30 |
+| 1.2 | Lección 1 · Texto 2 | 26 | 18 |
+| 2.1 | Lección 2 · Texto 1 | 57 | 45 |
+| 2.2 | Lección 2 · Texto 2 | 42 | 35 |
+| 3.1 | Lección 3 · Texto 1 | 36 | 29 |
 | 3.2 | Lección 3 · Texto 2 | 39 | 25 |
 
 El total canónico es 192. “Visibles” incluye repaso; “introducidos” cuenta solo `introducedIn`. El panel protegido `/admin/content` genera la tabla interna completa con carácter, pinyin, significado, primera unidad, reapariciones, rol y fuente.

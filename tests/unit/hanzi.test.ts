@@ -54,8 +54,8 @@ describe('laboratorio Hanzi', () => {
     expect(new Set(canonicalCharacters.map((item) => item.hanzi)).size).toBe(192);
     expect(new Set(canonicalCharacters.map((item) => item.id)).size).toBe(192);
     expect(hanziUnits.map((unit) => unit.id)).toEqual(['1.1','1.2','2.1','2.2','3.1','3.2']);
-    expect(hanziUnits.map((unit) => unit.characters.length)).toEqual([40,24,55,41,36,39]);
-    expect(hanziUnits.map((unit) => canonicalCharacters.filter((item) => item.introducedIn === unit.id).length)).toEqual([40,18,43,36,30,25]);
+    expect(hanziUnits.map((unit) => unit.characters.length)).toEqual([40,26,57,42,36,39]);
+    expect(hanziUnits.map((unit) => canonicalCharacters.filter((item) => item.introducedIn === unit.id).length)).toEqual([40,18,45,35,29,25]);
     expect(canonicalCharacters.every((item) => item.writingRequired && item.id === `c-${item.hanzi}`)).toBe(true);
   });
 
@@ -72,6 +72,11 @@ describe('laboratorio Hanzi', () => {
     expect(particle.introducedIn).toBe('1.1');
     expect(particle.appearsIn).toEqual(['1.1','1.2']);
     expect(particle.words?.map((word) => word.hanzi)).toEqual(expect.arrayContaining(['什么', '怎么样']));
+    expect(canonicalCharacters.find((item) => item.hanzi === '问')?.appearsIn).toEqual(['1.1','1.2']);
+    expect(canonicalCharacters.find((item) => item.hanzi === '也')?.appearsIn).toEqual(['1.1','1.2']);
+    expect(canonicalCharacters.find((item) => item.hanzi === '这')?.appearsIn).toEqual(['2.1','2.2']);
+    expect(canonicalCharacters.find((item) => item.hanzi === '那')).toMatchObject({ introducedIn:'2.1',appearsIn:['2.1','2.2'] });
+    expect(canonicalCharacters.find((item) => item.hanzi === '生')).toMatchObject({ introducedIn:'2.1',appearsIn:['2.1','3.1'] });
     expect(canonicalCharacters.find((item) => item.hanzi === '谁')).toMatchObject({ id:'c-谁',introducedIn:'2.1',appearsIn:['2.1','3.1'] });
     expect(canonicalCharacters.find((item) => item.hanzi === '张')).toMatchObject({ id:'c-张',introducedIn:'3.1',appearsIn:['3.1','3.2'],sourceRole:'core' });
     expect(canonicalCharacters.find((item) => item.hanzi === '平')).toMatchObject({ introducedIn:'3.2',pinyin:'píng' });

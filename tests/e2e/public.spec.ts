@@ -396,7 +396,7 @@ test('los filtros Hanzi siguen los seis textos curriculares y distinguen nuevo d
   await expect(stateFilters.getByRole('button', { name: 'Nuevos', exact: true })).toHaveCount(0);
   await expect(stateFilters.getByRole('button', { name: 'Aprendiendo', exact: true })).toHaveCount(0);
   const grid = page.locator('.hanzi-picker-grid > button');
-  for (const [stage, label, count] of [['1.1','1.1 Texto 1',40],['1.2','1.2 Texto 2',24],['2.1','2.1 Texto 1',55],['2.2','2.2 Texto 2',41],['3.1','3.1 Texto 1',36],['3.2','3.2 Texto 2',39]] as const) {
+  for (const [stage, label, count] of [['1.1','1.1 Texto 1',40],['1.2','1.2 Texto 2',26],['2.1','2.1 Texto 1',57],['2.2','2.2 Texto 2',42],['3.1','3.1 Texto 1',36],['3.2','3.2 Texto 2',39]] as const) {
     if (isMobile) await page.locator('.stage-filter-mobile select').selectOption(String(stage));
     else await page.getByRole('button', { name: label, exact: true }).click();
     await expect(grid).toHaveCount(count);

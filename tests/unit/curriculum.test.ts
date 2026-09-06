@@ -15,7 +15,7 @@ describe('arquitectura curricular L1–L3', () => {
   it('conserva el contenido histórico y amplía cada alcance con sus dos textos', () => {
     expect(getCurriculum('l1').vocabulary).toHaveLength(45);
     expect(getCurriculum('l1').characters).toHaveLength(58);
-    expect(getCurriculum('l2').characters).toHaveLength(91);
+    expect(getCurriculum('l2').characters).toHaveLength(92);
     expect(getCurriculum('l3').characters).toHaveLength(74);
     expect(getCurriculum('l2').sentences.length).toBeGreaterThanOrEqual(12);
     expect(getCurriculum('l3').grammar.length).toBeGreaterThanOrEqual(7);
