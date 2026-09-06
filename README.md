@@ -73,13 +73,13 @@ reiniciar intentos, dominio, SRS o errores previos.
 
 ## Laboratorio Hanzi
 
-La ruta histórica `/lesson/1/hanzi` conserva los 52 Hanzi de L1. Las rutas
-`/study/[scope]/hanzi` reutilizan el mismo laboratorio con los caracteres de L2,
-L3 y los alcances acumulativos. La interfaz los organiza
-en seis etapas pedagógicas (12 + 14 + 13 + 5 + 4 + 4) y permite combinar la
-etapa con estados derivados del progreso real: nuevos, aprendiendo, repasar y
-dominados. Las hojas 1.1–1.5 se conservan como trazabilidad editorial y filtros
-del panel administrativo, no como recorrido para el estudiante.
+La ruta histórica `/lesson/1/hanzi` abre el corpus canónico completo L1–L3. Las
+rutas `/study/[scope]/hanzi` reutilizan el mismo laboratorio para cada lección y
+los alcances acumulativos. La interfaz sigue las seis unidades reales del libro
+(`1.1`, `1.2`, `2.1`, `2.2`, `3.1`, `3.2`), donde cada número representa
+Lección + Texto. Un carácter tiene un único ID `c-<hanzi>` y puede reaparecer
+como repaso sin duplicar su progreso. Las fichas antiguas 1.1–1.5 se conservan
+solo como fuentes internas de trazabilidad.
 
 El laboratorio incluye cuatro pestañas reutilizables —Aprender, Componentes,
 Trazos y Practicar—, cuadrícula 米字格, animación con velocidad y pausa,

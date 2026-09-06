@@ -6,7 +6,7 @@ export const learningModules = [
   { number: 4, title: 'Estados', subtitle: 'Describe cómo estás', href: '/lesson/1/states', concepts: ['好', '忙', '困', '累'] },
   { number: 5, title: 'Gramática', subtitle: 'Construye con precisión', href: '/lesson/1/grammar', concepts: ['吗', '很', '不', '也'] },
   { number: 6, title: 'Diálogos', subtitle: 'Interpreta los textos', href: '/lesson/1/dialogues', concepts: ['课文一', '课文二'] },
-  { number: 7, title: 'Hanzi', subtitle: 'Seis etapas de escritura', href: '/lesson/1/hanzi', concepts: ['52 Hanzi', '笔顺', '复习'] },
+  { number: 7, title: 'Hanzi', subtitle: 'Ruta por Lección y Texto', href: '/lesson/1/hanzi', concepts: ['1.1–3.2', '笔顺', '复习'] },
   { number: 8, title: 'Comprensión', subtitle: 'Escucha y lee', href: '/lesson/1/listening', concepts: ['Listening', 'Reading'] },
   { number: 9, title: 'Producción', subtitle: 'Responde sin opciones', href: '/lesson/1/reading', concepts: ['Preguntas', 'Respuestas'] },
   { number: 10, title: 'Repaso maestro', subtitle: 'Práctica adaptativa', href: '/lesson/1/daily', concepts: ['SRS', 'Interleaving'] },

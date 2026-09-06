@@ -59,15 +59,25 @@ export type CharacterEntry = {
   sources?: SourceRef[];
   sourceGroups?: HanziSourceCode[];
   primaryStage?: HanziStageId;
+  introducedIn: HanziUnitId;
+  appearsIn: HanziUnitId[];
+  sourceRole: HanziSourceRole;
+  curricularOrder: number;
   curricular?: boolean;
   radicalAudited?: boolean;
   componentsAudited?: boolean;
   words?: CharacterWord[];
 };
 
-export type HanziStageId = 1 | 2 | 3 | 4 | 5 | 6;
+export type HanziUnitId = '1.1' | '1.2' | '2.1' | '2.2' | '3.1' | '3.2';
 
-export type HanziSourceCode = 'hanzi-1.1' | 'hanzi-1.2' | 'hanzi-1.3' | 'hanzi-1.4' | 'hanzi-1.5';
+// Alias temporal para consumidores internos durante la migración. Ya no representa
+// una etapa arbitraria: siempre contiene el identificador real Texto 1 / Texto 2.
+export type HanziStageId = HanziUnitId;
+
+export type HanziSourceRole = 'core' | 'teacherExtension' | 'support';
+
+export type HanziSourceCode = HanziUnitId;
 
 export type CharacterWord = {
   hanzi: string;
@@ -75,6 +85,17 @@ export type CharacterWord = {
   translation: string;
   stage: HanziStageId;
   href?: string;
+};
+
+export type HanziUnitDefinition = {
+  id: HanziUnitId;
+  lesson: LessonNumber;
+  text: 1 | 2;
+  title: string;
+  shortTitle: string;
+  chinese: string;
+  description: string;
+  characters: string[];
 };
 
 export type Exercise = {
@@ -93,6 +114,7 @@ export type Exercise = {
 
 export type LessonNumber = 1 | 2 | 3;
 export type CurriculumScope = 'l1' | 'l2' | 'l3' | 'l1-l2' | 'l1-l2-l3';
+export type HanziAssessmentScope = CurriculumScope | HanziUnitId;
 
 export type ListeningEntry = {
   id: string;

@@ -5,15 +5,18 @@ import pronunciation from '@/data/pronunciation.json';
 import hanziManifest from '@/public/hanzi-data/manifest.json';
 import { curriculumScopes, getCurriculum } from '@/seed/curriculum';
 import { examQuestionsForScope } from '@/seed/exam';
+import { charactersForUnits, hanziUnitIds } from '@/seed/characters';
 import { normalizeAnswer } from '@/lib/pinyin';
 
 const normalize = (value: string) => value.normalize('NFC').replace(/[^\u3400-\u9fff]/g, '');
 const audioTexts = new Set([...pronunciation.clips, ...manifest.clips].map((clip) => normalize(clip.input)));
 
 describe('arquitectura curricular L1–L3', () => {
-  it('conserva el corpus histórico de L1 y separa cada alcance', () => {
+  it('conserva el contenido histórico y amplía cada alcance con sus dos textos', () => {
     expect(getCurriculum('l1').vocabulary).toHaveLength(45);
-    expect(getCurriculum('l1').characters).toHaveLength(52);
+    expect(getCurriculum('l1').characters).toHaveLength(58);
+    expect(getCurriculum('l2').characters).toHaveLength(91);
+    expect(getCurriculum('l3').characters).toHaveLength(74);
     expect(getCurriculum('l2').sentences.length).toBeGreaterThanOrEqual(12);
     expect(getCurriculum('l3').grammar.length).toBeGreaterThanOrEqual(7);
   });
@@ -38,8 +41,27 @@ describe('arquitectura curricular L1–L3', () => {
     expect(data.characters.filter((item) => !(item.hanzi in hanziManifest))).toEqual([]);
   });
 
+  it('cada audio Hanzi conserva la lectura auditada del registro canónico', () => {
+    const clipsByCharacter = new Map<string,Array<{input:string;expectedPinyin:string}>>();
+    for (const clip of [...manifest.clips,...pronunciation.clips]) {
+      const key = normalize(clip.input);
+      clipsByCharacter.set(key,[...(clipsByCharacter.get(key)??[]),clip]);
+    }
+    for (const character of getCurriculum('l1-l2-l3').characters) {
+      expect(clipsByCharacter.get(character.hanzi)?.some((clip) => clip.expectedPinyin.toLocaleLowerCase('es') === character.pinyin.toLocaleLowerCase('es')),character.hanzi).toBe(true);
+    }
+  });
+
   it('no contiene fallback curricular speechSynthesis', () => {
     expect(readFileSync('components/SpeakButton.tsx', 'utf8')).not.toContain('speechSynthesis');
+  });
+
+  it.each(hanziUnitIds)('%s genera un examen Hanzi deduplicado del Texto seleccionado', (unit) => {
+    const questions = examQuestionsForScope('unit-audit',unit);
+    const allowed = new Set(charactersForUnits([unit]).map((item) => item.hanzi));
+    expect(questions).toHaveLength(20);
+    expect(questions.reduce((sum,item) => sum+item.points,0)).toBe(100);
+    expect(questions.filter((item) => item.audioText && !allowed.has(item.audioText))).toEqual([]);
   });
 
   it.each(['l1', 'l2', 'l3'] as const)('%s entrega todo el pinyin normalizado en NFC', (scope) => {
@@ -61,9 +83,9 @@ describe('arquitectura curricular L1–L3', () => {
 
   it('conserva los significados curriculares de las microtarjetas L2', () => {
     const characters = getCurriculum('l2').characters;
-    expect(characters.find((character) => character.hanzi === '早')?.meaning).toBe('temprano');
-    expect(characters.find((character) => character.hanzi === '上')?.meaning).toBe('arriba; mañana');
-    expect(characters.find((character) => character.hanzi === '朋')?.meaning).toBe('amigo (en 朋友)');
+    expect(characters.find((character) => character.hanzi === '早')?.meaning).toBe('temprano; mañana');
+    expect(characters.find((character) => character.hanzi === '上')?.meaning).toBe('arriba; en la mañana');
+    expect(characters.find((character) => character.hanzi === '朋')?.meaning).toBe('amigo; en 朋友');
     expect(characters.find((character) => character.hanzi === '友')?.meaning).toBe('amigo');
   });
 

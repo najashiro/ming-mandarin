@@ -2159,6 +2159,406 @@
       "expectedPinyin": "mèi",
       "lessonId": 3,
       "instructions": "Pronuncia el carácter 妹 una sola vez, con la lectura auditada mèi."
+    },
+    {
+      "id": "l2-h-c7acd3b00e",
+      "file": "l2-h-c7acd3b00e.mp3",
+      "input": "英",
+      "expectedPinyin": "yīng",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 英 una sola vez, con la lectura auditada yīng."
+    },
+    {
+      "id": "l2-h-69b5356d4f",
+      "file": "l2-h-69b5356d4f.mp3",
+      "input": "德",
+      "expectedPinyin": "dé",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 德 una sola vez, con la lectura auditada dé."
+    },
+    {
+      "id": "l2-h-67be11d8f0",
+      "file": "l2-h-67be11d8f0.mp3",
+      "input": "法",
+      "expectedPinyin": "fǎ",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 法 una sola vez, con la lectura auditada fǎ."
+    },
+    {
+      "id": "l2-h-15917f3b32",
+      "file": "l2-h-15917f3b32.mp3",
+      "input": "日",
+      "expectedPinyin": "rì",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 日 una sola vez, con la lectura auditada rì."
+    },
+    {
+      "id": "l2-h-d3cc0cab9c",
+      "file": "l2-h-d3cc0cab9c.mp3",
+      "input": "本",
+      "expectedPinyin": "běn",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 本 una sola vez, con la lectura auditada běn."
+    },
+    {
+      "id": "l2-h-2f64b5a67e",
+      "file": "l2-h-2f64b5a67e.mp3",
+      "input": "西",
+      "expectedPinyin": "xī",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 西 una sola vez, con la lectura auditada xī."
+    },
+    {
+      "id": "l2-h-1f7fea733e",
+      "file": "l2-h-1f7fea733e.mp3",
+      "input": "班",
+      "expectedPinyin": "bān",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 班 una sola vez, con la lectura auditada bān."
+    },
+    {
+      "id": "l2-h-87d892e099",
+      "file": "l2-h-87d892e099.mp3",
+      "input": "牙",
+      "expectedPinyin": "yá",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 牙 una sola vez, con la lectura auditada yá."
+    },
+    {
+      "id": "l2-h-a3c0639a09",
+      "file": "l2-h-a3c0639a09.mp3",
+      "input": "加",
+      "expectedPinyin": "jiā",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 加 una sola vez, con la lectura auditada jiā."
+    },
+    {
+      "id": "l2-h-748adc7ea1",
+      "file": "l2-h-748adc7ea1.mp3",
+      "input": "拿",
+      "expectedPinyin": "ná",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 拿 una sola vez, con la lectura auditada ná."
+    },
+    {
+      "id": "l2-h-e81f8bad67",
+      "file": "l2-h-e81f8bad67.mp3",
+      "input": "墨",
+      "expectedPinyin": "mò",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 墨 una sola vez, con la lectura auditada mò."
+    },
+    {
+      "id": "l2-h-0aafa2dc26",
+      "file": "l2-h-0aafa2dc26.mp3",
+      "input": "澳",
+      "expectedPinyin": "ào",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 澳 una sola vez, con la lectura auditada ào."
+    },
+    {
+      "id": "l2-h-1a1001e5f3",
+      "file": "l2-h-1a1001e5f3.mp3",
+      "input": "利",
+      "expectedPinyin": "lì",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 利 una sola vez, con la lectura auditada lì."
+    },
+    {
+      "id": "l2-h-3275594afd",
+      "file": "l2-h-3275594afd.mp3",
+      "input": "亚",
+      "expectedPinyin": "yà",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 亚 una sola vez, con la lectura auditada yà."
+    },
+    {
+      "id": "l2-h-9e71f0ccfa",
+      "file": "l2-h-9e71f0ccfa.mp3",
+      "input": "俄",
+      "expectedPinyin": "é",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 俄 una sola vez, con la lectura auditada é."
+    },
+    {
+      "id": "l2-h-2a4e9b964e",
+      "file": "l2-h-2a4e9b964e.mp3",
+      "input": "韩",
+      "expectedPinyin": "hán",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 韩 una sola vez, con la lectura auditada hán."
+    },
+    {
+      "id": "l2-h-b188c5e30d",
+      "file": "l2-h-b188c5e30d.mp3",
+      "input": "海",
+      "expectedPinyin": "hǎi",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 海 una sola vez, con la lectura auditada hǎi."
+    },
+    {
+      "id": "l2-h-c7b16c7c46",
+      "file": "l2-h-c7b16c7c46.mp3",
+      "input": "王",
+      "expectedPinyin": "wáng",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 王 una sola vez, con la lectura auditada wáng."
+    },
+    {
+      "id": "l2-h-2ea617b5cf",
+      "file": "l2-h-2ea617b5cf.mp3",
+      "input": "云",
+      "expectedPinyin": "yún",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 云 una sola vez, con la lectura auditada yún."
+    },
+    {
+      "id": "l2-h-bf9b3e9c32",
+      "file": "l2-h-bf9b3e9c32.mp3",
+      "input": "牛",
+      "expectedPinyin": "niú",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 牛 una sola vez, con la lectura auditada niú."
+    },
+    {
+      "id": "l2-h-d449dfee7f",
+      "file": "l2-h-d449dfee7f.mp3",
+      "input": "奶",
+      "expectedPinyin": "nǎi",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 奶 una sola vez, con la lectura auditada nǎi."
+    },
+    {
+      "id": "l2-h-db112229d5",
+      "file": "l2-h-db112229d5.mp3",
+      "input": "饮",
+      "expectedPinyin": "yǐn",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 饮 una sola vez, con la lectura auditada yǐn."
+    },
+    {
+      "id": "l2-h-49efc042ad",
+      "file": "l2-h-49efc042ad.mp3",
+      "input": "料",
+      "expectedPinyin": "liào",
+      "lessonId": 2,
+      "instructions": "Pronuncia el carácter 料 una sola vez, con la lectura auditada liào."
+    },
+    {
+      "id": "l3-h-48d8344774",
+      "file": "l3-h-48d8344774.mp3",
+      "input": "贝",
+      "expectedPinyin": "bèi",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 贝 una sola vez, con la lectura auditada bèi."
+    },
+    {
+      "id": "l3-h-7bedcf1b9c",
+      "file": "l3-h-7bedcf1b9c.mp3",
+      "input": "爷",
+      "expectedPinyin": "yé",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 爷 una sola vez, con la lectura auditada yé."
+    },
+    {
+      "id": "l3-h-0e0faa1d83",
+      "file": "l3-h-0e0faa1d83.mp3",
+      "input": "外",
+      "expectedPinyin": "wài",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 外 una sola vez, con la lectura auditada wài."
+    },
+    {
+      "id": "l3-h-2eb8ebf6c3",
+      "file": "l3-h-2eb8ebf6c3.mp3",
+      "input": "公",
+      "expectedPinyin": "gōng",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 公 una sola vez, con la lectura auditada gōng."
+    },
+    {
+      "id": "l3-h-3350da940d",
+      "file": "l3-h-3350da940d.mp3",
+      "input": "婆",
+      "expectedPinyin": "pó",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 婆 una sola vez, con la lectura auditada pó."
+    },
+    {
+      "id": "l3-h-738757461a",
+      "file": "l3-h-738757461a.mp3",
+      "input": "姥",
+      "expectedPinyin": "lǎo",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 姥 una sola vez, con la lectura auditada lǎo."
+    },
+    {
+      "id": "l3-h-e10bd9f09b",
+      "file": "l3-h-e10bd9f09b.mp3",
+      "input": "猫",
+      "expectedPinyin": "māo",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 猫 una sola vez, con la lectura auditada māo."
+    },
+    {
+      "id": "l3-h-462f338ef8",
+      "file": "l3-h-462f338ef8.mp3",
+      "input": "只",
+      "expectedPinyin": "zhī",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 只 una sola vez, con la lectura auditada zhī."
+    },
+    {
+      "id": "l3-h-dc06011563",
+      "file": "l3-h-dc06011563.mp3",
+      "input": "漂",
+      "expectedPinyin": "piào",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 漂 una sola vez, con la lectura auditada piào."
+    },
+    {
+      "id": "l3-h-caf3447b27",
+      "file": "l3-h-caf3447b27.mp3",
+      "input": "亮",
+      "expectedPinyin": "liàng",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 亮 una sola vez, con la lectura auditada liàng."
+    },
+    {
+      "id": "l3-h-26bc84961c",
+      "file": "l3-h-26bc84961c.mp3",
+      "input": "女",
+      "expectedPinyin": "nǚ",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 女 una sola vez, con la lectura auditada nǚ."
+    },
+    {
+      "id": "l3-h-06af8ec0f4",
+      "file": "l3-h-06af8ec0f4.mp3",
+      "input": "儿",
+      "expectedPinyin": "ér",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 儿 una sola vez, con la lectura auditada ér."
+    },
+    {
+      "id": "l3-h-d2130d70a0",
+      "file": "l3-h-d2130d70a0.mp3",
+      "input": "今",
+      "expectedPinyin": "jīn",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 今 una sola vez, con la lectura auditada jīn."
+    },
+    {
+      "id": "l3-h-67ea6cdf0c",
+      "file": "l3-h-67ea6cdf0c.mp3",
+      "input": "钢",
+      "expectedPinyin": "gāng",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 钢 una sola vez, con la lectura auditada gāng."
+    },
+    {
+      "id": "l3-h-aef8cdec9f",
+      "file": "l3-h-aef8cdec9f.mp3",
+      "input": "琴",
+      "expectedPinyin": "qín",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 琴 una sola vez, con la lectura auditada qín."
+    },
+    {
+      "id": "l3-h-5ac69ad696",
+      "file": "l3-h-5ac69ad696.mp3",
+      "input": "孩",
+      "expectedPinyin": "hái",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 孩 una sola vez, con la lectura auditada hái."
+    },
+    {
+      "id": "l3-h-87644e683b",
+      "file": "l3-h-87644e683b.mp3",
+      "input": "陆",
+      "expectedPinyin": "lù",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 陆 una sola vez, con la lectura auditada lù."
+    },
+    {
+      "id": "l3-h-8995b89799",
+      "file": "l3-h-8995b89799.mp3",
+      "input": "雨",
+      "expectedPinyin": "yǔ",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 雨 una sola vez, con la lectura auditada yǔ."
+    },
+    {
+      "id": "l3-h-3c9abaf959",
+      "file": "l3-h-3c9abaf959.mp3",
+      "input": "平",
+      "expectedPinyin": "píng",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 平 una sola vez, con la lectura auditada píng."
+    },
+    {
+      "id": "l3-h-7b8ef4b58a",
+      "file": "l3-h-7b8ef4b58a.mp3",
+      "input": "爱",
+      "expectedPinyin": "ài",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 爱 una sola vez, con la lectura auditada ài."
+    },
+    {
+      "id": "l3-h-51625d909c",
+      "file": "l3-h-51625d909c.mp3",
+      "input": "男",
+      "expectedPinyin": "nán",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 男 una sola vez, con la lectura auditada nán."
+    },
+    {
+      "id": "l3-h-7bf4a20c82",
+      "file": "l3-h-7bf4a20c82.mp3",
+      "input": "帅",
+      "expectedPinyin": "shuài",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 帅 una sola vez, con la lectura auditada shuài."
+    },
+    {
+      "id": "l3-h-e463d156c0",
+      "file": "l3-h-e463d156c0.mp3",
+      "input": "餐",
+      "expectedPinyin": "cān",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 餐 una sola vez, con la lectura auditada cān."
+    },
+    {
+      "id": "l3-h-f54d73f7ab",
+      "file": "l3-h-f54d73f7ab.mp3",
+      "input": "厅",
+      "expectedPinyin": "tīng",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 厅 una sola vez, con la lectura auditada tīng."
+    },
+    {
+      "id": "l3-h-033fd274f0",
+      "file": "l3-h-033fd274f0.mp3",
+      "input": "去",
+      "expectedPinyin": "qù",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 去 una sola vez, con la lectura auditada qù."
+    },
+    {
+      "id": "l3-h-76aac2ff5f",
+      "file": "l3-h-76aac2ff5f.mp3",
+      "input": "找",
+      "expectedPinyin": "zhǎo",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 找 una sola vez, con la lectura auditada zhǎo."
+    },
+    {
+      "id": "l3-h-8dae9fd3c6",
+      "file": "l3-h-8dae9fd3c6.mp3",
+      "input": "弹",
+      "expectedPinyin": "tán",
+      "lessonId": 3,
+      "instructions": "Pronuncia el carácter 弹 una sola vez, con la lectura auditada tán."
     }
   ]
 }

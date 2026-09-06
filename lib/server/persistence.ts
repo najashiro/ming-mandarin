@@ -1,7 +1,7 @@
 import 'server-only';
 
 import type { AppUser } from '@/app/auth';
-import type { CurriculumScope, Exercise } from '@/data/types';
+import type { CurriculumScope, Exercise, HanziAssessmentScope } from '@/data/types';
 import { scoreExamAnswers, type AnswerMap } from '@/lib/exam-score';
 import { computeMasteryUpdate } from '@/lib/mastery';
 import { advanceHanziStudyExposure, isSuccessfulHanziAttempt } from '@/lib/hanzi/mastery';
@@ -12,6 +12,7 @@ import { supabaseRest } from '@/lib/supabase/rest';
 import { examQuestionsForScope } from '@/seed/exam';
 import { exercises } from '@/seed/exercises';
 import { allCurriculumCharacters, exerciseForId, getCurriculum, isCurriculumScope } from '@/seed/curriculum';
+import { isHanziUnitId } from '@/seed/characters';
 
 type ProfileRow = {
   id: string;
@@ -366,7 +367,7 @@ export async function updateProfile(user: AppUser, payload: { displayName: strin
   return { displayName: name, leaderboardOptIn: payload.leaderboardOptIn, timezone };
 }
 
-export async function startExam(user: AppUser, scope: CurriculumScope = 'l1') {
+export async function startExam(user: AppUser, scope: HanziAssessmentScope = 'l1') {
   await ensureProfile(user);
   const sessionId = crypto.randomUUID();
   const seed = crypto.randomUUID();
@@ -389,7 +390,7 @@ export async function submitExam(user: AppUser, payload: { sessionId: string; an
   const session = sessions[0];
   if (!session || session.status !== 'active') throw new Error('La sesión de examen no es válida o ya fue enviada.');
 
-  const scope: CurriculumScope = isCurriculumScope(session.lesson_id) ? session.lesson_id : 'l1';
+  const scope: HanziAssessmentScope = isCurriculumScope(session.lesson_id) || isHanziUnitId(session.lesson_id) ? session.lesson_id : 'l1';
   const { sectionScores, review, score } = scoreExamAnswers(payload.answers, examQuestionsForScope(session.seed, scope));
   const now = new Date();
   const durationSeconds = Math.max(1, Math.round((now.getTime() - new Date(session.started_at).getTime()) / 1000));

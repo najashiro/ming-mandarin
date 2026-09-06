@@ -7,12 +7,13 @@ const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const source = await readFile(join(root, 'seed', 'curriculum.ts'), 'utf8');
 const lesson1VocabularySource = await readFile(join(root, 'seed', 'vocabulary.ts'), 'utf8');
 const lesson1SentenceSource = await readFile(join(root, 'seed', 'sentences.ts'), 'utf8');
+const characterSource = await readFile(join(root, 'seed', 'characters.ts'), 'utf8');
+const hanziCurriculum = JSON.parse(await readFile(join(root, 'data', 'lesson1-hanzi.json'), 'utf8'));
 const manifestPath = join(root, 'data', 'mandarin-audio.json');
 const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
 const pronunciation = JSON.parse(await readFile(join(root, 'data', 'pronunciation.json'), 'utf8'));
 const normalize = (value) => value.normalize('NFC').replace(/[^\u3400-\u9fff]/g, '');
-// L2/L3 se regeneran desde la fuente tipada; L1 conserva sus IDs históricos.
-manifest.clips = manifest.clips.filter((clip) => clip.lessonId === 1 && !/^l1-[vs]-[a-f0-9]{10}$/.test(clip.id));
+// Los clips publicados se conservan para no invalidar URLs ya desplegadas.
 const known = new Set(manifest.clips.map((clip) => normalize(clip.input)));
 for (const clip of pronunciation.clips) known.add(normalize(clip.input));
 const candidates = [];
@@ -47,8 +48,18 @@ for (const lessonId of [2, 3]) {
   for (const match of vocabularyBlock.matchAll(/\['([^']+)','([^']+)'/g)) add(match[1], match[2], lessonId, 'v');
   const sentenceBlock = block(`export const lesson${lessonId}Sentences`, lessonId === 2 ? 'export const lesson3Sentences' : 'const grammar =');
   for (const match of sentenceBlock.matchAll(new RegExp(`sentence\\(${lessonId},'[^']+','([^']+)','([^']+)'`, 'g'))) add(match[1], match[2], lessonId, 's');
-  const charactersBlock = block(`const l${lessonId}CharacterMeta`, lessonId === 2 ? 'const l3CharacterMeta' : 'const makeStages');
-  for (const match of charactersBlock.matchAll(/\['([^']+)','([^']+)'/g)) add(match[1], match[2], lessonId, 'h');
+}
+
+const characterPinyin = new Map([...characterSource.matchAll(/([\u3400-\u9fff]):\['([^']+)','/gu)].map((match) => [match[1], match[2]]));
+const seenCharacters = new Set();
+for (const unit of hanziCurriculum.units) {
+  for (const character of [...unit.core, ...unit.teacherExtension, ...unit.support]) {
+    if (seenCharacters.has(character)) continue;
+    seenCharacters.add(character);
+    const pinyin = characterPinyin.get(character);
+    if (!pinyin) throw new Error(`Falta pinyin canónico para el audio de ${character}.`);
+    add(character, pinyin, Number(unit.id[0]), 'h');
+  }
 }
 
 manifest.clips.push(...candidates);

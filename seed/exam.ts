@@ -58,8 +58,26 @@ export function examQuestionsForSeed(seed: string): ExamQuestion[] {
   return [...coreExamBank, hanziQuestions4[seedIndex(seed, 'hanzi-4', hanziQuestions4.length)], hanziQuestions6[seedIndex(seed, 'hanzi-6', hanziQuestions6.length)]];
 }
 
-export function examQuestionsForScope(seed: string, scope: CurriculumScope = 'l1'): ExamQuestion[] {
-  if (scope === 'l1') return examQuestionsForSeed(seed);
+function unitExamQuestions(seed: string, scope: HanziUnitId): ExamQuestion[] {
+  const characters = charactersForUnits([scope]);
+  const character = (index: number) => characters[seedIndex(seed, `unit-character-${index}`, characters.length)];
+  const meaningOptions = (index: number) => {
+    const start = seedIndex(seed, `unit-distractor-${index}`, characters.length);
+    return [character(index).meaning.split(';')[0], ...[1,5,11].map((offset) => characters[(start + offset) % characters.length].meaning.split(';')[0])];
+  };
+  return Array.from({length:20},(_,index) => {
+    const current = character(index);
+    const section = (['listening','pinyin','vocabulary','hanzi'] as ExamSection[])[index % 4];
+    const id = `e-${scope}-${index + 1}`;
+    if (section === 'listening') return {id,section,points:5,prompt:'Escucha el Hanzi y elige su significado.',options:meaningOptions(index),answer:current.meaning.split(';')[0],audioText:current.hanzi};
+    if (section === 'pinyin') return {id,section,points:5,prompt:`Escribe el pinyin con tono de ${current.hanzi}.`,answer:current.pinyin};
+    if (section === 'vocabulary') return {id,section,points:5,prompt:`¿Qué significa ${current.hanzi}?`,options:meaningOptions(index),answer:current.meaning.split(';')[0]};
+    return {id,section,points:5,prompt:`¿Cuántos trazos tiene ${current.hanzi}?`,options:Array.from(new Set([current.strokeCount,current.strokeCount+1,Math.max(1,current.strokeCount-1),current.strokeCount+2])).map(String),answer:String(current.strokeCount)};
+  });
+}
+
+export function examQuestionsForScope(seed: string, scope: HanziAssessmentScope = 'l1'): ExamQuestion[] {
+  if (isHanziUnitId(scope)) return unitExamQuestions(seed,scope);
   const { vocabulary, sentences, grammar, characters } = getCurriculum(scope);
   const word = (index: number) => vocabulary[seedIndex(seed, `word-${index}`, vocabulary.length)];
   const phrase = (index: number) => sentences[seedIndex(seed, `sentence-${index}`, sentences.length)];
@@ -89,5 +107,6 @@ export function examQuestionsForScope(seed: string, scope: CurriculumScope = 'l1
 export const examBank = examQuestionsForSeed('lesson-1-default');
 
 export const examTotal = examBank.reduce((total, question) => total + question.points, 0);
-import type { CurriculumScope } from '@/data/types';
+import type { HanziAssessmentScope, HanziUnitId } from '@/data/types';
 import { getCurriculum } from '@/seed/curriculum';
+import { charactersForUnits, isHanziUnitId } from '@/seed/characters';

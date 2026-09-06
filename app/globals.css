@@ -348,6 +348,11 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .stage-filter-desktop button, .state-filter button, .hanzi-filter-empty button { min-height: 38px; padding: 7px 10px; border: 1px solid var(--line); border-radius: 7px; color: var(--jade); background: #fff; font: 750 9px system-ui; cursor: pointer; }
 .stage-filter-desktop button.selected, .state-filter button.selected { border-color: var(--jade); color: white; background: var(--jade); }
 .stage-filter-mobile { display: none; }
+.hanzi-unit-nav { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 7px; }
+.hanzi-unit-nav a { min-height: 40px; padding: 7px 12px; display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); border-radius: 8px; color: var(--jade); background: rgba(255,255,255,.82); font: 750 10px system-ui; }
+.hanzi-unit-nav a small { color: var(--muted); font-size: 8px; }
+.hanzi-unit-nav a.selected { border-color: var(--jade); color: white; background: var(--jade); }
+.hanzi-unit-nav a.selected small { color: #d7eee7; }
 .hanzi-picker-grid { margin-top: 15px; display: grid; grid-template-columns: repeat(12,minmax(48px,1fr)); gap: 7px; }
 .hanzi-picker-grid button { min-height: 82px; padding: 7px 4px; grid-template-rows: minmax(28px,auto) auto minmax(22px,auto); align-content: center; }
 .hanzi-picker-grid button small { color: var(--jade); font-size: 10px; }
@@ -355,6 +360,8 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .hanzi-picker-grid button.state-learning { background: var(--hanzi-learning-bg); }
 .hanzi-picker-grid button.state-review { background: var(--hanzi-review-bg); }
 .hanzi-picker-grid button.state-mastered { background: var(--hanzi-mastered-bg); }
+.hanzi-picker-grid button.curricular-new:not(.selected) { border-color: rgba(162,58,44,.34); box-shadow: inset 0 0 0 1px rgba(162,58,44,.12); }
+.hanzi-picker-grid button.curricular-review:not(.selected) { filter: saturate(.72); }
 .hanzi-picker-grid button:not(.selected):hover { border-color: rgba(29,106,89,.34); }
 .hanzi-picker-grid button em { width: 100%; min-height: 2.35em; display: -webkit-box; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; color: var(--ink); font: normal 550 9px/1.18 system-ui; text-align: center; overflow-wrap: anywhere; }
 .hanzi-picker-grid button.selected { border-color: var(--jade); color: white; background: var(--jade); }

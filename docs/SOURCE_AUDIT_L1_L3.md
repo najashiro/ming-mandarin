@@ -24,3 +24,13 @@ Inventario verificado localmente el 2 de septiembre de 2026. Los 18 PDF suman ap
 | `Libro de Ejercicios Basico 1 - Lección 1 -2.pdf` | 18 | Ejercicios L1/L2 |
 
 La revisión combinó extracción textual de presentaciones/hojas Hanzi y renderizado visual completo de los libros y cuadernos escaneados. Se corrigieron los nombres reales de archivo y se mantuvo la lectura pedagógica registrada para cada carácter potencialmente ambiguo.
+
+## Resolución curricular Texto 1 / Texto 2
+
+- Las fichas antiguas `Hanzi 1.4` alimentan principalmente 1.1; `Hanzi 1.3`, principalmente 1.2. `Hanzi 1.5` es repaso y no crea unidad.
+- Saludos, momentos del día y números tempranos quedan como `support` de 1.1.
+- Estados personales (`困渴饿累`), países/idiomas ampliados, bebidas y familia ampliada quedan como `teacherExtension` cuando la presentación muestra enseñanza explícita.
+- `谁` se introduce realmente en 2.1 (`这是谁？`) y reaparece en 3.1.
+- El libro impreso confirma el nombre `陆雨平`; se usa `平`, no el `萍` del listado preliminar.
+- `弹` se incorpora como extensión explícita de 3.2 por la actividad `谁喜欢弹钢琴?`.
+- `昨、明、前、后、多、地、图、世、界` no aparecen como objetivos didácticos explícitos en las diapositivas auditadas y no se convirtieron en Hanzi obligatorios.

@@ -2,6 +2,7 @@ import type { CharacterEntry, HanziStageId } from '@/data/types';
 import type { HanziLearningState, HanziLocalProgress, HanziProgressEntry, HanziProgressMap, HanziSkillDimension } from './types';
 
 export const HANZI_MASTERY_THRESHOLD = 80;
+const curricularOrder: HanziStageId[] = ['1.1','1.2','2.1','2.2','3.1','3.2'];
 const WEAK_DIMENSION_THRESHOLD = 50;
 const LOW_STABILITY_THRESHOLD = 1;
 const dimensions: HanziSkillDimension[] = ['recognition', 'stroke_order', 'writing'];
@@ -46,8 +47,8 @@ export function hanziMasteryAverage(progress?: HanziProgressEntry) {
 }
 
 export function summarizeHanziStages(characters: CharacterEntry[], progress: HanziProgressMap, local: LocalHanziProgressMap = {}) {
-  return [1, 2, 3, 4, 5, 6].map((stage) => {
-    const members = characters.filter((character) => character.primaryStage === stage);
+  return curricularOrder.map((stage) => {
+    const members = characters.filter((character) => character.introducedIn === stage);
     return {
       stage: stage as HanziStageId,
       total: members.length,
@@ -59,17 +60,17 @@ export function summarizeHanziStages(characters: CharacterEntry[], progress: Han
 
 export function recommendHanziCharacters(characters: CharacterEntry[], progress: HanziProgressMap, limit = 5, now = new Date()) {
   const states = new Map(characters.map((character) => [character.id, classifyHanziLearningState(character.id, progress[character.id], {}, now)]));
-  const currentStage = ([1, 2, 3, 4, 5, 6] as HanziStageId[]).find((stage) => characters
-    .filter((character) => character.primaryStage === stage)
-    .some((character) => states.get(character.id) !== 'mastered')) ?? 6;
+  const currentStage = curricularOrder.find((stage) => characters
+    .filter((character) => character.introducedIn === stage)
+    .some((character) => states.get(character.id) !== 'mastered')) ?? '3.2';
   const rank = (character: CharacterEntry) => {
     const state = states.get(character.id);
     const entry = progress[character.id];
     if (state === 'review') return (entry?.openErrors ? 0 : 1) + hanziMasteryAverage(entry) / 1000;
-    if (state === 'learning' && character.primaryStage === currentStage) return 10 + hanziMasteryAverage(entry) / 1000;
-    if (state === 'new' && character.primaryStage === currentStage) return 20;
-    if (state === 'new') return 30 + (character.primaryStage ?? 6);
-    if (state === 'learning') return 40 + (character.primaryStage ?? 6);
+    if (state === 'learning' && character.introducedIn === currentStage) return 10 + hanziMasteryAverage(entry) / 1000;
+    if (state === 'new' && character.introducedIn === currentStage) return 20;
+    if (state === 'new') return 30 + curricularOrder.indexOf(character.introducedIn);
+    if (state === 'learning') return 40 + curricularOrder.indexOf(character.introducedIn);
     return 50 + hanziMasteryAverage(entry) / 1000;
   };
   return [...characters].sort((left, right) => rank(left) - rank(right)).slice(0, limit);

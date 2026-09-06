@@ -6,7 +6,7 @@ import type { CharacterEntry, HanziStageId } from '@/data/types';
 import { strokeDirection } from '@/lib/hanzi/geometry';
 import { loadHanziData } from '@/lib/hanzi/loader';
 import { updateLocalHanziProgress, updateLocalHanziStudyExposure } from '@/lib/hanzi/mastery';
-import { classifyHanziLearningState, summarizeHanziStages, type LocalHanziProgressMap } from '@/lib/hanzi/progress';
+import { classifyHanziLearningState, hasHanziEvidence, type LocalHanziProgressMap } from '@/lib/hanzi/progress';
 import type { HanziAttemptPayload, HanziCharacterData, HanziLearningState, HanziManifestEntry, HanziPracticeMode, HanziProgressMap } from '@/lib/hanzi/types';
 import { strokeNamesForCharacter } from '@/lib/hanzi/stroke-names';
 import { HanziStrokeSvg } from './HanziStrokeSvg';
@@ -18,6 +18,7 @@ import { audioForMandarinText } from '@/lib/mandarin-audio';
 import { trackAnalyticsEvent } from '@/lib/analytics/client';
 
 const tabs = ['Aprender', 'Componentes', 'Trazos', 'Practicar'] as const;
+const unitOrder: HanziStageId[] = ['1.1','1.2','2.1','2.2','3.1','3.2'];
 type Tab = typeof tabs[number];
 type StateFilter = 'all' | 'to-learn' | 'review' | 'mastered';
 type StageFilter = 'all' | HanziStageId;
@@ -61,24 +62,33 @@ export function HanziLab({ characters, stages, manifest, initialProgress = {}, i
     return () => window.clearTimeout(timer);
   }, []);
 
-  const displayedCharacters = useMemo(() => characters.filter((item) => {
-    const stageMatches = stageFilter === 'all' || item.primaryStage === stageFilter;
+  const displayedCharacters = useMemo(() => {
+    const filtered = characters.filter((item) => {
+    const stageMatches = stageFilter === 'all' || item.appearsIn.includes(stageFilter);
     const state = classifyHanziLearningState(item.id, progress[item.id], localProgress);
     const stateMatches = stateFilter === 'all'
       || (stateFilter === 'to-learn' && (state === 'new' || state === 'learning'))
       || state === stateFilter;
-    return stageMatches && stateMatches;
-  }), [characters, localProgress, progress, stageFilter, stateFilter]);
+      return stageMatches && stateMatches;
+    });
+    if (stageFilter === 'all') return filtered;
+    const unitOrder = stages.find((unit) => unit.id === stageFilter)?.characters ?? [];
+    return filtered.sort((left,right) => unitOrder.indexOf(left.hanzi)-unitOrder.indexOf(right.hanzi));
+  }, [characters,localProgress,progress,stageFilter,stateFilter,stages]);
   const selectedVisible = displayedCharacters.find((item) => item.id === selectedId);
   const character = selectedVisible ?? displayedCharacters[0] ?? characters.find((item) => item.id === selectedId) ?? characters[0];
   const technical = manifest[character.hanzi];
-  const selectedStage = stages.find((stage) => stage.id === character.primaryStage);
+  const activeUnit = stageFilter === 'all' ? character.introducedIn : stageFilter;
+  const selectedStage = stages.find((stage) => stage.id === activeUnit);
   const selectedStageName = selectedStage?.shortTitle.trim();
-  const stageLabel = `ETAPA ${character.primaryStage}${selectedStageName && !/^etapa\s+\d+$/i.test(selectedStageName) ? ` · ${selectedStageName}` : ''}`;
+  const stageLabel = `${activeUnit}${selectedStageName ? ` · ${selectedStageName}` : ''}`;
   const data = loaded?.character === character.hanzi ? loaded.data ?? null : null;
   const loadError = loaded?.character === character.hanzi ? loaded.error ?? '' : '';
-  const stageSummary = useMemo(() => summarizeHanziStages(characters, progress, localProgress), [characters, localProgress, progress]);
-  const studied = stageSummary.reduce((sum, item) => sum + item.studied, 0);
+  const stageSummary = useMemo(() => stages.map((stage) => {
+    const members = characters.filter((item) => item.appearsIn.includes(stage.id));
+    return { stage:stage.id,total:members.length,studied:members.filter((item) => hasHanziEvidence(item.id,progress[item.id],localProgress)).length };
+  }), [characters,localProgress,progress,stages]);
+  const studied = characters.filter((item) => hasHanziEvidence(item.id,progress[item.id],localProgress)).length;
 
   useEffect(() => {
     let active = true;
@@ -99,7 +109,7 @@ export function HanziLab({ characters, stages, manifest, initialProgress = {}, i
     const priority: HanziLearningState[] = ['review', 'learning', 'new', 'mastered'];
     const next = priority.flatMap((state) => characters.filter((item) => classifyHanziLearningState(item.id, progress[item.id], localProgress) === state))[0];
     if (next) {
-      setStageFilter(next.primaryStage ?? 'all');
+      setStageFilter(next.introducedIn);
       setStateFilter('all');
       selectCharacter(next.id);
       setTab(classifyHanziLearningState(next.id, progress[next.id], localProgress) === 'new' ? 'Aprender' : 'Practicar');
@@ -211,16 +221,17 @@ export function HanziLab({ characters, stages, manifest, initialProgress = {}, i
     </section>
 
     <section className="panel hanzi-character-picker" aria-label="Selector de caracteres">
-      <div className="hanzi-picker-heading"><div><p className="eyebrow">¿QUÉ DEBERÍAS APRENDER AHORA?</p><h2>Elige etapa y estado</h2></div><span>{displayedCharacters.length} de {characters.length}</span></div>
+      <div className="hanzi-picker-heading"><div><p className="eyebrow">¿QUÉ DEBERÍAS APRENDER AHORA?</p><h2>Elige unidad y estado</h2></div><span>{displayedCharacters.length} de {characters.length}</span></div>
       <div className="hanzi-filter-row">
-        <div className="stage-filter-desktop" role="group" aria-label="Etapa pedagógica"><button type="button" className={stageFilter === 'all' ? 'selected' : ''} onClick={() => setStageFilter('all')}>Todos</button>{stages.map((stage) => <button type="button" className={stageFilter === stage.id ? 'selected' : ''} onClick={() => setStageFilter(stage.id)} key={stage.id}>{stage.id} {stage.shortTitle}</button>)}</div>
-        <label className="stage-filter-mobile">Etapa<select value={stageFilter} onChange={(event) => setStageFilter(event.target.value === 'all' ? 'all' : Number(event.target.value) as HanziStageId)}><option value="all">Todas</option>{stages.map((stage) => <option value={stage.id} key={stage.id}>{stage.id} · {stage.title}</option>)}</select></label>
+        <div className="stage-filter-desktop" role="group" aria-label="Unidad curricular"><button type="button" className={stageFilter === 'all' ? 'selected' : ''} onClick={() => setStageFilter('all')}>Todos</button>{stages.map((stage) => <button type="button" className={stageFilter === stage.id ? 'selected' : ''} onClick={() => setStageFilter(stage.id)} key={stage.id}>{stage.id} {stage.shortTitle}</button>)}</div>
+        <label className="stage-filter-mobile">Unidad<select value={stageFilter} onChange={(event) => setStageFilter(event.target.value === 'all' ? 'all' : event.target.value as HanziStageId)}><option value="all">Todas</option>{stages.map((stage) => <option value={stage.id} key={stage.id}>{stage.id} · {stage.title}</option>)}</select></label>
         <div className="state-filter" role="group" aria-label="Estado de aprendizaje">{stateOptions.map(([value, label]) => <button type="button" className={stateFilter === value ? 'selected' : ''} onClick={() => setStateFilter(value)} key={value}>{label}</button>)}</div>
       </div>
       {displayedCharacters.length ? <div className="hanzi-picker-grid">{displayedCharacters.map((item) => {
         const state = classifyHanziLearningState(item.id, progress[item.id], localProgress);
         const selected = item.id === character.id;
-        return <button type="button" className={`hanzi-picker-card state-${state}${selected ? ' selected' : ''}`} data-learning-state={state} aria-label={`${item.hanzi}, ${item.pinyin}, ${item.meaning}, estado ${stateLabels[state].toLowerCase()}`} aria-pressed={selected} onClick={() => selectCharacter(item.id)} key={item.id}>{item.hanzi}<small><PinyinText>{item.pinyin}</PinyinText></small><em>{item.meaning}</em></button>;
+        const curricularState = stageFilter === 'all' ? undefined : item.introducedIn === stageFilter ? 'new' : 'review';
+        return <button type="button" className={`hanzi-picker-card state-${state}${curricularState ? ` curricular-${curricularState}` : ''}${selected ? ' selected' : ''}`} data-learning-state={state} data-curricular-state={curricularState} aria-label={`${item.hanzi}, ${item.pinyin}, ${item.meaning}, estado ${stateLabels[state].toLowerCase()}`} aria-pressed={selected} onClick={() => selectCharacter(item.id)} key={item.id}>{item.hanzi}<small><PinyinText>{item.pinyin}</PinyinText></small><em>{item.meaning}</em></button>;
       })}</div> : <div className="hanzi-filter-empty"><p>No hay caracteres que coincidan con ambos filtros.</p><button type="button" onClick={() => { setStageFilter('all'); setStateFilter('all'); }}>Mostrar todos</button></div>}
     </section>
 
@@ -247,7 +258,7 @@ export function HanziLab({ characters, stages, manifest, initialProgress = {}, i
 function ContextList({ character }: { character: CharacterEntry }) {
   if (!character.words?.length) return <p className="context-empty">Esta ficha se practica como forma básica antes de combinarla.</p>;
   return <div className="hanzi-context"><h3>Aparece en</h3><div>{character.words.map((word) => {
-    const content = <><strong>{word.hanzi}</strong><span><PinyinText>{word.pinyin}</PinyinText></span><small>{word.translation}</small>{word.stage > (character.primaryStage ?? word.stage) && <em>Este carácter ya lo conoces</em>}</>;
+    const content = <><strong>{word.hanzi}</strong><span><PinyinText>{word.pinyin}</PinyinText></span><small>{word.translation}</small>{unitOrder.indexOf(word.stage) > unitOrder.indexOf(character.introducedIn) && <em>Este carácter ya lo conoces</em>}</>;
     return word.href ? <Link href={word.href} key={`${word.hanzi}-${word.pinyin}`}>{content}</Link> : <article key={`${word.hanzi}-${word.pinyin}`}>{content}</article>;
   })}</div></div>;
 }

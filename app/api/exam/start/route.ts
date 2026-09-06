@@ -1,11 +1,12 @@
 import { apiUser, jsonError } from '@/lib/server/api';
 import { startExam } from '@/lib/server/persistence';
 import { isCurriculumScope } from '@/seed/curriculum';
+import { isHanziUnitId } from '@/seed/characters';
 
 export async function POST(request: Request) {
   try {
     const body = await request.json().catch(() => ({})) as { scope?: string };
-    const scope = body.scope && isCurriculumScope(body.scope) ? body.scope : 'l1';
+    const scope = body.scope && (isCurriculumScope(body.scope) || isHanziUnitId(body.scope)) ? body.scope : 'l1';
     return Response.json(await startExam(await apiUser(), scope));
   }
   catch (error) { return jsonError(error); }

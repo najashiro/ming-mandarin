@@ -1,5 +1,5 @@
-import type { CharacterEntry, CurriculumScope, Exercise, GrammarPoint, HanziStageId, LessonNumber, SentenceEntry, SourceRef, VocabularyEntry } from '@/data/types';
-import { lesson1Characters, hanziStages as lesson1HanziStages } from '@/seed/characters';
+import type { CharacterEntry, CurriculumScope, Exercise, GrammarPoint, LessonNumber, SentenceEntry, SourceRef, VocabularyEntry } from '@/data/types';
+import { canonicalCharacters, charactersForUnits, hanziUnits } from '@/seed/characters';
 import { exercises as lesson1Exercises } from '@/seed/exercises';
 import { grammarPoints as lesson1Grammar } from '@/seed/grammar';
 import { sentences as lesson1Sentences } from '@/seed/sentences';
@@ -228,33 +228,12 @@ export const lesson3Grammar: GrammarPoint[] = [
   grammar(3,'age','今年…岁 · Edad','Sujeto + 今年 + número + 岁','La edad se expresa sin 是 entre el sujeto y el número.',['她今年八岁。'],textbook3(8)),
 ];
 
-type CharacterMeta = readonly [hanzi: string, pinyin: string, meaning: string, strokeCount: number];
-const l2CharacterMeta: CharacterMeta[] = [
-  ['早','zǎo','temprano',6],['上','shàng','arriba; mañana',3],['刚','gāng','recién',6],['到','dào','llegar',8],['朋','péng','amigo (en 朋友)',8],['友','yǒu','amigo',4],['老','lǎo','profesor (en 老师)',6],['师','shī','maestro',6],['学','xué','estudiar',8],['生','shēng','persona; nacer',5],['这','zhè','este',7],['是','shì','ser',9],['那','nà','ese',6],['您','nín','usted',11],['贵','guì','honorable',9],['姓','xìng','apellido',8],['哪','nǎ','cuál',9],['国','guó','país',8],['人','rén','persona',2],['习','xí','practicar',3],['汉','hàn','chino; Han',5],['语','yǔ','lengua',9],['再','zài','de nuevo',6],['见','jiàn','ver',4],['北','běi','norte',5],['京','jīng','capital',8],['中','zhōng','centro; China',4],['秘','bì','secreto; en 秘鲁',10],['鲁','lǔ','Lu; en 秘鲁',12],['美','měi','bello; Estados Unidos',9],
-  ['看','kàn','mirar',9],['都','dōu','todos',10],['要','yào','querer',9],['大','dà','grande',3],['小','xiǎo','pequeño',3],['和','hé','y; con',8],['喜','xǐ','gustar; alegría',12],['欢','huan','gustar (en 喜欢)',6],['吃','chī','comer',6],['包','bāo','envolver; bollo',5],['子','zi','sufijo nominal',3],['饺','jiǎo','empanadilla',9],['米','mǐ','arroz',6],['饭','fàn','comida; arroz',7],['面','miàn','harina; fideos',9],['条','tiáo','tira; clasificador',7],['点','diǎn','punto; un poco',9],['心','xīn','corazón',4],['好','hǎo','bueno',6],['喝','hē','beber',12],['水','shuǐ','agua',4],['茶','chá','té',9],['咖','kā','café (sonido)',8],['啡','fēi','café (sonido)',11],['可','kě','poder; cola',5],['乐','lè','alegría; cola',5],['果','guǒ','fruta',8],['汁','zhī','jugo',5],['爸','bà','papá',8],['妈','mā','mamá',6],
-];
-const l3CharacterMeta: CharacterMeta[] = [
-  ['家','jiā','familia; hogar',10],['有','yǒu','tener',6],['几','jǐ','cuántos',2],['口','kǒu','boca; clasificador familiar',3],['的','de','partícula posesiva',8],['照','zhào','foto; iluminar',13],['片','piàn','lámina; parte',4],['做','zuò','hacer',11],['工','gōng','trabajo',3],['作','zuò','hacer; trabajo',7],['医','yī','medicina',7],['生','shēng','persona; nacer',5],['一','yī','uno',1],['共','gòng','en total',6],['个','gè','clasificador general',3],['两','liǎng','dos',7],['姐','jiě','hermana mayor',8],['还','hái','además',7],['谁','shéi','quién',10],['没','méi','no tener',7],['狗','gǒu','perro',8],['爸','bà','papá',8],['妈','mā','mamá',6],['哥','gē','hermano mayor',10],['弟','dì','hermano menor',7],['妹','mèi','hermana menor',8],['张','zhāng','clasificador de objetos planos',7],
-];
-
-const makeStages = (lesson: 2 | 3, rows: CharacterMeta[]) => Array.from({ length: 6 }, (_, index) => {
-  const start = Math.floor(rows.length * index / 6); const end = Math.floor(rows.length * (index + 1) / 6);
-  return { id: (index + 1) as HanziStageId, title: `Etapa ${index + 1}`, shortTitle: ['Base','Identidad','Lengua','Comida','Acciones','Integración'][index], chinese: ['基','人','语','食','动','合'][index], description: `Bloque progresivo ${index + 1} de la Lección ${lesson}.`, characters: rows.slice(start, end).map(([hanzi]) => hanzi) };
-});
-
-export const lesson2HanziStages = makeStages(2, l2CharacterMeta);
-export const lesson3HanziStages = makeStages(3, l3CharacterMeta);
-const characterSource = (lesson: 2 | 3, page: number): SourceRef => ({ type: 'hanzi_worksheet', file: lesson === 2 ? (page <= 2 ? 'Hanzi Leccion 2.1 - Ciclo 2 - Agosto a Setiembre 2026 Instituto Confucio.pdf' : 'Hanzi Leccion 2.2 - Ciclo 2 - Agosto a Setiembre 2026 Instituto Confucio.pdf') : 'Hanzi Leccion 3.1 - Ciclo 2 - Agosto a Setiembre 2026 Instituto Confucio.pdf', pdfPage: lesson === 2 && page > 2 ? page - 2 : page });
-const makeCharacters = (lesson: 2 | 3, rows: CharacterMeta[], stages: ReturnType<typeof makeStages>): CharacterEntry[] => rows.map(([hanzi,pinyin,meaning,strokeCount], index) => ({
-  id: `c-${hanzi}`, lessonId: `lesson-${lesson}`, hanzi, pinyin: normalizePinyin(pinyin), meaning, strokeCount, radical: '', components: [], recognitionRequired: true, writingRequired: true,
-  source: characterSource(lesson, lesson === 2 ? (index < 30 ? (index < 15 ? 1 : 2) : (index < 45 ? 3 : 4)) : Math.min(3, Math.floor(index / 10) + 1)),
-  sources: [characterSource(lesson, lesson === 2 ? (index < 30 ? (index < 15 ? 1 : 2) : (index < 45 ? 3 : 4)) : Math.min(3, Math.floor(index / 10) + 1))],
-  sourceGroups: [], primaryStage: stages.find((stage) => stage.characters.includes(hanzi))?.id, curricular: true, radicalAudited: false, componentsAudited: false,
-  words: [...lesson2Vocabulary, ...lesson3Vocabulary].filter((word) => word.hanzi.includes(hanzi)).slice(0, 6).map((word) => ({ hanzi: word.hanzi, pinyin: word.pinyin, translation: word.translation, stage: stages.find((stage) => stage.characters.includes(hanzi))?.id ?? 1 })),
-}));
-
-export const lesson2Characters = makeCharacters(2, l2CharacterMeta, lesson2HanziStages);
-export const lesson3Characters = makeCharacters(3, l3CharacterMeta, lesson3HanziStages);
+export const lesson1HanziStages = hanziUnits.filter((unit) => unit.lesson === 1);
+export const lesson2HanziStages = hanziUnits.filter((unit) => unit.lesson === 2);
+export const lesson3HanziStages = hanziUnits.filter((unit) => unit.lesson === 3);
+export const lesson1Characters = charactersForUnits(['1.1','1.2']);
+export const lesson2Characters = charactersForUnits(['2.1','2.2']);
+export const lesson3Characters = charactersForUnits(['3.1','3.2']);
 
 function makeLessonExercises(lesson: 2 | 3, words: VocabularyEntry[], chars: CharacterEntry[], sentences: SentenceEntry[], grammarPoints: GrammarPoint[]): Exercise[] {
   const meanings = words.filter((word) => word.category !== 'name').map((word, index): Exercise => ({
@@ -305,10 +284,10 @@ export function getCurriculum(scope: CurriculumScope) {
   const grammar = uniqueBy(selected.flatMap((item) => item.grammar), (item) => item.id);
   const characters = uniqueBy(selected.flatMap((item) => item.characters), (item) => item.id);
   const exercises = uniqueBy(selected.flatMap((item) => item.exercises), (item) => item.id);
-  const stages = definition.lessonIds.length === 1 ? selected[0].stages : makeStages(3, characters.map((item) => [item.hanzi,item.pinyin,item.meaning,item.strokeCount] as CharacterMeta));
-  return { scope, definition, vocabulary, sentences, grammar, characters, exercises, stages };
+  const stages = hanziUnits.filter((unit) => definition.lessonIds.includes(unit.lesson));
+  return { scope, definition, vocabulary, sentences, grammar, characters, exercises, stages, units: stages };
 }
 
 export const allCurriculumExercises = uniqueBy([lesson1Exercises, lesson2Exercises, lesson3Exercises].flat(), (item) => item.id);
-export const allCurriculumCharacters = uniqueBy([lesson1Characters, lesson2Characters, lesson3Characters].flat(), (item) => item.id);
+export const allCurriculumCharacters = canonicalCharacters;
 export function exerciseForId(id: string) { return allCurriculumExercises.find((item) => item.id === id); }

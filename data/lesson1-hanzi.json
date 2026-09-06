@@ -1,53 +1,77 @@
 {
-  "stages": [
+  "units": [
     {
-      "id": 1,
-      "title": "Fundamentos y números",
-      "shortTitle": "Fundamentos",
-      "chinese": "基础",
-      "description": "Trazos sencillos, control motor y números básicos.",
-      "characters": ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "百", "千"]
+      "id": "1.1",
+      "lesson": 1,
+      "text": 1,
+      "title": "Lección 1 · Texto 1",
+      "shortTitle": "Texto 1",
+      "chinese": "你好！",
+      "description": "Saludos, presentación personal, nombre y cortesía.",
+      "core": "你好我叫什么请问名字姓认识很高兴也",
+      "teacherExtension": "",
+      "support": "老师再见早上午下晚安一二三四五六七八九十百千您"
     },
     {
-      "id": 2,
-      "title": "Personas y saludos",
-      "shortTitle": "Saludos",
-      "chinese": "问候",
-      "description": "Personas, saludos y momentos del día.",
-      "characters": ["你", "我", "他", "好", "老", "师", "早", "上", "午", "下", "晚", "安", "再", "见"]
+      "id": "1.2",
+      "lesson": 1,
+      "text": 2,
+      "title": "Lección 1 · Texto 2",
+      "shortTitle": "Texto 2",
+      "chinese": "你最近怎么样？",
+      "description": "Estado personal, presencia, cortesía y negación.",
+      "core": "你在吗请进坐谢最近怎么样很好我忙呢不太他",
+      "teacherExtension": "困渴饿累",
+      "support": ""
     },
     {
-      "id": 3,
-      "title": "Presentarse",
-      "shortTitle": "Presentarse",
-      "chinese": "自我介绍",
-      "description": "Nombre, apellido y primer encuentro.",
-      "characters": ["叫", "什", "么", "请", "问", "名", "字", "姓", "认", "识", "高", "兴", "也"]
+      "id": "2.1",
+      "lesson": 2,
+      "text": 1,
+      "title": "Lección 2 · Texto 1",
+      "shortTitle": "Texto 1",
+      "chinese": "你是哪国人？",
+      "description": "Presentaciones, nacionalidad, países y lenguas.",
+      "core": "陈老师你们早上好这是谁我朋友他刚到北京您贵姓哪国人学习汉语再见美",
+      "teacherExtension": "中国秘鲁英国德国法国日本西班牙加拿大墨西哥澳大利亚会说俄韩",
+      "support": ""
     },
     {
-      "id": 4,
-      "title": "Presencia y cortesía",
-      "shortTitle": "Cortesía",
-      "chinese": "礼貌",
-      "description": "Presencia, invitaciones y agradecimiento.",
-      "characters": ["在", "吗", "进", "坐", "谢"]
+      "id": "2.2",
+      "lesson": 2,
+      "text": 2,
+      "title": "Lección 2 · Texto 2",
+      "shortTitle": "Texto 2",
+      "chinese": "你喜欢吃什么？",
+      "description": "Comida, preferencias, bebidas y elección.",
+      "core": "点心好吃爸爸上海喜欢米饭妈妈北京面条饺子包大小看那都要和王云",
+      "teacherExtension": "喝水茶咖啡可乐牛奶饮料果汁",
+      "support": ""
     },
     {
-      "id": 5,
-      "title": "Estados y negación",
-      "shortTitle": "Estados",
-      "chinese": "状态",
-      "description": "Estados personales y patrones con 很、不、不太.",
-      "characters": ["很", "忙", "不", "太"]
+      "id": "3.1",
+      "lesson": 3,
+      "text": 1,
+      "title": "Lección 3 · Texto 1",
+      "shortTitle": "Texto 1",
+      "chinese": "你家有几口人？",
+      "description": "Familia, profesiones, posesión y clasificadores.",
+      "core": "家有几口的照片做工作医生弟哥哥一共个两姐还谁妹没狗贝爸妈张",
+      "teacherExtension": "爷奶外公婆姥猫只",
+      "support": ""
     },
     {
-      "id": 6,
-      "title": "¿Cómo has estado?",
-      "shortTitle": "¿Cómo has estado?",
-      "chinese": "最近怎么样",
-      "description": "Integración final de 最近 y 怎么样.",
-      "characters": ["最", "近", "怎", "样"]
+      "id": "3.2",
+      "lesson": 3,
+      "text": 2,
+      "title": "Lección 3 · Texto 2",
+      "shortTitle": "Texto 2",
+      "chinese": "你女儿今年几岁？",
+      "description": "Edad, familia, actividades y planes del día.",
+      "core": "真漂亮喝茶咖啡张女儿今年岁今天钢琴课孩子啊晚上英语中国陆雨平",
+      "teacherExtension": "可爱男帅餐厅去找会弹",
+      "support": ""
     }
   ],
-  "legacyCharacters": ["力", "生", "言", "人", "木", "羊", "井", "土", "林"]
+  "legacyCharacters": ["力", "言", "木", "羊", "井", "土", "林"]
 }

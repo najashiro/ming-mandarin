@@ -12,7 +12,20 @@ Este documento describe la arquitectura editorial interna. La interfaz del alumn
 | `l1-l2` | 1, 2 | Repaso acumulativo deduplicado |
 | `l1-l2-l3` | 1, 2, 3 | Corpus completo deduplicado |
 
-`seed/curriculum.ts` es el punto de composición. L1 conserva sus archivos e IDs (`v-*`, `s-*`, `g-*`, `c-*`); L2/L3 usan prefijos de lección en ejercicios y oraciones. Los caracteres compartidos conservan el mismo ID `c-<hanzi>`, por lo que el progreso anterior sigue siendo válido.
+`seed/characters.ts` genera una sola entidad por carácter desde las seis unidades declaradas en `data/lesson1-hanzi.json`; `seed/curriculum.ts` compone los alcances. Los caracteres compartidos conservan el mismo ID `c-<hanzi>`, por lo que el progreso anterior sigue siendo válido.
+
+## Unidades Hanzi
+
+| Unidad | Texto | Hanzi visibles | Hanzi introducidos |
+| --- | --- | ---: | ---: |
+| 1.1 | Lección 1 · Texto 1 | 40 | 40 |
+| 1.2 | Lección 1 · Texto 2 | 24 | 18 |
+| 2.1 | Lección 2 · Texto 1 | 55 | 43 |
+| 2.2 | Lección 2 · Texto 2 | 41 | 36 |
+| 3.1 | Lección 3 · Texto 1 | 36 | 30 |
+| 3.2 | Lección 3 · Texto 2 | 39 | 25 |
+
+El total canónico es 192. “Visibles” incluye repaso; “introducidos” cuenta solo `introducedIn`. El panel protegido `/admin/content` genera la tabla interna completa con carácter, pinyin, significado, primera unidad, reapariciones, rol y fuente.
 
 ## Cobertura pedagógica
 
@@ -22,7 +35,7 @@ Este documento describe la arquitectura editorial interna. La interfaz del alumn
 
 ## Audio y Hanzi
 
-- `data/mandarin-audio.json` registra cada clip por texto, pinyin auditado y lección.
+- `data/mandarin-audio.json` registra cada clip por texto, pinyin auditado y lección; los 192 Hanzi canónicos tienen MP3 individual.
 - `public/audio/mandarin/` contiene los MP3 generados; una entrada compartida se reutiliza mediante normalización del texto chino.
 - No existe fallback curricular a `speechSynthesis`.
 - `public/hanzi-data/manifest.json` y los JSON por carácter contienen los trazos locales. Las hojas Hanzi determinan el inventario; no convierten automáticamente cada carácter en una entrada de vocabulario.

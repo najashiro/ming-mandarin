@@ -9,7 +9,7 @@ import one from '@/public/hanzi-data/一.json';
 import good from '@/public/hanzi-data/好.json';
 import evening from '@/public/hanzi-data/晚.json';
 import thanks from '@/public/hanzi-data/谢.json';
-import { characters, hanziSourceGroups, hanziStages, legacyCharacters, lesson1Characters } from '@/seed/characters';
+import { canonicalCharacters, characters, hanziSourceGroups, hanziUnits, legacyCharacters, lesson1Characters } from '@/seed/characters';
 import { strokeNamesForCharacter } from '@/lib/hanzi/stroke-names';
 
 const attempt: HanziAttemptPayload = {
@@ -49,29 +49,43 @@ describe('laboratorio Hanzi', () => {
     expect(characters.every((item) => manifest[item.hanzi as keyof typeof manifest]?.strokeCount === item.strokeCount)).toBe(true);
   });
 
-  it('mantiene 52 Hanzi únicos distribuidos una sola vez en seis etapas', () => {
-    expect(lesson1Characters).toHaveLength(52);
-    expect(new Set(lesson1Characters.map((item) => item.hanzi)).size).toBe(52);
-    expect(new Set(lesson1Characters.map((item) => item.id)).size).toBe(52);
-    expect(hanziStages.map((stage) => stage.characters.length)).toEqual([12, 14, 13, 5, 4, 4]);
-    expect(lesson1Characters.every((item) => item.writingRequired && item.primaryStage)).toBe(true);
+  it('organiza un solo corpus canónico por las seis unidades reales', () => {
+    expect(canonicalCharacters).toHaveLength(192);
+    expect(new Set(canonicalCharacters.map((item) => item.hanzi)).size).toBe(192);
+    expect(new Set(canonicalCharacters.map((item) => item.id)).size).toBe(192);
+    expect(hanziUnits.map((unit) => unit.id)).toEqual(['1.1','1.2','2.1','2.2','3.1','3.2']);
+    expect(hanziUnits.map((unit) => unit.characters.length)).toEqual([40,24,55,41,36,39]);
+    expect(hanziUnits.map((unit) => canonicalCharacters.filter((item) => item.introducedIn === unit.id).length)).toEqual([40,18,43,36,30,25]);
+    expect(canonicalCharacters.every((item) => item.writingRequired && item.id === `c-${item.hanzi}`)).toBe(true);
   });
 
-  it('conserva los nueve registros complementarios y no duplica IDs previos', () => {
-    expect(legacyCharacters.map((item) => item.hanzi)).toEqual(['力', '生', '言', '人', '木', '羊', '井', '土', '林']);
+  it('conserva los registros técnicos no curriculares sin duplicar IDs', () => {
+    expect(legacyCharacters.map((item) => item.hanzi)).toEqual(['力','言','木','羊','井','土','林']);
     expect(characters.find((item) => item.hanzi === '好')?.id).toBe('c-好');
     expect(characters.find((item) => item.hanzi === '力')?.id).toBe('c-力');
     expect(new Set(characters.map((item) => item.id)).size).toBe(characters.length);
   });
 
-  it('trata 1.5 como evidencia de repaso sin introducir caracteres', () => {
-    const introduced = new Set([...hanziSourceGroups['hanzi-1.1'], ...hanziSourceGroups['hanzi-1.2'], ...hanziSourceGroups['hanzi-1.3'], ...hanziSourceGroups['hanzi-1.4']]);
-    expect(Object.values(hanziSourceGroups).map((group) => group.length)).toEqual([12, 12, 15, 17, 27]);
-    expect(hanziSourceGroups['hanzi-1.5']).toHaveLength(27);
-    expect(hanziSourceGroups['hanzi-1.5'].every((item) => introduced.has(item))).toBe(true);
+  it('distingue introducción y repaso sin crear copias por unidad', () => {
+    expect(Object.keys(hanziSourceGroups)).toEqual(['1.1','1.2','2.1','2.2','3.1','3.2']);
     const particle = lesson1Characters.find((item) => item.hanzi === '么')!;
-    expect(particle.primaryStage).toBe(3);
+    expect(particle.introducedIn).toBe('1.1');
+    expect(particle.appearsIn).toEqual(['1.1','1.2']);
     expect(particle.words?.map((word) => word.hanzi)).toEqual(expect.arrayContaining(['什么', '怎么样']));
+    expect(canonicalCharacters.find((item) => item.hanzi === '谁')).toMatchObject({ id:'c-谁',introducedIn:'2.1',appearsIn:['2.1','3.1'] });
+    expect(canonicalCharacters.find((item) => item.hanzi === '张')).toMatchObject({ id:'c-张',introducedIn:'3.1',appearsIn:['3.1','3.2'],sourceRole:'core' });
+    expect(canonicalCharacters.find((item) => item.hanzi === '平')).toMatchObject({ introducedIn:'3.2',pinyin:'píng' });
+    expect(canonicalCharacters.some((item) => item.hanzi === '萍')).toBe(false);
+    expect(canonicalCharacters.every((item) => item.sources?.length && item.appearsIn.includes(item.introducedIn))).toBe(true);
+  });
+
+  it('marca las extensiones docentes auditadas y las lecturas polisémicas del corpus', () => {
+    for (const hanzi of [...'困渴饿累会说喝水茶咖啡牛奶爷外公婆姥猫只爱男帅餐厅去找弹']) {
+      expect(canonicalCharacters.find((item) => item.hanzi === hanzi)?.sourceRole, hanzi).toBe('teacherExtension');
+    }
+    expect(canonicalCharacters.find((item) => item.hanzi === '呢')?.pinyin).toBe('ne');
+    expect(canonicalCharacters.find((item) => item.hanzi === '漂')?.pinyin).toBe('piào');
+    expect(canonicalCharacters.find((item) => item.hanzi === '弹')?.pinyin).toBe('tán');
   });
 
   it('mantiene el pinyin curricular normalizado en Unicode NFC', () => {
@@ -95,7 +109,7 @@ describe('laboratorio Hanzi', () => {
     expect(classifyHanziLearningState('c-一', undefined, {}, now)).toBe('new');
     expect(classifyHanziLearningState('c-好', progress['c-好'], {}, now)).toBe('review');
     expect(recommendHanziCharacters(lesson1Characters, progress, 1, now)[0].hanzi).toBe('好');
-    expect(summarizeHanziStages(lesson1Characters, progress)[1]).toMatchObject({ stage: 2, studied: 1, total: 14 });
+    expect(summarizeHanziStages(lesson1Characters, progress)[0]).toMatchObject({ stage:'1.1',studied:1,total:40 });
   });
 
   it('separa éxito evaluado y resumen local sin coordenadas', () => {

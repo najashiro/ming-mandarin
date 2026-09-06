@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import type { ExamQuestion, ExamSection } from '@/seed/exam';
-import type { CurriculumScope } from '@/data/types';
+import type { CurriculumScope, HanziAssessmentScope } from '@/data/types';
 import { scopeDefinitions } from '@/seed/curriculum';
 import { SpeakButton } from './SpeakButton';
 import { trackAnalyticsEvent } from '@/lib/analytics/client';
@@ -21,7 +21,7 @@ const labels: Record<ExamSection, string> = {
   dialogue: 'Diálogo', reading: 'Lectura', hanzi: 'Hanzi', communication: 'Comunicación',
 };
 
-export function ExamClient({ scope = 'l1' }: { scope?: CurriculumScope }) {
+export function ExamClient({ scope = 'l1' }: { scope?: HanziAssessmentScope }) {
   const [sessionId, setSessionId] = useState('');
   const [questions, setQuestions] = useState<PublicQuestion[]>([]);
   const [answers, setAnswers] = useState<Record<string, string>>({});
@@ -54,10 +54,12 @@ export function ExamClient({ scope = 'l1' }: { scope?: CurriculumScope }) {
     finally { setBusy(false); }
   }
 
+  const scopeLabel = scopeDefinitions[scope as CurriculumScope]?.shortLabel ?? `${scope} · Texto ${scope.endsWith('.1') ? '1' : '2'}`;
+
   if (result) return <section className="exam-result">
     <p className="eyebrow">RESULTADO VERIFICADO EN SERVIDOR</p>
     <strong>{result.score}<small>/100</small></strong>
-    <h2>{result.score === 100 ? `${scopeDefinitions[scope].shortLabel} · Dominio perfecto` : result.score >= 70 ? 'Buen avance' : 'Hay conceptos que conviene repasar'}</h2>
+    <h2>{result.score === 100 ? `${scopeLabel} · Dominio perfecto` : result.score >= 70 ? 'Buen avance' : 'Hay conceptos que conviene repasar'}</h2>
     <div className="score-grid">{Object.entries(result.sectionScores).map(([section, score]) => <span key={section}><b>{score}</b>{labels[section as ExamSection]}</span>)}</div>
     <p className="rule-note">Tu mejor puntuación contará en el ranking solo si activas la participación desde tu perfil.</p>
     <button type="button" onClick={() => { setResult(null); setQuestions([]); setAnswers({}); }}>Intentar de nuevo</button>
