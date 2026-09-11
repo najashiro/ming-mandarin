@@ -12,6 +12,16 @@ export type RetoMixtoQuestion = {
 };
 
 const normalizeChinese = (value: string) => value.normalize('NFC').replace(/[\s，。！？、；：“”‘’.,!?;:'"()]/g, '');
+const punctuationOnly = /^[\s，。！？、；：“”‘’…—,.!?;:'"()（）]+$/u;
+
+export function isSilentRetoMixtoToken(token: string) {
+  return !token.trim() || punctuationOnly.test(token);
+}
+
+export function primaryRetoMixtoHanziTarget(entry: Pick<RetoMixtoEntry, 'hanzi' | 'hanziTargets'>) {
+  if (entry.hanziTargets.includes(entry.hanzi)) return entry.hanzi;
+  return entry.hanziTargets[0];
+}
 
 function shuffle<T>(values: T[], random: () => number) {
   const result = [...values];

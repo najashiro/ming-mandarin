@@ -2767,6 +2767,294 @@
       "expectedPinyin": "tiánpǐn",
       "lessonId": 2,
       "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l1-v-f9db359922",
+      "file": "l1-v-f9db359922.mp3",
+      "input": "宋",
+      "expectedPinyin": "Sòng",
+      "lessonId": 1,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l1-v-9bacce4cba",
+      "file": "l1-v-9bacce4cba.mp3",
+      "input": "大为",
+      "expectedPinyin": "Dàwéi",
+      "lessonId": 1,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l1-v-ae59aa3d0c",
+      "file": "l1-v-ae59aa3d0c.mp3",
+      "input": "她很困。",
+      "expectedPinyin": "Tā hěn kùn.",
+      "lessonId": 1,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l1-v-64619c91b0",
+      "file": "l1-v-64619c91b0.mp3",
+      "input": "她很渴。",
+      "expectedPinyin": "Tā hěn kě.",
+      "lessonId": 1,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l1-v-eb5a4052b2",
+      "file": "l1-v-eb5a4052b2.mp3",
+      "input": "她很饿。",
+      "expectedPinyin": "Tā hěn è.",
+      "lessonId": 1,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l1-v-9ba56bfa88",
+      "file": "l1-v-9ba56bfa88.mp3",
+      "input": "他很累。",
+      "expectedPinyin": "Tā hěn lèi.",
+      "lessonId": 1,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-v-aa954ce734",
+      "file": "l2-v-aa954ce734.mp3",
+      "input": "陈老师",
+      "expectedPinyin": "Chén lǎoshī",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-v-e548bb9ff7",
+      "file": "l2-v-e548bb9ff7.mp3",
+      "input": "早上好",
+      "expectedPinyin": "zǎoshang hǎo",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-v-a47d41464e",
+      "file": "l2-v-a47d41464e.mp3",
+      "input": "我朋友",
+      "expectedPinyin": "wǒ péngyou",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-v-c54c502193",
+      "file": "l2-v-c54c502193.mp3",
+      "input": "刚到",
+      "expectedPinyin": "gāng dào",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-v-389386495f",
+      "file": "l2-v-389386495f.mp3",
+      "input": "哪国人",
+      "expectedPinyin": "nǎ guó rén",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-v-75d9049f88",
+      "file": "l2-v-75d9049f88.mp3",
+      "input": "美国人",
+      "expectedPinyin": "Měiguó rén",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-v-f0f59cdb62",
+      "file": "l2-v-f0f59cdb62.mp3",
+      "input": "会说",
+      "expectedPinyin": "huì shuō",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-v-e52de5a755",
+      "file": "l2-v-e52de5a755.mp3",
+      "input": "我爸爸妈妈",
+      "expectedPinyin": "wǒ bàba māma",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-v-58709566ff",
+      "file": "l2-v-58709566ff.mp3",
+      "input": "上海人",
+      "expectedPinyin": "Shànghǎi rén",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-v-31fd0bc3de",
+      "file": "l2-v-31fd0bc3de.mp3",
+      "input": "还是",
+      "expectedPinyin": "háishi",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-v-d853579afd",
+      "file": "l2-v-d853579afd.mp3",
+      "input": "喝茶",
+      "expectedPinyin": "hē chá",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-v-ceb6e7c3fc",
+      "file": "l2-v-ceb6e7c3fc.mp3",
+      "input": "吃米饭",
+      "expectedPinyin": "chī mǐfàn",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-v-e803a9ce72",
+      "file": "l3-v-e803a9ce72.mp3",
+      "input": "你家",
+      "expectedPinyin": "nǐ jiā",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-v-4585ae278b",
+      "file": "l3-v-4585ae278b.mp3",
+      "input": "几口人",
+      "expectedPinyin": "jǐ kǒu rén",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-v-f2a8a3ceea",
+      "file": "l3-v-f2a8a3ceea.mp3",
+      "input": "我家",
+      "expectedPinyin": "wǒ jiā",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-v-964d2413a7",
+      "file": "l3-v-964d2413a7.mp3",
+      "input": "四口人",
+      "expectedPinyin": "sì kǒu rén",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-v-638b6f6a51",
+      "file": "l3-v-638b6f6a51.mp3",
+      "input": "你爸爸",
+      "expectedPinyin": "nǐ bàba",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-v-610e693eec",
+      "file": "l3-v-610e693eec.mp3",
+      "input": "什么工作",
+      "expectedPinyin": "shénme gōngzuò",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-v-8093b0fe6a",
+      "file": "l3-v-8093b0fe6a.mp3",
+      "input": "我爸爸",
+      "expectedPinyin": "wǒ bàba",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-v-e5d9c6c8a8",
+      "file": "l3-v-e5d9c6c8a8.mp3",
+      "input": "不是",
+      "expectedPinyin": "bú shì",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-v-e41777bb11",
+      "file": "l3-v-e41777bb11.mp3",
+      "input": "我弟弟",
+      "expectedPinyin": "wǒ dìdi",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-v-3cba8dbc96",
+      "file": "l3-v-3cba8dbc96.mp3",
+      "input": "我哥哥",
+      "expectedPinyin": "wǒ gēge",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-v-4a8ac7c42b",
+      "file": "l3-v-4a8ac7c42b.mp3",
+      "input": "六个人",
+      "expectedPinyin": "liù ge rén",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-v-9e6571c048",
+      "file": "l3-v-9e6571c048.mp3",
+      "input": "两个姐姐",
+      "expectedPinyin": "liǎng ge jiějie",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-v-eb53ee8efe",
+      "file": "l3-v-eb53ee8efe.mp3",
+      "input": "我们家",
+      "expectedPinyin": "wǒmen jiā",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-v-a942f3063a",
+      "file": "l3-v-a942f3063a.mp3",
+      "input": "这张照片",
+      "expectedPinyin": "zhè zhāng zhàopiàn",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-v-6af25813d6",
+      "file": "l3-v-6af25813d6.mp3",
+      "input": "你女儿",
+      "expectedPinyin": "nǐ nǚʼér",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-v-40773858c7",
+      "file": "l3-v-40773858c7.mp3",
+      "input": "几岁",
+      "expectedPinyin": "jǐ suì",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-v-71b87f22ba",
+      "file": "l3-v-71b87f22ba.mp3",
+      "input": "今天晚上",
+      "expectedPinyin": "jīntiān wǎnshang",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-v-a9d79e8508",
+      "file": "l3-v-a9d79e8508.mp3",
+      "input": "钢琴课",
+      "expectedPinyin": "gāngqín kè",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
     }
   ]
 }

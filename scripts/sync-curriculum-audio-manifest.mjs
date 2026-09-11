@@ -58,6 +58,30 @@ for (const match of retoMixtoSource.slice(extraStart, extraEnd).matchAll(/\['([^
   add(match[1], match[2], Number(match[3]), 'v');
 }
 
+// Unidades completas que las fichas interactivas de Reto Mixto deben pronunciar.
+// El pinyin procede de las oraciones curriculares que ya contienen cada bloque.
+const retoMixtoInteractionAudio = [
+  ['宋', 'Sòng', 1], ['大为', 'Dàwéi', 1],
+  ['她很困。', 'Tā hěn kùn.', 1], ['她很渴。', 'Tā hěn kě.', 1],
+  ['她很饿。', 'Tā hěn è.', 1], ['他很累。', 'Tā hěn lèi.', 1],
+  ['陈老师', 'Chén lǎoshī', 2], ['早上好', 'zǎoshang hǎo', 2],
+  ['我朋友', 'wǒ péngyou', 2], ['刚到', 'gāng dào', 2],
+  ['哪国人', 'nǎ guó rén', 2], ['美国人', 'Měiguó rén', 2],
+  ['会说', 'huì shuō', 2], ['我爸爸妈妈', 'wǒ bàba māma', 2],
+  ['上海人', 'Shànghǎi rén', 2], ['还是', 'háishi', 2],
+  ['喝茶', 'hē chá', 2], ['吃米饭', 'chī mǐfàn', 2],
+  ['你家', 'nǐ jiā', 3], ['几口人', 'jǐ kǒu rén', 3],
+  ['我家', 'wǒ jiā', 3], ['四口人', 'sì kǒu rén', 3],
+  ['你爸爸', 'nǐ bàba', 3], ['什么工作', 'shénme gōngzuò', 3],
+  ['我爸爸', 'wǒ bàba', 3], ['不是', 'bú shì', 3],
+  ['我弟弟', 'wǒ dìdi', 3], ['我哥哥', 'wǒ gēge', 3],
+  ['六个人', 'liù ge rén', 3], ['两个姐姐', 'liǎng ge jiějie', 3],
+  ['我们家', 'wǒmen jiā', 3], ['这张照片', 'zhè zhāng zhàopiàn', 3],
+  ['你女儿', 'nǐ nǚʼér', 3], ['几岁', 'jǐ suì', 3],
+  ['今天晚上', 'jīntiān wǎnshang', 3], ['钢琴课', 'gāngqín kè', 3],
+];
+for (const [input, pinyin, lessonId] of retoMixtoInteractionAudio) add(input, pinyin, lessonId, 'v');
+
 const characterPinyin = new Map([...characterSource.matchAll(/([\u3400-\u9fff]):\['([^']+)','/gu)].map((match) => [match[1], match[2]]));
 const seenCharacters = new Set();
 for (const unit of hanziCurriculum.units) {

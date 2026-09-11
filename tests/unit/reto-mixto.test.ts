@@ -2,7 +2,8 @@ import { existsSync, readFileSync, statSync } from 'node:fs';
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { retoMixtoAudit, retoMixtoConversations, retoMixtoCorpus, retoMixtoModes } from '@/data/reto-mixto';
-import { buildRetoMixtoDeck, insertRetry, retryQuestion } from '@/lib/reto-mixto';
+import { audioForMandarinText } from '@/lib/mandarin-audio';
+import { buildRetoMixtoDeck, insertRetry, isSilentRetoMixtoToken, primaryRetoMixtoHanziTarget, retryQuestion } from '@/lib/reto-mixto';
 
 describe('Reto Mixto', () => {
   it('mantiene un corpus maestro deduplicado, trazable y completo', () => {
@@ -54,6 +55,26 @@ describe('Reto Mixto', () => {
         expect(existsSync(path.join(process.cwd(), 'public', 'hanzi-data', `${character}.json`)), `datos Hanzi de ${character}`).toBe(true);
       }
     }
+  });
+
+  it('resuelve un único destino Hanzi, ejemplos contextuales y audios de interacción', () => {
+    for (const entry of retoMixtoCorpus) {
+      expect(primaryRetoMixtoHanziTarget(entry)).toBe(entry.hanziTargets.includes(entry.hanzi) ? entry.hanzi : entry.hanziTargets[0]);
+      for (const token of entry.tokens ?? []) {
+        if (isSilentRetoMixtoToken(token)) expect(audioForMandarinText(token)).toBeUndefined();
+        else expect(audioForMandarinText(token), `audio de la ficha ${token}`).toMatch(/^\/audio\/(mandarin|pinyin)\/.+\.mp3$/);
+      }
+    }
+    for (const conversation of retoMixtoConversations) {
+      expect(audioForMandarinText(conversation.promptHanzi), `audio de pregunta ${conversation.promptHanzi}`).toMatch(/^\/audio\/mandarin\/.+\.mp3$/);
+    }
+    expect(isSilentRetoMixtoToken('。')).toBe(true);
+    expect(isSilentRetoMixtoToken('？！')).toBe(true);
+    expect(isSilentRetoMixtoToken('我')).toBe(false);
+
+    const tired = retoMixtoCorpus.find((entry) => entry.hanzi === '累');
+    expect(tired?.usageExample).toMatchObject({ hanzi: '他很累。', pinyin: 'Tā hěn lèi.', meaningEs: 'Él está muy cansado.' });
+    expect(tired?.usageExample?.audioSrc).toMatch(/^\/audio\/mandarin\/.+\.mp3$/);
   });
 
   it('genera una sesión equilibrada con cuatro opciones exactas', () => {

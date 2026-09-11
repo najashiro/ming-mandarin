@@ -1,5 +1,5 @@
 import type { CurriculumScope, LessonNumber, SourceRef, SourceType } from '@/data/types';
-import { audioForMandarinText } from '@/lib/mandarin-audio';
+import { audioForMandarinText, normalizeMandarin } from '@/lib/mandarin-audio';
 import { normalizePinyin } from '@/lib/pinyin';
 import { characters } from '@/seed/characters';
 import { getCurriculum } from '@/seed/curriculum';
@@ -15,6 +15,13 @@ export const retoMixtoModes = [
 
 export type RetoMixtoMode = typeof retoMixtoModes[number];
 export type RetoMixtoCategory = 'core' | 'supplementary' | 'ppt' | 'hanzi' | 'workbook' | 'phrase' | 'example_only';
+
+export type RetoMixtoUsageExample = {
+  hanzi: string;
+  pinyin: string;
+  meaningEs: string;
+  audioSrc?: string;
+};
 
 export type RetoMixtoEntry = {
   id: string;
@@ -33,6 +40,7 @@ export type RetoMixtoEntry = {
   distractorGroup: string;
   playableModes: RetoMixtoMode[];
   tokens?: string[];
+  usageExample?: RetoMixtoUsageExample;
 };
 
 export type RetoMixtoConversation = {
@@ -44,13 +52,14 @@ export type RetoMixtoConversation = {
   source: SourceRef;
 };
 
-type Draft = Omit<RetoMixtoEntry, 'id' | 'sourceTypes' | 'audioSrc' | 'hanziTargets' | 'imageable' | 'playableModes'> & {
+type Draft = Omit<RetoMixtoEntry, 'id' | 'sourceTypes' | 'audioSrc' | 'hanziTargets' | 'imageable' | 'playableModes' | 'usageExample'> & {
   id?: string;
   sourceTypes?: SourceType[];
   audioSrc?: string;
   hanziTargets?: string[];
   imageable?: boolean;
   playableModes?: RetoMixtoMode[];
+  usageExampleText?: string;
 };
 
 const textbook12 = (pdfPage: number, printedPage?: number, note?: string): SourceRef => ({
@@ -217,6 +226,7 @@ function merge(draft: Draft) {
   current.sources = uniqueSources([...current.sources, ...draft.sources]);
   if (current.category === 'hanzi' && draft.category !== 'hanzi') current.category = draft.category;
   if (!current.tokens && draft.tokens) current.tokens = draft.tokens;
+  if (!current.usageExampleText && draft.usageExampleText) current.usageExampleText = draft.usageExampleText;
 }
 
 for (const lesson of [1, 2, 3] as const) {
@@ -233,6 +243,7 @@ for (const lesson of [1, 2, 3] as const) {
       sources: uniqueSources(sources),
       category: categoryForVocabulary(word.category),
       distractorGroup: semanticGroups[word.hanzi] ?? `vocabulary-${lesson}`,
+      usageExampleText: word.example,
     });
   }
 }
@@ -275,7 +286,39 @@ for (const lesson of [1, 2, 3] as const) {
 
 const knownHanzi = new Set(characters.map((character) => character.hanzi));
 
+const preferredUsageExamples: Record<string, Omit<RetoMixtoUsageExample, 'audioSrc'>> = {
+  困: { hanzi: '她很困。', pinyin: 'Tā hěn kùn.', meaningEs: 'Ella tiene sueño.' },
+  渴: { hanzi: '她很渴。', pinyin: 'Tā hěn kě.', meaningEs: 'Ella tiene sed.' },
+  饿: { hanzi: '她很饿。', pinyin: 'Tā hěn è.', meaningEs: 'Ella tiene hambre.' },
+  累: { hanzi: '他很累。', pinyin: 'Tā hěn lèi.', meaningEs: 'Él está muy cansado.' },
+  喝: { hanzi: '喝茶', pinyin: 'hē chá', meaningEs: 'beber té' },
+  吃: { hanzi: '吃米饭', pinyin: 'chī mǐfàn', meaningEs: 'comer arroz cocido' },
+  家: { hanzi: '我家', pinyin: 'wǒ jiā', meaningEs: 'mi familia; mi hogar' },
+};
+
+function usageExampleFor(draft: Draft): RetoMixtoUsageExample | undefined {
+  if ([...draft.hanzi].length !== 1) return undefined;
+  const preferred = preferredUsageExamples[draft.hanzi];
+  const phraseEntries = [...map.values()].filter((candidate) => candidate.category === 'phrase');
+  const exact = draft.usageExampleText
+    ? phraseEntries.find((candidate) => normalizeMandarin(candidate.hanzi) === normalizeMandarin(draft.usageExampleText!))
+    : undefined;
+  const fallback = phraseEntries
+    .filter((candidate) => normalizeMandarin(candidate.hanzi).includes(draft.hanzi))
+    .sort((left, right) => normalizeMandarin(left.hanzi).length - normalizeMandarin(right.hanzi).length)[0];
+  const example = preferred ?? (exact || fallback ? {
+    hanzi: (exact ?? fallback)!.hanzi,
+    pinyin: (exact ?? fallback)!.pinyin,
+    meaningEs: (exact ?? fallback)!.meaningEs,
+  } : undefined);
+  if (!example) return undefined;
+  return { ...example, audioSrc: audioForMandarinText(example.hanzi) };
+}
+
 export const retoMixtoCorpus: RetoMixtoEntry[] = [...map.values()].map((draft) => {
+  const usageExample = usageExampleFor(draft);
+  const resolvedDraft = { ...draft };
+  delete resolvedDraft.usageExampleText;
   const image = imageAssets[draft.hanzi];
   const audioSrc = audioForMandarinText(draft.hanzi) ?? '';
   const sourceTypes = [...new Set(draft.sources.map((source) => source.type))];
@@ -286,7 +329,7 @@ export const retoMixtoCorpus: RetoMixtoEntry[] = [...map.values()].map((draft) =
   if (playable && image) modes.push('image-hanzi', 'hanzi-image', 'audio-image');
   if (isPhrase && draft.tokens && draft.tokens.length > 1) modes.push('construct-response');
   return {
-    ...draft,
+    ...resolvedDraft,
     id: draft.id ?? stableId(isPhrase ? 'phrase' : 'item', draft.hanzi),
     sourceTypes,
     imageable: Boolean(image),
@@ -295,6 +338,7 @@ export const retoMixtoCorpus: RetoMixtoEntry[] = [...map.values()].map((draft) =
     hanziTargets: [...new Set([...draft.hanzi].filter((character) => knownHanzi.has(character)))],
     distractorGroup: image?.distractorGroup ?? draft.distractorGroup,
     playableModes: modes,
+    usageExample,
   };
 });
 

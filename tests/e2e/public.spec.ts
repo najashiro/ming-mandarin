@@ -28,11 +28,15 @@ test('el arcade y el audio estático están disponibles sin cuenta', async ({ pa
 });
 
 test('Reto Mixto integra imagen, audio, corrección y alcance acumulativo', async ({ page }) => {
-  await page.addInitScript(() => { Math.random = () => 0.999; });
-  const audioRequests: string[] = [];
-  page.on('request', (request) => {
-    const pathname = new URL(request.url()).pathname;
-    if (/\/audio\/mandarin\/.+\.mp3$/i.test(pathname)) audioRequests.push(pathname);
+  await page.addInitScript(() => {
+    Math.random = () => 0.999;
+    const plays: string[] = [];
+    (window as typeof window & { __retoMainPlays: string[] }).__retoMainPlays = plays;
+    const originalPlay = HTMLMediaElement.prototype.play;
+    HTMLMediaElement.prototype.play = function play(this: HTMLMediaElement) {
+      plays.push(this.currentSrc || this.getAttribute('src') || '');
+      return originalPlay.call(this);
+    };
   });
   await page.goto('/study/l1-l2-l3/games');
   const card = page.locator('.game-grid article').filter({ hasText: 'Reto Mixto' });
@@ -46,7 +50,10 @@ test('Reto Mixto integra imagen, audio, corrección y alcance acumulativo', asyn
   await setup.getByRole('button', { name: 'Comenzar reto' }).click();
 
   const challenge = page.locator('.mixed-challenge.playing');
-  await expect(challenge.getByRole('heading', { name: 'Ronda 1 de 10' })).toBeVisible();
+  await expect(challenge.getByRole('heading', { name: 'Ronda 1 / 10' })).toBeVisible();
+  await expect(challenge.locator('.mixed-hud-correct')).toContainText('0');
+  await expect(challenge.locator('.mixed-hud-incorrect')).toContainText('0');
+  await expect(challenge.locator('.mixed-hud-streak')).toContainText('0');
   await expect(challenge.locator('.mixed-prompt-image img')).toBeVisible();
   await expect(challenge.locator('.mixed-text-options button')).toHaveCount(4);
   await expect(challenge.locator('[lang="zh-Latn-pinyin"]')).toHaveCount(0);
@@ -70,18 +77,29 @@ test('Reto Mixto integra imagen, audio, corrección y alcance acumulativo', asyn
   const choiceTexts = await choices.allTextContents();
   const wrong = choiceTexts.find((choice) => choice.trim() !== expected);
   expect(wrong).toBeTruthy();
-  await choices.filter({ hasText: wrong! }).first().click();
+  const wrongChoice = choices.filter({ hasText: wrong! }).first();
+  const correctChoice = choices.filter({ hasText: expected }).first();
+  await wrongChoice.click();
 
-  await expect(challenge.getByText('CORRECCIÓN', { exact: true })).toBeVisible();
+  await expect(wrongChoice).toHaveAttribute('data-answer-state', 'incorrect');
+  await expect(wrongChoice.getByLabel('Respuesta elegida incorrecta')).toContainText('✕');
+  await expect(correctChoice).toHaveAttribute('data-answer-state', 'correct');
+  await expect(correctChoice.getByLabel('Respuesta correcta')).toContainText('✓');
+  await expect(challenge.locator('.mixed-hud-incorrect')).toContainText('1');
+  await expect(challenge.locator('.mixed-hud-streak')).toContainText('0');
+  await expect(challenge.getByText('CORRECCIÓN', { exact: true })).toHaveCount(0);
   await page.waitForTimeout(700);
-  await expect(challenge.getByRole('heading', { name: 'Ronda 1 de 11' })).toBeVisible();
+  await expect(challenge.getByRole('heading', { name: 'Ronda 1 / 11' })).toBeVisible();
   await expect(challenge.getByText(expected, { exact: true }).last()).toBeVisible();
   await expect(challenge.locator('[lang="zh-Latn-pinyin"]')).toBeVisible();
+  await expect(challenge.locator('.mixed-correction-actions a')).toHaveCount(1);
   await expect(challenge.locator('.mixed-correction-actions a').first()).toHaveAttribute('target', '_blank');
+  await expect(challenge.locator('.mixed-correction-actions a').first()).toHaveAttribute('rel', 'noopener noreferrer');
+  const playsBeforeCorrection = await page.evaluate(() => (window as typeof window & { __retoMainPlays: string[] }).__retoMainPlays.length);
   await challenge.getByRole('button', { name: /Escuchar pronunciación de/ }).click();
-  await expect.poll(() => audioRequests.length).toBeGreaterThan(0);
+  await expect.poll(async () => page.evaluate(() => (window as typeof window & { __retoMainPlays: string[] }).__retoMainPlays.length)).toBeGreaterThan(playsBeforeCorrection);
   await challenge.getByRole('button', { name: /Continuar/ }).click();
-  await expect(challenge.getByRole('heading', { name: 'Ronda 2 de 11' })).toBeVisible();
+  await expect(challenge.getByRole('heading', { name: 'Ronda 2 / 11' })).toBeVisible();
 
   const dimensions = await page.evaluate(() => ({ viewport: window.innerWidth, content: document.documentElement.scrollWidth }));
   expect(dimensions.content).toBeLessThanOrEqual(dimensions.viewport + 1);
@@ -90,11 +108,185 @@ test('Reto Mixto integra imagen, audio, corrección y alcance acumulativo', asyn
   await card.getByRole('button', { name: /Jugar/ }).click();
   await page.locator('.mixed-challenge.setup').getByRole('button', { name: 'Comenzar reto' }).click();
   const correctChallenge = page.locator('.mixed-challenge.playing');
-  await expect(correctChallenge.getByRole('heading', { name: 'Ronda 1 de 10' })).toBeVisible();
-  await correctChallenge.locator('.mixed-text-options button').filter({ hasText: expected }).click();
+  await expect(correctChallenge.getByRole('heading', { name: 'Ronda 1 / 10' })).toBeVisible();
+  const correctAnswer = correctChallenge.locator('.mixed-text-options button').filter({ hasText: expected });
+  await correctAnswer.click();
+  await expect(correctAnswer).toHaveAttribute('data-answer-state', 'correct');
+  await expect(correctAnswer.getByLabel('Respuesta correcta')).toContainText('✓');
+  await expect(correctChallenge.locator('.mixed-hud-correct')).toContainText('1');
+  await expect(correctChallenge.locator('.mixed-hud-streak')).toContainText('1');
   await expect(correctChallenge.getByText('✓ Correcto', { exact: true })).toBeVisible();
-  await expect(correctChallenge.getByText('Escucha la respuesta antes de continuar.', { exact: true })).toBeVisible();
-  await expect(correctChallenge.getByRole('heading', { name: 'Ronda 2 de 10' })).toBeVisible({ timeout: 7_000 });
+  await page.waitForTimeout(250);
+  await expect(correctChallenge.getByText('✓ Correcto', { exact: true })).toBeVisible();
+  await expect(correctChallenge.getByRole('heading', { name: 'Ronda 2 / 10' })).toBeVisible({ timeout: 7_000 });
+});
+
+test('Reto Mixto mantiene contraste móvil y una corrección compacta para Hanzi individual', async ({ page }) => {
+  await page.addInitScript(() => { Math.random = () => 0.09; });
+  await page.goto('/study/l1-l2-l3/games');
+  const card = page.locator('.game-grid article').filter({ hasText: 'Reto Mixto' });
+  await card.getByRole('button', { name: /Jugar/ }).click();
+  await page.locator('.mixed-challenge.setup').getByRole('button', { name: 'Comenzar reto' }).click();
+  const challenge = page.locator('.mixed-challenge.playing');
+  const hanzi = challenge.locator('.mixed-prompt-hanzi');
+  await expect(hanzi).toHaveText('累');
+
+  const visual = await hanzi.evaluate((element) => {
+    const parse = (color: string) => (color.match(/[\d.]+/g) ?? []).slice(0, 3).map(Number);
+    const luminance = ([red, green, blue]: number[]) => {
+      const channels = [red, green, blue].map((value) => {
+        const channel = value / 255;
+        return channel <= 0.03928 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4;
+      });
+      return 0.2126 * channels[0] + 0.7152 * channels[1] + 0.0722 * channels[2];
+    };
+    const style = getComputedStyle(element);
+    const arena = element.closest('.arcade-arena')!;
+    const foreground = luminance(parse(style.color));
+    const background = luminance(parse(getComputedStyle(arena).backgroundColor));
+    const ratio = (Math.max(foreground, background) + 0.05) / (Math.min(foreground, background) + 0.05);
+    const hanziBox = element.getBoundingClientRect();
+    const optionsBox = arena.querySelector('.mixed-image-options')!.getBoundingClientRect();
+    return { ratio, fontSize: Number.parseFloat(style.fontSize), gapToOptions: optionsBox.top - hanziBox.bottom };
+  });
+  expect(visual.ratio).toBeGreaterThan(7);
+  expect(visual.fontSize).toBeGreaterThan(60);
+  expect(visual.gapToOptions).toBeLessThan(45);
+
+  const imageChoices = challenge.locator('.mixed-image-options button');
+  const correctChoice = challenge.locator('.mixed-image-options button:has(img[src*="tired.webp"])');
+  let wrongIndex = 0;
+  for (let index = 0; index < await imageChoices.count(); index += 1) {
+    if (!(await imageChoices.nth(index).locator('img').getAttribute('src'))?.includes('tired.webp')) { wrongIndex = index; break; }
+  }
+  const wrongChoice = imageChoices.nth(wrongIndex);
+  await wrongChoice.click();
+  await expect(wrongChoice).toHaveAttribute('data-answer-state', 'incorrect');
+  await expect(correctChoice).toHaveAttribute('data-answer-state', 'correct');
+  const correction = challenge.locator('.mixed-feedback.incorrect');
+  await expect(correction.getByText('累', { exact: true })).toBeVisible();
+  await expect(correction.getByText('lèi', { exact: true })).toBeVisible();
+  await expect(correction.getByText('cansado/a', { exact: true })).toBeVisible();
+  await expect(correction.getByText('他很累。', { exact: true })).toBeVisible();
+  await expect(correction.getByText('Tā hěn lèi.', { exact: true })).toBeVisible();
+  await expect(correction.getByRole('button', { name: 'Escuchar ejemplo: 他很累。' })).toBeVisible();
+  await expect(correction.locator('.mixed-correction-actions a')).toHaveCount(1);
+  const correctionLayout = await correction.evaluate((element) => {
+    const actions = [...element.querySelectorAll<HTMLElement>('.mixed-correction-actions > *')].map((item) => item.getBoundingClientRect());
+    return {
+      actionRowSpread: Math.max(...actions.map((item) => item.top)) - Math.min(...actions.map((item) => item.top)),
+    };
+  });
+  expect(correctionLayout.actionRowSpread).toBeLessThan(12);
+  await expect.poll(async () => correction.evaluate((element) => {
+    const mobileNav = document.querySelector<HTMLElement>('.mobile-nav');
+    if (!mobileNav || getComputedStyle(mobileNav).display === 'none') return true;
+    return element.getBoundingClientRect().bottom <= mobileNav.getBoundingClientRect().top + 1;
+  })).toBe(true);
+});
+
+test('Reto Mixto ofrece audio repetible en la pregunta de conversación', async ({ page }) => {
+  await page.addInitScript(() => {
+    Math.random = () => 0.2;
+    const plays: string[] = [];
+    (window as typeof window & { __retoQuestionPlays: string[] }).__retoQuestionPlays = plays;
+    const originalPlay = HTMLMediaElement.prototype.play;
+    HTMLMediaElement.prototype.play = function play(this: HTMLMediaElement) {
+      plays.push(this.currentSrc || this.getAttribute('src') || '');
+      return originalPlay.call(this);
+    };
+  });
+  await page.goto('/study/l1-l2-l3/games');
+  const card = page.locator('.game-grid article').filter({ hasText: 'Reto Mixto' });
+  await card.getByRole('button', { name: /Jugar/ }).click();
+  await page.locator('.mixed-challenge.setup').getByRole('button', { name: 'Comenzar reto' }).click();
+  const challenge = page.locator('.mixed-challenge.playing');
+  await expect(challenge.getByText('Conversación', { exact: true })).toBeVisible();
+  const questionAudio = challenge.getByRole('button', { name: /^Escuchar pregunta:/ });
+  await expect(questionAudio).toBeVisible();
+  await questionAudio.click();
+  await questionAudio.click();
+  const plays = await page.evaluate(() => (window as typeof window & { __retoQuestionPlays: string[] }).__retoQuestionPlays);
+  expect(plays).toHaveLength(2);
+  expect(plays.every((src) => /\/audio\/mandarin\/.+\.mp3$/i.test(src))).toBe(true);
+  await expect(challenge.getByRole('heading', { name: 'Ronda 1 / 10' })).toBeVisible();
+  await expect(challenge.locator('.mixed-text-options button[data-answer-state]')).toHaveCount(0);
+  await expect(challenge.locator('[lang="zh-Latn-pinyin"]')).toHaveCount(0);
+});
+
+test('Reto Mixto pronuncia fichas sin superposición y consolida la frase construida', async ({ page }) => {
+  await page.addInitScript(() => {
+    Math.random = () => 0.17;
+    const tracker = { active: 0, maxActive: 0, plays: [] as string[], pauses: 0 };
+    (window as typeof window & { __retoAudioTracker: typeof tracker }).__retoAudioTracker = tracker;
+    const active = new WeakSet<HTMLMediaElement>();
+    const originalPlay = HTMLMediaElement.prototype.play;
+    const originalPause = HTMLMediaElement.prototype.pause;
+    HTMLMediaElement.prototype.play = function play(this: HTMLMediaElement) {
+      if (!active.has(this)) {
+        active.add(this);
+        tracker.active += 1;
+        tracker.maxActive = Math.max(tracker.maxActive, tracker.active);
+        tracker.plays.push(this.currentSrc || this.getAttribute('src') || '');
+        this.addEventListener('ended', () => {
+          if (active.delete(this)) tracker.active -= 1;
+        }, { once: true });
+      }
+      return originalPlay.call(this);
+    };
+    HTMLMediaElement.prototype.pause = function pause(this: HTMLMediaElement) {
+      if (active.delete(this)) tracker.active -= 1;
+      tracker.pauses += 1;
+      return originalPause.call(this);
+    };
+  });
+  await page.goto('/study/l1-l2-l3/games');
+  const card = page.locator('.game-grid article').filter({ hasText: 'Reto Mixto' });
+  await card.getByRole('button', { name: /Jugar/ }).click();
+  await page.locator('.mixed-challenge.setup').getByRole('button', { name: 'Comenzar reto' }).click();
+  const challenge = page.locator('.mixed-challenge.playing');
+  await expect(challenge.getByText('Construir respuesta', { exact: true })).toBeVisible();
+  const questionAudio = challenge.getByRole('button', { name: /^Escuchar pregunta:/ });
+  await questionAudio.click();
+  await questionAudio.click();
+  await expect(challenge.getByRole('heading', { name: 'Ronda 1 / 10' })).toBeVisible();
+
+  await page.evaluate(() => {
+    const tracker = (window as typeof window & { __retoAudioTracker: { active: number; maxActive: number; plays: string[]; pauses: number } }).__retoAudioTracker;
+    tracker.maxActive = tracker.active;
+    tracker.plays = [];
+    tracker.pauses = 0;
+  });
+  const bank = challenge.locator('.mixed-token-bank');
+  const firstToken = bank.getByRole('button').first();
+  const firstText = (await firstToken.textContent())!;
+  await firstToken.click();
+  await expect(challenge.locator('.mixed-built').getByRole('button', { name: firstText, exact: true })).toBeVisible();
+  const secondToken = bank.getByRole('button').first();
+  const secondText = (await secondToken.textContent())!;
+  await secondToken.click();
+  await expect(challenge.locator('.mixed-built').getByRole('button', { name: secondText, exact: true })).toBeVisible();
+  const interaction = await page.evaluate(() => (window as typeof window & { __retoAudioTracker: { active: number; maxActive: number; plays: string[]; pauses: number } }).__retoAudioTracker);
+  expect(interaction.plays).toHaveLength(2);
+  expect(interaction.maxActive).toBeLessThanOrEqual(1);
+  expect(interaction.pauses).toBeGreaterThanOrEqual(1);
+
+  while (await challenge.locator('.mixed-built').getByRole('button').count()) {
+    await challenge.locator('.mixed-built').getByRole('button').first().click();
+  }
+  for (const token of ['我', '叫', '马大为']) {
+    await bank.getByRole('button', { name: token, exact: true }).click();
+  }
+  await page.evaluate(() => {
+    (window as typeof window & { __retoAudioTracker: { plays: string[] } }).__retoAudioTracker.plays = [];
+  });
+  await challenge.getByRole('button', { name: 'Comprobar' }).click();
+  await expect(challenge.locator('.mixed-built')).toHaveAttribute('data-answer-state', 'correct');
+  await expect(challenge.locator('.mixed-hud-correct')).toContainText('1');
+  await expect(challenge.locator('.mixed-hud-streak')).toContainText('1');
+  await expect(challenge.getByText('✓ Correcto', { exact: true })).toBeVisible();
+  await expect.poll(async () => page.evaluate(() => (window as typeof window & { __retoAudioTracker: { plays: string[] } }).__retoAudioTracker.plays.some((src) => src.includes('l1-s-wojiao-madawei.mp3')))).toBe(true);
+  await expect(challenge.getByRole('heading', { name: 'Ronda 2 / 10' })).toBeVisible({ timeout: 7_000 });
 });
 
 test('L2, L3 y los repasos acumulativos conservan el alcance', async ({ page }) => {
