@@ -14,16 +14,87 @@ test('la portada navega a las secciones públicas', async ({ page }) => {
 
 test('el arcade y el audio estático están disponibles sin cuenta', async ({ page }) => {
   await page.goto('/lesson/1/games');
-  await expect(page.getByRole('heading', { name: '30 formas de practicar' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: '31 formas de practicar' })).toBeVisible();
   await expect(page.locator('.mobile-nav a[href="/study/l1-l2-l3/games"]')).toContainText('Juegos');
   await expect(page.locator('.arcade-root')).toHaveAttribute('data-hydrated', 'true');
-  await expect(page.locator('.game-grid article').nth(0).getByRole('heading')).toHaveText('Flashcards');
-  await expect(page.locator('.game-grid article').nth(1).getByRole('heading')).toHaveText('Dictado');
-  await expect(page.locator('.game-grid article').nth(2).getByRole('heading')).toHaveText('Escucha y reconoce');
-  await page.getByRole('button', { name: /Jugar/ }).first().click();
+  await expect(page.locator('.game-grid article').nth(0).getByRole('heading')).toHaveText('Reto Mixto');
+  await expect(page.locator('.game-grid article').nth(1).getByRole('heading')).toHaveText('Flashcards');
+  await expect(page.locator('.game-grid article').nth(2).getByRole('heading')).toHaveText('Dictado');
+  await expect(page.locator('.game-grid article').nth(3).getByRole('heading')).toHaveText('Escucha y reconoce');
+  await page.locator('.game-grid article').filter({ hasText: 'Flashcards' }).getByRole('button', { name: /Jugar/ }).click();
   await expect(page.locator('#arena')).toContainText('Flashcards');
   await page.goto('/lesson/1/name');
   await expect(page.getByRole('button', { name: /Escuchar/ }).first()).toBeVisible();
+});
+
+test('Reto Mixto integra imagen, audio, corrección y alcance acumulativo', async ({ page }) => {
+  await page.addInitScript(() => { Math.random = () => 0.999; });
+  const audioRequests: string[] = [];
+  page.on('request', (request) => {
+    const pathname = new URL(request.url()).pathname;
+    if (/\/audio\/mandarin\/.+\.mp3$/i.test(pathname)) audioRequests.push(pathname);
+  });
+  await page.goto('/study/l1-l2-l3/games');
+  const card = page.locator('.game-grid article').filter({ hasText: 'Reto Mixto' });
+  await expect(card).toBeVisible();
+  await card.getByRole('button', { name: /Jugar/ }).click();
+
+  const setup = page.locator('.mixed-challenge.setup');
+  await expect(setup.getByRole('heading', { name: 'Configura tu sesión' })).toBeVisible();
+  await expect(setup.getByRole('button', { name: 'L1 + L2 + L3', exact: true })).toHaveClass(/selected/);
+  await expect(setup.getByRole('button', { name: '10', exact: true })).toHaveClass(/selected/);
+  await setup.getByRole('button', { name: 'Comenzar reto' }).click();
+  await expect.poll(() => audioRequests.length).toBeGreaterThan(0);
+
+  const challenge = page.locator('.mixed-challenge.playing');
+  await expect(challenge.getByRole('heading', { name: 'Ronda 1 de 10' })).toBeVisible();
+  await expect(challenge.locator('.mixed-prompt-image img')).toBeVisible();
+  await expect(challenge.locator('.mixed-text-options button')).toHaveCount(4);
+  await expect(challenge.locator('[lang="zh-Latn-pinyin"]')).toHaveCount(0);
+
+  const imageSrc = await challenge.locator('.mixed-prompt-image img').getAttribute('src');
+  const expectedByAsset: Record<string, string> = {
+    'happy.webp': '高兴', 'busy.webp': '忙', 'sleepy.webp': '困', 'tired.webp': '累',
+    'jiaozi.webp': '饺子', 'baozi.webp': '包子', 'rice.webp': '米饭', 'noodles.webp': '面条',
+    'dim-sum.webp': '点心', 'bread.webp': '面包',
+    'coffee.webp': '咖啡', 'tea.webp': '茶', 'water.webp': '水', 'cola.webp': '可乐', 'milk.webp': '牛奶', 'juice.webp': '果汁',
+    'father.webp': '爸爸', 'mother.webp': '妈妈', 'grandfather.webp': '爷爷', 'grandmother.webp': '奶奶',
+    'maternal-grandfather.webp': '外公', 'maternal-grandmother.webp': '外婆',
+    'older-brother.webp': '哥哥', 'younger-brother.webp': '弟弟', 'older-sister.webp': '姐姐', 'younger-sister.webp': '妹妹',
+    'daughter.webp': '女儿', 'family.webp': '家人', 'home.webp': '家', 'photo.webp': '照片', 'doctor.webp': '医生', 'piano.webp': '钢琴',
+    'dog.webp': '狗', 'cat.webp': '猫', 'cow.webp': '牛', 'sheep.webp': '羊',
+  };
+  const asset = Object.keys(expectedByAsset).find((file) => imageSrc?.includes(file));
+  expect(asset).toBeTruthy();
+  const expected = expectedByAsset[asset!];
+  const choices = challenge.locator('.mixed-text-options button');
+  const choiceTexts = await choices.allTextContents();
+  const wrong = choiceTexts.find((choice) => choice.trim() !== expected);
+  expect(wrong).toBeTruthy();
+  await choices.filter({ hasText: wrong! }).first().click();
+
+  await expect(challenge.getByText('CORRECCIÓN', { exact: true })).toBeVisible();
+  await page.waitForTimeout(700);
+  await expect(challenge.getByRole('heading', { name: 'Ronda 1 de 11' })).toBeVisible();
+  await expect(challenge.getByText(expected, { exact: true }).last()).toBeVisible();
+  await expect(challenge.locator('[lang="zh-Latn-pinyin"]')).toBeVisible();
+  await expect(challenge.locator('.mixed-correction-actions a').first()).toHaveAttribute('target', '_blank');
+  await challenge.getByRole('button', { name: /Escuchar pronunciación de/ }).click();
+  await challenge.getByRole('button', { name: /Continuar/ }).click();
+  await expect(challenge.getByRole('heading', { name: 'Ronda 2 de 11' })).toBeVisible();
+
+  const dimensions = await page.evaluate(() => ({ viewport: window.innerWidth, content: document.documentElement.scrollWidth }));
+  expect(dimensions.content).toBeLessThanOrEqual(dimensions.viewport + 1);
+
+  await challenge.getByRole('button', { name: 'Cerrar' }).click();
+  await card.getByRole('button', { name: /Jugar/ }).click();
+  await page.locator('.mixed-challenge.setup').getByRole('button', { name: 'Comenzar reto' }).click();
+  const correctChallenge = page.locator('.mixed-challenge.playing');
+  await expect(correctChallenge.getByRole('heading', { name: 'Ronda 1 de 10' })).toBeVisible();
+  await correctChallenge.locator('.mixed-text-options button').filter({ hasText: expected }).click();
+  await expect(correctChallenge.getByText('✓ Correcto', { exact: true })).toBeVisible();
+  await expect(correctChallenge.getByText('Escucha la respuesta antes de continuar.', { exact: true })).toBeVisible();
+  await expect(correctChallenge.getByRole('heading', { name: 'Ronda 2 de 10' })).toBeVisible({ timeout: 7_000 });
 });
 
 test('L2, L3 y los repasos acumulativos conservan el alcance', async ({ page }) => {
@@ -62,7 +133,7 @@ test('las rutas acumulativas no desbordan en móvil', async ({ page, isMobile })
 
 test('Escucha y reconoce no revela pistas antes de acertar', async ({ page }) => {
   await page.goto('/lesson/1/games');
-  await page.locator('.game-grid article').nth(2).getByRole('button', { name: /Jugar/ }).click();
+  await page.locator('.game-grid article').filter({ hasText: 'Escucha y reconoce' }).getByRole('button', { name: /Jugar/ }).click();
   await expect(page.getByRole('heading', { name: '¿Qué has escuchado?' })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Escuchar de nuevo' })).toBeVisible();
   await expect(page.locator('.listen-options button')).toHaveCount(4);

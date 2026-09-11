@@ -24,6 +24,6 @@ export default async function ScopeGamesPage({params,searchParams}:{params:Promi
     <LessonHeader eyebrow={`${data.definition.shortLabel} · 游戏`} title={`${ARCADE_GAME_COUNT} formas de practicar`} description="Los juegos Hanzi respetan el Texto o acumulado seleccionado e incluyen Dictado Hanzi."/>
     <CurriculumNav scope={rawScope} section="games"/>
     <HanziUnitNav basePath={`/study/${rawScope}/games`} units={data.stages} active={activeUnit}/>
-    <Arcade exercises={data.exercises} hanziCharacters={characters} listeningEntries={getListeningEntriesForScope(rawScope)}/>
+    <Arcade scope={rawScope} exercises={data.exercises} hanziCharacters={characters} listeningEntries={getListeningEntriesForScope(rawScope)}/>
   </main></SiteShell>;
 }

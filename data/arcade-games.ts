@@ -1,8 +1,9 @@
 import type { Exercise } from '@/data/types';
 
-export type ArcadeGame = { id: string; name: string; description: string; dimension?: Exercise['dimension'] | 'all'; kind?: 'listen' | 'hanzi-listen' | 'hanzi'; hanziIndex?: 19 | 20 | 21 | 22 };
+export type ArcadeGame = { id: string; name: string; description: string; dimension?: Exercise['dimension'] | 'all'; kind?: 'mixed' | 'listen' | 'hanzi-listen' | 'hanzi'; hanziIndex?: 19 | 20 | 21 | 22 };
 
 export const arcadeGames: ArcadeGame[] = [
+  { id:'reto-mixto',name:'Reto Mixto',description:'Imagen, sonido, Hanzi y conversación en un solo desafío.',kind:'mixed' },
   { id:'flashcards',name:'Flashcards',description:'Recupera hanzi, pinyin, audio y significado.',dimension:'meaning' },
   { id:'dictation',name:'Dictado',description:'Escribe el pinyin con su marca tonal.',dimension:'pinyin' },
   { id:'listen-recognize',name:'Escucha y reconoce',description:'Identifica el hanzi únicamente por su sonido.',kind:'listen' },

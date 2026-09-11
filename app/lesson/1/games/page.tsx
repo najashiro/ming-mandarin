@@ -22,6 +22,6 @@ export default async function GamesPage({searchParams}:{searchParams:Promise<{un
     <LessonHeader eyebrow="游戏中心 · ARCADE" title={`${ARCADE_GAME_COUNT} formas de practicar`} description="Cada juego Hanzi usa el Texto o acumulado seleccionado, sin duplicar caracteres reutilizados."/>
     <div className="community-page-action shell"><CommunityButton label="Preguntar sobre los juegos"/></div>
     <HanziUnitNav basePath="/lesson/1/games" units={units} active={activeUnit}/>
-    <Arcade exercises={exercises} hanziCharacters={hanziCharacters} listeningEntries={getListeningEntriesForLessons([1])}/>
+    <Arcade scope="l1" exercises={exercises} hanziCharacters={hanziCharacters} listeningEntries={getListeningEntriesForLessons([1])}/>
   </main></CommunityContextProvider></SiteShell>;
 }

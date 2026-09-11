@@ -18,7 +18,8 @@
     "audio:verify": "node scripts/verify-pronunciation-audio.mjs",
     "audio:verify:signal": "node scripts/verify-pronunciation-audio.mjs --signal-only",
     "hanzi:sync": "node scripts/sync-hanzi-data.mjs",
-    "audit:pinyin": "node scripts/audit-pinyin.mjs"
+    "audit:pinyin": "node scripts/audit-pinyin.mjs",
+    "audit:reto-mixto": "vitest run tests/unit/reto-mixto.test.ts"
   },
   "dependencies": {
     "hanzi-writer": "3.7.3",

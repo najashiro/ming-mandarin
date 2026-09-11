@@ -1,6 +1,6 @@
 # Míng · Mandarín activo
 
-Plataforma educativa para las Lecciones 1–3 del curso básico: **你最近怎么样？**, **你是哪国人？** y **你家有几口人？**. Incluye cinco alcances independientes (L1, L2, L3, L1+L2 y L1+L2+L3), contenido trazable, MP3 estáticos, Hanzi, 30 juegos, SRS, errores y exámenes de 100 puntos.
+Plataforma educativa para las Lecciones 1–3 del curso básico: **你最近怎么样？**, **你是哪国人？** y **你家有几口人？**. Incluye cinco alcances independientes (L1, L2, L3, L1+L2 y L1+L2+L3), contenido trazable, MP3 estáticos, Hanzi, 31 juegos, SRS, errores y exámenes de 100 puntos.
 
 ## Arquitectura
 

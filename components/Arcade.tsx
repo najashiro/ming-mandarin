@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
-import type { CharacterEntry, Exercise, ListeningEntry } from '@/data/types';
+import type { CharacterEntry, CurriculumScope, Exercise, ListeningEntry } from '@/data/types';
 import { HanziArcade } from './hanzi/HanziArcade';
 import { ListenAndRecognize } from './ListenAndRecognize';
 import { SpeakButton } from './SpeakButton';
@@ -9,14 +9,16 @@ import { shuffleWithoutImmediateRepeat } from '@/lib/listen-recognize';
 import { arcadeGames as games } from '@/data/arcade-games';
 import { compareExerciseAnswer } from '@/lib/pinyin';
 import { trackAnalyticsEvent } from '@/lib/analytics/client';
+import { RetoMixto } from './RetoMixto';
 
 type Props = {
   exercises: Exercise[];
   hanziCharacters: CharacterEntry[];
   listeningEntries: ListeningEntry[];
+  scope: CurriculumScope;
 };
 
-export function Arcade({ exercises, hanziCharacters, listeningEntries }: Props) {
+export function Arcade({ exercises, hanziCharacters, listeningEntries, scope }: Props) {
   const rootRef = useRef<HTMLDivElement>(null);
   const [selected, setSelected] = useState<number | null>(null);
   const [round, setRound] = useState(0);
@@ -40,7 +42,7 @@ export function Arcade({ exercises, hanziCharacters, listeningEntries }: Props) 
       setListenSession({ deck, audio });
     }
     completionTracked.current = false;
-    trackAnalyticsEvent('game_started', { contentId: games[index].id });
+    if (games[index].kind !== 'mixed') trackAnalyticsEvent('game_started', { contentId: games[index].id });
     setSelected(index); setRound(0); setAnswer(''); setScore(0); setMessage('');
     document.getElementById('arena')?.scrollIntoView({ behavior: 'smooth' });
   }
@@ -63,7 +65,7 @@ export function Arcade({ exercises, hanziCharacters, listeningEntries }: Props) 
   return <div className="arcade-root" ref={rootRef}>
     <section className="game-grid shell">{games.map((item, index) => <article key={item.id}><span>{String(index + 1).padStart(2, '0')}</span><h2>{item.name}</h2><p>{item.description}</p><button type="button" onClick={() => play(index)}>Jugar →</button></article>)}</section>
     <section id="arena" className="arcade-arena shell">{!game ? <div><p className="eyebrow">{games.length} JUEGOS FUNCIONALES</p><h2>Elige un reto</h2><p>Cada juego usa exclusivamente el corpus del alcance seleccionado.</p></div> : <>
-      {game.kind === 'listen' || game.kind === 'hanzi-listen' ? <ListenAndRecognize entries={listenSession.deck} initialDeck={listenSession.deck} initialAudio={listenSession.audio} onClose={() => setSelected(null)} onComplete={(correct) => { trackAnalyticsEvent('exercise_completed', { contentId: `${game.id}:listening`, correct }); if (correct) completeGame(); }} /> : <>
+      {game.kind === 'mixed' ? <RetoMixto scope={scope} onClose={() => setSelected(null)} /> : game.kind === 'listen' || game.kind === 'hanzi-listen' ? <ListenAndRecognize entries={listenSession.deck} initialDeck={listenSession.deck} initialAudio={listenSession.audio} onClose={() => setSelected(null)} onComplete={(correct) => { trackAnalyticsEvent('exercise_completed', { contentId: `${game.id}:listening`, correct }); if (correct) completeGame(); }} /> : <>
         <div className="practice-top"><div><p className="eyebrow">RONDA {round + 1}</p><h2>{game.name}</h2></div><b>{score} aciertos</b></div>
         {game.kind === 'hanzi' && game.hanziIndex !== undefined ? <><HanziArcade characters={hanziCharacters} key={`${game.id}-${round}`} gameIndex={game.hanziIndex} round={round} onScore={() => setScore((value) => value + 1)} onComplete={completeGame} /><div className="arena-actions"><button type="button" onClick={() => setRound((value) => value + 1)}>Otro carácter</button><button type="button" onClick={() => setSelected(null)}>Cerrar</button></div></> : <>
           {['tone', 'audio'].includes(exercise.dimension) && <SpeakButton text={exercise.answer} />}

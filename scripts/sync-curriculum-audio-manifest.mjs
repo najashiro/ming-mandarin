@@ -8,6 +8,7 @@ const source = await readFile(join(root, 'seed', 'curriculum.ts'), 'utf8');
 const lesson1VocabularySource = await readFile(join(root, 'seed', 'vocabulary.ts'), 'utf8');
 const lesson1SentenceSource = await readFile(join(root, 'seed', 'sentences.ts'), 'utf8');
 const characterSource = await readFile(join(root, 'seed', 'characters.ts'), 'utf8');
+const retoMixtoSource = await readFile(join(root, 'data', 'reto-mixto.ts'), 'utf8');
 const hanziCurriculum = JSON.parse(await readFile(join(root, 'data', 'lesson1-hanzi.json'), 'utf8'));
 const manifestPath = join(root, 'data', 'mandarin-audio.json');
 const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
@@ -50,6 +51,13 @@ for (const lessonId of [2, 3]) {
   for (const match of sentenceBlock.matchAll(new RegExp(`sentence\\(${lessonId},'[^']+','([^']+)','([^']+)'`, 'g'))) add(match[1], match[2], lessonId, 's');
 }
 
+const extraStart = retoMixtoSource.indexOf('const extraRows = [');
+const extraEnd = retoMixtoSource.indexOf('] as const satisfies', extraStart);
+if (extraStart < 0 || extraEnd < 0) throw new Error('No se encontró el bloque extraRows de Reto Mixto.');
+for (const match of retoMixtoSource.slice(extraStart, extraEnd).matchAll(/\['([^']+)',\s*'([^']+)',\s*'[^']+',\s*([123]),/g)) {
+  add(match[1], match[2], Number(match[3]), 'v');
+}
+
 const characterPinyin = new Map([...characterSource.matchAll(/([\u3400-\u9fff]):\['([^']+)','/gu)].map((match) => [match[1], match[2]]));
 const seenCharacters = new Set();
 for (const unit of hanziCurriculum.units) {
@@ -60,6 +68,11 @@ for (const unit of hanziCurriculum.units) {
     if (!pinyin) throw new Error(`Falta pinyin canónico para el audio de ${character}.`);
     add(character, pinyin, Number(unit.id[0]), 'h');
   }
+}
+for (const character of hanziCurriculum.legacyCharacters) {
+  const pinyin = characterSource.match(new RegExp(`legacy\\('${character}','([^']+)'`))?.[1];
+  if (!pinyin) throw new Error(`Falta pinyin del Hanzi histórico ${character}.`);
+  add(character, pinyin, 1, 'h');
 }
 
 manifest.clips.push(...candidates);
