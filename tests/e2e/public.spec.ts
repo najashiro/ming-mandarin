@@ -44,7 +44,6 @@ test('Reto Mixto integra imagen, audio, corrección y alcance acumulativo', asyn
   await expect(setup.getByRole('button', { name: 'L1 + L2 + L3', exact: true })).toHaveClass(/selected/);
   await expect(setup.getByRole('button', { name: '10', exact: true })).toHaveClass(/selected/);
   await setup.getByRole('button', { name: 'Comenzar reto' }).click();
-  await expect.poll(() => audioRequests.length).toBeGreaterThan(0);
 
   const challenge = page.locator('.mixed-challenge.playing');
   await expect(challenge.getByRole('heading', { name: 'Ronda 1 de 10' })).toBeVisible();
@@ -80,6 +79,7 @@ test('Reto Mixto integra imagen, audio, corrección y alcance acumulativo', asyn
   await expect(challenge.locator('[lang="zh-Latn-pinyin"]')).toBeVisible();
   await expect(challenge.locator('.mixed-correction-actions a').first()).toHaveAttribute('target', '_blank');
   await challenge.getByRole('button', { name: /Escuchar pronunciación de/ }).click();
+  await expect.poll(() => audioRequests.length).toBeGreaterThan(0);
   await challenge.getByRole('button', { name: /Continuar/ }).click();
   await expect(challenge.getByRole('heading', { name: 'Ronda 2 de 11' })).toBeVisible();
 
