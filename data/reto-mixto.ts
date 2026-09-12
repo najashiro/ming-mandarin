@@ -15,6 +15,7 @@ export const retoMixtoModes = [
 
 export type RetoMixtoMode = typeof retoMixtoModes[number];
 export type RetoMixtoCategory = 'core' | 'supplementary' | 'ppt' | 'hanzi' | 'workbook' | 'phrase' | 'example_only';
+export type RetoMixtoFamilyTarget = 'baba' | 'mama' | 'yeye' | 'nainai' | 'waigong' | 'waipo' | 'gege' | 'jiejie' | 'didi' | 'meimei' | 'nver';
 
 export type RetoMixtoUsageExample = {
   hanzi: string;
@@ -35,6 +36,7 @@ export type RetoMixtoEntry = {
   category: RetoMixtoCategory;
   imageable: boolean;
   imageSrc?: string;
+  familyTarget?: RetoMixtoFamilyTarget;
   audioSrc: string;
   hanziTargets: string[];
   distractorGroup: string;
@@ -96,7 +98,8 @@ const presentation11 = '1.1 Presentación Curso Ciclo 1 - Junio a Julio 2026 Ins
 const presentation22 = '2.2 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你是哪国人啊？.pdf';
 const presentation31 = '3.1 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你家有几口人？.pdf.pdf';
 
-const imageAssets: Record<string, { imageSrc: string; distractorGroup: string }> = {
+const familyMaster = '/images/games/reto-mixto/family/family-master.webp';
+const imageAssets: Record<string, { imageSrc: string; distractorGroup: string; familyTarget?: RetoMixtoFamilyTarget }> = {
   饺子: { imageSrc: '/images/games/reto-mixto/jiaozi.webp', distractorGroup: 'food' },
   包子: { imageSrc: '/images/games/reto-mixto/baozi.webp', distractorGroup: 'food' },
   米饭: { imageSrc: '/images/games/reto-mixto/rice.webp', distractorGroup: 'food' },
@@ -109,18 +112,18 @@ const imageAssets: Record<string, { imageSrc: string; distractorGroup: string }>
   可乐: { imageSrc: '/images/games/reto-mixto/cola.webp', distractorGroup: 'drink' },
   牛奶: { imageSrc: '/images/games/reto-mixto/milk.webp', distractorGroup: 'drink' },
   果汁: { imageSrc: '/images/games/reto-mixto/juice.webp', distractorGroup: 'drink' },
-  爸爸: { imageSrc: '/images/games/reto-mixto/father.webp', distractorGroup: 'family' },
-  妈妈: { imageSrc: '/images/games/reto-mixto/mother.webp', distractorGroup: 'family' },
-  爷爷: { imageSrc: '/images/games/reto-mixto/grandfather.webp', distractorGroup: 'family' },
-  奶奶: { imageSrc: '/images/games/reto-mixto/grandmother.webp', distractorGroup: 'family' },
-  外公: { imageSrc: '/images/games/reto-mixto/maternal-grandfather.webp', distractorGroup: 'family' },
-  外婆: { imageSrc: '/images/games/reto-mixto/maternal-grandmother.webp', distractorGroup: 'family' },
-  哥哥: { imageSrc: '/images/games/reto-mixto/older-brother.webp', distractorGroup: 'family' },
-  弟弟: { imageSrc: '/images/games/reto-mixto/younger-brother.webp', distractorGroup: 'family' },
-  姐姐: { imageSrc: '/images/games/reto-mixto/older-sister.webp', distractorGroup: 'family' },
-  妹妹: { imageSrc: '/images/games/reto-mixto/younger-sister.webp', distractorGroup: 'family' },
-  女儿: { imageSrc: '/images/games/reto-mixto/daughter.webp', distractorGroup: 'family' },
-  家人: { imageSrc: '/images/games/reto-mixto/family.webp', distractorGroup: 'family' },
+  爸爸: { imageSrc: familyMaster, familyTarget: 'baba', distractorGroup: 'family-parents' },
+  妈妈: { imageSrc: familyMaster, familyTarget: 'mama', distractorGroup: 'family-parents' },
+  爷爷: { imageSrc: familyMaster, familyTarget: 'yeye', distractorGroup: 'family-grandparents' },
+  奶奶: { imageSrc: familyMaster, familyTarget: 'nainai', distractorGroup: 'family-grandparents' },
+  外公: { imageSrc: familyMaster, familyTarget: 'waigong', distractorGroup: 'family-grandparents' },
+  外婆: { imageSrc: familyMaster, familyTarget: 'waipo', distractorGroup: 'family-grandparents' },
+  哥哥: { imageSrc: familyMaster, familyTarget: 'gege', distractorGroup: 'family-siblings' },
+  姐姐: { imageSrc: familyMaster, familyTarget: 'jiejie', distractorGroup: 'family-siblings' },
+  弟弟: { imageSrc: familyMaster, familyTarget: 'didi', distractorGroup: 'family-siblings' },
+  妹妹: { imageSrc: familyMaster, familyTarget: 'meimei', distractorGroup: 'family-siblings' },
+  女儿: { imageSrc: familyMaster, familyTarget: 'nver', distractorGroup: 'family-parents' },
+  家人: { imageSrc: familyMaster, distractorGroup: 'family' },
   家: { imageSrc: '/images/games/reto-mixto/home.webp', distractorGroup: 'place' },
   照片: { imageSrc: '/images/games/reto-mixto/photo.webp', distractorGroup: 'object' },
   医生: { imageSrc: '/images/games/reto-mixto/doctor.webp', distractorGroup: 'person' },
@@ -334,6 +337,7 @@ export const retoMixtoCorpus: RetoMixtoEntry[] = [...map.values()].map((draft) =
     sourceTypes,
     imageable: Boolean(image),
     imageSrc: image?.imageSrc,
+    familyTarget: image?.familyTarget,
     audioSrc,
     hanziTargets: [...new Set([...draft.hanzi].filter((character) => knownHanzi.has(character)))],
     distractorGroup: image?.distractorGroup ?? draft.distractorGroup,

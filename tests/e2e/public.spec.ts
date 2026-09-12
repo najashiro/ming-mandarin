@@ -64,15 +64,15 @@ test('Reto Mixto integra imagen, audio, corrección y alcance acumulativo', asyn
     'jiaozi.webp': '饺子', 'baozi.webp': '包子', 'rice.webp': '米饭', 'noodles.webp': '面条',
     'dim-sum.webp': '点心', 'bread.webp': '面包',
     'coffee.webp': '咖啡', 'tea.webp': '茶', 'water.webp': '水', 'cola.webp': '可乐', 'milk.webp': '牛奶', 'juice.webp': '果汁',
-    'father.webp': '爸爸', 'mother.webp': '妈妈', 'grandfather.webp': '爷爷', 'grandmother.webp': '奶奶',
-    'maternal-grandfather.webp': '外公', 'maternal-grandmother.webp': '外婆',
-    'older-brother.webp': '哥哥', 'younger-brother.webp': '弟弟', 'older-sister.webp': '姐姐', 'younger-sister.webp': '妹妹',
-    'daughter.webp': '女儿', 'family.webp': '家人', 'home.webp': '家', 'photo.webp': '照片', 'doctor.webp': '医生', 'piano.webp': '钢琴',
+    'home.webp': '家', 'photo.webp': '照片', 'doctor.webp': '医生', 'piano.webp': '钢琴',
     'dog.webp': '狗', 'cat.webp': '猫', 'cow.webp': '牛', 'sheep.webp': '羊',
   };
   const asset = Object.keys(expectedByAsset).find((file) => imageSrc?.includes(file));
-  expect(asset).toBeTruthy();
-  const expected = expectedByAsset[asset!];
+  const familyVisual = challenge.locator('.mixed-prompt-image [data-family-target]');
+  const familyTarget = await familyVisual.count() ? await familyVisual.getAttribute('data-family-target') : null;
+  const familyWords: Record<string, string> = { baba: '爸爸', mama: '妈妈', yeye: '爷爷', nainai: '奶奶', waigong: '外公', waipo: '外婆', gege: '哥哥', jiejie: '姐姐', didi: '弟弟', meimei: '妹妹', nver: '女儿' };
+  const expected = familyTarget ? familyWords[familyTarget] : imageSrc?.includes('family-master.webp') ? '家人' : expectedByAsset[asset!];
+  expect(expected).toBeTruthy();
   const choices = challenge.locator('.mixed-text-options button');
   const choiceTexts = await choices.allTextContents();
   const wrong = choiceTexts.find((choice) => choice.trim() !== expected);

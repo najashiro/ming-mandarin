@@ -44,7 +44,34 @@ describe('Reto Mixto', () => {
     expect(retoMixtoAudit.imageable).toBe(36);
     expect(retoMixtoAudit.withAudio).toBe(retoMixtoAudit.totalUnique);
     const visualEntries = retoMixtoCorpus.filter((entry) => entry.imageable);
-    expect(new Set(visualEntries.map((entry) => entry.imageSrc)).size).toBe(visualEntries.length);
+    expect(new Set(visualEntries.map((entry) => `${entry.imageSrc}:${entry.familyTarget ?? ''}`)).size).toBe(visualEntries.length);
+  });
+
+  it('reutiliza una familia canónica y distingue abuelos y hermanos con distractores relacionales', () => {
+    const targets = {
+      爸爸: 'baba', 妈妈: 'mama', 爷爷: 'yeye', 奶奶: 'nainai', 外公: 'waigong', 外婆: 'waipo',
+      哥哥: 'gege', 姐姐: 'jiejie', 弟弟: 'didi', 妹妹: 'meimei', 女儿: 'nver',
+    } as const;
+    const familyEntries = Object.entries(targets).map(([hanzi, target]) => {
+      const entry = retoMixtoCorpus.find((item) => item.hanzi === hanzi);
+      expect(entry?.familyTarget).toBe(target);
+      expect(entry?.imageSrc).toBe('/images/games/reto-mixto/family/family-master.webp');
+      return entry!;
+    });
+    expect(new Set(familyEntries.map((entry) => entry.familyTarget)).size).toBe(11);
+    expect(new Set(familyEntries.map((entry) => entry.imageSrc)).size).toBe(1);
+    expect(retoMixtoCorpus.find((entry) => entry.hanzi === '家人')).toMatchObject({ imageSrc: familyEntries[0].imageSrc, familyTarget: undefined });
+    expect(new Set(familyEntries.filter((entry) => ['爷爷', '奶奶', '外公', '外婆'].includes(entry.hanzi)).map((entry) => entry.distractorGroup))).toEqual(new Set(['family-grandparents']));
+    expect(new Set(familyEntries.filter((entry) => ['哥哥', '姐姐', '弟弟', '妹妹'].includes(entry.hanzi)).map((entry) => entry.distractorGroup))).toEqual(new Set(['family-siblings']));
+    const grandparentDeck = buildRetoMixtoDeck(retoMixtoCorpus, retoMixtoConversations, [1, 2, 3], 10, () => 0.76);
+    const grandparentOptions = grandparentDeck[1].optionIds.map((id) => retoMixtoCorpus.find((entry) => entry.id === id)?.hanzi);
+    expect(grandparentDeck[1].mode).toBe('hanzi-image');
+    expect(new Set(grandparentOptions)).toEqual(new Set(['爷爷', '奶奶', '外公', '外婆']));
+
+    const siblingDeck = buildRetoMixtoDeck(retoMixtoCorpus, retoMixtoConversations, [1, 2, 3], 10, () => 0.56);
+    const siblingOptions = siblingDeck[2].optionIds.map((id) => retoMixtoCorpus.find((entry) => entry.id === id)?.hanzi);
+    expect(siblingDeck[2].mode).toBe('hanzi-image');
+    expect(new Set(siblingOptions)).toEqual(new Set(['哥哥', '姐姐', '弟弟', '妹妹']));
   });
 
   it('solo enlaza a fichas Hanzi que existen en la plataforma', () => {

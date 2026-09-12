@@ -1,13 +1,13 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
-import Image from 'next/image';
 import type { CurriculumScope, LessonNumber } from '@/data/types';
 import { retoMixtoConversations, retoMixtoCorpus, type RetoMixtoEntry, type RetoMixtoMode } from '@/data/reto-mixto';
 import { audioForMandarinText } from '@/lib/mandarin-audio';
 import { buildRetoMixtoDeck, insertRetry, isSilentRetoMixtoToken, primaryRetoMixtoHanziTarget, retryQuestion, type RetoMixtoQuestion } from '@/lib/reto-mixto';
 import { trackAnalyticsEvent } from '@/lib/analytics/client';
 import { PinyinText } from './PinyinText';
+import { RetoMixtoVisual } from './RetoMixtoVisual';
 
 type Props = { scope: CurriculumScope; onClose: () => void };
 type Phase = 'setup' | 'playing' | 'results';
@@ -316,7 +316,7 @@ export function RetoMixto({ scope, onClose }: Props) {
     <div className="progress-track"><i style={{ width: `${((index + (feedback ? 1 : 0)) / queue.length) * 100}%` }} /></div>
     <p className="mixed-prompt">{modePrompt(currentQuestion.mode)}</p>
 
-    {isImagePrompt && currentEntry.imageSrc && <div className="mixed-prompt-image"><Image src={currentEntry.imageSrc} alt="Concepto visual de la pregunta" width={640} height={640} priority /></div>}
+    {isImagePrompt && currentEntry.imageSrc && <div className="mixed-prompt-image"><RetoMixtoVisual entry={currentEntry} alt="Concepto visual de la pregunta" priority /></div>}
     {(currentQuestion.mode === 'hanzi-image') && <div className="mixed-prompt-hanzi" lang="zh-Hans">{currentEntry.hanzi}</div>}
     {isAudioPrompt && <button className={`audio-button mixed-audio ${answerAudioActive ? 'playing' : ''}`} disabled={feedback === 'correct'} type="button" onClick={() => void playEntryAudio(currentEntry)} aria-label="Escuchar audio de la pregunta"><span aria-hidden="true">{answerAudioActive ? '■' : '▶'}</span> {answerAudioActive ? 'Sonando…' : 'Escuchar'}</button>}
     {isConversation && currentConversation && <div className="mixed-dialogue" lang="zh-Hans"><span>Míng</span><div className="mixed-dialogue-bubble"><p>{currentConversation.promptHanzi}</p><button className={`mixed-question-audio ${questionAudioActive ? 'playing' : ''}`} disabled={feedback === 'correct'} type="button" onClick={playQuestionAudio} aria-label={`Escuchar pregunta: ${currentConversation.promptHanzi}`} title="Escuchar pregunta"><span aria-hidden="true">{questionAudioActive ? '■' : '🔊'}</span></button></div><strong>你</strong><p>……</p></div>}
@@ -327,7 +327,7 @@ export function RetoMixto({ scope, onClose }: Props) {
         : feedback === 'incorrect' && selectedOption === entry.id
           ? 'incorrect'
           : undefined;
-      return <button className={`${selectedOption === entry.id ? 'selected ' : ''}${answerState ? `answer-${answerState}` : ''}`} data-answer-state={answerState} disabled={Boolean(feedback)} type="button" onClick={() => choose(entry)} key={entry.id}>{isImageAnswer && entry.imageSrc ? <Image src={entry.imageSrc} alt={`Opción visual ${optionIndex + 1}`} width={640} height={640} /> : <span lang="zh-Hans">{entry.hanzi}</span>}{answerState && <i className="mixed-option-mark" aria-label={answerState === 'correct' ? 'Respuesta correcta' : 'Respuesta elegida incorrecta'}>{answerState === 'correct' ? '✓' : '✕'}</i>}</button>;
+      return <button className={`${selectedOption === entry.id ? 'selected ' : ''}${answerState ? `answer-${answerState}` : ''}`} data-answer-state={answerState} disabled={Boolean(feedback)} type="button" onClick={() => choose(entry)} key={entry.id}>{isImageAnswer && entry.imageSrc ? <RetoMixtoVisual entry={entry} alt={`Opción visual ${optionIndex + 1}`} /> : <span lang="zh-Hans">{entry.hanzi}</span>}{answerState && <i className="mixed-option-mark" aria-label={answerState === 'correct' ? 'Respuesta correcta' : 'Respuesta elegida incorrecta'}>{answerState === 'correct' ? '✓' : '✕'}</i>}</button>;
     })}</div>}
 
     {isConstruction && <div className="mixed-construction"><div className={`mixed-built${feedback ? ` answer-${feedback}` : ''}`} data-answer-state={feedback ?? undefined} aria-label="Respuesta construida">{feedback && <i className="mixed-option-mark" aria-label={feedback === 'correct' ? 'Respuesta construida correcta' : 'Respuesta construida incorrecta'}>{feedback === 'correct' ? '✓' : '✕'}</i>}{builtTokens.length ? builtTokens.map((tokenIndex) => <button type="button" disabled={Boolean(feedback)} onClick={() => removeToken(tokenIndex)} key={tokenIndex}>{currentEntry.tokens?.[tokenIndex]}</button>) : <span>Toca los bloques en orden</span>}</div>{feedback === 'incorrect' && <div className="mixed-construction-solution" data-answer-state="correct"><i className="mixed-option-mark" aria-label="Respuesta correcta">✓</i><strong lang="zh-Hans">{currentEntry.hanzi}</strong></div>}<div className="mixed-token-bank">{availableTokenIndexes.map((tokenIndex) => <button type="button" disabled={Boolean(feedback)} onClick={() => addToken(tokenIndex)} key={tokenIndex}>{currentEntry.tokens?.[tokenIndex]}</button>)}</div>{!feedback && <button className="button button-primary" disabled={!builtTokens.length} type="button" onClick={checkConstruction}>Comprobar</button>}</div>}
