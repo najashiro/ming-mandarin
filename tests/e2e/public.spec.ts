@@ -110,15 +110,32 @@ test('Reto Mixto integra imagen, audio, corrección y alcance acumulativo', asyn
   const correctChallenge = page.locator('.mixed-challenge.playing');
   await expect(correctChallenge.getByRole('heading', { name: 'Ronda 1 / 10' })).toBeVisible();
   const correctAnswer = correctChallenge.locator('.mixed-text-options button').filter({ hasText: expected });
+  const playsBeforeCorrect = await page.evaluate(() => (window as typeof window & { __retoMainPlays: string[] }).__retoMainPlays.length);
   await correctAnswer.click();
   await expect(correctAnswer).toHaveAttribute('data-answer-state', 'correct');
   await expect(correctAnswer.getByLabel('Respuesta correcta')).toContainText('✓');
   await expect(correctChallenge.locator('.mixed-hud-correct')).toContainText('1');
   await expect(correctChallenge.locator('.mixed-hud-streak')).toContainText('1');
-  await expect(correctChallenge.getByText('✓ Correcto', { exact: true })).toBeVisible();
-  await page.waitForTimeout(250);
-  await expect(correctChallenge.getByText('✓ Correcto', { exact: true })).toBeVisible();
-  await expect(correctChallenge.getByRole('heading', { name: 'Ronda 2 / 10' })).toBeVisible({ timeout: 7_000 });
+  const positive = correctChallenge.locator('.mixed-feedback.correct');
+  await expect(positive.getByText('✓ Correcto', { exact: true })).toBeVisible();
+  await expect(positive.locator(':scope > strong')).toHaveText(expected);
+  await expect(positive.locator('[lang="zh-Latn-pinyin"]')).toBeVisible();
+  await expect(positive.locator('.mixed-correction-meaning')).not.toBeEmpty();
+  await expect.poll(async () => page.evaluate(() => (window as typeof window & { __retoMainPlays: string[] }).__retoMainPlays.length)).toBeGreaterThan(playsBeforeCorrect);
+  await expect(positive.getByRole('button', { name: /Escuchar pronunciación de/ })).toBeVisible();
+  await expect(positive.locator('.mixed-correction-actions a')).toHaveCount(1);
+  await expect(positive.locator('.mixed-correction-actions a')).toHaveAttribute('target', '_blank');
+  await expect(positive.locator('.mixed-correction-actions a')).toHaveAttribute('rel', 'noopener noreferrer');
+  await expect(positive.getByRole('button', { name: 'Continuar →' })).toBeVisible();
+  await page.waitForTimeout(2_500);
+  await expect(correctChallenge.getByRole('heading', { name: 'Ronda 1 / 10' })).toBeVisible();
+  await expect(positive).toBeVisible();
+  await expect(correctAnswer).toHaveAttribute('data-answer-state', 'correct');
+  const playsBeforeReplay = await page.evaluate(() => (window as typeof window & { __retoMainPlays: string[] }).__retoMainPlays.length);
+  await positive.getByRole('button', { name: /Escuchar pronunciación de/ }).click();
+  await expect.poll(async () => page.evaluate(() => (window as typeof window & { __retoMainPlays: string[] }).__retoMainPlays.length)).toBeGreaterThan(playsBeforeReplay);
+  await positive.getByRole('button', { name: 'Continuar →' }).click();
+  await expect(correctChallenge.getByRole('heading', { name: 'Ronda 2 / 10' })).toBeVisible();
 });
 
 test('Reto Mixto mantiene contraste móvil y una corrección compacta para Hanzi individual', async ({ page }) => {
@@ -183,6 +200,30 @@ test('Reto Mixto mantiene contraste móvil y una corrección compacta para Hanzi
     if (!mobileNav || getComputedStyle(mobileNav).display === 'none') return true;
     return element.getBoundingClientRect().bottom <= mobileNav.getBoundingClientRect().top + 1;
   })).toBe(true);
+
+  await challenge.getByRole('button', { name: 'Cerrar' }).click();
+  await card.getByRole('button', { name: /Jugar/ }).click();
+  await page.locator('.mixed-challenge.setup').getByRole('button', { name: 'Comenzar reto' }).click();
+  const positiveChallenge = page.locator('.mixed-challenge.playing');
+  await positiveChallenge.locator('.mixed-image-options button:has(img[src*="tired.webp"])').click();
+  const positive = positiveChallenge.locator('.mixed-feedback.correct');
+  await expect(positive.getByText('✓ Correcto', { exact: true })).toBeVisible();
+  await expect(positive.getByText('累', { exact: true })).toBeVisible();
+  await expect(positive.getByText('lèi', { exact: true })).toBeVisible();
+  await expect(positive.getByText('cansado/a', { exact: true })).toBeVisible();
+  await expect(positive.getByText('他很累。', { exact: true })).toBeVisible();
+  await expect(positive.getByText('Tā hěn lèi.', { exact: true })).toBeVisible();
+  await expect(positive.getByRole('button', { name: 'Escuchar ejemplo: 他很累。' })).toBeVisible();
+  await expect(positive.locator('.mixed-correction-actions a')).toHaveCount(1);
+  const positiveLayout = await positive.evaluate((element) => {
+    const actions = [...element.querySelectorAll<HTMLElement>('.mixed-correction-actions > *')].map((item) => item.getBoundingClientRect());
+    return Math.max(...actions.map((item) => item.top)) - Math.min(...actions.map((item) => item.top));
+  });
+  expect(positiveLayout).toBeLessThan(12);
+  await page.waitForTimeout(2_500);
+  await expect(positiveChallenge.getByRole('heading', { name: 'Ronda 1 / 10' })).toBeVisible();
+  await positive.getByRole('button', { name: 'Continuar →' }).click();
+  await expect(positiveChallenge.getByRole('heading', { name: 'Ronda 2 / 10' })).toBeVisible();
 });
 
 test('Reto Mixto ofrece audio repetible en la pregunta de conversación', async ({ page }) => {
@@ -212,6 +253,20 @@ test('Reto Mixto ofrece audio repetible en la pregunta de conversación', async 
   await expect(challenge.getByRole('heading', { name: 'Ronda 1 / 10' })).toBeVisible();
   await expect(challenge.locator('.mixed-text-options button[data-answer-state]')).toHaveCount(0);
   await expect(challenge.locator('[lang="zh-Latn-pinyin"]')).toHaveCount(0);
+
+  await challenge.locator('.mixed-text-options button').filter({ hasText: '认识你我也很高兴。' }).click();
+  const positive = challenge.locator('.mixed-feedback.correct');
+  await expect(positive.getByText('✓ Correcto', { exact: true })).toBeVisible();
+  await expect(positive.locator(':scope > strong')).toHaveText('认识你我也很高兴。');
+  await expect(positive.getByText('Rènshi nǐ wǒ yě hěn gāoxìng.', { exact: true })).toBeVisible();
+  await expect(positive.getByText('También estoy encantado/a de conocerte.', { exact: true })).toBeVisible();
+  await expect.poll(async () => page.evaluate(() => (window as typeof window & { __retoQuestionPlays: string[] }).__retoQuestionPlays.length)).toBeGreaterThan(2);
+  await expect(positive.getByRole('button', { name: 'Escuchar pronunciación de 认识你我也很高兴。' })).toBeVisible();
+  await expect(positive.locator('.mixed-correction-actions a')).toHaveCount(1);
+  await page.waitForTimeout(2_500);
+  await expect(challenge.getByRole('heading', { name: 'Ronda 1 / 10' })).toBeVisible();
+  await positive.getByRole('button', { name: 'Continuar →' }).click();
+  await expect(challenge.getByRole('heading', { name: 'Ronda 2 / 10' })).toBeVisible();
 });
 
 test('Reto Mixto pronuncia fichas sin superposición y consolida la frase construida', async ({ page }) => {
@@ -284,9 +339,20 @@ test('Reto Mixto pronuncia fichas sin superposición y consolida la frase constr
   await expect(challenge.locator('.mixed-built')).toHaveAttribute('data-answer-state', 'correct');
   await expect(challenge.locator('.mixed-hud-correct')).toContainText('1');
   await expect(challenge.locator('.mixed-hud-streak')).toContainText('1');
-  await expect(challenge.getByText('✓ Correcto', { exact: true })).toBeVisible();
+  const positive = challenge.locator('.mixed-feedback.correct');
+  await expect(positive.getByText('✓ Correcto', { exact: true })).toBeVisible();
+  await expect(positive.locator(':scope > strong')).toHaveText('我叫马大为。');
+  await expect(positive.getByText('Wǒ jiào Mǎ Dàwéi.', { exact: true })).toBeVisible();
+  await expect(positive.getByText('Me llamo Ma Dawei.', { exact: true })).toBeVisible();
+  await expect(positive.getByRole('button', { name: 'Escuchar pronunciación de 我叫马大为。' })).toBeVisible();
+  await expect(positive.locator('.mixed-correction-actions a')).toHaveCount(1);
+  await expect(positive.getByRole('button', { name: 'Continuar →' })).toBeVisible();
   await expect.poll(async () => page.evaluate(() => (window as typeof window & { __retoAudioTracker: { plays: string[] } }).__retoAudioTracker.plays.some((src) => src.includes('l1-s-wojiao-madawei.mp3')))).toBe(true);
-  await expect(challenge.getByRole('heading', { name: 'Ronda 2 / 10' })).toBeVisible({ timeout: 7_000 });
+  await page.waitForTimeout(2_500);
+  await expect(challenge.getByRole('heading', { name: 'Ronda 1 / 10' })).toBeVisible();
+  await expect(challenge.locator('.mixed-built')).toHaveAttribute('data-answer-state', 'correct');
+  await positive.getByRole('button', { name: 'Continuar →' }).click();
+  await expect(challenge.getByRole('heading', { name: 'Ronda 2 / 10' })).toBeVisible();
 });
 
 test('L2, L3 y los repasos acumulativos conservan el alcance', async ({ page }) => {

@@ -79,7 +79,6 @@ export function RetoMixto({ scope, onClose }: Props) {
   const streakRef = useRef(0);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const audioRun = useRef(0);
-  const advanceRun = useRef(0);
   const feedbackRef = useRef<HTMLDivElement | null>(null);
 
   const currentQuestion = queue[index];
@@ -91,7 +90,6 @@ export function RetoMixto({ scope, onClose }: Props) {
   const allowedSelections = selectionDefinitions.filter((definition) => definition.lessons.every((lesson) => lessonsByScope[scope].includes(lesson)));
 
   useEffect(() => () => {
-    advanceRun.current += 1;
     audioRun.current += 1;
     audioRef.current?.pause();
   }, []);
@@ -151,6 +149,14 @@ export function RetoMixto({ scope, onClose }: Props) {
     return playAudioSource(entry.audioSrc, key, awaitEnd);
   }
 
+  function stopAudio() {
+    audioRun.current += 1;
+    audioRef.current?.pause();
+    audioRef.current = null;
+    setAudioState('idle');
+    setActiveAudioKey('');
+  }
+
   function playQuestionAudio() {
     if (!currentConversation) return;
     void playAudioSource(audioForMandarinText(currentConversation.promptHanzi), 'question');
@@ -166,7 +172,7 @@ export function RetoMixto({ scope, onClose }: Props) {
     const lessons = selectionDefinitions.find((definition) => definition.id === selection)?.lessons ?? lessonsByScope[scope];
     const deck = customDeck ?? buildRetoMixtoDeck(retoMixtoCorpus, retoMixtoConversations, [...lessons] as LessonNumber[], roundCount);
     const firstEntry = deck[0] ? entriesById.get(deck[0].entryId) : undefined;
-    advanceRun.current += 1;
+    stopAudio();
     setQueue(deck);
     setIndex(0);
     setAttempts([]);
@@ -205,7 +211,6 @@ export function RetoMixto({ scope, onClose }: Props) {
 
   async function register(correct: boolean) {
     if (!currentQuestion || !currentEntry || feedback) return;
-    const run = ++advanceRun.current;
     setAttempts((values) => [...values, { question: currentQuestion, correct }]);
     setFeedback(correct ? 'correct' : 'incorrect');
     trackAnalyticsEvent('exercise_completed', { contentId: `reto-mixto:${currentQuestion.mode}:${currentEntry.id}`, correct });
@@ -214,8 +219,6 @@ export function RetoMixto({ scope, onClose }: Props) {
       setCurrentStreak(streakRef.current);
       setMaxStreak((value) => Math.max(value, streakRef.current));
       await playEntryAudio(currentEntry, true);
-      if (run !== advanceRun.current) return;
-      window.setTimeout(() => { if (run === advanceRun.current) advance(); }, 520);
       return;
     }
     streakRef.current = 0;
@@ -248,8 +251,8 @@ export function RetoMixto({ scope, onClose }: Props) {
     playToken(tokenIndex);
   }
 
-  function continueAfterError() {
-    advanceRun.current += 1;
+  function continueAfterFeedback() {
+    stopAudio();
     advance();
   }
 
@@ -329,6 +332,19 @@ export function RetoMixto({ scope, onClose }: Props) {
 
     {isConstruction && <div className="mixed-construction"><div className={`mixed-built${feedback ? ` answer-${feedback}` : ''}`} data-answer-state={feedback ?? undefined} aria-label="Respuesta construida">{feedback && <i className="mixed-option-mark" aria-label={feedback === 'correct' ? 'Respuesta construida correcta' : 'Respuesta construida incorrecta'}>{feedback === 'correct' ? '✓' : '✕'}</i>}{builtTokens.length ? builtTokens.map((tokenIndex) => <button type="button" disabled={Boolean(feedback)} onClick={() => removeToken(tokenIndex)} key={tokenIndex}>{currentEntry.tokens?.[tokenIndex]}</button>) : <span>Toca los bloques en orden</span>}</div>{feedback === 'incorrect' && <div className="mixed-construction-solution" data-answer-state="correct"><i className="mixed-option-mark" aria-label="Respuesta correcta">✓</i><strong lang="zh-Hans">{currentEntry.hanzi}</strong></div>}<div className="mixed-token-bank">{availableTokenIndexes.map((tokenIndex) => <button type="button" disabled={Boolean(feedback)} onClick={() => addToken(tokenIndex)} key={tokenIndex}>{currentEntry.tokens?.[tokenIndex]}</button>)}</div>{!feedback && <button className="button button-primary" disabled={!builtTokens.length} type="button" onClick={checkConstruction}>Comprobar</button>}</div>}
 
-    <div aria-live="polite">{feedback === 'correct' && <div className="mixed-feedback correct" ref={feedbackRef}><b>✓ Correcto</b><span>Escucha la respuesta.</span></div>}{feedback === 'incorrect' && <div className="mixed-feedback incorrect" ref={feedbackRef}><b className="mixed-incorrect-title">✕ Incorrecto</b><strong lang="zh-Hans">{currentEntry.hanzi}</strong><h3><PinyinText>{currentEntry.pinyin}</PinyinText></h3><p className="mixed-correction-meaning">{currentEntry.meaningEs}</p>{usageExample && <div className="mixed-usage-example"><div><span lang="zh-Hans">{usageExample.hanzi}</span><span aria-hidden="true"> · </span><PinyinText>{usageExample.pinyin}</PinyinText>{usageExample.audioSrc && <button type="button" onClick={() => void playAudioSource(usageExample.audioSrc, 'example')} aria-label={`Escuchar ejemplo: ${usageExample.hanzi}`} title="Escuchar ejemplo"><span aria-hidden="true">🔊</span></button>}</div><small>{usageExample.meaningEs}</small></div>}<div className="mixed-correction-actions"><button className={`audio-button${answerAudioActive ? ' playing' : ''}`} type="button" onClick={() => void playEntryAudio(currentEntry)} aria-label={`Escuchar pronunciación de ${currentEntry.hanzi}`} title={`Escuchar ${currentEntry.hanzi}`}><span aria-hidden="true">🔊</span> {answerAudioActive ? 'Sonando…' : 'Escuchar'}</button>{hanziTarget && <a href={`/study/l1-l2-l3/hanzi?character=${encodeURIComponent(hanziTarget)}`} target="_blank" rel="noopener noreferrer">Hanzi ↗</a>}<button className="button button-primary mixed-continue" type="button" onClick={continueAfterError}>Continuar →</button></div></div>}</div>
+    <div aria-live="polite">
+      {feedback && <div className={`mixed-feedback answer-card ${feedback}`} ref={feedbackRef}>
+        <b className={feedback === 'correct' ? 'mixed-correct-title' : 'mixed-incorrect-title'}>{feedback === 'correct' ? '✓ Correcto' : '✕ Incorrecto'}</b>
+        <strong lang="zh-Hans">{currentEntry.hanzi}</strong>
+        <h3><PinyinText>{currentEntry.pinyin}</PinyinText></h3>
+        <p className="mixed-correction-meaning">{currentEntry.meaningEs}</p>
+        {usageExample && <div className="mixed-usage-example"><div><span lang="zh-Hans">{usageExample.hanzi}</span><span aria-hidden="true"> · </span><PinyinText>{usageExample.pinyin}</PinyinText>{usageExample.audioSrc && <button type="button" onClick={() => void playAudioSource(usageExample.audioSrc, 'example')} aria-label={`Escuchar ejemplo: ${usageExample.hanzi}`} title="Escuchar ejemplo"><span aria-hidden="true">🔊</span></button>}</div><small>{usageExample.meaningEs}</small></div>}
+        <div className="mixed-correction-actions">
+          <button className={`audio-button${answerAudioActive ? ' playing' : ''}`} type="button" onClick={() => void playEntryAudio(currentEntry)} aria-label={`Escuchar pronunciación de ${currentEntry.hanzi}`} title={`Escuchar ${currentEntry.hanzi}`}><span aria-hidden="true">🔊</span> {answerAudioActive ? 'Sonando…' : 'Escuchar'}</button>
+          {hanziTarget && <a href={`/study/l1-l2-l3/hanzi?character=${encodeURIComponent(hanziTarget)}`} target="_blank" rel="noopener noreferrer">Hanzi ↗</a>}
+          <button className="button button-primary mixed-continue" type="button" onClick={continueAfterFeedback}>Continuar →</button>
+        </div>
+      </div>}
+    </div>
   </div>;
 }

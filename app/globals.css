@@ -794,14 +794,17 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .mixed-construction-solution strong{font:700 1.3rem "Noto Serif SC",SimSun,serif;text-align:center}
 .mixed-feedback{max-width:680px;margin:16px auto 0;border-radius:20px;text-align:center;scroll-margin-block:82px 84px;animation:mixed-feedback-in .18s ease-out}
 @keyframes mixed-feedback-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
-.mixed-feedback.correct{padding:13px;background:#e7f5eb;color:#176b38;display:grid;gap:2px}
-.mixed-feedback.correct b{font-size:1.3rem}
-.mixed-feedback.incorrect{padding:15px 16px 13px;border:1px solid #edc7bd;background:#fff9f5;color:var(--ink);box-shadow:0 10px 28px rgba(8,34,27,.14)}
+.mixed-feedback.answer-card{padding:15px 16px 13px;color:var(--ink);box-shadow:0 10px 28px rgba(8,34,27,.14)}
+.mixed-feedback.correct{border:1px solid #9dcfb0;background:#f2faf3}
+.mixed-feedback.incorrect{border:1px solid #edc7bd;background:#fff9f5}
+.mixed-correct-title{display:block;margin-bottom:2px;color:#247c47;font-size:1.12rem}
 .mixed-incorrect-title{display:block;margin-bottom:2px;color:#a53b2e;font-size:1.12rem}
-.mixed-feedback.incorrect>strong{display:block;margin:3px 0 0;font:700 clamp(2.9rem,9vw,4.8rem)/1.02 "Noto Serif SC",SimSun,serif}
-.mixed-feedback.incorrect h3{margin:3px 0;color:var(--red);font-size:1.25rem}
+.mixed-feedback.answer-card>strong{display:block;margin:3px 0 0;font:700 clamp(2.9rem,9vw,4.8rem)/1.02 "Noto Serif SC",SimSun,serif}
+.mixed-feedback.answer-card h3{margin:3px 0;color:var(--red);font-size:1.25rem}
+.mixed-feedback.correct h3{color:var(--jade)}
 .mixed-correction-meaning{margin:2px 0 7px;color:#655f59;font-size:.94rem}
 .mixed-usage-example{margin:8px auto 4px;padding:8px 10px;display:grid;gap:2px;border-radius:12px;background:#f1ebe2;color:#4d4944}
+.mixed-feedback.correct .mixed-usage-example{background:#e5f2e7}
 .mixed-usage-example>div{display:flex;align-items:center;justify-content:center;gap:4px;font-size:.95rem}
 .mixed-usage-example>div>span:first-child{font-family:"Noto Serif SC",SimSun,serif;font-weight:800}
 .mixed-usage-example button{width:38px;height:38px;flex-basis:38px;margin-left:5px}
@@ -850,9 +853,8 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
   .mixed-built,.mixed-token-bank{min-height:54px;padding:7px;gap:7px;border-radius:14px}
   .mixed-built button,.mixed-token-bank button{min-height:44px;padding:7px 11px}
   .mixed-feedback{margin-top:11px}
-  .mixed-feedback.correct{padding:10px}
-  .mixed-feedback.incorrect{padding:12px 10px 10px}
-  .mixed-feedback.incorrect>strong{font-size:clamp(2.7rem,14vw,4rem)}
+  .mixed-feedback.answer-card{padding:12px 10px 10px}
+  .mixed-feedback.answer-card>strong{font-size:clamp(2.7rem,14vw,4rem)}
   .mixed-usage-example{margin-top:7px;padding:6px 8px}
   .mixed-correction-actions{gap:6px}
   .mixed-correction-actions>.audio-button,.mixed-correction-actions a,.mixed-correction-actions .mixed-continue{padding-inline:10px}
