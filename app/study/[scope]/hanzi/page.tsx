@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getCurrentUser } from '@/app/auth';
 import { CurriculumNav } from '@/components/CurriculumNav';
+import { HanziFocusScroller } from '@/components/hanzi/HanziFocusScroller';
 import { HanziLab } from '@/components/hanzi/HanziLab';
 import { SiteShell, LessonHeader } from '@/components/SiteShell';
 import { getHanziProgressMap } from '@/lib/server/persistence';
@@ -9,6 +10,59 @@ import manifest from '@/public/hanzi-data/manifest.json';
 import { getCurriculum, isCurriculumScope } from '@/seed/curriculum';
 import { canonicalCharacters } from '@/seed/characters';
 
-export const dynamic='force-dynamic';
-const tabs=['Aprender','Componentes','Trazos','Practicar'] as const;
-export default async function ScopeHanziPage({params,searchParams}:{params:Promise<{scope:string}>;searchParams:Promise<{character?:string;tab?:string;mode?:string}>}){const [{scope:rawScope},query,user]=await Promise.all([params,searchParams,getCurrentUser()]);if(!isCurriculumScope(rawScope))notFound();const data=getCurriculum(rawScope);const progress=user?await getHanziProgressMap(user):{};const requested=query.mode==='practice'?'Practicar':query.tab;const tab=tabs.includes(requested as typeof tabs[number])?requested as typeof tabs[number]:'Aprender';const initial=data.characters.some((item)=>item.hanzi===query.character)?query.character:data.characters[0]?.hanzi;return <SiteShell><main><LessonHeader eyebrow={`${data.definition.shortLabel} · 汉字`} title="Hanzi: forma, sonido y trazos" description="Reconocimiento, pronunciación estática, orden de trazos y escritura táctil."/><CurriculumNav scope={rawScope} section="hanzi"/><HanziLab characters={data.characters} canonicalHanzi={canonicalCharacters.map((character)=>character.hanzi)} stages={data.stages} manifest={manifest as Record<string,HanziManifestEntry>} initialProgress={progress} initialCharacter={initial} initialTab={tab} scopeLabel={data.definition.label} route={`/study/${rawScope}/hanzi`}/></main></SiteShell>;}
+export const dynamic = 'force-dynamic';
+
+const tabs = ['Aprender', 'Componentes', 'Trazos', 'Practicar'] as const;
+
+export default async function ScopeHanziPage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ scope: string }>;
+  searchParams: Promise<{ character?: string; tab?: string; mode?: string; focus?: string }>;
+}) {
+  const [{ scope: rawScope }, query, user] = await Promise.all([params, searchParams, getCurrentUser()]);
+  if (!isCurriculumScope(rawScope)) notFound();
+
+  const data = getCurriculum(rawScope);
+  const progress = user ? await getHanziProgressMap(user) : {};
+  const requested = query.mode === 'practice' ? 'Practicar' : query.tab;
+  const tab = tabs.includes(requested as (typeof tabs)[number])
+    ? (requested as (typeof tabs)[number])
+    : 'Aprender';
+  const initial = data.characters.some((item) => item.hanzi === query.character)
+    ? query.character
+    : data.characters[0]?.hanzi;
+
+  // Reto mixto currently opens the Hanzi page with only ?character=.
+  // Keep supporting that URL, while also allowing an explicit ?focus=glyph
+  // for any future deep links. Links that intentionally open another tab do
+  // not auto-scroll.
+  const focusGlyph = query.focus === 'glyph'
+    || Boolean(query.character && !query.tab && !query.mode);
+
+  return (
+    <SiteShell>
+      <main>
+        <LessonHeader
+          eyebrow={`${data.definition.shortLabel} · 汉字`}
+          title="Hanzi: forma, sonido y trazos"
+          description="Reconocimiento, pronunciación estática, orden de trazos y escritura táctil."
+        />
+        <CurriculumNav scope={rawScope} section="hanzi" />
+        <HanziFocusScroller enabled={focusGlyph && tab === 'Aprender'} />
+        <HanziLab
+          characters={data.characters}
+          canonicalHanzi={canonicalCharacters.map((character) => character.hanzi)}
+          stages={data.stages}
+          manifest={manifest as Record<string, HanziManifestEntry>}
+          initialProgress={progress}
+          initialCharacter={initial}
+          initialTab={tab}
+          scopeLabel={data.definition.label}
+          route={`/study/${rawScope}/hanzi`}
+        />
+      </main>
+    </SiteShell>
+  );
+}
