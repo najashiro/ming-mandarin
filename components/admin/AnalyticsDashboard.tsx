@@ -1,3 +1,4 @@
+import { Hanzi } from '@/components/Hanzi';
 import Link from 'next/link';
 import { formatStudyTime } from '@/lib/analytics/shared';
 import type { AnalyticsDashboardData } from '@/lib/server/analytics';
@@ -5,7 +6,7 @@ import type { AnalyticsDashboardData } from '@/lib/server/analytics';
 const rangeLabels = { 1: 'Hoy', 7: '7 días', 30: '30 días' } as const;
 
 function EmptyRow({ message = 'Aún no hay actividad en este periodo.' }: { message?: string }) {
-  return <p className="analytics-empty">{message}</p>;
+  return <p className="analytics-empty"><Hanzi>{message}</Hanzi></p>;
 }
 
 function Completion({ started, completed }: { started: number; completed: number }) {
@@ -39,16 +40,16 @@ export function AnalyticsDashboard({ data, days }: { data: AnalyticsDashboardDat
       </article>
 
       <article className="panel analytics-wide"><header><p className="eyebrow">USO</p><h2>Contenido más utilizado</h2></header>
-        {data.modules.length ? <div className="analytics-module-summary">{data.modules.map((item) => <div key={item.id}><b>{item.id}</b><span>{formatStudyTime(item.activeSeconds)}</span><small>{item.pageViews} vistas · {item.exercises} ejercicios</small></div>)}</div> : null}
+        {data.modules.length ? <div className="analytics-module-summary">{data.modules.map((item) => <div key={item.id}><b><Hanzi>{item.id}</Hanzi></b><span>{formatStudyTime(item.activeSeconds)}</span><small>{item.pageViews} vistas · {item.exercises} ejercicios</small></div>)}</div> : null}
         {data.content.length ? <div className="analytics-content-list">{data.content.map((item) => <div key={`${item.module}-${item.route}`}><span className="analytics-module">{item.module}</span><b>{item.route}</b><span>{item.pageViews} vistas</span><span>{formatStudyTime(item.activeSeconds)}</span></div>)}</div> : <EmptyRow/>}
       </article>
 
       <article className="panel"><header><p className="eyebrow">JUEGOS</p><h2>Inicio y finalización</h2></header>
-        {data.games.length ? <div className="analytics-compact-list">{data.games.map((item) => <div key={item.id}><b>{item.id}</b><Completion started={item.started} completed={item.completed}/></div>)}</div> : <EmptyRow/>}
+        {data.games.length ? <div className="analytics-compact-list">{data.games.map((item) => <div key={item.id}><b><Hanzi>{item.id}</Hanzi></b><Completion started={item.started} completed={item.completed}/></div>)}</div> : <EmptyRow/>}
       </article>
 
       <article className="panel"><header><p className="eyebrow">HANZI</p><h2>Caracteres practicados</h2></header>
-        {data.hanzi.length ? <div className="analytics-hanzi-list">{data.hanzi.map((item) => <div key={item.id}><b>{item.id}</b><span>{item.practiced} prácticas</span></div>)}</div> : <EmptyRow/>}
+        {data.hanzi.length ? <div className="analytics-hanzi-list">{data.hanzi.map((item) => <div key={item.id}><b><Hanzi>{item.id}</Hanzi></b><span>{item.practiced} prácticas</span></div>)}</div> : <EmptyRow/>}
       </article>
 
       <article className="panel"><header><p className="eyebrow">EXÁMENES</p><h2>Inicio y finalización</h2></header>

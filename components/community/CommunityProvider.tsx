@@ -1,4 +1,5 @@
 'use client';
+import { Hanzi } from '@/components/Hanzi';
 
 import dynamic from 'next/dynamic';
 import { createContext, useContext, useRef, useState } from 'react';
@@ -21,5 +22,5 @@ export function CommunityContextProvider({ context, children }: { context: Commu
 export function CommunityButton({ context, label = 'Comunidad', compact = false }: { context?: Partial<CommunityContext>; label?: string; compact?: boolean }) {
   const controller = useContext(Context);
   if (!controller) return null;
-  return <button type="button" className={`community-launcher${compact ? ' compact' : ''}`} onClick={(event) => controller.openCommunity(context, event.currentTarget)} aria-haspopup="dialog" aria-label={compact ? label : undefined}><span aria-hidden="true">💬</span>{!compact && <span>{label}</span>}</button>;
+  return <button type="button" className={`community-launcher${compact ? ' compact' : ''}`} onClick={(event) => controller.openCommunity(context, event.currentTarget)} aria-haspopup="dialog" aria-label={compact ? label : undefined}><span aria-hidden="true">💬</span>{!compact && <span><Hanzi>{label}</Hanzi></span>}</button>;
 }

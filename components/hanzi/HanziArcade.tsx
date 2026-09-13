@@ -1,4 +1,5 @@
 'use client';
+import { Hanzi, hanziInputClass } from '@/components/Hanzi';
 
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
@@ -48,7 +49,7 @@ export function HanziArcade({ characters, gameIndex, round, onScore, onComplete 
         setMessage(summary.mistakes === 0 ? '无误 · Dojo perfecto.' : `Completado con ${summary.mistakes} ajustes.`);
       }}
     />
-    <div><h3>Escribe {character.hanzi}</h3><p><PinyinText>{character.pinyin}</PinyinText> · {character.meaning}</p><p>{message || 'El mismo motor del laboratorio comprueba orden, inicio y dirección.'}</p><div className="arena-actions"><button className="button button-primary" type="button" disabled={quizActive} onClick={() => { setQuizActive(true); setMessage(''); stage.current?.startQuiz('guided'); }}>Comenzar dojo</button><Link href={`/lesson/1/hanzi?character=${encodeURIComponent(character.hanzi)}&mode=practice`}>Practicar y guardar →</Link></div></div>
+    <div><h3>Escribe <Hanzi>{character.hanzi}</Hanzi></h3><p><PinyinText>{character.pinyin}</PinyinText> · <Hanzi>{character.meaning}</Hanzi></p><p><Hanzi>{message || 'El mismo motor del laboratorio comprueba orden, inicio y dirección.'}</Hanzi></p><div className="arena-actions"><button className="button button-primary" type="button" disabled={quizActive} onClick={() => { setQuizActive(true); setMessage(''); stage.current?.startQuiz('guided'); }}>Comenzar dojo</button><Link href={`/lesson/1/hanzi?character=${encodeURIComponent(character.hanzi)}&mode=practice`}>Practicar y guardar →</Link></div></div>
   </div>;
 
   if (gameIndex === 22) {
@@ -64,9 +65,9 @@ export function HanziArcade({ characters, gameIndex, round, onScore, onComplete 
         setMessage('Se revela un trazo más. Inténtalo de nuevo.');
       }
     }
-    return <div className="arcade-hanzi-layout"><HanziStrokeSvg character={character.hanzi} data={data} visibleStrokes={revealed} showDirections={false} showNumbers={false} /><div><h3>¿Qué carácter aparece?</h3><p>Visible: {revealed} / {data.strokes.length} trazos.</p><input className="arcade-input" aria-label="Carácter revelado" value={answer} onChange={(event) => setAnswer(event.target.value)} maxLength={1} /><p>{message}</p><button className="button button-primary" type="button" onClick={checkReveal}>Comprobar</button></div></div>;
+    return <div className="arcade-hanzi-layout"><HanziStrokeSvg character={character.hanzi} data={data} visibleStrokes={revealed} showDirections={false} showNumbers={false} /><div><h3>¿Qué carácter aparece?</h3><p>Visible: {revealed} / {data.strokes.length} trazos.</p><input className={`arcade-input ${hanziInputClass(answer)}`} aria-label="Carácter revelado" value={answer} onChange={(event) => setAnswer(event.target.value)} maxLength={1} /><p><Hanzi>{message}</Hanzi></p><button className="button button-primary" type="button" onClick={checkReveal}>Comprobar</button></div></div>;
   }
 
   const isComponents = gameIndex === 20;
-  return <div className="arcade-hanzi-layout compact-game"><div className="arcade-hanzi-glyph">{character.hanzi}</div><div><h3>{isComponents ? 'Constructor de caracteres' : 'Radical Lab'}</h3><p>{isComponents ? `Componentes registrados: ${character.components.join(' + ')}.` : `Radical registrado: ${character.radical}.`}</p><Link className="button button-primary" href={`/lesson/1/hanzi?character=${encodeURIComponent(character.hanzi)}&tab=Componentes`}>Explorar en el motor Hanzi</Link></div></div>;
+  return <div className="arcade-hanzi-layout compact-game"><div className="arcade-hanzi-glyph"><Hanzi>{character.hanzi}</Hanzi></div><div><h3>{isComponents ? 'Constructor de caracteres' : 'Radical Lab'}</h3><p><Hanzi>{isComponents ? `Componentes registrados: ${character.components.join(' + ')}.` : `Radical registrado: ${character.radical}.`}</Hanzi></p><Link className="button button-primary" href={`/lesson/1/hanzi?character=${encodeURIComponent(character.hanzi)}&tab=Componentes`}>Explorar en el motor Hanzi</Link></div></div>;
 }

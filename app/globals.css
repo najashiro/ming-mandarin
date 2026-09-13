@@ -22,7 +22,7 @@ body {
   margin: 0;
   background: radial-gradient(circle at 83% 0%, rgba(205, 222, 210, .65), transparent 28rem), var(--paper);
   color: var(--ink);
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 .pinyin-text {
   color: inherit !important;
@@ -35,6 +35,13 @@ body {
   text-transform: none !important;
 }
 .page-main { min-height: 100vh; padding-bottom: 40px; }
+
+/* Text runs must inherit the existing size, weight and spacing, including in
+   cards whose legacy CSS styles every descendant span. No layout is added. */
+.hanzi-run { all: unset !important; }
+.font-hanzi {
+  font-family: var(--font-hanzi), "Noto Serif SC", "Songti SC", "SimSun", serif !important;
+}
 a { color: inherit; text-decoration: none; }
 button, a { -webkit-tap-highlight-color: transparent; }
 button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offset: 3px; }
@@ -42,7 +49,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 
 .topbar { height: 76px; padding: 0 max(20px, calc((100vw - 1180px) / 2)); display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; border-bottom: 1px solid var(--line); background: rgba(246, 243, 235, .88); backdrop-filter: blur(14px); position: sticky; top: 0; z-index: 20; }
 .brand { display: inline-flex; width: fit-content; align-items: center; gap: 11px; }
-.brand-mark { width: 39px; height: 39px; display: grid; place-items: center; color: white; background: var(--jade); border-radius: 11px 11px 11px 3px; font: 700 22px/1 "Noto Serif SC", SimSun, serif; }
+.brand-mark { width: 39px; height: 39px; display: grid; place-items: center; color: white; background: var(--jade); border-radius: 11px 11px 11px 3px; font: 700 22px/1 var(--font-hanzi), "Songti SC", "SimSun", serif; }
 .brand strong, .brand small { display: block; }
 .brand strong { font: 700 17px/1.1 Georgia, serif; letter-spacing: .03em; }
 .brand small { color: var(--muted); margin-top: 3px; font-size: 10px; text-transform: uppercase; letter-spacing: .09em; }
@@ -54,7 +61,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 
 .hero { min-height: 470px; padding: 82px 0 54px; display: grid; grid-template-columns: 1.25fr .75fr; align-items: center; gap: 100px; }
 .eyebrow { margin: 0 0 13px; color: var(--jade); font-size: 11px; font-weight: 800; letter-spacing: .14em; }
-.hero h1 { margin: 0; font: 600 clamp(54px, 7.5vw, 90px)/1.04 "Noto Serif SC", SimSun, serif; letter-spacing: .015em; }
+.hero h1 { margin: 0; font: 600 clamp(54px, 7.5vw, 90px)/1.04 var(--font-hanzi), "Songti SC", "SimSun", serif; letter-spacing: .015em; }
 .pinyin { margin: 14px 0 2px; color: var(--jade); font: italic 500 clamp(20px, 2.6vw, 29px)/1.4 Georgia, serif; }
 .translation { margin: 0; color: var(--muted); font-size: 18px; }
 .intro { max-width: 625px; margin: 24px 0 28px; color: #4f5b56; font-size: 15px; line-height: 1.75; }
@@ -67,9 +74,9 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .time-note i { font-style: normal; color: var(--jade); margin-right: 4px; }
 .ink-card { position: relative; padding: 39px 38px 33px; overflow: hidden; border: 1px solid rgba(110, 89, 59, .18); border-radius: 4px 25px 4px 25px; background: linear-gradient(145deg, rgba(255,255,255,.86), rgba(234,228,214,.78)); box-shadow: var(--shadow); }
 .ink-card::after { content: ''; position: absolute; width: 180px; height: 180px; right: -72px; bottom: -82px; border: 1px solid rgba(29, 106, 89, .1); border-radius: 50%; box-shadow: 0 0 0 21px rgba(29, 106, 89, .035), 0 0 0 43px rgba(29, 106, 89, .025); }
-.seal { position: absolute; top: 18px; right: 20px; width: 38px; height: 38px; display: grid; place-items: center; color: var(--red); border: 2px solid currentColor; font-family: SimSun, serif; transform: rotate(4deg); opacity: .8; }
+.seal { position: absolute; top: 18px; right: 20px; width: 38px; height: 38px; display: grid; place-items: center; color: var(--red); border: 2px solid currentColor; font-family: var(--font-hanzi), "Songti SC", "SimSun", serif; transform: rotate(4deg); opacity: .8; }
 .ink-kicker { margin: 0 0 18px; color: var(--muted); font-size: 10px; font-weight: 800; letter-spacing: .16em; }
-.ink-hanzi { margin: 0; font: 600 32px/1.5 "Noto Serif SC", SimSun, serif; }
+.ink-hanzi { margin: 0; font: 600 32px/1.5 var(--font-hanzi), "Songti SC", "SimSun", serif; }
 .ink-pinyin { margin: 2px 0 0; color: var(--jade); font: italic 15px Georgia, serif; }
 .ink-divider { width: 38px; height: 2px; margin: 24px 0 15px; background: var(--red); }
 .ink-card > p:last-of-type { color: var(--muted); font-size: 13px; }
@@ -86,12 +93,12 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .today-card, .focus-card { border: 1px solid var(--line); background: rgba(255,255,255,.65); }
 .today-card { padding: 34px; border-radius: 16px; }
 .section-heading { display: flex; align-items: start; justify-content: space-between; gap: 20px; }
-.section-heading h2 { margin: 0; font: 700 28px/1.2 Georgia, "Noto Serif SC", serif; }
+.section-heading h2 { margin: 0; font: 700 28px/1.2 Georgia, var(--font-hanzi), "Songti SC", "SimSun", serif; }
 .date-pill { padding: 8px 11px; border-radius: 6px; background: var(--jade-soft); color: var(--jade); font-size: 10px; font-weight: 800; letter-spacing: .06em; }
 .muted { color: var(--muted); line-height: 1.6; font-size: 13px; }
 .lesson-list { margin: 23px 0; border-top: 1px solid var(--line); }
 .lesson-list > div { min-height: 72px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 14px; border-bottom: 1px solid var(--line); }
-.list-icon { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 10px; font-family: SimSun, serif; font-weight: 800; }
+.list-icon { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 10px; font-family: var(--font-hanzi), "Songti SC", "SimSun", serif; font-weight: 800; }
 .list-icon.jade { background: var(--jade-soft); color: var(--jade); }
 .list-icon.amber { background: #f3e7d4; color: var(--amber); }
 .list-icon.red { background: #f0ded9; color: var(--red); }
@@ -119,7 +126,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .module-card { min-height: 175px; padding: 21px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid var(--line); border-radius: 13px; background: rgba(232, 229, 220, .5); color: #85908b; }
 .module-card.is-open { background: rgba(255,255,255,.72); color: var(--ink); }
 .module-number { color: var(--jade); font: 700 12px Georgia, serif; }
-.module-card h3 { margin: 0; font: 700 16px Georgia, "Noto Serif SC", serif; }
+.module-card h3 { margin: 0; font: 700 16px Georgia, var(--font-hanzi), "Songti SC", "SimSun", serif; }
 .module-card p { margin: 7px 0 0; color: var(--muted); font-size: 11px; }
 .module-state { width: fit-content; padding: 5px 8px; border-radius: 5px; background: rgba(98,111,105,.1); font-size: 9px; font-weight: 800; text-transform: uppercase; letter-spacing: .07em; }
 .is-open .module-state { background: var(--jade-soft); color: var(--jade); }
@@ -144,7 +151,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
   .module-grid { grid-template-columns: 1fr 1fr; }
   .mobile-nav { position: fixed; inset: auto 0 0; z-index: 30; height: 68px; display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1px solid var(--line); background: rgba(252,250,245,.96); backdrop-filter: blur(15px); }
   .mobile-nav a { display: grid; place-content: center; gap: 2px; text-align: center; color: var(--muted); font-size: 9px; font-weight: 700; }
-  .mobile-nav a span { font: 18px/1 SimSun, serif; }
+  .mobile-nav a span { font: 18px/1 var(--font-hanzi), "Songti SC", "SimSun", serif; }
   .mobile-nav .is-active { color: var(--jade); }
 }
 
@@ -164,14 +171,14 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 
 /* Interior pages and learning tools */
 .page-hero { padding: 70px 0 42px; border-bottom: 1px solid var(--line); }
-.page-hero h1 { max-width: 900px; margin: 0; font: 700 clamp(40px, 7vw, 72px)/1.08 Georgia, "Noto Serif SC", SimSun, serif; }
+.page-hero h1 { max-width: 900px; margin: 0; font: 700 clamp(40px, 7vw, 72px)/1.08 Georgia, var(--font-hanzi), "Songti SC", "SimSun", serif; }
 .page-hero > p:last-child:not(.eyebrow):not(.pinyin) { max-width: 760px; margin: 18px 0 0; color: var(--muted); line-height: 1.7; }
 .site-footer { margin-top: 90px; padding: 35px 0 100px; display: flex; justify-content: space-between; gap: 30px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
 .site-footer b { color: var(--ink); font: 700 18px Georgia, serif; }
 .site-footer p { margin: 6px 0 0; }
 .site-footer nav { display: flex; flex-wrap: wrap; gap: 22px; }
 .panel { padding: 28px; border: 1px solid var(--line); border-radius: 15px; background: rgba(255,255,255,.72); box-shadow: 0 10px 35px rgba(45,60,52,.04); }
-.panel h2 { margin: 6px 0 14px; font: 700 24px/1.25 Georgia, "Noto Serif SC", serif; }
+.panel h2 { margin: 6px 0 14px; font: 700 24px/1.25 Georgia, var(--font-hanzi), "Songti SC", "SimSun", serif; }
 .panel p, .source-note { color: var(--muted); line-height: 1.65; }
 .narrow { width: min(840px, calc(100% - 40px)); margin-top: 46px; }
 .source-badge, .source-note { font-size: 11px; }
@@ -205,9 +212,11 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .category { padding: 4px 7px; border-radius: 4px; background: var(--jade-soft); color: var(--jade); font-size: 8px; text-transform: uppercase; }
 .category.supplementary { color: var(--amber); background: #f3e7d4; }
 .category.teacher_supplement { color: var(--red); background: #f0ded9; }
-.hanzi-button { display: block; margin: 19px auto 1px; border: 0; background: transparent; color: var(--ink); font: 600 58px/1.2 SimSun, serif; cursor: pointer; }
+.hanzi-button { display: block; margin: 19px auto 1px; border: 0; background: transparent; color: var(--ink); font: 600 58px/1.2 var(--font-hanzi), "Songti SC", "SimSun", serif; cursor: pointer; }
 .word-pinyin { margin: 0 0 12px; color: var(--jade) !important; font: italic 16px Georgia, serif; }
 .hidden-meaning { min-height: 24px; font-style: italic; }
+/* Inline Chinese notes share the translation's existing line box. */
+.vocab-card > p .hanzi-run { line-height: 0 !important; }
 .vocab-card dl { min-height: 108px; margin: 18px 0; padding-top: 12px; border-top: 1px solid var(--line); font-size: 11px; }
 .vocab-card dl div { display: grid; grid-template-columns: 55px 1fr; gap: 8px; margin: 6px 0; }
 .vocab-card dt { color: var(--muted); }.vocab-card dd { margin: 0; }
@@ -218,14 +227,14 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .difficulty { color: var(--muted); font-size: 11px; }
 .progress-track { height: 5px; margin: 23px 0 35px; overflow: hidden; border-radius: 5px; background: #dfe4df; }
 .progress-track i { display: block; height: 100%; background: var(--jade); transition: width .3s; }
-.question { margin: 25px 0; font: 650 clamp(22px,4vw,34px)/1.35 Georgia, "Noto Serif SC", serif; }
+.question { margin: 25px 0; font: 650 clamp(22px,4vw,34px)/1.35 Georgia, var(--font-hanzi), "Songti SC", "SimSun", serif; }
 .option-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0; }
 .option-grid > button, .option-grid > label { min-height: 52px; padding: 12px 15px; display: flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 9px; background: white; color: var(--ink); font: inherit; text-align: left; cursor: pointer; }
 .option-grid .selected { border-color: var(--jade); color: var(--jade); background: var(--jade-soft); box-shadow: inset 0 0 0 1px var(--jade); }
 .answer-input { display: grid; gap: 7px; margin: 20px 0; color: var(--muted); font-size: 11px; font-weight: 750; }
 .answer-input input { width: 100%; font-size: 16px; }
 .token-bank, .answer-line { display: flex; flex-wrap: wrap; gap: 8px; }
-.token-bank button, .answer-line span { padding: 10px 14px; border: 1px solid var(--line); border-radius: 7px; background: white; font: 700 18px SimSun, serif; cursor: pointer; }
+.token-bank button, .answer-line span { padding: 10px 14px; border: 1px solid var(--line); border-radius: 7px; background: white; font: 700 18px var(--font-hanzi), "Songti SC", "SimSun", serif; cursor: pointer; }
 .answer-line { min-height: 63px; margin: 18px 0; padding: 10px; align-items: center; border: 1px dashed #9baaa3; border-radius: 8px; }
 .answer-line em { color: var(--muted); font-size: 12px; }.answer-line .clear-button { margin-left: auto; border: 0; background: transparent; color: var(--red); }
 .self-rating { display: flex; gap: 7px; margin: 20px 0; }
@@ -256,7 +265,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .tone-contour polyline { fill: none; stroke: var(--red); stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
 .tone-contour.neutral polyline { stroke-dasharray: 5 5; }
 .tone-example { display: flex; align-items: center; gap: 10px; }
-.tone-example > strong { color: var(--ink); font: 600 42px SimSun, "Noto Serif SC", serif; }
+.tone-example > strong { color: var(--ink); font: 600 42px var(--font-hanzi), "Songti SC", "SimSun", serif; }
 .tone-example div { min-width: 0; display: grid; gap: 2px; }
 .tone-example em { color: var(--jade); font: 700 18px Georgia, serif; }
 .tone-example small { color: var(--muted); font-size: 9px; }
@@ -287,7 +296,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .airflow i.active { background: var(--amber); }
 .paper-test { margin: 0 0 15px; padding: 8px 10px; color: #71512a !important; border-radius: 6px; background: #f7efdf; }
 .initial-example { margin: auto 0 13px; display: flex; align-items: center; gap: 10px; }
-.initial-example > strong { font: 600 40px SimSun, "Noto Serif SC", serif; }
+.initial-example > strong { font: 600 40px var(--font-hanzi), "Songti SC", "SimSun", serif; }
 .initial-example > span { display: grid; color: var(--jade); font: italic 700 18px Georgia, serif; }
 .initial-example small { color: var(--muted); font: 9px system-ui; }
 .phonetic-cards .audio-button { align-self: start; }
@@ -295,26 +304,26 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 
 .hanzi-lab { margin-top: 42px; display: grid; grid-template-columns: 240px 1fr; gap: 18px; }
 .character-list > div { display: grid; grid-template-columns: repeat(4,1fr); gap: 6px; }
-.character-list button { aspect-ratio: 1; border: 1px solid var(--line); border-radius: 6px; background: white; font: 24px SimSun,serif; cursor: pointer; }.character-list button.selected { color:white;background:var(--jade); }
+.character-list button { aspect-ratio: 1; border: 1px solid var(--line); border-radius: 6px; background: white; font: 24px var(--font-hanzi), "Songti SC", "SimSun", serif; cursor: pointer; }.character-list button.selected { color:white;background:var(--jade); }
 .canvas-panel canvas { width: min(100%,480px); display: block; margin: 20px auto; border: 2px solid #b8aa94; border-radius: 4px; touch-action: none; }
 .canvas-panel h2 small { display: block; margin-top: 5px; color: var(--muted); font: 13px system-ui; }
 .canvas-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }.canvas-controls span { margin-left: auto; color: var(--muted); font-size:12px; }.canvas-ok{color:var(--jade);font-weight:700;}
 .character-table { margin-top: 55px; }.character-table > div { display: grid; grid-template-columns: repeat(4,1fr); gap: 9px; }
-.character-table article { padding: 15px; border: 1px solid var(--line); border-radius: 8px; background:rgba(255,255,255,.55); }.character-table strong{font:36px SimSun,serif;}.character-table p,.character-table span,.character-table small{display:block;margin:5px 0;color:var(--muted);font-size:11px;}
+.character-table article { padding: 15px; border: 1px solid var(--line); border-radius: 8px; background:rgba(255,255,255,.55); }.character-table strong{font:36px var(--font-hanzi), "Songti SC", "SimSun", serif;}.character-table p,.character-table span,.character-table small{display:block;margin:5px 0;color:var(--muted);font-size:11px;}
 
-.grammar-grid { margin-top: 40px; display:grid;grid-template-columns:1fr 1fr;gap:14px; }.grammar-grid .pattern{padding:12px;border-radius:7px;color:var(--jade);background:var(--jade-soft);font:700 18px SimSun,serif;}.grammar-grid li{margin:8px 0;}
+.grammar-grid { margin-top: 40px; display:grid;grid-template-columns:1fr 1fr;gap:14px; }.grammar-grid .pattern{padding:12px;border-radius:7px;color:var(--jade);background:var(--jade-soft);font:700 18px var(--font-hanzi), "Songti SC", "SimSun", serif;}.grammar-grid li{margin:8px 0;}
 .clip-grid{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:14px}.speed-row{display:flex;gap:6px;flex-wrap:wrap}
-.dialogue-grid{margin-top:40px;display:grid;grid-template-columns:1.3fr .7fr;gap:16px}.chat-log{display:grid;gap:10px}.chat{width:80%;padding:12px 14px;border-radius:12px 12px 12px 3px;background:var(--jade-soft)}.chat.mine{margin-left:auto;border-radius:12px 12px 3px 12px;background:#eee4d3}.chat small{color:var(--muted);font-size:9px}.chat p{margin:5px 0;color:var(--ink)}.phrase-chip{width:100%;margin:4px 0;padding:9px;border:1px solid var(--line);border-radius:6px;background:white;text-align:left;cursor:pointer}.dialogue-text{margin-top:35px;display:grid;grid-template-columns:1fr 1fr;gap:9px}.dialogue-text article{padding:18px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line)}.dialogue-text h2{margin:0;font:600 25px SimSun,serif}.dialogue-text p{margin:5px 0;color:var(--jade);font:italic 13px Georgia}.dialogue-text span{font-size:12px;color:var(--muted)}
-.reading-passage{margin-top:40px;padding:40px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(145deg,#fffdf7,#e8eee9)}.reading-passage h2{font:600 29px/1.7 SimSun,serif}.reading-passage>p:last-child{color:var(--jade);font:italic 15px/1.7 Georgia}
+.dialogue-grid{margin-top:40px;display:grid;grid-template-columns:1.3fr .7fr;gap:16px}.chat-log{display:grid;gap:10px}.chat{width:80%;padding:12px 14px;border-radius:12px 12px 12px 3px;background:var(--jade-soft)}.chat.mine{margin-left:auto;border-radius:12px 12px 3px 12px;background:#eee4d3}.chat small{color:var(--muted);font-size:9px}.chat p{margin:5px 0;color:var(--ink)}.phrase-chip{width:100%;margin:4px 0;padding:9px;border:1px solid var(--line);border-radius:6px;background:white;text-align:left;cursor:pointer}.dialogue-text{margin-top:35px;display:grid;grid-template-columns:1fr 1fr;gap:9px}.dialogue-text article{padding:18px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line)}.dialogue-text h2{margin:0;font:600 25px var(--font-hanzi), "Songti SC", "SimSun", serif}.dialogue-text p{margin:5px 0;color:var(--jade);font:italic 13px Georgia}.dialogue-text span{font-size:12px;color:var(--muted)}
+.reading-passage{margin-top:40px;padding:40px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(145deg,#fffdf7,#e8eee9)}.reading-passage h2{font:600 29px/1.7 var(--font-hanzi), "Songti SC", "SimSun", serif}.reading-passage>p:last-child{color:var(--jade);font:italic 15px/1.7 Georgia}
 
 .game-grid{margin-top:38px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.game-grid article{min-height:210px;padding:19px;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.65)}.game-grid article>span{color:var(--red);font:700 11px Georgia}.game-grid h2{margin:24px 0 7px;font:700 18px Georgia,serif}.game-grid p{color:var(--muted);font-size:11px;line-height:1.5}.game-grid button{margin-top:auto;padding:9px;border:0;border-top:1px solid var(--line);color:var(--jade);background:transparent;text-align:left;font-weight:750;cursor:pointer}.arcade-arena{margin-top:35px;padding:clamp(25px,5vw,48px);border-radius:18px;color:white;background:var(--ink);box-shadow:var(--shadow)}.arcade-arena .eyebrow{color:#88c7b7}.arcade-arena .option-grid button{color:var(--ink)}.arcade-input{width:100%;margin:15px 0}.arena-actions{display:flex;align-items:center;gap:15px}.arcade-arena .rule-note{color:#71512a!important}
-.listen-recognize{display:grid;gap:20px}.listen-recognize>h3{margin:0;font:700 clamp(25px,4vw,38px) Georgia,serif}.listen-recognize>.audio-button{justify-self:start}.listen-options{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.listen-options button{min-height:74px;border:1px solid rgba(255,255,255,.25);border-radius:10px;color:var(--ink);background:#fffdf7;font:600 34px SimSun,serif;cursor:pointer}.listen-options button:disabled{opacity:.7}.listen-feedback{min-height:36px}.listen-feedback>p{margin:0;color:#f1c58d}.listen-answer{display:grid;justify-items:start;gap:7px}.listen-answer>b{color:#8ee0bd}.listen-answer>strong{font:600 54px SimSun,serif}.listen-answer>span{color:#9bd4c5;font:italic 17px Georgia,serif}.listen-answer>p{margin:0;color:white}
+.listen-recognize{display:grid;gap:20px}.listen-recognize>h3{margin:0;font:700 clamp(25px,4vw,38px) Georgia,serif}.listen-recognize>.audio-button{justify-self:start}.listen-options{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.listen-options button{min-height:74px;border:1px solid rgba(255,255,255,.25);border-radius:10px;color:var(--ink);background:#fffdf7;font:600 34px var(--font-hanzi), "Songti SC", "SimSun", serif;cursor:pointer}.listen-options button:disabled{opacity:.7}.listen-feedback{min-height:36px}.listen-feedback>p{margin:0;color:#f1c58d}.listen-answer{display:grid;justify-items:start;gap:7px}.listen-answer>b{color:#8ee0bd}.listen-answer>strong{font:600 54px var(--font-hanzi), "Songti SC", "SimSun", serif}.listen-answer>span{color:#9bd4c5;font:italic 17px Georgia,serif}.listen-answer>p{margin:0;color:white}
 
 .exam-intro,.exam-result,.exam-form{margin-top:20px;padding:clamp(25px,5vw,45px);border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.75);box-shadow:var(--shadow)}.exam-intro h2,.exam-result h2{font:700 34px Georgia,serif}.exam-weights{display:flex;flex-wrap:wrap;gap:7px;margin:25px 0}.exam-weights span{padding:6px 9px;border-radius:5px;color:var(--jade);background:var(--jade-soft);font-size:10px}.exam-question{padding:26px 0;border-bottom:1px solid var(--line)}.exam-question>small{color:var(--jade);font-weight:750;text-transform:uppercase}.exam-question>p{font-size:18px;font-weight:650}.exam-question>input{width:100%}.exam-form>.button{margin-top:25px;width:100%}.exam-result{text-align:center}.exam-result>strong{display:block;color:var(--jade);font:700 105px Georgia}.exam-result>strong small{font-size:25px}.score-grid{display:grid;grid-template-columns:repeat(4,1fr);margin:28px 0;border:1px solid var(--line)}.score-grid span{padding:14px;display:grid;gap:3px;color:var(--muted);font-size:9px}.score-grid b{color:var(--ink);font-size:20px}
 
 .metric-grid,.audit-summary{margin-top:35px;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);background:rgba(255,255,255,.55)}.metric-grid article,.audit-summary article{padding:25px;border-right:1px solid var(--line)}.metric-grid strong,.audit-summary b{display:block;color:var(--jade);font:700 32px Georgia}.metric-grid span{font-size:10px;color:var(--muted);text-transform:uppercase}.progress-layout{margin-top:18px;display:grid;grid-template-columns:1.4fr .6fr;gap:14px}.mastery-row{margin:14px 0;display:grid;grid-template-columns:100px 1fr 45px;align-items:center;gap:9px;font-size:11px}.mastery-row>div{height:7px;border-radius:5px;background:#dfe4df;overflow:hidden}.mastery-row i{display:block;height:100%;background:var(--jade)}.progress-layout aside a{display:block;margin:15px 0;color:var(--jade)}.empty-state{padding:40px;text-align:center;color:var(--muted)}
 .error-list{margin-top:35px;display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.error-list article>div{display:flex;justify-content:space-between;color:var(--red);font-size:11px}.error-list del{color:var(--red)}.ranking{margin-top:35px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:rgba(255,255,255,.65)}.ranking-head,.ranking article{padding:15px 20px;display:grid;grid-template-columns:70px 1fr 110px 100px;border-bottom:1px solid var(--line)}.ranking-head{color:var(--muted);font-size:9px;text-transform:uppercase}.ranking article b{color:var(--red)}
-.profile-form{margin-top:35px;display:grid;gap:18px}.profile-form>label:not(.check-row){display:grid;gap:7px;color:var(--muted);font-size:11px;font-weight:750}.check-row{display:flex;gap:11px;align-items:start}.check-row input{width:18px;height:18px}.check-row span{display:grid;gap:4px}.check-row small{color:var(--muted);font-weight:400}.login-card{max-width:520px;margin:0 auto 70px}.login-tabs{display:grid;grid-template-columns:1fr 1fr;margin-bottom:24px;border-bottom:1px solid var(--line)}.login-tabs button{padding:12px;border:0;border-bottom:3px solid transparent;background:transparent;color:var(--muted);font-weight:750;cursor:pointer}.login-tabs button.selected{border-color:var(--jade);color:var(--jade)}.login-card form{display:grid;gap:16px}.login-card label{display:grid;gap:7px;color:var(--muted);font-size:11px;font-weight:750}.login-card input{min-height:46px;padding:0 13px;border:1px solid var(--line);border-radius:7px;background:white;font:inherit}.login-card>small{display:block;margin-top:20px;color:var(--muted);line-height:1.6}.audit-table{margin-top:18px;border:1px solid var(--line);overflow:auto;background:rgba(255,255,255,.65)}.audit-table>div{min-width:850px;padding:11px 14px;display:grid;grid-template-columns:150px 150px 1fr 130px;gap:10px;border-bottom:1px solid var(--line);font-size:10px}.audit-head{color:var(--muted);font-weight:800;text-transform:uppercase}.cta-band{padding:70px 0;background:var(--ink);color:white}.cta-band h2{margin:0;font:700 50px Georgia,SimSun,serif}.cta-band p:not(.eyebrow){max-width:600px;color:#bdc8c3;line-height:1.7}
+.profile-form{margin-top:35px;display:grid;gap:18px}.profile-form>label:not(.check-row){display:grid;gap:7px;color:var(--muted);font-size:11px;font-weight:750}.check-row{display:flex;gap:11px;align-items:start}.check-row input{width:18px;height:18px}.check-row span{display:grid;gap:4px}.check-row small{color:var(--muted);font-weight:400}.login-card{max-width:520px;margin:0 auto 70px}.login-tabs{display:grid;grid-template-columns:1fr 1fr;margin-bottom:24px;border-bottom:1px solid var(--line)}.login-tabs button{padding:12px;border:0;border-bottom:3px solid transparent;background:transparent;color:var(--muted);font-weight:750;cursor:pointer}.login-tabs button.selected{border-color:var(--jade);color:var(--jade)}.login-card form{display:grid;gap:16px}.login-card label{display:grid;gap:7px;color:var(--muted);font-size:11px;font-weight:750}.login-card input{min-height:46px;padding:0 13px;border:1px solid var(--line);border-radius:7px;background:white;font:inherit}.login-card>small{display:block;margin-top:20px;color:var(--muted);line-height:1.6}.audit-table{margin-top:18px;border:1px solid var(--line);overflow:auto;background:rgba(255,255,255,.65)}.audit-table>div{min-width:850px;padding:11px 14px;display:grid;grid-template-columns:150px 150px 1fr 130px;gap:10px;border-bottom:1px solid var(--line);font-size:10px}.audit-head{color:var(--muted);font-weight:800;text-transform:uppercase}.cta-band{padding:70px 0;background:var(--ink);color:white}.cta-band h2{margin:0;font:700 50px Georgia,var(--font-hanzi), "Songti SC", "SimSun", serif}.cta-band p:not(.eyebrow){max-width:600px;color:#bdc8c3;line-height:1.7}
 
 @media(max-width:900px){.lesson-modules,.vocab-grid{grid-template-columns:1fr 1fr}.game-grid{grid-template-columns:repeat(3,1fr)}.hanzi-lab,.dialogue-grid,.progress-layout{grid-template-columns:1fr}.character-list>div{grid-template-columns:repeat(8,1fr)}.tone-table{grid-template-columns:repeat(3,1fr)}.how-section>div{grid-template-columns:1fr 1fr}}
 @media(max-width:650px){.page-hero{padding-top:45px}.page-hero h1{font-size:42px}.site-footer{display:block}.site-footer nav{margin-top:20px}.lesson-modules,.vocab-grid,.lab-grid,.grammar-grid,.clip-grid,.dialogue-text,.error-list{grid-template-columns:1fr}.lab-grid .wide{grid-column:auto}.game-grid{grid-template-columns:1fr 1fr}.listen-options{grid-template-columns:1fr 1fr}.phonetic-cards,.character-table>div{grid-template-columns:1fr}.tone-table{grid-template-columns:1fr}.section-heading{align-items:start;flex-direction:column}.sandhi-flow{grid-template-columns:1fr}.sandhi-flow>b{transform:rotate(90deg);justify-self:center}.option-grid{grid-template-columns:1fr}.toolbar{align-items:stretch;flex-direction:column}.toolbar label input{width:100%}.metric-grid,.audit-summary{grid-template-columns:1fr 1fr}.score-grid{grid-template-columns:1fr 1fr}.ranking-head,.ranking article{grid-template-columns:45px 1fr 65px 50px;padding-inline:8px;font-size:11px}.character-list>div{grid-template-columns:repeat(6,1fr)}.how-section>div{grid-template-columns:1fr}.practice-card{padding:22px}.self-rating{flex-direction:column}}
@@ -339,7 +348,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .hanzi-picker-heading h2 { margin: 0; font-size: 19px; }
 .hanzi-picker-heading > span { color: var(--muted); font-size: 10px; }
 .hanzi-character-picker > div:last-child { margin-top: 15px; display: grid; grid-template-columns: repeat(12, minmax(48px, 1fr)); gap: 7px; }
-.hanzi-character-picker button { min-width: 0; min-height: 58px; padding: 6px 3px; display: grid; place-items: center; gap: 2px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: #fff; font: 500 25px SimSun, "Noto Serif SC", serif; cursor: pointer; }
+.hanzi-character-picker button { min-width: 0; min-height: 58px; padding: 6px 3px; display: grid; place-items: center; gap: 2px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: #fff; font: 500 25px var(--font-hanzi), "Songti SC", "SimSun", serif; cursor: pointer; }
 .hanzi-character-picker button small { color: var(--muted); font: 9px/1.15 var(--pinyin-font); }
 .hanzi-character-picker button.selected { border-color: var(--jade); color: white; background: var(--jade); box-shadow: 0 7px 20px rgba(29,106,89,.2); }
 .hanzi-character-picker button.selected small { color: #d7eee7; }
@@ -354,7 +363,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .hanzi-unit-nav a.selected { border-color: var(--jade); color: white; background: var(--jade); }
 .hanzi-unit-nav a.selected small { color: #d7eee7; }
 .hanzi-picker-grid { margin-top: 15px; display: grid; grid-template-columns: repeat(12,minmax(48px,1fr)); gap: 7px; }
-.hanzi-picker-grid button { min-height: 82px; padding: 7px 4px; grid-template-rows: minmax(28px,auto) auto minmax(22px,auto); align-content: center; }
+.hanzi-picker-grid button { min-height: 82px; padding: 7px 4px; grid-template-rows: minmax(28px,auto) auto minmax(22px,auto); align-content: center; line-height: 1.12; }
 .hanzi-picker-grid button small { color: var(--jade); font-size: 10px; }
 .hanzi-picker-grid button.state-new { background: var(--hanzi-new-bg); }
 .hanzi-picker-grid button.state-learning { background: var(--hanzi-learning-bg); }
@@ -370,7 +379,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .hanzi-filter-empty { margin-top: 15px; padding: 18px; display: block !important; border: 1px dashed var(--line); border-radius: 8px; text-align: center; }
 .hanzi-filter-empty p { color: var(--muted); }
 .hanzi-character-hero { margin-top: 13px; padding: 24px; display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 25px; background: linear-gradient(135deg,rgba(255,255,255,.84),rgba(224,236,229,.7)); }
-.hanzi-glyph { width: 112px; height: 112px; display: grid; place-items: center; border: 1px solid rgba(162,58,44,.22); border-radius: 6px 22px 6px 22px; color: var(--ink); background: #fffdf7; font: 600 77px SimSun,"Noto Serif SC",serif; }
+.hanzi-glyph { width: 112px; height: 112px; display: grid; place-items: center; border: 1px solid rgba(162,58,44,.22); border-radius: 6px 22px 6px 22px; color: var(--ink); background: #fffdf7; font: 600 77px var(--font-hanzi), "Songti SC", "SimSun", serif; }
 .hanzi-character-copy { min-width: 0; }
 .hanzi-character-copy h2 { margin: 0; color: var(--jade); font: italic 700 27px Georgia,serif; }
 .hanzi-pronunciation-row { display: flex; align-items: center; gap: 9px; }
@@ -411,17 +420,17 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .component-map { min-height: 280px; display: grid; grid-template-columns: .55fr auto 1.45fr; align-items: center; gap: 35px; }
 .component-map > b { color: var(--red); font-size: 30px; }
 .component-whole, .component-pieces article { padding: 22px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
-.component-whole strong { font: 600 100px SimSun,serif; }
+.component-whole strong { font: 600 100px var(--font-hanzi), "Songti SC", "SimSun", serif; }
 .component-whole span, .component-pieces span { color: var(--muted); font-size: 9px; text-transform: uppercase; }
 .component-pieces { display: grid; grid-template-columns: repeat(auto-fit,minmax(115px,1fr)); gap: 10px; }
-.component-pieces strong { font: 600 62px SimSun,serif; }
+.component-pieces strong { font: 600 62px var(--font-hanzi), "Songti SC", "SimSun", serif; }
 .component-source { padding: 14px 18px; border-left: 3px solid var(--amber); background: #f7efdf; }
 .component-source p { margin: 5px 0 0; color: #71512a; font-size: 11px; }
 .hanzi-context { margin-top: 22px; }
 .hanzi-context h3 { margin-bottom: 9px; font: 700 17px Georgia,serif; }
 .hanzi-context > div { display: grid; grid-template-columns: repeat(auto-fit,minmax(210px,1fr)); gap: 7px; }
 .hanzi-context article { min-width: 0; padding: 10px 12px; display: grid; gap: 2px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: #fff; }
-.context-hanzi-text { min-width: 0; display: flex; flex-wrap: wrap; align-items: center; font: 600 20px SimSun,"Noto Serif SC",serif; }
+.context-hanzi-text { min-width: 0; display: flex; flex-wrap: wrap; align-items: center; font: 600 20px var(--font-hanzi), "Songti SC", "SimSun", serif; }
 .context-hanzi-text a { min-width: 40px; min-height: 40px; display: inline-grid; place-items: center; margin: -4px 0; border-radius: 7px; color: var(--jade); text-decoration: underline; text-decoration-color: rgba(29,106,89,.3); text-underline-offset: 4px; }
 .context-hanzi-text a:hover, .context-hanzi-text a:focus-visible { background: var(--jade-soft); outline: 2px solid rgba(29,106,89,.18); }
 .context-hanzi-plain { color: var(--ink); font: inherit; }
@@ -497,7 +506,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .hanzi-stage-summary em { height: 100%; display: block; background: var(--jade); }
 .hanzi-progress-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); gap: 8px; }
 .hanzi-progress-grid article { padding: 14px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 10px; border: 1px solid var(--line); border-radius: 8px; background: rgba(255,255,255,.65); }
-.hanzi-progress-grid strong { font: 600 30px SimSun,serif; }
+.hanzi-progress-grid strong { font: 600 30px var(--font-hanzi), "Songti SC", "SimSun", serif; }
 .hanzi-progress-grid span { color: var(--muted); font-size: 9px; }
 .hanzi-progress-grid b { color: var(--jade); font: 700 14px Georgia,serif; }
 .daily-hanzi-card { margin-top: 16px; display: flex; align-items: center; justify-content: space-between; gap: 25px; background: linear-gradient(135deg,rgba(225,239,233,.85),rgba(255,251,243,.82)); }
@@ -505,7 +514,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .daily-hanzi-card p:not(.eyebrow) { margin-bottom: 0; }
 .daily-hanzi-list { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; }
 .daily-hanzi-list a { min-width: 48px; padding: 7px 8px; display: grid; place-items: center; border: 1px solid rgba(29,106,89,.2); border-radius: 7px; background: #fff; }
-.daily-hanzi-list strong { font: 600 23px SimSun,serif; }
+.daily-hanzi-list strong { font: 600 23px var(--font-hanzi), "Songti SC", "SimSun", serif; }
 .daily-hanzi-list span { color: var(--muted); font-size: 8px; }
 .arcade-hanzi-layout { margin: 22px 0; display: grid; grid-template-columns: minmax(280px,420px) 1fr; align-items: center; gap: 38px; }
 .arcade-hanzi-layout .hanzi-writer-frame, .arcade-hanzi-layout .hanzi-answer-svg { background: #fffdf7; }
@@ -513,7 +522,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .arcade-hanzi-layout p { color: #bdc8c3; line-height: 1.6; }
 .arcade-hanzi-layout a:not(.button) { color: #9bd4c5; font-size: 11px; }
 .arcade-hanzi-layout.compact-game { grid-template-columns: 180px 1fr; }
-.arcade-hanzi-glyph { width: 180px; height: 180px; display: grid; place-items: center; border-radius: 15px; color: var(--ink); background: #fffdf7; font: 600 120px SimSun,serif; }
+.arcade-hanzi-glyph { width: 180px; height: 180px; display: grid; place-items: center; border-radius: 15px; color: var(--ink); background: #fffdf7; font: 600 120px var(--font-hanzi), "Songti SC", "SimSun", serif; }
 
 @media(max-width:900px) {
   .hanzi-stage-progress { grid-template-columns: repeat(3,1fr); }
@@ -671,7 +680,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .analytics-compact-list span, .analytics-hanzi-list span { color: var(--muted); font-size: 9px; }
 .analytics-hanzi-list { display: grid; grid-template-columns: repeat(auto-fit,minmax(78px,1fr)); gap: 7px; }
 .analytics-hanzi-list > div { padding: 11px 7px; display: grid; place-items: center; gap: 5px; border: 1px solid var(--line); border-radius: 8px; background: white; text-align: center; }
-.analytics-hanzi-list b { font: 600 27px SimSun,serif; }
+.analytics-hanzi-list b { font: 600 27px var(--font-hanzi), "Songti SC", "SimSun", serif; }
 .analytics-trend { min-height: 230px; overflow-x: auto; display: flex; align-items: end; gap: 9px; padding-top: 8px; }
 .analytics-trend > div { min-width: 78px; flex: 1 0 78px; display: grid; gap: 5px; text-align: center; }
 .analytics-trend > div > div { height: 135px; display: flex; align-items: end; justify-content: center; border-bottom: 1px solid var(--line); }
@@ -766,7 +775,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .mixed-family-image svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 .mixed-family-halo{fill:none;stroke:#49e58c;stroke-width:38;opacity:.55}
 .mixed-family-ring{fill:none;stroke:#00a953;stroke-width:13}
-.mixed-prompt-hanzi{margin:10px 0 18px;color:#fffaf1;font:700 clamp(4.8rem,15vw,8rem)/1 "Noto Serif SC",SimSun,serif;text-align:center;text-shadow:0 3px 20px rgba(0,0,0,.22)}
+.mixed-prompt-hanzi{margin:10px 0 18px;color:#fffaf1;font:700 clamp(4.8rem,15vw,8rem)/1 var(--font-hanzi), "Songti SC", "SimSun", serif;text-align:center;text-shadow:0 3px 20px rgba(0,0,0,.22)}
 .mixed-audio{display:flex;margin:12px auto 18px;min-width:164px;min-height:52px;justify-content:center}
 .mixed-dialogue{max-width:560px;margin:10px auto 16px;padding:14px;border:1px solid #eadfd3;border-radius:20px;background:#fffaf5;color:var(--ink);display:grid;grid-template-columns:auto 1fr;gap:9px 12px;align-items:center}
 .mixed-dialogue>span,.mixed-dialogue>strong{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#f3ded8;color:var(--red);font-weight:850}
@@ -795,7 +804,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .mixed-built.answer-correct,.mixed-construction-solution{border:3px solid #45cb7c;background:#effbf3;box-shadow:0 0 0 2px rgba(69,203,124,.2)}
 .mixed-built.answer-incorrect{border:3px solid #e45b52;background:#fff1ef;box-shadow:0 0 0 2px rgba(228,91,82,.18)}
 .mixed-construction-solution{position:relative;width:100%;min-height:56px;padding:10px 48px 10px 14px;display:grid;place-items:center;border-radius:16px;color:var(--ink)}
-.mixed-construction-solution strong{font:700 1.3rem "Noto Serif SC",SimSun,serif;text-align:center}
+.mixed-construction-solution strong{font:700 1.3rem var(--font-hanzi), "Songti SC", "SimSun", serif;text-align:center}
 .mixed-feedback{max-width:680px;margin:16px auto 0;border-radius:20px;text-align:center;scroll-margin-block:82px 84px;animation:mixed-feedback-in .18s ease-out}
 @keyframes mixed-feedback-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
 .mixed-feedback.answer-card{padding:15px 16px 13px;color:var(--ink);box-shadow:0 10px 28px rgba(8,34,27,.14)}
@@ -803,14 +812,14 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .mixed-feedback.incorrect{border:1px solid #edc7bd;background:#fff9f5}
 .mixed-correct-title{display:block;margin-bottom:2px;color:#247c47;font-size:1.12rem}
 .mixed-incorrect-title{display:block;margin-bottom:2px;color:#a53b2e;font-size:1.12rem}
-.mixed-feedback.answer-card>strong{display:block;margin:3px 0 0;font:700 clamp(2.9rem,9vw,4.8rem)/1.02 "Noto Serif SC",SimSun,serif}
+.mixed-feedback.answer-card>strong{display:block;margin:3px 0 0;font:700 clamp(2.9rem,9vw,4.8rem)/1.02 var(--font-hanzi), "Songti SC", "SimSun", serif}
 .mixed-feedback.answer-card h3{margin:3px 0;color:var(--red);font-size:1.25rem}
 .mixed-feedback.correct h3{color:var(--jade)}
 .mixed-correction-meaning{margin:2px 0 7px;color:#655f59;font-size:.94rem}
 .mixed-usage-example{margin:8px auto 4px;padding:8px 10px;display:grid;gap:2px;border-radius:12px;background:#f1ebe2;color:#4d4944}
 .mixed-feedback.correct .mixed-usage-example{background:#e5f2e7}
 .mixed-usage-example>div{display:flex;align-items:center;justify-content:center;gap:4px;font-size:.95rem}
-.mixed-usage-example>div>span:first-child{font-family:"Noto Serif SC",SimSun,serif;font-weight:800}
+.mixed-usage-example>div>span:first-child{font-family:var(--font-hanzi), "Songti SC", "SimSun", serif;font-weight:800}
 .mixed-usage-example button{width:38px;height:38px;flex-basis:38px;margin-left:5px}
 .mixed-usage-example small{color:#746e67;font-size:.78rem}
 .mixed-correction-actions{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin:10px 0 0}
@@ -871,3 +880,6 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
   .mixed-hud h2{margin-right:auto;font-size:.75rem}
   .mixed-correction-actions .mixed-continue{flex-basis:auto;margin-left:auto}
 }
+
+/* Keep the existing two-line phone heading with Song’s square advances. */
+@media (max-width: 420px) { .hero h1 { max-width: 5.9em; } }

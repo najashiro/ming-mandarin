@@ -1,7 +1,19 @@
 import type { Metadata } from 'next';
+import { Noto_Serif_SC } from 'next/font/google';
 import { AnalyticsTracker } from '@/components/AnalyticsTracker';
 import { PwaRegister } from '@/components/PwaRegister';
 import './globals.css';
+
+// A single variable family preserves the existing intermediate and bold weights.
+// Disable the Latin preload and metric fallback: this font is only used for Hanzi.
+const notoSerifSC = Noto_Serif_SC({
+  weight: 'variable',
+  variable: '--font-hanzi',
+  display: 'swap',
+  preload: false,
+  adjustFontFallback: false,
+  fallback: ['Songti SC', 'SimSun', 'serif'],
+});
 
 function canonicalOrigin() {
   const configured = process.env.NEXT_PUBLIC_SITE_URL;
@@ -27,5 +39,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="es"><body>{children}<AnalyticsTracker/><PwaRegister/></body></html>;
+  return <html lang="es" className={notoSerifSC.variable}><body>{children}<AnalyticsTracker/><PwaRegister/></body></html>;
 }

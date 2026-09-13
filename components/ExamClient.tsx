@@ -1,4 +1,5 @@
 'use client';
+import { Hanzi, hanziInputClass } from '@/components/Hanzi';
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -75,8 +76,8 @@ export function ExamClient({ scope = 'l1' }: { scope?: HanziAssessmentScope }) {
   return <section className="exam-form">
     <div className="practice-top"><div><p className="eyebrow">EXAMEN EN CURSO</p><h2>{Object.keys(answers).length}/{questions.length} respondidas</h2></div><span>100 puntos</span></div>
     {questions.map((question, index) => <article className="exam-question" key={question.id}>
-      <small>{index + 1} · {labels[question.section]} · {question.points} pt</small><p>{question.prompt}</p>
-      {question.audioText && <SpeakButton text={question.audioText}/>} {question.options ? <div className="option-grid">{question.options.map((option) => <label className={answers[question.id] === option ? 'selected' : ''} key={option}><input type="radio" name={question.id} value={option} checked={answers[question.id] === option} onChange={() => setAnswers((value) => ({ ...value, [question.id]: option }))}/>{option}</label>)}</div> : <input value={answers[question.id] ?? ''} onChange={(event) => setAnswers((value) => ({ ...value, [question.id]: event.target.value }))} placeholder="Escribe tu respuesta"/>}
+      <small>{index + 1} · {labels[question.section]} · {question.points} pt</small><p><Hanzi>{question.prompt}</Hanzi></p>
+      {question.audioText && <SpeakButton text={question.audioText}/>} {question.options ? <div className="option-grid">{question.options.map((option) => <label className={answers[question.id] === option ? 'selected' : ''} key={option}><input type="radio" name={question.id} value={option} checked={answers[question.id] === option} onChange={() => setAnswers((value) => ({ ...value, [question.id]: option }))}/><Hanzi>{option}</Hanzi></label>)}</div> : <input className={hanziInputClass(answers[question.id] ?? '')} value={answers[question.id] ?? ''} onChange={(event) => setAnswers((value) => ({ ...value, [question.id]: event.target.value }))} placeholder="Escribe tu respuesta"/>}
     </article>)}
     {error && <p className="form-error">{error}</p>}
     <button className="button button-dark" disabled={busy} type="button" onClick={submit}>{busy ? 'Calificando…' : 'Enviar examen'}</button>

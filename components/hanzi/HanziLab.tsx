@@ -1,4 +1,5 @@
 'use client';
+import { Hanzi } from '@/components/Hanzi';
 
 import Link from 'next/link';
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -233,27 +234,27 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
         const state = classifyHanziLearningState(item.id, progress[item.id], localProgress);
         const selected = item.id === character.id;
         const curricularState = stageFilter === 'all' ? undefined : item.introducedIn === stageFilter ? 'new' : 'review';
-        return <button type="button" className={`hanzi-picker-card state-${state}${curricularState ? ` curricular-${curricularState}` : ''}${selected ? ' selected' : ''}`} data-learning-state={state} data-curricular-state={curricularState} aria-label={`${item.hanzi}, ${item.pinyin}, ${item.meaning}, estado ${stateLabels[state].toLowerCase()}`} aria-pressed={selected} onClick={() => selectCharacter(item.id)} key={item.id}>{item.hanzi}<small><PinyinText>{item.pinyin}</PinyinText></small><em>{item.meaning}</em></button>;
+        return <button type="button" className={`hanzi-picker-card state-${state}${curricularState ? ` curricular-${curricularState}` : ''}${selected ? ' selected' : ''}`} data-learning-state={state} data-curricular-state={curricularState} aria-label={`${item.hanzi}, ${item.pinyin}, ${item.meaning}, estado ${stateLabels[state].toLowerCase()}`} aria-pressed={selected} onClick={() => selectCharacter(item.id)} key={item.id}><Hanzi>{item.hanzi}</Hanzi><small><PinyinText>{item.pinyin}</PinyinText></small><em><Hanzi>{item.meaning}</Hanzi></em></button>;
       })}</div> : <div className="hanzi-filter-empty"><p>No hay caracteres que coincidan con ambos filtros.</p><button type="button" onClick={() => { setStageFilter('all'); setStateFilter('all'); }}>Mostrar todos</button></div>}
     </section>
 
     <section className="hanzi-character-hero panel">
-      <div className="hanzi-glyph">{character.hanzi}</div>
+      <div className="hanzi-glyph"><Hanzi>{character.hanzi}</Hanzi></div>
       <div className="hanzi-character-copy"><p className="eyebrow">{stageLabel}</p><div className="hanzi-pronunciation-row"><h2><PinyinText>{character.pinyin}</PinyinText></h2><div className="hanzi-character-actions"><SpeakButton key={character.id} text={character.hanzi} speechText={character.hanzi} audioSrc={audioForMandarinText(character.hanzi)} compact ariaLabel={`Escuchar pronunciación de ${character.hanzi}`} title={`Escuchar ${character.hanzi}`} /><CommunityButton compact label={`Preguntar sobre ${character.hanzi}`} context={{ concept: character.hanzi, skill: tab === 'Trazos' ? 'stroke-order' : tab === 'Practicar' ? 'hanzi-writing' : 'hanzi-recognition', route: `${route}?character=${encodeURIComponent(character.hanzi)}&tab=${encodeURIComponent(tab)}` }} /></div></div>
-        <p className="hanzi-character-meaning">{character.meaning}</p>
+        <p className="hanzi-character-meaning"><Hanzi>{character.meaning}</Hanzi></p>
         <p className="hanzi-character-meta"><span>{technical?.strokeCount ?? character.strokeCount} trazos</span>{character.writingRequired && <> · <span>Escritura</span></>}</p>
       </div>
     </section>
 
     <nav className="hanzi-tabs" aria-label="Secciones del laboratorio">{tabs.map((item) => <button type="button" role="tab" aria-selected={tab === item} className={tab === item ? 'selected' : ''} onClick={() => setTab(item)} key={item}>{item}</button>)}</nav>
 
-    {loadError ? <section className="panel hanzi-fallback" role="status"><h2>{loadError}</h2><p>Puedes continuar con reconocimiento y contexto. La práctica geométrica queda desactivada para no simular información.</p><button type="button" onClick={() => setTab('Componentes')}>Ver contexto</button></section> : !data ? <section className="panel hanzi-loading" aria-live="polite">Preparando los trazos de {character.hanzi}…</section> : <>
+    {loadError ? <section className="panel hanzi-fallback" role="status"><h2><Hanzi>{loadError}</Hanzi></h2><p>Puedes continuar con reconocimiento y contexto. La práctica geométrica queda desactivada para no simular información.</p><button type="button" onClick={() => setTab('Componentes')}>Ver contexto</button></section> : !data ? <section className="panel hanzi-loading" aria-live="polite">Preparando los trazos de <Hanzi>{character.hanzi}</Hanzi>…</section> : <>
       {tab === 'Aprender' && <LearnPanel key={character.id} character={character} characterIdsByHanzi={characterIdsByHanzi} canonicalHanzi={canonicalHanziSet} route={route} onSelectCharacter={selectCharacter} onMastered={() => { void persistStudyExposure(); }} />}
       {tab === 'Componentes' && <ComponentsPanel key={character.id} character={character} characterIdsByHanzi={characterIdsByHanzi} canonicalHanzi={canonicalHanziSet} route={route} onSelectCharacter={selectCharacter} />}
       {tab === 'Trazos' && <StrokesPanel key={character.id} character={character} data={data} onMastered={markStrokeOrderUnderstood} />}
       {tab === 'Practicar' && <PracticePanel key={character.id} character={character} data={data} onAttempt={persistAttempt} />}
     </>}
-    {saveMessage && <p className="hanzi-save-message" role="status">{saveMessage} {saveMessage.includes('nombre') && <Link href={`/login?returnTo=${encodeURIComponent(route)}`}>Elegir nombre →</Link>}</p>}
+    {saveMessage && <p className="hanzi-save-message" role="status"><Hanzi>{saveMessage}</Hanzi> {saveMessage.includes('nombre') && <Link href={`/login?returnTo=${encodeURIComponent(route)}`}>Elegir nombre →</Link>}</p>}
   </div>;
 }
 
@@ -269,25 +270,25 @@ function ContextList({ character, characterIdsByHanzi, canonicalHanzi, route, on
   if (!character.words?.length) return <p className="context-empty">Esta ficha se practica como forma básica antes de combinarla.</p>;
   return <div className="hanzi-context"><h3>Aparece en</h3><div>{character.words.map((word) => <article key={`${word.hanzi}-${word.pinyin}`}>
     <strong className="context-hanzi-text">{[...word.hanzi].map((hanzi,index) => {
-      if (!canonicalHanzi.has(hanzi)) return <span className="context-hanzi-plain" key={`${hanzi}-${index}`}>{hanzi}</span>;
+      if (!canonicalHanzi.has(hanzi)) return <span className="context-hanzi-plain" key={`${hanzi}-${index}`}><Hanzi>{hanzi}</Hanzi></span>;
       const localId = characterIdsByHanzi.get(hanzi);
       const targetRoute = localId ? route : '/lesson/1/hanzi';
-      return <Link href={`${targetRoute}?character=${encodeURIComponent(hanzi)}&tab=Componentes`} scroll={false} aria-label={`Abrir ficha Hanzi de ${hanzi}`} onClick={localId ? () => onSelectCharacter(localId) : undefined} key={`${hanzi}-${index}`}>{hanzi}</Link>;
+      return <Link href={`${targetRoute}?character=${encodeURIComponent(hanzi)}&tab=Componentes`} scroll={false} aria-label={`Abrir ficha Hanzi de ${hanzi}`} onClick={localId ? () => onSelectCharacter(localId) : undefined} key={`${hanzi}-${index}`}><Hanzi>{hanzi}</Hanzi></Link>;
     })}</strong>
     <PinyinText className="context-pinyin">{word.pinyin}</PinyinText>
-    <small>{word.translation}</small>
+    <small><Hanzi>{word.translation}</Hanzi></small>
   </article>)}</div></div>;
 }
 
 function LearnPanel({ character, onMastered, ...contextProps }: ContextListProps & { onMastered: () => void }) {
   const stage = useRef<HanziWriterStageHandle>(null);
   function animateOnce() { stage.current?.animate(); }
-  return <section className="panel hanzi-tab-panel hanzi-learn-panel"><div className="hanzi-learn-visual"><HanziWriterStage ref={stage} character={character.hanzi} onReady={animateOnce} /><button className="hanzi-replay-control" type="button" onClick={animateOnce} aria-label="Ver animación de nuevo" title="Ver de nuevo"><span aria-hidden="true">↻</span></button></div><div className="hanzi-panel-copy"><p className="eyebrow">01 · APRENDER</p><h2>Observa el carácter completo</h2><p>Usa la cuadrícula 米字格 para comparar proporción y centro. La animación respeta el orden y la dirección de los datos técnicos.</p><button className="button button-primary" type="button" onClick={onMastered}>Lo reconozco</button><ContextList character={character} {...contextProps} /></div></section>;
+  return <section className="panel hanzi-tab-panel hanzi-learn-panel"><div className="hanzi-learn-visual"><HanziWriterStage ref={stage} character={character.hanzi} onReady={animateOnce} /><button className="hanzi-replay-control" type="button" onClick={animateOnce} aria-label="Ver animación de nuevo" title="Ver de nuevo"><span aria-hidden="true">↻</span></button></div><div className="hanzi-panel-copy"><p className="eyebrow">01 · APRENDER</p><h2>Observa el carácter completo</h2><p><Hanzi>Usa la cuadrícula 米字格 para comparar proporción y centro. La animación respeta el orden y la dirección de los datos técnicos.</Hanzi></p><button className="button button-primary" type="button" onClick={onMastered}>Lo reconozco</button><ContextList character={character} {...contextProps} /></div></section>;
 }
 
 function ComponentsPanel({ character, ...contextProps }: ContextListProps) {
   return <section className="panel hanzi-tab-panel components-panel"><div><p className="eyebrow">02 · COMPONENTES Y CONTEXTO</p><h2>Composición respaldada</h2><p>La geometría de Hanzi Writer guía los trazos. Radicales y componentes solo aparecen cuando ya fueron auditados en las fuentes complementarias.</p></div>
-    {character.componentsAudited ? <><div className="component-map" aria-label={`Componentes de ${character.hanzi}`}><div className="component-whole"><strong>{character.hanzi}</strong><span>carácter</span></div><b aria-hidden="true">→</b><div className="component-pieces">{character.components.map((component, index) => <article key={`${component}-${index}`}><strong>{component}</strong><span>{component === character.radical ? 'radical registrado' : 'componente registrado'}</span></article>)}</div></div><aside className="component-source"><b>Análisis pedagógico auditado</b><p>Radical: {character.radical}. Componentes: {character.components.join(' + ')}.</p></aside></> : <aside className="component-source"><b>Sin descomposición pedagógica publicada</b><p>No se muestran radicales ni componentes automáticos para evitar presentar una interpretación no auditada. Esto no afecta los trazos técnicos.</p></aside>}
+    {character.componentsAudited ? <><div className="component-map" aria-label={`Componentes de ${character.hanzi}`}><div className="component-whole"><strong><Hanzi>{character.hanzi}</Hanzi></strong><span>carácter</span></div><b aria-hidden="true">→</b><div className="component-pieces">{character.components.map((component, index) => <article key={`${component}-${index}`}><strong><Hanzi>{component}</Hanzi></strong><span>{component === character.radical ? 'radical registrado' : 'componente registrado'}</span></article>)}</div></div><aside className="component-source"><b>Análisis pedagógico auditado</b><p>Radical: <Hanzi>{character.radical}</Hanzi>. Componentes: <Hanzi>{character.components.join(' + ')}</Hanzi>.</p></aside></> : <aside className="component-source"><b>Sin descomposición pedagógica publicada</b><p>No se muestran radicales ni componentes automáticos para evitar presentar una interpretación no auditada. Esto no afecta los trazos técnicos.</p></aside>}
     <ContextList character={character} {...contextProps} />
   </section>;
 }
@@ -296,7 +297,7 @@ function StrokesPanel({ character, data, onMastered }: { character: CharacterEnt
   const directions = useMemo(() => data.medians.map(strokeDirection), [data]);
   const strokeNames = useMemo(() => strokeNamesForCharacter(character.hanzi, data.strokes.length), [character.hanzi, data.strokes.length]);
   return <section className="panel hanzi-tab-panel strokes-panel"><div className="hanzi-panel-heading"><div><p className="eyebrow">03 · TRAZOS</p><h2>Orden, inicio y dirección</h2></div></div>
-    <div className="stroke-answer-layout"><HanziStrokeSvg character={character.hanzi} data={data} /><div><h3>Cómo leer los trazos</h3><p><i className="legend-dot" /> El punto marca dónde inicia cada trazo.</p><p><i className="legend-arrow">→</i> La línea roja indica el recorrido y su flecha, la dirección.</p><ol className="stroke-name-list">{directions.map((direction, index) => { const name = strokeNames[index]; return <li key={index}><b>{name ? <>{index + 1} · {name.hanzi} · <PinyinText>{name.pinyin}</PinyinText></> : `Trazo ${index + 1}`}</b><span>Dirección: hacia {direction.label}.</span></li>; })}</ol></div></div>
+    <div className="stroke-answer-layout"><HanziStrokeSvg character={character.hanzi} data={data} /><div><h3>Cómo leer los trazos</h3><p><i className="legend-dot" /> El punto marca dónde inicia cada trazo.</p><p><i className="legend-arrow">→</i> La línea roja indica el recorrido y su flecha, la dirección.</p><ol className="stroke-name-list">{directions.map((direction, index) => { const name = strokeNames[index]; return <li key={index}><b><Hanzi>{name ? <>{index + 1} · {name.hanzi} · <PinyinText>{name.pinyin}</PinyinText></> : `Trazo ${index + 1}`}</Hanzi></b><span>Dirección: hacia {direction.label}.</span></li>; })}</ol></div></div>
     <div className="hanzi-confirm-row"><button className="button button-primary" type="button" onClick={onMastered}>Ya entiendo el orden</button></div>
   </section>;
 }
@@ -317,7 +318,7 @@ function PracticePanel({ character, data, onAttempt }: { character: CharacterEnt
   function reveal(show: boolean) { if (!started) return; setAnswerVisible(show); if (show) { setHints((value) => value + 1); setUsedAnswer(true); stage.current?.show(); } else stage.current?.hide(); }
   function complete(summary: QuizSummary) { setStarted(false); setFeedback(summary.mistakes === 0 ? '完成 · Orden y dirección correctos.' : `Completado con ${summary.mistakes} ${summary.mistakes === 1 ? 'ajuste' : 'ajustes'}. Volverá en el repaso.`); trackAnalyticsEvent('hanzi_practiced', { contentId: character.hanzi, correct: summary.mistakes === 0 }); void onAttempt({ characterId: character.id, mode, skillDimension: 'writing', completed: true, correctStrokes: summary.correctStrokes, mistakes: summary.mistakes, hintsUsed: hints, durationMs: summary.durationMs, usedAnswer }); }
   return <section className="panel hanzi-tab-panel practice-panel">
-    <div className="hanzi-panel-heading"><div><p className="eyebrow">04 · PRACTICAR</p><h2>Escribe {character.hanzi}</h2></div></div>
+    <div className="hanzi-panel-heading"><div><p className="eyebrow">04 · PRACTICAR</p><h2>Escribe <Hanzi>{character.hanzi}</Hanzi></h2></div></div>
     <div className="practice-stage-layout"><div>
       <div className="practice-start-row" role="group" aria-label="Modo e inicio de práctica">
         {([['guided', 'Con guía'], ['independent', 'Sin guía']] as const).map(([value, label]) => <button type="button" className={`practice-mode-button${mode === value ? ' selected' : ''}`} aria-pressed={mode === value} onClick={() => chooseMode(value)} key={value}>{label}</button>)}
@@ -325,6 +326,6 @@ function PracticePanel({ character, data, onAttempt }: { character: CharacterEnt
       </div>
       <HanziWriterStage ref={stage} character={character.hanzi} showCharacter={false} showOutline={mode === 'guided'} interactive onReady={() => setReady(true)} onMistake={(total, mistakesOnStroke) => { setMistakes(total); if ((mode === 'guided' && mistakesOnStroke === 2) || (mode === 'independent' && mistakesOnStroke === 4)) setHints((value) => value + 1); setFeedback('Todavía no. Revisa el punto de inicio y la dirección.'); }} onCorrectStroke={(count) => { setCorrect(count); setFeedback(`Trazo ${count} de ${data.strokes.length} correcto.`); }} onQuizComplete={complete} />
       <p className="privacy-note">Se guarda solo el resumen del intento; nunca tus coordenadas de escritura.</p>
-    </div><aside><h3>{mode === 'guided' ? 'Guía visible y pistas progresivas' : 'Cuadrícula sin contorno'}</h3><div className="practice-counters"><span><b>{correct}</b>/{data.strokes.length} trazos</span><span><b>{mistakes}</b> errores</span><span><b>{hints}</b> consultas</span></div><p className="practice-feedback" aria-live="polite">{feedback}</p><div className="hanzi-controls"><button type="button" disabled={!started} aria-pressed={answerVisible} onPointerDown={(event) => { event.preventDefault(); reveal(true); }} onPointerUp={() => reveal(false)} onPointerCancel={() => reveal(false)} onPointerLeave={() => answerVisible && reveal(false)} onKeyDown={(event) => { if (event.key === ' ' || event.key === 'Enter') { event.preventDefault(); reveal(!answerVisible); } }}>Mantén para ver respuesta</button><button type="button" disabled={!started} onClick={() => { stage.current?.cancelQuiz(); setStarted(false); setFeedback('Intento cancelado; no se guardó.'); }}>Cancelar</button></div></aside></div>
+    </div><aside><h3>{mode === 'guided' ? 'Guía visible y pistas progresivas' : 'Cuadrícula sin contorno'}</h3><div className="practice-counters"><span><b>{correct}</b>/{data.strokes.length} trazos</span><span><b>{mistakes}</b> errores</span><span><b>{hints}</b> consultas</span></div><p className="practice-feedback" aria-live="polite"><Hanzi>{feedback}</Hanzi></p><div className="hanzi-controls"><button type="button" disabled={!started} aria-pressed={answerVisible} onPointerDown={(event) => { event.preventDefault(); reveal(true); }} onPointerUp={() => reveal(false)} onPointerCancel={() => reveal(false)} onPointerLeave={() => answerVisible && reveal(false)} onKeyDown={(event) => { if (event.key === ' ' || event.key === 'Enter') { event.preventDefault(); reveal(!answerVisible); } }}>Mantén para ver respuesta</button><button type="button" disabled={!started} onClick={() => { stage.current?.cancelQuiz(); setStarted(false); setFeedback('Intento cancelado; no se guardó.'); }}>Cancelar</button></div></aside></div>
   </section>;
 }

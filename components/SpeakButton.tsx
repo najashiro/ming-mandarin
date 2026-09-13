@@ -1,4 +1,5 @@
 'use client';
+import { Hanzi } from '@/components/Hanzi';
 
 import { useEffect, useRef, useState } from 'react';
 import { audioForMandarinText } from '@/lib/mandarin-audio';
@@ -92,6 +93,6 @@ export function SpeakButton({ text, audioSrc, rate = 0.85, label = 'Escuchar', c
   const visibleLabel = isActive ? 'Detener' : label;
   const accessibleLabel = isActive ? `Detener pronunciación de ${text}` : ariaLabel ?? `${visibleLabel}: ${text}`;
   return <button className={`audio-button ${state}${compact ? ' compact' : ''}`} type="button" onClick={play} aria-label={accessibleLabel} aria-live="polite" title={title}>
-    <span aria-hidden="true">{isActive ? '■' : compact ? '🔊' : '▶'}</span>{!compact && <> {visibleLabel}</>}
+    <span aria-hidden="true">{isActive ? '■' : compact ? '🔊' : '▶'}</span>{!compact && <> <Hanzi>{visibleLabel}</Hanzi></>}
   </button>;
 }
