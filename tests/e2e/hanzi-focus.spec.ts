@@ -32,6 +32,11 @@ test('focus=glyph muestra el glifo de 作, 家, 有 y 几 en Aprender', async ({
   }
 });
 
+test('el enlace directo anterior con solo character también enfoca el glifo', async ({ page }) => {
+  await page.goto(`/study/l1-l2-l3/hanzi?character=${encodeURIComponent('作')}`);
+  await expectGlyphFocused(page, '作');
+});
+
 test('las pestañas y el modo explícitos conservan su navegación sin foco automático', async ({ page }) => {
   for (const [query, tab] of [['tab=Componentes', 'Componentes'], ['tab=Trazos', 'Trazos'], ['tab=Practicar', 'Practicar'], ['mode=practice', 'Practicar']] as const) {
     await page.goto(`/study/l1-l2-l3/hanzi?character=${encodeURIComponent('作')}&${query}`);
