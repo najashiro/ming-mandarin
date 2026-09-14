@@ -17,11 +17,13 @@ type Props = {
   hanziCharacters: CharacterEntry[];
   listeningEntries: ListeningEntry[];
   scope: CurriculumScope;
+  initialGame?: 'reto-mixto';
 };
 
-export function Arcade({ exercises, hanziCharacters, listeningEntries, scope }: Props) {
+export function Arcade({ exercises, hanziCharacters, listeningEntries, scope, initialGame }: Props) {
   const rootRef = useRef<HTMLDivElement>(null);
-  const [selected, setSelected] = useState<number | null>(null);
+  const [selected, setSelected] = useState<number | null>(() => initialGame ? games.findIndex((item) => item.id === initialGame) : null);
+  const [shareStatus, setShareStatus] = useState('');
   const [round, setRound] = useState(0);
   const [answer, setAnswer] = useState('');
   const [score, setScore] = useState(0);
@@ -30,7 +32,12 @@ export function Arcade({ exercises, hanziCharacters, listeningEntries, scope }: 
   const completionTracked = useRef(false);
   const game = selected === null ? null : games[selected];
 
-  useEffect(() => { rootRef.current?.setAttribute('data-hydrated', 'true'); }, []);
+  useEffect(() => {
+    rootRef.current?.setAttribute('data-hydrated', 'true');
+    if (!initialGame) return;
+    const frame = window.requestAnimationFrame(() => document.getElementById('arena')?.scrollIntoView({ behavior: 'auto', block: 'start' }));
+    return () => window.cancelAnimationFrame(frame);
+  }, [initialGame]);
   const pool = useMemo(() => !game?.dimension ? [] : exercises.filter((item) => game.dimension === 'all' || item.dimension === game.dimension), [game, exercises]);
   const exercise = pool[round % Math.max(1, pool.length)] ?? exercises[round % exercises.length];
 
@@ -46,6 +53,24 @@ export function Arcade({ exercises, hanziCharacters, listeningEntries, scope }: 
     if (games[index].kind !== 'mixed') trackAnalyticsEvent('game_started', { contentId: games[index].id });
     setSelected(index); setRound(0); setAnswer(''); setScore(0); setMessage('');
     document.getElementById('arena')?.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  async function shareMixedChallenge() {
+    const url = new URL(`/study/${scope}/games?game=reto-mixto`, window.location.origin).toString();
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: 'Reto Mixto · Míng', url });
+        return;
+      } catch (error) {
+        if (error instanceof DOMException && error.name === 'AbortError') return;
+      }
+    }
+    try {
+      await navigator.clipboard.writeText(url);
+      setShareStatus('Enlace copiado');
+    } catch {
+      window.prompt('Copia el enlace de Reto Mixto:', url);
+    }
   }
 
   function check() {
@@ -64,7 +89,7 @@ export function Arcade({ exercises, hanziCharacters, listeningEntries, scope }: 
   }
 
   return <div className="arcade-root" ref={rootRef}>
-    <section className="game-grid shell">{games.map((item, index) => <article key={item.id}><span>{String(index + 1).padStart(2, '0')}</span><h2>{item.name}</h2><p><Hanzi>{item.description}</Hanzi></p><button type="button" onClick={() => play(index)}>Jugar →</button></article>)}</section>
+    <section className="game-grid shell">{games.map((item, index) => <article key={item.id}><span>{String(index + 1).padStart(2, '0')}</span>{item.kind === 'mixed' && <button className="game-share-button" type="button" onClick={() => void shareMixedChallenge()} aria-label="Compartir Reto Mixto" title="Compartir Reto Mixto" data-share-path={`/study/${scope}/games?game=reto-mixto`}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.3 10.8 7.4-4.6m-7.4 7 7.4 4.6"/></svg></button>}<h2>{item.name}</h2><p><Hanzi>{item.description}</Hanzi></p>{item.kind === 'mixed' && <span className="game-share-status" role="status" aria-live="polite">{shareStatus}</span>}<button type="button" onClick={() => play(index)}>Jugar →</button></article>)}</section>
     <section id="arena" className="arcade-arena shell">{!game ? <div><p className="eyebrow">{games.length} JUEGOS FUNCIONALES</p><h2>Elige un reto</h2><p>Cada juego usa exclusivamente el corpus del alcance seleccionado.</p></div> : <>
       {game.kind === 'mixed' ? <RetoMixto scope={scope} onClose={() => setSelected(null)} /> : game.kind === 'listen' || game.kind === 'hanzi-listen' ? <ListenAndRecognize entries={listenSession.deck} initialDeck={listenSession.deck} initialAudio={listenSession.audio} onClose={() => setSelected(null)} onComplete={(correct) => { trackAnalyticsEvent('exercise_completed', { contentId: `${game.id}:listening`, correct }); if (correct) completeGame(); }} /> : <>
         <div className="practice-top"><div><p className="eyebrow">RONDA {round + 1}</p><h2>{game.name}</h2></div><b>{score} aciertos</b></div>

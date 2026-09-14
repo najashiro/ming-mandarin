@@ -9,7 +9,7 @@ export default defineConfig({
   projects: [
     { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
     { name: 'mobile', use: { ...devices['Pixel 7'] } },
-    { name: 'webkit-iphone', testMatch: ['hanzi-font.spec.ts', 'hanzi-focus.spec.ts', 'hanzi-writing.spec.ts'], use: { ...devices['iPhone 13'] } },
+    { name: 'webkit-iphone', testMatch: ['hanzi-font.spec.ts', 'hanzi-focus.spec.ts', 'hanzi-writing.spec.ts', 'reto-share.spec.ts'], use: { ...devices['iPhone 13'] } },
   ],
   webServer: process.env.PLAYWRIGHT_EXTERNAL_SERVER === '1' ? undefined : {
     command: `${nodeExecutable} scripts/e2e-server.mjs`,
