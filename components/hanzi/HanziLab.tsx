@@ -12,6 +12,7 @@ import type { HanziAttemptPayload, HanziCharacterData, HanziLearningState, Hanzi
 import { strokeNamesForCharacter } from '@/lib/hanzi/stroke-names';
 import { HanziStrokeSvg } from './HanziStrokeSvg';
 import { HanziWriterStage, type HanziWriterStageHandle, type QuizSummary } from './HanziWriterStage';
+import { HanziFocusScroller } from './HanziFocusScroller';
 import { CommunityButton } from '@/components/community/CommunityProvider';
 import { SpeakButton } from '@/components/SpeakButton';
 import { PinyinText } from '@/components/PinyinText';
@@ -40,11 +41,12 @@ type Props = {
   initialProgress?: HanziProgressMap;
   initialCharacter?: string;
   initialTab?: Tab;
+  focusGlyph?: boolean;
   scopeLabel?: string;
   route?: string;
 };
 
-export function HanziLab({ characters, canonicalHanzi = characters.map((item) => item.hanzi), stages, manifest, initialProgress = {}, initialCharacter = '好', initialTab = 'Aprender', scopeLabel = 'Lección 1', route = '/lesson/1/hanzi' }: Props) {
+export function HanziLab({ characters, canonicalHanzi = characters.map((item) => item.hanzi), stages, manifest, initialProgress = {}, initialCharacter = '好', initialTab = 'Aprender', focusGlyph = false, scopeLabel = 'Lección 1', route = '/lesson/1/hanzi' }: Props) {
   const firstCharacter = characters.find((item) => item.hanzi === initialCharacter) ?? characters[0];
   const [selectedId, setSelectedId] = useState(firstCharacter.id);
   const [tab, setTab] = useState<Tab>(initialTab);
@@ -213,6 +215,7 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
   }
 
   return <div className="hanzi-workspace">
+    <HanziFocusScroller active={focusGlyph && tab === 'Aprender' && character.id === firstCharacter.id} />
     <section className="panel hanzi-route" aria-label="Ruta pedagógica Hanzi">
       <div className="hanzi-route-heading"><div><p className="eyebrow">RUTA HANZI · {scopeLabel.toUpperCase()}</p><h2>{studied} / {characters.length} estudiados</h2></div><button className="button button-primary" type="button" onClick={continueLearning}>Continuar aprendiendo</button></div>
       <div className="hanzi-stage-progress">{stages.map((stage, index) => {
@@ -283,7 +286,7 @@ function ContextList({ character, characterIdsByHanzi, canonicalHanzi, route, on
 function LearnPanel({ character, onMastered, ...contextProps }: ContextListProps & { onMastered: () => void }) {
   const stage = useRef<HanziWriterStageHandle>(null);
   function animateOnce() { stage.current?.animate(); }
-  return <section className="panel hanzi-tab-panel hanzi-learn-panel"><div className="hanzi-learn-visual"><HanziWriterStage ref={stage} character={character.hanzi} onReady={animateOnce} /><button className="hanzi-replay-control" type="button" onClick={animateOnce} aria-label="Ver animación de nuevo" title="Ver de nuevo"><span aria-hidden="true">↻</span></button></div><div className="hanzi-panel-copy"><p className="eyebrow">01 · APRENDER</p><h2>Observa el carácter completo</h2><p><Hanzi>Usa la cuadrícula 米字格 para comparar proporción y centro. La animación respeta el orden y la dirección de los datos técnicos.</Hanzi></p><button className="button button-primary" type="button" onClick={onMastered}>Lo reconozco</button><ContextList character={character} {...contextProps} /></div></section>;
+  return <section className="panel hanzi-tab-panel hanzi-learn-panel"><div id="hanzi-glyph-focus" className="hanzi-learn-visual"><HanziWriterStage ref={stage} character={character.hanzi} onReady={animateOnce} /><button className="hanzi-replay-control" type="button" onClick={animateOnce} aria-label="Ver animación de nuevo" title="Ver de nuevo"><span aria-hidden="true">↻</span></button></div><div className="hanzi-panel-copy"><p className="eyebrow">01 · APRENDER</p><h2>Observa el carácter completo</h2><p><Hanzi>Usa la cuadrícula 米字格 para comparar proporción y centro. La animación respeta el orden y la dirección de los datos técnicos.</Hanzi></p><button className="button button-primary" type="button" onClick={onMastered}>Lo reconozco</button><ContextList character={character} {...contextProps} /></div></section>;
 }
 
 function ComponentsPanel({ character, ...contextProps }: ContextListProps) {

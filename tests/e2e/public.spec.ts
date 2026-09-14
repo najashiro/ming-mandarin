@@ -93,6 +93,7 @@ test('Reto Mixto integra imagen, audio, corrección y alcance acumulativo', asyn
   await expect(challenge.getByText(expected, { exact: true }).last()).toBeVisible();
   await expect(challenge.locator('[lang="zh-Latn-pinyin"]')).toBeVisible();
   await expect(challenge.locator('.mixed-correction-actions a')).toHaveCount(1);
+  await expect(challenge.locator('.mixed-correction-actions a').first()).toHaveAttribute('href', `/study/l1-l2-l3/hanzi?character=${encodeURIComponent(expected)}&focus=glyph`);
   await expect(challenge.locator('.mixed-correction-actions a').first()).toHaveAttribute('target', '_blank');
   await expect(challenge.locator('.mixed-correction-actions a').first()).toHaveAttribute('rel', 'noopener noreferrer');
   const playsBeforeCorrection = await page.evaluate(() => (window as typeof window & { __retoMainPlays: string[] }).__retoMainPlays.length);
@@ -124,6 +125,7 @@ test('Reto Mixto integra imagen, audio, corrección y alcance acumulativo', asyn
   await expect.poll(async () => page.evaluate(() => (window as typeof window & { __retoMainPlays: string[] }).__retoMainPlays.length)).toBeGreaterThan(playsBeforeCorrect);
   await expect(positive.getByRole('button', { name: /Escuchar pronunciación de/ })).toBeVisible();
   await expect(positive.locator('.mixed-correction-actions a')).toHaveCount(1);
+  await expect(positive.locator('.mixed-correction-actions a')).toHaveAttribute('href', `/study/l1-l2-l3/hanzi?character=${encodeURIComponent(expected)}&focus=glyph`);
   await expect(positive.locator('.mixed-correction-actions a')).toHaveAttribute('target', '_blank');
   await expect(positive.locator('.mixed-correction-actions a')).toHaveAttribute('rel', 'noopener noreferrer');
   await expect(positive.getByRole('button', { name: 'Continuar →' })).toBeVisible();

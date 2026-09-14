@@ -1,5 +1,6 @@
 import type { LessonNumber } from '@/data/types';
 import type { RetoMixtoConversation, RetoMixtoEntry, RetoMixtoMode } from '@/data/reto-mixto';
+import hanziManifest from '@/public/hanzi-data/manifest.json';
 
 export type RetoMixtoQuestion = {
   id: string;
@@ -9,6 +10,8 @@ export type RetoMixtoQuestion = {
   lessonIds: LessonNumber[];
   conversationId?: string;
   retryOf?: string;
+  interactionType?: 'hanzi-handwriting';
+  writingPrompt?: 'audio' | 'meaning';
 };
 
 const normalizeChinese = (value: string) => value.normalize('NFC').replace(/[\s，。！？、；：“”‘’.,!?;:'"()]/g, '');
@@ -122,6 +125,31 @@ export function buildRetoMixtoDeck(
   }
 
   return deck;
+}
+
+export function buildRetoMixtoWritingDeck(entries: RetoMixtoEntry[], lessons: LessonNumber[], total: number, random: () => number = Math.random): RetoMixtoQuestion[] {
+  const pool = entries.filter((entry) => entry.playableModes.includes('audio-hanzi')
+    && entry.lessons.some((lesson) => lessons.includes(lesson))
+    && /^[\p{Script=Han}]{1,8}$/u.test(normalizeChinese(entry.hanzi))
+    && [...normalizeChinese(entry.hanzi)].every((character) => hanziManifest[character as keyof typeof hanziManifest]?.available)
+    && Boolean(entry.audioSrc && entry.meaningEs));
+  if (!pool.length) return [];
+  const questions: RetoMixtoQuestion[] = [];
+  let available = shuffle(pool, random);
+  for (let index = 0; index < total; index += 1) {
+    if (!available.length) available = shuffle(pool, random);
+    const entry = available.pop()!;
+    questions.push({
+      id: `rm-writing-${index}-${entry.id}`,
+      entryId: entry.id,
+      mode: 'audio-hanzi',
+      optionIds: [],
+      lessonIds: [...lessons],
+      interactionType: 'hanzi-handwriting',
+      writingPrompt: index % 2 === 0 ? 'audio' : 'meaning',
+    });
+  }
+  return questions;
 }
 
 export function retryQuestion(

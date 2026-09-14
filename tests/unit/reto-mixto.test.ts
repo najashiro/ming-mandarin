@@ -3,9 +3,21 @@ import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { retoMixtoAudit, retoMixtoConversations, retoMixtoCorpus, retoMixtoModes } from '@/data/reto-mixto';
 import { audioForMandarinText } from '@/lib/mandarin-audio';
-import { buildRetoMixtoDeck, insertRetry, isSilentRetoMixtoToken, primaryRetoMixtoHanziTarget, retryQuestion } from '@/lib/reto-mixto';
+import { buildRetoMixtoDeck, buildRetoMixtoWritingDeck, insertRetry, isSilentRetoMixtoToken, primaryRetoMixtoHanziTarget, retryQuestion } from '@/lib/reto-mixto';
+import hanziManifest from '@/public/hanzi-data/manifest.json';
 
 describe('Reto Mixto', () => {
+  it('crea escritura avanzada desde el corpus curricular sin revelar opciones', () => {
+    const deck = buildRetoMixtoWritingDeck(retoMixtoCorpus, [1, 2, 3], 20, () => 0.42);
+    expect(deck).toHaveLength(20);
+    expect(deck.every((question) => question.interactionType === 'hanzi-handwriting' && question.optionIds.length === 0)).toBe(true);
+    expect(deck.map((question) => question.writingPrompt)).toContain('audio');
+    expect(deck.map((question) => question.writingPrompt)).toContain('meaning');
+    expect(deck.every((question) => retoMixtoCorpus.some((entry) => entry.id === question.entryId))).toBe(true);
+    const allWriting = buildRetoMixtoWritingDeck(retoMixtoCorpus, [1, 2, 3], retoMixtoCorpus.length, () => 0.42);
+    const unavailable = [...new Set(allWriting.flatMap((question) => [...(retoMixtoCorpus.find((entry) => entry.id === question.entryId)?.hanzi.replace(/[\s，。！？、；：“”‘’.,!?;:'"()]/g, '') ?? '')]).filter((character) => !hanziManifest[character as keyof typeof hanziManifest]?.available))];
+    expect(unavailable).toEqual([]);
+  });
   it('mantiene un corpus maestro deduplicado, trazable y completo', () => {
     expect(new Set(retoMixtoCorpus.map((entry) => entry.id)).size).toBe(retoMixtoCorpus.length);
     expect(new Set(retoMixtoCorpus.map((entry) => entry.hanzi)).size).toBe(retoMixtoCorpus.length);
