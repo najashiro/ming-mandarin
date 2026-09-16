@@ -1,0 +1,39 @@
+{
+  "source": "SRC-EXAM-B2-PARTIAL",
+  "policy": "Extraer patrones de evaluación, no respuestas personales ni datos identificativos.",
+  "sections": [
+    {
+      "type": "dictation",
+      "points": 10
+    },
+    {
+      "type": "radical_and_radical_meaning",
+      "points": 10
+    },
+    {
+      "type": "choose_correct_hanzi",
+      "points": 10
+    },
+    {
+      "type": "dialogue_matching",
+      "points": 12
+    },
+    {
+      "type": "form_question_from_underlined_part",
+      "points": 10
+    },
+    {
+      "type": "complete_dialogue",
+      "points": 18
+    },
+    {
+      "type": "translate_to_chinese",
+      "points": 15
+    },
+    {
+      "type": "reading_comprehension",
+      "points": 15
+    }
+  ],
+  "total_points": 100
+}

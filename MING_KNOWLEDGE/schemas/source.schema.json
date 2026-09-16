@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ming Source",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "filename",
+    "lessons",
+    "sha256"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "filename": {
+      "type": "string"
+    },
+    "lessons": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      }
+    },
+    "sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

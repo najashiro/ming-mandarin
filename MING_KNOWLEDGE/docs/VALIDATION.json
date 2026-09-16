@@ -1,0 +1,12 @@
+{
+  "version": "0.1.0",
+  "generated_at": "2026-09-16",
+  "checks": {
+    "all_source_files_found": true,
+    "duplicate_source_ids": false,
+    "vocabulary_ids_unique": true,
+    "grammar_ids_unique": true,
+    "dialogue_ids_unique": true
+  },
+  "note": "Validación estructural; no equivale a auditoría curricular página por página."
+}

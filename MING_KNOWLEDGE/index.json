@@ -1,0 +1,46 @@
+{
+  "project": "Míng · Mandarín activo",
+  "package": "MING_KNOWLEDGE",
+  "version": "0.1.0",
+  "generated_at": "2026-09-16",
+  "language": "es",
+  "coverage": {
+    "phonetics_intro": true,
+    "lessons": [
+      1,
+      2,
+      3
+    ],
+    "highest_lesson": 3,
+    "full_page_audit_complete": false
+  },
+  "source_count": 19,
+  "record_counts": {
+    "vocabulary": 98,
+    "grammar": 13,
+    "dialogues": 7,
+    "hanzi_index": 123,
+    "exercise_patterns": 13,
+    "media_refs": 6
+  },
+  "authority_order": [
+    "original textbook / workbook",
+    "official class presentations",
+    "official Hanzi practice sheets",
+    "exam patterns",
+    "normalized knowledge files"
+  ],
+  "entry_points": {
+    "curriculum": "curriculum/curriculum.md",
+    "lessons": "lessons/",
+    "vocabulary": "data/vocabulary.json",
+    "grammar": "data/grammar.json",
+    "dialogues": "data/dialogues.json",
+    "hanzi": "data/hanzi.json",
+    "exercises": "data/exercises.json",
+    "exam_patterns": "data/exam-patterns.json",
+    "media": "data/media-index.json",
+    "sources": "sources/sources.json",
+    "audit_queue": "data/unresolved.json"
+  }
+}

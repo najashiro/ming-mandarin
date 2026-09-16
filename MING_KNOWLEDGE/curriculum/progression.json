@@ -1,0 +1,48 @@
+{
+  "levels": [
+    {
+      "lesson": 1,
+      "requires": [],
+      "focus": [
+        "saludos",
+        "presentación",
+        "estado",
+        "adjetivos",
+        "preguntas sí/no"
+      ]
+    },
+    {
+      "lesson": 2,
+      "requires": [
+        1
+      ],
+      "focus": [
+        "nacionalidad",
+        "identificación",
+        "gustos",
+        "comida",
+        "estudio",
+        "también/todos"
+      ]
+    },
+    {
+      "lesson": 3,
+      "requires": [
+        1,
+        2
+      ],
+      "focus": [
+        "familia",
+        "posesión/existencia",
+        "clasificadores",
+        "cantidades",
+        "profesiones"
+      ]
+    }
+  ],
+  "game_modes": {
+    "basic": "reconocimiento directo y asociación",
+    "intermediate": "producción guiada, completar, seleccionar forma correcta",
+    "advanced": "producción escrita, radicales, diálogos, traducción y patrones del examen"
+  }
+}

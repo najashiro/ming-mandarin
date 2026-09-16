@@ -1,0 +1,71 @@
+{
+  "lesson": 3,
+  "title": {
+    "zh": "你们家有几口人？",
+    "pinyin": "Nǐmen jiā yǒu jǐ kǒu rén?",
+    "es": "¿Cuántas personas hay en tu familia?"
+  },
+  "coverage": {
+    "core_extraction": "substantial",
+    "full_page_audit": false
+  },
+  "vocabulary": [
+    "L3-V001",
+    "L3-V002",
+    "L3-V003",
+    "L3-V004",
+    "L3-V005",
+    "L3-V006",
+    "L3-V007",
+    "L3-V008",
+    "L3-V009",
+    "L3-V010",
+    "L3-V011",
+    "L3-V012",
+    "L3-V013",
+    "L3-V014",
+    "L3-V015",
+    "L3-V016",
+    "L3-V017",
+    "L3-V018",
+    "L3-V019",
+    "L3-V020",
+    "L3-V021",
+    "L3-V022",
+    "L3-S001",
+    "L3-S002",
+    "L3-S003",
+    "L3-S004"
+  ],
+  "grammar": [
+    "L3-G001",
+    "L3-G002",
+    "L3-G003",
+    "L3-G004"
+  ],
+  "dialogues": [
+    "L3-D001",
+    "L3-D002"
+  ],
+  "exercise_patterns": [
+    "EX-PAT-001",
+    "EX-PAT-002",
+    "EX-PAT-003",
+    "EX-PAT-004",
+    "EX-PAT-005",
+    "EX-PAT-006",
+    "EX-PAT-007",
+    "EX-PAT-008",
+    "EX-PAT-009",
+    "EX-PAT-010",
+    "EX-PAT-011",
+    "EX-PAT-012",
+    "EX-PAT-013"
+  ],
+  "source_ids": [
+    "SRC-BOOK-03",
+    "SRC-WB-03",
+    "SRC-PPT-03-1",
+    "SRC-HANZI-03-1"
+  ]
+}
