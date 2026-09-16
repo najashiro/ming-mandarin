@@ -1,42 +1,10 @@
-# Instrucciones Míng para agentes de código
+# Míng · MANDARÍN — reglas de consulta curricular v1.0
 
-## Fuente curricular
-
-Antes de modificar vocabulario, Hanzi, gramática, diálogos, ejercicios, juegos o exámenes:
-
-1. Leer `MING_KNOWLEDGE/index.json`.
-2. Leer `MING_KNOWLEDGE/lessons/lesson-XX.json` de la lección afectada.
-3. Consultar solo los archivos necesarios dentro de `MING_KNOWLEDGE/data/`.
-
-## PDF originales
-
-NO releer todos los PDF por defecto.
-
-Consultar un PDF original únicamente si:
-- `data/unresolved.json` indica que el dato está pendiente;
-- falta el dato solicitado;
-- existe contradicción entre registros;
-- el usuario pide una verificación literal contra la fuente.
-
-## No inventar currículo
-
-No añadir vocabulario, Hanzi, reglas o ejercicios como si fueran del curso si no están
-respaldados por `MING_KNOWLEDGE` o por una fuente original explícitamente revisada.
-
-## Conflictos
-
-Si una fuente contradice al corpus:
-- no sobrescribir silenciosamente;
-- registrar la discrepancia;
-- conservar procedencia;
-- priorizar la fuente original correspondiente.
-
-## Cambios
-
-Al añadir material nuevo:
-- actualizar `sources/sources.json`;
-- actualizar solo las lecciones afectadas;
-- añadir/actualizar registros de `data/`;
-- actualizar `data/source-map.json`;
-- añadir una nota en `docs/CHANGELOG.md`;
-- no reconstruir todo el corpus si no es necesario.
+1. Leer `index.json`.
+2. Identificar la lección y abrir únicamente sus shards en `lessons/` y `data/`.
+3. No releer PDF originales por defecto.
+4. Abrir una fuente original solo si falta un dato, existe conflicto, se necesita una imagen o el usuario pide verificación literal.
+5. Distinguir `core_textbook`, `supplementary_textbook`, `classroom_extension` y `preview_next_lesson`; no mezclarlos silenciosamente.
+6. Si hay discrepancia, el PDF original prevalece y la corrección debe conservar trazabilidad.
+7. Para ejercicios, usar `data/exercises.json` + `data/exercise-sets.json`; para patrones de evaluación usar `data/exam-patterns.json`.
+8. Para radicales/Hanzi, usar `data/radicals.json` y `data/hanzi/`; abrir hojas Hanzi solo para comprobar trazos o forma visual.

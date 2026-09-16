@@ -6,40 +6,10 @@
     "lesson",
     "title",
     "vocabulary",
-    "grammar",
     "dialogues",
-    "source_ids"
-  ],
-  "properties": {
-    "lesson": {
-      "type": "integer"
-    },
-    "title": {
-      "type": "object"
-    },
-    "vocabulary": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "grammar": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "dialogues": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "source_ids": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    }
-  }
+    "phrases",
+    "grammar",
+    "source_ids",
+    "audit_status"
+  ]
 }

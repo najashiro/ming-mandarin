@@ -1,12 +1,1 @@
-{
-  "version": "0.1.0",
-  "generated_at": "2026-09-16",
-  "checks": {
-    "all_source_files_found": true,
-    "duplicate_source_ids": false,
-    "vocabulary_ids_unique": true,
-    "grammar_ids_unique": true,
-    "dialogue_ids_unique": true
-  },
-  "note": "Validación estructural; no equivale a auditoría curricular página por página."
-}
+{"version":"1.0.0","validated_at":"2026-09-16","checks":{"source_count_19":true,"page_count_498":true,"all_sources_have_audit_manifest":true,"vocabulary_shards_indexed":true,"grammar_total_24":true,"dialogues_total_8":true,"key_phrases_total_46":true,"radical_groups_total_14":true,"blocking_unresolved_zero":true},"status":"pass","note":"Validación estructural y de cobertura documental. Para reproducción literal o material visual, consultar la fuente original."}
