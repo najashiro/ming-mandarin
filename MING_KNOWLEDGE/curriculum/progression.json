@@ -1,0 +1,70 @@
+{
+  "version": "1.0.0",
+  "levels": [
+    {
+      "lesson": 1,
+      "title": "你最近怎么样？",
+      "requires": [],
+      "focus": [
+        "saludos",
+        "presentación personal",
+        "estado reciente",
+        "predicado adjetival",
+        "吗/呢/也"
+      ]
+    },
+    {
+      "lesson": 2,
+      "title": "你是哪国人？",
+      "requires": [
+        1
+      ],
+      "focus": [
+        "nacionalidad",
+        "identificación",
+        "comida y gustos",
+        "是/不/也/都/和",
+        "pronombres interrogativos"
+      ]
+    },
+    {
+      "lesson": 3,
+      "title": "你们家有几口人？",
+      "requires": [
+        1,
+        2
+      ],
+      "focus": [
+        "familia",
+        "有/没有",
+        "的",
+        "clasificadores",
+        "几/两",
+        "profesiones",
+        "edad y clases"
+      ]
+    }
+  ],
+  "difficulty_mapping": {
+    "basic": [
+      "reconocimiento",
+      "imagen↔palabra",
+      "audio↔carácter"
+    ],
+    "intermediate": [
+      "completar",
+      "ordenar",
+      "pregunta/respuesta",
+      "clasificadores"
+    ],
+    "advanced": [
+      "dictado",
+      "escritura Hanzi",
+      "radicales",
+      "traducción",
+      "formar preguntas",
+      "comprensión",
+      "diálogo"
+    ]
+  }
+}

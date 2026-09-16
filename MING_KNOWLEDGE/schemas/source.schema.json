@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ming Source v1.0",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "filename",
+    "lessons",
+    "description",
+    "pages",
+    "bytes",
+    "sha256",
+    "authority",
+    "ingestion_status",
+    "audit_version"
+  ],
+  "properties": {
+    "id": {"type": "string", "pattern": "^SRC-"},
+    "type": {"enum": ["presentation", "hanzi_sheet", "textbook", "workbook", "exam"]},
+    "filename": {"type": "string", "minLength": 1},
+    "lessons": {
+      "type": "array",
+      "items": {"type": "integer", "minimum": 0},
+      "uniqueItems": true
+    },
+    "description": {"type": "string"},
+    "pages": {"type": "integer", "minimum": 1},
+    "bytes": {"type": "integer", "minimum": 0},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "authority": {"const": "original_course_material"},
+    "ingestion_status": {"const": "audited_v1"},
+    "audit_version": {"const": "1.0.0"}
+  },
+  "additionalProperties": false
+}
