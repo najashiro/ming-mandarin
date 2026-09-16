@@ -1,0 +1,51 @@
+[
+  {
+    "id": "MEDIA-00-ARTICULATION-01",
+    "lesson": 0,
+    "type": "pronunciation_diagram",
+    "description": "Diagramas de boca/lengua para vocales e iniciales.",
+    "source": "SRC-PPT-00-1",
+    "status": "indexed_not_extracted"
+  },
+  {
+    "id": "MEDIA-01-ZCS",
+    "lesson": 1,
+    "type": "pronunciation_diagram",
+    "description": "Diagramas de pronunciación z/c/s y ejemplos.",
+    "source": "SRC-PPT-01-1",
+    "status": "indexed_not_extracted"
+  },
+  {
+    "id": "MEDIA-02-FOOD-01",
+    "lesson": 2,
+    "type": "photo_group",
+    "description": "Imágenes de 包子、饺子、米饭、面条 usadas para vocabulario y reconocimiento visual.",
+    "source": "SRC-PPT-02-2",
+    "status": "indexed_not_extracted"
+  },
+  {
+    "id": "MEDIA-02-FAMILY-01",
+    "lesson": 2,
+    "type": "illustration",
+    "description": "爸爸、妈妈 y familia usados en ejemplos.",
+    "source": "SRC-PPT-02-2",
+    "status": "indexed_not_extracted"
+  },
+  {
+    "id": "MEDIA-03-FAMILY-TREE-01",
+    "lesson": 3,
+    "type": "family_tree",
+    "description": "Árbol familiar con 爷爷、奶奶、外公、外婆、爸爸、妈妈、哥哥、弟弟、姐姐、妹妹、我.",
+    "source": "SRC-PPT-03-1",
+    "pdf_page": 6,
+    "status": "indexed_not_extracted"
+  },
+  {
+    "id": "MEDIA-03-HANZI-01",
+    "lesson": 3,
+    "type": "stroke_sheet",
+    "description": "Hojas de trazos para 家、有、几、口、的、照、片、做、工、作, entre otros.",
+    "source": "SRC-HANZI-03-1",
+    "status": "indexed_not_extracted"
+  }
+]
