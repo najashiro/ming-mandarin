@@ -1,0 +1,15 @@
+[
+  {"id":"L1-G001","lesson":1,"topic":"Adjetivos con 很","rule":"La presentación enseña el patrón Sujeto + 很 + adjetivo para predicación adjetival.","examples":["我很好。"],"sources":["SRC-PPT-01-1"],"status":"verified"},
+  {"id":"L1-G002","lesson":1,"topic":"Negación con 不","rule":"La presentación enseña Sujeto + 不 + adjetivo. Marca explícitamente 他不很忙 como forma no aceptada en este nivel.","examples":["他不忙。"],"sources":["SRC-PPT-01-1"],"status":"verified_source_framing"},
+  {"id":"L1-G003","lesson":1,"topic":"Preguntas con 吗","rule":"吗 se coloca al final de una oración para formular preguntas de sí/no.","examples":["她困吗？","你忙吗？"],"sources":["SRC-PPT-01-1"],"status":"verified"},
+  {"id":"L1-G004","lesson":1,"topic":"Preguntas elípticas con 呢","rule":"呢 se usa como partícula modal para preguntas elípticas.","examples":["你呢？"],"sources":["SRC-PPT-01-1"],"status":"verified"},
+  {"id":"L2-G001","lesson":2,"topic":"Identificación con 是","rule":"Patrón básico A 是 B para identidad, profesión o nacionalidad; negación con 不是.","examples":["我是美国人。","这不是饺子，是包子。"],"sources":["SRC-PPT-02-1","SRC-PPT-02-2"],"status":"verified_examples"},
+  {"id":"L2-G002","lesson":2,"topic":"Nacionalidad con 哪国人","rule":"你是哪国人？ pregunta la nacionalidad.","examples":["你是哪国人？","我是美国人。"],"sources":["SRC-PPT-02-1"],"status":"verified"},
+  {"id":"L2-G003","lesson":2,"topic":"也 — también","rule":"也 expresa 'también' y aparece antes del predicado.","examples":["我也学习汉语。","我也很高兴。"],"sources":["SRC-PPT-02-1"],"status":"verified_examples"},
+  {"id":"L2-G004","lesson":2,"topic":"都 — todos/ambos","rule":"都 expresa totalidad del grupo.","examples":["包子和饺子都很好吃。","他们都学习汉语。"],"sources":["SRC-PPT-02-2"],"status":"verified_examples"},
+  {"id":"L2-G005","lesson":2,"topic":"喜欢 + verbo/objeto","rule":"喜欢 expresa gusto y puede combinarse con 吃 + alimento.","examples":["她喜欢吃面条和饺子。","你喜欢什么？"],"sources":["SRC-PPT-02-2"],"status":"verified_examples"},
+  {"id":"L3-G001","lesson":3,"topic":"Oraciones con 有","rule":"有 expresa posesión o existencia. La negación se forma con 没有; la fuente indica que no se usa 不有.","examples":["我有一个哥哥。","她没有妹妹。","你们家有几口人？"],"sources":["SRC-PPT-03-1","SRC-BOOK-03"],"status":"verified"},
+  {"id":"L3-G002","lesson":3,"topic":"Posesión con 的","rule":"的 conecta modificador posesivo con sustantivo; la fuente también presenta omisión de 的 en ciertas relaciones cercanas.","examples":["我们家的照片","妈妈的照片"],"sources":["SRC-PPT-03-1","SRC-BOOK-03"],"status":"verified_core"},
+  {"id":"L3-G003","lesson":3,"topic":"Número + clasificador + sustantivo","rule":"Un número generalmente se combina con un clasificador antes del sustantivo. La fuente presenta 个, 张 y 口.","examples":["六口人","两个姐姐","一个朋友","三张照片"],"sources":["SRC-PPT-03-1","SRC-BOOK-03"],"status":"verified"},
+  {"id":"L3-G004","lesson":3,"topic":"几 para cantidades pequeñas","rule":"几 se utiliza para preguntar cantidades; los ejercicios de clase lo aplican a amigos, miembros de familia, profesores y alimentos.","examples":["你有几个朋友？","你家有几口人？","你认识几个老师？","你吃几个包子？"],"sources":["SRC-PPT-03-1"],"status":"verified"}
+]
