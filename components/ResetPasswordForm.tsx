@@ -1,14 +1,19 @@
 'use client';
 
-import { useState, useSyncExternalStore } from 'react';
+import { useEffect, useState } from 'react';
 
 export function ResetPasswordForm() {
   const [password, setPassword] = useState('');
   const [confirmation, setConfirmation] = useState('');
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState('');
-  const hash = useSyncExternalStore(() => () => {}, () => window.location.hash, () => '');
-  const accessToken = new URLSearchParams(hash.slice(1)).get('access_token') ?? '';
+  const [accessToken, setAccessToken] = useState('');
+
+  useEffect(() => {
+    const token = new URLSearchParams(window.location.hash.slice(1)).get('access_token') ?? '';
+    const frame = window.requestAnimationFrame(() => setAccessToken(token));
+    return () => window.cancelAnimationFrame(frame);
+  }, []);
 
   async function submit(event: React.FormEvent) {
     event.preventDefault();
