@@ -20,7 +20,7 @@ corepack enable
 pnpm install --frozen-lockfile
 ```
 
-El setup necesita acceso a npm para instalar paquetes y a Google Fonts durante `next build` si la fuente no está en caché. Deja Internet del agente desactivado en tareas ordinarias; habilita dominios mínimos solo cuando una tarea lo requiera. Para E2E instala Chromium y WebKit porque `playwright.config.ts` prueba ambos: `pnpm exec playwright install --with-deps chromium webkit`. No se instalan durante setup normal.
+El setup necesita acceso a npm para instalar paquetes. `next build` descarga Noto Serif SC desde Google Fonts si la fuente no está en caché. Para tareas que ejecutan build, configura Internet del agente en **On**, lista de dominios **None** más `fonts.googleapis.com` y `fonts.gstatic.com`, y métodos `GET`, `HEAD`, `OPTIONS`; para otras tareas puede quedar en **Off**. Para E2E instala Chromium y WebKit porque `playwright.config.ts` prueba ambos: `pnpm exec playwright install --with-deps chromium webkit`. No se instalan durante setup normal.
 
 ## Variables
 
