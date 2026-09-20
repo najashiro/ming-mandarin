@@ -47,4 +47,5 @@
 .time-help-audio span{font-size:11px}
 @media(max-width:520px){.time-minute-cards{grid-template-columns:1fr}}
 .time-shell-header{justify-content:flex-end!important}.time-shell-header>button{margin-left:auto}
+.time-controls{grid-template-columns:1fr 1.2fr}
 @media(max-width:440px){.time-clock-frame{height:190px}.time-clock.analog{width:190px;height:190px}.time-clock.digital{height:125px}.time-hud{gap:9px}.time-palette{grid-template-columns:repeat(6,minmax(0,1fr))}.time-game{margin:-4px}.time-question{font-size:24px}}
