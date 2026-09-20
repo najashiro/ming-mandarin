@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState } from 'react';
 
 export function AdminLoginForm({ returnTo }: { returnTo: string }) {
@@ -9,6 +10,7 @@ export function AdminLoginForm({ returnTo }: { returnTo: string }) {
     <label>Contraseña<input type="password" value={password} onChange={(event) => setPassword(event.target.value)} required minLength={8} autoComplete="current-password" /></label>
     <button className="button button-primary" disabled={busy}>{busy ? 'Verificando…' : 'Entrar a administración'}</button>
     {message && <p className="rule-note" role="alert">{message}</p>}
+    <Link className="rule-note" href="/reset-password">¿Olvidaste tu contraseña?</Link>
     <small>Las credenciales se validan directamente con Supabase Auth y nunca se almacenan en el código ni en el navegador.</small>
   </form>;
 }
