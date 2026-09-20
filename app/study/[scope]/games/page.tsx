@@ -23,6 +23,6 @@ export default async function ScopeGamesPage({params,searchParams}:{params:Promi
     <LessonHeader eyebrow={`${data.definition.shortLabel} · 游戏`} title="Juegos Míng" description="Convierte lo aprendido en mandarín activo."/>
     <CurriculumNav scope={rawScope} section="games"/>
     <HanziUnitNav basePath={`/study/${rawScope}/games`} units={data.stages} active={activeUnit}/>
-    <Arcade scope={rawScope} playerName={user?.displayName??'Estudiante'} canCompete={Boolean(user)} initialGame={query.game==='reto-mixto'?'reto-mixto':undefined} exercises={data.exercises} hanziCharacters={characters} listeningEntries={getListeningEntriesForScope(rawScope)}/>
+    <Arcade scope={rawScope} playerName={user?.displayName??'Estudiante'} canCompete={Boolean(user)} initialGame={query.game==='reto-mixto'||query.game==='hora'?query.game:undefined} exercises={data.exercises} hanziCharacters={characters} listeningEntries={getListeningEntriesForScope(rawScope)}/>
   </main></SiteShell>;
 }
