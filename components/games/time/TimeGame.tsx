@@ -94,7 +94,26 @@ export function TimeGame({playerName,canCompete}:{playerName:string;canCompete:b
       :<><div className="time-controls"><button aria-label="Hablar" aria-pressed={speech.listening} disabled={!speech.available||transitioning} onClick={speech.toggle}>🎤 <span>Hablar</span></button><button onClick={()=>setAnswer(current=>current.slice(0,-1))} disabled={!answer.length||transitioning}>← Borrar</button><button className="button-primary" onClick={()=>void confirm()} disabled={!answer.length||transitioning}>✓ Confirmar</button></div>{(!speech.available||speech.error)&&<small className="time-speech-note">{speech.error||'Micrófono no disponible. Puedes responder tocando los caracteres.'}</small>}
       <div className="time-palette">{timeTokens.map(token=><button type="button" className="font-hanzi" key={token.hanzi} aria-label={`Añadir ${token.hanzi}`} disabled={transitioning} onClick={()=>{setAnswer(current=>[...current,token.hanzi]);void playTimeAudio(token.hanzi);}}>{token.hanzi}</button>)}</div></>}
       {phase==='playing'&&!transitioning&&<button className="time-help-trigger" onClick={openHelp}>? Help</button>}
-      {phase==='pausedForHelp'&&<div className="time-help-backdrop"><div className="time-help" role="dialog" aria-modal="true" aria-label="Ayuda"><button className="time-help-close" onClick={closeHelp}>Cerrar</button><h3 className="font-hanzi">帮助</h3><p>Bāngzhù · Ayuda</p>{timeHelp.map(([hanzi,pinyin,meaning])=><div key={hanzi}><strong className="font-hanzi">{hanzi}</strong><span>{pinyin}</span><small>{meaning}</small></div>)}<p>三点 = 3:00 · 三点十五分 = 3:15 · 三点一刻 = 3:15<br/>三点三十分 = 3:30 · 三点半 = 3:30<br/>三点四十五分 = 3:45 · 差一刻四点 = 3:45<br/>差五分八点 = 7:55</p><small>Voz generada por IA.</small></div></div>}
+      {phase === 'pausedForHelp' && <div className="time-help-backdrop"><div className="time-help" role="dialog" aria-modal="true" aria-label="Ayuda">
+        <button className="time-help-close" onClick={closeHelp}>Cerrar</button>
+        <h3 className="font-hanzi">帮助</h3>
+        <p>Bāngzhù · Ayuda</p>
+        <section className="time-help-example time-help-question">
+          <small>Pregunta</small>
+          <strong className="font-hanzi" lang="zh-CN">现在几点？</strong>
+          <span>Xiànzài jǐ diǎn?</span>
+          <p>¿Qué hora es?</p>
+        </section>
+        <section className="time-help-example time-help-answer">
+          <small>Respuesta para este reloj</small>
+          <strong className="font-hanzi" lang="zh-CN">现在{correction.hanzi}</strong>
+          <span>Xiànzài {correction.pinyin}</span>
+          <p>Ahora {challenge.hour === 1 ? 'es la' : 'son las'} {challenge.hour}:{String(challenge.minute).padStart(2, '0')}.</p>
+        </section>
+        {timeHelp.map(([hanzi, pinyin, meaning]) => <div key={hanzi}><strong className="font-hanzi">{hanzi}</strong><span>{pinyin}</span><small>{meaning}</small></div>)}
+        <p>三点 = 3:00 · 三点十五分 = 3:15 · 三点一刻 = 3:15<br/>三点三十分 = 3:30 · 三点半 = 3:30<br/>三点四十五分 = 3:45 · 差一刻四点 = 3:45<br/>差五分八点 = 7:55</p>
+        <small>Voz generada por IA.</small>
+      </div></div>}
     </>}
   </section>;
 }
