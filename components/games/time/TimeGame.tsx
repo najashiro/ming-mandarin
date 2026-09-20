@@ -93,7 +93,7 @@ export function TimeGame({playerName,canCompete}:{playerName:string;canCompete:b
       {phase==='practiceCorrection'?<div className="time-correction"><small>Respuesta correcta</small><div><strong className="font-hanzi">{correction.hanzi}</strong><button aria-label="Escuchar respuesta correcta" onClick={()=>void playTimeAudio(`现在${correction.hanzi}`)}>🔊</button></div><span>{correction.pinyin}</span><button className="button-primary" onClick={()=>nextRound(stats.difficulty)}><Hanzi>继续</Hanzi> · Continuar</button></div>
       :<><div className="time-controls"><button aria-label="Hablar" aria-pressed={speech.listening} disabled={!speech.available||transitioning} onClick={speech.toggle}>🎤 <span>Hablar</span></button><button onClick={()=>setAnswer(current=>current.slice(0,-1))} disabled={!answer.length||transitioning}>← Borrar</button><button className="button-primary" onClick={()=>void confirm()} disabled={!answer.length||transitioning}>✓ Confirmar</button></div>{(!speech.available||speech.error)&&<small className="time-speech-note">{speech.error||'Micrófono no disponible. Puedes responder tocando los caracteres.'}</small>}
       <div className="time-palette">{timeTokens.map(token=><button type="button" className="font-hanzi" key={token.hanzi} aria-label={`Añadir ${token.hanzi}`} disabled={transitioning} onClick={()=>{setAnswer(current=>[...current,token.hanzi]);void playTimeAudio(token.hanzi);}}>{token.hanzi}</button>)}</div></>}
-      {phase==='playing'&&!transitioning&&<button className="time-help-trigger" onClick={openHelp}>? Help</button>}
+      {phase==='playing'&&!transitioning&&<button className="time-help-trigger" onClick={openHelp}>? Ayuda</button>}
       {phase === 'pausedForHelp' && <div className="time-help-backdrop"><div className="time-help" role="dialog" aria-modal="true" aria-label="Ayuda">
         <button className="time-help-close" onClick={closeHelp}>Cerrar</button>
         <h3 className="font-hanzi">帮助</h3>
@@ -105,7 +105,7 @@ export function TimeGame({playerName,canCompete}:{playerName:string;canCompete:b
           <p>¿Qué hora es?</p>
         </section>
         <section className="time-help-example time-help-answer">
-          <small>Respuesta para este reloj</small>
+          <small>Respuesta</small>
           <strong className="font-hanzi" lang="zh-CN">现在{correction.hanzi}</strong>
           <span>Xiànzài {correction.pinyin}</span>
           <p>Ahora {challenge.hour === 1 ? 'es la' : 'son las'} {challenge.hour}:{String(challenge.minute).padStart(2, '0')}.</p>
@@ -135,7 +135,12 @@ export function TimeGame({playerName,canCompete}:{playerName:string;canCompete:b
           <p className="time-minute-memory">1–9 → 零 + número + 分<br/>10 → 十分<br/>11–59 → 分 puede omitirse</p>
         </section>
         {timeHelp.map(([hanzi, pinyin, meaning]) => <div key={hanzi}><strong className="font-hanzi">{hanzi}</strong><span>{pinyin}</span><small>{meaning}</small></div>)}
-        <p>三点 = 3:00 · 三点十五分 = 3:15 · 三点一刻 = 3:15<br/>三点三十分 = 3:30 · 三点半 = 3:30<br/>三点四十五分 = 3:45 · 差一刻四点 = 3:45<br/>差五分八点 = 7:55</p>
+        <p className="time-help-examples">
+          <span className="font-hanzi" lang="zh-CN">三点</span> = 3:00 · <span className="font-hanzi" lang="zh-CN">三点十五分</span> = 3:15 · <span className="font-hanzi" lang="zh-CN">三点一刻</span> = 3:15<br/>
+          <span className="font-hanzi" lang="zh-CN">三点三十分</span> = 3:30 · <span className="font-hanzi" lang="zh-CN">三点半</span> = 3:30<br/>
+          <span className="font-hanzi" lang="zh-CN">三点四十五分</span> = 3:45 · <span className="font-hanzi" lang="zh-CN">差一刻四点</span> = 3:45<br/>
+          <span className="font-hanzi" lang="zh-CN">差五分八点</span> = 7:55
+        </p>
         <small>Voz generada por IA.</small>
       </div></div>}
     </>}

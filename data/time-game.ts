@@ -19,7 +19,7 @@ export const timeCurriculum = {
 export const canOmitMinuteFen = (minute: number) => minute > 10 && minute <= 59;
 
 export const minuteHelpCards = [
-  { range: '1–9 min', pattern: '零 + número + 分', example: '两点零五分', pinyin: 'liǎng diǎn líng wǔ fēn', note: 'En Míng, mantén 分.' },
+  { range: '1–9 min', pattern: '零 + número + 分', example: '两点零五分', pinyin: 'liǎng diǎn líng wǔ fēn', note: 'Mantén 分.' },
   { range: '10 min', pattern: '十分', example: '两点十分', pinyin: 'liǎng diǎn shí fēn', note: '分 es obligatorio.' },
   { range: '11–59 min', pattern: 'número + (分)', example: '两点十二分 / 两点十二', pinyin: 'liǎng diǎn shí èr fēn / liǎng diǎn shí èr', note: 'Ambas formas son correctas.' },
 ] as const;
