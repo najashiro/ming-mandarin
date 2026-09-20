@@ -20,9 +20,9 @@ export default async function ScopeGamesPage({params,searchParams}:{params:Promi
   const progress = user ? await getHanziProgressMap(user) : {};
   const characters = recommendHanziCharacters(unitCharacters,progress,unitCharacters.length);
   return <SiteShell><main>
-    <LessonHeader eyebrow={`${data.definition.shortLabel} · 游戏`} title="Juegos Míng" description="Cinco formas de convertir lo aprendido en mandarín activo."/>
+    <LessonHeader eyebrow={`${data.definition.shortLabel} · 游戏`} title="Juegos Míng" description="Convierte lo aprendido en mandarín activo."/>
     <CurriculumNav scope={rawScope} section="games"/>
     <HanziUnitNav basePath={`/study/${rawScope}/games`} units={data.stages} active={activeUnit}/>
-    <Arcade scope={rawScope} initialGame={query.game==='reto-mixto'?'reto-mixto':undefined} exercises={data.exercises} hanziCharacters={characters} listeningEntries={getListeningEntriesForScope(rawScope)}/>
+    <Arcade scope={rawScope} playerName={user?.displayName??'Estudiante'} canCompete={Boolean(user)} initialGame={query.game==='reto-mixto'?'reto-mixto':undefined} exercises={data.exercises} hanziCharacters={characters} listeningEntries={getListeningEntriesForScope(rawScope)}/>
   </main></SiteShell>;
 }

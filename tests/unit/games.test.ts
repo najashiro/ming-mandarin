@@ -8,9 +8,9 @@ import { gameEventId, parseGameEventId, retryQueue, sessionOrder } from '@/lib/g
 import { hanziGlyphHref } from '@/lib/hanzi/navigation';
 import baseline from '../fixtures/reto-mixto-baseline.json';
 
-describe('cinco experiencias curriculares', () => {
-  it('mantiene exactamente cinco experiencias y Reto Mixto primero', () => {
-    expect(arcadeGames.map(game => game.id)).toEqual(['reto-mixto','escena-viva','conversacion','hanzi-lab','historia-detective']);
+describe('seis experiencias curriculares', () => {
+  it('mantiene Reto Mixto primero y añade el juego de horas', () => {
+    expect(arcadeGames.map(game => game.id)).toEqual(['reto-mixto','escena-viva','conversacion','hanzi-lab','historia-detective','hora']);
   });
   it('conserva byte a byte el motor, datos y visuales de Reto Mixto', () => {
     for (const [path, hash] of Object.entries(baseline)) expect(createHash('sha256').update(readFileSync(path)).digest('hex'),path).toBe(hash);

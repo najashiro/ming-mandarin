@@ -4,12 +4,12 @@ async function openGame(page: import('@playwright/test').Page, id: string) {
   await page.locator(`[data-game="${id}"]`).getByRole('button',{name:/Jugar/}).click();
   await expect(page.locator('.new-game-shell')).toBeVisible();
 }
-for (const width of [320,375,390,430,1366]) test(`cinco experiencias sin desbordes a ${width}px`, async ({ page }, info) => {
+for (const width of [320,375,390,430,1366]) test(`seis experiencias sin desbordes a ${width}px`, async ({ page }, info) => {
   await page.setViewportSize({width,height:844});
   await page.goto('/study/l3/games');
-  await expect(page.locator('.game-grid article')).toHaveCount(5);
+  await expect(page.locator('.game-grid article')).toHaveCount(6);
   await expect(page.locator('.game-grid article').first()).toContainText('Reto Mixto');
-  for (const id of ['escena-viva','conversacion','hanzi-lab','historia-detective']) {
+  for (const id of ['escena-viva','conversacion','hanzi-lab','historia-detective','hora']) {
     await openGame(page,id);
     expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
     const buttons = await page.locator('.new-game-shell button:visible').evaluateAll(elements => elements.map(element => element.getBoundingClientRect().height));
@@ -22,6 +22,23 @@ for (const width of [320,375,390,430,1366]) test(`cinco experiencias sin desbord
     await page.locator('.new-game-shell').getByRole('button',{name:'Cerrar',exact:true}).click();
   }
   await page.locator('.ming-games-grid').screenshot({style:'.topbar,.mobile-nav{visibility:hidden!important}',path:info.outputPath(`hub-${width}.png`)});
+});
+test('hora: práctica construye respuesta y espera tras un error',async({page})=>{
+  await page.goto('/study/l1/games');
+  await openGame(page,'hora');
+  await expect(page.locator('.time-start')).toContainText('现在几点？');
+  await page.getByRole('button',{name:/Comenzar/}).click();
+  await expect(page.locator('.time-clock')).toBeVisible();
+  await expect(page.locator('.time-timer')).toHaveText('∞');
+  await page.getByRole('button',{name:'Añadir 差'}).click();
+  await page.getByRole('button',{name:/Confirmar/}).click();
+  await expect(page.locator('.time-answer.incorrect')).toBeVisible();
+  await expect(page.locator('.time-correction')).toContainText('Respuesta correcta');
+  const firstClock=await page.locator('.time-clock').getAttribute('aria-label');
+  await page.getByRole('button',{name:/Continuar/}).click();
+  await expect(page.locator('.time-correction')).toHaveCount(0);
+  expect(await page.locator('.time-clock').getAttribute('aria-label')).not.toBeNull();
+  expect(firstClock).not.toBeNull();
 });
 test('Hanzi Lab valida trazos reales y conserva progreso local anterior', async ({ page }) => {
   await page.route('**/api/hanzi/practice', route => route.fulfill({status:401,contentType:'application/json',body:'{}'}));

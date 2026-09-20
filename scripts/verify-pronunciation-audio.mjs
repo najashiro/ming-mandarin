@@ -3,6 +3,8 @@ import { existsSync } from 'node:fs';
 import path from 'node:path';
 import process from 'node:process';
 import { fileURLToPath } from 'node:url';
+import { timeAudioFile } from '../lib/time-audio-key.mjs';
+import { loadTimeGame } from './load-time-game.mjs';
 import { chromium } from 'playwright';
 
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
@@ -11,6 +13,7 @@ const localEnvironment = path.join(projectDirectory, '.env.audio.local');
 const manifestDefinitions = [
   { path: path.join(projectDirectory, 'data', 'pronunciation.json'), directory: path.join(projectDirectory, 'public', 'audio', 'pinyin') },
   { path: path.join(projectDirectory, 'data', 'mandarin-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin') },
+  { path: path.join(projectDirectory, 'data', 'time-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin'), scope: 'time' },
 ];
 
 if (existsSync(localEnvironment)) process.loadEnvFile(localEnvironment);
@@ -19,10 +22,11 @@ const manifests = await Promise.all(manifestDefinitions.map(async (definition) =
   ...definition,
   clips: JSON.parse(await readFile(definition.path, 'utf8')).clips,
 })));
-const clips = manifests.flatMap((manifest) => manifest.clips.map((clip) => ({ ...clip, directory: manifest.directory })));
+const clips = manifests.flatMap((manifest) => manifest.clips.map((clip) => ({ ...clip, directory: manifest.directory, scope: manifest.scope })));
 const only = process.argv.find((argument) => argument.startsWith('--only='))?.split('=', 2)[1];
 const signalOnly = process.argv.includes('--signal-only');
-const selectedClips = only ? clips.filter((clip) => clip.id === only) : clips;
+const scope = process.argv.find((argument) => argument.startsWith('--scope='))?.split('=', 2)[1];
+const selectedClips = clips.filter(clip => (!only || clip.id===only) && (!scope || clip.scope===scope));
 const minimumRms = 0.002;
 const minimumPeak = 0.005;
 const minimumActiveRatio = 0.01;
@@ -31,7 +35,7 @@ if (only && !selectedClips.length) {
   process.exit(1);
 }
 const transcriptionEquivalents = new Map([
-  ['語', '语'], ['學', '学'], ['習', '习'], ['國', '国'], ['這', '这'], ['兩', '两'],
+  ['語', '语'], ['學', '学'], ['習', '习'], ['國', '国'], ['這', '这'], ['兩', '两'], ['現','现'], ['點','点'], ['幾','几'], ['鐘','钟'],
 ]);
 const normalize = (value) => value
   .replace(/[^\u3400-\u9fff]/g, '')
@@ -47,6 +51,24 @@ for (const clip of selectedClips) {
   if (size < 1024) throw new Error(`Audio ausente o vacío: ${clip.file}`);
   staticFiles.push({ ...clip, filePath });
 }
+const ids=new Set(clips.map(clip=>clip.id));
+if(ids.size!==clips.length)throw new Error('IDs de audio duplicados.');
+const timeClips=manifests.find(manifest=>manifest.scope==='time')?.clips??[];
+const timeTexts=new Set(timeClips.map(clip=>normalize(clip.input)));
+if(timeTexts.size!==timeClips.length)throw new Error('Textos de horas duplicados.');
+const [{buildAcceptedTimeAnswers},{timeTokens}]=await loadTimeGame();
+const knownTexts=new Set(clips.map(clip=>normalize(clip.input)));
+for(const text of [...timeTokens.map(token=>token.hanzi),'现在','现在几点？']){
+  if(!knownTexts.has(normalize(text)))throw new Error(`Audio de token/pregunta sin manifiesto: ${text}`);
+}
+for(let hour=1;hour<=12;hour++)for(let minute=0;minute<60;minute++)for(const answer of buildAcceptedTimeAnswers(hour,minute)){
+  const sentence=`现在${answer.hanzi}`;
+  if(!knownTexts.has(normalize(sentence)))throw new Error(`Audio sin manifiesto: ${sentence}`);
+  const expected=timeAudioFile(sentence,'s');
+  const recorded=timeClips.find(clip=>clip.input===sentence);
+  if(recorded&&recorded.file!==expected)throw new Error(`ID inestable: ${sentence}`);
+}
+console.log(`Manifest de horas: ${timeClips.length} entradas únicas; respuestas aceptadas cubiertas.`);
 
 console.log(`Archivos estáticos: ${selectedClips.length}/${selectedClips.length} presentes y no vacíos.`);
 

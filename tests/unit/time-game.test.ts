@@ -1,0 +1,61 @@
+import { describe,expect,it } from 'vitest';
+import { buildAcceptedTimeAnswers, clockAngles, clockVariants, generateTimeChallenge, initialTimeStats, isAnalog, nextClockVariant, scoreTimeAnswer, validateTimeAnswer } from '@/lib/time-game';
+import { normalizeTimeSpeech } from '@/lib/time-speech';
+const forms=(h:number,m:number)=>buildAcceptedTimeAnswers(h,m).map(a=>a.hanzi);
+describe('hours answers',()=>{
+  it('accepts configured forms and wraps the next hour',()=>{
+    expect(forms(3,0)).toEqual(['三点']);
+    expect(forms(3,15)).toContain('三点一刻');expect(forms(3,15)).toContain('三点十五分');
+    expect(forms(3,30)).toContain('三点半');expect(forms(3,30)).toContain('三点三十分');
+    expect(forms(3,45)).toEqual(expect.arrayContaining(['三点四十五分','三点三刻','差十五分四点','差一刻四点']));
+    expect(forms(7,55)).toContain('差五分八点');
+    expect(forms(3,5)).toEqual(expect.arrayContaining(['三点五分','三点零五分']));
+    expect(forms(12,45)).toContain('差一刻一点');
+    expect(forms(2,15)).toContain('两点一刻');expect(forms(2,15)).not.toContain('二点一刻');
+  });
+  it('keeps canonical, pinyin, bonus and rejected forms consistent',()=>{
+    const answers=buildAcceptedTimeAnswers(3,15);
+    expect(answers[0]).toMatchObject({hanzi:'三点十五分',canonical:true,masteryBonus:0,pinyin:'sān diǎn shí wǔ fēn'});
+    expect(answers.find(a=>a.hanzi==='三点一刻')).toMatchObject({masteryBonus:2,pinyin:'sān diǎn yí kè'});
+    expect(buildAcceptedTimeAnswers(1,0)[0].pinyin).toBe('yì diǎn');
+    expect(buildAcceptedTimeAnswers(11,0)[0].pinyin).toBe('shí yī diǎn');
+    expect(new Set(answers.map(a=>a.hanzi)).size).toBe(answers.length);
+    expect(validateTimeAnswer({hour:3,minute:15,acceptedAnswers:answers},['三','点','十','六','分'])).toBeUndefined();
+  });
+  it('generates minute ranges by difficulty',()=>{
+    expect(generateTimeChallenge(0,()=>.5).minute).toBe(0);
+    expect([0,5,10,20,30]).toContain(generateTimeChallenge(20,()=>.5).minute);
+    expect(generateTimeChallenge(90,()=>.8).minute).toBe(48);
+  });
+});
+describe('difficulty and score',()=>{
+  it('separates difficulty, score, streak and mastery',()=>{
+    const answer=buildAcceptedTimeAnswers(3,15).find(a=>a.hanzi==='三点一刻')!;
+    let state=initialTimeStats;
+    const bonuses:number[]=[];
+    for(let i=0;i<8;i++){const result=scoreTimeAnswer(state,answer);state=result.stats;bonuses.push(result.streakBonus);}
+    expect(bonuses).toEqual([0,0,1,1,2,2,2,3]);expect(state.difficulty).toBe(45);
+    expect(state.score).toBeGreaterThan(state.difficulty);expect(state.masteryBonusTotal).toBe(16);
+    expect(scoreTimeAnswer({...state,difficulty:100},answer).stats.difficulty).toBe(100);
+    expect(scoreTimeAnswer({...state,difficulty:0,score:0},undefined).stats).toMatchObject({difficulty:0,score:0,streak:0});
+    expect(scoreTimeAnswer({...state,difficulty:35},answer).stats.score-state.score).toBe(13);
+    expect(scoreTimeAnswer({...state,difficulty:70},answer).stats.score-state.score).toBe(17);
+  });
+});
+describe('clocks and speech',()=>{
+  it('computes hands and prevents visual repeats',()=>{
+    expect(clockAngles(3,30)).toEqual({hourAngle:105,minuteAngle:180});
+    expect(clockAngles(11,48)).toEqual({hourAngle:354,minuteAngle:288});
+    expect(clockVariants).toHaveLength(6);
+    const history:typeof clockVariants[number][]=['classic','cream'];
+    expect(isAnalog(nextClockVariant(history,()=>0))).toBe(false);
+    expect(nextClockVariant(['modern'],()=>0)).not.toBe('modern');
+  });
+  it('parses Hanzi and pinyin without unrelated words',()=>{
+    expect(normalizeTimeSpeech('现在三点一刻')).toEqual(['三','点','一','刻']);
+    expect(normalizeTimeSpeech('san dian shi wu fen')).toEqual(['三','点','十','五','分']);
+    expect(normalizeTimeSpeech('sāndiǎn')).toEqual(['三','点']);
+    expect(normalizeTimeSpeech('banana')).toEqual([]);
+    expect(normalizeTimeSpeech('你三点')).toEqual([]);
+  });
+});

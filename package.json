@@ -14,6 +14,8 @@
     "test": "vitest run",
     "test:e2e": "npm run build && node scripts/run-e2e.mjs",
     "audio:generate": "node scripts/generate-pronunciation-audio.mjs",
+    "audio:time:manifest": "node scripts/sync-time-audio-manifest.mjs",
+    "audio:time": "npm run audio:time:manifest && node scripts/generate-pronunciation-audio.mjs --scope=time",
     "audio:manifest": "node scripts/sync-curriculum-audio-manifest.mjs",
     "audio:verify": "node scripts/verify-pronunciation-audio.mjs",
     "audio:verify:signal": "node scripts/verify-pronunciation-audio.mjs --signal-only",
