@@ -1,7 +1,6 @@
 import { getCurrentUser } from '@/app/auth';
 import { SiteShell, LessonHeader } from '@/components/SiteShell';
 import { Arcade } from '@/components/Arcade';
-import { ARCADE_GAME_COUNT } from '@/data/arcade-games';
 import { recommendHanziCharacters } from '@/lib/hanzi/progress';
 import { getHanziProgressMap } from '@/lib/server/persistence';
 import { hanziUnits, isHanziUnitId, lesson1Characters } from '@/seed/characters';
@@ -19,7 +18,7 @@ export default async function GamesPage({searchParams}:{searchParams:Promise<{un
   const progress = user ? await getHanziProgressMap(user) : {};
   const hanziCharacters = recommendHanziCharacters(pool,progress,pool.length);
   return <SiteShell><CommunityContextProvider context={{lessonId:1,section:'games',route:'/lesson/1/games'}}><main>
-    <LessonHeader eyebrow="游戏中心 · ARCADE" title={`${ARCADE_GAME_COUNT} formas de practicar`} description="Cada juego Hanzi usa el Texto o acumulado seleccionado, sin duplicar caracteres reutilizados."/>
+    <LessonHeader eyebrow="游戏中心 · ARCADE" title="Juegos Míng" description="Practica escuchando, observando, conversando, escribiendo y leyendo."/>
     <div className="community-page-action shell"><CommunityButton label="Preguntar sobre los juegos"/></div>
     <HanziUnitNav basePath="/lesson/1/games" units={units} active={activeUnit}/>
     <Arcade scope="l1" exercises={exercises} hanziCharacters={hanziCharacters} listeningEntries={getListeningEntriesForLessons([1])}/>

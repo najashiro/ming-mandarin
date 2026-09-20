@@ -14,15 +14,15 @@ test('la portada navega a las secciones públicas', async ({ page }) => {
 
 test('el arcade y el audio estático están disponibles sin cuenta', async ({ page }) => {
   await page.goto('/lesson/1/games');
-  await expect(page.getByRole('heading', { name: '31 formas de practicar' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Juegos Míng' })).toBeVisible();
   await expect(page.locator('.mobile-nav a[href="/study/l1-l2-l3/games"]')).toContainText('Juegos');
   await expect(page.locator('.arcade-root')).toHaveAttribute('data-hydrated', 'true');
   await expect(page.locator('.game-grid article').nth(0).getByRole('heading')).toHaveText('Reto Mixto');
-  await expect(page.locator('.game-grid article').nth(1).getByRole('heading')).toHaveText('Flashcards');
-  await expect(page.locator('.game-grid article').nth(2).getByRole('heading')).toHaveText('Dictado');
-  await expect(page.locator('.game-grid article').nth(3).getByRole('heading')).toHaveText('Escucha y reconoce');
-  await page.locator('.game-grid article').filter({ hasText: 'Flashcards' }).getByRole('button', { name: /Jugar/ }).click();
-  await expect(page.locator('#arena')).toContainText('Flashcards');
+  await expect(page.locator('.game-grid article').nth(1).getByRole('heading')).toHaveText('Escena Viva');
+  await expect(page.locator('.game-grid article').nth(2).getByRole('heading')).toHaveText('Conversación');
+  await expect(page.locator('.game-grid article').nth(3).getByRole('heading')).toHaveText('Hanzi Lab');
+  await page.locator('.game-grid article').filter({ hasText: 'Escena Viva' }).getByRole('button', { name: /Jugar/ }).click();
+  await expect(page.locator('#arena')).toContainText('Escena Viva');
   await page.goto('/lesson/1/name');
   await expect(page.getByRole('button', { name: /Escuchar/ }).first()).toBeVisible();
 });
@@ -372,16 +372,10 @@ test('L2, L3 y los repasos acumulativos conservan el alcance', async ({ page }) 
   }
 });
 
-test('Hanzi L2 usa audio estático y Dictado Hanzi está disponible', async ({ page }) => {
-  await page.goto('/study/l2/hanzi?character=早');
-  await expect(page.getByRole('heading', { name: 'Hanzi: forma, sonido y trazos' })).toBeVisible();
-  await expect(page.getByRole('button', { name: 'Escuchar pronunciación de 早' })).toBeVisible();
-  await expect(page.getByText(/voz IA|audio IA|voz china local|sin voz china/i)).toHaveCount(0);
+test('Hanzi L2 usa audio estático y el laboratorio está disponible', async ({ page }) => {
   await page.goto('/study/l2/games');
-  const card = page.locator('.game-grid article').filter({ hasText: 'Dictado Hanzi' });
-  await expect(card).toBeVisible();
-  await card.getByRole('button', { name: /Jugar/ }).click();
-  await expect(page.getByRole('heading', { name: '¿Qué has escuchado?' })).toBeVisible();
+  await page.locator('[data-game="hanzi-lab"]').getByRole('button', { name: /Jugar/ }).click();
+  await expect(page.getByRole('button', { name: 'Escuchar carácter oculto' })).toBeVisible();
 });
 
 test('las rutas acumulativas no desbordan en móvil', async ({ page, isMobile }) => {
@@ -391,13 +385,12 @@ test('las rutas acumulativas no desbordan en móvil', async ({ page, isMobile })
   expect(dimensions.content).toBeLessThanOrEqual(dimensions.viewport + 1);
 });
 
-test('Escucha y reconoce no revela pistas antes de acertar', async ({ page }) => {
-  await page.goto('/lesson/1/games');
-  await page.locator('.game-grid article').filter({ hasText: 'Escucha y reconoce' }).getByRole('button', { name: /Jugar/ }).click();
-  await expect(page.getByRole('heading', { name: '¿Qué has escuchado?' })).toBeVisible();
-  await expect(page.getByRole('button', { name: 'Escuchar de nuevo' })).toBeVisible();
-  await expect(page.locator('.listen-options button')).toHaveCount(4);
-  await expect(page.locator('.listen-answer')).toHaveCount(0);
+test('el dictado del laboratorio no revela la respuesta', async ({ page }) => {
+  await page.goto('/study/l1/games');
+  await page.locator('[data-game="hanzi-lab"]').getByRole('button', { name: /Jugar/ }).click();
+  await expect(page.locator('.lab-glyph')).toHaveText('？');
+  await expect(page.locator('.game-feedback')).toHaveCount(0);
+  await expect(page.getByRole('button', { name: 'Escuchar carácter oculto' })).toBeVisible();
 });
 
 test('el repaso fonético distingue escritura, sandhi y aspiración', async ({ page }) => {

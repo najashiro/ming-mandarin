@@ -517,13 +517,6 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .daily-hanzi-list a { min-width: 48px; padding: 7px 8px; display: grid; place-items: center; border: 1px solid rgba(29,106,89,.2); border-radius: 7px; background: #fff; }
 .daily-hanzi-list strong { font: 600 23px var(--font-hanzi), "Songti SC", "SimSun", serif; }
 .daily-hanzi-list span { color: var(--muted); font-size: 8px; }
-.arcade-hanzi-layout { margin: 22px 0; display: grid; grid-template-columns: minmax(280px,420px) 1fr; align-items: center; gap: 38px; }
-.arcade-hanzi-layout .hanzi-writer-frame, .arcade-hanzi-layout .hanzi-answer-svg { background: #fffdf7; }
-.arcade-hanzi-layout h3 { font: 700 25px Georgia,serif; }
-.arcade-hanzi-layout p { color: #bdc8c3; line-height: 1.6; }
-.arcade-hanzi-layout a:not(.button) { color: #9bd4c5; font-size: 11px; }
-.arcade-hanzi-layout.compact-game { grid-template-columns: 180px 1fr; }
-.arcade-hanzi-glyph { width: 180px; height: 180px; display: grid; place-items: center; border-radius: 15px; color: var(--ink); background: #fffdf7; font: 600 120px var(--font-hanzi), "Songti SC", "SimSun", serif; }
 
 @media(max-width:900px) {
   .hanzi-stage-progress { grid-template-columns: repeat(3,1fr); }
@@ -574,8 +567,6 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
   .hanzi-controls .button { width: auto; }
   .daily-hanzi-card { align-items: stretch; flex-direction: column; }
   .daily-hanzi-card .button { width: 100%; }
-  .arcade-hanzi-layout, .arcade-hanzi-layout.compact-game { grid-template-columns: 1fr; }
-  .arcade-hanzi-glyph { width: 140px; height: 140px; font-size: 90px; }
 }
 
 @media(max-width:380px) {
