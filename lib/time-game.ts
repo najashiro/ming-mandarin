@@ -1,4 +1,4 @@
-import { timeCurriculum, timeTokens } from '@/data/time-game';
+import { canOmitMinuteFen, timeCurriculum, timeTokens } from '@/data/time-game';
 
 export type TimeAnswerVariant = { tokens: string[]; hanzi: string; pinyin: string; structure: 'numeric'|'half'|'quarter'|'three-quarter'|'cha'; masteryBonus: number; canonical?: boolean; sourceTag: string };
 export type TimeChallenge = { hour: number; minute: number; acceptedAnswers: TimeAnswerVariant[] };
@@ -25,8 +25,11 @@ export function buildAcceptedTimeAnswers(hour: number, minute: number, rules: Ru
     const prefix = `${h}点`;
     if (minute === 0) add(prefix,'numeric');
     else {
-      const minuteForms = minute < 10 ? [...(rules.allowOmittedZero ? [number(minute)] : []),...(rules.allowLeadingZero ? [`零${number(minute)}`] : [])] : [number(minute)];
-      minuteForms.forEach(m => add(`${prefix}${m}分`,'numeric'));
+      const minuteForms = minute < 10 ? [...(rules.allowLeadingZero ? [`零${number(minute)}`] : []),...(rules.allowOmittedZero ? [number(minute)] : [])] : [number(minute)];
+      minuteForms.forEach(m => {
+        add(`${prefix}${m}分`,'numeric');
+        if (canOmitMinuteFen(minute)) add(`${prefix}${m}`,'numeric');
+      });
       if (minute === 15) add(`${prefix}一刻`,'quarter',rules.mastery.quarter);
       if (minute === 30) add(`${prefix}半`,'half',rules.mastery.half);
       if (minute === 45 && rules.allowThreeQuarter) add(`${prefix}三刻`,'three-quarter',rules.mastery.threeQuarter);

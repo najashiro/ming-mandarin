@@ -15,6 +15,23 @@ export const timeCurriculum = {
   mastery: { half: 1, quarter: 2, threeQuarter: 2, cha: 2 },
 } as const;
 
+/** Regla compartida por la Ayuda y las respuestas del juego de la hora. */
+export const canOmitMinuteFen = (minute: number) => minute > 10 && minute <= 59;
+
+export const minuteHelpCards = [
+  { range: '1–9 min', pattern: '零 + número + 分', example: '两点零五分', pinyin: 'liǎng diǎn líng wǔ fēn', note: 'En Míng, mantén 分.' },
+  { range: '10 min', pattern: '十分', example: '两点十分', pinyin: 'liǎng diǎn shí fēn', note: '分 es obligatorio.' },
+  { range: '11–59 min', pattern: 'número + (分)', example: '两点十二分 / 两点十二', pinyin: 'liǎng diǎn shí èr fēn / liǎng diǎn shí èr', note: 'Ambas formas son correctas.' },
+] as const;
+
+export const optionalFenExamples = [
+  { minute: 11, full: '两点十一分', short: '两点十一', fullPinyin: 'liǎng diǎn shí yī fēn', shortPinyin: 'liǎng diǎn shí yī' },
+  { minute: 12, full: '两点十二分', short: '两点十二', fullPinyin: 'liǎng diǎn shí èr fēn', shortPinyin: 'liǎng diǎn shí èr' },
+  { minute: 20, full: '两点二十分', short: '两点二十', fullPinyin: 'liǎng diǎn èr shí fēn', shortPinyin: 'liǎng diǎn èr shí' },
+  { minute: 25, full: '两点二十五分', short: '两点二十五', fullPinyin: 'liǎng diǎn èr shí wǔ fēn', shortPinyin: 'liǎng diǎn èr shí wǔ' },
+  { minute: 55, full: '两点五十五分', short: '两点五十五', fullPinyin: 'liǎng diǎn wǔ shí wǔ fēn', shortPinyin: 'liǎng diǎn wǔ shí wǔ' },
+] as const;
+
 export const timeHelp = [
   ['点','diǎn','hora / «en punto»'],['分','fēn','minuto(s)'],['一刻','yí kè','un cuarto de hora = 15 minutos'],['半','bàn','media hora = 30 minutos'],['差','chà','faltar para llegar a la hora siguiente'],
 ];

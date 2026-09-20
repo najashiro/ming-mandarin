@@ -1,6 +1,6 @@
 'use client';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { timeHelp, timeTokens } from '@/data/time-game';
+import { canOmitMinuteFen, minuteHelpCards, optionalFenExamples, timeHelp, timeTokens } from '@/data/time-game';
 import { Hanzi } from '@/components/Hanzi';
 import { ClockVisual } from './ClockVisual';
 import { playTimeAudio, stopTimeAudio } from '@/lib/time-audio';
@@ -109,6 +109,30 @@ export function TimeGame({playerName,canCompete}:{playerName:string;canCompete:b
           <strong className="font-hanzi" lang="zh-CN">现在{correction.hanzi}</strong>
           <span>Xiànzài {correction.pinyin}</span>
           <p>Ahora {challenge.hour === 1 ? 'es la' : 'son las'} {challenge.hour}:{String(challenge.minute).padStart(2, '0')}.</p>
+        </section>
+        <section className="time-minute-guide" aria-labelledby="time-minute-title">
+          <h4 id="time-minute-title">Cómo decir los minutos · <span className="font-hanzi" lang="zh-CN">分</span> fēn</h4>
+          <p>¿Cuándo se puede omitir <span className="font-hanzi" lang="zh-CN">分</span>?</p>
+          <div className="time-minute-cards">
+            {minuteHelpCards.map(card => <article className="time-minute-card" key={card.range}>
+              <b>{card.range}</b><span>{card.pattern}</span>
+              <strong className="font-hanzi" lang="zh-CN">{card.example}</strong>
+              <small>{card.pinyin}</small><em>{card.note}</em>
+              {card.range !== '11–59 min' && <button type="button" className="time-help-audio" aria-label={`Escuchar ${card.example}`} onClick={() => void playTimeAudio(`现在${card.example}`)}>🔊 <span>Escuchar</span></button>}
+            </article>)}
+          </div>
+          <div className="time-minute-exception"><span>✅ <span className="font-hanzi" lang="zh-CN">两点十分</span></span><span>❌ <span className="font-hanzi" lang="zh-CN">两点十</span></span><small>10 minutos es una excepción: 分 se mantiene.</small></div>
+          <p className="time-minute-subtitle">Más de 10 minutos: las dos formas son correctas</p>
+          <div className="time-minute-variants">
+            {optionalFenExamples.filter(example => canOmitMinuteFen(example.minute)).map(example => <div className="time-minute-pair" key={example.minute}>
+              <b>2:{String(example.minute).padStart(2, '0')}</b>
+              <div>{([{hanzi:example.full,pinyin:example.fullPinyin},{hanzi:example.short,pinyin:example.shortPinyin}] as const).map(variant => <div className="time-minute-form" key={variant.hanzi}>
+                <strong className="font-hanzi" lang="zh-CN">{variant.hanzi}</strong><small>{variant.pinyin}</small>
+                {[12,25].includes(example.minute) && <button type="button" className="time-help-audio" aria-label={`Escuchar ${variant.hanzi}`} onClick={() => void playTimeAudio(`现在${variant.hanzi}`)}>🔊</button>}
+              </div>)}</div>
+            </div>)}
+          </div>
+          <p className="time-minute-memory">1–9 → 零 + número + 分<br/>10 → 十分<br/>11–59 → 分 puede omitirse</p>
         </section>
         {timeHelp.map(([hanzi, pinyin, meaning]) => <div key={hanzi}><strong className="font-hanzi">{hanzi}</strong><span>{pinyin}</span><small>{meaning}</small></div>)}
         <p>三点 = 3:00 · 三点十五分 = 3:15 · 三点一刻 = 3:15<br/>三点三十分 = 3:30 · 三点半 = 3:30<br/>三点四十五分 = 3:45 · 差一刻四点 = 3:45<br/>差五分八点 = 7:55</p>

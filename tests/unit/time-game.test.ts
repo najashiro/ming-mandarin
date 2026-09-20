@@ -22,6 +22,21 @@ describe('hours answers',()=>{
     expect(new Set(answers.map(a=>a.hanzi)).size).toBe(answers.length);
     expect(validateTimeAnswer({hour:3,minute:15,acceptedAnswers:answers},['三','点','十','六','分'])).toBeUndefined();
   });
+  it('accepts optional 分 only after ten minutes',()=>{
+    for(const minute of [11,12,20,25,55,59]) {
+      const answers=forms(2,minute);
+      const full=answers.find(form=>form.startsWith('两点')&&form.endsWith('分'))!;
+      expect(answers).toContain(full.slice(0,-1));
+      expect(answers).toContain(full);
+    }
+    expect(forms(7,20)).toContain('七点二十');
+    expect(forms(2,10)).toContain('两点十分');
+    expect(forms(2,10)).not.toContain('两点十');
+    expect(forms(2,5)).not.toContain('两点零五');
+    expect(forms(2,5)).not.toContain('两点五');
+    expect(forms(2,5)[0]).toBe('两点零五分');
+    expect(forms(2,12)[0]).toBe('两点十二分');
+  });
   it('generates minute ranges by difficulty',()=>{
     expect(generateTimeChallenge(0,()=>.5).minute).toBe(0);
     expect([0,5,10,20,30]).toContain(generateTimeChallenge(20,()=>.5).minute);
