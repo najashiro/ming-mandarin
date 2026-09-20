@@ -2,12 +2,14 @@ import { Hanzi } from '@/components/Hanzi';
 import Link from 'next/link';
 import { getCurrentUser, isAuthorizedAdmin, signInPath } from '@/app/auth';
 import { PinyinText } from './PinyinText';
+import { RecoveryRedirector } from './RecoveryRedirector';
 
 export async function SiteShell({ children }: { children: React.ReactNode }) {
   const user = await getCurrentUser();
   const isAdmin = await isAuthorizedAdmin(user);
   return (
     <>
+      <RecoveryRedirector/>
       <header className="topbar">
         <Link className="brand" href="/" aria-label="Míng, inicio"><span className="brand-mark" aria-hidden="true"><Hanzi>明</Hanzi></span><span><strong>Míng</strong><small>Mandarín activo</small></span></Link>
         <nav className="desktop-nav" aria-label="Navegación principal">
