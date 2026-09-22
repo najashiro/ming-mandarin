@@ -4,6 +4,8 @@
 
 Aplicación Next.js 16 / React 19 / TypeScript, pnpm 11.19.0, Node >= 22.13. Supabase ofrece autenticación, progreso, comunidad y ranking; Vercel sirve la aplicación. La rama `main` ya contiene `MING_KNOWLEDGE` v1.0.0. Despliegue: GitHub → Vercel → producción.
 
+**Codex Cloud environment: CONFIGURADO Y VALIDADO.** La primera tarea Cloud terminó en **PASS** sobre `c723de931b7421be4e7c59f9696f8ce36fe8601a`, con Node v22.22.2 y pnpm 11.19.0 confirmados. E2E y las funciones reales de Supabase no se validaron.
+
 ## Rutas y funciones
 
 `app/` contiene páginas y APIs. `app/study/[scope]/` organiza estudio, juegos, vocabulario, gramática, diálogos, Hanzi y examen. `app/api/` contiene progreso, autenticación, comunidad, ranking y juego de la hora. `components/` contiene UI y juegos; `seed/curriculum.ts` alimenta contenido existente. No cambies IDs de progreso sin migración.
@@ -20,6 +22,6 @@ MP3 estáticos en `public/audio/pinyin/` y `public/audio/mandarin/`; manifiestos
 
 `supabase/migrations/` contiene seis migraciones (`0001`–`0006`); estado aplicado en producción no verificado. No ejecutes migraciones ni pruebas contra producción. Vercel sigue conectado a GitHub; no requiere cambio para Cloud. Pruebas: `pnpm lint`, `pnpm typecheck`, `pnpm test`, `pnpm build`; auditorías `pnpm audit:pinyin` y `pnpm audit:reto-mixto`; E2E con Playwright Chromium/WebKit y servidor local. Ver `docs/CODEX_CLOUD_SETUP.md`.
 
-## Trabajo reciente y pendientes
+## Flujo de trabajo
 
-Últimos commits de `main`: acceso visitante al reto de la hora antes del registro en ranking; controles de micrófono ocultos; ayuda y formato de respuestas de hora refinados. Pendiente: configurar el entorno Codex Cloud en navegador, verificar setup desde Cloud y fusionar el PR de preparación tras revisión. Riesgos conocidos: build depende de Google Fonts; E2E necesita navegadores; Cloud no debe recibir secretos de producción ni archivos de `Base de Datos/`.
+Flujo recomendado: Cloud/local → rama → pruebas → PR → merge → `main`. GitHub es el punto de sincronización entre Codex Cloud y Codex local. Evita trabajar simultáneamente desde Local y Cloud sobre la misma rama. Riesgos conocidos: build depende de Google Fonts; E2E necesita navegadores; Cloud no debe recibir secretos de producción ni archivos de `Base de Datos/`.

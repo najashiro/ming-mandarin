@@ -1,10 +1,10 @@
 # Codex Cloud: configuración de Míng
 
-Conecta GitHub en [Codex Cloud](https://chatgpt.com/codex), selecciona `najashiro/ming-mandarin` y crea un entorno sobre `main` (tras fusionar el PR de preparación). La computadora local puede permanecer apagada: el código vive en GitHub; Vercel mantiene su despliegue desde GitHub y Supabase sigue siendo el backend.
+El entorno de Codex Cloud de `najashiro/ming-mandarin` fue creado y validado correctamente. Usa la imagen de contenedor **universal**, Node seleccionado **22**, caché del contenedor **On** e Internet del agente limitado. La computadora local puede permanecer apagada: GitHub es el punto de sincronización del código; Vercel mantiene su despliegue desde GitHub y Supabase sigue siendo el backend.
 
 ## Runtime y scripts
 
-Node >= 22.13; `packageManager` fija pnpm 11.19.0. No actualices el lockfile al configurar el entorno.
+El runtime observado durante la validación fue Node v22.22.2; el proyecto requiere Node >= 22.13 y `packageManager` fija pnpm 11.19.0. No actualices el lockfile al configurar el entorno.
 
 Setup Script:
 
@@ -20,7 +20,7 @@ corepack enable
 pnpm install --frozen-lockfile
 ```
 
-El setup necesita acceso a npm para instalar paquetes. `next build` descarga Noto Serif SC desde Google Fonts si la fuente no está en caché. Para tareas que ejecutan build, configura Internet del agente en **On**, lista de dominios **None** más `fonts.googleapis.com` y `fonts.gstatic.com`, y métodos `GET`, `HEAD`, `OPTIONS`; para otras tareas puede quedar en **Off**. Para E2E instala Chromium y WebKit porque `playwright.config.ts` prueba ambos: `pnpm exec playwright install --with-deps chromium webkit`. No se instalan durante setup normal.
+El setup necesita acceso a npm para instalar paquetes. El acceso del agente está limitado a `fonts.googleapis.com` y `fonts.gstatic.com`, con los métodos `GET`, `HEAD` y `OPTIONS`, porque `next build` descarga Noto Serif SC si la fuente no está en caché. Para E2E instala Chromium y WebKit porque `playwright.config.ts` prueba ambos: `pnpm exec playwright install --with-deps chromium webkit`. No se instalan durante setup normal.
 
 ## Variables
 
@@ -47,6 +47,8 @@ Las pruebas ordinarias deben usar valores de desarrollo sin acceso a producción
 `NODE_ENV` es estándar de Node/Next. Los scripts de audio leen opcionalmente `.env.audio.local`, que está ignorado. Nunca ejecutes `audio:generate`, `audio:time`, `audio:verify` con clave real durante setup o pruebas ordinarias.
 
 ## Validación y seguridad
+
+La validación real en Codex Cloud se completó correctamente sobre `c723de931b7421be4e7c59f9696f8ce36fe8601a`: lint, typecheck, 161 tests, auditorías de pinyin y Reto Mixto, build, assets Hanzi y assets de audio pasaron con el árbol de trabajo limpio. E2E y las funciones reales de Supabase siguen sin validar; tampoco se ejecutaron migraciones ni se validó producción.
 
 ```bash
 pnpm lint
