@@ -12,4 +12,4 @@ Para contenido curricular, consulta solo los shards pertinentes. No inventes voc
 
 Los Hanzi Writer usan assets versionados en `public/hanzi-data/`. El audio de mandarín se reproduce desde MP3 estáticos en `public/audio/`; no regeneres TTS ni hagas llamadas de pago salvo pedido expreso. Prioriza móvil/iPhone, accesibilidad y controles táctiles. Conserva los IDs de currículo, Hanzi y progreso; cualquier cambio de ID requiere una migración diseñada.
 
-No publiques `.env*`, claves, tokens ni contraseñas. Nunca expongas secretos en `NEXT_PUBLIC_*`. No ejecutes migraciones, cambios de RLS ni despliegues en producción sin autorización. Trabaja en ramas y deja constancia de las validaciones.
+No publiques `.env*`, claves, tokens ni contraseñas. Nunca expongas secretos en `NEXT_PUBLIC_*`. No ejecutes migraciones, cambios de RLS ni despliegues en producción sin autorización. Trabaja cada cambio en su propia rama y ejecuta las validaciones pertinentes. Codex puede preparar, revisar y, con permisos suficientes de GitHub, fusionar un PR expresamente autorizado por el usuario; nunca debe fusionar a `main` por iniciativa propia.
