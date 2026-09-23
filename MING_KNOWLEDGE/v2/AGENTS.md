@@ -1,0 +1,23 @@
+# Uso de la base de fuentes v2.1 por Codex
+
+- Empieza con `index.json`, `RADICALS.md` y `README.md` (arquitectura de la base v2.0).
+- Consulta `query.py --word <hanzi> --limit 8`, `--radical <glifo>` o `--hanzi <carácter>`.
+- `query.py` compila base + extensión de radicales. `compile.py` aislado solo compila v2.0.
+- No cargues todo el corpus, fragmentos base64 ni PDF por defecto.
+- Usa primero tablas, luego testigos/notas y finalmente la caché de texto nativo.
+- Separa fuente original, anotación editorial, registro de código y despliegue.
+- No inventes pinyin, traducción, nombre de radical, significado o clave para completar `null`.
+- Distingue radical nombrado en libro, campo 部首 de hoja y candidato editorial en ejercicio.
+- Ninguna respuesta manuscrita del alumno es una clave docente. No aprobar calificación automática.
+- Consulta `radical_corrections`: 辶 es zǒuzhīdǐ en el libro; la tabla de 饣 usa 饭、饼、饿.
+- `radicals_legacy_v2` y el pack original conservan transcripciones anteriores; no prevalecen sobre las correcciones cotejadas.
+- No normalices silenciosamente 口/囗, 月/冃 o ⺊/卜. No todos los componentes son radicales.
+- No atribuyas un único radical a una palabra de varios caracteres.
+- Usa enlaces léxicos para palabras/frases, no coincidencias por substring.
+- Un vínculo derivado radical–frase no prueba enseñanza formal en esa página.
+- Conserva variantes, contraejemplos, roles y objetivos de escritura explícitos.
+- No cambies seed, app, juegos, audios, Supabase, progreso ni main al actualizar fuentes.
+- El snapshot b952c16360cd85c25205b49db5c23c543f553dcd no garantiza la producción actual.
+- Ejecuta `query.py --validate` y `python3 -m unittest discover -s MING_KNOWLEDGE/v2 -p 'test_*.py'`.
+- Solo consulta PDF si una verificación visual/literal o discrepancia no se resuelve con los testigos.
+- v1 es legado: no mezcles sus IDs de frase/conteos con v2 ni borres su trazabilidad.

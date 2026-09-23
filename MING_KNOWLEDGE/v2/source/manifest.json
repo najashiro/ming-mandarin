@@ -1,0 +1,76 @@
+{
+  "format": "ming-source-pack-v2",
+  "encoding": "base64 parts -> xz -> UTF-8 JSON object of named row tables",
+  "version": "2.0.0",
+  "compressed_sha256": "42c0dc9d1c6cce00d47748130d8c732912814bed8a272b33d37d5ec5fe398864",
+  "uncompressed_sha256": "a24a5edfbf5fd3d02f6f78dd052a61c826166e296543690fc6b600b43361a1d0",
+  "uncompressed_bytes": 761933,
+  "compressed_bytes": 71084,
+  "parts": [
+    {
+      "path": "source/pack-01.b64",
+      "sha256": "3f29756569cbcd599b90e001b45e8d135565062f5364e5da092e5b3136903531",
+      "bytes": 12001,
+      "git_blob_sha1": "ed2417a268213b2475b9075831a53eb4651d52dc"
+    },
+    {
+      "path": "source/pack-02.b64",
+      "sha256": "f9248d4923a315326b0363b419dbace64d76c233b24199824cdd74c788f9e985",
+      "bytes": 12001,
+      "git_blob_sha1": "0f82f57ae3ff1bafed6ebcdb8d202d817d15100a"
+    },
+    {
+      "path": "source/pack-03.b64",
+      "sha256": "2db82679cfceff3e0445e9132c55ff76d7926377b671381339beb1cb9f7ea347",
+      "bytes": 12001,
+      "git_blob_sha1": "a6e44b649a8e66607280653944bf003e23ef8389"
+    },
+    {
+      "path": "source/pack-04.b64",
+      "sha256": "1380797e5073060950f5f9d25c10f9969e1f53452c09666e59be2b468099e300",
+      "bytes": 12001,
+      "git_blob_sha1": "8e57e5798079e1c48dcb193d07a66ae7a595d45c"
+    },
+    {
+      "path": "source/pack-05.b64",
+      "sha256": "5ccd5f3b2a93b926fb82528886a1ca5bfcb51fbdbf4107ce4850a46e423bdcbe",
+      "bytes": 12001,
+      "git_blob_sha1": "6f345235c1533aafba42692656a3cf7098b3fa63"
+    },
+    {
+      "path": "source/pack-06.b64",
+      "sha256": "ffa84602b6df62391c3a19027c3fef4c20663767caeae68aabf0a4bb609b4cc9",
+      "bytes": 12001,
+      "git_blob_sha1": "0523b24b2cfae5326576b49cec8dd23a20fae5b1"
+    },
+    {
+      "path": "source/pack-07.b64",
+      "sha256": "e0b87b40d6688b1b34a8e2a01a548c2a80f210a13bf7b4f84bacbe8251ec6e64",
+      "bytes": 12001,
+      "git_blob_sha1": "d3d3d105221884f03735511d1d1d6114d179bcf8"
+    },
+    {
+      "path": "source/pack-08.b64",
+      "sha256": "7632f9a35a589f3acedf433cbfec8fd501e17bdccfe3843c1785fcc1f606f770",
+      "bytes": 10781,
+      "git_blob_sha1": "73407a5a8fc0b7e11c1b3a0e6968af10064bd486"
+    }
+  ],
+  "tables": {
+    "dialogues": 12,
+    "exercises": 122,
+    "foundations": 11,
+    "grammar_evidence": 47,
+    "hanzi_evidence": 336,
+    "notes": 29,
+    "phrase_evidence": 839,
+    "radicals": 8,
+    "sources": 21,
+    "vocabulary_evidence": 375,
+    "worksheet_sequences": 69,
+    "native_transcripts": 370
+  },
+  "data_only": true,
+  "pdf_bytes_included": false,
+  "executable_content_in_archive": false
+}

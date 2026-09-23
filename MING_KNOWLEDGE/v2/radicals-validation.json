@@ -1,0 +1,53 @@
+{
+  "version": "2.1.0",
+  "base_commit": "0c8ff410b5a28ff67f30d2759939bf2475319fbf",
+  "structural_validation": {
+    "passed": true,
+    "errors": [],
+    "checks": [
+      "unique table IDs",
+      "source/page bounds",
+      "lexical span equality",
+      "lexical, Hanzi and grammar foreign keys",
+      "36 new worksheet rows",
+      "151 runtime vocabulary entries",
+      "192 runtime canonical Hanzi",
+      "工作 lexical regression",
+      "口 vs 个 regression",
+      "template exclusion",
+      "radical source/page bounds and foreign keys",
+      "8 explicit definitions; 77 worksheet field witnesses preserved",
+      "40 assessment character prompts; no invented official answer keys",
+      "10 exam characters match workbook L2 order",
+      "exact radical forms stay distinct",
+      "phrase links reuse lexical relations"
+    ],
+    "limits": "Structural validation is not an external linguistic review or a test of the web app."
+  },
+  "unit_tests": {
+    "count": 13,
+    "passed": 13,
+    "failed": 0,
+    "command": "python3 -m unittest discover -s MING_KNOWLEDGE/v2 -p 'test_*.py'"
+  },
+  "scope": "Knowledge sources and offline query tooling only. No app/seed/audio/Supabase changes.",
+  "source_images_rechecked": [
+    "SRC-BOOK-01-02:p059",
+    "SRC-BOOK-01-02:p085",
+    "SRC-BOOK-03:p021"
+  ],
+  "radical_stats": {
+    "radical_forms": 38,
+    "radical_named_definitions": 8,
+    "radical_worksheet_witnesses": 77,
+    "radical_hanzi_links": 90,
+    "radical_word_links": 257,
+    "radical_phrase_links": 1804,
+    "radical_assessment_sets": 4,
+    "radical_assessment_items": 40,
+    "radical_exam_characters": 10,
+    "radical_source_corrections": 2
+  },
+  "source_answer_keys_supplied": false,
+  "production_deployment_verified": false
+}

@@ -1,32 +1,34 @@
-# MING_KNOWLEDGE v1.0.0
+# MING_KNOWLEDGE
 
-Base curricular normalizada de **Míng · Mandarín activo**.
+## Base activa de fuentes: v2.1.0
 
-## Estado
-- 19 fuentes auditadas.
-- 498 páginas PDF inventariadas.
-- 214 entradas de vocabulario/currículo.
-- 46 frases clave.
-- 8 registros de diálogo normalizados: 2 extractos verificados de Lección 1 y 6 diálogos verificados de Lecciones 2–3.
-- 24 puntos gramaticales.
-- 123 caracteres Hanzi indexados.
-- 14 grupos de radicales/componentes auditados.
-- 108 conjuntos/páginas de práctica indexados.
-- 13 patrones canónicos de ejercicios.
-- 10 grupos de material visual.
-- Todas las hojas Hanzi registradas y separadas por lección.
-- Inventario semántico de contenido visual sin duplicar los PDF.
+Corpus L1–L3, incluidas PPT/Hanzi 3.2 y una dimensión curricular de radicales.
+Empieza en [`v2/index.json`](v2/index.json), [`v2/RADICALS.md`](v2/RADICALS.md)
+y [`v2/README.md`](v2/README.md), que conserva la descripción del corpus base v2.0.
 
-## Propósito
-Evitar que Codex vuelva a reconstruir el currículo releyendo cientos de páginas PDF en cada tarea.
+```bash
+python3 MING_KNOWLEDGE/v2/query.py --word 喜欢 --limit 8
+python3 MING_KNOWLEDGE/v2/query.py --radical 讠 --limit 3
+python3 MING_KNOWLEDGE/v2/query.py --hanzi 语
+python3 MING_KNOWLEDGE/v2/query.py --table radical_matrix --limit 12
+python3 MING_KNOWLEDGE/v2/query.py --validate
+```
 
-## Inicio rápido para Codex
-1. `index.json`
-2. `lessons/lesson-XX.json`
-3. manifiesto del dominio necesario (`data/vocabulary.json`, `data/grammar.json`, `data/hanzi.json`)
-4. únicamente los shards indicados por esos manifiestos
+La consulta construye base y extensión sin PDF, Internet, credenciales ni API
+pagada. Las tablas enlazan vocabulario, frases, Hanzi, gramática, ejercicios,
+radicales, fuentes y cobertura del código.
 
-Los PDF originales siguen siendo la fuente final de autoridad, pero se consultan solo por excepción.
+Radicales: 38 formas registradas; 8 definiciones explícitas de libro; 77 campos
+部首 de hojas; 40 caracteres preguntados, incluidos 10 del examen. Las respuestas
+propuestas se distinguen de las fuentes y no se convierten en claves oficiales.
 
-## Optimización para agentes
-Vocabulario, gramática y Hanzi están fragmentados por lección. `data/dialogues.json`, `data/phrases.json` y `data/radicals.json` son datasets compactos que pueden cargarse directamente. El inventario de 498 páginas vive en `sources/page-audit/` dividido por fuente.
+**Esto no amplía automáticamente la web ni sus juegos.** Es una base de consulta
+para decidir después qué integrar en la aplicación. No modifica Supabase.
+
+## Legado y trazabilidad
+
+Las carpetas v1 `data/`, `lessons/`, `curriculum/` y `sources/` se conservan.
+Sus antiguos conteos (214 entradas, 123 Hanzi, 46 frases, 19 fuentes) no describen
+v2 ni la funcionalidad actual de la web. Los IDs antiguos no se reutilizan para
+frases diferentes. El pack v2.0 sigue intacto; `radical_corrections` documenta las
+correcciones verificadas y `radicals_legacy_v2` conserva la extracción anterior.
