@@ -1,11 +1,11 @@
 'use client';
 import { useCallback, useEffect, useRef, useState, type FormEvent } from 'react';
-import { minuteHelpCards, timeTokens } from '@/data/time-game';
+import { TIME_CHALLENGE_SECONDS, timeTokens, type TimeRuleMode } from '@/data/time-game';
 import { Hanzi } from '@/components/Hanzi';
 import { ClockVisual } from './ClockVisual';
 import { playTimeAudio, stopTimeAudio } from '@/lib/time-audio';
 import { normalizeTimeSpeech } from '@/lib/time-speech';
-import { generateTimeChallenge, initialTimeStats, nextClockVariant, scoreTimeAnswer, validateTimeAnswer, type ClockVariant, type TimeChallenge, type TimeStats } from '@/lib/time-game';
+import { buildAcceptedTimeAnswers, generateHardTimeChallenge, generateTimeChallenge, initialTimeStats, nextClockVariant, scoreTimeAnswer, validateHardTimeAnswers, validateTimeAnswer, type ClockVariant, type TimeAnswerVariant, type TimeChallenge, type TimeStats } from '@/lib/time-game';
 
 type Phase='idle'|'playing'|'pausedForHelp'|'practiceCorrection'|'finished';
 type Mode='practice'|'challenge';
@@ -15,129 +15,52 @@ type Recognition={lang:string;continuous:boolean;interimResults:boolean;onresult
 function useChineseSpeechRecognition(onTokens:(tokens:string[])=>void) {
   const [available,setAvailable]=useState(false),[listening,setListening]=useState(false),[error,setError]=useState('');
   const recognizer=useRef<Recognition|null>(null);
-  useEffect(()=>{
-    const host=window as Window & {SpeechRecognition?:new()=>Recognition;webkitSpeechRecognition?:new()=>Recognition};
-    const Constructor=host.SpeechRecognition??host.webkitSpeechRecognition;
-    if(!Constructor) return;
-    const instance=new Constructor(); instance.lang='zh-CN';instance.continuous=false;instance.interimResults=false;
-    instance.onresult=event=>{const tokens=normalizeTimeSpeech(event.results[0]?.[0]?.transcript??'');if(tokens.length) onTokens(tokens);else setError('No se reconoció la hora. Puedes tocar los caracteres.');};
-    instance.onerror=()=>{setListening(false);setError('Micrófono no disponible. Puedes responder tocando los caracteres.');};
-    instance.onend=()=>setListening(false);
-    recognizer.current=instance;queueMicrotask(()=>setAvailable(true));
-    return ()=>{instance.stop();recognizer.current=null;};
-  },[onTokens]);
-  const toggle=()=>{if(!recognizer.current)return; if(listening){recognizer.current.stop();setListening(false);return;}try{setError('');recognizer.current.start();setListening(true);}catch{setError('Micrófono no disponible. Puedes responder tocando los caracteres.');}};
-  return {available,listening,error,toggle,stop:()=>recognizer.current?.stop()};
+  useEffect(()=>{const host=window as Window&{SpeechRecognition?:new()=>Recognition;webkitSpeechRecognition?:new()=>Recognition};const C=host.SpeechRecognition??host.webkitSpeechRecognition;if(!C)return;const instance=new C();instance.lang='zh-CN';instance.continuous=false;instance.interimResults=false;instance.onresult=e=>{const tokens=normalizeTimeSpeech(e.results[0]?.[0]?.transcript??'');if(tokens.length)onTokens(tokens);else setError('No se reconoció la hora. Puedes tocar los caracteres.');};instance.onerror=()=>{setListening(false);setError('Micrófono no disponible. Puedes responder tocando los caracteres.');};instance.onend=()=>setListening(false);recognizer.current=instance;queueMicrotask(()=>setAvailable(true));return()=>instance.stop();},[onTokens]);
+  return {available,listening,error,toggle:()=>{if(!recognizer.current)return;if(listening){recognizer.current.stop();setListening(false);return;}try{setError('');recognizer.current.start();setListening(true);}catch{setError('Micrófono no disponible.');}},stop:()=>recognizer.current?.stop()};
 }
-function format(seconds:number){return `${Math.floor(seconds/60)}:${String(seconds%60).padStart(2,'0')}`;}
+const format=(seconds:number)=>`${Math.floor(seconds/60)}:${String(seconds%60).padStart(2,'0')}`;
+function AudioButton({text}: {text:string}) {return <button type="button" className="time-audio-icon" aria-label={`Escuchar ${text}`} onClick={()=>void playTimeAudio(text)}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Zm12.5-1.5a6 6 0 0 1 0 9M15 10a3 3 0 0 1 0 4"/></svg></button>}
+const labels:Record<TimeAnswerVariant['structure'],string>={numeric:'Con minutos',half:'Con 半',quarter:'Con 一刻','three-quarter':'Con 三刻','cha-minutes':'Con 差','cha-quarter':'Con 差 + 一刻'};
+function AnswerLine({answer,prefix=false}: {answer:TimeAnswerVariant;prefix?:boolean}) {const text=`${prefix?'现在':''}${answer.hanzi}`;return <div className="time-answer-line"><div><strong className="font-hanzi" lang="zh-CN">{text}</strong><AudioButton text={text}/></div><span>{prefix?'xiànzài ':''}{answer.pinyin}</span></div>}
+const fixed=(hour:number,minute:number,hanzi:string)=>buildAcceptedTimeAnswers(hour,minute).find(a=>a.hanzi===hanzi)!;
+const examples={nine:fixed(9,0,'九点'),two:fixed(2,0,'两点'),two05:fixed(2,5,'两点零五分'),two10:fixed(2,10,'两点十分'),two12:fixed(2,12,'两点十二分'),two12short:fixed(2,12,'两点十二'),nine15q:fixed(9,15,'九点一刻'),nine15n:fixed(9,15,'九点十五分'),nine30h:fixed(9,30,'九点半'),nine30n:fixed(9,30,'九点三十分'),nine45n:fixed(9,45,'九点四十五分'),nine45q:fixed(9,45,'九点三刻'),nine45cha:fixed(9,45,'差一刻十点'),ten50:fixed(10,50,'差十分十一点'),four55:fixed(4,55,'差五分五点'),nine05:fixed(9,5,'九点零五分'),nine10:fixed(9,10,'九点十分'),nine50:fixed(9,50,'差十分十点')};
+function LessonExample({answer,translation}: {answer:TimeAnswerVariant;translation?:string}) {return <div className="time-lesson-example"><AnswerLine answer={answer}/>{translation&&<small>{translation}</small>}</div>}
+function TimeHelp({challenge,onClose}: {challenge:TimeChallenge;onClose:()=>void}) {const close=useRef<HTMLButtonElement>(null),dynamic=challenge.acceptedAnswers[0];useEffect(()=>{close.current?.focus();const key=(e:KeyboardEvent)=>{if(e.key==='Escape')onClose();};document.addEventListener('keydown',key);return()=>document.removeEventListener('keydown',key);},[onClose]);return <div className="time-help-backdrop"><div className="time-help" role="dialog" aria-modal="true" aria-labelledby="time-help-title"><header><div><h3 id="time-help-title" className="font-hanzi">帮助</h3><p>Bāngzhù · Ayuda</p></div><button ref={close} type="button" onClick={onClose}>Cerrar</button></header>
+<section className="time-help-example time-help-question"><small>Pregunta</small><div><strong className="font-hanzi">现在几点？</strong><AudioButton text="现在几点？"/></div><span>Xiànzài jǐ diǎn?</span><p>¿Qué hora es?</p></section>
+<section className="time-help-example time-help-answer"><small>Respuesta</small><AnswerLine answer={dynamic} prefix/><p>{challenge.hour===1?'Es la':'Son las'} {challenge.hour}:{String(challenge.minute).padStart(2,'0')}.</p></section>
+<section><h4>Cómo decir la hora · <b className="font-hanzi">点、分</b></h4><p>La estructura básica es: hora + 点 + minutos + 分.</p><p><b>点 diǎn</b> · hora del reloj<br/><b>分 fēn</b> · minutos</p><LessonExample answer={examples.nine} translation="9:00 · Las nueve."/><LessonExample answer={examples.two} translation="2:00 · Las dos."/><p className="time-note">Para expresar las 2:00 usamos normalmente 两点 liǎng diǎn.</p></section>
+<section><h4>Minutos · <b className="font-hanzi">分 fēn</b></h4><h5>1–9 minutos</h5><p>Modelo recomendado: hora + 点 + 零 + número + 分.</p><LessonExample answer={examples.two05} translation="2:05 · Las dos y cinco."/><p>En este modelo, 零 líng introduce los minutos menores de 10.</p><h5>10 minutos</h5><LessonExample answer={examples.two10} translation="2:10 · Las dos y diez."/><p>Aquí no necesitas 零.</p><h5>11–59 minutos</h5><LessonExample answer={examples.two12} translation="2:12 · Las dos y doce."/><p>También:</p><LessonExample answer={examples.two12short} translation="2:12 · Las dos y doce."/><p>De 11 a 59 minutos, 分 puede omitirse en estas respuestas.</p><p className="time-tip">Consejo Míng: mientras aprendes, usa la forma completa con 分.</p></section>
+<section><h4>Y media · <b className="font-hanzi">半 bàn</b></h4><p>半 bàn significa mitad. Estructura: hora + 点 + 半.</p><LessonExample answer={examples.nine30h} translation="9:30 · Las nueve y media."/><p>También:</p><LessonExample answer={examples.nine30n} translation="9:30 · Las nueve y treinta."/><p>✅ 九点半<br/>❌ 九点半分 — No añadas 分 después de 半.</p></section>
+<section><h4>Un cuarto · <b className="font-hanzi">刻 kè</b></h4><p>一刻 yí kè = 15 minutos.</p><LessonExample answer={examples.nine15q} translation="9:15 · Las nueve y cuarto."/><LessonExample answer={examples.nine15n} translation="Las nueve y quince."/><LessonExample answer={examples.nine45q} translation="9:45 · Las nueve y cuarenta y cinco."/><p>También podemos expresar cuánto falta:</p><LessonExample answer={examples.nine45cha} translation="Un cuarto para las diez."/><p>Para decir “y cuarto”, utiliza 一刻, no 刻 solo.</p></section>
+<section><h4>Faltan… · <b className="font-hanzi">差 chà</b></h4><p>差 indica cuánto falta para llegar a la siguiente hora.</p><p><b>Estructura:</b> 差 + minutos que faltan + 分 + próxima hora + 点</p><p>10:50 → faltan 10 min → 11:00</p><LessonExample answer={examples.ten50} translation="Diez minutos para las once."/><p>Descomposición: 差 + 十分 + 十一点. Primero dices cuánto falta; después, la hora a la que vas a llegar. 差十分十一点 = 10:50, no 11:10.</p><LessonExample answer={examples.four55} translation="4:55 · Cinco minutos para las cinco."/></section>
+<section><h4>Una hora, varias formas</h4><div className="time-equivalents"><LessonExample answer={examples.nine30n}/><b>=</b><LessonExample answer={examples.nine30h}/><LessonExample answer={examples.nine45n}/><b>=</b><LessonExample answer={examples.nine45q}/><b>=</b><LessonExample answer={examples.nine45cha}/></div></section>
+<section><h4>Resumen rápido</h4><div className="time-summary">{[['9:00',examples.nine],['9:05',examples.nine05],['9:10',examples.nine10],['9:15',examples.nine15q],['9:30',examples.nine30h],['9:45',examples.nine45q],['9:50',examples.nine50]].map(([clock,answer])=><div key={clock as string}><b>{clock as string}</b><AnswerLine answer={answer as TimeAnswerVariant}/></div>)}</div><p>点 → hora · 分 → minutos · 半 → y media · 一刻 → un cuarto · 差 → faltan…</p></section>
+<section className="time-hard-help"><h4>HARD 🔥</h4><p>Responde a la misma hora de dos formas diferentes.</p><LessonExample answer={examples.nine30n}/><LessonExample answer={examples.nine30h}/><p>Añadir o quitar 分 no cuenta como una segunda forma.</p></section><small>Voz generada por IA.</small></div></div>}
+
 export function TimeGame({playerName,canCompete}:{playerName:string;canCompete:boolean}) {
-  const [phase,setPhase]=useState<Phase>('idle'),[mode,setMode]=useState<Mode>('practice');
-  const [challenge,setChallenge]=useState<TimeChallenge>(()=>generateTimeChallenge(0));
-  const [history,setHistory]=useState<ClockVariant[]>([]),[answer,setAnswer]=useState<string[]>([]);
-  const [transitioning,setTransitioning]=useState(false);
-  const [stats,setStats]=useState<TimeStats>(initialTimeStats),[feedback,setFeedback]=useState<'correct'|'incorrect'|null>(null);
-  const [seconds,setSeconds]=useState(420),[bonus,setBonus]=useState(''),[ranking,setRanking]=useState<RankRow[]>([]),[position,setPosition]=useState<number|null>(null),[saveError,setSaveError]=useState('');
-  const [challengeToken,setChallengeToken]=useState<string|null>(null),[rankingName,setRankingName]=useState(canCompete?playerName:''),[saving,setSaving]=useState(false),[saved,setSaved]=useState(false),[guestReady,setGuestReady]=useState(canCompete),[skipRanking,setSkipRanking]=useState(false);
-  const phaseRef=useRef<Phase>('idle'),statsRef=useRef(stats),deadline=useRef(0),pauseAt=useRef(0),transition=useRef(false),roundTimer=useRef<ReturnType<typeof setTimeout>|null>(null);
-  const setGamePhase=(next:Phase)=>{phaseRef.current=next;setPhase(next);};
-  useEffect(()=>{statsRef.current=stats;},[stats]);
-  const speechTokens=useCallback((tokens:string[])=>{setAnswer(current=>[...current,...tokens]);},[]);
-  const speech=useChineseSpeechRecognition(speechTokens);
-  const nextRound=useCallback((difficulty:number)=>{setChallenge(generateTimeChallenge(difficulty));setHistory(previous=>[...previous.slice(-2),nextClockVariant(previous)]);setAnswer([]);setFeedback(null);transition.current=false;setTransitioning(false);setGamePhase('playing');},[]);
-  const finish=useCallback(()=>{
-    if(phaseRef.current==='finished')return;
-    setGamePhase('finished');if(roundTimer.current)clearTimeout(roundTimer.current);speech.stop();stopTimeAudio();setSeconds(0);
-  },[speech]);
-  useEffect(()=>{if(phase!=='playing'||mode!=='challenge')return;const timer=window.setInterval(()=>{const left=Math.max(0,Math.ceil((deadline.current-Date.now())/1000));setSeconds(left);if(left===0)void finish();},200);return()=>window.clearInterval(timer);},[phase,mode,finish]);
-  useEffect(()=>()=>{if(roundTimer.current)clearTimeout(roundTimer.current);stopTimeAudio();},[]);
-  function start(){
-    transition.current=false;setTransitioning(false);setStats(initialTimeStats);statsRef.current=initialTimeStats;setAnswer([]);setBonus('');setSaveError('');setPosition(null);setRanking([]);setSaved(false);setSaving(false);setSkipRanking(false);setRankingName(guestReady?rankingName:'');setChallengeToken(null);
-    setChallenge(generateTimeChallenge(0));setHistory([nextClockVariant([])]);setSeconds(420);deadline.current=Date.now()+420000;setGamePhase('playing');
-    void playTimeAudio('现在几点？');
-    if(mode==='challenge')void fetch('/api/games/time',{method:'PUT'})
-      .then(async response=>{if(!response.ok)throw new Error();return response.json() as Promise<{token:string}>;})
-      .then(data=>setChallengeToken(data.token))
-      .catch(()=>setChallengeToken(null));
-  }
-  async function saveRanking(event:FormEvent<HTMLFormElement>){
-    event.preventDefault();if(saving||saved||!challengeToken)return;
-    const name=rankingName.trim().replace(/\s+/g,' ').slice(0,40);
-    if(name.length<2){setSaveError('Escribe un nombre de al menos 2 caracteres.');return;}
-    setSaving(true);setSaveError('');
-    try{
-      if(!guestReady){
-        const guest=await fetch('/api/auth/guest',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({displayName:name})});
-        if(!guest.ok)throw new Error('No se pudo crear el perfil para guardar tu ranking.');
-        setGuestReady(true);
-      }
-      const response=await fetch('/api/games/time',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({token:challengeToken,name,score:stats.score,maxDifficulty:stats.maxDifficulty,correctAnswers:stats.correct,maxStreak:stats.maxStreak,masteryBonusTotal:stats.masteryBonusTotal})});
-      if(!response.ok){const data=await response.json().catch(()=>({})) as {error?:string};throw new Error(data.error||'No se pudo guardar el ranking.');}
-      const data=await response.json() as {rank:number|null;ranking:RankRow[]};setPosition(data.rank);setRanking(data.ranking);setSaved(true);
-    }catch(error){setSaveError(error instanceof Error?error.message:'No se pudo guardar el ranking. Inténtalo de nuevo.');}
-    finally{setSaving(false);}
-  }
-  function openHelp(){if(phase==='playing'&&mode==='challenge')pauseAt.current=Date.now();setGamePhase('pausedForHelp');}
-  function closeHelp(){if(mode==='challenge')deadline.current+=Date.now()-pauseAt.current;setGamePhase('playing');}
-  async function confirm(){
-    if(phaseRef.current!=='playing'||transition.current||!answer.length)return;
-    const matched=validateTimeAnswer(challenge,answer);transition.current=true;setTransitioning(true);speech.stop();
-    const result=scoreTimeAnswer(statsRef.current,matched);statsRef.current=result.stats;setStats(result.stats);setFeedback(matched?'correct':'incorrect');
-    if(matched){
-      const parts=[result.streakBonus?`${result.stats.streak} aciertos seguidos +${result.streakBonus}`:'',result.bonus?`${matched.structure==='cha'?'差':matched.structure==='half'?'半':'一刻'} +${result.bonus}`:''].filter(Boolean);
-      if(parts.length){setBonus(`BONUS! ${parts.join(' · ')}`);window.setTimeout(()=>setBonus(''),1500);}
-      await playTimeAudio(`现在${matched.hanzi}`);
-      if(phaseRef.current==='playing')nextRound(result.stats.difficulty);
-    }else if(mode==='practice'){setGamePhase('practiceCorrection');}
-    else roundTimer.current=setTimeout(()=>{if(phaseRef.current==='playing')nextRound(result.stats.difficulty);},600);
-  }
-  const correction=challenge.acceptedAnswers[0];
-  return <section className="time-game">
-    {phase==='idle'?<div className="time-start"><h3 className="font-hanzi" lang="zh-CN">现在几点？</h3><p>Xiànzài jǐ diǎn?</p><small>¿Qué hora es?</small><p>Mira el reloj y responde en chino.</p><div className="time-modes"><button type="button" aria-pressed={mode==='practice'} onClick={()=>setMode('practice')}><Hanzi>练习</Hanzi><small>Practicar</small></button><button type="button" aria-pressed={mode==='challenge'} onClick={()=>setMode('challenge')}><Hanzi>挑战 · 7分钟</Hanzi><small>Reto · 7 min</small></button></div><button className="button-primary" type="button" onClick={()=>void start()}><Hanzi>开始</Hanzi><small>Comenzar</small></button></div>
-    :phase==='finished'?<div className="time-result"><h3>Tu resultado</h3><strong>{stats.score} puntos</strong>{saved?<p>Ranking guardado{position?` · Puesto #${position}`:''}</p>:skipRanking?<p>Resultado no guardado.</p>:challengeToken?<form className="time-ranking-form" onSubmit={event=>void saveRanking(event)}><p>¿Quieres guardar tu resultado en el ranking? Completa tu nombre.</p><label htmlFor="time-ranking-name">Nombre</label><input id="time-ranking-name" value={rankingName} onChange={event=>setRankingName(event.target.value)} minLength={2} maxLength={40} required autoComplete="nickname"/><button className="button-primary" type="submit" disabled={saving}>{saving?'Guardando…':'Guardar en el ranking'}</button><button type="button" onClick={()=>setSkipRanking(true)} disabled={saving}>Ahora no</button></form>:<p>Has terminado el reto. El ranking no está disponible en este momento.</p>}{saveError&&<p role="alert">{saveError}</p>}<button type="button" onClick={()=>{setGamePhase('idle');setChallengeToken(null);}}>Jugar otra vez</button><div className="time-ranking">{ranking.map(row=><div key={`${row.rank}-${row.player_name}`}><b>#{row.rank}</b><span>{row.player_name}</span><strong>{row.score}</strong></div>)}</div></div>
-    :<>
-      <div className="time-hud"><div><small>Dificultad {stats.difficulty}</small><progress max="100" value={stats.difficulty} style={{accentColor:stats.difficulty<35?'#4b9a69':stats.difficulty<70?'#e6a441':'#c85142'}}/></div><div className="time-score">{bonus&&<span role="status" className="time-bonus">{bonus}</span>}<b>{stats.score}</b><small>puntos</small></div><div className="time-timer" aria-live="off">{mode==='practice'?'∞':format(seconds)}</div></div>
-      <div className="time-question"><span className="font-hanzi">现在几点？</span><button aria-label="Escuchar 现在几点？" disabled={transitioning} onClick={()=>void playTimeAudio('现在几点？')}>🔊</button></div>
-      <ClockVisual hour={challenge.hour} minute={challenge.minute} variant={history.at(-1)??'classic'}/>
-      <div className="time-starter"><span className="font-hanzi">现在</span><button aria-label="Escuchar 现在" disabled={transitioning} onClick={()=>void playTimeAudio('现在')}>🔊</button><span>……</span></div>
-      <div className={`time-answer ${feedback??''}`} aria-label="Respuesta construida">{answer.length?answer.map((char,index)=><span className="font-hanzi" key={index}>{char}</span>):<span className="placeholder">Toca los caracteres</span>}</div>
-      {phase==='practiceCorrection'?<div className="time-correction"><small>Respuesta correcta</small><div><strong className="font-hanzi">{correction.hanzi}</strong><button aria-label="Escuchar respuesta correcta" onClick={()=>void playTimeAudio(`现在${correction.hanzi}`)}>🔊</button></div><span>{correction.pinyin}</span><button className="button-primary" onClick={()=>nextRound(stats.difficulty)}><Hanzi>继续</Hanzi> · Continuar</button></div>
-      :<><div className="time-controls"><button onClick={()=>setAnswer(current=>current.slice(0,-1))} disabled={!answer.length||transitioning}>← Borrar</button><button className="button-primary" onClick={()=>void confirm()} disabled={!answer.length||transitioning}>✓ Confirmar</button></div>
-      <div className="time-palette">{timeTokens.map(token=><button type="button" className="font-hanzi" key={token.hanzi} aria-label={`Añadir ${token.hanzi}`} disabled={transitioning} onClick={()=>{setAnswer(current=>[...current,token.hanzi]);void playTimeAudio(token.hanzi);}}>{token.hanzi}</button>)}</div></>}
-      {phase==='playing'&&!transitioning&&<button className="time-help-trigger" onClick={openHelp}>? Ayuda</button>}
-      {phase === 'pausedForHelp' && <div className="time-help-backdrop"><div className="time-help" role="dialog" aria-modal="true" aria-label="Ayuda">
-        <button className="time-help-close" onClick={closeHelp}>Cerrar</button>
-        <h3 className="font-hanzi">帮助</h3>
-        <p>Bāngzhù · Ayuda</p>
-        <section className="time-help-example time-help-question">
-          <small>Pregunta</small>
-          <strong className="font-hanzi" lang="zh-CN">现在几点？</strong>
-          <span>Xiànzài jǐ diǎn?</span>
-          <p>¿Qué hora es?</p>
-        </section>
-        <section className="time-help-example time-help-answer">
-          <small>Respuesta</small>
-          <strong className="font-hanzi" lang="zh-CN">现在{correction.hanzi}</strong>
-          <span>Xiànzài {correction.pinyin}</span>
-          <p>Ahora {challenge.hour === 1 ? 'es la' : 'son las'} {challenge.hour}:{String(challenge.minute).padStart(2, '0')}.</p>
-        </section>
-        <section className="time-minute-guide" aria-labelledby="time-minute-title">
-          <h4 id="time-minute-title">Cómo decir los minutos · <span className="font-hanzi" lang="zh-CN">分</span> fēn</h4>
-          <p>¿Cuándo se puede omitir <span className="font-hanzi" lang="zh-CN">分</span>?</p>
-          <div className="time-minute-cards">
-            {minuteHelpCards.map(card => <article className="time-minute-card" key={card.range}>
-              <b>{card.range}</b>
-              {card.forms.map(form => <div className="time-minute-card-form" key={form.example}>
-                <span>{form.label && `${form.label} min · `}{form.pattern}</span>
-                <strong className="font-hanzi" lang="zh-CN">{form.example}</strong>
-                <small>{form.pinyin}</small>
-                {form.label && <button type="button" className="time-help-audio" aria-label={`Escuchar ${form.example}`} onClick={() => void playTimeAudio(`现在${form.example}`)}>🔊 <span>Escuchar</span></button>}
-              </div>)}
-              <em>{card.note}</em>
-            </article>)}
-          </div>
-        </section>
-        <small>Voz generada por IA.</small>
-      </div></div>}
-    </>}
-  </section>;
+ const [phase,setPhase]=useState<Phase>('idle'),[mode,setMode]=useState<Mode>('practice'),[rules,setRules]=useState<TimeRuleMode>('normal'),[gameRules,setGameRules]=useState<TimeRuleMode>('normal');
+ const make=useCallback((difficulty:number,r=gameRules)=>r==='hard'?generateHardTimeChallenge(difficulty):generateTimeChallenge(difficulty),[gameRules]);
+ const [challenge,setChallenge]=useState<TimeChallenge>(()=>generateTimeChallenge(0)),[history,setHistory]=useState<ClockVariant[]>([]),[answers,setAnswers]=useState<string[][]>([[],[]]),[active,setActive]=useState(0);
+ const [transitioning,setTransitioning]=useState(false),[stats,setStats]=useState<TimeStats>(initialTimeStats),[feedback,setFeedback]=useState<Array<'correct'|'incorrect'|null>>([null,null]),[pairEquivalent,setPairEquivalent]=useState(false);
+ const [seconds,setSeconds]=useState(TIME_CHALLENGE_SECONDS),[bonus,setBonus]=useState(''),[ranking,setRanking]=useState<RankRow[]>([]),[position,setPosition]=useState<number|null>(null),[saveError,setSaveError]=useState('');
+ const [challengeToken,setChallengeToken]=useState<string|null>(null),[rankingName,setRankingName]=useState(canCompete?playerName:''),[saving,setSaving]=useState(false),[saved,setSaved]=useState(false),[guestReady,setGuestReady]=useState(canCompete),[skipRanking,setSkipRanking]=useState(false);
+ const phaseRef=useRef<Phase>('idle'),returnPhase=useRef<Phase>('playing'),statsRef=useRef(stats),deadline=useRef(0),pauseAt=useRef(0),transition=useRef(false),roundTimer=useRef<ReturnType<typeof setTimeout>|null>(null),helpTrigger=useRef<HTMLButtonElement>(null),roundId=useRef(0),activeRef=useRef(0);
+ const setGamePhase=(next:Phase)=>{phaseRef.current=next;setPhase(next)};useEffect(()=>{statsRef.current=stats},[stats]);useEffect(()=>{activeRef.current=active},[active]);
+ const speechTokens=useCallback((tokens:string[])=>{const target=activeRef.current;setAnswers(current=>current.map((value,index)=>index===target?[...value,...tokens]:value));},[]);const speech=useChineseSpeechRecognition(speechTokens);
+ const nextRound=useCallback((difficulty:number)=>{roundId.current++;setChallenge(make(difficulty));setHistory(previous=>[...previous.slice(-2),nextClockVariant(previous)]);setAnswers([[],[]]);setActive(0);setFeedback([null,null]);setPairEquivalent(false);transition.current=false;setTransitioning(false);setGamePhase('playing');},[make]);
+ const finish=useCallback(()=>{if(phaseRef.current==='finished')return;roundId.current++;transition.current=true;setGamePhase('finished');if(roundTimer.current)clearTimeout(roundTimer.current);speech.stop();stopTimeAudio();setSeconds(0);},[speech]);
+ useEffect(()=>{if(phase!=='playing'||mode!=='challenge')return;const timer=window.setInterval(()=>{const left=Math.max(0,Math.ceil((deadline.current-Date.now())/1000));setSeconds(left);if(left===0)finish();},200);return()=>clearInterval(timer);},[phase,mode,finish]);useEffect(()=>()=>{if(roundTimer.current)clearTimeout(roundTimer.current);stopTimeAudio();},[]);
+ async function start(){const selected=rules;setGameRules(selected);transition.current=false;setTransitioning(false);setStats(initialTimeStats);statsRef.current=initialTimeStats;setAnswers([[],[]]);setBonus('');setSaveError('');setPosition(null);setRanking([]);setSaved(false);setSaving(false);setSkipRanking(false);setChallengeToken(null);setChallenge(selected==='hard'?generateHardTimeChallenge(0):generateTimeChallenge(0));setHistory([nextClockVariant([])]);setSeconds(TIME_CHALLENGE_SECONDS);if(mode==='challenge'){try{const response=await fetch('/api/games/time',{method:'PUT',headers:{'content-type':'application/json'},body:JSON.stringify({rules:selected})});if(!response.ok)throw new Error();const data=await response.json() as {token:string};setChallengeToken(data.token);}catch{setChallengeToken(null);}deadline.current=Date.now()+TIME_CHALLENGE_SECONDS*1000;}setGamePhase('playing');void playTimeAudio('现在几点？');}
+ async function saveRanking(event:FormEvent<HTMLFormElement>){event.preventDefault();if(saving||saved||!challengeToken)return;const name=rankingName.trim().replace(/\s+/g,' ').slice(0,40);if(name.length<2){setSaveError('Escribe un nombre de al menos 2 caracteres.');return;}setSaving(true);try{if(!guestReady){const guest=await fetch('/api/auth/guest',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({displayName:name})});if(!guest.ok)throw new Error();setGuestReady(true);}const response=await fetch('/api/games/time',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({token:challengeToken,name,score:stats.score,maxDifficulty:stats.maxDifficulty,correctAnswers:stats.correct,maxStreak:stats.maxStreak,masteryBonusTotal:stats.masteryBonusTotal})});if(!response.ok)throw new Error((await response.json().catch(()=>({}))).error);const data=await response.json();setPosition(data.rank);setRanking(data.ranking);setSaved(true);}catch{setSaveError('No se pudo guardar el ranking. Inténtalo de nuevo.');}finally{setSaving(false)}}
+ const openHelp=()=>{returnPhase.current=phaseRef.current;if(mode==='challenge'&&phaseRef.current==='playing')pauseAt.current=Date.now();speech.stop();stopTimeAudio();setGamePhase('pausedForHelp')};
+ const closeHelp=useCallback(()=>{if(mode==='challenge'&&returnPhase.current==='playing')deadline.current+=Date.now()-pauseAt.current;setGamePhase(returnPhase.current);queueMicrotask(()=>helpTrigger.current?.focus());},[mode]);
+ async function confirm(){const needed=gameRules==='hard'?2:1;if(phaseRef.current!=='playing'||transition.current||answers.slice(0,needed).some(a=>!a.length))return;const id=roundId.current;const hard=gameRules==='hard'?validateHardTimeAnswers(challenge,answers):null;const matches=hard?.matches??[validateTimeAnswer(challenge,answers[0])];const success=hard?.success??Boolean(matches[0]);transition.current=true;setTransitioning(true);speech.stop();setFeedback(matches.map(m=>m?'correct':'incorrect'));setPairEquivalent(Boolean(hard?.valid&&!hard.distinct));const scoringAnswer=success?matches.reduce((best,item)=>!best||item!.masteryBonus>best.masteryBonus?item:best,undefined as TimeAnswerVariant|undefined):undefined;const result=scoreTimeAnswer(statsRef.current,scoringAnswer);statsRef.current=result.stats;setStats(result.stats);if(success){if(result.bonus)setBonus(`BONUS! +${result.bonus}`);await playTimeAudio(`现在${matches[0]!.hanzi}`);if(id===roundId.current&&phaseRef.current==='playing')nextRound(result.stats.difficulty);}else if(mode==='practice'){transition.current=false;setTransitioning(false);setGamePhase('practiceCorrection');}else roundTimer.current=setTimeout(()=>{if(id===roundId.current&&phaseRef.current==='playing')nextRound(result.stats.difficulty)},600)}
+ const representative=[...new Map(challenge.acceptedAnswers.map(a=>[a.structure,a])).values()],minor=challenge.acceptedAnswers.filter(a=>!representative.includes(a));const quarterError=challenge.minute===15&&answers.some(a=>a.join('').includes('点刻'));
+ const renderField=(index:number)=><button type="button" className={`time-answer ${active===index?'active':''} ${feedback[index]??''}`} aria-label={`Forma ${index+1}: ${answers[index].join('')||'vacía'}`} onClick={()=>setActive(index)}><span className="time-form-label">Forma {index+1}</span>{answers[index].length?answers[index].map((char,i)=><span className="font-hanzi" key={i}>{char}</span>):<span className="placeholder">Toca los caracteres</span>}</button>;
+ return <section className="time-game">{phase==='idle'?<div className="time-start"><div className="time-intro"><div><h3 className="font-hanzi">现在几点？</h3><p>Xiànzài jǐ diǎn?</p><small>¿Qué hora es?</small><p>{rules==='hard'?'Expresa la misma hora de dos formas diferentes.':'Mira el reloj y responde en chino.'}</p></div><div className="time-hard-control">{rules==='hard'&&<b>HARD 🔥</b>}<button type="button" role="switch" aria-checked={rules==='hard'} aria-label="Activar modo HARD" onClick={()=>setRules(r=>r==='hard'?'normal':'hard')}><span/></button></div></div><div className="time-modes"><button type="button" aria-pressed={mode==='practice'} onClick={()=>setMode('practice')}><Hanzi>练习</Hanzi><small>Practicar</small></button><button type="button" aria-pressed={mode==='challenge'} onClick={()=>setMode('challenge')}><Hanzi>挑战 · 4分钟</Hanzi><small>Reto · 4 min</small></button></div><button className="button-primary" type="button" onClick={()=>void start()}><Hanzi>开始</Hanzi><small>Comenzar</small></button></div>
+ :phase==='finished'?<div className="time-result"><h3>Tu resultado {gameRules==='hard'&&'· HARD 🔥'}</h3><strong>{stats.score} puntos</strong>{saved?<p>Ranking guardado{position?` · Puesto #${position}`:''}</p>:skipRanking?<p>Resultado no guardado.</p>:challengeToken?<form className="time-ranking-form" onSubmit={saveRanking}><p>¿Quieres guardar tu resultado en el ranking {gameRules==='hard'?'HARD':'Normal'} · 4 min?</p><label htmlFor="time-ranking-name">Nombre</label><input id="time-ranking-name" value={rankingName} onChange={e=>setRankingName(e.target.value)} minLength={2} maxLength={40}/><button className="button-primary" disabled={saving}>Guardar en el ranking</button><button type="button" onClick={()=>setSkipRanking(true)}>Ahora no</button></form>:<p>Has terminado. El ranking no está disponible en este momento.</p>}{saveError&&<p role="alert">{saveError}</p>}<button type="button" onClick={()=>setGamePhase('idle')}>Jugar otra vez</button><div className="time-ranking">{ranking.map(row=><div key={row.rank}><b>#{row.rank}</b><span>{row.player_name}</span><strong>{row.score}</strong></div>)}</div></div>
+ :<><div className="time-hud"><div><small>Dificultad {stats.difficulty}</small><progress max="100" value={stats.difficulty}/></div><div className="time-score">{bonus&&<span>{bonus}</span>}<b>{stats.score}</b><small>puntos</small></div><div className="time-timer">{mode==='practice'?'∞':format(seconds)}</div></div>{gameRules==='hard'&&<div className="time-hard-badge">HARD 🔥 · Dos formas diferentes</div>}<div className="time-question"><span className="font-hanzi">现在几点？</span><AudioButton text="现在几点？"/></div><ClockVisual hour={challenge.hour} minute={challenge.minute} variant={history.at(-1)??'classic'}/><div className="time-starter"><span className="font-hanzi">现在</span><AudioButton text="现在"/><span>……</span></div><div className={`time-answer-fields ${gameRules}`}>{renderField(0)}{gameRules==='hard'&&renderField(1)}</div>
+ {phase==='practiceCorrection'?<div className="time-correction"><h4>Respuestas correctas</h4>{quarterError&&<p role="alert">Falta 一: para decir “y cuarto”, usa 一刻.</p>}{pairEquivalent&&<p role="alert">Las dos respuestas son correctas, pero usan la misma forma. En HARD necesitas dos construcciones diferentes.</p>}<div className="time-alternatives">{representative.map(a=><article key={a.hanzi}><small>{labels[a.structure]}</small><AnswerLine answer={a}/></article>)}</div>{minor.length>0&&<details><summary>Más variantes válidas</summary>{minor.map(a=><AnswerLine answer={a} key={a.hanzi}/>)}</details>}<button className="button-primary" onClick={()=>nextRound(stats.difficulty)}><Hanzi>继续</Hanzi> · Continuar</button></div>
+ :<><div className="time-controls"><button type="button" onClick={()=>setAnswers(current=>current.map((a,i)=>i===active?a.slice(0,-1):a))} disabled={!answers[active].length||transitioning}>← Borrar</button>{speech.available&&<button type="button" onClick={speech.toggle}>{speech.listening?'Detener':'🎙️ Dictar'}</button>}<button className="button-primary" type="button" onClick={()=>void confirm()} disabled={answers.slice(0,gameRules==='hard'?2:1).some(a=>!a.length)||transitioning}>✓ Confirmar</button></div>{speech.error&&<small>{speech.error}</small>}<div className="time-palette">{timeTokens.map(token=><button type="button" className="font-hanzi" key={token.hanzi} aria-label={`Añadir ${token.hanzi}`} disabled={transitioning} onClick={()=>{setAnswers(current=>current.map((a,i)=>i===active?[...a,token.hanzi]:a));void playTimeAudio(token.hanzi)}}>{token.hanzi}</button>)}</div></>}
+ {(phase==='playing'||phase==='practiceCorrection')&&!transitioning&&<button ref={helpTrigger} type="button" className="time-help-trigger" aria-label="Abrir ayuda del juego de la hora" onClick={openHelp}><span className="font-hanzi">帮助</span> <span aria-hidden="true">🖐️</span></button>}{phase==='pausedForHelp'&&<TimeHelp challenge={challenge} onClose={closeHelp}/>}</>}</section>
 }

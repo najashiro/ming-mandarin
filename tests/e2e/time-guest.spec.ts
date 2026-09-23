@@ -11,7 +11,7 @@ test('visitor can start the time challenge and choose to save the ranking after 
   });
   await page.route('**/api/auth/guest', route => route.fulfill({ status: 200, contentType: 'application/json', body: '{"ok":true}' }));
   await page.goto('/study/l1/games?game=hora');
-  await page.getByRole('button', { name: /Reto · 7 min/ }).click();
+  await page.getByRole('button', { name: /Reto · 4 min/ }).click();
   await page.getByRole('button', { name: /Comenzar/ }).click();
   await expect(page.getByText('7:00')).toBeVisible();
   await page.clock.fastForward(420_000);

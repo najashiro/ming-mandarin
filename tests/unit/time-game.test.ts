@@ -1,5 +1,5 @@
 import { describe,expect,it } from 'vitest';
-import { buildAcceptedTimeAnswers, clockAngles, clockVariants, generateTimeChallenge, initialTimeStats, isAnalog, nextClockVariant, scoreTimeAnswer, validateTimeAnswer } from '@/lib/time-game';
+import { buildAcceptedTimeAnswers, clockAngles, clockVariants, generateHardTimeChallenge, generateTimeChallenge, initialTimeStats, isAnalog, nextClockVariant, scoreTimeAnswer, validateHardTimeAnswers, validateTimeAnswer } from '@/lib/time-game';
 import { normalizeTimeSpeech } from '@/lib/time-speech';
 const forms=(h:number,m:number)=>buildAcceptedTimeAnswers(h,m).map(a=>a.hanzi);
 describe('hours answers',()=>{
@@ -41,6 +41,17 @@ describe('hours answers',()=>{
     expect(generateTimeChallenge(0,()=>.5).minute).toBe(0);
     expect([0,5,10,20,30]).toContain(generateTimeChallenge(20,()=>.5).minute);
     expect(generateTimeChallenge(90,()=>.8).minute).toBe(48);
+  });
+});
+describe('hard rules',()=>{
+  it('requires two valid, genuinely different constructions in either order',()=>{
+    const challenge={hour:9,minute:45,acceptedAnswers:buildAcceptedTimeAnswers(9,45)};
+    for(const pair of [['九点三刻','差一刻十点'],['差一刻十点','九点三刻'],['差十五分十点','差一刻十点']]) expect(validateHardTimeAnswers(challenge,pair.map(v=>[...v])).success).toBe(true);
+    expect(validateHardTimeAnswers(challenge,[[...'九点四十五分'],[...'九点四十五']])).toMatchObject({valid:true,distinct:false,success:false});
+    expect(validateHardTimeAnswers(challenge,[[...'九点三刻'],[...'九点刻']]).success).toBe(false);
+  });
+  it('always generates bounded eligible rounds across the adaptive range',()=>{
+    for(const difficulty of [0,20,50,80,100])for(let i=0;i<100;i++){const challenge=generateHardTimeChallenge(difficulty,()=>i/100);expect(new Set(challenge.acceptedAnswers.map(a=>a.structure)).size).toBeGreaterThanOrEqual(2);}
   });
 });
 describe('difficulty and score',()=>{

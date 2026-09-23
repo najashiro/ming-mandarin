@@ -18,6 +18,10 @@ export const timeCurriculum = {
 /** Regla compartida por la Ayuda y las respuestas del juego de la hora. */
 export const canOmitMinuteFen = (minute: number) => minute > 10 && minute <= 59;
 
+export const TIME_CHALLENGE_SECONDS = 240;
+export const TIME_RULES_VERSION = 3;
+export type TimeRuleMode = 'normal' | 'hard';
+
 export const minuteHelpCards = [
   { range: '1–10 min', forms: [
     { label: '1–9', pattern: '点 + 零 + número + 分', example: '两点零五分', pinyin: 'liǎng diǎn líng wǔ fēn' },

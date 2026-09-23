@@ -33,7 +33,7 @@ test('hora: práctica construye respuesta y espera tras un error',async({page})=
   await page.getByRole('button',{name:'Añadir 差'}).click();
   await page.getByRole('button',{name:/Confirmar/}).click();
   await expect(page.locator('.time-answer.incorrect')).toBeVisible();
-  await expect(page.locator('.time-correction')).toContainText('Respuesta correcta');
+  await expect(page.locator('.time-correction')).toContainText('Respuestas correctas');
   const firstClock=await page.locator('.time-clock').getAttribute('aria-label');
   await page.getByRole('button',{name:/Continuar/}).click();
   await expect(page.locator('.time-correction')).toHaveCount(0);

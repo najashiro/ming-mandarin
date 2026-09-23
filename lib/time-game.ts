@@ -1,6 +1,7 @@
 import { canOmitMinuteFen, timeCurriculum, timeTokens } from '@/data/time-game';
 
-export type TimeAnswerVariant = { tokens: string[]; hanzi: string; pinyin: string; structure: 'numeric'|'half'|'quarter'|'three-quarter'|'cha'; masteryBonus: number; canonical?: boolean; sourceTag: string };
+export type TimeConstruction = 'numeric'|'half'|'quarter'|'three-quarter'|'cha-minutes'|'cha-quarter';
+export type TimeAnswerVariant = { tokens: string[]; hanzi: string; pinyin: string; structure: TimeConstruction; masteryBonus: number; canonical?: boolean; sourceTag: string };
 export type TimeChallenge = { hour: number; minute: number; acceptedAnswers: TimeAnswerVariant[] };
 type Rules = typeof timeCurriculum | { sourceTag:string; allowErDian:boolean; allowOmittedZero:boolean; allowLeadingZero:boolean; allowThreeQuarter:boolean; allowCha:boolean; mastery:{half:number;quarter:number;threeQuarter:number;cha:number} };
 const digits = ['零','一','二','三','四','五','六','七','八','九'];
@@ -39,11 +40,23 @@ export function buildAcceptedTimeAnswers(hour: number, minute: number, rules: Ru
     const remaining = 60-minute;
     const nextHour = hour === 12 ? 1 : hour+1;
     for (const h of hourForms(nextHour,rules)) {
-      add(`差${number(remaining)}分${h}点`,'cha',rules.mastery.cha);
-      if (remaining === 15) add(`差一刻${h}点`,'cha',rules.mastery.cha);
+      add(`差${number(remaining)}分${h}点`,'cha-minutes',rules.mastery.cha);
+      if (remaining === 15) add(`差一刻${h}点`,'cha-quarter',rules.mastery.cha);
     }
   }
   return answers;
+}
+export function distinctTimeConstructions(challenge:TimeChallenge) { return new Set(challenge.acceptedAnswers.map(answer=>answer.structure)); }
+export function validateHardTimeAnswers(challenge:TimeChallenge, answers:string[][]) {
+  const matches=answers.map(tokens=>validateTimeAnswer(challenge,tokens));
+  const valid=matches.every(Boolean);
+  return {matches,valid,distinct:valid && matches[0]!.structure!==matches[1]!.structure,success:valid && matches[0]!.structure!==matches[1]!.structure};
+}
+export function generateHardTimeChallenge(difficulty:number, random:()=>number=Math.random):TimeChallenge {
+  const minutePool=difficulty<35?[15,30,35,40,45,50,55]:difficulty<70?[15,30,35,37,40,43,45,47,50,52,55,58]:Array.from({length:30},(_,i)=>i+30).filter(m=>m!==30).concat([15,30]);
+  const eligible=minutePool.filter(minute=>distinctTimeConstructions({hour:1,minute,acceptedAnswers:buildAcceptedTimeAnswers(1,minute)}).size>=2);
+  const hour=Math.floor(random()*12)+1,minute=eligible[Math.floor(random()*eligible.length)];
+  return {hour,minute,acceptedAnswers:buildAcceptedTimeAnswers(hour,minute)};
 }
 export function generateTimeChallenge(difficulty:number, random:()=>number=Math.random):TimeChallenge {
   const hour = Math.floor(random()*12)+1;
