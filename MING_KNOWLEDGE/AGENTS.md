@@ -1,10 +1,19 @@
-# Míng · MANDARÍN — reglas de consulta curricular v1.0
+# MING_KNOWLEDGE · instrucciones para agentes
 
-1. Leer `index.json`.
-2. Identificar la lección y abrir únicamente sus shards en `lessons/` y `data/`.
-3. No releer PDF originales por defecto.
-4. Abrir una fuente original solo si falta un dato, existe conflicto, se necesita una imagen o el usuario pide verificación literal.
-5. Distinguir `core_textbook`, `supplementary_textbook`, `classroom_extension` y `preview_next_lesson`; no mezclarlos silenciosamente.
-6. Si hay discrepancia, el PDF original prevalece y la corrección debe conservar trazabilidad.
-7. Para ejercicios, usar `data/exercises.json` + `data/exercise-sets.json`; para patrones de evaluación usar `data/exam-patterns.json`.
-8. Para radicales/Hanzi, usar `data/radicals.json` y `data/hanzi/`; abrir hojas Hanzi solo para comprobar trazos o forma visual.
+Para consultas de fuentes L1–L3, usar primero `v2/README.md`, `v2/index.json` y el
+lector `v2/query.py`. La base incorpora las nuevas fuentes PPT/Hanzi 3.2.
+
+No releer PDF ni volcar archivos comprimidos/base64 por defecto. Consulta solo
+palabra, frase, lección o fuente/página pertinente. El lector y compilador funcionan
+con Python estándar, offline y sin API pagadas.
+
+Preservar variantes y referencias exactas; separar fuente de anotación editorial.
+`null` no autoriza a inventar pinyin, traducción, radical o respuesta. No convertir
+caracteres encontrados en objetivos de escritura ni errores impresos en ejemplos.
+
+Esta base no es la interfaz ni el contenido ya desplegado de Míng. No cambiar
+runtime, audio, Supabase o progreso al actualizar fuentes. La cobertura de código
+es una instantánea, no una comprobación de producción.
+
+Los archivos anteriores de v1 se conservan como legado; no usar sus conteos como
+cifras de v2. Seguir además `v2/AGENTS.md` y las instrucciones de la raíz.

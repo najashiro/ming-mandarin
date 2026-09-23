@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "errors": [],
+  "checks": [
+    "unique table IDs",
+    "source/page bounds",
+    "lexical span equality",
+    "lexical, Hanzi and grammar foreign keys",
+    "36 new worksheet rows",
+    "151 runtime vocabulary entries",
+    "192 runtime canonical Hanzi",
+    "工作 lexical regression",
+    "口 vs 个 regression",
+    "template exclusion"
+  ],
+  "limits": "Structural validation is not an external linguistic review or a test of the web app."
+}
