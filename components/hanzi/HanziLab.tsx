@@ -24,6 +24,7 @@ type Tab = typeof tabs[number];
 type StateFilter = 'all' | 'to-learn' | 'review' | 'mastered';
 type StageFilter = 'all' | HanziStageId;
 type Stage = { id: HanziStageId; title: string; shortTitle: string; chinese: string; description: string; characters: string[] };
+export type HanziLabCharacter = Pick<CharacterEntry,'id'|'hanzi'|'pinyin'|'meaning'|'strokeCount'|'radical'|'components'|'writingRequired'|'componentsAudited'|'words'> & {introducedIn:HanziStageId|null;appearsIn:HanziStageId[]};
 
 const stateOptions: Array<[StateFilter, string]> = [
   ['all', 'Todos'], ['to-learn', 'Por aprender'], ['review', 'Repasar'], ['mastered', 'Dominados'],
@@ -34,7 +35,7 @@ const stateLabels: Record<HanziLearningState, string> = {
 };
 
 type Props = {
-  characters: CharacterEntry[];
+  characters: HanziLabCharacter[];
   canonicalHanzi?: string[];
   stages: Stage[];
   manifest: Record<string, HanziManifestEntry>;
@@ -44,9 +45,10 @@ type Props = {
   focusGlyph?: boolean;
   scopeLabel?: string;
   route?: string;
+  tracking?: 'course'|'supplementary';
 };
 
-export function HanziLab({ characters, canonicalHanzi = characters.map((item) => item.hanzi), stages, manifest, initialProgress = {}, initialCharacter = '好', initialTab = 'Aprender', focusGlyph = false, scopeLabel = 'Lección 1', route = '/lesson/1/hanzi' }: Props) {
+export function HanziLab({ characters, canonicalHanzi = characters.map((item) => item.hanzi), stages, manifest, initialProgress = {}, initialCharacter = '好', initialTab = 'Aprender', focusGlyph = false, scopeLabel = 'Lección 1', route = '/lesson/1/hanzi', tracking='course' }: Props) {
   const firstCharacter = characters.find((item) => item.hanzi === initialCharacter) ?? characters[0];
   const [selectedId, setSelectedId] = useState(firstCharacter.id);
   const [tab, setTab] = useState<Tab>(initialTab);
@@ -86,7 +88,7 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
   const activeUnit = stageFilter === 'all' ? character.introducedIn : stageFilter;
   const selectedStage = stages.find((stage) => stage.id === activeUnit);
   const selectedStageName = selectedStage?.shortTitle.trim();
-  const stageLabel = `${activeUnit}${selectedStageName ? ` · ${selectedStageName}` : ''}`;
+  const stageLabel = tracking==='supplementary'?'Contenido suplementario':`${activeUnit}${selectedStageName ? ` · ${selectedStageName}` : ''}`;
   const data = loaded?.character === character.hanzi ? loaded.data ?? null : null;
   const loadError = loaded?.character === character.hanzi ? loaded.error ?? '' : '';
   const stageSummary = useMemo(() => stages.map((stage) => {
@@ -114,7 +116,7 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
     const priority: HanziLearningState[] = ['review', 'learning', 'new', 'mastered'];
     const next = priority.flatMap((state) => characters.filter((item) => classifyHanziLearningState(item.id, progress[item.id], localProgress) === state))[0];
     if (next) {
-      setStageFilter(next.introducedIn);
+      if(next.introducedIn)setStageFilter(next.introducedIn);
       setStateFilter('all');
       selectCharacter(next.id);
       setTab(classifyHanziLearningState(next.id, progress[next.id], localProgress) === 'new' ? 'Aprender' : 'Practicar');
@@ -122,6 +124,7 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
   }
 
   async function persistAttempt(payload: HanziAttemptPayload) {
+    if(tracking==='supplementary'){setSaveMessage('Práctica local de esta visita; no se guarda como progreso del curso.');return;}
     setSaveMessage('Guardando…');
     try {
       const response = await fetch('/api/hanzi/practice', {
@@ -164,6 +167,7 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
   }
 
   async function persistStudyExposure() {
+    if(tracking==='supplementary'){setSaveMessage('Consulta suplementaria; no modifica el progreso del curso.');return;}
     setSaveMessage('Guardando…');
     try {
       const response = await fetch('/api/hanzi/practice', {
@@ -216,7 +220,7 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
 
   return <div className="hanzi-workspace">
     <HanziFocusScroller active={focusGlyph && tab === 'Aprender' && character.id === firstCharacter.id} />
-    <section className="panel hanzi-route" aria-label="Ruta pedagógica Hanzi">
+    {tracking==='course'?<section className="panel hanzi-route" aria-label="Ruta pedagógica Hanzi">
       <div className="hanzi-route-heading"><div><p className="eyebrow">RUTA HANZI · {scopeLabel.toUpperCase()}</p><h2>{studied} / {characters.length} estudiados</h2></div><button className="button button-primary" type="button" onClick={continueLearning}>Continuar aprendiendo</button></div>
       <div className="hanzi-stage-progress">{stages.map((stage, index) => {
         const summary = stageSummary.find((item) => item.stage === stage.id)!;
@@ -224,9 +228,9 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
           <span>{stage.id}</span><div><b>{stage.shortTitle}</b><small>{summary.studied}/{summary.total} con práctica</small><i><em style={{ width: `${summary.total ? summary.studied / summary.total * 100 : 0}%` }} /></i></div>{index < stages.length - 1 && <strong aria-hidden="true">→</strong>}
         </button>;
       })}</div>
-    </section>
+    </section>:<section className="panel hanzi-supplemental-note"><p className="eyebrow">CONTENIDO SUPLEMENTARIO</p><h2>Consulta del juego de la hora</h2><p>No forma parte del progreso del curso. La práctica ofrece feedback durante esta visita, pero no se guarda.</p></section>}
 
-    <section className="panel hanzi-character-picker" aria-label="Selector de caracteres">
+    {tracking==='course'&&<section className="panel hanzi-character-picker" aria-label="Selector de caracteres">
       <div className="hanzi-picker-heading"><div><p className="eyebrow">¿QUÉ DEBERÍAS APRENDER AHORA?</p><h2>Elige unidad y estado</h2></div><span>{displayedCharacters.length} de {characters.length}</span></div>
       <div className="hanzi-filter-row">
         <div className="stage-filter-desktop" role="group" aria-label="Unidad curricular"><button type="button" className={stageFilter === 'all' ? 'selected' : ''} onClick={() => setStageFilter('all')}>Todos</button>{stages.map((stage) => <button type="button" className={stageFilter === stage.id ? 'selected' : ''} onClick={() => setStageFilter(stage.id)} key={stage.id}>{stage.id} {stage.shortTitle}</button>)}</div>
@@ -239,7 +243,7 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
         const curricularState = stageFilter === 'all' ? undefined : item.introducedIn === stageFilter ? 'new' : 'review';
         return <button type="button" className={`hanzi-picker-card state-${state}${curricularState ? ` curricular-${curricularState}` : ''}${selected ? ' selected' : ''}`} data-learning-state={state} data-curricular-state={curricularState} aria-label={`${item.hanzi}, ${item.pinyin}, ${item.meaning}, estado ${stateLabels[state].toLowerCase()}`} aria-pressed={selected} onClick={() => selectCharacter(item.id)} key={item.id}><Hanzi>{item.hanzi}</Hanzi><small><PinyinText>{item.pinyin}</PinyinText></small><em><Hanzi>{item.meaning}</Hanzi></em></button>;
       })}</div> : <div className="hanzi-filter-empty"><p>No hay caracteres que coincidan con ambos filtros.</p><button type="button" onClick={() => { setStageFilter('all'); setStateFilter('all'); }}>Mostrar todos</button></div>}
-    </section>
+    </section>}
 
     <section className="hanzi-character-hero panel">
       <div className="hanzi-glyph"><Hanzi>{character.hanzi}</Hanzi></div>
@@ -255,14 +259,14 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
       {tab === 'Aprender' && <LearnPanel key={character.id} character={character} characterIdsByHanzi={characterIdsByHanzi} canonicalHanzi={canonicalHanziSet} route={route} onSelectCharacter={selectCharacter} onMastered={() => { void persistStudyExposure(); }} />}
       {tab === 'Componentes' && <ComponentsPanel key={character.id} character={character} characterIdsByHanzi={characterIdsByHanzi} canonicalHanzi={canonicalHanziSet} route={route} onSelectCharacter={selectCharacter} />}
       {tab === 'Trazos' && <StrokesPanel key={character.id} character={character} data={data} onMastered={markStrokeOrderUnderstood} />}
-      {tab === 'Practicar' && <PracticePanel key={character.id} character={character} data={data} onAttempt={persistAttempt} />}
+      {tab === 'Practicar' && <PracticePanel key={character.id} character={character} data={data} onAttempt={persistAttempt} tracking={tracking} />}
     </>}
     {saveMessage && <p className="hanzi-save-message" role="status"><Hanzi>{saveMessage}</Hanzi> {saveMessage.includes('nombre') && <Link href={`/login?returnTo=${encodeURIComponent(route)}`}>Elegir nombre →</Link>}</p>}
   </div>;
 }
 
 type ContextListProps = {
-  character: CharacterEntry;
+  character: HanziLabCharacter;
   characterIdsByHanzi: Map<string,string>;
   canonicalHanzi: Set<string>;
   route: string;
@@ -296,7 +300,7 @@ function ComponentsPanel({ character, ...contextProps }: ContextListProps) {
   </section>;
 }
 
-function StrokesPanel({ character, data, onMastered }: { character: CharacterEntry; data: HanziCharacterData; onMastered: () => void }) {
+function StrokesPanel({ character, data, onMastered }: { character: HanziLabCharacter; data: HanziCharacterData; onMastered: () => void }) {
   const directions = useMemo(() => data.medians.map(strokeDirection), [data]);
   const strokeNames = useMemo(() => strokeNamesForCharacter(character.hanzi, data.strokes.length), [character.hanzi, data.strokes.length]);
   return <section className="panel hanzi-tab-panel strokes-panel"><div className="hanzi-panel-heading"><div><p className="eyebrow">03 · TRAZOS</p><h2>Orden, inicio y dirección</h2></div></div>
@@ -305,7 +309,7 @@ function StrokesPanel({ character, data, onMastered }: { character: CharacterEnt
   </section>;
 }
 
-function PracticePanel({ character, data, onAttempt }: { character: CharacterEntry; data: HanziCharacterData; onAttempt: (payload: HanziAttemptPayload) => Promise<void> }) {
+function PracticePanel({ character, data, onAttempt, tracking }: { character: HanziLabCharacter; data: HanziCharacterData; onAttempt: (payload: HanziAttemptPayload) => Promise<void>;tracking:'course'|'supplementary' }) {
   const stage = useRef<HanziWriterStageHandle>(null);
   const [mode, setMode] = useState<HanziPracticeMode>('guided');
   const [ready, setReady] = useState(false);
@@ -319,7 +323,7 @@ function PracticePanel({ character, data, onAttempt }: { character: CharacterEnt
   function chooseMode(value: HanziPracticeMode) { stage.current?.cancelQuiz(); setMode(value); setReady(false); setStarted(false); setMistakes(0); setCorrect(0); setHints(0); setUsedAnswer(false); setAnswerVisible(false); setFeedback('Elige un modo y comienza cuando estés listo.'); }
   function start() { setStarted(true); setMistakes(0); setCorrect(0); setHints(0); setUsedAnswer(false); setFeedback('Empieza en el punto correcto y sigue la dirección del trazo.'); stage.current?.startQuiz(mode); }
   function reveal(show: boolean) { if (!started) return; setAnswerVisible(show); if (show) { setHints((value) => value + 1); setUsedAnswer(true); stage.current?.show(); } else stage.current?.hide(); }
-  function complete(summary: QuizSummary) { setStarted(false); setFeedback(summary.mistakes === 0 ? '完成 · Orden y dirección correctos.' : `Completado con ${summary.mistakes} ${summary.mistakes === 1 ? 'ajuste' : 'ajustes'}. Volverá en el repaso.`); trackAnalyticsEvent('hanzi_practiced', { contentId: character.hanzi, correct: summary.mistakes === 0 }); void onAttempt({ characterId: character.id, mode, skillDimension: 'writing', completed: true, correctStrokes: summary.correctStrokes, mistakes: summary.mistakes, hintsUsed: hints, durationMs: summary.durationMs, usedAnswer }); }
+  function complete(summary: QuizSummary) { setStarted(false); setFeedback(summary.mistakes === 0 ? '完成 · Orden y dirección correctos.' : `Completado con ${summary.mistakes} ${summary.mistakes === 1 ? 'ajuste' : 'ajustes'}.${tracking==='course'?' Volverá en el repaso.':''}`); if(tracking==='course')trackAnalyticsEvent('hanzi_practiced', { contentId: character.hanzi, correct: summary.mistakes === 0 }); void onAttempt({ characterId: character.id, mode, skillDimension: 'writing', completed: true, correctStrokes: summary.correctStrokes, mistakes: summary.mistakes, hintsUsed: hints, durationMs: summary.durationMs, usedAnswer }); }
   return <section className="panel hanzi-tab-panel practice-panel">
     <div className="hanzi-panel-heading"><div><p className="eyebrow">04 · PRACTICAR</p><h2>Escribe <Hanzi>{character.hanzi}</Hanzi></h2></div></div>
     <div className="practice-stage-layout"><div>

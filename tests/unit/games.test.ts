@@ -5,7 +5,7 @@ import { arcadeGames } from '@/data/arcade-games';
 import { curriculumScopes, getCurriculum } from '@/seed/curriculum';
 import { cleanChinese, gamesContent, sentenceBlocks, storiesForScope } from '@/data/games-curriculum';
 import { gameEventId, parseGameEventId, retryQueue, sessionOrder } from '@/lib/games-session';
-import { hanziGlyphHref } from '@/lib/hanzi/navigation';
+import { hanziGlyphHref, resolveHanziGlyph } from '@/lib/hanzi/navigation';
 import baseline from '../fixtures/reto-mixto-baseline.json';
 
 describe('seis experiencias curriculares', () => {
@@ -64,11 +64,24 @@ describe('seis experiencias curriculares', () => {
     expect(parseGameEventId(value)).toEqual({ game:'hanzi-lab',scope:'l2',difficulty_level:3,modality:'Audio',content_id:'c-海' });
   });
   it('enlaza a un carácter exacto con foco y reutiliza el motor de escritura', () => {
-    expect(hanziGlyphHref('海')).toBe('/study/l1-l2-l3/hanzi?character=%E6%B5%B7&focus=glyph');
+    expect(hanziGlyphHref('海')).toBe('/study/l2/hanzi?character=%E6%B5%B7&focus=glyph');
+    expect(resolveHanziGlyph('点')).toMatchObject({kind:'curricular',character:'点'});
+    expect(resolveHanziGlyph('海')).toMatchObject({kind:'curricular',character:'海'});
+    for(const character of [...'分零半刻差']) expect(resolveHanziGlyph(character)).toMatchObject({kind:'supplementary',character});
+    expect(resolveHanziGlyph('龘')).toMatchObject({kind:'unavailable',character:'龘'});
+    expect(resolveHanziGlyph('../分')).toMatchObject({kind:'unavailable'});
+    expect(getCurriculum('l2').characters.filter(item=>item.hanzi==='点')).toHaveLength(1);
     const source = readFileSync('components/games/hanzi-lab/HanziLabGame.tsx','utf8');
     expect(source).toContain('HanziWriterStage');
     expect(source).toContain('componentsAudited');
     expect(source).toContain('radicalAudited');
     expect(source).not.toContain('new Audio');
+  });
+  it('retira el dictado del reloj sin retirar su reproducción de audio',()=>{
+    const source=readFileSync('components/games/time/TimeGame.tsx','utf8');
+    expect(source).not.toMatch(/SpeechRecognition|webkitSpeechRecognition|Dictar|Micrófono/);
+    expect(source).toContain('playTimeAudio');
+    expect(source).toContain('stopTimeAudio');
+    expect(source).toContain('time-controls');
   });
 });

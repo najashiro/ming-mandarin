@@ -794,5 +794,25 @@
   "弹": {
     "available": true,
     "strokeCount": 11
+  },
+  "分": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "零": {
+    "available": true,
+    "strokeCount": 13
+  },
+  "半": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "刻": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "差": {
+    "available": true,
+    "strokeCount": 9
   }
 }

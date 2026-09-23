@@ -8,6 +8,8 @@ import type { HanziManifestEntry } from '@/lib/hanzi/types';
 import manifest from '@/public/hanzi-data/manifest.json';
 import { getCurriculum, isCurriculumScope } from '@/seed/curriculum';
 import { canonicalCharacters } from '@/seed/characters';
+import { supplementalHanziByGlyph } from '@/data/supplemental-hanzi';
+import { resolveHanziGlyph } from '@/lib/hanzi/navigation';
 
 export const dynamic = 'force-dynamic';
 
@@ -18,20 +20,24 @@ export default async function ScopeHanziPage({
   searchParams,
 }: {
   params: Promise<{ scope: string }>;
-  searchParams: Promise<{ character?: string; tab?: string; mode?: string; focus?: string }>;
+  searchParams: Promise<{ character?: string; tab?: string; mode?: string; focus?: string;content?:string }>;
 }) {
   const [{ scope: rawScope }, query, user] = await Promise.all([params, searchParams, getCurrentUser()]);
   if (!isCurriculumScope(rawScope)) notFound();
 
   const data = getCurriculum(rawScope);
-  const progress = user ? await getHanziProgressMap(user) : {};
+  const requestedResolution=query.character?resolveHanziGlyph(query.character):null;
+  const supplemental=query.content==='supplementary'&&requestedResolution?.kind==='supplementary'?supplementalHanziByGlyph.get(query.character!):undefined;
+  const explicitlyUnavailable=Boolean(query.character&&!supplemental&&!data.characters.some(item=>item.hanzi===query.character));
+  const progress = user&&!supplemental ? await getHanziProgressMap(user) : {};
   const requested = query.mode === 'practice' ? 'Practicar' : query.tab;
   const tab = tabs.includes(requested as (typeof tabs)[number])
     ? (requested as (typeof tabs)[number])
     : 'Aprender';
-  const initial = data.characters.some((item) => item.hanzi === query.character)
+  const initial = supplemental?.hanzi??(data.characters.some((item) => item.hanzi === query.character)
     ? query.character
-    : data.characters[0]?.hanzi;
+    : data.characters[0]?.hanzi);
+  const characters=supplemental?[{...supplemental,radical:'',components:[],writingRequired:false,componentsAudited:false,words:[],introducedIn:null,appearsIn:[]}]:data.characters;
 
   // Preserve direct character links while allowing explicit tabs to control the view.
   const focusGlyph = query.focus === 'glyph'
@@ -41,13 +47,13 @@ export default async function ScopeHanziPage({
     <SiteShell>
       <main>
         <LessonHeader
-          eyebrow={`${data.definition.shortLabel} · 汉字`}
+          eyebrow={supplemental?'Consulta directa · 汉字':`${data.definition.shortLabel} · 汉字`}
           title="Hanzi: forma, sonido y trazos"
           description="Reconocimiento, pronunciación estática, orden de trazos y escritura táctil."
         />
-        <CurriculumNav scope={rawScope} section="hanzi" />
-        <HanziLab
-          characters={data.characters}
+        {!supplemental&&<CurriculumNav scope={rawScope} section="hanzi" />}
+        {explicitlyUnavailable?<section className="panel hanzi-unavailable" role="status"><h2>Carácter aún no disponible</h2><p>El carácter solicitado es <strong className="font-hanzi">{query.character}</strong>.</p><p>No se seleccionó otro carácter como sustitución.</p></section>:<HanziLab
+          characters={characters}
           canonicalHanzi={canonicalCharacters.map((character) => character.hanzi)}
           stages={data.stages}
           manifest={manifest as Record<string, HanziManifestEntry>}
@@ -57,7 +63,8 @@ export default async function ScopeHanziPage({
           focusGlyph={focusGlyph && tab === 'Aprender'}
           scopeLabel={data.definition.label}
           route={`/study/${rawScope}/hanzi`}
-        />
+          tracking={supplemental?'supplementary':'course'}
+        />}
       </main>
     </SiteShell>
   );
