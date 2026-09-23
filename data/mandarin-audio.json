@@ -1538,11 +1538,11 @@
     },
     {
       "id": "l2-h-1d59ea7cbb",
-      "file": "l2-h-1d59ea7cbb.mp3",
+      "file": "l2-h-1d59ea7cbb-dian3-06fdc9859110.mp3",
       "input": "点",
       "expectedPinyin": "diǎn",
       "lessonId": 2,
-      "instructions": "Pronuncia el carácter 点 una sola vez, con la lectura auditada diǎn."
+      "instructions": "请只朗读输入的汉字点一次。读音是diǎn，第三声。使用清晰自然的标准普通话教学发音，单字读完整第三声。保留韵尾n，不卷舌，不儿化，不读成点儿，不添加任何其他音节、数字、拼音字母或解释。"
     },
     {
       "id": "l2-h-481e547b1a",
