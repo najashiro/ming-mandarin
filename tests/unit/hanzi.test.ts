@@ -12,6 +12,7 @@ import thanks from '@/public/hanzi-data/谢.json';
 import { canonicalCharacters, characters, hanziSourceGroups, hanziUnits, legacyCharacters, lesson1Characters } from '@/seed/characters';
 import { allCurriculumCharacters } from '@/seed/curriculum';
 import { strokeNamesForCharacter } from '@/lib/hanzi/stroke-names';
+import { supplementalHanzi } from '@/data/supplemental-hanzi';
 
 const attempt: HanziAttemptPayload = {
   characterId: 'c-好', mode: 'exam', skillDimension: 'writing', completed: true,
@@ -20,6 +21,14 @@ const attempt: HanziAttemptPayload = {
 const goodData = good as HanziCharacterData;
 
 describe('laboratorio Hanzi', () => {
+  it('mantiene los suplementos del reloj fuera de todas las colecciones curriculares', () => {
+    expect(supplementalHanzi.map(item=>item.hanzi)).toEqual([...'分零半刻差']);
+    expect(supplementalHanzi.every(item=>item.curricularAssociation===null&&item.tracking==='supplementary')).toBe(true);
+    for(const item of supplementalHanzi){
+      expect(canonicalCharacters.some(character=>character.id===item.id||character.hanzi===item.hanzi)).toBe(false);
+      expect(characters.some(character=>character.id===item.id)).toBe(false);
+    }
+  });
   it('mantiene la transformación canónica de Make Me a Hanzi', () => {
     const transform = getHanziTransform(128, 128, 0);
     expect(transform.scale).toBe(0.125);
