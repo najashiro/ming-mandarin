@@ -40,6 +40,45 @@ test('hora: práctica construye respuesta y espera tras un error',async({page})=
   expect(await page.locator('.time-clock').getAttribute('aria-label')).not.toBeNull();
   expect(firstClock).not.toBeNull();
 });
+test('hora: el interruptor HARD conserva una sola pista y mueve únicamente la perilla',async({page})=>{
+  await page.emulateMedia({reducedMotion:'reduce'});
+  await page.goto('/study/l1/games');
+  await openGame(page,'hora');
+  const practice=page.getByRole('button',{name:/Practicar/});
+  const toggle=page.getByRole('switch',{name:'Modo HARD'});
+  const track=toggle.locator(':scope > .time-switch-track');
+  const knob=track.locator(':scope > .time-switch-knob');
+  await expect(toggle).toHaveCount(1);await expect(track).toHaveCount(1);await expect(knob).toHaveCount(1);
+  await expect(toggle).toHaveAttribute('aria-checked','false');await expect(practice).toHaveAttribute('aria-pressed','true');
+  const normal=await page.evaluate(([buttonSelector,trackSelector,knobSelector])=>{
+    const button=document.querySelector(buttonSelector) as HTMLElement,track=document.querySelector(trackSelector) as HTMLElement,knob=document.querySelector(knobSelector) as HTMLElement;
+    return {button:getComputedStyle(button).backgroundColor,track:getComputedStyle(track).backgroundColor,trackTransform:getComputedStyle(track).transform,trackBox:track.getBoundingClientRect().toJSON(),knobBox:knob.getBoundingClientRect().toJSON()};
+  },['.time-hard-switch','.time-switch-track','.time-switch-knob']);
+  expect(normal.button).toBe('rgba(0, 0, 0, 0)');expect(normal.track).toBe('rgb(57, 128, 94)');expect(normal.trackTransform).toBe('none');
+  expect([normal.trackBox.width,normal.trackBox.height,normal.knobBox.width,normal.knobBox.height]).toEqual([52,28,20,20]);
+  for(let index=0;index<10;index++)await toggle.click();
+  await toggle.focus();await page.keyboard.press('Space');
+  await expect(toggle).toHaveAttribute('aria-checked','true');await expect(practice).toHaveAttribute('aria-pressed','true');
+  await expect(page.locator('.time-hard-label')).toBeVisible();
+  const hard=await page.evaluate(()=>{const track=document.querySelector('.time-switch-track') as HTMLElement,knob=document.querySelector('.time-switch-knob') as HTMLElement;return {color:getComputedStyle(track).backgroundColor,trackTransform:getComputedStyle(track).transform,track:track.getBoundingClientRect().toJSON(),knob:knob.getBoundingClientRect().toJSON()};});
+  expect(hard.color).toBe('rgb(184, 75, 66)');expect(hard.trackTransform).toBe('none');
+  expect(hard.knob.x-hard.track.x).toBeCloseTo(28,0);expect(hard.knob.x+hard.knob.width).toBeLessThanOrEqual(hard.track.x+hard.track.width-3);
+});
+test('hora: las formas equivalentes aparecen en dos grupos de filas sin overflow',async({page})=>{
+  await page.setViewportSize({width:320,height:844});await page.goto('/study/l1/games');await openGame(page,'hora');
+  await page.getByRole('button',{name:/Comenzar/}).click();await page.getByRole('button',{name:'Abrir ayuda del juego de la hora'}).click();
+  const groups=page.locator('.time-equivalent-group');await expect(groups).toHaveCount(2);
+  await expect(groups.nth(0)).toContainText('09:30 · Las nueve y media');await expect(groups.nth(0).locator('li')).toHaveCount(2);
+  await expect(groups.nth(1)).toContainText('09:45 · Las nueve y cuarenta y cinco');await expect(groups.nth(1).locator('li')).toHaveCount(3);
+  await expect(page.locator('.time-equivalents')).not.toContainText('=');
+  await expect(groups.nth(0)).toContainText('九点三十分');await expect(groups.nth(0)).toContainText('九点半');
+  await expect(groups.nth(1)).toContainText('九点四十五分');await expect(groups.nth(1)).toContainText('九点三刻');await expect(groups.nth(1)).toContainText('差一刻十点');
+  await expect(groups.locator('.time-hanzi-link')).toHaveCount(11);
+  const rows=await groups.locator('li').evaluateAll(items=>items.map(item=>item.getBoundingClientRect().toJSON()));
+  for(let index=1;index<rows.length;index++)if(rows[index].x===rows[index-1].x)expect(rows[index].y).toBeGreaterThan(rows[index-1].y);
+  expect(await page.locator('.time-help').evaluate(element=>element.scrollWidth<=element.clientWidth)).toBe(true);
+  for(const text of ['九点三十分','九点半','九点四十五分','九点三刻','差一刻十点'])await expect(page.locator('.time-equivalents').getByRole('button',{name:`Escuchar ${text}`,exact:true})).toHaveCount(1);
+});
 test('Hanzi Lab valida trazos reales y conserva progreso local anterior', async ({ page }) => {
   await page.route('**/api/hanzi/practice', route => route.fulfill({status:401,contentType:'application/json',body:'{}'}));
   await page.goto('/study/l1/games?unit=1.1');
