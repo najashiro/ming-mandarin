@@ -1,28 +1,34 @@
 # MING_KNOWLEDGE
 
-## Base activa de fuentes: v2.0.0
+## Base activa de fuentes: v2.1.0
 
-Para el corpus L1–L3, incluidas la **PPT 3.2** y la **hoja Hanzi 3.2**, empieza en
-[`v2/README.md`](v2/README.md) y [`v2/index.json`](v2/index.json).
+Corpus L1–L3, incluidas PPT/Hanzi 3.2 y una dimensión curricular de radicales.
+Empieza en [`v2/index.json`](v2/index.json), [`v2/RADICALS.md`](v2/RADICALS.md)
+y [`v2/README.md`](v2/README.md), que conserva la descripción del corpus base v2.0.
 
 ```bash
 python3 MING_KNOWLEDGE/v2/query.py --word 喜欢 --limit 8
-python3 MING_KNOWLEDGE/v2/query.py --source SRC-PPT-03-2 --page 6
+python3 MING_KNOWLEDGE/v2/query.py --radical 讠 --limit 3
+python3 MING_KNOWLEDGE/v2/query.py --hanzi 语
+python3 MING_KNOWLEDGE/v2/query.py --table radical_matrix --limit 12
 python3 MING_KNOWLEDGE/v2/query.py --validate
 ```
 
-La v2 contiene evidencia fuente y construye tablas enlazadas sin PDF, Internet,
-credenciales ni API pagadas. Mantiene vocabulario, enunciados, Hanzi, gramática,
-diálogos, ejercicios, variantes y cobertura del código separados.
+La consulta construye base y extensión sin PDF, Internet, credenciales ni API
+pagada. Las tablas enlazan vocabulario, frases, Hanzi, gramática, ejercicios,
+radicales, fuentes y cobertura del código.
 
-**Esto no amplía automáticamente el contenido de la web.** Es una base de consulta
-para decidir después qué debe integrarse en la aplicación.
+Radicales: 38 formas registradas; 8 definiciones explícitas de libro; 77 campos
+部首 de hojas; 40 caracteres preguntados, incluidos 10 del examen. Las respuestas
+propuestas se distinguen de las fuentes y no se convierten en claves oficiales.
 
-## Legado v1
+**Esto no amplía automáticamente la web ni sus juegos.** Es una base de consulta
+para decidir después qué integrar en la aplicación. No modifica Supabase.
 
-Las carpetas `data/`, `lessons/`, `curriculum/` y `sources/` preexistentes se conservan
-sin borrarlas para trazabilidad. Sus cifras antiguas (214 entradas, 123 Hanzi,
-46 frases, 19 fuentes) describen aquella versión, no el estado de v2 ni el estado
-funcional de la web. Los IDs de frase v1 no se reutilizan para frases diferentes.
+## Legado y trazabilidad
 
-El alcance y los límites de extracción/revisión se explican en `v2/README.md`.
+Las carpetas v1 `data/`, `lessons/`, `curriculum/` y `sources/` se conservan.
+Sus antiguos conteos (214 entradas, 123 Hanzi, 46 frases, 19 fuentes) no describen
+v2 ni la funcionalidad actual de la web. Los IDs antiguos no se reutilizan para
+frases diferentes. El pack v2.0 sigue intacto; `radical_corrections` documenta las
+correcciones verificadas y `radicals_legacy_v2` conserva la extracción anterior.

@@ -6,16 +6,20 @@ ROOT = Path(__file__).resolve().parent
 CACHE = ROOT / '.cache'
 DEFAULT_FIELDS = {
     'matrix': ['id','hanzi','pinyin','spanish','lessons','roles','phrase_count','primary_phrase','ming_vocabulary','ming_hanzi','ming_game_bank'],
-    'vocabulary': ['id','hanzi','pinyin','spanish','lessons','roles','phrase_count','primary_phrase_id'],
+    'vocabulary': ['id','hanzi','pinyin','spanish','lessons','roles','phrase_count','primary_phrase_id','radical_ids'],
     'phrases': ['id','hanzi','lessons','kinds','vocab_ids','grammar_ids','dialogue_ids'],
-    'hanzi': ['id','hanzi','source_writing_target','worksheet_refs','runtime_units'],
+    'hanzi': ['id','hanzi','source_writing_target','worksheet_refs','runtime_units','documented_radical_ids','proposed_radical_ids'],
+    'radical_matrix': ['id','radical','name','meaning','metadata_status','lessons','theory','practice','worksheet','exam','exam_characters','vocab_count','phrase_count'],
+    'radical_catalog': ['id','radical','name_source','meaning_source','metadata_status','lessons','roles','exam_characters'],
+    'radical_assessment_items': ['id','hanzi','source_id','page','radical_candidate','candidate_status','radical_meaning_source','source_answer_key_supplied','automatic_grading_approved'],
     'exercises': ['id','source_id','page','lesson','section','label_source','answer_status'],
     'page_inventory': ['id','source_id','pdf_page','printed_page','status'],
 }
 
 def ensure_cache(force: bool = False) -> None:
     manifest = ROOT / 'source/manifest.json'
-    fingerprint = hashlib.sha256(manifest.read_bytes() + (ROOT / 'compile.py').read_bytes() + (ROOT / 'pack.py').read_bytes()).hexdigest()
+    dependencies = [manifest, ROOT / 'compile.py', ROOT / 'pack.py', ROOT / 'radicals.py', ROOT / 'radicals-source.json']
+    fingerprint = hashlib.sha256(b''.join(path.read_bytes() for path in dependencies)).hexdigest()
     marker = CACHE / 'fingerprint.txt'
     if not force and marker.exists() and marker.read_text() == fingerprint:
         return
@@ -30,6 +34,8 @@ def ensure_cache(force: bool = False) -> None:
             os.environ.pop('MING_CORPUS_OUT', None)
         else:
             os.environ['MING_CORPUS_OUT'] = previous
+    from radicals import enrich_cache
+    enrich_cache(CACHE)
     validation = read_table('validation')
     if not validation.get('passed'):
         raise ValueError('Corpus validation failed; see generated validation.json')
@@ -50,6 +56,8 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--word', help='Exact Hanzi or vocabulary ID, e.g. 工作 or v-工作')
     ap.add_argument('--phrase', help='Exact phrase ID or Chinese text')
+    ap.add_argument('--radical', help='Exact radical glyph or ID, e.g. 讠 or RAD-U8BA0')
+    ap.add_argument('--hanzi', help='Exact character glyph or c- ID; shows documentary radical links')
     ap.add_argument('--source', help='Source ID; combine with --page')
     ap.add_argument('--page', type=int)
     ap.add_argument('--table', default='matrix')
@@ -76,6 +84,24 @@ def main() -> None:
         result = read_table('validation')
     elif args.summary:
         result = read_table('index')
+    elif args.radical:
+        from radicals import rid
+        key = args.radical if args.radical.startswith('RAD-') else rid(args.radical)
+        cat = next((r for r in read_table('radical_catalog') if r['id'] == key), None)
+        if cat is None:
+            result = {'found': False, 'radical': args.radical}
+        else:
+            result = {'found': True, 'radical': selected(cat, None if args.full else DEFAULT_FIELDS['radical_catalog']),
+                      'policy': read_table('index')['radical_policy'], 'tables': {}}
+            for name in ['radical_evidence','radical_hanzi_links','radical_word_links','radical_phrase_links','radical_assessment_items']:
+                rows = [r for r in read_table(name) if r.get('radical_id', r.get('radical_candidate_id')) == key]
+                result['tables'][name] = {'total': len(rows), 'rows': rows[args.offset:args.offset + args.limit],
+                    'next_offset': args.offset + args.limit if args.offset + args.limit < len(rows) else None}
+    elif args.hanzi:
+        key = args.hanzi if args.hanzi.startswith('c-') else 'c-' + args.hanzi
+        char = next((r for r in read_table('hanzi') if r['id'] == key), None)
+        result = {'found': char is not None, 'hanzi': selected(char, None if args.full else DEFAULT_FIELDS['hanzi']) if char else None,
+                  'radical_links': [r for r in read_table('radical_hanzi_links') if r['hanzi_id'] == key]}
     elif args.word:
         vid = args.word if args.word.startswith('v-') else 'v-' + args.word
         rows = read_table('vocabulary')
@@ -107,7 +133,7 @@ def main() -> None:
         if args.page is not None and not 1 <= args.page <= source['pages']:
             raise ValueError('Page outside source bounds')
         result = {'source': source, 'page': args.page, 'tables': {}}
-        for name in ['vocabulary_evidence','phrase_evidence','hanzi_evidence','grammar_evidence','exercises','native_transcripts']:
+        for name in ['vocabulary_evidence','phrase_evidence','hanzi_evidence','grammar_evidence','exercises','native_transcripts','radical_evidence','radical_assessment_items']:
             rows = [r for r in read_table(name) if r['source_id'] == args.source and (args.page is None or r['page'] == args.page)]
             result['tables'][name] = {'total':len(rows), 'rows':rows[args.offset:args.offset + args.limit]}
     else:

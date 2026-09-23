@@ -1,19 +1,19 @@
 # MING_KNOWLEDGE · instrucciones para agentes
 
-Para consultas de fuentes L1–L3, usar primero `v2/README.md`, `v2/index.json` y el
-lector `v2/query.py`. La base incorpora las nuevas fuentes PPT/Hanzi 3.2.
+Base activa v2.1: empieza con `v2/index.json`, `v2/RADICALS.md` y `v2/README.md`.
+Usa `v2/query.py` para palabra, frase, radical, Hanzi o fuente/página concreta.
+No releas PDF ni vuelques base64 por defecto. El lector es offline y sin API pagada.
 
-No releer PDF ni volcar archivos comprimidos/base64 por defecto. Consulta solo
-palabra, frase, lección o fuente/página pertinente. El lector y compilador funcionan
-con Python estándar, offline y sin API pagadas.
+Preserva variantes y referencias; separa fuente y anotación editorial. Un `null`
+no autoriza a inventar pinyin, traducción, radical o respuesta. No conviertas
+caracteres encontrados en objetivos de escritura ni contraejemplos en ejemplos.
 
-Preservar variantes y referencias exactas; separar fuente de anotación editorial.
-`null` no autoriza a inventar pinyin, traducción, radical o respuesta. No convertir
-caracteres encontrados en objetivos de escritura ni errores impresos en ejemplos.
+Para radicales, distingue definición explícita del libro, campo 部首 de hoja y
+pregunta de examen/cuaderno. Los candidatos de respuesta no son claves oficiales.
+Consulta correcciones y evidencias antes de usar valores del pack base o de v1.
 
-Esta base no es la interfaz ni el contenido ya desplegado de Míng. No cambiar
-runtime, audio, Supabase o progreso al actualizar fuentes. La cobertura de código
-es una instantánea, no una comprobación de producción.
+La base no es la interfaz ni el contenido desplegado. No cambies runtime, audio,
+Supabase o progreso por actualizar fuentes. No fusiones a main sin autorización.
+La cobertura de código es una instantánea, no una comprobación de producción.
 
-Los archivos anteriores de v1 se conservan como legado; no usar sus conteos como
-cifras de v2. Seguir además `v2/AGENTS.md` y las instrucciones de la raíz.
+Conserva v1 como legado. Sigue además `v2/AGENTS.md` y las reglas de la raíz.
