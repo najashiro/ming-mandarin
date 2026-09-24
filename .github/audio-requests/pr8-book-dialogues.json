@@ -1,6 +1,6 @@
 {
   "requestId": "pr8-book-dialogues-marin-2026-09-24-01",
-  "status": "requested",
+  "status": "completed",
   "scope": "corpus-v2.1-textbook-dialogue-turns",
   "model": "gpt-4o-mini-tts",
   "voice": "marin",
@@ -50,5 +50,7 @@
     "l3-s-d90a486643",
     "l3-s-f313dfaced",
     "l3-s-f7f2fd9a2b"
-  ]
+  ],
+  "completedByWorkflowRun": "36002385959",
+  "completedFromCommit": "5565f70231ee9ea973f6b07693bb9945a1ef27f3"
 }
