@@ -1,0 +1,7 @@
+/* Speaker styles recovered from the user-supplied Codex patch.
+   Scoped separately to preserve the current global CSS and audio-era fixes. */
+.corpus-dialogues .dialogue-turn[data-speaker-token] {
+  border: 1px solid color-mix(in srgb, var(--speaker-accent) 24%, transparent);
+  border-left: 3px solid var(--speaker-accent);
+  background: var(--speaker-bg);
+}

@@ -232,7 +232,7 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
   }
 
   return <div className="hanzi-workspace">
-    <HanziFocusScroller active={focusRequest > 0} requestKey={focusRequest} />
+    <HanziFocusScroller active={focusRequest > 0} requestKey={focusRequest} expectedCharacter={character.hanzi} />
     {tracking==='course'?<section className="panel hanzi-route" aria-label="Ruta pedagógica Hanzi">
       <div className="hanzi-route-heading"><div><p className="eyebrow">RUTA HANZI · {scopeLabel.toUpperCase()}</p><h2>{studied} / {characters.length} estudiados</h2></div><button className="button button-primary" type="button" onClick={continueLearning}>Continuar aprendiendo</button></div>
       <div className="hanzi-stage-progress">{stages.map((stage, index) => {
@@ -257,7 +257,7 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
       })}</div> : <div className="hanzi-filter-empty"><p>No hay caracteres en esta unidad.</p><button type="button" onClick={() => setStageFilter('all')}>Ampliar a todas las unidades</button></div>}
     </section>}
 
-    <section className="hanzi-character-hero panel" id="hanzi-detail-start">
+    <section className="hanzi-character-hero panel" id="hanzi-detail-start" data-character={character.hanzi}>
       <div className="hanzi-glyph"><Hanzi>{character.hanzi}</Hanzi></div>
       <div className="hanzi-character-copy"><p className="eyebrow">{stageLabel}</p><div className="hanzi-pronunciation-row"><h2><PinyinText>{character.pinyin}</PinyinText></h2><div className="hanzi-character-actions"><SpeakButton key={character.id} text={character.hanzi} speechText={character.hanzi} audioSrc={audioForMandarinText(character.hanzi)} compact ariaLabel={`Escuchar pronunciación de ${character.hanzi}`} title={`Escuchar ${character.hanzi}`} /><CommunityButton compact label={`Preguntar sobre ${character.hanzi}`} context={{ concept: character.hanzi, skill: tab === 'Trazos' ? 'stroke-order' : tab === 'Practicar' ? 'hanzi-writing' : 'hanzi-recognition', route: `${route}?character=${encodeURIComponent(character.hanzi)}&tab=${encodeURIComponent(tab)}` }} /></div></div>
         <p className="hanzi-character-meaning"><Hanzi>{character.meaning}</Hanzi></p>

@@ -53,6 +53,7 @@ export default async function ScopeHanziPage({
         />
         {!supplemental&&<CurriculumNav scope={rawScope} section="hanzi" />}
         {explicitlyUnavailable?<section className="panel hanzi-unavailable" role="status"><h2>Carácter aún no disponible</h2><p>El carácter solicitado es <strong className="font-hanzi">{query.character}</strong>.</p><p>No se seleccionó otro carácter como sustitución.</p></section>:<HanziLab
+          key={`${initial}:${query.focus??''}:${query.tab??''}:${query.mode??''}`}
           characters={characters}
           canonicalHanzi={canonicalCharacters.map((character) => character.hanzi)}
           stages={data.stages}

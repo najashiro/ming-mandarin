@@ -11,6 +11,6 @@ export function LinkedChineseText({ text, returnTo, disabled = false }: { text: 
     if (resolved.kind === 'unavailable') return <Hanzi key={`${index}-${character}`}>{character}</Hanzi>;
     const join = resolved.href.includes('?') ? '&' : '?';
     const href = returnTo ? `${resolved.href}${join}returnTo=${encodeURIComponent(returnTo)}` : resolved.href;
-    return <Link className="linked-hanzi" href={href} key={`${index}-${character}`} aria-label={`Abrir ficha de ${character}`}><Hanzi>{character}</Hanzi></Link>;
+    return <Link className="linked-hanzi" href={href} scroll={false} key={`${index}-${character}`} aria-label={`Abrir ficha de ${character}`}><Hanzi>{character}</Hanzi></Link>;
   })}</span>;
 }

@@ -27,6 +27,7 @@ export default async function HanziPage({ searchParams }: { searchParams: Promis
       description="Aprende con datos técnicos locales, observa el orden real y practica con mouse, touch o stylus. El sistema mide reconocimiento, orden y escritura por separado."
     />
     <HanziLab
+      key={`${initialCharacter}:${requestedTab??''}`}
       characters={allCurriculumCharacters.map(({id,hanzi,pinyin,meaning,strokeCount,writingRequired,words,introducedIn,appearsIn})=>({id,hanzi,pinyin,meaning,strokeCount,radical:'',components:[],componentsAudited:false,writingRequired,words,introducedIn,appearsIn}))}
       canonicalHanzi={canonicalCharacters.map((character) => character.hanzi)}
       stages={hanziUnits}
