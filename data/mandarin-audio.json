@@ -3055,6 +3055,390 @@
       "expectedPinyin": "gāngqín kè",
       "lessonId": 3,
       "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l1-s-cef4250ea6",
+      "file": "l1-s-cef4250ea6.mp3",
+      "input": "我叫马大为。请问，你叫什么名字？",
+      "expectedPinyin": "Wǒ xìng Sòng, jiào Sòng Huá.",
+      "lessonId": 1,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l1-s-3d0f83bd5d",
+      "file": "l1-s-3d0f83bd5d.mp3",
+      "input": "请问，林娜在吗？",
+      "expectedPinyin": "Qǐngwèn, Lín Nà zài ma?",
+      "lessonId": 1,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l1-s-341ef2bd7f",
+      "file": "l1-s-341ef2bd7f.mp3",
+      "input": "在。力波，请进，请坐。",
+      "expectedPinyin": "Zài. Lìbō, qǐng jìn, qǐng zuò.",
+      "lessonId": 1,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l1-s-2c98627679",
+      "file": "l1-s-2c98627679.mp3",
+      "input": "谢谢。你最近怎么样？",
+      "expectedPinyin": "Xièxie. Nǐ zuìjìn zěnmeyàng?",
+      "lessonId": 1,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l1-s-ba34dc0506",
+      "file": "l1-s-ba34dc0506.mp3",
+      "input": "我很忙。你忙吗？",
+      "expectedPinyin": "Wǒ hěn máng. Nǐ máng ma?",
+      "lessonId": 1,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l1-s-139bd71cb9",
+      "file": "l1-s-139bd71cb9.mp3",
+      "input": "我不太忙。大为好吗？",
+      "expectedPinyin": "Wǒ bú tài máng. Dàwéi hǎo ma?",
+      "lessonId": 1,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-s-941a922a06",
+      "file": "l2-s-941a922a06.mp3",
+      "input": "老师，早上好！",
+      "expectedPinyin": "Lǎoshī, zǎoshang hǎo!",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-s-451c978156",
+      "file": "l2-s-451c978156.mp3",
+      "input": "这是马大为，他是我朋友，刚到北京。",
+      "expectedPinyin": "Zhè shì Mǎ Dàwéi, tā shì wǒ péngyou, gāng dào Běijīng.",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-s-2f018f73ba",
+      "file": "l2-s-2f018f73ba.mp3",
+      "input": "您好！老师，您贵姓？",
+      "expectedPinyin": "Nín hǎo! Lǎoshī, nín guìxìng?",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-s-c7bef97e2c",
+      "file": "l2-s-c7bef97e2c.mp3",
+      "input": "我姓陈。你是哪国人？",
+      "expectedPinyin": "Wǒ xìng Chén. Nǐ shì nǎ guó rén?",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-s-8e4e3d785d",
+      "file": "l2-s-8e4e3d785d.mp3",
+      "input": "我是美国人。我也学习汉语。陈老师，认识您很高兴。",
+      "expectedPinyin": "Wǒ shì Měiguó rén. Wǒ yě xuéxí Hànyǔ. Chén lǎoshī, rènshi nín hěn gāoxìng.",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-s-3133b3520d",
+      "file": "l2-s-3133b3520d.mp3",
+      "input": "老师，再见！",
+      "expectedPinyin": "Lǎoshī, zàijiàn!",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-s-6ce602f0d3",
+      "file": "l2-s-6ce602f0d3.mp3",
+      "input": "您好！您贵姓？",
+      "expectedPinyin": "Nín hǎo! Nín guì xìng?",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-s-0a3b02921f",
+      "file": "l2-s-0a3b02921f.mp3",
+      "input": "小云，这是什么？",
+      "expectedPinyin": "Xiǎoyún, zhè shì shénme?",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-s-f24659651d",
+      "file": "l2-s-f24659651d.mp3",
+      "input": "这是点心。",
+      "expectedPinyin": "Zhè shì diǎnxin.",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-s-2422c0af4f",
+      "file": "l2-s-2422c0af4f.mp3",
+      "input": "点心好吃吗？",
+      "expectedPinyin": "Diǎnxin hǎochī ma?",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-s-dad1103f32",
+      "file": "l2-s-dad1103f32.mp3",
+      "input": "好吃。我爸爸是上海人，他喜欢吃点心和米饭。",
+      "expectedPinyin": "Hǎochī. Wǒ bàba shì Shànghǎi rén, tā xǐhuan chī diǎnxin hé mǐfàn.",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-s-8f71eac0ef",
+      "file": "l2-s-8f71eac0ef.mp3",
+      "input": "北京人喜欢吃什么？",
+      "expectedPinyin": "Běijīng rén xǐhuan chī shénme?",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-s-f054baeb14",
+      "file": "l2-s-f054baeb14.mp3",
+      "input": "我妈妈是北京人，她喜欢吃面条儿和饺子。",
+      "expectedPinyin": "Wǒ māma shì Běijīng rén, tā xǐhuan chī miàntiáor hé jiǎozi.",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-s-9e7667cac8",
+      "file": "l2-s-9e7667cac8.mp3",
+      "input": "这是饺子吗？",
+      "expectedPinyin": "Zhè shì jiǎozi ma?",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-s-975a369857",
+      "file": "l2-s-975a369857.mp3",
+      "input": "这不是饺子，是包子。包子大，饺子小。你看，那是饺子。",
+      "expectedPinyin": "Zhè bú shì jiǎozi, shì bāozi. Bāozi dà, jiǎozi xiǎo. Nǐ kàn, nà shì jiǎozi.",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-s-5169439611",
+      "file": "l2-s-5169439611.mp3",
+      "input": "包子好吃吗？",
+      "expectedPinyin": "Bāozi hǎochī ma?",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-s-eefa403975",
+      "file": "l2-s-eefa403975.mp3",
+      "input": "包子和饺子都很好吃。",
+      "expectedPinyin": "Bāozi hé jiǎozi dōu hěn hǎochī.",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-s-75a9d3f109",
+      "file": "l2-s-75a9d3f109.mp3",
+      "input": "好，我要饺子，也要包子。",
+      "expectedPinyin": "Hǎo, wǒ yào jiǎozi, yě yào bāozi.",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-s-7b938fc229",
+      "file": "l2-s-7b938fc229.mp3",
+      "input": "我妈妈是北京人，她喜欢吃面条和饺子。",
+      "expectedPinyin": "Wǒ māma shì Běijīng rén, tā xǐhuan chī miàntiáo hé jiǎozi.",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l2-s-53328994a6",
+      "file": "l2-s-53328994a6.mp3",
+      "input": "好，我要包子，也要饺子。",
+      "expectedPinyin": "Hǎo, wǒ yào bāozi, yě yào jiǎozi.",
+      "lessonId": 2,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-s-a4fcd6666b",
+      "file": "l3-s-a4fcd6666b.mp3",
+      "input": "你们家有几口人？",
+      "expectedPinyin": "Nǐmen jiā yǒu jǐ kǒu rén?",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-s-7fdc447d8c",
+      "file": "l3-s-7fdc447d8c.mp3",
+      "input": "我们家有四口人。你看，这是我们家的照片。",
+      "expectedPinyin": "Wǒmen jiā yǒu sì kǒu rén. Nǐ kàn, zhè shì wǒmen jiā de zhàopiàn.",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-s-1a3780ce44",
+      "file": "l3-s-1a3780ce44.mp3",
+      "input": "你爸爸妈妈做什么工作？",
+      "expectedPinyin": "Nǐ bàba māma zuò shénme gōngzuò?",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-s-902ece0a18",
+      "file": "l3-s-902ece0a18.mp3",
+      "input": "我爸爸是医生，妈妈是老师。",
+      "expectedPinyin": "Wǒ bàba shì yīshēng, māma shì lǎoshī.",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-s-b821feee80",
+      "file": "l3-s-b821feee80.mp3",
+      "input": "这是你弟弟吗？",
+      "expectedPinyin": "Zhè shì nǐ dìdi ma?",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-s-3346835636",
+      "file": "l3-s-3346835636.mp3",
+      "input": "这不是我弟弟。这是我哥哥。林娜，你们家有几口人？",
+      "expectedPinyin": "Zhè bú shì wǒ dìdi. Zhè shì wǒ gēge. Lín Nà, nǐmen jiā yǒu jǐ kǒu rén?",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-s-88636d79f5",
+      "file": "l3-s-88636d79f5.mp3",
+      "input": "我们家一共有六口人：妈妈、一个哥哥、两个姐姐和我，还有贝贝。",
+      "expectedPinyin": "Wǒmen jiā yígòng yǒu liù kǒu rén: māma, yí ge gēge, liǎng ge jiějie hé wǒ, hái yǒu Bèibei.",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-s-d90a486643",
+      "file": "l3-s-d90a486643.mp3",
+      "input": "贝贝是谁？是你妹妹吗？",
+      "expectedPinyin": "Bèibei shì shéi? Shì nǐ mèimei ma?",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-s-c4cf1f7b9f",
+      "file": "l3-s-c4cf1f7b9f.mp3",
+      "input": "我没有妹妹，贝贝是我的小狗。",
+      "expectedPinyin": "Wǒ méiyǒu mèimei, Bèibei shì wǒ de xiǎogǒu.",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-s-55aaa63200",
+      "file": "l3-s-55aaa63200.mp3",
+      "input": "小狗也是一口人吗？",
+      "expectedPinyin": "Xiǎogǒu yě shì yì kǒu rén ma?",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-s-7cc2226ddc",
+      "file": "l3-s-7cc2226ddc.mp3",
+      "input": "这不是我弟弟。这是我哥哥。",
+      "expectedPinyin": "Zhè bú shì wǒ dìdi, zhè shì wǒ gēge.",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-s-99e8bf6934",
+      "file": "l3-s-99e8bf6934.mp3",
+      "input": "林娜，你们家有几口人？",
+      "expectedPinyin": "Lín Nà, nǐmen jiā yǒu jǐ kǒu rén?",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-s-447c457845",
+      "file": "l3-s-447c457845.mp3",
+      "input": "你们好！请进！",
+      "expectedPinyin": "Nǐmen hǎo! Qǐng jìn!",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-s-f313dfaced",
+      "file": "l3-s-f313dfaced.mp3",
+      "input": "您好！你们家真漂亮！",
+      "expectedPinyin": "Nín hǎo! Nǐmen jiā zhēn piàoliang!",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-s-7b9a30c8bd",
+      "file": "l3-s-7b9a30c8bd.mp3",
+      "input": "谢谢。请坐。你们喝什么？我们家有茶和咖啡。",
+      "expectedPinyin": "Xièxie. Qǐng zuò. Nǐmen hē shénme? Wǒmen jiā yǒu chá hé kāfēi.",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-s-a3e1fab1bd",
+      "file": "l3-s-a3e1fab1bd.mp3",
+      "input": "我喝咖啡。",
+      "expectedPinyin": "Wǒ hē kāfēi.",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-s-5cd849192f",
+      "file": "l3-s-5cd849192f.mp3",
+      "input": "我要茶。",
+      "expectedPinyin": "Wǒ yào chá.",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-s-59693958d4",
+      "file": "l3-s-59693958d4.mp3",
+      "input": "这张照片真漂亮！这是你女儿吗？",
+      "expectedPinyin": "Zhè zhāng zhàopiàn zhēn piàoliang! Zhè shì nǐ nǚ’ér ma?",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-s-b06550907c",
+      "file": "l3-s-b06550907c.mp3",
+      "input": "是。这是我女儿。",
+      "expectedPinyin": "Shì. Zhè shì wǒ nǚ’ér.",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-s-f7f2fd9a2b",
+      "file": "l3-s-f7f2fd9a2b.mp3",
+      "input": "五岁。今天她有钢琴课，不在家。",
+      "expectedPinyin": "Wǔ suì. Jīntiān tā yǒu gāngqínkè, bú zài jiā.",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-s-63ee4587a2",
+      "file": "l3-s-63ee4587a2.mp3",
+      "input": "中国的孩子真忙！",
+      "expectedPinyin": "Zhōngguó de háizi zhēn máng!",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
+    },
+    {
+      "id": "l3-s-7540ed1c6a",
+      "file": "l3-s-7540ed1c6a.mp3",
+      "input": "是啊。晚上她还有英语课。",
+      "expectedPinyin": "Shì a. Wǎnshang tā hái yǒu Yīngyǔkè.",
+      "lessonId": 3,
+      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
     }
   ]
 }

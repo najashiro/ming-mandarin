@@ -1,4 +1,4 @@
-import { readFile, mkdir, writeFile } from 'node:fs/promises';
+import { readFile, mkdir, rename, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import process from 'node:process';
@@ -20,7 +20,7 @@ const force = process.argv.includes('--force');
 const dryRun = process.argv.includes('--dry-run');
 const scope = process.argv.find((argument) => argument.startsWith('--scope='))?.split('=', 2)[1];
 const only = process.argv.find((argument) => argument.startsWith('--only='))?.split('=', 2)[1];
-const voice = process.env.OPENAI_TTS_VOICE?.trim() || 'marin';
+const voice = 'marin';
 
 if (!apiKey && !dryRun) {
   console.error('Falta OPENAI_API_KEY. Configúrala en la terminal o en .env.audio.local; nunca la copies al repositorio ni al navegador.');
@@ -85,11 +85,12 @@ while (cursor < selectedClips.length) {
   }
 
   if (!response.ok) {
-    const detail = (await response.text()).slice(0, 500);
-    throw new Error(`OpenAI devolvió ${response.status} al generar ${clip.file}: ${detail}`);
+    throw new Error(`OpenAI devolvió ${response.status} al generar ${clip.file}. Se detuvo sin registrar el cuerpo de la respuesta.`);
   }
 
-  await writeFile(destination, Buffer.from(await response.arrayBuffer()));
+  const temporary = `${destination}.tmp-${process.pid}`;
+  await writeFile(temporary, Buffer.from(await response.arrayBuffer()));
+  await rename(temporary, destination);
   generated++;
   if (generated % 25 === 0) console.log(`Generados: ${generated}/${selectedClips.length}`);
 }

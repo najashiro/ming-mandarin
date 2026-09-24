@@ -10,13 +10,16 @@ const lesson1SentenceSource = await readFile(join(root, 'seed', 'sentences.ts'),
 const characterSource = await readFile(join(root, 'seed', 'characters.ts'), 'utf8');
 const retoMixtoSource = await readFile(join(root, 'data', 'reto-mixto.ts'), 'utf8');
 const hanziCurriculum = JSON.parse(await readFile(join(root, 'data', 'lesson1-hanzi.json'), 'utf8'));
+const corpusV21 = JSON.parse(await readFile(join(root, 'data', 'corpus-v21-public.json'), 'utf8'));
 const manifestPath = join(root, 'data', 'mandarin-audio.json');
 const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
 const pronunciation = JSON.parse(await readFile(join(root, 'data', 'pronunciation.json'), 'utf8'));
 const normalize = (value) => value.normalize('NFC').replace(/[^\u3400-\u9fff]/g, '');
 // Los clips publicados se conservan para no invalidar URLs ya desplegadas.
-const known = new Set(manifest.clips.map((clip) => normalize(clip.input)));
-for (const clip of pronunciation.clips) known.add(normalize(clip.input));
+const identity = (input, pinyin) => `${normalize(input)}\u0000${pinyin.normalize('NFC')}\u0000gpt-4o-mini-tts\u0000marin\u0000mandarin-beginner-v1`;
+const known = new Set(manifest.clips.map((clip) => identity(clip.input, clip.expectedPinyin || '')));
+const knownText = new Set(manifest.clips.map((clip) => normalize(clip.input)));
+for (const clip of pronunciation.clips) known.add(identity(clip.input, clip.expectedPinyin || ''));
 const candidates = [];
 
 function block(start, end) {
@@ -28,9 +31,13 @@ function block(start, end) {
 
 function add(input, pinyin, lessonId, kind) {
   const clean = normalize(input);
-  if (!clean || known.has(clean)) return;
-  known.add(clean);
-  const digest = createHash('sha1').update(clean).digest('hex').slice(0, 10);
+  const clipIdentity = identity(input, pinyin);
+  // Published legacy clips keep their stable URL. New clips use the stronger
+  // identity below; a different contextual reading must be added explicitly.
+  if (!clean || known.has(clipIdentity) || knownText.has(clean)) return;
+  known.add(clipIdentity);
+  knownText.add(clean);
+  const digest = createHash('sha256').update(clipIdentity).digest('hex').slice(0, 12);
   candidates.push({
     id: `l${lessonId}-${kind}-${digest}`,
     file: `l${lessonId}-${kind}-${digest}.mp3`,
@@ -97,6 +104,11 @@ for (const character of hanziCurriculum.legacyCharacters) {
   const pinyin = characterSource.match(new RegExp(`legacy\\('${character}','([^']+)'`))?.[1];
   if (!pinyin) throw new Error(`Falta pinyin del Hanzi histórico ${character}.`);
   add(character, pinyin, 1, 'h');
+}
+
+// Complete dialogue turns are prepared once; playback never concatenates tokens.
+for (const dialogue of corpusV21.dialogues) for (const version of dialogue.versions) for (const turn of version.turns) {
+  if (turn.pinyin) add(turn.hanzi, turn.pinyin, dialogue.lesson, 's');
 }
 
 manifest.clips.push(...candidates);

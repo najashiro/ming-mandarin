@@ -13,7 +13,7 @@ export async function SiteShell({ children }: { children: React.ReactNode }) {
       <header className="topbar">
         <Link className="brand" href="/" aria-label="Míng, inicio"><span className="brand-mark" aria-hidden="true"><Hanzi>明</Hanzi></span><span><strong>Míng</strong><small>Mandarín activo</small></span></Link>
         <nav className="desktop-nav" aria-label="Navegación principal">
-          <Link href="/study/l1-l2-l3">Curso</Link><Link href="/study/l1-l2-l3/daily">Práctica</Link><Link href="/study/l1-l2-l3/games">Juegos</Link><Link href="/progress">Progreso</Link>
+          <Link href="/study/l1-l2-l3">Curso</Link><Link href="/study/l1-l2-l3/radicals">Radicales</Link><Link href="/study/l1-l2-l3/daily">Práctica</Link><Link href="/study/l1-l2-l3/games">Juegos</Link><Link href="/progress">Progreso</Link>
         </nav>
         <Link className="profile-chip" href={user ? '/profile' : signInPath('/profile')}><span aria-hidden="true"><Hanzi>学</Hanzi></span><b>{user ? user.displayName : 'Guardar progreso'}</b></Link>
       </header>
