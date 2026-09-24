@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { readFile, readdir, unlink, writeFile } from 'node:fs/promises';
+import { access, readFile, readdir, unlink, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -107,12 +107,17 @@ for (const character of hanziCurriculum.legacyCharacters) {
 }
 
 // Complete dialogue turns are prepared once; playback never concatenates tokens.
-for (const dialogue of corpusV21.dialogues) for (const version of dialogue.versions) for (const turn of version.turns) {
+for (const dialogue of corpusV21.dialogues) for (const turn of dialogue.turns) {
   if (turn.pinyin) add(turn.hanzi, turn.pinyin, dialogue.lesson, 's');
 }
 
 manifest.clips.push(...candidates);
 await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`, 'utf8');
+const available = [];
+for (const clip of manifest.clips) {
+  try { await access(join(root, 'public', 'audio', 'mandarin', clip.file)); available.push(clip.file); } catch { /* pending clips stay out */ }
+}
+await writeFile(join(root, 'data', 'mandarin-audio-available.json'), `${JSON.stringify({ files: available.sort() }, null, 2)}\n`, 'utf8');
 if (process.argv.includes('--prune')) {
   const audioDirectory = join(root, 'public', 'audio', 'mandarin');
   const currentFiles = new Set(manifest.clips.map((clip) => clip.file));
@@ -120,4 +125,4 @@ if (process.argv.includes('--prune')) {
     if (/^l[123]-[vsh]-[a-f0-9]{10}\.mp3$/.test(file) && !currentFiles.has(file)) await unlink(join(audioDirectory, file));
   }
 }
-console.log(`Manifest actualizado: ${candidates.length} clips nuevos; ${manifest.clips.length} clips totales.`);
+console.log(`Manifest actualizado: ${candidates.length} clips nuevos; ${manifest.clips.length} clips totales; ${available.length} disponibles.`);

@@ -43,32 +43,48 @@ body {
   font-family: var(--font-hanzi), "Noto Serif SC", "Songti SC", "SimSun", serif !important;
 }
 a { color: inherit; text-decoration: none; }
-.linked-hanzi { color: var(--jade); border-bottom: 1px solid rgba(29,106,89,.3); }
+.linked-chinese-text { font-family: var(--font-hanzi), "Noto Serif SC", "Songti SC", "SimSun", serif; }
+.linked-hanzi { color: inherit; border-bottom: 1px solid rgba(29,106,89,.32); }
 button, a { -webkit-tap-highlight-color: transparent; }
 button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offset: 3px; }
 .shell { width: min(1180px, calc(100% - 40px)); margin-inline: auto; }
 .hanzi-combobox { position: relative; max-width: 620px; margin: 18px 0; }
 .hanzi-combobox > label { display:block; margin-bottom:6px; font-size:12px; font-weight:750; color:var(--muted); }
 .hanzi-combobox > div:first-of-type { display:flex; }
-.hanzi-combobox input { width:100%; min-height:50px; padding:0 46px 0 14px; border:2px solid var(--jade); border-radius:9px; background:#fff; font:inherit; }
+.hanzi-combobox input { width:100%; min-height:50px; padding:0 46px 0 14px; border:2px solid var(--jade); border-radius:9px; background:#fff; font:16px var(--pinyin-font); }
 .hanzi-combobox > div:first-of-type button { width:44px; margin-left:-44px; border:0; background:transparent; font-size:24px; cursor:pointer; }
 #hanzi-pinyin-options { position:absolute; z-index:12; width:100%; max-height:390px; overflow:auto; border:1px solid var(--line); border-radius:8px; background:#fff; box-shadow:var(--shadow); }
 #hanzi-pinyin-options button { width:100%; min-height:52px; display:grid; grid-template-columns:1fr 50px 2fr; align-items:center; gap:10px; padding:8px 12px; border:0; border-bottom:1px solid var(--line); background:#fff; text-align:left; cursor:pointer; }
+#hanzi-pinyin-options button .pinyin-text { font-size:16px !important; color:var(--jade) !important; }
+#hanzi-pinyin-options button > span:last-child { font-size:14px; color:var(--muted); }
 #hanzi-pinyin-options button:hover, #hanzi-pinyin-options button[aria-selected=true] { background:var(--jade-soft); }
 #hanzi-pinyin-options p { padding:10px 14px; }
-.corpus-dialogues { display:grid; gap:24px; margin-bottom:50px; }
-.corpus-dialogue > section > h3 { margin-top:26px; color:var(--jade); }
+.corpus-dialogues { display:grid; gap:42px; margin-bottom:18px; }
+.corpus-dialogue > header { margin-bottom:14px; }
+.corpus-dialogue > header h2 { margin:0; font:700 27px Georgia,serif; }
 .corpus-dialogue ol { padding:0; list-style:none; }
-.corpus-dialogue li { display:grid; grid-template-columns:100px 1fr auto; gap:16px; padding:15px 0; border-bottom:1px solid var(--line); }
-.corpus-dialogue li strong { font-size:20px; line-height:1.7; }
-.corpus-dialogue li p { margin:4px 0; }
-.radical-views { display:flex; gap:8px; margin-bottom:18px; }
-.radical-views a { min-height:44px; display:grid; place-items:center; padding:0 18px; border:1px solid var(--line); border-radius:8px; background:#fff; color:var(--jade); font-weight:750; }
+.dialogue-turn { margin:9px 0; padding:14px 16px; border:1px solid rgba(24,51,43,.09); border-radius:12px; }
+.dialogue-turn-heading { min-height:42px; display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.dialogue-turn-heading b { min-width:0; font-size:15px; }
+.dialogue-speaker-hanzi { font-size:17px; }
+.dialogue-turn-heading .audio-button.compact { width:42px; height:42px; flex:0 0 42px; }
+.dialogue-turn-text { display:block; margin-top:5px; font-size:22px; line-height:1.7; font-weight:600; }
+.dialogue-turn p { margin:4px 0; color:var(--jade); font-size:15px; }
+.dialogue-turn > span:last-child { color:var(--muted); font-size:14px; }
+.dialogue-audio-pending { color:var(--muted); font-size:11px; white-space:nowrap; }
+.speaker-tone-0{background:#edf5f1}.speaker-tone-1{background:#f7f0e4}.speaker-tone-2{background:#f2ece8}.speaker-tone-3{background:#eaf1f4}.speaker-tone-4{background:#f3edf3}.speaker-tone-5{background:#f1f3e8}
+.ai-audio-note { margin-bottom:38px; color:var(--muted); font-size:11px; }
+.radical-lessons { display:grid; gap:36px; }
+.radical-lessons > section > h2 { margin:0 0 14px; }
 .radical-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; }
 .radical-glyph { display:block; font:600 72px/1.2 var(--font-hanzi),serif; }
-.radical-examples { display:flex; flex-wrap:wrap; gap:12px; font-size:30px; }
-.radical-study { margin-top:22px; }
-@media(max-width:600px){.corpus-dialogue li{grid-template-columns:1fr auto}.corpus-dialogue li>b{grid-column:1/-1}.hanzi-combobox{max-width:none}}
+.radical-name { margin:0; color:var(--jade); font-size:16px; }
+.radical-meaning { margin:5px 0 16px; color:var(--muted); font-size:14px; }
+.radical-examples { display:flex; flex-wrap:wrap; gap:10px; }
+.radical-example { min-width:64px; display:grid; justify-items:center; gap:2px; padding:8px; border-radius:8px; background:rgba(255,255,255,.58); }
+.radical-example .linked-chinese-text { font-size:34px; line-height:1.2; }
+.radical-example > .pinyin-text { color:var(--muted)!important; font-size:14px!important; }
+@media(max-width:600px){.hanzi-combobox{max-width:none}.dialogue-turn{padding:12px}.dialogue-turn-text{font-size:20px}}
 
 .topbar { height: 76px; padding: 0 max(20px, calc((100vw - 1180px) / 2)); display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; border-bottom: 1px solid var(--line); background: rgba(246, 243, 235, .88); backdrop-filter: blur(14px); position: sticky; top: 0; z-index: 20; }
 .brand { display: inline-flex; width: fit-content; align-items: center; gap: 11px; }
@@ -388,7 +404,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .hanzi-unit-nav a.selected small { color: #d7eee7; }
 .hanzi-picker-grid { margin-top: 15px; display: grid; grid-template-columns: repeat(12,minmax(48px,1fr)); gap: 7px; }
 .hanzi-picker-grid button { min-height: 82px; padding: 7px 4px; grid-template-rows: minmax(28px,auto) auto minmax(22px,auto); align-content: center; line-height: 1.12; }
-.hanzi-picker-grid button small { color: var(--jade); font-size: 10px; }
+.hanzi-picker-grid button small { color: var(--jade); font-size: 15px; }
 .hanzi-picker-grid button.state-new { background: var(--hanzi-new-bg); }
 .hanzi-picker-grid button.state-learning { background: var(--hanzi-learning-bg); }
 .hanzi-picker-grid button.state-review { background: var(--hanzi-review-bg); }
@@ -396,13 +412,13 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .hanzi-picker-grid button.curricular-new:not(.selected) { border-color: rgba(162,58,44,.34); box-shadow: inset 0 0 0 1px rgba(162,58,44,.12); }
 .hanzi-picker-grid button.curricular-review:not(.selected) { filter: saturate(.72); }
 .hanzi-picker-grid button:not(.selected):hover { border-color: rgba(29,106,89,.34); }
-.hanzi-picker-grid button em { width: 100%; min-height: 2.35em; display: -webkit-box; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; color: var(--ink); font: normal 550 9px/1.18 system-ui; text-align: center; overflow-wrap: anywhere; }
+.hanzi-picker-grid button em { width: 100%; min-height: 2.35em; display: -webkit-box; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; color: var(--ink); font: normal 500 13px/1.18 system-ui; text-align: center; overflow-wrap: anywhere; }
 .hanzi-picker-grid button.selected { border-color: var(--jade); color: white; background: var(--jade); }
 .hanzi-picker-grid button.selected small,
 .hanzi-picker-grid button.selected em { color: #d7eee7; }
 .hanzi-filter-empty { margin-top: 15px; padding: 18px; display: block !important; border: 1px dashed var(--line); border-radius: 8px; text-align: center; }
 .hanzi-filter-empty p { color: var(--muted); }
-.hanzi-character-hero { margin-top: 13px; padding: 24px; display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 25px; background: linear-gradient(135deg,rgba(255,255,255,.84),rgba(224,236,229,.7)); }
+.hanzi-character-hero { margin-top: 13px; padding: 24px; display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 25px; scroll-margin-top:92px; background: linear-gradient(135deg,rgba(255,255,255,.84),rgba(224,236,229,.7)); }
 .hanzi-glyph { width: 112px; height: 112px; display: grid; place-items: center; border: 1px solid rgba(162,58,44,.22); border-radius: 6px 22px 6px 22px; color: var(--ink); background: #fffdf7; font: 600 77px var(--font-hanzi), "Songti SC", "SimSun", serif; }
 .hanzi-character-copy { min-width: 0; }
 .hanzi-character-copy h2 { margin: 0; color: var(--jade); font: italic 700 27px Georgia,serif; }
@@ -411,7 +427,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .audio-button.compact { width: 32px; height: 32px; flex: 0 0 32px; justify-content: center; padding: 0; border-radius: 50%; font-size: 14px; line-height: 1; }
 .hanzi-character-actions .audio-button.compact,
 .hanzi-character-actions .community-launcher.compact { width: 44px; height: 44px; min-height: 44px; flex: 0 0 44px; }
-.hanzi-character-meaning { margin: 2px 0 0; color: var(--ink); font-size: 14px; font-weight: 550; }
+.hanzi-character-meaning { margin: 2px 0 0; color: var(--muted); font-size: 14px; font-weight: 500; }
 .hanzi-character-meta { margin: 7px 0 0; color: var(--muted); font-size: 10px; font-weight: 700; }
 .hanzi-character-copy .source-note { margin: 10px 0 0; }
 .hanzi-tabs { margin-top: 18px; display: grid; grid-template-columns: repeat(4,1fr); border-bottom: 1px solid var(--line); }

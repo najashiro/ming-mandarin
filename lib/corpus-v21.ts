@@ -15,7 +15,8 @@ export function publicCorpusForScope(scope: CurriculumScope) {
     vocabulary: corpus.vocabulary.filter((row) => row.lessons.some((lesson) => lessons.has(lesson))),
     phrases: corpus.phrases.filter((row) => row.lessons.some((lesson) => lessons.has(lesson))),
     dialogues: corpus.dialogues.filter((row) => lessons.has(row.lesson)),
-    radicals: corpus.radicals.filter((row) => row.lessons.some((lesson) => lessons.has(lesson))),
+    radicals: corpus.radicals.filter((row) => row.lessons.some((lesson) => lessons.has(lesson))).map((row) => ({
+      ...row, examples: row.examples.filter((example) => example.pinyin && example.lessons.some((lesson) => lessons.has(lesson))),
+    })),
   };
 }
-

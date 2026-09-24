@@ -16098,982 +16098,530 @@
   ],
   "dialogues": [
     {
+      "id": "DLG-L1-BOOK-T1",
       "lesson": 1,
       "text": "Texto 1",
-      "versions": [
+      "turns": [
         {
-          "id": "DLG-L1-BOOK-T1",
-          "turns": [
-            {
-              "turn": 1,
-              "speaker": "马大为",
-              "hanzi": "你好！",
-              "phraseId": "PH-670d9743542cae3e",
-              "pinyin": "Nǐ hǎo!",
-              "spanish": null
-            },
-            {
-              "turn": 2,
-              "speaker": "宋华",
-              "hanzi": "你好！",
-              "phraseId": "PH-a05b1895701f4272",
-              "pinyin": "Wǒ jiào Mǎ Dàwéi. Qǐngwèn, nǐ jiào shénme míngzi?",
-              "spanish": null
-            },
-            {
-              "turn": 3,
-              "speaker": "马大为",
-              "hanzi": "我叫马大为。请问，你叫什么名字？",
-              "phraseId": "PH-8adb07789bff67a4",
-              "pinyin": "Wǒ xìng Sòng, jiào Sòng Huá.",
-              "spanish": null
-            },
-            {
-              "turn": 4,
-              "speaker": "宋华",
-              "hanzi": "我姓宋，叫宋华。",
-              "phraseId": "PH-2f4c8cbba8f15bf3",
-              "pinyin": "Rènshi nǐ hěn gāoxìng.",
-              "spanish": null
-            },
-            {
-              "turn": 5,
-              "speaker": "马大为",
-              "hanzi": "认识你很高兴。",
-              "phraseId": "PH-75c3db6ef2e8ca00",
-              "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng.",
-              "spanish": null
-            },
-            {
-              "turn": 6,
-              "speaker": "宋华",
-              "hanzi": "认识你我也很高兴。",
-              "phraseId": "PH-75c3db6ef2e8ca00",
-              "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng.",
-              "spanish": null
-            }
-          ],
-          "label": "Principal"
+          "turn": 1,
+          "speaker": "马大为",
+          "hanzi": "你好！",
+          "speakerPinyin": "Mǎ Dàwéi",
+          "phraseId": "PH-670d9743542cae3e",
+          "pinyin": "Nǐ hǎo!",
+          "spanish": null
         },
         {
-          "id": "DLG-L1-PPT-T1",
-          "turns": [
-            {
-              "turn": 1,
-              "speaker": "马大为",
-              "hanzi": "你好！",
-              "phraseId": "PH-670d9743542cae3e",
-              "pinyin": "Nǐ hǎo!",
-              "spanish": null
-            },
-            {
-              "turn": 2,
-              "speaker": "宋华",
-              "hanzi": "你好！",
-              "phraseId": "PH-a05b1895701f4272",
-              "pinyin": "Wǒ jiào Mǎ Dàwéi. Qǐngwèn, nǐ jiào shénme míngzi?",
-              "spanish": null
-            },
-            {
-              "turn": 3,
-              "speaker": "马大为",
-              "hanzi": "我叫马大为。请问，你叫什么名字？",
-              "phraseId": "PH-8adb07789bff67a4",
-              "pinyin": "Wǒ xìng Sòng, jiào Sòng Huá.",
-              "spanish": null
-            },
-            {
-              "turn": 4,
-              "speaker": "宋华",
-              "hanzi": "我姓宋，叫宋华。",
-              "phraseId": "PH-2f4c8cbba8f15bf3",
-              "pinyin": "Rènshi nǐ hěn gāoxìng.",
-              "spanish": null
-            },
-            {
-              "turn": 5,
-              "speaker": "马大为",
-              "hanzi": "认识你很高兴。",
-              "phraseId": "PH-75c3db6ef2e8ca00",
-              "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng.",
-              "spanish": null
-            },
-            {
-              "turn": 6,
-              "speaker": "宋华",
-              "hanzi": "认识你我也很高兴。",
-              "phraseId": "PH-75c3db6ef2e8ca00",
-              "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng.",
-              "spanish": null
-            }
-          ],
-          "label": "Variante 1"
+          "turn": 2,
+          "speaker": "宋华",
+          "hanzi": "你好！",
+          "speakerPinyin": "Sòng Huá",
+          "phraseId": "PH-670d9743542cae3e",
+          "pinyin": "Nǐ hǎo!",
+          "spanish": null
+        },
+        {
+          "turn": 3,
+          "speaker": "马大为",
+          "hanzi": "我叫马大为。请问，你叫什么名字？",
+          "speakerPinyin": "Mǎ Dàwéi",
+          "phraseId": "PH-a05b1895701f4272",
+          "pinyin": "Wǒ jiào Mǎ Dàwéi. Qǐngwèn, nǐ jiào shénme míngzi?",
+          "spanish": null
+        },
+        {
+          "turn": 4,
+          "speaker": "宋华",
+          "hanzi": "我姓宋，叫宋华。",
+          "speakerPinyin": "Sòng Huá",
+          "phraseId": "PH-8adb07789bff67a4",
+          "pinyin": "Wǒ xìng Sòng, jiào Sòng Huá.",
+          "spanish": null
+        },
+        {
+          "turn": 5,
+          "speaker": "马大为",
+          "hanzi": "认识你很高兴。",
+          "speakerPinyin": "Mǎ Dàwéi",
+          "phraseId": "PH-2f4c8cbba8f15bf3",
+          "pinyin": "Rènshi nǐ hěn gāoxìng.",
+          "spanish": null
+        },
+        {
+          "turn": 6,
+          "speaker": "宋华",
+          "hanzi": "认识你我也很高兴。",
+          "speakerPinyin": "Sòng Huá",
+          "phraseId": "PH-75c3db6ef2e8ca00",
+          "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng.",
+          "spanish": null
         }
       ]
     },
     {
+      "id": "DLG-L1-BOOK-T2",
       "lesson": 1,
       "text": "Texto 2",
-      "versions": [
+      "turns": [
         {
-          "id": "DLG-L1-BOOK-T2",
-          "turns": [
-            {
-              "turn": 1,
-              "speaker": "丁力波",
-              "hanzi": "请问，林娜在吗？",
-              "phraseId": "PH-4df8f0165d3f1d68",
-              "pinyin": "Qǐngwèn, Lín Nà zài ma?",
-              "spanish": null
-            },
-            {
-              "turn": 2,
-              "speaker": "林娜",
-              "hanzi": "在。力波，请进，请坐。",
-              "phraseId": "PH-b2ce8f66a105ec80",
-              "pinyin": "Zài. Lìbō, qǐng jìn, qǐng zuò.",
-              "spanish": null
-            },
-            {
-              "turn": 3,
-              "speaker": "丁力波",
-              "hanzi": "谢谢。你最近怎么样？",
-              "phraseId": "PH-0f437a5676994bd1",
-              "pinyin": "Xièxie. Nǐ zuìjìn zěnmeyàng?",
-              "spanish": null
-            },
-            {
-              "turn": 4,
-              "speaker": "林娜",
-              "hanzi": "我很好。你呢？",
-              "phraseId": "PH-e48c42bc76c441d6",
-              "pinyin": "Wǒ hěn hǎo. Nǐ ne?",
-              "spanish": null
-            },
-            {
-              "turn": 5,
-              "speaker": "丁力波",
-              "hanzi": "我很忙。你忙吗？",
-              "phraseId": "PH-fd9e21b4265fa711",
-              "pinyin": "Wǒ hěn máng. Nǐ máng ma?",
-              "spanish": null
-            },
-            {
-              "turn": 6,
-              "speaker": "林娜",
-              "hanzi": "我不太忙。大为好吗？",
-              "phraseId": "PH-9d60c2539b2ec66b",
-              "pinyin": "Wǒ bú tài máng. Dàwéi hǎo ma?",
-              "spanish": null
-            },
-            {
-              "turn": 7,
-              "speaker": "丁力波",
-              "hanzi": "他也很好。",
-              "phraseId": "PH-6df8b6bf89d466a0",
-              "pinyin": "Tā yě hěn hǎo.",
-              "spanish": null
-            }
-          ],
-          "label": "Principal"
+          "turn": 1,
+          "speaker": "丁力波",
+          "hanzi": "请问，林娜在吗？",
+          "speakerPinyin": "Dīng Lìbō",
+          "phraseId": "PH-4df8f0165d3f1d68",
+          "pinyin": "Qǐngwèn, Lín Nà zài ma?",
+          "spanish": null
         },
         {
-          "id": "DLG-L1-PPT-T2",
-          "turns": [
-            {
-              "turn": 1,
-              "speaker": "丁力波",
-              "hanzi": "请问，林娜在吗？",
-              "phraseId": "PH-4df8f0165d3f1d68",
-              "pinyin": "Qǐngwèn, Lín Nà zài ma?",
-              "spanish": null
-            },
-            {
-              "turn": 2,
-              "speaker": "林娜",
-              "hanzi": "在。力波，请进，请坐。",
-              "phraseId": "PH-b2ce8f66a105ec80",
-              "pinyin": "Zài. Lìbō, qǐng jìn, qǐng zuò.",
-              "spanish": null
-            },
-            {
-              "turn": 3,
-              "speaker": "丁力波",
-              "hanzi": "谢谢。你最近怎么样？",
-              "phraseId": "PH-0f437a5676994bd1",
-              "pinyin": "Xièxie. Nǐ zuìjìn zěnmeyàng?",
-              "spanish": null
-            },
-            {
-              "turn": 4,
-              "speaker": "林娜",
-              "hanzi": "我很好。你呢？",
-              "phraseId": "PH-e48c42bc76c441d6",
-              "pinyin": "Wǒ hěn hǎo. Nǐ ne?",
-              "spanish": null
-            },
-            {
-              "turn": 5,
-              "speaker": "丁力波",
-              "hanzi": "我很忙。你忙吗？",
-              "phraseId": "PH-fd9e21b4265fa711",
-              "pinyin": "Wǒ hěn máng. Nǐ máng ma?",
-              "spanish": null
-            },
-            {
-              "turn": 6,
-              "speaker": "林娜",
-              "hanzi": "我不太忙。大为好吗？",
-              "phraseId": "PH-9d60c2539b2ec66b",
-              "pinyin": "Wǒ bú tài máng. Dàwéi hǎo ma?",
-              "spanish": null
-            },
-            {
-              "turn": 7,
-              "speaker": "丁力波",
-              "hanzi": "他也很好。",
-              "phraseId": "PH-6df8b6bf89d466a0",
-              "pinyin": "Tā yě hěn hǎo.",
-              "spanish": null
-            }
-          ],
-          "label": "Variante 1"
+          "turn": 2,
+          "speaker": "林娜",
+          "hanzi": "在。力波，请进，请坐。",
+          "speakerPinyin": "Lín Nà",
+          "phraseId": "PH-b2ce8f66a105ec80",
+          "pinyin": "Zài. Lìbō, qǐng jìn, qǐng zuò.",
+          "spanish": null
+        },
+        {
+          "turn": 3,
+          "speaker": "丁力波",
+          "hanzi": "谢谢。你最近怎么样？",
+          "speakerPinyin": "Dīng Lìbō",
+          "phraseId": "PH-0f437a5676994bd1",
+          "pinyin": "Xièxie. Nǐ zuìjìn zěnmeyàng?",
+          "spanish": null
+        },
+        {
+          "turn": 4,
+          "speaker": "林娜",
+          "hanzi": "我很好。你呢？",
+          "speakerPinyin": "Lín Nà",
+          "phraseId": "PH-e48c42bc76c441d6",
+          "pinyin": "Wǒ hěn hǎo. Nǐ ne?",
+          "spanish": null
+        },
+        {
+          "turn": 5,
+          "speaker": "丁力波",
+          "hanzi": "我很忙。你忙吗？",
+          "speakerPinyin": "Dīng Lìbō",
+          "phraseId": "PH-fd9e21b4265fa711",
+          "pinyin": "Wǒ hěn máng. Nǐ máng ma?",
+          "spanish": null
+        },
+        {
+          "turn": 6,
+          "speaker": "林娜",
+          "hanzi": "我不太忙。大为好吗？",
+          "speakerPinyin": "Lín Nà",
+          "phraseId": "PH-9d60c2539b2ec66b",
+          "pinyin": "Wǒ bú tài máng. Dàwéi hǎo ma?",
+          "spanish": null
+        },
+        {
+          "turn": 7,
+          "speaker": "丁力波",
+          "hanzi": "他也很好。",
+          "speakerPinyin": "Dīng Lìbō",
+          "phraseId": "PH-6df8b6bf89d466a0",
+          "pinyin": "Tā yě hěn hǎo.",
+          "spanish": null
         }
       ]
     },
     {
+      "id": "DLG-L2-BOOK-T1",
       "lesson": 2,
       "text": "Texto 1",
-      "versions": [
+      "turns": [
         {
-          "id": "DLG-L2-BOOK-T1",
-          "turns": [
-            {
-              "turn": 1,
-              "speaker": "丁力波",
-              "hanzi": "老师，早上好！",
-              "phraseId": "PH-2c5108b99f0c00e3",
-              "pinyin": "Lǎoshī, zǎoshang hǎo!",
-              "spanish": null
-            },
-            {
-              "turn": 2,
-              "speaker": "陈老师",
-              "hanzi": "你们好！",
-              "phraseId": "PH-d36d24a8a0e932b0",
-              "pinyin": "Nǐmen hǎo!",
-              "spanish": null
-            },
-            {
-              "turn": 3,
-              "speaker": "丁力波",
-              "hanzi": "这是马大为，他是我朋友，刚到北京。",
-              "phraseId": "PH-d3b3338b0361002c",
-              "pinyin": "Zhè shì Mǎ Dàwéi, tā shì wǒ péngyou, gāng dào Běijīng.",
-              "spanish": null
-            },
-            {
-              "turn": 4,
-              "speaker": "马大为",
-              "hanzi": "您好！老师，您贵姓？",
-              "phraseId": "PH-d0443e7aa5d3b780",
-              "pinyin": "Nín hǎo! Lǎoshī, nín guìxìng?",
-              "spanish": null
-            },
-            {
-              "turn": 5,
-              "speaker": "陈老师",
-              "hanzi": "我姓陈。你是哪国人？",
-              "phraseId": "PH-690ab0981fa200f9",
-              "pinyin": "Wǒ xìng Chén. Nǐ shì nǎ guó rén?",
-              "spanish": null
-            },
-            {
-              "turn": 6,
-              "speaker": "马大为",
-              "hanzi": "我是美国人。我也学习汉语。陈老师，认识您很高兴。",
-              "phraseId": "PH-e0ed09abc679978f",
-              "pinyin": "Wǒ shì Měiguó rén. Wǒ yě xuéxí Hànyǔ. Chén lǎoshī, rènshi nín hěn gāoxìng.",
-              "spanish": null
-            },
-            {
-              "turn": 7,
-              "speaker": "陈老师",
-              "hanzi": "认识你我也很高兴。",
-              "phraseId": "PH-75c3db6ef2e8ca00",
-              "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng.",
-              "spanish": null
-            },
-            {
-              "turn": 8,
-              "speaker": "马大为",
-              "hanzi": "老师，再见！",
-              "phraseId": "PH-3a74d274698b1602",
-              "pinyin": "Lǎoshī, zàijiàn!",
-              "spanish": null
-            },
-            {
-              "turn": 9,
-              "speaker": "陈老师",
-              "hanzi": "再见！",
-              "phraseId": "PH-c90a1cdb561d0269",
-              "pinyin": "Zàijiàn!",
-              "spanish": null
-            }
-          ],
-          "label": "Principal"
+          "turn": 1,
+          "speaker": "丁力波",
+          "hanzi": "老师，早上好！",
+          "speakerPinyin": "Dīng Lìbō",
+          "phraseId": "PH-2c5108b99f0c00e3",
+          "pinyin": "Lǎoshī, zǎoshang hǎo!",
+          "spanish": null
         },
         {
-          "id": "DLG-L2-PPT-T1",
-          "turns": [
-            {
-              "turn": 1,
-              "speaker": "丁力波",
-              "hanzi": "老师，早上好！",
-              "phraseId": "PH-2c5108b99f0c00e3",
-              "pinyin": "Lǎoshī, zǎoshang hǎo!",
-              "spanish": null
-            },
-            {
-              "turn": 2,
-              "speaker": "陈老师",
-              "hanzi": "你们好！",
-              "phraseId": "PH-d36d24a8a0e932b0",
-              "pinyin": "Nǐmen hǎo!",
-              "spanish": null
-            },
-            {
-              "turn": 3,
-              "speaker": "丁力波",
-              "hanzi": "这是马大为，他是我朋友，刚到北京。",
-              "phraseId": "PH-d3b3338b0361002c",
-              "pinyin": "Zhè shì Mǎ Dàwéi, tā shì wǒ péngyou, gāng dào Běijīng.",
-              "spanish": null
-            },
-            {
-              "turn": 4,
-              "speaker": "马大为",
-              "hanzi": "您好！您贵姓？",
-              "phraseId": "PH-1554e3b089746db5",
-              "pinyin": "Nín hǎo! Nín guì xìng?",
-              "spanish": null
-            },
-            {
-              "turn": 5,
-              "speaker": "陈老师",
-              "hanzi": "我姓陈，你是哪国人？",
-              "phraseId": "PH-690ab0981fa200f9",
-              "pinyin": "Wǒ xìng Chén. Nǐ shì nǎ guó rén?",
-              "spanish": null
-            },
-            {
-              "turn": 6,
-              "speaker": "马大为",
-              "hanzi": "我是美国人，我也学习汉语。陈老师，认识您很高兴。",
-              "phraseId": "PH-e0ed09abc679978f",
-              "pinyin": "Wǒ shì Měiguó rén. Wǒ yě xuéxí Hànyǔ. Chén lǎoshī, rènshi nín hěn gāoxìng.",
-              "spanish": null
-            },
-            {
-              "turn": 7,
-              "speaker": "王小云",
-              "hanzi": "认识你我也很高兴。",
-              "phraseId": "PH-75c3db6ef2e8ca00",
-              "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng.",
-              "spanish": null
-            },
-            {
-              "turn": 8,
-              "speaker": "马大为",
-              "hanzi": "老师，再见！",
-              "phraseId": "PH-3a74d274698b1602",
-              "pinyin": "Lǎoshī, zàijiàn!",
-              "spanish": null
-            },
-            {
-              "turn": 9,
-              "speaker": "陈老师",
-              "hanzi": "再见！",
-              "phraseId": "PH-c90a1cdb561d0269",
-              "pinyin": "Zàijiàn!",
-              "spanish": null
-            }
-          ],
-          "label": "Variante 1"
+          "turn": 2,
+          "speaker": "陈老师",
+          "hanzi": "你们好！",
+          "speakerPinyin": null,
+          "phraseId": "PH-d36d24a8a0e932b0",
+          "pinyin": "Nǐmen hǎo!",
+          "spanish": null
+        },
+        {
+          "turn": 3,
+          "speaker": "丁力波",
+          "hanzi": "这是马大为，他是我朋友，刚到北京。",
+          "speakerPinyin": "Dīng Lìbō",
+          "phraseId": "PH-d3b3338b0361002c",
+          "pinyin": "Zhè shì Mǎ Dàwéi, tā shì wǒ péngyou, gāng dào Běijīng.",
+          "spanish": null
+        },
+        {
+          "turn": 4,
+          "speaker": "马大为",
+          "hanzi": "您好！老师，您贵姓？",
+          "speakerPinyin": "Mǎ Dàwéi",
+          "phraseId": "PH-d0443e7aa5d3b780",
+          "pinyin": "Nín hǎo! Lǎoshī, nín guìxìng?",
+          "spanish": null
+        },
+        {
+          "turn": 5,
+          "speaker": "陈老师",
+          "hanzi": "我姓陈。你是哪国人？",
+          "speakerPinyin": null,
+          "phraseId": "PH-690ab0981fa200f9",
+          "pinyin": "Wǒ xìng Chén. Nǐ shì nǎ guó rén?",
+          "spanish": null
+        },
+        {
+          "turn": 6,
+          "speaker": "马大为",
+          "hanzi": "我是美国人。我也学习汉语。陈老师，认识您很高兴。",
+          "speakerPinyin": "Mǎ Dàwéi",
+          "phraseId": "PH-e0ed09abc679978f",
+          "pinyin": "Wǒ shì Měiguó rén. Wǒ yě xuéxí Hànyǔ. Chén lǎoshī, rènshi nín hěn gāoxìng.",
+          "spanish": null
+        },
+        {
+          "turn": 7,
+          "speaker": "陈老师",
+          "hanzi": "认识你我也很高兴。",
+          "speakerPinyin": null,
+          "phraseId": "PH-75c3db6ef2e8ca00",
+          "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng.",
+          "spanish": null
+        },
+        {
+          "turn": 8,
+          "speaker": "马大为",
+          "hanzi": "老师，再见！",
+          "speakerPinyin": "Mǎ Dàwéi",
+          "phraseId": "PH-3a74d274698b1602",
+          "pinyin": "Lǎoshī, zàijiàn!",
+          "spanish": null
+        },
+        {
+          "turn": 9,
+          "speaker": "陈老师",
+          "hanzi": "再见！",
+          "speakerPinyin": null,
+          "phraseId": "PH-c90a1cdb561d0269",
+          "pinyin": "Zàijiàn!",
+          "spanish": null
         }
       ]
     },
     {
+      "id": "DLG-L2-BOOK-T2",
       "lesson": 2,
       "text": "Texto 2",
-      "versions": [
+      "turns": [
         {
-          "id": "DLG-L2-BOOK-T2",
-          "turns": [
-            {
-              "turn": 1,
-              "speaker": "马大为",
-              "hanzi": "小云，这是什么？",
-              "phraseId": "PH-fd63f91d021e950d",
-              "pinyin": "Xiǎoyún, zhè shì shénme?",
-              "spanish": null
-            },
-            {
-              "turn": 2,
-              "speaker": "王小云",
-              "hanzi": "这是点心。",
-              "phraseId": "PH-663b7ecf4908ab3f",
-              "pinyin": "Zhè shì diǎnxin.",
-              "spanish": null
-            },
-            {
-              "turn": 3,
-              "speaker": "马大为",
-              "hanzi": "点心好吃吗？",
-              "phraseId": "PH-c4ad0b6e60632365",
-              "pinyin": "Diǎnxin hǎochī ma?",
-              "spanish": null
-            },
-            {
-              "turn": 4,
-              "speaker": "王小云",
-              "hanzi": "好吃。我爸爸是上海人，他喜欢吃点心和米饭。",
-              "phraseId": "PH-17071362f2fae7c7",
-              "pinyin": "Hǎochī. Wǒ bàba shì Shànghǎi rén, tā xǐhuan chī diǎnxin hé mǐfàn.",
-              "spanish": null
-            },
-            {
-              "turn": 5,
-              "speaker": "马大为",
-              "hanzi": "北京人喜欢吃什么？",
-              "phraseId": "PH-d9bb663c9e9f1bb9",
-              "pinyin": "Běijīng rén xǐhuan chī shénme?",
-              "spanish": null
-            },
-            {
-              "turn": 6,
-              "speaker": "王小云",
-              "hanzi": "我妈妈是北京人，她喜欢吃面条儿和饺子。",
-              "phraseId": "PH-09cb5a21fffc1281",
-              "pinyin": "Wǒ māma shì Běijīng rén, tā xǐhuan chī miàntiáor hé jiǎozi.",
-              "spanish": null
-            },
-            {
-              "turn": 7,
-              "speaker": "马大为",
-              "hanzi": "这是饺子吗？",
-              "phraseId": "PH-68f8d39880b47b54",
-              "pinyin": "Zhè shì jiǎozi ma?",
-              "spanish": null
-            },
-            {
-              "turn": 8,
-              "speaker": "王小云",
-              "hanzi": "这不是饺子，是包子。包子大，饺子小。你看，那是饺子。",
-              "phraseId": "PH-414d0363c22c3b9f",
-              "pinyin": "Zhè bú shì jiǎozi, shì bāozi. Bāozi dà, jiǎozi xiǎo. Nǐ kàn, nà shì jiǎozi.",
-              "spanish": null
-            },
-            {
-              "turn": 9,
-              "speaker": "马大为",
-              "hanzi": "包子好吃吗？",
-              "phraseId": "PH-b13c3b5fbf4875af",
-              "pinyin": "Bāozi hǎochī ma?",
-              "spanish": null
-            },
-            {
-              "turn": 10,
-              "speaker": "王小云",
-              "hanzi": "包子和饺子都很好吃。",
-              "phraseId": "PH-809344e864886f9c",
-              "pinyin": "Bāozi hé jiǎozi dōu hěn hǎochī.",
-              "spanish": null
-            },
-            {
-              "turn": 11,
-              "speaker": "马大为",
-              "hanzi": "好，我要饺子，也要包子。",
-              "phraseId": "PH-c5cfe5e5b205152f",
-              "pinyin": "Hǎo, wǒ yào jiǎozi, yě yào bāozi.",
-              "spanish": null
-            }
-          ],
-          "label": "Principal"
+          "turn": 1,
+          "speaker": "马大为",
+          "hanzi": "小云，这是什么？",
+          "speakerPinyin": "Mǎ Dàwéi",
+          "phraseId": "PH-fd63f91d021e950d",
+          "pinyin": "Xiǎoyún, zhè shì shénme?",
+          "spanish": null
         },
         {
-          "id": "DLG-L2-PPT-T2",
-          "turns": [
-            {
-              "turn": 1,
-              "speaker": "马大为",
-              "hanzi": "小云，这是什么？",
-              "phraseId": "PH-fd63f91d021e950d",
-              "pinyin": "Xiǎoyún, zhè shì shénme?",
-              "spanish": null
-            },
-            {
-              "turn": 2,
-              "speaker": "王小云",
-              "hanzi": "这是点心。",
-              "phraseId": "PH-663b7ecf4908ab3f",
-              "pinyin": "Zhè shì diǎnxin.",
-              "spanish": null
-            },
-            {
-              "turn": 3,
-              "speaker": "马大为",
-              "hanzi": "点心好吃吗？",
-              "phraseId": "PH-c4ad0b6e60632365",
-              "pinyin": "Diǎnxin hǎochī ma?",
-              "spanish": null
-            },
-            {
-              "turn": 4,
-              "speaker": "王小云",
-              "hanzi": "好吃，我爸爸是上海人，他喜欢吃点心和米饭。",
-              "phraseId": "PH-17071362f2fae7c7",
-              "pinyin": "Hǎochī. Wǒ bàba shì Shànghǎi rén, tā xǐhuan chī diǎnxin hé mǐfàn.",
-              "spanish": null
-            },
-            {
-              "turn": 5,
-              "speaker": "马大为",
-              "hanzi": "北京人喜欢吃什么？",
-              "phraseId": "PH-d9bb663c9e9f1bb9",
-              "pinyin": "Běijīng rén xǐhuan chī shénme?",
-              "spanish": null
-            },
-            {
-              "turn": 6,
-              "speaker": "王小云",
-              "hanzi": "我妈妈是北京人，她喜欢吃面条和饺子。",
-              "phraseId": "PH-0bee41504f87d636",
-              "pinyin": "Wǒ māma shì Běijīng rén, tā xǐhuan chī miàntiáo hé jiǎozi.",
-              "spanish": null
-            },
-            {
-              "turn": 7,
-              "speaker": "马大为",
-              "hanzi": "这是饺子吗？",
-              "phraseId": "PH-68f8d39880b47b54",
-              "pinyin": "Zhè shì jiǎozi ma?",
-              "spanish": null
-            },
-            {
-              "turn": 8,
-              "speaker": "王小云",
-              "hanzi": "这不是饺子，是包子。包子大，饺子小，你看，那是饺子。",
-              "phraseId": "PH-414d0363c22c3b9f",
-              "pinyin": "Zhè bú shì jiǎozi, shì bāozi. Bāozi dà, jiǎozi xiǎo. Nǐ kàn, nà shì jiǎozi.",
-              "spanish": null
-            },
-            {
-              "turn": 9,
-              "speaker": "马大为",
-              "hanzi": "包子好吃吗？",
-              "phraseId": "PH-b13c3b5fbf4875af",
-              "pinyin": "Bāozi hǎochī ma?",
-              "spanish": null
-            },
-            {
-              "turn": 10,
-              "speaker": "王小云",
-              "hanzi": "包子和饺子都很好吃。",
-              "phraseId": "PH-809344e864886f9c",
-              "pinyin": "Bāozi hé jiǎozi dōu hěn hǎochī.",
-              "spanish": null
-            },
-            {
-              "turn": 11,
-              "speaker": "马大为",
-              "hanzi": "好，我要包子，也要饺子。",
-              "phraseId": "PH-242d7e4a67cb99d7",
-              "pinyin": "Hǎo, wǒ yào bāozi, yě yào jiǎozi.",
-              "spanish": null
-            }
-          ],
-          "label": "Variante 1"
+          "turn": 2,
+          "speaker": "王小云",
+          "hanzi": "这是点心。",
+          "speakerPinyin": "Wáng Xiǎoyún",
+          "phraseId": "PH-663b7ecf4908ab3f",
+          "pinyin": "Zhè shì diǎnxin.",
+          "spanish": null
+        },
+        {
+          "turn": 3,
+          "speaker": "马大为",
+          "hanzi": "点心好吃吗？",
+          "speakerPinyin": "Mǎ Dàwéi",
+          "phraseId": "PH-c4ad0b6e60632365",
+          "pinyin": "Diǎnxin hǎochī ma?",
+          "spanish": null
+        },
+        {
+          "turn": 4,
+          "speaker": "王小云",
+          "hanzi": "好吃。我爸爸是上海人，他喜欢吃点心和米饭。",
+          "speakerPinyin": "Wáng Xiǎoyún",
+          "phraseId": "PH-17071362f2fae7c7",
+          "pinyin": "Hǎochī. Wǒ bàba shì Shànghǎi rén, tā xǐhuan chī diǎnxin hé mǐfàn.",
+          "spanish": null
+        },
+        {
+          "turn": 5,
+          "speaker": "马大为",
+          "hanzi": "北京人喜欢吃什么？",
+          "speakerPinyin": "Mǎ Dàwéi",
+          "phraseId": "PH-d9bb663c9e9f1bb9",
+          "pinyin": "Běijīng rén xǐhuan chī shénme?",
+          "spanish": null
+        },
+        {
+          "turn": 6,
+          "speaker": "王小云",
+          "hanzi": "我妈妈是北京人，她喜欢吃面条儿和饺子。",
+          "speakerPinyin": "Wáng Xiǎoyún",
+          "phraseId": "PH-09cb5a21fffc1281",
+          "pinyin": "Wǒ māma shì Běijīng rén, tā xǐhuan chī miàntiáor hé jiǎozi.",
+          "spanish": null
+        },
+        {
+          "turn": 7,
+          "speaker": "马大为",
+          "hanzi": "这是饺子吗？",
+          "speakerPinyin": "Mǎ Dàwéi",
+          "phraseId": "PH-68f8d39880b47b54",
+          "pinyin": "Zhè shì jiǎozi ma?",
+          "spanish": null
+        },
+        {
+          "turn": 8,
+          "speaker": "王小云",
+          "hanzi": "这不是饺子，是包子。包子大，饺子小。你看，那是饺子。",
+          "speakerPinyin": "Wáng Xiǎoyún",
+          "phraseId": "PH-414d0363c22c3b9f",
+          "pinyin": "Zhè bú shì jiǎozi, shì bāozi. Bāozi dà, jiǎozi xiǎo. Nǐ kàn, nà shì jiǎozi.",
+          "spanish": null
+        },
+        {
+          "turn": 9,
+          "speaker": "马大为",
+          "hanzi": "包子好吃吗？",
+          "speakerPinyin": "Mǎ Dàwéi",
+          "phraseId": "PH-b13c3b5fbf4875af",
+          "pinyin": "Bāozi hǎochī ma?",
+          "spanish": null
+        },
+        {
+          "turn": 10,
+          "speaker": "王小云",
+          "hanzi": "包子和饺子都很好吃。",
+          "speakerPinyin": "Wáng Xiǎoyún",
+          "phraseId": "PH-809344e864886f9c",
+          "pinyin": "Bāozi hé jiǎozi dōu hěn hǎochī.",
+          "spanish": null
+        },
+        {
+          "turn": 11,
+          "speaker": "马大为",
+          "hanzi": "好，我要饺子，也要包子。",
+          "speakerPinyin": "Mǎ Dàwéi",
+          "phraseId": "PH-c5cfe5e5b205152f",
+          "pinyin": "Hǎo, wǒ yào jiǎozi, yě yào bāozi.",
+          "spanish": null
         }
       ]
     },
     {
+      "id": "DLG-L3-BOOK-T1",
       "lesson": 3,
       "text": "Texto 1",
-      "versions": [
+      "turns": [
         {
-          "id": "DLG-L3-BOOK-T1",
-          "turns": [
-            {
-              "turn": 1,
-              "speaker": "林娜",
-              "hanzi": "你们家有几口人？",
-              "phraseId": "PH-73edb201a1b0b88d",
-              "pinyin": "Nǐmen jiā yǒu jǐ kǒu rén?",
-              "spanish": null
-            },
-            {
-              "turn": 2,
-              "speaker": "王小云",
-              "hanzi": "我们家有四口人。你看，这是我们家的照片。",
-              "phraseId": "PH-8dcc41f26397e990",
-              "pinyin": "Wǒmen jiā yǒu sì kǒu rén. Nǐ kàn, zhè shì wǒmen jiā de zhàopiàn.",
-              "spanish": null
-            },
-            {
-              "turn": 3,
-              "speaker": "林娜",
-              "hanzi": "你爸爸妈妈做什么工作？",
-              "phraseId": "PH-1f7e03d8c0052b68",
-              "pinyin": "Nǐ bàba māma zuò shénme gōngzuò?",
-              "spanish": null
-            },
-            {
-              "turn": 4,
-              "speaker": "王小云",
-              "hanzi": "我爸爸是医生，妈妈是老师。",
-              "phraseId": "PH-4a63b9623c9c3cde",
-              "pinyin": "Wǒ bàba shì yīshēng, māma shì lǎoshī.",
-              "spanish": null
-            },
-            {
-              "turn": 5,
-              "speaker": "林娜",
-              "hanzi": "这是你弟弟吗？",
-              "phraseId": "PH-fb58d7bbfe7950bc",
-              "pinyin": "Zhè shì nǐ dìdi ma?",
-              "spanish": null
-            },
-            {
-              "turn": 6,
-              "speaker": "王小云",
-              "hanzi": "这不是我弟弟。这是我哥哥。林娜，你们家有几口人？",
-              "phraseId": "PH-3bd601533f50ac73",
-              "pinyin": "Zhè bú shì wǒ dìdi. Zhè shì wǒ gēge. Lín Nà, nǐmen jiā yǒu jǐ kǒu rén?",
-              "spanish": null
-            },
-            {
-              "turn": 7,
-              "speaker": "林娜",
-              "hanzi": "我们家一共有六口人：妈妈、一个哥哥、两个姐姐和我，还有贝贝。",
-              "phraseId": "PH-c72459420412ca24",
-              "pinyin": "Wǒmen jiā yígòng yǒu liù kǒu rén: māma, yí ge gēge, liǎng ge jiějie hé wǒ, hái yǒu Bèibei.",
-              "spanish": null
-            },
-            {
-              "turn": 8,
-              "speaker": "王小云",
-              "hanzi": "贝贝是谁？是你妹妹吗？",
-              "phraseId": "PH-1f5edf8ae05ca861",
-              "pinyin": "Bèibei shì shéi? Shì nǐ mèimei ma?",
-              "spanish": null
-            },
-            {
-              "turn": 9,
-              "speaker": "林娜",
-              "hanzi": "我没有妹妹，贝贝是我的小狗。",
-              "phraseId": "PH-f26418fd16237858",
-              "pinyin": "Wǒ méiyǒu mèimei, Bèibei shì wǒ de xiǎogǒu.",
-              "spanish": null
-            },
-            {
-              "turn": 10,
-              "speaker": "王小云",
-              "hanzi": "小狗也是一口人吗？",
-              "phraseId": "PH-e43ad76a163e355d",
-              "pinyin": "Xiǎogǒu yě shì yì kǒu rén ma?",
-              "spanish": null
-            }
-          ],
-          "label": "Principal"
+          "turn": 1,
+          "speaker": "林娜",
+          "hanzi": "你们家有几口人？",
+          "speakerPinyin": "Lín Nà",
+          "phraseId": "PH-73edb201a1b0b88d",
+          "pinyin": "Nǐmen jiā yǒu jǐ kǒu rén?",
+          "spanish": null
         },
         {
-          "id": "DLG-L3-PPT-T1",
-          "turns": [
-            {
-              "turn": 1,
-              "speaker": "林娜",
-              "hanzi": "你们家有几口人？",
-              "phraseId": "PH-73edb201a1b0b88d",
-              "pinyin": "Nǐmen jiā yǒu jǐ kǒu rén?",
-              "spanish": null
-            },
-            {
-              "turn": 2,
-              "speaker": "王小云",
-              "hanzi": "我们家有四口人。你看，这是我们家的照片。",
-              "phraseId": "PH-8dcc41f26397e990",
-              "pinyin": "Wǒmen jiā yǒu sì kǒu rén. Nǐ kàn, zhè shì wǒmen jiā de zhàopiàn.",
-              "spanish": null
-            },
-            {
-              "turn": 3,
-              "speaker": "林娜",
-              "hanzi": "你爸爸妈妈做什么工作？",
-              "phraseId": "PH-1f7e03d8c0052b68",
-              "pinyin": "Nǐ bàba māma zuò shénme gōngzuò?",
-              "spanish": null
-            },
-            {
-              "turn": 4,
-              "speaker": "王小云",
-              "hanzi": "我爸爸是医生，妈妈是老师。",
-              "phraseId": "PH-4a63b9623c9c3cde",
-              "pinyin": "Wǒ bàba shì yīshēng, māma shì lǎoshī.",
-              "spanish": null
-            },
-            {
-              "turn": 5,
-              "speaker": "林娜",
-              "hanzi": "这是你弟弟吗？",
-              "phraseId": "PH-fb58d7bbfe7950bc",
-              "pinyin": "Zhè shì nǐ dìdi ma?",
-              "spanish": null
-            },
-            {
-              "turn": 6,
-              "speaker": "王小云",
-              "hanzi": "这不是我弟弟。这是我哥哥。",
-              "phraseId": "PH-15e6b206f6e02736",
-              "pinyin": "Zhè bú shì wǒ dìdi, zhè shì wǒ gēge.",
-              "spanish": null
-            },
-            {
-              "turn": 7,
-              "speaker": "王小云",
-              "hanzi": "林娜，你们家有几口人？",
-              "phraseId": "PH-35b5f11dfacef732",
-              "pinyin": "Lín Nà, nǐmen jiā yǒu jǐ kǒu rén?",
-              "spanish": null
-            },
-            {
-              "turn": 8,
-              "speaker": "林娜",
-              "hanzi": "我们家一共有六口人：妈妈、一个哥哥、两个姐姐和我，还有贝贝。",
-              "phraseId": "PH-c72459420412ca24",
-              "pinyin": "Wǒmen jiā yígòng yǒu liù kǒu rén: māma, yí ge gēge, liǎng ge jiějie hé wǒ, hái yǒu Bèibei.",
-              "spanish": null
-            },
-            {
-              "turn": 9,
-              "speaker": "王小云",
-              "hanzi": "贝贝是谁？是你妹妹吗？",
-              "phraseId": "PH-1f5edf8ae05ca861",
-              "pinyin": "Bèibei shì shéi? Shì nǐ mèimei ma?",
-              "spanish": null
-            },
-            {
-              "turn": 10,
-              "speaker": "林娜",
-              "hanzi": "我没有妹妹，贝贝是我的小狗。",
-              "phraseId": "PH-f26418fd16237858",
-              "pinyin": "Wǒ méiyǒu mèimei, Bèibei shì wǒ de xiǎogǒu.",
-              "spanish": null
-            },
-            {
-              "turn": 11,
-              "speaker": "王小云",
-              "hanzi": "小狗也是一口人吗？",
-              "phraseId": "PH-e43ad76a163e355d",
-              "pinyin": "Xiǎogǒu yě shì yì kǒu rén ma?",
-              "spanish": null
-            }
-          ],
-          "label": "Variante 1"
+          "turn": 2,
+          "speaker": "王小云",
+          "hanzi": "我们家有四口人。你看，这是我们家的照片。",
+          "speakerPinyin": "Wáng Xiǎoyún",
+          "phraseId": "PH-8dcc41f26397e990",
+          "pinyin": "Wǒmen jiā yǒu sì kǒu rén. Nǐ kàn, zhè shì wǒmen jiā de zhàopiàn.",
+          "spanish": null
+        },
+        {
+          "turn": 3,
+          "speaker": "林娜",
+          "hanzi": "你爸爸妈妈做什么工作？",
+          "speakerPinyin": "Lín Nà",
+          "phraseId": "PH-1f7e03d8c0052b68",
+          "pinyin": "Nǐ bàba māma zuò shénme gōngzuò?",
+          "spanish": null
+        },
+        {
+          "turn": 4,
+          "speaker": "王小云",
+          "hanzi": "我爸爸是医生，妈妈是老师。",
+          "speakerPinyin": "Wáng Xiǎoyún",
+          "phraseId": "PH-4a63b9623c9c3cde",
+          "pinyin": "Wǒ bàba shì yīshēng, māma shì lǎoshī.",
+          "spanish": null
+        },
+        {
+          "turn": 5,
+          "speaker": "林娜",
+          "hanzi": "这是你弟弟吗？",
+          "speakerPinyin": "Lín Nà",
+          "phraseId": "PH-fb58d7bbfe7950bc",
+          "pinyin": "Zhè shì nǐ dìdi ma?",
+          "spanish": null
+        },
+        {
+          "turn": 6,
+          "speaker": "王小云",
+          "hanzi": "这不是我弟弟。这是我哥哥。林娜，你们家有几口人？",
+          "speakerPinyin": "Wáng Xiǎoyún",
+          "phraseId": "PH-3bd601533f50ac73",
+          "pinyin": "Zhè bú shì wǒ dìdi. Zhè shì wǒ gēge. Lín Nà, nǐmen jiā yǒu jǐ kǒu rén?",
+          "spanish": null
+        },
+        {
+          "turn": 7,
+          "speaker": "林娜",
+          "hanzi": "我们家一共有六口人：妈妈、一个哥哥、两个姐姐和我，还有贝贝。",
+          "speakerPinyin": "Lín Nà",
+          "phraseId": "PH-c72459420412ca24",
+          "pinyin": "Wǒmen jiā yígòng yǒu liù kǒu rén: māma, yí ge gēge, liǎng ge jiějie hé wǒ, hái yǒu Bèibei.",
+          "spanish": null
+        },
+        {
+          "turn": 8,
+          "speaker": "王小云",
+          "hanzi": "贝贝是谁？是你妹妹吗？",
+          "speakerPinyin": "Wáng Xiǎoyún",
+          "phraseId": "PH-1f5edf8ae05ca861",
+          "pinyin": "Bèibei shì shéi? Shì nǐ mèimei ma?",
+          "spanish": null
+        },
+        {
+          "turn": 9,
+          "speaker": "林娜",
+          "hanzi": "我没有妹妹，贝贝是我的小狗。",
+          "speakerPinyin": "Lín Nà",
+          "phraseId": "PH-f26418fd16237858",
+          "pinyin": "Wǒ méiyǒu mèimei, Bèibei shì wǒ de xiǎogǒu.",
+          "spanish": null
+        },
+        {
+          "turn": 10,
+          "speaker": "王小云",
+          "hanzi": "小狗也是一口人吗？",
+          "speakerPinyin": "Wáng Xiǎoyún",
+          "phraseId": "PH-e43ad76a163e355d",
+          "pinyin": "Xiǎogǒu yě shì yì kǒu rén ma?",
+          "spanish": null
         }
       ]
     },
     {
+      "id": "DLG-L3-BOOK-T2",
       "lesson": 3,
       "text": "Texto 2",
-      "versions": [
+      "turns": [
         {
-          "id": "DLG-L3-BOOK-T2",
-          "turns": [
-            {
-              "turn": 1,
-              "speaker": "陆雨平",
-              "hanzi": "你们好！请进！",
-              "phraseId": "PH-111091909a211bb7",
-              "pinyin": "Nǐmen hǎo! Qǐng jìn!",
-              "spanish": null
-            },
-            {
-              "turn": 2,
-              "speaker": "林娜",
-              "hanzi": "您好！你们家真漂亮！",
-              "phraseId": "PH-5678193b86e8724f",
-              "pinyin": "Nín hǎo! Nǐmen jiā zhēn piàoliang!",
-              "spanish": null
-            },
-            {
-              "turn": 3,
-              "speaker": "陆雨平",
-              "hanzi": "谢谢。请坐。你们喝什么？我们家有茶和咖啡。",
-              "phraseId": "PH-1af10d4c756781c6",
-              "pinyin": "Xièxie. Qǐng zuò. Nǐmen hē shénme? Wǒmen jiā yǒu chá hé kāfēi.",
-              "spanish": null
-            },
-            {
-              "turn": 4,
-              "speaker": "宋华",
-              "hanzi": "我喝咖啡。",
-              "phraseId": "PH-2e9d54b2f234dbec",
-              "pinyin": "Wǒ hē kāfēi.",
-              "spanish": null
-            },
-            {
-              "turn": 5,
-              "speaker": "林娜",
-              "hanzi": "我要茶。",
-              "phraseId": "PH-75fc00a1483a074b",
-              "pinyin": "Wǒ yào chá.",
-              "spanish": null
-            },
-            {
-              "turn": 6,
-              "speaker": "宋华",
-              "hanzi": "这张照片真漂亮！这是你女儿吗？",
-              "phraseId": "PH-f73bf8e19f739055",
-              "pinyin": "Zhè zhāng zhàopiàn zhēn piàoliang! Zhè shì nǐ nǚ’ér ma?",
-              "spanish": null
-            },
-            {
-              "turn": 7,
-              "speaker": "陆雨平",
-              "hanzi": "是。这是我女儿。",
-              "phraseId": "PH-4fac66dc4ef24a57",
-              "pinyin": "Shì. Zhè shì wǒ nǚ’ér.",
-              "spanish": null
-            },
-            {
-              "turn": 8,
-              "speaker": "宋华",
-              "hanzi": "你女儿今年几岁？",
-              "phraseId": "PH-40b8d75ef94972dd",
-              "pinyin": "Nǐ nǚ’ér jīnnián jǐ suì?",
-              "spanish": null
-            },
-            {
-              "turn": 9,
-              "speaker": "陆雨平",
-              "hanzi": "五岁。今天她有钢琴课，不在家。",
-              "phraseId": "PH-8404b517d7b8837d",
-              "pinyin": "Wǔ suì. Jīntiān tā yǒu gāngqínkè, bú zài jiā.",
-              "spanish": null
-            },
-            {
-              "turn": 10,
-              "speaker": "林娜",
-              "hanzi": "中国的孩子真忙！",
-              "phraseId": "PH-c3324d239c2c9dec",
-              "pinyin": "Zhōngguó de háizi zhēn máng!",
-              "spanish": null
-            },
-            {
-              "turn": 11,
-              "speaker": "陆雨平",
-              "hanzi": "是啊。晚上她还有英语课。",
-              "phraseId": "PH-493c48e1a43cf756",
-              "pinyin": "Shì a. Wǎnshang tā hái yǒu Yīngyǔkè.",
-              "spanish": null
-            }
-          ],
-          "label": "Principal"
+          "turn": 1,
+          "speaker": "陆雨平",
+          "hanzi": "你们好！请进！",
+          "speakerPinyin": "Lù Yǔpíng",
+          "phraseId": "PH-111091909a211bb7",
+          "pinyin": "Nǐmen hǎo! Qǐng jìn!",
+          "spanish": null
         },
         {
-          "id": "DLG-L3-PPT-T2",
-          "turns": [
-            {
-              "turn": 1,
-              "speaker": "陆雨平",
-              "hanzi": "你们好！请进！",
-              "phraseId": "PH-111091909a211bb7",
-              "pinyin": "Nǐmen hǎo! Qǐng jìn!",
-              "spanish": null
-            },
-            {
-              "turn": 2,
-              "speaker": "林娜",
-              "hanzi": "您好！你们家真漂亮！",
-              "phraseId": "PH-5678193b86e8724f",
-              "pinyin": "Nín hǎo! Nǐmen jiā zhēn piàoliang!",
-              "spanish": null
-            },
-            {
-              "turn": 3,
-              "speaker": "陆雨平",
-              "hanzi": "谢谢。请坐。你们喝什么？我们家有茶和咖啡。",
-              "phraseId": "PH-1af10d4c756781c6",
-              "pinyin": "Xièxie. Qǐng zuò. Nǐmen hē shénme? Wǒmen jiā yǒu chá hé kāfēi.",
-              "spanish": null
-            },
-            {
-              "turn": 4,
-              "speaker": "宋华",
-              "hanzi": "我喝咖啡。",
-              "phraseId": "PH-2e9d54b2f234dbec",
-              "pinyin": "Wǒ hē kāfēi.",
-              "spanish": null
-            },
-            {
-              "turn": 5,
-              "speaker": "林娜",
-              "hanzi": "我要茶。",
-              "phraseId": "PH-75fc00a1483a074b",
-              "pinyin": "Wǒ yào chá.",
-              "spanish": null
-            },
-            {
-              "turn": 6,
-              "speaker": "宋华",
-              "hanzi": "这张照片真漂亮！这是你女儿吗？",
-              "phraseId": "PH-f73bf8e19f739055",
-              "pinyin": "Zhè zhāng zhàopiàn zhēn piàoliang! Zhè shì nǐ nǚ’ér ma?",
-              "spanish": null
-            },
-            {
-              "turn": 7,
-              "speaker": "陆雨平",
-              "hanzi": "是。这是我女儿。",
-              "phraseId": "PH-4fac66dc4ef24a57",
-              "pinyin": "Shì. Zhè shì wǒ nǚ’ér.",
-              "spanish": null
-            },
-            {
-              "turn": 8,
-              "speaker": "宋华",
-              "hanzi": "你女儿今年几岁？",
-              "phraseId": "PH-40b8d75ef94972dd",
-              "pinyin": "Nǐ nǚ’ér jīnnián jǐ suì?",
-              "spanish": null
-            },
-            {
-              "turn": 9,
-              "speaker": "陆雨平",
-              "hanzi": "五岁。今天她有钢琴课，不在家。",
-              "phraseId": "PH-8404b517d7b8837d",
-              "pinyin": "Wǔ suì. Jīntiān tā yǒu gāngqínkè, bú zài jiā.",
-              "spanish": null
-            },
-            {
-              "turn": 10,
-              "speaker": "林娜",
-              "hanzi": "中国的孩子真忙！",
-              "phraseId": "PH-c3324d239c2c9dec",
-              "pinyin": "Zhōngguó de háizi zhēn máng!",
-              "spanish": null
-            },
-            {
-              "turn": 11,
-              "speaker": "陆雨平",
-              "hanzi": "是啊。晚上她还有英语课。",
-              "phraseId": "PH-493c48e1a43cf756",
-              "pinyin": "Shì a. Wǎnshang tā hái yǒu Yīngyǔkè.",
-              "spanish": null
-            }
-          ],
-          "label": "Variante 1"
+          "turn": 2,
+          "speaker": "林娜",
+          "hanzi": "您好！你们家真漂亮！",
+          "speakerPinyin": "Lín Nà",
+          "phraseId": "PH-5678193b86e8724f",
+          "pinyin": "Nín hǎo! Nǐmen jiā zhēn piàoliang!",
+          "spanish": null
+        },
+        {
+          "turn": 3,
+          "speaker": "陆雨平",
+          "hanzi": "谢谢。请坐。你们喝什么？我们家有茶和咖啡。",
+          "speakerPinyin": "Lù Yǔpíng",
+          "phraseId": "PH-1af10d4c756781c6",
+          "pinyin": "Xièxie. Qǐng zuò. Nǐmen hē shénme? Wǒmen jiā yǒu chá hé kāfēi.",
+          "spanish": null
+        },
+        {
+          "turn": 4,
+          "speaker": "宋华",
+          "hanzi": "我喝咖啡。",
+          "speakerPinyin": "Sòng Huá",
+          "phraseId": "PH-2e9d54b2f234dbec",
+          "pinyin": "Wǒ hē kāfēi.",
+          "spanish": null
+        },
+        {
+          "turn": 5,
+          "speaker": "林娜",
+          "hanzi": "我要茶。",
+          "speakerPinyin": "Lín Nà",
+          "phraseId": "PH-75fc00a1483a074b",
+          "pinyin": "Wǒ yào chá.",
+          "spanish": null
+        },
+        {
+          "turn": 6,
+          "speaker": "宋华",
+          "hanzi": "这张照片真漂亮！这是你女儿吗？",
+          "speakerPinyin": "Sòng Huá",
+          "phraseId": "PH-f73bf8e19f739055",
+          "pinyin": "Zhè zhāng zhàopiàn zhēn piàoliang! Zhè shì nǐ nǚ’ér ma?",
+          "spanish": null
+        },
+        {
+          "turn": 7,
+          "speaker": "陆雨平",
+          "hanzi": "是。这是我女儿。",
+          "speakerPinyin": "Lù Yǔpíng",
+          "phraseId": "PH-4fac66dc4ef24a57",
+          "pinyin": "Shì. Zhè shì wǒ nǚ’ér.",
+          "spanish": null
+        },
+        {
+          "turn": 8,
+          "speaker": "宋华",
+          "hanzi": "你女儿今年几岁？",
+          "speakerPinyin": "Sòng Huá",
+          "phraseId": "PH-40b8d75ef94972dd",
+          "pinyin": "Nǐ nǚ’ér jīnnián jǐ suì?",
+          "spanish": null
+        },
+        {
+          "turn": 9,
+          "speaker": "陆雨平",
+          "hanzi": "五岁。今天她有钢琴课，不在家。",
+          "speakerPinyin": "Lù Yǔpíng",
+          "phraseId": "PH-8404b517d7b8837d",
+          "pinyin": "Wǔ suì. Jīntiān tā yǒu gāngqínkè, bú zài jiā.",
+          "spanish": null
+        },
+        {
+          "turn": 10,
+          "speaker": "林娜",
+          "hanzi": "中国的孩子真忙！",
+          "speakerPinyin": "Lín Nà",
+          "phraseId": "PH-c3324d239c2c9dec",
+          "pinyin": "Zhōngguó de háizi zhēn máng!",
+          "spanish": null
+        },
+        {
+          "turn": 11,
+          "speaker": "陆雨平",
+          "hanzi": "是啊。晚上她还有英语课。",
+          "speakerPinyin": "Lù Yǔpíng",
+          "phraseId": "PH-493c48e1a43cf756",
+          "pinyin": "Shì a. Wǎnshang tā hái yǒu Yīngyǔkè.",
+          "spanish": null
         }
       ]
     }
@@ -17091,11 +16639,35 @@
         2,
         3
       ],
-      "hanzi": [
-        "作",
-        "你",
-        "做",
-        "什"
+      "examples": [
+        {
+          "hanzi": "作",
+          "pinyin": "zuò",
+          "lessons": [
+            3
+          ]
+        },
+        {
+          "hanzi": "你",
+          "pinyin": "nǐ",
+          "lessons": [
+            1
+          ]
+        },
+        {
+          "hanzi": "做",
+          "pinyin": "zuò",
+          "lessons": [
+            3
+          ]
+        },
+        {
+          "hanzi": "什",
+          "pinyin": "shén",
+          "lessons": [
+            1
+          ]
+        }
       ]
     },
     {
@@ -17110,10 +16682,22 @@
         2,
         3
       ],
-      "hanzi": [
-        "四",
-        "困",
-        "国"
+      "examples": [
+        {
+          "hanzi": "四",
+          "pinyin": "sì",
+          "lessons": [
+            1
+          ]
+        },
+        {
+          "hanzi": "国",
+          "pinyin": "guó",
+          "lessons": [
+            2,
+            3
+          ]
+        }
       ]
     },
     {
@@ -17126,9 +16710,21 @@
       "lessons": [
         3
       ],
-      "hanzi": [
-        "字",
-        "家"
+      "examples": [
+        {
+          "hanzi": "字",
+          "pinyin": "zì",
+          "lessons": [
+            3
+          ]
+        },
+        {
+          "hanzi": "家",
+          "pinyin": "jiā",
+          "lessons": [
+            3
+          ]
+        }
       ]
     },
     {
@@ -17141,9 +16737,14 @@
       "lessons": [
         1
       ],
-      "hanzi": [
-        "样",
-        "林"
+      "examples": [
+        {
+          "hanzi": "样",
+          "pinyin": "yàng",
+          "lessons": [
+            1
+          ]
+        }
       ]
     },
     {
@@ -17156,9 +16757,21 @@
       "lessons": [
         3
       ],
-      "hanzi": [
-        "英",
-        "茶"
+      "examples": [
+        {
+          "hanzi": "英",
+          "pinyin": "yīng",
+          "lessons": [
+            3
+          ]
+        },
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "lessons": [
+            3
+          ]
+        }
       ]
     },
     {
@@ -17173,12 +16786,42 @@
         2,
         3
       ],
-      "hanzi": [
-        "谁",
-        "认",
-        "课",
-        "识",
-        "语"
+      "examples": [
+        {
+          "hanzi": "谁",
+          "pinyin": "shuí",
+          "lessons": [
+            3
+          ]
+        },
+        {
+          "hanzi": "认",
+          "pinyin": "rèn",
+          "lessons": [
+            1
+          ]
+        },
+        {
+          "hanzi": "课",
+          "pinyin": "kè",
+          "lessons": [
+            3
+          ]
+        },
+        {
+          "hanzi": "识",
+          "pinyin": "shi",
+          "lessons": [
+            1
+          ]
+        },
+        {
+          "hanzi": "语",
+          "pinyin": "yǔ",
+          "lessons": [
+            3
+          ]
+        }
       ]
     },
     {
@@ -17192,10 +16835,28 @@
         1,
         3
       ],
-      "hanzi": [
-        "近",
-        "进",
-        "还"
+      "examples": [
+        {
+          "hanzi": "近",
+          "pinyin": "jìn",
+          "lessons": [
+            1
+          ]
+        },
+        {
+          "hanzi": "进",
+          "pinyin": "jìn",
+          "lessons": [
+            1
+          ]
+        },
+        {
+          "hanzi": "还",
+          "pinyin": "hái",
+          "lessons": [
+            3
+          ]
+        }
       ]
     },
     {
@@ -17208,12 +16869,8 @@
       "lessons": [
         2
       ],
-      "hanzi": [
-        "饿",
-        "饼",
-        "饭"
-      ]
+      "examples": []
     }
   ],
-  "fingerprint": "eb46b52f7118931d84d3a6e65182b8a18cf2dc33a490c23a94a71ac6530b9751"
+  "fingerprint": "f50bb064917e54d8b61d91b50d8a5da390001e9f54f99cec5ab502f6be9aae78"
 }

@@ -1,0 +1,99 @@
+name: Generate corpus v2.1 book-dialogue audio
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirmation:
+        description: Type GENERATE_43_BOOK_DIALOGUES
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: corpus-v21-audio-codex-branch
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    if: >-
+      github.repository == 'najashiro/ming-mandarin' &&
+      github.ref == 'refs/heads/codex/implementar-integracion-del-corpus-v2.1' &&
+      inputs.confirmation == 'GENERATE_43_BOOK_DIALOGUES'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: codex/implementar-integracion-del-corpus-v2.1
+          fetch-depth: 1
+
+      - run: corepack enable
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.22.2'
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Validate finite book-dialogue inventory
+        run: |
+          python3 MING_KNOWLEDGE/v2/query.py --validate >/dev/null
+          pnpm audio:manifest
+          node --input-type=module <<'JS'
+          import assert from 'node:assert/strict';
+          import { existsSync, readFileSync } from 'node:fs';
+          const corpus = JSON.parse(readFileSync('data/corpus-v21-public.json'));
+          const manifest = JSON.parse(readFileSync('data/mandarin-audio.json'));
+          assert.equal(corpus.dialogues.length, 6);
+          assert(corpus.dialogues.every(d => d.id.includes('-BOOK-')));
+          const normalize = value => value.normalize('NFC').replace(/[^\u3400-\u9fff]/g, '');
+          const wanted = new Set(corpus.dialogues.flatMap(d => d.turns.map(t => normalize(t.hanzi))));
+          const pending = manifest.clips.filter(c => wanted.has(normalize(c.input)) && !existsSync(`public/audio/mandarin/${c.file}`));
+          assert(pending.length > 0 && pending.length <= 43, `Expected 1–43 pending book-dialogue clips, got ${pending.length}`);
+          assert(pending.every(c => c.expectedPinyin && c.instructions && c.file.endsWith('.mp3')));
+          JS
+
+      - name: Check protected secret
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: test -n "$OPENAI_API_KEY" || { echo '::error::Missing OPENAI_API_KEY'; exit 1; }
+
+      - name: Generate missing MP3 with Marin
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: node scripts/generate-pronunciation-audio.mjs
+
+      - name: Verify MP3s and refresh availability
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y ffmpeg
+          pnpm audio:manifest
+          node --input-type=module <<'JS'
+          import assert from 'node:assert/strict';
+          import { execFileSync } from 'node:child_process';
+          import { existsSync, readFileSync } from 'node:fs';
+          const corpus = JSON.parse(readFileSync('data/corpus-v21-public.json'));
+          const manifest = JSON.parse(readFileSync('data/mandarin-audio.json'));
+          const normalize = value => value.normalize('NFC').replace(/[^\u3400-\u9fff]/g, '');
+          const wanted = new Set(corpus.dialogues.flatMap(d => d.turns.map(t => normalize(t.hanzi))));
+          const clips = manifest.clips.filter(c => wanted.has(normalize(c.input)));
+          for (const clip of clips) {
+            const file = `public/audio/mandarin/${clip.file}`;
+            assert(existsSync(file), `Missing ${file}`);
+            execFileSync('ffmpeg', ['-v', 'error', '-i', file, '-f', 'null', '-']);
+            const duration = Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'default=noprint_wrappers=1:nokey=1', file], { encoding: 'utf8' }));
+            assert(Number.isFinite(duration) && duration >= 0.15 && duration <= 45, `Unexpected duration for ${file}`);
+          }
+          JS
+          git diff --check
+
+      - name: Commit generated assets to this PR branch
+        run: |
+          git add -- data/mandarin-audio-available.json public/audio/mandarin/*.mp3
+          test -n "$(git diff --cached --name-only)" || { echo '::error::No generated files to commit'; exit 1; }
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'feat(audio): add Marin clips for corpus v2.1 book dialogues'
+          git push origin HEAD:refs/heads/codex/implementar-integracion-del-corpus-v2.1

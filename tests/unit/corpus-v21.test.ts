@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import corpus from '@/data/corpus-v21-public.json';
 import { publicCorpusForScope } from '@/lib/corpus-v21';
+import { audioForMandarinText } from '@/lib/mandarin-audio';
 
 describe('corpus v2.1 public projection', () => {
   it('contains stable IDs and no documentary provenance', () => {
@@ -11,16 +12,39 @@ describe('corpus v2.1 public projection', () => {
     expect(serialized).not.toMatch(/source_refs|source_id|evidence_ids|pdfPage|SRC-|\.pdf/i);
   });
 
-  it('publishes coherent dialogues and only independently documented radicals', () => {
+  it('publishes exactly the two textbook dialogues per lesson', () => {
     expect(corpus.dialogues).toHaveLength(6);
-    expect(corpus.dialogues.every((dialogue) => dialogue.versions[0]?.label === 'Principal')).toBe(true);
+    expect(corpus.dialogues.every((dialogue) => dialogue.id.includes('-BOOK-'))).toBe(true);
+    for (const lesson of [1, 2, 3]) {
+      expect(corpus.dialogues.filter((dialogue) => dialogue.lesson === lesson).map((dialogue) => dialogue.text).sort()).toEqual(['Texto 1', 'Texto 2']);
+    }
+    expect(JSON.stringify(corpus.dialogues)).not.toMatch(/Principal|Variante|versions/);
+  });
+
+  it('maps repeated greetings by exact turn witness without shifting pinyin', () => {
+    const dialogue = corpus.dialogues.find((row) => row.id === 'DLG-L1-BOOK-T1')!;
+    expect(dialogue.turns.slice(0, 3).map((turn) => [turn.turn, turn.speaker, turn.speakerPinyin, turn.hanzi, turn.pinyin])).toEqual([
+      [1, '马大为', 'Mǎ Dàwéi', '你好！', 'Nǐ hǎo!'],
+      [2, '宋华', 'Sòng Huá', '你好！', 'Nǐ hǎo!'],
+      [3, '马大为', 'Mǎ Dàwéi', '我叫马大为。请问，你叫什么名字？', 'Wǒ jiào Mǎ Dàwéi. Qǐngwèn, nǐ jiào shénme míngzi?'],
+    ]);
+  });
+
+  it('publishes only independently documented radicals and lesson-tagged examples', () => {
     expect(corpus.radicals).toHaveLength(8);
-    expect(JSON.stringify(corpus.radicals)).not.toMatch(/assessment|exam|candidate|answer/i);
+    expect(JSON.stringify(corpus.radicals)).not.toMatch(/assessment|exam_|candidate|answer/i);
+    expect(corpus.radicals.flatMap((radical) => radical.examples).every((example) => example.pinyin && example.lessons.length)).toBe(true);
   });
 
   it('filters real banks through curricular scope', () => {
     const l1 = publicCorpusForScope('l1');
     expect(l1.dialogues.every((row) => row.lesson === 1)).toBe(true);
     expect(l1.vocabulary.every((row) => row.lessons.includes(1))).toBe(true);
+    expect(l1.radicals.flatMap((row) => row.examples).every((example) => example.lessons.includes(1))).toBe(true);
+  });
+
+  it('does not expose a playback URL until the MP3 is present', () => {
+    expect(audioForMandarinText('我叫马大为。请问，你叫什么名字？')).toBeUndefined();
+    expect(audioForMandarinText('你好！')).toMatch(/^\/audio\/mandarin\/.+\.mp3$/);
   });
 });

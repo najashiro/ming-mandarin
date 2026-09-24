@@ -3153,14 +3153,6 @@
       "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
     },
     {
-      "id": "l2-s-6ce602f0d3",
-      "file": "l2-s-6ce602f0d3.mp3",
-      "input": "您好！您贵姓？",
-      "expectedPinyin": "Nín hǎo! Nín guì xìng?",
-      "lessonId": 2,
-      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
-    },
-    {
       "id": "l2-s-0a3b02921f",
       "file": "l2-s-0a3b02921f.mp3",
       "input": "小云，这是什么？",
@@ -3249,22 +3241,6 @@
       "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
     },
     {
-      "id": "l2-s-7b938fc229",
-      "file": "l2-s-7b938fc229.mp3",
-      "input": "我妈妈是北京人，她喜欢吃面条和饺子。",
-      "expectedPinyin": "Wǒ māma shì Běijīng rén, tā xǐhuan chī miàntiáo hé jiǎozi.",
-      "lessonId": 2,
-      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
-    },
-    {
-      "id": "l2-s-53328994a6",
-      "file": "l2-s-53328994a6.mp3",
-      "input": "好，我要包子，也要饺子。",
-      "expectedPinyin": "Hǎo, wǒ yào bāozi, yě yào jiǎozi.",
-      "lessonId": 2,
-      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
-    },
-    {
       "id": "l3-s-a4fcd6666b",
       "file": "l3-s-a4fcd6666b.mp3",
       "input": "你们家有几口人？",
@@ -3341,22 +3317,6 @@
       "file": "l3-s-55aaa63200.mp3",
       "input": "小狗也是一口人吗？",
       "expectedPinyin": "Xiǎogǒu yě shì yì kǒu rén ma?",
-      "lessonId": 3,
-      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
-    },
-    {
-      "id": "l3-s-7cc2226ddc",
-      "file": "l3-s-7cc2226ddc.mp3",
-      "input": "这不是我弟弟。这是我哥哥。",
-      "expectedPinyin": "Zhè bú shì wǒ dìdi, zhè shì wǒ gēge.",
-      "lessonId": 3,
-      "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
-    },
-    {
-      "id": "l3-s-99e8bf6934",
-      "file": "l3-s-99e8bf6934.mp3",
-      "input": "林娜，你们家有几口人？",
-      "expectedPinyin": "Lín Nà, nǐmen jiā yǒu jǐ kǒu rén?",
       "lessonId": 3,
       "instructions": "Pronuncia exactamente la entrada una sola vez, con ritmo natural."
     },

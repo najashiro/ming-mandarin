@@ -51,6 +51,7 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
   const [query, setQuery] = useState('');
   const [searchOpen, setSearchOpen] = useState(false);
   const [activeOption, setActiveOption] = useState(-1);
+  const [focusRequest, setFocusRequest] = useState(focusGlyph ? 1 : 0);
   const [loaded, setLoaded] = useState<{ character: string; data?: HanziCharacterData; error?: string } | null>(null);
   const [progress, setProgress] = useState<HanziProgressMap>(initialProgress);
   const [localProgress, setLocalProgress] = useState<LocalHanziProgressMap>({});
@@ -105,9 +106,24 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
     return () => { active = false; };
   }, [character.hanzi]);
 
-  function selectCharacter(id: string) {
+  function selectCharacter(id: string, focus = false) {
     setSelectedId(id);
     setSaveMessage('');
+    if (focus) {
+      setTab('Aprender');
+      setSearchOpen(false);
+      const selected = characters.find((item) => item.id === id);
+      if (selected) {
+        const url = new URL(window.location.href);
+        url.searchParams.set('character', selected.hanzi);
+        url.searchParams.set('focus', 'glyph');
+        url.searchParams.delete('tab');
+        url.searchParams.delete('mode');
+        window.history.replaceState(window.history.state, '', url);
+      }
+      (document.activeElement as HTMLElement | null)?.blur();
+      setFocusRequest((value) => value + 1);
+    }
   }
 
   function continueLearning() {
@@ -216,7 +232,7 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
   }
 
   return <div className="hanzi-workspace">
-    <HanziFocusScroller active={focusGlyph && tab === 'Aprender' && character.id === firstCharacter.id} />
+    <HanziFocusScroller active={focusRequest > 0} requestKey={focusRequest} />
     {tracking==='course'?<section className="panel hanzi-route" aria-label="Ruta pedagógica Hanzi">
       <div className="hanzi-route-heading"><div><p className="eyebrow">RUTA HANZI · {scopeLabel.toUpperCase()}</p><h2>{studied} / {characters.length} estudiados</h2></div><button className="button button-primary" type="button" onClick={continueLearning}>Continuar aprendiendo</button></div>
       <div className="hanzi-stage-progress">{stages.map((stage, index) => {
@@ -229,7 +245,7 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
 
     {tracking==='course'&&<section className="panel hanzi-character-picker" aria-label="Selector de caracteres">
       <div className="hanzi-picker-heading"><div><p className="eyebrow">BUSCADOR HANZI</p><h2>Busca por pinyin</h2></div><span>{displayedCharacters.length} en el alcance</span></div>
-      <div className="hanzi-combobox"><label htmlFor="hanzi-pinyin-search">Busca por pinyin</label><div><input id="hanzi-pinyin-search" role="combobox" aria-autocomplete="list" aria-expanded={searchOpen} aria-controls="hanzi-pinyin-options" aria-activedescendant={activeOption >= 0 ? `hanzi-option-${activeOption}` : undefined} value={query} autoCapitalize="none" autoCorrect="off" spellCheck={false} placeholder="Ej.: hao, hǎo o hao3" onFocus={() => query && setSearchOpen(true)} onChange={(event) => { setQuery(event.target.value); setSearchOpen(true); setActiveOption(-1); }} onKeyDown={(event) => { if (event.key === 'ArrowDown') { event.preventDefault(); setActiveOption((value) => Math.min(value + 1, suggestions.length - 1)); } else if (event.key === 'ArrowUp') { event.preventDefault(); setActiveOption((value) => Math.max(value - 1, 0)); } else if (event.key === 'Escape') setSearchOpen(false); else if (event.key === 'Enter' && activeOption >= 0) { event.preventDefault(); const option=suggestions[activeOption]; if(option){selectCharacter(option.id);setQuery(option.pinyin);setSearchOpen(false);} } }}/>{query&&<button type="button" aria-label="Limpiar consulta" onClick={() => {setQuery('');setSearchOpen(false);}}>×</button>}</div>{searchOpen&&query&&<div id="hanzi-pinyin-options" role="listbox">{suggestions.length?suggestions.map((item,index)=><button id={`hanzi-option-${index}`} role="option" aria-selected={activeOption===index} type="button" key={item.id} onPointerDown={(event)=>event.preventDefault()} onClick={()=>{selectCharacter(item.id);setQuery(item.pinyin);setSearchOpen(false);}}><PinyinText>{item.pinyin}</PinyinText><Hanzi>{item.hanzi}</Hanzi><span>{item.meaning}</span></button>):<p role="status">Sin resultados por pinyin en este alcance.</p>}</div>}</div>
+      <div className="hanzi-combobox"><label htmlFor="hanzi-pinyin-search">Busca por pinyin</label><div><input id="hanzi-pinyin-search" role="combobox" aria-autocomplete="list" aria-expanded={searchOpen} aria-controls="hanzi-pinyin-options" aria-activedescendant={activeOption >= 0 ? `hanzi-option-${activeOption}` : undefined} value={query} autoCapitalize="none" autoCorrect="off" spellCheck={false} placeholder="Ej.: hao, hǎo o hao3" onFocus={() => query && setSearchOpen(true)} onChange={(event) => { setQuery(event.target.value); setSearchOpen(true); setActiveOption(-1); }} onKeyDown={(event) => { if (event.key === 'ArrowDown') { event.preventDefault(); setActiveOption((value) => Math.min(value + 1, suggestions.length - 1)); } else if (event.key === 'ArrowUp') { event.preventDefault(); setActiveOption((value) => Math.max(value - 1, 0)); } else if (event.key === 'Escape') setSearchOpen(false); else if (event.key === 'Enter' && activeOption >= 0) { event.preventDefault(); const option=suggestions[activeOption]; if(option){selectCharacter(option.id,true);setQuery(option.pinyin);} } }}/>{query&&<button type="button" aria-label="Limpiar consulta" onClick={() => {setQuery('');setSearchOpen(false);}}>×</button>}</div>{searchOpen&&query&&<div id="hanzi-pinyin-options" role="listbox">{suggestions.length?suggestions.map((item,index)=><button id={`hanzi-option-${index}`} role="option" aria-selected={activeOption===index} type="button" key={item.id} onPointerDown={(event)=>event.preventDefault()} onClick={()=>{selectCharacter(item.id,true);setQuery(item.pinyin);}}><PinyinText>{item.pinyin}</PinyinText><Hanzi>{item.hanzi}</Hanzi><span>{item.meaning}</span></button>):<p role="status">Sin resultados por pinyin en este alcance.</p>}</div>}</div>
       <div className="hanzi-filter-row">
         <div className="stage-filter-desktop" role="group" aria-label="Unidad curricular"><button type="button" className={stageFilter === 'all' ? 'selected' : ''} onClick={() => setStageFilter('all')}>Todos</button>{stages.map((stage) => <button type="button" className={stageFilter === stage.id ? 'selected' : ''} onClick={() => setStageFilter(stage.id)} key={stage.id}>{stage.id} {stage.shortTitle}</button>)}</div>
         <label className="stage-filter-mobile">Unidad<select value={stageFilter} onChange={(event) => setStageFilter(event.target.value === 'all' ? 'all' : event.target.value as HanziStageId)}><option value="all">Todas</option>{stages.map((stage) => <option value={stage.id} key={stage.id}>{stage.id} · {stage.title}</option>)}</select></label>
@@ -237,11 +253,11 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
       {displayedCharacters.length ? <div className="hanzi-picker-grid">{displayedCharacters.map((item) => {
         const selected = item.id === character.id;
         const curricularState = stageFilter === 'all' ? undefined : item.introducedIn === stageFilter ? 'new' : 'review';
-        return <button type="button" className={`hanzi-picker-card${curricularState ? ` curricular-${curricularState}` : ''}${selected ? ' selected' : ''}`} data-curricular-state={curricularState} aria-label={`${item.hanzi}, ${item.pinyin}, ${item.meaning}`} aria-pressed={selected} onClick={() => selectCharacter(item.id)} key={item.id}><Hanzi>{item.hanzi}</Hanzi><small><PinyinText>{item.pinyin}</PinyinText></small><em><Hanzi>{item.meaning}</Hanzi></em></button>;
+        return <button type="button" className={`hanzi-picker-card${curricularState ? ` curricular-${curricularState}` : ''}${selected ? ' selected' : ''}`} data-curricular-state={curricularState} aria-label={`${item.hanzi}, ${item.pinyin}, ${item.meaning}`} aria-pressed={selected} onClick={() => selectCharacter(item.id,true)} key={item.id}><Hanzi>{item.hanzi}</Hanzi><small><PinyinText>{item.pinyin}</PinyinText></small><em><Hanzi>{item.meaning}</Hanzi></em></button>;
       })}</div> : <div className="hanzi-filter-empty"><p>No hay caracteres en esta unidad.</p><button type="button" onClick={() => setStageFilter('all')}>Ampliar a todas las unidades</button></div>}
     </section>}
 
-    <section className="hanzi-character-hero panel">
+    <section className="hanzi-character-hero panel" id="hanzi-detail-start">
       <div className="hanzi-glyph"><Hanzi>{character.hanzi}</Hanzi></div>
       <div className="hanzi-character-copy"><p className="eyebrow">{stageLabel}</p><div className="hanzi-pronunciation-row"><h2><PinyinText>{character.pinyin}</PinyinText></h2><div className="hanzi-character-actions"><SpeakButton key={character.id} text={character.hanzi} speechText={character.hanzi} audioSrc={audioForMandarinText(character.hanzi)} compact ariaLabel={`Escuchar pronunciación de ${character.hanzi}`} title={`Escuchar ${character.hanzi}`} /><CommunityButton compact label={`Preguntar sobre ${character.hanzi}`} context={{ concept: character.hanzi, skill: tab === 'Trazos' ? 'stroke-order' : tab === 'Practicar' ? 'hanzi-writing' : 'hanzi-recognition', route: `${route}?character=${encodeURIComponent(character.hanzi)}&tab=${encodeURIComponent(tab)}` }} /></div></div>
         <p className="hanzi-character-meaning"><Hanzi>{character.meaning}</Hanzi></p>

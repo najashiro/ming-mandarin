@@ -3,42 +3,41 @@ import { expect, test, type Page } from '@playwright/test';
 const characters = ['作', '家', '有', '几'] as const;
 const firstQuestion = { '作': { seed: 1157, answer: '作' }, '家': { seed: 83, answer: '家' }, '有': { seed: 702, answer: '有' }, '几': { seed: 810, answer: '几' } } as const;
 
-async function expectGlyphFocused(page: Page, character: string) {
+async function expectDetailFocused(page: Page, character: string) {
   await expect(page.getByRole('tab', { name: 'Aprender' })).toHaveAttribute('aria-selected', 'true');
   await expect(page.locator('.hanzi-picker-card.selected').first()).toContainText(character);
   await expect(page.locator('#hanzi-glyph-focus .hanzi-writer-target')).toHaveAttribute('aria-label', `Área de escritura para ${character}`);
   await expect(page.locator('#hanzi-glyph-focus .hanzi-writer-target svg')).toHaveCount(1);
   await expect.poll(() => page.evaluate(() => {
-    const visual = document.getElementById('hanzi-glyph-focus')!.getBoundingClientRect();
+    const visual = document.getElementById('hanzi-detail-start')!.getBoundingClientRect();
     const header = document.querySelector('.topbar')!.getBoundingClientRect();
     const gap = visual.top - header.bottom;
-    return scrollY > 100 && gap >= 0 && gap < 45 && visual.bottom < innerHeight;
+    return scrollY > 100 && gap >= 8 && gap < 30;
   })).toBe(true);
   const position = await page.evaluate(() => {
-    const visual = document.getElementById('hanzi-glyph-focus')!.getBoundingClientRect();
+    const visual = document.getElementById('hanzi-detail-start')!.getBoundingClientRect();
     const header = document.querySelector('.topbar')!.getBoundingClientRect();
-    return { scrollY, gap: visual.top - header.bottom, bottom: visual.bottom, viewport: innerHeight };
+    return { scrollY, gap: visual.top - header.bottom };
   });
   expect(position.scrollY).toBeGreaterThan(100);
   expect(position.gap).toBeGreaterThanOrEqual(0);
-  expect(position.gap).toBeLessThan(45);
-  expect(position.bottom).toBeLessThan(position.viewport);
+  expect(position.gap).toBeLessThan(30);
 }
 
 test('focus=glyph muestra el glifo de 作, 家, 有 y 几 en Aprender', async ({ page }) => {
   for (const character of characters) {
     await page.goto(`/study/l1-l2-l3/hanzi?character=${encodeURIComponent(character)}&focus=glyph`);
-    await expectGlyphFocused(page, character);
+    await expectDetailFocused(page, character);
   }
 });
 
 test('el enlace directo anterior con solo character también enfoca el glifo', async ({ page }) => {
   await page.goto(`/study/l1-l2-l3/hanzi?character=${encodeURIComponent('作')}`);
-  await expectGlyphFocused(page, '作');
+  await expectDetailFocused(page, '作');
 });
 
 test('las pestañas y el modo explícitos conservan su navegación sin foco automático', async ({ page }) => {
-  for (const [query, tab] of [['tab=Componentes', 'Componentes'], ['tab=Trazos', 'Trazos'], ['tab=Practicar', 'Practicar'], ['mode=practice', 'Practicar']] as const) {
+  for (const [query, tab] of [['tab=Componentes', 'Palabras y frases'], ['tab=Trazos', 'Trazos'], ['tab=Practicar', 'Practicar'], ['mode=practice', 'Practicar']] as const) {
     await page.goto(`/study/l1-l2-l3/hanzi?character=${encodeURIComponent('作')}&${query}`);
     await expect(page.getByRole('tab', { name: tab })).toHaveAttribute('aria-selected', 'true');
     await expect(page.locator('.hanzi-picker-card.selected').first()).toContainText('作');
@@ -81,7 +80,7 @@ for (const character of characters) {
       await link.click();
       const popup = await popupPromise;
       await expect(popup).toHaveURL(new RegExp(`character=${encodeURIComponent(character)}&focus=glyph`));
-      await expectGlyphFocused(popup, character);
+      await expectDetailFocused(popup, character);
       await expect(challenge.locator('.mixed-hud h2')).toHaveText(round!);
       await expect(challenge.locator('.mixed-hud-correct')).toHaveText(correct!);
       await expect(challenge.locator('.mixed-hud-incorrect')).toHaveText(incorrect!);
@@ -91,3 +90,16 @@ for (const character of characters) {
     });
   }
 }
+
+test('buscar y reseleccionar encuadra la tarjeta superior sin esperar los trazos', async ({ page }) => {
+  await page.goto('/study/l1-l2-l3/hanzi');
+  const search = page.getByRole('combobox', { name: 'Busca por pinyin' });
+  await search.fill('zuo');
+  await page.getByRole('option', { name: /zuò.*作/ }).click();
+  await expectDetailFocused(page, '作');
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await search.fill('zuo');
+  await page.getByRole('option', { name: /zuò.*作/ }).click();
+  await expectDetailFocused(page, '作');
+  await expect(search).not.toBeFocused();
+});
