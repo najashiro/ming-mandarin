@@ -378,8 +378,10 @@ export async function startExam(user: AppUser, scope: HanziAssessmentScope = 'l1
   });
   const questions = seededShuffle(examQuestionsForScope(seed, scope), seed).map((item) => {
     const { answer, ...question } = item;
-    void answer;
-    return { ...question, options: question.options ? seededShuffle(question.options, `${seed}-${question.id}`) : undefined };
+    const chineseBlocks = !question.options && item.section !== 'pinyin' && /\p{Script=Han}/u.test(answer)
+      ? seededShuffle([...answer.replace(/[。？！]/g, '')], `${seed}-${question.id}-blocks`) : undefined;
+    return { ...question, responseType: question.options ? 'choice' as const : chineseBlocks ? 'hanzi_blocks' as const : 'text' as const,
+      options: question.options ? seededShuffle(question.options, `${seed}-${question.id}`) : undefined, blocks: chineseBlocks };
   });
   return { sessionId, seed, scope, questions };
 }

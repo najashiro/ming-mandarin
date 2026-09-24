@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { Hanzi, hanziInputClass } from '@/components/Hanzi';
+import { Hanzi } from '@/components/Hanzi';
 import { storiesForScope, cleanChinese, sentenceBlocks } from '@/data/games-curriculum';
 import type { CurriculumScope, CharacterEntry } from '@/data/types';
 import { Person } from '../live-scene/SceneCard';
@@ -20,7 +20,7 @@ function StoryCase({ story, scope, characters }: { story: ReturnType<typeof stor
   const item = story.scenes.find(scene => scene.id === story.evidence[session.index])!;
   if (session.finished) return <GameResult score={session.score} total={session.total}/>;
   return <div className="new-game story-game"><GameProgress level={session.level} onLevel={level => { session.setLevel(level); setAnswer(''); setEvidence(''); }} round={session.round} total={session.total}/><h3>{story.title}</h3><p>Lee las cuatro escenas. Toca la frase que demuestra tu respuesta.</p><div className="story-panels">{story.scenes.map((scene,index) => <article key={scene.id}><small>Escena {index + 1}</small><Person index={story.lesson - 1}/><button disabled={session.result !== null} aria-pressed={evidence === scene.id} onClick={() => { setEvidence(scene.id); if (session.level === 1) session.check(scene.id === item.id, item.id, 'evidence'); }}><Hanzi>{scene.hanzi}</Hanzi></button></article>)}</div><h3>{story.questions[session.index]}</h3>{session.level === 1 && <p>Tu respuesta es la evidencia: selecciónala en la historia.</p>}
-    {session.result === null && session.level > 1 && <>{session.level === 2 ? <AnswerBlocks key={`${session.round}-${session.level}`} blocks={sentenceBlocks(item)} onChange={setAnswer}/> : <input aria-label="Respuesta de lectura" className={hanziInputClass(answer)} value={answer} onChange={event => setAnswer(event.target.value)}/>}<button disabled={!answer.trim() || !evidence} onClick={() => session.check(evidence === item.id && cleanChinese(answer) === cleanChinese(item.hanzi), item.id, 'evidence-production')}>Presentar evidencia y respuesta</button></>}
+    {session.result === null && session.level > 1 && <><AnswerBlocks key={`${session.round}-${session.level}`} blocks={sentenceBlocks(item)} onChange={setAnswer}/><button disabled={!answer.trim() || !evidence} onClick={() => session.check(evidence === item.id && cleanChinese(answer) === cleanChinese(item.hanzi), item.id, 'evidence-production')}>Presentar evidencia y respuesta</button></>}
     {session.result !== null && <><GameFeedback correct={session.result} hanzi={item.hanzi} pinyin={item.pinyin} meaning={item.translation} characters={characters} hint="La respuesta debe estar respaldada por una frase del texto."/><button onClick={() => { session.next(); setAnswer(''); setEvidence(''); }}>Siguiente pista</button></>}
   </div>;
 }

@@ -10,13 +10,13 @@ import { CommunityContextProvider } from '@/components/community/CommunityProvid
 
 export const dynamic = 'force-dynamic';
 
-const validTabs = ['Aprender', 'Componentes', 'Trazos', 'Practicar'] as const;
+const validTabs = ['Aprender', 'Palabras y frases', 'Trazos', 'Practicar'] as const;
 type HanziTab = typeof validTabs[number];
 
 export default async function HanziPage({ searchParams }: { searchParams: Promise<{ character?: string; tab?: string; mode?: string }> }) {
   const [user, query] = await Promise.all([getCurrentUser(), searchParams]);
   const initialProgress = user ? await getHanziProgressMap(user) : {};
-  const requestedTab = query.mode === 'practice' ? 'Practicar' : query.tab;
+  const requestedTab = query.mode === 'practice' ? 'Practicar' : query.tab === 'Componentes' ? 'Palabras y frases' : query.tab;
   const initialTab: HanziTab = validTabs.includes(requestedTab as HanziTab) ? requestedTab as HanziTab : 'Aprender';
   const initialCharacter = query.character && canonicalCharacters.some((item) => item.hanzi === query.character) ? query.character : '好';
 
@@ -27,7 +27,8 @@ export default async function HanziPage({ searchParams }: { searchParams: Promis
       description="Aprende con datos técnicos locales, observa el orden real y practica con mouse, touch o stylus. El sistema mide reconocimiento, orden y escritura por separado."
     />
     <HanziLab
-      characters={allCurriculumCharacters}
+      key={`${initialCharacter}:${requestedTab??''}`}
+      characters={allCurriculumCharacters.map(({id,hanzi,pinyin,meaning,strokeCount,writingRequired,words,introducedIn,appearsIn})=>({id,hanzi,pinyin,meaning,strokeCount,radical:'',components:[],componentsAudited:false,writingRequired,words,introducedIn,appearsIn}))}
       canonicalHanzi={canonicalCharacters.map((character) => character.hanzi)}
       stages={hanziUnits}
       manifest={manifest as Record<string, HanziManifestEntry>}

@@ -1,0 +1,118 @@
+name: Generate corpus v2.1 book-dialogue audio
+
+on:
+  push:
+    branches: [codex/implementar-integracion-del-corpus-v2.1]
+    paths: [.github/audio-requests/pr8-book-dialogues.json]
+  workflow_dispatch:
+    inputs:
+      confirmation:
+        description: Type GENERATE_PR8_BOOK_DIALOGUES
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: corpus-v21-audio-pr8
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    if: >-
+      github.repository == 'najashiro/ming-mandarin' &&
+      github.ref == 'refs/heads/codex/implementar-integracion-del-corpus-v2.1' &&
+      (github.event_name == 'push' || inputs.confirmation == 'GENERATE_PR8_BOOK_DIALOGUES')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+
+      - run: corepack enable
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.22.2'
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      - name: Validate immutable request and exact clip allowlist
+        id: request
+        env:
+          TRIGGER_SHA: ${{ github.sha }}
+        run: |
+          python3 MING_KNOWLEDGE/v2/query.py --validate >/dev/null
+          pnpm audio:manifest
+          node --input-type=module <<'JS'
+          import assert from 'node:assert/strict';
+          import { createHash } from 'node:crypto';
+          import { existsSync, readFileSync, writeFileSync, appendFileSync } from 'node:fs';
+          const requestPath = '.github/audio-requests/pr8-book-dialogues.json';
+          const request = JSON.parse(readFileSync(requestPath));
+          assert.equal(request.requestId, 'pr8-book-dialogues-marin-2026-09-24-01');
+          assert.equal(request.scope, 'corpus-v2.1-textbook-dialogue-turns');
+          assert.equal(request.model, 'gpt-4o-mini-tts'); assert.equal(request.voice, 'marin'); assert.equal(request.format, 'mp3');
+          assert(['requested', 'completed'].includes(request.status));
+          assert(Array.isArray(request.clipIds) && request.clipIds.length === 43 && new Set(request.clipIds).size === 43);
+          const manifest = JSON.parse(readFileSync('data/mandarin-audio.json'));
+          const byId = new Map(manifest.clips.map(clip => [clip.id, clip]));
+          const clips = request.clipIds.map(id => { const clip = byId.get(id); assert(clip, `Unknown authorized clip ${id}`); return clip; });
+          assert(clips.every(clip => clip.id.match(/^l[123]-s-/) && clip.expectedPinyin && clip.instructions));
+          const canonical = clips.map(({ id, file, input, expectedPinyin }) => ({ id, file,input,expectedPinyin }));
+          assert.equal(createHash('sha256').update(JSON.stringify(canonical)).digest('hex'), request.manifestFingerprint);
+          const pending = clips.filter(clip => !existsSync(`public/audio/mandarin/${clip.file}`));
+          writeFileSync(process.env.RUNNER_TEMP + '/authorized-ids.json', JSON.stringify(pending.map(clip => clip.id)));
+          writeFileSync(process.env.RUNNER_TEMP + '/authorized-paths.txt', pending.map(clip => `public/audio/mandarin/${clip.file}`).join('\n') + '\n');
+          appendFileSync(process.env.GITHUB_OUTPUT, `generate=${request.status === 'requested' && pending.length ? 'true' : 'false'}\n`);
+          appendFileSync(process.env.GITHUB_OUTPUT, `publish=${request.status === 'requested' ? 'true' : 'false'}\n`);
+          appendFileSync(process.env.GITHUB_OUTPUT, `pending=${pending.length}\n`);
+          appendFileSync(process.env.GITHUB_STEP_SUMMARY, `Request ${request.requestId} at ${process.env.TRIGGER_SHA}: ${pending.length} missing; ${clips.length - pending.length} reused.\n`);
+          JS
+
+      - name: Generate only explicitly authorized missing MP3s
+        if: steps.request.outputs.generate == 'true'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: node scripts/generate-pronunciation-audio.mjs --ids-file="$RUNNER_TEMP/authorized-ids.json" --checkpoint-dir="$RUNNER_TEMP/audio-checkpoint"
+
+      - name: Decode authorized MP3s and refresh availability
+        if: steps.request.outputs.publish == 'true'
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y ffmpeg
+          pnpm audio:manifest
+          node --input-type=module <<'JS'
+          import assert from 'node:assert/strict'; import { execFileSync } from 'node:child_process';
+          import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+          const requestPath = '.github/audio-requests/pr8-book-dialogues.json';
+          const request = JSON.parse(readFileSync(requestPath)); const manifest = JSON.parse(readFileSync('data/mandarin-audio.json'));
+          const byId = new Map(manifest.clips.map(clip => [clip.id, clip]));
+          for (const id of request.clipIds) { const clip = byId.get(id); const file = `public/audio/mandarin/${clip.file}`;
+            assert(existsSync(file), `Missing ${file}`); execFileSync('ffmpeg', ['-v','error','-i',file,'-f','null','-']);
+            const duration = Number(execFileSync('ffprobe',['-v','error','-show_entries','format=duration','-of','default=noprint_wrappers=1:nokey=1',file],{encoding:'utf8'}));
+            assert(Number.isFinite(duration) && duration >= .15 && duration <= 45, `Unexpected duration for ${file}`); }
+          request.status = 'completed'; request.completedByWorkflowRun = process.env.GITHUB_RUN_ID; request.completedFromCommit = process.env.GITHUB_SHA;
+          writeFileSync(requestPath, JSON.stringify(request, null, 2) + '\n');
+          JS
+          git diff --check
+
+      - name: Commit only authorized results to the PR branch
+        if: steps.request.outputs.publish == 'true'
+        run: |
+          printf '%s\n' data/mandarin-audio.json data/mandarin-audio-available.json .github/audio-requests/pr8-book-dialogues.json >> "$RUNNER_TEMP/authorized-paths.txt"
+          git add --pathspec-from-file="$RUNNER_TEMP/authorized-paths.txt"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'feat(audio): add authorized Marin clips for PR 8 dialogues'
+          git push origin HEAD:refs/heads/codex/implementar-integracion-del-corpus-v2.1
+
+      - name: Preserve generated checkpoints if generation, verification or publication fails
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr8-dialogue-audio-checkpoint-${{ github.run_id }}
+          path: ${{ runner.temp }}/audio-checkpoint/*.mp3
+          if-no-files-found: ignore
+          retention-days: 7

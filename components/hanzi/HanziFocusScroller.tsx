@@ -2,45 +2,83 @@
 
 import { useEffect, useRef } from 'react';
 
-export function HanziFocusScroller({ active }: { active: boolean }) {
-  const focused = useRef(false);
+type Props = { active: boolean; requestKey: string | number; expectedCharacter: string };
+
+export function HanziFocusScroller({ active, requestKey, expectedCharacter }: Props) {
+  const completedRequest = useRef<string | number | null>(null);
 
   useEffect(() => {
-    if (!active || focused.current) return;
-
+    if (!active || completedRequest.current === requestKey) return;
+    let cancelled = false;
     let frame = 0;
-    let nextFrame = 0;
-    let queued = false;
-    const observer = new MutationObserver(() => checkReady());
-    const timeout = window.setTimeout(() => observer.disconnect(), 12_000);
+    let stableFrames = 0;
+    let lastGap = Number.NaN;
+    let selfScrolling = false;
+    let observer: ResizeObserver | null = null;
+    const startedAt = performance.now();
+    const root = document.documentElement;
+    const workspace = document.querySelector('.hanzi-workspace');
 
-    function checkReady() {
-      if (queued || focused.current) return;
-      const target = document.getElementById('hanzi-glyph-focus');
-      if (!target?.querySelector('.hanzi-writer-target svg') || target.querySelector('.hanzi-stage-status')) return;
+    const cancelForUser = () => { if (!selfScrolling) cancelled = true; };
+    const options: AddEventListenerOptions = { passive: true, capture: true };
+    for (const event of ['wheel', 'touchstart', 'pointerdown'] as const) window.addEventListener(event, cancelForUser, options);
 
-      queued = true;
-      observer.disconnect();
-      window.clearTimeout(timeout);
-      frame = window.requestAnimationFrame(() => {
-        nextFrame = window.requestAnimationFrame(() => {
-          const headerHeight = document.querySelector('.topbar')?.getBoundingClientRect().height ?? 76;
-          const top = window.scrollY + target.getBoundingClientRect().top - headerHeight - 12;
-          window.scrollTo({ top: Math.max(0, top), behavior: 'auto' });
-          focused.current = true;
-        });
-      });
-    }
+    const position = () => {
+      if (cancelled || completedRequest.current === requestKey) return;
+      const target = document.getElementById('hanzi-detail-start');
+      const header = document.querySelector('.topbar');
+      if (!target || !header || target.dataset.character !== expectedCharacter) {
+        if (performance.now() - startedAt < 1800) frame = requestAnimationFrame(position);
+        return;
+      }
 
-    observer.observe(document.body, { childList: true, subtree: true });
-    checkReady();
-    return () => {
-      observer.disconnect();
-      window.clearTimeout(timeout);
-      window.cancelAnimationFrame(frame);
-      window.cancelAnimationFrame(nextFrame);
+      const headerBottom = header.getBoundingClientRect().bottom;
+      const targetTop = target.getBoundingClientRect().top;
+      const gap = targetTop - headerBottom;
+      if (Math.abs(gap - 6) > 1) {
+        const previousBehavior = root.style.scrollBehavior;
+        root.style.scrollBehavior = 'auto';
+        selfScrolling = true;
+        window.scrollTo(0, Math.max(0, window.scrollY + gap - 6));
+        selfScrolling = false;
+        root.style.scrollBehavior = previousBehavior;
+        stableFrames = 0;
+      } else if (Math.abs(gap - lastGap) <= 1) {
+        stableFrames += 1;
+      } else {
+        stableFrames = 0;
+      }
+      lastGap = gap;
+
+      if (stableFrames >= 3) {
+        completedRequest.current = requestKey;
+        observer?.disconnect();
+        window.visualViewport?.removeEventListener('resize', position);
+        for (const event of ['wheel', 'touchstart', 'pointerdown'] as const) window.removeEventListener(event, cancelForUser, true);
+        return;
+      }
+      if (performance.now() - startedAt < 1800) frame = requestAnimationFrame(position);
     };
-  }, [active]);
+
+    observer = workspace ? new ResizeObserver(() => {
+      stableFrames = 0;
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(position);
+    }) : null;
+    if (workspace) observer?.observe(workspace);
+    const viewport = window.visualViewport;
+    viewport?.addEventListener('resize', position);
+    void document.fonts?.ready.then(() => { if (!cancelled) { stableFrames = 0; position(); } });
+    frame = requestAnimationFrame(position);
+
+    return () => {
+      cancelled = true;
+      cancelAnimationFrame(frame);
+      observer?.disconnect();
+      viewport?.removeEventListener('resize', position);
+      for (const event of ['wheel', 'touchstart', 'pointerdown'] as const) window.removeEventListener(event, cancelForUser, true);
+    };
+  }, [active, expectedCharacter, requestKey]);
 
   return null;
 }
