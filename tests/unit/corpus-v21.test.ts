@@ -2,6 +2,9 @@ import { describe, expect, it } from 'vitest';
 import corpus from '@/data/corpus-v21-public.json';
 import { publicCorpusForScope } from '@/lib/corpus-v21';
 import { audioForMandarinText } from '@/lib/mandarin-audio';
+import audioRequest from '../../.github/audio-requests/pr8-book-dialogues.json';
+import audioManifest from '@/data/mandarin-audio.json';
+import { createHash } from 'node:crypto';
 
 describe('corpus v2.1 public projection', () => {
   it('contains stable IDs and no documentary provenance', () => {
@@ -46,5 +49,16 @@ describe('corpus v2.1 public projection', () => {
   it('does not expose a playback URL until the MP3 is present', () => {
     expect(audioForMandarinText('我叫马大为。请问，你叫什么名字？')).toBeUndefined();
     expect(audioForMandarinText('你好！')).toMatch(/^\/audio\/mandarin\/.+\.mp3$/);
+  });
+
+  it('pins the paid audio request to the exact reviewed manifest entries', () => {
+    const byId = new Map(audioManifest.clips.map((clip) => [clip.id, clip]));
+    const canonical = audioRequest.clipIds.map((id) => {
+      const { file, input, expectedPinyin } = byId.get(id)!;
+      return { id, file, input, expectedPinyin };
+    });
+    expect(audioRequest.status).toBe('requested');
+    expect(audioRequest.clipIds).toHaveLength(43);
+    expect(createHash('sha256').update(JSON.stringify(canonical)).digest('hex')).toBe(audioRequest.manifestFingerprint);
   });
 });

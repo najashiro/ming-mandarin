@@ -172,7 +172,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .mobile-nav { display: none; }
 
 @media (max-width: 800px) {
-  .page-main { padding-bottom: 96px; }
+  .page-main { padding-bottom: calc(96px + env(safe-area-inset-bottom)); }
   .shell { width: min(100% - 28px, 620px); }
   .topbar { height: 64px; grid-template-columns: 1fr auto; padding-inline: 16px; }
   .desktop-nav { display: none; }
@@ -188,7 +188,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
   .content-grid { grid-template-columns: 1fr; padding: 42px 0; }
   .today-card, .focus-card { padding: 25px 20px; }
   .module-grid { grid-template-columns: 1fr 1fr; }
-  .mobile-nav { position: fixed; inset: auto 0 0; z-index: 30; height: 68px; display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1px solid var(--line); background: rgba(252,250,245,.96); backdrop-filter: blur(15px); }
+  .mobile-nav { position: fixed; inset: auto 0 0; z-index: 30; height: calc(68px + env(safe-area-inset-bottom)); padding-bottom: env(safe-area-inset-bottom); display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1px solid var(--line); background: rgba(252,250,245,.96); backdrop-filter: blur(15px); }
   .mobile-nav a { display: grid; place-content: center; gap: 2px; text-align: center; color: var(--muted); font-size: 9px; font-weight: 700; }
   .mobile-nav a span { font: 18px/1 var(--font-hanzi), "Songti SC", "SimSun", serif; }
   .mobile-nav .is-active { color: var(--jade); }
@@ -418,7 +418,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .hanzi-picker-grid button.selected em { color: #d7eee7; }
 .hanzi-filter-empty { margin-top: 15px; padding: 18px; display: block !important; border: 1px dashed var(--line); border-radius: 8px; text-align: center; }
 .hanzi-filter-empty p { color: var(--muted); }
-.hanzi-character-hero { margin-top: 13px; padding: 24px; display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 25px; scroll-margin-top:92px; background: linear-gradient(135deg,rgba(255,255,255,.84),rgba(224,236,229,.7)); }
+.hanzi-character-hero { margin-top: 13px; padding: 24px; display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 25px; background: linear-gradient(135deg,rgba(255,255,255,.84),rgba(224,236,229,.7)); }
 .hanzi-glyph { width: 112px; height: 112px; display: grid; place-items: center; border: 1px solid rgba(162,58,44,.22); border-radius: 6px 22px 6px 22px; color: var(--ink); background: #fffdf7; font: 600 77px var(--font-hanzi), "Songti SC", "SimSun", serif; }
 .hanzi-character-copy { min-width: 0; }
 .hanzi-character-copy h2 { margin: 0; color: var(--jade); font: italic 700 27px Georgia,serif; }
@@ -430,10 +430,10 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .hanzi-character-meaning { margin: 2px 0 0; color: var(--muted); font-size: 14px; font-weight: 500; }
 .hanzi-character-meta { margin: 7px 0 0; color: var(--muted); font-size: 10px; font-weight: 700; }
 .hanzi-character-copy .source-note { margin: 10px 0 0; }
-.hanzi-tabs { margin-top: 18px; display: grid; grid-template-columns: repeat(4,1fr); border-bottom: 1px solid var(--line); }
+.hanzi-tabs { margin-top: 9px; display: grid; grid-template-columns: repeat(4,1fr); border-bottom: 1px solid var(--line); }
 .hanzi-tabs button { min-height: 50px; border: 0; border-bottom: 3px solid transparent; color: var(--muted); background: transparent; font: 750 12px system-ui; cursor: pointer; }
 .hanzi-tabs button.selected { border-color: var(--jade); color: var(--jade); }
-.hanzi-tab-panel { margin-top: 14px; min-height: 510px; }
+.hanzi-tab-panel { margin-top: 8px; min-height: 510px; }
 .hanzi-learn-panel { display: grid; grid-template-columns: minmax(300px,1.2fr) minmax(250px,.8fr); align-items: start; gap: 36px; }
 .hanzi-learn-visual { width: min(100%,420px); min-width: 0; position: relative; display: grid; justify-self: center; justify-items: center; }
 .hanzi-panel-copy { max-width: 470px; }

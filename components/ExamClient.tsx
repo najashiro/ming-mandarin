@@ -1,5 +1,5 @@
 'use client';
-import { Hanzi, hanziInputClass } from '@/components/Hanzi';
+import { Hanzi } from '@/components/Hanzi';
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -8,8 +8,9 @@ import type { CurriculumScope, HanziAssessmentScope } from '@/data/types';
 import { scopeDefinitions } from '@/seed/curriculum';
 import { SpeakButton } from './SpeakButton';
 import { trackAnalyticsEvent } from '@/lib/analytics/client';
+import { AnswerBlocks } from './games/shared/AnswerBlocks';
 
-type PublicQuestion = Omit<ExamQuestion, 'answer'>;
+type PublicQuestion = Omit<ExamQuestion, 'answer'> & { responseType: 'choice'|'hanzi_blocks'|'text'; blocks?: string[] };
 type ExamResult = {
   score: number;
   sectionScores: Record<ExamSection, number>;
@@ -77,7 +78,7 @@ export function ExamClient({ scope = 'l1' }: { scope?: HanziAssessmentScope }) {
     <div className="practice-top"><div><p className="eyebrow">EXAMEN EN CURSO</p><h2>{Object.keys(answers).length}/{questions.length} respondidas</h2></div><span>100 puntos</span></div>
     {questions.map((question, index) => <article className="exam-question" key={question.id}>
       <small>{index + 1} · {labels[question.section]} · {question.points} pt</small><p><Hanzi>{question.prompt}</Hanzi></p>
-      {question.audioText && <SpeakButton text={question.audioText}/>} {question.options ? <div className="option-grid">{question.options.map((option) => <label className={answers[question.id] === option ? 'selected' : ''} key={option}><input type="radio" name={question.id} value={option} checked={answers[question.id] === option} onChange={() => setAnswers((value) => ({ ...value, [question.id]: option }))}/><Hanzi>{option}</Hanzi></label>)}</div> : <input className={hanziInputClass(answers[question.id] ?? '')} value={answers[question.id] ?? ''} onChange={(event) => setAnswers((value) => ({ ...value, [question.id]: event.target.value }))} placeholder="Escribe tu respuesta"/>}
+      {question.audioText && <SpeakButton text={question.audioText}/>} {question.responseType === 'choice' && question.options ? <div className="option-grid">{question.options.map((option) => <label className={answers[question.id] === option ? 'selected' : ''} key={option}><input type="radio" name={question.id} value={option} checked={answers[question.id] === option} onChange={() => setAnswers((value) => ({ ...value, [question.id]: option }))}/><Hanzi>{option}</Hanzi></label>)}</div> : question.responseType === 'hanzi_blocks' && question.blocks ? <AnswerBlocks blocks={question.blocks} onChange={(answer) => setAnswers((value) => ({...value,[question.id]:answer}))}/> : <input value={answers[question.id] ?? ''} onChange={(event) => setAnswers((value) => ({ ...value, [question.id]: event.target.value }))} placeholder={question.section === 'pinyin' ? 'Escribe el pinyin' : 'Escribe tu respuesta'}/>}
     </article>)}
     {error && <p className="form-error">{error}</p>}
     <button className="button button-dark" disabled={busy} type="button" onClick={submit}>{busy ? 'Calificando…' : 'Enviar examen'}</button>

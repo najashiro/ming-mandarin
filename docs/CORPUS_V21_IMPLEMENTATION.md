@@ -1,5 +1,60 @@
 # Integración del corpus v2.1
 
+## Cierre posterior al último preview
+
+- **HEAD disponible al iniciar esta pasada:** `8e0b46c`. El hash observado en el
+  preview (`482125945bb4da911adf7ba3a8666a81194e797d`) no estaba presente en el
+  repositorio local, por lo que no se hizo reset ni se descartaron cambios.
+- **Activación puntual de audio:** el archivo
+  `.github/audio-requests/pr8-book-dialogues.json` fija un ID único, alcance,
+  modelo, voz, formato, 43 IDs y la huella
+  `291abde8e368636d43e02d15170dfd41ef2050276afcdab93f32fe703b360c90`.
+  Solo un push de ese archivo a la rama del PR activa el workflow; pushes de CSS,
+  componentes o MP3 no lo activan.
+- **Alcance pagado:** el generador acepta `--ids-file`, exige coincidencia exacta
+  y escribe checkpoints atómicos. El workflow hace checkout de `github.sha`,
+  valida la solicitud, genera solo los IDs aún ausentes, conserva checkpoints
+  como artefacto ante fallos, verifica decodificación/duración y publica mediante
+  push normal únicamente solicitud, manifiestos y MP3 autorizados.
+- **Estado real:** la solicitud queda en `requested`; en este entorno no hay
+  remoto Git ni sesión `gh`, así que no se pudo producir el push que dispara
+  Actions. Los 43 MP3 continúan pendientes y no se consideran generados.
+- **Encuadre Hanzi:** se eliminó la compensación CSS fija. Cada solicitud mide el
+  borde inferior real de `.topbar` y coloca `#hanzi-detail-start` a 6 px; una
+  única corrección adicional responde al cierre del teclado mediante
+  `visualViewport`, y las solicitudes anteriores se cancelan al cambiar rápido.
+  Se compactaron solamente las separaciones tarjeta–pestañas–visor y se añadió
+  soporte de safe area a la navegación inferior, sin reducir glifo ni cuadrícula.
+- **Teclado chino obligatorio:** se comprobaron y corrigieron `WordListening`,
+  Historia detective, Escena viva y Conversación: sus respuestas Hanzi usan
+  selección o bloques en todos los niveles. `PracticeEngine` usa bloques cuando
+  la respuesta esperada es china. Los exámenes reciben del servidor un
+  `responseType` explícito y bloques barajados sin serializar la clave; pinyin,
+  español y números conservan entradas de texto, y la calificación sigue en el
+  servidor. Escritura manual no se modificó.
+
+### Verificación de esta pasada
+
+- `query.py --validate` y 13 pruebas Python: aprobadas.
+- TypeScript, ESLint, 174 pruebas Vitest y `next build`: aprobados.
+- Dry-run con el archivo autorizado: 43 seleccionados, 43 pendientes y ningún
+  registro ajeno. No realizó llamadas pagadas.
+- E2E/capturas: las regresiones miden una separación de 4–8 px, reselección, dos
+  selecciones rápidas y ausencia de segundo salto. No se ejecutaron localmente
+  porque el contenedor sigue sin navegador y las descargas externas de Chromium
+  están bloqueadas; deben ejecutarse en Actions/preview después del push.
+
+### Paso externo aún necesario
+
+El **Push** de los commits de esta pasada a
+`codex/implementar-integracion-del-corpus-v2.1` es la activación autorizada,
+porque incluye por primera vez el archivo de solicitud. Debe realizarse con una
+credencial que permita disparar workflows; un push efectuado con un token que
+suprima eventos no iniciará Actions. Tras la ejecución todavía deben comprobarse
+el run identificable, el commit automático de MP3, el preview de ese commit y la
+reproducción. La verificación técnica no equivale a una escucha humana de la
+pronunciación.
+
 ## Corrección posterior del PR #8
 
 - **Commit de partida:** `1b1e9a3`.
@@ -20,10 +75,9 @@
   no se publican ni se completan por inferencia.
 - **Audio:** hay 43 clips de turnos del libro pendientes. El índice
   `mandarin-audio-available.json` evita ofrecer botones para archivos ausentes.
-  `.github/workflows/generate-corpus-v21-audio.yml` es manual, está restringido a
-  `codex/implementar-integracion-del-corpus-v2.1`, exige la confirmación
-  `GENERATE_43_BOOK_DIALOGUES`, usa el secreto solo en el paso TTS, verifica MP3
-  con ffmpeg/ffprobe y hace push normal a esa misma rama.
+  `.github/workflows/generate-corpus-v21-audio.yml` acepta la solicitud puntual
+  por push en `codex/implementar-integracion-del-corpus-v2.1`, usa el secreto solo
+  en el paso TTS, verifica MP3 con ffmpeg/ffprobe y hace push normal a esa rama.
 
 ### Pruebas reales de la corrección
 
@@ -39,13 +93,8 @@
   instalar Chromium. Las pruebas E2E dirigidas quedan versionadas para ejecutarse
   en CI/preview con navegador.
 
-### Acción mínima del propietario
-
-Después de subir estos commits a la rama del PR #8, abrir **Actions → Generate
-corpus v2.1 book-dialogue audio → Run workflow**, seleccionar exactamente
-`codex/implementar-integracion-del-corpus-v2.1` y escribir
-`GENERATE_43_BOOK_DIALOGUES`. No hay que copiar el secreto, crear otra clave,
-fusionar a `main` ni ejecutar el workflow desde un fork.
+La acción mínima vigente es el push descrito en «Paso externo aún necesario»;
+no hay que copiar el secreto, crear otra clave ni fusionar a `main`.
 
 ### Pendientes ajenos a esta pasada
 

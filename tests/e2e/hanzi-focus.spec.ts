@@ -12,7 +12,7 @@ async function expectDetailFocused(page: Page, character: string) {
     const visual = document.getElementById('hanzi-detail-start')!.getBoundingClientRect();
     const header = document.querySelector('.topbar')!.getBoundingClientRect();
     const gap = visual.top - header.bottom;
-    return scrollY > 100 && gap >= 8 && gap < 30;
+    return scrollY > 100 && gap >= 4 && gap <= 8;
   })).toBe(true);
   const position = await page.evaluate(() => {
     const visual = document.getElementById('hanzi-detail-start')!.getBoundingClientRect();
@@ -20,8 +20,8 @@ async function expectDetailFocused(page: Page, character: string) {
     return { scrollY, gap: visual.top - header.bottom };
   });
   expect(position.scrollY).toBeGreaterThan(100);
-  expect(position.gap).toBeGreaterThanOrEqual(0);
-  expect(position.gap).toBeLessThan(30);
+  expect(position.gap).toBeGreaterThanOrEqual(4);
+  expect(position.gap).toBeLessThanOrEqual(8);
 }
 
 test('focus=glyph muestra el glifo de 作, 家, 有 y 几 en Aprender', async ({ page }) => {
@@ -102,4 +102,15 @@ test('buscar y reseleccionar encuadra la tarjeta superior sin esperar los trazos
   await page.getByRole('option', { name: /zuò.*作/ }).click();
   await expectDetailFocused(page, '作');
   await expect(search).not.toBeFocused();
+});
+
+test('dos selecciones rápidas conservan el último Hanzi y no saltan al terminar los trazos', async ({ page }) => {
+  await page.goto('/study/l1-l2-l3/hanzi');
+  const search = page.getByRole('combobox', { name: 'Busca por pinyin' });
+  await search.fill('jia'); await page.getByRole('option', { name: /jiā.*家/ }).click();
+  await search.fill('you'); await page.getByRole('option', { name: /yǒu.*有/ }).click();
+  await expectDetailFocused(page, '有');
+  const initial = await page.evaluate(() => scrollY);
+  await expect(page.locator('#hanzi-glyph-focus .hanzi-writer-target svg')).toHaveCount(1);
+  expect(Math.abs((await page.evaluate(() => scrollY)) - initial)).toBeLessThanOrEqual(2);
 });

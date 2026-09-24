@@ -1,4 +1,4 @@
-import { readFile, mkdir, rename, writeFile } from 'node:fs/promises';
+import { copyFile, readFile, mkdir, rename, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import process from 'node:process';
@@ -20,6 +20,8 @@ const force = process.argv.includes('--force');
 const dryRun = process.argv.includes('--dry-run');
 const scope = process.argv.find((argument) => argument.startsWith('--scope='))?.split('=', 2)[1];
 const only = process.argv.find((argument) => argument.startsWith('--only='))?.split('=', 2)[1];
+const idsFile = process.argv.find((argument) => argument.startsWith('--ids-file='))?.split('=', 2)[1];
+const checkpointDirectory = process.argv.find((argument) => argument.startsWith('--checkpoint-dir='))?.split('=', 2)[1];
 const voice = 'marin';
 
 if (!apiKey && !dryRun) {
@@ -32,16 +34,24 @@ const manifests = await Promise.all(manifestDefinitions.filter(definition => !sc
   clips: JSON.parse(await readFile(definition.path, 'utf8')).clips,
 })));
 const clips = manifests.flatMap((manifest) => manifest.clips.map((clip) => ({ ...clip, directory: manifest.directory })));
-const selectedClips = only ? clips.filter((clip) => clip.id === only) : clips;
+const allowedIds = idsFile ? JSON.parse(await readFile(path.resolve(idsFile), 'utf8')) : null;
+if (allowedIds && (!Array.isArray(allowedIds) || allowedIds.some(id => typeof id !== 'string') || new Set(allowedIds).size !== allowedIds.length)) {
+  console.error('El archivo de IDs debe ser un array JSON de IDs únicos.'); process.exit(1);
+}
+const clipById = new Map(clips.map((clip) => [clip.id, clip]));
+const selectedClips = allowedIds ? allowedIds.map((id) => clipById.get(id)).filter(Boolean) : only ? clips.filter((clip) => clip.id === only) : clips;
 
 if (only && !selectedClips.length) {
   console.error(`No existe el clip solicitado: ${only}`);
   process.exit(1);
 }
+if (allowedIds && (selectedClips.length !== allowedIds.length || selectedClips.some((clip, index) => clip.id !== allowedIds[index]))) {
+  console.error('La selección efectiva no coincide exactamente y en orden con los IDs autorizados.'); process.exit(1);
+}
 
 if (dryRun) {
   const existing = selectedClips.filter(clip => existsSync(path.join(clip.directory, clip.file))).length;
-  const phrases = selectedClips.filter(clip => clip.id.startsWith('time-s-')).length;
+  const phrases = selectedClips.filter(clip => /(?:^time-s-|^l[123]-s-)/.test(clip.id)).length;
   console.log(`Dry-run: ${selectedClips.length} clips; ${existing} existentes; ${selectedClips.length-existing} faltantes; ${phrases} frases completas; ${selectedClips.length-phrases} tokens/pregunta.`);
   process.exit(0);
 }
@@ -91,6 +101,10 @@ while (cursor < selectedClips.length) {
   const temporary = `${destination}.tmp-${process.pid}`;
   await writeFile(temporary, Buffer.from(await response.arrayBuffer()));
   await rename(temporary, destination);
+  if (checkpointDirectory) {
+    await mkdir(checkpointDirectory, { recursive: true });
+    await copyFile(destination, path.join(checkpointDirectory, clip.file));
+  }
   generated++;
   if (generated % 25 === 0) console.log(`Generados: ${generated}/${selectedClips.length}`);
 }
