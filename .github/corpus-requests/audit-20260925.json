@@ -1,0 +1,8 @@
+{
+  "requestId": "corpus-source-audit-20260925",
+  "branch": "audit/corpus-l1-l3-20260925",
+  "status": "requested",
+  "scope": "regenerate-source-audit-projection-and-reports-only",
+  "paidApiCalls": false,
+  "productionChanges": false
+}

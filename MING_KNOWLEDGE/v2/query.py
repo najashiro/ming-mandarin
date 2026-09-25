@@ -5,25 +5,39 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 CACHE = ROOT / '.cache'
 DEFAULT_FIELDS = {
-    'matrix': ['id','hanzi','pinyin','spanish','lessons','roles','phrase_count','primary_phrase','ming_vocabulary','ming_hanzi','ming_game_bank'],
-    'vocabulary': ['id','hanzi','pinyin','spanish','lessons','roles','phrase_count','primary_phrase_id','radical_ids'],
-    'phrases': ['id','hanzi','lessons','kinds','vocab_ids','grammar_ids','dialogue_ids'],
-    'hanzi': ['id','hanzi','source_writing_target','worksheet_refs','runtime_units','documented_radical_ids','proposed_radical_ids'],
+    'matrix': ['id','hanzi','pinyin','spanish','lessons','roles','phrase_count','primary_phrase','ming_vocabulary','ming_hanzi','ming_game_bank','textbook_table_rows'],
+    'vocabulary': ['id','hanzi','pinyin','spanish','lessons','roles','phrase_count','primary_phrase_id','radical_ids','textbook_table_rows','curriculum_links'],
+    'phrases': ['id','hanzi','pinyin','pinyin_status','lessons','kinds','vocab_ids','grammar_ids','dialogue_ids'],
+    'hanzi': ['id','hanzi','source_writing_target','worksheet_refs','worksheet_occurrences','readings','runtime_units','documented_radical_ids','proposed_radical_ids'],
     'radical_matrix': ['id','radical','name','meaning','metadata_status','lessons','theory','practice','worksheet','exam','exam_characters','vocab_count','phrase_count'],
     'radical_catalog': ['id','radical','name_source','meaning_source','metadata_status','lessons','roles','exam_characters'],
     'radical_assessment_items': ['id','hanzi','source_id','page','radical_candidate','candidate_status','radical_meaning_source','source_answer_key_supplied','automatic_grading_approved'],
     'exercises': ['id','source_id','page','lesson','section','label_source','answer_status'],
-    'page_inventory': ['id','source_id','pdf_page','printed_page','status'],
+    'page_inventory': ['id','source_id','pdf_page','printed_page','status','textbook_table_row_ids'],
+    'textbook_table_rows': ['id','table_id','lesson','text','list_type','printed_number','subentry_index','hanzi','pinyin_source','source_id','page','printed_page'],
 }
+
 
 def ensure_cache(force: bool = False) -> None:
     manifest = ROOT / 'source/manifest.json'
-    dependencies = [manifest, ROOT / 'compile.py', ROOT / 'pack.py', ROOT / 'radicals.py', ROOT / 'radicals-source.json']
-    fingerprint = hashlib.sha256(b''.join(path.read_bytes() for path in dependencies)).hexdigest()
+    metadata = json.loads(manifest.read_text(encoding='utf-8'))
+    dependencies = [manifest, ROOT/'compile.py', ROOT/'pack.py', ROOT/'radicals.py', ROOT/'radicals-source.json',
+                    ROOT/'query.py', ROOT/'source_audit.py', ROOT/'source-tables.json']
+    # A changed pack part must invalidate the cache even if its manifest was not updated.
+    for part in metadata['parts']:
+        path = (ROOT / part['path']).resolve()
+        if not path.is_relative_to(ROOT / 'source'):
+            raise ValueError('Source pack path escapes source directory')
+        dependencies.append(path)
+    digest = hashlib.sha256()
+    for path in dependencies:
+        digest.update(str(path.relative_to(ROOT)).encode('utf-8') + b'\0' + path.read_bytes() + b'\0')
+    fingerprint = digest.hexdigest()
     marker = CACHE / 'fingerprint.txt'
     if not force and marker.exists() and marker.read_text() == fingerprint:
         return
     CACHE.mkdir(exist_ok=True)
+    marker.unlink(missing_ok=True)
     previous = os.environ.get('MING_CORPUS_OUT')
     os.environ['MING_CORPUS_OUT'] = str(CACHE)
     try:
@@ -36,10 +50,13 @@ def ensure_cache(force: bool = False) -> None:
             os.environ['MING_CORPUS_OUT'] = previous
     from radicals import enrich_cache
     enrich_cache(CACHE)
+    from source_audit import enrich_cache as enrich_source_audit
+    enrich_source_audit(CACHE)
     validation = read_table('validation')
     if not validation.get('passed'):
         raise ValueError('Corpus validation failed; see generated validation.json')
     marker.write_text(fingerprint)
+
 
 def read_table(name: str):
     if not name.replace('_', '').isalnum():
@@ -49,15 +66,17 @@ def read_table(name: str):
         raise ValueError(f'Unknown table: {name}')
     return json.loads(path.read_text(encoding='utf-8'))
 
+
 def selected(row: dict, fields: list[str] | None) -> dict:
     return {key: row.get(key) for key in fields} if fields else row
+
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--word', help='Exact Hanzi or vocabulary ID, e.g. 工作 or v-工作')
     ap.add_argument('--phrase', help='Exact phrase ID or Chinese text')
     ap.add_argument('--radical', help='Exact radical glyph or ID, e.g. 讠 or RAD-U8BA0')
-    ap.add_argument('--hanzi', help='Exact character glyph or c- ID; shows documentary radical links')
+    ap.add_argument('--hanzi', help='Exact character glyph or c- ID; includes worksheet evidence')
     ap.add_argument('--source', help='Source ID; combine with --page')
     ap.add_argument('--page', type=int)
     ap.add_argument('--table', default='matrix')
@@ -104,8 +123,7 @@ def main() -> None:
                   'radical_links': [r for r in read_table('radical_hanzi_links') if r['hanzi_id'] == key]}
     elif args.word:
         vid = args.word if args.word.startswith('v-') else 'v-' + args.word
-        rows = read_table('vocabulary')
-        word = next((row for row in rows if row['id'] == vid), None)
+        word = next((row for row in read_table('vocabulary') if row['id'] == vid), None)
         if word is None:
             result = {'found': False, 'word': args.word, 'note': 'No exact record; do not invent source data.'}
         else:
@@ -114,7 +132,7 @@ def main() -> None:
             show = ids[args.offset:args.offset + args.limit]
             result = {'found': True, 'word': selected(word, None if args.full else DEFAULT_FIELDS['vocabulary']),
                       'runtime': word['runtime'], 'source_refs': word['source_refs'],
-                      'phrases_total': len(ids), 'phrases': [selected(pp[p], None if args.full else ['id','hanzi','kinds','source_refs']) for p in show],
+                      'phrases_total': len(ids), 'phrases': [selected(pp[p], None if args.full else ['id','hanzi','pinyin','pinyin_status','kinds','source_refs']) for p in show],
                       'next_offset': args.offset + args.limit if args.offset + args.limit < len(ids) else None}
     elif args.phrase:
         pp = read_table('phrases')
@@ -126,16 +144,16 @@ def main() -> None:
             result = {'found': True, 'phrase': phrase, 'source_occurrences_total':len(evidence),
                       'source_occurrences': evidence[args.offset:args.offset + args.limit]}
     elif args.source:
-        sources = read_table('sources')
-        source = next((s for s in sources if s['id'] == args.source), None)
+        source = next((s for s in read_table('sources') if s['id'] == args.source), None)
         if source is None:
             raise ValueError('Unknown source ID')
         if args.page is not None and not 1 <= args.page <= source['pages']:
             raise ValueError('Page outside source bounds')
         result = {'source': source, 'page': args.page, 'tables': {}}
-        for name in ['vocabulary_evidence','phrase_evidence','hanzi_evidence','grammar_evidence','exercises','native_transcripts','radical_evidence','radical_assessment_items']:
+        for name in ['vocabulary_evidence','phrase_evidence','hanzi_evidence','grammar_evidence','exercises','native_transcripts','radical_evidence','radical_assessment_items','textbook_table_rows','worksheet_inventory','source_pinyin_recoveries']:
             rows = [r for r in read_table(name) if r['source_id'] == args.source and (args.page is None or r['page'] == args.page)]
-            result['tables'][name] = {'total':len(rows), 'rows':rows[args.offset:args.offset + args.limit]}
+            result['tables'][name] = {'total':len(rows),'rows':rows[args.offset:args.offset + args.limit],
+                                     'next_offset':args.offset + args.limit if args.offset + args.limit < len(rows) else None}
     else:
         rows = read_table(args.table)
         if not isinstance(rows, list):
