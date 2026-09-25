@@ -1,0 +1,55 @@
+name: Corpus source audit (offline, no paid APIs)
+
+on:
+  push:
+    branches: [audit/corpus-l1-l3-20260925]
+  pull_request:
+    paths:
+      - 'MING_KNOWLEDGE/**'
+      - 'scripts/export-corpus-v21.py'
+      - 'data/corpus-v21-public.json'
+      - '.github/workflows/corpus-source-audit.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: corpus-source-audit-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validate and export documentary corpus
+        run: |
+          python3 MING_KNOWLEDGE/v2/query.py --validate
+          python3 MING_KNOWLEDGE/v2/query.py --export "$RUNNER_TEMP/corpus-audit" >/dev/null
+      - name: Verify corpus tests
+        run: python3 -m unittest discover -s MING_KNOWLEDGE/v2 -p 'test_*.py'
+      - name: Audit tables when available
+        run: |
+          if [ -f MING_KNOWLEDGE/v2/audit_source_tables.py ]; then
+            python3 MING_KNOWLEDGE/v2/audit_source_tables.py --check
+          else
+            python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          root=Path(os.environ['RUNNER_TEMP'])/'corpus-audit'
+          load=lambda n: json.loads((root/(n+'.json')).read_text())
+          for n in ['vocabulary_evidence','hanzi_evidence','phrase_evidence']:
+              rows=load(n)
+              if n=='vocabulary_evidence':
+                  rows=[r for r in rows if r.get('source_id','').startswith('SRC-BOOK') and r.get('role') in ['core_textbook','supplementary_textbook','proper_name']]
+              elif n=='hanzi_evidence':
+                  rows=[r for r in rows if r.get('hanzi')=='太']
+              else:
+                  rows=[r for r in rows if r.get('hanzi') in ['我家有五口人。','你有弟弟吗？','我没有弟弟，我有一个哥哥。','我们家一共有五口人，爸爸、妈妈、哥哥和我，还有约翰（John）。']]
+              print(n, json.dumps(rows,ensure_ascii=False))
+          print('index',json.dumps(load('index'),ensure_ascii=False))
+          PY
+          fi
