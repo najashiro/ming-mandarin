@@ -1,8 +1,13 @@
+import { Suspense } from 'react';
 import { notFound } from 'next/navigation';
-import { CurriculumNav } from '@/components/CurriculumNav';
-import { SiteShell, LessonHeader } from '@/components/SiteShell';
-import { VocabularyExplorer } from '@/components/VocabularyExplorer';
-import { getCurriculum, isCurriculumScope } from '@/seed/curriculum';
-import { publicCorpusForScope } from '@/lib/corpus-v21';
-
-export default async function ScopeVocabularyPage({ params }: { params: Promise<{ scope: string }> }) { const { scope: rawScope } = await params; if (!isCurriculumScope(rawScope)) notFound(); const data=getCurriculum(rawScope); const vocabulary=publicCorpusForScope(rawScope).vocabulary.map((row)=>({id:row.id,hanzi:row.hanzi,pinyin:row.pinyin!,translation:row.spanish!})); return <SiteShell><main><LessonHeader eyebrow={`${data.definition.shortLabel} · 词汇`} title="Vocabulario del alcance" description="Entradas del corpus v2.1, sin mezclar lecciones fuera del alcance elegido."/><CurriculumNav scope={rawScope} section="vocabulary"/><VocabularyExplorer vocabulary={vocabulary} route={`/study/${rawScope}/vocabulary`}/></main></SiteShell>; }
+import { getCurrentUser } from '@/app/auth';
+import { SiteShell } from '@/components/SiteShell';
+import { ActiveVocabulary } from '@/components/vocabulary/ActiveVocabulary';
+import { isCurriculumScope } from '@/seed/curriculum';
+export default async function ScopeVocabularyPage({ params }: { params: Promise<{ scope: string }> }) {
+  const { scope } = await params;
+  if (!isCurriculumScope(scope)) notFound();
+  const lesson = scope === 'l1-l2-l3' ? 'l3' : scope === 'l1-l2' ? 'l2' : scope;
+  const user = await getCurrentUser();
+  return <SiteShell><main><Suspense fallback={<p className="shell">Cargando vocabulario…</p>}><ActiveVocabulary key={`${scope}:${user?.userId ?? 'guest'}`} scope={lesson} userId={user?.userId ?? 'guest'}/></Suspense></main></SiteShell>;
+}

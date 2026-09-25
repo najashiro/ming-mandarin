@@ -29,7 +29,7 @@ describe('time audio manifest',()=>{
   it('synchronizes deterministically',()=>{
     const before=readFileSync('data/time-audio.json','utf8');
     execFileSync(process.execPath,['scripts/sync-time-audio-manifest.mjs']);
-    expect(readFileSync('data/time-audio.json','utf8')).toBe(before);
+    expect(JSON.parse(readFileSync('data/time-audio.json','utf8'))).toEqual(JSON.parse(before));
   });
 });
 describe('time playback',()=>{

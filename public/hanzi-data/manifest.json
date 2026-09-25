@@ -814,5 +814,13 @@
   "差": {
     "available": true,
     "strokeCount": 9
+  },
+  "宠": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "物": {
+    "available": true,
+    "strokeCount": 8
   }
 }

@@ -1,0 +1,3044 @@
+{
+  "total": 434,
+  "failures": [],
+  "results": [
+    {
+      "clipId": "l1-g-nihao.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.07758341273032947,
+      "peak": 0.3702945113182068
+    },
+    {
+      "clipId": "l1-g-nimenhao.mp3",
+      "decoded": true,
+      "duration": 1.656,
+      "rms": 0.055180484028930214,
+      "peak": 0.3377138078212738
+    },
+    {
+      "clipId": "l1-g-ninhao.mp3",
+      "decoded": true,
+      "duration": 0.864,
+      "rms": 0.08585860595375398,
+      "peak": 0.3281341791152954
+    },
+    {
+      "clipId": "l1-h-020ff479d2.mp3",
+      "decoded": true,
+      "duration": 0.912,
+      "rms": 0.06985673265134164,
+      "peak": 0.4106927514076233
+    },
+    {
+      "clipId": "l1-h-8294db3a20.mp3",
+      "decoded": true,
+      "duration": 0.648,
+      "rms": 0.0750516686418986,
+      "peak": 0.27969253063201904
+    },
+    {
+      "clipId": "l1-h-90fbc9b1ac.mp3",
+      "decoded": true,
+      "duration": 1.248,
+      "rms": 0.04734053782830054,
+      "peak": 0.36448511481285095
+    },
+    {
+      "clipId": "l1-h-9689e457ef.mp3",
+      "decoded": true,
+      "duration": 1.848,
+      "rms": 0.042812480478791395,
+      "peak": 0.23425497114658356
+    },
+    {
+      "clipId": "l1-h-a81c2ab80e.mp3",
+      "decoded": true,
+      "duration": 1.464,
+      "rms": 0.06195688987454726,
+      "peak": 0.37176352739334106
+    },
+    {
+      "clipId": "l1-h-de338f834a.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.05600442458816936,
+      "peak": 0.4077672064304352
+    },
+    {
+      "clipId": "l1-h-f796090d01.mp3",
+      "decoded": true,
+      "duration": 1.152,
+      "rms": 0.060115566732781726,
+      "peak": 0.2893238365650177
+    },
+    {
+      "clipId": "l1-h-u4e00.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.022135313643007012,
+      "peak": 0.10396410524845123
+    },
+    {
+      "clipId": "l1-h-u4e03.mp3",
+      "decoded": true,
+      "duration": 1.656,
+      "rms": 0.05323030435787659,
+      "peak": 0.28983455896377563
+    },
+    {
+      "clipId": "l1-h-u4e09.mp3",
+      "decoded": true,
+      "duration": 1.8,
+      "rms": 0.04976158632342602,
+      "peak": 0.5568872690200806
+    },
+    {
+      "clipId": "l1-h-u4e0a.mp3",
+      "decoded": true,
+      "duration": 0.72,
+      "rms": 0.07086175442354883,
+      "peak": 0.41571104526519775
+    },
+    {
+      "clipId": "l1-h-u4e0b.mp3",
+      "decoded": true,
+      "duration": 1.416,
+      "rms": 0.04968798210884689,
+      "peak": 0.45235374569892883
+    },
+    {
+      "clipId": "l1-h-u4e0d.mp3",
+      "decoded": true,
+      "duration": 1.512,
+      "rms": 0.047762482007929194,
+      "peak": 0.3073831796646118
+    },
+    {
+      "clipId": "l1-h-u4e48.mp3",
+      "decoded": true,
+      "duration": 0.816,
+      "rms": 0.06640912937304352,
+      "peak": 0.2981080412864685
+    },
+    {
+      "clipId": "l1-h-u4e5d.mp3",
+      "decoded": true,
+      "duration": 1.32,
+      "rms": 0.041594020085596366,
+      "peak": 0.34790077805519104
+    },
+    {
+      "clipId": "l1-h-u4e5f.mp3",
+      "decoded": true,
+      "duration": 1.056,
+      "rms": 0.06416058398372441,
+      "peak": 0.3420642614364624
+    },
+    {
+      "clipId": "l1-h-u4e8c.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.05851967510891166,
+      "peak": 0.5946768522262573
+    },
+    {
+      "clipId": "l1-h-u4e94.mp3",
+      "decoded": true,
+      "duration": 2.208,
+      "rms": 0.03552958195052833,
+      "peak": 0.2511638104915619
+    },
+    {
+      "clipId": "l1-h-u4ec0.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.052693900194205834,
+      "peak": 0.32232487201690674
+    },
+    {
+      "clipId": "l1-h-u4ed6.mp3",
+      "decoded": true,
+      "duration": 1.248,
+      "rms": 0.044477895989167314,
+      "peak": 0.3422660827636719
+    },
+    {
+      "clipId": "l1-h-u516b.mp3",
+      "decoded": true,
+      "duration": 1.704,
+      "rms": 0.05048078522629681,
+      "peak": 0.40864431858062744
+    },
+    {
+      "clipId": "l1-h-u516d.mp3",
+      "decoded": true,
+      "duration": 1.416,
+      "rms": 0.05619291638295627,
+      "peak": 0.37392887473106384
+    },
+    {
+      "clipId": "l1-h-u5174.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.061107387157945704,
+      "peak": 0.31773120164871216
+    },
+    {
+      "clipId": "l1-h-u518d.mp3",
+      "decoded": true,
+      "duration": 2.016,
+      "rms": 0.04448183459565795,
+      "peak": 0.5323109030723572
+    },
+    {
+      "clipId": "l1-h-u5341.mp3",
+      "decoded": true,
+      "duration": 1.608,
+      "rms": 0.05171768862342658,
+      "peak": 0.24634148180484772
+    },
+    {
+      "clipId": "l1-h-u5343.mp3",
+      "decoded": true,
+      "duration": 1.32,
+      "rms": 0.05262436848433907,
+      "peak": 0.34957578778266907
+    },
+    {
+      "clipId": "l1-h-u5348.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.07235199477364354,
+      "peak": 0.44901278614997864
+    },
+    {
+      "clipId": "l1-h-u540d.mp3",
+      "decoded": true,
+      "duration": 1.32,
+      "rms": 0.0819537773871243,
+      "peak": 0.28481525182724
+    },
+    {
+      "clipId": "l1-h-u56db.mp3",
+      "decoded": true,
+      "duration": 0.864,
+      "rms": 0.0634510384909701,
+      "peak": 0.3419189751148224
+    },
+    {
+      "clipId": "l1-h-u5728.mp3",
+      "decoded": true,
+      "duration": 0.912,
+      "rms": 0.052291107389267094,
+      "peak": 0.5566099286079407
+    },
+    {
+      "clipId": "l1-h-u5750.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.05898887407321541,
+      "peak": 0.3422822952270508
+    },
+    {
+      "clipId": "l1-h-u592a.mp3",
+      "decoded": true,
+      "duration": 1.368,
+      "rms": 0.033751384058313585,
+      "peak": 0.31817570328712463
+    },
+    {
+      "clipId": "l1-h-u5b57.mp3",
+      "decoded": true,
+      "duration": 0.768,
+      "rms": 0.03829850760228985,
+      "peak": 0.248952254652977
+    },
+    {
+      "clipId": "l1-h-u5b89.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.0629460571436256,
+      "peak": 0.4737323224544525
+    },
+    {
+      "clipId": "l1-h-u5e08.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.05091860079689903,
+      "peak": 0.3433957099914551
+    },
+    {
+      "clipId": "l1-h-u5f88.mp3",
+      "decoded": true,
+      "duration": 0.912,
+      "rms": 0.054580615419040496,
+      "peak": 0.2934495508670807
+    },
+    {
+      "clipId": "l1-h-u600e.mp3",
+      "decoded": true,
+      "duration": 0.96,
+      "rms": 0.054232656579734015,
+      "peak": 0.3543711304664612
+    },
+    {
+      "clipId": "l1-h-u665a.mp3",
+      "decoded": true,
+      "duration": 1.152,
+      "rms": 0.050706242241187444,
+      "peak": 0.45505934953689575
+    },
+    {
+      "clipId": "l1-h-u6700.mp3",
+      "decoded": true,
+      "duration": 1.32,
+      "rms": 0.0473401279254638,
+      "peak": 0.3417428731918335
+    },
+    {
+      "clipId": "l1-h-u6837.mp3",
+      "decoded": true,
+      "duration": 1.056,
+      "rms": 0.0635445552175862,
+      "peak": 0.673380434513092
+    },
+    {
+      "clipId": "l1-h-u767e.mp3",
+      "decoded": true,
+      "duration": 1.464,
+      "rms": 0.04139049581606532,
+      "peak": 0.6492686867713928
+    },
+    {
+      "clipId": "l1-h-u8001.mp3",
+      "decoded": true,
+      "duration": 1.608,
+      "rms": 0.052328784582400784,
+      "peak": 0.3533933460712433
+    },
+    {
+      "clipId": "l1-h-u89c1.mp3",
+      "decoded": true,
+      "duration": 1.056,
+      "rms": 0.05151656322386252,
+      "peak": 0.4267634153366089
+    },
+    {
+      "clipId": "l1-h-u8ba4.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.042554695124174306,
+      "peak": 0.4052130877971649
+    },
+    {
+      "clipId": "l1-h-u8bc6.mp3",
+      "decoded": true,
+      "duration": 2.568,
+      "rms": 0.03760950379855013,
+      "peak": 0.28085124492645264
+    },
+    {
+      "clipId": "l1-h-u8bf7.mp3",
+      "decoded": true,
+      "duration": 1.512,
+      "rms": 0.055817379610062945,
+      "peak": 0.3353819251060486
+    },
+    {
+      "clipId": "l1-h-u8c22.mp3",
+      "decoded": true,
+      "duration": 1.368,
+      "rms": 0.043539068328881804,
+      "peak": 0.34312185645103455
+    },
+    {
+      "clipId": "l1-h-u8fd1.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.051348804757372565,
+      "peak": 0.29113611578941345
+    },
+    {
+      "clipId": "l1-h-u8fdb.mp3",
+      "decoded": true,
+      "duration": 0.864,
+      "rms": 0.040225323429721696,
+      "peak": 0.26030656695365906
+    },
+    {
+      "clipId": "l1-h-u95ee.mp3",
+      "decoded": true,
+      "duration": 0.864,
+      "rms": 0.060790536201693245,
+      "peak": 0.6187222003936768
+    },
+    {
+      "clipId": "l1-h-u9ad8.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.05784797201850703,
+      "peak": 0.40127241611480713
+    },
+    {
+      "clipId": "l1-s-139bd71cb9.mp3",
+      "decoded": true,
+      "duration": 3.36,
+      "rms": 0.07403440291294042,
+      "peak": 0.43109938502311707
+    },
+    {
+      "clipId": "l1-s-1701e114c1.mp3",
+      "decoded": true,
+      "duration": 2.4,
+      "rms": 0.06766459922310726,
+      "peak": 0.45544859766960144
+    },
+    {
+      "clipId": "l1-s-2c98627679.mp3",
+      "decoded": true,
+      "duration": 2.856,
+      "rms": 0.08027711818211533,
+      "peak": 0.3790147006511688
+    },
+    {
+      "clipId": "l1-s-341ef2bd7f.mp3",
+      "decoded": true,
+      "duration": 3.36,
+      "rms": 0.10408152330805717,
+      "peak": 0.8220046162605286
+    },
+    {
+      "clipId": "l1-s-3af92dd514.mp3",
+      "decoded": true,
+      "duration": 2.208,
+      "rms": 0.08012946101293844,
+      "peak": 0.4657709002494812
+    },
+    {
+      "clipId": "l1-s-3d0f83bd5d.mp3",
+      "decoded": true,
+      "duration": 3.048,
+      "rms": 0.07088340113585848,
+      "peak": 0.35373932123184204
+    },
+    {
+      "clipId": "l1-s-8871d10c41.mp3",
+      "decoded": true,
+      "duration": 2.16,
+      "rms": 0.05806472466755462,
+      "peak": 0.280036985874176
+    },
+    {
+      "clipId": "l1-s-91eea50d35.mp3",
+      "decoded": true,
+      "duration": 2.016,
+      "rms": 0.06952785378617311,
+      "peak": 0.5029072165489197
+    },
+    {
+      "clipId": "l1-s-b40613b837.mp3",
+      "decoded": true,
+      "duration": 1.608,
+      "rms": 0.04463397748588117,
+      "peak": 0.32335472106933594
+    },
+    {
+      "clipId": "l1-s-ba34dc0506.mp3",
+      "decoded": true,
+      "duration": 3.312,
+      "rms": 0.07434035599368446,
+      "peak": 0.3502170443534851
+    },
+    {
+      "clipId": "l1-s-cef4250ea6.mp3",
+      "decoded": true,
+      "duration": 4.056,
+      "rms": 0.08628352582430622,
+      "peak": 0.5086477994918823
+    },
+    {
+      "clipId": "l1-s-good-you.mp3",
+      "decoded": true,
+      "duration": 2.304,
+      "rms": 0.08035397801540994,
+      "peak": 0.46994465589523315
+    },
+    {
+      "clipId": "l1-s-linna-home.mp3",
+      "decoded": true,
+      "duration": 1.608,
+      "rms": 0.0639671987569219,
+      "peak": 0.24692459404468536
+    },
+    {
+      "clipId": "l1-s-meet-too.mp3",
+      "decoded": true,
+      "duration": 2.448,
+      "rms": 0.08278816506161542,
+      "peak": 0.4791709780693054
+    },
+    {
+      "clipId": "l1-s-meet.mp3",
+      "decoded": true,
+      "duration": 3,
+      "rms": 0.07916286932867375,
+      "peak": 0.5898594856262207
+    },
+    {
+      "clipId": "l1-s-name-question.mp3",
+      "decoded": true,
+      "duration": 3.864,
+      "rms": 0.06601844775013362,
+      "peak": 0.42768415808677673
+    },
+    {
+      "clipId": "l1-s-please-enter.mp3",
+      "decoded": true,
+      "duration": 1.512,
+      "rms": 0.05647518767314743,
+      "peak": 0.27725088596343994
+    },
+    {
+      "clipId": "l1-s-please-sit.mp3",
+      "decoded": true,
+      "duration": 1.416,
+      "rms": 0.049919332835095566,
+      "peak": 0.2843096852302551
+    },
+    {
+      "clipId": "l1-s-recent.mp3",
+      "decoded": true,
+      "duration": 1.92,
+      "rms": 0.06414106295727116,
+      "peak": 0.2468908280134201
+    },
+    {
+      "clipId": "l1-s-surname.mp3",
+      "decoded": true,
+      "duration": 3.504,
+      "rms": 0.08006383506599876,
+      "peak": 0.4310469925403595
+    },
+    {
+      "clipId": "l1-s-thanks.mp3",
+      "decoded": true,
+      "duration": 1.32,
+      "rms": 0.038419688763259276,
+      "peak": 0.3125835657119751
+    },
+    {
+      "clipId": "l1-s-wojiao-madawei.mp3",
+      "decoded": true,
+      "duration": 2.52,
+      "rms": 0.07822726908619765,
+      "peak": 0.45086240768432617
+    },
+    {
+      "clipId": "l1-v-0805949359.mp3",
+      "decoded": true,
+      "duration": 1.368,
+      "rms": 0.05883101000221023,
+      "peak": 0.5181439518928528
+    },
+    {
+      "clipId": "l1-v-1599165246.mp3",
+      "decoded": true,
+      "duration": 1.32,
+      "rms": 0.052978989472385704,
+      "peak": 0.2518611252307892
+    },
+    {
+      "clipId": "l1-v-2fda3d6ec6.mp3",
+      "decoded": true,
+      "duration": 1.056,
+      "rms": 0.06626168132277735,
+      "peak": 0.2833423614501953
+    },
+    {
+      "clipId": "l1-v-30160a21b9.mp3",
+      "decoded": true,
+      "duration": 0.96,
+      "rms": 0.05520980485880964,
+      "peak": 0.34862789511680603
+    },
+    {
+      "clipId": "l1-v-32f281d035.mp3",
+      "decoded": true,
+      "duration": 2.448,
+      "rms": 0.08692383838011586,
+      "peak": 0.4170818626880646
+    },
+    {
+      "clipId": "l1-v-3bd116fe41.mp3",
+      "decoded": true,
+      "duration": 2.112,
+      "rms": 0.0542771485557083,
+      "peak": 0.4702063202857971
+    },
+    {
+      "clipId": "l1-v-64619c91b0.mp3",
+      "decoded": true,
+      "duration": 1.608,
+      "rms": 0.06245606780287357,
+      "peak": 0.42946940660476685
+    },
+    {
+      "clipId": "l1-v-79176103e6.mp3",
+      "decoded": true,
+      "duration": 1.464,
+      "rms": 0.047825755256687544,
+      "peak": 0.26184383034706116
+    },
+    {
+      "clipId": "l1-v-7a424449a3.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.079069599406711,
+      "peak": 0.23893247544765472
+    },
+    {
+      "clipId": "l1-v-7f2fa5ddbe.mp3",
+      "decoded": true,
+      "duration": 1.464,
+      "rms": 0.03885649868838662,
+      "peak": 0.3531626760959625
+    },
+    {
+      "clipId": "l1-v-8c73d90eca.mp3",
+      "decoded": true,
+      "duration": 1.32,
+      "rms": 0.06204007547453682,
+      "peak": 0.381217360496521
+    },
+    {
+      "clipId": "l1-v-91c76e0b5a.mp3",
+      "decoded": true,
+      "duration": 1.152,
+      "rms": 0.06941876471669149,
+      "peak": 0.46897265315055847
+    },
+    {
+      "clipId": "l1-v-91e31a915f.mp3",
+      "decoded": true,
+      "duration": 1.464,
+      "rms": 0.046554536426800124,
+      "peak": 0.24853862822055817
+    },
+    {
+      "clipId": "l1-v-9210177e23.mp3",
+      "decoded": true,
+      "duration": 1.512,
+      "rms": 0.0738745126673157,
+      "peak": 0.5713946223258972
+    },
+    {
+      "clipId": "l1-v-977b5d627b.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.05866399524472817,
+      "peak": 0.28048527240753174
+    },
+    {
+      "clipId": "l1-v-9ba56bfa88.mp3",
+      "decoded": true,
+      "duration": 1.92,
+      "rms": 0.06061815374549344,
+      "peak": 0.37903523445129395
+    },
+    {
+      "clipId": "l1-v-9bacce4cba.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.06344879522381623,
+      "peak": 0.3411240577697754
+    },
+    {
+      "clipId": "l1-v-a0ed74f44b.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.06328284312850974,
+      "peak": 0.44291719794273376
+    },
+    {
+      "clipId": "l1-v-ae59aa3d0c.mp3",
+      "decoded": true,
+      "duration": 1.512,
+      "rms": 0.06370361291449825,
+      "peak": 0.4534350633621216
+    },
+    {
+      "clipId": "l1-v-c02ed4f460.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.06689675554250384,
+      "peak": 0.4309037923812866
+    },
+    {
+      "clipId": "l1-v-dcf66dcd60.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.061300923356860805,
+      "peak": 0.30614665150642395
+    },
+    {
+      "clipId": "l1-v-e.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.07846603393209682,
+      "peak": 0.50230473279953
+    },
+    {
+      "clipId": "l1-v-eb5a4052b2.mp3",
+      "decoded": true,
+      "duration": 2.304,
+      "rms": 0.07164450174555459,
+      "peak": 0.7775459885597229
+    },
+    {
+      "clipId": "l1-v-ee48404aa1.mp3",
+      "decoded": true,
+      "duration": 0.864,
+      "rms": 0.06778916101553427,
+      "peak": 0.3769785165786743
+    },
+    {
+      "clipId": "l1-v-f9db359922.mp3",
+      "decoded": true,
+      "duration": 0.912,
+      "rms": 0.06054519315346215,
+      "peak": 0.3513925075531006
+    },
+    {
+      "clipId": "l1-v-gaoxing.mp3",
+      "decoded": true,
+      "duration": 1.368,
+      "rms": 0.0805632013246751,
+      "peak": 0.44106969237327576
+    },
+    {
+      "clipId": "l1-v-haixing.mp3",
+      "decoded": true,
+      "duration": 1.512,
+      "rms": 0.06159439632189249,
+      "peak": 0.31895530223846436
+    },
+    {
+      "clipId": "l1-v-hao.mp3",
+      "decoded": true,
+      "duration": 1.416,
+      "rms": 0.05320951701548108,
+      "peak": 0.5260456800460815
+    },
+    {
+      "clipId": "l1-v-jiao.mp3",
+      "decoded": true,
+      "duration": 1.512,
+      "rms": 0.05116506287063079,
+      "peak": 0.43199053406715393
+    },
+    {
+      "clipId": "l1-v-ke.mp3",
+      "decoded": true,
+      "duration": 1.8,
+      "rms": 0.046426771123785765,
+      "peak": 0.37318217754364014
+    },
+    {
+      "clipId": "l1-v-kun.mp3",
+      "decoded": true,
+      "duration": 0.816,
+      "rms": 0.062267365631886715,
+      "peak": 0.390031099319458
+    },
+    {
+      "clipId": "l1-v-lei.mp3",
+      "decoded": true,
+      "duration": 0.864,
+      "rms": 0.07282727186244137,
+      "peak": 0.3984896242618561
+    },
+    {
+      "clipId": "l1-v-mamahuhu.mp3",
+      "decoded": true,
+      "duration": 1.752,
+      "rms": 0.07381633030729219,
+      "peak": 0.4247310757637024
+    },
+    {
+      "clipId": "l1-v-mang.mp3",
+      "decoded": true,
+      "duration": 0.912,
+      "rms": 0.06496675834315276,
+      "peak": 0.44540220499038696
+    },
+    {
+      "clipId": "l1-v-mingzi.mp3",
+      "decoded": true,
+      "duration": 1.056,
+      "rms": 0.06847478481958506,
+      "peak": 0.35300037264823914
+    },
+    {
+      "clipId": "l1-v-ni.mp3",
+      "decoded": true,
+      "duration": 1.248,
+      "rms": 0.060379363227641085,
+      "peak": 0.2975919246673584
+    },
+    {
+      "clipId": "l1-v-qingwen.mp3",
+      "decoded": true,
+      "duration": 1.704,
+      "rms": 0.04768365938826105,
+      "peak": 0.31590384244918823
+    },
+    {
+      "clipId": "l1-v-renshi.mp3",
+      "decoded": true,
+      "duration": 1.464,
+      "rms": 0.06202913036947797,
+      "peak": 0.42074114084243774
+    },
+    {
+      "clipId": "l1-v-shenme.mp3",
+      "decoded": true,
+      "duration": 2.712,
+      "rms": 0.05254098405797829,
+      "peak": 0.3699818253517151
+    },
+    {
+      "clipId": "l1-v-wo.mp3",
+      "decoded": true,
+      "duration": 0.912,
+      "rms": 0.06806681709576438,
+      "peak": 0.3863537609577179
+    },
+    {
+      "clipId": "l1-v-xing.mp3",
+      "decoded": true,
+      "duration": 1.512,
+      "rms": 0.03970345405623358,
+      "peak": 0.27955400943756104
+    },
+    {
+      "clipId": "l2-h-01fd270dc7.mp3",
+      "decoded": true,
+      "duration": 1.8,
+      "rms": 0.0451984077354707,
+      "peak": 0.4548197090625763
+    },
+    {
+      "clipId": "l2-h-0869071c92.mp3",
+      "decoded": true,
+      "duration": 1.368,
+      "rms": 0.06289578536725716,
+      "peak": 0.3646845519542694
+    },
+    {
+      "clipId": "l2-h-0aafa2dc26.mp3",
+      "decoded": true,
+      "duration": 1.248,
+      "rms": 0.04978324044634716,
+      "peak": 0.3442426025867462
+    },
+    {
+      "clipId": "l2-h-15917f3b32.mp3",
+      "decoded": true,
+      "duration": 1.608,
+      "rms": 0.05812399370279076,
+      "peak": 0.3978322446346283
+    },
+    {
+      "clipId": "l2-h-16a7886637.mp3",
+      "decoded": true,
+      "duration": 1.56,
+      "rms": 0.0460866330276199,
+      "peak": 0.3878757655620575
+    },
+    {
+      "clipId": "l2-h-1a1001e5f3.mp3",
+      "decoded": true,
+      "duration": 0.912,
+      "rms": 0.04143385141207387,
+      "peak": 0.25375622510910034
+    },
+    {
+      "clipId": "l2-h-1d59ea7cbb-dian3-06fdc9859110.mp3",
+      "decoded": true,
+      "duration": 1.32,
+      "rms": 0.04820168512522391,
+      "peak": 0.3940829634666443
+    },
+    {
+      "clipId": "l2-h-1f285a2d00.mp3",
+      "decoded": true,
+      "duration": 0.96,
+      "rms": 0.0692386381704354,
+      "peak": 0.41025903820991516
+    },
+    {
+      "clipId": "l2-h-1f7fea733e.mp3",
+      "decoded": true,
+      "duration": 1.92,
+      "rms": 0.05307669798077063,
+      "peak": 0.6478665471076965
+    },
+    {
+      "clipId": "l2-h-219e08c960.mp3",
+      "decoded": true,
+      "duration": 2.112,
+      "rms": 0.04976889143530251,
+      "peak": 0.3957907557487488
+    },
+    {
+      "clipId": "l2-h-21c857be01.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.05523863057866201,
+      "peak": 0.3420791029930115
+    },
+    {
+      "clipId": "l2-h-2a4e9b964e.mp3",
+      "decoded": true,
+      "duration": 1.416,
+      "rms": 0.04329884132840671,
+      "peak": 0.4487174451351166
+    },
+    {
+      "clipId": "l2-h-2ea617b5cf.mp3",
+      "decoded": true,
+      "duration": 1.656,
+      "rms": 0.05816723376703685,
+      "peak": 0.21678437292575836
+    },
+    {
+      "clipId": "l2-h-2f64b5a67e.mp3",
+      "decoded": true,
+      "duration": 0.912,
+      "rms": 0.05625840033309721,
+      "peak": 0.27254921197891235
+    },
+    {
+      "clipId": "l2-h-3275594afd.mp3",
+      "decoded": true,
+      "duration": 0.912,
+      "rms": 0.044899593591407605,
+      "peak": 0.3817438781261444
+    },
+    {
+      "clipId": "l2-h-3439a0fcc4.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.05000973140306093,
+      "peak": 0.3808324635028839
+    },
+    {
+      "clipId": "l2-h-3eb31f888c.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.05838497207099038,
+      "peak": 0.4732769727706909
+    },
+    {
+      "clipId": "l2-h-481e547b1a.mp3",
+      "decoded": true,
+      "duration": 1.512,
+      "rms": 0.05477397168752423,
+      "peak": 0.3224451243877411
+    },
+    {
+      "clipId": "l2-h-48c1462231.mp3",
+      "decoded": true,
+      "duration": 1.416,
+      "rms": 0.04899467206156948,
+      "peak": 0.6105893850326538
+    },
+    {
+      "clipId": "l2-h-49efc042ad.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.04498131602861487,
+      "peak": 0.26905956864356995
+    },
+    {
+      "clipId": "l2-h-4b15cfa5df.mp3",
+      "decoded": true,
+      "duration": 1.248,
+      "rms": 0.04917029876665165,
+      "peak": 0.402523398399353
+    },
+    {
+      "clipId": "l2-h-4dfa006d75.mp3",
+      "decoded": true,
+      "duration": 2.304,
+      "rms": 0.05637512242248001,
+      "peak": 0.40639325976371765
+    },
+    {
+      "clipId": "l2-h-67be11d8f0.mp3",
+      "decoded": true,
+      "duration": 1.416,
+      "rms": 0.04190545442945583,
+      "peak": 0.4328334629535675
+    },
+    {
+      "clipId": "l2-h-69b5356d4f.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.0566338610861489,
+      "peak": 0.3167526423931122
+    },
+    {
+      "clipId": "l2-h-6cca7a3ec0.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.07071627132675765,
+      "peak": 0.5448150634765625
+    },
+    {
+      "clipId": "l2-h-748adc7ea1.mp3",
+      "decoded": true,
+      "duration": 0.96,
+      "rms": 0.06480499234808437,
+      "peak": 0.4904263913631439
+    },
+    {
+      "clipId": "l2-h-7be144783c.mp3",
+      "decoded": true,
+      "duration": 0.912,
+      "rms": 0.05941450299393131,
+      "peak": 0.3982798755168915
+    },
+    {
+      "clipId": "l2-h-7c7a06f0ea.mp3",
+      "decoded": true,
+      "duration": 1.704,
+      "rms": 0.055132652341134326,
+      "peak": 0.3173651397228241
+    },
+    {
+      "clipId": "l2-h-7e396634c6.mp3",
+      "decoded": true,
+      "duration": 1.752,
+      "rms": 0.03698474660344532,
+      "peak": 0.31406620144844055
+    },
+    {
+      "clipId": "l2-h-812aba4f00.mp3",
+      "decoded": true,
+      "duration": 0.96,
+      "rms": 0.04816644897508023,
+      "peak": 0.31685155630111694
+    },
+    {
+      "clipId": "l2-h-87d892e099.mp3",
+      "decoded": true,
+      "duration": 1.56,
+      "rms": 0.04389379728169859,
+      "peak": 0.4499005973339081
+    },
+    {
+      "clipId": "l2-h-88583a5ba0.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.062414725747433744,
+      "peak": 0.2895115315914154
+    },
+    {
+      "clipId": "l2-h-8be87291bd.mp3",
+      "decoded": true,
+      "duration": 1.152,
+      "rms": 0.05459523278503812,
+      "peak": 0.61687833070755
+    },
+    {
+      "clipId": "l2-h-8eaf856b16.mp3",
+      "decoded": true,
+      "duration": 0.96,
+      "rms": 0.06431606083387212,
+      "peak": 0.44402289390563965
+    },
+    {
+      "clipId": "l2-h-9b1bab382a.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.07141043577478678,
+      "peak": 0.36957356333732605
+    },
+    {
+      "clipId": "l2-h-9e71f0ccfa.mp3",
+      "decoded": true,
+      "duration": 0.96,
+      "rms": 0.07028895768674287,
+      "peak": 0.43655475974082947
+    },
+    {
+      "clipId": "l2-h-a3c0639a09.mp3",
+      "decoded": true,
+      "duration": 0.816,
+      "rms": 0.11980509715728259,
+      "peak": 0.8444340825080872
+    },
+    {
+      "clipId": "l2-h-a732e56e22.mp3",
+      "decoded": true,
+      "duration": 0.552,
+      "rms": 0.06730160935150319,
+      "peak": 0.47865548729896545
+    },
+    {
+      "clipId": "l2-h-b047fcdc80.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.03695232575691739,
+      "peak": 0.2589310109615326
+    },
+    {
+      "clipId": "l2-h-b188c5e30d.mp3",
+      "decoded": true,
+      "duration": 0.96,
+      "rms": 0.04057233773893094,
+      "peak": 0.5059565901756287
+    },
+    {
+      "clipId": "l2-h-bce2ef6151.mp3",
+      "decoded": true,
+      "duration": 1.152,
+      "rms": 0.060405285084151564,
+      "peak": 0.3454611003398895
+    },
+    {
+      "clipId": "l2-h-bf9b3e9c32.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.07266573235154217,
+      "peak": 0.3021135628223419
+    },
+    {
+      "clipId": "l2-h-c5004f91cd.mp3",
+      "decoded": true,
+      "duration": 0.864,
+      "rms": 0.0778183507098974,
+      "peak": 0.31894418597221375
+    },
+    {
+      "clipId": "l2-h-c7acd3b00e.mp3",
+      "decoded": true,
+      "duration": 0.864,
+      "rms": 0.0902340867742396,
+      "peak": 0.43208444118499756
+    },
+    {
+      "clipId": "l2-h-c7b16c7c46.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.0737703752872963,
+      "peak": 0.6098922491073608
+    },
+    {
+      "clipId": "l2-h-cdb1d49b8e.mp3",
+      "decoded": true,
+      "duration": 0.912,
+      "rms": 0.0636356269488552,
+      "peak": 0.3646572530269623
+    },
+    {
+      "clipId": "l2-h-cded745e11.mp3",
+      "decoded": true,
+      "duration": 2.064,
+      "rms": 0.03236808662459315,
+      "peak": 0.5180796980857849
+    },
+    {
+      "clipId": "l2-h-d21b4e3093.mp3",
+      "decoded": true,
+      "duration": 1.248,
+      "rms": 0.03431890784286612,
+      "peak": 0.17983593046665192
+    },
+    {
+      "clipId": "l2-h-d3cc0cab9c.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.04562834186321345,
+      "peak": 0.5439865589141846
+    },
+    {
+      "clipId": "l2-h-d449dfee7f.mp3",
+      "decoded": true,
+      "duration": 0.96,
+      "rms": 0.07136492801324182,
+      "peak": 0.41170570254325867
+    },
+    {
+      "clipId": "l2-h-d62c08d357.mp3",
+      "decoded": true,
+      "duration": 1.368,
+      "rms": 0.04506801385241287,
+      "peak": 0.30683377385139465
+    },
+    {
+      "clipId": "l2-h-db112229d5.mp3",
+      "decoded": true,
+      "duration": 1.32,
+      "rms": 0.05515270695914365,
+      "peak": 0.31271955370903015
+    },
+    {
+      "clipId": "l2-h-e81f8bad67.mp3",
+      "decoded": true,
+      "duration": 1.608,
+      "rms": 0.05492681229696652,
+      "peak": 0.3453372120857239
+    },
+    {
+      "clipId": "l2-h-ee7f305751.mp3",
+      "decoded": true,
+      "duration": 0.96,
+      "rms": 0.0458236620267153,
+      "peak": 0.21807663142681122
+    },
+    {
+      "clipId": "l2-s-0a3b02921f.mp3",
+      "decoded": true,
+      "duration": 2.856,
+      "rms": 0.07366443375146225,
+      "peak": 0.37356051802635193
+    },
+    {
+      "clipId": "l2-s-184f240096.mp3",
+      "decoded": true,
+      "duration": 2.52,
+      "rms": 0.07620037822771716,
+      "peak": 0.45795583724975586
+    },
+    {
+      "clipId": "l2-s-2422c0af4f.mp3",
+      "decoded": true,
+      "duration": 2.448,
+      "rms": 0.07451814722391513,
+      "peak": 0.49767181277275085
+    },
+    {
+      "clipId": "l2-s-2f018f73ba.mp3",
+      "decoded": true,
+      "duration": 2.808,
+      "rms": 0.08438093123648012,
+      "peak": 0.4862305521965027
+    },
+    {
+      "clipId": "l2-s-3133b3520d.mp3",
+      "decoded": true,
+      "duration": 1.968,
+      "rms": 0.09013081569391411,
+      "peak": 0.6007480621337891
+    },
+    {
+      "clipId": "l2-s-34e85a16a4.mp3",
+      "decoded": true,
+      "duration": 2.304,
+      "rms": 0.08446943072063623,
+      "peak": 0.3795436918735504
+    },
+    {
+      "clipId": "l2-s-451c978156.mp3",
+      "decoded": true,
+      "duration": 4.752,
+      "rms": 0.08838613687987865,
+      "peak": 0.5812772512435913
+    },
+    {
+      "clipId": "l2-s-5169439611.mp3",
+      "decoded": true,
+      "duration": 2.256,
+      "rms": 0.0729799336016231,
+      "peak": 0.45184126496315
+    },
+    {
+      "clipId": "l2-s-51ab8af268.mp3",
+      "decoded": true,
+      "duration": 1.608,
+      "rms": 0.06058972325552691,
+      "peak": 0.3751438558101654
+    },
+    {
+      "clipId": "l2-s-6628a0298a.mp3",
+      "decoded": true,
+      "duration": 3.648,
+      "rms": 0.09244632853258539,
+      "peak": 0.4527229964733124
+    },
+    {
+      "clipId": "l2-s-75a9d3f109.mp3",
+      "decoded": true,
+      "duration": 4.104,
+      "rms": 0.07476878047624706,
+      "peak": 0.5002589225769043
+    },
+    {
+      "clipId": "l2-s-8c8791f0a9.mp3",
+      "decoded": true,
+      "duration": 1.704,
+      "rms": 0.07292482933252088,
+      "peak": 0.47244828939437866
+    },
+    {
+      "clipId": "l2-s-8e4e3d785d.mp3",
+      "decoded": true,
+      "duration": 6.648,
+      "rms": 0.08841159487429079,
+      "peak": 0.5212618112564087
+    },
+    {
+      "clipId": "l2-s-8f71eac0ef.mp3",
+      "decoded": true,
+      "duration": 2.76,
+      "rms": 0.08026650899953433,
+      "peak": 0.4484272599220276
+    },
+    {
+      "clipId": "l2-s-941a922a06.mp3",
+      "decoded": true,
+      "duration": 1.968,
+      "rms": 0.07554083047214305,
+      "peak": 0.467145711183548
+    },
+    {
+      "clipId": "l2-s-959121e151.mp3",
+      "decoded": true,
+      "duration": 3.96,
+      "rms": 0.08041939794017607,
+      "peak": 0.40435105562210083
+    },
+    {
+      "clipId": "l2-s-975a369857.mp3",
+      "decoded": true,
+      "duration": 6.96,
+      "rms": 0.07299389975482808,
+      "peak": 0.48584479093551636
+    },
+    {
+      "clipId": "l2-s-9c0b73ce28.mp3",
+      "decoded": true,
+      "duration": 3.72,
+      "rms": 0.09130007271971351,
+      "peak": 0.39337313175201416
+    },
+    {
+      "clipId": "l2-s-9e0c38950e.mp3",
+      "decoded": true,
+      "duration": 3.264,
+      "rms": 0.052224328352218775,
+      "peak": 0.28999394178390503
+    },
+    {
+      "clipId": "l2-s-9e7667cac8.mp3",
+      "decoded": true,
+      "duration": 3.504,
+      "rms": 0.043632176746577336,
+      "peak": 0.44667190313339233
+    },
+    {
+      "clipId": "l2-s-a40e7f4356.mp3",
+      "decoded": true,
+      "duration": 3.912,
+      "rms": 0.08403943967328655,
+      "peak": 0.5182357430458069
+    },
+    {
+      "clipId": "l2-s-a4abd23561.mp3",
+      "decoded": true,
+      "duration": 1.848,
+      "rms": 0.06891708695761187,
+      "peak": 0.3302345275878906
+    },
+    {
+      "clipId": "l2-s-ace387fdfa.mp3",
+      "decoded": true,
+      "duration": 2.52,
+      "rms": 0.07533692349245251,
+      "peak": 0.5364245772361755
+    },
+    {
+      "clipId": "l2-s-bc45a1449a.mp3",
+      "decoded": true,
+      "duration": 3.552,
+      "rms": 0.08385672953461004,
+      "peak": 0.5319440960884094
+    },
+    {
+      "clipId": "l2-s-c7bef97e2c.mp3",
+      "decoded": true,
+      "duration": 3.312,
+      "rms": 0.07840460336004502,
+      "peak": 0.4270015060901642
+    },
+    {
+      "clipId": "l2-s-c910f1e985.mp3",
+      "decoded": true,
+      "duration": 2.352,
+      "rms": 0.07580792169110538,
+      "peak": 0.5049459338188171
+    },
+    {
+      "clipId": "l2-s-dad1103f32.mp3",
+      "decoded": true,
+      "duration": 5.448,
+      "rms": 0.09135922426988646,
+      "peak": 0.7460395097732544
+    },
+    {
+      "clipId": "l2-s-eefa403975.mp3",
+      "decoded": true,
+      "duration": 2.904,
+      "rms": 0.08108524616474996,
+      "peak": 0.7413058876991272
+    },
+    {
+      "clipId": "l2-s-f054baeb14.mp3",
+      "decoded": true,
+      "duration": 5.208,
+      "rms": 0.08129073386126603,
+      "peak": 0.4968491196632385
+    },
+    {
+      "clipId": "l2-s-f24659651d.mp3",
+      "decoded": true,
+      "duration": 2.352,
+      "rms": 0.055511008675940186,
+      "peak": 0.31814682483673096
+    },
+    {
+      "clipId": "l2-v-008ceac850.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.07719197373681293,
+      "peak": 0.4144686758518219
+    },
+    {
+      "clipId": "l2-v-0175b1cd36.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.05831371013303619,
+      "peak": 0.38293495774269104
+    },
+    {
+      "clipId": "l2-v-01ed721a36.mp3",
+      "decoded": true,
+      "duration": 1.704,
+      "rms": 0.057214169311206764,
+      "peak": 0.2767401933670044
+    },
+    {
+      "clipId": "l2-v-04681a29be.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.06776071752502587,
+      "peak": 0.46053996682167053
+    },
+    {
+      "clipId": "l2-v-0889c34972.mp3",
+      "decoded": true,
+      "duration": 0.816,
+      "rms": 0.07098375520224125,
+      "peak": 0.5507767796516418
+    },
+    {
+      "clipId": "l2-v-0a92d05b2e.mp3",
+      "decoded": true,
+      "duration": 2.112,
+      "rms": 0.07590349978707749,
+      "peak": 0.7475956678390503
+    },
+    {
+      "clipId": "l2-v-0b0e3a35bf.mp3",
+      "decoded": true,
+      "duration": 2.016,
+      "rms": 0.05224635380459708,
+      "peak": 0.35453423857688904
+    },
+    {
+      "clipId": "l2-v-0b566d5eaa.mp3",
+      "decoded": true,
+      "duration": 1.056,
+      "rms": 0.07255760873283727,
+      "peak": 0.47394025325775146
+    },
+    {
+      "clipId": "l2-v-101806f57c.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.05287033121583424,
+      "peak": 0.3666040301322937
+    },
+    {
+      "clipId": "l2-v-172fb7196f.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.08268386483756508,
+      "peak": 0.5957564115524292
+    },
+    {
+      "clipId": "l2-v-25849378cb.mp3",
+      "decoded": true,
+      "duration": 1.368,
+      "rms": 0.07801592515429094,
+      "peak": 0.3648390471935272
+    },
+    {
+      "clipId": "l2-v-280599352c.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.07025337968344493,
+      "peak": 0.30468204617500305
+    },
+    {
+      "clipId": "l2-v-28aa475a79.mp3",
+      "decoded": true,
+      "duration": 1.416,
+      "rms": 0.04746605567716063,
+      "peak": 0.32894760370254517
+    },
+    {
+      "clipId": "l2-v-2d10935506.mp3",
+      "decoded": true,
+      "duration": 0.96,
+      "rms": 0.07380739330089522,
+      "peak": 0.37999260425567627
+    },
+    {
+      "clipId": "l2-v-31fd0bc3de.mp3",
+      "decoded": true,
+      "duration": 1.152,
+      "rms": 0.0622787222674155,
+      "peak": 0.4303947985172272
+    },
+    {
+      "clipId": "l2-v-327049aa37.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.06994968876104465,
+      "peak": 0.5552495718002319
+    },
+    {
+      "clipId": "l2-v-389386495f.mp3",
+      "decoded": true,
+      "duration": 1.56,
+      "rms": 0.0687188350783295,
+      "peak": 0.3855760097503662
+    },
+    {
+      "clipId": "l2-v-39fd386a8c.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.0738874256427452,
+      "peak": 0.2826959788799286
+    },
+    {
+      "clipId": "l2-v-44da6bbcf2.mp3",
+      "decoded": true,
+      "duration": 1.608,
+      "rms": 0.05831042555493417,
+      "peak": 0.28235703706741333
+    },
+    {
+      "clipId": "l2-v-4912771a42.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.06298977064791397,
+      "peak": 0.3343353867530823
+    },
+    {
+      "clipId": "l2-v-494f23d624.mp3",
+      "decoded": true,
+      "duration": 1.464,
+      "rms": 0.06725632924875921,
+      "peak": 0.428913950920105
+    },
+    {
+      "clipId": "l2-v-4b3efd1d6e.mp3",
+      "decoded": true,
+      "duration": 1.152,
+      "rms": 0.07263663881920827,
+      "peak": 0.3322133421897888
+    },
+    {
+      "clipId": "l2-v-503a462f0c.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.06731081108678734,
+      "peak": 0.319175124168396
+    },
+    {
+      "clipId": "l2-v-542523173c.mp3",
+      "decoded": true,
+      "duration": 1.464,
+      "rms": 0.0284777354318584,
+      "peak": 0.20279739797115326
+    },
+    {
+      "clipId": "l2-v-577cfff298.mp3",
+      "decoded": true,
+      "duration": 0.912,
+      "rms": 0.04948728102489205,
+      "peak": 0.405063271522522
+    },
+    {
+      "clipId": "l2-v-58709566ff.mp3",
+      "decoded": true,
+      "duration": 1.56,
+      "rms": 0.06833137169627285,
+      "peak": 0.49642959237098694
+    },
+    {
+      "clipId": "l2-v-5f386ebdbb.mp3",
+      "decoded": true,
+      "duration": 0.864,
+      "rms": 0.04736492064019152,
+      "peak": 0.4206240773200989
+    },
+    {
+      "clipId": "l2-v-685e151824.mp3",
+      "decoded": true,
+      "duration": 0.912,
+      "rms": 0.07006355102168119,
+      "peak": 0.4351123571395874
+    },
+    {
+      "clipId": "l2-v-6a5d848e0d.mp3",
+      "decoded": true,
+      "duration": 2.256,
+      "rms": 0.04384665542231314,
+      "peak": 0.2651589512825012
+    },
+    {
+      "clipId": "l2-v-75d9049f88.mp3",
+      "decoded": true,
+      "duration": 1.32,
+      "rms": 0.07652765644311775,
+      "peak": 0.457338809967041
+    },
+    {
+      "clipId": "l2-v-792bbe6e08.mp3",
+      "decoded": true,
+      "duration": 0.72,
+      "rms": 0.10120154296651547,
+      "peak": 0.7072972059249878
+    },
+    {
+      "clipId": "l2-v-7d4591b00c.mp3",
+      "decoded": true,
+      "duration": 2.616,
+      "rms": 0.0546667226742356,
+      "peak": 0.5827977061271667
+    },
+    {
+      "clipId": "l2-v-82202bb725.mp3",
+      "decoded": true,
+      "duration": 1.464,
+      "rms": 0.06156089130065853,
+      "peak": 0.5383245348930359
+    },
+    {
+      "clipId": "l2-v-89a1c93fd0.mp3",
+      "decoded": true,
+      "duration": 1.512,
+      "rms": 0.07883917461695908,
+      "peak": 0.48098811507225037
+    },
+    {
+      "clipId": "l2-v-8ffbf19293.mp3",
+      "decoded": true,
+      "duration": 1.248,
+      "rms": 0.05700131410249487,
+      "peak": 0.35537242889404297
+    },
+    {
+      "clipId": "l2-v-922517cc73.mp3",
+      "decoded": true,
+      "duration": 1.464,
+      "rms": 0.03716986155729572,
+      "peak": 0.4836401343345642
+    },
+    {
+      "clipId": "l2-v-93e27107a1.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.06790835892226045,
+      "peak": 0.44253915548324585
+    },
+    {
+      "clipId": "l2-v-97a08c17dc.mp3",
+      "decoded": true,
+      "duration": 1.92,
+      "rms": 0.012445614308869448,
+      "peak": 0.13064321875572205
+    },
+    {
+      "clipId": "l2-v-9982c5ced1.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.05107626807090405,
+      "peak": 0.3462912440299988
+    },
+    {
+      "clipId": "l2-v-99f1e46974.mp3",
+      "decoded": true,
+      "duration": 1.248,
+      "rms": 0.05438344771673182,
+      "peak": 0.4789479970932007
+    },
+    {
+      "clipId": "l2-v-9a3eb34097.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.06905049745400443,
+      "peak": 0.39331114292144775
+    },
+    {
+      "clipId": "l2-v-9fa1acaa07.mp3",
+      "decoded": true,
+      "duration": 1.152,
+      "rms": 0.054745093905048586,
+      "peak": 0.42464199662208557
+    },
+    {
+      "clipId": "l2-v-a10d4d5a63.mp3",
+      "decoded": true,
+      "duration": 1.152,
+      "rms": 0.045489823308155354,
+      "peak": 0.2682831883430481
+    },
+    {
+      "clipId": "l2-v-a313eb6397.mp3",
+      "decoded": true,
+      "duration": 2.064,
+      "rms": 0.041964844279024985,
+      "peak": 0.4273027181625366
+    },
+    {
+      "clipId": "l2-v-a47d41464e.mp3",
+      "decoded": true,
+      "duration": 1.56,
+      "rms": 0.07558662065976082,
+      "peak": 0.4400828182697296
+    },
+    {
+      "clipId": "l2-v-aa89dd63b3.mp3",
+      "decoded": true,
+      "duration": 1.248,
+      "rms": 0.06267411392670193,
+      "peak": 0.40157365798950195
+    },
+    {
+      "clipId": "l2-v-aa954ce734.mp3",
+      "decoded": true,
+      "duration": 1.8,
+      "rms": 0.07212237015385596,
+      "peak": 0.3412090241909027
+    },
+    {
+      "clipId": "l2-v-ae341b1780.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.07446363244150003,
+      "peak": 0.5625017881393433
+    },
+    {
+      "clipId": "l2-v-b332b9e393.mp3",
+      "decoded": true,
+      "duration": 2.016,
+      "rms": 0.0627194374880515,
+      "peak": 0.40039515495300293
+    },
+    {
+      "clipId": "l2-v-b76783d38c.mp3",
+      "decoded": true,
+      "duration": 1.8,
+      "rms": 0.05395752373901507,
+      "peak": 0.27725574374198914
+    },
+    {
+      "clipId": "l2-v-ba99e16acc.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.07166755661654835,
+      "peak": 0.37279990315437317
+    },
+    {
+      "clipId": "l2-v-bd1c010834.mp3",
+      "decoded": true,
+      "duration": 1.32,
+      "rms": 0.06381258958465903,
+      "peak": 0.40783971548080444
+    },
+    {
+      "clipId": "l2-v-be3058692f.mp3",
+      "decoded": true,
+      "duration": 1.608,
+      "rms": 0.04475154601885852,
+      "peak": 0.31963568925857544
+    },
+    {
+      "clipId": "l2-v-c24c2c376d.mp3",
+      "decoded": true,
+      "duration": 2.064,
+      "rms": 0.0618848692487235,
+      "peak": 0.2921537756919861
+    },
+    {
+      "clipId": "l2-v-c48a80ccdf.mp3",
+      "decoded": true,
+      "duration": 1.704,
+      "rms": 0.08398358500165785,
+      "peak": 0.3563949763774872
+    },
+    {
+      "clipId": "l2-v-c50fca21e7.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.060706110912844696,
+      "peak": 0.37306085228919983
+    },
+    {
+      "clipId": "l2-v-c54c502193.mp3",
+      "decoded": true,
+      "duration": 0.912,
+      "rms": 0.0990957721559337,
+      "peak": 0.6000705361366272
+    },
+    {
+      "clipId": "l2-v-cb145f80ae.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.05943528540812202,
+      "peak": 0.28189659118652344
+    },
+    {
+      "clipId": "l2-v-cd963c6bfd.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.06311520470497496,
+      "peak": 0.7391089200973511
+    },
+    {
+      "clipId": "l2-v-cd99b225a0.mp3",
+      "decoded": true,
+      "duration": 2.664,
+      "rms": 0.05288570506645705,
+      "peak": 0.31691136956214905
+    },
+    {
+      "clipId": "l2-v-ceb6e7c3fc.mp3",
+      "decoded": true,
+      "duration": 2.112,
+      "rms": 0.06399923535359242,
+      "peak": 0.408298522233963
+    },
+    {
+      "clipId": "l2-v-d07c176571.mp3",
+      "decoded": true,
+      "duration": 2.352,
+      "rms": 0.07295637333016958,
+      "peak": 0.3897424042224884
+    },
+    {
+      "clipId": "l2-v-d490b5fd60.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.06130008402518788,
+      "peak": 0.39275458455085754
+    },
+    {
+      "clipId": "l2-v-d4ac60484d.mp3",
+      "decoded": true,
+      "duration": 1.368,
+      "rms": 0.06042125319276013,
+      "peak": 0.5048490762710571
+    },
+    {
+      "clipId": "l2-v-d508b27384.mp3",
+      "decoded": true,
+      "duration": 2.76,
+      "rms": 0.057920850093996584,
+      "peak": 0.3697095215320587
+    },
+    {
+      "clipId": "l2-v-d51dd8d130.mp3",
+      "decoded": true,
+      "duration": 0.96,
+      "rms": 0.08943112015569873,
+      "peak": 0.5084395408630371
+    },
+    {
+      "clipId": "l2-v-d853579afd.mp3",
+      "decoded": true,
+      "duration": 1.416,
+      "rms": 0.05092009242297591,
+      "peak": 0.3014337420463562
+    },
+    {
+      "clipId": "l2-v-d8a2b457be.mp3",
+      "decoded": true,
+      "duration": 1.416,
+      "rms": 0.054881136265970215,
+      "peak": 0.42140984535217285
+    },
+    {
+      "clipId": "l2-v-dacc169f45.mp3",
+      "decoded": true,
+      "duration": 1.152,
+      "rms": 0.06762348671889615,
+      "peak": 0.6572620272636414
+    },
+    {
+      "clipId": "l2-v-db42244090.mp3",
+      "decoded": true,
+      "duration": 1.8,
+      "rms": 0.0571456481223631,
+      "peak": 0.4671393632888794
+    },
+    {
+      "clipId": "l2-v-e2c72f15c0.mp3",
+      "decoded": true,
+      "duration": 1.248,
+      "rms": 0.06265011476094931,
+      "peak": 0.3337855637073517
+    },
+    {
+      "clipId": "l2-v-e34f5a011a.mp3",
+      "decoded": true,
+      "duration": 1.248,
+      "rms": 0.0657774890499893,
+      "peak": 0.3721538186073303
+    },
+    {
+      "clipId": "l2-v-e52de5a755.mp3",
+      "decoded": true,
+      "duration": 2.448,
+      "rms": 0.0764146523094169,
+      "peak": 0.46023276448249817
+    },
+    {
+      "clipId": "l2-v-e548bb9ff7.mp3",
+      "decoded": true,
+      "duration": 1.152,
+      "rms": 0.07456264000760592,
+      "peak": 0.5192291140556335
+    },
+    {
+      "clipId": "l2-v-ea478686f6.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.05386046269052049,
+      "peak": 0.2807534635066986
+    },
+    {
+      "clipId": "l2-v-ec90e84c8f.mp3",
+      "decoded": true,
+      "duration": 1.152,
+      "rms": 0.07995361650788806,
+      "peak": 0.40160703659057617
+    },
+    {
+      "clipId": "l2-v-ed5ea6fe43.mp3",
+      "decoded": true,
+      "duration": 1.248,
+      "rms": 0.06204389989550787,
+      "peak": 0.42125996947288513
+    },
+    {
+      "clipId": "l2-v-f0f59cdb62.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.0894896298806971,
+      "peak": 0.5387570261955261
+    },
+    {
+      "clipId": "l2-v-f4bba5643a.mp3",
+      "decoded": true,
+      "duration": 1.416,
+      "rms": 0.059679405696220565,
+      "peak": 0.35415926575660706
+    },
+    {
+      "clipId": "l2-v-faedfa5f98.mp3",
+      "decoded": true,
+      "duration": 1.368,
+      "rms": 0.08940895346671628,
+      "peak": 0.5241067409515381
+    },
+    {
+      "clipId": "l3-h-033fd274f0.mp3",
+      "decoded": true,
+      "duration": 1.752,
+      "rms": 0.03219716053065952,
+      "peak": 0.24548129737377167
+    },
+    {
+      "clipId": "l3-h-06af8ec0f4.mp3",
+      "decoded": true,
+      "duration": 1.056,
+      "rms": 0.054001986532610374,
+      "peak": 0.41871127486228943
+    },
+    {
+      "clipId": "l3-h-0e0faa1d83.mp3",
+      "decoded": true,
+      "duration": 0.648,
+      "rms": 0.07180648113479511,
+      "peak": 0.46445295214653015
+    },
+    {
+      "clipId": "l3-h-26bc84961c.mp3",
+      "decoded": true,
+      "duration": 1.32,
+      "rms": 0.07186593744269718,
+      "peak": 0.2632436156272888
+    },
+    {
+      "clipId": "l3-h-276330ed97.mp3",
+      "decoded": true,
+      "duration": 0.768,
+      "rms": 0.05224832969062654,
+      "peak": 0.3154085874557495
+    },
+    {
+      "clipId": "l3-h-28f8949739.mp3",
+      "decoded": true,
+      "duration": 1.464,
+      "rms": 0.059031885544767154,
+      "peak": 0.39376163482666016
+    },
+    {
+      "clipId": "l3-h-2eb8ebf6c3.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.07926515582742649,
+      "peak": 0.558954656124115
+    },
+    {
+      "clipId": "l3-h-3350da940d.mp3",
+      "decoded": true,
+      "duration": 1.92,
+      "rms": 0.04149552951903238,
+      "peak": 0.2866666615009308
+    },
+    {
+      "clipId": "l3-h-3b6ef811b8.mp3",
+      "decoded": true,
+      "duration": 1.656,
+      "rms": 0.060672117755780075,
+      "peak": 0.5169070959091187
+    },
+    {
+      "clipId": "l3-h-3c9abaf959.mp3",
+      "decoded": true,
+      "duration": 1.056,
+      "rms": 0.05195004719732144,
+      "peak": 0.21936450898647308
+    },
+    {
+      "clipId": "l3-h-462f338ef8.mp3",
+      "decoded": true,
+      "duration": 1.848,
+      "rms": 0.0563961117929978,
+      "peak": 0.32706505060195923
+    },
+    {
+      "clipId": "l3-h-48d8344774.mp3",
+      "decoded": true,
+      "duration": 1.152,
+      "rms": 0.06128358121421213,
+      "peak": 0.5193131566047668
+    },
+    {
+      "clipId": "l3-h-51625d909c.mp3",
+      "decoded": true,
+      "duration": 0.912,
+      "rms": 0.044281005902474364,
+      "peak": 0.30156001448631287
+    },
+    {
+      "clipId": "l3-h-5ac69ad696.mp3",
+      "decoded": true,
+      "duration": 1.056,
+      "rms": 0.049004042326253966,
+      "peak": 0.36796557903289795
+    },
+    {
+      "clipId": "l3-h-67426806bc.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.06959084491027206,
+      "peak": 0.3361199200153351
+    },
+    {
+      "clipId": "l3-h-67ea6cdf0c.mp3",
+      "decoded": true,
+      "duration": 1.56,
+      "rms": 0.047724180106573935,
+      "peak": 0.39191025495529175
+    },
+    {
+      "clipId": "l3-h-738757461a.mp3",
+      "decoded": true,
+      "duration": 1.056,
+      "rms": 0.07231656497864175,
+      "peak": 0.49411308765411377
+    },
+    {
+      "clipId": "l3-h-76aac2ff5f.mp3",
+      "decoded": true,
+      "duration": 1.056,
+      "rms": 0.06537751828724368,
+      "peak": 0.5184003114700317
+    },
+    {
+      "clipId": "l3-h-7b8ef4b58a.mp3",
+      "decoded": true,
+      "duration": 1.056,
+      "rms": 0.056691596155670446,
+      "peak": 0.5923781991004944
+    },
+    {
+      "clipId": "l3-h-7bedcf1b9c.mp3",
+      "decoded": true,
+      "duration": 0.864,
+      "rms": 0.07306002909957594,
+      "peak": 0.3700791001319885
+    },
+    {
+      "clipId": "l3-h-7bf4a20c82.mp3",
+      "decoded": true,
+      "duration": 1.608,
+      "rms": 0.051681185380379545,
+      "peak": 0.5204386711120605
+    },
+    {
+      "clipId": "l3-h-87644e683b.mp3",
+      "decoded": true,
+      "duration": 1.056,
+      "rms": 0.054960746427463694,
+      "peak": 0.2708207070827484
+    },
+    {
+      "clipId": "l3-h-8995b89799.mp3",
+      "decoded": true,
+      "duration": 0.864,
+      "rms": 0.07483446631066011,
+      "peak": 0.30534785985946655
+    },
+    {
+      "clipId": "l3-h-8dae9fd3c6.mp3",
+      "decoded": true,
+      "duration": 1.8,
+      "rms": 0.043759569870915595,
+      "peak": 0.34409019351005554
+    },
+    {
+      "clipId": "l3-h-8f603fb51d.mp3",
+      "decoded": true,
+      "duration": 1.056,
+      "rms": 0.041909875549607824,
+      "peak": 0.3737510144710541
+    },
+    {
+      "clipId": "l3-h-a151a26775.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.060962992055846627,
+      "peak": 0.4112977683544159
+    },
+    {
+      "clipId": "l3-h-a26028c019.mp3",
+      "decoded": true,
+      "duration": 0.96,
+      "rms": 0.08120337371997875,
+      "peak": 0.5040850043296814
+    },
+    {
+      "clipId": "l3-h-ad26c7835a.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.061675147279615705,
+      "peak": 0.4242895543575287
+    },
+    {
+      "clipId": "l3-h-aef8cdec9f.mp3",
+      "decoded": true,
+      "duration": 1.752,
+      "rms": 0.05298704637427191,
+      "peak": 0.3194730579853058
+    },
+    {
+      "clipId": "l3-h-caf3447b27.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.059161980965870435,
+      "peak": 0.353222519159317
+    },
+    {
+      "clipId": "l3-h-cdfd26daa2.mp3",
+      "decoded": true,
+      "duration": 1.248,
+      "rms": 0.06270542689302498,
+      "peak": 0.2905785143375397
+    },
+    {
+      "clipId": "l3-h-d2130d70a0.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.04689743782391771,
+      "peak": 0.26678985357284546
+    },
+    {
+      "clipId": "l3-h-dc06011563.mp3",
+      "decoded": true,
+      "duration": 0.96,
+      "rms": 0.05594166062984088,
+      "peak": 0.3047741949558258
+    },
+    {
+      "clipId": "l3-h-e10bd9f09b.mp3",
+      "decoded": true,
+      "duration": 0.816,
+      "rms": 0.09653606841528643,
+      "peak": 0.5962375998497009
+    },
+    {
+      "clipId": "l3-h-e463d156c0.mp3",
+      "decoded": true,
+      "duration": 1.56,
+      "rms": 0.052408795466504704,
+      "peak": 0.40934285521507263
+    },
+    {
+      "clipId": "l3-h-e8555020c4.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.053281671038310774,
+      "peak": 0.3975547254085541
+    },
+    {
+      "clipId": "l3-h-f54d73f7ab.mp3",
+      "decoded": true,
+      "duration": 1.656,
+      "rms": 0.04706930353590676,
+      "peak": 0.2936018705368042
+    },
+    {
+      "clipId": "l3-s-0fc2bf0432.mp3",
+      "decoded": true,
+      "duration": 1.8,
+      "rms": 0.05811349211859121,
+      "peak": 0.27779820561408997
+    },
+    {
+      "clipId": "l3-s-1a3780ce44.mp3",
+      "decoded": true,
+      "duration": 4.248,
+      "rms": 0.06822147223711258,
+      "peak": 0.364330917596817
+    },
+    {
+      "clipId": "l3-s-3346835636.mp3",
+      "decoded": true,
+      "duration": 6.768,
+      "rms": 0.07639164867485414,
+      "peak": 0.4097992479801178
+    },
+    {
+      "clipId": "l3-s-390ebfb53a.mp3",
+      "decoded": true,
+      "duration": 3.648,
+      "rms": 0.05721658039507225,
+      "peak": 0.2969125211238861
+    },
+    {
+      "clipId": "l3-s-447c457845.mp3",
+      "decoded": true,
+      "duration": 2.664,
+      "rms": 0.07212226957391506,
+      "peak": 0.3732413053512573
+    },
+    {
+      "clipId": "l3-s-55aaa63200.mp3",
+      "decoded": true,
+      "duration": 2.52,
+      "rms": 0.07105695518466905,
+      "peak": 0.36969467997550964
+    },
+    {
+      "clipId": "l3-s-59693958d4.mp3",
+      "decoded": true,
+      "duration": 4.464,
+      "rms": 0.08804029247743,
+      "peak": 0.5069419145584106
+    },
+    {
+      "clipId": "l3-s-5cd849192f.mp3",
+      "decoded": true,
+      "duration": 1.608,
+      "rms": 0.0653894624957891,
+      "peak": 0.41514119505882263
+    },
+    {
+      "clipId": "l3-s-6320dd8338.mp3",
+      "decoded": true,
+      "duration": 2.016,
+      "rms": 0.08312836637259863,
+      "peak": 0.3502171039581299
+    },
+    {
+      "clipId": "l3-s-63ee4587a2.mp3",
+      "decoded": true,
+      "duration": 3,
+      "rms": 0.07314473830715078,
+      "peak": 0.41564008593559265
+    },
+    {
+      "clipId": "l3-s-650bbf6a02.mp3",
+      "decoded": true,
+      "duration": 1.92,
+      "rms": 0.08630388173215452,
+      "peak": 0.609969973564148
+    },
+    {
+      "clipId": "l3-s-7540ed1c6a.mp3",
+      "decoded": true,
+      "duration": 3.96,
+      "rms": 0.09294448351636565,
+      "peak": 0.5271345376968384
+    },
+    {
+      "clipId": "l3-s-7b9a30c8bd.mp3",
+      "decoded": true,
+      "duration": 5.664,
+      "rms": 0.08771473885815259,
+      "peak": 0.5646908283233643
+    },
+    {
+      "clipId": "l3-s-7fdc447d8c.mp3",
+      "decoded": true,
+      "duration": 4.656,
+      "rms": 0.0806411142262076,
+      "peak": 0.5396862626075745
+    },
+    {
+      "clipId": "l3-s-88636d79f5.mp3",
+      "decoded": true,
+      "duration": 8.808,
+      "rms": 0.08536713076739656,
+      "peak": 0.5311108231544495
+    },
+    {
+      "clipId": "l3-s-8aa38f9483.mp3",
+      "decoded": true,
+      "duration": 2.664,
+      "rms": 0.08574547778441796,
+      "peak": 0.45554089546203613
+    },
+    {
+      "clipId": "l3-s-8b5eb291f0.mp3",
+      "decoded": true,
+      "duration": 2.352,
+      "rms": 0.0855928495324684,
+      "peak": 0.4060705602169037
+    },
+    {
+      "clipId": "l3-s-902ece0a18.mp3",
+      "decoded": true,
+      "duration": 3.648,
+      "rms": 0.079223244884814,
+      "peak": 0.5693024396896362
+    },
+    {
+      "clipId": "l3-s-a0099a1897.mp3",
+      "decoded": true,
+      "duration": 3.12,
+      "rms": 0.064348396623966,
+      "peak": 0.4005783498287201
+    },
+    {
+      "clipId": "l3-s-a2284c41ae.mp3",
+      "decoded": true,
+      "duration": 2.4,
+      "rms": 0.06917484214205631,
+      "peak": 0.39241424202919006
+    },
+    {
+      "clipId": "l3-s-a3e1fab1bd.mp3",
+      "decoded": true,
+      "duration": 2.352,
+      "rms": 0.0814466578633046,
+      "peak": 0.48868656158447266
+    },
+    {
+      "clipId": "l3-s-a4fcd6666b.mp3",
+      "decoded": true,
+      "duration": 4.152,
+      "rms": 0.06777360308484613,
+      "peak": 0.474276065826416
+    },
+    {
+      "clipId": "l3-s-b06550907c.mp3",
+      "decoded": true,
+      "duration": 2.568,
+      "rms": 0.07181968627582988,
+      "peak": 0.3956161141395569
+    },
+    {
+      "clipId": "l3-s-b821feee80.mp3",
+      "decoded": true,
+      "duration": 2.112,
+      "rms": 0.06230195684707792,
+      "peak": 0.3466663658618927
+    },
+    {
+      "clipId": "l3-s-c4cf1f7b9f.mp3",
+      "decoded": true,
+      "duration": 4.152,
+      "rms": 0.08182786788289566,
+      "peak": 0.49839910864830017
+    },
+    {
+      "clipId": "l3-s-c64bfb6cc0.mp3",
+      "decoded": true,
+      "duration": 2.568,
+      "rms": 0.07834890318136362,
+      "peak": 0.5284055471420288
+    },
+    {
+      "clipId": "l3-s-d762b3b4d5.mp3",
+      "decoded": true,
+      "duration": 2.112,
+      "rms": 0.06608782647472496,
+      "peak": 0.3807693123817444
+    },
+    {
+      "clipId": "l3-s-d90a486643.mp3",
+      "decoded": true,
+      "duration": 2.856,
+      "rms": 0.09560619762635676,
+      "peak": 0.40455543994903564
+    },
+    {
+      "clipId": "l3-s-dfbfa001d4.mp3",
+      "decoded": true,
+      "duration": 4.248,
+      "rms": 0.06594248257353999,
+      "peak": 0.4529052674770355
+    },
+    {
+      "clipId": "l3-s-e445ccad77.mp3",
+      "decoded": true,
+      "duration": 2.352,
+      "rms": 0.07194604205021016,
+      "peak": 0.3834335207939148
+    },
+    {
+      "clipId": "l3-s-f244be5ef0.mp3",
+      "decoded": true,
+      "duration": 2.304,
+      "rms": 0.07023880919352768,
+      "peak": 0.47075319290161133
+    },
+    {
+      "clipId": "l3-s-f313dfaced.mp3",
+      "decoded": true,
+      "duration": 2.856,
+      "rms": 0.0927894922146083,
+      "peak": 0.3974011540412903
+    },
+    {
+      "clipId": "l3-s-f7f2fd9a2b.mp3",
+      "decoded": true,
+      "duration": 4.608,
+      "rms": 0.08387467070964363,
+      "peak": 0.4745713472366333
+    },
+    {
+      "clipId": "l3-s-f905ecff64.mp3",
+      "decoded": true,
+      "duration": 1.704,
+      "rms": 0.09333131709459144,
+      "peak": 0.42385825514793396
+    },
+    {
+      "clipId": "l3-v-0746bd6249.mp3",
+      "decoded": true,
+      "duration": 0.552,
+      "rms": 0.051177077339847755,
+      "peak": 0.3471662700176239
+    },
+    {
+      "clipId": "l3-v-08819c1294.mp3",
+      "decoded": true,
+      "duration": 2.112,
+      "rms": 0.058917529927080034,
+      "peak": 0.3920207619667053
+    },
+    {
+      "clipId": "l3-v-11f513efc1.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.08656757244901533,
+      "peak": 0.38444143533706665
+    },
+    {
+      "clipId": "l3-v-17e83cc25e.mp3",
+      "decoded": true,
+      "duration": 1.152,
+      "rms": 0.06166966511135512,
+      "peak": 0.4116360545158386
+    },
+    {
+      "clipId": "l3-v-1e7b07e714.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.04617548036486324,
+      "peak": 0.37132495641708374
+    },
+    {
+      "clipId": "l3-v-214604dcec.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.06514555811517482,
+      "peak": 0.5027081966400146
+    },
+    {
+      "clipId": "l3-v-27b4a6aed2.mp3",
+      "decoded": true,
+      "duration": 1.368,
+      "rms": 0.09042290081298994,
+      "peak": 0.5607286095619202
+    },
+    {
+      "clipId": "l3-v-2ab73e0fa6.mp3",
+      "decoded": true,
+      "duration": 1.608,
+      "rms": 0.0765369344789355,
+      "peak": 0.3106517791748047
+    },
+    {
+      "clipId": "l3-v-2d4e3b70d0.mp3",
+      "decoded": true,
+      "duration": 1.416,
+      "rms": 0.05732522290738854,
+      "peak": 0.33771392703056335
+    },
+    {
+      "clipId": "l3-v-2fcbe72fbf.mp3",
+      "decoded": true,
+      "duration": 1.56,
+      "rms": 0.033526638030478964,
+      "peak": 0.4336436986923218
+    },
+    {
+      "clipId": "l3-v-310c28d318.mp3",
+      "decoded": true,
+      "duration": 2.616,
+      "rms": 0.0455178842969344,
+      "peak": 0.32208603620529175
+    },
+    {
+      "clipId": "l3-v-37b7c70cce.mp3",
+      "decoded": true,
+      "duration": 1.416,
+      "rms": 0.08202897342745526,
+      "peak": 0.4637068212032318
+    },
+    {
+      "clipId": "l3-v-3cba8dbc96.mp3",
+      "decoded": true,
+      "duration": 0.96,
+      "rms": 0.061876964146508624,
+      "peak": 0.368621826171875
+    },
+    {
+      "clipId": "l3-v-3d647cfdc3.mp3",
+      "decoded": true,
+      "duration": 1.248,
+      "rms": 0.0683642454573285,
+      "peak": 0.3338983952999115
+    },
+    {
+      "clipId": "l3-v-3e5be3b89a.mp3",
+      "decoded": true,
+      "duration": 1.512,
+      "rms": 0.0679157244858841,
+      "peak": 0.3270842134952545
+    },
+    {
+      "clipId": "l3-v-40773858c7.mp3",
+      "decoded": true,
+      "duration": 1.368,
+      "rms": 0.04007793271235866,
+      "peak": 0.31385260820388794
+    },
+    {
+      "clipId": "l3-v-4585ae278b.mp3",
+      "decoded": true,
+      "duration": 2.064,
+      "rms": 0.06816830276607798,
+      "peak": 0.3161329925060272
+    },
+    {
+      "clipId": "l3-v-46b64b21f0.mp3",
+      "decoded": true,
+      "duration": 1.56,
+      "rms": 0.04678106839827371,
+      "peak": 0.369874507188797
+    },
+    {
+      "clipId": "l3-v-48e9e53252.mp3",
+      "decoded": true,
+      "duration": 1.752,
+      "rms": 0.06230726635490788,
+      "peak": 0.4124567210674286
+    },
+    {
+      "clipId": "l3-v-4a8ac7c42b.mp3",
+      "decoded": true,
+      "duration": 1.368,
+      "rms": 0.07497772133643535,
+      "peak": 0.4475172758102417
+    },
+    {
+      "clipId": "l3-v-510db33099.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.04418254513322175,
+      "peak": 0.3375360369682312
+    },
+    {
+      "clipId": "l3-v-552caeb5bd.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.08493114943141375,
+      "peak": 0.3558754622936249
+    },
+    {
+      "clipId": "l3-v-610e693eec.mp3",
+      "decoded": true,
+      "duration": 2.448,
+      "rms": 0.08966095552325393,
+      "peak": 0.5022779703140259
+    },
+    {
+      "clipId": "l3-v-638b6f6a51.mp3",
+      "decoded": true,
+      "duration": 1.248,
+      "rms": 0.06640398020336183,
+      "peak": 0.4086894392967224
+    },
+    {
+      "clipId": "l3-v-68bf29eb00.mp3",
+      "decoded": true,
+      "duration": 1.752,
+      "rms": 0.04492996986707699,
+      "peak": 0.23596793413162231
+    },
+    {
+      "clipId": "l3-v-6af25813d6.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.08565342910294929,
+      "peak": 0.274836927652359
+    },
+    {
+      "clipId": "l3-v-6f14c2641c.mp3",
+      "decoded": true,
+      "duration": 1.248,
+      "rms": 0.07900614594533499,
+      "peak": 0.3413158357143402
+    },
+    {
+      "clipId": "l3-v-715fb2c0ef.mp3",
+      "decoded": true,
+      "duration": 1.248,
+      "rms": 0.06190262355488501,
+      "peak": 0.4315132796764374
+    },
+    {
+      "clipId": "l3-v-71b87f22ba.mp3",
+      "decoded": true,
+      "duration": 2.112,
+      "rms": 0.05949617528046045,
+      "peak": 0.3910290002822876
+    },
+    {
+      "clipId": "l3-v-76a4159492.mp3",
+      "decoded": true,
+      "duration": 1.152,
+      "rms": 0.07854050371459818,
+      "peak": 0.7508953809738159
+    },
+    {
+      "clipId": "l3-v-7d3b2b0ebc.mp3",
+      "decoded": true,
+      "duration": 1.368,
+      "rms": 0.06539243030391402,
+      "peak": 0.4065631926059723
+    },
+    {
+      "clipId": "l3-v-7de8177ce7.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.05290350364300245,
+      "peak": 0.42152222990989685
+    },
+    {
+      "clipId": "l3-v-8093b0fe6a.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.06553046410747801,
+      "peak": 0.4464968144893646
+    },
+    {
+      "clipId": "l3-v-86f13375c1.mp3",
+      "decoded": true,
+      "duration": 1.2,
+      "rms": 0.04768312282792469,
+      "peak": 0.26850393414497375
+    },
+    {
+      "clipId": "l3-v-89e7eedcc0.mp3",
+      "decoded": true,
+      "duration": 1.512,
+      "rms": 0.05660147789656379,
+      "peak": 0.5743521451950073
+    },
+    {
+      "clipId": "l3-v-8c7137356d.mp3",
+      "decoded": true,
+      "duration": 1.32,
+      "rms": 0.07745509825879347,
+      "peak": 0.682295024394989
+    },
+    {
+      "clipId": "l3-v-8dcff1ebe3.mp3",
+      "decoded": true,
+      "duration": 1.656,
+      "rms": 0.06992355273719966,
+      "peak": 0.36135515570640564
+    },
+    {
+      "clipId": "l3-v-925718bec9.mp3",
+      "decoded": true,
+      "duration": 1.416,
+      "rms": 0.08345553827254876,
+      "peak": 0.5931077599525452
+    },
+    {
+      "clipId": "l3-v-9273cc90ea.mp3",
+      "decoded": true,
+      "duration": 1.248,
+      "rms": 0.06132351114386397,
+      "peak": 0.47841164469718933
+    },
+    {
+      "clipId": "l3-v-964d2413a7.mp3",
+      "decoded": true,
+      "duration": 1.416,
+      "rms": 0.07270183363031568,
+      "peak": 0.37587296962738037
+    },
+    {
+      "clipId": "l3-v-9c7fd1442d.mp3",
+      "decoded": true,
+      "duration": 2.256,
+      "rms": 0.0479437075292921,
+      "peak": 0.42435237765312195
+    },
+    {
+      "clipId": "l3-v-9e6571c048.mp3",
+      "decoded": true,
+      "duration": 1.416,
+      "rms": 0.07964984483166072,
+      "peak": 0.5351049900054932
+    },
+    {
+      "clipId": "l3-v-a12728f620.mp3",
+      "decoded": true,
+      "duration": 1.416,
+      "rms": 0.06545968421789478,
+      "peak": 0.3849339485168457
+    },
+    {
+      "clipId": "l3-v-a511e8442f.mp3",
+      "decoded": true,
+      "duration": 1.056,
+      "rms": 0.06602906275397566,
+      "peak": 0.38396573066711426
+    },
+    {
+      "clipId": "l3-v-a942f3063a.mp3",
+      "decoded": true,
+      "duration": 1.848,
+      "rms": 0.07063615073685826,
+      "peak": 0.46247270703315735
+    },
+    {
+      "clipId": "l3-v-a9d79e8508.mp3",
+      "decoded": true,
+      "duration": 1.656,
+      "rms": 0.08833003794263115,
+      "peak": 0.6051271557807922
+    },
+    {
+      "clipId": "l3-v-aaaf4cd738.mp3",
+      "decoded": true,
+      "duration": 1.752,
+      "rms": 0.025064349051214643,
+      "peak": 0.16440711915493011
+    },
+    {
+      "clipId": "l3-v-ab2d08aced.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.0630410552451562,
+      "peak": 0.26347431540489197
+    },
+    {
+      "clipId": "l3-v-b91fac808b.mp3",
+      "decoded": true,
+      "duration": 1.8,
+      "rms": 0.04976580603765747,
+      "peak": 0.3300539255142212
+    },
+    {
+      "clipId": "l3-v-bf795b2847.mp3",
+      "decoded": true,
+      "duration": 1.416,
+      "rms": 0.0590783464007606,
+      "peak": 0.2702212333679199
+    },
+    {
+      "clipId": "l3-v-c3304d1e49.mp3",
+      "decoded": true,
+      "duration": 0.912,
+      "rms": 0.04771874539802705,
+      "peak": 0.369415819644928
+    },
+    {
+      "clipId": "l3-v-c355303e5f.mp3",
+      "decoded": true,
+      "duration": 1.752,
+      "rms": 0.06927693197006186,
+      "peak": 0.45693281292915344
+    },
+    {
+      "clipId": "l3-v-c80e1c9031.mp3",
+      "decoded": true,
+      "duration": 2.16,
+      "rms": 0.059728937563177154,
+      "peak": 0.39682769775390625
+    },
+    {
+      "clipId": "l3-v-c86d164500.mp3",
+      "decoded": true,
+      "duration": 1.512,
+      "rms": 0.05926747255149468,
+      "peak": 0.4533199667930603
+    },
+    {
+      "clipId": "l3-v-ca0bc5e27c.mp3",
+      "decoded": true,
+      "duration": 1.32,
+      "rms": 0.05549219525945696,
+      "peak": 0.2663254141807556
+    },
+    {
+      "clipId": "l3-v-cc9c0b8ca1.mp3",
+      "decoded": true,
+      "duration": 2.208,
+      "rms": 0.04426071366762461,
+      "peak": 0.32790911197662354
+    },
+    {
+      "clipId": "l3-v-d61f999a29.mp3",
+      "decoded": true,
+      "duration": 1.368,
+      "rms": 0.05030366942608134,
+      "peak": 0.24812711775302887
+    },
+    {
+      "clipId": "l3-v-dd9fc2c0a1.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.08916978469611807,
+      "peak": 0.6232239603996277
+    },
+    {
+      "clipId": "l3-v-e1dff1a454.mp3",
+      "decoded": true,
+      "duration": 1.848,
+      "rms": 0.06069472733153635,
+      "peak": 0.441148579120636
+    },
+    {
+      "clipId": "l3-v-e40c85bbac.mp3",
+      "decoded": true,
+      "duration": 1.656,
+      "rms": 0.05808113074082968,
+      "peak": 0.29382264614105225
+    },
+    {
+      "clipId": "l3-v-e41777bb11.mp3",
+      "decoded": true,
+      "duration": 2.448,
+      "rms": 0.06077901567338695,
+      "peak": 0.36000561714172363
+    },
+    {
+      "clipId": "l3-v-e5d9c6c8a8.mp3",
+      "decoded": true,
+      "duration": 1.968,
+      "rms": 0.04568970304104688,
+      "peak": 0.2654527723789215
+    },
+    {
+      "clipId": "l3-v-e6c58a2c0e.mp3",
+      "decoded": true,
+      "duration": 1.968,
+      "rms": 0.045954812431011446,
+      "peak": 0.46690455079078674
+    },
+    {
+      "clipId": "l3-v-e756c6ef2a.mp3",
+      "decoded": true,
+      "duration": 0.864,
+      "rms": 0.08625982973389636,
+      "peak": 0.5019527673721313
+    },
+    {
+      "clipId": "l3-v-e803a9ce72.mp3",
+      "decoded": true,
+      "duration": 1.152,
+      "rms": 0.07058610538808799,
+      "peak": 0.4349803924560547
+    },
+    {
+      "clipId": "l3-v-e974ae4966.mp3",
+      "decoded": true,
+      "duration": 2.064,
+      "rms": 0.04629496613481675,
+      "peak": 0.3809782564640045
+    },
+    {
+      "clipId": "l3-v-eb53ee8efe.mp3",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.0821522434427764,
+      "peak": 0.5655959844589233
+    },
+    {
+      "clipId": "l3-v-f0ef38a883.mp3",
+      "decoded": true,
+      "duration": 0.96,
+      "rms": 0.05747509728545842,
+      "peak": 0.31422868371009827
+    },
+    {
+      "clipId": "l3-v-f2a8a3ceea.mp3",
+      "decoded": true,
+      "duration": 1.704,
+      "rms": 0.07724216041262709,
+      "peak": 0.4745129942893982
+    },
+    {
+      "clipId": "l3-v-f7b2a6ee68.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.046345554216666585,
+      "peak": 0.33411291241645813
+    },
+    {
+      "clipId": "l3-v-fbd5b75066.mp3",
+      "decoded": true,
+      "duration": 0.912,
+      "rms": 0.08642344045535749,
+      "peak": 0.551016092300415
+    },
+    {
+      "clipId": "l3-v-fe4c23d628.mp3",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.07109848379191146,
+      "peak": 0.7095959782600403
+    },
+    {
+      "clipId": "l3-v-fe9ea3f070.mp3",
+      "decoded": true,
+      "duration": 1.416,
+      "rms": 0.07238682492239898,
+      "peak": 0.37755197286605835
+    },
+    {
+      "clipId": "tone-1-ma",
+      "decoded": true,
+      "duration": 1.056,
+      "rms": 0.059820190935562005,
+      "peak": 0.46396636962890625
+    },
+    {
+      "clipId": "tone-2-ma",
+      "decoded": true,
+      "duration": 0.864,
+      "rms": 0.08343844744921078,
+      "peak": 0.5452969074249268
+    },
+    {
+      "clipId": "tone-3-ma",
+      "decoded": true,
+      "duration": 1.056,
+      "rms": 0.06571023082300537,
+      "peak": 0.4914677143096924
+    },
+    {
+      "clipId": "tone-4-ma",
+      "decoded": true,
+      "duration": 0.72,
+      "rms": 0.07900246428891325,
+      "peak": 0.40078476071357727
+    },
+    {
+      "clipId": "tone-neutral-ma",
+      "decoded": true,
+      "duration": 0.6,
+      "rms": 0.08940574462683802,
+      "peak": 0.4860026240348816
+    },
+    {
+      "clipId": "ni-hao-natural",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.0799790116483499,
+      "peak": 0.35281825065612793
+    },
+    {
+      "clipId": "zao",
+      "decoded": true,
+      "duration": 1.8,
+      "rms": 0.04102406858597738,
+      "peak": 0.5993597507476807
+    },
+    {
+      "clipId": "cao",
+      "decoded": true,
+      "duration": 1.008,
+      "rms": 0.05274096977112923,
+      "peak": 0.4424648582935333
+    },
+    {
+      "clipId": "sao",
+      "decoded": true,
+      "duration": 1.104,
+      "rms": 0.04034588747988172,
+      "peak": 0.34962931275367737
+    }
+  ]
+}

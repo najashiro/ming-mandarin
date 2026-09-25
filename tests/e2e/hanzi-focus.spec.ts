@@ -71,7 +71,7 @@ for (const character of characters) {
       const feedback = challenge.locator(`.mixed-feedback.${outcome}`);
       await expect(feedback).toBeVisible();
       const link = feedback.getByRole('link', { name: 'Hanzi ↗' });
-      await expect(link).toHaveAttribute('href', `/study/l1-l2-l3/hanzi?character=${encodeURIComponent(character)}&focus=glyph`);
+      await expect(link).toHaveAttribute('href', `/study/l3/hanzi?character=${encodeURIComponent(character)}&focus=glyph`);
       await expect(link).toHaveAttribute('target', '_blank');
       await expect(link).toHaveAttribute('rel', 'noopener noreferrer');
       const round = await challenge.locator('.mixed-hud h2').textContent();

@@ -6,7 +6,9 @@ import hashlib
 import json
 import subprocess
 import tempfile
+import sys
 from pathlib import Path
+from vocabulary_projection import enrich_vocabulary
 
 ROOT = Path(__file__).resolve().parents[1]
 QUERY = ROOT / "MING_KNOWLEDGE/v2/query.py"
@@ -18,10 +20,10 @@ def first_value(rows: list[dict], key: str) -> str | None:
 
 
 with tempfile.TemporaryDirectory(prefix="ming-corpus-v21-") as tmp:
-    subprocess.run(["python3", str(QUERY), "--validate"], cwd=ROOT, check=True, stdout=subprocess.DEVNULL)
-    subprocess.run(["python3", str(QUERY), "--export", tmp], cwd=ROOT, check=True, stdout=subprocess.DEVNULL)
+    subprocess.run([sys.executable, str(QUERY), "--validate"], cwd=ROOT, check=True, stdout=subprocess.DEVNULL)
+    subprocess.run([sys.executable, str(QUERY), "--export", tmp], cwd=ROOT, check=True, stdout=subprocess.DEVNULL)
     source = Path(tmp)
-    load = lambda name: json.loads((source / f"{name}.json").read_text())
+    load = lambda name: json.loads((source / f"{name}.json").read_text(encoding="utf-8"))
     vocabulary, phrases, dialogues = load("vocabulary"), load("phrases"), load("dialogues")
     phrase_evidence, hanzi = load("phrase_evidence"), load("hanzi")
     vocabulary_by_hanzi = {row["hanzi"]: row for row in vocabulary}
@@ -33,6 +35,7 @@ with tempfile.TemporaryDirectory(prefix="ming-corpus-v21-") as tmp:
         "spanish": first_value(row.get("spanish_variants", []), "value"),
         "lessons": row.get("lessons", []), "roles": row.get("roles", []),
     } for row in vocabulary if row.get("pinyin_variants") and row.get("spanish_variants")]
+    enrich_vocabulary(public_vocab, load)
 
     public_phrases = [{
         "id": row["id"], "hanzi": row["hanzi"],
@@ -89,5 +92,5 @@ with tempfile.TemporaryDirectory(prefix="ming-corpus-v21-") as tmp:
                "dialogues": public_dialogues, "radicals": public_radicals}
     canonical = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).encode()
     payload["fingerprint"] = hashlib.sha256(canonical).hexdigest()
-    OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
+    OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Wrote {OUT.relative_to(ROOT)} ({payload['fingerprint']})")

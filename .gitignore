@@ -16,3 +16,5 @@ tmp/
 Base de Datos/
 *.tsbuildinfo
 *.log
+
+__pycache__/

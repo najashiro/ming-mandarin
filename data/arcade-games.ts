@@ -5,5 +5,6 @@ export const arcadeGames = [
   { id: 'hanzi-lab', name: 'Hanzi Lab', description: 'Escucha, reconoce, construye y escribe.', kind: 'hanzi', skill: 'Sonido, forma y escritura' },
   { id: 'historia-detective', name: 'Historia Detective', description: 'Lee, investiga y encuentra la respuesta.', kind: 'story', skill: 'Lectura y evidencia' },
   { id: 'hora', name: '现在几点？', description: '¿Qué hora es?', kind: 'time', skill: 'Escucha y construye la hora' },
+  { id: 'vocabulario-mix', name: 'Vocabulario Mix', description: 'Recuerda, revela y autoevalúa.', kind: 'vocabulary', skill: 'Recuerdo autoevaluado' },
 ] as const;
 export const ARCADE_GAME_COUNT = arcadeGames.length;

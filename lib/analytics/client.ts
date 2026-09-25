@@ -67,13 +67,13 @@ export function setCurrentAnalyticsRoute(pathname: string) {
 }
 
 export function trackAnalyticsEvent(eventType: Exclude<AnalyticsEventType, 'heartbeat'>, options: Omit<EventOptions, 'activeSeconds' | 'beacon'> = {}) {
-  post(eventType, options);
+  try { post(eventType, options); } catch { /* Analytics cannot block study when browser storage is unavailable. */ }
 }
 
 export function trackAnalyticsHeartbeat(activeSeconds: number, beacon = false) {
-  if (activeSeconds > 0) post('heartbeat', { activeSeconds: Math.min(60, activeSeconds), beacon });
+  try { if (activeSeconds > 0) post('heartbeat', { activeSeconds: Math.min(60, activeSeconds), beacon }); } catch { /* Optional telemetry. */ }
 }
 
 export function touchAnalyticsSession() {
-  if (typeof window !== 'undefined') sessionState();
+  try { if (typeof window !== 'undefined') sessionState(); } catch { /* Optional telemetry. */ }
 }

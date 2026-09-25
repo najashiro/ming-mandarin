@@ -1,0 +1,178 @@
+[
+  {
+    "wordId": "v-饺子",
+    "sense": "Empanadillas chinas hervidas",
+    "hintType": "image",
+    "src": "/images/games/reto-mixto/jiaozi.webp",
+    "alt": "Empanadillas chinas hervidas",
+    "description": "Empanadillas chinas hervidas",
+    "status": "approved",
+    "review": "Inspección visual y adecuación al sentido por Codex local, 2026-09-25; no revisión externa",
+    "provenance": "Recurso existente de Reto Mixto en af286b5; reutilizado sin regeneración"
+  },
+  {
+    "wordId": "v-包子",
+    "sense": "Bollos rellenos al vapor",
+    "hintType": "image",
+    "src": "/images/games/reto-mixto/baozi.webp",
+    "alt": "Bollos rellenos al vapor",
+    "description": "Bollos rellenos al vapor",
+    "status": "approved",
+    "review": "Inspección visual y adecuación al sentido por Codex local, 2026-09-25; no revisión externa",
+    "provenance": "Recurso existente de Reto Mixto en af286b5; reutilizado sin regeneración"
+  },
+  {
+    "wordId": "v-米饭",
+    "sense": "Cuenco de arroz cocido",
+    "hintType": "image",
+    "src": "/images/games/reto-mixto/rice.webp",
+    "alt": "Cuenco de arroz cocido",
+    "description": "Cuenco de arroz cocido",
+    "status": "approved",
+    "review": "Inspección visual y adecuación al sentido por Codex local, 2026-09-25; no revisión externa",
+    "provenance": "Recurso existente de Reto Mixto en af286b5; reutilizado sin regeneración"
+  },
+  {
+    "wordId": "v-面包",
+    "sense": "Pan con rebanadas",
+    "hintType": "image",
+    "src": "/images/games/reto-mixto/bread.webp",
+    "alt": "Pan con rebanadas",
+    "description": "Pan con rebanadas",
+    "status": "approved",
+    "review": "Inspección visual y adecuación al sentido por Codex local, 2026-09-25; no revisión externa",
+    "provenance": "Recurso existente de Reto Mixto en af286b5; reutilizado sin regeneración"
+  },
+  {
+    "wordId": "v-咖啡",
+    "sense": "Taza de café negro",
+    "hintType": "image",
+    "src": "/images/games/reto-mixto/coffee.webp",
+    "alt": "Taza de café negro",
+    "description": "Taza de café negro",
+    "status": "approved",
+    "review": "Inspección visual y adecuación al sentido por Codex local, 2026-09-25; no revisión externa",
+    "provenance": "Recurso existente de Reto Mixto en af286b5; reutilizado sin regeneración"
+  },
+  {
+    "wordId": "v-茶",
+    "sense": "Taza de té con hojas",
+    "hintType": "image",
+    "src": "/images/games/reto-mixto/tea.webp",
+    "alt": "Taza de té con hojas",
+    "description": "Taza de té con hojas",
+    "status": "approved",
+    "review": "Inspección visual y adecuación al sentido por Codex local, 2026-09-25; no revisión externa",
+    "provenance": "Recurso existente de Reto Mixto en af286b5; reutilizado sin regeneración"
+  },
+  {
+    "wordId": "v-水",
+    "sense": "Jarra y vaso de agua",
+    "hintType": "image",
+    "src": "/images/games/reto-mixto/water.webp",
+    "alt": "Jarra y vaso de agua",
+    "description": "Jarra y vaso de agua",
+    "status": "approved",
+    "review": "Inspección visual y adecuación al sentido por Codex local, 2026-09-25; no revisión externa",
+    "provenance": "Recurso existente de Reto Mixto en af286b5; reutilizado sin regeneración"
+  },
+  {
+    "wordId": "v-可乐",
+    "sense": "Refresco de cola con hielo",
+    "hintType": "image",
+    "src": "/images/games/reto-mixto/cola.webp",
+    "alt": "Refresco de cola con hielo",
+    "description": "Refresco de cola con hielo",
+    "status": "approved",
+    "review": "Inspección visual y adecuación al sentido por Codex local, 2026-09-25; no revisión externa",
+    "provenance": "Recurso existente de Reto Mixto en af286b5; reutilizado sin regeneración"
+  },
+  {
+    "wordId": "v-牛奶",
+    "sense": "Vaso de leche",
+    "hintType": "image",
+    "src": "/images/games/reto-mixto/milk.webp",
+    "alt": "Vaso de leche",
+    "description": "Vaso de leche",
+    "status": "approved",
+    "review": "Inspección visual y adecuación al sentido por Codex local, 2026-09-25; no revisión externa",
+    "provenance": "Recurso existente de Reto Mixto en af286b5; reutilizado sin regeneración"
+  },
+  {
+    "wordId": "v-钢琴",
+    "sense": "Piano vertical con teclado",
+    "hintType": "image",
+    "src": "/images/games/reto-mixto/piano.webp",
+    "alt": "Piano vertical con teclado",
+    "description": "Piano vertical con teclado",
+    "status": "approved",
+    "review": "Inspección visual y adecuación al sentido por Codex local, 2026-09-25; no revisión externa",
+    "provenance": "Recurso existente de Reto Mixto en af286b5; reutilizado sin regeneración"
+  },
+  {
+    "wordId": "v-狗",
+    "sense": "Perro sentado",
+    "hintType": "image",
+    "src": "/images/games/reto-mixto/dog.webp",
+    "alt": "Perro sentado",
+    "description": "Perro sentado",
+    "status": "approved",
+    "review": "Inspección visual y adecuación al sentido por Codex local, 2026-09-25; no revisión externa",
+    "provenance": "Recurso existente de Reto Mixto en af286b5; reutilizado sin regeneración"
+  },
+  {
+    "wordId": "v-猫",
+    "sense": "Gato sentado",
+    "hintType": "image",
+    "src": "/images/games/reto-mixto/cat.webp",
+    "alt": "Gato sentado",
+    "description": "Gato sentado",
+    "status": "approved",
+    "review": "Inspección visual y adecuación al sentido por Codex local, 2026-09-25; no revisión externa",
+    "provenance": "Recurso existente de Reto Mixto en af286b5; reutilizado sin regeneración"
+  },
+  {
+    "wordId": "v-照片",
+    "sense": "Manos sujetando una fotografía impresa",
+    "hintType": "image",
+    "src": "/images/games/reto-mixto/photo.webp",
+    "alt": "Manos sujetando una fotografía impresa",
+    "description": "Manos sujetando una fotografía impresa",
+    "status": "approved",
+    "review": "Inspección visual y adecuación al sentido por Codex local, 2026-09-25; no revisión externa",
+    "provenance": "Recurso existente de Reto Mixto en af286b5; reutilizado sin regeneración"
+  },
+  {
+    "wordId": "v-医生",
+    "sense": "Profesional con bata blanca y estetoscopio",
+    "hintType": "image",
+    "src": "/images/games/reto-mixto/doctor.webp",
+    "alt": "Profesional con bata blanca y estetoscopio",
+    "description": "Profesional con bata blanca y estetoscopio",
+    "status": "approved",
+    "review": "Inspección visual y adecuación al sentido por Codex local, 2026-09-25; no revisión externa",
+    "provenance": "Recurso existente de Reto Mixto en af286b5; reutilizado sin regeneración"
+  },
+  {
+    "wordId": "v-宠物",
+    "sense": "mascota",
+    "hintType": "image",
+    "src": null,
+    "alt": "Familia cuidando a varios animales de compañía",
+    "description": "Escena de cuidado de un perro y un gato en un hogar; no un perro aislado",
+    "status": "pending",
+    "review": null,
+    "provenance": "Plan editorial local"
+  },
+  {
+    "wordId": "v-女儿",
+    "sense": "hija",
+    "hintType": "relationship",
+    "src": null,
+    "alt": "Relación entre progenitores y su hija",
+    "description": "Esquema con la hija señalada respecto a sus progenitores",
+    "status": "pending",
+    "review": null,
+    "provenance": "Plan editorial local"
+  }
+]

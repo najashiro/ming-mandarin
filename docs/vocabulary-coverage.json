@@ -1,0 +1,203 @@
+{
+  "corpusFingerprint": "567543b49df0ce3fb47f033dee0fc1449bbd8197749e3a26cd220e865a0d1f02",
+  "publishedVocabulary": 217,
+  "sourceVocabulary": 346,
+  "note": "129 registros fuente carecen de pinyin o español documentado; no se publican como tarjetas completas. Las clasificaciones pendientes siguen consultables por su filtro.",
+  "counts": {
+    "l1": {
+      "new": 26,
+      "context": 56,
+      "reviewBasic": 38,
+      "reviewHard": 59,
+      "pendingClassification": 6,
+      "withDocumentedExample": 50,
+      "withCompleteExample": 24,
+      "withImage": 0,
+      "withAudio": 55,
+      "withAllHanziLinks": 46
+    },
+    "l2": {
+      "new": 38,
+      "context": 99,
+      "reviewBasic": 72,
+      "reviewHard": 127,
+      "pendingClassification": 6,
+      "withDocumentedExample": 93,
+      "withCompleteExample": 19,
+      "withImage": 10,
+      "withAudio": 106,
+      "withAllHanziLinks": 108
+    },
+    "l3": {
+      "new": 41,
+      "context": 129,
+      "reviewBasic": 118,
+      "reviewHard": 151,
+      "pendingClassification": 1,
+      "withDocumentedExample": 126,
+      "withCompleteExample": 6,
+      "withImage": 13,
+      "withAudio": 120,
+      "withAllHanziLinks": 128
+    },
+    "l1-l2": {
+      "new": 64,
+      "context": 119,
+      "reviewBasic": 85,
+      "reviewHard": 148,
+      "pendingClassification": 11,
+      "withDocumentedExample": 109,
+      "withCompleteExample": 36,
+      "withImage": 10,
+      "withAudio": 123,
+      "withAllHanziLinks": 122
+    },
+    "l1-l2-l3": {
+      "new": 105,
+      "context": 164,
+      "reviewBasic": 146,
+      "reviewHard": 209,
+      "pendingClassification": 8,
+      "withDocumentedExample": 158,
+      "withCompleteExample": 38,
+      "withImage": 14,
+      "withAudio": 159,
+      "withAllHanziLinks": 167
+    }
+  },
+  "pendingClassification": [
+    {
+      "id": "v-贵",
+      "hanzi": "贵",
+      "roles": [
+        "preview_next_lesson"
+      ]
+    },
+    {
+      "id": "v-姥姥",
+      "hanzi": "姥姥",
+      "roles": [
+        "preview_next_lesson"
+      ]
+    },
+    {
+      "id": "v-姥爷",
+      "hanzi": "姥爷",
+      "roles": [
+        "preview_next_lesson"
+      ]
+    },
+    {
+      "id": "v-汉语课",
+      "hanzi": "汉语课",
+      "roles": [
+        "compound_example"
+      ]
+    },
+    {
+      "id": "v-早上好",
+      "hanzi": "早上好",
+      "roles": [
+        "phonetics_support",
+        "worksheet_sequence"
+      ]
+    },
+    {
+      "id": "v-上午好",
+      "hanzi": "上午好",
+      "roles": [
+        "phonetics_support",
+        "worksheet_sequence"
+      ]
+    },
+    {
+      "id": "v-下午好",
+      "hanzi": "下午好",
+      "roles": [
+        "phonetics_support",
+        "worksheet_sequence"
+      ]
+    },
+    {
+      "id": "v-晚上好",
+      "hanzi": "晚上好",
+      "roles": [
+        "phonetics_support",
+        "worksheet_sequence"
+      ]
+    }
+  ],
+  "missingHanzi": [
+    "马",
+    "为",
+    "宋",
+    "华",
+    "丁",
+    "力",
+    "波",
+    "林",
+    "娜",
+    "行",
+    "虎",
+    "她",
+    "罗",
+    "斯",
+    "泰",
+    "印",
+    "度",
+    "埃",
+    "及",
+    "同",
+    "堡",
+    "比",
+    "萨",
+    "饼",
+    "律",
+    "记",
+    "者",
+    "服",
+    "务",
+    "员",
+    "经",
+    "理",
+    "程",
+    "商",
+    "先",
+    "橙",
+    "豆",
+    "浆",
+    "杯",
+    "业",
+    "厕",
+    "所",
+    "干",
+    "嘛",
+    "啥",
+    "丽",
+    "书",
+    "言",
+    "文",
+    "甜",
+    "品",
+    "苹",
+    "意",
+    "思",
+    "前",
+    "明",
+    "后",
+    "约",
+    "翰",
+    "车",
+    "牌",
+    "号"
+  ],
+  "audio": {
+    "available_unverified_decode": 221,
+    "not_requested": 168
+  },
+  "images": {
+    "pilot": 16,
+    "approved": 14,
+    "pending": 2
+  }
+}

@@ -1,0 +1,2 @@
+import { defineConfig, devices } from '@playwright/test';
+export default defineConfig({ testDir: './tests/e2e', testMatch: ['vocabulary.spec.ts', 'vocabulary-audio.spec.ts'], timeout: 60000, workers: 2, use: { baseURL: 'http://localhost:3100', serviceWorkers: 'block', trace: 'retain-on-failure' }, projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'] } }, { name: 'webkit', use: { ...devices['Desktop Safari'] } }] });

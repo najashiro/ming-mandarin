@@ -3,6 +3,8 @@
  * every curriculum collection and progress calculation. A future audited lesson
  * associates the same glyph/id with a unit; it must not create another asset.
  */
+import vocabularyHanzi from './vocabulary-hanzi.json';
+import manifest from '@/public/hanzi-data/manifest.json';
 export type SupplementalHanziEntry = {
   id: `supplemental-${string}`;
   hanzi: string;
@@ -12,7 +14,7 @@ export type SupplementalHanziEntry = {
   curricularAssociation: null;
   tracking: 'supplementary';
   access: 'direct-link-only';
-  linguisticSource: 'time-game-approved-content-2026-09-23';
+  linguisticSource: string;
   technicalSource: 'hanzi-writer-data@2.0.1';
 };
 
@@ -28,4 +30,10 @@ export const supplementalHanzi = [
   linguisticSource:'time-game-approved-content-2026-09-23',technicalSource:'hanzi-writer-data@2.0.1',
 })) as SupplementalHanziEntry[];
 
-export const supplementalHanziByGlyph = new Map(supplementalHanzi.map(entry=>[entry.hanzi,entry]));
+const vocabularyReferences: SupplementalHanziEntry[] = vocabularyHanzi.map(entry => ({
+  id: `supplemental-${entry.hanzi}`, hanzi: entry.hanzi, pinyin: entry.pinyin, meaning: entry.meaning,
+  strokeCount: (manifest as Record<string, {strokeCount:number}>)[entry.hanzi].strokeCount,
+  curricularAssociation: null, tracking: 'supplementary', access: 'direct-link-only',
+  linguisticSource: entry.source, technicalSource: 'hanzi-writer-data@2.0.1',
+}));
+export const supplementalHanziByGlyph = new Map([...supplementalHanzi, ...vocabularyReferences].map(entry=>[entry.hanzi,entry]));

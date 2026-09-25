@@ -6,17 +6,24 @@ import { timeAudioFile } from './time-audio-key.mjs';
 
 const normalizeMandarin = (value: string) => value.normalize('NFC').replace(/[^\u3400-\u9fff]/g, '');
 const clipsByText = new Map<string, string>();
+const clipsByReading = new Map<string, string>();
+const readingKey = (text: string, pinyin: string) => `${normalizeMandarin(text)}:${pinyin.normalize('NFC').toLowerCase().replace(/[\s'’ʼ.,!?]/g, '')}`;
 const availableFiles = new Set(availableMandarin.files);
 
 for (const clip of pronunciation.clips) {
   clipsByText.set(normalizeMandarin(clip.input), `/audio/pinyin/${clip.file}`);
+  clipsByReading.set(readingKey(clip.input, clip.expectedPinyin), `/audio/pinyin/${clip.file}`);
 }
 
 for (const clip of manifest.clips) {
-  if (availableFiles.has(clip.file)) clipsByText.set(normalizeMandarin(clip.input), `/audio/mandarin/${clip.file}`);
+  if (availableFiles.has(clip.file)) {
+    clipsByText.set(normalizeMandarin(clip.input), `/audio/mandarin/${clip.file}`);
+    clipsByReading.set(readingKey(clip.input, clip.expectedPinyin), `/audio/mandarin/${clip.file}`);
+  }
 }
 
-export function audioForMandarinText(text: string): string | undefined {
+export function audioForMandarinText(text: string, pinyin?: string): string | undefined {
+  if (pinyin) return clipsByReading.get(readingKey(text, pinyin));
   const clean=normalizeMandarin(text);
   const recorded=clipsByText.get(clean);
   if(recorded)return recorded;

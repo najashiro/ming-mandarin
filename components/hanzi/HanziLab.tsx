@@ -241,7 +241,7 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
           <span>{stage.id}</span><div><b>{stage.shortTitle}</b><small>{summary.studied}/{summary.total} con práctica</small><i><em style={{ width: `${summary.total ? summary.studied / summary.total * 100 : 0}%` }} /></i></div>{index < stages.length - 1 && <strong aria-hidden="true">→</strong>}
         </button>;
       })}</div>
-    </section>:<section className="panel hanzi-supplemental-note"><p className="eyebrow">CONTENIDO SUPLEMENTARIO</p><h2>Consulta del juego de la hora</h2><p>No forma parte del progreso del curso. La práctica ofrece feedback durante esta visita, pero no se guarda.</p></section>}
+    </section>:<section className="panel hanzi-supplemental-note"><p className="eyebrow">CONTENIDO SUPLEMENTARIO</p><h2>Consulta directa de caracteres</h2><p>No forma parte del progreso del curso. La práctica ofrece feedback durante esta visita, pero no se guarda.</p></section>}
 
     {tracking==='course'&&<section className="panel hanzi-character-picker" aria-label="Selector de caracteres">
       <div className="hanzi-picker-heading"><div><p className="eyebrow">BUSCADOR HANZI</p><h2>Busca por pinyin</h2></div><span>{displayedCharacters.length} en el alcance</span></div>

@@ -4,10 +4,10 @@ async function openGame(page: import('@playwright/test').Page, id: string) {
   await page.locator(`[data-game="${id}"]`).getByRole('button',{name:/Jugar/}).click();
   await expect(page.locator('.new-game-shell')).toBeVisible();
 }
-for (const width of [320,375,390,430,1366]) test(`seis experiencias sin desbordes a ${width}px`, async ({ page }, info) => {
+for (const width of [320,375,390,430,1366]) test(`siete experiencias sin desbordes a ${width}px`, async ({ page }, info) => {
   await page.setViewportSize({width,height:844});
   await page.goto('/study/l3/games');
-  await expect(page.locator('.game-grid article')).toHaveCount(6);
+  await expect(page.locator('.game-grid article')).toHaveCount(7);
   await expect(page.locator('.game-grid article').first()).toContainText('Reto Mixto');
   for (const id of ['escena-viva','conversacion','hanzi-lab','historia-detective','hora']) {
     await openGame(page,id);

@@ -7,12 +7,12 @@ import audioManifest from '@/data/mandarin-audio.json';
 import { createHash } from 'node:crypto';
 
 describe('corpus v2.1 public projection', () => {
-  it('contains stable IDs and no documentary provenance', () => {
+  it('contains stable IDs and allow-listed provenance without private documents', () => {
     expect(corpus.version).toBe('2.1.0');
     expect(corpus.fingerprint).toMatch(/^[a-f0-9]{64}$/);
     expect(corpus.vocabulary.every((row) => row.id === `v-${row.hanzi}`)).toBe(true);
     const serialized = JSON.stringify(corpus);
-    expect(serialized).not.toMatch(/source_refs|source_id|evidence_ids|pdfPage|SRC-|\.pdf/i);
+    expect(serialized).not.toMatch(/source_refs|source_id|evidence_ids|pdfPage|\.pdf|filename|sha256/i);
   });
 
   it('publishes exactly the two textbook dialogues per lesson', () => {
@@ -47,7 +47,8 @@ describe('corpus v2.1 public projection', () => {
   });
 
   it('does not expose a playback URL until the MP3 is present', () => {
-    expect(audioForMandarinText('我叫马大为。请问，你叫什么名字？')).toBeUndefined();
+    expect(audioForMandarinText('我叫马大为。请问，你叫什么名字？')).toMatch(/^\/audio\/mandarin\/.+\.mp3$/);
+    expect(audioForMandarinText('宠物')).toBeUndefined();
     expect(audioForMandarinText('你好！')).toMatch(/^\/audio\/mandarin\/.+\.mp3$/);
   });
 
@@ -57,7 +58,7 @@ describe('corpus v2.1 public projection', () => {
       const { file, input, expectedPinyin } = byId.get(id)!;
       return { id, file, input, expectedPinyin };
     });
-    expect(audioRequest.status).toBe('requested');
+    expect(audioRequest.status).toBe('completed');
     expect(audioRequest.clipIds).toHaveLength(43);
     expect(createHash('sha256').update(JSON.stringify(canonical)).digest('hex')).toBe(audioRequest.manifestFingerprint);
   });
