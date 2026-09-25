@@ -1,0 +1,133 @@
+name: Corpus source audit (offline, no paid APIs)
+
+on:
+  push:
+    branches: [audit/corpus-l1-l3-20260925]
+  pull_request:
+    paths:
+      - 'MING_KNOWLEDGE/**'
+      - 'scripts/export-corpus-v21.py'
+      - 'data/corpus-v21-public.json'
+      - '.github/workflows/corpus-source-audit.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: corpus-source-audit-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validate documentary corpus and source tests
+        run: |
+          python3 MING_KNOWLEDGE/v2/query.py --validate
+          python3 -m unittest discover -s MING_KNOWLEDGE/v2 -p 'test_*.py'
+      - name: Check projection or prepare authorized first regeneration
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          REF_NAME: ${{ github.ref }}
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          p=Path('.github/corpus-requests/audit-20260925.json')
+          request=json.loads(p.read_text()) if p.exists() else {}
+          initial=(os.environ['EVENT_NAME']=='push' and os.environ['REF_NAME']=='refs/heads/audit/corpus-l1-l3-20260925' and request.get('requestId')=='corpus-source-audit-20260925' and request.get('status')=='requested')
+          cmd=['python3','scripts/export-corpus-v21.py']
+          subprocess.run(cmd if initial else cmd+['--check'],check=True)
+          PY
+          python3 MING_KNOWLEDGE/v2/audit_source_tables.py --check --write-reports
+          python3 scripts/export-corpus-v21.py --check
+
+  app-checks:
+    needs: audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.22.2'
+      - run: corepack enable
+      - run: pnpm install --frozen-lockfile
+      - name: Regenerate projection in temporary checkout
+        run: python3 scripts/export-corpus-v21.py
+      - run: pnpm lint
+      - run: pnpm typecheck
+      - run: pnpm test
+      - run: pnpm build
+
+  publish-generated-audit:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/audit/corpus-l1-l3-20260925'
+    needs: [audit, app-checks]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+      - name: Check one-time request
+        id: request
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          request=json.loads(Path('.github/corpus-requests/audit-20260925.json').read_text())
+          assert request['requestId']=='corpus-source-audit-20260925'
+          assert request['branch']=='audit/corpus-l1-l3-20260925'
+          assert request['scope']=='regenerate-source-audit-projection-and-reports-only'
+          assert request['paidApiCalls'] is False and request['productionChanges'] is False
+          assert request['status'] in ('requested','completed')
+          with open(os.environ['GITHUB_OUTPUT'],'a') as out:
+              out.write('publish='+str(request['status']=='requested').lower()+'\n')
+          PY
+      - name: Regenerate only allowlisted data
+        if: steps.request.outputs.publish == 'true'
+        run: |
+          python3 scripts/export-corpus-v21.py
+          python3 MING_KNOWLEDGE/v2/audit_source_tables.py --check --write-reports
+          python3 scripts/export-corpus-v21.py --check
+          python3 -m unittest discover -s MING_KNOWLEDGE/v2 -p 'test_*.py'
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          p=Path('.github/corpus-requests/audit-20260925.json')
+          data=json.loads(p.read_text())
+          data['status']='completed'
+          data['testedSourceCommit']=os.environ['GITHUB_SHA']
+          data['workflowRun']=os.environ['GITHUB_RUN_ID']
+          p.write_text(json.dumps(data,indent=2)+'\n')
+          PY
+      - name: Commit generated projection and reports to audit branch only
+        if: steps.request.outputs.publish == 'true'
+        env:
+          TESTED_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          branch='audit/corpus-l1-l3-20260925'
+          head=$(git ls-remote origin "refs/heads/$branch" | cut -f1)
+          test "$head" = "$TESTED_SHA"
+          git diff --check
+          git add -- data/corpus-v21-public.json MING_KNOWLEDGE/v2/index.json MING_KNOWLEDGE/v2/audits/source-tables-20260925.json MING_KNOWLEDGE/v2/audits/source-tables-20260925.md .github/corpus-requests/audit-20260925.json
+          python3 - <<'PY'
+          import subprocess
+          allowed={'data/corpus-v21-public.json','MING_KNOWLEDGE/v2/index.json','MING_KNOWLEDGE/v2/audits/source-tables-20260925.json','MING_KNOWLEDGE/v2/audits/source-tables-20260925.md','.github/corpus-requests/audit-20260925.json'}
+          changed=set(subprocess.check_output(['git','diff','--cached','--name-only'],text=True).splitlines())
+          assert changed and changed <= allowed, changed
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'data(corpus): regenerate verified source relationships and audit reports'
+          git push origin "HEAD:refs/heads/$branch"

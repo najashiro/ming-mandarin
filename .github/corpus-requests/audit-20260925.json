@@ -1,0 +1,10 @@
+{
+  "requestId": "corpus-source-audit-20260925",
+  "branch": "audit/corpus-l1-l3-20260925",
+  "status": "completed",
+  "scope": "regenerate-source-audit-projection-and-reports-only",
+  "paidApiCalls": false,
+  "productionChanges": false,
+  "testedSourceCommit": "d42d165225d1a8dfe00aa529dd205cdd7e43886a",
+  "workflowRun": "36163028939"
+}

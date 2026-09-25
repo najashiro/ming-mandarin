@@ -1,10 +1,13 @@
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import corpus from '@/data/corpus-v21-public.json';
 import { publicCorpusForScope } from '@/lib/corpus-v21';
 import { audioForMandarinText } from '@/lib/mandarin-audio';
 import audioRequest from '../../.github/audio-requests/pr8-book-dialogues.json';
 import audioManifest from '@/data/mandarin-audio.json';
+import availableAudio from '@/data/mandarin-audio-available.json';
 import { createHash } from 'node:crypto';
+import { existsSync, statSync } from 'node:fs';
+import { resolve } from 'node:path';
 
 describe('corpus v2.1 public projection', () => {
   it('contains stable IDs and allow-listed provenance without private documents', () => {
@@ -46,13 +49,24 @@ describe('corpus v2.1 public projection', () => {
     expect(l1.radicals.flatMap((row) => row.examples).every((example) => example.lessons.includes(1))).toBe(true);
   });
 
-  it('does not expose a playback URL until the MP3 is present', () => {
-    expect(audioForMandarinText('我叫马大为。请问，你叫什么名字？')).toMatch(/^\/audio\/mandarin\/.+\.mp3$/);
+  it('does not expose a manifest clip when it is excluded from availability', async () => {
+    // This sentence now has a published MP3. Simulate the absent-resource state
+    // instead of permanently assuming that an already completed batch is pending.
+    vi.resetModules();
+    vi.doMock('@/data/mandarin-audio-available.json', () => ({ default: { files: [] } }));
+    try {
+      const unavailable = await import('@/lib/mandarin-audio');
+      expect(unavailable.audioForMandarinText('我叫马大为。请问，你叫什么名字？')).toBeUndefined();
+    } finally {
+      vi.doUnmock('@/data/mandarin-audio-available.json');
+      vi.resetModules();
+    }
     expect(audioForMandarinText('宠物')).toBeUndefined();
+    expect(audioForMandarinText('我叫马大为。请问，你叫什么名字？')).toMatch(/^\/audio\/mandarin\/.+\.mp3$/);
     expect(audioForMandarinText('你好！')).toMatch(/^\/audio\/mandarin\/.+\.mp3$/);
   });
 
-  it('pins the paid audio request to the exact reviewed manifest entries', () => {
+  it('pins the completed audio request to reviewed entries and actual files', () => {
     const byId = new Map(audioManifest.clips.map((clip) => [clip.id, clip]));
     const canonical = audioRequest.clipIds.map((id) => {
       const { file, input, expectedPinyin } = byId.get(id)!;
@@ -60,6 +74,42 @@ describe('corpus v2.1 public projection', () => {
     });
     expect(audioRequest.status).toBe('completed');
     expect(audioRequest.clipIds).toHaveLength(43);
+    expect(new Set(audioRequest.clipIds).size).toBe(43);
     expect(createHash('sha256').update(JSON.stringify(canonical)).digest('hex')).toBe(audioRequest.manifestFingerprint);
+    for (const clip of canonical) {
+      expect(clip.file).toMatch(/^[\w-]+\.mp3$/);
+      expect(availableAudio.files).toContain(clip.file);
+      const path = resolve('public/audio/mandarin', clip.file);
+      expect(existsSync(path)).toBe(true);
+      expect(statSync(path).size).toBeGreaterThan(0);
+      const url = audioForMandarinText(clip.input);
+      expect(url).toMatch(/^\/audio\/mandarin\/.+\.mp3$/);
+      expect(existsSync(resolve('public', url!.replace(/^\/+/, '')))).toBe(true);
+    }
+  });
+
+  it('preserves textbook list membership with the corresponding lesson', () => {
+    const mamahuhu = corpus.vocabulary.find((word) => word.hanzi === '马马虎虎')!;
+    expect(mamahuhu.curriculumLinks.some((link) => link.lesson === 1 && link.list_type === 'supplementary_vocabulary')).toBe(true);
+    const china = corpus.vocabulary.find((word) => word.hanzi === '中国')!;
+    expect(china.curriculumLinks.some((link) => link.lesson === 2 && link.list_type === 'supplementary_vocabulary')).toBe(true);
+    expect(china.curriculumLinks.some((link) => link.lesson === 3 && link.list_type === 'new_vocabulary')).toBe(true);
+    const name = corpus.vocabulary.find((word) => word.hanzi === '马大为')!;
+    expect(name.curriculumLinks.some((link) => link.role === 'proper_name' && link.list_type === 'new_vocabulary')).toBe(true);
+  });
+
+  it('exports documentary Hanzi evidence without claiming runtime availability', () => {
+    const tai = corpus.hanzi.find((character) => character.id === 'c-太')!;
+    expect(tai.worksheetEvidence).toBe(true);
+    expect(tai.readings).toContain('tài');
+    expect(tai).not.toHaveProperty('writingAvailable');
+    expect(tai).not.toHaveProperty('worksheet_occurrences');
+  });
+
+  it('exports recovered source pinyin under the original stable phrase ID', () => {
+    const phrase = corpus.phrases.find((row) => row.id === 'PH-38f6ca8078116ec2')!;
+    expect(phrase.hanzi).toBe('我家有五口人。');
+    expect(phrase.pinyin).toBe('Wǒ jiā yǒu wǔ kǒu rén.');
+    expect(phrase.spanish).toBeNull();
   });
 });
