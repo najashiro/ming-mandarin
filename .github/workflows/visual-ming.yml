@@ -1,0 +1,29 @@
+name: Ming visual classification
+on:
+  push:
+    branches: [feat/visual-ming-classification-20260925]
+permissions:
+  contents: read
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Inspect published vocabulary and editorial context
+        run: |
+          python3 MING_KNOWLEDGE/v2/query.py --validate > /tmp/ming-validation.json
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          public=json.loads(Path('data/corpus-v21-public.json').read_text())
+          cache=Path('MING_KNOWLEDGE/v2/.cache')
+          words={r['id']:r for r in json.loads((cache/'vocabulary.json').read_text())}
+          print('PUBLIC_FINGERPRINT',public['fingerprint'])
+          print('PUBLIC_COUNT',len(public['vocabulary']))
+          for index, row in enumerate(public['vocabulary']):
+              internal=words[row['id']]
+              print('VISUAL_ITEM',json.dumps([index,row['id'],row['hanzi'],row.get('pinyin'),row.get('spanish'),row.get('roles'),internal.get('primary_phrase')],ensure_ascii=False,separators=(',',':')))
+          print('CLASSIFICATION_FILES',[str(p) for p in Path('MING_KNOWLEDGE').rglob('*visual*') if '.cache' not in p.parts])
+          PY
