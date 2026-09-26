@@ -276,5 +276,57 @@
         "via_vocab_id": "v-小猫"
       }
     ]
+  },
+  "visual_ming": {
+    "schema_version": "1.0.0",
+    "batch_id": "visual-ming-20260925-01",
+    "prepared_date": "2026-09-25",
+    "base_commit": "ad159330f24c7a7142daef6fc9ab22deed9c07f8",
+    "fingerprint": "5b8b61aeeb05e00b5fb0ec45ab63b89c5ff51a51a3503ab291694638cb36ab35",
+    "classified_vocabulary": 337,
+    "counts_by_mode": {
+      "literal_photo": 47,
+      "action_scene": 24,
+      "concept_scene": 115,
+      "visual_grammar": 47,
+      "phrase_context": 72,
+      "none": 32
+    },
+    "image_quiz_candidates": 68,
+    "support_only": 237,
+    "without_own_image": 32,
+    "counts_by_ambiguity": {
+      "low": 14,
+      "medium": 123,
+      "high": 200
+    },
+    "unclassified_published_ids": [],
+    "excluded_documentary_ids": [
+      "v-哥哥，还",
+      "v-咖啡，还",
+      "v-马大为，还",
+      "v-汉语课，还",
+      "v-丁，叫",
+      "v-宋华。认识",
+      "v-同学，你们",
+      "v-好！我",
+      "v-林娜。请问，你"
+    ],
+    "images_generated": 0,
+    "paid_api_calls": 0,
+    "independent_human_review": false,
+    "method": "model_editorial_semantic_classification",
+    "review_status": "model_classified_not_image_validated",
+    "limits": [
+      "Clasificación editorial preparada y comprobada por el modelo; no es una evaluación con alumnos ni una revisión humana independiente.",
+      "No se generan imágenes, prompts, audio, tamaños, proporciones, estilos, rutas de recursos ni cambios de interfaz.",
+      "Se clasifica el sentido del vocabulario registrado. Las notas documentan homógrafos, sinónimos, nombres y riesgos; no sustituyen las glosas ni el currículo originales.",
+      "image_support no equivale a imagen propia: visual_grammar necesita apoyo estructurado y phrase_context apoya una frase, no una pista aislada.",
+      "Los valores true de image_quiz_eligible son candidatos sujetos a validar cada imagen futura; no autorizan automáticamente el uso evaluativo de un recurso.",
+      "Los sinónimos visualmente indistinguibles requieren respuestas alternativas o práctica contextual. Una imagen no puede exigir por sí sola una grafía única entre variantes equivalentes.",
+      "La apariencia de una persona no demuestra nombre, nacionalidad, parentesco o profesión. Las identidades personales no se reconstruyen mediante retratos inventados.",
+      "No se elimina vocabulario por carecer de imagen propia ni se cambian las lecciones exclusivas, ejemplos globales, pinyin o traducciones.",
+      "Interno describe uso editorial, no privacidad del repositorio. La web recibe solo cuatro campos de clasificación y no las notas ni el método."
+    ]
   }
 }

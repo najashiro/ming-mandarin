@@ -3,7 +3,7 @@
   "batchId": "visual-ming-20260925-01",
   "branch": "feat/visual-ming-classification-20260925",
   "baseCommit": "ad159330f24c7a7142daef6fc9ab22deed9c07f8",
-  "status": "requested",
+  "status": "completed",
   "purpose": "Regenerate the public classification and its reports after validation; no image generation, paid APIs or production deployment.",
   "allowedFiles": [
     "data/corpus-v21-public.json",
@@ -11,5 +11,6 @@
     "MING_KNOWLEDGE/v2/audits/visual-ming-20260925.json",
     "MING_KNOWLEDGE/v2/audits/visual-ming-20260925.md",
     ".github/corpus-requests/visual-ming-20260925.json"
-  ]
+  ],
+  "validatedInputCommit": "086287a3445658c6da2def50e3b1f841c048c59c"
 }

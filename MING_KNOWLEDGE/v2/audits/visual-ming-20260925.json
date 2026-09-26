@@ -1,0 +1,4601 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "visual-ming-20260925-01",
+  "prepared_date": "2026-09-25",
+  "base_commit": "ad159330f24c7a7142daef6fc9ab22deed9c07f8",
+  "fingerprint": "5b8b61aeeb05e00b5fb0ec45ab63b89c5ff51a51a3503ab291694638cb36ab35",
+  "classified_vocabulary": 337,
+  "counts_by_mode": {
+    "literal_photo": 47,
+    "action_scene": 24,
+    "concept_scene": 115,
+    "visual_grammar": 47,
+    "phrase_context": 72,
+    "none": 32
+  },
+  "image_quiz_candidates": 68,
+  "support_only": 237,
+  "without_own_image": 32,
+  "counts_by_ambiguity": {
+    "low": 14,
+    "medium": 123,
+    "high": 200
+  },
+  "unclassified_published_ids": [],
+  "excluded_documentary_ids": [
+    "v-哥哥，还",
+    "v-咖啡，还",
+    "v-马大为，还",
+    "v-汉语课，还",
+    "v-丁，叫",
+    "v-宋华。认识",
+    "v-同学，你们",
+    "v-好！我",
+    "v-林娜。请问，你"
+  ],
+  "images_generated": 0,
+  "paid_api_calls": 0,
+  "independent_human_review": false,
+  "method": "model_editorial_semantic_classification",
+  "review_status": "model_classified_not_image_validated",
+  "limits": [
+    "Clasificación editorial preparada y comprobada por el modelo; no es una evaluación con alumnos ni una revisión humana independiente.",
+    "No se generan imágenes, prompts, audio, tamaños, proporciones, estilos, rutas de recursos ni cambios de interfaz.",
+    "Se clasifica el sentido del vocabulario registrado. Las notas documentan homógrafos, sinónimos, nombres y riesgos; no sustituyen las glosas ni el currículo originales.",
+    "image_support no equivale a imagen propia: visual_grammar necesita apoyo estructurado y phrase_context apoya una frase, no una pista aislada.",
+    "Los valores true de image_quiz_eligible son candidatos sujetos a validar cada imagen futura; no autorizan automáticamente el uso evaluativo de un recurso.",
+    "Los sinónimos visualmente indistinguibles requieren respuestas alternativas o práctica contextual. Una imagen no puede exigir por sí sola una grafía única entre variantes equivalentes.",
+    "La apariencia de una persona no demuestra nombre, nacionalidad, parentesco o profesión. Las identidades personales no se reconstruyen mediante retratos inventados.",
+    "No se elimina vocabulario por carecer de imagen propia ni se cambian las lecciones exclusivas, ejemplos globales, pinyin o traducciones.",
+    "Interno describe uso editorial, no privacidad del repositorio. La web recibe solo cuatro campos de clasificación y no las notas ni el método."
+  ],
+  "public": {
+    "classified_vocabulary": 337,
+    "notes_not_exposed": true,
+    "public_fields": [
+      "visual_mode",
+      "image_support",
+      "image_quiz_eligible",
+      "ambiguity_risk"
+    ],
+    "fingerprint": "8de40bd08c613595e25689027175e098512dc8b52cfa41d70c4553351655d82c"
+  },
+  "entries": [
+    {
+      "id": "VM-v-你",
+      "vocab_id": "v-你",
+      "hanzi": "你",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Referencia al interlocutor; debe distinguirse del hablante antes de admitir una imagen en el juego."
+    },
+    {
+      "id": "VM-v-好",
+      "vocab_id": "v-好",
+      "hanzi": "好",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Bueno, bien y aceptación dependen del enunciado; no equivalen a una persona sonriendo."
+    },
+    {
+      "id": "VM-v-我",
+      "vocab_id": "v-我",
+      "hanzi": "我",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Referencia a quien habla y se señala; la identidad del hablante debe resultar clara."
+    },
+    {
+      "id": "VM-v-叫",
+      "vocab_id": "v-叫",
+      "hanzi": "叫",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "En el curso predomina llamarse; no representar gritar o telefonear como si fueran ese sentido."
+    },
+    {
+      "id": "VM-v-请问",
+      "vocab_id": "v-请问",
+      "hanzi": "请问",
+      "lessons": [
+        1,
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Fórmula cortés de pregunta; una persona interrogando no distingue esta expresión de 问."
+    },
+    {
+      "id": "VM-v-请",
+      "vocab_id": "v-请",
+      "hanzi": "请",
+      "lessons": [
+        1,
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Cortesía o invitación según el enunciado; no hay referente visual único."
+    },
+    {
+      "id": "VM-v-问",
+      "vocab_id": "v-问",
+      "hanzi": "问",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Acto de preguntar que necesita un intercambio; una boca abierta también puede significar hablar."
+    },
+    {
+      "id": "VM-v-什么",
+      "vocab_id": "v-什么",
+      "hanzi": "什么",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Interrogativo sobre contenido; un signo de pregunta no distingue qué, quién o dónde."
+    },
+    {
+      "id": "VM-v-名字",
+      "vocab_id": "v-名字",
+      "hanzi": "名字",
+      "lessons": [
+        1,
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "El nombre se reconoce dentro de una presentación; un retrato no permite inferirlo."
+    },
+    {
+      "id": "VM-v-姓",
+      "vocab_id": "v-姓",
+      "hanzi": "姓",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Apellido o apellidarse; requiere distinguirlo del nombre completo en contexto."
+    },
+    {
+      "id": "VM-v-认识",
+      "vocab_id": "v-认识",
+      "hanzi": "认识",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Relación de conocer a alguien; saludar no prueba conocimiento previo."
+    },
+    {
+      "id": "VM-v-很",
+      "vocab_id": "v-很",
+      "hanzi": "很",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Grado dentro de la construcción adjetival; una emoción aislada no identifica el intensificador."
+    },
+    {
+      "id": "VM-v-高兴",
+      "vocab_id": "v-高兴",
+      "hanzi": "高兴",
+      "lessons": [
+        1,
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Estado de alegría; separar la emoción de una simple cortesía o saludo."
+    },
+    {
+      "id": "VM-v-也",
+      "vocab_id": "v-也",
+      "hanzi": "也",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "La adición se interpreta respecto de otro enunciado; necesita contexto contrastivo."
+    },
+    {
+      "id": "VM-v-马大为",
+      "vocab_id": "v-马大为",
+      "hanzi": "马大为",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre propio del material; una apariencia inventada no identifica ese nombre."
+    },
+    {
+      "id": "VM-v-宋华",
+      "vocab_id": "v-宋华",
+      "hanzi": "宋华",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre propio del material; no asociar un retrato arbitrario como respuesta única."
+    },
+    {
+      "id": "VM-v-在",
+      "vocab_id": "v-在",
+      "hanzi": "在",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Localización o aspecto según uso; no reducir todos los casos a estar dentro de una casa."
+    },
+    {
+      "id": "VM-v-吗",
+      "vocab_id": "v-吗",
+      "hanzi": "吗",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Partícula interrogativa; trabajar la oración, no una imagen propia de un signo de pregunta."
+    },
+    {
+      "id": "VM-v-进",
+      "vocab_id": "v-进",
+      "hanzi": "进",
+      "lessons": [
+        1,
+        3
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Entrada con origen y destino claros; distinguir entrar de salir o llegar."
+    },
+    {
+      "id": "VM-v-坐",
+      "vocab_id": "v-坐",
+      "hanzi": "坐",
+      "lessons": [
+        1,
+        3
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Sentarse o estar sentado; debe verse la postura sin confundirla con descansar."
+    },
+    {
+      "id": "VM-v-谢谢",
+      "vocab_id": "v-谢谢",
+      "hanzi": "谢谢",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Agradecimiento en una interacción; el gesto por sí solo puede ser saludo o petición."
+    },
+    {
+      "id": "VM-v-最近",
+      "vocab_id": "v-最近",
+      "hanzi": "最近",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Referencia temporal relativa al presente; requiere una frase, no una escena aislada."
+    },
+    {
+      "id": "VM-v-怎么样",
+      "vocab_id": "v-怎么样",
+      "hanzi": "怎么样",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Pregunta por estado o valoración; una expresión facial no determina esta fórmula."
+    },
+    {
+      "id": "VM-v-呢",
+      "vocab_id": "v-呢",
+      "hanzi": "呢",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Partícula de pregunta elíptica; el referente depende del turno anterior."
+    },
+    {
+      "id": "VM-v-忙",
+      "vocab_id": "v-忙",
+      "hanzi": "忙",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Estar ocupado, no simplemente trabajar; la escena debe distinguirlo del cansancio."
+    },
+    {
+      "id": "VM-v-不",
+      "vocab_id": "v-不",
+      "hanzi": "不",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Negación gramatical de un predicado; no confundir con 没有 ni con una señal genérica de prohibición."
+    },
+    {
+      "id": "VM-v-太",
+      "vocab_id": "v-太",
+      "hanzi": "太",
+      "lessons": [
+        1,
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Intensidad o exceso según la frase; no identificarlo con un objeto grande."
+    },
+    {
+      "id": "VM-v-他",
+      "vocab_id": "v-他",
+      "hanzi": "他",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Tercera persona distinta del hablante y del interlocutor; un retrato no basta para fijar el rol."
+    },
+    {
+      "id": "VM-v-丁力波",
+      "vocab_id": "v-丁力波",
+      "hanzi": "丁力波",
+      "lessons": [
+        1,
+        2
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre propio; no se deduce de rasgos personales o nacionalidad aparente."
+    },
+    {
+      "id": "VM-v-林娜",
+      "vocab_id": "v-林娜",
+      "hanzi": "林娜",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre propio; conservar su presentación textual, sin retrato arbitrario como pista única."
+    },
+    {
+      "id": "VM-v-困",
+      "vocab_id": "v-困",
+      "hanzi": "困",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Somnolencia; distinguirla de 累 mediante la necesidad de dormir, no solo estar recostado."
+    },
+    {
+      "id": "VM-v-渴",
+      "vocab_id": "v-渴",
+      "hanzi": "渴",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Sed previa a beber; no usar la misma escena como si fuera equivalente a 喝."
+    },
+    {
+      "id": "VM-v-饿",
+      "vocab_id": "v-饿",
+      "hanzi": "饿",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Hambre previa a comer; no confundir necesidad con la acción 吃."
+    },
+    {
+      "id": "VM-v-累",
+      "vocab_id": "v-累",
+      "hanzi": "累",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Cansancio tras esfuerzo; distinguirlo de sueño y de estar ocupado."
+    },
+    {
+      "id": "VM-v-还行",
+      "vocab_id": "v-还行",
+      "hanzi": "还行",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Valoración moderada dentro de una respuesta; un gesto no fija la expresión exacta."
+    },
+    {
+      "id": "VM-v-马马虎虎",
+      "vocab_id": "v-马马虎虎",
+      "hanzi": "马马虎虎",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Expresión idiomática regular o más o menos; no representar literalmente caballos y tigres."
+    },
+    {
+      "id": "VM-v-她",
+      "vocab_id": "v-她",
+      "hanzi": "她",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Tercera persona de un diálogo; la referencia no se resuelve con un retrato aislado."
+    },
+    {
+      "id": "VM-v-老师",
+      "vocab_id": "v-老师",
+      "hanzi": "老师",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Rol docente en relación con estudiantes; no inferir profesión de ropa o edad solamente."
+    },
+    {
+      "id": "VM-v-早上",
+      "vocab_id": "v-早上",
+      "hanzi": "早上",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Momento de la mañana; una escena puede apoyar el significado pero no distingue todos los saludos y términos horarios."
+    },
+    {
+      "id": "VM-v-早",
+      "vocab_id": "v-早",
+      "hanzi": "早",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Temprano o saludo según contexto; no equivale siempre a amanecer."
+    },
+    {
+      "id": "VM-v-你们",
+      "vocab_id": "v-你们",
+      "hanzi": "你们",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Varios destinatarios frente al hablante; requiere marcar quién habla a quién."
+    },
+    {
+      "id": "VM-v-们",
+      "vocab_id": "v-们",
+      "hanzi": "们",
+      "lessons": [
+        1,
+        2
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Sufijo de plural humano; contraste contextual, no fotografía propia."
+    },
+    {
+      "id": "VM-v-这",
+      "vocab_id": "v-这",
+      "hanzi": "这",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Demostrativo próximo; necesita hablante y referente, no solo un objeto."
+    },
+    {
+      "id": "VM-v-是",
+      "vocab_id": "v-是",
+      "hanzi": "是",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Identificación o predicación nominal en una frase; no representa un objeto aislado."
+    },
+    {
+      "id": "VM-v-朋友",
+      "vocab_id": "v-朋友",
+      "hanzi": "朋友",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Amistad; dos personas juntas también pueden ser colegas, familiares o pareja."
+    },
+    {
+      "id": "VM-v-刚",
+      "vocab_id": "v-刚",
+      "hanzi": "刚",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Inmediatez temporal de la acción; necesita un enunciado o secuencia contextual."
+    },
+    {
+      "id": "VM-v-到",
+      "vocab_id": "v-到",
+      "hanzi": "到",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Llegar a un destino; diferenciar de ir y entrar requiere contexto temporal."
+    },
+    {
+      "id": "VM-v-您",
+      "vocab_id": "v-您",
+      "hanzi": "您",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Tratamiento respetuoso; no inferir usted por edad, vestimenta o una reverencia."
+    },
+    {
+      "id": "VM-v-贵姓",
+      "vocab_id": "v-贵姓",
+      "hanzi": "贵姓",
+      "lessons": [
+        1,
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Pregunta cortés por el apellido; 贵 no debe representarse como precio en esta expresión."
+    },
+    {
+      "id": "VM-v-哪",
+      "vocab_id": "v-哪",
+      "hanzi": "哪",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Selección interrogativa; los objetos solos no identifican cuál frente a qué."
+    },
+    {
+      "id": "VM-v-国",
+      "vocab_id": "v-国",
+      "hanzi": "国",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto geográfico de país; una bandera o un rostro no expresan el sustantivo genérico de forma única."
+    },
+    {
+      "id": "VM-v-人",
+      "vocab_id": "v-人",
+      "hanzi": "人",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Persona como categoría humana; no atribuir nacionalidad ni profesión por apariencia."
+    },
+    {
+      "id": "VM-v-学习",
+      "vocab_id": "v-学习",
+      "hanzi": "学习",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Actividad de estudiar; distinguirla de leer por placer y admitir variantes léxicas pertinentes."
+    },
+    {
+      "id": "VM-v-学",
+      "vocab_id": "v-学",
+      "hanzi": "学",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Mismo campo visual que 学习; requiere objeto o contexto para escoger la forma del curso."
+    },
+    {
+      "id": "VM-v-汉语",
+      "vocab_id": "v-汉语",
+      "hanzi": "汉语",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Idioma, no nacionalidad ni escritura decorativa; necesita contenido lingüístico contextual."
+    },
+    {
+      "id": "VM-v-再见",
+      "vocab_id": "v-再见",
+      "hanzi": "再见",
+      "lessons": [
+        1,
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Despedida con separación clara; un saludo de mano sin contexto también puede ser 你好."
+    },
+    {
+      "id": "VM-v-陈",
+      "vocab_id": "v-陈",
+      "hanzi": "陈",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Apellido en el material; no ilustrar un significado aislado del carácter como si fuera el nombre."
+    },
+    {
+      "id": "VM-v-北京",
+      "vocab_id": "v-北京",
+      "hanzi": "北京",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Lugar geográfico; un monumento solo no equivale necesariamente al nombre de toda la ciudad."
+    },
+    {
+      "id": "VM-v-美国",
+      "vocab_id": "v-美国",
+      "hanzi": "美国",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Referencia geográfica de país; no inferir nacionalidad por rasgos físicos."
+    },
+    {
+      "id": "VM-v-点心",
+      "vocab_id": "v-点心",
+      "hanzi": "点心",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Categoría de bocadillos, no un plato único; una pieza puede nombrarse de varias formas."
+    },
+    {
+      "id": "VM-v-好吃",
+      "vocab_id": "v-好吃",
+      "hanzi": "好吃",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Valoración del sabor; una comida atractiva no prueba que se esté expresando delicioso."
+    },
+    {
+      "id": "VM-v-吃",
+      "vocab_id": "v-吃",
+      "hanzi": "吃",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Acción de llevar comida a la boca; distinguir de hambre y de beber."
+    },
+    {
+      "id": "VM-v-爸爸",
+      "vocab_id": "v-爸爸",
+      "hanzi": "爸爸",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Relación padre-hijo; un hombre adulto solo no significa papá."
+    },
+    {
+      "id": "VM-v-喜欢",
+      "vocab_id": "v-喜欢",
+      "hanzi": "喜欢",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Preferencia por algo; necesita contexto para distinguir de querer, amar o estar contento."
+    },
+    {
+      "id": "VM-v-和",
+      "vocab_id": "v-和",
+      "hanzi": "和",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Conexión de A y B dentro de la frase; dos objetos juntos no identifican por sí solos la conjunción."
+    },
+    {
+      "id": "VM-v-米饭",
+      "vocab_id": "v-米饭",
+      "hanzi": "米饭",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "low",
+      "notes": "Arroz cocido reconocible; distinguirlo de grano crudo y arroz frito."
+    },
+    {
+      "id": "VM-v-饭",
+      "vocab_id": "v-饭",
+      "hanzi": "饭",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Arroz cocido o comida según uso; comparte referente con 米饭 y necesita contexto."
+    },
+    {
+      "id": "VM-v-妈妈",
+      "vocab_id": "v-妈妈",
+      "hanzi": "妈妈",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Relación madre-hijo; una mujer adulta sola no significa mamá."
+    },
+    {
+      "id": "VM-v-面条儿",
+      "vocab_id": "v-面条儿",
+      "hanzi": "面条儿",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Fideos con variante erizada; una imagen no distingue la forma 面条儿 de 面条."
+    },
+    {
+      "id": "VM-v-饺子",
+      "vocab_id": "v-饺子",
+      "hanzi": "饺子",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "low",
+      "notes": "Jiaozi como alimento concreto; distinguir su forma de 包子 y otros bocados."
+    },
+    {
+      "id": "VM-v-包子",
+      "vocab_id": "v-包子",
+      "hanzi": "包子",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "low",
+      "notes": "Bollo relleno al vapor; no confundir con jiaozi o pan genérico."
+    },
+    {
+      "id": "VM-v-大",
+      "vocab_id": "v-大",
+      "hanzi": "大",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Tamaño relativo; necesita comparación de referentes equivalentes, no un objeto famoso por ser grande."
+    },
+    {
+      "id": "VM-v-小",
+      "vocab_id": "v-小",
+      "hanzi": "小",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Tamaño relativo; separar pequeño de joven y del uso afectivo ante nombres."
+    },
+    {
+      "id": "VM-v-看",
+      "vocab_id": "v-看",
+      "hanzi": "看",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Mirar un referente; distinguir de leer y de buscar según la escena."
+    },
+    {
+      "id": "VM-v-那",
+      "vocab_id": "v-那",
+      "hanzi": "那",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Demostrativo distante respecto del hablante; no basta una fotografía de objeto."
+    },
+    {
+      "id": "VM-v-都",
+      "vocab_id": "v-都",
+      "hanzi": "都",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Totalidad de un grupo en una predicación; requiere distinguir todos de también."
+    },
+    {
+      "id": "VM-v-要",
+      "vocab_id": "v-要",
+      "hanzi": "要",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Querer o pedir en el curso; una mano extendida no distingue deseo, necesidad o posesión."
+    },
+    {
+      "id": "VM-v-上海",
+      "vocab_id": "v-上海",
+      "hanzi": "上海",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Ciudad concreta; apoyo geográfico contextual sin atribuir nacionalidad por apariencia."
+    },
+    {
+      "id": "VM-v-王小云",
+      "vocab_id": "v-王小云",
+      "hanzi": "王小云",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre de personaje del material; una imagen sin presentación no permite recuperarlo."
+    },
+    {
+      "id": "VM-v-中国",
+      "vocab_id": "v-中国",
+      "hanzi": "中国",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "País; conservar identidad geográfica sin estereotipos de rostro, vestimenta o idioma."
+    },
+    {
+      "id": "VM-v-西班牙",
+      "vocab_id": "v-西班牙",
+      "hanzi": "西班牙",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "País; diferenciar geografía de idioma y de nacionalidad personal."
+    },
+    {
+      "id": "VM-v-法国",
+      "vocab_id": "v-法国",
+      "hanzi": "法国",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "País; un símbolo cultural no es una equivalencia léxica universal."
+    },
+    {
+      "id": "VM-v-德国",
+      "vocab_id": "v-德国",
+      "hanzi": "德国",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "País; el apoyo geográfico no debe sustituir la práctica de su nombre."
+    },
+    {
+      "id": "VM-v-加拿大",
+      "vocab_id": "v-加拿大",
+      "hanzi": "加拿大",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "País; no identificar personas como canadienses por apariencia."
+    },
+    {
+      "id": "VM-v-英国",
+      "vocab_id": "v-英国",
+      "hanzi": "英国",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Referencia geográfica según el material; no resolver aquí la glosa Reino Unido/Inglaterra."
+    },
+    {
+      "id": "VM-v-澳大利亚",
+      "vocab_id": "v-澳大利亚",
+      "hanzi": "澳大利亚",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "País; un animal asociado también puede ser la respuesta a la imagen."
+    },
+    {
+      "id": "VM-v-俄罗斯",
+      "vocab_id": "v-俄罗斯",
+      "hanzi": "俄罗斯",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "País; no convertir rasgos personales o vestimenta en indicadores de nacionalidad."
+    },
+    {
+      "id": "VM-v-日本",
+      "vocab_id": "v-日本",
+      "hanzi": "日本",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "País; diferenciar lugar, idioma y persona de origen japonés."
+    },
+    {
+      "id": "VM-v-韩国",
+      "vocab_id": "v-韩国",
+      "hanzi": "韩国",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Corea del Sur en el corpus; necesita referencia geográfica inequívoca, no apariencia."
+    },
+    {
+      "id": "VM-v-泰国",
+      "vocab_id": "v-泰国",
+      "hanzi": "泰国",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "País; símbolos culturales compartidos no permiten un quiz léxico fiable."
+    },
+    {
+      "id": "VM-v-印度",
+      "vocab_id": "v-印度",
+      "hanzi": "印度",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "País; no inferir origen por religión, atuendo o rasgos físicos."
+    },
+    {
+      "id": "VM-v-埃及",
+      "vocab_id": "v-埃及",
+      "hanzi": "埃及",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "País; una pirámide por sí sola puede nombrar un monumento y no el país."
+    },
+    {
+      "id": "VM-v-同学",
+      "vocab_id": "v-同学",
+      "hanzi": "同学",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Relación de compañeros de clase; distinguirla de estudiante o amigo exige contexto común."
+    },
+    {
+      "id": "VM-v-面包",
+      "vocab_id": "v-面包",
+      "hanzi": "面包",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "low",
+      "notes": "Pan genérico; no usar solo un bollo relleno que sugiera 包子."
+    },
+    {
+      "id": "VM-v-汉堡包",
+      "vocab_id": "v-汉堡包",
+      "hanzi": "汉堡包",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Hamburguesa; la imagen no distingue esta forma de 汉堡."
+    },
+    {
+      "id": "VM-v-比萨饼",
+      "vocab_id": "v-比萨饼",
+      "hanzi": "比萨饼",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Pizza; mismo referente que 披萨, sin diferencia visible entre sus nombres."
+    },
+    {
+      "id": "VM-v-家",
+      "vocab_id": "v-家",
+      "hanzi": "家",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Casa o familia según la frase; un edificio no representa automáticamente ambos sentidos."
+    },
+    {
+      "id": "VM-v-有",
+      "vocab_id": "v-有",
+      "hanzi": "有",
+      "lessons": [
+        1,
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Posesión o existencia; necesita una relación explícita en contexto."
+    },
+    {
+      "id": "VM-v-几",
+      "vocab_id": "v-几",
+      "hanzi": "几",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Pregunta de cantidad; el grupo de objetos no distingue 几 de 多少."
+    },
+    {
+      "id": "VM-v-口",
+      "vocab_id": "v-口",
+      "hanzi": "口",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Clasificador de integrantes de familia en el corpus; no usar una boca para este sentido."
+    },
+    {
+      "id": "VM-v-的",
+      "vocab_id": "v-的",
+      "hanzi": "的",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Partícula posesiva o modificadora; se practica mediante relaciones dentro de una frase."
+    },
+    {
+      "id": "VM-v-照片",
+      "vocab_id": "v-照片",
+      "hanzi": "照片",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Una fotografía como objeto reconocible; no confundir su contenido con la palabra foto."
+    },
+    {
+      "id": "VM-v-做",
+      "vocab_id": "v-做",
+      "hanzi": "做",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Hacer es demasiado general para una acción aislada; necesita su complemento."
+    },
+    {
+      "id": "VM-v-工作",
+      "vocab_id": "v-工作",
+      "hanzi": "工作",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Trabajo o trabajar; mostrar una ocupación no identifica por sí solo el término genérico."
+    },
+    {
+      "id": "VM-v-医生",
+      "vocab_id": "v-医生",
+      "hanzi": "医生",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Rol médico atendiendo a un paciente; evitar inferirlo únicamente de una bata."
+    },
+    {
+      "id": "VM-v-弟弟",
+      "vocab_id": "v-弟弟",
+      "hanzi": "弟弟",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Hermano menor respecto de alguien; una edad aparente no prueba parentesco."
+    },
+    {
+      "id": "VM-v-哥哥",
+      "vocab_id": "v-哥哥",
+      "hanzi": "哥哥",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Hermano mayor respecto de alguien; requiere relación familiar explícita."
+    },
+    {
+      "id": "VM-v-一共",
+      "vocab_id": "v-一共",
+      "hanzi": "一共",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Total resultante de varias partes; no es simplemente un numeral aislado."
+    },
+    {
+      "id": "VM-v-个",
+      "vocab_id": "v-个",
+      "hanzi": "个",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Clasificador general en una construcción numeral; no posee referente fotográfico único."
+    },
+    {
+      "id": "VM-v-两",
+      "vocab_id": "v-两",
+      "hanzi": "两",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Dos ante clasificador; una pareja de objetos no distingue 两 de 二 sin contexto."
+    },
+    {
+      "id": "VM-v-姐姐",
+      "vocab_id": "v-姐姐",
+      "hanzi": "姐姐",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Hermana mayor; se necesita referencia de parentesco y edad relativa."
+    },
+    {
+      "id": "VM-v-还",
+      "vocab_id": "v-还",
+      "hanzi": "还",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Adición en los usos del curso; no representa aquí devolver ni otro sentido homógrafo."
+    },
+    {
+      "id": "VM-v-谁",
+      "vocab_id": "v-谁",
+      "hanzi": "谁",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Interrogación por identidad; una silueta o una persona desconocida no especifica la palabra."
+    },
+    {
+      "id": "VM-v-妹妹",
+      "vocab_id": "v-妹妹",
+      "hanzi": "妹妹",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Hermana menor; no identificar por retrato o estatura solamente."
+    },
+    {
+      "id": "VM-v-没有",
+      "vocab_id": "v-没有",
+      "hanzi": "没有",
+      "lessons": [
+        1,
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Ausencia o falta de posesión; debe contrastarse dentro de una estructura con 有."
+    },
+    {
+      "id": "VM-v-没",
+      "vocab_id": "v-没",
+      "hanzi": "没",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Negación dependiente del predicado; un símbolo de prohibición no define su uso."
+    },
+    {
+      "id": "VM-v-狗",
+      "vocab_id": "v-狗",
+      "hanzi": "狗",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "low",
+      "notes": "Perro doméstico claramente reconocible; distinguir el animal del nombre de una mascota."
+    },
+    {
+      "id": "VM-v-贝贝",
+      "vocab_id": "v-贝贝",
+      "hanzi": "贝贝",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre de una mascota en la lectura; la imagen de un perro no permite inferir Beibei."
+    },
+    {
+      "id": "VM-v-真",
+      "vocab_id": "v-真",
+      "hanzi": "真",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Intensificador o valoración del curso; apoyar la frase, no inventar un objeto que signifique realmente."
+    },
+    {
+      "id": "VM-v-漂亮",
+      "vocab_id": "v-漂亮",
+      "hanzi": "漂亮",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Valoración estética subjetiva; no convertir un tipo de rostro o cuerpo en definición de belleza."
+    },
+    {
+      "id": "VM-v-喝",
+      "vocab_id": "v-喝",
+      "hanzi": "喝",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Acción de beber; separar el verbo de la bebida concreta y del estado de sed."
+    },
+    {
+      "id": "VM-v-茶",
+      "vocab_id": "v-茶",
+      "hanzi": "茶",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Té como bebida; controlar su posible confusión visual con agua o café."
+    },
+    {
+      "id": "VM-v-咖啡",
+      "vocab_id": "v-咖啡",
+      "hanzi": "咖啡",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "low",
+      "notes": "Café como bebida; su recipiente no debe ser la única pista."
+    },
+    {
+      "id": "VM-v-张",
+      "vocab_id": "v-张",
+      "hanzi": "张",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Clasificador de objetos planos; no confundirlo con el apellido Zhang presente en nombres."
+    },
+    {
+      "id": "VM-v-女儿",
+      "vocab_id": "v-女儿",
+      "hanzi": "女儿",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Hija respecto de sus padres; una niña sola no identifica el parentesco."
+    },
+    {
+      "id": "VM-v-女",
+      "vocab_id": "v-女",
+      "hanzi": "女",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Categoría femenina en el material; no basarla en estereotipos de ropa o profesión."
+    },
+    {
+      "id": "VM-v-今年",
+      "vocab_id": "v-今年",
+      "hanzi": "今年",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Año actual relativo a un punto de referencia; no fijarlo para siempre a 2026."
+    },
+    {
+      "id": "VM-v-年",
+      "vocab_id": "v-年",
+      "hanzi": "年",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Unidad temporal año; una celebración aislada no representa la duración."
+    },
+    {
+      "id": "VM-v-岁",
+      "vocab_id": "v-岁",
+      "hanzi": "岁",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Edad contada en años; distinguirla del año del calendario."
+    },
+    {
+      "id": "VM-v-今天",
+      "vocab_id": "v-今天",
+      "hanzi": "今天",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Día actual relativo a un punto de referencia; no inferirlo del estado del cielo."
+    },
+    {
+      "id": "VM-v-天",
+      "vocab_id": "v-天",
+      "hanzi": "天",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Día como unidad temporal según la glosa; no sustituirlo por el sentido cielo."
+    },
+    {
+      "id": "VM-v-钢琴",
+      "vocab_id": "v-钢琴",
+      "hanzi": "钢琴",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "low",
+      "notes": "Instrumento piano; distinguirlo de una escena cuyo foco sea la acción de tocar."
+    },
+    {
+      "id": "VM-v-课",
+      "vocab_id": "v-课",
+      "hanzi": "课",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Clase, lección o curso; la escena escolar no distingue la institución de la actividad."
+    },
+    {
+      "id": "VM-v-孩子",
+      "vocab_id": "v-孩子",
+      "hanzi": "孩子",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Niño como edad vital; el sentido hijo necesita además relación familiar."
+    },
+    {
+      "id": "VM-v-啊",
+      "vocab_id": "v-啊",
+      "hanzi": "啊",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Partícula de matiz discursivo; una expresión facial no determina ese uso."
+    },
+    {
+      "id": "VM-v-晚上",
+      "vocab_id": "v-晚上",
+      "hanzi": "晚上",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Momento de la noche; no confundirlo con el saludo ni con dormir."
+    },
+    {
+      "id": "VM-v-晚",
+      "vocab_id": "v-晚",
+      "hanzi": "晚",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Tarde en sentido temporal; no tratarlo automáticamente como la franja de 下午."
+    },
+    {
+      "id": "VM-v-英语",
+      "vocab_id": "v-英语",
+      "hanzi": "英语",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Idioma inglés; una bandera no representa todos sus hablantes ni identifica la lengua."
+    },
+    {
+      "id": "VM-v-陆雨平",
+      "vocab_id": "v-陆雨平",
+      "hanzi": "陆雨平",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre propio del material; no sustituir su presentación por una apariencia inventada."
+    },
+    {
+      "id": "VM-v-律师",
+      "vocab_id": "v-律师",
+      "hanzi": "律师",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Abogacía; ropa formal o una sala judicial también pueden indicar otros roles."
+    },
+    {
+      "id": "VM-v-记者",
+      "vocab_id": "v-记者",
+      "hanzi": "记者",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Actividad periodística contextualizada; distinguir de fotógrafo o entrevistado."
+    },
+    {
+      "id": "VM-v-服务员",
+      "vocab_id": "v-服务员",
+      "hanzi": "服务员",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Atención a clientes en restaurante; no inferir el rol solo por uniforme."
+    },
+    {
+      "id": "VM-v-经理",
+      "vocab_id": "v-经理",
+      "hanzi": "经理",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Cargo de gerente; un traje o una oficina no identifican jerarquía laboral."
+    },
+    {
+      "id": "VM-v-工程师",
+      "vocab_id": "v-工程师",
+      "hanzi": "工程师",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Profesión de ingeniería; casco o plano no bastan para distinguirla de otras ocupaciones."
+    },
+    {
+      "id": "VM-v-学生",
+      "vocab_id": "v-学生",
+      "hanzi": "学生",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Rol de alumno en aprendizaje; no reducirlo a edad o uniforme."
+    },
+    {
+      "id": "VM-v-商人",
+      "vocab_id": "v-商人",
+      "hanzi": "商人",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Comerciante; una transacción sola no distingue vendedor, comprador o gerente."
+    },
+    {
+      "id": "VM-v-先生",
+      "vocab_id": "v-先生",
+      "hanzi": "先生",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Tratamiento o marido según uso; un hombre adulto no determina la interpretación."
+    },
+    {
+      "id": "VM-v-太太",
+      "vocab_id": "v-太太",
+      "hanzi": "太太",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Señora o esposa según uso; evitar inferir estado civil de una apariencia."
+    },
+    {
+      "id": "VM-v-男朋友",
+      "vocab_id": "v-男朋友",
+      "hanzi": "男朋友",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Novio como relación; dos personas juntas no prueban vínculo romántico."
+    },
+    {
+      "id": "VM-v-女朋友",
+      "vocab_id": "v-女朋友",
+      "hanzi": "女朋友",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Novia como relación; necesita contexto para distinguirla de amiga."
+    },
+    {
+      "id": "VM-v-橙汁",
+      "vocab_id": "v-橙汁",
+      "hanzi": "橙汁",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Jugo de naranja; el color del líquido no basta para excluir otras bebidas."
+    },
+    {
+      "id": "VM-v-可乐",
+      "vocab_id": "v-可乐",
+      "hanzi": "可乐",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Bebida cola según el uso; la glosa de marca no se deduce de un líquido oscuro."
+    },
+    {
+      "id": "VM-v-牛奶",
+      "vocab_id": "v-牛奶",
+      "hanzi": "牛奶",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Leche; distinguirla de bebida de soja y no reducir la pista a color blanco."
+    },
+    {
+      "id": "VM-v-豆浆",
+      "vocab_id": "v-豆浆",
+      "hanzi": "豆浆",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Bebida de soja visualmente semejante a leche; necesita indicio del ingrediente o contexto."
+    },
+    {
+      "id": "VM-v-水",
+      "vocab_id": "v-水",
+      "hanzi": "水",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Agua; un líquido transparente en vaso admite otros referentes si falta contexto."
+    },
+    {
+      "id": "VM-v-杯",
+      "vocab_id": "v-杯",
+      "hanzi": "杯",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "En los ejemplos funciona como unidad de taza o vaso; separar ese uso del recipiente literal."
+    },
+    {
+      "id": "VM-v-帅",
+      "vocab_id": "v-帅",
+      "hanzi": "帅",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Valoración de atractivo; no convertir un rostro particular en significado obligatorio."
+    },
+    {
+      "id": "VM-v-作业",
+      "vocab_id": "v-作业",
+      "hanzi": "作业",
+      "lessons": [
+        1,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Tarea asignada; un cuaderno abierto también puede representar libro o estudio."
+    },
+    {
+      "id": "VM-v-厕所",
+      "vocab_id": "v-厕所",
+      "hanzi": "厕所",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Baño o sanitario; precisar el referente sin imágenes invasivas o innecesarias."
+    },
+    {
+      "id": "VM-v-我们",
+      "vocab_id": "v-我们",
+      "hanzi": "我们",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Grupo que incluye al hablante; debe distinguirse de ustedes y ellos."
+    },
+    {
+      "id": "VM-v-他们",
+      "vocab_id": "v-他们",
+      "hanzi": "他们",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Grupo ajeno a hablante y destinatario; la posición discursiva necesita contexto."
+    },
+    {
+      "id": "VM-v-她们",
+      "vocab_id": "v-她们",
+      "hanzi": "她们",
+      "lessons": [
+        1,
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Grupo de terceras personas femeninas según el discurso; no deducir el pronombre solo por apariencia."
+    },
+    {
+      "id": "VM-v-干嘛",
+      "vocab_id": "v-干嘛",
+      "hanzi": "干嘛",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Pregunta coloquial; una acción fotografiada no identifica la fórmula interrogativa."
+    },
+    {
+      "id": "VM-v-干啥",
+      "vocab_id": "v-干啥",
+      "hanzi": "干啥",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Pregunta coloquial semejante a 干嘛; la distinción no es visual."
+    },
+    {
+      "id": "VM-v-马丽",
+      "vocab_id": "v-马丽",
+      "hanzi": "马丽",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre propio; no inferible de un retrato sin presentación."
+    },
+    {
+      "id": "VM-v-贵",
+      "vocab_id": "v-贵",
+      "hanzi": "贵",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Caro o valor honorífico según contexto; no confundir precio con la fórmula 贵姓."
+    },
+    {
+      "id": "VM-v-哪儿",
+      "vocab_id": "v-哪儿",
+      "hanzi": "哪儿",
+      "lessons": [
+        1,
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Pregunta por lugar; un mapa no distingue dónde de ir o llegar."
+    },
+    {
+      "id": "VM-v-早饭",
+      "vocab_id": "v-早饭",
+      "hanzi": "早饭",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Desayuno definido por contexto temporal, no por alimentos supuestamente exclusivos de esa comida."
+    },
+    {
+      "id": "VM-v-老",
+      "vocab_id": "v-老",
+      "hanzi": "老",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Viejo en distintos usos; no equiparar edad, deterioro y amistad de larga duración."
+    },
+    {
+      "id": "VM-v-老人",
+      "vocab_id": "v-老人",
+      "hanzi": "老人",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Persona mayor; evitar asociar automáticamente edad con enfermedad o incapacidad."
+    },
+    {
+      "id": "VM-v-老朋友",
+      "vocab_id": "v-老朋友",
+      "hanzi": "老朋友",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Amistad de larga duración, no amigo anciano; la antigüedad exige contexto."
+    },
+    {
+      "id": "VM-v-书",
+      "vocab_id": "v-书",
+      "hanzi": "书",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "low",
+      "notes": "Libro como objeto; distinguir de cuaderno, tarjeta o una pantalla de lectura."
+    },
+    {
+      "id": "VM-v-秘鲁",
+      "vocab_id": "v-秘鲁",
+      "hanzi": "秘鲁",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "País; no deducir origen de rostros ni de una sola referencia cultural."
+    },
+    {
+      "id": "VM-v-语言",
+      "vocab_id": "v-语言",
+      "hanzi": "语言",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Lengua como sistema; una conversación puede ilustrar hablar pero no identifica el concepto genérico."
+    },
+    {
+      "id": "VM-v-中文",
+      "vocab_id": "v-中文",
+      "hanzi": "中文",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Chino como lengua; comparte referente con 汉语 en estos materiales."
+    },
+    {
+      "id": "VM-v-法语",
+      "vocab_id": "v-法语",
+      "hanzi": "法语",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Idioma francés; no equivale a una bandera o a una persona francesa."
+    },
+    {
+      "id": "VM-v-德语",
+      "vocab_id": "v-德语",
+      "hanzi": "德语",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Idioma alemán; requiere referencia lingüística, no estereotipo nacional."
+    },
+    {
+      "id": "VM-v-俄语",
+      "vocab_id": "v-俄语",
+      "hanzi": "俄语",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Idioma ruso; una localización no demuestra qué lengua se habla."
+    },
+    {
+      "id": "VM-v-日语",
+      "vocab_id": "v-日语",
+      "hanzi": "日语",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Idioma japonés; no inferirlo por aspecto físico de un hablante."
+    },
+    {
+      "id": "VM-v-西班牙语",
+      "vocab_id": "v-西班牙语",
+      "hanzi": "西班牙语",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Idioma español hablado en varios países; no reducirlo a una bandera."
+    },
+    {
+      "id": "VM-v-韩语",
+      "vocab_id": "v-韩语",
+      "hanzi": "韩语",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Idioma coreano; un país o rostro no sustituyen contenido lingüístico."
+    },
+    {
+      "id": "VM-v-墨西哥",
+      "vocab_id": "v-墨西哥",
+      "hanzi": "墨西哥",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "País; necesita referencia geográfica, no atuendo estereotipado."
+    },
+    {
+      "id": "VM-v-意大利语",
+      "vocab_id": "v-意大利语",
+      "hanzi": "意大利语",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Idioma italiano; una escena turística no permite identificar la lengua."
+    },
+    {
+      "id": "VM-v-做饭",
+      "vocab_id": "v-做饭",
+      "hanzi": "做饭",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Preparar comida; distinguir cocinar de comer o servir."
+    },
+    {
+      "id": "VM-v-画画",
+      "vocab_id": "v-画画",
+      "hanzi": "画画",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Dibujar o pintar; acción visible distinta de escribir."
+    },
+    {
+      "id": "VM-v-会",
+      "vocab_id": "v-会",
+      "hanzi": "会",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Capacidad aprendida; ver una acción no distingue saber hacer de hacer en ese momento."
+    },
+    {
+      "id": "VM-v-一点儿",
+      "vocab_id": "v-一点儿",
+      "hanzi": "一点儿",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Cantidad pequeña relativa; el contexto separa un poco de pequeño o pocos."
+    },
+    {
+      "id": "VM-v-厉害",
+      "vocab_id": "v-厉害",
+      "hanzi": "厉害",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Elogio de habilidad en el curso; no trasladarlo al sentido peligroso sin contexto."
+    },
+    {
+      "id": "VM-v-普通话",
+      "vocab_id": "v-普通话",
+      "hanzi": "普通话",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Mandarín estándar como variedad lingüística; no tiene un referente fotográfico único."
+    },
+    {
+      "id": "VM-v-方言",
+      "vocab_id": "v-方言",
+      "hanzi": "方言",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Variedad regional de lengua; no usar un mapa o rostro como equivalencia única."
+    },
+    {
+      "id": "VM-v-爷爷",
+      "vocab_id": "v-爷爷",
+      "hanzi": "爷爷",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Abuelo paterno; mostrar el parentesco por el padre, no solo una persona mayor."
+    },
+    {
+      "id": "VM-v-奶奶",
+      "vocab_id": "v-奶奶",
+      "hanzi": "奶奶",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Abuela paterna; requiere relación familiar, no únicamente edad."
+    },
+    {
+      "id": "VM-v-外公",
+      "vocab_id": "v-外公",
+      "hanzi": "外公",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Abuelo materno; distinguir la rama materna y la variante 姥爷 mediante contexto."
+    },
+    {
+      "id": "VM-v-外婆",
+      "vocab_id": "v-外婆",
+      "hanzi": "外婆",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Abuela materna; la misma relación también puede llamarse 姥姥."
+    },
+    {
+      "id": "VM-v-姥姥",
+      "vocab_id": "v-姥姥",
+      "hanzi": "姥姥",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Variante de abuela materna; una imagen no distingue esta forma de 外婆."
+    },
+    {
+      "id": "VM-v-姥爷",
+      "vocab_id": "v-姥爷",
+      "hanzi": "姥爷",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Variante de abuelo materno; una imagen no distingue esta forma de 外公."
+    },
+    {
+      "id": "VM-v-外语",
+      "vocab_id": "v-外语",
+      "hanzi": "外语",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Lengua extranjera relativa al hablante; no hay idioma universalmente extranjero."
+    },
+    {
+      "id": "VM-v-外国",
+      "vocab_id": "v-外国",
+      "hanzi": "外国",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "País extranjero respecto de un país de referencia; no existe apariencia visual de extranjero."
+    },
+    {
+      "id": "VM-v-外国人",
+      "vocab_id": "v-外国人",
+      "hanzi": "外国人",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Persona extranjera respecto de un contexto nacional; nunca deducirlo por rostro o color de piel."
+    },
+    {
+      "id": "VM-v-面条",
+      "vocab_id": "v-面条",
+      "hanzi": "面条",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Fideos; la variante 面条儿 comparte el mismo referente y debe admitirse cuando sea pertinente."
+    },
+    {
+      "id": "VM-v-炸猪肉面包",
+      "vocab_id": "v-炸猪肉面包",
+      "hanzi": "炸猪肉面包",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Preparación e ingrediente específicos; una foto de sándwich no demuestra que la carne sea cerdo frito."
+    },
+    {
+      "id": "VM-v-肉夹馍",
+      "vocab_id": "v-肉夹馍",
+      "hanzi": "肉夹馍",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Preparación culinaria concreta; diferenciarla de hamburguesa y de pan relleno genérico."
+    },
+    {
+      "id": "VM-v-爱",
+      "vocab_id": "v-爱",
+      "hanzi": "爱",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Afecto o gusto intenso; un corazón no distingue amar de gustar."
+    },
+    {
+      "id": "VM-v-汉堡",
+      "vocab_id": "v-汉堡",
+      "hanzi": "汉堡",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Hamburguesa; la forma 汉堡包 comparte referente y no debe penalizarse solo por la imagen."
+    },
+    {
+      "id": "VM-v-披萨",
+      "vocab_id": "v-披萨",
+      "hanzi": "披萨",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Pizza; 比萨饼 también nombra ese referente, por lo que la imagen no exige una única variante."
+    },
+    {
+      "id": "VM-v-热狗",
+      "vocab_id": "v-热狗",
+      "hanzi": "热狗",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "low",
+      "notes": "Alimento hot dog; no representar literalmente un perro caliente."
+    },
+    {
+      "id": "VM-v-寿司",
+      "vocab_id": "v-寿司",
+      "hanzi": "寿司",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Sushi reconocible; evitar que la pista sea solo pescado crudo o arroz."
+    },
+    {
+      "id": "VM-v-甜品",
+      "vocab_id": "v-甜品",
+      "hanzi": "甜品",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Categoría de postres dulces; una preparación concreta también admite su propio nombre."
+    },
+    {
+      "id": "VM-v-蛋挞",
+      "vocab_id": "v-蛋挞",
+      "hanzi": "蛋挞",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Tartaleta de huevo; distinguirla de otros pasteles pequeños según su forma e ingredientes."
+    },
+    {
+      "id": "VM-v-筷子",
+      "vocab_id": "v-筷子",
+      "hanzi": "筷子",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "low",
+      "notes": "Palillos para comer como utensilio, no la acción de usarlos."
+    },
+    {
+      "id": "VM-v-用",
+      "vocab_id": "v-用",
+      "hanzi": "用",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Usar depende del objeto; una acción específica no identifica el verbo genérico."
+    },
+    {
+      "id": "VM-v-印加可乐",
+      "vocab_id": "v-印加可乐",
+      "hanzi": "印加可乐",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre de bebida de marca; sin identificación auténtica un líquido amarillo no prueba la marca."
+    },
+    {
+      "id": "VM-v-果汁",
+      "vocab_id": "v-果汁",
+      "hanzi": "果汁",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Categoría de jugos; una bebida específica puede sugerir 橙汁 en lugar del genérico."
+    },
+    {
+      "id": "VM-v-饮料",
+      "vocab_id": "v-饮料",
+      "hanzi": "饮料",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Categoría general de bebidas; una taza aislada puede significar café, té o agua."
+    },
+    {
+      "id": "VM-v-苹果",
+      "vocab_id": "v-苹果",
+      "hanzi": "苹果",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "low",
+      "notes": "Fruta manzana; no confundir el alimento con una marca comercial."
+    },
+    {
+      "id": "VM-v-家人",
+      "vocab_id": "v-家人",
+      "hanzi": "家人",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Miembros de una familia; una reunión de personas no prueba el vínculo."
+    },
+    {
+      "id": "VM-v-有意思",
+      "vocab_id": "v-有意思",
+      "hanzi": "有意思",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Interesante como valoración; curiosidad facial no determina la expresión exacta."
+    },
+    {
+      "id": "VM-v-卡片",
+      "vocab_id": "v-卡片",
+      "hanzi": "卡片",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Tarjeta genérica; evitar confundirla con la variante específica de presentación 名片."
+    },
+    {
+      "id": "VM-v-小狗",
+      "vocab_id": "v-小狗",
+      "hanzi": "小狗",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Perrito o perro pequeño; no asumir que toda talla pequeña representa una cría."
+    },
+    {
+      "id": "VM-v-猫",
+      "vocab_id": "v-猫",
+      "hanzi": "猫",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "low",
+      "notes": "Gato como animal; separar el referente de su nombre propio o de la categoría mascota."
+    },
+    {
+      "id": "VM-v-只",
+      "vocab_id": "v-只",
+      "hanzi": "只",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Clasificador zhī de animales; no representar aquí el adverbio zhǐ de solo."
+    },
+    {
+      "id": "VM-v-可爱",
+      "vocab_id": "v-可爱",
+      "hanzi": "可爱",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Tierno o adorable como valoración; no confundir con pequeño, hijo o mascota."
+    },
+    {
+      "id": "VM-v-大学",
+      "vocab_id": "v-大学",
+      "hanzi": "大学",
+      "lessons": [
+        1,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Universidad como institución; una fachada no distingue universidad de escuela o instituto."
+    },
+    {
+      "id": "VM-v-上课",
+      "vocab_id": "v-上课",
+      "hanzi": "上课",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Asistir o dar clase; requiere relación docente-alumno y comparte pista con 学习."
+    },
+    {
+      "id": "VM-v-现在",
+      "vocab_id": "v-现在",
+      "hanzi": "现在",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Momento presente; un reloj solo no distingue ahora de hora o de hoy."
+    },
+    {
+      "id": "VM-v-工人",
+      "vocab_id": "v-工人",
+      "hanzi": "工人",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Trabajador u obrero en contexto; evitar reducir la profesión a ropa o herramientas."
+    },
+    {
+      "id": "VM-v-工作日",
+      "vocab_id": "v-工作日",
+      "hanzi": "工作日",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Día laborable según calendario contextual; no imponer universalmente lunes a viernes."
+    },
+    {
+      "id": "VM-v-马",
+      "vocab_id": "v-马",
+      "hanzi": "马",
+      "lessons": [
+        1,
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "low",
+      "notes": "Caballo según la glosa; no aplicar esa imagen al apellido 马 dentro de un nombre."
+    },
+    {
+      "id": "VM-v-前年",
+      "vocab_id": "v-前年",
+      "hanzi": "前年",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Dos años antes del año de referencia; necesita relación temporal, no fecha fija."
+    },
+    {
+      "id": "VM-v-去年",
+      "vocab_id": "v-去年",
+      "hanzi": "去年",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Año anterior respecto del presente; no asociarlo permanentemente a un número de año."
+    },
+    {
+      "id": "VM-v-明年",
+      "vocab_id": "v-明年",
+      "hanzi": "明年",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Año siguiente al de referencia; una escena futura genérica no especifica la palabra."
+    },
+    {
+      "id": "VM-v-后年",
+      "vocab_id": "v-后年",
+      "hanzi": "后年",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Dos años después del año de referencia; se mantiene la lectura del corpus sin corregirla en esta capa."
+    },
+    {
+      "id": "VM-v-多大",
+      "vocab_id": "v-多大",
+      "hanzi": "多大",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Pregunta de edad o tamaño; hay que determinar el sentido por su enunciado."
+    },
+    {
+      "id": "VM-v-年龄",
+      "vocab_id": "v-年龄",
+      "hanzi": "年龄",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Edad; la apariencia de una persona no determina su edad ni la forma léxica frente a 岁数."
+    },
+    {
+      "id": "VM-v-岁数",
+      "vocab_id": "v-岁数",
+      "hanzi": "岁数",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Número de años de edad; comparte concepto con 年龄 y necesita contexto lingüístico."
+    },
+    {
+      "id": "VM-v-地图",
+      "vocab_id": "v-地图",
+      "hanzi": "地图",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Mapa como objeto de consulta; la pista no debe pedir identificar un lugar específico."
+    },
+    {
+      "id": "VM-v-儿子",
+      "vocab_id": "v-儿子",
+      "hanzi": "儿子",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Hijo respecto de sus padres; un niño solo no indica esa relación."
+    },
+    {
+      "id": "VM-v-小孩子",
+      "vocab_id": "v-小孩子",
+      "hanzi": "小孩子",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Niño pequeño; una imagen comparte referentes con 孩子 y no exige una única forma."
+    },
+    {
+      "id": "VM-v-昨天",
+      "vocab_id": "v-昨天",
+      "hanzi": "昨天",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Día anterior respecto de hoy; la iluminación no fija esa relación."
+    },
+    {
+      "id": "VM-v-明天",
+      "vocab_id": "v-明天",
+      "hanzi": "明天",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Día siguiente respecto de hoy; necesita referencia temporal."
+    },
+    {
+      "id": "VM-v-英语课",
+      "vocab_id": "v-英语课",
+      "hanzi": "英语课",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Clase de inglés; un aula no identifica la lengua sin contexto."
+    },
+    {
+      "id": "VM-v-汉语课",
+      "vocab_id": "v-汉语课",
+      "hanzi": "汉语课",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Clase de chino; no deducirla de la apariencia del profesor o del alumnado."
+    },
+    {
+      "id": "VM-v-钢琴课",
+      "vocab_id": "v-钢琴课",
+      "hanzi": "钢琴课",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Clase con piano y relación de enseñanza; distinguirla de tocar piano sin docente."
+    },
+    {
+      "id": "VM-v-弹",
+      "vocab_id": "v-弹",
+      "hanzi": "弹",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Tocar en el contexto del piano; la misma escena puede responder 弹钢琴."
+    },
+    {
+      "id": "VM-v-弹钢琴",
+      "vocab_id": "v-弹钢琴",
+      "hanzi": "弹钢琴",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Acción de tocar piano; diferenciar de observar un piano o recibir una clase."
+    },
+    {
+      "id": "VM-v-中午",
+      "vocab_id": "v-中午",
+      "hanzi": "中午",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Mediodía como referencia horaria; una comida puede significar comer o almorzar."
+    },
+    {
+      "id": "VM-v-下午",
+      "vocab_id": "v-下午",
+      "hanzi": "下午",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Franja de tarde; una iluminación cálida no basta para distinguirla de amanecer."
+    },
+    {
+      "id": "VM-v-约翰",
+      "vocab_id": "v-约翰",
+      "hanzi": "约翰",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "John es nombre del perro en la lectura; no generar la imagen de un hombre por asociación del nombre."
+    },
+    {
+      "id": "VM-v-炒饭",
+      "vocab_id": "v-炒饭",
+      "hanzi": "炒饭",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Arroz frito como plato; diferenciarlo del arroz cocido simple 米饭."
+    },
+    {
+      "id": "VM-v-阿根廷",
+      "vocab_id": "v-阿根廷",
+      "hanzi": "阿根廷",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "País; no usar a una persona famosa como definición única del territorio."
+    },
+    {
+      "id": "VM-v-有名",
+      "vocab_id": "v-有名",
+      "hanzi": "有名",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Ser famoso depende de conocimiento social; un retrato no representa por sí mismo la propiedad."
+    },
+    {
+      "id": "VM-v-名片",
+      "vocab_id": "v-名片",
+      "hanzi": "名片",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Tarjeta de presentación; sin contenido funcional puede confundirse con 卡片."
+    },
+    {
+      "id": "VM-v-学院",
+      "vocab_id": "v-学院",
+      "hanzi": "学院",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Instituto o facultad según glosa; una fachada no distingue su función de 大学."
+    },
+    {
+      "id": "VM-v-餐厅",
+      "vocab_id": "v-餐厅",
+      "hanzi": "餐厅",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Restaurante o comedor reconocible por el entorno de servicio; no solo una mesa con comida."
+    },
+    {
+      "id": "VM-v-男生",
+      "vocab_id": "v-男生",
+      "hanzi": "男生",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Chico en contexto social o escolar; no usar vestimenta como prueba de identidad."
+    },
+    {
+      "id": "VM-v-系",
+      "vocab_id": "v-系",
+      "hanzi": "系",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Departamento universitario; relación institucional, no el verbo atar de otra lectura."
+    },
+    {
+      "id": "VM-v-哪一个",
+      "vocab_id": "v-哪一个",
+      "hanzi": "哪一个",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Elección interrogativa singular; requiere contexto y no una imagen aislada de varios objetos."
+    },
+    {
+      "id": "VM-v-去",
+      "vocab_id": "v-去",
+      "hanzi": "去",
+      "lessons": [
+        1,
+        3
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Ir hacia un destino; diferenciarlo de llegar y de entrar exige referencia espacial."
+    },
+    {
+      "id": "VM-v-找",
+      "vocab_id": "v-找",
+      "hanzi": "找",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Acción de buscar; distinguir de mirar o leer mediante la intención de hallar algo."
+    },
+    {
+      "id": "VM-v-看书",
+      "vocab_id": "v-看书",
+      "hanzi": "看书",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Leer un libro; separar acción del objeto 书 y aceptar variantes válidas de lectura."
+    },
+    {
+      "id": "VM-v-看电影",
+      "vocab_id": "v-看电影",
+      "hanzi": "看电影",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Ver una película; una pantalla aislada podría representar televisión u ordenador."
+    },
+    {
+      "id": "VM-v-电影",
+      "vocab_id": "v-电影",
+      "hanzi": "电影",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Película como contenido; una sala o pantalla puede nombrar el lugar o la acción de mirar."
+    },
+    {
+      "id": "VM-v-唱歌",
+      "vocab_id": "v-唱歌",
+      "hanzi": "唱歌",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Cantar; una boca abierta o micrófono también pueden indicar hablar, por lo que requiere validación posterior."
+    },
+    {
+      "id": "VM-v-一",
+      "vocab_id": "v-一",
+      "hanzi": "一",
+      "lessons": [
+        1,
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Cantidad uno; práctica contextual de números, no una foto que pueda nombrar su objeto."
+    },
+    {
+      "id": "VM-v-二",
+      "vocab_id": "v-二",
+      "hanzi": "二",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Dos en numeración; el mismo conjunto admite 两 cuando cambia la construcción."
+    },
+    {
+      "id": "VM-v-三",
+      "vocab_id": "v-三",
+      "hanzi": "三",
+      "lessons": [
+        1,
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Cantidad tres; usar relaciones de conteo, no confundir cantidad con nombre de objeto."
+    },
+    {
+      "id": "VM-v-四",
+      "vocab_id": "v-四",
+      "hanzi": "四",
+      "lessons": [
+        1,
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Cantidad cuatro en práctica de números; no depende de una fotografía concreta."
+    },
+    {
+      "id": "VM-v-五",
+      "vocab_id": "v-五",
+      "hanzi": "五",
+      "lessons": [
+        1,
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Cantidad cinco; representación de conteo como apoyo, no quiz léxico de objeto."
+    },
+    {
+      "id": "VM-v-六",
+      "vocab_id": "v-六",
+      "hanzi": "六",
+      "lessons": [
+        1,
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Cantidad seis; estructurar el conteo sin convertirlo en una palabra temática."
+    },
+    {
+      "id": "VM-v-七",
+      "vocab_id": "v-七",
+      "hanzi": "七",
+      "lessons": [
+        1,
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Cantidad siete; distinguir el valor numérico de los objetos contados."
+    },
+    {
+      "id": "VM-v-八",
+      "vocab_id": "v-八",
+      "hanzi": "八",
+      "lessons": [
+        1,
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Cantidad ocho; apoyo de conteo, no imagen arbitraria asociada al sonido."
+    },
+    {
+      "id": "VM-v-九",
+      "vocab_id": "v-九",
+      "hanzi": "九",
+      "lessons": [
+        1,
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Cantidad nueve; representación numérica contextual."
+    },
+    {
+      "id": "VM-v-十",
+      "vocab_id": "v-十",
+      "hanzi": "十",
+      "lessons": [
+        1,
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Cantidad diez; agrupación numérica, no referente fotográfico."
+    },
+    {
+      "id": "VM-v-百",
+      "vocab_id": "v-百",
+      "hanzi": "百",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Centena como magnitud numérica; no requiere una foto con cien objetos."
+    },
+    {
+      "id": "VM-v-千",
+      "vocab_id": "v-千",
+      "hanzi": "千",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Millar como magnitud numérica; conviene representación estructurada, no escena recargada."
+    },
+    {
+      "id": "VM-v-可是",
+      "vocab_id": "v-可是",
+      "hanzi": "可是",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Contraste entre dos proposiciones; una cara de desacuerdo no define la conjunción."
+    },
+    {
+      "id": "VM-v-张华",
+      "vocab_id": "v-张华",
+      "hanzi": "张华",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre propio del cuaderno; no identificable mediante retrato inventado."
+    },
+    {
+      "id": "VM-v-宠物",
+      "vocab_id": "v-宠物",
+      "hanzi": "宠物",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Categoría de mascota en relación con un hogar; un perro o gato aislado favorece el nombre del animal."
+    },
+    {
+      "id": "VM-v-车牌号",
+      "vocab_id": "v-车牌号",
+      "hanzi": "车牌号",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Número de matrícula y no coche; requiere identificación contextual sin usar datos personales reales."
+    },
+    {
+      "id": "VM-v-多少",
+      "vocab_id": "v-多少",
+      "hanzi": "多少",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Pregunta de cantidad; sin construcción verbal no se distingue de 几."
+    },
+    {
+      "id": "VM-v-大卫",
+      "vocab_id": "v-大卫",
+      "hanzi": "大卫",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre propio; no asociarlo automáticamente a una persona real o personaje visual."
+    },
+    {
+      "id": "VM-v-俄罗斯人",
+      "vocab_id": "v-俄罗斯人",
+      "hanzi": "俄罗斯人",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Persona de Rusia; la nacionalidad no se infiere por rasgos físicos."
+    },
+    {
+      "id": "VM-v-西安",
+      "vocab_id": "v-西安",
+      "hanzi": "西安",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Ciudad; el nombre no se recupera inequívocamente de una escena genérica o monumento aislado."
+    },
+    {
+      "id": "VM-v-广州",
+      "vocab_id": "v-广州",
+      "hanzi": "广州",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Ciudad; apoyo geográfico contextual sin sustituirla por estereotipos culturales."
+    },
+    {
+      "id": "VM-v-北京烤鸭",
+      "vocab_id": "v-北京烤鸭",
+      "hanzi": "北京烤鸭",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Pato laqueado de Pekín como preparación; distinguirlo de cualquier ave asada."
+    },
+    {
+      "id": "VM-v-你好",
+      "vocab_id": "v-你好",
+      "hanzi": "你好",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Saludo de encuentro; necesita separarse del gesto de despedida y admitir variantes de saludo."
+    },
+    {
+      "id": "VM-v-您好",
+      "vocab_id": "v-您好",
+      "hanzi": "您好",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Saludo respetuoso; el gesto no distingue la forma usted de 你好."
+    },
+    {
+      "id": "VM-v-你们好",
+      "vocab_id": "v-你们好",
+      "hanzi": "你们好",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Saludo a varias personas; la cantidad de destinatarios debe quedar contextualizada."
+    },
+    {
+      "id": "VM-v-早上好",
+      "vocab_id": "v-早上好",
+      "hanzi": "早上好",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Saludo de mañana; una escena del amanecer puede representar solo 早上."
+    },
+    {
+      "id": "VM-v-上午好",
+      "vocab_id": "v-上午好",
+      "hanzi": "上午好",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Saludo matinal; no hay distinción visual inequívoca frente a 早上好."
+    },
+    {
+      "id": "VM-v-下午好",
+      "vocab_id": "v-下午好",
+      "hanzi": "下午好",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Saludo de tarde; requiere acto de saludo y referencia temporal."
+    },
+    {
+      "id": "VM-v-晚上好",
+      "vocab_id": "v-晚上好",
+      "hanzi": "晚上好",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Saludo al encontrarse por la noche; diferenciarlo de la despedida 晚安."
+    },
+    {
+      "id": "VM-v-晚安",
+      "vocab_id": "v-晚安",
+      "hanzi": "晚安",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Despedida antes de dormir; una cama sola no distingue dormir, sueño o buenas noches."
+    },
+    {
+      "id": "VM-v-刚到",
+      "vocab_id": "v-刚到",
+      "hanzi": "刚到",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Llegada reciente; una acción sin referencia temporal no transmite el matiz 刚."
+    },
+    {
+      "id": "VM-v-这是",
+      "vocab_id": "v-这是",
+      "hanzi": "这是",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Construcción de identificación próxima; necesita un complemento y referencia del hablante."
+    },
+    {
+      "id": "VM-v-那是",
+      "vocab_id": "v-那是",
+      "hanzi": "那是",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Construcción de identificación distante; no representarla como un objeto sin predicación."
+    },
+    {
+      "id": "VM-v-您贵姓",
+      "vocab_id": "v-您贵姓",
+      "hanzi": "您贵姓",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Fórmula respetuosa de apellido; un retrato no permite recuperar sus palabras."
+    },
+    {
+      "id": "VM-v-哪国人",
+      "vocab_id": "v-哪国人",
+      "hanzi": "哪国人",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Pregunta por nacionalidad; nunca inferir respuesta de rasgos físicos."
+    },
+    {
+      "id": "VM-v-宋",
+      "vocab_id": "v-宋",
+      "hanzi": "宋",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Apellido Song según el material; no ilustrar una dinastía como si fuera el nombre de la persona."
+    },
+    {
+      "id": "VM-v-力波",
+      "vocab_id": "v-力波",
+      "hanzi": "力波",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre Libo; no se deduce de apariencia o significado separado de sus caracteres."
+    },
+    {
+      "id": "VM-v-大为",
+      "vocab_id": "v-大为",
+      "hanzi": "大为",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre Dawei; conservar su función nominal dentro de la presentación."
+    },
+    {
+      "id": "VM-v-小云",
+      "vocab_id": "v-小云",
+      "hanzi": "小云",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre Xiaoyun; no representar literalmente una nube pequeña para enseñar el nombre."
+    },
+    {
+      "id": "VM-v-可以",
+      "vocab_id": "v-可以",
+      "hanzi": "可以",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Permiso o posibilidad; un gesto afirmativo no determina el modal frente a 会 o 好."
+    },
+    {
+      "id": "VM-v-死",
+      "vocab_id": "v-死",
+      "hanzi": "死",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "En 累死了 intensifica cansancio; evitar una imagen literal de muerte para ese uso."
+    },
+    {
+      "id": "VM-v-了",
+      "vocab_id": "v-了",
+      "hanzi": "了",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Partícula aspectual o de cambio de situación; necesita contraste de enunciados."
+    },
+    {
+      "id": "VM-v-手",
+      "vocab_id": "v-手",
+      "hanzi": "手",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "low",
+      "notes": "Mano como parte del cuerpo; no convertir un gesto particular en la definición."
+    },
+    {
+      "id": "VM-v-王",
+      "vocab_id": "v-王",
+      "hanzi": "王",
+      "lessons": [
+        1,
+        3
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Apellido Wang en el corpus; no representar un rey para ese sentido nominal."
+    },
+    {
+      "id": "VM-v-陆",
+      "vocab_id": "v-陆",
+      "hanzi": "陆",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Apellido Lu; no ilustrar un terreno como si fuera el nombre propio."
+    },
+    {
+      "id": "VM-v-这儿",
+      "vocab_id": "v-这儿",
+      "hanzi": "这儿",
+      "lessons": [
+        1,
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Aquí relativo al hablante; requiere referencia espacial, no un lugar fijo."
+    },
+    {
+      "id": "VM-v-说",
+      "vocab_id": "v-说",
+      "hanzi": "说",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Hablar o decir; distinguir de cantar y preguntar en una interacción controlada."
+    },
+    {
+      "id": "VM-v-那儿",
+      "vocab_id": "v-那儿",
+      "hanzi": "那儿",
+      "lessons": [
+        2,
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Allí relativo al hablante; una imagen no expresa distancia sin referencia."
+    },
+    {
+      "id": "VM-v-梅西",
+      "vocab_id": "v-梅西",
+      "hanzi": "梅西",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre de persona real; una imagen sintética no certifica identidad ni es una definición léxica."
+    },
+    {
+      "id": "VM-v-一下",
+      "vocab_id": "v-一下",
+      "hanzi": "一下",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Brevedad o atenuación de petición; no equivale a una cantidad o gesto aislado."
+    },
+    {
+      "id": "VM-v-本",
+      "vocab_id": "v-本",
+      "hanzi": "本",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Clasificador de libros; una foto de libro corresponde a 书, no automáticamente a 本."
+    },
+    {
+      "id": "VM-v-酒",
+      "vocab_id": "v-酒",
+      "hanzi": "酒",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Categoría de bebida alcohólica; una copa no demuestra su contenido ni el término genérico."
+    },
+    {
+      "id": "VM-v-孔子学院",
+      "vocab_id": "v-孔子学院",
+      "hanzi": "孔子学院",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre institucional; una fachada de escuela no identifica la institución concreta."
+    },
+    {
+      "id": "VM-v-二十",
+      "vocab_id": "v-二十",
+      "hanzi": "二十",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Veinte como numeral compuesto; apoyo de agrupación numérica."
+    },
+    {
+      "id": "VM-v-小猫",
+      "vocab_id": "v-小猫",
+      "hanzi": "小猫",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": true,
+      "ambiguity_risk": "medium",
+      "notes": "Gatito o gato pequeño; distinguirlo de 猫 sin asumir que talla siempre equivale a edad."
+    },
+    {
+      "id": "VM-v-吃饭",
+      "vocab_id": "v-吃饭",
+      "hanzi": "吃饭",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Tomar una comida; la misma imagen puede producir 吃, por lo que requiere contexto de expresión."
+    },
+    {
+      "id": "VM-v-李",
+      "vocab_id": "v-李",
+      "hanzi": "李",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Apellido Li en el curso; no representar una ciruela por el significado aislado del carácter."
+    },
+    {
+      "id": "VM-v-大家",
+      "vocab_id": "v-大家",
+      "hanzi": "大家",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Todos dentro de un grupo discursivo; una multitud sola no distingue 大家, 都 o 他们."
+    },
+    {
+      "id": "VM-v-张王冉",
+      "vocab_id": "v-张王冉",
+      "hanzi": "张王冉",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre propio documentado; no reconstruir ni inferir apariencia personal."
+    },
+    {
+      "id": "VM-v-三十",
+      "vocab_id": "v-三十",
+      "hanzi": "三十",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Treinta como numeral; representación de cantidad o estructura, no fotografía temática."
+    },
+    {
+      "id": "VM-v-二十五",
+      "vocab_id": "v-二十五",
+      "hanzi": "二十五",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Veinticinco como numeral; la práctica debe separar cantidad de edad."
+    },
+    {
+      "id": "VM-v-七十五",
+      "vocab_id": "v-七十五",
+      "hanzi": "七十五",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Setenta y cinco como numeral; un anciano no representa un número de edad exacto."
+    },
+    {
+      "id": "VM-v-上",
+      "vocab_id": "v-上",
+      "hanzi": "上",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Asistir a clase en este registro; no usar la dirección arriba para sustituir ese sentido."
+    },
+    {
+      "id": "VM-v-孩子们",
+      "vocab_id": "v-孩子们",
+      "hanzi": "孩子们",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Plural de niños; la escena necesita contexto para distinguir el sufijo de la categoría 孩子."
+    },
+    {
+      "id": "VM-v-成龙",
+      "vocab_id": "v-成龙",
+      "hanzi": "成龙",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre propio de persona real; no sustituir identidad por rasgos de una imagen generada."
+    },
+    {
+      "id": "VM-v-巩俐",
+      "vocab_id": "v-巩俐",
+      "hanzi": "巩俐",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre propio de persona real; una apariencia sintética no identifica ese nombre."
+    },
+    {
+      "id": "VM-v-姚明",
+      "vocab_id": "v-姚明",
+      "hanzi": "姚明",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre propio; altura o actividad deportiva no bastan para establecer identidad."
+    },
+    {
+      "id": "VM-v-马云",
+      "vocab_id": "v-马云",
+      "hanzi": "马云",
+      "lessons": [
+        1
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre propio; no ilustrar caballos y nubes ni inventar un retrato como evidencia."
+    },
+    {
+      "id": "VM-v-林",
+      "vocab_id": "v-林",
+      "hanzi": "林",
+      "lessons": [
+        1,
+        2
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Apellido Lin; no representar un bosque para enseñar el apellido del personaje."
+    },
+    {
+      "id": "VM-v-班",
+      "vocab_id": "v-班",
+      "hanzi": "班",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Grupo de clase; distinguirlo de curso, aula y compañeros requiere relación contextual."
+    },
+    {
+      "id": "VM-v-玛丽",
+      "vocab_id": "v-玛丽",
+      "hanzi": "玛丽",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre propio; no confundirlo ni fusionarlo con otra grafía del corpus."
+    },
+    {
+      "id": "VM-v-上午",
+      "vocab_id": "v-上午",
+      "hanzi": "上午",
+      "lessons": [
+        3
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Mañana anterior al mediodía; se solapa con 早上 y requiere contexto horario."
+    },
+    {
+      "id": "VM-v-北京人",
+      "vocab_id": "v-北京人",
+      "hanzi": "北京人",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Persona de Pekín; no inferir procedencia por apariencia ni por estar ante un monumento."
+    },
+    {
+      "id": "VM-v-美国人",
+      "vocab_id": "v-美国人",
+      "hanzi": "美国人",
+      "lessons": [
+        2
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nacionalidad estadounidense; no depende de aspecto físico, idioma aparente o vestimenta."
+    }
+  ]
+}
