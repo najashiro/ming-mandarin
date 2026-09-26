@@ -5,7 +5,7 @@ const available = JSON.parse(await readFile('data/mandarin-audio-available.json'
 const pronunciation = JSON.parse(await readFile('data/pronunciation.json', 'utf8'));
 const clips = process.argv.includes('--all-available')
   ? [...available.files.map(file => ({clipId:file, file, directory:'mandarin'})), ...pronunciation.clips.map(c => ({clipId:c.id, file:c.file, directory:'pinyin'}))]
-  : report.resources.filter(r=>r.status.startsWith('available'));
+  : report.resources.filter(r=>r.status.startsWith('available') || (process.argv.includes('--include-pending') && r.status === 'existing_unregistered'));
 const browser = await chromium.launch({headless:true});
 const page = await browser.newPage();
 const results=[];
@@ -23,3 +23,10 @@ const failures=results.filter(r=>!r.decoded||r.rms<0.002||r.peak<0.005);
 await writeFile('docs/vocabulary-audio-signal.json',JSON.stringify({total:results.length,failures,results},null,2));
 console.log(JSON.stringify({decoded:results.length-failures.length,total:results.length,failures}));
 if(failures.length)process.exitCode=1;
+if (process.argv.includes('--publish')) {
+  if (failures.length || clips.length !== report.resources.length) throw new Error('Complete successful vocabulary verification is required before publication.');
+  const files = new Set(available.files);
+  for (const clip of clips) if (clip.directory === 'mandarin') files.add(clip.file);
+  await writeFile('data/mandarin-audio-available.json', JSON.stringify({ files: [...files].sort() }, null, 2) + '\n');
+  console.log('Verified vocabulary audio registered for playback.');
+}

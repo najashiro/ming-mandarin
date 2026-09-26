@@ -9,7 +9,7 @@ Leer primero [`VOCABULARY_STYLE.md`](VOCABULARY_STYLE.md) y los valores de
 
 ```text
 Trabaja en Míng para aplicar el estándar visual de Vocabulario aprobado:
-ming-vocabulary-immersive-zh-golden-v1, versión 1.0.0.
+ming-vocabulary-immersive-zh-golden-v1, versión 1.1.0.
 
 FUENTE DE VERDAD
 1. Lee AGENTS.md, MING_KNOWLEDGE/AGENTS.md y
@@ -26,7 +26,7 @@ OBJETIVO VISUAL
 Una ficha compacta y coherente en toda la sección: fotografía realista a sangre,
 sujeto nítido y completo, ambiente chino sobrio muy desenfocado, degradado marfil
 suave bajo el texto, Hanzi protagonista, pinyin secundario, traducción pequeña
-y tenue. Audio circular verde salvia junto al carácter. Sin rectángulo interior
+y tenue. Audio sin fondo junto al carácter. Sin rectángulo interior
 de imagen, marco blanco, pie de foto separado o fila adicional de botones.
 
 GEOMETRÍA OBLIGATORIA
@@ -57,13 +57,12 @@ metadatos. Crea archivos versionados; no cambies recursos de otros juegos
 indirectamente al sobrescribir imágenes compartidas.
 
 TIPOGRAFÍA Y CONTROLES
-Hanzi frontal 36 px (32 px móvil), peso 500, #173b32.
+Hanzi frontal 43.2 px (38.4 px móvil), peso 500, #173b32.
 Pinyin 16 px, peso 400, #466451; conservar tonos legibles.
-Español 12.8 px (0.8rem), peso 400, #746f68: tercer nivel, nunca igual al pinyin.
+Español 11.52 px (0.72rem), peso 400, #746f68: tercer nivel, nunca igual al pinyin.
 Usa fuentes ya cargadas en Míng; no hornees textos ni botones en imágenes.
-Audio: círculo salvia #e1e6d6 de 44 px, icono jade #315848 de 20 px.
-Favoritos arriba a la izquierda, giro arriba a la derecha, fondo marfil
-translúcido, áreas táctiles de 44 px. No tapar el sujeto ni anidar botones.
+Audio: área transparente de 44 px, icono jade #315848 de 20 px.
+Favoritos arriba a la izquierda, giro arriba a la derecha, fondo transparente, áreas táctiles de 44 px. No tapar el sujeto ni anidar botones.
 Asegura foco visible fuera del recorte de la foto, teclado y aria-label.
 Conserva estados de reproducción y favorito; no dibujes controles ficticios.
 Refuerza el degradado si el texto tenue pierde contraste sobre la fotografía.
@@ -72,7 +71,7 @@ REVERSO PEDAGÓGICO
 Fondo #e6eee5; palabra estudiada a 24 px, peso 400 y #687169, sin su audio.
 Frase china a 28 px (26 px móvil); énfasis solo en la palabra/tramo estudiado
 en negrita #b34424. Usa vínculos léxicos/pedagógicos auditados y no descubrimiento
-de ejemplos por substring. Pinyin 16 px, traducción 12.8 px tenue.
+de ejemplos por substring. Pinyin 16 px, traducción 11.52 px tenue.
 Audio de frase a su lado si existe. «Otro ejemplo» pequeño visualmente pero
 con área táctil 44 px. Conserva enlaces individuales a Hanzi disponibles.
 No añadas procedencia, botón escritura ni explicaciones técnicas para alumnos.
@@ -165,3 +164,7 @@ curricular nuevo):
 Guardar el prompt utilizado, estilo/versión, ruta del asset y estado de revisión
 en los metadatos de producción. Comprobar el encuadre renderizado antes de
 marcar un recurso como listo; una generación exitosa no garantiza su ajuste.
+
+## Ajuste aprobado: 25 de septiembre de 2026
+
+Hanzi principal +20 % (43.2 px; 38.4 px móvil), traducción −10 % adicional (11.52 px), pinyin sin cambios (16 px). Botones de la ficha transparentes, sin fondo ni sombra, con área táctil de 44 px y foco visible. Eliminar el panel blanco localizado detrás del texto; conservar únicamente la transición global suave de la fotografía a la izquierda. Estas indicaciones sustituyen los fondos de controles descritos en la versión inicial.

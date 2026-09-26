@@ -60,7 +60,7 @@ export function Arcade({ hanziCharacters, listeningEntries, scope, playerName, c
       <div className={`game-thumbnail thumbnail-${item.kind}`} aria-hidden="true">{item.kind === 'time' ? <span>◷</span> : item.kind === 'hanzi' ? <Hanzi>字</Hanzi> : item.kind === 'story' ? <span>▤ ⌕</span> : <><Person index={index}/><span>{item.kind === 'mixed' ? '✦' : item.kind === 'conversation' ? '•••' : '＋'}</span></>}</div>
       <h2>{item.name}</h2><p>{item.description}</p><small>{item.skill}</small>
       {(item.kind === 'mixed' || item.kind === 'time') && <span className="game-share-status" role="status" aria-live="polite">{shareStatus?.game === item.id ? shareStatus.message : ''}</span>}
-      {item.kind === 'vocabulary' ? <Link href={`/study/${scope}/vocabulary?mode=mix`}>Jugar →</Link> : <button type="button" onClick={() => play(index)}>Jugar →</button>}
+      {item.kind === 'vocabulary' ? <Link href={`/study/${scope}/games/vocabulary-mix`}>Jugar →</Link> : <button type="button" onClick={() => play(index)}>Jugar →</button>}
     </article>)}</section><StudyTools entries={listeningEntries}/>
     <section id="arena" className="arcade-arena shell">{!game ? <div><p className="eyebrow">JUEGOS MÍNG</p><h2>Elige tu experiencia</h2><p>Escucha, observa, conversa, escribe y lee.</p></div> : game.kind === 'mixed' ? <RetoMixto scope={scope} onClose={() => setSelected(null)}/> : <div className="new-game-shell" key={`${selected}-${session}`}><header className={game.kind==='time'?'time-shell-header':undefined}>{game.kind!=='time'&&<h2>{game.name}</h2>}<button onClick={() => setSelected(null)}>Cerrar</button></header>
       {game.kind === 'scene' && <LiveSceneGame scope={scope} characters={hanziCharacters}/>}

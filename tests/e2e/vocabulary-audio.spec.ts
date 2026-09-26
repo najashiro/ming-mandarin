@@ -1,5 +1,31 @@
 import { test, expect } from '@playwright/test';
 
+test('previously missing words and piano sentence load real audio', async ({ page }) => {
+  for (const word of ['有意思', '小狗', '弹钢琴']) {
+    await page.goto(`/study/l3/vocabulary?q=${encodeURIComponent(word)}`);
+    const card = page.getByRole('article', { name: `Ficha de ${word}`, exact: true });
+    const [response] = await Promise.all([
+      page.waitForResponse(response => response.url().includes('/audio/') && response.status() < 400),
+      card.getByRole('button', { name: `Escuchar: ${word}`, exact: true }).click(),
+    ]);
+    const recording = await page.request.get(response.url());
+    expect(recording.ok()).toBe(true);
+    expect((await recording.body()).length).toBeGreaterThan(1024);
+    if (word === '弹钢琴') {
+      await card.getByRole('button', { name: `Ver ejemplo: ${word}`, exact: true }).click();
+      await card.getByRole('button', { name: 'Otro ejemplo', exact: true }).click();
+      await expect(card.locator('.vocabulary-example-text')).toHaveText('你会弹钢琴吗？');
+      const [sentence] = await Promise.all([
+        page.waitForResponse(response => response.url().includes('/audio/') && response.status() < 400),
+        card.locator('.vocabulary-example-text .audio-button').click(),
+      ]);
+      const recording = await page.request.get(sentence.url());
+      expect(recording.ok()).toBe(true);
+      expect((await recording.body()).length).toBeGreaterThan(1024);
+    }
+  }
+});
+
 test('real load failure and simulated recovery never flip the card', async ({ page }) => {
   await page.route('**/audio/**', route => route.abort());
   await page.goto('/study/l2/vocabulary?q=米饭');

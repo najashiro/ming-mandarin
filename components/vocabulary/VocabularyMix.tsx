@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
 import type { CurriculumScope } from '@/data/types';
 import type { ActiveWord, ContentLevel } from '@/lib/vocabulary';
 import { vocabularyCatalog, getVocabularySet, examplesForWord } from '@/lib/vocabulary';
@@ -8,6 +7,7 @@ import { contextForWord, imageForWord, availablePracticeTypes } from '@/lib/voca
 import { evaluateMix, mixStats, startMix, reconcileMixSession, type PracticeType } from '@/lib/vocabulary-review';
 import { useVocabularyState } from './useVocabularyState';
 import { VocabularyExample } from './VocabularyCard';
+import { VocabularyPhoto } from './VocabularyPhoto';
 import { LinkedChineseText } from '../LinkedChineseText';
 import { Hanzi } from '../Hanzi';
 import { PinyinText } from '../PinyinText';
@@ -65,18 +65,23 @@ export function VocabularyMix({ words, scope, userId, route }: { words: ActiveWo
   if (session.paused) return <section className="vocabulary-mix"><h2>Sesión en pausa</h2><p>Tu tarjeta y respuesta revelada se conservan en este dispositivo.</p><button type="button" onClick={() => changeSession({ paused: false })}>Reanudar</button><button type="button" onClick={() => update(previous => { const sessions = { ...previous.sessions }; delete sessions[scope]; return { ...previous, sessions }; })}>Finalizar sesión en curso</button></section>;
   return <section className="vocabulary-mix" aria-label="Vocabulario Mix"><header><span>Tarjeta {session.index + 1} de {session.queue.length} · {session.level === 'basic' ? 'Básico' : 'Hard'}</span><button type="button" onClick={() => changeSession({ paused: true })}>Pausar</button></header>
     <article key={`${session.id}-${session.index}`} className="vocabulary-mix-card">
+      <div className="vocabulary-mix-surface">
       <p className="eyebrow">{card.type === 'image' ? 'Imagen → chino' : card.type === 'context' ? 'Contexto → palabra' : 'Hanzi → lectura y significado'}</p>
       {unavailable ? <><p role="status">Esta pista no está disponible. No cuenta como fallo.</p><button type="button" onClick={() => update(previous => { const current = previous.sessions[scope]; return { ...previous, sessions: { ...previous.sessions, [scope]: { ...current, queue: current.queue.filter((_, i) => i !== current.index), revealed: false } } }; })}>Saltar sin evaluar</button></> : word && <>
         {!session.revealed ? <>
 
-          {card.type === 'hanzi' ? <div className="vocabulary-mix-hanzi"><Hanzi>{word.hanzi}</Hanzi></div> : card.type === 'image' && image?.src ? <Image unoptimized src={image.src} alt={image.alt} width={384} height={384} onError={() => setFailedImage(word.id)}/> : context && <><p className="vocabulary-context"><Hanzi>{context.clue}</Hanzi></p><p>{context.hint}</p></>}
-          <button type="button" className="vocabulary-reveal" onClick={() => changeSession({ revealed: true })}>Ver respuesta</button>
+          {card.type === 'hanzi' ? <div className="vocabulary-mix-hanzi"><Hanzi>{word.hanzi}</Hanzi></div> : card.type === 'image' && image?.src ? <VocabularyPhoto src={image.src} alt={image.alt} onError={() => setFailedImage(word.id)}/> : context && <><p className="vocabulary-context"><Hanzi>{context.clue}</Hanzi></p><p className="vocabulary-translation">{context.hint}</p></>}
         </> : <>
-          <div className="vocabulary-word-row"><h2 className="vocabulary-mix-hanzi"><LinkedChineseText text={word.hanzi} returnTo={route} newTab/></h2><SpeakButton text={word.hanzi} reading={word.pinyin} compact/></div><p><PinyinText>{word.pinyin}</PinyinText></p><p>{word.spanish}</p>
-          <div className="vocabulary-evaluation"><button type="button" onClick={() => evaluate(false)}>No lo sé</button><button type="button" onClick={() => evaluate(true)}>Lo sé</button></div>
-          {examplesForWord(word).length > 0 && <details><summary>Ejemplo</summary><VocabularyExample word={word} scope={scope} route={route}/></details>}
+          <div className="vocabulary-mix-answer"><div className="vocabulary-word-row"><h2 className="vocabulary-mix-hanzi"><LinkedChineseText text={word.hanzi} returnTo={route} newTab/></h2><SpeakButton text={word.hanzi} reading={word.pinyin} compact/></div><p className="word-pinyin"><PinyinText>{word.pinyin}</PinyinText></p><p className="vocabulary-translation">{word.spanish}</p></div>
         </>}
       </>}
+      </div>
+      {!unavailable && word && (!session.revealed
+        ? <button type="button" className="vocabulary-reveal" onClick={() => changeSession({ revealed: true })}>Ver respuesta</button>
+        : <>
+          <div className="vocabulary-evaluation"><button type="button" onClick={() => evaluate(false)}>No lo sé</button><button type="button" onClick={() => evaluate(true)}>Lo sé</button></div>
+          {examplesForWord(word).length > 0 && <details className="vocabulary-mix-example"><summary>Ejemplo</summary><VocabularyExample key={word.id} word={word} scope={scope} route={route}/></details>}
+        </>)}
     </article>
     <details className="vocabulary-help"><summary>Cómo autoevaluarte</summary><p>Lo sé: recordé la respuesta antes de revelarla.</p><p>No lo sé: no la recordé, me confundí o la reconocí solo después de verla.</p><p>Este recuerdo es autoevaluado; no evalúa pronunciación ni escritura.</p></details>
   </section>;

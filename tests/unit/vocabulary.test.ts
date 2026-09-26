@@ -6,6 +6,7 @@ import { imageForWord, vocabularyMedia } from '@/lib/vocabulary-media';
 import { resolveHanziGlyph } from '@/lib/hanzi/navigation';
 import { audioForMandarinText } from '@/lib/mandarin-audio';
 import corpus from '@/data/corpus-v21-public.json';
+import { publicExamplesForVocabulary } from '@/lib/vocabulary-examples';
 import { canonicalCharacters } from '@/seed/characters';
 import { curriculumScopes } from '@/seed/curriculum';
 import { existsSync } from 'node:fs';
@@ -17,8 +18,8 @@ describe('vocabulario activo: evidencia, búsqueda y recursos', () => {
     expect(selectVocabulary('l3', 'new')).not.toContain(pet);
     expect(selectVocabulary('l3', 'context', 'basic')).toContain(pet);
     expect(selectVocabulary('l1')).not.toContain(pet);
-    // The only linked pet sentence is an open interview prompt, not an eligible example.
-    expect(examplesForWord(pet)).toEqual([]);
+    // The new projection explicitly publishes this complete question as an example.
+    expect(examplesForWord(pet).map(example => example.hanzi)).toEqual(['你们家有宠物吗？']);
   });
   for (const scope of curriculumScopes) it(`${scope}: Hard contiene Básico y no duplica IDs`, () => {
     const basic = selectVocabulary(scope, 'review', 'basic');
@@ -59,7 +60,8 @@ describe('vocabulario activo: evidencia, búsqueda y recursos', () => {
   it('no mezcla lecturas distintas en audio', () => {
     expect(audioForMandarinText('好', 'hǎo')).toBeTruthy();
     expect(audioForMandarinText('好', 'hào')).toBeUndefined();
-    expect(audioForMandarinText('宠物', pet.pinyin)).toBeUndefined();
+    expect(audioForMandarinText('宠物', pet.pinyin)).toBeTruthy();
+    expect(audioForMandarinText('宠物', 'chóngwù')).toBeUndefined();
   });
 });
 describe('autoevaluación finita y persistencia', () => {
@@ -168,25 +170,49 @@ describe('partición exclusiva y ejemplos globales', () => {
   it('busca globalmente con todas las variantes de mascota', () => {
     for (const query of ['宠物', 'chǒngwù', 'chongwu', 'chong wu', 'chong3wu4', 'mascota']) expect(searchGlobalVocabulary(query)[0]).toBe(pet);
   });
-  it('真 incluye frases L2 y L3, prioriza pinyin y no duplica evidencias', () => {
+  it('真 conserva el orden público, incluye L2 y L3 y no duplica evidencias', () => {
     const word = vocabularyCatalog.find(word => word.hanzi === '真')!;
     const examples = examplesForWord(word);
-    expect(examples[0]).toMatchObject({ hanzi: '真厉害！', lessons: [2] });
+    expect(examples).toContainEqual(expect.objectContaining({ hanzi: '真厉害！', lessons: [2] }));
+    expect(examples.map(example => example.id)).toEqual(word.examplePhraseIds);
     expect(examples.some(example => example.hanzi === '这张照片真漂亮！' && example.lessons.includes(3))).toBe(true);
     expect(examples[0].pinyin).toBeTruthy();
     expect(new Set(examples.map(example => example.id)).size).toBe(examples.length);
   });
-  it('solo ofrece relaciones léxicas positivas sin huecos ni ejercicios abiertos', () => {
+  it('usa relaciones pedagógicas publicadas sin contraejemplos, huecos o duplicados', () => {
     for (const word of accumulatedVocabulary) for (const example of examplesForWord(word)) {
       const phrase = corpus.phrases.find(phrase => phrase.id === example.id)!;
-      expect(phrase.vocabIds).toContain(word.id);
-      expect(phrase.kinds.some(kind => ['counterexample', 'distractor', 'exercise_premise', 'true_false_premise', 'grammar_transformation', 'dialogue_exercise', 'writing_prompt', 'interview_prompt'].includes(kind))).toBe(false);
+      expect(phrase.exampleVocabIds).toContain(word.id);
+      expect(word.examplePhraseIds).toContain(phrase.id);
+      expect(phrase.kinds).not.toContain('counterexample');
       expect(example.hanzi).not.toMatch(/[_＿□…]|\.{3}|[（(]\s*[)）]/u);
     }
     for (const hanzi of ['你', '我', '好']) {
       const examples = examplesForWord(vocabularyCatalog.find(word => word.hanzi === hanzi)!);
       expect(new Set(examples.flatMap(example => example.lessons)).size).toBeGreaterThan(1);
     }
+  });
+  it('猫 recorre sus tres ejemplos completos sin modificar vínculos léxicos', () => {
+    const cat = vocabularyCatalog.find(word => word.hanzi === '猫')!;
+    const before = JSON.stringify(corpus.phrases.map(phrase => phrase.vocabIds));
+    const examples = examplesForWord(cat);
+    expect(examples.map(example => example.hanzi)).toEqual(['一只猫', '你有小猫吗？', '我有两只小猫，他们很可爱。']);
+    expect(examples.every(example => example.pinyin && example.spanish)).toBe(true);
+    expect(examples.map(example => example.id)).toEqual(publicExamplesForVocabulary(cat.id).map(example => example.id));
+    expect(corpus.phrases.find(phrase => phrase.id === examples[1].id)!.vocabIds).not.toContain(cat.id);
+    expect(JSON.stringify(corpus.phrases.map(phrase => phrase.vocabIds))).toBe(before);
+    expect(getVocabularyLesson(cat)).toBe(3);
+  });
+  it('todas las fichas consumen apoyo público completo y ejemplos únicos', () => {
+    expect(vocabularyCatalog).toHaveLength(337);
+    expect(corpus.phrases).toHaveLength(635);
+    for (const word of vocabularyCatalog) {
+      expect(word.pinyin && word.spanish).toBeTruthy();
+      const examples = examplesForWord(word);
+      expect(new Set(examples.map(example => example.id)).size).toBe(examples.length);
+      expect(examples.every(example => example.pinyin && example.spanish)).toBe(true);
+    }
+    expect(['l1', 'l2', 'l3', 'l1-l2-l3'].map(scope => getVocabularySet(scope as 'l1').length)).toEqual([85, 126, 116, 327]);
   });
   it('retira tarjetas futuras fuera de la partición sin borrar historial ni progreso', () => {
     const ni = vocabularyCatalog.find(word => word.hanzi === '你')!;

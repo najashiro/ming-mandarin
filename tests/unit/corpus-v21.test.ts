@@ -54,12 +54,13 @@ describe('corpus v2.1 public projection', () => {
     vi.doMock('@/data/mandarin-audio-available.json', () => ({ default: { files: [] } }));
     try {
       const unavailable = await import('@/lib/mandarin-audio');
+      expect(unavailable.audioForMandarinText('宠物')).toBeUndefined();
       expect(unavailable.audioForMandarinText('我叫马大为。请问，你叫什么名字？')).toBeUndefined();
     } finally {
       vi.doUnmock('@/data/mandarin-audio-available.json');
       vi.resetModules();
     }
-    expect(audioForMandarinText('宠物')).toBeUndefined();
+    expect(audioForMandarinText('宠物')).toMatch(/^\/audio\/mandarin\/.+\.mp3$/);
     expect(audioForMandarinText('我叫马大为。请问，你叫什么名字？')).toMatch(/^\/audio\/mandarin\/.+\.mp3$/);
     expect(audioForMandarinText('你好！')).toMatch(/^\/audio\/mandarin\/.+\.mp3$/);
   });

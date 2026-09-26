@@ -1,78 +1,78 @@
 {
-  "corpusFingerprint": "cbe3c172ccebe0cd4603a1bd37bb59ee044e37c53825cbf43878256fe946f4e8",
-  "publishedVocabulary": 217,
+  "corpusFingerprint": "9605e460cdd9288df1a183575831280d3aaf919e3d60d64b7f32c4057b9f5c62",
+  "publishedVocabulary": 337,
   "sourceVocabulary": 346,
-  "note": "129 registros fuente carecen de pinyin o español documentado; no se publican como tarjetas completas. Las clasificaciones pendientes se conservan en este informe, fuera de las tarjetas.",
+  "note": "9 fragmentos léxicos mal segmentados permanecen fuera de la exportación pública. Las palabras publicadas consumen pinyin y español resueltos; la elegibilidad curricular y las clasificaciones pendientes se conservan por separado.",
   "counts": {
     "l1": {
       "new": 30,
       "supplementary": 7,
-      "context": 62,
+      "context": 81,
       "reviewBasic": 30,
-      "reviewHard": 64,
-      "pendingClassification": 1,
-      "withDocumentedExample": 49,
-      "withCompleteExample": 22,
+      "reviewHard": 85,
+      "pendingClassification": 13,
+      "withDocumentedExample": 71,
+      "withCompleteExample": 71,
       "withImage": 0,
-      "withAudio": 56,
-      "withAllHanziLinks": 51
+      "withAudio": 66,
+      "withAllHanziLinks": 59
     },
     "l2": {
       "new": 43,
       "supplementary": 17,
-      "context": 101,
-      "reviewBasic": 43,
-      "reviewHard": 127,
-      "pendingClassification": 6,
-      "withDocumentedExample": 93,
-      "withCompleteExample": 20,
+      "context": 131,
+      "reviewBasic": 49,
+      "reviewHard": 168,
+      "pendingClassification": 8,
+      "withDocumentedExample": 126,
+      "withCompleteExample": 126,
       "withImage": 10,
-      "withAudio": 106,
-      "withAllHanziLinks": 108
+      "withAudio": 116,
+      "withAllHanziLinks": 128
     },
     "l3": {
       "new": 44,
       "supplementary": 18,
-      "context": 129,
-      "reviewBasic": 49,
-      "reviewHard": 151,
-      "pendingClassification": 1,
-      "withDocumentedExample": 122,
-      "withCompleteExample": 11,
+      "context": 188,
+      "reviewBasic": 51,
+      "reviewHard": 216,
+      "pendingClassification": 2,
+      "withDocumentedExample": 185,
+      "withCompleteExample": 185,
       "withImage": 13,
-      "withAudio": 120,
-      "withAllHanziLinks": 128
+      "withAudio": 145,
+      "withAllHanziLinks": 170
     },
     "l1-l2": {
       "new": 73,
       "supplementary": 24,
-      "context": 126,
-      "reviewBasic": 73,
-      "reviewHard": 152,
-      "pendingClassification": 7,
-      "withDocumentedExample": 110,
-      "withCompleteExample": 35,
+      "context": 172,
+      "reviewBasic": 79,
+      "reviewHard": 211,
+      "pendingClassification": 21,
+      "withDocumentedExample": 159,
+      "withCompleteExample": 159,
       "withImage": 10,
-      "withAudio": 123,
-      "withAllHanziLinks": 126
+      "withAudio": 141,
+      "withAllHanziLinks": 153
     },
     "l1-l2-l3": {
       "new": 117,
       "supplementary": 42,
-      "context": 171,
-      "reviewBasic": 122,
-      "reviewHard": 213,
-      "pendingClassification": 4,
-      "withDocumentedExample": 158,
-      "withCompleteExample": 39,
+      "context": 266,
+      "reviewBasic": 130,
+      "reviewHard": 327,
+      "pendingClassification": 10,
+      "withDocumentedExample": 255,
+      "withCompleteExample": 255,
       "withImage": 14,
-      "withAudio": 159,
-      "withAllHanziLinks": 171
+      "withAudio": 196,
+      "withAllHanziLinks": 232
     }
   },
   "exclusiveCatalog": {
     "l1": {
-      "total": 64,
+      "total": 85,
       "basic": 30,
       "ids": [
         "v-你",
@@ -134,16 +134,37 @@
         "v-干啥",
         "v-马丽",
         "v-哪儿",
+        "v-大学",
+        "v-马",
+        "v-去",
         "v-你好",
+        "v-您好",
+        "v-你们好",
         "v-早上好",
         "v-上午好",
         "v-下午好",
-        "v-晚上好"
+        "v-晚上好",
+        "v-晚安",
+        "v-宋",
+        "v-力波",
+        "v-大为",
+        "v-可以",
+        "v-死",
+        "v-了",
+        "v-手",
+        "v-王",
+        "v-陆",
+        "v-这儿",
+        "v-成龙",
+        "v-巩俐",
+        "v-姚明",
+        "v-马云",
+        "v-林"
       ]
     },
     "l2": {
-      "total": 88,
-      "basic": 32,
+      "total": 126,
+      "basic": 38,
       "ids": [
         "v-早上",
         "v-早",
@@ -213,6 +234,8 @@
         "v-水",
         "v-早饭",
         "v-老",
+        "v-老人",
+        "v-老朋友",
         "v-书",
         "v-秘鲁",
         "v-语言",
@@ -223,21 +246,57 @@
         "v-日语",
         "v-西班牙语",
         "v-韩语",
+        "v-墨西哥",
+        "v-意大利语",
+        "v-做饭",
+        "v-画画",
         "v-会",
+        "v-一点儿",
+        "v-厉害",
         "v-奶奶",
         "v-外婆",
         "v-外语",
         "v-外国",
         "v-外国人",
+        "v-面条",
+        "v-炸猪肉面包",
+        "v-肉夹馍",
+        "v-爱",
         "v-汉堡",
+        "v-披萨",
+        "v-热狗",
+        "v-寿司",
         "v-甜品",
+        "v-蛋挞",
+        "v-筷子",
+        "v-用",
+        "v-印加可乐",
+        "v-果汁",
         "v-饮料",
-        "v-苹果"
+        "v-苹果",
+        "v-炒饭",
+        "v-阿根廷",
+        "v-大卫",
+        "v-俄罗斯人",
+        "v-西安",
+        "v-广州",
+        "v-北京烤鸭",
+        "v-刚到",
+        "v-这是",
+        "v-那是",
+        "v-您贵姓",
+        "v-哪国人",
+        "v-小云",
+        "v-说",
+        "v-那儿",
+        "v-梅西",
+        "v-北京人",
+        "v-美国人"
       ]
     },
     "l3": {
-      "total": 61,
-      "basic": 34,
+      "total": 116,
+      "basic": 36,
       "ids": [
         "v-家",
         "v-几",
@@ -282,14 +341,29 @@
         "v-帅",
         "v-爷爷",
         "v-外公",
+        "v-家人",
         "v-有意思",
+        "v-卡片",
         "v-小狗",
         "v-猫",
         "v-只",
+        "v-可爱",
+        "v-上课",
+        "v-现在",
+        "v-工人",
+        "v-工作日",
         "v-前年",
         "v-去年",
         "v-明年",
         "v-后年",
+        "v-多大",
+        "v-年龄",
+        "v-岁数",
+        "v-地图",
+        "v-儿子",
+        "v-小孩子",
+        "v-昨天",
+        "v-明天",
         "v-英语课",
         "v-钢琴课",
         "v-弹",
@@ -297,14 +371,54 @@
         "v-中午",
         "v-下午",
         "v-约翰",
+        "v-有名",
+        "v-名片",
+        "v-学院",
+        "v-餐厅",
+        "v-男生",
+        "v-系",
+        "v-哪一个",
+        "v-看书",
+        "v-看电影",
+        "v-电影",
+        "v-唱歌",
+        "v-一",
+        "v-三",
+        "v-四",
+        "v-五",
+        "v-六",
+        "v-七",
+        "v-八",
+        "v-九",
+        "v-十",
         "v-可是",
+        "v-张华",
         "v-宠物",
-        "v-车牌号"
+        "v-车牌号",
+        "v-多少",
+        "v-一下",
+        "v-本",
+        "v-酒",
+        "v-孔子学院",
+        "v-二十",
+        "v-小猫",
+        "v-吃饭",
+        "v-李",
+        "v-大家",
+        "v-张王冉",
+        "v-三十",
+        "v-二十五",
+        "v-七十五",
+        "v-上",
+        "v-孩子们",
+        "v-班",
+        "v-玛丽",
+        "v-上午"
       ]
     },
     "l1-l2-l3": {
-      "total": 213,
-      "basic": 122,
+      "total": 327,
+      "basic": 130,
       "ids": [
         "v-你",
         "v-好",
@@ -365,11 +479,32 @@
         "v-干啥",
         "v-马丽",
         "v-哪儿",
+        "v-大学",
+        "v-马",
+        "v-去",
         "v-你好",
+        "v-您好",
+        "v-你们好",
         "v-早上好",
         "v-上午好",
         "v-下午好",
         "v-晚上好",
+        "v-晚安",
+        "v-宋",
+        "v-力波",
+        "v-大为",
+        "v-可以",
+        "v-死",
+        "v-了",
+        "v-手",
+        "v-王",
+        "v-陆",
+        "v-这儿",
+        "v-成龙",
+        "v-巩俐",
+        "v-姚明",
+        "v-马云",
+        "v-林",
         "v-早上",
         "v-早",
         "v-这",
@@ -438,6 +573,8 @@
         "v-水",
         "v-早饭",
         "v-老",
+        "v-老人",
+        "v-老朋友",
         "v-书",
         "v-秘鲁",
         "v-语言",
@@ -448,16 +585,52 @@
         "v-日语",
         "v-西班牙语",
         "v-韩语",
+        "v-墨西哥",
+        "v-意大利语",
+        "v-做饭",
+        "v-画画",
         "v-会",
+        "v-一点儿",
+        "v-厉害",
         "v-奶奶",
         "v-外婆",
         "v-外语",
         "v-外国",
         "v-外国人",
+        "v-面条",
+        "v-炸猪肉面包",
+        "v-肉夹馍",
+        "v-爱",
         "v-汉堡",
+        "v-披萨",
+        "v-热狗",
+        "v-寿司",
         "v-甜品",
+        "v-蛋挞",
+        "v-筷子",
+        "v-用",
+        "v-印加可乐",
+        "v-果汁",
         "v-饮料",
         "v-苹果",
+        "v-炒饭",
+        "v-阿根廷",
+        "v-大卫",
+        "v-俄罗斯人",
+        "v-西安",
+        "v-广州",
+        "v-北京烤鸭",
+        "v-刚到",
+        "v-这是",
+        "v-那是",
+        "v-您贵姓",
+        "v-哪国人",
+        "v-小云",
+        "v-说",
+        "v-那儿",
+        "v-梅西",
+        "v-北京人",
+        "v-美国人",
         "v-家",
         "v-几",
         "v-口",
@@ -501,14 +674,29 @@
         "v-帅",
         "v-爷爷",
         "v-外公",
+        "v-家人",
         "v-有意思",
+        "v-卡片",
         "v-小狗",
         "v-猫",
         "v-只",
+        "v-可爱",
+        "v-上课",
+        "v-现在",
+        "v-工人",
+        "v-工作日",
         "v-前年",
         "v-去年",
         "v-明年",
         "v-后年",
+        "v-多大",
+        "v-年龄",
+        "v-岁数",
+        "v-地图",
+        "v-儿子",
+        "v-小孩子",
+        "v-昨天",
+        "v-明天",
         "v-英语课",
         "v-钢琴课",
         "v-弹",
@@ -516,9 +704,49 @@
         "v-中午",
         "v-下午",
         "v-约翰",
+        "v-有名",
+        "v-名片",
+        "v-学院",
+        "v-餐厅",
+        "v-男生",
+        "v-系",
+        "v-哪一个",
+        "v-看书",
+        "v-看电影",
+        "v-电影",
+        "v-唱歌",
+        "v-一",
+        "v-三",
+        "v-四",
+        "v-五",
+        "v-六",
+        "v-七",
+        "v-八",
+        "v-九",
+        "v-十",
         "v-可是",
+        "v-张华",
         "v-宠物",
-        "v-车牌号"
+        "v-车牌号",
+        "v-多少",
+        "v-一下",
+        "v-本",
+        "v-酒",
+        "v-孔子学院",
+        "v-二十",
+        "v-小猫",
+        "v-吃饭",
+        "v-李",
+        "v-大家",
+        "v-张王冉",
+        "v-三十",
+        "v-二十五",
+        "v-七十五",
+        "v-上",
+        "v-孩子们",
+        "v-班",
+        "v-玛丽",
+        "v-上午"
       ]
     }
   },
@@ -582,11 +810,32 @@
     "v-干啥": 1,
     "v-马丽": 1,
     "v-哪儿": 1,
+    "v-大学": 1,
+    "v-马": 1,
+    "v-去": 1,
     "v-你好": 1,
+    "v-您好": 1,
+    "v-你们好": 1,
     "v-早上好": 1,
     "v-上午好": 1,
     "v-下午好": 1,
     "v-晚上好": 1,
+    "v-晚安": 1,
+    "v-宋": 1,
+    "v-力波": 1,
+    "v-大为": 1,
+    "v-可以": 1,
+    "v-死": 1,
+    "v-了": 1,
+    "v-手": 1,
+    "v-王": 1,
+    "v-陆": 1,
+    "v-这儿": 1,
+    "v-成龙": 1,
+    "v-巩俐": 1,
+    "v-姚明": 1,
+    "v-马云": 1,
+    "v-林": 1,
     "v-早上": 2,
     "v-早": 2,
     "v-这": 2,
@@ -655,6 +904,8 @@
     "v-水": 2,
     "v-早饭": 2,
     "v-老": 2,
+    "v-老人": 2,
+    "v-老朋友": 2,
     "v-书": 2,
     "v-秘鲁": 2,
     "v-语言": 2,
@@ -665,16 +916,52 @@
     "v-日语": 2,
     "v-西班牙语": 2,
     "v-韩语": 2,
+    "v-墨西哥": 2,
+    "v-意大利语": 2,
+    "v-做饭": 2,
+    "v-画画": 2,
     "v-会": 2,
+    "v-一点儿": 2,
+    "v-厉害": 2,
     "v-奶奶": 2,
     "v-外婆": 2,
     "v-外语": 2,
     "v-外国": 2,
     "v-外国人": 2,
+    "v-面条": 2,
+    "v-炸猪肉面包": 2,
+    "v-肉夹馍": 2,
+    "v-爱": 2,
     "v-汉堡": 2,
+    "v-披萨": 2,
+    "v-热狗": 2,
+    "v-寿司": 2,
     "v-甜品": 2,
+    "v-蛋挞": 2,
+    "v-筷子": 2,
+    "v-用": 2,
+    "v-印加可乐": 2,
+    "v-果汁": 2,
     "v-饮料": 2,
     "v-苹果": 2,
+    "v-炒饭": 2,
+    "v-阿根廷": 2,
+    "v-大卫": 2,
+    "v-俄罗斯人": 2,
+    "v-西安": 2,
+    "v-广州": 2,
+    "v-北京烤鸭": 2,
+    "v-刚到": 2,
+    "v-这是": 2,
+    "v-那是": 2,
+    "v-您贵姓": 2,
+    "v-哪国人": 2,
+    "v-小云": 2,
+    "v-说": 2,
+    "v-那儿": 2,
+    "v-梅西": 2,
+    "v-北京人": 2,
+    "v-美国人": 2,
     "v-家": 3,
     "v-几": 3,
     "v-口": 3,
@@ -718,14 +1005,29 @@
     "v-帅": 3,
     "v-爷爷": 3,
     "v-外公": 3,
+    "v-家人": 3,
     "v-有意思": 3,
+    "v-卡片": 3,
     "v-小狗": 3,
     "v-猫": 3,
     "v-只": 3,
+    "v-可爱": 3,
+    "v-上课": 3,
+    "v-现在": 3,
+    "v-工人": 3,
+    "v-工作日": 3,
     "v-前年": 3,
     "v-去年": 3,
     "v-明年": 3,
     "v-后年": 3,
+    "v-多大": 3,
+    "v-年龄": 3,
+    "v-岁数": 3,
+    "v-地图": 3,
+    "v-儿子": 3,
+    "v-小孩子": 3,
+    "v-昨天": 3,
+    "v-明天": 3,
     "v-英语课": 3,
     "v-钢琴课": 3,
     "v-弹": 3,
@@ -733,9 +1035,49 @@
     "v-中午": 3,
     "v-下午": 3,
     "v-约翰": 3,
+    "v-有名": 3,
+    "v-名片": 3,
+    "v-学院": 3,
+    "v-餐厅": 3,
+    "v-男生": 3,
+    "v-系": 3,
+    "v-哪一个": 3,
+    "v-看书": 3,
+    "v-看电影": 3,
+    "v-电影": 3,
+    "v-唱歌": 3,
+    "v-一": 3,
+    "v-三": 3,
+    "v-四": 3,
+    "v-五": 3,
+    "v-六": 3,
+    "v-七": 3,
+    "v-八": 3,
+    "v-九": 3,
+    "v-十": 3,
     "v-可是": 3,
+    "v-张华": 3,
     "v-宠物": 3,
-    "v-车牌号": 3
+    "v-车牌号": 3,
+    "v-多少": 3,
+    "v-一下": 3,
+    "v-本": 3,
+    "v-酒": 3,
+    "v-孔子学院": 3,
+    "v-二十": 3,
+    "v-小猫": 3,
+    "v-吃饭": 3,
+    "v-李": 3,
+    "v-大家": 3,
+    "v-张王冉": 3,
+    "v-三十": 3,
+    "v-二十五": 3,
+    "v-七十五": 3,
+    "v-上": 3,
+    "v-孩子们": 3,
+    "v-班": 3,
+    "v-玛丽": 3,
+    "v-上午": 3
   },
   "pendingClassification": [
     {
@@ -743,6 +1085,20 @@
       "hanzi": "贵",
       "roles": [
         "preview_next_lesson"
+      ]
+    },
+    {
+      "id": "v-普通话",
+      "hanzi": "普通话",
+      "roles": [
+        "cultural_context"
+      ]
+    },
+    {
+      "id": "v-方言",
+      "hanzi": "方言",
+      "roles": [
+        "cultural_context"
       ]
     },
     {
@@ -764,6 +1120,34 @@
       "hanzi": "汉语课",
       "roles": [
         "compound_example"
+      ]
+    },
+    {
+      "id": "v-找",
+      "hanzi": "找",
+      "roles": [
+        "visual_discrimination"
+      ]
+    },
+    {
+      "id": "v-二",
+      "hanzi": "二",
+      "roles": [
+        "numeral_support"
+      ]
+    },
+    {
+      "id": "v-百",
+      "hanzi": "百",
+      "roles": [
+        "numeral_support"
+      ]
+    },
+    {
+      "id": "v-千",
+      "hanzi": "千",
+      "roles": [
+        "numeral_support"
       ]
     }
   ],
@@ -817,23 +1201,82 @@
     "书",
     "言",
     "文",
+    "意",
+    "画",
+    "厉",
+    "害",
+    "普",
+    "通",
+    "话",
+    "方",
+    "炸",
+    "猪",
+    "肉",
+    "夹",
+    "馍",
+    "披",
+    "热",
+    "寿",
+    "司",
     "甜",
     "品",
+    "蛋",
+    "挞",
+    "筷",
+    "用",
     "苹",
-    "意",
     "思",
+    "卡",
+    "现",
     "前",
     "明",
     "后",
+    "多",
+    "龄",
+    "数",
+    "地",
+    "图",
+    "昨",
     "约",
     "翰",
+    "炒",
+    "阿",
+    "根",
+    "廷",
+    "院",
+    "系",
+    "电",
+    "影",
+    "唱",
+    "歌",
     "车",
     "牌",
-    "号"
+    "号",
+    "少",
+    "卫",
+    "广",
+    "州",
+    "烤",
+    "鸭",
+    "以",
+    "死",
+    "了",
+    "手",
+    "梅",
+    "酒",
+    "孔",
+    "李",
+    "冉",
+    "成",
+    "龙",
+    "巩",
+    "俐",
+    "姚",
+    "玛"
   ],
   "audio": {
-    "available_unverified_decode": 213,
-    "not_requested": 168
+    "available_unverified_decode": 273,
+    "not_requested": 642
   },
   "images": {
     "pilot": 16,
@@ -998,6 +1441,8 @@
       "v-哪儿",
       "v-早饭",
       "v-老",
+      "v-老人",
+      "v-老朋友",
       "v-书",
       "v-秘鲁",
       "v-语言",
@@ -1008,7 +1453,15 @@
       "v-日语",
       "v-西班牙语",
       "v-韩语",
+      "v-墨西哥",
+      "v-意大利语",
+      "v-做饭",
+      "v-画画",
       "v-会",
+      "v-一点儿",
+      "v-厉害",
+      "v-普通话",
+      "v-方言",
       "v-爷爷",
       "v-奶奶",
       "v-外公",
@@ -1018,17 +1471,46 @@
       "v-外语",
       "v-外国",
       "v-外国人",
+      "v-面条",
+      "v-炸猪肉面包",
+      "v-肉夹馍",
+      "v-爱",
       "v-汉堡",
+      "v-披萨",
+      "v-热狗",
+      "v-寿司",
       "v-甜品",
+      "v-蛋挞",
+      "v-筷子",
+      "v-用",
+      "v-印加可乐",
+      "v-果汁",
       "v-饮料",
       "v-苹果",
+      "v-家人",
       "v-有意思",
+      "v-卡片",
       "v-小狗",
       "v-只",
+      "v-可爱",
+      "v-大学",
+      "v-上课",
+      "v-现在",
+      "v-工人",
+      "v-工作日",
+      "v-马",
       "v-前年",
       "v-去年",
       "v-明年",
       "v-后年",
+      "v-多大",
+      "v-年龄",
+      "v-岁数",
+      "v-地图",
+      "v-儿子",
+      "v-小孩子",
+      "v-昨天",
+      "v-明天",
       "v-英语课",
       "v-汉语课",
       "v-钢琴课",
@@ -1037,21 +1519,182 @@
       "v-中午",
       "v-下午",
       "v-约翰",
+      "v-炒饭",
+      "v-阿根廷",
+      "v-有名",
+      "v-名片",
+      "v-学院",
+      "v-餐厅",
+      "v-男生",
+      "v-系",
+      "v-哪一个",
+      "v-去",
+      "v-找",
+      "v-看书",
+      "v-看电影",
+      "v-电影",
+      "v-唱歌",
+      "v-一",
+      "v-二",
+      "v-三",
+      "v-四",
+      "v-五",
+      "v-六",
+      "v-七",
+      "v-八",
+      "v-九",
+      "v-十",
+      "v-百",
+      "v-千",
       "v-可是",
+      "v-张华",
       "v-宠物",
       "v-车牌号",
+      "v-多少",
+      "v-大卫",
+      "v-俄罗斯人",
+      "v-西安",
+      "v-广州",
+      "v-北京烤鸭",
       "v-你好",
+      "v-您好",
+      "v-你们好",
       "v-早上好",
       "v-上午好",
       "v-下午好",
-      "v-晚上好"
+      "v-晚上好",
+      "v-晚安",
+      "v-刚到",
+      "v-这是",
+      "v-那是",
+      "v-您贵姓",
+      "v-哪国人",
+      "v-宋",
+      "v-力波",
+      "v-大为",
+      "v-小云",
+      "v-可以",
+      "v-死",
+      "v-了",
+      "v-手",
+      "v-王",
+      "v-陆",
+      "v-这儿",
+      "v-说",
+      "v-那儿",
+      "v-梅西",
+      "v-一下",
+      "v-本",
+      "v-酒",
+      "v-孔子学院",
+      "v-二十",
+      "v-小猫",
+      "v-吃饭",
+      "v-李",
+      "v-大家",
+      "v-张王冉",
+      "v-三十",
+      "v-二十五",
+      "v-七十五",
+      "v-上",
+      "v-孩子们",
+      "v-成龙",
+      "v-巩俐",
+      "v-姚明",
+      "v-马云",
+      "v-林",
+      "v-班",
+      "v-玛丽",
+      "v-上午",
+      "v-北京人",
+      "v-美国人"
     ]
   },
   "audioMissing": [
     {
+      "input": "你看！",
+      "entryIds": [
+        "PH-26e204b34f9170b0"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我问你。",
+      "entryIds": [
+        "PH-1d9adfffb6a797a3"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你累吗？",
+      "entryIds": [
+        "PH-9c6485573b45c21d"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你好吗？",
+      "entryIds": [
+        "PH-be10ea8c4e5d464c"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我爱你。",
+      "entryIds": [
+        "PH-c0ad5411b19cfcba"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你是谁？",
+      "entryIds": [
+        "PH-daa423a1ea94e73a"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你几岁？",
+      "entryIds": [
+        "PH-e14e73f3df1ad125"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "你要什么？",
       "entryIds": [
         "PH-0b19aa18edd43b1c"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你吃什么？",
+      "entryIds": [
+        "PH-39beccee3bf7158b"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你认识谁？",
+      "entryIds": [
+        "PH-40527056c73c4385"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你叫什么？",
+      "entryIds": [
+        "PH-5339b933265e5079"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1073,57 +1716,25 @@
       "status": "not_requested"
     },
     {
-      "input": "你要咖啡吗？",
+      "input": "我喜欢你。",
       "entryIds": [
-        "PH-8dca55430d3d18ba"
+        "PH-b6522419f93caa17"
       ],
       "kind": "sentence",
       "status": "not_requested"
     },
     {
-      "input": "你做什么工作？",
+      "input": "你喝什么？",
       "entryIds": [
-        "PH-a91927cd7cc686fb"
+        "PH-f4c7c7da14e6279e"
       ],
       "kind": "sentence",
       "status": "not_requested"
     },
     {
-      "input": "我不太忙，你呢？",
+      "input": "你有小猫吗？",
       "entryIds": [
-        "PH-de301d7a1c0921cd"
-      ],
-      "kind": "sentence",
-      "status": "not_requested"
-    },
-    {
-      "input": "你会说什么语言？",
-      "entryIds": [
-        "PH-ec84f23f710576b9"
-      ],
-      "kind": "sentence",
-      "status": "not_requested"
-    },
-    {
-      "input": "认识你，我很高兴。",
-      "entryIds": [
-        "PH-bc51409baf560fe2"
-      ],
-      "kind": "sentence",
-      "status": "not_requested"
-    },
-    {
-      "input": "我会说英语和西班牙语。你呢？",
-      "entryIds": [
-        "PH-9fdaa233b06a6a21"
-      ],
-      "kind": "sentence",
-      "status": "not_requested"
-    },
-    {
-      "input": "你几岁？",
-      "entryIds": [
-        "PH-e14e73f3df1ad125"
+        "PH-0723abbd5ad5de02"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1145,6 +1756,14 @@
       "status": "not_requested"
     },
     {
+      "input": "你要喝什么？",
+      "entryIds": [
+        "PH-3225dd8185d6a53c"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "你是老师吗？",
       "entryIds": [
         "PH-35877ee19bf39065"
@@ -1161,9 +1780,57 @@
       "status": "not_requested"
     },
     {
+      "input": "你喜欢什么？",
+      "entryIds": [
+        "PH-4bfca1540d0cb6c0"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你有哥哥吗？",
+      "entryIds": [
+        "PH-5e670a806c2eabf2"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "你今年几岁？",
       "entryIds": [
         "PH-68b22874368c65ef"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你要喝茶吗？",
+      "entryIds": [
+        "PH-88bf59f5a2364f7a"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你不是老师。",
+      "entryIds": [
+        "PH-8a5bb0ee133ef19a"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你在做什么？",
+      "entryIds": [
+        "PH-8c56926f73e19d23"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你要咖啡吗？",
+      "entryIds": [
+        "PH-8dca55430d3d18ba"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1177,9 +1844,49 @@
       "status": "not_requested"
     },
     {
+      "input": "我不认识你。",
+      "entryIds": [
+        "PH-ef3c4eca368a59e4"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "那是你外婆吗？",
+      "entryIds": [
+        "PH-04b878abc99f9a82"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "很高兴认识你！",
+      "entryIds": [
+        "PH-06160dede7f14616"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "你会弹钢琴吗？",
       "entryIds": [
         "PH-078b70bbe3299e48"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你朋友怎么样？",
+      "entryIds": [
+        "PH-1143e350dd88e415"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你有几张照片？",
+      "entryIds": [
+        "PH-16f01763eb850a95"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1193,9 +1900,113 @@
       "status": "not_requested"
     },
     {
+      "input": "你喜欢做什么？",
+      "entryIds": [
+        "PH-22095c62ffcb923d"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你刚认识她吗？",
+      "entryIds": [
+        "PH-4d88449c9da57cb3"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你吃几个包子？",
+      "entryIds": [
+        "PH-4f89a179a8951c5f"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "今天你有课吗？",
+      "entryIds": [
+        "PH-5ddf53808cc05900"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你是上海人吗？",
+      "entryIds": [
+        "PH-647ba816914563ff"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你叫马大为吗？",
+      "entryIds": [
+        "PH-6afd9bf65f7cafe0"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你女儿真漂亮！",
+      "entryIds": [
+        "PH-83d03a45dceba35b"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你做什么工作？",
+      "entryIds": [
+        "PH-a91927cd7cc686fb"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你有几个朋友？",
+      "entryIds": [
+        "PH-c534d506b79b2123"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我很忙。你呢？",
+      "entryIds": [
+        "PH-d625290653cbdd60"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我不忙，你呢？",
+      "entryIds": [
+        "PH-dbbdb6d4df5f5cc8"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "那是你朋友吗？",
       "entryIds": [
         "PH-ddd87811dcdf1cf2"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我不会，你呢？",
+      "entryIds": [
+        "PH-ea35121f9a613eee"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你的工作是什么？",
+      "entryIds": [
+        "PH-1219997dab866dea"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1209,6 +2020,38 @@
       "status": "not_requested"
     },
     {
+      "input": "这是你男朋友吗？",
+      "entryIds": [
+        "PH-17cbad2979fcb490"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "她是你好朋友吗？",
+      "entryIds": [
+        "PH-3f0173814eb871be"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你去哪一个餐厅？",
+      "entryIds": [
+        "PH-5e3e7824ce6e4ec2"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你也是秘鲁人吗？",
+      "entryIds": [
+        "PH-67342172325bf451"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "我很高兴认识你。",
       "entryIds": [
         "PH-676ccb0a0e5ac008"
@@ -1217,9 +2060,73 @@
       "status": "not_requested"
     },
     {
+      "input": "你要哪一张名片？",
+      "entryIds": [
+        "PH-6ec6a1461d1d711e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你有几个好朋友？",
+      "entryIds": [
+        "PH-7f6eb9fc688a2770"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "你今年多大岁数？",
       "entryIds": [
         "PH-9fa7bc5fbd3e3980"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你要哪两张照片？",
+      "entryIds": [
+        "PH-bbcd86755bace6b0"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你要哪一张照片？",
+      "entryIds": [
+        "PH-bf6c6a7bf4f6fd08"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你认识几个老师？",
+      "entryIds": [
+        "PH-d7f7ba6449bf50b0"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我不太忙，你呢？",
+      "entryIds": [
+        "PH-de301d7a1c0921cd"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我是医生，你呢？",
+      "entryIds": [
+        "PH-e0cb377e489a7036"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你会说什么语言？",
+      "entryIds": [
+        "PH-ec84f23f710576b9"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1249,9 +2156,73 @@
       "status": "not_requested"
     },
     {
+      "input": "我叫Ana，你呢？",
+      "entryIds": [
+        "PH-86cf02ee00d24bda"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他也很好。你忙吗？",
+      "entryIds": [
+        "PH-87fdfa07f3da8137"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你有贝贝的照片吗？",
+      "entryIds": [
+        "PH-9d6f09a5319ce0d9"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你明天晚上有课吗？",
+      "entryIds": [
+        "PH-ba25f077bf6487c0"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "认识你，我很高兴。",
+      "entryIds": [
+        "PH-bc51409baf560fe2"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "你太太做什么工作？",
       "entryIds": [
         "PH-f5e8fe751cfa6748"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你奶奶也是医生吗？",
+      "entryIds": [
+        "PH-fac6d0e3d77678f7"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "请问，你是中国人吗？",
+      "entryIds": [
+        "PH-0f86ec6a4240657a"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我喝咖啡，你要什么？",
+      "entryIds": [
+        "PH-507c7ae0fa2dd05d"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1265,9 +2236,25 @@
       "status": "not_requested"
     },
     {
+      "input": "看那儿！你老师在那儿！",
+      "entryIds": [
+        "PH-1af153365ecc8887"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "我也很好。你是哪国人？",
       "entryIds": [
         "PH-69a24d57a7e9d58f"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我也不忙。你要喝什么？",
+      "entryIds": [
+        "PH-6f8f71ee3d2df945"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1281,6 +2268,14 @@
       "status": "not_requested"
     },
     {
+      "input": "他们都很好，你男朋友呢？",
+      "entryIds": [
+        "PH-8033e65370cf5ecc"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "我叫宋华。认识你很高兴。",
       "entryIds": [
         "PH-a965d860bc13904b"
@@ -1289,9 +2284,89 @@
       "status": "not_requested"
     },
     {
+      "input": "我很好。你爸爸妈妈好吗？",
+      "entryIds": [
+        "PH-b12d355bf3c2ca2e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你说一下，你家有几口人？",
+      "entryIds": [
+        "PH-ba08283d5251e8f6"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你叫什么名字？你是哪国人？",
+      "entryIds": [
+        "PH-8518650d0b4469a7"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "我是中国人。你会说什么语言？",
       "entryIds": [
         "PH-10d754ac9c07b1a5"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你爸爸和你妈妈都是北京人吗？",
+      "entryIds": [
+        "PH-19de9d486f9805bc"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你喜欢吃什么？你喜欢喝什么？",
+      "entryIds": [
+        "PH-2fabc60e11427249"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我会说英语和西班牙语。你呢？",
+      "entryIds": [
+        "PH-9fdaa233b06a6a21"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你好，José，你做什么工作？",
+      "entryIds": [
+        "PH-c4b9eaf55f0d19c6"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你看，这是我爸爸，那是我妈妈。",
+      "entryIds": [
+        "PH-c6bb87cf1004ddc9"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你好，你是陈老师吗？我是林娜。",
+      "entryIds": [
+        "PH-d1a030e4aca36df2"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你做什么工作？你喜欢做什么工作？",
+      "entryIds": [
+        "PH-50659a7e25f15fe5"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1313,9 +2388,57 @@
       "status": "not_requested"
     },
     {
+      "input": "你好！我叫林娜。请问，你是哪国人？",
+      "entryIds": [
+        "PH-55fea3f7d13de054"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你看，这是我女儿的照片，她今年八岁。",
+      "entryIds": [
+        "PH-ba4a3872e19364fb"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我叫马大为，我是美国人。你也是美国人吗？",
+      "entryIds": [
+        "PH-0a4a0521f95b69ac"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "真好",
+      "entryIds": [
+        "PH-38cb5a5c806853d8"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "我很好。",
       "entryIds": [
         "PH-0e81c06652f02fff"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他很好。",
+      "entryIds": [
+        "PH-aa94cc5a58cda010"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "老师好！",
+      "entryIds": [
+        "PH-ce204bfb9a904222"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1329,9 +2452,25 @@
       "status": "not_requested"
     },
     {
-      "input": "那是我好朋友。",
+      "input": "大为也很好。",
       "entryIds": [
-        "PH-b4e54d7c23aaf1d0"
+        "PH-3ba9166a1621e895"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "马大为好吗？",
+      "entryIds": [
+        "PH-5894116a646eaa09"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我最近很好。",
+      "entryIds": [
+        "PH-d422e738a385e395"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1345,9 +2484,81 @@
       "status": "not_requested"
     },
     {
+      "input": "早上好，大为！",
+      "entryIds": [
+        "PH-39bdf355458d489a"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "王老师太好了！",
+      "entryIds": [
+        "PH-661e71f6c42f8a0d"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这个孩子很好。",
+      "entryIds": [
+        "PH-6c75dd3c7c487ce0"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "那是我好朋友。",
+      "entryIds": [
+        "PH-b4e54d7c23aaf1d0"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "早上好，陈老师！",
+      "entryIds": [
+        "PH-0a4406fdd2ea73c9"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我有两个好老师。",
+      "entryIds": [
+        "PH-681f699728c0f4ce"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "我有一个好朋友。",
       "entryIds": [
         "PH-fb4589c8ba855a7f"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他有三个很好的朋友。",
+      "entryIds": [
+        "PH-b7ed43f5106e0062"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "丁力波和马大为都很好。",
+      "entryIds": [
+        "PH-bd1b39ebaa837322"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "王老师是一个很好的老师。",
+      "entryIds": [
+        "PH-01f2cd90002411b4"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1369,9 +2580,129 @@
       "status": "not_requested"
     },
     {
+      "input": "大为很好，丁力波很忙，林娜不太忙，她也很好。",
+      "entryIds": [
+        "PH-4089b2b12c3df13d"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "大家好，我叫张王冉，我是中国人，我是汉语老师，我在秘鲁工作，我很喜欢我的工作。",
+      "entryIds": [
+        "PH-5e7ef40485ce204a"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我妈妈",
+      "entryIds": [
+        "PH-5718924a5c3d7147"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我会。",
+      "entryIds": [
+        "PH-6d95e5a7bece002c"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我18岁",
+      "entryIds": [
+        "PH-0d6b47c02734f44a"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我不忙。",
+      "entryIds": [
+        "PH-0f1fe99c42367990"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我的工作",
+      "entryIds": [
+        "PH-1107bd0f3e757d67"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我姓王。",
+      "entryIds": [
+        "PH-1218ea1bb844e47e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我也是！",
+      "entryIds": [
+        "PH-4d040c08203c7bed"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我姓林。",
+      "entryIds": [
+        "PH-8778c2ced2739fd8"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我吃面条。",
+      "entryIds": [
+        "PH-02ccebacf56f2764"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这是我家。",
+      "entryIds": [
+        "PH-15dd91d598676096"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我不太累。",
+      "entryIds": [
+        "PH-161826330a81cfda"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我在大学。",
+      "entryIds": [
+        "PH-2c74d0560f5d218b"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "我是老师。",
       "entryIds": [
         "PH-9433697e7809f8e3"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我也很忙。",
+      "entryIds": [
+        "PH-9fcfc5d797f2dd06"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1393,25 +2724,9 @@
       "status": "not_requested"
     },
     {
-      "input": "她是我朋友。",
+      "input": "我是医生。",
       "entryIds": [
-        "PH-132484f21c3b8139"
-      ],
-      "kind": "sentence",
-      "status": "not_requested"
-    },
-    {
-      "input": "我去上英语课。",
-      "entryIds": [
-        "PH-157dc39cc03ae3dc"
-      ],
-      "kind": "sentence",
-      "status": "not_requested"
-    },
-    {
-      "input": "他手大，我手小。",
-      "entryIds": [
-        "PH-8b42c2a6acb9815a"
+        "PH-bc5730b2cd980fc9"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1433,6 +2748,22 @@
       "status": "not_requested"
     },
     {
+      "input": "她是我朋友。",
+      "entryIds": [
+        "PH-132484f21c3b8139"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我是上海人。",
+      "entryIds": [
+        "PH-219304506979f558"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "我会用筷子。",
       "entryIds": [
         "PH-2fcbdbb92079b041"
@@ -1449,9 +2780,49 @@
       "status": "not_requested"
     },
     {
+      "input": "我在学汉语。",
+      "entryIds": [
+        "PH-40c711d184f7cec1"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "我学习英语。",
       "entryIds": [
         "PH-42f20ea8ea35de0c"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这是我朋友。",
+      "entryIds": [
+        "PH-43096e649309e184"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我朋友很忙。",
+      "entryIds": [
+        "PH-4defbc45316db82f"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我叫陆雨平。",
+      "entryIds": [
+        "PH-520c81ad9e8f30ac"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我家在秘鲁。",
+      "entryIds": [
+        "PH-5ea6f6e1b264c1e3"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1465,9 +2836,33 @@
       "status": "not_requested"
     },
     {
+      "input": "我刚认识她。",
+      "entryIds": [
+        "PH-757e42284db04bad"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "我今年十岁。",
       "entryIds": [
         "PH-7d2af040dfe7790f"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这是我老师。",
+      "entryIds": [
+        "PH-a42c2a1e7eca56fb"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我会说中文。",
+      "entryIds": [
+        "PH-b192b8b582cdf503"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1481,9 +2876,81 @@
       "status": "not_requested"
     },
     {
+      "input": "那是我哥哥。",
+      "entryIds": [
+        "PH-dd5271358947e75e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "一张我的照片",
+      "entryIds": [
+        "PH-e5977a9603ee4461"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我是Elsa。",
+      "entryIds": [
+        "PH-00b310c628c20893"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这是我的咖啡。",
+      "entryIds": [
+        "PH-010aaa777ed73839"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "我要一杯咖啡。",
       "entryIds": [
         "PH-0fa46b07401b07ce"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我有一个朋友。",
+      "entryIds": [
+        "PH-1196452af4212b68"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我叫Elsa。",
+      "entryIds": [
+        "PH-1535ec3db7ab0660"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我去上英语课。",
+      "entryIds": [
+        "PH-157dc39cc03ae3dc"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我是加拿大人。",
+      "entryIds": [
+        "PH-18ec02b0579e5b7a"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我也没有工作。",
+      "entryIds": [
+        "PH-19191003dd86430b"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1505,6 +2972,14 @@
       "status": "not_requested"
     },
     {
+      "input": "我也学习汉语。",
+      "entryIds": [
+        "PH-419492ad047da29b"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "我今年三十岁。",
       "entryIds": [
         "PH-5387dfd2cb5f7886"
@@ -1513,9 +2988,137 @@
       "status": "not_requested"
     },
     {
+      "input": "我有一个哥哥。",
+      "entryIds": [
+        "PH-5afa8290e052c6ed"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我有三个朋友。",
+      "entryIds": [
+        "PH-6a4629c0ff5c55ca"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我家有三口人。",
+      "entryIds": [
+        "PH-6fc2fb2edfc09543"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我家有两口人。",
+      "entryIds": [
+        "PH-742deae046d167a8"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "今天我没有课。",
+      "entryIds": [
+        "PH-7a761152975c78c0"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我是大学老师。",
+      "entryIds": [
+        "PH-8a521d1cc6f1f414"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我妈妈是医生。",
+      "entryIds": [
+        "PH-9847e5a3bdfca22b"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我不是上海人。",
+      "entryIds": [
+        "PH-ae25a9896dd5f71c"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我有六张照片。",
+      "entryIds": [
+        "PH-d77ec547e0aea18e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我吃三个包子。",
+      "entryIds": [
+        "PH-df11ddad3d1a2350"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我爱上汉语课！",
+      "entryIds": [
+        "PH-f0819a7411f37ebe"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "贝贝是我的小狗。",
+      "entryIds": [
+        "PH-041ac26107d363d0"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我妈妈是北京人。",
+      "entryIds": [
+        "PH-06a22e1b3f6baecf"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我不忙，你们呢？",
+      "entryIds": [
+        "PH-1e54d174a79a023c"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我喜欢上汉语课！",
+      "entryIds": [
+        "PH-21d39b242e0a921b"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "我朋友是中国人。",
       "entryIds": [
         "PH-23c2c72791905b34"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我现在没有工作。",
+      "entryIds": [
+        "PH-28ab0a1e5f8955c4"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1537,9 +3140,73 @@
       "status": "not_requested"
     },
     {
+      "input": "他不是我男朋友。",
+      "entryIds": [
+        "PH-6e0bdaedaae26d96"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我女儿今年五岁。",
+      "entryIds": [
+        "PH-70838d7149126b58"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "我早上刚到北京。",
       "entryIds": [
         "PH-802e8eea15bda367"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他手大，我手小。",
+      "entryIds": [
+        "PH-8b42c2a6acb9815a"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我很爱我的家人。",
+      "entryIds": [
+        "PH-982b776dc7a6daf2"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我姓林，叫林娜。",
+      "entryIds": [
+        "PH-be9162ef21cc1af8"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我哥哥也要喝水。",
+      "entryIds": [
+        "PH-c1d3a9f1e0acb017"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我认识两个老师。",
+      "entryIds": [
+        "PH-cc4b99a6e8b7ef8e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "今天我有汉语课。",
+      "entryIds": [
+        "PH-f2cde8404b08965f"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1553,9 +3220,65 @@
       "status": "not_requested"
     },
     {
+      "input": "我不认识这个孩子。",
+      "entryIds": [
+        "PH-2b9f690287e6046e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我家一共有五口人。",
+      "entryIds": [
+        "PH-47b4f1fdd5cca7b0"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我姓丁，叫丁力波。",
+      "entryIds": [
+        "PH-574c58b8bc464697"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "我是中国人。再见。",
       "entryIds": [
         "PH-89f20e12f6f7484b"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我没有贝贝的照片。",
+      "entryIds": [
+        "PH-b11f46d37b8c5cd8"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我要咖啡。那是谁？",
+      "entryIds": [
+        "PH-dbaa9df46821936a"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我和林娜都不太忙。",
+      "entryIds": [
+        "PH-eb2497965c79f7a0"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我要咖啡，还要点心。",
+      "entryIds": [
+        "PH-137a8fef84b777e6"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1569,9 +3292,33 @@
       "status": "not_requested"
     },
     {
+      "input": "我爸爸、妈妈都不忙。",
+      "entryIds": [
+        "PH-3ddac6c7e5751279"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我有一只可爱的小狗。",
+      "entryIds": [
+        "PH-4027da68c42bb425"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "我会西班牙语和英语。",
       "entryIds": [
         "PH-45083e149d8f3010"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "今天晚上我学习英语。",
+      "entryIds": [
+        "PH-ce24e7ce32c3c41b"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1593,9 +3340,65 @@
       "status": "not_requested"
     },
     {
+      "input": "我认识一个很帅的男生。",
+      "entryIds": [
+        "PH-94c8416302bdade4"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这是宋华，他是我朋友。",
+      "entryIds": [
+        "PH-a68aa33a9219f6cc"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这是我同学，你们认识吗？",
+      "entryIds": [
+        "PH-1952dcf99ebdfbc7"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我有一个很有意思的朋友。",
+      "entryIds": [
+        "PH-43d85a81bcd516af"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这是马大为，他是我朋友。",
+      "entryIds": [
+        "PH-447128d03c52a316"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "我要两个包子，一杯牛奶。",
       "entryIds": [
         "PH-524e2d7be8ba76be"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "她是我朋友，她是中国人。",
+      "entryIds": [
+        "PH-6a546fd1197b011a"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我爸爸和我妈妈都是老师。",
+      "entryIds": [
+        "PH-95a51c1ab09eb475"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1609,9 +3412,25 @@
       "status": "not_requested"
     },
     {
+      "input": "我学习汉语，还学习英语。",
+      "entryIds": [
+        "PH-ac8419a5c7ef3a53"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "约翰是我的狗，今年两岁。",
       "entryIds": [
         "PH-b0957295d4abc71b"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我爸爸和我妈妈也都很忙。",
+      "entryIds": [
+        "PH-c17f8ece1657ee43"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1625,9 +3444,33 @@
       "status": "not_requested"
     },
     {
+      "input": "我认识马大为，还认识林娜。",
+      "entryIds": [
+        "PH-268d63850b817551"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "我会汉语和一点儿西班牙语。",
       "entryIds": [
         "PH-38e7e65bebc34f6a"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这不是我哥哥，这是我弟弟。",
+      "entryIds": [
+        "PH-43c2abc61d6fe4a1"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我有两只小猫，他们很可爱。",
+      "entryIds": [
+        "PH-4ede4839fc13f6d9"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1641,6 +3484,54 @@
       "status": "not_requested"
     },
     {
+      "input": "我和大为、林娜都学习汉语。",
+      "entryIds": [
+        "PH-6cb0b98e28883cc2"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我很忙，我不喝咖啡，谢谢。",
+      "entryIds": [
+        "PH-857c4954c94a49c4"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我叫丁力波，我是加拿大人。",
+      "entryIds": [
+        "PH-92583108e109bb97"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这是我哥哥，他叫José。",
+      "entryIds": [
+        "PH-989d91002ccad248"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我不是美国人，我是英国人。",
+      "entryIds": [
+        "PH-c79a3af83ba4f458"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我弟弟今年九岁，他很可爱。",
+      "entryIds": [
+        "PH-e7cf790906b8bc0f"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "我有一个姐姐，还有一个妹妹。",
       "entryIds": [
         "PH-007f1261b0953697"
@@ -1649,9 +3540,105 @@
       "status": "not_requested"
     },
     {
+      "input": "我叫张华，这是我们家的照片。",
+      "entryIds": [
+        "PH-0299de26ba71d037"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我不是中国人，我是加拿大人。",
+      "entryIds": [
+        "PH-50a14a4162b1dfc9"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我有一个哥哥，还有两个弟弟。",
+      "entryIds": [
+        "PH-512a031d3cbcb613"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我也喜欢吃饺子，饺子很好吃。",
+      "entryIds": [
+        "PH-66222b4efbda8371"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我有两个姐姐，还有一个哥哥。",
+      "entryIds": [
+        "PH-7c23a9170c497a74"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我认识张老师，还认识王老师。",
+      "entryIds": [
+        "PH-82f3ddb0072f158d"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "今天我有汉语课，还有英语课。",
+      "entryIds": [
+        "PH-b0b39331167a0d1a"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我妈妈是医生，我姐姐是老师。",
+      "entryIds": [
+        "PH-e07e89ca235add34"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我家有三口人，妈妈、爸爸和我。",
+      "entryIds": [
+        "PH-08ebc51b56bee0f7"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "我家有三口人，爸爸、妈妈和我。",
       "entryIds": [
         "PH-e933b4d99ff4bf1e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我妈妈是广州人，她喜欢吃点心。",
+      "entryIds": [
+        "PH-f80015ab4f607e1f"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这是大卫，他是我朋友，刚到上海。",
+      "entryIds": [
+        "PH-3bcc811cfa95b8fb"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我爸爸是西安人，他喜欢吃面条儿。",
+      "entryIds": [
+        "PH-c6c0f7c5d93b5d3b"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1673,9 +3660,57 @@
       "status": "not_requested"
     },
     {
+      "input": "那是林娜，她也是我朋友，她是英国人。",
+      "entryIds": [
+        "PH-9c722672c6320e44"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这是马大为，他是我朋友，他是美国人。",
+      "entryIds": [
+        "PH-a5513207747d4b59"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我们家有四口人，爸爸、妈妈、姐姐和我。",
+      "entryIds": [
+        "PH-93d09012673cc64f"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我爸爸是律师，我妈妈是记者，他们都很忙。",
+      "entryIds": [
+        "PH-9fc15b77ce62ff22"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "我有三个中国朋友，王小云、宋华和陆雨平。",
       "entryIds": [
         "PH-ef23bf3cb038cc39"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我有两张名片，一张是西班牙语，一张是英语。",
+      "entryIds": [
+        "PH-70c12ea926129695"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我家有四口人，我妈妈、我爸爸、我哥哥和我。",
+      "entryIds": [
+        "PH-957c3bba2f455b44"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1689,9 +3724,105 @@
       "status": "not_requested"
     },
     {
+      "input": "我们家有五口人，爸爸、妈妈、姐姐、弟弟和我。",
+      "entryIds": [
+        "PH-9058c8a9a20182e0"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "有，明天我上午有英语课，下午和晚上还有钢琴课。",
+      "entryIds": [
+        "PH-0ee710c5d233937e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我妈妈喜欢看书，我姐姐喜欢看电影，我喜欢唱歌。",
+      "entryIds": [
+        "PH-c6cbb442724ed2ca"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "那是我朋友，她是外语老师，他会说汉语和西班牙语。",
+      "entryIds": [
+        "PH-b0770b4924878746"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这儿有一张我家的照片，我家一共有三口人，我们都是中国人。",
+      "entryIds": [
+        "PH-807325262fffd695"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "我们家一共有五口人，爸爸、妈妈、哥哥和我，还有约翰（John）。",
       "entryIds": [
         "PH-872c9604d392c72b"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他们叫什么名字？",
+      "entryIds": [
+        "PH-70934d79589d0e76"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "她姓王，叫王小云。",
+      "entryIds": [
+        "PH-2eea7ad4347194b2"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他姓陆，叫陆雨平。",
+      "entryIds": [
+        "PH-5bc1a80d067ced5b"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他叫成龙，她叫巩俐。",
+      "entryIds": [
+        "PH-f6129d102125628d"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他叫宋华，他是中国人。",
+      "entryIds": [
+        "PH-418266aaa0acd5ff"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他叫什么名字？他叫马云。",
+      "entryIds": [
+        "PH-0a2e77ea408b74bf"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他叫马大为，他叫丁力波，她叫林娜。",
+      "entryIds": [
+        "PH-57aea0e0318ef10e"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1721,6 +3852,94 @@
       "status": "not_requested"
     },
     {
+      "input": "这是什么？",
+      "entryIds": [
+        "PH-e9554e112a01940a"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "您要吃什么？",
+      "entryIds": [
+        "PH-87dd1db3fad95c1f"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "宋华喜欢吃什么？",
+      "entryIds": [
+        "PH-1e5441714d26f0be"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他们做什么工作？",
+      "entryIds": [
+        "PH-90191511fd8ad4e1"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他们喜欢吃什么？",
+      "entryIds": [
+        "PH-9eb0561ed756ab8b"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "马大为学习什么？",
+      "entryIds": [
+        "PH-a12046409f26fddd"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "陈老师喜欢吃什么？",
+      "entryIds": [
+        "PH-0712880299524499"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "王小云喜欢吃什么？",
+      "entryIds": [
+        "PH-7bf731e634ef80ab"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "王小云的爸爸妈妈做什么工作？",
+      "entryIds": [
+        "PH-23064a424a95c0f5"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你们家有几口人？他们做什么工作？",
+      "entryIds": [
+        "PH-150d43b2635d3ef5"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "马大为的爸爸做什么工作？他妈妈呢？",
+      "entryIds": [
+        "PH-c626118e7e2f4870"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "她姓陆。",
       "entryIds": [
         "PH-d46578fe7fc8ba62"
@@ -1737,9 +3956,73 @@
       "status": "not_requested"
     },
     {
+      "input": "他也姓宋。",
+      "entryIds": [
+        "PH-4133e289d454e28e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他也不姓宋。",
+      "entryIds": [
+        "PH-a3ed3b57056b6fc9"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我们认识他。",
+      "entryIds": [
+        "PH-082acfb9ecba8e31"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "她认识四个老师。",
+      "entryIds": [
+        "PH-14a77f7f3909cc2b"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "很好吃。",
+      "entryIds": [
+        "PH-1100e9e66e610893"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他很忙。",
+      "entryIds": [
+        "PH-176d30a76ade088e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "她也很累。",
       "entryIds": [
         "PH-18e28a2339872e96"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他很高兴。",
+      "entryIds": [
+        "PH-6cd2cfd3e2f39f27"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "王小云很忙。",
+      "entryIds": [
+        "PH-0090d68bd2f69fd6"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1753,9 +4036,81 @@
       "status": "not_requested"
     },
     {
+      "input": "一个很小的学院",
+      "entryIds": [
+        "PH-738cb0391acb318e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "小孩子很可爱。",
+      "entryIds": [
+        "PH-7fdf37191d23ee78"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "一个很大的餐厅",
+      "entryIds": [
+        "PH-ce202a00e1b501a8"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "宋华最近很累。",
+      "entryIds": [
+        "PH-f66620433a8faa62"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这张照片很漂亮。",
+      "entryIds": [
+        "PH-6e40ca22d39fab51"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "这张照片很有意思。",
       "entryIds": [
         "PH-f83b5820507e3e7c"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "马云忙吗？马云很忙。",
+      "entryIds": [
+        "PH-6c34ed6a349ada9b"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "成龙很忙。巩俐也很忙。",
+      "entryIds": [
+        "PH-06369a404abd7ad7"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这儿有一个很有名的大学。",
+      "entryIds": [
+        "PH-d42fc442bf142c4e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "姚明怎么样？姚明也很忙。",
+      "entryIds": [
+        "PH-fb1bf0b32fa4d95e"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1769,9 +4124,209 @@
       "status": "not_requested"
     },
     {
+      "input": "他女儿很忙，今天有钢琴课，还有英语课。",
+      "entryIds": [
+        "PH-130f985d9e2b266a"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他高兴吗？",
+      "entryIds": [
+        "PH-e3a307843286f5c9"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他不高兴。",
+      "entryIds": [
+        "PH-fca462ed4f312170"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "他也不困。",
       "entryIds": [
         "PH-4225260d7aead3ea"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他也是老师。",
+      "entryIds": [
+        "PH-872b14fa9fb19436"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "力波也不忙。",
+      "entryIds": [
+        "PH-a905a890f813dd49"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "她也是老师。",
+      "entryIds": [
+        "PH-be06200b53dc1a8f"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "王小云和宋华也都不喜欢吃面条儿。",
+      "entryIds": [
+        "PH-772fb686580deed2"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他们也不是中国人，他们都是韩国人。",
+      "entryIds": [
+        "PH-a41ebfbf3e722e7e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这是马大为。",
+      "entryIds": [
+        "PH-454c47aa99859e70"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "马大为学习汉语。",
+      "entryIds": [
+        "PH-7c1fc08e7e0f03f8"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "马大为是哪国人？",
+      "entryIds": [
+        "PH-d43a960c3c957f6c"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "马大为有姐姐吗？",
+      "entryIds": [
+        "PH-df4fe0e1a9b344c9"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "马大为有几个中国朋友？",
+      "entryIds": [
+        "PH-2e61b180514c4b02"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "马大为有几个中国朋友？他们都是谁？",
+      "entryIds": [
+        "PH-38a70cc14651018b"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "宋华是哪国人？",
+      "entryIds": [
+        "PH-1dec0764a85d0964"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "宋华是北京人，喜欢吃饺子和面条儿。",
+      "entryIds": [
+        "PH-15200b9c7c4a9fb5"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "林娜在。",
+      "entryIds": [
+        "PH-5929ae36e2adf604"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他不在。",
+      "entryIds": [
+        "PH-ec490ed22b1d25dc"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他在吃饭。",
+      "entryIds": [
+        "PH-3c85f59abfb1d463"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我们在上课。",
+      "entryIds": [
+        "PH-4048b0523a7b5042"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "弟弟在喝水。",
+      "entryIds": [
+        "PH-465b5197694b639e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "老师在哪儿？",
+      "entryIds": [
+        "PH-47efdbe5a096e29e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "老师在这儿吗？",
+      "entryIds": [
+        "PH-161db5804108a277"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "今天她有英语课，不在家。",
+      "entryIds": [
+        "PH-574a3a52035d8cc0"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他忙吗？",
+      "entryIds": [
+        "PH-69f5fc8154670542"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1785,9 +4340,81 @@
       "status": "not_requested"
     },
     {
+      "input": "丁力波忙吗？",
+      "entryIds": [
+        "PH-c394efc5e539ef5c"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "那是包子吗？",
+      "entryIds": [
+        "PH-e13b2a3da5be72d4"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这是面条吗？",
+      "entryIds": [
+        "PH-faf37ba86011001e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "面条儿好吃吗？",
+      "entryIds": [
+        "PH-2ee8390e9608af53"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "可以去厕所吗？",
+      "entryIds": [
+        "PH-b7fe5ba4470d039d"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "你们最近忙吗？",
       "entryIds": [
         "PH-f8b080da2036d992"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他是北京人吗？",
+      "entryIds": [
+        "PH-ffaed2d2be094263"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你们家有宠物吗？",
+      "entryIds": [
+        "PH-66ed84625f85675a"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "王小云有弟弟吗？",
+      "entryIds": [
+        "PH-c8c1582ba7883c20"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你们家有小狗吗？",
+      "entryIds": [
+        "PH-e87bd150eb33f4e9"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1801,9 +4428,81 @@
       "status": "not_requested"
     },
     {
+      "input": "陈老师是北京人吗？",
+      "entryIds": [
+        "PH-55d15fa658d68deb"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "林娜喜欢吃饺子吗？",
+      "entryIds": [
+        "PH-583e928db23efeef"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "贝贝是林娜家的人吗？",
+      "entryIds": [
+        "PH-d520cd627831aa97"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "林娜最近不太忙。",
+      "entryIds": [
+        "PH-42b2193972c38c26"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "林娜怎么样？",
+      "entryIds": [
+        "PH-28b96c486e5d9aa2"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他们怎么样？",
+      "entryIds": [
+        "PH-97c9acf00840a5e3"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "你们怎么样？",
       "entryIds": [
         "PH-fabd70d8dc7c6721"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这张照片怎么样？",
+      "entryIds": [
+        "PH-6c5d650ec998810d"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "陆雨平的女儿怎么样？",
+      "entryIds": [
+        "PH-29aac4b08a5a4e85"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他们呢？",
+      "entryIds": [
+        "PH-34374d8374bf91e0"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1825,9 +4524,137 @@
       "status": "not_requested"
     },
     {
+      "input": "我们太忙了。",
+      "entryIds": [
+        "PH-5c6d5dbf3760104c"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "那不是饺子。",
+      "entryIds": [
+        "PH-37432403591e9bfe"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这不是面条。",
+      "entryIds": [
+        "PH-4976a99864ef9e83"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "那不是包子。",
+      "entryIds": [
+        "PH-fe0eeeb428088dde"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "陆雨平不太累。",
+      "entryIds": [
+        "PH-2715e8c17a7101f0"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他不是北京人。",
+      "entryIds": [
+        "PH-a74263a76c3fbd89"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "那不是包子，是饺子。",
+      "entryIds": [
+        "PH-07d7a877b7cf8722"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这不是饺子，是包子。",
+      "entryIds": [
+        "PH-732b583c1bace49e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "她喜欢吃饺子，还喜欢吃面条儿，可是不喜欢吃米饭。",
+      "entryIds": [
+        "PH-dd5cfcc10d2d75ad"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他太困了。",
+      "entryIds": [
+        "PH-eb3e4348841848cf"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他是谁？",
+      "entryIds": [
+        "PH-250fa3584d0dfef9"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他的朋友",
+      "entryIds": [
+        "PH-efd59707ebb01969"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他是学生。",
+      "entryIds": [
+        "PH-1468dc5b68b2ecd5"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他是老师。",
+      "entryIds": [
+        "PH-88561408ad553fee"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他是梅西。",
+      "entryIds": [
+        "PH-b93bcb1785d6e2c0"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "他学做饭。",
       "entryIds": [
         "PH-c358d4611626e471"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他是哪国人？",
+      "entryIds": [
+        "PH-78a8c9d9dd602a47"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1841,9 +4668,49 @@
       "status": "not_requested"
     },
     {
+      "input": "他学习汉语。",
+      "entryIds": [
+        "PH-8a706e3fff78ffe4"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "他是秘鲁人。",
       "entryIds": [
         "PH-aaaa948989c2c9ec"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他是北京人。",
+      "entryIds": [
+        "PH-c497424e0afbd5af"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他是美国人。",
+      "entryIds": [
+        "PH-c813e7213df0a4cc"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他是阿根廷人。",
+      "entryIds": [
+        "PH-05b24a4dca28721c"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他是俄罗斯人。",
+      "entryIds": [
+        "PH-4181ab23d9a79ade"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1857,9 +4724,81 @@
       "status": "not_requested"
     },
     {
+      "input": "他喜欢吃饺子。",
+      "entryIds": [
+        "PH-9d7c36ffc2a29737"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他家有两口人。",
+      "entryIds": [
+        "PH-f61cae4418b71507"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他有一个女儿，今年五岁。",
+      "entryIds": [
+        "PH-49b632132b5dd6b9"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他爸爸是医生，妈妈是老师。",
+      "entryIds": [
+        "PH-1d7639ace7a8cba3"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他们家有三口人，爸爸、妈妈和他。",
+      "entryIds": [
+        "PH-3f71586c342af774"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他有两个孩子，一个女儿，一个儿子。",
+      "entryIds": [
+        "PH-1c422bfc0c4e154d"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这是林娜的照片。",
+      "entryIds": [
+        "PH-c50bccbe000a2f0e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "林娜，你们家有几口人？",
       "entryIds": [
         "PH-35b5f11dfacef732"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "林娜家有几口人？他们是谁？",
+      "entryIds": [
+        "PH-8d788c441df1765d"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "林娜家一共有五口人，妈妈、一个哥哥、两个姐姐和她，还有贝贝。",
+      "entryIds": [
+        "PH-b5d8429b8a1065a7"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1873,9 +4812,241 @@
       "status": "not_requested"
     },
     {
+      "input": "她真漂亮。",
+      "entryIds": [
+        "PH-84e3deefbe064b59"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "她学画画。",
       "entryIds": [
         "PH-ac25d2a8af3fe209"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "她吃早饭。",
+      "entryIds": [
+        "PH-c3077db09d1ef06a"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "她今年几岁？",
+      "entryIds": [
+        "PH-25692d11b27a3826"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "她今年五岁。",
+      "entryIds": [
+        "PH-43289b9757080ebe"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "她是哪国人？",
+      "entryIds": [
+        "PH-9db4cd481acbbc1a"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "她是中国人。",
+      "entryIds": [
+        "PH-c2bcda60697d7b94"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "她没有妹妹。",
+      "entryIds": [
+        "PH-ca79df61f5cd6af1"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "贝贝是她的小狗。",
+      "entryIds": [
+        "PH-606f952b8af6d954"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "她女儿今年几岁？",
+      "entryIds": [
+        "PH-8ba05572bcaccaf4"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "她女儿今年九岁。",
+      "entryIds": [
+        "PH-bac024884fc4881b"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "她还有一个哥哥。",
+      "entryIds": [
+        "PH-d13d03b09b4d4799"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "有，她有一个女儿。",
+      "entryIds": [
+        "PH-5c90c8c1e4f669f5"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "晚上她还有英语课。",
+      "entryIds": [
+        "PH-e76e700e21320dc5"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "她哥哥是我们外语老师。",
+      "entryIds": [
+        "PH-15d1e1ecd299460e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "她是学生，她学习英语。",
+      "entryIds": [
+        "PH-907646868b9cb078"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "她有一个女儿和一个儿子。",
+      "entryIds": [
+        "PH-e2c26a333648cbeb"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "那是陈老师，她是我们老师。",
+      "entryIds": [
+        "PH-1d8cdbb62309026e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "她爸爸是医生，妈妈是老师。",
+      "entryIds": [
+        "PH-bfffd0b9455210f9"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "陈老师是上海人，她喜欢吃点心。",
+      "entryIds": [
+        "PH-2988a5cb568be4f2"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "她有一个中国朋友，还有一个秘鲁朋友。",
+      "entryIds": [
+        "PH-d070e1a730c53cf4"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "四个老师",
+      "entryIds": [
+        "PH-a2d207d7386070d6"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "陈老师是谁？",
+      "entryIds": [
+        "PH-803b45d105d217a9"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "谁是你们老师？",
+      "entryIds": [
+        "PH-1f2301602db9fe09"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "哪一个是张老师？",
+      "entryIds": [
+        "PH-d25e4d3b1f0c4966"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我们老师是中国人。",
+      "entryIds": [
+        "PH-6f9841a7f88a21ab"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "孔子学院有二十个汉语老师。",
+      "entryIds": [
+        "PH-e760137a525f8f31"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "那儿有两个老师，哪一个是李老师？",
+      "entryIds": [
+        "PH-b61c7e1a0a76ff64"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "您早！",
+      "entryIds": [
+        "PH-72326936a5311a5e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "你们去哪儿？",
+      "entryIds": [
+        "PH-3282b8613e1014b5"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1889,9 +5060,57 @@
       "status": "not_requested"
     },
     {
+      "input": "这是书。",
+      "entryIds": [
+        "PH-cd292fdad8d66514"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "这是谁？",
       "entryIds": [
         "PH-dc26f46b796d85d5"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这是面条。",
+      "entryIds": [
+        "PH-603b7f6a550399bb"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这是饺子。",
+      "entryIds": [
+        "PH-e66026da1b55ca80"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这是谁的咖啡？",
+      "entryIds": [
+        "PH-778faccd25523b77"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这是谁的照片？",
+      "entryIds": [
+        "PH-786d2c20a229a6e2"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这是我们家的照片。",
+      "entryIds": [
+        "PH-53d64adfe74193bd"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1905,11 +5124,349 @@
       "status": "not_requested"
     },
     {
+      "input": "这是他们家的照片。",
+      "entryIds": [
+        "PH-99369c03dd528445"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "是，这是我们家的照片。",
+      "entryIds": [
+        "PH-b80f1e01a817701b"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "那是谁？",
+      "entryIds": [
+        "PH-85748a177acdc91c"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "那是米饭。",
+      "entryIds": [
+        "PH-0ca73d33266cac94"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "谁是医生？",
+      "entryIds": [
+        "PH-4458e68dd29e6c07"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "那是饺子。",
+      "entryIds": [
+        "PH-6153e8bf1311130a"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "贝贝是谁？",
+      "entryIds": [
+        "PH-8df90fef11c83086"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "那是包子。",
+      "entryIds": [
+        "PH-9057e7311dcc0fff"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "今年是马年。",
+      "entryIds": [
+        "PH-c31236b73df83ec6"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他们是哪国人？",
+      "entryIds": [
+        "PH-4c0fdabc6b59fb3e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我们都是中国人。",
+      "entryIds": [
+        "PH-277f6b067c0036fa"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "她们都是美国人。",
+      "entryIds": [
+        "PH-3f84d1458cc6d3a7"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我们都是秘鲁人。",
+      "entryIds": [
+        "PH-97411f278ac0de2d"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "今年是2026年。",
+      "entryIds": [
+        "PH-65b0b62aaf9c6a5d"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "那儿有十个人，哪3个是中国人？",
+      "entryIds": [
+        "PH-f68c2cdd84eb9e41"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "三个朋友",
+      "entryIds": [
+        "PH-29a483de221c5c83"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "那个朋友",
+      "entryIds": [
+        "PH-56443fc9503500cf"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "一个朋友",
+      "entryIds": [
+        "PH-b725aace30b2683c"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "您贵姓",
+      "entryIds": [
+        "PH-e6b8b1514811b7dd",
+        "v-您贵姓"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "六口人",
+      "entryIds": [
+        "PH-0fad594fa3443966"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "一个人",
+      "entryIds": [
+        "PH-c83248705bfc600d"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我们家有五口人。",
+      "entryIds": [
+        "PH-165ffbcaa3c175ba"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我们家有四口人。",
+      "entryIds": [
+        "PH-8ad755629d096248"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我们班有十个人。",
+      "entryIds": [
+        "PH-9f1ab1679981f1c8"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我们家有六口人。",
+      "entryIds": [
+        "PH-e749bde31b25428f"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "王小云家有四口人。",
+      "entryIds": [
+        "PH-01fca2eaf98c9e0b"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "王小云家有几口人？",
+      "entryIds": [
+        "PH-0a5cadc101773edb"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "陆雨平家有三口人。",
+      "entryIds": [
+        "PH-ffba22d89df713f8"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我们家一共有六口人。",
+      "entryIds": [
+        "PH-b7e1414c6f859f18"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "谁学习汉语？",
+      "entryIds": [
+        "PH-28db8cf34abcc0db"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他们都学习汉语。",
+      "entryIds": [
+        "PH-fa8ad020f84b7902"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "孩子们学钢琴。",
+      "entryIds": [
+        "PH-d4229f6c7632dbf3"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "汉语课",
+      "entryIds": [
+        "PH-a946ca8d2a132fa3",
+        "v-汉语课"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "一张汉语的名片",
+      "entryIds": [
+        "PH-71539c1751d10c81"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "谁喜欢吃点心？",
+      "entryIds": [
+        "PH-312a0e1e6899c0f7"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "王小云喜欢吃点心。",
+      "entryIds": [
+        "PH-3daab183bcd139c5"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "真好吃！",
+      "entryIds": [
+        "PH-57bbb8f55826d0ec"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "王小云喜欢吃饺子。",
+      "entryIds": [
+        "PH-ddd25b9cf0b035e8"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "北京人喜欢吃面条儿和饺子。",
+      "entryIds": [
+        "PH-691c8159dca930a0"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "米饭和面条儿",
+      "entryIds": [
+        "PH-a817aa0d49ab62b0"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "面条儿",
       "entryIds": [
         "v-面条儿"
       ],
       "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "看这儿。",
+      "entryIds": [
+        "PH-50b0730e9fb60515"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "那张照片",
+      "entryIds": [
+        "PH-ad353795dec3167a"
+      ],
+      "kind": "sentence",
       "status": "not_requested"
     },
     {
@@ -1977,9 +5534,97 @@
       "status": "not_requested"
     },
     {
+      "input": "他们家",
+      "entryIds": [
+        "PH-847e5361cfd5b316"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "我们家的照片",
+      "entryIds": [
+        "PH-da8d13d276780fa4"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "大学有几个系？",
+      "entryIds": [
+        "PH-5b94ed46bb4cfdb6"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "他们有几个孩子？",
       "entryIds": [
         "PH-120f34020fe20ee2"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "他们有一个孩子。",
+      "entryIds": [
+        "PH-760edde6c22ac989"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "那儿有五个学生。",
+      "entryIds": [
+        "PH-92e0c3f7c6e9dab4"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "这儿有两张照片。",
+      "entryIds": [
+        "PH-cb9c6ed6fc512731"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "约翰今年几岁？",
+      "entryIds": [
+        "PH-3fdf8668e54e304e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "约翰（John）今年几岁？",
+      "entryIds": [
+        "PH-8de66e1dd8f3d6f1"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "陆雨平的女儿",
+      "entryIds": [
+        "PH-a097ea002cd76fb4"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "一张cuzco的照片",
+      "entryIds": [
+        "PH-971a8fdb2eb0e4fc"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "三张照片",
+      "entryIds": [
+        "PH-12b8998e908234b6"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -1993,9 +5638,65 @@
       "status": "not_requested"
     },
     {
+      "input": "五个学生",
+      "entryIds": [
+        "PH-33c63eeae2eaae09"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "两张卡片",
+      "entryIds": [
+        "PH-6a395bf6b5a83681"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "三只狗",
+      "entryIds": [
+        "PH-fab3248b0fd7525e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "真漂亮！",
+      "entryIds": [
+        "PH-44bfd27f44455076"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "真厉害！",
       "entryIds": [
         "PH-bc51241bebeba332"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "喝水",
+      "entryIds": [
+        "PH-a8720cdfc7de0556"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "喝咖啡",
+      "entryIds": [
+        "PH-bca9f5c6acff98a4"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "喝牛奶",
+      "entryIds": [
+        "PH-da4595f21d2a6a76"
       ],
       "kind": "sentence",
       "status": "not_requested"
@@ -2022,6 +5723,32 @@
         "PH-4b78d0488850f843"
       ],
       "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "十岁。",
+      "entryIds": [
+        "PH-4d2bb582a1584f4e"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "弹钢琴",
+      "entryIds": [
+        "PH-463d9ca5b9a939a0",
+        "v-弹钢琴"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "英语课",
+      "entryIds": [
+        "PH-b6cd72362747d4dc",
+        "v-英语课"
+      ],
+      "kind": "word",
       "status": "not_requested"
     },
     {
@@ -2121,6 +5848,22 @@
       "status": "not_requested"
     },
     {
+      "input": "一杯酒",
+      "entryIds": [
+        "PH-ded0f760df5a5b72"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "四杯酒",
+      "entryIds": [
+        "PH-f9cf527ccd6cdaa0"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
       "input": "干嘛",
       "entryIds": [
         "v-干嘛"
@@ -2153,11 +5896,27 @@
       "status": "not_requested"
     },
     {
+      "input": "老朋友",
+      "entryIds": [
+        "v-老朋友"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
       "input": "书",
       "entryIds": [
         "v-书"
       ],
       "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "一本书",
+      "entryIds": [
+        "PH-ddb133631c607e5a"
+      ],
+      "kind": "sentence",
       "status": "not_requested"
     },
     {
@@ -2172,6 +5931,70 @@
       "input": "法语",
       "entryIds": [
         "v-法语"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "墨西哥",
+      "entryIds": [
+        "v-墨西哥"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "意大利语",
+      "entryIds": [
+        "v-意大利语"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "做饭",
+      "entryIds": [
+        "v-做饭"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "画画",
+      "entryIds": [
+        "v-画画"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "一点儿",
+      "entryIds": [
+        "v-一点儿"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "厉害",
+      "entryIds": [
+        "v-厉害"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "普通话",
+      "entryIds": [
+        "v-普通话"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "方言",
+      "entryIds": [
+        "v-方言"
       ],
       "kind": "word",
       "status": "not_requested"
@@ -2209,6 +6032,22 @@
       "status": "not_requested"
     },
     {
+      "input": "炸猪肉面包",
+      "entryIds": [
+        "v-炸猪肉面包"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "肉夹馍",
+      "entryIds": [
+        "v-肉夹馍"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
       "input": "汉堡",
       "entryIds": [
         "v-汉堡"
@@ -2217,9 +6056,65 @@
       "status": "not_requested"
     },
     {
+      "input": "披萨",
+      "entryIds": [
+        "v-披萨"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "热狗",
+      "entryIds": [
+        "v-热狗"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "寿司",
+      "entryIds": [
+        "v-寿司"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
       "input": "甜品",
       "entryIds": [
         "v-甜品"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "蛋挞",
+      "entryIds": [
+        "v-蛋挞"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "筷子",
+      "entryIds": [
+        "v-筷子"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "用",
+      "entryIds": [
+        "v-用"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "印加可乐",
+      "entryIds": [
+        "v-印加可乐"
       ],
       "kind": "word",
       "status": "not_requested"
@@ -2257,6 +6152,30 @@
       "status": "not_requested"
     },
     {
+      "input": "一只猫",
+      "entryIds": [
+        "PH-104242c1007e283c"
+      ],
+      "kind": "sentence",
+      "status": "not_requested"
+    },
+    {
+      "input": "大学",
+      "entryIds": [
+        "v-大学"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "上课",
+      "entryIds": [
+        "v-上课"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
       "input": "前年",
       "entryIds": [
         "v-前年"
@@ -2289,25 +6208,65 @@
       "status": "not_requested"
     },
     {
-      "input": "英语课",
+      "input": "多大",
       "entryIds": [
-        "v-英语课"
+        "v-多大"
       ],
       "kind": "word",
       "status": "not_requested"
     },
     {
-      "input": "汉语课",
+      "input": "年龄",
       "entryIds": [
-        "v-汉语课"
+        "v-年龄"
       ],
       "kind": "word",
       "status": "not_requested"
     },
     {
-      "input": "弹钢琴",
+      "input": "岁数",
       "entryIds": [
-        "v-弹钢琴"
+        "v-岁数"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "地图",
+      "entryIds": [
+        "v-地图"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "儿子",
+      "entryIds": [
+        "v-儿子"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "小孩子",
+      "entryIds": [
+        "v-小孩子"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "昨天",
+      "entryIds": [
+        "v-昨天"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "明天",
+      "entryIds": [
+        "v-明天"
       ],
       "kind": "word",
       "status": "not_requested"
@@ -2337,9 +6296,121 @@
       "status": "not_requested"
     },
     {
+      "input": "炒饭",
+      "entryIds": [
+        "v-炒饭"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "阿根廷",
+      "entryIds": [
+        "v-阿根廷"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "有名",
+      "entryIds": [
+        "v-有名"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "名片",
+      "entryIds": [
+        "v-名片"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "学院",
+      "entryIds": [
+        "v-学院"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "餐厅",
+      "entryIds": [
+        "v-餐厅"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "男生",
+      "entryIds": [
+        "v-男生"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "系",
+      "entryIds": [
+        "v-系"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "哪一个",
+      "entryIds": [
+        "v-哪一个"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "看书",
+      "entryIds": [
+        "v-看书"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "看电影",
+      "entryIds": [
+        "v-看电影"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "电影",
+      "entryIds": [
+        "v-电影"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "唱歌",
+      "entryIds": [
+        "v-唱歌"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
       "input": "可是",
       "entryIds": [
         "v-可是"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "张华",
+      "entryIds": [
+        "v-张华"
       ],
       "kind": "word",
       "status": "not_requested"
@@ -2356,6 +6427,54 @@
       "input": "车牌号",
       "entryIds": [
         "v-车牌号"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "多少",
+      "entryIds": [
+        "v-多少"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "大卫",
+      "entryIds": [
+        "v-大卫"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "俄罗斯人",
+      "entryIds": [
+        "v-俄罗斯人"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "西安",
+      "entryIds": [
+        "v-西安"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "广州",
+      "entryIds": [
+        "v-广州"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "北京烤鸭",
+      "entryIds": [
+        "v-北京烤鸭"
       ],
       "kind": "word",
       "status": "not_requested"
@@ -2388,6 +6507,246 @@
       "input": "晚上好",
       "entryIds": [
         "v-晚上好"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "晚安",
+      "entryIds": [
+        "v-晚安"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "这是",
+      "entryIds": [
+        "v-这是"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "那是",
+      "entryIds": [
+        "v-那是"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "力波",
+      "entryIds": [
+        "v-力波"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "小云",
+      "entryIds": [
+        "v-小云"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "死",
+      "entryIds": [
+        "v-死"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "了",
+      "entryIds": [
+        "v-了"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "手",
+      "entryIds": [
+        "v-手"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "这儿",
+      "entryIds": [
+        "v-这儿"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "那儿",
+      "entryIds": [
+        "v-那儿"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "梅西",
+      "entryIds": [
+        "v-梅西"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "一下",
+      "entryIds": [
+        "v-一下"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "酒",
+      "entryIds": [
+        "v-酒"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "孔子学院",
+      "entryIds": [
+        "v-孔子学院"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "二十",
+      "entryIds": [
+        "v-二十"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "吃饭",
+      "entryIds": [
+        "v-吃饭"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "李",
+      "entryIds": [
+        "v-李"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "大家",
+      "entryIds": [
+        "v-大家"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "张王冉",
+      "entryIds": [
+        "v-张王冉"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "三十",
+      "entryIds": [
+        "v-三十"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "二十五",
+      "entryIds": [
+        "v-二十五"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "七十五",
+      "entryIds": [
+        "v-七十五"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "孩子们",
+      "entryIds": [
+        "v-孩子们"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "成龙",
+      "entryIds": [
+        "v-成龙"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "巩俐",
+      "entryIds": [
+        "v-巩俐"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "姚明",
+      "entryIds": [
+        "v-姚明"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "马云",
+      "entryIds": [
+        "v-马云"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "玛丽",
+      "entryIds": [
+        "v-玛丽"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "上午",
+      "entryIds": [
+        "v-上午"
+      ],
+      "kind": "word",
+      "status": "not_requested"
+    },
+    {
+      "input": "北京人",
+      "entryIds": [
+        "v-北京人"
       ],
       "kind": "word",
       "status": "not_requested"
@@ -2631,9 +6990,79 @@
       ]
     },
     {
+      "id": "v-意大利语",
+      "glyphs": [
+        "意"
+      ]
+    },
+    {
+      "id": "v-画画",
+      "glyphs": [
+        "画"
+      ]
+    },
+    {
+      "id": "v-厉害",
+      "glyphs": [
+        "厉",
+        "害"
+      ]
+    },
+    {
+      "id": "v-普通话",
+      "glyphs": [
+        "普",
+        "通",
+        "话"
+      ]
+    },
+    {
+      "id": "v-方言",
+      "glyphs": [
+        "方",
+        "言"
+      ]
+    },
+    {
+      "id": "v-炸猪肉面包",
+      "glyphs": [
+        "炸",
+        "猪",
+        "肉"
+      ]
+    },
+    {
+      "id": "v-肉夹馍",
+      "glyphs": [
+        "肉",
+        "夹",
+        "馍"
+      ]
+    },
+    {
       "id": "v-汉堡",
       "glyphs": [
         "堡"
+      ]
+    },
+    {
+      "id": "v-披萨",
+      "glyphs": [
+        "披",
+        "萨"
+      ]
+    },
+    {
+      "id": "v-热狗",
+      "glyphs": [
+        "热"
+      ]
+    },
+    {
+      "id": "v-寿司",
+      "glyphs": [
+        "寿",
+        "司"
       ]
     },
     {
@@ -2641,6 +7070,31 @@
       "glyphs": [
         "甜",
         "品"
+      ]
+    },
+    {
+      "id": "v-蛋挞",
+      "glyphs": [
+        "蛋",
+        "挞"
+      ]
+    },
+    {
+      "id": "v-筷子",
+      "glyphs": [
+        "筷"
+      ]
+    },
+    {
+      "id": "v-用",
+      "glyphs": [
+        "用"
+      ]
+    },
+    {
+      "id": "v-印加可乐",
+      "glyphs": [
+        "印"
       ]
     },
     {
@@ -2654,6 +7108,24 @@
       "glyphs": [
         "意",
         "思"
+      ]
+    },
+    {
+      "id": "v-卡片",
+      "glyphs": [
+        "卡"
+      ]
+    },
+    {
+      "id": "v-现在",
+      "glyphs": [
+        "现"
+      ]
+    },
+    {
+      "id": "v-马",
+      "glyphs": [
+        "马"
       ]
     },
     {
@@ -2675,10 +7147,106 @@
       ]
     },
     {
+      "id": "v-多大",
+      "glyphs": [
+        "多"
+      ]
+    },
+    {
+      "id": "v-年龄",
+      "glyphs": [
+        "龄"
+      ]
+    },
+    {
+      "id": "v-岁数",
+      "glyphs": [
+        "数"
+      ]
+    },
+    {
+      "id": "v-地图",
+      "glyphs": [
+        "地",
+        "图"
+      ]
+    },
+    {
+      "id": "v-昨天",
+      "glyphs": [
+        "昨"
+      ]
+    },
+    {
+      "id": "v-明天",
+      "glyphs": [
+        "明"
+      ]
+    },
+    {
       "id": "v-约翰",
       "glyphs": [
         "约",
         "翰"
+      ]
+    },
+    {
+      "id": "v-炒饭",
+      "glyphs": [
+        "炒"
+      ]
+    },
+    {
+      "id": "v-阿根廷",
+      "glyphs": [
+        "阿",
+        "根",
+        "廷"
+      ]
+    },
+    {
+      "id": "v-学院",
+      "glyphs": [
+        "院"
+      ]
+    },
+    {
+      "id": "v-系",
+      "glyphs": [
+        "系"
+      ]
+    },
+    {
+      "id": "v-看书",
+      "glyphs": [
+        "书"
+      ]
+    },
+    {
+      "id": "v-看电影",
+      "glyphs": [
+        "电",
+        "影"
+      ]
+    },
+    {
+      "id": "v-电影",
+      "glyphs": [
+        "电",
+        "影"
+      ]
+    },
+    {
+      "id": "v-唱歌",
+      "glyphs": [
+        "唱",
+        "歌"
+      ]
+    },
+    {
+      "id": "v-张华",
+      "glyphs": [
+        "华"
       ]
     },
     {
@@ -2687,6 +7255,154 @@
         "车",
         "牌",
         "号"
+      ]
+    },
+    {
+      "id": "v-多少",
+      "glyphs": [
+        "多",
+        "少"
+      ]
+    },
+    {
+      "id": "v-大卫",
+      "glyphs": [
+        "卫"
+      ]
+    },
+    {
+      "id": "v-俄罗斯人",
+      "glyphs": [
+        "罗",
+        "斯"
+      ]
+    },
+    {
+      "id": "v-广州",
+      "glyphs": [
+        "广",
+        "州"
+      ]
+    },
+    {
+      "id": "v-北京烤鸭",
+      "glyphs": [
+        "烤",
+        "鸭"
+      ]
+    },
+    {
+      "id": "v-宋",
+      "glyphs": [
+        "宋"
+      ]
+    },
+    {
+      "id": "v-力波",
+      "glyphs": [
+        "力",
+        "波"
+      ]
+    },
+    {
+      "id": "v-大为",
+      "glyphs": [
+        "为"
+      ]
+    },
+    {
+      "id": "v-可以",
+      "glyphs": [
+        "以"
+      ]
+    },
+    {
+      "id": "v-死",
+      "glyphs": [
+        "死"
+      ]
+    },
+    {
+      "id": "v-了",
+      "glyphs": [
+        "了"
+      ]
+    },
+    {
+      "id": "v-手",
+      "glyphs": [
+        "手"
+      ]
+    },
+    {
+      "id": "v-梅西",
+      "glyphs": [
+        "梅"
+      ]
+    },
+    {
+      "id": "v-酒",
+      "glyphs": [
+        "酒"
+      ]
+    },
+    {
+      "id": "v-孔子学院",
+      "glyphs": [
+        "孔",
+        "院"
+      ]
+    },
+    {
+      "id": "v-李",
+      "glyphs": [
+        "李"
+      ]
+    },
+    {
+      "id": "v-张王冉",
+      "glyphs": [
+        "冉"
+      ]
+    },
+    {
+      "id": "v-成龙",
+      "glyphs": [
+        "成",
+        "龙"
+      ]
+    },
+    {
+      "id": "v-巩俐",
+      "glyphs": [
+        "巩",
+        "俐"
+      ]
+    },
+    {
+      "id": "v-姚明",
+      "glyphs": [
+        "姚",
+        "明"
+      ]
+    },
+    {
+      "id": "v-马云",
+      "glyphs": [
+        "马"
+      ]
+    },
+    {
+      "id": "v-林",
+      "glyphs": [
+        "林"
+      ]
+    },
+    {
+      "id": "v-玛丽",
+      "glyphs": [
+        "玛",
+        "丽"
       ]
     }
   ]

@@ -1,7 +1,7 @@
 # Vocabulario Míng · Fondo inmersivo chino
 
 Estándar visual por defecto aprobado por el usuario el 25 de septiembre de 2026.
-Identificador: `ming-vocabulary-immersive-zh-golden-v1`. Versión: `1.0.0`.
+Identificador: `ming-vocabulary-immersive-zh-golden-v1`. Versión: `1.1.0`.
 
 ## Consulta rápida
 
@@ -28,6 +28,9 @@ en `MING_KNOWLEDGE/design/`, separado del corpus v2 y de sus tablas de fuentes.
 No requiere Supabase, migraciones, claves ni acceso a PDF para consultarlo.
 
 Estado: **estándar aprobado y documentado; aplicación a la web pendiente**.
+Este es el estado al guardar el PR #12. La aplicación local posterior de layout,
+tipografía e interacción y el límite de fotografías pendientes se documentan en
+[`VOCABULARY_PR11_PR12_LOCAL.md`](../../docs/VOCABULARY_PR11_PR12_LOCAL.md).
 Publicar estos archivos no implica que el diseño esté implementado o desplegado.
 Se aplica por defecto a las fichas de vocabulario del catálogo, con o sin foto,
 en todas las lecciones y vistas acumuladas. Vocabulario Mix debe compartir los
@@ -99,21 +102,21 @@ Valores de referencia a tamaño normal de lectura (raíz de 16 px):
 
 | Elemento | Tamaño | Peso | Color |
 | --- | --- | --- | --- |
-| Hanzi del anverso | 36 px; 32 px en móvil | 500 | `#173b32` |
+| Hanzi del anverso | 43.2 px; 38.4 px en móvil | 500 | `#173b32` |
 | Pinyin | 16 px | 400 | `#466451` |
-| Traducción española | **12.8 px** (`0.8rem`) | 400 | **`#746f68`** |
+| Traducción española | **11.52 px** (`0.72rem`) | 400 | **`#746f68`** |
 | Hanzi estudiado en el reverso | 24 px | 400 | `#687169` |
 | Frase china en el reverso | 28 px; 26 px en móvil | 400 | `#173b32` |
 | Coincidencia estudiada en la frase | Heredado de la frase | 700 | `#b34424` |
 
 La traducción ocupa el tercer nivel y conserva la reducción solicitada del
-20 %; el token definitivo es 12.8 px. No volver a asignarle el tamaño del pinyin
+20 % inicial más un 10 % adicional; el token definitivo es 11.52 px. No volver a asignarle el tamaño del pinyin
 ni negro intenso. Respetar zoom y preferencias del navegador. Usar las familias
 tipográficas ya cargadas por Míng, con soporte correcto de tonos y caracteres.
 
-El audio se muestra en un círculo de 44 px, fondo verde salvia `#e1e6d6` e icono
+El audio se muestra en un área transparente de 44 px e icono
 verde jade `#315848` de 20 px, sin borde duro, junto al Hanzi. Favoritos arriba
-a la izquierda y giro arriba a la derecha, en círculos marfil translúcidos.
+a la izquierda y giro arriba a la derecha, con fondo transparente y sin sombra.
 No deben tapar el sujeto. Estado activo de favorito reconocible, etiquetas
 accesibles, foco visible y operación por teclado. Solo mostrar audio si existe
 un recurso reproducible; conservar los estados reales de reproducción.
@@ -164,3 +167,7 @@ integrada de generación de imágenes; no procede de los PDF del corpus.
 El JSON registra el nombre original y SHA-256 para identificar exactamente el
 archivo conservado. La especificación de CSS/medidas es normativa; la imagen
 es únicamente referencia visual.
+
+## Ajuste aprobado: 25 de septiembre de 2026
+
+Hanzi principal +20 % (43.2 px; 38.4 px móvil), traducción −10 % adicional (11.52 px), pinyin sin cambios (16 px). Botones de la ficha transparentes, sin fondo ni sombra, con área táctil de 44 px y foco visible. Eliminar el panel blanco localizado detrás del texto; conservar únicamente la transición global suave de la fotografía a la izquierda. Estas indicaciones sustituyen los fondos de controles descritos en la versión inicial.

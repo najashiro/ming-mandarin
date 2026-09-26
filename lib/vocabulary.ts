@@ -1,9 +1,10 @@
 import corpus from '@/data/corpus-v21-public.json';
 import type { CurriculumScope } from '@/data/types';
 import { scopeDefinitions } from '@/seed/curriculum';
+import { publicExamplesForVocabulary } from '@/lib/vocabulary-examples';
 
 export type ActiveWord = (typeof corpus.vocabulary)[number];
-export type VocabularyExample = { id: string; phraseId: string; hanzi: string; pinyin: string | null; spanish: string | null; lessons: number[] };
+export type VocabularyExample = { id: string; phraseId: string; hanzi: string; pinyin: string; spanish: string; lessons: number[] };
 export type Selection = 'new' | 'supplementary' | 'context' | 'review' | 'pending';
 export type ContentLevel = 'basic' | 'hard';
 export const vocabularyCatalog: ActiveWord[] = corpus.vocabulary;
@@ -62,26 +63,13 @@ export function searchGlobalVocabulary(query: string) {
   return searchVocabulary(accumulatedVocabulary, query);
 }
 
-// Positive examples only: a premise, transformation or open exercise is not an answer.
-const exampleKinds = new Set(['example', 'grammar_example', 'dialogue_turn', 'dialogue_example', 'reading', 'writing_model', 'key_phrase', 'question_answer_printed', 'translation_answer_printed']);
-const examplesByWord = new Map<string, VocabularyExample[]>();
-for (const phrase of corpus.phrases) {
-  const lessons = [...new Set(phrase.curriculumLinks.filter(link => exampleKinds.has(link.kind)).map(link => link.lesson))];
-  if (!lessons.length || /[_＿□…]|\.{3}|[（(]\s*[)）]/u.test(phrase.hanzi) || phrase.kinds.some(kind => ['counterexample', 'distractor', 'exercise_premise', 'true_false_premise', 'grammar_transformation', 'dialogue_exercise'].includes(kind))) continue;
-  const example = { id: phrase.id, phraseId: phrase.id, hanzi: phrase.hanzi, pinyin: phrase.pinyin, spanish: phrase.spanish, lessons };
-  for (const id of phrase.vocabIds) {
-    const examples = examplesByWord.get(id) ?? [];
-    examples.push(example);
-    examplesByWord.set(id, examples);
-  }
-}
-// No selected/canonical lesson is involved in learner examples.
-export function examplesForWord(word: ActiveWord) {
-  return [...(examplesByWord.get(word.id) ?? [])].sort((a, b) =>
-    Number(Boolean(b.pinyin)) - Number(Boolean(a.pinyin)) ||
-    Number(a.hanzi.length > 30) - Number(b.hanzi.length > 30) ||
-    Number(Boolean(b.spanish)) - Number(Boolean(a.spanish)) ||
-    a.hanzi.length - b.hanzi.length || a.id.localeCompare(b.id));
+// The public projection owns eligibility, pedagogical links and ordering.
+// Do not rebuild these examples from the original lexical phrase.vocabIds.
+export function examplesForWord(word: ActiveWord): VocabularyExample[] {
+  return publicExamplesForVocabulary(word.id).map(phrase => ({
+    id: phrase.id, phraseId: phrase.id, hanzi: phrase.hanzi,
+    pinyin: phrase.pinyin, spanish: phrase.spanish, lessons: phrase.lessons,
+  }));
 }
 // Documentary reporting only; the learner UI calls examplesForWord instead.
 export function examplesForScope(word: ActiveWord, scope: CurriculumScope) {

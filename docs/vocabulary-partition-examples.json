@@ -1,21 +1,198 @@
 {
+  "corpusIntegration": "db292dbdb055c1b505938ae691f4d6a8bb720bca",
+  "designPR": 12,
   "counts": {
-    "l1": 64,
-    "l2": 88,
-    "l3": 61,
-    "l1-l2-l3": 213
+    "l1": 85,
+    "l2": 126,
+    "l3": 116,
+    "l1-l2-l3": 327
   },
-  "examples": [
+  "words": [
     {
-      "hanzi": "真",
-      "lesson": 2,
+      "id": "v-猫",
+      "hanzi": "猫",
+      "canonicalLesson": 3,
       "examples": [
+        {
+          "id": "PH-104242c1007e283c",
+          "phraseId": "PH-104242c1007e283c",
+          "hanzi": "一只猫",
+          "pinyin": "Yì zhī māo",
+          "spanish": "Un gato.",
+          "lessons": [
+            3
+          ]
+        },
+        {
+          "id": "PH-0723abbd5ad5de02",
+          "phraseId": "PH-0723abbd5ad5de02",
+          "hanzi": "你有小猫吗？",
+          "pinyin": "Nǐ yǒu xiǎomāo ma?",
+          "spanish": "¿Tienes un gatito?",
+          "lessons": [
+            3
+          ]
+        },
+        {
+          "id": "PH-4ede4839fc13f6d9",
+          "phraseId": "PH-4ede4839fc13f6d9",
+          "hanzi": "我有两只小猫，他们很可爱。",
+          "pinyin": "Wǒ yǒu liǎng zhī xiǎomāo, tāmen hěn kě'ài.",
+          "spanish": "Tengo dos gatitos; son muy tiernos.",
+          "lessons": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-真",
+      "hanzi": "真",
+      "canonicalLesson": 2,
+      "examples": [
+        {
+          "id": "PH-38cb5a5c806853d8",
+          "phraseId": "PH-38cb5a5c806853d8",
+          "hanzi": "真好",
+          "pinyin": "Zhēn hǎo",
+          "spanish": "¡Qué bien!",
+          "lessons": [
+            3
+          ]
+        },
+        {
+          "id": "PH-44bfd27f44455076",
+          "phraseId": "PH-44bfd27f44455076",
+          "hanzi": "真漂亮！",
+          "pinyin": "Zhēn piàoliang!",
+          "spanish": "¡Qué bonito!",
+          "lessons": [
+            3
+          ]
+        },
+        {
+          "id": "PH-57bbb8f55826d0ec",
+          "phraseId": "PH-57bbb8f55826d0ec",
+          "hanzi": "真好吃！",
+          "pinyin": "Zhēn hǎochī!",
+          "spanish": "¡Qué rico!",
+          "lessons": [
+            3
+          ]
+        },
         {
           "id": "PH-bc51241bebeba332",
           "phraseId": "PH-bc51241bebeba332",
           "hanzi": "真厉害！",
           "pinyin": "zhēn lì hài!",
-          "spanish": null,
+          "spanish": "¡Qué impresionante!",
+          "lessons": [
+            2
+          ]
+        },
+        {
+          "id": "PH-84e3deefbe064b59",
+          "phraseId": "PH-84e3deefbe064b59",
+          "hanzi": "她真漂亮。",
+          "pinyin": "Tā zhēn piàoliang.",
+          "spanish": "Ella es realmente bonita.",
+          "lessons": [
+            3
+          ]
+        },
+        {
+          "id": "PH-83d03a45dceba35b",
+          "phraseId": "PH-83d03a45dceba35b",
+          "hanzi": "你女儿真漂亮！",
+          "pinyin": "Nǐ nǚ'ér zhēn piàoliang!",
+          "spanish": "¡Tu hija es realmente bonita!",
+          "lessons": [
+            3
+          ]
+        },
+        {
+          "id": "PH-1d7312c0a6661d54",
+          "phraseId": "PH-1d7312c0a6661d54",
+          "hanzi": "这张照片真漂亮！",
+          "pinyin": "Zhè zhāng zhàopiàn zhēn piàoliang!",
+          "spanish": "¡Esta foto es realmente bonita!",
+          "lessons": [
+            3
+          ]
+        },
+        {
+          "id": "PH-c3324d239c2c9dec",
+          "phraseId": "PH-c3324d239c2c9dec",
+          "hanzi": "中国的孩子真忙！",
+          "pinyin": "Zhōngguó de háizi zhēn máng!",
+          "spanish": "¡Los niños de China están realmente ocupados!",
+          "lessons": [
+            3
+          ]
+        },
+        {
+          "id": "PH-5678193b86e8724f",
+          "phraseId": "PH-5678193b86e8724f",
+          "hanzi": "您好！你们家真漂亮！",
+          "pinyin": "Nín hǎo! Nǐmen jiā zhēn piàoliang!",
+          "spanish": "¡Hola! ¡Qué bonita es su casa!",
+          "lessons": [
+            3
+          ]
+        },
+        {
+          "id": "PH-f73bf8e19f739055",
+          "phraseId": "PH-f73bf8e19f739055",
+          "hanzi": "这张照片真漂亮！这是你女儿吗？",
+          "pinyin": "Zhè zhāng zhàopiàn zhēn piàoliang! Zhè shì nǐ nǚ’ér ma?",
+          "spanish": "¡Esta foto es realmente bonita! ¿Esta es tu hija?",
+          "lessons": [
+            3
+          ]
+        },
+        {
+          "id": "PH-524b5c04429c4b1e",
+          "phraseId": "PH-524b5c04429c4b1e",
+          "hanzi": "这张照片是谁？是你哥哥吗？真帅！",
+          "pinyin": "Zhè zhāng zhàopiàn shì shéi? Shì nǐ gēge ma? Zhēn shuài!",
+          "spanish": "¿Quién aparece en esta foto? ¿Es tu hermano mayor? ¡Qué guapo!",
+          "lessons": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-中国",
+      "hanzi": "中国",
+      "canonicalLesson": 2,
+      "examples": [
+        {
+          "id": "PH-c2bcda60697d7b94",
+          "phraseId": "PH-c2bcda60697d7b94",
+          "hanzi": "她是中国人。",
+          "pinyin": "Tā shì Zhōngguó rén.",
+          "spanish": "Ella es china.",
+          "lessons": [
+            2
+          ]
+        },
+        {
+          "id": "PH-23c2c72791905b34",
+          "phraseId": "PH-23c2c72791905b34",
+          "hanzi": "我朋友是中国人。",
+          "pinyin": "Wŏ péngyou shì Zhōngguó rén.",
+          "spanish": "Mi amigo es chino.",
+          "lessons": [
+            2
+          ]
+        },
+        {
+          "id": "PH-277f6b067c0036fa",
+          "phraseId": "PH-277f6b067c0036fa",
+          "hanzi": "我们都是中国人。",
+          "pinyin": "Wǒmen dōu shì Zhōngguó rén.",
+          "spanish": "Todos somos chinos.",
           "lessons": [
             2
           ]
@@ -25,1444 +202,17 @@
           "phraseId": "PH-c3324d239c2c9dec",
           "hanzi": "中国的孩子真忙！",
           "pinyin": "Zhōngguó de háizi zhēn máng!",
-          "spanish": null,
+          "spanish": "¡Los niños de China están realmente ocupados!",
           "lessons": [
             3
           ]
         },
         {
-          "id": "PH-5678193b86e8724f",
-          "phraseId": "PH-5678193b86e8724f",
-          "hanzi": "您好！你们家真漂亮！",
-          "pinyin": "Nín hǎo! Nǐmen jiā zhēn piàoliang!",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-f73bf8e19f739055",
-          "phraseId": "PH-f73bf8e19f739055",
-          "hanzi": "这张照片真漂亮！这是你女儿吗？",
-          "pinyin": "Zhè zhāng zhàopiàn zhēn piàoliang! Zhè shì nǐ nǚ’ér ma?",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-524b5c04429c4b1e",
-          "phraseId": "PH-524b5c04429c4b1e",
-          "hanzi": "这张照片是谁？是你哥哥吗？真帅！",
-          "pinyin": "Zhè zhāng zhàopiàn shì shéi? Shì nǐ gēge ma? Zhēn shuài!",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-38cb5a5c806853d8",
-          "phraseId": "PH-38cb5a5c806853d8",
-          "hanzi": "真好",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-44bfd27f44455076",
-          "phraseId": "PH-44bfd27f44455076",
-          "hanzi": "真漂亮！",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-57bbb8f55826d0ec",
-          "phraseId": "PH-57bbb8f55826d0ec",
-          "hanzi": "真好吃！",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-83d03a45dceba35b",
-          "phraseId": "PH-83d03a45dceba35b",
-          "hanzi": "你女儿真漂亮！",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-1d7312c0a6661d54",
-          "phraseId": "PH-1d7312c0a6661d54",
-          "hanzi": "这张照片真漂亮！",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        }
-      ]
-    },
-    {
-      "hanzi": "你",
-      "lesson": 1,
-      "examples": [
-        {
-          "id": "PH-3ee271a44d31d36b",
-          "phraseId": "PH-3ee271a44d31d36b",
-          "hanzi": "你忙吗？",
-          "pinyin": "Nǐ máng ma?",
-          "spanish": "Estás ocupado?",
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-0b19aa18edd43b1c",
-          "phraseId": "PH-0b19aa18edd43b1c",
-          "hanzi": "你要什么？",
-          "pinyin": "Nǐ yào shénme?",
-          "spanish": "Qué quieres?",
-          "lessons": [
-            2,
-            3
-          ]
-        },
-        {
-          "id": "PH-808a684bd903648d",
-          "phraseId": "PH-808a684bd903648d",
-          "hanzi": "你在哪儿？",
-          "pinyin": "nǐ zài nǎr",
-          "spanish": "Dónde estás?",
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-89e1809d0a741109",
-          "phraseId": "PH-89e1809d0a741109",
-          "hanzi": "你姓什么？",
-          "pinyin": "nǐ xìng shénme?",
-          "spanish": "Cómo te apellidas?",
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-8dca55430d3d18ba",
-          "phraseId": "PH-8dca55430d3d18ba",
-          "hanzi": "你要咖啡吗？",
-          "pinyin": "Nǐ yào kāfēi ma?",
-          "spanish": "Quieres café?",
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-a91927cd7cc686fb",
-          "phraseId": "PH-a91927cd7cc686fb",
-          "hanzi": "你做什么工作？",
-          "pinyin": "Nǐ zuò shénme gōngzuò?",
-          "spanish": "A qué te dedicas?",
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-de301d7a1c0921cd",
-          "phraseId": "PH-de301d7a1c0921cd",
-          "hanzi": "我不太忙，你呢？",
-          "pinyin": "Wǒ bú tài máng, nĭ ne",
-          "spanish": "No estoy tan ocupado, y tú?",
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-ec84f23f710576b9",
-          "phraseId": "PH-ec84f23f710576b9",
-          "hanzi": "你会说什么语言？",
-          "pinyin": "Nǐ huì shuō shén me yǔ yán?",
-          "spanish": "Qué idioma sabes hablar?",
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-bc51409baf560fe2",
-          "phraseId": "PH-bc51409baf560fe2",
-          "hanzi": "认识你，我很高兴。",
-          "pinyin": "Rènshi nĭ, wŏ hěn gāoxìng.",
-          "spanish": "Encantado de conocerte.",
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-9fdaa233b06a6a21",
-          "phraseId": "PH-9fdaa233b06a6a21",
-          "hanzi": "我会说英语和西班牙语。你呢？",
-          "pinyin": "wǒ huì shuō yīnɡ yǔ hé xī bān yá yǔ. Nǐ ne?",
-          "spanish": "Sé hablar inglés y español. Y tú?",
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-e14e73f3df1ad125",
-          "phraseId": "PH-e14e73f3df1ad125",
-          "hanzi": "你几岁？",
-          "pinyin": "Nǐ jǐ suì?",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-1b614c51767513af",
-          "phraseId": "PH-1b614c51767513af",
-          "hanzi": "你最近好吗？",
-          "pinyin": "Nǐ zuìjìn hǎo ma?",
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-2382c8651ab50c87",
-          "phraseId": "PH-2382c8651ab50c87",
-          "hanzi": "你今年多大？",
-          "pinyin": "Nǐ jīnián duōdà?",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-35877ee19bf39065",
-          "phraseId": "PH-35877ee19bf39065",
-          "hanzi": "你是老师吗？",
-          "pinyin": "Nǐ shì lǎoshī ma?",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-41c97578d6f40db1",
-          "phraseId": "PH-41c97578d6f40db1",
-          "hanzi": "你最近忙吗？",
-          "pinyin": "Nǐ zuìjìn máng ma?",
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-68b22874368c65ef",
-          "phraseId": "PH-68b22874368c65ef",
-          "hanzi": "你今年几岁？",
-          "pinyin": "nǐ jīnnián jǐ suì?",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-b97e96764389c910",
-          "phraseId": "PH-b97e96764389c910",
-          "hanzi": "你有弟弟吗？",
-          "pinyin": "Nǐ yǒu dìdi ma?",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-078b70bbe3299e48",
-          "phraseId": "PH-078b70bbe3299e48",
-          "hanzi": "你会弹钢琴吗？",
-          "pinyin": "nǐ huì tán ɡānɡ qín ma",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-1ecb0a2d85add69f",
-          "phraseId": "PH-1ecb0a2d85add69f",
-          "hanzi": "你叫什么名字？",
-          "pinyin": "nǐ jiào shénme míngzi?",
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-6f6a649733597458",
-          "phraseId": "PH-6f6a649733597458",
-          "hanzi": "你家有几口人？",
-          "pinyin": "Nǐ jiā yǒu jǐ kǒu rén?",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-ddd87811dcdf1cf2",
-          "phraseId": "PH-ddd87811dcdf1cf2",
-          "hanzi": "那是你朋友吗？",
-          "pinyin": "Nà shì nǐ péngyou ma?",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-e48c42bc76c441d6",
-          "phraseId": "PH-e48c42bc76c441d6",
-          "hanzi": "我很好。你呢？",
-          "pinyin": "Wǒ hěn hǎo. Nǐ ne?",
-          "spanish": null,
-          "lessons": [
-            1,
-            2
-          ]
-        },
-        {
-          "id": "PH-fb58d7bbfe7950bc",
-          "phraseId": "PH-fb58d7bbfe7950bc",
-          "hanzi": "这是你弟弟吗？",
-          "pinyin": "Zhè shì nǐ dìdi ma?",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-17c00c56c6657575",
-          "phraseId": "PH-17c00c56c6657575",
-          "hanzi": "你朋友是哪国人？",
-          "pinyin": "Nĭ péngyou shì nǎ guó rén?",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-40b8d75ef94972dd",
-          "phraseId": "PH-40b8d75ef94972dd",
-          "hanzi": "你女儿今年几岁？",
-          "pinyin": "Nǐ nǚ’ér jīnnián jǐ suì?",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-676ccb0a0e5ac008",
-          "phraseId": "PH-676ccb0a0e5ac008",
-          "hanzi": "我很高兴认识你。",
-          "pinyin": "Wŏ hěn gāoxìng rènshi nĭ.",
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-9fa7bc5fbd3e3980",
-          "phraseId": "PH-9fa7bc5fbd3e3980",
-          "hanzi": "你今年多大岁数？",
-          "pinyin": "Nǐ jīnnián duōdà suìshù?",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-fd9e21b4265fa711",
-          "phraseId": "PH-fd9e21b4265fa711",
-          "hanzi": "我很忙。你忙吗？",
-          "pinyin": "Wǒ hěn máng. Nǐ máng ma?",
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-22a1fe0f4b30bc6b",
-          "phraseId": "PH-22a1fe0f4b30bc6b",
-          "hanzi": "你好，你是哪国人？",
-          "pinyin": "Nǐ hǎo, nǐ shì nǎ guó rén?",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-5142cb2d864109cd",
-          "phraseId": "PH-5142cb2d864109cd",
-          "hanzi": "我是秘鲁人。你呢？",
-          "pinyin": "Wŏ shì Bìlŭ rén. Nǐ ne?",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-7352a67fef31e1b0",
-          "phraseId": "PH-7352a67fef31e1b0",
-          "hanzi": "我学习汉语。你呢？",
-          "pinyin": "wǒ xuéxí Hànyǔ. Nǐ ne?",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-f5e8fe751cfa6748",
-          "phraseId": "PH-f5e8fe751cfa6748",
-          "hanzi": "你太太做什么工作？",
-          "pinyin": "Nǐ tàitai zuò shénme gōngzuò?",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-0f437a5676994bd1",
-          "phraseId": "PH-0f437a5676994bd1",
-          "hanzi": "谢谢。你最近怎么样？",
-          "pinyin": "Xièxie. Nǐ zuìjìn zěnmeyàng?",
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-690ab0981fa200f9",
-          "phraseId": "PH-690ab0981fa200f9",
-          "hanzi": "我姓陈。你是哪国人？",
-          "pinyin": "Wǒ xìng Chén. Nǐ shì nǎ guó rén?",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-1ae061732229eef0",
-          "phraseId": "PH-1ae061732229eef0",
-          "hanzi": "她是律师。你女朋友呢？",
-          "pinyin": "Tā shì lǜshī. Nǐ nǚpéngyou ne?",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-1f5edf8ae05ca861",
-          "phraseId": "PH-1f5edf8ae05ca861",
-          "hanzi": "贝贝是谁？是你妹妹吗？",
-          "pinyin": "Bèibei shì shéi? Shì nǐ mèimei ma?",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-1f7e03d8c0052b68",
-          "phraseId": "PH-1f7e03d8c0052b68",
-          "hanzi": "你爸爸妈妈做什么工作？",
-          "pinyin": "Nǐ bàba māma zuò shénme gōngzuò?",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-69a24d57a7e9d58f",
-          "phraseId": "PH-69a24d57a7e9d58f",
-          "hanzi": "我也很好。你是哪国人？",
-          "pinyin": "Wŏ yĕ hĕn hǎo. Nǐ shì nǎ guó rén?",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-8352a5a7ed14b333",
-          "phraseId": "PH-8352a5a7ed14b333",
-          "hanzi": "我姓林，叫林娜。你呢？",
-          "pinyin": "Wǒ xìng Lín, jiào Lín Nà. Nǐ ne?",
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-a965d860bc13904b",
-          "phraseId": "PH-a965d860bc13904b",
-          "hanzi": "我叫宋华。认识你很高兴。",
-          "pinyin": "Wǒ jiào Sòng Huá. Rènshi nǐ hěn gāoxìng.",
-          "spanish": null,
-          "lessons": [
-            1,
-            2
-          ]
-        },
-        {
-          "id": "PH-10d754ac9c07b1a5",
-          "phraseId": "PH-10d754ac9c07b1a5",
-          "hanzi": "我是中国人。你会说什么语言？",
-          "pinyin": "wǒ shì zhōnɡ ɡuó rén, nǐ huì shuō shén me yǔ yán?",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-f73bf8e19f739055",
-          "phraseId": "PH-f73bf8e19f739055",
-          "hanzi": "这张照片真漂亮！这是你女儿吗？",
-          "pinyin": "Zhè zhāng zhàopiàn zhēn piàoliang! Zhè shì nǐ nǚ’ér ma?",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-524b5c04429c4b1e",
-          "phraseId": "PH-524b5c04429c4b1e",
-          "hanzi": "这张照片是谁？是你哥哥吗？真帅！",
-          "pinyin": "Zhè zhāng zhàopiàn shì shéi? Shì nǐ gēge ma? Zhēn shuài!",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-a05b1895701f4272",
-          "phraseId": "PH-a05b1895701f4272",
-          "hanzi": "我叫马大为。请问，你叫什么名字？",
-          "pinyin": "Wǒ jiào Mǎ Dàwéi. Qǐngwèn, nǐ jiào shénme míngzi?",
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-8dcc41f26397e990",
-          "phraseId": "PH-8dcc41f26397e990",
-          "hanzi": "我们家有四口人。你看，这是我们家的照片。",
-          "pinyin": "Wǒmen jiā yǒu sì kǒu rén. Nǐ kàn, zhè shì wǒmen jiā de zhàopiàn.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-414d0363c22c3b9f",
-          "phraseId": "PH-414d0363c22c3b9f",
-          "hanzi": "这不是饺子，是包子。包子大，饺子小。你看，那是饺子。",
-          "pinyin": "Zhè bú shì jiǎozi, shì bāozi. Bāozi dà, jiǎozi xiǎo. Nǐ kàn, nà shì jiǎozi.",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-26e204b34f9170b0",
-          "phraseId": "PH-26e204b34f9170b0",
-          "hanzi": "你看！",
-          "pinyin": null,
-          "spanish": "Mira!",
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-8c56926f73e19d23",
-          "phraseId": "PH-8c56926f73e19d23",
-          "hanzi": "你在做什么？",
-          "pinyin": null,
-          "spanish": "Qué estás haciendo?",
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-1143e350dd88e415",
-          "phraseId": "PH-1143e350dd88e415",
-          "hanzi": "你朋友怎么样？",
-          "pinyin": null,
-          "spanish": "Qué tal tu amigo?",
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-4d88449c9da57cb3",
-          "phraseId": "PH-4d88449c9da57cb3",
-          "hanzi": "你刚认识她吗？",
-          "pinyin": null,
-          "spanish": "Recién conoces a ella?",
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-1219997dab866dea",
-          "phraseId": "PH-1219997dab866dea",
-          "hanzi": "你的工作是什么？",
-          "pinyin": null,
-          "spanish": "Qué es tu trabajo?",
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-17cbad2979fcb490",
-          "phraseId": "PH-17cbad2979fcb490",
-          "hanzi": "这是你男朋友吗？",
-          "pinyin": null,
-          "spanish": "Este es tu novio?",
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-3f0173814eb871be",
-          "phraseId": "PH-3f0173814eb871be",
-          "hanzi": "她是你好朋友吗？",
-          "pinyin": null,
-          "spanish": "Ella es tu buena amiga?",
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-67342172325bf451",
-          "phraseId": "PH-67342172325bf451",
-          "hanzi": "你也是秘鲁人吗？",
-          "pinyin": null,
-          "spanish": "Tú también eres de Perú?",
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-e7146ccc4a893500",
-          "phraseId": "PH-e7146ccc4a893500",
-          "hanzi": "你女儿",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-1d9adfffb6a797a3",
-          "phraseId": "PH-1d9adfffb6a797a3",
-          "hanzi": "我问你。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-c0ad5411b19cfcba",
-          "phraseId": "PH-c0ad5411b19cfcba",
-          "hanzi": "我爱你。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-daa423a1ea94e73a",
-          "phraseId": "PH-daa423a1ea94e73a",
-          "hanzi": "你是谁？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-40527056c73c4385",
-          "phraseId": "PH-40527056c73c4385",
-          "hanzi": "你认识谁？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-5339b933265e5079",
-          "phraseId": "PH-5339b933265e5079",
-          "hanzi": "你叫什么？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-b6522419f93caa17",
-          "phraseId": "PH-b6522419f93caa17",
-          "hanzi": "我喜欢你。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-0723abbd5ad5de02",
-          "phraseId": "PH-0723abbd5ad5de02",
-          "hanzi": "你有小猫吗？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-3225dd8185d6a53c",
-          "phraseId": "PH-3225dd8185d6a53c",
-          "hanzi": "你要喝什么？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-4bfca1540d0cb6c0",
-          "phraseId": "PH-4bfca1540d0cb6c0",
-          "hanzi": "你喜欢什么？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-5e670a806c2eabf2",
-          "phraseId": "PH-5e670a806c2eabf2",
-          "hanzi": "你有哥哥吗？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-8a5bb0ee133ef19a",
-          "phraseId": "PH-8a5bb0ee133ef19a",
-          "hanzi": "你不是老师。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-ef3c4eca368a59e4",
-          "phraseId": "PH-ef3c4eca368a59e4",
-          "hanzi": "我不认识你。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-16f01763eb850a95",
-          "phraseId": "PH-16f01763eb850a95",
-          "hanzi": "你有几张照片？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-22095c62ffcb923d",
-          "phraseId": "PH-22095c62ffcb923d",
-          "hanzi": "你喜欢做什么？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-4f89a179a8951c5f",
-          "phraseId": "PH-4f89a179a8951c5f",
-          "hanzi": "你吃几个包子？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-5ddf53808cc05900",
-          "phraseId": "PH-5ddf53808cc05900",
-          "hanzi": "今天你有课吗？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-83d03a45dceba35b",
-          "phraseId": "PH-83d03a45dceba35b",
-          "hanzi": "你女儿真漂亮！",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-c534d506b79b2123",
-          "phraseId": "PH-c534d506b79b2123",
-          "hanzi": "你有几个朋友？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-dbbdb6d4df5f5cc8",
-          "phraseId": "PH-dbbdb6d4df5f5cc8",
-          "hanzi": "我不忙，你呢？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-ea35121f9a613eee",
-          "phraseId": "PH-ea35121f9a613eee",
-          "hanzi": "我不会，你呢？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-5e3e7824ce6e4ec2",
-          "phraseId": "PH-5e3e7824ce6e4ec2",
-          "hanzi": "你去哪一个餐厅？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-6ec6a1461d1d711e",
-          "phraseId": "PH-6ec6a1461d1d711e",
-          "hanzi": "你要哪一张名片？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-bbcd86755bace6b0",
-          "phraseId": "PH-bbcd86755bace6b0",
-          "hanzi": "你要哪两张照片？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-bf6c6a7bf4f6fd08",
-          "phraseId": "PH-bf6c6a7bf4f6fd08",
-          "hanzi": "你要哪一张照片？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-d7f7ba6449bf50b0",
-          "phraseId": "PH-d7f7ba6449bf50b0",
-          "hanzi": "你认识几个老师？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-e0cb377e489a7036",
-          "phraseId": "PH-e0cb377e489a7036",
-          "hanzi": "我是医生，你呢？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-86cf02ee00d24bda",
-          "phraseId": "PH-86cf02ee00d24bda",
-          "hanzi": "我叫Ana，你呢？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-87fdfa07f3da8137",
-          "phraseId": "PH-87fdfa07f3da8137",
-          "hanzi": "他也很好。你忙吗？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-9d6f09a5319ce0d9",
-          "phraseId": "PH-9d6f09a5319ce0d9",
-          "hanzi": "你有贝贝的照片吗？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-0f86ec6a4240657a",
-          "phraseId": "PH-0f86ec6a4240657a",
-          "hanzi": "请问，你是中国人吗？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-1af153365ecc8887",
-          "phraseId": "PH-1af153365ecc8887",
-          "hanzi": "看那儿！你老师在那儿！",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-6f8f71ee3d2df945",
-          "phraseId": "PH-6f8f71ee3d2df945",
-          "hanzi": "我也不忙。你要喝什么？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-8033e65370cf5ecc",
-          "phraseId": "PH-8033e65370cf5ecc",
-          "hanzi": "他们都很好，你男朋友呢？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-b12d355bf3c2ca2e",
-          "phraseId": "PH-b12d355bf3c2ca2e",
-          "hanzi": "我很好。你爸爸妈妈好吗？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-ba08283d5251e8f6",
-          "phraseId": "PH-ba08283d5251e8f6",
-          "hanzi": "你说一下，你家有几口人？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-19de9d486f9805bc",
-          "phraseId": "PH-19de9d486f9805bc",
-          "hanzi": "你爸爸和你妈妈都是北京人吗？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-c4b9eaf55f0d19c6",
-          "phraseId": "PH-c4b9eaf55f0d19c6",
-          "hanzi": "你好，José，你做什么工作？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-c6bb87cf1004ddc9",
-          "phraseId": "PH-c6bb87cf1004ddc9",
-          "hanzi": "你看，这是我爸爸，那是我妈妈。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-55fea3f7d13de054",
-          "phraseId": "PH-55fea3f7d13de054",
-          "hanzi": "你好！我叫林娜。请问，你是哪国人？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-ba4a3872e19364fb",
-          "phraseId": "PH-ba4a3872e19364fb",
-          "hanzi": "你看，这是我女儿的照片，她今年八岁。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-0a4a0521f95b69ac",
-          "phraseId": "PH-0a4a0521f95b69ac",
-          "hanzi": "我叫马大为，我是美国人。你也是美国人吗？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        }
-      ]
-    },
-    {
-      "hanzi": "我",
-      "lesson": 1,
-      "examples": [
-        {
-          "id": "PH-0e81c06652f02fff",
-          "phraseId": "PH-0e81c06652f02fff",
-          "hanzi": "我很好。",
-          "pinyin": "wǒ hěn hǎo.",
-          "spanish": "Estoy bien.",
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-023319dc6989d13c",
-          "phraseId": "PH-023319dc6989d13c",
-          "hanzi": "我也很好。",
-          "pinyin": "wǒ yě hěn hǎo",
-          "spanish": "También estoy muy bien.",
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-9433697e7809f8e3",
-          "phraseId": "PH-9433697e7809f8e3",
-          "hanzi": "我是老师。",
-          "pinyin": "Wǒ shì lǎoshī.",
-          "spanish": "Soy profesora.",
-          "lessons": [
-            2,
-            3
-          ]
-        },
-        {
-          "id": "PH-a820c114c52000f9",
-          "phraseId": "PH-a820c114c52000f9",
-          "hanzi": "我叫马丽。",
-          "pinyin": "Wǒ jiào Mǎ Lì",
-          "spanish": "Me llamo Mary.",
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-af767f81801fcce5",
-          "phraseId": "PH-af767f81801fcce5",
-          "hanzi": "我要咖啡。",
-          "pinyin": "wǒ yào kāfēi.",
-          "spanish": "Quiero café.",
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-132484f21c3b8139",
-          "phraseId": "PH-132484f21c3b8139",
-          "hanzi": "她是我朋友。",
-          "pinyin": "tā shì wǒ péngyou",
-          "spanish": "Ella es mi amiga.",
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-157dc39cc03ae3dc",
-          "phraseId": "PH-157dc39cc03ae3dc",
-          "hanzi": "我去上英语课。",
-          "pinyin": "Wŏ qὺ shàng yīngyǔ kè",
-          "spanish": "Voy a tomar clase de inglés.",
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-b4e54d7c23aaf1d0",
-          "phraseId": "PH-b4e54d7c23aaf1d0",
-          "hanzi": "那是我好朋友。",
-          "pinyin": "Nà shì wǒ hǎo péngyou.",
-          "spanish": "Esa es mi buena amiga.",
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-8b42c2a6acb9815a",
-          "phraseId": "PH-8b42c2a6acb9815a",
-          "hanzi": "他手大，我手小。",
-          "pinyin": "tā shǒu dà, wǒ shǒu xiǎo.",
-          "spanish": "Su mano es grande, mi mano es pequeña.",
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-de301d7a1c0921cd",
-          "phraseId": "PH-de301d7a1c0921cd",
-          "hanzi": "我不太忙，你呢？",
-          "pinyin": "Wǒ bú tài máng, nĭ ne",
-          "spanish": "No estoy tan ocupado, y tú?",
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-bc51409baf560fe2",
-          "phraseId": "PH-bc51409baf560fe2",
-          "hanzi": "认识你，我很高兴。",
-          "pinyin": "Rènshi nĭ, wŏ hěn gāoxìng.",
-          "spanish": "Encantado de conocerte.",
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-9fdaa233b06a6a21",
-          "phraseId": "PH-9fdaa233b06a6a21",
-          "hanzi": "我会说英语和西班牙语。你呢？",
-          "pinyin": "wǒ huì shuō yīnɡ yǔ hé xī bān yá yǔ. Nǐ ne?",
-          "spanish": "Sé hablar inglés y español. Y tú?",
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-75fc00a1483a074b",
-          "phraseId": "PH-75fc00a1483a074b",
-          "hanzi": "我要茶。",
-          "pinyin": "Wǒ yào chá.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-e7ee167c98606778",
-          "phraseId": "PH-e7ee167c98606778",
-          "hanzi": "我也不忙。",
-          "pinyin": "Wǒ yě bú máng.",
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-047f9e4cb5e86d8b",
-          "phraseId": "PH-047f9e4cb5e86d8b",
-          "hanzi": "我是秘鲁人。",
-          "pinyin": "Wŏ shì Bìlŭ rén.",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-2fcbdbb92079b041",
-          "phraseId": "PH-2fcbdbb92079b041",
-          "hanzi": "我会用筷子。",
-          "pinyin": "wǒ huì yòng kuàizi",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-344fac58c01f6a02",
-          "phraseId": "PH-344fac58c01f6a02",
-          "hanzi": "是我男朋友。",
-          "pinyin": "Shì wǒ nánpéngyou.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-42f20ea8ea35de0c",
-          "phraseId": "PH-42f20ea8ea35de0c",
-          "hanzi": "我学习英语。",
-          "pinyin": "wǒ xuéxí Yīngyǔ.",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-6aacc8eb7fd70464",
-          "phraseId": "PH-6aacc8eb7fd70464",
-          "hanzi": "我不要咖啡。",
-          "pinyin": "Wǒ bú yào kāfēi.",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-7d2af040dfe7790f",
-          "phraseId": "PH-7d2af040dfe7790f",
-          "hanzi": "我今年十岁。",
-          "pinyin": "wǒ jīnnián shí suì.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-d7ce08a4fd46d540",
-          "phraseId": "PH-d7ce08a4fd46d540",
-          "hanzi": "那是我老师。",
-          "pinyin": "Nà shì wǒ lǎoshī.",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-0fa46b07401b07ce",
-          "phraseId": "PH-0fa46b07401b07ce",
-          "hanzi": "我要一杯咖啡。",
-          "pinyin": "Wǒ yào yì bēi kāfēi.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-33e998b656ad5778",
-          "phraseId": "PH-33e998b656ad5778",
-          "hanzi": "我家有七口人。",
-          "pinyin": "Wǒ jiā yǒu qī kǒu rén.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-38f6ca8078116ec2",
-          "phraseId": "PH-38f6ca8078116ec2",
-          "hanzi": "我家有五口人。",
-          "pinyin": "Wǒ jiā yǒu wǔ kǒu rén.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-5387dfd2cb5f7886",
-          "phraseId": "PH-5387dfd2cb5f7886",
-          "hanzi": "我今年三十岁。",
-          "pinyin": "wǒ jīnnián sān shí suì.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-e48c42bc76c441d6",
-          "phraseId": "PH-e48c42bc76c441d6",
-          "hanzi": "我很好。你呢？",
-          "pinyin": "Wǒ hěn hǎo. Nǐ ne?",
-          "spanish": null,
-          "lessons": [
-            1,
-            2
-          ]
-        },
-        {
-          "id": "PH-23c2c72791905b34",
-          "phraseId": "PH-23c2c72791905b34",
-          "hanzi": "我朋友是中国人。",
-          "pinyin": "Wŏ péngyou shì Zhōngguó rén.",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-44845a7f16bb7029",
-          "phraseId": "PH-44845a7f16bb7029",
-          "hanzi": "我今年二十五岁。",
-          "pinyin": "Wǒ jīnnián èrshíwǔ suì.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-4fac66dc4ef24a57",
-          "phraseId": "PH-4fac66dc4ef24a57",
-          "hanzi": "是。这是我女儿。",
-          "pinyin": "Shì. Zhè shì wǒ nǚ’ér.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-59242824d68f9036",
-          "phraseId": "PH-59242824d68f9036",
-          "hanzi": "我学习西班牙语。",
-          "pinyin": "wǒ xué xí xī bān yá yǔ",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-676ccb0a0e5ac008",
-          "phraseId": "PH-676ccb0a0e5ac008",
-          "hanzi": "我很高兴认识你。",
-          "pinyin": "Wŏ hěn gāoxìng rènshi nĭ.",
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-802e8eea15bda367",
-          "phraseId": "PH-802e8eea15bda367",
-          "hanzi": "我早上刚到北京。",
-          "pinyin": "wǒ zăoshang gāng dào Běijīng",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-8adb07789bff67a4",
-          "phraseId": "PH-8adb07789bff67a4",
-          "hanzi": "我姓宋，叫宋华。",
-          "pinyin": "Wǒ xìng Sòng, jiào Sòng Huá.",
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-f714b30b10d782a5",
-          "phraseId": "PH-f714b30b10d782a5",
-          "hanzi": "我今年七十五岁。",
-          "pinyin": "Wǒ jīnnián qīshíwǔ suì.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-fb4589c8ba855a7f",
-          "phraseId": "PH-fb4589c8ba855a7f",
-          "hanzi": "我有一个好朋友。",
-          "pinyin": "Wǒ yǒu yí ge hǎo péngyou.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-fd9e21b4265fa711",
-          "phraseId": "PH-fd9e21b4265fa711",
-          "hanzi": "我很忙。你忙吗？",
-          "pinyin": "Wǒ hěn máng. Nǐ máng ma?",
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-5142cb2d864109cd",
-          "phraseId": "PH-5142cb2d864109cd",
-          "hanzi": "我是秘鲁人。你呢？",
-          "pinyin": "Wŏ shì Bìlŭ rén. Nǐ ne?",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-7352a67fef31e1b0",
-          "phraseId": "PH-7352a67fef31e1b0",
-          "hanzi": "我学习汉语。你呢？",
-          "pinyin": "wǒ xuéxí Hànyǔ. Nǐ ne?",
-          "spanish": null,
+          "id": "PH-6f9841a7f88a21ab",
+          "phraseId": "PH-6f9841a7f88a21ab",
+          "hanzi": "我们老师是中国人。",
+          "pinyin": "Wǒmen lǎoshī shì Zhōngguó rén.",
+          "spanish": "Nuestro profesor es chino.",
           "lessons": [
             2
           ]
@@ -1472,200 +222,49 @@
           "phraseId": "PH-89f20e12f6f7484b",
           "hanzi": "我是中国人。再见。",
           "pinyin": "Wǒ shì Zhōngguó rén. Zàijiàn.",
-          "spanish": null,
+          "spanish": "Soy chino. Adiós.",
           "lessons": [
             2
           ]
         },
         {
-          "id": "PH-178e8464cbdaf3b6",
-          "phraseId": "PH-178e8464cbdaf3b6",
-          "hanzi": "她和我都是汉语老师。",
-          "pinyin": "Tā hé wǒ dōu shì Hànyǔ lǎoshī.",
-          "spanish": null,
+          "id": "PH-0f86ec6a4240657a",
+          "phraseId": "PH-0f86ec6a4240657a",
+          "hanzi": "请问，你是中国人吗？",
+          "pinyin": "Qǐngwèn, nǐ shì Zhōngguó rén ma?",
+          "spanish": "Disculpa, ¿eres chino?",
+          "lessons": [
+            2
+          ]
+        },
+        {
+          "id": "PH-2e61b180514c4b02",
+          "phraseId": "PH-2e61b180514c4b02",
+          "hanzi": "马大为有几个中国朋友？",
+          "pinyin": "Mǎ Dàwéi yǒu jǐ ge Zhōngguó péngyou?",
+          "spanish": "¿Cuántos amigos chinos tiene Ma Dawei?",
           "lessons": [
             3
           ]
         },
         {
-          "id": "PH-45083e149d8f3010",
-          "phraseId": "PH-45083e149d8f3010",
-          "hanzi": "我会西班牙语和英语。",
-          "pinyin": "wǒ huì xī bān yá yǔ hé yīnɡ yǔ",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-690ab0981fa200f9",
-          "phraseId": "PH-690ab0981fa200f9",
-          "hanzi": "我姓陈。你是哪国人？",
-          "pinyin": "Wǒ xìng Chén. Nǐ shì nǎ guó rén?",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-9d60c2539b2ec66b",
-          "phraseId": "PH-9d60c2539b2ec66b",
-          "hanzi": "我不太忙。大为好吗？",
-          "pinyin": "Wǒ bú tài máng. Dàwéi hǎo ma?",
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-e83fe94dcd79cdf6",
-          "phraseId": "PH-e83fe94dcd79cdf6",
-          "hanzi": "我弟弟学习意大利语。",
-          "pinyin": "wǒ dì di xué xí yì dà lì yǔ",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-29679f718599809e",
-          "phraseId": "PH-29679f718599809e",
-          "hanzi": "我不是老师，我是学生。",
-          "pinyin": "Wǒ búshì lǎoshī, wǒ shì xuéshēng.",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-69a24d57a7e9d58f",
-          "phraseId": "PH-69a24d57a7e9d58f",
-          "hanzi": "我也很好。你是哪国人？",
-          "pinyin": "Wŏ yĕ hĕn hǎo. Nǐ shì nǎ guó rén?",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-8352a5a7ed14b333",
-          "phraseId": "PH-8352a5a7ed14b333",
-          "hanzi": "我姓林，叫林娜。你呢？",
-          "pinyin": "Wǒ xìng Lín, jiào Lín Nà. Nǐ ne?",
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-242d7e4a67cb99d7",
-          "phraseId": "PH-242d7e4a67cb99d7",
-          "hanzi": "好，我要包子，也要饺子。",
-          "pinyin": "Hǎo, wǒ yào bāozi, yě yào jiǎozi.",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-524e2d7be8ba76be",
-          "phraseId": "PH-524e2d7be8ba76be",
-          "hanzi": "我要两个包子，一杯牛奶。",
-          "pinyin": "Wǒ yào liǎng ge bāozi, yì bēi niúnǎi.",
-          "spanish": null,
+          "id": "PH-418266aaa0acd5ff",
+          "phraseId": "PH-418266aaa0acd5ff",
+          "hanzi": "他叫宋华，他是中国人。",
+          "pinyin": "Tā jiào Sòng Huá, tā shì Zhōngguó rén.",
+          "spanish": "Él se llama Song Hua y es chino.",
           "lessons": [
             3
           ]
         },
         {
-          "id": "PH-a965d860bc13904b",
-          "phraseId": "PH-a965d860bc13904b",
-          "hanzi": "我叫宋华。认识你很高兴。",
-          "pinyin": "Wǒ jiào Sòng Huá. Rènshi nǐ hěn gāoxìng.",
-          "spanish": null,
-          "lessons": [
-            1,
-            2
-          ]
-        },
-        {
-          "id": "PH-a9a1b25303da44ce",
-          "phraseId": "PH-a9a1b25303da44ce",
-          "hanzi": "我没有哥哥，也没有姐姐。",
-          "pinyin": "Wǒ méiyǒu gēge, yě méiyǒu jiějie.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-b0957295d4abc71b",
-          "phraseId": "PH-b0957295d4abc71b",
-          "hanzi": "约翰是我的狗，今年两岁。",
-          "pinyin": "Yuēhàn shì wǒ de gǒu, jīnnián liǎng suì.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-c5cfe5e5b205152f",
-          "phraseId": "PH-c5cfe5e5b205152f",
-          "hanzi": "好，我要饺子，也要包子。",
-          "pinyin": "Hǎo, wǒ yào jiǎozi, yě yào bāozi.",
-          "spanish": null,
+          "id": "PH-6a546fd1197b011a",
+          "phraseId": "PH-6a546fd1197b011a",
+          "hanzi": "她是我朋友，她是中国人。",
+          "pinyin": "Tā shì wǒ péngyou, tā shì Zhōngguó rén.",
+          "spanish": "Ella es mi amiga, es de China.",
           "lessons": [
             2
-          ]
-        },
-        {
-          "id": "PH-15e6b206f6e02736",
-          "phraseId": "PH-15e6b206f6e02736",
-          "hanzi": "这不是我弟弟。这是我哥哥。",
-          "pinyin": "Zhè bú shì wǒ dìdi, zhè shì wǒ gēge.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-38e7e65bebc34f6a",
-          "phraseId": "PH-38e7e65bebc34f6a",
-          "hanzi": "我会汉语和一点儿西班牙语。",
-          "pinyin": "wǒ huì hàn yǔ hé yì diǎnr xī bān yá yǔ",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-4a63b9623c9c3cde",
-          "phraseId": "PH-4a63b9623c9c3cde",
-          "hanzi": "我爸爸是医生，妈妈是老师。",
-          "pinyin": "Wǒ bàba shì yīshēng, māma shì lǎoshī.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-6117b49a9bfca6b0",
-          "phraseId": "PH-6117b49a9bfca6b0",
-          "hanzi": "我没有弟弟，我有一个哥哥。",
-          "pinyin": "Wǒ méiyǒu dìdi, wǒ yǒu yíge gēge.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-007f1261b0953697",
-          "phraseId": "PH-007f1261b0953697",
-          "hanzi": "我有一个姐姐，还有一个妹妹。",
-          "pinyin": "Wǒ yǒu yí ge jiějie, hái yǒu yí ge mèimei.",
-          "spanish": null,
-          "lessons": [
-            3
           ]
         },
         {
@@ -1673,89 +272,59 @@
           "phraseId": "PH-10d754ac9c07b1a5",
           "hanzi": "我是中国人。你会说什么语言？",
           "pinyin": "wǒ shì zhōnɡ ɡuó rén, nǐ huì shuō shén me yǔ yán?",
-          "spanish": null,
+          "spanish": "Soy chino. ¿Qué idiomas sabes hablar?",
           "lessons": [
             2
           ]
         },
         {
-          "id": "PH-f26418fd16237858",
-          "phraseId": "PH-f26418fd16237858",
-          "hanzi": "我没有妹妹，贝贝是我的小狗。",
-          "pinyin": "Wǒ méiyǒu mèimei, Bèibei shì wǒ de xiǎogǒu.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-e933b4d99ff4bf1e",
-          "phraseId": "PH-e933b4d99ff4bf1e",
-          "hanzi": "我家有三口人，爸爸、妈妈和我。",
-          "pinyin": "Wǒ jiā yǒu sān kǒu rén, bàba, māma hé wǒ.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-a05b1895701f4272",
-          "phraseId": "PH-a05b1895701f4272",
-          "hanzi": "我叫马大为。请问，你叫什么名字？",
-          "pinyin": "Wǒ jiào Mǎ Dàwéi. Qǐngwèn, nǐ jiào shénme míngzi?",
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-11e351a94af9204a",
-          "phraseId": "PH-11e351a94af9204a",
-          "hanzi": "我的老师是陈老师，我们都很喜欢她。",
-          "pinyin": "Wǒ de lǎoshī shì Chén lǎoshī, wǒmen dōu hěn xǐhuan tā.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-d3b3338b0361002c",
-          "phraseId": "PH-d3b3338b0361002c",
-          "hanzi": "这是马大为，他是我朋友，刚到北京。",
-          "pinyin": "Zhè shì Mǎ Dàwéi, tā shì wǒ péngyou, gāng dào Běijīng.",
-          "spanish": null,
+          "id": "PH-50a14a4162b1dfc9",
+          "phraseId": "PH-50a14a4162b1dfc9",
+          "hanzi": "我不是中国人，我是加拿大人。",
+          "pinyin": "Wǒ bú shì Zhōngguó rén, wǒ shì Jiānádà rén.",
+          "spanish": "No soy chino, soy canadiense.",
           "lessons": [
             2
           ]
         },
         {
-          "id": "PH-0bee41504f87d636",
-          "phraseId": "PH-0bee41504f87d636",
-          "hanzi": "我妈妈是北京人，她喜欢吃面条和饺子。",
-          "pinyin": "Wǒ māma shì Běijīng rén, tā xǐhuan chī miàntiáo hé jiǎozi.",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-dae60f8dfb9a535f",
-          "phraseId": "PH-dae60f8dfb9a535f",
-          "hanzi": "大家好！我姓马，叫马大为，是美国人。",
-          "pinyin": "Dàjiā hǎo! Wǒ xìng Mǎ, jiào Mǎ Dàwéi, shì Měiguórén.",
-          "spanish": null,
+          "id": "PH-f68c2cdd84eb9e41",
+          "phraseId": "PH-f68c2cdd84eb9e41",
+          "hanzi": "那儿有十个人，哪3个是中国人？",
+          "pinyin": "Nàr yǒu shí ge rén, nǎ sān ge shì Zhōngguó rén?",
+          "spanish": "Allí hay diez personas. ¿Cuáles tres son chinas?",
           "lessons": [
             3
           ]
         },
         {
-          "id": "PH-09cb5a21fffc1281",
-          "phraseId": "PH-09cb5a21fffc1281",
-          "hanzi": "我妈妈是北京人，她喜欢吃面条儿和饺子。",
-          "pinyin": "Wǒ māma shì Běijīng rén, tā xǐhuan chī miàntiáor hé jiǎozi.",
-          "spanish": null,
+          "id": "PH-38a70cc14651018b",
+          "phraseId": "PH-38a70cc14651018b",
+          "hanzi": "马大为有几个中国朋友？他们都是谁？",
+          "pinyin": "Mǎ Dàwéi yǒu jǐ ge Zhōngguó péngyou? Tāmen dōu shì shéi?",
+          "spanish": "¿Cuántos amigos chinos tiene Ma Dawei? ¿Quiénes son todos ellos?",
+          "lessons": [
+            3
+          ]
+        },
+        {
+          "id": "PH-a41ebfbf3e722e7e",
+          "phraseId": "PH-a41ebfbf3e722e7e",
+          "hanzi": "他们也不是中国人，他们都是韩国人。",
+          "pinyin": "Tāmen yě bú shì Zhōngguó rén, tāmen dōu shì Hánguó rén.",
+          "spanish": "Ellos tampoco son chinos; todos son surcoreanos.",
           "lessons": [
             2
+          ]
+        },
+        {
+          "id": "PH-d070e1a730c53cf4",
+          "phraseId": "PH-d070e1a730c53cf4",
+          "hanzi": "她有一个中国朋友，还有一个秘鲁朋友。",
+          "pinyin": "Tā yǒu yí ge Zhōngguó péngyou, hái yǒu yí ge Bìlǔ péngyou.",
+          "spanish": "Ella tiene un amigo chino y también un amigo peruano.",
+          "lessons": [
+            3
           ]
         },
         {
@@ -1763,1037 +332,17 @@
           "phraseId": "PH-ef23bf3cb038cc39",
           "hanzi": "我有三个中国朋友，王小云、宋华和陆雨平。",
           "pinyin": "Wǒ yǒu sān ge Zhōngguó péngyou, Wáng Xiǎoyún, Sòng Huá hé Lù Yǔpíng.",
-          "spanish": null,
+          "spanish": "Tengo tres amigos chinos: Wang Xiaoyun, Song Hua y Lu Yuping.",
           "lessons": [
             3
-          ]
-        },
-        {
-          "id": "PH-17071362f2fae7c7",
-          "phraseId": "PH-17071362f2fae7c7",
-          "hanzi": "好吃。我爸爸是上海人，他喜欢吃点心和米饭。",
-          "pinyin": "Hǎochī. Wǒ bàba shì Shànghǎi rén, tā xǐhuan chī diǎnxin hé mǐfàn.",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-80725cf32b4c9885",
-          "phraseId": "PH-80725cf32b4c9885",
-          "hanzi": "我爸爸是律师，我妈妈是工程师，我哥哥是经理。",
-          "pinyin": "Wǒ bàba shì lǜshī, wǒ māma shì gōngchéngshī, wǒ gēge shì jīnglǐ.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-3bd601533f50ac73",
-          "phraseId": "PH-3bd601533f50ac73",
-          "hanzi": "这不是我弟弟。这是我哥哥。林娜，你们家有几口人？",
-          "pinyin": "Zhè bú shì wǒ dìdi. Zhè shì wǒ gēge. Lín Nà, nǐmen jiā yǒu jǐ kǒu rén?",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-e0ed09abc679978f",
-          "phraseId": "PH-e0ed09abc679978f",
-          "hanzi": "我是美国人。我也学习汉语。陈老师，认识您很高兴。",
-          "pinyin": "Wǒ shì Měiguó rén. Wǒ yě xuéxí Hànyǔ. Chén lǎoshī, rènshi nín hěn gāoxìng.",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-c72459420412ca24",
-          "phraseId": "PH-c72459420412ca24",
-          "hanzi": "我们家一共有六口人：妈妈、一个哥哥、两个姐姐和我，还有贝贝。",
-          "pinyin": "Wǒmen jiā yígòng yǒu liù kǒu rén: māma, yí ge gēge, liǎng ge jiějie hé wǒ, hái yǒu Bèibei.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-872c9604d392c72b",
-          "phraseId": "PH-872c9604d392c72b",
-          "hanzi": "我们家一共有五口人，爸爸、妈妈、哥哥和我，还有约翰（John）。",
-          "pinyin": "Wǒmen jiā yígòng yǒu wǔ kǒu rén, bàba, māma, gēge hé wǒ, hái yǒu Yuēhàn.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-1218ea1bb844e47e",
-          "phraseId": "PH-1218ea1bb844e47e",
-          "hanzi": "我姓王。",
-          "pinyin": null,
-          "spanish": "Me apellido Wang.",
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-40c711d184f7cec1",
-          "phraseId": "PH-40c711d184f7cec1",
-          "hanzi": "我在学汉语。",
-          "pinyin": null,
-          "spanish": "Estoy estudiando chino.",
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-43096e649309e184",
-          "phraseId": "PH-43096e649309e184",
-          "hanzi": "这是我朋友。",
-          "pinyin": null,
-          "spanish": "Este es mi amigo.",
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-4defbc45316db82f",
-          "phraseId": "PH-4defbc45316db82f",
-          "hanzi": "我朋友很忙。",
-          "pinyin": null,
-          "spanish": "Mi amigo está muy ocupado.",
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-757e42284db04bad",
-          "phraseId": "PH-757e42284db04bad",
-          "hanzi": "我刚认识她。",
-          "pinyin": null,
-          "spanish": "Recién la conozco.",
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-a42c2a1e7eca56fb",
-          "phraseId": "PH-a42c2a1e7eca56fb",
-          "hanzi": "这是我老师。",
-          "pinyin": null,
-          "spanish": "Es mi profesora.",
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-6e0bdaedaae26d96",
-          "phraseId": "PH-6e0bdaedaae26d96",
-          "hanzi": "他不是我男朋友。",
-          "pinyin": null,
-          "spanish": "No es mi novio.",
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-6a546fd1197b011a",
-          "phraseId": "PH-6a546fd1197b011a",
-          "hanzi": "她是我朋友，她是中国人。",
-          "pinyin": null,
-          "spanish": "Ella es mi amiga, es de China.",
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-7c23a9170c497a74",
-          "phraseId": "PH-7c23a9170c497a74",
-          "hanzi": "我有两个姐姐，还有一个哥哥。",
-          "pinyin": null,
-          "spanish": "Tengo dos hermanas mayores y un hermano mayor.",
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-5718924a5c3d7147",
-          "phraseId": "PH-5718924a5c3d7147",
-          "hanzi": "我妈妈",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-6d95e5a7bece002c",
-          "phraseId": "PH-6d95e5a7bece002c",
-          "hanzi": "我会。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-0d6b47c02734f44a",
-          "phraseId": "PH-0d6b47c02734f44a",
-          "hanzi": "我18岁",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-0f1fe99c42367990",
-          "phraseId": "PH-0f1fe99c42367990",
-          "hanzi": "我不忙。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-1107bd0f3e757d67",
-          "phraseId": "PH-1107bd0f3e757d67",
-          "hanzi": "我的工作",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-1d9adfffb6a797a3",
-          "phraseId": "PH-1d9adfffb6a797a3",
-          "hanzi": "我问你。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-c0ad5411b19cfcba",
-          "phraseId": "PH-c0ad5411b19cfcba",
-          "hanzi": "我爱你。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-15dd91d598676096",
-          "phraseId": "PH-15dd91d598676096",
-          "hanzi": "这是我家。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-2c74d0560f5d218b",
-          "phraseId": "PH-2c74d0560f5d218b",
-          "hanzi": "我在大学。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-b6522419f93caa17",
-          "phraseId": "PH-b6522419f93caa17",
-          "hanzi": "我喜欢你。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-bc5730b2cd980fc9",
-          "phraseId": "PH-bc5730b2cd980fc9",
-          "hanzi": "我是医生。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-520c81ad9e8f30ac",
-          "phraseId": "PH-520c81ad9e8f30ac",
-          "hanzi": "我叫陆雨平。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-5ea6f6e1b264c1e3",
-          "phraseId": "PH-5ea6f6e1b264c1e3",
-          "hanzi": "我家在秘鲁。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-d422e738a385e395",
-          "phraseId": "PH-d422e738a385e395",
-          "hanzi": "我最近很好。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-dbfe1c7dcfa46a88",
-          "phraseId": "PH-dbfe1c7dcfa46a88",
-          "hanzi": "我没有妹妹。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-e5977a9603ee4461",
-          "phraseId": "PH-e5977a9603ee4461",
-          "hanzi": "一张我的照片",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-ef3c4eca368a59e4",
-          "phraseId": "PH-ef3c4eca368a59e4",
-          "hanzi": "我不认识你。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-00b310c628c20893",
-          "phraseId": "PH-00b310c628c20893",
-          "hanzi": "我是Elsa。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-010aaa777ed73839",
-          "phraseId": "PH-010aaa777ed73839",
-          "hanzi": "这是我的咖啡。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-1196452af4212b68",
-          "phraseId": "PH-1196452af4212b68",
-          "hanzi": "我有一个朋友。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-1535ec3db7ab0660",
-          "phraseId": "PH-1535ec3db7ab0660",
-          "hanzi": "我叫Elsa。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-19191003dd86430b",
-          "phraseId": "PH-19191003dd86430b",
-          "hanzi": "我也没有工作。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-419492ad047da29b",
-          "phraseId": "PH-419492ad047da29b",
-          "hanzi": "我也学习汉语。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-5afa8290e052c6ed",
-          "phraseId": "PH-5afa8290e052c6ed",
-          "hanzi": "我有一个哥哥。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-6a4629c0ff5c55ca",
-          "phraseId": "PH-6a4629c0ff5c55ca",
-          "hanzi": "我有三个朋友。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-6fc2fb2edfc09543",
-          "phraseId": "PH-6fc2fb2edfc09543",
-          "hanzi": "我家有三口人。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-742deae046d167a8",
-          "phraseId": "PH-742deae046d167a8",
-          "hanzi": "我家有两口人。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-8a521d1cc6f1f414",
-          "phraseId": "PH-8a521d1cc6f1f414",
-          "hanzi": "我是大学老师。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-9847e5a3bdfca22b",
-          "phraseId": "PH-9847e5a3bdfca22b",
-          "hanzi": "我妈妈是医生。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-d77ec547e0aea18e",
-          "phraseId": "PH-d77ec547e0aea18e",
-          "hanzi": "我有六张照片。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-dbbdb6d4df5f5cc8",
-          "phraseId": "PH-dbbdb6d4df5f5cc8",
-          "hanzi": "我不忙，你呢？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-df11ddad3d1a2350",
-          "phraseId": "PH-df11ddad3d1a2350",
-          "hanzi": "我吃三个包子。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-ea35121f9a613eee",
-          "phraseId": "PH-ea35121f9a613eee",
-          "hanzi": "我不会，你呢？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-f0819a7411f37ebe",
-          "phraseId": "PH-f0819a7411f37ebe",
-          "hanzi": "我爱上汉语课！",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-1e54d174a79a023c",
-          "phraseId": "PH-1e54d174a79a023c",
-          "hanzi": "我不忙，你们呢？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-21d39b242e0a921b",
-          "phraseId": "PH-21d39b242e0a921b",
-          "hanzi": "我喜欢上汉语课！",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-28ab0a1e5f8955c4",
-          "phraseId": "PH-28ab0a1e5f8955c4",
-          "hanzi": "我现在没有工作。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-681f699728c0f4ce",
-          "phraseId": "PH-681f699728c0f4ce",
-          "hanzi": "我有两个好老师。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-982b776dc7a6daf2",
-          "phraseId": "PH-982b776dc7a6daf2",
-          "hanzi": "我很爱我的家人。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-cc4b99a6e8b7ef8e",
-          "phraseId": "PH-cc4b99a6e8b7ef8e",
-          "hanzi": "我认识两个老师。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-e0cb377e489a7036",
-          "phraseId": "PH-e0cb377e489a7036",
-          "hanzi": "我是医生，你呢？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-2b9f690287e6046e",
-          "phraseId": "PH-2b9f690287e6046e",
-          "hanzi": "我不认识这个孩子。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-47b4f1fdd5cca7b0",
-          "phraseId": "PH-47b4f1fdd5cca7b0",
-          "hanzi": "我家一共有五口人。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-574c58b8bc464697",
-          "phraseId": "PH-574c58b8bc464697",
-          "hanzi": "我姓丁，叫丁力波。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-86cf02ee00d24bda",
-          "phraseId": "PH-86cf02ee00d24bda",
-          "hanzi": "我叫Ana，你呢？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-b11f46d37b8c5cd8",
-          "phraseId": "PH-b11f46d37b8c5cd8",
-          "hanzi": "我没有贝贝的照片。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-dbaa9df46821936a",
-          "phraseId": "PH-dbaa9df46821936a",
-          "hanzi": "我要咖啡。那是谁？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-eb2497965c79f7a0",
-          "phraseId": "PH-eb2497965c79f7a0",
-          "hanzi": "我和林娜都不太忙。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-4027da68c42bb425",
-          "phraseId": "PH-4027da68c42bb425",
-          "hanzi": "我有一只可爱的小狗。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-6f8f71ee3d2df945",
-          "phraseId": "PH-6f8f71ee3d2df945",
-          "hanzi": "我也不忙。你要喝什么？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-94c8416302bdade4",
-          "phraseId": "PH-94c8416302bdade4",
-          "hanzi": "我认识一个很帅的男生。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-a68aa33a9219f6cc",
-          "phraseId": "PH-a68aa33a9219f6cc",
-          "hanzi": "这是宋华，他是我朋友。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-bca3a6d5401f6fae",
-          "phraseId": "PH-bca3a6d5401f6fae",
-          "hanzi": "我爸爸妈妈都是上海人。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-1952dcf99ebdfbc7",
-          "phraseId": "PH-1952dcf99ebdfbc7",
-          "hanzi": "这是我同学，你们认识吗？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-43d85a81bcd516af",
-          "phraseId": "PH-43d85a81bcd516af",
-          "hanzi": "我有一个很有意思的朋友。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-ac8419a5c7ef3a53",
-          "phraseId": "PH-ac8419a5c7ef3a53",
-          "hanzi": "我学习汉语，还学习英语。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-b12d355bf3c2ca2e",
-          "phraseId": "PH-b12d355bf3c2ca2e",
-          "hanzi": "我很好。你爸爸妈妈好吗？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-c17f8ece1657ee43",
-          "phraseId": "PH-c17f8ece1657ee43",
-          "hanzi": "我爸爸和我妈妈也都很忙。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-268d63850b817551",
-          "phraseId": "PH-268d63850b817551",
-          "hanzi": "我认识马大为，还认识林娜。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-4ede4839fc13f6d9",
-          "phraseId": "PH-4ede4839fc13f6d9",
-          "hanzi": "我有两只小猫，他们很可爱。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-6cb0b98e28883cc2",
-          "phraseId": "PH-6cb0b98e28883cc2",
-          "hanzi": "我和大为、林娜都学习汉语。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-92583108e109bb97",
-          "phraseId": "PH-92583108e109bb97",
-          "hanzi": "我叫丁力波，我是加拿大人。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-989d91002ccad248",
-          "phraseId": "PH-989d91002ccad248",
-          "hanzi": "这是我哥哥，他叫José。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-c79a3af83ba4f458",
-          "phraseId": "PH-c79a3af83ba4f458",
-          "hanzi": "我不是美国人，我是英国人。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-e7cf790906b8bc0f",
-          "phraseId": "PH-e7cf790906b8bc0f",
-          "hanzi": "我弟弟今年九岁，他很可爱。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-0299de26ba71d037",
-          "phraseId": "PH-0299de26ba71d037",
-          "hanzi": "我叫张华，这是我们家的照片。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-50a14a4162b1dfc9",
-          "phraseId": "PH-50a14a4162b1dfc9",
-          "hanzi": "我不是中国人，我是加拿大人。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-512a031d3cbcb613",
-          "phraseId": "PH-512a031d3cbcb613",
-          "hanzi": "我有一个哥哥，还有两个弟弟。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-66222b4efbda8371",
-          "phraseId": "PH-66222b4efbda8371",
-          "hanzi": "我也喜欢吃饺子，饺子很好吃。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-82f3ddb0072f158d",
-          "phraseId": "PH-82f3ddb0072f158d",
-          "hanzi": "我认识张老师，还认识王老师。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-b0b39331167a0d1a",
-          "phraseId": "PH-b0b39331167a0d1a",
-          "hanzi": "今天我有汉语课，还有英语课。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-e07e89ca235add34",
-          "phraseId": "PH-e07e89ca235add34",
-          "hanzi": "我妈妈是医生，我姐姐是老师。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-08ebc51b56bee0f7",
-          "phraseId": "PH-08ebc51b56bee0f7",
-          "hanzi": "我家有三口人，妈妈、爸爸和我。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-c6bb87cf1004ddc9",
-          "phraseId": "PH-c6bb87cf1004ddc9",
-          "hanzi": "你看，这是我爸爸，那是我妈妈。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-f80015ab4f607e1f",
-          "phraseId": "PH-f80015ab4f607e1f",
-          "hanzi": "我妈妈是广州人，她喜欢吃点心。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-3bcc811cfa95b8fb",
-          "phraseId": "PH-3bcc811cfa95b8fb",
-          "hanzi": "这是大卫，他是我朋友，刚到上海。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-c6c0f7c5d93b5d3b",
-          "phraseId": "PH-c6c0f7c5d93b5d3b",
-          "hanzi": "我爸爸是西安人，他喜欢吃面条儿。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-9c722672c6320e44",
-          "phraseId": "PH-9c722672c6320e44",
-          "hanzi": "那是林娜，她也是我朋友，她是英国人。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-a5513207747d4b59",
-          "phraseId": "PH-a5513207747d4b59",
-          "hanzi": "这是马大为，他是我朋友，他是美国人。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-ba4a3872e19364fb",
-          "phraseId": "PH-ba4a3872e19364fb",
-          "hanzi": "你看，这是我女儿的照片，她今年八岁。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-0a4a0521f95b69ac",
-          "phraseId": "PH-0a4a0521f95b69ac",
-          "hanzi": "我叫马大为，我是美国人。你也是美国人吗？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-9fc15b77ce62ff22",
-          "phraseId": "PH-9fc15b77ce62ff22",
-          "hanzi": "我爸爸是律师，我妈妈是记者，他们都很忙。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-70c12ea926129695",
-          "phraseId": "PH-70c12ea926129695",
-          "hanzi": "我有两张名片，一张是西班牙语，一张是英语。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-957c3bba2f455b44",
-          "phraseId": "PH-957c3bba2f455b44",
-          "hanzi": "我家有四口人，我妈妈、我爸爸、我哥哥和我。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-9058c8a9a20182e0",
-          "phraseId": "PH-9058c8a9a20182e0",
-          "hanzi": "我们家有五口人，爸爸、妈妈、姐姐、弟弟和我。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-c6cbb442724ed2ca",
-          "phraseId": "PH-c6cbb442724ed2ca",
-          "hanzi": "我妈妈喜欢看书，我姐姐喜欢看电影，我喜欢唱歌。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-b0770b4924878746",
-          "phraseId": "PH-b0770b4924878746",
-          "hanzi": "那是我朋友，她是外语老师，他会说汉语和西班牙语。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
           ]
         },
         {
           "id": "PH-807325262fffd695",
           "phraseId": "PH-807325262fffd695",
           "hanzi": "这儿有一张我家的照片，我家一共有三口人，我们都是中国人。",
-          "pinyin": null,
-          "spanish": null,
+          "pinyin": "Zhèr yǒu yì zhāng wǒ jiā de zhàopiàn, wǒ jiā yígòng yǒu sān kǒu rén, wǒmen dōu shì Zhōngguó rén.",
+          "spanish": "Aquí hay una foto de mi familia. En mi familia somos tres en total y todos somos chinos.",
           "lessons": [
             3
           ]
@@ -2802,8 +351,8 @@
           "id": "PH-5e7ef40485ce204a",
           "phraseId": "PH-5e7ef40485ce204a",
           "hanzi": "大家好，我叫张王冉，我是中国人，我是汉语老师，我在秘鲁工作，我很喜欢我的工作。",
-          "pinyin": null,
-          "spanish": null,
+          "pinyin": "Dàjiā hǎo, wǒ jiào Zhāng Wángrǎn, wǒ shì Zhōngguó rén, wǒ shì Hànyǔ lǎoshī, wǒ zài Bìlǔ gōngzuò, wǒ hěn xǐhuan wǒ de gōngzuò.",
+          "spanish": "Hola a todos. Me llamo Zhang Wangran, soy de China y enseño chino. Trabajo en Perú y me gusta mucho mi trabajo.",
           "lessons": [
             3
           ]
@@ -2811,378 +360,18 @@
       ]
     },
     {
-      "hanzi": "好",
-      "lesson": 1,
+      "id": "v-马马虎虎",
+      "hanzi": "马马虎虎",
+      "canonicalLesson": 1,
       "examples": [
         {
-          "id": "PH-0e81c06652f02fff",
-          "phraseId": "PH-0e81c06652f02fff",
-          "hanzi": "我很好。",
-          "pinyin": "wǒ hěn hǎo.",
-          "spanish": "Estoy bien.",
+          "id": "PH-2327ca3bcdbaefd6",
+          "phraseId": "PH-2327ca3bcdbaefd6",
+          "hanzi": "马马虎虎。",
+          "pinyin": "Mǎma hūhu.",
+          "spanish": "Más o menos.",
           "lessons": [
             1
-          ]
-        },
-        {
-          "id": "PH-023319dc6989d13c",
-          "phraseId": "PH-023319dc6989d13c",
-          "hanzi": "我也很好。",
-          "pinyin": "wǒ yě hěn hǎo",
-          "spanish": "También estoy muy bien.",
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-b4e54d7c23aaf1d0",
-          "phraseId": "PH-b4e54d7c23aaf1d0",
-          "hanzi": "那是我好朋友。",
-          "pinyin": "Nà shì wǒ hǎo péngyou.",
-          "spanish": "Esa es mi buena amiga.",
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-609bc0751d56eb46",
-          "phraseId": "PH-609bc0751d56eb46",
-          "hanzi": "您好！",
-          "pinyin": "Nín hǎo",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-d36d24a8a0e932b0",
-          "phraseId": "PH-d36d24a8a0e932b0",
-          "hanzi": "你们好！",
-          "pinyin": "Nǐmen hǎo!",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-6df8b6bf89d466a0",
-          "phraseId": "PH-6df8b6bf89d466a0",
-          "hanzi": "他也很好。",
-          "pinyin": "Tā yě hěn hǎo.",
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-1b614c51767513af",
-          "phraseId": "PH-1b614c51767513af",
-          "hanzi": "你最近好吗？",
-          "pinyin": "Nǐ zuìjìn hǎo ma?",
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-111091909a211bb7",
-          "phraseId": "PH-111091909a211bb7",
-          "hanzi": "你们好！请进！",
-          "pinyin": "Nǐmen hǎo! Qǐng jìn!",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-1554e3b089746db5",
-          "phraseId": "PH-1554e3b089746db5",
-          "hanzi": "您好！您贵姓？",
-          "pinyin": "Nín hǎo! Nín guì xìng?",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-2c5108b99f0c00e3",
-          "phraseId": "PH-2c5108b99f0c00e3",
-          "hanzi": "老师，早上好！",
-          "pinyin": "Lǎoshī, zǎoshang hǎo!",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-e48c42bc76c441d6",
-          "phraseId": "PH-e48c42bc76c441d6",
-          "hanzi": "我很好。你呢？",
-          "pinyin": "Wǒ hěn hǎo. Nǐ ne?",
-          "spanish": null,
-          "lessons": [
-            1,
-            2
-          ]
-        },
-        {
-          "id": "PH-fb4589c8ba855a7f",
-          "phraseId": "PH-fb4589c8ba855a7f",
-          "hanzi": "我有一个好朋友。",
-          "pinyin": "Wǒ yǒu yí ge hǎo péngyou.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-22a1fe0f4b30bc6b",
-          "phraseId": "PH-22a1fe0f4b30bc6b",
-          "hanzi": "你好，你是哪国人？",
-          "pinyin": "Nǐ hǎo, nǐ shì nǎ guó rén?",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-5678193b86e8724f",
-          "phraseId": "PH-5678193b86e8724f",
-          "hanzi": "您好！你们家真漂亮！",
-          "pinyin": "Nín hǎo! Nǐmen jiā zhēn piàoliang!",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-9d60c2539b2ec66b",
-          "phraseId": "PH-9d60c2539b2ec66b",
-          "hanzi": "我不太忙。大为好吗？",
-          "pinyin": "Wǒ bú tài máng. Dàwéi hǎo ma?",
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-d0443e7aa5d3b780",
-          "phraseId": "PH-d0443e7aa5d3b780",
-          "hanzi": "您好！老师，您贵姓？",
-          "pinyin": "Nín hǎo! Lǎoshī, nín guìxìng?",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-69a24d57a7e9d58f",
-          "phraseId": "PH-69a24d57a7e9d58f",
-          "hanzi": "我也很好。你是哪国人？",
-          "pinyin": "Wŏ yĕ hĕn hǎo. Nǐ shì nǎ guó rén?",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-242d7e4a67cb99d7",
-          "phraseId": "PH-242d7e4a67cb99d7",
-          "hanzi": "好，我要包子，也要饺子。",
-          "pinyin": "Hǎo, wǒ yào bāozi, yě yào jiǎozi.",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-c5cfe5e5b205152f",
-          "phraseId": "PH-c5cfe5e5b205152f",
-          "hanzi": "好，我要饺子，也要包子。",
-          "pinyin": "Hǎo, wǒ yào jiǎozi, yě yào bāozi.",
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-dae60f8dfb9a535f",
-          "phraseId": "PH-dae60f8dfb9a535f",
-          "hanzi": "大家好！我姓马，叫马大为，是美国人。",
-          "pinyin": "Dàjiā hǎo! Wǒ xìng Mǎ, jiào Mǎ Dàwéi, shì Měiguórén.",
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-3f0173814eb871be",
-          "phraseId": "PH-3f0173814eb871be",
-          "hanzi": "她是你好朋友吗？",
-          "pinyin": null,
-          "spanish": "Ella es tu buena amiga?",
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-38cb5a5c806853d8",
-          "phraseId": "PH-38cb5a5c806853d8",
-          "hanzi": "真好",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-aa94cc5a58cda010",
-          "phraseId": "PH-aa94cc5a58cda010",
-          "hanzi": "他很好。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-ce204bfb9a904222",
-          "phraseId": "PH-ce204bfb9a904222",
-          "hanzi": "老师好！",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-3ba9166a1621e895",
-          "phraseId": "PH-3ba9166a1621e895",
-          "hanzi": "大为也很好。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-d422e738a385e395",
-          "phraseId": "PH-d422e738a385e395",
-          "hanzi": "我最近很好。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-661e71f6c42f8a0d",
-          "phraseId": "PH-661e71f6c42f8a0d",
-          "hanzi": "王老师太好了！",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-681f699728c0f4ce",
-          "phraseId": "PH-681f699728c0f4ce",
-          "hanzi": "我有两个好老师。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-87fdfa07f3da8137",
-          "phraseId": "PH-87fdfa07f3da8137",
-          "hanzi": "他也很好。你忙吗？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-b7ed43f5106e0062",
-          "phraseId": "PH-b7ed43f5106e0062",
-          "hanzi": "他有三个很好的朋友。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-bd1b39ebaa837322",
-          "phraseId": "PH-bd1b39ebaa837322",
-          "hanzi": "丁力波和马大为都很好。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-01f2cd90002411b4",
-          "phraseId": "PH-01f2cd90002411b4",
-          "hanzi": "王老师是一个很好的老师。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-8033e65370cf5ecc",
-          "phraseId": "PH-8033e65370cf5ecc",
-          "hanzi": "他们都很好，你男朋友呢？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-b12d355bf3c2ca2e",
-          "phraseId": "PH-b12d355bf3c2ca2e",
-          "hanzi": "我很好。你爸爸妈妈好吗？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            2
-          ]
-        },
-        {
-          "id": "PH-c4b9eaf55f0d19c6",
-          "phraseId": "PH-c4b9eaf55f0d19c6",
-          "hanzi": "你好，José，你做什么工作？",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
-          ]
-        },
-        {
-          "id": "PH-4089b2b12c3df13d",
-          "phraseId": "PH-4089b2b12c3df13d",
-          "hanzi": "大为很好，丁力波很忙，林娜不太忙，她也很好。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            1
-          ]
-        },
-        {
-          "id": "PH-5e7ef40485ce204a",
-          "phraseId": "PH-5e7ef40485ce204a",
-          "hanzi": "大家好，我叫张王冉，我是中国人，我是汉语老师，我在秘鲁工作，我很喜欢我的工作。",
-          "pinyin": null,
-          "spanish": null,
-          "lessons": [
-            3
           ]
         }
       ]

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "ming-vocabulary-immersive-zh-golden-v1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "Fondo inmersivo chino · Proporción áurea",
   "approved_on": "2026-09-25",
   "approval": "Usuario eligió la segunda propuesta de la última tanda y pidió conservarla en main como estándar por defecto.",
@@ -53,7 +53,7 @@
     "hanzi": "#173b32",
     "pinyin": "#466451",
     "translation": "#746f68",
-    "audio_surface": "#e1e6d6",
+    "audio_surface": "transparent",
     "audio_icon": "#315848",
     "reverse_surface": "#e6eee5",
     "reverse_word": "#687169",
@@ -63,8 +63,8 @@
   "typography": {
     "family_policy": "reuse_existing_Ming_fonts_with_Hanzi_and_tone_support",
     "front_hanzi": {
-      "size_rem": 2.25,
-      "mobile_size_rem": 2,
+      "size_rem": 2.7,
+      "mobile_size_rem": 2.4,
       "weight": 500,
       "line_height": 1.2
     },
@@ -74,10 +74,10 @@
       "line_height": 1.4
     },
     "translation": {
-      "size_rem": 0.8,
+      "size_rem": 0.72,
       "weight": 400,
       "line_height": 1.4,
-      "reference_reduction_percent": 20
+      "reference_reduction_percent": 28
     },
     "reverse_word": {
       "size_rem": 1.5,
@@ -101,7 +101,7 @@
     "sentence_audio_on_reverse": "beside_sentence_when_resource_exists",
     "favorite_position": "top_left",
     "flip_position": "top_right",
-    "corner_control_surface": "translucent_ivory",
+    "corner_control_surface": "transparent",
     "keyboard_and_visible_focus": true
   },
   "photography": {
@@ -144,7 +144,8 @@
       "watermarks",
       "baked_UI",
       "busy_sharp_background"
-    ]
+    ],
+    "text_panel": "none"
   },
   "behavior": {
     "reset_to_front_on": [
