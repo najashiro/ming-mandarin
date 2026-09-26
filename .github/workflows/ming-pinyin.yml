@@ -1,0 +1,36 @@
+name: Ming pinyin and lexical examples
+on:
+  push:
+    branches: [feat/ming-pinyin-examples-20260925]
+    paths:
+      - '.github/workflows/ming-pinyin.yml'
+      - 'MING_KNOWLEDGE/**'
+      - 'scripts/export-corpus-v21.py'
+permissions:
+  contents: read
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Inspect registered records lacking pinyin
+        run: |
+          python3 MING_KNOWLEDGE/v2/query.py --validate >/dev/null
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('MING_KNOWLEDGE/v2/.cache')
+          for table in ['vocabulary','phrases']:
+              rows=json.loads((root/(table+'.json')).read_text())
+              missing=[r for r in rows if not any(v.get('value') for v in r.get('pinyin_variants',[]))]
+              print('TOTAL',table,len(rows),'MISSING',len(missing))
+              for i,r in enumerate(missing):
+                  print('ITEM',json.dumps([table,i,r['id'],r['hanzi'],r.get('kinds',r.get('roles')),r.get('spanish_display')],ensure_ascii=False,separators=(',',':')))
+          for table in ['vocabulary','word_phrase_links','word_phrase_spans']:
+              rows=json.loads((root/(table+'.json')).read_text())
+              rows=[r for r in rows if r.get('id') in ['v-猫','v-小猫'] or r.get('vocab_id') in ['v-猫','v-小猫']]
+              print('CAT',table,json.dumps(rows,ensure_ascii=False,separators=(',',':')))
+          PY
