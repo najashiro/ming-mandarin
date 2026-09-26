@@ -6919,6 +6919,114 @@
       ]
     },
     {
+      "id": "v-墨西哥",
+      "hanzi": "墨西哥",
+      "pinyin": "mò xī ɡē",
+      "spanish": "México",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "classroom_extension"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-意大利语",
+      "hanzi": "意大利语",
+      "pinyin": "yì dà lì yǔ",
+      "spanish": "idioma italiano",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "classroom_extension",
+        "phrase_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 2,
+          "role": "phrase_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-做饭",
+      "hanzi": "做饭",
+      "pinyin": "zuò fàn",
+      "spanish": "cocinar; preparar la comida",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "classroom_extension",
+        "phrase_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 2,
+          "role": "phrase_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-画画",
+      "hanzi": "画画",
+      "pinyin": "huà huà",
+      "spanish": "dibujar; pintar",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "classroom_extension",
+        "phrase_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 2,
+          "role": "phrase_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
       "id": "v-会",
       "hanzi": "会",
       "pinyin": "huì",
@@ -6948,6 +7056,64 @@
         },
         {
           "lesson": 3,
+          "role": "phrase_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-一点儿",
+      "hanzi": "一点儿",
+      "pinyin": "yì diǎnr",
+      "spanish": "un poco",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "classroom_extension",
+        "phrase_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 2,
+          "role": "phrase_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-厉害",
+      "hanzi": "厉害",
+      "pinyin": "lì hài",
+      "spanish": "impresionante; muy hábil",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "classroom_extension",
+        "phrase_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 2,
           "role": "phrase_context",
           "text": null,
           "list_type": null,
@@ -7205,6 +7371,137 @@
       ]
     },
     {
+      "id": "v-面条",
+      "hanzi": "面条",
+      "pinyin": "miàntiáo",
+      "spanish": "fideos; tallarines",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "core_review",
+        "visual_label",
+        "worksheet_sequence",
+        "phrase_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "core_review",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 2,
+          "role": "visual_label",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 2,
+          "role": "worksheet_sequence",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 2,
+          "role": "phrase_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-炸猪肉面包",
+      "hanzi": "炸猪肉面包",
+      "pinyin": "Zhá zhūròu miànbāo",
+      "spanish": "pan con carne de cerdo frita",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "classroom_extension"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-肉夹馍",
+      "hanzi": "肉夹馍",
+      "pinyin": "Ròu jiā mó",
+      "spanish": "pan chino relleno de carne",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "classroom_extension"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-爱",
+      "hanzi": "爱",
+      "pinyin": "ài",
+      "spanish": "amar; querer mucho",
+      "lessons": [
+        2,
+        3
+      ],
+      "roles": [
+        "classroom_extension",
+        "phrase_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 3,
+          "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 2,
+          "role": "phrase_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 3,
+          "role": "phrase_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
       "id": "v-汉堡",
       "hanzi": "汉堡",
       "pinyin": "hànbăo",
@@ -7234,6 +7531,27 @@
       ]
     },
     {
+      "id": "v-寿司",
+      "hanzi": "寿司",
+      "pinyin": "shòu sī",
+      "spanish": "sushi",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "visual_label"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "visual_label",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
       "id": "v-甜品",
       "hanzi": "甜品",
       "pinyin": "tián pĭn",
@@ -7248,6 +7566,114 @@
         {
           "lesson": 2,
           "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-筷子",
+      "hanzi": "筷子",
+      "pinyin": "kuàizi",
+      "spanish": "palillos para comer",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "classroom_extension",
+        "phrase_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 2,
+          "role": "phrase_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-用",
+      "hanzi": "用",
+      "pinyin": "yòng",
+      "spanish": "usar; utilizar",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "classroom_extension",
+        "phrase_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 2,
+          "role": "phrase_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-印加可乐",
+      "hanzi": "印加可乐",
+      "pinyin": "yìnjiā kělè",
+      "spanish": "Inca Kola",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "classroom_extension"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-果汁",
+      "hanzi": "果汁",
+      "pinyin": "guǒ zhī",
+      "spanish": "jugo de fruta",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "visual_label",
+        "worksheet_sequence"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "visual_label",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 2,
+          "role": "worksheet_sequence",
           "text": null,
           "list_type": null,
           "entry_kind": null
@@ -7290,6 +7716,35 @@
         {
           "lesson": 2,
           "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-家人",
+      "hanzi": "家人",
+      "pinyin": "jiā rén",
+      "spanish": "familiares; miembros de la familia",
+      "lessons": [
+        3
+      ],
+      "roles": [
+        "classroom_extension",
+        "phrase_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 3,
+          "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 3,
+          "role": "phrase_context",
           "text": null,
           "list_type": null,
           "entry_kind": null
@@ -7490,6 +7945,143 @@
         {
           "lesson": 3,
           "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-多大",
+      "hanzi": "多大",
+      "pinyin": "duōdà",
+      "spanish": "qué edad; qué tamaño",
+      "lessons": [
+        3
+      ],
+      "roles": [
+        "classroom_extension",
+        "phrase_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 3,
+          "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 3,
+          "role": "phrase_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-岁数",
+      "hanzi": "岁数",
+      "pinyin": "suìshù",
+      "spanish": "edad; número de años de edad",
+      "lessons": [
+        3
+      ],
+      "roles": [
+        "classroom_extension",
+        "phrase_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 3,
+          "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 3,
+          "role": "phrase_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-地图",
+      "hanzi": "地图",
+      "pinyin": "dìtú",
+      "spanish": "mapa",
+      "lessons": [
+        3
+      ],
+      "roles": [
+        "classroom_extension",
+        "phrase_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 3,
+          "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 3,
+          "role": "phrase_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-昨天",
+      "hanzi": "昨天",
+      "pinyin": "zuó tiān",
+      "spanish": "ayer",
+      "lessons": [
+        3
+      ],
+      "roles": [
+        "classroom_extension"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 3,
+          "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-明天",
+      "hanzi": "明天",
+      "pinyin": "míng tiān",
+      "spanish": "mañana",
+      "lessons": [
+        3
+      ],
+      "roles": [
+        "classroom_extension",
+        "phrase_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 3,
+          "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 3,
+          "role": "phrase_context",
           "text": null,
           "list_type": null,
           "entry_kind": null
@@ -7705,10 +8297,422 @@
       ]
     },
     {
+      "id": "v-炒饭",
+      "hanzi": "炒饭",
+      "pinyin": "chăo fàn",
+      "spanish": "arroz frito",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "classroom_extension"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-阿根廷",
+      "hanzi": "阿根廷",
+      "pinyin": "Āgēntíng",
+      "spanish": "Argentina",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "classroom_extension",
+        "phrase_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "classroom_extension",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 2,
+          "role": "phrase_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-一",
+      "hanzi": "一",
+      "pinyin": "yī",
+      "spanish": "uno",
+      "lessons": [
+        1,
+        3
+      ],
+      "roles": [
+        "numeral_support",
+        "numeral_in_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 1,
+          "role": "numeral_support",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 3,
+          "role": "numeral_in_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-二",
+      "hanzi": "二",
+      "pinyin": "èr",
+      "spanish": "dos",
+      "lessons": [
+        1
+      ],
+      "roles": [
+        "numeral_support"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 1,
+          "role": "numeral_support",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-三",
+      "hanzi": "三",
+      "pinyin": "sān",
+      "spanish": "tres",
+      "lessons": [
+        1,
+        3
+      ],
+      "roles": [
+        "numeral_support",
+        "numeral_in_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 1,
+          "role": "numeral_support",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 3,
+          "role": "numeral_in_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-四",
+      "hanzi": "四",
+      "pinyin": "sì",
+      "spanish": "cuatro",
+      "lessons": [
+        1,
+        3
+      ],
+      "roles": [
+        "numeral_support",
+        "numeral_in_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 1,
+          "role": "numeral_support",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 3,
+          "role": "numeral_in_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-五",
+      "hanzi": "五",
+      "pinyin": "wǔ",
+      "spanish": "cinco",
+      "lessons": [
+        1,
+        3
+      ],
+      "roles": [
+        "numeral_support",
+        "numeral_in_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 1,
+          "role": "numeral_support",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 3,
+          "role": "numeral_in_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-六",
+      "hanzi": "六",
+      "pinyin": "liù",
+      "spanish": "seis",
+      "lessons": [
+        1,
+        3
+      ],
+      "roles": [
+        "numeral_support",
+        "numeral_in_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 1,
+          "role": "numeral_support",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 3,
+          "role": "numeral_in_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-七",
+      "hanzi": "七",
+      "pinyin": "qī",
+      "spanish": "siete",
+      "lessons": [
+        1,
+        3
+      ],
+      "roles": [
+        "numeral_support",
+        "numeral_in_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 1,
+          "role": "numeral_support",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 3,
+          "role": "numeral_in_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-八",
+      "hanzi": "八",
+      "pinyin": "bā",
+      "spanish": "ocho",
+      "lessons": [
+        1,
+        3
+      ],
+      "roles": [
+        "numeral_support",
+        "numeral_in_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 1,
+          "role": "numeral_support",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 3,
+          "role": "numeral_in_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-九",
+      "hanzi": "九",
+      "pinyin": "jiǔ",
+      "spanish": "nueve",
+      "lessons": [
+        1,
+        3
+      ],
+      "roles": [
+        "numeral_support",
+        "numeral_in_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 1,
+          "role": "numeral_support",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 3,
+          "role": "numeral_in_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-十",
+      "hanzi": "十",
+      "pinyin": "shí",
+      "spanish": "diez",
+      "lessons": [
+        1,
+        3
+      ],
+      "roles": [
+        "numeral_support",
+        "numeral_in_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 1,
+          "role": "numeral_support",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 3,
+          "role": "numeral_in_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-百",
+      "hanzi": "百",
+      "pinyin": "bǎi",
+      "spanish": "cien",
+      "lessons": [
+        1
+      ],
+      "roles": [
+        "numeral_support"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 1,
+          "role": "numeral_support",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-千",
+      "hanzi": "千",
+      "pinyin": "qiān",
+      "spanish": "mil",
+      "lessons": [
+        1
+      ],
+      "roles": [
+        "numeral_support"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 1,
+          "role": "numeral_support",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
       "id": "v-可是",
       "hanzi": "可是",
       "pinyin": "kěshì",
       "spanish": "pero",
+      "lessons": [
+        3
+      ],
+      "roles": [
+        "workbook_context",
+        "phrase_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 3,
+          "role": "workbook_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 3,
+          "role": "phrase_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-张华",
+      "hanzi": "张华",
+      "pinyin": "Zhāng Huá",
+      "spanish": "Zhang Hua; nombre propio",
       "lessons": [
         3
       ],
@@ -7784,6 +8788,156 @@
       ]
     },
     {
+      "id": "v-多少",
+      "hanzi": "多少",
+      "pinyin": "duōshao",
+      "spanish": "cuánto; cuántos",
+      "lessons": [
+        3
+      ],
+      "roles": [
+        "workbook_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 3,
+          "role": "workbook_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-大卫",
+      "hanzi": "大卫",
+      "pinyin": "Dàwèi",
+      "spanish": "Dawei; nombre propio",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "workbook_context",
+        "phrase_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "workbook_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 2,
+          "role": "phrase_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-俄罗斯人",
+      "hanzi": "俄罗斯人",
+      "pinyin": "Éluósīrén",
+      "spanish": "ruso; persona de Rusia",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "workbook_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "workbook_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-西安",
+      "hanzi": "西安",
+      "pinyin": "Xī’ān",
+      "spanish": "Xi'an",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "workbook_context",
+        "phrase_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "workbook_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 2,
+          "role": "phrase_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-广州",
+      "hanzi": "广州",
+      "pinyin": "Guǎngzhōu",
+      "spanish": "Guangzhou; Cantón",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "workbook_context",
+        "phrase_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "workbook_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 2,
+          "role": "phrase_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-北京烤鸭",
+      "hanzi": "北京烤鸭",
+      "pinyin": "Běijīng kǎoyā",
+      "spanish": "pato laqueado de Pekín",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "workbook_context"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "workbook_context",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
       "id": "v-你好",
       "hanzi": "你好",
       "pinyin": "nǐ hǎo",
@@ -7806,6 +8960,48 @@
         {
           "lesson": 1,
           "role": "worksheet_sequence",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-您好",
+      "hanzi": "您好",
+      "pinyin": "Nín hǎo",
+      "spanish": "hola; saludo respetuoso a usted",
+      "lessons": [
+        1
+      ],
+      "roles": [
+        "classroom_expression"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 1,
+          "role": "classroom_expression",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-你们好",
+      "hanzi": "你们好",
+      "pinyin": "Nǐmen hǎo",
+      "spanish": "hola a todos; saludo a varias personas",
+      "lessons": [
+        1
+      ],
+      "roles": [
+        "classroom_expression"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 1,
+          "role": "classroom_expression",
           "text": null,
           "list_type": null,
           "entry_kind": null
@@ -7927,6 +9123,140 @@
           "entry_kind": null
         }
       ]
+    },
+    {
+      "id": "v-晚安",
+      "hanzi": "晚安",
+      "pinyin": "wǎn ān",
+      "spanish": "buenas noches; saludo de despedida antes de dormir",
+      "lessons": [
+        1
+      ],
+      "roles": [
+        "phonetics_support",
+        "worksheet_sequence"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 1,
+          "role": "phonetics_support",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        },
+        {
+          "lesson": 1,
+          "role": "worksheet_sequence",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-刚到",
+      "hanzi": "刚到",
+      "pinyin": "gāng dào",
+      "spanish": "acabar de llegar",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "worksheet_sequence"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "worksheet_sequence",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-这是",
+      "hanzi": "这是",
+      "pinyin": "zhè shì",
+      "spanish": "este es; esta es; esto es",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "worksheet_sequence"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "worksheet_sequence",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-那是",
+      "hanzi": "那是",
+      "pinyin": "nà shì",
+      "spanish": "ese es; esa es; aquello es",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "worksheet_sequence"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "worksheet_sequence",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-您贵姓",
+      "hanzi": "您贵姓",
+      "pinyin": "nín guì xìng",
+      "spanish": "¿cuál es su apellido?; pregunta respetuosa",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "worksheet_sequence"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "worksheet_sequence",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
+    },
+    {
+      "id": "v-哪国人",
+      "hanzi": "哪国人",
+      "pinyin": "nǎ guó rén",
+      "spanish": "de qué país; de qué nacionalidad",
+      "lessons": [
+        2
+      ],
+      "roles": [
+        "worksheet_sequence"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 2,
+          "role": "worksheet_sequence",
+          "text": null,
+          "list_type": null,
+          "entry_kind": null
+        }
+      ]
     }
   ],
   "phrases": [
@@ -7934,7 +9264,7 @@
       "id": "PH-670d9743542cae3e",
       "hanzi": "你好！",
       "pinyin": "Nǐ hǎo!",
-      "spanish": null,
+      "spanish": "¡Hola!",
       "lessons": [
         1
       ],
@@ -7966,7 +9296,7 @@
       "id": "PH-a05b1895701f4272",
       "hanzi": "我叫马大为。请问，你叫什么名字？",
       "pinyin": "Wǒ jiào Mǎ Dàwéi. Qǐngwèn, nǐ jiào shénme míngzi?",
-      "spanish": null,
+      "spanish": "Me llamo Ma Dawei. Disculpa, ¿cómo te llamas?",
       "lessons": [
         1
       ],
@@ -7997,7 +9327,7 @@
       "id": "PH-8adb07789bff67a4",
       "hanzi": "我姓宋，叫宋华。",
       "pinyin": "Wǒ xìng Sòng, jiào Sòng Huá.",
-      "spanish": null,
+      "spanish": "Mi apellido es Song y me llamo Song Hua.",
       "lessons": [
         1
       ],
@@ -8031,7 +9361,7 @@
       "id": "PH-2f4c8cbba8f15bf3",
       "hanzi": "认识你很高兴。",
       "pinyin": "Rènshi nǐ hěn gāoxìng.",
-      "spanish": null,
+      "spanish": "Me alegra conocerte.",
       "lessons": [
         1
       ],
@@ -8069,7 +9399,7 @@
       "id": "PH-75c3db6ef2e8ca00",
       "hanzi": "认识你我也很高兴。",
       "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng.",
-      "spanish": null,
+      "spanish": "A mí también me alegra conocerte.",
       "lessons": [
         1,
         2
@@ -8116,7 +9446,7 @@
       "id": "PH-4df8f0165d3f1d68",
       "hanzi": "请问，林娜在吗？",
       "pinyin": "Qǐngwèn, Lín Nà zài ma?",
-      "spanish": null,
+      "spanish": "Disculpa, ¿está Lin Na?",
       "lessons": [
         1
       ],
@@ -8144,7 +9474,7 @@
       "id": "PH-b2ce8f66a105ec80",
       "hanzi": "在。力波，请进，请坐。",
       "pinyin": "Zài. Lìbō, qǐng jìn, qǐng zuò.",
-      "spanish": null,
+      "spanish": "Sí, está. Libo, pasa, por favor, y siéntate.",
       "lessons": [
         1
       ],
@@ -8173,7 +9503,7 @@
       "id": "PH-0f437a5676994bd1",
       "hanzi": "谢谢。你最近怎么样？",
       "pinyin": "Xièxie. Nǐ zuìjìn zěnmeyàng?",
-      "spanish": null,
+      "spanish": "Gracias. ¿Cómo has estado últimamente?",
       "lessons": [
         1
       ],
@@ -8201,7 +9531,7 @@
       "id": "PH-e48c42bc76c441d6",
       "hanzi": "我很好。你呢？",
       "pinyin": "Wǒ hěn hǎo. Nǐ ne?",
-      "spanish": null,
+      "spanish": "Estoy muy bien. ¿Y tú?",
       "lessons": [
         1,
         2
@@ -8250,7 +9580,7 @@
       "id": "PH-fd9e21b4265fa711",
       "hanzi": "我很忙。你忙吗？",
       "pinyin": "Wǒ hěn máng. Nǐ máng ma?",
-      "spanish": null,
+      "spanish": "Estoy muy ocupado. ¿Tú estás ocupado?",
       "lessons": [
         1
       ],
@@ -8279,7 +9609,7 @@
       "id": "PH-9d60c2539b2ec66b",
       "hanzi": "我不太忙。大为好吗？",
       "pinyin": "Wǒ bú tài máng. Dàwéi hǎo ma?",
-      "spanish": null,
+      "spanish": "No estoy muy ocupado. ¿Dawei está bien?",
       "lessons": [
         1
       ],
@@ -8310,7 +9640,7 @@
       "id": "PH-6df8b6bf89d466a0",
       "hanzi": "他也很好。",
       "pinyin": "Tā yě hěn hǎo.",
-      "spanish": null,
+      "spanish": "Él también está muy bien.",
       "lessons": [
         1
       ],
@@ -8348,7 +9678,7 @@
       "id": "PH-2c5108b99f0c00e3",
       "hanzi": "老师，早上好！",
       "pinyin": "Lǎoshī, zǎoshang hǎo!",
-      "spanish": null,
+      "spanish": "¡Buenos días, profe!",
       "lessons": [
         2
       ],
@@ -8376,7 +9706,7 @@
       "id": "PH-d36d24a8a0e932b0",
       "hanzi": "你们好！",
       "pinyin": "Nǐmen hǎo!",
-      "spanish": null,
+      "spanish": "¡Hola a todos!",
       "lessons": [
         1,
         2
@@ -8409,7 +9739,7 @@
       "id": "PH-d3b3338b0361002c",
       "hanzi": "这是马大为，他是我朋友，刚到北京。",
       "pinyin": "Zhè shì Mǎ Dàwéi, tā shì wǒ péngyou, gāng dào Běijīng.",
-      "spanish": null,
+      "spanish": "Este es Ma Dawei, es mi amigo y acaba de llegar a Pekín.",
       "lessons": [
         2
       ],
@@ -8444,7 +9774,7 @@
       "id": "PH-d0443e7aa5d3b780",
       "hanzi": "您好！老师，您贵姓？",
       "pinyin": "Nín hǎo! Lǎoshī, nín guìxìng?",
-      "spanish": null,
+      "spanish": "¡Hola! Profe, ¿cuál es su apellido?",
       "lessons": [
         2
       ],
@@ -8473,7 +9803,7 @@
       "id": "PH-690ab0981fa200f9",
       "hanzi": "我姓陈。你是哪国人？",
       "pinyin": "Wǒ xìng Chén. Nǐ shì nǎ guó rén?",
-      "spanish": null,
+      "spanish": "Mi apellido es Chen. ¿De qué país eres?",
       "lessons": [
         2
       ],
@@ -8506,7 +9836,7 @@
       "id": "PH-e0ed09abc679978f",
       "hanzi": "我是美国人。我也学习汉语。陈老师，认识您很高兴。",
       "pinyin": "Wǒ shì Měiguó rén. Wǒ yě xuéxí Hànyǔ. Chén lǎoshī, rènshi nín hěn gāoxìng.",
-      "spanish": null,
+      "spanish": "Soy estadounidense. Yo también estudio chino. Profe Chen, me alegra conocerle.",
       "lessons": [
         2
       ],
@@ -8543,7 +9873,7 @@
       "id": "PH-3a74d274698b1602",
       "hanzi": "老师，再见！",
       "pinyin": "Lǎoshī, zàijiàn!",
-      "spanish": null,
+      "spanish": "¡Adiós, profe!",
       "lessons": [
         2
       ],
@@ -8569,7 +9899,7 @@
       "id": "PH-c90a1cdb561d0269",
       "hanzi": "再见！",
       "pinyin": "Zàijiàn!",
-      "spanish": null,
+      "spanish": "¡Adiós!",
       "lessons": [
         2
       ],
@@ -8594,7 +9924,7 @@
       "id": "PH-fd63f91d021e950d",
       "hanzi": "小云，这是什么？",
       "pinyin": "Xiǎoyún, zhè shì shénme?",
-      "spanish": null,
+      "spanish": "Xiaoyun, ¿qué es esto?",
       "lessons": [
         2
       ],
@@ -8623,7 +9953,7 @@
       "id": "PH-663b7ecf4908ab3f",
       "hanzi": "这是点心。",
       "pinyin": "Zhè shì diǎnxin.",
-      "spanish": null,
+      "spanish": "Esto es un bocadillo.",
       "lessons": [
         2
       ],
@@ -8656,7 +9986,7 @@
       "id": "PH-c4ad0b6e60632365",
       "hanzi": "点心好吃吗？",
       "pinyin": "Diǎnxin hǎochī ma?",
-      "spanish": null,
+      "spanish": "¿Los bocadillos están ricos?",
       "lessons": [
         2
       ],
@@ -8683,7 +10013,7 @@
       "id": "PH-17071362f2fae7c7",
       "hanzi": "好吃。我爸爸是上海人，他喜欢吃点心和米饭。",
       "pinyin": "Hǎochī. Wǒ bàba shì Shànghǎi rén, tā xǐhuan chī diǎnxin hé mǐfàn.",
-      "spanish": null,
+      "spanish": "Sí, están ricos. Mi papá es de Shanghái; le gusta comer bocadillos y arroz.",
       "lessons": [
         2
       ],
@@ -8719,7 +10049,7 @@
       "id": "PH-d9bb663c9e9f1bb9",
       "hanzi": "北京人喜欢吃什么？",
       "pinyin": "Běijīng rén xǐhuan chī shénme?",
-      "spanish": null,
+      "spanish": "¿Qué les gusta comer a las personas de Pekín?",
       "lessons": [
         2
       ],
@@ -8754,7 +10084,7 @@
       "id": "PH-09cb5a21fffc1281",
       "hanzi": "我妈妈是北京人，她喜欢吃面条儿和饺子。",
       "pinyin": "Wǒ māma shì Běijīng rén, tā xǐhuan chī miàntiáor hé jiǎozi.",
-      "spanish": null,
+      "spanish": "Mi mamá es de Pekín; le gusta comer fideos y jiaozi.",
       "lessons": [
         2
       ],
@@ -8788,7 +10118,7 @@
       "id": "PH-68f8d39880b47b54",
       "hanzi": "这是饺子吗？",
       "pinyin": "Zhè shì jiǎozi ma?",
-      "spanish": null,
+      "spanish": "¿Esto es jiaozi?",
       "lessons": [
         2
       ],
@@ -8822,7 +10152,7 @@
       "id": "PH-414d0363c22c3b9f",
       "hanzi": "这不是饺子，是包子。包子大，饺子小。你看，那是饺子。",
       "pinyin": "Zhè bú shì jiǎozi, shì bāozi. Bāozi dà, jiǎozi xiǎo. Nǐ kàn, nà shì jiǎozi.",
-      "spanish": null,
+      "spanish": "Esto no es jiaozi, es baozi. Los baozi son grandes y los jiaozi son pequeños. Mira, aquello es jiaozi.",
       "lessons": [
         2
       ],
@@ -8857,7 +10187,7 @@
       "id": "PH-b13c3b5fbf4875af",
       "hanzi": "包子好吃吗？",
       "pinyin": "Bāozi hǎochī ma?",
-      "spanish": null,
+      "spanish": "¿Los baozi están ricos?",
       "lessons": [
         2
       ],
@@ -8884,7 +10214,7 @@
       "id": "PH-809344e864886f9c",
       "hanzi": "包子和饺子都很好吃。",
       "pinyin": "Bāozi hé jiǎozi dōu hěn hǎochī.",
-      "spanish": null,
+      "spanish": "Tanto los baozi como los jiaozi están muy ricos.",
       "lessons": [
         2
       ],
@@ -8924,7 +10254,7 @@
       "id": "PH-c5cfe5e5b205152f",
       "hanzi": "好，我要饺子，也要包子。",
       "pinyin": "Hǎo, wǒ yào jiǎozi, yě yào bāozi.",
-      "spanish": null,
+      "spanish": "Bien, quiero jiaozi y también baozi.",
       "lessons": [
         2
       ],
@@ -8953,7 +10283,7 @@
       "id": "PH-73edb201a1b0b88d",
       "hanzi": "你们家有几口人？",
       "pinyin": "Nǐmen jiā yǒu jǐ kǒu rén?",
-      "spanish": null,
+      "spanish": "¿Cuántas personas hay en tu familia?",
       "lessons": [
         3
       ],
@@ -9008,7 +10338,7 @@
       "id": "PH-8dcc41f26397e990",
       "hanzi": "我们家有四口人。你看，这是我们家的照片。",
       "pinyin": "Wǒmen jiā yǒu sì kǒu rén. Nǐ kàn, zhè shì wǒmen jiā de zhàopiàn.",
-      "spanish": null,
+      "spanish": "En nuestra familia somos cuatro. Mira, esta es una foto de nuestra familia.",
       "lessons": [
         3
       ],
@@ -9045,7 +10375,7 @@
       "id": "PH-1f7e03d8c0052b68",
       "hanzi": "你爸爸妈妈做什么工作？",
       "pinyin": "Nǐ bàba māma zuò shénme gōngzuò?",
-      "spanish": null,
+      "spanish": "¿En qué trabajan tu papá y tu mamá?",
       "lessons": [
         3
       ],
@@ -9080,7 +10410,7 @@
       "id": "PH-4a63b9623c9c3cde",
       "hanzi": "我爸爸是医生，妈妈是老师。",
       "pinyin": "Wǒ bàba shì yīshēng, māma shì lǎoshī.",
-      "spanish": null,
+      "spanish": "Mi papá es médico y mi mamá es profesora.",
       "lessons": [
         3
       ],
@@ -9110,7 +10440,7 @@
       "id": "PH-fb58d7bbfe7950bc",
       "hanzi": "这是你弟弟吗？",
       "pinyin": "Zhè shì nǐ dìdi ma?",
-      "spanish": null,
+      "spanish": "¿Este es tu hermano menor?",
       "lessons": [
         3
       ],
@@ -9140,7 +10470,7 @@
       "id": "PH-3bd601533f50ac73",
       "hanzi": "这不是我弟弟。这是我哥哥。林娜，你们家有几口人？",
       "pinyin": "Zhè bú shì wǒ dìdi. Zhè shì wǒ gēge. Lín Nà, nǐmen jiā yǒu jǐ kǒu rén?",
-      "spanish": null,
+      "spanish": "Este no es mi hermano menor. Este es mi hermano mayor. Lin Na, ¿cuántas personas hay en tu familia?",
       "lessons": [
         3
       ],
@@ -9177,7 +10507,7 @@
       "id": "PH-c72459420412ca24",
       "hanzi": "我们家一共有六口人：妈妈、一个哥哥、两个姐姐和我，还有贝贝。",
       "pinyin": "Wǒmen jiā yígòng yǒu liù kǒu rén: māma, yí ge gēge, liǎng ge jiějie hé wǒ, hái yǒu Bèibei.",
-      "spanish": null,
+      "spanish": "En nuestra familia somos seis en total: mamá, un hermano mayor, dos hermanas mayores y yo, y también Beibei.",
       "lessons": [
         3
       ],
@@ -9218,7 +10548,7 @@
       "id": "PH-1f5edf8ae05ca861",
       "hanzi": "贝贝是谁？是你妹妹吗？",
       "pinyin": "Bèibei shì shéi? Shì nǐ mèimei ma?",
-      "spanish": null,
+      "spanish": "¿Quién es Beibei? ¿Es tu hermana menor?",
       "lessons": [
         3
       ],
@@ -9248,7 +10578,7 @@
       "id": "PH-f26418fd16237858",
       "hanzi": "我没有妹妹，贝贝是我的小狗。",
       "pinyin": "Wǒ méiyǒu mèimei, Bèibei shì wǒ de xiǎogǒu.",
-      "spanish": null,
+      "spanish": "No tengo hermana menor; Beibei es mi perrito.",
       "lessons": [
         3
       ],
@@ -9279,7 +10609,7 @@
       "id": "PH-e43ad76a163e355d",
       "hanzi": "小狗也是一口人吗？",
       "pinyin": "Xiǎogǒu yě shì yì kǒu rén ma?",
-      "spanish": null,
+      "spanish": "¿El perrito también cuenta como un miembro de la familia?",
       "lessons": [
         3
       ],
@@ -9310,7 +10640,7 @@
       "id": "PH-111091909a211bb7",
       "hanzi": "你们好！请进！",
       "pinyin": "Nǐmen hǎo! Qǐng jìn!",
-      "spanish": null,
+      "spanish": "¡Hola a todos! ¡Pasen, por favor!",
       "lessons": [
         3
       ],
@@ -9339,7 +10669,7 @@
       "id": "PH-5678193b86e8724f",
       "hanzi": "您好！你们家真漂亮！",
       "pinyin": "Nín hǎo! Nǐmen jiā zhēn piàoliang!",
-      "spanish": null,
+      "spanish": "¡Hola! ¡Qué bonita es su casa!",
       "lessons": [
         3
       ],
@@ -9370,7 +10700,7 @@
       "id": "PH-1af10d4c756781c6",
       "hanzi": "谢谢。请坐。你们喝什么？我们家有茶和咖啡。",
       "pinyin": "Xièxie. Qǐng zuò. Nǐmen hē shénme? Wǒmen jiā yǒu chá hé kāfēi.",
-      "spanish": null,
+      "spanish": "Gracias. Siéntense, por favor. ¿Qué van a tomar? En casa tenemos té y café.",
       "lessons": [
         3
       ],
@@ -9406,7 +10736,7 @@
       "id": "PH-2e9d54b2f234dbec",
       "hanzi": "我喝咖啡。",
       "pinyin": "Wǒ hē kāfēi.",
-      "spanish": null,
+      "spanish": "Yo tomo café.",
       "lessons": [
         3
       ],
@@ -9438,7 +10768,7 @@
       "id": "PH-75fc00a1483a074b",
       "hanzi": "我要茶。",
       "pinyin": "Wǒ yào chá.",
-      "spanish": null,
+      "spanish": "Quiero té.",
       "lessons": [
         3
       ],
@@ -9465,7 +10795,7 @@
       "id": "PH-f73bf8e19f739055",
       "hanzi": "这张照片真漂亮！这是你女儿吗？",
       "pinyin": "Zhè zhāng zhàopiàn zhēn piàoliang! Zhè shì nǐ nǚ’ér ma?",
-      "spanish": null,
+      "spanish": "¡Esta foto es realmente bonita! ¿Esta es tu hija?",
       "lessons": [
         3
       ],
@@ -9499,7 +10829,7 @@
       "id": "PH-4fac66dc4ef24a57",
       "hanzi": "是。这是我女儿。",
       "pinyin": "Shì. Zhè shì wǒ nǚ’ér.",
-      "spanish": null,
+      "spanish": "Sí. Esta es mi hija.",
       "lessons": [
         3
       ],
@@ -9528,7 +10858,7 @@
       "id": "PH-40b8d75ef94972dd",
       "hanzi": "你女儿今年几岁？",
       "pinyin": "Nǐ nǚ’ér jīnnián jǐ suì?",
-      "spanish": null,
+      "spanish": "¿Cuántos años tiene tu hija este año?",
       "lessons": [
         3
       ],
@@ -9572,7 +10902,7 @@
       "id": "PH-8404b517d7b8837d",
       "hanzi": "五岁。今天她有钢琴课，不在家。",
       "pinyin": "Wǔ suì. Jīntiān tā yǒu gāngqínkè, bú zài jiā.",
-      "spanish": null,
+      "spanish": "Cinco años. Hoy tiene clase de piano; no está en casa.",
       "lessons": [
         3
       ],
@@ -9605,7 +10935,7 @@
       "id": "PH-c3324d239c2c9dec",
       "hanzi": "中国的孩子真忙！",
       "pinyin": "Zhōngguó de háizi zhēn máng!",
-      "spanish": null,
+      "spanish": "¡Los niños de China están realmente ocupados!",
       "lessons": [
         3
       ],
@@ -9634,7 +10964,7 @@
       "id": "PH-493c48e1a43cf756",
       "hanzi": "是啊。晚上她还有英语课。",
       "pinyin": "Shì a. Wǎnshang tā hái yǒu Yīngyǔkè.",
-      "spanish": null,
+      "spanish": "Sí, así es. Por la noche también tiene clase de inglés.",
       "lessons": [
         3
       ],
@@ -9665,7 +10995,7 @@
       "id": "PH-1554e3b089746db5",
       "hanzi": "您好！您贵姓？",
       "pinyin": "Nín hǎo! Nín guì xìng?",
-      "spanish": null,
+      "spanish": "¡Hola! ¿Cuál es su apellido?",
       "lessons": [
         2
       ],
@@ -9693,7 +11023,7 @@
       "id": "PH-0bee41504f87d636",
       "hanzi": "我妈妈是北京人，她喜欢吃面条和饺子。",
       "pinyin": "Wǒ māma shì Běijīng rén, tā xǐhuan chī miàntiáo hé jiǎozi.",
-      "spanish": null,
+      "spanish": "Mi mamá es de Pekín; le gusta comer fideos y jiaozi.",
       "lessons": [
         2
       ],
@@ -9727,7 +11057,7 @@
       "id": "PH-242d7e4a67cb99d7",
       "hanzi": "好，我要包子，也要饺子。",
       "pinyin": "Hǎo, wǒ yào bāozi, yě yào jiǎozi.",
-      "spanish": null,
+      "spanish": "Bien, quiero baozi y también jiaozi.",
       "lessons": [
         2
       ],
@@ -9756,7 +11086,7 @@
       "id": "PH-15e6b206f6e02736",
       "hanzi": "这不是我弟弟。这是我哥哥。",
       "pinyin": "Zhè bú shì wǒ dìdi, zhè shì wǒ gēge.",
-      "spanish": null,
+      "spanish": "Este no es mi hermano menor. Este es mi hermano mayor.",
       "lessons": [
         3
       ],
@@ -9786,7 +11116,7 @@
       "id": "PH-35b5f11dfacef732",
       "hanzi": "林娜，你们家有几口人？",
       "pinyin": "Lín Nà, nǐmen jiā yǒu jǐ kǒu rén?",
-      "spanish": null,
+      "spanish": "Lin Na, ¿cuántas personas hay en tu familia?",
       "lessons": [
         3
       ],
@@ -9816,7 +11146,7 @@
       "id": "PH-361194e51b9c68e7",
       "hanzi": "我们有作业。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tenemos tarea.",
       "lessons": [
         1
       ],
@@ -9840,7 +11170,7 @@
       "id": "PH-085aaea27e1ad654",
       "hanzi": "我们没有作业！",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¡No tenemos tarea!",
       "lessons": [
         1
       ],
@@ -9889,7 +11219,7 @@
       "id": "PH-121d6a3b3b2b5204",
       "hanzi": "我累死了。",
       "pinyin": "Wŏ lèi sǐ le.",
-      "spanish": null,
+      "spanish": "Estoy muerto de cansancio.",
       "lessons": [
         1
       ],
@@ -9914,7 +11244,7 @@
       "id": "PH-609bc0751d56eb46",
       "hanzi": "您好！",
       "pinyin": "Nín hǎo",
-      "spanish": null,
+      "spanish": "¡Hola!; saludo respetuoso.",
       "lessons": [
         1,
         2
@@ -9944,7 +11274,7 @@
       "id": "PH-9ad3cc277481d93c",
       "hanzi": "她很困。",
       "pinyin": "Tā hěn kùn.",
-      "spanish": null,
+      "spanish": "Ella tiene mucho sueño.",
       "lessons": [
         1
       ],
@@ -9968,7 +11298,7 @@
       "id": "PH-2e3d8a4d7a9ecbbc",
       "hanzi": "她很渴。",
       "pinyin": "Tā hěn kě.",
-      "spanish": null,
+      "spanish": "Ella tiene mucha sed.",
       "lessons": [
         1
       ],
@@ -9992,7 +11322,7 @@
       "id": "PH-ea8531622a20c584",
       "hanzi": "她很饿。",
       "pinyin": "Tā hěn è.",
-      "spanish": null,
+      "spanish": "Ella tiene mucha hambre.",
       "lessons": [
         1
       ],
@@ -10016,7 +11346,7 @@
       "id": "PH-0af5556e288859cb",
       "hanzi": "他很累。",
       "pinyin": "Tā hěn lèi.",
-      "spanish": null,
+      "spanish": "Él está muy cansado.",
       "lessons": [
         1
       ],
@@ -10119,7 +11449,7 @@
       "id": "PH-e0f6db4806cea072",
       "hanzi": "她困吗？",
       "pinyin": "Tā kùn ma?",
-      "spanish": null,
+      "spanish": "¿Ella tiene sueño?",
       "lessons": [
         1
       ],
@@ -10172,7 +11502,7 @@
       "id": "PH-960aa0208aa54aa5",
       "hanzi": "我很忙。",
       "pinyin": "Wǒ hěn máng.",
-      "spanish": null,
+      "spanish": "Estoy muy ocupado.",
       "lessons": [
         1
       ],
@@ -10230,7 +11560,7 @@
       "id": "PH-1b614c51767513af",
       "hanzi": "你最近好吗？",
       "pinyin": "Nǐ zuìjìn hǎo ma?",
-      "spanish": null,
+      "spanish": "¿Has estado bien últimamente?",
       "lessons": [
         1
       ],
@@ -10255,7 +11585,7 @@
       "id": "PH-f8b080da2036d992",
       "hanzi": "你们最近忙吗？",
       "pinyin": "Nǐmen zuìjìn máng ma?",
-      "spanish": null,
+      "spanish": "¿Han estado ocupados últimamente?",
       "lessons": [
         1
       ],
@@ -10280,7 +11610,7 @@
       "id": "PH-ecfd3a421f57b8bd",
       "hanzi": "你最近怎么样？",
       "pinyin": "Nǐ zuìjìn zěnmeyàng?",
-      "spanish": null,
+      "spanish": "¿Cómo has estado últimamente?",
       "lessons": [
         1
       ],
@@ -10314,7 +11644,7 @@
       "id": "PH-fabd70d8dc7c6721",
       "hanzi": "你们怎么样？",
       "pinyin": "Nǐmen zěnmeyàng?",
-      "spanish": null,
+      "spanish": "¿Cómo están ustedes?",
       "lessons": [
         1
       ],
@@ -10431,7 +11761,7 @@
       "id": "PH-00b310c628c20893",
       "hanzi": "我是Elsa。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Soy Elsa.",
       "lessons": [
         1
       ],
@@ -10454,7 +11784,7 @@
       "id": "PH-1535ec3db7ab0660",
       "hanzi": "我叫Elsa。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Me llamo Elsa.",
       "lessons": [
         1
       ],
@@ -10477,7 +11807,7 @@
       "id": "PH-1ecb0a2d85add69f",
       "hanzi": "你叫什么名字？",
       "pinyin": "nǐ jiào shénme míngzi?",
-      "spanish": null,
+      "spanish": "¿Cómo te llamas?",
       "lessons": [
         1
       ],
@@ -10555,7 +11885,7 @@
       "id": "PH-d46578fe7fc8ba62",
       "hanzi": "她姓陆。",
       "pinyin": "Tā xìng Lù.",
-      "spanish": null,
+      "spanish": "Su apellido es Lu.",
       "lessons": [
         1
       ],
@@ -10642,7 +11972,7 @@
       "id": "PH-1d9adfffb6a797a3",
       "hanzi": "我问你。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Te pregunto a ti.",
       "lessons": [
         1
       ],
@@ -10666,7 +11996,7 @@
       "id": "PH-0f0557a9f65a2e59",
       "hanzi": "请问，您贵姓？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Disculpe, ¿cuál es su apellido?",
       "lessons": [
         1
       ],
@@ -10691,7 +12021,7 @@
       "id": "PH-082acfb9ecba8e31",
       "hanzi": "我们认识他。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Lo conocemos.",
       "lessons": [
         1
       ],
@@ -10715,7 +12045,7 @@
       "id": "PH-ef3c4eca368a59e4",
       "hanzi": "我不认识你。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "No te conozco.",
       "lessons": [
         1
       ],
@@ -10740,7 +12070,7 @@
       "id": "PH-e3a307843286f5c9",
       "hanzi": "他高兴吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Él está contento?",
       "lessons": [
         1
       ],
@@ -10764,7 +12094,7 @@
       "id": "PH-6cd2cfd3e2f39f27",
       "hanzi": "他很高兴。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él está muy contento.",
       "lessons": [
         1
       ],
@@ -10788,7 +12118,7 @@
       "id": "PH-fca462ed4f312170",
       "hanzi": "他不高兴。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él no está contento.",
       "lessons": [
         1
       ],
@@ -10838,7 +12168,7 @@
       "id": "PH-676ccb0a0e5ac008",
       "hanzi": "我很高兴认识你。",
       "pinyin": "Wŏ hěn gāoxìng rènshi nĭ.",
-      "spanish": null,
+      "spanish": "Me alegra mucho conocerte.",
       "lessons": [
         1
       ],
@@ -10864,7 +12194,7 @@
       "id": "PH-18e28a2339872e96",
       "hanzi": "她也很累。",
       "pinyin": "Tā yě hěn lèi",
-      "spanish": null,
+      "spanish": "Ella también está muy cansada.",
       "lessons": [
         1
       ],
@@ -10889,7 +12219,7 @@
       "id": "PH-4225260d7aead3ea",
       "hanzi": "他也不困。",
       "pinyin": "Tā yě bú kùn.",
-      "spanish": null,
+      "spanish": "Él tampoco tiene sueño.",
       "lessons": [
         1
       ],
@@ -10944,7 +12274,7 @@
       "id": "PH-4d040c08203c7bed",
       "hanzi": "我也是！",
       "pinyin": "Wǒ yě shì",
-      "spanish": null,
+      "spanish": "¡Yo también!",
       "lessons": [
         1
       ],
@@ -10968,7 +12298,7 @@
       "id": "PH-06160dede7f14616",
       "hanzi": "很高兴认识你！",
       "pinyin": "Hěn gāo xìng rèn shi nǐ",
-      "spanish": null,
+      "spanish": "¡Me alegra conocerte!",
       "lessons": [
         1
       ],
@@ -11017,7 +12347,7 @@
       "id": "PH-2c74d0560f5d218b",
       "hanzi": "我在大学。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Estoy en la universidad.",
       "lessons": [
         1
       ],
@@ -11041,7 +12371,7 @@
       "id": "PH-161db5804108a277",
       "hanzi": "老师在这儿吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Está aquí el profesor?",
       "lessons": [
         1
       ],
@@ -11066,7 +12396,7 @@
       "id": "PH-ec490ed22b1d25dc",
       "hanzi": "他不在。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él no está.",
       "lessons": [
         1
       ],
@@ -11090,7 +12420,7 @@
       "id": "PH-5c6d5dbf3760104c",
       "hanzi": "我们太忙了。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Estamos demasiado ocupados.",
       "lessons": [
         1
       ],
@@ -11115,7 +12445,7 @@
       "id": "PH-661e71f6c42f8a0d",
       "hanzi": "王老师太好了！",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¡El profesor Wang es buenísimo!",
       "lessons": [
         1
       ],
@@ -11141,7 +12471,7 @@
       "id": "PH-eb3e4348841848cf",
       "hanzi": "他太困了。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él tiene muchísimo sueño.",
       "lessons": [
         1
       ],
@@ -11196,7 +12526,7 @@
       "id": "PH-86cf02ee00d24bda",
       "hanzi": "我叫Ana，你呢？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Me llamo Ana, ¿y tú?",
       "lessons": [
         1
       ],
@@ -11221,7 +12551,7 @@
       "id": "PH-1e54d174a79a023c",
       "hanzi": "我不忙，你们呢？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "No estoy ocupado, ¿y ustedes?",
       "lessons": [
         1
       ],
@@ -11247,7 +12577,7 @@
       "id": "PH-41c97578d6f40db1",
       "hanzi": "你最近忙吗？",
       "pinyin": "Nǐ zuìjìn máng ma?",
-      "spanish": null,
+      "spanish": "¿Has estado ocupado últimamente?",
       "lessons": [
         1
       ],
@@ -11304,7 +12634,7 @@
       "id": "PH-be10ea8c4e5d464c",
       "hanzi": "你好吗？",
       "pinyin": "Nǐ hǎo ma?",
-      "spanish": null,
+      "spanish": "¿Cómo estás?",
       "lessons": [
         1,
         2
@@ -11349,7 +12679,7 @@
       "id": "PH-a3d27cb3efa3c0f5",
       "hanzi": "还行。",
       "pinyin": "Hái xíng.",
-      "spanish": null,
+      "spanish": "No está mal.",
       "lessons": [
         1
       ],
@@ -11376,7 +12706,7 @@
       "id": "PH-2327ca3bcdbaefd6",
       "hanzi": "马马虎虎。",
       "pinyin": "Mǎma hūhu.",
-      "spanish": null,
+      "spanish": "Más o menos.",
       "lessons": [
         1
       ],
@@ -11398,7 +12728,7 @@
       "id": "PH-399600f1c8281e82",
       "hanzi": "我叫马大为。",
       "pinyin": "Wǒ jiào Mǎ Dàwéi.",
-      "spanish": null,
+      "spanish": "Me llamo Ma Dawei.",
       "lessons": [
         1
       ],
@@ -11427,7 +12757,7 @@
       "id": "PH-6afd9bf65f7cafe0",
       "hanzi": "你叫马大为吗？",
       "pinyin": "Nǐ jiào Mǎ Dàwéi ma?",
-      "spanish": null,
+      "spanish": "¿Te llamas Ma Dawei?",
       "lessons": [
         1
       ],
@@ -11457,7 +12787,7 @@
       "id": "PH-6831b0d4449d0edd",
       "hanzi": "他是Juan。",
       "pinyin": "Tā shì Juan.",
-      "spanish": null,
+      "spanish": "Él es Juan.",
       "lessons": [
         1
       ],
@@ -11480,7 +12810,7 @@
       "id": "PH-f98768bb0cc3aef6",
       "hanzi": "他是Juan吗？",
       "pinyin": "Tā shì Juan ma?",
-      "spanish": null,
+      "spanish": "¿Él es Juan?",
       "lessons": [
         1
       ],
@@ -11504,7 +12834,7 @@
       "id": "PH-5929ae36e2adf604",
       "hanzi": "林娜在。",
       "pinyin": "Línnà zài.",
-      "spanish": null,
+      "spanish": "Lin Na está.",
       "lessons": [
         1
       ],
@@ -11532,7 +12862,7 @@
       "id": "PH-b1862654a4c3b740",
       "hanzi": "林娜在吗？",
       "pinyin": "Línnà zài ma?",
-      "spanish": null,
+      "spanish": "¿Está Lin Na?",
       "lessons": [
         1
       ],
@@ -11561,7 +12891,7 @@
       "id": "PH-3ac22ed851fa1318",
       "hanzi": "他也姓马。",
       "pinyin": "Tā yě xìng Mǎ.",
-      "spanish": null,
+      "spanish": "Su apellido también es Ma.",
       "lessons": [
         1
       ],
@@ -11586,7 +12916,7 @@
       "id": "PH-e7ee167c98606778",
       "hanzi": "我也不忙。",
       "pinyin": "Wǒ yě bú máng.",
-      "spanish": null,
+      "spanish": "Yo tampoco estoy ocupado.",
       "lessons": [
         1
       ],
@@ -11611,7 +12941,7 @@
       "id": "PH-1cfbafc227a21c17",
       "hanzi": "林娜也很高兴。",
       "pinyin": "Línnà yě hěn gāoxìng.",
-      "spanish": null,
+      "spanish": "Lin Na también está muy contenta.",
       "lessons": [
         1
       ],
@@ -11660,7 +12990,7 @@
       "id": "PH-802e8eea15bda367",
       "hanzi": "我早上刚到北京。",
       "pinyin": "wǒ zăoshang gāng dào Běijīng",
-      "spanish": null,
+      "spanish": "Acabo de llegar a Pekín esta mañana.",
       "lessons": [
         2
       ],
@@ -11814,7 +13144,7 @@
       "id": "PH-ce204bfb9a904222",
       "hanzi": "老师好！",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¡Hola, profe!",
       "lessons": [
         2
       ],
@@ -11866,7 +13196,7 @@
       "id": "PH-8a5bb0ee133ef19a",
       "hanzi": "你不是老师。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tú no eres profesor.",
       "lessons": [
         2
       ],
@@ -11891,7 +13221,7 @@
       "id": "PH-872b14fa9fb19436",
       "hanzi": "他也是老师。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él también es profesor.",
       "lessons": [
         2
       ],
@@ -11916,7 +13246,7 @@
       "id": "PH-35877ee19bf39065",
       "hanzi": "你是老师吗？",
       "pinyin": "Nǐ shì lǎoshī ma?",
-      "spanish": null,
+      "spanish": "¿Eres profesor?",
       "lessons": [
         2
       ],
@@ -11941,7 +13271,7 @@
       "id": "PH-29679f718599809e",
       "hanzi": "我不是老师，我是学生。",
       "pinyin": "Wǒ búshì lǎoshī, wǒ shì xuéshēng.",
-      "spanish": null,
+      "spanish": "No soy profesor, soy estudiante.",
       "lessons": [
         2
       ],
@@ -12046,7 +13376,7 @@
       "id": "PH-d7ce08a4fd46d540",
       "hanzi": "那是我老师。",
       "pinyin": "Nà shì wǒ lǎoshī.",
-      "spanish": null,
+      "spanish": "Ese es mi profesor.",
       "lessons": [
         2
       ],
@@ -12072,7 +13402,7 @@
       "id": "PH-ddd87811dcdf1cf2",
       "hanzi": "那是你朋友吗？",
       "pinyin": "Nà shì nǐ péngyou ma?",
-      "spanish": null,
+      "spanish": "¿Ese es tu amigo?",
       "lessons": [
         2
       ],
@@ -12227,7 +13557,7 @@
       "id": "PH-22a1fe0f4b30bc6b",
       "hanzi": "你好，你是哪国人？",
       "pinyin": "Nǐ hǎo, nǐ shì nǎ guó rén?",
-      "spanish": null,
+      "spanish": "Hola, ¿de qué país eres?",
       "lessons": [
         2
       ],
@@ -12256,7 +13586,7 @@
       "id": "PH-047f9e4cb5e86d8b",
       "hanzi": "我是秘鲁人。",
       "pinyin": "Wŏ shì Bìlŭ rén.",
-      "spanish": null,
+      "spanish": "Soy peruano.",
       "lessons": [
         2
       ],
@@ -12281,7 +13611,7 @@
       "id": "PH-78a8c9d9dd602a47",
       "hanzi": "他是哪国人？",
       "pinyin": "Tā shì nǎ guó rén?",
-      "spanish": null,
+      "spanish": "¿De qué país es él?",
       "lessons": [
         2
       ],
@@ -12318,7 +13648,7 @@
       "id": "PH-aaaa948989c2c9ec",
       "hanzi": "他是秘鲁人。",
       "pinyin": "Tā shì Bìlǔ rén.",
-      "spanish": null,
+      "spanish": "Él es peruano.",
       "lessons": [
         2
       ],
@@ -12343,7 +13673,7 @@
       "id": "PH-17c00c56c6657575",
       "hanzi": "你朋友是哪国人？",
       "pinyin": "Nĭ péngyou shì nǎ guó rén?",
-      "spanish": null,
+      "spanish": "¿De qué país es tu amigo?",
       "lessons": [
         2
       ],
@@ -12371,7 +13701,7 @@
       "id": "PH-23c2c72791905b34",
       "hanzi": "我朋友是中国人。",
       "pinyin": "Wŏ péngyou shì Zhōngguó rén.",
-      "spanish": null,
+      "spanish": "Mi amigo es chino.",
       "lessons": [
         2
       ],
@@ -12397,7 +13727,7 @@
       "id": "PH-69a24d57a7e9d58f",
       "hanzi": "我也很好。你是哪国人？",
       "pinyin": "Wŏ yĕ hĕn hǎo. Nǐ shì nǎ guó rén?",
-      "spanish": null,
+      "spanish": "Yo también estoy muy bien. ¿De qué país eres?",
       "lessons": [
         2
       ],
@@ -12428,7 +13758,7 @@
       "id": "PH-5142cb2d864109cd",
       "hanzi": "我是秘鲁人。你呢？",
       "pinyin": "Wŏ shì Bìlŭ rén. Nǐ ne?",
-      "spanish": null,
+      "spanish": "Soy peruano. ¿Y tú?",
       "lessons": [
         2
       ],
@@ -12455,7 +13785,7 @@
       "id": "PH-89f20e12f6f7484b",
       "hanzi": "我是中国人。再见。",
       "pinyin": "Wǒ shì Zhōngguó rén. Zàijiàn.",
-      "spanish": null,
+      "spanish": "Soy chino. Adiós.",
       "lessons": [
         2
       ],
@@ -12481,7 +13811,7 @@
       "id": "PH-7352a67fef31e1b0",
       "hanzi": "我学习汉语。你呢？",
       "pinyin": "wǒ xuéxí Hànyǔ. Nǐ ne?",
-      "spanish": null,
+      "spanish": "Estudio chino. ¿Y tú?",
       "lessons": [
         2
       ],
@@ -12507,7 +13837,7 @@
       "id": "PH-42f20ea8ea35de0c",
       "hanzi": "我学习英语。",
       "pinyin": "wǒ xuéxí Yīngyǔ.",
-      "spanish": null,
+      "spanish": "Estudio inglés.",
       "lessons": [
         2
       ],
@@ -12531,7 +13861,7 @@
       "id": "PH-0a3721928d6f00d4",
       "hanzi": "你们学习中文。",
       "pinyin": "nǐ mén xué xí zhōnɡ wén",
-      "spanish": null,
+      "spanish": "Ustedes estudian chino.",
       "lessons": [
         2
       ],
@@ -12555,7 +13885,7 @@
       "id": "PH-59242824d68f9036",
       "hanzi": "我学习西班牙语。",
       "pinyin": "wǒ xué xí xī bān yá yǔ",
-      "spanish": null,
+      "spanish": "Estudio español.",
       "lessons": [
         2
       ],
@@ -12579,7 +13909,7 @@
       "id": "PH-e83fe94dcd79cdf6",
       "hanzi": "我弟弟学习意大利语。",
       "pinyin": "wǒ dì di xué xí yì dà lì yǔ",
-      "spanish": null,
+      "spanish": "Mi hermano menor estudia italiano.",
       "lessons": [
         2
       ],
@@ -12604,7 +13934,7 @@
       "id": "PH-aa2e51f22f2b2f12",
       "hanzi": "他学什么？",
       "pinyin": "tā xué shén me",
-      "spanish": null,
+      "spanish": "¿Qué aprende él?",
       "lessons": [
         2
       ],
@@ -12628,7 +13958,7 @@
       "id": "PH-c358d4611626e471",
       "hanzi": "他学做饭。",
       "pinyin": "tā xué zuò fàn",
-      "spanish": null,
+      "spanish": "Él aprende a cocinar.",
       "lessons": [
         2
       ],
@@ -12652,7 +13982,7 @@
       "id": "PH-be81f2ea3bdea328",
       "hanzi": "她学什么？",
       "pinyin": "tā xué shén me",
-      "spanish": null,
+      "spanish": "¿Qué aprende ella?",
       "lessons": [
         2
       ],
@@ -12676,7 +14006,7 @@
       "id": "PH-ac25d2a8af3fe209",
       "hanzi": "她学画画。",
       "pinyin": "tā xué huà huà",
-      "spanish": null,
+      "spanish": "Ella aprende a dibujar.",
       "lessons": [
         2
       ],
@@ -12914,7 +14244,7 @@
       "id": "PH-10d754ac9c07b1a5",
       "hanzi": "我是中国人。你会说什么语言？",
       "pinyin": "wǒ shì zhōnɡ ɡuó rén, nǐ huì shuō shén me yǔ yán?",
-      "spanish": null,
+      "spanish": "Soy chino. ¿Qué idiomas sabes hablar?",
       "lessons": [
         2
       ],
@@ -12944,7 +14274,7 @@
       "id": "PH-45083e149d8f3010",
       "hanzi": "我会西班牙语和英语。",
       "pinyin": "wǒ huì xī bān yá yǔ hé yīnɡ yǔ",
-      "spanish": null,
+      "spanish": "Sé hablar español e inglés.",
       "lessons": [
         2
       ],
@@ -12970,7 +14300,7 @@
       "id": "PH-38e7e65bebc34f6a",
       "hanzi": "我会汉语和一点儿西班牙语。",
       "pinyin": "wǒ huì hàn yǔ hé yì diǎnr xī bān yá yǔ",
-      "spanish": null,
+      "spanish": "Sé hablar chino y un poco de español.",
       "lessons": [
         2
       ],
@@ -12997,7 +14327,7 @@
       "id": "PH-bc51241bebeba332",
       "hanzi": "真厉害！",
       "pinyin": "zhēn lì hài!",
-      "spanish": null,
+      "spanish": "¡Qué impresionante!",
       "lessons": [
         2
       ],
@@ -13020,7 +14350,7 @@
       "id": "PH-b12d355bf3c2ca2e",
       "hanzi": "我很好。你爸爸妈妈好吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Estoy muy bien. ¿Tus papás están bien?",
       "lessons": [
         2
       ],
@@ -13048,7 +14378,7 @@
       "id": "PH-8033e65370cf5ecc",
       "hanzi": "他们都很好，你男朋友呢？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ambos están muy bien. ¿Y tu novio?",
       "lessons": [
         2
       ],
@@ -13076,7 +14406,7 @@
       "id": "PH-87fdfa07f3da8137",
       "hanzi": "他也很好。你忙吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él también está muy bien. ¿Estás ocupado?",
       "lessons": [
         2
       ],
@@ -13104,7 +14434,7 @@
       "id": "PH-dbbdb6d4df5f5cc8",
       "hanzi": "我不忙，你呢？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "No estoy ocupado, ¿y tú?",
       "lessons": [
         2
       ],
@@ -13130,7 +14460,7 @@
       "id": "PH-6f8f71ee3d2df945",
       "hanzi": "我也不忙。你要喝什么？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Yo tampoco estoy ocupado. ¿Qué quieres tomar?",
       "lessons": [
         2
       ],
@@ -13159,7 +14489,7 @@
       "id": "PH-dbaa9df46821936a",
       "hanzi": "我要咖啡。那是谁？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Quiero café. ¿Quién es esa persona?",
       "lessons": [
         2
       ],
@@ -13187,7 +14517,7 @@
       "id": "PH-b0770b4924878746",
       "hanzi": "那是我朋友，她是外语老师，他会说汉语和西班牙语。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Esa es mi amiga; ella es profesora de idiomas extranjeros. Él sabe hablar chino y español.",
       "lessons": [
         2
       ],
@@ -13222,7 +14552,7 @@
       "id": "PH-9db4cd481acbbc1a",
       "hanzi": "她是哪国人？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿De qué país es ella?",
       "lessons": [
         2
       ],
@@ -13249,7 +14579,7 @@
       "id": "PH-c2bcda60697d7b94",
       "hanzi": "她是中国人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ella es china.",
       "lessons": [
         2
       ],
@@ -13274,7 +14604,7 @@
       "id": "PH-d1a030e4aca36df2",
       "hanzi": "你好，你是陈老师吗？我是林娜。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Hola, ¿usted es el docente Chen? Soy Lin Na.",
       "lessons": [
         2
       ],
@@ -13304,7 +14634,7 @@
       "id": "PH-277f6b067c0036fa",
       "hanzi": "我们都是中国人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Todos somos chinos.",
       "lessons": [
         2
       ],
@@ -13330,7 +14660,7 @@
       "id": "PH-507c7ae0fa2dd05d",
       "hanzi": "我喝咖啡，你要什么？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Yo tomo café, ¿qué quieres tú?",
       "lessons": [
         2
       ],
@@ -13357,7 +14687,7 @@
       "id": "PH-3ddac6c7e5751279",
       "hanzi": "我爸爸、妈妈都不忙。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ni mi papá ni mi mamá están ocupados.",
       "lessons": [
         2
       ],
@@ -13384,7 +14714,7 @@
       "id": "PH-15d1e1ecd299460e",
       "hanzi": "她哥哥是我们外语老师。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Su hermano mayor es nuestro profesor de idiomas extranjeros.",
       "lessons": [
         2
       ],
@@ -13411,7 +14741,7 @@
       "id": "PH-fac6d0e3d77678f7",
       "hanzi": "你奶奶也是医生吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Tu abuela paterna también es médica?",
       "lessons": [
         2
       ],
@@ -13438,7 +14768,7 @@
       "id": "PH-857c4954c94a49c4",
       "hanzi": "我很忙，我不喝咖啡，谢谢。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Estoy muy ocupado. No tomo café, gracias.",
       "lessons": [
         2
       ],
@@ -13466,7 +14796,7 @@
       "id": "PH-04b878abc99f9a82",
       "hanzi": "那是你外婆吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Esa es tu abuela materna?",
       "lessons": [
         2
       ],
@@ -13493,7 +14823,7 @@
       "id": "PH-1f2301602db9fe09",
       "hanzi": "谁是你们老师？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Quién es su profesor?",
       "lessons": [
         2
       ],
@@ -13518,7 +14848,7 @@
       "id": "PH-c1d3a9f1e0acb017",
       "hanzi": "我哥哥也要喝水。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Mi hermano mayor también quiere tomar agua.",
       "lessons": [
         2
       ],
@@ -13545,7 +14875,7 @@
       "id": "PH-4bfca1540d0cb6c0",
       "hanzi": "你喜欢什么？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Qué te gusta?",
       "lessons": [
         2
       ],
@@ -13569,7 +14899,7 @@
       "id": "PH-9a5387409a78a579",
       "hanzi": "我喜欢……",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Me gusta…",
       "lessons": [
         2
       ],
@@ -13592,7 +14922,7 @@
       "id": "PH-bb84b599f4f78271",
       "hanzi": "我不喜欢……",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "No me gusta…",
       "lessons": [
         2
       ],
@@ -13616,7 +14946,7 @@
       "id": "PH-54939ff0a0769fc2",
       "hanzi": "你喜欢……吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Te gusta…?",
       "lessons": [
         2
       ],
@@ -13640,7 +14970,7 @@
       "id": "PH-c0ad5411b19cfcba",
       "hanzi": "我爱你。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Te amo.",
       "lessons": [
         2
       ],
@@ -13664,7 +14994,7 @@
       "id": "PH-b6522419f93caa17",
       "hanzi": "我喜欢你。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Me gustas.",
       "lessons": [
         2
       ],
@@ -13688,7 +15018,7 @@
       "id": "PH-22095c62ffcb923d",
       "hanzi": "你喜欢做什么？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Qué te gusta hacer?",
       "lessons": [
         2
       ],
@@ -13713,7 +15043,7 @@
       "id": "PH-3f84d1458cc6d3a7",
       "hanzi": "她们都是美国人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Todas ellas son estadounidenses.",
       "lessons": [
         2
       ],
@@ -13739,7 +15069,7 @@
       "id": "PH-fa8ad020f84b7902",
       "hanzi": "他们都学习汉语。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Todos ellos estudian chino.",
       "lessons": [
         2
       ],
@@ -13764,7 +15094,7 @@
       "id": "PH-0148aa8ffb7148d8",
       "hanzi": "好吃",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Rico; delicioso.",
       "lessons": [
         2
       ],
@@ -13865,7 +15195,7 @@
       "id": "PH-6aacc8eb7fd70464",
       "hanzi": "我不要咖啡。",
       "pinyin": "Wǒ bú yào kāfēi.",
-      "spanish": null,
+      "spanish": "No quiero café.",
       "lessons": [
         2
       ],
@@ -13913,7 +15243,7 @@
       "id": "PH-50b0730e9fb60515",
       "hanzi": "看这儿。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Mira aquí.",
       "lessons": [
         2
       ],
@@ -13936,7 +15266,7 @@
       "id": "PH-1af153365ecc8887",
       "hanzi": "看那儿！你老师在那儿！",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¡Mira allí! ¡Tu profesor está allí!",
       "lessons": [
         2
       ],
@@ -13962,7 +15292,7 @@
       "id": "PH-1e59bdf240622433",
       "hanzi": "王小云的爸爸是北京人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "El papá de Wang Xiaoyun es de Pekín.",
       "lessons": [
         2
       ],
@@ -13989,7 +15319,7 @@
       "id": "PH-c9d9ea5c9ed9cd12",
       "hanzi": "王小云的妈妈是上海人，她喜欢吃米饭和点心。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "La mamá de Wang Xiaoyun es de Shanghái; le gusta comer arroz y bocadillos.",
       "lessons": [
         2
       ],
@@ -14022,7 +15352,7 @@
       "id": "PH-548e059a3bcdd368",
       "hanzi": "包子大，饺子小。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Los baozi son grandes y los jiaozi son pequeños.",
       "lessons": [
         2
       ],
@@ -14047,7 +15377,7 @@
       "id": "PH-6a4917ccaba8c622",
       "hanzi": "马大为要包子和饺子。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ma Dawei quiere baozi y jiaozi.",
       "lessons": [
         2
       ],
@@ -14073,7 +15403,7 @@
       "id": "PH-2fcbdbb92079b041",
       "hanzi": "我会用筷子。",
       "pinyin": "wǒ huì yòng kuàizi",
-      "spanish": null,
+      "spanish": "Sé usar palillos para comer.",
       "lessons": [
         2
       ],
@@ -14098,7 +15428,7 @@
       "id": "PH-3225dd8185d6a53c",
       "hanzi": "你要喝什么？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Qué quieres tomar?",
       "lessons": [
         2
       ],
@@ -14123,7 +15453,7 @@
       "id": "PH-bca9f5c6acff98a4",
       "hanzi": "喝咖啡",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tomar café.",
       "lessons": [
         2,
         3
@@ -14151,7 +15481,7 @@
       "id": "PH-cb79e0cecd8e9392",
       "hanzi": "喝茶",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tomar té.",
       "lessons": [
         2,
         3
@@ -14179,7 +15509,7 @@
       "id": "PH-a8720cdfc7de0556",
       "hanzi": "喝水",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tomar agua.",
       "lessons": [
         2
       ],
@@ -14202,7 +15532,7 @@
       "id": "PH-da4595f21d2a6a76",
       "hanzi": "喝牛奶",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tomar leche.",
       "lessons": [
         2
       ],
@@ -14225,7 +15555,7 @@
       "id": "PH-87dd1db3fad95c1f",
       "hanzi": "您要吃什么？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Qué desea comer?",
       "lessons": [
         2
       ],
@@ -14250,7 +15580,7 @@
       "id": "PH-454c47aa99859e70",
       "hanzi": "这是马大为。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Este es Ma Dawei.",
       "lessons": [
         2
       ],
@@ -14275,7 +15605,7 @@
       "id": "PH-37432403591e9bfe",
       "hanzi": "那不是饺子。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Eso no es jiaozi.",
       "lessons": [
         2
       ],
@@ -14300,7 +15630,7 @@
       "id": "PH-be06200b53dc1a8f",
       "hanzi": "她也是老师。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ella también es profesora.",
       "lessons": [
         2
       ],
@@ -14325,7 +15655,7 @@
       "id": "PH-97411f278ac0de2d",
       "hanzi": "我们都是秘鲁人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Todos somos peruanos.",
       "lessons": [
         2
       ],
@@ -14351,7 +15681,7 @@
       "id": "PH-603b7f6a550399bb",
       "hanzi": "这是面条。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Esto son fideos.",
       "lessons": [
         2
       ],
@@ -14376,7 +15706,7 @@
       "id": "PH-4976a99864ef9e83",
       "hanzi": "这不是面条。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Esto no son fideos.",
       "lessons": [
         2
       ],
@@ -14401,7 +15731,7 @@
       "id": "PH-faf37ba86011001e",
       "hanzi": "这是面条吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Esto son fideos?",
       "lessons": [
         2
       ],
@@ -14427,7 +15757,7 @@
       "id": "PH-c497424e0afbd5af",
       "hanzi": "他是北京人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él es de Pekín.",
       "lessons": [
         2
       ],
@@ -14452,7 +15782,7 @@
       "id": "PH-a74263a76c3fbd89",
       "hanzi": "他不是北京人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él no es de Pekín.",
       "lessons": [
         2
       ],
@@ -14478,7 +15808,7 @@
       "id": "PH-ffaed2d2be094263",
       "hanzi": "他是北京人吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Él es de Pekín?",
       "lessons": [
         2
       ],
@@ -14504,7 +15834,7 @@
       "id": "PH-9057e7311dcc0fff",
       "hanzi": "那是包子。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Eso es baozi.",
       "lessons": [
         2
       ],
@@ -14529,7 +15859,7 @@
       "id": "PH-fe0eeeb428088dde",
       "hanzi": "那不是包子。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Eso no es baozi.",
       "lessons": [
         2
       ],
@@ -14554,7 +15884,7 @@
       "id": "PH-e13b2a3da5be72d4",
       "hanzi": "那是包子吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Eso es baozi?",
       "lessons": [
         2
       ],
@@ -14585,7 +15915,7 @@
       "id": "PH-219304506979f558",
       "hanzi": "我是上海人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Soy de Shanghái.",
       "lessons": [
         2
       ],
@@ -14610,7 +15940,7 @@
       "id": "PH-ae25a9896dd5f71c",
       "hanzi": "我不是上海人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "No soy de Shanghái.",
       "lessons": [
         2
       ],
@@ -14636,7 +15966,7 @@
       "id": "PH-647ba816914563ff",
       "hanzi": "你是上海人吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Eres de Shanghái?",
       "lessons": [
         2
       ],
@@ -14662,7 +15992,7 @@
       "id": "PH-e66026da1b55ca80",
       "hanzi": "这是饺子。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Esto es jiaozi.",
       "lessons": [
         2
       ],
@@ -14692,7 +16022,7 @@
       "id": "PH-39beccee3bf7158b",
       "hanzi": "你吃什么？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Qué comes?",
       "lessons": [
         2
       ],
@@ -14716,7 +16046,7 @@
       "id": "PH-02ccebacf56f2764",
       "hanzi": "我吃面条。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Como fideos.",
       "lessons": [
         2
       ],
@@ -14740,7 +16070,7 @@
       "id": "PH-250fa3584d0dfef9",
       "hanzi": "他是谁？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Quién es él?",
       "lessons": [
         2
       ],
@@ -14764,7 +16094,7 @@
       "id": "PH-b93bcb1785d6e2c0",
       "hanzi": "他是梅西。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él es Messi.",
       "lessons": [
         2
       ],
@@ -14788,7 +16118,7 @@
       "id": "PH-05b24a4dca28721c",
       "hanzi": "他是阿根廷人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él es argentino.",
       "lessons": [
         2
       ],
@@ -14813,7 +16143,7 @@
       "id": "PH-0ca73d33266cac94",
       "hanzi": "那是米饭。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Eso es arroz.",
       "lessons": [
         2
       ],
@@ -14838,7 +16168,7 @@
       "id": "PH-7461e2cc6cc34ac3",
       "hanzi": "那是什么？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Qué es eso?",
       "lessons": [
         2
       ],
@@ -14863,7 +16193,7 @@
       "id": "PH-c813e7213df0a4cc",
       "hanzi": "他是美国人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él es estadounidense.",
       "lessons": [
         2
       ],
@@ -14894,7 +16224,7 @@
       "id": "PH-ddd25b9cf0b035e8",
       "hanzi": "王小云喜欢吃饺子。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "A Wang Xiaoyun le gusta comer jiaozi.",
       "lessons": [
         2
       ],
@@ -14919,7 +16249,7 @@
       "id": "PH-7bf731e634ef80ab",
       "hanzi": "王小云喜欢吃什么？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Qué le gusta comer a Wang Xiaoyun?",
       "lessons": [
         2
       ],
@@ -14944,7 +16274,7 @@
       "id": "PH-7c1fc08e7e0f03f8",
       "hanzi": "马大为学习汉语。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ma Dawei estudia chino.",
       "lessons": [
         2
       ],
@@ -14968,7 +16298,7 @@
       "id": "PH-a12046409f26fddd",
       "hanzi": "马大为学习什么？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Qué estudia Ma Dawei?",
       "lessons": [
         2
       ],
@@ -14992,7 +16322,7 @@
       "id": "PH-28db8cf34abcc0db",
       "hanzi": "谁学习汉语？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Quién estudia chino?",
       "lessons": [
         2
       ],
@@ -15016,7 +16346,7 @@
       "id": "PH-15dd91d598676096",
       "hanzi": "这是我家。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Esta es mi casa.",
       "lessons": [
         3
       ],
@@ -15042,7 +16372,7 @@
       "id": "PH-5ea6f6e1b264c1e3",
       "hanzi": "我家在秘鲁。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Mi casa está en Perú.",
       "lessons": [
         3
       ],
@@ -15067,7 +16397,7 @@
       "id": "PH-957c3bba2f455b44",
       "hanzi": "我家有四口人，我妈妈、我爸爸、我哥哥和我。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "En mi familia somos cuatro: mi mamá, mi papá, mi hermano mayor y yo.",
       "lessons": [
         3
       ],
@@ -15098,7 +16428,7 @@
       "id": "PH-6f6a649733597458",
       "hanzi": "你家有几口人？",
       "pinyin": "Nǐ jiā yǒu jǐ kǒu rén?",
-      "spanish": null,
+      "spanish": "¿Cuántas personas hay en tu familia?",
       "lessons": [
         3
       ],
@@ -15135,7 +16465,7 @@
       "id": "PH-6fc2fb2edfc09543",
       "hanzi": "我家有三口人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "En mi familia somos tres.",
       "lessons": [
         3
       ],
@@ -15167,7 +16497,7 @@
       "id": "PH-ba08283d5251e8f6",
       "hanzi": "你说一下，你家有几口人？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Cuéntame, ¿cuántas personas hay en tu familia?",
       "lessons": [
         3
       ],
@@ -15196,7 +16526,7 @@
       "id": "PH-08ebc51b56bee0f7",
       "hanzi": "我家有三口人，妈妈、爸爸和我。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "En mi familia somos tres: mamá, papá y yo.",
       "lessons": [
         3
       ],
@@ -15226,7 +16556,7 @@
       "id": "PH-33e998b656ad5778",
       "hanzi": "我家有七口人。",
       "pinyin": "Wǒ jiā yǒu qī kǒu rén.",
-      "spanish": null,
+      "spanish": "En mi familia somos siete.",
       "lessons": [
         3
       ],
@@ -15253,7 +16583,7 @@
       "id": "PH-e933b4d99ff4bf1e",
       "hanzi": "我家有三口人，爸爸、妈妈和我。",
       "pinyin": "Wǒ jiā yǒu sān kǒu rén, bàba, māma hé wǒ.",
-      "spanish": null,
+      "spanish": "En mi familia somos tres: papá, mamá y yo.",
       "lessons": [
         3
       ],
@@ -15283,7 +16613,7 @@
       "id": "PH-38f6ca8078116ec2",
       "hanzi": "我家有五口人。",
       "pinyin": "Wǒ jiā yǒu wǔ kǒu rén.",
-      "spanish": null,
+      "spanish": "En mi familia somos cinco.",
       "lessons": [
         3
       ],
@@ -15315,7 +16645,7 @@
       "id": "PH-b97e96764389c910",
       "hanzi": "你有弟弟吗？",
       "pinyin": "Nǐ yǒu dìdi ma?",
-      "spanish": null,
+      "spanish": "¿Tienes un hermano menor?",
       "lessons": [
         3
       ],
@@ -15340,7 +16670,7 @@
       "id": "PH-6117b49a9bfca6b0",
       "hanzi": "我没有弟弟，我有一个哥哥。",
       "pinyin": "Wǒ méiyǒu dìdi, wǒ yǒu yíge gēge.",
-      "spanish": null,
+      "spanish": "No tengo hermano menor; tengo un hermano mayor.",
       "lessons": [
         3
       ],
@@ -15368,7 +16698,7 @@
       "id": "PH-29a483de221c5c83",
       "hanzi": "三个朋友",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tres amigos.",
       "lessons": [
         3
       ],
@@ -15392,7 +16722,7 @@
       "id": "PH-6a4629c0ff5c55ca",
       "hanzi": "我有三个朋友。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tengo tres amigos.",
       "lessons": [
         3
       ],
@@ -15418,7 +16748,7 @@
       "id": "PH-a2d207d7386070d6",
       "hanzi": "四个老师",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Cuatro profesores.",
       "lessons": [
         3
       ],
@@ -15442,7 +16772,7 @@
       "id": "PH-14a77f7f3909cc2b",
       "hanzi": "她认识四个老师。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ella conoce a cuatro profesores.",
       "lessons": [
         3
       ],
@@ -15468,7 +16798,7 @@
       "id": "PH-33c63eeae2eaae09",
       "hanzi": "五个学生",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Cinco estudiantes.",
       "lessons": [
         3
       ],
@@ -15492,7 +16822,7 @@
       "id": "PH-92e0c3f7c6e9dab4",
       "hanzi": "那儿有五个学生。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Allí hay cinco estudiantes.",
       "lessons": [
         3
       ],
@@ -15518,7 +16848,7 @@
       "id": "PH-742deae046d167a8",
       "hanzi": "我家有两口人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "En mi familia somos dos.",
       "lessons": [
         3
       ],
@@ -15545,7 +16875,7 @@
       "id": "PH-cb9c6ed6fc512731",
       "hanzi": "这儿有两张照片。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Aquí hay dos fotos.",
       "lessons": [
         3
       ],
@@ -15571,7 +16901,7 @@
       "id": "PH-c83248705bfc600d",
       "hanzi": "一个人",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Una persona.",
       "lessons": [
         3
       ],
@@ -15595,7 +16925,7 @@
       "id": "PH-ddb133631c607e5a",
       "hanzi": "一本书",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Un libro.",
       "lessons": [
         3
       ],
@@ -15619,7 +16949,7 @@
       "id": "PH-ded0f760df5a5b72",
       "hanzi": "一杯酒",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Una copa de una bebida alcohólica.",
       "lessons": [
         3
       ],
@@ -15643,7 +16973,7 @@
       "id": "PH-f9cf527ccd6cdaa0",
       "hanzi": "四杯酒",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Cuatro copas de una bebida alcohólica.",
       "lessons": [
         3
       ],
@@ -15667,7 +16997,7 @@
       "id": "PH-0fad594fa3443966",
       "hanzi": "六口人",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Seis miembros de una familia.",
       "lessons": [
         3
       ],
@@ -15691,7 +17021,7 @@
       "id": "PH-6c1ed2f898e51490",
       "hanzi": "两个姐姐",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Dos hermanas mayores.",
       "lessons": [
         3
       ],
@@ -15715,7 +17045,7 @@
       "id": "PH-b725aace30b2683c",
       "hanzi": "一个朋友",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Un amigo.",
       "lessons": [
         3
       ],
@@ -15739,7 +17069,7 @@
       "id": "PH-12b8998e908234b6",
       "hanzi": "三张照片",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tres fotos.",
       "lessons": [
         3
       ],
@@ -15763,7 +17093,7 @@
       "id": "PH-436de85613a5ce21",
       "hanzi": "一张照片",
       "pinyin": "yì zhāng zhàopiàn",
-      "spanish": null,
+      "spanish": "Una foto.",
       "lessons": [
         3
       ],
@@ -15792,7 +17122,7 @@
       "id": "PH-a9ea22eafeab5a7d",
       "hanzi": "这张照片",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Esta foto.",
       "lessons": [
         3
       ],
@@ -15821,7 +17151,7 @@
       "id": "PH-ad353795dec3167a",
       "hanzi": "那张照片",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Esa foto.",
       "lessons": [
         3
       ],
@@ -15845,7 +17175,7 @@
       "id": "PH-f83b5820507e3e7c",
       "hanzi": "这张照片很有意思。",
       "pinyin": "Zhè zhāng zhàopiàn hěn yǒuyìsi.",
-      "spanish": null,
+      "spanish": "Esta foto es muy interesante.",
       "lessons": [
         3
       ],
@@ -15871,7 +17201,7 @@
       "id": "PH-f61cae4418b71507",
       "hanzi": "他家有两口人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "En su familia son dos personas.",
       "lessons": [
         3
       ],
@@ -15898,7 +17228,7 @@
       "id": "PH-681f699728c0f4ce",
       "hanzi": "我有两个好老师。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tengo dos buenos profesores.",
       "lessons": [
         3
       ],
@@ -15925,7 +17255,7 @@
       "id": "PH-e760137a525f8f31",
       "hanzi": "孔子学院有二十个汉语老师。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "El Instituto Confucio tiene veinte profesores de chino.",
       "lessons": [
         3
       ],
@@ -15952,7 +17282,7 @@
       "id": "PH-6a395bf6b5a83681",
       "hanzi": "两张卡片",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Dos tarjetas.",
       "lessons": [
         3
       ],
@@ -15976,7 +17306,7 @@
       "id": "PH-fb4589c8ba855a7f",
       "hanzi": "我有一个好朋友。",
       "pinyin": "Wǒ yǒu yí ge hǎo péngyou.",
-      "spanish": null,
+      "spanish": "Tengo un buen amigo.",
       "lessons": [
         3
       ],
@@ -16003,7 +17333,7 @@
       "id": "PH-a9a1b25303da44ce",
       "hanzi": "我没有哥哥，也没有姐姐。",
       "pinyin": "Wǒ méiyǒu gēge, yě méiyǒu jiějie.",
-      "spanish": null,
+      "spanish": "No tengo hermano mayor ni hermana mayor.",
       "lessons": [
         3
       ],
@@ -16029,7 +17359,7 @@
       "id": "PH-007f1261b0953697",
       "hanzi": "我有一个姐姐，还有一个妹妹。",
       "pinyin": "Wǒ yǒu yí ge jiějie, hái yǒu yí ge mèimei.",
-      "spanish": null,
+      "spanish": "Tengo una hermana mayor y también una hermana menor.",
       "lessons": [
         3
       ],
@@ -16057,7 +17387,7 @@
       "id": "PH-d070e1a730c53cf4",
       "hanzi": "她有一个中国朋友，还有一个秘鲁朋友。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ella tiene un amigo chino y también un amigo peruano.",
       "lessons": [
         3
       ],
@@ -16086,7 +17416,7 @@
       "id": "PH-82f3ddb0072f158d",
       "hanzi": "我认识张老师，还认识王老师。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Conozco al profesor Zhang y también al profesor Wang.",
       "lessons": [
         3
       ],
@@ -16113,7 +17443,7 @@
       "id": "PH-ac8419a5c7ef3a53",
       "hanzi": "我学习汉语，还学习英语。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Estudio chino y también inglés.",
       "lessons": [
         3
       ],
@@ -16139,7 +17469,7 @@
       "id": "PH-0723abbd5ad5de02",
       "hanzi": "你有小猫吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Tienes un gatito?",
       "lessons": [
         3
       ],
@@ -16164,7 +17494,7 @@
       "id": "PH-4ede4839fc13f6d9",
       "hanzi": "我有两只小猫，他们很可爱。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tengo dos gatitos; son muy tiernos.",
       "lessons": [
         3
       ],
@@ -16193,7 +17523,7 @@
       "id": "PH-104242c1007e283c",
       "hanzi": "一只猫",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Un gato.",
       "lessons": [
         3
       ],
@@ -16217,7 +17547,7 @@
       "id": "PH-fab3248b0fd7525e",
       "hanzi": "三只狗",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tres perros.",
       "lessons": [
         3
       ],
@@ -16292,7 +17622,7 @@
       "id": "PH-989d91002ccad248",
       "hanzi": "这是我哥哥，他叫José。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Este es mi hermano mayor; se llama José.",
       "lessons": [
         3
       ],
@@ -16320,7 +17650,7 @@
       "id": "PH-c4b9eaf55f0d19c6",
       "hanzi": "你好，José，你做什么工作？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Hola, José, ¿en qué trabajas?",
       "lessons": [
         3
       ],
@@ -16347,7 +17677,7 @@
       "id": "PH-e0cb377e489a7036",
       "hanzi": "我是医生，你呢？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Soy médico, ¿y tú?",
       "lessons": [
         3
       ],
@@ -16373,7 +17703,7 @@
       "id": "PH-8a521d1cc6f1f414",
       "hanzi": "我是大学老师。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Soy profesor universitario.",
       "lessons": [
         3
       ],
@@ -16448,7 +17778,7 @@
       "id": "PH-3c85f59abfb1d463",
       "hanzi": "他在吃饭。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él está comiendo.",
       "lessons": [
         3
       ],
@@ -16472,7 +17802,7 @@
       "id": "PH-4048b0523a7b5042",
       "hanzi": "我们在上课。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Estamos en clase.",
       "lessons": [
         3
       ],
@@ -16496,7 +17826,7 @@
       "id": "PH-465b5197694b639e",
       "hanzi": "弟弟在喝水。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Mi hermano menor está tomando agua.",
       "lessons": [
         3
       ],
@@ -16521,7 +17851,7 @@
       "id": "PH-28ab0a1e5f8955c4",
       "hanzi": "我现在没有工作。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ahora no tengo trabajo.",
       "lessons": [
         3
       ],
@@ -16546,7 +17876,7 @@
       "id": "PH-19191003dd86430b",
       "hanzi": "我也没有工作。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Yo tampoco tengo trabajo.",
       "lessons": [
         3
       ],
@@ -16571,7 +17901,7 @@
       "id": "PH-bc5730b2cd980fc9",
       "hanzi": "我是医生。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Soy médico.",
       "lessons": [
         3
       ],
@@ -16595,7 +17925,7 @@
       "id": "PH-47b4f1fdd5cca7b0",
       "hanzi": "我家一共有五口人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "En mi familia somos cinco en total.",
       "lessons": [
         3
       ],
@@ -16623,7 +17953,7 @@
       "id": "PH-0a5cadc101773edb",
       "hanzi": "王小云家有几口人？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cuántas personas hay en la familia de Wang Xiaoyun?",
       "lessons": [
         3
       ],
@@ -16650,7 +17980,7 @@
       "id": "PH-c8c1582ba7883c20",
       "hanzi": "王小云有弟弟吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Wang Xiaoyun tiene un hermano menor?",
       "lessons": [
         3
       ],
@@ -16675,7 +18005,7 @@
       "id": "PH-23064a424a95c0f5",
       "hanzi": "王小云的爸爸妈妈做什么工作？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿En qué trabajan el papá y la mamá de Wang Xiaoyun?",
       "lessons": [
         3
       ],
@@ -16703,7 +18033,7 @@
       "id": "PH-8d788c441df1765d",
       "hanzi": "林娜家有几口人？他们是谁？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cuántas personas hay en la familia de Lin Na? ¿Quiénes son?",
       "lessons": [
         3
       ],
@@ -16733,7 +18063,7 @@
       "id": "PH-8df90fef11c83086",
       "hanzi": "贝贝是谁？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Quién es Beibei?",
       "lessons": [
         3
       ],
@@ -16767,7 +18097,7 @@
       "id": "PH-5afa8290e052c6ed",
       "hanzi": "我有一个哥哥。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tengo un hermano mayor.",
       "lessons": [
         3
       ],
@@ -16793,7 +18123,7 @@
       "id": "PH-ca79df61f5cd6af1",
       "hanzi": "她没有妹妹。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ella no tiene hermana menor.",
       "lessons": [
         3
       ],
@@ -16817,7 +18147,7 @@
       "id": "PH-e87bd150eb33f4e9",
       "hanzi": "你们家有小狗吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Tienen un perrito en casa?",
       "lessons": [
         3
       ],
@@ -16843,7 +18173,7 @@
       "id": "PH-1107bd0f3e757d67",
       "hanzi": "我的工作",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Mi trabajo.",
       "lessons": [
         3
       ],
@@ -16867,7 +18197,7 @@
       "id": "PH-da8d13d276780fa4",
       "hanzi": "我们家的照片",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Una foto de nuestra familia.",
       "lessons": [
         3
       ],
@@ -16892,7 +18222,7 @@
       "id": "PH-efd59707ebb01969",
       "hanzi": "他的朋友",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Su amigo; el amigo de él.",
       "lessons": [
         3
       ],
@@ -16916,7 +18246,7 @@
       "id": "PH-5718924a5c3d7147",
       "hanzi": "我妈妈",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Mi mamá.",
       "lessons": [
         3
       ],
@@ -16939,7 +18269,7 @@
       "id": "PH-e7146ccc4a893500",
       "hanzi": "你女儿",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tu hija.",
       "lessons": [
         3
       ],
@@ -16962,7 +18292,7 @@
       "id": "PH-847e5361cfd5b316",
       "hanzi": "他们家",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Su casa; la familia de ellos.",
       "lessons": [
         3
       ],
@@ -16985,7 +18315,7 @@
       "id": "PH-4027da68c42bb425",
       "hanzi": "我有一只可爱的小狗。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tengo un perrito muy tierno.",
       "lessons": [
         3
       ],
@@ -17013,7 +18343,7 @@
       "id": "PH-43d85a81bcd516af",
       "hanzi": "我有一个很有意思的朋友。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tengo un amigo muy interesante.",
       "lessons": [
         3
       ],
@@ -17042,7 +18372,7 @@
       "id": "PH-b7ed43f5106e0062",
       "hanzi": "他有三个很好的朋友。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él tiene tres muy buenos amigos.",
       "lessons": [
         3
       ],
@@ -17071,7 +18401,7 @@
       "id": "PH-e5977a9603ee4461",
       "hanzi": "一张我的照片",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Una foto mía.",
       "lessons": [
         3
       ],
@@ -17097,7 +18427,7 @@
       "id": "PH-971a8fdb2eb0e4fc",
       "hanzi": "一张cuzco的照片",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Una foto de Cusco.",
       "lessons": [
         3
       ],
@@ -17122,7 +18452,7 @@
       "id": "PH-71539c1751d10c81",
       "hanzi": "一张汉语的名片",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Una tarjeta de presentación en chino.",
       "lessons": [
         3
       ],
@@ -17148,7 +18478,7 @@
       "id": "PH-738cb0391acb318e",
       "hanzi": "一个很小的学院",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Un instituto muy pequeño.",
       "lessons": [
         3
       ],
@@ -17175,7 +18505,7 @@
       "id": "PH-ce202a00e1b501a8",
       "hanzi": "一个很大的餐厅",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Un restaurante muy grande.",
       "lessons": [
         3
       ],
@@ -17202,7 +18532,7 @@
       "id": "PH-d42fc442bf142c4e",
       "hanzi": "这儿有一个很有名的大学。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Aquí hay una universidad muy famosa.",
       "lessons": [
         3
       ],
@@ -17231,7 +18561,7 @@
       "id": "PH-01f2cd90002411b4",
       "hanzi": "王老师是一个很好的老师。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "El profesor Wang es un muy buen profesor.",
       "lessons": [
         3
       ],
@@ -17260,7 +18590,7 @@
       "id": "PH-94c8416302bdade4",
       "hanzi": "我认识一个很帅的男生。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Conozco a un estudiante muy guapo.",
       "lessons": [
         3
       ],
@@ -17289,7 +18619,7 @@
       "id": "PH-5339b933265e5079",
       "hanzi": "你叫什么？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cómo te llamas?",
       "lessons": [
         3
       ],
@@ -17313,7 +18643,7 @@
       "id": "PH-daa423a1ea94e73a",
       "hanzi": "你是谁？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Quién eres?",
       "lessons": [
         3
       ],
@@ -17337,7 +18667,7 @@
       "id": "PH-85748a177acdc91c",
       "hanzi": "那是谁？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Quién es esa persona?",
       "lessons": [
         3
       ],
@@ -17367,7 +18697,7 @@
       "id": "PH-47efdbe5a096e29e",
       "hanzi": "老师在哪儿？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Dónde está el profesor?",
       "lessons": [
         3
       ],
@@ -17391,7 +18721,7 @@
       "id": "PH-3282b8613e1014b5",
       "hanzi": "你们去哪儿？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Adónde van ustedes?",
       "lessons": [
         3
       ],
@@ -17415,7 +18745,7 @@
       "id": "PH-0357400a7489e743",
       "hanzi": "你是哪国人？",
       "pinyin": "Nǐ shì nǎ guó rén?",
-      "spanish": null,
+      "spanish": "¿De qué país eres?",
       "lessons": [
         2,
         3
@@ -17458,7 +18788,7 @@
       "id": "PH-5e3e7824ce6e4ec2",
       "hanzi": "你去哪一个餐厅？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿A qué restaurante vas?",
       "lessons": [
         3
       ],
@@ -17486,7 +18816,7 @@
       "id": "PH-bf6c6a7bf4f6fd08",
       "hanzi": "你要哪一张照片？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Qué foto quieres?",
       "lessons": [
         3
       ],
@@ -17513,7 +18843,7 @@
       "id": "PH-b61c7e1a0a76ff64",
       "hanzi": "那儿有两个老师，哪一个是李老师？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Allí hay dos profesores. ¿Cuál es el profesor Li?",
       "lessons": [
         3
       ],
@@ -17544,7 +18874,7 @@
       "id": "PH-bbcd86755bace6b0",
       "hanzi": "你要哪两张照片？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Qué dos fotos quieres?",
       "lessons": [
         3
       ],
@@ -17571,7 +18901,7 @@
       "id": "PH-5b94ed46bb4cfdb6",
       "hanzi": "大学有几个系？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cuántos departamentos tiene la universidad?",
       "lessons": [
         3
       ],
@@ -17597,7 +18927,7 @@
       "id": "PH-16f01763eb850a95",
       "hanzi": "你有几张照片？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cuántas fotos tienes?",
       "lessons": [
         3
       ],
@@ -17628,7 +18958,7 @@
       "id": "PH-d25e4d3b1f0c4966",
       "hanzi": "哪一个是张老师？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cuál es el profesor Zhang?",
       "lessons": [
         3
       ],
@@ -17656,7 +18986,7 @@
       "id": "PH-f68c2cdd84eb9e41",
       "hanzi": "那儿有十个人，哪3个是中国人？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Allí hay diez personas. ¿Cuáles tres son chinas?",
       "lessons": [
         3
       ],
@@ -17685,7 +19015,7 @@
       "id": "PH-70c12ea926129695",
       "hanzi": "我有两张名片，一张是西班牙语，一张是英语。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tengo dos tarjetas de presentación: una está en español y la otra en inglés.",
       "lessons": [
         3
       ],
@@ -17715,7 +19045,7 @@
       "id": "PH-6ec6a1461d1d711e",
       "hanzi": "你要哪一张名片？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Qué tarjeta de presentación quieres?",
       "lessons": [
         3
       ],
@@ -17742,7 +19072,7 @@
       "id": "PH-c534d506b79b2123",
       "hanzi": "你有几个朋友？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cuántos amigos tienes?",
       "lessons": [
         3
       ],
@@ -17768,7 +19098,7 @@
       "id": "PH-1196452af4212b68",
       "hanzi": "我有一个朋友。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tengo un amigo.",
       "lessons": [
         3
       ],
@@ -17794,7 +19124,7 @@
       "id": "PH-d7f7ba6449bf50b0",
       "hanzi": "你认识几个老师？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿A cuántos profesores conoces?",
       "lessons": [
         3
       ],
@@ -17820,7 +19150,7 @@
       "id": "PH-cc4b99a6e8b7ef8e",
       "hanzi": "我认识两个老师。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Conozco a dos profesores.",
       "lessons": [
         3
       ],
@@ -17846,7 +19176,7 @@
       "id": "PH-4f89a179a8951c5f",
       "hanzi": "你吃几个包子？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cuántos baozi comes?",
       "lessons": [
         3
       ],
@@ -17872,7 +19202,7 @@
       "id": "PH-df11ddad3d1a2350",
       "hanzi": "我吃三个包子。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Como tres baozi.",
       "lessons": [
         3
       ],
@@ -17898,7 +19228,7 @@
       "id": "PH-5e7ef40485ce204a",
       "hanzi": "大家好，我叫张王冉，我是中国人，我是汉语老师，我在秘鲁工作，我很喜欢我的工作。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Hola a todos. Me llamo Zhang Wangran, soy de China y enseño chino. Trabajo en Perú y me gusta mucho mi trabajo.",
       "lessons": [
         3
       ],
@@ -17935,7 +19265,7 @@
       "id": "PH-807325262fffd695",
       "hanzi": "这儿有一张我家的照片，我家一共有三口人，我们都是中国人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Aquí hay una foto de mi familia. En mi familia somos tres en total y todos somos chinos.",
       "lessons": [
         3
       ],
@@ -17972,7 +19302,7 @@
       "id": "PH-e07e89ca235add34",
       "hanzi": "我妈妈是医生，我姐姐是老师。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Mi mamá es médica y mi hermana mayor es profesora.",
       "lessons": [
         3
       ],
@@ -17999,7 +19329,7 @@
       "id": "PH-c6cbb442724ed2ca",
       "hanzi": "我妈妈喜欢看书，我姐姐喜欢看电影，我喜欢唱歌。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "A mi mamá le gusta leer, a mi hermana mayor le gusta ver películas y a mí me gusta cantar.",
       "lessons": [
         3
       ],
@@ -18027,7 +19357,7 @@
       "id": "PH-982b776dc7a6daf2",
       "hanzi": "我很爱我的家人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Quiero mucho a mi familia.",
       "lessons": [
         3
       ],
@@ -18053,7 +19383,7 @@
       "id": "PH-e14e73f3df1ad125",
       "hanzi": "你几岁？",
       "pinyin": "Nǐ jǐ suì?",
-      "spanish": null,
+      "spanish": "¿Cuántos años tienes?",
       "lessons": [
         3
       ],
@@ -18077,7 +19407,7 @@
       "id": "PH-68b22874368c65ef",
       "hanzi": "你今年几岁？",
       "pinyin": "nǐ jīnnián jǐ suì?",
-      "spanish": null,
+      "spanish": "¿Cuántos años tienes este año?",
       "lessons": [
         3
       ],
@@ -18102,7 +19432,7 @@
       "id": "PH-7d2af040dfe7790f",
       "hanzi": "我今年十岁。",
       "pinyin": "wǒ jīnnián shí suì.",
-      "spanish": null,
+      "spanish": "Este año tengo diez años.",
       "lessons": [
         3
       ],
@@ -18127,7 +19457,7 @@
       "id": "PH-0d6b47c02734f44a",
       "hanzi": "我18岁",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tengo dieciocho años.",
       "lessons": [
         3
       ],
@@ -18150,7 +19480,7 @@
       "id": "PH-65b0b62aaf9c6a5d",
       "hanzi": "今年是2026年。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Este año es 2026.",
       "lessons": [
         3
       ],
@@ -18174,7 +19504,7 @@
       "id": "PH-c31236b73df83ec6",
       "hanzi": "今年是马年。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Este año es el año del Caballo.",
       "lessons": [
         3
       ],
@@ -18199,7 +19529,7 @@
       "id": "PH-2382c8651ab50c87",
       "hanzi": "你今年多大？",
       "pinyin": "Nǐ jīnián duōdà?",
-      "spanish": null,
+      "spanish": "¿Qué edad tienes este año?",
       "lessons": [
         3
       ],
@@ -18223,7 +19553,7 @@
       "id": "PH-5387dfd2cb5f7886",
       "hanzi": "我今年三十岁。",
       "pinyin": "wǒ jīnnián sān shí suì.",
-      "spanish": null,
+      "spanish": "Este año tengo treinta años.",
       "lessons": [
         3
       ],
@@ -18248,7 +19578,7 @@
       "id": "PH-44845a7f16bb7029",
       "hanzi": "我今年二十五岁。",
       "pinyin": "Wǒ jīnnián èrshíwǔ suì.",
-      "spanish": null,
+      "spanish": "Este año tengo veinticinco años.",
       "lessons": [
         3
       ],
@@ -18273,7 +19603,7 @@
       "id": "PH-9fa7bc5fbd3e3980",
       "hanzi": "你今年多大岁数？",
       "pinyin": "Nǐ jīnnián duōdà suìshù?",
-      "spanish": null,
+      "spanish": "¿Qué edad tienes este año?",
       "lessons": [
         3
       ],
@@ -18298,7 +19628,7 @@
       "id": "PH-f714b30b10d782a5",
       "hanzi": "我今年七十五岁。",
       "pinyin": "Wǒ jīnnián qīshíwǔ suì.",
-      "spanish": null,
+      "spanish": "Este año tengo setenta y cinco años.",
       "lessons": [
         3
       ],
@@ -18323,7 +19653,7 @@
       "id": "PH-38cb5a5c806853d8",
       "hanzi": "真好",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¡Qué bien!",
       "lessons": [
         3
       ],
@@ -18346,7 +19676,7 @@
       "id": "PH-57bbb8f55826d0ec",
       "hanzi": "真好吃！",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¡Qué rico!",
       "lessons": [
         3
       ],
@@ -18369,7 +19699,7 @@
       "id": "PH-44bfd27f44455076",
       "hanzi": "真漂亮！",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¡Qué bonito!",
       "lessons": [
         3
       ],
@@ -18392,7 +19722,7 @@
       "id": "PH-83d03a45dceba35b",
       "hanzi": "你女儿真漂亮！",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¡Tu hija es realmente bonita!",
       "lessons": [
         3
       ],
@@ -18417,7 +19747,7 @@
       "id": "PH-9344f247b70140ee",
       "hanzi": "喝一杯茶",
       "pinyin": "hē yì bēi chá",
-      "spanish": null,
+      "spanish": "Tomar una taza de té.",
       "lessons": [
         3
       ],
@@ -18442,7 +19772,7 @@
       "id": "PH-a22c9cd25d67086a",
       "hanzi": "一杯咖啡",
       "pinyin": "yì bēi kāfēi",
-      "spanish": null,
+      "spanish": "Una taza de café.",
       "lessons": [
         3
       ],
@@ -18466,7 +19796,7 @@
       "id": "PH-0fa46b07401b07ce",
       "hanzi": "我要一杯咖啡。",
       "pinyin": "Wǒ yào yì bēi kāfēi.",
-      "spanish": null,
+      "spanish": "Quiero una taza de café.",
       "lessons": [
         3
       ],
@@ -18492,7 +19822,7 @@
       "id": "PH-4b78d0488850f843",
       "hanzi": "一张地图",
       "pinyin": "yì zhāng dìtú",
-      "spanish": null,
+      "spanish": "Un mapa.",
       "lessons": [
         3
       ],
@@ -18544,7 +19874,7 @@
       "id": "PH-7fdf37191d23ee78",
       "hanzi": "小孩子很可爱。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Los niños pequeños son muy tiernos.",
       "lessons": [
         3
       ],
@@ -18568,7 +19898,7 @@
       "id": "PH-2b9f690287e6046e",
       "hanzi": "我不认识这个孩子。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "No conozco a este niño.",
       "lessons": [
         3
       ],
@@ -18595,7 +19925,7 @@
       "id": "PH-1c422bfc0c4e154d",
       "hanzi": "他有两个孩子，一个女儿，一个儿子。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él tiene dos hijos: una hija y un hijo.",
       "lessons": [
         3
       ],
@@ -18624,7 +19954,7 @@
       "id": "PH-b6cd72362747d4dc",
       "hanzi": "英语课",
       "pinyin": "Yīngyǔ kè",
-      "spanish": null,
+      "spanish": "Clase de inglés.",
       "lessons": [
         3
       ],
@@ -18648,7 +19978,7 @@
       "id": "PH-a946ca8d2a132fa3",
       "hanzi": "汉语课",
       "pinyin": "Hànyǔ kè",
-      "spanish": null,
+      "spanish": "Clase de chino.",
       "lessons": [
         3
       ],
@@ -18672,7 +20002,7 @@
       "id": "PH-d583d1538de30daa",
       "hanzi": "钢琴课",
       "pinyin": "gāngqín kè",
-      "spanish": null,
+      "spanish": "Clase de piano.",
       "lessons": [
         3
       ],
@@ -18696,7 +20026,7 @@
       "id": "PH-b192b8b582cdf503",
       "hanzi": "我会说中文。",
       "pinyin": "wǒ huì shuō zhōngwén",
-      "spanish": null,
+      "spanish": "Sé hablar chino.",
       "lessons": [
         3
       ],
@@ -18721,7 +20051,7 @@
       "id": "PH-078b70bbe3299e48",
       "hanzi": "你会弹钢琴吗？",
       "pinyin": "nǐ huì tán ɡānɡ qín ma",
-      "spanish": null,
+      "spanish": "¿Sabes tocar el piano?",
       "lessons": [
         3
       ],
@@ -18748,7 +20078,7 @@
       "id": "PH-ea35121f9a613eee",
       "hanzi": "我不会，你呢？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Yo no sé hacerlo, ¿y tú?",
       "lessons": [
         3
       ],
@@ -18774,7 +20104,7 @@
       "id": "PH-6d95e5a7bece002c",
       "hanzi": "我会。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Yo sí sé hacerlo.",
       "lessons": [
         3
       ],
@@ -18848,7 +20178,7 @@
       "id": "PH-21d39b242e0a921b",
       "hanzi": "我喜欢上汉语课！",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¡Me gusta asistir a clase de chino!",
       "lessons": [
         3
       ],
@@ -18875,7 +20205,7 @@
       "id": "PH-f0819a7411f37ebe",
       "hanzi": "我爱上汉语课！",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¡Me encanta asistir a clase de chino!",
       "lessons": [
         3
       ],
@@ -18902,7 +20232,7 @@
       "id": "PH-84e3deefbe064b59",
       "hanzi": "她真漂亮。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ella es realmente bonita.",
       "lessons": [
         3
       ],
@@ -18926,7 +20256,7 @@
       "id": "PH-f2cde8404b08965f",
       "hanzi": "今天我有汉语课。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Hoy tengo clase de chino.",
       "lessons": [
         3
       ],
@@ -18953,7 +20283,7 @@
       "id": "PH-88bf59f5a2364f7a",
       "hanzi": "你要喝茶吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Quieres tomar té?",
       "lessons": [
         3
       ],
@@ -18979,7 +20309,7 @@
       "id": "PH-70838d7149126b58",
       "hanzi": "我女儿今年五岁。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Mi hija tiene cinco años este año.",
       "lessons": [
         3
       ],
@@ -19005,7 +20335,7 @@
       "id": "PH-6c75dd3c7c487ce0",
       "hanzi": "这个孩子很好。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Este niño es muy bueno.",
       "lessons": [
         3
       ],
@@ -19031,7 +20361,7 @@
       "id": "PH-ce24e7ce32c3c41b",
       "hanzi": "今天晚上我学习英语。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Esta noche estudio inglés.",
       "lessons": [
         3
       ],
@@ -19057,7 +20387,7 @@
       "id": "PH-d4229f6c7632dbf3",
       "hanzi": "孩子们学钢琴。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Los niños aprenden a tocar el piano.",
       "lessons": [
         3
       ],
@@ -19081,7 +20411,7 @@
       "id": "PH-7a761152975c78c0",
       "hanzi": "今天我没有课。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Hoy no tengo clase.",
       "lessons": [
         3
       ],
@@ -19106,7 +20436,7 @@
       "id": "PH-dd5271358947e75e",
       "hanzi": "那是我哥哥。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ese es mi hermano mayor.",
       "lessons": [
         3
       ],
@@ -19132,7 +20462,7 @@
       "id": "PH-3daab183bcd139c5",
       "hanzi": "王小云喜欢吃点心。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "A Wang Xiaoyun le gusta comer bocadillos.",
       "lessons": [
         3
       ],
@@ -19157,7 +20487,7 @@
       "id": "PH-312a0e1e6899c0f7",
       "hanzi": "谁喜欢吃点心？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿A quién le gusta comer bocadillos?",
       "lessons": [
         3
       ],
@@ -19182,7 +20512,7 @@
       "id": "PH-c50bccbe000a2f0e",
       "hanzi": "这是林娜的照片。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Esta es una foto de Lin Na.",
       "lessons": [
         3
       ],
@@ -19209,7 +20539,7 @@
       "id": "PH-786d2c20a229a6e2",
       "hanzi": "这是谁的照片？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿De quién es esta foto?",
       "lessons": [
         3
       ],
@@ -19241,7 +20571,7 @@
       "id": "PH-e749bde31b25428f",
       "hanzi": "我们家有六口人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "En nuestra familia somos seis.",
       "lessons": [
         3
       ],
@@ -19273,7 +20603,7 @@
       "id": "PH-43289b9757080ebe",
       "hanzi": "她今年五岁。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ella tiene cinco años este año.",
       "lessons": [
         3
       ],
@@ -19298,7 +20628,7 @@
       "id": "PH-25692d11b27a3826",
       "hanzi": "她今年几岁？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cuántos años tiene ella este año?",
       "lessons": [
         3
       ],
@@ -19323,7 +20653,7 @@
       "id": "PH-2fd24b5fb98cc604",
       "hanzi": "她是我妹妹。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ella es mi hermana menor.",
       "lessons": [
         3
       ],
@@ -19348,7 +20678,7 @@
       "id": "PH-b7e1414c6f859f18",
       "hanzi": "我们家一共有六口人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "En nuestra familia somos seis en total.",
       "lessons": [
         3
       ],
@@ -19381,7 +20711,7 @@
       "id": "PH-ec141061a1e79255",
       "hanzi": "马大为喜欢喝茶。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "A Ma Dawei le gusta tomar té.",
       "lessons": [
         3
       ],
@@ -19406,7 +20736,7 @@
       "id": "PH-ac525f7e0dee2915",
       "hanzi": "这是我的小狗。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Este es mi perrito.",
       "lessons": [
         3
       ],
@@ -19433,7 +20763,7 @@
       "id": "PH-e5a656f94b89c783",
       "hanzi": "林娜有两个姐姐。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Lin Na tiene dos hermanas mayores.",
       "lessons": [
         3
       ],
@@ -19459,7 +20789,7 @@
       "id": "PH-72c0e251cc9ac0f9",
       "hanzi": "他有三张照片。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él tiene tres fotos.",
       "lessons": [
         3
       ],
@@ -19514,7 +20844,7 @@
       "id": "PH-dae60f8dfb9a535f",
       "hanzi": "大家好！我姓马，叫马大为，是美国人。",
       "pinyin": "Dàjiā hǎo! Wǒ xìng Mǎ, jiào Mǎ Dàwéi, shì Měiguórén.",
-      "spanish": null,
+      "spanish": "¡Hola a todos! Mi apellido es Ma, me llamo Ma Dawei y soy estadounidense.",
       "lessons": [
         3
       ],
@@ -19545,7 +20875,7 @@
       "id": "PH-872c9604d392c72b",
       "hanzi": "我们家一共有五口人，爸爸、妈妈、哥哥和我，还有约翰（John）。",
       "pinyin": "Wǒmen jiā yígòng yǒu wǔ kǒu rén, bàba, māma, gēge hé wǒ, hái yǒu Yuēhàn.",
-      "spanish": null,
+      "spanish": "En nuestra familia somos cinco en total: papá, mamá, mi hermano mayor y yo, y también John.",
       "lessons": [
         3
       ],
@@ -19580,7 +20910,7 @@
       "id": "PH-b0957295d4abc71b",
       "hanzi": "约翰是我的狗，今年两岁。",
       "pinyin": "Yuēhàn shì wǒ de gǒu, jīnnián liǎng suì.",
-      "spanish": null,
+      "spanish": "John es mi perro; este año tiene dos años.",
       "lessons": [
         3
       ],
@@ -19609,7 +20939,7 @@
       "id": "PH-80725cf32b4c9885",
       "hanzi": "我爸爸是律师，我妈妈是工程师，我哥哥是经理。",
       "pinyin": "Wǒ bàba shì lǜshī, wǒ māma shì gōngchéngshī, wǒ gēge shì jīnglǐ.",
-      "spanish": null,
+      "spanish": "Mi papá es abogado, mi mamá es ingeniera y mi hermano mayor es gerente.",
       "lessons": [
         3
       ],
@@ -19638,7 +20968,7 @@
       "id": "PH-11e351a94af9204a",
       "hanzi": "我的老师是陈老师，我们都很喜欢她。",
       "pinyin": "Wǒ de lǎoshī shì Chén lǎoshī, wǒmen dōu hěn xǐhuan tā.",
-      "spanish": null,
+      "spanish": "Mi profesora es la profesora Chen; a todos nos cae muy bien.",
       "lessons": [
         3
       ],
@@ -19669,7 +20999,7 @@
       "id": "PH-ef23bf3cb038cc39",
       "hanzi": "我有三个中国朋友，王小云、宋华和陆雨平。",
       "pinyin": "Wǒ yǒu sān ge Zhōngguó péngyou, Wáng Xiǎoyún, Sòng Huá hé Lù Yǔpíng.",
-      "spanish": null,
+      "spanish": "Tengo tres amigos chinos: Wang Xiaoyun, Song Hua y Lu Yuping.",
       "lessons": [
         3
       ],
@@ -19700,7 +21030,7 @@
       "id": "PH-d43a960c3c957f6c",
       "hanzi": "马大为是哪国人？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿De qué país es Ma Dawei?",
       "lessons": [
         3
       ],
@@ -19727,7 +21057,7 @@
       "id": "PH-df4fe0e1a9b344c9",
       "hanzi": "马大为有姐姐吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Ma Dawei tiene una hermana mayor?",
       "lessons": [
         3
       ],
@@ -19752,7 +21082,7 @@
       "id": "PH-8de66e1dd8f3d6f1",
       "hanzi": "约翰（John）今年几岁？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cuántos años tiene John este año?",
       "lessons": [
         3
       ],
@@ -19777,7 +21107,7 @@
       "id": "PH-c626118e7e2f4870",
       "hanzi": "马大为的爸爸做什么工作？他妈妈呢？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿En qué trabaja el papá de Ma Dawei? ¿Y su mamá?",
       "lessons": [
         3
       ],
@@ -19807,7 +21137,7 @@
       "id": "PH-803b45d105d217a9",
       "hanzi": "陈老师是谁？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Quién es el docente Chen?",
       "lessons": [
         3
       ],
@@ -19832,7 +21162,7 @@
       "id": "PH-2e61b180514c4b02",
       "hanzi": "马大为有几个中国朋友？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cuántos amigos chinos tiene Ma Dawei?",
       "lessons": [
         3
       ],
@@ -19859,7 +21189,7 @@
       "id": "PH-418266aaa0acd5ff",
       "hanzi": "他叫宋华，他是中国人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él se llama Song Hua y es chino.",
       "lessons": [
         3
       ],
@@ -19886,7 +21216,7 @@
       "id": "PH-3f71586c342af774",
       "hanzi": "他们家有三口人，爸爸、妈妈和他。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "En su familia son tres: su papá, su mamá y él.",
       "lessons": [
         3
       ],
@@ -19917,7 +21247,7 @@
       "id": "PH-1d7639ace7a8cba3",
       "hanzi": "他爸爸是医生，妈妈是老师。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Su papá es médico y su mamá es profesora.",
       "lessons": [
         3
       ],
@@ -19944,7 +21274,7 @@
       "id": "PH-1468dc5b68b2ecd5",
       "hanzi": "他是学生。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él es estudiante.",
       "lessons": [
         3
       ],
@@ -19968,7 +21298,7 @@
       "id": "PH-9d7c36ffc2a29737",
       "hanzi": "他喜欢吃饺子。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "A él le gusta comer jiaozi.",
       "lessons": [
         3
       ],
@@ -19993,7 +21323,7 @@
       "id": "PH-176d30a76ade088e",
       "hanzi": "他很忙。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él está muy ocupado.",
       "lessons": [
         1
       ],
@@ -20017,7 +21347,7 @@
       "id": "PH-69f5fc8154670542",
       "hanzi": "他忙吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Él está ocupado?",
       "lessons": [
         1
       ],
@@ -20041,7 +21371,7 @@
       "id": "PH-57aea0e0318ef10e",
       "hanzi": "他叫马大为，他叫丁力波，她叫林娜。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él se llama Ma Dawei, él se llama Ding Libo y ella se llama Lin Na.",
       "lessons": [
         1
       ],
@@ -20068,7 +21398,7 @@
       "id": "PH-4089b2b12c3df13d",
       "hanzi": "大为很好，丁力波很忙，林娜不太忙，她也很好。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Dawei está muy bien; Ding Libo está muy ocupado. Lin Na no está muy ocupada y también está muy bien.",
       "lessons": [
         1
       ],
@@ -20099,7 +21429,7 @@
       "id": "PH-5894116a646eaa09",
       "hanzi": "马大为好吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Ma Dawei está bien?",
       "lessons": [
         1
       ],
@@ -20123,7 +21453,7 @@
       "id": "PH-28b96c486e5d9aa2",
       "hanzi": "林娜怎么样？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cómo está Lin Na?",
       "lessons": [
         1
       ],
@@ -20146,7 +21476,7 @@
       "id": "PH-c394efc5e539ef5c",
       "hanzi": "丁力波忙吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Ding Libo está ocupado?",
       "lessons": [
         1
       ],
@@ -20170,7 +21500,7 @@
       "id": "PH-f6129d102125628d",
       "hanzi": "他叫成龙，她叫巩俐。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él se llama Cheng Long y ella se llama Gong Li.",
       "lessons": [
         1
       ],
@@ -20196,7 +21526,7 @@
       "id": "PH-06369a404abd7ad7",
       "hanzi": "成龙很忙。巩俐也很忙。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Cheng Long está muy ocupado. Gong Li también está muy ocupada.",
       "lessons": [
         1
       ],
@@ -20222,7 +21552,7 @@
       "id": "PH-fb1bf0b32fa4d95e",
       "hanzi": "姚明怎么样？姚明也很忙。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cómo está Yao Ming? Yao Ming también está muy ocupado.",
       "lessons": [
         1
       ],
@@ -20248,7 +21578,7 @@
       "id": "PH-0a2e77ea408b74bf",
       "hanzi": "他叫什么名字？他叫马云。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cómo se llama él? Se llama Ma Yun.",
       "lessons": [
         1
       ],
@@ -20274,7 +21604,7 @@
       "id": "PH-6c34ed6a349ada9b",
       "hanzi": "马云忙吗？马云很忙。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Ma Yun está ocupado? Ma Yun está muy ocupado.",
       "lessons": [
         1
       ],
@@ -20299,7 +21629,7 @@
       "id": "PH-a817aa0d49ab62b0",
       "hanzi": "米饭和面条儿",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Arroz y fideos.",
       "lessons": [
         2
       ],
@@ -20323,7 +21653,7 @@
       "id": "PH-419492ad047da29b",
       "hanzi": "我也学习汉语。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Yo también estudio chino.",
       "lessons": [
         2
       ],
@@ -20348,7 +21678,7 @@
       "id": "PH-bca3a6d5401f6fae",
       "hanzi": "我爸爸妈妈都是上海人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tanto mi papá como mi mamá son de Shanghái.",
       "lessons": [
         2
       ],
@@ -20376,7 +21706,7 @@
       "id": "PH-92583108e109bb97",
       "hanzi": "我叫丁力波，我是加拿大人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Me llamo Ding Libo y soy canadiense.",
       "lessons": [
         2
       ],
@@ -20403,7 +21733,7 @@
       "id": "PH-a5513207747d4b59",
       "hanzi": "这是马大为，他是我朋友，他是美国人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Este es Ma Dawei; es mi amigo y es estadounidense.",
       "lessons": [
         2
       ],
@@ -20433,7 +21763,7 @@
       "id": "PH-9c722672c6320e44",
       "hanzi": "那是林娜，她也是我朋友，她是英国人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Esa es Lin Na; ella también es mi amiga y es británica.",
       "lessons": [
         2
       ],
@@ -20464,7 +21794,7 @@
       "id": "PH-6cb0b98e28883cc2",
       "hanzi": "我和大为、林娜都学习汉语。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Dawei, Lin Na y yo estudiamos chino.",
       "lessons": [
         2
       ],
@@ -20492,7 +21822,7 @@
       "id": "PH-be9162ef21cc1af8",
       "hanzi": "我姓林，叫林娜。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Mi apellido es Lin y me llamo Lin Na.",
       "lessons": [
         1,
         2
@@ -20533,7 +21863,7 @@
       "id": "PH-a68aa33a9219f6cc",
       "hanzi": "这是宋华，他是我朋友。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Este es Song Hua; es mi amigo.",
       "lessons": [
         2
       ],
@@ -20561,7 +21891,7 @@
       "id": "PH-15200b9c7c4a9fb5",
       "hanzi": "宋华是北京人，喜欢吃饺子和面条儿。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Song Hua es de Pekín y le gusta comer jiaozi y fideos.",
       "lessons": [
         2
       ],
@@ -20591,7 +21921,7 @@
       "id": "PH-66222b4efbda8371",
       "hanzi": "我也喜欢吃饺子，饺子很好吃。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "A mí también me gusta comer jiaozi; están muy ricos.",
       "lessons": [
         2
       ],
@@ -20619,7 +21949,7 @@
       "id": "PH-1d8cdbb62309026e",
       "hanzi": "那是陈老师，她是我们老师。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Esa es la profesora Chen; es nuestra profesora.",
       "lessons": [
         2
       ],
@@ -20647,7 +21977,7 @@
       "id": "PH-2988a5cb568be4f2",
       "hanzi": "陈老师是上海人，她喜欢吃点心。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "La profesora Chen es de Shanghái y le gusta comer bocadillos.",
       "lessons": [
         2
       ],
@@ -20677,7 +22007,7 @@
       "id": "PH-dbfe1c7dcfa46a88",
       "hanzi": "我没有妹妹。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "No tengo hermana menor.",
       "lessons": [
         3
       ],
@@ -20701,7 +22031,7 @@
       "id": "PH-53d64adfe74193bd",
       "hanzi": "这是我们家的照片。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Esta es una foto de nuestra familia.",
       "lessons": [
         3
       ],
@@ -20729,7 +22059,7 @@
       "id": "PH-1d7312c0a6661d54",
       "hanzi": "这张照片真漂亮！",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¡Esta foto es realmente bonita!",
       "lessons": [
         3
       ],
@@ -20755,7 +22085,7 @@
       "id": "PH-e76e700e21320dc5",
       "hanzi": "晚上她还有英语课。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Por la noche también tiene clase de inglés.",
       "lessons": [
         3
       ],
@@ -20783,7 +22113,7 @@
       "id": "PH-b3dc9b29feba4bb6",
       "hanzi": "他们有孩子。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ellos tienen hijos.",
       "lessons": [
         3
       ],
@@ -20807,7 +22137,7 @@
       "id": "PH-84e57a865e1f43ea",
       "hanzi": "小云晚上有英语课。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Xiaoyun tiene clase de inglés por la noche.",
       "lessons": [
         3
       ],
@@ -20834,7 +22164,7 @@
       "id": "PH-4f3d75d29f4451cf",
       "hanzi": "我们家有小狗。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tenemos un perrito en casa.",
       "lessons": [
         3
       ],
@@ -20859,7 +22189,7 @@
       "id": "PH-ac3336c3582ab1fa",
       "hanzi": "林娜家有贝贝的照片。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "En casa de Lin Na hay una foto de Beibei.",
       "lessons": [
         3
       ],
@@ -20886,7 +22216,7 @@
       "id": "PH-a097ea002cd76fb4",
       "hanzi": "陆雨平的女儿",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "La hija de Lu Yuping.",
       "lessons": [
         3
       ],
@@ -20910,7 +22240,7 @@
       "id": "PH-9f1ab1679981f1c8",
       "hanzi": "我们班有十个人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "En nuestra clase hay diez personas.",
       "lessons": [
         3
       ],
@@ -20937,7 +22267,7 @@
       "id": "PH-56443fc9503500cf",
       "hanzi": "那个朋友",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ese amigo.",
       "lessons": [
         3
       ],
@@ -20961,7 +22291,7 @@
       "id": "PH-8ad755629d096248",
       "hanzi": "我们家有四口人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "En nuestra familia somos cuatro.",
       "lessons": [
         3
       ],
@@ -20988,7 +22318,7 @@
       "id": "PH-8518650d0b4469a7",
       "hanzi": "你叫什么名字？你是哪国人？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cómo te llamas? ¿De qué país eres?",
       "lessons": [
         3
       ],
@@ -21018,7 +22348,7 @@
       "id": "PH-150d43b2635d3ef5",
       "hanzi": "你们家有几口人？他们做什么工作？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cuántas personas hay en tu familia? ¿En qué trabajan?",
       "lessons": [
         3
       ],
@@ -21049,7 +22379,7 @@
       "id": "PH-50659a7e25f15fe5",
       "hanzi": "你做什么工作？你喜欢做什么工作？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿En qué trabajas? ¿Qué trabajo te gusta hacer?",
       "lessons": [
         3
       ],
@@ -21075,7 +22405,7 @@
       "id": "PH-2fabc60e11427249",
       "hanzi": "你喜欢吃什么？你喜欢喝什么？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Qué te gusta comer? ¿Qué te gusta tomar?",
       "lessons": [
         3
       ],
@@ -21101,7 +22431,7 @@
       "id": "PH-7f6eb9fc688a2770",
       "hanzi": "你有几个好朋友？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cuántos buenos amigos tienes?",
       "lessons": [
         3
       ],
@@ -21128,7 +22458,7 @@
       "id": "PH-662568e447c8f935",
       "hanzi": "请问，你叫什么名字？",
       "pinyin": "Qǐngwèn, nǐ jiào shénme míngzi?",
-      "spanish": null,
+      "spanish": "Disculpa, ¿cómo te llamas?",
       "lessons": [
         1
       ],
@@ -21164,7 +22494,7 @@
       "id": "PH-9c6485573b45c21d",
       "hanzi": "你累吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Estás cansado?",
       "lessons": [
         1
       ],
@@ -21188,7 +22518,7 @@
       "id": "PH-d625290653cbdd60",
       "hanzi": "我很忙。你呢？",
       "pinyin": "Wǒ hěn máng. Nǐ ne?",
-      "spanish": null,
+      "spanish": "Estoy muy ocupado. ¿Y tú?",
       "lessons": [
         1
       ],
@@ -21219,7 +22549,7 @@
       "id": "PH-9fcfc5d797f2dd06",
       "hanzi": "我也很忙。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Yo también estoy muy ocupado.",
       "lessons": [
         1
       ],
@@ -21244,7 +22574,7 @@
       "id": "PH-fe57d5880cfe3b8b",
       "hanzi": "我最近不太忙。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Últimamente no estoy muy ocupado.",
       "lessons": [
         1
       ],
@@ -21270,7 +22600,7 @@
       "id": "PH-a01d9a60aac50b58",
       "hanzi": "她最近很累。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ella está muy cansada últimamente.",
       "lessons": [
         1
       ],
@@ -21295,7 +22625,7 @@
       "id": "PH-058f4effbc533a2b",
       "hanzi": "大为不太饿。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Dawei no tiene mucha hambre.",
       "lessons": [
         1
       ],
@@ -21320,7 +22650,7 @@
       "id": "PH-568e5a0be3acdf6e",
       "hanzi": "我叫林娜。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Me llamo Lin Na.",
       "lessons": [
         1
       ],
@@ -21344,7 +22674,7 @@
       "id": "PH-4a06f6c168f2e5a4",
       "hanzi": "宋华不渴。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Song Hua no tiene sed.",
       "lessons": [
         1
       ],
@@ -21368,7 +22698,7 @@
       "id": "PH-0c3441ea2837dd2f",
       "hanzi": "力波最近怎么样？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cómo ha estado Libo últimamente?",
       "lessons": [
         1
       ],
@@ -21392,7 +22722,7 @@
       "id": "PH-6b80355b8b9daee2",
       "hanzi": "我很忙。大为也很忙。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Estoy muy ocupado. Dawei también está muy ocupado.",
       "lessons": [
         1
       ],
@@ -21418,7 +22748,7 @@
       "id": "PH-2eea7ad4347194b2",
       "hanzi": "她姓王，叫王小云。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Su apellido es Wang y se llama Wang Xiaoyun.",
       "lessons": [
         1
       ],
@@ -21444,7 +22774,7 @@
       "id": "PH-5bc1a80d067ced5b",
       "hanzi": "他姓陆，叫陆雨平。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Su apellido es Lu y se llama Lu Yuping.",
       "lessons": [
         1
       ],
@@ -21470,7 +22800,7 @@
       "id": "PH-d422e738a385e395",
       "hanzi": "我最近很好。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Últimamente estoy muy bien.",
       "lessons": [
         1
       ],
@@ -21495,7 +22825,7 @@
       "id": "PH-42b2193972c38c26",
       "hanzi": "林娜最近不太忙。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Lin Na no está muy ocupada últimamente.",
       "lessons": [
         1
       ],
@@ -21521,7 +22851,7 @@
       "id": "PH-0090d68bd2f69fd6",
       "hanzi": "王小云很忙。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Wang Xiaoyun está muy ocupada.",
       "lessons": [
         1
       ],
@@ -21545,7 +22875,7 @@
       "id": "PH-f66620433a8faa62",
       "hanzi": "宋华最近很累。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Song Hua está muy cansado últimamente.",
       "lessons": [
         1
       ],
@@ -21570,7 +22900,7 @@
       "id": "PH-2715e8c17a7101f0",
       "hanzi": "陆雨平不太累。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Lu Yuping no está muy cansado.",
       "lessons": [
         1
       ],
@@ -21595,7 +22925,7 @@
       "id": "PH-0a4406fdd2ea73c9",
       "hanzi": "早上好，陈老师！",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¡Buenos días, profe Chen!",
       "lessons": [
         2
       ],
@@ -21621,7 +22951,7 @@
       "id": "PH-18ec02b0579e5b7a",
       "hanzi": "我是加拿大人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Soy canadiense.",
       "lessons": [
         2
       ],
@@ -21646,7 +22976,7 @@
       "id": "PH-8778c2ced2739fd8",
       "hanzi": "我姓林。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Mi apellido es Lin.",
       "lessons": [
         2
       ],
@@ -21670,7 +23000,7 @@
       "id": "PH-39bdf355458d489a",
       "hanzi": "早上好，大为！",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¡Buenos días, Dawei!",
       "lessons": [
         2
       ],
@@ -21695,7 +23025,7 @@
       "id": "PH-2ee8390e9608af53",
       "hanzi": "面条儿好吃吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Los fideos están ricos?",
       "lessons": [
         2
       ],
@@ -21719,7 +23049,7 @@
       "id": "PH-1100e9e66e610893",
       "hanzi": "很好吃。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Está muy rico.",
       "lessons": [
         2
       ],
@@ -21742,7 +23072,7 @@
       "id": "PH-07d7a877b7cf8722",
       "hanzi": "那不是包子，是饺子。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Eso no es baozi, es jiaozi.",
       "lessons": [
         2
       ],
@@ -21768,7 +23098,7 @@
       "id": "PH-2f5dbb4942cf2e2b",
       "hanzi": "那是面条儿。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Eso son fideos.",
       "lessons": [
         2
       ],
@@ -21793,7 +23123,7 @@
       "id": "PH-55ab75757b147ae7",
       "hanzi": "林娜是英国人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Lin Na es británica.",
       "lessons": [
         2
       ],
@@ -21818,7 +23148,7 @@
       "id": "PH-e452c0799595a966",
       "hanzi": "他喜欢吃米饭。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "A él le gusta comer arroz.",
       "lessons": [
         2
       ],
@@ -21843,7 +23173,7 @@
       "id": "PH-88d2069dfae1f8b8",
       "hanzi": "点心和饺子都很好吃。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tanto los bocadillos como los jiaozi están muy ricos.",
       "lessons": [
         2
       ],
@@ -21870,7 +23200,7 @@
       "id": "PH-6d20dc3b6612a1f1",
       "hanzi": "这是王小云，她是我朋友。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Esta es Wang Xiaoyun; es mi amiga.",
       "lessons": [
         2
       ],
@@ -21898,7 +23228,7 @@
       "id": "PH-e4e09d0c36f25d51",
       "hanzi": "我们都学习汉语。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Todos estudiamos chino.",
       "lessons": [
         2
       ],
@@ -21923,7 +23253,7 @@
       "id": "PH-88a28d096b51ea0a",
       "hanzi": "你妈妈喜欢吃什么？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Qué le gusta comer a tu mamá?",
       "lessons": [
         2
       ],
@@ -21949,7 +23279,7 @@
       "id": "PH-526d0ce69e5a5cd8",
       "hanzi": "饺子小，包子大。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Los jiaozi son pequeños y los baozi son grandes.",
       "lessons": [
         2
       ],
@@ -21974,7 +23304,7 @@
       "id": "PH-520c81ad9e8f30ac",
       "hanzi": "我叫陆雨平。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Me llamo Lu Yuping.",
       "lessons": [
         2
       ],
@@ -21998,7 +23328,7 @@
       "id": "PH-3bcc811cfa95b8fb",
       "hanzi": "这是大卫，他是我朋友，刚到上海。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Este es Dawei; es mi amigo y acaba de llegar a Shanghái.",
       "lessons": [
         2
       ],
@@ -22030,7 +23360,7 @@
       "id": "PH-4181ab23d9a79ade",
       "hanzi": "他是俄罗斯人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él es ruso.",
       "lessons": [
         2
       ],
@@ -22056,7 +23386,7 @@
       "id": "PH-8a706e3fff78ffe4",
       "hanzi": "他学习汉语。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él estudia chino.",
       "lessons": [
         2
       ],
@@ -22080,7 +23410,7 @@
       "id": "PH-c6bb87cf1004ddc9",
       "hanzi": "你看，这是我爸爸，那是我妈妈。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Mira, este es mi papá y esa es mi mamá.",
       "lessons": [
         2
       ],
@@ -22111,7 +23441,7 @@
       "id": "PH-c6c0f7c5d93b5d3b",
       "hanzi": "我爸爸是西安人，他喜欢吃面条儿。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Mi papá es de Xi'an y le gusta comer fideos.",
       "lessons": [
         2
       ],
@@ -22141,7 +23471,7 @@
       "id": "PH-f80015ab4f607e1f",
       "hanzi": "我妈妈是广州人，她喜欢吃点心。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Mi mamá es de Guangzhou y le gusta comer bocadillos.",
       "lessons": [
         2
       ],
@@ -22171,7 +23501,7 @@
       "id": "PH-2804736713b9fc28",
       "hanzi": "你爸爸做什么工作？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿En qué trabaja tu papá?",
       "lessons": [
         3
       ],
@@ -22197,7 +23527,7 @@
       "id": "PH-88561408ad553fee",
       "hanzi": "他是老师。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él es profesor.",
       "lessons": [
         3
       ],
@@ -22221,7 +23551,7 @@
       "id": "PH-041ac26107d363d0",
       "hanzi": "贝贝是我的小狗。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Beibei es mi perrito.",
       "lessons": [
         3
       ],
@@ -22247,7 +23577,7 @@
       "id": "PH-165ffbcaa3c175ba",
       "hanzi": "我们家有五口人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "En nuestra familia somos cinco.",
       "lessons": [
         3
       ],
@@ -22274,7 +23604,7 @@
       "id": "PH-8ba05572bcaccaf4",
       "hanzi": "她女儿今年几岁？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cuántos años tiene su hija este año?",
       "lessons": [
         3
       ],
@@ -22300,7 +23630,7 @@
       "id": "PH-ba25f077bf6487c0",
       "hanzi": "你明天晚上有课吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Tienes clase mañana por la noche?",
       "lessons": [
         3
       ],
@@ -22327,7 +23657,7 @@
       "id": "PH-f4c7c7da14e6279e",
       "hanzi": "你喝什么？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Qué tomas?",
       "lessons": [
         3
       ],
@@ -22351,7 +23681,7 @@
       "id": "PH-4d2bb582a1584f4e",
       "hanzi": "十岁。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Diez años.",
       "lessons": [
         3
       ],
@@ -22374,7 +23704,7 @@
       "id": "PH-f127804b9227e152",
       "hanzi": "没有。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "No; no hay o no tengo, según la pregunta.",
       "lessons": [
         3
       ],
@@ -22396,7 +23726,7 @@
       "id": "PH-da8023582e5b664a",
       "hanzi": "大为有三个中国朋友。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Dawei tiene tres amigos chinos.",
       "lessons": [
         3
       ],
@@ -22423,7 +23753,7 @@
       "id": "PH-2aad36a33b8c1a23",
       "hanzi": "他们家有八口人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "En su familia son ocho personas.",
       "lessons": [
         3
       ],
@@ -22450,7 +23780,7 @@
       "id": "PH-b00381bcaee956a4",
       "hanzi": "我妈妈喜欢吃面条儿。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "A mi mamá le gusta comer fideos.",
       "lessons": [
         3
       ],
@@ -22476,7 +23806,7 @@
       "id": "PH-137a8fef84b777e6",
       "hanzi": "我要咖啡，还要点心。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Quiero café y también bocadillos.",
       "lessons": [
         3
       ],
@@ -22508,7 +23838,7 @@
       "id": "PH-63d382b7a30b2a34",
       "hanzi": "我们家有五口人，爸爸、妈妈、两个姐姐和我。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "En nuestra familia somos cinco: papá, mamá, dos hermanas mayores y yo.",
       "lessons": [
         3
       ],
@@ -22542,7 +23872,7 @@
       "id": "PH-c9681a9f8d647313",
       "hanzi": "我爸爸是汉语老师，我妈妈是英语老师。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Mi papá es profesor de chino y mi mamá es profesora de inglés.",
       "lessons": [
         3
       ],
@@ -22570,7 +23900,7 @@
       "id": "PH-b7b02dc9617cc338",
       "hanzi": "玛丽有一个哥哥，她没有弟弟。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Mali tiene un hermano mayor; no tiene hermano menor.",
       "lessons": [
         3
       ],
@@ -22599,7 +23929,7 @@
       "id": "PH-229d4d2a432e7979",
       "hanzi": "陈老师的女儿今年五岁。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "La hija del docente Chen tiene cinco años este año.",
       "lessons": [
         3
       ],
@@ -22627,7 +23957,7 @@
       "id": "PH-b80f1e01a817701b",
       "hanzi": "是，这是我们家的照片。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Sí, esta es una foto de nuestra familia.",
       "lessons": [
         3
       ],
@@ -22655,7 +23985,7 @@
       "id": "PH-43c2abc61d6fe4a1",
       "hanzi": "这不是我哥哥，这是我弟弟。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Este no es mi hermano mayor; este es mi hermano menor.",
       "lessons": [
         3
       ],
@@ -22683,7 +24013,7 @@
       "id": "PH-93d09012673cc64f",
       "hanzi": "我们家有四口人，爸爸、妈妈、姐姐和我。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "En nuestra familia somos cuatro: papá, mamá, mi hermana mayor y yo.",
       "lessons": [
         3
       ],
@@ -22715,7 +24045,7 @@
       "id": "PH-95a51c1ab09eb475",
       "hanzi": "我爸爸和我妈妈都是老师。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tanto mi papá como mi mamá son profesores.",
       "lessons": [
         3
       ],
@@ -22743,7 +24073,7 @@
       "id": "PH-907646868b9cb078",
       "hanzi": "她是学生，她学习英语。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ella es estudiante y estudia inglés.",
       "lessons": [
         3
       ],
@@ -22769,7 +24099,7 @@
       "id": "PH-0ee710c5d233937e",
       "hanzi": "有，明天我上午有英语课，下午和晚上还有钢琴课。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Sí. Mañana por la mañana tengo clase de inglés; por la tarde y por la noche también tengo clase de piano.",
       "lessons": [
         3
       ],
@@ -22803,7 +24133,7 @@
       "id": "PH-5c90c8c1e4f669f5",
       "hanzi": "有，她有一个女儿。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Sí, ella tiene una hija.",
       "lessons": [
         3
       ],
@@ -22829,7 +24159,7 @@
       "id": "PH-bac024884fc4881b",
       "hanzi": "她女儿今年九岁。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Su hija tiene nueve años este año.",
       "lessons": [
         3
       ],
@@ -22855,7 +24185,7 @@
       "id": "PH-0299de26ba71d037",
       "hanzi": "我叫张华，这是我们家的照片。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Me llamo Zhang Hua; esta es una foto de nuestra familia.",
       "lessons": [
         3
       ],
@@ -22886,7 +24216,7 @@
       "id": "PH-9058c8a9a20182e0",
       "hanzi": "我们家有五口人，爸爸、妈妈、姐姐、弟弟和我。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "En nuestra familia somos cinco: papá, mamá, mi hermana mayor, mi hermano menor y yo.",
       "lessons": [
         3
       ],
@@ -22919,7 +24249,7 @@
       "id": "PH-9fc15b77ce62ff22",
       "hanzi": "我爸爸是律师，我妈妈是记者，他们都很忙。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Mi papá es abogado y mi mamá es periodista; ambos están muy ocupados.",
       "lessons": [
         3
       ],
@@ -22950,7 +24280,7 @@
       "id": "PH-e7cf790906b8bc0f",
       "hanzi": "我弟弟今年九岁，他很可爱。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Mi hermano menor tiene nueve años este año y es muy tierno.",
       "lessons": [
         3
       ],
@@ -22979,7 +24309,7 @@
       "id": "PH-ba4a3872e19364fb",
       "hanzi": "你看，这是我女儿的照片，她今年八岁。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Mira, esta es una foto de mi hija; este año tiene ocho años.",
       "lessons": [
         3
       ],
@@ -23013,7 +24343,7 @@
       "id": "PH-dd5cfcc10d2d75ad",
       "hanzi": "她喜欢吃饺子，还喜欢吃面条儿，可是不喜欢吃米饭。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "A ella le gusta comer jiaozi y también fideos, pero no le gusta comer arroz.",
       "lessons": [
         3
       ],
@@ -23043,7 +24373,7 @@
       "id": "PH-574a3a52035d8cc0",
       "hanzi": "今天她有英语课，不在家。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Hoy tiene clase de inglés; no está en casa.",
       "lessons": [
         3
       ],
@@ -23073,7 +24403,7 @@
       "id": "PH-90191511fd8ad4e1",
       "hanzi": "他们做什么工作？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿En qué trabajan ellos?",
       "lessons": [
         3
       ],
@@ -23098,7 +24428,7 @@
       "id": "PH-9eb0561ed756ab8b",
       "hanzi": "他们喜欢吃什么？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Qué les gusta comer?",
       "lessons": [
         3
       ],
@@ -23123,7 +24453,7 @@
       "id": "PH-66ed84625f85675a",
       "hanzi": "你们家有宠物吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Tienen mascotas en casa?",
       "lessons": [
         3
       ],
@@ -23149,7 +24479,7 @@
       "id": "PH-447128d03c52a316",
       "hanzi": "这是马大为，他是我朋友。",
       "pinyin": "Zhè shì Mǎ Dàwéi, tā shì wǒ péngyou.",
-      "spanish": null,
+      "spanish": "Este es Ma Dawei; es mi amigo.",
       "lessons": [
         2
       ],
@@ -23177,7 +24507,7 @@
       "id": "PH-06a22e1b3f6baecf",
       "hanzi": "我妈妈是北京人。",
       "pinyin": "Wǒ māma shì Běijīngrén.",
-      "spanish": null,
+      "spanish": "Mi mamá es de Pekín.",
       "lessons": [
         2
       ],
@@ -23203,7 +24533,7 @@
       "id": "PH-732b583c1bace49e",
       "hanzi": "这不是饺子，是包子。",
       "pinyin": "Zhè bú shì jiǎozi, shì bāozi.",
-      "spanish": null,
+      "spanish": "Esto no es jiaozi, es baozi.",
       "lessons": [
         2
       ],
@@ -23229,7 +24559,7 @@
       "id": "PH-6153e8bf1311130a",
       "hanzi": "那是饺子。",
       "pinyin": "Nà shì jiǎozi.",
-      "spanish": null,
+      "spanish": "Eso es jiaozi.",
       "lessons": [
         2
       ],
@@ -23254,7 +24584,7 @@
       "id": "PH-8352a5a7ed14b333",
       "hanzi": "我姓林，叫林娜。你呢？",
       "pinyin": "Wǒ xìng Lín, jiào Lín Nà. Nǐ ne?",
-      "spanish": null,
+      "spanish": "Mi apellido es Lin y me llamo Lin Na. ¿Y tú?",
       "lessons": [
         1
       ],
@@ -23282,7 +24612,7 @@
       "id": "PH-a965d860bc13904b",
       "hanzi": "我叫宋华。认识你很高兴。",
       "pinyin": "Wǒ jiào Sòng Huá. Rènshi nǐ hěn gāoxìng.",
-      "spanish": null,
+      "spanish": "Me llamo Song Hua. Me alegra conocerte.",
       "lessons": [
         1,
         2
@@ -23316,7 +24646,7 @@
       "id": "PH-0a4a0521f95b69ac",
       "hanzi": "我叫马大为，我是美国人。你也是美国人吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Me llamo Ma Dawei y soy estadounidense. ¿Tú también eres estadounidense?",
       "lessons": [
         2
       ],
@@ -23346,7 +24676,7 @@
       "id": "PH-c79a3af83ba4f458",
       "hanzi": "我不是美国人，我是英国人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "No soy estadounidense, soy británico.",
       "lessons": [
         2
       ],
@@ -23373,7 +24703,7 @@
       "id": "PH-0f86ec6a4240657a",
       "hanzi": "请问，你是中国人吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Disculpa, ¿eres chino?",
       "lessons": [
         2
       ],
@@ -23400,7 +24730,7 @@
       "id": "PH-50a14a4162b1dfc9",
       "hanzi": "我不是中国人，我是加拿大人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "No soy chino, soy canadiense.",
       "lessons": [
         2
       ],
@@ -23427,7 +24757,7 @@
       "id": "PH-34374d8374bf91e0",
       "hanzi": "他们呢？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Y ellos?",
       "lessons": [
         2
       ],
@@ -23450,7 +24780,7 @@
       "id": "PH-a41ebfbf3e722e7e",
       "hanzi": "他们也不是中国人，他们都是韩国人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ellos tampoco son chinos; todos son surcoreanos.",
       "lessons": [
         2
       ],
@@ -23479,7 +24809,7 @@
       "id": "PH-524b5c04429c4b1e",
       "hanzi": "这张照片是谁？是你哥哥吗？真帅！",
       "pinyin": "Zhè zhāng zhàopiàn shì shéi? Shì nǐ gēge ma? Zhēn shuài!",
-      "spanish": null,
+      "spanish": "¿Quién aparece en esta foto? ¿Es tu hermano mayor? ¡Qué guapo!",
       "lessons": [
         3
       ],
@@ -23510,7 +24840,7 @@
       "id": "PH-344fac58c01f6a02",
       "hanzi": "是我男朋友。",
       "pinyin": "Shì wǒ nánpéngyou.",
-      "spanish": null,
+      "spanish": "Es mi novio.",
       "lessons": [
         3
       ],
@@ -23534,7 +24864,7 @@
       "id": "PH-f5e8fe751cfa6748",
       "hanzi": "你太太做什么工作？",
       "pinyin": "Nǐ tàitai zuò shénme gōngzuò?",
-      "spanish": null,
+      "spanish": "¿En qué trabaja tu esposa?",
       "lessons": [
         3
       ],
@@ -23560,7 +24890,7 @@
       "id": "PH-1ae061732229eef0",
       "hanzi": "她是律师。你女朋友呢？",
       "pinyin": "Tā shì lǜshī. Nǐ nǚpéngyou ne?",
-      "spanish": null,
+      "spanish": "Ella es abogada. ¿Y tu novia?",
       "lessons": [
         3
       ],
@@ -23587,7 +24917,7 @@
       "id": "PH-178e8464cbdaf3b6",
       "hanzi": "她和我都是汉语老师。",
       "pinyin": "Tā hé wǒ dōu shì Hànyǔ lǎoshī.",
-      "spanish": null,
+      "spanish": "Ella y yo somos profesores de chino.",
       "lessons": [
         3
       ],
@@ -23615,7 +24945,7 @@
       "id": "PH-120f34020fe20ee2",
       "hanzi": "他们有几个孩子？",
       "pinyin": "Tāmen yǒu jǐ ge háizi?",
-      "spanish": null,
+      "spanish": "¿Cuántos hijos tienen?",
       "lessons": [
         3
       ],
@@ -23641,7 +24971,7 @@
       "id": "PH-4e10a72097b2309b",
       "hanzi": "他们有两个孩子，都很漂亮。",
       "pinyin": "Tāmen yǒu liǎng ge háizi, dōu hěn piàoliang.",
-      "spanish": null,
+      "spanish": "Tienen dos hijos y ambos son muy bonitos.",
       "lessons": [
         3
       ],
@@ -23670,7 +25000,7 @@
       "id": "PH-98ba7432cd84fc07",
       "hanzi": "这个孩子今年几岁？",
       "pinyin": "Zhè ge háizi jīnnián jǐ suì?",
-      "spanish": null,
+      "spanish": "¿Cuántos años tiene este niño este año?",
       "lessons": [
         3
       ],
@@ -23697,7 +25027,7 @@
       "id": "PH-8551dc51c02602c7",
       "hanzi": "他今年七岁。",
       "pinyin": "Tā jīnnián qī suì.",
-      "spanish": null,
+      "spanish": "Él tiene siete años este año.",
       "lessons": [
         3
       ],
@@ -23722,7 +25052,7 @@
       "id": "PH-64e9ac6b5d221c60",
       "hanzi": "您要什么？",
       "pinyin": "Nín yào shénme?",
-      "spanish": null,
+      "spanish": "¿Qué desea?",
       "lessons": [
         3
       ],
@@ -23746,7 +25076,7 @@
       "id": "PH-524e2d7be8ba76be",
       "hanzi": "我要两个包子，一杯牛奶。",
       "pinyin": "Wǒ yào liǎng ge bāozi, yì bēi niúnǎi.",
-      "spanish": null,
+      "spanish": "Quiero dos baozi y una taza de leche.",
       "lessons": [
         3
       ],
@@ -23775,7 +25105,7 @@
       "id": "PH-01fca2eaf98c9e0b",
       "hanzi": "王小云家有四口人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "En la familia de Wang Xiaoyun son cuatro personas.",
       "lessons": [
         3
       ],
@@ -23802,7 +25132,7 @@
       "id": "PH-bfffd0b9455210f9",
       "hanzi": "她爸爸是医生，妈妈是老师。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Su papá es médico y su mamá es profesora.",
       "lessons": [
         3
       ],
@@ -23829,7 +25159,7 @@
       "id": "PH-d13d03b09b4d4799",
       "hanzi": "她还有一个哥哥。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ella también tiene un hermano mayor.",
       "lessons": [
         3
       ],
@@ -23856,7 +25186,7 @@
       "id": "PH-99369c03dd528445",
       "hanzi": "这是他们家的照片。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Esta es una foto de su familia.",
       "lessons": [
         3
       ],
@@ -23884,7 +25214,7 @@
       "id": "PH-b5d8429b8a1065a7",
       "hanzi": "林娜家一共有五口人，妈妈、一个哥哥、两个姐姐和她，还有贝贝。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "En la familia de Lin Na son cinco en total: su mamá, un hermano mayor, dos hermanas mayores y ella, y también Beibei.",
       "lessons": [
         3
       ],
@@ -23922,7 +25252,7 @@
       "id": "PH-606f952b8af6d954",
       "hanzi": "贝贝是她的小狗。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Beibei es su perrito.",
       "lessons": [
         3
       ],
@@ -23948,7 +25278,7 @@
       "id": "PH-ffba22d89df713f8",
       "hanzi": "陆雨平家有三口人。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "En la familia de Lu Yuping son tres personas.",
       "lessons": [
         3
       ],
@@ -23975,7 +25305,7 @@
       "id": "PH-49b632132b5dd6b9",
       "hanzi": "他有一个女儿，今年五岁。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él tiene una hija; este año ella tiene cinco años.",
       "lessons": [
         3
       ],
@@ -24004,7 +25334,7 @@
       "id": "PH-130f985d9e2b266a",
       "hanzi": "他女儿很忙，今天有钢琴课，还有英语课。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Su hija está muy ocupada; hoy tiene clase de piano y también de inglés.",
       "lessons": [
         3
       ],
@@ -24037,7 +25367,7 @@
       "id": "PH-d520cd627831aa97",
       "hanzi": "贝贝是林娜家的人吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Beibei es un miembro de la familia de Lin Na?",
       "lessons": [
         3
       ],
@@ -24065,7 +25395,7 @@
       "id": "PH-29aac4b08a5a4e85",
       "hanzi": "陆雨平的女儿怎么样？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cómo está la hija de Lu Yuping?",
       "lessons": [
         3
       ],
@@ -24090,7 +25420,7 @@
       "id": "PH-3fdf8668e54e304e",
       "hanzi": "约翰今年几岁？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cuántos años tiene John este año?",
       "lessons": [
         3
       ],
@@ -24115,7 +25445,7 @@
       "id": "PH-38a70cc14651018b",
       "hanzi": "马大为有几个中国朋友？他们都是谁？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cuántos amigos chinos tiene Ma Dawei? ¿Quiénes son todos ellos?",
       "lessons": [
         3
       ],
@@ -24146,7 +25476,7 @@
       "id": "PH-3ba9166a1621e895",
       "hanzi": "大为也很好。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Dawei también está muy bien.",
       "lessons": [
         1
       ],
@@ -24171,7 +25501,7 @@
       "id": "PH-0f1fe99c42367990",
       "hanzi": "我不忙。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "No estoy ocupado.",
       "lessons": [
         1
       ],
@@ -24195,7 +25525,7 @@
       "id": "PH-aa94cc5a58cda010",
       "hanzi": "他很好。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Él está muy bien.",
       "lessons": [
         1
       ],
@@ -24219,7 +25549,7 @@
       "id": "PH-4133e289d454e28e",
       "hanzi": "他也姓宋。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Su apellido también es Song.",
       "lessons": [
         1
       ],
@@ -24244,7 +25574,7 @@
       "id": "PH-a3ed3b57056b6fc9",
       "hanzi": "他也不姓宋。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Su apellido tampoco es Song.",
       "lessons": [
         1
       ],
@@ -24270,7 +25600,7 @@
       "id": "PH-a905a890f813dd49",
       "hanzi": "力波也不忙。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Libo tampoco está ocupado.",
       "lessons": [
         1
       ],
@@ -24295,7 +25625,7 @@
       "id": "PH-691c8159dca930a0",
       "hanzi": "北京人喜欢吃面条儿和饺子。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "A las personas de Pekín les gusta comer fideos y jiaozi.",
       "lessons": [
         2
       ],
@@ -24322,7 +25652,7 @@
       "id": "PH-c17f8ece1657ee43",
       "hanzi": "我爸爸和我妈妈也都很忙。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Mi papá y mi mamá también están ambos muy ocupados.",
       "lessons": [
         2
       ],
@@ -24351,7 +25681,7 @@
       "id": "PH-bd1b39ebaa837322",
       "hanzi": "丁力波和马大为都很好。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tanto Ding Libo como Ma Dawei están muy bien.",
       "lessons": [
         2
       ],
@@ -24378,7 +25708,7 @@
       "id": "PH-eb2497965c79f7a0",
       "hanzi": "我和林娜都不太忙。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ni Lin Na ni yo estamos muy ocupados.",
       "lessons": [
         2
       ],
@@ -24406,7 +25736,7 @@
       "id": "PH-19de9d486f9805bc",
       "hanzi": "你爸爸和你妈妈都是北京人吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Tu papá y tu mamá son ambos de Pekín?",
       "lessons": [
         2
       ],
@@ -24435,7 +25765,7 @@
       "id": "PH-772fb686580deed2",
       "hanzi": "王小云和宋华也都不喜欢吃面条儿。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ni a Wang Xiaoyun ni a Song Hua les gusta comer fideos tampoco.",
       "lessons": [
         2
       ],
@@ -24465,7 +25795,7 @@
       "id": "PH-778faccd25523b77",
       "hanzi": "这是谁的咖啡？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿De quién es este café?",
       "lessons": [
         3
       ],
@@ -24492,7 +25822,7 @@
       "id": "PH-010aaa777ed73839",
       "hanzi": "这是我的咖啡。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Este es mi café.",
       "lessons": [
         3
       ],
@@ -24519,7 +25849,7 @@
       "id": "PH-9d6f09a5319ce0d9",
       "hanzi": "你有贝贝的照片吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Tienes una foto de Beibei?",
       "lessons": [
         3
       ],
@@ -24546,7 +25876,7 @@
       "id": "PH-b11f46d37b8c5cd8",
       "hanzi": "我没有贝贝的照片。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "No tengo una foto de Beibei.",
       "lessons": [
         3
       ],
@@ -24572,7 +25902,7 @@
       "id": "PH-4458e68dd29e6c07",
       "hanzi": "谁是医生？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Quién es médico?",
       "lessons": [
         3
       ],
@@ -24596,7 +25926,7 @@
       "id": "PH-9847e5a3bdfca22b",
       "hanzi": "我妈妈是医生。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Mi mamá es médica.",
       "lessons": [
         3
       ],
@@ -24621,7 +25951,7 @@
       "id": "PH-760edde6c22ac989",
       "hanzi": "他们有一个孩子。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Ellos tienen un hijo.",
       "lessons": [
         3
       ],
@@ -24647,7 +25977,7 @@
       "id": "PH-d77ec547e0aea18e",
       "hanzi": "我有六张照片。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tengo seis fotos.",
       "lessons": [
         3
       ],
@@ -24673,7 +26003,7 @@
       "id": "PH-6c5d650ec998810d",
       "hanzi": "这张照片怎么样？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Qué te parece esta foto?",
       "lessons": [
         3
       ],
@@ -24698,7 +26028,7 @@
       "id": "PH-6e40ca22d39fab51",
       "hanzi": "这张照片很漂亮。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Esta foto es muy bonita.",
       "lessons": [
         3
       ],
@@ -24724,7 +26054,7 @@
       "id": "PH-5e670a806c2eabf2",
       "hanzi": "你有哥哥吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Tienes un hermano mayor?",
       "lessons": [
         3
       ],
@@ -24749,7 +26079,7 @@
       "id": "PH-512a031d3cbcb613",
       "hanzi": "我有一个哥哥，还有两个弟弟。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Tengo un hermano mayor y también dos hermanos menores.",
       "lessons": [
         3
       ],
@@ -24777,7 +26107,7 @@
       "id": "PH-40527056c73c4385",
       "hanzi": "你认识谁？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿A quién conoces?",
       "lessons": [
         3
       ],
@@ -24801,7 +26131,7 @@
       "id": "PH-268d63850b817551",
       "hanzi": "我认识马大为，还认识林娜。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Conozco a Ma Dawei y también a Lin Na.",
       "lessons": [
         3
       ],
@@ -24826,7 +26156,7 @@
       "id": "PH-5ddf53808cc05900",
       "hanzi": "今天你有课吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Tienes clase hoy?",
       "lessons": [
         3
       ],
@@ -24852,7 +26182,7 @@
       "id": "PH-b0b39331167a0d1a",
       "hanzi": "今天我有汉语课，还有英语课。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Hoy tengo clase de chino y también de inglés.",
       "lessons": [
         3
       ],
@@ -24878,7 +26208,7 @@
       "id": "PH-70934d79589d0e76",
       "hanzi": "他们叫什么名字？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cómo se llaman ellos?",
       "lessons": [
         1
       ],
@@ -24903,7 +26233,7 @@
       "id": "PH-97c9acf00840a5e3",
       "hanzi": "他们怎么样？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Cómo están ellos?",
       "lessons": [
         1
       ],
@@ -24926,7 +26256,7 @@
       "id": "PH-72326936a5311a5e",
       "hanzi": "您早！",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¡Buenos días!; saludo respetuoso.",
       "lessons": [
         2
       ],
@@ -24949,7 +26279,7 @@
       "id": "PH-574c58b8bc464697",
       "hanzi": "我姓丁，叫丁力波。",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Mi apellido es Ding y me llamo Ding Libo.",
       "lessons": [
         2
       ],
@@ -24974,7 +26304,7 @@
       "id": "PH-1952dcf99ebdfbc7",
       "hanzi": "这是我同学，你们认识吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "Este es mi compañero de clase. ¿Ustedes se conocen?",
       "lessons": [
         2
       ],
@@ -25002,7 +26332,7 @@
       "id": "PH-55fea3f7d13de054",
       "hanzi": "你好！我叫林娜。请问，你是哪国人？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¡Hola! Me llamo Lin Na. Disculpa, ¿de qué país eres?",
       "lessons": [
         2
       ],
@@ -25032,7 +26362,7 @@
       "id": "PH-1dec0764a85d0964",
       "hanzi": "宋华是哪国人？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿De qué país es Song Hua?",
       "lessons": [
         2
       ],
@@ -25059,7 +26389,7 @@
       "id": "PH-1e5441714d26f0be",
       "hanzi": "宋华喜欢吃什么？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Qué le gusta comer a Song Hua?",
       "lessons": [
         2
       ],
@@ -25084,7 +26414,7 @@
       "id": "PH-583e928db23efeef",
       "hanzi": "林娜喜欢吃饺子吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿A Lin Na le gusta comer jiaozi?",
       "lessons": [
         2
       ],
@@ -25110,7 +26440,7 @@
       "id": "PH-55d15fa658d68deb",
       "hanzi": "陈老师是北京人吗？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿El docente Chen es de Pekín?",
       "lessons": [
         2
       ],
@@ -25136,7 +26466,7 @@
       "id": "PH-0712880299524499",
       "hanzi": "陈老师喜欢吃什么？",
       "pinyin": null,
-      "spanish": null,
+      "spanish": "¿Qué le gusta comer al docente Chen?",
       "lessons": [
         2
       ],
@@ -25172,7 +26502,7 @@
           "speakerPinyin": "Mǎ Dàwéi",
           "phraseId": "PH-670d9743542cae3e",
           "pinyin": "Nǐ hǎo!",
-          "spanish": null
+          "spanish": "¡Hola!"
         },
         {
           "turn": 2,
@@ -25181,7 +26511,7 @@
           "speakerPinyin": "Sòng Huá",
           "phraseId": "PH-670d9743542cae3e",
           "pinyin": "Nǐ hǎo!",
-          "spanish": null
+          "spanish": "¡Hola!"
         },
         {
           "turn": 3,
@@ -25190,7 +26520,7 @@
           "speakerPinyin": "Mǎ Dàwéi",
           "phraseId": "PH-a05b1895701f4272",
           "pinyin": "Wǒ jiào Mǎ Dàwéi. Qǐngwèn, nǐ jiào shénme míngzi?",
-          "spanish": null
+          "spanish": "Me llamo Ma Dawei. Disculpa, ¿cómo te llamas?"
         },
         {
           "turn": 4,
@@ -25199,7 +26529,7 @@
           "speakerPinyin": "Sòng Huá",
           "phraseId": "PH-8adb07789bff67a4",
           "pinyin": "Wǒ xìng Sòng, jiào Sòng Huá.",
-          "spanish": null
+          "spanish": "Mi apellido es Song y me llamo Song Hua."
         },
         {
           "turn": 5,
@@ -25208,7 +26538,7 @@
           "speakerPinyin": "Mǎ Dàwéi",
           "phraseId": "PH-2f4c8cbba8f15bf3",
           "pinyin": "Rènshi nǐ hěn gāoxìng.",
-          "spanish": null
+          "spanish": "Me alegra conocerte."
         },
         {
           "turn": 6,
@@ -25217,7 +26547,7 @@
           "speakerPinyin": "Sòng Huá",
           "phraseId": "PH-75c3db6ef2e8ca00",
           "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng.",
-          "spanish": null
+          "spanish": "A mí también me alegra conocerte."
         }
       ]
     },
@@ -25233,7 +26563,7 @@
           "speakerPinyin": "Dīng Lìbō",
           "phraseId": "PH-4df8f0165d3f1d68",
           "pinyin": "Qǐngwèn, Lín Nà zài ma?",
-          "spanish": null
+          "spanish": "Disculpa, ¿está Lin Na?"
         },
         {
           "turn": 2,
@@ -25242,7 +26572,7 @@
           "speakerPinyin": "Lín Nà",
           "phraseId": "PH-b2ce8f66a105ec80",
           "pinyin": "Zài. Lìbō, qǐng jìn, qǐng zuò.",
-          "spanish": null
+          "spanish": "Sí, está. Libo, pasa, por favor, y siéntate."
         },
         {
           "turn": 3,
@@ -25251,7 +26581,7 @@
           "speakerPinyin": "Dīng Lìbō",
           "phraseId": "PH-0f437a5676994bd1",
           "pinyin": "Xièxie. Nǐ zuìjìn zěnmeyàng?",
-          "spanish": null
+          "spanish": "Gracias. ¿Cómo has estado últimamente?"
         },
         {
           "turn": 4,
@@ -25260,7 +26590,7 @@
           "speakerPinyin": "Lín Nà",
           "phraseId": "PH-e48c42bc76c441d6",
           "pinyin": "Wǒ hěn hǎo. Nǐ ne?",
-          "spanish": null
+          "spanish": "Estoy muy bien. ¿Y tú?"
         },
         {
           "turn": 5,
@@ -25269,7 +26599,7 @@
           "speakerPinyin": "Dīng Lìbō",
           "phraseId": "PH-fd9e21b4265fa711",
           "pinyin": "Wǒ hěn máng. Nǐ máng ma?",
-          "spanish": null
+          "spanish": "Estoy muy ocupado. ¿Tú estás ocupado?"
         },
         {
           "turn": 6,
@@ -25278,7 +26608,7 @@
           "speakerPinyin": "Lín Nà",
           "phraseId": "PH-9d60c2539b2ec66b",
           "pinyin": "Wǒ bú tài máng. Dàwéi hǎo ma?",
-          "spanish": null
+          "spanish": "No estoy muy ocupado. ¿Dawei está bien?"
         },
         {
           "turn": 7,
@@ -25287,7 +26617,7 @@
           "speakerPinyin": "Dīng Lìbō",
           "phraseId": "PH-6df8b6bf89d466a0",
           "pinyin": "Tā yě hěn hǎo.",
-          "spanish": null
+          "spanish": "Él también está muy bien."
         }
       ]
     },
@@ -25303,7 +26633,7 @@
           "speakerPinyin": "Dīng Lìbō",
           "phraseId": "PH-2c5108b99f0c00e3",
           "pinyin": "Lǎoshī, zǎoshang hǎo!",
-          "spanish": null
+          "spanish": "¡Buenos días, profe!"
         },
         {
           "turn": 2,
@@ -25312,7 +26642,7 @@
           "speakerPinyin": null,
           "phraseId": "PH-d36d24a8a0e932b0",
           "pinyin": "Nǐmen hǎo!",
-          "spanish": null
+          "spanish": "¡Hola a todos!"
         },
         {
           "turn": 3,
@@ -25321,7 +26651,7 @@
           "speakerPinyin": "Dīng Lìbō",
           "phraseId": "PH-d3b3338b0361002c",
           "pinyin": "Zhè shì Mǎ Dàwéi, tā shì wǒ péngyou, gāng dào Běijīng.",
-          "spanish": null
+          "spanish": "Este es Ma Dawei, es mi amigo y acaba de llegar a Pekín."
         },
         {
           "turn": 4,
@@ -25330,7 +26660,7 @@
           "speakerPinyin": "Mǎ Dàwéi",
           "phraseId": "PH-d0443e7aa5d3b780",
           "pinyin": "Nín hǎo! Lǎoshī, nín guìxìng?",
-          "spanish": null
+          "spanish": "¡Hola! Profe, ¿cuál es su apellido?"
         },
         {
           "turn": 5,
@@ -25339,7 +26669,7 @@
           "speakerPinyin": null,
           "phraseId": "PH-690ab0981fa200f9",
           "pinyin": "Wǒ xìng Chén. Nǐ shì nǎ guó rén?",
-          "spanish": null
+          "spanish": "Mi apellido es Chen. ¿De qué país eres?"
         },
         {
           "turn": 6,
@@ -25348,7 +26678,7 @@
           "speakerPinyin": "Mǎ Dàwéi",
           "phraseId": "PH-e0ed09abc679978f",
           "pinyin": "Wǒ shì Měiguó rén. Wǒ yě xuéxí Hànyǔ. Chén lǎoshī, rènshi nín hěn gāoxìng.",
-          "spanish": null
+          "spanish": "Soy estadounidense. Yo también estudio chino. Profe Chen, me alegra conocerle."
         },
         {
           "turn": 7,
@@ -25357,7 +26687,7 @@
           "speakerPinyin": null,
           "phraseId": "PH-75c3db6ef2e8ca00",
           "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng.",
-          "spanish": null
+          "spanish": "A mí también me alegra conocerte."
         },
         {
           "turn": 8,
@@ -25366,7 +26696,7 @@
           "speakerPinyin": "Mǎ Dàwéi",
           "phraseId": "PH-3a74d274698b1602",
           "pinyin": "Lǎoshī, zàijiàn!",
-          "spanish": null
+          "spanish": "¡Adiós, profe!"
         },
         {
           "turn": 9,
@@ -25375,7 +26705,7 @@
           "speakerPinyin": null,
           "phraseId": "PH-c90a1cdb561d0269",
           "pinyin": "Zàijiàn!",
-          "spanish": null
+          "spanish": "¡Adiós!"
         }
       ]
     },
@@ -25391,7 +26721,7 @@
           "speakerPinyin": "Mǎ Dàwéi",
           "phraseId": "PH-fd63f91d021e950d",
           "pinyin": "Xiǎoyún, zhè shì shénme?",
-          "spanish": null
+          "spanish": "Xiaoyun, ¿qué es esto?"
         },
         {
           "turn": 2,
@@ -25400,7 +26730,7 @@
           "speakerPinyin": "Wáng Xiǎoyún",
           "phraseId": "PH-663b7ecf4908ab3f",
           "pinyin": "Zhè shì diǎnxin.",
-          "spanish": null
+          "spanish": "Esto es un bocadillo."
         },
         {
           "turn": 3,
@@ -25409,7 +26739,7 @@
           "speakerPinyin": "Mǎ Dàwéi",
           "phraseId": "PH-c4ad0b6e60632365",
           "pinyin": "Diǎnxin hǎochī ma?",
-          "spanish": null
+          "spanish": "¿Los bocadillos están ricos?"
         },
         {
           "turn": 4,
@@ -25418,7 +26748,7 @@
           "speakerPinyin": "Wáng Xiǎoyún",
           "phraseId": "PH-17071362f2fae7c7",
           "pinyin": "Hǎochī. Wǒ bàba shì Shànghǎi rén, tā xǐhuan chī diǎnxin hé mǐfàn.",
-          "spanish": null
+          "spanish": "Sí, están ricos. Mi papá es de Shanghái; le gusta comer bocadillos y arroz."
         },
         {
           "turn": 5,
@@ -25427,7 +26757,7 @@
           "speakerPinyin": "Mǎ Dàwéi",
           "phraseId": "PH-d9bb663c9e9f1bb9",
           "pinyin": "Běijīng rén xǐhuan chī shénme?",
-          "spanish": null
+          "spanish": "¿Qué les gusta comer a las personas de Pekín?"
         },
         {
           "turn": 6,
@@ -25436,7 +26766,7 @@
           "speakerPinyin": "Wáng Xiǎoyún",
           "phraseId": "PH-09cb5a21fffc1281",
           "pinyin": "Wǒ māma shì Běijīng rén, tā xǐhuan chī miàntiáor hé jiǎozi.",
-          "spanish": null
+          "spanish": "Mi mamá es de Pekín; le gusta comer fideos y jiaozi."
         },
         {
           "turn": 7,
@@ -25445,7 +26775,7 @@
           "speakerPinyin": "Mǎ Dàwéi",
           "phraseId": "PH-68f8d39880b47b54",
           "pinyin": "Zhè shì jiǎozi ma?",
-          "spanish": null
+          "spanish": "¿Esto es jiaozi?"
         },
         {
           "turn": 8,
@@ -25454,7 +26784,7 @@
           "speakerPinyin": "Wáng Xiǎoyún",
           "phraseId": "PH-414d0363c22c3b9f",
           "pinyin": "Zhè bú shì jiǎozi, shì bāozi. Bāozi dà, jiǎozi xiǎo. Nǐ kàn, nà shì jiǎozi.",
-          "spanish": null
+          "spanish": "Esto no es jiaozi, es baozi. Los baozi son grandes y los jiaozi son pequeños. Mira, aquello es jiaozi."
         },
         {
           "turn": 9,
@@ -25463,7 +26793,7 @@
           "speakerPinyin": "Mǎ Dàwéi",
           "phraseId": "PH-b13c3b5fbf4875af",
           "pinyin": "Bāozi hǎochī ma?",
-          "spanish": null
+          "spanish": "¿Los baozi están ricos?"
         },
         {
           "turn": 10,
@@ -25472,7 +26802,7 @@
           "speakerPinyin": "Wáng Xiǎoyún",
           "phraseId": "PH-809344e864886f9c",
           "pinyin": "Bāozi hé jiǎozi dōu hěn hǎochī.",
-          "spanish": null
+          "spanish": "Tanto los baozi como los jiaozi están muy ricos."
         },
         {
           "turn": 11,
@@ -25481,7 +26811,7 @@
           "speakerPinyin": "Mǎ Dàwéi",
           "phraseId": "PH-c5cfe5e5b205152f",
           "pinyin": "Hǎo, wǒ yào jiǎozi, yě yào bāozi.",
-          "spanish": null
+          "spanish": "Bien, quiero jiaozi y también baozi."
         }
       ]
     },
@@ -25497,7 +26827,7 @@
           "speakerPinyin": "Lín Nà",
           "phraseId": "PH-73edb201a1b0b88d",
           "pinyin": "Nǐmen jiā yǒu jǐ kǒu rén?",
-          "spanish": null
+          "spanish": "¿Cuántas personas hay en tu familia?"
         },
         {
           "turn": 2,
@@ -25506,7 +26836,7 @@
           "speakerPinyin": "Wáng Xiǎoyún",
           "phraseId": "PH-8dcc41f26397e990",
           "pinyin": "Wǒmen jiā yǒu sì kǒu rén. Nǐ kàn, zhè shì wǒmen jiā de zhàopiàn.",
-          "spanish": null
+          "spanish": "En nuestra familia somos cuatro. Mira, esta es una foto de nuestra familia."
         },
         {
           "turn": 3,
@@ -25515,7 +26845,7 @@
           "speakerPinyin": "Lín Nà",
           "phraseId": "PH-1f7e03d8c0052b68",
           "pinyin": "Nǐ bàba māma zuò shénme gōngzuò?",
-          "spanish": null
+          "spanish": "¿En qué trabajan tu papá y tu mamá?"
         },
         {
           "turn": 4,
@@ -25524,7 +26854,7 @@
           "speakerPinyin": "Wáng Xiǎoyún",
           "phraseId": "PH-4a63b9623c9c3cde",
           "pinyin": "Wǒ bàba shì yīshēng, māma shì lǎoshī.",
-          "spanish": null
+          "spanish": "Mi papá es médico y mi mamá es profesora."
         },
         {
           "turn": 5,
@@ -25533,7 +26863,7 @@
           "speakerPinyin": "Lín Nà",
           "phraseId": "PH-fb58d7bbfe7950bc",
           "pinyin": "Zhè shì nǐ dìdi ma?",
-          "spanish": null
+          "spanish": "¿Este es tu hermano menor?"
         },
         {
           "turn": 6,
@@ -25542,7 +26872,7 @@
           "speakerPinyin": "Wáng Xiǎoyún",
           "phraseId": "PH-3bd601533f50ac73",
           "pinyin": "Zhè bú shì wǒ dìdi. Zhè shì wǒ gēge. Lín Nà, nǐmen jiā yǒu jǐ kǒu rén?",
-          "spanish": null
+          "spanish": "Este no es mi hermano menor. Este es mi hermano mayor. Lin Na, ¿cuántas personas hay en tu familia?"
         },
         {
           "turn": 7,
@@ -25551,7 +26881,7 @@
           "speakerPinyin": "Lín Nà",
           "phraseId": "PH-c72459420412ca24",
           "pinyin": "Wǒmen jiā yígòng yǒu liù kǒu rén: māma, yí ge gēge, liǎng ge jiějie hé wǒ, hái yǒu Bèibei.",
-          "spanish": null
+          "spanish": "En nuestra familia somos seis en total: mamá, un hermano mayor, dos hermanas mayores y yo, y también Beibei."
         },
         {
           "turn": 8,
@@ -25560,7 +26890,7 @@
           "speakerPinyin": "Wáng Xiǎoyún",
           "phraseId": "PH-1f5edf8ae05ca861",
           "pinyin": "Bèibei shì shéi? Shì nǐ mèimei ma?",
-          "spanish": null
+          "spanish": "¿Quién es Beibei? ¿Es tu hermana menor?"
         },
         {
           "turn": 9,
@@ -25569,7 +26899,7 @@
           "speakerPinyin": "Lín Nà",
           "phraseId": "PH-f26418fd16237858",
           "pinyin": "Wǒ méiyǒu mèimei, Bèibei shì wǒ de xiǎogǒu.",
-          "spanish": null
+          "spanish": "No tengo hermana menor; Beibei es mi perrito."
         },
         {
           "turn": 10,
@@ -25578,7 +26908,7 @@
           "speakerPinyin": "Wáng Xiǎoyún",
           "phraseId": "PH-e43ad76a163e355d",
           "pinyin": "Xiǎogǒu yě shì yì kǒu rén ma?",
-          "spanish": null
+          "spanish": "¿El perrito también cuenta como un miembro de la familia?"
         }
       ]
     },
@@ -25594,7 +26924,7 @@
           "speakerPinyin": "Lù Yǔpíng",
           "phraseId": "PH-111091909a211bb7",
           "pinyin": "Nǐmen hǎo! Qǐng jìn!",
-          "spanish": null
+          "spanish": "¡Hola a todos! ¡Pasen, por favor!"
         },
         {
           "turn": 2,
@@ -25603,7 +26933,7 @@
           "speakerPinyin": "Lín Nà",
           "phraseId": "PH-5678193b86e8724f",
           "pinyin": "Nín hǎo! Nǐmen jiā zhēn piàoliang!",
-          "spanish": null
+          "spanish": "¡Hola! ¡Qué bonita es su casa!"
         },
         {
           "turn": 3,
@@ -25612,7 +26942,7 @@
           "speakerPinyin": "Lù Yǔpíng",
           "phraseId": "PH-1af10d4c756781c6",
           "pinyin": "Xièxie. Qǐng zuò. Nǐmen hē shénme? Wǒmen jiā yǒu chá hé kāfēi.",
-          "spanish": null
+          "spanish": "Gracias. Siéntense, por favor. ¿Qué van a tomar? En casa tenemos té y café."
         },
         {
           "turn": 4,
@@ -25621,7 +26951,7 @@
           "speakerPinyin": "Sòng Huá",
           "phraseId": "PH-2e9d54b2f234dbec",
           "pinyin": "Wǒ hē kāfēi.",
-          "spanish": null
+          "spanish": "Yo tomo café."
         },
         {
           "turn": 5,
@@ -25630,7 +26960,7 @@
           "speakerPinyin": "Lín Nà",
           "phraseId": "PH-75fc00a1483a074b",
           "pinyin": "Wǒ yào chá.",
-          "spanish": null
+          "spanish": "Quiero té."
         },
         {
           "turn": 6,
@@ -25639,7 +26969,7 @@
           "speakerPinyin": "Sòng Huá",
           "phraseId": "PH-f73bf8e19f739055",
           "pinyin": "Zhè zhāng zhàopiàn zhēn piàoliang! Zhè shì nǐ nǚ’ér ma?",
-          "spanish": null
+          "spanish": "¡Esta foto es realmente bonita! ¿Esta es tu hija?"
         },
         {
           "turn": 7,
@@ -25648,7 +26978,7 @@
           "speakerPinyin": "Lù Yǔpíng",
           "phraseId": "PH-4fac66dc4ef24a57",
           "pinyin": "Shì. Zhè shì wǒ nǚ’ér.",
-          "spanish": null
+          "spanish": "Sí. Esta es mi hija."
         },
         {
           "turn": 8,
@@ -25657,7 +26987,7 @@
           "speakerPinyin": "Sòng Huá",
           "phraseId": "PH-40b8d75ef94972dd",
           "pinyin": "Nǐ nǚ’ér jīnnián jǐ suì?",
-          "spanish": null
+          "spanish": "¿Cuántos años tiene tu hija este año?"
         },
         {
           "turn": 9,
@@ -25666,7 +26996,7 @@
           "speakerPinyin": "Lù Yǔpíng",
           "phraseId": "PH-8404b517d7b8837d",
           "pinyin": "Wǔ suì. Jīntiān tā yǒu gāngqínkè, bú zài jiā.",
-          "spanish": null
+          "spanish": "Cinco años. Hoy tiene clase de piano; no está en casa."
         },
         {
           "turn": 10,
@@ -25675,7 +27005,7 @@
           "speakerPinyin": "Lín Nà",
           "phraseId": "PH-c3324d239c2c9dec",
           "pinyin": "Zhōngguó de háizi zhēn máng!",
-          "spanish": null
+          "spanish": "¡Los niños de China están realmente ocupados!"
         },
         {
           "turn": 11,
@@ -25684,7 +27014,7 @@
           "speakerPinyin": "Lù Yǔpíng",
           "phraseId": "PH-493c48e1a43cf756",
           "pinyin": "Shì a. Wǎnshang tā hái yǒu Yīngyǔkè.",
-          "spanish": null
+          "spanish": "Sí, así es. Por la noche también tiene clase de inglés."
         }
       ]
     }
@@ -29083,5 +30413,5 @@
     }
   ],
   "sourceAuditVersion": "1.0.0",
-  "fingerprint": "cbe3c172ccebe0cd4603a1bd37bb59ee044e37c53825cbf43878256fe946f4e8"
+  "fingerprint": "4dceb1f0c60e7a2d1b1c8a2413171c193e2aad398d437744544dc778392630b1"
 }

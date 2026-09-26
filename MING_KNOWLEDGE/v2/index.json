@@ -126,5 +126,43 @@
       "Worksheet glyph presence does not prove that an app link, stroke asset or audio works.",
       "Metadata called internal is stored in this same public GitHub repository, not protected by that label; source locators are excluded from the learner projection."
     ]
+  },
+  "ming_translations": {
+    "schema_version": "1.0.0",
+    "batch_id": "ming-es-20260925-01",
+    "prepared_date": "2026-09-25",
+    "base_commit": "d6352ddfb6498286a0991f198279ac093883e466",
+    "fingerprint": "e2ee12d5fc3f5f85c3b1efeedaa42dba87fc87445c779c8c5dbe1f5fb3bf675f",
+    "counts": {
+      "vocabulary": {
+        "total_records": 346,
+        "documentary_spanish_preserved": 229,
+        "generated_ming_records": 117,
+        "internal_only_records": 9,
+        "templates_with_ellipsis_preserved": 0,
+        "with_source_or_ming_translation": 346,
+        "missing_any_translation_ids": []
+      },
+      "phrases": {
+        "total_records": 643,
+        "documentary_spanish_preserved": 53,
+        "generated_ming_records": 590,
+        "internal_only_records": 8,
+        "templates_with_ellipsis_preserved": 3,
+        "with_source_or_ming_translation": 643,
+        "missing_any_translation_ids": []
+      }
+    },
+    "limits": [
+      "Las traducciones están preparadas y revisadas por el modelo; no son una certificación lingüística humana independiente.",
+      "Traducir un contraejemplo no lo convierte en una construcción china correcta: conserva kinds y permanece fuera de la exportación de frases positivas.",
+      "Los nueve fragmentos léxicos mal segmentados se traducen solo para control; no se publican como nuevas palabras.",
+      "Las plantillas con puntos suspensivos conservan el hueco; no se inventa una respuesta.",
+      "La cobertura de traducción no acredita cobertura de pinyin, audio, imágenes o fichas Hanzi.",
+      "Interno significa uso editorial: este repositorio es público; no es una protección de acceso."
+    ],
+    "source_spanish_fields_overwritten": 0,
+    "paid_api_calls": 0,
+    "independent_human_review": false
   }
 }
