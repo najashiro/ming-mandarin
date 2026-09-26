@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "visual-ming-20260925-01",
+  "prepared_date": "2026-09-25",
+  "base_commit": "ad159330f24c7a7142daef6fc9ab22deed9c07f8",
+  "scope": "published_vocabulary_only",
+  "method": "model_editorial_semantic_classification",
+  "review_status": "model_classified_not_image_validated",
+  "authorization": "El usuario pidió clasificar todo el vocabulario publicado con la taxonomía visual analizada y modificar el corpus mediante una PR, sin generar imágenes ni incluir tamaños, diseño o interfaz.",
+  "files": ["visual/vocabulary.tsv"],
+  "quiz_policy": "image_quiz_eligible indica candidatura semántica, no disponibilidad ni aprobación de una imagen. Cada futuro recurso necesita validación de claridad, punto de vista y respuestas equivalentes antes de entrar al juego.",
+  "limits": [
+    "Clasificación editorial preparada y comprobada por el modelo; no es una evaluación con alumnos ni una revisión humana independiente.",
+    "No se generan imágenes, prompts, audio, tamaños, proporciones, estilos, rutas de recursos ni cambios de interfaz.",
+    "Se clasifica el sentido del vocabulario registrado. Las notas documentan homógrafos, sinónimos, nombres y riesgos; no sustituyen las glosas ni el currículo originales.",
+    "image_support no equivale a imagen propia: visual_grammar necesita apoyo estructurado y phrase_context apoya una frase, no una pista aislada.",
+    "Los valores true de image_quiz_eligible son candidatos sujetos a validar cada imagen futura; no autorizan automáticamente el uso evaluativo de un recurso.",
+    "Los sinónimos visualmente indistinguibles requieren respuestas alternativas o práctica contextual. Una imagen no puede exigir por sí sola una grafía única entre variantes equivalentes.",
+    "La apariencia de una persona no demuestra nombre, nacionalidad, parentesco o profesión. Las identidades personales no se reconstruyen mediante retratos inventados.",
+    "No se elimina vocabulario por carecer de imagen propia ni se cambian las lecciones exclusivas, ejemplos globales, pinyin o traducciones.",
+    "Interno describe uso editorial, no privacidad del repositorio. La web recibe solo cuatro campos de clasificación y no las notas ni el método."
+  ]
+}
