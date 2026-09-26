@@ -1,5 +1,16 @@
 # MING_KNOWLEDGE
 
+## Estándar visual de Vocabulario
+
+El diseño por defecto de las fichas está guardado en
+[`design/VOCABULARY_STYLE.md`](design/VOCABULARY_STYLE.md): fondo inmersivo chino,
+fondos fotográficos difuminados y tarjeta completa en proporción áurea horizontal.
+Consulta los [parámetros exactos](design/vocabulary-style.json), el
+[prompt reutilizable](design/VOCABULARY_IMPLEMENTATION_PROMPT.md) y la
+[referencia visual elegida](design/references/vocabulary-immersive-zh-approved.png).
+Es conocimiento de producto, separado del corpus; su publicación documenta el
+estándar y no certifica que la web ya lo aplique.
+
 ## Base activa de fuentes: v2.1.0
 
 Corpus L1–L3, incluidas PPT/Hanzi 3.2 y una dimensión curricular de radicales.
