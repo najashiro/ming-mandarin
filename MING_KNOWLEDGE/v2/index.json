@@ -132,7 +132,7 @@
     "batch_id": "ming-es-20260925-01",
     "prepared_date": "2026-09-25",
     "base_commit": "d6352ddfb6498286a0991f198279ac093883e466",
-    "fingerprint": "e2ee12d5fc3f5f85c3b1efeedaa42dba87fc87445c779c8c5dbe1f5fb3bf675f",
+    "fingerprint": "8560ed16a4895cd61b60af61b490768621afad620e40e07ad743e747916cf29b",
     "counts": {
       "vocabulary": {
         "total_records": 346,
@@ -164,5 +164,117 @@
     "source_spanish_fields_overwritten": 0,
     "paid_api_calls": 0,
     "independent_human_review": false
+  },
+  "ming_pinyin": {
+    "schema_version": "1.0.0",
+    "batch_id": "ming-pinyin-20260925-01",
+    "prepared_date": "2026-09-25",
+    "base_commit": "e82c09e1f1790edbde6c0ef7b949ab2371175807",
+    "fingerprint": "73685a0dabcf214415deab4dd31618792b794c0241cc480f81b3938faadca1aa",
+    "counts": {
+      "vocabulary": {
+        "total_records": 346,
+        "source_pinyin_preserved": 267,
+        "generated_ming_records": 70,
+        "with_source_or_ming_pinyin": 337,
+        "eligible_records": 337,
+        "eligible_missing_pinyin_ids": [],
+        "excluded_missing_pinyin_ids": [
+          "v-哥哥，还",
+          "v-咖啡，还",
+          "v-马大为，还",
+          "v-汉语课，还",
+          "v-丁，叫",
+          "v-宋华。认识",
+          "v-同学，你们",
+          "v-好！我",
+          "v-林娜。请问，你"
+        ],
+        "templates_transcribed_without_completion": 0
+      },
+      "phrases": {
+        "total_records": 643,
+        "source_pinyin_preserved": 202,
+        "generated_ming_records": 434,
+        "with_source_or_ming_pinyin": 636,
+        "eligible_records": 635,
+        "eligible_missing_pinyin_ids": [],
+        "excluded_missing_pinyin_ids": [
+          "PH-657b387884e433df",
+          "PH-45f8046801efd8a2",
+          "PH-a7ef8fc409e146f1",
+          "PH-9d29b355ce8ee4fe",
+          "PH-ce37242e69e1ac7a",
+          "PH-234bf62c359331a1",
+          "PH-2fd4675bfc1a9c7f"
+        ],
+        "templates_transcribed_without_completion": 3
+      }
+    },
+    "source_fields_overwritten": 0,
+    "paid_api_calls": 0,
+    "independent_human_review": false,
+    "limits": [
+      "Preparado y comprobado por el modelo; no se afirma revisión humana independiente ni certificación fonética.",
+      "La ausencia de pinyin registrado no demuestra que no esté impreso en alguna fuente. Este lote añade apoyo editorial, no una nueva auditoría literal de todas las páginas.",
+      "No se transcriben como entradas válidas los nueve fragmentos mal segmentados ni los siete contraejemplos todavía sin pinyin. Permanecen contabilizados internamente.",
+      "Las tres plantillas conservan su elipsis. Tener pinyin no las convierte en oraciones completas ni en respuestas resueltas.",
+      "No se genera audio, imágenes, trazos ni contenido chino nuevo. La disponibilidad en localhost necesita integrar los cambios.",
+      "Interno describe uso editorial; el repositorio es público y estos metadatos no son secretos. La exportación del alumno omite su procedencia."
+    ]
+  },
+  "lexical_examples": {
+    "schema_version": "1.0.0",
+    "approved_compositions": 1,
+    "direct_links": 3050,
+    "inherited_links": 2,
+    "source_lexical_links_changed": 0,
+    "transitive_inheritance": false,
+    "deferred_construction_links": [
+      {
+        "vocab_id": "v-上课",
+        "phrase_id": "PH-157dc39cc03ae3dc",
+        "relation": "discontinuous_construction",
+        "method": "editorial_rule_assisted_needs_review"
+      },
+      {
+        "vocab_id": "v-上课",
+        "phrase_id": "PH-21d39b242e0a921b",
+        "relation": "discontinuous_construction",
+        "method": "editorial_rule_assisted_needs_review"
+      },
+      {
+        "vocab_id": "v-上课",
+        "phrase_id": "PH-f0819a7411f37ebe",
+        "relation": "discontinuous_construction",
+        "method": "editorial_rule_assisted_needs_review"
+      }
+    ],
+    "cat_examples": [
+      {
+        "phrase_id": "PH-104242c1007e283c",
+        "hanzi": "一只猫",
+        "pinyin": "Yì zhī māo",
+        "spanish": "Un gato.",
+        "relation": "direct_lexical",
+        "via_vocab_id": null
+      },
+      {
+        "phrase_id": "PH-0723abbd5ad5de02",
+        "hanzi": "你有小猫吗？",
+        "pinyin": "Nǐ yǒu xiǎomāo ma?",
+        "spanish": "¿Tienes un gatito?",
+        "relation": "editorial_compositional",
+        "via_vocab_id": "v-小猫"
+      },
+      {
+        "phrase_id": "PH-4ede4839fc13f6d9",
+        "hanzi": "我有两只小猫，他们很可爱。",
+        "pinyin": "Wǒ yǒu liǎng zhī xiǎomāo, tāmen hěn kě'ài.",
+        "spanish": "Tengo dos gatitos; son muy tiernos.",
+        "relation": "editorial_compositional",
+        "via_vocab_id": "v-小猫"
+      }
+    ]
   }
 }
