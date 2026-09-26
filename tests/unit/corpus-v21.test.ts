@@ -50,8 +50,6 @@ describe('corpus v2.1 public projection', () => {
   });
 
   it('does not expose a manifest clip when it is excluded from availability', async () => {
-    // This sentence now has a published MP3. Simulate the absent-resource state
-    // instead of permanently assuming that an already completed batch is pending.
     vi.resetModules();
     vi.doMock('@/data/mandarin-audio-available.json', () => ({ default: { files: [] } }));
     try {
@@ -104,10 +102,40 @@ describe('corpus v2.1 public projection', () => {
     expect(tai).not.toHaveProperty('worksheet_occurrences');
   });
 
-  it('exports recovered source pinyin under the original stable phrase ID', () => {
+  it('keeps recovered source pinyin and adds resolved Spanish under the stable phrase ID', () => {
     const phrase = corpus.phrases.find((row) => row.id === 'PH-38f6ca8078116ec2')!;
     expect(phrase.hanzi).toBe('我家有五口人。');
     expect(phrase.pinyin).toBe('Wǒ jiā yǒu wǔ kǒu rén.');
-    expect(phrase.spanish).toBeNull();
+    expect(phrase.spanish).toBe('En mi familia somos cinco.');
+  });
+
+  it('provides both global zhen examples with Spanish and no provenance label', () => {
+    const praise = corpus.phrases.find((row) => row.id === 'PH-bc51241bebeba332')!;
+    const photo = corpus.phrases.find((row) => row.id === 'PH-1d7312c0a6661d54')!;
+    expect(praise.spanish).toBe('¡Qué impresionante!');
+    expect(photo.spanish).toBe('¡Esta foto es realmente bonita!');
+    expect(praise.vocabIds).toContain('v-真');
+    expect(photo.vocabIds).toContain('v-真');
+    expect(praise.lessons).toContain(2);
+    expect(photo.lessons).toContain(3);
+    expect(JSON.stringify(corpus)).not.toMatch(/traduccion_ming|spanish_display|spanish_origin|model_checked_not_independently_human_reviewed/);
+  });
+
+  it('uses translations without manufacturing pinyin or valid vocabulary fragments', () => {
+    expect(corpus.vocabulary.find((row) => row.id === 'v-厉害')?.spanish).toBe('impresionante; muy hábil');
+    expect(corpus.vocabulary.some((row) => row.id === 'v-可以')).toBe(false);
+    expect(corpus.vocabulary.some((row) => row.id === 'v-哥哥，还')).toBe(false);
+    expect(corpus.phrases.some((row) => row.kinds.includes('counterexample'))).toBe(false);
+    expect(corpus.phrases.find((row) => row.id === 'PH-1d7312c0a6661d54')?.pinyin).toBeNull();
+  });
+
+  it('resolves Spanish for each published word, phrase and exact dialogue turn', () => {
+    expect(corpus.vocabulary.every((row) => typeof row.spanish === 'string' && row.spanish.trim().length > 0)).toBe(true);
+    expect(corpus.phrases.every((row) => typeof row.spanish === 'string' && row.spanish.trim().length > 0)).toBe(true);
+    expect(corpus.dialogues.flatMap((row) => row.turns).every((turn) => typeof turn.spanish === 'string' && turn.spanish.trim().length > 0)).toBe(true);
+    const dialogue = corpus.dialogues.find((row) => row.id === 'DLG-L1-BOOK-T1')!;
+    expect(dialogue.turns[0].spanish).toBe('¡Hola!');
+    expect(dialogue.turns[1].spanish).toBe('¡Hola!');
+    expect(dialogue.turns[2].spanish).toBe('Me llamo Ma Dawei. Disculpa, ¿cómo te llamas?');
   });
 });
