@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "explicit_one_hop_pedagogical_examples",
+  "compositions": [
+    {
+      "id": "COMP-MAO-XIAOMAO",
+      "base_vocab_id": "v-猫",
+      "compound_vocab_id": "v-小猫",
+      "base_span": [1, 2],
+      "components": [
+        {"vocab_id": "v-小", "start": 0, "end": 1},
+        {"vocab_id": "v-猫", "start": 1, "end": 2}
+      ],
+      "relation": "compositional_diminutive",
+      "method": "model_checked_editorial_semantic_link",
+      "rationale": "小猫 conserva el sentido de gato: gato pequeño o gatito. Se permite reutilizar sus ejemplos para 猫, sin convertir cualquier palabra que contenga 猫 en un ejemplo de gato.",
+      "source_refs": ["SRC-PPT-03-1:p024"],
+      "supporting_phrase_ids": ["PH-0723abbd5ad5de02", "PH-4ede4839fc13f6d9", "PH-104242c1007e283c"]
+    }
+  ],
+  "policy": [
+    "Los vínculos léxicos originales y vocab_ids no se alteran.",
+    "Los ejemplos derivados se guardan en una tabla separada y nunca prueban introducción curricular.",
+    "No hay descubrimiento por substring, herencia transitiva, asociación por radical ni ampliación automática.",
+    "No se añade 熊猫 ni otro compuesto por compartir caracteres. Cada relación nueva requiere revisión semántica explícita.",
+    "Las frases se resuelven globalmente; no se filtran por la lección de la tarjeta. Las plantillas y los contraejemplos no son ejemplos completos."
+  ]
+}
