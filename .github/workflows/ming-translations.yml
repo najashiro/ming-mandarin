@@ -1,0 +1,33 @@
+name: Ming editorial translations
+on:
+  push:
+    branches: [feat/ming-editorial-translations-20260925]
+    paths: [.github/workflows/ming-translations.yml]
+permissions:
+  contents: read
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Inspect only registered corpus records missing Spanish
+        run: |
+          python3 MING_KNOWLEDGE/v2/query.py --validate >/dev/null
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('MING_KNOWLEDGE/v2/.cache')
+          load=lambda n: json.loads((root/(n+'.json')).read_text())
+          for table in ['vocabulary','phrases']:
+              rows=load(table)
+              missing=[r for r in rows if not any(v.get('value') for v in r.get('spanish_variants',[]))]
+              print('TOTAL',table,len(rows),'MISSING',len(missing))
+              for i,r in enumerate(missing):
+                  print('ITEM',json.dumps([table,i,r['id'],r['hanzi'],r.get('pinyin'),r.get('kinds',r.get('roles')),r.get('source_refs',[])[:2]],ensure_ascii=False,separators=(',',':')))
+          for term in ['真厉害！','这张照片真漂亮！']:
+              for r in load('phrases'):
+                  if r['hanzi']==term: print('EXAMPLE',json.dumps(r,ensure_ascii=False))
+          PY
