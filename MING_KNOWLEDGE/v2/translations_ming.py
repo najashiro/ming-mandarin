@@ -163,9 +163,10 @@ def enrich_cache(cache: Path) -> None:
 
 
 def check_public(cache: Path, public: dict) -> dict:
+    from pinyin_ming import pinyin_for_display
     words = read_json(cache / 'vocabulary.json')
     phrases = read_json(cache / 'phrases.json')
-    expected_words = {r['id']: r for r in words if any(v.get('value') for v in r.get('pinyin_variants', [])) and spanish_for_display(r) and not (r.get('traduccion_ming_meta') or {}).get('internal_only')}
+    expected_words = {r['id']: r for r in words if pinyin_for_display(r) and spanish_for_display(r) and not (r.get('traduccion_ming_meta') or {}).get('internal_only')}
     expected_phrases = {r['id']: r for r in phrases if 'counterexample' not in r.get('kinds', [])}
     for name, expected in [('vocabulary', expected_words), ('phrases', expected_phrases)]:
         actual = {r['id']: r for r in public[name]}

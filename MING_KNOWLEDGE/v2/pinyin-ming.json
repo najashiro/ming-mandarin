@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "ming-pinyin-20260925-01",
+  "prepared_date": "2026-09-25",
+  "base_commit": "e82c09e1f1790edbde6c0ef7b949ab2371175807",
+  "authorization": "El usuario pidió generar el pinyin editorial Míng faltante y los vínculos de ejemplos propuestos para 猫 / 小猫, y actualizar el corpus.",
+  "method": "model_prepared_reading_of_exact_registered_chinese",
+  "review_status": "model_checked_not_independently_human_reviewed",
+  "files": {
+    "vocabulary": ["pinyin/vocabulary.tsv"],
+    "phrases": ["pinyin/phrases-1.tsv", "pinyin/phrases-2.tsv", "pinyin/phrases-3.tsv"]
+  },
+  "expected_batch_records": {"vocabulary": 70, "phrases": 434},
+  "conventions": [
+    "Pinyin editorial con marcas tonales; se conserva el tono léxico tercero, sin reescribirlo por sandhi 3+3.",
+    "En las lecturas editoriales se representan los cambios habituales de 一 y 不: 一只 yì zhī, 一个 yí ge, 不是 bú shì. Esto es una convención didáctica del lote, no una alteración de la fuente.",
+    "Tonos neutros sin marca: māma, bàba, gēge, dìdi, jiějie, mèimei, péngyou, xǐhuan, xuésheng; r final para erhua en zhèr, nàr y miàntiáor. 女儿 se transcribe nǚ'ér, sin erhua.",
+    "Los nombres en alfabeto latino se mantienen como están; no se inventa su lectura china. Las cifras 18, 3 y el año 2026 se leen según su contexto, sin cambiar el chino.",
+    "Las variantes documentales y sus errores o diferencias tipográficas se conservan. El nuevo pinyin solo es un respaldo cuando no hay lectura registrada."
+  ],
+  "notes": {
+    "我有两只小猫，他们很可爱。": "El original escribe 他们. Se conserva; no se sustituye silenciosamente por 它们. Ambos se leen tāmen.",
+    "那是我朋友，她是外语老师，他会说汉语和西班牙语。": "Se conserva la alternancia 她 / 他 de la fuente. El pinyin no decide ni corrige el referente.",
+    "约翰（John）今年几岁？": "Se mantiene (John) como glosa latina; no es una segunda palabra china ni una instrucción para duplicar el audio.",
+    "她是你好朋友吗？": "Se transcribe el chino existente, sin insertar 的 ni reinterpretar 你好 como saludo.",
+    "我爱上汉语课！": "Lectura del ejemplo de clase: 我 / 爱 / 上汉语课; no reescribe el texto ni lo convierte en una nueva frase.",
+    "林娜家一共有五口人，妈妈、一个哥哥、两个姐姐和她，还有贝贝。": "Se conserva 五 y la enumeración tal como están registrados, sin corregir el conteo familiar."
+  },
+  "limits": [
+    "Preparado y comprobado por el modelo; no se afirma revisión humana independiente ni certificación fonética.",
+    "La ausencia de pinyin registrado no demuestra que no esté impreso en alguna fuente. Este lote añade apoyo editorial, no una nueva auditoría literal de todas las páginas.",
+    "No se transcriben como entradas válidas los nueve fragmentos mal segmentados ni los siete contraejemplos todavía sin pinyin. Permanecen contabilizados internamente.",
+    "Las tres plantillas conservan su elipsis. Tener pinyin no las convierte en oraciones completas ni en respuestas resueltas.",
+    "No se genera audio, imágenes, trazos ni contenido chino nuevo. La disponibilidad en localhost necesita integrar los cambios.",
+    "Interno describe uso editorial; el repositorio es público y estos metadatos no son secretos. La exportación del alumno omite su procedencia."
+  ]
+}

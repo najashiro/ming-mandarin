@@ -4,33 +4,123 @@ on:
     branches: [feat/ming-pinyin-examples-20260925]
     paths:
       - '.github/workflows/ming-pinyin.yml'
+      - '.github/corpus-requests/ming-pinyin-20260925.json'
       - 'MING_KNOWLEDGE/**'
+      - 'data/corpus-v21-public.json'
       - 'scripts/export-corpus-v21.py'
+      - 'lib/vocabulary-examples.ts'
+      - 'tests/unit/**'
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/ming-pinyin.yml'
+      - 'MING_KNOWLEDGE/**'
+      - 'data/corpus-v21-public.json'
+      - 'scripts/export-corpus-v21.py'
+      - 'lib/vocabulary-examples.ts'
+      - 'tests/unit/**'
 permissions:
   contents: read
+concurrency:
+  group: ming-pinyin-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
-  inventory:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validate corpus, readings, examples and reproducible projection
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          REF_NAME: ${{ github.ref }}
+        run: |
+          python3 MING_KNOWLEDGE/v2/query.py --validate
+          python3 - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          request=json.loads(Path('.github/corpus-requests/ming-pinyin-20260925.json').read_text())
+          assert request['requestId']=='ming-pinyin-examples-20260925'
+          assert request['batchId']=='ming-pinyin-20260925-01'
+          assert request['status'] in ['requested','completed']
+          initial=(os.environ['EVENT_NAME']=='push' and os.environ['REF_NAME']=='refs/heads/feat/ming-pinyin-examples-20260925' and request['status']=='requested')
+          if not initial:
+              subprocess.run(['python3','scripts/export-corpus-v21.py','--check'],check=True)
+          PY
+          python3 scripts/export-corpus-v21.py
+          python3 MING_KNOWLEDGE/v2/pinyin_ming.py --check --write-reports
+          python3 MING_KNOWLEDGE/v2/translations_ming.py --check
+          python3 MING_KNOWLEDGE/v2/audit_source_tables.py --check
+          python3 scripts/export-corpus-v21.py --check
+          python3 -m unittest discover -s MING_KNOWLEDGE/v2 -p 'test_*.py'
+          git diff --check
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.22.2
+      - run: corepack enable
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lint
+      - run: pnpm typecheck
+      - run: pnpm test
+      - run: pnpm build
+  publish-generated:
+    needs: validate
+    if: github.event_name == 'push' && github.ref == 'refs/heads/feat/ming-pinyin-examples-20260925'
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
         with:
-          persist-credentials: false
-      - name: Inspect registered records lacking pinyin
+          ref: ${{ github.sha }}
+      - name: Check the one-time request
+        id: request
         run: |
-          python3 MING_KNOWLEDGE/v2/query.py --validate >/dev/null
           python3 - <<'PY'
-          import json
+          import json, os
           from pathlib import Path
-          root=Path('MING_KNOWLEDGE/v2/.cache')
-          for table in ['vocabulary','phrases']:
-              rows=json.loads((root/(table+'.json')).read_text())
-              missing=[r for r in rows if not any(v.get('value') for v in r.get('pinyin_variants',[]))]
-              print('TOTAL',table,len(rows),'MISSING',len(missing))
-              for i,r in enumerate(missing):
-                  print('ITEM',json.dumps([table,i,r['id'],r['hanzi'],r.get('kinds',r.get('roles')),r.get('spanish_display')],ensure_ascii=False,separators=(',',':')))
-          for table in ['vocabulary','word_phrase_links','word_phrase_spans']:
-              rows=json.loads((root/(table+'.json')).read_text())
-              rows=[r for r in rows if r.get('id') in ['v-猫','v-小猫'] or r.get('vocab_id') in ['v-猫','v-小猫']]
-              print('CAT',table,json.dumps(rows,ensure_ascii=False,separators=(',',':')))
+          r=json.loads(Path('.github/corpus-requests/ming-pinyin-20260925.json').read_text())
+          assert r['requestId']=='ming-pinyin-examples-20260925'
+          assert r['batchId']=='ming-pinyin-20260925-01'
+          assert r['branch']=='feat/ming-pinyin-examples-20260925'
+          assert r['paidApiCallsAuthorized'] is False
+          expected=['data/corpus-v21-public.json','MING_KNOWLEDGE/v2/index.json','MING_KNOWLEDGE/v2/audits/pinyin-ming-20260925.json','MING_KNOWLEDGE/v2/audits/pinyin-ming-20260925.md','.github/corpus-requests/ming-pinyin-20260925.json']
+          assert r['allowedOutputs']==expected
+          assert r['status'] in ['requested','completed']
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:
+              f.write('needed='+str(r['status']=='requested').lower()+'\n')
           PY
+      - name: Regenerate only the approved output files
+        if: steps.request.outputs.needed == 'true'
+        run: |
+          python3 scripts/export-corpus-v21.py
+          python3 MING_KNOWLEDGE/v2/pinyin_ming.py --check --write-reports
+          python3 MING_KNOWLEDGE/v2/translations_ming.py --check
+          python3 MING_KNOWLEDGE/v2/audit_source_tables.py --check
+          python3 scripts/export-corpus-v21.py --check
+          python3 - <<'PY'
+          import json, os, shutil
+          from pathlib import Path
+          shutil.copyfile('MING_KNOWLEDGE/v2/.cache/index.json','MING_KNOWLEDGE/v2/index.json')
+          path=Path('.github/corpus-requests/ming-pinyin-20260925.json')
+          r=json.loads(path.read_text())
+          r['status']='completed'
+          r['completedFromCommit']=os.environ['GITHUB_SHA']
+          r['completedByWorkflowRun']=os.environ['GITHUB_RUN_ID']
+          path.write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - name: Commit generated outputs to the feature branch only
+        if: steps.request.outputs.needed == 'true'
+        run: |
+          BRANCH='feat/ming-pinyin-examples-20260925'
+          REMOTE=$(git ls-remote origin "refs/heads/$BRANCH" | cut -f1)
+          test "$REMOTE" = "$GITHUB_SHA" || { echo 'Branch changed; refusing to overwrite concurrent work.'; exit 1; }
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- data/corpus-v21-public.json MING_KNOWLEDGE/v2/index.json MING_KNOWLEDGE/v2/audits/pinyin-ming-20260925.json MING_KNOWLEDGE/v2/audits/pinyin-ming-20260925.md .github/corpus-requests/ming-pinyin-20260925.json
+          git diff --cached --check
+          git commit -m 'chore(corpus): regenerate pinyin and global example projection after validation'
+          git push origin "HEAD:refs/heads/$BRANCH"

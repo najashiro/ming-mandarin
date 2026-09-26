@@ -1,0 +1,15 @@
+{
+  "requestId": "ming-pinyin-examples-20260925",
+  "batchId": "ming-pinyin-20260925-01",
+  "status": "requested",
+  "branch": "feat/ming-pinyin-examples-20260925",
+  "baseCommit": "e82c09e1f1790edbde6c0ef7b949ab2371175807",
+  "paidApiCallsAuthorized": false,
+  "allowedOutputs": [
+    "data/corpus-v21-public.json",
+    "MING_KNOWLEDGE/v2/index.json",
+    "MING_KNOWLEDGE/v2/audits/pinyin-ming-20260925.json",
+    "MING_KNOWLEDGE/v2/audits/pinyin-ming-20260925.md",
+    ".github/corpus-requests/ming-pinyin-20260925.json"
+  ]
+}

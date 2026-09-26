@@ -118,15 +118,15 @@ describe('corpus v2.1 public projection', () => {
     expect(photo.vocabIds).toContain('v-真');
     expect(praise.lessons).toContain(2);
     expect(photo.lessons).toContain(3);
-    expect(JSON.stringify(corpus)).not.toMatch(/traduccion_ming|spanish_display|spanish_origin|model_checked_not_independently_human_reviewed/);
+    expect(JSON.stringify(corpus)).not.toMatch(/traduccion_ming|spanish_display|spanish_origin|pinyin_ming|pinyin_display|model_checked_not_independently_human_reviewed/);
   });
 
-  it('uses translations without manufacturing pinyin or valid vocabulary fragments', () => {
+  it('uses explicitly authorized pinyin while keeping invalid fragments excluded', () => {
     expect(corpus.vocabulary.find((row) => row.id === 'v-厉害')?.spanish).toBe('impresionante; muy hábil');
-    expect(corpus.vocabulary.some((row) => row.id === 'v-可以')).toBe(false);
+    expect(corpus.vocabulary.find((row) => row.id === 'v-可以')?.pinyin).toBe('kěyǐ');
     expect(corpus.vocabulary.some((row) => row.id === 'v-哥哥，还')).toBe(false);
     expect(corpus.phrases.some((row) => row.kinds.includes('counterexample'))).toBe(false);
-    expect(corpus.phrases.find((row) => row.id === 'PH-1d7312c0a6661d54')?.pinyin).toBeNull();
+    expect(corpus.phrases.find((row) => row.id === 'PH-1d7312c0a6661d54')?.pinyin).toBe('Zhè zhāng zhàopiàn zhēn piàoliang!');
   });
 
   it('resolves Spanish for each published word, phrase and exact dialogue turn', () => {
