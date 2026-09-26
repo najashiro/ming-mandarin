@@ -1,5 +1,7 @@
 # MING_KNOWLEDGE · instrucciones para agentes
 
+Diseño de Vocabulario: consulta `design/VOCABULARY_STYLE.md`, `design/vocabulary-style.json` y `design/VOCABULARY_IMPLEMENTATION_PROMPT.md` antes de cambiar fichas o generar sus fotografías. Es el estándar visual por defecto aprobado; está separado del corpus y no se debe mezclar con evidencia curricular. La imagen de referencia es orientativa; la geometría exacta está en el JSON. Guardar el estándar no equivale a aplicarlo en runtime.
+
 Base activa v2.1: empieza con `v2/index.json`, `v2/SOURCE_AUDIT.md`, `v2/RADICALS.md` y `v2/README.md`.
 Usa `v2/query.py` para palabra, frase, radical, Hanzi o fuente/página concreta.
 No releas PDF ni vuelques base64 por defecto. El lector es offline y sin API pagada.
