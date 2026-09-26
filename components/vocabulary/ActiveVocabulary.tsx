@@ -26,6 +26,7 @@ export function ActiveVocabulary({ scope, userId = 'guest', mode = 'catalog' }: 
   const [active, setActive] = useState(-1);
   const composing = useRef(false);
   const searchRef = useRef<HTMLInputElement>(null);
+  const suggestionTouch = useRef<{ id: string; x: number; y: number } | null>(null);
   const candidates = useMemo(() => getVocabularySet(scope).filter(w => !favoritesOnly || data.favorites.includes(w.id)), [scope, favoritesOnly, data.favorites]);
   const results = useMemo(() => searchVocabulary(candidates, query), [candidates, query]);
   const suggestions = searchGlobalVocabulary(query).slice(0, 6);
@@ -53,6 +54,7 @@ export function ActiveVocabulary({ scope, userId = 'guest', mode = 'catalog' }: 
     const index = getVocabularySet(destination).findIndex(word => word.id === id);
     const next = new URLSearchParams({ page: String(Math.floor(index / 24) + 1), card: id });
     resetCardFaces();
+    suggestionTouch.current = null;
     setOpen(false); setActive(-1);
     router.push(mix ? `/study/${destination}/games/vocabulary-mix?q=${encodeURIComponent(word.hanzi)}` : `/study/${destination}/vocabulary?${next}`, { scroll: false });
   }
@@ -74,13 +76,28 @@ export function ActiveVocabulary({ scope, userId = 'guest', mode = 'catalog' }: 
     <header className="vocabulary-heading"><div><p className="eyebrow">{mix ? '游戏' : '词汇'} · MÍNG</p><h1>{mix ? 'Vocabulario Mix' : 'Vocabulario'}</h1></div><small role="status">{saved ? 'Guardado en este dispositivo' : 'Almacenamiento no disponible; cambios solo en esta visita'}</small></header>
     <div className="vocabulary-toolbar">
       <div className="vocabulary-lesson-controls"><select aria-label="Lección" value={scope} onChange={e => { resetCardFaces(); const next = new URLSearchParams(params.toString()); for (const key of ['page', 'card', 'q', 'source', 'selection', 'level', 'mode']) next.delete(key); router.push(`/study/${e.target.value}/${section}?${next}`); }}>{lessonScopes.map((s, i) => <option key={s} value={s}>{s === 'l1-l2-l3' ? 'Acumulado' : `Lección ${i + 1}`}</option>)}</select><button type="button" aria-label="Solo favoritos" title="Solo favoritos de esta lección" aria-pressed={favoritesOnly} onClick={() => change({ favorites: favoritesOnly ? '' : '1', card: '' })}>{favoritesOnly ? '★' : '☆'}</button></div>
-      <div className="vocabulary-search"><label htmlFor="vocabulary-search">Buscar</label><div className="vocabulary-search-line"><input id="vocabulary-search" ref={searchRef} className={hanziInputClass(query)} value={query} role="combobox" aria-autocomplete="list" aria-controls="vocabulary-suggestions" aria-expanded={open} aria-activedescendant={open && active >= 0 && suggestions[active] ? `suggestion-${active}` : undefined} autoComplete="off" placeholder="Hanzi, pinyin o español" onFocus={() => { resetCardFaces(); setOpen(Boolean(query)); }} onBlur={() => setOpen(false)} onCompositionStart={() => { composing.current = true; }} onCompositionEnd={() => { composing.current = false; }} onChange={e => { change({ q: e.target.value, card: '' }); setOpen(Boolean(e.target.value)); setActive(-1); }} onKeyDown={e => {
+      <div className="vocabulary-search"><label htmlFor="vocabulary-search">Buscar</label><div className="vocabulary-search-line"><input id="vocabulary-search" ref={searchRef} className={hanziInputClass(query)} value={query} role="combobox" aria-autocomplete="list" aria-controls="vocabulary-suggestions" aria-expanded={open} aria-activedescendant={open && active >= 0 && suggestions[active] ? `suggestion-${active}` : undefined} autoComplete="off" placeholder="Hanzi, pinyin o español" onFocus={() => { resetCardFaces(); setOpen(Boolean(query)); }} onBlur={() => { if (!suggestionTouch.current) setOpen(false); }} onCompositionStart={() => { composing.current = true; }} onCompositionEnd={() => { composing.current = false; }} onChange={e => { change({ q: e.target.value, card: '' }); setOpen(Boolean(e.target.value)); setActive(-1); }} onKeyDown={e => {
         if (e.nativeEvent.isComposing || composing.current || e.keyCode === 229) return;
         if (e.key === 'Escape') { setOpen(false); setActive(-1); }
         if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); setOpen(true); setActive(i => suggestions.length ? (i + (e.key === 'ArrowDown' ? 1 : -1) + suggestions.length) % suggestions.length : -1); }
         if (e.key === 'Enter' && open && suggestions.length) { e.preventDefault(); navigateToVocabularyWord(suggestions[Math.max(0, active)].id); }
       }}/>{query && <button type="button" aria-label="Limpiar búsqueda" onClick={() => { change({ q: '', card: '' }); setOpen(false); searchRef.current?.focus(); }}>×</button>}</div>
-        {open && <ul id="vocabulary-suggestions" role="listbox" aria-label="Sugerencias">{suggestions.length ? suggestions.map((w, i) => <li key={w.id} id={`suggestion-${i}`} role="option" aria-selected={i === active} onPointerDown={e => e.preventDefault()} onClick={() => navigateToVocabularyWord(w.id)}><strong>{w.hanzi}</strong> <PinyinText>{w.pinyin}</PinyinText><span>{w.spanish} <small className="vocabulary-lesson-badge">L{getVocabularyLesson(w)}</small></span></li>) : <li role="presentation">Sin resultados en el vocabulario.</li>}</ul>}
+        {open && <ul id="vocabulary-suggestions" role="listbox" aria-label="Sugerencias">{suggestions.length ? suggestions.map((w, i) => <li key={w.id} id={`suggestion-${i}`} role="option" aria-selected={i === active}
+          onPointerDown={e => {
+            if (e.pointerType === 'mouse') e.preventDefault();
+            else suggestionTouch.current = { id: w.id, x: e.clientX, y: e.clientY };
+          }}
+          onPointerUp={e => {
+            const touch = suggestionTouch.current;
+            suggestionTouch.current = null;
+            if (touch?.id === w.id && Math.hypot(e.clientX - touch.x, e.clientY - touch.y) < 12) {
+              e.preventDefault();
+              searchRef.current?.blur();
+              navigateToVocabularyWord(w.id);
+            } else if (document.activeElement !== searchRef.current) setOpen(false);
+          }}
+          onPointerCancel={() => { suggestionTouch.current = null; if (document.activeElement !== searchRef.current) setOpen(false); }}
+          onClick={() => navigateToVocabularyWord(w.id)}><strong>{w.hanzi}</strong> <PinyinText>{w.pinyin}</PinyinText><span>{w.spanish} <small className="vocabulary-lesson-badge">L{getVocabularyLesson(w)}</small></span></li>) : <li role="presentation">Sin resultados en el vocabulario.</li>}</ul>}
       </div>
     </div>
     <p className="vocabulary-count" aria-live="polite">{results.length} {results.length === 1 ? 'palabra' : 'palabras'}</p>

@@ -29,7 +29,12 @@
 
 /* Entire outer surface is golden. Long content or enlarged type may grow it. */
 .vocabulary-card, .vocabulary-mix-surface { position:relative; isolation:isolate; display:flex; flex-direction:column; width:100%; max-width:var(--vocab-max-width); min-width:0; aspect-ratio:var(--vocab-ratio); padding:var(--vocab-padding); border:0; border-radius:var(--vocab-radius); background:var(--vocab-surface); box-shadow:var(--vocab-shadow),0 0 0 1px #ded9cd80; color:var(--vocab-ink); overflow-wrap:anywhere; scroll-margin-top:6rem; }
-.vocabulary-card { transition:background-color .18s ease; }
+.vocabulary-card { display:grid; grid-template-columns:minmax(0,1fr); padding:0; aspect-ratio:auto; transition:background-color .18s ease; }
+/* A spacer sets the minimum golden height; the content can grow the same row.
+   Avoid flex/aspect-ratio intrinsic sizing that can overflow long backs in Safari. */
+.vocabulary-card::before { content:""; grid-area:1 / 1; width:100%; aspect-ratio:var(--vocab-ratio); pointer-events:none; }
+.vocabulary-card-body { grid-area:1 / 1; min-width:0; display:flex; flex-direction:column; padding:var(--vocab-padding); }
+.vocabulary-card-body > * { flex-shrink:0; }
 .vocabulary-card.is-search-target { outline:3px solid var(--vocab-focus); outline-offset:3px; }
 .vocabulary-card-tools { position:relative; z-index:3; display:flex; justify-content:space-between; gap:.5rem; min-height:var(--vocab-touch); margin-bottom:.5rem; pointer-events:none; }
 .active-vocabulary .vocabulary-card-tools button { display:grid; place-items:center; flex:none; width:var(--vocab-touch); height:var(--vocab-touch); padding:10px; border:0; border-radius:50%; color:var(--vocab-ink); background:transparent; box-shadow:none; pointer-events:auto; }
@@ -62,12 +67,12 @@
 .vocabulary-card-back { margin-top:0; }
 .vocabulary-card-tools .vocabulary-reverse-label { flex:1; min-width:0; align-self:center; pointer-events:auto; }
 .vocabulary-card.is-reversed .vocabulary-word, .vocabulary-card.is-reversed .vocabulary-word .linked-hanzi { color:var(--vocab-reverse-word); font-weight:400; font-size:var(--vocab-reverse-word-size); border-bottom-color:transparent; }
-.vocabulary-example { padding-top:.2rem; }
+.vocabulary-example { padding-top:0; }
 .vocabulary-example-text { font-size:var(--vocab-sentence-size); line-height:1.5; margin:0; }
 .vocabulary-example-target { color:var(--vocab-target); background:transparent; font-weight:var(--vocab-target-weight); }
 .vocabulary-example-target .linked-hanzi { color:inherit; font-weight:inherit; border-bottom-color:#b3442455; }
-.active-vocabulary .vocabulary-next-example { margin-top:.4rem; min-height:var(--vocab-touch); padding:.25rem .65rem; font-size:.78rem; border-radius:999px; background:transparent; border-color:transparent; color:#415d46; }
-.active-vocabulary .vocabulary-next-example:hover { background:transparent; border-color:transparent; text-decoration:underline; }
+.active-vocabulary .vocabulary-next-example { margin-top:.4rem; min-height:var(--vocab-touch); padding:.25rem .65rem; font-size:.78rem; border-radius:999px; background:#f5f8f2; border-color:#c4d1c0; color:#415d46; }
+.active-vocabulary .vocabulary-next-example:hover { background:#d9e5d4; border-color:#91aa89; }
 .vocabulary-pagination { display:flex; justify-content:center; align-items:center; gap:1rem; margin-top:1.2rem; }
 
 .vocabulary-mix { max-width:42rem; margin:auto; }
@@ -91,7 +96,7 @@
   .vocabulary-heading { align-items:start; }
   .vocabulary-heading small { max-width:9rem; font-size:.7rem; }
   .vocabulary-grid { gap:var(--vocab-mobile-gap); }
-  .vocabulary-card, .vocabulary-mix-surface { padding:var(--vocab-mobile-padding); }
+  .vocabulary-card-body, .vocabulary-mix-surface { padding:var(--vocab-mobile-padding); }
   .vocabulary-word, .vocabulary-mix-hanzi { font-size:var(--vocab-word-mobile-size); }
   .vocabulary-example-text { font-size:var(--vocab-sentence-mobile-size); }
 }

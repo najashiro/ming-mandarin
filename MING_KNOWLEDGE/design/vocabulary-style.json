@@ -102,7 +102,9 @@
     "favorite_position": "top_left",
     "flip_position": "top_right",
     "corner_control_surface": "transparent",
-    "keyboard_and_visible_focus": true
+    "keyboard_and_visible_focus": true,
+    "next_example_surface": "#f5f8f2",
+    "next_example_border": "#c4d1c0"
   },
   "photography": {
     "style": "warm_photorealistic_contemporary_Chinese_interior",

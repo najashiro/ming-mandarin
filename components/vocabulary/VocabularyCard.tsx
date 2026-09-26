@@ -41,6 +41,7 @@ export function VocabularyCard({ word, scope, route, back, favorite, hideTransla
     {photo && (hasExamples
       ? <button className="vocabulary-image-flip" type="button" aria-label={`Consultar ejemplo: ${word.hanzi}`} onClick={onFlip}>{photo}</button>
       : photo)}
+    <div className="vocabulary-card-body">
     <div className="vocabulary-card-tools">
       <button type="button" className="vocabulary-favorite" aria-label={`Favorito: ${word.hanzi}`} aria-pressed={favorite} onClick={onFavorite}>
         <svg aria-hidden="true" viewBox="0 0 24 24" fill={favorite ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round"><path d="m12 3 2.8 5.7 6.3.9-4.5 4.4 1.1 6.2L12 17.3l-5.7 2.9 1.1-6.2L2.9 9.6l6.3-.9Z"/></svg>
@@ -57,5 +58,6 @@ export function VocabularyCard({ word, scope, route, back, favorite, hideTransla
       <p className="word-pinyin"><PinyinText>{word.pinyin}</PinyinText></p>
       <p className="vocabulary-translation">{hideTranslation ? 'Traducción oculta' : word.spanish}</p>
     </div>}
+    </div>
   </article>;
 }

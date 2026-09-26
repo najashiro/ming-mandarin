@@ -170,4 +170,11 @@ es únicamente referencia visual.
 
 ## Ajuste aprobado: 25 de septiembre de 2026
 
+Corrección móvil posterior: «Otro ejemplo» conserva su fondo claro `#f5f8f2`
+y borde salvia `#c4d1c0`; es la excepción a los controles transparentes.
+La proporción áurea establece una altura mínima, y el contenido del reverso
+puede ampliar la ficha completa para mantener visible el botón. Seleccionar
+una sugerencia global con un toque cambia a la lección de la palabra y elimina
+los filtros que impedirían mostrarla.
+
 Hanzi principal +20 % (43.2 px; 38.4 px móvil), traducción −10 % adicional (11.52 px), pinyin sin cambios (16 px). Botones de la ficha transparentes, sin fondo ni sombra, con área táctil de 44 px y foco visible. Eliminar el panel blanco localizado detrás del texto; conservar únicamente la transición global suave de la fotografía a la izquierda. Estas indicaciones sustituyen los fondos de controles descritos en la versión inicial.

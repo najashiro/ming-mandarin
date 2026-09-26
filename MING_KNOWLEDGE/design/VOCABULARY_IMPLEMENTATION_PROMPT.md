@@ -167,4 +167,10 @@ marcar un recurso como listo; una generación exitosa no garantiza su ajuste.
 
 ## Ajuste aprobado: 25 de septiembre de 2026
 
+En móvil, seleccionar una sugerencia global debe completar la navegación aunque
+el teclado retire el foco durante el toque; actualizar el selector de lección.
+El reverso debe crecer con todas las líneas y conservar «Otro ejemplo» dentro
+de la superficie. Este botón mantiene fondo claro y borde salvia; los iconos
+de favorito, giro y audio permanecen transparentes.
+
 Hanzi principal +20 % (43.2 px; 38.4 px móvil), traducción −10 % adicional (11.52 px), pinyin sin cambios (16 px). Botones de la ficha transparentes, sin fondo ni sombra, con área táctil de 44 px y foco visible. Eliminar el panel blanco localizado detrás del texto; conservar únicamente la transición global suave de la fotografía a la izquierda. Estas indicaciones sustituyen los fondos de controles descritos en la versión inicial.
