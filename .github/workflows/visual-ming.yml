@@ -1,0 +1,142 @@
+name: Ming visual classification
+on:
+  push:
+    branches: [feat/visual-ming-classification-20260925]
+  pull_request:
+    paths:
+      - MING_KNOWLEDGE/**
+      - data/corpus-v21-public.json
+      - scripts/export-corpus-v21.py
+      - tests/unit/visual-ming.test.ts
+      - .github/workflows/visual-ming.yml
+      - .github/corpus-requests/visual-ming-20260925.json
+permissions:
+  contents: read
+concurrency:
+  group: visual-ming-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      publish: ${{ steps.request.outputs.publish }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Check the bounded generation request
+        id: request
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          REF_NAME: ${{ github.ref }}
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          path=Path('.github/corpus-requests/visual-ming-20260925.json')
+          request=json.loads(path.read_text())
+          assert request['requestId']=='visual-ming-20260925'
+          assert request['batchId']=='visual-ming-20260925-01'
+          assert request['branch']=='feat/visual-ming-classification-20260925'
+          assert request['status'] in ('requested','completed')
+          initial=(os.environ['EVENT_NAME']=='push' and os.environ['REF_NAME']=='refs/heads/feat/visual-ming-classification-20260925' and request['status']=='requested')
+          with open(os.environ['GITHUB_OUTPUT'],'a') as output:
+              output.write('publish='+str(initial).lower()+'\n')
+          if not initial:
+              subprocess.run(['python3','scripts/export-corpus-v21.py','--check'],check=True)
+              subprocess.run(['python3','MING_KNOWLEDGE/v2/visual_ming.py','--check','--check-reports'],check=True)
+          Path('/tmp/ming-before-visual.json').write_bytes(Path('data/corpus-v21-public.json').read_bytes())
+          PY
+      - name: Validate classification, source preservation and reproducible output
+        run: |
+          python3 MING_KNOWLEDGE/v2/query.py --validate > /tmp/ming-visual-validation.json
+          python3 scripts/export-corpus-v21.py
+          python3 MING_KNOWLEDGE/v2/visual_ming.py --check --write-reports
+          python3 MING_KNOWLEDGE/v2/pinyin_ming.py --check > /tmp/ming-pinyin-check.json
+          python3 MING_KNOWLEDGE/v2/translations_ming.py --check > /tmp/ming-translations-check.json
+          python3 MING_KNOWLEDGE/v2/audit_source_tables.py --check > /tmp/ming-source-check.json
+          python3 scripts/export-corpus-v21.py --check
+          python3 MING_KNOWLEDGE/v2/visual_ming.py --check --check-reports > /tmp/ming-visual-check.json
+          python3 -m unittest discover -s MING_KNOWLEDGE/v2 -p 'test_*.py'
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          before=json.loads(Path('/tmp/ming-before-visual.json').read_text())
+          after=json.loads(Path('data/corpus-v21-public.json').read_text())
+          for value in (before,after):
+              value.pop('fingerprint',None)
+              for row in value['vocabulary']: row.pop('visual_ming',None)
+          assert before==after, 'Visual classification unexpectedly changed pre-existing published content'
+          print('PASS: all pre-existing public fields, IDs, examples and eligibility are unchanged.')
+          PY
+          git diff --check
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.22.2
+      - run: corepack enable
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lint
+      - run: pnpm typecheck
+      - run: pnpm test
+      - run: pnpm build
+
+  publish-generated:
+    needs: validate
+    if: github.event_name == 'push' && github.ref == 'refs/heads/feat/visual-ming-classification-20260925' && needs.validate.outputs.publish == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - name: Verify one-time output allowlist
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          request=json.loads(Path('.github/corpus-requests/visual-ming-20260925.json').read_text())
+          assert request['requestId']=='visual-ming-20260925' and request['batchId']=='visual-ming-20260925-01'
+          assert request['status']=='requested' and request['branch']=='feat/visual-ming-classification-20260925'
+          assert set(request['allowedFiles'])=={
+              'data/corpus-v21-public.json','MING_KNOWLEDGE/v2/index.json',
+              'MING_KNOWLEDGE/v2/audits/visual-ming-20260925.json',
+              'MING_KNOWLEDGE/v2/audits/visual-ming-20260925.md',
+              '.github/corpus-requests/visual-ming-20260925.json'}
+          PY
+      - name: Regenerate only the validated output files
+        run: |
+          python3 scripts/export-corpus-v21.py
+          python3 MING_KNOWLEDGE/v2/visual_ming.py --check --write-reports
+          python3 scripts/export-corpus-v21.py --check
+          python3 - <<'PY'
+          import json, os, shutil
+          from pathlib import Path
+          shutil.copyfile('MING_KNOWLEDGE/v2/.cache/index.json','MING_KNOWLEDGE/v2/index.json')
+          path=Path('.github/corpus-requests/visual-ming-20260925.json')
+          request=json.loads(path.read_text())
+          request.update(status='completed',validatedInputCommit=os.environ['GITHUB_SHA'])
+          path.write_text(json.dumps(request,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - name: Commit generated outputs to the feature branch only
+        run: |
+          set -euo pipefail
+          expected="$GITHUB_SHA"
+          current="$(git ls-remote origin refs/heads/feat/visual-ming-classification-20260925 | cut -f1)"
+          test "$current" = "$expected" || { echo 'Branch moved; refusing to overwrite concurrent work.'; exit 1; }
+          python3 - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+          request=json.loads(Path('.github/corpus-requests/visual-ming-20260925.json').read_text())
+          changed=set(subprocess.check_output(['git','diff','--name-only'],text=True).splitlines())
+          changed.update(subprocess.check_output(['git','ls-files','--others','--exclude-standard'],text=True).splitlines())
+          assert changed <= set(request['allowedFiles']), 'Unexpected output paths: '+str(changed-set(request['allowedFiles']))
+          subprocess.run(['git','add','--',*request['allowedFiles']],check=True)
+          PY
+          git diff --cached --check
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore(corpus): publish validated visual classification and report'
+          git push origin HEAD:refs/heads/feat/visual-ming-classification-20260925

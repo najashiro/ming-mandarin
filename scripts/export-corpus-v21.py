@@ -3,6 +3,7 @@
 
 Documentary readings/translations have priority over authorized Ming fallbacks.
 Editorial provenance stays internal; example IDs include reviewed compositions.
+Visual classification exports only machine-readable decisions, not their notes.
 """
 from __future__ import annotations
 import argparse
@@ -21,6 +22,7 @@ from source_audit import augment_public
 from translations_ming import spanish_for_display
 from pinyin_ming import pinyin_for_display, internal_only
 from lexical_examples import augment_public as augment_examples
+from visual_ming import augment_public as augment_visual
 
 
 def first_value(rows: list[dict], key: str = 'value') -> str | None:
@@ -92,6 +94,7 @@ def build() -> dict:
                    'dialogues': public_dialogues, 'radicals': public_radicals}
         payload = augment_public(payload, source)
         payload = augment_examples(payload, source)
+        payload = augment_visual(payload, source)
         canonical = json.dumps(payload, ensure_ascii=False, separators=(',', ':')).encode('utf-8')
         payload['fingerprint'] = hashlib.sha256(canonical).hexdigest()
         return payload
