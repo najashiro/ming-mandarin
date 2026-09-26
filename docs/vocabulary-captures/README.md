@@ -19,3 +19,5 @@ Muestras:
 Las comprobaciones de texto al 200 % y movimiento reducido se ejecutan en la misma prueba; las capturas muestran el tamaño de texto predeterminado.
 
 Catálogo sin búsqueda, mostrando varias fichas: [móvil](chromium-390-catalog-overview.png) · [escritorio](chromium-1280-catalog-overview.png).
+
+Integración del corpus auditado: `*-390-audited-mix.png` muestra una sesión anterior recuperada, con respuesta y acciones visibles a 390 × 844. Las capturas se regeneraron tras la integración.

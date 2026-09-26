@@ -1,3 +1,4 @@
+import manifest from '@/public/hanzi-data/manifest.json';
 import { supplementalHanziByGlyph } from '@/data/supplemental-hanzi';
 import { canonicalCharacters } from '@/seed/characters';
 
@@ -7,7 +8,8 @@ export type HanziGlyphResolution={kind:'curricular'|'supplementary';character:st
 
 export function resolveHanziGlyph(character:string):HanziGlyphResolution {
   const valid=singleHanzi.test(character);
-  if(!valid)return {kind:'unavailable',character,href:`/study/l1-l2-l3/hanzi?character=${encodeURIComponent(character)}&focus=glyph`};
+  const asset = (manifest as Record<string, { available: boolean }>)[character];
+  if(!valid || !asset?.available)return {kind:'unavailable',character,href:`/study/l1-l2-l3/hanzi?character=${encodeURIComponent(character)}&focus=glyph`};
   const scope=curricularScopes.get(character);
   if(scope)return {kind:'curricular',character,href:`/study/${scope}/hanzi?character=${encodeURIComponent(character)}&focus=glyph`};
   if(supplementalHanziByGlyph.has(character))return {kind:'supplementary',character,href:`/study/l1-l2-l3/hanzi?character=${encodeURIComponent(character)}&focus=glyph&content=supplementary`};

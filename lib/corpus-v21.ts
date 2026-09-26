@@ -12,7 +12,7 @@ export type PublicRadical = (typeof corpus.radicals)[number];
 export function publicCorpusForScope(scope: CurriculumScope) {
   const lessons = new Set<number>(scopeDefinitions[scope].lessonIds);
   return {
-    vocabulary: corpus.vocabulary.filter((row) => row.lessons.some((lesson) => lessons.has(lesson))),
+    vocabulary: corpus.vocabulary.filter((row) => row.curriculumLinks.some((link) => lessons.has(link.lesson))),
     phrases: corpus.phrases.filter((row) => row.lessons.some((lesson) => lessons.has(lesson))),
     dialogues: corpus.dialogues.filter((row) => lessons.has(row.lesson)),
     radicals: corpus.radicals.filter((row) => row.lessons.some((lesson) => lessons.has(lesson))).map((row) => ({

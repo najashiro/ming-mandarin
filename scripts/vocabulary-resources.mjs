@@ -1,3 +1,4 @@
+import { loadVocabulary } from './load-vocabulary.mjs';
 import { readFile, writeFile, stat, readdir, mkdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { existsSync } from 'node:fs';
@@ -14,6 +15,7 @@ const reading = text => text.normalize('NFC').toLowerCase().replace(/[\s'’ʼ.,
 const key = (text, pinyin) => `${normalize(text)}:${reading(pinyin ?? '')}`;
 const config = { provider: 'OpenAI', model: 'gpt-4o-mini-tts', voice: 'marin', format: 'mp3', instructions: 'Habla exclusivamente en mandarín estándar de China continental. Voz clara de docente de fonética para principiantes. Pronuncia exactamente el texto chino de entrada, sin traducir, deletrear, explicar ni añadir palabras. Ritmo lento y natural, con dicción limpia y sin música. Pronuncia exactamente la entrada una sola vez, con ritmo natural.' };
 const allClips = [...manifest.clips.map(c => ({ ...c, directory: 'mandarin', registered: available.has(c.file) })), ...pinyin.clips.map(c => ({ ...c, directory: 'pinyin', registered: true }))];
+const { examplesForScope } = await loadVocabulary();
 const resources = new Map();
 function addResource(resource) {
   const id = key(resource.input, resource.expectedPinyin);
@@ -25,7 +27,7 @@ function addResource(resource) {
 }
 for (const word of corpus.vocabulary) {
   addResource({ entryId: word.id, input: word.hanzi, expectedPinyin: word.pinyin, kind: 'word' });
-  for (const example of word.examples) if (example.pinyin) addResource({ entryId: example.phraseId, input: example.hanzi, expectedPinyin: example.pinyin, kind: 'sentence' });
+  for (const example of examplesForScope(word, 'l1-l2-l3')) if (example.pinyin) addResource({ entryId: example.phraseId, input: example.hanzi, expectedPinyin: example.pinyin, kind: 'sentence' });
 }
 const rows = [];
 for (const resource of resources.values()) {

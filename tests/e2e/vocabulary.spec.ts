@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 const root = '/study/l3/vocabulary';
 async function ready(page: import('@playwright/test').Page, url = root) { await page.goto(url); await expect(page.locator('.active-vocabulary')).toHaveAttribute('data-ready', 'true'); }
-test('search variants, filters, IME, favorites and reverse survive reload', async ({ page }) => {
+test('search variants, filters, IME and favorites survive reload', async ({ page }) => {
   await ready(page);
   const search = page.getByRole('combobox', { name: 'Buscar' });
   for (const query of ['宠物', 'chǒngwù', 'chongwu', 'chong wu', 'chong3wu4', 'mascota']) {
@@ -18,13 +18,11 @@ test('search variants, filters, IME, favorites and reverse survive reload', asyn
   await expect(card).toBeFocused();
   await card.getByRole('button', { name: 'Favorito: 宠物' }).click();
   await expect(card.getByRole('button', { name: 'Ver palabra: 宠物' })).toHaveCount(0);
-  await card.getByRole('button', { name: 'Ver ejemplo: 宠物', exact: true }).click();
-  await expect(card.getByText('你们家有宠物吗？')).toBeVisible();
+  await expect(card.getByRole('button', { name: 'Ver ejemplo: 宠物', exact: true })).toHaveCount(0);
   await page.reload();
   await expect(card.getByRole('button', { name: 'Favorito: 宠物' })).toHaveAttribute('aria-pressed', 'true');
-  await expect(card.getByText('你们家有宠物吗？')).toBeVisible();
-  await expect(card).toHaveClass(/is-reversed/);
-  await expect(page.getByRole('combobox', { name: 'Lección', exact: true }).locator('option')).toHaveText(['Lección 1', 'Lección 2', 'Lección 3']);
+
+  await expect(page.getByRole('combobox', { name: 'Lección', exact: true }).locator('option')).toHaveText(['Lección 1', 'Lección 2', 'Lección 3', 'Acumulado']);
   await page.getByRole('button', { name: 'Solo favoritos', exact: true }).click();
   await expect(card).toBeVisible();
   await page.getByRole('combobox', { name: 'Lección', exact: true }).selectOption('l1');
@@ -99,4 +97,144 @@ test('compact controls ignore obsolete filters and keep audio beside Chinese', a
   await expect(card.locator('.vocabulary-example-text .audio-button')).toHaveCount(1);
   await page.getByRole('button', { name: 'Solo favoritos', exact: true }).click();
   await expect(page).not.toHaveURL(/source=|selection=|level=/);
+});
+
+test('audited words and essential/extended Mix stay curricular', async ({ page }) => {
+  for (const [scope, hanzi, pinyin] of [['l1', '马马虎虎', 'mǎmǎhūhū'], ['l2', '中国', 'Zhōngguó'], ['l1', '太', 'tài'], ['l3', '宠物', 'chǒngwù'], ['l3', '约翰', 'Yuēhàn']]) {
+    await ready(page, `/study/${scope}/vocabulary?q=${encodeURIComponent(hanzi)}`);
+    const card = page.getByRole('article', { name: `Ficha de ${hanzi}`, exact: true });
+    await expect(card.getByText(pinyin, { exact: true })).toBeVisible();
+    const flip = card.locator('.vocabulary-card-tools').getByRole('button', { name: /Ver ejemplo/ });
+    if (await flip.count()) await flip.click();
+    await expect(card).not.toContainText(/pendiente|SRC-|PDF|revisión|fuente/i);
+  }
+  await ready(page, '/study/l1/vocabulary?q=马马虎虎&mode=mix');
+  await page.getByRole('combobox', { name: 'Nivel', exact: true }).selectOption('basic');
+  await expect(page.getByRole('button', { name: 'Empezar', exact: true })).toBeDisabled();
+  await page.getByRole('combobox', { name: 'Nivel', exact: true }).selectOption('hard');
+  await expect(page.getByRole('button', { name: 'Empezar', exact: true })).toBeEnabled();
+});
+
+test('legacy session survives corpus sync and revealed Mix fits 390 × 844', async ({ page }, info) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.addInitScript(() => {
+    localStorage.setItem('ming-vocabulary-v1:guest', JSON.stringify({ version: 1, favorites: ['v-约翰'], faces: {}, progress: { 'v-约翰:hanzi': { due: 100, streak: 2, attempts: 3, lastEvent: 'old:0' } }, sessions: { l3: { id: 'before-corpus-sync', scope: 'l3', level: 'hard', queue: [{ wordId: 'v-约翰', type: 'hanzi' }], index: 0, revealed: true, paused: false, events: [] } } }));
+  });
+  await ready(page, '/study/l3/vocabulary?mode=mix');
+  const mix = page.getByRole('region', { name: 'Vocabulario Mix', exact: true });
+  await expect(mix.getByText('Yuēhàn', { exact: true })).toBeVisible();
+  await expect(mix.getByText('John', { exact: true })).toBeVisible();
+  await expect(mix).not.toContainText(/pendiente|SRC-|PDF|revisión|Compara también/i);
+  const action = mix.getByRole('button', { name: 'Lo sé', exact: true });
+  const bounds = await action.boundingBox();
+  expect(bounds!.y + bounds!.height).toBeLessThan(774);
+  expect(await page.evaluate(() => scrollY)).toBe(0);
+  await page.screenshot({ path: `docs/vocabulary-captures/${info.project.name}-390-audited-mix.png`, fullPage: true });
+  await mix.getByText('Ejemplo', { exact: true }).click();
+  await expect(mix.locator('.vocabulary-example .pinyin-text')).toBeVisible();
+  await expect(mix).not.toContainText(/pendiente|SRC-|PDF|revisión/i);
+  await action.click();
+  const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('ming-vocabulary-v1:guest')!));
+  expect(saved.progress['v-约翰:hanzi'].attempts).toBe(4);
+  expect(saved.favorites).toEqual(['v-约翰']);
+});
+
+for (const [from, query, hanzi, target] of [['l1', '中国', '中国', 'l2'], ['l1', 'mascota', '宠物', 'l3'], ['l3', '你', '你', 'l1'], ['l2', 'mamahuhu', '马马虎虎', 'l1'], ['l1-l2-l3', 'mamahuhu', '马马虎虎', 'l1']]) test(`global search ${from}: ${query} navigates to ${target}`, async ({ page }) => {
+  await ready(page, `/study/${from}/vocabulary`);
+  const search = page.getByRole('combobox', { name: 'Buscar', exact: true });
+  await search.fill(query);
+  const option = page.getByRole('option').filter({ has: page.locator('strong', { hasText: new RegExp(`^${hanzi}$`) }) });
+  await expect(option).toContainText(target.toUpperCase());
+  await option.click();
+  await expect(page.getByRole('combobox', { name: 'Lección', exact: true })).toHaveValue(target);
+  await expect(search).toHaveValue('');
+  await expect(page.getByRole('listbox')).toHaveCount(0);
+  const card = page.getByRole('article', { name: `Ficha de ${hanzi}`, exact: true });
+  await expect(card).toBeFocused();
+  await expect(card).toHaveClass(/is-search-target/);
+  await expect(card).toBeInViewport();
+  expect(await page.locator('.vocabulary-card').count()).toBeGreaterThan(1);
+  await expect(page).toHaveURL(new RegExp(`/study/${target}/vocabulary\\?page=.+&card=`));
+  await page.reload();
+  await expect(page.getByRole('combobox', { name: 'Lección', exact: true })).toHaveValue(target);
+});
+
+test('global examples keep canonical lesson, favorites, progress and card position', async ({ page }) => {
+  await ready(page, '/study/l2/vocabulary?q=zhen');
+  const card = page.getByRole('article', { name: 'Ficha de 真', exact: true });
+  await card.getByRole('button', { name: 'Favorito: 真' }).click();
+  await card.getByRole('button', { name: 'Ver ejemplo: 真', exact: true }).click();
+  await expect(card.locator('.vocabulary-example-text')).toHaveText('真厉害！');
+  const initial = await page.evaluate(() => JSON.parse(localStorage.getItem('ming-vocabulary-v1:guest')!));
+  const before = await card.boundingBox();
+  let foundPhoto = false;
+  for (let i = 0; i < 15; i++) {
+    await card.getByRole('button', { name: 'Otro ejemplo', exact: true }).click();
+    if ((await card.locator('.vocabulary-example-text').innerText()).trim() === '这张照片真漂亮！') { foundPhoto = true; break; }
+  }
+  expect(foundPhoto).toBe(true);
+  await expect(page.getByRole('combobox', { name: 'Lección', exact: true })).toHaveValue('l2');
+  await expect(card.getByRole('button', { name: 'Favorito: 真' })).toHaveAttribute('aria-pressed', 'true');
+  const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('ming-vocabulary-v1:guest')!));
+  expect(saved.progress).toEqual(initial.progress);
+  expect(saved.favorites).toEqual(initial.favorites);
+  expect((await card.boundingBox())!.y).toBeCloseTo(before!.y, 0);
+  await expect(card).not.toContainText(/pendiente|SRC-|PDF/);
+});
+
+test('Mix removes pending cards from earlier lessons and accumulated keeps all', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('ming-vocabulary-v1:guest', JSON.stringify({ version: 1, favorites: [], faces: {}, progress: { 'v-你:hanzi': { due: 1, streak: 1, attempts: 2, lastEvent: 'history:0' } }, sessions: { l2: { id: 'old-partition', scope: 'l2', level: 'hard', queue: [{ wordId: 'v-你', type: 'hanzi' }, { wordId: 'v-中国', type: 'hanzi' }], index: 0, revealed: true, paused: false, events: [] } } })));
+  await ready(page, '/study/l2/vocabulary?mode=mix');
+  await expect(page.getByRole('button', { name: 'Ver respuesta', exact: true })).toBeVisible();
+  await page.getByRole('button', { name: 'Ver respuesta', exact: true }).click();
+  await expect(page.locator('.vocabulary-mix-hanzi')).toHaveText('中国');
+  const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('ming-vocabulary-v1:guest')!));
+  expect(saved.sessions.l2.queue.map((card: { wordId: string }) => card.wordId)).toEqual(['v-中国']);
+  expect(saved.progress['v-你:hanzi'].attempts).toBe(2);
+  await page.getByRole('combobox', { name: 'Lección', exact: true }).selectOption('l1-l2-l3');
+  await expect(page.getByRole('button', { name: 'Empezar', exact: true })).toBeVisible();
+  await page.getByRole('button', { name: 'Explorar', exact: true }).click();
+  await expect(page.getByRole('article', { name: 'Ficha de 你', exact: true })).toBeVisible();
+});
+
+test('filters and search reset faces; reverse emphasizes the target in context', async ({ page }, info) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await ready(page, '/study/l1/vocabulary?q=你');
+  const card = page.getByRole('article', { name: 'Ficha de 你', exact: true });
+  const search = page.getByRole('combobox', { name: 'Buscar', exact: true });
+  await card.getByRole('button', { name: 'Favorito: 你', exact: true }).click();
+  await card.locator('.vocabulary-card-tools').getByRole('button', { name: 'Ver ejemplo: 你', exact: true }).click();
+  await expect(card.locator('.vocabulary-example-target').first()).toHaveText('你');
+  await expect(card.locator('.vocabulary-word-row .audio-button')).toHaveCount(0);
+  await expect(card.locator('.vocabulary-example-text .audio-button')).toHaveCount(1);
+  const styles = await card.evaluate(el => ({
+    titleWeight: getComputedStyle(el.querySelector('.vocabulary-word')!).fontWeight,
+    targetWeight: getComputedStyle(el.querySelector('.vocabulary-example-target')!).fontWeight,
+    targetColor: getComputedStyle(el.querySelector('.vocabulary-example-target')!).color,
+    pinyinSize: parseFloat(getComputedStyle(el.querySelector('.vocabulary-example .pinyin-text')!).fontSize),
+    translationSize: parseFloat(getComputedStyle(el.querySelector('.vocabulary-example-translation')!).fontSize),
+    buttonHeight: el.querySelector('.vocabulary-next-example')!.getBoundingClientRect().height,
+  }));
+  expect(styles.titleWeight).toBe('400');
+  expect(styles.targetWeight).toBe('700');
+  expect(styles.targetColor).toBe('rgb(179, 68, 36)');
+  expect(styles.translationSize).toBeLessThan(styles.pinyinSize);
+  expect(styles.buttonHeight).toBeGreaterThanOrEqual(44);
+  await card.screenshot({ path: `docs/vocabulary-captures/${info.project.name}-reverse-emphasis.png` });
+  await page.reload();
+  await expect(card).not.toHaveClass(/is-reversed/);
+  await expect(card.locator('.vocabulary-word-row .audio-button')).toHaveCount(1);
+  await card.locator('.vocabulary-card-tools').getByRole('button', { name: 'Ver ejemplo: 你', exact: true }).click();
+  await search.focus();
+  await expect(card).not.toHaveClass(/is-reversed/);
+  await search.fill('你');
+  await search.press('Escape');
+  await card.locator('.vocabulary-card-tools').getByRole('button', { name: 'Ver ejemplo: 你', exact: true }).click();
+  await page.getByRole('button', { name: 'Solo favoritos', exact: true }).click();
+  await expect(card).not.toHaveClass(/is-reversed/);
+  await card.locator('.vocabulary-card-tools').getByRole('button', { name: 'Ver ejemplo: 你', exact: true }).click();
+  await page.getByRole('combobox', { name: 'Lección', exact: true }).selectOption('l2');
+  await page.getByRole('combobox', { name: 'Lección', exact: true }).selectOption('l1');
+  await expect(card).not.toHaveClass(/is-reversed/);
+  await expect(card.getByRole('button', { name: 'Favorito: 你', exact: true })).toHaveAttribute('aria-pressed', 'true');
 });

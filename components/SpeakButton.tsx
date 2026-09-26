@@ -52,7 +52,8 @@ export function SpeakButton({ text, reading, audioSrc, rate = 0.85, label = 'Esc
       if (stopActive === stopRef.current) stopActive = null;
     }
   }
+  if (!sources.length) return null;
   const active = state === 'loading' || state === 'playing';
-  const status = !sources.length ? 'Audio pendiente' : state === 'error' ? 'No se pudo reproducir. Reintentar' : state === 'loading' ? 'Cargando. Detener' : active ? 'Detener' : label;
+  const status = state === 'error' ? 'No se pudo reproducir. Reintentar' : state === 'loading' ? 'Cargando. Detener' : active ? 'Detener' : label;
   return <span className="audio-control"><button className={`audio-button ${state}${compact ? ' compact' : ''}`} type="button" disabled={!sources.length} onClick={() => void play()} aria-label={active || !sources.length || state === 'error' ? `${status}: ${text}` : ariaLabel ?? `${label}: ${text}`} aria-busy={state === 'loading'} title={title ?? `${status}: ${text}`}><span aria-hidden="true">{active ? '■' : <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M11 4 6 8H3v8h3l5 4V4Z M15 8a6 6 0 0 1 0 8 M18 5a10 10 0 0 1 0 14"/></svg>}</span>{!compact && <> <Hanzi>{status}</Hanzi></>}</button>{(!sources.length || state === 'error') && <small role="status">{status}</small>}</span>;
 }

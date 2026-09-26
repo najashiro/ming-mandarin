@@ -1,6 +1,6 @@
 {
   "mode": "dry-run",
-  "corpusFingerprint": "567543b49df0ce3fb47f033dee0fc1449bbd8197749e3a26cd220e865a0d1f02",
+  "corpusFingerprint": "cbe3c172ccebe0cd4603a1bd37bb59ee044e37c53825cbf43878256fe946f4e8",
   "config": {
     "provider": "OpenAI",
     "model": "gpt-4o-mini-tts",
@@ -9,25 +9,12 @@
     "instructions": "Habla exclusivamente en mandarín estándar de China continental. Voz clara de docente de fonética para principiantes. Pronuncia exactamente el texto chino de entrada, sin traducir, deletrear, explicar ni añadir palabras. Ritmo lento y natural, con dicción limpia y sin música. Pronuncia exactamente la entrada una sola vez, con ritmo natural."
   },
   "counters": {
-    "available_unverified_decode": 221,
+    "available_unverified_decode": 213,
     "not_requested": 168
   },
   "selectedCount": 20,
   "selected": [
     {
-      "entryId": "PH-078b70bbe3299e48",
-      "input": "你会弹钢琴吗？",
-      "expectedPinyin": "nǐ huì tán ɡānɡ qín ma",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-078b70bbe3299e48"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-314f651d54650028c3dd",
-      "file": "vocab-314f651d54650028c3dd.mp3",
-      "directory": "mandarin"
-    },
-    {
       "entryId": "PH-0b19aa18edd43b1c",
       "input": "你要什么？",
       "expectedPinyin": "Nǐ yào shénme?",
@@ -41,227 +28,6 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-10d754ac9c07b1a5",
-      "input": "我是中国人。你会说什么语言？",
-      "expectedPinyin": "wǒ shì zhōnɡ ɡuó rén, nǐ huì shuō shén me yǔ yán?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-10d754ac9c07b1a5"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-b25d2551eca5d4204561",
-      "file": "vocab-b25d2551eca5d4204561.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-17c00c56c6657575",
-      "input": "你朋友是哪国人？",
-      "expectedPinyin": "Nĭ péngyou shì nǎ guó rén?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-17c00c56c6657575"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-77e9caa7c5e6fc407ba4",
-      "file": "vocab-77e9caa7c5e6fc407ba4.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-1ae061732229eef0",
-      "input": "她是律师。你女朋友呢？",
-      "expectedPinyin": "Tā shì lǜshī. Nǐ nǚpéngyou ne?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-1ae061732229eef0"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-ae4a97b94c686723ba5f",
-      "file": "vocab-ae4a97b94c686723ba5f.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-1b614c51767513af",
-      "input": "你最近好吗？",
-      "expectedPinyin": "Nǐ zuìjìn hǎo ma?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-1b614c51767513af"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-35d584a0e0227addb68b",
-      "file": "vocab-35d584a0e0227addb68b.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-1ecb0a2d85add69f",
-      "input": "你叫什么名字？",
-      "expectedPinyin": "nǐ jiào shénme míngzi?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-1ecb0a2d85add69f"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-7d715f636023713dc52d",
-      "file": "vocab-7d715f636023713dc52d.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-22a1fe0f4b30bc6b",
-      "input": "你好，你是哪国人？",
-      "expectedPinyin": "Nǐ hǎo, nǐ shì nǎ guó rén?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-22a1fe0f4b30bc6b"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-299f8235061d07cb72de",
-      "file": "vocab-299f8235061d07cb72de.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-2382c8651ab50c87",
-      "input": "你今年多大？",
-      "expectedPinyin": "Nǐ jīnián duōdà?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-2382c8651ab50c87"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-50057092ef5f99d056fc",
-      "file": "vocab-50057092ef5f99d056fc.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-35877ee19bf39065",
-      "input": "你是老师吗？",
-      "expectedPinyin": "Nǐ shì lǎoshī ma?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-35877ee19bf39065"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-f4e75687bb1f21f886c1",
-      "file": "vocab-f4e75687bb1f21f886c1.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-41c97578d6f40db1",
-      "input": "你最近忙吗？",
-      "expectedPinyin": "Nǐ zuìjìn máng ma?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-41c97578d6f40db1"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-5af6392cb821ada7979e",
-      "file": "vocab-5af6392cb821ada7979e.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-5142cb2d864109cd",
-      "input": "我是秘鲁人。你呢？",
-      "expectedPinyin": "Wŏ shì Bìlŭ rén. Nǐ ne?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-5142cb2d864109cd"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-f60f931ac3e1deb6ffac",
-      "file": "vocab-f60f931ac3e1deb6ffac.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-5142cb2d864109cd",
-      "input": "我是秘鲁人，你呢？",
-      "expectedPinyin": "wǒ shì bì lǔ rén, nǐ ne",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-5142cb2d864109cd"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-9d1b1b56536e8de9618d",
-      "file": "vocab-9d1b1b56536e8de9618d.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-524b5c04429c4b1e",
-      "input": "这张照片是谁？是你哥哥吗？真帅！",
-      "expectedPinyin": "Zhè zhāng zhàopiàn shì shéi? Shì nǐ gēge ma? Zhēn shuài!",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-524b5c04429c4b1e"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-17812afd48be6f54dce2",
-      "file": "vocab-17812afd48be6f54dce2.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-676ccb0a0e5ac008",
-      "input": "我很高兴认识你。",
-      "expectedPinyin": "Wŏ hěn gāoxìng rènshi nĭ.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-676ccb0a0e5ac008"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-7ca4e4905a29d1e5870e",
-      "file": "vocab-7ca4e4905a29d1e5870e.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-68b22874368c65ef",
-      "input": "你今年几岁？",
-      "expectedPinyin": "nǐ jīnnián jǐ suì?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-68b22874368c65ef"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-723c9f1d43e7bb6a303e",
-      "file": "vocab-723c9f1d43e7bb6a303e.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-69a24d57a7e9d58f",
-      "input": "我也很好。你是哪国人？",
-      "expectedPinyin": "Wŏ yĕ hĕn hǎo. Nǐ shì nǎ guó rén?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-69a24d57a7e9d58f"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-a8f2030f30d47e1f3d77",
-      "file": "vocab-a8f2030f30d47e1f3d77.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-6afd9bf65f7cafe0",
-      "input": "你叫马大为吗？",
-      "expectedPinyin": "Nǐ jiào Mǎ Dàwéi ma?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-6afd9bf65f7cafe0"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-45cdee95d578573062a5",
-      "file": "vocab-45cdee95d578573062a5.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-7352a67fef31e1b0",
-      "input": "我学习汉语。你呢？",
-      "expectedPinyin": "wǒ xuéxí Hànyǔ. Nǐ ne?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-7352a67fef31e1b0"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-eb4d63f8df556f806136",
-      "file": "vocab-eb4d63f8df556f806136.mp3",
-      "directory": "mandarin"
-    },
-    {
       "entryId": "PH-808a684bd903648d",
       "input": "你在哪儿？",
       "expectedPinyin": "nǐ zài nǎr",
@@ -272,438 +38,6 @@
       "status": "not_requested",
       "clipId": "vocab-c94e62fdd62445943e6c",
       "file": "vocab-c94e62fdd62445943e6c.mp3",
-      "directory": "mandarin"
-    }
-  ],
-  "resources": [
-    {
-      "entryId": "v-你",
-      "input": "你",
-      "expectedPinyin": "nǐ",
-      "kind": "word",
-      "entryIds": [
-        "v-你"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l1-v-ni",
-      "file": "l1-v-ni.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-078b70bbe3299e48",
-      "input": "你会弹钢琴吗？",
-      "expectedPinyin": "nǐ huì tán ɡānɡ qín ma",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-078b70bbe3299e48"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-314f651d54650028c3dd",
-      "file": "vocab-314f651d54650028c3dd.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-0b19aa18edd43b1c",
-      "input": "你要什么？",
-      "expectedPinyin": "Nǐ yào shénme?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-0b19aa18edd43b1c"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-a169efd25672f045395c",
-      "file": "vocab-a169efd25672f045395c.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-0f437a5676994bd1",
-      "input": "谢谢。你最近怎么样？",
-      "expectedPinyin": "Xièxie. Nǐ zuìjìn zěnmeyàng?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-0f437a5676994bd1"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l1-s-2c98627679",
-      "file": "l1-s-2c98627679.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-10d754ac9c07b1a5",
-      "input": "我是中国人。你会说什么语言？",
-      "expectedPinyin": "wǒ shì zhōnɡ ɡuó rén, nǐ huì shuō shén me yǔ yán?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-10d754ac9c07b1a5"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-b25d2551eca5d4204561",
-      "file": "vocab-b25d2551eca5d4204561.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-17c00c56c6657575",
-      "input": "你朋友是哪国人？",
-      "expectedPinyin": "Nĭ péngyou shì nǎ guó rén?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-17c00c56c6657575"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-77e9caa7c5e6fc407ba4",
-      "file": "vocab-77e9caa7c5e6fc407ba4.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-1ae061732229eef0",
-      "input": "她是律师。你女朋友呢？",
-      "expectedPinyin": "Tā shì lǜshī. Nǐ nǚpéngyou ne?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-1ae061732229eef0"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-ae4a97b94c686723ba5f",
-      "file": "vocab-ae4a97b94c686723ba5f.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-1b614c51767513af",
-      "input": "你最近好吗？",
-      "expectedPinyin": "Nǐ zuìjìn hǎo ma?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-1b614c51767513af"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-35d584a0e0227addb68b",
-      "file": "vocab-35d584a0e0227addb68b.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-1ecb0a2d85add69f",
-      "input": "你叫什么名字？",
-      "expectedPinyin": "nǐ jiào shénme míngzi?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-1ecb0a2d85add69f"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-7d715f636023713dc52d",
-      "file": "vocab-7d715f636023713dc52d.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-1f5edf8ae05ca861",
-      "input": "贝贝是谁？是你妹妹吗？",
-      "expectedPinyin": "Bèibei shì shéi? Shì nǐ mèimei ma?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-1f5edf8ae05ca861"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l3-s-d90a486643",
-      "file": "l3-s-d90a486643.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-1f7e03d8c0052b68",
-      "input": "你爸爸妈妈做什么工作？",
-      "expectedPinyin": "Nǐ bàba māma zuò shénme gōngzuò?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-1f7e03d8c0052b68"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l3-s-1a3780ce44",
-      "file": "l3-s-1a3780ce44.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-22a1fe0f4b30bc6b",
-      "input": "你好，你是哪国人？",
-      "expectedPinyin": "Nǐ hǎo, nǐ shì nǎ guó rén?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-22a1fe0f4b30bc6b"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-299f8235061d07cb72de",
-      "file": "vocab-299f8235061d07cb72de.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-2382c8651ab50c87",
-      "input": "你今年多大？",
-      "expectedPinyin": "Nǐ jīnián duōdà?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-2382c8651ab50c87"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-50057092ef5f99d056fc",
-      "file": "vocab-50057092ef5f99d056fc.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-2f4c8cbba8f15bf3",
-      "input": "认识你很高兴。",
-      "expectedPinyin": "Rènshi nǐ hěn gāoxìng.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-2f4c8cbba8f15bf3"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l1-s-meet",
-      "file": "l1-s-meet.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-35877ee19bf39065",
-      "input": "你是老师吗？",
-      "expectedPinyin": "Nǐ shì lǎoshī ma?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-35877ee19bf39065"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-f4e75687bb1f21f886c1",
-      "file": "vocab-f4e75687bb1f21f886c1.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-3ee271a44d31d36b",
-      "input": "你忙吗？",
-      "expectedPinyin": "Nǐ máng ma?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-3ee271a44d31d36b"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l1-s-8871d10c41",
-      "file": "l1-s-8871d10c41.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-40b8d75ef94972dd",
-      "input": "你女儿今年几岁？",
-      "expectedPinyin": "Nǐ nǚ’ér jīnnián jǐ suì?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-40b8d75ef94972dd"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l3-s-6320dd8338",
-      "file": "l3-s-6320dd8338.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-414d0363c22c3b9f",
-      "input": "这不是饺子，是包子。包子大，饺子小。你看，那是饺子。",
-      "expectedPinyin": "Zhè bú shì jiǎozi, shì bāozi. Bāozi dà, jiǎozi xiǎo. Nǐ kàn, nà shì jiǎozi.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-414d0363c22c3b9f"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l2-s-975a369857",
-      "file": "l2-s-975a369857.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-41c97578d6f40db1",
-      "input": "你最近忙吗？",
-      "expectedPinyin": "Nǐ zuìjìn máng ma?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-41c97578d6f40db1"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-5af6392cb821ada7979e",
-      "file": "vocab-5af6392cb821ada7979e.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-5142cb2d864109cd",
-      "input": "我是秘鲁人。你呢？",
-      "expectedPinyin": "Wŏ shì Bìlŭ rén. Nǐ ne?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-5142cb2d864109cd"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-f60f931ac3e1deb6ffac",
-      "file": "vocab-f60f931ac3e1deb6ffac.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-5142cb2d864109cd",
-      "input": "我是秘鲁人，你呢？",
-      "expectedPinyin": "wǒ shì bì lǔ rén, nǐ ne",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-5142cb2d864109cd"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-9d1b1b56536e8de9618d",
-      "file": "vocab-9d1b1b56536e8de9618d.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-524b5c04429c4b1e",
-      "input": "这张照片是谁？是你哥哥吗？真帅！",
-      "expectedPinyin": "Zhè zhāng zhàopiàn shì shéi? Shì nǐ gēge ma? Zhēn shuài!",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-524b5c04429c4b1e"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-17812afd48be6f54dce2",
-      "file": "vocab-17812afd48be6f54dce2.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-662568e447c8f935",
-      "input": "请问，你叫什么名字？",
-      "expectedPinyin": "Qǐngwèn, nǐ jiào shénme míngzi?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-662568e447c8f935"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l1-s-name-question",
-      "file": "l1-s-name-question.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "v-你好",
-      "input": "你好",
-      "expectedPinyin": "nǐ hǎo",
-      "kind": "word",
-      "entryIds": [
-        "PH-670d9743542cae3e",
-        "v-你好"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l1-g-nihao",
-      "file": "l1-g-nihao.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-676ccb0a0e5ac008",
-      "input": "我很高兴认识你。",
-      "expectedPinyin": "Wŏ hěn gāoxìng rènshi nĭ.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-676ccb0a0e5ac008"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-7ca4e4905a29d1e5870e",
-      "file": "vocab-7ca4e4905a29d1e5870e.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-68b22874368c65ef",
-      "input": "你今年几岁？",
-      "expectedPinyin": "nǐ jīnnián jǐ suì?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-68b22874368c65ef"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-723c9f1d43e7bb6a303e",
-      "file": "vocab-723c9f1d43e7bb6a303e.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-690ab0981fa200f9",
-      "input": "我姓陈。你是哪国人？",
-      "expectedPinyin": "Wǒ xìng Chén. Nǐ shì nǎ guó rén?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-690ab0981fa200f9"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l2-s-c7bef97e2c",
-      "file": "l2-s-c7bef97e2c.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-69a24d57a7e9d58f",
-      "input": "我也很好。你是哪国人？",
-      "expectedPinyin": "Wŏ yĕ hĕn hǎo. Nǐ shì nǎ guó rén?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-69a24d57a7e9d58f"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-a8f2030f30d47e1f3d77",
-      "file": "vocab-a8f2030f30d47e1f3d77.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-6afd9bf65f7cafe0",
-      "input": "你叫马大为吗？",
-      "expectedPinyin": "Nǐ jiào Mǎ Dàwéi ma?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-6afd9bf65f7cafe0"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-45cdee95d578573062a5",
-      "file": "vocab-45cdee95d578573062a5.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-7352a67fef31e1b0",
-      "input": "我学习汉语。你呢？",
-      "expectedPinyin": "wǒ xuéxí Hànyǔ. Nǐ ne?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-7352a67fef31e1b0"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-eb4d63f8df556f806136",
-      "file": "vocab-eb4d63f8df556f806136.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-75c3db6ef2e8ca00",
-      "input": "认识你我也很高兴。",
-      "expectedPinyin": "Rènshi nǐ wǒ yě hěn gāoxìng.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-75c3db6ef2e8ca00"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l1-s-meet-too",
-      "file": "l1-s-meet-too.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-808a684bd903648d",
-      "input": "你在哪儿？",
-      "expectedPinyin": "nǐ zài nǎr",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-808a684bd903648d"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-c94e62fdd62445943e6c",
-      "file": "vocab-c94e62fdd62445943e6c.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-8352a5a7ed14b333",
-      "input": "我姓林，叫林娜。你呢？",
-      "expectedPinyin": "Wǒ xìng Lín, jiào Lín Nà. Nǐ ne?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-8352a5a7ed14b333"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-1f8ad7bdc553527686bb",
-      "file": "vocab-1f8ad7bdc553527686bb.mp3",
       "directory": "mandarin"
     },
     {
@@ -733,120 +67,16 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-8dcc41f26397e990",
-      "input": "我们家有四口人。你看，这是我们家的照片。",
-      "expectedPinyin": "Wǒmen jiā yǒu sì kǒu rén. Nǐ kàn, zhè shì wǒmen jiā de zhàopiàn.",
+      "entryId": "PH-a91927cd7cc686fb",
+      "input": "你做什么工作？",
+      "expectedPinyin": "Nǐ zuò shénme gōngzuò?",
       "kind": "sentence",
       "entryIds": [
-        "PH-8dcc41f26397e990"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l3-s-7fdc447d8c",
-      "file": "l3-s-7fdc447d8c.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-9fa7bc5fbd3e3980",
-      "input": "你今年多大岁数？",
-      "expectedPinyin": "Nǐ jīnnián duōdà suìshù?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-9fa7bc5fbd3e3980"
+        "PH-a91927cd7cc686fb"
       ],
       "status": "not_requested",
-      "clipId": "vocab-f44b4255ea84059d3184",
-      "file": "vocab-f44b4255ea84059d3184.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-9fdaa233b06a6a21",
-      "input": "我会说英语和西班牙语。你呢？",
-      "expectedPinyin": "wǒ huì shuō yīnɡ yǔ hé xī bān yá yǔ. Nǐ ne?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-9fdaa233b06a6a21"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-38d75148e4e588b1d338",
-      "file": "vocab-38d75148e4e588b1d338.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-a05b1895701f4272",
-      "input": "我叫马大为。请问，你叫什么名字？",
-      "expectedPinyin": "Wǒ jiào Mǎ Dàwéi. Qǐngwèn, nǐ jiào shénme míngzi?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-a05b1895701f4272"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-a59ac7df2e1078c9db1a",
-      "file": "vocab-a59ac7df2e1078c9db1a.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-a965d860bc13904b",
-      "input": "我叫宋华。认识你很高兴。",
-      "expectedPinyin": "Wǒ jiào Sòng Huá. Rènshi nǐ hěn gāoxìng.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-a965d860bc13904b"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-4734b303cd489af58de8",
-      "file": "vocab-4734b303cd489af58de8.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-bc51409baf560fe2",
-      "input": "认识你，我很高兴。",
-      "expectedPinyin": "Rènshi nĭ, wŏ hěn gāoxìng.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-bc51409baf560fe2"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-b4b42b739bdf91cfa56b",
-      "file": "vocab-b4b42b739bdf91cfa56b.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-be10ea8c4e5d464c",
-      "input": "你好吗？",
-      "expectedPinyin": "Nǐ hǎo ma?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-be10ea8c4e5d464c"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-eae60fe132f880dd0ed7",
-      "file": "vocab-eae60fe132f880dd0ed7.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-d625290653cbdd60",
-      "input": "我很忙。你呢？",
-      "expectedPinyin": "Wǒ hěn máng. Nǐ ne?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-d625290653cbdd60"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-dd9e397f2576c204f259",
-      "file": "vocab-dd9e397f2576c204f259.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-ddd87811dcdf1cf2",
-      "input": "那是你朋友吗？",
-      "expectedPinyin": "Nà shì nǐ péngyou ma?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-ddd87811dcdf1cf2"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-ddc54b7872b9b88890cb",
-      "file": "vocab-ddc54b7872b9b88890cb.mp3",
+      "clipId": "vocab-19d5cd857b6a3970d63a",
+      "file": "vocab-19d5cd857b6a3970d63a.mp3",
       "directory": "mandarin"
     },
     {
@@ -863,6 +93,45 @@
       "directory": "mandarin"
     },
     {
+      "entryId": "PH-ec84f23f710576b9",
+      "input": "你会说什么语言？",
+      "expectedPinyin": "Nǐ huì shuō shén me yǔ yán?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-ec84f23f710576b9"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-82d6dbb615738dc270d5",
+      "file": "vocab-82d6dbb615738dc270d5.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-bc51409baf560fe2",
+      "input": "认识你，我很高兴。",
+      "expectedPinyin": "Rènshi nĭ, wŏ hěn gāoxìng.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-bc51409baf560fe2"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-b4b42b739bdf91cfa56b",
+      "file": "vocab-b4b42b739bdf91cfa56b.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-9fdaa233b06a6a21",
+      "input": "我会说英语和西班牙语。你呢？",
+      "expectedPinyin": "wǒ huì shuō yīnɡ yǔ hé xī bān yá yǔ. Nǐ ne?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-9fdaa233b06a6a21"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-38d75148e4e588b1d338",
+      "file": "vocab-38d75148e4e588b1d338.mp3",
+      "directory": "mandarin"
+    },
+    {
       "entryId": "PH-e14e73f3df1ad125",
       "input": "你几岁？",
       "expectedPinyin": "Nǐ jǐ suì?",
@@ -876,29 +145,239 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-e48c42bc76c441d6",
-      "input": "我很好。你呢？",
-      "expectedPinyin": "Wǒ hěn hǎo. Nǐ ne?",
+      "entryId": "PH-1b614c51767513af",
+      "input": "你最近好吗？",
+      "expectedPinyin": "Nǐ zuìjìn hǎo ma?",
       "kind": "sentence",
       "entryIds": [
-        "PH-e48c42bc76c441d6"
+        "PH-1b614c51767513af"
       ],
-      "status": "available_unverified_decode",
-      "clipId": "l1-s-good-you",
-      "file": "l1-s-good-you.mp3",
+      "status": "not_requested",
+      "clipId": "vocab-35d584a0e0227addb68b",
+      "file": "vocab-35d584a0e0227addb68b.mp3",
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-e48c42bc76c441d6",
-      "input": "我很好，你呢？",
-      "expectedPinyin": "Wŏ hĕn hǎo, nǐ ne?",
+      "entryId": "PH-2382c8651ab50c87",
+      "input": "你今年多大？",
+      "expectedPinyin": "Nǐ jīnián duōdà?",
       "kind": "sentence",
       "entryIds": [
-        "PH-e48c42bc76c441d6"
+        "PH-2382c8651ab50c87"
       ],
       "status": "not_requested",
-      "clipId": "vocab-d86bc203c41b2648c564",
-      "file": "vocab-d86bc203c41b2648c564.mp3",
+      "clipId": "vocab-50057092ef5f99d056fc",
+      "file": "vocab-50057092ef5f99d056fc.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-35877ee19bf39065",
+      "input": "你是老师吗？",
+      "expectedPinyin": "Nǐ shì lǎoshī ma?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-35877ee19bf39065"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-f4e75687bb1f21f886c1",
+      "file": "vocab-f4e75687bb1f21f886c1.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-41c97578d6f40db1",
+      "input": "你最近忙吗？",
+      "expectedPinyin": "Nǐ zuìjìn máng ma?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-41c97578d6f40db1"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-5af6392cb821ada7979e",
+      "file": "vocab-5af6392cb821ada7979e.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-68b22874368c65ef",
+      "input": "你今年几岁？",
+      "expectedPinyin": "nǐ jīnnián jǐ suì?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-68b22874368c65ef"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-723c9f1d43e7bb6a303e",
+      "file": "vocab-723c9f1d43e7bb6a303e.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-b97e96764389c910",
+      "input": "你有弟弟吗？",
+      "expectedPinyin": "Nǐ yǒu dìdi ma?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-b97e96764389c910"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-182d146dd08c59d144e2",
+      "file": "vocab-182d146dd08c59d144e2.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-078b70bbe3299e48",
+      "input": "你会弹钢琴吗？",
+      "expectedPinyin": "nǐ huì tán ɡānɡ qín ma",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-078b70bbe3299e48"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-314f651d54650028c3dd",
+      "file": "vocab-314f651d54650028c3dd.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-1ecb0a2d85add69f",
+      "input": "你叫什么名字？",
+      "expectedPinyin": "nǐ jiào shénme míngzi?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-1ecb0a2d85add69f"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-7d715f636023713dc52d",
+      "file": "vocab-7d715f636023713dc52d.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-ddd87811dcdf1cf2",
+      "input": "那是你朋友吗？",
+      "expectedPinyin": "Nà shì nǐ péngyou ma?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-ddd87811dcdf1cf2"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-ddc54b7872b9b88890cb",
+      "file": "vocab-ddc54b7872b9b88890cb.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-17c00c56c6657575",
+      "input": "你朋友是哪国人？",
+      "expectedPinyin": "Nĭ péngyou shì nǎ guó rén?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-17c00c56c6657575"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-77e9caa7c5e6fc407ba4",
+      "file": "vocab-77e9caa7c5e6fc407ba4.mp3",
+      "directory": "mandarin"
+    }
+  ],
+  "resources": [
+    {
+      "entryId": "v-你",
+      "input": "你",
+      "expectedPinyin": "nǐ",
+      "kind": "word",
+      "entryIds": [
+        "v-你"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l1-v-ni",
+      "file": "l1-v-ni.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-3ee271a44d31d36b",
+      "input": "你忙吗？",
+      "expectedPinyin": "Nǐ máng ma?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-3ee271a44d31d36b"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l1-s-8871d10c41",
+      "file": "l1-s-8871d10c41.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-0b19aa18edd43b1c",
+      "input": "你要什么？",
+      "expectedPinyin": "Nǐ yào shénme?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-0b19aa18edd43b1c"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-a169efd25672f045395c",
+      "file": "vocab-a169efd25672f045395c.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-808a684bd903648d",
+      "input": "你在哪儿？",
+      "expectedPinyin": "nǐ zài nǎr",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-808a684bd903648d"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-c94e62fdd62445943e6c",
+      "file": "vocab-c94e62fdd62445943e6c.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-89e1809d0a741109",
+      "input": "你姓什么？",
+      "expectedPinyin": "nǐ xìng shénme?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-89e1809d0a741109"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-aa69c82da57b77fdd9a3",
+      "file": "vocab-aa69c82da57b77fdd9a3.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-8dca55430d3d18ba",
+      "input": "你要咖啡吗？",
+      "expectedPinyin": "Nǐ yào kāfēi ma?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-8dca55430d3d18ba"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-9fe0efea65ab82a478d6",
+      "file": "vocab-9fe0efea65ab82a478d6.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-a91927cd7cc686fb",
+      "input": "你做什么工作？",
+      "expectedPinyin": "Nǐ zuò shénme gōngzuò?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-a91927cd7cc686fb"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-19d5cd857b6a3970d63a",
+      "file": "vocab-19d5cd857b6a3970d63a.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-de301d7a1c0921cd",
+      "input": "我不太忙，你呢？",
+      "expectedPinyin": "Wǒ bú tài máng, nĭ ne",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-de301d7a1c0921cd"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-bb6b7d7d8fd8cd968b1e",
+      "file": "vocab-bb6b7d7d8fd8cd968b1e.mp3",
       "directory": "mandarin"
     },
     {
@@ -915,42 +394,185 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-ecfd3a421f57b8bd",
-      "input": "你最近怎么样？",
-      "expectedPinyin": "Nǐ zuìjìn zěnmeyàng?",
+      "entryId": "PH-bc51409baf560fe2",
+      "input": "认识你，我很高兴。",
+      "expectedPinyin": "Rènshi nĭ, wŏ hěn gāoxìng.",
       "kind": "sentence",
       "entryIds": [
-        "PH-ecfd3a421f57b8bd"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l1-s-recent",
-      "file": "l1-s-recent.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-f5e8fe751cfa6748",
-      "input": "你太太做什么工作？",
-      "expectedPinyin": "Nǐ tàitai zuò shénme gōngzuò?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-f5e8fe751cfa6748"
+        "PH-bc51409baf560fe2"
       ],
       "status": "not_requested",
-      "clipId": "vocab-7ca26aa03b0f291996e7",
-      "file": "vocab-7ca26aa03b0f291996e7.mp3",
+      "clipId": "vocab-b4b42b739bdf91cfa56b",
+      "file": "vocab-b4b42b739bdf91cfa56b.mp3",
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-f73bf8e19f739055",
-      "input": "这张照片真漂亮！这是你女儿吗？",
-      "expectedPinyin": "Zhè zhāng zhàopiàn zhēn piàoliang! Zhè shì nǐ nǚ’ér ma?",
+      "entryId": "PH-9fdaa233b06a6a21",
+      "input": "我会说英语和西班牙语。你呢？",
+      "expectedPinyin": "wǒ huì shuō yīnɡ yǔ hé xī bān yá yǔ. Nǐ ne?",
       "kind": "sentence",
       "entryIds": [
-        "PH-f73bf8e19f739055"
+        "PH-9fdaa233b06a6a21"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-38d75148e4e588b1d338",
+      "file": "vocab-38d75148e4e588b1d338.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-e14e73f3df1ad125",
+      "input": "你几岁？",
+      "expectedPinyin": "Nǐ jǐ suì?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-e14e73f3df1ad125"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-bbac39c80cdab860b936",
+      "file": "vocab-bbac39c80cdab860b936.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-1b614c51767513af",
+      "input": "你最近好吗？",
+      "expectedPinyin": "Nǐ zuìjìn hǎo ma?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-1b614c51767513af"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-35d584a0e0227addb68b",
+      "file": "vocab-35d584a0e0227addb68b.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-2382c8651ab50c87",
+      "input": "你今年多大？",
+      "expectedPinyin": "Nǐ jīnián duōdà?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-2382c8651ab50c87"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-50057092ef5f99d056fc",
+      "file": "vocab-50057092ef5f99d056fc.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-35877ee19bf39065",
+      "input": "你是老师吗？",
+      "expectedPinyin": "Nǐ shì lǎoshī ma?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-35877ee19bf39065"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-f4e75687bb1f21f886c1",
+      "file": "vocab-f4e75687bb1f21f886c1.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-41c97578d6f40db1",
+      "input": "你最近忙吗？",
+      "expectedPinyin": "Nǐ zuìjìn máng ma?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-41c97578d6f40db1"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-5af6392cb821ada7979e",
+      "file": "vocab-5af6392cb821ada7979e.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-68b22874368c65ef",
+      "input": "你今年几岁？",
+      "expectedPinyin": "nǐ jīnnián jǐ suì?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-68b22874368c65ef"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-723c9f1d43e7bb6a303e",
+      "file": "vocab-723c9f1d43e7bb6a303e.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-b97e96764389c910",
+      "input": "你有弟弟吗？",
+      "expectedPinyin": "Nǐ yǒu dìdi ma?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-b97e96764389c910"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-182d146dd08c59d144e2",
+      "file": "vocab-182d146dd08c59d144e2.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-078b70bbe3299e48",
+      "input": "你会弹钢琴吗？",
+      "expectedPinyin": "nǐ huì tán ɡānɡ qín ma",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-078b70bbe3299e48"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-314f651d54650028c3dd",
+      "file": "vocab-314f651d54650028c3dd.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-1ecb0a2d85add69f",
+      "input": "你叫什么名字？",
+      "expectedPinyin": "nǐ jiào shénme míngzi?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-1ecb0a2d85add69f"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-7d715f636023713dc52d",
+      "file": "vocab-7d715f636023713dc52d.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-6f6a649733597458",
+      "input": "你家有几口人？",
+      "expectedPinyin": "Nǐ jiā yǒu jǐ kǒu rén?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-6f6a649733597458"
       ],
       "status": "available_unverified_decode",
-      "clipId": "l3-s-59693958d4",
-      "file": "l3-s-59693958d4.mp3",
+      "clipId": "l3-s-a0099a1897",
+      "file": "l3-s-a0099a1897.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-ddd87811dcdf1cf2",
+      "input": "那是你朋友吗？",
+      "expectedPinyin": "Nà shì nǐ péngyou ma?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-ddd87811dcdf1cf2"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-ddc54b7872b9b88890cb",
+      "file": "vocab-ddc54b7872b9b88890cb.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-e48c42bc76c441d6",
+      "input": "我很好。你呢？",
+      "expectedPinyin": "Wǒ hěn hǎo. Nǐ ne?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-e48c42bc76c441d6"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l1-s-good-you",
+      "file": "l1-s-good-you.mp3",
       "directory": "mandarin"
     },
     {
@@ -967,6 +589,58 @@
       "directory": "mandarin"
     },
     {
+      "entryId": "PH-17c00c56c6657575",
+      "input": "你朋友是哪国人？",
+      "expectedPinyin": "Nĭ péngyou shì nǎ guó rén?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-17c00c56c6657575"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-77e9caa7c5e6fc407ba4",
+      "file": "vocab-77e9caa7c5e6fc407ba4.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-40b8d75ef94972dd",
+      "input": "你女儿今年几岁？",
+      "expectedPinyin": "Nǐ nǚ’ér jīnnián jǐ suì?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-40b8d75ef94972dd"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l3-s-6320dd8338",
+      "file": "l3-s-6320dd8338.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-676ccb0a0e5ac008",
+      "input": "我很高兴认识你。",
+      "expectedPinyin": "Wŏ hěn gāoxìng rènshi nĭ.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-676ccb0a0e5ac008"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-7ca4e4905a29d1e5870e",
+      "file": "vocab-7ca4e4905a29d1e5870e.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-9fa7bc5fbd3e3980",
+      "input": "你今年多大岁数？",
+      "expectedPinyin": "Nǐ jīnnián duōdà suìshù?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-9fa7bc5fbd3e3980"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-f44b4255ea84059d3184",
+      "file": "vocab-f44b4255ea84059d3184.mp3",
+      "directory": "mandarin"
+    },
+    {
       "entryId": "PH-fd9e21b4265fa711",
       "input": "我很忙。你忙吗？",
       "expectedPinyin": "Wǒ hěn máng. Nǐ máng ma?",
@@ -977,6 +651,240 @@
       "status": "available_unverified_decode",
       "clipId": "l1-s-ba34dc0506",
       "file": "l1-s-ba34dc0506.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-22a1fe0f4b30bc6b",
+      "input": "你好，你是哪国人？",
+      "expectedPinyin": "Nǐ hǎo, nǐ shì nǎ guó rén?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-22a1fe0f4b30bc6b"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-299f8235061d07cb72de",
+      "file": "vocab-299f8235061d07cb72de.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-5142cb2d864109cd",
+      "input": "我是秘鲁人。你呢？",
+      "expectedPinyin": "Wŏ shì Bìlŭ rén. Nǐ ne?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-5142cb2d864109cd"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-f60f931ac3e1deb6ffac",
+      "file": "vocab-f60f931ac3e1deb6ffac.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-7352a67fef31e1b0",
+      "input": "我学习汉语。你呢？",
+      "expectedPinyin": "wǒ xuéxí Hànyǔ. Nǐ ne?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-7352a67fef31e1b0"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-eb4d63f8df556f806136",
+      "file": "vocab-eb4d63f8df556f806136.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-f5e8fe751cfa6748",
+      "input": "你太太做什么工作？",
+      "expectedPinyin": "Nǐ tàitai zuò shénme gōngzuò?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-f5e8fe751cfa6748"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-7ca26aa03b0f291996e7",
+      "file": "vocab-7ca26aa03b0f291996e7.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-0f437a5676994bd1",
+      "input": "谢谢。你最近怎么样？",
+      "expectedPinyin": "Xièxie. Nǐ zuìjìn zěnmeyàng?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-0f437a5676994bd1"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l1-s-2c98627679",
+      "file": "l1-s-2c98627679.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-690ab0981fa200f9",
+      "input": "我姓陈。你是哪国人？",
+      "expectedPinyin": "Wǒ xìng Chén. Nǐ shì nǎ guó rén?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-690ab0981fa200f9"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l2-s-c7bef97e2c",
+      "file": "l2-s-c7bef97e2c.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-1ae061732229eef0",
+      "input": "她是律师。你女朋友呢？",
+      "expectedPinyin": "Tā shì lǜshī. Nǐ nǚpéngyou ne?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-1ae061732229eef0"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-ae4a97b94c686723ba5f",
+      "file": "vocab-ae4a97b94c686723ba5f.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-1f5edf8ae05ca861",
+      "input": "贝贝是谁？是你妹妹吗？",
+      "expectedPinyin": "Bèibei shì shéi? Shì nǐ mèimei ma?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-1f5edf8ae05ca861"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l3-s-d90a486643",
+      "file": "l3-s-d90a486643.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-1f7e03d8c0052b68",
+      "input": "你爸爸妈妈做什么工作？",
+      "expectedPinyin": "Nǐ bàba māma zuò shénme gōngzuò?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-1f7e03d8c0052b68"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l3-s-1a3780ce44",
+      "file": "l3-s-1a3780ce44.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-69a24d57a7e9d58f",
+      "input": "我也很好。你是哪国人？",
+      "expectedPinyin": "Wŏ yĕ hĕn hǎo. Nǐ shì nǎ guó rén?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-69a24d57a7e9d58f"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-a8f2030f30d47e1f3d77",
+      "file": "vocab-a8f2030f30d47e1f3d77.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-8352a5a7ed14b333",
+      "input": "我姓林，叫林娜。你呢？",
+      "expectedPinyin": "Wǒ xìng Lín, jiào Lín Nà. Nǐ ne?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-8352a5a7ed14b333"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-1f8ad7bdc553527686bb",
+      "file": "vocab-1f8ad7bdc553527686bb.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-a965d860bc13904b",
+      "input": "我叫宋华。认识你很高兴。",
+      "expectedPinyin": "Wǒ jiào Sòng Huá. Rènshi nǐ hěn gāoxìng.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-a965d860bc13904b"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-4734b303cd489af58de8",
+      "file": "vocab-4734b303cd489af58de8.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-10d754ac9c07b1a5",
+      "input": "我是中国人。你会说什么语言？",
+      "expectedPinyin": "wǒ shì zhōnɡ ɡuó rén, nǐ huì shuō shén me yǔ yán?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-10d754ac9c07b1a5"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-b25d2551eca5d4204561",
+      "file": "vocab-b25d2551eca5d4204561.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-f73bf8e19f739055",
+      "input": "这张照片真漂亮！这是你女儿吗？",
+      "expectedPinyin": "Zhè zhāng zhàopiàn zhēn piàoliang! Zhè shì nǐ nǚ’ér ma?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-f73bf8e19f739055"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l3-s-59693958d4",
+      "file": "l3-s-59693958d4.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-524b5c04429c4b1e",
+      "input": "这张照片是谁？是你哥哥吗？真帅！",
+      "expectedPinyin": "Zhè zhāng zhàopiàn shì shéi? Shì nǐ gēge ma? Zhēn shuài!",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-524b5c04429c4b1e"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-17812afd48be6f54dce2",
+      "file": "vocab-17812afd48be6f54dce2.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-a05b1895701f4272",
+      "input": "我叫马大为。请问，你叫什么名字？",
+      "expectedPinyin": "Wǒ jiào Mǎ Dàwéi. Qǐngwèn, nǐ jiào shénme míngzi?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-a05b1895701f4272"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-a59ac7df2e1078c9db1a",
+      "file": "vocab-a59ac7df2e1078c9db1a.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-8dcc41f26397e990",
+      "input": "我们家有四口人。你看，这是我们家的照片。",
+      "expectedPinyin": "Wǒmen jiā yǒu sì kǒu rén. Nǐ kàn, zhè shì wǒmen jiā de zhàopiàn.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-8dcc41f26397e990"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l3-s-7fdc447d8c",
+      "file": "l3-s-7fdc447d8c.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-414d0363c22c3b9f",
+      "input": "这不是饺子，是包子。包子大，饺子小。你看，那是饺子。",
+      "expectedPinyin": "Zhè bú shì jiǎozi, shì bāozi. Bāozi dà, jiǎozi xiǎo. Nǐ kàn, nà shì jiǎozi.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-414d0363c22c3b9f"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l2-s-975a369857",
+      "file": "l2-s-975a369857.mp3",
       "directory": "mandarin"
     },
     {
@@ -993,6 +901,19 @@
       "directory": "mandarin"
     },
     {
+      "entryId": "PH-0e81c06652f02fff",
+      "input": "我很好。",
+      "expectedPinyin": "wǒ hěn hǎo.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-0e81c06652f02fff"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-10d4b6e9ee9c8e5a147c",
+      "file": "vocab-10d4b6e9ee9c8e5a147c.mp3",
+      "directory": "mandarin"
+    },
+    {
       "entryId": "PH-023319dc6989d13c",
       "input": "我也很好。",
       "expectedPinyin": "wǒ yě hěn hǎo",
@@ -1006,16 +927,55 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-0e81c06652f02fff",
-      "input": "我很好。",
-      "expectedPinyin": "wǒ hěn hǎo.",
+      "entryId": "PH-b4e54d7c23aaf1d0",
+      "input": "那是我好朋友。",
+      "expectedPinyin": "Nà shì wǒ hǎo péngyou.",
       "kind": "sentence",
       "entryIds": [
-        "PH-0e81c06652f02fff"
+        "PH-b4e54d7c23aaf1d0"
       ],
       "status": "not_requested",
-      "clipId": "vocab-10d4b6e9ee9c8e5a147c",
-      "file": "vocab-10d4b6e9ee9c8e5a147c.mp3",
+      "clipId": "vocab-0494b44f5e4b441530c9",
+      "file": "vocab-0494b44f5e4b441530c9.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-609bc0751d56eb46",
+      "input": "您好！",
+      "expectedPinyin": "Nín hǎo",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-609bc0751d56eb46"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l1-g-ninhao",
+      "file": "l1-g-ninhao.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-d36d24a8a0e932b0",
+      "input": "你们好！",
+      "expectedPinyin": "Nǐmen hǎo!",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-d36d24a8a0e932b0"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l1-g-nimenhao",
+      "file": "l1-g-nimenhao.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-6df8b6bf89d466a0",
+      "input": "他也很好。",
+      "expectedPinyin": "Tā yě hěn hǎo.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-6df8b6bf89d466a0"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l1-s-b40613b837",
+      "file": "l1-s-b40613b837.mp3",
       "directory": "mandarin"
     },
     {
@@ -1045,19 +1005,6 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-242d7e4a67cb99d7",
-      "input": "好，我要包子，也要饺子。",
-      "expectedPinyin": "Hǎo, wǒ yào bāozi, yě yào jiǎozi.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-242d7e4a67cb99d7"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-7222e8fc7c7a760c73aa",
-      "file": "vocab-7222e8fc7c7a760c73aa.mp3",
-      "directory": "mandarin"
-    },
-    {
       "entryId": "PH-2c5108b99f0c00e3",
       "input": "老师，早上好！",
       "expectedPinyin": "Lǎoshī, zǎoshang hǎo!",
@@ -1068,97 +1015,6 @@
       "status": "available_unverified_decode",
       "clipId": "l2-s-941a922a06",
       "file": "l2-s-941a922a06.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-5678193b86e8724f",
-      "input": "您好！你们家真漂亮！",
-      "expectedPinyin": "Nín hǎo! Nǐmen jiā zhēn piàoliang!",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-5678193b86e8724f"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l3-s-f313dfaced",
-      "file": "l3-s-f313dfaced.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-6df8b6bf89d466a0",
-      "input": "他也很好。",
-      "expectedPinyin": "Tā yě hěn hǎo.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-6df8b6bf89d466a0"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l1-s-b40613b837",
-      "file": "l1-s-b40613b837.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-9d60c2539b2ec66b",
-      "input": "我不太忙。大为好吗？",
-      "expectedPinyin": "Wǒ bú tài máng. Dàwéi hǎo ma?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-9d60c2539b2ec66b"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l1-s-139bd71cb9",
-      "file": "l1-s-139bd71cb9.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-b4e54d7c23aaf1d0",
-      "input": "那是我好朋友。",
-      "expectedPinyin": "Nà shì wǒ hǎo péngyou.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-b4e54d7c23aaf1d0"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-0494b44f5e4b441530c9",
-      "file": "vocab-0494b44f5e4b441530c9.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-c5cfe5e5b205152f",
-      "input": "好，我要饺子，也要包子。",
-      "expectedPinyin": "Hǎo, wǒ yào jiǎozi, yě yào bāozi.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-c5cfe5e5b205152f"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l2-s-75a9d3f109",
-      "file": "l2-s-75a9d3f109.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-d0443e7aa5d3b780",
-      "input": "您好！老师，您贵姓？",
-      "expectedPinyin": "Nín hǎo! Lǎoshī, nín guìxìng?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-d0443e7aa5d3b780"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l2-s-2f018f73ba",
-      "file": "l2-s-2f018f73ba.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-d36d24a8a0e932b0",
-      "input": "你们好！",
-      "expectedPinyin": "Nǐmen hǎo!",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-d36d24a8a0e932b0"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l1-g-nimenhao",
-      "file": "l1-g-nimenhao.mp3",
       "directory": "mandarin"
     },
     {
@@ -1175,6 +1031,84 @@
       "directory": "mandarin"
     },
     {
+      "entryId": "PH-5678193b86e8724f",
+      "input": "您好！你们家真漂亮！",
+      "expectedPinyin": "Nín hǎo! Nǐmen jiā zhēn piàoliang!",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-5678193b86e8724f"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l3-s-f313dfaced",
+      "file": "l3-s-f313dfaced.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-9d60c2539b2ec66b",
+      "input": "我不太忙。大为好吗？",
+      "expectedPinyin": "Wǒ bú tài máng. Dàwéi hǎo ma?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-9d60c2539b2ec66b"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l1-s-139bd71cb9",
+      "file": "l1-s-139bd71cb9.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-d0443e7aa5d3b780",
+      "input": "您好！老师，您贵姓？",
+      "expectedPinyin": "Nín hǎo! Lǎoshī, nín guìxìng?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-d0443e7aa5d3b780"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l2-s-2f018f73ba",
+      "file": "l2-s-2f018f73ba.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-242d7e4a67cb99d7",
+      "input": "好，我要包子，也要饺子。",
+      "expectedPinyin": "Hǎo, wǒ yào bāozi, yě yào jiǎozi.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-242d7e4a67cb99d7"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-7222e8fc7c7a760c73aa",
+      "file": "vocab-7222e8fc7c7a760c73aa.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-c5cfe5e5b205152f",
+      "input": "好，我要饺子，也要包子。",
+      "expectedPinyin": "Hǎo, wǒ yào jiǎozi, yě yào bāozi.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-c5cfe5e5b205152f"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l2-s-75a9d3f109",
+      "file": "l2-s-75a9d3f109.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-dae60f8dfb9a535f",
+      "input": "大家好！我姓马，叫马大为，是美国人。",
+      "expectedPinyin": "Dàjiā hǎo! Wǒ xìng Mǎ, jiào Mǎ Dàwéi, shì Měiguórén.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-dae60f8dfb9a535f"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-b49ee28e8ccfebd0ad19",
+      "file": "vocab-b49ee28e8ccfebd0ad19.mp3",
+      "directory": "mandarin"
+    },
+    {
       "entryId": "v-我",
       "input": "我",
       "expectedPinyin": "wǒ",
@@ -1188,68 +1122,42 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-007f1261b0953697",
-      "input": "我有一个姐姐，还有一个妹妹。",
-      "expectedPinyin": "Wǒ yǒu yí ge jiějie, hái yǒu yí ge mèimei.",
+      "entryId": "PH-9433697e7809f8e3",
+      "input": "我是老师。",
+      "expectedPinyin": "Wǒ shì lǎoshī.",
       "kind": "sentence",
       "entryIds": [
-        "PH-007f1261b0953697"
+        "PH-9433697e7809f8e3"
       ],
       "status": "not_requested",
-      "clipId": "vocab-8670633e825afa0d59b3",
-      "file": "vocab-8670633e825afa0d59b3.mp3",
+      "clipId": "vocab-ef67a9551f9d56add05d",
+      "file": "vocab-ef67a9551f9d56add05d.mp3",
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-047f9e4cb5e86d8b",
-      "input": "我是秘鲁人。",
-      "expectedPinyin": "Wŏ shì Bìlŭ rén.",
+      "entryId": "PH-a820c114c52000f9",
+      "input": "我叫马丽。",
+      "expectedPinyin": "Wǒ jiào Mǎ Lì",
       "kind": "sentence",
       "entryIds": [
-        "PH-047f9e4cb5e86d8b"
+        "PH-a820c114c52000f9"
       ],
       "status": "not_requested",
-      "clipId": "vocab-f0247dff8d4fe086640a",
-      "file": "vocab-f0247dff8d4fe086640a.mp3",
+      "clipId": "vocab-6bffd591c20647adc463",
+      "file": "vocab-6bffd591c20647adc463.mp3",
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-09cb5a21fffc1281",
-      "input": "我妈妈是北京人，她喜欢吃面条儿和饺子。",
-      "expectedPinyin": "Wǒ māma shì Běijīng rén, tā xǐhuan chī miàntiáor hé jiǎozi.",
+      "entryId": "PH-af767f81801fcce5",
+      "input": "我要咖啡。",
+      "expectedPinyin": "wǒ yào kāfēi.",
       "kind": "sentence",
       "entryIds": [
-        "PH-09cb5a21fffc1281"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l2-s-f054baeb14",
-      "file": "l2-s-f054baeb14.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-0bee41504f87d636",
-      "input": "我妈妈是北京人，她喜欢吃面条和饺子。",
-      "expectedPinyin": "Wǒ māma shì Běijīng rén, tā xǐhuan chī miàntiáo hé jiǎozi.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-0bee41504f87d636"
+        "PH-af767f81801fcce5"
       ],
       "status": "not_requested",
-      "clipId": "vocab-f07d617ee9f340174f9b",
-      "file": "vocab-f07d617ee9f340174f9b.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-0fa46b07401b07ce",
-      "input": "我要一杯咖啡。",
-      "expectedPinyin": "Wǒ yào yì bēi kāfēi.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-0fa46b07401b07ce"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-6e5258062e17c5cffa78",
-      "file": "vocab-6e5258062e17c5cffa78.mp3",
+      "clipId": "vocab-7ed07f99e762857a8aaa",
+      "file": "vocab-7ed07f99e762857a8aaa.mp3",
       "directory": "mandarin"
     },
     {
@@ -1279,289 +1187,16 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-15e6b206f6e02736",
-      "input": "这不是我弟弟。这是我哥哥。",
-      "expectedPinyin": "Zhè bú shì wǒ dìdi, zhè shì wǒ gēge.",
+      "entryId": "PH-8b42c2a6acb9815a",
+      "input": "他手大，我手小。",
+      "expectedPinyin": "tā shǒu dà, wǒ shǒu xiǎo.",
       "kind": "sentence",
       "entryIds": [
-        "PH-15e6b206f6e02736"
+        "PH-8b42c2a6acb9815a"
       ],
       "status": "not_requested",
-      "clipId": "vocab-a41f2c48fde81a08e52d",
-      "file": "vocab-a41f2c48fde81a08e52d.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-17071362f2fae7c7",
-      "input": "好吃。我爸爸是上海人，他喜欢吃点心和米饭。",
-      "expectedPinyin": "Hǎochī. Wǒ bàba shì Shànghǎi rén, tā xǐhuan chī diǎnxin hé mǐfàn.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-17071362f2fae7c7"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l2-s-dad1103f32",
-      "file": "l2-s-dad1103f32.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-17071362f2fae7c7",
-      "input": "好吃，我爸爸是上海人，他喜欢吃点心和米饭。",
-      "expectedPinyin": "Hǎo chī, wǒ bàba shì Shànghǎi rén, tā xǐhuan chī diǎnxīn hé mǐfàn.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-17071362f2fae7c7"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-e3a55d02afdcafc50d62",
-      "file": "vocab-e3a55d02afdcafc50d62.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-178e8464cbdaf3b6",
-      "input": "她和我都是汉语老师。",
-      "expectedPinyin": "Tā hé wǒ dōu shì Hànyǔ lǎoshī.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-178e8464cbdaf3b6"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-886aa2937eeb33618abf",
-      "file": "vocab-886aa2937eeb33618abf.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-23c2c72791905b34",
-      "input": "我朋友是中国人。",
-      "expectedPinyin": "Wŏ péngyou shì Zhōngguó rén.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-23c2c72791905b34"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-755d38f294da227d2f3c",
-      "file": "vocab-755d38f294da227d2f3c.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-29679f718599809e",
-      "input": "我不是老师，我是学生。",
-      "expectedPinyin": "Wǒ búshì lǎoshī, wǒ shì xuéshēng.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-29679f718599809e"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-cf52f973f89362a12aee",
-      "file": "vocab-cf52f973f89362a12aee.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-2e9d54b2f234dbec",
-      "input": "我喝咖啡。",
-      "expectedPinyin": "Wǒ hē kāfēi.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-2e9d54b2f234dbec"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l3-s-a3e1fab1bd",
-      "file": "l3-s-a3e1fab1bd.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-2fcbdbb92079b041",
-      "input": "我会用筷子。",
-      "expectedPinyin": "wǒ huì yòng kuàizi",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-2fcbdbb92079b041"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-ba5d1047fc59d9cf8a52",
-      "file": "vocab-ba5d1047fc59d9cf8a52.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-33e998b656ad5778",
-      "input": "我家有七口人。",
-      "expectedPinyin": "Wǒ jiā yǒu qī kǒu rén.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-33e998b656ad5778"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-a9dff5cdc470873e98f9",
-      "file": "vocab-a9dff5cdc470873e98f9.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-344fac58c01f6a02",
-      "input": "是我男朋友。",
-      "expectedPinyin": "Shì wǒ nánpéngyou.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-344fac58c01f6a02"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-c9466ba174aab4f59ad4",
-      "file": "vocab-c9466ba174aab4f59ad4.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-38e7e65bebc34f6a",
-      "input": "我会汉语和一点儿西班牙语。",
-      "expectedPinyin": "wǒ huì hàn yǔ hé yì diǎnr xī bān yá yǔ",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-38e7e65bebc34f6a"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-86bde2d0f2cb244d28b2",
-      "file": "vocab-86bde2d0f2cb244d28b2.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-399600f1c8281e82",
-      "input": "我叫马大为。",
-      "expectedPinyin": "Wǒ jiào Mǎ Dàwéi.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-399600f1c8281e82"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l1-s-wojiao-madawei",
-      "file": "l1-s-wojiao-madawei.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-3bd601533f50ac73",
-      "input": "这不是我弟弟。这是我哥哥。林娜，你们家有几口人？",
-      "expectedPinyin": "Zhè bú shì wǒ dìdi. Zhè shì wǒ gēge. Lín Nà, nǐmen jiā yǒu jǐ kǒu rén?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-3bd601533f50ac73"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l3-s-3346835636",
-      "file": "l3-s-3346835636.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-42f20ea8ea35de0c",
-      "input": "我学习英语。",
-      "expectedPinyin": "wǒ xuéxí Yīngyǔ.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-42f20ea8ea35de0c"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-b140f15da3ca86d29d78",
-      "file": "vocab-b140f15da3ca86d29d78.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-44845a7f16bb7029",
-      "input": "我今年二十五岁。",
-      "expectedPinyin": "Wǒ jīnnián èrshíwǔ suì.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-44845a7f16bb7029"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-e933d6f71de768b4b1ba",
-      "file": "vocab-e933d6f71de768b4b1ba.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-45083e149d8f3010",
-      "input": "我会西班牙语和英语。",
-      "expectedPinyin": "wǒ huì xī bān yá yǔ hé yīnɡ yǔ",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-45083e149d8f3010"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-3d08acae5b9c2a43e4d1",
-      "file": "vocab-3d08acae5b9c2a43e4d1.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-4a63b9623c9c3cde",
-      "input": "我爸爸是医生，妈妈是老师。",
-      "expectedPinyin": "Wǒ bàba shì yīshēng, māma shì lǎoshī.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-4a63b9623c9c3cde"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l3-s-902ece0a18",
-      "file": "l3-s-902ece0a18.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-4fac66dc4ef24a57",
-      "input": "是。这是我女儿。",
-      "expectedPinyin": "Shì. Zhè shì wǒ nǚ’ér.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-4fac66dc4ef24a57"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l3-s-b06550907c",
-      "file": "l3-s-b06550907c.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-524e2d7be8ba76be",
-      "input": "我要两个包子，一杯牛奶。",
-      "expectedPinyin": "Wǒ yào liǎng ge bāozi, yì bēi niúnǎi.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-524e2d7be8ba76be"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-b24cbd59478d30e2f9d4",
-      "file": "vocab-b24cbd59478d30e2f9d4.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-5387dfd2cb5f7886",
-      "input": "我今年三十岁。",
-      "expectedPinyin": "wǒ jīnnián sān shí suì.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-5387dfd2cb5f7886"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-d45deb37d5bebb7ed858",
-      "file": "vocab-d45deb37d5bebb7ed858.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-59242824d68f9036",
-      "input": "我学习西班牙语。",
-      "expectedPinyin": "wǒ xué xí xī bān yá yǔ",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-59242824d68f9036"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-a850bcc17c0c9aae636b",
-      "file": "vocab-a850bcc17c0c9aae636b.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-6aacc8eb7fd70464",
-      "input": "我不要咖啡。",
-      "expectedPinyin": "Wǒ bú yào kāfēi.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-6aacc8eb7fd70464"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-4289c73b1cb3164482fc",
-      "file": "vocab-4289c73b1cb3164482fc.mp3",
+      "clipId": "vocab-2a1fd0985f16dc05c3cb",
+      "file": "vocab-2a1fd0985f16dc05c3cb.mp3",
       "directory": "mandarin"
     },
     {
@@ -1578,6 +1213,84 @@
       "directory": "mandarin"
     },
     {
+      "entryId": "PH-e7ee167c98606778",
+      "input": "我也不忙。",
+      "expectedPinyin": "Wǒ yě bú máng.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-e7ee167c98606778"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-189924f86966b9df2246",
+      "file": "vocab-189924f86966b9df2246.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-047f9e4cb5e86d8b",
+      "input": "我是秘鲁人。",
+      "expectedPinyin": "Wŏ shì Bìlŭ rén.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-047f9e4cb5e86d8b"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-f0247dff8d4fe086640a",
+      "file": "vocab-f0247dff8d4fe086640a.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-2fcbdbb92079b041",
+      "input": "我会用筷子。",
+      "expectedPinyin": "wǒ huì yòng kuàizi",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-2fcbdbb92079b041"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-ba5d1047fc59d9cf8a52",
+      "file": "vocab-ba5d1047fc59d9cf8a52.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-344fac58c01f6a02",
+      "input": "是我男朋友。",
+      "expectedPinyin": "Shì wǒ nánpéngyou.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-344fac58c01f6a02"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-c9466ba174aab4f59ad4",
+      "file": "vocab-c9466ba174aab4f59ad4.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-42f20ea8ea35de0c",
+      "input": "我学习英语。",
+      "expectedPinyin": "wǒ xuéxí Yīngyǔ.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-42f20ea8ea35de0c"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-b140f15da3ca86d29d78",
+      "file": "vocab-b140f15da3ca86d29d78.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-6aacc8eb7fd70464",
+      "input": "我不要咖啡。",
+      "expectedPinyin": "Wǒ bú yào kāfēi.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-6aacc8eb7fd70464"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-4289c73b1cb3164482fc",
+      "file": "vocab-4289c73b1cb3164482fc.mp3",
+      "directory": "mandarin"
+    },
+    {
       "entryId": "PH-7d2af040dfe7790f",
       "input": "我今年十岁。",
       "expectedPinyin": "wǒ jīnnián shí suì.",
@@ -1588,149 +1301,6 @@
       "status": "not_requested",
       "clipId": "vocab-a0dd472271b63dedec90",
       "file": "vocab-a0dd472271b63dedec90.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-802e8eea15bda367",
-      "input": "我早上刚到北京。",
-      "expectedPinyin": "wǒ zăoshang gāng dào Běijīng",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-802e8eea15bda367"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-906e21e8d53abbb31f26",
-      "file": "vocab-906e21e8d53abbb31f26.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-89f20e12f6f7484b",
-      "input": "我是中国人。再见。",
-      "expectedPinyin": "Wǒ shì Zhōngguó rén. Zàijiàn.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-89f20e12f6f7484b"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-bf8b271516804796e64b",
-      "file": "vocab-bf8b271516804796e64b.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-8adb07789bff67a4",
-      "input": "我姓宋，叫宋华。",
-      "expectedPinyin": "Wǒ xìng Sòng, jiào Sòng Huá.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-8adb07789bff67a4"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l1-s-surname",
-      "file": "l1-s-surname.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-8b42c2a6acb9815a",
-      "input": "他手大，我手小。",
-      "expectedPinyin": "tā shǒu dà, wǒ shǒu xiǎo.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-8b42c2a6acb9815a"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-2a1fd0985f16dc05c3cb",
-      "file": "vocab-2a1fd0985f16dc05c3cb.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-9433697e7809f8e3",
-      "input": "我是老师。",
-      "expectedPinyin": "Wǒ shì lǎoshī.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-9433697e7809f8e3"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-ef67a9551f9d56add05d",
-      "file": "vocab-ef67a9551f9d56add05d.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-960aa0208aa54aa5",
-      "input": "我很忙。",
-      "expectedPinyin": "Wǒ hěn máng.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-960aa0208aa54aa5"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l1-s-3af92dd514",
-      "file": "l1-s-3af92dd514.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-a820c114c52000f9",
-      "input": "我叫马丽。",
-      "expectedPinyin": "Wǒ jiào Mǎ Lì",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-a820c114c52000f9"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-6bffd591c20647adc463",
-      "file": "vocab-6bffd591c20647adc463.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-a9a1b25303da44ce",
-      "input": "我没有哥哥，也没有姐姐。",
-      "expectedPinyin": "Wǒ méiyǒu gēge, yě méiyǒu jiějie.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-a9a1b25303da44ce"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-208c520006356dfb0230",
-      "file": "vocab-208c520006356dfb0230.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-af767f81801fcce5",
-      "input": "我要咖啡。",
-      "expectedPinyin": "wǒ yào kāfēi.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-af767f81801fcce5"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-7ed07f99e762857a8aaa",
-      "file": "vocab-7ed07f99e762857a8aaa.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-c72459420412ca24",
-      "input": "我们家一共有六口人：妈妈、一个哥哥、两个姐姐和我，还有贝贝。",
-      "expectedPinyin": "Wǒmen jiā yígòng yǒu liù kǒu rén: māma, yí ge gēge, liǎng ge jiějie hé wǒ, hái yǒu Bèibei.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-c72459420412ca24"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l3-s-88636d79f5",
-      "file": "l3-s-88636d79f5.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-d3b3338b0361002c",
-      "input": "这是马大为，他是我朋友，刚到北京。",
-      "expectedPinyin": "Zhè shì Mǎ Dàwéi, tā shì wǒ péngyou, gāng dào Běijīng.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-d3b3338b0361002c"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l2-s-451c978156",
-      "file": "l2-s-451c978156.mp3",
       "directory": "mandarin"
     },
     {
@@ -1747,42 +1317,185 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-e0ed09abc679978f",
-      "input": "我是美国人。我也学习汉语。陈老师，认识您很高兴。",
-      "expectedPinyin": "Wǒ shì Měiguó rén. Wǒ yě xuéxí Hànyǔ. Chén lǎoshī, rènshi nín hěn gāoxìng.",
+      "entryId": "PH-0fa46b07401b07ce",
+      "input": "我要一杯咖啡。",
+      "expectedPinyin": "Wǒ yào yì bēi kāfēi.",
       "kind": "sentence",
       "entryIds": [
-        "PH-e0ed09abc679978f"
+        "PH-0fa46b07401b07ce"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-6e5258062e17c5cffa78",
+      "file": "vocab-6e5258062e17c5cffa78.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-33e998b656ad5778",
+      "input": "我家有七口人。",
+      "expectedPinyin": "Wǒ jiā yǒu qī kǒu rén.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-33e998b656ad5778"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-a9dff5cdc470873e98f9",
+      "file": "vocab-a9dff5cdc470873e98f9.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-38f6ca8078116ec2",
+      "input": "我家有五口人。",
+      "expectedPinyin": "Wǒ jiā yǒu wǔ kǒu rén.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-38f6ca8078116ec2"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-020572b868f7ff478afd",
+      "file": "vocab-020572b868f7ff478afd.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-5387dfd2cb5f7886",
+      "input": "我今年三十岁。",
+      "expectedPinyin": "wǒ jīnnián sān shí suì.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-5387dfd2cb5f7886"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-d45deb37d5bebb7ed858",
+      "file": "vocab-d45deb37d5bebb7ed858.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-23c2c72791905b34",
+      "input": "我朋友是中国人。",
+      "expectedPinyin": "Wŏ péngyou shì Zhōngguó rén.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-23c2c72791905b34"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-755d38f294da227d2f3c",
+      "file": "vocab-755d38f294da227d2f3c.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-44845a7f16bb7029",
+      "input": "我今年二十五岁。",
+      "expectedPinyin": "Wǒ jīnnián èrshíwǔ suì.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-44845a7f16bb7029"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-e933d6f71de768b4b1ba",
+      "file": "vocab-e933d6f71de768b4b1ba.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-4fac66dc4ef24a57",
+      "input": "是。这是我女儿。",
+      "expectedPinyin": "Shì. Zhè shì wǒ nǚ’ér.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-4fac66dc4ef24a57"
       ],
       "status": "available_unverified_decode",
-      "clipId": "l2-s-8e4e3d785d",
-      "file": "l2-s-8e4e3d785d.mp3",
+      "clipId": "l3-s-b06550907c",
+      "file": "l3-s-b06550907c.mp3",
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-e0ed09abc679978f",
-      "input": "我是美国人，我也学习汉语。陈老师，认识您很高兴。",
-      "expectedPinyin": "Wǒ shì Měiguó rén, wǒ yě xuéxí Hànyǔ. Chén lǎoshī, rénshi nín hěn gāoxìng.",
+      "entryId": "PH-59242824d68f9036",
+      "input": "我学习西班牙语。",
+      "expectedPinyin": "wǒ xué xí xī bān yá yǔ",
       "kind": "sentence",
       "entryIds": [
-        "PH-e0ed09abc679978f"
+        "PH-59242824d68f9036"
       ],
       "status": "not_requested",
-      "clipId": "vocab-440010b64066ae135bc5",
-      "file": "vocab-440010b64066ae135bc5.mp3",
+      "clipId": "vocab-a850bcc17c0c9aae636b",
+      "file": "vocab-a850bcc17c0c9aae636b.mp3",
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-e7ee167c98606778",
-      "input": "我也不忙。",
-      "expectedPinyin": "Wǒ yě bú máng.",
+      "entryId": "PH-802e8eea15bda367",
+      "input": "我早上刚到北京。",
+      "expectedPinyin": "wǒ zăoshang gāng dào Běijīng",
       "kind": "sentence",
       "entryIds": [
-        "PH-e7ee167c98606778"
+        "PH-802e8eea15bda367"
       ],
       "status": "not_requested",
-      "clipId": "vocab-189924f86966b9df2246",
-      "file": "vocab-189924f86966b9df2246.mp3",
+      "clipId": "vocab-906e21e8d53abbb31f26",
+      "file": "vocab-906e21e8d53abbb31f26.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-8adb07789bff67a4",
+      "input": "我姓宋，叫宋华。",
+      "expectedPinyin": "Wǒ xìng Sòng, jiào Sòng Huá.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-8adb07789bff67a4"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l1-s-surname",
+      "file": "l1-s-surname.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-f714b30b10d782a5",
+      "input": "我今年七十五岁。",
+      "expectedPinyin": "Wǒ jīnnián qīshíwǔ suì.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-f714b30b10d782a5"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-304ffd9be14732ee802d",
+      "file": "vocab-304ffd9be14732ee802d.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-89f20e12f6f7484b",
+      "input": "我是中国人。再见。",
+      "expectedPinyin": "Wǒ shì Zhōngguó rén. Zàijiàn.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-89f20e12f6f7484b"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-bf8b271516804796e64b",
+      "file": "vocab-bf8b271516804796e64b.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-178e8464cbdaf3b6",
+      "input": "她和我都是汉语老师。",
+      "expectedPinyin": "Tā hé wǒ dōu shì Hànyǔ lǎoshī.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-178e8464cbdaf3b6"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-886aa2937eeb33618abf",
+      "file": "vocab-886aa2937eeb33618abf.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-45083e149d8f3010",
+      "input": "我会西班牙语和英语。",
+      "expectedPinyin": "wǒ huì xī bān yá yǔ hé yīnɡ yǔ",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-45083e149d8f3010"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-3d08acae5b9c2a43e4d1",
+      "file": "vocab-3d08acae5b9c2a43e4d1.mp3",
       "directory": "mandarin"
     },
     {
@@ -1799,16 +1512,120 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-e933b4d99ff4bf1e",
-      "input": "我家有三口人，爸爸、妈妈和我。",
-      "expectedPinyin": "Wǒ jiā yǒu sān kǒu rén, bàba, māma hé wǒ.",
+      "entryId": "PH-29679f718599809e",
+      "input": "我不是老师，我是学生。",
+      "expectedPinyin": "Wǒ búshì lǎoshī, wǒ shì xuéshēng.",
       "kind": "sentence",
       "entryIds": [
-        "PH-e933b4d99ff4bf1e"
+        "PH-29679f718599809e"
       ],
       "status": "not_requested",
-      "clipId": "vocab-2577f63a941c24222be9",
-      "file": "vocab-2577f63a941c24222be9.mp3",
+      "clipId": "vocab-cf52f973f89362a12aee",
+      "file": "vocab-cf52f973f89362a12aee.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-524e2d7be8ba76be",
+      "input": "我要两个包子，一杯牛奶。",
+      "expectedPinyin": "Wǒ yào liǎng ge bāozi, yì bēi niúnǎi.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-524e2d7be8ba76be"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-b24cbd59478d30e2f9d4",
+      "file": "vocab-b24cbd59478d30e2f9d4.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-a9a1b25303da44ce",
+      "input": "我没有哥哥，也没有姐姐。",
+      "expectedPinyin": "Wǒ méiyǒu gēge, yě méiyǒu jiějie.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-a9a1b25303da44ce"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-208c520006356dfb0230",
+      "file": "vocab-208c520006356dfb0230.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-b0957295d4abc71b",
+      "input": "约翰是我的狗，今年两岁。",
+      "expectedPinyin": "Yuēhàn shì wǒ de gǒu, jīnnián liǎng suì.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-b0957295d4abc71b"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-0ed6504d8aaa7ef96d40",
+      "file": "vocab-0ed6504d8aaa7ef96d40.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-15e6b206f6e02736",
+      "input": "这不是我弟弟。这是我哥哥。",
+      "expectedPinyin": "Zhè bú shì wǒ dìdi, zhè shì wǒ gēge.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-15e6b206f6e02736"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-a41f2c48fde81a08e52d",
+      "file": "vocab-a41f2c48fde81a08e52d.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-38e7e65bebc34f6a",
+      "input": "我会汉语和一点儿西班牙语。",
+      "expectedPinyin": "wǒ huì hàn yǔ hé yì diǎnr xī bān yá yǔ",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-38e7e65bebc34f6a"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-86bde2d0f2cb244d28b2",
+      "file": "vocab-86bde2d0f2cb244d28b2.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-4a63b9623c9c3cde",
+      "input": "我爸爸是医生，妈妈是老师。",
+      "expectedPinyin": "Wǒ bàba shì yīshēng, māma shì lǎoshī.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-4a63b9623c9c3cde"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l3-s-902ece0a18",
+      "file": "l3-s-902ece0a18.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-6117b49a9bfca6b0",
+      "input": "我没有弟弟，我有一个哥哥。",
+      "expectedPinyin": "Wǒ méiyǒu dìdi, wǒ yǒu yíge gēge.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-6117b49a9bfca6b0"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-803545d2f0e7688cd87c",
+      "file": "vocab-803545d2f0e7688cd87c.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-007f1261b0953697",
+      "input": "我有一个姐姐，还有一个妹妹。",
+      "expectedPinyin": "Wǒ yǒu yí ge jiějie, hái yǒu yí ge mèimei.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-007f1261b0953697"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-8670633e825afa0d59b3",
+      "file": "vocab-8670633e825afa0d59b3.mp3",
       "directory": "mandarin"
     },
     {
@@ -1825,16 +1642,159 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-f714b30b10d782a5",
-      "input": "我今年七十五岁。",
-      "expectedPinyin": "Wǒ jīnnián qīshíwǔ suì.",
+      "entryId": "PH-e933b4d99ff4bf1e",
+      "input": "我家有三口人，爸爸、妈妈和我。",
+      "expectedPinyin": "Wǒ jiā yǒu sān kǒu rén, bàba, māma hé wǒ.",
       "kind": "sentence",
       "entryIds": [
-        "PH-f714b30b10d782a5"
+        "PH-e933b4d99ff4bf1e"
       ],
       "status": "not_requested",
-      "clipId": "vocab-304ffd9be14732ee802d",
-      "file": "vocab-304ffd9be14732ee802d.mp3",
+      "clipId": "vocab-2577f63a941c24222be9",
+      "file": "vocab-2577f63a941c24222be9.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-11e351a94af9204a",
+      "input": "我的老师是陈老师，我们都很喜欢她。",
+      "expectedPinyin": "Wǒ de lǎoshī shì Chén lǎoshī, wǒmen dōu hěn xǐhuan tā.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-11e351a94af9204a"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-667dc20b3ca193643b2c",
+      "file": "vocab-667dc20b3ca193643b2c.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-d3b3338b0361002c",
+      "input": "这是马大为，他是我朋友，刚到北京。",
+      "expectedPinyin": "Zhè shì Mǎ Dàwéi, tā shì wǒ péngyou, gāng dào Běijīng.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-d3b3338b0361002c"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l2-s-451c978156",
+      "file": "l2-s-451c978156.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-0bee41504f87d636",
+      "input": "我妈妈是北京人，她喜欢吃面条和饺子。",
+      "expectedPinyin": "Wǒ māma shì Běijīng rén, tā xǐhuan chī miàntiáo hé jiǎozi.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-0bee41504f87d636"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-f07d617ee9f340174f9b",
+      "file": "vocab-f07d617ee9f340174f9b.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-09cb5a21fffc1281",
+      "input": "我妈妈是北京人，她喜欢吃面条儿和饺子。",
+      "expectedPinyin": "Wǒ māma shì Běijīng rén, tā xǐhuan chī miàntiáor hé jiǎozi.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-09cb5a21fffc1281"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l2-s-f054baeb14",
+      "file": "l2-s-f054baeb14.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-ef23bf3cb038cc39",
+      "input": "我有三个中国朋友，王小云、宋华和陆雨平。",
+      "expectedPinyin": "Wǒ yǒu sān ge Zhōngguó péngyou, Wáng Xiǎoyún, Sòng Huá hé Lù Yǔpíng.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-ef23bf3cb038cc39"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-58ee16cd4f9e6a130e1a",
+      "file": "vocab-58ee16cd4f9e6a130e1a.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-17071362f2fae7c7",
+      "input": "好吃。我爸爸是上海人，他喜欢吃点心和米饭。",
+      "expectedPinyin": "Hǎochī. Wǒ bàba shì Shànghǎi rén, tā xǐhuan chī diǎnxin hé mǐfàn.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-17071362f2fae7c7"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l2-s-dad1103f32",
+      "file": "l2-s-dad1103f32.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-80725cf32b4c9885",
+      "input": "我爸爸是律师，我妈妈是工程师，我哥哥是经理。",
+      "expectedPinyin": "Wǒ bàba shì lǜshī, wǒ māma shì gōngchéngshī, wǒ gēge shì jīnglǐ.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-80725cf32b4c9885"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-a127c0ec5058e90aec39",
+      "file": "vocab-a127c0ec5058e90aec39.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-3bd601533f50ac73",
+      "input": "这不是我弟弟。这是我哥哥。林娜，你们家有几口人？",
+      "expectedPinyin": "Zhè bú shì wǒ dìdi. Zhè shì wǒ gēge. Lín Nà, nǐmen jiā yǒu jǐ kǒu rén?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-3bd601533f50ac73"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l3-s-3346835636",
+      "file": "l3-s-3346835636.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-e0ed09abc679978f",
+      "input": "我是美国人。我也学习汉语。陈老师，认识您很高兴。",
+      "expectedPinyin": "Wǒ shì Měiguó rén. Wǒ yě xuéxí Hànyǔ. Chén lǎoshī, rènshi nín hěn gāoxìng.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-e0ed09abc679978f"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l2-s-8e4e3d785d",
+      "file": "l2-s-8e4e3d785d.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-c72459420412ca24",
+      "input": "我们家一共有六口人：妈妈、一个哥哥、两个姐姐和我，还有贝贝。",
+      "expectedPinyin": "Wǒmen jiā yígòng yǒu liù kǒu rén: māma, yí ge gēge, liǎng ge jiějie hé wǒ, hái yǒu Bèibei.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-c72459420412ca24"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l3-s-88636d79f5",
+      "file": "l3-s-88636d79f5.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-872c9604d392c72b",
+      "input": "我们家一共有五口人，爸爸、妈妈、哥哥和我，还有约翰（John）。",
+      "expectedPinyin": "Wǒmen jiā yígòng yǒu wǔ kǒu rén, bàba, māma, gēge hé wǒ, hái yǒu Yuēhàn.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-872c9604d392c72b"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-cba6e40a84ab4f2ed69b",
+      "file": "vocab-cba6e40a84ab4f2ed69b.mp3",
       "directory": "mandarin"
     },
     {
@@ -1890,19 +1850,6 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-1af10d4c756781c6",
-      "input": "谢谢。请坐。你们喝什么？我们家有茶和咖啡。",
-      "expectedPinyin": "Xièxie. Qǐng zuò. Nǐmen hē shénme? Wǒmen jiā yǒu chá hé kāfēi.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-1af10d4c756781c6"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l3-s-7b9a30c8bd",
-      "file": "l3-s-7b9a30c8bd.mp3",
-      "directory": "mandarin"
-    },
-    {
       "entryId": "PH-b2ce8f66a105ec80",
       "input": "在。力波，请进，请坐。",
       "expectedPinyin": "Zài. Lìbō, qǐng jìn, qǐng zuò.",
@@ -1913,6 +1860,19 @@
       "status": "available_unverified_decode",
       "clipId": "l1-s-341ef2bd7f",
       "file": "l1-s-341ef2bd7f.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-1af10d4c756781c6",
+      "input": "谢谢。请坐。你们喝什么？我们家有茶和咖啡。",
+      "expectedPinyin": "Xièxie. Qǐng zuò. Nǐmen hē shénme? Wǒmen jiā yǒu chá hé kāfēi.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-1af10d4c756781c6"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l3-s-7b9a30c8bd",
+      "file": "l3-s-7b9a30c8bd.mp3",
       "directory": "mandarin"
     },
     {
@@ -1981,32 +1941,6 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-d9bb663c9e9f1bb9",
-      "input": "北京人喜欢吃什么？",
-      "expectedPinyin": "Běijīng rén xǐhuan chī shénme?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-d9bb663c9e9f1bb9"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l2-s-8f71eac0ef",
-      "file": "l2-s-8f71eac0ef.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-e9554e112a01940a",
-      "input": "这是什么？",
-      "expectedPinyin": "Zhè shì shénme",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-e9554e112a01940a"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-b11041f2005214421d02",
-      "file": "vocab-b11041f2005214421d02.mp3",
-      "directory": "mandarin"
-    },
-    {
       "entryId": "PH-fd63f91d021e950d",
       "input": "小云，这是什么？",
       "expectedPinyin": "Xiǎoyún, zhè shì shénme?",
@@ -2017,6 +1951,19 @@
       "status": "available_unverified_decode",
       "clipId": "l2-s-0a3b02921f",
       "file": "l2-s-0a3b02921f.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-d9bb663c9e9f1bb9",
+      "input": "北京人喜欢吃什么？",
+      "expectedPinyin": "Běijīng rén xǐhuan chī shénme?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-d9bb663c9e9f1bb9"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l2-s-8f71eac0ef",
+      "file": "l2-s-8f71eac0ef.mp3",
       "directory": "mandarin"
     },
     {
@@ -2046,19 +1993,6 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-3ac22ed851fa1318",
-      "input": "他也姓马。",
-      "expectedPinyin": "Tā yě xìng Mǎ.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-3ac22ed851fa1318"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-abdb73dbdc896911a633",
-      "file": "vocab-abdb73dbdc896911a633.mp3",
-      "directory": "mandarin"
-    },
-    {
       "entryId": "PH-d46578fe7fc8ba62",
       "input": "她姓陆。",
       "expectedPinyin": "Tā xìng Lù.",
@@ -2069,6 +2003,19 @@
       "status": "not_requested",
       "clipId": "vocab-af21e6f0c95b7b6d75c5",
       "file": "vocab-af21e6f0c95b7b6d75c5.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-3ac22ed851fa1318",
+      "input": "他也姓马。",
+      "expectedPinyin": "Tā yě xìng Mǎ.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-3ac22ed851fa1318"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-abdb73dbdc896911a633",
+      "file": "vocab-abdb73dbdc896911a633.mp3",
       "directory": "mandarin"
     },
     {
@@ -2111,32 +2058,6 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-18e28a2339872e96",
-      "input": "她也很累。",
-      "expectedPinyin": "Tā yě hěn lèi",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-18e28a2339872e96"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-a84515aad8dca2d6760e",
-      "file": "vocab-a84515aad8dca2d6760e.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-1cfbafc227a21c17",
-      "input": "林娜也很高兴。",
-      "expectedPinyin": "Línnà yě hěn gāoxìng.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-1cfbafc227a21c17"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-211208ed03adee026fbe",
-      "file": "vocab-211208ed03adee026fbe.mp3",
-      "directory": "mandarin"
-    },
-    {
       "entryId": "PH-2e3d8a4d7a9ecbbc",
       "input": "她很渴。",
       "expectedPinyin": "Tā hěn kě.",
@@ -2147,32 +2068,6 @@
       "status": "available_unverified_decode",
       "clipId": "l1-v-64619c91b0",
       "file": "l1-v-64619c91b0.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-4e10a72097b2309b",
-      "input": "他们有两个孩子，都很漂亮。",
-      "expectedPinyin": "Tāmen yǒu liǎng ge háizi, dōu hěn piàoliang.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-4e10a72097b2309b"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-84e0ac558a080524ac0f",
-      "file": "vocab-84e0ac558a080524ac0f.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-809344e864886f9c",
-      "input": "包子和饺子都很好吃。",
-      "expectedPinyin": "Bāozi hé jiǎozi dōu hěn hǎochī.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-809344e864886f9c"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l2-s-eefa403975",
-      "file": "l2-s-eefa403975.mp3",
       "directory": "mandarin"
     },
     {
@@ -2202,6 +2097,32 @@
       "directory": "mandarin"
     },
     {
+      "entryId": "PH-18e28a2339872e96",
+      "input": "她也很累。",
+      "expectedPinyin": "Tā yě hěn lèi",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-18e28a2339872e96"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-a84515aad8dca2d6760e",
+      "file": "vocab-a84515aad8dca2d6760e.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-1cfbafc227a21c17",
+      "input": "林娜也很高兴。",
+      "expectedPinyin": "Línnà yě hěn gāoxìng.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-1cfbafc227a21c17"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-211208ed03adee026fbe",
+      "file": "vocab-211208ed03adee026fbe.mp3",
+      "directory": "mandarin"
+    },
+    {
       "entryId": "PH-f83b5820507e3e7c",
       "input": "这张照片很有意思。",
       "expectedPinyin": "Zhè zhāng zhàopiàn hěn yǒuyìsi.",
@@ -2212,6 +2133,32 @@
       "status": "not_requested",
       "clipId": "vocab-06ccf051099ddf7a0825",
       "file": "vocab-06ccf051099ddf7a0825.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-809344e864886f9c",
+      "input": "包子和饺子都很好吃。",
+      "expectedPinyin": "Bāozi hé jiǎozi dōu hěn hǎochī.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-809344e864886f9c"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l2-s-eefa403975",
+      "file": "l2-s-eefa403975.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-4e10a72097b2309b",
+      "input": "他们有两个孩子，都很漂亮。",
+      "expectedPinyin": "Tāmen yǒu liǎng ge háizi, dōu hěn piàoliang.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-4e10a72097b2309b"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-84e0ac558a080524ac0f",
+      "file": "vocab-84e0ac558a080524ac0f.mp3",
       "directory": "mandarin"
     },
     {
@@ -2306,19 +2253,6 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-5929ae36e2adf604",
-      "input": "林娜在。",
-      "expectedPinyin": "Línnà zài.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-5929ae36e2adf604"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-a60f8b539a80356f332f",
-      "file": "vocab-a60f8b539a80356f332f.mp3",
-      "directory": "mandarin"
-    },
-    {
       "entryId": "PH-8404b517d7b8837d",
       "input": "五岁。今天她有钢琴课，不在家。",
       "expectedPinyin": "Wǔ suì. Jīntiān tā yǒu gāngqínkè, bú zài jiā.",
@@ -2329,19 +2263,6 @@
       "status": "available_unverified_decode",
       "clipId": "l3-s-f7f2fd9a2b",
       "file": "l3-s-f7f2fd9a2b.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-b1862654a4c3b740",
-      "input": "林娜在吗？",
-      "expectedPinyin": "Línnà zài ma?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-b1862654a4c3b740"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l1-s-linna-home",
-      "file": "l1-s-linna-home.mp3",
       "directory": "mandarin"
     },
     {
@@ -2356,6 +2277,19 @@
       "clipId": "tone-neutral-ma",
       "file": "tone-neutral-ma.mp3",
       "directory": "pinyin"
+    },
+    {
+      "entryId": "PH-e0f6db4806cea072",
+      "input": "她困吗？",
+      "expectedPinyin": "Tā kùn ma?",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-e0f6db4806cea072"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-15857239cc7d744f1aed",
+      "file": "vocab-15857239cc7d744f1aed.mp3",
+      "directory": "mandarin"
     },
     {
       "entryId": "PH-68f8d39880b47b54",
@@ -2394,19 +2328,6 @@
       "status": "available_unverified_decode",
       "clipId": "l2-s-2422c0af4f",
       "file": "l2-s-2422c0af4f.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-e0f6db4806cea072",
-      "input": "她困吗？",
-      "expectedPinyin": "Tā kùn ma?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-e0f6db4806cea072"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-15857239cc7d744f1aed",
-      "file": "vocab-15857239cc7d744f1aed.mp3",
       "directory": "mandarin"
     },
     {
@@ -2540,16 +2461,16 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-c3324d239c2c9dec",
-      "input": "中国的孩子真忙！",
-      "expectedPinyin": "Zhōngguó de háizi zhēn máng!",
+      "entryId": "PH-ec33f67613f2c910",
+      "input": "他不忙。",
+      "expectedPinyin": "tā bù máng.",
       "kind": "sentence",
       "entryIds": [
-        "PH-c3324d239c2c9dec"
+        "PH-ec33f67613f2c910"
       ],
-      "status": "available_unverified_decode",
-      "clipId": "l3-s-63ee4587a2",
-      "file": "l3-s-63ee4587a2.mp3",
+      "status": "not_requested",
+      "clipId": "vocab-2965defc7ef543fd611e",
+      "file": "vocab-2965defc7ef543fd611e.mp3",
       "directory": "mandarin"
     },
     {
@@ -2566,16 +2487,16 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-ec33f67613f2c910",
-      "input": "他不忙。",
-      "expectedPinyin": "tā bù máng.",
+      "entryId": "PH-c3324d239c2c9dec",
+      "input": "中国的孩子真忙！",
+      "expectedPinyin": "Zhōngguó de háizi zhēn máng!",
       "kind": "sentence",
       "entryIds": [
-        "PH-ec33f67613f2c910"
+        "PH-c3324d239c2c9dec"
       ],
-      "status": "not_requested",
-      "clipId": "vocab-2965defc7ef543fd611e",
-      "file": "vocab-2965defc7ef543fd611e.mp3",
+      "status": "available_unverified_decode",
+      "clipId": "l3-s-63ee4587a2",
+      "file": "l3-s-63ee4587a2.mp3",
       "directory": "mandarin"
     },
     {
@@ -2618,29 +2539,16 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-6831b0d4449d0edd",
-      "input": "他是Juan。",
-      "expectedPinyin": "Tā shì Juan.",
+      "entryId": "PH-c358d4611626e471",
+      "input": "他学做饭。",
+      "expectedPinyin": "tā xué zuò fàn",
       "kind": "sentence",
       "entryIds": [
-        "PH-6831b0d4449d0edd"
+        "PH-c358d4611626e471"
       ],
       "status": "not_requested",
-      "clipId": "vocab-26af487d2b23079ae4a8",
-      "file": "vocab-26af487d2b23079ae4a8.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-78a8c9d9dd602a47",
-      "input": "他是哪国人？",
-      "expectedPinyin": "Tā shì nǎ guó rén?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-78a8c9d9dd602a47"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-f768fa7ad6d5762fef26",
-      "file": "vocab-f768fa7ad6d5762fef26.mp3",
+      "clipId": "vocab-dd3b506435571b58b7b9",
+      "file": "vocab-dd3b506435571b58b7b9.mp3",
       "directory": "mandarin"
     },
     {
@@ -2670,16 +2578,16 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-c358d4611626e471",
-      "input": "他学做饭。",
-      "expectedPinyin": "tā xué zuò fàn",
+      "entryId": "PH-6831b0d4449d0edd",
+      "input": "他是Juan。",
+      "expectedPinyin": "Tā shì Juan.",
       "kind": "sentence",
       "entryIds": [
-        "PH-c358d4611626e471"
+        "PH-6831b0d4449d0edd"
       ],
       "status": "not_requested",
-      "clipId": "vocab-dd3b506435571b58b7b9",
-      "file": "vocab-dd3b506435571b58b7b9.mp3",
+      "clipId": "vocab-26af487d2b23079ae4a8",
+      "file": "vocab-26af487d2b23079ae4a8.mp3",
       "directory": "mandarin"
     },
     {
@@ -2827,19 +2735,6 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-493c48e1a43cf756",
-      "input": "是啊。晚上她还有英语课。",
-      "expectedPinyin": "Shì a. Wǎnshang tā hái yǒu Yīngyǔkè.",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-493c48e1a43cf756"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l3-s-7540ed1c6a",
-      "file": "l3-s-7540ed1c6a.mp3",
-      "directory": "mandarin"
-    },
-    {
       "entryId": "PH-ac25d2a8af3fe209",
       "input": "她学画画。",
       "expectedPinyin": "tā xué huà huà",
@@ -2850,6 +2745,19 @@
       "status": "not_requested",
       "clipId": "vocab-abd4b0db3c3e1138893c",
       "file": "vocab-abd4b0db3c3e1138893c.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-493c48e1a43cf756",
+      "input": "是啊。晚上她还有英语课。",
+      "expectedPinyin": "Shì a. Wǎnshang tā hái yǒu Yīngyǔkè.",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-493c48e1a43cf756"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l3-s-7540ed1c6a",
+      "file": "l3-s-7540ed1c6a.mp3",
       "directory": "mandarin"
     },
     {
@@ -2931,19 +2839,6 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-73edb201a1b0b88d",
-      "input": "你们家有几口人？",
-      "expectedPinyin": "Nǐmen jiā yǒu jǐ kǒu rén?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-73edb201a1b0b88d"
-      ],
-      "status": "available_unverified_decode",
-      "clipId": "l3-s-a4fcd6666b",
-      "file": "l3-s-a4fcd6666b.mp3",
-      "directory": "mandarin"
-    },
-    {
       "entryId": "v-们",
       "input": "们",
       "expectedPinyin": "men",
@@ -2970,16 +2865,16 @@
       "directory": "mandarin"
     },
     {
-      "entryId": "PH-663b7ecf4908ab3f",
-      "input": "这是点心。",
-      "expectedPinyin": "Zhè shì diǎnxin.",
+      "entryId": "PH-dc26f46b796d85d5",
+      "input": "这是谁？",
+      "expectedPinyin": "Zhè shì shéi",
       "kind": "sentence",
       "entryIds": [
-        "PH-663b7ecf4908ab3f"
+        "PH-dc26f46b796d85d5"
       ],
-      "status": "available_unverified_decode",
-      "clipId": "l2-s-f24659651d",
-      "file": "l2-s-f24659651d.mp3",
+      "status": "not_requested",
+      "clipId": "vocab-cba9e8219b516e1a786f",
+      "file": "vocab-cba9e8219b516e1a786f.mp3",
       "directory": "mandarin"
     },
     {
@@ -2993,19 +2888,6 @@
       "status": "not_requested",
       "clipId": "vocab-c8ef085b446a128e9f5f",
       "file": "vocab-c8ef085b446a128e9f5f.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-dc26f46b796d85d5",
-      "input": "这是谁？",
-      "expectedPinyin": "Zhè shì shéi",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-dc26f46b796d85d5"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-cba9e8219b516e1a786f",
-      "file": "vocab-cba9e8219b516e1a786f.mp3",
       "directory": "mandarin"
     },
     {
@@ -3071,19 +2953,6 @@
       "status": "available_unverified_decode",
       "clipId": "l1-v-7a424449a3",
       "file": "l1-v-7a424449a3.mp3",
-      "directory": "mandarin"
-    },
-    {
-      "entryId": "PH-e6b8b1514811b7dd",
-      "input": "您贵姓？",
-      "expectedPinyin": "nín guìxìng?",
-      "kind": "sentence",
-      "entryIds": [
-        "PH-e6b8b1514811b7dd"
-      ],
-      "status": "not_requested",
-      "clipId": "vocab-7b6e0780941dd1bf488a",
-      "file": "vocab-7b6e0780941dd1bf488a.mp3",
       "directory": "mandarin"
     },
     {
@@ -3800,6 +3669,19 @@
       "status": "available_unverified_decode",
       "clipId": "l3-v-48e9e53252",
       "file": "l3-v-48e9e53252.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "PH-436de85613a5ce21",
+      "input": "一张照片",
+      "expectedPinyin": "yì zhāng zhàopiàn",
+      "kind": "sentence",
+      "entryIds": [
+        "PH-436de85613a5ce21"
+      ],
+      "status": "not_requested",
+      "clipId": "vocab-045b594d409027cbc3bd",
+      "file": "vocab-045b594d409027cbc3bd.mp3",
       "directory": "mandarin"
     },
     {
@@ -5282,6 +5164,19 @@
       "status": "not_requested",
       "clipId": "vocab-7e370adb3174b12dea2c",
       "file": "vocab-7e370adb3174b12dea2c.mp3",
+      "directory": "mandarin"
+    },
+    {
+      "entryId": "v-你好",
+      "input": "你好",
+      "expectedPinyin": "nǐ hǎo",
+      "kind": "word",
+      "entryIds": [
+        "v-你好"
+      ],
+      "status": "available_unverified_decode",
+      "clipId": "l1-g-nihao",
+      "file": "l1-g-nihao.mp3",
       "directory": "mandarin"
     },
     {

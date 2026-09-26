@@ -37,3 +37,11 @@ export function mixStats(session: MixSession) {
   const latest = new Map(session.events.map(e => [e.wordId, e.known]));
   return { unique: latest.size, attempts: session.events.length, remembered: session.events.filter(e => e.known).length, pending: [...latest.values()].filter(known => !known).length };
 }
+
+/** Keep completed history and progress; retire only pending cards outside the new partition. */
+export function reconcileMixSession(session: MixSession, allowed: Set<string>): MixSession {
+  const pending = session.queue.slice(session.index);
+  if (pending.every(card => allowed.has(card.wordId))) return session;
+  const remaining = pending.filter(card => allowed.has(card.wordId));
+  return { ...session, queue: [...session.queue.slice(0, session.index), ...remaining], revealed: session.revealed && remaining[0] === pending[0] };
+}

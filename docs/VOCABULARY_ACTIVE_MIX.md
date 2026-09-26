@@ -1,3 +1,5 @@
+> Informe histórico del checkpoint previo a la sincronización. Para el estado actual, ver [VOCABULARY_CORPUS_SYNC.md](VOCABULARY_CORPUS_SYNC.md). Los conteos y filtros descritos abajo corresponden a aquella entrega.
+
 # Vocabulario activo y Vocabulario Mix — entrega local
 
 Base: `af286b5` de `origin/main`. Rama: `feat/vocabulary-active-mix`.

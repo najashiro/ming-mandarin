@@ -67,3 +67,39 @@
 .vocabulary-example { clear:both; }
 .vocabulary-mix .vocabulary-word-row { justify-content:center; }
 @media(max-width:700px) { .vocabulary-toolbar { grid-template-columns:1fr; gap:.45rem; } }
+
+.vocabulary-mix-card .vocabulary-mix-hanzi { margin:.3rem 0; line-height:1.3; }
+.vocabulary-mix-card > p { margin:.45rem 0; }
+.vocabulary-mix-card { padding:1rem; }
+.vocabulary-evaluation { margin:.75rem 0; }
+.vocabulary-mix-settings { grid-template-columns:repeat(auto-fit,minmax(min(100%,9rem),1fr)); gap:.65rem; }
+
+.vocabulary-card.is-search-target { outline:3px solid #527c58; outline-offset:3px; }
+.vocabulary-lesson-badge { display:inline-block; margin-left:.4rem; padding:.1rem .35rem; border-radius:5px; background:#e6eee5; color:#244c3c; }
+
+/* The sentence is the learning focus on the reverse. */
+.vocabulary-card.is-reversed .vocabulary-word,
+.vocabulary-card.is-reversed .vocabulary-word .linked-hanzi { color:#687169; font-weight:400; }
+.vocabulary-card.is-reversed .vocabulary-word .linked-hanzi { border-bottom-color:transparent; }
+.vocabulary-example-target { color:#b34424; background:transparent; font-weight:700; }
+.vocabulary-example-target .linked-hanzi { color:inherit; font-weight:inherit; border-bottom-color:#b3442455; }
+.vocabulary-example-text { line-height:1.7; }
+.vocabulary-card .vocabulary-example-translation,
+.vocabulary-mix .vocabulary-example-translation { font-size:.82rem; color:#566158; line-height:1.5; }
+.active-vocabulary .vocabulary-next-example { min-height:44px; padding:.35rem .65rem; font-size:.78rem; border-radius:9px; background:#f5f8f2; border-color:#c4d1c0; color:#415d46; }
+.active-vocabulary .vocabulary-next-example:hover { background:#d9e5d4; border-color:#91aa89; }
+.vocabulary-example { padding-top:.2rem; }
+
+.vocabulary-card.is-reversed .vocabulary-word { font-size:1.7rem; }
+.vocabulary-card .vocabulary-example-text { font-size:1.7rem; }
+
+/* Photo cards: edge-to-edge imagery with a quiet, readable caption. */
+.vocabulary-card.has-image { padding:0; max-width:26rem; width:100%; overflow:hidden; background:#fffdf8; box-shadow:0 4px 16px #26382b08; }
+.vocabulary-card.has-image .vocabulary-card-tools { position:relative; float:none; margin:0; padding:.45rem .6rem; background:#f4f0e9; }
+.vocabulary-card.has-image .vocabulary-card-tools button { background:#fffdf8f2; border-color:#ffffffb3; box-shadow:0 2px 8px #26382b12; }
+.active-vocabulary .has-image .vocabulary-image-flip { margin:0; border-radius:0; background:#eee9df; overflow:hidden; }
+.has-image .vocabulary-thumbnail { display:block; width:100%; height:auto; aspect-ratio:4/3; max-height:15rem; object-fit:contain; border-radius:0; background:#f4f0e9; }
+.has-image .vocabulary-card-content { padding:.75rem 1rem .9rem; border-top:1px solid #e7e0d5; }
+.has-image .vocabulary-word { margin:0; }
+.has-image .word-pinyin { margin:.15rem 0; }
+@media(max-width:700px) { .has-image .vocabulary-card-content { padding:.65rem .75rem .75rem; } }

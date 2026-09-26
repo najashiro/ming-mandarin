@@ -147,7 +147,7 @@ test('audio por gesto y fallos Safari no bloquean; repaso conserva fichas y velo
   await page.goto('/study/l1/games');
   await openGame(page,'hanzi-lab');
   await page.getByRole('button',{name:'Escuchar carácter oculto'}).click();
-  await expect(page.locator('.audio-button.unavailable')).toBeVisible();
+  await expect(page.getByRole('button', { name: /No se pudo reproducir. Reintentar/ })).toBeVisible();
   await page.getByRole('button',{name:'Cerrar',exact:true}).click();
   await page.locator('.study-tools summary').click();
   await page.getByRole('button',{name:'Voltear flashcard'}).click();
