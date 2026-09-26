@@ -2,6 +2,8 @@
 
 La base curricular normalizada del proyecto está en `MING_KNOWLEDGE/`.
 
+Antes de diseñar o modificar fichas de Vocabulario, consulta `MING_KNOWLEDGE/design/VOCABULARY_STYLE.md` y `MING_KNOWLEDGE/design/vocabulary-style.json`. Guardan el estándar visual aprobado, el tamaño por defecto de la tarjeta completa (proporción áurea horizontal), la referencia elegida y el prompt reutilizable. Son decisiones de diseño, no contenido curricular ni prueba de implementación.
+
 La aplicación usa Next.js 16, React 19, TypeScript, Supabase y Vercel. Usa Node >= 22.13 y pnpm 11.19.0. Instalación: `corepack enable` y `pnpm install --frozen-lockfile`. Valida con `pnpm lint`, `pnpm typecheck`, `pnpm test` y `pnpm build`; ejecuta las auditorías específicas cuando corresponda.
 
 Antes de modificar contenido curricular, vocabulario, Hanzi, gramática, diálogos, ejercicios, juegos o exámenes, sigue las reglas de `MING_KNOWLEDGE/AGENTS.md`.
