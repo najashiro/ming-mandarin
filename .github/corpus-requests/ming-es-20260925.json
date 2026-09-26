@@ -1,0 +1,15 @@
+{
+  "requestId": "ming-editorial-es-20260925",
+  "batchId": "ming-es-20260925-01",
+  "status": "requested",
+  "branch": "feat/ming-editorial-translations-20260925",
+  "baseCommit": "d6352ddfb6498286a0991f198279ac093883e466",
+  "scope": "Regenerate public Spanish fallback and editorial audit after successful tests; no paid APIs, main merge or production deployment.",
+  "allowedGeneratedPaths": [
+    "data/corpus-v21-public.json",
+    "MING_KNOWLEDGE/v2/index.json",
+    "MING_KNOWLEDGE/v2/audits/translations-ming-20260925.json",
+    "MING_KNOWLEDGE/v2/audits/translations-ming-20260925.md",
+    ".github/corpus-requests/ming-es-20260925.json"
+  ]
+}

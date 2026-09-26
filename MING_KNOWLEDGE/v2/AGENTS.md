@@ -1,12 +1,13 @@
 # Uso de la base de fuentes v2.1 por Codex
 
-- Empieza con `index.json`, `RADICALS.md` y `README.md` (arquitectura de la base v2.0).
+- Empieza con `index.json`, `SOURCE_AUDIT.md`, `TRANSLATIONS_MING.md`, `RADICALS.md` y `README.md` (arquitectura de la base v2.0).
 - Consulta `query.py --word <hanzi> --limit 8`, `--radical <glifo>` o `--hanzi <carácter>`.
-- `query.py` compila base + extensión de radicales. `compile.py` aislado solo compila v2.0.
+- `query.py` compila base + radicales + auditoría de fuentes + traducciones Míng. `compile.py` aislado solo compila v2.0.
 - No cargues todo el corpus, fragmentos base64 ni PDF por defecto.
 - Usa primero tablas, luego testigos/notas y finalmente la caché de texto nativo.
 - Separa fuente original, anotación editorial, registro de código y despliegue.
-- No inventes pinyin, traducción, nombre de radical, significado o clave para completar `null`.
+- No inventes pinyin, traducción de fuente, nombre de radical, significado o clave para completar `null`.
+- El usuario autorizó expresamente traducciones españolas editoriales de los textos registrados en `traduccion_ming`, lote `ming-es-20260925-01`. No atribuirlas al libro/PPT ni añadirlas a las variantes documentales. Consultar `translations_ming` y `translations_ming_summary`. No afirmar revisión humana independiente. La web consume únicamente `spanish` resuelto por el exportador, sin procedencia visible.
 - Distingue radical nombrado en libro, campo 部首 de hoja y candidato editorial en ejercicio.
 - Ninguna respuesta manuscrita del alumno es una clave docente. No aprobar calificación automática.
 - Consulta `radical_corrections`: 辶 es zǒuzhīdǐ en el libro; la tabla de 饣 usa 饭、饼、饿.
@@ -15,9 +16,9 @@
 - No atribuyas un único radical a una palabra de varios caracteres.
 - Usa enlaces léxicos para palabras/frases, no coincidencias por substring.
 - Un vínculo derivado radical–frase no prueba enseñanza formal en esa página.
-- Conserva variantes, contraejemplos, roles y objetivos de escritura explícitos.
+- Conserva variantes, contraejemplos, roles y objetivos de escritura explícitos. Una glosa editorial no cambia la elegibilidad de un contraejemplo ni convierte un fragmento mal segmentado en palabra.
 - No cambies seed, app, juegos, audios, Supabase, progreso ni main al actualizar fuentes.
 - El snapshot b952c16360cd85c25205b49db5c23c543f553dcd no garantiza la producción actual.
-- Ejecuta `query.py --validate` y `python3 -m unittest discover -s MING_KNOWLEDGE/v2 -p 'test_*.py'`.
+- Ejecuta `query.py --validate`, regenera la proyección, ejecuta `translations_ming.py --check` y `python3 -m unittest discover -s MING_KNOWLEDGE/v2 -p 'test_*.py'`.
 - Solo consulta PDF si una verificación visual/literal o discrepancia no se resuelve con los testigos.
 - v1 es legado: no mezcles sus IDs de frase/conteos con v2 ni borres su trazabilidad.

@@ -1,33 +1,140 @@
 name: Ming editorial translations
+
 on:
   push:
     branches: [feat/ming-editorial-translations-20260925]
-    paths: [.github/workflows/ming-translations.yml]
+    paths:
+      - MING_KNOWLEDGE/**
+      - data/corpus-v21-public.json
+      - scripts/export-corpus-v21.py
+      - tests/unit/corpus-v21.test.ts
+      - .github/workflows/ming-translations.yml
+      - .github/corpus-requests/ming-es-20260925.json
+  pull_request:
+    paths:
+      - MING_KNOWLEDGE/**
+      - data/corpus-v21-public.json
+      - scripts/export-corpus-v21.py
+      - tests/unit/corpus-v21.test.ts
+      - .github/workflows/ming-translations.yml
+
 permissions:
   contents: read
+
+concurrency:
+  group: ming-editorial-translations-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
-  inventory:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.22.2'
+      - run: corepack enable
+      - run: pnpm install --frozen-lockfile
+      - name: Validate source preservation, translations and generated projection
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          REF_NAME: ${{ github.ref }}
+        run: |
+          python3 MING_KNOWLEDGE/v2/query.py --validate
+          python3 - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          request=json.loads(Path('.github/corpus-requests/ming-es-20260925.json').read_text())
+          assert request['requestId']=='ming-editorial-es-20260925'
+          assert request['batchId']=='ming-es-20260925-01'
+          assert request['status'] in ['requested','completed']
+          first=(os.environ['EVENT_NAME']=='push' and os.environ['REF_NAME']=='refs/heads/feat/ming-editorial-translations-20260925' and request['status']=='requested')
+          if not first:
+              subprocess.run(['python3','scripts/export-corpus-v21.py','--check'],check=True)
+          PY
+          python3 scripts/export-corpus-v21.py
+          python3 MING_KNOWLEDGE/v2/translations_ming.py --check --write-reports
+          python3 MING_KNOWLEDGE/v2/audit_source_tables.py --check
+          python3 scripts/export-corpus-v21.py --check
+          python3 -m unittest discover -s MING_KNOWLEDGE/v2 -p 'test_*.py'
+          git diff --check
+      - run: pnpm lint
+      - run: pnpm typecheck
+      - run: pnpm test
+      - run: pnpm build
+
+  publish-generated:
+    needs: validate
+    if: >-
+      github.event_name == 'push' &&
+      github.repository == 'najashiro/ming-mandarin' &&
+      github.ref == 'refs/heads/feat/ming-editorial-translations-20260925'
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
         with:
-          persist-credentials: false
-      - name: Inspect only registered corpus records missing Spanish
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+      - name: Validate one-time request
+        id: request
         run: |
-          python3 MING_KNOWLEDGE/v2/query.py --validate >/dev/null
           python3 - <<'PY'
-          import json
+          import json,os
           from pathlib import Path
-          root=Path('MING_KNOWLEDGE/v2/.cache')
-          load=lambda n: json.loads((root/(n+'.json')).read_text())
-          for table in ['vocabulary','phrases']:
-              rows=load(table)
-              missing=[r for r in rows if not any(v.get('value') for v in r.get('spanish_variants',[]))]
-              print('TOTAL',table,len(rows),'MISSING',len(missing))
-              for i,r in enumerate(missing):
-                  print('ITEM',json.dumps([table,i,r['id'],r['hanzi'],r.get('pinyin'),r.get('kinds',r.get('roles')),r.get('source_refs',[])[:2]],ensure_ascii=False,separators=(',',':')))
-          for term in ['真厉害！','这张照片真漂亮！']:
-              for r in load('phrases'):
-                  if r['hanzi']==term: print('EXAMPLE',json.dumps(r,ensure_ascii=False))
+          r=json.loads(Path('.github/corpus-requests/ming-es-20260925.json').read_text())
+          assert r['requestId']=='ming-editorial-es-20260925'
+          assert r['batchId']=='ming-es-20260925-01'
+          assert r['branch']=='feat/ming-editorial-translations-20260925'
+          assert r['baseCommit']=='d6352ddfb6498286a0991f198279ac093883e466'
+          assert r['status'] in ['requested','completed']
+          allowed=['data/corpus-v21-public.json','MING_KNOWLEDGE/v2/index.json','MING_KNOWLEDGE/v2/audits/translations-ming-20260925.json','MING_KNOWLEDGE/v2/audits/translations-ming-20260925.md','.github/corpus-requests/ming-es-20260925.json']
+          assert r['allowedGeneratedPaths']==allowed
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:
+              f.write('publish='+('true' if r['status']=='requested' else 'false')+'\n')
           PY
+      - name: Regenerate only approved output files
+        if: steps.request.outputs.publish == 'true'
+        run: |
+          python3 scripts/export-corpus-v21.py
+          python3 MING_KNOWLEDGE/v2/translations_ming.py --check --write-reports
+          python3 MING_KNOWLEDGE/v2/audit_source_tables.py --check
+          python3 scripts/export-corpus-v21.py --check
+          python3 - <<'PY'
+          import json,os,shutil,subprocess
+          from pathlib import Path
+          p=Path('.github/corpus-requests/ming-es-20260925.json')
+          r=json.loads(p.read_text())
+          shutil.copyfile('MING_KNOWLEDGE/v2/.cache/index.json','MING_KNOWLEDGE/v2/index.json')
+          r['status']='completed'
+          r['testedCommit']=os.environ['GITHUB_SHA']
+          r['workflowRun']=os.environ['GITHUB_RUN_ID']
+          p.write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          changed=set(subprocess.check_output(['git','diff','--name-only'],text=True).splitlines())
+          allowed=set(r['allowedGeneratedPaths'])
+          assert changed.issubset(allowed), f'Unexpected tracked changes: {changed-allowed}'
+          for name in allowed:
+              assert Path(name).is_file()
+          subprocess.run(['git','add','--',*sorted(allowed)],check=True)
+          staged=set(subprocess.check_output(['git','diff','--cached','--name-only'],text=True).splitlines())
+          assert staged.issubset(allowed), f'Unexpected staged changes: {staged-allowed}'
+          PY
+          git diff --cached --check
+      - name: Commit generated files to this feature branch only
+        if: steps.request.outputs.publish == 'true'
+        env:
+          TESTED_SHA: ${{ github.sha }}
+        run: |
+          set -eu
+          BRANCH='feat/ming-editorial-translations-20260925'
+          REMOTE_SHA=$(git ls-remote --heads origin "refs/heads/$BRANCH" | cut -f1)
+          test "$REMOTE_SHA" = "$TESTED_SHA" || { echo 'Branch moved; refusing to overwrite newer work.'; exit 1; }
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore(corpus): publish validated Spanish fallback and translation counts'
+          git push origin "HEAD:refs/heads/$BRANCH"

@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "language": "es-PE",
+  "batch_id": "ming-es-20260925-01",
+  "prepared_date": "2026-09-25",
+  "base_commit": "d6352ddfb6498286a0991f198279ac093883e466",
+  "authorization": "El usuario pidió generar las traducciones faltantes como traduccion_ming, mantener el control editorial interno y no mostrar la procedencia en la web.",
+  "method": "model_generated_translation_of_registered_chinese",
+  "review_status": "model_checked_not_independently_human_reviewed",
+  "policy": "Conservar español y variantes documentales. Usar español documental cuando exista; traduccion_ming es un respaldo editorial, no una transcripción atribuida a las fuentes. No genera ni corrige Hanzi, pinyin, claves, currículo ni medios.",
+  "files": {
+    "vocabulary": ["translations/vocabulary-es.tsv"],
+    "phrases": ["translations/phrases-es-1.tsv", "translations/phrases-es-2.tsv", "translations/phrases-es-3.tsv"]
+  },
+  "internal_only_vocabulary": ["哥哥，还", "咖啡，还", "马大为，还", "汉语课，还", "丁，叫", "宋华。认识", "同学，你们", "好！我", "林娜。请问，你"],
+  "notes": {
+    "那是我朋友，她是外语老师，他会说汉语和西班牙语。": "El registro alterna 她 y 他. La traducción conserva ella/él; no corrige ni resuelve silenciosamente esa discrepancia del chino.",
+    "我有两只小猫，他们很可爱。": "Se conserva 他们 en el registro chino, sin sustituirlo silenciosamente por 它们.",
+    "林娜家一共有五口人，妈妈、一个哥哥、两个姐姐和她，还有贝贝。": "Se conserva el número cinco del registro y la mención adicional de Beibei; no se cambia a seis al traducir.",
+    "一点儿": "Un poco en el contexto documentado de idiomas.",
+    "厉害": "Se selecciona el sentido elogioso del diálogo 真厉害, no otros sentidos posibles.",
+    "系": "Departamento universitario, según el contexto 大学有几个系.",
+    "上": "Asistir a/tomar clases en 上课; no se impone el sentido espacial arriba a este contexto.",
+    "我不会，你呢？": "Respuesta sobre saber tocar el piano; no expresa futuro.",
+    "我会。": "Respuesta sobre una habilidad; no expresa futuro.",
+    "您贵姓": "Expresión interrogativa respetuosa; no se interpreta 姓 como nombre de pila.",
+    "玛丽": "Nombre conservado mediante transliteración editorial sin cambiar el campo pinyin documental.",
+    "张王冉": "Nombre conservado mediante transliteración editorial sin cambiar el campo pinyin documental."
+  },
+  "limits": [
+    "Las traducciones están preparadas y revisadas por el modelo; no son una certificación lingüística humana independiente.",
+    "Traducir un contraejemplo no lo convierte en una construcción china correcta: conserva kinds y permanece fuera de la exportación de frases positivas.",
+    "Los nueve fragmentos léxicos mal segmentados se traducen solo para control; no se publican como nuevas palabras.",
+    "Las plantillas con puntos suspensivos conservan el hueco; no se inventa una respuesta.",
+    "La cobertura de traducción no acredita cobertura de pinyin, audio, imágenes o fichas Hanzi.",
+    "Interno significa uso editorial: este repositorio es público; no es una protección de acceso."
+  ]
+}

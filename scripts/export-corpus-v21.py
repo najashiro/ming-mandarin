@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Build the allow-listed, source-free application projection for corpus v2.1.
 
-The documentary master remains in MING_KNOWLEDGE/v2; this is a generated view.
+Documentary Spanish has priority. Authorized Ming translations are a fallback;
+editorial author, method and provenance never enter the learner projection.
 """
 from __future__ import annotations
 import argparse
@@ -17,6 +18,7 @@ QUERY = ROOT / 'MING_KNOWLEDGE/v2/query.py'
 OUT = ROOT / 'data/corpus-v21-public.json'
 sys.path.insert(0, str(QUERY.parent))
 from source_audit import augment_public
+from translations_ming import spanish_for_display
 
 
 def first_value(rows: list[dict], key: str = 'value') -> str | None:
@@ -33,23 +35,25 @@ def build() -> dict:
         vocabulary, phrases, dialogues = load('vocabulary'), load('phrases'), load('dialogues')
         phrase_evidence, hanzi = load('phrase_evidence'), load('hanzi')
         vocabulary_by_hanzi = {row['hanzi']: row for row in vocabulary}
+        phrases_by_id = {row['id']: row for row in phrases}
         hanzi_by_id = {row['id']: row for row in hanzi}
         public_vocab = [{
             'id': row['id'], 'hanzi': row['hanzi'],
             'pinyin': first_value(row.get('pinyin_variants', [])),
-            'spanish': first_value(row.get('spanish_variants', [])),
+            'spanish': spanish_for_display(row),
             'lessons': row.get('lessons', []), 'roles': row.get('roles', []),
-        } for row in vocabulary if row.get('pinyin_variants') and row.get('spanish_variants')]
+        } for row in vocabulary if first_value(row.get('pinyin_variants', [])) and spanish_for_display(row)
+            and not (row.get('traduccion_ming_meta') or {}).get('internal_only')]
         public_phrases = [{
             'id': row['id'], 'hanzi': row['hanzi'],
             'pinyin': first_value(row.get('pinyin_variants', [])),
-            'spanish': first_value(row.get('spanish_variants', [])),
+            'spanish': spanish_for_display(row),
             'lessons': row.get('lessons', []), 'kinds': row.get('kinds', []),
             'vocabIds': row.get('vocab_ids', []), 'dialogueIds': row.get('dialogue_ids', []),
         } for row in phrases if 'counterexample' not in row.get('kinds', [])]
         public_dialogues = []
         for dialogue in dialogues:
-            # The learner dialogue uses the textbook witness, not a PPT variant.
+            # The learner dialogue uses the exact textbook witness, not a PPT variant.
             if '-BOOK-' not in dialogue['id']:
                 continue
             text = 'Texto 2' if 'T2' in dialogue['id'] else 'Texto 1'
@@ -62,9 +66,13 @@ def build() -> dict:
                     raise RuntimeError(f"Expected one exact witness for {dialogue['id']} turn {turn['turn']}; got {len(matches)}")
                 witness = matches[0]
                 speaker_vocab = vocabulary_by_hanzi.get(turn.get('speaker_source'), {})
+                phrase = phrases_by_id[witness['phrase_id']]
+                if phrase['hanzi'] != turn['hanzi']:
+                    raise RuntimeError('Editorial dialogue translation requires an exact Chinese match')
                 turns.append({'turn': turn['turn'], 'speaker': turn.get('speaker_source'), 'hanzi': turn['hanzi'],
                               'speakerPinyin': first_value(speaker_vocab.get('pinyin_variants', [])), 'phraseId': witness['phrase_id'],
-                              'pinyin': witness.get('pinyin_source'), 'spanish': witness.get('spanish_source')})
+                              'pinyin': witness.get('pinyin_source'),
+                              'spanish': witness.get('spanish_source') or spanish_for_display(phrase)})
             public_dialogues.append({'id': dialogue['id'], 'lesson': dialogue['lesson'], 'text': text, 'turns': turns})
         catalog = {row['id']: row for row in load('radical_catalog') if row.get('metadata_status') == 'explicit_textbook_definition'}
         evidence = {row['id']: row for row in load('radical_evidence')}

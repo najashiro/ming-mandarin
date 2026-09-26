@@ -5,9 +5,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 CACHE = ROOT / '.cache'
 DEFAULT_FIELDS = {
-    'matrix': ['id','hanzi','pinyin','spanish','lessons','roles','phrase_count','primary_phrase','ming_vocabulary','ming_hanzi','ming_game_bank','textbook_table_rows'],
-    'vocabulary': ['id','hanzi','pinyin','spanish','lessons','roles','phrase_count','primary_phrase_id','radical_ids','textbook_table_rows','curriculum_links'],
-    'phrases': ['id','hanzi','pinyin','pinyin_status','lessons','kinds','vocab_ids','grammar_ids','dialogue_ids'],
+    'matrix': ['id','hanzi','pinyin','spanish','traduccion_ming','spanish_display','lessons','roles','phrase_count','primary_phrase','ming_vocabulary','ming_hanzi','ming_game_bank','textbook_table_rows'],
+    'vocabulary': ['id','hanzi','pinyin','spanish','traduccion_ming','spanish_display','lessons','roles','phrase_count','primary_phrase_id','radical_ids','textbook_table_rows','curriculum_links'],
+    'phrases': ['id','hanzi','pinyin','pinyin_status','traduccion_ming','spanish_display','lessons','kinds','vocab_ids','grammar_ids','dialogue_ids'],
     'hanzi': ['id','hanzi','source_writing_target','worksheet_refs','worksheet_occurrences','readings','runtime_units','documented_radical_ids','proposed_radical_ids'],
     'radical_matrix': ['id','radical','name','meaning','metadata_status','lessons','theory','practice','worksheet','exam','exam_characters','vocab_count','phrase_count'],
     'radical_catalog': ['id','radical','name_source','meaning_source','metadata_status','lessons','roles','exam_characters'],
@@ -15,15 +15,17 @@ DEFAULT_FIELDS = {
     'exercises': ['id','source_id','page','lesson','section','label_source','answer_status'],
     'page_inventory': ['id','source_id','pdf_page','printed_page','status','textbook_table_row_ids'],
     'textbook_table_rows': ['id','table_id','lesson','text','list_type','printed_number','subentry_index','hanzi','pinyin_source','source_id','page','printed_page'],
+    'translations_ming': ['id','target_table','target_id','hanzi','traduccion_ming','internal_only','usage','review_status'],
 }
 
 
 def ensure_cache(force: bool = False) -> None:
+    from translations_ming import dependency_paths
     manifest = ROOT / 'source/manifest.json'
     metadata = json.loads(manifest.read_text(encoding='utf-8'))
     dependencies = [manifest, ROOT/'compile.py', ROOT/'pack.py', ROOT/'radicals.py', ROOT/'radicals-source.json',
-                    ROOT/'query.py', ROOT/'source_audit.py', ROOT/'source-tables.json']
-    # A changed pack part must invalidate the cache even if its manifest was not updated.
+                    ROOT/'query.py', ROOT/'source_audit.py', ROOT/'source-tables.json'] + dependency_paths()
+    # Changed source or editorial bytes invalidate the cache, not just manifests.
     for part in metadata['parts']:
         path = (ROOT / part['path']).resolve()
         if not path.is_relative_to(ROOT / 'source'):
@@ -52,6 +54,8 @@ def ensure_cache(force: bool = False) -> None:
     enrich_cache(CACHE)
     from source_audit import enrich_cache as enrich_source_audit
     enrich_source_audit(CACHE)
+    from translations_ming import enrich_cache as enrich_translations
+    enrich_translations(CACHE)
     validation = read_table('validation')
     if not validation.get('passed'):
         raise ValueError('Corpus validation failed; see generated validation.json')
@@ -132,7 +136,7 @@ def main() -> None:
             show = ids[args.offset:args.offset + args.limit]
             result = {'found': True, 'word': selected(word, None if args.full else DEFAULT_FIELDS['vocabulary']),
                       'runtime': word['runtime'], 'source_refs': word['source_refs'],
-                      'phrases_total': len(ids), 'phrases': [selected(pp[p], None if args.full else ['id','hanzi','pinyin','pinyin_status','kinds','source_refs']) for p in show],
+                      'phrases_total': len(ids), 'phrases': [selected(pp[p], None if args.full else ['id','hanzi','pinyin','pinyin_status','traduccion_ming','spanish_display','kinds','source_refs']) for p in show],
                       'next_offset': args.offset + args.limit if args.offset + args.limit < len(ids) else None}
     elif args.phrase:
         pp = read_table('phrases')
