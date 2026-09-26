@@ -30,6 +30,13 @@ def eligible_phrase(row: dict) -> bool:
         mark in row['hanzi'] for mark in ('…', '_', '□'))
 
 
+def deferred_construction(link: dict) -> bool:
+    # compile.py explicitly marks separable construction suggestions as needing
+    # review. They are not direct tokens and must not be promoted accidentally.
+    return (link.get('relation') == 'discontinuous_construction'
+            and link.get('method') == 'editorial_rule_assisted_needs_review')
+
+
 def validate_compositions(config: dict, words: dict[str, dict], phrases: dict[str, dict]) -> list[dict]:
     require(config.get('schema_version') == '1.0.0', 'unsupported schema')
     require(config.get('scope') == 'explicit_one_hop_pedagogical_examples', 'unsupported inheritance scope')
@@ -78,10 +85,10 @@ def build_example_links(words: list[dict], phrases: list[dict], lexical_links: l
     result, direct = {}, []
     for link in lexical_links:
         vid, pid = link['vocab_id'], link['phrase_id']
-        require(vid in word_by_id and pid in phrase_by_id, 'dangling lexical link')
-        if internal_only(word_by_id[vid]) or not eligible_phrase(phrase_by_id[pid]):
+        require(vid in word_by_id and pid in phrase_by_id, f'dangling lexical link {vid} / {pid}')
+        if deferred_construction(link) or internal_only(word_by_id[vid]) or not eligible_phrase(phrase_by_id[pid]):
             continue
-        require(vid in phrase_by_id[pid].get('vocab_ids', []), 'lexical membership mismatch')
+        require(vid in phrase_by_id[pid].get('vocab_ids', []), f'lexical membership mismatch {vid} / {pid} ({link.get("relation")})')
         record = {'id': f'EX-{vid}-{pid}', 'vocab_id': vid, 'phrase_id': pid,
                   'relation': 'direct_lexical', 'via_vocab_id': None, 'composition_id': None,
                   'evidence_ids': sorted(set(link.get('evidence_ids', [])))}
@@ -105,7 +112,8 @@ def build_example_links(words: list[dict], phrases: list[dict], lexical_links: l
 def enrich_cache(cache: Path) -> None:
     config = read_json(ROOT / 'lexical-compositions.json')
     words, phrases = read_json(cache / 'vocabulary.json'), read_json(cache / 'phrases.json')
-    links = build_example_links(words, phrases, read_json(cache / 'word_phrase_links.json'), config)
+    original_links = read_json(cache / 'word_phrase_links.json')
+    links = build_example_links(words, phrases, original_links, config)
     by_word, by_phrase = {}, {}
     for row in links:
         by_word.setdefault(row['vocab_id'], []).append(row['phrase_id'])
@@ -116,10 +124,13 @@ def enrich_cache(cache: Path) -> None:
         phrase['example_vocab_ids'] = by_phrase.get(phrase['id'], [])
     cat = [r for r in links if r['vocab_id'] == 'v-猫']
     pmap = {r['id']: r for r in phrases}
+    deferred = [{k: r.get(k) for k in ['vocab_id', 'phrase_id', 'relation', 'method']}
+                for r in original_links if deferred_construction(r)]
     summary = {'schema_version': config['schema_version'], 'approved_compositions': len(config['compositions']),
                'direct_links': sum(r['relation'] == 'direct_lexical' for r in links),
                'inherited_links': sum(r['relation'] == 'editorial_compositional' for r in links),
                'source_lexical_links_changed': 0, 'transitive_inheritance': False,
+               'deferred_construction_links': deferred,
                'cat_examples': [{'phrase_id': r['phrase_id'], 'hanzi': pmap[r['phrase_id']]['hanzi'],
                     'pinyin': pinyin_for_display(pmap[r['phrase_id']]), 'spanish': spanish_for_display(pmap[r['phrase_id']]),
                     'relation': r['relation'], 'via_vocab_id': r['via_vocab_id']} for r in cat]}
@@ -132,7 +143,8 @@ def enrich_cache(cache: Path) -> None:
         if name == 'validation':
             value['checks'] = list(dict.fromkeys(value['checks'] + [
                 'explicit one-hop semantic composition links; no substring-based discovery',
-                'global example IDs preserve original lexical and curriculum relationships']))
+                'global example IDs preserve original lexical and curriculum relationships',
+                'unreviewed discontinuous constructions are reported separately, not promoted to direct tokens']))
         write_table(cache, name, value)
 
 
