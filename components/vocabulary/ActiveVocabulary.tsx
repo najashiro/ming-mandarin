@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import type { CurriculumScope } from '@/data/types';
@@ -17,7 +17,9 @@ export function ActiveVocabulary({ scope, userId = 'guest', mode = 'catalog' }: 
   const params = useSearchParams();
   const router = useRouter();
   const { data, ready, saved, update } = useVocabularyState(userId);
-  const query = params.get('q') ?? '';
+  const selectedId = mode === 'catalog' ? params.get('card') : null;
+  const selectedWord = selectedId ? getVocabularySet(scope).find(word => word.id === selectedId) : undefined;
+  const query = params.get('q') ?? selectedWord?.hanzi ?? '';
   const favoritesOnly = params.get('favorites') === '1';
   const mix = mode === 'mix';
   const section = mix ? 'games/vocabulary-mix' : 'vocabulary';
@@ -28,7 +30,7 @@ export function ActiveVocabulary({ scope, userId = 'guest', mode = 'catalog' }: 
   const searchRef = useRef<HTMLInputElement>(null);
   const suggestionTouch = useRef<{ id: string; x: number; y: number } | null>(null);
   const candidates = useMemo(() => getVocabularySet(scope).filter(w => !favoritesOnly || data.favorites.includes(w.id)), [scope, favoritesOnly, data.favorites]);
-  const results = useMemo(() => searchVocabulary(candidates, query), [candidates, query]);
+  const results = useMemo(() => selectedId ? candidates.filter(word => word.id === selectedId) : searchVocabulary(candidates, query), [candidates, query, selectedId]);
   const suggestions = searchGlobalVocabulary(query).slice(0, 6);
   const pages = Math.max(1, Math.ceil(results.length / 24));
   const rawPage = Number(params.get('page') ?? 1);
@@ -51,26 +53,12 @@ export function ActiveVocabulary({ scope, userId = 'guest', mode = 'catalog' }: 
     const lesson = getVocabularyLesson(word);
     if (!lesson) return;
     const destination = `l${lesson}` as CurriculumScope;
-    const index = getVocabularySet(destination).findIndex(word => word.id === id);
-    const next = new URLSearchParams({ page: String(Math.floor(index / 24) + 1), card: id });
+    const next = new URLSearchParams({ q: word.hanzi, card: id });
     resetCardFaces();
     suggestionTouch.current = null;
     setOpen(false); setActive(-1);
     router.push(mix ? `/study/${destination}/games/vocabulary-mix?q=${encodeURIComponent(word.hanzi)}` : `/study/${destination}/vocabulary?${next}`, { scroll: false });
   }
-  useEffect(() => {
-    if (!ready || mix) return;
-    const id = params.get('card');
-    const card = id && document.getElementById(`word-${id}`);
-    if (!card) return;
-    const frame = requestAnimationFrame(() => {
-      card.focus({ preventScroll: true });
-      card.scrollIntoView({ block: 'center', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
-      card.classList.add('is-search-target');
-    });
-    const timer = window.setTimeout(() => card.classList.remove('is-search-target'), 1800);
-    return () => { cancelAnimationFrame(frame); clearTimeout(timer); card.classList.remove('is-search-target'); };
-  }, [ready, mix, params, page]);
   return <div className="active-vocabulary shell" data-ready={ready} data-visual-style={vocabularyStyleId} style={vocabularyStyle}>
     {mix && <Link className="vocabulary-games-back" href={`/study/${scope}/games`}>← Volver a Juegos</Link>}
     <header className="vocabulary-heading"><div><p className="eyebrow">{mix ? '游戏' : '词汇'} · MÍNG</p><h1>{mix ? 'Vocabulario Mix' : 'Vocabulario'}</h1></div><small role="status">{saved ? 'Guardado en este dispositivo' : 'Almacenamiento no disponible; cambios solo en esta visita'}</small></header>
@@ -81,7 +69,7 @@ export function ActiveVocabulary({ scope, userId = 'guest', mode = 'catalog' }: 
         if (e.key === 'Escape') { setOpen(false); setActive(-1); }
         if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); setOpen(true); setActive(i => suggestions.length ? (i + (e.key === 'ArrowDown' ? 1 : -1) + suggestions.length) % suggestions.length : -1); }
         if (e.key === 'Enter' && open && suggestions.length) { e.preventDefault(); navigateToVocabularyWord(suggestions[Math.max(0, active)].id); }
-      }}/>{query && <button type="button" aria-label="Limpiar búsqueda" onClick={() => { change({ q: '', card: '' }); setOpen(false); searchRef.current?.focus(); }}>×</button>}</div>
+      }}/>{query && <button type="button" aria-label="Limpiar búsqueda" onClick={() => { change({ q: '', card: '' }); searchRef.current?.focus(); setOpen(false); setActive(-1); }}>×</button>}</div>
         {open && <ul id="vocabulary-suggestions" role="listbox" aria-label="Sugerencias">{suggestions.length ? suggestions.map((w, i) => <li key={w.id} id={`suggestion-${i}`} role="option" aria-selected={i === active}
           onPointerDown={e => {
             if (e.pointerType === 'mouse') e.preventDefault();

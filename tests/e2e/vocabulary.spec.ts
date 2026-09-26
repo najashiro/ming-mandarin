@@ -24,7 +24,7 @@ test('search variants, filters, IME and favorites survive reload', async ({ page
   await search.press('ArrowDown');
   await search.press('Enter');
   const card = page.getByRole('article', { name: 'Ficha de 宠物', exact: true });
-  await expect(card).toBeFocused();
+  await expect(page.locator('.vocabulary-card')).toHaveCount(1);
   await card.getByRole('button', { name: 'Favorito: 宠物' }).click();
   await expect(card.getByRole('button', { name: 'Ver palabra: 宠物' })).toHaveCount(0);
   await expect(card.getByRole('button', { name: 'Ver ejemplo: 宠物', exact: true })).toHaveCount(1);
@@ -162,16 +162,29 @@ for (const [from, query, hanzi, target] of [['l1', '中国', '中国', 'l2'], ['
   await expect(option).toContainText(target.toUpperCase());
   await option.click();
   await expect(page.getByRole('combobox', { name: 'Lección', exact: true })).toHaveValue(target);
-  await expect(search).toHaveValue('');
+  await expect(search).toHaveValue(hanzi);
   await expect(page.getByRole('listbox')).toHaveCount(0);
   const card = page.getByRole('article', { name: `Ficha de ${hanzi}`, exact: true });
-  await expect(card).toBeFocused();
-  await expect(card).toHaveClass(/is-search-target/);
+  await expect(card).not.toBeFocused();
   await expect(card).toBeInViewport();
-  expect(await page.locator('.vocabulary-card').count()).toBeGreaterThan(1);
-  await expect(page).toHaveURL(new RegExp(`/study/${target}/vocabulary\\?page=.+&card=`));
+  await expect(page.locator('.vocabulary-card')).toHaveCount(1);
+  expect(await page.evaluate(() => scrollY)).toBe(0);
+  await expect(page.getByRole('button', { name: 'Limpiar búsqueda' })).toBeVisible();
   await page.reload();
   await expect(page.getByRole('combobox', { name: 'Lección', exact: true })).toHaveValue(target);
+  await expect(page.locator('.vocabulary-card')).toHaveCount(1);
+  await page.getByRole('button', { name: 'Limpiar búsqueda' }).click();
+  await expect(search).toHaveValue('');
+  await expect(page.locator('.vocabulary-card')).toHaveCount(24);
+});
+
+test('legacy card links filter one word regardless of old page', async ({ page }) => {
+  await ready(page, '/study/l1/vocabulary?page=4&card=v-%E9%AB%98%E5%85%B4');
+  await expect(page.locator('.vocabulary-card')).toHaveCount(1);
+  await expect(page.getByRole('combobox', { name: 'Buscar', exact: true })).toHaveValue('高兴');
+  await page.getByRole('button', { name: 'Limpiar búsqueda' }).click();
+  await expect(page.locator('.vocabulary-card')).toHaveCount(24);
+  await expect(page).not.toHaveURL(/card=|page=/);
 });
 
 test('global examples keep canonical lesson, favorites, progress and card position', async ({ page }) => {

@@ -15,10 +15,15 @@ test('touch search opens gaoxing in its own lesson even when the input blurs', a
   await option.dispatchEvent('pointerup', { pointerType: 'touch', pointerId: 1, clientX: 30, clientY: 30 });
   await expect(page.getByRole('combobox', { name: 'Lección', exact: true })).toHaveValue('l1');
   await expect(page.getByRole('article', { name: 'Ficha de 高兴', exact: true })).toBeInViewport();
-  await expect(search).toHaveValue('');
-  await expect(page).not.toHaveURL(/favorites=|q=/);
+  await expect(search).toHaveValue('高兴');
+  await expect(page.locator('.vocabulary-card')).toHaveCount(1);
+  await expect(page).not.toHaveURL(/favorites=/);
   await page.reload();
   await expect(page.getByRole('article', { name: 'Ficha de 高兴', exact: true })).toBeInViewport();
+  await expect(page.locator('.vocabulary-card')).toHaveCount(1);
+  await page.getByRole('button', { name: 'Limpiar búsqueda' }).click();
+  await expect(search).toHaveValue('');
+  await expect(page.locator('.vocabulary-card')).toHaveCount(24);
 });
 
 test('a mobile tap selects a global suggestion', async ({ page }) => {
