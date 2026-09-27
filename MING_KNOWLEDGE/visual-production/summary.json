@@ -1,0 +1,38 @@
+{
+  "vocabulary_entries": 337,
+  "entries_with_prompt": 305,
+  "without_own_image": 32,
+  "distinct_visual_recipes": 243,
+  "shared_recipe_savings_upper_bound": 62,
+  "counts_by_visual_mode": {
+    "literal_photo": 47,
+    "action_scene": 24,
+    "concept_scene": 115,
+    "visual_grammar": 47,
+    "phrase_context": 72,
+    "none": 32
+  },
+  "counts_by_profile": {
+    "action": 24,
+    "animal": 5,
+    "context": 72,
+    "country": 17,
+    "drink": 10,
+    "food": 21,
+    "object": 10,
+    "people": 84,
+    "place": 5,
+    "profession": 10,
+    "structured": 47
+  },
+  "country_landmark_and_flag_entries": 17,
+  "image_quiz_candidates_unchanged": 68,
+  "image_quiz_enabled": 0,
+  "images_generated": 0,
+  "paid_api_calls": 0,
+  "missing_public_ids": [],
+  "ui_changed": false,
+  "corpus_changed": false,
+  "fingerprint": "76f960aded233b8e2d0a969db9d8585840f54759263211ea394b1e89c5f2545c",
+  "source_corpus_fingerprint": "8de40bd08c613595e25689027175e098512dc8b52cfa41d70c4553351655d82c"
+}
