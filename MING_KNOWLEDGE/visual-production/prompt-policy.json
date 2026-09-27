@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "ming-image-prompts-20260927-01",
+  "prepared_date": "2026-09-27",
+  "purpose": "Preparar prompts editoriales de recursos visuales transparentes; no generar imágenes ni modificar tarjetas.",
+  "reference": "Petición del usuario: gato realista aislado; transparencia auténtica; el fondo lo aporta la tarjeta. Países con monumento y bandera, comida apetecible, bebidas reales, animales tiernos y profesiones contextualizadas.",
+  "global_prompt_es": "Crea únicamente el recurso visual educativo descrito, aislado sobre transparencia auténtica de canal alfa. Acabado fotográfico editorial fotorrealista, cálido, limpio y natural, con materiales y anatomía creíbles. Un foco semántico dominante y solo los elementos necesarios para entenderlo. Conserva completos los rasgos identificadores del sujeto. La tarjeta de la aplicación añadirá su propio fondo: no pintes fondo blanco, marfil, gris, degradado, paisaje de relleno ni cuadrícula de transparencia. Sin marco, tarjeta, bordes redondeados, interfaz, botones, iconos de audio, letras, Hanzi, pinyin, rótulos ni marcas de agua. Evita halos y bordes recortados; solo admite una sombra de contacto discreta y semitransparente, nunca un suelo opaco extendido.",
+  "global_negative_es": "No producir una captura de interfaz ni una tarjeta terminada. No escribir el nombre de la palabra. No añadir objetos protagonistas ajenos al concepto, duplicaciones accidentales, manos con dedos extra, caras deformadas, comida plástica, rasgos animales caricaturescos ni marcas comerciales inventadas. No insertar la estrella de favoritos ni la flecha de giro de la referencia. No fingir transparencia con un patrón de cuadros. No añadir textos para explicar una escena ambigua.",
+  "profiles": {
+    "animal": "Fotografía de animal doméstico tierno pero anatómicamente real: pelaje con detalle, expresión tranquila, postura natural, ojos proporcionados y cuerpo reconocible. Nada de disfraz, lazo, juguetes protagonistas ni exageración de ojos.",
+    "food": "Fotografía gastronómica muy realista y apetitosa: textura comestible, cocción y humedad naturales, brillo moderado y porción plausible. Recipiente sencillo cuando sea necesario; sin mesa completa ni guarniciones que oculten la preparación. Vapor solo si el alimento se sirve caliente.",
+    "drink": "Fotografía realista de bebida: transparencia, menisco, burbujas, crema, temperatura y condensación físicamente coherentes. Recipiente sin marca; acompañamiento mínimo que ayude a identificar el ingrediente. No sustituir la bebida por el nombre de una marca.",
+    "object": "Estudio fotográfico del referente indicado, completo y con texturas reales. Si el referente es una persona o una mano, conserva anatomía natural; si es un objeto, materiales físicos creíbles. No añadas usuarios, objetos adicionales o una interacción a menos que la escena específica los solicite. Nada de palabras impresas ni entorno de fondo.",
+    "action": "Escena fotográfica de una acción legible: personas ficticias, postura y manos completas, instante representativo y solo el objeto necesario. Gesto ligeramente enfatizado para enseñar, no mímica absurda ni caricatura. El sujeto y sus pocos accesorios forman un único recorte transparente.",
+    "people": "Viñeta conceptual fotográfica: representa exactamente los sujetos, objetos o relaciones solicitados en la escena específica; no añadas personas o interlocutores si no están pedidos. Cuando haya personas, serán ficticias, con edad apropiada al concepto, anatomía natural y gestos deliberadamente claros. Diferencia hablante, destinatario y referente mediante mirada y postura. Evita estereotipos de origen, género o estatus y no simules la identidad de personas nombradas en el material.",
+    "profession": "Persona ficticia en una tarea profesional, con ropa apropiada, instrumentos y gesto funcional coherentes. La indumentaria acompaña la acción, no es prueba suficiente del cargo. Evita disfraces, logos, insignias inventadas y asignar todos los cargos de autoridad a un mismo género. Los géneros de las escenas son casting editorial variable: en el lote final equilibrar papeles profesionales sin convertir género, edad o apariencia en una pista de profesión.",
+    "place": "Recorte fotográfico arquitectónico reconocible del referente indicado. Mantén su estructura real y solo una base local mínima que lo sostenga; sin cielo, horizonte, fondo urbano panorámico ni decoración turística adicional.",
+    "country": "Viñeta de geografía fotorrealista: recorte arquitectónico o natural fiel del lugar indicado y una bandera nacional en un asta discreta al lado, sin colocarla sobre el monumento. El terreno indispensable puede ser una pequeña base recortada; todo el exterior es alfa transparente. La bandera necesita referencia auténtica validada, no símbolos inventados; si el modelo no preserva escudo, proporciones u orientación, incorporar después la bandera auténtica con composición controlada. No sustituir un país por la apariencia de sus habitantes.",
+    "structured": "Genera únicamente elementos fotográficos recortables para el apoyo estructurado descrito. Las cantidades exactas, flechas, relaciones temporales, textos y marcas de referencia se componen después de forma determinista; no se confía su precisión al generador de imagen. Nada de números, letras, diagramas falsamente completos o fechas inventadas dentro del recurso base.",
+    "context": "Viñeta fotográfica que acompaña un uso contextual, no representación literal de una palabra abstracta. Mantén el significado descrito y no intentes hacerlo inequívoco añadiendo texto. La frase, pinyin y traducción los renderiza la aplicación fuera del archivo de imagen. La escena no se utiliza como pregunta de imagen aislada."
+  },
+  "rules": {
+    "generate_images_now": false,
+    "paid_api_calls_authorized": false,
+    "output_requires_alpha": true,
+    "no_ui_geometry": true,
+    "no_runtime_changes": true,
+    "preserve_curriculum": true,
+    "classification_source": "MING_KNOWLEDGE/v2/visual/vocabulary.tsv",
+    "none_policy": "Registrar decisión sin imagen y prompt null; no inventar retratos, metáforas o escenas para rellenar.",
+    "quiz_policy": "Conservar image_quiz_eligible como candidatura semántica. Ningún prompt equivale a recurso validado ni habilita el juego.",
+    "context_policy": "Las escenas son conceptos editoriales de Míng, no ilustraciones atribuidas al libro. Usar un ejemplo del corpus compatible; no elegir automáticamente una frase incompatible con la escena.",
+    "references_policy": "Monumentos y banderas son selecciones editoriales, no fuentes curriculares. Antes de generar debe verificarse una referencia auténtica del lugar y de su bandera. Los escudos y trigramas no se inventan.",
+    "source_style_note": "La nueva exigencia de transparencia se aplica a los recursos futuros de este catálogo; no reescribe el diseño existente ni sus medidas o fondos.",
+    "approval_status": "prompts_prepared_not_images_validated",
+    "independent_human_review": false
+  }
+}
