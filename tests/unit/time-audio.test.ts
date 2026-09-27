@@ -6,11 +6,14 @@ import { buildAcceptedTimeAnswers } from '@/lib/time-game';
 import { timeAudioFile, timeAudioKey } from '@/lib/time-audio-key.mjs';
 import { playTimeAudio, stopTimeAudio } from '@/lib/time-audio';
 import manifest from '@/data/time-audio.json';
+import mandarinManifest from '@/data/mandarin-audio.json';
 
 afterEach(()=>{stopTimeAudio();vi.unstubAllGlobals();});
 describe('time audio manifest',()=>{
   it('reuses recorded tokens and resolves the question and whole phrase',()=>{
+    const dian=mandarinManifest.clips.find(clip=>clip.id==='l2-h-1d59ea7cbb');
     expect(audioForMandarinText('三')).toMatch(/^\/audio\/mandarin\//);
+    expect(audioForMandarinText('点')).toBe(`/audio/mandarin/${dian?.file}`);
     expect(audioForMandarinText('现在')).toMatch(/^\/audio\/mandarin\//);
     expect(audioForMandarinText('现在几点？')).toBe(`/audio/mandarin/${timeAudioFile('现在几点？','q')}`);
     expect(audioForMandarinText('现在三点一刻')).toBe(`/audio/mandarin/${timeAudioFile('现在三点一刻','s')}`);
