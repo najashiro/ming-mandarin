@@ -1,0 +1,45 @@
+name: Ming image prompt catalog (no image generation)
+on:
+  push:
+    branches: [feat/vocabulary-image-prompts-20260927]
+  pull_request:
+    paths:
+      - 'MING_KNOWLEDGE/IMAGE_PROMPTS.md'
+      - 'MING_KNOWLEDGE/visual-production/**'
+      - 'MING_KNOWLEDGE/v2/visual/**'
+      - 'data/corpus-v21-public.json'
+      - '.github/workflows/image-prompts.yml'
+permissions:
+  contents: read
+concurrency:
+  group: image-prompts-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Check committed prompts, references, coverage and source preservation
+        run: |
+          python3 MING_KNOWLEDGE/visual-production/image_prompts.py --check
+          python3 -m unittest discover -s MING_KNOWLEDGE/visual-production -p 'test_*.py'
+          python3 MING_KNOWLEDGE/v2/query.py --validate > /tmp/corpus-validation.json
+          python3 MING_KNOWLEDGE/v2/visual_ming.py --check --check-reports > /tmp/visual-check.json
+          python3 MING_KNOWLEDGE/v2/pinyin_ming.py --check > /tmp/pinyin-check.json
+          python3 MING_KNOWLEDGE/v2/translations_ming.py --check > /tmp/translations-check.json
+          python3 MING_KNOWLEDGE/v2/audit_source_tables.py --check > /tmp/source-check.json
+          python3 scripts/export-corpus-v21.py --check
+          python3 -m unittest discover -s MING_KNOWLEDGE/v2 -p 'test_*.py'
+          git diff --exit-code -- data MING_KNOWLEDGE app components seed public
+          git diff --check
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.22.2
+      - run: corepack enable
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lint
+      - run: pnpm typecheck
+      - run: pnpm test
+      - run: pnpm build
