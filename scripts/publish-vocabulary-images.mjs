@@ -13,6 +13,15 @@ mkdirSync(normalizedDir, { recursive: true });
 mkdirSync(publicDir, { recursive: true });
 
 const sha256 = value => createHash('sha256').update(value).digest('hex');
+const explicitlySafeConcepts = new Set([
+  'v-中国', 'v-美国', 'v-西班牙', 'v-秘鲁', 'v-墨西哥',
+  'v-老师', 'v-医生', 'v-学生',
+]);
+const initiallyApproved = entry => explicitlySafeConcepts.has(entry.wordId) || (
+  entry.visual_ming.visual_mode === 'literal_photo'
+  && entry.visual_ming.image_quiz_eligible
+  && entry.visual_ming.ambiguity_risk !== 'high'
+);
 const results = [];
 const missing = [];
 
@@ -52,7 +61,7 @@ for (const entry of promptCatalog.entries) {
     src: `/images/vocabulary/${entry.public_output}`,
     alt: `Representación visual de ${entry.spanish}`,
     description: `Apoyo visual para ${entry.hanzi} (${entry.pinyin}): ${entry.spanish}`,
-    status: 'generated',
+    status: initiallyApproved(entry) ? 'approved' : 'pending_review',
     presentation: 'transparent-cutout',
     visualMode: entry.visual_ming.visual_mode,
     imageQuizEligible: entry.visual_ming.image_quiz_eligible,
@@ -63,7 +72,9 @@ for (const entry of promptCatalog.entries) {
     promptSha256: entry.prompt_sha256,
     model: entry.model,
     quality: entry.quality,
-    review: 'Validación técnica automatizada de alfa, dimensiones y procedencia; pendiente de revisión humana semántica independiente.',
+    review: initiallyApproved(entry)
+      ? 'Publicación inicial conservadora: referente concreto o categoría expresamente autorizada; revisable desde Administración.'
+      : 'Validación técnica completada; oculto hasta revisión semántica humana desde Administración.',
     provenance: 'OpenAI Image API mediante la clave local del usuario; corpus y clasificación visual sin modificaciones.',
   });
 }

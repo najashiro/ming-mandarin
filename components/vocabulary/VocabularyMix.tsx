@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import type { CurriculumScope } from '@/data/types';
 import type { ActiveWord, ContentLevel } from '@/lib/vocabulary';
 import { vocabularyCatalog, getVocabularySet, examplesForWord } from '@/lib/vocabulary';
-import { contextForWord, imageForWord, availablePracticeTypes } from '@/lib/vocabulary-media';
+import { contextForWord, imageForWord, availablePracticeTypes, type VocabularyMediaEntry } from '@/lib/vocabulary-media';
 import { evaluateMix, mixStats, startMix, reconcileMixSession, type PracticeType } from '@/lib/vocabulary-review';
 import { useVocabularyState } from './useVocabularyState';
 import { VocabularyExample } from './VocabularyCard';
@@ -13,7 +13,7 @@ import { Hanzi } from '../Hanzi';
 import { PinyinText } from '../PinyinText';
 import { SpeakButton } from '../SpeakButton';
 
-export function VocabularyMix({ words, scope, userId, route }: { words: ActiveWord[]; scope: CurriculumScope; userId: string; route: string }) {
+export function VocabularyMix({ words, scope, userId, route, media }: { words: ActiveWord[]; scope: CurriculumScope; userId: string; route: string; media: readonly VocabularyMediaEntry[] }) {
   const { data, ready, update } = useVocabularyState(userId);
   const [level, setLevel] = useState<ContentLevel>('hard');
   const eligibleIds = new Set(getVocabularySet(scope, level).map(word => word.id));
@@ -34,14 +34,14 @@ export function VocabularyMix({ words, scope, userId, route }: { words: ActiveWo
   }, [ready, scope, storedSession, update]);
   const card = session?.queue[session.index];
   const word = card && vocabularyCatalog.find(w => w.id === card.wordId);
-  const image = word && imageForWord(word.id);
+  const image = word && imageForWord(word.id, media);
   const context = word && contextForWord(word.id);
   const unavailable = card && (!word || (card.type === 'image' && (!image || failedImage === word?.id)) || (card.type === 'context' && !context));
   const completed = session && !card;
   function start() {
     update(previous => {
       const next = startMix(eligibleWords, size, scope, level, previous.progress, crypto.randomUUID(), Date.now(), Math.random, entry => {
-        const types = availablePracticeTypes(entry);
+        const types = availablePracticeTypes(entry, media);
         return mode === 'mixed' ? types[Math.floor(Math.random() * types.length)] : types.includes(mode) ? mode : 'hanzi';
       });
       return { ...previous, sessions: { ...previous.sessions, [scope]: next } };

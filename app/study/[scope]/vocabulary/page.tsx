@@ -4,6 +4,7 @@ import { getCurrentUser } from '@/app/auth';
 import { SiteShell } from '@/components/SiteShell';
 import { ActiveVocabulary } from '@/components/vocabulary/ActiveVocabulary';
 import { isCurriculumScope } from '@/seed/curriculum';
+import { publishedVocabularyMedia } from '@/lib/server/vocabulary-images';
 export default async function ScopeVocabularyPage({ params, searchParams }: { params: Promise<{ scope: string }>; searchParams: Promise<Record<string, string | string[] | undefined>> }) {
   const { scope } = await params;
   if (!isCurriculumScope(scope)) notFound();
@@ -14,6 +15,6 @@ export default async function ScopeVocabularyPage({ params, searchParams }: { pa
     for (const key of ['q', 'favorites']) if (typeof query[key] === 'string') next.set(key, query[key]);
     redirect(`/study/${lesson}/games/vocabulary-mix${next.size ? `?${next}` : ''}`);
   }
-  const user = await getCurrentUser();
-  return <SiteShell><main><Suspense fallback={<p className="shell">Cargando vocabulario…</p>}><ActiveVocabulary key={`${scope}:${user?.userId ?? 'guest'}`} scope={lesson} userId={user?.userId ?? 'guest'}/></Suspense></main></SiteShell>;
+  const [user, media] = await Promise.all([getCurrentUser(), publishedVocabularyMedia()]);
+  return <SiteShell><main><Suspense fallback={<p className="shell">Cargando vocabulario…</p>}><ActiveVocabulary key={`${scope}:${user?.userId ?? 'guest'}`} scope={lesson} userId={user?.userId ?? 'guest'} media={media}/></Suspense></main></SiteShell>;
 }

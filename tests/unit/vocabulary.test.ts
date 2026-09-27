@@ -47,12 +47,14 @@ describe('vocabulario activo: evidencia, búsqueda y recursos', () => {
     expect(searchVocabulary(vocabularyCatalog, 'nv3er2')[0].hanzi).toBe('女儿');
   });
   it('publica imágenes permitidas y nunca habilita quiz para apoyo contextual', () => {
-    for (const media of vocabularyMedia.filter(m => ['approved', 'generated'].includes(m.status))) {
+    for (const media of vocabularyMedia.filter(m => m.status === 'approved')) {
       expect(vocabularyCatalog.some(w => w.id === media.wordId)).toBe(true);
       expect(existsSync(`public${media.src}`)).toBe(true);
     }
     for (const word of vocabularyCatalog.filter(word => word.visual_ming.visual_mode === 'none')) expect(imageForWord(word.id)).toBeUndefined();
-    for (const word of vocabularyCatalog.filter(word => word.visual_ming.image_support)) expect(imageForWord(word.id)).toBeDefined();
+    expect(vocabularyMedia.filter(media => media.status === 'approved')).toHaveLength(42);
+    expect(imageForWord(vocabularyCatalog.find(word => word.hanzi === '真')!.id)).toBeUndefined();
+    for (const hanzi of ['猫', '饺子', '中国', '老师']) expect(imageForWord(vocabularyCatalog.find(word => word.hanzi === hanzi)!.id)).toBeDefined();
     for (const word of vocabularyCatalog.filter(word => !word.visual_ming.image_quiz_eligible)) expect(availablePracticeTypes(word)).not.toContain('image');
   });
   it('abre 宠 y 物 como consultas sin inventar destinos para otros glifos', () => {
