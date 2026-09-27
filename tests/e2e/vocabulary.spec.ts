@@ -87,13 +87,13 @@ for (const width of [320, 375, 390, 430, 1280]) test(`layout and real screenshot
   await ready(page, '/study/l2/vocabulary?q=米饭');
   await expect(page.locator('.vocabulary-card')).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-  await page.screenshot({ path: `docs/vocabulary-captures/${info.project.name}-${width}-catalog.png`, fullPage: true });
+  await page.screenshot({ path: info.outputPath(`${width}-catalog.png`), fullPage: true });
   await page.locator('.vocabulary-card-tools').getByRole('button', { name: /Ver ejemplo/ }).click();
-  await page.screenshot({ path: `docs/vocabulary-captures/${info.project.name}-${width}-reverse.png`, fullPage: true });
+  await page.screenshot({ path: info.outputPath(`${width}-reverse.png`), fullPage: true });
   await ready(page, '/study/l2/games/vocabulary-mix?q=米饭');
   await page.getByRole('combobox', { name: 'Tipo de pista' }).selectOption('image');
   await page.getByRole('button', { name: 'Empezar', exact: true }).click();
-  await page.screenshot({ path: `docs/vocabulary-captures/${info.project.name}-${width}-mix.png`, fullPage: true });
+  await page.screenshot({ path: info.outputPath(`${width}-mix.png`), fullPage: true });
   await page.addStyleTag({ content: 'html { font-size: 32px !important; }' });
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
@@ -107,7 +107,7 @@ test('compact controls ignore obsolete filters and keep audio beside Chinese', a
   await expect(card.locator('.vocabulary-word-row .audio-button')).toHaveCount(1);
   const front = await card.evaluate(el => getComputedStyle(el).backgroundColor);
   await card.locator('.vocabulary-card-tools').getByRole('button', { name: /Ver ejemplo/ }).click();
-  expect(await card.evaluate(el => getComputedStyle(el).backgroundColor)).not.toBe(front);
+  await expect.poll(() => card.evaluate(el => getComputedStyle(el).backgroundColor)).not.toBe(front);
   await expect(card.locator('.vocabulary-example-text')).toHaveText(firstExample('米饭').hanzi);
   await expect(card.locator('.vocabulary-example-text .audio-button[disabled]')).toHaveCount(0);
   await page.getByRole('button', { name: 'Solo favoritos', exact: true }).click();
@@ -144,7 +144,7 @@ test('legacy session survives corpus sync and revealed Mix fits 390 × 844', asy
   const bounds = await action.boundingBox();
   expect(bounds!.y + bounds!.height).toBeLessThan(774);
   expect(await page.evaluate(() => scrollY)).toBe(0);
-  await page.screenshot({ path: `docs/vocabulary-captures/${info.project.name}-390-audited-mix.png`, fullPage: true });
+  await page.screenshot({ path: info.outputPath('390-audited-mix.png'), fullPage: true });
   await mix.getByText('Ejemplo', { exact: true }).click();
   await expect(mix.locator('.vocabulary-example .pinyin-text')).toBeVisible();
   await expect(mix).not.toContainText(/pendiente|SRC-|PDF|revisión/i);
@@ -255,7 +255,7 @@ test('filters and search reset faces; reverse emphasizes the target in context',
   expect(styles.targetColor).toBe('rgb(179, 68, 36)');
   expect(styles.translationSize).toBeLessThan(styles.pinyinSize);
   expect(styles.buttonHeight).toBeGreaterThanOrEqual(44);
-  await card.screenshot({ path: `docs/vocabulary-captures/${info.project.name}-reverse-emphasis.png` });
+  await card.screenshot({ path: info.outputPath('reverse-emphasis.png') });
   await page.reload();
   await expect(card).not.toHaveClass(/is-reversed/);
   await expect(card.locator('.vocabulary-word-row .audio-button')).toHaveCount(1);
@@ -299,7 +299,7 @@ for (const width of [390, 1280]) test(`new corpus cat cycles three examples in c
     await cat.getByRole('button', { name: 'Otro ejemplo', exact: true }).click();
   }
   await expect(cat.locator('.vocabulary-example-text')).toHaveText(expected[0][0]);
-  await cat.screenshot({ path: `docs/vocabulary-captures/pr12/${info.project.name}-cat-reverse-${width}.png` });
+  await cat.screenshot({ path: info.outputPath(`cat-reverse-${width}.png`) });
   await page.reload();
   await expect(cat).not.toHaveClass(/is-reversed/);
   await expect(cat.getByRole('button', { name: 'Favorito: 猫', exact: true })).toHaveAttribute('aria-pressed', 'true');
@@ -348,9 +348,11 @@ for (const width of [320, 390, 768, 1280]) test(`PR12 whole-card geometry and re
     expect(styles.translation).toBeCloseTo(11.52, 1);
     expect(styles.translation).toBeLessThan(styles.pinyin);
     for (const control of styles.controls) { expect(control.width).toBeGreaterThanOrEqual(44); expect(control.height).toBeGreaterThanOrEqual(44); }
-    if (styles.imageRatio !== null) expect(styles.imageRatio).toBeCloseTo(1, 2);
+    if (styles.imageRatio !== null) {
+      expect(styles.imageRatio).toBeCloseTo((1 + Math.sqrt(5)) / 2, 2);
+    }
     if (styles.audioRadius !== null) expect(styles.audioRadius).toBe('50%');
-    await card.screenshot({ path: `docs/vocabulary-captures/pr12/${info.project.name}-${slug}-${width}.png` });
+    await card.screenshot({ path: info.outputPath(`${slug}-${width}.png`) });
   }
   // Accessibility takes priority over fixed height: retain all text at 200%.
   await page.addStyleTag({ content: 'html { font-size:32px!important }' });
@@ -362,7 +364,7 @@ for (const width of [320, 390, 768, 1280]) test(`PR12 whole-card geometry and re
 });
 
 test('missing photograph falls back to the same readable golden card', async ({ page }) => {
-  await page.route('**/images/games/reto-mixto/cat.webp', route => route.abort());
+  await page.route('**/images/vocabulary/*.webp', route => route.abort());
   await ready(page, '/study/l3/vocabulary?q=猫');
   const card = page.getByRole('article', { name: 'Ficha de 猫', exact: true });
   await expect(card).not.toHaveClass(/has-image/);

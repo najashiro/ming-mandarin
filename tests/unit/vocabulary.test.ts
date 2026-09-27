@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { selectVocabulary, searchVocabulary, searchKey, vocabularyCatalog, examplesForScope, examplesForWord, getVocabularySet, getVocabularyLesson, accumulatedVocabulary, searchGlobalVocabulary } from '@/lib/vocabulary';
 import { evaluateMix, startMix, mixStats, reconcileMixSession } from '@/lib/vocabulary-review';
 import { parseVocabularyState, vocabularyStorageKey } from '@/lib/vocabulary-storage';
-import { imageForWord, vocabularyMedia } from '@/lib/vocabulary-media';
+import { availablePracticeTypes, imageForWord, vocabularyMedia } from '@/lib/vocabulary-media';
 import { resolveHanziGlyph } from '@/lib/hanzi/navigation';
 import { audioForMandarinText } from '@/lib/mandarin-audio';
 import corpus from '@/data/corpus-v21-public.json';
@@ -46,12 +46,14 @@ describe('vocabulario activo: evidencia, búsqueda y recursos', () => {
     expect(searchKey('nü')).not.toBe(searchKey('nu'));
     expect(searchVocabulary(vocabularyCatalog, 'nv3er2')[0].hanzi).toBe('女儿');
   });
-  it('solo reutiliza imágenes revisadas y archivos existentes', () => {
-    for (const media of vocabularyMedia.filter(m => m.status === 'approved')) {
+  it('publica imágenes permitidas y nunca habilita quiz para apoyo contextual', () => {
+    for (const media of vocabularyMedia.filter(m => ['approved', 'generated'].includes(m.status))) {
       expect(vocabularyCatalog.some(w => w.id === media.wordId)).toBe(true);
       expect(existsSync(`public${media.src}`)).toBe(true);
     }
-    expect(imageForWord(pet.id)).toBeUndefined();
+    for (const word of vocabularyCatalog.filter(word => word.visual_ming.visual_mode === 'none')) expect(imageForWord(word.id)).toBeUndefined();
+    for (const word of vocabularyCatalog.filter(word => word.visual_ming.image_support)) expect(imageForWord(word.id)).toBeDefined();
+    for (const word of vocabularyCatalog.filter(word => !word.visual_ming.image_quiz_eligible)) expect(availablePracticeTypes(word)).not.toContain('image');
   });
   it('abre 宠 y 物 como consultas sin inventar destinos para otros glifos', () => {
     for (const character of pet.hanzi) expect(resolveHanziGlyph(character)).toMatchObject({ kind: 'supplementary', character });

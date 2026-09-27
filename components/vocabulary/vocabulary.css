@@ -55,12 +55,13 @@
 .active-vocabulary .audio-button svg { width:var(--vocab-audio-icon); height:var(--vocab-audio-icon); }
 .active-vocabulary .audio-button:is(.loading,.playing) { background:transparent; color:var(--vocab-audio-ink); }
 
-/* Existing studio photos: preserve the subject and blend the left seam.
-   New Chinese-environment assets are pending; generation is not authorized. */
-.vocabulary-card.has-image { background:#f4f0e9; }
+/* The card owns its surface. Generated images are transparent visual layers. */
+.vocabulary-card.has-image { background:var(--vocab-surface); }
 .vocabulary-photo { position:absolute; inset:0; display:block; overflow:hidden; border-radius:var(--vocab-radius); pointer-events:none; }
 .vocabulary-photo--studio .vocabulary-thumbnail { position:absolute; right:0; top:0; height:100%; width:auto; max-width:none; aspect-ratio:1; object-fit:cover; mask-image:linear-gradient(to right,transparent,#000 12%); }
-.vocabulary-photo::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,#fffdf8 0%,#fffdf8f5 25%,#fffdf800 45%); }
+.vocabulary-photo--transparent .vocabulary-thumbnail { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; object-position:right center; }
+.vocabulary-photo--studio::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,#fffdf8 0%,#fffdf8f5 25%,#fffdf800 45%); }
+.vocabulary-photo--transparent::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,var(--vocab-surface) 0%,color-mix(in srgb,var(--vocab-surface) 92%,transparent) 28%,transparent 48%); }
 .active-vocabulary .vocabulary-image-flip { position:absolute; inset:0; z-index:0; width:100%; height:100%; margin:0; padding:0; border:0; border-radius:var(--vocab-radius); background:transparent; }
 .has-image .vocabulary-card-content { align-self:flex-start; max-width:100%; padding:0; background:transparent; }
 .vocabulary-card.is-reversed { background:var(--vocab-reverse); }

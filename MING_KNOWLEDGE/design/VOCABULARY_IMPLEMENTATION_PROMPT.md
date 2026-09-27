@@ -1,176 +1,136 @@
 # Prompt reutilizable · Vocabulario Míng
 
-Este prompt implementa el estándar `ming-vocabulary-immersive-zh-golden-v1`.
-Su almacenamiento no ejecuta los pasos ni cambia por sí mismo la web.
-Leer primero [`VOCABULARY_STYLE.md`](VOCABULARY_STYLE.md) y los valores de
-[`vocabulary-style.json`](vocabulary-style.json).
+Este prompt implementa el estándar
+`ming-vocabulary-transparent-subject-golden-v2`, versión `2.0.0`. Guardarlo no
+ejecuta generación de imágenes ni cambia por sí mismo el runtime.
 
 ## Prompt de implementación
 
 ```text
 Trabaja en Míng para aplicar el estándar visual de Vocabulario aprobado:
-ming-vocabulary-immersive-zh-golden-v1, versión 1.1.0.
+ming-vocabulary-transparent-subject-golden-v2, versión 2.0.0.
 
 FUENTE DE VERDAD
-1. Lee AGENTS.md, MING_KNOWLEDGE/AGENTS.md y
-   MING_KNOWLEDGE/design/VOCABULARY_STYLE.md.
-2. Carga MING_KNOWLEDGE/design/vocabulary-style.json. Sus valores mandan sobre
-   proporciones aproximadas de cualquier captura o maqueta.
-3. Inspecciona MING_KNOWLEDGE/design/references/vocabulary-immersive-zh-approved.png.
-   Es la segunda propuesta de la última tanda: tarjetas horizontales con
-   fotografía inmersiva, fondos chinos difuminados y traducción pequeña.
-4. Usa los datos curriculares auditados y las relaciones públicas resueltas.
-   No revises PDF por defecto ni inventes frases, pinyin o traducciones.
+1. Lee AGENTS.md, MING_KNOWLEDGE/AGENTS.md,
+   MING_KNOWLEDGE/design/VOCABULARY_STYLE.md y
+   MING_KNOWLEDGE/design/vocabulary-style.json.
+2. Inspecciona la referencia
+   MING_KNOWLEDGE/design/references/vocabulary-transparent-subject-approved.png.
+   Es una maqueta de interfaz: no extraigas de ella contenido curricular ni la
+   recortes para crear assets.
+3. Usa solo datos curriculares auditados. No inventes Hanzi, pinyin,
+   traducciones, ejemplos ni relaciones.
 
 OBJETIVO VISUAL
-Una ficha compacta y coherente en toda la sección: fotografía realista a sangre,
-sujeto nítido y completo, ambiente chino sobrio muy desenfocado, degradado marfil
-suave bajo el texto, Hanzi protagonista, pinyin secundario, traducción pequeña
-y tenue. Audio sin fondo junto al carácter. Sin rectángulo interior
-de imagen, marco blanco, pie de foto separado o fila adicional de botones.
+Una tarjeta horizontal marfil de proporción áurea con el texto abajo a la
+izquierda, controles en las esquinas y un sujeto fotográfico aislado a la
+derecha. El asset del sujeto tiene transparencia real. El color de la tarjeta,
+los textos, cualquier degradado y todos los controles son HTML/CSS.
 
-GEOMETRÍA OBLIGATORIA
-La ficha completa tiene ancho/alto 1.61803398875. Referencia 400 × 247.2136 px.
-CSS: box-sizing:border-box; width:100%; max-width:25rem;
-aspect-ratio:1.61803398875 / 1. El alto se calcula, no se fija a un valor único.
-Foto, texto y controles están incluidos en esa proporción. Radio 18 px.
-Rejilla responsive: ancho útil por ficha de al menos 288 px cuando sea posible;
-una columna a 320–430 px; separación 12–16 px; relleno del texto 12–16 px.
-Usa la misma geometría por defecto en fichas con y sin foto y en ambas caras.
-Con zoom, contenido largo o reversos extensos, permite crecimiento vertical
-accesible. Nunca cortes texto ni lo hagas ilegible para forzar la proporción.
+No reutilices el estilo anterior de fotografía a sangre con habitación china,
+bokeh o fondo ambiental. No hornees un fondo blanco o marfil dentro del asset.
 
-FOTOGRAFÍAS
-Revisa cada asset existente. Los cuadrados con fondo visible o encuadre que
-corta perro, gato, piano u otros sujetos deben reemplazarse al ejecutar la
-generación autorizada. Usa el prompt fotográfico que acompaña este documento.
-Genera una imagen individual por palabra, sin interfaz, texto ni marcas.
-Fondo chino elegante: madera, celosías, cerámica celadón, bambú, luz cálida,
-pocos elementos. Fondo con bokeh en TODOS los casos, sujeto perfectamente nítido.
-Reserva abajo a la izquierda espacio para etiquetas y arriba para controles.
-Conserva todo el sujeto: orejas, patas y cola en animales; teclado, tapa,
-patas y pedales en el piano; alimento y recipiente completos.
-Usa cover solo con imágenes ya compuestas para el formato y posición focal
-verificada. No uses contain que produzca rectángulos ni blur sobre todo el asset.
-Las fotos finales viven en el repositorio y el manifiesto conserva IDs y
-metadatos. Crea archivos versionados; no cambies recursos de otros juegos
-indirectamente al sobrescribir imágenes compartidas.
+GEOMETRÍA
+La tarjeta completa tiene ancho/alto 1.61803398875. Referencia 400 × 247.2136
+px. CSS base: box-sizing:border-box; width:100%; max-width:25rem;
+aspect-ratio:1.61803398875 / 1. Radio 18 px, borde #e5e0d6, superficie #fffdf8
+y sombra discreta. Usa una columna a 320–430 px. Con zoom o contenido largo,
+permite crecimiento vertical; no recortes texto ni lo reduzcas para forzar la
+proporción.
+
+IMAGEN TRANSPARENTE
+Renderiza la imagen como una capa independiente. Usa object-fit:contain y
+posición focal a la derecha. Zona normal del sujeto x=46–96%, y=3–96%; zona
+segura de texto x=4–43%, y=55–94%. Conserva completas orejas, patas, cola,
+instrumentos, platos, asas y extremos. No permitas que el sujeto invada los
+controles superiores o el texto.
+
+Los maestros son PNG con canal alfa; WebP con alfa puede ser derivado web.
+Objetivo 1618 × 1000 px. Si la API entrega un tamaño cercano, normaliza después
+sobre un lienzo transparente de esa proporción, sin deformar ni cortar. Se
+permite una sombra de contacto tenue y semitransparente, nunca un suelo opaco.
+Rechaza archivos con fondo blanco, píxeles opacos en las esquinas, halos de
+recorte, texto, UI, marcas, logos o elementos secundarios dominantes.
 
 TIPOGRAFÍA Y CONTROLES
-Hanzi frontal 43.2 px (38.4 px móvil), peso 500, #173b32.
-Pinyin 16 px, peso 400, #466451; conservar tonos legibles.
-Español 11.52 px (0.72rem), peso 400, #746f68: tercer nivel, nunca igual al pinyin.
-Usa fuentes ya cargadas en Míng; no hornees textos ni botones en imágenes.
-Audio: área transparente de 44 px, icono jade #315848 de 20 px.
-Favoritos arriba a la izquierda, giro arriba a la derecha, fondo transparente, áreas táctiles de 44 px. No tapar el sujeto ni anidar botones.
-Asegura foco visible fuera del recorte de la foto, teclado y aria-label.
-Conserva estados de reproducción y favorito; no dibujes controles ficticios.
-Refuerza el degradado si el texto tenue pierde contraste sobre la fotografía.
+Hanzi frontal 43.2 px (38.4 px móvil), peso 500, #173b32. Pinyin 16 px,
+#466451. Español 11.52 px, #746f68. Audio transparente de 44 px con icono jade
+#315848 de 20 px junto al Hanzi. Favorito arriba a la izquierda y giro arriba a
+la derecha, transparentes, con foco visible y aria-label. No hornees ninguno de
+estos elementos en la imagen.
 
-REVERSO PEDAGÓGICO
-Fondo #e6eee5; palabra estudiada a 24 px, peso 400 y #687169, sin su audio.
-Frase china a 28 px (26 px móvil); énfasis solo en la palabra/tramo estudiado
-en negrita #b34424. Usa vínculos léxicos/pedagógicos auditados y no descubrimiento
-de ejemplos por substring. Pinyin 16 px, traducción 11.52 px tenue.
-Audio de frase a su lado si existe. «Otro ejemplo» pequeño visualmente pero
-con área táctil 44 px. Conserva enlaces individuales a Hanzi disponibles.
-No añadas procedencia, botón escritura ni explicaciones técnicas para alumnos.
+REVERSO Y COMPORTAMIENTO
+Conserva el reverso salvia #e6eee5, jerarquía de frase, énfasis #b34424, audio
+real y «Otro ejemplo» con #f5f8f2 y borde #c4d1c0. Oculta allí el audio de la
+palabra; conserva el audio de frase cuando exista y los enlaces Hanzi. No
+reintroduzcas procedencia ni «escritura». Reinicia al anverso en los eventos
+definidos por el JSON. Conserva IDs, favoritos, progreso, búsqueda, audio y
+relaciones pedagógicas auditadas; no descubras ejemplos por substring. No
+modifiques corpus, Supabase ni producción.
 
-COMPORTAMIENTO
-Reinicia las caras al cambiar filtro, lección, favoritos, página, activar o
-escribir en el buscador, seleccionar resultado y recargar. Favoritos y progreso
-siguen guardados; las caras no. Conserva IDs, búsqueda global, lecciones,
-partición exclusiva, ejemplos globales y funciones de Vocabulario Mix.
-No modifiques corpus, Supabase, audio ni progreso como parte de un cambio visual.
-
-IMPLEMENTACIÓN Y VERIFICACIÓN
-Inspecciona primero los componentes reales y sus pruebas. La rama local de
-vocabulario puede contener avances aún no presentes en main; no los descartes.
-Centraliza los tokens; no pegues CSS específico por palabra o lección.
-Separa superficie fotográfica, gradiente, textos y controles accesibles.
-No uses la captura aprobada como fotografía de producción.
-Comprueba tarjetas normales con ancho/alto=phi (tolerancia 0.01), y documenta
-excepciones de contenido largo/zoom. Verifica 320, 375, 390, 430, 768 y 1280 px
-en Chromium y WebKit: anverso, reverso, audio, filtros, búsqueda, favoritos,
-recarga, enlaces Hanzi, imágenes fallidas y progreso. Revisa perro, gato,
-piano, baozi y vocablos largos. Incluye teclado, contraste y texto al 200 %.
-Ejecuta los checks pertinentes del repositorio y adjunta capturas finales.
-Indica qué se implementó y qué recursos siguen pendientes; no afirmes que
-guardar esta especificación equivale a desplegar la interfaz.
+VERIFICACIÓN
+Comprueba proporción, transparencia real, halos y recorte con gato, perro,
+baozi, piano, objetos claros y oscuros. Prueba la misma imagen sobre varios
+colores de tarjeta: solo el sujeto y su sombra de contacto deben permanecer.
+Revisa anverso/reverso en 320, 375, 390, 430, 768 y 1280 px en Chromium y
+WebKit, además de teclado, contraste, texto al 200 % y movimiento reducido.
+Registra prompt, versión de estilo, ruta y estado de revisión de cada asset.
 ```
 
-## Prompt maestro para cada fotografía
+## Prompt maestro para cada imagen
 
-Reemplazar las variables con una palabra y un significado ya auditados. Cada
-solicitud produce **una fotografía**, nunca una tarjeta con texto. La generación
-de nuevos assets debe estar incluida en el encargo de implementación; este
-archivo no dispara llamadas ni guarda credenciales.
+Reemplazar las variables únicamente con datos auditados. Cada solicitud produce
+un asset de sujeto; nunca una tarjeta terminada.
 
 ```text
-Use case: photorealistic-natural / educational vocabulary asset.
+Use case: photorealistic educational vocabulary cutout.
 Project: MÍNG, active Mandarin vocabulary.
-Style ID: ming-vocabulary-immersive-zh-golden-v1.
+Style ID: ming-vocabulary-transparent-subject-golden-v2.
 
-Create ONE photorealistic photograph illustrating {AUDITED_MEANING}.
+Create ONE photorealistic isolated subject illustrating {AUDITED_MEANING}.
 Main subject: {SUBJECT_DESCRIPTION_AND_COMPLETE_PARTS}.
-The subject must be immediately recognizable for a beginner learning Mandarin.
+It must be immediately recognizable to a beginner learning Mandarin.
 
-Composition: a horizontal golden rectangle, width:height approximately
-1.618:1, target master 1618 × 1000 pixels or the nearest supported landscape
-resolution. The web card will enforce the exact outer ratio with CSS.
-Compose for that ratio from the start. Subject toward center-right, generally
-inside x=42–94% and y=16–88%, adjusted for the complete subject. Preserve
-safe margins around ears, paws, tails, instrument edges, dishes and handles.
-Reserve quiet low-detail negative space at lower left (x=4–40%, y=58–94%)
-for text added later in HTML. Keep both upper corners quiet for UI controls.
-Do not crop the learning subject. Do not distort or miniaturize it unnaturally.
+OUTPUT AND TRANSPARENCY
+Deliver a clean PNG cutout with a genuine transparent alpha background.
+There must be no white, ivory, gray, colored, studio, indoor or outdoor
+background. Transparent pixels must extend to every canvas edge and corner.
+Do not simulate transparency with a checkerboard. Preserve fine hair, steam and
+edge detail without a white or dark halo.
 
-Setting: a tasteful contemporary Chinese home or tea-room appropriate to the
-subject. Subtle warm timber lattice windows, pale plaster, bamboo or a celadon
-vase, soft natural daylight. Use only a few contextual details. Maintain
-consistent warm ivory, muted jade and natural wood tones across the series.
+COMPOSITION
+Horizontal golden-ratio canvas, target 1618 × 1000 px or the nearest supported
+landscape size. Place the complete subject toward the center-right, generally
+inside x=46–96% and y=3–96%. Reserve transparent negative space on the left,
+especially x=4–43% and y=55–94%, for live HTML text. Keep both upper corners
+clear for UI controls. Do not crop, distort or unnaturally miniaturize the
+subject. The application may normalize the result onto a 1618 × 1000 transparent
+canvas after generation.
 
-Optics: main subject sharply focused, distant background strongly defocused
-with shallow depth of field and creamy natural bokeh, similar to refined food
-photography. This applies equally to animals, food and instruments. Preserve
-realistic depth, contact shadows and soft warm light. No global blur on the
-subject, no cutout halo and no obvious pasted-on background.
+APPEARANCE
+Natural premium product or animal photography, realistic proportions and
+materials, sharp subject, calm diffuse daylight, gentle contrast and accurate
+color. A subtle soft contact shadow with partial transparency is allowed to
+ground the subject. No opaque floor, wall, room, scenery or decorative props.
 
-Lighting: diffuse daylight, gentle contrast, no harsh shadows, calm premium
-editorial photography. Pale quiet lower-left background for a subtle ivory
-gradient to be added by the website. Full-bleed photographic scene with no
-frame, matte, internal border or separate white caption panel.
+AVOID
+Text, Chinese characters, pinyin, captions, UI, buttons, speaker icons, stars,
+arrows, watermarks, brands, logos, frames, cards, colored rectangles, gradients,
+collages, extra dominant subjects, cut-off body parts, cartoon or illustration.
 
-Avoid: text, Chinese characters, pinyin, captions, UI, buttons, speaker icons,
-stars, arrows, watermarks, brand names/logos, collages, extra dominant subjects,
-cut-off body parts, floating objects, exaggerated red festival decorations,
-dragons, cartoon/illustration style, busy sharp background.
-
-Deliver only the photograph. The application will render all text, gradients
-and controls as accessible HTML/CSS. Match the approved reference's photographic
-style and depth of field, without reproducing its embedded UI or typography.
+Deliver only the isolated transparent subject. The application renders the
+card color, typography, gradients and controls with accessible HTML/CSS.
 ```
 
-Variantes de sujeto para comprobar la consistencia visual (no son contenido
-curricular nuevo):
+## Variantes de control visual
 
 | Sujeto | Descripción para la variable |
 | --- | --- |
-| Baozi | Tres bollos al vapor sobre plato cerámico, pliegues y vapor sutil visibles; plato completo. |
-| Perro | Un golden retriever sentado, cabeza, orejas, patas y cola completas; fondo chino muy difuminado. |
-| Gato | Un gato doméstico sentado, cabeza, orejas, patas y cola completas; misma luz y grado de desenfoque. |
-| Piano | Un piano vertical negro sin marca; tapa, teclado, patas y pedales completos; ambiente chino discreto y difuminado. |
+| Baozi | Tres bollos al vapor y su plato cerámico completos; pliegues y vapor sutil visibles. |
+| Perro | Un golden retriever sentado; cabeza, orejas, patas y cola completas. |
+| Gato | Un gato doméstico sentado; cabeza, orejas, patas y cola completas. |
+| Piano | Un piano vertical negro sin marca; tapa, teclado, patas y pedales completos. |
 
-Guardar el prompt utilizado, estilo/versión, ruta del asset y estado de revisión
-en los metadatos de producción. Comprobar el encuadre renderizado antes de
-marcar un recurso como listo; una generación exitosa no garantiza su ajuste.
-
-## Ajuste aprobado: 25 de septiembre de 2026
-
-En móvil, seleccionar una sugerencia global debe completar la navegación aunque
-el teclado retire el foco durante el toque; actualizar el selector de lección.
-El reverso debe crecer con todas las líneas y conservar «Otro ejemplo» dentro
-de la superficie. Este botón mantiene fondo claro y borde salvia; los iconos
-de favorito, giro y audio permanecen transparentes.
-
-Hanzi principal +20 % (43.2 px; 38.4 px móvil), traducción −10 % adicional (11.52 px), pinyin sin cambios (16 px). Botones de la ficha transparentes, sin fondo ni sombra, con área táctil de 44 px y foco visible. Eliminar el panel blanco localizado detrás del texto; conservar únicamente la transición global suave de la fotografía a la izquierda. Estas indicaciones sustituyen los fondos de controles descritos en la versión inicial.
+Estas variantes comprueban composición y transparencia; no agregan contenido
+curricular. Una respuesta exitosa de la API no equivale a un asset aprobado:
+debe pasar revisión de alfa, encuadre y renderizado sobre la tarjeta.

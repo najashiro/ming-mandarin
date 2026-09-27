@@ -35,7 +35,7 @@ export function VocabularyCard({ word, scope, route, back, favorite, hideTransla
   const image = imageForWord(word.id);
   const [imageFailed, setImageFailed] = useState(false);
   const showPhoto = !showBack && image?.src && !imageFailed;
-  const photo = showPhoto && <VocabularyPhoto src={image.src!} alt={image.alt} onError={() => setImageFailed(true)}/>;
+  const photo = showPhoto && <VocabularyPhoto src={image.src!} alt={image.alt} transparent={'presentation' in image && image.presentation === 'transparent-cutout'} onError={() => setImageFailed(true)}/>;
   return <article className={`vocabulary-card${showBack ? ' is-reversed' : showPhoto ? ' has-image' : ''}`}
     id={`word-${word.id}`} tabIndex={-1} aria-label={`Ficha de ${word.hanzi}`}>
     {photo && (hasExamples
