@@ -2,7 +2,7 @@ name: Repair only dian3 audio
 
 on:
   push:
-    branches: [fix/dian3-audio-20260920]
+    branches: [codex/fix-dian-final-n-20260927]
     paths: [.github/workflows/repair-dian3-audio.yml]
   workflow_dispatch:
 
@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   repair:
-    if: github.repository == 'najashiro/ming-mandarin' && github.ref == 'refs/heads/fix/dian3-audio-20260920'
+    if: github.repository == 'najashiro/ming-mandarin' && github.ref == 'refs/heads/codex/fix-dian-final-n-20260927'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -30,7 +30,7 @@ jobs:
 
       - uses: actions/checkout@v4
         with:
-          ref: fix/dian3-audio-20260920
+          ref: codex/fix-dian-final-n-20260927
           fetch-depth: 1
 
       - uses: actions/setup-node@v4
@@ -62,7 +62,7 @@ jobs:
           writeFileSync(path.join(process.env.RUNNER_TEMP, 'dian3-manifest-before.json'), original);
           copyFileSync(path.join('public/audio/mandarin', clip.file), path.join(process.env.RUNNER_TEMP, 'dian3-previous.mp3'));
           clip.file = 'l2-h-1d59ea7cbb-dian3-candidate.mp3';
-          clip.instructions = '请只朗读输入的汉字点一次。读音是diǎn，第三声。使用清晰自然的标准普通话教学发音，单字读完整第三声。保留韵尾n，不卷舌，不儿化，不读成点儿，不添加任何其他音节、数字、拼音字母或解释。';
+          clip.instructions = '请只朗读输入的汉字点一次。读音是 diǎn，第三声。使用清晰自然的标准普通话教学发音。韵尾必须清晰发出舌尖前鼻音 n：收尾时舌尖抵住上齿龈，鼻腔共鸣清楚，绝不能省略 n。单字读完整第三声，完整结束韵尾后再停顿。不卷舌，不儿化，不读成点儿，不添加任何其他音节、数字、拼音字母或解释。';
           writeFileSync(file, JSON.stringify(manifest, null, 2) + '\n');
           JS
           node scripts/generate-pronunciation-audio.mjs --only=l2-h-1d59ea7cbb --dry-run
@@ -76,6 +76,9 @@ jobs:
       - name: Decode the candidate and check its duration
         run: |
           candidate=public/audio/mandarin/l2-h-1d59ea7cbb-dian3-candidate.mp3
+          padded="$RUNNER_TEMP/dian3-padded.mp3"
+          ffmpeg -v error -i "$candidate" -af "apad=pad_dur=0.3" -codec:a libmp3lame -q:a 2 "$padded"
+          mv "$padded" "$candidate"
           ffmpeg -v error -i "$candidate" -f null -
           ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$candidate" > "$RUNNER_TEMP/dian3-duration.txt"
 
@@ -141,4 +144,4 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git commit -m 'fix(audio): regenerate 点 diǎn without erhua'
-          git push origin HEAD:refs/heads/fix/dian3-audio-20260920
+          git push origin HEAD:refs/heads/codex/fix-dian-final-n-20260927
