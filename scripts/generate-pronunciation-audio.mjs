@@ -62,6 +62,9 @@ const baseInstructions = [
   'Pronuncia exactamente el texto chino de entrada, sin traducir, deletrear, explicar ni añadir palabras.',
   'Ritmo lento y natural, con dicción limpia y sin música.'
 ].join(' ');
+const clipInstructions = (clip) => clip.id === 'l2-h-1d59ea7cbb'
+  ? `${clip.instructions} 韵尾必须清晰发出舌尖前鼻音 n：收尾时舌尖抵住上齿龈，鼻腔共鸣清楚，绝不能省略 n。完整结束韵尾后再停顿。`
+  : clip.instructions;
 
 let cursor = 0;
 let generated = 0;
@@ -86,7 +89,7 @@ while (cursor < selectedClips.length) {
       model: 'gpt-4o-mini-tts',
       voice,
       input: clip.input,
-      instructions: `${baseInstructions} ${clip.instructions}`,
+      instructions: `${baseInstructions} ${clipInstructions(clip)}`,
       response_format: 'mp3'
     })
     });
