@@ -1,0 +1,16 @@
+{
+  "requestId": "image-prompts-20260927",
+  "branch": "feat/visual-ming-classification-20260925",
+  "batchId": "ming-image-prompts-20260927-01",
+  "status": "requested",
+  "operation": "compile_and_commit_offline_prompt_text_only",
+  "images_to_generate": 0,
+  "paid_api_calls": 0,
+  "allowedOutputs": [
+    "MING_KNOWLEDGE/visual-production/IMAGE_PROMPTS.json",
+    "MING_KNOWLEDGE/visual-production/IMAGE_PROMPTS.md",
+    "MING_KNOWLEDGE/visual-production/summary.json"
+  ],
+  "may_update_request_status": true,
+  "may_merge_main": false
+}

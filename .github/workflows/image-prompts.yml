@@ -1,0 +1,118 @@
+name: Ming image prompt catalog (no image generation)
+on:
+  push:
+    branches: [feat/visual-ming-classification-20260925]
+  pull_request:
+    paths:
+      - 'MING_KNOWLEDGE/visual-production/**'
+      - 'MING_KNOWLEDGE/v2/visual/**'
+      - 'data/corpus-v21-public.json'
+      - '.github/workflows/image-prompts.yml'
+      - '.github/corpus-requests/image-prompts-20260927.json'
+permissions:
+  contents: read
+concurrency:
+  group: image-prompts-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    outputs:
+      publish: ${{ steps.request.outputs.publish }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - id: request
+        name: Check bounded text-only request
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          REF_NAME: ${{ github.ref }}
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          request=json.loads(Path('.github/corpus-requests/image-prompts-20260927.json').read_text())
+          assert request['requestId']=='image-prompts-20260927'
+          assert request['images_to_generate']==0 and request['paid_api_calls']==0
+          assert request['status'] in ('requested','completed')
+          initial=(os.environ['EVENT_NAME']=='push' and os.environ['REF_NAME']=='refs/heads/feat/visual-ming-classification-20260925' and request['status']=='requested')
+          with open(os.environ['GITHUB_OUTPUT'],'a') as output:
+              output.write('publish='+str(initial).lower()+'\n')
+          if not initial:
+              subprocess.run(['python3','MING_KNOWLEDGE/visual-production/image_prompts.py','--check'],check=True)
+          PY
+      - name: Validate exact coverage and compile only prompt text
+        run: |
+          python3 MING_KNOWLEDGE/visual-production/image_prompts.py
+          python3 MING_KNOWLEDGE/visual-production/image_prompts.py --write
+          python3 -m unittest discover -s MING_KNOWLEDGE/visual-production -p 'test_*.py'
+          python3 MING_KNOWLEDGE/visual-production/image_prompts.py --check
+          python3 MING_KNOWLEDGE/v2/query.py --validate > /tmp/corpus-validation.json
+          python3 MING_KNOWLEDGE/v2/visual_ming.py --check --check-reports > /tmp/visual-check.json
+          python3 MING_KNOWLEDGE/v2/pinyin_ming.py --check > /tmp/pinyin-check.json
+          python3 MING_KNOWLEDGE/v2/translations_ming.py --check > /tmp/translations-check.json
+          python3 MING_KNOWLEDGE/v2/audit_source_tables.py --check > /tmp/source-check.json
+          python3 scripts/export-corpus-v21.py --check
+          python3 -m unittest discover -s MING_KNOWLEDGE/v2 -p 'test_*.py'
+          git diff --exit-code -- data MING_KNOWLEDGE/v2 app components seed public
+          git diff --check
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.22.2
+      - run: corepack enable
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lint
+      - run: pnpm typecheck
+      - run: pnpm test
+      - run: pnpm build
+  publish-text:
+    needs: validate
+    if: needs.validate.outputs.publish == 'true' && github.event_name == 'push' && github.ref == 'refs/heads/feat/visual-ming-classification-20260925'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - name: Regenerate the allowed text catalog after all tests
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          path=Path('.github/corpus-requests/image-prompts-20260927.json')
+          req=json.loads(path.read_text())
+          expected=['MING_KNOWLEDGE/visual-production/IMAGE_PROMPTS.json','MING_KNOWLEDGE/visual-production/IMAGE_PROMPTS.md','MING_KNOWLEDGE/visual-production/summary.json']
+          assert req['requestId']=='image-prompts-20260927'
+          assert req['branch']=='feat/visual-ming-classification-20260925'
+          assert req['status']=='requested' and req['allowedOutputs']==expected
+          assert req['images_to_generate']==0 and req['paid_api_calls']==0 and not req['may_merge_main']
+          PY
+          python3 MING_KNOWLEDGE/visual-production/image_prompts.py --write
+          python3 MING_KNOWLEDGE/visual-production/image_prompts.py --check
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          path=Path('.github/corpus-requests/image-prompts-20260927.json')
+          req=json.loads(path.read_text())
+          req['status']='completed'
+          req['result']=json.loads(Path('MING_KNOWLEDGE/visual-production/summary.json').read_text())
+          path.write_text(json.dumps(req,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - name: Commit only derived text to the feature branch with concurrency guard
+        env:
+          EXPECTED_SHA: ${{ github.sha }}
+        run: |
+          BRANCH=feat/visual-ming-classification-20260925
+          git fetch origin "$BRANCH"
+          test "$(git rev-parse FETCH_HEAD)" = "$EXPECTED_SHA"
+          git add -- MING_KNOWLEDGE/visual-production/IMAGE_PROMPTS.json MING_KNOWLEDGE/visual-production/IMAGE_PROMPTS.md MING_KNOWLEDGE/visual-production/summary.json .github/corpus-requests/image-prompts-20260927.json
+          python3 - <<'PY'
+          import subprocess
+          allowed={'MING_KNOWLEDGE/visual-production/IMAGE_PROMPTS.json','MING_KNOWLEDGE/visual-production/IMAGE_PROMPTS.md','MING_KNOWLEDGE/visual-production/summary.json','.github/corpus-requests/image-prompts-20260927.json'}
+          actual=set(subprocess.check_output(['git','diff','--cached','--name-only'],text=True).splitlines())
+          assert actual and actual <= allowed, actual
+          PY
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'chore(prompts): commit validated transparent-image prompt catalog'
+          git push origin "HEAD:refs/heads/$BRANCH"
