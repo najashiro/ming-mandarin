@@ -3,11 +3,12 @@
 ## Estándar visual de Vocabulario
 
 El diseño por defecto de las fichas está guardado en
-[`design/VOCABULARY_STYLE.md`](design/VOCABULARY_STYLE.md): fondo inmersivo chino,
-fondos fotográficos difuminados y tarjeta completa en proporción áurea horizontal.
+[`design/VOCABULARY_STYLE.md`](design/VOCABULARY_STYLE.md): sujeto fotográfico
+aislado con transparencia real, superficie proporcionada por la tarjeta y
+tarjeta completa en proporción áurea horizontal.
 Consulta los [parámetros exactos](design/vocabulary-style.json), el
 [prompt reutilizable](design/VOCABULARY_IMPLEMENTATION_PROMPT.md) y la
-[referencia visual elegida](design/references/vocabulary-immersive-zh-approved.png).
+[referencia visual elegida](design/references/vocabulary-transparent-subject-approved.png).
 Es conocimiento de producto, separado del corpus; su publicación documenta el
 estándar y no certifica que la web ya lo aplique.
 

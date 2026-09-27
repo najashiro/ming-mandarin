@@ -1,6 +1,6 @@
 'use client';
 import { Fragment, useState } from 'react';
-import { imageForWord } from '@/lib/vocabulary-media';
+import { imageForWord, type VocabularyMediaEntry } from '@/lib/vocabulary-media';
 import type { CurriculumScope } from '@/data/types';
 import { examplesForWord, type ActiveWord } from '@/lib/vocabulary';
 import { LinkedChineseText } from '@/components/LinkedChineseText';
@@ -26,16 +26,16 @@ export function VocabularyExample({ word, route }: { word: ActiveWord; scope: Cu
   </div>;
 }
 
-export function VocabularyCard({ word, scope, route, back, favorite, hideTranslation, onFlip, onFavorite }: {
+export function VocabularyCard({ word, scope, route, back, favorite, hideTranslation, media, onFlip, onFavorite }: {
   word: ActiveWord; scope: CurriculumScope; route: string; back: boolean;
-  favorite: boolean; hideTranslation: boolean; onFlip: () => void; onFavorite: () => void;
+  favorite: boolean; hideTranslation: boolean; media: readonly VocabularyMediaEntry[]; onFlip: () => void; onFavorite: () => void;
 }) {
   const hasExamples = examplesForWord(word).length > 0;
   const showBack = back && hasExamples;
-  const image = imageForWord(word.id);
+  const image = imageForWord(word.id, media);
   const [imageFailed, setImageFailed] = useState(false);
   const showPhoto = !showBack && image?.src && !imageFailed;
-  const photo = showPhoto && <VocabularyPhoto src={image.src!} alt={image.alt} onError={() => setImageFailed(true)}/>;
+  const photo = showPhoto && <VocabularyPhoto src={image.src!} alt={image.alt} transparent={'presentation' in image && image.presentation === 'transparent-cutout'} onError={() => setImageFailed(true)}/>;
   return <article className={`vocabulary-card${showBack ? ' is-reversed' : showPhoto ? ' has-image' : ''}`}
     id={`word-${word.id}`} tabIndex={-1} aria-label={`Ficha de ${word.hanzi}`}>
     {photo && (hasExamples

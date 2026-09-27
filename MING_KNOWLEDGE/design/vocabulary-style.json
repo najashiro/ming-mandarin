@@ -1,13 +1,17 @@
 {
-  "schema_version": 1,
-  "id": "ming-vocabulary-immersive-zh-golden-v1",
-  "version": "1.1.0",
-  "name": "Fondo inmersivo chino · Proporción áurea",
-  "approved_on": "2026-09-25",
-  "approval": "Usuario eligió la segunda propuesta de la última tanda y pidió conservarla en main como estándar por defecto.",
+  "schema_version": 2,
+  "id": "ming-vocabulary-transparent-subject-golden-v2",
+  "version": "2.0.0",
+  "name": "Sujeto aislado transparente · Proporción áurea",
+  "approved_on": "2026-09-27",
+  "approval": "El usuario sustituyó el fondo fotográfico ambientado por un sujeto aislado con transparencia real; la tarjeta proporciona el color de fondo.",
   "status": "approved_design_standard",
   "runtime_status": "not_implemented_by_this_record",
   "knowledge_kind": "product_design_not_curricular_evidence",
+  "supersedes": {
+    "id": "ming-vocabulary-immersive-zh-golden-v1",
+    "version": "1.1.0"
+  },
   "default_for": [
     "vocabulary_catalog_cards_with_image",
     "vocabulary_catalog_cards_without_image"
@@ -16,40 +20,37 @@
   "specification": "VOCABULARY_STYLE.md",
   "implementation_prompt": "VOCABULARY_IMPLEMENTATION_PROMPT.md",
   "reference": {
-    "path": "references/vocabulary-immersive-zh-approved.png",
-    "original_filename": "exec-449d7fa3-1d61-4d0e-9afb-a79ebb7d7dc9.png",
-    "source": "built_in_image_generation",
-    "selection": "second_image_of_latest_golden_ratio_chinese_background_proposals",
+    "path": "references/vocabulary-transparent-subject-approved.png",
+    "original_filename": "codex-clipboard-530e9a74-949e-40ea-bfc2-6093c049ed31.png",
+    "source": "user_provided_ui_mockup",
+    "selection": "isolated_cat_on_right_with_card_owned_background",
     "role": "visual_reference_only_not_production_asset_or_curricular_source",
     "geometry_authority": "card.aspect_ratio_width_over_height; not reference bitmap proportions",
-    "sha256": "ab520a3c7dfc9631d2db7b9ff4d1cadef0280b173246337466e4d9d2ef060e3c"
+    "sha256": "9ed7ac923a1454f04ca424986a96c3ca780e2ad38f62cff0bb58a13fa5e24eb2"
   },
   "card": {
     "orientation": "landscape",
     "aspect_ratio_width_over_height": 1.61803398875,
-    "aspect_ratio_applies_to": "entire_card_including_photo_text_and_controls",
+    "aspect_ratio_applies_to": "entire_card_including_subject_text_and_controls",
     "default_width_px": 400,
     "max_width_rem": 25,
     "height_rule": "rendered_width / aspect_ratio_width_over_height",
     "reference_height_px": 247.213595499942,
     "radius_px": 18,
+    "border": "1px solid #e5e0d6",
     "padding_px": 16,
     "padding_mobile_px": 12,
     "gap_px": 16,
     "gap_mobile_px": 12,
     "preferred_min_grid_width_px": 288,
-    "single_column_viewports_px": [
-      320,
-      375,
-      390,
-      430
-    ],
+    "single_column_viewports_px": [320, 375, 390, 430],
     "overflow_policy": "allow_height_growth_for_long_content_or_accessibility; never_clip_text_or_shrink_to_fit",
     "shadow": "0 4px 16px rgba(38, 56, 43, 0.08)"
   },
   "palette": {
     "surface": "#fffdf8",
     "page": "#f6f3eb",
+    "border": "#e5e0d6",
     "hanzi": "#173b32",
     "pinyin": "#466451",
     "translation": "#746f68",
@@ -62,32 +63,12 @@
   },
   "typography": {
     "family_policy": "reuse_existing_Ming_fonts_with_Hanzi_and_tone_support",
-    "front_hanzi": {
-      "size_rem": 2.7,
-      "mobile_size_rem": 2.4,
-      "weight": 500,
-      "line_height": 1.2
-    },
-    "pinyin": {
-      "size_rem": 1,
-      "weight": 400,
-      "line_height": 1.4
-    },
-    "translation": {
-      "size_rem": 0.72,
-      "weight": 400,
-      "line_height": 1.4,
-      "reference_reduction_percent": 28
-    },
-    "reverse_word": {
-      "size_rem": 1.5,
-      "weight": 400
-    },
-    "reverse_sentence": {
-      "size_rem": 1.75,
-      "mobile_size_rem": 1.625,
-      "line_height": 1.5
-    },
+    "front_alignment": "bottom_left",
+    "front_hanzi": { "size_rem": 2.7, "mobile_size_rem": 2.4, "weight": 500, "line_height": 1.2 },
+    "pinyin": { "size_rem": 1, "weight": 400, "line_height": 1.4 },
+    "translation": { "size_rem": 0.72, "weight": 400, "line_height": 1.4, "reference_reduction_percent": 28 },
+    "reverse_word": { "size_rem": 1.5, "weight": 400 },
+    "reverse_sentence": { "size_rem": 1.75, "mobile_size_rem": 1.625, "line_height": 1.5 },
     "example_target_weight": 700,
     "text_scaling": "respect_browser_zoom_and_user_preferences"
   },
@@ -107,59 +88,34 @@
     "next_example_border": "#c4d1c0"
   },
   "photography": {
-    "style": "warm_photorealistic_contemporary_Chinese_interior",
-    "background": "strong_shallow_depth_of_field_and_creamy_bokeh",
-    "subject": "sharp_complete_recognizable_center_right",
-    "background_elements": [
-      "wood_lattice",
-      "pale_plaster",
-      "bamboo",
-      "celadon_ceramics"
-    ],
-    "text_safe_zone_normalized": {
-      "x_min": 0.04,
-      "x_max": 0.4,
-      "y_min": 0.58,
-      "y_max": 0.94
-    },
-    "subject_zone_guidance_normalized": {
-      "x_min": 0.42,
-      "x_max": 0.94,
-      "y_min": 0.16,
-      "y_max": 0.88
-    },
-    "master_target_px": {
-      "width": 1618,
-      "height": 1000,
-      "allow_nearest_supported_landscape_size": true
-    },
-    "render_fit": "cover_after_subject_and_focal_position_validation",
-    "overlay": "soft_ivory_gradient_behind_live_text_without_hard_boundary",
-    "gradient_contrast_policy": "verify_actual_composited_background; strengthen_overlay_when_needed",
+    "style": "photorealistic_isolated_subject_with_true_transparency",
+    "background": "transparent_alpha_zero",
+    "card_owns_background_color": true,
+    "subject": "sharp_complete_recognizable_natural_color",
+    "master_target_px": { "width": 1618, "height": 1000, "allow_nearest_supported_then_normalize": true },
+    "master_format": "png",
+    "web_derivative_formats": ["png", "webp"],
+    "alpha_required": true,
+    "subject_zone_guidance_normalized": { "x_min": 0.46, "x_max": 0.96, "y_min": 0.03, "y_max": 0.96 },
+    "text_safe_zone_normalized": { "x_min": 0.04, "x_max": 0.43, "y_min": 0.55, "y_max": 0.94 },
+    "render_fit": "contain_with_right_focal_position",
+    "contact_shadow": "soft_translucent_alpha_only_optional",
     "production_asset_contains_text_or_controls": false,
+    "forbidden_backgrounds": ["white", "ivory", "solid_color", "room", "landscape", "studio_sweep", "opaque_floor"],
     "avoid": [
-      "visible_photo_rectangle",
-      "contain_letterboxing",
       "cropped_subject",
-      "global_image_blur",
+      "white_or_dark_edge_halo",
+      "opaque_corner_pixels",
       "logos",
       "watermarks",
       "baked_UI",
-      "busy_sharp_background"
-    ],
-    "text_panel": "none"
+      "text",
+      "background_scenery",
+      "dominant_secondary_objects"
+    ]
   },
   "behavior": {
-    "reset_to_front_on": [
-      "lesson_change",
-      "filter_change",
-      "favorite_filter_change",
-      "pagination",
-      "search_focus",
-      "search_input",
-      "search_selection",
-      "reload"
-    ],
+    "reset_to_front_on": ["lesson_change", "filter_change", "favorite_filter_change", "pagination", "search_focus", "search_input", "search_selection", "reload"],
     "persist_card_face": false,
     "preserve_favorites_and_progress": true,
     "preserve_curriculum_ids_and_audited_examples": true,
@@ -167,28 +123,10 @@
   },
   "acceptance": {
     "ratio_tolerance": 0.01,
-    "viewports_px": [
-      320,
-      375,
-      390,
-      430,
-      768,
-      1280
-    ],
-    "engines": [
-      "chromium",
-      "webkit"
-    ],
-    "examples_to_inspect": [
-      "baozi",
-      "dog",
-      "cat",
-      "piano",
-      "long_word",
-      "long_translation",
-      "long_reverse_example",
-      "missing_image"
-    ],
+    "viewports_px": [320, 375, 390, 430, 768, 1280],
+    "engines": ["chromium", "webkit"],
+    "examples_to_inspect": ["baozi", "dog", "cat", "piano", "light_subject", "dark_subject", "long_word", "long_translation", "long_reverse_example", "missing_image"],
+    "alpha_checks": ["has_alpha_channel", "corner_alpha_zero", "no_edge_halo", "card_color_visible_through_background"],
     "minimum_text_contrast_ratio": 4.5,
     "text_zoom_percent": 200,
     "reduced_motion": true

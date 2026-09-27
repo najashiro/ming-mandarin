@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import type { CurriculumScope } from '@/data/types';
 import type { ActiveWord, ContentLevel } from '@/lib/vocabulary';
 import { vocabularyCatalog, getVocabularySet, examplesForWord } from '@/lib/vocabulary';
-import { contextForWord, imageForWord, availablePracticeTypes } from '@/lib/vocabulary-media';
+import { contextForWord, imageForWord, availablePracticeTypes, type VocabularyMediaEntry } from '@/lib/vocabulary-media';
 import { evaluateMix, mixStats, startMix, reconcileMixSession, type PracticeType } from '@/lib/vocabulary-review';
 import { useVocabularyState } from './useVocabularyState';
 import { VocabularyExample } from './VocabularyCard';
@@ -13,7 +13,7 @@ import { Hanzi } from '../Hanzi';
 import { PinyinText } from '../PinyinText';
 import { SpeakButton } from '../SpeakButton';
 
-export function VocabularyMix({ words, scope, userId, route }: { words: ActiveWord[]; scope: CurriculumScope; userId: string; route: string }) {
+export function VocabularyMix({ words, scope, userId, route, media }: { words: ActiveWord[]; scope: CurriculumScope; userId: string; route: string; media: readonly VocabularyMediaEntry[] }) {
   const { data, ready, update } = useVocabularyState(userId);
   const [level, setLevel] = useState<ContentLevel>('hard');
   const eligibleIds = new Set(getVocabularySet(scope, level).map(word => word.id));
@@ -34,14 +34,14 @@ export function VocabularyMix({ words, scope, userId, route }: { words: ActiveWo
   }, [ready, scope, storedSession, update]);
   const card = session?.queue[session.index];
   const word = card && vocabularyCatalog.find(w => w.id === card.wordId);
-  const image = word && imageForWord(word.id);
+  const image = word && imageForWord(word.id, media);
   const context = word && contextForWord(word.id);
   const unavailable = card && (!word || (card.type === 'image' && (!image || failedImage === word?.id)) || (card.type === 'context' && !context));
   const completed = session && !card;
   function start() {
     update(previous => {
       const next = startMix(eligibleWords, size, scope, level, previous.progress, crypto.randomUUID(), Date.now(), Math.random, entry => {
-        const types = availablePracticeTypes(entry);
+        const types = availablePracticeTypes(entry, media);
         return mode === 'mixed' ? types[Math.floor(Math.random() * types.length)] : types.includes(mode) ? mode : 'hanzi';
       });
       return { ...previous, sessions: { ...previous.sessions, [scope]: next } };
@@ -70,7 +70,7 @@ export function VocabularyMix({ words, scope, userId, route }: { words: ActiveWo
       {unavailable ? <><p role="status">Esta pista no está disponible. No cuenta como fallo.</p><button type="button" onClick={() => update(previous => { const current = previous.sessions[scope]; return { ...previous, sessions: { ...previous.sessions, [scope]: { ...current, queue: current.queue.filter((_, i) => i !== current.index), revealed: false } } }; })}>Saltar sin evaluar</button></> : word && <>
         {!session.revealed ? <>
 
-          {card.type === 'hanzi' ? <div className="vocabulary-mix-hanzi"><Hanzi>{word.hanzi}</Hanzi></div> : card.type === 'image' && image?.src ? <VocabularyPhoto src={image.src} alt={image.alt} onError={() => setFailedImage(word.id)}/> : context && <><p className="vocabulary-context"><Hanzi>{context.clue}</Hanzi></p><p className="vocabulary-translation">{context.hint}</p></>}
+          {card.type === 'hanzi' ? <div className="vocabulary-mix-hanzi"><Hanzi>{word.hanzi}</Hanzi></div> : card.type === 'image' && image?.src ? <VocabularyPhoto src={image.src} alt={image.alt} transparent={'presentation' in image && image.presentation === 'transparent-cutout'} onError={() => setFailedImage(word.id)}/> : context && <><p className="vocabulary-context"><Hanzi>{context.clue}</Hanzi></p><p className="vocabulary-translation">{context.hint}</p></>}
         </> : <>
           <div className="vocabulary-mix-answer"><div className="vocabulary-word-row"><h2 className="vocabulary-mix-hanzi"><LinkedChineseText text={word.hanzi} returnTo={route} newTab/></h2><SpeakButton text={word.hanzi} reading={word.pinyin} compact/></div><p className="word-pinyin"><PinyinText>{word.pinyin}</PinyinText></p><p className="vocabulary-translation">{word.spanish}</p></div>
         </>}
