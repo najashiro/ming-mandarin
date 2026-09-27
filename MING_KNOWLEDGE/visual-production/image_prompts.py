@@ -13,8 +13,9 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 PUBLIC = ROOT / 'data/corpus-v21-public.json'
 CLASSIFICATION = ROOT / 'MING_KNOWLEDGE/v2/visual/vocabulary.tsv'
-RECIPE_FILES = ('recipes-scenes.tsv', 'recipes-context.tsv', 'recipes-structured.tsv')
+RECIPE_FILES = ('recipes-scenes.tsv', 'recipes-context.tsv', 'recipes-structured.tsv', 'recipes-reference-items.tsv')
 POLICY = HERE / 'prompt-policy.json'
+REFERENCES = HERE / 'reference-requirements.json'
 OUTPUT_JSON = HERE / 'IMAGE_PROMPTS.json'
 OUTPUT_MD = HERE / 'IMAGE_PROMPTS.md'
 SUMMARY = HERE / 'summary.json'
@@ -26,6 +27,7 @@ NO_RENDER_QA = (
     'Pelo, dedos, orejas, patas, contorno y posibles transparencias se revisan sobre fondos claro y oscuro.',
     'El referente coincide con el sentido documentado, no solo con caracteres compartidos.',
     'Ningún candidato se habilita en el juego sin revisar el recurso real y sus respuestas equivalentes.',
+    'Todo monumento o bandera requiere referencia auténtica, incluso en escenas de procedencia personal.',
 )
 
 
@@ -62,12 +64,13 @@ def read_recipes(directory: Path = HERE) -> dict[str, dict]:
 
 def load_inputs():
     public = read_json(PUBLIC)
-    require(POLICY.is_file(), 'missing prompt policy')
+    policy = read_json(POLICY)
+    policy['reference_requirements'] = read_json(REFERENCES)
     with CLASSIFICATION.open(encoding='utf-8', newline='') as stream:
         rows = list(csv.DictReader(stream, delimiter='\t'))
     internal = {row['vocab_id']: row for row in rows}
     require(len(internal) == len(rows), 'duplicate classification IDs')
-    return public, read_recipes(), read_json(POLICY), internal
+    return public, read_recipes(), policy, internal
 
 
 def validate_inputs(public: dict, recipes: dict, policy: dict, internal: dict) -> None:
@@ -80,6 +83,11 @@ def validate_inputs(public: dict, recipes: dict, policy: dict, internal: dict) -
     required = {row['id'] for row in words if row.get('visual_ming', {}).get('visual_mode') != 'none'}
     missing, extra = sorted(required - set(recipes)), sorted(set(recipes) - required)
     require(not missing and not extra, f'coverage mismatch; missing={missing}; extra={extra}')
+    references = policy['reference_requirements']
+    require(set(references) <= required, 'reference requirements target an unknown or excluded word')
+    for vid, kinds in references.items():
+        require(isinstance(kinds, list) and bool(kinds) and set(kinds) <= {'flag', 'landmark'}, f'invalid reference kinds: {vid}')
+        require(len(kinds) == len(set(kinds)), f'duplicate reference kinds: {vid}')
     for word in words:
         vid = word['id']
         visual = word.get('visual_ming')
@@ -100,14 +108,15 @@ def validate_inputs(public: dict, recipes: dict, policy: dict, internal: dict) -
         require((recipe['profile'] == 'structured') == (visual['visual_mode'] == 'visual_grammar'), f'structured profile mismatch: {vid}')
         require((recipe['profile'] == 'context') == (visual['visual_mode'] == 'phrase_context'), f'context profile mismatch: {vid}')
         require(len(recipe['scene']) > 40 and len(recipe['avoid']) > 20, f'insufficient specific brief: {vid}')
+        if recipe['profile'] == 'country':
+            require(set(references.get(vid, [])) == {'flag', 'landmark'}, f'country needs both references: {vid}')
 
 
 def build(public=None, recipes=None, policy=None, internal=None) -> dict:
     if public is None:
         public, recipes, policy, internal = load_inputs()
     validate_inputs(public, recipes, policy, internal)
-    # Reuse only literally identical, explicitly authored visual recipes. This does
-    # NOT declare lexical synonymy or merge vocabulary/progress identities.
+    # Exact art-recipe sharing is not lexical synonymy and never merges IDs.
     groups = {}
     for row in recipes.values():
         key = digest([row['profile'], row['scene']])[:16]
@@ -121,16 +130,15 @@ def build(public=None, recipes=None, policy=None, internal=None) -> dict:
             'ESCENA ESPECÍFICA: ' + group['scene'],
             'CONTROL SEMÁNTICO: ' + ' '.join(cautions), policy['global_negative_es'],
         ])
-        country = group['profile'] == 'country'
-        needs_reference = group['profile'] in {'country', 'place'}
+        reference_kinds = sorted({kind for row in group['rows'] for kind in policy['reference_requirements'].get(row['vocab_id'], [])})
         unit = {
-            'production_unit_id': 'IMG-' + key,
-            'profile': group['profile'], 'prompt_es': prompt,
+            'production_unit_id': 'IMG-' + key, 'profile': group['profile'], 'prompt_es': prompt,
             'vocab_ids': sorted(r['vocab_id'] for r in group['rows']),
             'reuse_families': sorted({r['shared_key'] for r in group['rows']}),
-            'requires_authentic_landmark_reference': needs_reference,
-            'requires_authentic_flag_reference': country,
-            'reference_status': 'not_supplied_not_verified' if needs_reference else 'semantic_asset_review_required',
+            'required_reference_types': reference_kinds,
+            'requires_authentic_landmark_reference': 'landmark' in reference_kinds,
+            'requires_authentic_flag_reference': 'flag' in reference_kinds,
+            'reference_status': 'not_supplied_not_verified' if reference_kinds else 'semantic_asset_review_required',
             'background': 'transparent_alpha', 'image_generated': False,
             'generation_authorized': False, 'image_validated': False,
         }
@@ -151,6 +159,7 @@ def build(public=None, recipes=None, policy=None, internal=None) -> dict:
             'prompt_es': unit['prompt_es'] if unit else None,
             'semantic_cautions_es': recipe['avoid'] if recipe else internal[vid]['notes'],
             'composition_instructions_es': recipe['assembly'] if recipe else '',
+            'required_reference_types': unit['required_reference_types'] if unit else [],
             'no_image_reason': internal[vid]['notes'] if no_image else None,
             'documented_example_ids': list(word.get('examplePhraseIds', [])),
             'example_selection_policy': 'Choose a compatible documented example; scene is editorial, not source attestation.',
@@ -216,6 +225,8 @@ def markdown(payload: dict) -> str:
             lines += [f"Receta: `{e['production_unit_id']}` · Perfil: `{e['profile']}`.", '',
                 '<details>', '<summary>Mostrar prompt completo</summary>', '', '```text', e['prompt_es'], '```', '', '</details>', '',
                 '**Control de significado:** ' + e['semantic_cautions_es'], '']
+            if e['required_reference_types']:
+                lines += ['**Referencias auténticas pendientes antes de generar:** ' + ', '.join(e['required_reference_types']) + '.', '']
             if e['composition_instructions_es']:
                 lines += ['**Composición posterior controlada:** ' + e['composition_instructions_es'], '']
     return '\n'.join(lines).rstrip() + '\n'
