@@ -1,8 +1,8 @@
 # Uso de la base de fuentes v2.1 por Codex
 
-- Empieza con `index.json`, `SOURCE_AUDIT.md`, `TRANSLATIONS_MING.md`, `PINYIN_MING.md`, `RADICALS.md` y `README.md`.
+- Empieza con `index.json`, `SOURCE_AUDIT.md`, `TRANSLATIONS_MING.md`, `PINYIN_MING.md`, `VISUAL_MING.md`, `RADICALS.md` y `README.md`.
 - Consulta `query.py --word <hanzi> --limit 8`, `--radical <glifo>` o `--hanzi <carácter>`.
-- `query.py` compila base + radicales + auditoría de fuentes + traducciones Míng + pinyin Míng + ejemplos léxicos. `compile.py` aislado solo compila v2.0.
+- `query.py` compila base + radicales + auditoría de fuentes + traducciones Míng + pinyin Míng + ejemplos léxicos + clasificación visual. `compile.py` aislado solo compila v2.0.
 - No cargues todo el corpus, fragmentos base64 ni PDF por defecto.
 - Usa primero tablas, luego testigos/notas y finalmente la caché de texto nativo.
 - Separa fuente original, anotación editorial, registro de código y despliegue.
@@ -10,6 +10,7 @@
 - El usuario autorizó expresamente traducciones españolas editoriales de los textos registrados en `traduccion_ming`, lote `ming-es-20260925-01`. No atribuirlas al libro/PPT ni añadirlas a las variantes documentales. Consultar `translations_ming` y `translations_ming_summary`. No afirmar revisión humana independiente. La web consume únicamente `spanish` resuelto por el exportador, sin procedencia visible.
 - El usuario autorizó después el lote `ming-pinyin-20260925-01` y la composición pedagógica 猫 → 小猫. Consulta `PINYIN_MING.md`, `pinyin_ming_summary`, `lexical_examples_summary` y `--word 猫 --examples`. Conserva `pinyin` y sus variantes documentales; usa `pinyin_display` internamente y `pinyin` resuelto en la exportación. No asignes pinyin editorial a un testigo ni a una página.
 - Para los ejemplos globales usa `examplePhraseIds` / `exampleVocabIds` o `publicExamplesForVocabulary`. Los `vocab_ids` / `vocabIds` léxicos originales NO se amplían con herencia. El vínculo editorial está en `pedagogical_example_links`. No filtrar ejemplos por la lección de la tarjeta. No inferir compuestos por substring ni transitividad.
+- El lote `visual-ming-20260925-01` clasifica todas las palabras públicas por su sentido registrado. Consulta `VISUAL_MING.md`, `visual_ming` y `visual_ming_summary`. La fuente es `visual/vocabulary.tsv`; no decidir por heurísticas de React. `image_quiz_eligible` es candidatura semántica, no aprobación de un recurso ni autorización de generación. Las notas quedan internas; solo cuatro campos de clasificación se exportan bajo `visual_ming`. No añadir prompts, recursos, medidas ni diseño en esta capa. Al añadir palabras públicas, clasificarlas expresamente y ejecutar `visual_ming.py --check`.
 - Distingue radical nombrado en libro, campo 部首 de hoja y candidato editorial en ejercicio.
 - Ninguna respuesta manuscrita del alumno es una clave docente. No aprobar calificación automática.
 - Consulta `radical_corrections`: 辶 es zǒuzhīdǐ en el libro; la tabla de 饣 usa 饭、饼、饿.
@@ -21,6 +22,6 @@
 - Conserva variantes, contraejemplos, roles y objetivos de escritura explícitos. Una glosa o lectura editorial no cambia la elegibilidad de un contraejemplo ni convierte un fragmento mal segmentado en palabra.
 - No cambies seed, app, juegos, audios, Supabase, progreso ni main al actualizar fuentes. No generar recursos pagados sin pedido expreso.
 - El snapshot b952c16360cd85c25205b49db5c23c543f553dcd no garantiza la producción actual.
-- Ejecuta `query.py --validate`, regenera la proyección, ejecuta `translations_ming.py --check`, `pinyin_ming.py --check` y `python3 -m unittest discover -s MING_KNOWLEDGE/v2 -p 'test_*.py'`.
+- Ejecuta `query.py --validate`, regenera la proyección, ejecuta `translations_ming.py --check`, `pinyin_ming.py --check`, `visual_ming.py --check` y `python3 -m unittest discover -s MING_KNOWLEDGE/v2 -p 'test_*.py'`.
 - Solo consulta PDF si una verificación visual/literal o discrepancia no se resuelve con los testigos.
 - v1 es legado: no mezcles sus IDs de frase/conteos con v2 ni borres su trazabilidad.

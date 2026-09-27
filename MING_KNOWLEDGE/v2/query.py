@@ -5,8 +5,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 CACHE = ROOT / '.cache'
 DEFAULT_FIELDS = {
-    'matrix': ['id','hanzi','pinyin','pinyin_ming','pinyin_display','spanish','traduccion_ming','spanish_display','lessons','roles','phrase_count','primary_phrase','ming_vocabulary','ming_hanzi','ming_game_bank','textbook_table_rows'],
-    'vocabulary': ['id','hanzi','pinyin','pinyin_ming','pinyin_display','spanish','traduccion_ming','spanish_display','lessons','roles','phrase_count','primary_phrase_id','radical_ids','textbook_table_rows','curriculum_links','example_phrase_ids'],
+    'matrix': ['id','hanzi','pinyin','pinyin_ming','pinyin_display','spanish','traduccion_ming','spanish_display','lessons','roles','phrase_count','primary_phrase','ming_vocabulary','ming_hanzi','ming_game_bank','textbook_table_rows','visual_ming'],
+    'vocabulary': ['id','hanzi','pinyin','pinyin_ming','pinyin_display','spanish','traduccion_ming','spanish_display','lessons','roles','phrase_count','primary_phrase_id','radical_ids','textbook_table_rows','curriculum_links','example_phrase_ids','visual_ming'],
     'phrases': ['id','hanzi','pinyin','pinyin_status','pinyin_ming','pinyin_display','traduccion_ming','spanish_display','lessons','kinds','vocab_ids','example_vocab_ids','grammar_ids','dialogue_ids'],
     'hanzi': ['id','hanzi','source_writing_target','worksheet_refs','worksheet_occurrences','readings','runtime_units','documented_radical_ids','proposed_radical_ids'],
     'radical_matrix': ['id','radical','name','meaning','metadata_status','lessons','theory','practice','worksheet','exam','exam_characters','vocab_count','phrase_count'],
@@ -18,17 +18,19 @@ DEFAULT_FIELDS = {
     'translations_ming': ['id','target_table','target_id','hanzi','traduccion_ming','internal_only','usage','review_status'],
     'pinyin_ming': ['id','target_table','target_id','hanzi','pinyin_ming','review_status'],
     'pedagogical_example_links': ['id','vocab_id','phrase_id','relation','via_vocab_id','composition_id'],
+    'visual_ming': ['id','vocab_id','hanzi','lessons','visual_mode','image_support','image_quiz_eligible','ambiguity_risk','notes'],
 }
 
 
 def ensure_cache(force: bool = False) -> None:
     from translations_ming import dependency_paths
     from pinyin_ming import dependency_paths as pinyin_dependencies
+    from visual_ming import dependency_paths as visual_dependencies
     manifest = ROOT / 'source/manifest.json'
     metadata = json.loads(manifest.read_text(encoding='utf-8'))
     dependencies = [manifest, ROOT/'compile.py', ROOT/'pack.py', ROOT/'radicals.py', ROOT/'radicals-source.json',
                     ROOT/'query.py', ROOT/'source_audit.py', ROOT/'source-tables.json',
-                    ROOT/'lexical_examples.py', ROOT/'lexical-compositions.json'] + dependency_paths() + pinyin_dependencies()
+                    ROOT/'lexical_examples.py', ROOT/'lexical-compositions.json'] + dependency_paths() + pinyin_dependencies() + visual_dependencies()
     for part in metadata['parts']:
         path = (ROOT / part['path']).resolve()
         if not path.is_relative_to(ROOT / 'source'):
@@ -63,6 +65,8 @@ def ensure_cache(force: bool = False) -> None:
     enrich_pinyin(CACHE)
     from lexical_examples import enrich_cache as enrich_examples
     enrich_examples(CACHE)
+    from visual_ming import enrich_cache as enrich_visual
+    enrich_visual(CACHE)
     validation = read_table('validation')
     if not validation.get('passed'):
         raise ValueError('Corpus validation failed; see generated validation.json')
