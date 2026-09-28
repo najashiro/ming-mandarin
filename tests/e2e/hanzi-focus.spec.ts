@@ -3,6 +3,21 @@ import { expect, test, type Page } from '@playwright/test';
 const characters = ['作', '家', '有', '几'] as const;
 const firstQuestion = { '作': { seed: 1157, answer: '作' }, '家': { seed: 83, answer: '家' }, '有': { seed: 702, answer: '有' }, '几': { seed: 810, answer: '几' } } as const;
 
+test('el selector superior ofrece lecciones simples y acumuladas', async ({ page }) => {
+  await page.goto('/lesson/1/hanzi');
+  const selector = page.getByRole('combobox', { name: 'Lección', exact: true });
+  await expect(selector.locator('option')).toHaveText([
+    'Lección 1',
+    'Lección 2',
+    'Lección 3',
+    'Lección 2 acumulado',
+    'Lección 3 acumulado',
+  ]);
+  await selector.selectOption('l1-l2');
+  await expect(page).toHaveURL(/\/study\/l1-l2\/hanzi$/);
+  await expect(page.getByRole('combobox', { name: 'Lección', exact: true })).toHaveValue('l1-l2');
+});
+
 async function expectDetailFocused(page: Page, character: string) {
   await expect(page.getByRole('tab', { name: 'Aprender' })).toHaveAttribute('aria-selected', 'true');
   await expect(page.locator('.hanzi-picker-card.selected').first()).toContainText(character);
