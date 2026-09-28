@@ -1,29 +1,30 @@
 'use client';
 import { Hanzi } from '@/components/Hanzi';
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { audioForMandarinText } from '@/lib/mandarin-audio';
 let stopActive: (() => void) | null = null;
-type SpeakButtonProps = { text: string; reading?: string; speechText?: string; audioSrc?: string | string[]; rate?: number; label?: string; compact?: boolean; ariaLabel?: string; title?: string };
-export function SpeakButton({ text, reading, audioSrc, rate = 0.85, label = 'Escuchar', compact = false, ariaLabel, title }: SpeakButtonProps) {
+export function stopMandarinAudio() { stopActive?.(); }
+type SpeakButtonProps = { text: string; reading?: string; speechText?: string; audioSrc?: string | string[]; rate?: number; label?: string; compact?: boolean; ariaLabel?: string; title?: string; autoPlayKey?: string; onAutoPlayBlocked?: () => void };
+export function SpeakButton({ text, reading, audioSrc, rate = 0.85, label = 'Escuchar', compact = false, ariaLabel, title, autoPlayKey, onAutoPlayBlocked }: SpeakButtonProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const runRef = useRef(0);
   const stopRef = useRef<(() => void) | null>(null);
   const [state, setState] = useState<'idle' | 'loading' | 'playing' | 'error'>('idle');
   const resolved = audioSrc ?? audioForMandarinText(text, reading);
-  const sources = Array.isArray(resolved) ? resolved : resolved ? [resolved] : [];
+  const sources = useMemo(() => Array.isArray(resolved) ? resolved : resolved ? [resolved] : [], [resolved]);
   useEffect(() => () => {
     runRef.current++;
     const audio = audioRef.current;
     if (audio) { audio.onended = null; audio.onerror = null; audio.onpause = null; audio.onplaying = null; audio.pause(); audio.removeAttribute('src'); audio.load(); }
     if (stopActive === stopRef.current) stopActive = null;
   }, [text, reading, audioSrc]);
-  function stop() {
+  const stop = useCallback(() => {
     runRef.current++;
     audioRef.current?.pause();
     if (stopActive === stopRef.current) stopActive = null;
     setState('idle');
-  }
-  async function play() {
+  }, []);
+  const play = useCallback(async (automatic = false) => {
     if (state === 'loading' || state === 'playing') { stop(); return; }
     if (!sources.length) return;
     stopActive?.();
@@ -48,10 +49,22 @@ export function SpeakButton({ text, reading, audioSrc, rate = 0.85, label = 'Esc
       if (run === runRef.current) { setState('idle'); if (stopActive === stopRef.current) stopActive = null; }
     } catch (error) {
       if (run !== runRef.current) return;
-      setState(error instanceof DOMException && error.name === 'AbortError' ? 'idle' : 'error');
+      const aborted = error instanceof DOMException && error.name === 'AbortError';
+      const blocked = error instanceof DOMException && error.name === 'NotAllowedError';
+      setState(aborted || blocked ? 'idle' : 'error');
+      if (automatic && blocked) onAutoPlayBlocked?.();
       if (stopActive === stopRef.current) stopActive = null;
     }
-  }
+  }, [onAutoPlayBlocked, rate, sources, state, stop]);
+  const autoStarted = useRef('');
+  useEffect(() => {
+    if (!autoPlayKey || autoStarted.current === autoPlayKey || !sources.length) return;
+    const timer = window.setTimeout(() => {
+      autoStarted.current = autoPlayKey;
+      void play(true);
+    }, 0);
+    return () => window.clearTimeout(timer);
+  }, [autoPlayKey, play, sources.length]);
   if (!sources.length) return null;
   const active = state === 'loading' || state === 'playing';
   const status = state === 'error' ? 'No se pudo reproducir. Reintentar' : state === 'loading' ? 'Cargando. Detener' : active ? 'Detener' : label;

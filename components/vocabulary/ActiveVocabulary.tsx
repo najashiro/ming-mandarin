@@ -1,5 +1,5 @@
 'use client';
-import { useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import type { CurriculumScope } from '@/data/types';
@@ -39,7 +39,16 @@ export function ActiveVocabulary({ scope, userId = 'guest', mode = 'catalog', me
   const pages = Math.max(1, Math.ceil(results.length / 24));
   const rawPage = Number(params.get('page') ?? 1);
   const page = Number.isInteger(rawPage) ? Math.max(1, Math.min(pages, rawPage)) : 1;
-  const route = `/study/${scope}/${section}?${params.toString()}`;
+  const route = `/study/${scope}/${section}${mix ? '' : `?${params.toString()}`}`;
+  useEffect(() => {
+    if (!mix) return;
+    const next = new URLSearchParams(params.toString());
+    let changed = false;
+    for (const key of ['q', 'favorites', 'card', 'page', 'selection', 'source', 'level', 'mode']) {
+      if (next.has(key)) { next.delete(key); changed = true; }
+    }
+    if (changed) router.replace(`/study/${scope}/games/vocabulary-mix${next.size ? `?${next}` : ''}`, { scroll: false });
+  }, [mix, params, router, scope]);
   function resetCardFaces() {
     setFaces({});
   }
@@ -73,7 +82,7 @@ export function ActiveVocabulary({ scope, userId = 'guest', mode = 'catalog', me
   return <div className="active-vocabulary shell" data-ready={ready} data-visual-style={vocabularyStyleId} style={vocabularyStyle}>
     {mix && <Link className="vocabulary-games-back" href={`/study/${scope}/games`}>← Volver a Juegos</Link>}
     <header className="vocabulary-heading"><div><p className="eyebrow">{mix ? '游戏' : '词汇'} · MÍNG</p><h1>{mix ? 'Vocabulario Mix' : 'Vocabulario'}</h1></div><small role="status">{saved ? 'Guardado en este dispositivo' : 'Almacenamiento no disponible; cambios solo en esta visita'}</small></header>
-    <div className="vocabulary-toolbar">
+    {mix ? <VocabularyMix scope={scope} userId={userId} route={route} media={media}/> : <><div className="vocabulary-toolbar">
       <div className="vocabulary-lesson-controls"><select aria-label="Lección" value={scope} onChange={e => { resetCardFaces(); const next = new URLSearchParams(params.toString()); for (const key of ['page', 'card', 'q', 'source', 'selection', 'level', 'mode']) next.delete(key); router.push(`/study/${e.target.value}/${section}?${next}`); }}>{lessonScopes.map((s, i) => <option key={s} value={s}>{s === 'l1-l2-l3' ? 'Acumulado' : `Lección ${i + 1}`}</option>)}</select><button type="button" aria-label="Solo favoritos" title="Solo favoritos de esta lección" aria-pressed={favoritesOnly} onClick={() => change({ favorites: favoritesOnly ? '' : '1', card: '' })}>{favoritesOnly ? '★' : '☆'}</button></div>
       <div className="vocabulary-search"><label htmlFor="vocabulary-search">Buscar</label><div className="vocabulary-search-line"><input id="vocabulary-search" ref={searchRef} className={hanziInputClass(query)} value={query} role="combobox" aria-autocomplete="list" aria-controls="vocabulary-suggestions" aria-expanded={open} aria-activedescendant={open && active >= 0 && suggestions[active] ? `suggestion-${active}` : undefined} autoComplete="off" placeholder="Hanzi, pinyin o español" onFocus={() => { resetCardFaces(); setOpen(Boolean(query)); }} onBlur={() => { if (!suggestionTouch.current) setOpen(false); }} onCompositionStart={() => { composing.current = true; }} onCompositionEnd={() => { composing.current = false; }} onChange={e => { change({ q: e.target.value, card: '' }); setOpen(Boolean(e.target.value)); setActive(-1); }} onKeyDown={e => {
         if (e.nativeEvent.isComposing || composing.current || e.keyCode === 229) return;
@@ -100,7 +109,6 @@ export function ActiveVocabulary({ scope, userId = 'guest', mode = 'catalog', me
       </div>
     </div>
     <p className="vocabulary-count" aria-live="polite">{results.length} {results.length === 1 ? 'palabra' : 'palabras'}</p>
-    {mix ? <VocabularyMix words={results} scope={scope} userId={userId} route={route} media={media}/> : <>
       {!results.length && <p role="status">Sin resultados. Ajusta los filtros o limpia la búsqueda.</p>}
       <section className="vocabulary-grid" aria-label="Catálogo">{results.slice((page - 1) * 24, page * 24).map(word => <VocabularyCard key={word.id} word={word} scope={scope} route={`${route}#word-${encodeURIComponent(word.id)}`} back={Boolean(faces[word.id])} favorite={data.favorites.includes(word.id)} hideTranslation={false} media={media} onFlip={() => setFaces(previous => ({ ...previous, [word.id]: !previous[word.id] }))} onFavorite={() => update(previous => ({ ...previous, favorites: previous.favorites.includes(word.id) ? previous.favorites.filter(id => id !== word.id) : [...previous.favorites, word.id] }))}/>)}</section>
       {pages > 1 && <nav className="vocabulary-pagination" aria-label="Páginas del catálogo"><button type="button" disabled={page === 1} onClick={() => changePage(page - 1)}>Anterior</button><span>{page} / {pages}</span><button type="button" disabled={page === pages} onClick={() => changePage(page + 1)}>Siguiente</button></nav>}

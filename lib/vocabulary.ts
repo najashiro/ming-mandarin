@@ -7,6 +7,14 @@ export type ActiveWord = (typeof corpus.vocabulary)[number];
 export type VocabularyExample = { id: string; phraseId: string; hanzi: string; pinyin: string; spanish: string; lessons: number[] };
 export type Selection = 'new' | 'supplementary' | 'context' | 'review' | 'pending';
 export type ContentLevel = 'basic' | 'hard';
+export const vocabularyMixScopes: readonly CurriculumScope[] = ['l1', 'l2', 'l3', 'l1-l2', 'l1-l2-l3'];
+export const vocabularyMixScopeLabels: Record<CurriculumScope, string> = {
+  l1: 'Lección 1',
+  l2: 'Lección 2',
+  l3: 'Lección 3',
+  'l1-l2': 'Acumulado hasta lección 2',
+  'l1-l2-l3': 'Acumulado hasta lección 3',
+};
 export const vocabularyCatalog: ActiveWord[] = corpus.vocabulary;
 const contextRoles = new Set(['workbook_context', 'phrase_context', 'worksheet_sequence', 'numeral_in_context']);
 const extensionRoles = new Set(['classroom_extension', 'classroom_expression', 'colloquial_classroom', 'proper_name', 'visual_label', 'supplementary_review']);
@@ -58,6 +66,26 @@ const essentialSets = Object.fromEntries(Object.entries(vocabularySets).map(([sc
 })) as Record<CurriculumScope, ActiveWord[]>;
 export function getVocabularySet(scope: CurriculumScope, level: ContentLevel = 'hard'): ActiveWord[] {
   return (level === 'basic' ? essentialSets : vocabularySets)[scope];
+}
+
+// Editorial layer for the recognition game only. These IDs are people,
+// character names, surnames used only as names, or individual pet names in the
+// audited corpus. Places, countries, languages and nationalities remain valid.
+// The catalog and the underlying corpus are intentionally unchanged.
+export const vocabularyMixExcludedIds = new Set([
+  'v-马大为', 'v-宋华', 'v-丁力波', 'v-林娜', 'v-王小云', 'v-陆雨平',
+  'v-马丽', 'v-宋', 'v-力波', 'v-大为', 'v-小云', 'v-王', 'v-陆', 'v-陈',
+  'v-贝贝', 'v-约翰', 'v-张华', 'v-大卫', 'v-李', 'v-张王冉', 'v-梅西',
+  'v-成龙', 'v-巩俐', 'v-姚明', 'v-马云', 'v-林', 'v-玛丽',
+]);
+
+export function getVocabularyMixSet(scope: CurriculumScope): ActiveWord[] {
+  const seen = new Set<string>();
+  return getVocabularySet(scope).filter(word => {
+    if (vocabularyMixExcludedIds.has(word.id) || seen.has(word.id)) return false;
+    seen.add(word.id);
+    return true;
+  });
 }
 export function searchGlobalVocabulary(query: string) {
   return searchVocabulary(accumulatedVocabulary, query);
