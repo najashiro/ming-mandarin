@@ -8,8 +8,8 @@ import { PinyinText } from '@/components/PinyinText';
 
 const statusLabels: Record<VocabularyImageReviewStatus, string> = {
   pending_review: 'Pendiente',
-  approved: 'Publicada',
-  no_image: 'Sin imagen',
+  approved: 'Okay',
+  no_image: 'No mostrar',
 };
 
 type Action = 'approve' | 'save_prompt' | 'no_image';
@@ -61,6 +61,7 @@ export function VocabularyImageReview({ initialEntries, storageReady }: { initia
     <section className="admin-image-list" aria-busy={Boolean(busy)}>{visible.map(entry => {
       const isEditing = Boolean(editing[entry.wordId]);
       const prompt = drafts[entry.wordId] ?? entry.prompt;
+      const promptChanged = prompt.trim() !== entry.prompt.trim();
       return <article className={`admin-image-card status-${entry.reviewStatus}`} key={entry.wordId}>
         <div className="admin-image-preview"><Image unoptimized src={entry.src} alt={entry.alt} width={1618} height={1000}/></div>
         <div className="admin-image-content">
@@ -69,9 +70,9 @@ export function VocabularyImageReview({ initialEntries, storageReady }: { initia
           <label className="admin-image-edit-toggle"><input type="checkbox" checked={isEditing} onChange={event => setEditing(current => ({ ...current, [entry.wordId]: event.target.checked }))}/> Modificar prompt</label>
           <textarea aria-label={`Prompt de ${entry.hanzi}`} value={prompt} disabled={!isEditing} onChange={event => setDrafts(current => ({ ...current, [entry.wordId]: event.target.value }))}/>
           <div className="admin-image-actions">
-            <button type="button" className="approve" disabled={busy === entry.wordId} onClick={() => void review(entry, 'approve')}>✓ Okay</button>
-            {isEditing && <button type="button" disabled={busy === entry.wordId || prompt.trim() === entry.prompt.trim()} onClick={() => void review(entry, 'save_prompt')}>Guardar prompt</button>}
-            <button type="button" className="hide" disabled={busy === entry.wordId} onClick={() => void review(entry, 'no_image')}>No mostrar imagen</button>
+            <button type="button" className="approve" aria-pressed={entry.reviewStatus === 'approved'} disabled={busy === entry.wordId || promptChanged} onClick={() => void review(entry, 'approve')}>{entry.reviewStatus === 'approved' ? '✓ Okay' : 'Marcar Okay'}</button>
+            {isEditing && promptChanged && <button type="button" disabled={busy === entry.wordId} onClick={() => void review(entry, 'save_prompt')}>Actualizar prompt</button>}
+            <button type="button" className="hide" aria-pressed={entry.reviewStatus === 'no_image'} disabled={busy === entry.wordId} onClick={() => void review(entry, 'no_image')}>{entry.reviewStatus === 'no_image' ? 'No mostrar' : 'No mostrar imagen'}</button>
           </div>
         </div>
       </article>;
