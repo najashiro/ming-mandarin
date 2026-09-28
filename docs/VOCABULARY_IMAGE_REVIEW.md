@@ -19,7 +19,12 @@ que el guardado no está disponible; no simula un guardado exitoso.
 
 ## Fotos que necesitan otro prompt
 
-1. Modificar prompt → Actualizar prompt. Se guarda en Supabase y queda
+1. Modificar prompt abre un campo breve «¿Qué quieres cambiar en la imagen?».
+   Escribir la corrección → Actualizar prompt. El servidor conserva el prompt
+   base y añade la indicación con los requisitos de transparencia y sin texto.
+   Editar de nuevo reemplaza esa indicación, sin acumular correcciones antiguas.
+   El prompt completo queda disponible, solo lectura, en un desplegable.
+   Se guarda en Supabase y queda
    `Por regenerar`; la foto anterior se oculta. No hay llamada pagada al guardar.
 2. Descargar pendientes de regeneración desde Administración. El JSON contiene
    el texto exacto, identificador, versión de imagen anterior y revisión.
@@ -42,3 +47,7 @@ que el guardado no está disponible; no simula un guardado exitoso.
 Las aprobaciones y ocultaciones no requieren commits ni despliegues. Solo
 incorporar archivos de imágenes nuevos requiere desplegar. La clasificación
 curricular y la elegibilidad de quiz permanecen intactas.
+
+El filtro de lección utiliza la misma asignación exclusiva de lecciones que
+Vocabulario. Se combina con búsqueda y estado; los contadores corresponden a
+la lección seleccionada. La descarga de regeneración incluye toda la cola.
