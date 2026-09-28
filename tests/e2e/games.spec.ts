@@ -64,6 +64,34 @@ test('hora: el interruptor HARD conserva una sola pista y mueve únicamente la p
   expect(hard.color).toBe('rgb(184, 75, 66)');expect(hard.trackTransform).toBe('none');
   expect(hard.knob.x-hard.track.x).toBeCloseTo(28,0);expect(hard.knob.x+hard.knob.width).toBeLessThanOrEqual(hard.track.x+hard.track.width-3);
 });
+test('hora HARD ordena la corrección en filas',async({page})=>{
+  await page.addInitScript(() => { Math.random=()=>0; });
+  await page.setViewportSize({width:320,height:844});await page.goto('/study/l1/games');await openGame(page,'hora');
+  await page.getByRole('switch',{name:'Modo HARD'}).click();await page.getByRole('button',{name:/Comenzar/}).click();
+  await page.getByRole('button',{name:'Añadir 差'}).click();await page.locator('.time-answer').nth(1).click();await page.getByRole('button',{name:'Añadir 差'}).click();
+  await page.getByRole('button',{name:/Confirmar/}).click();await expect(page.locator('.time-correction')).toBeVisible();
+  const rows=await page.locator('.time-alternatives article').evaluateAll(items=>items.map(item=>item.getBoundingClientRect().toJSON()));
+  expect(rows.length).toBeGreaterThan(1);
+  for(let index=1;index<rows.length;index++){
+    expect(rows[index].x).toBeCloseTo(rows[0].x,0);expect(rows[index].width).toBeCloseTo(rows[0].width,0);expect(rows[index].y).toBeGreaterThan(rows[index-1].y);
+  }
+  expect(await page.locator('.time-alternatives').evaluate(element=>element.scrollWidth<=element.clientWidth)).toBe(true);
+});
+test('hora HARD lee las dos respuestas correctas y resalta solo la que suena',async({page})=>{
+  await page.addInitScript(() => {
+    Math.random=()=>0;
+    (window as unknown as {__timePlays:string[]}).__timePlays=[];
+    HTMLMediaElement.prototype.play=function(){(window as unknown as {__timePlays:string[]}).__timePlays.push(this.src);window.setTimeout(()=>this.dispatchEvent(new Event('ended')),1500);return Promise.resolve();};
+  });
+  await page.goto('/study/l1/games');await openGame(page,'hora');await page.getByRole('switch',{name:'Modo HARD'}).click();await page.getByRole('button',{name:/Comenzar/}).click();
+  for(const token of ['一','点','十','五','分'])await page.getByRole('button',{name:`Añadir ${token}`}).click();
+  await page.locator('.time-answer').nth(1).click();for(const token of ['一','点','一','刻'])await page.getByRole('button',{name:`Añadir ${token}`}).click();
+  await page.evaluate(() => {(window as unknown as {__timePlays:string[]}).__timePlays=[];});await page.getByRole('button',{name:/Confirmar/}).click();
+  const fields=page.locator('.time-answer');await expect.poll(()=>page.evaluate(()=>(window as unknown as {__timePlays:string[]}).__timePlays.length)).toBe(1);
+  await expect(fields.nth(0)).toHaveClass(/speaking/);await expect(fields.nth(1)).not.toHaveClass(/speaking/);
+  await expect.poll(()=>page.evaluate(()=>(window as unknown as {__timePlays:string[]}).__timePlays.length)).toBe(2);
+  await expect(fields.nth(0)).not.toHaveClass(/speaking/);await expect(fields.nth(1)).toHaveClass(/speaking/);
+});
 test('hora: las formas equivalentes aparecen en dos grupos de filas sin overflow',async({page})=>{
   await page.setViewportSize({width:320,height:844});await page.goto('/study/l1/games');await openGame(page,'hora');
   await page.getByRole('button',{name:/Comenzar/}).click();await page.getByRole('button',{name:'Abrir ayuda del juego de la hora'}).click();
