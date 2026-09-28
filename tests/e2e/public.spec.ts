@@ -15,12 +15,13 @@ test('la portada navega a las secciones públicas', async ({ page }) => {
 test('el arcade y el audio estático están disponibles sin cuenta', async ({ page }) => {
   await page.goto('/lesson/1/games');
   await expect(page.getByRole('heading', { name: 'Juegos Míng' })).toBeVisible();
+  await expect(page.locator('.hanzi-unit-nav')).toHaveCount(0);
   await expect(page.locator('.mobile-nav a[href="/study/l1-l2-l3/games"]')).toContainText('Juegos');
   await expect(page.locator('.arcade-root')).toHaveAttribute('data-hydrated', 'true');
   await expect(page.locator('.game-grid article').nth(0).getByRole('heading')).toHaveText('Reto Mixto');
-  await expect(page.locator('.game-grid article').nth(1).getByRole('heading')).toHaveText('Escena Viva');
-  await expect(page.locator('.game-grid article').nth(2).getByRole('heading')).toHaveText('Conversación');
-  await expect(page.locator('.game-grid article').nth(3).getByRole('heading')).toHaveText('Hanzi Lab');
+  await expect(page.locator('.game-grid article').nth(1).getByRole('heading')).toHaveText('Vocabulario Mix');
+  await expect(page.locator('.game-grid article').nth(2).getByRole('heading')).toHaveText('¿Qué hora es?');
+  await expect(page.locator('.game-grid article').nth(3).getByRole('heading')).toHaveText('Escena Viva');
   await page.locator('.game-grid article').filter({ hasText: 'Escena Viva' }).getByRole('button', { name: /Jugar/ }).click();
   await expect(page.locator('#arena')).toContainText('Escena Viva');
   await page.goto('/lesson/1/name');
@@ -366,7 +367,8 @@ test('L2, L3 y los repasos acumulativos conservan el alcance', async ({ page }) 
   ] as const) {
     await page.goto(`/study/${scope}`);
     await expect(page.getByRole('heading', { name: heading })).toBeVisible();
-    await page.goto(`/study/${scope}/vocabulary`);
+    await expect(page.locator('.scope-summary')).toHaveCount(0);
+    await page.goto(`/study/${scope}/vocabulary?q=${encodeURIComponent(word)}`);
     await expect(page.getByText(word, { exact: true }).first()).toBeVisible();
     await expect(page.getByText(/Fuente|PDF p\./)).toHaveCount(0);
   }
@@ -465,7 +467,7 @@ test('el laboratorio Hanzi usa una ficha compacta, replay estable y cuatro pesta
   });
   await page.goto('/lesson/1/hanzi');
   await expect(page.getByRole('heading', { name: 'Hanzi: forma, trazos y práctica' })).toBeVisible();
-  await expect(page.getByRole('heading', { name: '0 / 192 estudiados' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /estudiados/ })).toHaveCount(0);
   await expect(page.getByRole('button', { name: '好, hǎo, bueno; bien, estado nuevo' })).toHaveAttribute('aria-pressed', 'true');
   const hero = page.locator('.hanzi-character-hero');
   await expect(hero.getByText('Datos locales listos', { exact: true })).toHaveCount(0);

@@ -370,19 +370,6 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 
 /* Reusable Hanzi laboratory */
 .hanzi-workspace { width: min(1180px, calc(100% - 40px)); margin: 38px auto 0; }
-.hanzi-route { padding: 22px; background: linear-gradient(135deg,rgba(225,239,233,.82),rgba(255,251,243,.88)); }
-.hanzi-route-heading { display: flex; align-items: end; justify-content: space-between; gap: 20px; }
-.hanzi-route-heading h2 { margin: 0; font-size: 22px; }
-.hanzi-stage-progress { margin-top: 18px; display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); gap: 7px; }
-.hanzi-stage-progress button { min-width: 0; min-height: 94px; padding: 10px; position: relative; display: grid; grid-template-columns: auto 1fr; align-items: start; gap: 8px; border: 1px solid var(--line); border-radius: 9px; color: var(--ink); background: rgba(255,255,255,.78); text-align: left; cursor: pointer; }
-.hanzi-stage-progress button.selected { border-color: var(--jade); box-shadow: inset 0 0 0 1px var(--jade); }
-.hanzi-stage-progress button > span { width: 24px; height: 24px; display: grid; place-items: center; border-radius: 50%; color: white; background: var(--jade); font: 800 10px system-ui; }
-.hanzi-stage-progress button div { min-width: 0; display: grid; gap: 5px; }
-.hanzi-stage-progress button b { font-size: 10px; line-height: 1.25; }
-.hanzi-stage-progress button small { color: var(--muted); font-size: 8px; }
-.hanzi-stage-progress button i { height: 4px; overflow: hidden; border-radius: 9px; background: #e4ded2; }
-.hanzi-stage-progress button i em { height: 100%; display: block; border-radius: inherit; background: var(--jade); }
-.hanzi-stage-progress button > strong { position: absolute; right: -8px; top: 39px; z-index: 2; color: var(--amber); font-size: 11px; }
 .hanzi-character-picker { padding: 19px 22px; }
 .hanzi-picker-heading { display: flex; align-items: end; justify-content: space-between; gap: 18px; }
 .hanzi-picker-heading h2 { margin: 0; font-size: 19px; }
@@ -558,8 +545,6 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .daily-hanzi-list span { color: var(--muted); font-size: 8px; }
 
 @media(max-width:900px) {
-  .hanzi-stage-progress { grid-template-columns: repeat(3,1fr); }
-  .hanzi-stage-progress button > strong { display: none; }
   .hanzi-character-picker > div:last-child { grid-template-columns: repeat(8,1fr); }
   .hanzi-picker-grid { grid-template-columns: repeat(8,1fr); }
   .hanzi-character-hero { grid-template-columns: auto 1fr; }
@@ -567,10 +552,6 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 }
 
 @media(max-width:650px) {
-  .hanzi-route-heading { align-items: stretch; flex-direction: column; }
-  .hanzi-route-heading .button { width: 100%; }
-  .hanzi-stage-progress { grid-template-columns: 1fr 1fr; }
-  .hanzi-stage-progress button { min-height: 78px; }
   .stage-filter-desktop { display: none; }
   .stage-filter-mobile { display: grid; gap: 5px; color: var(--muted); font-size: 9px; }
   .stage-filter-mobile select { width: 100%; min-height: 44px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: white; }
@@ -810,11 +791,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .curriculum-nav { margin-top: -22px; margin-bottom: 28px; display: flex; flex-wrap: wrap; justify-content: center; gap: 7px; }
 .curriculum-nav a { min-height: 40px; padding: 8px 14px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 999px; color: var(--jade); background: rgba(255,255,255,.86); font-size: 10px; font-weight: 800; }
 .curriculum-nav a.selected { color: white; border-color: var(--jade); background: var(--jade); }
-.scope-summary { margin-bottom: 28px; display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; }
-.scope-summary article { padding: 16px; display: grid; gap: 4px; border: 1px solid var(--line); border-radius: 10px; background: white; text-align: center; }
-.scope-summary strong { color: var(--jade); font: 700 28px Georgia,serif; }
-.scope-summary span { color: var(--muted); font-size: 9px; text-transform: uppercase; }
-@media(max-width:650px) { .curriculum-nav { margin-top: -12px; overflow-x: auto; flex-wrap: nowrap; justify-content: start; padding-bottom: 4px; } .curriculum-nav a { flex: 0 0 auto; } .scope-summary { grid-template-columns: 1fr 1fr; } }
+@media(max-width:650px) { .curriculum-nav { margin-top: -12px; overflow-x: auto; flex-wrap: nowrap; justify-content: start; padding-bottom: 4px; } .curriculum-nav a { flex: 0 0 auto; } }
 
 /* Reto Mixto */
 .mixed-challenge{width:100%;max-width:920px;margin:0 auto;color:#fffaf1}

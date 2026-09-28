@@ -2,7 +2,6 @@ import { notFound } from 'next/navigation';
 import { getCurrentUser } from '@/app/auth';
 import { Arcade } from '@/components/Arcade';
 import { CurriculumNav } from '@/components/CurriculumNav';
-import { HanziUnitNav } from '@/components/hanzi/HanziUnitNav';
 import { SiteShell, LessonHeader } from '@/components/SiteShell';
 import { getHanziProgressMap } from '@/lib/server/persistence';
 import { recommendHanziCharacters } from '@/lib/hanzi/progress';
@@ -22,7 +21,6 @@ export default async function ScopeGamesPage({params,searchParams}:{params:Promi
   return <SiteShell><main>
     <LessonHeader eyebrow={`${data.definition.shortLabel} · 游戏`} title="Juegos Míng" description="Convierte lo aprendido en mandarín activo."/>
     <CurriculumNav scope={rawScope} section="games"/>
-    <HanziUnitNav basePath={`/study/${rawScope}/games`} units={data.stages} active={activeUnit}/>
     <Arcade scope={rawScope} playerName={user?.displayName??'Estudiante'} canCompete={Boolean(user)} initialGame={query.game==='reto-mixto'||query.game==='hora'?query.game:undefined} exercises={data.exercises} hanziCharacters={characters} listeningEntries={getListeningEntriesForScope(rawScope)}/>
   </main></SiteShell>;
 }

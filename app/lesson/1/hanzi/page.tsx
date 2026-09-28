@@ -35,7 +35,6 @@ export default async function HanziPage({ searchParams }: { searchParams: Promis
       initialProgress={initialProgress}
       initialCharacter={initialCharacter}
       initialTab={initialTab}
-      scopeLabel="Lecciones 1–3"
     />
   </main></CommunityContextProvider></SiteShell>;
 }

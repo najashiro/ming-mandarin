@@ -40,6 +40,14 @@ test('search variants, filters, IME and favorites survive reload', async ({ page
   await expect(card).toBeVisible();
 
 });
+test('catalog pagination returns to the top for the next reading pass', async ({ page }) => {
+  await ready(page, '/study/l1-l2-l3/vocabulary');
+  await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(0);
+  await page.getByRole('button', { name: 'Siguiente', exact: true }).click();
+  await expect(page).toHaveURL(/page=2/);
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBeLessThan(8);
+});
 test('Mix keeps reveal, prevents leaks, saves one evaluation and finite retries', async ({ page }) => {
   await ready(page, `${root}?q=mascota&mode=mix&level=basic`);
   await expect(page).toHaveURL(/\/games\/vocabulary-mix\?q=mascota$/);

@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import type { CharacterEntry, CurriculumScope, Exercise, ListeningEntry } from '@/data/types';
 import { arcadeGames as games } from '@/data/arcade-games';
@@ -57,7 +58,7 @@ export function Arcade({ hanziCharacters, listeningEntries, scope, playerName, c
     <section className="game-grid ming-games-grid shell">{games.map((item, index) => <article key={item.id} data-game={item.id}>
       <span>{String(index + 1).padStart(2, '0')}</span>
       {(item.kind === 'mixed' || item.kind === 'time') && <button className="game-share-button" type="button" onClick={() => void shareGame(item.id)} aria-label={`Compartir ${item.name}`} title={`Compartir ${item.name}`} data-share-path={`/study/${scope}/games?game=${item.id}`}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.3 10.8 7.4-4.6m-7.4 7 7.4 4.6"/></svg></button>}
-      <div className={`game-thumbnail thumbnail-${item.kind}`} aria-hidden="true">{item.kind === 'time' ? <span>◷</span> : item.kind === 'hanzi' ? <Hanzi>字</Hanzi> : item.kind === 'story' ? <span>▤ ⌕</span> : <><Person index={index}/><span>{item.kind === 'mixed' ? '✦' : item.kind === 'conversation' ? '•••' : '＋'}</span></>}</div>
+      {item.cover ? <div className="game-thumbnail game-cover" aria-hidden="true"><Image src={item.cover} alt="" fill loading={index === 0 ? 'eager' : 'lazy'} sizes="(max-width: 440px) 100vw, (max-width: 700px) 50vw, 33vw"/></div> : <div className={`game-thumbnail thumbnail-${item.kind}`} aria-hidden="true">{item.kind === 'hanzi' ? <Hanzi>字</Hanzi> : item.kind === 'story' ? <span>▤ ⌕</span> : <><Person index={index}/><span>{item.kind === 'conversation' ? '•••' : '＋'}</span></>}</div>}
       <h2>{item.name}</h2><p>{item.description}</p><small>{item.skill}</small>
       {(item.kind === 'mixed' || item.kind === 'time') && <span className="game-share-status" role="status" aria-live="polite">{shareStatus?.game === item.id ? shareStatus.message : ''}</span>}
       {item.kind === 'vocabulary' ? <Link href={`/study/${scope}/games/vocabulary-mix`}>Jugar →</Link> : <button type="button" onClick={() => play(index)}>Jugar →</button>}

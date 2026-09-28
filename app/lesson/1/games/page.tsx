@@ -5,7 +5,6 @@ import { recommendHanziCharacters } from '@/lib/hanzi/progress';
 import { getHanziProgressMap } from '@/lib/server/persistence';
 import { hanziUnits, isHanziUnitId, lesson1Characters } from '@/seed/characters';
 import { CommunityButton, CommunityContextProvider } from '@/components/community/CommunityProvider';
-import { HanziUnitNav } from '@/components/hanzi/HanziUnitNav';
 import { getListeningEntriesForLessons } from '@/lib/lesson-content';
 import { exercises } from '@/seed/exercises';
 
@@ -20,7 +19,6 @@ export default async function GamesPage({searchParams}:{searchParams:Promise<{un
   return <SiteShell><CommunityContextProvider context={{lessonId:1,section:'games',route:'/lesson/1/games'}}><main>
     <LessonHeader eyebrow="游戏中心 · ARCADE" title="Juegos Míng" description="Practica escuchando, observando, conversando, escribiendo y leyendo."/>
     <div className="community-page-action shell"><CommunityButton label="Preguntar sobre los juegos"/></div>
-    <HanziUnitNav basePath="/lesson/1/games" units={units} active={activeUnit}/>
     <Arcade scope="l1" playerName={user?.displayName??'Estudiante'} canCompete={Boolean(user)} exercises={exercises} hanziCharacters={hanziCharacters} listeningEntries={getListeningEntriesForLessons([1])}/>
   </main></CommunityContextProvider></SiteShell>;
 }

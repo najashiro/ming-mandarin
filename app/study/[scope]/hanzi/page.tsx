@@ -62,7 +62,6 @@ export default async function ScopeHanziPage({
           initialCharacter={initial}
           initialTab={tab}
           focusGlyph={focusGlyph}
-          scopeLabel={data.definition.label}
           route={`/study/${rawScope}/hanzi`}
           tracking={supplemental?'supplementary':'course'}
         />}

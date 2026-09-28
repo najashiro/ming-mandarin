@@ -7,8 +7,8 @@ import type { CharacterEntry, HanziStageId } from '@/data/types';
 import { strokeDirection } from '@/lib/hanzi/geometry';
 import { loadHanziData } from '@/lib/hanzi/loader';
 import { updateLocalHanziProgress, updateLocalHanziStudyExposure } from '@/lib/hanzi/mastery';
-import { classifyHanziLearningState, hasHanziEvidence, type LocalHanziProgressMap } from '@/lib/hanzi/progress';
-import type { HanziAttemptPayload, HanziCharacterData, HanziLearningState, HanziManifestEntry, HanziPracticeMode, HanziProgressMap } from '@/lib/hanzi/types';
+import type { LocalHanziProgressMap } from '@/lib/hanzi/progress';
+import type { HanziAttemptPayload, HanziCharacterData, HanziManifestEntry, HanziPracticeMode, HanziProgressMap } from '@/lib/hanzi/types';
 import { strokeNamesForCharacter } from '@/lib/hanzi/stroke-names';
 import { HanziStrokeSvg } from './HanziStrokeSvg';
 import { HanziWriterStage, type HanziWriterStageHandle, type QuizSummary } from './HanziWriterStage';
@@ -38,12 +38,11 @@ type Props = {
   initialCharacter?: string;
   initialTab?: Tab;
   focusGlyph?: boolean;
-  scopeLabel?: string;
   route?: string;
   tracking?: 'course'|'supplementary';
 };
 
-export function HanziLab({ characters, canonicalHanzi = characters.map((item) => item.hanzi), stages, manifest, initialProgress = {}, initialCharacter = '好', initialTab = 'Aprender', focusGlyph = false, scopeLabel = 'Lección 1', route = '/lesson/1/hanzi', tracking='course' }: Props) {
+export function HanziLab({ characters, canonicalHanzi = characters.map((item) => item.hanzi), stages, manifest, initialProgress = {}, initialCharacter = '好', initialTab = 'Aprender', focusGlyph = false, route = '/lesson/1/hanzi', tracking='course' }: Props) {
   const firstCharacter = characters.find((item) => item.hanzi === initialCharacter) ?? characters[0];
   const [selectedId, setSelectedId] = useState(firstCharacter.id);
   const [tab, setTab] = useState<Tab>(initialTab);
@@ -53,8 +52,8 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
   const [activeOption, setActiveOption] = useState(-1);
   const [focusRequest, setFocusRequest] = useState(focusGlyph ? 1 : 0);
   const [loaded, setLoaded] = useState<{ character: string; data?: HanziCharacterData; error?: string } | null>(null);
-  const [progress, setProgress] = useState<HanziProgressMap>(initialProgress);
-  const [localProgress, setLocalProgress] = useState<LocalHanziProgressMap>({});
+  const [, setProgress] = useState<HanziProgressMap>(initialProgress);
+  const [, setLocalProgress] = useState<LocalHanziProgressMap>({});
   const [saveMessage, setSaveMessage] = useState('');
   const characterIdsByHanzi = useMemo(() => new Map(characters.map((item) => [item.hanzi,item.id])),[characters]);
   const canonicalHanziSet = useMemo(() => new Set(canonicalHanzi),[canonicalHanzi]);
@@ -90,12 +89,6 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
   const stageLabel = tracking==='supplementary'?'Contenido suplementario':`${activeUnit}${selectedStageName ? ` · ${selectedStageName}` : ''}`;
   const data = loaded?.character === character.hanzi ? loaded.data ?? null : null;
   const loadError = loaded?.character === character.hanzi ? loaded.error ?? '' : '';
-  const stageSummary = useMemo(() => stages.map((stage) => {
-    const members = characters.filter((item) => item.appearsIn.includes(stage.id));
-    return { stage:stage.id,total:members.length,studied:members.filter((item) => hasHanziEvidence(item.id,progress[item.id],localProgress)).length };
-  }), [characters,localProgress,progress,stages]);
-  const studied = characters.filter((item) => hasHanziEvidence(item.id,progress[item.id],localProgress)).length;
-
   useEffect(() => {
     let active = true;
     void loadHanziData(character.hanzi).then((result) => {
@@ -123,16 +116,6 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
       }
       (document.activeElement as HTMLElement | null)?.blur();
       setFocusRequest((value) => value + 1);
-    }
-  }
-
-  function continueLearning() {
-    const priority: HanziLearningState[] = ['review', 'learning', 'new', 'mastered'];
-    const next = priority.flatMap((state) => characters.filter((item) => classifyHanziLearningState(item.id, progress[item.id], localProgress) === state))[0];
-    if (next) {
-      if(next.introducedIn)setStageFilter(next.introducedIn);
-      selectCharacter(next.id);
-      setTab(classifyHanziLearningState(next.id, progress[next.id], localProgress) === 'new' ? 'Aprender' : 'Practicar');
     }
   }
 
@@ -233,15 +216,7 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
 
   return <div className="hanzi-workspace">
     <HanziFocusScroller active={focusRequest > 0} requestKey={focusRequest} expectedCharacter={character.hanzi} />
-    {tracking==='course'?<section className="panel hanzi-route" aria-label="Ruta pedagógica Hanzi">
-      <div className="hanzi-route-heading"><div><p className="eyebrow">RUTA HANZI · {scopeLabel.toUpperCase()}</p><h2>{studied} / {characters.length} estudiados</h2></div><button className="button button-primary" type="button" onClick={continueLearning}>Continuar aprendiendo</button></div>
-      <div className="hanzi-stage-progress">{stages.map((stage, index) => {
-        const summary = stageSummary.find((item) => item.stage === stage.id)!;
-        return <button type="button" className={stageFilter === stage.id ? 'selected' : ''} onClick={() => setStageFilter(stage.id)} key={stage.id}>
-          <span>{stage.id}</span><div><b>{stage.shortTitle}</b><small>{summary.studied}/{summary.total} con práctica</small><i><em style={{ width: `${summary.total ? summary.studied / summary.total * 100 : 0}%` }} /></i></div>{index < stages.length - 1 && <strong aria-hidden="true">→</strong>}
-        </button>;
-      })}</div>
-    </section>:<section className="panel hanzi-supplemental-note"><p className="eyebrow">CONTENIDO SUPLEMENTARIO</p><h2>Consulta directa de caracteres</h2><p>No forma parte del progreso del curso. La práctica ofrece feedback durante esta visita, pero no se guarda.</p></section>}
+    {tracking==='supplementary'&&<section className="panel hanzi-supplemental-note"><p className="eyebrow">CONTENIDO SUPLEMENTARIO</p><h2>Consulta directa de caracteres</h2><p>No forma parte del progreso del curso. La práctica ofrece feedback durante esta visita, pero no se guarda.</p></section>}
 
     {tracking==='course'&&<section className="panel hanzi-character-picker" aria-label="Selector de caracteres">
       <div className="hanzi-picker-heading"><div><p className="eyebrow">BUSCADOR HANZI</p><h2>Busca por pinyin</h2></div><span>{displayedCharacters.length} en el alcance</span></div>

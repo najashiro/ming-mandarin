@@ -51,6 +51,13 @@ export function ActiveVocabulary({ scope, userId = 'guest', mode = 'catalog', me
     if (!('page' in values)) next.delete('page');
     window.history.replaceState(null, '', `?${next.toString()}`);
   }
+  function changePage(nextPage: number) {
+    change({ page: String(nextPage) });
+    window.scrollTo({
+      top: 0,
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+    });
+  }
   function navigateToVocabularyWord(id: string) {
     const word = searchGlobalVocabulary(query).find(word => word.id === id);
     if (!word) return;
@@ -96,7 +103,7 @@ export function ActiveVocabulary({ scope, userId = 'guest', mode = 'catalog', me
     {mix ? <VocabularyMix words={results} scope={scope} userId={userId} route={route} media={media}/> : <>
       {!results.length && <p role="status">Sin resultados. Ajusta los filtros o limpia la búsqueda.</p>}
       <section className="vocabulary-grid" aria-label="Catálogo">{results.slice((page - 1) * 24, page * 24).map(word => <VocabularyCard key={word.id} word={word} scope={scope} route={`${route}#word-${encodeURIComponent(word.id)}`} back={Boolean(faces[word.id])} favorite={data.favorites.includes(word.id)} hideTranslation={false} media={media} onFlip={() => setFaces(previous => ({ ...previous, [word.id]: !previous[word.id] }))} onFavorite={() => update(previous => ({ ...previous, favorites: previous.favorites.includes(word.id) ? previous.favorites.filter(id => id !== word.id) : [...previous.favorites, word.id] }))}/>)}</section>
-      {pages > 1 && <nav className="vocabulary-pagination" aria-label="Páginas del catálogo"><button type="button" disabled={page === 1} onClick={() => change({ page: String(page - 1) })}>Anterior</button><span>{page} / {pages}</span><button type="button" disabled={page === pages} onClick={() => change({ page: String(page + 1) })}>Siguiente</button></nav>}
+      {pages > 1 && <nav className="vocabulary-pagination" aria-label="Páginas del catálogo"><button type="button" disabled={page === 1} onClick={() => changePage(page - 1)}>Anterior</button><span>{page} / {pages}</span><button type="button" disabled={page === pages} onClick={() => changePage(page + 1)}>Siguiente</button></nav>}
     </>}
     <p className="vocabulary-count">Voz generada por IA.</p>
   </div>;
