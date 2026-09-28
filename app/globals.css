@@ -749,7 +749,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .admin-image-summary span { font-size: 9px; font-weight: 750; }
 .admin-image-search { display: grid; gap: 5px; }
 .admin-image-search label { color: var(--muted); font-size: 9px; font-weight: 750; }
-.admin-image-search input { width: 100%; min-height: 46px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 9px; background: white; color: var(--ink); font: 12px system-ui; }
+.admin-image-search input, .admin-image-search select { width: 100%; min-height: 46px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 9px; background: white; color: var(--ink); font: 12px system-ui; }
 .admin-image-results { margin: 0; color: var(--muted); font-size: 9px; }
 .admin-image-list { display: grid; gap: 14px; }
 .admin-image-card { display: grid; grid-template-columns: minmax(260px,.85fr) minmax(320px,1.4fr); overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: white; box-shadow: 0 8px 24px rgba(23,48,40,.06); }

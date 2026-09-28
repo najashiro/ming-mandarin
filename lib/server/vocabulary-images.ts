@@ -1,7 +1,8 @@
 import 'server-only';
 import { createHash } from 'node:crypto';
 import promptCatalog from '@/docs/vocabulary-image-prompts.json';
-import { vocabularyCatalog } from '@/lib/vocabulary';
+import { vocabularyCatalog, getVocabularyLesson } from '@/lib/vocabulary';
+import { splitImageCorrection, withImageCorrection } from '@/lib/image-prompt-correction';
 import { vocabularyMedia, type VocabularyMediaEntry } from '@/lib/vocabulary-media';
 import { effectiveImageStatus, resolvePublishedImages, type ImageReviewRow, type ImageReviewStatus } from '@/lib/vocabulary-image-review';
 import { supabaseRest } from '@/lib/supabase/rest';
@@ -11,6 +12,7 @@ export type VocabularyImageReviewStatus = ImageReviewStatus;
 export type AdminVocabularyImageEntry = VocabularyMediaEntry & {
   hanzi: string; pinyin: string; spanish: string; prompt: string; defaultPrompt: string;
   reviewStatus: ImageReviewStatus; reviewedAt: string | null; revision: number;
+  lesson: number | null; correction: string;
 };
 const prompts = new Map(promptCatalog.entries.map(entry => [entry.wordId, entry]));
 const words = new Map(vocabularyCatalog.map(word => [word.id, word]));
@@ -44,6 +46,8 @@ export async function listVocabularyImageReviews() {
       hanzi: word?.hanzi ?? prompt?.hanzi ?? entry.wordId,
       pinyin: word?.pinyin ?? prompt?.pinyin ?? '',
       spanish: word?.spanish ?? prompt?.spanish ?? entry.sense,
+      lesson: word ? getVocabularyLesson(word) ?? null : null,
+      correction: splitImageCorrection(review?.prompt ?? prompt?.prompt ?? '').correction,
       prompt: review?.prompt ?? prompt?.prompt ?? '', defaultPrompt: prompt?.prompt ?? '',
       reviewStatus: effectiveImageStatus(entry, review),
       reviewedAt: review?.reviewed_at ?? null, revision: review?.revision ?? 0,
@@ -63,19 +67,22 @@ export async function regenerationQueue() {
 }
 
 export async function updateVocabularyImageReview(reviewerId: string, input: {
-  wordId?: unknown; action?: unknown; prompt?: unknown; assetSha256?: unknown; revision?: unknown;
+  wordId?: unknown; action?: unknown; prompt?: unknown; correction?: unknown; assetSha256?: unknown; revision?: unknown;
 }) {
   const entry = vocabularyMedia.find(entry => entry.wordId === input.wordId);
   if (!entry) throw new ApiError(404, 'La imagen no pertenece al vocabulario publicado.');
   if (input.assetSha256 !== entry.sha256) throw new ApiError(409, 'La foto ha cambiado. Recarga y revisa la nueva versión.');
   if (!Number.isSafeInteger(input.revision) || Number(input.revision) < 0) throw new ApiError(400, 'Recarga la revisión antes de guardar.');
   const action = String(input.action ?? '');
-  if (!['approve', 'save_prompt', 'no_image'].includes(action)) throw new ApiError(400, 'Acción de revisión no válida.');
+  if (!['approve', 'save_prompt', 'save_correction', 'no_image'].includes(action)) throw new ApiError(400, 'Acción de revisión no válida.');
   const { entries, storageReady } = await listVocabularyImageReviews();
   if (!storageReady) throw new ApiError(503, 'El guardado de revisiones no está disponible. Tus cambios no se han guardado.');
   const current = entries.find(item => item.wordId === entry.wordId)!;
   if (current.revision !== input.revision) throw new ApiError(409, 'Otra revisión cambió esta palabra. Recarga antes de guardar.');
-  const prompt = action === 'save_prompt' ? (typeof input.prompt === 'string' ? input.prompt.trim() : '') : current.prompt;
+  const correction = typeof input.correction === 'string' ? input.correction.trim() : '';
+  if (action === 'save_correction' && (!correction || correction.length > 2000)) throw new ApiError(400, 'Describe el cambio en 1 a 2000 caracteres.');
+  const prompt = action === 'save_correction' ? withImageCorrection(current.prompt, correction)
+    : action === 'save_prompt' ? (typeof input.prompt === 'string' ? input.prompt.trim() : '') : current.prompt;
   if (prompt.length < 40 || prompt.length > 12000) throw new ApiError(400, 'El prompt debe tener entre 40 y 12 000 caracteres.');
   if (action === 'approve' && (current.reviewStatus === 'needs_regeneration' || digest(prompt) !== entry.promptSha256)) {
     throw new ApiError(409, 'Primero genera la foto con el prompt actualizado y después revísala.');
@@ -94,5 +101,6 @@ export async function updateVocabularyImageReview(reviewerId: string, input: {
   if (result.conflict) throw new ApiError(409, 'Otra revisión cambió esta palabra. Recarga antes de guardar.');
   if (!result.row) throw new ApiError(503, 'No se confirmó el guardado. Recarga para comprobar el estado.');
   return { wordId: entry.wordId, reviewStatus: result.row.status, prompt: result.row.prompt,
+    correction: splitImageCorrection(result.row.prompt).correction,
     reviewedAt: result.row.reviewed_at, revision: result.row.revision };
 }

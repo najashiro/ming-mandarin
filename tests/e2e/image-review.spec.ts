@@ -1,6 +1,22 @@
 import { test, expect } from '@playwright/test';
 
 test.beforeEach(async ({ request }) => { await request.post('http://127.0.0.1:4401/reset'); });
+test('lesson filter combines with search and review status', async ({ page, context }) => {
+  await context.addCookies([{name:'ming_access_token',value:'image-review-test-admin',url:'http://localhost:3103'}]);
+  const {entries} = await (await context.request.get('/api/admin/vocabulary-images')).json();
+  await page.goto('/admin/images');
+  for (const lesson of [1,2,3]) {
+    await page.getByLabel('Filtrar por lección').selectOption(String(lesson));
+    const expected=entries.filter((entry: {lesson:number})=>entry.lesson===lesson);
+    await expect(page.getByRole('article')).toHaveCount(expected.length);
+    const word=expected[0];
+    await page.getByLabel('Buscar palabra').fill(word.wordId);
+    await expect(page.getByRole('article',{name:`Revisión de ${word.hanzi}`,exact:true})).toBeVisible();
+    await page.getByLabel('Buscar palabra').fill('');
+  }
+  await page.getByLabel('Filtrar por lección').selectOption('all');
+  await expect(page.getByRole('article')).toHaveCount(entries.length);
+});
 test('review, reload, public visibility, prompt queue and hide', async ({ page, context, browser }, info) => {
   await page.setViewportSize({width:390,height:844});
   await context.addCookies([{name:'ming_access_token',value:'image-review-test-admin',url:'http://localhost:3103'}]);
@@ -20,10 +36,11 @@ test('review, reload, public visibility, prompt queue and hide', async ({ page, 
   const publicCard=learner.getByRole('article',{name:'Ficha de 进',exact:true});
   await expect(publicCard.locator('img')).toBeVisible();
   await card.getByLabel('Modificar prompt').check();
-  await card.getByRole('textbox',{name:'Prompt de 进'}).fill('Show a person clearly entering through an open door, transparent background, no text.');
+  await card.getByRole('textbox',{name:'¿Qué quieres cambiar en la imagen?'}).fill('Mostrar a la persona entrando por la puerta.');
   await expect(card.getByRole('button',{name:'Actualizar prompt'})).toBeVisible();
   await card.getByRole('button',{name:'Actualizar prompt'}).click();
   await expect(card.locator('header > span')).toHaveText('Por regenerar');
+  await expect(card).toContainText('Mostrar a la persona entrando por la puerta.');
   await expect(card.getByRole('button',{name:'✓ Okay'})).toBeDisabled();
   const exported=await context.request.get('/api/admin/vocabulary-images?export=regeneration');
   expect((await exported.json()).entries[0].wordId).toBe('v-进');

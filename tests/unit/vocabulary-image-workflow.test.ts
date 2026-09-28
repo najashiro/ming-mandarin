@@ -2,6 +2,8 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { createHash } from 'node:crypto';
 import { vocabularyMedia, imageForWord } from '@/lib/vocabulary-media';
 import { effectiveImageStatus, type ImageReviewRow } from '@/lib/vocabulary-image-review';
+import { splitImageCorrection } from '@/lib/image-prompt-correction';
+import { getVocabularyLesson } from '@/lib/vocabulary';
 vi.mock('server-only', () => ({}));
 vi.mock('@/lib/server/api', () => ({ ApiError: class extends Error { constructor(public status: number, message: string) { super(message); } } }));
 const rest = vi.hoisted(() => vi.fn());
@@ -29,6 +31,24 @@ beforeEach(() => {
 const input = (action: string, revision=0) => ({wordId:image.wordId,action,assetSha256:image.sha256,revision});
 
 describe('image decisions persist and reach the public cards', () => {
+  it('stores short corrections without replacing the base or accumulating old corrections', async () => {
+    const original = (await listVocabularyImageReviews()).entries.find(e=>e.wordId===image.wordId)!;
+    const first = await updateVocabularyImageReview('reviewer',{...input('save_correction'),correction:'Que entre.'});
+    expect(first.reviewStatus).toBe('needs_regeneration');
+    expect(splitImageCorrection(first.prompt)).toEqual({base:original.prompt,correction:'Que entre.'});
+    const next = await updateVocabularyImageReview('reviewer',{...input('save_correction',1),correction:'Un pie dentro.'});
+    expect(splitImageCorrection(next.prompt)).toEqual({base:original.prompt,correction:'Un pie dentro.'});
+    expect(next.prompt).not.toContain('Que entre.');
+    expect((await regenerationQueue()).entries[0].prompt).toBe(next.prompt);
+    expect((await listVocabularyImageReviews()).entries.find(e=>e.wordId===image.wordId)?.correction).toBe('Un pie dentro.');
+    await expect(updateVocabularyImageReview('reviewer',{...input('save_correction',2),correction:'  '})).rejects.toMatchObject({status:400});
+    await expect(updateVocabularyImageReview('reviewer',{...input('save_correction',2),correction:'a'.repeat(2001)})).rejects.toMatchObject({status:400});
+  });
+  it('uses the existing vocabulary lesson assignment', async () => {
+    for (const entry of (await listVocabularyImageReviews()).entries) {
+      expect(entry.lesson).toBe(getVocabularyLesson({id:entry.wordId}) ?? null);
+    }
+  });
   it('approves a pending static entry and remains visible after reload', async () => {
     expect(imageForWord(image.wordId,await publishedVocabularyMedia())).toBeUndefined();
     await updateVocabularyImageReview('reviewer',input('approve'));
