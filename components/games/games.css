@@ -64,3 +64,9 @@
 /* Preserve the hard surface, compact mode titles and Hanzi deep links. */
 .time-game{border:1px solid transparent;border-radius:22px;padding:12px;transition:background-color .18s,border-color .18s}.time-game.time-game-hard{background:#faf1ee;border-color:#e8cfc7}.time-game-hard .time-help{background:#faf1ee}.time-game-hard .time-help>header{background:#faf1ee}.time-mode-title{display:inline-block;white-space:nowrap;font-size:24px}.time-hanzi-link{color:inherit;text-decoration-line:underline;text-decoration-style:dotted;text-decoration-thickness:1px;text-underline-offset:4px}.time-hanzi-link:hover{color:#a34d3f}.time-hanzi-link:focus-visible{outline:3px solid #b77932;outline-offset:3px;border-radius:2px}.time-hanzi-link-note{font-size:12px;color:#596d64;margin:5px 0 10px!important}.hanzi-supplemental-note{border-color:#e8cfc7;background:#faf1ee}.hanzi-unavailable{margin:24px 0}.time-controls{grid-template-columns:1fr 1.2fr}
 @media(prefers-reduced-motion:reduce){.time-game{transition:none}}
+
+/* HARD feedback: one calm row per alternative and a single playback focus. */
+.time-answer.correct.speaking{background:#bfe6cc;border-color:#176b40;box-shadow:0 0 0 3px #25855038}
+.time-correction>.time-alternatives{display:grid;grid-template-columns:minmax(0,1fr);align-items:stretch}
+.time-alternatives article{display:grid;grid-template-columns:minmax(82px,.7fr) minmax(0,1.8fr);align-items:center;gap:8px;padding:7px 9px}
+.time-alternatives .time-answer-line>div{justify-content:flex-start}
