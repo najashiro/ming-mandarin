@@ -48,27 +48,32 @@ test('catalog pagination returns to the top for the next reading pass', async ({
   await expect(page).toHaveURL(/page=2/);
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBeLessThan(8);
 });
-test('Mix keeps reveal, prevents leaks, saves one evaluation and finite retries', async ({ page }) => {
+test('Mix ignores obsolete catalog filters, reveals the shared card and saves one evaluation', async ({ page }) => {
   await ready(page, `${root}?q=mascota&mode=mix&level=basic`);
-  await expect(page).toHaveURL(/\/games\/vocabulary-mix\?q=mascota$/);
-  await page.getByRole('combobox', { name: 'Tipo de pista' }).selectOption('context');
+  await expect(page).toHaveURL(/\/games\/vocabulary-mix$/);
+  await expect(page.getByRole('combobox', { name: 'Buscar' })).toHaveCount(0);
+  await expect(page.getByRole('button', { name: 'Solo favoritos' })).toHaveCount(0);
+  await expect(page.getByRole('combobox', { name: 'Contenido' }).locator('option')).toHaveText(['Lección 1', 'Lección 2', 'Lección 3', 'Acumulado hasta lección 2', 'Acumulado hasta lección 3']);
   await page.getByRole('button', { name: 'Empezar', exact: true }).click();
   const mix = page.getByRole('region', { name: 'Vocabulario Mix', exact: true });
-  await expect(mix.getByRole('button', { name: 'Lo sé', exact: true })).toHaveCount(0);
-  await expect(mix.getByText('chǒngwù', { exact: true })).toHaveCount(0);
+  await expect(mix.getByRole('button', { name: 'Lo sabía', exact: true })).toHaveCount(0);
+  await expect(mix.locator('.word-pinyin')).toHaveCount(0);
   await expect(mix.getByRole('link')).toHaveCount(0);
   await page.getByRole('button', { name: 'Ver respuesta', exact: true }).click();
-  await expect(mix.getByText('chǒngwù', { exact: true })).toBeVisible();
+  await expect(mix.getByRole('article', { name: /Ficha de/ })).toBeVisible();
+  await expect(mix.getByRole('button', { name: /Favorito:/ })).toHaveCount(0);
   await page.reload();
-  await expect(page.getByRole('button', { name: 'Lo sé', exact: true })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Lo sabía', exact: true })).toBeVisible();
   await page.getByRole('button', { name: 'Pausar', exact: true }).click();
   await page.reload();
   await page.getByRole('button', { name: 'Reanudar', exact: true }).click();
-  await page.getByRole('button', { name: 'No lo sé', exact: true }).dblclick();
-  await expect(page.getByText(/1 palabras únicas · 1 respuestas autoevaluadas/)).toBeVisible();
-  await expect(page.getByText(/1 palabras pendientes/)).toBeVisible();
+  await page.getByRole('button', { name: 'No lo sabía', exact: true }).dblclick();
+  await expect(page.locator('.vocabulary-mix-score')).toContainText('Respondidas: 1/10');
+  const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('ming-vocabulary-v1:guest')!));
+  expect(saved.sessions.l3.answers).toHaveLength(1);
+  expect(saved.sessions.l3.deck).toHaveLength(10);
   await page.reload();
-  await expect(page.getByText(/1 palabras únicas · 1 respuestas autoevaluadas/)).toBeVisible();
+  await expect(page.locator('.vocabulary-mix-score')).toContainText('Respondidas: 1/10');
 });
 test('Hanzi opens supported character in a new tab and keeps original state', async ({ page, context }) => {
   await ready(page, `${root}?q=mascota`);
@@ -89,7 +94,7 @@ test('games registry links to the same Mix with scope', async ({ page }) => {
   await page.getByRole('link', { name: '← Volver a Juegos' }).click();
   await expect(page).toHaveURL(/\/study\/l2\/games$/);
 });
-for (const width of [320, 375, 390, 430, 1280]) test(`layout and real screenshots at ${width}px`, async ({ page }, info) => {
+for (const width of [320, 375, 390, 430, 768, 1280]) test(`layout and real screenshots at ${width}px`, async ({ page }, info) => {
   await page.setViewportSize({ width, height: 900 });
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await ready(page, '/study/l2/vocabulary?q=米饭');
@@ -99,11 +104,14 @@ for (const width of [320, 375, 390, 430, 1280]) test(`layout and real screenshot
   await page.locator('.vocabulary-card-tools').getByRole('button', { name: /Ver ejemplo/ }).click();
   await page.screenshot({ path: info.outputPath(`${width}-reverse.png`), fullPage: true });
   await ready(page, '/study/l2/games/vocabulary-mix?q=米饭');
-  await page.getByRole('combobox', { name: 'Tipo de pista' }).selectOption('image');
   await page.getByRole('button', { name: 'Empezar', exact: true }).click();
   await page.screenshot({ path: info.outputPath(`${width}-mix.png`), fullPage: true });
   await page.addStyleTag({ content: 'html { font-size: 32px !important; }' });
-  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  const overflow = await page.evaluate(() => [...document.querySelectorAll<HTMLElement>('body *')].filter(element => {
+    const box = element.getBoundingClientRect();
+    return box.right > innerWidth + 1 || box.left < -1;
+  }).map(element => ({ tag: element.tagName, className: element.className, text: element.innerText?.slice(0, 40), box: element.getBoundingClientRect().toJSON() })).slice(0, 10));
+  expect(overflow).toEqual([]);
 });
 
 test('compact controls ignore obsolete filters and keep audio beside Chinese', async ({ page }) => {
@@ -122,7 +130,7 @@ test('compact controls ignore obsolete filters and keep audio beside Chinese', a
   await expect(page).not.toHaveURL(/source=|selection=|level=/);
 });
 
-test('audited words and essential/extended Mix stay curricular', async ({ page }) => {
+test('audited words stay curricular and Mix exposes only approved setup controls', async ({ page }) => {
   for (const [scope, hanzi, pinyin] of [['l1', '马马虎虎', 'mǎmǎhūhū'], ['l2', '中国', 'Zhōngguó'], ['l1', '太', 'tài'], ['l3', '宠物', 'chǒngwù'], ['l3', '约翰', 'Yuēhàn']]) {
     await ready(page, `/study/${scope}/vocabulary?q=${encodeURIComponent(hanzi)}`);
     const card = page.getByRole('article', { name: `Ficha de ${hanzi}`, exact: true });
@@ -132,34 +140,26 @@ test('audited words and essential/extended Mix stay curricular', async ({ page }
     await expect(card).not.toContainText(/pendiente|SRC-|PDF|revisión|fuente/i);
   }
   await ready(page, '/study/l1/vocabulary?q=马马虎虎&mode=mix');
-  await page.getByRole('combobox', { name: 'Nivel', exact: true }).selectOption('basic');
-  await expect(page.getByRole('button', { name: 'Empezar', exact: true })).toBeDisabled();
-  await page.getByRole('combobox', { name: 'Nivel', exact: true }).selectOption('hard');
   await expect(page.getByRole('button', { name: 'Empezar', exact: true })).toBeEnabled();
+  await expect(page.getByRole('combobox', { name: 'Nivel' })).toHaveCount(0);
+  await expect(page.getByRole('combobox', { name: 'Tipo de pista' })).toHaveCount(0);
+  await expect(page.getByRole('combobox', { name: 'Palabras' }).locator('option')).toHaveText(['10', '20', '30', '50']);
 });
 
-test('legacy session survives corpus sync and revealed Mix fits 390 × 844', async ({ page }, info) => {
+test('legacy Mix is retired once while favorites and progress survive', async ({ page }, info) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.addInitScript(() => {
     localStorage.setItem('ming-vocabulary-v1:guest', JSON.stringify({ version: 1, favorites: ['v-约翰'], faces: {}, progress: { 'v-约翰:hanzi': { due: 100, streak: 2, attempts: 3, lastEvent: 'old:0' } }, sessions: { l3: { id: 'before-corpus-sync', scope: 'l3', level: 'hard', queue: [{ wordId: 'v-约翰', type: 'hanzi' }], index: 0, revealed: true, paused: false, events: [] } } }));
   });
   await ready(page, '/study/l3/vocabulary?mode=mix');
-  const mix = page.getByRole('region', { name: 'Vocabulario Mix', exact: true });
-  await expect(mix.getByText('Yuēhàn', { exact: true })).toBeVisible();
-  await expect(mix.getByText('John', { exact: true })).toBeVisible();
-  await expect(mix).not.toContainText(/pendiente|SRC-|PDF|revisión|Compara también/i);
-  const action = mix.getByRole('button', { name: 'Lo sé', exact: true });
-  const bounds = await action.boundingBox();
-  expect(bounds!.y + bounds!.height).toBeLessThan(774);
-  expect(await page.evaluate(() => scrollY)).toBe(0);
-  await page.screenshot({ path: info.outputPath('390-audited-mix.png'), fullPage: true });
-  await mix.getByText('Ejemplo', { exact: true }).click();
-  await expect(mix.locator('.vocabulary-example .pinyin-text')).toBeVisible();
-  await expect(mix).not.toContainText(/pendiente|SRC-|PDF|revisión/i);
-  await action.click();
+  await expect(page.getByText('El juego se actualizó. Tu progreso anterior se conserva; empieza una nueva partida.')).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Empezar', exact: true })).toBeVisible();
+  await page.screenshot({ path: info.outputPath('390-migrated-mix.png'), fullPage: true });
+  await page.getByRole('button', { name: 'Cerrar aviso' }).click();
   const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('ming-vocabulary-v1:guest')!));
-  expect(saved.progress['v-约翰:hanzi'].attempts).toBe(4);
+  expect(saved.progress['v-约翰:hanzi'].attempts).toBe(3);
   expect(saved.favorites).toEqual(['v-约翰']);
+  expect(saved.sessions).toEqual({});
 });
 
 for (const [from, query, hanzi, target] of [['l1', '中国', '中国', 'l2'], ['l1', 'mascota', '宠物', 'l3'], ['l3', '你', '你', 'l1'], ['l2', 'mamahuhu', '马马虎虎', 'l1'], ['l1-l2-l3', 'mamahuhu', '马马虎虎', 'l1']]) test(`global search ${from}: ${query} navigates to ${target}`, async ({ page }) => {
@@ -223,20 +223,14 @@ test('global examples keep canonical lesson, favorites, progress and card positi
   await expect(card).not.toContainText(/pendiente|SRC-|PDF/);
 });
 
-test('Mix removes pending cards from earlier lessons and accumulated keeps all', async ({ page }) => {
+test('incompatible old Mix is not rewritten and l1-l2 remains directly accessible', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('ming-vocabulary-v1:guest', JSON.stringify({ version: 1, favorites: [], faces: {}, progress: { 'v-你:hanzi': { due: 1, streak: 1, attempts: 2, lastEvent: 'history:0' } }, sessions: { l2: { id: 'old-partition', scope: 'l2', level: 'hard', queue: [{ wordId: 'v-你', type: 'hanzi' }, { wordId: 'v-中国', type: 'hanzi' }], index: 0, revealed: true, paused: false, events: [] } } })));
   await ready(page, '/study/l2/vocabulary?mode=mix');
-  await expect(page.getByRole('button', { name: 'Ver respuesta', exact: true })).toBeVisible();
-  await page.getByRole('button', { name: 'Ver respuesta', exact: true }).click();
-  await expect(page.locator('.vocabulary-mix-hanzi')).toHaveText('中国');
-  const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('ming-vocabulary-v1:guest')!));
-  expect(saved.sessions.l2.queue.map((card: { wordId: string }) => card.wordId)).toEqual(['v-中国']);
-  expect(saved.progress['v-你:hanzi'].attempts).toBe(2);
-  await page.getByRole('combobox', { name: 'Lección', exact: true }).selectOption('l1-l2-l3');
-  await expect(page.getByRole('button', { name: 'Empezar', exact: true })).toBeVisible();
-  await expect(page).toHaveURL(/\/study\/l1-l2-l3\/games\/vocabulary-mix/);
-  await ready(page, '/study/l1-l2-l3/vocabulary');
-  await expect(page.getByRole('article', { name: 'Ficha de 你', exact: true })).toBeVisible();
+  await expect(page.getByText(/El juego se actualizó/)).toBeVisible();
+  await page.getByRole('combobox', { name: 'Contenido' }).selectOption('l1-l2');
+  await expect(page).toHaveURL(/\/study\/l1-l2\/games\/vocabulary-mix$/);
+  await expect(page.getByRole('combobox', { name: 'Contenido' })).toHaveValue('l1-l2');
+  await expect(page.getByText(/palabras disponibles/)).toBeVisible();
 });
 
 test('filters and search reset faces; reverse emphasizes the target in context', async ({ page }, info) => {
@@ -289,7 +283,7 @@ for (const width of [390, 1280]) test(`new corpus cat cycles three examples in c
   await expect(cat.locator('.word-pinyin')).toHaveText('māo');
   await expect(cat.locator('.vocabulary-translation')).toHaveText('gato');
   await cat.getByRole('button', { name: 'Favorito: 猫', exact: true }).click();
-  await cat.getByRole('button', { name: 'Consultar ejemplo: 猫', exact: true }).click();
+  await cat.locator('.vocabulary-card-tools').getByRole('button', { name: 'Ver ejemplo: 猫', exact: true }).click();
   const reverseBounds = await cat.boundingBox();
   expect(Math.abs(reverseBounds!.width / reverseBounds!.height - 1.61803398875)).toBeLessThan(.01);
   const expected = [
@@ -316,18 +310,18 @@ for (const width of [390, 1280]) test(`new corpus cat cycles three examples in c
   await page.evaluate(() => {
     const key = 'ming-vocabulary-v1:guest';
     const state = JSON.parse(localStorage.getItem(key)!);
-    state.sessions.l3 = { id: 'cat-corpus', scope: 'l3', level: 'hard', queue: [{ wordId: 'v-猫', type: 'hanzi' }], index: 0, revealed: true, paused: false, events: [] };
+    state.sessions.l3 = { formatVersion: 2, id: 'cat-corpus', userId: 'guest', scope: 'l3', requestedSize: 10, actualSize: 1, deck: ['v-猫'], index: 0, revealed: true, paused: false, kind: 'normal', startedAt: 1, answers: [] };
     localStorage.setItem(key, JSON.stringify(state));
   });
   await ready(page, '/study/l3/vocabulary?mode=mix');
   const mix = page.getByRole('region', { name: 'Vocabulario Mix', exact: true });
-  await mix.getByText('Ejemplo', { exact: true }).click();
+  await mix.getByRole('button', { name: 'Ver ejemplo: 猫', exact: true }).click();
   for (const [chinese] of expected) {
     await expect(mix.locator('.vocabulary-example-text')).toHaveText(chinese);
     await mix.getByRole('button', { name: 'Otro ejemplo', exact: true }).click();
   }
   const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('ming-vocabulary-v1:guest')!));
-  expect(saved.sessions.l3.events).toEqual([]);
+  expect(saved.sessions.l3.answers).toEqual([]);
   expect(saved.favorites).toContain('v-猫');
 });
 

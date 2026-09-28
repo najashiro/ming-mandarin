@@ -55,8 +55,8 @@ test('unavailable storage leaves a working session and truthful status', async (
   await expect(page.getByText(/Almacenamiento no disponible/)).toBeVisible();
   await page.getByRole('button', { name: 'Empezar', exact: true }).click();
   await page.getByRole('button', { name: 'Ver respuesta', exact: true }).click();
-  await page.getByRole('button', { name: 'Lo sé', exact: true }).click();
-  await expect(page.getByText(/1 palabras únicas/)).toBeVisible();
+  await page.getByRole('button', { name: 'Lo sabía', exact: true }).click();
+  await expect(page.locator('.vocabulary-mix-score')).toContainText('Respondidas: 1/10');
 });
 
 test('only one audio plays and changing cards stops it', async ({ page }) => {

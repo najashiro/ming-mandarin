@@ -26,9 +26,9 @@ export function VocabularyExample({ word, route }: { word: ActiveWord; scope: Cu
   </div>;
 }
 
-export function VocabularyCard({ word, scope, route, back, favorite, hideTranslation, media, onFlip, onFavorite }: {
+export function VocabularyCard({ word, scope, route, back, favorite = false, hideTranslation, media, onFlip, onFavorite, showFavorite = true }: {
   word: ActiveWord; scope: CurriculumScope; route: string; back: boolean;
-  favorite: boolean; hideTranslation: boolean; media: readonly VocabularyMediaEntry[]; onFlip: () => void; onFavorite: () => void;
+  favorite?: boolean; hideTranslation: boolean; media: readonly VocabularyMediaEntry[]; onFlip: () => void; onFavorite?: () => void; showFavorite?: boolean;
 }) {
   const hasExamples = examplesForWord(word).length > 0;
   const showBack = back && hasExamples;
@@ -42,10 +42,10 @@ export function VocabularyCard({ word, scope, route, back, favorite, hideTransla
       ? <button className="vocabulary-image-flip" type="button" aria-label={`Consultar ejemplo: ${word.hanzi}`} onClick={onFlip}>{photo}</button>
       : photo)}
     <div className="vocabulary-card-body">
-    <div className="vocabulary-card-tools">
-      <button type="button" className="vocabulary-favorite" aria-label={`Favorito: ${word.hanzi}`} aria-pressed={favorite} onClick={onFavorite}>
+    <div className={`vocabulary-card-tools${showFavorite ? '' : ' without-favorite'}`}>
+      {showFavorite && <button type="button" className="vocabulary-favorite" aria-label={`Favorito: ${word.hanzi}`} aria-pressed={favorite} onClick={onFavorite}>
         <svg aria-hidden="true" viewBox="0 0 24 24" fill={favorite ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round"><path d="m12 3 2.8 5.7 6.3.9-4.5 4.4 1.1 6.2L12 17.3l-5.7 2.9 1.1-6.2L2.9 9.6l6.3-.9Z"/></svg>
-      </button>
+      </button>}
       {showBack && <div className="vocabulary-word-row vocabulary-reverse-label"><h2 className="vocabulary-word"><LinkedChineseText text={word.hanzi} returnTo={route} newTab/></h2></div>}
       {hasExamples && <button type="button" className="vocabulary-flip" aria-label={`${showBack ? 'Ver palabra' : 'Ver ejemplo'}: ${word.hanzi}`} aria-pressed={showBack} onClick={onFlip}>
         <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M20 7v5h-5M4 17v-5h5M5.2 7.2A8 8 0 0 1 19.5 9M4.5 15a8 8 0 0 0 14.3 1.8"/></svg>

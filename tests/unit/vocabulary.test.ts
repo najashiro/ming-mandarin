@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { selectVocabulary, searchVocabulary, searchKey, vocabularyCatalog, examplesForScope, examplesForWord, getVocabularySet, getVocabularyLesson, accumulatedVocabulary, searchGlobalVocabulary } from '@/lib/vocabulary';
-import { evaluateMix, startMix, mixStats, reconcileMixSession } from '@/lib/vocabulary-review';
+import { selectVocabulary, searchVocabulary, searchKey, vocabularyCatalog, examplesForScope, examplesForWord, getVocabularySet, getVocabularyLesson, accumulatedVocabulary, searchGlobalVocabulary, getVocabularyMixSet, vocabularyMixExcludedIds, vocabularyMixScopes } from '@/lib/vocabulary';
+import { evaluateMix, startMix, mixStats } from '@/lib/vocabulary-review';
 import { parseVocabularyState, vocabularyStorageKey } from '@/lib/vocabulary-storage';
 import { availablePracticeTypes, imageForWord, vocabularyMedia } from '@/lib/vocabulary-media';
 import { resolveHanziGlyph } from '@/lib/hanzi/navigation';
@@ -11,6 +11,7 @@ import { canonicalCharacters } from '@/seed/characters';
 import { curriculumScopes } from '@/seed/curriculum';
 import { existsSync } from 'node:fs';
 const pet = vocabularyCatalog.find(w => w.hanzi === '宠物')!;
+const makeSession = (words = [pet], requestedSize = 10, id = 'test', random = () => 0.5) => startMix({ words, requestedSize, scope: 'l3', userId: 'guest', id, now: 100, random });
 describe('vocabulario activo: evidencia, búsqueda y recursos', () => {
   it('preserva el testigo exacto de 宠物 sin declararlo nuevo', () => {
     expect(pet.curriculumLinks).toContainEqual(expect.objectContaining({ lesson: 3, role: 'workbook_context', list_type: null }));
@@ -70,30 +71,63 @@ describe('vocabulario activo: evidencia, búsqueda y recursos', () => {
 });
 describe('autoevaluación finita y persistencia', () => {
   it('impide evaluar antes de revelar y no duplica eventos', () => {
-    const session = startMix([pet], 10, 'l3', 'basic', {}, 'test', 100);
-    expect(evaluateMix(session, {}, true, 100).session.events).toHaveLength(0);
-    const result = evaluateMix({ ...session, revealed: true }, {}, true, 100);
+    const session = makeSession();
+    const turn = { sessionId: session.id, index: 0, wordId: pet.id };
+    expect(evaluateMix(session, {}, true, 100, turn).session.answers).toHaveLength(0);
+    const result = evaluateMix({ ...session, revealed: true }, {}, true, 100, turn);
     expect(result.progress['v-宠物:hanzi'].due).toBe(100 + 86400000);
-    expect(evaluateMix({ ...session, revealed: true }, result.progress, true, 100).progress).toBe(result.progress);
-    expect(mixStats(result.session)).toEqual({ unique: 1, attempts: 1, remembered: 1, pending: 0 });
+    expect(evaluateMix({ ...session, revealed: true }, result.progress, true, 100, turn).progress).toBe(result.progress);
+    expect(evaluateMix({ ...session, revealed: true }, {}, true, 100, { ...turn, sessionId: 'old' }).session).toEqual({ ...session, revealed: true });
+    expect(mixStats(result.session)).toEqual({ responded: 1, correct: 1, incorrect: 0, total: 1, percentage: 100, incorrectIds: [] });
   });
-  it('reinserta fallos con separación y limita intentos', () => {
-    let state = { session: startMix(vocabularyCatalog.slice(0, 5), 5, 'l1', 'basic', {}, 'test', 0, () => 0), progress: {} };
-    let last = '';
-    for (let i = 0; i < 20 && state.session.index < state.session.queue.length; i++) {
-      const word = state.session.queue[state.session.index].wordId;
-      expect(word).not.toBe(last); last = word;
-      state = evaluateMix({ ...state.session, revealed: true }, state.progress, false, 0);
+  it('una ronda fija registra una sola respuesta por palabra sin reinsertar fallos', () => {
+    let state = { session: makeSession(vocabularyCatalog.slice(0, 5), 5), progress: {} };
+    const originalDeck = [...state.session.deck];
+    while (state.session.index < state.session.deck.length) {
+      const index = state.session.index;
+      const wordId = state.session.deck[index];
+      state = evaluateMix({ ...state.session, revealed: true }, state.progress, false, index, { sessionId: state.session.id, index, wordId });
     }
-    expect(state.session.index).toBe(state.session.queue.length);
-    expect(state.session.events.length).toBeLessThanOrEqual(10);
-    expect(mixStats(state.session).unique).toBe(5);
+    expect(state.session.deck).toEqual(originalDeck);
+    expect(state.session.answers).toHaveLength(5);
+    expect(mixStats(state.session)).toMatchObject({ responded: 5, incorrect: 5, total: 5 });
   });
   it('no crea bucles con una sola palabra ni falla con almacenamiento corrupto', () => {
-    const s = startMix([pet], 10, 'l3', 'basic', {}, 'single', 0);
-    expect(evaluateMix({ ...s, revealed: true }, {}, false, 0).session.queue).toHaveLength(1);
+    const s = makeSession([pet], 10, 'single', () => 0);
+    expect(s.deck).toEqual([pet.id]);
     for (const raw of ['null', '{}', '{broken', '{"version":1,"sessions":{"l3":{"queue":false}}}']) expect(parseVocabularyState(raw).sessions).toEqual({});
     expect(vocabularyStorageKey('a')).not.toBe(vocabularyStorageKey('b'));
+  });
+  it('baraja Fisher–Yates sin mutar, usa todo el conjunto y evita la secuencia anterior', () => {
+    const words = vocabularyCatalog.slice(0, 6);
+    const before = words.map(word => word.id);
+    const first = makeSession(words, 3, 'first', () => 0);
+    expect(words.map(word => word.id)).toEqual(before);
+    expect(new Set(first.deck).size).toBe(3);
+    expect(first.deck.some(id => !before.slice(0, 3).includes(id))).toBe(true);
+    const collision = startMix({ words, requestedSize: 3, scope: 'l3', userId: 'guest', id: 'second', now: 101, random: () => 0, previousSequence: first.deck });
+    expect(collision.deck).not.toEqual(first.deck);
+    expect(collision.id).not.toBe(first.id);
+  });
+  it('limita el total real, resuelve el caso de una posición y no consulta progreso due', () => {
+    const words = vocabularyCatalog.slice(0, 3);
+    const capped = makeSession(words, 50, 'capped', () => 0.9);
+    expect(capped.actualSize).toBe(3);
+    expect(capped.deck).toHaveLength(3);
+    const first = startMix({ words, requestedSize: 1, scope: 'l1', userId: 'guest', id: 'one-a', now: 1, random: () => 0 });
+    const second = startMix({ words, requestedSize: 1, scope: 'l1', userId: 'guest', id: 'one-b', now: 2, random: () => 0, previousSequence: first.deck });
+    expect(second.deck).not.toEqual(first.deck);
+    expect(startMix.toString()).not.toContain('.due');
+  });
+  it('serializa el mazo, marcador, revelado y pausa sin persistir el giro', () => {
+    const session = { ...makeSession(vocabularyCatalog.slice(0, 3), 3, 'persisted'), revealed: true, paused: true };
+    const state = parseVocabularyState(JSON.stringify({ version: 2, favorites: [pet.id], hideTranslation: false, faces: {}, progress: {}, sessions: { l3: session }, lastSequences: { l3: session.deck }, legacyMixNotice: false }));
+    expect(state.sessions.l3).toEqual(session);
+    expect(state.sessions.l3.deck).toEqual(session.deck);
+    expect(state.sessions.l3.revealed).toBe(true);
+    expect(state.sessions.l3.paused).toBe(true);
+    expect(state.sessions.l3).not.toHaveProperty('back');
+    expect(state.lastSequences.l3).toEqual(session.deck);
   });
 });
 
@@ -139,15 +173,15 @@ describe('sincronización del corpus auditado', () => {
     expect(john.pinyin).toBe('Yuēhàn');
     expect(examplesForScope(john, 'l3').some(example => example.hanzi.startsWith('约翰是我的狗') && example.pinyin)).toBe(true);
   });
-  it('mantiene sesiones, caras, favoritos y progreso anteriores al cambio de corpus', () => {
-    const session = { ...startMix([pet], 5, 'l3', 'basic', {}, 'before-sync', 100), revealed: true };
+  it('migra el formato anterior conservando caras, favoritos y progreso, sin reinterpretar su sesión', () => {
+    const legacySession = { id: 'before-sync', scope: 'l3', level: 'basic', queue: [{ wordId: pet.id, type: 'hanzi' }], index: 0, revealed: true, paused: false, events: [] };
     const progress = { 'v-宠物:hanzi': { due: 500, streak: 2, attempts: 3, lastEvent: 'old:0' } };
-    const state = parseVocabularyState(JSON.stringify({ version: 1, favorites: [pet.id], faces: { [pet.id]: true }, sessions: { l3: session }, progress }));
-    expect(state.sessions.l3).toEqual(session);
+    const state = parseVocabularyState(JSON.stringify({ version: 1, favorites: [pet.id], faces: { [pet.id]: true }, sessions: { l3: legacySession }, progress }));
+    expect(state.sessions).toEqual({});
+    expect(state.legacyMixNotice).toBe(true);
     expect(state.progress).toEqual(progress);
     expect(state.favorites).toEqual([pet.id]);
     expect(state.faces[pet.id]).toBe(true);
-    expect(vocabularyCatalog.find(word => word.id === state.sessions.l3.queue[0].wordId)).toBe(pet);
   });
 });
 
@@ -218,14 +252,17 @@ describe('partición exclusiva y ejemplos globales', () => {
     }
     expect(['l1', 'l2', 'l3', 'l1-l2-l3'].map(scope => getVocabularySet(scope as 'l1').length)).toEqual([85, 126, 116, 327]);
   });
-  it('retira tarjetas futuras fuera de la partición sin borrar historial ni progreso', () => {
-    const ni = vocabularyCatalog.find(word => word.hanzi === '你')!;
-    const china = vocabularyCatalog.find(word => word.hanzi === '中国')!;
-    const old = { ...startMix([ni, china], 5, 'l2', 'hard', {}, 'old', 0, () => 0), revealed: true };
-    const migrated = reconcileMixSession(old, new Set(getVocabularySet('l2').map(word => word.id)));
-    expect(migrated.queue.map(card => card.wordId)).toEqual([china.id]);
-    expect(migrated.revealed).toBe(false);
-    expect(migrated.events).toBe(old.events);
-    expect(reconcileMixSession(migrated, new Set(getVocabularySet('l2').map(word => word.id)))).toBe(migrated);
+  it('define cinco alcances elegibles sin nombres personales y conserva lugares, palabras completas y monosílabos', () => {
+    expect(vocabularyMixScopes).toEqual(['l1', 'l2', 'l3', 'l1-l2', 'l1-l2-l3']);
+    const sets = Object.fromEntries(vocabularyMixScopes.map(scope => [scope, getVocabularyMixSet(scope)]));
+    expect(vocabularyMixScopes.map(scope => sets[scope].length)).toEqual([68, 122, 110, 190, 300]);
+    for (const words of Object.values(sets)) expect(new Set(words.map(word => word.id)).size).toBe(words.length);
+    expect(sets.l2.map(word => word.id)).not.toEqual(sets['l1-l2'].map(word => word.id));
+    for (const hanzi of ['马大为', '张华', '约翰', '陈']) expect(sets['l1-l2-l3'].some(word => word.hanzi === hanzi)).toBe(false);
+    for (const hanzi of ['中国', '美国', '北京', '上海', '你', '我', '米饭']) expect(sets['l1-l2-l3'].some(word => word.hanzi === hanzi)).toBe(true);
+    expect(sets['l1-l2-l3'].some(word => word.hanzi === '米')).toBe(Boolean(getVocabularySet('l1-l2-l3').find(word => word.hanzi === '米') && !vocabularyMixExcludedIds.has(vocabularyCatalog.find(word => word.hanzi === '米')!.id)));
+    expect(sets['l1-l2-l3'].some(word => word.hanzi === '饭')).toBe(Boolean(getVocabularySet('l1-l2-l3').find(word => word.hanzi === '饭') && !vocabularyMixExcludedIds.has(vocabularyCatalog.find(word => word.hanzi === '饭')!.id)));
+    expect(sets['l1-l2-l3'].find(word => word.hanzi === '米饭')?.hanzi).toBe('米饭');
+    expect(sets['l1-l2-l3'].some(word => !imageForWord(word.id))).toBe(true);
   });
 });

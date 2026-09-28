@@ -1,4 +1,18 @@
-> Informe histórico del checkpoint previo a la sincronización. Para el estado actual, ver [VOCABULARY_CORPUS_SYNC.md](VOCABULARY_CORPUS_SYNC.md). Los conteos y filtros descritos abajo corresponden a aquella entrega.
+> Las secciones posteriores a «Estado vigente» son un informe histórico del checkpoint previo a la sincronización. Sus conteos y su mecánica anterior no describen el juego actual.
+
+# Estado vigente de Vocabulario Mix · 28-09-2026
+
+Vocabulario Mix es ahora un juego de reconocimiento de entradas léxicas completas. La configuración solo permite escoger uno de cinco alcances (`l1`, `l2`, `l3`, `l1-l2`, `l1-l2-l3`) y 10, 20, 30 o 50 palabras. Búsqueda, favoritos, dificultad, tipo de pista y paginación pertenecen exclusivamente al catálogo.
+
+Cada partida normal toma todo el conjunto elegible del alcance, deduplica por ID curricular, aplica Fisher–Yates con aleatoriedad inyectable y fija una secuencia de IDs. No usa `due`, favoritos, búsqueda ni orden documental. Se evita repetir exactamente la secuencia normal inmediatamente anterior cuando existe una alternativa. Las entradas nominales de personas, apellidos usados solo como nombres y nombres particulares de mascotas se excluyen mediante una capa editorial por ID; ciudades, países, idiomas, nacionalidades y vocabulario común se conservan. El corpus y el catálogo no se modifican.
+
+Cada turno presenta Hanzi grande y audio local; la respuesta permanece fuera del DOM hasta revelarse. Al revelar se reutiliza `VocabularyCard` con imagen opcional, reverso, ejemplos auditados, enlaces Hanzi y audio de frase, pero con el favorito desactivado. La autoevaluación usa `知道 / Lo sabía` y `不知道 / No lo sabía`. Un token formado por ID de partida, posición e ID de palabra hace idempotente cada respuesta. El marcador deriva exclusivamente del registro canónico de respuestas.
+
+El mazo es fijo: una partida de N palabras termina tras N evaluaciones y nunca reinserta fallos. «Repasar incorrectas» crea otra ronda, conserva una instantánea del resultado original y no sustituye la secuencia normal usada por la protección antirrepetición.
+
+El almacenamiento permanece separado por usuario bajo la clave compatible `ming-vocabulary-v1:<userId>`, pero el documento interno tiene `version: 2`. Guarda mazo, configuración, posición, revelado, pausa, respuestas, relación de repaso y últimas secuencias normales. El giro no se persiste. Al leer `version: 1`, conserva favoritos, caras y progreso, retira solo la sesión Mix incompatible y muestra una notificación única; nunca limpia todo `localStorage`.
+
+El audio usa el resolvedor texto+lectura y el controlador compartido de reproducción única. La reproducción automática se solicita una vez al iniciar cada turno desde una acción del alumno; `NotAllowedError` deja disponible el control manual y no altera el marcador. Pausa, salida, cambio de turno y desmontaje detienen el recurso activo.
 
 # Vocabulario activo y Vocabulario Mix — entrega local
 
