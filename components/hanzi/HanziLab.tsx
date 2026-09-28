@@ -2,8 +2,9 @@
 import { Hanzi } from '@/components/Hanzi';
 
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import type { CharacterEntry, HanziStageId } from '@/data/types';
+import type { CharacterEntry, CurriculumScope, HanziStageId } from '@/data/types';
 import { strokeDirection } from '@/lib/hanzi/geometry';
 import { loadHanziData } from '@/lib/hanzi/loader';
 import { updateLocalHanziProgress, updateLocalHanziStudyExposure } from '@/lib/hanzi/mastery';
@@ -20,6 +21,13 @@ import { audioForMandarinText } from '@/lib/mandarin-audio';
 import { trackAnalyticsEvent } from '@/lib/analytics/client';
 
 const tabs = ['Aprender', 'Palabras y frases', 'Trazos', 'Practicar'] as const;
+const lessonScopes = [
+  ['l1', 'Lección 1'],
+  ['l2', 'Lección 2'],
+  ['l3', 'Lección 3'],
+  ['l1-l2', 'Lección 2 acumulado'],
+  ['l1-l2-l3', 'Lección 3 acumulado'],
+] as const satisfies readonly (readonly [CurriculumScope, string])[];
 type Tab = typeof tabs[number];
 type StageFilter = 'all' | HanziStageId;
 type Stage = { id: HanziStageId; title: string; shortTitle: string; chinese: string; description: string; characters: string[] };
@@ -40,9 +48,11 @@ type Props = {
   focusGlyph?: boolean;
   route?: string;
   tracking?: 'course'|'supplementary';
+  scope?: CurriculumScope;
 };
 
-export function HanziLab({ characters, canonicalHanzi = characters.map((item) => item.hanzi), stages, manifest, initialProgress = {}, initialCharacter = '好', initialTab = 'Aprender', focusGlyph = false, route = '/lesson/1/hanzi', tracking='course' }: Props) {
+export function HanziLab({ characters, canonicalHanzi = characters.map((item) => item.hanzi), stages, manifest, initialProgress = {}, initialCharacter = '好', initialTab = 'Aprender', focusGlyph = false, route = '/lesson/1/hanzi', tracking='course', scope='l1' }: Props) {
+  const router = useRouter();
   const firstCharacter = characters.find((item) => item.hanzi === initialCharacter) ?? characters[0];
   const [selectedId, setSelectedId] = useState(firstCharacter.id);
   const [tab, setTab] = useState<Tab>(initialTab);
@@ -217,6 +227,10 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
   return <div className="hanzi-workspace">
     <HanziFocusScroller active={focusRequest > 0} requestKey={focusRequest} expectedCharacter={character.hanzi} />
     {tracking==='supplementary'&&<section className="panel hanzi-supplemental-note"><p className="eyebrow">CONTENIDO SUPLEMENTARIO</p><h2>Consulta directa de caracteres</h2><p>No forma parte del progreso del curso. La práctica ofrece feedback durante esta visita, pero no se guarda.</p></section>}
+
+    {tracking==='course'&&<div className="hanzi-lesson-toolbar">
+      <label htmlFor="hanzi-lesson-scope">Lección<select id="hanzi-lesson-scope" aria-label="Lección" value={scope} onChange={(event) => router.push(`/study/${event.target.value}/hanzi`)}>{lessonScopes.map(([value,label])=><option value={value} key={value}>{label}</option>)}</select></label>
+    </div>}
 
     {tracking==='course'&&<section className="panel hanzi-character-picker" aria-label="Selector de caracteres">
       <div className="hanzi-picker-heading"><div><p className="eyebrow">BUSCADOR HANZI</p><h2>Busca por pinyin</h2></div><span>{displayedCharacters.length} en el alcance</span></div>

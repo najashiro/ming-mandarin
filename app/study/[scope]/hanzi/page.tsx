@@ -1,6 +1,5 @@
 import { notFound } from 'next/navigation';
 import { getCurrentUser } from '@/app/auth';
-import { CurriculumNav } from '@/components/CurriculumNav';
 import { HanziLab } from '@/components/hanzi/HanziLab';
 import { SiteShell, LessonHeader } from '@/components/SiteShell';
 import { getHanziProgressMap } from '@/lib/server/persistence';
@@ -51,7 +50,6 @@ export default async function ScopeHanziPage({
           title="Hanzi: forma, sonido y trazos"
           description="Reconocimiento, pronunciación estática, orden de trazos y escritura táctil."
         />
-        {!supplemental&&<CurriculumNav scope={rawScope} section="hanzi" />}
         {explicitlyUnavailable?<section className="panel hanzi-unavailable" role="status"><h2>Carácter aún no disponible</h2><p>El carácter solicitado es <strong className="font-hanzi">{query.character}</strong>.</p><p>No se seleccionó otro carácter como sustitución.</p></section>:<HanziLab
           key={`${initial}:${query.focus??''}:${query.tab??''}:${query.mode??''}`}
           characters={characters}
@@ -64,6 +62,7 @@ export default async function ScopeHanziPage({
           focusGlyph={focusGlyph}
           route={`/study/${rawScope}/hanzi`}
           tracking={supplemental?'supplementary':'course'}
+          scope={rawScope}
         />}
       </main>
     </SiteShell>

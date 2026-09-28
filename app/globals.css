@@ -370,6 +370,10 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 
 /* Reusable Hanzi laboratory */
 .hanzi-workspace { width: min(1180px, calc(100% - 40px)); margin: 38px auto 0; }
+.hanzi-lesson-toolbar { margin-bottom: 13px; display: flex; align-items: end; }
+.hanzi-lesson-toolbar label { width: min(100%,320px); display: grid; gap: 6px; color: var(--muted); font-size: 10px; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+.hanzi-lesson-toolbar select { width: 100%; min-height: 46px; padding: 9px 38px 9px 12px; border: 1px solid var(--line); border-radius: 10px; color: var(--ink); background: rgba(255,255,255,.9); font: 600 14px system-ui; cursor: pointer; }
+.hanzi-lesson-toolbar select:focus-visible { outline: 3px solid rgba(29,106,89,.25); outline-offset: 2px; border-color: var(--jade); }
 .hanzi-character-picker { padding: 19px 22px; }
 .hanzi-picker-heading { display: flex; align-items: end; justify-content: space-between; gap: 18px; }
 .hanzi-picker-heading h2 { margin: 0; font-size: 19px; }
