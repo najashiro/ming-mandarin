@@ -11,10 +11,13 @@ import { PinyinText } from '../PinyinText';
 import { useVocabularyState } from './useVocabularyState';
 import { VocabularyCard } from './VocabularyCard';
 import { VocabularyMix } from './VocabularyMix';
-import { vocabularyMedia, type VocabularyMediaEntry } from '@/lib/vocabulary-media';
+import { type VocabularyMediaEntry } from '@/lib/vocabulary-media';
+import { usePublishedImages } from './usePublishedImages';
 import './vocabulary.css';
 
-export function ActiveVocabulary({ scope, userId = 'guest', mode = 'catalog', media = vocabularyMedia }: { scope: CurriculumScope; userId?: string; mode?: 'catalog' | 'mix'; media?: readonly VocabularyMediaEntry[] }) {
+const emptyMedia: readonly VocabularyMediaEntry[] = [];
+export function ActiveVocabulary({ scope, userId = 'guest', mode = 'catalog', media: initialMedia = emptyMedia }: { scope: CurriculumScope; userId?: string; mode?: 'catalog' | 'mix'; media?: readonly VocabularyMediaEntry[] }) {
+  const media = usePublishedImages(initialMedia);
   const params = useSearchParams();
   const router = useRouter();
   const { data, ready, saved, update } = useVocabularyState(userId);

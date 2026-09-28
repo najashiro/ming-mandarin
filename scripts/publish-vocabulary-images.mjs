@@ -13,15 +13,7 @@ mkdirSync(normalizedDir, { recursive: true });
 mkdirSync(publicDir, { recursive: true });
 
 const sha256 = value => createHash('sha256').update(value).digest('hex');
-const explicitlySafeConcepts = new Set([
-  'v-中国', 'v-美国', 'v-西班牙', 'v-秘鲁', 'v-墨西哥',
-  'v-老师', 'v-医生', 'v-学生',
-]);
-const initiallyApproved = entry => explicitlySafeConcepts.has(entry.wordId) || (
-  entry.visual_ming.visual_mode === 'literal_photo'
-  && entry.visual_ming.image_quiz_eligible
-  && entry.visual_ming.ambiguity_risk !== 'high'
-);
+const previousMedia = new Map(JSON.parse(readFileSync(join(root, 'data/vocabulary-media.json'), 'utf8')).map(entry => [entry.wordId, entry]));
 const results = [];
 const missing = [];
 
@@ -47,9 +39,12 @@ for (const entry of promptCatalog.entries) {
     .toBuffer();
   const normalizedPath = join(normalizedDir, entry.output);
   writeFileSync(normalizedPath, normalized);
-  const publicPath = join(publicDir, entry.public_output);
-  await sharp(normalized).webp({ quality: 86, alphaQuality: 100, smartSubsample: true }).toFile(publicPath);
-  const publicBuffer = readFileSync(publicPath);
+  const publicBuffer = await sharp(normalized).webp({ quality: 86, alphaQuality: 100, smartSubsample: true }).toBuffer();
+  const previous = previousMedia.get(entry.wordId);
+  const unchanged = previous?.sha256 === sha256(publicBuffer) && previous?.promptSha256 === entry.prompt_sha256;
+  const outputName = unchanged ? previous.src.split('/').pop() : `vocab-${sha256(entry.wordId).slice(0,20)}-${sha256(publicBuffer).slice(0,16)}.webp`;
+  const publicPath = join(publicDir, outputName);
+  writeFileSync(publicPath, publicBuffer);
   const metadata = await sharp(publicBuffer).metadata();
   const pixels = await sharp(publicBuffer).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
   const cornerOffsets = [3, (pixels.info.width - 1) * 4 + 3, ((pixels.info.height - 1) * pixels.info.width) * 4 + 3, (pixels.info.width * pixels.info.height - 1) * 4 + 3];
@@ -58,10 +53,10 @@ for (const entry of promptCatalog.entries) {
     wordId: entry.wordId,
     sense: entry.spanish,
     hintType: 'image',
-    src: `/images/vocabulary/${entry.public_output}`,
+    src: `/images/vocabulary/${outputName}`,
     alt: `Representación visual de ${entry.spanish}`,
     description: `Apoyo visual para ${entry.hanzi} (${entry.pinyin}): ${entry.spanish}`,
-    status: initiallyApproved(entry) ? 'approved' : 'pending_review',
+    status: unchanged ? previous.status : 'pending_review',
     presentation: 'transparent-cutout',
     visualMode: entry.visual_ming.visual_mode,
     imageQuizEligible: entry.visual_ming.image_quiz_eligible,
@@ -72,9 +67,7 @@ for (const entry of promptCatalog.entries) {
     promptSha256: entry.prompt_sha256,
     model: entry.model,
     quality: entry.quality,
-    review: initiallyApproved(entry)
-      ? 'Publicación inicial conservadora: referente concreto o categoría expresamente autorizada; revisable desde Administración.'
-      : 'Validación técnica completada; oculto hasta revisión semántica humana desde Administración.',
+    review: unchanged ? previous.review : 'Nueva versión: oculta hasta aprobación en Administración.',
     provenance: 'OpenAI Image API mediante la clave local del usuario; corpus y clasificación visual sin modificaciones.',
   });
 }
