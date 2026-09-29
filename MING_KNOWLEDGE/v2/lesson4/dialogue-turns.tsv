@@ -1,0 +1,55 @@
+dialogue_id	source_id	pdf_page	turn	speaker_source	hanzi	pinyin_source
+DLG-L4-BOOK-T1	SRC-BOOK-04	2	1	宋华	林娜，你明天做什么？	Lín Nà, nǐ míngtiān zuò shénme?
+DLG-L4-BOOK-T1	SRC-BOOK-04	2	2	林娜	我明天有很多课，特别忙。	Wǒ míngtiān yǒu hěn duō kè, tèbié máng.
+DLG-L4-BOOK-T1	SRC-BOOK-04	2	3	宋华	你明天几点有课？	Nǐ míngtiān jǐ diǎn yǒu kè?
+DLG-L4-BOOK-T1	SRC-BOOK-04	2	4	林娜	我明天上午八点半有语法课，十点四十有汉字课，下午两点一刻还有口语课。	Wǒ míngtiān shàngwǔ bā diǎn bàn yǒu yǔfǎkè, shí diǎn sìshí yǒu Hànzìkè, xiàwǔ liǎng diǎn yí kè hái yǒu kǒuyǔkè.
+DLG-L4-BOOK-T1	SRC-BOOK-04	2	5	宋华	你累不累？	Nǐ lèi bu lèi?
+DLG-L4-BOOK-T1	SRC-BOOK-04	3	6	林娜	不累。对了，你明天晚上有没有时间？	Bú lèi. Duìle, nǐ míngtiān wǎnshang yǒu méiyǒu shíjiān?
+DLG-L4-BOOK-T1	SRC-BOOK-04	3	7	宋华	有时间，有时间。明天晚上有一个好电影，你看不看？我们一起去吧。	Yǒu shíjiān, yǒu shíjiān. Míngtiān wǎnshang yǒu yí ge hǎo diànyǐng, nǐ kàn bu kàn? Wǒmen yìqǐ qù ba.
+DLG-L4-BOOK-T1	SRC-BOOK-04	3	8	林娜	是不是《再见》？	Shì bu shì 《Zàijiàn》?
+DLG-L4-BOOK-T1	SRC-BOOK-04	3	9	宋华	是啊。我们一起去吧。	Shì a. Wǒmen yìqǐ qù ba.
+DLG-L4-BOOK-T1	SRC-BOOK-04	3	10	林娜	恐怕不行。我们一起练习口语吧。	Kǒngpà bùxíng. Wǒmen yìqǐ liànxí kǒuyǔ ba.
+DLG-L4-BOOK-T2	SRC-BOOK-04	5	1	王小云	现在几点？	Xiànzài jǐ diǎn?
+DLG-L4-BOOK-T2	SRC-BOOK-04	5	2	马大为	差五分七点。	Chà wǔ fēn qī diǎn.
+DLG-L4-BOOK-T2	SRC-BOOK-04	6	3	王小云	七点半我回学校，我们班有活动。	Qī diǎn bàn wǒ huí xuéxiào, wǒmen bān yǒu huódòng.
+DLG-L4-BOOK-T2	SRC-BOOK-04	6	4	马大为	听说你们班的女生多，男生少。	Tīngshuō nǐmen bān de nǚshēng duō, nánshēng shǎo.
+DLG-L4-BOOK-T2	SRC-BOOK-04	6	5	王小云	对。我们班只有四个男生。	Duì. Wǒmen bān zhǐ yǒu sì gè nánshēng.
+DLG-L4-BOOK-T2	SRC-BOOK-04	6	6	马大为	你们班一共有多少人？	Nǐmen bān yígòng yǒu duōshao rén?
+DLG-L4-BOOK-T2	SRC-BOOK-04	6	7	王小云	我们班一共有三十个人，有二十六个女生。	Wǒmen bān yígòng yǒu sānshí ge rén, yǒu èrshíliù ge nǚshēng.
+DLG-L4-BOOK-T2	SRC-BOOK-04	6	8	马大为	你们班真有意思。	Nǐmen bān zhēn yǒu yìsi.
+DLG-L4-BOOK-T2	SRC-BOOK-04	6	9	王小云	你们班呢？你们班的女生多不多？	Nǐmen bān ne? Nǐmen bān de nǚshēng duō bu duō?
+DLG-L4-BOOK-T2	SRC-BOOK-04	6	10	马大为	不多。我们班一共有十八个学生。十二个男生，六个女生。	Bù duō. Wǒmen bān yígòng yǒu shíbā ge xuésheng. Shí'èr ge nánshēng, liù ge nǚshēng.
+DLG-L4-BOOK-T2	SRC-BOOK-04	6	11	王小云	你们班也很有意思。	Nǐmen bān yě hěn yǒu yìsi.
+DLG-L4-BOOK-T2	SRC-BOOK-04	6	12	马大为	你来我们班吧，我去你们班。	Nǐ lái wǒmen bān ba, wǒ qù nǐmen bān.
+DLG-L4-BOOK-T2	SRC-BOOK-04	6	13	王小云	你来我们班吗？你学习什么专业？	Nǐ lái wǒmen bān ma? Nǐ xuéxí shénme zhuānyè?
+DLG-L4-BOOK-T2	SRC-BOOK-04	6	14	马大为	我学英语。	Wǒ xué Yīngyǔ.
+DLG-L4-BOOK-T2	SRC-BOOK-04	6	15	王小云	我呢？	Wǒ ne?
+DLG-L4-BOOK-T2	SRC-BOOK-04	6	16	马大为	你去学汉语。	Nǐ qù xué Hànyǔ.
+DLG-L4-BOOK-T2	SRC-BOOK-04	6	17	王小云	好主意！	Hǎo zhǔyi!
+DLG-L4-PPT1-T1	SRC-PPT-04-1	40	1	丁力波	林娜，你明天做什么？	Lín Nà, nǐ míngtiān zuò shénme?
+DLG-L4-PPT1-T1	SRC-PPT-04-1	40	2	林娜	我明天有很多课，特别忙。	Wǒ míngtiān yǒu hěnduō kè, tèbié máng.
+DLG-L4-PPT1-T1	SRC-PPT-04-1	40	3	丁力波	你明天几点有课？	Nǐ míngtiān jǐdiǎn yǒu kè?
+DLG-L4-PPT1-T1	SRC-PPT-04-1	40	4	林娜	我明天上午八点半有语法课，十点四十有汉字课，下午两点一刻还有口语课。	Wǒ míngtiān shàngwǔ bādiǎnbàn yǒu yǔfǎkè, shídiǎnsìshí yǒu Hànzìkè, xiàwǔ liǎngdiǎn yíkè háiyǒu kǒuyǔkè.
+DLG-L4-PPT1-T1	SRC-PPT-04-1	41	5	丁力波	你累不累？	Nǐ lèibulèi?
+DLG-L4-PPT1-T1	SRC-PPT-04-1	41	6	林娜	不累。对了，你明天晚上有没有时间？	Búlèi. Duì le, nǐ míngtiān wǎnshang yǒuméiyǒu shíjiān?
+DLG-L4-PPT1-T1	SRC-PPT-04-1	41	7	丁力波	有时间，有时间。明天晚上有一个好电影，你看不看？我们一起去吧。	Yǒu shíjiān, yǒu shíjiān. Míngtiān wǎnshang yǒu yí ge hǎo diànyǐng, nǐ kànbukàn? Wǒmen yìqǐ qù ba.
+DLG-L4-PPT1-T1	SRC-PPT-04-1	41	8	林娜	是不是《再见》？	Shì bu shì Zàijiàn?
+DLG-L4-PPT1-T1	SRC-PPT-04-1	41	9	丁力波	是啊。我们一起去吧。	Shì’a. Wǒmen yìqǐ qù ba.
+DLG-L4-PPT1-T1	SRC-PPT-04-1	41	10	林娜	恐怕不行。我们一起练习口语吧。	Kǒngpà bùxíng. Wǒmen yìqǐ liàn kǒuyǔ ba.
+DLG-L4-PPT2-T2	SRC-PPT-04-2	27	1	王小云	现在几点？	Xiànzài jǐ diǎn?
+DLG-L4-PPT2-T2	SRC-PPT-04-2	27	2	马大为	差五分七点。	Chà wǔfēn qīdiǎn.
+DLG-L4-PPT2-T2	SRC-PPT-04-2	27	3	王小云	七点半我们回学校，我们班有活动。	Qīdiǎnbàn wǒmen huí xuéxiào, wǒmen bān yǒu huódòng.
+DLG-L4-PPT2-T2	SRC-PPT-04-2	27	4	马大为	听说你们班的女生多，男生少。	Tīngshuō nǐmen bān nǚshēng duō, nánshēng shǎo.
+DLG-L4-PPT2-T2	SRC-PPT-04-2	27	5	王小云	对，我们班只有四个男生。	Duì, wǒmen bān zhǐ yǒu sì gè nánshēng.
+DLG-L4-PPT2-T2	SRC-PPT-04-2	27	6	马大为	你们班一共有多少人？	Nǐmen bān yígòng yǒu duōshao rén?
+DLG-L4-PPT2-T2	SRC-PPT-04-2	27	7	王小云	我们班一共有三十个人，有二十六个女生。	Wǒmen bān yígòng yǒu sānshí gè rén, yǒu èrshíliù gè nǚshēng.
+DLG-L4-PPT2-T2	SRC-PPT-04-2	28	8	马大为	你们班真有意思。	Nǐmen bān zhēn yǒu yìsi.
+DLG-L4-PPT2-T2	SRC-PPT-04-2	28	9	王小云	你们班呢？你们班的女生多不多？	Nǐmen bān ne? Nǐmen bān de nǚshēng duōbuduō?
+DLG-L4-PPT2-T2	SRC-PPT-04-2	28	10	马大为	不多。我们班一共有十八个学生。十二个男生，六个女生。	Bùduō. Wǒmen bān yígòng yǒu shíbā gè xuésheng. Shí’èr gè nánshēng, liù gè nǚshēng.
+DLG-L4-PPT2-T2	SRC-PPT-04-2	28	11	王小云	你们班也很有意思。	Nǐmen bān yě hěn yǒu yìsi.
+DLG-L4-PPT2-T2	SRC-PPT-04-2	28	12	马大为	你来我们班吧，我去你们班。	Nǐ lái wǒmen bān ba, wǒ qù nǐmen bān.
+DLG-L4-PPT2-T2	SRC-PPT-04-2	28	13	王小云	你来我们班吗？你学习什么专业？	Nǐ lái wǒmen bān ma? Nǐ xuéxí shénme zhuānyè?
+DLG-L4-PPT2-T2	SRC-PPT-04-2	29	14	马大为	我学习英语。	Wǒ xuéxí Yīngyǔ.
+DLG-L4-PPT2-T2	SRC-PPT-04-2	29	15	王小云	我呢？	Wǒ ne?
+DLG-L4-PPT2-T2	SRC-PPT-04-2	29	16	马大为	你去学习汉语。	Nǐ qù xuéxí Hànyǔ.
+DLG-L4-PPT2-T2	SRC-PPT-04-2	29	17	王小云	好主意！	Hǎo zhǔyi!
