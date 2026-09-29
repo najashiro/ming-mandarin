@@ -1,0 +1,41 @@
+name: Corpus L4 source audit
+on:
+  push:
+    branches: ['corpus/leccion-4-source-audit-20260928']
+    paths:
+      - 'MING_KNOWLEDGE/**'
+      - '.github/workflows/corpus-l4-audit.yml'
+  pull_request:
+    paths:
+      - 'MING_KNOWLEDGE/**'
+      - '.github/workflows/corpus-l4-audit.yml'
+permissions:
+  contents: read
+jobs:
+  corpus-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate existing corpus
+        run: python MING_KNOWLEDGE/v2/query.py --validate
+      - name: Test corpus readers
+        run: python -m unittest discover -s MING_KNOWLEDGE/v2 -p 'test_*.py'
+      - name: Prepare source-audit working snapshot
+        if: always()
+        run: |
+          mkdir -p /tmp/ming-audit
+          git archive --format=tar HEAD MING_KNOWLEDGE scripts/export-corpus-v21.py AGENTS.md > /tmp/ming-audit/source-snapshot.tar
+          cp MING_KNOWLEDGE/v2/.cache/validation.json /tmp/ming-audit/validation.json || true
+          git rev-parse HEAD > /tmp/ming-audit/commit.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ming-corpus-source-audit
+          path: /tmp/ming-audit/
+          retention-days: 1
