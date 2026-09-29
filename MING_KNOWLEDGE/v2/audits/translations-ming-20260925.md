@@ -12,14 +12,14 @@ Las traducciones son elaboraciones del modelo, no texto atribuido a los document
 ## Salida para la web
 
 {
-  "vocabulary_records": 267,
+  "vocabulary_records": 337,
   "phrases": 635,
-  "vocabulary_with_spanish": 267,
+  "vocabulary_with_spanish": 337,
   "phrases_with_spanish": 635,
   "dialogue_turns": 54,
   "dialogue_turns_with_spanish": 54,
   "provenance_not_exposed": true,
-  "public_fingerprint": "4dceb1f0c60e7a2d1b1c8a2413171c193e2aad398d437744544dc778392630b1"
+  "public_fingerprint": "8de40bd08c613595e25689027175e098512dc8b52cfa41d70c4553351655d82c"
 }
 
 La web recibe únicamente `spanish`, resuelto como español documental o traducción Míng de respaldo. No recibe el autor ni el método de traducción.

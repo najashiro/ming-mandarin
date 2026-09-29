@@ -1,0 +1,17 @@
+{
+  "version": "2.2.0",
+  "scope": "documentary corpus closure; no application deployment",
+  "global_tests": 156,
+  "lesson4_tests": 25,
+  "pdf_checks": 6,
+  "local_results": "PASS",
+  "independent_human_review": false,
+  "source_pack_decoded_sha256": "da1ecb263dfe055171f67782490543aa3bbb51b36fea2e07c3b3cd8c63bd46d1",
+  "public_projection_sha256": "be022d17c65fe5e2d9cc578d8dddccb17f093aa3307c52c1e5b994064ab9ce64",
+  "log_sha256": {
+    "global-tests.txt": "85cd6826fd49ec8ef1ced53503b6fdac2c05d68cc0dd5adca1461e5c43204711",
+    "l4-tests.txt": "cec7569bfb2498a40921e94651824f5c240190b776c7f6c695d82e1fc9ca4a1f",
+    "final-source-validation.json": "50970c793c9f2c0076ab74c3e2d244dbb8ac62b299710ebeda031e4a4b7fa3a6",
+    "release-check.json": "36871805bec20a394f8400571b9bd48b9cebbd81e4bcec6dfc43ed392e3c59f8"
+  }
+}

@@ -1,0 +1,1296 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "New L4 lexemes only; preserves all L1–L3 visual records.",
+  "records": [
+    {
+      "id": "VM-v-多",
+      "vocab_id": "v-多",
+      "hanzi": "多",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "El sentido registrado requiere cantidad, relación o símbolo contextual; una fotografía aislada no distingue la función.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-特别",
+      "vocab_id": "v-特别",
+      "hanzi": "特别",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-点（钟）",
+      "vocab_id": "v-点（钟）",
+      "hanzi": "点（钟）",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "El sentido registrado requiere cantidad, relación o símbolo contextual; una fotografía aislada no distingue la función.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-半",
+      "vocab_id": "v-半",
+      "hanzi": "半",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "El sentido registrado requiere cantidad, relación o símbolo contextual; una fotografía aislada no distingue la función.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-语法",
+      "vocab_id": "v-语法",
+      "hanzi": "语法",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-汉字",
+      "vocab_id": "v-汉字",
+      "hanzi": "汉字",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-下",
+      "vocab_id": "v-下",
+      "hanzi": "下",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "El sentido registrado requiere cantidad, relación o símbolo contextual; una fotografía aislada no distingue la función.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-刻",
+      "vocab_id": "v-刻",
+      "hanzi": "刻",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "El sentido registrado requiere cantidad, relación o símbolo contextual; una fotografía aislada no distingue la función.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-口语",
+      "vocab_id": "v-口语",
+      "hanzi": "口语",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-对了",
+      "vocab_id": "v-对了",
+      "hanzi": "对了",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Función discursiva que requiere una frase, no una identificación por fotografía.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-对",
+      "vocab_id": "v-对",
+      "hanzi": "对",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "El sentido registrado requiere cantidad, relación o símbolo contextual; una fotografía aislada no distingue la función.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-时间",
+      "vocab_id": "v-时间",
+      "hanzi": "时间",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-一起",
+      "vocab_id": "v-一起",
+      "hanzi": "一起",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "El sentido registrado requiere cantidad, relación o símbolo contextual; una fotografía aislada no distingue la función.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-吧",
+      "vocab_id": "v-吧",
+      "hanzi": "吧",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "El sentido registrado requiere cantidad, relación o símbolo contextual; una fotografía aislada no distingue la función.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-恐怕",
+      "vocab_id": "v-恐怕",
+      "hanzi": "恐怕",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Función discursiva que requiere una frase, no una identificación por fotografía.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-行",
+      "vocab_id": "v-行",
+      "hanzi": "行",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "phrase_context",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Función discursiva que requiere una frase, no una identificación por fotografía.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-练习",
+      "vocab_id": "v-练习",
+      "hanzi": "练习",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Representación de la acción registrada; no implica que se haya generado o aprobado un recurso.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-差",
+      "vocab_id": "v-差",
+      "hanzi": "差",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "El sentido registrado requiere cantidad, relación o símbolo contextual; una fotografía aislada no distingue la función.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-分",
+      "vocab_id": "v-分",
+      "hanzi": "分",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "El sentido registrado requiere cantidad, relación o símbolo contextual; una fotografía aislada no distingue la función.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-回",
+      "vocab_id": "v-回",
+      "hanzi": "回",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Representación de la acción registrada; no implica que se haya generado o aprobado un recurso.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-学校",
+      "vocab_id": "v-学校",
+      "hanzi": "学校",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Objeto o referente representable; validar el contexto del término antes de usarlo como pregunta visual.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-活动",
+      "vocab_id": "v-活动",
+      "hanzi": "活动",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-听说",
+      "vocab_id": "v-听说",
+      "hanzi": "听说",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-听",
+      "vocab_id": "v-听",
+      "hanzi": "听",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Representación de la acción registrada; no implica que se haya generado o aprobado un recurso.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-女生",
+      "vocab_id": "v-女生",
+      "hanzi": "女生",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Objeto o referente representable; validar el contexto del término antes de usarlo como pregunta visual.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-男",
+      "vocab_id": "v-男",
+      "hanzi": "男",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "El sentido registrado requiere cantidad, relación o símbolo contextual; una fotografía aislada no distingue la función.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-少",
+      "vocab_id": "v-少",
+      "hanzi": "少",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "El sentido registrado requiere cantidad, relación o símbolo contextual; una fotografía aislada no distingue la función.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-意思",
+      "vocab_id": "v-意思",
+      "hanzi": "意思",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-来",
+      "vocab_id": "v-来",
+      "hanzi": "来",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Representación de la acción registrada; no implica que se haya generado o aprobado un recurso.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-专业",
+      "vocab_id": "v-专业",
+      "hanzi": "专业",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-主意",
+      "vocab_id": "v-主意",
+      "hanzi": "主意",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-零",
+      "vocab_id": "v-零",
+      "hanzi": "零",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "El sentido registrado requiere cantidad, relación o símbolo contextual; una fotografía aislada no distingue la función.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-起床",
+      "vocab_id": "v-起床",
+      "hanzi": "起床",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Representación de la acción registrada; no implica que se haya generado o aprobado un recurso.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-午饭",
+      "vocab_id": "v-午饭",
+      "hanzi": "午饭",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Objeto o referente representable; validar el contexto del término antes de usarlo como pregunta visual.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-运动",
+      "vocab_id": "v-运动",
+      "hanzi": "运动",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Representación de la acción registrada; no implica que se haya generado o aprobado un recurso.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-打球",
+      "vocab_id": "v-打球",
+      "hanzi": "打球",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Representación de la acción registrada; no implica que se haya generado o aprobado un recurso.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-跑步",
+      "vocab_id": "v-跑步",
+      "hanzi": "跑步",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Representación de la acción registrada; no implica que se haya generado o aprobado un recurso.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-电视",
+      "vocab_id": "v-电视",
+      "hanzi": "电视",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Objeto o referente representable; validar el contexto del término antes de usarlo como pregunta visual.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-晚饭",
+      "vocab_id": "v-晚饭",
+      "hanzi": "晚饭",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Objeto o referente representable; validar el contexto del término antes de usarlo como pregunta visual.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-睡觉",
+      "vocab_id": "v-睡觉",
+      "hanzi": "睡觉",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Representación de la acción registrada; no implica que se haya generado o aprobado un recurso.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-听力",
+      "vocab_id": "v-听力",
+      "hanzi": "听力",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-文学",
+      "vocab_id": "v-文学",
+      "hanzi": "文学",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-历史",
+      "vocab_id": "v-历史",
+      "hanzi": "历史",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-经济",
+      "vocab_id": "v-经济",
+      "hanzi": "经济",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-文化",
+      "vocab_id": "v-文化",
+      "hanzi": "文化",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-容易",
+      "vocab_id": "v-容易",
+      "hanzi": "容易",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "El sentido registrado requiere cantidad, relación o símbolo contextual; una fotografía aislada no distingue la función.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-难",
+      "vocab_id": "v-难",
+      "hanzi": "难",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "El sentido registrado requiere cantidad, relación o símbolo contextual; una fotografía aislada no distingue la función.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-事",
+      "vocab_id": "v-事",
+      "hanzi": "事",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-做作业",
+      "vocab_id": "v-做作业",
+      "hanzi": "做作业",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Representación de la acción registrada; no implica que se haya generado o aprobado un recurso.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-很多",
+      "vocab_id": "v-很多",
+      "hanzi": "很多",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "El sentido registrado requiere cantidad, relación o símbolo contextual; una fotografía aislada no distingue la función.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-口语考试",
+      "vocab_id": "v-口语考试",
+      "hanzi": "口语考试",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-有点儿",
+      "vocab_id": "v-有点儿",
+      "hanzi": "有点儿",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-部",
+      "vocab_id": "v-部",
+      "hanzi": "部",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-跟",
+      "vocab_id": "v-跟",
+      "hanzi": "跟",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Representación de la acción registrada; no implica que se haya generado o aprobado un recurso.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-走",
+      "vocab_id": "v-走",
+      "hanzi": "走",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Representación de la acción registrada; no implica que se haya generado o aprobado un recurso.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-怕",
+      "vocab_id": "v-怕",
+      "hanzi": "怕",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-蛇",
+      "vocab_id": "v-蛇",
+      "hanzi": "蛇",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Objeto o referente representable; validar el contexto del término antes de usarlo como pregunta visual.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-回家",
+      "vocab_id": "v-回家",
+      "hanzi": "回家",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Representación de la acción registrada; no implica que se haya generado o aprobado un recurso.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-回国",
+      "vocab_id": "v-回国",
+      "hanzi": "回国",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Representación de la acción registrada; no implica que se haya generado o aprobado un recurso.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-回学校",
+      "vocab_id": "v-回学校",
+      "hanzi": "回学校",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Representación de la acción registrada; no implica que se haya generado o aprobado un recurso.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-参加",
+      "vocab_id": "v-参加",
+      "hanzi": "参加",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Representación de la acción registrada; no implica que se haya generado o aprobado un recurso.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-八卦",
+      "vocab_id": "v-八卦",
+      "hanzi": "八卦",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-门",
+      "vocab_id": "v-门",
+      "hanzi": "门",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "El sentido registrado requiere cantidad, relación o símbolo contextual; una fotografía aislada no distingue la función.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-手机",
+      "vocab_id": "v-手机",
+      "hanzi": "手机",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Objeto o referente representable; validar el contexto del término antes de usarlo como pregunta visual.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-钱",
+      "vocab_id": "v-钱",
+      "hanzi": "钱",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "literal_photo",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Objeto o referente representable; validar el contexto del término antes de usarlo como pregunta visual.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-汉西英",
+      "vocab_id": "v-汉西英",
+      "hanzi": "汉西英",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-翻译",
+      "vocab_id": "v-翻译",
+      "hanzi": "翻译",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-里卡多帕尔玛大学",
+      "vocab_id": "v-里卡多帕尔玛大学",
+      "hanzi": "里卡多帕尔玛大学",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre institucional: conservar texto; no generar una imagen genérica ni usar logotipos como supuesto significado.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-里卡多帕尔玛大学孔子学院",
+      "vocab_id": "v-里卡多帕尔玛大学孔子学院",
+      "hanzi": "里卡多帕尔玛大学孔子学院",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre institucional: conservar texto; no generar una imagen genérica ni usar logotipos como supuesto significado.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-语文",
+      "vocab_id": "v-语文",
+      "hanzi": "语文",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-数学",
+      "vocab_id": "v-数学",
+      "hanzi": "数学",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-物理",
+      "vocab_id": "v-物理",
+      "hanzi": "物理",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-化学",
+      "vocab_id": "v-化学",
+      "hanzi": "化学",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-地理",
+      "vocab_id": "v-地理",
+      "hanzi": "地理",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-思想政治",
+      "vocab_id": "v-思想政治",
+      "hanzi": "思想政治",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-生物",
+      "vocab_id": "v-生物",
+      "hanzi": "生物",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-觉得",
+      "vocab_id": "v-觉得",
+      "hanzi": "觉得",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-功夫熊猫",
+      "vocab_id": "v-功夫熊猫",
+      "hanzi": "功夫熊猫",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre institucional: conservar texto; no generar una imagen genérica ni usar logotipos como supuesto significado.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-每天",
+      "vocab_id": "v-每天",
+      "hanzi": "每天",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "visual_grammar",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "El sentido registrado requiere cantidad, relación o símbolo contextual; una fotografía aislada no distingue la función.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-写作",
+      "vocab_id": "v-写作",
+      "hanzi": "写作",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-周末",
+      "vocab_id": "v-周末",
+      "hanzi": "周末",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-中学",
+      "vocab_id": "v-中学",
+      "hanzi": "中学",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-教",
+      "vocab_id": "v-教",
+      "hanzi": "教",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "action_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "medium",
+      "notes": "Representación de la acción registrada; no implica que se haya generado o aprobado un recurso.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-陈明",
+      "vocab_id": "v-陈明",
+      "hanzi": "陈明",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "none",
+      "image_support": false,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Nombre institucional: conservar texto; no generar una imagen genérica ni usar logotipos como supuesto significado.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-星期",
+      "vocab_id": "v-星期",
+      "hanzi": "星期",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    },
+    {
+      "id": "VM-v-综合汉语",
+      "vocab_id": "v-综合汉语",
+      "hanzi": "综合汉语",
+      "lessons": [
+        4
+      ],
+      "visual_mode": "concept_scene",
+      "image_support": true,
+      "image_quiz_eligible": false,
+      "ambiguity_risk": "high",
+      "notes": "Concepto dependiente de contexto; imagen solo como apoyo y no como clave inequívoca.",
+      "batch_id": "visual-ming-l4-20260929-01",
+      "review_status": "model_classified_not_human_reviewed"
+    }
+  ]
+}

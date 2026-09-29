@@ -6,7 +6,7 @@ import subprocess
 import sys
 import unittest
 from pathlib import Path
-import query
+import query_v21 as query
 import radicals
 
 ROOT = Path(__file__).resolve().parent
@@ -108,7 +108,7 @@ class RadicalTests(unittest.TestCase):
 
     def test_command_line_queries(self):
         def cli(*args):
-            return json.loads(subprocess.check_output([sys.executable,str(ROOT/'query.py'),*args],text=True))
+            return json.loads(subprocess.check_output([sys.executable,str(ROOT/'query_v21.py'),*args],text=True))
         self.assertTrue(cli('--radical','讠','--limit','1')['found'])
         self.assertFalse(cli('--radical','月')['found'])
         self.assertIn(radicals.rid('讠'), cli('--hanzi','语')['hanzi']['documented_radical_ids'])

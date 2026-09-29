@@ -1,0 +1,17 @@
+{
+  "version": "2.2.0",
+  "base_version": "2.1.0",
+  "baseline_source_manifest": "source/manifest.json",
+  "lesson4_source_manifest": "lesson4/manifest.json",
+  "lesson4_document_pack": "lesson4/documents/manifest.json",
+  "source_authority": "../SOURCE_AUTHORITY.json",
+  "compiler": "compile_v22.py",
+  "query": "query.py",
+  "baseline_query": "query_v21.py",
+  "validation": "python3 MING_KNOWLEDGE/v2/query.py --validate",
+  "learner_export": "scripts/export-corpus-v22.py",
+  "source_count": 27,
+  "physical_pages": 661,
+  "source_pdf_bytes_included": false,
+  "baseline_ids_preserved": true
+}

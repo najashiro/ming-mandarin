@@ -1,3 +1,18 @@
+# Corpus Míng activo · v2.2.0 · L1–L4
+
+**Lección 4 integrada y cierre documental completado.** Empieza con `source-v22.json`, `RELEASE_2_2_0.md` y `lesson4/README.md`. La consulta global es `query.py`; `compile_v22.py` compila aditivamente la base anterior y L4. `query_v21.py` y los lotes editoriales históricos mantienen su alcance L1–L3. La proyección nueva se genera mediante `python3 scripts/export-corpus-v22.py`; la aplicación no cambia de import por esta actualización documental.
+
+```sh
+python3 MING_KNOWLEDGE/v2/query.py --word 只 --lesson 4 --limit 8
+python3 MING_KNOWLEDGE/v2/query.py --source SRC-BOOK-04 --page 19 --limit 20
+python3 MING_KNOWLEDGE/v2/query.py --validate
+python3 MING_KNOWLEDGE/v2/lesson4/audit.py --release-check
+```
+
+Las secciones siguientes documentan la base histórica y sus reglas; sus conteos y fechas no sustituyen el índice activo v2.2.
+
+---
+
 # MÍNG · Corpus enlazado L1–L3 · v2.0.0
 
 Base de consulta de fuentes, **no cambio del contenido desplegado de la app**.

@@ -2,7 +2,7 @@
 import copy
 import unittest
 from lexical_examples import build_example_links, deferred_construction
-from query import ensure_cache, read_table
+from query_v21 import ensure_cache, read_table
 
 
 class ConstructionBoundaryTests(unittest.TestCase):

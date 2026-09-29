@@ -92,10 +92,11 @@ class Lesson4AuditTests(unittest.TestCase):
         self.assertIn('练习', row['hanzi'])
         self.assertIn('liàn kǒuyǔ', row['pinyin_source'])
         self.assertTrue(any(i['id'] == 'L4-AUD-011' for i in audit.load_json('discrepancies.json', self.root)))
-    def test_release_gate_fails_closed(self):
+    def test_release_gate_requires_and_passes_integrated_closure(self):
         p = subprocess.run([sys.executable, str(ROOT/'audit.py'), '--release-check'], capture_output=True, text=True)
-        self.assertEqual(p.returncode, 3, p.stderr)
-        self.assertFalse(json.loads(p.stdout)['ready_for_chapter4'])
+        self.assertEqual(p.returncode, 0, p.stderr)
+        self.assertTrue(json.loads(p.stdout)['ready_for_chapter4'])
+        self.assertTrue(json.loads(p.stdout)['global_validation']['passed'])
     def test_exact_word_query_does_not_match_other_words(self):
         p = subprocess.run([sys.executable, str(ROOT/'audit.py'), '--word', '时间'], capture_output=True, text=True, check=True)
         result = json.loads(p.stdout)

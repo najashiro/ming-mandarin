@@ -1,0 +1,59 @@
+name: Corpus v2.2 documentary closure
+
+on:
+  push:
+    branches: ['corpus/v2.2.0-close-lesson4-20260929']
+  pull_request:
+    paths:
+      - 'MING_KNOWLEDGE/**'
+      - 'scripts/export-corpus-v2*.py'
+      - '.github/workflows/corpus-v22-close.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: corpus-v22-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  source-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Global documentary validation and release gate
+        env:
+          VALIDATED_PR_HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          mkdir -p closure-artifact
+          git rev-parse HEAD > closure-artifact/SOURCE_COMMIT.txt
+          printf '%s\n' "$VALIDATED_PR_HEAD" > closure-artifact/PR_HEAD_COMMIT.txt
+          python3 MING_KNOWLEDGE/v2/query.py --validate > closure-artifact/global-validation.json
+          python3 MING_KNOWLEDGE/v2/lesson4/audit.py --release-check > closure-artifact/release-check.json
+      - name: Global and lesson source regression tests
+        run: |
+          set -o pipefail
+          python3 -m unittest discover -s MING_KNOWLEDGE/v2 -p 'test_*.py' -v 2>&1 | tee closure-artifact/global-tests.txt
+          python3 -m unittest discover -s MING_KNOWLEDGE/v2/lesson4 -p 'test_*.py' -v 2>&1 | tee closure-artifact/lesson4-tests.txt
+      - name: Preserve approved editorial batches and verify regenerated reports
+        run: |
+          python3 MING_KNOWLEDGE/v2/audit_source_tables.py --check > closure-artifact/source-tables-v21.json
+          python3 MING_KNOWLEDGE/v2/translations_ming.py --check --write-reports > closure-artifact/translations-v21.json
+          python3 MING_KNOWLEDGE/v2/pinyin_ming.py --check --write-reports > closure-artifact/pinyin-v21.json
+          python3 MING_KNOWLEDGE/v2/visual_ming.py --check --check-reports > closure-artifact/visual-v21.json
+          git diff --exit-code -- MING_KNOWLEDGE/v2/audits/translations-ming-20260925.json MING_KNOWLEDGE/v2/audits/translations-ming-20260925.md MING_KNOWLEDGE/v2/audits/pinyin-ming-20260925.json MING_KNOWLEDGE/v2/audits/pinyin-ming-20260925.md MING_KNOWLEDGE/v2/audits/visual-ming-20260925.json MING_KNOWLEDGE/v2/audits/visual-ming-20260925.md
+      - name: Check both reproducible learner projections
+        run: |
+          python3 scripts/export-corpus-v21.py --check
+          python3 scripts/export-corpus-v22.py --check
+          python3 scripts/export-corpus-v22.py --out closure-artifact/corpus-v22-public.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: corpus-v22-evidence-${{ github.sha }}
+          path: closure-artifact/
+          retention-days: 7
+          if-no-files-found: error
