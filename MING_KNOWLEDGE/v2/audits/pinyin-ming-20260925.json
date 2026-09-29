@@ -3,7 +3,7 @@
   "batch_id": "ming-pinyin-20260925-01",
   "prepared_date": "2026-09-25",
   "base_commit": "e82c09e1f1790edbde6c0ef7b949ab2371175807",
-  "fingerprint": "73685a0dabcf214415deab4dd31618792b794c0241cc480f81b3938faadca1aa",
+  "fingerprint": "378eca03956a85764bc701fe48a8885343d1dcecc1cd6e03c9d4853168bfb8e4",
   "counts": {
     "vocabulary": {
       "total_records": 346,
@@ -61,7 +61,7 @@
     "words_with_pinyin_and_spanish": 337,
     "phrases_with_pinyin_and_spanish": 635,
     "provenance_not_exposed": true,
-    "fingerprint": "9605e460cdd9288df1a183575831280d3aaf919e3d60d64b7f32c4057b9f5c62"
+    "fingerprint": "8de40bd08c613595e25689027175e098512dc8b52cfa41d70c4553351655d82c"
   },
   "lexical_examples": {
     "schema_version": "1.0.0",

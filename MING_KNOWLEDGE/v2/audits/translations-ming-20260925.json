@@ -3,7 +3,7 @@
   "batch_id": "ming-es-20260925-01",
   "prepared_date": "2026-09-25",
   "base_commit": "d6352ddfb6498286a0991f198279ac093883e466",
-  "fingerprint": "e2ee12d5fc3f5f85c3b1efeedaa42dba87fc87445c779c8c5dbe1f5fb3bf675f",
+  "fingerprint": "fdb401e8f26144b18e03c55f9e528622a49f03e6134d1c419498cbc199035e16",
   "counts": {
     "vocabulary": {
       "total_records": 346,
@@ -36,13 +36,13 @@
   "paid_api_calls": 0,
   "independent_human_review": false,
   "public": {
-    "vocabulary_records": 267,
+    "vocabulary_records": 337,
     "phrases": 635,
-    "vocabulary_with_spanish": 267,
+    "vocabulary_with_spanish": 337,
     "phrases_with_spanish": 635,
     "dialogue_turns": 54,
     "dialogue_turns_with_spanish": 54,
     "provenance_not_exposed": true,
-    "public_fingerprint": "4dceb1f0c60e7a2d1b1c8a2413171c193e2aad398d437744544dc778392630b1"
+    "public_fingerprint": "8de40bd08c613595e25689027175e098512dc8b52cfa41d70c4553351655d82c"
   }
 }

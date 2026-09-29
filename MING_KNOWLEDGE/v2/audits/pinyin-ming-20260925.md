@@ -16,7 +16,7 @@ Lote editorial autorizado; no es una transcripción atribuida al material ni rev
   "words_with_pinyin_and_spanish": 337,
   "phrases_with_pinyin_and_spanish": 635,
   "provenance_not_exposed": true,
-  "fingerprint": "9605e460cdd9288df1a183575831280d3aaf919e3d60d64b7f32c4057b9f5c62"
+  "fingerprint": "8de40bd08c613595e25689027175e098512dc8b52cfa41d70c4553351655d82c"
 }
 ```
 
