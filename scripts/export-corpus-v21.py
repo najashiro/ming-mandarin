@@ -15,7 +15,7 @@ import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-QUERY = ROOT / 'MING_KNOWLEDGE/v2/query.py'
+QUERY = ROOT / 'MING_KNOWLEDGE/v2/query_v21.py'
 OUT = ROOT / 'data/corpus-v21-public.json'
 sys.path.insert(0, str(QUERY.parent))
 from source_audit import augment_public

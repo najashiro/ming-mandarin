@@ -1,28 +1,55 @@
-name: Prepare reviewed corpus transfer
+name: Corpus v2.2 documentary closure
+
 on:
   push:
     branches: ['corpus/v2.2.0-close-lesson4-20260929']
+  pull_request:
+    paths:
+      - 'MING_KNOWLEDGE/**'
+      - 'scripts/export-corpus-v2*.py'
+      - '.github/workflows/corpus-v22-close.yml'
+
 permissions:
   contents: read
+
+concurrency:
+  group: corpus-v22-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  prepare-reviewed-tree:
-    if: github.repository == 'najashiro/ming-mandarin'
+  source-checks:
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2
           persist-credentials: false
-      - name: Verify transfer, run closure tests, prepare unreferenced Git tree
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        run: python3 MING_KNOWLEDGE/.delivery/prepare.py
+      - name: Global documentary validation and release gate
+        run: |
+          mkdir -p closure-artifact
+          git rev-parse HEAD > closure-artifact/SOURCE_COMMIT.txt
+          python3 MING_KNOWLEDGE/v2/query.py --validate > closure-artifact/global-validation.json
+          python3 MING_KNOWLEDGE/v2/lesson4/audit.py --release-check > closure-artifact/release-check.json
+      - name: Global and lesson source regression tests
+        run: |
+          set -o pipefail
+          python3 -m unittest discover -s MING_KNOWLEDGE/v2 -p 'test_*.py' -v 2>&1 | tee closure-artifact/global-tests.txt
+          python3 -m unittest discover -s MING_KNOWLEDGE/v2/lesson4 -p 'test_*.py' -v 2>&1 | tee closure-artifact/lesson4-tests.txt
+      - name: Preserve previously approved editorial batches
+        run: |
+          python3 MING_KNOWLEDGE/v2/audit_source_tables.py --check > closure-artifact/source-tables-v21.json
+          python3 MING_KNOWLEDGE/v2/translations_ming.py --check
+          python3 MING_KNOWLEDGE/v2/pinyin_ming.py --check
+          python3 MING_KNOWLEDGE/v2/visual_ming.py --check
+      - name: Check both reproducible learner projections
+        run: |
+          python3 scripts/export-corpus-v21.py --check
+          python3 scripts/export-corpus-v22.py --check
+          python3 scripts/export-corpus-v22.py --out closure-artifact/corpus-v22-public.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: corpus-reviewed-transfer-${{ github.sha }}
+          name: corpus-v22-evidence-${{ github.sha }}
           path: closure-artifact/
           retention-days: 7
+          if-no-files-found: error

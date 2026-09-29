@@ -40,8 +40,8 @@ def validate(root: Path = ROOT, pdf_dir: Path | None = None) -> dict:
               f'Invalid source/page: {context}')
     check(m['target_corpus_version'] == '2.2.0', 'Incorrect target version')
     check(m['base_corpus_version'] == '2.1.0', 'Incorrect base version')
-    check(m['release_status'] == 'draft' and not m['ready_for_chapter4'],
-          'This audit cannot certify release readiness')
+    check(m['release_status'] in {'draft', 'documentary_complete'},
+          'Unknown documentary release status')
     check(len(sources) == len(m['sources']) == 6, 'Source IDs/count mismatch')
     check(sum(s['pages'] for s in sources.values()) == m['pdf_pages'] == 121,
           'Physical page count mismatch')
@@ -121,7 +121,7 @@ def validate(root: Path = ROOT, pdf_dir: Path | None = None) -> dict:
             pdf_results.append({'source_id': source['id'], 'sha256_and_bytes_match': ok})
     errors.extend(validate_source_policy(root, m, v, d))
     data_hashes = {name: hashlib.sha256((root/name).read_bytes()).hexdigest() for name in m['data_files']}
-    return dict(passed=not errors, scope='L4 draft supplement integrity only', target_version=m['target_corpus_version'],
+    return dict(passed=not errors, scope='L4 audited TSV witness integrity only', target_version=m['target_corpus_version'],
                 ready_for_chapter4=False, global_v2_validated=False, website_validated=False,
                 counts=computed, errors=errors, data_sha256=data_hashes, pdf_checks=pdf_results,
                 known_documentary_discrepancies=len(issues), pending_scopes=m['pending_scopes'])
@@ -183,7 +183,7 @@ def validate_source_policy(root: Path, manifest: dict, vocabulary: list[dict], d
     for row in selection['contextual_reading_examples']:
         check(row['source_id'] == 'SRC-BOOK-04' and any(v['hanzi'] == row['hanzi'] and v['pinyin_source'] == row['pinyin_source'] and int(v['pdf_page']) == row['pdf_page'] and int(v['printed_page']) == row['printed_page'] for v in vocabulary), 'Unattested contextual reading selection')
     check(selection['time_rule_source'] == {'source_id': 'SRC-BOOK-04', 'pdf_page': 9, 'printed_page': 121}, 'Time rule locator not migrated')
-    check(not selection['global_export_integrated'] and not selection['ready_for_chapter4'], 'Unverified global release claim')
+    check(selection['global_export_integrated'] == manifest.get('global_query_integrated', False) and selection['ready_for_chapter4'] == manifest['ready_for_chapter4'], 'Inconsistent release labels; CLI separately validates the integrated corpus')
     return errors
 
 def main() -> int:
@@ -207,8 +207,18 @@ def main() -> int:
         ap.error('--limit must be 1..100; --offset must be nonnegative')
     if args.release_check or args.validate:
         result = validate(pdf_dir=args.pdf_dir)
+        # The legacy row audit is not a release certificate. Only the global
+        # compiler verifies the new source shards, their graphs and regressions.
+        sys.path.insert(0, str(ROOT.parent))
+        import query
+        query.ensure_cache(True)
+        global_result = query.read_table('validation')
+        result['global_validation'] = global_result
+        result['global_v2_validated'] = global_result['passed']
+        result['ready_for_chapter4'] = result['passed'] and global_result['ready_for_chapter4']
+        result['scope'] = 'L4 documentary rows plus integrated v2.2 source corpus'
         print(json.dumps(result, ensure_ascii=False, indent=2))
-        return 2 if not result['passed'] else 3 if args.release_check else 0
+        return 2 if not result['passed'] or not global_result['passed'] else 3 if args.release_check and not result['ready_for_chapter4'] else 0
     if args.word:
         rows = [dict(r, source_id='SRC-BOOK-04') for r in load_tsv('textbook-vocabulary.tsv') if r['hanzi'] == args.word]
     elif args.hanzi:
@@ -229,7 +239,7 @@ def main() -> int:
         return 0
     if args.source:
         rows = [r for r in rows if r.get('source_id') == args.source]
-    print(json.dumps({'scope':'L4 draft supplement, not global v2', 'total':len(rows),
+    print(json.dumps({'scope':'L4 source witness query; use ../query.py for the integrated corpus', 'total':len(rows),
                       'rows':rows[args.offset:args.offset+args.limit],
                       'next_offset':args.offset+args.limit if args.offset+args.limit < len(rows) else None},
                      ensure_ascii=False, indent=2))

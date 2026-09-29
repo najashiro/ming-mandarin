@@ -215,7 +215,7 @@ def main() -> None:
     parser.add_argument('--write-reports', action='store_true')
     parser.add_argument('--check-reports', action='store_true')
     args = parser.parse_args()
-    from query import CACHE, ensure_cache, read_table
+    from query_v21 import CACHE, ensure_cache, read_table
     ensure_cache()
     result = read_table('visual_ming_summary')
     if args.check or args.write_reports or args.check_reports:

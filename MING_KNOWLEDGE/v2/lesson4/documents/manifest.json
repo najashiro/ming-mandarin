@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "version": "2.2.0",
+  "encoding": "base64+xz+utf8-json",
+  "parts": [
+    {
+      "path": "documents/pages-01.xz.b64",
+      "sha256": "445ed4a0282325b9cb0bdc3477c74e5bfc9b64191016a75db09ec9861926f38e"
+    },
+    {
+      "path": "documents/pages-02.xz.b64",
+      "sha256": "475296a6cbd0ad91ae3f2e2d135049e4c2039296528b79e81540346bd9952ddb"
+    },
+    {
+      "path": "documents/pages-03.xz.b64",
+      "sha256": "278c09b1955a939e32951337dae7a5b58a1872fb03783582d9bf193f90c6c773"
+    },
+    {
+      "path": "documents/pages-04.xz.b64",
+      "sha256": "a5bae0070d45428aa26569572da990ed26fdb8eef490d76c5fd83b0dd74f8276"
+    },
+    {
+      "path": "documents/pages-05.xz.b64",
+      "sha256": "853f423efefb7a7f5c9f7310f93e20269950b16e58e56cf753ed6e4f49d34dd5"
+    },
+    {
+      "path": "documents/pages-06.xz.b64",
+      "sha256": "ef4ec2db1480b4fdf05a3db7dad51d8b017a22213a030136688ac5cf498dd665"
+    },
+    {
+      "path": "documents/pages-07.xz.b64",
+      "sha256": "8ffacbc79e690c0042f0d0c9278cdb0afe0b256448dc207a1ebf4cddfae2dcb6"
+    },
+    {
+      "path": "documents/pages-08.xz.b64",
+      "sha256": "494666e934b94df01d033e4d2b1dde192334ae2b21a239e6c4826c0f05fcccd3"
+    },
+    {
+      "path": "documents/pages-09.xz.b64",
+      "sha256": "ccdae77124a57a4e2df578d8710bd4f910d758b54b1b44df56bcb458aee768e8"
+    },
+    {
+      "path": "documents/pages-10.xz.b64",
+      "sha256": "b14f47cc2f7ded0b9a2f1861bc3b753ff1ffaafa22301d9e5b40b13ce933507b"
+    },
+    {
+      "path": "documents/pages-11.xz.b64",
+      "sha256": "83ca2688d1ab2044592fd183902c7ca55c091b100c3ecfe0a9ff78afe6af4cbe"
+    },
+    {
+      "path": "documents/pages-12.xz.b64",
+      "sha256": "0bdc78c84c596ecd8c317bb4eb7257f9136b28d96be6ba8ce65e24ff30183768"
+    },
+    {
+      "path": "documents/pages-13.xz.b64",
+      "sha256": "2d16cc95e81177e606afd54ebb7b66a12707cc6ac6175b3a1f13e6ab7c3d49bc"
+    }
+  ],
+  "decoded_sha256": "da1ecb263dfe055171f67782490543aa3bbb51b36fea2e07c3b3cd8c63bd46d1",
+  "decoded_bytes": 288293,
+  "sources": [
+    {
+      "source_id": "SRC-BOOK-04",
+      "source_sha256": "9ecfa83f1ecd628360b62fcce1183500aaa33fb4c39141fb4618fbfb47850c33",
+      "pages": 25
+    },
+    {
+      "source_id": "SRC-HANZI-04-1",
+      "source_sha256": "fed1d76acf9aad0c9246be05f74e4bcdaa307b0d563c09fa5eac6f9d0a89823f",
+      "pages": 4
+    },
+    {
+      "source_id": "SRC-HANZI-04-2",
+      "source_sha256": "ac6987445e1ae058b63f016418feb4c1eb779bc7fdf25f028cd58d0cbfa06fed",
+      "pages": 4
+    },
+    {
+      "source_id": "SRC-PPT-04-1",
+      "source_sha256": "bba2354442d2cd815be52766f2969d88596b646615407fab6a243038763f13b5",
+      "pages": 43
+    },
+    {
+      "source_id": "SRC-PPT-04-2",
+      "source_sha256": "4435a51362c50a22047ea04386c4b4df6cfdab0af61f0c026a5f24624333bf15",
+      "pages": 34
+    },
+    {
+      "source_id": "SRC-WB-04",
+      "source_sha256": "4077444d8c97abf010b10c5abd404393eb3d1dc73e810b5f036745679cd83a1b",
+      "pages": 11
+    }
+  ],
+  "physical_pages": 121,
+  "source_count": 6,
+  "source_blocks": 295,
+  "extraction_scope": "Curricular source text, exercises, fields, tables, visual transcriptions and source-bound annotations; no PDF/scanned-image bytes.",
+  "command": "python3 MING_KNOWLEDGE/v2/query.py --source SRC-BOOK-04 --page 19 --limit 30"
+}

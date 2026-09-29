@@ -1,3 +1,11 @@
+## Actualización activa 2.2.0 — lección 4
+
+La base documental activa es **2.2.0**, no 2.1.0. Consulta `v2/source-v22.json`, `v2/RELEASE_2_2_0.md` y `v2/lesson4/README.md`. La entrada global `v2/query.py` incluye L4; `v2/query_v21.py` conserva los lotes anteriores. Los libros básico y de ejercicios son fuentes primarias según `SOURCE_AUTHORITY.json`. Los diálogos canónicos proceden íntegramente del libro y las lecturas de hojas no determinan pronunciación contextual.
+
+No releas todas las fuentes. Usa las tablas tipadas e inventario de 121 páginas. Los campos ausentes y el audio original no suministrado no se inventan. Para validar la ampliación ejecuta query.py --validate, todas las pruebas globales y de lesson4, el release-check y `scripts/export-corpus-v22.py --check`. Los validadores editoriales v2.1 y export-corpus-v21.py comprueban únicamente el alcance histórico y deben seguir pasando sin alterar la proyección anterior. No cambiar la UI, audio, Supabase, progreso o producción por actualizar el corpus.
+
+Los apartados históricos siguientes se conservan como referencia; la versión y rutas activas anteriores prevalecen.
+
 # MING_KNOWLEDGE
 
 ## Estándar visual de Vocabulario

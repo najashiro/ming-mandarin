@@ -1,1 +1,60 @@
-{"schema_version":"1.0.0","policy_id":"ming-books-first-20260929","lesson":4,"canonical_dialogue_ids":["DLG-L4-BOOK-T1","DLG-L4-BOOK-T2"],"secondary_dialogue_ids":["DLG-L4-PPT1-T1","DLG-L4-PPT2-T2"],"canonical_dialogue_turns":27,"secondary_dialogue_turns":27,"vocabulary_source_id":"SRC-BOOK-04","contextual_reading_examples":[{"hanzi":"差","pinyin_source":"chà","source_id":"SRC-BOOK-04","pdf_page":7,"printed_page":119,"context":"hora; faltar"},{"hanzi":"只","pinyin_source":"zhǐ","source_id":"SRC-BOOK-04","pdf_page":7,"printed_page":119,"context":"adverbio: solo"},{"hanzi":"时间","pinyin_source":"shíjiān","source_id":"SRC-BOOK-04","pdf_page":4,"printed_page":116,"context":"tiempo"},{"hanzi":"意思","pinyin_source":"yìsi","source_id":"SRC-BOOK-04","pdf_page":7,"printed_page":119,"context":"significado"}],"time_rule_source":{"source_id":"SRC-BOOK-04","pdf_page":9,"printed_page":121},"source_witness_rows_deleted":0,"source_hanzi_pinyin_rewritten":false,"global_export_integrated":false,"ready_for_chapter4":false}
+{
+  "schema_version": "1.0.0",
+  "policy_id": "ming-books-first-20260929",
+  "lesson": 4,
+  "canonical_dialogue_ids": [
+    "DLG-L4-BOOK-T1",
+    "DLG-L4-BOOK-T2"
+  ],
+  "secondary_dialogue_ids": [
+    "DLG-L4-PPT1-T1",
+    "DLG-L4-PPT2-T2"
+  ],
+  "canonical_dialogue_turns": 27,
+  "secondary_dialogue_turns": 27,
+  "vocabulary_source_id": "SRC-BOOK-04",
+  "contextual_reading_examples": [
+    {
+      "hanzi": "差",
+      "pinyin_source": "chà",
+      "source_id": "SRC-BOOK-04",
+      "pdf_page": 7,
+      "printed_page": 119,
+      "context": "hora; faltar"
+    },
+    {
+      "hanzi": "只",
+      "pinyin_source": "zhǐ",
+      "source_id": "SRC-BOOK-04",
+      "pdf_page": 7,
+      "printed_page": 119,
+      "context": "adverbio: solo"
+    },
+    {
+      "hanzi": "时间",
+      "pinyin_source": "shíjiān",
+      "source_id": "SRC-BOOK-04",
+      "pdf_page": 4,
+      "printed_page": 116,
+      "context": "tiempo"
+    },
+    {
+      "hanzi": "意思",
+      "pinyin_source": "yìsi",
+      "source_id": "SRC-BOOK-04",
+      "pdf_page": 7,
+      "printed_page": 119,
+      "context": "significado"
+    }
+  ],
+  "time_rule_source": {
+    "source_id": "SRC-BOOK-04",
+    "pdf_page": 9,
+    "printed_page": 121
+  },
+  "source_witness_rows_deleted": 0,
+  "source_hanzi_pinyin_rewritten": false,
+  "global_export_integrated": true,
+  "ready_for_chapter4": true,
+  "app_runtime_switched": false
+}

@@ -5,7 +5,7 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
-from query import CACHE, ensure_cache, read_table
+from query_v21 import CACHE, ensure_cache, read_table
 from translations_ming import (
     ROOT, apply_translations, check_public, dependency_paths,
     load_batch, read_translations, source_spanish, spanish_for_display,

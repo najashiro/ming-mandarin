@@ -3,10 +3,10 @@ from __future__ import annotations
 import argparse, contextlib, hashlib, io, json, os, runpy, shutil, sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent
-CACHE = ROOT / '.cache-v22'
+CACHE = ROOT / '.cache-v21'
 DEFAULT_FIELDS = {
     'matrix': ['id','hanzi','pinyin','pinyin_ming','pinyin_display','spanish','traduccion_ming','spanish_display','lessons','roles','phrase_count','primary_phrase','ming_vocabulary','ming_hanzi','ming_game_bank','textbook_table_rows','visual_ming'],
-    'vocabulary': ['id','hanzi','pinyin','pinyin_ming','pinyin_display','spanish','traduccion_ming','spanish_display','lessons','roles','phrase_count','primary_phrase_id','radical_ids','textbook_table_rows','curriculum_links','example_phrase_ids','visual_ming','lesson4_selection'],
+    'vocabulary': ['id','hanzi','pinyin','pinyin_ming','pinyin_display','spanish','traduccion_ming','spanish_display','lessons','roles','phrase_count','primary_phrase_id','radical_ids','textbook_table_rows','curriculum_links','example_phrase_ids','visual_ming'],
     'phrases': ['id','hanzi','pinyin','pinyin_status','pinyin_ming','pinyin_display','traduccion_ming','spanish_display','lessons','kinds','vocab_ids','example_vocab_ids','grammar_ids','dialogue_ids'],
     'hanzi': ['id','hanzi','source_writing_target','worksheet_refs','worksheet_occurrences','readings','runtime_units','documented_radical_ids','proposed_radical_ids'],
     'radical_matrix': ['id','radical','name','meaning','metadata_status','lessons','theory','practice','worksheet','exam','exam_characters','vocab_count','phrase_count'],
@@ -23,8 +23,54 @@ DEFAULT_FIELDS = {
 
 
 def ensure_cache(force: bool = False) -> None:
-    from compile_v22 import build
-    build(force)
+    from translations_ming import dependency_paths
+    from pinyin_ming import dependency_paths as pinyin_dependencies
+    from visual_ming import dependency_paths as visual_dependencies
+    manifest = ROOT / 'source/manifest.json'
+    metadata = json.loads(manifest.read_text(encoding='utf-8'))
+    dependencies = [manifest, ROOT/'compile.py', ROOT/'pack.py', ROOT/'radicals.py', ROOT/'radicals-source.json',
+                    ROOT/'query_v21.py', ROOT/'source_audit.py', ROOT/'source-tables.json',
+                    ROOT/'lexical_examples.py', ROOT/'lexical-compositions.json'] + dependency_paths() + pinyin_dependencies() + visual_dependencies()
+    for part in metadata['parts']:
+        path = (ROOT / part['path']).resolve()
+        if not path.is_relative_to(ROOT / 'source'):
+            raise ValueError('Source pack path escapes source directory')
+        dependencies.append(path)
+    digest = hashlib.sha256()
+    for path in dependencies:
+        digest.update(str(path.relative_to(ROOT)).encode('utf-8') + b'\0' + path.read_bytes() + b'\0')
+    fingerprint = digest.hexdigest()
+    marker = CACHE / 'fingerprint.txt'
+    if not force and marker.exists() and marker.read_text() == fingerprint:
+        return
+    CACHE.mkdir(exist_ok=True)
+    marker.unlink(missing_ok=True)
+    previous = os.environ.get('MING_CORPUS_OUT')
+    os.environ['MING_CORPUS_OUT'] = str(CACHE)
+    try:
+        with contextlib.redirect_stdout(io.StringIO()):
+            runpy.run_path(str(ROOT / 'compile.py'), run_name='__corpus_build__')
+    finally:
+        if previous is None:
+            os.environ.pop('MING_CORPUS_OUT', None)
+        else:
+            os.environ['MING_CORPUS_OUT'] = previous
+    from radicals import enrich_cache
+    enrich_cache(CACHE)
+    from source_audit import enrich_cache as enrich_source_audit
+    enrich_source_audit(CACHE)
+    from translations_ming import enrich_cache as enrich_translations
+    enrich_translations(CACHE)
+    from pinyin_ming import enrich_cache as enrich_pinyin
+    enrich_pinyin(CACHE)
+    from lexical_examples import enrich_cache as enrich_examples
+    enrich_examples(CACHE)
+    from visual_ming import enrich_cache as enrich_visual
+    enrich_visual(CACHE)
+    validation = read_table('validation')
+    if not validation.get('passed'):
+        raise ValueError('Corpus validation failed; see generated validation.json')
+    marker.write_text(fingerprint)
 
 
 def read_table(name: str):
@@ -50,7 +96,7 @@ def main() -> None:
     ap.add_argument('--source', help='Source ID; combine with --page')
     ap.add_argument('--page', type=int)
     ap.add_argument('--table', default='matrix')
-    ap.add_argument('--lesson', type=int, choices=[0,1,2,3,4])
+    ap.add_argument('--lesson', type=int, choices=[0,1,2,3])
     ap.add_argument('--limit', type=int, default=12)
     ap.add_argument('--offset', type=int, default=0)
     ap.add_argument('--fields', help='Comma-separated projection of table fields')
@@ -94,23 +140,16 @@ def main() -> None:
         result = {'found': char is not None, 'hanzi': selected(char, None if args.full else DEFAULT_FIELDS['hanzi']) if char else None,
                   'radical_links': [r for r in read_table('radical_hanzi_links') if r['hanzi_id'] == key]}
     elif args.word:
-        aliases = json.loads((ROOT / 'lesson4/lexical-links.json').read_text(encoding='utf-8'))['approved_surface_aliases']
-        vid = args.word if args.word.startswith('v-') else aliases.get(args.word, 'v-' + args.word)
+        vid = args.word if args.word.startswith('v-') else 'v-' + args.word
         word = next((row for row in read_table('vocabulary') if row['id'] == vid), None)
         if word is None:
             result = {'found': False, 'word': args.word, 'note': 'No exact record; do not invent source data.'}
         else:
-            if args.lesson == 4 and word.get('lesson4_selection'):
-                word = dict(word)
-                selection = word['lesson4_selection']
-                word.update(pinyin=selection['pinyin'], spanish=selection['spanish'],
-                            pinyin_display=selection['pinyin'], spanish_display=selection['spanish'])
             ids = word.get('example_phrase_ids', []) if args.examples else word['phrase_ids']
             pp = {row['id']: row for row in read_table('phrases')}
             show = ids[args.offset:args.offset + args.limit]
             result = {'found': True, 'word': selected(word, None if args.full else DEFAULT_FIELDS['vocabulary']),
-                      'runtime': word.get('runtime', {}), 'source_refs': word['source_refs'],
-                      'selected_for_lesson': word.get('lesson4_selection') if args.lesson == 4 else None,
+                      'runtime': word['runtime'], 'source_refs': word['source_refs'],
                       'phrase_relation': 'global_pedagogical' if args.examples else 'direct_lexical',
                       'phrases_total': len(ids), 'phrases': [selected(pp[p], None if args.full else ['id','hanzi','pinyin','pinyin_status','pinyin_ming','pinyin_display','spanish_display','kinds','source_refs']) for p in show],
                       'next_offset': args.offset + args.limit if args.offset + args.limit < len(ids) else None}
@@ -130,7 +169,7 @@ def main() -> None:
         if args.page is not None and not 1 <= args.page <= source['pages']:
             raise ValueError('Page outside source bounds')
         result = {'source': source, 'page': args.page, 'tables': {}}
-        for name in ['vocabulary_evidence','phrase_evidence','hanzi_evidence','grammar_evidence','exercises','native_transcripts','radical_evidence','radical_assessment_items','textbook_table_rows','worksheet_inventory','source_pinyin_recoveries','document_pages','document_blocks','document_items','source_tables','exercise_items','readings','writing_models','visual_evidence','hanzi_structures','cultural_records','writing_target_occurrences']:
+        for name in ['vocabulary_evidence','phrase_evidence','hanzi_evidence','grammar_evidence','exercises','native_transcripts','radical_evidence','radical_assessment_items','textbook_table_rows','worksheet_inventory','source_pinyin_recoveries']:
             rows = [r for r in read_table(name) if r['source_id'] == args.source and (args.page is None or r['page'] == args.page)]
             result['tables'][name] = {'total':len(rows),'rows':rows[args.offset:args.offset + args.limit],
                                      'next_offset':args.offset + args.limit if args.offset + args.limit < len(rows) else None}

@@ -5,7 +5,7 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
-from query import CACHE, ROOT, ensure_cache, read_table
+from query_v21 import CACHE, ROOT, ensure_cache, read_table
 from pinyin_ming import (apply_pinyin, check_public, dependency_paths, internal_only,
                          load_batch, pinyin_for_display, read_pinyin, source_pinyin, validate_reading)
 from lexical_examples import build_example_links, eligible_phrase, validate_compositions

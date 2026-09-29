@@ -1,59 +1,63 @@
-# Lección 4 — candidato del corpus v2.2.0
+# Lección 4 · cierre documental v2.2.0
 
-Estado: extracción estructurada parcial. La revisión de fuentes y la política de selección no completan ni publican el capítulo 4.
+La base documental de los seis PDF vigentes está extraída e integrada en la consulta global L1–L4. Esta entrega no implementa la interfaz del capítulo ni genera audios, imágenes o respuestas dependientes de grabaciones ausentes.
 
-## Revisión de archivos y autoridad — 2026-09-29
+## Fuentes actuales
 
-El usuario corrigió los nombres y eliminó la copia duplicada de la página impresa 120. Se verificaron nuevamente los seis PDF locales por SHA-256, tamaño y número de páginas.
+| Fuente | PDF | Páginas impresas |
+|---|---:|---|
+| Libro Basico 1 - Lección 4.pdf | 25 | 113–137 |
+| Libro de Ejercicios Basico 1 - Lección 4.pdf | 11 | 29–39 |
+| Presentación 4.1 | 43 | — |
+| Presentación 4.2 | 34 | — |
+| Hanzi 4.1 | 4 | — |
+| Hanzi 4.2 | 4 | — |
 
-| Fuente | Nombre actual | Páginas PDF | Páginas impresas |
-|---|---|---:|---|
-| SRC-BOOK-04 | Libro Basico 1 - Lección 4.pdf | 25 | 113–137 |
-| SRC-WB-04 | Libro de Ejercicios Basico 1 - Lección 4.pdf | 11 | 29–39 |
-| SRC-PPT-04-1 | Presentación 4.1 | 43 | No aplicable |
-| SRC-PPT-04-2 | Presentación 4.2 | 34 | No aplicable |
-| SRC-HANZI-04-1 | Hanzi 4.1 | 4 | No aplicable |
-| SRC-HANZI-04-2 | Hanzi 4.2 | 4 | No aplicable |
+Total: **121 páginas**, **295 bloques curriculares** y **3.870 campos indexados**. `page-coverage.tsv` enumera cada página y sus bloques; los campos completos se consultan en `document_blocks` / `document_items`. Las imágenes se documentan mediante transcripción de tablas, etiquetas y relaciones visibles, más descripciones editoriales separadas; no se almacenan escaneos ni se afirma reproducir facsímiles o SVG de trazos.
 
-Total actual: **121 páginas físicas**. El libro tiene una sola impresa 120, en PDF 8; PDF 9 es la impresa 121. El cuaderno conserva SHA-256 y bytes anteriores: solo fue renombrado. El libro tiene nueva huella por la edición; no se afirma una comparación binaria integral con el PDF antiguo.
+## Contenido estructurado
 
-`source-revisions.json` conserva nombres, hashes y mapa anteriores. Las antiguas PDF 8/9 remiten a PDF 8 actual; las antiguas PDF 10–26 remiten a PDF 9–25. Los localizadores actuales de vocabulario, gramática y observaciones se migraron; sus identificadores y texto documental permanecen. Los conteos históricos de 122 páginas no describen los archivos actuales.
+- Vocabulario del libro: **63 filas**, **56 entradas numeradas + 7 subentradas**, tres listas. Las repeticiones y sus páginas son evidencia, no palabras nuevas ficticias.
+- Vocabulario L4 con evidencia propia: **115 IDs**, de los que **86 son adiciones** a los 346 anteriores; los contextuales se distinguen de las listas impresas.
+- Frases con evidencia L4: **660 IDs**; **656 nuevos** y cuatro compartidos con L1–L3. Contenido de celdas, preguntas y contraejemplos no se convierte automáticamente en oración positiva.
+- **62 conjuntos/continuaciones de ejercicios**, **251 ítems**, **6 lecturas**, **3 modelos de escritura**, **25 tablas no léxicas** y **38 registros visuales**.
+- **94 apariciones de objetivos de escritura**: 66 filas de las hojas y 28 registros del libro/cuaderno. Hay 54 caracteres distintos en las dos hojas; los otros caracteres encontrados no se convierten en objetivos de escritura.
+- Los dos diálogos principales del libro: **27 turnos canónicos**; otros 27 turnos docentes se conservan exclusivamente como testigos secundarios.
+- Gramática, notas, fonética, radicales, estructuras, autoevaluación y cultura conservan sus campos y relaciones de origen. Los registros gramaticales fuente no se contabilizan como conceptos únicos deduplicados.
 
-## Selección aprobada por el usuario
-
-Consultar `../../SOURCE_AUTHORITY.json` y `selection-policy.json`.
-
-- Los libros básico y de ejercicios son las fuentes primarias. En el mismo punto y contexto prevalecen sobre presentaciones y hojas. Los ejercicios conservan su libro de origen; un conflicto genuino entre ambos libros se documenta, no se resuelve inventando información.
-- Los dos diálogos principales seleccionados son **DLG-L4-BOOK-T1** y **DLG-L4-BOOK-T2**, con **27 turnos**. Se mantiene 宋华, 七点半我回学校 y 我学英语 tal como figuran en el libro. No mezclar versiones ni generar preguntas del capítulo a partir del diálogo alternativo de la presentación.
-- Las versiones de las presentaciones se conservan como **27 turnos secundarios**, para trazabilidad, no como diálogo principal del capítulo. `dialogue-turns.tsv` conserva los 54 turnos originales.
-- Las lecturas aisladas de hojas no definen la pronunciación de palabras: 差 chà, 只 zhǐ, 时间 shíjiān e 意思 yìsi se seleccionan por evidencia contextual del libro. Las lecturas de las hojas se preservan en sus campos originales, sin concatenación automática ni generación de audio.
-- La tabla horaria del libro está ahora en PDF 9/impresa 121. Sus reglas son la referencia del capítulo; las variantes de la presentación se guardan como secundarias, no se declaran universalmente inválidas.
-- No sobrescribir pinyin documental ni atribuir correcciones al original. Una errata o ausencia en el propio libro todavía requiere registro y resolución separada. No inventar claves de escucha ni tratar escritura manuscrita como clave docente.
-
-## Cobertura estructurada que se conserva
-
-63 filas de vocabulario del libro (56 entradas numeradas y 7 subentradas); 66 filas de hojas Hanzi (54 caracteres distintos); cuatro testigos de diálogos con 54 turnos; 13 resúmenes de gramática/notas; 20 observaciones de auditoría. Estos números no significan 63 palabras nuevas frente a L1–L3 ni transcripción completa de los seis documentos.
-
-## Consulta y pruebas
+## Consulta sin releer PDF
 
 ```sh
-python3 MING_KNOWLEDGE/v2/lesson4/audit.py --authority
+python3 MING_KNOWLEDGE/v2/query.py --summary
+python3 MING_KNOWLEDGE/v2/query.py --word 只 --lesson 4 --limit 8
+python3 MING_KNOWLEDGE/v2/query.py --word 点 --lesson 4 --limit 8
+python3 MING_KNOWLEDGE/v2/query.py --table document_blocks --lesson 4 --limit 20
+python3 MING_KNOWLEDGE/v2/query.py --source SRC-WB-04 --page 9 --limit 20
+python3 MING_KNOWLEDGE/v2/query.py --table readings --lesson 4 --limit 20
 python3 MING_KNOWLEDGE/v2/lesson4/audit.py --canonical-dialogues --limit 100
-python3 MING_KNOWLEDGE/v2/lesson4/audit.py --dialogue DLG-L4-BOOK-T2
-python3 MING_KNOWLEDGE/v2/lesson4/audit.py --dialogue DLG-L4-PPT1-T1
-python3 MING_KNOWLEDGE/v2/lesson4/audit.py --word 差
-python3 MING_KNOWLEDGE/v2/lesson4/audit.py --hanzi 差
-python3 MING_KNOWLEDGE/v2/lesson4/audit.py --pages --source SRC-BOOK-04
-python3 MING_KNOWLEDGE/v2/lesson4/audit.py --validate --pdf-dir /ruta/privada
-python3 -m unittest discover -s MING_KNOWLEDGE/v2/lesson4 -p 'test_*.py' -v
+python3 MING_KNOWLEDGE/v2/lesson4/audit.py --release-check
 ```
 
-Resultado local de esta revisión: **25 pruebas PASS**, integridad del suplemento PASS y **6/6 hashes/tamaños actuales coincidentes**. `--release-check` mantiene código 3: `ready_for_chapter4=false`. Las pruebas globales de v2 y las de la web no se ejecutaron en esta revisión. No se afirma revisión lingüística humana independiente.
+El paquete `documents/manifest.json` usa fragmentos base64+xz comprobados por SHA-256, como el paquete base anterior: contiene JSON curricular, **no bytes de PDF/imágenes**. `compile_v22.py` los expande a tablas legibles bajo `.cache-v22/`; no cargar los fragmentos codificados en el contexto del agente.
 
-## Versionado y trabajo pendiente
+## Autoridad y preservación
 
-**2.2.0** es la versión objetivo; **2.1.0** sigue siendo la base activa L1–L3 hasta integrar y validar la ampliación. `v2/` es la familia de estructura, no el número de versión menor. El esquema documental 1.0.0 no es la versión del corpus.
+Se aplica `../../SOURCE_AUTHORITY.json`: los libros básico y de ejercicios prevalecen sobre las presentaciones y hojas para un mismo contexto. No hay un orden arbitrario para contradicciones entre los dos libros. Los diálogos principales son íntegramente los del libro (宋华; 七点半我回学校; 我学英语). Las variantes docentes permanecen para auditoría, sin mezclarse en el banco principal.
 
-Continúa pendiente completar ejercicios, lecturas, modelos, fonética, cultura y ampliaciones visuales; resolver la proyección contextual de pinyin; integrar en compilador/consulta global conservando IDs; regenerar la proyección con los scripts existentes y ejecutar auditorías completas. El lector local ya aplica la selección de diálogos del libro; el exportador global y la web aún no están integrados.
+Las lecturas aisladas 差 chā y 只 zhī de las hojas siguen intactas. Para el contexto L4 se seleccionan las del libro: 差 chà, 只 zhǐ, 时间 shíjiān e 意思 yìsi. `lesson4_selection` conserva el contexto explícito, sin destruir las lecturas/sentidos de L1–L3.
 
-No se incluyen PDF, escaneos, secretos, cambios de audio, Supabase, progreso ni despliegue. No fusionar a main sin autorización explícita.
+Los nombres corregidos y la eliminación de la página impresa 120 duplicada están registrados en `source-revisions.json`. La paginación actual del texto es consecutiva: PDF8=120, PDF9=121 y PDF16=128. Los IDs anteriores se preservan.
+
+## Límites documentales, no trabajo de extracción omitido
+
+No se suministraron grabaciones originales. Sus instrucciones, opciones y huecos sí están registrados; las respuestas no se fabrican. Tampoco son claves oficiales las respuestas manuscritas. Los pinyin/español ausentes en los originales permanecen nulos y separados de las anotaciones editoriales. Completar esos apoyos para cada nueva ficha es una capa posterior, no transcripción de la fuente.
+
+Las afirmaciones culturales se conservan como contenido del material, no como cifras contemporáneas verificadas externamente. El texto nativo oculto por una imagen queda solo en la caché, no se promueve a contenido visible del alumno. Marcas de agua, publicidad y celdas de caligrafía repetidas no generan entradas léxicas.
+
+## Integración y validación
+
+`query.py` integra L4 en el corpus global; `query_v21.py` mantiene la base anterior reproducible. No se debilitaron sus pruebas: los lotes previos de traducción, pinyin, radicales y clasificación visual se comprueban en su ámbito original y las nuevas pruebas comprueban la unión y las regresiones.
+
+`python3 scripts/export-corpus-v22.py --check` verifica la proyección v2.2 por huella reproducible. El exportador genera un archivo de trabajo ignorado; **no cambia el import de la aplicación**. `scripts/export-corpus-v21.py --check` sigue comprobando que el contenido público anterior no fue alterado.
+
+El resultado de cierre depende de las fuentes, los vínculos y las pruebas globales, no de fijar una etiqueta `ready` a mano. Ver `../RELEASE_2_2_0.md` para resultados y alcance. Revisión realizada por el modelo; no se afirma auditoría lingüística humana independiente.

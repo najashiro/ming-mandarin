@@ -2,7 +2,7 @@
 import copy
 import json
 import unittest
-from query import CACHE, ensure_cache, read_table
+from query_v21 import CACHE, ensure_cache, read_table
 from source_audit import (INVENTORY, augment_public, check_book_witnesses, check_worksheets,
                           normalize_pinyin, read_json, textbook_rows)
 

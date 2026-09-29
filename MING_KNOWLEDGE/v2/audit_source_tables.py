@@ -4,7 +4,7 @@ import argparse
 import json
 import shutil
 from pathlib import Path
-from query import CACHE, ROOT, ensure_cache, read_table
+from query_v21 import CACHE, ROOT, ensure_cache, read_table
 from source_audit import INVENTORY, check_book_witnesses, check_worksheets, read_json, require, textbook_rows
 
 

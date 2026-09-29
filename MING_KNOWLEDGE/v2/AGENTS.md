@@ -1,3 +1,11 @@
+## Actualización activa 2.2.0 — lección 4
+
+La base documental activa es **2.2.0**, no 2.1.0. Consulta `source-v22.json`, `RELEASE_2_2_0.md` y `lesson4/README.md`. La entrada global `query.py` incluye L4; `query_v21.py` conserva los lotes anteriores. Los libros básico y de ejercicios son fuentes primarias según `../SOURCE_AUTHORITY.json`. Los diálogos canónicos proceden íntegramente del libro y las lecturas de hojas no determinan pronunciación contextual.
+
+No releas todas las fuentes. Usa las tablas tipadas e inventario de 121 páginas. Los campos ausentes y el audio original no suministrado no se inventan. Para validar la ampliación ejecuta query.py --validate, todas las pruebas globales y de lesson4, el release-check y `scripts/export-corpus-v22.py --check`. Los validadores editoriales v2.1 y export-corpus-v21.py comprueban únicamente el alcance histórico y deben seguir pasando sin alterar la proyección anterior. No cambiar la UI, audio, Supabase, progreso o producción por actualizar el corpus.
+
+Los apartados históricos siguientes se conservan como referencia; la versión y rutas activas anteriores prevalecen.
+
 # Uso de la base de fuentes v2.1 por Codex
 
 - Empieza con `index.json`, `SOURCE_AUDIT.md`, `TRANSLATIONS_MING.md`, `PINYIN_MING.md`, `VISUAL_MING.md`, `RADICALS.md` y `README.md`.

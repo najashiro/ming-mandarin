@@ -6,7 +6,7 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
-from query import CACHE, ensure_cache, read_table
+from query_v21 import CACHE, ensure_cache, read_table
 from visual_ming import (COLUMNS, MODES, PUBLIC_FIELDS, ROOT, apply_classifications,
                          augment_public, check_public, dependency_paths, is_published_word,
                          load_batch, public_visual, read_classifications, report_documents, validate_visual)

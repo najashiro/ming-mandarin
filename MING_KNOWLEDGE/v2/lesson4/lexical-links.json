@@ -1,0 +1,220 @@
+{
+  "schema_version": "1.0.0",
+  "approved_surface_aliases": {
+    "点": "v-点（钟）",
+    "点钟": "v-点（钟）",
+    "点（钟）": "v-点（钟）",
+    "语（言）": "v-语言"
+  },
+  "tokenization": "Longest forward match over source-attested whole lexemes; non-overlapping token spans. No character containment or transitive substring expansion.",
+  "explicit_nonlexical_exclusions": [
+    {
+      "source_id": "SRC-BOOK-04",
+      "page": 22,
+      "kind": "table_cell",
+      "surface": "刂"
+    },
+    {
+      "source_id": "SRC-BOOK-04",
+      "page": 22,
+      "kind": "table_cell",
+      "surface": "立刀旁"
+    },
+    {
+      "source_id": "SRC-BOOK-04",
+      "page": 22,
+      "kind": "table_cell",
+      "surface": "日"
+    },
+    {
+      "source_id": "SRC-BOOK-04",
+      "page": 22,
+      "kind": "table_cell",
+      "surface": "日字旁"
+    },
+    {
+      "source_id": "SRC-BOOK-04",
+      "page": 25,
+      "kind": "exercise_premise",
+      "surface": "日"
+    },
+    {
+      "source_id": "SRC-BOOK-04",
+      "page": 25,
+      "kind": "exercise_premise",
+      "surface": "月"
+    },
+    {
+      "source_id": "SRC-BOOK-04",
+      "page": 25,
+      "kind": "exercise_premise",
+      "surface": "明"
+    },
+    {
+      "source_id": "SRC-BOOK-04",
+      "page": 25,
+      "kind": "exercise_premise",
+      "surface": "木"
+    },
+    {
+      "source_id": "SRC-BOOK-04",
+      "page": 25,
+      "kind": "exercise_premise",
+      "surface": "森"
+    },
+    {
+      "source_id": "SRC-BOOK-04",
+      "page": 25,
+      "kind": "exercise_premise",
+      "surface": "土"
+    },
+    {
+      "source_id": "SRC-BOOK-04",
+      "page": 25,
+      "kind": "exercise_premise",
+      "surface": "尘"
+    },
+    {
+      "source_id": "SRC-BOOK-04",
+      "page": 25,
+      "kind": "exercise_premise",
+      "surface": "鸟"
+    },
+    {
+      "source_id": "SRC-BOOK-04",
+      "page": 25,
+      "kind": "exercise_premise",
+      "surface": "鸣"
+    },
+    {
+      "source_id": "SRC-BOOK-04",
+      "page": 25,
+      "kind": "exercise_premise",
+      "surface": "从"
+    },
+    {
+      "source_id": "SRC-BOOK-04",
+      "page": 25,
+      "kind": "exercise_premise",
+      "surface": "众"
+    },
+    {
+      "source_id": "SRC-PPT-04-2",
+      "page": 20,
+      "kind": "table_cell",
+      "surface": "月"
+    },
+    {
+      "source_id": "SRC-PPT-04-2",
+      "page": 20,
+      "kind": "table_cell",
+      "surface": "日"
+    },
+    {
+      "source_id": "SRC-WB-04",
+      "page": 4,
+      "kind": "exercise_premise",
+      "surface": "明"
+    },
+    {
+      "source_id": "SRC-WB-04",
+      "page": 4,
+      "kind": "exercise_premise",
+      "surface": "时"
+    },
+    {
+      "source_id": "SRC-WB-04",
+      "page": 4,
+      "kind": "exercise_premise",
+      "surface": "别"
+    },
+    {
+      "source_id": "SRC-WB-04",
+      "page": 4,
+      "kind": "exercise_premise",
+      "surface": "法"
+    },
+    {
+      "source_id": "SRC-WB-04",
+      "page": 4,
+      "kind": "exercise_premise",
+      "surface": "活"
+    },
+    {
+      "source_id": "SRC-WB-04",
+      "page": 4,
+      "kind": "exercise_premise",
+      "surface": "动"
+    },
+    {
+      "source_id": "SRC-WB-04",
+      "page": 4,
+      "kind": "exercise_premise",
+      "surface": "恐"
+    },
+    {
+      "source_id": "SRC-WB-04",
+      "page": 4,
+      "kind": "exercise_premise",
+      "surface": "思"
+    },
+    {
+      "source_id": "SRC-WB-04",
+      "page": 4,
+      "kind": "exercise_premise",
+      "surface": "午"
+    },
+    {
+      "source_id": "SRC-WB-04",
+      "page": 4,
+      "kind": "exercise_premise",
+      "surface": "习"
+    },
+    {
+      "source_id": "SRC-WB-04",
+      "page": 7,
+      "kind": "table_cell",
+      "surface": "明"
+    },
+    {
+      "source_id": "SRC-WB-04",
+      "page": 7,
+      "kind": "table_cell",
+      "surface": "意"
+    },
+    {
+      "source_id": "SRC-WB-04",
+      "page": 7,
+      "kind": "table_cell",
+      "surface": "特"
+    },
+    {
+      "source_id": "SRC-WB-04",
+      "page": 7,
+      "kind": "table_cell",
+      "surface": "时"
+    },
+    {
+      "source_id": "SRC-WB-04",
+      "page": 7,
+      "kind": "table_cell",
+      "surface": "别"
+    },
+    {
+      "source_id": "SRC-WB-04",
+      "page": 7,
+      "kind": "table_cell",
+      "surface": "主"
+    },
+    {
+      "source_id": "SRC-WB-04",
+      "page": 7,
+      "kind": "table_cell",
+      "surface": "间"
+    }
+  ],
+  "exclusion_note": "Isolated Hanzi/radical-name exercises, character fragments around blanks and calendar labels. Preserved in source and Hanzi tables, not mislabeled as word-list entries.",
+  "lexical_review": "model_checked_not_independent_human_review",
+  "expected_annotated_occurrences": 4295,
+  "expected_unlinked_runs": 48
+}

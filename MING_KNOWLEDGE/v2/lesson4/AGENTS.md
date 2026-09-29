@@ -1,9 +1,9 @@
-# Fuente principal y revisión de archivos L4
+# Lección 4 · corpus 2.2.0
 
-Antes de usar este suplemento, consultar `../../SOURCE_AUTHORITY.json`, `manifest.json`, `selection-policy.json` y `source-revisions.json`.
+La extracción documental está integrada: consulta `../query.py`, no los PDF ni los fragmentos base64 por defecto. Comienza con `README.md`, `manifest.json` y `page-coverage.tsv`. `../query_v21.py` es exclusivamente la instantánea L1–L3.
 
-Decisión explícita del usuario (2026-09-29): los libros básico y de ejercicios son las fuentes primarias para dirimir desajustes con presentaciones/hojas. Para los diálogos principales usar solo los dos testigos del libro; mantener las otras versiones como evidencia secundaria. No combinar versiones. Una lectura aislada Hanzi no se transforma en pronunciación contextual ni se concatena automáticamente para audio.
+Aplica `../../SOURCE_AUTHORITY.json` y `selection-policy.json`. Conserva los dos diálogos completos del libro como canónicos, las variantes docentes como evidencia y las lecturas aisladas de hojas separadas de la pronunciación contextual. Una prioridad documental no permite inventar datos ausentes.
 
-La copia vigente del texto tiene 25 páginas, no 26. La impresa 120 aparece una vez. Todos los localizadores actuales deben usar el mapa vigente; el histórico se conserva por separado. No cambiar IDs por un renombrado.
+Las 121 páginas y 295 bloques contienen instrucciones, ítems, opciones, huecos, tablas, lecturas, modelos, gramática, fonética, cultura y objetivos de escritura. No confundir un campo descriptivo/editorial con una transcripción literal. El pinyin/español no impreso y las claves de escucha sin audio siguen sin inventarse.
 
-La política no aporta datos ausentes, claves de audio ni una corrección silenciosa a una errata de un libro. Si los dos libros difieren en un mismo punto sin resolución contextual, registrar el conflicto. No modificar runtime, recursos de pago, progreso ni main. El suplemento sigue en borrador v2.2.0 hasta cerrar las validaciones globales.
+Los TSV de la PR22 permanecen como controles de regresión y trazabilidad; el paquete completo es `documents/manifest.json`. No editar `.cache-v22/` ni la proyección pública manualmente. Tras cambios ejecuta la validación global, las pruebas v2 y lesson4, y ambos exportadores en modo --check. No publicar PDF, escaneos, secretos ni recursos pagados, ni cambiar runtime, Supabase o progreso. No fusionar ni desplegar por iniciativa propia.

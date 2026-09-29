@@ -1,0 +1,80 @@
+{
+  "source_count": 6,
+  "pdf_pages": 121,
+  "blocks": 295,
+  "source_checks": [
+    {
+      "source_id": "SRC-BOOK-04",
+      "pdf_pages": 25,
+      "sha256": "9ecfa83f1ecd628360b62fcce1183500aaa33fb4c39141fb4618fbfb47850c33",
+      "bytes": 168951854,
+      "verified": true
+    },
+    {
+      "source_id": "SRC-WB-04",
+      "pdf_pages": 11,
+      "sha256": "4077444d8c97abf010b10c5abd404393eb3d1dc73e810b5f036745679cd83a1b",
+      "bytes": 73291429,
+      "verified": true
+    },
+    {
+      "source_id": "SRC-PPT-04-1",
+      "pdf_pages": 43,
+      "sha256": "bba2354442d2cd815be52766f2969d88596b646615407fab6a243038763f13b5",
+      "bytes": 2497527,
+      "verified": true
+    },
+    {
+      "source_id": "SRC-PPT-04-2",
+      "pdf_pages": 34,
+      "sha256": "4435a51362c50a22047ea04386c4b4df6cfdab0af61f0c026a5f24624333bf15",
+      "bytes": 2301344,
+      "verified": true
+    },
+    {
+      "source_id": "SRC-HANZI-04-1",
+      "pdf_pages": 4,
+      "sha256": "fed1d76acf9aad0c9246be05f74e4bcdaa307b0d563c09fa5eac6f9d0a89823f",
+      "bytes": 341077,
+      "verified": true
+    },
+    {
+      "source_id": "SRC-HANZI-04-2",
+      "pdf_pages": 4,
+      "sha256": "ac6987445e1ae058b63f016418feb4c1eb779bc7fdf25f028cd58d0cbfa06fed",
+      "bytes": 313378,
+      "verified": true
+    }
+  ],
+  "count_by_kind": {
+    "introduction": 1,
+    "exercise": 62,
+    "dialogue_context": 2,
+    "visual": 38,
+    "function": 4,
+    "dialogue": 9,
+    "vocabulary_list": 46,
+    "note": 11,
+    "examples": 41,
+    "table": 25,
+    "grammar": 16,
+    "section": 11,
+    "reading": 6,
+    "writing_model": 3,
+    "hanzi_structure": 2,
+    "writing_targets": 6,
+    "culture": 2,
+    "radical_note": 1,
+    "vocabulary_review": 1,
+    "worksheet": 8
+  },
+  "scope": "Full curricular source-content inventory and transcription; visual reconstructions are descriptive, not recreated facsimiles/stroke SVG. Listening recordings were not supplied; no external-answer keys invented. Native PDF text is a cache, not a validated teaching layer.",
+  "exclusions": [
+    "repeated tracing-cell glyphs as separate lexemes",
+    "publisher/worksheet advertising and QR contact codes",
+    "decorative logos, unrelated stock-image watermarks and repetitive slide templates",
+    "audio bytes and answers requiring unavailable original recordings",
+    "replication of scanned illustrations or vector stroke assets"
+  ],
+  "independent_human_review": false
+}
