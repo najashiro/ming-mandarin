@@ -1,0 +1,91 @@
+name: Prepare regenerated historical report fingerprints
+on:
+  push:
+    branches: ['corpus/v2.2.0-close-lesson4-20260929']
+permissions:
+  contents: read
+jobs:
+  prepare-reports:
+    if: github.repository == 'najashiro/ming-mandarin' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 2
+      - name: Regenerate reports, prove metadata-only changes, prepare an unreferenced tree
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import base64, hashlib, json, os, subprocess, urllib.request
+          from pathlib import Path
+          def run(*args):
+              return subprocess.check_output(args, text=True).strip()
+          parent = run('git', 'rev-parse', 'HEAD^')
+          assert parent == '1cfb6f249b72e9b04aef50b3d913d1c0490026ce', 'Unexpected preparation parent'
+          head = run('git', 'rev-parse', 'HEAD')
+          assert head == os.environ['GITHUB_SHA']
+          expected = {
+              'translations_ming.py': '89a0a711db15b8f8df17afc29cca62e0de9d8c00d073b59b6acc53bc184b59d9',
+              'pinyin_ming.py': '2af3e8b5201685dffa6020ffd3bf8c7ab73f89db0398c26c91b6db08e1ae56d6',
+              'visual_ming.py': 'bacb09143640ef7dfc2bb3ac42c78edce292b53726e9f3ab3b0c33a02882e218',
+          }
+          root = Path('MING_KNOWLEDGE/v2')
+          report_names = ['translations-ming-20260925', 'pinyin-ming-20260925', 'visual-ming-20260925']
+          files = [root / 'audits' / (name + ext) for name in report_names for ext in ('.json', '.md')]
+          before = {str(p): p.read_bytes() for p in files}
+          public_before = Path('data/corpus-v21-public.json').read_bytes()
+          for module, digest in expected.items():
+              assert hashlib.sha256((root/module).read_bytes()).hexdigest() == digest, 'Unreviewed generator changed'
+              subprocess.run(['python3', str(root/module), '--check', '--write-reports'], check=True, stdout=subprocess.DEVNULL)
+          assert Path('data/corpus-v21-public.json').read_bytes() == public_before, 'Public data changed'
+          changes = {}
+          for p in files:
+              old = before[str(p)]
+              new = p.read_bytes()
+              if p.suffix == '.md':
+                  assert old == new, 'Unexpected Markdown/content change'
+                  continue
+              a, b = json.loads(old), json.loads(new)
+              old_fp, new_fp = a.pop('fingerprint'), b.pop('fingerprint')
+              assert a == b, 'Report content changed beyond its generator fingerprint'
+              if old != new:
+                  assert old_fp != new_fp
+                  changes[str(p)] = {'old_fingerprint': old_fp, 'new_fingerprint': new_fp, 'sha256': hashlib.sha256(new).hexdigest()}
+          tracked = set(run('git', 'diff', '--name-only').splitlines())
+          assert tracked == set(changes) and len(changes) == 3, 'Unexpected tracked changes'
+          subprocess.run(['python3', str(root/'visual_ming.py'), '--check', '--check-reports'], check=True, stdout=subprocess.DEVNULL)
+          subprocess.run(['python3', 'scripts/export-corpus-v21.py', '--check'], check=True)
+          subprocess.run(['python3', 'scripts/export-corpus-v22.py', '--check'], check=True)
+          api = 'https://api.github.com/repos/najashiro/ming-mandarin/'
+          def post(path, payload):
+              req = urllib.request.Request(api + path, data=json.dumps(payload).encode(), method='POST', headers={'Authorization': 'Bearer ' + os.environ['GH_TOKEN'], 'Accept': 'application/vnd.github+json', 'Content-Type': 'application/json', 'X-GitHub-Api-Version': '2022-11-28'})
+              with urllib.request.urlopen(req, timeout=30) as response:
+                  return json.load(response)
+          entries = []
+          for name in sorted(changes):
+              raw = Path(name).read_bytes()
+              blob = post('git/blobs', {'content': base64.b64encode(raw).decode(), 'encoding': 'base64'})
+              expected_blob = hashlib.sha1(b'blob ' + str(len(raw)).encode() + b'\0' + raw).hexdigest()
+              assert blob['sha'] == expected_blob
+              entries.append({'path': name, 'mode': '100644', 'type': 'blob', 'sha': blob['sha']})
+              changes[name]['git_blob_sha'] = blob['sha']
+          entries.append({'path': '.github/workflows/corpus-refresh-reports-once.yml', 'mode': '100644', 'type': 'blob', 'sha': None})
+          tree = post('git/trees', {'base_tree': run('git', 'rev-parse', 'HEAD^{tree}'), 'tree': entries})
+          result = {'parent_commit': head, 'tree_sha': tree['sha'], 'changes': changes, 'data_unchanged': True, 'markdown_unchanged': True, 'projections_validated': ['v2.1', 'v2.2'], 'branch_updated': False}
+          out = Path('report-evidence'); out.mkdir()
+          (out/'prepared-tree.json').write_text(json.dumps(result, indent=2) + '\n')
+          for name in changes:
+              (out/Path(name).name).write_bytes(Path(name).read_bytes())
+          print(json.dumps(result, indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: corpus-regenerated-reports-${{ github.sha }}
+          path: report-evidence/
+          retention-days: 7
+          if-no-files-found: error
