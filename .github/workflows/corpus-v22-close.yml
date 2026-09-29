@@ -1,0 +1,46 @@
+name: Corpus v2.2 closure (offline data checks)
+
+on:
+  push:
+    branches: ['corpus/v2.2.0-close-lesson4-20260929']
+  pull_request:
+    paths:
+      - 'MING_KNOWLEDGE/**'
+      - 'scripts/export-corpus-v2*.py'
+      - '.github/workflows/corpus-v22-close.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: corpus-v22-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  source-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Capture exact public source snapshot for reproducible offline audits
+        run: |
+          mkdir -p closure-artifact
+          git rev-parse HEAD > closure-artifact/SOURCE_COMMIT.txt
+          git archive --format=zip --output=closure-artifact/corpus-source.zip HEAD MING_KNOWLEDGE scripts data AGENTS.md .github
+      - name: Validate global corpus
+        run: python3 MING_KNOWLEDGE/v2/query.py --validate > closure-artifact/global-validation.json
+      - name: Test corpus modules
+        run: python3 -m unittest discover -s MING_KNOWLEDGE/v2 -p 'test_*.py' -v 2>&1 | tee closure-artifact/global-tests.txt
+      - name: Test lesson 4 modules
+        run: python3 -m unittest discover -s MING_KNOWLEDGE/v2/lesson4 -p 'test_*.py' -v 2>&1 | tee closure-artifact/lesson4-tests.txt
+      - name: Check source tables
+        run: python3 MING_KNOWLEDGE/v2/audit_source_tables.py --check > closure-artifact/source-tables.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: corpus-v22-evidence-${{ github.sha }}
+          path: closure-artifact/
+          retention-days: 7
+          if-no-files-found: error
