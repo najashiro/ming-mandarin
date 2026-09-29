@@ -43,10 +43,11 @@ def validate(root: Path = ROOT, pdf_dir: Path | None = None) -> dict:
     check(m['release_status'] == 'draft' and not m['ready_for_chapter4'],
           'This audit cannot certify release readiness')
     check(len(sources) == len(m['sources']) == 6, 'Source IDs/count mismatch')
-    check(sum(s['pages'] for s in sources.values()) == m['pdf_pages'] == 122,
+    check(sum(s['pages'] for s in sources.values()) == m['pdf_pages'] == 121,
           'Physical page count mismatch')
-    check(sources['SRC-BOOK-04']['duplicate_pdf_pages'] == {'9': 8},
-          'Duplicate printed-page witness lost')
+    check(sources['SRC-BOOK-04']['duplicate_pdf_pages'] == {},
+          'Corrected PDF must not retain an active duplicate')
+    check(m['duplicated_printed_page_occurrences'] == 0, 'Stale duplicate count')
     for source in sources.values():
         if source['printed_pages'] is not None:
             check(len(source['printed_pages']) == source['pages'], 'Printed page map mismatch')
@@ -118,6 +119,7 @@ def validate(root: Path = ROOT, pdf_dir: Path | None = None) -> dict:
             ok = digest.hexdigest() == source['sha256'] and path.stat().st_size == source['bytes']
             check(ok, f'PDF hash/size mismatch: {source["id"]}')
             pdf_results.append({'source_id': source['id'], 'sha256_and_bytes_match': ok})
+    errors.extend(validate_source_policy(root, m, v, d))
     data_hashes = {name: hashlib.sha256((root/name).read_bytes()).hexdigest() for name in m['data_files']}
     return dict(passed=not errors, scope='L4 draft supplement integrity only', target_version=m['target_corpus_version'],
                 ready_for_chapter4=False, global_v2_validated=False, website_validated=False,
@@ -138,6 +140,52 @@ def page_ledger(root: Path = ROOT) -> list[dict]:
              'full_page_literal_transcription_certified': False}
             for s in m['sources'] for page in range(1, s['pages']+1)]
 
+
+def selected_dialogue_rows(root: Path = ROOT, canonical_only: bool = False) -> list[dict]:
+    """Selection layer; never rewrites or deletes the documentary witnesses."""
+    chosen = set(load_json('selection-policy.json', root)['canonical_dialogue_ids'])
+    return [dict(row, selected_for_chapter4=row['dialogue_id'] in chosen)
+            for row in load_tsv('dialogue-turns.tsv', root)
+            if not canonical_only or row['dialogue_id'] in chosen]
+
+def validate_source_policy(root: Path, manifest: dict, vocabulary: list[dict], dialogues: list[dict]) -> list[str]:
+    errors = []
+    def check(condition, message):
+        if not condition:
+            errors.append(message)
+    policy = load_json('../../SOURCE_AUTHORITY.json', root)
+    selection = load_json('selection-policy.json', root)
+    history = load_json('source-revisions.json', root)
+    sources = {s['id']: s for s in manifest['sources']}
+    book, workbook = sources['SRC-BOOK-04'], sources['SRC-WB-04']
+    check(book['filename'] == 'Libro Basico 1 - Lección 4.pdf' and book['kind'] == 'textbook', 'Book filename/kind mismatch')
+    check(workbook['filename'] == 'Libro de Ejercicios Basico 1 - Lección 4.pdf' and workbook['kind'] == 'workbook', 'Workbook filename/kind mismatch')
+    check(book['pages'] == 25 and book['printed_pages'] == list(range(113, 138)), 'Corrected book page map mismatch')
+    check(workbook['pages'] == 11 and workbook['printed_pages'] == list(range(29, 40)), 'Workbook page map mismatch')
+    check(book['sha256'] == '9ecfa83f1ecd628360b62fcce1183500aaa33fb4c39141fb4618fbfb47850c33' and book['bytes'] == 168951854, 'Wrong corrected textbook revision')
+    previous = {s['id']: s for s in history['previous_sources']}
+    check(workbook['sha256'] == previous['SRC-WB-04']['sha256'] and workbook['bytes'] == previous['SRC-WB-04']['bytes'], 'Workbook rename changed binary identity')
+    expected_map = [{'old_pdf_page': i, 'current_pdf_page': i if i <= 8 else 8 if i == 9 else i-1,
+                     'printed_page': previous['SRC-BOOK-04']['printed_pages'][i-1],
+                     'status': 'duplicate_removed_alias' if i == 9 else 'retained_page'} for i in range(1, 27)]
+    check(history['textbook_page_map'] == expected_map, 'Historical page migration mismatch')
+    check(history['current_total_pdf_pages'] == 121 and history['source_ids_preserved'], 'Source history mismatch')
+    check(selection['policy_id'] == policy['policy_id'] == 'ming-books-first-20260929', 'Authority policy ID mismatch')
+    check(policy['primary_source_kinds'] == ['textbook', 'workbook'], 'Primary books lost')
+    check(policy['main_dialogue_authority'] == 'textbook' and policy['exercise_authority'] == 'originating_book', 'Wrong dialogue/exercise authority')
+    check(policy['preserve_secondary_witnesses'] and not policy['mix_dialogue_versions'], 'Secondary witness protection lost')
+    check(not policy['worksheet_reading_to_contextual_pronunciation'] and not policy['concatenate_isolated_readings_for_words'], 'Unsafe worksheet pronunciation fallback')
+    check(selection['canonical_dialogue_ids'] == ['DLG-L4-BOOK-T1', 'DLG-L4-BOOK-T2'], 'Non-book canonical dialogue')
+    check(selection['secondary_dialogue_ids'] == ['DLG-L4-PPT1-T1', 'DLG-L4-PPT2-T2'], 'Secondary dialogue inventory lost')
+    canonical = [r for r in dialogues if r['dialogue_id'] in selection['canonical_dialogue_ids']]
+    check(len(canonical) == selection['canonical_dialogue_turns'] == 27 and all(r['source_id'] == 'SRC-BOOK-04' for r in canonical), 'Canonical dialogue source/count mismatch')
+    check(len(dialogues)-len(canonical) == selection['secondary_dialogue_turns'] == 27, 'Secondary turn count mismatch')
+    for row in selection['contextual_reading_examples']:
+        check(row['source_id'] == 'SRC-BOOK-04' and any(v['hanzi'] == row['hanzi'] and v['pinyin_source'] == row['pinyin_source'] and int(v['pdf_page']) == row['pdf_page'] and int(v['printed_page']) == row['printed_page'] for v in vocabulary), 'Unattested contextual reading selection')
+    check(selection['time_rule_source'] == {'source_id': 'SRC-BOOK-04', 'pdf_page': 9, 'printed_page': 121}, 'Time rule locator not migrated')
+    check(not selection['global_export_integrated'] and not selection['ready_for_chapter4'], 'Unverified global release claim')
+    return errors
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     group = ap.add_mutually_exclusive_group()
@@ -145,6 +193,8 @@ def main() -> int:
     group.add_argument('--word', help='Exact table headword; no substring discovery')
     group.add_argument('--hanzi', help='One exact worksheet glyph')
     group.add_argument('--dialogue', help='Exact documentary dialogue ID')
+    group.add_argument('--canonical-dialogues', action='store_true', help='Only the two book dialogues selected by the user')
+    group.add_argument('--authority', action='store_true', help='Book-first source selection policy')
     group.add_argument('--pages', action='store_true', help='Physical-page ledger, not a completeness certificate')
     group.add_argument('--issues', action='store_true')
     ap.add_argument('--source', help='Exact source ID filter for page ledger or issues')
@@ -164,7 +214,12 @@ def main() -> int:
     elif args.hanzi:
         rows = [r for r in load_tsv('worksheet-rows.tsv') if r['hanzi'] == args.hanzi]
     elif args.dialogue:
-        rows = [r for r in load_tsv('dialogue-turns.tsv') if r['dialogue_id'] == args.dialogue]
+        rows = [r for r in selected_dialogue_rows() if r['dialogue_id'] == args.dialogue]
+    elif args.canonical_dialogues:
+        rows = selected_dialogue_rows(canonical_only=True)
+    elif args.authority:
+        print(json.dumps(load_json('../../SOURCE_AUTHORITY.json'), ensure_ascii=False, indent=2))
+        return 0
     elif args.issues:
         rows = load_json('discrepancies.json')
     elif args.pages:
