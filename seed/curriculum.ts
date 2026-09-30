@@ -4,11 +4,14 @@ import { exercises as lesson1Exercises } from '@/seed/exercises';
 import { grammarPoints as lesson1Grammar } from '@/seed/grammar';
 import { sentences as lesson1Sentences } from '@/seed/sentences';
 import { vocabulary as lesson1Vocabulary } from '@/seed/vocabulary';
+import { lesson4Vocabulary, lesson4Sentences, lesson4Grammar, lesson4Characters, lesson4Exercises, lesson4Units } from '@/seed/lesson4';
 import { normalizeAnswer, normalizePinyin } from '@/lib/pinyin';
 
 export const scopeDefinitions: Record<CurriculumScope, { label: string; shortLabel: string; lessonIds: LessonNumber[]; title: string; description: string }> = {
   l1: { label: 'Lección 1', shortLabel: 'L1', lessonIds: [1], title: '你最近怎么样？', description: 'Saludos, identidad y estados personales.' },
   l2: { label: 'Lección 2', shortLabel: 'L2', lessonIds: [2], title: '你是哪国人？', description: 'Nacionalidad, lenguas, presentaciones y comida.' },
+  l4: { label: 'Lección 4', shortLabel: 'L4', lessonIds: [4], title: '你几点有课？ · 你们班有多少人？', description: 'Horarios, clases, actividades y cantidades.' },
+  'l1-l2-l3-l4': { label: 'Lecciones 1 + 2 + 3 + 4', shortLabel: 'L1–L4', lessonIds: [1,2,3,4], title: 'Repaso acumulativo L1–L4', description: 'Repasa el curso hasta la Lección 4.' },
   l3: { label: 'Lección 3', shortLabel: 'L3', lessonIds: [3], title: '你家有几口人？', description: 'Familia, profesiones, clasificadores y edad.' },
   'l1-l2': { label: 'Lecciones 1 + 2', shortLabel: 'L1 + L2', lessonIds: [1, 2], title: 'Repaso acumulativo L1 + L2', description: 'Integra identidad, estados, nacionalidad, lenguas y comida.' },
   'l1-l2-l3': { label: 'Lecciones 1 + 2 + 3', shortLabel: 'L1 + L2 + L3', lessonIds: [1, 2, 3], title: 'Repaso acumulativo L1 + L2 + L3', description: 'Todo el corpus auditado del curso hasta la Lección 3.' },
@@ -231,7 +234,7 @@ export const lesson3Grammar: GrammarPoint[] = [
 export const lesson1HanziStages = hanziUnits.filter((unit) => unit.lesson === 1);
 export const lesson2HanziStages = hanziUnits.filter((unit) => unit.lesson === 2);
 export const lesson3HanziStages = hanziUnits.filter((unit) => unit.lesson === 3);
-const unitOrder: HanziUnitId[] = ['1.1','1.2','2.1','2.2','3.1','3.2'];
+const unitOrder: HanziUnitId[] = ['1.1','1.2','2.1','2.2','3.1','3.2','4.1','4.2'];
 const canonicalByHanzi = new Map(canonicalCharacters.map((character) => [character.hanzi,character]));
 
 function contextStage(text: string): HanziUnitId {
@@ -300,6 +303,7 @@ export const lesson2Exercises = makeLessonExercises(2, lesson2Vocabulary, lesson
 export const lesson3Exercises = makeLessonExercises(3, lesson3Vocabulary, lesson3Characters, lesson3Sentences, lesson3Grammar);
 
 const lessonData = {
+  4: { vocabulary: lesson4Vocabulary, sentences: lesson4Sentences, grammar: lesson4Grammar, characters: lesson4Characters, stages: lesson4Units, exercises: lesson4Exercises },
   1: { vocabulary: lesson1Vocabulary, sentences: lesson1Sentences, grammar: lesson1Grammar, characters: lesson1Characters, stages: lesson1HanziStages, exercises: lesson1Exercises },
   2: { vocabulary: lesson2Vocabulary, sentences: lesson2Sentences, grammar: lesson2Grammar, characters: lesson2Characters, stages: lesson2HanziStages, exercises: lesson2Exercises },
   3: { vocabulary: lesson3Vocabulary, sentences: lesson3Sentences, grammar: lesson3Grammar, characters: lesson3Characters, stages: lesson3HanziStages, exercises: lesson3Exercises },
@@ -312,16 +316,20 @@ export function getCurriculum(scope: CurriculumScope) {
   const vocabulary = uniqueBy(selected.flatMap((item) => item.vocabulary), (item) => item.id);
   const sentences = uniqueBy(selected.flatMap((item) => item.sentences), (item) => item.id);
   const grammar = uniqueBy(selected.flatMap((item) => item.grammar), (item) => item.id);
-  const characters = contextualizeCharacters(uniqueBy(selected.flatMap((item) => item.characters), (item) => item.id),vocabulary,sentences);
+  const characterSelection = uniqueBy(selected.flatMap((item) => item.characters), (item) => item.id);
+  const characters = contextualizeCharacters(characterSelection.map(item => {
+    const canonical = canonicalByHanzi.get(item.hanzi);
+    return canonical ? { ...item, introducedIn: canonical.introducedIn, appearsIn: canonical.appearsIn } : item;
+  }),vocabulary,sentences);
   const exercises = uniqueBy(selected.flatMap((item) => item.exercises), (item) => item.id);
   const stages = hanziUnits.filter((unit) => definition.lessonIds.includes(unit.lesson));
   return { scope, definition, vocabulary, sentences, grammar, characters, exercises, stages, units: stages };
 }
 
-export const allCurriculumExercises = uniqueBy([lesson1Exercises, lesson2Exercises, lesson3Exercises].flat(), (item) => item.id);
+export const allCurriculumExercises = uniqueBy([lesson1Exercises, lesson2Exercises, lesson3Exercises, lesson4Exercises].flat(), (item) => item.id);
 export const allCurriculumCharacters = contextualizeCharacters(
   canonicalCharacters,
-  [...lesson1Vocabulary,...lesson2Vocabulary,...lesson3Vocabulary],
-  [...lesson1Sentences,...lesson2Sentences,...lesson3Sentences],
+  [...lesson1Vocabulary,...lesson2Vocabulary,...lesson3Vocabulary,...lesson4Vocabulary],
+  [...lesson1Sentences,...lesson2Sentences,...lesson3Sentences,...lesson4Sentences],
 );
 export function exerciseForId(id: string) { return allCurriculumExercises.find((item) => item.id === id); }

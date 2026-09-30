@@ -7,6 +7,7 @@ const source = join(root, 'node_modules', 'hanzi-writer-data');
 const destination = join(root, 'public', 'hanzi-data');
 const licenses = join(root, 'public', 'licenses');
 const curriculum = JSON.parse(await readFile(join(root, 'data', 'lesson1-hanzi.json'), 'utf8'));
+const lesson4 = JSON.parse(await readFile(join(root, 'data', 'lesson4-public.json'), 'utf8'));
 const curricularCharacters = curriculum.units.flatMap((unit) => [
   ...unit.core,
   ...unit.teacherExtension,
@@ -23,7 +24,7 @@ try {
   // A first synchronization starts with an empty manifest.
 }
 
-const characters = [...new Set([...Object.keys(previousManifest), ...curricularCharacters])];
+const characters = [...new Set([...Object.keys(previousManifest), ...curricularCharacters, ...lesson4.characters.map(item => item.hanzi)])];
 const manifest = {};
 const added = [];
 for (const character of characters) {

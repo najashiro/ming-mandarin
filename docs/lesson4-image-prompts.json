@@ -1,0 +1,881 @@
+{
+  "styleId": "ming-vocabulary-transparent-subject-golden-v2",
+  "entries": [
+    {
+      "wordId": "v-累",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-今天",
+      "visual": {
+        "visual_mode": "visual_grammar",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-学生",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-早饭",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-语言",
+      "visual": {
+        "visual_mode": "phrase_context",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-有意思",
+      "visual": {
+        "visual_mode": "phrase_context",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-只",
+      "visual": {
+        "visual_mode": "visual_grammar",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-大学",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-现在",
+      "visual": {
+        "visual_mode": "visual_grammar",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-明天",
+      "visual": {
+        "visual_mode": "visual_grammar",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-下午",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-男生",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-去",
+      "visual": {
+        "visual_mode": "action_scene",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-电影",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-多少",
+      "visual": {
+        "visual_mode": "visual_grammar",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-说",
+      "visual": {
+        "visual_mode": "action_scene",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-上",
+      "visual": {
+        "visual_mode": "phrase_context",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-班",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-上午",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-多",
+      "visual": {
+        "visual_mode": "visual_grammar",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-特别",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-点（钟）",
+      "visual": {
+        "visual_mode": "visual_grammar",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-半",
+      "visual": {
+        "visual_mode": "visual_grammar",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-语法",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-汉字",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-下",
+      "visual": {
+        "visual_mode": "visual_grammar",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-刻",
+      "visual": {
+        "visual_mode": "visual_grammar",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-口语",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-对了",
+      "visual": {
+        "visual_mode": "phrase_context",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-对",
+      "visual": {
+        "visual_mode": "visual_grammar",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-时间",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-一起",
+      "visual": {
+        "visual_mode": "visual_grammar",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-吧",
+      "visual": {
+        "visual_mode": "visual_grammar",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-恐怕",
+      "visual": {
+        "visual_mode": "phrase_context",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-行",
+      "visual": {
+        "visual_mode": "phrase_context",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-练习",
+      "visual": {
+        "visual_mode": "action_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-差",
+      "visual": {
+        "visual_mode": "visual_grammar",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-分",
+      "visual": {
+        "visual_mode": "visual_grammar",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-回",
+      "visual": {
+        "visual_mode": "action_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-学校",
+      "visual": {
+        "visual_mode": "literal_photo",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-活动",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-听说",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-听",
+      "visual": {
+        "visual_mode": "action_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-女生",
+      "visual": {
+        "visual_mode": "literal_photo",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-男",
+      "visual": {
+        "visual_mode": "visual_grammar",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-少",
+      "visual": {
+        "visual_mode": "visual_grammar",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-意思",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-来",
+      "visual": {
+        "visual_mode": "action_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-专业",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-主意",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-零",
+      "visual": {
+        "visual_mode": "visual_grammar",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-起床",
+      "visual": {
+        "visual_mode": "action_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-午饭",
+      "visual": {
+        "visual_mode": "literal_photo",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-运动",
+      "visual": {
+        "visual_mode": "action_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-打球",
+      "visual": {
+        "visual_mode": "action_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-跑步",
+      "visual": {
+        "visual_mode": "action_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-电视",
+      "visual": {
+        "visual_mode": "literal_photo",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "ready_to_generate",
+      "reason": "Concrete subject/action suitable for a transparent cutout.",
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for Ming: 电视 (diànshì), televisión; TV. Style ming-vocabulary-transparent-subject-golden-v2. One complete unbranded television, dark glass screen turned off, thin bezel and two complete feet. No remote or other objects. Photorealistic natural daylight and realistic materials. True transparent alpha background; no room, floor, scenery, colored background, checkerboard, text, logos, UI or symbols. Golden-ratio landscape canvas target 1618x1000. Complete subject on right half x46–96%, y3–96%; left half reserved for live HTML text. Transparent canvas corners; no cropping. Only the isolated subject."
+    },
+    {
+      "wordId": "v-晚饭",
+      "visual": {
+        "visual_mode": "literal_photo",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-睡觉",
+      "visual": {
+        "visual_mode": "action_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "ready_to_generate",
+      "reason": "Concrete subject/action suitable for a transparent cutout.",
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for Ming: 睡觉 (shuìjiào), dormir; acostarse. Style ming-vocabulary-transparent-subject-golden-v2. One adult sleeping peacefully on their side in a complete simple single bed, eyes closed, head on pillow, blanket covering body. Only person, mattress, pillow, blanket and bed frame; all corners visible. Photorealistic natural daylight and realistic materials. True transparent alpha background; no room, floor, scenery, colored background, checkerboard, text, logos, UI or symbols. Golden-ratio landscape canvas target 1618x1000. Complete subject on right half x46–96%, y3–96%; left half reserved for live HTML text. Transparent canvas corners; no cropping. Only the isolated subject."
+    },
+    {
+      "wordId": "v-听力",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-文学",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-历史",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-经济",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-文化",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-容易",
+      "visual": {
+        "visual_mode": "visual_grammar",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-难",
+      "visual": {
+        "visual_mode": "visual_grammar",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-很多",
+      "visual": {
+        "visual_mode": "visual_grammar",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-口语考试",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-回家",
+      "visual": {
+        "visual_mode": "action_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-回国",
+      "visual": {
+        "visual_mode": "action_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-回学校",
+      "visual": {
+        "visual_mode": "action_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-里卡多帕尔玛大学",
+      "visual": {
+        "visual_mode": "none",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    },
+    {
+      "wordId": "v-觉得",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "not_selected",
+      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "prompt": null
+    }
+  ]
+}

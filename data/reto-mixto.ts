@@ -255,7 +255,7 @@ for (const [hanzi, pinyin, meaningEs, lesson, category, source] of extraRows) {
   merge({ hanzi, pinyin: normalizePinyin(pinyin), meaningEs, lesson, lessons: [lesson], sources: [source], category, distractorGroup: semanticGroups[hanzi] ?? `ppt-${lesson}` });
 }
 
-for (const character of characters) {
+for (const character of characters.filter(item => !item.introducedIn.startsWith('4.'))) {
   const lesson = Number(character.introducedIn[0]) as LessonNumber;
   merge({
     hanzi: character.hanzi,

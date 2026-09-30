@@ -24,7 +24,13 @@
     "images:vocabulary:publish": "node scripts/publish-vocabulary-images.mjs",
     "hanzi:sync": "node scripts/sync-hanzi-data.mjs",
     "audit:pinyin": "node scripts/audit-pinyin.mjs",
-    "audit:reto-mixto": "vitest run tests/unit/reto-mixto.test.ts"
+    "audit:reto-mixto": "vitest run tests/unit/reto-mixto.test.ts",
+    "corpus:l4": "python -X utf8 scripts/export-lesson4-web.py",
+    "corpus:l4:check": "python -X utf8 scripts/export-lesson4-web.py --check",
+    "audio:l4:prepare": "node scripts/prepare-lesson4-audio.mjs",
+    "audio:l4": "node scripts/generate-pronunciation-audio.mjs --scope=lesson4",
+    "audio:l4:verify": "node scripts/verify-lesson4-audio.mjs --publish",
+    "images:l4": "node scripts/lesson4-images.mjs"
   },
   "dependencies": {
     "hanzi-writer": "3.7.3",

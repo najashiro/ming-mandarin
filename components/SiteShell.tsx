@@ -13,13 +13,13 @@ export async function SiteShell({ children }: { children: React.ReactNode }) {
       <header className="topbar">
         <Link className="brand" href="/" aria-label="Míng, inicio"><span className="brand-mark" aria-hidden="true"><Hanzi>明</Hanzi></span><span><strong>Míng</strong><small>Mandarín activo</small></span></Link>
         <nav className="desktop-nav" aria-label="Navegación principal">
-          <Link href="/study/l1-l2-l3">Curso</Link><Link href="/study/l1-l2-l3/radicals">Radicales</Link><Link href="/study/l1-l2-l3/daily">Práctica</Link><Link href="/study/l1-l2-l3/games">Juegos</Link><Link href="/progress">Progreso</Link>
+          <Link href="/study/l1-l2-l3-l4">Curso</Link><Link href="/study/l1-l2-l3-l4/radicals">Radicales</Link><Link href="/study/l1-l2-l3-l4/daily">Práctica</Link><Link href="/study/l1-l2-l3-l4/games">Juegos</Link><Link href="/progress">Progreso</Link>
         </nav>
         <Link className="profile-chip" href={user ? '/profile' : signInPath('/profile')}><span aria-hidden="true"><Hanzi>学</Hanzi></span><b>{user ? user.displayName : 'Guardar progreso'}</b></Link>
       </header>
       {children}
-      <footer className="site-footer shell"><div><b><Hanzi>明 Míng</Hanzi></b><p>Lecciones 1–3 · aprendizaje persistente y verificable.</p></div><nav><Link href="/leaderboard">Ranking</Link><Link href="/errors">Errores</Link>{isAdmin && <><Link href="/admin/content">Fuentes</Link><Link href="/admin/images">Imágenes</Link><Link href="/admin/community">Comunidad</Link><Link href="/admin/analytics">Analítica</Link></>}</nav></footer>
-      <nav className="mobile-nav" aria-label="Navegación móvil"><Link href="/"><span>⌂</span>Inicio</Link><Link href="/study/l1-l2-l3"><span><Hanzi>路</Hanzi></span>Curso</Link><Link href="/study/l1-l2-l3/daily"><span><Hanzi>练</Hanzi></span>Práctica</Link><Link href="/study/l1-l2-l3/games"><span><Hanzi>游</Hanzi></span>Juegos</Link><Link href="/progress"><span><Hanzi>升</Hanzi></span>Progreso</Link></nav>
+      <footer className="site-footer shell"><div><b><Hanzi>明 Míng</Hanzi></b><p>Lecciones 1–4 · aprendizaje persistente y verificable.</p></div><nav><Link href="/leaderboard">Ranking</Link><Link href="/errors">Errores</Link>{isAdmin && <><Link href="/admin/content">Fuentes</Link><Link href="/admin/images">Imágenes</Link><Link href="/admin/community">Comunidad</Link><Link href="/admin/analytics">Analítica</Link></>}</nav></footer>
+      <nav className="mobile-nav" aria-label="Navegación móvil"><Link href="/"><span>⌂</span>Inicio</Link><Link href="/study/l1-l2-l3-l4"><span><Hanzi>路</Hanzi></span>Curso</Link><Link href="/study/l1-l2-l3-l4/daily"><span><Hanzi>练</Hanzi></span>Práctica</Link><Link href="/study/l1-l2-l3-l4/games"><span><Hanzi>游</Hanzi></span>Juegos</Link><Link href="/progress"><span><Hanzi>升</Hanzi></span>Progreso</Link></nav>
     </>
   );
 }

@@ -19,3 +19,6 @@ Base de Datos/
 *.log
 
 __pycache__/
+
+# Local AST graph and cache, regenerated with graphify update .
+graphify-out/

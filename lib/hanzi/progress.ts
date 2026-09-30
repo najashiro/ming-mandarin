@@ -2,7 +2,7 @@ import type { CharacterEntry, HanziStageId } from '@/data/types';
 import type { HanziLearningState, HanziLocalProgress, HanziProgressEntry, HanziProgressMap, HanziSkillDimension } from './types';
 
 export const HANZI_MASTERY_THRESHOLD = 80;
-const curricularOrder: HanziStageId[] = ['1.1','1.2','2.1','2.2','3.1','3.2'];
+const curricularOrder: HanziStageId[] = ['1.1','1.2','2.1','2.2','3.1','3.2','4.1','4.2'];
 const WEAK_DIMENSION_THRESHOLD = 50;
 const LOW_STABILITY_THRESHOLD = 1;
 const dimensions: HanziSkillDimension[] = ['recognition', 'stroke_order', 'writing'];

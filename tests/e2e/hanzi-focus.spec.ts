@@ -10,6 +10,8 @@ test('el selector superior ofrece lecciones simples y acumuladas', async ({ page
     'Lección 1',
     'Lección 2',
     'Lección 3',
+    'Lección 4',
+    'Lección 4 acumulado',
     'Lección 2 acumulado',
     'Lección 3 acumulado',
   ]);

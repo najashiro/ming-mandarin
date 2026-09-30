@@ -1,3 +1,4 @@
+import { lesson4Characters, lesson4Units } from '@/seed/lesson4';
 import curriculum from '@/data/lesson1-hanzi.json' with { type: 'json' };
 import manifest from '@/public/hanzi-data/manifest.json' with { type: 'json' };
 import type {
@@ -42,6 +43,7 @@ export const hanziUnits: HanziUnitDefinition[] = rawUnits.map((unit) => ({
   description: unit.description,
   characters: [...new Set(roles.flatMap((role) => uniqueCharacters(unit[role])))],
 }));
+hanziUnits.push(...lesson4Units);
 export const hanziUnitIds = hanziUnits.map((unit) => unit.id);
 export function isHanziUnitId(value: string): value is HanziUnitId { return hanziUnitIds.includes(value as HanziUnitId); }
 
@@ -122,6 +124,12 @@ export const canonicalCharacters: CharacterEntry[] = order.map((hanzi, curricula
     words:[],
   };
 });
+
+for (const incoming of lesson4Characters) {
+  const existing = canonicalCharacters.find(character => character.id === incoming.id);
+  if (existing) existing.appearsIn = [...new Set([...existing.appearsIn, ...incoming.appearsIn])];
+  else canonicalCharacters.push({ ...incoming, curricularOrder: canonicalCharacters.length });
+}
 
 export const hanziSourceGroups: Record<HanziSourceCode, string[]> = Object.fromEntries(
   hanziUnits.map((unit) => [unit.id, unit.characters]),
