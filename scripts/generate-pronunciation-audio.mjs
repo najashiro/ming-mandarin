@@ -7,11 +7,12 @@ import { fileURLToPath } from 'node:url';
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectDirectory = path.resolve(scriptDirectory, '..');
 const manifestDefinitions = [
+  { path: path.join(projectDirectory, 'data', 'lesson4-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin'), scope: 'lesson4' },
   { path: path.join(projectDirectory, 'data', 'pronunciation.json'), directory: path.join(projectDirectory, 'public', 'audio', 'pinyin') },
   { path: path.join(projectDirectory, 'data', 'mandarin-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin') },
   { path: path.join(projectDirectory, 'data', 'time-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin'), scope: 'time' },
 ];
-const localEnvironment = path.join(projectDirectory, '.env.audio.local');
+const localEnvironment = process.env.OPENAI_ENV_FILE || path.join(projectDirectory, '.env.audio.local');
 
 if (existsSync(localEnvironment)) process.loadEnvFile(localEnvironment);
 
@@ -22,7 +23,7 @@ const scope = process.argv.find((argument) => argument.startsWith('--scope='))?.
 const only = process.argv.find((argument) => argument.startsWith('--only='))?.split('=', 2)[1];
 const idsFile = process.argv.find((argument) => argument.startsWith('--ids-file='))?.split('=', 2)[1];
 const checkpointDirectory = process.argv.find((argument) => argument.startsWith('--checkpoint-dir='))?.split('=', 2)[1];
-const voice = 'marin';
+const voice = process.env.OPENAI_TTS_VOICE || 'marin';
 
 if (!apiKey && !dryRun) {
   console.error('Falta OPENAI_API_KEY. Configúrala en la terminal o en .env.audio.local; nunca la copies al repositorio ni al navegador.');
@@ -83,7 +84,7 @@ while (cursor < selectedClips.length) {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      model: 'gpt-4o-mini-tts',
+      model: process.env.OPENAI_TTS_MODEL || 'gpt-4o-mini-tts',
       voice,
       input: clip.input,
       instructions: `${baseInstructions} ${clip.instructions}`,
@@ -109,6 +110,6 @@ while (cursor < selectedClips.length) {
   if (generated % 25 === 0) console.log(`Generados: ${generated}/${selectedClips.length}`);
 }
 }
-await Promise.all(Array.from({ length: scope === 'time' ? 3 : 1 }, () => generateNext()));
+await Promise.all(Array.from({ length: scope === 'time' || scope === 'lesson4' ? 3 : 1 }, () => generateNext()));
 
 console.log(`Listo: ${generated} clips nuevos; ${selectedClips.length - generated} ya existentes.`);

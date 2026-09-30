@@ -17,7 +17,7 @@ const modes = ['Palabras', 'Audio', 'Significado', 'Radical', 'Componentes', 'Re
 type Mode = typeof modes[number];
 export function HanziLabGame({ characters, scope }: { characters: CharacterEntry[]; scope: CurriculumScope }) {
   const [mode, setMode] = useState<Mode>('Audio');
-  const pool = characters.filter(item => mode === 'Componentes' ? item.componentsAudited && item.components.length > 1 : mode === 'Radical' ? item.radicalAudited && item.radical : true);
+  const pool = characters.filter(item => mode === 'Componentes' ? item.componentsAudited && item.components.length > 1 : mode === 'Radical' ? item.radicalAudited && item.radical : mode === 'Significado' ? Boolean(item.meaning) : true);
   return <div><nav className="game-modes" aria-label="Modos Hanzi">{modes.map(value => <button aria-pressed={mode === value} key={value} onClick={() => setMode(value)}>{value}</button>)}</nav>{mode === 'Palabras' ? <WordListening scope={scope} characters={characters}/> : pool.length ? <HanziSession key={mode} characters={pool} scope={scope} mode={mode}/> : <p>No hay datos auditados para este modo en la unidad seleccionada.</p>}</div>;
 }
 function HanziSession({ characters, scope, mode }: { characters: CharacterEntry[]; scope: CurriculumScope; mode: Mode }) {

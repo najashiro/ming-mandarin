@@ -1,3 +1,5 @@
+import lesson4Audio from '@/data/lesson4-audio.json';
+import lesson4Available from '@/data/lesson4-audio-available.json';
 import manifest from '@/data/mandarin-audio.json';
 import pronunciation from '@/data/pronunciation.json';
 import availableMandarin from '@/data/mandarin-audio-available.json';
@@ -6,6 +8,7 @@ import { timeAudioFile } from './time-audio-key.mjs';
 
 const normalizeMandarin = (value: string) => value.normalize('NFC').replace(/[^\u3400-\u9fff]/g, '');
 const clipsByText = new Map<string, string>();
+const lesson4ByText = new Map<string, string>();
 const clipsByReading = new Map<string, string>();
 const readingKey = (text: string, pinyin: string) => `${normalizeMandarin(text)}:${pinyin.normalize('NFC').toLowerCase().replace(/[\s'’ʼ.,!?]/g, '')}`;
 const availableFiles = new Set(availableMandarin.files);
@@ -22,6 +25,14 @@ for (const clip of manifest.clips) {
   }
 }
 
+for (const clip of lesson4Audio.clips) {
+  if (!(lesson4Available.files as string[]).includes(clip.file)) continue;
+  const src = `/audio/mandarin/${clip.file}`;
+  // Keep established generic readings. Explicit readings disambiguate L4.
+  lesson4ByText.set(normalizeMandarin(clip.input), src);
+  if (clip.expectedPinyin && !clipsByReading.has(readingKey(clip.input, clip.expectedPinyin))) clipsByReading.set(readingKey(clip.input, clip.expectedPinyin), src);
+}
+
 export function audioForMandarinText(text: string, pinyin?: string): string | undefined {
   if (pinyin) return clipsByReading.get(readingKey(text, pinyin));
   const clean=normalizeMandarin(text);
@@ -30,7 +41,7 @@ export function audioForMandarinText(text: string, pinyin?: string): string | un
   if(clean==='现在几点')return `/audio/mandarin/${timeAudioFile('现在几点？','q')}`;
   if(text.startsWith('现在')&&text.length>2)return `/audio/mandarin/${timeAudioFile(text,'s')}`;
   if(timeTokens.some(token=>token.hanzi===text))return `/audio/mandarin/${timeAudioFile(text,'t')}`;
-  return undefined;
+  return lesson4ByText.get(clean);
 }
 
 export function hasMandarinAudio(text: string): boolean {

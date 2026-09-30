@@ -142,14 +142,14 @@ describe('Reto Mixto', () => {
       expect(deck).toHaveLength(30);
       for (const question of deck) {
         expect(question.lessonIds).toEqual(lessonIds);
-        expect(retoMixtoCorpus.find((entry) => entry.id === question.entryId)?.lessons.some((lesson) => lessonIds.includes(lesson)), `${lessonIds.join('+')} · ${question.id}`).toBe(true);
+        expect(retoMixtoCorpus.find((entry) => entry.id === question.entryId)?.lessons.some((lesson) => (lessonIds as number[]).includes(lesson)), `${lessonIds.join('+')} · ${question.id}`).toBe(true);
         for (const optionId of question.optionIds) {
-          expect(retoMixtoCorpus.find((entry) => entry.id === optionId)?.lessons.some((lesson) => lessonIds.includes(lesson))).toBe(true);
+          expect(retoMixtoCorpus.find((entry) => entry.id === optionId)?.lessons.some((lesson) => (lessonIds as number[]).includes(lesson))).toBe(true);
         }
       }
       const retry = retryQuestion(deck[0], retoMixtoCorpus, retoMixtoConversations, () => 0.55);
       for (const optionId of retry.optionIds) {
-        expect(retoMixtoCorpus.find((entry) => entry.id === optionId)?.lessons.some((lesson) => lessonIds.includes(lesson))).toBe(true);
+        expect(retoMixtoCorpus.find((entry) => entry.id === optionId)?.lessons.some((lesson) => (lessonIds as number[]).includes(lesson))).toBe(true);
       }
     }
   });

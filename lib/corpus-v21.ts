@@ -1,4 +1,4 @@
-import corpus from '@/data/corpus-v21-public.json';
+import corpus, { lesson4 } from '@/lib/active-corpus';
 import type { CurriculumScope } from '@/data/types';
 import { scopeDefinitions } from '@/seed/curriculum';
 
@@ -12,7 +12,7 @@ export type PublicRadical = (typeof corpus.radicals)[number];
 export function publicCorpusForScope(scope: CurriculumScope) {
   const lessons = new Set<number>(scopeDefinitions[scope].lessonIds);
   return {
-    vocabulary: corpus.vocabulary.filter((row) => row.curriculumLinks.some((link) => lessons.has(link.lesson))),
+    vocabulary: [...corpus.vocabulary.filter(word => !lessons.has(4) || !lesson4.vocabulary.some(l4 => l4.id === word.id)), ...(lessons.has(4) ? lesson4.vocabulary : [])].filter((row) => row.curriculumLinks.some((link) => lessons.has(link.lesson))),
     phrases: corpus.phrases.filter((row) => row.lessons.some((lesson) => lessons.has(lesson))),
     dialogues: corpus.dialogues.filter((row) => lessons.has(row.lesson)),
     radicals: corpus.radicals.filter((row) => row.lessons.some((lesson) => lessons.has(lesson))).map((row) => ({

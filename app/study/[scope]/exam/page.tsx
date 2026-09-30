@@ -12,7 +12,7 @@ export default async function ScopeExamPage({params,searchParams}:{params:Promis
   const data = getCurriculum(rawScope);
   const activeUnit = query.unit && isHanziUnitId(query.unit) && data.stages.some((unit) => unit.id === query.unit) ? query.unit : undefined;
   return <SiteShell><main>
-    <LessonHeader eyebrow={`${data.definition.shortLabel} · 测验`} title="Examen · 100 puntos" description={activeUnit?`20 preguntas del corpus Hanzi de ${activeUnit} · Texto ${activeUnit.endsWith('.1')?'1':'2'}.`:'20 preguntas, ocho competencias y corrección en el servidor.'}/>
+    <LessonHeader eyebrow={`${data.definition.shortLabel} · 测验`} title="Examen · 100 puntos" description={activeUnit?`20 preguntas del corpus Hanzi de ${activeUnit} · Texto ${activeUnit.endsWith('.1')?'1':'2'}.`:data.definition.lessonIds.includes(4) ? '20 preguntas de vocabulario y pinyin con corrección en el servidor.' : '20 preguntas, ocho competencias y corrección en el servidor.'}/>
     <CurriculumNav scope={rawScope} section="exam"/>
     <HanziUnitNav basePath={`/study/${rawScope}/exam`} units={data.stages} active={activeUnit}/>
     <section className="shell narrow"><ExamClient scope={activeUnit??rawScope}/></section>

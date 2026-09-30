@@ -1,6 +1,7 @@
 import 'server-only';
 import { createHash } from 'node:crypto';
 import promptCatalog from '@/docs/vocabulary-image-prompts.json';
+import lesson4Prompts from '@/docs/lesson4-image-prompts.json';
 import { vocabularyCatalog, getVocabularyLesson } from '@/lib/vocabulary';
 import { splitImageCorrection, withImageCorrection } from '@/lib/image-prompt-correction';
 import { vocabularyMedia, type VocabularyMediaEntry } from '@/lib/vocabulary-media';
@@ -14,7 +15,8 @@ export type AdminVocabularyImageEntry = VocabularyMediaEntry & {
   reviewStatus: ImageReviewStatus; reviewedAt: string | null; revision: number;
   lesson: number | null; correction: string;
 };
-const prompts = new Map(promptCatalog.entries.map(entry => [entry.wordId, entry]));
+const prompts = new Map<string, { prompt: string; hanzi?: string; pinyin?: string; spanish?: string }>(promptCatalog.entries.map(entry => [entry.wordId, entry]));
+for (const entry of lesson4Prompts.entries) if (entry.prompt) prompts.set(entry.wordId, { prompt: entry.prompt });
 const words = new Map(vocabularyCatalog.map(word => [word.id, word]));
 const digest = (prompt: string) => createHash('sha256').update(prompt).digest('hex');
 const columns = 'word_id,status,prompt,asset_sha256,prompt_sha256,revision,reviewed_at';

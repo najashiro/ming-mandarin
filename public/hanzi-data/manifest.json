@@ -822,5 +822,113 @@
   "物": {
     "available": true,
     "strokeCount": 8
+  },
+  "明": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "多": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "少": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "特": {
+    "available": true,
+    "strokeCount": 10
+  },
+  "别": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "对": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "时": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "间": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "电": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "影": {
+    "available": true,
+    "strokeCount": 15
+  },
+  "起": {
+    "available": true,
+    "strokeCount": 10
+  },
+  "恐": {
+    "available": true,
+    "strokeCount": 10
+  },
+  "怕": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "行": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "练": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "现": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "回": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "来": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "校": {
+    "available": true,
+    "strokeCount": 10
+  },
+  "活": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "动": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "听": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "意": {
+    "available": true,
+    "strokeCount": 13
+  },
+  "思": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "专": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "业": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "主": {
+    "available": true,
+    "strokeCount": 5
   }
 }

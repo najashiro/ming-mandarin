@@ -10,13 +10,13 @@ import type { HanziSourceCode } from '@/data/types';
 import { PinyinText } from '@/components/PinyinText';
 
 const filters: Array<['all' | HanziSourceCode, string]> = [
-  ['all','Todos'],['1.1','1.1 · Texto 1'],['1.2','1.2 · Texto 2'],['2.1','2.1 · Texto 1'],['2.2','2.2 · Texto 2'],['3.1','3.1 · Texto 1'],['3.2','3.2 · Texto 2'],
+  ['all','Todos'],['1.1','1.1 · Texto 1'],['1.2','1.2 · Texto 2'],['2.1','2.1 · Texto 1'],['2.2','2.2 · Texto 2'],['3.1','3.1 · Texto 1'],['3.2','3.2 · Texto 2'],['4.1','4.1 · Texto 1'],['4.2','4.2 · Texto 2'],
 ];
 
 export default async function AdminContent({ searchParams }: { searchParams: Promise<{ source?: string }> }) {
   const [, query] = await Promise.all([requireAdmin('/admin/content'), searchParams]);
   const active = filters.some(([code]) => code === query.source) ? query.source as 'all' | HanziSourceCode : 'all';
-  const curriculum=getCurriculum('l1-l2-l3');
+  const curriculum=getCurriculum('l1-l2-l3-l4');
   const generalSources = [...curriculum.vocabulary, ...curriculum.sentences, ...curriculum.grammar];
   const filteredCharacters = active === 'all' ? curriculum.characters : curriculum.characters.filter((item) => item.appearsIn.includes(active));
   return <SiteShell><main>
@@ -25,7 +25,7 @@ export default async function AdminContent({ searchParams }: { searchParams: Pro
     <section className="audit-summary shell"><article><b>{curriculum.vocabulary.length}</b> palabras</article><article><b>{curriculum.sentences.length}</b> frases</article><article><b>{curriculum.grammar.length}</b> reglas</article><article><b>{curriculum.characters.length}</b> Hanzi curriculares</article></section>
     <div className="audit-table shell"><div className="audit-head"><span>Elemento</span><span>Tipo</span><span>Archivo</span><span>Página</span></div>{generalSources.map((item, index) => <div key={`${item.id}-${index}`}><b><Hanzi>{'hanzi' in item ? String(item.hanzi) : 'title' in item ? String(item.title) : ''}</Hanzi></b><span>{item.source.type}</span><span>{item.source.file}</span><span>PDF {item.source.pdfPage}{item.source.printedPage ? ` / imp. ${item.source.printedPage}` : ''}</span></div>)}</div>
 
-    <section className="shell admin-hanzi-section"><h2>Currículo Hanzi · Lecciones 1–3</h2><p className="source-note">Fuente canónica única organizada por Lección + Texto. Un Hanzi reutilizado conserva el mismo ID y puede aparecer en varias unidades.</p>
+    <section className="shell admin-hanzi-section"><h2>Currículo Hanzi · Lecciones 1–4</h2><p className="source-note">Fuente canónica única organizada por Lección + Texto. Un Hanzi reutilizado conserva el mismo ID y puede aparecer en varias unidades.</p>
       <nav className="admin-source-filters" aria-label="Filtrar por hoja Hanzi">{filters.map(([code, label]) => <Link className={active === code ? 'selected' : ''} href={code === 'all' ? '/admin/content' : `/admin/content?source=${code}`} key={code}>{label}<small>{code === 'all' ? curriculum.characters.length : hanziSourceGroups[code].length}</small></Link>)}</nav>
     </section>
     <div className="audit-table hanzi-audit-table shell"><div className="audit-head"><span><Hanzi>汉字</Hanzi></span><span>Pinyin</span><span>Significado</span><span>Introducido</span><span>Trazos</span><span>Aparece en</span><span>Rol / fuente</span><span>Escritura</span><span>Radical</span><span>Componentes</span><span>Datos</span></div>{filteredCharacters.map((item) => {

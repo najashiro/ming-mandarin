@@ -3,7 +3,8 @@ import { Hanzi } from '@/components/Hanzi';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { CurriculumScope, LessonNumber } from '@/data/types';
-import { retoMixtoConversations, retoMixtoCorpus, type RetoMixtoEntry, type RetoMixtoMode } from '@/data/reto-mixto';
+import { retoMixtoForScope } from '@/data/reto-mixto-lesson4';
+import { retoMixtoConversations, type RetoMixtoEntry, type RetoMixtoMode } from '@/data/reto-mixto';
 import { audioForMandarinText } from '@/lib/mandarin-audio';
 import { buildRetoMixtoDeck, buildRetoMixtoWritingDeck, insertRetry, isSilentRetoMixtoToken, primaryRetoMixtoHanziTarget, retryQuestion, type RetoMixtoQuestion } from '@/lib/reto-mixto';
 import { trackAnalyticsEvent } from '@/lib/analytics/client';
@@ -30,6 +31,8 @@ const selectionDefinitions = [
   { id: 'l1', label: 'L1', lessons: [1] },
   { id: 'l2', label: 'L2', lessons: [2] },
   { id: 'l3', label: 'L3', lessons: [3] },
+  { id: 'l4', label: 'L4', lessons: [4] },
+  { id: 'l1-l2-l3-l4', label: 'L1–L4', lessons: [1,2,3,4] },
   { id: 'l1-l2', label: 'L1 + L2', lessons: [1, 2] },
   { id: 'l1-l2-l3', label: 'L1 + L2 + L3', lessons: [1, 2, 3] },
 ] as const;
@@ -37,7 +40,7 @@ const selectionDefinitions = [
 type SelectionId = typeof selectionDefinitions[number]['id'];
 
 const lessonsByScope: Record<CurriculumScope, LessonNumber[]> = {
-  l1: [1], l2: [2], l3: [3], 'l1-l2': [1, 2], 'l1-l2-l3': [1, 2, 3],
+  l4: [4], 'l1-l2-l3-l4': [1,2,3,4], l1: [1], l2: [2], l3: [3], 'l1-l2': [1, 2], 'l1-l2-l3': [1, 2, 3],
 };
 
 function normalizeChinese(value: string) {
@@ -64,9 +67,10 @@ function modePrompt(mode: RetoMixtoMode) {
 }
 
 export function RetoMixto({ scope, onClose }: Props) {
-  const entriesById = useMemo(() => new Map(retoMixtoCorpus.map((entry) => [entry.id, entry])), []);
-  const [phase, setPhase] = useState<Phase>('setup');
   const [selection, setSelection] = useState<SelectionId>(scope);
+  const retoMixtoCorpus = useMemo(() => retoMixtoForScope(selection), [selection]);
+  const entriesById = useMemo(() => new Map(retoMixtoCorpus.map((entry) => [entry.id, entry])), [retoMixtoCorpus]);
+  const [phase, setPhase] = useState<Phase>('setup');
   const [roundCount, setRoundCount] = useState<10 | 20 | 30>(10);
   const [level, setLevel] = useState<'basic' | 'advanced'>('basic');
   const [queue, setQueue] = useState<RetoMixtoQuestion[]>([]);

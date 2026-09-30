@@ -69,7 +69,7 @@ export type CharacterEntry = {
   words?: CharacterWord[];
 };
 
-export type HanziUnitId = '1.1' | '1.2' | '2.1' | '2.2' | '3.1' | '3.2';
+export type HanziUnitId = '1.1' | '1.2' | '2.1' | '2.2' | '3.1' | '3.2' | '4.1' | '4.2';
 
 // Alias temporal para consumidores internos durante la migración. Ya no representa
 // una etapa arbitraria: siempre contiene el identificador real Texto 1 / Texto 2.
@@ -112,8 +112,8 @@ export type Exercise = {
   source: SourceRef;
 };
 
-export type LessonNumber = 1 | 2 | 3;
-export type CurriculumScope = 'l1' | 'l2' | 'l3' | 'l1-l2' | 'l1-l2-l3';
+export type LessonNumber = 1 | 2 | 3 | 4;
+export type CurriculumScope = 'l1' | 'l2' | 'l3' | 'l4' | 'l1-l2' | 'l1-l2-l3' | 'l1-l2-l3-l4';
 export type HanziAssessmentScope = CurriculumScope | HanziUnitId;
 
 export type ListeningEntry = {

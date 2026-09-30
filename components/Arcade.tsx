@@ -55,7 +55,7 @@ export function Arcade({ hanziCharacters, listeningEntries, scope, playerName, c
 
 
   return <div className="arcade-root" ref={rootRef}>
-    <section className="game-grid ming-games-grid shell">{games.map((item, index) => <article key={item.id} data-game={item.id}>
+    <section className="game-grid ming-games-grid shell">{games.map((item, index) => scope === 'l4' && ['scene','conversation','story'].includes(item.kind) ? null : <article key={item.id} data-game={item.id}>
       <span>{String(index + 1).padStart(2, '0')}</span>
       {(item.kind === 'mixed' || item.kind === 'time') && <button className="game-share-button" type="button" onClick={() => void shareGame(item.id)} aria-label={`Compartir ${item.name}`} title={`Compartir ${item.name}`} data-share-path={`/study/${scope}/games?game=${item.id}`}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.3 10.8 7.4-4.6m-7.4 7 7.4 4.6"/></svg></button>}
       {item.cover ? <div className="game-thumbnail game-cover" aria-hidden="true"><Image src={item.cover} alt="" fill loading={index === 0 ? 'eager' : 'lazy'} sizes="(max-width: 440px) 100vw, (max-width: 700px) 50vw, 33vw"/></div> : <div className={`game-thumbnail thumbnail-${item.kind}`} aria-hidden="true">{item.kind === 'hanzi' ? <Hanzi>字</Hanzi> : item.kind === 'story' ? <span>▤ ⌕</span> : <><Person index={index}/><span>{item.kind === 'conversation' ? '•••' : '＋'}</span></>}</div>}

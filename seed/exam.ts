@@ -60,6 +60,10 @@ export function examQuestionsForSeed(seed: string): ExamQuestion[] {
 
 function unitExamQuestions(seed: string, scope: HanziUnitId): ExamQuestion[] {
   const characters = charactersForUnits([scope]);
+  if (scope.startsWith('4.')) return Array.from({ length: 20 }, (_, index) => {
+    const item = characters[(seedIndex(seed, 'l4-unit', characters.length) + index) % characters.length];
+    return { id: `e-${scope}-${index + 1}`, section: 'hanzi', points: 5, prompt: `¿Cuántos trazos tiene ${item.hanzi}?`, answer: String(item.strokeCount) };
+  });
   const character = (index: number) => characters[seedIndex(seed, `unit-character-${index}`, characters.length)];
   const meaningOptions = (index: number) => {
     const start = seedIndex(seed, `unit-distractor-${index}`, characters.length);
@@ -78,7 +82,16 @@ function unitExamQuestions(seed: string, scope: HanziUnitId): ExamQuestion[] {
 
 export function examQuestionsForScope(seed: string, scope: HanziAssessmentScope = 'l1'): ExamQuestion[] {
   if (isHanziUnitId(scope)) return unitExamQuestions(seed,scope);
-  const { vocabulary, sentences, grammar, characters } = getCurriculum(scope);
+  const curriculum = getCurriculum(scope);
+  if (curriculum.definition.lessonIds.includes(4)) {
+    const eligible = curriculum.exercises.filter(item => item.type === 'choice' || item.type === 'pinyin');
+    return Array.from({ length: 20 }, (_, index) => {
+      const item = eligible[(seedIndex(seed, 'l4-start', eligible.length) + index) % eligible.length];
+      return { id: `e-${scope}-${index + 1}`, section: item.type === 'pinyin' ? 'pinyin' : 'vocabulary', points: 5,
+        prompt: item.prompt, answer: item.answer, options: item.options } as ExamQuestion;
+    });
+  }
+  const { vocabulary, sentences, grammar, characters } = curriculum;
   const word = (index: number) => vocabulary[seedIndex(seed, `word-${index}`, vocabulary.length)];
   const phrase = (index: number) => sentences[seedIndex(seed, `sentence-${index}`, sentences.length)];
   const rule = (index: number) => grammar[seedIndex(seed, `grammar-${index}`, grammar.length)];

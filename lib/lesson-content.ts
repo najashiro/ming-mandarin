@@ -27,7 +27,7 @@ export function getGreetingSentences(): SentenceEntry[] {
 export function getListeningEntriesForLessons(lessonIds: number[]): ListeningEntry[] {
   if (!lessonIds.includes(1)) return [];
   return vocabulary.flatMap((entry) => {
-    const audioSrc = audioForMandarinText(entry.hanzi);
+    const audioSrc = audioForMandarinText(entry.hanzi, entry.pinyin);
     const hasHanzi = /[\u3400-\u9fff]/.test(entry.hanzi);
     if (!audioSrc || !hasHanzi || !entry.pinyin.trim() || !entry.translation.trim()) return [];
     return [{
@@ -45,7 +45,7 @@ export function getListeningEntriesForScope(scope: CurriculumScope): ListeningEn
   const data = getCurriculum(scope);
   const lessonId = data.definition.lessonIds.at(-1) ?? 1;
   return data.vocabulary.flatMap((entry) => {
-    const audioSrc = audioForMandarinText(entry.hanzi);
+    const audioSrc = audioForMandarinText(entry.hanzi, entry.pinyin);
     if (!audioSrc || !/[\u3400-\u9fff]/.test(entry.hanzi)) return [];
     return [{ id: entry.id, lessonId, hanzi: entry.hanzi, pinyin: entry.pinyin, translation: entry.translation, audioSrc }];
   });
