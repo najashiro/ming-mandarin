@@ -1,7 +1,9 @@
 import { test, expect } from '@playwright/test';
-import dialogue from '../../data/rehearsals/oral-final.json';
-import manifest from '../../data/rehearsals/oral-final-audio.json';
+import { readFileSync } from 'node:fs';
 
+// Read JSON explicitly: Playwright's Node ESM loader does not add JSON import attributes.
+const dialogue = JSON.parse(readFileSync(new URL('../../data/rehearsals/oral-final.json', import.meta.url), 'utf8')) as { slug: string };
+const manifest = JSON.parse(readFileSync(new URL('../../data/rehearsals/oral-final-audio.json', import.meta.url), 'utf8')) as { clips: Record<string, { src: string }> };
 const route = `/ensayo/${dialogue.slug}`;
 
 test('enlace directo, noindex, controles independientes y Hanzi', async ({ page }) => {
@@ -32,7 +34,7 @@ test('enlace directo, noindex, controles independientes y Hanzi', async ({ page 
 });
 
 test('todos los audios son MP3 estáticos, no se invoca la API al escuchar', async ({ page, request }) => {
-  const entries = Object.values(manifest.clips) as { src: string }[];
+  const entries = Object.values(manifest.clips);
   expect(entries).toHaveLength(29);
   for (const src of new Set(entries.map(clip => clip.src))) {
     const response = await request.get(src);
@@ -57,6 +59,23 @@ test('todos los audios son MP3 estáticos, no se invoca la API al escuchar', asy
   await second.click();
   await expect(second).not.toHaveClass(/playing/);
   expect(paidCalls).toBe(0);
+});
+
+test('el navegador reproduce un MP3 real sin voz del dispositivo', async ({ page }) => {
+  await page.addInitScript(() => {
+    const originalPlay = HTMLMediaElement.prototype.play;
+    HTMLMediaElement.prototype.play = function () {
+      (window as typeof window & { oralTestAudio?: HTMLMediaElement }).oralTestAudio = this;
+      return originalPlay.call(this);
+    };
+  });
+  await page.goto(route);
+  await page.locator('#oral-17 .audio-button').click();
+  await expect.poll(() => page.evaluate(() => {
+    const audio = (window as typeof window & { oralTestAudio?: HTMLMediaElement }).oralTestAudio;
+    return Boolean(audio && !audio.error && audio.currentTime > 0);
+  })).toBe(true);
+  expect(await page.evaluate(() => (window as typeof window & { oralTestAudio?: HTMLMediaElement }).oralTestAudio?.src)).toContain('/audio/oral-final/');
 });
 
 test('otras rutas no abren el guion y el inicio no enlaza al ensayo', async ({ page, request }) => {

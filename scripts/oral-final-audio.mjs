@@ -86,6 +86,8 @@ if (mode === '--generate') {
       renameSync(temporary, clip.file);
       console.log(`Generado ${clip.id}`);
     }
+  } else {
+    console.log('Los 28 MP3 ya existen: cero solicitudes de generación a OpenAI.');
   }
   for (const clip of unique) inspect(clip.file);
 }
@@ -95,7 +97,8 @@ if (mode === '--publish') {
   const clips = Object.fromEntries(plans.map(clip => [clip.id, { src: clip.src, hanzi: clip.input, pinyin: clip.pinyin, ...reports.get(clip.hash) }]));
   writeFileSync(manifestPath, JSON.stringify({ schemaVersion: 1, model: request.model, voice: request.voice, textFingerprint: request.textFingerprint, clips }, null, 2) + '\n');
   request.status = 'completed';
-  request.completedByWorkflowRun = process.env.GITHUB_RUN_ID ?? null;
+  // Preserve the original generating run: validation reruns must not create asset-only commits.
+  request.completedByWorkflowRun ??= process.env.GITHUB_RUN_ID ?? null;
   writeFileSync(requestPath, JSON.stringify(request, null, 2) + '\n');
 }
 
