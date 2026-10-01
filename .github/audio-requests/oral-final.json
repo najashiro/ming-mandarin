@@ -6,5 +6,14 @@
   "textFingerprint": "aa884c09a9fe49baacc4f43287daaeca700fdb7314928bb91d668701cc743aac",
   "maxUniqueClips": 28,
   "maxInputCharacters": 2000,
-  "completedByWorkflowRun": "36792933263"
+  "completedByWorkflowRun": "36792933263",
+  "repair": {
+    "requestedAt": "2026-10-01",
+    "reason": "El usuario solicita completar los audios truncados de las líneas 22 y 25.",
+    "turnIds": [
+      "oral-22",
+      "oral-25"
+    ],
+    "instructions": "Lee el turno COMPLETO, desde el primer carácter hasta el último. Contiene una afirmación y una pregunta final: ambas deben escucharse íntegramente. No termines después de la afirmación. Haz una pausa breve entre las dos oraciones y continúa hasta terminar la pregunta, sin omitir ni repetir palabras."
+  }
 }

@@ -38,3 +38,11 @@ El workflow solo actúa en `codex/oral-final-unlisted-20260930` dentro de este r
 - `pnpm exec playwright test --config playwright.oral-final.config.ts`: Chromium escritorio y WebKit iPhone, 29 turnos, toggles independientes, enlaces/anclas Hanzi, noindex, 404 de slug incorrecto, MP3 servidos, reproducción excluyente sin API y capturas.
 
 No afirmar que la PR, los checks, los audios o el despliegue están terminados hasta comprobar el resultado correspondiente. El merge requiere autorización del usuario.
+
+## Reparación de audio · 1-oct-2026
+
+El usuario informó que los turnos 22 y 25 estaban incompletos y pidió completarlos. La transcripción automática de los MP3 anteriores confirmó que ambos omitían la pregunta final. Se generaron únicamente estos dos turnos completos con Marin, añadiendo una instrucción de continuidad; sus nuevas rutas evitan reutilizar los archivos anteriores desde caché. El texto del diálogo y los otros 27 turnos se conservan.
+
+`request.repair` limita la generación a los IDs solicitados. Las instrucciones adicionales forman parte del hash de cada clip, por lo que `--publish` y `--verify` siguen verificando las rutas correctas. El lote vuelve a quedar `completed` tras publicar el manifiesto; repetir `--generate` con todos los archivos presentes no genera llamadas de pago.
+
+La evidencia antes/después está en `docs/oral-audio-repair-20261001.json`: transcripción sin proporcionar el texto esperado, comparación normalizando puntuación y variantes tradicionales/simplificadas, duraciones y SHA-256. Ambos clips nuevos coinciden con la intervención completa. Es una comprobación automática de contenido, no una certificación humana de pronunciación.

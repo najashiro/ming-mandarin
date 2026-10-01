@@ -40,7 +40,8 @@ const baseInstructions = [
 ].join(' ');
 const byHash = new Map();
 const plans = data.turns.map(turn => {
-  const instructions = `${baseInstructions} Lectura esperada (no leer la instrucción): ${turn.pinyin}`;
+  const repairInstructions = request.repair?.turnIds.includes(turn.id) ? ` ${request.repair.instructions}` : '';
+  const instructions = `${baseInstructions} Lectura esperada (no leer la instrucción): ${turn.pinyin}${repairInstructions}`;
   const hash = sha256(JSON.stringify({ model: request.model, voice: request.voice, input: turn.hanzi, instructions }));
   const plan = { id: turn.id, hash, input: turn.hanzi, pinyin: turn.pinyin, instructions, src: `/audio/oral-final/${hash}.mp3`, file: path.join(directory, `${hash}.mp3`) };
   byHash.set(hash, plan);
@@ -64,6 +65,9 @@ if (mode === '--generate') {
   const missing = unique.filter(clip => !existsSync(clip.file));
   if (missing.length) {
     assert.equal(request.status, 'requested', 'El lote completado no autoriza regenerar clips');
+    if (request.repair) {
+      assert(missing.every(clip => request.repair.turnIds.includes(clip.id)), 'La reparación solo autoriza los turnos seleccionados');
+    }
     const key = process.env.OPENAI_API_KEY?.trim();
     assert(key, 'Falta OPENAI_API_KEY en el entorno de generación; nunca ponerla en el navegador');
     mkdirSync(directory, { recursive: true });

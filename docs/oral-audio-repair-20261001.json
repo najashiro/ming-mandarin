@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-01",
+  "method": "gpt-4o-transcribe, zh, no prompt or expected text supplied",
+  "clips": [
+    {
+      "id": "oral-22",
+      "version": "before",
+      "src": "/audio/oral-final/933b357b5be24e3586b2649b343e7a81d22bc497bd7547fee5e60c5638de6b9e.mp3",
+      "durationSeconds": 5.112,
+      "sha256": "05c7d21c905b08cdb64c4a07cc02abc074c2e8c63e3030de8a689ec93522f439",
+      "expected": "我家有五口人：爸爸、妈妈、哥哥、弟弟和我。你家有几口人？",
+      "transcript": "我家有五口人，爸爸、妈妈、哥哥、弟弟和我。",
+      "complete": false
+    },
+    {
+      "id": "oral-22",
+      "version": "after",
+      "src": "/audio/oral-final/0396f707c7b06a6cfb7c3f7ab174a06a319e31cb0190a07e13871b50778e94a5.mp3",
+      "durationSeconds": 8.16,
+      "sha256": "ff477e00886aa9e3174f5623b0e4ba6926cf8e7a8eb3f016cda4b3a139c8fa0a",
+      "expected": "我家有五口人：爸爸、妈妈、哥哥、弟弟和我。你家有几口人？",
+      "transcript": "我家有五口人，爸爸、妈妈、哥哥、弟弟和我。你家有几口人?",
+      "complete": true
+    },
+    {
+      "id": "oral-25",
+      "version": "before",
+      "src": "/audio/oral-final/748ff61307dac37c20f345dc08a2d1939fa1c6c2baf30bc0b35c0210b8bea80d.mp3",
+      "durationSeconds": 4.008,
+      "sha256": "94daff0a23e764b11cab1120fbd58673e8d4b4af1fb430f3a9afc8276d2de6d3",
+      "expected": "我爸爸是行政人员，妈妈是社工。你妈妈喜欢吃什么？",
+      "transcript": "我爸爸是行政人員，媽媽是社工。",
+      "complete": false
+    },
+    {
+      "id": "oral-25",
+      "version": "after",
+      "src": "/audio/oral-final/4cfb1d4c47489233011ac70b33b6524334ffe2fe0827d0734f24da970e807b7f.mp3",
+      "durationSeconds": 7.512,
+      "sha256": "2421cdc5723ff62a1946f551a18201e461ac8dec314df481df5fde53f7d82466",
+      "expected": "我爸爸是行政人员，妈妈是社工。你妈妈喜欢吃什么？",
+      "transcript": "我爸爸是行政人員，媽媽是社工。你媽媽喜歡吃什麼?",
+      "complete": true
+    }
+  ],
+  "normalization": "Ignore punctuation; normalize 員/员, 媽/妈, 歡/欢, 麼/么."
+}
