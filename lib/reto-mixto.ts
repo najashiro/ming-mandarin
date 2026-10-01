@@ -41,12 +41,25 @@ function sample<T>(values: T[], random: () => number) {
 
 function optionsForEntry(entry: RetoMixtoEntry, pool: RetoMixtoEntry[], mode: RetoMixtoMode, random: () => number) {
   const needsImages = mode === 'hanzi-image' || mode === 'audio-image';
-  const eligible = pool.filter((candidate) => candidate.id !== entry.id && (!needsImages || candidate.imageable));
+  const visual = needsImages || mode === 'image-hanzi';
+  const confusable = [['猫', '小猫'], ['狗', '小狗'], ['面条', '面条儿'], ['汉堡', '汉堡包'], ['果汁', '橙汁'], ['饭', '米饭'], ['运动', '跑步', '打球']];
+  const eligible = pool.filter((candidate) => candidate.id !== entry.id
+    && normalizeChinese(candidate.hanzi) !== normalizeChinese(entry.hanzi)
+    && (!needsImages || candidate.imageable)
+    && (!visual || (!confusable.some(group => group.includes(entry.hanzi) && group.includes(candidate.hanzi))
+      && (!entry.imageSrc || candidate.imageSrc !== entry.imageSrc || candidate.familyTarget !== entry.familyTarget))));
   const sameGroup = shuffle(eligible.filter((candidate) => candidate.distractorGroup === entry.distractorGroup), random);
   const sameCategory = shuffle(eligible.filter((candidate) => candidate.category === entry.category && !sameGroup.includes(candidate)), random);
   const sameLesson = shuffle(eligible.filter((candidate) => candidate.lessons.some((lesson) => entry.lessons.includes(lesson)) && !sameGroup.includes(candidate) && !sameCategory.includes(candidate)), random);
   const rest = shuffle(eligible.filter((candidate) => !sameGroup.includes(candidate) && !sameCategory.includes(candidate) && !sameLesson.includes(candidate)), random);
-  return shuffle([entry, ...sameGroup, ...sameCategory, ...sameLesson, ...rest].slice(0, 4), random).map((candidate) => candidate.id);
+  const distinct = [entry];
+  for (const candidate of [...sameGroup, ...sameCategory, ...sameLesson, ...rest]) {
+    if (distinct.some(other => normalizeChinese(other.hanzi) === normalizeChinese(candidate.hanzi)
+      || (needsImages && other.imageSrc === candidate.imageSrc && other.familyTarget === candidate.familyTarget))) continue;
+    distinct.push(candidate);
+    if (distinct.length === 4) break;
+  }
+  return shuffle(distinct, random).map((candidate) => candidate.id);
 }
 
 function optionsForConversation(conversation: RetoMixtoConversation, conversations: RetoMixtoConversation[], entries: RetoMixtoEntry[], random: () => number) {
@@ -68,7 +81,9 @@ export function buildRetoMixtoDeck(
   random: () => number = Math.random,
 ): RetoMixtoQuestion[] {
   const selectedEntries = entries.filter((entry) => entry.playableModes.length > 0 && entry.lessons.some((lesson) => lessons.includes(lesson)));
-  const selectedConversations = conversations.filter((conversation) => lessons.includes(conversation.lesson));
+  const selectedConversations = conversations.filter((conversation) => lessons.includes(conversation.lesson)
+    && selectedEntries.some(entry => normalizeChinese(entry.hanzi) === normalizeChinese(conversation.answerHanzi)));
+  const constructionEntries = selectedEntries.filter(entry => entry.playableModes.includes('construct-response') && (entry.tokens?.length ?? 0) > 1);
   const constructionConversations = selectedConversations.filter((conversation) => {
     const answer = selectedEntries.find((entry) => normalizeChinese(entry.hanzi) === normalizeChinese(conversation.answerHanzi));
     return (answer?.tokens?.length ?? 0) > 1;
@@ -79,12 +94,16 @@ export function buildRetoMixtoDeck(
     ['audio-hanzi', selectedEntries.filter((entry) => Boolean(entry.audioSrc) && entry.playableModes.includes('audio-hanzi'))],
     ['audio-image', selectedEntries.filter((entry) => entry.imageable && Boolean(entry.audioSrc) && entry.playableModes.includes('audio-image'))],
   ]);
+  for (const [mode, pool] of candidates) {
+    candidates.set(mode, pool.filter(entry => optionsForEntry(entry, selectedEntries, mode, () => 0.5).length === 4));
+  }
   const modes = (['image-hanzi', 'hanzi-image', 'audio-hanzi', 'audio-image', 'conversation-response', 'construct-response'] as RetoMixtoMode[])
     .filter((mode) => mode === 'conversation-response'
       ? selectedConversations.length > 0
       : mode === 'construct-response'
-        ? constructionConversations.length > 0
+        ? constructionConversations.length > 0 || constructionEntries.length > 0
         : (candidates.get(mode)?.length ?? 0) > 0);
+  if (!modes.length || total <= 0) return [];
   const modeSequence: RetoMixtoMode[] = [];
   while (modeSequence.length < total) {
     const batch = shuffle(modes, random);
@@ -96,6 +115,13 @@ export function buildRetoMixtoDeck(
 
   for (let index = 0; index < total; index += 1) {
     const mode = modeSequence[index];
+    if (mode === 'construct-response' && !constructionConversations.length) {
+      const pool = constructionEntries.filter(entry => entry.id !== previousEntryId);
+      const entry = sample(pool.length ? pool : constructionEntries, random);
+      deck.push({ id: `rm-construct-${index}-${entry.id}`, entryId: entry.id, mode, optionIds: [], lessonIds: [...lessons] });
+      previousEntryId = entry.id;
+      continue;
+    }
     if (mode === 'conversation-response' || mode === 'construct-response') {
       const sourceConversations = mode === 'construct-response' ? constructionConversations : selectedConversations;
       const conversationPool = sourceConversations.filter((candidate) => {
@@ -163,7 +189,9 @@ export function retryQuestion(
   const conversation = conversations.find((candidate) => candidate.id === question.conversationId);
   const scopedEntries = entries.filter((candidate) => candidate.lessons.some((lesson) => question.lessonIds.includes(lesson)));
   const scopedConversations = conversations.filter((candidate) => question.lessonIds.includes(candidate.lesson));
-  const modes = [...entry.playableModes];
+  const modes = entry.playableModes.filter(mode => mode === 'construct-response'
+    ? (entry.tokens?.length ?? 0) > 1
+    : mode !== 'conversation-response' && optionsForEntry(entry, scopedEntries, mode, () => 0.5).length === 4);
   if (conversation && !modes.includes('conversation-response')) modes.push('conversation-response');
   const alternatives = modes.filter((mode) => mode !== question.mode);
   const mode = sample(alternatives.length ? alternatives : modes, random) ?? question.mode;

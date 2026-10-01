@@ -1,0 +1,22 @@
+{
+  "v-电视": { "slug": "television", "subject": "One complete unbranded television, screen off and complete feet.", "kind": "photo", "quiz": true },
+  "v-睡觉": { "slug": "sleep", "subject": "One fictional adult sleeping in a complete simple bed, eyes closed, head on pillow.", "kind": "photo", "quiz": true },
+  "v-起床": { "slug": "getting-up", "subject": "One fictional adult waking up, sitting upright on the edge of a simple single bed, both bare feet resting beside the bed, stretching both arms gently with eyes open. Complete person and compact bed, no room.", "kind": "photo" },
+  "v-跑步": { "slug": "running", "subject": "One fictional adult jogging, shown in three-quarter side view, natural running stride with one foot lifted, bent arms, plain athletic clothing and running shoes. Entire body including hands and feet visible. No equipment or other people.", "kind": "photo", "quiz": true },
+  "v-打球": { "slug": "playing-ball", "subject": "One fictional adult actively dribbling one basketball with a hand, knees slightly bent, casual athletic clothing. Complete body, both hands, both feet and entire basketball visible. A single clear ball-playing action. No team, hoop or court.", "kind": "photo", "quiz": true },
+  "v-听": { "slug": "listening", "subject": "One fictional adult listening attentively to plain over-ear headphones, relaxed seated pose on a simple stool, eyes open, mouth closed, one hand lightly touching the ear cup. Complete person, hands, feet and stool visible. No instrument, phone or microphone.", "kind": "photo" },
+  "v-午饭": { "slug": "lunch", "subject": "One appetizing simple lunch meal: a complete plain ceramic plate with cooked rice, vegetables and cooked chicken, beside a small unbranded bowl of soup. No table, cutlery, words or decorative props. This is only an example meal, not a visual definition of time of day.", "kind": "photo" },
+  "v-晚饭": { "slug": "dinner", "subject": "One appetizing simple evening meal: a complete plain bowl of noodle soup with vegetables, alongside a small plate of steamed dumplings. Both containers complete. No table, cutlery, words or decorative props. This is only an example meal, not a visual definition of time of day.", "kind": "photo" },
+  "v-今天": { "slug": "today", "kind": "timeline", "offset": 0 },
+  "v-明天": { "slug": "tomorrow", "kind": "timeline", "offset": 1 },
+  "v-上午": { "slug": "morning", "kind": "day-period", "start": 6, "end": 12 },
+  "v-下午": { "slug": "afternoon", "kind": "day-period", "start": 12, "end": 18 },
+  "v-点（钟）": { "slug": "on-the-hour", "kind": "clock", "minutes": 0 },
+  "v-半": { "slug": "half", "kind": "fraction", "minutes": 30 },
+  "v-刻": { "slug": "quarter-hour", "kind": "clock", "minutes": 15 },
+  "v-分": { "slug": "minute", "kind": "clock", "minutes": 1 },
+  "v-零": { "slug": "zero", "kind": "quantity", "count": 0 },
+  "v-少": { "slug": "few", "kind": "comparison", "side": "few" },
+  "v-多": { "slug": "many", "kind": "comparison", "side": "many" },
+  "v-很多": { "slug": "a-lot", "kind": "comparison", "side": "many" }
+}

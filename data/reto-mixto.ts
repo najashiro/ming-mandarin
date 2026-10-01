@@ -26,6 +26,8 @@ export type RetoMixtoUsageExample = {
 
 export type RetoMixtoEntry = {
   id: string;
+  vocabularyId?: string;
+  supportImageSrc?: string;
   hanzi: string;
   pinyin: string;
   meaningEs: string;

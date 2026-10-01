@@ -2,7 +2,7 @@ import lesson4Media from '@/data/lesson4-media.json';
 import media from '@/data/vocabulary-media.json';
 import type { ActiveWord } from './vocabulary';
 type LegacyPracticeType = 'hanzi' | 'image' | 'context';
-export const vocabularyMedia = [...media, ...lesson4Media];
+export const vocabularyMedia = [...new Map([...media, ...lesson4Media].map(entry => [entry.wordId, entry])).values()];
 export type VocabularyMediaEntry = (typeof media)[number];
 const visibleImageStatuses = new Set(['approved']);
 export function imageForWord(id: string, catalog: readonly VocabularyMediaEntry[] = vocabularyMedia) {

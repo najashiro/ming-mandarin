@@ -69,11 +69,11 @@ describe('integración L4 desde corpus 2.2.0', () => {
     }
   });
   it('tiene imágenes registradas con alfa y evita quizzes ambiguos', () => {
-    expect(media.map(row => row.wordId)).toEqual(['v-电视','v-睡觉']);
+    expect(media.map(row => row.wordId)).toEqual(expect.arrayContaining(['v-电视','v-睡觉','v-跑步','v-打球','v-午饭','v-晚饭','v-刻','v-半']));
     for (const row of media) {
       expect(existsSync(`public${row.src}`)).toBe(true);
       expect(row.presentation).toBe('transparent-cutout');
-      expect(row.imageQuizEligible).toBe(false);
+      if (row.imageQuizEligible) expect(['v-电视','v-睡觉','v-跑步','v-打球']).toContain(row.wordId);
       expect(lesson4.vocabulary.find(w => w.id === row.wordId)?.visual_ming.image_support).toBe(true);
       expect(readFileSync(`public${row.src}`).length).toBeGreaterThan(1000);
     }
@@ -88,6 +88,6 @@ describe('integración L4 desde corpus 2.2.0', () => {
     const entries = retoMixtoForScope('l4');
     const deck = buildRetoMixtoDeck(entries, [], [4], 20, () => .42);
     expect(deck).toHaveLength(20);
-    for (const q of deck) expect(entries.some(e => e.id === q.entryId && e.audioSrc)).toBe(true);
+    for (const q of deck) expect(entries.some(e => e.id === q.entryId && (e.audioSrc || (q.mode === 'construct-response' && e.tokens?.length)))).toBe(true);
   });
 });

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import type { RetoMixtoEntry, RetoMixtoFamilyTarget } from '@/data/reto-mixto';
+import framing from '@/data/vocabulary-game-framing.json';
 
 const familyPortraits: Record<RetoMixtoFamilyTarget, { x: number; y: number; radius: number }> = {
   yeye: { x: 166, y: 224, radius: 146 },
@@ -18,6 +19,15 @@ const familyPortraits: Record<RetoMixtoFamilyTarget, { x: number; y: number; rad
 export function RetoMixtoVisual({ entry, alt, priority = false }: { entry: RetoMixtoEntry; alt: string; priority?: boolean }) {
   if (!entry.imageSrc) return null;
   const portrait = entry.familyTarget ? familyPortraits[entry.familyTarget] : undefined;
+  const [path, query] = entry.imageSrc.split('?');
+  const bounds = framing[path as keyof typeof framing];
+  const version = new URLSearchParams(query).get('v');
+  if (!portrait && bounds && (!version || version === bounds.sha256)) {
+    const edge = Math.max(bounds.width, bounds.height) * 1.1;
+    return <div className="mixed-vocabulary-image"><Image src={entry.imageSrc} alt={alt} width={bounds.canvasWidth} height={bounds.canvasHeight} priority={priority}
+      style={{ position: 'absolute', maxWidth: 'none', width: `${bounds.canvasWidth / edge * 100}%`, height: `${bounds.canvasHeight / edge * 100}%`,
+        left: `${((edge - bounds.width) / 2 - bounds.x) / edge * 100}%`, top: `${((edge - bounds.height) / 2 - bounds.y) / edge * 100}%` }} /></div>;
+  }
   if (!portrait) return <Image src={entry.imageSrc} alt={alt} width={640} height={640} priority={priority} />;
 
   return <div className="mixed-family-image" data-family-target={entry.familyTarget}>
