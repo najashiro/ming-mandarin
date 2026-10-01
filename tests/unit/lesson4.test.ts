@@ -75,7 +75,8 @@ describe('integración L4 desde corpus 2.2.0', () => {
     for (const word of lesson4.vocabulary) expect(Object.keys(word.visual_ming).sort()).toEqual(['ambiguity_risk','image_quiz_eligible','image_support','visual_mode']);
     for (const word of getVocabularySet('l4')) for (const example of examplesForWord(word)) {
       expect(word.examplePhraseIds).toContain(example.id);
-      expect(example.pinyin && example.spanish).toBeTruthy();
+      expect(example.hanzi).toBeTruthy();
+      expect(example.hanzi).not.toMatch(/…|_|□/);
     }
   });
   it('tiene imágenes registradas con alfa y evita quizzes ambiguos', () => {

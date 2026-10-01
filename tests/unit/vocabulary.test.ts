@@ -241,7 +241,7 @@ describe('partición exclusiva y ejemplos globales', () => {
     expect(JSON.stringify(corpus.phrases.map(phrase => phrase.vocabIds))).toBe(before);
     expect(getVocabularyLesson(cat)).toBe(3);
   });
-  it('todas las fichas consumen apoyo público completo y ejemplos únicos', () => {
+  it('las fichas conservan apoyos históricos y ejemplos únicos', () => {
     expect(vocabularyCatalog).toHaveLength(391);
     expect(vocabularyCatalog.filter(word => word.lessons.some(lesson => lesson < 4))).toHaveLength(337);
     expect(corpus.phrases).toHaveLength(635);
@@ -249,7 +249,8 @@ describe('partición exclusiva y ejemplos globales', () => {
       expect(word.pinyin && word.spanish).toBeTruthy();
       const examples = examplesForWord(word);
       expect(new Set(examples.map(example => example.id)).size).toBe(examples.length);
-      expect(examples.every(example => example.pinyin && example.spanish)).toBe(true);
+      expect(examples.every(example => example.hanzi)).toBe(true);
+      if (word.lessons.some(lesson => lesson < 4)) expect(examples.every(example => example.pinyin && example.spanish)).toBe(true);
     }
     expect(['l1', 'l2', 'l3', 'l1-l2-l3'].map(scope => getVocabularySet(scope as 'l1').length)).toEqual([85, 126, 116, 327]);
   });

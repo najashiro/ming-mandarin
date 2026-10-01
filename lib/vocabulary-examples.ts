@@ -12,5 +12,5 @@ export function publicExamplesForVocabulary(wordOrId: string, exampleIds?: reado
   if (!word) return [];
   return (exampleIds ?? word.examplePhraseIds)
     .map((id) => phrasesById.get(id))
-    .filter((row): row is PublicVocabularyExample => row !== undefined && Boolean(row.pinyin && row.spanish));
+    .filter((row): row is PublicVocabularyExample => row !== undefined && Boolean(row.hanzi));
 }

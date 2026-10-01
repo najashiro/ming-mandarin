@@ -121,3 +121,22 @@ test('L4: audio real, imagen transparente, fallback y cambio de lección', async
   await expect.poll(() => card.locator('img').evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth > 0)).toBe(true);
   await page.screenshot({ path: `test-results/lesson4-sleep-${info.project.name}.png`, fullPage: true });
 });
+
+
+test('L4: gira ejemplos globales y ejemplos sin apoyos completos', async ({ page }) => {
+  await page.goto('/study/l4/vocabulary');
+  const tired = page.getByRole('article', { name: 'Ficha de 累', exact: true });
+  await tired.getByRole('button', { name: 'Ver ejemplo: 累', exact: true }).click();
+  await expect(tired.locator('.vocabulary-example-text')).toBeVisible();
+  await expect(tired.locator('.word-pinyin')).toBeVisible();
+  await expect(tired.locator('.vocabulary-example-translation')).toBeVisible();
+  await tired.getByRole('button', { name: 'Ver palabra: 累', exact: true }).click();
+  await expect(tired.locator('.vocabulary-example')).toHaveCount(0);
+  const half = page.getByRole('article', { name: 'Ficha de 半', exact: true });
+  await half.getByRole('button', { name: 'Ver ejemplo: 半', exact: true }).click();
+  await expect(half.locator('.vocabulary-example-text')).toBeVisible();
+  await expect(half).not.toContainText(/undefined|null/);
+  await page.getByRole('button', { name: 'Siguiente', exact: true }).click();
+  await page.getByRole('button', { name: 'Anterior', exact: true }).click();
+  await expect(half.locator('.vocabulary-example')).toHaveCount(0);
+});

@@ -58,9 +58,21 @@ def build():
         public_phrases.append(dict(row, pinyin=row['pinyin'] or '', spanish=row['spanish'] or '',
                                    curriculumLinks=[dict(lesson=4, kind=k) for k in row['kinds']],
                                    exampleVocabIds=phrases[row['id']].get('example_vocab_ids', [])))
-    available_examples = {r['id'] for r in public_phrases if r['pinyin'] and r['spanish']}
+    # Global approved links are not limited to phrases introduced in L4.
+    # Preserve missing language support instead of silently removing the Chinese.
+    available_examples = {
+        r['id'] for r in [*old['phrases'], *public_phrases]
+        if r['hanzi'] and 'counterexample' not in r['kinds']
+        and not any(mark in r['hanzi'] for mark in ('…', '_', '□'))
+    }
     for word in words:
-        word['examplePhraseIds'] = [i for i in word['examplePhraseIds'] if i in available_examples]
+        ids = [i for i in word['examplePhraseIds'] if i in available_examples]
+        # L4 selects zhǐ (only) and chà (time remaining), not the historical
+        # classifier zhī or adjective chā. Keep their L4 witnesses only.
+        if word['hanzi'] in ('只', '差'):
+            ids = [i for i in ids if 4 in phrases[i]['lessons']]
+        word['examplePhraseIds'] = ids
+
     editorial = json.loads((ROOT / 'MING_KNOWLEDGE/v2/lesson4/dialogue-translations-ming.json').read_text(encoding='utf-8'))
     canonical_turns = {(d['id'], t['turn']): t for d in projection['dialogues'] if d['lesson'] == 4 for t in d['turns']}
     translations = {}

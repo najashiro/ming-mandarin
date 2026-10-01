@@ -1,3 +1,4 @@
+import { getVocabularySet, examplesForWord } from '@/lib/vocabulary';
 import { describe, expect, it } from 'vitest';
 import corpus from '@/data/corpus-v21-public.json';
 import { publicExamplesForVocabulary } from '@/lib/vocabulary-examples';
@@ -61,5 +62,31 @@ describe('global vocabulary examples with editorial pinyin', () => {
     publicExamplesForVocabulary('猫').pop();
     expect(publicExamplesForVocabulary('猫')).toHaveLength(3);
     expect(JSON.stringify(corpus.vocabulary.find((row) => row.hanzi === '猫'))).toBe(before);
+  });
+});
+
+
+describe('L4 approved examples', () => {
+  it('restores global examples and retains incomplete language support', () => {
+    const words = getVocabularySet('l4');
+    for (const hanzi of ['累', '今天', '早饭']) {
+      const word = words.find(word => word.hanzi === hanzi)!;
+      const historical = corpus.vocabulary.find(word => word.hanzi === hanzi)!;
+      expect(examplesForWord(word).map(example => example.id)).toEqual(expect.arrayContaining(historical.examplePhraseIds));
+    }
+    const half = examplesForWord(words.find(word => word.hanzi === '半')!);
+    expect(half.length).toBeGreaterThan(0);
+    expect(half.some(example => !example.pinyin || !example.spanish)).toBe(true);
+    expect(words.filter(word => examplesForWord(word).length === 0).map(word => word.hanzi)).toEqual(['下', '回', '里卡多帕尔玛大学']);
+    for (const word of words) for (const example of examplesForWord(word)) {
+      expect(word.examplePhraseIds).toContain(example.id);
+      expect(example.hanzi).not.toMatch(/…|_|□/);
+    }
+  });
+  it('does not reuse classifier examples for contextual zhi', () => {
+    const word = getVocabularySet('l4').find(word => word.hanzi === '只')!;
+    expect(examplesForWord(word).length).toBeGreaterThan(0);
+    expect(examplesForWord(word).every(example => example.lessons.includes(4))).toBe(true);
+    expect(examplesForWord(word).map(example => example.hanzi)).not.toContain('一只猫');
   });
 });
