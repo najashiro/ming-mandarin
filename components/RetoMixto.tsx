@@ -12,11 +12,14 @@ import { PinyinText } from './PinyinText';
 import { RetoMixtoVisual } from './RetoMixtoVisual';
 import { HanziWritingSequence, type WritingSummary } from './hanzi/HanziWritingSequence';
 import { hanziGlyphHref } from '@/lib/hanzi/navigation';
+import { usePublishedImages } from '@/components/vocabulary/usePublishedImages';
+import type { VocabularyMediaEntry } from '@/lib/vocabulary-media';
 
 type Props = { scope: CurriculumScope; onClose: () => void };
 type Phase = 'setup' | 'playing' | 'results';
 type Feedback = 'correct' | 'incorrect' | null;
 type Attempt = { question: RetoMixtoQuestion; correct: boolean; writing?: WritingSummary };
+const emptyMedia: VocabularyMediaEntry[] = [];
 
 const modeLabels: Record<RetoMixtoMode, string> = {
   'image-hanzi': 'Imagen → Hanzi',
@@ -68,7 +71,8 @@ function modePrompt(mode: RetoMixtoMode) {
 
 export function RetoMixto({ scope, onClose }: Props) {
   const [selection, setSelection] = useState<SelectionId>(scope);
-  const retoMixtoCorpus = useMemo(() => retoMixtoForScope(selection), [selection]);
+  const media = usePublishedImages(emptyMedia);
+  const retoMixtoCorpus = useMemo(() => retoMixtoForScope(selection, media), [selection, media]);
   const entriesById = useMemo(() => new Map(retoMixtoCorpus.map((entry) => [entry.id, entry])), [retoMixtoCorpus]);
   const [phase, setPhase] = useState<Phase>('setup');
   const [roundCount, setRoundCount] = useState<10 | 20 | 30>(10);
@@ -292,7 +296,8 @@ export function RetoMixto({ scope, onClose }: Props) {
     <fieldset><legend>Contenido</legend><div className="mixed-choice-row">{allowedSelections.map((definition) => <button className={selection === definition.id ? 'selected' : ''} type="button" onClick={() => setSelection(definition.id)} key={definition.id}>{definition.label}</button>)}</div></fieldset>
     <fieldset><legend>Nivel</legend><div className="mixed-choice-row"><button className={level === 'basic' ? 'selected' : ''} type="button" onClick={() => setLevel('basic')}>Básico</button><button className={level === 'advanced' ? 'selected' : ''} type="button" onClick={() => setLevel('advanced')}>Avanzado · escribir Hanzi</button></div></fieldset>
     <fieldset><legend>Número de rondas</legend><div className="mixed-choice-row">{([10, 20, 30] as const).map((count) => <button className={roundCount === count ? 'selected' : ''} type="button" onClick={() => setRoundCount(count)} key={count}>{count}</button>)}</div></fieldset>
-    <button className="button button-primary mixed-start" type="button" onClick={() => start()}>Comenzar reto</button>
+    {media === emptyMedia && <p role="status">Consultando imágenes aprobadas…</p>}
+    <button className="button button-primary mixed-start" type="button" disabled={media === emptyMedia} onClick={() => start()}>Comenzar reto</button>
   </div>;
 
   if (phase === 'results') return <div className="mixed-challenge results">
@@ -311,6 +316,9 @@ export function RetoMixto({ scope, onClose }: Props) {
   const isAudioPrompt = isWriting ? currentQuestion.writingPrompt === 'audio' : currentQuestion.mode === 'audio-hanzi' || currentQuestion.mode === 'audio-image';
   const isConstruction = !isWriting && currentQuestion.mode === 'construct-response';
   const isConversation = !isWriting && (currentQuestion.mode === 'conversation-response' || currentQuestion.mode === 'construct-response');
+  if ((isImagePrompt && !currentEntry.imageSrc) || (isImageAnswer && (options.length !== 4 || options.some(entry => !entry.imageSrc)))) {
+    return <div className="mixed-challenge"><p>Las imágenes aprobadas han cambiado. Inicia una nueva sesión con el catálogo actualizado.</p><button type="button" onClick={() => setPhase('setup')}>Volver</button></div>;
+  }
   const availableTokenIndexes = tokenOrder.filter((tokenIndex) => !builtTokens.includes(tokenIndex));
   const hanziTarget = primaryRetoMixtoHanziTarget(currentEntry);
   const usageExample = currentEntry.hanzi.length === 1 ? currentEntry.usageExample : undefined;
@@ -332,6 +340,7 @@ export function RetoMixto({ scope, onClose }: Props) {
     {!isWriting && currentQuestion.mode === 'hanzi-image' && <div className="mixed-prompt-hanzi" lang="zh-Hans"><Hanzi>{currentEntry.hanzi}</Hanzi></div>}
     {isAudioPrompt && <button className={`audio-button mixed-audio ${answerAudioActive ? 'playing' : ''}`} disabled={feedback === 'correct'} type="button" onClick={() => void playEntryAudio(currentEntry)} aria-label="Escuchar audio de la pregunta"><span aria-hidden="true">{answerAudioActive ? '■' : '▶'}</span> {answerAudioActive ? 'Sonando…' : 'Escuchar'}</button>}
     {isConversation && currentConversation && <div className="mixed-dialogue" lang="zh-Hans"><span>Míng</span><div className="mixed-dialogue-bubble"><p><Hanzi>{currentConversation.promptHanzi}</Hanzi></p><button className={`mixed-question-audio ${questionAudioActive ? 'playing' : ''}`} disabled={feedback === 'correct'} type="button" onClick={playQuestionAudio} aria-label={`Escuchar pregunta: ${currentConversation.promptHanzi}`} title="Escuchar pregunta"><span aria-hidden="true">{questionAudioActive ? '■' : '🔊'}</span></button></div><strong><Hanzi>你</Hanzi></strong><p>……</p></div>}
+    {isConstruction && !currentConversation && <p className="mixed-dialogue">{currentEntry.meaningEs}</p>}
 
     {isWriting && !feedback && <HanziWritingSequence key={currentQuestion.id} expected={normalizeChinese(currentEntry.hanzi)} pinyin={currentEntry.pinyin} meaning={currentEntry.meaningEs} onComplete={(correct, summary) => { void register(correct, summary); }} />}
     {!isWriting && !isConstruction && <div className={isImageAnswer ? 'mixed-image-options' : 'mixed-text-options'}>{options.map((entry, optionIndex) => {
@@ -351,6 +360,7 @@ export function RetoMixto({ scope, onClose }: Props) {
         <strong lang="zh-Hans"><Hanzi>{currentEntry.hanzi}</Hanzi></strong>
         <h3><PinyinText>{currentEntry.pinyin}</PinyinText></h3>
         <p className="mixed-correction-meaning"><Hanzi>{currentEntry.meaningEs}</Hanzi></p>
+        {currentEntry.supportImageSrc && <div className="mixed-prompt-image"><RetoMixtoVisual entry={{ ...currentEntry, imageSrc: currentEntry.supportImageSrc }} alt={`Apoyo visual de ${currentEntry.meaningEs}`} /></div>}
         {usageExample && <div className="mixed-usage-example"><div><span lang="zh-Hans"><Hanzi>{usageExample.hanzi}</Hanzi></span><span aria-hidden="true"> · </span><PinyinText>{usageExample.pinyin}</PinyinText>{usageExample.audioSrc && <button type="button" onClick={() => void playAudioSource(usageExample.audioSrc, 'example')} aria-label={`Escuchar ejemplo: ${usageExample.hanzi}`} title="Escuchar ejemplo"><span aria-hidden="true">🔊</span></button>}</div><small><Hanzi>{usageExample.meaningEs}</Hanzi></small></div>}
         <div className="mixed-correction-actions">
           <button className={`audio-button${answerAudioActive ? ' playing' : ''}`} type="button" onClick={() => void playEntryAudio(currentEntry)} aria-label={`Escuchar pronunciación de ${currentEntry.hanzi}`} title={`Escuchar ${currentEntry.hanzi}`}><span aria-hidden="true">🔊</span> {answerAudioActive ? 'Sonando…' : 'Escuchar'}</button>

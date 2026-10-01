@@ -26,7 +26,7 @@ export function VocabularyImageReview({ initialEntries, storageReady }: { initia
   const [busy, setBusy] = useState('');
   const [message, setMessage] = useState('');
   const [itemMessages, setItemMessages] = useState<Record<string, string>>({});
-  const lessonEntries = useMemo(() => entries.filter(entry => lesson === 'all' || String(entry.lesson) === lesson), [entries, lesson]);
+  const lessonEntries = useMemo(() => entries.filter(entry => lesson === 'all' || (entry.lessons ?? [entry.lesson]).includes(Number(lesson))), [entries, lesson]);
   const counts = useMemo(() => ({
     approved: lessonEntries.filter(entry => entry.reviewStatus === 'approved').length,
     pending_review: lessonEntries.filter(entry => entry.reviewStatus === 'pending_review').length,
@@ -70,7 +70,7 @@ export function VocabularyImageReview({ initialEntries, storageReady }: { initia
       <button type="button" className={filter === 'all' ? 'selected' : ''} onClick={() => setFilter('all')}><b>{lessonEntries.length}</b><span>Todas</span></button>
       <button type="button" className={filter === 'needs_regeneration' ? 'selected' : ''} onClick={() => setFilter('needs_regeneration')}><b>{counts.needs_regeneration}</b><span>Por regenerar</span></button>
     </section>
-    <div className="admin-image-search"><label htmlFor="admin-image-lesson">Filtrar por lección</label><select id="admin-image-lesson" value={lesson} onChange={event => setLesson(event.target.value)}><option value="all">Todas las lecciones</option><option value="1">Lección 1</option><option value="2">Lección 2</option><option value="3">Lección 3</option></select></div>
+    <div className="admin-image-search"><label htmlFor="admin-image-lesson">Filtrar por lección</label><select id="admin-image-lesson" value={lesson} onChange={event => setLesson(event.target.value)}><option value="all">Todas las lecciones</option><option value="1">Lección 1</option><option value="2">Lección 2</option><option value="3">Lección 3</option><option value="4">Lección 4</option></select></div>
     {storageReady && counts.needs_regeneration > 0 && <a href="/api/admin/vocabulary-images?export=regeneration" download>Descargar pendientes de regeneración</a>}
     <div className="admin-image-search"><label htmlFor="admin-image-search">Buscar palabra</label><input id="admin-image-search" type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder="Hanzi, pinyin, español o ID"/></div>
     {message && <p className="admin-image-message" role="status"><Hanzi>{message}</Hanzi></p>}

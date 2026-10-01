@@ -9,9 +9,9 @@
         "image_quiz_eligible": true,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "existing_asset",
+      "reason": "Reutilizar el recurso y la revisión existentes; no duplicar ni aprobar de nuevo.",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: Míng active Mandarin vocabulary-card cutout.\nStyle ID: ming-vocabulary-transparent-subject-golden-v2.\n\nVocabulary identity for semantic planning only: 累 (lèi).\nAudited meaning in Spanish: cansado/a.\nVisual mode: concept_scene.\nEditorial semantic guidance: Cansancio tras esfuerzo; distinguirlo de sueño y de estar ocupado..\nAudited example context: 他很累。 — Tā hěn lèi. — Él está muy cansado..\n\nPrimary request: Create one memorable, pedagogically clear visual that supports exactly this audited meaning. Use one simple human gesture, relationship or emotional situation whose dominant reading matches the audited concept. \n\nOUTPUT AND TRANSPARENCY\nDeliver a clean photorealistic PNG cutout with genuine transparent alpha. Transparent pixels must extend to every edge and corner. No white, ivory, gray, colored, studio, indoor or outdoor background; no vignette, aura, glow, fog, floor patch or broad environmental shadow. Preserve fine hair and edge detail without a white, black or colored halo. A very narrow natural contact shadow is allowed only when physically necessary.\n\nCOMPOSITION\nHorizontal 1536 × 1024 canvas. Place the complete subject or compact scene toward the center-right, generally inside x=46–96% and y=3–96%. Reserve transparent negative space on the left, especially x=4–43% and y=55–94%, for live HTML text. Keep both upper corners clear for UI controls. Do not crop heads, hands, feet, tails, handles or other meaning-bearing parts. Do not distort or unnaturally miniaturize the subject.\n\nAPPEARANCE\nNatural premium educational photography, realistic anatomy, proportions, materials and color, sharp subject, calm diffuse daylight and gentle contrast. The main meaning must remain legible at small card size.\n\nSTRICTLY AVOID\nNo text of any kind; no Hanzi, pinyin, Spanish, letters, digits, labels, signs, captions, speech bubbles, punctuation, question marks, arrows, icons, diagrams, UI, card frame, border, logo, watermark, brand, checkerboard, collage, decorative prop, duplicate subject or unrelated element. Do not infer a person’s nationality, name, family role or profession from facial appearance alone.\n\nDeliver only the isolated transparent visual. The web application supplies the card background, typography, gradient and controls."
     },
     {
       "wordId": "v-今天",
@@ -21,9 +21,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "approved",
+      "reason": "Receta editorial explícita; conservar corpus y revisión por versión.",
+      "prompt": "Composición determinista de apoyo para 今天 (hoy). Receta {\"slug\":\"today\",\"kind\":\"timeline\",\"offset\":0}. Lienzo alfa 1618 × 1000; contenido en la mitad derecha. Números, sectores y relaciones exactos, nunca generados por IA. Es un ejemplo contextual; no habilita una pregunta de reconocimiento aislado."
     },
     {
       "wordId": "v-学生",
@@ -33,9 +33,9 @@
         "image_quiz_eligible": true,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "existing_asset",
+      "reason": "Reutilizar el recurso y la revisión existentes; no duplicar ni aprobar de nuevo.",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: Míng active Mandarin vocabulary-card cutout.\nStyle ID: ming-vocabulary-transparent-subject-golden-v2.\n\nVocabulary identity for semantic planning only: 学生 (xuésheng).\nAudited meaning in Spanish: estudiante.\nVisual mode: concept_scene.\nEditorial semantic guidance: Rol de alumno en aprendizaje; no reducirlo a edad o uniforme..\nAudited example context: 五个学生 — Wǔ ge xuésheng — Cinco estudiantes..\n\nPrimary request: Create one memorable, pedagogically clear visual that supports exactly this audited meaning. Use one simple human gesture, relationship or emotional situation whose dominant reading matches the audited concept. \n\nOUTPUT AND TRANSPARENCY\nDeliver a clean photorealistic PNG cutout with genuine transparent alpha. Transparent pixels must extend to every edge and corner. No white, ivory, gray, colored, studio, indoor or outdoor background; no vignette, aura, glow, fog, floor patch or broad environmental shadow. Preserve fine hair and edge detail without a white, black or colored halo. A very narrow natural contact shadow is allowed only when physically necessary.\n\nCOMPOSITION\nHorizontal 1536 × 1024 canvas. Place the complete subject or compact scene toward the center-right, generally inside x=46–96% and y=3–96%. Reserve transparent negative space on the left, especially x=4–43% and y=55–94%, for live HTML text. Keep both upper corners clear for UI controls. Do not crop heads, hands, feet, tails, handles or other meaning-bearing parts. Do not distort or unnaturally miniaturize the subject.\n\nAPPEARANCE\nNatural premium educational photography, realistic anatomy, proportions, materials and color, sharp subject, calm diffuse daylight and gentle contrast. The main meaning must remain legible at small card size.\n\nSTRICTLY AVOID\nNo text of any kind; no Hanzi, pinyin, Spanish, letters, digits, labels, signs, captions, speech bubbles, punctuation, question marks, arrows, icons, diagrams, UI, card frame, border, logo, watermark, brand, checkerboard, collage, decorative prop, duplicate subject or unrelated element. Do not infer a person’s nationality, name, family role or profession from facial appearance alone.\n\nDeliver only the isolated transparent visual. The web application supplies the card background, typography, gradient and controls."
     },
     {
       "wordId": "v-早饭",
@@ -45,9 +45,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "existing_asset",
+      "reason": "Reutilizar el recurso y la revisión existentes; no duplicar ni aprobar de nuevo.",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: Míng active Mandarin vocabulary-card cutout.\nStyle ID: ming-vocabulary-transparent-subject-golden-v2.\n\nVocabulary identity for semantic planning only: 早饭 (zǎo fàn).\nAudited meaning in Spanish: desayuno.\nVisual mode: concept_scene.\nEditorial semantic guidance: Desayuno definido por contexto temporal, no por alimentos supuestamente exclusivos de esa comida..\nAudited example context: 她吃早饭。 — Tā chī zǎofàn. — Ella desayuna..\n\nPrimary request: Create one memorable, pedagogically clear visual that supports exactly this audited meaning. Use one simple human gesture, relationship or emotional situation whose dominant reading matches the audited concept. \n\nOUTPUT AND TRANSPARENCY\nDeliver a clean photorealistic PNG cutout with genuine transparent alpha. Transparent pixels must extend to every edge and corner. No white, ivory, gray, colored, studio, indoor or outdoor background; no vignette, aura, glow, fog, floor patch or broad environmental shadow. Preserve fine hair and edge detail without a white, black or colored halo. A very narrow natural contact shadow is allowed only when physically necessary.\n\nCOMPOSITION\nHorizontal 1536 × 1024 canvas. Place the complete subject or compact scene toward the center-right, generally inside x=46–96% and y=3–96%. Reserve transparent negative space on the left, especially x=4–43% and y=55–94%, for live HTML text. Keep both upper corners clear for UI controls. Do not crop heads, hands, feet, tails, handles or other meaning-bearing parts. Do not distort or unnaturally miniaturize the subject.\n\nAPPEARANCE\nNatural premium educational photography, realistic anatomy, proportions, materials and color, sharp subject, calm diffuse daylight and gentle contrast. The main meaning must remain legible at small card size.\n\nSTRICTLY AVOID\nNo text of any kind; no Hanzi, pinyin, Spanish, letters, digits, labels, signs, captions, speech bubbles, punctuation, question marks, arrows, icons, diagrams, UI, card frame, border, logo, watermark, brand, checkerboard, collage, decorative prop, duplicate subject or unrelated element. Do not infer a person’s nationality, name, family role or profession from facial appearance alone.\n\nDeliver only the isolated transparent visual. The web application supplies the card background, typography, gradient and controls."
     },
     {
       "wordId": "v-语言",
@@ -57,9 +57,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "existing_asset",
+      "reason": "Reutilizar el recurso y la revisión existentes; no duplicar ni aprobar de nuevo.",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: Míng active Mandarin vocabulary-card cutout.\nStyle ID: ming-vocabulary-transparent-subject-golden-v2.\n\nVocabulary identity for semantic planning only: 语言 (yǔ yán).\nAudited meaning in Spanish: idiomas.\nVisual mode: phrase_context.\nEditorial semantic guidance: Lengua como sistema; una conversación puede ilustrar hablar pero no identifica el concepto genérico..\nAudited example context: 你会说什么语言？ — Nǐ huì shuō shén me yǔ yán? — Qué idioma sabes hablar?.\n\nPrimary request: Create one memorable, pedagogically clear visual that supports exactly this audited meaning. Depict a compact moment that communicates the complete audited example context. Do not reduce the word to a misleading isolated symbol. \n\nOUTPUT AND TRANSPARENCY\nDeliver a clean photorealistic PNG cutout with genuine transparent alpha. Transparent pixels must extend to every edge and corner. No white, ivory, gray, colored, studio, indoor or outdoor background; no vignette, aura, glow, fog, floor patch or broad environmental shadow. Preserve fine hair and edge detail without a white, black or colored halo. A very narrow natural contact shadow is allowed only when physically necessary.\n\nCOMPOSITION\nHorizontal 1536 × 1024 canvas. Place the complete subject or compact scene toward the center-right, generally inside x=46–96% and y=3–96%. Reserve transparent negative space on the left, especially x=4–43% and y=55–94%, for live HTML text. Keep both upper corners clear for UI controls. Do not crop heads, hands, feet, tails, handles or other meaning-bearing parts. Do not distort or unnaturally miniaturize the subject.\n\nAPPEARANCE\nNatural premium educational photography, realistic anatomy, proportions, materials and color, sharp subject, calm diffuse daylight and gentle contrast. The main meaning must remain legible at small card size.\n\nSTRICTLY AVOID\nNo text of any kind; no Hanzi, pinyin, Spanish, letters, digits, labels, signs, captions, speech bubbles, punctuation, question marks, arrows, icons, diagrams, UI, card frame, border, logo, watermark, brand, checkerboard, collage, decorative prop, duplicate subject or unrelated element. Do not infer a person’s nationality, name, family role or profession from facial appearance alone.\n\nDeliver only the isolated transparent visual. The web application supplies the card background, typography, gradient and controls."
     },
     {
       "wordId": "v-有意思",
@@ -69,9 +69,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "existing_asset",
+      "reason": "Reutilizar el recurso y la revisión existentes; no duplicar ni aprobar de nuevo.",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: Míng active Mandarin vocabulary-card cutout.\nStyle ID: ming-vocabulary-transparent-subject-golden-v2.\n\nVocabulary identity for semantic planning only: 有意思 (yǒuyìsi).\nAudited meaning in Spanish: interesante.\nVisual mode: phrase_context.\nEditorial semantic guidance: Interesante como valoración; curiosidad facial no determina la expresión exacta..\nAudited example context: 这张照片很有意思。 — Zhè zhāng zhàopiàn hěn yǒuyìsi. — Esta foto es muy interesante..\n\nPrimary request: Create one memorable, pedagogically clear visual that supports exactly this audited meaning. Depict a compact moment that communicates the complete audited example context. Do not reduce the word to a misleading isolated symbol. \n\nOUTPUT AND TRANSPARENCY\nDeliver a clean photorealistic PNG cutout with genuine transparent alpha. Transparent pixels must extend to every edge and corner. No white, ivory, gray, colored, studio, indoor or outdoor background; no vignette, aura, glow, fog, floor patch or broad environmental shadow. Preserve fine hair and edge detail without a white, black or colored halo. A very narrow natural contact shadow is allowed only when physically necessary.\n\nCOMPOSITION\nHorizontal 1536 × 1024 canvas. Place the complete subject or compact scene toward the center-right, generally inside x=46–96% and y=3–96%. Reserve transparent negative space on the left, especially x=4–43% and y=55–94%, for live HTML text. Keep both upper corners clear for UI controls. Do not crop heads, hands, feet, tails, handles or other meaning-bearing parts. Do not distort or unnaturally miniaturize the subject.\n\nAPPEARANCE\nNatural premium educational photography, realistic anatomy, proportions, materials and color, sharp subject, calm diffuse daylight and gentle contrast. The main meaning must remain legible at small card size.\n\nSTRICTLY AVOID\nNo text of any kind; no Hanzi, pinyin, Spanish, letters, digits, labels, signs, captions, speech bubbles, punctuation, question marks, arrows, icons, diagrams, UI, card frame, border, logo, watermark, brand, checkerboard, collage, decorative prop, duplicate subject or unrelated element. Do not infer a person’s nationality, name, family role or profession from facial appearance alone.\n\nDeliver only the isolated transparent visual. The web application supplies the card background, typography, gradient and controls."
     },
     {
       "wordId": "v-只",
@@ -81,9 +81,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "existing_asset",
+      "reason": "Reutilizar el recurso y la revisión existentes; no duplicar ni aprobar de nuevo.",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: Míng active Mandarin vocabulary-card cutout.\nStyle ID: ming-vocabulary-transparent-subject-golden-v2.\n\nVocabulary identity for semantic planning only: 只 (zhī).\nAudited meaning in Spanish: clasificador para animales.\nVisual mode: visual_grammar.\nEditorial semantic guidance: Clasificador zhī de animales; no representar aquí el adverbio zhǐ de solo..\nAudited example context: 一只猫 — Yì zhī māo — Un gato..\n\nPrimary request: Create one memorable, pedagogically clear visual that supports exactly this audited meaning. Use a compact structured group or relationship that supports the grammatical idea. It is supporting context, not an image-only definition. \n\nOUTPUT AND TRANSPARENCY\nDeliver a clean photorealistic PNG cutout with genuine transparent alpha. Transparent pixels must extend to every edge and corner. No white, ivory, gray, colored, studio, indoor or outdoor background; no vignette, aura, glow, fog, floor patch or broad environmental shadow. Preserve fine hair and edge detail without a white, black or colored halo. A very narrow natural contact shadow is allowed only when physically necessary.\n\nCOMPOSITION\nHorizontal 1536 × 1024 canvas. Place the complete subject or compact scene toward the center-right, generally inside x=46–96% and y=3–96%. Reserve transparent negative space on the left, especially x=4–43% and y=55–94%, for live HTML text. Keep both upper corners clear for UI controls. Do not crop heads, hands, feet, tails, handles or other meaning-bearing parts. Do not distort or unnaturally miniaturize the subject.\n\nAPPEARANCE\nNatural premium educational photography, realistic anatomy, proportions, materials and color, sharp subject, calm diffuse daylight and gentle contrast. The main meaning must remain legible at small card size.\n\nSTRICTLY AVOID\nNo text of any kind; no Hanzi, pinyin, Spanish, letters, digits, labels, signs, captions, speech bubbles, punctuation, question marks, arrows, icons, diagrams, UI, card frame, border, logo, watermark, brand, checkerboard, collage, decorative prop, duplicate subject or unrelated element. Do not infer a person’s nationality, name, family role or profession from facial appearance alone.\n\nDeliver only the isolated transparent visual. The web application supplies the card background, typography, gradient and controls."
     },
     {
       "wordId": "v-大学",
@@ -93,9 +93,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "existing_asset",
+      "reason": "Reutilizar el recurso y la revisión existentes; no duplicar ni aprobar de nuevo.",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: Míng active Mandarin vocabulary-card cutout.\nStyle ID: ming-vocabulary-transparent-subject-golden-v2.\n\nVocabulary identity for semantic planning only: 大学 (dàxué).\nAudited meaning in Spanish: universidad.\nVisual mode: concept_scene.\nEditorial semantic guidance: Universidad como institución; una fachada no distingue universidad de escuela o instituto..\nAudited example context: 我在大学。 — Wǒ zài dàxué. — Estoy en la universidad..\n\nPrimary request: Create one memorable, pedagogically clear visual that supports exactly this audited meaning. Use one simple human gesture, relationship or emotional situation whose dominant reading matches the audited concept. \n\nOUTPUT AND TRANSPARENCY\nDeliver a clean photorealistic PNG cutout with genuine transparent alpha. Transparent pixels must extend to every edge and corner. No white, ivory, gray, colored, studio, indoor or outdoor background; no vignette, aura, glow, fog, floor patch or broad environmental shadow. Preserve fine hair and edge detail without a white, black or colored halo. A very narrow natural contact shadow is allowed only when physically necessary.\n\nCOMPOSITION\nHorizontal 1536 × 1024 canvas. Place the complete subject or compact scene toward the center-right, generally inside x=46–96% and y=3–96%. Reserve transparent negative space on the left, especially x=4–43% and y=55–94%, for live HTML text. Keep both upper corners clear for UI controls. Do not crop heads, hands, feet, tails, handles or other meaning-bearing parts. Do not distort or unnaturally miniaturize the subject.\n\nAPPEARANCE\nNatural premium educational photography, realistic anatomy, proportions, materials and color, sharp subject, calm diffuse daylight and gentle contrast. The main meaning must remain legible at small card size.\n\nSTRICTLY AVOID\nNo text of any kind; no Hanzi, pinyin, Spanish, letters, digits, labels, signs, captions, speech bubbles, punctuation, question marks, arrows, icons, diagrams, UI, card frame, border, logo, watermark, brand, checkerboard, collage, decorative prop, duplicate subject or unrelated element. Do not infer a person’s nationality, name, family role or profession from facial appearance alone.\n\nDeliver only the isolated transparent visual. The web application supplies the card background, typography, gradient and controls."
     },
     {
       "wordId": "v-现在",
@@ -105,9 +105,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "existing_asset",
+      "reason": "Reutilizar el recurso y la revisión existentes; no duplicar ni aprobar de nuevo.",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: Míng active Mandarin vocabulary-card cutout.\nStyle ID: ming-vocabulary-transparent-subject-golden-v2.\n\nVocabulary identity for semantic planning only: 现在 (xiànzài).\nAudited meaning in Spanish: ahora; en este momento.\nVisual mode: visual_grammar.\nEditorial semantic guidance: Momento presente; un reloj solo no distingue ahora de hora o de hoy..\nAudited example context: 我现在没有工作。 — Wǒ xiànzài méiyǒu gōngzuò. — Ahora no tengo trabajo..\n\nPrimary request: Create one memorable, pedagogically clear visual that supports exactly this audited meaning. Use a compact structured group or relationship that supports the grammatical idea. It is supporting context, not an image-only definition. \n\nOUTPUT AND TRANSPARENCY\nDeliver a clean photorealistic PNG cutout with genuine transparent alpha. Transparent pixels must extend to every edge and corner. No white, ivory, gray, colored, studio, indoor or outdoor background; no vignette, aura, glow, fog, floor patch or broad environmental shadow. Preserve fine hair and edge detail without a white, black or colored halo. A very narrow natural contact shadow is allowed only when physically necessary.\n\nCOMPOSITION\nHorizontal 1536 × 1024 canvas. Place the complete subject or compact scene toward the center-right, generally inside x=46–96% and y=3–96%. Reserve transparent negative space on the left, especially x=4–43% and y=55–94%, for live HTML text. Keep both upper corners clear for UI controls. Do not crop heads, hands, feet, tails, handles or other meaning-bearing parts. Do not distort or unnaturally miniaturize the subject.\n\nAPPEARANCE\nNatural premium educational photography, realistic anatomy, proportions, materials and color, sharp subject, calm diffuse daylight and gentle contrast. The main meaning must remain legible at small card size.\n\nSTRICTLY AVOID\nNo text of any kind; no Hanzi, pinyin, Spanish, letters, digits, labels, signs, captions, speech bubbles, punctuation, question marks, arrows, icons, diagrams, UI, card frame, border, logo, watermark, brand, checkerboard, collage, decorative prop, duplicate subject or unrelated element. Do not infer a person’s nationality, name, family role or profession from facial appearance alone.\n\nDeliver only the isolated transparent visual. The web application supplies the card background, typography, gradient and controls."
     },
     {
       "wordId": "v-明天",
@@ -117,9 +117,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "approved",
+      "reason": "Receta editorial explícita; conservar corpus y revisión por versión.",
+      "prompt": "Composición determinista de apoyo para 明天 (mañana). Receta {\"slug\":\"tomorrow\",\"kind\":\"timeline\",\"offset\":1}. Lienzo alfa 1618 × 1000; contenido en la mitad derecha. Números, sectores y relaciones exactos, nunca generados por IA. Es un ejemplo contextual; no habilita una pregunta de reconocimiento aislado."
     },
     {
       "wordId": "v-下午",
@@ -129,9 +129,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "approved",
+      "reason": "Receta editorial explícita; conservar corpus y revisión por versión.",
+      "prompt": "Composición determinista de apoyo para 下午 (tarde). Receta {\"slug\":\"afternoon\",\"kind\":\"day-period\",\"start\":12,\"end\":18}. Lienzo alfa 1618 × 1000; contenido en la mitad derecha. Números, sectores y relaciones exactos, nunca generados por IA. Es un ejemplo contextual; no habilita una pregunta de reconocimiento aislado."
     },
     {
       "wordId": "v-男生",
@@ -141,9 +141,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "existing_asset",
+      "reason": "Reutilizar el recurso y la revisión existentes; no duplicar ni aprobar de nuevo.",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: Míng active Mandarin vocabulary-card cutout.\nStyle ID: ming-vocabulary-transparent-subject-golden-v2.\n\nVocabulary identity for semantic planning only: 男生 (nánshēng).\nAudited meaning in Spanish: chico.\nVisual mode: concept_scene.\nEditorial semantic guidance: Chico en contexto social o escolar; no usar vestimenta como prueba de identidad..\nAudited example context: 我认识一个很帅的男生。 — Wǒ rènshi yí ge hěn shuài de nánshēng. — Conozco a un estudiante muy guapo..\n\nPrimary request: Create one memorable, pedagogically clear visual that supports exactly this audited meaning. Use one simple human gesture, relationship or emotional situation whose dominant reading matches the audited concept. \n\nOUTPUT AND TRANSPARENCY\nDeliver a clean photorealistic PNG cutout with genuine transparent alpha. Transparent pixels must extend to every edge and corner. No white, ivory, gray, colored, studio, indoor or outdoor background; no vignette, aura, glow, fog, floor patch or broad environmental shadow. Preserve fine hair and edge detail without a white, black or colored halo. A very narrow natural contact shadow is allowed only when physically necessary.\n\nCOMPOSITION\nHorizontal 1536 × 1024 canvas. Place the complete subject or compact scene toward the center-right, generally inside x=46–96% and y=3–96%. Reserve transparent negative space on the left, especially x=4–43% and y=55–94%, for live HTML text. Keep both upper corners clear for UI controls. Do not crop heads, hands, feet, tails, handles or other meaning-bearing parts. Do not distort or unnaturally miniaturize the subject.\n\nAPPEARANCE\nNatural premium educational photography, realistic anatomy, proportions, materials and color, sharp subject, calm diffuse daylight and gentle contrast. The main meaning must remain legible at small card size.\n\nSTRICTLY AVOID\nNo text of any kind; no Hanzi, pinyin, Spanish, letters, digits, labels, signs, captions, speech bubbles, punctuation, question marks, arrows, icons, diagrams, UI, card frame, border, logo, watermark, brand, checkerboard, collage, decorative prop, duplicate subject or unrelated element. Do not infer a person’s nationality, name, family role or profession from facial appearance alone.\n\nDeliver only the isolated transparent visual. The web application supplies the card background, typography, gradient and controls."
     },
     {
       "wordId": "v-去",
@@ -153,9 +153,9 @@
         "image_quiz_eligible": true,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "existing_asset",
+      "reason": "Reutilizar el recurso y la revisión existentes; no duplicar ni aprobar de nuevo.",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: Míng active Mandarin vocabulary-card cutout.\nStyle ID: ming-vocabulary-transparent-subject-golden-v2.\n\nVocabulary identity for semantic planning only: 去 (qù).\nAudited meaning in Spanish: ir.\nVisual mode: action_scene.\nEditorial semantic guidance: Ir hacia un destino; diferenciarlo de llegar y de entrar exige referencia espacial..\nAudited example context: 你们去哪儿？ — Nǐmen qù nǎr? — ¿Adónde van ustedes?.\n\nPrimary request: Create one memorable, pedagogically clear visual that supports exactly this audited meaning. Use one clear frozen action with the actor, hands, body and necessary object fully visible. Avoid competing actions. \n\nOUTPUT AND TRANSPARENCY\nDeliver a clean photorealistic PNG cutout with genuine transparent alpha. Transparent pixels must extend to every edge and corner. No white, ivory, gray, colored, studio, indoor or outdoor background; no vignette, aura, glow, fog, floor patch or broad environmental shadow. Preserve fine hair and edge detail without a white, black or colored halo. A very narrow natural contact shadow is allowed only when physically necessary.\n\nCOMPOSITION\nHorizontal 1536 × 1024 canvas. Place the complete subject or compact scene toward the center-right, generally inside x=46–96% and y=3–96%. Reserve transparent negative space on the left, especially x=4–43% and y=55–94%, for live HTML text. Keep both upper corners clear for UI controls. Do not crop heads, hands, feet, tails, handles or other meaning-bearing parts. Do not distort or unnaturally miniaturize the subject.\n\nAPPEARANCE\nNatural premium educational photography, realistic anatomy, proportions, materials and color, sharp subject, calm diffuse daylight and gentle contrast. The main meaning must remain legible at small card size.\n\nSTRICTLY AVOID\nNo text of any kind; no Hanzi, pinyin, Spanish, letters, digits, labels, signs, captions, speech bubbles, punctuation, question marks, arrows, icons, diagrams, UI, card frame, border, logo, watermark, brand, checkerboard, collage, decorative prop, duplicate subject or unrelated element. Do not infer a person’s nationality, name, family role or profession from facial appearance alone.\n\nDeliver only the isolated transparent visual. The web application supplies the card background, typography, gradient and controls."
     },
     {
       "wordId": "v-电影",
@@ -165,9 +165,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "existing_asset",
+      "reason": "Reutilizar el recurso y la revisión existentes; no duplicar ni aprobar de nuevo.",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: Míng active Mandarin vocabulary-card cutout.\nStyle ID: ming-vocabulary-transparent-subject-golden-v2.\n\nVocabulary identity for semantic planning only: 电影 (diànyǐng).\nAudited meaning in Spanish: película; cine.\nVisual mode: concept_scene.\nEditorial semantic guidance: Película como contenido; una sala o pantalla puede nombrar el lugar o la acción de mirar..\nNo audited example phrase is linked; rely only on the audited meaning and editorial guidance.\n\nPrimary request: Create one memorable, pedagogically clear visual that supports exactly this audited meaning. Use one simple human gesture, relationship or emotional situation whose dominant reading matches the audited concept. \n\nOUTPUT AND TRANSPARENCY\nDeliver a clean photorealistic PNG cutout with genuine transparent alpha. Transparent pixels must extend to every edge and corner. No white, ivory, gray, colored, studio, indoor or outdoor background; no vignette, aura, glow, fog, floor patch or broad environmental shadow. Preserve fine hair and edge detail without a white, black or colored halo. A very narrow natural contact shadow is allowed only when physically necessary.\n\nCOMPOSITION\nHorizontal 1536 × 1024 canvas. Place the complete subject or compact scene toward the center-right, generally inside x=46–96% and y=3–96%. Reserve transparent negative space on the left, especially x=4–43% and y=55–94%, for live HTML text. Keep both upper corners clear for UI controls. Do not crop heads, hands, feet, tails, handles or other meaning-bearing parts. Do not distort or unnaturally miniaturize the subject.\n\nAPPEARANCE\nNatural premium educational photography, realistic anatomy, proportions, materials and color, sharp subject, calm diffuse daylight and gentle contrast. The main meaning must remain legible at small card size.\n\nSTRICTLY AVOID\nNo text of any kind; no Hanzi, pinyin, Spanish, letters, digits, labels, signs, captions, speech bubbles, punctuation, question marks, arrows, icons, diagrams, UI, card frame, border, logo, watermark, brand, checkerboard, collage, decorative prop, duplicate subject or unrelated element. Do not infer a person’s nationality, name, family role or profession from facial appearance alone.\n\nDeliver only the isolated transparent visual. The web application supplies the card background, typography, gradient and controls."
     },
     {
       "wordId": "v-多少",
@@ -177,9 +177,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "existing_asset",
+      "reason": "Reutilizar el recurso y la revisión existentes; no duplicar ni aprobar de nuevo.",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: Míng active Mandarin vocabulary-card cutout.\nStyle ID: ming-vocabulary-transparent-subject-golden-v2.\n\nVocabulary identity for semantic planning only: 多少 (duōshao).\nAudited meaning in Spanish: cuánto; cuántos.\nVisual mode: visual_grammar.\nEditorial semantic guidance: Pregunta de cantidad; sin construcción verbal no se distingue de 几..\nNo audited example phrase is linked; rely only on the audited meaning and editorial guidance.\n\nPrimary request: Create one memorable, pedagogically clear visual that supports exactly this audited meaning. Use a compact structured group or relationship that supports the grammatical idea. It is supporting context, not an image-only definition. \n\nOUTPUT AND TRANSPARENCY\nDeliver a clean photorealistic PNG cutout with genuine transparent alpha. Transparent pixels must extend to every edge and corner. No white, ivory, gray, colored, studio, indoor or outdoor background; no vignette, aura, glow, fog, floor patch or broad environmental shadow. Preserve fine hair and edge detail without a white, black or colored halo. A very narrow natural contact shadow is allowed only when physically necessary.\n\nCOMPOSITION\nHorizontal 1536 × 1024 canvas. Place the complete subject or compact scene toward the center-right, generally inside x=46–96% and y=3–96%. Reserve transparent negative space on the left, especially x=4–43% and y=55–94%, for live HTML text. Keep both upper corners clear for UI controls. Do not crop heads, hands, feet, tails, handles or other meaning-bearing parts. Do not distort or unnaturally miniaturize the subject.\n\nAPPEARANCE\nNatural premium educational photography, realistic anatomy, proportions, materials and color, sharp subject, calm diffuse daylight and gentle contrast. The main meaning must remain legible at small card size.\n\nSTRICTLY AVOID\nNo text of any kind; no Hanzi, pinyin, Spanish, letters, digits, labels, signs, captions, speech bubbles, punctuation, question marks, arrows, icons, diagrams, UI, card frame, border, logo, watermark, brand, checkerboard, collage, decorative prop, duplicate subject or unrelated element. Do not infer a person’s nationality, name, family role or profession from facial appearance alone.\n\nDeliver only the isolated transparent visual. The web application supplies the card background, typography, gradient and controls."
     },
     {
       "wordId": "v-说",
@@ -189,9 +189,9 @@
         "image_quiz_eligible": true,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "existing_asset",
+      "reason": "Reutilizar el recurso y la revisión existentes; no duplicar ni aprobar de nuevo.",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: Míng active Mandarin vocabulary-card cutout.\nStyle ID: ming-vocabulary-transparent-subject-golden-v2.\n\nVocabulary identity for semantic planning only: 说 (shuō).\nAudited meaning in Spanish: hablar; decir.\nVisual mode: action_scene.\nEditorial semantic guidance: Hablar o decir; distinguir de cantar y preguntar en una interacción controlada..\nAudited example context: 我会说中文。 — wǒ huì shuō zhōngwén — Sé hablar chino..\n\nPrimary request: Create one memorable, pedagogically clear visual that supports exactly this audited meaning. Use one clear frozen action with the actor, hands, body and necessary object fully visible. Avoid competing actions. \n\nOUTPUT AND TRANSPARENCY\nDeliver a clean photorealistic PNG cutout with genuine transparent alpha. Transparent pixels must extend to every edge and corner. No white, ivory, gray, colored, studio, indoor or outdoor background; no vignette, aura, glow, fog, floor patch or broad environmental shadow. Preserve fine hair and edge detail without a white, black or colored halo. A very narrow natural contact shadow is allowed only when physically necessary.\n\nCOMPOSITION\nHorizontal 1536 × 1024 canvas. Place the complete subject or compact scene toward the center-right, generally inside x=46–96% and y=3–96%. Reserve transparent negative space on the left, especially x=4–43% and y=55–94%, for live HTML text. Keep both upper corners clear for UI controls. Do not crop heads, hands, feet, tails, handles or other meaning-bearing parts. Do not distort or unnaturally miniaturize the subject.\n\nAPPEARANCE\nNatural premium educational photography, realistic anatomy, proportions, materials and color, sharp subject, calm diffuse daylight and gentle contrast. The main meaning must remain legible at small card size.\n\nSTRICTLY AVOID\nNo text of any kind; no Hanzi, pinyin, Spanish, letters, digits, labels, signs, captions, speech bubbles, punctuation, question marks, arrows, icons, diagrams, UI, card frame, border, logo, watermark, brand, checkerboard, collage, decorative prop, duplicate subject or unrelated element. Do not infer a person’s nationality, name, family role or profession from facial appearance alone.\n\nDeliver only the isolated transparent visual. The web application supplies the card background, typography, gradient and controls."
     },
     {
       "wordId": "v-上",
@@ -201,9 +201,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "existing_asset",
+      "reason": "Reutilizar el recurso y la revisión existentes; no duplicar ni aprobar de nuevo.",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: Míng active Mandarin vocabulary-card cutout.\nStyle ID: ming-vocabulary-transparent-subject-golden-v2.\n\nVocabulary identity for semantic planning only: 上 (shàng).\nAudited meaning in Spanish: asistir a; tomar, en 上课.\nVisual mode: phrase_context.\nEditorial semantic guidance: Asistir a clase en este registro; no usar la dirección arriba para sustituir ese sentido..\nAudited example context: 我去上英语课。 — Wŏ qὺ shàng yīngyǔ kè — Voy a tomar clase de inglés..\n\nPrimary request: Create one memorable, pedagogically clear visual that supports exactly this audited meaning. Depict a compact moment that communicates the complete audited example context. Do not reduce the word to a misleading isolated symbol. \n\nOUTPUT AND TRANSPARENCY\nDeliver a clean photorealistic PNG cutout with genuine transparent alpha. Transparent pixels must extend to every edge and corner. No white, ivory, gray, colored, studio, indoor or outdoor background; no vignette, aura, glow, fog, floor patch or broad environmental shadow. Preserve fine hair and edge detail without a white, black or colored halo. A very narrow natural contact shadow is allowed only when physically necessary.\n\nCOMPOSITION\nHorizontal 1536 × 1024 canvas. Place the complete subject or compact scene toward the center-right, generally inside x=46–96% and y=3–96%. Reserve transparent negative space on the left, especially x=4–43% and y=55–94%, for live HTML text. Keep both upper corners clear for UI controls. Do not crop heads, hands, feet, tails, handles or other meaning-bearing parts. Do not distort or unnaturally miniaturize the subject.\n\nAPPEARANCE\nNatural premium educational photography, realistic anatomy, proportions, materials and color, sharp subject, calm diffuse daylight and gentle contrast. The main meaning must remain legible at small card size.\n\nSTRICTLY AVOID\nNo text of any kind; no Hanzi, pinyin, Spanish, letters, digits, labels, signs, captions, speech bubbles, punctuation, question marks, arrows, icons, diagrams, UI, card frame, border, logo, watermark, brand, checkerboard, collage, decorative prop, duplicate subject or unrelated element. Do not infer a person’s nationality, name, family role or profession from facial appearance alone.\n\nDeliver only the isolated transparent visual. The web application supplies the card background, typography, gradient and controls."
     },
     {
       "wordId": "v-班",
@@ -213,9 +213,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "existing_asset",
+      "reason": "Reutilizar el recurso y la revisión existentes; no duplicar ni aprobar de nuevo.",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: Míng active Mandarin vocabulary-card cutout.\nStyle ID: ming-vocabulary-transparent-subject-golden-v2.\n\nVocabulary identity for semantic planning only: 班 (bān).\nAudited meaning in Spanish: clase; grupo de estudiantes.\nVisual mode: concept_scene.\nEditorial semantic guidance: Grupo de clase; distinguirlo de curso, aula y compañeros requiere relación contextual..\nAudited example context: 我们班有十个人。 — Wǒmen bān yǒu shí ge rén. — En nuestra clase hay diez personas..\n\nPrimary request: Create one memorable, pedagogically clear visual that supports exactly this audited meaning. Use one simple human gesture, relationship or emotional situation whose dominant reading matches the audited concept. \n\nOUTPUT AND TRANSPARENCY\nDeliver a clean photorealistic PNG cutout with genuine transparent alpha. Transparent pixels must extend to every edge and corner. No white, ivory, gray, colored, studio, indoor or outdoor background; no vignette, aura, glow, fog, floor patch or broad environmental shadow. Preserve fine hair and edge detail without a white, black or colored halo. A very narrow natural contact shadow is allowed only when physically necessary.\n\nCOMPOSITION\nHorizontal 1536 × 1024 canvas. Place the complete subject or compact scene toward the center-right, generally inside x=46–96% and y=3–96%. Reserve transparent negative space on the left, especially x=4–43% and y=55–94%, for live HTML text. Keep both upper corners clear for UI controls. Do not crop heads, hands, feet, tails, handles or other meaning-bearing parts. Do not distort or unnaturally miniaturize the subject.\n\nAPPEARANCE\nNatural premium educational photography, realistic anatomy, proportions, materials and color, sharp subject, calm diffuse daylight and gentle contrast. The main meaning must remain legible at small card size.\n\nSTRICTLY AVOID\nNo text of any kind; no Hanzi, pinyin, Spanish, letters, digits, labels, signs, captions, speech bubbles, punctuation, question marks, arrows, icons, diagrams, UI, card frame, border, logo, watermark, brand, checkerboard, collage, decorative prop, duplicate subject or unrelated element. Do not infer a person’s nationality, name, family role or profession from facial appearance alone.\n\nDeliver only the isolated transparent visual. The web application supplies the card background, typography, gradient and controls."
     },
     {
       "wordId": "v-上午",
@@ -225,9 +225,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "approved",
+      "reason": "Receta editorial explícita; conservar corpus y revisión por versión.",
+      "prompt": "Composición determinista de apoyo para 上午 (mañana; antes del mediodía). Receta {\"slug\":\"morning\",\"kind\":\"day-period\",\"start\":6,\"end\":12}. Lienzo alfa 1618 × 1000; contenido en la mitad derecha. Números, sectores y relaciones exactos, nunca generados por IA. Es un ejemplo contextual; no habilita una pregunta de reconocimiento aislado."
     },
     {
       "wordId": "v-多",
@@ -237,9 +237,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "approved",
+      "reason": "Receta editorial explícita; conservar corpus y revisión por versión.",
+      "prompt": "Composición determinista de apoyo para 多 (mucho; más). Receta {\"slug\":\"many\",\"kind\":\"comparison\",\"side\":\"many\"}. Lienzo alfa 1618 × 1000; contenido en la mitad derecha. Números, sectores y relaciones exactos, nunca generados por IA. Es un ejemplo contextual; no habilita una pregunta de reconocimiento aislado."
     },
     {
       "wordId": "v-特别",
@@ -249,9 +249,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 特别 (tèbié): especialmente. Modo concept_scene. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-点（钟）",
@@ -261,9 +261,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "approved",
+      "reason": "Receta editorial explícita; conservar corpus y revisión por versión.",
+      "prompt": "Composición determinista de apoyo para 点（钟） (en punto). Receta {\"slug\":\"on-the-hour\",\"kind\":\"clock\",\"minutes\":0}. Lienzo alfa 1618 × 1000; contenido en la mitad derecha. Números, sectores y relaciones exactos, nunca generados por IA. Es un ejemplo contextual; no habilita una pregunta de reconocimiento aislado."
     },
     {
       "wordId": "v-半",
@@ -273,9 +273,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "approved",
+      "reason": "Receta editorial explícita; conservar corpus y revisión por versión.",
+      "prompt": "Composición determinista de apoyo para 半 (mitad). Receta {\"slug\":\"half\",\"kind\":\"fraction\",\"minutes\":30}. Lienzo alfa 1618 × 1000; contenido en la mitad derecha. Números, sectores y relaciones exactos, nunca generados por IA. Es un ejemplo contextual; no habilita una pregunta de reconocimiento aislado."
     },
     {
       "wordId": "v-语法",
@@ -285,9 +285,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 语法 (yǔfǎ): gramática. Modo concept_scene. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-汉字",
@@ -297,9 +297,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 汉字 (Hànzì): carácter chino. Modo concept_scene. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-下",
@@ -309,9 +309,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 下 (xià): abajo; siguiente; último. Modo visual_grammar. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-刻",
@@ -321,9 +321,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "approved",
+      "reason": "Receta editorial explícita; conservar corpus y revisión por versión.",
+      "prompt": "Composición determinista de apoyo para 刻 (cuarto (de una hora)). Receta {\"slug\":\"quarter-hour\",\"kind\":\"clock\",\"minutes\":15}. Lienzo alfa 1618 × 1000; contenido en la mitad derecha. Números, sectores y relaciones exactos, nunca generados por IA. Es un ejemplo contextual; no habilita una pregunta de reconocimiento aislado."
     },
     {
       "wordId": "v-口语",
@@ -333,9 +333,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 口语 (kǒuyǔ): idioma hablado. Modo concept_scene. Elegir un contexto compatible entre los vínculos auditados: PH-09bc3992f0207092. No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-对了",
@@ -345,9 +345,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 对了 (duìle): (expresión usada para cambiar el tema de una conversación o para recordar al oyente un tema nuevo) a propósito; bueno, sí. Modo phrase_context. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-对",
@@ -357,9 +357,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 对 (duì): sí; correcto. Modo visual_grammar. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-时间",
@@ -369,9 +369,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 时间 (shíjiān): tiempo. Modo concept_scene. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-一起",
@@ -381,9 +381,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 一起 (yìqǐ): juntos. Modo visual_grammar. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-吧",
@@ -393,9 +393,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 吧 (ba): partícula modal usada al final de una oración para indicar consulta, sugerencia, solicitud, etc.. Modo visual_grammar. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-恐怕",
@@ -405,9 +405,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 恐怕 (kǒngpà): (indicando una estimación) Me temo que.... Modo phrase_context. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-行",
@@ -417,9 +417,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 行 (xíng): estar bien. Modo phrase_context. Elegir un contexto compatible entre los vínculos auditados: PH-41a7d4dea64bb5d5. No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-练习",
@@ -429,9 +429,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 练习 (liànxí): practicar/ejercicio. Modo action_scene. Elegir un contexto compatible entre los vínculos auditados: PH-09bc3992f0207092. No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-差",
@@ -441,9 +441,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 差 (chà): faltar; carecer. Modo visual_grammar. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-分",
@@ -453,9 +453,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "approved",
+      "reason": "Receta editorial explícita; conservar corpus y revisión por versión.",
+      "prompt": "Composición determinista de apoyo para 分 (minuto). Receta {\"slug\":\"minute\",\"kind\":\"clock\",\"minutes\":1}. Lienzo alfa 1618 × 1000; contenido en la mitad derecha. Números, sectores y relaciones exactos, nunca generados por IA. Es un ejemplo contextual; no habilita una pregunta de reconocimiento aislado."
     },
     {
       "wordId": "v-回",
@@ -465,9 +465,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 回 (huí): regresar. Modo action_scene. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-学校",
@@ -477,9 +477,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 学校 (xuéxiào): escuela. Modo literal_photo. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-活动",
@@ -489,9 +489,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 活动 (huódòng): actividad; evento. Modo concept_scene. Elegir un contexto compatible entre los vínculos auditados: PH-8f1046a135101985. No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-听说",
@@ -501,9 +501,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 听说 (tīngshuō): se dice; escuchar; enterarse. Modo concept_scene. Elegir un contexto compatible entre los vínculos auditados: PH-21825c5dbd28ac7b, PH-2b2baa0f790f1dc5. No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-听",
@@ -513,9 +513,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "approved",
+      "reason": "Receta editorial explícita; conservar corpus y revisión por versión.",
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for Ming: 听, escuchar. Style ming-vocabulary-transparent-subject-golden-v2. One fictional adult listening attentively to plain over-ear headphones, relaxed seated pose on a simple stool, eyes open, mouth closed, one hand lightly touching the ear cup. Complete person, hands, feet and stool visible. No instrument, phone or microphone. Photorealistic natural daylight and realistic materials. True transparent alpha background; no room, floor, scenery, colored background, checkerboard, text, logos, UI or symbols. Golden-ratio landscape canvas target 1618x1000. Complete subject on right half x46–96%, y3–96%; left half reserved for live HTML text. Transparent canvas corners; no cropping. Only the isolated subject."
     },
     {
       "wordId": "v-女生",
@@ -525,9 +525,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 女生 (nǚshēng): estudiante femenina. Modo literal_photo. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-男",
@@ -537,9 +537,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 男 (nán): masculino. Modo visual_grammar. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-少",
@@ -549,9 +549,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "approved",
+      "reason": "Receta editorial explícita; conservar corpus y revisión por versión.",
+      "prompt": "Composición determinista de apoyo para 少 (poco). Receta {\"slug\":\"few\",\"kind\":\"comparison\",\"side\":\"few\"}. Lienzo alfa 1618 × 1000; contenido en la mitad derecha. Números, sectores y relaciones exactos, nunca generados por IA. Es un ejemplo contextual; no habilita una pregunta de reconocimiento aislado."
     },
     {
       "wordId": "v-意思",
@@ -561,9 +561,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 意思 (yìsi): significado. Modo concept_scene. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-来",
@@ -573,9 +573,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 来 (lái): venir. Modo action_scene. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-专业",
@@ -585,9 +585,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 专业 (zhuānyè): especialidad (asignatura). Modo concept_scene. Elegir un contexto compatible entre los vínculos auditados: PH-b973c61b2d2e0547. No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-主意",
@@ -597,9 +597,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 主意 (zhǔyi): idea. Modo concept_scene. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-零",
@@ -609,9 +609,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "approved",
+      "reason": "Receta editorial explícita; conservar corpus y revisión por versión.",
+      "prompt": "Composición determinista de apoyo para 零 (cero). Receta {\"slug\":\"zero\",\"kind\":\"quantity\",\"count\":0}. Lienzo alfa 1618 × 1000; contenido en la mitad derecha. Números, sectores y relaciones exactos, nunca generados por IA. Es un ejemplo contextual; no habilita una pregunta de reconocimiento aislado."
     },
     {
       "wordId": "v-起床",
@@ -621,9 +621,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "approved",
+      "reason": "Receta editorial explícita; conservar corpus y revisión por versión.",
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for Ming: 起床, levantarse. Style ming-vocabulary-transparent-subject-golden-v2. One fictional adult waking up, sitting upright on the edge of a simple single bed, both bare feet resting beside the bed, stretching both arms gently with eyes open. Complete person and compact bed, no room. Photorealistic natural daylight and realistic materials. True transparent alpha background; no room, floor, scenery, colored background, checkerboard, text, logos, UI or symbols. Golden-ratio landscape canvas target 1618x1000. Complete subject on right half x46–96%, y3–96%; left half reserved for live HTML text. Transparent canvas corners; no cropping. Only the isolated subject. Critical framing correction: zoom out substantially. Leave at least 8% transparent margin around every edge. Both hands and fingertips MUST fit fully inside canvas. Arms stretch forwards at shoulder height, never upward or towards canvas edges. Bed must be compact and completely visible."
     },
     {
       "wordId": "v-午饭",
@@ -633,9 +633,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "approved",
+      "reason": "Receta editorial explícita; conservar corpus y revisión por versión.",
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for Ming: 午饭, almuerzo. Style ming-vocabulary-transparent-subject-golden-v2. One appetizing simple lunch meal: a complete plain ceramic plate with cooked rice, vegetables and cooked chicken, beside a small unbranded bowl of soup. No table, cutlery, words or decorative props. This is only an example meal, not a visual definition of time of day. Photorealistic natural daylight and realistic materials. True transparent alpha background; no room, floor, scenery, colored background, checkerboard, text, logos, UI or symbols. Golden-ratio landscape canvas target 1618x1000. Complete subject on right half x46–96%, y3–96%; left half reserved for live HTML text. Transparent canvas corners; no cropping. Only the isolated subject."
     },
     {
       "wordId": "v-运动",
@@ -645,9 +645,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 运动 (yùndòng): deportes; ejercicio/hacer ejercicio físico. Modo action_scene. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-打球",
@@ -657,9 +657,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "approved",
+      "reason": "Receta editorial explícita; conservar corpus y revisión por versión.",
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for Ming: 打球, jugar a la pelota. Style ming-vocabulary-transparent-subject-golden-v2. One fictional adult actively dribbling one basketball with a hand, knees slightly bent, casual athletic clothing. Complete body, both hands, both feet and entire basketball visible. A single clear ball-playing action. No team, hoop or court. Photorealistic natural daylight and realistic materials. True transparent alpha background; no room, floor, scenery, colored background, checkerboard, text, logos, UI or symbols. Golden-ratio landscape canvas target 1618x1000. Complete subject on right half x46–96%, y3–96%; left half reserved for live HTML text. Transparent canvas corners; no cropping. Only the isolated subject."
     },
     {
       "wordId": "v-跑步",
@@ -669,9 +669,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "approved",
+      "reason": "Receta editorial explícita; conservar corpus y revisión por versión.",
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for Ming: 跑步, correr; trotar. Style ming-vocabulary-transparent-subject-golden-v2. One fictional adult jogging, shown in three-quarter side view, natural running stride with one foot lifted, bent arms, plain athletic clothing and running shoes. Entire body including hands and feet visible. No equipment or other people. Photorealistic natural daylight and realistic materials. True transparent alpha background; no room, floor, scenery, colored background, checkerboard, text, logos, UI or symbols. Golden-ratio landscape canvas target 1618x1000. Complete subject on right half x46–96%, y3–96%; left half reserved for live HTML text. Transparent canvas corners; no cropping. Only the isolated subject."
     },
     {
       "wordId": "v-电视",
@@ -681,7 +681,7 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "ready_to_generate",
+      "status": "approved",
       "reason": "Concrete subject/action suitable for a transparent cutout.",
       "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for Ming: 电视 (diànshì), televisión; TV. Style ming-vocabulary-transparent-subject-golden-v2. One complete unbranded television, dark glass screen turned off, thin bezel and two complete feet. No remote or other objects. Photorealistic natural daylight and realistic materials. True transparent alpha background; no room, floor, scenery, colored background, checkerboard, text, logos, UI or symbols. Golden-ratio landscape canvas target 1618x1000. Complete subject on right half x46–96%, y3–96%; left half reserved for live HTML text. Transparent canvas corners; no cropping. Only the isolated subject."
     },
@@ -693,9 +693,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "approved",
+      "reason": "Receta editorial explícita; conservar corpus y revisión por versión.",
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for Ming: 晚饭, cena. Style ming-vocabulary-transparent-subject-golden-v2. One appetizing simple evening meal: a complete plain bowl of noodle soup with vegetables, alongside a small plate of steamed dumplings. Both containers complete. No table, cutlery, words or decorative props. This is only an example meal, not a visual definition of time of day. Photorealistic natural daylight and realistic materials. True transparent alpha background; no room, floor, scenery, colored background, checkerboard, text, logos, UI or symbols. Golden-ratio landscape canvas target 1618x1000. Complete subject on right half x46–96%, y3–96%; left half reserved for live HTML text. Transparent canvas corners; no cropping. Only the isolated subject."
     },
     {
       "wordId": "v-睡觉",
@@ -705,7 +705,7 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "ready_to_generate",
+      "status": "approved",
       "reason": "Concrete subject/action suitable for a transparent cutout.",
       "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for Ming: 睡觉 (shuìjiào), dormir; acostarse. Style ming-vocabulary-transparent-subject-golden-v2. One adult sleeping peacefully on their side in a complete simple single bed, eyes closed, head on pillow, blanket covering body. Only person, mattress, pillow, blanket and bed frame; all corners visible. Photorealistic natural daylight and realistic materials. True transparent alpha background; no room, floor, scenery, colored background, checkerboard, text, logos, UI or symbols. Golden-ratio landscape canvas target 1618x1000. Complete subject on right half x46–96%, y3–96%; left half reserved for live HTML text. Transparent canvas corners; no cropping. Only the isolated subject."
     },
@@ -717,9 +717,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 听力 (tīnglì): audición. Modo concept_scene. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-文学",
@@ -729,9 +729,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 文学 (wénxué): literatura. Modo concept_scene. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-历史",
@@ -741,9 +741,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 历史 (lìshǐ): historia. Modo concept_scene. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-经济",
@@ -753,9 +753,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 经济 (jīngjì): ciencias económicas; economía. Modo concept_scene. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-文化",
@@ -765,9 +765,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 文化 (wénhuà): cultura. Modo concept_scene. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-容易",
@@ -777,9 +777,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 容易 (róngyì): fácil. Modo visual_grammar. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-难",
@@ -789,9 +789,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 难 (nán): difícil. Modo visual_grammar. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-很多",
@@ -801,9 +801,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "approved",
+      "reason": "Receta editorial explícita; conservar corpus y revisión por versión.",
+      "prompt": "Composición determinista de apoyo para 很多 (muchos). Receta {\"slug\":\"a-lot\",\"kind\":\"comparison\",\"side\":\"many\"}. Lienzo alfa 1618 × 1000; contenido en la mitad derecha. Números, sectores y relaciones exactos, nunca generados por IA. Es un ejemplo contextual; no habilita una pregunta de reconocimiento aislado."
     },
     {
       "wordId": "v-口语考试",
@@ -813,9 +813,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 口语考试 (kǒuyǔ kǎoshì): examen oral. Modo concept_scene. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-回家",
@@ -825,9 +825,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 回家 (huí jiā): volver a casa. Modo action_scene. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-回国",
@@ -837,9 +837,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 回国 (huí guó): volver al país. Modo action_scene. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-回学校",
@@ -849,9 +849,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "medium"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 回学校 (huí xuéxiào): volver al colegio. Modo action_scene. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     },
     {
       "wordId": "v-里卡多帕尔玛大学",
@@ -861,8 +861,8 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
+      "status": "no_image",
+      "reason": "El corpus indica none: no inventar un recurso.",
       "prompt": null
     },
     {
@@ -873,9 +873,9 @@
         "image_quiz_eligible": false,
         "ambiguity_risk": "high"
       },
-      "status": "not_selected",
-      "reason": "No new image selected: abstract, contextual or potentially ambiguous; use the text card or existing reviewed asset.",
-      "prompt": null
+      "status": "requires_semantic_review",
+      "reason": "Definir una escena compatible con el sentido y sus ejemplos antes de generar.",
+      "prompt": "Preparar apoyo editorial para 觉得 (jué de): sentir. Modo concept_scene. Elegir un contexto compatible entre los vínculos auditados: . No inferir identidades, nacionalidad, profesión ni equivalencias por apariencia. Requiere revisión semántica antes de generación. Sujeto o escena aislada con alfa, sin texto, UI ni fondo. No usar como definición visual aislada ni habilitar quiz."
     }
   ]
 }

@@ -5,9 +5,9 @@ test('lesson filter combines with search and review status', async ({ page, cont
   await context.addCookies([{name:'ming_access_token',value:'image-review-test-admin',url:'http://localhost:3103'}]);
   const {entries} = await (await context.request.get('/api/admin/vocabulary-images')).json();
   await page.goto('/admin/images');
-  for (const lesson of [1,2,3]) {
+  for (const lesson of [1,2,3,4]) {
     await page.getByLabel('Filtrar por lección').selectOption(String(lesson));
-    const expected=entries.filter((entry: {lesson:number})=>entry.lesson===lesson);
+    const expected=entries.filter((entry: {lessons:number[]})=>entry.lessons.includes(lesson));
     await expect(page.getByRole('article')).toHaveCount(expected.length);
     const word=expected[0];
     await page.getByLabel('Buscar palabra').fill(word.wordId);

@@ -2,6 +2,7 @@ import 'server-only';
 import { createHash } from 'node:crypto';
 import promptCatalog from '@/docs/vocabulary-image-prompts.json';
 import lesson4Prompts from '@/docs/lesson4-image-prompts.json';
+import lesson4 from '@/data/lesson4-public.json';
 import { vocabularyCatalog, getVocabularyLesson } from '@/lib/vocabulary';
 import { splitImageCorrection, withImageCorrection } from '@/lib/image-prompt-correction';
 import { vocabularyMedia, type VocabularyMediaEntry } from '@/lib/vocabulary-media';
@@ -13,7 +14,7 @@ export type VocabularyImageReviewStatus = ImageReviewStatus;
 export type AdminVocabularyImageEntry = VocabularyMediaEntry & {
   hanzi: string; pinyin: string; spanish: string; prompt: string; defaultPrompt: string;
   reviewStatus: ImageReviewStatus; reviewedAt: string | null; revision: number;
-  lesson: number | null; correction: string;
+  lesson: number | null; lessons: number[]; correction: string;
 };
 const prompts = new Map<string, { prompt: string; hanzi?: string; pinyin?: string; spanish?: string }>(promptCatalog.entries.map(entry => [entry.wordId, entry]));
 for (const entry of lesson4Prompts.entries) if (entry.prompt) prompts.set(entry.wordId, { prompt: entry.prompt });
@@ -49,13 +50,19 @@ export async function listVocabularyImageReviews() {
       pinyin: word?.pinyin ?? prompt?.pinyin ?? '',
       spanish: word?.spanish ?? prompt?.spanish ?? entry.sense,
       lesson: word ? getVocabularyLesson(word) ?? null : null,
+      lessons: [...new Set([...(word?.curriculumLinks.map(link => link.lesson) ?? []), ...(lesson4.vocabulary.some(item => item.id === entry.wordId) ? [4] : [])])],
       correction: splitImageCorrection(review?.prompt ?? prompt?.prompt ?? '').correction,
       prompt: review?.prompt ?? prompt?.prompt ?? '', defaultPrompt: prompt?.prompt ?? '',
       reviewStatus: effectiveImageStatus(entry, review),
       reviewedAt: review?.reviewed_at ?? null, revision: review?.revision ?? 0,
     };
   });
-  return { entries, storageReady };
+  const planned = lesson4Prompts.entries.filter(entry => !vocabularyMedia.some(image => image.wordId === entry.wordId)).map(entry => {
+    const word = words.get(entry.wordId);
+    return { wordId: entry.wordId, hanzi: word?.hanzi ?? entry.wordId, spanish: word?.spanish ?? '',
+      prompt: entry.prompt, reason: entry.reason, status: entry.status };
+  });
+  return { entries, planned, storageReady };
 }
 
 export async function regenerationQueue() {
