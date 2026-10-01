@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "model": "gpt-4o-mini-tts",
+  "voice": "marin",
+  "textFingerprint": "aa884c09a9fe49baacc4f43287daaeca700fdb7314928bb91d668701cc743aac",
+  "clips": {
+    "oral-01": {
+      "src": "/audio/oral-final/b5315a14d738c3eea190153a5f4b3a2efbf36b1d46745d7e044de126a546a845.mp3",
+      "hanzi": "你好！",
+      "pinyin": "Nǐ hǎo!",
+      "durationSeconds": 0.768,
+      "sha256": "f3000903de9d1720fc4693b1ae57ed62463041097da4bc7c36d61412b62400f7"
+    },
+    "oral-02": {
+      "src": "/audio/oral-final/b5315a14d738c3eea190153a5f4b3a2efbf36b1d46745d7e044de126a546a845.mp3",
+      "hanzi": "你好！",
+      "pinyin": "Nǐ hǎo!",
+      "durationSeconds": 0.768,
+      "sha256": "f3000903de9d1720fc4693b1ae57ed62463041097da4bc7c36d61412b62400f7"
+    },
+    "oral-03": {
+      "src": "/audio/oral-final/e8fbf20c9257e616f3644829e47fb51dda27ea7862d7319de3030f3a10a62420.mp3",
+      "hanzi": "请问，你叫什么名字？",
+      "pinyin": "Qǐngwèn, nǐ jiào shénme míngzi?",
+      "durationSeconds": 4.056,
+      "sha256": "1e4cefa846a4e576e540b95bc91e13597980dbaa91480c68c3a1ef5ac8644185"
+    },
+    "oral-04": {
+      "src": "/audio/oral-final/1c1ae0bba8692731f4d95d875d9de53063597442ae1712818766036e9977ee73.mp3",
+      "hanzi": "我叫 Shěn Bówén。你叫什么名字？",
+      "pinyin": "Wǒ jiào Shěn Bówén. Nǐ jiào shénme míngzi?",
+      "durationSeconds": 3.912,
+      "sha256": "5b487045a9c443ca54f03d5ebdd9512ad02848aef9bbb66f5f0635984781dacc"
+    },
+    "oral-05": {
+      "src": "/audio/oral-final/77d5554fd3c77a7c9fd56648c68c5350d83a4247038c96d295f276d5ea017019.mp3",
+      "hanzi": "我叫尤世洛。你最近怎么样？",
+      "pinyin": "Wǒ jiào Yóu Shìluò. Nǐ zuìjìn zěnmeyàng?",
+      "durationSeconds": 3.768,
+      "sha256": "57868a53a04daf48bade92af9f8cce1d421f2cd9d253c97da523343acd7f8777"
+    },
+    "oral-06": {
+      "src": "/audio/oral-final/33bef078227e8afef6c6f4d3d098162747167cd8f39fa147f4ea225d8e358a97.mp3",
+      "hanzi": "我很好。你呢？",
+      "pinyin": "Wǒ hěn hǎo. Nǐ ne?",
+      "durationSeconds": 2.208,
+      "sha256": "5ad7ecccffa4795ccadc1698c5310cba530f0b83ab0c2b83a8356195ce069ce0"
+    },
+    "oral-07": {
+      "src": "/audio/oral-final/61033b100df89886d403a20fb16a8772b9437a0fa0582e7e2c7ed9d2a257b23a.mp3",
+      "hanzi": "我很忙。你是哪国人？",
+      "pinyin": "Wǒ hěn máng. Nǐ shì nǎ guó rén?",
+      "durationSeconds": 2.76,
+      "sha256": "2e9f365c1747f57a73529307f0a101060fc07f204ecd4cc29e2ad738510f871e"
+    },
+    "oral-08": {
+      "src": "/audio/oral-final/9a9db449149dbcaaf7cad7027040dcf3d197f45d3c8d6cfcad73d470afe0b2bb.mp3",
+      "hanzi": "我是秘鲁人。你是哪国人？",
+      "pinyin": "Wǒ shì Bìlǔ rén. Nǐ shì nǎ guó rén?",
+      "durationSeconds": 3.768,
+      "sha256": "37d0b58410655b316fdec78a84f821f5ea74a484a4b7e41f651150eb64b4f8f7"
+    },
+    "oral-09": {
+      "src": "/audio/oral-final/fab3936fc43316a8898f0ca6afe2c4456913f753fc2d84b32d678d2f49031530.mp3",
+      "hanzi": "我也是秘鲁人。你今年多大？",
+      "pinyin": "Wǒ yě shì Bìlǔ rén. Nǐ jīnnián duōdà?",
+      "durationSeconds": 3.36,
+      "sha256": "9a6f4cd8bdcd0a00d832deb62abb7f79d5f0fedcb3b9c884630056f2d6ed29ab"
+    },
+    "oral-10": {
+      "src": "/audio/oral-final/e43278cccf8c79c125b8cecc9af55f306569167d589e430721310a673e248374.mp3",
+      "hanzi": "我今年三十一岁。你今年多大？",
+      "pinyin": "Wǒ jīnnián sānshíyī suì. Nǐ jīnnián duōdà?",
+      "durationSeconds": 3.864,
+      "sha256": "54e388c9106c9438fcfb54994137800bc69689ec13be8d4fd0a29354ec4f8cd9"
+    },
+    "oral-11": {
+      "src": "/audio/oral-final/869bbe19c9c0055c2f6d67af8d0279f19bc5bfa2a02d6c8a734840daf9ba8bcf.mp3",
+      "hanzi": "我今年三十四岁。",
+      "pinyin": "Wǒ jīnnián sānshísì suì.",
+      "durationSeconds": 2.448,
+      "sha256": "51de2617c284e2c05d0a299e451e8fae4c59926791b4057750761477085971ab"
+    },
+    "oral-12": {
+      "src": "/audio/oral-final/9b7b25b78eb60522d43fd0d01461b2ac657da922abc74cf26e2e17f9139886c8.mp3",
+      "hanzi": "你喜欢吃什么？",
+      "pinyin": "Nǐ xǐhuan chī shénme?",
+      "durationSeconds": 2.064,
+      "sha256": "bcb0173e1e36c488bef94617601e724e1635204de2ff19d30fcf0e9b69ee1799"
+    },
+    "oral-13": {
+      "src": "/audio/oral-final/a269876baa27f312c44453aee43e296b8886299c4c53862b81127d13070c249d.mp3",
+      "hanzi": "我喜欢吃包子。你喜欢看电影吗？",
+      "pinyin": "Wǒ xǐhuan chī bāozi. Nǐ xǐhuan kàn diànyǐng ma?",
+      "durationSeconds": 4.416,
+      "sha256": "968b091987b293885c3d6ae0bdafa72cf920678a43fee134a03dc535166896f4"
+    },
+    "oral-14": {
+      "src": "/audio/oral-final/c2bbb2becb1b222da8d912fc76b4d06d9a3a5e89cfd15a715cf295aa015f3694.mp3",
+      "hanzi": "我喜欢看电影。你喜欢唱歌吗？",
+      "pinyin": "Wǒ xǐhuan kàn diànyǐng. Nǐ xǐhuan chànggē ma?",
+      "durationSeconds": 4.104,
+      "sha256": "f931fe457c7ecf70c3eb02b549c57587ab36173f49b58bdb166b7624e5a50ad6"
+    },
+    "oral-15": {
+      "src": "/audio/oral-final/a6e803bf46a2407ad58658693cf000d5b141ac915d0e831511468f2cac9c5268.mp3",
+      "hanzi": "我不喜欢唱歌。我喜欢看书。你明天几点有课？",
+      "pinyin": "Wǒ bù xǐhuan chànggē. Wǒ xǐhuan kàn shū. Nǐ míngtiān jǐ diǎn yǒu kè?",
+      "durationSeconds": 5.304,
+      "sha256": "7c7d6867297a967007c69427d73b99724b1375ec7304dd66a149ebcd8f25d445"
+    },
+    "oral-16": {
+      "src": "/audio/oral-final/fb4bee3c551aab0827931499525a8dac02c0bab21595fdca8025a1e5ab9f0858.mp3",
+      "hanzi": "我明天下午两点有汉语课。你明天几点有课？",
+      "pinyin": "Wǒ míngtiān xiàwǔ liǎng diǎn yǒu Hànyǔ kè. Nǐ míngtiān jǐ diǎn yǒu kè?",
+      "durationSeconds": 4.512,
+      "sha256": "495d315c058b93a0e587e5925526e4275a460cd3c9ce2c99c429549fe20c39b5"
+    },
+    "oral-17": {
+      "src": "/audio/oral-final/1bacee6307acc8a740d4d7580e8a84a724b1bf18fa644c4987d57f182bec0669.mp3",
+      "hanzi": "我明天晚上七点有汉字课。",
+      "pinyin": "Wǒ míngtiān wǎnshang qī diǎn yǒu Hànzì kè.",
+      "durationSeconds": 4.368,
+      "sha256": "c08fc45a7f324063de2ab2288072182c49a4513cafd37c844febc0f0dc3080f5"
+    },
+    "oral-18": {
+      "src": "/audio/oral-final/b019dcaeaf81c40110c4555379fbd61b4714aaec95076b7941a2538a95d84155.mp3",
+      "hanzi": "你做什么工作？",
+      "pinyin": "Nǐ zuò shénme gōngzuò?",
+      "durationSeconds": 2.4,
+      "sha256": "c397f1e94a06c4520b69d11e6f25555675a4f239e7a6231e830a0225aa15f965"
+    },
+    "oral-19": {
+      "src": "/audio/oral-final/b0854c62b44f31f8063470706c35327b85c36fdb616cfc6d2614a1d4bdb77ef9.mp3",
+      "hanzi": "我是土木工程师。你做什么工作？",
+      "pinyin": "Wǒ shì tǔmù gōngchéngshī. Nǐ zuò shénme gōngzuò?",
+      "durationSeconds": 3.96,
+      "sha256": "27365c828d9dbe3575aadd25e0621bbc53ec33ff38c204073cea61b8bc136a8e"
+    },
+    "oral-20": {
+      "src": "/audio/oral-final/2c700ec68cb63209f9bb9070c8208be8e08f765bda52e115a9c074f8bdfd00aa.mp3",
+      "hanzi": "我是电气工程师。",
+      "pinyin": "Wǒ shì diànqì gōngchéngshī.",
+      "durationSeconds": 2.952,
+      "sha256": "2b20468f8743caacce31a92528303d29a12e1a214f49ff1d0d4bcf3749806cbc"
+    },
+    "oral-21": {
+      "src": "/audio/oral-final/ee5843f1b6e2c8ffcee73254256fa05233941050bdc07fe0c2522484d6927111.mp3",
+      "hanzi": "你家有几口人？",
+      "pinyin": "Nǐ jiā yǒu jǐ kǒu rén?",
+      "durationSeconds": 2.856,
+      "sha256": "61fe9328474568fa2559c6ece97e4aa8c5dc4d350aa1a24d90bcda96b223aeca"
+    },
+    "oral-22": {
+      "src": "/audio/oral-final/933b357b5be24e3586b2649b343e7a81d22bc497bd7547fee5e60c5638de6b9e.mp3",
+      "hanzi": "我家有五口人：爸爸、妈妈、哥哥、弟弟和我。你家有几口人？",
+      "pinyin": "Wǒ jiā yǒu wǔ kǒu rén: bàba, māma, gēge, dìdi hé wǒ. Nǐ jiā yǒu jǐ kǒu rén?",
+      "durationSeconds": 5.112,
+      "sha256": "05c7d21c905b08cdb64c4a07cc02abc074c2e8c63e3030de8a689ec93522f439"
+    },
+    "oral-23": {
+      "src": "/audio/oral-final/0bf40227867dd5df778c8e96034896325946e985f52c9143289160c37e78d191.mp3",
+      "hanzi": "我家有四口人：爸爸、妈妈、妹妹和我。你爸爸妈妈做什么工作？",
+      "pinyin": "Wǒ jiā yǒu sì kǒu rén: bàba, māma, mèimei hé wǒ. Nǐ bàba māma zuò shénme gōngzuò?",
+      "durationSeconds": 7.56,
+      "sha256": "50e81c41e3371db120cedd5b173d9cfffcc367d4decc66a1a677ed09cb0d9254"
+    },
+    "oral-24": {
+      "src": "/audio/oral-final/91e6c44dd1a88c344219372cdc2b2b8f15046376cac2c8cd71190137bff99956.mp3",
+      "hanzi": "我爸爸是警察，妈妈是老师。你爸爸妈妈做什么工作？",
+      "pinyin": "Wǒ bàba shì jǐngchá, māma shì lǎoshī. Nǐ bàba māma zuò shénme gōngzuò?",
+      "durationSeconds": 5.616,
+      "sha256": "76b767a536393cc5efb696ce83b1acc00b7b189bc7586c4cc37e3ecea4079b18"
+    },
+    "oral-25": {
+      "src": "/audio/oral-final/748ff61307dac37c20f345dc08a2d1939fa1c6c2baf30bc0b35c0210b8bea80d.mp3",
+      "hanzi": "我爸爸是行政人员，妈妈是社工。你妈妈喜欢吃什么？",
+      "pinyin": "Wǒ bàba shì xíngzhèng rényuán, māma shì shègōng. Nǐ māma xǐhuan chī shénme?",
+      "durationSeconds": 4.008,
+      "sha256": "94daff0a23e764b11cab1120fbd58673e8d4b4af1fb430f3a9afc8276d2de6d3"
+    },
+    "oral-26": {
+      "src": "/audio/oral-final/ce2b19a5a22813ce48f4b231341fbcddf5a3c2213aaa2e9ce979977e3f6021a2.mp3",
+      "hanzi": "我妈妈喜欢吃炒饭。你爸爸喜欢吃什么？",
+      "pinyin": "Wǒ māma xǐhuan chī chǎofàn. Nǐ bàba xǐhuan chī shénme?",
+      "durationSeconds": 6.12,
+      "sha256": "d40a36fcdfd69dd9962d0029f7c4d3c86a5019262589c9cf84652cc98fde41a1"
+    },
+    "oral-27": {
+      "src": "/audio/oral-final/3c0a20c39aff2b751e346e2bc897b0e39184a400a46622976b7a89b393a0660e.mp3",
+      "hanzi": "我爸爸喜欢吃面条儿。",
+      "pinyin": "Wǒ bàba xǐhuan chī miàntiáor.",
+      "durationSeconds": 3.168,
+      "sha256": "50f0f2289a1b9f98fbfc94282cffd9de26478872d3ed36ad9dd034358dc8c8e1"
+    },
+    "oral-28": {
+      "src": "/audio/oral-final/64ac2df0df332157a73afe92bd781b60ffdc248493c89ddfd6c16b8c94ac6b6d.mp3",
+      "hanzi": "认识你很高兴。再见！",
+      "pinyin": "Rènshi nǐ hěn gāoxìng. Zàijiàn!",
+      "durationSeconds": 2.856,
+      "sha256": "95b6a63d416fbfd2ee035af91c6679df9e81a180d20e41b135ad933971cde564"
+    },
+    "oral-29": {
+      "src": "/audio/oral-final/4b49d4b18e64f8ac6cb31ea04c298feb4d5354c88c05299ffdff2af4350aa5a8.mp3",
+      "hanzi": "认识你，我也很高兴。再见！",
+      "pinyin": "Rènshi nǐ, wǒ yě hěn gāoxìng. Zàijiàn!",
+      "durationSeconds": 3.504,
+      "sha256": "af8090f60f6ea7cd5edc91036fa254afd38f9d38586ee1ef4c75a7b88de9fff8"
+    }
+  }
+}

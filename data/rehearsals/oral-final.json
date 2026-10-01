@@ -1,0 +1,40 @@
+{
+  "id": "oral-final-basico2-20260930",
+  "slug": "oral-dd5ec37486bb08ba4ea6a9bd372431a2",
+  "title": "Examen oral · Básico 2",
+  "speakers": [
+    {"id":"you","label":"You Shiluo","hanzi":"尤世洛","pinyin":"Yóu Shìluò"},
+    {"id":"shen","label":"Shen Bowen","hanzi":null,"pinyin":"Shěn Bówén"}
+  ],
+  "turns": [
+    {"id":"oral-01","speaker":"you","hanzi":"你好！","pinyin":"Nǐ hǎo!","spanish":"¡Hola!"},
+    {"id":"oral-02","speaker":"shen","hanzi":"你好！","pinyin":"Nǐ hǎo!","spanish":"¡Hola!"},
+    {"id":"oral-03","speaker":"you","hanzi":"请问，你叫什么名字？","pinyin":"Qǐngwèn, nǐ jiào shénme míngzi?","spanish":"Disculpa, ¿cómo te llamas?"},
+    {"id":"oral-04","speaker":"shen","hanzi":"我叫 Shěn Bówén。你叫什么名字？","pinyin":"Wǒ jiào Shěn Bówén. Nǐ jiào shénme míngzi?","spanish":"Me llamo Shěn Bówén. ¿Cómo te llamas?"},
+    {"id":"oral-05","speaker":"you","hanzi":"我叫尤世洛。你最近怎么样？","pinyin":"Wǒ jiào Yóu Shìluò. Nǐ zuìjìn zěnmeyàng?","spanish":"Me llamo Yóu Shìluò. ¿Cómo has estado últimamente?"},
+    {"id":"oral-06","speaker":"shen","hanzi":"我很好。你呢？","pinyin":"Wǒ hěn hǎo. Nǐ ne?","spanish":"Estoy bien. ¿Y tú?"},
+    {"id":"oral-07","speaker":"you","hanzi":"我很忙。你是哪国人？","pinyin":"Wǒ hěn máng. Nǐ shì nǎ guó rén?","spanish":"Estoy muy ocupado. ¿De qué país eres?"},
+    {"id":"oral-08","speaker":"shen","hanzi":"我是秘鲁人。你是哪国人？","pinyin":"Wǒ shì Bìlǔ rén. Nǐ shì nǎ guó rén?","spanish":"Soy peruano. ¿De qué país eres?"},
+    {"id":"oral-09","speaker":"you","hanzi":"我也是秘鲁人。你今年多大？","pinyin":"Wǒ yě shì Bìlǔ rén. Nǐ jīnnián duōdà?","spanish":"Yo también soy peruano. ¿Cuántos años tienes?"},
+    {"id":"oral-10","speaker":"shen","hanzi":"我今年三十一岁。你今年多大？","pinyin":"Wǒ jīnnián sānshíyī suì. Nǐ jīnnián duōdà?","spanish":"Tengo 31 años. ¿Cuántos años tienes?"},
+    {"id":"oral-11","speaker":"you","hanzi":"我今年三十四岁。","pinyin":"Wǒ jīnnián sānshísì suì.","spanish":"Tengo 34 años."},
+    {"id":"oral-12","speaker":"shen","hanzi":"你喜欢吃什么？","pinyin":"Nǐ xǐhuan chī shénme?","spanish":"¿Qué te gusta comer?"},
+    {"id":"oral-13","speaker":"you","hanzi":"我喜欢吃包子。你喜欢看电影吗？","pinyin":"Wǒ xǐhuan chī bāozi. Nǐ xǐhuan kàn diànyǐng ma?","spanish":"Me gusta comer baozi. ¿Te gusta ver películas?"},
+    {"id":"oral-14","speaker":"shen","hanzi":"我喜欢看电影。你喜欢唱歌吗？","pinyin":"Wǒ xǐhuan kàn diànyǐng. Nǐ xǐhuan chànggē ma?","spanish":"Me gusta ver películas. ¿Te gusta cantar?"},
+    {"id":"oral-15","speaker":"you","hanzi":"我不喜欢唱歌。我喜欢看书。你明天几点有课？","pinyin":"Wǒ bù xǐhuan chànggē. Wǒ xǐhuan kàn shū. Nǐ míngtiān jǐ diǎn yǒu kè?","spanish":"No me gusta cantar. Me gusta leer. ¿A qué hora tienes clase mañana?"},
+    {"id":"oral-16","speaker":"shen","hanzi":"我明天下午两点有汉语课。你明天几点有课？","pinyin":"Wǒ míngtiān xiàwǔ liǎng diǎn yǒu Hànyǔ kè. Nǐ míngtiān jǐ diǎn yǒu kè?","spanish":"Mañana tengo clase de chino a las dos de la tarde. ¿A qué hora tienes clase mañana?"},
+    {"id":"oral-17","speaker":"you","hanzi":"我明天晚上七点有汉字课。","pinyin":"Wǒ míngtiān wǎnshang qī diǎn yǒu Hànzì kè.","spanish":"Mañana tengo clase de caracteres chinos a las siete de la noche."},
+    {"id":"oral-18","speaker":"shen","hanzi":"你做什么工作？","pinyin":"Nǐ zuò shénme gōngzuò?","spanish":"¿A qué te dedicas?"},
+    {"id":"oral-19","speaker":"you","hanzi":"我是土木工程师。你做什么工作？","pinyin":"Wǒ shì tǔmù gōngchéngshī. Nǐ zuò shénme gōngzuò?","spanish":"Soy ingeniero civil. ¿A qué te dedicas?"},
+    {"id":"oral-20","speaker":"shen","hanzi":"我是电气工程师。","pinyin":"Wǒ shì diànqì gōngchéngshī.","spanish":"Soy ingeniero eléctrico."},
+    {"id":"oral-21","speaker":"you","hanzi":"你家有几口人？","pinyin":"Nǐ jiā yǒu jǐ kǒu rén?","spanish":"¿Cuántas personas hay en tu familia?"},
+    {"id":"oral-22","speaker":"shen","hanzi":"我家有五口人：爸爸、妈妈、哥哥、弟弟和我。你家有几口人？","pinyin":"Wǒ jiā yǒu wǔ kǒu rén: bàba, māma, gēge, dìdi hé wǒ. Nǐ jiā yǒu jǐ kǒu rén?","spanish":"En mi familia somos cinco: mi papá, mi mamá, mi hermano mayor, mi hermano menor y yo. ¿Cuántas personas hay en tu familia?"},
+    {"id":"oral-23","speaker":"you","hanzi":"我家有四口人：爸爸、妈妈、妹妹和我。你爸爸妈妈做什么工作？","pinyin":"Wǒ jiā yǒu sì kǒu rén: bàba, māma, mèimei hé wǒ. Nǐ bàba māma zuò shénme gōngzuò?","spanish":"En mi familia somos cuatro: mi papá, mi mamá, mi hermana menor y yo. ¿A qué se dedican tu papá y tu mamá?"},
+    {"id":"oral-24","speaker":"shen","hanzi":"我爸爸是警察，妈妈是老师。你爸爸妈妈做什么工作？","pinyin":"Wǒ bàba shì jǐngchá, māma shì lǎoshī. Nǐ bàba māma zuò shénme gōngzuò?","spanish":"Mi papá es policía y mi mamá es profesora. ¿A qué se dedican tu papá y tu mamá?"},
+    {"id":"oral-25","speaker":"you","hanzi":"我爸爸是行政人员，妈妈是社工。你妈妈喜欢吃什么？","pinyin":"Wǒ bàba shì xíngzhèng rényuán, māma shì shègōng. Nǐ māma xǐhuan chī shénme?","spanish":"Mi papá trabaja en administración y mi mamá es trabajadora social. ¿Qué le gusta comer a tu mamá?"},
+    {"id":"oral-26","speaker":"shen","hanzi":"我妈妈喜欢吃炒饭。你爸爸喜欢吃什么？","pinyin":"Wǒ māma xǐhuan chī chǎofàn. Nǐ bàba xǐhuan chī shénme?","spanish":"A mi mamá le gusta comer arroz salteado. ¿Qué le gusta comer a tu papá?"},
+    {"id":"oral-27","speaker":"you","hanzi":"我爸爸喜欢吃面条儿。","pinyin":"Wǒ bàba xǐhuan chī miàntiáor.","spanish":"A mi papá le gusta comer fideos."},
+    {"id":"oral-28","speaker":"shen","hanzi":"认识你很高兴。再见！","pinyin":"Rènshi nǐ hěn gāoxìng. Zàijiàn!","spanish":"Mucho gusto en conocerte. ¡Adiós!"},
+    {"id":"oral-29","speaker":"you","hanzi":"认识你，我也很高兴。再见！","pinyin":"Rènshi nǐ, wǒ yě hěn gāoxìng. Zàijiàn!","spanish":"Yo también estoy muy contento de conocerte. ¡Adiós!"}
+  ]
+}

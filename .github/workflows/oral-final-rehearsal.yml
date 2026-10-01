@@ -1,0 +1,122 @@
+name: Oral final - validate and generate authorized audio
+
+on:
+  push:
+    branches: [codex/oral-final-unlisted-20260930]
+    paths:
+      - '.github/workflows/oral-final-rehearsal.yml'
+      - '.github/audio-requests/oral-final.json'
+      - 'data/rehearsals/**'
+      - 'components/rehearsals/**'
+      - 'app/ensayo/**'
+      - 'scripts/oral-final-audio.mjs'
+      - 'tests/unit/oral-final.test.ts'
+      - 'tests/oral-final-e2e/**'
+      - 'playwright.oral-final.config.ts'
+      - 'next.config.ts'
+  workflow_dispatch:
+    inputs:
+      confirmation:
+        description: Type GENERATE_ORAL_FINAL to validate and generate only this authorized batch
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: oral-final-rehearsal
+  cancel-in-progress: false
+
+jobs:
+  oral-final:
+    if: >-
+      github.repository == 'najashiro/ming-mandarin' &&
+      github.ref == 'refs/heads/codex/oral-final-unlisted-20260930' &&
+      (github.event_name == 'push' || inputs.confirmation == 'GENERATE_ORAL_FINAL')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+
+      - run: corepack enable
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.22.2'
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      - name: Validate scope and source before any paid generation
+        run: |
+          test "$(git ls-remote origin refs/heads/codex/oral-final-unlisted-20260930 | cut -f1)" = "$GITHUB_SHA"
+          node --check scripts/oral-final-audio.mjs
+          node scripts/oral-final-audio.mjs --check
+          pnpm lint
+          pnpm typecheck
+          pnpm test
+
+      - name: Ensure MP3 verification tools
+        run: |
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            sudo apt-get update -qq
+            sudo apt-get install -y ffmpeg
+          fi
+
+      - name: Generate only authorized missing whole-turn MP3s
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: node scripts/oral-final-audio.mjs --generate
+
+      - name: Verify and publish the local audio manifest
+        id: publish
+        run: |
+          node scripts/oral-final-audio.mjs --publish
+          node scripts/oral-final-audio.mjs --verify
+          git diff --check
+
+      - name: Preserve verified assets on this feature branch before browser tests
+        id: assets
+        run: |
+          test "$(git ls-remote origin refs/heads/codex/oral-final-unlisted-20260930 | cut -f1)" = "$GITHUB_SHA"
+          git add -- public/audio/oral-final data/rehearsals/oral-final-audio.json .github/audio-requests/oral-final.json
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'feat(audio): add verified Marin MP3s for oral-final rehearsal'
+            git push origin HEAD:refs/heads/codex/oral-final-unlisted-20260930
+          fi
+          echo "validated_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Validate final tree and production build
+        run: |
+          pnpm lint
+          pnpm typecheck
+          pnpm test
+          pnpm build
+
+      - name: Install desktop and iPhone browser engines
+        run: pnpm exec playwright install --with-deps chromium webkit
+
+      - name: Browser tests and screenshots
+        run: pnpm exec playwright test --config playwright.oral-final.config.ts
+
+      - name: Validation summary
+        env:
+          VALIDATED_SHA: ${{ steps.assets.outputs.validated_sha }}
+        run: |
+          printf '## Oral rehearsal validation\n\nValidated tree: `%s`\n\n- 29 turns, 28 unique verified MP3s (Marin / gpt-4o-mini-tts).\n- lint, typecheck, unit tests, production build.\n- Chromium desktop and WebKit iPhone browser tests.\n- No paid API calls during playback.\n- Technical audio checks; not an independent human pronunciation review.\n- No merge or production deployment performed by this workflow.\n' "$VALIDATED_SHA" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Preserve screenshots and generated audio on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: oral-final-validation-${{ github.run_id }}
+          path: |
+            test-results/
+            public/audio/oral-final/*.mp3
+            data/rehearsals/oral-final-audio.json
+          if-no-files-found: ignore
+          retention-days: 7

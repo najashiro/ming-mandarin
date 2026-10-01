@@ -1,0 +1,10 @@
+{
+  "requestId": "oral-final-basico2-20260930",
+  "status": "completed",
+  "model": "gpt-4o-mini-tts",
+  "voice": "marin",
+  "textFingerprint": "aa884c09a9fe49baacc4f43287daaeca700fdb7314928bb91d668701cc743aac",
+  "maxUniqueClips": 28,
+  "maxInputCharacters": 2000,
+  "completedByWorkflowRun": "36792933263"
+}
