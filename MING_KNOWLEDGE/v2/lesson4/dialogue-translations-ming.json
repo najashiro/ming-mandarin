@@ -1,0 +1,170 @@
+{
+  "batch": "ming-es-dialogues-l4-20261001",
+  "authorization": "Solicitud del usuario de habilitar traducción española en diálogos y corregir su ausencia en L4.",
+  "method": "Traducción editorial del texto chino canónico realizada y comprobada por el modelo; sin revisión humana independiente.",
+  "resolution": "Español documental no vacío primero; traducción editorial de respaldo. No modifica testigos ni campos de fuente.",
+  "entries": [
+    {
+      "dialogue_id": "DLG-L4-BOOK-T1",
+      "turn": 1,
+      "hanzi": "林娜，你明天做什么？",
+      "traduccion_ming": "Lin Na, ¿qué vas a hacer mañana?"
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T1",
+      "turn": 2,
+      "hanzi": "我明天有很多课，特别忙。",
+      "traduccion_ming": "Mañana tengo muchas clases; estaré especialmente ocupada."
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T1",
+      "turn": 3,
+      "hanzi": "你明天几点有课？",
+      "traduccion_ming": "¿A qué hora tienes clase mañana?"
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T1",
+      "turn": 4,
+      "hanzi": "我明天上午八点半有语法课，十点四十有汉字课，下午两点一刻还有口语课。",
+      "traduccion_ming": "Mañana por la mañana tengo clase de gramática a las ocho y media y clase de caracteres chinos a las diez y cuarenta. Por la tarde también tengo clase de conversación a las dos y cuarto."
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T1",
+      "turn": 5,
+      "hanzi": "你累不累？",
+      "traduccion_ming": "¿Estás cansada?"
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T1",
+      "turn": 6,
+      "hanzi": "不累。对了，你明天晚上有没有时间？",
+      "traduccion_ming": "No. Por cierto, ¿tienes tiempo mañana por la noche?"
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T1",
+      "turn": 7,
+      "hanzi": "有时间，有时间。明天晚上有一个好电影，你看不看？我们一起去吧。",
+      "traduccion_ming": "Sí, tengo tiempo. Mañana por la noche hay una buena película. ¿Quieres verla? Vamos juntos."
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T1",
+      "turn": 8,
+      "hanzi": "是不是《再见》？",
+      "traduccion_ming": "¿Es «Adiós»?"
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T1",
+      "turn": 9,
+      "hanzi": "是啊。我们一起去吧。",
+      "traduccion_ming": "Sí. Vamos juntos."
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T1",
+      "turn": 10,
+      "hanzi": "恐怕不行。我们一起练习口语吧。",
+      "traduccion_ming": "Me temo que no puedo. Mejor practiquemos conversación juntos."
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T2",
+      "turn": 1,
+      "hanzi": "现在几点？",
+      "traduccion_ming": "¿Qué hora es ahora?"
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T2",
+      "turn": 2,
+      "hanzi": "差五分七点。",
+      "traduccion_ming": "Son las siete menos cinco."
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T2",
+      "turn": 3,
+      "hanzi": "七点半我回学校，我们班有活动。",
+      "traduccion_ming": "A las siete y media vuelvo a la escuela; mi clase tiene una actividad."
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T2",
+      "turn": 4,
+      "hanzi": "听说你们班的女生多，男生少。",
+      "traduccion_ming": "He oído que en tu clase hay muchas alumnas y pocos alumnos."
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T2",
+      "turn": 5,
+      "hanzi": "对。我们班只有四个男生。",
+      "traduccion_ming": "Así es. En nuestra clase solo hay cuatro alumnos varones."
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T2",
+      "turn": 6,
+      "hanzi": "你们班一共有多少人？",
+      "traduccion_ming": "¿Cuántas personas hay en total en tu clase?"
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T2",
+      "turn": 7,
+      "hanzi": "我们班一共有三十个人，有二十六个女生。",
+      "traduccion_ming": "En nuestra clase hay treinta personas en total, de las cuales veintiséis son alumnas."
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T2",
+      "turn": 8,
+      "hanzi": "你们班真有意思。",
+      "traduccion_ming": "Tu clase es realmente interesante."
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T2",
+      "turn": 9,
+      "hanzi": "你们班呢？你们班的女生多不多？",
+      "traduccion_ming": "¿Y tu clase? ¿Hay muchas alumnas en tu clase?"
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T2",
+      "turn": 10,
+      "hanzi": "不多。我们班一共有十八个学生。十二个男生，六个女生。",
+      "traduccion_ming": "No muchas. En nuestra clase hay dieciocho estudiantes en total: doce alumnos y seis alumnas."
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T2",
+      "turn": 11,
+      "hanzi": "你们班也很有意思。",
+      "traduccion_ming": "Tu clase también es muy interesante."
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T2",
+      "turn": 12,
+      "hanzi": "你来我们班吧，我去你们班。",
+      "traduccion_ming": "Ven a nuestra clase y yo iré a la tuya."
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T2",
+      "turn": 13,
+      "hanzi": "你来我们班吗？你学习什么专业？",
+      "traduccion_ming": "¿Vas a venir a nuestra clase? ¿Qué carrera estudias?"
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T2",
+      "turn": 14,
+      "hanzi": "我学英语。",
+      "traduccion_ming": "Estudio inglés."
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T2",
+      "turn": 15,
+      "hanzi": "我呢？",
+      "traduccion_ming": "¿Y yo?"
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T2",
+      "turn": 16,
+      "hanzi": "你去学汉语。",
+      "traduccion_ming": "Tú ve a estudiar chino."
+    },
+    {
+      "dialogue_id": "DLG-L4-BOOK-T2",
+      "turn": 17,
+      "hanzi": "好主意！",
+      "traduccion_ming": "¡Buena idea!"
+    }
+  ]
+}

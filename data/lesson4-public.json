@@ -13668,7 +13668,7 @@
           "hanzi": "林娜，你明天做什么？",
           "phraseId": "PH-82628fd0167910d4",
           "pinyin": "Lín Nà, nǐ míngtiān zuò shénme?",
-          "spanish": "",
+          "spanish": "Lin Na, ¿qué vas a hacer mañana?",
           "speakerPinyin": "Sòng Huá"
         },
         {
@@ -13677,7 +13677,7 @@
           "hanzi": "我明天有很多课，特别忙。",
           "phraseId": "PH-ab527e96ff5d63d1",
           "pinyin": "Wǒ míngtiān yǒu hěn duō kè, tèbié máng.",
-          "spanish": "",
+          "spanish": "Mañana tengo muchas clases; estaré especialmente ocupada.",
           "speakerPinyin": "Lín Nà"
         },
         {
@@ -13686,7 +13686,7 @@
           "hanzi": "你明天几点有课？",
           "phraseId": "PH-4a0b05729bdf6fec",
           "pinyin": "Nǐ míngtiān jǐ diǎn yǒu kè?",
-          "spanish": "",
+          "spanish": "¿A qué hora tienes clase mañana?",
           "speakerPinyin": "Sòng Huá"
         },
         {
@@ -13695,7 +13695,7 @@
           "hanzi": "我明天上午八点半有语法课，十点四十有汉字课，下午两点一刻还有口语课。",
           "phraseId": "PH-ab6c60fc806cdd2a",
           "pinyin": "Wǒ míngtiān shàngwǔ bā diǎn bàn yǒu yǔfǎkè, shí diǎn sìshí yǒu Hànzìkè, xiàwǔ liǎng diǎn yí kè hái yǒu kǒuyǔkè.",
-          "spanish": "",
+          "spanish": "Mañana por la mañana tengo clase de gramática a las ocho y media y clase de caracteres chinos a las diez y cuarenta. Por la tarde también tengo clase de conversación a las dos y cuarto.",
           "speakerPinyin": "Lín Nà"
         },
         {
@@ -13704,7 +13704,7 @@
           "hanzi": "你累不累？",
           "phraseId": "PH-27db8c21e168930c",
           "pinyin": "Nǐ lèi bu lèi?",
-          "spanish": "",
+          "spanish": "¿Estás cansada?",
           "speakerPinyin": "Sòng Huá"
         },
         {
@@ -13713,7 +13713,7 @@
           "hanzi": "不累。对了，你明天晚上有没有时间？",
           "phraseId": "PH-f995a86f96ff1fee",
           "pinyin": "Bú lèi. Duìle, nǐ míngtiān wǎnshang yǒu méiyǒu shíjiān?",
-          "spanish": "",
+          "spanish": "No. Por cierto, ¿tienes tiempo mañana por la noche?",
           "speakerPinyin": "Lín Nà"
         },
         {
@@ -13722,7 +13722,7 @@
           "hanzi": "有时间，有时间。明天晚上有一个好电影，你看不看？我们一起去吧。",
           "phraseId": "PH-0027a0efcb3693ae",
           "pinyin": "Yǒu shíjiān, yǒu shíjiān. Míngtiān wǎnshang yǒu yí ge hǎo diànyǐng, nǐ kàn bu kàn? Wǒmen yìqǐ qù ba.",
-          "spanish": "",
+          "spanish": "Sí, tengo tiempo. Mañana por la noche hay una buena película. ¿Quieres verla? Vamos juntos.",
           "speakerPinyin": "Sòng Huá"
         },
         {
@@ -13731,7 +13731,7 @@
           "hanzi": "是不是《再见》？",
           "phraseId": "PH-133e79850cdcc3d2",
           "pinyin": "Shì bu shì 《Zàijiàn》?",
-          "spanish": "",
+          "spanish": "¿Es «Adiós»?",
           "speakerPinyin": "Lín Nà"
         },
         {
@@ -13740,7 +13740,7 @@
           "hanzi": "是啊。我们一起去吧。",
           "phraseId": "PH-6bcf5ee75ec782db",
           "pinyin": "Shì a. Wǒmen yìqǐ qù ba.",
-          "spanish": "",
+          "spanish": "Sí. Vamos juntos.",
           "speakerPinyin": "Sòng Huá"
         },
         {
@@ -13749,7 +13749,7 @@
           "hanzi": "恐怕不行。我们一起练习口语吧。",
           "phraseId": "PH-213c70ee5676dd8a",
           "pinyin": "Kǒngpà bùxíng. Wǒmen yìqǐ liànxí kǒuyǔ ba.",
-          "spanish": "",
+          "spanish": "Me temo que no puedo. Mejor practiquemos conversación juntos.",
           "speakerPinyin": "Lín Nà"
         }
       ],
@@ -13765,7 +13765,7 @@
           "hanzi": "现在几点？",
           "phraseId": "PH-ea99d70f87346ff7",
           "pinyin": "Xiànzài jǐ diǎn?",
-          "spanish": "",
+          "spanish": "¿Qué hora es ahora?",
           "speakerPinyin": "Wáng Xiǎoyún"
         },
         {
@@ -13774,7 +13774,7 @@
           "hanzi": "差五分七点。",
           "phraseId": "PH-3f73ad768952c342",
           "pinyin": "Chà wǔ fēn qī diǎn.",
-          "spanish": "",
+          "spanish": "Son las siete menos cinco.",
           "speakerPinyin": "Mǎ Dàwéi"
         },
         {
@@ -13783,7 +13783,7 @@
           "hanzi": "七点半我回学校，我们班有活动。",
           "phraseId": "PH-f9131d33151602a9",
           "pinyin": "Qī diǎn bàn wǒ huí xuéxiào, wǒmen bān yǒu huódòng.",
-          "spanish": "",
+          "spanish": "A las siete y media vuelvo a la escuela; mi clase tiene una actividad.",
           "speakerPinyin": "Wáng Xiǎoyún"
         },
         {
@@ -13792,7 +13792,7 @@
           "hanzi": "听说你们班的女生多，男生少。",
           "phraseId": "PH-689e3f6bb8cafa5b",
           "pinyin": "Tīngshuō nǐmen bān de nǚshēng duō, nánshēng shǎo.",
-          "spanish": "",
+          "spanish": "He oído que en tu clase hay muchas alumnas y pocos alumnos.",
           "speakerPinyin": "Mǎ Dàwéi"
         },
         {
@@ -13801,7 +13801,7 @@
           "hanzi": "对。我们班只有四个男生。",
           "phraseId": "PH-b287f138fe23a129",
           "pinyin": "Duì. Wǒmen bān zhǐ yǒu sì gè nánshēng.",
-          "spanish": "",
+          "spanish": "Así es. En nuestra clase solo hay cuatro alumnos varones.",
           "speakerPinyin": "Wáng Xiǎoyún"
         },
         {
@@ -13810,7 +13810,7 @@
           "hanzi": "你们班一共有多少人？",
           "phraseId": "PH-59e0807490ecd436",
           "pinyin": "Nǐmen bān yígòng yǒu duōshao rén?",
-          "spanish": "",
+          "spanish": "¿Cuántas personas hay en total en tu clase?",
           "speakerPinyin": "Mǎ Dàwéi"
         },
         {
@@ -13819,7 +13819,7 @@
           "hanzi": "我们班一共有三十个人，有二十六个女生。",
           "phraseId": "PH-fc51b0f594af3095",
           "pinyin": "Wǒmen bān yígòng yǒu sānshí ge rén, yǒu èrshíliù ge nǚshēng.",
-          "spanish": "",
+          "spanish": "En nuestra clase hay treinta personas en total, de las cuales veintiséis son alumnas.",
           "speakerPinyin": "Wáng Xiǎoyún"
         },
         {
@@ -13828,7 +13828,7 @@
           "hanzi": "你们班真有意思。",
           "phraseId": "PH-b2dc8ae21a9cd0ee",
           "pinyin": "Nǐmen bān zhēn yǒu yìsi.",
-          "spanish": "",
+          "spanish": "Tu clase es realmente interesante.",
           "speakerPinyin": "Mǎ Dàwéi"
         },
         {
@@ -13837,7 +13837,7 @@
           "hanzi": "你们班呢？你们班的女生多不多？",
           "phraseId": "PH-5f7e26ed344432be",
           "pinyin": "Nǐmen bān ne? Nǐmen bān de nǚshēng duō bu duō?",
-          "spanish": "",
+          "spanish": "¿Y tu clase? ¿Hay muchas alumnas en tu clase?",
           "speakerPinyin": "Wáng Xiǎoyún"
         },
         {
@@ -13846,7 +13846,7 @@
           "hanzi": "不多。我们班一共有十八个学生。十二个男生，六个女生。",
           "phraseId": "PH-265adab547386566",
           "pinyin": "Bù duō. Wǒmen bān yígòng yǒu shíbā ge xuésheng. Shí'èr ge nánshēng, liù ge nǚshēng.",
-          "spanish": "",
+          "spanish": "No muchas. En nuestra clase hay dieciocho estudiantes en total: doce alumnos y seis alumnas.",
           "speakerPinyin": "Mǎ Dàwéi"
         },
         {
@@ -13855,7 +13855,7 @@
           "hanzi": "你们班也很有意思。",
           "phraseId": "PH-000a48f381f24ab9",
           "pinyin": "Nǐmen bān yě hěn yǒu yìsi.",
-          "spanish": "",
+          "spanish": "Tu clase también es muy interesante.",
           "speakerPinyin": "Wáng Xiǎoyún"
         },
         {
@@ -13864,7 +13864,7 @@
           "hanzi": "你来我们班吧，我去你们班。",
           "phraseId": "PH-8ad7a590358461e5",
           "pinyin": "Nǐ lái wǒmen bān ba, wǒ qù nǐmen bān.",
-          "spanish": "",
+          "spanish": "Ven a nuestra clase y yo iré a la tuya.",
           "speakerPinyin": "Mǎ Dàwéi"
         },
         {
@@ -13873,7 +13873,7 @@
           "hanzi": "你来我们班吗？你学习什么专业？",
           "phraseId": "PH-e11d7cf94d500722",
           "pinyin": "Nǐ lái wǒmen bān ma? Nǐ xuéxí shénme zhuānyè?",
-          "spanish": "",
+          "spanish": "¿Vas a venir a nuestra clase? ¿Qué carrera estudias?",
           "speakerPinyin": "Wáng Xiǎoyún"
         },
         {
@@ -13882,7 +13882,7 @@
           "hanzi": "我学英语。",
           "phraseId": "PH-32d9993c53827d3b",
           "pinyin": "Wǒ xué Yīngyǔ.",
-          "spanish": "",
+          "spanish": "Estudio inglés.",
           "speakerPinyin": "Mǎ Dàwéi"
         },
         {
@@ -13891,7 +13891,7 @@
           "hanzi": "我呢？",
           "phraseId": "PH-9809345ea2f61559",
           "pinyin": "Wǒ ne?",
-          "spanish": "",
+          "spanish": "¿Y yo?",
           "speakerPinyin": "Wáng Xiǎoyún"
         },
         {
@@ -13900,7 +13900,7 @@
           "hanzi": "你去学汉语。",
           "phraseId": "PH-1727bcdae478ac1e",
           "pinyin": "Nǐ qù xué Hànyǔ.",
-          "spanish": "",
+          "spanish": "Tú ve a estudiar chino.",
           "speakerPinyin": "Mǎ Dàwéi"
         },
         {
@@ -13909,7 +13909,7 @@
           "hanzi": "好主意！",
           "phraseId": "PH-5eac6f30bdf2bd84",
           "pinyin": "Hǎo zhǔyi!",
-          "spanish": "",
+          "spanish": "¡Buena idea!",
           "speakerPinyin": "Wáng Xiǎoyún"
         }
       ],
@@ -18014,5 +18014,5 @@
       "pdfPage": 32
     }
   },
-  "fingerprint": "7a67166a6b64236a878a12e7add9bede600ede8da57f1e0c41ce12ac7c436bb9"
+  "fingerprint": "e24b817d92c56944c430543924ccf277466aa379230a1b7d203d62ce33d3d65c"
 }
