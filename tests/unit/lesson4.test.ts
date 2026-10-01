@@ -36,6 +36,16 @@ describe('integración L4 desde corpus 2.2.0', () => {
     expect(dialogues.flatMap(d => d.turns).some(t => t.hanzi.includes('我学英语'))).toBe(true);
     for (const scope of ['l1','l2','l3'] as const) expect(publicCorpusForScope(scope).dialogues).toEqual(baseline.dialogues.filter(d => d.lesson === Number(scope[1])));
   });
+  it('publica español para los 27 turnos canónicos sin exponer metadatos editoriales', () => {
+    const turns = publicCorpusForScope('l4').dialogues.flatMap(dialogue => dialogue.turns);
+    expect(turns).toHaveLength(27);
+    for (const turn of turns) {
+      expect(turn.spanish.trim().length).toBeGreaterThan(0);
+      expect(turn).not.toHaveProperty('traduccion_ming');
+      expect(turn).not.toHaveProperty('method');
+    }
+    expect(turns.find(turn => turn.hanzi === '差五分七点。')?.spanish).toBe('Son las siete menos cinco.');
+  });
   it('separa 只 contextual de la lectura aislada y conserva L3', () => {
     expect(getVocabularySet('l4').find(w => w.hanzi === '只')?.pinyin).toBe('zhǐ');
     expect(getCurriculum('l4').characters.find(c => c.hanzi === '只')?.pinyin).toBe('zhī');

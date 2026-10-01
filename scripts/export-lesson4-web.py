@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Adapt the frozen v2.2 projection and typed tables to existing web contracts.
 
-No source writes, no invented linguistic fields, and no workbook answer keys.
+No source writes or workbook answer keys. Approved editorial dialogue translations
+remain separate from documentary fields and are resolved only for the web.
 Run with --check in CI to verify the committed projection.
 """
 import argparse
@@ -60,12 +61,22 @@ def build():
     available_examples = {r['id'] for r in public_phrases if r['pinyin'] and r['spanish']}
     for word in words:
         word['examplePhraseIds'] = [i for i in word['examplePhraseIds'] if i in available_examples]
+    editorial = json.loads((ROOT / 'MING_KNOWLEDGE/v2/lesson4/dialogue-translations-ming.json').read_text(encoding='utf-8'))
+    canonical_turns = {(d['id'], t['turn']): t for d in projection['dialogues'] if d['lesson'] == 4 for t in d['turns']}
+    translations = {}
+    for entry in editorial['entries']:
+        key = (entry['dialogue_id'], entry['turn'])
+        assert key in canonical_turns and key not in translations, f'Unknown or duplicate dialogue translation: {key}'
+        assert entry['hanzi'] == canonical_turns[key]['hanzi'], f'Stale dialogue translation: {key}'
+        assert entry['traduccion_ming'].strip(), f'Empty dialogue translation: {key}'
+        translations[key] = entry['traduccion_ming']
+    assert translations.keys() == canonical_turns.keys(), 'Incomplete L4 dialogue translations'
     dialogues = []
     for row in projection['dialogues']:
         if row['lesson'] != 4:
             continue
         text = '4.1 你几点有课？' if row['id'].endswith('T1') else '4.2 你们班有多少人？'
-        dialogues.append(dict(row, text=text, turns=[dict(t, pinyin=t['pinyin'] or '', spanish=t['spanish'] or '',
+        dialogues.append(dict(row, text=text, turns=[dict(t, pinyin=t['pinyin'] or '', spanish=t['spanish'] or translations[(row['id'], t['turn'])],
                              speakerPinyin=speakers.get(t['speaker'], '')) for t in row['turns']]))
     # Exercise blocks reuse explicit lexical spans, never guessed segmentation.
     spans = query.read_table('word_phrase_spans')
