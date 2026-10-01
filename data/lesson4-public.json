@@ -36,7 +36,25 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-0af5556e288859cb",
+        "PH-9c6485573b45c21d",
+        "PH-161826330a81cfda",
+        "PH-18e28a2339872e96",
+        "PH-2715e8c17a7101f0",
+        "PH-f66620433a8faa62",
+        "PH-27db8c21e168930c",
+        "PH-f995a86f96ff1fee",
+        "PH-89af9ec13542fade",
+        "PH-2be542f3380b2b7b",
+        "PH-72dc5e45387c825d",
+        "PH-479743a06e9e9639",
+        "PH-19f7db609f549c65",
+        "PH-0db794a7b46eb37f",
+        "PH-98139834e4973a92",
+        "PH-bcf8e5510ccd2e51",
+        "PH-af0d6dc08ca09be7"
+      ],
       "visual_ming": {
         "visual_mode": "concept_scene",
         "image_support": true,
@@ -64,7 +82,29 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-5ddf53808cc05900",
+        "PH-7a761152975c78c0",
+        "PH-f2cde8404b08965f",
+        "PH-ce24e7ce32c3c41b",
+        "PH-574a3a52035d8cc0",
+        "PH-b0b39331167a0d1a",
+        "PH-8404b517d7b8837d",
+        "PH-130f985d9e2b266a",
+        "PH-47287f2c10133927",
+        "PH-fc5910e8d03da55f",
+        "PH-19f7db609f549c65",
+        "PH-9e2e93957c7e2fd3",
+        "PH-c92015d716734b48",
+        "PH-2f40652016ddb27e",
+        "PH-5cc276129864651f",
+        "PH-98139834e4973a92",
+        "PH-1fc2408b9a8175cd",
+        "PH-844cf40827e50910",
+        "PH-e4b0522631735ddd",
+        "PH-385d622c97ff2494",
+        "PH-e27f7f07130a6c1d"
+      ],
       "visual_ming": {
         "visual_mode": "visual_grammar",
         "image_support": true,
@@ -100,8 +140,25 @@
         }
       ],
       "examplePhraseIds": [
+        "PH-33c63eeae2eaae09",
+        "PH-1468dc5b68b2ecd5",
+        "PH-92e0c3f7c6e9dab4",
+        "PH-29679f718599809e",
+        "PH-907646868b9cb078",
+        "PH-265adab547386566",
+        "PH-bf5937cafdd21a4a",
+        "PH-5e9937a180f6f3c8",
+        "PH-6b5f0ad38f72e997",
+        "PH-49b635346a69c22b",
         "PH-f00e2103cea00be2",
-        "PH-1c5a1ee9335d075c"
+        "PH-1c5a1ee9335d075c",
+        "PH-19f7db609f549c65",
+        "PH-9e2e93957c7e2fd3",
+        "PH-f103d2295de740f7",
+        "PH-05f97f56e77b1b66",
+        "PH-903afe1507dd25b3",
+        "PH-385d622c97ff2494",
+        "PH-e27f7f07130a6c1d"
       ],
       "visual_ming": {
         "visual_mode": "concept_scene",
@@ -130,7 +187,12 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-c3077db09d1ef06a",
+        "PH-9a0f8d2ad3e6483f",
+        "PH-e095ee3aa286ea4f",
+        "PH-af0d6dc08ca09be7"
+      ],
       "visual_ming": {
         "visual_mode": "concept_scene",
         "image_support": true,
@@ -158,7 +220,12 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-ec84f23f710576b9",
+        "PH-10d754ac9c07b1a5",
+        "PH-76b055e8d3a65314",
+        "PH-ec2b8fbfe59f15c4"
+      ],
       "visual_ming": {
         "visual_mode": "phrase_context",
         "image_support": true,
@@ -200,7 +267,19 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-f83b5820507e3e7c",
+        "PH-43d85a81bcd516af",
+        "PH-b2dc8ae21a9cd0ee",
+        "PH-000a48f381f24ab9",
+        "PH-7e2b018c5acb95d5",
+        "PH-19f7db609f549c65",
+        "PH-9e2e93957c7e2fd3",
+        "PH-7e3a8a75421d39c0",
+        "PH-3939469dbfc57aed",
+        "PH-385d622c97ff2494",
+        "PH-e27f7f07130a6c1d"
+      ],
       "visual_ming": {
         "visual_mode": "phrase_context",
         "image_support": true,
@@ -242,7 +321,18 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-b287f138fe23a129",
+        "PH-b59858522fbc8445",
+        "PH-faf0edd48b0045fd",
+        "PH-ca4cceca7fafefa2",
+        "PH-19f7db609f549c65",
+        "PH-9e2e93957c7e2fd3",
+        "PH-eae78d7c31b523df",
+        "PH-b95f9f3f694d1e3a",
+        "PH-3e4d871a70d27bfe",
+        "PH-385d622c97ff2494"
+      ],
       "visual_ming": {
         "visual_mode": "visual_grammar",
         "image_support": true,
@@ -270,7 +360,17 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-2c74d0560f5d218b",
+        "PH-5b94ed46bb4cfdb6",
+        "PH-8a521d1cc6f1f414",
+        "PH-d42fc442bf142c4e",
+        "PH-e883435860520617",
+        "PH-473a43f8d197b3f3",
+        "PH-0458d03e20ab167b",
+        "PH-22a9599f508c7e05",
+        "PH-e4b0522631735ddd"
+      ],
       "visual_ming": {
         "visual_mode": "concept_scene",
         "image_support": true,
@@ -298,7 +398,20 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-28ab0a1e5f8955c4",
+        "PH-ea99d70f87346ff7",
+        "PH-cb774e2fd750dd37",
+        "PH-49e07700c4d271f2",
+        "PH-f0261a6e6f3114a7",
+        "PH-352231e24b8a2a34",
+        "PH-fa9a18113367ad44",
+        "PH-6d7c0cc8e61447c3",
+        "PH-92eb1f1b36851f56",
+        "PH-494fc751c15d8b65",
+        "PH-e18317698b7f1c06",
+        "PH-af0d6dc08ca09be7"
+      ],
       "visual_ming": {
         "visual_mode": "visual_grammar",
         "image_support": true,
@@ -340,7 +453,37 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-ba25f077bf6487c0",
+        "PH-0ee710c5d233937e",
+        "PH-82628fd0167910d4",
+        "PH-ab527e96ff5d63d1",
+        "PH-4a0b05729bdf6fec",
+        "PH-ab6c60fc806cdd2a",
+        "PH-f995a86f96ff1fee",
+        "PH-0027a0efcb3693ae",
+        "PH-96329b894f2f8fa9",
+        "PH-6af537d6a30da64e",
+        "PH-31fa87df164900d1",
+        "PH-7ec8f280842f48b6",
+        "PH-a950d2f56765c363",
+        "PH-e386048062b793db",
+        "PH-d877024c668ebaef",
+        "PH-e2cf5008cd3ea8a8",
+        "PH-0a60ee4dac722643",
+        "PH-19f7db609f549c65",
+        "PH-4f5957f98670a801",
+        "PH-3b767becef7ae315",
+        "PH-b487547a245ef416",
+        "PH-473a43f8d197b3f3",
+        "PH-2acf2dc46462f498",
+        "PH-445b465f4440335f",
+        "PH-57dba2383cfec6c7",
+        "PH-0458d03e20ab167b",
+        "PH-22a9599f508c7e05",
+        "PH-bcf8e5510ccd2e51",
+        "PH-42fe7340aba9cbde"
+      ],
       "visual_ming": {
         "visual_mode": "visual_grammar",
         "image_support": true,
@@ -382,7 +525,23 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-0ee710c5d233937e",
+        "PH-ab6c60fc806cdd2a",
+        "PH-fc5910e8d03da55f",
+        "PH-7ec8f280842f48b6",
+        "PH-a30fff10dbde78e5",
+        "PH-19f7db609f549c65",
+        "PH-9e2e93957c7e2fd3",
+        "PH-4f5957f98670a801",
+        "PH-d52ba3ff192b8d8e",
+        "PH-bc5cdd7543ce254f",
+        "PH-844cf40827e50910",
+        "PH-bcf8e5510ccd2e51",
+        "PH-af0d6dc08ca09be7",
+        "PH-e27f7f07130a6c1d",
+        "PH-42fe7340aba9cbde"
+      ],
       "visual_ming": {
         "visual_mode": "concept_scene",
         "image_support": true,
@@ -417,7 +576,22 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-94c8416302bdade4",
+        "PH-689e3f6bb8cafa5b",
+        "PH-b287f138fe23a129",
+        "PH-265adab547386566",
+        "PH-877985ac0523556c",
+        "PH-846be6533240d832",
+        "PH-ed524e7a23dca3f9",
+        "PH-4a2b2ec42bdba0ae",
+        "PH-19f7db609f549c65",
+        "PH-9e2e93957c7e2fd3",
+        "PH-a9f5df4ae1c12282",
+        "PH-0b09e4715bcd721b",
+        "PH-385d622c97ff2494",
+        "PH-e27f7f07130a6c1d"
+      ],
       "visual_ming": {
         "visual_mode": "concept_scene",
         "image_support": true,
@@ -459,7 +633,37 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-3282b8613e1014b5",
+        "PH-157dc39cc03ae3dc",
+        "PH-b7fe5ba4470d039d",
+        "PH-5e3e7824ce6e4ec2",
+        "PH-0027a0efcb3693ae",
+        "PH-6bcf5ee75ec782db",
+        "PH-d82458ee9e42d188",
+        "PH-f0e6aa434f097a17",
+        "PH-a2d18e42006ead42",
+        "PH-9637c18fde30db28",
+        "PH-2b93dc1a8fe62c59",
+        "PH-8ad7a590358461e5",
+        "PH-1727bcdae478ac1e",
+        "PH-cb774e2fd750dd37",
+        "PH-d505215b2b69b4df",
+        "PH-af4809204abf23ce",
+        "PH-11921c711bd54d0e",
+        "PH-0493d8a76ecc7df4",
+        "PH-a7cfdb4e2a1b2712",
+        "PH-e883435860520617",
+        "PH-1139a1f7501dba66",
+        "PH-36b20f59307580a5",
+        "PH-473a43f8d197b3f3",
+        "PH-2acf2dc46462f498",
+        "PH-56cd3c32c4f1cb27",
+        "PH-57dba2383cfec6c7",
+        "PH-8cc4ddd70ef2395f",
+        "PH-e4b0522631735ddd",
+        "PH-af0d6dc08ca09be7"
+      ],
       "visual_ming": {
         "visual_mode": "action_scene",
         "image_support": true,
@@ -502,8 +706,15 @@
         }
       ],
       "examplePhraseIds": [
+        "PH-0027a0efcb3693ae",
         "PH-21825c5dbd28ac7b",
-        "PH-84168fba9e33dc63"
+        "PH-87997034e59621dc",
+        "PH-84168fba9e33dc63",
+        "PH-f969f67682613661",
+        "PH-9f0869f03fa58f55",
+        "PH-7e3a8a75421d39c0",
+        "PH-af0d6dc08ca09be7",
+        "PH-e27f7f07130a6c1d"
       ],
       "visual_ming": {
         "visual_mode": "concept_scene",
@@ -547,7 +758,18 @@
         }
       ],
       "examplePhraseIds": [
-        "PH-f00e2103cea00be2"
+        "PH-59e0807490ecd436",
+        "PH-3d7c8fbdc48ad1cd",
+        "PH-91a2c5c2a5203098",
+        "PH-ce5410b2f1e75b0b",
+        "PH-19d667b89aa661cc",
+        "PH-f00e2103cea00be2",
+        "PH-dd1403ed7b38d64e",
+        "PH-5fe8b7569f7b832e",
+        "PH-249d4de069b4a9e8",
+        "PH-21600c1459eeeebe",
+        "PH-58dd7eda65cd1749",
+        "PH-7228188c377053d0"
       ],
       "visual_ming": {
         "visual_mode": "visual_grammar",
@@ -590,7 +812,25 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-b192b8b582cdf503",
+        "PH-ec84f23f710576b9",
+        "PH-ba08283d5251e8f6",
+        "PH-10d754ac9c07b1a5",
+        "PH-9fdaa233b06a6a21",
+        "PH-b0770b4924878746",
+        "PH-e1c787b7dced4f4f",
+        "PH-715a41d754ebdc23",
+        "PH-faf0edd48b0045fd",
+        "PH-ec2b8fbfe59f15c4",
+        "PH-19f7db609f549c65",
+        "PH-ff9109fa6f29a60b",
+        "PH-e4b0522631735ddd",
+        "PH-5ad0debb5cf464d7",
+        "PH-b95f9f3f694d1e3a",
+        "PH-385d622c97ff2494",
+        "PH-af0d6dc08ca09be7"
+      ],
       "visual_ming": {
         "visual_mode": "action_scene",
         "image_support": true,
@@ -618,7 +858,11 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-157dc39cc03ae3dc",
+        "PH-f0819a7411f37ebe",
+        "PH-21d39b242e0a921b"
+      ],
       "visual_ming": {
         "visual_mode": "phrase_context",
         "image_support": true,
@@ -661,8 +905,37 @@
         }
       ],
       "examplePhraseIds": [
+        "PH-9f1ab1679981f1c8",
+        "PH-f9131d33151602a9",
+        "PH-689e3f6bb8cafa5b",
+        "PH-b287f138fe23a129",
+        "PH-59e0807490ecd436",
+        "PH-fc51b0f594af3095",
+        "PH-b2dc8ae21a9cd0ee",
+        "PH-5f7e26ed344432be",
+        "PH-265adab547386566",
+        "PH-000a48f381f24ab9",
+        "PH-8ad7a590358461e5",
+        "PH-e11d7cf94d500722",
+        "PH-f14ea6d6ea2609e4",
+        "PH-5bdf917a199798b5",
+        "PH-64f9401fdb6de5bf",
+        "PH-863c0fa3d3165301",
+        "PH-ed524e7a23dca3f9",
+        "PH-49b635346a69c22b",
         "PH-f00e2103cea00be2",
-        "PH-1c5a1ee9335d075c"
+        "PH-1c5a1ee9335d075c",
+        "PH-dd1403ed7b38d64e",
+        "PH-19f7db609f549c65",
+        "PH-9e2e93957c7e2fd3",
+        "PH-ece792d7e9cf8ba5",
+        "PH-cd61959eb5038136",
+        "PH-405a93992d0241c5",
+        "PH-a9f5df4ae1c12282",
+        "PH-0b09e4715bcd721b",
+        "PH-5fe8b7569f7b832e",
+        "PH-385d622c97ff2494",
+        "PH-e27f7f07130a6c1d"
       ],
       "visual_ming": {
         "visual_mode": "concept_scene",
@@ -705,7 +978,19 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-0ee710c5d233937e",
+        "PH-ab6c60fc806cdd2a",
+        "PH-47287f2c10133927",
+        "PH-31fa87df164900d1",
+        "PH-d877024c668ebaef",
+        "PH-19f7db609f549c65",
+        "PH-9e2e93957c7e2fd3",
+        "PH-4f5957f98670a801",
+        "PH-bcf8e5510ccd2e51",
+        "PH-af0d6dc08ca09be7",
+        "PH-42fe7340aba9cbde"
+      ],
       "visual_ming": {
         "visual_mode": "concept_scene",
         "image_support": true,
@@ -747,7 +1032,16 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-33e519de8828fa98",
+        "PH-689e3f6bb8cafa5b",
+        "PH-5f7e26ed344432be",
+        "PH-265adab547386566",
+        "PH-c1ba7f55aa640ece",
+        "PH-846be6533240d832",
+        "PH-19f7db609f549c65",
+        "PH-385d622c97ff2494"
+      ],
       "visual_ming": {
         "visual_mode": "visual_grammar",
         "image_support": true,
@@ -789,7 +1083,18 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-ab527e96ff5d63d1",
+        "PH-33e519de8828fa98",
+        "PH-d51bcdbf8f65e8a3",
+        "PH-72dc5e45387c825d",
+        "PH-4ae1c03a444f6e66",
+        "PH-aa2c0c87aa3a5920",
+        "PH-91ce5c72764ed110",
+        "PH-5cc276129864651f",
+        "PH-98139834e4973a92",
+        "PH-af0d6dc08ca09be7"
+      ],
       "visual_ming": {
         "visual_mode": "concept_scene",
         "image_support": true,
@@ -817,7 +1122,45 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-4a0b05729bdf6fec",
+        "PH-ab6c60fc806cdd2a",
+        "PH-570217ae867f34d3",
+        "PH-a15d9483d1377fc4",
+        "PH-280d302406a062eb",
+        "PH-e87abad908b96de1",
+        "PH-f8a522fb671f7294",
+        "PH-ea99d70f87346ff7",
+        "PH-3f73ad768952c342",
+        "PH-f9131d33151602a9",
+        "PH-33595643cdc81b0e",
+        "PH-d877024c668ebaef",
+        "PH-d37fe7d1231e79be",
+        "PH-83f83e0340532c5a",
+        "PH-19f7db609f549c65",
+        "PH-9e2e93957c7e2fd3",
+        "PH-4f5957f98670a801",
+        "PH-49e07700c4d271f2",
+        "PH-f0261a6e6f3114a7",
+        "PH-352231e24b8a2a34",
+        "PH-fa9a18113367ad44",
+        "PH-6d7c0cc8e61447c3",
+        "PH-92eb1f1b36851f56",
+        "PH-136aa8291aed9d02",
+        "PH-a95318c6abe4c3ff",
+        "PH-494fc751c15d8b65",
+        "PH-e18317698b7f1c06",
+        "PH-a5751659afdf92b7",
+        "PH-8f97dd0cedf53aa7",
+        "PH-8998a0801d64a8f5",
+        "PH-478aa6f94218004c",
+        "PH-1fc2408b9a8175cd",
+        "PH-bcf8e5510ccd2e51",
+        "PH-385d622c97ff2494",
+        "PH-af0d6dc08ca09be7",
+        "PH-e27f7f07130a6c1d",
+        "PH-42fe7340aba9cbde"
+      ],
       "visual_ming": {
         "visual_mode": "visual_grammar",
         "image_support": true,
@@ -845,7 +1188,23 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-ab6c60fc806cdd2a",
+        "PH-280d302406a062eb",
+        "PH-abd3aa25a3b626d1",
+        "PH-f9131d33151602a9",
+        "PH-d877024c668ebaef",
+        "PH-19f7db609f549c65",
+        "PH-9e2e93957c7e2fd3",
+        "PH-4f5957f98670a801",
+        "PH-f0261a6e6f3114a7",
+        "PH-352231e24b8a2a34",
+        "PH-fa9a18113367ad44",
+        "PH-bcf8e5510ccd2e51",
+        "PH-385d622c97ff2494",
+        "PH-af0d6dc08ca09be7",
+        "PH-42fe7340aba9cbde"
+      ],
       "visual_ming": {
         "visual_mode": "visual_grammar",
         "image_support": true,
@@ -887,7 +1246,20 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-ab6c60fc806cdd2a",
+        "PH-f190ae4ed98b955c",
+        "PH-f6c305f96241b4e9",
+        "PH-d877024c668ebaef",
+        "PH-19f7db609f549c65",
+        "PH-9e2e93957c7e2fd3",
+        "PH-4f5957f98670a801",
+        "PH-4470f5bd11999237",
+        "PH-f3fe4f4581c1adbd",
+        "PH-bcf8e5510ccd2e51",
+        "PH-af0d6dc08ca09be7",
+        "PH-42fe7340aba9cbde"
+      ],
       "visual_ming": {
         "visual_mode": "concept_scene",
         "image_support": true,
@@ -929,7 +1301,20 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-ab6c60fc806cdd2a",
+        "PH-a4b7a94e962cd061",
+        "PH-3a58c32e817546e1",
+        "PH-8d0f64656477a265",
+        "PH-91a2c5c2a5203098",
+        "PH-a12b569a9ca5896f",
+        "PH-19f7db609f549c65",
+        "PH-f3fe4f4581c1adbd",
+        "PH-314958000515ee3c",
+        "PH-3939469dbfc57aed",
+        "PH-bcf8e5510ccd2e51",
+        "PH-42fe7340aba9cbde"
+      ],
       "visual_ming": {
         "visual_mode": "concept_scene",
         "image_support": true,
@@ -985,7 +1370,15 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-ab6c60fc806cdd2a",
+        "PH-e87abad908b96de1",
+        "PH-f8a522fb671f7294",
+        "PH-19f7db609f549c65",
+        "PH-92eb1f1b36851f56",
+        "PH-a95318c6abe4c3ff",
+        "PH-bcf8e5510ccd2e51"
+      ],
       "visual_ming": {
         "visual_mode": "visual_grammar",
         "image_support": true,
@@ -1028,7 +1421,20 @@
         }
       ],
       "examplePhraseIds": [
-        "PH-09bc3992f0207092"
+        "PH-ab6c60fc806cdd2a",
+        "PH-213c70ee5676dd8a",
+        "PH-4105171ec1d4303d",
+        "PH-c67128cca0869551",
+        "PH-09bc3992f0207092",
+        "PH-3a43236f3afdfb6b",
+        "PH-19f7db609f549c65",
+        "PH-9e2e93957c7e2fd3",
+        "PH-4f5957f98670a801",
+        "PH-314958000515ee3c",
+        "PH-31d6ab0122146352",
+        "PH-bcf8e5510ccd2e51",
+        "PH-af0d6dc08ca09be7",
+        "PH-42fe7340aba9cbde"
       ],
       "visual_ming": {
         "visual_mode": "concept_scene",
@@ -1064,7 +1470,9 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-f995a86f96ff1fee"
+      ],
       "visual_ming": {
         "visual_mode": "phrase_context",
         "image_support": true,
@@ -1092,7 +1500,10 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-b287f138fe23a129",
+        "PH-9e2e93957c7e2fd3"
+      ],
       "visual_ming": {
         "visual_mode": "visual_grammar",
         "image_support": true,
@@ -1134,7 +1545,20 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-f995a86f96ff1fee",
+        "PH-0027a0efcb3693ae",
+        "PH-03d50d3a588e5d2e",
+        "PH-5f4f9d69d333c848",
+        "PH-07078158c119547f",
+        "PH-e2cf5008cd3ea8a8",
+        "PH-f716a05613477619",
+        "PH-b487547a245ef416",
+        "PH-b73c759e52d3061b",
+        "PH-445b465f4440335f",
+        "PH-e00f46b2ac6330f0",
+        "PH-8cc4ddd70ef2395f"
+      ],
       "visual_ming": {
         "visual_mode": "concept_scene",
         "image_support": true,
@@ -1176,7 +1600,28 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-0027a0efcb3693ae",
+        "PH-6bcf5ee75ec782db",
+        "PH-213c70ee5676dd8a",
+        "PH-5f8158a2b58dd4da",
+        "PH-113323cdaed0e2c7",
+        "PH-bbc575d8a4a6475c",
+        "PH-d82458ee9e42d188",
+        "PH-2b93dc1a8fe62c59",
+        "PH-3a43236f3afdfb6b",
+        "PH-19f7db609f549c65",
+        "PH-9e2e93957c7e2fd3",
+        "PH-4f5957f98670a801",
+        "PH-30a2b8ff68395e9a",
+        "PH-473a43f8d197b3f3",
+        "PH-bc8fe0052b157bb7",
+        "PH-56cd3c32c4f1cb27",
+        "PH-bcf8e5510ccd2e51",
+        "PH-af0d6dc08ca09be7",
+        "PH-e27f7f07130a6c1d",
+        "PH-42fe7340aba9cbde"
+      ],
       "visual_ming": {
         "visual_mode": "visual_grammar",
         "image_support": true,
@@ -1211,7 +1656,15 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-0027a0efcb3693ae",
+        "PH-6bcf5ee75ec782db",
+        "PH-213c70ee5676dd8a",
+        "PH-2b93dc1a8fe62c59",
+        "PH-d90ea61b80398c25",
+        "PH-8ad7a590358461e5",
+        "PH-3a43236f3afdfb6b"
+      ],
       "visual_ming": {
         "visual_mode": "visual_grammar",
         "image_support": true,
@@ -1253,7 +1706,11 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-213c70ee5676dd8a",
+        "PH-e00f46b2ac6330f0",
+        "PH-8332621d72c7dc8f"
+      ],
       "visual_ming": {
         "visual_mode": "phrase_context",
         "image_support": true,
@@ -1296,7 +1753,12 @@
         }
       ],
       "examplePhraseIds": [
-        "PH-41a7d4dea64bb5d5"
+        "PH-213c70ee5676dd8a",
+        "PH-9ba359e542ee5a22",
+        "PH-445b465f4440335f",
+        "PH-56cd3c32c4f1cb27",
+        "PH-41a7d4dea64bb5d5",
+        "PH-8332621d72c7dc8f"
       ],
       "visual_ming": {
         "visual_mode": "phrase_context",
@@ -1347,7 +1809,21 @@
         }
       ],
       "examplePhraseIds": [
-        "PH-09bc3992f0207092"
+        "PH-213c70ee5676dd8a",
+        "PH-09bc3992f0207092",
+        "PH-8d0f64656477a265",
+        "PH-4aff0cc248eed1b9",
+        "PH-fb569006030f25d1",
+        "PH-3a43236f3afdfb6b",
+        "PH-27001f5d1e6befad",
+        "PH-19f7db609f549c65",
+        "PH-4f5957f98670a801",
+        "PH-314958000515ee3c",
+        "PH-31d6ab0122146352",
+        "PH-d52ba3ff192b8d8e",
+        "PH-bcf8e5510ccd2e51",
+        "PH-af0d6dc08ca09be7",
+        "PH-42fe7340aba9cbde"
       ],
       "visual_ming": {
         "visual_mode": "action_scene",
@@ -1383,7 +1859,10 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-3f73ad768952c342",
+        "PH-33595643cdc81b0e"
+      ],
       "visual_ming": {
         "visual_mode": "visual_grammar",
         "image_support": true,
@@ -1418,7 +1897,14 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-3f73ad768952c342",
+        "PH-33595643cdc81b0e",
+        "PH-6d7c0cc8e61447c3",
+        "PH-136aa8291aed9d02",
+        "PH-494fc751c15d8b65",
+        "PH-e18317698b7f1c06"
+      ],
       "visual_ming": {
         "visual_mode": "visual_grammar",
         "image_support": true,
@@ -1495,7 +1981,13 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-de5f51f3b31f297b",
+        "PH-36662235cea1e83e",
+        "PH-f103d2295de740f7",
+        "PH-af0d6dc08ca09be7",
+        "PH-e27f7f07130a6c1d"
+      ],
       "visual_ming": {
         "visual_mode": "literal_photo",
         "image_support": true,
@@ -1538,7 +2030,16 @@
         }
       ],
       "examplePhraseIds": [
-        "PH-8f1046a135101985"
+        "PH-f9131d33151602a9",
+        "PH-811119407709ea85",
+        "PH-64f9401fdb6de5bf",
+        "PH-19f7db609f549c65",
+        "PH-9e2e93957c7e2fd3",
+        "PH-844cf40827e50910",
+        "PH-8f1046a135101985",
+        "PH-22a9599f508c7e05",
+        "PH-385d622c97ff2494",
+        "PH-e27f7f07130a6c1d"
       ],
       "visual_ming": {
         "visual_mode": "concept_scene",
@@ -1582,8 +2083,11 @@
         }
       ],
       "examplePhraseIds": [
+        "PH-689e3f6bb8cafa5b",
+        "PH-fcf782492e9777ed",
         "PH-21825c5dbd28ac7b",
-        "PH-2b2baa0f790f1dc5"
+        "PH-2b2baa0f790f1dc5",
+        "PH-7e3a8a75421d39c0"
       ],
       "visual_ming": {
         "visual_mode": "concept_scene",
@@ -1619,7 +2123,12 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-3149ed3818c2e8bc",
+        "PH-fb569006030f25d1",
+        "PH-6668d624ae8e4a65",
+        "PH-6d8a397cae337a6e"
+      ],
       "visual_ming": {
         "visual_mode": "action_scene",
         "image_support": true,
@@ -1654,7 +2163,21 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-689e3f6bb8cafa5b",
+        "PH-fc51b0f594af3095",
+        "PH-5f7e26ed344432be",
+        "PH-265adab547386566",
+        "PH-b3dd55b3a309cfc4",
+        "PH-c1ba7f55aa640ece",
+        "PH-863c0fa3d3165301",
+        "PH-dd1403ed7b38d64e",
+        "PH-19f7db609f549c65",
+        "PH-aa2c0c87aa3a5920",
+        "PH-a9f5df4ae1c12282",
+        "PH-385d622c97ff2494",
+        "PH-e27f7f07130a6c1d"
+      ],
       "visual_ming": {
         "visual_mode": "literal_photo",
         "image_support": true,
@@ -1682,7 +2205,10 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-c72581f1f425d881",
+        "PH-cbf2f3373a421b13"
+      ],
       "visual_ming": {
         "visual_mode": "visual_grammar",
         "image_support": true,
@@ -1724,7 +2250,15 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-689e3f6bb8cafa5b",
+        "PH-7708b5d0ec23c6eb",
+        "PH-82e65dfb0dad9776",
+        "PH-4a2b2ec42bdba0ae",
+        "PH-19f7db609f549c65",
+        "PH-0b09e4715bcd721b",
+        "PH-385d622c97ff2494"
+      ],
       "visual_ming": {
         "visual_mode": "visual_grammar",
         "image_support": true,
@@ -1766,7 +2300,13 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-ca1822ce2e8bb2f3",
+        "PH-a12b569a9ca5896f",
+        "PH-9198ad68150d0f1c",
+        "PH-a39f7b1d69541f2e",
+        "PH-4dd2a1903dc6ba0c"
+      ],
       "visual_ming": {
         "visual_mode": "concept_scene",
         "image_support": true,
@@ -1808,7 +2348,17 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-8ad7a590358461e5",
+        "PH-e11d7cf94d500722",
+        "PH-bdd9cdc05dc53622",
+        "PH-8a665e2c537148f2",
+        "PH-36662235cea1e83e",
+        "PH-a950d2f56765c363",
+        "PH-0a60ee4dac722643",
+        "PH-0458d03e20ab167b",
+        "PH-bc5cdd7543ce254f"
+      ],
       "visual_ming": {
         "visual_mode": "action_scene",
         "image_support": true,
@@ -1851,7 +2401,15 @@
         }
       ],
       "examplePhraseIds": [
-        "PH-b973c61b2d2e0547"
+        "PH-e11d7cf94d500722",
+        "PH-5aa40566a456f29b",
+        "PH-208c92688b86b6ee",
+        "PH-19d667b89aa661cc",
+        "PH-47cc11c8fb6efec9",
+        "PH-9e2e93957c7e2fd3",
+        "PH-82746d0970ed8a49",
+        "PH-b973c61b2d2e0547",
+        "PH-af0d6dc08ca09be7"
       ],
       "visual_ming": {
         "visual_mode": "concept_scene",
@@ -1887,7 +2445,10 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-5eac6f30bdf2bd84",
+        "PH-4b95f6726459cb70"
+      ],
       "visual_ming": {
         "visual_mode": "concept_scene",
         "image_support": true,
@@ -1915,7 +2476,9 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-494fc751c15d8b65"
+      ],
       "visual_ming": {
         "visual_mode": "visual_grammar",
         "image_support": true,
@@ -1943,7 +2506,14 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-d37fe7d1231e79be",
+        "PH-4f5957f98670a801",
+        "PH-8998a0801d64a8f5",
+        "PH-478aa6f94218004c",
+        "PH-af0d6dc08ca09be7",
+        "PH-42fe7340aba9cbde"
+      ],
       "visual_ming": {
         "visual_mode": "action_scene",
         "image_support": true,
@@ -1971,7 +2541,13 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-f0f62500b787d34c",
+        "PH-78f9a7e0e8944652",
+        "PH-4f5957f98670a801",
+        "PH-8f97dd0cedf53aa7",
+        "PH-42fe7340aba9cbde"
+      ],
       "visual_ming": {
         "visual_mode": "literal_photo",
         "image_support": true,
@@ -1999,7 +2575,11 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-1fada6c4c761938b",
+        "PH-e2314e6224c6bebc",
+        "PH-4f5957f98670a801"
+      ],
       "visual_ming": {
         "visual_mode": "action_scene",
         "image_support": true,
@@ -2027,7 +2607,10 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-d505215b2b69b4df",
+        "PH-34f457aa7192ee77"
+      ],
       "visual_ming": {
         "visual_mode": "action_scene",
         "image_support": true,
@@ -2055,7 +2638,10 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-af4809204abf23ce",
+        "PH-644cfd9b5fe2a1df"
+      ],
       "visual_ming": {
         "visual_mode": "action_scene",
         "image_support": true,
@@ -2083,7 +2669,9 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-a5b32b91d57a88a4"
+      ],
       "visual_ming": {
         "visual_mode": "literal_photo",
         "image_support": true,
@@ -2111,7 +2699,13 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-b790aee7b7d7981b",
+        "PH-6e700930c351fb9b",
+        "PH-9e2e93957c7e2fd3",
+        "PH-4f5957f98670a801",
+        "PH-42fe7340aba9cbde"
+      ],
       "visual_ming": {
         "visual_mode": "literal_photo",
         "image_support": true,
@@ -2139,7 +2733,12 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-83f83e0340532c5a",
+        "PH-11921c711bd54d0e",
+        "PH-4f5957f98670a801",
+        "PH-42fe7340aba9cbde"
+      ],
       "visual_ming": {
         "visual_mode": "action_scene",
         "image_support": true,
@@ -2167,7 +2766,10 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-bd5b8bdf230b4e9d",
+        "PH-27001f5d1e6befad"
+      ],
       "visual_ming": {
         "visual_mode": "concept_scene",
         "image_support": true,
@@ -2195,7 +2797,10 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-b0ca5755efc43bc4",
+        "PH-9f90253b729097ee"
+      ],
       "visual_ming": {
         "visual_mode": "concept_scene",
         "image_support": true,
@@ -2223,7 +2828,10 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-ac49870e3e42e217",
+        "PH-ad8e93987dda9627"
+      ],
       "visual_ming": {
         "visual_mode": "concept_scene",
         "image_support": true,
@@ -2251,7 +2859,10 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-2993c2366abf04e2",
+        "PH-184e1ff6e2e57600"
+      ],
       "visual_ming": {
         "visual_mode": "concept_scene",
         "image_support": true,
@@ -2279,7 +2890,11 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-4ea5a005d6093a8a",
+        "PH-7eb501367766eb79",
+        "PH-0eeb0db89e4a8ca8"
+      ],
       "visual_ming": {
         "visual_mode": "concept_scene",
         "image_support": true,
@@ -2307,7 +2922,10 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-ffbc965140872096",
+        "PH-939c5225f0d0f224"
+      ],
       "visual_ming": {
         "visual_mode": "visual_grammar",
         "image_support": true,
@@ -2335,7 +2953,12 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-ed2133e87c96e181",
+        "PH-9942b9d547ca9624",
+        "PH-4470f5bd11999237",
+        "PH-f3fe4f4581c1adbd"
+      ],
       "visual_ming": {
         "visual_mode": "visual_grammar",
         "image_support": true,
@@ -2363,7 +2986,22 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-ab527e96ff5d63d1",
+        "PH-347200d6cbed72b9",
+        "PH-6194331b033edafc",
+        "PH-5e9937a180f6f3c8",
+        "PH-e386048062b793db",
+        "PH-19f7db609f549c65",
+        "PH-9e2e93957c7e2fd3",
+        "PH-c92015d716734b48",
+        "PH-a403aedb1ef1128a",
+        "PH-ad74236dcefecb30",
+        "PH-2f40652016ddb27e",
+        "PH-f103d2295de740f7",
+        "PH-bcf8e5510ccd2e51",
+        "PH-af0d6dc08ca09be7"
+      ],
       "visual_ming": {
         "visual_mode": "visual_grammar",
         "image_support": true,
@@ -2391,7 +3029,9 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-3b767becef7ae315"
+      ],
       "visual_ming": {
         "visual_mode": "concept_scene",
         "image_support": true,
@@ -2419,7 +3059,10 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-9a6ce4cf2cab6307",
+        "PH-1fc2408b9a8175cd"
+      ],
       "visual_ming": {
         "visual_mode": "action_scene",
         "image_support": true,
@@ -2447,7 +3090,9 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-021b0848f33436ee"
+      ],
       "visual_ming": {
         "visual_mode": "action_scene",
         "image_support": true,
@@ -2475,7 +3120,10 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-f9131d33151602a9",
+        "PH-a95bbf0633d3bbea"
+      ],
       "visual_ming": {
         "visual_mode": "action_scene",
         "image_support": true,
@@ -2531,7 +3179,11 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-19f7db609f549c65",
+        "PH-bcf8e5510ccd2e51",
+        "PH-385d622c97ff2494"
+      ],
       "visual_ming": {
         "visual_mode": "concept_scene",
         "image_support": true,
@@ -18014,5 +18666,5 @@
       "pdfPage": 32
     }
   },
-  "fingerprint": "7a67166a6b64236a878a12e7add9bede600ede8da57f1e0c41ce12ac7c436bb9"
+  "fingerprint": "e66f54d95fda6e7301769f24367caff9f78033b6511964fbea3f3d23f106a34a"
 }
