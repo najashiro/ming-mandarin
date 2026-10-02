@@ -1,6 +1,6 @@
 {
   "version": "2.2.0",
-  "corpusFingerprint": "be022d17c65fe5e2d9cc578d8dddccb17f093aa3307c52c1e5b994064ab9ce64",
+  "corpusFingerprint": "cb5f98a0d53e97dbf8adc527c102306b22c003924be219bfd2e11d9aba4abb4a",
   "vocabulary": [
     {
       "id": "v-累",
@@ -1946,7 +1946,9 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-f9131d33151602a9"
+      ],
       "visual_ming": {
         "visual_mode": "action_scene",
         "image_support": true,
@@ -3151,7 +3153,9 @@
           "entry_kind": null
         }
       ],
-      "examplePhraseIds": [],
+      "examplePhraseIds": [
+        "PH-05f97f56e77b1b66"
+      ],
       "visual_ming": {
         "visual_mode": "none",
         "image_support": false,
@@ -5215,7 +5219,7 @@
       "id": "PH-f9131d33151602a9",
       "hanzi": "七点半我回学校，我们班有活动。",
       "pinyin": "Qī diǎn bàn wǒ huí xuéxiào, wǒmen bān yǒu huódòng.",
-      "spanish": "",
+      "spanish": "Regresaré a la escuela a las siete y media. Nuestra clase tiene una actividad.",
       "lessons": [
         4
       ],
@@ -5251,7 +5255,8 @@
         "v-我们",
         "v-班",
         "v-有",
-        "v-活动"
+        "v-活动",
+        "v-回"
       ]
     },
     {
@@ -12801,8 +12806,8 @@
     {
       "id": "PH-05f97f56e77b1b66",
       "hanzi": "我是里卡多帕尔玛大学孔子学院的学生。",
-      "pinyin": "",
-      "spanish": "",
+      "pinyin": "Wǒ shì Lǐkǎduō Pà'ěrmǎ Dàxué Kǒngzǐ Xuéyuàn de xuéshēng.",
+      "spanish": "Soy estudiante del Instituto Confucio de la Universidad Ricardo Palma.",
       "lessons": [
         4
       ],
@@ -12828,7 +12833,8 @@
         "v-是",
         "v-里卡多帕尔玛大学孔子学院",
         "v-的",
-        "v-学生"
+        "v-学生",
+        "v-里卡多帕尔玛大学"
       ]
     },
     {
@@ -14435,7 +14441,7 @@
           "hanzi": "七点半我回学校，我们班有活动。",
           "phraseId": "PH-f9131d33151602a9",
           "pinyin": "Qī diǎn bàn wǒ huí xuéxiào, wǒmen bān yǒu huódòng.",
-          "spanish": "A las siete y media vuelvo a la escuela; mi clase tiene una actividad.",
+          "spanish": "Regresaré a la escuela a las siete y media. Nuestra clase tiene una actividad.",
           "speakerPinyin": "Wáng Xiǎoyún"
         },
         {
@@ -18666,5 +18672,5 @@
       "pdfPage": 32
     }
   },
-  "fingerprint": "d5e6bc20864b6a5281f79a5d4a011bbeb91c7dbbf0a6c6a1688ecaf3c310279b"
+  "fingerprint": "f9a70c37929d27648e747acd8f813c25b0c72163e66821f024ac08b412db1212"
 }
