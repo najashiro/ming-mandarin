@@ -96,6 +96,9 @@ def build():
     sentences = []
     clean = lambda text: re.sub(r'[^\u3400-\u9fff]', '', text)
     for phrase in public_phrases:
+        # Language support approved for a card does not approve new practice items.
+        if phrases[phrase['id']].get('editorial_support_scope') == 'vocabulary_example':
+            continue
         if not phrase['pinyin'] or not phrase['spanish'] or phrase['lessons'] != [4] or re.search(r'[^\u3400-\u9fff。？！]', phrase['hanzi']):
             continue
         for evidence_id in phrases[phrase['id']]['evidence_ids']:

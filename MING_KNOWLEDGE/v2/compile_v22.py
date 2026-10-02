@@ -8,6 +8,7 @@ from __future__ import annotations
 import base64, collections, copy, csv, hashlib, json, lzma, re, shutil, unicodedata
 from pathlib import Path
 import query_v21 as baseline
+import lesson4_examples
 ROOT = Path(__file__).resolve().parent
 CACHE = ROOT / '.cache-v22'
 L4 = ROOT / 'lesson4'
@@ -116,6 +117,7 @@ def build(force=False):
                     L4/'manifest.json', L4/'selection-policy.json',
                     ROOT.parent/'SOURCE_AUTHORITY.json', L4/'documentary-audit.json',
                     L4/'visual-classification.json', L4/'lexical-links.json',
+                    ROOT/'lesson4_examples.py', L4/'example-support.json',
                     L4/'textbook-vocabulary.tsv', L4/'worksheet-rows.tsv', L4/'dialogue-turns.tsv']
     fingerprint = hashlib.sha256()
     fingerprint.update((baseline.CACHE/'fingerprint.txt').read_bytes())
@@ -399,6 +401,7 @@ def build(force=False):
             if field=='pinyin':q[field]=value
             q[field+'_display']=value
         q['pinyin_status']='source_based_selection_see_variants' if q['pinyin'] else 'not_supplied_in_extracted_evidence'
+    lesson4_examples.apply(tables, vocab, phrases, load(L4/'example-support.json'))
     tables['lexical_annotation_coverage']=dict(annotations.get('coverage',{}),algorithm='reviewed_literal_spans_not_substring_search',unmatched_runs_do_not_create_vocabulary=True)
 
     # Radical documentary definitions and character assignments are different claims.

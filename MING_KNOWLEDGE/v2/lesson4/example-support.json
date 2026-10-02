@@ -1,0 +1,30 @@
+{
+  "batch": "ming-l4-examples-20261002",
+  "method": "Explicit phrase-scoped pedagogical links and model-checked editorial support; no independent human review claimed.",
+  "entries": [
+    {
+      "vocab_id": "v-回",
+      "via_vocab_id": "v-回学校",
+      "phrase_id": "PH-f9131d33151602a9",
+      "hanzi": "七点半我回学校，我们班有活动。",
+      "evidence_id": "PE-L4-888b9c93db85e410",
+      "rationale": "回 conserva el sentido de regresar en 回学校. Asociación limitada a este turno canónico del libro.",
+      "documentary_spanish": {
+        "block_id": "L4-BOOK-04-07-01",
+        "field": "text_source",
+        "line": 0,
+        "expected": "Regresaré a la escuela a las siete y media. Nuestra clase tiene una actividad."
+      }
+    },
+    {
+      "vocab_id": "v-里卡多帕尔玛大学",
+      "via_vocab_id": "v-里卡多帕尔玛大学孔子学院",
+      "phrase_id": "PH-05f97f56e77b1b66",
+      "hanzi": "我是里卡多帕尔玛大学孔子学院的学生。",
+      "evidence_id": "PE-L4-23026ad73a1e80f5",
+      "rationale": "El nombre de la universidad se conserva dentro del nombre completo del Instituto Confucio. Asociación pedagógica explícita para este ejemplo suplementario.",
+      "pinyin_ming": "Wǒ shì Lǐkǎduō Pà'ěrmǎ Dàxué Kǒngzǐ Xuéyuàn de xuéshēng.",
+      "traduccion_ming": "Soy estudiante del Instituto Confucio de la Universidad Ricardo Palma."
+    }
+  ]
+}

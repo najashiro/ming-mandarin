@@ -1,6 +1,7 @@
 import { getVocabularySet, examplesForWord } from '@/lib/vocabulary';
 import { describe, expect, it } from 'vitest';
 import corpus from '@/data/corpus-v21-public.json';
+import lesson4 from '@/data/lesson4-public.json';
 import { publicExamplesForVocabulary } from '@/lib/vocabulary-examples';
 
 describe('global vocabulary examples with editorial pinyin', () => {
@@ -77,11 +78,34 @@ describe('L4 approved examples', () => {
     const half = examplesForWord(words.find(word => word.hanzi === '半')!);
     expect(half.length).toBeGreaterThan(0);
     expect(half.some(example => !example.pinyin || !example.spanish)).toBe(true);
-    expect(words.filter(word => examplesForWord(word).length === 0).map(word => word.hanzi)).toEqual(['下', '回', '里卡多帕尔玛大学']);
+    expect(words.filter(word => examplesForWord(word).length === 0).map(word => word.hanzi)).toEqual(['下']);
     for (const word of words) for (const example of examplesForWord(word)) {
       expect(word.examplePhraseIds).toContain(example.id);
       expect(example.hanzi).not.toMatch(/…|_|□/);
     }
+  });
+  it('uses the two explicit L4 examples with complete support and original lexical IDs', () => {
+    const words = getVocabularySet('l4');
+    expect(words).toHaveLength(73);
+    expect(lesson4.sentences).toHaveLength(7);
+    expect(lesson4.sentences.some(row => row.id === 'PH-05f97f56e77b1b66')).toBe(false);
+    expect(words.filter(word => examplesForWord(word).length > 0)).toHaveLength(72);
+    const hui = examplesForWord(words.find(word => word.hanzi === '回')!);
+    expect(hui.map(row => row.id)).toEqual(['PH-f9131d33151602a9']);
+    expect(hui[0].hanzi).toBe('七点半我回学校，我们班有活动。');
+    expect(hui[0].spanish).toBe('Regresaré a la escuela a las siete y media. Nuestra clase tiene una actividad.');
+    expect(hui[0].pinyin).toBe('Qī diǎn bàn wǒ huí xuéxiào, wǒmen bān yǒu huódòng.');
+    expect(lesson4.phrases.find(row => row.id === hui[0].id)!.vocabIds).toContain('v-回学校');
+    expect(lesson4.phrases.find(row => row.id === hui[0].id)!.vocabIds).not.toContain('v-回');
+    const university = examplesForWord(words.find(word => word.hanzi === '里卡多帕尔玛大学')!);
+    expect(university.map(row => row.id)).toEqual(['PH-05f97f56e77b1b66']);
+    expect(university[0].hanzi).toBe('我是里卡多帕尔玛大学孔子学院的学生。');
+    expect(university[0].pinyin).toBe("Wǒ shì Lǐkǎduō Pà'ěrmǎ Dàxué Kǒngzǐ Xuéyuàn de xuéshēng.");
+    expect(university[0].spanish).toBe('Soy estudiante del Instituto Confucio de la Universidad Ricardo Palma.');
+    expect(lesson4.phrases.find(row => row.id === university[0].id)!.vocabIds).toContain('v-里卡多帕尔玛大学孔子学院');
+    expect(lesson4.phrases.find(row => row.id === university[0].id)!.vocabIds).not.toContain('v-里卡多帕尔玛大学');
+    expect(words.some(word => word.hanzi === '里卡多帕尔玛大学孔子学院')).toBe(false);
+    expect(JSON.stringify([...hui, ...university])).not.toMatch(/pinyin_ming|traduccion_ming|spanish_source|source_location|documentary_spanish/);
   });
   it('does not reuse classifier examples for contextual zhi', () => {
     const word = getVocabularySet('l4').find(word => word.hanzi === '只')!;

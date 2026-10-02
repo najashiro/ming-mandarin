@@ -61,3 +61,25 @@ Las afirmaciones culturales se conservan como contenido del material, no como ci
 `python3 scripts/export-corpus-v22.py --check` verifica la proyección v2.2 por huella reproducible. El exportador genera un archivo de trabajo ignorado; **no cambia el import de la aplicación**. `scripts/export-corpus-v21.py --check` sigue comprobando que el contenido público anterior no fue alterado.
 
 El resultado de cierre depende de las fuentes, los vínculos y las pruebas globales, no de fijar una etiqueta `ready` a mano. Ver `../RELEASE_2_2_0.md` para resultados y alcance. Revisión realizada por el modelo; no se afirma auditoría lingüística humana independiente.
+
+## Dos ejemplos recuperados (2026-10-02)
+
+`example-support.json` registra dos asociaciones pedagógicas limitadas a frases
+concretas: 回 mediante 回学校 en `PH-f9131d33151602a9`, y
+里卡多帕尔玛大学 mediante el nombre completo del Instituto Confucio en
+`PH-05f97f56e77b1b66`. `lesson4_examples.py` las valida y aplica después de
+compilar los testigos L4. No hay herencia por substring ni transitividad; los
+IDs, tokens léxicos, listas y asignaciones curriculares se conservan.
+
+El español de 回 se recupera literalmente de la primera línea de la nota
+`L4-BOOK-04-07-01` (PDF 7, impresa 119); su localizador queda separado del
+turno del diálogo en PDF 6. El pinyin y español de la universidad son apoyo
+editorial autorizado, en `pinyin_ming` y `traduccion_ming`, sin alterar campos
+ni variantes documentales. No se afirma revisión lingüística humana
+independiente. Su alcance es el ejemplo de vocabulario; no habilita por sí
+solo un nuevo ejercicio de ordenar frases.
+
+La exportación reproducible resuelve los apoyos, sin mostrar sus metadatos al
+alumno. La traducción documental tiene prioridad también al mostrar el turno
+canónico. Las fichas L4 con ejemplos pasan de 70 a 72 de 73; 下 sigue sin un
+ejemplo aprobado. El nombre largo no se añade al vocabulario publicado.

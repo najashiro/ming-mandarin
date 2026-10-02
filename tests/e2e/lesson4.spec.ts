@@ -140,3 +140,23 @@ test('L4: gira ejemplos globales y ejemplos sin apoyos completos', async ({ page
   await page.getByRole('button', { name: 'Anterior', exact: true }).click();
   await expect(half.locator('.vocabulary-example')).toHaveCount(0);
 });
+
+test('L4: 回 y universidad muestran sus ejemplos completos; 下 sigue exceptuada', async ({ page }) => {
+  for (const [word, hanzi, spanish] of [
+    ['回', '七点半我回学校，我们班有活动。', 'Regresaré a la escuela a las siete y media. Nuestra clase tiene una actividad.'],
+    ['里卡多帕尔玛大学', '我是里卡多帕尔玛大学孔子学院的学生。', 'Soy estudiante del Instituto Confucio de la Universidad Ricardo Palma.'],
+  ]) {
+    await page.goto(`/study/l4/vocabulary?card=${encodeURIComponent(`v-${word}`)}`);
+    const card = page.getByRole('article', { name: `Ficha de ${word}`, exact: true });
+    await card.getByRole('button', { name: `Ver ejemplo: ${word}`, exact: true }).click();
+    await expect(card.locator('.vocabulary-example-text')).toHaveText(hanzi);
+    await expect(card.locator('.word-pinyin')).not.toBeEmpty();
+    await expect(card.locator('.vocabulary-example-translation')).toHaveText(spanish);
+    await card.getByRole('button', { name: `Ver palabra: ${word}`, exact: true }).click();
+    await expect(card.locator('.vocabulary-example')).toHaveCount(0);
+  }
+  await page.goto(`/study/l4/vocabulary?card=${encodeURIComponent('v-下')}`);
+  const card = page.getByRole('article', { name: 'Ficha de 下', exact: true });
+  await expect(card).toBeVisible();
+  await expect(card.getByRole('button', { name: 'Ver ejemplo: 下', exact: true })).toHaveCount(0);
+});
