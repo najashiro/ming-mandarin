@@ -38,6 +38,8 @@ test('Hanzi: ficha antes del selector y búsqueda sin títulos repetidos', async
   await expect(page.getByRole('button', { name: 'Lo reconozco' })).toHaveCount(0);
   await expect(page.getByRole('heading', { name: 'Aparece en' })).toHaveCount(0);
   await expect(page.locator('.hanzi-learn-panel')).toBeVisible();
+  expect(await page.locator('#hanzi-lesson-scope option').evaluateAll(options => options.map(option => (option as HTMLOptionElement).value))).toEqual(['l1', 'l2', 'l3', 'l4']);
+  await expect(page.locator('.hanzi-picker-card').filter({ hasText: '分' }).locator('em')).toHaveText('minuto');
   expect(await page.locator('.hanzi-workspace').evaluate(element =>
     element.lastElementChild?.classList.contains('hanzi-character-picker'))).toBe(true);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);

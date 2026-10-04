@@ -156,8 +156,14 @@ def build():
         witnesses = [r for r in evidence if r['hanzi']==hanzi]
         row = witnesses[0]
         stages = [u['id'] for u in units if hanzi in u['characters']]
+        # Reuse only an exact single-character lexical witness with the same
+        # reading. A compound's Spanish or another reading is not a glyph gloss.
+        lexical = vocab.get(f'v-{hanzi}', {}).get('lesson4_selection') or {}
+        meaning = row.get('spanish_source') or ''
+        if not meaning and lexical.get('pinyin') == row.get('pinyin_source'):
+            meaning = lexical.get('spanish') or ''
         characters.append(dict(id=f'c-{hanzi}',lessonId='lesson-4',hanzi=hanzi,pinyin=row.get('pinyin_source') or '',
-            meaning=row.get('spanish_source') or '',strokeCount=row['strokes_source'],radical=row.get('radical_source') or '',
+            meaning=meaning,strokeCount=row['strokes_source'],radical=row.get('radical_source') or '',
             components=[],structure=row.get('structure_source') or '',recognitionRequired=True,writingRequired=True,
             source=source(row),sources=[source(w) for w in witnesses],sourceGroups=stages,primaryStage=stages[0],
             introducedIn=stages[0],appearsIn=stages,sourceRole='core',curricularOrder=len(characters),curricular=True,

@@ -26,9 +26,6 @@ const lessonScopes = [
   ['l2', 'Lección 2'],
   ['l3', 'Lección 3'],
   ['l4', 'Lección 4'],
-  ['l1-l2-l3-l4', 'Lección 4 acumulado'],
-  ['l1-l2', 'Lección 2 acumulado'],
-  ['l1-l2-l3', 'Lección 3 acumulado'],
 ] as const satisfies readonly (readonly [CurriculumScope, string])[];
 type Tab = typeof tabs[number];
 type Stage = { id: HanziStageId; title: string; shortTitle: string; chinese: string; description: string; characters: string[] };
@@ -53,7 +50,7 @@ type Props = {
 };
 
 export function HanziLab({ characters, canonicalHanzi = characters.map((item) => item.hanzi), stages, manifest, initialProgress = {}, initialCharacter = '好', initialTab = 'Aprender', focusGlyph = false, route = '/lesson/1/hanzi', tracking='course', scope='l1' }: Props) {
-  const [characterScope, setCharacterScope] = useState<CurriculumScope>(scope);
+  const [characterScope, setCharacterScope] = useState<CurriculumScope>(() => scope.split('-').at(-1) as CurriculumScope);
   const firstCharacter = characters.find((item) => item.hanzi === initialCharacter) ?? characters[0];
   const [selectedId, setSelectedId] = useState(firstCharacter.id);
   const [tab, setTab] = useState<Tab>(initialTab);

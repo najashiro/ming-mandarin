@@ -5,7 +5,7 @@ import baseline from '@/data/corpus-v21-public.json';
 import audio from '@/data/lesson4-audio.json';
 import available from '@/data/lesson4-audio-available.json';
 import media from '@/data/lesson4-media.json';
-import { getCurriculum, isCurriculumScope } from '@/seed/curriculum';
+import { allCurriculumCharacters, getCurriculum, isCurriculumScope } from '@/seed/curriculum';
 import { getVocabularySet, examplesForWord } from '@/lib/vocabulary';
 import { publicCorpusForScope } from '@/lib/corpus-v21';
 import { audioForMandarinText } from '@/lib/mandarin-audio';
@@ -14,6 +14,18 @@ import { retoMixtoForScope } from '@/data/reto-mixto-lesson4';
 import { buildRetoMixtoDeck } from '@/lib/reto-mixto';
 
 describe('integración L4 desde corpus 2.2.0', () => {
+  it('recupera glosas documentadas de caracteres sin heredar compuestos ni otras lecturas', () => {
+    expect(lesson4.characters.find(character => character.hanzi === '分')?.meaning).toBe('minuto');
+    expect(lesson4.characters.find(character => character.hanzi === '半')?.meaning).toBe('mitad');
+    expect(lesson4.vocabulary.find(word => word.hanzi === '现在')?.spanish).toBeTruthy();
+    expect(lesson4.characters.find(character => character.hanzi === '现')?.meaning).toBe('');
+    expect(lesson4.vocabulary.find(word => word.hanzi === '差')?.pinyin).toBe('chà');
+    expect(lesson4.characters.find(character => character.hanzi === '差')?.pinyin).toBe('chā');
+    expect(lesson4.characters.find(character => character.hanzi === '差')?.meaning).toBe('');
+    const visible = allCurriculumCharacters.filter(character => character.appearsIn.some(unit => unit.startsWith('4.')));
+    expect(visible.every(character => character.pinyin)).toBe(true);
+    expect(visible.filter(character => character.meaning)).toHaveLength(33);
+  });
   it('expone ambos textos, todos los módulos y el acumulado', () => {
     expect(lesson4.version).toBe('2.2.0');
     expect(isCurriculumScope('l4')).toBe(true);
