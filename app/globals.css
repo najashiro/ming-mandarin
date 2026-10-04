@@ -49,6 +49,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offset: 3px; }
 .shell { width: min(1180px, calc(100% - 40px)); margin-inline: auto; }
 .hanzi-combobox { position: relative; max-width: 620px; margin: 18px 0; }
+.hanzi-search-panel .hanzi-combobox { margin: 0; }
 .hanzi-combobox > label { display:block; margin-bottom:6px; font-size:12px; font-weight:750; color:var(--muted); }
 .hanzi-combobox > div:first-of-type { display:flex; }
 .hanzi-combobox input { width:100%; min-height:50px; padding:0 46px 0 14px; border:2px solid var(--jade); border-radius:9px; background:#fff; font:16px var(--pinyin-font); }

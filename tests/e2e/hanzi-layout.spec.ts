@@ -1,0 +1,61 @@
+import { expect, test } from '@playwright/test';
+
+test('Hanzi: ficha antes del selector y búsqueda sin títulos repetidos', async ({ page }, info) => {
+  await page.goto('/study/l4/hanzi');
+  await expect(page.getByRole('combobox', { name: 'Busca por pinyin' })).toBeVisible();
+  await expect(page.getByText('BUSCADOR HANZI', { exact: true })).toHaveCount(0);
+  await expect(page.getByRole('heading', { name: 'Busca por pinyin' })).toHaveCount(0);
+  await expect(page.getByRole('group', { name: 'Unidad curricular' })).toHaveCount(0);
+  await expect(page.getByRole('button', { name: 'Lo reconozco' })).toHaveCount(0);
+  await expect(page.getByRole('heading', { name: 'Aparece en' })).toHaveCount(0);
+  await expect(page.locator('.hanzi-learn-panel')).toBeVisible();
+  expect(await page.locator('.hanzi-workspace').evaluate(element =>
+    element.lastElementChild?.classList.contains('hanzi-character-picker'))).toBe(true);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+  await page.screenshot({ path: info.outputPath('hanzi-learn.png'), fullPage: true });
+});
+
+test('Hanzi: caracteres de palabras y frases abren Aprender y enfocan la ficha', async ({ page }) => {
+  await page.goto('/study/l4/hanzi?character=现&tab=Palabras%20y%20frases');
+  const link = page.getByRole('link', { name: 'Abrir ficha Hanzi de 在', exact: true }).first();
+  await expect(link).toBeVisible();
+  await link.click();
+  await expect(page.getByRole('tab', { name: 'Aprender', exact: true })).toHaveAttribute('aria-selected', 'true');
+  await expect(page.locator('#hanzi-detail-start')).toHaveAttribute('data-character', '在');
+  await expect(page.locator('#hanzi-glyph-focus .hanzi-writer-target svg')).toHaveCount(1);
+  await expect(page).toHaveURL(/focus=glyph/);
+});
+
+test('Hanzi: práctica conserva controles bajo la escritura en ambos modos', async ({ page }, info) => {
+  await page.goto('/study/l4/hanzi?character=现&tab=Practicar');
+  const stage = page.locator('.practice-panel .hanzi-writer-target');
+  const controls = page.locator('.practice-panel .hanzi-controls');
+  for (const mode of ['Con guía', 'Sin guía']) {
+    await page.getByRole('button', { name: mode, exact: true }).click();
+    const start = page.getByRole('button', { name: 'Comenzar', exact: true });
+    await expect(start).toBeEnabled();
+    await start.click();
+    await expect(controls.getByRole('button', { name: 'Mantén para ver respuesta' })).toBeEnabled();
+    const stageBox = await stage.boundingBox();
+    const controlsBox = await controls.boundingBox();
+    expect(controlsBox!.y).toBeGreaterThanOrEqual(stageBox!.y + stageBox!.height);
+    await page.locator('.practice-panel').screenshot({ path: info.outputPath(`hanzi-practice-${mode}.png`) });
+    await controls.getByRole('button', { name: 'Cancelar', exact: true }).click();
+    await expect(controls.getByRole('button', { name: 'Cancelar', exact: true })).toBeDisabled();
+  }
+  await expect(page.getByText('Guía visible y pistas progresivas', { exact: true })).toHaveCount(0);
+  await expect(page.getByText('Cuadrícula sin contorno', { exact: true })).toHaveCount(0);
+});
+
+test('Hanzi: lecciones 1 y 4 conservan nombres chinos y la misma estructura de trazos', async ({ page }) => {
+  for (const [scope, character] of [['l1', '好'], ['l4', '现']]) {
+    await page.goto(`/study/${scope}/hanzi?character=${character}&tab=Trazos`);
+    const strokes = page.locator('.stroke-name-list li');
+    await expect(strokes.first()).toBeVisible();
+    for (const stroke of await strokes.all()) {
+      expect(await stroke.locator('b').textContent()).toMatch(/\p{Script=Han}/u);
+      expect(await stroke.locator('span').last().textContent()).toMatch(/向/);
+    }
+    await expect(page.locator('.stroke-answer-layout > svg, .stroke-answer-layout svg').first()).toBeVisible();
+  }
+});

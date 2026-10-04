@@ -712,24 +712,7 @@ test('la ficha Hanzi conserva su jerarquía mobile-first en los anchos objetivo 
   }
 });
 
-test('los filtros Hanzi siguen los ocho textos curriculares y distinguen nuevo de repaso', async ({ page, isMobile }) => {
-  await page.goto('/lesson/1/hanzi');
-  const selector = page.getByRole('combobox', { name: 'Unidad', exact: true });
-  const grid = page.locator('.hanzi-picker-grid > button');
-  async function selectStage(stage: string) {
-    if (isMobile) await selector.selectOption(stage);
-    else await page.getByRole('group', { name: 'Unidad curricular' }).getByRole('button', { name: new RegExp(`^${stage.replace('.', '\\.')} `) }).click();
-  }
-  for (const [stage, count] of [['1.1',40],['1.2',26],['2.1',57],['2.2',42],['3.1',36],['3.2',39],['4.1',33],['4.2',26]] as const) {
-    await selectStage(stage);
-    await expect(grid).toHaveCount(count);
-  }
-  await selectStage('3.2');
-  await expect(page.getByRole('button',{name:/^张, zhāng,/})).toHaveAttribute('data-curricular-state','review');
-  await expect(page.getByRole('button',{name:/^真, zhēn,/})).toHaveAttribute('data-curricular-state','new');
-});
-
-test('Trazos y Aparece en conservan detalle técnico, contexto y enlaces en iPhone portrait', async ({ page }) => {
+test('Trazos y Palabras y frases conservan detalle técnico, contexto y enlaces en iPhone portrait', async ({ page }) => {
   await page.setViewportSize({ width:390,height:844 });
   await page.goto('/lesson/1/hanzi?character=张&tab=Trazos');
   const strokeNames = page.locator('.stroke-name-list > li');
@@ -740,7 +723,7 @@ test('Trazos y Aparece en conservan detalle técnico, contexto y enlaces en iPho
 
   await page.goto('/lesson/1/hanzi?character=么&tab=Componentes');
   const contexts = page.locator('.components-panel .hanzi-context');
-  await expect(contexts.getByRole('heading',{name:'Aparece en'})).toBeVisible();
+  await expect(contexts.getByRole('heading',{name:'Aparece en'})).toHaveCount(0);
   await expect(contexts).toContainText('什么');
   await expect(contexts).toContainText('shénme');
   await expect(contexts).toContainText('怎么样');
@@ -762,26 +745,6 @@ test('Trazos y Aparece en conservan detalle técnico, contexto y enlaces en iPho
   await expect(page.locator('.components-panel .hanzi-context')).toContainText('这张照片真漂亮');
   const dimensions = await page.evaluate(() => ({ viewport:window.innerWidth,content:document.documentElement.scrollWidth }));
   expect(dimensions.content).toBeLessThanOrEqual(dimensions.viewport + 1);
-});
-
-test('una evidencia de reconocimiento local persiste después de recargar', async ({ page }) => {
-  await page.goto('/lesson/1/hanzi?character=一');
-  const studyRequest = page.waitForRequest((request) => new URL(request.url()).pathname === '/api/hanzi/practice' && request.method() === 'POST');
-  await page.getByRole('button', { name: 'Lo reconozco' }).click();
-  expect((await studyRequest).postDataJSON()).toEqual({ action: 'study', characterId: 'c-一' });
-  await expect(page.getByText(/guardado en este dispositivo/)).toBeVisible();
-  const exposure = await page.evaluate(() => {
-    const local = JSON.parse(localStorage.getItem('ming-hanzi-progress-v1') || '{}') as Record<string, Record<string, unknown>>;
-    return local['c-一:recognition'];
-  });
-  expect(exposure).toMatchObject({ attempts: 0, completed: 0, mistakes: 0, studyExposures: 1 });
-  expect(exposure).not.toHaveProperty('mastery');
-  expect(exposure).not.toHaveProperty('stability');
-  expect(exposure).not.toHaveProperty('correctCount');
-  expect(exposure).not.toHaveProperty('xp');
-  await page.reload();
-  await expect(page.getByRole('button', { name: '一, yī, uno', exact: true })).toBeVisible();
-  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('ming-hanzi-progress-v1') || '{}')['c-一:recognition'])).toEqual(exposure);
 });
 
 test('las microtarjetas Hanzi muestran significado y cinco columnas móviles', async ({ page }) => {
