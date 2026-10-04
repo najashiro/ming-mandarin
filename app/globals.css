@@ -403,7 +403,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .hanzi-picker-grid button.curricular-new:not(.selected) { border-color: rgba(162,58,44,.34); box-shadow: inset 0 0 0 1px rgba(162,58,44,.12); }
 .hanzi-picker-grid button.curricular-review:not(.selected) { filter: saturate(.72); }
 .hanzi-picker-grid button:not(.selected):hover { border-color: rgba(29,106,89,.34); }
-.hanzi-picker-grid button em { width: 100%; min-height: 2.35em; display: -webkit-box; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; color: var(--ink); font: normal 500 13px/1.18 system-ui; text-align: center; overflow-wrap: anywhere; }
+.hanzi-picker-grid button em { width: 100%; min-height: 2.35em; display: -webkit-box; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; color: #6b6b6b; font: normal 400 11.25px/1.18 system-ui; text-align: center; overflow-wrap: anywhere; }
 .hanzi-picker-grid button.selected { border-color: var(--jade); color: white; background: var(--jade); }
 .hanzi-picker-grid button.selected small,
 .hanzi-picker-grid button.selected em { color: #d7eee7; }
