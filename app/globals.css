@@ -371,9 +371,8 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 
 /* Reusable Hanzi laboratory */
 .hanzi-workspace { width: min(1180px, calc(100% - 40px)); margin: 38px auto 0; }
-.hanzi-lesson-toolbar { margin-bottom: 13px; display: flex; align-items: end; }
-.hanzi-lesson-toolbar label { width: min(100%,320px); display: grid; gap: 6px; color: var(--muted); font-size: 10px; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
-.hanzi-lesson-toolbar select { width: 100%; min-height: 46px; padding: 9px 38px 9px 12px; border: 1px solid var(--line); border-radius: 10px; color: var(--ink); background: rgba(255,255,255,.9); font: 600 14px system-ui; cursor: pointer; }
+.hanzi-lesson-toolbar { margin-top: 13px; display: flex; align-items: end; }
+.hanzi-lesson-toolbar select { width: min(100%,320px); min-height: 46px; padding: 9px 38px 9px 12px; border: 1px solid var(--line); border-radius: 10px; color: var(--ink); background: rgba(255,255,255,.9); font: 600 14px system-ui; cursor: pointer; }
 .hanzi-lesson-toolbar select:focus-visible { outline: 3px solid rgba(29,106,89,.25); outline-offset: 2px; border-color: var(--jade); }
 .hanzi-character-picker { padding: 19px 22px; }
 .hanzi-picker-heading { display: flex; align-items: end; justify-content: space-between; gap: 18px; }
@@ -426,7 +425,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .hanzi-tabs button { min-height: 50px; border: 0; border-bottom: 3px solid transparent; color: var(--muted); background: transparent; font: 750 12px system-ui; cursor: pointer; }
 .hanzi-tabs button.selected { border-color: var(--jade); color: var(--jade); }
 .hanzi-tab-panel { margin-top: 8px; min-height: 510px; }
-.hanzi-learn-panel { display: grid; grid-template-columns: minmax(300px,1.2fr) minmax(250px,.8fr); align-items: start; gap: 36px; }
+.hanzi-learn-panel { display: grid; grid-template-columns: minmax(0,1fr); align-items: start; min-height: 0; }
 .hanzi-learn-visual { width: min(100%,420px); min-width: 0; position: relative; display: grid; justify-self: center; justify-items: center; }
 .hanzi-panel-copy { max-width: 470px; }
 .hanzi-panel-copy > p:not(.eyebrow) { font-size: 13px; }
