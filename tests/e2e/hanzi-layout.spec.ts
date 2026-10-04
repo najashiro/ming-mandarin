@@ -1,5 +1,34 @@
 import { expect, test } from '@playwright/test';
 
+test('Hanzi: filtro local conserva la vista, la ficha y la búsqueda universal', async ({ page }) => {
+  await page.goto('/study/l1/hanzi?character=好&tab=Trazos');
+  const search = page.getByRole('combobox', { name: 'Busca por pinyin' });
+  await expect(search).toBeEnabled();
+  await search.fill('xian4');
+  const result = page.getByRole('option').filter({ hasText: '现' });
+  await expect(result).toHaveCount(1);
+  const matches = await page.getByRole('option').allTextContents();
+  const selector = page.getByRole('combobox', { name: 'Lección', exact: true });
+  await expect(page.locator('.hanzi-picker-card').filter({ hasText: '现' })).toHaveCount(0);
+  await selector.scrollIntoViewIfNeeded();
+  const before = await page.evaluate(() => ({ y: scrollY, top: document.querySelector('.hanzi-character-picker')!.getBoundingClientRect().top }));
+  await selector.selectOption('l4');
+  await expect(page.locator('.hanzi-picker-card')).toHaveCount(54);
+  await expect(page.locator('#hanzi-detail-start')).toHaveAttribute('data-character', '好');
+  await expect(page.getByRole('tab', { name: 'Trazos', exact: true })).toHaveAttribute('aria-selected', 'true');
+  await expect(search).toHaveValue('xian4');
+  expect(await page.getByRole('option').allTextContents()).toEqual(matches);
+  await expect(page).toHaveURL(/\/study\/l1\/hanzi\?character=.*&tab=Trazos/);
+  await expect.poll(() => page.evaluate(() => scrollY)).toBeCloseTo(before.y, 0);
+  expect(await page.locator('.hanzi-character-picker').evaluate(element => element.getBoundingClientRect().top)).toBeCloseTo(before.top, 0);
+  await result.click();
+  await expect(page.locator('#hanzi-detail-start')).toHaveAttribute('data-character', '现');
+  await expect(page.getByRole('tab', { name: 'Aprender', exact: true })).toHaveAttribute('aria-selected', 'true');
+  await expect(selector).toHaveValue('l4');
+  await page.reload();
+  await expect(page.locator('#hanzi-detail-start')).toHaveAttribute('data-character', '现');
+});
+
 test('Hanzi: ficha antes del selector y búsqueda sin títulos repetidos', async ({ page }, info) => {
   await page.goto('/study/l4/hanzi');
   await expect(page.getByRole('combobox', { name: 'Busca por pinyin' })).toBeVisible();
