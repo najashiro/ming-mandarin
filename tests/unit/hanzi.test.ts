@@ -53,7 +53,7 @@ describe('laboratorio Hanzi', () => {
   });
 
   it('dispone de nombre técnico y pinyin para cada trazo del corpus canónico', () => {
-    for (const character of canonicalCharacters.filter(item => !item.introducedIn.startsWith('4.'))) {
+    for (const character of canonicalCharacters) {
       const names = strokeNamesForCharacter(character.hanzi,character.strokeCount);
       expect(names,character.hanzi).toHaveLength(character.strokeCount);
       expect(names.every((name) => Boolean(name?.hanzi && name.pinyin)),character.hanzi).toBe(true);

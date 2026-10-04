@@ -32,7 +32,7 @@ export function medianPolyline(median: Array<[number, number]>, width: number, h
 }
 
 export function strokeDirection(median: Array<[number, number]>) {
-  if (median.length < 2) return { x: 0, y: 0, angle: 0, label: 'sin dirección' };
+  if (median.length < 2) return { x: 0, y: 0, angle: 0, label: 'sin dirección', chinese: '无方向' };
   const start = median[0];
   const end = median[median.length - 1];
   const x = end[0] - start[0];
@@ -43,7 +43,10 @@ export function strokeDirection(median: Array<[number, number]>) {
   const label = absX > absY * 1.7 ? (x >= 0 ? 'derecha' : 'izquierda')
     : absY > absX * 1.7 ? (y >= 0 ? 'arriba' : 'abajo')
       : `${x >= 0 ? 'derecha' : 'izquierda'} y ${y >= 0 ? 'arriba' : 'abajo'}`;
-  return { x, y, angle, label };
+  const chinese = absX > absY * 1.7 ? (x >= 0 ? '向右' : '向左')
+    : absY > absX * 1.7 ? (y >= 0 ? '向上' : '向下')
+      : `${x >= 0 ? '向右' : '向左'}${y >= 0 ? '上' : '下'}`;
+  return { x, y, angle, label, chinese };
 }
 
 export function cumulativeStrokeSets(data: HanziCharacterData) {

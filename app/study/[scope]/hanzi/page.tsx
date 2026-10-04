@@ -5,8 +5,8 @@ import { SiteShell, LessonHeader } from '@/components/SiteShell';
 import { getHanziProgressMap } from '@/lib/server/persistence';
 import type { HanziManifestEntry } from '@/lib/hanzi/types';
 import manifest from '@/public/hanzi-data/manifest.json';
-import { getCurriculum, isCurriculumScope } from '@/seed/curriculum';
-import { canonicalCharacters } from '@/seed/characters';
+import { allCurriculumCharacters, getCurriculum, isCurriculumScope } from '@/seed/curriculum';
+import { canonicalCharacters, hanziUnits } from '@/seed/characters';
 import { supplementalHanziByGlyph } from '@/data/supplemental-hanzi';
 import { resolveHanziGlyph } from '@/lib/hanzi/navigation';
 
@@ -27,16 +27,16 @@ export default async function ScopeHanziPage({
   const data = getCurriculum(rawScope);
   const requestedResolution=query.character?resolveHanziGlyph(query.character):null;
   const supplemental=query.content==='supplementary'&&requestedResolution?.kind==='supplementary'?supplementalHanziByGlyph.get(query.character!):undefined;
-  const explicitlyUnavailable=Boolean(query.character&&!supplemental&&!data.characters.some(item=>item.hanzi===query.character));
+  const explicitlyUnavailable=Boolean(query.character&&!supplemental&&!allCurriculumCharacters.some(item=>item.hanzi===query.character));
   const progress = user&&!supplemental ? await getHanziProgressMap(user) : {};
   const requested = query.mode === 'practice' ? 'Practicar' : query.tab === 'Componentes' ? 'Palabras y frases' : query.tab;
   const tab = tabs.includes(requested as (typeof tabs)[number])
     ? (requested as (typeof tabs)[number])
     : 'Aprender';
-  const initial = supplemental?.hanzi??(data.characters.some((item) => item.hanzi === query.character)
+  const initial = supplemental?.hanzi??(allCurriculumCharacters.some((item) => item.hanzi === query.character)
     ? query.character
     : data.characters[0]?.hanzi);
-  const characters=supplemental?[{...supplemental,radical:'',components:[],writingRequired:false,componentsAudited:false,words:[],introducedIn:null,appearsIn:[]}]:data.characters.map(({id,hanzi,pinyin,meaning,strokeCount,writingRequired,words,introducedIn,appearsIn})=>({id,hanzi,pinyin,meaning,strokeCount,radical:'',components:[],componentsAudited:false,writingRequired,words,introducedIn,appearsIn}));
+  const characters=supplemental?[{...supplemental,radical:'',components:[],writingRequired:false,componentsAudited:false,words:[],introducedIn:null,appearsIn:[]}]:allCurriculumCharacters.map(({id,hanzi,pinyin,meaning,strokeCount,writingRequired,words,introducedIn,appearsIn})=>({id,hanzi,pinyin,meaning,strokeCount,radical:'',components:[],componentsAudited:false,writingRequired,words,introducedIn,appearsIn}));
 
   // Preserve direct character links while allowing explicit tabs to control the view.
   const focusGlyph = query.focus === 'glyph'
@@ -54,7 +54,7 @@ export default async function ScopeHanziPage({
           key={`${initial}:${query.focus??''}:${query.tab??''}:${query.mode??''}`}
           characters={characters}
           canonicalHanzi={canonicalCharacters.map((character) => character.hanzi)}
-          stages={data.stages}
+          stages={hanziUnits}
           manifest={manifest as Record<string, HanziManifestEntry>}
           initialProgress={progress}
           initialCharacter={initial}
