@@ -14,11 +14,13 @@ import { StudyTools } from './games/StudyTools';
 import { MingIcon, type MingIconName } from './MingIcon';
 import { getStudyScopeLabel } from '@/lib/study-options';
 import { TimeGame } from './games/time/TimeGame';
+import { PandaQuest } from './games/panda-quest/PandaQuest';
+import { PandaLandscape } from './games/panda-quest/PandaArt';
 import './games/games.css';
 import './games/catalog.css';
 const gameIcons: Record<string, MingIconName> = { scene: 'sun', conversation: 'chat', hanzi: 'write', story: 'book' };
 
-type Props = { exercises: Exercise[]; hanziCharacters: CharacterEntry[]; listeningEntries: ListeningEntry[]; scope: CurriculumScope; playerName:string; canCompete:boolean; initialGame?: 'reto-mixto' | 'hora' };
+type Props = { exercises: Exercise[]; hanziCharacters: CharacterEntry[]; listeningEntries: ListeningEntry[]; scope: CurriculumScope; playerName:string; canCompete:boolean; initialGame?: 'reto-mixto' | 'hora' | 'panda-quest' };
 export function Arcade({ hanziCharacters, listeningEntries, scope, playerName, canCompete, initialGame }: Props) {
   const rootRef = useRef<HTMLDivElement>(null);
   const launcherRef = useRef<HTMLButtonElement | null>(null);
@@ -74,7 +76,7 @@ export function Arcade({ hanziCharacters, listeningEntries, scope, playerName, c
     <section className="game-grid ming-games-grid shell" aria-label="Juegos disponibles">{games.map((item, index) => scope === 'l4' && ['scene','conversation','story'].includes(item.kind) ? null : <article key={item.id} data-game={item.id}>
       <span className="game-skill-label">{item.skill}</span>
       {(item.kind === 'mixed' || item.kind === 'time') && <button className="game-share-button" type="button" onClick={() => void shareGame(item.id)} aria-label={`Compartir ${item.name}`} title={`Compartir ${item.name}`} data-share-path={`/study/${scope}/games?game=${item.id}`}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.3 10.8 7.4-4.6m-7.4 7 7.4 4.6"/></svg></button>}
-      {item.cover ? <div className="game-thumbnail game-cover" aria-hidden="true"><Image src={item.cover} alt="" fill loading={index === 0 ? 'eager' : 'lazy'} sizes="(max-width: 440px) 100vw, (max-width: 700px) 50vw, 33vw"/></div> : <div className={`game-thumbnail game-symbol thumbnail-${item.kind}`} aria-hidden="true"><MingIcon name={gameIcons[item.kind] ?? 'games'}/><span>{item.skill}</span></div>}
+      {item.kind === 'quest' ? <div className="game-thumbnail thumbnail-quest" aria-hidden="true"><PandaLandscape/></div> : item.cover ? <div className="game-thumbnail game-cover" aria-hidden="true"><Image src={item.cover} alt="" fill loading={index === 0 ? 'eager' : 'lazy'} sizes="(max-width: 440px) 100vw, (max-width: 700px) 50vw, 33vw"/></div> : <div className={`game-thumbnail game-symbol thumbnail-${item.kind}`} aria-hidden="true"><MingIcon name={gameIcons[item.kind] ?? 'games'}/><span>{item.skill}</span></div>}
       <h2>{item.name}</h2><p>{item.description}</p>
       {scope === 'l1-l2-l3-l4' && ['scene','conversation','story'].includes(item.kind) && <small className="game-coverage">Con contenido de las lecciones 1–3</small>}
       {(item.kind === 'mixed' || item.kind === 'time') && <span className="game-share-status" role="status" aria-live="polite">{shareStatus?.game === item.id ? shareStatus.message : ''}</span>}
@@ -86,6 +88,7 @@ export function Arcade({ hanziCharacters, listeningEntries, scope, playerName, c
       {game.kind === 'hanzi' && <HanziLabGame scope={scope} characters={hanziCharacters}/>}
       {game.kind === 'story' && <StoryDetective scope={scope} characters={hanziCharacters}/>}
       {game.kind === 'time' && <TimeGame playerName={playerName} canCompete={canCompete}/>}
+      {game.kind === 'quest' && <PandaQuest scope={scope}/>}
     </div>}</section>
   </div>;
 }
