@@ -1,15 +1,46 @@
-import { Hanzi } from '@/components/Hanzi';
+import Image from 'next/image';
 import Link from 'next/link';
+import { Hanzi } from '@/components/Hanzi';
 import { SiteShell } from '@/components/SiteShell';
 import { SpeakButton } from '@/components/SpeakButton';
-import { learningModules } from '@/seed/modules';
-import { scopeDefinitions } from '@/seed/curriculum';
 import { PinyinText } from '@/components/PinyinText';
+import { ContinueLearning } from '@/components/ContinueLearning';
+import { LessonCards } from '@/components/LessonCards';
+import { MingIcon, type MingIconName } from '@/components/MingIcon';
 
-export default function Home(){return <SiteShell><main className="page-main">
-  <section className="hero shell"><div className="hero-copy"><p className="eyebrow"><Hanzi>基础汉语 · LECCIONES 1–4</Hanzi></p><h1><Hanzi>从认识到家庭</Hanzi></h1><p className="pinyin"><PinyinText>Cóng rènshi dào jiātíng</PinyinText></p><p className="translation">De presentarte a hablar de tu familia</p><p className="intro">Una plataforma completa para escuchar, recordar, construir y conversar. Tu progreso se guarda por concepto; tus errores deciden qué vuelve después.</p><div className="hero-actions"><Link className="button button-primary" href="/study/l1-l2-l3-l4/daily">Continuar estudiando <span>→</span></Link><span className="time-note">◷ 10–15 min por sesión</span></div></div><aside className="ink-card"><div className="seal"><Hanzi>家</Hanzi></div><p className="ink-kicker">FRASE DE HOY</p><p className="ink-hanzi"><Hanzi>你家有几口人？</Hanzi></p><p className="ink-pinyin"><PinyinText>Nǐ jiā yǒu jǐ kǒu rén?</PinyinText></p><div className="ink-divider"/><p>¿Cuántas personas hay en tu familia?</p><SpeakButton text="你家有几口人？"/></aside></section>
-  <section className="path-section shell"><div className="section-heading path-heading"><div><p className="eyebrow">ELIGE TU ALCANCE</p><h2>Lecciones y repasos acumulativos</h2></div><p>Un solo sistema · contenido separado</p></div><div className="module-grid">{(['l1','l2','l3','l4'] as const).map((scope,index)=><Link className="module-card is-open" href={`/study/${scope}`} key={scope}><span className="module-number">{String(index+1).padStart(2,'0')}</span><div><h3>{scopeDefinitions[scope].label}</h3><p><Hanzi>{scopeDefinitions[scope].description}</Hanzi></p></div><span className="module-state">Abrir</span></Link>)}</div></section>
-  <section className="content-grid shell"><article className="today-card"><div className="section-heading"><div><p className="eyebrow">SESIÓN ADAPTATIVA</p><h2>Empieza hoy</h2></div><span className="date-pill">LECCIÓN 1</span></div><p className="muted">Combina recuperación activa, tonos, gramática, hanzi y diálogo en una sesión breve.</p><div className="lesson-list"><div><span className="list-icon jade"><Hanzi>复</Hanzi></span><p><b>Repaso espaciado</b><small>Dominio y estabilidad por dimensión</small></p><em>SRS</em></div><div><span className="list-icon amber"><Hanzi>错</Hanzi></span><p><b>Errores útiles</b><small>Regla, respuesta y próxima acción</small></p><em><Hanzi>反馈</Hanzi></em></div><div><span className="list-icon red"><Hanzi>榜</Hanzi></span><p><b>Meta compartida</b><small>Tu mejor examen en el ranking voluntario</small></p><em><Hanzi>排行</Hanzi></em></div></div><Link className="button button-dark" href="/lesson/1/daily">Abrir sesión de hoy →</Link></article><aside className="focus-card"><p className="eyebrow">TU CAMINO</p><div className="focus-ring"><span>12<small>MÓDULOS</small></span></div><h3>De sonidos a conversación</h3><p>La Lección 1 conserva su ruta original de doce módulos.</p><Link href="/lesson/1">Ver ruta completa →</Link></aside></section>
-  <section className="path-section shell"><div className="section-heading path-heading"><div><p className="eyebrow">EXPLORA</p><h2>Ruta de aprendizaje</h2></div><p>11 módulos + examen final</p></div><div className="module-grid">{learningModules.slice(0,8).map(module=><Link className="module-card is-open" href={module.href} key={module.number}><span className="module-number">{String(module.number).padStart(2,'0')}</span><div><h3><Hanzi>{module.title}</Hanzi></h3><p><Hanzi>{module.subtitle}</Hanzi></p></div><span className="module-state">Abrir</span></Link>)}</div></section>
-  <section className="cta-band"><div className="shell"><p className="eyebrow">PRIMERA META</p><h2>Sube en el ranking</h2><p>Completa el examen, mejora tu puntuación y participa públicamente solo si tú lo decides.</p><Link className="button button-primary" href="/lesson/1/exam">Ver examen final →</Link></div></section>
-</main></SiteShell>}
+const skills: { icon: MingIconName; title: string; text: string; href: string; tone: string }[] = [
+  { icon: 'sound', title: 'Afina el oído', text: 'Escucha, repite y reconoce los tonos.', href: '/lesson/1/pinyin', tone: 'sage' },
+  { icon: 'write', title: 'Trazo a trazo', text: 'Descubre y escribe tus primeros hanzi.', href: '/study/l1/hanzi', tone: 'peach' },
+  { icon: 'chat', title: 'Dilo en chino', text: 'Dale voz a cada nueva conversación.', href: '/study/l1/dialogues', tone: 'sand' },
+];
+
+export default function Home() {
+  return <SiteShell><main id="main-content" className="learning-home">
+    <section className="welcome-hero shell" aria-labelledby="welcome-title">
+      <div className="welcome-copy">
+        <p className="eyebrow"><span className="eyebrow-dot"/> UN POCO CADA DÍA. UN MUNDO POR DESCUBRIR.</p>
+        <h1 id="welcome-title">Tu próximo paso<br/>habla <em>chino.</em></h1>
+        <p className="welcome-description">De tu primer <Hanzi>你好</Hanzi> a una conversación.<br className="desktop-break"/> Aprende, escucha y practica mandarín a tu ritmo.</p>
+        <div className="welcome-actions"><ContinueLearning/><Link prefetch={false} href="/course" className="text-link">Explorar lecciones <span aria-hidden="true">↗</span></Link></div>
+        <p className="welcome-note"><MingIcon name="clock" width="16" height="16"/> Haz espacio para 10 minutos de aprendizaje.</p>
+      </div>
+      <div className="welcome-art">
+        <Image src="/images/ming-study.webp" alt="Un cuaderno abierto y una taza de té frente a un paisaje de montañas" width={1536} height={1024} priority sizes="(max-width: 700px) 100vw, 48vw"/>
+        <div className="hello-note"><span className="hello-hanzi"><Hanzi>你好</Hanzi></span><div><strong><PinyinText>Nǐ hǎo</PinyinText></strong><span>Todo empieza con un hola.</span></div><SpeakButton text="你好" compact ariaLabel="Escuchar 你好, hola"/></div>
+      </div>
+    </section>
+    <section className="learning-path shell" aria-labelledby="path-title">
+      <div className="home-section-heading"><div><p className="eyebrow">TU RUTA DE APRENDIZAJE · LECCIONES 1–4</p><h2 id="path-title">Paso a paso, más lejos.</h2></div><Link prefetch={false} href="/course" className="text-link">Ver todas las lecciones <MingIcon name="arrow" width="18" height="18"/></Link></div>
+      <LessonCards/>
+    </section>
+    <section className="practice-strip shell" aria-labelledby="practice-title">
+      <div className="home-section-heading"><div><p className="eyebrow">APRENDER ES HACER</p><h2 id="practice-title">Encuentra tu forma de practicar.</h2></div><Link prefetch={false} href="/practice" className="text-link">Toda la práctica <MingIcon name="arrow" width="18" height="18"/></Link></div>
+      <div className="skill-cards">{skills.map((skill) => <Link prefetch={false} href={skill.href} className="skill-card" key={skill.title}><span className={'skill-icon ' + skill.tone}><MingIcon name={skill.icon}/></span><div><h3>{skill.title}</h3><p>{skill.text}</p></div><MingIcon name="arrow" width="18" height="18"/></Link>)}</div>
+    </section>
+    <section className="daily-moment shell" aria-labelledby="moment-title">
+      <div className="daily-phrase"><p className="eyebrow">UNA FRASE, UNA CONVERSACIÓN · LECCIÓN 3</p><h2 id="moment-title"><Hanzi>你家有几口人？</Hanzi></h2><p className="phrase-pinyin"><PinyinText>Nǐ jiā yǒu jǐ kǒu rén?</PinyinText></p><p>¿Cuántas personas hay en tu familia?</p><SpeakButton text="你家有几口人？" label="Escuchar la frase"/></div>
+      <div className="daily-invitation"><span className="mini-label"><MingIcon name="games"/> PONLO EN PRÁCTICA</span><h3>Lo que juegas,<br/>lo recuerdas.</h3><p>Une imágenes, sonidos y palabras. Prueba los juegos y aprende de cada respuesta.</p><Link prefetch={false} href="/study/l1-l2-l3-l4/games" className="button button-dark">Elegir un juego <MingIcon name="arrow"/></Link></div>
+    </section>
+    <div className="home-footnote shell"><MingIcon name="book" width="18" height="18"/><p>Pequeños pasos. Práctica constante. Mandarín para tu día a día.</p></div>
+  </main></SiteShell>;
+}

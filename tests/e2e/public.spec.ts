@@ -2,7 +2,8 @@ import { expect, test } from '@playwright/test';
 
 test('la portada navega a las secciones públicas', async ({ page }) => {
   await page.goto('/');
-  await expect(page.getByRole('heading', { name: '从认识到家庭' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Tu próximo paso habla chino.' })).toBeVisible();
+  await page.getByRole('link', { name: 'Explorar lecciones' }).click();
   await page.getByRole('link', { name: /Ver ruta completa/ }).click();
   await expect(page).toHaveURL(/\/lesson\/1$/);
   await page.getByRole('link', { name: /Nombre y apellido/ }).click();

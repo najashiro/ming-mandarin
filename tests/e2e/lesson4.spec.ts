@@ -58,7 +58,7 @@ test('L4: navegación, módulos, diálogos canónicos y regresión L1–L3', asy
   const errors: string[] = [];
   page.on('pageerror', error => errors.push(error.message));
   await visit('/');
-  await expect(page.getByRole('heading', { name: 'Lección 4', exact: true })).toBeVisible();
+  await expect(page.getByRole('link', { name: /LECCIÓN 04/ })).toBeVisible();
   await page.locator('a[href="/study/l4"]').click();
   await page.waitForURL('**/study/l4');
   await page.waitForLoadState('networkidle');
