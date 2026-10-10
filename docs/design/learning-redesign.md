@@ -4,7 +4,7 @@ Base: `main` en `d864a8f`, corpus aprobado 2.2.0. Se conserva el contenido,
 las relaciones, los IDs, el audio y las fichas de vocabulario existentes.
 
 La portada concentra el acceso a las cuatro lecciones, la práctica por habilidad
-y los juegos. `/course` organiza las lecciones y los repasos acumulativos;
+y los juegos. `/course` organiza las cuatro lecciones y un repaso general;
 `/practice` permite elegir alcance antes de entrar a una actividad. Cada ruta
 de lección propone un orden de estudio y mantiene acceso a todos sus recursos,
 incluidos radicales, lecturas y ejercicios de L4. Las cantidades de vocabulario
@@ -64,7 +64,7 @@ la ruta, continuidad local, destinos inválidos, almacenamiento bloqueado,
 teclado y desbordamiento entre 320 y 1440 px. Las suites existentes comprueban
 diálogos, audio, imágenes y regresiones de las lecciones.
 
-Validación de esta entrega (9 de octubre de 2026):
+Validación de la primera iteración (9 de octubre de 2026):
 
 - Corpus 2.2.0: `query.py --validate`, sin errores y con consulta global L1–L4.
 - `pnpm lint`, `pnpm typecheck`, `pnpm test` (284 pruebas) y `pnpm build` correctos.
@@ -77,3 +77,43 @@ Validación de esta entrega (9 de octubre de 2026):
 Los enlaces de navegación y las páginas de exploración desactivan la precarga
 especulativa de Next.js. Cada actividad se solicita al abrirla; esto evita
 descargas innecesarias y cancelaciones de solicitudes en Safari móvil.
+
+## Revisión de filtros y juegos
+
+La selección pública ofrece Lección 1, Lección 2, Lección 3, Lección 4 y
+Repaso general. Los enlaces anteriores siguen abriendo su conjunto original
+con nombres legibles, sin presentar combinaciones numéricas como opciones.
+No se migran ni eliminan IDs, favoritos ni registros de progreso.
+
+El catálogo explica la habilidad y el objetivo de cada juego. Al abrir una
+actividad se oculta el catálogo y el foco pasa al juego; al cerrar, regresa al
+botón que lo abrió. Cambiar de lección crea una sesión con el contenido de ese
+alcance. Escena Viva, Conversación e Historia Detective mantienen el contenido
+L1–L3 existente y lo indican en el repaso general; no se anuncian como L4.
+
+Las modalidades Reconocer, Construir y Producir corresponden a elegir,
+ordenar bloques barajados y escribir una respuesta propia. Hanzi muestra solo
+las modalidades aplicables a cada tarea. El alumno mantiene la modalidad
+elegida y puede reiniciar una sesión; los resultados distinguen aciertos y
+elementos pendientes. Completar una escritura después de ver su corrección
+se registra como práctica con ayuda, sin convertirla en acierto independiente.
+
+En el juego de la hora, la ayuda presenta un ejemplo fijo del material
+existente. La corrección espera a que el alumno pulse Continuar y permite
+escuchar los modelos. El reto informa que sus cuatro minutos incluyen ayuda
+y revisión; el modo de práctica permanece sin límite de tiempo.
+
+Validación de la revisión de juegos:
+
+- Lint, TypeScript y compilación de producción correctos; 287 pruebas unitarias.
+- Una matriz de 186 casos detectó incidencias de audio manual, doble clic en
+  Safari, carga de selectores y un margen que alteraba la ficha móvil. Todas
+  fueron corregidas. Las pruebas de escritura se actualizaron para seguir el
+  audio realmente planteado por el corpus vigente, conservando trazos reales.
+- Comprobación final: 77 casos correctos en Chromium, Android y WebKit iPhone,
+  incluyendo filtros, producción escrita, escritura asistida, reinicio por
+  lección, errores de audio, doble clic, fichas y navegación pública.
+- Ayuda, reloj continuo y corrección del juego de la hora: 12 casos correctos
+  en los tres navegadores durante la matriz, sin cambios posteriores del motor.
+- Capturas e inspección visual del catálogo y actividades en laptop y móvil;
+  grafo AST actualizado, sin modificar corpus ni regenerar audio.

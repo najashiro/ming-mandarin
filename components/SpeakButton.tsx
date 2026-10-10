@@ -51,7 +51,7 @@ export function SpeakButton({ text, reading, audioSrc, rate = 0.85, label = 'Esc
       if (run !== runRef.current) return;
       const aborted = error instanceof DOMException && error.name === 'AbortError';
       const blocked = error instanceof DOMException && error.name === 'NotAllowedError';
-      setState(aborted || blocked ? 'idle' : 'error');
+      setState(aborted || (automatic && blocked) ? 'idle' : 'error');
       if (automatic && blocked) onAutoPlayBlocked?.();
       if (stopActive === stopRef.current) stopActive = null;
     }

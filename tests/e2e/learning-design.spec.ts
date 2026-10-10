@@ -78,3 +78,49 @@ test('en celular se puede cambiar de lección manteniendo la actividad', async (
   await expect(page).toHaveURL(/\/study\/l2\/dialogues$/);
   await expect(selector).toHaveValue('l2');
 });
+
+test('práctica y curso ofrecen cuatro lecciones y un único repaso general', async ({ page }) => {
+  await page.goto('/practice');
+  await expect(page.getByRole('radio')).toHaveCount(5);
+  await page.getByRole('radio', { name: 'Repaso general', exact: true }).check();
+  await expect(page.getByRole('link', { name: /Escucha una conversación/ })).toHaveAttribute('href', '/study/l1-l2-l3-l4/dialogues');
+  await expect(page.getByRole('link', { name: /Lee un poco más/ })).toBeVisible();
+  await page.goto('/course');
+  await expect(page.locator('.review-links a')).toHaveCount(1);
+  await expect(page.getByRole('link', { name: 'Repaso general', exact: true })).toHaveAttribute('href', '/study/l1-l2-l3-l4');
+});
+
+test('los enlaces de repaso anteriores conservan su contenido y permiten salir al repaso general', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  for (const [scope, lesson] of [['l1-l2', 2], ['l1-l2-l3', 3]] as const) {
+    await page.goto(`/study/${scope}`);
+    await expect(page.getByRole('heading', { name: `Repaso hasta la lección ${lesson}`, exact: true })).toBeVisible();
+    const selector = page.getByRole('combobox', { name: 'Cambiar lección de estudio' });
+    await expect(selector).toHaveValue(scope);
+    await expect(selector.locator('option:checked')).toHaveText(`Repaso hasta la lección ${lesson}`);
+    await expect(selector.locator('option:not([disabled])')).toHaveCount(5);
+    await expect(page.locator('.curriculum-links a')).toHaveCount(5);
+    await expect(page.locator('.curriculum-links')).not.toContainText('+');
+    await page.getByRole('link', { name: /Escucha los diálogos/ }).click();
+    await expect(page).toHaveURL(new RegExp(`/study/${scope}/dialogues$`));
+    await expect(selector).toHaveValue(scope);
+    await selector.selectOption('l1-l2-l3-l4');
+    await expect(page).toHaveURL(/\/study\/l1-l2-l3-l4\/dialogues$/);
+    await expect(selector.locator('option:checked')).toHaveText('Repaso general');
+  }
+});
+
+test('el catálogo conserva búsquedas históricas y limpia la selección al cambiar de lección', async ({ page }) => {
+  await page.goto('/study/l1-l2-l3/vocabulary?q=%E5%8C%BB%E7%94%9F');
+  const selector = page.getByRole('combobox', { name: 'Lección', exact: true });
+  await expect(page.locator('.active-vocabulary')).toHaveAttribute('data-ready', 'true');
+  await expect(selector).toHaveValue('l1-l2-l3');
+  await expect(selector.locator('option:checked')).toHaveText('Repaso hasta la lección 3');
+  await expect(selector.locator('option:not([disabled])')).toHaveText(['Lección 1', 'Lección 2', 'Lección 3', 'Lección 4', 'Repaso general']);
+  await expect(page.locator('.vocabulary-count').first()).toHaveText('1 palabra');
+  await selector.selectOption('l4');
+  await expect(page).toHaveURL(/\/study\/l4\/vocabulary\??$/);
+  await expect(page.getByRole('combobox', { name: 'Buscar', exact: true })).toHaveValue('');
+  await expect(selector.locator('option')).toHaveCount(5);
+  await expect(page.locator('.vocabulary-count').first()).toHaveText('73 palabras');
+});

@@ -1,5 +1,6 @@
 'use client';
 import { Hanzi } from '@/components/Hanzi';
+import { studyScopeOptions, getStudyScopeLabel } from '@/lib/study-options';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { CurriculumScope, LessonNumber } from '@/data/types';
@@ -30,18 +31,6 @@ const modeLabels: Record<RetoMixtoMode, string> = {
   'construct-response': 'Construir respuesta',
 };
 
-const selectionDefinitions = [
-  { id: 'l1', label: 'L1', lessons: [1] },
-  { id: 'l2', label: 'L2', lessons: [2] },
-  { id: 'l3', label: 'L3', lessons: [3] },
-  { id: 'l4', label: 'L4', lessons: [4] },
-  { id: 'l1-l2-l3-l4', label: 'L1–L4', lessons: [1,2,3,4] },
-  { id: 'l1-l2', label: 'L1 + L2', lessons: [1, 2] },
-  { id: 'l1-l2-l3', label: 'L1 + L2 + L3', lessons: [1, 2, 3] },
-] as const;
-
-type SelectionId = typeof selectionDefinitions[number]['id'];
-
 const lessonsByScope: Record<CurriculumScope, LessonNumber[]> = {
   l4: [4], 'l1-l2-l3-l4': [1,2,3,4], l1: [1], l2: [2], l3: [3], 'l1-l2': [1, 2], 'l1-l2-l3': [1, 2, 3],
 };
@@ -70,7 +59,7 @@ function modePrompt(mode: RetoMixtoMode) {
 }
 
 export function RetoMixto({ scope, onClose }: Props) {
-  const [selection, setSelection] = useState<SelectionId>(scope);
+  const [selection, setSelection] = useState<CurriculumScope>(scope);
   const media = usePublishedImages(emptyMedia);
   const retoMixtoCorpus = useMemo(() => retoMixtoForScope(selection, media), [selection, media]);
   const entriesById = useMemo(() => new Map(retoMixtoCorpus.map((entry) => [entry.id, entry])), [retoMixtoCorpus]);
@@ -99,7 +88,7 @@ export function RetoMixto({ scope, onClose }: Props) {
     ? retoMixtoConversations.find((conversation) => conversation.id === currentQuestion.conversationId)
     : undefined;
   const options = currentQuestion?.optionIds.map((id) => entriesById.get(id)).filter((entry): entry is RetoMixtoEntry => Boolean(entry)) ?? [];
-  const allowedSelections = selectionDefinitions.filter((definition) => definition.lessons.every((lesson) => lessonsByScope[scope].includes(lesson)));
+  const allowedSelections = studyScopeOptions.filter(({ value }) => lessonsByScope[value].every(lesson => lessonsByScope[scope].includes(lesson)));
 
   useEffect(() => () => {
     audioRun.current += 1;
@@ -181,7 +170,7 @@ export function RetoMixto({ scope, onClose }: Props) {
   }
 
   function start(customDeck?: RetoMixtoQuestion[]) {
-    const lessons = selectionDefinitions.find((definition) => definition.id === selection)?.lessons ?? lessonsByScope[scope];
+    const lessons = lessonsByScope[selection];
     const deck = customDeck ?? (level === 'advanced'
       ? buildRetoMixtoWritingDeck(retoMixtoCorpus, [...lessons] as LessonNumber[], roundCount)
       : buildRetoMixtoDeck(retoMixtoCorpus, retoMixtoConversations, [...lessons] as LessonNumber[], roundCount));
@@ -293,7 +282,7 @@ export function RetoMixto({ scope, onClose }: Props) {
 
   if (phase === 'setup') return <div className="mixed-challenge setup">
     <div className="mixed-heading"><div><p className="eyebrow"><Hanzi>综合挑战 · RETO MIXTO</Hanzi></p><h2>Configura tu sesión</h2><p>Imagen, sonido, Hanzi y conversación en un solo desafío.</p></div><button type="button" onClick={onClose}>Cerrar</button></div>
-    <fieldset><legend>Contenido</legend><div className="mixed-choice-row">{allowedSelections.map((definition) => <button className={selection === definition.id ? 'selected' : ''} type="button" onClick={() => setSelection(definition.id)} key={definition.id}>{definition.label}</button>)}</div></fieldset>
+    <fieldset><legend>Contenido</legend><p className="mixed-selected-scope">{getStudyScopeLabel(selection)}</p>{allowedSelections.length > 1 && <div className="mixed-choice-row">{allowedSelections.map(({ value, label }) => <button className={selection === value ? 'selected' : ''} aria-pressed={selection === value} type="button" onClick={() => setSelection(value)} key={value}>{label}</button>)}</div>}</fieldset>
     <fieldset><legend>Nivel</legend><div className="mixed-choice-row"><button className={level === 'basic' ? 'selected' : ''} type="button" onClick={() => setLevel('basic')}>Básico</button><button className={level === 'advanced' ? 'selected' : ''} type="button" onClick={() => setLevel('advanced')}>Avanzado · escribir Hanzi</button></div></fieldset>
     <fieldset><legend>Número de rondas</legend><div className="mixed-choice-row">{([10, 20, 30] as const).map((count) => <button className={roundCount === count ? 'selected' : ''} type="button" onClick={() => setRoundCount(count)} key={count}>{count}</button>)}</div></fieldset>
     {media === emptyMedia && <p role="status">Consultando imágenes aprobadas…</p>}
@@ -310,6 +299,8 @@ export function RetoMixto({ scope, onClose }: Props) {
 
   if (!currentQuestion || !currentEntry) return <div className="mixed-challenge"><p>No hay contenido disponible para esta selección.</p><button type="button" onClick={() => setPhase('setup')}>Volver</button></div>;
 
+  const assistedWriting = attempts.at(-1)?.writing;
+  const completedWithHelp = Boolean(assistedWriting?.failedCharacters.length && assistedWriting.completedCharacters === [...assistedWriting.expected].length);
   const isWriting = currentQuestion.interactionType === 'hanzi-handwriting';
   const isImagePrompt = !isWriting && currentQuestion.mode === 'image-hanzi';
   const isImageAnswer = !isWriting && (currentQuestion.mode === 'hanzi-image' || currentQuestion.mode === 'audio-image');
@@ -356,7 +347,7 @@ export function RetoMixto({ scope, onClose }: Props) {
 
     <div aria-live="polite">
       {feedback && <div className={`mixed-feedback answer-card ${feedback}`} ref={feedbackRef}>
-        <b className={feedback === 'correct' ? 'mixed-correct-title' : 'mixed-incorrect-title'}>{feedback === 'correct' ? '✓ Correcto' : '✕ Incorrecto'}</b>
+        <b className={feedback === 'correct' ? 'mixed-correct-title' : 'mixed-incorrect-title'}>{feedback === 'correct' ? '✓ Correcto' : completedWithHelp ? 'Completado con ayuda · vuelve a practicarlo' : '✕ Revisa esta respuesta'}</b>
         <strong lang="zh-Hans"><Hanzi>{currentEntry.hanzi}</Hanzi></strong>
         <h3><PinyinText>{currentEntry.pinyin}</PinyinText></h3>
         <p className="mixed-correction-meaning"><Hanzi>{currentEntry.meaningEs}</Hanzi></p>

@@ -31,7 +31,7 @@ test('search variants, filters, IME and favorites survive reload', async ({ page
   await page.reload();
   await expect(card.getByRole('button', { name: 'Favorito: 宠物' })).toHaveAttribute('aria-pressed', 'true');
 
-  await expect(page.getByRole('combobox', { name: 'Lección', exact: true }).locator('option')).toHaveText(['Lección 1', 'Lección 2', 'Lección 3', 'Acumulado']);
+  await expect(page.getByRole('combobox', { name: 'Lección', exact: true }).locator('option')).toHaveText(['Lección 1', 'Lección 2', 'Lección 3', 'Lección 4', 'Repaso general']);
   await page.getByRole('button', { name: 'Solo favoritos', exact: true }).click();
   await expect(card).toBeVisible();
   await page.getByRole('combobox', { name: 'Lección', exact: true }).selectOption('l1');
@@ -53,7 +53,7 @@ test('Mix ignores obsolete catalog filters, reveals the shared card and saves on
   await expect(page).toHaveURL(/\/games\/vocabulary-mix$/);
   await expect(page.getByRole('combobox', { name: 'Buscar' })).toHaveCount(0);
   await expect(page.getByRole('button', { name: 'Solo favoritos' })).toHaveCount(0);
-  await expect(page.getByRole('combobox', { name: 'Contenido' }).locator('option')).toHaveText(['Lección 1', 'Lección 2', 'Lección 3', 'Acumulado hasta lección 2', 'Acumulado hasta lección 3']);
+  await expect(page.getByRole('combobox', { name: 'Contenido' }).locator('option')).toHaveText(['Lección 1', 'Lección 2', 'Lección 3', 'Lección 4', 'Repaso general']);
   await page.getByRole('button', { name: 'Empezar', exact: true }).click();
   const mix = page.getByRole('region', { name: 'Vocabulario Mix', exact: true });
   await expect(mix.getByRole('button', { name: 'Lo sabía', exact: true })).toHaveCount(0);
@@ -227,7 +227,7 @@ test('incompatible old Mix is not rewritten and l1-l2 remains directly accessibl
   await page.addInitScript(() => localStorage.setItem('ming-vocabulary-v1:guest', JSON.stringify({ version: 1, favorites: [], faces: {}, progress: { 'v-你:hanzi': { due: 1, streak: 1, attempts: 2, lastEvent: 'history:0' } }, sessions: { l2: { id: 'old-partition', scope: 'l2', level: 'hard', queue: [{ wordId: 'v-你', type: 'hanzi' }, { wordId: 'v-中国', type: 'hanzi' }], index: 0, revealed: true, paused: false, events: [] } } })));
   await ready(page, '/study/l2/vocabulary?mode=mix');
   await expect(page.getByText(/El juego se actualizó/)).toBeVisible();
-  await page.getByRole('combobox', { name: 'Contenido' }).selectOption('l1-l2');
+  await page.goto('/study/l1-l2/games/vocabulary-mix');
   await expect(page).toHaveURL(/\/study\/l1-l2\/games\/vocabulary-mix$/);
   await expect(page.getByRole('combobox', { name: 'Contenido' })).toHaveValue('l1-l2');
   await expect(page.getByText(/palabras disponibles/)).toBeVisible();

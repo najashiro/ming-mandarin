@@ -47,7 +47,7 @@ test('Reto Mixto integra imagen, audio, corrección y alcance acumulativo', asyn
 
   const setup = page.locator('.mixed-challenge.setup');
   await expect(setup.getByRole('heading', { name: 'Configura tu sesión' })).toBeVisible();
-  await expect(setup.getByRole('button', { name: 'L1 + L2 + L3', exact: true })).toHaveClass(/selected/);
+  await expect(setup.locator('.mixed-selected-scope')).toHaveText('Repaso hasta la lección 3');
   await expect(setup.getByRole('button', { name: '10', exact: true })).toHaveClass(/selected/);
   await setup.getByRole('button', { name: 'Comenzar reto' }).click();
 
@@ -359,12 +359,15 @@ test('Reto Mixto pronuncia fichas sin superposición y consolida la frase constr
   await expect(challenge.getByRole('heading', { name: 'Ronda 2 / 10' })).toBeVisible();
 });
 
-test('L2, L3 y los repasos acumulativos conservan el alcance', async ({ page }) => {
+test('L2–L4, el repaso general y los enlaces históricos conservan el alcance', async ({ page }) => {
+  test.setTimeout(60_000);
   for (const [scope, heading, word] of [
     ['l2', '你是哪国人？', '美国'],
     ['l3', '你家有几口人？', '照片'],
-    ['l1-l2', 'Repaso acumulativo L1 + L2', '饺子'],
-    ['l1-l2-l3', 'Repaso acumulativo L1 + L2 + L3', '医生'],
+    ['l4', '你几点有课？ · 你们班有多少人？', '跑步'],
+    ['l1-l2-l3-l4', 'Repaso general', '跑步'],
+    ['l1-l2', 'Repaso hasta la lección 2', '饺子'],
+    ['l1-l2-l3', 'Repaso hasta la lección 3', '医生'],
   ] as const) {
     await page.goto(`/study/${scope}`);
     await expect(page.getByRole('heading', { name: heading })).toBeVisible();

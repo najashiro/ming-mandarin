@@ -16,7 +16,7 @@ export default async function DailyPage() {
     <div className="shell narrow">
       <PracticeEngine exercises={set} title="Repaso intercalado" />
       <aside className="panel daily-hanzi-card">
-        <div><p className="eyebrow">SESIÓN BREVE · HANZI</p><h2>Repaso acumulativo</h2><p>Errores, repasos vencidos, escritura débil y el siguiente carácter nuevo, en ese orden.</p>
+        <div><p className="eyebrow">SESIÓN BREVE · HANZI</p><h2>Caracteres para hoy</h2><p>Errores, repasos vencidos, escritura débil y el siguiente carácter nuevo, en ese orden.</p>
           <div className="daily-hanzi-list">{hanziPlan.map((item) => <Link href={`/lesson/1/hanzi?character=${encodeURIComponent(item.hanzi)}&mode=practice`} key={item.id}><strong><Hanzi>{item.hanzi}</Hanzi></strong><span><PinyinText>{item.pinyin}</PinyinText></span></Link>)}</div>
         </div>
         <Link className="button button-primary" href="/lesson/1/hanzi?mode=practice">Practicar Hanzi</Link>
