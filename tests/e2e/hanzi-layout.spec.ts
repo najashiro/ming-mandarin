@@ -90,3 +90,40 @@ test('Hanzi: lecciones 1 y 4 conservan nombres chinos y la misma estructura de t
     await expect(page.locator('.stroke-answer-layout > svg, .stroke-answer-layout svg').first()).toBeVisible();
   }
 });
+
+
+test('Hanzi: búsqueda compacta cambia carácter y lección sin saltos ni navegación', async ({ page }) => {
+  await page.goto('/study/l1/hanzi?character=好&focus=glyph');
+  const search = page.getByRole('combobox', { name: 'Busca por pinyin' });
+  await expect(search).toBeEnabled();
+  await expect(page.locator('.hanzi-learn-panel canvas, .hanzi-learn-panel svg').first()).toBeVisible();
+  await expect(search).toHaveAttribute('placeholder', 'Busca por pinyin · Ej.: hao, hǎo o hao3');
+  await expect(page.locator('.hanzi-summary-panel .hanzi-character-hero')).toHaveCount(1);
+  await expect(page.locator('.hanzi-character-hero .eyebrow, .hanzi-character-hero .hanzi-character-meta')).toHaveCount(0);
+  await search.fill('xian4');
+  const result = page.getByRole('option').filter({ hasText: '现' });
+  await expect(result).toBeVisible();
+  await page.evaluate(() => {
+    const state = window as typeof window & { scrollSamples: number[] };
+    state.scrollSamples = [scrollY];
+    const until = performance.now() + 1200;
+    const sample = () => { state.scrollSamples.push(scrollY); if (performance.now() < until) requestAnimationFrame(sample); };
+    requestAnimationFrame(sample);
+  });
+  const navigations: string[] = [];
+  page.on('request', request => { if (request.isNavigationRequest()) navigations.push(request.url()); });
+  await result.click();
+  await expect(page.locator('#hanzi-detail-start')).toHaveAttribute('data-character', '现');
+  await expect(page.getByRole('combobox', { name: 'Lección', exact: true })).toHaveValue('l4');
+  await expect(page.locator('.hanzi-picker-card.selected')).toContainText('现');
+  await expect(page.locator('.hanzi-learn-panel')).toBeVisible();
+  await page.waitForTimeout(1250);
+  const movement = await page.evaluate(() => {
+    const samples = (window as typeof window & { scrollSamples: number[] }).scrollSamples;
+    return Math.max(...samples) - Math.min(...samples);
+  });
+  expect(movement).toBeLessThanOrEqual(1);
+  expect(navigations).toEqual([]);
+  await page.getByRole('tab', { name: 'Trazos', exact: true }).click();
+  await expect(page.locator('.strokes-panel .hanzi-character-meta')).toContainText('trazos');
+});
