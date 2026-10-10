@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { getCurrentUser, isAuthorizedAdmin, signInPath } from '@/app/auth';
 import { PinyinText } from './PinyinText';
 import { RecoveryRedirector } from './RecoveryRedirector';
+import { SiteNav } from './SiteNav';
 
 export async function SiteShell({ children }: { children: React.ReactNode }) {
   const user = await getCurrentUser();
@@ -10,16 +11,15 @@ export async function SiteShell({ children }: { children: React.ReactNode }) {
   return (
     <>
       <RecoveryRedirector/>
+      <a className="skip-link" href="#learning-content">Saltar al contenido</a>
       <header className="topbar">
-        <Link className="brand" href="/" aria-label="Míng, inicio"><span className="brand-mark" aria-hidden="true"><Hanzi>明</Hanzi></span><span><strong>Míng</strong><small>Mandarín activo</small></span></Link>
-        <nav className="desktop-nav" aria-label="Navegación principal">
-          <Link href="/study/l1-l2-l3-l4">Curso</Link><Link href="/study/l1-l2-l3-l4/radicals">Radicales</Link><Link href="/study/l1-l2-l3-l4/daily">Práctica</Link><Link href="/study/l1-l2-l3-l4/games">Juegos</Link><Link href="/progress">Progreso</Link>
-        </nav>
-        <Link className="profile-chip" href={user ? '/profile' : signInPath('/profile')}><span aria-hidden="true"><Hanzi>学</Hanzi></span><b>{user ? user.displayName : 'Guardar progreso'}</b></Link>
+        <Link prefetch={false} className="brand" href="/" aria-label="Míng, inicio"><span className="brand-mark" aria-hidden="true"><Hanzi>明</Hanzi></span><span><strong>Míng</strong><small>Mandarín activo</small></span></Link>
+        <SiteNav/>
+        <Link prefetch={false} className="profile-chip" href={user ? '/profile' : signInPath('/profile')} aria-label={user ? `Perfil de ${user.displayName}` : 'Guardar mi progreso'}><span aria-hidden="true"><Hanzi>学</Hanzi></span><b>{user ? user.displayName : 'Mi espacio'}</b></Link>
       </header>
-      {children}
-      <footer className="site-footer shell"><div><b><Hanzi>明 Míng</Hanzi></b><p>Lecciones 1–4 · aprendizaje persistente y verificable.</p></div><nav><Link href="/leaderboard">Ranking</Link><Link href="/errors">Errores</Link>{isAdmin && <><Link href="/admin/content">Fuentes</Link><Link href="/admin/images">Imágenes</Link><Link href="/admin/community">Comunidad</Link><Link href="/admin/analytics">Analítica</Link></>}</nav></footer>
-      <nav className="mobile-nav" aria-label="Navegación móvil"><Link href="/"><span>⌂</span>Inicio</Link><Link href="/study/l1-l2-l3-l4"><span><Hanzi>路</Hanzi></span>Curso</Link><Link href="/study/l1-l2-l3-l4/daily"><span><Hanzi>练</Hanzi></span>Práctica</Link><Link href="/study/l1-l2-l3-l4/games"><span><Hanzi>游</Hanzi></span>Juegos</Link><Link href="/progress"><span><Hanzi>升</Hanzi></span>Progreso</Link></nav>
+      <div id="learning-content" tabIndex={-1}>{children}</div>
+      <footer className="site-footer shell"><div><b><Hanzi>明</Hanzi> Míng<span className="footer-dot">·</span>Mandarín activo</b><p>Aprende con calma. Avanza con intención.</p></div><nav aria-label="Enlaces del pie de página"><Link prefetch={false} href="/course">Lecciones</Link><Link prefetch={false} href="/lesson/1/pinyin">Pronunciación</Link><Link prefetch={false} href="/errors">Mis repasos</Link><Link prefetch={false} href="/leaderboard">Ranking</Link>{isAdmin && <><Link prefetch={false} href="/admin/content">Fuentes</Link><Link prefetch={false} href="/admin/images">Imágenes</Link><Link prefetch={false} href="/admin/community">Comunidad</Link><Link prefetch={false} href="/admin/analytics">Analítica</Link></>}</nav></footer>
+      <SiteNav mobile/>
     </>
   );
 }

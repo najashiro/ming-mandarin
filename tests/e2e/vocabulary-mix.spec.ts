@@ -75,10 +75,14 @@ test('fixed deck survives reload, completes, reviews misses and starts a new seq
   await expect(page.locator('.vocabulary-mix-score')).toContainText('Respondidas: 2/10');
   const afterDouble = await page.evaluate(() => JSON.parse(localStorage.getItem('ming-vocabulary-v1:guest')!).sessions.l3);
   expect(afterDouble.answers).toHaveLength(2);
+  expect(afterDouble.index).toBe(2);
+  expect(afterDouble.revealed).toBe(false);
   expect(afterDouble.deck).toEqual(original.deck);
 
   for (let index = 2; index < 10; index += 1) {
-    await page.getByRole('button', { name: 'Ver respuesta', exact: true }).click();
+    const reveal = page.getByRole('button', { name: 'Ver respuesta', exact: true });
+    if (index === 2) await reveal.press('Enter');
+    else await reveal.click();
     await page.getByRole('button', { name: 'Lo sabía', exact: true }).click();
   }
   await expect(page.getByRole('heading', { name: 'Partida terminada' })).toBeVisible();

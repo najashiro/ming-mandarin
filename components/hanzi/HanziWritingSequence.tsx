@@ -36,7 +36,7 @@ export function HanziWritingSequence({ expected, pinyin, meaning, onComplete, sh
     if (index + 1 === characters.length) {
       if (finished.current) return;
       finished.current = true;
-      onComplete(completed.current === characters.length, { expected, completedCharacters: completed.current, attempts: attempts.current, failedCharacters: failures.current });
+      onComplete(completed.current === characters.length && failures.current.length === 0, { expected, completedCharacters: completed.current, attempts: attempts.current, failedCharacters: failures.current });
       return;
     }
     setIndex(index + 1);

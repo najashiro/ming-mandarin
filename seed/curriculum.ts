@@ -6,15 +6,16 @@ import { sentences as lesson1Sentences } from '@/seed/sentences';
 import { vocabulary as lesson1Vocabulary } from '@/seed/vocabulary';
 import { lesson4Vocabulary, lesson4Sentences, lesson4Grammar, lesson4Characters, lesson4Exercises, lesson4Units } from '@/seed/lesson4';
 import { normalizeAnswer, normalizePinyin } from '@/lib/pinyin';
+import { getStudyScopeLabel } from '@/lib/study-options';
 
 export const scopeDefinitions: Record<CurriculumScope, { label: string; shortLabel: string; lessonIds: LessonNumber[]; title: string; description: string }> = {
   l1: { label: 'Lección 1', shortLabel: 'L1', lessonIds: [1], title: '你最近怎么样？', description: 'Saludos, identidad y estados personales.' },
   l2: { label: 'Lección 2', shortLabel: 'L2', lessonIds: [2], title: '你是哪国人？', description: 'Nacionalidad, lenguas, presentaciones y comida.' },
   l4: { label: 'Lección 4', shortLabel: 'L4', lessonIds: [4], title: '你几点有课？ · 你们班有多少人？', description: 'Horarios, clases, actividades y cantidades.' },
-  'l1-l2-l3-l4': { label: 'Lecciones 1 + 2 + 3 + 4', shortLabel: 'L1–L4', lessonIds: [1,2,3,4], title: 'Repaso acumulativo L1–L4', description: 'Repasa el curso hasta la Lección 4.' },
+  'l1-l2-l3-l4': { label: getStudyScopeLabel('l1-l2-l3-l4'), shortLabel: getStudyScopeLabel('l1-l2-l3-l4'), lessonIds: [1,2,3,4], title: getStudyScopeLabel('l1-l2-l3-l4'), description: 'Repasa el curso hasta la Lección 4.' },
   l3: { label: 'Lección 3', shortLabel: 'L3', lessonIds: [3], title: '你家有几口人？', description: 'Familia, profesiones, clasificadores y edad.' },
-  'l1-l2': { label: 'Lecciones 1 + 2', shortLabel: 'L1 + L2', lessonIds: [1, 2], title: 'Repaso acumulativo L1 + L2', description: 'Integra identidad, estados, nacionalidad, lenguas y comida.' },
-  'l1-l2-l3': { label: 'Lecciones 1 + 2 + 3', shortLabel: 'L1 + L2 + L3', lessonIds: [1, 2, 3], title: 'Repaso acumulativo L1 + L2 + L3', description: 'Todo el corpus auditado del curso hasta la Lección 3.' },
+  'l1-l2': { label: getStudyScopeLabel('l1-l2'), shortLabel: getStudyScopeLabel('l1-l2'), lessonIds: [1, 2], title: getStudyScopeLabel('l1-l2'), description: 'Integra identidad, estados, nacionalidad, lenguas y comida.' },
+  'l1-l2-l3': { label: getStudyScopeLabel('l1-l2-l3'), shortLabel: getStudyScopeLabel('l1-l2-l3'), lessonIds: [1, 2, 3], title: getStudyScopeLabel('l1-l2-l3'), description: 'Todo el corpus auditado del curso hasta la Lección 3.' },
 };
 
 export const curriculumScopes = Object.keys(scopeDefinitions) as CurriculumScope[];

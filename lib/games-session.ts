@@ -8,6 +8,20 @@ export function sessionOrder(size: number, random: () => number = Math.random) {
   // Keep the first recommended item; sample every other item without replacement.
   return size ? [0,...tail] : [];
 }
+/** Shuffle token identities, keeping repeated words independently selectable. */
+export function shuffledBlockOrder(blocks: readonly string[], random: () => number = Math.random): number[] {
+  const order = blocks.map((_, index) => index);
+  for (let index = order.length - 1; index > 0; index--) {
+    const other = Math.floor(random() * (index + 1));
+    [order[index], order[other]] = [order[other], order[index]];
+  }
+  // Do not hand the learner the completed sentence by chance. A rotation also
+  // handles repeated tokens; identical-only trays have no distinct word order.
+  if (order.every((index, position) => blocks[index] === blocks[position]) && new Set(blocks).size > 1) {
+    order.push(order.shift()!);
+  }
+  return order;
+}
 export function retryQueue(queue: number[], index: number, total: number) {
   if (total < 2) return queue;
   const next = [...queue];

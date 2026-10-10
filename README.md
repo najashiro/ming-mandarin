@@ -1,6 +1,8 @@
 # Míng · Mandarín activo
 
-Plataforma educativa para las Lecciones 1–3 del curso básico: **你最近怎么样？**, **你是哪国人？** y **你家有几口人？**. Incluye cinco alcances independientes (L1, L2, L3, L1+L2 y L1+L2+L3), contenido trazable, MP3 estáticos, Hanzi, cinco experiencias de juego, SRS, errores y exámenes de 100 puntos.
+Plataforma educativa para las Lecciones 1–4 del curso básico, con el corpus aprobado 2.2.0. Incluye lecciones individuales y repasos acumulativos, MP3 estáticos, diálogos, Hanzi, radicales, juegos, repaso personal y exámenes de 100 puntos. La lección 4 añade horarios, clases, actividades y cantidades, con sus lecturas y ejercicios.
+
+La portada permite empezar o retomar la última sección visitada. `/course` organiza la ruta y `/practice` permite elegir la lección y la habilidad. La navegación se adapta a laptop y celular. Las decisiones de diseño y la ilustración se documentan en `docs/design/learning-redesign.md`.
 
 ## Arquitectura
 

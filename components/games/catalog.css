@@ -1,0 +1,50 @@
+.arcade-catalog[hidden], .arcade-arena[hidden] { display: none; }
+.game-catalog-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-block: 34px 24px; outline: none; }
+.game-catalog-heading h2 { font: 400 30px/1.2 Georgia, serif; letter-spacing: -.025em; margin: 8px 0 10px; }
+.game-catalog-heading p:not(.eyebrow) { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
+.game-scope-note { display: inline-flex; align-items: center; gap: 9px; flex-shrink: 0; padding: 11px 14px; border-radius: 8px; background: #e7ecdf; font-size: 12px; }
+.ming-games-grid { gap: 20px; }
+.ming-games-grid article { border: 1px solid var(--line); border-radius: 14px; padding: 22px; gap: 14px; }
+.ming-games-grid article:nth-child(n) { background: #fffdf8; }
+.ming-games-grid article > .game-skill-label { position: static; font-size: 10px; line-height: 1.5; letter-spacing: .075em; font-weight: 650; color: var(--jade); text-transform: uppercase; padding-right: 22px; }
+.ming-games-grid article h2 { font: 400 26px/1.2 Georgia, serif; letter-spacing: -.025em; }
+.ming-games-grid article p { min-height: 0; color: var(--muted); font-size: 13px; line-height: 1.75; }
+.ming-games-grid .game-thumbnail { height: 160px; border-radius: 10px; }
+.ming-games-grid .game-symbol { display: flex; flex-direction: column; gap: 12px; background: #e6ecdf; }
+.ming-games-grid .game-symbol svg { width: 56px; height: 56px; stroke-width: 1.2; color: #285c48; }
+.ming-games-grid .game-symbol > span { font-size: 12px; letter-spacing: .01em; color: #526753; }
+.ming-games-grid .thumbnail-conversation { background: #f3e5db; }
+.ming-games-grid .thumbnail-hanzi { background: #f0ebd7; }
+.ming-games-grid .thumbnail-story { background: #e6eceb; }
+.ming-games-grid .game-symbol.thumbnail-conversation > span { background: transparent; padding: 0; }
+.ming-games-grid article > .game-coverage { color: #637261; font-size: 11px; padding: 0; line-height: 1.6; }
+.ming-games-grid article .game-share-status { position: absolute; top: 48px; right: 18px; z-index: 1; border-radius: 6px; background: #fffdf8; font-size: 11px; }
+.ming-games-grid article > .game-play { display: flex; justify-content: space-between; align-items: center; width: 100%; min-height: 48px; margin-top: auto; padding: 16px 0 0; border: 0; border-top: 1px solid var(--line); border-radius: 0; background: transparent; color: var(--jade-dark); font-size: 13px; font-weight: 650; cursor: pointer; text-align: left; }
+.game-session-context { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 22px; color: var(--muted); font-size: 12px; }
+.game-session-context > span + span { border-left: 1px solid #b9c6b5; padding-left: 10px; }
+.arcade-arena:has(.mixed-challenge) .game-session-context { color: #c9ded4; }
+.arcade-arena { scroll-margin-top: 96px; outline: none; margin-top: 24px; }
+.arcade-arena:has(.new-game-shell) { border: 1px solid var(--line); border-radius: 16px; background: #fffdf8; }
+.new-game-shell > header { align-items: flex-start; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid var(--line); }
+.new-game-shell > header h2 { font: 400 32px/1.2 Georgia, serif; margin: 0 0 10px; }
+.new-game-shell > header .game-objective { margin: 0; font-size: 13px; color: var(--muted); max-width: 590px; }
+.new-game-shell > header > button { flex-shrink: 0; }
+.study-tools { background: #f0f1e7; border-radius: 12px; margin-bottom: 28px; }
+.study-tools summary { font-size: 14px; font-weight: 600; }
+.study-tools > p { color: var(--muted); font-size: 13px; line-height: 1.7; }
+@media (max-width: 950px) { .ming-games-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) {
+  main:has(.arcade-root) > .page-hero { padding-block: 24px; }
+  .game-catalog-heading { display: block; margin-block: 18px; }
+  .game-catalog-heading .eyebrow, .game-catalog-heading .game-scope-note { display: none; }
+  .game-catalog-heading h2 { font-size: 27px; }
+  .game-catalog-heading p:not(.eyebrow) { font-size: 13px; }
+  .game-scope-note { margin-top: 16px; }
+  .ming-games-grid { grid-template-columns: 1fr; gap: 16px; margin-top: 20px; }
+  .ming-games-grid article { padding: 20px; gap: 12px; }
+  .ming-games-grid .game-thumbnail { height: 160px; }
+  .arcade-arena { scroll-margin-top: 78px; }
+  .new-game-shell > header h2 { font-size: 26px; }
+  .new-game-shell > header > button { padding-inline: 12px; }
+  .new-game-shell > header .game-objective { font-size: 12px; }
+}

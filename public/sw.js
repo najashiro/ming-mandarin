@@ -1,6 +1,6 @@
-const CACHE = 'ming-public-v6';
+const CACHE = 'ming-public-v7';
 const PUBLIC_ROUTES = new Set([
-  '/', '/lesson/1', '/lesson/1/vocabulary', '/lesson/1/pinyin', '/lesson/1/listening',
+  '/', '/course', '/practice', '/lesson/1', '/lesson/1/vocabulary', '/lesson/1/pinyin', '/lesson/1/listening',
   '/lesson/1/grammar', '/lesson/1/hanzi', '/lesson/1/dialogues', '/lesson/1/reading',
   '/lesson/1/games', '/leaderboard',
 ]);

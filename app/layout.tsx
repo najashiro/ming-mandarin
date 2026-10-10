@@ -1,8 +1,9 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Noto_Serif_SC } from 'next/font/google';
 import { AnalyticsTracker } from '@/components/AnalyticsTracker';
 import { PwaRegister } from '@/components/PwaRegister';
 import './globals.css';
+import './learning.css';
 
 // A single variable family preserves the existing intermediate and bold weights.
 // Disable the Latin preload and metric fallback: this font is only used for Hanzi.
@@ -22,19 +23,21 @@ function canonicalOrigin() {
   return vercel ? `https://${vercel}` : 'http://localhost:3000';
 }
 
+export const viewport: Viewport = { width: 'device-width', initialScale: 1, viewportFit: 'cover', themeColor: '#1a4233' };
+
 export const metadata: Metadata = {
   metadataBase: new URL(canonicalOrigin()),
   title: { default: 'Míng · Mandarín activo L1–L4', template: '%s · Míng' },
-  description: 'Domina 你最近怎么样？ con práctica activa, pinyin, tonos, diálogos y hanzi.',
+  description: 'Aprende mandarín a tu ritmo. Cuatro lecciones con vocabulario, audio, diálogos, escritura Hanzi y juegos para practicar cada día.',
   applicationName: 'Míng · Mandarín activo',
   manifest: '/manifest.webmanifest',
   openGraph: {
-    title: 'Míng · 你最近怎么样？',
+    title: 'Míng · Tu próximo paso habla chino',
     description: 'Lecciones 1–4 de mandarín: práctica activa, exámenes por alcance y progreso persistente.',
     locale: 'es_PE', type: 'website',
-    images: [{ url: '/og.png', width: 1536, height: 1024, alt: 'Míng, Mandarín activo' }],
+    images: [{ url: '/images/ming-study.webp', width: 1536, height: 1024, alt: 'Míng: un espacio para aprender mandarín a tu ritmo' }],
   },
-  twitter: { card: 'summary_large_image', title: 'Míng · Mandarín activo', description: 'Domina las Lecciones 1 a 4 con práctica acumulativa.', images: ['/og.png'] },
+  twitter: { card: 'summary_large_image', title: 'Míng · Mandarín activo', description: 'Aprende mandarín con cuatro lecciones y práctica a tu ritmo.', images: ['/images/ming-study.webp'] },
   icons: { icon: '/favicon.svg' },
 };
 

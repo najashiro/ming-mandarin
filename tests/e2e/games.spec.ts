@@ -45,7 +45,7 @@ test('hora: el interruptor HARD conserva una sola pista y mueve únicamente la p
   await page.goto('/study/l1/games');
   await openGame(page,'hora');
   const practice=page.getByRole('button',{name:/Practicar/});
-  const toggle=page.getByRole('switch',{name:'Modo HARD'});
+  const toggle=page.getByRole('switch',{name:'Modo avanzado'});
   const track=toggle.locator(':scope > .time-switch-track');
   const knob=track.locator(':scope > .time-switch-knob');
   await expect(toggle).toHaveCount(1);await expect(track).toHaveCount(1);await expect(knob).toHaveCount(1);
@@ -67,7 +67,7 @@ test('hora: el interruptor HARD conserva una sola pista y mueve únicamente la p
 test('hora HARD ordena la corrección en filas',async({page})=>{
   await page.addInitScript(() => { Math.random=()=>0; });
   await page.setViewportSize({width:320,height:844});await page.goto('/study/l1/games');await openGame(page,'hora');
-  await page.getByRole('switch',{name:'Modo HARD'}).click();await page.getByRole('button',{name:/Comenzar/}).click();
+  await page.getByRole('switch',{name:'Modo avanzado'}).click();await page.getByRole('button',{name:/Comenzar/}).click();
   await page.getByRole('button',{name:'Añadir 差'}).click();await page.locator('.time-answer').nth(1).click();await page.getByRole('button',{name:'Añadir 差'}).click();
   await page.getByRole('button',{name:/Confirmar/}).click();await expect(page.locator('.time-correction')).toBeVisible();
   const rows=await page.locator('.time-alternatives article').evaluateAll(items=>items.map(item=>item.getBoundingClientRect().toJSON()));
@@ -83,7 +83,7 @@ test('hora HARD lee las dos respuestas correctas y resalta solo la que suena',as
     (window as unknown as {__timePlays:string[]}).__timePlays=[];
     HTMLMediaElement.prototype.play=function(){(window as unknown as {__timePlays:string[]}).__timePlays.push(this.src);window.setTimeout(()=>this.dispatchEvent(new Event('ended')),1500);return Promise.resolve();};
   });
-  await page.goto('/study/l1/games');await openGame(page,'hora');await page.getByRole('switch',{name:'Modo HARD'}).click();await page.getByRole('button',{name:/Comenzar/}).click();
+  await page.goto('/study/l1/games');await openGame(page,'hora');await page.getByRole('switch',{name:'Modo avanzado'}).click();await page.getByRole('button',{name:/Comenzar/}).click();
   for(const token of ['一','点','十','五','分'])await page.getByRole('button',{name:`Añadir ${token}`}).click();
   await page.locator('.time-answer').nth(1).click();for(const token of ['一','点','一','刻'])await page.getByRole('button',{name:`Añadir ${token}`}).click();
   await page.evaluate(() => {(window as unknown as {__timePlays:string[]}).__timePlays=[];});await page.getByRole('button',{name:/Confirmar/}).click();
@@ -178,7 +178,7 @@ test('audio por gesto y fallos Safari no bloquean; repaso conserva fichas y velo
   await expect(page.getByRole('button', { name: /No se pudo reproducir. Reintentar/ })).toBeVisible();
   await page.getByRole('button',{name:'Cerrar',exact:true}).click();
   await page.locator('.study-tools summary').click();
-  await page.getByRole('button',{name:'Voltear flashcard'}).click();
-  await page.getByRole('combobox').selectOption('0.7');
-  await expect(page.getByRole('combobox')).toHaveValue('0.7');
+  await page.getByRole('button',{name:'Mostrar u ocultar el significado'}).click();
+  await page.locator('.study-tools').getByRole('combobox').selectOption('0.7');
+  await expect(page.locator('.study-tools').getByRole('combobox')).toHaveValue('0.7');
 });

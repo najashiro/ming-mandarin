@@ -1,0 +1,8 @@
+.pnpm-store/
+.next/
+node_modules/
+graphify-out/
+tmp/
+test-results/
+Base de Datos/
+MING_KNOWLEDGE/

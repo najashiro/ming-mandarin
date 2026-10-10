@@ -71,6 +71,8 @@
 .vocabulary-card.is-reversed .vocabulary-word, .vocabulary-card.is-reversed .vocabulary-word .linked-hanzi { color:var(--vocab-reverse-word); font-weight:400; font-size:var(--vocab-reverse-word-size); border-bottom-color:transparent; }
 .vocabulary-example { padding-top:0; }
 .vocabulary-example-text { font-size:var(--vocab-sentence-size); line-height:1.5; margin:0; }
+/* The first line starts at the content edge, without the general paragraph gap. */
+.vocabulary-card .vocabulary-example-text { margin-top:0; }
 .vocabulary-example-target { color:var(--vocab-target); background:transparent; font-weight:var(--vocab-target-weight); }
 .vocabulary-example-target .linked-hanzi { color:inherit; font-weight:inherit; border-bottom-color:#b3442455; }
 .active-vocabulary .vocabulary-next-example { margin-top:.4rem; min-height:var(--vocab-touch); padding:.25rem .65rem; font-size:.78rem; border-radius:999px; background:#f5f8f2; border-color:#c4d1c0; color:#415d46; }

@@ -1,8 +1,9 @@
 'use client';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { studyScopeOptions, getStudyScopeLabel } from '@/lib/study-options';
 import type { CurriculumScope } from '@/data/types';
-import { getVocabularyMixSet, vocabularyCatalog, vocabularyMixScopeLabels, vocabularyMixScopes } from '@/lib/vocabulary';
+import { getVocabularyMixSet, vocabularyCatalog } from '@/lib/vocabulary';
 import { evaluateMix, isMixComplete, mixStats, startMix, type MixResultSnapshot } from '@/lib/vocabulary-review';
 import type { VocabularyMediaEntry } from '@/lib/vocabulary-media';
 import { useVocabularyState } from './useVocabularyState';
@@ -106,8 +107,8 @@ export function VocabularyMix({ scope, userId, route, media }: { scope: Curricul
   }
 
   const settings = <div className="vocabulary-mix-settings">
-    <label>Contenido<select aria-label="Contenido" value={scope} onChange={event => router.push(`/study/${event.target.value}/games/vocabulary-mix`)}>{vocabularyMixScopes.map(value => <option key={value} value={value}>{vocabularyMixScopeLabels[value]}</option>)}</select></label>
-    <label>Palabras<select aria-label="Palabras" value={size} onChange={event => setSizeOverride(Number(event.target.value))}>{sizes.map(value => <option key={value} value={value}>{value}</option>)}</select></label>
+    <label>Contenido<select aria-label="Contenido" disabled={!ready} value={scope} onChange={event => router.push(`/study/${event.target.value}/games/vocabulary-mix`)}>{!studyScopeOptions.some(option => option.value === scope) && <option value={scope} disabled hidden>{getStudyScopeLabel(scope)}</option>}{studyScopeOptions.map(({ value, label }) => <option key={value} value={value}>{label}</option>)}</select></label>
+    <label>Palabras<select aria-label="Palabras" disabled={!ready} value={size} onChange={event => setSizeOverride(Number(event.target.value))}>{sizes.map(value => <option key={value} value={value}>{value}</option>)}</select></label>
   </div>;
 
   if (!session) return <section className="vocabulary-mix vocabulary-mix-setup" aria-label="Preparar Vocabulario Mix">
@@ -122,7 +123,7 @@ export function VocabularyMix({ scope, userId, route, media }: { scope: Curricul
 
   if (complete) return <section className="vocabulary-mix vocabulary-mix-results" aria-label="Resultados de Vocabulario Mix">
     <h2>Partida terminada</h2>
-    <p>{vocabularyMixScopeLabels[session.scope]} · {session.actualSize} {session.actualSize === 1 ? 'palabra' : 'palabras'}</p>
+    <p>{getStudyScopeLabel(session.scope)} · {session.actualSize} {session.actualSize === 1 ? 'palabra' : 'palabras'}</p>
     <Scoreboard {...stats}/>
     <p>{stats.percentage}% de aciertos autoevaluados.</p>
     {session.originResult && <p className="vocabulary-mix-origin">La ronda original se conserva por separado.</p>}
@@ -134,7 +135,7 @@ export function VocabularyMix({ scope, userId, route, media }: { scope: Curricul
   if (session.paused) return <section className="vocabulary-mix vocabulary-mix-paused" aria-label="Vocabulario Mix en pausa">
     <Scoreboard {...stats}/>
     <h2>Partida en pausa</h2>
-    <p>{vocabularyMixScopeLabels[session.scope]} · {session.actualSize} palabras</p>
+    <p>{getStudyScopeLabel(session.scope)} · {session.actualSize} palabras</p>
     <button type="button" onClick={() => patchSession({ paused: false })}>Reanudar</button>
     <button type="button" onClick={() => { stopMandarinAudio(); update(previous => { const sessions = { ...previous.sessions }; delete sessions[scope]; return { ...previous, sessions }; }); }}>Finalizar partida en curso</button>
   </section>;
@@ -142,7 +143,7 @@ export function VocabularyMix({ scope, userId, route, media }: { scope: Curricul
   if (!word) return <p role="status">La partida guardada ya no es compatible. Preparando una nueva configuración…</p>;
 
   return <section className="vocabulary-mix" aria-label="Vocabulario Mix">
-    <header className="vocabulary-mix-round-header"><span>{vocabularyMixScopeLabels[session.scope]} · {session.kind === 'review' ? 'Repaso' : `${session.actualSize} palabras`}</span><button type="button" onClick={() => { stopMandarinAudio(); patchSession({ paused: true }); }}>Pausar</button></header>
+    <header className="vocabulary-mix-round-header"><span>{getStudyScopeLabel(session.scope)} · {session.kind === 'review' ? 'Repaso' : `${session.actualSize} palabras`}</span><button type="button" onClick={() => { stopMandarinAudio(); patchSession({ paused: true }); }}>Pausar</button></header>
     <Scoreboard {...stats}/>
     <article key={`${session.id}-${session.index}`} className="vocabulary-mix-card">
       {!session.revealed ? <div className="vocabulary-mix-question">
@@ -150,7 +151,12 @@ export function VocabularyMix({ scope, userId, route, media }: { scope: Curricul
         <SpeakButton text={word.hanzi} reading={word.pinyin} compact label="Escuchar" ariaLabel={`Escuchar ${word.hanzi}`} autoPlayKey={autoPlayTurn === turnKey ? autoPlayTurn : undefined} onAutoPlayBlocked={() => setBlockedTurn(turnKey)}/>
         {autoPlayBlocked && <small role="status">Pulsa el audio para escuchar.</small>}
       </div> : <VocabularyCard word={word} scope={scope} route={currentRoute || route} back={back} hideTranslation={false} media={media} onFlip={() => setBackState({ turn: turnKey, value: !back })} showFavorite={false}/>}
-      {!session.revealed ? <button type="button" className="vocabulary-reveal" onClick={() => patchSession({ revealed: true })}>Ver respuesta</button> : <div className="vocabulary-evaluation">
+      {!session.revealed ? <button type="button" className="vocabulary-reveal" onClick={event => {
+        // A second click on a rating can land on this newly rendered button.
+        // Keyboard activation has detail 0 and must continue to work.
+        if (event.detail > 1) return;
+        patchSession({ revealed: true });
+      }}>Ver respuesta</button> : <div className="vocabulary-evaluation">
         <button type="button" className="is-known" aria-label="Lo sabía" onClick={() => evaluate(true)}><Hanzi>知道</Hanzi><span>Lo sabía</span></button>
         <button type="button" className="is-unknown" aria-label="No lo sabía" onClick={() => evaluate(false)}><Hanzi>不知道</Hanzi><span>No lo sabía</span></button>
       </div>}
