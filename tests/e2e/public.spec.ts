@@ -22,7 +22,7 @@ test('el arcade y el audio estático están disponibles sin cuenta', async ({ pa
   await expect(page.locator('.game-grid article').nth(0).getByRole('heading')).toHaveText('Reto Mixto');
   await expect(page.locator('.game-grid article').nth(1).getByRole('heading')).toHaveText('Vocabulario Mix');
   await expect(page.locator('.game-grid article').nth(2).getByRole('heading')).toHaveText('¿Qué hora es?');
-  await expect(page.locator('.game-grid article').nth(3).getByRole('heading')).toHaveText('Escena Viva');
+  await expect(page.locator('.game-grid article').nth(3).getByRole('heading')).toHaveText('Panda Quest');
   await page.locator('.game-grid article').filter({ hasText: 'Escena Viva' }).getByRole('button', { name: /Jugar/ }).click();
   await expect(page.locator('#arena')).toContainText('Escena Viva');
   await page.goto('/lesson/1/name');
