@@ -2,6 +2,14 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  images: {
+    localPatterns: [
+      { pathname: '/**', search: '' },
+      // Published vocabulary images carry a content hash in ?v=.
+      // Allow version queries only in this directory of static public assets.
+      { pathname: '/images/vocabulary/**' },
+    ],
+  },
   experimental: {
     typedEnv: true,
   },
