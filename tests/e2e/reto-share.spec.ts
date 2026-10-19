@@ -16,7 +16,7 @@ test('el icono comparte el enlace directo y la URL abre Reto Mixto', async ({ pa
   await expect(share).toHaveAttribute('data-share-path', directPath);
   await share.click();
   await expect(card.getByRole('status')).toHaveText('Enlace copiado');
-  expect(await page.evaluate(() => (window as typeof window & { __sharedRetoUrl?: string }).__sharedRetoUrl)).toBe(`http://localhost:3000${directPath}`);
+  expect(await page.evaluate(() => (window as typeof window & { __sharedRetoUrl?: string }).__sharedRetoUrl)).toBe(new URL(directPath, page.url()).toString());
 
   await page.goto(directPath);
   await expect(page.locator('.mixed-challenge.setup')).toBeVisible();
@@ -32,5 +32,5 @@ test('el icono usa la hoja nativa de compartir cuando está disponible', async (
   });
   await page.goto('/study/l1-l2-l3/games');
   await page.locator('.game-grid article').filter({ hasText: 'Reto Mixto' }).getByRole('button', { name: 'Compartir Reto Mixto' }).click();
-  await expect.poll(() => page.evaluate(() => (window as typeof window & { __sharedRetoData?: ShareData }).__sharedRetoData?.url)).toBe(`http://localhost:3000${directPath}`);
+  await expect.poll(() => page.evaluate(() => (window as typeof window & { __sharedRetoData?: ShareData }).__sharedRetoData?.url)).toBe(new URL(directPath, page.url()).toString());
 });

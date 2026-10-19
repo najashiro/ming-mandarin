@@ -6,17 +6,15 @@ import type { CharacterEntry, CurriculumScope, Exercise, ListeningEntry } from '
 import { arcadeGames as games } from '@/data/arcade-games';
 import { trackAnalyticsEvent } from '@/lib/analytics/client';
 import { RetoMixto } from './RetoMixto';
-import { LiveSceneGame } from './games/live-scene/LiveSceneGame';
 import { ConversationGame } from './games/conversation/ConversationGame';
 import { HanziLabGame } from './games/hanzi-lab/HanziLabGame';
-import { StoryDetective } from './games/story-detective/StoryDetective';
 import { StudyTools } from './games/StudyTools';
 import { MingIcon, type MingIconName } from './MingIcon';
 import { getStudyScopeLabel } from '@/lib/study-options';
 import { TimeGame } from './games/time/TimeGame';
 import './games/games.css';
 import './games/catalog.css';
-const gameIcons: Record<string, MingIconName> = { scene: 'sun', conversation: 'chat', hanzi: 'write', story: 'book' };
+const gameIcons: Record<string, MingIconName> = { conversation: 'chat', hanzi: 'write' };
 
 type Props = { exercises: Exercise[]; hanziCharacters: CharacterEntry[]; listeningEntries: ListeningEntry[]; scope: CurriculumScope; playerName:string; canCompete:boolean; initialGame?: 'reto-mixto' | 'hora' };
 export function Arcade({ hanziCharacters, listeningEntries, scope, playerName, canCompete, initialGame }: Props) {
@@ -81,10 +79,8 @@ export function Arcade({ hanziCharacters, listeningEntries, scope, playerName, c
       {item.kind === 'vocabulary' ? <Link prefetch={false} className="game-play" href={`/study/${scope}/games/vocabulary-mix`}>Jugar <MingIcon name="arrow" width="18" height="18"/></Link> : <button className="game-play" type="button" onClick={event => play(index, event.currentTarget)}>Jugar <MingIcon name="arrow" width="18" height="18"/></button>}
     </article>)}</section><StudyTools entries={listeningEntries}/></div>
     <section id="arena" className="arcade-arena shell" tabIndex={-1} hidden={!game} aria-label={game ? "Juego: " + game.name : undefined}>{game && <div className="game-session-context"><span>{getStudyScopeLabel(scope)}</span><span>{game.skill}</span></div>}{!game ? null : game.kind === 'mixed' ? <RetoMixto key={scope} scope={scope} onClose={close}/> : <div className="new-game-shell" key={`${scope}-${selected}-${session}`}><header><div><h2>{game.name}</h2><p className="game-objective">{game.description}</p></div><button type="button" onClick={close}>Cerrar</button></header>
-      {game.kind === 'scene' && <LiveSceneGame scope={scope} characters={hanziCharacters}/>}
       {game.kind === 'conversation' && <ConversationGame scope={scope} characters={hanziCharacters}/>}
       {game.kind === 'hanzi' && <HanziLabGame scope={scope} characters={hanziCharacters}/>}
-      {game.kind === 'story' && <StoryDetective scope={scope} characters={hanziCharacters}/>}
       {game.kind === 'time' && <TimeGame playerName={playerName} canCompete={canCompete}/>}
     </div>}</section>
   </div>;

@@ -6,8 +6,9 @@ test('el catálogo explica las habilidades y se adapta sin desbordes', async ({ 
   for (const width of [320, 390, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto('/study/l1-l2-l3-l4/games');
-    await expect(page.locator('.game-grid article')).toHaveCount(7);
+    await expect(page.locator('.game-grid article')).toHaveCount(5);
     await expect(page.locator('.arcade-catalog')).toBeVisible();
+    await expect(page.locator('[data-game="escena-viva"], [data-game="historia-detective"]')).toHaveCount(0);
     await expect(page.locator('#arena')).toBeHidden();
     await expect(page.locator('.game-catalog-heading')).toContainText('Repaso general');
     await expect(page.locator('[data-game="conversacion"]')).toContainText('completa el diálogo');
@@ -22,7 +23,7 @@ test('el catálogo explica las habilidades y se adapta sin desbordes', async ({ 
 
 test('abrir un juego aparta el catálogo, enfoca la actividad y devuelve el foco al salir', async ({ page }) => {
   await page.goto('/study/l3/games');
-  for (const id of ['reto-mixto', 'escena-viva', 'hora']) {
+  for (const id of ['reto-mixto', 'conversacion', 'hora']) {
     const launcher = page.locator('[data-game="' + id + '"]').getByRole('button', { name: /Jugar/ });
     await launcher.click();
     await expect(page.locator('.arcade-catalog')).toBeHidden();

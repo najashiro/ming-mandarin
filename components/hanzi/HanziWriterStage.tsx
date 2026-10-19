@@ -26,6 +26,7 @@ export type HanziWriterStageHandle = {
 
 type Props = {
   character: string;
+  ariaLabel?: string;
   showCharacter?: boolean;
   showOutline?: boolean;
   speed?: number;
@@ -39,6 +40,7 @@ type Props = {
 
 export const HanziWriterStage = forwardRef<HanziWriterStageHandle, Props>(function HanziWriterStage({
   character,
+  ariaLabel,
   showCharacter = true,
   showOutline = true,
   speed = 1,
@@ -157,7 +159,7 @@ export const HanziWriterStage = forwardRef<HanziWriterStageHandle, Props>(functi
 
   return <div className={`hanzi-writer-frame ${interactive ? 'is-interactive' : ''}`}>
     <div className="mizi-grid" aria-hidden="true"><i /><i /><i /><i /></div>
-    <div ref={targetRef} className="hanzi-writer-target" data-testid="hanzi-writer" aria-label={`Área de escritura para ${character}`} />
+    <div ref={targetRef} className="hanzi-writer-target" data-testid="hanzi-writer" aria-label={ariaLabel ?? `Área de escritura para ${character}`} />
     {status === 'loading' && <p className="hanzi-stage-status">Cargando trazos…</p>}
     {status === 'error' && <p className="hanzi-stage-status error">Datos no disponibles.</p>}
   </div>;
