@@ -1,3 +1,24 @@
+# Revisión de juegos · 19 de octubre de 2026
+
+El catálogo activo se reduce a cinco experiencias: Reto Mixto, Vocabulario Mix, ¿Qué hora es?, Conversación y Hanzi Lab. Los tres primeros se mantienen sin cambios en sus motores, datos, recursos y reglas.
+
+| Juego revisado | Diagnóstico | Decisión |
+| --- | --- | --- |
+| Escena Viva | Repite elegir/ordenar/escribir frases; tocar personas o platos apenas cambia la evaluación. La escena no aporta una decisión comunicativa suficiente. | Retirado del catálogo y del montaje de Arcade. Se conserva el código histórico y sus identificadores; no se borra progreso. |
+| Historia Detective | Localiza frases entre cuatro enunciados. Construir y Producir permiten copiar la solución que permanece visible; no ofrecen el reto anunciado. | Retirado del catálogo y del montaje de Arcade. La comprensión lectora sigue disponible en el curso. |
+| Conversación | Turnos sueltos y una traducción completa visible antes de responder; la inversión exige una pregunta única pese a su ambigüedad. | Misiones guiadas con papel, objetivo y datos, turnos coherentes, ayuda solicitada y devolución específica. Se conserva el corpus aprobado y sus respuestas aceptadas. |
+| Hanzi Lab | Revelado premia reconocimiento independiente después de mostrar la solución; Componentes confunde concatenar piezas con componer visualmente. Hay filtraciones de la respuesta en etiquetas de audio. | Retirar Revelado y Componentes puntuados; concentrar escucha, significado, radicales auditados y escritura. Ocultar respuestas en etiquetas, usar contexto para homófonos, duración real y un criterio de escritura consistente con el laboratorio. |
+
+Criterio de calidad: cada actividad debe pedir una acción lingüística identificable, tener información suficiente para resolverla, explicar el error y distinguir recuperación, reconocimiento y ayuda. Un diseño sobrio por sí solo no vuelve educativo un juego.
+
+La orientación a tareas y roles toma como referencia el [enfoque orientado a la acción del Consejo de Europa](https://www.coe.int/en/web/common-european-framework-reference-languages/action-orientation-in-the-classroom). La revisión y los reintentos se apoyan en [práctica de recuperación con retroalimentación](https://www.retrievalpractice.org/feedback/). Son criterios de diseño; no constituyen una validación experimental de Ming ni garantizan aprendizaje.
+
+No se crea conversación libre ni evaluación de pronunciación: las misiones trabajan modelos escritos del curso. No se añaden frases chinas, audios generados, cambios de esquema ni migraciones.
+
+---
+
+## Registro histórico anterior (no describe el catálogo actual)
+
 # Auditoría y reestructuración de Juegos Míng
 
 ## Decisión arquitectónica

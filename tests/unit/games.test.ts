@@ -8,9 +8,9 @@ import { gameEventId, parseGameEventId, retryQueue, sessionOrder } from '@/lib/g
 import { hanziGlyphHref, resolveHanziGlyph } from '@/lib/hanzi/navigation';
 import baseline from '../fixtures/reto-mixto-baseline.json';
 
-describe('siete experiencias curriculares', () => {
+describe('cinco experiencias curriculares', () => {
   it('mantiene Reto Mixto primero y añade el juego de horas', () => {
-    expect(arcadeGames.map(game => game.id)).toEqual(['reto-mixto','vocabulario-mix','hora','escena-viva','conversacion','hanzi-lab','historia-detective']);
+    expect(arcadeGames.map(game => game.id)).toEqual(['reto-mixto','vocabulario-mix','hora','conversacion','hanzi-lab']);
   });
   it('conserva el contenido del motor, datos y visuales de Reto Mixto', () => {
     for (const [path, hash] of Object.entries(baseline).filter(([path]) => !['components/RetoMixto.tsx', 'data/reto-mixto.ts'].includes(path))) expect(createHash('sha256').update(readFileSync(path, 'utf8').replace(/\r\n/g, '\n')).digest('hex'),path).toBe(hash);
@@ -74,7 +74,7 @@ describe('siete experiencias curriculares', () => {
     expect(getCurriculum('l2').characters.filter(item=>item.hanzi==='点')).toHaveLength(1);
     const source = readFileSync('components/games/hanzi-lab/HanziLabGame.tsx','utf8');
     expect(source).toContain('HanziWriterStage');
-    expect(source).toContain('componentsAudited');
+    expect(source).not.toContain("mode === 'Revelado'");
     expect(source).toContain('radicalAudited');
     expect(source).not.toContain('new Audio');
   });

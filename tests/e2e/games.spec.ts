@@ -4,12 +4,12 @@ async function openGame(page: import('@playwright/test').Page, id: string) {
   await page.locator(`[data-game="${id}"]`).getByRole('button',{name:/Jugar/}).click();
   await expect(page.locator('.new-game-shell')).toBeVisible();
 }
-for (const width of [320,375,390,430,1366]) test(`siete experiencias sin desbordes a ${width}px`, async ({ page }, info) => {
+for (const width of [320,375,390,430,1366]) test(`cinco experiencias sin desbordes a ${width}px`, async ({ page }, info) => {
   await page.setViewportSize({width,height:844});
   await page.goto('/study/l3/games');
-  await expect(page.locator('.game-grid article')).toHaveCount(7);
+  await expect(page.locator('.game-grid article')).toHaveCount(5);
   await expect(page.locator('.game-grid article').first()).toContainText('Reto Mixto');
-  for (const id of ['escena-viva','conversacion','hanzi-lab','historia-detective','hora']) {
+  for (const id of ['conversacion','hanzi-lab','hora']) {
     await openGame(page,id);
     expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
     const buttons = await page.locator('.new-game-shell button:visible').evaluateAll(elements => elements.map(element => element.getBoundingClientRect().height));
@@ -139,32 +139,24 @@ test('Hanzi Lab valida trazos reales y conserva progreso local anterior', async 
   await expect.poll(() => page.evaluate((hanzi) => JSON.parse(localStorage.getItem('ming-hanzi-progress-v1') || '{}')[`c-${hanzi}:writing`]?.completed,character)).toBe(1);
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem('ming-hanzi-progress-v1') || '{}')['c-保:writing'].attempts)).toBe(7);
 });
-test('bloques por toque, producción, evidencia y modos Hanzi son interactivos', async ({ page, isMobile }) => {
+test('conversación usa bloques táctiles y Hanzi conserva escritura real', async ({ page, isMobile }) => {
   await page.goto('/study/l3/games');
-  await openGame(page,'escena-viva');
-  await page.getByRole('button',{name:/Construir/}).click();
+  await openGame(page,'conversacion');
+  await page.getByRole('button',{name:'Construir',exact:true}).click();
   const token = page.locator('.blocks-tray button').first();
   if (isMobile) await token.tap(); else await token.click();
   await expect(page.locator('.blocks-target button')).toHaveCount(1);
   await page.locator('.blocks-target button').click();
   await expect(page.locator('.blocks-target button')).toHaveCount(0);
-  await page.getByRole('button',{name:/Producir/}).click();
+  await page.getByRole('button',{name:'Producir',exact:true}).click();
   await page.getByRole('textbox',{name:'Tu respuesta'}).fill('我家有四口人');
-  await page.getByRole('button',{name:'Comprobar',exact:true}).click();
+  await page.getByRole('button',{name:'Responder',exact:true}).click();
   await expect(page.locator('.game-feedback.correct')).toBeVisible();
   await expect(page.locator('.game-feedback a').first()).toHaveAttribute('href',/character=.+&focus=glyph/);
   await page.getByRole('button',{name:'Cerrar',exact:true}).click();
-  await openGame(page,'conversacion');
-  await page.getByRole('checkbox').check();
-  await expect(page.locator('.dialogue-stage')).toContainText('我家有四口人');
-  await page.getByRole('button',{name:'Cerrar',exact:true}).click();
-  await openGame(page,'historia-detective');
-  await page.locator('.story-panels button').filter({hasText:'我家有四口人'}).click();
-  await expect(page.locator('.game-feedback.correct')).toBeVisible();
-  await page.getByRole('button',{name:'Cerrar',exact:true}).click();
   await openGame(page,'hanzi-lab');
-  await page.getByRole('button',{name:'Revelado',exact:true}).click();
-  await expect(page.getByRole('button',{name:/Revelar otro trazo/})).toBeVisible();
+  await expect(page.getByRole('button',{name:'Revelado',exact:true})).toHaveCount(0);
+  await expect(page.getByRole('button',{name:'Componentes',exact:true})).toHaveCount(0);
   await page.getByRole('button',{name:'Escritura',exact:true}).click();
   await expect(page.getByRole('button',{name:'Escribir con dedo o ratón'})).toBeEnabled();
   await page.getByRole('button',{name:'Escribir con dedo o ratón'}).click();
@@ -175,7 +167,7 @@ test('audio por gesto y fallos Safari no bloquean; repaso conserva fichas y velo
   await page.goto('/study/l1/games');
   await openGame(page,'hanzi-lab');
   await page.getByRole('button',{name:'Escuchar carácter oculto'}).click();
-  await expect(page.getByRole('button', { name: /No se pudo reproducir. Reintentar/ })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Reintentar audio', exact: true })).toBeVisible();
   await page.getByRole('button',{name:'Cerrar',exact:true}).click();
   await page.locator('.study-tools summary').click();
   await page.getByRole('button',{name:'Mostrar u ocultar el significado'}).click();
