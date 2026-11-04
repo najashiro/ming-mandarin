@@ -1,4 +1,5 @@
 'use client';
+import { BirthdayGame } from './games/birthday/BirthdayGame';
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -69,7 +70,7 @@ export function Arcade({ hanziCharacters, listeningEntries, scope, playerName, c
   return <div className="arcade-root" ref={rootRef}>
     <div className="arcade-catalog" hidden={Boolean(game)}>
     <div className="game-catalog-heading shell" tabIndex={-1}><div><p className="eyebrow">ELIGE QUÉ QUIERES PRACTICAR</p><h2>Una habilidad, un reto.</h2><p>Responde a tu ritmo, revisa la solución y vuelve a intentarlo.</p></div><span className="game-scope-note"><MingIcon name="book" width="17" height="17"/>{getStudyScopeLabel(scope)}</span></div>
-    <section className="game-grid ming-games-grid shell" aria-label="Juegos disponibles">{games.map((item, index) => scope === 'l4' && ['scene','conversation','story'].includes(item.kind) ? null : <article key={item.id} data-game={item.id}>
+    <section className="game-grid ming-games-grid shell" aria-label="Juegos disponibles">{games.map((item, index) => (scope === 'l4' && ['scene','conversation','story'].includes(item.kind)) || (item.kind === 'birthday' && !['l5','l1-l2-l3-l4-l5'].includes(scope)) ? null : <article key={item.id} data-game={item.id}>
       <span className="game-skill-label">{item.skill}</span>
       {(item.kind === 'mixed' || item.kind === 'time') && <button className="game-share-button" type="button" onClick={() => void shareGame(item.id)} aria-label={`Compartir ${item.name}`} title={`Compartir ${item.name}`} data-share-path={`/study/${scope}/games?game=${item.id}`}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.3 10.8 7.4-4.6m-7.4 7 7.4 4.6"/></svg></button>}
       {item.cover ? <div className="game-thumbnail game-cover" aria-hidden="true"><Image src={item.cover} alt="" fill loading={index === 0 ? 'eager' : 'lazy'} sizes="(max-width: 440px) 100vw, (max-width: 700px) 50vw, 33vw"/></div> : <div className={`game-thumbnail game-symbol thumbnail-${item.kind}`} aria-hidden="true"><MingIcon name={gameIcons[item.kind] ?? 'games'}/><span>{item.skill}</span></div>}
@@ -81,6 +82,7 @@ export function Arcade({ hanziCharacters, listeningEntries, scope, playerName, c
     <section id="arena" className="arcade-arena shell" tabIndex={-1} hidden={!game} aria-label={game ? "Juego: " + game.name : undefined}>{game && <div className="game-session-context"><span>{getStudyScopeLabel(scope)}</span><span>{game.skill}</span></div>}{!game ? null : game.kind === 'mixed' ? <RetoMixto key={scope} scope={scope} onClose={close}/> : <div className="new-game-shell" key={`${scope}-${selected}-${session}`}><header><div><h2>{game.name}</h2><p className="game-objective">{game.description}</p></div><button type="button" onClick={close}>Cerrar</button></header>
       {game.kind === 'conversation' && <ConversationGame scope={scope} characters={hanziCharacters}/>}
       {game.kind === 'hanzi' && <HanziLabGame scope={scope} characters={hanziCharacters}/>}
+      {game.kind === 'birthday' && <BirthdayGame scope={scope}/>}
       {game.kind === 'time' && <TimeGame playerName={playerName} canCompete={canCompete}/>}
     </div>}</section>
   </div>;

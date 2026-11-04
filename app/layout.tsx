@@ -33,11 +33,11 @@ export const metadata: Metadata = {
   manifest: '/manifest.webmanifest',
   openGraph: {
     title: 'Míng · Tu próximo paso habla chino',
-    description: 'Lecciones 1–4 de mandarín: práctica activa, exámenes por alcance y progreso persistente.',
+    description: 'Lecciones 1–5 de mandarín: práctica activa, exámenes por alcance y progreso persistente.',
     locale: 'es_PE', type: 'website',
     images: [{ url: '/images/ming-study.webp', width: 1536, height: 1024, alt: 'Míng: un espacio para aprender mandarín a tu ritmo' }],
   },
-  twitter: { card: 'summary_large_image', title: 'Míng · Mandarín activo', description: 'Aprende mandarín con cuatro lecciones y práctica a tu ritmo.', images: ['/images/ming-study.webp'] },
+  twitter: { card: 'summary_large_image', title: 'Míng · Mandarín activo', description: 'Aprende mandarín con cinco lecciones y práctica a tu ritmo.', images: ['/images/ming-study.webp'] },
   icons: { icon: '/favicon.svg' },
 };
 

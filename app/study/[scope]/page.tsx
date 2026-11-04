@@ -11,16 +11,16 @@ export default async function ScopePage({ params }: { params: Promise<{ scope: s
   const { scope } = await params;
   if (!isCurriculumScope(scope)) notFound();
   const data = getCurriculum(scope);
-  const hasL4 = data.definition.lessonIds.includes(4);
+  const hasReadings = data.definition.lessonIds.some(lesson => lesson >= 4);
   const modules: { href: string; icon: MingIconName; title: string; description: string; detail: string }[] = [
     { href: 'vocabulary', icon: 'book', title: 'Conoce las palabras', description: 'Escucha y descubre las palabras que vas a usar.', detail: getVocabularySet(scope).length + ' palabras' },
     { href: 'dialogues', icon: 'chat', title: 'Escucha los diálogos', description: 'Encuentra las palabras en una conversación.', detail: 'Conversaciones del libro' },
     { href: 'grammar', icon: 'practice', title: 'Entiende cómo funciona', description: 'Conecta las ideas con ejemplos y estructuras.', detail: data.grammar.length + ' puntos de gramática' },
     { href: 'hanzi', icon: 'write', title: 'Escribe los caracteres', description: 'Sigue los trazos y después inténtalo sin ayuda.', detail: data.characters.length + ' hanzi' },
     { href: 'radicals', icon: 'sun', title: 'Descubre los radicales', description: 'Reconoce las piezas que forman los caracteres.', detail: 'Explorar y practicar' },
-    ...(hasL4 ? [
-      { href: 'readings', icon: 'book' as const, title: 'Lee y comprende', description: 'Lleva lo aprendido a textos más largos.', detail: '6 lecturas · Lección 4' },
-      { href: 'exercises', icon: 'check' as const, title: 'Explora los ejercicios', description: 'Practica con las actividades de la lección.', detail: 'Lección 4' },
+    ...(hasReadings ? [
+      { href: 'readings', icon: 'book' as const, title: 'Lee y comprende', description: 'Lleva lo aprendido a textos más largos.', detail: 'Lecturas de la lección' },
+      { href: 'exercises', icon: 'check' as const, title: 'Explora los ejercicios', description: 'Practica con las actividades de la lección.', detail: 'Actividades del libro y del cuaderno' },
     ] : []),
   ];
   return <SiteShell><main id="main-content" className="study-overview">

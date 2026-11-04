@@ -1,0 +1,2046 @@
+{
+  "version": 1,
+  "corpusFingerprint": "b12f24715b7f3ae8591f233c3dd02cff5b61b414b94701b2ee70d74c234cc7b7",
+  "clips": [
+    {
+      "id": "l5-4e46d08b558a9968",
+      "file": "l5-4e46d08b558a9968.mp3",
+      "input": "星期日",
+      "expectedPinyin": "xīngqīrì",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: xīngqīrì"
+    },
+    {
+      "id": "l5-b4ece076571f7dc1",
+      "file": "l5-b4ece076571f7dc1.mp3",
+      "input": "星期",
+      "expectedPinyin": "xīngqī",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: xīngqī"
+    },
+    {
+      "id": "l5-8b7d66a0e6070b98",
+      "file": "l5-8b7d66a0e6070b98.mp3",
+      "input": "事儿",
+      "expectedPinyin": "shìr",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: shìr"
+    },
+    {
+      "id": "l5-475af85ad61dc7aa",
+      "file": "l5-475af85ad61dc7aa.mp3",
+      "input": "生日",
+      "expectedPinyin": "shēngrì",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: shēngrì"
+    },
+    {
+      "id": "l5-e59c83c8a7737216",
+      "file": "l5-e59c83c8a7737216.mp3",
+      "input": "日",
+      "expectedPinyin": "rì",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: rì"
+    },
+    {
+      "id": "l5-e06f3004874904c1",
+      "file": "l5-e06f3004874904c1.mp3",
+      "input": "聚会",
+      "expectedPinyin": "jùhuì",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: jùhuì"
+    },
+    {
+      "id": "l5-cee5dd9435e5f367",
+      "file": "l5-cee5dd9435e5f367.mp3",
+      "input": "大家",
+      "expectedPinyin": "dàjiā",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: dàjiā"
+    },
+    {
+      "id": "l5-81137e44eb13ada9",
+      "file": "l5-81137e44eb13ada9.mp3",
+      "input": "唱歌",
+      "expectedPinyin": "chàng gē",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: chàng gē"
+    },
+    {
+      "id": "l5-0137e7f288e70221",
+      "file": "l5-0137e7f288e70221.mp3",
+      "input": "唱",
+      "expectedPinyin": "chàng",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: chàng"
+    },
+    {
+      "id": "l5-03b0fe48bc29ca8b",
+      "file": "l5-03b0fe48bc29ca8b.mp3",
+      "input": "歌",
+      "expectedPinyin": "gē",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: gē"
+    },
+    {
+      "id": "l5-aedabe8f39c8705a",
+      "file": "l5-aedabe8f39c8705a.mp3",
+      "input": "跳舞",
+      "expectedPinyin": "tiàowǔ",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: tiàowǔ"
+    },
+    {
+      "id": "l5-50041f365983f635",
+      "file": "l5-50041f365983f635.mp3",
+      "input": "跳",
+      "expectedPinyin": "tiào",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: tiào"
+    },
+    {
+      "id": "l5-8561307b726d057d",
+      "file": "l5-8561307b726d057d.mp3",
+      "input": "舞",
+      "expectedPinyin": "wǔ",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: wǔ"
+    },
+    {
+      "id": "l5-a3bd0102f8685e9a",
+      "file": "l5-a3bd0102f8685e9a.mp3",
+      "input": "参加",
+      "expectedPinyin": "cānjiā",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: cānjiā"
+    },
+    {
+      "id": "l5-23b3d32e9b93dd0a",
+      "file": "l5-23b3d32e9b93dd0a.mp3",
+      "input": "号",
+      "expectedPinyin": "hào",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: hào"
+    },
+    {
+      "id": "l5-3b11839ecccb5901",
+      "file": "l5-3b11839ecccb5901.mp3",
+      "input": "月",
+      "expectedPinyin": "yuè",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: yuè"
+    },
+    {
+      "id": "l5-96d3947cf040bed4",
+      "file": "l5-96d3947cf040bed4.mp3",
+      "input": "不好意思",
+      "expectedPinyin": "bù hǎoyìsi",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: bù hǎoyìsi"
+    },
+    {
+      "id": "l5-a9629be0a7c33729",
+      "file": "l5-a9629be0a7c33729.mp3",
+      "input": "可惜",
+      "expectedPinyin": "kěxī",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: kěxī"
+    },
+    {
+      "id": "l5-5f3385a7a5d2d87e",
+      "file": "l5-5f3385a7a5d2d87e.mp3",
+      "input": "送",
+      "expectedPinyin": "sòng",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: sòng"
+    },
+    {
+      "id": "l5-8af0d033f8013535",
+      "file": "l5-8af0d033f8013535.mp3",
+      "input": "礼物",
+      "expectedPinyin": "lǐwù",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: lǐwù"
+    },
+    {
+      "id": "l5-473074e0dd912d99",
+      "file": "l5-473074e0dd912d99.mp3",
+      "input": "蛋糕",
+      "expectedPinyin": "dàngāo",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: dàngāo"
+    },
+    {
+      "id": "l5-dd3f90b0fa7b9d4c",
+      "file": "l5-dd3f90b0fa7b9d4c.mp3",
+      "input": "盒",
+      "expectedPinyin": "hé",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: hé"
+    },
+    {
+      "id": "l5-a4377883ca62d77f",
+      "file": "l5-a4377883ca62d77f.mp3",
+      "input": "巧克力",
+      "expectedPinyin": "qiǎokèlì",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: qiǎokèlì"
+    },
+    {
+      "id": "l5-df08b602c31e22e3",
+      "file": "l5-df08b602c31e22e3.mp3",
+      "input": "多大",
+      "expectedPinyin": "duō dà",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: duō dà"
+    },
+    {
+      "id": "l5-c2a9f4663caa9bb0",
+      "file": "l5-c2a9f4663caa9bb0.mp3",
+      "input": "出生",
+      "expectedPinyin": "chūshēng",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: chūshēng"
+    },
+    {
+      "id": "l5-acc8b2a99748f8d5",
+      "file": "l5-acc8b2a99748f8d5.mp3",
+      "input": "属",
+      "expectedPinyin": "shǔ",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: shǔ"
+    },
+    {
+      "id": "l5-8d4fc302d499998a",
+      "file": "l5-8d4fc302d499998a.mp3",
+      "input": "龙",
+      "expectedPinyin": "lóng",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: lóng"
+    },
+    {
+      "id": "l5-fcfb4a15458faa57",
+      "file": "l5-fcfb4a15458faa57.mp3",
+      "input": "中文",
+      "expectedPinyin": "Zhōngwén",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Zhōngwén"
+    },
+    {
+      "id": "l5-2c7c5d11fa9d82ec",
+      "file": "l5-2c7c5d11fa9d82ec.mp3",
+      "input": "就",
+      "expectedPinyin": "jiù",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: jiù"
+    },
+    {
+      "id": "l5-8306afb4df467624",
+      "file": "l5-8306afb4df467624.mp3",
+      "input": "英国",
+      "expectedPinyin": "Yīngguó",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Yīngguó"
+    },
+    {
+      "id": "l5-66383547bb863de4",
+      "file": "l5-66383547bb863de4.mp3",
+      "input": "林强",
+      "expectedPinyin": "Lín Qiáng",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Lín Qiáng"
+    },
+    {
+      "id": "l5-e64ac79a8a60a824",
+      "file": "l5-e64ac79a8a60a824.mp3",
+      "input": "欢迎",
+      "expectedPinyin": "huānyíng",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: huānyíng"
+    },
+    {
+      "id": "l5-e09f35a86ee16f1f",
+      "file": "l5-e09f35a86ee16f1f.mp3",
+      "input": "快乐",
+      "expectedPinyin": "kuàilè",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: kuàilè"
+    },
+    {
+      "id": "l5-4ea459bfabeedf25",
+      "file": "l5-4ea459bfabeedf25.mp3",
+      "input": "不客气",
+      "expectedPinyin": "bú kèqi",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: bú kèqi"
+    },
+    {
+      "id": "l5-46746d341df7c1f8",
+      "file": "l5-46746d341df7c1f8.mp3",
+      "input": "客气",
+      "expectedPinyin": "kèqi",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: kèqi"
+    },
+    {
+      "id": "l5-78f6937e92778262",
+      "file": "l5-78f6937e92778262.mp3",
+      "input": "祝",
+      "expectedPinyin": "zhù",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: zhù"
+    },
+    {
+      "id": "l5-901f00d84c29df33",
+      "file": "l5-901f00d84c29df33.mp3",
+      "input": "介绍",
+      "expectedPinyin": "jièshào",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: jièshào"
+    },
+    {
+      "id": "l5-e7e9f04dbb6621f0",
+      "file": "l5-e7e9f04dbb6621f0.mp3",
+      "input": "一下",
+      "expectedPinyin": "yíxià",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: yíxià"
+    },
+    {
+      "id": "l5-cf1725f8f6dcf24a",
+      "file": "l5-cf1725f8f6dcf24a.mp3",
+      "input": "常常",
+      "expectedPinyin": "chángcháng",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: chángcháng"
+    },
+    {
+      "id": "l5-e91eba34f95fd85d",
+      "file": "l5-e91eba34f95fd85d.mp3",
+      "input": "常",
+      "expectedPinyin": "cháng",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: cháng"
+    },
+    {
+      "id": "l5-8c035ab94a745f92",
+      "file": "l5-8c035ab94a745f92.mp3",
+      "input": "教",
+      "expectedPinyin": "jiāo",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: jiāo"
+    },
+    {
+      "id": "l5-f76a958e8ee1f726",
+      "file": "l5-f76a958e8ee1f726.mp3",
+      "input": "写",
+      "expectedPinyin": "xiě",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: xiě"
+    },
+    {
+      "id": "l5-1486eb5494a85d84",
+      "file": "l5-1486eb5494a85d84.mp3",
+      "input": "昨天",
+      "expectedPinyin": "zuótiān",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: zuótiān"
+    },
+    {
+      "id": "l5-f99ddbba5ee8d062",
+      "file": "l5-f99ddbba5ee8d062.mp3",
+      "input": "寿面",
+      "expectedPinyin": "shòumiàn",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: shòumiàn"
+    },
+    {
+      "id": "l5-b87049bc36726a0e",
+      "file": "l5-b87049bc36726a0e.mp3",
+      "input": "一会儿",
+      "expectedPinyin": "yíhuìr",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: yíhuìr"
+    },
+    {
+      "id": "l5-6f39e555dae8c1a4",
+      "file": "l5-6f39e555dae8c1a4.mp3",
+      "input": "咱们",
+      "expectedPinyin": "zánmen",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: zánmen"
+    },
+    {
+      "id": "l5-ced2e8af0e363f74",
+      "file": "l5-ced2e8af0e363f74.mp3",
+      "input": "干杯",
+      "expectedPinyin": "gānbēi",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: gānbēi"
+    },
+    {
+      "id": "l5-167c1aa9f824aa1d",
+      "file": "l5-167c1aa9f824aa1d.mp3",
+      "input": "前天",
+      "expectedPinyin": "qiántiān",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: qiántiān"
+    },
+    {
+      "id": "l5-e7ad07d5998a846b",
+      "file": "l5-e7ad07d5998a846b.mp3",
+      "input": "后天",
+      "expectedPinyin": "hòutiān",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: hòutiān"
+    },
+    {
+      "id": "l5-751bc64ba37e137d",
+      "file": "l5-751bc64ba37e137d.mp3",
+      "input": "上星期一",
+      "expectedPinyin": "shàng xīngqīyī",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: shàng xīngqīyī"
+    },
+    {
+      "id": "l5-36401ee8928ba049",
+      "file": "l5-36401ee8928ba049.mp3",
+      "input": "下星期一",
+      "expectedPinyin": "xià xīngqīyī",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: xià xīngqīyī"
+    },
+    {
+      "id": "l5-37f6c1814aa1178d",
+      "file": "l5-37f6c1814aa1178d.mp3",
+      "input": "上个月",
+      "expectedPinyin": "shàng ge yuè",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: shàng ge yuè"
+    },
+    {
+      "id": "l5-fef6cddfe38e6e7b",
+      "file": "l5-fef6cddfe38e6e7b.mp3",
+      "input": "下个月",
+      "expectedPinyin": "xià ge yuè",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: xià ge yuè"
+    },
+    {
+      "id": "l5-dc494085fd40d427",
+      "file": "l5-dc494085fd40d427.mp3",
+      "input": "音乐会",
+      "expectedPinyin": "yīnyuèhuì",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: yīnyuèhuì"
+    },
+    {
+      "id": "l5-459a9e85b5c22da0",
+      "file": "l5-459a9e85b5c22da0.mp3",
+      "input": "老鼠",
+      "expectedPinyin": "lǎoshǔ",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: lǎoshǔ"
+    },
+    {
+      "id": "l5-61de36d009abbe3d",
+      "file": "l5-61de36d009abbe3d.mp3",
+      "input": "牛",
+      "expectedPinyin": "niú",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: niú"
+    },
+    {
+      "id": "l5-4c0ee08ac8bac6ea",
+      "file": "l5-4c0ee08ac8bac6ea.mp3",
+      "input": "老虎",
+      "expectedPinyin": "lǎohǔ",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: lǎohǔ"
+    },
+    {
+      "id": "l5-30b9597d578e33a7",
+      "file": "l5-30b9597d578e33a7.mp3",
+      "input": "蛇",
+      "expectedPinyin": "shé",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: shé"
+    },
+    {
+      "id": "l5-eace98e13d4e401f",
+      "file": "l5-eace98e13d4e401f.mp3",
+      "input": "马",
+      "expectedPinyin": "mǎ",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: mǎ"
+    },
+    {
+      "id": "l5-aab5dce1e42163b4",
+      "file": "l5-aab5dce1e42163b4.mp3",
+      "input": "羊",
+      "expectedPinyin": "yáng",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: yáng"
+    },
+    {
+      "id": "l5-6bf03dfd52373775",
+      "file": "l5-6bf03dfd52373775.mp3",
+      "input": "猴",
+      "expectedPinyin": "hóu",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: hóu"
+    },
+    {
+      "id": "l5-9170326f567d290a",
+      "file": "l5-9170326f567d290a.mp3",
+      "input": "鸡",
+      "expectedPinyin": "jī",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: jī"
+    },
+    {
+      "id": "l5-cbd4068a9aef4fa9",
+      "file": "l5-cbd4068a9aef4fa9.mp3",
+      "input": "一月",
+      "expectedPinyin": "yī yuè",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: yī yuè"
+    },
+    {
+      "id": "l5-0e07a623edc9d72e",
+      "file": "l5-0e07a623edc9d72e.mp3",
+      "input": "二月",
+      "expectedPinyin": "èr yuè",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: èr yuè"
+    },
+    {
+      "id": "l5-d32f1a2015b8bdbc",
+      "file": "l5-d32f1a2015b8bdbc.mp3",
+      "input": "三月",
+      "expectedPinyin": "sān yuè",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: sān yuè"
+    },
+    {
+      "id": "l5-992ed740b92f2406",
+      "file": "l5-992ed740b92f2406.mp3",
+      "input": "四月",
+      "expectedPinyin": "sì yuè",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: sì yuè"
+    },
+    {
+      "id": "l5-e047eb0c8a8ef75a",
+      "file": "l5-e047eb0c8a8ef75a.mp3",
+      "input": "五月",
+      "expectedPinyin": "wǔ yuè",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: wǔ yuè"
+    },
+    {
+      "id": "l5-6c31a1277326489b",
+      "file": "l5-6c31a1277326489b.mp3",
+      "input": "六月",
+      "expectedPinyin": "liù yuè",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: liù yuè"
+    },
+    {
+      "id": "l5-6f2b08a110247d27",
+      "file": "l5-6f2b08a110247d27.mp3",
+      "input": "七月",
+      "expectedPinyin": "qī yuè",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: qī yuè"
+    },
+    {
+      "id": "l5-3288910f080e3a47",
+      "file": "l5-3288910f080e3a47.mp3",
+      "input": "八月",
+      "expectedPinyin": "bā yuè",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: bā yuè"
+    },
+    {
+      "id": "l5-5faa972b5fc21a96",
+      "file": "l5-5faa972b5fc21a96.mp3",
+      "input": "九月",
+      "expectedPinyin": "jiǔ yuè",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: jiǔ yuè"
+    },
+    {
+      "id": "l5-71be42234172b0b0",
+      "file": "l5-71be42234172b0b0.mp3",
+      "input": "十月",
+      "expectedPinyin": "shí yuè",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: shí yuè"
+    },
+    {
+      "id": "l5-e3914147d7a01d11",
+      "file": "l5-e3914147d7a01d11.mp3",
+      "input": "十一月",
+      "expectedPinyin": "shíyī yuè",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: shíyī yuè"
+    },
+    {
+      "id": "l5-33aa2f306987f87c",
+      "file": "l5-33aa2f306987f87c.mp3",
+      "input": "十二月",
+      "expectedPinyin": "shí'èr yuè",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: shí'èr yuè"
+    },
+    {
+      "id": "l5-d0d887d4af0e2351",
+      "file": "l5-d0d887d4af0e2351.mp3",
+      "input": "星期一",
+      "expectedPinyin": "xīngqīyī",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: xīngqīyī"
+    },
+    {
+      "id": "l5-e1313fcbe68072fd",
+      "file": "l5-e1313fcbe68072fd.mp3",
+      "input": "星期二",
+      "expectedPinyin": "xīngqīèr",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: xīngqīèr"
+    },
+    {
+      "id": "l5-3722079b6b2da9c5",
+      "file": "l5-3722079b6b2da9c5.mp3",
+      "input": "星期三",
+      "expectedPinyin": "xīngqīsān",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: xīngqīsān"
+    },
+    {
+      "id": "l5-e998670d43b635e0",
+      "file": "l5-e998670d43b635e0.mp3",
+      "input": "星期四",
+      "expectedPinyin": "xīngqīsì",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: xīngqīsì"
+    },
+    {
+      "id": "l5-9ea81a24b52d2503",
+      "file": "l5-9ea81a24b52d2503.mp3",
+      "input": "星期五",
+      "expectedPinyin": "xīngqīwǔ",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: xīngqīwǔ"
+    },
+    {
+      "id": "l5-d308d0101414c236",
+      "file": "l5-d308d0101414c236.mp3",
+      "input": "星期六",
+      "expectedPinyin": "xīngqīliù",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: xīngqīliù"
+    },
+    {
+      "id": "l5-cbfc4b892463af07",
+      "file": "l5-cbfc4b892463af07.mp3",
+      "input": "星期天",
+      "expectedPinyin": "xīngqītiān",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: xīngqītiān"
+    },
+    {
+      "id": "l5-d413cc7bf74837f8",
+      "file": "l5-d413cc7bf74837f8.mp3",
+      "input": "周末",
+      "expectedPinyin": "zhōumò",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: zhōumò"
+    },
+    {
+      "id": "l5-7adb5a62c887f24c",
+      "file": "l5-7adb5a62c887f24c.mp3",
+      "input": "鼠",
+      "expectedPinyin": "shǔ",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: shǔ"
+    },
+    {
+      "id": "l5-23b4727beb3f3461",
+      "file": "l5-23b4727beb3f3461.mp3",
+      "input": "虎",
+      "expectedPinyin": "hǔ",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: hǔ"
+    },
+    {
+      "id": "l5-f3632a3bc9547785",
+      "file": "l5-f3632a3bc9547785.mp3",
+      "input": "兔",
+      "expectedPinyin": "tù",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: tù"
+    },
+    {
+      "id": "l5-64c6c23ed0873c8b",
+      "file": "l5-64c6c23ed0873c8b.mp3",
+      "input": "狗",
+      "expectedPinyin": "gǒu",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: gǒu"
+    },
+    {
+      "id": "l5-4dee88612eb8c6fa",
+      "file": "l5-4dee88612eb8c6fa.mp3",
+      "input": "猪",
+      "expectedPinyin": "zhū",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: zhū"
+    },
+    {
+      "id": "l5-44b72e9b83f56f43",
+      "file": "l5-44b72e9b83f56f43.mp3",
+      "input": "林娜，星期日你有时间吗？",
+      "expectedPinyin": "Lín Nà, xīngqīrì nǐ yǒu shíjiān ma?",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Lín Nà, xīngqīrì nǐ yǒu shíjiān ma?"
+    },
+    {
+      "id": "l5-ecb2d53dd7f871f0",
+      "file": "l5-ecb2d53dd7f871f0.mp3",
+      "input": "什么事儿？",
+      "expectedPinyin": "Shénme shìr?",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Shénme shìr?"
+    },
+    {
+      "id": "l5-1c50f93779eceb55",
+      "file": "l5-1c50f93779eceb55.mp3",
+      "input": "这个星期日是我朋友的生日。我们有一个生日聚会，大家一起唱歌、跳舞，你参加不参加？",
+      "expectedPinyin": "Zhège xīngqīrì shì wǒ péngyou de shēngrì. Wǒmen yǒu yí ge shēngrì jùhuì, dàjiā yìqǐ chàng gē, tiàowǔ, nǐ cānjiā bu cānjiā?",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Zhège xīngqīrì shì wǒ péngyou de shēngrì. Wǒmen yǒu yí ge shēngrì jùhuì, dàjiā yìqǐ chàng gē, tiàowǔ, nǐ cānjiā bu cānjiā?"
+    },
+    {
+      "id": "l5-ae72252d4d2e378e",
+      "file": "l5-ae72252d4d2e378e.mp3",
+      "input": "这个星期日几号？",
+      "expectedPinyin": "Zhège xīngqīrì jǐ hào?",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Zhège xīngqīrì jǐ hào?"
+    },
+    {
+      "id": "l5-fb57f4549f6e4ea4",
+      "file": "l5-fb57f4549f6e4ea4.mp3",
+      "input": "十月二十五号。",
+      "expectedPinyin": "Shí yuè èrshíwǔ hào.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Shí yuè èrshíwǔ hào."
+    },
+    {
+      "id": "l5-298eb1d8d710c132",
+      "file": "l5-298eb1d8d710c132.mp3",
+      "input": "真不好意思。这一天也是我哥哥的生日，他也有个生日聚会。",
+      "expectedPinyin": "Zhēn bù hǎoyìsi. Zhè yì tiān yě shì wǒ gēge de shēngrì, tā yě yǒu ge shēngrì jùhuì.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Zhēn bù hǎoyìsi. Zhè yì tiān yě shì wǒ gēge de shēngrì, tā yě yǒu ge shēngrì jùhuì."
+    },
+    {
+      "id": "l5-3792255c4d8134b6",
+      "file": "l5-3792255c4d8134b6.mp3",
+      "input": "真可惜！你送你哥哥什么礼物？",
+      "expectedPinyin": "Zhēn kěxī! Nǐ sòng nǐ gēge shénme lǐwù?",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Zhēn kěxī! Nǐ sòng nǐ gēge shénme lǐwù?"
+    },
+    {
+      "id": "l5-3c7071ee71ff889d",
+      "file": "l5-3c7071ee71ff889d.mp3",
+      "input": "我送他一个生日蛋糕。你送朋友什么礼物？",
+      "expectedPinyin": "Wǒ sòng tā yí ge shēngrì dàngāo. Nǐ sòng péngyou shénme lǐwù?",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ sòng tā yí ge shēngrì dàngāo. Nǐ sòng péngyou shénme lǐwù?"
+    },
+    {
+      "id": "l5-787c2e1cf198cebc",
+      "file": "l5-787c2e1cf198cebc.mp3",
+      "input": "两盒巧克力。你哥哥今年多大？",
+      "expectedPinyin": "Liǎng hé qiǎokèlì. Nǐ gēge jīnnián duō dà?",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Liǎng hé qiǎokèlì. Nǐ gēge jīnnián duō dà?"
+    },
+    {
+      "id": "l5-12ded09d237704c9",
+      "file": "l5-12ded09d237704c9.mp3",
+      "input": "他一九八八年出生，今年三十二岁。",
+      "expectedPinyin": "Tā yī jiǔ bā bā nián chūshēng, jīnnián sānshí'èr suì.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā yī jiǔ bā bā nián chūshēng, jīnnián sānshí'èr suì."
+    },
+    {
+      "id": "l5-5a4ae6bf695be73f",
+      "file": "l5-5a4ae6bf695be73f.mp3",
+      "input": "真的？我朋友也三十二岁，属龙。他也是英国人。",
+      "expectedPinyin": "Zhēn de? Wǒ péngyou yě sānshí'èr suì, shǔ lóng. Tā yě shì Yīngguó rén.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Zhēn de? Wǒ péngyou yě sānshí'èr suì, shǔ lóng. Tā yě shì Yīngguó rén."
+    },
+    {
+      "id": "l5-f5e76ecbf639c9f4",
+      "file": "l5-f5e76ecbf639c9f4.mp3",
+      "input": "你朋友叫什么名字？",
+      "expectedPinyin": "Nǐ péngyou jiào shénme míngzi?",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Nǐ péngyou jiào shénme míngzi?"
+    },
+    {
+      "id": "l5-883ab6d49d99bb8f",
+      "file": "l5-883ab6d49d99bb8f.mp3",
+      "input": "他的中文名字叫林强。",
+      "expectedPinyin": "Tā de Zhōngwén míngzi jiào Lín Qiáng.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā de Zhōngwén míngzi jiào Lín Qiáng."
+    },
+    {
+      "id": "l5-eadbce31c77c53a0",
+      "file": "l5-eadbce31c77c53a0.mp3",
+      "input": "他就是我哥哥！",
+      "expectedPinyin": "Tā jiù shì wǒ gēge!",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā jiù shì wǒ gēge!"
+    },
+    {
+      "id": "l5-2eaaed9b44e5da78",
+      "file": "l5-2eaaed9b44e5da78.mp3",
+      "input": "你们好，欢迎，欢迎！",
+      "expectedPinyin": "Nǐmen hǎo, huānyíng, huānyíng!",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Nǐmen hǎo, huānyíng, huānyíng!"
+    },
+    {
+      "id": "l5-5a6ee053aa73f0d0",
+      "file": "l5-5a6ee053aa73f0d0.mp3",
+      "input": "生日快乐！这是你的生日礼物。",
+      "expectedPinyin": "Shēngrì kuàilè! Zhè shì nǐ de shēngrì lǐwù.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Shēngrì kuàilè! Zhè shì nǐ de shēngrì lǐwù."
+    },
+    {
+      "id": "l5-b18468b2120fc58f",
+      "file": "l5-b18468b2120fc58f.mp3",
+      "input": "谢谢你们，小云、宋华。",
+      "expectedPinyin": "Xièxie nǐmen, Xiǎoyún, Sòng Huá.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Xièxie nǐmen, Xiǎoyún, Sòng Huá."
+    },
+    {
+      "id": "l5-9f224af7a563a939",
+      "file": "l5-9f224af7a563a939.mp3",
+      "input": "不客气。",
+      "expectedPinyin": "Bú kèqi.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Bú kèqi."
+    },
+    {
+      "id": "l5-adb52ab59d36b3bd",
+      "file": "l5-adb52ab59d36b3bd.mp3",
+      "input": "你们来，我特别高兴。",
+      "expectedPinyin": "Nǐmen lái, wǒ tèbié gāoxìng.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Nǐmen lái, wǒ tèbié gāoxìng."
+    },
+    {
+      "id": "l5-072a48d89b8b39d3",
+      "file": "l5-072a48d89b8b39d3.mp3",
+      "input": "哥哥，祝你生日快乐！",
+      "expectedPinyin": "Gēge, zhù nǐ shēngrì kuàilè!",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Gēge, zhù nǐ shēngrì kuàilè!"
+    },
+    {
+      "id": "l5-a8e52473bf3075f4",
+      "file": "l5-a8e52473bf3075f4.mp3",
+      "input": "谢谢！我来介绍一下，这是……",
+      "expectedPinyin": "Xièxie! Wǒ lái jièshào yíxià, zhè shì…",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Xièxie! Wǒ lái jièshào yíxià, zhè shì…"
+    },
+    {
+      "id": "l5-a9e1bee131e1da11",
+      "file": "l5-a9e1bee131e1da11.mp3",
+      "input": "你好，林娜！",
+      "expectedPinyin": "Nǐ hǎo, Lín Nà!",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Nǐ hǎo, Lín Nà!"
+    },
+    {
+      "id": "l5-3fa2444f2f5f0fe7",
+      "file": "l5-3fa2444f2f5f0fe7.mp3",
+      "input": "小云，你认识我妹妹？",
+      "expectedPinyin": "Xiǎoyún, nǐ rènshi wǒ mèimei?",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Xiǎoyún, nǐ rènshi wǒ mèimei?"
+    },
+    {
+      "id": "l5-cb6347898a6d93f7",
+      "file": "l5-cb6347898a6d93f7.mp3",
+      "input": "是啊，林娜是我和宋华的好朋友。她常常教我们英语。",
+      "expectedPinyin": "Shì a, Lín Nà shì wǒ hé Sòng Huá de hǎo péngyou. Tā chángcháng jiāo wǒmen Yīngyǔ.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Shì a, Lín Nà shì wǒ hé Sòng Huá de hǎo péngyou. Tā chángcháng jiāo wǒmen Yīngyǔ."
+    },
+    {
+      "id": "l5-4ed37ce3de180756",
+      "file": "l5-4ed37ce3de180756.mp3",
+      "input": "小云和宋华教我说汉语、写汉字，小云昨天还教我做寿面。一会儿大家吃寿面。",
+      "expectedPinyin": "Xiǎoyún hé Sòng Huá jiāo wǒ shuō Hànyǔ, xiě Hànzì, Xiǎoyún zuótiān hái jiāo wǒ zuò shòumiàn. Yíhuìr dàjiā chī shòumiàn.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Xiǎoyún hé Sòng Huá jiāo wǒ shuō Hànyǔ, xiě Hànzì, Xiǎoyún zuótiān hái jiāo wǒ zuò shòumiàn. Yíhuìr dàjiā chī shòumiàn."
+    },
+    {
+      "id": "l5-63798cd048df43b6",
+      "file": "l5-63798cd048df43b6.mp3",
+      "input": "来，咱们干杯！",
+      "expectedPinyin": "Lái, zánmen gānbēi!",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Lái, zánmen gānbēi!"
+    },
+    {
+      "id": "l5-8160bf3da9433b2a",
+      "file": "l5-8160bf3da9433b2a.mp3",
+      "input": "干杯！祝林强生日快乐！",
+      "expectedPinyin": "Gānbēi! Zhù Lín Qiáng shēngrì kuàilè!",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Gānbēi! Zhù Lín Qiáng shēngrì kuàilè!"
+    },
+    {
+      "id": "l5-cf92f4b3bfdc82f1",
+      "file": "l5-cf92f4b3bfdc82f1.mp3",
+      "input": "明天星期几？",
+      "expectedPinyin": "Míngtiān xīngqī jǐ?",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Míngtiān xīngqī jǐ?"
+    },
+    {
+      "id": "l5-ffc32d99a97ed5e5",
+      "file": "l5-ffc32d99a97ed5e5.mp3",
+      "input": "祝你生日快乐！",
+      "expectedPinyin": "Zhù nǐ shēngrì kuàilè!",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Zhù nǐ shēngrì kuàilè!"
+    },
+    {
+      "id": "l5-52a7ebeed2afe891",
+      "file": "l5-52a7ebeed2afe891.mp3",
+      "input": "一月一日",
+      "expectedPinyin": "Yī yuè yī rì",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Yī yuè yī rì"
+    },
+    {
+      "id": "l5-93f60b2d4cb0273e",
+      "file": "l5-93f60b2d4cb0273e.mp3",
+      "input": "我们有一个生日聚会。",
+      "expectedPinyin": "Wǒmen yǒu yí ge shēngrì jùhuì.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒmen yǒu yí ge shēngrì jùhuì."
+    },
+    {
+      "id": "l5-5198ee0907274de4",
+      "file": "l5-5198ee0907274de4.mp3",
+      "input": "大家一起唱歌。",
+      "expectedPinyin": "Dàjiā yìqǐ chàng gē.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Dàjiā yìqǐ chàng gē."
+    },
+    {
+      "id": "l5-65a143621801ff37",
+      "file": "l5-65a143621801ff37.mp3",
+      "input": "我喜欢唱歌。",
+      "expectedPinyin": "Wǒ xǐhuan chàng gē.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ xǐhuan chàng gē."
+    },
+    {
+      "id": "l5-dcedc27e9a7c96c8",
+      "file": "l5-dcedc27e9a7c96c8.mp3",
+      "input": "大家唱生日歌。",
+      "expectedPinyin": "Dàjiā chàng shēngrì gē.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Dàjiā chàng shēngrì gē."
+    },
+    {
+      "id": "l5-9aed5d3a456ea56d",
+      "file": "l5-9aed5d3a456ea56d.mp3",
+      "input": "我喜欢这首歌。",
+      "expectedPinyin": "Wǒ xǐhuan zhè shǒu gē.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ xǐhuan zhè shǒu gē."
+    },
+    {
+      "id": "l5-084c2b8bc1494853",
+      "file": "l5-084c2b8bc1494853.mp3",
+      "input": "我不喜欢跳舞。",
+      "expectedPinyin": "Wǒ bù xǐhuan tiàowǔ.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ bù xǐhuan tiàowǔ."
+    },
+    {
+      "id": "l5-cb7dc0651c4b348e",
+      "file": "l5-cb7dc0651c4b348e.mp3",
+      "input": "他喜欢跳。",
+      "expectedPinyin": "Tā xǐhuan tiào.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā xǐhuan tiào."
+    },
+    {
+      "id": "l5-7969de09fb8daa0e",
+      "file": "l5-7969de09fb8daa0e.mp3",
+      "input": "她教我们跳中国舞。",
+      "expectedPinyin": "Tā jiāo wǒmen tiào Zhōngguó wǔ.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā jiāo wǒmen tiào Zhōngguó wǔ."
+    },
+    {
+      "id": "l5-47340c350649659e",
+      "file": "l5-47340c350649659e.mp3",
+      "input": "你参加不参加？",
+      "expectedPinyin": "Nǐ cānjiā bu cānjiā?",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Nǐ cānjiā bu cānjiā?"
+    },
+    {
+      "id": "l5-28e5a79b274e355a",
+      "file": "l5-28e5a79b274e355a.mp3",
+      "input": "今天几号？",
+      "expectedPinyin": "Jīntiān jǐ hào?",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Jīntiān jǐ hào?"
+    },
+    {
+      "id": "l5-a78a110977541d51",
+      "file": "l5-a78a110977541d51.mp3",
+      "input": "我的生日是八月二十三号。",
+      "expectedPinyin": "Wǒ de shēngrì shì bā yuè èrshísān hào.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ de shēngrì shì bā yuè èrshísān hào."
+    },
+    {
+      "id": "l5-23d5591c8cf4ddbf",
+      "file": "l5-23d5591c8cf4ddbf.mp3",
+      "input": "真不好意思。",
+      "expectedPinyin": "Zhēn bù hǎoyìsi.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Zhēn bù hǎoyìsi."
+    },
+    {
+      "id": "l5-d33b897d4b800b67",
+      "file": "l5-d33b897d4b800b67.mp3",
+      "input": "真可惜！",
+      "expectedPinyin": "Zhēn kěxī!",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Zhēn kěxī!"
+    },
+    {
+      "id": "l5-5d1773b47e786385",
+      "file": "l5-5d1773b47e786385.mp3",
+      "input": "我送他一个生日蛋糕。",
+      "expectedPinyin": "Wǒ sòng tā yí ge shēngrì dàngāo.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ sòng tā yí ge shēngrì dàngāo."
+    },
+    {
+      "id": "l5-3b495a005559fa17",
+      "file": "l5-3b495a005559fa17.mp3",
+      "input": "这是你的生日礼物。",
+      "expectedPinyin": "Zhè shì nǐ de shēngrì lǐwù.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Zhè shì nǐ de shēngrì lǐwù."
+    },
+    {
+      "id": "l5-0eb67f3ac092c4c0",
+      "file": "l5-0eb67f3ac092c4c0.mp3",
+      "input": "两盒巧克力。",
+      "expectedPinyin": "Liǎng hé qiǎokèlì.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Liǎng hé qiǎokèlì."
+    },
+    {
+      "id": "l5-4c9b467e1cc8d24f",
+      "file": "l5-4c9b467e1cc8d24f.mp3",
+      "input": "我喜欢吃巧克力。",
+      "expectedPinyin": "Wǒ xǐhuan chī qiǎokèlì.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ xǐhuan chī qiǎokèlì."
+    },
+    {
+      "id": "l5-1cb49e0f65a27b8b",
+      "file": "l5-1cb49e0f65a27b8b.mp3",
+      "input": "你哥哥今年多大？",
+      "expectedPinyin": "Nǐ gēge jīnnián duō dà?",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Nǐ gēge jīnnián duō dà?"
+    },
+    {
+      "id": "l5-b7607f185bf6a002",
+      "file": "l5-b7607f185bf6a002.mp3",
+      "input": "他一九八八年出生。",
+      "expectedPinyin": "Tā yī jiǔ bā bā nián chūshēng.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā yī jiǔ bā bā nián chūshēng."
+    },
+    {
+      "id": "l5-23736173e06a1e10",
+      "file": "l5-23736173e06a1e10.mp3",
+      "input": "我属龙。",
+      "expectedPinyin": "Wǒ shǔ lóng.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ shǔ lóng."
+    },
+    {
+      "id": "l5-fdcdc56029c824db",
+      "file": "l5-fdcdc56029c824db.mp3",
+      "input": "我朋友属龙。",
+      "expectedPinyin": "Wǒ péngyou shǔ lóng.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ péngyou shǔ lóng."
+    },
+    {
+      "id": "l5-2c4fa62c0e48c02a",
+      "file": "l5-2c4fa62c0e48c02a.mp3",
+      "input": "他也是英国人。",
+      "expectedPinyin": "Tā yě shì Yīngguó rén.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā yě shì Yīngguó rén."
+    },
+    {
+      "id": "l5-9aaf3861955ea4f4",
+      "file": "l5-9aaf3861955ea4f4.mp3",
+      "input": "欢迎你们！",
+      "expectedPinyin": "Huānyíng nǐmen!",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Huānyíng nǐmen!"
+    },
+    {
+      "id": "l5-3b35d1d694fa64fb",
+      "file": "l5-3b35d1d694fa64fb.mp3",
+      "input": "生日快乐！",
+      "expectedPinyin": "Shēngrì kuàilè!",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Shēngrì kuàilè!"
+    },
+    {
+      "id": "l5-414ad0b24197e606",
+      "file": "l5-414ad0b24197e606.mp3",
+      "input": "他很客气。",
+      "expectedPinyin": "Tā hěn kèqi.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā hěn kèqi."
+    },
+    {
+      "id": "l5-c4f7b3283134c911",
+      "file": "l5-c4f7b3283134c911.mp3",
+      "input": "我来介绍一下。",
+      "expectedPinyin": "Wǒ lái jièshào yíxià.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ lái jièshào yíxià."
+    },
+    {
+      "id": "l5-64fa5e6cc3b9b10b",
+      "file": "l5-64fa5e6cc3b9b10b.mp3",
+      "input": "你看一下。",
+      "expectedPinyin": "Nǐ kàn yíxià.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Nǐ kàn yíxià."
+    },
+    {
+      "id": "l5-1d27e56343453d23",
+      "file": "l5-1d27e56343453d23.mp3",
+      "input": "她常常教我们英语。",
+      "expectedPinyin": "Tā chángcháng jiāo wǒmen Yīngyǔ.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā chángcháng jiāo wǒmen Yīngyǔ."
+    },
+    {
+      "id": "l5-07c28705ca09d917",
+      "file": "l5-07c28705ca09d917.mp3",
+      "input": "我常说中文。",
+      "expectedPinyin": "Wǒ cháng shuō Zhōngwén.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ cháng shuō Zhōngwén."
+    },
+    {
+      "id": "l5-e4df70836e8a1511",
+      "file": "l5-e4df70836e8a1511.mp3",
+      "input": "她教我英语。",
+      "expectedPinyin": "Tā jiāo wǒ Yīngyǔ.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā jiāo wǒ Yīngyǔ."
+    },
+    {
+      "id": "l5-24416fd09c0574e9",
+      "file": "l5-24416fd09c0574e9.mp3",
+      "input": "我写汉字。",
+      "expectedPinyin": "Wǒ xiě Hànzì.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ xiě Hànzì."
+    },
+    {
+      "id": "l5-4ec84b5a4dfbc8ad",
+      "file": "l5-4ec84b5a4dfbc8ad.mp3",
+      "input": "小云昨天教我做寿面。",
+      "expectedPinyin": "Xiǎoyún zuótiān jiāo wǒ zuò shòumiàn.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Xiǎoyún zuótiān jiāo wǒ zuò shòumiàn."
+    },
+    {
+      "id": "l5-0c27eaa18b7d76a9",
+      "file": "l5-0c27eaa18b7d76a9.mp3",
+      "input": "一会儿大家吃寿面。",
+      "expectedPinyin": "Yíhuìr dàjiā chī shòumiàn.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Yíhuìr dàjiā chī shòumiàn."
+    },
+    {
+      "id": "l5-d7435ca05dd4c7d5",
+      "file": "l5-d7435ca05dd4c7d5.mp3",
+      "input": "前天下午我有课。",
+      "expectedPinyin": "Qiántiān xiàwǔ wǒ yǒu kè.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Qiántiān xiàwǔ wǒ yǒu kè."
+    },
+    {
+      "id": "l5-3d7d3a630902e420",
+      "file": "l5-3d7d3a630902e420.mp3",
+      "input": "后天就是你的生日。",
+      "expectedPinyin": "Hòutiān jiù shì nǐ de shēngrì.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Hòutiān jiù shì nǐ de shēngrì."
+    },
+    {
+      "id": "l5-eb713e711cf5da23",
+      "file": "l5-eb713e711cf5da23.mp3",
+      "input": "上星期一我有汉语课。",
+      "expectedPinyin": "Shàng xīngqīyī wǒ yǒu Hànyǔ kè.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Shàng xīngqīyī wǒ yǒu Hànyǔ kè."
+    },
+    {
+      "id": "l5-cfc92e42ea4ac48e",
+      "file": "l5-cfc92e42ea4ac48e.mp3",
+      "input": "下星期一我们一起活动。",
+      "expectedPinyin": "Xià xīngqīyī wǒmen yìqǐ huódòng.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Xià xīngqīyī wǒmen yìqǐ huódòng."
+    },
+    {
+      "id": "l5-a075cec7a379dcab",
+      "file": "l5-a075cec7a379dcab.mp3",
+      "input": "上个月是她的生日。",
+      "expectedPinyin": "Shàng ge yuè shì tā de shēngrì.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Shàng ge yuè shì tā de shēngrì."
+    },
+    {
+      "id": "l5-800867c161e9a64e",
+      "file": "l5-800867c161e9a64e.mp3",
+      "input": "下个月八号是她的生日。",
+      "expectedPinyin": "Xià ge yuè bā hào shì tā de shēngrì.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Xià ge yuè bā hào shì tā de shēngrì."
+    },
+    {
+      "id": "l5-1d55e1e29e321b14",
+      "file": "l5-1d55e1e29e321b14.mp3",
+      "input": "这个星期四晚上有音乐会。",
+      "expectedPinyin": "Zhège xīngqīsì wǎnshang yǒu yīnyuèhuì.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Zhège xīngqīsì wǎnshang yǒu yīnyuèhuì."
+    },
+    {
+      "id": "l5-b5a317b8c3ba4155",
+      "file": "l5-b5a317b8c3ba4155.mp3",
+      "input": "我属鼠。",
+      "expectedPinyin": "Wǒ shǔ shǔ.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ shǔ shǔ."
+    },
+    {
+      "id": "l5-d567f79dbb6946c3",
+      "file": "l5-d567f79dbb6946c3.mp3",
+      "input": "她属牛。",
+      "expectedPinyin": "Tā shǔ niú.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā shǔ niú."
+    },
+    {
+      "id": "l5-17e85e0c66734287",
+      "file": "l5-17e85e0c66734287.mp3",
+      "input": "他属虎。",
+      "expectedPinyin": "Tā shǔ hǔ.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā shǔ hǔ."
+    },
+    {
+      "id": "l5-3a1f70429979263c",
+      "file": "l5-3a1f70429979263c.mp3",
+      "input": "我属蛇。",
+      "expectedPinyin": "Wǒ shǔ shé.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ shǔ shé."
+    },
+    {
+      "id": "l5-8c2462545cd0a198",
+      "file": "l5-8c2462545cd0a198.mp3",
+      "input": "我也属马。",
+      "expectedPinyin": "Wǒ yě shǔ mǎ.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ yě shǔ mǎ."
+    },
+    {
+      "id": "l5-b6585754b981b9bb",
+      "file": "l5-b6585754b981b9bb.mp3",
+      "input": "她属羊。",
+      "expectedPinyin": "Tā shǔ yáng.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā shǔ yáng."
+    },
+    {
+      "id": "l5-7ade07deef3c443e",
+      "file": "l5-7ade07deef3c443e.mp3",
+      "input": "他属猴。",
+      "expectedPinyin": "Tā shǔ hóu.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā shǔ hóu."
+    },
+    {
+      "id": "l5-852440ebd8a00491",
+      "file": "l5-852440ebd8a00491.mp3",
+      "input": "我属鸡。",
+      "expectedPinyin": "Wǒ shǔ jī.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ shǔ jī."
+    },
+    {
+      "id": "l5-86617d8c6cfd8f16",
+      "file": "l5-86617d8c6cfd8f16.mp3",
+      "input": "我的生日是一月一号。",
+      "expectedPinyin": "Wǒ de shēngrì shì yī yuè yī hào.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ de shēngrì shì yī yuè yī hào."
+    },
+    {
+      "id": "l5-78d87904b748bf07",
+      "file": "l5-78d87904b748bf07.mp3",
+      "input": "我的生日是二月一号。",
+      "expectedPinyin": "Wǒ de shēngrì shì èr yuè yī hào.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ de shēngrì shì èr yuè yī hào."
+    },
+    {
+      "id": "l5-141da7d08ea06737",
+      "file": "l5-141da7d08ea06737.mp3",
+      "input": "我的生日是三月一号。",
+      "expectedPinyin": "Wǒ de shēngrì shì sān yuè yī hào.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ de shēngrì shì sān yuè yī hào."
+    },
+    {
+      "id": "l5-669b4ba2ebfed224",
+      "file": "l5-669b4ba2ebfed224.mp3",
+      "input": "我的生日是四月一号。",
+      "expectedPinyin": "Wǒ de shēngrì shì sì yuè yī hào.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ de shēngrì shì sì yuè yī hào."
+    },
+    {
+      "id": "l5-e926e237c3b94a80",
+      "file": "l5-e926e237c3b94a80.mp3",
+      "input": "我的生日是五月一号。",
+      "expectedPinyin": "Wǒ de shēngrì shì wǔ yuè yī hào.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ de shēngrì shì wǔ yuè yī hào."
+    },
+    {
+      "id": "l5-65840bc4634a49f0",
+      "file": "l5-65840bc4634a49f0.mp3",
+      "input": "我的生日是六月一号。",
+      "expectedPinyin": "Wǒ de shēngrì shì liù yuè yī hào.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ de shēngrì shì liù yuè yī hào."
+    },
+    {
+      "id": "l5-e1439765533ae05d",
+      "file": "l5-e1439765533ae05d.mp3",
+      "input": "我的生日是七月一号。",
+      "expectedPinyin": "Wǒ de shēngrì shì qī yuè yī hào.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ de shēngrì shì qī yuè yī hào."
+    },
+    {
+      "id": "l5-36e83b445b5e1a4b",
+      "file": "l5-36e83b445b5e1a4b.mp3",
+      "input": "我的生日是八月一号。",
+      "expectedPinyin": "Wǒ de shēngrì shì bā yuè yī hào.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ de shēngrì shì bā yuè yī hào."
+    },
+    {
+      "id": "l5-2dd39307847670b9",
+      "file": "l5-2dd39307847670b9.mp3",
+      "input": "我的生日是九月一号。",
+      "expectedPinyin": "Wǒ de shēngrì shì jiǔ yuè yī hào.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ de shēngrì shì jiǔ yuè yī hào."
+    },
+    {
+      "id": "l5-08d85f56c90d0604",
+      "file": "l5-08d85f56c90d0604.mp3",
+      "input": "我的生日是十月一号。",
+      "expectedPinyin": "Wǒ de shēngrì shì shí yuè yī hào.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ de shēngrì shì shí yuè yī hào."
+    },
+    {
+      "id": "l5-8f96eb7cabe7d76a",
+      "file": "l5-8f96eb7cabe7d76a.mp3",
+      "input": "我的生日是十一月一号。",
+      "expectedPinyin": "Wǒ de shēngrì shì shíyī yuè yī hào.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ de shēngrì shì shíyī yuè yī hào."
+    },
+    {
+      "id": "l5-2f7a0a0fbacffc8a",
+      "file": "l5-2f7a0a0fbacffc8a.mp3",
+      "input": "我的生日是十二月一号。",
+      "expectedPinyin": "Wǒ de shēngrì shì shí'èr yuè yī hào.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ de shēngrì shì shí'èr yuè yī hào."
+    },
+    {
+      "id": "l5-1a2b0d72a009ad3d",
+      "file": "l5-1a2b0d72a009ad3d.mp3",
+      "input": "今天星期一。",
+      "expectedPinyin": "Jīntiān xīngqīyī.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Jīntiān xīngqīyī."
+    },
+    {
+      "id": "l5-93d17835577acebb",
+      "file": "l5-93d17835577acebb.mp3",
+      "input": "今天星期二。",
+      "expectedPinyin": "Jīntiān xīngqīèr.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Jīntiān xīngqīèr."
+    },
+    {
+      "id": "l5-2c56ffbf7185c569",
+      "file": "l5-2c56ffbf7185c569.mp3",
+      "input": "今天星期三。",
+      "expectedPinyin": "Jīntiān xīngqīsān.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Jīntiān xīngqīsān."
+    },
+    {
+      "id": "l5-1345c82c9eecd556",
+      "file": "l5-1345c82c9eecd556.mp3",
+      "input": "今天星期四。",
+      "expectedPinyin": "Jīntiān xīngqīsì.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Jīntiān xīngqīsì."
+    },
+    {
+      "id": "l5-179f02d033dcea77",
+      "file": "l5-179f02d033dcea77.mp3",
+      "input": "今天星期五。",
+      "expectedPinyin": "Jīntiān xīngqīwǔ.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Jīntiān xīngqīwǔ."
+    },
+    {
+      "id": "l5-aeb0c7d5f36b6d8d",
+      "file": "l5-aeb0c7d5f36b6d8d.mp3",
+      "input": "今天星期六。",
+      "expectedPinyin": "Jīntiān xīngqīliù.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Jīntiān xīngqīliù."
+    },
+    {
+      "id": "l5-6777ac0cf4128389",
+      "file": "l5-6777ac0cf4128389.mp3",
+      "input": "今天星期天。",
+      "expectedPinyin": "Jīntiān xīngqītiān.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Jīntiān xīngqītiān."
+    },
+    {
+      "id": "l5-2e73ecba5fc6285a",
+      "file": "l5-2e73ecba5fc6285a.mp3",
+      "input": "周末我没有课。",
+      "expectedPinyin": "Zhōumò wǒ méiyǒu kè.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Zhōumò wǒ méiyǒu kè."
+    },
+    {
+      "id": "l5-20348ffa004e6009",
+      "file": "l5-20348ffa004e6009.mp3",
+      "input": "她属兔。",
+      "expectedPinyin": "Tā shǔ tù.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā shǔ tù."
+    },
+    {
+      "id": "l5-5acba79ac80974b9",
+      "file": "l5-5acba79ac80974b9.mp3",
+      "input": "我属狗。",
+      "expectedPinyin": "Wǒ shǔ gǒu.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ shǔ gǒu."
+    },
+    {
+      "id": "l5-f35e46fdcdfc6915",
+      "file": "l5-f35e46fdcdfc6915.mp3",
+      "input": "他属猪。",
+      "expectedPinyin": "Tā shǔ zhū.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā shǔ zhū."
+    },
+    {
+      "id": "l5-54f6bb6e6ef4ddb2",
+      "file": "l5-54f6bb6e6ef4ddb2.mp3",
+      "input": "小云和宋华教我说汉语、写汉字。",
+      "expectedPinyin": "Xiǎoyún hé Sòng Huá jiāo wǒ shuō Hànyǔ, xiě Hànzì.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Xiǎoyún hé Sòng Huá jiāo wǒ shuō Hànyǔ, xiě Hànzì."
+    },
+    {
+      "id": "l5-b59fef6fd56a6928",
+      "file": "l5-b59fef6fd56a6928.mp3",
+      "input": "二〇二〇年十二月二十五日星期五晚上八点二十五。",
+      "expectedPinyin": "Èr líng èr líng nián shí'èr yuè èrshíwǔ rì xīngqīwǔ wǎnshang bā diǎn èrshíwǔ.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Èr líng èr líng nián shí'èr yuè èrshíwǔ rì xīngqīwǔ wǎnshang bā diǎn èrshíwǔ."
+    },
+    {
+      "id": "l5-2383cc1ad3c3b1de",
+      "file": "l5-2383cc1ad3c3b1de.mp3",
+      "input": "今天不是五号。",
+      "expectedPinyin": "Jīntiān bú shì wǔ hào.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Jīntiān bú shì wǔ hào."
+    },
+    {
+      "id": "l5-fc27aa04bbf627f8",
+      "file": "l5-fc27aa04bbf627f8.mp3",
+      "input": "这就是寿面。",
+      "expectedPinyin": "Zhè jiù shì shòumiàn.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Zhè jiù shì shòumiàn."
+    },
+    {
+      "id": "l5-9c583eb298cc5731",
+      "file": "l5-9c583eb298cc5731.mp3",
+      "input": "你认识我妹妹？",
+      "expectedPinyin": "Nǐ rènshi wǒ mèimei?",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Nǐ rènshi wǒ mèimei?"
+    },
+    {
+      "id": "l5-2a29a196bf6f31f2",
+      "file": "l5-2a29a196bf6f31f2.mp3",
+      "input": "你的生日是几月几号？",
+      "expectedPinyin": "Nǐ de shēngrì shì jǐ yuè jǐ hào?",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Nǐ de shēngrì shì jǐ yuè jǐ hào?"
+    },
+    {
+      "id": "l5-9e1280e8ac499603",
+      "file": "l5-9e1280e8ac499603.mp3",
+      "input": "明天十月三十一号。",
+      "expectedPinyin": "Míngtiān shí yuè sānshíyī hào.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Míngtiān shí yuè sānshíyī hào."
+    },
+    {
+      "id": "l5-f10661181afaed02",
+      "file": "l5-f10661181afaed02.mp3",
+      "input": "我送她一个生日蛋糕。",
+      "expectedPinyin": "Wǒ sòng tā yí ge shēngrì dàngāo.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wǒ sòng tā yí ge shēngrì dàngāo."
+    },
+    {
+      "id": "l5-566897fd0fa20309",
+      "file": "l5-566897fd0fa20309.mp3",
+      "input": "她一九八五年出生。",
+      "expectedPinyin": "Tā yī jiǔ bā wǔ nián chūshēng.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā yī jiǔ bā wǔ nián chūshēng."
+    },
+    {
+      "id": "l5-7300b439e1341716",
+      "file": "l5-7300b439e1341716.mp3",
+      "input": "陈老师教我们语法。",
+      "expectedPinyin": "Chén lǎoshī jiāo wǒmen yǔfǎ.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Chén lǎoshī jiāo wǒmen yǔfǎ."
+    },
+    {
+      "id": "l5-d1fc45b4366ecb01",
+      "file": "l5-d1fc45b4366ecb01.mp3",
+      "input": "今天是林强32岁的生日。他1988年出生，属龙。林娜、王小云和宋华都参加他的生日聚会。林娜送他一个大蛋糕，王小云送他两盒巧克力。他们一起干杯，还吃寿面，祝贺林强的生日。",
+      "expectedPinyin": "Jīntiān shì Lín Qiáng sānshí'èr suì de shēngrì. Tā yī jiǔ bā bā nián chūshēng, shǔ lóng. Lín Nà, Wáng Xiǎoyún hé Sòng Huá dōu cānjiā tā de shēngrì jùhuì. Lín Nà sòng tā yí ge dà dàngāo, Wáng Xiǎoyún sòng tā liǎng hé qiǎokèlì. Tāmen yìqǐ gānbēi, hái chī shòumiàn, zhùhè Lín Qiáng de shēngrì.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Jīntiān shì Lín Qiáng sānshí'èr suì de shēngrì. Tā yī jiǔ bā bā nián chūshēng, shǔ lóng. Lín Nà, Wáng Xiǎoyún hé Sòng Huá dōu cānjiā tā de shēngrì jùhuì. Lín Nà sòng tā yí ge dà dàngāo, Wáng Xiǎoyún sòng tā liǎng hé qiǎokèlì. Tāmen yìqǐ gānbēi, hái chī shòumiàn, zhùhè Lín Qiáng de shēngrì."
+    },
+    {
+      "id": "l5-4a8114fd68bfa860",
+      "file": "l5-4a8114fd68bfa860.mp3",
+      "input": "这是我们班的汉语老师。她姓张，叫张美华，英文名字叫Amy。她今年35岁，属牛。下个月8号是她的生日。张老师很漂亮。她喜欢看电影，也喜欢吃巧克力和蛋糕。她爱人是医生。他们有一个小女儿，今年两岁，特别漂亮。张老师教我们口语课和汉字课，也教我们唱中国歌、跳中国舞。她是个好老师，我们都很喜欢她。",
+      "expectedPinyin": "Zhè shì wǒmen bān de Hànyǔ lǎoshī. Tā xìng Zhāng, jiào Zhāng Měihuá, Yīngwén míngzi jiào Amy. Tā jīnnián sānshíwǔ suì, shǔ niú. Xià ge yuè bā hào shì tā de shēngrì. Zhāng lǎoshī hěn piàoliang. Tā xǐhuan kàn diànyǐng, yě xǐhuan chī qiǎokèlì hé dàngāo. Tā àiren shì yīshēng. Tāmen yǒu yí ge xiǎo nǚ'ér, jīnnián liǎng suì, tèbié piàoliang. Zhāng lǎoshī jiāo wǒmen kǒuyǔ kè hé Hànzì kè, yě jiāo wǒmen chàng Zhōngguó gē, tiào Zhōngguó wǔ. Tā shì ge hǎo lǎoshī, wǒmen dōu hěn xǐhuan tā.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Zhè shì wǒmen bān de Hànyǔ lǎoshī. Tā xìng Zhāng, jiào Zhāng Měihuá, Yīngwén míngzi jiào Amy. Tā jīnnián sānshíwǔ suì, shǔ niú. Xià ge yuè bā hào shì tā de shēngrì. Zhāng lǎoshī hěn piàoliang. Tā xǐhuan kàn diànyǐng, yě xǐhuan chī qiǎokèlì hé dàngāo. Tā àiren shì yīshēng. Tāmen yǒu yí ge xiǎo nǚ'ér, jīnnián liǎng suì, tèbié piàoliang. Zhāng lǎoshī jiāo wǒmen kǒuyǔ kè hé Hànzì kè, yě jiāo wǒmen chàng Zhōngguó gē, tiào Zhōngguó wǔ. Tā shì ge hǎo lǎoshī, wǒmen dōu hěn xǐhuan tā."
+    },
+    {
+      "id": "l5-03a2cfb99272ddd4",
+      "file": "l5-03a2cfb99272ddd4.mp3",
+      "input": "陈明一九八二年七月二十日出生，今年三十八岁。这个星期一是她的生日。他们家有一个生日聚会，她的朋友们都参加。陈明很喜欢唱歌，还喜欢喝咖啡。她的朋友们送她两张音乐CD，还送她三盒咖啡。",
+      "expectedPinyin": "Chén Míng yī jiǔ bā èr nián qī yuè èrshí rì chūshēng, jīnnián sānshíbā suì. Zhège xīngqīyī shì tā de shēngrì. Tāmen jiā yǒu yí ge shēngrì jùhuì, tā de péngyoumen dōu cānjiā. Chén Míng hěn xǐhuan chàng gē, hái xǐhuan hē kāfēi. Tā de péngyoumen sòng tā liǎng zhāng yīnyuè CD, hái sòng tā sān hé kāfēi.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Chén Míng yī jiǔ bā èr nián qī yuè èrshí rì chūshēng, jīnnián sānshíbā suì. Zhège xīngqīyī shì tā de shēngrì. Tāmen jiā yǒu yí ge shēngrì jùhuì, tā de péngyoumen dōu cānjiā. Chén Míng hěn xǐhuan chàng gē, hái xǐhuan hē kāfēi. Tā de péngyoumen sòng tā liǎng zhāng yīnyuè CD, hái sòng tā sān hé kāfēi."
+    },
+    {
+      "id": "l5-b765a04e9967fa38",
+      "file": "l5-b765a04e9967fa38.mp3",
+      "input": "陆雨平的奶奶一九三一年出生，今年八十九岁。今天是她的生日。大家在一起聚会，奶奶特别高兴。陆雨平的妈妈教大家做寿面，寿面特别好吃。大家一起唱生日歌，一起干杯，祝奶奶生日快乐。",
+      "expectedPinyin": "Lù Yǔpíng de nǎinai yī jiǔ sān yī nián chūshēng, jīnnián bāshíjiǔ suì. Jīntiān shì tā de shēngrì. Dàjiā zài yìqǐ jùhuì, nǎinai tèbié gāoxìng. Lù Yǔpíng de māma jiāo dàjiā zuò shòumiàn, shòumiàn tèbié hǎochī. Dàjiā yìqǐ chàng shēngrì gē, yìqǐ gānbēi, zhù nǎinai shēngrì kuàilè.",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Lù Yǔpíng de nǎinai yī jiǔ sān yī nián chūshēng, jīnnián bāshíjiǔ suì. Jīntiān shì tā de shēngrì. Dàjiā zài yìqǐ jùhuì, nǎinai tèbié gāoxìng. Lù Yǔpíng de māma jiāo dàjiā zuò shòumiàn, shòumiàn tèbié hǎochī. Dàjiā yìqǐ chàng shēngrì gē, yìqǐ gānbēi, zhù nǎinai shēngrì kuàilè."
+    },
+    {
+      "id": "l5-40964916d98dc6a9",
+      "file": "l5-40964916d98dc6a9.mp3",
+      "input": "星",
+      "expectedPinyin": "xīng",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: xīng"
+    },
+    {
+      "id": "l5-3c24d2f622ef4cf7",
+      "file": "l5-3c24d2f622ef4cf7.mp3",
+      "input": "期",
+      "expectedPinyin": "qī",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: qī"
+    },
+    {
+      "id": "l5-735b72d3837d4402",
+      "file": "l5-735b72d3837d4402.mp3",
+      "input": "事",
+      "expectedPinyin": "shì",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: shì"
+    },
+    {
+      "id": "l5-e18ab74ae09bd188",
+      "file": "l5-e18ab74ae09bd188.mp3",
+      "input": "儿",
+      "expectedPinyin": "ér",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: ér"
+    },
+    {
+      "id": "l5-4029950460df71ea",
+      "file": "l5-4029950460df71ea.mp3",
+      "input": "生",
+      "expectedPinyin": "shēng",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: shēng"
+    },
+    {
+      "id": "l5-2b09cbe444be42d1",
+      "file": "l5-2b09cbe444be42d1.mp3",
+      "input": "聚",
+      "expectedPinyin": "jù",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: jù"
+    },
+    {
+      "id": "l5-9106f44ee0fa5e00",
+      "file": "l5-9106f44ee0fa5e00.mp3",
+      "input": "会",
+      "expectedPinyin": "huì",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: huì"
+    },
+    {
+      "id": "l5-96fc7b6a647a4adb",
+      "file": "l5-96fc7b6a647a4adb.mp3",
+      "input": "大",
+      "expectedPinyin": "dà",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: dà"
+    },
+    {
+      "id": "l5-64e7f745efaada2d",
+      "file": "l5-64e7f745efaada2d.mp3",
+      "input": "家",
+      "expectedPinyin": "jiā",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: jiā"
+    },
+    {
+      "id": "l5-58167bc65885afc3",
+      "file": "l5-58167bc65885afc3.mp3",
+      "input": "参",
+      "expectedPinyin": "cān",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: cān"
+    },
+    {
+      "id": "l5-fdd6f38e8ba65f4d",
+      "file": "l5-fdd6f38e8ba65f4d.mp3",
+      "input": "加",
+      "expectedPinyin": "jiā",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: jiā"
+    },
+    {
+      "id": "l5-a64f8a6071bd19cf",
+      "file": "l5-a64f8a6071bd19cf.mp3",
+      "input": "不",
+      "expectedPinyin": "bù",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: bù"
+    },
+    {
+      "id": "l5-c6e2e80fba0e36d7",
+      "file": "l5-c6e2e80fba0e36d7.mp3",
+      "input": "好",
+      "expectedPinyin": "hǎo",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: hǎo"
+    },
+    {
+      "id": "l5-0121153c2d13faa5",
+      "file": "l5-0121153c2d13faa5.mp3",
+      "input": "意",
+      "expectedPinyin": "yì",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: yì"
+    },
+    {
+      "id": "l5-4f151dfada89fb5f",
+      "file": "l5-4f151dfada89fb5f.mp3",
+      "input": "思",
+      "expectedPinyin": "sī",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: sī"
+    },
+    {
+      "id": "l5-203065ed0eb45513",
+      "file": "l5-203065ed0eb45513.mp3",
+      "input": "可",
+      "expectedPinyin": "kě",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: kě"
+    },
+    {
+      "id": "l5-7d1759f4dab862f4",
+      "file": "l5-7d1759f4dab862f4.mp3",
+      "input": "惜",
+      "expectedPinyin": "xī",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: xī"
+    },
+    {
+      "id": "l5-b6aeb42d6e5efa10",
+      "file": "l5-b6aeb42d6e5efa10.mp3",
+      "input": "礼",
+      "expectedPinyin": "lǐ",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: lǐ"
+    },
+    {
+      "id": "l5-7a390862e3516da9",
+      "file": "l5-7a390862e3516da9.mp3",
+      "input": "物",
+      "expectedPinyin": "wù",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: wù"
+    },
+    {
+      "id": "l5-f01d9d212e9acd04",
+      "file": "l5-f01d9d212e9acd04.mp3",
+      "input": "蛋",
+      "expectedPinyin": "dàn",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: dàn"
+    },
+    {
+      "id": "l5-bf8a262ff2517a4f",
+      "file": "l5-bf8a262ff2517a4f.mp3",
+      "input": "糕",
+      "expectedPinyin": "gāo",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: gāo"
+    },
+    {
+      "id": "l5-404c6ef44f286bf6",
+      "file": "l5-404c6ef44f286bf6.mp3",
+      "input": "巧",
+      "expectedPinyin": "qiǎo",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: qiǎo"
+    },
+    {
+      "id": "l5-b28b194f906d63af",
+      "file": "l5-b28b194f906d63af.mp3",
+      "input": "克",
+      "expectedPinyin": "kè",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: kè"
+    },
+    {
+      "id": "l5-9662df4d04c478e1",
+      "file": "l5-9662df4d04c478e1.mp3",
+      "input": "力",
+      "expectedPinyin": "lì",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: lì"
+    },
+    {
+      "id": "l5-98e27a4c93f0624f",
+      "file": "l5-98e27a4c93f0624f.mp3",
+      "input": "多",
+      "expectedPinyin": "duō",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: duō"
+    },
+    {
+      "id": "l5-442659da9fcb5af2",
+      "file": "l5-442659da9fcb5af2.mp3",
+      "input": "出",
+      "expectedPinyin": "chū",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: chū"
+    },
+    {
+      "id": "l5-8e4951ccd217c125",
+      "file": "l5-8e4951ccd217c125.mp3",
+      "input": "中",
+      "expectedPinyin": "zhōng",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: zhōng"
+    },
+    {
+      "id": "l5-da9b1fb5d197b8b6",
+      "file": "l5-da9b1fb5d197b8b6.mp3",
+      "input": "文",
+      "expectedPinyin": "wén",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: wén"
+    },
+    {
+      "id": "l5-29e72e25d19f0313",
+      "file": "l5-29e72e25d19f0313.mp3",
+      "input": "英",
+      "expectedPinyin": "yīng",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: yīng"
+    },
+    {
+      "id": "l5-f24d220f43840dda",
+      "file": "l5-f24d220f43840dda.mp3",
+      "input": "国",
+      "expectedPinyin": "guó",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: guó"
+    },
+    {
+      "id": "l5-897b695666474362",
+      "file": "l5-897b695666474362.mp3",
+      "input": "欢",
+      "expectedPinyin": "huān",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: huān"
+    },
+    {
+      "id": "l5-bbf57faaac38a61e",
+      "file": "l5-bbf57faaac38a61e.mp3",
+      "input": "迎",
+      "expectedPinyin": "yíng",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: yíng"
+    },
+    {
+      "id": "l5-4b6c214d7629d9f3",
+      "file": "l5-4b6c214d7629d9f3.mp3",
+      "input": "快",
+      "expectedPinyin": "kuài",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: kuài"
+    },
+    {
+      "id": "l5-f668895655ecf6b6",
+      "file": "l5-f668895655ecf6b6.mp3",
+      "input": "乐",
+      "expectedPinyin": "lè",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: lè"
+    },
+    {
+      "id": "l5-cc1a3798f699b6ca",
+      "file": "l5-cc1a3798f699b6ca.mp3",
+      "input": "客",
+      "expectedPinyin": "kè",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: kè"
+    },
+    {
+      "id": "l5-0d44f7d35489b476",
+      "file": "l5-0d44f7d35489b476.mp3",
+      "input": "气",
+      "expectedPinyin": "qì",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: qì"
+    },
+    {
+      "id": "l5-9097121a3edaf7d1",
+      "file": "l5-9097121a3edaf7d1.mp3",
+      "input": "介",
+      "expectedPinyin": "jiè",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: jiè"
+    },
+    {
+      "id": "l5-410c89e83c887dd9",
+      "file": "l5-410c89e83c887dd9.mp3",
+      "input": "绍",
+      "expectedPinyin": "shào",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: shào"
+    },
+    {
+      "id": "l5-fa491c5c2d4280d7",
+      "file": "l5-fa491c5c2d4280d7.mp3",
+      "input": "一",
+      "expectedPinyin": "yī",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: yī"
+    },
+    {
+      "id": "l5-d7a274e7ddddd3a4",
+      "file": "l5-d7a274e7ddddd3a4.mp3",
+      "input": "下",
+      "expectedPinyin": "xià",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: xià"
+    },
+    {
+      "id": "l5-12fe3bb948559e7e",
+      "file": "l5-12fe3bb948559e7e.mp3",
+      "input": "昨",
+      "expectedPinyin": "zuó",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: zuó"
+    },
+    {
+      "id": "l5-563250052d3536de",
+      "file": "l5-563250052d3536de.mp3",
+      "input": "天",
+      "expectedPinyin": "tiān",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: tiān"
+    },
+    {
+      "id": "l5-145b67ba71a56d91",
+      "file": "l5-145b67ba71a56d91.mp3",
+      "input": "寿",
+      "expectedPinyin": "shòu",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: shòu"
+    },
+    {
+      "id": "l5-84f09a3beface489",
+      "file": "l5-84f09a3beface489.mp3",
+      "input": "面",
+      "expectedPinyin": "miàn",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: miàn"
+    },
+    {
+      "id": "l5-bb6a1a0b1892f801",
+      "file": "l5-bb6a1a0b1892f801.mp3",
+      "input": "咱",
+      "expectedPinyin": "zán",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: zán"
+    },
+    {
+      "id": "l5-f8f56a655762525b",
+      "file": "l5-f8f56a655762525b.mp3",
+      "input": "们",
+      "expectedPinyin": "men",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: men"
+    },
+    {
+      "id": "l5-44cdc93021353923",
+      "file": "l5-44cdc93021353923.mp3",
+      "input": "干",
+      "expectedPinyin": "gān",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: gān"
+    },
+    {
+      "id": "l5-b263a100fdd97a3a",
+      "file": "l5-b263a100fdd97a3a.mp3",
+      "input": "杯",
+      "expectedPinyin": "bēi",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: bēi"
+    },
+    {
+      "id": "l5-d477f2610cef4dd1",
+      "file": "l5-d477f2610cef4dd1.mp3",
+      "input": "其",
+      "expectedPinyin": "qí",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: qí"
+    },
+    {
+      "id": "l5-b3368a0a90b64cb0",
+      "file": "l5-b3368a0a90b64cb0.mp3",
+      "input": "耳",
+      "expectedPinyin": "ěr",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: ěr"
+    },
+    {
+      "id": "l5-733de483f8647f84",
+      "file": "l5-733de483f8647f84.mp3",
+      "input": "虫",
+      "expectedPinyin": "chóng",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: chóng"
+    },
+    {
+      "id": "l5-402bc49e85e4a9eb",
+      "file": "l5-402bc49e85e4a9eb.mp3",
+      "input": "皿",
+      "expectedPinyin": "mǐn",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: mǐn"
+    },
+    {
+      "id": "l5-98e68b4e7d9dfe61",
+      "file": "l5-98e68b4e7d9dfe61.mp3",
+      "input": "尸",
+      "expectedPinyin": "shī",
+      "lessonId": 5,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: shī"
+    }
+  ]
+}

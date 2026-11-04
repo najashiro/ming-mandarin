@@ -1,0 +1,39 @@
+{
+  "date_local": "2026-11-03",
+  "currency": "USD",
+  "billing_verified": false,
+  "images": {
+    "model": "gpt-image-1.5",
+    "mode": "authorized skill CLI generate-batch",
+    "quality": "medium",
+    "size": "1536x1024",
+    "background": "transparent",
+    "successful_generations": 38,
+    "initial": 30,
+    "revisions": 8,
+    "published_distinct_images": 30,
+    "published_word_links": 35,
+    "output_price_per_image_usd": 0.05,
+    "estimated_output_usd": 1.9,
+    "input_prompt_characters": 24804,
+    "text_input_price_per_million_tokens_usd": 5,
+    "exact_usage_tokens": null
+  },
+  "audio": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "marin",
+    "successful_requests": 260,
+    "published_clips": 255,
+    "signal_retries": 4,
+    "key_test_requests": 1,
+    "published_duration_seconds": 628.104,
+    "text_input_price_per_million_tokens_usd": 0.6,
+    "audio_output_price_per_million_tokens_usd": 12,
+    "exact_usage_tokens": null
+  },
+  "note": "No invoice or organization billing endpoint was accessed. CLI image responses did not persist token usage; MP3 speech responses contain no usage. Output-image estimate is based on the published per-image price. Audio totals require OpenAI billing for an exact USD amount.",
+  "pricing_sources": [
+    "https://developers.openai.com/api/docs/models/gpt-image-1.5",
+    "https://developers.openai.com/api/docs/models/gpt-4o-mini-tts"
+  ]
+}

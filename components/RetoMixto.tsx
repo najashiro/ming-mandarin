@@ -32,7 +32,7 @@ const modeLabels: Record<RetoMixtoMode, string> = {
 };
 
 const lessonsByScope: Record<CurriculumScope, LessonNumber[]> = {
-  l4: [4], 'l1-l2-l3-l4': [1,2,3,4], l1: [1], l2: [2], l3: [3], 'l1-l2': [1, 2], 'l1-l2-l3': [1, 2, 3],
+  l5: [5], 'l1-l2-l3-l4-l5': [1,2,3,4,5], l4: [4], 'l1-l2-l3-l4': [1,2,3,4], l1: [1], l2: [2], l3: [3], 'l1-l2': [1, 2], 'l1-l2-l3': [1, 2, 3],
 };
 
 function normalizeChinese(value: string) {

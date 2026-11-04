@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectDirectory = path.resolve(scriptDirectory, '..');
 const manifestDefinitions = [
+  { path: path.join(projectDirectory, 'data', 'lesson5-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin'), scope: 'lesson5' },
   { path: path.join(projectDirectory, 'data', 'lesson4-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin'), scope: 'lesson4' },
   { path: path.join(projectDirectory, 'data', 'pronunciation.json'), directory: path.join(projectDirectory, 'public', 'audio', 'pinyin') },
   { path: path.join(projectDirectory, 'data', 'mandarin-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin') },
@@ -110,6 +111,6 @@ while (cursor < selectedClips.length) {
   if (generated % 25 === 0) console.log(`Generados: ${generated}/${selectedClips.length}`);
 }
 }
-await Promise.all(Array.from({ length: scope === 'time' || scope === 'lesson4' ? 3 : 1 }, () => generateNext()));
+await Promise.all(Array.from({ length: scope === 'time' || scope === 'lesson4' || scope === 'lesson5' ? 3 : 1 }, () => generateNext()));
 
 console.log(`Listo: ${generated} clips nuevos; ${selectedClips.length - generated} ya existentes.`);

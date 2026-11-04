@@ -30,7 +30,12 @@
     "audio:l4:prepare": "node scripts/prepare-lesson4-audio.mjs",
     "audio:l4": "node scripts/generate-pronunciation-audio.mjs --scope=lesson4",
     "audio:l4:verify": "node scripts/verify-lesson4-audio.mjs --publish",
-    "images:l4": "node scripts/lesson4-images.mjs"
+    "images:l4": "node scripts/lesson4-images.mjs",
+    "corpus:l5": "python3 scripts/export-lesson5-web.py",
+    "corpus:l5:check": "python3 scripts/export-lesson5-web.py --check",
+    "audio:l5:prepare": "node scripts/prepare-lesson5-audio.mjs",
+    "audio:l5": "node scripts/generate-pronunciation-audio.mjs --scope=lesson5",
+    "audio:l5:verify": "node scripts/verify-lesson5-audio.mjs --publish"
   },
   "dependencies": {
     "hanzi-writer": "3.7.3",

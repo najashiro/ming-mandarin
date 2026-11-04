@@ -6,12 +6,13 @@ import { LinkedChineseText } from '@/components/LinkedChineseText';
 import { PinyinText } from '@/components/PinyinText';
 import { SpeakButton } from '@/components/SpeakButton';
 import { isCurriculumScope, scopeDefinitions } from '@/seed/curriculum';
-import lesson4 from '@/data/lesson4-public.json';
+import { lesson4, lesson5 } from '@/lib/active-corpus';
 
 export default async function ReadingsPage({ params }: { params: Promise<{ scope: string }> }) {
   const { scope } = await params;
   if (!isCurriculumScope(scope)) notFound();
-  const readings = scopeDefinitions[scope].lessonIds.includes(4) ? lesson4.readings : [];
+  const lessons = scopeDefinitions[scope].lessonIds;
+  const readings = [...(lessons.includes(4) ? lesson4.readings : []), ...(lessons.includes(5) ? lesson5.readings : [])];
   return <SiteShell><main><LessonHeader eyebrow={`${scopeDefinitions[scope].shortLabel} · 阅读`} title="Lecturas" description="Lee a tu ritmo y escucha el texto completo."/><CurriculumNav scope={scope} section="readings"/>
     <section className="corpus-dialogues shell">{readings.map(reading => <article className="corpus-dialogue" key={reading.id} id={reading.id}>
       <h2>{reading.title}</h2><p style={{ whiteSpace: 'pre-line', lineHeight: 2, fontSize: '1.25rem' }}><LinkedChineseText text={reading.hanzi} returnTo={`/study/${scope}/readings#${reading.id}`}/></p>

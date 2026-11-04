@@ -10,7 +10,7 @@ const items: { href: string; label: string; icon: MingIconName; key: string }[] 
   { href: '/', label: 'Inicio', icon: 'home', key: 'home' },
   { href: '/course', label: 'Lecciones', icon: 'book', key: 'course' },
   { href: '/practice', label: 'Práctica', icon: 'practice', key: 'practice' },
-  { href: '/study/l1-l2-l3-l4/games', label: 'Juegos', icon: 'games', key: 'games' },
+  { href: '/study/l1-l2-l3-l4-l5/games', label: 'Juegos', icon: 'games', key: 'games' },
   { href: '/progress', label: 'Progreso', icon: 'progress', key: 'progress' },
 ];
 export function SiteNav({ mobile = false }: { mobile?: boolean }) {

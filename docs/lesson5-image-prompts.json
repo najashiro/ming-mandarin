@@ -1,0 +1,1137 @@
+{
+  "styleId": "ming-vocabulary-transparent-subject-golden-v2",
+  "model": "gpt-image-1.5",
+  "entries": [
+    {
+      "wordId": "v-生日",
+      "slug": "birthday",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary photo cutout. Three adults standing head to shoes, one holds a small cake with lit candles and other two smile at the cake, no table, complete bodies. Landscape image with TRUE transparent background. Camera MUST be distant enough to show complete figures including feet. All subjects compact in right half, inside x=46-94%, y=8-92%. Every edge has a wide transparent margin. Nothing touches the image border. Photograph realistic natural humans, soft light, correct anatomy. NO waist crop, NO close-up, NO missing legs, NO bust portraits, NO text or UI, no backdrop, no floor. Small complete figures are preferable to cropped larger figures."
+    },
+    {
+      "wordId": "v-聚会",
+      "slug": "party",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: A compact group of four adult friends enjoying a friendly informal gathering, complete bodies.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-大家",
+      "slug": "party",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: A compact group of four adult friends enjoying a friendly informal gathering, complete bodies.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-参加",
+      "slug": "party",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: A compact group of four adult friends enjoying a friendly informal gathering, complete bodies.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-唱歌",
+      "slug": "sing",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: An adult woman singing into a handheld microphone, full body, mouth naturally open.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-唱",
+      "slug": "sing",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: An adult woman singing into a handheld microphone, full body, mouth naturally open.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-跳舞",
+      "slug": "dance",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: Two adults dancing together, relaxed elegant movement, full bodies.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-跳",
+      "slug": "jump",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: A young adult jumping upwards with both feet visibly off the ground, full body.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-送",
+      "slug": "give",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary photo cutout. Two adults standing head to shoes; one hands a small wrapped gift to the other, both people fully visible. Landscape image with TRUE transparent background. Camera MUST be distant enough to show complete figures including feet. All subjects compact in right half, inside x=46-94%, y=8-92%. Every edge has a wide transparent margin. Nothing touches the image border. Photograph realistic natural humans, soft light, correct anatomy. NO waist crop, NO close-up, NO missing legs, NO bust portraits, NO text or UI, no backdrop, no floor. Small complete figures are preferable to cropped larger figures."
+    },
+    {
+      "wordId": "v-礼物",
+      "slug": "gift",
+      "visual": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: One attractive wrapped present with a ribbon bow.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-蛋糕",
+      "slug": "cake",
+      "visual": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: One round frosted birthday cake on a small plate, with three plain candles, no lettering.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-盒",
+      "slug": "box",
+      "visual": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: One empty open cardboard box with its lid beside it.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-巧克力",
+      "slug": "chocolate",
+      "visual": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: One partially unwrapped dark chocolate bar with a few broken chocolate squares, plain foil without branding.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-龙",
+      "slug": "dragon",
+      "visual": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: One elegant traditional Chinese dragon sculpture with long serpentine body, antlers, four legs, no wings. Photographed sculpture, unmistakably Chinese dragon.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-欢迎",
+      "slug": "welcome",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary photo cutout. Two adults standing head to shoes; one welcomes the arriving visitor with a friendly open hand gesture. Landscape image with TRUE transparent background. Camera MUST be distant enough to show complete figures including feet. All subjects compact in right half, inside x=46-94%, y=8-92%. Every edge has a wide transparent margin. Nothing touches the image border. Photograph realistic natural humans, soft light, correct anatomy. NO waist crop, NO close-up, NO missing legs, NO bust portraits, NO text or UI, no backdrop, no floor. Small complete figures are preferable to cropped larger figures."
+    },
+    {
+      "wordId": "v-快乐",
+      "slug": "happy",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary photo cutout. One joyful smiling adult, standing from head to both shoes, relaxed open arms. Landscape image with TRUE transparent background. Camera MUST be distant enough to show complete figures including feet. All subjects compact in right half, inside x=46-94%, y=8-92%. Every edge has a wide transparent margin. Nothing touches the image border. Photograph realistic natural humans, soft light, correct anatomy. NO waist crop, NO close-up, NO missing legs, NO bust portraits, NO text or UI, no backdrop, no floor. Small complete figures are preferable to cropped larger figures."
+    },
+    {
+      "wordId": "v-介绍",
+      "slug": "introduce",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary photo cutout. Exactly THREE adults standing head to shoes; central adult extends an open hand toward one person while looking toward the other person, presenting the two people to one another. Landscape image with TRUE transparent background. Camera MUST be distant enough to show complete figures including feet. All subjects compact in right half, inside x=46-94%, y=8-92%. Every edge has a wide transparent margin. Nothing touches the image border. Photograph realistic natural humans, soft light, correct anatomy. NO waist crop, NO close-up, NO missing legs, NO bust portraits, NO text or UI, no backdrop, no floor. Small complete figures are preferable to cropped larger figures."
+    },
+    {
+      "wordId": "v-教",
+      "slug": "teach",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary photo cutout. Two adults standing head to shoes; teacher points at a notebook that the learner holds, no desk, both full bodies. Landscape image with TRUE transparent background. Camera MUST be distant enough to show complete figures including feet. All subjects compact in right half, inside x=46-94%, y=8-92%. Every edge has a wide transparent margin. Nothing touches the image border. Photograph realistic natural humans, soft light, correct anatomy. NO waist crop, NO close-up, NO missing legs, NO bust portraits, NO text or UI, no backdrop, no floor. Small complete figures are preferable to cropped larger figures."
+    },
+    {
+      "wordId": "v-写",
+      "slug": "write",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary photo cutout. A standing adult writing with a pencil in a notebook held at chest level, complete body from head to shoes. Landscape image with TRUE transparent background. Camera MUST be distant enough to show complete figures including feet. All subjects compact in right half, inside x=46-94%, y=8-92%. Every edge has a wide transparent margin. Nothing touches the image border. Photograph realistic natural humans, soft light, correct anatomy. NO waist crop, NO close-up, NO missing legs, NO bust portraits, NO text or UI, no backdrop, no floor. Small complete figures are preferable to cropped larger figures."
+    },
+    {
+      "wordId": "v-寿面",
+      "slug": "noodles",
+      "visual": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: A ceramic bowl of long Chinese longevity noodles with light broth and scallions, chopsticks beside the bowl, no cut noodles.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-干杯",
+      "slug": "toast",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary photo cutout. Two adults standing head to shoes, smiling and clinking two glasses, full bodies. Landscape image with TRUE transparent background. Camera MUST be distant enough to show complete figures including feet. All subjects compact in right half, inside x=46-94%, y=8-92%. Every edge has a wide transparent margin. Nothing touches the image border. Photograph realistic natural humans, soft light, correct anatomy. NO waist crop, NO close-up, NO missing legs, NO bust portraits, NO text or UI, no backdrop, no floor. Small complete figures are preferable to cropped larger figures."
+    },
+    {
+      "wordId": "v-音乐会",
+      "slug": "concert",
+      "visual": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: A small trio of adult musicians performing together, one violinist, one cellist and one flutist, complete instruments and bodies.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-老鼠",
+      "slug": "rat",
+      "visual": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: One realistic brown rat with long bare tail, complete body.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-鼠",
+      "slug": "rat",
+      "visual": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: One realistic brown rat with long bare tail, complete body.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-牛",
+      "slug": "ox",
+      "visual": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: One realistic sturdy ox, complete body and horns.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-老虎",
+      "slug": "tiger",
+      "visual": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: One realistic adult tiger with orange coat and black stripes, complete body and tail.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-虎",
+      "slug": "tiger",
+      "visual": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: One realistic adult tiger with orange coat and black stripes, complete body and tail.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-蛇",
+      "slug": "snake",
+      "visual": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: One realistic nonthreatening snake loosely coiled, complete body and head.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-马",
+      "slug": "horse",
+      "visual": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: One realistic chestnut horse standing, complete hooves and tail.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-羊",
+      "slug": "sheep",
+      "visual": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: One realistic woolly sheep standing, complete body.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-猴",
+      "slug": "monkey",
+      "visual": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: One realistic macaque monkey sitting, complete body and tail.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-鸡",
+      "slug": "rooster",
+      "visual": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: One realistic rooster with red comb and colorful tail, complete body.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-兔",
+      "slug": "rabbit",
+      "visual": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: One realistic rabbit, complete ears and body.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-狗",
+      "slug": "dog",
+      "visual": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: One realistic friendly golden retriever dog sitting, complete body and tail.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-猪",
+      "slug": "pig",
+      "visual": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      },
+      "status": "approved",
+      "reason": "Revisión del modelo: sujeto, encuadre completo y alfa. Sin revisión humana independiente.",
+      "prompt": "Use case: photorealistic-natural. Asset type: Mandarin vocabulary card cutout. Subject: One realistic healthy pink pig standing, complete body.\nNatural realistic educational photography, soft light, crisp fine detail. Isolate the entire subject on genuine transparent alpha, no background or floor. Horizontal canvas; place subject entirely within right half x=46–96%, y=6–94%; leave left half fully transparent for live text. Keep all meaningful body parts and objects visible, no cropping. No text, letters, numbers, symbols, logos, watermark, card frame, UI or checkerboard. No surrounding scenery or opaque shadows."
+    },
+    {
+      "wordId": "v-星期日",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-星期",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-事儿",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-日",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-歌",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-舞",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-号",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-月",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-不好意思",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-可惜",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-多大",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-出生",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-属",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-中文",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-就",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-英国",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-林强",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-不客气",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-客气",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-祝",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-一下",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-常常",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-常",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-昨天",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-一会儿",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-咱们",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-前天",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-后天",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-上星期一",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-下星期一",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-上个月",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-下个月",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-一月",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-二月",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-三月",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-四月",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-五月",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-六月",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-七月",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-八月",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-九月",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-十月",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-十一月",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-十二月",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-星期一",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-星期二",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-星期三",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-星期四",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-星期五",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-星期六",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-星期天",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    },
+    {
+      "wordId": "v-周末",
+      "slug": null,
+      "visual": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      },
+      "status": "text_only",
+      "reason": "Concepto abstracto, fecha o nombre: se practica mediante texto y contexto.",
+      "prompt": ""
+    }
+  ]
+}

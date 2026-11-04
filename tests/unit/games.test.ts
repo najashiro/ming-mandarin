@@ -10,7 +10,7 @@ import baseline from '../fixtures/reto-mixto-baseline.json';
 
 describe('cinco experiencias curriculares', () => {
   it('mantiene Reto Mixto primero y añade el juego de horas', () => {
-    expect(arcadeGames.map(game => game.id)).toEqual(['reto-mixto','vocabulario-mix','hora','conversacion','hanzi-lab']);
+    expect(arcadeGames.map(game => game.id)).toEqual(['reto-mixto','vocabulario-mix','hora','conversacion','hanzi-lab','cumpleanos']);
   });
   it('conserva el contenido del motor, datos y visuales de Reto Mixto', () => {
     for (const [path, hash] of Object.entries(baseline).filter(([path]) => !['components/RetoMixto.tsx', 'data/reto-mixto.ts'].includes(path))) expect(createHash('sha256').update(readFileSync(path, 'utf8').replace(/\r\n/g, '\n')).digest('hex'),path).toBe(hash);

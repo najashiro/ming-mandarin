@@ -84,5 +84,14 @@
     "original_listening_audio_supplied": false,
     "independent_human_review": false
   },
-  "baseline_query": "python3 MING_KNOWLEDGE/v2/query_v21.py --word <hanzi> --limit 8"
+  "baseline_query": "python3 MING_KNOWLEDGE/v2/query_v21.py --word <hanzi> --limit 8",
+  "runtime_extension": {
+    "version": "2.3.0",
+    "lesson": 5,
+    "entrypoint": "v2/lesson5/README.md",
+    "source": "v2/lesson5/content.json",
+    "query": "python3 MING_KNOWLEDGE/v2/query.py --lesson 5 --word 生日 --examples",
+    "validation": "python3 MING_KNOWLEDGE/v2/query.py --lesson 5 --validate",
+    "note": "L1–L4 documentary 2.2 cache remains historical; runtime combines it with the L5 extension."
+  }
 }
