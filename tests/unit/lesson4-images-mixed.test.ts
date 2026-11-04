@@ -45,7 +45,7 @@ describe('L4 reviewed images and mixed practice', () => {
     }
   });
   it('uses every approved vocabulary picture in its scope as quiz or feedback support', () => {
-    const entries=retoMixtoForScope('l1-l2-l3-l4', approved);
+    const entries=retoMixtoForScope('l1-l2-l3-l4-l5', approved);
     for(const picture of approved) {
       const entry=entries.find(entry=>entry.vocabularyId===picture.wordId);
       expect(entry, picture.wordId).toBeDefined();
@@ -58,7 +58,7 @@ describe('L4 reviewed images and mixed practice', () => {
     const entry=retoMixtoForScope('l4',published).find(entry=>entry.hanzi==='电视')!;
     expect(entry.imageable).toBe(false);
     expect(entry.supportImageSrc).toBeUndefined();
-    expect(retoMixtoForScope('l1-l2-l3-l4',[]).some(entry=>entry.imageable||entry.imageSrc||entry.supportImageSrc)).toBe(false);
+    expect(retoMixtoForScope('l1-l2-l3-l4-l5',[]).some(entry=>entry.imageable||entry.imageSrc||entry.supportImageSrc)).toBe(false);
   });
   it('keeps contextual food and temporal diagrams out of isolated-image quizzes', () => {
     const entries=retoMixtoForScope('l4',approved);

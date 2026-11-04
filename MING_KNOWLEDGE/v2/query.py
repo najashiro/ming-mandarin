@@ -41,6 +41,10 @@ def selected(row: dict, fields: list[str] | None) -> dict:
 
 
 def main() -> None:
+    # L5 is an additive, separately validated extension; preserve the historical v2.2 cache.
+    if '--lesson=5' in sys.argv or any(a == '--lesson' and i + 1 < len(sys.argv) and sys.argv[i+1] == '5' for i,a in enumerate(sys.argv)):
+        runpy.run_path(str(ROOT / 'lesson5/query.py'), run_name='__main__')
+        return
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--word', help='Exact Hanzi or vocabulary ID, e.g. 工作 or v-工作')
     ap.add_argument('--examples', action='store_true', help='With --word, query global pedagogical examples, including approved compounds')

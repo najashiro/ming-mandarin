@@ -1,9 +1,12 @@
+import { lesson5Conversations } from './lesson5-games';
 import type { CurriculumScope, SentenceEntry } from './types';
 import { getCurriculum } from '@/seed/curriculum';
 import { retoMixtoConversations, retoMixtoCorpus } from './reto-mixto';
 
-export type SceneKind = 'meeting' | 'busy' | 'food' | 'family' | 'doctor' | 'photo' | 'country';
+export type SceneKind = 'meeting' | 'busy' | 'food' | 'family' | 'doctor' | 'photo' | 'country' | 'birthday';
 export const sceneDefinitions: { sentenceId: string; kind: SceneKind; count?: number; instruction: string }[] = [
+  { sentenceId: 's-l5-1', kind: 'birthday', instruction: 'Felicita a tu amigo por su cumpleaños.' },
+  { sentenceId: 's-l5-3', kind: 'birthday', instruction: 'Di que le regalas un pastel de cumpleaños.' },
   { sentenceId: 's-wojiao', kind: 'meeting', instruction: 'Preséntate como Ma Dawei.' },
   { sentenceId: 's-busy', kind: 'busy', instruction: 'Describe cómo estás con todo este trabajo.' },
   { sentenceId: 's-not-too-busy', kind: 'meeting', instruction: 'Di que no estás muy ocupado.' },
@@ -26,7 +29,7 @@ export function gamesContent(scope: CurriculumScope) {
     const prompt = retoMixtoCorpus.find(entry => entry.hanzi === item.promptHanzi);
     return answer && prompt ? [{ ...item, answer, prompt }] : [];
   });
-  return { ...curriculum, scenes, conversations };
+  return { ...curriculum, scenes, conversations: [...conversations, ...(curriculum.definition.lessonIds.includes(5) ? lesson5Conversations : [])] };
 }
 export type SceneChallenge = ReturnType<typeof gamesContent>['scenes'][number];
 export type ConversationChallenge = ReturnType<typeof gamesContent>['conversations'][number];

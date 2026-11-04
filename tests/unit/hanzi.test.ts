@@ -68,11 +68,11 @@ describe('laboratorio Hanzi', () => {
   });
 
   it('organiza un solo corpus canónico por las seis unidades reales', () => {
-    expect(canonicalCharacters).toHaveLength(223);
-    expect(new Set(canonicalCharacters.map((item) => item.hanzi)).size).toBe(223);
-    expect(new Set(canonicalCharacters.map((item) => item.id)).size).toBe(223);
-    expect(hanziUnits.map((unit) => unit.id)).toEqual(['1.1','1.2','2.1','2.2','3.1','3.2','4.1','4.2']);
-    expect(hanziUnits.map((unit) => unit.characters.length)).toEqual([40,26,57,42,36,39,33,26]);
+    expect(canonicalCharacters).toHaveLength(269);
+    expect(new Set(canonicalCharacters.map((item) => item.hanzi)).size).toBe(269);
+    expect(new Set(canonicalCharacters.map((item) => item.id)).size).toBe(269);
+    expect(hanziUnits.map((unit) => unit.id)).toEqual(['1.1','1.2','2.1','2.2','3.1','3.2','4.1','4.2','5.1','5.2']);
+    expect(hanziUnits.map((unit) => unit.characters.length)).toEqual([40,26,57,42,36,39,33,26,47,22]);
     expect(hanziUnits.slice(0,6).map((unit) => canonicalCharacters.filter((item) => item.introducedIn === unit.id).length)).toEqual([40,18,45,35,29,25]);
     expect(canonicalCharacters.every((item) => item.writingRequired && item.id === `c-${item.hanzi}`)).toBe(true);
   });
@@ -85,7 +85,7 @@ describe('laboratorio Hanzi', () => {
   });
 
   it('distingue introducción y repaso sin crear copias por unidad', () => {
-    expect(Object.keys(hanziSourceGroups)).toEqual(['1.1','1.2','2.1','2.2','3.1','3.2','4.1','4.2']);
+    expect(Object.keys(hanziSourceGroups)).toEqual(['1.1','1.2','2.1','2.2','3.1','3.2','4.1','4.2','5.1','5.2']);
     const particle = allCurriculumCharacters.find((item) => item.hanzi === '么')!;
     expect(particle.introducedIn).toBe('1.1');
     expect(particle.appearsIn).toEqual(['1.1','1.2']);
@@ -94,7 +94,7 @@ describe('laboratorio Hanzi', () => {
     expect(canonicalCharacters.find((item) => item.hanzi === '也')?.appearsIn).toEqual(['1.1','1.2']);
     expect(canonicalCharacters.find((item) => item.hanzi === '这')?.appearsIn).toEqual(['2.1','2.2']);
     expect(canonicalCharacters.find((item) => item.hanzi === '那')).toMatchObject({ introducedIn:'2.1',appearsIn:['2.1','2.2'] });
-    expect(canonicalCharacters.find((item) => item.hanzi === '生')).toMatchObject({ introducedIn:'2.1',appearsIn:['2.1','3.1','4.2'] });
+    expect(canonicalCharacters.find((item) => item.hanzi === '生')).toMatchObject({ introducedIn:'2.1',appearsIn:['2.1','3.1','4.2','5.1'] });
     expect(canonicalCharacters.find((item) => item.hanzi === '谁')).toMatchObject({ id:'c-谁',introducedIn:'2.1',appearsIn:['2.1','3.1'] });
     expect(canonicalCharacters.find((item) => item.hanzi === '张')).toMatchObject({ id:'c-张',introducedIn:'3.1',appearsIn:['3.1','3.2'],sourceRole:'core' });
     expect(canonicalCharacters.find((item) => item.hanzi === '平')).toMatchObject({ introducedIn:'3.2',pinyin:'píng' });

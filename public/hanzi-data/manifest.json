@@ -930,5 +930,261 @@
   "主": {
     "available": true,
     "strokeCount": 5
+  },
+  "星": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "期": {
+    "available": true,
+    "strokeCount": 12
+  },
+  "事": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "聚": {
+    "available": true,
+    "strokeCount": 14
+  },
+  "唱": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "歌": {
+    "available": true,
+    "strokeCount": 14
+  },
+  "跳": {
+    "available": true,
+    "strokeCount": 13
+  },
+  "舞": {
+    "available": true,
+    "strokeCount": 14
+  },
+  "参": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "号": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "月": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "惜": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "送": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "礼": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "蛋": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "糕": {
+    "available": true,
+    "strokeCount": 16
+  },
+  "盒": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "巧": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "克": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "出": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "属": {
+    "available": true,
+    "strokeCount": 12
+  },
+  "龙": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "文": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "就": {
+    "available": true,
+    "strokeCount": 12
+  },
+  "强": {
+    "available": true,
+    "strokeCount": 12
+  },
+  "迎": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "快": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "客": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "气": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "祝": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "介": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "绍": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "常": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "教": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "写": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "昨": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "寿": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "咱": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "干": {
+    "available": true,
+    "strokeCount": 3
+  },
+  "杯": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "前": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "后": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "音": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "鼠": {
+    "available": true,
+    "strokeCount": 13
+  },
+  "虎": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "蛇": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "马": {
+    "available": true,
+    "strokeCount": 3
+  },
+  "猴": {
+    "available": true,
+    "strokeCount": 12
+  },
+  "鸡": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "周": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "末": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "兔": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "猪": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "首": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "她": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "娜": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "宋": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "华": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "贺": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "其": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "耳": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "虫": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "皿": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "尸": {
+    "available": true,
+    "strokeCount": 3
   }
 }

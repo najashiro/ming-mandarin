@@ -8,6 +8,8 @@ export type DialogueSpeakerPresentation = {
 };
 
 export const dialogueSpeakers = [
+  { id: 'speaker-lin-qiang', name: '林强', aliases: [], token: 'oliva', background: '#EDF1DD', accent: '#566A30' },
+  { id: 'speaker-everyone', name: '大家', aliases: [], token: 'turquesa', background: '#DEF1EE', accent: '#316F68' },
   { id: 'speaker-ma-dawei', name: '马大为', aliases: [], token: 'jade', background: '#E7F2E9', accent: '#2B6650' },
   { id: 'speaker-song-hua', name: '宋华', aliases: [], token: 'azul', background: '#E7EFFA', accent: '#3C6598' },
   { id: 'speaker-ding-libo', name: '丁力波', aliases: [], token: 'melocoton', background: '#FAEBDD', accent: '#965A27' },

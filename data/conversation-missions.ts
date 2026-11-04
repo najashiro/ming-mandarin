@@ -10,7 +10,7 @@ type MissionTurn = {
 
 type MissionDefinition = {
   id: string;
-  lesson: 1 | 2 | 3;
+  lesson: 1 | 2 | 3 | 5;
   title: string;
   role: string;
   partner: string;
@@ -22,6 +22,15 @@ type MissionDefinition = {
 // Role cards are pedagogical framing in Spanish. All Chinese, readings and
 // accepted responses resolve from the existing curriculum, without new keys.
 export const conversationMissionDefinitions: MissionDefinition[] = [
+  { id: 'cumpleanos-l5', lesson: 5, title: 'Una fiesta y una sorpresa', role: 'Los personajes del diálogo', partner: 'Tu compañero',
+    objective: 'Practicar la fecha, el regalo, la edad y el nombre en el diálogo del cumpleaños.',
+    facts: ['Fiesta: 25 de octubre.', 'Lin Na regala un pastel.', 'Contexto del libro: 2020; Lin Qiang nació en 1988 y tiene 32 años.', 'Nombre chino del hermano: Lin Qiang.'],
+    turns: [
+      { conversationId: 'rm-conv-l5-4', task: 'Responde la fecha de la fiesta.', feedback: 'Primero el mes, después el día: 十月二十五号。', distractorSentenceIds: ['s-l5-wb-19','s-l5-14'] },
+      { conversationId: 'rm-conv-l5-7', task: 'Cuenta el regalo de Lin Na y devuelve la pregunta.', feedback: 'El modelo incluye el pastel y la pregunta por el regalo del amigo.', distractorSentenceIds: ['s-l5-15','s-l5-18'] },
+      { conversationId: 'rm-conv-l5-9', task: 'Indica el año de nacimiento y la edad de Lin Qiang.', feedback: 'Usa los datos históricos del diálogo: 1988 y 32 años.', distractorSentenceIds: ['s-l5-wb-21','s-l5-14'] },
+      { conversationId: 'rm-conv-l5-12', task: 'Di el nombre chino del amigo.', feedback: 'Su nombre chino es 林强, Lin Qiang.', distractorSentenceIds: ['s-l5-10','s-l5-11'] },
+    ] },
   {
     id: 'presentacion', lesson: 1, title: 'Tu primera presentación',
     role: 'Ma Dawei', partner: 'Un nuevo compañero',

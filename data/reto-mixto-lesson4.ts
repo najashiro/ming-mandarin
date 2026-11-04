@@ -1,3 +1,4 @@
+import { lesson5Vocabulary, lesson5Sentences } from '@/seed/lesson5';
 import { lesson4Vocabulary, lesson4Sentences } from '@/seed/lesson4';
 import { retoMixtoCorpus, type RetoMixtoEntry } from '@/data/reto-mixto';
 import { audioForMandarinText } from '@/lib/mandarin-audio';
@@ -24,10 +25,29 @@ const sentenceEntries: RetoMixtoEntry[] = lesson4Sentences.map(sentence => ({
   distractorGroup: 'l4-phrase', playableModes: ['construct-response'], tokens: sentence.tokens,
 }));
 
+export const retoMixtoLesson5: RetoMixtoEntry[] = lesson5Vocabulary.map(word => ({
+  id: `rm-l5-${word.id}`, hanzi: word.hanzi, pinyin: word.pinyin, meaningEs: word.translation,
+  vocabularyId: word.id,
+  lesson: 5, lessons: [5], sources: [word.source], sourceTypes: [word.source.type],
+  category: word.isCore ? 'core' : 'supplementary', imageable: false,
+  audioSrc: audioForMandarinText(word.hanzi, word.pinyin) ?? '',
+  hanziTargets: [...word.hanzi].filter(character => known.has(character)),
+  distractorGroup: 'l5-vocabulary', playableModes: ['audio-hanzi'],
+}));
+const sentenceEntries5: RetoMixtoEntry[] = lesson5Sentences.map(sentence => ({
+  id: `rm-l5-${sentence.id}`, hanzi: sentence.hanzi, pinyin: sentence.pinyin, meaningEs: sentence.translation,
+  lesson: 5, lessons: [5], sources: [sentence.source], sourceTypes: [sentence.source.type], category: 'phrase',
+  imageable: false, audioSrc: audioForMandarinText(sentence.hanzi, sentence.pinyin) ?? '',
+  hanziTargets: [...sentence.hanzi].filter(character => known.has(character)),
+  distractorGroup: 'l5-phrase', playableModes: ['construct-response'], tokens: sentence.tokens,
+}));
+
 // Only consume current server-resolved approvals. Empty media hides legacy art too.
 export function retoMixtoForScope(scope: CurriculumScope, media: readonly VocabularyMediaEntry[] = []): RetoMixtoEntry[] {
   const words = getVocabularySet(scope);
-  const source = scope === 'l4' ? [...retoMixtoLesson4, ...sentenceEntries]
+  const source = scope === 'l5' ? [...retoMixtoLesson5, ...sentenceEntries5]
+    : scope === 'l1-l2-l3-l4-l5' ? [...retoMixtoCorpus, ...retoMixtoLesson4, ...sentenceEntries, ...retoMixtoLesson5, ...sentenceEntries5]
+    : scope === 'l4' ? [...retoMixtoLesson4, ...sentenceEntries]
     : scope === 'l1-l2-l3-l4' ? [...retoMixtoCorpus, ...retoMixtoLesson4, ...sentenceEntries] : retoMixtoCorpus;
   const entries = new Map<string, RetoMixtoEntry>();
   for (const entry of source) {
@@ -41,7 +61,7 @@ export function retoMixtoForScope(scope: CurriculumScope, media: readonly Vocabu
     if (previous) { previous.vocabularyId = word.id; continue; }
     const image = imageForWord(word.id, media);
     if (!image) continue;
-    const lessons = word.lessons.filter((lesson): lesson is LessonNumber => [1,2,3,4].includes(lesson));
+    const lessons = word.lessons.filter((lesson): lesson is LessonNumber => [1,2,3,4,5].includes(lesson));
     entries.set(`vocab:${word.id}`, {
       id: `rm-vocab-${word.id}`, vocabularyId: word.id, hanzi: word.hanzi, pinyin: word.pinyin, meaningEs: word.spanish,
       lesson: lessons[0], lessons, sources: [], sourceTypes: [], category: 'supplementary', imageable: false,

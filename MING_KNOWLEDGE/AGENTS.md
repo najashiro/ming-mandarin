@@ -1,3 +1,7 @@
+## Extensión web L5 · 2.3.0
+
+La lección 5 está en `MING_KNOWLEDGE/v2/lesson5/content.json` (ruta desde la raíz). Consulta `lesson5/README.md` y `query.py --lesson 5 --word 生日 --examples` desde v2. La proyección web combina L1–L4 con L5. El usuario autorizó esta actualización integral, incluidos audio e imágenes; las restricciones históricas sobre cambiar runtime no bloquean ese encargo. Las tablas documentales 2.2 y sus validadores conservan su alcance L1–L4; los datos L5 se validan separadamente con `query.py --lesson 5 --validate`. No describir los conteos históricos como totales del sitio ampliado.
+
 ## Actualización activa 2.2.0 — lección 4
 
 La base documental activa es **2.2.0**, no 2.1.0. Consulta `v2/source-v22.json`, `v2/RELEASE_2_2_0.md` y `v2/lesson4/README.md`. La entrada global `v2/query.py` incluye L4; `v2/query_v21.py` conserva los lotes anteriores. Los libros básico y de ejercicios son fuentes primarias según `SOURCE_AUTHORITY.json`. Los diálogos canónicos proceden íntegramente del libro y las lecturas de hojas no determinan pronunciación contextual.

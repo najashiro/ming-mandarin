@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import corpus from '@/data/corpus-v21-public.json';
+import corpus from '@/lib/active-corpus';
 import { dialogueSpeakerFor, dialogueSpeakers } from '@/data/dialogue-speakers';
 
 describe('dialogue speaker presentation registry', () => {

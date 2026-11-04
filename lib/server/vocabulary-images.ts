@@ -2,6 +2,7 @@ import 'server-only';
 import { createHash } from 'node:crypto';
 import promptCatalog from '@/docs/vocabulary-image-prompts.json';
 import lesson4Prompts from '@/docs/lesson4-image-prompts.json';
+import lesson5Prompts from '@/docs/lesson5-image-prompts.json';
 import lesson4 from '@/data/lesson4-public.json';
 import { vocabularyCatalog, getVocabularyLesson } from '@/lib/vocabulary';
 import { splitImageCorrection, withImageCorrection } from '@/lib/image-prompt-correction';
@@ -17,7 +18,7 @@ export type AdminVocabularyImageEntry = VocabularyMediaEntry & {
   lesson: number | null; lessons: number[]; correction: string;
 };
 const prompts = new Map<string, { prompt: string; hanzi?: string; pinyin?: string; spanish?: string }>(promptCatalog.entries.map(entry => [entry.wordId, entry]));
-for (const entry of lesson4Prompts.entries) if (entry.prompt) prompts.set(entry.wordId, { prompt: entry.prompt });
+for (const entry of [...lesson4Prompts.entries, ...lesson5Prompts.entries]) if (entry.prompt) prompts.set(entry.wordId, { prompt: entry.prompt });
 const words = new Map(vocabularyCatalog.map(word => [word.id, word]));
 const digest = (prompt: string) => createHash('sha256').update(prompt).digest('hex');
 const columns = 'word_id,status,prompt,asset_sha256,prompt_sha256,revision,reviewed_at';
@@ -32,6 +33,12 @@ async function reviewRows() {
 }
 
 export async function publishedVocabularyMedia(): Promise<VocabularyMediaEntry[]> {
+  // Isolated Vercel previews have no review database or administrative writes.
+  // Show the committed selection there without granting production DB access.
+  const isolatedPreview = process.env.VERCEL_ENV === 'preview'
+    && !process.env.SUPABASE_URL && !process.env.NEXT_PUBLIC_SUPABASE_URL
+    && !process.env.SUPABASE_SECRET_KEY && !process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (isolatedPreview) return resolvePublishedImages(vocabularyMedia, []);
   const { rows, storageReady } = await reviewRows();
   // A storage outage must not republish a photo an administrator hid.
   return storageReady ? resolvePublishedImages(vocabularyMedia, rows) : [];
@@ -57,7 +64,7 @@ export async function listVocabularyImageReviews() {
       reviewedAt: review?.reviewed_at ?? null, revision: review?.revision ?? 0,
     };
   });
-  const planned = lesson4Prompts.entries.filter(entry => !vocabularyMedia.some(image => image.wordId === entry.wordId)).map(entry => {
+  const planned = [...lesson4Prompts.entries, ...lesson5Prompts.entries].filter(entry => !vocabularyMedia.some(image => image.wordId === entry.wordId)).map(entry => {
     const word = words.get(entry.wordId);
     return { wordId: entry.wordId, hanzi: word?.hanzi ?? entry.wordId, spanish: word?.spanish ?? '',
       prompt: entry.prompt, reason: entry.reason, status: entry.status };

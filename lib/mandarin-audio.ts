@@ -1,3 +1,5 @@
+import lesson5Audio from '@/data/lesson5-audio.json';
+import lesson5Available from '@/data/lesson5-audio-available.json';
 import lesson4Audio from '@/data/lesson4-audio.json';
 import lesson4Available from '@/data/lesson4-audio-available.json';
 import manifest from '@/data/mandarin-audio.json';
@@ -31,6 +33,13 @@ for (const clip of lesson4Audio.clips) {
   // Keep established generic readings. Explicit readings disambiguate L4.
   lesson4ByText.set(normalizeMandarin(clip.input), src);
   if (clip.expectedPinyin && !clipsByReading.has(readingKey(clip.input, clip.expectedPinyin))) clipsByReading.set(readingKey(clip.input, clip.expectedPinyin), src);
+}
+
+for (const clip of lesson5Audio.clips) {
+  if (!(lesson5Available.files as string[]).includes(clip.file)) continue;
+  const src = `/audio/mandarin/${clip.file}`;
+  lesson4ByText.set(normalizeMandarin(clip.input), src);
+  if (clip.expectedPinyin) clipsByReading.set(readingKey(clip.input, clip.expectedPinyin), src);
 }
 
 export function audioForMandarinText(text: string, pinyin?: string): string | undefined {

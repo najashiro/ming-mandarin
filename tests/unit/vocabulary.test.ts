@@ -5,7 +5,8 @@ import { parseVocabularyState, vocabularyStorageKey } from '@/lib/vocabulary-sto
 import { availablePracticeTypes, imageForWord, vocabularyMedia } from '@/lib/vocabulary-media';
 import { resolveHanziGlyph } from '@/lib/hanzi/navigation';
 import { audioForMandarinText } from '@/lib/mandarin-audio';
-import corpus from '@/data/corpus-v21-public.json';
+import corpus from '@/lib/active-corpus';
+import baseline from '@/data/corpus-v21-public.json';
 import { publicExamplesForVocabulary } from '@/lib/vocabulary-examples';
 import { canonicalCharacters } from '@/seed/characters';
 import { curriculumScopes } from '@/seed/curriculum';
@@ -53,13 +54,13 @@ describe('vocabulario activo: evidencia, búsqueda y recursos', () => {
       expect(existsSync(`public${media.src}`)).toBe(true);
     }
     for (const word of vocabularyCatalog.filter(word => word.visual_ming.visual_mode === 'none')) expect(imageForWord(word.id)).toBeUndefined();
-    expect(vocabularyMedia.filter(media => media.status === 'approved')).toHaveLength(62);
+    expect(vocabularyMedia.filter(media => media.status === 'approved')).toHaveLength(95);
     expect(imageForWord(vocabularyCatalog.find(word => word.hanzi === '真')!.id)).toBeUndefined();
     for (const hanzi of ['猫', '饺子', '中国', '老师']) expect(imageForWord(vocabularyCatalog.find(word => word.hanzi === hanzi)!.id)).toBeDefined();
     for (const word of vocabularyCatalog.filter(word => !word.visual_ming.image_quiz_eligible)) expect(availablePracticeTypes(word)).not.toContain('image');
   });
   it('abre 宠 y 物 como consultas sin inventar destinos para otros glifos', () => {
-    for (const character of pet.hanzi) expect(resolveHanziGlyph(character)).toMatchObject({ kind: 'supplementary', character });
+    for (const character of pet.hanzi) expect(resolveHanziGlyph(character)).toMatchObject({ kind: character === '物' ? 'curricular' : 'supplementary', character });
     expect(resolveHanziGlyph('宠物').kind).toBe('unavailable');
   });
   it('no mezcla lecturas distintas en audio', () => {
@@ -242,9 +243,9 @@ describe('partición exclusiva y ejemplos globales', () => {
     expect(getVocabularyLesson(cat)).toBe(3);
   });
   it('las fichas conservan apoyos históricos y ejemplos únicos', () => {
-    expect(vocabularyCatalog).toHaveLength(391);
+    expect(vocabularyCatalog).toHaveLength(469);
     expect(vocabularyCatalog.filter(word => word.lessons.some(lesson => lesson < 4))).toHaveLength(337);
-    expect(corpus.phrases).toHaveLength(635);
+    expect(baseline.phrases).toHaveLength(635);
     for (const word of vocabularyCatalog) {
       expect(word.pinyin && word.spanish).toBeTruthy();
       const examples = examplesForWord(word);
@@ -255,7 +256,7 @@ describe('partición exclusiva y ejemplos globales', () => {
     expect(['l1', 'l2', 'l3', 'l1-l2-l3'].map(scope => getVocabularySet(scope as 'l1').length)).toEqual([85, 126, 116, 327]);
   });
   it('define cinco alcances elegibles sin nombres personales y conserva lugares, palabras completas y monosílabos', () => {
-    expect(vocabularyMixScopes).toEqual(['l1', 'l2', 'l3', 'l4', 'l1-l2', 'l1-l2-l3', 'l1-l2-l3-l4']);
+    expect(vocabularyMixScopes).toEqual(['l1', 'l2', 'l3', 'l4', 'l5', 'l1-l2-l3-l4-l5', 'l1-l2', 'l1-l2-l3', 'l1-l2-l3-l4']);
     const sets = Object.fromEntries(vocabularyMixScopes.map(scope => [scope, getVocabularyMixSet(scope)]));
     expect((['l1','l2','l3','l1-l2','l1-l2-l3'] as const).map(scope => sets[scope].length)).toEqual([68, 122, 110, 190, 300]);
     for (const words of Object.values(sets)) expect(new Set(words.map(word => word.id)).size).toBe(words.length);

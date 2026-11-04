@@ -1,4 +1,4 @@
-import corpus, { lesson4 } from '@/lib/active-corpus';
+import corpus, { lesson4, lesson5 } from '@/lib/active-corpus';
 import type { CurriculumScope } from '@/data/types';
 import { scopeDefinitions } from '@/seed/curriculum';
 import { publicExamplesForVocabulary } from '@/lib/vocabulary-examples';
@@ -7,12 +7,14 @@ export type ActiveWord = (typeof corpus.vocabulary)[number];
 export type VocabularyExample = { id: string; phraseId: string; hanzi: string; pinyin: string; spanish: string; lessons: number[] };
 export type Selection = 'new' | 'supplementary' | 'context' | 'review' | 'pending';
 export type ContentLevel = 'basic' | 'hard';
-export const vocabularyMixScopes: readonly CurriculumScope[] = ['l1', 'l2', 'l3', 'l4', 'l1-l2', 'l1-l2-l3', 'l1-l2-l3-l4'];
+export const vocabularyMixScopes: readonly CurriculumScope[] = ['l1', 'l2', 'l3', 'l4', 'l5', 'l1-l2-l3-l4-l5', 'l1-l2', 'l1-l2-l3', 'l1-l2-l3-l4'];
 export const vocabularyMixScopeLabels: Record<CurriculumScope, string> = {
   l1: 'Lección 1',
   l2: 'Lección 2',
   l3: 'Lección 3',
   l4: 'Lección 4',
+  l5: 'Lección 5',
+  'l1-l2-l3-l4-l5': 'Acumulado hasta lección 5',
   'l1-l2-l3-l4': 'Acumulado hasta lección 4',
   'l1-l2': 'Acumulado hasta lección 2',
   'l1-l2-l3': 'Acumulado hasta lección 3',
@@ -30,7 +32,7 @@ function included(link: ActiveWord['curriculumLinks'][number]) {
 }
 export function selectVocabulary(scope: CurriculumScope, selection: Selection = 'review', level: ContentLevel = 'hard') {
   const lessons: readonly number[] = scopeDefinitions[scope].lessonIds;
-  return (scope === 'l4' ? lesson4.vocabulary as ActiveWord[] : vocabularyCatalog).filter(word => {
+  return (scope === 'l5' ? lesson5.vocabulary as ActiveWord[] : scope === 'l4' ? lesson4.vocabulary as ActiveWord[] : vocabularyCatalog).filter(word => {
     const links = word.curriculumLinks.filter(link => lessons.includes(link.lesson));
     if (selection === 'pending') return links.length > 0 && !links.some(included);
     return links.some(link => {
@@ -44,10 +46,10 @@ export function selectVocabulary(scope: CurriculumScope, selection: Selection = 
 }
 
 // Presentation partition, built once from the unchanged documentary eligibility.
-export type VocabularyLesson = 1 | 2 | 3 | 4;
+export type VocabularyLesson = 1 | 2 | 3 | 4 | 5;
 const vocabularyLessonById = new Map<string, VocabularyLesson>();
-const exclusiveLessons: Record<VocabularyLesson, ActiveWord[]> = { 1: [], 2: [], 3: [], 4: [] };
-for (const lesson of [1, 2, 3, 4] as const) {
+const exclusiveLessons: Record<VocabularyLesson, ActiveWord[]> = { 1: [], 2: [], 3: [], 4: [], 5: [] };
+for (const lesson of [1, 2, 3, 4, 5] as const) {
   for (const word of selectVocabulary(`l${lesson}`)) {
     if (vocabularyLessonById.has(word.id)) continue;
     vocabularyLessonById.set(word.id, lesson);
@@ -56,12 +58,14 @@ for (const lesson of [1, 2, 3, 4] as const) {
 }
 export const accumulatedVocabulary = [...exclusiveLessons[1], ...exclusiveLessons[2], ...exclusiveLessons[3]];
 export const accumulatedVocabularyL4 = [...accumulatedVocabulary, ...exclusiveLessons[4]];
+export const accumulatedVocabularyL5 = [...accumulatedVocabularyL4, ...exclusiveLessons[5]];
 export function getVocabularyLesson(word: Pick<ActiveWord, 'id'>): VocabularyLesson | undefined {
   return vocabularyLessonById.get(word.id);
 }
 const vocabularySets: Record<CurriculumScope, ActiveWord[]> = {
   l1: exclusiveLessons[1], l2: exclusiveLessons[2], l3: exclusiveLessons[3],
   'l1-l2': [...exclusiveLessons[1], ...exclusiveLessons[2]], 'l1-l2-l3': [...exclusiveLessons[1], ...exclusiveLessons[2], ...exclusiveLessons[3]],
+  l5: lesson5.vocabulary as ActiveWord[], 'l1-l2-l3-l4-l5': accumulatedVocabularyL5,
   l4: lesson4.vocabulary as ActiveWord[], 'l1-l2-l3-l4': accumulatedVocabularyL4,
 };
 const essentialSets = Object.fromEntries(Object.entries(vocabularySets).map(([scope, words]) => {
@@ -80,7 +84,7 @@ export const vocabularyMixExcludedIds = new Set([
   'v-马大为', 'v-宋华', 'v-丁力波', 'v-林娜', 'v-王小云', 'v-陆雨平',
   'v-马丽', 'v-宋', 'v-力波', 'v-大为', 'v-小云', 'v-王', 'v-陆', 'v-陈',
   'v-贝贝', 'v-约翰', 'v-张华', 'v-大卫', 'v-李', 'v-张王冉', 'v-梅西',
-  'v-成龙', 'v-巩俐', 'v-姚明', 'v-马云', 'v-林', 'v-玛丽',
+  'v-林强', 'v-成龙', 'v-巩俐', 'v-姚明', 'v-马云', 'v-林', 'v-玛丽',
 ]);
 
 export function getVocabularyMixSet(scope: CurriculumScope): ActiveWord[] {
@@ -92,7 +96,7 @@ export function getVocabularyMixSet(scope: CurriculumScope): ActiveWord[] {
   });
 }
 export function searchGlobalVocabulary(query: string) {
-  return searchVocabulary(accumulatedVocabularyL4, query);
+  return searchVocabulary(accumulatedVocabularyL5, query);
 }
 
 // The public projection owns eligibility, pedagogical links and ordering.

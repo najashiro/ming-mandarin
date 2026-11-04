@@ -27,17 +27,17 @@ export const viewport: Viewport = { width: 'device-width', initialScale: 1, view
 
 export const metadata: Metadata = {
   metadataBase: new URL(canonicalOrigin()),
-  title: { default: 'Míng · Mandarín activo L1–L4', template: '%s · Míng' },
+  title: { default: 'Míng · Mandarín activo L1–L5', template: '%s · Míng' },
   description: 'Aprende mandarín a tu ritmo. Cuatro lecciones con vocabulario, audio, diálogos, escritura Hanzi y juegos para practicar cada día.',
   applicationName: 'Míng · Mandarín activo',
   manifest: '/manifest.webmanifest',
   openGraph: {
     title: 'Míng · Tu próximo paso habla chino',
-    description: 'Lecciones 1–4 de mandarín: práctica activa, exámenes por alcance y progreso persistente.',
+    description: 'Lecciones 1–5 de mandarín: práctica activa, exámenes por alcance y progreso persistente.',
     locale: 'es_PE', type: 'website',
     images: [{ url: '/images/ming-study.webp', width: 1536, height: 1024, alt: 'Míng: un espacio para aprender mandarín a tu ritmo' }],
   },
-  twitter: { card: 'summary_large_image', title: 'Míng · Mandarín activo', description: 'Aprende mandarín con cuatro lecciones y práctica a tu ritmo.', images: ['/images/ming-study.webp'] },
+  twitter: { card: 'summary_large_image', title: 'Míng · Mandarín activo', description: 'Aprende mandarín con cinco lecciones y práctica a tu ritmo.', images: ['/images/ming-study.webp'] },
   icons: { icon: '/favicon.svg' },
 };
 
