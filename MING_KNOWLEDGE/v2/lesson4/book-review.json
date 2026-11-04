@@ -1,0 +1,104 @@
+{
+  "batch": "ming-l4-pdf-reread-20261104",
+  "review_method": "Original textbook PDF pages 1–13 rendered and visually read, compared with typed corpus; model review, no independent human review.",
+  "source_id": "SRC-BOOK-04",
+  "pdf_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "printed_pages": [
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125
+  ],
+  "collocation_links": [
+    {
+      "vocab_id": "v-多",
+      "text": "很多课",
+      "phrase_id": "PH-347200d6cbed72b9",
+      "vocabulary_evidence_id": "VE-L4-BOOK-04-03-02-002",
+      "phrase_evidence_id": "PE-L4-55ec262f75fa576a"
+    },
+    {
+      "vocab_id": "v-多",
+      "text": "很多人",
+      "phrase_id": "PH-6194331b033edafc",
+      "vocabulary_evidence_id": "VE-L4-BOOK-04-03-02-002",
+      "phrase_evidence_id": "PE-L4-903feb19004da3b7"
+    },
+    {
+      "vocab_id": "v-电影",
+      "text": "看电影",
+      "phrase_id": "PH-24c8fca13f093fc5",
+      "vocabulary_evidence_id": "VE-L4-BOOK-04-04-03-004",
+      "phrase_evidence_id": "PE-L4-94783818dbca3597"
+    },
+    {
+      "vocab_id": "v-分",
+      "text": "十点十分",
+      "phrase_id": "PH-0eeef2be09fdbe25",
+      "vocabulary_evidence_id": "VE-L4-BOOK-04-07-02-003",
+      "phrase_evidence_id": "PE-L4-269284b1091a71c7"
+    },
+    {
+      "vocab_id": "v-回",
+      "text": "回家",
+      "phrase_id": "PH-9a6ce4cf2cab6307",
+      "vocabulary_evidence_id": "VE-L4-BOOK-04-07-02-004",
+      "phrase_evidence_id": "PE-L4-3517a74005a47815"
+    },
+    {
+      "vocab_id": "v-回",
+      "text": "回国",
+      "phrase_id": "PH-021b0848f33436ee",
+      "vocabulary_evidence_id": "VE-L4-BOOK-04-07-02-004",
+      "phrase_evidence_id": "PE-L4-b023b5c6cde57df5"
+    },
+    {
+      "vocab_id": "v-学校",
+      "text": "回学校",
+      "phrase_id": "PH-a95bbf0633d3bbea",
+      "vocabulary_evidence_id": "VE-L4-BOOK-04-07-02-005",
+      "phrase_evidence_id": "PE-L4-6222e90cf8266d3f"
+    },
+    {
+      "vocab_id": "v-有意思",
+      "text": "没有意思",
+      "phrase_id": "PH-ca1822ce2e8bb2f3",
+      "vocabulary_evidence_id": "VE-L4-BOOK-04-07-02-017",
+      "phrase_evidence_id": "PE-L4-7175afeba8ad3c12"
+    }
+  ],
+  "display_selections": [
+    {
+      "phrase_id": "PH-0eeef2be09fdbe25",
+      "previous_aggregate_hanzi": "十点十分____",
+      "phrase_evidence_id": "PE-L4-269284b1091a71c7",
+      "hanzi": "十点十分",
+      "pinyin_ming": "Shí diǎn shí fēn",
+      "traduccion_ming": "las diez y diez",
+      "reason": "The book prints this complete collocation in the 分 vocabulary row (PDF7); its normalized phrase ID also holds an unfilled exercise item from PDF1. Select the complete witness for vocabulary display; retain both original witnesses."
+    }
+  ]
+}

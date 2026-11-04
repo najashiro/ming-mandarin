@@ -49,6 +49,7 @@
 .vocabulary-card .linked-hanzi { display:inline; color:inherit; }
 .vocabulary-card .word-pinyin, .vocabulary-mix .word-pinyin { font-size:var(--vocab-pinyin-size); color:var(--vocab-pinyin); line-height:1.4; overflow:visible; }
 .vocabulary-card .pinyin-text, .vocabulary-mix .pinyin-text { font-size:inherit; color:var(--vocab-pinyin); }
+.vocabulary-card .vocabulary-grammatical-type { font-size:.7rem; color:var(--vocab-translation); }
 .vocabulary-card .vocabulary-translation, .vocabulary-card .vocabulary-example-translation, .vocabulary-mix .vocabulary-translation, .vocabulary-mix .vocabulary-example-translation { font-size:var(--vocab-translation-size); font-weight:400; color:var(--vocab-translation); line-height:1.4; }
 .active-vocabulary .audio-control { display:inline-flex; flex-direction:column; align-items:center; max-width:8rem; vertical-align:middle; font-size:1rem; }
 .active-vocabulary .audio-control small { font-size:.7rem; line-height:1.2; padding:.2rem; }

@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest';
 import corpus from '@/data/corpus-v21-public.json';
 import lesson4 from '@/data/lesson4-public.json';
 import { publicExamplesForVocabulary } from '@/lib/vocabulary-examples';
+import { normalizePinyinForComparison } from '@/lib/pinyin';
 
 describe('global vocabulary examples with editorial pinyin', () => {
   it('returns all three cat examples with pinyin and Spanish', () => {
@@ -68,7 +69,7 @@ describe('global vocabulary examples with editorial pinyin', () => {
 
 
 describe('L4 approved examples', () => {
-  it('restores global examples and retains incomplete language support', () => {
+  it('restores global examples and completes their language support', () => {
     const words = getVocabularySet('l4');
     for (const hanzi of ['累', '今天', '早饭']) {
       const word = words.find(word => word.hanzi === hanzi)!;
@@ -77,21 +78,23 @@ describe('L4 approved examples', () => {
     }
     const half = examplesForWord(words.find(word => word.hanzi === '半')!);
     expect(half.length).toBeGreaterThan(0);
-    expect(half.some(example => !example.pinyin || !example.spanish)).toBe(true);
-    expect(words.filter(word => examplesForWord(word).length === 0).map(word => word.hanzi)).toEqual(['下']);
+    expect(half.every(example => example.pinyin && example.spanish)).toBe(true);
+    expect(examplesForWord(words.find(word => word.hanzi === '下')!)).toEqual([]);
     for (const word of words) for (const example of examplesForWord(word)) {
       expect(word.examplePhraseIds).toContain(example.id);
       expect(example.hanzi).not.toMatch(/…|_|□/);
+      expect(example.pinyin, example.id).toBeTruthy();
+      expect(example.spanish, example.id).toBeTruthy();
     }
   });
   it('uses the two explicit L4 examples with complete support and original lexical IDs', () => {
     const words = getVocabularySet('l4');
-    expect(words).toHaveLength(73);
-    expect(lesson4.sentences).toHaveLength(7);
+    expect(words).toHaveLength(114);
+    expect(lesson4.sentences).toHaveLength(8);
     expect(lesson4.sentences.some(row => row.id === 'PH-05f97f56e77b1b66')).toBe(false);
-    expect(words.filter(word => examplesForWord(word).length > 0)).toHaveLength(72);
+    expect(words.filter(word => examplesForWord(word).length > 0)).toHaveLength(99);
     const hui = examplesForWord(words.find(word => word.hanzi === '回')!);
-    expect(hui.map(row => row.id)).toEqual(['PH-f9131d33151602a9']);
+    expect(hui.map(row => row.id)).toEqual(['PH-f9131d33151602a9', 'PH-9a6ce4cf2cab6307', 'PH-021b0848f33436ee']);
     expect(hui[0].hanzi).toBe('七点半我回学校，我们班有活动。');
     expect(hui[0].spanish).toBe('Regresaré a la escuela a las siete y media. Nuestra clase tiene una actividad.');
     expect(hui[0].pinyin).toBe('Qī diǎn bàn wǒ huí xuéxiào, wǒmen bān yǒu huódòng.');
@@ -104,7 +107,9 @@ describe('L4 approved examples', () => {
     expect(university[0].spanish).toBe('Soy estudiante del Instituto Confucio de la Universidad Ricardo Palma.');
     expect(lesson4.phrases.find(row => row.id === university[0].id)!.vocabIds).toContain('v-里卡多帕尔玛大学孔子学院');
     expect(lesson4.phrases.find(row => row.id === university[0].id)!.vocabIds).not.toContain('v-里卡多帕尔玛大学');
-    expect(words.some(word => word.hanzi === '里卡多帕尔玛大学孔子学院')).toBe(false);
+    const institute = words.find(word => word.hanzi === '里卡多帕尔玛大学孔子学院')!;
+    expect(normalizePinyinForComparison(institute.pinyin)).toBe(normalizePinyinForComparison("Lǐkǎduō Pà'ěrmǎ Dàxué Kǒngzǐ Xuéyuàn"));
+    expect(institute.spanish).toBe('Instituto Confucio de la Universidad Ricardo Palma');
     expect(JSON.stringify([...hui, ...university])).not.toMatch(/pinyin_ming|traduccion_ming|spanish_source|source_location|documentary_spanish/);
   });
   it('does not reuse classifier examples for contextual zhi', () => {

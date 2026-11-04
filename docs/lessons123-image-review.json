@@ -1,0 +1,1848 @@
+{
+  "schema_version": 1,
+  "batch": "ming-lessons123-images-20261104",
+  "method": "Model visual inspection of every asset on contact sheets and alpha/hash validation; no independent human review. Explicit administrative withdrawals retain priority.",
+  "entries": [
+    {
+      "wordId": "v-你",
+      "sha256": "5dfce999cff9dfa0a2eae9cae616cf69c8fdd78189ac5479edb5a8c5c0d8ba86",
+      "promptSha256": "a16b9f29a83f1549a32c86f4ca994017e9cd8d7611585e7e399836203c32b8e9",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-好",
+      "sha256": "faa3c7cf820bc52a57ffcf53ba682006ef4f8957ef2171f5e474672e23c343b9",
+      "promptSha256": "3d7b2f357f17223b6623148fe8ca05c6069a39cac160b78ecce8fc4a10c93a77",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-我",
+      "sha256": "73844a87a14610c3e8a5e2f3dd63e20b95744fb24dc463b9bd1cc86ba1e0d369",
+      "promptSha256": "122f2e2080f7d900e7c767f52151f285434fa5422457b362d7107d1d62c1e719",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-叫",
+      "sha256": "9fbfe21856d1dbb771619015032b64b41c259727960c73f142301651b922440e",
+      "promptSha256": "31a0fa90d4dd3e1b508419ef8a6a5ffc6fc898610f73940f65e27cdbd295d7da",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-请问",
+      "sha256": "f27c2facfc1dfa0cf70d8f4cb72ed25b930748eeb1229ce420162273ae23cc9e",
+      "promptSha256": "d95da2b75d8bd45574f76793bb1d2d83d890c963a93b10a56875e3cf3544ff0a",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-请",
+      "sha256": "8ae255e2bc8372f2a34b859d44fced9cd3d76e218b5c1af60f4dfed8ea20b395",
+      "promptSha256": "e10d34504742bdf864ef5d51cf29132990f44362081ffb4bd288df6592aee68c",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-问",
+      "sha256": "a55b13b2115a184b24aaac1f606ed8d0e54d2ee10f27ad86383c0ae053a9b407",
+      "promptSha256": "8a774a76f0a3cf2aef0a67e715a343557101be68a58b7adf49698830ee667029",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-什么",
+      "sha256": "b817cbf84fd989819c1fa22492221639ce47fb64b008157e1d33d96e70aa5117",
+      "promptSha256": "0f9cd4648e80a88d8bf5e475864940cd2c4f7de8768311de92bc5f540ef74b14",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-名字",
+      "sha256": "4d7dafa83185040953a142b41c867bd6a19eb35b2d2d3ff00cbe72ad19ab19a8",
+      "promptSha256": "bcb9ad3adabbfacee18ff56b0db1ee33c13f9b4023c201c724a1ab5c272d1825",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-姓",
+      "sha256": "0942a17c102e5b5dc83f071b753c6daf50cc7c26eb0d435587fd7b2904688183",
+      "promptSha256": "5719dc7d40efda617abea01ef9669f2095c3de91e805cf1d8029611372d2bf6f",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-认识",
+      "sha256": "d48118c32f6f29bc2869a6ad3249ba5b9f31f2fd290ef3451ecbe92032577ebd",
+      "promptSha256": "5c3470996e32f253eeb9521ac6888a0c4f645e8a8dcb85095423f6a83bd96fac",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-很",
+      "sha256": "0e47dd02c034bbf793044eda9d281cd9a59583cd7c201bb477c6f04d96c7dea3",
+      "promptSha256": "ae29fd86d4d27753f16a024d3ee62e3a87a32a5b0e8bfe2ba879859376e23ca8",
+      "status": "pending_review",
+      "reason": "La escena aislada no explica suficientemente este sentido; necesita apoyo contextual específico."
+    },
+    {
+      "wordId": "v-高兴",
+      "sha256": "0fb742cc3173147919a2c42e88cb3c84892b5329ac7c7fd8c06da871996e1979",
+      "promptSha256": "ccfa99843252139cfa32b7fa705b21d58eea5934dd3063b935c373e79508ddda",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-也",
+      "sha256": "d2d09a8a9b2ad47c3416f91568fad7957990c4a6cb9610b27f2be22075d3888a",
+      "promptSha256": "ff86f581bafa83c425c1ca1f8ce587c63375907adb6f3890d971382ade5ec268",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-在",
+      "sha256": "c4b7b83f386401a97e707bb7027185da5813b9875bdd3a58f1ae7fb0d462433b",
+      "promptSha256": "4babaf9d69df82aaa090d3d145556b94fd77497b46d2fd5fa9d26b69231ae6be",
+      "status": "pending_review",
+      "reason": "La escena aislada no explica suficientemente este sentido; necesita apoyo contextual específico."
+    },
+    {
+      "wordId": "v-进",
+      "sha256": "5035913a042ec652fcfb068f80cbeb041f7726360e9fe2ce6d6d3db4841c54d7",
+      "promptSha256": "b002d29bd6df20a2bf764afd4b974a0afd58d84bdd29b290d3000458c3694a03",
+      "status": "pending_review",
+      "reason": "La dirección de entrada/salida no resulta inequívoca."
+    },
+    {
+      "wordId": "v-坐",
+      "sha256": "644090ad1a57988e8b0ac982c1c8c75011e581484f5f77a8eab18f502e90e45a",
+      "promptSha256": "aaed669a3ab8c32adba191ea3ace4b8f4a7b08ee0d3b8569c6a408f722943db9",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-谢谢",
+      "sha256": "6fb41aa340212eb6471f253ae9d4a4e026ec6e8665887e72e8fc2c82ed0d56a4",
+      "promptSha256": "237edb14dfb3acb94bed511b5f168482b833ab0184c9486daeb0009d62e12e3d",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-最近",
+      "sha256": "bc02b02098c10ede2c0c4a543042548cade6cbd3be668a2fbc6954be442b1959",
+      "promptSha256": "e9baae21345cd61f4c095c18834a6960767981e18ccc01b1bfcc3f2ee0f98514",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-怎么样",
+      "sha256": "1b40dad0ad7b6cbc1b3ba55ff563ed51fa94a0f67c1a729b3dddbc6884f6d4c5",
+      "promptSha256": "f40f00cf5ebe8bf89ac96573267f0042da1220a1dc46a3b13e3272633b10c9c3",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-忙",
+      "sha256": "a92b80b3dc95e35fc1e843995405d2c31ad2e33ae39017cf957ab954687edddd",
+      "promptSha256": "9a2016af0aa696a615311a4731d95bdf2729493ed2e0fda5285154b55901d5d3",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-太",
+      "sha256": "fe1597fa334c86cd957ced690f0d189b940b8e18a98cdf7457fe550a945bc218",
+      "promptSha256": "dad245fa8c0ae90c896acb61201bb7c6db97469f24720026b369cb4ea7e82725",
+      "status": "pending_review",
+      "reason": "La escena aislada no explica suficientemente este sentido; necesita apoyo contextual específico."
+    },
+    {
+      "wordId": "v-他",
+      "sha256": "f5226d34cc93570d8a628b7cc46156b8cae8ea67ccf839547d7db33921ea29e0",
+      "promptSha256": "57098b2739eb0d2f49e700b8f9ba3347503052b5089b612fd85991b85f4d9b20",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-困",
+      "sha256": "c3ffbf0eefa71859a7c82341d9c309c80bfe6389c6d82fb87cd1e402cd02044d",
+      "promptSha256": "da528c3c0aeb8c9cfc2d86a8f95f2264de352517103a0601310ab39e7b1664ab",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-渴",
+      "sha256": "01f65a22d264d2d28c956fb63d6a1d75c6eefee0ae7267c9035065dabffc2674",
+      "promptSha256": "bafcb07da3dc8c171091d6766dcf2f25d0abc3097e978d69666832555aad658a",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-饿",
+      "sha256": "7a45d82c87a4a2896f92a587515b65a04e6672cfa780a30fec00f6996f0a99cc",
+      "promptSha256": "34165976a81eac856e4d5037a329215d939c6ade026f98db7ea74f274040af7e",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-累",
+      "sha256": "588981546545ab40f33b9922f66962a6bf6df6f832b530a86f794f463206eb4a",
+      "promptSha256": "e33a751ecf7c9c850c83eb416565444c7c9574c3d5bda638bcbc8b1ff15cbbb0",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-还行",
+      "sha256": "ff32988ec4af5945bead6a9e1bb652abff6adf654e23b7fa0e11a39a7ba2322e",
+      "promptSha256": "762d7a4d759dca0350fc642a49a92e7b7a900c520ffdfdd37e02444894b27c41",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-马马虎虎",
+      "sha256": "4cfc1088f2f5a1c190428415d61bd923a1d506ffe740948648b65c13fb216823",
+      "promptSha256": "c0e2e394ec3d947d87ff5cfd49f4b475cc5c49a5845316be21771dedb2b4d736",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-她",
+      "sha256": "31fe97e0b6fa54673a9ff2c1b7bbbf7ae303c40de8ce0be77170371c73761517",
+      "promptSha256": "e08e73975803fb85cf918ad9022500918b1825a417039131713e22aeda9116c0",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-早上",
+      "sha256": "8d0a2f1dd76aedf24ce03f10dc25f37253393ef59dccb5e5b9df5864e9972454",
+      "promptSha256": "4a054e63d25ae63a0e47f03dca8a22a1b285e8ccf8f7eef39318ee52d99abffd",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-早",
+      "sha256": "1a34239faffd7806f924c3ad2cbd767e8080e9c8454e4ff3b1ab6df2e35136f4",
+      "promptSha256": "287abc85a2620e6a6af5244d8ea4099394fa97a360462f7027f3265f4f661205",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-你们",
+      "sha256": "4f253ff4e70c2ea40a3b1afc4fe6da598c547c7780bd87e62e665125d7b99247",
+      "promptSha256": "a1634706072706d77fb95dc05bf26f34c8198480a945b4eca6731cf6f95c506d",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-们",
+      "sha256": "442c3839cc4930cd280c1d192f82bf9f0a314352b6499f6c81b9edd96059e3cb",
+      "promptSha256": "5c78fac0efbcb0e6eb405f04ac2ce49e2643e1f1831487b7aeef17ca4957b924",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-这",
+      "sha256": "acb81bf0677ab556d0dbda0d6ec691aac2092b34007c090200f45e88a02a38ad",
+      "promptSha256": "f95cebae258b13442cf281d51263fecdf6941c210f23f35ffa5881c4eb91f84d",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-是",
+      "sha256": "42d8d480857602145912e5b21af795ca43ecfa40bf9054de801288870375627f",
+      "promptSha256": "e3bf63cc4237a08b59e1cfb4bedd5864d93bf9f5c86e46d90300ec09b09f7278",
+      "status": "pending_review",
+      "reason": "La escena aislada no explica suficientemente este sentido; necesita apoyo contextual específico."
+    },
+    {
+      "wordId": "v-朋友",
+      "sha256": "3fce361156e71702dead2388e75a8973062eb7f2f728a52e4f74d8e9ea3fedd5",
+      "promptSha256": "3bf59d8bf4d560ac5389e6a5da3f0229cfe75604869a4eb2e3e28fc394009c4b",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-刚",
+      "sha256": "d0cfbadf7be421884db93fc15f569b934ffef8f71caebf3a89ba670b563e6390",
+      "promptSha256": "9b753989c30e0b71f7a0f2a85360d40f13455b6d1a2bdb1e86747a97383123f7",
+      "status": "pending_review",
+      "reason": "La escena aislada no explica suficientemente este sentido; necesita apoyo contextual específico."
+    },
+    {
+      "wordId": "v-到",
+      "sha256": "a777ff9b762d97d3a80316bfab64e585699f936154c66687d3b1ce524d67cf62",
+      "promptSha256": "ee314a8ae3852e5afa14b61af19b534b02bd0cc27032fcc223c834730a76ff26",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-您",
+      "sha256": "8d763072248072f103e3506c8fc826a034592e9efa80ed0d279ccb8d6e18241e",
+      "promptSha256": "8569c3b7a0fd6c672e72d7b69ab7dde9653c8d1e03cf72eef22d7129abbcaf9e",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-贵姓",
+      "sha256": "c0c4860d128886631753a4d66437945f53fed2305602120bc5f8813f0563d710",
+      "promptSha256": "2b2b37d70ce2ce0640c9e7461a79c52685a518bd1633e64a3771120e58bbe1c8",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-哪",
+      "sha256": "fb1856f073889fbece71700295c92826075b44980d5c218d244d404e23817592",
+      "promptSha256": "c0ab163683eca754a586d99c67b8cc29823a264d7eb929d7e4612335f4b792d8",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-国",
+      "sha256": "324dbb15cbdfc1ba19810d8f6c6356a41db8d0de4e3b3b75e09db6d14c58cc89",
+      "promptSha256": "dcdcf759e6016f6499a76ed40bdb888485b23328468c93e2239a00da176da0fa",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-学习",
+      "sha256": "b63463d7c21e3721bcbdd840537a5b18d956c4c5e5ffd576a10c8b03239b42b5",
+      "promptSha256": "ea78ced58dacbd992d93c8e1ceb2dd66483a603b95c6bf116aca7edca8a201dc",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-学",
+      "sha256": "4b4dd3b6c7ce335571062a789f50c87dcbeb4e1d33fda1a4d0a7037ffab37a10",
+      "promptSha256": "87c8379fdcafb0f17f30ee0c7e6d18652accdc2a2137749a63f2bc438f3d3a16",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-汉语",
+      "sha256": "6f3427fa336a8563265e333a7d186060bf7bc005737dba30385710222ae6b652",
+      "promptSha256": "0f5e1247ade459c37f6b562c787334454843951e17309e6909841c67f6ff39e2",
+      "status": "pending_review",
+      "reason": "Revisar texto generado dentro de la pizarra."
+    },
+    {
+      "wordId": "v-再见",
+      "sha256": "5c4498c8db655ce526a1770fd563217614f0c0147750c5960883c464ce042c12",
+      "promptSha256": "c663809a7e00551d8d45f73fc344aed388f264a645624f8f90cee0ae18ff17d3",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-北京",
+      "sha256": "d0cb0a37a3863fd116baa201699b3459bb79e040f8afcd606b6106c832e1cf90",
+      "promptSha256": "0272abc61c7e5898cdfdc028eb7d57e526f295ede55c35f6bde4532a21ccba53",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-点心",
+      "sha256": "5acd2d4945f530d778b1d09542b344297d461241233e4a6df59c7d53ddde95f7",
+      "promptSha256": "4a1b44ca6ee542b1aecd79f5c3fc107db28b70709d22f82fb17f4240753e4860",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-好吃",
+      "sha256": "74baec9111f9bda141890fb1408036dec6eaa88b08c7f23417dbf2771d5cef9e",
+      "promptSha256": "f4d6b04155a6d3f69d88745cc114fd24413c5c562e9a9af60cb0081a1d81c59d",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-吃",
+      "sha256": "6dfeb032a7c85e72ebaaadd5dbca8534ba65b2fb6a0c90b48bb30b167b75932b",
+      "promptSha256": "1051a39bf9102d5f31b6bf929986ec176230ed63837f23d5c852197e03b8801e",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-爸爸",
+      "sha256": "a5533044de53d1fc7df2e7808719bba3d1880d17ead6be57063b6095a94ec21d",
+      "promptSha256": "5c854caff4c733734add0c8295c28fd849be2ff4d22270ff03ee17356c9d128d",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-喜欢",
+      "sha256": "123edc21f24bdbecade98ba755be1c9cc3fac37563986c2ecec3b49f24e99995",
+      "promptSha256": "86ae4fd4716773371d296bb3e2865896f236f96ac04bb01a2f31eeed32564b70",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-和",
+      "sha256": "86463c7b6e1e7143035bd39e36f9a64f5b424cb0088f2d2bbf32be9a793ae54c",
+      "promptSha256": "b844b86718bb522b24adb2380e72ad460d6cd52987e1b78f4cea8fe9b23ede22",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-饭",
+      "sha256": "3abe200b6dc5abee4b71cae1c25499866e3f2ead74ac303b51deab8d4afa1760",
+      "promptSha256": "e2b4fa310d5141da8a7e37e0d5e7132021625d84ab3b025081937c4ae9cca942",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-妈妈",
+      "sha256": "2a19f214c3b30b91e5a269fe4db3bced557335b523bed11e0cc93a9cfd458973",
+      "promptSha256": "eeecdd63f5a6671d03be067fd23d3aa9f41520b497ca16cc60846d6f0c121a74",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-面条儿",
+      "sha256": "1d6b9f382e76f7d5838e1f3ac7e763e5c1fdaceee188fa683e1de0e43e8c13b2",
+      "promptSha256": "8585a75035e20abcd607528b8f9afe16c2224136feba6b37f430feb913f30246",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-大",
+      "sha256": "3932ac4252c9e3838454eb33c4befabfe5a4cc53801696acd53ace0c1a276357",
+      "promptSha256": "3c50d318e762f87b2b0a15fd53c471c17530c1aadacf792e1b517931ac0939f3",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-小",
+      "sha256": "ad48cbfd414393e0b07894b9758875ceff81a601203fe542d1a944dd42372119",
+      "promptSha256": "2ba95c4ea64d64b39f4677f685a22816722afa34026dd5a9f58641bca9b7d8ad",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-看",
+      "sha256": "3e6816c7c7fe61fae8c3f2846a7ee3553c25bbc273b89d4ab0f19f01a5536cc7",
+      "promptSha256": "f7d47751801643b9dcf03e11bc7fd3e94aa21f9ee5ad45949c778eed07292ee9",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-那",
+      "sha256": "84cdf6c2ee4abbb9a393a70b838b7c1a029f8b4d3cdad98f570dfe111b1a75ae",
+      "promptSha256": "8ceee207b507321d4b6d70c6827119a4835462216791c81c336b21e33e0ee3f4",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-都",
+      "sha256": "c849ccba6abcf2a96e5caa704f775ea40aaf0fa485f0fb0cf12ffc7e00f99eb7",
+      "promptSha256": "e7d950bd9ee583d3ecb85d9e93c9cfa883707e3feae1ecb97fec2b01c3741392",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-要",
+      "sha256": "387ef86de76365a348c8a7d2488168bac3bd0c4452885a34580936b8565ab04f",
+      "promptSha256": "2f0399a751453e5ab3349350c68c817d0e7c63f3b25be624201101edab90323e",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-上海",
+      "sha256": "98be67bbdae03a044f6a8213480966d2a9ee802f9237bc1ee93b5e8d96fe4976",
+      "promptSha256": "7d891190d36870d509ab0f21e0b191bc56c0ce162d6aa75fb6196dde5beb4668",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-法国",
+      "sha256": "5624f1f82bfbbfb7992541904fc9bffd51b630eb7e27eaffc115e2b858b4feff",
+      "promptSha256": "332636df4fea0ffd6714dce616cf19f5bec6d42ef9c3bd4d166b0c3416cfbff0",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-德国",
+      "sha256": "66b7143d460a54a1fd5e83e50ada4dfe9c05dba11ee2d4a4b91b5674e8d8a050",
+      "promptSha256": "5a849a632997338c6c9f890f6d7a9771fe05652a03845e195af09763c435d9d0",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-加拿大",
+      "sha256": "4cae5aed9329646e5aacd36fccd047fc332617a77084a0809b37e78b313c50cd",
+      "promptSha256": "da22bb12cc303cb80fb7e57edb0d8a727071d682ad28914803abaf43dbe99849",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-英国",
+      "sha256": "1fe96aa944f9ba37b3e1ac6e40d14d0610091e6605c72de2818ffddf1a21eaaf",
+      "promptSha256": "2361e03ed276aaa5748f694a46cb8ebcd90014fdf319b204d51bae4a2a9e7a1b",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-澳大利亚",
+      "sha256": "97de96ecab5a909b97e7832102c21e7f10d236d4f36506ee38c7ce037ca2eee8",
+      "promptSha256": "0b6a95c5242569f9b691245eb8dad1dc17cff8ba40065b1266ed685e240bb56e",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-俄罗斯",
+      "sha256": "8bde6747ceab090ec49af4f76aa7888e7673d4f73f0342eddedf2820a538e580",
+      "promptSha256": "45c7170dd7c36f39b816153301df31d9daa68161735afadb117e039a973c0c68",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-日本",
+      "sha256": "33ad56be101e731ca313a8080f9024a73532e0fd4d1ab4b5c2474ec4cfcf2b31",
+      "promptSha256": "d3cc4047a83c7f7b72700bd073a3cb2763a5d287f283663cb7cc4e48eaca6f73",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-韩国",
+      "sha256": "ba68105d1c6976a9bf04fd8bf95c651b443b4589687289ee09b9cfea4c765f66",
+      "promptSha256": "356c23e141ffdf24194c3188322a7e35a865a9c437f030dd94e34c52672d2f25",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-泰国",
+      "sha256": "2b8090cb2916b2689fffa41c7c01e29d11720c9f3614cfee8787b09c4a411bac",
+      "promptSha256": "727f972f9f8962b73c382c446cdfa91294b28b2fa22f606e035ac2e4b70d9b60",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-印度",
+      "sha256": "f92709d11ddcabf0b7f033f00e11db79ce244f95efd0546c1abd816f24a69332",
+      "promptSha256": "b3f304a0292c1ccc364750851bea0a4264acb1680358234b4ac33bea093c556c",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-埃及",
+      "sha256": "5bba451446cc6f20a080e62ddc02a286bc5c0bde8df3322d33e1fb0abbaf48ab",
+      "promptSha256": "299835c45ee8709e3033dfefb87fac291dbf522146b2a1d3d67d4267cf452418",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-同学",
+      "sha256": "7bcbf6c3a1c1ea5aea554d1be3c05d4b639d4bf80e1dc9abf445b4e489d0e0a9",
+      "promptSha256": "8ce817aa42bfb1a439df2aee12c9d1ad9afad8dab5c5e30d7d9acc6999569479",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-汉堡包",
+      "sha256": "ef02e30b6d436564a4df833771b353a5cfcb5d4e9b71ec3e2a83e792124f7a7a",
+      "promptSha256": "117ac48cfad3abf71d0eafaf895d9afd66db58bddc8e11132a370529500f1b60",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-比萨饼",
+      "sha256": "2c6757886985f0eff6326cad336557b015a7b4b59a7ffc379e0b96b60884be9a",
+      "promptSha256": "9aec29e731c683dc29521f48945697a835d85afdf2f9db747c94b9878eaa66f4",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-家",
+      "sha256": "45862cc3bbe24564586124a3b8adaa4b1466494d5429ea1563a945d141425335",
+      "promptSha256": "dc953d9c21a31ca67bb2a32238ba107e79533c0cc78ac0e026daec4c1f789fb0",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-有",
+      "sha256": "f6a58d9e721e2597f5bf11d41b213a1ae6effe227464433bc6fe8694c83c5e21",
+      "promptSha256": "2fdfc208c8c9d2b8a97e1b50c64b357774c3b3dd67805486fb20340886ddc4c2",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-几",
+      "sha256": "2a85f6efd8a8b4ec96921803399b6364ef5d6c9bd0e5137b62a8de233d595732",
+      "promptSha256": "87ca632d8c26d694e31eca54a0593ec0216c1f15188af1bb107755516b029f26",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-口",
+      "sha256": "9975fccd46b7f56642ddc53135afafda683d9f06203f8796a137bcfd8183a5e4",
+      "promptSha256": "7bb777359c219266404b24992dd2fa4ee981a8cfdeaaf02ff25d84af4d794003",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-做",
+      "sha256": "502c8ae2d9387bcb4ee794fa974f0bf11f66c0eadce62e48cb53f702c82195de",
+      "promptSha256": "be3afd15d50091ab27508c50423f5073cc0dd18611970d7f89df2bc7340d23e7",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-工作",
+      "sha256": "259c1cb7c912b3fdd729ee17aac856990a8143b3545989ad53cd0922af79cf53",
+      "promptSha256": "bceb916a102c04048ef895a6f21d0160d0b3876a9cfebc259a49bb340a05c6f3",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-弟弟",
+      "sha256": "6df97be1b6234f63c96417173da3a1f8f359b13eab75f6542044f3cb591f3311",
+      "promptSha256": "24179e56b150fc50a6d5e5cd945f1a69b8b59cc6b73a4f28aea7ccc47052d208",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-哥哥",
+      "sha256": "def18d8394267fc0b42cb5acd6b8f3a942626fdc97bd2b75d37d1aaf4fe6762e",
+      "promptSha256": "69f09d51efba24f340086c53869ec4f230e0ee1c7bc30f62a9443c71514a08e7",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-一共",
+      "sha256": "615713ceae0b90d56c88c0ac5c58f2fc24b9cefb4f3bb24e79b1dc8b866ba09e",
+      "promptSha256": "3d1a1e7bdceba665c1cd0aa4333abf6af91c1a3f5882e124993a5bab587bb01a",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-个",
+      "sha256": "119a8e028add8a50136cfbfeeaae9e376289d9f5590588a7f48f2942f9fd62a6",
+      "promptSha256": "047517ea162842e27d12c7878288f221090f57944ceb4db657283f954383d2af",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-两",
+      "sha256": "fc481708b93c4d450bc71a4c0c6c07e88eb23fde6818216cf578cf7b6e581260",
+      "promptSha256": "50a660179ab9d5b5da07b719542133cf8a6144892fdf125870967578307f29ec",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-姐姐",
+      "sha256": "ef59688f1a9fb77111cbebf87257653baed9e11e628110a0ff9002288489ee10",
+      "promptSha256": "06a60018edc2d2c08a09d861212702710a54e591aa872b2d0e8da1ffee37ea60",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-还",
+      "sha256": "8ae0bb1582407355bfd22963a6bb94756d08c9b30bd14533b62d6a41f79dad8c",
+      "promptSha256": "7650b5219f70cdf077a03cc91e512e2f796d4c8e629055b0bad2864ce48ae6f4",
+      "status": "pending_review",
+      "reason": "La escena aislada no explica suficientemente este sentido; necesita apoyo contextual específico."
+    },
+    {
+      "wordId": "v-谁",
+      "sha256": "dde56c0a2e37673508d07c0d230d0ed6b17ee8731d6585f85915048dc57efbe0",
+      "promptSha256": "3a9ef7452731795b94d426673af6470aee53a24fdac1532bd3fe65d7977ee095",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-妹妹",
+      "sha256": "4c82cf4559522131340461e45350493582ee7e3be938bdb70fd42073c96c3cb1",
+      "promptSha256": "b4eeb558103665abd4d7d27347f5588b3c8fb09f9848035e8a7b238102b2526d",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-没有",
+      "sha256": "ea6311dced809b98a51bdc2db43f5abe6644286d6cea4dd8ad90ce894759f5c3",
+      "promptSha256": "2dd0d20beb743de1ee3ef5d80a15d9aa892480c7ad9b709129e6dffcb42e10ca",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-贝贝",
+      "sha256": "fa9a1d842eff03f371f61f7819684d99abf10c11c39f883d356422f8c3d59053",
+      "promptSha256": "103d487ce4b9f985be6726e6b61ee2aac5504f8807d7e05588df3df1cd6072ff",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-真",
+      "sha256": "27316320cc5bff761fa82f5ff43bfbbb5ed74c2c7438a9f3a7b09e9df1616621",
+      "promptSha256": "d4278c8f62dacf8f2a2d7e8e352287a4b73a5d57308b531a6a20c1278de73084",
+      "status": "pending_review",
+      "reason": "La alegría aislada no enseña el adverbio «verdaderamente»."
+    },
+    {
+      "wordId": "v-漂亮",
+      "sha256": "b5c8635a0b12a77ee0f2a6df1a49850a010f5784137bb6c1e7a32e7ecbe168b4",
+      "promptSha256": "5bc5475ff53217dd834b31c6679cb80c613625eee07a4dc127b2357f4f39d242",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-喝",
+      "sha256": "f89981448b8386080a37768c7033bc02355cc8cb4804d34385b8dcd32010b393",
+      "promptSha256": "dce420db300c02d5e3fe90c157a0f1426c9b9c88812d214e6dcd1d047b1437df",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-张",
+      "sha256": "03f5e10d68107477e59d297a8651d35615ae837cd4f98f70a36282d6170bd410",
+      "promptSha256": "7a3a5329898db4ae39ba1426182b89b62f1788a906e4453bac19a8c65291a72c",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-女儿",
+      "sha256": "f5b9a995f922de6d6f2a5af38555619ea62a862398311280fc169670114ad1ae",
+      "promptSha256": "78d0d1f129c744066e216434dbd8669d3a96788406d6450761ca806c6c94f3af",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-女",
+      "sha256": "7037ad6cd405c1828b713c460af3cd38b9833f4ffe576e7e78e08ac1aefc9350",
+      "promptSha256": "6681879c0ca184ab703f09369267ca3d8950bf85436d35917966ce72ccc63026",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-今年",
+      "sha256": "e1d0485c4c43bc17737b36d8804cd83dd5115cb55081a46b005cb2f29b82ca47",
+      "promptSha256": "e969ac7417526f2761d7cad4c4e26b2db33b67848342788ebd3f080a20819e01",
+      "status": "pending_review",
+      "reason": "El año fijo 2025 no representa «este año»."
+    },
+    {
+      "wordId": "v-年",
+      "sha256": "a763cdaad74161a00b18b6a298705b23876640d1ca583bb9bc7542ac31134a5e",
+      "promptSha256": "eb02a3d53b48829bc55b7ababca6b76ddd4f1e247361a99775173606a539bf71",
+      "status": "pending_review",
+      "reason": "El caballo zodiacal no representa un año sin una explicación adicional."
+    },
+    {
+      "wordId": "v-岁",
+      "sha256": "dd18a12bdba549d3c4bbc1a27865250808b94ca999877cf7c419a52534ad005c",
+      "promptSha256": "12ebc67cf911439605a6d2ee775f184b28dd459b4e871eb4bf58db96900542cf",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-今天",
+      "sha256": "6dccbb7b8d23ae243e91dc080764019764b0d87d51946564c059336e4c48e0ca",
+      "promptSha256": "dcedb44dd87b9d07f0ead3440e12cc848ee0ebb4b5b9a272845350444d41ad65",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-天",
+      "sha256": "2f2f8e984693ee2af523e6b443fa0a3e85b71d6e7ae7a4c7cf04e28c745cb9a2",
+      "promptSha256": "360abac097cdb844e0e01e781a0b8deade6cbd7fd379a581dbec55940099bf32",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-课",
+      "sha256": "a220aeae064689a4341b5013d6e7c6dfcb46ec6ba1fe5a39bb61142775ac44b5",
+      "promptSha256": "b9303bb41eaa0d7832e60ef51cc3be7e41d0a4fbdc0e0e9cde6120e67422bd09",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-孩子",
+      "sha256": "a9fcc64e5235895882995ea0803438bfe98846378f7bdc25c4590b869dedd225",
+      "promptSha256": "9a236c4af596209d16c5b033f74030c2f765fe9f6afdce9383a68c26802de50f",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-晚上",
+      "sha256": "b8a67e6ed70f71bb455b20fd6990dc45c2438ca312a03c4c11017df0ac232bbb",
+      "promptSha256": "f0a8169c2f5ccc8e3adfff3672228c3175995386de90c91381b2b8b845fe08d4",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-晚",
+      "sha256": "5ef7043b1dac69f5ecdc7540e467473b6a564791041cb7aae6e5f07e3674253a",
+      "promptSha256": "aaac53d58475f9f684e199be2e832c61afe724b9251cd9f9f6bd5d6ec89decb6",
+      "status": "pending_review",
+      "reason": "La escena aislada no explica suficientemente este sentido; necesita apoyo contextual específico."
+    },
+    {
+      "wordId": "v-英语",
+      "sha256": "09ab119fd220832580655807ea28a0d58495e8eea2fccb9a06a3a775b2d167f1",
+      "promptSha256": "9086bfea8efee873e60cc6b8f2624ad5778a8bc868ec4153376b9a5019990f6a",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-律师",
+      "sha256": "51ce84698d70634885678183045547b3e0a7a0b886e18486bfac89f48f2a95f2",
+      "promptSha256": "a9b7e614ad27bb75f57255ccb7b8227b75d9d53831bb7655800972c2780a84ee",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-记者",
+      "sha256": "35faa00d0d625324bdcf65dde4e21c12a46c6299d6f7f58c380761e51effba42",
+      "promptSha256": "ddd8aaeee53a6a9fd42210abbae2790852eb63f0a9e537f7895e0ae1b4dc72b5",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-服务员",
+      "sha256": "84b4cfecdb0b6a1bbc7f1ef3e45a821c9aab152786b45fad6c20628f6fb3ad90",
+      "promptSha256": "402be08dd01dd72ac63e15c8f789fed172241fc1f2c6531bc35870ec23fda0d7",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-经理",
+      "sha256": "2beee81ec7d4245f6bb62c647f9905a2397b6f0a59fcb63fd7c93a57df4c9dd6",
+      "promptSha256": "0b3a4c4045f9df9ea22446445b73661bcf1924b5447c4950fa9456b9c06720a7",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-工程师",
+      "sha256": "c99e769a63fc60f5c6197888882893a110cc33279b24e1926dc9207183cc8a53",
+      "promptSha256": "5773cdfeedc93769bcdbfe158873bb0618cb151f4be4e0fbe9d2867ac6dac6b3",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-商人",
+      "sha256": "14e8d517e9ab06a6580f214303dd35e7d53d2ef9d34cedb4511a0bafb0341dac",
+      "promptSha256": "aad436a739e75f976d8b333b56f642c065d1d06e14f686b0e11b304f917d59fd",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-先生",
+      "sha256": "a625f15eda8e12f8e074ab01071b3529c47f425a9dedaf3b19ad1572058147b4",
+      "promptSha256": "b6f6de7e9239eb9a197bddcb3bc81c54897d544db940c71e46af32656f20f476",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-太太",
+      "sha256": "72aa97d0284c426ab9834292540415a7ac1e8c9da15ed94dd868ad7813a1f77f",
+      "promptSha256": "7f56b55aec0f250abceae30cf889e43a3e23010f5e1d902aec4c28432eab128c",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-男朋友",
+      "sha256": "6ced3fb1a0a7526d6ef1b426e2407acecf5fcda578dca9a37c1d2968054c62da",
+      "promptSha256": "2d9e3a5006d43900b909efbffdc770d1ff7daccda0b89e565ba56c265f6b56a6",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-女朋友",
+      "sha256": "5fcfcb1eed36f056eb8d3caf18daab20930941a9d6a1eff121c24442780d6102",
+      "promptSha256": "c4a6189999c0a9f0836e7da80699d6e3d97771e61e9d038d4aeb380759724369",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-可乐",
+      "sha256": "9299b9236442c129b9a4f0824478b53665a35f04cc8d2615593a9271c93e5d71",
+      "promptSha256": "805ca7ce11d33e4e35d20ffc80d47f6982441cbb36f7ab9d05500b6265d49163",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-豆浆",
+      "sha256": "b556f937767496859ae3c014dd82a26cf0fa3bc805eeb6ee06bb913283849577",
+      "promptSha256": "51bedfde452436add723d4c045deda636afe5a7724b719a5d67989c91e4bc7ee",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-杯",
+      "sha256": "23531b556e62e2df28bf855f36339ff036137011ad408117316877c2da60488d",
+      "promptSha256": "22a8db1bc14ec0a1d34261800288e07f2fb04d0e4ed534d4d37919a4ffb3d754",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-帅",
+      "sha256": "d8fbc4292e35e494c0c62d07272de614a6ac436a82bbca47f31797bcf5acf872",
+      "promptSha256": "d387f073297387c116cb30c46fa51bfcca808d203403a842b39d30da8315ae33",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-作业",
+      "sha256": "bb3768e456ef641e0f291cb008f5a92533f631789f6273829c6472c9d0542602",
+      "promptSha256": "f8a0cff0d0314d60234482f12ee138aa61d5cb1babd403ddb4aa00cdb3ea771d",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-我们",
+      "sha256": "f9638c7e88233955edb0315a0dc7f7969d569c709e846a5ba2c20043de495d0f",
+      "promptSha256": "1b20956722df34ba368ae948a3c0fe44087df63ec4823697e360180264507288",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-他们",
+      "sha256": "03711b171369a825de476bd1929a413cfd718d3faede399f5a72d6bcefd1cbf5",
+      "promptSha256": "64e89b081197a023b1486538e79035e12740d6897e09afd678a03bbcbb401a50",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-她们",
+      "sha256": "94f65612853f4a72514f76bc4d12da54fdb70b0cd37fb8b08f3654c3f873443d",
+      "promptSha256": "1317bae818ba70913b9033bb84657dcf35f2649a7062e7caafdc619133bfae36",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-干嘛",
+      "sha256": "9af6b82b21d908d5aedcde0a1213cd258810a87808631399c8aa5a195dfdb22a",
+      "promptSha256": "eb0d08343c4fa0d89acd9a193a679a72d35dd08cba7c20134ece8fab50dde166",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-干啥",
+      "sha256": "c18d38aa71c5206debf3d2292e0782c6e80504151d2449d165cf9e326378c90c",
+      "promptSha256": "2cd0ccd0ef5a0ad5c9f939a1651fac21478a9dce6c82ab1177dbb2fd233e9322",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-贵",
+      "sha256": "2b34bcd8756f3e9cdf6427497f0436ab751ab7a86cf56f925af22ddcbd54734a",
+      "promptSha256": "47f04737b432869fb7510f54f09d8f7f0bb84810b84776d0528f339d147b0825",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-哪儿",
+      "sha256": "3237e4a9a94842a39498634028d9c67b8c49b5263d857d627131ade1894fa9e9",
+      "promptSha256": "df6785ab05407e784ba18ce06c5f12b1880563b9d92a670bb38b30c4f4e768e6",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-早饭",
+      "sha256": "03240adec97c96a88f77b47560add86f828a74525cfd17499cf3cf4b65f687d3",
+      "promptSha256": "17450b04c2c2a16e14e67dda2e9df6189ddf9baf8797503f3f4c4eb7adb359fc",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-老",
+      "sha256": "e7fcc2c768c9df69e42a1a8998c6fffb2cc2436371ba7bec4bbb9f2b31b794ad",
+      "promptSha256": "f141a24cc96c32992835c940a3dba027c00e631a2b9dadaffde859b4afe2bbfe",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-老人",
+      "sha256": "3ab7cee5335ccb021cb66fdaf930fa8903d02943b29f92dee5d93d2918963599",
+      "promptSha256": "0dabc8d3e1d0d6235c05f70316bbd813e08ee15793bcf47c864db49d757f01ac",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-老朋友",
+      "sha256": "61918c6cdb02ddeffcfd45db68c40a3ac5e622cbeee4c7d6b28eadfc518a4de3",
+      "promptSha256": "167119141d637b3da383c3d1a23734a2d10d474493308b74214b7f6e665ff9ff",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-语言",
+      "sha256": "95d4b46a2a5ed13dd7605f415434f508b99f4ae094492d849ca3da10fbcad58c",
+      "promptSha256": "95ea1c9ffb944caa3a79f26baba5100a5bf7ffcef84b6e1294f4bc55977843dc",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-中文",
+      "sha256": "d44659d41021567187c7d553314a7b723d479aec51105b0ac81bc47e2cd769da",
+      "promptSha256": "52971221790c818a4c257e4a955bdca55482c5f950dc81fb3d700898113b9216",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-法语",
+      "sha256": "94995a3d848b2c64bb0aaf4333dfbba8042f0150a5b08f5ce48853b03dad1ef3",
+      "promptSha256": "30c87e82b327d96f5fc38b6c4d7cf2fd721c79c18212c7133311865308102ac5",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-德语",
+      "sha256": "3bfe1b3c3405ec95cc72d028489e470ed84a9238606d072fec949940dbccbff0",
+      "promptSha256": "7c7586e537f74438fadcd5b6a474cb44101f7908e4b38b5694e89fb5e0a38a47",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-俄语",
+      "sha256": "a4fd1a5a5691c0130042ed349da27839db871f13e80d15c900b895c305b8051e",
+      "promptSha256": "3a1da4a0a05261c513d24fb51a4a0183f6b2e8082668dd564fb9b00e225bbcdc",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-日语",
+      "sha256": "e5df4b3dd40a2e6345a8ecad5ceeff080064faec4e3709cbe5bb132b8ba96503",
+      "promptSha256": "378157d264f21f91a715ddf1647a7497c9f1b7aea9767fd6c28e0e18e1fff596",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-西班牙语",
+      "sha256": "63472d8df0456f691ba04a5b1ac0ecb4a4a0f82d24d52fd7d4a8321435e084be",
+      "promptSha256": "5b047aee6418d49ae97d9db973eb7c3ffd33738642909fb94dd2c6fe9540abb3",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-韩语",
+      "sha256": "803b0f0eb34580291f5dd3c9c71399cec41c33c04ce10bee1efc38c76c94c44a",
+      "promptSha256": "a81fee5cf7d090d749f63cfe383d2816185924277be085fb7ebfc044c0bb1a35",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-意大利语",
+      "sha256": "1bd198d5728fcd43b05670f8bb367f27a81b24a57d99bf8ad6040dfdc4dd1d50",
+      "promptSha256": "5cc924861c8db301bb6804fc6ed9957a2beec7bc6e7aa35f0360b353a5987220",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-做饭",
+      "sha256": "0bfb7e5bfb1c64fd4e7a87f2d4f9ddbb2af63dec726be72da372591501077c7e",
+      "promptSha256": "d277251dd25b31be164bd8979ffe1e6e26a5928518a061015a5173ad1736d262",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-画画",
+      "sha256": "ae39d7efe69dec4fc502375cc703a63457159bfa934e17429e539aeae37b4483",
+      "promptSha256": "b274a316448d7430cced6f49650d5cd7c53dffbbf9ccc9a417e6fbcafdbb7219",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-会",
+      "sha256": "b674f5add9590f6783163656dde92decd83bb1a6907c3ba2a1fedb7fe4c81b57",
+      "promptSha256": "483f9ffebc8221c20a29ccf494cde9505cb96ae941cd397a1dd5ab399f8af17a",
+      "status": "pending_review",
+      "reason": "La escena aislada no explica suficientemente este sentido; necesita apoyo contextual específico."
+    },
+    {
+      "wordId": "v-一点儿",
+      "sha256": "9a4ff21a60f63a96cb8483504724c83cadba937de7805a44550454255597bd45",
+      "promptSha256": "a75d9aabb0f933f99664bc2a8b061e03aa1bc315cf84df339b5f4c7fdd33f331",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-厉害",
+      "sha256": "ebf35deb1bd73769c568fbaa6210815037d4cbd88e2001ae44979ba3b0098091",
+      "promptSha256": "fe163e40f637b2e9015ae60a3b58e19f31826c0efc9b4a65f45818eff8ac8dfa",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-普通话",
+      "sha256": "96821a70074129f032e13851fd0b542a2411437820820dfc3196fca3119216e0",
+      "promptSha256": "6c30f17dbb601b3358cf91fc0c3c2767fc5fb36d5c2a29ecb0ef458466e91f01",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-方言",
+      "sha256": "780bc403d090439e65131f1c444c196d5ab01577929b39a804b362a7ff808551",
+      "promptSha256": "c0eff9aa33b321da4636a6755bda23b42c6e76053fb9c8bbf81864187e5f4eb4",
+      "status": "pending_review",
+      "reason": "La escena aislada no explica suficientemente este sentido; necesita apoyo contextual específico."
+    },
+    {
+      "wordId": "v-爷爷",
+      "sha256": "59666fcd0f9d638c67b195218b1288446ca67db9780bc5f0973e10ba3255f45d",
+      "promptSha256": "2e0b6d6a49aa28de96dc9e9364e8dec57d16dd0d96ef00c7f3bd123788515ef6",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-奶奶",
+      "sha256": "3af441f236d00b851b2e0b493c3868842e223f5f4eba47cca6b4c66e49121108",
+      "promptSha256": "7ad1a621c0fa865068538adb074f543129ba2de2cf7e4c2e517aacf4e1f236c5",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-外公",
+      "sha256": "0a4e94e217ac46bcb051ace6bb0d3aa67d907203355f94cd8a71d903275b5f57",
+      "promptSha256": "f11eb718540765da6509bd988dd260de65fc95c27cb2359c632cd858858e0841",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-外婆",
+      "sha256": "50b1ad31c272368d4e9b989db8ff167b1bf2018f51632bb9c2df698ce1adc079",
+      "promptSha256": "bd34e28837f596fdf771595210d0fb8e62572a58b28028b9691e01d4cf06fc7a",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-姥姥",
+      "sha256": "f1aed4a1fb3421625aea1f0019371fce2696e5bbf21de63969fd99c344bbe73e",
+      "promptSha256": "3f77c064de82c1d378e6e722619a7c429f3ed973223109b90ef9c7047425594a",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-姥爷",
+      "sha256": "28822a225677f108f5d42f532a92c822ad46601b8b61c2b051d918466828ff80",
+      "promptSha256": "885c6fd1add1ede69ce4a8279c57ef3cb2577bc20a2806b92986185d7d0d8823",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-外语",
+      "sha256": "31e834d7029366d10e03b80f10abff9505aba9edbde43992f3479e9897899e74",
+      "promptSha256": "b0f522f8e7f48a4c5ff2c49ce386eda29b15030656e929267a9bf7c46a4db9c1",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-外国",
+      "sha256": "13db2df26f3c143f365d3ce3c458f8ffebc3172803b33ea08afa56f94a688294",
+      "promptSha256": "89cd7b3d53352d34e034d3c8536b73b37dee0a3576548c1890151ccad20f9c21",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-外国人",
+      "sha256": "a04f8e0e1ff8a16ef40bbf195ac8a8080a7f750fd3e0d9db3316e41f39f76d2d",
+      "promptSha256": "07dc4480a89f23b86c4a9f8b0d60a97c854e946ecef51425d648b587a821de3e",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-炸猪肉面包",
+      "sha256": "62a0b04cb6cec30e928253e8cf4683470795e13d31b91b743bd4cdffa783f51c",
+      "promptSha256": "f284950cfe3cde57ef731b34a3eda326bba84b3720a2d53f59f46972a364df82",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-爱",
+      "sha256": "bbb858a940ba4f8e52f14b46af63c12c61df85df39e6513ae75672f0c42d256c",
+      "promptSha256": "99f43b49ad3455f844febfaee299671674b8fc0fe6b871900a6369ec009d4001",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-甜品",
+      "sha256": "a39bc033d7473fce75f01f0449c2eee84be181e4099a76a78c5e759da89929b5",
+      "promptSha256": "c88f7c3be852d23bdb5c108372ddd5504478bc5241df9667bbd87e3f43ea0961",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-用",
+      "sha256": "d222e3f1f1de0013dd4b2d87e77af06f178ea7b9a2bd650034608b044ac335b3",
+      "promptSha256": "ad6db815f9041ae0c0f51780cc7d5dbe43d16d80f8947b8a3ee9041cdabcc7e9",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-印加可乐",
+      "sha256": "6bc4482a1a19cece5588e39ea7c63cb229f83364505d4a716bb9bf88eda5eb24",
+      "promptSha256": "a620f78efee6843f99acf618e232a6c2fa044528a788b07a92fbe242a2e17f9d",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-果汁",
+      "sha256": "c2adbb5025834f276cb54d740ba9f489432022c1b19e3b1ca31635f2c1a499de",
+      "promptSha256": "9fcde5d54b6391119218bea514647b01a96c37b5356fae090d7602c305955a4f",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-饮料",
+      "sha256": "bd4ab5278f5dd1f1b6e2075839e8c9e463263e34187768f9ba5ff2f4f2967b65",
+      "promptSha256": "f953455ba213ee62831a097e6d764ab4de253cf65ea1e16ecc15facac28e8b27",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-家人",
+      "sha256": "2f0d251713a7733cbffba1d3b8737fde9aed570264aa04c7b128fcc071e6c2d8",
+      "promptSha256": "8978fe8ca5defebb6a25245f81ea67d3f1ff15fd64cdc18c0fcf40280a3ae7ab",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-有意思",
+      "sha256": "59c15461ad6fbb059e8bf4844b739e300bfe273d8c3a9beb44741c6d51b17d18",
+      "promptSha256": "84677a83accc66abaa1d95ed4238576c84c39ac4b729d981e2ce11e9129ee99e",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-只",
+      "sha256": "37e291782abf1af3cf24306504d54636ca5f75662856b99faef72b8767f3fbe1",
+      "promptSha256": "0bed9c156a34e5a62ccfb1eab741efb93a8b7bb627b95e6762f456731b0ab54a",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-可爱",
+      "sha256": "8d3ede38d35014d83ada8c0b972e230288eaa50c143b9f42f25a6c0295536d15",
+      "promptSha256": "fd4fe4480559a2c4f8edaf675424470066e7874176b280ed4ab6ea66e3d1a3e8",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-大学",
+      "sha256": "bb61bc60777a6d40c5cdfa1f2695736ea5bf94afd529ea9c101f886796296db9",
+      "promptSha256": "4c5ac4bb1942e626a6873c574fa6f225c50e724456e9adf2dcfc72fefacebbff",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-上课",
+      "sha256": "398f7166cf29bdf527c456e6b1555c2fa4b4b0a520174b4ae61972ff10e32543",
+      "promptSha256": "a89038acb09e5cf156fcb6818d5c4e68e43bf218708b43f2a5c26e9bf3bc8f92",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-现在",
+      "sha256": "cb8a61a8d73a3f2d8a7c03a5dcc6eac56a64075bb6729421ea1d504ae068f79d",
+      "promptSha256": "fbdee6364abfdc159dfa8deeb69d668743c427a8a07843aa6ddea2488803b8ec",
+      "status": "pending_review",
+      "reason": "La escena aislada no explica suficientemente este sentido; necesita apoyo contextual específico."
+    },
+    {
+      "wordId": "v-工人",
+      "sha256": "7cc1b7130db2904f18db1074917dffdc3e56d6e2b731a07ba7fd53d991cbc4d8",
+      "promptSha256": "b693862a7d43cf89599ab72559058cfff6282d5808518b94866f69b60b765a9f",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-工作日",
+      "sha256": "8cc90cb87f1b358feceb113c27a8c21d477ca10de49889bd422085ae7b6e1366",
+      "promptSha256": "130ee9d97255f906190cdd09b4bd1fc3746447290b8abc818cd21094cc10fca1",
+      "status": "pending_review",
+      "reason": "La escena aislada no explica suficientemente este sentido; necesita apoyo contextual específico."
+    },
+    {
+      "wordId": "v-前年",
+      "sha256": "b011c4886718e3acd49824ccaae92d6cc1ddb79e3fba23c8c70bcdae4f5e1c13",
+      "promptSha256": "beac986d6eba51ce0df0e2dce2b8eba3857b17086d5e38584fb6333d48fb486f",
+      "status": "pending_review",
+      "reason": "La foto no distingue el año relativo sin una referencia temporal explícita."
+    },
+    {
+      "wordId": "v-去年",
+      "sha256": "94d26782de24173b9a5ce827d83f2d86de9ff85a65c9db1cc014e47e8b45ef05",
+      "promptSha256": "f30af282cc296b94731d08925ff3ac3e457a2f2618c642e0eb36b2f12edb325f",
+      "status": "pending_review",
+      "reason": "La foto no distingue el año relativo sin una referencia temporal explícita."
+    },
+    {
+      "wordId": "v-明年",
+      "sha256": "e241ee11fd9669c17f0afaafea7691919351b187fed15e3bfcc2a7d6e4b2f82f",
+      "promptSha256": "534aca9c0bbdda061c22de68237f13e5c2f7ace7028741e1d2d9f9427479d718",
+      "status": "pending_review",
+      "reason": "La foto no distingue el año relativo sin una referencia temporal explícita."
+    },
+    {
+      "wordId": "v-后年",
+      "sha256": "1d181371b8310cfc891004ca728b9f18ab79cac194701aa7e5b765997aefff47",
+      "promptSha256": "12a3e8b592e0f06b9d7e63f306a9a8112aa9e9c9296bd1ffa084062ca5ae8815",
+      "status": "pending_review",
+      "reason": "La foto no distingue el año relativo sin una referencia temporal explícita."
+    },
+    {
+      "wordId": "v-多大",
+      "sha256": "20bfd92601ba276e572d6f42eef4a0ec8b1284557c75fb41e6e04b53c4d193ab",
+      "promptSha256": "f690d7dcea2c32b9c66f33c7921245f65cf2b17e1c3cebddff3cea1fe2c64be7",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-年龄",
+      "sha256": "2871dde5a05e7126e81cce0cd13c400466d3ce8fa2ef050cf0c70a49de8d6f0d",
+      "promptSha256": "109c2ed6a6acdff4131231fb996a2ba760d910d26251e2dbeb4edd06796d0823",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-岁数",
+      "sha256": "440061a24ba87fe10385f165fba223e3353cdeb391775df7cb353e90db842867",
+      "promptSha256": "4d2abe5b169c59f20b2ffd556e45247767d470616b8a2fbc33f3c59b79bea64d",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-儿子",
+      "sha256": "c4c2be0fc5795f9bd30d04b6ad8214a5fde888f8d2d278658c8b0bc31711fc97",
+      "promptSha256": "78ed5422b8e818c189b5fb4bf5d855b4c66f816b9baa74f58f25269d4b8584ba",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-小孩子",
+      "sha256": "a4f2d99f83bdf050c415df6e880f6e10415ea214c3cf4fe6edd290f71ac7cd03",
+      "promptSha256": "38db50b2908b9bfceb6dfbae48ba4b9cc29030ae09e65db276e29234e82e26e3",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-昨天",
+      "sha256": "90edbee352e8e96bb0959a4a5acb784dabac632742a9d5a0daa0659c4efc483a",
+      "promptSha256": "5ca57863933071e3de5c17bbe2dba906bc4518835b0fdb62ea39e281af91a8a1",
+      "status": "pending_review",
+      "reason": "La secuencia no distingue ayer de mañana."
+    },
+    {
+      "wordId": "v-明天",
+      "sha256": "56ad4863d643a71accf827752b03e2e8f86bb350e8d4358d2e6821a697e02756",
+      "promptSha256": "b1c86b03f012beaae22836acadde5a082d35a155306a0865aa77c477bdd373d7",
+      "status": "pending_review",
+      "reason": "La secuencia sol/noche puede enseñar un momento del mismo día."
+    },
+    {
+      "wordId": "v-英语课",
+      "sha256": "fee0700fc4642ced931e7ad37df21bb78c413b3f0809ece428f6779241e97466",
+      "promptSha256": "2a3361ab1e5f53083cc9e5a5a5e7fc6a4ca2cce25d42dacb6b1c243e76f3a5d8",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-汉语课",
+      "sha256": "c7198c138179732a376d0b088104f8b08674fc7aff7c1958557547a2f08fa6ec",
+      "promptSha256": "4ef0b85d44ce0c0128d27f4c386ea181a532503cf654f9cff34eedae700c133a",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-钢琴课",
+      "sha256": "d1a1129dd29b84c75b5a1e0ff750d21e39a3d50dce931e4caffe9bb6b5a36ada",
+      "promptSha256": "4bc64832efe2746449267e0c342a8678a8a288d36357e468f2c44780438e29fc",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-弹",
+      "sha256": "5358291ffd6f40bf031deab15251a8aa048dedafe6c9b1b48a12b197008dd24e",
+      "promptSha256": "edbe49ed96b1a0d7e452b5305ed7d78cc21fb2e3dec00af8659ac44afb382c3d",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-弹钢琴",
+      "sha256": "ec829a13d78699f698e46f8df7b3b9a8251a0456282ca8dea5b153058473a708",
+      "promptSha256": "a38463e361eb55f24c8dcce06a8b3d95bdb6ca2bd86f61aa9017b44b6179c178",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-中午",
+      "sha256": "52cb2072f3b139d36bab62fdb715bbc9992dc796d7a55f51f6e0f7fb6c9eb6e4",
+      "promptSha256": "aa48e4e31cd4b70732d909f58ca0dcce2f49780d17e7d272b7ac5cf4eb2cf2ab",
+      "status": "pending_review",
+      "reason": "La escena aislada no explica suficientemente este sentido; necesita apoyo contextual específico."
+    },
+    {
+      "wordId": "v-下午",
+      "sha256": "a26930e008bf128d89dc91e1269dbdc0af0d5c31a7a1a1972f7aa41a0bfd57c2",
+      "promptSha256": "05d3b8e7925d94ccdfcaa6ad7d85badd8e39a273a1174513c5bbe474ddd084e5",
+      "status": "pending_review",
+      "reason": "La escena aislada no explica suficientemente este sentido; necesita apoyo contextual específico."
+    },
+    {
+      "wordId": "v-约翰",
+      "sha256": "8f010259a6f665219caebde8d33d30e25a8591b293c609a96d5504709733dc9d",
+      "promptSha256": "ff36812ccad09fd954dcbfb9f10a7c602c135b4ddf2b88fb6d752456ada41a5f",
+      "status": "pending_review",
+      "reason": "Un retrato no identifica al personaje John del texto."
+    },
+    {
+      "wordId": "v-阿根廷",
+      "sha256": "60cc676c8bc0fb52089044ec992d9cbe276434bfbd2f1fd5ec0a488e976be992",
+      "promptSha256": "2b84cf6265237ef74b39c3d9c253f7f570b1ec05700ed5108834bdeeef415adc",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-有名",
+      "sha256": "ce3b30f71068cd1107cebe9ca0a67d461fd86dd33e4bee096531213ed915c106",
+      "promptSha256": "a9bf0d99bf85da433b7b66bba4c6c39cde24d1ec8ff75ab8d4b3e316007e3e22",
+      "status": "pending_review",
+      "reason": "El edificio no establece el concepto «famoso»."
+    },
+    {
+      "wordId": "v-名片",
+      "sha256": "c05015415ff0e94c599f094c5b77081fe335fec34e0c898b17eeacbacce15df5",
+      "promptSha256": "0ed09b5472f5f2d2a85030f065f8ea64309f6afbf31e308166c4b798bcfaac80",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-学院",
+      "sha256": "5436722f48a5f0860175b8ba7452d8c57233fe6bc6fad1296abaec5e7a53b9cc",
+      "promptSha256": "e5314ad0f04fd0ee6c6e73ed2b705e0eebd33d1dcfad2c1d431973229045fc06",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-男生",
+      "sha256": "ef625c1d67e36022ac286803995ea6d05d35a86e3a775548bb02a4684680890a",
+      "promptSha256": "64c3dca35793640d475a593646f04c2ae915174cd90b28a43ab02b1de3471c9e",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-系",
+      "sha256": "7062aa60e2747ca47904d4b0aecab15aa5e5ea6f896b37ca118c44a23fb1f1a1",
+      "promptSha256": "31f0f9518a8dc02546a4e40031f1ffdd383c631690bdba463243e771a7f33e7e",
+      "status": "pending_review",
+      "reason": "La escena no distingue un departamento universitario de un grupo de alumnos."
+    },
+    {
+      "wordId": "v-哪一个",
+      "sha256": "d66dc0a669b8ec9f2612f7854e591e0a7dceee7203cfb8c832d023dc0a841e08",
+      "promptSha256": "5e84367de28af218c8a1a2579d723881367973b80c06fb9801aecd3015d3223b",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-去",
+      "sha256": "6ec449affca32ea3c94833854206529f8b327d980d914790f083e28b2a7a350b",
+      "promptSha256": "9d8bfce4b0516fa2ff7129f9c85779e6e235c88d1c250dfc46f1c114b6153920",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-找",
+      "sha256": "34eda9769c232508ac08cb8f5d94bb05463ab9e24840bca431904b39e7fb4041",
+      "promptSha256": "a74d6a064657e2bf3e40b4bf4aabb5e2fc393e5d1a486d7fb9e0bae6ac97c2a1",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-看书",
+      "sha256": "24848a4026bc018ef3ff72ae0982a40f91255238e53e7e3d81b33e2d3ebdd087",
+      "promptSha256": "667f627f78282e688915520515c4489480aacfdd5a4cae6f12c2e26c2f984388",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-看电影",
+      "sha256": "ba54489ced6c8095adea4f54b0c9df7240a99aac95649fbea920c568acae0093",
+      "promptSha256": "9359fd54808c4cfc3e35c7114eda7a5070e7eb331128c08febb53a25dcd6c932",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-电影",
+      "sha256": "d850e9375ab673a8ad683a967a04b9fbe6399d2469262cc80861c0262121efe6",
+      "promptSha256": "b49629fc262f9968ce2ce9a3ae43af4ec075e8b5c87685e9c73a7a213c919205",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-唱歌",
+      "sha256": "0ef89f8ea90dee39b09be4ae2c34b55e97d746a83ca6979f46a8f4162e7dd873",
+      "promptSha256": "01b1191bb122ebb0ca74bc4c77305c02e43a4434a12ede43f97e5f6a75157067",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-一",
+      "sha256": "9f9af65ded482a9eb829de99014f0392ef370c10b1b342ae3ab27012d9f8402c",
+      "promptSha256": "212a8ffa965110410b868c435b2d839ec19db48e53a14e0e79f51a4af815218f",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-二",
+      "sha256": "5cd0e99e44d4006dd2d0f4476d596fbe02fbf15fee6f2177b608fa3e017c54cb",
+      "promptSha256": "112aec08d63ec487c17509bd902b74a3d7f5898bd4e0755abdb44bae91ce1d8b",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-三",
+      "sha256": "bc4674620c2a9d7c18666612625d15a66693166a7ce4d5bee9dcafe8c80b960f",
+      "promptSha256": "6caa5aebd1c710a1ceda6b144a0698272655b5974f07c19b7ba98bc12720bfc7",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-四",
+      "sha256": "53308c42f2d4ee411e4966e3b788ce5e28fcbd078d30f41046af420790e5e81b",
+      "promptSha256": "9d0c31a20288327260f070bc5531bc546f77d04899f2c2b07e1e2439dda61e96",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-五",
+      "sha256": "62fae8caf0378f569691d9f1bcf4728aee03c6d9922df7d770269022cf79b02a",
+      "promptSha256": "d3ad079f62a1f1383f6434a2d7f093e262240925836d0838a3c0f16023f9a0c3",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-六",
+      "sha256": "a6425c7ecfc5a243197e711c87e737c8b46a074f3b29e2234dbfc54d0f784161",
+      "promptSha256": "a10f21b37780fe6c2de094cfe033444cd06c9b09b9395b623e8af41e4b9be619",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-七",
+      "sha256": "89c9657de72da21c0cc6fa2f510e9a7973d0c317fc095e010bc9b282c8872515",
+      "promptSha256": "53af3d8470b9c4eb2b4a15b722a09e7a0081e2f80255a53356e17c9a1ebd4ba9",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-八",
+      "sha256": "fd33ae26ccbd4ccb2a0d9b686e51af46b86d8a129c8fb11a4e6a0eafe59ca22f",
+      "promptSha256": "8a074b93c137a34e63638114af1b879a935ef0145e0564215f2cac457db0e1e5",
+      "status": "pending_review",
+      "reason": "La cantidad de globos no coincide con ocho."
+    },
+    {
+      "wordId": "v-九",
+      "sha256": "6c4901b36c91f38428e18a7e2b3b621b0c9a8a4200988efa41d43185025cd0db",
+      "promptSha256": "af172305655291c19785796e4314b3fd415a131808939403d48551b842bd4cca",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-十",
+      "sha256": "c05f6d5ef13d0c0d389cf6aab5201598e0af0c4a60486386d5fc0c664b0431e9",
+      "promptSha256": "228f8dc8e9e34d3fe81a68699a8996cd79124f39094e8da5d5d776b4ed9359d3",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-百",
+      "sha256": "304bc829aad0350205edb4a26cef4eeb6c75c99839d9eb830c8d000a9293ea55",
+      "promptSha256": "dfda39f085d2371818337fd653224947261066220c71e808e77fb85e7c508239",
+      "status": "pending_review",
+      "reason": "El bloque visible no prueba cien elementos."
+    },
+    {
+      "wordId": "v-千",
+      "sha256": "633b4d41f5e49462d266e01da3c7a190175e5e0bf4197f0fbb5993860efaf099",
+      "promptSha256": "ea4e4ed97d6a1fbea57a8c3cf71e7bb3e731073d541528756191a764dbea8fe1",
+      "status": "pending_review",
+      "reason": "El dinero apilado no permite contar mil."
+    },
+    {
+      "wordId": "v-可是",
+      "sha256": "156288954ef6bf96435ef16e3e40c345c38daef7a3fd4abc6abac0bc6776857a",
+      "promptSha256": "f235fd8f6750b10504b14a6274a90339254efc64ec088daa691190521367f01a",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-宠物",
+      "sha256": "f2d5254d3dc5d3a6e31af7fe3051534c974e8651c778825cb0910e9241cdff88",
+      "promptSha256": "645fdbb70727362023e772cb35c986f066c88d2e79a9ca7e19a5a81832c54a26",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-车牌号",
+      "sha256": "cfd7c8f2dad63878ea6b8a2820d3f512843ed0e0aaa52bef810c63b29e432f1c",
+      "promptSha256": "8c93f803505d45826b31b826de98e680ac5b956b6d05099234d8393406a40ead",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-多少",
+      "sha256": "b17566c5895e90113a7549c4f19a464cb05d5a5421ec53c3a800f4c2098b9951",
+      "promptSha256": "6643b7b5ef7bf5cf2eda630fb5ef90028b833eb7f2dd32874e37039e4dee5014",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-俄罗斯人",
+      "sha256": "3eeaf00c7deb90a691302acaa26df6ef0f206db68a3280248933bce60f474428",
+      "promptSha256": "5a14be65de0723bb23ec8a9b657af4ed5f911d778d0d3c9f261e4ec94b7c6d36",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-西安",
+      "sha256": "2bef07b0ff1f4e44304ab9794f28135247fa391e20ca21d76ec9e5e01f19ebf5",
+      "promptSha256": "105a53c83c0692d26c01e6be7631a5fcd636ebd4cfc56460491b7045c288450b",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-广州",
+      "sha256": "6eff7afda20c7ae898e716c19864e46f3c44cd188e64239fc47b9d18a8d28fe2",
+      "promptSha256": "8581203996ef5ffbeb1b85c7f933dd31fe0f8c26421e50db2c53e0cad6b9cb4b",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-你好",
+      "sha256": "1fda6efef12b093d560e5820eee466ace32452d0615a7b6e112b4dabd3cb9fa1",
+      "promptSha256": "f512d308fcb3a71d22258d7e90cefdcd2887d8b7819fca71f7c1f3b4bfb688e7",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-您好",
+      "sha256": "462c3170ca1887cdca58a2a168e7d3263361dd0818a0e567f32b9959f38e2cca",
+      "promptSha256": "3da40423897fe948af7d1516d9b5fd9ab8ee55bec27a1d5572f69ef2562187fc",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-你们好",
+      "sha256": "0fbfeac196befa2d9845bb31a3034db7cee039cea4103bd50d325b2da78694a9",
+      "promptSha256": "c6ca5371c34aafe9d53df90088a49e9943d3fcfb22aeaa3c96dbae3d2a9c78e9",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-早上好",
+      "sha256": "13b5ac274425796aa741277fddb0c586c7a10b4c36b3c8f6a62d875b19d428b5",
+      "promptSha256": "ccdd235d9bab12c62951eac56fd80682cfd0f3f2b963e0f91e442c933613e862",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-上午好",
+      "sha256": "8588462adeb45569f5a4a57a8382d8e59cbd0d5059f8993a173e30105a57ac36",
+      "promptSha256": "a1dc690a58431d46b5c464e28be3422097111f0786308d1ac413c45a19973a66",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-下午好",
+      "sha256": "c6767180c74f2f9175f620df0b506baf27b8cd0c1d95e579b3c94474a3b621d7",
+      "promptSha256": "1e189b4d1e918523aaf313b6d19238e74d4f6c59327ae64854dd47172c53d391",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-晚上好",
+      "sha256": "a341da89b360d4c96e5b3abee5ba7fc2ee62c24b452b12bdd3f8d7e359fefe56",
+      "promptSha256": "051394cf71b835fc8f91092c492cb42a75eb048ba3220c18822cd9c54f929fe8",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-晚安",
+      "sha256": "6ff0f84d2aa519e1b5ce07fff5b71f0e972a20cdebf1c8e388fa17347b640c54",
+      "promptSha256": "4e9087a710b4b5a415ef820ffd932c3cea1061c6b59091137ad356d8ec632256",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-刚到",
+      "sha256": "9c7598abd43f84e0e228d483656c784ecca77c99b264f7d77401d5977be4ca05",
+      "promptSha256": "f8a2129e9b93c8d34d8f8c6febf73c18840444166dee0e5aac2fd39ed57c3f7c",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    },
+    {
+      "wordId": "v-这是",
+      "sha256": "3409412483295f94602f73b3da719eef23afa153c1ed3388dea214f97dd9d94e",
+      "promptSha256": "4b1d40fac2c627b786f3e18b4ce5afe3d62b9f8a4765d09f792337eccfa2aff9",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-那是",
+      "sha256": "5a87188932890726b8d967fd82752de2660eb05c1978bcf72460c76abff43f7c",
+      "promptSha256": "81e1f6970566ccccde5fc2e63f5cd2506d6eeb97fc846297bf5b48fd65346965",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-您贵姓",
+      "sha256": "e0eee99c5e29689873727317b57d027c6725fed13350539f0f623966a0add1b7",
+      "promptSha256": "6b2b289e02079f89572fc981403535297d010574b14beb90fb8ed49256215a29",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-哪国人",
+      "sha256": "47a1bd20a3dc817b2418b6fec5309f7ef46265a385b2b3ab589c7c0e9490e860",
+      "promptSha256": "48aeb43dda05573f9a8abe26f3bad7b11e2a5d8b9f477ef267ada4564e29a7e1",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-可以",
+      "sha256": "3f38f937662a062d88cd3d2b7f4e6617525e977d589afa7015fdbfc40331f971",
+      "promptSha256": "e244b49d3881ccbfb2de2c31a483d3cb57e3d92244b95a9fa1dceac147f80e2f",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-死",
+      "sha256": "3206fad7a8ce99a86e8b1e6204a2833273137390de0070ca0bb35b94b4230e47",
+      "promptSha256": "dd5e749d3ee5ca47a6823c1a2b66ce49af93e24b1d2eff1718533eb9d5c54071",
+      "status": "pending_review",
+      "reason": "La escena aislada no explica suficientemente este sentido; necesita apoyo contextual específico."
+    },
+    {
+      "wordId": "v-这儿",
+      "sha256": "fdd41a970517a3af5a6ed8a167dd6d4e549bd4a68d3ddfc73930f61351bf6771",
+      "promptSha256": "f55241b9413745eda92df44158983f53da74fbab3906b6461fe4f34e72121b74",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-说",
+      "sha256": "248323aed169e8f7e02be02d570a639ebbc28b9ca56cf3949b2da487b8a37b7f",
+      "promptSha256": "abb4257cfeb35cccd7b519b336029bfa683a8d7555204f7b6756e88772c84035",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-那儿",
+      "sha256": "dc43311a3e947e518ae04a207517d324c3ddab167951f5f273fee0780d97cbd9",
+      "promptSha256": "d6966cf9f964beaacfcbdd8f772f4111a8331e4c6aeb708ba1be7c45214a6db0",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-一下",
+      "sha256": "a30f244454efa689316948a8d3e00dee0c281cc11158391ae9adb8d93b2d52fa",
+      "promptSha256": "4ad41f6b1f5fae33b9161516d27c0cbf33e749c94705c10732e10f47e9fc013e",
+      "status": "pending_review",
+      "reason": "La escena aislada no explica suficientemente este sentido; necesita apoyo contextual específico."
+    },
+    {
+      "wordId": "v-本",
+      "sha256": "6a8d05c628862d285d51565786179ff854456f29de9101a542536a20ca6be93c",
+      "promptSha256": "df94566ad0f169483497b50ba7707de30c051455f09573eab73706a183d3c2f8",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-酒",
+      "sha256": "c3c2c4ae2862c579247b57b502b03d99bbcb3158783fcd4ef9ce35a7aabb95fa",
+      "promptSha256": "d8975e1039bbf00667fd9d9db4e89701231d402c819c1f68e364634a820e132e",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-孔子学院",
+      "sha256": "21aa135c78cab768997c9d11c47202969eb72123a4e729c64e35ee65f3bc56b6",
+      "promptSha256": "b0064f03229e1d70fde251a2a4904a895f8410f6c4dd380a265f741f2fcb056b",
+      "status": "pending_review",
+      "reason": "El logotipo generado no identifica al Instituto Confucio."
+    },
+    {
+      "wordId": "v-二十",
+      "sha256": "d40464ea155f058725e6f15c346a9a00548d58ae5dbea534cfae9d3285ed51ef",
+      "promptSha256": "b4e688efd1a16345198dd8d59437fb8047289ea083ec1d78fe497242f2004898",
+      "status": "pending_review",
+      "reason": "Recuento de personas no inequívoco para veinte."
+    },
+    {
+      "wordId": "v-吃饭",
+      "sha256": "f45f13777ad9f29d8d9098f6f6368c1b892089d08b131ac4a5c6bef5232780c2",
+      "promptSha256": "00897692d94d28ef42ecc741aeaa7bc5df6be48d3ec19672cf66dc48d89a7a73",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-大家",
+      "sha256": "f8d79671c9d831244644af2973b188c77388f9e451534c7c6f75d19b18f5b0bc",
+      "promptSha256": "61bb4b6eeb2278922bf0746b2722a3a2af9a8170cf1033cf646b10e2af15453c",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-三十",
+      "sha256": "461ff91aee9acf672b38ae90c3a3137428d086b001d7a34bf655de5515350be1",
+      "promptSha256": "d170e30d173ca280a7f015d35af7976a8ee2fc5952bb0bdfcd9e2a4fdfe56c72",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-二十五",
+      "sha256": "a9251262f8a70b571c21d47169be73d08721cb1117a5c4fc3848d31c99b9f6be",
+      "promptSha256": "7aabc73e26155834f091e63b24c5f54d5b6a7aafa6dd5cd18361c9d4fd9aee7f",
+      "status": "pending_review",
+      "reason": "Los dedos indican siete, no veinticinco."
+    },
+    {
+      "wordId": "v-七十五",
+      "sha256": "1e2a53cf0dca9fb52a1718005141f7a38c22d22ba1e4488f9f461dd44c8273a0",
+      "promptSha256": "4271c4242244699a3bf7070575dfcef253b8fa0f76dffbf1293c4b39b9f41cb0",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-上",
+      "sha256": "69c4669ca52f7d0de1226d65d79c87ff02d64c1cd862e9b60398e0548c7a47b5",
+      "promptSha256": "072dfab61943cac0998ca3c7cfba0d77dcd0f40e4c137f8ce35d4a91050b268a",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-孩子们",
+      "sha256": "248b9b0a9077fc1ab73b19b6ec6e0bb18354ad2bb1ccc204216ed7eefd1df8e2",
+      "promptSha256": "5218f3214162eea95ec8a81579a9dbc523548cd3f4a60c6d687315614fdee459",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-班",
+      "sha256": "d4846dd3bffc9d35572737deb6c7a13584fd1870552bc0e3fbc225b866e78a94",
+      "promptSha256": "5e2cc87dc180d535911f0038b62789f20f42699954fe21e633847a4732a21bc3",
+      "status": "approved",
+      "reason": "Sujeto o escena coherente como apoyo de la palabra y su ejemplo. Mantener la restricción de quiz del corpus; no inferir parentesco/identidad solo por apariencia."
+    },
+    {
+      "wordId": "v-上午",
+      "sha256": "f730ba7de608b8f046eb4ea478a0bdd6638714e11781a99bd060cf988f21816c",
+      "promptSha256": "12ae9847251c8fdbbf57c5e82cef2247d0e854a49c46829383bcb1ae522139bf",
+      "status": "pending_review",
+      "reason": "La escena aislada no explica suficientemente este sentido; necesita apoyo contextual específico."
+    },
+    {
+      "wordId": "v-北京人",
+      "sha256": "c46768ff984449ec2f8280666fbf78b4ee256e124fd4107f7f59dbd4cda15311",
+      "promptSha256": "07d7df2db71b529087a399f1014c8218ffffa8973118164529c9e34c6e394377",
+      "status": "pending_review",
+      "reason": "La apariencia de la persona no acredita procedencia de Pekín."
+    },
+    {
+      "wordId": "v-美国人",
+      "sha256": "d3261382cb43a75ab4d27b21445a7a9e28de7736e8c18edbab0c8068a1002047",
+      "promptSha256": "eb68a7fb149a88aa37cbecf81c9aa6f23155da22e4af88b9ccedf9d2113f5d97",
+      "status": "pending_review",
+      "reason": "Pendiente del cotejo de bandera o monumento con referencia auténtica; no inferir procedencia por apariencia."
+    }
+  ]
+}

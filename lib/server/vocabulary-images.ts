@@ -1,13 +1,18 @@
 import 'server-only';
 import { createHash } from 'node:crypto';
 import promptCatalog from '@/docs/vocabulary-image-prompts.json';
+import pedagogyPrompts from '@/docs/lessons123-pedagogy-prompts.json';
+import geographyPrompts from '@/docs/lessons123-geography-prompts.json';
+import countPrompts from '@/docs/lessons123-count-prompts.json';
+import contextPrompts from '@/docs/lessons123-context-prompts.json';
+import generatedPrompts from '@/docs/lessons123-generated-prompts.json';
 import lesson4Prompts from '@/docs/lesson4-image-prompts.json';
 import lesson5Prompts from '@/docs/lesson5-image-prompts.json';
 import lesson4 from '@/data/lesson4-public.json';
 import { vocabularyCatalog, getVocabularyLesson } from '@/lib/vocabulary';
 import { splitImageCorrection, withImageCorrection } from '@/lib/image-prompt-correction';
 import { vocabularyMedia, type VocabularyMediaEntry } from '@/lib/vocabulary-media';
-import { effectiveImageStatus, resolvePublishedImages, type ImageReviewRow, type ImageReviewStatus } from '@/lib/vocabulary-image-review';
+import { effectiveImageStatus, resolvePublishedImages, type ImageReviewDecision, type ImageReviewRow, type ImageReviewStatus } from '@/lib/vocabulary-image-review';
 import { supabaseRest } from '@/lib/supabase/rest';
 import { ApiError } from './api';
 
@@ -18,17 +23,22 @@ export type AdminVocabularyImageEntry = VocabularyMediaEntry & {
   lesson: number | null; lessons: number[]; correction: string;
 };
 const prompts = new Map<string, { prompt: string; hanzi?: string; pinyin?: string; spanish?: string }>(promptCatalog.entries.map(entry => [entry.wordId, entry]));
-for (const entry of [...lesson4Prompts.entries, ...lesson5Prompts.entries]) if (entry.prompt) prompts.set(entry.wordId, { prompt: entry.prompt });
+for (const entry of [...lesson4Prompts.entries, ...lesson5Prompts.entries, ...countPrompts.entries, ...contextPrompts.entries, ...generatedPrompts.entries, ...pedagogyPrompts.entries, ...geographyPrompts.entries]) if (entry.prompt) prompts.set(entry.wordId, { prompt: entry.prompt });
 const words = new Map(vocabularyCatalog.map(word => [word.id, word]));
 const digest = (prompt: string) => createHash('sha256').update(prompt).digest('hex');
 const columns = 'word_id,status,prompt,asset_sha256,prompt_sha256,revision,reviewed_at';
+const publicationColumns = 'word_id,status,asset_sha256,prompt_sha256';
 
-async function reviewRows() {
+async function reviewRows<T = ImageReviewRow>(selectedColumns = columns) {
   try {
-    const rows = await supabaseRest<ImageReviewRow[]>(`vocabulary_image_reviews?select=${columns}&limit=1000`);
+    // Review storage must not leave the entire vocabulary page waiting forever.
+    // Timing out still fails closed, so a hidden image is never republished.
+    const rows = await supabaseRest<T[]>(`vocabulary_image_reviews?select=${selectedColumns}&limit=1000`, {
+      signal: AbortSignal.timeout(3000),
+    });
     return { rows, storageReady: true };
   } catch {
-    return { rows: [] as ImageReviewRow[], storageReady: false };
+    return { rows: [] as T[], storageReady: false };
   }
 }
 
@@ -39,7 +49,8 @@ export async function publishedVocabularyMedia(): Promise<VocabularyMediaEntry[]
     && !process.env.SUPABASE_URL && !process.env.NEXT_PUBLIC_SUPABASE_URL
     && !process.env.SUPABASE_SECRET_KEY && !process.env.SUPABASE_SERVICE_ROLE_KEY;
   if (isolatedPreview) return resolvePublishedImages(vocabularyMedia, []);
-  const { rows, storageReady } = await reviewRows();
+  // The public path needs decisions only, not the long generation prompts.
+  const { rows, storageReady } = await reviewRows<ImageReviewDecision>(publicationColumns);
   // A storage outage must not republish a photo an administrator hid.
   return storageReady ? resolvePublishedImages(vocabularyMedia, rows) : [];
 }

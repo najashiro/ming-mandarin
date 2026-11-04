@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "wordId": "v-前年",
+      "hanzi": "前年",
+      "pinyin": "qiánnián",
+      "prompt": "Crear un diagrama SVG didáctico original para 前年 (qiánnián): el año antepasado. Línea de tiempo relativa: el año actual es 0, desplazamientos enteros de años. El punto y nombre resaltados identifican el término. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen.",
+      "status": "approved",
+      "reason": "Línea de tiempo relativa: el año actual es 0, desplazamientos enteros de años. El punto y nombre resaltados identifican el término."
+    },
+    {
+      "wordId": "v-去年",
+      "hanzi": "去年",
+      "pinyin": "qùnián",
+      "prompt": "Crear un diagrama SVG didáctico original para 去年 (qùnián): el año pasado. Línea de tiempo relativa: el año actual es 0, desplazamientos enteros de años. El punto y nombre resaltados identifican el término. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen.",
+      "status": "approved",
+      "reason": "Línea de tiempo relativa: el año actual es 0, desplazamientos enteros de años. El punto y nombre resaltados identifican el término."
+    },
+    {
+      "wordId": "v-今年",
+      "hanzi": "今年",
+      "pinyin": "jīnnián",
+      "prompt": "Crear un diagrama SVG didáctico original para 今年 (jīnnián): este año. Línea de tiempo relativa: el año actual es 0, desplazamientos enteros de años. El punto y nombre resaltados identifican el término. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen.",
+      "status": "approved",
+      "reason": "Línea de tiempo relativa: el año actual es 0, desplazamientos enteros de años. El punto y nombre resaltados identifican el término."
+    },
+    {
+      "wordId": "v-明年",
+      "hanzi": "明年",
+      "pinyin": "míngnián",
+      "prompt": "Crear un diagrama SVG didáctico original para 明年 (míngnián): el año próximo; el año que viene. Línea de tiempo relativa: el año actual es 0, desplazamientos enteros de años. El punto y nombre resaltados identifican el término. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen.",
+      "status": "approved",
+      "reason": "Línea de tiempo relativa: el año actual es 0, desplazamientos enteros de años. El punto y nombre resaltados identifican el término."
+    },
+    {
+      "wordId": "v-后年",
+      "hanzi": "后年",
+      "pinyin": "hòunián",
+      "prompt": "Crear un diagrama SVG didáctico original para 后年 (hòunián): dentro de dos años. Línea de tiempo relativa: el año actual es 0, desplazamientos enteros de años. El punto y nombre resaltados identifican el término. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen.",
+      "status": "approved",
+      "reason": "Línea de tiempo relativa: el año actual es 0, desplazamientos enteros de años. El punto y nombre resaltados identifican el término."
+    },
+    {
+      "wordId": "v-年",
+      "hanzi": "年",
+      "pinyin": "nián",
+      "prompt": "Crear un diagrama SVG didáctico original para 年 (nián): año. Doce casillas numeradas representan los doce meses de un año; no es un año concreto. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen.",
+      "status": "approved",
+      "reason": "Doce casillas numeradas representan los doce meses de un año; no es un año concreto."
+    },
+    {
+      "wordId": "v-昨天",
+      "hanzi": "昨天",
+      "pinyin": "zuótiān",
+      "prompt": "Crear un diagrama SVG didáctico original para 昨天 (zuótiān): ayer. Secuencia relativa de tres momentos. La flecha avanza hacia el futuro y el término estudiado está resaltado. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen.",
+      "status": "approved",
+      "reason": "Secuencia relativa de tres momentos. La flecha avanza hacia el futuro y el término estudiado está resaltado."
+    },
+    {
+      "wordId": "v-明天",
+      "hanzi": "明天",
+      "pinyin": "míngtiān",
+      "prompt": "Crear un diagrama SVG didáctico original para 明天 (míngtiān): mañana. Secuencia relativa de tres momentos. La flecha avanza hacia el futuro y el término estudiado está resaltado. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen.",
+      "status": "approved",
+      "reason": "Secuencia relativa de tres momentos. La flecha avanza hacia el futuro y el término estudiado está resaltado."
+    },
+    {
+      "wordId": "v-现在",
+      "hanzi": "现在",
+      "pinyin": "xiànzài",
+      "prompt": "Crear un diagrama SVG didáctico original para 现在 (xiànzài): ahora; en este momento. Secuencia relativa de tres momentos. La flecha avanza hacia el futuro y el término estudiado está resaltado. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen.",
+      "status": "approved",
+      "reason": "Secuencia relativa de tres momentos. La flecha avanza hacia el futuro y el término estudiado está resaltado."
+    },
+    {
+      "wordId": "v-工作日",
+      "hanzi": "工作日",
+      "pinyin": "gōngzuòrì",
+      "prompt": "Crear un diagrama SVG didáctico original para 工作日 (gōngzuòrì): día laborable. Una semana laboral habitual, marcada como ejemplo para no afirmar que sábado o domingo nunca puedan ser laborables. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen.",
+      "status": "approved",
+      "reason": "Una semana laboral habitual, marcada como ejemplo para no afirmar que sábado o domingo nunca puedan ser laborables."
+    },
+    {
+      "wordId": "v-上午",
+      "hanzi": "上午",
+      "pinyin": "shàngwǔ",
+      "prompt": "Crear un diagrama SVG didáctico original para 上午 (shàngwǔ): por la mañana; antes del mediodía. Reloj analógico y hora de ejemplo para distinguir mañana, mediodía y tarde, sin inventar límites horarios rígidos. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen.",
+      "status": "approved",
+      "reason": "Reloj analógico y hora de ejemplo para distinguir mañana, mediodía y tarde, sin inventar límites horarios rígidos."
+    },
+    {
+      "wordId": "v-中午",
+      "hanzi": "中午",
+      "pinyin": "zhōngwǔ",
+      "prompt": "Crear un diagrama SVG didáctico original para 中午 (zhōngwǔ): al mediodía. Reloj analógico y hora de ejemplo para distinguir mañana, mediodía y tarde, sin inventar límites horarios rígidos. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen.",
+      "status": "approved",
+      "reason": "Reloj analógico y hora de ejemplo para distinguir mañana, mediodía y tarde, sin inventar límites horarios rígidos."
+    },
+    {
+      "wordId": "v-下午",
+      "hanzi": "下午",
+      "pinyin": "xiàwǔ",
+      "prompt": "Crear un diagrama SVG didáctico original para 下午 (xiàwǔ): en la tarde. Reloj analógico y hora de ejemplo para distinguir mañana, mediodía y tarde, sin inventar límites horarios rígidos. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen.",
+      "status": "approved",
+      "reason": "Reloj analógico y hora de ejemplo para distinguir mañana, mediodía y tarde, sin inventar límites horarios rígidos."
+    },
+    {
+      "wordId": "v-这儿",
+      "hanzi": "这儿",
+      "pinyin": "zhèr",
+      "prompt": "Crear un diagrama SVG didáctico original para 这儿 (zhèr): aquí. La persona fija el punto de referencia del hablante. Flecha y pin resaltado indican aquí, cerca, o allí, lejos. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen.",
+      "status": "approved",
+      "reason": "La persona fija el punto de referencia del hablante. Flecha y pin resaltado indican aquí, cerca, o allí, lejos."
+    },
+    {
+      "wordId": "v-那儿",
+      "hanzi": "那儿",
+      "pinyin": "nàr",
+      "prompt": "Crear un diagrama SVG didáctico original para 那儿 (nàr): allí; allá. La persona fija el punto de referencia del hablante. Flecha y pin resaltado indican aquí, cerca, o allí, lejos. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen.",
+      "status": "approved",
+      "reason": "La persona fija el punto de referencia del hablante. Flecha y pin resaltado indican aquí, cerca, o allí, lejos."
+    },
+    {
+      "wordId": "v-很",
+      "hanzi": "很",
+      "pinyin": "hěn",
+      "prompt": "Crear un diagrama SVG didáctico original para 很 (hěn): muy. En 很好吃, el grado alto acompaña una valoración de sabor. No se afirma que 很 siempre tenga énfasis fuerte. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen. Contexto registrado: 很好吃。 / Hěn hǎochī..",
+      "status": "approved",
+      "reason": "En 很好吃, el grado alto acompaña una valoración de sabor. No se afirma que 很 siempre tenga énfasis fuerte."
+    },
+    {
+      "wordId": "v-太",
+      "hanzi": "太",
+      "pinyin": "tài",
+      "prompt": "Crear un diagrama SVG didáctico original para 太 (tài): demasiado; extremadamente. Contrasta el grado alto 太 con la negación 不太 del ejemplo existente, sin atribuir una frase nueva al corpus. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen. Contexto registrado: 我不太累。 / Wǒ bú tài lèi..",
+      "status": "approved",
+      "reason": "Contrasta el grado alto 太 con la negación 不太 del ejemplo existente, sin atribuir una frase nueva al corpus."
+    },
+    {
+      "wordId": "v-在",
+      "hanzi": "在",
+      "pinyin": "zài",
+      "prompt": "Crear un diagrama SVG didáctico original para 在 (zài): estar. Persona presente dentro de un lugar y flecha de localización. 在 se muestra como presencia, según 林娜在。 Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen. Contexto registrado: 林娜在。 / Línnà zài..",
+      "status": "approved",
+      "reason": "Persona presente dentro de un lugar y flecha de localización. 在 se muestra como presencia, según 林娜在。"
+    },
+    {
+      "wordId": "v-是",
+      "hanzi": "是",
+      "pinyin": "shì",
+      "prompt": "Crear un diagrama SVG didáctico original para 是 (shì): ser; es; son. Flecha de identificación entre una persona y la categoría estudiante. Se evita representar 是 como ubicación. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen. Contexto registrado: 他是学生。 / Tā shì xuésheng..",
+      "status": "approved",
+      "reason": "Flecha de identificación entre una persona y la categoría estudiante. Se evita representar 是 como ubicación."
+    },
+    {
+      "wordId": "v-刚",
+      "hanzi": "刚",
+      "pinyin": "gāng",
+      "prompt": "Crear un diagrama SVG didáctico original para 刚 (gāng): recién. Hecho situado inmediatamente antes del ahora. La proximidad visual distingue recién de un pasado remoto. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen. Contexto registrado: 我刚认识她。 / Wǒ gāng rènshi tā..",
+      "status": "approved",
+      "reason": "Hecho situado inmediatamente antes del ahora. La proximidad visual distingue recién de un pasado remoto."
+    },
+    {
+      "wordId": "v-还",
+      "hanzi": "还",
+      "pinyin": "hái",
+      "prompt": "Crear un diagrama SVG didáctico original para 还 (hái): además. Suma explícita de café y bocadillo: 还 con el sentido aditivo registrado, no la lectura huán ni un simple gesto ambiguo. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen. Contexto registrado: 我要咖啡，还要点心。 / Wǒ yào kāfēi, hái yào diǎnxin..",
+      "status": "approved",
+      "reason": "Suma explícita de café y bocadillo: 还 con el sentido aditivo registrado, no la lectura huán ni un simple gesto ambiguo."
+    },
+    {
+      "wordId": "v-晚",
+      "hanzi": "晚",
+      "pinyin": "wǎn",
+      "prompt": "Crear un diagrama SVG didáctico original para 晚 (wǎn): tarde. Compara una hora prevista con otra posterior para distinguir 晚 de 下午. Horas editoriales de ejemplo. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen. Contexto registrado: 很晚 / Hěn wǎn.",
+      "status": "approved",
+      "reason": "Compara una hora prevista con otra posterior para distinguir 晚 de 下午. Horas editoriales de ejemplo."
+    },
+    {
+      "wordId": "v-会",
+      "hanzi": "会",
+      "pinyin": "huì",
+      "prompt": "Crear un diagrama SVG didáctico original para 会 (huì): saber hacer algo. Palillos sobre un cuenco y comprobación de capacidad: saber usar palillos, que es el ejemplo registrado. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen. Contexto registrado: 我会用筷子。 / wǒ huì yòng kuàizi.",
+      "status": "approved",
+      "reason": "Palillos sobre un cuenco y comprobación de capacidad: saber usar palillos, que es el ejemplo registrado."
+    },
+    {
+      "wordId": "v-一下",
+      "hanzi": "一下",
+      "pinyin": "yíxià",
+      "prompt": "Crear un diagrama SVG didáctico original para 一下 (yíxià): un momento; un poco; suaviza una petición. Burbuja de habla breve y apertura literal del ejemplo 你说一下，你家有几口人？. 一下 suaviza la petición, sin fijar una duración en segundos. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen. Contexto registrado: 你说一下，你家有几口人？ / Nǐ shuō yíxià, nǐ jiā yǒu jǐ kǒu rén?.",
+      "status": "approved",
+      "reason": "Burbuja de habla breve y apertura literal del ejemplo 你说一下，你家有几口人？. 一下 suaviza la petición, sin fijar una duración en segundos."
+    },
+    {
+      "wordId": "v-死",
+      "hanzi": "死",
+      "pinyin": "sǐ",
+      "prompt": "Crear un diagrama SVG didáctico original para 死 (sǐ): morir; en 累死了, intensifica el cansancio. Persona cansada y escala máxima: 死 intensifica 累 en el ejemplo, no significa una muerte literal aquí. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen. Contexto registrado: 我累死了。 / Wǒ lèi sǐ le..",
+      "status": "approved",
+      "reason": "Persona cansada y escala máxima: 死 intensifica 累 en el ejemplo, no significa una muerte literal aquí."
+    },
+    {
+      "wordId": "v-真",
+      "hanzi": "真",
+      "pinyin": "zhēn",
+      "prompt": "Crear un diagrama SVG didáctico original para 真 (zhēn): verdaderamente; verdadero. Énfasis afirmativo sobre 好: 真好, verdaderamente bien. No se confunde con solo una sonrisa o una marca de verdadero/falso. Usar flechas claras, alto contraste, Hanzi y pinyin exactos del corpus. Lienzo transparente 1618 × 1000; contenido en la mitad derecha y texto legible al mostrar la tarjeta a 400 px. No utilizar como pregunta de quiz por imagen. Contexto registrado: 真好 / Zhēn hǎo.",
+      "status": "approved",
+      "reason": "Énfasis afirmativo sobre 好: 真好, verdaderamente bien. No se confunde con solo una sonrisa o una marca de verdadero/falso."
+    }
+  ]
+}

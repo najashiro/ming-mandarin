@@ -1,21 +1,19 @@
 import { notFound } from 'next/navigation';
 import { SiteShell, LessonHeader } from '@/components/SiteShell';
 import { CurriculumNav } from '@/components/CurriculumNav';
-import { Hanzi } from '@/components/Hanzi';
+import { DocumentaryActivities } from '@/components/DocumentaryActivities';
 import { PracticeEngine } from '@/components/PracticeEngine';
 import { getCurriculum, isCurriculumScope } from '@/seed/curriculum';
-import { lesson4, lesson5 } from '@/lib/active-corpus';
+import { lesson5 } from '@/lib/active-corpus';
+import studyReference from '@/data/lesson4-study-reference.json';
 
 export default async function ExercisesPage({ params }: { params: Promise<{ scope: string }> }) {
   const { scope } = await params;
   if (!isCurriculumScope(scope)) notFound();
   const data = getCurriculum(scope);
-  const activities = [...(data.definition.lessonIds.includes(4) ? lesson4.documentaryExercises : []), ...(data.definition.lessonIds.includes(5) ? lesson5.documentaryExercises : [])];
+  const activities = [...(data.definition.lessonIds.includes(4) ? studyReference.activities : []), ...(data.definition.lessonIds.includes(5) ? lesson5.documentaryExercises : [])];
   return <SiteShell><main><LessonHeader eyebrow={`${data.definition.shortLabel} · 练习`} title="Ejercicios" description="Practica vocabulario y trabaja las actividades de lectura y producción."/><CurriculumNav scope={scope} section="exercises"/>
     <section className="shell"><h2>Práctica de vocabulario</h2><PracticeEngine exercises={data.exercises}/></section>
-    {activities.length > 0 && <section className="shell"><h2>Actividades de la lección</h2><p>Actividades abiertas para estudiar. No se califican automáticamente.</p>{activities.map(exercise => <details className="panel" key={exercise.id}>
-      <summary><Hanzi>{exercise.title}</Hanzi></summary>{exercise.requiresOriginalAudio && <p role="status">Pendiente: esta actividad necesita la grabación original del libro, aún no disponible.</p>}
-      {exercise.texts.map((text, index) => <p style={{ whiteSpace: 'pre-line', overflowWrap: 'anywhere' }} key={index}><Hanzi>{text}</Hanzi></p>)}
-    </details>)}</section>}
+    {activities.length > 0 && <section className="shell"><h2>Actividades de la lección</h2><p>Actividades abiertas para estudiar. No se califican automáticamente.</p><DocumentaryActivities activities={activities}/></section>}
   </main></SiteShell>;
 }

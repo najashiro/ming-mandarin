@@ -18,5 +18,10 @@
   "v-零": { "slug": "zero", "kind": "quantity", "count": 0 },
   "v-少": { "slug": "few", "kind": "comparison", "side": "few" },
   "v-多": { "slug": "many", "kind": "comparison", "side": "many" },
-  "v-很多": { "slug": "a-lot", "kind": "comparison", "side": "many" }
+  "v-很多": { "slug": "a-lot", "kind": "comparison", "side": "many" },
+  "v-学校": { "slug": "school", "kind": "photo", "subject": "A complete generic school building with classroom windows and entrance; no signs, real institution, flags or scenery." },
+  "v-女生": { "slug": "female-student", "kind": "photo", "subject": "One fictional young adult woman visibly studying at a compact desk, complete body, chair and desk, blank notebook and backpack. Educational role is shown by the activity, not inferred from appearance." },
+  "v-运动": { "slug": "exercise", "kind": "photo", "maxHeightPx": 700, "bottomEdgePx": 960, "subject": "One complete fictional adult in athletic clothes doing a standing side stretch, an example of physical exercise, without equipment or scenery." },
+  "v-昨天": { "slug": "yesterday", "kind": "timeline", "offset": -1 },
+  "v-手机": { "slug": "mobile-phone", "kind": "photo", "rightEdgePx": 1360, "subject": "One complete unbranded handheld smartphone with a blank dark touchscreen, no screen icons, cable, hands or surrounding scene." }
 }

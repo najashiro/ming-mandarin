@@ -1,0 +1,627 @@
+{
+  "schema_version": 1,
+  "method": "editorial_reading_and_translation_after_visual_PDF_review_not_source_transcription",
+  "tables": [
+    {
+      "block_id": "L4-BOOK-04-08-03",
+      "expected_rows": [
+        [
+          11,
+          "十一"
+        ],
+        [
+          12,
+          "十二"
+        ],
+        [
+          13,
+          "十三"
+        ],
+        [
+          "…",
+          "…"
+        ],
+        [
+          19,
+          "十九"
+        ],
+        [
+          20,
+          "二十"
+        ],
+        [
+          21,
+          "二十一"
+        ],
+        [
+          22,
+          "二十二"
+        ],
+        [
+          23,
+          "二十三"
+        ],
+        [
+          "…",
+          "…"
+        ],
+        [
+          29,
+          "二十九"
+        ],
+        [
+          30,
+          "三十"
+        ],
+        [
+          31,
+          "三十一"
+        ],
+        [
+          32,
+          "三十二"
+        ],
+        [
+          33,
+          "三十三"
+        ],
+        [
+          "…",
+          "…"
+        ],
+        [
+          39,
+          "三十九"
+        ],
+        [
+          40,
+          "四十"
+        ],
+        [
+          "…",
+          "…"
+        ],
+        [
+          81,
+          "八十一"
+        ],
+        [
+          82,
+          "八十二"
+        ],
+        [
+          83,
+          "八十三"
+        ],
+        [
+          "…",
+          "…"
+        ],
+        [
+          89,
+          "八十九"
+        ],
+        [
+          90,
+          "九十"
+        ],
+        [
+          91,
+          "九十一"
+        ],
+        [
+          92,
+          "九十二"
+        ],
+        [
+          93,
+          "九十三"
+        ],
+        [
+          "…",
+          "…"
+        ],
+        [
+          99,
+          "九十九"
+        ],
+        [
+          100,
+          "一百"
+        ]
+      ],
+      "rows": [
+        {
+          "pinyin": "shíyī",
+          "spanish": "once"
+        },
+        {
+          "pinyin": "shí'èr",
+          "spanish": "doce"
+        },
+        {
+          "pinyin": "shísān",
+          "spanish": "trece"
+        },
+        {
+          "pinyin": "",
+          "spanish": ""
+        },
+        {
+          "pinyin": "shíjiǔ",
+          "spanish": "diecinueve"
+        },
+        {
+          "pinyin": "èrshí",
+          "spanish": "veinte"
+        },
+        {
+          "pinyin": "èrshíyī",
+          "spanish": "veintiuno"
+        },
+        {
+          "pinyin": "èrshí'èr",
+          "spanish": "veintidós"
+        },
+        {
+          "pinyin": "èrshísān",
+          "spanish": "veintitrés"
+        },
+        {
+          "pinyin": "",
+          "spanish": ""
+        },
+        {
+          "pinyin": "èrshíjiǔ",
+          "spanish": "veintinueve"
+        },
+        {
+          "pinyin": "sānshí",
+          "spanish": "treinta"
+        },
+        {
+          "pinyin": "sānshíyī",
+          "spanish": "treinta y uno"
+        },
+        {
+          "pinyin": "sānshí'èr",
+          "spanish": "treinta y dos"
+        },
+        {
+          "pinyin": "sānshísān",
+          "spanish": "treinta y tres"
+        },
+        {
+          "pinyin": "",
+          "spanish": ""
+        },
+        {
+          "pinyin": "sānshíjiǔ",
+          "spanish": "treinta y nueve"
+        },
+        {
+          "pinyin": "sìshí",
+          "spanish": "cuarenta"
+        },
+        {
+          "pinyin": "",
+          "spanish": ""
+        },
+        {
+          "pinyin": "bāshíyī",
+          "spanish": "ochenta y uno"
+        },
+        {
+          "pinyin": "bāshí'èr",
+          "spanish": "ochenta y dos"
+        },
+        {
+          "pinyin": "bāshísān",
+          "spanish": "ochenta y tres"
+        },
+        {
+          "pinyin": "",
+          "spanish": ""
+        },
+        {
+          "pinyin": "bāshíjiǔ",
+          "spanish": "ochenta y nueve"
+        },
+        {
+          "pinyin": "jiǔshí",
+          "spanish": "noventa"
+        },
+        {
+          "pinyin": "jiǔshíyī",
+          "spanish": "noventa y uno"
+        },
+        {
+          "pinyin": "jiǔshí'èr",
+          "spanish": "noventa y dos"
+        },
+        {
+          "pinyin": "jiǔshísān",
+          "spanish": "noventa y tres"
+        },
+        {
+          "pinyin": "",
+          "spanish": ""
+        },
+        {
+          "pinyin": "jiǔshíjiǔ",
+          "spanish": "noventa y nueve"
+        },
+        {
+          "pinyin": "yìbǎi",
+          "spanish": "cien"
+        }
+      ]
+    },
+    {
+      "block_id": "L4-BOOK-04-09-06",
+      "expected_rows": [
+        [
+          "2:00",
+          "两点（钟）",
+          "“钟” se omite frecuentemente."
+        ],
+        [
+          "2:05",
+          "两点零（líng, cero）五分",
+          "Cuando “分” se usa con un número menor a 10, se debe añadir “零” antes del número."
+        ],
+        [
+          "2:10",
+          "两点十分",
+          ""
+        ],
+        [
+          "2:12",
+          "两点十二（分）",
+          "Cuando “分” se usa con un número mayor a 10, “分” puede omitirse."
+        ],
+        [
+          "2:15",
+          "两点一刻 o 两点十五（分）",
+          ""
+        ],
+        [
+          "2:30",
+          "两点半 o 两点三十（分）",
+          ""
+        ],
+        [
+          "2:45",
+          "两点四十五（分） o 差一刻三点",
+          ""
+        ],
+        [
+          "2:55",
+          "两点五十五（分） o 差五分三点",
+          ""
+        ]
+      ],
+      "rows": [
+        {
+          "pinyin": "Liǎng diǎn (zhōng)",
+          "spanish": "Las dos (en punto)."
+        },
+        {
+          "pinyin": "Liǎng diǎn líng wǔ fēn",
+          "spanish": "Las dos y cinco."
+        },
+        {
+          "pinyin": "Liǎng diǎn shí fēn",
+          "spanish": "Las dos y diez."
+        },
+        {
+          "pinyin": "Liǎng diǎn shí'èr (fēn)",
+          "spanish": "Las dos y doce."
+        },
+        {
+          "pinyin": "Liǎng diǎn yí kè / liǎng diǎn shíwǔ (fēn)",
+          "spanish": "Las dos y cuarto."
+        },
+        {
+          "pinyin": "Liǎng diǎn bàn / liǎng diǎn sānshí (fēn)",
+          "spanish": "Las dos y media."
+        },
+        {
+          "pinyin": "Liǎng diǎn sìshíwǔ (fēn) / chà yí kè sān diǎn",
+          "spanish": "Las dos y cuarenta y cinco / las tres menos cuarto."
+        },
+        {
+          "pinyin": "Liǎng diǎn wǔshíwǔ (fēn) / chà wǔ fēn sān diǎn",
+          "spanish": "Las dos y cincuenta y cinco / las tres menos cinco."
+        }
+      ]
+    },
+    {
+      "block_id": "L4-BOOK-04-10-04",
+      "expected_rows": [
+        [
+          "我",
+          "明天",
+          "有很多课。"
+        ],
+        [
+          "林娜",
+          "今天下午三点半",
+          "练习口语。"
+        ],
+        [
+          "你",
+          "明天晚上",
+          "有时间吗？"
+        ],
+        [
+          "力波",
+          "今天",
+          "不忙。"
+        ]
+      ],
+      "rows": [
+        {
+          "pinyin": "Wǒ míngtiān yǒu hěn duō kè.",
+          "spanish": "Mañana tengo muchas clases."
+        },
+        {
+          "pinyin": "Lín Nà jīntiān xiàwǔ sān diǎn bàn liànxí kǒuyǔ.",
+          "spanish": "Lin Na practica expresión oral hoy a las tres y media de la tarde."
+        },
+        {
+          "pinyin": "Nǐ míngtiān wǎnshang yǒu shíjiān ma?",
+          "spanish": "¿Tienes tiempo mañana por la noche?"
+        },
+        {
+          "pinyin": "Lìbō jīntiān bù máng.",
+          "spanish": "Libo no está ocupado hoy."
+        }
+      ]
+    },
+    {
+      "block_id": "L4-BOOK-04-10-05",
+      "expected_rows": [
+        [
+          "七点半",
+          "我们班",
+          "有活动。"
+        ],
+        [
+          "明天晚上",
+          "你",
+          "做什么？"
+        ],
+        [
+          "下午四点",
+          "我",
+          "还有口语课。"
+        ],
+        [
+          "今天",
+          "马大为",
+          "很累。"
+        ]
+      ],
+      "rows": [
+        {
+          "pinyin": "Qī diǎn bàn wǒmen bān yǒu huódòng.",
+          "spanish": "Nuestra clase tiene una actividad a las siete y media."
+        },
+        {
+          "pinyin": "Míngtiān wǎnshang nǐ zuò shénme?",
+          "spanish": "¿Qué haces mañana por la noche?"
+        },
+        {
+          "pinyin": "Xiàwǔ sì diǎn wǒ hái yǒu kǒuyǔ kè.",
+          "spanish": "También tengo clase de expresión oral a las cuatro de la tarde."
+        },
+        {
+          "pinyin": "Jīntiān Mǎ Dàwéi hěn lèi.",
+          "spanish": "Hoy Ma Dawei está muy cansado."
+        }
+      ]
+    },
+    {
+      "block_id": "L4-BOOK-04-11-05",
+      "expected_rows": [
+        [
+          "你",
+          "要",
+          "不要",
+          "咖啡？"
+        ],
+        [
+          "他",
+          "明天 来",
+          "不来？",
+          ""
+        ],
+        [
+          "林娜",
+          "累",
+          "不累？",
+          ""
+        ]
+      ],
+      "rows": [
+        {
+          "pinyin": "Nǐ yào bu yào kāfēi?",
+          "spanish": "¿Quieres café?"
+        },
+        {
+          "pinyin": "Tā míngtiān lái bu lái?",
+          "spanish": "¿Viene él mañana?"
+        },
+        {
+          "pinyin": "Lín Nà lèi bu lèi?",
+          "spanish": "¿Está cansada Lin Na?"
+        }
+      ]
+    },
+    {
+      "block_id": "L4-BOOK-04-12-01",
+      "expected_rows": [
+        [
+          "宋华",
+          "有",
+          "没有",
+          "时间？"
+        ],
+        [
+          "他妈妈",
+          "是",
+          "不是",
+          "老师？"
+        ]
+      ],
+      "rows": [
+        {
+          "pinyin": "Sòng Huá yǒu méiyǒu shíjiān?",
+          "spanish": "¿Tiene tiempo Song Hua?"
+        },
+        {
+          "pinyin": "Tā māma shì bu shì lǎoshī?",
+          "spanish": "¿Es profesora su mamá?"
+        }
+      ]
+    },
+    {
+      "block_id": "L4-BOOK-04-13-03",
+      "expected_rows": [
+        [
+          "马大为",
+          "",
+          "是",
+          "美国人。",
+          ""
+        ],
+        [
+          "林娜",
+          "",
+          "喝",
+          "茶。",
+          ""
+        ],
+        [
+          "你",
+          "",
+          "来",
+          "我们班。",
+          ""
+        ],
+        [
+          "他朋友",
+          "不",
+          "姓",
+          "陈。",
+          ""
+        ],
+        [
+          "女儿",
+          "不",
+          "在",
+          "家。",
+          ""
+        ],
+        [
+          "她",
+          "今天",
+          "没有",
+          "时间。",
+          ""
+        ],
+        [
+          "马大为和丁力波",
+          "都",
+          "学习",
+          "汉语。",
+          ""
+        ],
+        [
+          "你",
+          "明天",
+          "做",
+          "什么？",
+          ""
+        ],
+        [
+          "她爸爸",
+          "",
+          "喜欢",
+          "吃点心。",
+          ""
+        ],
+        [
+          "你",
+          "",
+          "要",
+          "咖啡",
+          "吗？"
+        ],
+        [
+          "我们",
+          "一起",
+          "练习",
+          "口语",
+          "吧。"
+        ]
+      ],
+      "rows": [
+        {
+          "pinyin": "Mǎ Dàwéi shì Měiguórén.",
+          "spanish": "Ma Dawei es estadounidense."
+        },
+        {
+          "pinyin": "Lín Nà hē chá.",
+          "spanish": "Lin Na bebe té."
+        },
+        {
+          "pinyin": "Nǐ lái wǒmen bān.",
+          "spanish": "Tú vienes a nuestra clase."
+        },
+        {
+          "pinyin": "Tā péngyou bú xìng Chén.",
+          "spanish": "Su amigo no se apellida Chen."
+        },
+        {
+          "pinyin": "Nǚ'ér bú zài jiā.",
+          "spanish": "La hija no está en casa."
+        },
+        {
+          "pinyin": "Tā jīntiān méiyǒu shíjiān.",
+          "spanish": "Ella no tiene tiempo hoy."
+        },
+        {
+          "pinyin": "Mǎ Dàwéi hé Dīng Lìbō dōu xuéxí Hànyǔ.",
+          "spanish": "Ma Dawei y Ding Libo estudian chino."
+        },
+        {
+          "pinyin": "Nǐ míngtiān zuò shénme?",
+          "spanish": "¿Qué haces mañana?"
+        },
+        {
+          "pinyin": "Tā bàba xǐhuan chī diǎnxin.",
+          "spanish": "A su papá le gusta comer bocadillos."
+        },
+        {
+          "pinyin": "Nǐ yào kāfēi ma?",
+          "spanish": "¿Quieres café?"
+        },
+        {
+          "pinyin": "Wǒmen yìqǐ liànxí kǒuyǔ ba.",
+          "spanish": "Practiquemos juntos la expresión oral."
+        }
+      ]
+    }
+  ],
+  "patterns": {
+    "L4-BOOK-04-10-03": "Sujeto + tiempo + predicado / Tiempo + sujeto + predicado",
+    "L4-BOOK-04-11-04": "Verbo/Adjetivo + 不／没 + Verbo/Adjetivo + Objeto",
+    "L4-BOOK-04-13-02": "Sujeto + Verbo + Objeto",
+    "L4-BOOK-04-14-03": "Pronombre/Sustantivo (Frase) + 呢？"
+  },
+  "clarifications": {
+    "L4-BOOK-04-13-02": "Para negar 有, se usa 没有 (o 没), como en 她今天没有时间。 No se añade otro 有 después de 没有."
+  }
+}

@@ -1,0 +1,2617 @@
+{
+  "schema_version": "1.0.0",
+  "batch": "ming-l4-support-20261104",
+  "method": "Model-authored and checked language support for exact attested Chinese; no independent human review.",
+  "source_priority": "textbook/workbook before presentations; source fields and variants are preserved",
+  "entries": [
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-早上",
+      "hanzi": "早上",
+      "pinyin_ming": "zǎoshang",
+      "traduccion_ming": "por la mañana; temprano"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-晚上",
+      "hanzi": "晚上",
+      "pinyin_ming": "wǎnshang",
+      "traduccion_ming": "noche; por la noche"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-帅",
+      "hanzi": "帅",
+      "pinyin_ming": "shuài",
+      "traduccion_ming": "guapo"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-书",
+      "hanzi": "书",
+      "pinyin_ming": "shū",
+      "traduccion_ming": "libro"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-外语",
+      "hanzi": "外语",
+      "pinyin_ming": "wàiyǔ",
+      "traduccion_ming": "idioma extranjero"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-昨天",
+      "hanzi": "昨天",
+      "pinyin_ming": "zuótiān",
+      "traduccion_ming": "ayer"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-中午",
+      "hanzi": "中午",
+      "pinyin_ming": "zhōngwǔ",
+      "traduccion_ming": "mediodía"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-唱歌",
+      "hanzi": "唱歌",
+      "pinyin_ming": "chàng gē",
+      "traduccion_ming": "cantar"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-本",
+      "hanzi": "本",
+      "pinyin_ming": "běn",
+      "traduccion_ming": "clasificador de libros",
+      "pinyin_display_correction": "Printed bĕn uses breve instead of third-tone caron."
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-孔子学院",
+      "hanzi": "孔子学院",
+      "pinyin_ming": "Kǒngzǐ Xuéyuàn",
+      "traduccion_ming": "Instituto Confucio"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-事",
+      "hanzi": "事",
+      "pinyin_ming": "shì",
+      "traduccion_ming": "asunto; cosa"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-做作业",
+      "hanzi": "做作业",
+      "pinyin_ming": "zuò zuòyè",
+      "traduccion_ming": "hacer la tarea"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-有点儿",
+      "hanzi": "有点儿",
+      "pinyin_ming": "yǒudiǎnr",
+      "traduccion_ming": "un poco"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-部",
+      "hanzi": "部",
+      "pinyin_ming": "bù",
+      "traduccion_ming": "clasificador de películas y obras"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-跟",
+      "hanzi": "跟",
+      "pinyin_ming": "gēn",
+      "traduccion_ming": "con"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-走",
+      "hanzi": "走",
+      "pinyin_ming": "zǒu",
+      "traduccion_ming": "ir; marcharse"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-怕",
+      "hanzi": "怕",
+      "pinyin_ming": "pà",
+      "traduccion_ming": "temer"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-蛇",
+      "hanzi": "蛇",
+      "pinyin_ming": "shé",
+      "traduccion_ming": "serpiente",
+      "pinyin_display_correction": "Convert documented numbered tone she2 to shé."
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-参加",
+      "hanzi": "参加",
+      "pinyin_ming": "cānjiā",
+      "traduccion_ming": "participar"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-八卦",
+      "hanzi": "八卦",
+      "pinyin_ming": "bāguà",
+      "traduccion_ming": "chisme"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-门",
+      "hanzi": "门",
+      "pinyin_ming": "mén",
+      "traduccion_ming": "clasificador de asignaturas"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-手机",
+      "hanzi": "手机",
+      "pinyin_ming": "shǒujī",
+      "traduccion_ming": "teléfono celular"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-钱",
+      "hanzi": "钱",
+      "pinyin_ming": "qián",
+      "traduccion_ming": "dinero"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-汉西英",
+      "hanzi": "汉西英",
+      "pinyin_ming": "Hàn-Xī-Yīng",
+      "traduccion_ming": "chino, español e inglés"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-翻译",
+      "hanzi": "翻译",
+      "pinyin_ming": "fānyì",
+      "traduccion_ming": "traducción; traducir"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-里卡多帕尔玛大学孔子学院",
+      "hanzi": "里卡多帕尔玛大学孔子学院",
+      "pinyin_ming": "Lǐkǎduō Pà'ěrmǎ Dàxué Kǒngzǐ Xuéyuàn",
+      "traduccion_ming": "Instituto Confucio de la Universidad Ricardo Palma"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-语文",
+      "hanzi": "语文",
+      "pinyin_ming": "yǔwén",
+      "traduccion_ming": "lengua y literatura"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-数学",
+      "hanzi": "数学",
+      "pinyin_ming": "shùxué",
+      "traduccion_ming": "matemáticas"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-物理",
+      "hanzi": "物理",
+      "pinyin_ming": "wùlǐ",
+      "traduccion_ming": "física"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-化学",
+      "hanzi": "化学",
+      "pinyin_ming": "huàxué",
+      "traduccion_ming": "química"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-地理",
+      "hanzi": "地理",
+      "pinyin_ming": "dìlǐ",
+      "traduccion_ming": "geografía"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-思想政治",
+      "hanzi": "思想政治",
+      "pinyin_ming": "sīxiǎng zhèngzhì",
+      "traduccion_ming": "ideología y política"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-生物",
+      "hanzi": "生物",
+      "pinyin_ming": "shēngwù",
+      "traduccion_ming": "biología"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-功夫熊猫",
+      "hanzi": "功夫熊猫",
+      "pinyin_ming": "Gōngfu Xióngmāo",
+      "traduccion_ming": "Kung Fu Panda"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-每天",
+      "hanzi": "每天",
+      "pinyin_ming": "měi tiān",
+      "traduccion_ming": "todos los días"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-写作",
+      "hanzi": "写作",
+      "pinyin_ming": "xiězuò",
+      "traduccion_ming": "redacción; escribir"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-周末",
+      "hanzi": "周末",
+      "pinyin_ming": "zhōumò",
+      "traduccion_ming": "fin de semana"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-中学",
+      "hanzi": "中学",
+      "pinyin_ming": "zhōngxué",
+      "traduccion_ming": "escuela secundaria"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-教",
+      "hanzi": "教",
+      "pinyin_ming": "jiāo",
+      "traduccion_ming": "enseñar"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-陈明",
+      "hanzi": "陈明",
+      "pinyin_ming": "Chén Míng",
+      "traduccion_ming": "Chen Ming (nombre propio)"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-星期",
+      "hanzi": "星期",
+      "pinyin_ming": "xīngqī",
+      "traduccion_ming": "semana"
+    },
+    {
+      "target_table": "vocabulary",
+      "target_id": "v-综合汉语",
+      "hanzi": "综合汉语",
+      "pinyin_ming": "zōnghé Hànyǔ",
+      "traduccion_ming": "chino integral"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-96329b894f2f8fa9",
+      "hanzi": "明天早上",
+      "pinyin_ming": "Míngtiān zǎoshang",
+      "traduccion_ming": "mañana por la mañana"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-6af537d6a30da64e",
+      "hanzi": "明天晚上",
+      "pinyin_ming": "Míngtiān wǎnshang",
+      "traduccion_ming": "mañana por la noche"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-347200d6cbed72b9",
+      "hanzi": "很多课",
+      "pinyin_ming": "Hěn duō kè",
+      "traduccion_ming": "muchas clases"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-6194331b033edafc",
+      "hanzi": "很多人",
+      "pinyin_ming": "Hěn duō rén",
+      "traduccion_ming": "muchas personas"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-33e519de8828fa98",
+      "hanzi": "特别多",
+      "pinyin_ming": "Tèbié duō",
+      "traduccion_ming": "especialmente muchos"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-d51bcdbf8f65e8a3",
+      "hanzi": "特别忙",
+      "pinyin_ming": "Tèbié máng",
+      "traduccion_ming": "especialmente ocupado"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-570217ae867f34d3",
+      "hanzi": "九点（钟）",
+      "pinyin_ming": "Jiǔ diǎn (zhōng)",
+      "traduccion_ming": "las nueve (en punto)"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-a15d9483d1377fc4",
+      "hanzi": "两点（钟）",
+      "pinyin_ming": "Liǎng diǎn (zhōng)",
+      "traduccion_ming": "las dos (en punto)"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-47287f2c10133927",
+      "hanzi": "今天上午",
+      "pinyin_ming": "Jīntiān shàngwǔ",
+      "traduccion_ming": "hoy por la mañana"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-31fa87df164900d1",
+      "hanzi": "明天上午",
+      "pinyin_ming": "Míngtiān shàngwǔ",
+      "traduccion_ming": "mañana por la mañana"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-280d302406a062eb",
+      "hanzi": "八点半",
+      "pinyin_ming": "Bā diǎn bàn",
+      "traduccion_ming": "las ocho y media"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-abd3aa25a3b626d1",
+      "hanzi": "半个",
+      "pinyin_ming": "Bàn ge",
+      "traduccion_ming": "medio; la mitad de uno"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-f190ae4ed98b955c",
+      "hanzi": "学习语法",
+      "pinyin_ming": "Xuéxí yǔfǎ",
+      "traduccion_ming": "estudiar gramática"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-f6c305f96241b4e9",
+      "hanzi": "语法课",
+      "pinyin_ming": "Yǔfǎ kè",
+      "traduccion_ming": "clase de gramática"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-a4b7a94e962cd061",
+      "hanzi": "学习汉字",
+      "pinyin_ming": "Xuéxí Hànzì",
+      "traduccion_ming": "estudiar caracteres chinos"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-3a58c32e817546e1",
+      "hanzi": "汉字课",
+      "pinyin_ming": "Hànzì kè",
+      "traduccion_ming": "clase de caracteres chinos"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-fc5910e8d03da55f",
+      "hanzi": "今天下午",
+      "pinyin_ming": "Jīntiān xiàwǔ",
+      "traduccion_ming": "hoy por la tarde"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-7ec8f280842f48b6",
+      "hanzi": "明天下午",
+      "pinyin_ming": "Míngtiān xiàwǔ",
+      "traduccion_ming": "mañana por la tarde"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-a30fff10dbde78e5",
+      "hanzi": "下午没有课",
+      "pinyin_ming": "Xiàwǔ méiyǒu kè",
+      "traduccion_ming": "por la tarde no hay clase"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-e87abad908b96de1",
+      "hanzi": "两点一刻",
+      "pinyin_ming": "Liǎng diǎn yí kè",
+      "traduccion_ming": "las dos y cuarto"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-f8a522fb671f7294",
+      "hanzi": "七点三刻",
+      "pinyin_ming": "Qī diǎn sān kè",
+      "traduccion_ming": "las siete y cuarenta y cinco"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-4105171ec1d4303d",
+      "hanzi": "汉语口语",
+      "pinyin_ming": "Hànyǔ kǒuyǔ",
+      "traduccion_ming": "chino hablado"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-c67128cca0869551",
+      "hanzi": "口语课",
+      "pinyin_ming": "Kǒuyǔ kè",
+      "traduccion_ming": "clase de expresión oral"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-89af9ec13542fade",
+      "hanzi": "很累",
+      "pinyin_ming": "Hěn lèi",
+      "traduccion_ming": "muy cansado"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-2be542f3380b2b7b",
+      "hanzi": "真累",
+      "pinyin_ming": "Zhēn lèi",
+      "traduccion_ming": "realmente cansado"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-72dc5e45387c825d",
+      "hanzi": "特别累",
+      "pinyin_ming": "Tèbié lèi",
+      "traduccion_ming": "especialmente cansado"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-03d50d3a588e5d2e",
+      "hanzi": "有时间",
+      "pinyin_ming": "Yǒu shíjiān",
+      "traduccion_ming": "tener tiempo"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-5f4f9d69d333c848",
+      "hanzi": "没有时间",
+      "pinyin_ming": "Méiyǒu shíjiān",
+      "traduccion_ming": "no tener tiempo"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-07078158c119547f",
+      "hanzi": "有没有时间",
+      "pinyin_ming": "Yǒu méiyǒu shíjiān",
+      "traduccion_ming": "¿hay tiempo?; ¿tienes tiempo?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-24c8fca13f093fc5",
+      "hanzi": "看电影",
+      "pinyin_ming": "Kàn diànyǐng",
+      "traduccion_ming": "ver una película"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-5f8158a2b58dd4da",
+      "hanzi": "一起学习",
+      "pinyin_ming": "Yìqǐ xuéxí",
+      "traduccion_ming": "estudiar juntos"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-113323cdaed0e2c7",
+      "hanzi": "一起工作",
+      "pinyin_ming": "Yìqǐ gōngzuò",
+      "traduccion_ming": "trabajar juntos"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-bbc575d8a4a6475c",
+      "hanzi": "一起看电影",
+      "pinyin_ming": "Yìqǐ kàn diànyǐng",
+      "traduccion_ming": "ver una película juntos"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-d82458ee9e42d188",
+      "hanzi": "一起去",
+      "pinyin_ming": "Yìqǐ qù",
+      "traduccion_ming": "ir juntos"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-f0e6aa434f097a17",
+      "hanzi": "去上海",
+      "pinyin_ming": "Qù Shànghǎi",
+      "traduccion_ming": "ir a Shanghái"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-a2d18e42006ead42",
+      "hanzi": "刚去美国",
+      "pinyin_ming": "Gāng qù Měiguó",
+      "traduccion_ming": "acabar de ir a Estados Unidos"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-9637c18fde30db28",
+      "hanzi": "去他们家",
+      "pinyin_ming": "Qù tāmen jiā",
+      "traduccion_ming": "ir a su casa"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-2b93dc1a8fe62c59",
+      "hanzi": "一起去吧",
+      "pinyin_ming": "Yìqǐ qù ba",
+      "traduccion_ming": "vayamos juntos"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-d90ea61b80398c25",
+      "hanzi": "坐吧",
+      "pinyin_ming": "Zuò ba",
+      "traduccion_ming": "siéntate, por favor"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-9ba359e542ee5a22",
+      "hanzi": "不行",
+      "pinyin_ming": "Bù xíng",
+      "traduccion_ming": "no se puede; no está bien"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-8d0f64656477a265",
+      "hanzi": "练习汉字",
+      "pinyin_ming": "Liànxí Hànzì",
+      "traduccion_ming": "practicar caracteres chinos"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-4aff0cc248eed1b9",
+      "hanzi": "做练习",
+      "pinyin_ming": "Zuò liànxí",
+      "traduccion_ming": "hacer ejercicios"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-cb774e2fd750dd37",
+      "hanzi": "现在去",
+      "pinyin_ming": "Xiànzài qù",
+      "traduccion_ming": "ir ahora"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-33595643cdc81b0e",
+      "hanzi": "差五分八点",
+      "pinyin_ming": "Chà wǔ fēn bā diǎn",
+      "traduccion_ming": "las ocho menos cinco"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-9a6ce4cf2cab6307",
+      "hanzi": "回家",
+      "pinyin_ming": "Huí jiā",
+      "traduccion_ming": "volver a casa"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-021b0848f33436ee",
+      "hanzi": "回国",
+      "pinyin_ming": "Huí guó",
+      "traduccion_ming": "volver al país"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-a95bbf0633d3bbea",
+      "hanzi": "回学校",
+      "pinyin_ming": "Huí xuéxiào",
+      "traduccion_ming": "volver a la escuela"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-de5f51f3b31f297b",
+      "hanzi": "我们学校",
+      "pinyin_ming": "Wǒmen xuéxiào",
+      "traduccion_ming": "nuestra escuela"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-f14ea6d6ea2609e4",
+      "hanzi": "我们班",
+      "pinyin_ming": "Wǒmen bān",
+      "traduccion_ming": "nuestra clase"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-5bdf917a199798b5",
+      "hanzi": "你们班",
+      "pinyin_ming": "Nǐmen bān",
+      "traduccion_ming": "su clase; la clase de ustedes"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-811119407709ea85",
+      "hanzi": "有活动",
+      "pinyin_ming": "Yǒu huódòng",
+      "traduccion_ming": "tener una actividad"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-64f9401fdb6de5bf",
+      "hanzi": "我们班的活动",
+      "pinyin_ming": "Wǒmen bān de huódòng",
+      "traduccion_ming": "la actividad de nuestra clase"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-fcf782492e9777ed",
+      "hanzi": "刚听说",
+      "pinyin_ming": "Gāng tīngshuō",
+      "traduccion_ming": "acabar de enterarse"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-3149ed3818c2e8bc",
+      "hanzi": "听汉语",
+      "pinyin_ming": "Tīng Hànyǔ",
+      "traduccion_ming": "escuchar chino"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-fb569006030f25d1",
+      "hanzi": "练习听",
+      "pinyin_ming": "Liànxí tīng",
+      "traduccion_ming": "practicar la escucha"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-e1c787b7dced4f4f",
+      "hanzi": "说汉语",
+      "pinyin_ming": "Shuō Hànyǔ",
+      "traduccion_ming": "hablar chino"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-715a41d754ebdc23",
+      "hanzi": "不说英语",
+      "pinyin_ming": "Bù shuō Yīngyǔ",
+      "traduccion_ming": "no hablar inglés"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-b3dd55b3a309cfc4",
+      "hanzi": "六个女生",
+      "pinyin_ming": "Liù ge nǚshēng",
+      "traduccion_ming": "seis alumnas"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-c1ba7f55aa640ece",
+      "hanzi": "女生多",
+      "pinyin_ming": "Nǚshēng duō",
+      "traduccion_ming": "hay muchas alumnas"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-863c0fa3d3165301",
+      "hanzi": "你们班的女生",
+      "pinyin_ming": "Nǐmen bān de nǚshēng",
+      "traduccion_ming": "las alumnas de su clase"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-877985ac0523556c",
+      "hanzi": "十二个男生",
+      "pinyin_ming": "Shí'èr ge nánshēng",
+      "traduccion_ming": "doce alumnos varones"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-846be6533240d832",
+      "hanzi": "男生多",
+      "pinyin_ming": "Nánshēng duō",
+      "traduccion_ming": "hay muchos alumnos varones"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-ed524e7a23dca3f9",
+      "hanzi": "我们班的男生",
+      "pinyin_ming": "Wǒmen bān de nánshēng",
+      "traduccion_ming": "los alumnos varones de nuestra clase"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-c72581f1f425d881",
+      "hanzi": "男老师",
+      "pinyin_ming": "Nán lǎoshī",
+      "traduccion_ming": "profesor varón"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-cbf2f3373a421b13",
+      "hanzi": "男孩子",
+      "pinyin_ming": "Nán háizi",
+      "traduccion_ming": "niño"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-7708b5d0ec23c6eb",
+      "hanzi": "很少",
+      "pinyin_ming": "Hěn shǎo",
+      "traduccion_ming": "muy pocos; muy poco"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-82e65dfb0dad9776",
+      "hanzi": "不少",
+      "pinyin_ming": "Bù shǎo",
+      "traduccion_ming": "bastantes; no pocos"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-4a2b2ec42bdba0ae",
+      "hanzi": "男生少",
+      "pinyin_ming": "Nánshēng shǎo",
+      "traduccion_ming": "hay pocos alumnos varones"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-b59858522fbc8445",
+      "hanzi": "只有一个人",
+      "pinyin_ming": "Zhǐ yǒu yí ge rén",
+      "traduccion_ming": "solo hay una persona"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-faf0edd48b0045fd",
+      "hanzi": "只说汉语",
+      "pinyin_ming": "Zhǐ shuō Hànyǔ",
+      "traduccion_ming": "hablar solo chino"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-ca4cceca7fafefa2",
+      "hanzi": "只喜欢妈妈",
+      "pinyin_ming": "Zhǐ xǐhuan māma",
+      "traduccion_ming": "querer solo a mamá"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-3d7c8fbdc48ad1cd",
+      "hanzi": "多少人",
+      "pinyin_ming": "Duōshao rén",
+      "traduccion_ming": "cuántas personas"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-91a2c5c2a5203098",
+      "hanzi": "多少个汉字",
+      "pinyin_ming": "Duōshao ge Hànzì",
+      "traduccion_ming": "cuántos caracteres chinos"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-ce5410b2f1e75b0b",
+      "hanzi": "多少张照片",
+      "pinyin_ming": "Duōshao zhāng zhàopiàn",
+      "traduccion_ming": "cuántas fotos"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-7e2b018c5acb95d5",
+      "hanzi": "很有意思",
+      "pinyin_ming": "Hěn yǒu yìsi",
+      "traduccion_ming": "muy interesante"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-ca1822ce2e8bb2f3",
+      "hanzi": "没有意思",
+      "pinyin_ming": "Méiyǒu yìsi",
+      "traduccion_ming": "no es interesante; no tiene sentido"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-a12b569a9ca5896f",
+      "hanzi": "这个汉字的意思",
+      "pinyin_ming": "Zhè ge Hànzì de yìsi",
+      "traduccion_ming": "el significado de este carácter chino"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-9198ad68150d0f1c",
+      "hanzi": "什么意思",
+      "pinyin_ming": "Shénme yìsi",
+      "traduccion_ming": "qué significa"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-bf5937cafdd21a4a",
+      "hanzi": "中国学生",
+      "pinyin_ming": "Zhōngguó xuéshēng",
+      "traduccion_ming": "estudiante chino"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-5e9937a180f6f3c8",
+      "hanzi": "很多学生",
+      "pinyin_ming": "Hěn duō xuéshēng",
+      "traduccion_ming": "muchos estudiantes"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-6b5f0ad38f72e997",
+      "hanzi": "女学生",
+      "pinyin_ming": "Nǚ xuéshēng",
+      "traduccion_ming": "estudiante femenina"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-bdd9cdc05dc53622",
+      "hanzi": "来中国",
+      "pinyin_ming": "Lái Zhōngguó",
+      "traduccion_ming": "venir a China"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-8a665e2c537148f2",
+      "hanzi": "刚来北京",
+      "pinyin_ming": "Gāng lái Běijīng",
+      "traduccion_ming": "acabar de llegar a Pekín"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-36662235cea1e83e",
+      "hanzi": "来学校",
+      "pinyin_ming": "Lái xuéxiào",
+      "traduccion_ming": "venir a la escuela"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-a950d2f56765c363",
+      "hanzi": "明天晚上来",
+      "pinyin_ming": "Míngtiān wǎnshang lái",
+      "traduccion_ming": "venir mañana por la noche"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-5aa40566a456f29b",
+      "hanzi": "什么专业",
+      "pinyin_ming": "Shénme zhuānyè",
+      "traduccion_ming": "qué especialidad"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-208c92688b86b6ee",
+      "hanzi": "汉语专业",
+      "pinyin_ming": "Hànyǔ zhuānyè",
+      "traduccion_ming": "especialidad de chino"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-19d667b89aa661cc",
+      "hanzi": "多少个专业",
+      "pinyin_ming": "Duōshao ge zhuānyè",
+      "traduccion_ming": "cuántas especialidades"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-4b95f6726459cb70",
+      "hanzi": "有一个主意",
+      "pinyin_ming": "Yǒu yí ge zhǔyi",
+      "traduccion_ming": "tener una idea"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-e386048062b793db",
+      "hanzi": "我明天有很多课。",
+      "pinyin_ming": "Wǒ míngtiān yǒu hěn duō kè.",
+      "traduccion_ming": "Mañana tengo muchas clases."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-d877024c668ebaef",
+      "hanzi": "我明天上午八点半有语法课。",
+      "pinyin_ming": "Wǒ míngtiān shàngwǔ bā diǎn bàn yǒu yǔfǎ kè.",
+      "traduccion_ming": "Mañana por la mañana tengo clase de gramática a las ocho y media."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-e2cf5008cd3ea8a8",
+      "hanzi": "你明天晚上有没有时间？",
+      "pinyin_ming": "Nǐ míngtiān wǎnshang yǒu méiyǒu shíjiān?",
+      "traduccion_ming": "¿Tienes tiempo mañana por la noche?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-3a43236f3afdfb6b",
+      "hanzi": "我们一起练习口语吧。",
+      "pinyin_ming": "Wǒmen yìqǐ liànxí kǒuyǔ ba.",
+      "traduccion_ming": "Practiquemos juntos la expresión oral."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-87997034e59621dc",
+      "hanzi": "你看不看（电影）？",
+      "pinyin_ming": "Nǐ kàn bu kàn (diànyǐng)?",
+      "traduccion_ming": "¿Vas a ver (la película)?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-49b635346a69c22b",
+      "hanzi": "我们班一共有十八个学生。",
+      "pinyin_ming": "Wǒmen bān yígòng yǒu shíbā ge xuéshēng.",
+      "traduccion_ming": "En nuestra clase hay dieciocho estudiantes en total."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-479743a06e9e9639",
+      "hanzi": "（林娜）很累。／（林娜）不累。",
+      "pinyin_ming": "(Lín Nà) hěn lèi. / (Lín Nà) bú lèi.",
+      "traduccion_ming": "(Lin Na) está muy cansada. / (Lin Na) no está cansada."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-0a60ee4dac722643",
+      "hanzi": "（他明天）来。／（他明天）不来。",
+      "pinyin_ming": "(Tā míngtiān) lái. / (Tā míngtiān) bù lái.",
+      "traduccion_ming": "(Él mañana) viene. / (Él mañana) no viene."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-a6503ee14d293ef3",
+      "hanzi": "（我）要（咖啡）。／（我）不要（咖啡）。",
+      "pinyin_ming": "(Wǒ) yào (kāfēi). / (Wǒ) bú yào (kāfēi).",
+      "traduccion_ming": "(Yo) quiero (café). / (Yo) no quiero (café)."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-f716a05613477619",
+      "hanzi": "（宋华）有（时间）。／（宋华）没有（时间）。",
+      "pinyin_ming": "(Sòng Huá) yǒu (shíjiān). / (Sòng Huá) méiyǒu (shíjiān).",
+      "traduccion_ming": "(Song Hua) tiene (tiempo). / (Song Hua) no tiene (tiempo)."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-52f1cb9d911fbeeb",
+      "hanzi": "（他妈妈）是（老师）。／是。他妈妈是老师。",
+      "pinyin_ming": "(Tā māma) shì (lǎoshī). / Shì. Tā māma shì lǎoshī.",
+      "traduccion_ming": "(Su madre) es (profesora). / Sí. Su madre es profesora."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-53945089fef03bcf",
+      "hanzi": "（他妈妈）不是（老师）。／不是。他妈妈不是老师。",
+      "pinyin_ming": "(Tā māma) bú shì (lǎoshī). / Bú shì. Tā māma bú shì lǎoshī.",
+      "traduccion_ming": "(Su madre) no es (profesora). / No. Su madre no es profesora."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-3e2e47ac9e6215b0",
+      "hanzi": "我很好。你呢？（你好吗？）",
+      "pinyin_ming": "Wǒ hěn hǎo. Nǐ ne? (Nǐ hǎo ma?)",
+      "traduccion_ming": "Estoy muy bien. ¿Y tú? (¿Cómo estás?)"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-47cc11c8fb6efec9",
+      "hanzi": "王小云学英语专业。马大为呢？（马大为学什么专业？）",
+      "pinyin_ming": "Wáng Xiǎoyún xué Yīngyǔ zhuānyè. Mǎ Dàwéi ne? (Mǎ Dàwéi xué shénme zhuānyè?)",
+      "traduccion_ming": "Wang Xiaoyun estudia la especialidad de inglés. ¿Y Ma Dawei? (¿Qué especialidad estudia Ma Dawei?)"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-dd1403ed7b38d64e",
+      "hanzi": "我们班有二十六个女生。你们班呢？（你们班有多少个女生？）",
+      "pinyin_ming": "Wǒmen bān yǒu èrshíliù ge nǚshēng. Nǐmen bān ne? (Nǐmen bān yǒu duōshao ge nǚshēng?)",
+      "traduccion_ming": "En nuestra clase hay veintiséis alumnas. ¿Y en la suya? (¿Cuántas alumnas hay en su clase?)"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-d37fe7d1231e79be",
+      "hanzi": "几点起床",
+      "pinyin_ming": "Jǐ diǎn qǐchuáng",
+      "traduccion_ming": "a qué hora levantarse"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-9a0f8d2ad3e6483f",
+      "hanzi": "吃早饭",
+      "pinyin_ming": "Chī zǎofàn",
+      "traduccion_ming": "desayunar"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-e095ee3aa286ea4f",
+      "hanzi": "做早饭",
+      "pinyin_ming": "Zuò zǎofàn",
+      "traduccion_ming": "preparar el desayuno"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-f0f62500b787d34c",
+      "hanzi": "吃午饭",
+      "pinyin_ming": "Chī wǔfàn",
+      "traduccion_ming": "almorzar"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-78f9a7e0e8944652",
+      "hanzi": "做午饭",
+      "pinyin_ming": "Zuò wǔfàn",
+      "traduccion_ming": "preparar el almuerzo"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-1fada6c4c761938b",
+      "hanzi": "喜欢运动",
+      "pinyin_ming": "Xǐhuan yùndòng",
+      "traduccion_ming": "gustar de hacer deporte"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-e2314e6224c6bebc",
+      "hanzi": "做运动",
+      "pinyin_ming": "Zuò yùndòng",
+      "traduccion_ming": "hacer ejercicio"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-d505215b2b69b4df",
+      "hanzi": "去打球",
+      "pinyin_ming": "Qù dǎ qiú",
+      "traduccion_ming": "ir a jugar a la pelota"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-34f457aa7192ee77",
+      "hanzi": "喜欢打球",
+      "pinyin_ming": "Xǐhuan dǎ qiú",
+      "traduccion_ming": "gustar de jugar a la pelota"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-af4809204abf23ce",
+      "hanzi": "去跑步",
+      "pinyin_ming": "Qù pǎobù",
+      "traduccion_ming": "ir a correr"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-644cfd9b5fe2a1df",
+      "hanzi": "喜欢跑步",
+      "pinyin_ming": "Xǐhuan pǎobù",
+      "traduccion_ming": "gustar de correr"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-a5b32b91d57a88a4",
+      "hanzi": "看电视",
+      "pinyin_ming": "Kàn diànshì",
+      "traduccion_ming": "ver televisión"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-b790aee7b7d7981b",
+      "hanzi": "吃晚饭",
+      "pinyin_ming": "Chī wǎnfàn",
+      "traduccion_ming": "cenar"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-6e700930c351fb9b",
+      "hanzi": "做晚饭",
+      "pinyin_ming": "Zuò wǎnfàn",
+      "traduccion_ming": "preparar la cena"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-83f83e0340532c5a",
+      "hanzi": "几点睡觉",
+      "pinyin_ming": "Jǐ diǎn shuìjiào",
+      "traduccion_ming": "a qué hora dormir"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-11921c711bd54d0e",
+      "hanzi": "去睡觉",
+      "pinyin_ming": "Qù shuìjiào",
+      "traduccion_ming": "ir a dormir"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-bd5b8bdf230b4e9d",
+      "hanzi": "汉语听力",
+      "pinyin_ming": "Hànyǔ tīnglì",
+      "traduccion_ming": "comprensión auditiva del chino"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-27001f5d1e6befad",
+      "hanzi": "练习听力",
+      "pinyin_ming": "Liànxí tīnglì",
+      "traduccion_ming": "practicar la comprensión auditiva"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-b0ca5755efc43bc4",
+      "hanzi": "文学课",
+      "pinyin_ming": "Wénxué kè",
+      "traduccion_ming": "clase de literatura"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-9f90253b729097ee",
+      "hanzi": "学习文学",
+      "pinyin_ming": "Xuéxí wénxué",
+      "traduccion_ming": "estudiar literatura"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-ac49870e3e42e217",
+      "hanzi": "历史课",
+      "pinyin_ming": "Lìshǐ kè",
+      "traduccion_ming": "clase de historia"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-ad8e93987dda9627",
+      "hanzi": "学习历史",
+      "pinyin_ming": "Xuéxí lìshǐ",
+      "traduccion_ming": "estudiar historia"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-76b055e8d3a65314",
+      "hanzi": "学习语言",
+      "pinyin_ming": "Xuéxí yǔyán",
+      "traduccion_ming": "estudiar idiomas"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-ec2b8fbfe59f15c4",
+      "hanzi": "说什么语（言）",
+      "pinyin_ming": "Shuō shénme yǔ (yán)",
+      "traduccion_ming": "qué idioma hablar"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-2993c2366abf04e2",
+      "hanzi": "经济课",
+      "pinyin_ming": "Jīngjì kè",
+      "traduccion_ming": "clase de economía"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-184e1ff6e2e57600",
+      "hanzi": "学习经济",
+      "pinyin_ming": "Xuéxí jīngjì",
+      "traduccion_ming": "estudiar economía"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-4ea5a005d6093a8a",
+      "hanzi": "文化课",
+      "pinyin_ming": "Wénhuà kè",
+      "traduccion_ming": "clase de cultura"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-7eb501367766eb79",
+      "hanzi": "学习文化",
+      "pinyin_ming": "Xuéxí wénhuà",
+      "traduccion_ming": "estudiar cultura"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-0eeb0db89e4a8ca8",
+      "hanzi": "中国文化",
+      "pinyin_ming": "Zhōngguó wénhuà",
+      "traduccion_ming": "cultura china"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-ffbc965140872096",
+      "hanzi": "很容易",
+      "pinyin_ming": "Hěn róngyì",
+      "traduccion_ming": "muy fácil"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-939c5225f0d0f224",
+      "hanzi": "不容易",
+      "pinyin_ming": "Bù róngyì",
+      "traduccion_ming": "no es fácil"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-ed2133e87c96e181",
+      "hanzi": "很难",
+      "pinyin_ming": "Hěn nán",
+      "traduccion_ming": "muy difícil"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-9942b9d547ca9624",
+      "hanzi": "不难",
+      "pinyin_ming": "Bù nán",
+      "traduccion_ming": "no es difícil"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-fba3dc508eb9bff0",
+      "hanzi": "林娜明天有很多课。",
+      "pinyin_ming": "Lín Nà míngtiān yǒu hěn duō kè.",
+      "traduccion_ming": "Lin Na tiene muchas clases mañana."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-9a57ace52f9d724c",
+      "hanzi": "她上午八点半有语法课，十点四十有汉字课，下午两点一刻还有口语课。",
+      "pinyin_ming": "Tā shàngwǔ bā diǎn bàn yǒu yǔfǎ kè, shí diǎn sìshí yǒu Hànzì kè, xiàwǔ liǎng diǎn yí kè hái yǒu kǒuyǔ kè.",
+      "traduccion_ming": "Ella tiene clase de gramática a las ocho y media de la mañana, de caracteres chinos a las diez y cuarenta, y también de expresión oral a las dos y cuarto de la tarde."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-acbb77189aa30664",
+      "hanzi": "她不觉得累。",
+      "pinyin_ming": "Tā bù juéde lèi.",
+      "traduccion_ming": "Ella no se siente cansada."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-4348b0041fbda76c",
+      "hanzi": "明天晚上她和宋华一起练习口语。",
+      "pinyin_ming": "Míngtiān wǎnshang tā hé Sòng Huá yìqǐ liànxí kǒuyǔ.",
+      "traduccion_ming": "Mañana por la noche ella y Song Hua practican juntos la expresión oral."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-1797f12f37bad32a",
+      "hanzi": "今天晚上七点半王小云的班有活动。",
+      "pinyin_ming": "Jīntiān wǎnshang qī diǎn bàn Wáng Xiǎoyún de bān yǒu huódòng.",
+      "traduccion_ming": "Hoy a las siete y media de la noche la clase de Wang Xiaoyun tiene una actividad."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-17aac1df35a992c9",
+      "hanzi": "他们班一共有三十个人，有二十六个女生，四个男生。",
+      "pinyin_ming": "Tāmen bān yígòng yǒu sānshí ge rén, yǒu èrshíliù ge nǚshēng, sì ge nánshēng.",
+      "traduccion_ming": "En su clase hay treinta personas en total: veintiséis alumnas y cuatro alumnos varones."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-779c72cb1317c0e2",
+      "hanzi": "马大为觉得王小云的班很有意思。",
+      "pinyin_ming": "Mǎ Dàwéi juéde Wáng Xiǎoyún de bān hěn yǒu yìsi.",
+      "traduccion_ming": "A Ma Dawei le parece muy interesante la clase de Wang Xiaoyun."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-2b23d749d855fb85",
+      "hanzi": "马大为他们班的女生少，男生多。",
+      "pinyin_ming": "Mǎ Dàwéi tāmen bān de nǚshēng shǎo, nánshēng duō.",
+      "traduccion_ming": "En la clase de Ma Dawei hay pocas alumnas y muchos alumnos varones."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-49694b381bdd0a08",
+      "hanzi": "他们班一共有十八个学生，只有六个女生。",
+      "pinyin_ming": "Tāmen bān yígòng yǒu shíbā ge xuéshēng, zhǐ yǒu liù ge nǚshēng.",
+      "traduccion_ming": "En su clase hay dieciocho estudiantes en total, y solo seis son alumnas."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-ebbfd13d45c78104",
+      "hanzi": "王小云说马大为的班也很有意思。",
+      "pinyin_ming": "Wáng Xiǎoyún shuō Mǎ Dàwéi de bān yě hěn yǒu yìsi.",
+      "traduccion_ming": "Wang Xiaoyun dice que la clase de Ma Dawei también es muy interesante."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-c54bfb05e70835f0",
+      "hanzi": "我是一个学生，今年二十一岁。",
+      "pinyin_ming": "Wǒ shì yí ge xuéshēng, jīnnián èrshíyī suì.",
+      "traduccion_ming": "Soy estudiante y este año tengo veintiún años."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-bf232a4951e3ad6f",
+      "hanzi": "我学习英语专业。",
+      "pinyin_ming": "Wǒ xuéxí Yīngyǔ zhuānyè.",
+      "traduccion_ming": "Estudio la especialidad de inglés."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-2e1003bda55801ee",
+      "hanzi": "今天我很忙。",
+      "pinyin_ming": "Jīntiān wǒ hěn máng.",
+      "traduccion_ming": "Hoy estoy muy ocupado."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-2f4e55cc77f5e1d9",
+      "hanzi": "我有很多课：上午八点有语法课，十点半有口语课，下午两点还有钢琴课。",
+      "pinyin_ming": "Wǒ yǒu hěn duō kè: shàngwǔ bā diǎn yǒu yǔfǎ kè, shí diǎn bàn yǒu kǒuyǔ kè, xiàwǔ liǎng diǎn hái yǒu gāngqín kè.",
+      "traduccion_ming": "Tengo muchas clases: gramática a las ocho de la mañana, expresión oral a las diez y media, y también piano a las dos de la tarde."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-d7386332cc70d6d5",
+      "hanzi": "今天晚上七点我们班有活动。",
+      "pinyin_ming": "Jīntiān wǎnshang qī diǎn wǒmen bān yǒu huódòng.",
+      "traduccion_ming": "Hoy a las siete de la noche nuestra clase tiene una actividad."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-cac08eeba5cebe36",
+      "hanzi": "我们班的学生一起吃晚饭。",
+      "pinyin_ming": "Wǒmen bān de xuéshēng yìqǐ chī wǎnfàn.",
+      "traduccion_ming": "Los estudiantes de nuestra clase cenan juntos."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-4b5c236959128f6f",
+      "hanzi": "我们班很有意思，一共有二十四个学生，只有一个男生。",
+      "pinyin_ming": "Wǒmen bān hěn yǒu yìsi, yígòng yǒu èrshísì ge xuéshēng, zhǐ yǒu yí ge nánshēng.",
+      "traduccion_ming": "Nuestra clase es muy interesante: hay veinticuatro estudiantes en total y solo uno es varón."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-2b220dd29a3066e8",
+      "hanzi": "那个男生是谁？",
+      "pinyin_ming": "Nà ge nánshēng shì shéi?",
+      "traduccion_ming": "¿Quién es ese alumno?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-839981c882c71be5",
+      "hanzi": "对，是我。",
+      "pinyin_ming": "Duì, shì wǒ.",
+      "traduccion_ming": "Sí, soy yo."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-337b60d300b66dbe",
+      "hanzi": "明天我很忙。",
+      "pinyin_ming": "Míngtiān wǒ hěn máng.",
+      "traduccion_ming": "Mañana estoy muy ocupado."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-b239d75a6a033e2b",
+      "hanzi": "我七点起床。",
+      "pinyin_ming": "Wǒ qī diǎn qǐchuáng.",
+      "traduccion_ming": "Me levanto a las siete."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-3c30dc8a2774afd5",
+      "hanzi": "上午八点半有语法课，十一点和朋友练习口语。",
+      "pinyin_ming": "Shàngwǔ bā diǎn bàn yǒu yǔfǎ kè, shíyī diǎn hé péngyou liànxí kǒuyǔ.",
+      "traduccion_ming": "Por la mañana tengo clase de gramática a las ocho y media y practico expresión oral con amigos a las once."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-1fa6665412354676",
+      "hanzi": "中午十二点吃午饭。",
+      "pinyin_ming": "Zhōngwǔ shí'èr diǎn chī wǔfàn.",
+      "traduccion_ming": "Almuerzo al mediodía, a las doce."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-d5ae1c29bc69ca22",
+      "hanzi": "我下午没有课。",
+      "pinyin_ming": "Wǒ xiàwǔ méiyǒu kè.",
+      "traduccion_ming": "No tengo clase por la tarde."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-b08ae42eb6fdde55",
+      "hanzi": "我四点运动，六点半吃晚饭。",
+      "pinyin_ming": "Wǒ sì diǎn yùndòng, liù diǎn bàn chī wǎnfàn.",
+      "traduccion_ming": "Hago ejercicio a las cuatro y ceno a las seis y media."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-025fed5d5aee61c9",
+      "hanzi": "明天晚上我和朋友一起看电影，十二点睡觉。",
+      "pinyin_ming": "Míngtiān wǎnshang wǒ hé péngyou yìqǐ kàn diànyǐng, shí'èr diǎn shuìjiào.",
+      "traduccion_ming": "Mañana por la noche veo una película con amigos y me acuesto a las doce."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-49e07700c4d271f2",
+      "hanzi": "现在八点。",
+      "pinyin_ming": "Xiànzài bā diǎn.",
+      "traduccion_ming": "Ahora son las ocho.",
+      "pinyin_display_correction": "Third-tone breve diăn normalized to diǎn."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-f0261a6e6f3114a7",
+      "hanzi": "现在一点半。",
+      "pinyin_ming": "Xiànzài yì diǎn bàn.",
+      "traduccion_ming": "Ahora es la una y media.",
+      "pinyin_display_correction": "Tone mark normalized; 一 before third-tone 点 is read yì in this teaching convention."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-352231e24b8a2a34",
+      "hanzi": "现在四点半。",
+      "pinyin_ming": "Xiànzài sì diǎn bàn.",
+      "traduccion_ming": "Ahora son las cuatro y media.",
+      "pinyin_display_correction": "Third-tone breve diăn normalized to diǎn."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-fa9a18113367ad44",
+      "hanzi": "现在十二点半。",
+      "pinyin_ming": "Xiànzài shí'èr diǎn bàn.",
+      "traduccion_ming": "Ahora son las doce y media.",
+      "pinyin_display_correction": "Third-tone breve and syllable boundary in 十二 corrected."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-6d7c0cc8e61447c3",
+      "hanzi": "现在两点十五分。",
+      "pinyin_ming": "Xiànzài liǎng diǎn shíwǔ fēn.",
+      "traduccion_ming": "Ahora son las dos y quince.",
+      "pinyin_display_correction": "Printed Xiàzài omits n; hanzi is 现在. Breves normalized."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-92eb1f1b36851f56",
+      "hanzi": "现在两点一刻。",
+      "pinyin_ming": "Xiànzài liǎng diǎn yí kè.",
+      "traduccion_ming": "Ahora son las dos y cuarto.",
+      "pinyin_display_correction": "Printed Xiàzài omits n; hanzi is 现在. Breves normalized."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-136aa8291aed9d02",
+      "hanzi": "九点十五分",
+      "pinyin_ming": "Jiǔ diǎn shíwǔ fēn",
+      "traduccion_ming": "las nueve y quince"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-a95318c6abe4c3ff",
+      "hanzi": "七点一刻",
+      "pinyin_ming": "Qī diǎn yí kè",
+      "traduccion_ming": "las siete y cuarto"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-494fc751c15d8b65",
+      "hanzi": "现在六点零七分。",
+      "pinyin_ming": "Xiànzài liù diǎn líng qī fēn.",
+      "traduccion_ming": "Ahora son las seis y siete."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-e18317698b7f1c06",
+      "hanzi": "现在十点十分。",
+      "pinyin_ming": "Xiànzài shí diǎn shí fēn.",
+      "traduccion_ming": "Ahora son las diez y diez."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-a5751659afdf92b7",
+      "hanzi": "你几点吃饭？",
+      "pinyin_ming": "Nǐ jǐ diǎn chī fàn?",
+      "traduccion_ming": "¿A qué hora comes?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-8f97dd0cedf53aa7",
+      "hanzi": "我两点吃午饭。",
+      "pinyin_ming": "Wǒ liǎng diǎn chī wǔfàn.",
+      "traduccion_ming": "Almuerzo a las dos."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-8998a0801d64a8f5",
+      "hanzi": "林娜几点起床？",
+      "pinyin_ming": "Lín Nà jǐ diǎn qǐchuáng?",
+      "traduccion_ming": "¿A qué hora se levanta Lin Na?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-478aa6f94218004c",
+      "hanzi": "林娜七点起床。",
+      "pinyin_ming": "Lín Nà qī diǎn qǐchuáng.",
+      "traduccion_ming": "Lin Na se levanta a las siete."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-3349f4b651682e25",
+      "hanzi": "我早上六点起床qĭchuáng，九点上课，中午十二点吃午饭，下午五点下课，五点半我去打球。",
+      "pinyin_ming": "Wǒ zǎoshang liù diǎn qǐchuáng, jiǔ diǎn shàng kè, zhōngwǔ shí'èr diǎn chī wǔfàn, xiàwǔ wǔ diǎn xià kè, wǔ diǎn bàn wǒ qù dǎ qiú.",
+      "traduccion_ming": "Me levanto a las seis de la mañana, entro a clase a las nueve, almuerzo a las doce del mediodía, salgo de clase a las cinco de la tarde y voy a jugar a la pelota a las cinco y media.",
+      "hanzi_display": "我早上六点起床，九点上课，中午十二点吃午饭，下午五点下课，五点半我去打球。",
+      "hanzi_display_note": "Remove only embedded pronunciation/Spanish gloss or exercise numbering; retain original hanzi and ID."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-c890bc1a4f5ba08a",
+      "hanzi": "六点回家。",
+      "pinyin_ming": "Liù diǎn huí jiā.",
+      "traduccion_ming": "Vuelvo a casa a las seis."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-cead2a3832419bf6",
+      "hanzi": "晚上七点半吃晚饭，九点睡觉shuìjiào。",
+      "pinyin_ming": "Wǎnshang qī diǎn bàn chī wǎnfàn, jiǔ diǎn shuìjiào.",
+      "traduccion_ming": "Por la noche ceno a las siete y media y me acuesto a las nueve.",
+      "hanzi_display": "晚上七点半吃晚饭，九点睡觉。",
+      "hanzi_display_note": "Remove only embedded pronunciation/Spanish gloss or exercise numbering; retain original hanzi and ID."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-c92015d716734b48",
+      "hanzi": "我今天有很多课。",
+      "pinyin_ming": "Wǒ jīntiān yǒu hěn duō kè.",
+      "traduccion_ming": "Hoy tengo muchas clases."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-a403aedb1ef1128a",
+      "hanzi": "我有很多朋友。",
+      "pinyin_ming": "Wǒ yǒu hěn duō péngyou.",
+      "traduccion_ming": "Tengo muchos amigos."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-ad74236dcefecb30",
+      "hanzi": "他认识很多外国人。",
+      "pinyin_ming": "Tā rènshi hěn duō wàiguórén.",
+      "traduccion_ming": "Él conoce a muchos extranjeros."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-2f40652016ddb27e",
+      "hanzi": "今天我要吃很多饺子。",
+      "pinyin_ming": "Jīntiān wǒ yào chī hěn duō jiǎozi.",
+      "traduccion_ming": "Hoy quiero comer muchos ravioles chinos."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-4ae1c03a444f6e66",
+      "hanzi": "你很特别。",
+      "pinyin_ming": "Nǐ hěn tèbié.",
+      "traduccion_ming": "Eres especial."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-aa2c0c87aa3a5920",
+      "hanzi": "那个女生很特别。",
+      "pinyin_ming": "Nà ge nǚshēng hěn tèbié.",
+      "traduccion_ming": "Esa alumna es muy especial."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-91ce5c72764ed110",
+      "hanzi": "我们老师特别好！",
+      "pinyin_ming": "Wǒmen lǎoshī tèbié hǎo!",
+      "traduccion_ming": "¡Nuestro profesor es especialmente bueno!"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-5cc276129864651f",
+      "hanzi": "我今天特别忙。",
+      "pinyin_ming": "Wǒ jīntiān tèbié máng.",
+      "traduccion_ming": "Hoy estoy especialmente ocupado."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-0db794a7b46eb37f",
+      "hanzi": "我很累",
+      "pinyin_ming": "Wǒ hěn lèi",
+      "traduccion_ming": "Estoy muy cansado."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-98139834e4973a92",
+      "hanzi": "我今天特别累。",
+      "pinyin_ming": "Wǒ jīntiān tèbié lèi.",
+      "traduccion_ming": "Hoy estoy especialmente cansado."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-4470f5bd11999237",
+      "hanzi": "汉语的语法不难。",
+      "pinyin_ming": "Hànyǔ de yǔfǎ bù nán.",
+      "traduccion_ming": "La gramática del chino no es difícil.",
+      "pinyin_display_correction": "Printed bnán omits the vowel/tone of 不; Hanzi is 不难."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-3b767becef7ae315",
+      "hanzi": "明天我们有口语考试。",
+      "pinyin_ming": "Míngtiān wǒmen yǒu kǒuyǔ kǎoshì.",
+      "traduccion_ming": "Mañana tenemos un examen oral."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-f3fe4f4581c1adbd",
+      "hanzi": "汉语语法不难，汉字有点儿难。",
+      "pinyin_ming": "Hànyǔ yǔfǎ bù nán, Hànzì yǒudiǎnr nán.",
+      "traduccion_ming": "La gramática del chino no es difícil; los caracteres chinos son un poco difíciles.",
+      "pinyin_display_correction": "不 before second-tone 难 retains fourth tone bù."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-314958000515ee3c",
+      "hanzi": "练习口语 / 汉字 / 汉语",
+      "pinyin_ming": "Liànxí kǒuyǔ / Hànzì / Hànyǔ",
+      "traduccion_ming": "practicar expresión oral / caracteres chinos / chino"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-31d6ab0122146352",
+      "hanzi": "我和朋友练习口语。",
+      "pinyin_ming": "Wǒ hé péngyou liànxí kǒuyǔ.",
+      "traduccion_ming": "Practico expresión oral con amigos."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-d52ba3ff192b8d8e",
+      "hanzi": "下午你们和王老师做练习。",
+      "pinyin_ming": "Xiàwǔ nǐmen hé Wáng lǎoshī zuò liànxí.",
+      "traduccion_ming": "Por la tarde ustedes hacen ejercicios con el profesor Wang."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-f969f67682613661",
+      "hanzi": "这部电影很好看！",
+      "pinyin_ming": "Zhè bù diànyǐng hěn hǎokàn!",
+      "traduccion_ming": "¡Esta película es muy buena!"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-9f0869f03fa58f55",
+      "hanzi": "你喜欢看什么电影？",
+      "pinyin_ming": "Nǐ xǐhuan kàn shénme diànyǐng?",
+      "traduccion_ming": "¿Qué películas te gusta ver?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-b487547a245ef416",
+      "hanzi": "A：你明天有时间吗？",
+      "pinyin_ming": "A: Nǐ míngtiān yǒu shíjiān ma?",
+      "traduccion_ming": "A: ¿Tienes tiempo mañana?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-b73c759e52d3061b",
+      "hanzi": "B：我很忙，没有时间。",
+      "pinyin_ming": "B: Wǒ hěn máng, méiyǒu shíjiān.",
+      "traduccion_ming": "B: Estoy muy ocupado, no tengo tiempo."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-0493d8a76ecc7df4",
+      "hanzi": "去中国 / 他们家",
+      "pinyin_ming": "Qù Zhōngguó / tāmen jiā",
+      "traduccion_ming": "ir a China / a su casa"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-a7cfdb4e2a1b2712",
+      "hanzi": "我们去看电影。",
+      "pinyin_ming": "Wǒmen qù kàn diànyǐng.",
+      "traduccion_ming": "Vamos a ver una película."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-e883435860520617",
+      "hanzi": "他去大学吃饭。",
+      "pinyin_ming": "Tā qù dàxué chī fàn.",
+      "traduccion_ming": "Él va a la universidad a comer."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-1139a1f7501dba66",
+      "hanzi": "他们去朋友家学中文。",
+      "pinyin_ming": "Tāmen qù péngyou jiā xué Zhōngwén.",
+      "traduccion_ming": "Ellos van a casa de un amigo a estudiar chino."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-36b20f59307580a5",
+      "hanzi": "我去中国吃包子。",
+      "pinyin_ming": "Wǒ qù Zhōngguó chī bāozi.",
+      "traduccion_ming": "Voy a China a comer baozi."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-30a2b8ff68395e9a",
+      "hanzi": "我和朋友一起学习汉语。",
+      "pinyin_ming": "Wǒ hé péngyou yìqǐ xuéxí Hànyǔ.",
+      "traduccion_ming": "Estudio chino con amigos."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-473a43f8d197b3f3",
+      "hanzi": "明天我跟你一起去大学。",
+      "pinyin_ming": "Míngtiān wǒ gēn nǐ yìqǐ qù dàxué.",
+      "traduccion_ming": "Mañana voy contigo a la universidad."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-bc8fe0052b157bb7",
+      "hanzi": "她和姐姐一起看电影。",
+      "pinyin_ming": "Tā hé jiějie yìqǐ kàn diànyǐng.",
+      "traduccion_ming": "Ella ve una película con su hermana mayor."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-2acf2dc46462f498",
+      "hanzi": "A：明天去看电影，好吗？",
+      "pinyin_ming": "A: Míngtiān qù kàn diànyǐng, hǎo ma?",
+      "traduccion_ming": "A: ¿Vamos a ver una película mañana?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-445b465f4440335f",
+      "hanzi": "B：不行，我明天没时间。",
+      "pinyin_ming": "B: Bù xíng, wǒ míngtiān méi shíjiān.",
+      "traduccion_ming": "B: No puedo, mañana no tengo tiempo."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-56cd3c32c4f1cb27",
+      "hanzi": "A：我们一起去吃饺子，行不行？",
+      "pinyin_ming": "A: Wǒmen yìqǐ qù chī jiǎozi, xíng bu xíng?",
+      "traduccion_ming": "A: ¿Vamos juntos a comer ravioles chinos?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-75cbe8be1ba33d75",
+      "hanzi": "A：你怕什么？",
+      "pinyin_ming": "A: Nǐ pà shénme?",
+      "traduccion_ming": "A: ¿A qué le tienes miedo?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-0c241a4ebfd8c3ed",
+      "hanzi": "B：我怕蛇she2。",
+      "pinyin_ming": "B: Wǒ pà shé.",
+      "traduccion_ming": "B: Les tengo miedo a las serpientes.",
+      "hanzi_display": "B：我怕蛇。",
+      "hanzi_display_note": "Remove only embedded pronunciation/Spanish gloss or exercise numbering; retain original hanzi and ID."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-57dba2383cfec6c7",
+      "hanzi": "A：明天我们去吃饭，你朋友也去吗？",
+      "pinyin_ming": "A: Míngtiān wǒmen qù chī fàn, nǐ péngyou yě qù ma?",
+      "traduccion_ming": "A: Mañana vamos a comer, ¿tu amigo también va?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-e00f46b2ac6330f0",
+      "hanzi": "B：他很忙，恐怕他没有时间。",
+      "pinyin_ming": "B: Tā hěn máng, kǒngpà tā méiyǒu shíjiān.",
+      "traduccion_ming": "B: Él está muy ocupado, me temo que no tiene tiempo."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-8cc4ddd70ef2395f",
+      "hanzi": "A：你有时间吗？我们去喝咖啡。",
+      "pinyin_ming": "A: Nǐ yǒu shíjiān ma? Wǒmen qù hē kāfēi.",
+      "traduccion_ming": "A: ¿Tienes tiempo? Vamos a tomar café."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-8332621d72c7dc8f",
+      "hanzi": "B：恐怕不行，我在工作。",
+      "pinyin_ming": "B: Kǒngpà bù xíng, wǒ zài gōngzuò.",
+      "traduccion_ming": "B: Me temo que no puedo, estoy trabajando."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-0458d03e20ab167b",
+      "hanzi": "我明天来大学。",
+      "pinyin_ming": "Wǒ míngtiān lái dàxué.",
+      "traduccion_ming": "Mañana vengo a la universidad."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-bc5cdd7543ce254f",
+      "hanzi": "他下午来我家吃饭。",
+      "pinyin_ming": "Tā xiàwǔ lái wǒ jiā chī fàn.",
+      "traduccion_ming": "Él viene a comer a mi casa por la tarde."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-1fc2408b9a8175cd",
+      "hanzi": "你今天几点回家？",
+      "pinyin_ming": "Nǐ jīntiān jǐ diǎn huí jiā?",
+      "traduccion_ming": "¿A qué hora vuelves a casa hoy?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-ece792d7e9cf8ba5",
+      "hanzi": "他们班",
+      "pinyin_ming": "Tāmen bān",
+      "traduccion_ming": "su clase; la clase de ellos"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-cd61959eb5038136",
+      "hanzi": "我们班一共有25个人。",
+      "pinyin_ming": "Wǒmen bān yígòng yǒu èrshíwǔ ge rén.",
+      "traduccion_ming": "En nuestra clase hay veinticinco personas en total.",
+      "pinyin_display_correction": "Read printed numeral 25 as èrshíwǔ for pronunciation support."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-405a93992d0241c5",
+      "hanzi": "这是一张我们班的照片。",
+      "pinyin_ming": "Zhè shì yì zhāng wǒmen bān de zhàopiàn.",
+      "traduccion_ming": "Esta es una foto de nuestra clase."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-a9f5df4ae1c12282",
+      "hanzi": "我们班有几个女生？几个男生？",
+      "pinyin_ming": "Wǒmen bān yǒu jǐ ge nǚshēng? Jǐ ge nánshēng?",
+      "traduccion_ming": "¿Cuántas alumnas hay en nuestra clase? ¿Y cuántos alumnos varones?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-844cf40827e50910",
+      "hanzi": "今天下午我们有一个活动。",
+      "pinyin_ming": "Jīntiān xiàwǔ wǒmen yǒu yí ge huódòng.",
+      "traduccion_ming": "Hoy por la tarde tenemos una actividad."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-22a9599f508c7e05",
+      "hanzi": "明天在大学有一个活动。",
+      "pinyin_ming": "Míngtiān zài dàxué yǒu yí ge huódòng.",
+      "traduccion_ming": "Mañana hay una actividad en la universidad."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-ff9109fa6f29a60b",
+      "hanzi": "我们都会说汉语。",
+      "pinyin_ming": "Wǒmen dōu huì shuō Hànyǔ.",
+      "traduccion_ming": "Todos sabemos hablar chino."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-e4b0522631735ddd",
+      "hanzi": "2.他说，他今天不去大学。",
+      "pinyin_ming": "Tā shuō, tā jīntiān bú qù dàxué.",
+      "traduccion_ming": "Él dice que hoy no va a la universidad.",
+      "hanzi_display": "他说，他今天不去大学。",
+      "hanzi_display_note": "Remove only embedded pronunciation/Spanish gloss or exercise numbering; retain original hanzi and ID."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-5ad0debb5cf464d7",
+      "hanzi": "老师说了什么？",
+      "pinyin_ming": "Lǎoshī shuō le shénme?",
+      "traduccion_ming": "¿Qué dijo el profesor?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-6668d624ae8e4a65",
+      "hanzi": "你听！",
+      "pinyin_ming": "Nǐ tīng!",
+      "traduccion_ming": "¡Escucha!"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-6d8a397cae337a6e",
+      "hanzi": "听，小猫在叫！",
+      "pinyin_ming": "Tīng, xiǎo māo zài jiào!",
+      "traduccion_ming": "¡Escucha, el gatito está maullando!"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-0b09e4715bcd721b",
+      "hanzi": "我们班男生很少。",
+      "pinyin_ming": "Wǒmen bān nánshēng hěn shǎo.",
+      "traduccion_ming": "En nuestra clase hay muy pocos alumnos varones."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-f103d2295de740f7",
+      "hanzi": "我们学校有很多学生。",
+      "pinyin_ming": "Wǒmen xuéxiào yǒu hěn duō xuéshēng.",
+      "traduccion_ming": "En nuestra escuela hay muchos estudiantes."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-5fe8b7569f7b832e",
+      "hanzi": "你们班有多少人？",
+      "pinyin_ming": "Nǐmen bān yǒu duōshao rén?",
+      "traduccion_ming": "¿Cuántas personas hay en su clase?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-249d4de069b4a9e8",
+      "hanzi": "秘鲁有多少人？",
+      "pinyin_ming": "Bìlǔ yǒu duōshao rén?",
+      "traduccion_ming": "¿Cuántos habitantes tiene Perú?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-18c8ce25c18a7246",
+      "hanzi": "他家有几口人？",
+      "pinyin_ming": "Tā jiā yǒu jǐ kǒu rén?",
+      "traduccion_ming": "¿Cuántas personas hay en su familia?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-3d9c81d1633becb1",
+      "hanzi": "你有几个手机？",
+      "pinyin_ming": "Nǐ yǒu jǐ ge shǒujī?",
+      "traduccion_ming": "¿Cuántos celulares tienes?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-21600c1459eeeebe",
+      "hanzi": "你有多少钱？",
+      "pinyin_ming": "Nǐ yǒu duōshao qián?",
+      "traduccion_ming": "¿Cuánto dinero tienes?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-58dd7eda65cd1749",
+      "hanzi": "这儿有多少书？",
+      "pinyin_ming": "Zhèr yǒu duōshao shū?",
+      "traduccion_ming": "¿Cuántos libros hay aquí?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-7228188c377053d0",
+      "hanzi": "这儿有多少本bĕn书?",
+      "pinyin_ming": "Zhèr yǒu duōshao běn shū?",
+      "traduccion_ming": "¿Cuántos libros hay aquí?",
+      "hanzi_display": "这儿有多少本书?",
+      "hanzi_display_note": "Remove only embedded pronunciation/Spanish gloss or exercise numbering; retain original hanzi and ID."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-eae78d7c31b523df",
+      "hanzi": "我只有一个姐姐，没有妹妹。",
+      "pinyin_ming": "Wǒ zhǐ yǒu yí ge jiějie, méiyǒu mèimei.",
+      "traduccion_ming": "Solo tengo una hermana mayor, no tengo hermanas menores.",
+      "pinyin_display_correction": "Third-tone breve normalized and word spacing repaired."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-b95f9f3f694d1e3a",
+      "hanzi": "我只说汉语。",
+      "pinyin_ming": "Wǒ zhǐ shuō Hànyǔ.",
+      "traduccion_ming": "Solo hablo chino.",
+      "pinyin_display_correction": "Third-tone breve normalized."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-3e4d871a70d27bfe",
+      "hanzi": "我只喜欢吃包子，不喜欢吃饺子。",
+      "pinyin_ming": "Wǒ zhǐ xǐhuan chī bāozi, bù xǐhuan chī jiǎozi.",
+      "traduccion_ming": "Solo me gusta comer baozi, no me gusta comer ravioles chinos."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-82746d0970ed8a49",
+      "hanzi": "你学习什么专业？",
+      "pinyin_ming": "Nǐ xuéxí shénme zhuānyè?",
+      "traduccion_ming": "¿Qué especialidad estudias?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-903afe1507dd25b3",
+      "hanzi": "你是哪儿的学生？",
+      "pinyin_ming": "Nǐ shì nǎr de xuéshēng?",
+      "traduccion_ming": "¿De dónde eres estudiante?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-a35bb4ad1836ba31",
+      "hanzi": "我在里卡多帕尔玛大学孔子学院学习汉语。",
+      "pinyin_ming": "Wǒ zài Lǐkǎduō Pà'ěrmǎ Dàxué Kǒngzǐ Xuéyuàn xuéxí Hànyǔ.",
+      "traduccion_ming": "Estudio chino en el Instituto Confucio de la Universidad Ricardo Palma."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-ed39daecfc587e58",
+      "hanzi": "你在哪儿学习汉语？",
+      "pinyin_ming": "Nǐ zài nǎr xuéxí Hànyǔ?",
+      "traduccion_ming": "¿Dónde estudias chino?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-a39f7b1d69541f2e",
+      "hanzi": "你什么意思",
+      "pinyin_ming": "Nǐ shénme yìsi",
+      "traduccion_ming": "¿Qué quieres decir?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-7e3a8a75421d39c0",
+      "hanzi": "听说这部电影很有意思。",
+      "pinyin_ming": "Tīngshuō zhè bù diànyǐng hěn yǒu yìsi.",
+      "traduccion_ming": "He oído que esta película es muy interesante."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-3939469dbfc57aed",
+      "hanzi": "汉字很有意思。",
+      "pinyin_ming": "Hànzì hěn yǒu yìsi.",
+      "traduccion_ming": "Los caracteres chinos son muy interesantes.",
+      "pinyin_display_correction": "Printed Hàizì omits n; Hanzi is 汉字."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-4dd2a1903dc6ba0c",
+      "hanzi": "真没意思!",
+      "pinyin_ming": "Zhēn méi yìsi!",
+      "traduccion_ming": "¡Qué aburrido!"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-bf48210de5bbf160",
+      "hanzi": "你是老师吗？——我是老师。——我不是老师。",
+      "pinyin_ming": "Nǐ shì lǎoshī ma? — Wǒ shì lǎoshī. — Wǒ bú shì lǎoshī.",
+      "traduccion_ming": "¿Eres profesor? — Soy profesor. — No soy profesor."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-37ae98cf5e797856",
+      "hanzi": "你是不是老师？——我是老师。——我不是老师。",
+      "pinyin_ming": "Nǐ shì bu shì lǎoshī? — Wǒ shì lǎoshī. — Wǒ bú shì lǎoshī.",
+      "traduccion_ming": "¿Eres profesor o no? — Soy profesor. — No soy profesor."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-d560bee76f4ccbc5",
+      "hanzi": "他帅不帅？",
+      "pinyin_ming": "Tā shuài bu shuài?",
+      "traduccion_ming": "¿Él es guapo?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-3f508a9569e340cb",
+      "hanzi": "他太帅了！",
+      "pinyin_ming": "Tā tài shuài le!",
+      "traduccion_ming": "¡Él es muy guapo!"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-005792f9f062102b",
+      "hanzi": "饺子好吃不好吃？",
+      "pinyin_ming": "Jiǎozi hǎochī bu hǎochī?",
+      "traduccion_ming": "¿Los ravioles chinos son ricos?"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-46d7500c6d153815",
+      "hanzi": "饺子很好吃！",
+      "pinyin_ming": "Jiǎozi hěn hǎochī!",
+      "traduccion_ming": "¡Los ravioles chinos son muy ricos!"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-d9aaef09c76a419e",
+      "hanzi": "她不觉得(jué de，sentir)累。",
+      "pinyin_ming": "Tā bù juéde lèi.",
+      "traduccion_ming": "Ella no se siente cansada.",
+      "hanzi_display": "她不觉得累。",
+      "hanzi_display_note": "Remove only embedded pronunciation/Spanish gloss or exercise numbering; retain original hanzi and ID."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-fb781bb3ce28b6ba",
+      "hanzi": "他们班一共有三十个人。",
+      "pinyin_ming": "Tāmen bān yígòng yǒu sānshí ge rén.",
+      "traduccion_ming": "En su clase hay treinta personas en total."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-b614f0d66b6bc867",
+      "hanzi": "有二十六个女生，四个男生。",
+      "pinyin_ming": "Yǒu èrshíliù ge nǚshēng, sì ge nánshēng.",
+      "traduccion_ming": "Hay veintiséis alumnas y cuatro alumnos varones."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-c9b7e3ea34571e92",
+      "hanzi": "王小云早上六点半起床（levantarse），七点吃早饭，七点半去学校。",
+      "pinyin_ming": "Wáng Xiǎoyún zǎoshang liù diǎn bàn qǐchuáng, qī diǎn chī zǎofàn, qī diǎn bàn qù xuéxiào.",
+      "traduccion_ming": "Wang Xiaoyun se levanta a las seis y media de la mañana, desayuna a las siete y va a la escuela a las siete y media.",
+      "hanzi_display": "王小云早上六点半起床，七点吃早饭，七点半去学校。",
+      "hanzi_display_note": "Remove only embedded pronunciation/Spanish gloss or exercise numbering; retain original hanzi and ID."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-cd98b13ea4b616a9",
+      "hanzi": "她学习英语专业，每天有很多课：上午八点有语法课，十点有口语课，下午两点有写作课，晚上还有英语电影课。",
+      "pinyin_ming": "Tā xuéxí Yīngyǔ zhuānyè, měi tiān yǒu hěn duō kè: shàngwǔ bā diǎn yǒu yǔfǎ kè, shí diǎn yǒu kǒuyǔ kè, xiàwǔ liǎng diǎn yǒu xiězuò kè, wǎnshang hái yǒu Yīngyǔ diànyǐng kè.",
+      "traduccion_ming": "Ella estudia la especialidad de inglés y tiene muchas clases todos los días: gramática a las ocho de la mañana, expresión oral a las diez, redacción a las dos de la tarde y también cine en inglés por la noche."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-ee63141c82813f29",
+      "hanzi": "她特别忙，她说她不累。",
+      "pinyin_ming": "Tā tèbié máng, tā shuō tā bú lèi.",
+      "traduccion_ming": "Ella está especialmente ocupada y dice que no está cansada."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-9904c98ad3f13c36",
+      "hanzi": "周末（el fin de semana）她和林娜一起练习口语。",
+      "pinyin_ming": "Zhōumò tā hé Lín Nà yìqǐ liànxí kǒuyǔ.",
+      "traduccion_ming": "El fin de semana ella y Lin Na practican juntas la expresión oral.",
+      "hanzi_display": "周末她和林娜一起练习口语。",
+      "hanzi_display_note": "Remove only embedded pronunciation/Spanish gloss or exercise numbering; retain original hanzi and ID."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-f672f6cabc5c5a18",
+      "hanzi": "林娜是英国人，现在在中国。",
+      "pinyin_ming": "Lín Nà shì Yīngguórén, xiànzài zài Zhōngguó.",
+      "traduccion_ming": "Lin Na es británica y ahora está en China."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-1e33b779489ad284",
+      "hanzi": "她是小云的好朋友。",
+      "pinyin_ming": "Tā shì Xiǎoyún de hǎo péngyou.",
+      "traduccion_ming": "Ella es una buena amiga de Xiaoyun."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-3ed766072a057a53",
+      "hanzi": "陈明在中学（escuela secundaria）工作。",
+      "pinyin_ming": "Chén Míng zài zhōngxué gōngzuò.",
+      "traduccion_ming": "Chen Ming trabaja en una escuela secundaria.",
+      "hanzi_display": "陈明在中学工作。",
+      "hanzi_display_note": "Remove only embedded pronunciation/Spanish gloss or exercise numbering; retain original hanzi and ID."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-0ab6fb6d47f4b846",
+      "hanzi": "她们学校一共有二十一个班，有四十五个老师。",
+      "pinyin_ming": "Tāmen xuéxiào yígòng yǒu èrshíyī ge bān, yǒu sìshíwǔ ge lǎoshī.",
+      "traduccion_ming": "En su escuela hay veintiuna clases y cuarenta y cinco profesores en total."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-d241a5d28f363977",
+      "hanzi": "她教（enseñar）英语。",
+      "pinyin_ming": "Tā jiāo Yīngyǔ.",
+      "traduccion_ming": "Ella enseña inglés.",
+      "hanzi_display": "她教英语。",
+      "hanzi_display_note": "Remove only embedded pronunciation/Spanish gloss or exercise numbering; retain original hanzi and ID."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-fc69acf5560d1324",
+      "hanzi": "她们班一共有三十六个学生，二十个男生，十六个女生。",
+      "pinyin_ming": "Tāmen bān yígòng yǒu sānshíliù ge xuéshēng, èrshí ge nánshēng, shíliù ge nǚshēng.",
+      "traduccion_ming": "En su clase hay treinta y seis estudiantes en total: veinte alumnos varones y dieciséis alumnas."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-2b16dd0e9e55f27f",
+      "hanzi": "今天下午三点学校有活动，老师和学生们一起看电影《功夫熊猫》。",
+      "pinyin_ming": "Jīntiān xiàwǔ sān diǎn xuéxiào yǒu huódòng, lǎoshī hé xuéshēngmen yìqǐ kàn diànyǐng “Gōngfu Xióngmāo”.",
+      "traduccion_ming": "Hoy a las tres de la tarde hay una actividad en la escuela: profesores y estudiantes ven juntos la película «Kung Fu Panda»."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-01a1fb1a52dd8b95",
+      "hanzi": "这个电影很有意思，大家都很喜欢看。",
+      "pinyin_ming": "Zhè ge diànyǐng hěn yǒu yìsi, dàjiā dōu hěn xǐhuan kàn.",
+      "traduccion_ming": "Esta película es muy interesante y a todos les gusta mucho verla."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-f736317dd98e821a",
+      "hanzi": "林娜明天六点半起床。",
+      "pinyin_ming": "Lín Nà míngtiān liù diǎn bàn qǐchuáng.",
+      "traduccion_ming": "Mañana Lin Na se levanta a las seis y media."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-6e442326984bd622",
+      "hanzi": "上午八点半有语法课，十点半有口语课。",
+      "pinyin_ming": "Shàngwǔ bā diǎn bàn yǒu yǔfǎ kè, shí diǎn bàn yǒu kǒuyǔ kè.",
+      "traduccion_ming": "Por la mañana tiene clase de gramática a las ocho y media y de expresión oral a las diez y media."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-001b8f42abc6afd8",
+      "hanzi": "下午两点有汉字课，四点和中国朋友一起练习口语。",
+      "pinyin_ming": "Xiàwǔ liǎng diǎn yǒu Hànzì kè, sì diǎn hé Zhōngguó péngyou yìqǐ liànxí kǒuyǔ.",
+      "traduccion_ming": "Por la tarde tiene clase de caracteres chinos a las dos y practica expresión oral con amigos chinos a las cuatro."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-9d3c5779e888b8e7",
+      "hanzi": "她六点半吃晚饭，八点和王小云一起看电影，十二点睡觉。",
+      "pinyin_ming": "Tā liù diǎn bàn chī wǎnfàn, bā diǎn hé Wáng Xiǎoyún yìqǐ kàn diànyǐng, shí'èr diǎn shuìjiào.",
+      "traduccion_ming": "Ella cena a las seis y media, ve una película con Wang Xiaoyun a las ocho y se acuesta a las doce."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-19f7db609f549c65",
+      "hanzi": "林娜明天有很多课。她上午八点半有语法课，十点四十有汉字课，下午两点一刻还有口语课。她不觉得累。明天晚上她和宋华一起练习口语。\n今天晚上七点半王小云的班有活动。他们班一共有三十个人，有二十六个女生，四个男生。马大为觉得王小云的班很有意思。马大为他们班的女生少，男生多。他们班一共有十八个学生，只有六个女生。王小云说马大为的班也很有意思。",
+      "pinyin_ming": "Lín Nà míngtiān yǒu hěn duō kè. Tā shàngwǔ bā diǎn bàn yǒu yǔfǎ kè, shí diǎn sìshí yǒu Hànzì kè, xiàwǔ liǎng diǎn yí kè hái yǒu kǒuyǔ kè. Tā bù juéde lèi. Míngtiān wǎnshang tā hé Sòng Huá yìqǐ liànxí kǒuyǔ. Jīntiān wǎnshang qī diǎn bàn Wáng Xiǎoyún de bān yǒu huódòng. Tāmen bān yígòng yǒu sānshí ge rén, yǒu èrshíliù ge nǚshēng, sì ge nánshēng. Mǎ Dàwéi juéde Wáng Xiǎoyún de bān hěn yǒu yìsi. Mǎ Dàwéi tāmen bān de nǚshēng shǎo, nánshēng duō. Tāmen bān yígòng yǒu shíbā ge xuéshēng, zhǐ yǒu liù ge nǚshēng. Wáng Xiǎoyún shuō Mǎ Dàwéi de bān yě hěn yǒu yìsi.",
+      "traduccion_ming": "Lin Na tiene muchas clases mañana. Ella tiene clase de gramática a las ocho y media de la mañana, de caracteres chinos a las diez y cuarenta, y también de expresión oral a las dos y cuarto de la tarde. Ella no se siente cansada. Mañana por la noche ella y Song Hua practican juntos la expresión oral. Hoy a las siete y media de la noche la clase de Wang Xiaoyun tiene una actividad. En su clase hay treinta personas en total: veintiséis alumnas y cuatro alumnos varones. A Ma Dawei le parece muy interesante la clase de Wang Xiaoyun. En la clase de Ma Dawei hay pocas alumnas y muchos alumnos varones. En su clase hay dieciocho estudiantes en total, y solo seis son alumnas. Wang Xiaoyun dice que la clase de Ma Dawei también es muy interesante."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-9e2e93957c7e2fd3",
+      "hanzi": "我是一个学生，今年二十一岁。我学习英语专业。\n今天我很忙。我有很多课：上午八点有语法课，十点半有口语课，下午两点还有钢琴课。今天晚上七点我们班有活动。我们班的学生一起吃晚饭。我们班很有意思，一共有二十四个学生，只有一个男生。那个男生是谁？对，是我。",
+      "pinyin_ming": "Wǒ shì yí ge xuéshēng, jīnnián èrshíyī suì. Wǒ xuéxí Yīngyǔ zhuānyè. Jīntiān wǒ hěn máng. Wǒ yǒu hěn duō kè: shàngwǔ bā diǎn yǒu yǔfǎ kè, shí diǎn bàn yǒu kǒuyǔ kè, xiàwǔ liǎng diǎn hái yǒu gāngqín kè. Jīntiān wǎnshang qī diǎn wǒmen bān yǒu huódòng. Wǒmen bān de xuéshēng yìqǐ chī wǎnfàn. Wǒmen bān hěn yǒu yìsi, yígòng yǒu èrshísì ge xuéshēng, zhǐ yǒu yí ge nánshēng. Nà ge nánshēng shì shéi? Duì, shì wǒ.",
+      "traduccion_ming": "Soy estudiante y este año tengo veintiún años. Estudio la especialidad de inglés. Hoy estoy muy ocupado. Tengo muchas clases: gramática a las ocho de la mañana, expresión oral a las diez y media, y también piano a las dos de la tarde. Hoy a las siete de la noche nuestra clase tiene una actividad. Los estudiantes de nuestra clase cenan juntos. Nuestra clase es muy interesante: hay veinticuatro estudiantes en total y solo uno es varón. ¿Quién es ese alumno? Sí, soy yo."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-4f5957f98670a801",
+      "hanzi": "明天我很忙。我七点起床。上午八点半有语法课，十一点和朋友练习口语。中午十二点吃午饭。我下午没有课。我四点运动，六点半吃晚饭。明天晚上我和朋友一起看电影，十二点睡觉。",
+      "pinyin_ming": "Míngtiān wǒ hěn máng. Wǒ qī diǎn qǐchuáng. Shàngwǔ bā diǎn bàn yǒu yǔfǎ kè, shíyī diǎn hé péngyou liànxí kǒuyǔ. Zhōngwǔ shí'èr diǎn chī wǔfàn. Wǒ xiàwǔ méiyǒu kè. Wǒ sì diǎn yùndòng, liù diǎn bàn chī wǎnfàn. Míngtiān wǎnshang wǒ hé péngyou yìqǐ kàn diànyǐng, shí'èr diǎn shuìjiào.",
+      "traduccion_ming": "Mañana estoy muy ocupado. Me levanto a las siete. Por la mañana tengo clase de gramática a las ocho y media y practico expresión oral con amigos a las once. Almuerzo al mediodía, a las doce. No tengo clase por la tarde. Hago ejercicio a las cuatro y ceno a las seis y media. Mañana por la noche veo una película con amigos y me acuesto a las doce."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-bcf8e5510ccd2e51",
+      "hanzi": "林娜明天有很多课。她上午八点半有语法课，十点四十有汉字课，下午两点一刻还有口语课。她不觉得(jué de，sentir)累。明天晚上她和宋华一起练习口语。",
+      "pinyin_ming": "Lín Nà míngtiān yǒu hěn duō kè. Tā shàngwǔ bā diǎn bàn yǒu yǔfǎ kè, shí diǎn sìshí yǒu Hànzì kè, xiàwǔ liǎng diǎn yí kè hái yǒu kǒuyǔ kè. Tā bù juéde lèi. Míngtiān wǎnshang tā hé Sòng Huá yìqǐ liànxí kǒuyǔ.",
+      "traduccion_ming": "Lin Na tiene muchas clases mañana. Ella tiene clase de gramática a las ocho y media de la mañana, de caracteres chinos a las diez y cuarenta, y también de expresión oral a las dos y cuarto de la tarde. Ella no se siente cansada. Mañana por la noche ella y Song Hua practican juntos la expresión oral.",
+      "hanzi_display": "林娜明天有很多课。她上午八点半有语法课，十点四十有汉字课，下午两点一刻还有口语课。她不觉得累。明天晚上她和宋华一起练习口语。",
+      "hanzi_display_note": "Remove only embedded pronunciation/Spanish gloss or exercise numbering; retain original hanzi and ID."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-385d622c97ff2494",
+      "hanzi": "今天晚上七点半王小云的班有活动。他们班一共有三十个人。有二十六个女生，四个男生。马大为觉得王小云的班很有意思。马大为他们班的女生少，男生多。他们班一共有十八个学生，只有六个女生。王小云说马大为的班也很有意思。",
+      "pinyin_ming": "Jīntiān wǎnshang qī diǎn bàn Wáng Xiǎoyún de bān yǒu huódòng. Tāmen bān yígòng yǒu sānshí ge rén. Yǒu èrshíliù ge nǚshēng, sì ge nánshēng. Mǎ Dàwéi juéde Wáng Xiǎoyún de bān hěn yǒu yìsi. Mǎ Dàwéi tāmen bān de nǚshēng shǎo, nánshēng duō. Tāmen bān yígòng yǒu shíbā ge xuéshēng, zhǐ yǒu liù ge nǚshēng. Wáng Xiǎoyún shuō Mǎ Dàwéi de bān yě hěn yǒu yìsi.",
+      "traduccion_ming": "Hoy a las siete y media de la noche la clase de Wang Xiaoyun tiene una actividad. En su clase hay treinta personas en total. Hay veintiséis alumnas y cuatro alumnos varones. A Ma Dawei le parece muy interesante la clase de Wang Xiaoyun. En la clase de Ma Dawei hay pocas alumnas y muchos alumnos varones. En su clase hay dieciocho estudiantes en total, y solo seis son alumnas. Wang Xiaoyun dice que la clase de Ma Dawei también es muy interesante."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-af0d6dc08ca09be7",
+      "hanzi": "王小云早上六点半起床（levantarse），七点吃早饭，七点半去学校。她学习英语专业，每天有很多课：上午八点有语法课，十点有口语课，下午两点有写作课，晚上还有英语电影课。她特别忙，她说她不累。周末（el fin de semana）她和林娜一起练习口语。林娜是英国人，现在在中国。她是小云的好朋友。",
+      "pinyin_ming": "Wáng Xiǎoyún zǎoshang liù diǎn bàn qǐchuáng, qī diǎn chī zǎofàn, qī diǎn bàn qù xuéxiào. Tā xuéxí Yīngyǔ zhuānyè, měi tiān yǒu hěn duō kè: shàngwǔ bā diǎn yǒu yǔfǎ kè, shí diǎn yǒu kǒuyǔ kè, xiàwǔ liǎng diǎn yǒu xiězuò kè, wǎnshang hái yǒu Yīngyǔ diànyǐng kè. Tā tèbié máng, tā shuō tā bú lèi. Zhōumò tā hé Lín Nà yìqǐ liànxí kǒuyǔ. Lín Nà shì Yīngguórén, xiànzài zài Zhōngguó. Tā shì Xiǎoyún de hǎo péngyou.",
+      "traduccion_ming": "Wang Xiaoyun se levanta a las seis y media de la mañana, desayuna a las siete y va a la escuela a las siete y media. Ella estudia la especialidad de inglés y tiene muchas clases todos los días: gramática a las ocho de la mañana, expresión oral a las diez, redacción a las dos de la tarde y también cine en inglés por la noche. Ella está especialmente ocupada y dice que no está cansada. El fin de semana ella y Lin Na practican juntas la expresión oral. Lin Na es británica y ahora está en China. Ella es una buena amiga de Xiaoyun.",
+      "hanzi_display": "王小云早上六点半起床，七点吃早饭，七点半去学校。她学习英语专业，每天有很多课：上午八点有语法课，十点有口语课，下午两点有写作课，晚上还有英语电影课。她特别忙，她说她不累。周末她和林娜一起练习口语。林娜是英国人，现在在中国。她是小云的好朋友。",
+      "hanzi_display_note": "Remove only embedded pronunciation/Spanish gloss or exercise numbering; retain original hanzi and ID."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-e27f7f07130a6c1d",
+      "hanzi": "陈明在中学（escuela secundaria）工作。她们学校一共有二十一个班，有四十五个老师。她教（enseñar）英语。她们班一共有三十六个学生，二十个男生，十六个女生。今天下午三点学校有活动，老师和学生们一起看电影《功夫熊猫》。这个电影很有意思，大家都很喜欢看。",
+      "pinyin_ming": "Chén Míng zài zhōngxué gōngzuò. Tāmen xuéxiào yígòng yǒu èrshíyī ge bān, yǒu sìshíwǔ ge lǎoshī. Tā jiāo Yīngyǔ. Tāmen bān yígòng yǒu sānshíliù ge xuéshēng, èrshí ge nánshēng, shíliù ge nǚshēng. Jīntiān xiàwǔ sān diǎn xuéxiào yǒu huódòng, lǎoshī hé xuéshēngmen yìqǐ kàn diànyǐng “Gōngfu Xióngmāo”. Zhè ge diànyǐng hěn yǒu yìsi, dàjiā dōu hěn xǐhuan kàn.",
+      "traduccion_ming": "Chen Ming trabaja en una escuela secundaria. En su escuela hay veintiuna clases y cuarenta y cinco profesores en total. Ella enseña inglés. En su clase hay treinta y seis estudiantes en total: veinte alumnos varones y dieciséis alumnas. Hoy a las tres de la tarde hay una actividad en la escuela: profesores y estudiantes ven juntos la película «Kung Fu Panda». Esta película es muy interesante y a todos les gusta mucho verla.",
+      "hanzi_display": "陈明在中学工作。她们学校一共有二十一个班，有四十五个老师。她教英语。她们班一共有三十六个学生，二十个男生，十六个女生。今天下午三点学校有活动，老师和学生们一起看电影《功夫熊猫》。这个电影很有意思，大家都很喜欢看。",
+      "hanzi_display_note": "Remove only embedded pronunciation/Spanish gloss or exercise numbering; retain original hanzi and ID."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-42fe7340aba9cbde",
+      "hanzi": "林娜明天六点半起床。上午八点半有语法课，十点半有口语课。中午十二点吃午饭。下午两点有汉字课，四点和中国朋友一起练习口语。她六点半吃晚饭，八点和王小云一起看电影，十二点睡觉。",
+      "pinyin_ming": "Lín Nà míngtiān liù diǎn bàn qǐchuáng. Shàngwǔ bā diǎn bàn yǒu yǔfǎ kè, shí diǎn bàn yǒu kǒuyǔ kè. Zhōngwǔ shí'èr diǎn chī wǔfàn. Xiàwǔ liǎng diǎn yǒu Hànzì kè, sì diǎn hé Zhōngguó péngyou yìqǐ liànxí kǒuyǔ. Tā liù diǎn bàn chī wǎnfàn, bā diǎn hé Wáng Xiǎoyún yìqǐ kàn diànyǐng, shí'èr diǎn shuìjiào.",
+      "traduccion_ming": "Mañana Lin Na se levanta a las seis y media. Por la mañana tiene clase de gramática a las ocho y media y de expresión oral a las diez y media. Almuerza al mediodía, a las doce. Por la tarde tiene clase de caracteres chinos a las dos y practica expresión oral con amigos chinos a las cuatro. Ella cena a las seis y media, ve una película con Wang Xiaoyun a las ocho y se acuesta a las doce.",
+      "pinyin_display_correction": "Printed pinyin includes a title absent from the registered passage; display matches passage only."
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-41a7d4dea64bb5d5",
+      "hanzi": "B：行，我们走！",
+      "pinyin_ming": "Xíng, wǒmen zǒu.",
+      "traduccion_ming": "Está bien, ¡vamos!",
+      "pinyin_display_correction": "Printed zŏu uses breve instead of third-tone caron.",
+      "audio_alias_clip_id": "l4-2b3b646d03986dc2"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-8f1046a135101985",
+      "hanzi": "我喜欢参加活动。",
+      "pinyin_ming": "Wǒ xǐhuan cānjiā huódòng.",
+      "traduccion_ming": "Me gusta participar en las actividades.",
+      "pinyin_display_correction": "Printed wŏ/xĭ use breves; huódὸng contains Greek omicron instead of Latin ò.",
+      "audio_alias_clip_id": "l4-d9d47d54d925f6e8"
+    },
+    {
+      "target_table": "phrases",
+      "target_id": "PH-2b2baa0f790f1dc5",
+      "hanzi": "我听说了一个八卦。",
+      "pinyin_ming": "Wǒ tīngshuō le yí ge bāguà.",
+      "traduccion_ming": "Escuché un chisme.",
+      "pinyin_display_correction": "Printed Wŏ uses breve instead of third-tone caron; word spacing repaired.",
+      "audio_alias_clip_id": "l4-a527e190d67ed853"
+    }
+  ],
+  "excluded_vocabulary": [
+    {
+      "id": "v-汉西英",
+      "hanzi": "汉西英",
+      "reason": "language_sequence_in_career_name_not_standalone_word"
+    }
+  ],
+  "documentary_spanish_alignments": [
+    {
+      "phrase_id": "PH-e386048062b793db",
+      "hanzi": "我明天有很多课。",
+      "block_id": "L4-BOOK-04-04-01",
+      "line": 0,
+      "expected": "Mañana tendré muchas clases."
+    },
+    {
+      "phrase_id": "PH-59e0807490ecd436",
+      "hanzi": "你们班一共有多少人？",
+      "block_id": "L4-BOOK-04-08-01",
+      "line": 0,
+      "expected": "¿Cuántas personas hay en tu clase?"
+    }
+  ],
+  "authorization": "User request on 2026-11-04: review lesson 4, prioritize books, complete corpus/cards translations and pinyin.",
+  "characters": [
+    {
+      "id": "c-点",
+      "hanzi": "点",
+      "pinyin": "diǎn",
+      "traduccion_ming": "punto; hora en punto"
+    },
+    {
+      "id": "c-差",
+      "hanzi": "差",
+      "pinyin": "chā",
+      "traduccion_ming": "diferencia; desigualdad"
+    },
+    {
+      "id": "c-明",
+      "hanzi": "明",
+      "pinyin": "míng",
+      "traduccion_ming": "claro; brillante"
+    },
+    {
+      "id": "c-天",
+      "hanzi": "天",
+      "pinyin": "tiān",
+      "traduccion_ming": "día; cielo"
+    },
+    {
+      "id": "c-特",
+      "hanzi": "特",
+      "pinyin": "tè",
+      "traduccion_ming": "especial"
+    },
+    {
+      "id": "c-别",
+      "hanzi": "别",
+      "pinyin": "bié",
+      "traduccion_ming": "otro; distinto"
+    },
+    {
+      "id": "c-午",
+      "hanzi": "午",
+      "pinyin": "wǔ",
+      "traduccion_ming": "mediodía"
+    },
+    {
+      "id": "c-语",
+      "hanzi": "语",
+      "pinyin": "yǔ",
+      "traduccion_ming": "lengua; idioma"
+    },
+    {
+      "id": "c-法",
+      "hanzi": "法",
+      "pinyin": "fǎ",
+      "traduccion_ming": "método; ley"
+    },
+    {
+      "id": "c-汉",
+      "hanzi": "汉",
+      "pinyin": "hàn",
+      "traduccion_ming": "chino; han"
+    },
+    {
+      "id": "c-字",
+      "hanzi": "字",
+      "pinyin": "zì",
+      "traduccion_ming": "carácter escrito"
+    },
+    {
+      "id": "c-口",
+      "hanzi": "口",
+      "pinyin": "kǒu",
+      "traduccion_ming": "boca"
+    },
+    {
+      "id": "c-时",
+      "hanzi": "时",
+      "pinyin": "shí",
+      "traduccion_ming": "tiempo; hora"
+    },
+    {
+      "id": "c-间",
+      "hanzi": "间",
+      "pinyin": "jiān",
+      "traduccion_ming": "espacio; intervalo"
+    },
+    {
+      "id": "c-电",
+      "hanzi": "电",
+      "pinyin": "diàn",
+      "traduccion_ming": "electricidad"
+    },
+    {
+      "id": "c-影",
+      "hanzi": "影",
+      "pinyin": "yǐng",
+      "traduccion_ming": "sombra; imagen"
+    },
+    {
+      "id": "c-一",
+      "hanzi": "一",
+      "pinyin": "yī",
+      "traduccion_ming": "uno"
+    },
+    {
+      "id": "c-起",
+      "hanzi": "起",
+      "pinyin": "qǐ",
+      "traduccion_ming": "levantarse; comenzar"
+    },
+    {
+      "id": "c-恐",
+      "hanzi": "恐",
+      "pinyin": "kǒng",
+      "traduccion_ming": "temer"
+    },
+    {
+      "id": "c-怕",
+      "hanzi": "怕",
+      "pinyin": "pà",
+      "traduccion_ming": "temer; tener miedo"
+    },
+    {
+      "id": "c-练",
+      "hanzi": "练",
+      "pinyin": "liàn",
+      "traduccion_ming": "practicar; entrenar"
+    },
+    {
+      "id": "c-习",
+      "hanzi": "习",
+      "pinyin": "xí",
+      "traduccion_ming": "practicar; aprender"
+    },
+    {
+      "id": "c-现",
+      "hanzi": "现",
+      "pinyin": "xiàn",
+      "traduccion_ming": "actual; aparecer"
+    },
+    {
+      "id": "c-在",
+      "hanzi": "在",
+      "pinyin": "zài",
+      "traduccion_ming": "estar en"
+    },
+    {
+      "id": "c-学",
+      "hanzi": "学",
+      "pinyin": "xué",
+      "traduccion_ming": "estudiar; aprender"
+    },
+    {
+      "id": "c-校",
+      "hanzi": "校",
+      "pinyin": "xiào",
+      "traduccion_ming": "escuela"
+    },
+    {
+      "id": "c-活",
+      "hanzi": "活",
+      "pinyin": "huó",
+      "traduccion_ming": "vivir; vivo"
+    },
+    {
+      "id": "c-动",
+      "hanzi": "动",
+      "pinyin": "dòng",
+      "traduccion_ming": "moverse; movimiento"
+    },
+    {
+      "id": "c-女",
+      "hanzi": "女",
+      "pinyin": "nǚ",
+      "traduccion_ming": "mujer; femenino"
+    },
+    {
+      "id": "c-生",
+      "hanzi": "生",
+      "pinyin": "shēng",
+      "traduccion_ming": "nacer; vida"
+    },
+    {
+      "id": "c-只",
+      "hanzi": "只",
+      "pinyin": "zhī",
+      "traduccion_ming": "clasificador de ciertos animales y objetos"
+    },
+    {
+      "id": "c-有",
+      "hanzi": "有",
+      "pinyin": "yǒu",
+      "traduccion_ming": "tener; haber"
+    },
+    {
+      "id": "c-意",
+      "hanzi": "意",
+      "pinyin": "yì",
+      "traduccion_ming": "idea; intención"
+    },
+    {
+      "id": "c-思",
+      "hanzi": "思",
+      "pinyin": "sī",
+      "traduccion_ming": "pensar; pensamiento"
+    },
+    {
+      "id": "c-专",
+      "hanzi": "专",
+      "pinyin": "zhuān",
+      "traduccion_ming": "especializado"
+    },
+    {
+      "id": "c-业",
+      "hanzi": "业",
+      "pinyin": "yè",
+      "traduccion_ming": "profesión; actividad"
+    },
+    {
+      "id": "c-主",
+      "hanzi": "主",
+      "pinyin": "zhǔ",
+      "traduccion_ming": "principal; dueño"
+    }
+  ],
+  "example_exclusions": [
+    {
+      "vocab_id": "v-上",
+      "phrase_ids": [
+        "PH-157dc39cc03ae3dc",
+        "PH-f0819a7411f37ebe",
+        "PH-21d39b242e0a921b"
+      ],
+      "reason": "Prior-lesson examples use 上课 (attend class), not L4 book subentry 上 (above; preceding). Preserve prior-lesson examples outside this context."
+    }
+  ]
+}

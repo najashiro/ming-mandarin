@@ -1,0 +1,297 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-11-04",
+  "method": "Native SVG composition using vendored flag vectors at their original proportions. Flag features compared with primary government references; all resulting images visually inspected. No bitmap editing or generated flags.",
+  "vector_source": {
+    "repository": "https://github.com/hampusborgos/country-flags",
+    "commit": "c09927e63705529bbf59ca6684cd9b23225dddad",
+    "license": "Public domain flag designs, as stated in the upstream README",
+    "license_statement": "https://github.com/hampusborgos/country-flags#accurate-country-flags"
+  },
+  "entries": [
+    {
+      "wordId": "v-法国",
+      "kind": "country",
+      "flag_code": "fr",
+      "source_refs": [
+        "https://www.elysee.fr/la-presidence/le-drapeau-francais"
+      ],
+      "asset_source_url": "https://raw.githubusercontent.com/hampusborgos/country-flags/c09927e63705529bbf59ca6684cd9b23225dddad/svg/fr.svg",
+      "asset_source_sha256": "7504bdf1bc9b381f89b44828e048e3d2aaa3c89e68aafbac13fe30998ad121f2",
+      "native_flag_ratio": 1.5,
+      "pedagogy": "Labels resolve identity; no image quiz."
+    },
+    {
+      "wordId": "v-德国",
+      "kind": "country",
+      "flag_code": "de",
+      "source_refs": [
+        "https://www.bundestag.de/en/parliament/symbols/flag",
+        "https://www.gesetze-im-internet.de/flaggano_1996/i_.html"
+      ],
+      "asset_source_url": "https://raw.githubusercontent.com/hampusborgos/country-flags/c09927e63705529bbf59ca6684cd9b23225dddad/svg/de.svg",
+      "asset_source_sha256": "2a4fa7f09552fdb73936549ee0e77c22f16594dd1a370245ce34132e6bb483d5",
+      "native_flag_ratio": 1.6666666666666667,
+      "pedagogy": "Labels resolve identity; no image quiz."
+    },
+    {
+      "wordId": "v-加拿大",
+      "kind": "country",
+      "flag_code": "ca",
+      "source_refs": [
+        "https://www.canada.ca/en/canadian-heritage/services/flag-canada-description.html"
+      ],
+      "asset_source_url": "https://raw.githubusercontent.com/hampusborgos/country-flags/c09927e63705529bbf59ca6684cd9b23225dddad/svg/ca.svg",
+      "asset_source_sha256": "5e20d135da10da02888954ba621c0ae58135776ab17b67c8c69d83c9dcc5b2e1",
+      "native_flag_ratio": 2,
+      "pedagogy": "Labels resolve identity; no image quiz."
+    },
+    {
+      "wordId": "v-英国",
+      "kind": "country",
+      "flag_code": "gb",
+      "source_refs": [
+        "https://www.college-of-arms.gov.uk/resources/union-flag-faqs",
+        "https://www.royal.uk/union-jack"
+      ],
+      "asset_source_url": "https://raw.githubusercontent.com/hampusborgos/country-flags/c09927e63705529bbf59ca6684cd9b23225dddad/svg/gb.svg",
+      "asset_source_sha256": "910e4fa63fb7a23d30d59dee2feb08da51a405eb06b38a7e12d18d9b504d13b5",
+      "native_flag_ratio": 2,
+      "pedagogy": "Labels resolve identity; no image quiz."
+    },
+    {
+      "wordId": "v-澳大利亚",
+      "kind": "country",
+      "flag_code": "au",
+      "source_refs": [
+        "https://peo.gov.au/understand-our-parliament/parliament-house/national-symbols-in-parliament-house"
+      ],
+      "asset_source_url": "https://raw.githubusercontent.com/hampusborgos/country-flags/c09927e63705529bbf59ca6684cd9b23225dddad/svg/au.svg",
+      "asset_source_sha256": "bd6f1a9373e02ac0f0ae46622e60e752b408a2183d7ea40dd575f901e869aed5",
+      "native_flag_ratio": 2,
+      "pedagogy": "Labels resolve identity; no image quiz."
+    },
+    {
+      "wordId": "v-俄罗斯",
+      "kind": "country",
+      "flag_code": "ru",
+      "source_refs": [
+        "https://rostransnadzor.gov.ru/news/2923"
+      ],
+      "asset_source_url": "https://raw.githubusercontent.com/hampusborgos/country-flags/c09927e63705529bbf59ca6684cd9b23225dddad/svg/ru.svg",
+      "asset_source_sha256": "d3186a06e97966a28552e0134f08ffd6e30fb7325bd2d8b27c235193ed24fdf1",
+      "native_flag_ratio": 1.5,
+      "pedagogy": "Labels resolve identity; no image quiz."
+    },
+    {
+      "wordId": "v-日本",
+      "kind": "country",
+      "flag_code": "jp",
+      "source_refs": [
+        "https://www.cao.go.jp/en/flag_anthem"
+      ],
+      "asset_source_url": "https://raw.githubusercontent.com/hampusborgos/country-flags/c09927e63705529bbf59ca6684cd9b23225dddad/svg/jp.svg",
+      "asset_source_sha256": "3ecfe5fb326152e5a1270206b34825cb6ecb71f02f5ffdbb0a905474a1c2ed0d",
+      "native_flag_ratio": 1.5,
+      "pedagogy": "Labels resolve identity; no image quiz."
+    },
+    {
+      "wordId": "v-韩国",
+      "kind": "country",
+      "flag_code": "kr",
+      "source_refs": [
+        "https://www.mois.go.kr/eng/sub/a03/nationalSymbol/screen.do"
+      ],
+      "asset_source_url": "https://raw.githubusercontent.com/hampusborgos/country-flags/c09927e63705529bbf59ca6684cd9b23225dddad/svg/kr.svg",
+      "asset_source_sha256": "cc39b7490a894db19113b999831ebf252e1043516c31b4af0fcf4d95e11b15cd",
+      "native_flag_ratio": 1.5,
+      "pedagogy": "Labels resolve identity; no image quiz."
+    },
+    {
+      "wordId": "v-泰国",
+      "kind": "country",
+      "flag_code": "th",
+      "source_refs": [
+        "https://www.thailand.go.th/page/flag"
+      ],
+      "asset_source_url": "https://raw.githubusercontent.com/hampusborgos/country-flags/c09927e63705529bbf59ca6684cd9b23225dddad/svg/th.svg",
+      "asset_source_sha256": "a8df94da01c0b439521a1615c413abd8adf7b6b666cb5571f6bf71d5dedcd6f9",
+      "native_flag_ratio": 1.5,
+      "pedagogy": "Labels resolve identity; no image quiz."
+    },
+    {
+      "wordId": "v-印度",
+      "kind": "country",
+      "flag_code": "in",
+      "source_refs": [
+        "https://knowindia.india.gov.in/my-india-my-pride/indian-tricolor.php"
+      ],
+      "asset_source_url": "https://raw.githubusercontent.com/hampusborgos/country-flags/c09927e63705529bbf59ca6684cd9b23225dddad/svg/in.svg",
+      "asset_source_sha256": "ef3efcee216612ae7520cf5eb09013901d21de4a20a63aa3c9c62c1ba0f6bd90",
+      "native_flag_ratio": 1.5,
+      "pedagogy": "Labels resolve identity; no image quiz."
+    },
+    {
+      "wordId": "v-埃及",
+      "kind": "country",
+      "flag_code": "eg",
+      "source_refs": [
+        "https://sis.gov.eg/en/egypt/basic-information/"
+      ],
+      "asset_source_url": "https://raw.githubusercontent.com/hampusborgos/country-flags/c09927e63705529bbf59ca6684cd9b23225dddad/svg/eg.svg",
+      "asset_source_sha256": "f157fdd22af1847ce1751c94bcb952ceb48e85ff459c922300ca28a6e633ce79",
+      "native_flag_ratio": 1.5,
+      "pedagogy": "Labels resolve identity; no image quiz."
+    },
+    {
+      "wordId": "v-阿根廷",
+      "kind": "country",
+      "flag_code": "ar",
+      "source_refs": [
+        "https://www.casarosada.gob.ar/nuestro-pais/simbolos-nacionales",
+        "https://www.argentina.gob.ar/pais/simbolos/bandera"
+      ],
+      "asset_source_url": "https://raw.githubusercontent.com/hampusborgos/country-flags/c09927e63705529bbf59ca6684cd9b23225dddad/svg/ar.svg",
+      "asset_source_sha256": "ecdd45e5a779592f59b4f833b20bc2c5979d480edf70ff3ed4d941b36866a7f9",
+      "native_flag_ratio": 1.6,
+      "pedagogy": "Labels resolve identity; no image quiz."
+    },
+    {
+      "wordId": "v-美国人",
+      "kind": "nationality",
+      "flag_code": "us",
+      "source_refs": [
+        "https://www.usa.gov/flag",
+        "https://www.uscis.gov/sites/default/files/document/lesson-plans/Symbols_Celebrations_handouts.pdf"
+      ],
+      "asset_source_url": "https://raw.githubusercontent.com/hampusborgos/country-flags/c09927e63705529bbf59ca6684cd9b23225dddad/svg/us.svg",
+      "asset_source_sha256": "6b234bd17b00d498ac8d1c645a00025817e624641289fe4faec164c52eb43f20",
+      "native_flag_ratio": 1.9,
+      "pedagogy": "Nationality is specified by the label and flag; no physical stereotypes."
+    },
+    {
+      "wordId": "v-俄罗斯人",
+      "kind": "nationality",
+      "flag_code": "ru",
+      "source_refs": [
+        "https://rostransnadzor.gov.ru/news/2923"
+      ],
+      "asset_source_url": "https://raw.githubusercontent.com/hampusborgos/country-flags/c09927e63705529bbf59ca6684cd9b23225dddad/svg/ru.svg",
+      "asset_source_sha256": "d3186a06e97966a28552e0134f08ffd6e30fb7325bd2d8b27c235193ed24fdf1",
+      "native_flag_ratio": 1.5,
+      "pedagogy": "Nationality is specified by the label and flag; no physical stereotypes."
+    },
+    {
+      "wordId": "v-北京",
+      "kind": "city",
+      "flag_code": null,
+      "source_refs": [],
+      "pedagogy": "Schematic country containment, not a map or a claim about coordinates."
+    },
+    {
+      "wordId": "v-上海",
+      "kind": "city",
+      "flag_code": null,
+      "source_refs": [],
+      "pedagogy": "Schematic country containment, not a map or a claim about coordinates."
+    },
+    {
+      "wordId": "v-西安",
+      "kind": "city",
+      "flag_code": null,
+      "source_refs": [],
+      "pedagogy": "Schematic country containment, not a map or a claim about coordinates."
+    },
+    {
+      "wordId": "v-广州",
+      "kind": "city",
+      "flag_code": null,
+      "source_refs": [],
+      "pedagogy": "Schematic country containment, not a map or a claim about coordinates."
+    },
+    {
+      "wordId": "v-英语",
+      "kind": "language",
+      "flag_code": null,
+      "source_refs": [],
+      "pedagogy": "An endonym identifies the language without claiming a one-to-one relation with a country."
+    },
+    {
+      "wordId": "v-法语",
+      "kind": "language",
+      "flag_code": null,
+      "source_refs": [],
+      "pedagogy": "An endonym identifies the language without claiming a one-to-one relation with a country."
+    },
+    {
+      "wordId": "v-德语",
+      "kind": "language",
+      "flag_code": null,
+      "source_refs": [],
+      "pedagogy": "An endonym identifies the language without claiming a one-to-one relation with a country."
+    },
+    {
+      "wordId": "v-俄语",
+      "kind": "language",
+      "flag_code": null,
+      "source_refs": [],
+      "pedagogy": "An endonym identifies the language without claiming a one-to-one relation with a country."
+    },
+    {
+      "wordId": "v-日语",
+      "kind": "language",
+      "flag_code": null,
+      "source_refs": [],
+      "pedagogy": "An endonym identifies the language without claiming a one-to-one relation with a country."
+    },
+    {
+      "wordId": "v-西班牙语",
+      "kind": "language",
+      "flag_code": null,
+      "source_refs": [],
+      "pedagogy": "An endonym identifies the language without claiming a one-to-one relation with a country."
+    },
+    {
+      "wordId": "v-韩语",
+      "kind": "language",
+      "flag_code": null,
+      "source_refs": [],
+      "pedagogy": "An endonym identifies the language without claiming a one-to-one relation with a country."
+    },
+    {
+      "wordId": "v-意大利语",
+      "kind": "language",
+      "flag_code": null,
+      "source_refs": [],
+      "pedagogy": "An endonym identifies the language without claiming a one-to-one relation with a country."
+    },
+    {
+      "wordId": "v-语言",
+      "kind": "languages",
+      "flag_code": null,
+      "source_refs": [],
+      "pedagogy": "Labels resolve identity; no image quiz."
+    },
+    {
+      "wordId": "v-外语",
+      "kind": "foreign-language",
+      "flag_code": null,
+      "source_refs": [],
+      "pedagogy": "Labels resolve identity; no image quiz."
+    },
+    {
+      "wordId": "v-方言",
+      "kind": "regional-language",
+      "flag_code": null,
+      "source_refs": [],
+      "pedagogy": "Labels resolve identity; no image quiz."
+    },
+    {
+      "wordId": "v-北京人",
+      "kind": "city-origin",
+      "flag_code": null,
+      "source_refs": [],
+      "pedagogy": "Labels resolve identity; no image quiz."
+    }
+  ]
+}

@@ -25,12 +25,15 @@ def build():
         pinyin=row.get('pinyin_display') or row.get('pinyin')
         spanish=row.get('spanish_display') or row.get('spanish')
         context=row.get('lesson4_selection')
-        if not (pinyin and spanish) and not (context and context.get('pinyin') and context.get('spanish')):
+        if context and context.get('publication_excluded'):continue
+        contextual_pinyin=(context.get('pinyin_display') or context.get('pinyin')) if context else None
+        contextual_spanish=(context.get('spanish_display') or context.get('spanish')) if context else None
+        if not (pinyin and spanish) and not (contextual_pinyin and contextual_spanish):
             continue
         item={k:row.get(k) for k in ('id','hanzi','lessons','roles','visual_ming')}
-        item.update(pinyin=pinyin,spanish=spanish)
+        item.update(pinyin=pinyin or contextual_pinyin,spanish=spanish or contextual_spanish)
         if context:
-            item['lessonContexts']=[dict(lesson=4,pinyin=context.get('pinyin'),spanish=context.get('spanish'),
+            item['lessonContexts']=[dict(lesson=4,pinyin=contextual_pinyin,spanish=contextual_spanish,
                 role=context['role'])]
         item['examplePhraseIds']=row.get('example_phrase_ids',[])
         public_vocab.append(item)
@@ -41,7 +44,7 @@ def build():
         ev=[witnesses[e] for e in row['evidence_ids']]
         # Secondary dialogue variants remain in the corpus but not the main learner bank.
         if not any(e.get('lesson')!=4 or e.get('kind') in allowed for e in ev):continue
-        public_phrases.append(dict(id=row['id'],hanzi=row['hanzi'],pinyin=row.get('pinyin_display') or row.get('pinyin'),
+        public_phrases.append(dict(id=row['id'],hanzi=row.get('hanzi_display') or row['hanzi'],pinyin=row.get('pinyin_display') or row.get('pinyin'),
             spanish=row.get('spanish_display'),lessons=row['lessons'],kinds=row['kinds'],
             vocabIds=row['vocab_ids'],dialogueIds=[x for x in row['dialogue_ids'] if '-BOOK-' in x]))
     all_phrases={p['id']:p for p in phrases}

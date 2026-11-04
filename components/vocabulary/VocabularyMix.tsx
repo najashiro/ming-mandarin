@@ -150,7 +150,7 @@ export function VocabularyMix({ scope, userId, route, media }: { scope: Curricul
         <div className={`vocabulary-mix-prompt${word.hanzi.length > 2 ? ' is-long' : ''}`}><Hanzi>{word.hanzi}</Hanzi></div>
         <SpeakButton text={word.hanzi} reading={word.pinyin} compact label="Escuchar" ariaLabel={`Escuchar ${word.hanzi}`} autoPlayKey={autoPlayTurn === turnKey ? autoPlayTurn : undefined} onAutoPlayBlocked={() => setBlockedTurn(turnKey)}/>
         {autoPlayBlocked && <small role="status">Pulsa el audio para escuchar.</small>}
-      </div> : <VocabularyCard word={word} scope={scope} route={currentRoute || route} back={back} hideTranslation={false} media={media} onFlip={() => setBackState({ turn: turnKey, value: !back })} showFavorite={false}/>}
+      </div> : <VocabularyCard imagePriority word={word} scope={scope} route={currentRoute || route} back={back} hideTranslation={false} media={media} onFlip={() => setBackState({ turn: turnKey, value: !back })} showFavorite={false}/>}
       {!session.revealed ? <button type="button" className="vocabulary-reveal" onClick={event => {
         // A second click on a rating can land on this newly rendered button.
         // Keyboard activation has detail 0 and must continue to work.

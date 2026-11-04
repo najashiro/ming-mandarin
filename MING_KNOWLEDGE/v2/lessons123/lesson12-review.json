@@ -1,0 +1,2116 @@
+{
+  "schema_version": 1,
+  "batch_id": "ming-lessons12-review-20261104",
+  "lessons": [
+    1,
+    2
+  ],
+  "reviewed_sources": [
+    {
+      "source_id": "SRC-BOOK-01-02",
+      "relative_path": "../referencias/Libro Basico 1 - Lección 1 y 2 课本内容.pdf",
+      "pdf_pages_reviewed": [
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88
+      ],
+      "method": "complete_page_visual_review",
+      "priority": "primary_textbook"
+    },
+    {
+      "source_id": "SRC-WB-01-02",
+      "relative_path": "../referencias/Libro de Ejercicios Basico 1 - Lección 1 -2.pdf",
+      "pdf_pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "method": "complete_page_visual_review",
+      "priority": "primary_workbook"
+    },
+    {
+      "source_id": "SRC-PPT-01-1",
+      "pdf_pages_reviewed": [
+        3,
+        5,
+        19,
+        28
+      ],
+      "method": "native_text_and_targeted_visual_review",
+      "priority": "secondary"
+    },
+    {
+      "source_id": "SRC-PPT-02-1",
+      "pdf_pages_reviewed": [
+        9,
+        23,
+        32,
+        35,
+        37,
+        50,
+        55,
+        57
+      ],
+      "method": "native_text_and_targeted_visual_review",
+      "priority": "secondary"
+    },
+    {
+      "source_id": "SRC-PPT-02-2",
+      "pdf_pages_reviewed": [
+        8,
+        10,
+        12,
+        14,
+        27,
+        28,
+        30,
+        33
+      ],
+      "method": "native_text_and_targeted_visual_review",
+      "priority": "secondary"
+    },
+    {
+      "source_id": "SRC-PPT-00-2",
+      "pdf_pages_reviewed": [
+        3
+      ],
+      "method": "complete_page_visual_review",
+      "priority": "secondary_phonetics"
+    }
+  ],
+  "vocabulary_updates": [
+    {
+      "id": "v-中文",
+      "hanzi": "中文",
+      "reason": "Normalización editorial de lectura; se conserva la variante documental.",
+      "source_refs": [
+        "SRC-PPT-02-1:p032",
+        "SRC-PPT-02-1:p033",
+        "SRC-PPT-02-1:p037"
+      ],
+      "pinyin_ming": "Zhōngwén"
+    },
+    {
+      "id": "v-法语",
+      "hanzi": "法语",
+      "reason": "Normalización editorial de lectura; se conserva la variante documental.",
+      "source_refs": [
+        "SRC-PPT-02-1:p032"
+      ],
+      "pinyin_ming": "Fǎyǔ"
+    },
+    {
+      "id": "v-墨西哥",
+      "hanzi": "墨西哥",
+      "reason": "Normalización editorial de lectura; se conserva la variante documental.",
+      "source_refs": [
+        "SRC-PPT-02-1:p035"
+      ],
+      "pinyin_ming": "Mòxīgē"
+    },
+    {
+      "id": "v-汉堡",
+      "hanzi": "汉堡",
+      "reason": "Normalización editorial de lectura; se conserva la variante documental.",
+      "source_refs": [
+        "SRC-PPT-02-2:p010",
+        "SRC-PPT-02-2:p030"
+      ],
+      "pinyin_ming": "hànbǎo"
+    },
+    {
+      "id": "v-甜品",
+      "hanzi": "甜品",
+      "reason": "Normalización editorial de lectura; se conserva la variante documental. Glosa breve fiel al sentido documentado; la explicación larga del PPT se conserva como evidencia.",
+      "source_refs": [
+        "SRC-PPT-02-2:p012",
+        "SRC-PPT-02-2:p014"
+      ],
+      "pinyin_ming": "tiánpǐn",
+      "traduccion_ming": "postre; dulce"
+    },
+    {
+      "id": "v-饮料",
+      "hanzi": "饮料",
+      "reason": "Normalización editorial de lectura; se conserva la variante documental.",
+      "source_refs": [
+        "SRC-PPT-02-2:p030"
+      ],
+      "pinyin_ming": "yǐnliào"
+    },
+    {
+      "id": "v-苹果",
+      "hanzi": "苹果",
+      "reason": "Normalización editorial de lectura; se conserva la variante documental.",
+      "source_refs": [
+        "SRC-PPT-02-2:p030"
+      ],
+      "pinyin_ming": "píngguǒ"
+    },
+    {
+      "id": "v-炒饭",
+      "hanzi": "炒饭",
+      "reason": "Normalización editorial de lectura; se conserva la variante documental.",
+      "source_refs": [
+        "SRC-PPT-02-2:p033"
+      ],
+      "pinyin_ming": "chǎofàn"
+    },
+    {
+      "id": "v-上午好",
+      "hanzi": "上午好",
+      "reason": "Normalización editorial de lectura; se conserva la variante documental.",
+      "source_refs": [
+        "SRC-PPT-00-2:p003",
+        "SRC-HANZI-01-1:p001"
+      ],
+      "pinyin_ming": "shàngwǔ hǎo"
+    },
+    {
+      "id": "v-下午好",
+      "hanzi": "下午好",
+      "reason": "Normalización editorial de lectura; se conserva la variante documental.",
+      "source_refs": [
+        "SRC-PPT-00-2:p003",
+        "SRC-HANZI-01-1:p001"
+      ],
+      "pinyin_ming": "xiàwǔ hǎo"
+    },
+    {
+      "id": "v-晚上好",
+      "hanzi": "晚上好",
+      "reason": "Normalización editorial de lectura; se conserva la variante documental.",
+      "source_refs": [
+        "SRC-PPT-00-2:p003",
+        "SRC-HANZI-01-1:p001"
+      ],
+      "pinyin_ming": "wǎnshang hǎo"
+    },
+    {
+      "id": "v-晚安",
+      "hanzi": "晚安",
+      "reason": "Normalización editorial de lectura; se conserva la variante documental.",
+      "source_refs": [
+        "SRC-PPT-00-2:p003",
+        "SRC-HANZI-01-1:p001"
+      ],
+      "pinyin_ming": "wǎn’ān"
+    },
+    {
+      "id": "v-果汁",
+      "hanzi": "果汁",
+      "reason": "Normalización editorial de lectura; se conserva la variante documental.",
+      "source_refs": [
+        "SRC-PPT-02-2:p028",
+        "SRC-HANZI-02-2:p003"
+      ],
+      "pinyin_ming": "guǒzhī"
+    },
+    {
+      "id": "v-寿司",
+      "hanzi": "寿司",
+      "reason": "Normalización editorial de lectura; se conserva la variante documental.",
+      "source_refs": [
+        "SRC-PPT-02-2:p010"
+      ],
+      "pinyin_ming": "shòusī"
+    },
+    {
+      "id": "v-肉夹馍",
+      "hanzi": "肉夹馍",
+      "reason": "Normalización editorial de lectura; se conserva la variante documental.",
+      "source_refs": [
+        "SRC-PPT-02-2:p008"
+      ],
+      "pinyin_ming": "ròujiāmó"
+    },
+    {
+      "id": "v-老人",
+      "hanzi": "老人",
+      "reason": "Aclara que 老人 es un sustantivo que designa a una persona mayor.",
+      "source_refs": [
+        "SRC-PPT-02-1:p009"
+      ],
+      "traduccion_ming": "persona mayor"
+    },
+    {
+      "id": "v-老朋友",
+      "hanzi": "老朋友",
+      "reason": "老朋友 alude a la antigüedad de la amistad, no necesariamente a la edad de la persona.",
+      "source_refs": [
+        "SRC-PPT-02-1:p009"
+      ],
+      "traduccion_ming": "amigo de hace mucho tiempo"
+    },
+    {
+      "id": "v-贵姓",
+      "hanzi": "贵姓",
+      "reason": "Conserva el uso cortés explicado en el libro p68; evita la glosa ambigua «el apellido de uno».",
+      "source_refs": [
+        "SRC-BOOK-01-02:p066",
+        "SRC-PPT-01-1:p036",
+        "SRC-BOOK-01-02:p065",
+        "SRC-PPT-02-1:p042",
+        "SRC-PPT-01-1:p038",
+        "SRC-PPT-02-1:p016",
+        "SRC-WB-01-02:p012",
+        "SRC-BOOK-01-02:p072",
+        "SRC-BOOK-01-02:p068"
+      ],
+      "traduccion_ming": "su apellido (forma cortés)"
+    }
+  ],
+  "phrase_updates": [
+    {
+      "id": "PH-121d6a3b3b2b5204",
+      "hanzi": "我累死了。",
+      "pinyin_ming": "Wǒ lèi sǐ le.",
+      "source_refs": [
+        "SRC-PPT-01-1:p005"
+      ],
+      "reason": "Normaliza signos breves no válidos como marcas tonales, g tipográfica y segmentación. En 你们, 们 se lee en tono neutro. Se retiene el pinyin documental original."
+    },
+    {
+      "id": "PH-c3f7df1abc8c5fb6",
+      "hanzi": "老师不忙。",
+      "pinyin_ming": "Lǎoshī bù máng.",
+      "source_refs": [
+        "SRC-PPT-01-1:p025"
+      ],
+      "reason": "Normaliza signos breves no válidos como marcas tonales, g tipográfica y segmentación. En 你们, 们 se lee en tono neutro. Se retiene el pinyin documental original."
+    },
+    {
+      "id": "PH-bc51409baf560fe2",
+      "hanzi": "认识你，我很高兴。",
+      "pinyin_ming": "Rènshi nǐ, wǒ hěn gāoxìng.",
+      "source_refs": [
+        "SRC-PPT-01-1:p041"
+      ],
+      "reason": "Normaliza signos breves no válidos como marcas tonales, g tipográfica y segmentación. En 你们, 们 se lee en tono neutro. Se retiene el pinyin documental original."
+    },
+    {
+      "id": "PH-676ccb0a0e5ac008",
+      "hanzi": "我很高兴认识你。",
+      "pinyin_ming": "Wǒ hěn gāoxìng rènshi nǐ.",
+      "source_refs": [
+        "SRC-PPT-01-1:p041"
+      ],
+      "reason": "Normaliza signos breves no válidos como marcas tonales, g tipográfica y segmentación. En 你们, 们 se lee en tono neutro. Se retiene el pinyin documental original."
+    },
+    {
+      "id": "PH-de301d7a1c0921cd",
+      "hanzi": "我不太忙，你呢？",
+      "pinyin_ming": "Wǒ bú tài máng, nǐ ne?",
+      "source_refs": [
+        "SRC-PPT-01-1:p055"
+      ],
+      "reason": "Normaliza signos breves no válidos como marcas tonales, g tipográfica y segmentación. En 你们, 们 se lee en tono neutro. Se retiene el pinyin documental original."
+    },
+    {
+      "id": "PH-802e8eea15bda367",
+      "hanzi": "我早上刚到北京。",
+      "pinyin_ming": "Wǒ zǎoshang gāng dào Běijīng.",
+      "source_refs": [
+        "SRC-PPT-02-1:p006"
+      ],
+      "reason": "Normaliza signos breves no válidos como marcas tonales, g tipográfica y segmentación. En 你们, 们 se lee en tono neutro. Se retiene el pinyin documental original."
+    },
+    {
+      "id": "PH-047f9e4cb5e86d8b",
+      "hanzi": "我是秘鲁人。",
+      "pinyin_ming": "Wǒ shì Bìlǔ rén.",
+      "source_refs": [
+        "SRC-PPT-02-1:p020"
+      ],
+      "reason": "Normaliza signos breves no válidos como marcas tonales, g tipográfica y segmentación. En 你们, 们 se lee en tono neutro. Se retiene el pinyin documental original."
+    },
+    {
+      "id": "PH-17c00c56c6657575",
+      "hanzi": "你朋友是哪国人？",
+      "pinyin_ming": "Nǐ péngyou shì nǎ guó rén?",
+      "source_refs": [
+        "SRC-PPT-02-1:p022"
+      ],
+      "reason": "Normaliza signos breves no válidos como marcas tonales, g tipográfica y segmentación. En 你们, 们 se lee en tono neutro. Se retiene el pinyin documental original."
+    },
+    {
+      "id": "PH-23c2c72791905b34",
+      "hanzi": "我朋友是中国人。",
+      "pinyin_ming": "Wǒ péngyou shì Zhōngguó rén.",
+      "source_refs": [
+        "SRC-PPT-02-1:p022"
+      ],
+      "reason": "Normaliza signos breves no válidos como marcas tonales, g tipográfica y segmentación. En 你们, 们 se lee en tono neutro. Se retiene el pinyin documental original."
+    },
+    {
+      "id": "PH-69a24d57a7e9d58f",
+      "hanzi": "我也很好。你是哪国人？",
+      "pinyin_ming": "Wǒ yě hěn hǎo. Nǐ shì nǎ guó rén?",
+      "source_refs": [
+        "SRC-PPT-02-1:p028"
+      ],
+      "reason": "Normaliza signos breves no válidos como marcas tonales, g tipográfica y segmentación. En 你们, 们 se lee en tono neutro. Se retiene el pinyin documental original."
+    },
+    {
+      "id": "PH-5142cb2d864109cd",
+      "hanzi": "我是秘鲁人。你呢？",
+      "pinyin_ming": "Wǒ shì Bìlǔ rén. Nǐ ne?",
+      "source_refs": [
+        "SRC-PPT-02-1:p028",
+        "SRC-PPT-02-1:p045"
+      ],
+      "reason": "Normaliza signos breves no válidos como marcas tonales, g tipográfica y segmentación. En 你们, 们 se lee en tono neutro. Se retiene el pinyin documental original."
+    },
+    {
+      "id": "PH-0a3721928d6f00d4",
+      "hanzi": "你们学习中文。",
+      "pinyin_ming": "Nǐmen xuéxí Zhōngwén.",
+      "source_refs": [
+        "SRC-PPT-02-1:p037"
+      ],
+      "reason": "Normaliza signos breves no válidos como marcas tonales, g tipográfica y segmentación. En 你们, 们 se lee en tono neutro. Se retiene el pinyin documental original."
+    },
+    {
+      "id": "PH-9fdaa233b06a6a21",
+      "hanzi": "我会说英语和西班牙语。你呢？",
+      "pinyin_ming": "Wǒ huì shuō Yīngyǔ hé Xībānyáyǔ. Nǐ ne?",
+      "source_refs": [
+        "SRC-PPT-02-1:p044"
+      ],
+      "reason": "Normaliza signos breves no válidos como marcas tonales, g tipográfica y segmentación. En 你们, 们 se lee en tono neutro. Se retiene el pinyin documental original."
+    },
+    {
+      "id": "PH-10d754ac9c07b1a5",
+      "hanzi": "我是中国人。你会说什么语言？",
+      "pinyin_ming": "Wǒ shì Zhōngguó rén. Nǐ huì shuō shénme yǔyán?",
+      "source_refs": [
+        "SRC-PPT-02-1:p045"
+      ],
+      "reason": "Normaliza signos breves no válidos como marcas tonales, g tipográfica y segmentación. En 你们, 们 se lee en tono neutro. Se retiene el pinyin documental original."
+    },
+    {
+      "id": "PH-45083e149d8f3010",
+      "hanzi": "我会西班牙语和英语。",
+      "pinyin_ming": "Wǒ huì Xībānyáyǔ hé Yīngyǔ.",
+      "source_refs": [
+        "SRC-PPT-02-1:p045"
+      ],
+      "reason": "Normaliza signos breves no válidos como marcas tonales, g tipográfica y segmentación. En 你们, 们 se lee en tono neutro. Se retiene el pinyin documental original."
+    }
+  ],
+  "example_links": [
+    {
+      "vocab_id": "v-饭",
+      "phrase_id": "PH-e1d2a9310891c22f",
+      "relation": "source_recovered_lexical",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": [
+        "SRC-BOOK-01-02:p070"
+      ]
+    },
+    {
+      "vocab_id": "v-同学",
+      "phrase_id": "PH-ad3836fd87ddef0f",
+      "relation": "source_recovered_lexical",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": [
+        "SRC-BOOK-01-02:p078"
+      ]
+    },
+    {
+      "vocab_id": "v-面包",
+      "phrase_id": "PH-8c0165c6a2f0e9a4",
+      "relation": "source_recovered_lexical",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": [
+        "SRC-BOOK-01-02:p078"
+      ]
+    },
+    {
+      "vocab_id": "v-汉堡包",
+      "phrase_id": "PH-52d6898d85ece4d3",
+      "relation": "source_recovered_lexical",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": [
+        "SRC-BOOK-01-02:p078"
+      ]
+    },
+    {
+      "vocab_id": "v-汉堡包",
+      "phrase_id": "PH-2af58743686b434a",
+      "relation": "source_recovered_lexical",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": [
+        "SRC-BOOK-01-02:p078"
+      ]
+    },
+    {
+      "vocab_id": "v-比萨饼",
+      "phrase_id": "PH-2af58743686b434a",
+      "relation": "source_recovered_lexical",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": [
+        "SRC-BOOK-01-02:p078"
+      ]
+    },
+    {
+      "vocab_id": "v-比萨饼",
+      "phrase_id": "PH-fce28d0b081ab13c",
+      "relation": "source_recovered_lexical",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": [
+        "SRC-WB-01-02:p015"
+      ]
+    },
+    {
+      "vocab_id": "v-面包",
+      "phrase_id": "PH-38570e8e85b69994",
+      "relation": "source_recovered_lexical",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": [
+        "SRC-WB-01-02:p015"
+      ]
+    },
+    {
+      "vocab_id": "v-同学",
+      "phrase_id": "PH-1952dcf99ebdfbc7",
+      "relation": "editorial_explicit_lexical",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": [
+        "SRC-BOOK-01-02:p080"
+      ]
+    },
+    {
+      "vocab_id": "v-们",
+      "phrase_id": "PH-d36d24a8a0e932b0",
+      "relation": "editorial_morphological",
+      "reason": "El sufijo plural 们 se realiza en 你们; ejemplo y análisis de subentrada explícitos del libro. No se aplica herencia automática.",
+      "source_refs": [
+        "SRC-BOOK-01-02:p065",
+        "SRC-BOOK-01-02:p066"
+      ]
+    },
+    {
+      "vocab_id": "v-干嘛",
+      "phrase_id": "PH-9a7707f635145228",
+      "relation": "editorial_explicit_lexical",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": [
+        "SRC-PPT-01-1:p028"
+      ]
+    },
+    {
+      "vocab_id": "v-干啥",
+      "phrase_id": "PH-6fd27395e9aae5ed",
+      "relation": "editorial_explicit_lexical",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": [
+        "SRC-PPT-01-1:p028"
+      ]
+    },
+    {
+      "vocab_id": "v-死",
+      "phrase_id": "PH-121d6a3b3b2b5204",
+      "relation": "editorial_morphological",
+      "reason": "Uso intensificador documentado en 累死了, no una acepción literal de morir.",
+      "source_refs": [
+        "SRC-PPT-01-1:p005"
+      ]
+    },
+    {
+      "vocab_id": "v-西班牙",
+      "phrase_id": "PH-33829da3f6cf668a",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-法国",
+      "phrase_id": "PH-6ee9295ab59804ea",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-德国",
+      "phrase_id": "PH-09210b297f4e7dea",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-澳大利亚",
+      "phrase_id": "PH-b54f77813995146a",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-日本",
+      "phrase_id": "PH-85861a96c9d721b3",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-泰国",
+      "phrase_id": "PH-c3b31745f5f4dd4c",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-印度",
+      "phrase_id": "PH-6977aa533914dd0c",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-埃及",
+      "phrase_id": "PH-ac39f812387454a5",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-墨西哥",
+      "phrase_id": "PH-8a85c77231647430",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-法语",
+      "phrase_id": "PH-c50a4fd6bc0f6a07",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-德语",
+      "phrase_id": "PH-48c961058f489ef7",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-俄语",
+      "phrase_id": "PH-6bdbcdb47d23b76c",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-日语",
+      "phrase_id": "PH-5c89b9a8b7b7c232",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-韩语",
+      "phrase_id": "PH-e77653fccaa86373",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-炸猪肉面包",
+      "phrase_id": "PH-f9168ed200bb6d77",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-肉夹馍",
+      "phrase_id": "PH-cf046f60203dad24",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-汉堡",
+      "phrase_id": "PH-3e3ad5911d8cbe40",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-披萨",
+      "phrase_id": "PH-4a335a26dfd111ca",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-热狗",
+      "phrase_id": "PH-9f2e2f769cecaa7e",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-寿司",
+      "phrase_id": "PH-37aec95567339b1b",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-甜品",
+      "phrase_id": "PH-2051fa7babc0e255",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-蛋挞",
+      "phrase_id": "PH-1e8137813fdf76df",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-苹果",
+      "phrase_id": "PH-0132e2808ee74a48",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-炒饭",
+      "phrase_id": "PH-bad7ebbdd8e4f656",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-北京烤鸭",
+      "phrase_id": "PH-0655cab4fb9719d2",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-印加可乐",
+      "phrase_id": "PH-69b3b874c57dcf93",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-果汁",
+      "phrase_id": "PH-4f838c5b21bc90e1",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-饮料",
+      "phrase_id": "PH-34f11a4b4956d41b",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-老",
+      "phrase_id": "PH-bff6f64bedcc7de7",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-老人",
+      "phrase_id": "PH-89b28c25caa5404c",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-老朋友",
+      "phrase_id": "PH-ec6c829fd4d642a7",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-外国",
+      "phrase_id": "PH-f6e0f607b916a6b8",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-外国人",
+      "phrase_id": "PH-4e84a2881babc3f5",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-上午好",
+      "phrase_id": "PH-8d241fd58e679562",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-下午好",
+      "phrase_id": "PH-e180591526df0a48",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-晚上好",
+      "phrase_id": "PH-f804505a5d3739c3",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-晚安",
+      "phrase_id": "PH-d91c2647b2546a8d",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-贵",
+      "phrase_id": "PH-4702a58e239c4c28",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-二",
+      "phrase_id": "PH-4fc9d8955b6155d9",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-百",
+      "phrase_id": "PH-6d6b423581fdd4c7",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-千",
+      "phrase_id": "PH-a8f9c6378a6f816b",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-普通话",
+      "phrase_id": "PH-a72ed254893f6fbc",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-方言",
+      "phrase_id": "PH-5b76c2a59b5baa0d",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-姥姥",
+      "phrase_id": "PH-88846ca477b831c5",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-姥爷",
+      "phrase_id": "PH-9082a7d64b7e252a",
+      "relation": "ming_editorial_example",
+      "reason": "Enlace explícito revisado para un ejemplo que no estaba vinculado a esta tarjeta.",
+      "source_refs": []
+    }
+  ],
+  "new_phrases": [
+    {
+      "id": "PH-e1d2a9310891c22f",
+      "hanzi": "吃饭",
+      "pinyin_ming": "Chī fàn",
+      "traduccion_ming": "Comer.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "collocation"
+      ],
+      "vocab_ids": [
+        "v-饭"
+      ],
+      "source_refs": [
+        "SRC-BOOK-01-02:p070"
+      ],
+      "origin": "source_transcription",
+      "reason": "Texto chino cotejado visualmente; apoyo de pinyin y traducción editorial separado."
+    },
+    {
+      "id": "PH-ad3836fd87ddef0f",
+      "hanzi": "同学和老师",
+      "pinyin_ming": "Tóngxué hé lǎoshī",
+      "traduccion_ming": "Compañeros de clase y profesores.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "collocation"
+      ],
+      "vocab_ids": [
+        "v-同学"
+      ],
+      "source_refs": [
+        "SRC-BOOK-01-02:p078"
+      ],
+      "origin": "source_transcription",
+      "reason": "Texto chino cotejado visualmente; apoyo de pinyin y traducción editorial separado."
+    },
+    {
+      "id": "PH-8c0165c6a2f0e9a4",
+      "hanzi": "面包很好吃",
+      "pinyin_ming": "Miànbāo hěn hǎochī",
+      "traduccion_ming": "El pan está muy rico.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "collocation"
+      ],
+      "vocab_ids": [
+        "v-面包"
+      ],
+      "source_refs": [
+        "SRC-BOOK-01-02:p078"
+      ],
+      "origin": "source_transcription",
+      "reason": "Texto chino cotejado visualmente; apoyo de pinyin y traducción editorial separado."
+    },
+    {
+      "id": "PH-52d6898d85ece4d3",
+      "hanzi": "喜欢吃汉堡包",
+      "pinyin_ming": "Xǐhuan chī hànbǎobāo",
+      "traduccion_ming": "Gustar de comer hamburguesas.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "collocation"
+      ],
+      "vocab_ids": [
+        "v-汉堡包"
+      ],
+      "source_refs": [
+        "SRC-BOOK-01-02:p078"
+      ],
+      "origin": "source_transcription",
+      "reason": "Texto chino cotejado visualmente; apoyo de pinyin y traducción editorial separado."
+    },
+    {
+      "id": "PH-2af58743686b434a",
+      "hanzi": "汉堡包和比萨饼",
+      "pinyin_ming": "Hànbǎobāo hé bǐsàbǐng",
+      "traduccion_ming": "Hamburguesas y pizza.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "collocation"
+      ],
+      "vocab_ids": [
+        "v-汉堡包",
+        "v-比萨饼"
+      ],
+      "source_refs": [
+        "SRC-BOOK-01-02:p078"
+      ],
+      "origin": "source_transcription",
+      "reason": "Texto chino cotejado visualmente; apoyo de pinyin y traducción editorial separado."
+    },
+    {
+      "id": "PH-fce28d0b081ab13c",
+      "hanzi": "这是比萨饼。",
+      "pinyin_ming": "Zhè shì bǐsàbǐng.",
+      "traduccion_ming": "Esto es pizza.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "dialogue_example"
+      ],
+      "vocab_ids": [
+        "v-比萨饼"
+      ],
+      "source_refs": [
+        "SRC-WB-01-02:p015"
+      ],
+      "origin": "source_transcription",
+      "reason": "Texto chino cotejado visualmente; apoyo de pinyin y traducción editorial separado.",
+      "pinyin_source": "Zhè shì bǐsàbǐng."
+    },
+    {
+      "id": "PH-38570e8e85b69994",
+      "hanzi": "我喜欢吃面包。",
+      "pinyin_ming": "Wǒ xǐhuan chī miànbāo.",
+      "traduccion_ming": "Me gusta comer pan.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "dialogue_example"
+      ],
+      "vocab_ids": [
+        "v-面包"
+      ],
+      "source_refs": [
+        "SRC-WB-01-02:p015"
+      ],
+      "origin": "source_transcription",
+      "reason": "Texto chino cotejado visualmente; apoyo de pinyin y traducción editorial separado.",
+      "pinyin_source": "Wǒ xǐhuan chī miànbāo."
+    },
+    {
+      "id": "PH-33829da3f6cf668a",
+      "hanzi": "我是西班牙人。",
+      "pinyin_ming": "Wǒ shì Xībānyá rén.",
+      "traduccion_ming": "Soy español.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-西班牙"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p068",
+        "SRC-BOOK-01-02:p078",
+        "SRC-BOOK-01-02:p077",
+        "SRC-PPT-02-1:p023"
+      ]
+    },
+    {
+      "id": "PH-6ee9295ab59804ea",
+      "hanzi": "我是法国人。",
+      "pinyin_ming": "Wǒ shì Fǎguó rén.",
+      "traduccion_ming": "Soy francés.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-法国"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p068",
+        "SRC-BOOK-01-02:p078",
+        "SRC-BOOK-01-02:p077",
+        "SRC-PPT-02-1:p023"
+      ]
+    },
+    {
+      "id": "PH-09210b297f4e7dea",
+      "hanzi": "我是德国人。",
+      "pinyin_ming": "Wǒ shì Déguó rén.",
+      "traduccion_ming": "Soy alemán.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-德国"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p068",
+        "SRC-BOOK-01-02:p078",
+        "SRC-BOOK-01-02:p077",
+        "SRC-PPT-02-1:p023"
+      ]
+    },
+    {
+      "id": "PH-b54f77813995146a",
+      "hanzi": "我是澳大利亚人。",
+      "pinyin_ming": "Wǒ shì Àodàlìyà rén.",
+      "traduccion_ming": "Soy australiano.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-澳大利亚"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p068",
+        "SRC-BOOK-01-02:p078",
+        "SRC-BOOK-01-02:p077",
+        "SRC-PPT-02-1:p035"
+      ]
+    },
+    {
+      "id": "PH-85861a96c9d721b3",
+      "hanzi": "我是日本人。",
+      "pinyin_ming": "Wǒ shì Rìběn rén.",
+      "traduccion_ming": "Soy japonés.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-日本"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p068",
+        "SRC-BOOK-01-02:p078",
+        "SRC-BOOK-01-02:p077",
+        "SRC-PPT-02-1:p023"
+      ]
+    },
+    {
+      "id": "PH-c3b31745f5f4dd4c",
+      "hanzi": "我是泰国人。",
+      "pinyin_ming": "Wǒ shì Tàiguó rén.",
+      "traduccion_ming": "Soy tailandés.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-泰国"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p068",
+        "SRC-BOOK-01-02:p078",
+        "SRC-BOOK-01-02:p077"
+      ]
+    },
+    {
+      "id": "PH-6977aa533914dd0c",
+      "hanzi": "我是印度人。",
+      "pinyin_ming": "Wǒ shì Yìndù rén.",
+      "traduccion_ming": "Soy indio.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-印度"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p068",
+        "SRC-BOOK-01-02:p078"
+      ]
+    },
+    {
+      "id": "PH-ac39f812387454a5",
+      "hanzi": "我是埃及人。",
+      "pinyin_ming": "Wǒ shì Āijí rén.",
+      "traduccion_ming": "Soy egipcio.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-埃及"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p068",
+        "SRC-BOOK-01-02:p078"
+      ]
+    },
+    {
+      "id": "PH-8a85c77231647430",
+      "hanzi": "我是墨西哥人。",
+      "pinyin_ming": "Wǒ shì Mòxīgē rén.",
+      "traduccion_ming": "Soy mexicano.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-墨西哥"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p068",
+        "SRC-BOOK-01-02:p078",
+        "SRC-PPT-02-1:p035"
+      ]
+    },
+    {
+      "id": "PH-c50a4fd6bc0f6a07",
+      "hanzi": "我学习法语。",
+      "pinyin_ming": "Wǒ xuéxí Fǎyǔ.",
+      "traduccion_ming": "Estudio francés.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-法语"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p066",
+        "SRC-BOOK-01-02:p067",
+        "SRC-PPT-02-1:p032"
+      ]
+    },
+    {
+      "id": "PH-48c961058f489ef7",
+      "hanzi": "我学习德语。",
+      "pinyin_ming": "Wǒ xuéxí Déyǔ.",
+      "traduccion_ming": "Estudio alemán.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-德语"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p066",
+        "SRC-BOOK-01-02:p067",
+        "SRC-PPT-02-1:p032"
+      ]
+    },
+    {
+      "id": "PH-6bdbcdb47d23b76c",
+      "hanzi": "我学习俄语。",
+      "pinyin_ming": "Wǒ xuéxí Éyǔ.",
+      "traduccion_ming": "Estudio ruso.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-俄语"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p066",
+        "SRC-BOOK-01-02:p067",
+        "SRC-PPT-02-1:p032"
+      ]
+    },
+    {
+      "id": "PH-5c89b9a8b7b7c232",
+      "hanzi": "我学习日语。",
+      "pinyin_ming": "Wǒ xuéxí Rìyǔ.",
+      "traduccion_ming": "Estudio japonés.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-日语"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p066",
+        "SRC-BOOK-01-02:p067",
+        "SRC-PPT-02-1:p032"
+      ]
+    },
+    {
+      "id": "PH-e77653fccaa86373",
+      "hanzi": "我学习韩语。",
+      "pinyin_ming": "Wǒ xuéxí Hányǔ.",
+      "traduccion_ming": "Estudio coreano.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-韩语"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p066",
+        "SRC-BOOK-01-02:p067",
+        "SRC-PPT-02-1:p032"
+      ]
+    },
+    {
+      "id": "PH-f9168ed200bb6d77",
+      "hanzi": "我喜欢吃炸猪肉面包。",
+      "pinyin_ming": "Wǒ xǐhuan chī zhá zhūròu miànbāo.",
+      "traduccion_ming": "Me gusta comer pan con cerdo frito.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-炸猪肉面包"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p069",
+        "SRC-BOOK-01-02:p070",
+        "SRC-PPT-02-2:p008"
+      ]
+    },
+    {
+      "id": "PH-cf046f60203dad24",
+      "hanzi": "我喜欢吃肉夹馍。",
+      "pinyin_ming": "Wǒ xǐhuan chī ròujiāmó.",
+      "traduccion_ming": "Me gusta comer pan chino relleno de carne.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-肉夹馍"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p069",
+        "SRC-BOOK-01-02:p070",
+        "SRC-PPT-02-2:p008"
+      ]
+    },
+    {
+      "id": "PH-3e3ad5911d8cbe40",
+      "hanzi": "我喜欢吃汉堡。",
+      "pinyin_ming": "Wǒ xǐhuan chī hànbǎo.",
+      "traduccion_ming": "Me gusta comer hamburguesas.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-汉堡"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p069",
+        "SRC-BOOK-01-02:p070",
+        "SRC-PPT-02-2:p010",
+        "SRC-PPT-02-2:p030"
+      ]
+    },
+    {
+      "id": "PH-4a335a26dfd111ca",
+      "hanzi": "我喜欢吃披萨。",
+      "pinyin_ming": "Wǒ xǐhuan chī pīsà.",
+      "traduccion_ming": "Me gusta comer pizza.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-披萨"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p069",
+        "SRC-BOOK-01-02:p070",
+        "SRC-PPT-02-2:p010"
+      ]
+    },
+    {
+      "id": "PH-9f2e2f769cecaa7e",
+      "hanzi": "我喜欢吃热狗。",
+      "pinyin_ming": "Wǒ xǐhuan chī règǒu.",
+      "traduccion_ming": "Me gusta comer perros calientes.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-热狗"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p069",
+        "SRC-BOOK-01-02:p070",
+        "SRC-PPT-02-2:p010"
+      ]
+    },
+    {
+      "id": "PH-37aec95567339b1b",
+      "hanzi": "我喜欢吃寿司。",
+      "pinyin_ming": "Wǒ xǐhuan chī shòusī.",
+      "traduccion_ming": "Me gusta comer sushi.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-寿司"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p069",
+        "SRC-BOOK-01-02:p070",
+        "SRC-PPT-02-2:p010"
+      ]
+    },
+    {
+      "id": "PH-2051fa7babc0e255",
+      "hanzi": "我喜欢吃甜品。",
+      "pinyin_ming": "Wǒ xǐhuan chī tiánpǐn.",
+      "traduccion_ming": "Me gusta comer postres.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-甜品"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p069",
+        "SRC-BOOK-01-02:p070",
+        "SRC-PPT-02-2:p012",
+        "SRC-PPT-02-2:p014"
+      ]
+    },
+    {
+      "id": "PH-1e8137813fdf76df",
+      "hanzi": "我喜欢吃蛋挞。",
+      "pinyin_ming": "Wǒ xǐhuan chī dàntà.",
+      "traduccion_ming": "Me gusta comer tartaletas de huevo.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-蛋挞"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p069",
+        "SRC-BOOK-01-02:p070",
+        "SRC-PPT-02-2:p014"
+      ]
+    },
+    {
+      "id": "PH-0132e2808ee74a48",
+      "hanzi": "我喜欢吃苹果。",
+      "pinyin_ming": "Wǒ xǐhuan chī píngguǒ.",
+      "traduccion_ming": "Me gusta comer manzanas.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-苹果"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p069",
+        "SRC-BOOK-01-02:p070",
+        "SRC-PPT-02-2:p030"
+      ]
+    },
+    {
+      "id": "PH-bad7ebbdd8e4f656",
+      "hanzi": "我喜欢吃炒饭。",
+      "pinyin_ming": "Wǒ xǐhuan chī chǎofàn.",
+      "traduccion_ming": "Me gusta comer arroz frito.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-炒饭"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p069",
+        "SRC-BOOK-01-02:p070",
+        "SRC-PPT-02-2:p033"
+      ]
+    },
+    {
+      "id": "PH-0655cab4fb9719d2",
+      "hanzi": "我喜欢吃北京烤鸭。",
+      "pinyin_ming": "Wǒ xǐhuan chī Běijīng kǎoyā.",
+      "traduccion_ming": "Me gusta comer pato laqueado de Pekín.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-北京烤鸭"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p069",
+        "SRC-BOOK-01-02:p070",
+        "SRC-WB-01-02:p016"
+      ]
+    },
+    {
+      "id": "PH-69b3b874c57dcf93",
+      "hanzi": "我喜欢喝印加可乐。",
+      "pinyin_ming": "Wǒ xǐhuan hē Yìnjiā kělè.",
+      "traduccion_ming": "Me gusta tomar Inca Kola.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-印加可乐"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-PPT-02-2:p027",
+        "SRC-PPT-02-1:p057"
+      ]
+    },
+    {
+      "id": "PH-4f838c5b21bc90e1",
+      "hanzi": "你要喝果汁吗？",
+      "pinyin_ming": "Nǐ yào hē guǒzhī ma?",
+      "traduccion_ming": "¿Quieres tomar jugo de fruta?",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-果汁"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-PPT-02-2:p028",
+        "SRC-PPT-02-1:p057",
+        "SRC-HANZI-02-2:p003"
+      ]
+    },
+    {
+      "id": "PH-34f11a4b4956d41b",
+      "hanzi": "你要什么饮料？",
+      "pinyin_ming": "Nǐ yào shénme yǐnliào?",
+      "traduccion_ming": "¿Qué bebida quieres?",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-饮料"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p071",
+        "SRC-PPT-02-2:p030"
+      ]
+    },
+    {
+      "id": "PH-bff6f64bedcc7de7",
+      "hanzi": "他很老。",
+      "pinyin_ming": "Tā hěn lǎo.",
+      "traduccion_ming": "Él es muy mayor.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-老"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p051",
+        "SRC-PPT-02-1:p009"
+      ]
+    },
+    {
+      "id": "PH-89b28c25caa5404c",
+      "hanzi": "这位老人是我爷爷。",
+      "pinyin_ming": "Zhè wèi lǎorén shì wǒ yéye.",
+      "traduccion_ming": "Esta persona mayor es mi abuelo paterno.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-老人"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-PPT-02-1:p009",
+        "SRC-PPT-02-1:p050"
+      ]
+    },
+    {
+      "id": "PH-ec6c829fd4d642a7",
+      "hanzi": "他是我的老朋友。",
+      "pinyin_ming": "Tā shì wǒ de lǎo péngyou.",
+      "traduccion_ming": "Él es un amigo mío de hace mucho tiempo.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-老朋友"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p065",
+        "SRC-PPT-02-1:p009"
+      ]
+    },
+    {
+      "id": "PH-f6e0f607b916a6b8",
+      "hanzi": "我有外国朋友。",
+      "pinyin_ming": "Wǒ yǒu wàiguó péngyou.",
+      "traduccion_ming": "Tengo amigos de otros países.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-外国"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-PPT-02-1:p055"
+      ]
+    },
+    {
+      "id": "PH-4e84a2881babc3f5",
+      "hanzi": "他是外国人。",
+      "pinyin_ming": "Tā shì wàiguó rén.",
+      "traduccion_ming": "Él es extranjero.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-外国人"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p068",
+        "SRC-PPT-02-1:p055"
+      ]
+    },
+    {
+      "id": "PH-8d241fd58e679562",
+      "hanzi": "老师，上午好！",
+      "pinyin_ming": "Lǎoshī, shàngwǔ hǎo!",
+      "traduccion_ming": "¡Buenos días, profesor!",
+      "lessons": [
+        1
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-上午好"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p065",
+        "SRC-PPT-00-2:p003",
+        "SRC-HANZI-01-1:p001"
+      ]
+    },
+    {
+      "id": "PH-e180591526df0a48",
+      "hanzi": "老师，下午好！",
+      "pinyin_ming": "Lǎoshī, xiàwǔ hǎo!",
+      "traduccion_ming": "¡Buenas tardes, profesor!",
+      "lessons": [
+        1
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-下午好"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p065",
+        "SRC-PPT-00-2:p003",
+        "SRC-HANZI-01-1:p001"
+      ]
+    },
+    {
+      "id": "PH-f804505a5d3739c3",
+      "hanzi": "老师，晚上好！",
+      "pinyin_ming": "Lǎoshī, wǎnshang hǎo!",
+      "traduccion_ming": "¡Buenas noches, profesor!",
+      "lessons": [
+        1
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-晚上好"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p065",
+        "SRC-PPT-00-2:p003",
+        "SRC-HANZI-01-1:p001"
+      ]
+    },
+    {
+      "id": "PH-d91c2647b2546a8d",
+      "hanzi": "妈妈，晚安！",
+      "pinyin_ming": "Māma, wǎn’ān!",
+      "traduccion_ming": "¡Buenas noches, mamá!",
+      "lessons": [
+        1
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-晚安"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-PPT-00-2:p003",
+        "SRC-HANZI-01-1:p001"
+      ]
+    },
+    {
+      "id": "PH-4702a58e239c4c28",
+      "hanzi": "这个很贵。",
+      "pinyin_ming": "Zhè ge hěn guì.",
+      "traduccion_ming": "Esto es muy caro.",
+      "lessons": [
+        1
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-贵"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p051",
+        "SRC-BOOK-01-02:p066",
+        "SRC-PPT-01-1:p036"
+      ]
+    },
+    {
+      "id": "PH-4fc9d8955b6155d9",
+      "hanzi": "一、二、三。",
+      "pinyin_ming": "Yī, èr, sān.",
+      "traduccion_ming": "Uno, dos, tres.",
+      "lessons": [
+        1
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-二"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p051",
+        "SRC-BOOK-01-02:p066",
+        "SRC-HANZI-01-2:p001"
+      ]
+    },
+    {
+      "id": "PH-6d6b423581fdd4c7",
+      "hanzi": "一百个人。",
+      "pinyin_ming": "Yì bǎi ge rén.",
+      "traduccion_ming": "Cien personas.",
+      "lessons": [
+        1
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-百"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p051",
+        "SRC-BOOK-01-02:p066",
+        "SRC-HANZI-01-2:p002"
+      ]
+    },
+    {
+      "id": "PH-a8f9c6378a6f816b",
+      "hanzi": "一千个人。",
+      "pinyin_ming": "Yì qiān ge rén.",
+      "traduccion_ming": "Mil personas.",
+      "lessons": [
+        1
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-千"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p051",
+        "SRC-BOOK-01-02:p066",
+        "SRC-HANZI-01-2:p002"
+      ]
+    },
+    {
+      "id": "PH-a72ed254893f6fbc",
+      "hanzi": "我学习普通话。",
+      "pinyin_ming": "Wǒ xuéxí Pǔtōnghuà.",
+      "traduccion_ming": "Estudio mandarín estándar.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-普通话"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p051",
+        "SRC-BOOK-01-02:p066",
+        "SRC-PPT-02-1:p046"
+      ]
+    },
+    {
+      "id": "PH-5b76c2a59b5baa0d",
+      "hanzi": "你会说什么方言？",
+      "pinyin_ming": "Nǐ huì shuō shénme fāngyán?",
+      "traduccion_ming": "¿Qué dialecto sabes hablar?",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-方言"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p051",
+        "SRC-BOOK-01-02:p066",
+        "SRC-PPT-02-1:p046"
+      ]
+    },
+    {
+      "id": "PH-88846ca477b831c5",
+      "hanzi": "我姥姥很好。",
+      "pinyin_ming": "Wǒ lǎolao hěn hǎo.",
+      "traduccion_ming": "Mi abuela materna está bien.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-姥姥"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p051",
+        "SRC-BOOK-01-02:p066",
+        "SRC-PPT-02-1:p054"
+      ]
+    },
+    {
+      "id": "PH-9082a7d64b7e252a",
+      "hanzi": "我姥爷很好。",
+      "pinyin_ming": "Wǒ lǎoye hěn hǎo.",
+      "traduccion_ming": "Mi abuelo materno está bien.",
+      "lessons": [
+        2
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-姥爷"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "reason": "Ejemplo Míng revisado para completar una tarjeta sin ejemplo; no es texto literal ni clave oficial de la fuente.",
+      "basis_refs": [
+        "SRC-BOOK-01-02:p051",
+        "SRC-BOOK-01-02:p066",
+        "SRC-PPT-02-1:p054"
+      ]
+    }
+  ],
+  "missing_vocabulary": [],
+  "policy": {
+    "source_priority": [
+      "textbook",
+      "workbook",
+      "slides",
+      "ming_editorial"
+    ],
+    "source_fields_overwritten": false,
+    "independent_human_review": false,
+    "official_exercise_answers_created": false,
+    "existing_ids_changed": false,
+    "new_examples_authorized_by": "User request to complete cards with character, pinyin, translation and examples on 2026-11-04"
+  },
+  "findings": [
+    {
+      "id": "textbook-vocabulary-present",
+      "text": "Todas las entradas y subentradas de las seis tablas L1–2 ya están en el corpus público. No hace falta inventar ni duplicar palabras.",
+      "table_row_count": 97,
+      "unique_hanzi_count": 96
+    },
+    {
+      "id": "missing-example-links",
+      "text": "Varias tarjetas no tenían ejemplos aunque la frase ya estaba en el corpus: 们、同学、干嘛、干啥、死. Se añaden vínculos explícitos."
+    },
+    {
+      "id": "missing-source-collocations",
+      "text": "Se recuperan cinco colocaciones del libro y dos respuestas ya impresas del cuaderno; no se resuelven huecos."
+    },
+    {
+      "id": "editorial-examples",
+      "text": "Los ejemplos de países, idiomas y vocabulario de ampliación sin frase literal se identifican internamente como Míng; nunca como claves de ejercicios."
+    },
+    {
+      "id": "pinyin-typography",
+      "text": "Las PPT contienen signos breves (ă, ĭ, ŏ, ŭ), g tipográfica y un mén incorrecto en 你们. El apoyo editorial corrige la lectura sin borrar evidencia."
+    }
+  ],
+  "counts": {
+    "vocabulary_updates": 18,
+    "phrase_updates": 15,
+    "example_links": 58,
+    "new_phrases": 52,
+    "missing_vocabulary": 0,
+    "source_recovered_phrases": 7,
+    "editorial_examples": 45
+  }
+}

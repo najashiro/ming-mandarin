@@ -38,6 +38,17 @@ export type GrammarPoint = {
   pattern: string;
   explanation: string;
   examples: string[];
+  studyBlocks?: Array<{
+    id: string;
+    title: string;
+    kind: 'table' | 'examples';
+    columns?: string[];
+    rows?: string[][];
+    rowAids?: Array<{ pinyin: string; spanish: string }>;
+    examples?: Array<{ id: string; hanzi: string; pinyin: string; spanish: string }>;
+  }>;
+  continuationOf?: string;
+  clarification?: string;
   source: SourceRef;
 };
 

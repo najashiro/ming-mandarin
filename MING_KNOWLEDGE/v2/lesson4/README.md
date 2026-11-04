@@ -1,5 +1,71 @@
 # Lección 4 · cierre documental v2.2.0
 
+## Revisión de apoyos y tarjetas · 2026-11-04
+
+La revisión autorizada por el usuario añade `language-support.json`: 42 apoyos
+léxicos y 287 apoyos de frases, más 37 glosas de caracteres con su lectura
+aislada exacta. `lesson4_support.py` los aplica como campos editoriales separados.
+Esta capa editorial preserva testigos, variantes, IDs, listas del libro y lecturas
+de las hojas. Las correcciones de transcripción detectadas en la relectura de PDF
+se registran aparte, como se explica más abajo. Las traducciones ya registradas de los 27 turnos del libro también se
+resuelven en los ejemplos de las tarjetas; antes solo aparecían en Diálogos.
+
+La web pasa de 73 a **114 entradas L4** con pinyin y español completos. La
+secuencia 汉西英 sigue identificando los idiomas de una carrera dentro de su
+frase, y no se publica como palabra independiente. Los ejemplos de libro/cuaderno
+L4 se presentan primero; luego los libros de lecciones anteriores y, finalmente,
+los testigos complementarios. No se borran ejemplos por su procedencia.
+
+**326 de las 328 frases publicadas** tienen pinyin y español completos, incluidas
+las seis lecturas. Las dos restantes son plantillas incompletas con huecos o
+elipsis: se conservan documentalmente y se excluyen de ejemplos de tarjetas.
+99 de las 114 palabras tienen ejemplos fuente elegibles y completos; las otras
+15, entre ellas 上 y 下, no reciben frases inventadas. Los 54 caracteres de las hojas
+tienen una glosa para su lectura propia: 只 zhī como clasificador y 差 chā como
+diferencia se mantienen separados de las palabras contextuales 只 zhǐ y 差 chà.
+
+Las correcciones visibles de pinyin conservan el valor original y una razón
+explícita, por ejemplo `Hàizì` → `Hànzì` y `Xiàzài` → `Xiànzài`. Las glosas
+españolas o de pronunciación incrustadas en el chino se eliminan únicamente del
+campo editorial `hanzi_display`. Dos traducciones recuperadas de notas del libro
+tienen prioridad sobre el apoyo editorial, con su localizador propio.
+
+El exportador genera también `data/lesson4-audio-aliases.json`: ocho
+enlaces a grabaciones existentes para cuatro lecturas que antes no tenían pinyin
+escrito, tres ejemplos con correcciones ortográficas de pinyin y una lectura con
+tres correcciones gráficas 他→她. Esta última exige el input original exacto y
+el mismo pinyin documental; las otras exigen identidad del texto chino. Todas
+requieren disponibilidad del archivo. No se
+genera audio ni se relaja la selección de lecturas de palabras polisémicas.
+
+### Relectura visual de los PDF originales
+
+`book-review.json` registra el cotejo visual de las páginas PDF 1–13 del libro
+(impresas 113–125) y ocho vínculos de colocaciones con sus filas de vocabulario.
+La selección de `十点十分` usa el testigo completo de la página 7; conserva sin
+rellenar el testigo `十点十分____` del ejercicio de la página 1 y su ID compartido.
+Las tarjetas también recuperan la categoría gramatical impresa.
+
+`source-corrections.json` conserva seis correcciones exactas de campos: los tres
+pronombres femeninos de la lectura 陈明 (cuaderno PDF 9), el pronombre y pinyin
+de su pregunta ② (PDF 10), `xuésheng` neutro en PDF 6/7 y dos transcripciones
+literales del artículo cultural (libro PDF 24). El paquete de extracción original
+permanece congelado. `lesson4_source_corrections.py` valida los valores anteriores
+antes de aplicar la corrección, mantiene cinco IDs publicados de frases y testigos
+y recompila sus vínculos léxicos con 她/她们. No se corrige 他们 fuera de esos campos.
+
+Las tablas de consulta `lesson4_source_corrections`, `lesson4_book_review` y
+`lesson4_grammar_table_support` exponen la trazabilidad. Las regresiones están en
+`test_lesson4_pdf_reread.py`; no se han añadido claves de escucha.
+
+Consulta `query.py --table lesson4_language_support`,
+`--table lesson4_character_support` o `--word 每天 --lesson 4`.
+La validación incluye `test_lesson4_support.py`, las pruebas documentales
+anteriores y `scripts/export-lesson4-web.py --check`. Esta revisión no certifica
+revisión lingüística humana independiente ni un despliegue en producción.
+
+Los apartados siguientes documentan el cierre y las ampliaciones anteriores.
+
 La base documental de los seis PDF vigentes está extraída e integrada en la consulta global L1–L4. Esta entrega no implementa la interfaz del capítulo ni genera audios, imágenes o respuestas dependientes de grabaciones ausentes.
 
 ## Fuentes actuales

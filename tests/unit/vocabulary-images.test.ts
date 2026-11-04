@@ -3,12 +3,19 @@ import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import media from '@/data/vocabulary-media.json';
 import prompts from '@/docs/vocabulary-image-prompts.json';
+import review from '@/docs/lessons123-image-review.json';
 import corpus from '@/data/corpus-v21-public.json';
 
 describe('revisión editorial de imágenes de vocabulario', () => {
   it('publica solo la selección conservadora y mantiene el resto pendiente', () => {
-    expect(media.filter(entry => entry.status === 'approved')).toHaveLength(42);
-    expect(media.filter(entry => entry.status === 'pending_review')).toHaveLength(263);
+    for (const decision of review.entries) {
+      const asset = media.find(entry => entry.wordId === decision.wordId)!;
+      expect(asset.status).toBe(decision.status);
+      expect(asset.sha256).toBe(decision.sha256);
+      expect(asset.promptSha256).toBe(decision.promptSha256);
+    }
+    expect(media.filter(entry => entry.status === 'approved').length).toBeGreaterThan(200);
+    expect(media.some(entry => entry.status === 'pending_review')).toBe(true);
     const byHanzi = new Map(corpus.vocabulary.map(word => [word.hanzi, word.id]));
     for (const hanzi of ['猫', '饺子', '中国', '老师']) expect(media.find(entry => entry.wordId === byHanzi.get(hanzi))?.status).toBe('approved');
     expect(media.find(entry => entry.wordId === byHanzi.get('真'))?.status).toBe('pending_review');

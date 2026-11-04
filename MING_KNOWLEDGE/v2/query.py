@@ -108,8 +108,12 @@ def main() -> None:
                 word = dict(word)
                 selection = word['lesson4_selection']
                 word.update(pinyin=selection['pinyin'], spanish=selection['spanish'],
-                            pinyin_display=selection['pinyin'], spanish_display=selection['spanish'])
+                            pinyin_display=selection.get('pinyin_display') or selection['pinyin'],
+                            spanish_display=selection.get('spanish_display') or selection['spanish'])
             ids = word.get('example_phrase_ids', []) if args.examples else word['phrase_ids']
+            if args.examples and args.lesson == 4:
+                excluded = word.get('lesson4_selection', {}).get('example_phrase_exclusions', {}).get('phrase_ids', [])
+                ids = [pid for pid in ids if pid not in excluded]
             pp = {row['id']: row for row in read_table('phrases')}
             show = ids[args.offset:args.offset + args.limit]
             result = {'found': True, 'word': selected(word, None if args.full else DEFAULT_FIELDS['vocabulary']),
