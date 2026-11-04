@@ -13,6 +13,7 @@ import { StudyTools } from './games/StudyTools';
 import { MingIcon, type MingIconName } from './MingIcon';
 import { getStudyScopeLabel } from '@/lib/study-options';
 import { TimeGame } from './games/time/TimeGame';
+import { WorkbookGameLinks } from './games/workbook/WorkbookGameLinks';
 import './games/games.css';
 import './games/catalog.css';
 const gameIcons: Record<string, MingIconName> = { conversation: 'chat', hanzi: 'write' };
@@ -69,6 +70,7 @@ export function Arcade({ hanziCharacters, listeningEntries, scope, playerName, c
 
   return <div className="arcade-root" ref={rootRef}>
     <div className="arcade-catalog" hidden={Boolean(game)}>
+    <WorkbookGameLinks scope={scope}/>
     <div className="game-catalog-heading shell" tabIndex={-1}><div><p className="eyebrow">ELIGE QUÉ QUIERES PRACTICAR</p><h2>Una habilidad, un reto.</h2><p>Responde a tu ritmo, revisa la solución y vuelve a intentarlo.</p></div><span className="game-scope-note"><MingIcon name="book" width="17" height="17"/>{getStudyScopeLabel(scope)}</span></div>
     <section className="game-grid ming-games-grid shell" aria-label="Juegos disponibles">{games.map((item, index) => (scope === 'l4' && ['scene','conversation','story'].includes(item.kind)) || (item.kind === 'birthday' && !['l5','l1-l2-l3-l4-l5'].includes(scope)) ? null : <article key={item.id} data-game={item.id}>
       <span className="game-skill-label">{item.skill}</span>
