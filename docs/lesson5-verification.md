@@ -12,6 +12,8 @@ El alumno entra en la lección 5 desde Inicio o Lecciones, consulta una tarjeta,
 - 255 MP3 decodificados en Chromium: duración mínima 0.2 s y RMS mínimo 0.002. Cuatro clips sin señal suficiente se regeneraron antes de publicarlos. No se afirma revisión fonética humana de cada audio.
 - 30 WebP de 1618 × 1000 con alfa real, esquinas transparentes, hashes y revisión visual del modelo. Ocho encuadres iniciales se sustituyeron por figuras completas. No se afirma revisión humana independiente.
 
+- 18 pruebas adicionales de regresión L4 aprobadas en Chromium, móvil y WebKit/iPhone, incluidos recorridos hacia L1–L3.
+
 ## Límites de la evidencia
 
 Las pruebas visuales locales simulan la respuesta del endpoint de imágenes con el catálogo aprobado. La aplicación conserva la consulta administrativa de Supabase: ante indisponibilidad devuelve cero imágenes, para no republicar fotos ocultadas por el administrador. La publicación remota requiere comprobar ese endpoint en el despliegue real. La grabación original de los ejercicios de escucha no fue entregada; el TTS nuevo es audio de estudio, no un sustituto presentado como grabación original.

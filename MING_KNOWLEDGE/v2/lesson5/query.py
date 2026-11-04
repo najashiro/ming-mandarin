@@ -12,7 +12,7 @@ def main():
   subprocess.run([sys.executable,str(ROOT/'scripts/export-lesson5-web.py'),'--check'],check=True,stdout=sys.stderr)
   assert len(source['sources'])==4
   for row in source['vocabulary']:
-   assert row['pinyin_source'] and row['spanish_source']
+   assert row['pinyin_source'] and (row.get('spanish_source') or row.get('spanish_ming'))
    assert 1<=row['source']['pdfPage']<=source['sources']['book']['pages']
    assert row['example']['origin']=='editorial_study_example'
   print(json.dumps({'valid':True,'version':source['version'],'vocabulary':len(public['vocabulary']),'phrases':len(public['phrases']),'writing_targets':len(public['characters'])}));return

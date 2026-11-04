@@ -717,7 +717,7 @@
       "id": "v-林强",
       "hanzi": "林强",
       "pinyin_source": "Lín Qiáng",
-      "spanish_source": "Lin Qiang (hermano mayor de Lin Na)",
+      "spanish_source": null,
       "source": {
         "type": "textbook",
         "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
@@ -734,7 +734,9 @@
         "vocabIds": [
           "v-林强"
         ]
-      }
+      },
+      "spanish_ming": "Lin Qiang (hermano mayor de Lin Na)",
+      "spanish_origin": "editorial_gloss_of_contextual_label"
     },
     {
       "id": "v-欢迎",
@@ -1913,7 +1915,7 @@
       "id": "v-鼠",
       "hanzi": "鼠",
       "pinyin_source": "shǔ",
-      "spanish_source": "rata (signo del zodiaco)",
+      "spanish_source": null,
       "source": {
         "type": "textbook",
         "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
@@ -1930,13 +1932,15 @@
         "vocabIds": [
           "v-鼠"
         ]
-      }
+      },
+      "spanish_ming": "rata (signo del zodiaco)",
+      "spanish_origin": "editorial_gloss_of_contextual_label"
     },
     {
       "id": "v-虎",
       "hanzi": "虎",
       "pinyin_source": "hǔ",
-      "spanish_source": "tigre (signo del zodiaco)",
+      "spanish_source": null,
       "source": {
         "type": "textbook",
         "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
@@ -1953,13 +1957,15 @@
         "vocabIds": [
           "v-虎"
         ]
-      }
+      },
+      "spanish_ming": "tigre (signo del zodiaco)",
+      "spanish_origin": "editorial_gloss_of_contextual_label"
     },
     {
       "id": "v-兔",
       "hanzi": "兔",
       "pinyin_source": "tù",
-      "spanish_source": "conejo",
+      "spanish_source": null,
       "source": {
         "type": "textbook",
         "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
@@ -1976,13 +1982,15 @@
         "vocabIds": [
           "v-兔"
         ]
-      }
+      },
+      "spanish_ming": "conejo",
+      "spanish_origin": "editorial_gloss_of_contextual_label"
     },
     {
       "id": "v-狗",
       "hanzi": "狗",
       "pinyin_source": "gǒu",
-      "spanish_source": "perro",
+      "spanish_source": null,
       "source": {
         "type": "textbook",
         "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
@@ -1999,13 +2007,15 @@
         "vocabIds": [
           "v-狗"
         ]
-      }
+      },
+      "spanish_ming": "perro",
+      "spanish_origin": "editorial_gloss_of_contextual_label"
     },
     {
       "id": "v-猪",
       "hanzi": "猪",
       "pinyin_source": "zhū",
-      "spanish_source": "cerdo",
+      "spanish_source": null,
       "source": {
         "type": "textbook",
         "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
@@ -2022,7 +2032,9 @@
         "vocabIds": [
           "v-猪"
         ]
-      }
+      },
+      "spanish_ming": "cerdo",
+      "spanish_origin": "editorial_gloss_of_contextual_label"
     }
   ],
   "dialogues": [

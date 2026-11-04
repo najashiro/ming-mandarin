@@ -16,7 +16,7 @@ def phrase(row,kind,links=None):
  return ident
 for word in d['vocabulary']:
  role=word['role'];mode=word['visual_mode'];phrase(word['example'],'editorial_study_example')
- vocabulary.append(dict(id=word['id'],hanzi=word['hanzi'],pinyin=word['pinyin_source'],spanish=word['spanish_source'],lessons=[5],roles=[role],curriculumLinks=[dict(lesson=5,role=role,text=word['text'],list_type='new_vocabulary' if role=='core_textbook' else 'supplementary_vocabulary' if role=='supplementary_textbook' else None,entry_kind='word')],examplePhraseIds=[],visual_ming=dict(visual_mode={'text':'text_only','scene':'concept_scene','object':'concrete_object'}[mode],image_support=mode!='text',image_quiz_eligible=mode=='object',ambiguity_risk='low' if mode=='object' else 'high' if mode=='text' else 'medium')))
+ vocabulary.append(dict(id=word['id'],hanzi=word['hanzi'],pinyin=word['pinyin_source'],spanish=word.get('spanish_source') or word.get('spanish_ming',''),lessons=[5],roles=[role],curriculumLinks=[dict(lesson=5,role=role,text=word['text'],list_type='new_vocabulary' if role=='core_textbook' else 'supplementary_vocabulary' if role=='supplementary_textbook' else None,entry_kind='word')],examplePhraseIds=[],visual_ming=dict(visual_mode={'text':'text_only','scene':'concept_scene','object':'concrete_object'}[mode],image_support=mode!='text',image_quiz_eligible=mode=='object',ambiguity_risk='low' if mode=='object' else 'high' if mode=='text' else 'medium')))
  vocab_sources[word['id']]=word['source']
 speaker_pinyin={'王小云':'Wáng Xiǎoyún','林娜':'Lín Nà','林强':'Lín Qiáng','宋华':'Sòng Huá','大家':'Dàjiā'}
 dialogues=[]
