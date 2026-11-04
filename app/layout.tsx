@@ -27,7 +27,7 @@ export const viewport: Viewport = { width: 'device-width', initialScale: 1, view
 
 export const metadata: Metadata = {
   metadataBase: new URL(canonicalOrigin()),
-  title: { default: 'Míng · Mandarín activo L1–L4', template: '%s · Míng' },
+  title: { default: 'Míng · Mandarín activo L1–L5', template: '%s · Míng' },
   description: 'Aprende mandarín a tu ritmo. Cuatro lecciones con vocabulario, audio, diálogos, escritura Hanzi y juegos para practicar cada día.',
   applicationName: 'Míng · Mandarín activo',
   manifest: '/manifest.webmanifest',

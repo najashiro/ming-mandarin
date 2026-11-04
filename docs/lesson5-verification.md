@@ -4,7 +4,7 @@ El alumno entra en la lección 5 desde Inicio o Lecciones, consulta una tarjeta,
 
 ## Evidencia local
 
-- 322 pruebas unitarias aprobadas, incluidas seis pruebas integrales L5: autoridad del libro, cobertura de módulos, enlaces léxicos, resolución Hanzi de todos los glifos, audio, imágenes, conversación y exámenes.
+- 325 pruebas unitarias aprobadas, incluidas seis pruebas integrales L5: autoridad del libro, cobertura de módulos, enlaces léxicos, resolución Hanzi de todos los glifos, audio, imágenes, conversación y exámenes.
 - 164 pruebas documentales históricas aprobadas; las exportaciones 2.1 y 2.2 siguen siendo reproducibles.
 - Proyección L5 reproducible y validada mediante `query.py --lesson 5 --validate`.
 - ESLint y TypeScript aprobados; compilación de producción aprobada.
@@ -16,6 +16,6 @@ El alumno entra en la lección 5 desde Inicio o Lecciones, consulta una tarjeta,
 
 ## Límites de la evidencia
 
-Las pruebas visuales locales simulan la respuesta del endpoint de imágenes con el catálogo aprobado. La aplicación conserva la consulta administrativa de Supabase: ante indisponibilidad devuelve cero imágenes, para no republicar fotos ocultadas por el administrador. La publicación remota requiere comprobar ese endpoint en el despliegue real. La grabación original de los ejercicios de escucha no fue entregada; el TTS nuevo es audio de estudio, no un sustituto presentado como grabación original.
+Las pruebas visuales locales simulan la respuesta del endpoint de imágenes con el catálogo aprobado. Producción y cualquier vista previa configurada con Supabase conservan la consulta administrativa: ante indisponibilidad devuelven cero imágenes, para no republicar fotos ocultadas por el administrador. La vista previa aislada de Vercel, sin URL ni credenciales de Supabase, muestra la selección estática aprobada; no tiene persistencia administrativa ni acceso a la base de producción. Este comportamiento tiene pruebas de aislamiento y de cierre ante fallos. La grabación original de los ejercicios de escucha no fue entregada; el TTS nuevo es audio de estudio, no un sustituto presentado como grabación original.
 
 No se modificaron esquema, RLS ni datos personales. La clave API permanece local y no es necesaria para servir los recursos generados.

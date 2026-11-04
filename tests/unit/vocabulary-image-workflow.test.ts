@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { createHash } from 'node:crypto';
 import { vocabularyMedia, imageForWord } from '@/lib/vocabulary-media';
 import { effectiveImageStatus, type ImageReviewRow } from '@/lib/vocabulary-image-review';
@@ -29,6 +29,7 @@ beforeEach(() => {
   });
 });
 const input = (action: string, revision=0) => ({wordId:image.wordId,action,assetSha256:image.sha256,revision});
+afterEach(() => vi.unstubAllEnvs());
 
 describe('image decisions persist and reach the public cards', () => {
   it('stores short corrections without replacing the base or accumulating old corrections', async () => {
@@ -87,5 +88,26 @@ describe('image decisions persist and reach the public cards', () => {
     expect(await publishedVocabularyMedia()).toEqual([]);
     expect((await listVocabularyImageReviews()).storageReady).toBe(false);
     await expect(updateVocabularyImageReview('reviewer',input('approve'))).rejects.toMatchObject({status:503});
+  });
+  it('an isolated preview displays committed approved media without database access', async () => {
+    vi.stubEnv('VERCEL_ENV', 'preview');
+    for (const name of ['SUPABASE_URL', 'NEXT_PUBLIC_SUPABASE_URL', 'SUPABASE_SECRET_KEY', 'SUPABASE_SERVICE_ROLE_KEY']) vi.stubEnv(name, '');
+    offline = true;
+    const published = await publishedVocabularyMedia();
+    expect(published.some(entry => entry.wordId === 'v-蛋糕')).toBe(true);
+    expect(published.every(entry => entry.status === 'approved')).toBe(true);
+    expect(rest).not.toHaveBeenCalled();
+  });
+  it('a configured preview fails closed when its review database is unavailable', async () => {
+    vi.stubEnv('VERCEL_ENV', 'preview');
+    vi.stubEnv('SUPABASE_URL', 'https://example.supabase.co');
+    offline = true;
+    expect(await publishedVocabularyMedia()).toEqual([]);
+  });
+  it('production without credentials still fails closed', async () => {
+    vi.stubEnv('VERCEL_ENV', 'production');
+    for (const name of ['SUPABASE_URL', 'NEXT_PUBLIC_SUPABASE_URL', 'SUPABASE_SECRET_KEY', 'SUPABASE_SERVICE_ROLE_KEY']) vi.stubEnv(name, '');
+    offline = true;
+    expect(await publishedVocabularyMedia()).toEqual([]);
   });
 });

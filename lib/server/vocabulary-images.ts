@@ -33,6 +33,12 @@ async function reviewRows() {
 }
 
 export async function publishedVocabularyMedia(): Promise<VocabularyMediaEntry[]> {
+  // Isolated Vercel previews have no review database or administrative writes.
+  // Show the committed selection there without granting production DB access.
+  const isolatedPreview = process.env.VERCEL_ENV === 'preview'
+    && !process.env.SUPABASE_URL && !process.env.NEXT_PUBLIC_SUPABASE_URL
+    && !process.env.SUPABASE_SECRET_KEY && !process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (isolatedPreview) return resolvePublishedImages(vocabularyMedia, []);
   const { rows, storageReady } = await reviewRows();
   // A storage outage must not republish a photo an administrator hid.
   return storageReady ? resolvePublishedImages(vocabularyMedia, rows) : [];
