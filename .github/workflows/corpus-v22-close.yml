@@ -7,6 +7,8 @@ on:
     paths:
       - 'MING_KNOWLEDGE/**'
       - 'scripts/export-corpus-v2*.py'
+      - 'scripts/export-lessons123-web.py'
+      - 'data/lessons123-public.json'
       - '.github/workflows/corpus-v22-close.yml'
 
 permissions:
@@ -49,6 +51,7 @@ jobs:
         run: |
           python3 scripts/export-corpus-v21.py --check
           python3 scripts/export-corpus-v22.py --check
+          python3 scripts/export-lessons123-web.py --check
           python3 scripts/export-corpus-v22.py --out closure-artifact/corpus-v22-public.json
       - uses: actions/upload-artifact@v4
         if: always()

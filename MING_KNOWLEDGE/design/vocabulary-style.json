@@ -130,5 +130,15 @@
     "minimum_text_contrast_ratio": 4.5,
     "text_zoom_percent": 200,
     "reduced_motion": true
+  },
+  "pedagogical_annotations": {
+    "authorized_on": "2026-11-04",
+    "arrows": true,
+    "pinyin_labels": true,
+    "brief_explanatory_labels": true,
+    "native_diagrams_for_abstract_meanings": true,
+    "answer_revealing_images_in_quizzes": false,
+    "accessible_card_text_required": true,
+    "overrides_previous_no_text_policy_for_teaching_annotations": true
   }
 }

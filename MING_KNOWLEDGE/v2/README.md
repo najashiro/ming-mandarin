@@ -1,3 +1,9 @@
+## Revisión L1–L3 · 4 de noviembre de 2026
+
+La revisión activa se conserva en `lessons123/lesson12-review.json` y `lessons123/lesson3-review.json`. `lessons123_support.py` la integra en la consulta global sin reescribir los testigos ni los lotes históricos v2.1. La selección de lecturas, traducciones y ejemplos prioriza libro/cuaderno, después presentaciones y finalmente apoyo editorial claramente identificado.
+
+`query.py --word 饭 --examples` incluye los vínculos recuperados. Las tablas `lessons123_language_support`, `lessons123_example_links`, `lessons123_new_phrases` y `lessons123_review_summary` permiten auditar el lote. La web usa `data/lessons123-public.json`, generado por `python3 scripts/export-lessons123-web.py`; verificar con `--check`. El snapshot `data/corpus-v21-public.json` conserva los controles históricos.
+
 # Corpus Míng activo · v2.2.0 · L1–L4
 
 **Lección 4 integrada y cierre documental completado.** Empieza con `source-v22.json`, `RELEASE_2_2_0.md` y `lesson4/README.md`. La consulta global es `query.py`; `compile_v22.py` compila aditivamente la base anterior y L4. `query_v21.py` y los lotes editoriales históricos mantienen su alcance L1–L3. La proyección nueva se genera mediante `python3 scripts/export-corpus-v22.py`; la aplicación no cambia de import por esta actualización documental.

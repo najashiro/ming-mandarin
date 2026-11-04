@@ -1,12 +1,13 @@
 import baseline from '@/data/corpus-v21-public.json';
+import reviewed from '@/data/lessons123-public.json';
 import lesson4 from '@/data/lesson4-public.json';
 import lesson5 from '@/data/lesson5-public.json';
 
 type Word = (typeof baseline.vocabulary)[number];
 type Phrase = (typeof baseline.phrases)[number];
 type Radical = Omit<(typeof baseline.radicals)[number], 'strokeCount'> & { strokeCount: number | null };
-const vocabulary: Word[] = baseline.vocabulary.map(word => ({ ...word }));
-const phrases: Phrase[] = baseline.phrases.map(phrase => ({ ...phrase }));
+const vocabulary: Word[] = reviewed.vocabulary.map(word => ({ ...word }));
+const phrases: Phrase[] = reviewed.phrases.map(phrase => ({ ...phrase }));
 const radicals: Radical[] = baseline.radicals.map(radical => ({ ...radical, examples: [...radical.examples], lessons: [...radical.lessons] }));
 for (const [lessonNumber, extension] of [[4, lesson4], [5, lesson5]] as const) {
   for (const incoming of extension.vocabulary) {
@@ -38,8 +39,8 @@ for (const [lessonNumber, extension] of [[4, lesson4], [5, lesson5]] as const) {
   }
 }
 const corpus = {
-  ...baseline, version: lesson5.version, fingerprint: lesson5.fingerprint,
-  vocabulary, phrases, dialogues: [...baseline.dialogues, ...lesson4.dialogues, ...lesson5.dialogues], radicals,
+  ...reviewed, version: reviewed.version, fingerprint: reviewed.fingerprint,
+  vocabulary, phrases, dialogues: [...reviewed.dialogues, ...lesson4.dialogues, ...lesson5.dialogues], radicals,
 };
 export default corpus;
 export { lesson4, lesson5 };

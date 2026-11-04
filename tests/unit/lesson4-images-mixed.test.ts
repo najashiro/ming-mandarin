@@ -8,6 +8,7 @@ import { vocabularyMedia } from '@/lib/vocabulary-media';
 import { resolvePublishedImages } from '@/lib/vocabulary-image-review';
 import { retoMixtoForScope } from '@/data/reto-mixto-lesson4';
 import { buildRetoMixtoDeck, retryQuestion } from '@/lib/reto-mixto';
+import { getVocabularySet } from '@/lib/vocabulary';
 const approved = resolvePublishedImages(vocabularyMedia, []);
 const hash = (value: string | Buffer) => createHash('sha256').update(value).digest('hex');
 
@@ -45,11 +46,21 @@ describe('L4 reviewed images and mixed practice', () => {
     }
   });
   it('uses every approved vocabulary picture in its scope as quiz or feedback support', () => {
-    const entries=retoMixtoForScope('l1-l2-l3-l4-l5', approved);
-    for(const picture of approved) {
+    const scope='l1-l2-l3-l4-l5';
+    const entries=retoMixtoForScope(scope, approved);
+    const eligibleIds=new Set(getVocabularySet(scope).map(word=>word.id));
+    for(const picture of approved.filter(picture=>eligibleIds.has(picture.wordId))) {
       const entry=entries.find(entry=>entry.vocabularyId===picture.wordId);
       expect(entry, picture.wordId).toBeDefined();
       expect(entry!.supportImageSrc).toBe(picture.src);
+    }
+    // An illustration can support a preview card without promoting it into
+    // the current curriculum. Its approval must not change study scope.
+    expect(approved.some(picture=>picture.wordId==='v-贵')).toBe(true);
+    expect(eligibleIds.has('v-贵')).toBe(false);
+    for(const picture of approved.filter(picture=>!eligibleIds.has(picture.wordId))) {
+      expect(entries.some(entry=>entry.vocabularyId===picture.wordId), picture.wordId).toBe(false);
+      expect(entries.some(entry=>entry.supportImageSrc===picture.src), picture.wordId).toBe(false);
     }
   });
   it('does not revive pending, hidden, stale or unavailable approvals as legacy game art', () => {

@@ -27,16 +27,18 @@ export function VocabularyExample({ word, route }: { word: ActiveWord; scope: Cu
   </div>;
 }
 
-export function VocabularyCard({ word, scope, route, back, favorite = false, hideTranslation, media, onFlip, onFavorite, showFavorite = true }: {
+export function VocabularyCard({ word, scope, route, back, favorite = false, hideTranslation, media, onFlip, onFavorite, showFavorite = true, imagePriority = false }: {
   word: ActiveWord; scope: CurriculumScope; route: string; back: boolean;
-  favorite?: boolean; hideTranslation: boolean; media: readonly VocabularyMediaEntry[]; onFlip: () => void; onFavorite?: () => void; showFavorite?: boolean;
+  favorite?: boolean; hideTranslation: boolean; media: readonly VocabularyMediaEntry[]; onFlip: () => void; onFavorite?: () => void; showFavorite?: boolean; imagePriority?: boolean;
 }) {
   const hasExamples = examplesForWord(word).length > 0;
   const showBack = back && hasExamples;
   const image = imageForWord(word.id, media);
-  const [failedSrc, setFailedSrc] = useState('');
-  const showPhoto = !showBack && image?.src && failedSrc !== image.src;
-  const photo = showPhoto && <VocabularyPhoto src={image.src!} alt={image.alt} transparent={'presentation' in image && image.presentation === 'transparent-cutout'} onError={() => setFailedSrc(image.src)}/>;
+  // Retry only when a fresh publication check supplies the approved image again.
+  // A transient network failure must not hide that word's photo for the whole visit.
+  const [failedImage, setFailedImage] = useState<VocabularyMediaEntry | null>(null);
+  const showPhoto = !showBack && image?.src && failedImage !== image;
+  const photo = showPhoto && <VocabularyPhoto src={image.src!} alt={image.alt} transparent={'presentation' in image && image.presentation === 'transparent-cutout'} priority={imagePriority} onError={() => setFailedImage(image)}/>;
   return <article className={`vocabulary-card${showBack ? ' is-reversed' : showPhoto ? ' has-image' : ''}`}
     id={`word-${word.id}`} tabIndex={-1} aria-label={`Ficha de ${word.hanzi}`}>
     {photo && (hasExamples

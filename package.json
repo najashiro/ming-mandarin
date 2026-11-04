@@ -22,6 +22,8 @@
     "audio:verify:signal": "node scripts/verify-pronunciation-audio.mjs --signal-only",
     "images:vocabulary:prepare": "node scripts/prepare-vocabulary-image-batch.mjs",
     "images:vocabulary:publish": "node scripts/publish-vocabulary-images.mjs",
+    "images:vocabulary:resize": "node scripts/prepare-vocabulary-image-sizes.mjs",
+    "images:vocabulary:resize:check": "node scripts/prepare-vocabulary-image-sizes.mjs --check",
     "hanzi:sync": "node scripts/sync-hanzi-data.mjs",
     "audit:pinyin": "node scripts/audit-pinyin.mjs",
     "audit:reto-mixto": "vitest run tests/unit/reto-mixto.test.ts",
@@ -35,7 +37,9 @@
     "corpus:l5:check": "python3 scripts/export-lesson5-web.py --check",
     "audio:l5:prepare": "node scripts/prepare-lesson5-audio.mjs",
     "audio:l5": "node scripts/generate-pronunciation-audio.mjs --scope=lesson5",
-    "audio:l5:verify": "node scripts/verify-lesson5-audio.mjs --publish"
+    "audio:l5:verify": "node scripts/verify-lesson5-audio.mjs --publish",
+    "corpus:l123": "python3 scripts/export-lessons123-web.py",
+    "corpus:l123:check": "python3 scripts/export-lessons123-web.py --check"
   },
   "dependencies": {
     "hanzi-writer": "3.7.3",

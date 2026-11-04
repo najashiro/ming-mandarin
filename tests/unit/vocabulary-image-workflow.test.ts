@@ -32,6 +32,26 @@ const input = (action: string, revision=0) => ({wordId:image.wordId,action,asset
 afterEach(() => vi.unstubAllEnvs());
 
 describe('image decisions persist and reach the public cards', () => {
+  it('loads only publication decisions, without downloading administrative prompts', async () => {
+    const hidden = vocabularyMedia.find(entry => entry.status === 'approved')!;
+    rest.mockResolvedValueOnce([{ word_id: hidden.wordId, status: 'no_image', asset_sha256: hidden.sha256, prompt_sha256: hidden.promptSha256 }]);
+    const published = await publishedVocabularyMedia();
+    expect(published.some(entry => entry.wordId === hidden.wordId)).toBe(false);
+    expect(rest).toHaveBeenCalledWith('vocabulary_image_reviews?select=word_id,status,asset_sha256,prompt_sha256&limit=1000', { signal: expect.any(AbortSignal) });
+  });
+  it('bounds an unavailable review request without publishing unverified images', async () => {
+    const controller = new AbortController();
+    const timeout = vi.spyOn(AbortSignal, 'timeout').mockReturnValue(controller.signal);
+    rest.mockImplementationOnce((_path: string, { signal }: { signal: AbortSignal }) => new Promise((_resolve, reject) => {
+      signal.addEventListener('abort', () => reject(signal.reason), { once: true });
+    }));
+    try {
+      const pending = publishedVocabularyMedia();
+      expect(timeout).toHaveBeenCalledWith(3000);
+      controller.abort();
+      expect(await pending).toEqual([]);
+    } finally { timeout.mockRestore(); }
+  });
   it('stores short corrections without replacing the base or accumulating old corrections', async () => {
     const original = (await listVocabularyImageReviews()).entries.find(e=>e.wordId===image.wordId)!;
     const first = await updateVocabularyImageReview('reviewer',{...input('save_correction'),correction:'Que entre.'});
@@ -51,6 +71,8 @@ describe('image decisions persist and reach the public cards', () => {
     }
   });
   it('approves a pending static entry and remains visible after reload', async () => {
+    rows.push({ word_id: image.wordId, status: 'pending_review', prompt: '', asset_sha256: image.sha256, prompt_sha256: image.promptSha256, revision: 0, reviewed_at: null });
+    rows[0].prompt = (await listVocabularyImageReviews()).entries.find(entry => entry.wordId === image.wordId)!.defaultPrompt;
     expect(imageForWord(image.wordId,await publishedVocabularyMedia())).toBeUndefined();
     await updateVocabularyImageReview('reviewer',input('approve'));
     expect(imageForWord(image.wordId,await publishedVocabularyMedia())?.status).toBe('approved');
