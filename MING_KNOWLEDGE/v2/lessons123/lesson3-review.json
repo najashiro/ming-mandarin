@@ -1,0 +1,1324 @@
+{
+  "schema_version": 1,
+  "batch_id": "ming-l123-review-20261104-l3",
+  "lessons": [
+    3
+  ],
+  "method": "Visual rereading of all 24 textbook pages and all 9 workbook pages; complete native-text review of both presentations plus visual checks on the pages used. Textbook/workbook have priority; new editorial examples are separate from source transcription. Model review, not independent human validation. Both Hanzi worksheets (7 pages total) were visually reviewed; isolated character readings do not override contextual textbook pronunciations.",
+  "reviewed_sources": [
+    {
+      "source_id": "SRC-BOOK-03",
+      "relative_path": "../referencias/Libro Basico 1 - Lección 3 - Nimen jia you jĩ kou rén.pdf",
+      "pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "visually_reviewed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "sha256": "b2390005d8aed833b4bb96d9c62facf27c733839477b4479150ca30c292562b2"
+    },
+    {
+      "source_id": "SRC-WB-03",
+      "relative_path": "../referencias/Libro de Ejecicios Basico 1 - Lección 3 - Nimen jiã you jĩ kou rén.pdf",
+      "pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "visually_reviewed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sha256": "18ee930333a30cf7bd33491d0b171e13c23ea9079b1b8640248bf79852d12606"
+    },
+    {
+      "source_id": "SRC-PPT-03-1",
+      "relative_path": "../referencias/3.1 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你家有几口人？.pdf.pdf",
+      "pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "visually_reviewed_pages": [
+        7,
+        8,
+        24,
+        26,
+        44,
+        46
+      ],
+      "sha256": "c46ad81b5bbe80769405f7079154380e4a63dc39038055194888efce33e38397"
+    },
+    {
+      "source_id": "SRC-PPT-03-2",
+      "relative_path": "../referencias/3.2 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你们家有几口人？.pdf",
+      "pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "visually_reviewed_pages": [
+        6,
+        8,
+        18,
+        20,
+        21,
+        22
+      ],
+      "sha256": "a1ee0a372bd60efaa80c6080d20ed19fcf50a667473ae1feb2f8d71c50fc5b92"
+    },
+    {
+      "source_id": "SRC-HANZI-03-1",
+      "relative_path": "../referencias/Hanzi Leccion 3.1 - Ciclo 2 - Agosto a Setiembre 2026 Instituto Confucio.pdf",
+      "pages_reviewed": [
+        1,
+        2,
+        3
+      ],
+      "visually_reviewed_pages": [
+        1,
+        2,
+        3
+      ],
+      "sha256": "38370a8c9916ad13ef2327b1ab66d17a7ef72e1d18165e69ced4c75e921e8bc7"
+    },
+    {
+      "source_id": "SRC-HANZI-03-2",
+      "relative_path": "../referencias/Hanzi Leccion 3.2 - Ciclo 2 - Agosto a Setiembre 2026 Instituto Confucio.pdf",
+      "pages_reviewed": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "visually_reviewed_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sha256": "77a270c0a69fa2be3af66da0bbfceeb4d44d83afc7eab99077e7e06ed7411ae3"
+    }
+  ],
+  "vocabulary_updates": [
+    {
+      "id": "v-奶奶",
+      "hanzi": "奶奶",
+      "source_refs": [
+        "SRC-BOOK-03:p023",
+        "SRC-BOOK-03:p024"
+      ],
+      "reason": "La lectura impresa del libro prevalece sobre la breve incorrecta năinai del PPT; se conserva la variante histórica.",
+      "pinyin_source": "nǎinai",
+      "spanish_source": "abuela paterna"
+    },
+    {
+      "id": "v-爷爷",
+      "hanzi": "爷爷",
+      "source_refs": [
+        "SRC-BOOK-03:p023",
+        "SRC-BOOK-03:p024"
+      ],
+      "reason": "Recuperación de testigo primario cultural ya enseñado como ampliación en el PPT; no cambia su categoría a palabra nueva.",
+      "pinyin_source": "yéye",
+      "spanish_source": "abuelo paterno"
+    },
+    {
+      "id": "v-外公",
+      "hanzi": "外公",
+      "source_refs": [
+        "SRC-BOOK-03:p023",
+        "SRC-BOOK-03:p024"
+      ],
+      "reason": "Recuperación de testigo primario cultural, sin convertir todo el árbol familiar en vocabulario nuevo.",
+      "pinyin_source": "wàigōng",
+      "spanish_source": "abuelo materno"
+    },
+    {
+      "id": "v-外婆",
+      "hanzi": "外婆",
+      "source_refs": [
+        "SRC-BOOK-03:p023",
+        "SRC-BOOK-03:p024"
+      ],
+      "reason": "Recuperación de testigo primario cultural frente a selección exclusiva del PPT.",
+      "pinyin_source": "wàipó",
+      "spanish_source": "abuela materna"
+    },
+    {
+      "id": "v-啊",
+      "hanzi": "啊",
+      "source_refs": [
+        "SRC-BOOK-03:p007"
+      ],
+      "reason": "La glosa actual omitía adjetivo y oración; recuperación de la definición completa impresa.",
+      "spanish_source": "partícula modal utilizada detrás de un verbo, adjetivo u oración como signo de confirmación"
+    },
+    {
+      "id": "v-小狗",
+      "hanzi": "小狗",
+      "source_refs": [
+        "SRC-BOOK-03:p003",
+        "SRC-PPT-03-1:p024"
+      ],
+      "reason": "Normalización editorial de separación léxica y de ɡ a g; la lectura contextual se comprueba en el diálogo del libro.",
+      "pinyin_ming": "xiǎogǒu"
+    },
+    {
+      "id": "v-后年",
+      "hanzi": "后年",
+      "source_refs": [
+        "SRC-PPT-03-2:p006"
+      ],
+      "reason": "Corrección editorial del pinyin truncado hòuniá que también aparece así en el PPT; no se atribuye hòunián al documento.",
+      "pinyin_ming": "hòunián"
+    },
+    {
+      "id": "v-作业",
+      "hanzi": "作业",
+      "source_refs": [
+        "SRC-PPT-03-1:p026"
+      ],
+      "reason": "Normalización editorial de la palabra bisílaba para mostrarla como una unidad.",
+      "pinyin_ming": "zuòyè"
+    },
+    {
+      "id": "v-昨天",
+      "hanzi": "昨天",
+      "source_refs": [
+        "SRC-PPT-03-2:p018"
+      ],
+      "reason": "Normalización editorial de la palabra bisílaba; el recurso visual confirma ayer (-1).",
+      "pinyin_ming": "zuótiān"
+    },
+    {
+      "id": "v-明天",
+      "hanzi": "明天",
+      "source_refs": [
+        "SRC-PPT-03-2:p018"
+      ],
+      "reason": "Normalización editorial de la palabra bisílaba; el recurso visual confirma mañana (+1).",
+      "pinyin_ming": "míngtiān"
+    },
+    {
+      "id": "v-弹",
+      "hanzi": "弹",
+      "source_refs": [
+        "SRC-BOOK-03:p020",
+        "SRC-PPT-03-2:p020"
+      ],
+      "reason": "El libro usa tocar; se corrige la glosa poco natural tocar al piano del PPT sin alterar el sentido.",
+      "traduccion_ming": "tocar un instrumento, como el piano"
+    },
+    {
+      "id": "v-弹钢琴",
+      "hanzi": "弹钢琴",
+      "source_refs": [
+        "SRC-BOOK-03:p020",
+        "SRC-PPT-03-2:p020"
+      ],
+      "reason": "Corrección editorial de la expresión española tocar al piano a tocar el piano.",
+      "traduccion_ming": "tocar el piano"
+    },
+    {
+      "id": "v-玛丽",
+      "hanzi": "玛丽",
+      "source_refs": [
+        "SRC-WB-03:p005"
+      ],
+      "reason": "Recuperación de Mǎlì, impreso encima del nombre en la oración del ejercicio de traducción.",
+      "pinyin_source": "Mǎlì"
+    }
+  ],
+  "phrase_updates": [
+    {
+      "id": "PH-078b70bbe3299e48",
+      "hanzi": "你会弹钢琴吗？",
+      "pinyin_ming": "Nǐ huì tán gāngqín ma?",
+      "source_refs": [
+        "SRC-PPT-03-2:p020"
+      ],
+      "reason": "Normalización editorial de ɡ y de la palabra 钢琴, manteniendo los tonos."
+    },
+    {
+      "id": "PH-157dc39cc03ae3dc",
+      "hanzi": "我去上英语课。",
+      "pinyin_ming": "Wǒ qù shàng Yīngyǔ kè.",
+      "source_refs": [
+        "SRC-PPT-03-2:p021"
+      ],
+      "reason": "Corrección editorial de caracteres de acentuación no válidos en Wŏ qὺ; conserva el texto chino y su significado."
+    }
+  ],
+  "example_links": [
+    {
+      "vocab_id": "v-没",
+      "phrase_id": "PH-9386c684d023433b",
+      "relation": "reviewed_negative_prefix_in_compound",
+      "source_refs": [
+        "SRC-BOOK-03:p004"
+      ],
+      "reason": "El libro presenta 没 como subentrada de 没有 y el ejemplo 没有朋友 en la misma fila; se explicita la composición sin modificar la tokenización histórica."
+    },
+    {
+      "vocab_id": "v-天",
+      "phrase_id": "PH-5448481f38a4f908",
+      "relation": "reviewed_source_example",
+      "source_refs": [
+        "SRC-BOOK-03:p006"
+      ]
+    },
+    {
+      "vocab_id": "v-天",
+      "phrase_id": "PH-b6373ae3b14e5bf6",
+      "relation": "reviewed_source_example",
+      "source_refs": [
+        "SRC-BOOK-03:p006"
+      ]
+    },
+    {
+      "vocab_id": "v-晚",
+      "phrase_id": "PH-2fb9deb212d64a80",
+      "relation": "reviewed_source_example",
+      "source_refs": [
+        "SRC-BOOK-03:p007"
+      ]
+    },
+    {
+      "vocab_id": "v-晚",
+      "phrase_id": "PH-927ace8a5f97886b",
+      "relation": "reviewed_source_example",
+      "source_refs": [
+        "SRC-BOOK-03:p007"
+      ]
+    },
+    {
+      "vocab_id": "v-先生",
+      "phrase_id": "PH-eaea508f80facc94",
+      "relation": "reviewed_source_example",
+      "source_refs": [
+        "SRC-BOOK-03:p016"
+      ]
+    },
+    {
+      "vocab_id": "v-先生",
+      "phrase_id": "PH-199a7561f0b46467",
+      "relation": "reviewed_source_example",
+      "source_refs": [
+        "SRC-BOOK-03:p016"
+      ]
+    },
+    {
+      "vocab_id": "v-橙汁",
+      "phrase_id": "PH-0d291160baa0d231",
+      "relation": "reviewed_source_example",
+      "source_refs": [
+        "SRC-BOOK-03:p016"
+      ]
+    },
+    {
+      "vocab_id": "v-可乐",
+      "phrase_id": "PH-acb0a3cc62ccc013",
+      "relation": "reviewed_source_example",
+      "source_refs": [
+        "SRC-BOOK-03:p016"
+      ]
+    },
+    {
+      "vocab_id": "v-豆浆",
+      "phrase_id": "PH-5af88c4f4c9d4df9",
+      "relation": "reviewed_source_example",
+      "source_refs": [
+        "SRC-BOOK-03:p016"
+      ]
+    },
+    {
+      "vocab_id": "v-女儿",
+      "phrase_id": "PH-d8d3a982019f08c6",
+      "relation": "reviewed_source_example",
+      "source_refs": [
+        "SRC-BOOK-03:p006"
+      ]
+    },
+    {
+      "vocab_id": "v-女",
+      "phrase_id": "PH-d8d3a982019f08c6",
+      "relation": "reviewed_subentry_in_compound",
+      "source_refs": [
+        "SRC-BOOK-03:p006"
+      ],
+      "reason": "女 se presenta como subentrada de 女儿 en la misma tabla. Vínculo pedagógico explícito, no tokenización por substring."
+    },
+    {
+      "vocab_id": "v-车牌号",
+      "phrase_id": "PH-05b148ae076fa02f",
+      "relation": "reviewed_source_example",
+      "source_refs": [
+        "SRC-WB-03:p009"
+      ]
+    },
+    {
+      "vocab_id": "v-多少",
+      "phrase_id": "PH-05b148ae076fa02f",
+      "relation": "reviewed_source_example",
+      "source_refs": [
+        "SRC-WB-03:p009"
+      ]
+    },
+    {
+      "vocab_id": "v-年龄",
+      "phrase_id": "PH-1ab209e23c046dba",
+      "relation": "reviewed_source_example",
+      "source_refs": [
+        "SRC-PPT-03-2:p008"
+      ]
+    },
+    {
+      "vocab_id": "v-服务员",
+      "phrase_id": "PH-776b39e36d56602b",
+      "relation": "ming_editorial_example",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-商人",
+      "phrase_id": "PH-3a61b1f150c7b8d1",
+      "relation": "ming_editorial_example",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-作业",
+      "phrase_id": "PH-619499e47a2bcaae",
+      "relation": "ming_editorial_example",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-爷爷",
+      "phrase_id": "PH-d74234e6deaba8fb",
+      "relation": "ming_editorial_example",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-外公",
+      "phrase_id": "PH-bbdf7a2330da6bcc",
+      "relation": "ming_editorial_example",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-工人",
+      "phrase_id": "PH-33fb1c79e0a26795",
+      "relation": "ming_editorial_example",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-工作日",
+      "phrase_id": "PH-c2df957706ffa3d5",
+      "relation": "ming_editorial_example",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-前年",
+      "phrase_id": "PH-61fd195087206d27",
+      "relation": "ming_editorial_example",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-去年",
+      "phrase_id": "PH-ddf6013ec462708d",
+      "relation": "ming_editorial_example",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-明年",
+      "phrase_id": "PH-5883c8a78527a11b",
+      "relation": "ming_editorial_example",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-后年",
+      "phrase_id": "PH-9c359f5d28ddffa0",
+      "relation": "ming_editorial_example",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-昨天",
+      "phrase_id": "PH-ad0d989621d3a106",
+      "relation": "ming_editorial_example",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-中午",
+      "phrase_id": "PH-6214219b6908e863",
+      "relation": "ming_editorial_example",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-找",
+      "phrase_id": "PH-a30f26860189ad7c",
+      "relation": "ming_editorial_example",
+      "source_refs": []
+    },
+    {
+      "vocab_id": "v-电影",
+      "phrase_id": "PH-c6cbb442724ed2ca",
+      "relation": "reviewed_verb_object_composition",
+      "source_refs": [
+        "SRC-PPT-03-1:p046"
+      ],
+      "reason": "电影 es el objeto explícito dentro de 看电影 en el texto de presentación; se conserva el vocab_id original de 看电影."
+    },
+    {
+      "vocab_id": "v-玛丽",
+      "phrase_id": "PH-b7b02dc9617cc338",
+      "relation": "reviewed_complete_exercise_premise",
+      "source_refs": [
+        "SRC-WB-03:p005"
+      ],
+      "reason": "La oración está completa e impresa para traducir. Se utiliza como ejemplo lingüístico, sin suministrar una respuesta de escucha ni una clave docente."
+    },
+    {
+      "vocab_id": "v-作业",
+      "phrase_id": "PH-361194e51b9c68e7",
+      "relation": "reviewed_source_example",
+      "source_refs": [
+        "SRC-PPT-01-1:p003"
+      ],
+      "reason": "Frase completa impresa en la presentación L1, cotejada en la revisión L1–L2; se recupera su vínculo explícito antes de recurrir al ejemplo editorial."
+    },
+    {
+      "vocab_id": "v-作业",
+      "phrase_id": "PH-085aaea27e1ad654",
+      "relation": "reviewed_source_example",
+      "source_refs": [
+        "SRC-PPT-01-1:p003"
+      ],
+      "reason": "Frase completa impresa en la presentación L1, cotejada en la revisión L1–L2; se recupera su vínculo explícito antes de recurrir al ejemplo editorial."
+    }
+  ],
+  "new_phrases": [
+    {
+      "id": "PH-9386c684d023433b",
+      "hanzi": "没有朋友",
+      "pinyin_ming": "Méiyǒu péngyou",
+      "traduccion_ming": "No tener amigos",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "collocation"
+      ],
+      "vocab_ids": [
+        "v-没有",
+        "v-朋友"
+      ],
+      "source_refs": [
+        "SRC-BOOK-03:p004"
+      ],
+      "origin": "source_transcription"
+    },
+    {
+      "id": "PH-5448481f38a4f908",
+      "hanzi": "一天",
+      "pinyin_ming": "Yì tiān",
+      "traduccion_ming": "Un día",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "collocation"
+      ],
+      "vocab_ids": [
+        "v-一",
+        "v-天"
+      ],
+      "source_refs": [
+        "SRC-BOOK-03:p006"
+      ],
+      "origin": "source_transcription"
+    },
+    {
+      "id": "PH-b6373ae3b14e5bf6",
+      "hanzi": "两天",
+      "pinyin_ming": "Liǎng tiān",
+      "traduccion_ming": "Dos días",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "collocation"
+      ],
+      "vocab_ids": [
+        "v-两",
+        "v-天"
+      ],
+      "source_refs": [
+        "SRC-BOOK-03:p006"
+      ],
+      "origin": "source_transcription"
+    },
+    {
+      "id": "PH-2fb9deb212d64a80",
+      "hanzi": "很晚",
+      "pinyin_ming": "Hěn wǎn",
+      "traduccion_ming": "Muy tarde",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "collocation"
+      ],
+      "vocab_ids": [
+        "v-很",
+        "v-晚"
+      ],
+      "source_refs": [
+        "SRC-BOOK-03:p007"
+      ],
+      "origin": "source_transcription"
+    },
+    {
+      "id": "PH-927ace8a5f97886b",
+      "hanzi": "不晚",
+      "pinyin_ming": "Bù wǎn",
+      "traduccion_ming": "No es tarde",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "collocation"
+      ],
+      "vocab_ids": [
+        "v-不",
+        "v-晚"
+      ],
+      "source_refs": [
+        "SRC-BOOK-03:p007"
+      ],
+      "origin": "source_transcription"
+    },
+    {
+      "id": "PH-eaea508f80facc94",
+      "hanzi": "王先生",
+      "pinyin_ming": "Wáng xiānsheng",
+      "traduccion_ming": "El señor Wang",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "collocation"
+      ],
+      "vocab_ids": [
+        "v-王",
+        "v-先生"
+      ],
+      "source_refs": [
+        "SRC-BOOK-03:p016"
+      ],
+      "origin": "source_transcription"
+    },
+    {
+      "id": "PH-199a7561f0b46467",
+      "hanzi": "陆雨平先生",
+      "pinyin_ming": "Lù Yǔpíng xiānsheng",
+      "traduccion_ming": "El señor Lu Yuping",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "collocation"
+      ],
+      "vocab_ids": [
+        "v-陆雨平",
+        "v-先生"
+      ],
+      "source_refs": [
+        "SRC-BOOK-03:p016"
+      ],
+      "origin": "source_transcription"
+    },
+    {
+      "id": "PH-0d291160baa0d231",
+      "hanzi": "喜欢橙汁",
+      "pinyin_ming": "Xǐhuan chéngzhī",
+      "traduccion_ming": "Gustar del jugo de naranja",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "collocation"
+      ],
+      "vocab_ids": [
+        "v-喜欢",
+        "v-橙汁"
+      ],
+      "source_refs": [
+        "SRC-BOOK-03:p016"
+      ],
+      "origin": "source_transcription"
+    },
+    {
+      "id": "PH-acb0a3cc62ccc013",
+      "hanzi": "不喝可乐",
+      "pinyin_ming": "Bù hē kělè",
+      "traduccion_ming": "No beber refresco de cola",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "collocation"
+      ],
+      "vocab_ids": [
+        "v-不",
+        "v-喝",
+        "v-可乐"
+      ],
+      "source_refs": [
+        "SRC-BOOK-03:p016"
+      ],
+      "origin": "source_transcription"
+    },
+    {
+      "id": "PH-5af88c4f4c9d4df9",
+      "hanzi": "喜欢喝豆浆",
+      "pinyin_ming": "Xǐhuan hē dòujiāng",
+      "traduccion_ming": "Gustar de beber leche de soja",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "collocation"
+      ],
+      "vocab_ids": [
+        "v-喜欢",
+        "v-喝",
+        "v-豆浆"
+      ],
+      "source_refs": [
+        "SRC-BOOK-03:p016"
+      ],
+      "origin": "source_transcription"
+    },
+    {
+      "id": "PH-d8d3a982019f08c6",
+      "hanzi": "女儿很漂亮",
+      "pinyin_ming": "Nǚ’ér hěn piàoliang",
+      "traduccion_ming": "La hija es muy bonita",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "collocation"
+      ],
+      "vocab_ids": [
+        "v-女儿",
+        "v-很",
+        "v-漂亮"
+      ],
+      "source_refs": [
+        "SRC-BOOK-03:p006"
+      ],
+      "origin": "source_transcription"
+    },
+    {
+      "id": "PH-05b148ae076fa02f",
+      "hanzi": "这个车牌号是多少？",
+      "pinyin_ming": "Zhège chēpáihào shì duōshao?",
+      "traduccion_ming": "¿Cuál es el número de esta placa de matrícula?",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-这",
+        "v-个",
+        "v-车牌号",
+        "v-是",
+        "v-多少"
+      ],
+      "source_refs": [
+        "SRC-WB-03:p009"
+      ],
+      "origin": "source_transcription"
+    },
+    {
+      "id": "PH-1ab209e23c046dba",
+      "hanzi": "问年龄",
+      "pinyin_ming": "Wèn niánlíng",
+      "traduccion_ming": "Preguntar la edad",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "collocation"
+      ],
+      "vocab_ids": [
+        "v-问",
+        "v-年龄"
+      ],
+      "source_refs": [
+        "SRC-PPT-03-2:p008"
+      ],
+      "origin": "source_transcription"
+    },
+    {
+      "id": "PH-776b39e36d56602b",
+      "hanzi": "我是服务员。",
+      "pinyin_ming": "Wǒ shì fúwùyuán.",
+      "traduccion_ming": "Soy camarero.",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-我",
+        "v-是",
+        "v-服务员"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "basis_refs": [
+        "SRC-BOOK-03:p015",
+        "SRC-BOOK-03:p017"
+      ],
+      "note": "Ejemplo compuesto por Míng para practicar vocabulario documentado; no es una cita ni clave de ejercicio."
+    },
+    {
+      "id": "PH-3a61b1f150c7b8d1",
+      "hanzi": "我爸爸是商人。",
+      "pinyin_ming": "Wǒ bàba shì shāngrén.",
+      "traduccion_ming": "Mi papá es comerciante.",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-我",
+        "v-爸爸",
+        "v-是",
+        "v-商人"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "basis_refs": [
+        "SRC-BOOK-03:p016",
+        "SRC-BOOK-03:p002"
+      ],
+      "note": "Ejemplo compuesto por Míng para practicar vocabulario documentado; no es una cita ni clave de ejercicio."
+    },
+    {
+      "id": "PH-619499e47a2bcaae",
+      "hanzi": "我有作业。",
+      "pinyin_ming": "Wǒ yǒu zuòyè.",
+      "traduccion_ming": "Tengo tarea.",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-我",
+        "v-有",
+        "v-作业"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "basis_refs": [
+        "SRC-PPT-03-1:p026",
+        "SRC-BOOK-03:p008"
+      ],
+      "note": "Ejemplo compuesto por Míng para practicar vocabulario documentado; no es una cita ni clave de ejercicio."
+    },
+    {
+      "id": "PH-d74234e6deaba8fb",
+      "hanzi": "这是我爷爷。",
+      "pinyin_ming": "Zhè shì wǒ yéye.",
+      "traduccion_ming": "Este es mi abuelo paterno.",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-这",
+        "v-是",
+        "v-我",
+        "v-爷爷"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "basis_refs": [
+        "SRC-BOOK-03:p023",
+        "SRC-BOOK-03:p024",
+        "SRC-BOOK-03:p002"
+      ],
+      "note": "Ejemplo compuesto por Míng para practicar vocabulario documentado; no es una cita ni clave de ejercicio."
+    },
+    {
+      "id": "PH-bbdf7a2330da6bcc",
+      "hanzi": "这是我外公。",
+      "pinyin_ming": "Zhè shì wǒ wàigōng.",
+      "traduccion_ming": "Este es mi abuelo materno.",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-这",
+        "v-是",
+        "v-我",
+        "v-外公"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "basis_refs": [
+        "SRC-BOOK-03:p023",
+        "SRC-BOOK-03:p024",
+        "SRC-BOOK-03:p002"
+      ],
+      "note": "Ejemplo compuesto por Míng para practicar vocabulario documentado; no es una cita ni clave de ejercicio."
+    },
+    {
+      "id": "PH-33fb1c79e0a26795",
+      "hanzi": "他是工人。",
+      "pinyin_ming": "Tā shì gōngrén.",
+      "traduccion_ming": "Él es obrero.",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-他",
+        "v-是",
+        "v-工人"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "basis_refs": [
+        "SRC-PPT-03-1:p026",
+        "SRC-BOOK-03:p017"
+      ],
+      "note": "Ejemplo compuesto por Míng para practicar vocabulario documentado; no es una cita ni clave de ejercicio."
+    },
+    {
+      "id": "PH-c2df957706ffa3d5",
+      "hanzi": "今天是工作日。",
+      "pinyin_ming": "Jīntiān shì gōngzuòrì.",
+      "traduccion_ming": "Hoy es un día laborable.",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-今天",
+        "v-是",
+        "v-工作日"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "basis_refs": [
+        "SRC-PPT-03-1:p026",
+        "SRC-PPT-03-2:p018"
+      ],
+      "note": "Ejemplo compuesto por Míng para practicar vocabulario documentado; no es una cita ni clave de ejercicio."
+    },
+    {
+      "id": "PH-61fd195087206d27",
+      "hanzi": "前年我在中国。",
+      "pinyin_ming": "Qiánnián wǒ zài Zhōngguó.",
+      "traduccion_ming": "El año antepasado estaba en China.",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-前年",
+        "v-我",
+        "v-在",
+        "v-中国"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "basis_refs": [
+        "SRC-PPT-03-2:p006",
+        "SRC-PPT-03-1:p005"
+      ],
+      "note": "Ejemplo compuesto por Míng para practicar vocabulario documentado; no es una cita ni clave de ejercicio."
+    },
+    {
+      "id": "PH-ddf6013ec462708d",
+      "hanzi": "去年我在中国。",
+      "pinyin_ming": "Qùnián wǒ zài Zhōngguó.",
+      "traduccion_ming": "El año pasado estaba en China.",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-去年",
+        "v-我",
+        "v-在",
+        "v-中国"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "basis_refs": [
+        "SRC-PPT-03-2:p006",
+        "SRC-PPT-03-1:p005"
+      ],
+      "note": "Ejemplo compuesto por Míng para practicar vocabulario documentado; no es una cita ni clave de ejercicio."
+    },
+    {
+      "id": "PH-5883c8a78527a11b",
+      "hanzi": "明年我去中国。",
+      "pinyin_ming": "Míngnián wǒ qù Zhōngguó.",
+      "traduccion_ming": "El año que viene iré a China.",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-明年",
+        "v-我",
+        "v-去",
+        "v-中国"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "basis_refs": [
+        "SRC-PPT-03-2:p006",
+        "SRC-PPT-03-1:p043"
+      ],
+      "note": "Ejemplo compuesto por Míng para practicar vocabulario documentado; no es una cita ni clave de ejercicio."
+    },
+    {
+      "id": "PH-9c359f5d28ddffa0",
+      "hanzi": "后年我去中国。",
+      "pinyin_ming": "Hòunián wǒ qù Zhōngguó.",
+      "traduccion_ming": "Dentro de dos años iré a China.",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-后年",
+        "v-我",
+        "v-去",
+        "v-中国"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "basis_refs": [
+        "SRC-PPT-03-2:p006",
+        "SRC-PPT-03-1:p043"
+      ],
+      "note": "Ejemplo compuesto por Míng para practicar vocabulario documentado; no es una cita ni clave de ejercicio."
+    },
+    {
+      "id": "PH-ad0d989621d3a106",
+      "hanzi": "昨天我有汉语课。",
+      "pinyin_ming": "Zuótiān wǒ yǒu Hànyǔ kè.",
+      "traduccion_ming": "Ayer tuve clase de chino.",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-昨天",
+        "v-我",
+        "v-有",
+        "v-汉语课"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "basis_refs": [
+        "SRC-PPT-03-2:p018",
+        "SRC-PPT-03-2:p024"
+      ],
+      "note": "Ejemplo compuesto por Míng para practicar vocabulario documentado; no es una cita ni clave de ejercicio."
+    },
+    {
+      "id": "PH-6214219b6908e863",
+      "hanzi": "中午我喝茶。",
+      "pinyin_ming": "Zhōngwǔ wǒ hē chá.",
+      "traduccion_ming": "Al mediodía tomo té.",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-中午",
+        "v-我",
+        "v-喝",
+        "v-茶"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "basis_refs": [
+        "SRC-PPT-03-2:p022",
+        "SRC-BOOK-03:p005"
+      ],
+      "note": "Ejemplo compuesto por Míng para practicar vocabulario documentado; no es una cita ni clave de ejercicio."
+    },
+    {
+      "id": "PH-a30f26860189ad7c",
+      "hanzi": "我找老师。",
+      "pinyin_ming": "Wǒ zhǎo lǎoshī.",
+      "traduccion_ming": "Busco al profesor.",
+      "lessons": [
+        3
+      ],
+      "kinds": [
+        "example"
+      ],
+      "vocab_ids": [
+        "v-我",
+        "v-找",
+        "v-老师"
+      ],
+      "source_refs": [],
+      "origin": "ming_editorial_example",
+      "basis_refs": [
+        "SRC-PPT-03-1:p044"
+      ],
+      "note": "Ejemplo compuesto por Míng para practicar vocabulario documentado; no es una cita ni clave de ejercicio."
+    }
+  ],
+  "missing_vocabulary": [],
+  "findings": [
+    {
+      "id": "L3-BOOK-TABLES-COMPLETE",
+      "status": "verified",
+      "detail": "Las 44 filas de vocabulario nuevo y 18 filas suplementarias de las tablas L3 ya tienen IDs en la exportación; no faltan cabezas léxicas de esas tablas. La pérdida principal estaba en colocaciones y vínculos de ejemplos.",
+      "source_refs": [
+        "SRC-BOOK-03:p003",
+        "SRC-BOOK-03:p004",
+        "SRC-BOOK-03:p006",
+        "SRC-BOOK-03:p007",
+        "SRC-BOOK-03:p015",
+        "SRC-BOOK-03:p016"
+      ]
+    },
+    {
+      "id": "L3-EXAMPLE-GAPS",
+      "status": "repaired_in_overlay",
+      "before": 27,
+      "detail": "27 entradas asociadas a L3 carecían de ejemplo enlazado. Se recuperan colocaciones/preguntas impresas, dos relaciones auditadas con frases existentes y composiciones editoriales separadas.",
+      "source_refs": []
+    },
+    {
+      "id": "L3-NO-NULL-PUBLIC-PHRASES",
+      "status": "verified",
+      "detail": "Las frases públicas históricas asociadas a L3 ya tenían pinyin y español; la ausencia percibida se debía a palabras sin enlaces y no a null en esa colección. Se corrigen además dos pinyin mal formados.",
+      "source_refs": []
+    },
+    {
+      "id": "L3-PPT-TYPO",
+      "status": "corrected_editorially",
+      "detail": "后年 hòuniá está truncado en el propio PPT p6; la forma hòunián se registra como corrección editorial, no transcripción documental.",
+      "source_refs": [
+        "SRC-PPT-03-2:p006"
+      ]
+    },
+    {
+      "id": "L3-PRIMARY-CULTURAL-WITNESSES",
+      "status": "recovered",
+      "detail": "爷爷、奶奶、外公、外婆 también están en el libro pp23-24; la selección ya no depende exclusivamente de la PPT y no convierte todos los términos culturales en nuevas tarjetas.",
+      "source_refs": [
+        "SRC-BOOK-03:p023",
+        "SRC-BOOK-03:p024"
+      ]
+    },
+    {
+      "id": "L3-EXERCISE-BOUNDARIES",
+      "status": "preserved",
+      "detail": "No se rellenan huecos ni se infieren claves de escucha, respuestas manuscritas o respuestas de imágenes. La pregunta de matrícula del cuaderno se recupera sin el dato de la matrícula.",
+      "source_refs": [
+        "SRC-WB-03:p001",
+        "SRC-WB-03:p002",
+        "SRC-WB-03:p003",
+        "SRC-WB-03:p004",
+        "SRC-WB-03:p005",
+        "SRC-WB-03:p006",
+        "SRC-WB-03:p007",
+        "SRC-WB-03:p008",
+        "SRC-WB-03:p009"
+      ]
+    },
+    {
+      "id": "L3-WORKSHEET-READINGS",
+      "status": "verified_context_preserved",
+      "detail": "La hoja 3.2 escribe 漂 piāo y 子 zǐ de forma aislada; esas lecturas no sustituyen 漂亮 piàoliang ni 孩子 háizi del libro. La hoja 3.1 shéi/shuí de 谁 tampoco reemplaza la lectura contextual seleccionada del libro. Se conservan inventarios y repeticiones de trazos sin alterar el currículo.",
+      "source_refs": [
+        "SRC-HANZI-03-1:p002",
+        "SRC-HANZI-03-2:p001",
+        "SRC-HANZI-03-2:p002",
+        "SRC-HANZI-03-2:p003",
+        "SRC-BOOK-03:p004",
+        "SRC-BOOK-03:p006",
+        "SRC-BOOK-03:p007"
+      ]
+    }
+  ]
+}

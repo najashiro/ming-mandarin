@@ -9,6 +9,7 @@ import base64, collections, copy, csv, hashlib, json, lzma, re, shutil, unicoded
 from pathlib import Path
 import query_v21 as baseline
 import lesson4_examples
+import lessons123_support
 ROOT = Path(__file__).resolve().parent
 CACHE = ROOT / '.cache-v22'
 L4 = ROOT / 'lesson4'
@@ -119,6 +120,7 @@ def build(force=False):
                     L4/'visual-classification.json', L4/'lexical-links.json',
                     ROOT/'lesson4_examples.py', L4/'example-support.json',
                     L4/'textbook-vocabulary.tsv', L4/'worksheet-rows.tsv', L4/'dialogue-turns.tsv']
+    dependencies += lessons123_support.dependency_paths()
     fingerprint = hashlib.sha256()
     fingerprint.update((baseline.CACHE/'fingerprint.txt').read_bytes())
     for p in dependencies:
@@ -613,6 +615,7 @@ def build(force=False):
         ready_for_chapter4=not errors,global_query_integrated=True,
         documentary_limits=load(L4/'documentary-audit.json')['exclusions'],
         website_validated=False,paid_api_calls=0,independent_human_review=False)
+    lessons123_support.apply(tables)
     for name,value in tables.items():write(CACHE/f'{name}.json',value)
     if errors:raise ValueError('v2.2 validation failed: '+'; '.join(errors[:10]))
     marker.write_text(signature,encoding='utf-8')

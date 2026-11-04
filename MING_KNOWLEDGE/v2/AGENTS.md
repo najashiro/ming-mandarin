@@ -37,3 +37,9 @@ Los apartados históricos siguientes se conservan como referencia; la versión y
 - Ejecuta `query.py --validate`, regenera la proyección, ejecuta `translations_ming.py --check`, `pinyin_ming.py --check`, `visual_ming.py --check` y `python3 -m unittest discover -s MING_KNOWLEDGE/v2 -p 'test_*.py'`.
 - Solo consulta PDF si una verificación visual/literal o discrepancia no se resuelve con los testigos.
 - v1 es legado: no mezcles sus IDs de frase/conteos con v2 ni borres su trazabilidad.
+
+## Revisión activa L1–L3 · 2026-11-04
+
+El usuario pidió releer PDF, completar tarjetas y mejorar imágenes ambiguas. La revisión y ejemplos están en `MING_KNOWLEDGE/v2/lessons123/` (ruta desde la raíz). La consulta global incorpora `lessons123_support.py`; la web usa la proyección reproducible `data/lessons123-public.json`, exportada por `scripts/export-lessons123-web.py`. Mantener el snapshot v2.1 y sus auditorías. Verificar la nueva exportación con `--check`, tests `test_lessons123_support.py` y `tests/unit/lessons123.test.ts`.
+
+Se autorizaron flechas, pinyin y etiquetas didácticas dentro de imágenes ambiguas. La excepción está en el estándar visual. Los diagramas y fotos anotadas tienen `imageQuizEligible:false`: pueden acompañar tarjetas pero no revelar la respuesta en un quiz visual. Conservar retiros administrativos y hashes de cada recurso. Los generadores y catálogos `lessons123-*` son editoriales; no atribuir sus ilustraciones al libro ni afirmar revisión humana independiente.

@@ -12,7 +12,14 @@ const normalizeMandarin = (value: string) => value.normalize('NFC').replace(/[^\
 const clipsByText = new Map<string, string>();
 const lesson4ByText = new Map<string, string>();
 const clipsByReading = new Map<string, string>();
-const readingKey = (text: string, pinyin: string) => `${normalizeMandarin(text)}:${pinyin.normalize('NFC').toLowerCase().replace(/[\s'’ʼ.,!?]/g, '')}`;
+// Older PDF transcriptions used breve for third tone, IPA ɡ for Latin g,
+// and Greek ὺ for ù. These are spelling repairs, not pronunciation aliases:
+// preserve every tone, neutral syllable, vowel and final consonant.
+const normalizeRecordedPinyin = (value: string) => value.normalize('NFC').toLowerCase()
+  .replace(/ɡ/g, 'g').replace(/ὺ/g, 'ù')
+  .normalize('NFD').replace(/([aeiou])\u0306/g, '$1\u030c').normalize('NFC')
+  .replace(/[\s'’ʼ.,!?]/g, '');
+const readingKey = (text: string, pinyin: string) => `${normalizeMandarin(text)}:${normalizeRecordedPinyin(pinyin)}`;
 const availableFiles = new Set(availableMandarin.files);
 
 for (const clip of pronunciation.clips) {

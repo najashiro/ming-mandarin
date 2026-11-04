@@ -1,0 +1,44 @@
+{
+  "entries": [
+    {
+      "wordId": "v-到",
+      "prompt": "Diagrama pedagógico Míng de 到 (dào): La flecha termina en el destino; contrasta el punto inicial y la llegada. Flechas y etiquetas legibles, fondo transparente; no utilizar como quiz de imagen porque incluye la respuesta."
+    },
+    {
+      "wordId": "v-哪",
+      "prompt": "Diagrama pedagógico Míng de 哪 (nǎ): Tres alternativas y un signo de pregunta que señala una elección. Flechas y etiquetas legibles, fondo transparente; no utilizar como quiz de imagen porque incluye la respuesta."
+    },
+    {
+      "wordId": "v-都",
+      "prompt": "Diagrama pedagógico Míng de 都 (dōu): Todos los miembros de un conjunto están incluidos: tres de tres, marcados. Flechas y etiquetas legibles, fondo transparente; no utilizar como quiz de imagen porque incluye la respuesta."
+    },
+    {
+      "wordId": "v-一点儿",
+      "prompt": "Diagrama pedagógico Míng de 一点儿 (yì diǎnr): Barra de cantidad con una pequeña parte resaltada; el resto queda vacío. Flechas y etiquetas legibles, fondo transparente; no utilizar como quiz de imagen porque incluye la respuesta."
+    },
+    {
+      "wordId": "v-刚到",
+      "prompt": "Diagrama pedagógico Míng de 刚到 (gāng dào): Secuencia de trayecto y llegada en el momento actual; señal explícita de ahora. Flechas y etiquetas legibles, fondo transparente; no utilizar como quiz de imagen porque incluye la respuesta."
+    },
+    {
+      "wordId": "v-汉语",
+      "prompt": "Diagrama pedagógico Míng de 汉语 (Hànyǔ): Bocadillo con un saludo chino y su pinyin; no usar una bandera para representar un idioma. Flechas y etiquetas legibles, fondo transparente; no utilizar como quiz de imagen porque incluye la respuesta."
+    },
+    {
+      "wordId": "v-约翰",
+      "prompt": "Diagrama pedagógico Míng de 约翰 (Yuēhàn): Nombre del perro del diálogo, representado por un dibujo simbólico con etiqueta John; no es un retrato documental. Flechas y etiquetas legibles, fondo transparente; no utilizar como quiz de imagen porque incluye la respuesta."
+    },
+    {
+      "wordId": "v-有名",
+      "prompt": "Diagrama pedagógico Míng de 有名 (yǒumíng): Muchas personas conocen la misma referencia: atención compartida hacia una estrella, sin monumento no verificado. Flechas y etiquetas legibles, fondo transparente; no utilizar como quiz de imagen porque incluye la respuesta."
+    },
+    {
+      "wordId": "v-系",
+      "prompt": "Diagrama pedagógico Míng de 系 (xì): Árbol universidad → tres departamentos, con el departamento central resaltado. Flechas y etiquetas legibles, fondo transparente; no utilizar como quiz de imagen porque incluye la respuesta."
+    },
+    {
+      "wordId": "v-孔子学院",
+      "prompt": "Diagrama pedagógico Míng de 孔子学院 (Kǒngzǐ Xuéyuàn): Institución de enseñanza de chino como edificio genérico y bocadillo 汉语; sin logotipo inventado ni atribución de sede. Flechas y etiquetas legibles, fondo transparente; no utilizar como quiz de imagen porque incluye la respuesta."
+    }
+  ]
+}

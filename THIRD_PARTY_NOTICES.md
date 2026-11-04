@@ -31,3 +31,7 @@ compact subset derived from **cnchar-order 3.2.6**.
 - Project: https://github.com/theajack/cnchar
 - License: MIT
 - Stroke names and Hanyu Pinyin are normalized against Unicode's CJK Strokes catalog.
+
+## Banderas de los apoyos de lecciones 1–3
+
+Los vectores de banderas proceden de [country-flags](https://github.com/hampusborgos/country-flags), commit `c09927e63705529bbf59ca6684cd9b23225dddad`. El proyecto declara los diseños de banderas de dominio público. Se conservan proporciones originales, archivo de atribución y copias locales en `public/images/vocabulary/lessons123-geography/`. Las referencias gubernamentales utilizadas en el cotejo y los hashes están en `docs/lessons123-geography-sources.json`. Las etiquetas y composiciones didácticas adicionales son de Míng.

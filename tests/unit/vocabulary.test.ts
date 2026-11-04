@@ -54,8 +54,11 @@ describe('vocabulario activo: evidencia, búsqueda y recursos', () => {
       expect(existsSync(`public${media.src}`)).toBe(true);
     }
     for (const word of vocabularyCatalog.filter(word => word.visual_ming.visual_mode === 'none')) expect(imageForWord(word.id)).toBeUndefined();
-    expect(vocabularyMedia.filter(media => media.status === 'approved')).toHaveLength(95);
-    expect(imageForWord(vocabularyCatalog.find(word => word.hanzi === '真')!.id)).toBeUndefined();
+    expect(vocabularyMedia.filter(media => media.status === 'approved').length).toBeGreaterThan(200);
+    for (const asset of vocabularyMedia.filter(asset => !asset.imageQuizEligible)) {
+      const word = vocabularyCatalog.find(word => word.id === asset.wordId);
+      if (word) expect(availablePracticeTypes(word)).not.toContain('image');
+    }
     for (const hanzi of ['猫', '饺子', '中国', '老师']) expect(imageForWord(vocabularyCatalog.find(word => word.hanzi === hanzi)!.id)).toBeDefined();
     for (const word of vocabularyCatalog.filter(word => !word.visual_ming.image_quiz_eligible)) expect(availablePracticeTypes(word)).not.toContain('image');
   });

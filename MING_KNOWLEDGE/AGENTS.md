@@ -41,3 +41,9 @@ La cobertura de código es una instantánea, no una comprobación de producción
 Al actualizar el corpus, regenera con `python scripts/export-corpus-v21.py` y comprueba `python MING_KNOWLEDGE/v2/audit_source_tables.py --check`, `python MING_KNOWLEDGE/v2/translations_ming.py --check`, `python MING_KNOWLEDGE/v2/pinyin_ming.py --check` y `python MING_KNOWLEDGE/v2/visual_ming.py --check`; nunca edites a mano la exportación pública. No envíes referencias de PDF/página a las tarjetas del alumno. Este repositorio es público: interno no significa privado ni autoriza almacenar secretos.
 
 Conserva v1 como legado. Sigue además `v2/AGENTS.md` y las reglas de la raíz.
+
+## Revisión activa L1–L3 · 2026-11-04
+
+El usuario pidió releer PDF, completar tarjetas y mejorar imágenes ambiguas. La revisión y ejemplos están en `MING_KNOWLEDGE/v2/lessons123/` (ruta desde la raíz). La consulta global incorpora `lessons123_support.py`; la web usa la proyección reproducible `data/lessons123-public.json`, exportada por `scripts/export-lessons123-web.py`. Mantener el snapshot v2.1 y sus auditorías. Verificar la nueva exportación con `--check`, tests `test_lessons123_support.py` y `tests/unit/lessons123.test.ts`.
+
+Se autorizaron flechas, pinyin y etiquetas didácticas dentro de imágenes ambiguas. La excepción está en el estándar visual. Los diagramas y fotos anotadas tienen `imageQuizEligible:false`: pueden acompañar tarjetas pero no revelar la respuesta en un quiz visual. Conservar retiros administrativos y hashes de cada recurso. Los generadores y catálogos `lessons123-*` son editoriales; no atribuir sus ilustraciones al libro ni afirmar revisión humana independiente.
