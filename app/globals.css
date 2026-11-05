@@ -49,6 +49,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offset: 3px; }
 .shell { width: min(1180px, calc(100% - 40px)); margin-inline: auto; }
 .hanzi-combobox { position: relative; max-width: 620px; margin: 18px 0; }
+.hanzi-summary-panel { padding: 18px 24px; background: linear-gradient(135deg,rgba(255,255,255,.84),rgba(224,236,229,.7)); }
 .hanzi-search-panel .hanzi-combobox { margin: 0; }
 .hanzi-combobox > label { display:block; margin-bottom:6px; font-size:12px; font-weight:750; color:var(--muted); }
 .hanzi-combobox > div:first-of-type { display:flex; }
@@ -370,7 +371,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 @media(max-width:650px){.page-hero{padding-top:45px}.page-hero h1{font-size:42px}.site-footer{display:block}.site-footer nav{margin-top:20px}.lesson-modules,.vocab-grid,.lab-grid,.grammar-grid,.clip-grid,.dialogue-text,.error-list{grid-template-columns:1fr}.lab-grid .wide{grid-column:auto}.game-grid{grid-template-columns:1fr 1fr}.listen-options{grid-template-columns:1fr 1fr}.phonetic-cards,.character-table>div{grid-template-columns:1fr}.tone-table{grid-template-columns:1fr}.section-heading{align-items:start;flex-direction:column}.sandhi-flow{grid-template-columns:1fr}.sandhi-flow>b{transform:rotate(90deg);justify-self:center}.option-grid{grid-template-columns:1fr}.toolbar{align-items:stretch;flex-direction:column}.toolbar label input{width:100%}.metric-grid,.audit-summary{grid-template-columns:1fr 1fr}.score-grid{grid-template-columns:1fr 1fr}.ranking-head,.ranking article{grid-template-columns:45px 1fr 65px 50px;padding-inline:8px;font-size:11px}.character-list>div{grid-template-columns:repeat(6,1fr)}.how-section>div{grid-template-columns:1fr}.practice-card{padding:22px}.self-rating{flex-direction:column}}
 
 /* Reusable Hanzi laboratory */
-.hanzi-workspace { width: min(1180px, calc(100% - 40px)); margin: 38px auto 0; }
+.hanzi-workspace { overflow-anchor: none; width: min(1180px, calc(100% - 40px)); margin: 38px auto 0; }
 .hanzi-lesson-toolbar { margin-top: 13px; display: flex; align-items: end; }
 .hanzi-lesson-toolbar select { width: min(100%,320px); min-height: 46px; padding: 9px 38px 9px 12px; border: 1px solid var(--line); border-radius: 10px; color: var(--ink); background: rgba(255,255,255,.9); font: 600 14px system-ui; cursor: pointer; }
 .hanzi-lesson-toolbar select:focus-visible { outline: 3px solid rgba(29,106,89,.25); outline-offset: 2px; border-color: var(--jade); }
@@ -409,7 +410,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .hanzi-picker-grid button.selected em { color: #d7eee7; }
 .hanzi-filter-empty { margin-top: 15px; padding: 18px; display: block !important; border: 1px dashed var(--line); border-radius: 8px; text-align: center; }
 .hanzi-filter-empty p { color: var(--muted); }
-.hanzi-character-hero { margin-top: 13px; padding: 24px; display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 25px; background: linear-gradient(135deg,rgba(255,255,255,.84),rgba(224,236,229,.7)); }
+.hanzi-character-hero { margin-top: 14px; padding: 0; display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 20px; }
 .hanzi-glyph { width: 112px; height: 112px; display: grid; place-items: center; border: 1px solid rgba(162,58,44,.22); border-radius: 6px 22px 6px 22px; color: var(--ink); background: #fffdf7; font: 600 77px var(--font-hanzi), "Songti SC", "SimSun", serif; }
 .hanzi-character-copy { min-width: 0; }
 .hanzi-character-copy h2 { margin: 0; color: var(--jade); font: italic 700 27px Georgia,serif; }
@@ -561,9 +562,9 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
   .stage-filter-mobile select { width: 100%; min-height: 44px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: white; }
   .state-filter { display: grid; grid-template-columns: repeat(2,1fr); }
   .hanzi-dimension-summary, .hanzi-stage-summary { grid-template-columns: 1fr 1fr; }
-  .hanzi-workspace { width: min(100% - 28px,620px); margin-top: 25px; }
+  .hanzi-workspace { overflow-anchor: none; width: min(100% - 28px,620px); margin-top: 25px; }
   .hanzi-character-picker, .hanzi-tab-panel { padding: 20px 15px; }
-  .hanzi-character-hero { padding: 12px 15px; }
+  .hanzi-summary-panel { padding: 14px 15px; }
   .hanzi-character-picker > div:last-child { grid-template-columns: repeat(5,1fr); }
   .hanzi-picker-grid { grid-template-columns: repeat(5,1fr); }
   .hanzi-character-picker button { min-height: 54px; }

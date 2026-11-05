@@ -49,7 +49,7 @@ type Props = {
   scope?: CurriculumScope;
 };
 
-export function HanziLab({ characters, canonicalHanzi = characters.map((item) => item.hanzi), stages, manifest, initialProgress = {}, initialCharacter = '好', initialTab = 'Aprender', focusGlyph = false, route = '/lesson/1/hanzi', tracking='course', scope='l1' }: Props) {
+export function HanziLab({ characters, canonicalHanzi = characters.map((item) => item.hanzi), manifest, initialProgress = {}, initialCharacter = '好', initialTab = 'Aprender', focusGlyph = false, route = '/lesson/1/hanzi', tracking='course', scope='l1' }: Props) {
   const [characterScope, setCharacterScope] = useState<CurriculumScope>(() => scope.split('-').at(-1) as CurriculumScope);
   const firstCharacter = characters.find((item) => item.hanzi === initialCharacter) ?? characters[0];
   const [selectedId, setSelectedId] = useState(firstCharacter.id);
@@ -59,6 +59,7 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
   const [searchOpen, setSearchOpen] = useState(false);
   const [activeOption, setActiveOption] = useState(-1);
   const [focusRequest, setFocusRequest] = useState(focusGlyph ? 1 : 0);
+  const [suppressFocus, setSuppressFocus] = useState(false);
   const [loaded, setLoaded] = useState<{ character: string; data?: HanziCharacterData; error?: string } | null>(null);
   const [, setProgress] = useState<HanziProgressMap>(initialProgress);
   const [, setLocalProgress] = useState<LocalHanziProgressMap>({});
@@ -89,10 +90,6 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
   }, [characters,query]);
   const character = characters.find((item) => item.id === selectedId) ?? characters[0];
   const technical = manifest[character.hanzi];
-  const activeUnit = character.introducedIn;
-  const selectedStage = stages.find((stage) => stage.id === activeUnit);
-  const selectedStageName = selectedStage?.shortTitle.trim();
-  const stageLabel = tracking==='supplementary'?'Contenido suplementario':`${activeUnit}${selectedStageName ? ` · ${selectedStageName}` : ''}`;
   const data = loaded?.character === character.hanzi ? loaded.data ?? null : null;
   const loadError = loaded?.character === character.hanzi ? loaded.error ?? '' : '';
   useEffect(() => {
@@ -109,6 +106,7 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
     setSelectedId(id);
     setSaveMessage('');
     if (focus) {
+      setSuppressFocus(false);
       setTab('Aprender');
       setSearchOpen(false);
       const selected = characters.find((item) => item.id === id);
@@ -123,6 +121,23 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
       (document.activeElement as HTMLElement | null)?.blur();
       setFocusRequest((value) => value + 1);
     }
+  }
+
+  function selectSearchResult(selected: HanziLabCharacter) {
+    setSuppressFocus(true);
+    selectCharacter(selected.id);
+    setTab('Aprender');
+    setSearchOpen(false);
+    setActiveOption(-1);
+    setQuery(selected.pinyin);
+    const lesson = (selected.introducedIn ?? selected.appearsIn[0])?.split('.')[0];
+    if (lesson) setCharacterScope(`l${lesson}` as CurriculumScope);
+    const url = new URL(window.location.href);
+    url.searchParams.set('character', selected.hanzi);
+    url.searchParams.delete('focus');
+    url.searchParams.delete('tab');
+    url.searchParams.delete('mode');
+    window.history.replaceState(window.history.state, '', url);
   }
 
   async function persistAttempt(payload: HanziAttemptPayload) {
@@ -177,27 +192,27 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
   }
 
   return <div className="hanzi-workspace">
-    <HanziFocusScroller active={focusRequest > 0} requestKey={focusRequest} expectedCharacter={character.hanzi} />
+    <HanziFocusScroller active={focusRequest > 0 && !suppressFocus} requestKey={focusRequest} expectedCharacter={character.hanzi} />
     {tracking==='supplementary'&&<section className="panel hanzi-supplemental-note"><p className="eyebrow">CONTENIDO SUPLEMENTARIO</p><h2>Consulta directa de caracteres</h2><p>No forma parte del progreso del curso. La práctica ofrece feedback durante esta visita, pero no se guarda.</p></section>}
 
 
 
-    {tracking==='course'&&<section className="panel hanzi-search-panel" aria-label="Búsqueda por pinyin">
-      <div className="hanzi-combobox"><label htmlFor="hanzi-pinyin-search">Busca por pinyin</label><div><input id="hanzi-pinyin-search" disabled={!hydrated} role="combobox" aria-autocomplete="list" aria-expanded={searchOpen} aria-controls="hanzi-pinyin-options" aria-activedescendant={activeOption >= 0 ? `hanzi-option-${activeOption}` : undefined} value={query} autoCapitalize="none" autoCorrect="off" spellCheck={false} placeholder="Ej.: hao, hǎo o hao3" onFocus={() => query && setSearchOpen(true)} onChange={(event) => { setQuery(event.target.value); setSearchOpen(true); setActiveOption(-1); }} onKeyDown={(event) => { if (event.key === 'ArrowDown') { event.preventDefault(); setActiveOption((value) => Math.min(value + 1, suggestions.length - 1)); } else if (event.key === 'ArrowUp') { event.preventDefault(); setActiveOption((value) => Math.max(value - 1, 0)); } else if (event.key === 'Escape') setSearchOpen(false); else if (event.key === 'Enter' && activeOption >= 0) { event.preventDefault(); const option=suggestions[activeOption]; if(option){selectCharacter(option.id,true);setQuery(option.pinyin);} } }}/>{query&&<button type="button" aria-label="Limpiar consulta" onClick={() => {setQuery('');setSearchOpen(false);}}>×</button>}</div>{searchOpen&&query&&<div id="hanzi-pinyin-options" role="listbox">{suggestions.length?suggestions.map((item,index)=><button id={`hanzi-option-${index}`} role="option" aria-selected={activeOption===index} type="button" key={item.id} onPointerDown={(event)=>event.preventDefault()} onClick={()=>{selectCharacter(item.id,true);setQuery(item.pinyin);}}><PinyinText>{item.pinyin}</PinyinText><Hanzi>{item.hanzi}</Hanzi><span>{item.meaning}</span></button>):<p role="status">Sin resultados por pinyin.</p>}</div>}</div>
-    </section>}
+    <section className="panel hanzi-summary-panel" id="hanzi-detail-start" data-character={character.hanzi}>
+    {tracking==='course'&&<div className="hanzi-search-panel" aria-label="Búsqueda por pinyin">
+      <div className="hanzi-combobox"><div><input id="hanzi-pinyin-search" aria-label="Busca por pinyin" disabled={!hydrated} role="combobox" aria-autocomplete="list" aria-expanded={searchOpen} aria-controls="hanzi-pinyin-options" aria-activedescendant={activeOption >= 0 ? `hanzi-option-${activeOption}` : undefined} value={query} autoCapitalize="none" autoCorrect="off" spellCheck={false} placeholder="Busca por pinyin · Ej.: hao, hǎo o hao3" onFocus={() => query && setSearchOpen(true)} onChange={(event) => { setQuery(event.target.value); setSearchOpen(true); setActiveOption(-1); }} onKeyDown={(event) => { if (event.key === 'ArrowDown') { event.preventDefault(); setActiveOption((value) => Math.min(value + 1, suggestions.length - 1)); } else if (event.key === 'ArrowUp') { event.preventDefault(); setActiveOption((value) => Math.max(value - 1, 0)); } else if (event.key === 'Escape') setSearchOpen(false); else if (event.key === 'Enter' && activeOption >= 0) { event.preventDefault(); const option=suggestions[activeOption]; if(option){selectSearchResult(option);} } }}/>{query&&<button type="button" aria-label="Limpiar consulta" onClick={() => {setQuery('');setSearchOpen(false);}}>×</button>}</div>{searchOpen&&query&&<div id="hanzi-pinyin-options" role="listbox">{suggestions.length?suggestions.map((item,index)=><button id={`hanzi-option-${index}`} role="option" aria-selected={activeOption===index} type="button" key={item.id} onPointerDown={(event)=>event.preventDefault()} onClick={()=>{selectSearchResult(item);}}><PinyinText>{item.pinyin}</PinyinText><Hanzi>{item.hanzi}</Hanzi><span>{item.meaning}</span></button>):<p role="status">Sin resultados por pinyin.</p>}</div>}</div>
+    </div>}
 
-    <section className="hanzi-character-hero panel" id="hanzi-detail-start" data-character={character.hanzi}>
+    <div className="hanzi-character-hero">
       <div className="hanzi-glyph"><Hanzi>{character.hanzi}</Hanzi></div>
-      <div className="hanzi-character-copy"><p className="eyebrow">{stageLabel}</p><div className="hanzi-pronunciation-row"><h2><PinyinText>{character.pinyin}</PinyinText></h2><div className="hanzi-character-actions"><SpeakButton key={character.id} text={character.hanzi} speechText={character.hanzi} audioSrc={audioForMandarinText(character.hanzi, character.pinyin)} compact ariaLabel={`Escuchar pronunciación de ${character.hanzi}`} title={`Escuchar ${character.hanzi}`} /><CommunityButton compact label={`Preguntar sobre ${character.hanzi}`} context={{ concept: character.hanzi, skill: tab === 'Trazos' ? 'stroke-order' : tab === 'Practicar' ? 'hanzi-writing' : 'hanzi-recognition', route: `${route}?character=${encodeURIComponent(character.hanzi)}&tab=${encodeURIComponent(tab)}` }} /></div></div>
+      <div className="hanzi-character-copy"><div className="hanzi-pronunciation-row"><h2><PinyinText>{character.pinyin}</PinyinText></h2><div className="hanzi-character-actions"><SpeakButton key={character.id} text={character.hanzi} speechText={character.hanzi} audioSrc={audioForMandarinText(character.hanzi, character.pinyin)} compact ariaLabel={`Escuchar pronunciación de ${character.hanzi}`} title={`Escuchar ${character.hanzi}`} /><CommunityButton compact label={`Preguntar sobre ${character.hanzi}`} context={{ concept: character.hanzi, skill: tab === 'Trazos' ? 'stroke-order' : tab === 'Practicar' ? 'hanzi-writing' : 'hanzi-recognition', route: `${route}?character=${encodeURIComponent(character.hanzi)}&tab=${encodeURIComponent(tab)}` }} /></div></div>
         <p className="hanzi-character-meaning"><Hanzi>{character.meaning}</Hanzi></p>
-        <p className="hanzi-character-meta"><span>{technical?.strokeCount ?? character.strokeCount} trazos</span>{character.writingRequired && <> · <span>Escritura</span></>}</p>
       </div>
+    </div>
     </section>
 
     <nav className="hanzi-tabs" aria-label="Secciones del laboratorio">{tabs.map((item) => <button type="button" role="tab" aria-selected={tab === item} className={tab === item ? 'selected' : ''} onClick={() => setTab(item)} key={item}>{item}</button>)}</nav>
 
-    {loadError ? <section className="panel hanzi-fallback" role="status"><h2><Hanzi>{loadError}</Hanzi></h2><p>Puedes continuar con reconocimiento, palabras y frases. Solo la animación y la práctica de trazos quedan desactivadas.</p><button type="button" onClick={() => setTab('Palabras y frases')}>Ver palabras y frases</button>{tab === 'Aprender'&&<LearnPanel key={character.id} character={character}/>}</section> : !data ? <section className="panel hanzi-loading" aria-live="polite">Preparando los trazos de <Hanzi>{character.hanzi}</Hanzi>…</section> : <>
-      {tab === 'Aprender' && <LearnPanel key={character.id} character={character}/>}
+    {tab === 'Aprender' ? <LearnPanel key={character.id} character={character}/> : loadError ? <section className="panel hanzi-fallback" role="status"><h2><Hanzi>{loadError}</Hanzi></h2><p>Puedes continuar con reconocimiento, palabras y frases. Solo la animación y la práctica de trazos quedan desactivadas.</p><button type="button" onClick={() => setTab('Palabras y frases')}>Ver palabras y frases</button></section> : !data ? <section className="panel hanzi-loading" aria-live="polite">Preparando los trazos de <Hanzi>{character.hanzi}</Hanzi>…</section> : <>
       {tab === 'Palabras y frases' && <WordsPanel key={character.id} character={character} characterIdsByHanzi={characterIdsByHanzi} canonicalHanzi={canonicalHanziSet} route={route} onSelectCharacter={(id) => selectCharacter(id, true)} />}
       {tab === 'Trazos' && <StrokesPanel key={character.id} character={character} data={data} onMastered={markStrokeOrderUnderstood} />}
       {tab === 'Practicar' && <PracticePanel key={character.id} character={character} data={data} onAttempt={persistAttempt} tracking={tracking} />}
@@ -253,7 +268,7 @@ function WordsPanel({ character, ...contextProps }: ContextListProps) {
 function StrokesPanel({ character, data, onMastered }: { character: HanziLabCharacter; data: HanziCharacterData; onMastered: () => void }) {
   const directions = useMemo(() => data.medians.map(strokeDirection), [data]);
   const strokeNames = useMemo(() => strokeNamesForCharacter(character.hanzi, data.strokes.length), [character.hanzi, data.strokes.length]);
-  return <section className="panel hanzi-tab-panel strokes-panel"><div className="hanzi-panel-heading"><div><p className="eyebrow">03 · TRAZOS</p><h2>Orden, inicio y dirección</h2></div></div>
+  return <section className="panel hanzi-tab-panel strokes-panel"><div className="hanzi-panel-heading"><div><p className="eyebrow">03 · TRAZOS</p><h2>Orden, inicio y dirección</h2><p className="hanzi-character-meta">{data.strokes.length} trazos{character.writingRequired && <> · Escritura</>}</p></div></div>
     <div className="stroke-answer-layout"><HanziStrokeSvg character={character.hanzi} data={data} /><div><h3>Cómo leer los trazos</h3><p><i className="legend-dot" /> El punto marca dónde inicia cada trazo.</p><p><i className="legend-arrow">→</i> La línea roja indica el recorrido y su flecha, la dirección.</p><ol className="stroke-name-list">{directions.map((direction, index) => { const name = strokeNames[index]; return <li key={index}><b><Hanzi>{name ? <>{index + 1} · {name.hanzi} · <PinyinText>{name.pinyin}</PinyinText></> : `Trazo ${index + 1}`}</Hanzi></b><span>Dirección: <Hanzi>{direction.chinese}</Hanzi> · hacia {direction.label}.</span></li>; })}</ol></div></div>
     <div className="hanzi-confirm-row"><button className="button button-primary" type="button" onClick={onMastered}>Ya entiendo el orden</button></div>
   </section>;
