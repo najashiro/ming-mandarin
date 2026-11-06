@@ -32,12 +32,29 @@ describe('Lección 5 completa', () => {
     const course = getCurriculum('l5');
     expect(course.characters).toHaveLength(69);
     expect(course.stages.map(unit => unit.id)).toEqual(['5.1','5.2']);
-    expect(course.grammar).toHaveLength(11);
+    expect(course.grammar).toHaveLength(13);
     expect(lesson5.readings).toHaveLength(4);
-    expect(lesson5.documentaryExercises).toHaveLength(29);
+    expect(lesson5.documentaryExercises).toHaveLength(37);
     expect(getCurriculum('l1-l2-l3-l4-l5').definition.lessonIds).toEqual([1,2,3,4,5]);
     expect(new Set(canonicalCharacters.map(c => c.id)).size).toBe(canonicalCharacters.length);
     expect(canonicalCharacters.find(c => c.hanzi === '生')?.introducedIn).toBe('2.1');
+  });
+  it('integra la práctica revisada sin exportar respuestas dudosas ni metadatos editoriales', () => {
+    const grammar = getCurriculum('l5').grammar;
+    expect(grammar.find(point => point.id === 'g-l5-frequency')?.examples)
+      .toContain('我不常喝咖啡，我常常喝茶。');
+    expect(grammar.find(point => point.id === 'g-l5-lai-action')?.pattern).toBe('Sujeto + 来 + verbo');
+    expect(grammar.find(point => point.id === 'g-l5-yixia')?.examples).toContain('请写一下你的名字。');
+    const age = lesson5.documentaryExercises.find(task => task.id === 'L5-task-36');
+    expect(age?.texts.join('\n')).toContain('属马');
+    expect(age?.texts.join('\n')).not.toContain('属龙');
+    const projection = JSON.stringify([...lesson5.grammar, ...lesson5.documentaryExercises]);
+    expect(projection).not.toMatch(/supportingSources|evidence|note_ming|answerKey|correctAnswer|她1991年出生|她的女儿属龙/);
+    for (const n of Array.from({ length: 8 }, (_, index) => index + 30)) {
+      const task = lesson5.documentaryExercises.find(row => row.id === `L5-task-${n}`);
+      expect(task?.requiresOriginalAudio).toBe(false);
+      expect(task?.texts.length).toBeGreaterThan(0);
+    }
   });
   it('cada tarjeta tiene pinyin, español, relaciones explícitas y destino Hanzi', () => {
     for (const word of getVocabularySet('l5')) {
@@ -55,8 +72,22 @@ describe('Lección 5 completa', () => {
     }
   });
   it('solo expone audio verificado y cubre palabras, ejemplos, diálogos y lecturas', () => {
-    expect(available.files).toHaveLength(audio.clips.length);
-    expect(audio.corpusFingerprint).toBe(lesson5.fingerprint);
+    // corpusFingerprint records the source at audio generation time. Editorial
+    // grammar/exercise changes need no new recordings; compare the spoken content.
+    const spokenRows = [
+      ...lesson5.vocabulary,
+      ...lesson5.dialogues.flatMap(dialogue => dialogue.turns),
+      ...lesson5.phrases.filter(phrase => phrase.pinyin && phrase.spanish),
+      ...lesson5.readings,
+      ...lesson5.characters,
+    ];
+    const expectedClips = new Map(spokenRows.map(row => {
+      const id = `l5-${createHash('sha256').update(`${row.hanzi}:${row.pinyin}`).digest('hex').slice(0, 16)}`;
+      return [id, { id, file: `${id}.mp3`, input: row.hanzi, expectedPinyin: row.pinyin, lessonId: 5 }];
+    }));
+    expect(audio.clips.map(({ id, file, input, expectedPinyin, lessonId }) => ({ id, file, input, expectedPinyin, lessonId })))
+      .toEqual([...expectedClips.values()]);
+    expect([...available.files].sort()).toEqual(audio.clips.map(clip => clip.file).sort());
     for (const row of [...lesson5.vocabulary,...lesson5.phrases,...lesson5.readings,...lesson5.characters]) {
       const src=audioForMandarinText(row.hanzi,row.pinyin);
       if (!src) throw new Error(`Audio missing: ${row.hanzi} / ${row.pinyin}`);

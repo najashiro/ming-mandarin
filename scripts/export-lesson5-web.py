@@ -48,7 +48,11 @@ for i,row in enumerate(d['characters']):
  characters.append(dict(id='c-'+h,lessonId='lesson-5',hanzi=h,pinyin=row['pinyin_ming'],meaning=row['spanish_ming'],strokeCount=len(strokes['strokes']),radical=row['radical'],components=row['components'],recognitionRequired=True,writingRequired=row['writingRequired'],source=row['source'],sources=[row['source']],sourceGroups=[row['unit']],primaryStage=row['unit'],introducedIn=row['unit'],appearsIn=[row['unit']],sourceRole='core',curricularOrder=i,curricular=True,radicalAudited=bool(row['radical']),componentsAudited=bool(row['components']),words=[]))
 units=[dict(id=f'5.{i}',lesson=5,text=i,title=f'Lección 5 · Texto {i}',shortTitle=f'5.{i}',chinese='生日聚会' if i==1 else '祝你生日快乐',description='Caracteres del libro y la hoja Hanzi.',characters=[c['hanzi'] for c in characters if c['introducedIn']==f'5.{i}']) for i in [1,2]]
 readings=[dict(id=r['id'],title=r['title'],hanzi=r['hanzi'],pinyin=r['pinyin_ming'],spanish=r['spanish_ming']) for r in d['readings']]
-result=dict(version=d['version'],fingerprint=fingerprint,corpusFingerprint=fingerprint,vocabulary=vocabulary,phrases=list(phrases.values()),dialogues=dialogues,characters=characters,units=units,grammar=[{k:v for k,v in r.items() if k!='origin'} for r in d['grammar']],readings=readings,documentaryExercises=[{k:v for k,v in r.items() if k not in ['source','origin']} for r in d['documentaryExercises']],sentences=sentences,vocabularySources=vocab_sources,pending=[])
+# Keep documentary witnesses and editorial decisions in the source corpus.
+# Learner projections use explicit fields so future review metadata stays internal.
+grammar_fields=('id','slug','title','pattern','explanation','examples','source')
+activity_fields=('id','title','texts','requiresOriginalAudio')
+result=dict(version=d['version'],fingerprint=fingerprint,corpusFingerprint=fingerprint,vocabulary=vocabulary,phrases=list(phrases.values()),dialogues=dialogues,characters=characters,units=units,grammar=[{k:r[k] for k in grammar_fields} for r in d['grammar']],readings=readings,documentaryExercises=[{k:r[k] for k in activity_fields} for r in d['documentaryExercises']],sentences=sentences,vocabularySources=vocab_sources,pending=[])
 assert len({v['id'] for v in vocabulary})==len(vocabulary)
 assert len({c['id'] for c in characters})==len(characters)
 encoded=json.dumps(result,ensure_ascii=False,indent=2)+'\n';destination=ROOT/'data/lesson5-public.json'
