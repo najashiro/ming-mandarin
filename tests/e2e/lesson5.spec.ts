@@ -17,7 +17,19 @@ test('L5: portada, módulos, fuentes prioritarias y móvil sin desbordamiento', 
   await expect(page.locator('main')).toContainText('十月二十五号。');
   await expect(page.locator('main')).toContainText('今年三十二岁');
   await page.goto('/study/l5/readings');await page.waitForLoadState('networkidle');await expect(page.locator('.corpus-dialogue')).toHaveCount(4);
-  await page.goto('/study/l5/exercises');await page.waitForLoadState('networkidle');await expect(page.locator('details')).toHaveCount(29);
+  await page.goto('/study/l5/grammar');await page.waitForLoadState('networkidle');
+  await expect(page.getByRole('heading',{name:'常常 y 不常: frecuencia',exact:true})).toBeVisible();
+  await expect(page.getByRole('heading',{name:'来 + verbo: ofrecerse a actuar',exact:true})).toBeVisible();
+  await expect(page.locator('main')).toContainText('我不常喝咖啡，我常常喝茶。');
+  await expect(page.locator('main')).toContainText('请写一下你的名字。');
+  await page.goto('/study/l5/exercises');await page.waitForLoadState('networkidle');await expect(page.locator('details')).toHaveCount(37);
+  const age=page.locator('details').filter({has:page.locator('summary',{hasText:'Completar: edad y signo'})});
+  await age.locator('summary').click();
+  await expect(age).toContainText('我也属马');
+  await expect(age).not.toContainText('属龙');
+  await expect(page.locator('main')).toContainText('No se califican automáticamente.');
+  await expect(page.locator('main')).not.toContainText(/她1991年出生|她的女儿属龙|supportingSources|note_ming/);
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);
   expect(errors).toEqual([]);
 });
 

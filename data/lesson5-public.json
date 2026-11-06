@@ -1,7 +1,7 @@
 {
   "version": "2.3.0",
-  "fingerprint": "c812a274d9f6537b1b6327c14eeb9a48b5183b5ea6dbdb6fc0c6e8ea3138b8c1",
-  "corpusFingerprint": "c812a274d9f6537b1b6327c14eeb9a48b5183b5ea6dbdb6fc0c6e8ea3138b8c1",
+  "fingerprint": "28d3a6a688d5d38a58901524c3a98b93ce0ab82000faf25ac9c4b19936401d3b",
+  "corpusFingerprint": "28d3a6a688d5d38a58901524c3a98b93ce0ab82000faf25ac9c4b19936401d3b",
   "vocabulary": [
     {
       "id": "v-星期日",
@@ -8809,11 +8809,17 @@
       "id": "g-l5-yixia",
       "slug": "l5-yixia",
       "title": "一下: una acción breve",
-      "pattern": "Verbo + 一下",
+      "pattern": "Sujeto + verbo + 一下 (+ objeto)",
       "explanation": "一下 suaviza una petición o presentación e indica una acción breve o un intento.",
       "examples": [
         "我来介绍一下。",
-        "你看一下。"
+        "你看一下。",
+        "我问一下老师。",
+        "谁读一下？",
+        "你问一下她。",
+        "请介绍一下你的朋友。",
+        "请写一下你的名字。",
+        "大家写一下。"
       ],
       "source": {
         "type": "textbook",
@@ -8847,6 +8853,39 @@
         "不客气。",
         "真不好意思。",
         "真可惜！"
+      ],
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 8
+      }
+    },
+    {
+      "id": "g-l5-frequency",
+      "slug": "l5-frequency",
+      "title": "常常 y 不常: frecuencia",
+      "pattern": "Sujeto + 常常／不常 + verbo",
+      "explanation": "常常 significa «a menudo». Para expresar que algo no ocurre con frecuencia, usa 不常 delante del verbo. 不常 significa «no a menudo», no «nunca».",
+      "examples": [
+        "她常常教我们英语。",
+        "我常常吃米饭。",
+        "我不常喝咖啡，我常常喝茶。",
+        "我不常去他家。"
+      ],
+      "source": {
+        "type": "class_presentation",
+        "file": "第5课 - 2 祝你生日快乐.pdf",
+        "pdfPage": 20
+      }
+    },
+    {
+      "id": "g-l5-lai-action",
+      "slug": "l5-lai-action",
+      "title": "来 + verbo: ofrecerse a actuar",
+      "pattern": "Sujeto + 来 + verbo",
+      "explanation": "En 我来介绍一下, 来 indica que el hablante se ofrece a realizar la presentación: «Permíteme presentar». 来 va delante de 介绍; 一下 va después y suaviza la expresión.",
+      "examples": [
+        "我来介绍一下。"
       ],
       "source": {
         "type": "textbook",
@@ -8954,7 +8993,8 @@
       "title": "Comprensión: Lin Qiang y la profesora Zhang",
       "texts": [
         "林强今年多大？谁参加林强的生日聚会？朋友们送林强什么生日礼物？",
-        "张老师喜欢做什么？张老师教“我们”什么课？张老师怎么样？"
+        "张老师喜欢做什么？张老师教“我们”什么课？张老师怎么样？",
+        "En la lectura de la profesora Zhang también se pregunta: 张老师是哪年出生的？张老师的女儿属什么？Antes de deducir las respuestas, identifica qué año de referencia falta. No uses el año actual ni supongas un año de nacimiento."
       ],
       "requiresOriginalAudio": false
     },
@@ -9075,7 +9115,7 @@
       "title": "Lectoescritura 7: formular preguntas",
       "texts": [
         "Pregunta por la fecha en 这个星期六十二月二十六号, el día en 今天星期三 y la edad en 他今年二十八岁.",
-        "Pregunta por el regalo en 我送他一个大蛋糕 y la persona en 我就是马大为."
+        "Pregunta por el regalo en 我送他一个大蛋糕 y por la persona indicada por 我 en 我就是马大为. En este último caso, formula una pregunta por la identidad, no una pregunta de sí o no."
       ],
       "requiresOriginalAudio": false
     },
@@ -9145,6 +9185,85 @@
       "texts": [
         "Escribe una tarjeta para tu padre o madre. Usa pinyin donde aún no sepas escribir los caracteres.",
         "亲爱的爸爸／妈妈：\n___是您的生日。您喜欢___，我送您___。祝___！\n您的女儿／儿子___\n___年___月___日"
+      ],
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "L5-task-30",
+      "title": "Completar: palabras del segundo diálogo",
+      "texts": [
+        "Completa y explica tu elección. Banco: 介绍、教、一会儿、常常、咱们、祝。",
+        "我现在不饿，___去吃午饭。\n这儿有很多人，你可以给我___一下吗？\n我和朋友___去那个公园（parque）。",
+        "星期天___一起去买蛋糕吧。\n谁现在___你汉语？\n明天是你哥哥的生日，___他生日快乐！"
+      ],
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "L5-task-31",
+      "title": "Peticiones breves con 一下",
+      "texts": [
+        "Lee en voz alta: 等一下、听一下、看一下、问一下。",
+        "Localiza el verbo y el objeto: 我问一下老师。你问一下她。请写一下你的名字。",
+        "Practica por turnos: 谁读一下？大家写一下。Explica qué aporta 一下 al tono de cada petición."
+      ],
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "L5-task-32",
+      "title": "Hábitos con 常常 y 不常",
+      "texts": [
+        "Compara: 我常常吃米饭。／我不常喝咖啡，我常常喝茶。",
+        "Lee 我不常去他家。¿Expresa una frecuencia baja o que no ocurre nunca?",
+        "Describe un hábito frecuente y uno poco frecuente con 常常 y 不常. Puedes usar datos ficticios."
+      ],
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "L5-task-33",
+      "title": "Construir con 送 y 教",
+      "texts": [
+        "Forma una frase con 送: 姐姐／妈妈／一盒巧克力。",
+        "Forma frases con 教: 老师／学生／唱歌；老师／她／跳舞；我／朋友／钢琴。",
+        "Señala primero quién recibe el regalo o la enseñanza y después qué recibe o aprende."
+      ],
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "L5-task-34",
+      "title": "Tomar la palabra para presentar",
+      "texts": [
+        "Lee 我来介绍一下。Identifica quién se ofrece a hacer la presentación y dónde aparecen 来 e 一下.",
+        "Practica estas peticiones: 请介绍一下你的朋友。／我不认识他，你介绍一下吧。",
+        "Representa una presentación breve con otra persona usando 我来介绍一下。"
+      ],
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "L5-task-35",
+      "title": "Completar: fecha del cumpleaños",
+      "texts": [
+        "Completa el diálogo escrito con las pistas 8月23号、21号. Practica la lectura por turnos.",
+        "A：你的生日是几月几号？\nB：我的生日是___。\nA：今天___，后天就是你的生日。祝你生日快乐！\nB：谢谢！"
+      ],
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "L5-task-36",
+      "title": "Completar: edad y signo",
+      "texts": [
+        "Completa las edades con las pistas 18 y 30. Ambos personajes dicen 属马. Son datos del diálogo, no edades para recalcular con el año actual.",
+        "A：你今年多大？\nB：我今年___岁，属马。你属什么？\nA：我也属马。我不是18岁，我今年___。",
+        "Practica el diálogo escrito por turnos y observa que dos personas del mismo signo pueden tener edades diferentes."
+      ],
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "L5-task-37",
+      "title": "Completar: la profesora y sus clases",
+      "texts": [
+        "Completa el diálogo escrito usando 她是谁、我们的汉语老师、教、什么课、她教我们口语课。",
+        "A：___？\nB：她是___。\nA：她___你们___？\nB：___。",
+        "Identifica a la persona que enseña, a quienes aprenden y la clase que reciben."
       ],
       "requiresOriginalAudio": false
     }

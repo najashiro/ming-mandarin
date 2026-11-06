@@ -20,6 +20,13 @@
       "type": "class_presentation",
       "file": "5 Presentación Curso Ciclo 3 - Octubre a Noviembre 2026 第5课 - 1 祝你生日快乐.pdf",
       "pages": 63
+    },
+    "presentation2": {
+      "type": "class_presentation",
+      "file": "第5课 - 2 祝你生日快乐.pdf",
+      "pages": 54,
+      "sha256": "d2190ba5d900ad38902bb1f29d5cbdfdb683f16bcddc466736f2e47f412c2e24",
+      "authority": "supplementary"
     }
   },
   "vocabulary": [
@@ -3142,18 +3149,90 @@
       "id": "g-l5-yixia",
       "slug": "l5-yixia",
       "title": "一下: una acción breve",
-      "pattern": "Verbo + 一下",
+      "pattern": "Sujeto + verbo + 一下 (+ objeto)",
       "explanation": "一下 suaviza una petición o presentación e indica una acción breve o un intento.",
       "examples": [
         "我来介绍一下。",
-        "你看一下。"
+        "你看一下。",
+        "我问一下老师。",
+        "谁读一下？",
+        "你问一下她。",
+        "请介绍一下你的朋友。",
+        "请写一下你的名字。",
+        "大家写一下。"
       ],
       "source": {
         "type": "textbook",
         "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
         "pdfPage": 8
       },
-      "origin": "editorial_explanation_of_source"
+      "origin": "editorial_explanation_of_source",
+      "evidence": [
+        {
+          "hanzi": "我来介绍一下。",
+          "source": {
+            "type": "textbook",
+            "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+            "pdfPage": 8
+          }
+        },
+        {
+          "hanzi": "你看一下。",
+          "source": {
+            "type": "textbook",
+            "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+            "pdfPage": 8
+          }
+        },
+        {
+          "hanzi": "我问一下老师。",
+          "source": {
+            "type": "class_presentation",
+            "file": "第5课 - 2 祝你生日快乐.pdf",
+            "pdfPage": 15
+          }
+        },
+        {
+          "hanzi": "谁读一下？",
+          "source": {
+            "type": "class_presentation",
+            "file": "第5课 - 2 祝你生日快乐.pdf",
+            "pdfPage": 16
+          }
+        },
+        {
+          "hanzi": "你问一下她。",
+          "source": {
+            "type": "class_presentation",
+            "file": "第5课 - 2 祝你生日快乐.pdf",
+            "pdfPage": 16
+          }
+        },
+        {
+          "hanzi": "请介绍一下你的朋友。",
+          "source": {
+            "type": "class_presentation",
+            "file": "第5课 - 2 祝你生日快乐.pdf",
+            "pdfPage": 17
+          }
+        },
+        {
+          "hanzi": "请写一下你的名字。",
+          "source": {
+            "type": "class_presentation",
+            "file": "第5课 - 2 祝你生日快乐.pdf",
+            "pdfPage": 18
+          }
+        },
+        {
+          "hanzi": "大家写一下。",
+          "source": {
+            "type": "class_presentation",
+            "file": "第5课 - 2 祝你生日快乐.pdf",
+            "pdfPage": 18
+          }
+        }
+      ]
     },
     {
       "id": "g-l5-zanmen",
@@ -3189,6 +3268,93 @@
         "pdfPage": 8
       },
       "origin": "editorial_explanation_of_source"
+    },
+    {
+      "id": "g-l5-frequency",
+      "slug": "l5-frequency",
+      "title": "常常 y 不常: frecuencia",
+      "pattern": "Sujeto + 常常／不常 + verbo",
+      "explanation": "常常 significa «a menudo». Para expresar que algo no ocurre con frecuencia, usa 不常 delante del verbo. 不常 significa «no a menudo», no «nunca».",
+      "examples": [
+        "她常常教我们英语。",
+        "我常常吃米饭。",
+        "我不常喝咖啡，我常常喝茶。",
+        "我不常去他家。"
+      ],
+      "source": {
+        "type": "class_presentation",
+        "file": "第5课 - 2 祝你生日快乐.pdf",
+        "pdfPage": 20
+      },
+      "origin": "editorial_explanation_of_source",
+      "evidence": [
+        {
+          "hanzi": "她常常教我们英语。",
+          "source": {
+            "type": "textbook",
+            "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+            "pdfPage": 7
+          }
+        },
+        {
+          "hanzi": "我常常吃米饭。",
+          "source": {
+            "type": "class_presentation",
+            "file": "第5课 - 2 祝你生日快乐.pdf",
+            "pdfPage": 19
+          }
+        },
+        {
+          "hanzi": "我不常喝咖啡，我常常喝茶。",
+          "source": {
+            "type": "class_presentation",
+            "file": "第5课 - 2 祝你生日快乐.pdf",
+            "pdfPage": 20
+          }
+        },
+        {
+          "hanzi": "我不常去他家。",
+          "source": {
+            "type": "class_presentation",
+            "file": "第5课 - 2 祝你生日快乐.pdf",
+            "pdfPage": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "g-l5-lai-action",
+      "slug": "l5-lai-action",
+      "title": "来 + verbo: ofrecerse a actuar",
+      "pattern": "Sujeto + 来 + verbo",
+      "explanation": "En 我来介绍一下, 来 indica que el hablante se ofrece a realizar la presentación: «Permíteme presentar». 来 va delante de 介绍; 一下 va después y suaviza la expresión.",
+      "examples": [
+        "我来介绍一下。"
+      ],
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 8
+      },
+      "origin": "editorial_explanation_of_source",
+      "evidence": [
+        {
+          "hanzi": "我来介绍一下。",
+          "source": {
+            "type": "textbook",
+            "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+            "pdfPage": 8
+          }
+        },
+        {
+          "hanzi": "我来介绍一下。",
+          "source": {
+            "type": "class_presentation",
+            "file": "第5课 - 2 祝你生日快乐.pdf",
+            "pdfPage": 17
+          }
+        }
+      ]
     }
   ],
   "documentaryExercises": [
@@ -3302,7 +3468,8 @@
       "title": "Comprensión: Lin Qiang y la profesora Zhang",
       "texts": [
         "林强今年多大？谁参加林强的生日聚会？朋友们送林强什么生日礼物？",
-        "张老师喜欢做什么？张老师教“我们”什么课？张老师怎么样？"
+        "张老师喜欢做什么？张老师教“我们”什么课？张老师怎么样？",
+        "En la lectura de la profesora Zhang también se pregunta: 张老师是哪年出生的？张老师的女儿属什么？Antes de deducir las respuestas, identifica qué año de referencia falta. No uses el año actual ni supongas un año de nacimiento."
       ],
       "requiresOriginalAudio": false,
       "source": {
@@ -3310,7 +3477,14 @@
         "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
         "pdfPage": 19
       },
-      "origin": "editorial_adaptation"
+      "origin": "editorial_adaptation",
+      "supportingSources": [
+        {
+          "type": "class_presentation",
+          "file": "第5课 - 2 祝你生日快乐.pdf",
+          "pdfPage": 54
+        }
+      ]
     },
     {
       "id": "L5-task-09",
@@ -3507,7 +3681,7 @@
       "title": "Lectoescritura 7: formular preguntas",
       "texts": [
         "Pregunta por la fecha en 这个星期六十二月二十六号, el día en 今天星期三 y la edad en 他今年二十八岁.",
-        "Pregunta por el regalo en 我送他一个大蛋糕 y la persona en 我就是马大为."
+        "Pregunta por el regalo en 我送他一个大蛋糕 y por la persona indicada por 我 en 我就是马大为. En este último caso, formula una pregunta por la identidad, no una pregunta de sí o no."
       ],
       "requiresOriginalAudio": false,
       "source": {
@@ -3515,7 +3689,14 @@
         "file": "Libro de Ejercicios Basico 3 - Lección 5 Zhù nĩ shêngrì kuàilè.pdf",
         "pdfPage": 5
       },
-      "origin": "editorial_adaptation"
+      "origin": "editorial_adaptation",
+      "supportingSources": [
+        {
+          "type": "class_presentation",
+          "file": "第5课 - 2 祝你生日快乐.pdf",
+          "pdfPage": 50
+        }
+      ]
     },
     {
       "id": "L5-task-23",
@@ -3627,6 +3808,210 @@
         "pdfPage": 10
       },
       "origin": "editorial_adaptation"
+    },
+    {
+      "id": "L5-task-30",
+      "title": "Completar: palabras del segundo diálogo",
+      "texts": [
+        "Completa y explica tu elección. Banco: 介绍、教、一会儿、常常、咱们、祝。",
+        "我现在不饿，___去吃午饭。\n这儿有很多人，你可以给我___一下吗？\n我和朋友___去那个公园（parque）。",
+        "星期天___一起去买蛋糕吧。\n谁现在___你汉语？\n明天是你哥哥的生日，___他生日快乐！"
+      ],
+      "requiresOriginalAudio": false,
+      "source": {
+        "type": "class_presentation",
+        "file": "第5课 - 2 祝你生日快乐.pdf",
+        "pdfPage": 31
+      },
+      "origin": "editorial_adaptation",
+      "assessment": "open_practice_no_official_key"
+    },
+    {
+      "id": "L5-task-31",
+      "title": "Peticiones breves con 一下",
+      "texts": [
+        "Lee en voz alta: 等一下、听一下、看一下、问一下。",
+        "Localiza el verbo y el objeto: 我问一下老师。你问一下她。请写一下你的名字。",
+        "Practica por turnos: 谁读一下？大家写一下。Explica qué aporta 一下 al tono de cada petición."
+      ],
+      "requiresOriginalAudio": false,
+      "source": {
+        "type": "class_presentation",
+        "file": "第5课 - 2 祝你生日快乐.pdf",
+        "pdfPage": 14
+      },
+      "origin": "editorial_adaptation",
+      "assessment": "open_practice_no_official_key",
+      "supportingSources": [
+        {
+          "type": "class_presentation",
+          "file": "第5课 - 2 祝你生日快乐.pdf",
+          "pdfPage": 15
+        },
+        {
+          "type": "class_presentation",
+          "file": "第5课 - 2 祝你生日快乐.pdf",
+          "pdfPage": 16
+        },
+        {
+          "type": "class_presentation",
+          "file": "第5课 - 2 祝你生日快乐.pdf",
+          "pdfPage": 18
+        },
+        {
+          "type": "textbook",
+          "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+          "pdfPage": 8
+        }
+      ]
+    },
+    {
+      "id": "L5-task-32",
+      "title": "Hábitos con 常常 y 不常",
+      "texts": [
+        "Compara: 我常常吃米饭。／我不常喝咖啡，我常常喝茶。",
+        "Lee 我不常去他家。¿Expresa una frecuencia baja o que no ocurre nunca?",
+        "Describe un hábito frecuente y uno poco frecuente con 常常 y 不常. Puedes usar datos ficticios."
+      ],
+      "requiresOriginalAudio": false,
+      "source": {
+        "type": "class_presentation",
+        "file": "第5课 - 2 祝你生日快乐.pdf",
+        "pdfPage": 19
+      },
+      "origin": "editorial_adaptation",
+      "assessment": "open_practice_no_official_key",
+      "supportingSources": [
+        {
+          "type": "class_presentation",
+          "file": "第5课 - 2 祝你生日快乐.pdf",
+          "pdfPage": 20
+        }
+      ]
+    },
+    {
+      "id": "L5-task-33",
+      "title": "Construir con 送 y 教",
+      "texts": [
+        "Forma una frase con 送: 姐姐／妈妈／一盒巧克力。",
+        "Forma frases con 教: 老师／学生／唱歌；老师／她／跳舞；我／朋友／钢琴。",
+        "Señala primero quién recibe el regalo o la enseñanza y después qué recibe o aprende."
+      ],
+      "requiresOriginalAudio": false,
+      "source": {
+        "type": "class_presentation",
+        "file": "第5课 - 2 祝你生日快乐.pdf",
+        "pdfPage": 36
+      },
+      "origin": "editorial_adaptation",
+      "assessment": "open_practice_no_official_key",
+      "supportingSources": [
+        {
+          "type": "class_presentation",
+          "file": "第5课 - 2 祝你生日快乐.pdf",
+          "pdfPage": 37
+        },
+        {
+          "type": "textbook",
+          "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+          "pdfPage": 12
+        }
+      ]
+    },
+    {
+      "id": "L5-task-34",
+      "title": "Tomar la palabra para presentar",
+      "texts": [
+        "Lee 我来介绍一下。Identifica quién se ofrece a hacer la presentación y dónde aparecen 来 e 一下.",
+        "Practica estas peticiones: 请介绍一下你的朋友。／我不认识他，你介绍一下吧。",
+        "Representa una presentación breve con otra persona usando 我来介绍一下。"
+      ],
+      "requiresOriginalAudio": false,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 8
+      },
+      "origin": "editorial_adaptation",
+      "assessment": "open_practice_no_official_key",
+      "supportingSources": [
+        {
+          "type": "class_presentation",
+          "file": "第5课 - 2 祝你生日快乐.pdf",
+          "pdfPage": 17
+        }
+      ]
+    },
+    {
+      "id": "L5-task-35",
+      "title": "Completar: fecha del cumpleaños",
+      "texts": [
+        "Completa el diálogo escrito con las pistas 8月23号、21号. Practica la lectura por turnos.",
+        "A：你的生日是几月几号？\nB：我的生日是___。\nA：今天___，后天就是你的生日。祝你生日快乐！\nB：谢谢！"
+      ],
+      "requiresOriginalAudio": false,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 18
+      },
+      "origin": "editorial_adaptation",
+      "assessment": "open_practice_no_official_key",
+      "supportingSources": [
+        {
+          "type": "class_presentation",
+          "file": "第5课 - 2 祝你生日快乐.pdf",
+          "pdfPage": 42
+        }
+      ]
+    },
+    {
+      "id": "L5-task-36",
+      "title": "Completar: edad y signo",
+      "texts": [
+        "Completa las edades con las pistas 18 y 30. Ambos personajes dicen 属马. Son datos del diálogo, no edades para recalcular con el año actual.",
+        "A：你今年多大？\nB：我今年___岁，属马。你属什么？\nA：我也属马。我不是18岁，我今年___。",
+        "Practica el diálogo escrito por turnos y observa que dos personas del mismo signo pueden tener edades diferentes."
+      ],
+      "requiresOriginalAudio": false,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 18
+      },
+      "origin": "editorial_adaptation",
+      "assessment": "open_practice_no_official_key",
+      "supportingSources": [
+        {
+          "type": "class_presentation",
+          "file": "第5课 - 2 祝你生日快乐.pdf",
+          "pdfPage": 43
+        }
+      ]
+    },
+    {
+      "id": "L5-task-37",
+      "title": "Completar: la profesora y sus clases",
+      "texts": [
+        "Completa el diálogo escrito usando 她是谁、我们的汉语老师、教、什么课、她教我们口语课。",
+        "A：___？\nB：她是___。\nA：她___你们___？\nB：___。",
+        "Identifica a la persona que enseña, a quienes aprenden y la clase que reciben."
+      ],
+      "requiresOriginalAudio": false,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 19
+      },
+      "origin": "editorial_adaptation",
+      "assessment": "open_practice_no_official_key",
+      "supportingSources": [
+        {
+          "type": "class_presentation",
+          "file": "第5课 - 2 祝你生日快乐.pdf",
+          "pdfPage": 44
+        }
+      ]
     }
   ],
   "characters": [
@@ -4832,6 +5217,133 @@
         "file": "Hanzi Leccion 5 Ciclo 3 - Octubre a Noviembre 2026 Instituto Confucio.pdf",
         "pdfPage": 8
       }
+    },
+    {
+      "field": "presentation2.double_object.pronoun",
+      "preferred": "马大为送她什么礼物？",
+      "rejected": "马大为送他什么礼物？",
+      "primary": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 13
+      },
+      "secondary": {
+        "type": "class_presentation",
+        "file": "第5课 - 2 祝你生日快乐.pdf",
+        "pdfPage": 38
+      },
+      "status": "prefer_primary",
+      "note_ming": "El banco de palabras y el contexto del ejercicio del libro usan 她; conservar ese destinatario."
+    },
+    {
+      "field": "dialogue2.final_speaker",
+      "preferred": "大家",
+      "rejected": "林娜、王小云",
+      "primary": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 7
+      },
+      "secondary": {
+        "type": "class_presentation",
+        "file": "第5课 - 2 祝你生日快乐.pdf",
+        "pdfPage": 41
+      },
+      "status": "prefer_primary",
+      "note_ming": "El libro atribuye el brindis final a 大家. El diálogo web ya conserva ese hablante."
+    },
+    {
+      "field": "presentation2.dialogue2.pinyin",
+      "preferred": {
+        "教": "jiāo",
+        "的": "de",
+        "还": "hái"
+      },
+      "rejected": {
+        "教": "jiào",
+        "的": "dì",
+        "还": "huán"
+      },
+      "primary": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 7
+      },
+      "secondary": {
+        "type": "class_presentation",
+        "file": "第5课 - 2 祝你生日快乐.pdf",
+        "pdfPage": 41
+      },
+      "status": "prefer_primary",
+      "note_ming": "Lecturas contextuales del libro. 咱们 zánmen y 干杯 gānbēi coinciden; no se registran como errores de esta presentación."
+    },
+    {
+      "field": "presentation2.age_practice.zodiac",
+      "preferred": "属马／我也属马",
+      "rejected": "属龙／我也属龙",
+      "primary": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 18
+      },
+      "secondary": {
+        "type": "class_presentation",
+        "file": "第5课 - 2 祝你生日快乐.pdf",
+        "pdfPage": 43
+      },
+      "status": "prefer_primary",
+      "note_ming": "Conservar las edades 18 y 30 y el signo del diálogo impreso; no confundirlo con Lin Qiang, que pertenece a otro contexto."
+    },
+    {
+      "field": "presentation2.workbook.question_focus",
+      "preferred": null,
+      "rejected": "你是马大为吗？",
+      "primary": {
+        "type": "workbook",
+        "file": "Libro de Ejercicios Basico 3 - Lección 5 Zhù nĩ shêngrì kuàilè.pdf",
+        "pdfPage": 5
+      },
+      "secondary": {
+        "type": "class_presentation",
+        "file": "第5课 - 2 祝你生日快乐.pdf",
+        "pdfPage": 50
+      },
+      "status": "withhold_as_answer_key",
+      "note_ming": "El cuaderno pide preguntar por la parte subrayada 我 en 我就是马大为. La anotación de la diapositiva pregunta sí/no. Se mantiene la tarea abierta, sin inventar una clave oficial."
+    },
+    {
+      "field": "presentation2.reading.teacher_birth_year",
+      "preferred": null,
+      "rejected": "她1991年出生。",
+      "primary": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 19
+      },
+      "secondary": {
+        "type": "class_presentation",
+        "file": "第5课 - 2 祝你生日快乐.pdf",
+        "pdfPage": 54
+      },
+      "status": "underdetermined",
+      "note_ming": "El párrafo dice 35 años y 属牛, pero no da un año de referencia explícito que fije el nacimiento. No trasladar el año actual ni tratar 1991 como clave."
+    },
+    {
+      "field": "presentation2.reading.daughter_zodiac",
+      "preferred": null,
+      "rejected": "她的女儿属龙。",
+      "primary": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 19
+      },
+      "secondary": {
+        "type": "class_presentation",
+        "file": "第5课 - 2 祝你生日快乐.pdf",
+        "pdfPage": 54
+      },
+      "status": "underdetermined",
+      "note_ming": "El párrafo dice que la hija tiene dos años; no declara su signo ni un año de referencia explícito. La respuesta añadida queda sin aprobar como clave."
     }
   ],
   "policy": {

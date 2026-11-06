@@ -2,6 +2,33 @@
 import argparse,json,subprocess,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[3]
+def validate_sources(source):
+ manifests={row['file']:row for row in source['sources'].values()}
+ assert len(manifests)==len(source['sources']),'Source filenames must be unique'
+ for key,kind in [('book','textbook'),('workbook','workbook'),('hanzi','hanzi_worksheet'),('presentation','class_presentation')]:
+  assert source['sources'][key]['type']==kind
+ for row in manifests.values():
+  assert isinstance(row['pages'],int) and row['pages']>0
+ def visit(value):
+  if isinstance(value,dict):
+   if 'pdfPage' in value:
+    manifest=manifests[value['file']]
+    assert value['type']==manifest['type']
+    assert isinstance(value['pdfPage'],int) and 1<=value['pdfPage']<=manifest['pages'],value
+   for child in value.values():visit(child)
+  elif isinstance(value,list):
+   for child in value:visit(child)
+ visit(source)
+ for table in ['vocabulary','grammar','documentaryExercises']:
+  ids=[row['id'] for row in source[table]]
+  assert len(ids)==len(set(ids)),f'Duplicate IDs in {table}'
+ for row in source['documentaryExercises']:
+  assert row['texts'] and all(isinstance(t,str) and t.strip() for t in row['texts'])
+  assert isinstance(row['requiresOriginalAudio'],bool)
+  assert not any(k in row for k in ['answer','answerKey','correctAnswer','correctOption']),'Documentary activities are open practice'
+ for row in source['corrections']:
+  if row.get('status') in ['underdetermined','withhold_as_answer_key']:
+   assert row['preferred'] is None,'Unresolved evidence cannot become an answer key'
 def main():
  ap=argparse.ArgumentParser(description=__doc__)
  ap.add_argument('--lesson',type=int,choices=[5],default=5);ap.add_argument('--word');ap.add_argument('--examples',action='store_true');ap.add_argument('--hanzi');ap.add_argument('--phrase');ap.add_argument('--table',default='vocabulary',choices=['vocabulary','dialogues','grammar','characters','readings','documentaryExercises','sentences','sources','corrections']);ap.add_argument('--limit',type=int,default=12);ap.add_argument('--offset',type=int,default=0);ap.add_argument('--summary',action='store_true');ap.add_argument('--validate',action='store_true');ap.add_argument('--full',action='store_true')
@@ -10,10 +37,9 @@ def main():
  source=json.loads((ROOT/'MING_KNOWLEDGE/v2/lesson5/content.json').read_text());public=json.loads((ROOT/'data/lesson5-public.json').read_text())
  if args.validate:
   subprocess.run([sys.executable,str(ROOT/'scripts/export-lesson5-web.py'),'--check'],check=True,stdout=sys.stderr)
-  assert len(source['sources'])==4
+  validate_sources(source)
   for row in source['vocabulary']:
    assert row['pinyin_source'] and (row.get('spanish_source') or row.get('spanish_ming'))
-   assert 1<=row['source']['pdfPage']<=source['sources']['book']['pages']
    assert row['example']['origin']=='editorial_study_example'
   print(json.dumps({'valid':True,'version':source['version'],'vocabulary':len(public['vocabulary']),'phrases':len(public['phrases']),'writing_targets':len(public['characters'])}));return
  if args.summary:result={k:len(v) for k,v in source.items() if isinstance(v,(list,dict))}
