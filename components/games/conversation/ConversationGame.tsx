@@ -10,6 +10,8 @@ import { AnswerBlocks } from '../shared/AnswerBlocks';
 import { ProductionAnswer } from '../shared/ProductionAnswer';
 import { GameFeedback } from '../shared/GameFeedback';
 import { GameProgress, GameResult, useGameSession } from '../shared/GameSession';
+import { useGameAudio } from '../shared/useGameAudio';
+import { GameAudioRetry } from '../shared/PhraseReinforcement';
 import './conversation.css';
 
 export function ConversationGame({ scope, characters }: { scope: CurriculumScope; characters: CharacterEntry[] }) {
@@ -36,7 +38,7 @@ function MissionSession({ mission, scope, characters }: { mission: ConversationM
       <div><small>CONVERSACIÓN GUIADA · LECCIÓN {mission.lesson}</small><h3>{mission.title}</h3><p>{mission.objective}</p></div>
       <dl><div><dt>Tu papel</dt><dd>{mission.role}</dd></div><div><dt>Hablas con</dt><dd>{mission.partner}</dd></div></dl>
       <div className="conversation-facts"><strong>Datos de tu papel</strong><ul>{mission.facts.map(fact => <li key={fact}>{fact}</li>)}</ul></div>
-      <p className="conversation-model-note">Practica las respuestas modelo del diálogo con estos datos.</p>
+      <p className="conversation-model-note">Practica las respuestas modelo del diálogo con estos datos. Audio de práctica generado con IA.</p>
     </section>
     {session.finished ? <GameResult score={session.score} total={session.total} unresolved={session.unresolved} assisted={session.assisted} firstPassScore={session.firstPassScore} initialTotal={session.initialTotal} onRestart={() => { session.restart(); setHelpedAttempts([]); }}/> : <>
       <GameProgress disabled={session.result !== null} level={session.level} onLevel={session.setLevel} round={session.round} total={session.total} retry={session.round >= mission.turns.length}/>
@@ -51,6 +53,7 @@ function ConversationRound({ turn, partner, level, result, characters, help, onH
   help: boolean; onHelp: () => void;
   onCheck: (answer: string, assisted: boolean) => void; onNext: () => void;
 }) {
+  const audio = useGameAudio();
   const [answer, setAnswer] = useState('');
   const [choices] = useState(() => shuffledBlockOrder(turn.choices).map(index => turn.choices[index]));
   const helpId = useId();
@@ -58,7 +61,7 @@ function ConversationRound({ turn, partner, level, result, characters, help, onH
   return <>
     <div className="conversation-turn-heading"><span>Tu turno</span><h4>{turn.task}</h4></div>
     <div className="dialogue-stage">
-      <div className="dialogue-speaker"><div className="dialogue-bubble"><small>{partner}</small><p><Hanzi>{prompt.hanzi}</Hanzi></p><SpeakButton text={prompt.hanzi} audioSrc={prompt.audioSrc}/></div></div>
+      <div className="dialogue-speaker"><div className="dialogue-bubble"><small>{partner}</small><div className="dialogue-prompt-line"><p><Hanzi>{prompt.hanzi}</Hanzi></p><SpeakButton text={prompt.hanzi} audioSrc={prompt.audioSrc || undefined} compact autoPlayKey={turn.challenge.id} ariaLabel={`Escuchar frase inicial: ${prompt.hanzi}`}/></div></div></div>
       <div className="dialogue-speaker learner"><div className="dialogue-bubble"><small>Tu respuesta</small><p><Hanzi>{answer || '…'}</Hanzi></p></div></div>
     </div>
     {result === null && <>
@@ -66,13 +69,14 @@ function ConversationRound({ turn, partner, level, result, characters, help, onH
         <button type="button" aria-expanded={help} aria-controls={helpId} onClick={onHelp} disabled={help}>Ver ayuda en español</button>
         {help && <div id={helpId}><p><strong>Te dicen:</strong> {prompt.meaningEs}</p><p><strong>Respuesta modelo:</strong> {target.meaningEs}</p><small>Este intento se registra con ayuda.</small></div>}
       </div>
-      {level === 1 ? <div className="dialogue-replies">{choices.map(choice => <button key={choice} aria-pressed={answer === choice} onClick={() => setAnswer(choice)}><Hanzi>{choice}</Hanzi></button>)}</div>
-        : level === 2 ? <AnswerBlocks blocks={sentenceBlocks({ hanzi: target.hanzi, tokens: target.tokens ?? [] })} onChange={setAnswer}/>
+      {level === 1 ? <div className="dialogue-replies">{choices.map(choice => <button key={choice} aria-pressed={answer === choice} type="button" onClick={() => { audio.play(choice); setAnswer(choice); }}><Hanzi>{choice}</Hanzi></button>)}</div>
+        : level === 2 ? <AnswerBlocks blocks={sentenceBlocks({ hanzi: target.hanzi, tokens: target.tokens ?? [] })} onChange={setAnswer} onSelect={audio.play}/>
           : <ProductionAnswer value={answer} onChange={setAnswer}/>}
-      <button type="button" className="button button-primary" disabled={!answer.trim()} onClick={() => onCheck(answer, help)}>Responder</button>
+      <button type="button" className="button button-primary" disabled={!answer.trim()} onClick={() => { audio.play(target.hanzi, target.pinyin); onCheck(answer, help); }}>Responder</button>
     </>}
+    <GameAudioRetry error={audio.error} retry={audio.retry}/>
     {result !== null && <>
-      <GameFeedback correct={result} hanzi={target.hanzi} pinyin={target.pinyin} meaning={target.meaningEs} characters={characters}/>
+      <GameFeedback optionalSupport correct={result} hanzi={target.hanzi} pinyin={target.pinyin} meaning={target.meaningEs} characters={characters}/>
       <p className="conversation-coaching">{turn.feedback}</p>
       {help && <p className="conversation-help-used">Intento con ayuda en español.</p>}
       <button type="button" className="button button-primary" onClick={onNext}>Continuar conversación</button>

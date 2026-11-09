@@ -88,6 +88,7 @@ test('construir permite quitar, vaciar y usar dos bloques iguales', async ({ pag
     }
     await page.getByRole('button', { name: 'Comprobar', exact: true }).click();
     await expect(page.locator('.workbook-feedback.correct')).toBeVisible();
+    await page.getByRole('button', { name: 'Mostrar pinyin', exact: true }).click();
     await expect(page.locator('.workbook-model-pinyin')).toBeVisible();
     await page.getByRole('button', { name: index === 4 ? 'Ver mi resultado' : 'Continuar', exact: true }).click();
   }

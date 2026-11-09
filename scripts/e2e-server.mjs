@@ -8,7 +8,7 @@ await application.prepare();
 const server = createServer((request, response) => handle(request, response));
 await new Promise((resolve, reject) => {
   server.once('error', reject);
-  server.listen(3000, '127.0.0.1', resolve);
+  server.listen(Number(process.env.PORT ?? 3000), '127.0.0.1', resolve);
 });
 
 let closing = false;

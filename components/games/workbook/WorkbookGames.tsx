@@ -9,7 +9,9 @@ import { trackAnalyticsEvent } from '@/lib/analytics/client';
 import { getStudyScopeLabel } from '@/lib/study-options';
 import { Hanzi } from '@/components/Hanzi';
 import { MingIcon, type MingIconName } from '@/components/MingIcon';
-import { PinyinText } from '@/components/PinyinText';
+import { SpeakButton } from '@/components/SpeakButton';
+import { useGameAudio } from '../shared/useGameAudio';
+import { PhraseReinforcement, GameAudioRetry } from '../shared/PhraseReinforcement';
 import './workbook.css';
 
 const modes: { id: WorkbookMode; title: string; action: string; description: string; skill: string; icon: MingIconName; color: string }[] = [
@@ -58,7 +60,7 @@ export function WorkbookGames({ scope, questions, initialMode = 'order' }: Props
         <p className="workbook-small">Sin cronómetro. Cada respuesta tiene una explicación.</p>
       </div>
     </section>}
-    <p className="workbook-footnote">Actividades adaptadas de los libros de práctica. El resultado resume esta sesión.</p>
+    <p className="workbook-footnote">Actividades adaptadas de los libros de práctica. El resultado resume esta sesión. Audio de práctica generado con IA.</p>
   </div>;
 }
 
@@ -147,6 +149,8 @@ function WorkbookSession({ scope, session, title, onRestart, onReview }: { scope
 }
 
 function WorkbookRound({ question, result, onCheck, onNext, last, retry }: { question: WorkbookQuestion; result: boolean | null; onCheck: (answer: string, helped: boolean) => void; onNext: () => void; last: boolean; retry: boolean }) {
+  const audio = useGameAudio();
+  const model = question.modelHanzi ?? question.answer;
   const [answer, setAnswer] = useState('');
   const [selected, setSelected] = useState<number[]>([]);
   const [hint, setHint] = useState(false);
@@ -174,22 +178,21 @@ function WorkbookRound({ question, result, onCheck, onNext, last, retry }: { que
   return <div className="workbook-round" data-question-id={question.id}>
     <div className="workbook-question-top"><span className="workbook-lesson">Lección {question.lesson}</span>{retry && <span className="workbook-retry-tip">Recuerda la explicación e inténtalo otra vez.</span>}</div>
     <h3 ref={headingRef} tabIndex={-1}>{question.prompt}</h3>
-    {question.context && <div className={`workbook-context ${question.mode === 'dialogue' ? 'workbook-dialogue-context' : ''}`}>{question.mode === 'dialogue' && <span className="workbook-speaker" aria-hidden="true"><MingIcon name="chat" width="22" height="22"/></span>}<p><Hanzi>{question.context}</Hanzi></p></div>}
-    <form onSubmit={event => { event.preventDefault(); if (ready && !answered) onCheck(chosenAnswer, hint); }}>
+    {question.context && <div className={`workbook-context ${question.mode === 'dialogue' ? 'workbook-dialogue-context' : ''}`}>{question.mode === 'dialogue' && <span className="workbook-speaker" aria-hidden="true"><MingIcon name="chat" width="22" height="22"/></span>}<p><Hanzi>{question.context}</Hanzi></p>{question.mode === 'dialogue' && <SpeakButton text={question.context} compact autoPlayKey={question.id} ariaLabel={`Escuchar frase inicial: ${question.context}`}/>}</div>}
+    <form onSubmit={event => { event.preventDefault(); if (ready && !answered) { audio.play(model, question.pinyin); onCheck(chosenAnswer, hint); } }}>
       {isOrder ? <div className="workbook-builder">
         <div className="workbook-answer-label"><span>Tu frase</span><button type="button" className="workbook-clear" disabled={!selected.length || answered} onClick={() => setSelected([])}>Vaciar</button></div>
         <div className="workbook-target" role="group" aria-label="Tu frase ordenada">{selected.length ? selected.map((index, position) => <button type="button" key={index} disabled={answered} onClick={() => setSelected(current => current.filter((_, item) => item !== position))} aria-label={`Quitar ${tokens[index]}`}><Hanzi>{tokens[index]}</Hanzi><span aria-hidden="true">×</span></button>) : <span className="workbook-target-placeholder">Toca las piezas en el orden que quieras.</span>}</div>
-        <div className="workbook-token-tray" role="group" aria-label="Piezas disponibles">{tokenOrder.map(index => <button type="button" key={index} disabled={answered || selected.includes(index)} onClick={() => setSelected(current => [...current, index])} aria-label={`Añadir ${tokens[index]}`}><Hanzi>{tokens[index]}</Hanzi></button>)}</div>
+        <div className="workbook-token-tray" role="group" aria-label="Piezas disponibles">{tokenOrder.map(index => <button type="button" key={index} disabled={answered || selected.includes(index)} onClick={() => { audio.play(tokens[index]); setSelected(current => [...current, index]); }} aria-label={`Añadir ${tokens[index]}`}><Hanzi>{tokens[index]}</Hanzi></button>)}</div>
         {!answered && <p className="workbook-small">Puedes tocar una pieza de tu frase para devolverla.</p>}
-      </div> : <div className="workbook-options" role="group" aria-label="Elige una respuesta">{options.map((option, index) => <button type="button" key={option} disabled={answered} aria-pressed={answer === option} onClick={() => setAnswer(option)}><span className="workbook-option-letter" aria-hidden="true">{String.fromCharCode(65 + index)}</span><Hanzi>{option}</Hanzi><span className="workbook-option-selection" aria-hidden="true">{answer === option ? '✓' : ''}</span></button>)}</div>}
+      </div> : <div className="workbook-options" role="group" aria-label="Elige una respuesta">{options.map((option, index) => <button type="button" key={option} disabled={answered} aria-pressed={answer === option} onClick={() => { audio.play(option); setAnswer(option); }}><span className="workbook-option-letter" aria-hidden="true">{String.fromCharCode(65 + index)}</span><Hanzi>{option}</Hanzi><span className="workbook-option-selection" aria-hidden="true">{answer === option ? '✓' : ''}</span></button>)}</div>}
       {!answered && <><div className="workbook-round-actions"><button className="workbook-secondary workbook-hint-trigger" type="button" aria-expanded={hint} aria-controls="workbook-hint" onClick={() => setHint(true)} disabled={hint}><MingIcon name="sun" width="18" height="18"/>{hint ? 'Pista consultada' : 'Dame una pista'}</button><button type="submit" className="workbook-primary" disabled={!ready}>Comprobar <MingIcon name="check" width="19" height="19"/></button></div>{hint && <div className="workbook-hint" id="workbook-hint" role="status"><strong>Una pista para pensar</strong><p><Hanzi>{question.hint}</Hanzi></p><small>Este intento se registra con ayuda.</small></div>}</>}
     </form>
+    <GameAudioRetry error={audio.error} retry={audio.retry}/>
     {answered && <div className={`workbook-feedback ${result ? 'correct' : 'incorrect'}`} ref={feedbackRef} tabIndex={-1} role="status">
       <strong className="workbook-feedback-title">{result ? '¡Bien pensado!' : 'Vamos a entenderlo'}</strong>
       {!result && <p className="workbook-feedback-lead">Esta es la respuesta esperada. La practicarás de nuevo{retry ? ' en otra sesión' : ' al final'}.</p>}
-      <p className="workbook-model"><Hanzi>{question.answer}</Hanzi></p>
-      {question.pinyin && <p className="workbook-model-pinyin"><PinyinText>{question.pinyin}</PinyinText></p>}
-      {question.translation && <p className="workbook-model-meaning">{question.translation}</p>}
+      <PhraseReinforcement hanzi={model} pinyin={question.pinyin} translation={question.translation}/>
       <div className="workbook-explanation"><span>¿Por qué?</span><p><Hanzi>{question.explanation}</Hanzi></p></div>
       <button className="workbook-primary" type="button" onClick={onNext}>{last ? 'Ver mi resultado' : 'Continuar'}<MingIcon name="arrow" width="19" height="19"/></button>
     </div>}

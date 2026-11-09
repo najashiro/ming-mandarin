@@ -240,7 +240,7 @@ svg { flex-shrink: 0; }
   .curriculum-nav { overflow: visible; flex-wrap: nowrap; padding-bottom: 5px; align-items: center; }
   .curriculum-nav > a { flex-shrink: 0; }
   .curriculum-links { display: none; }
-  .scope-select { display: flex; flex: 1; align-items: center; justify-content: flex-end; gap: 10px; min-width: 0; font-size: 11px; color: var(--muted); }
+  .scope-select { overflow: clip; display: flex; flex: 1; align-items: center; justify-content: flex-end; gap: 10px; min-width: 0; font-size: 11px; color: var(--muted); }
   .scope-select select { min-height: 44px; min-width: 0; max-width: 100%; flex: 1; border: 1px solid var(--line); border-radius: 8px; padding: 8px; color: var(--jade-dark); background: #fffdf8; font-size: 13px; }
   .study-heading { padding-top: 13px; }
   .study-heading h1 { font-size: 34px; line-height: 1.5; overflow-wrap: anywhere; }

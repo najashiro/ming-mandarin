@@ -1,0 +1,327 @@
+{
+  "wb-l1-complete-1": {
+    "hanzi": "我姓宋。",
+    "pinyin": "Wǒ xìng Sòng.",
+    "translation": "Mi apellido es Song."
+  },
+  "wb-l1-complete-2": {
+    "hanzi": "认识你很高兴。",
+    "pinyin": "Rènshi nǐ hěn gāoxìng.",
+    "translation": "Me alegra conocerte."
+  },
+  "wb-l1-complete-3": {
+    "hanzi": "他也很忙。",
+    "pinyin": "Tā yě hěn máng.",
+    "translation": "Él también está muy ocupado."
+  },
+  "wb-l1-complete-4": {
+    "hanzi": "你最近怎么样？",
+    "pinyin": "Nǐ zuìjìn zěnmeyàng?",
+    "translation": "¿Cómo has estado últimamente?"
+  },
+  "wb-l1-complete-5": {
+    "hanzi": "我不太忙。你呢？",
+    "pinyin": "Wǒ bú tài máng, nǐ ne?",
+    "translation": "No estoy tan ocupado, y tú?"
+  },
+  "wb-l2-complete-1": {
+    "hanzi": "您好！老师。",
+    "pinyin": "Nín hǎo! Lǎoshī.",
+    "translation": "¡Hola, profesor!"
+  },
+  "wb-l2-complete-2": {
+    "hanzi": "你是哪国人？",
+    "pinyin": "Nǐ shì nǎ guó rén?",
+    "translation": "¿De qué país eres?"
+  },
+  "wb-l2-complete-3": {
+    "hanzi": "我是美国人。",
+    "pinyin": "Wǒ shì Měiguó rén.",
+    "translation": "Soy estadounidense."
+  },
+  "wb-l2-complete-4": {
+    "hanzi": "马大为学习汉语。",
+    "pinyin": "Mǎ Dàwéi xuéxí Hànyǔ.",
+    "translation": "Ma Dawei estudia chino."
+  },
+  "wb-l2-complete-5": {
+    "hanzi": "你看，那是饺子。",
+    "pinyin": "Nǐ kàn, nà shì jiǎozi.",
+    "translation": "Mira, eso es jiaozi."
+  },
+  "wb-l3-complete-1": {
+    "hanzi": "你们家有几口人？",
+    "pinyin": "Nǐmen jiā yǒu jǐ kǒu rén?",
+    "translation": "¿Cuántas personas hay en tu familia?"
+  },
+  "wb-l3-complete-2": {
+    "hanzi": "这是我们家的照片。",
+    "pinyin": "Zhè shì wǒmen jiā de zhàopiàn.",
+    "translation": "Esta es una foto de nuestra familia."
+  },
+  "wb-l3-complete-3": {
+    "hanzi": "我爸爸是医生。",
+    "pinyin": "Wǒ bàba shì yīshēng.",
+    "translation": "Mi padre es médico."
+  },
+  "wb-l3-complete-4": {
+    "hanzi": "我们家有茶和咖啡。",
+    "pinyin": "Wǒmen jiā yǒu chá hé kāfēi.",
+    "translation": "En nuestra casa hay té y café."
+  },
+  "wb-l3-complete-5": {
+    "hanzi": "今天我们有英语课。",
+    "pinyin": "Jīntiān wǒmen yǒu Yīngyǔ kè.",
+    "translation": "Hoy tenemos clase de inglés."
+  },
+  "wb-l4-complete-1": {
+    "hanzi": "明天下午两点我有汉字课。",
+    "pinyin": "Míngtiān xiàwǔ liǎng diǎn wǒ yǒu Hànzì kè.",
+    "translation": "Mañana a las dos de la tarde tengo clase de caracteres chinos."
+  },
+  "wb-l4-complete-2": {
+    "hanzi": "五点半我回学校。",
+    "pinyin": "Wǔ diǎn bàn wǒ huí xuéxiào.",
+    "translation": "A las cinco y media vuelvo a la escuela."
+  },
+  "wb-l4-complete-3": {
+    "hanzi": "现在差十分六点。",
+    "pinyin": "Xiànzài chà shí fēn liù diǎn.",
+    "translation": "Ahora son las seis menos diez."
+  },
+  "wb-l4-complete-4": {
+    "hanzi": "我们班男生多，女生少。",
+    "pinyin": "Wǒmen bān nánshēng duō, nǚshēng shǎo.",
+    "translation": "En nuestra clase hay muchos alumnos y pocas alumnas."
+  },
+  "wb-l4-complete-5": {
+    "hanzi": "我们一起练习口语吧。",
+    "pinyin": "Wǒmen yìqǐ liànxí kǒuyǔ ba.",
+    "translation": "Practiquemos juntos la expresión oral."
+  },
+  "wb-l5-complete-1": {
+    "hanzi": "明天是你的生日。",
+    "pinyin": "Míngtiān shì nǐ de shēngrì.",
+    "translation": "Mañana es tu cumpleaños."
+  },
+  "wb-l5-complete-2": {
+    "hanzi": "我们一起唱歌。",
+    "pinyin": "Wǒmen yìqǐ chàng gē.",
+    "translation": "Cantamos juntos."
+  },
+  "wb-l5-complete-3": {
+    "hanzi": "我送他一盒巧克力。",
+    "pinyin": "Wǒ sòng tā yì hé qiǎokèlì.",
+    "translation": "Le regalo a él una caja de chocolate."
+  },
+  "wb-l5-complete-4": {
+    "hanzi": "你们好，欢迎！",
+    "pinyin": "Nǐmen hǎo, huānyíng!",
+    "translation": "¡Hola a todos, bienvenidos!"
+  },
+  "wb-l5-complete-5": {
+    "hanzi": "来，咱们干杯！",
+    "pinyin": "Lái, zánmen gānbēi!",
+    "translation": "¡Vamos, brindemos!"
+  },
+  "wb-l1-dialogue-1": {
+    "hanzi": "你好！",
+    "pinyin": "Nǐ hǎo!",
+    "translation": "¡Hola!"
+  },
+  "wb-l1-dialogue-2": {
+    "hanzi": "我姓林，叫林娜。",
+    "pinyin": "Wǒ xìng Lín, jiào Lín Nà.",
+    "translation": "Mi apellido es Lin y me llamo Lin Na."
+  },
+  "wb-l1-dialogue-3": {
+    "hanzi": "认识你我也很高兴。",
+    "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng.",
+    "translation": "A mí también me alegra conocerte."
+  },
+  "wb-l1-dialogue-4": {
+    "hanzi": "我不太累。",
+    "pinyin": "Wǒ bú tài lèi.",
+    "translation": "No estoy tan cansado."
+  },
+  "wb-l1-dialogue-5": {
+    "hanzi": "我很忙。",
+    "pinyin": "Wǒ hěn máng.",
+    "translation": "Estoy muy ocupado."
+  },
+  "wb-l1-dialogue-6": {
+    "hanzi": "我也很忙。",
+    "pinyin": "Wǒ yě hěn máng.",
+    "translation": "Yo también estoy muy ocupado."
+  },
+  "wb-l2-dialogue-1": {
+    "hanzi": "早上好，大为！",
+    "pinyin": "Zǎoshang hǎo, Dàwéi!",
+    "translation": "¡Buenos días, Dawei!"
+  },
+  "wb-l2-dialogue-2": {
+    "hanzi": "我是加拿大人。",
+    "pinyin": "Wǒ shì Jiānádà rén.",
+    "translation": "Soy canadiense."
+  },
+  "wb-l2-dialogue-3": {
+    "hanzi": "我姓林。",
+    "pinyin": "Wǒ xìng Lín.",
+    "translation": "Mi apellido es Lin."
+  },
+  "wb-l2-dialogue-4": {
+    "hanzi": "那不是包子，是饺子。",
+    "pinyin": "Nà bú shì bāozi, shì jiǎozi.",
+    "translation": "Eso no es baozi, es jiaozi."
+  },
+  "wb-l2-dialogue-5": {
+    "hanzi": "这是点心。",
+    "pinyin": "Zhè shì diǎnxin.",
+    "translation": "Esto es un bocadillo."
+  },
+  "wb-l2-dialogue-6": {
+    "hanzi": "很好吃。",
+    "pinyin": "Hěn hǎochī.",
+    "translation": "Está muy rico."
+  },
+  "wb-l3-dialogue-1": {
+    "hanzi": "他是老师。",
+    "pinyin": "Tā shì lǎoshī.",
+    "translation": "Él es profesor."
+  },
+  "wb-l3-dialogue-2": {
+    "hanzi": "我们家有五口人。",
+    "pinyin": "Wǒmen jiā yǒu wǔ kǒu rén.",
+    "translation": "En nuestra familia somos cinco."
+  },
+  "wb-l3-dialogue-3": {
+    "hanzi": "贝贝是我的小狗。",
+    "pinyin": "Bèibei shì wǒ de xiǎogǒu.",
+    "translation": "Beibei es mi perrito."
+  },
+  "wb-l3-dialogue-4": {
+    "hanzi": "十岁。",
+    "pinyin": "Shí suì.",
+    "translation": "Diez años."
+  },
+  "wb-l3-dialogue-5": {
+    "hanzi": "没有。",
+    "pinyin": "Méiyǒu.",
+    "translation": "No; no hay o no tengo, según la pregunta."
+  },
+  "wb-l3-dialogue-6": {
+    "hanzi": "我喝咖啡。",
+    "pinyin": "Wǒ hē kāfēi.",
+    "translation": "Yo tomo café."
+  },
+  "wb-l4-dialogue-1": {
+    "hanzi": "我明天上午十点有课。",
+    "pinyin": "Wǒ míngtiān shàngwǔ shí diǎn yǒu kè.",
+    "translation": "Mañana tengo clase a las diez de la mañana."
+  },
+  "wb-l4-dialogue-2": {
+    "hanzi": "我没有时间。",
+    "pinyin": "Wǒ méiyǒu shíjiān.",
+    "translation": "No tengo tiempo."
+  },
+  "wb-l4-dialogue-3": {
+    "hanzi": "特别累。",
+    "pinyin": "Tèbié lèi",
+    "translation": "especialmente cansado"
+  },
+  "wb-l4-dialogue-4": {
+    "hanzi": "不多。",
+    "pinyin": "Bù duō.",
+    "translation": "No son muchas."
+  },
+  "wb-l4-dialogue-5": {
+    "hanzi": "差一刻八点。",
+    "pinyin": "Chà yí kè bā diǎn.",
+    "translation": "Son las ocho menos cuarto."
+  },
+  "wb-l4-dialogue-6": {
+    "hanzi": "二十八个人。",
+    "pinyin": "Èrshíbā ge rén.",
+    "translation": "Veintiocho personas."
+  },
+  "wb-l5-dialogue-1": {
+    "hanzi": "我一九八五年出生，今年三十五岁。",
+    "pinyin": "Wǒ yī jiǔ bā wǔ nián chūshēng, jīnnián sānshíwǔ suì.",
+    "translation": "Nací en 1985 y este año tengo treinta y cinco años."
+  },
+  "wb-l5-dialogue-2": {
+    "hanzi": "真不好意思，明天我没有时间。",
+    "pinyin": "Zhēn bù hǎoyìsi, míngtiān wǒ méiyǒu shíjiān.",
+    "translation": "Lo siento mucho, mañana no tengo tiempo."
+  },
+  "wb-l5-dialogue-3": {
+    "hanzi": "我送他三盒巧克力。",
+    "pinyin": "Wǒ sòng tā sān hé qiǎokèlì.",
+    "translation": "Le regalo a él tres cajas de chocolate."
+  },
+  "wb-l5-dialogue-4": {
+    "hanzi": "谢谢！",
+    "pinyin": "Xièxie!",
+    "translation": "¡Gracias!"
+  },
+  "wb-l5-dialogue-5": {
+    "hanzi": "她教我说汉语。",
+    "pinyin": "Tā jiāo wǒ shuō Hànyǔ.",
+    "translation": "Ella me enseña a hablar chino."
+  },
+  "wb-l5-dialogue-6": {
+    "hanzi": "林娜，你好！",
+    "pinyin": "Lín Nà, nǐ hǎo!",
+    "translation": "¡Hola, Lin Na!"
+  },
+  "wb-l6-complete-1": {
+    "hanzi": "图书馆在办公楼旁边。",
+    "pinyin": "Túshūguǎn zài bàngōnglóu pángbiān.",
+    "translation": "La biblioteca está al lado del edificio de oficinas."
+  },
+  "wb-l6-complete-2": {
+    "hanzi": "右边的楼是宿舍楼。",
+    "pinyin": "Yòubian de lóu shì sùshèlóu.",
+    "translation": "El edificio de la derecha es la residencia."
+  },
+  "wb-l6-complete-3": {
+    "hanzi": "这儿有一条胡同。",
+    "pinyin": "Zhèr yǒu yì tiáo hútòng.",
+    "translation": "Aquí hay un callejón."
+  },
+  "wb-l6-complete-4": {
+    "hanzi": "请问，体育馆在哪儿？",
+    "pinyin": "Qǐngwèn, tǐyùguǎn zài nǎr?",
+    "translation": "Disculpe, ¿dónde está el gimnasio?"
+  },
+  "wb-l6-complete-5": {
+    "hanzi": "你家北边有商店吗？",
+    "pinyin": "Nǐ jiā běibian yǒu shāngdiàn ma?",
+    "translation": "¿Hay tiendas al norte de tu casa?"
+  },
+  "wb-l6-dialogue-1": {
+    "hanzi": "图书馆在东门旁边。",
+    "pinyin": "Túshūguǎn zài dōngmén pángbiān.",
+    "translation": "La biblioteca está al lado de la puerta este."
+  },
+  "wb-l6-dialogue-2": {
+    "hanzi": "我也不知道我在哪儿。",
+    "pinyin": "Wǒ yě bù zhīdào wǒ zài nǎr.",
+    "translation": "Yo tampoco sé dónde estoy."
+  },
+  "wb-l6-dialogue-3": {
+    "hanzi": "我说：“你在做什么呢？”",
+    "pinyin": "Wǒ shuō: “Nǐ zài zuò shénme ne?”",
+    "translation": "Digo: «¿Qué estás haciendo?»."
+  },
+  "wb-l6-dialogue-4": {
+    "hanzi": "就是小街道。",
+    "pinyin": "Jiù shì xiǎo jiēdào.",
+    "translation": "Es una calle pequeña."
+  },
+  "wb-l6-dialogue-5": {
+    "hanzi": "对，那个书店很大。",
+    "pinyin": "Duì, nà ge shūdiàn hěn dà.",
+    "translation": "Sí, esa librería es muy grande."
+  }
+}

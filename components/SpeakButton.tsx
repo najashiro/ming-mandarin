@@ -4,6 +4,12 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { audioForMandarinText } from '@/lib/mandarin-audio';
 let stopActive: (() => void) | null = null;
 export function stopMandarinAudio() { stopActive?.(); }
+// Every pronunciation surface shares one playback focus, including game tiles.
+export function claimMandarinAudio(stop: () => void) {
+  stopActive?.();
+  stopActive = stop;
+  return () => { if (stopActive === stop) stopActive = null; };
+}
 type SpeakButtonProps = { text: string; reading?: string; speechText?: string; audioSrc?: string | string[]; rate?: number; label?: string; compact?: boolean; ariaLabel?: string; title?: string; autoPlayKey?: string; onAutoPlayBlocked?: () => void };
 export function SpeakButton({ text, reading, audioSrc, rate = 0.85, label = 'Escuchar', compact = false, ariaLabel, title, autoPlayKey, onAutoPlayBlocked }: SpeakButtonProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);

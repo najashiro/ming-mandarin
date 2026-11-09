@@ -1,3 +1,4 @@
+import languageSupport from '@/data/workbook-language-support.json' with { type: 'json' };
 import type { CurriculumScope, LessonNumber, SourceRef } from '@/data/types';
 
 export type WorkbookMode = 'order' | 'complete' | 'dialogue';
@@ -11,6 +12,7 @@ export type WorkbookQuestion = {
   prompt: string;
   context?: string;
   answer: string;
+  modelHanzi?: string;
   options?: string[];
   tokens?: string[];
   pinyin?: string;
@@ -265,6 +267,11 @@ export function getWorkbookQuestions(scope: CurriculumScope, mode?: WorkbookMode
     .filter((question) => lessons.has(question.lesson) && (!mode || question.mode === mode))
     .map((question) => ({
       ...question,
+      ...(languageSupport[question.id as keyof typeof languageSupport] ? {
+        modelHanzi: languageSupport[question.id as keyof typeof languageSupport].hanzi,
+        pinyin: languageSupport[question.id as keyof typeof languageSupport].pinyin,
+        translation: languageSupport[question.id as keyof typeof languageSupport].translation,
+      } : {}),
       ...(question.tokens ? { tokens: [...question.tokens] } : {}),
       ...(question.options ? { options: [...question.options] } : {}),
       ...(question.acceptedAnswers ? { acceptedAnswers: [...question.acceptedAnswers] } : {}),

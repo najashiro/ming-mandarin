@@ -6,6 +6,8 @@ import lesson4LanguageAliases from '@/data/lesson4-audio-aliases.json';
 import manifest from '@/data/mandarin-audio.json';
 import pronunciation from '@/data/pronunciation.json';
 import availableMandarin from '@/data/mandarin-audio-available.json';
+import gameAudio from '@/data/game-audio.json';
+import gameAudioAvailable from '@/data/game-audio-available.json';
 import { timeTokens } from '@/data/time-game';
 import { timeAudioFile } from './time-audio-key.mjs';
 
@@ -62,6 +64,18 @@ for (const clip of lesson5Audio.clips) {
   const src = `/audio/mandarin/${clip.file}`;
   lesson4ByText.set(normalizeMandarin(clip.input), src);
   if (clip.expectedPinyin) clipsByReading.set(readingKey(clip.input, clip.expectedPinyin), src);
+}
+
+for (const clip of gameAudio.clips) {
+  if (!(gameAudioAvailable.files as string[]).includes(clip.file)) continue;
+  const src = `/audio/mandarin/${clip.file}`;
+  // Add only verified missing game clips; retain existing pronunciation choices.
+  if (!clipsByText.has(normalizeMandarin(clip.input)) && !lesson4ByText.has(normalizeMandarin(clip.input))) {
+    clipsByText.set(normalizeMandarin(clip.input), src);
+  }
+  if (clip.expectedPinyin && !clipsByReading.has(readingKey(clip.input, clip.expectedPinyin))) {
+    clipsByReading.set(readingKey(clip.input, clip.expectedPinyin), src);
+  }
 }
 
 export function audioForMandarinText(text: string, pinyin?: string): string | undefined {
