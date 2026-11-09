@@ -5,5 +5,6 @@ export const arcadeGames = [
   { id: 'conversacion', name: 'Conversación', description: 'Asume un papel y completa el diálogo en una misión guiada. Practica con opciones, bloques o de memoria.', kind: 'conversation', skill: 'Roles y comunicación', cover: null },
   { id: 'hanzi-lab', name: 'Hanzi Lab', description: 'Escucha, reconoce y escribe caracteres. Revisa tus errores y distingue la práctica guiada del recuerdo.', kind: 'hanzi', skill: 'Caracteres y escritura', cover: null },
   { id: 'cumpleanos', name: 'Organiza el cumpleaños', description: 'Practica fechas, regalos y felicitaciones. Reconoce, construye y recuerda las frases de la lección 5.', kind: 'birthday', skill: 'Fechas y comunicación', cover: null },
+  { id: 'escondites', name: '¿Dónde se escondió?', description: 'Sigue pistas en chino, encuentra animales y llega a 100 puntos. Dos intentos, cuatro amigos y un jardín por explorar.', kind: 'hide-and-seek', skill: 'Ubicaciones · Lección 06', cover: '/images/games/covers/escondites.svg' },
 ] as const;
 export const ARCADE_GAME_COUNT = arcadeGames.length;

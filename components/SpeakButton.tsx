@@ -10,8 +10,8 @@ export function claimMandarinAudio(stop: () => void) {
   stopActive = stop;
   return () => { if (stopActive === stop) stopActive = null; };
 }
-type SpeakButtonProps = { text: string; reading?: string; speechText?: string; audioSrc?: string | string[]; rate?: number; label?: string; compact?: boolean; ariaLabel?: string; title?: string; autoPlayKey?: string; onAutoPlayBlocked?: () => void };
-export function SpeakButton({ text, reading, audioSrc, rate = 0.85, label = 'Escuchar', compact = false, ariaLabel, title, autoPlayKey, onAutoPlayBlocked }: SpeakButtonProps) {
+type SpeakButtonProps = { text: string; reading?: string; speechText?: string; audioSrc?: string | string[]; rate?: number; label?: string; compact?: boolean; inlineText?: boolean; ariaLabel?: string; title?: string; autoPlayKey?: string; onAutoPlayBlocked?: () => void };
+export function SpeakButton({ text, reading, audioSrc, rate = 0.85, label = 'Escuchar', compact = false, inlineText = false, ariaLabel, title, autoPlayKey, onAutoPlayBlocked }: SpeakButtonProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const runRef = useRef(0);
   const stopRef = useRef<(() => void) | null>(null);
@@ -74,5 +74,8 @@ export function SpeakButton({ text, reading, audioSrc, rate = 0.85, label = 'Esc
   if (!sources.length) return null;
   const active = state === 'loading' || state === 'playing';
   const status = state === 'error' ? 'No se pudo reproducir. Reintentar' : state === 'loading' ? 'Cargando. Detener' : active ? 'Detener' : label;
-  return <span className="audio-control"><button className={`audio-button ${state}${compact ? ' compact' : ''}`} type="button" disabled={!sources.length} onClick={() => void play()} aria-label={active || !sources.length || state === 'error' ? `${status}: ${text}` : ariaLabel ?? `${label}: ${text}`} aria-busy={state === 'loading'} title={title ?? `${status}: ${text}`}><span aria-hidden="true">{active ? '■' : <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M11 4 6 8H3v8h3l5 4V4Z M15 8a6 6 0 0 1 0 8 M18 5a10 10 0 0 1 0 14"/></svg>}</span>{!compact && <> <Hanzi>{status}</Hanzi></>}</button>{(!sources.length || state === 'error') && <small role="status">{status}</small>}</span>;
+  return <span className="audio-control"><button className={`audio-button ${state}${compact ? ' compact' : ''}${inlineText ? ' inline-text' : ''}`} type="button" disabled={!sources.length} onClick={() => void play()} aria-label={active || !sources.length || state === 'error' ? `${status}: ${text}` : ariaLabel ?? `${label}: ${text}`} aria-busy={state === 'loading'} title={title ?? `${status}: ${text}`}>
+    {inlineText && <span className="audio-chinese"><Hanzi>{text}</Hanzi></span>}
+    <span className="audio-icon" aria-hidden="true">{active ? '■' : <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M11 4 6 8H3v8h3l5 4V4Z M15 8a6 6 0 0 1 0 8 M18 5a10 10 0 0 1 0 14"/></svg>}</span>{!compact && !inlineText && <> <Hanzi>{status}</Hanzi></>}
+  </button>{(!sources.length || state === 'error') && <small role="status">{status}</small>}</span>;
 }
