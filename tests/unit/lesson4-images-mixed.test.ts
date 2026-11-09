@@ -3,15 +3,28 @@ import { readFileSync } from 'node:fs';
 import sharp from 'sharp';
 import { describe, expect, it } from 'vitest';
 import media from '@/data/lesson4-media.json';
+import corpus from '@/data/lesson4-public.json';
 import prompts from '@/docs/lesson4-image-prompts.json';
 import { vocabularyMedia } from '@/lib/vocabulary-media';
 import { resolvePublishedImages } from '@/lib/vocabulary-image-review';
 import { retoMixtoForScope } from '@/data/reto-mixto-lesson4';
 import { buildRetoMixtoDeck, retryQuestion } from '@/lib/reto-mixto';
+import { getVocabularySet } from '@/lib/vocabulary';
 const approved = resolvePublishedImages(vocabularyMedia, []);
 const hash = (value: string | Buffer) => createHash('sha256').update(value).digest('hex');
 
 describe('L4 reviewed images and mixed practice', () => {
+  it('keeps every published L4 word in the image plan without treating plans as approvals', () => {
+    const planned = new Set(prompts.entries.map(entry => entry.wordId));
+    for (const word of corpus.vocabulary) expect(planned.has(word.id), word.id).toBe(true);
+    for (const id of ['v-学校', 'v-女生', 'v-运动', 'v-去', 'v-说', 'v-昨天', 'v-手机']) {
+      const asset = media.find(entry => entry.wordId === id)!;
+      expect(asset.status).toBe('approved');
+      expect(asset.imageQuizEligible).toBe(false);
+    }
+    expect(media.some(entry => entry.wordId === 'v-门')).toBe(false);
+    expect(corpus.vocabulary.find(word => word.id === 'v-门')?.spanish).toBe('clasificador de asignaturas');
+  });
   it('keeps one current asset per ID with reproducible prompts and real alpha', async () => {
     expect(new Set(vocabularyMedia.map(row => row.wordId)).size).toBe(vocabularyMedia.length);
     for (const entry of media) {
@@ -22,6 +35,13 @@ describe('L4 reviewed images and mixed practice', () => {
       expect(metadata).toMatchObject({ width: 1618, height: 1000, hasAlpha: true });
       const {data,info} = await sharp(buffer).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
       for (const [x,y] of [[0,0],[info.width-1,0],[0,info.height-1],[info.width-1,info.height-1]]) expect(data[(y*info.width+x)*4+3]).toBe(0);
+      if (entry.wordId === 'v-手机' || entry.wordId === 'v-运动') {
+        // Mobile QA found the flip control over the phone screen/athlete's
+        // face. Keep this top-right control area entirely transparent.
+        let controlAlpha = 0;
+        for (let y=0;y<260;y++) for (let x=1360;x<info.width;x++) controlAlpha += data[(y*info.width+x)*4+3];
+        expect(controlAlpha, `${entry.wordId} covers the flip control`).toBe(0);
+      }
     }
   });
   it('mixes pictures, audio and source-token construction within lesson 4', () => {
@@ -45,11 +65,21 @@ describe('L4 reviewed images and mixed practice', () => {
     }
   });
   it('uses every approved vocabulary picture in its scope as quiz or feedback support', () => {
-    const entries=retoMixtoForScope('l1-l2-l3-l4-l5', approved);
-    for(const picture of approved) {
+    const scope='l1-l2-l3-l4-l5';
+    const entries=retoMixtoForScope(scope, approved);
+    const eligibleIds=new Set(getVocabularySet(scope).map(word=>word.id));
+    for(const picture of approved.filter(picture=>eligibleIds.has(picture.wordId))) {
       const entry=entries.find(entry=>entry.vocabularyId===picture.wordId);
       expect(entry, picture.wordId).toBeDefined();
       expect(entry!.supportImageSrc).toBe(picture.src);
+    }
+    // An illustration can support a preview card without promoting it into
+    // the current curriculum. Its approval must not change study scope.
+    expect(approved.some(picture=>picture.wordId==='v-贵')).toBe(true);
+    expect(eligibleIds.has('v-贵')).toBe(false);
+    for(const picture of approved.filter(picture=>!eligibleIds.has(picture.wordId))) {
+      expect(entries.some(entry=>entry.vocabularyId===picture.wordId), picture.wordId).toBe(false);
+      expect(entries.some(entry=>entry.supportImageSrc===picture.src), picture.wordId).toBe(false);
     }
   });
   it('does not revive pending, hidden, stale or unavailable approvals as legacy game art', () => {

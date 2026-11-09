@@ -17,7 +17,7 @@ const activities: { section: string; title: string; description: string; icon: M
 
 export function PracticeHub() {
   const [scope, setScope] = useState<CurriculumScope>('l1');
-  const available = ['l4','l5','l1-l2-l3-l4','l1-l2-l3-l4-l5'].includes(scope) ? [...activities, { section: 'readings', title: 'Lee un poco más', description: 'Lee los textos y practica su comprensión.', icon: 'book' as const, tag: 'LECTURAS', tone: 'mist' }] : activities;
+  const available = ['l6','l1-l2-l3-l4-l5-l6','l4','l5','l1-l2-l3-l4','l1-l2-l3-l4-l5'].includes(scope) ? [...activities, { section: 'readings', title: 'Lee un poco más', description: 'Lee los textos y practica su comprensión.', icon: 'book' as const, tag: 'LECTURAS', tone: 'mist' }] : activities;
   return <>
     <fieldset className="practice-scope"><legend>¿Qué quieres repasar?</legend><div>{studyScopeOptions.map(({ value, label }) => <label className={scope === value ? 'selected' : ''} key={value}><input type="radio" name="practice-scope" value={value} checked={scope === value} onChange={() => setScope(value)}/>{label}</label>)}</div></fieldset>
     <div className="practice-activities">{available.map((activity) => <Link prefetch={false} className="practice-activity" href={'/study/' + scope + '/' + activity.section} key={activity.section}><div className="practice-activity-top"><span className={'skill-icon ' + activity.tone}><MingIcon name={activity.icon}/></span><span className="mini-label">{activity.tag}</span></div><h2>{activity.title}</h2><p>{activity.description}</p><span className="text-link">Practicar <MingIcon name="arrow" width="18" height="18"/></span></Link>)}</div>

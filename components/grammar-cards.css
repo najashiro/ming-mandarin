@@ -1,0 +1,15 @@
+.grammar-reference-card { min-width:0; overflow-wrap:anywhere; }
+.grammar-explanation { white-space:pre-line; }
+.grammar-clarification { border-left:3px solid #476b55; padding:.7rem; background:#f1f5ec; }
+.grammar-table-scroll { max-width:100%; overflow-x:auto; margin-top:1rem; border:1px solid #d9e1d3; border-radius:10px; }
+.grammar-table-scroll:focus-visible { outline:3px solid #476b55; outline-offset:3px; }
+.grammar-source-table { width:100%; border-collapse:collapse; text-align:left; font-size:.95rem; }
+.grammar-source-table caption { padding:.75rem; font-weight:600; text-align:left; }
+.grammar-source-table th { background:#edf2e8; }
+.grammar-source-table th, .grammar-source-table td { padding:.65rem; vertical-align:top; border-bottom:1px solid #d9e1d3; min-width:4.2rem; }
+.grammar-source-table th { font-weight:600; }
+.grammar-source-table .grammar-row-aid td { background:#fafbf7; padding-top:.3rem; }
+.grammar-row-aid p { margin:.25rem 0 0; font-size:.9rem; }
+.grammar-worked-examples { margin-top:1rem; }
+.grammar-worked-example { padding:.7rem 0; border-bottom:1px solid #e1e5db; }
+.grammar-worked-example p { margin:.3rem 0; }

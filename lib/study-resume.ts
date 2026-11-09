@@ -1,5 +1,5 @@
 const KEY = 'ming-last-study-v1';
-const routePattern = /^\/study\/(l1|l2|l3|l4|l5|l1-l2|l1-l2-l3|l1-l2-l3-l4|l1-l2-l3-l4-l5)(?:\/(vocabulary|dialogues|grammar|hanzi|radicals|games|daily|exam|readings|exercises))?$/;
+const routePattern = /^\/study\/(l1|l2|l3|l4|l5|l6|l1-l2-l3-l4-l5-l6|l1-l2|l1-l2-l3|l1-l2-l3-l4|l1-l2-l3-l4-l5)(?:\/(vocabulary|dialogues|grammar|hanzi|radicals|games|daily|exam|readings|exercises))?$/;
 
 export function getLastStudy(): string {
   try {

@@ -1,0 +1,10 @@
+{
+  "entries": [
+    {
+      "wordId": "v-进",
+      "prompt": "Use case: scientific-educational. Create one pedagogical Mandarin vocabulary image for 进, pinyin jìn, meaning entrar. Transparent PNG. This is a clear textbook-style cutout with a natural photorealistic fictional adult person and a simplified classroom doorway viewed in side profile, person on the LEFT of doorway, walking RIGHT THROUGH the open doorway INTO the room. Show one foot already across the threshold inside, torso moving to the right and back mostly toward viewer; absolutely do not show someone leaving toward camera. On the right of the door, show a small desk and chair as a cutaway cue of room interior. A bold curved jade-green arrow above points FROM the person on LEFT THROUGH the doorway TO the desk INSIDE on RIGHT. Above arrow label exactly \"jìn\" with the grave tone mark, large simple legible font; beside its destination label exactly \"entrar\". No other writing. Transparent surroundings and corners, preserve all body, door and furniture uncut. Landscape 3:2. Entire scene on right 60% of canvas, left 40% transparent for live card title. Contrasting warm ivory doorframe, jade arrow, charcoal pinyin. The user explicitly wants arrows and pinyin inside the illustration to remove ambiguity. No logos, UI or decorative backgrounds.",
+      "method": "built-in image_gen; second pass corrected framing and transparency",
+      "master": "public/images/vocabulary/lessons123/enter-annotated.png"
+    }
+  ]
+}

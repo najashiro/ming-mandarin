@@ -1,0 +1,23 @@
+[
+  {
+    "wordId": "v-进",
+    "sense": "entrar",
+    "hintType": "image",
+    "src": "/images/vocabulary/lessons123/enter-annotated-fdac871d6446.webp",
+    "alt": "Una persona cruza el umbral hacia el interior. Flecha de entrada y etiqueta jìn.",
+    "description": "Apoyo visual para 进 (jìn): entrar",
+    "status": "approved",
+    "presentation": "transparent-cutout",
+    "visualMode": "action_scene",
+    "imageQuizEligible": false,
+    "ambiguityRisk": "medium",
+    "width": 1618,
+    "height": 1000,
+    "sha256": "fdac871d6446ea57ed1e862b75be4870cfe67de2f8d913e3c459ba19598e1d93",
+    "promptSha256": "82229748545a8210b4a868bb081859fd12ab4ac1f4dc5fa25c878a5f13d02c0d",
+    "model": "built-in-imagegen",
+    "quality": "tool-default",
+    "review": "2026-11-04 · Revisión visual por Codex: dirección hacia el interior, pie cruzando umbral, flecha y pinyin jìn correctos. Sin revisión humana independiente.",
+    "provenance": "Generada con image_gen, versión anotada autorizada por el usuario."
+  }
+]

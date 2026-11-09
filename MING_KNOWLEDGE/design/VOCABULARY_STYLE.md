@@ -4,6 +4,10 @@ Estándar visual por defecto aprobado por el usuario el 27 de septiembre de
 2026. Identificador: `ming-vocabulary-transparent-subject-golden-v2`.
 Versión: `2.0.0`.
 
+## Aclaraciones pedagógicas autorizadas · 4 de noviembre de 2026
+
+Para imágenes ambiguas, el usuario autorizó flechas, pinyin y etiquetas breves dentro del recurso. Usar diagramas de relaciones, cantidades exactas y líneas temporales cuando expliquen mejor que una foto. Esta excepción prevalece sobre las prohibiciones históricas de texto/iconos siguientes; no permite hornear controles de interfaz. El texto chino, pinyin y español de la tarjeta siguen en HTML accesible. Los recursos que revelan la respuesta no participan en quizzes de reconocimiento por imagen. La fotografía de un personaje ficticio nunca acredita nacionalidad, identidad ni parentesco.
+
 ## Consulta rápida
 
 - Parámetros exactos: [`vocabulary-style.json`](vocabulary-style.json).

@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "wordId": "v-八",
+      "prompt": "Diagrama Míng: 8 puntos exactos agrupados en decenas o centenas; numeral 8 y pinyin de 八, transparencia y sin quiz de respuesta oculta."
+    },
+    {
+      "wordId": "v-百",
+      "prompt": "Diagrama Míng: 100 puntos exactos agrupados en decenas o centenas; numeral 100 y pinyin de 百, transparencia y sin quiz de respuesta oculta."
+    },
+    {
+      "wordId": "v-千",
+      "prompt": "Diagrama Míng: 1000 puntos exactos agrupados en decenas o centenas; numeral 1000 y pinyin de 千, transparencia y sin quiz de respuesta oculta."
+    },
+    {
+      "wordId": "v-二十",
+      "prompt": "Diagrama Míng: 20 puntos exactos agrupados en decenas o centenas; numeral 20 y pinyin de 二十, transparencia y sin quiz de respuesta oculta."
+    },
+    {
+      "wordId": "v-二十五",
+      "prompt": "Diagrama Míng: 25 puntos exactos agrupados en decenas o centenas; numeral 25 y pinyin de 二十五, transparencia y sin quiz de respuesta oculta."
+    }
+  ]
+}

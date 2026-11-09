@@ -10,7 +10,7 @@ type MissionTurn = {
 
 type MissionDefinition = {
   id: string;
-  lesson: 1 | 2 | 3 | 5;
+  lesson: 1 | 2 | 3 | 5 | 6;
   title: string;
   role: string;
   partner: string;
@@ -22,6 +22,14 @@ type MissionDefinition = {
 // Role cards are pedagogical framing in Spanish. All Chinese, readings and
 // accepted responses resolve from the existing curriculum, without new keys.
 export const conversationMissionDefinitions: MissionDefinition[] = [
+  { id: 'campus-l6', lesson: 6, title: 'Ayuda a un estudiante nuevo', role: 'Ding Libo', partner: 'Un estudiante nuevo',
+    objective: 'Recuperar las indicaciones del diálogo del libro.', facts: ['Comedor: a la derecha de la entrada.', 'Biblioteca: al norte del comedor.', 'Banco: al este de la biblioteca.', 'Edificio de aulas: al este del comedor.'],
+    turns: [
+      { conversationId: 'rm-conv-l6-1', task: 'Sitúa el comedor y pregunta si es nuevo.', feedback: 'Reproduce el modelo del diálogo con 校门右边.', distractorSentenceIds: ['s-l6-3','s-l6-7'] },
+      { conversationId: 'rm-conv-l6-7', task: 'Describe la biblioteca y sitúa el gimnasio.', feedback: 'La biblioteca está al norte del comedor; el gimnasio al oeste de la biblioteca.', distractorSentenceIds: ['s-l6-2','s-l6-9'] },
+      { conversationId: 'rm-conv-l6-9', task: 'Confirma que hay banco y ubícalo.', feedback: 'Sitúa el banco al este de la biblioteca.', distractorSentenceIds: ['s-l6-3','s-l6-7'] },
+      { conversationId: 'rm-conv-l6-13', task: 'Sitúa el edificio de aulas.', feedback: 'Usa 食堂东边 como en el diálogo.', distractorSentenceIds: ['s-l6-2','s-l6-9'] },
+    ] },
   { id: 'cumpleanos-l5', lesson: 5, title: 'Una fiesta y una sorpresa', role: 'Los personajes del diálogo', partner: 'Tu compañero',
     objective: 'Practicar la fecha, el regalo, la edad y el nombre en el diálogo del cumpleaños.',
     facts: ['Fiesta: 25 de octubre.', 'Lin Na regala un pastel.', 'Contexto del libro: 2020; Lin Qiang nació en 1988 y tiene 32 años.', 'Nombre chino del hermano: Lin Qiang.'],

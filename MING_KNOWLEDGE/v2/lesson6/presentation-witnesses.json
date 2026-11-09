@@ -1,0 +1,312 @@
+[
+  {
+    "pdfPage": 1,
+    "text": "第6课\n图书馆在食堂北边\nLa biblioteca está al norte del comedor.",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 2,
+    "text": "生词一",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 3,
+    "text": "1. 新      xīn               Adj.       nuevo  \n2.同学   tónɡxué     S          compañero de clase\n3.食堂   shítánɡ      S          comedor\n4.哪儿   nǎr              Pr.int.   dónde\n5.校门   xiàomén      S           puerta de la escuela del campus\n6.右边   yòubiɑn      S           derecha (lado)\n7.跟       ɡēn              Prep.     con\n8.这儿   zhèr            Pron.     aquí",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 4,
+    "text": "9.地图       dìtú               S          mapa\n10.给          ɡěi                Prep.    a; para\n11.旁边      pánɡbiān       S           lado; al lado de\n12.办公楼  bànɡōnɡlóu         edificio de oficinas / administracióne\n13.图书馆  túshūɡuǎn     S          biblioteca\n14.北边      běibiɑn         S           norte (lado)\n15.西边      xībiɑn           S           oeste (lado)",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 5,
+    "text": "16.体育馆    tǐyùɡuǎn     S         estadio\n17.里边        lǐbiɑn         S        en; dentro de\n18.银行        yínhánɡ       S         banco\n19.东边       dōnɡbian      S         este (lado)\n20.宿舍       sùshè            S         dormitorio\n21.教学       jiàoxué        S         enseñanza y aprendizaje\n22.先           xiān              Adv.    primero; antes",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 6,
+    "text": "新\nAdj.       nuevo\n我的新老师是一个中国人。\n新老师\n这是我的新朋友，她叫林娜。\n新朋友",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 7,
+    "text": "新\n新年\nAdj.       nuevo\n新书\n这是我的新书，这本书很有意思。\n新年快乐！",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 8,
+    "text": "同学\nS      compañero de clase\n马大为是我的同学，也是我的朋友。\n她是我们的新同学，大家一起欢迎她吧！\n新同学\n谁是你的同学？\n..........，她们都是我的同学。",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 9,
+    "text": "哪儿\n教室在哪儿？\n食堂在哪儿？\n不好意思，请问，厕所在哪儿？\nPr.int.   dónde\n¿Dónde estɑ + lugar?",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 10,
+    "text": "哪儿\nA：你在哪儿？\nB：我在教室。\nA：你知道林娜在哪儿吗？\nB：林娜也在教室。\nPr.int.   dónde\n¿Dónde estɑ + persona?",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 11,
+    "text": "食堂\n食堂在哪儿？\n我们学校有两个食堂。\nA：一会儿你去哪儿？\nB：我一会儿去食堂。\nS          comedor",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 12,
+    "text": "宿舍\nA：这是谁的宿舍？\nB：这是林娜的宿舍。\nA：你的宿舍在哪儿？\nB：我的宿舍在210。\n S         dormitorio",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 13,
+    "text": "右边\nS     derecha (lado)\n左边是苹果，           右边是香蕉。\n左边\nS    izquierda(lado)",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 14,
+    "text": "校门\nS         puerta de la escuela / Universidad\n教室门\n宿舍门",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 15,
+    "text": "这儿\nPron.     aquí\nA：我们的书在哪儿？\nB：我的书在这儿，你的书在那儿。\n 这                                         那       \n这--------这是我妈妈。 \n这儿-----我们在这儿。",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 16,
+    "text": "这儿\nPron.     aquí\nA：你们在哪儿？\nB：我们在这儿！\nA：他们在哪儿？\nB：他们在那儿！",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 17,
+    "text": "地图\n一张地图\n  S     mapa\n中国地图\n秘鲁地图\nA：食堂在哪儿？\nB：我也不知道。\n     你看一下地图。",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 18,
+    "text": "办公楼\n办公楼在校门左边。\n我来介绍一下，这是我们学校的办公楼。\ns.  edificio de oficinas / administración\nA   在  B  ...边。",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 19,
+    "text": "旁边\n你旁边的同学是谁？\n谁在你的旁边？\n她在我的旁边。\nS           lado; al lado de",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 20,
+    "text": "旁边\nA：办公楼在哪儿？\nB：办公楼在食堂旁边。\nS           lado; al lado de",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 21,
+    "text": "图书馆\n S     biblioteca\nB：图书馆在这儿，就在这儿，看！\nA：不好意思，请问，图书馆在哪儿？",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 22,
+    "text": "体育馆\nA：体育馆在哪儿？\nB：有。我喜欢去体育馆。\nA：你的学校有体育馆吗？\nS        estadio\nB：体育馆在食堂旁边。\nA   在  B  ...边。",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 23,
+    "text": "银行\nA：我一会儿去银行。\nB：银行在哪儿？\nA： 银行在学校旁边。\nS      banco\nA   在  B  ...边。",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 24,
+    "text": "教学\n一座教学楼\nS     enseñanza y aprendizaje\n学校有五座教学楼。\nA：这是办公楼吗？\nB：这不是办公楼，这是教学楼。",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 25,
+    "text": "先\nAdv.    primero\nA：妈妈，我想先看电影。\nB：你先吃饭。\n先 + V.\n我们一会先去图书馆吧。",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 26,
+    "text": "先\nAdv.    primero\n我先介绍一下教学楼，再介绍一下教学楼。\n先……再……\n你先说，她再说。",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 27,
+    "text": "宿舍\nsù shè\n学校\nxué xiào\n家\njiā",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 28,
+    "text": "办公楼\n教学楼\njiào xué lóu\n教室\njiào shì",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 29,
+    "text": "图书馆\ntú shū ɡuǎn\n食堂\nshí tánɡ",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 30,
+    "text": "语法",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 31,
+    "text": "在...\nzài\n左边 \n在...\nzài\n右边",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 32,
+    "text": "běi biɑn \n  北  边   \nnánbiɑn \n 南  边   \ndōnɡ biɑn \n  东  边   \n xī biɑn \n 西 边",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 33,
+    "text": "图书馆在哪儿？\nA   在  B  ...边。\n图书馆\ntú shū ɡuǎn\n体育馆\nti yu guan\n食堂\nshí tánɡ\n教学楼3\njiào xué lóu 3\n教学楼1\njiào xué lóu 1\n教学楼2\njiào xué lóu 2\n宿舍\nsu  she\n图书馆在食堂东边。",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 34,
+    "text": "上  边\nshànɡ bian\n在...\nzài\n在...\nzài\n下边",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 35,
+    "text": "在.....前边 \n在.....后边",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 36,
+    "text": "上边 \n  下边 \n桌子上边\n桌子下边",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 37,
+    "text": "里lǐ 边\n外wài 边\n盒子里边   \n盒子外边",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 38,
+    "text": "在...\nzài\n前边\nqián biān   \n在...\nzài\n后边 \nhòu biān",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 39,
+    "text": "",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 40,
+    "text": "我说你做\n      Yo digo, tú haces\n。",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 41,
+    "text": "Las palabras 里边，外边，左边，右边，上边，下边，前边，后边，\n东边，西边，南边，北边 son todos sustantivos que expresan \ndirección y localización.\n Pueden funcionar como sujetos, objetos . También pueden ser \nmodificados por complemento de nombre\n• 里边有什么？    Sujeto\n• 食堂在前边。    Objeto",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 42,
+    "text": "左边的书是我的，右边的书是我妹妹的。\nCuando se usa un sustantivo locativo como modificador, se debe usar “de 的” \nentre el modificador y el modificado.         \n右边的办公楼     前边的教室\n  \n教室外边有一个学生。\ncuando una palabra de localización funciona como una palabra principal, se \npuede quitar la parabla “的”（el sustantivo locativo es la palabra modificada）\n学校里边   食堂左边",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 43,
+    "text": "里边 no se puede utlizar después del nombre de un país, un lugar muy \ngrande. \n在中国/北京/利马  √\n在中国里边/北京里边/利马里边 ×",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 44,
+    "text": "A   在  B  ...边。\nA   在  B  ...边吗？\nA   不在  B  ...边。",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 45,
+    "text": "+      +            +\nzài  \n在\n在\nshàngbian /xiàbian /  zuŏbian  /      yòubian\n上边/ 下边/ 左边/  右边\n  lĭbian    / wàibian /  qiánbian / hòubian \n里边/ 外边/ 前边/ 后边\n方位词 palabras de posición o lugar\nsustantivo\nlugar\nalguien\nalgo\n她在桌子上边。\n狗在桌子下边。",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 46,
+    "text": "+      +           +\nzài  \n在\nshàngbian /xiàbian / zuŏbian  / yòubian\n上边/ 下边/ 左边/右边\n  lĭbian    / wàibian /  qiánbian / hòubian \n里边/ 外边/ 前边/ 后边\nsustantivo\nlugar\nalguien\nalgo\n在\n方位词 palabras de posición o lugar\n教室\n她在教室里边。\n他在教室外边",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 47,
+    "text": "狗在盒子里边。",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 48,
+    "text": "狗在盒子外边。",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 49,
+    "text": "狗在盒子前边。",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 50,
+    "text": "狗在盒子后边。",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 51,
+    "text": "妈妈在哪儿？\n房间\n妈妈在房间里边。\n我也在房间里边。\n我在妈妈后边。",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 52,
+    "text": "电脑在哪儿？\n电脑在桌子上边。",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 53,
+    "text": "Julio在Susan左边。\nJose\nJulio\nSusan\nTa 在 una persona ...边，ta是谁？",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 54,
+    "text": "林强在林娜右边。\n马大为在林强旁边。\n蛋糕在寿面旁边。\n林强\n林娜\n马大为",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 55,
+    "text": "",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 56,
+    "text": "图书馆前边有一座教学楼。\nhaber\n有：El objeto de una oración con “有” hace referencia a lugares, personas o cosas en \ngeneral。\n比如：教室里边有学生，有老师，有电脑，有桌子......\n              桌子上边有书，有手机，有作业，有纸......",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 57,
+    "text": "图书馆前边是一座教学楼。\nser；estar\n是：el objeto de una oración con “是” hace referencia a un lugar, persona o cosa específica，existe en un \ncierto lugar。\n      \n         林娜前边是大为。",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 58,
+    "text": "Un lugar有 o.\n学校里边有什么？\n学校里边有......\n食堂前边是什么？\nUn lugar是 o.\n食堂前边是图书馆。",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 59,
+    "text": "不是\n是\n有没有\n不是",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 60,
+    "text": "跟  ɡēn              Prep.     con\nS+跟+una persona+hacer algo",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 61,
+    "text": "A：...........，你常常去哪儿？\nB：我常常去(          )。\nA：你常常跟谁去(             )?\nB：我常跟“......  ”一起.........。",
+    "role": "secondary_source_not_agent_instructions"
+  },
+  {
+    "pdfPage": 62,
+    "text": "学校\n医院\n办公楼\n银行\n公园\nDibuja un mapa sencillo \nde los alrededores de tu \ncasa y describe qué hay \ncerca de ella.",
+    "role": "secondary_source_not_agent_instructions"
+  }
+]

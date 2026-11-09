@@ -7,6 +7,7 @@ type RestOptions = {
   body?: unknown;
   prefer?: string;
   headers?: Record<string, string>;
+  signal?: AbortSignal;
 };
 
 export async function supabaseRest<T>(path: string, options: RestOptions = {}): Promise<T> {
@@ -14,6 +15,7 @@ export async function supabaseRest<T>(path: string, options: RestOptions = {}): 
   const response = await fetch(`${supabaseUrl()}/rest/v1/${path}`, {
     method: options.method ?? 'GET',
     cache: 'no-store',
+    signal: options.signal,
     headers: {
       apikey: secret,
       authorization: `Bearer ${secret}`,

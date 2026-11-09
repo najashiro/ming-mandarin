@@ -1,3 +1,4 @@
+import { lesson6Vocabulary, lesson6Sentences, lesson6Grammar, lesson6Characters, lesson6Exercises, lesson6Units } from '@/seed/lesson6';
 import { lesson5Vocabulary, lesson5Sentences, lesson5Grammar, lesson5Characters, lesson5Exercises, lesson5Units } from '@/seed/lesson5';
 import type { CharacterEntry, CharacterWord, CurriculumScope, Exercise, GrammarPoint, HanziUnitId, LessonNumber, SentenceEntry, SourceRef, VocabularyEntry } from '@/data/types';
 import { canonicalCharacters, charactersForUnits, hanziUnits } from '@/seed/characters';
@@ -10,6 +11,8 @@ import { normalizeAnswer, normalizePinyin } from '@/lib/pinyin';
 import { getStudyScopeLabel } from '@/lib/study-options';
 
 export const scopeDefinitions: Record<CurriculumScope, { label: string; shortLabel: string; lessonIds: LessonNumber[]; title: string; description: string }> = {
+  l6: { label: 'Lección 6', shortLabel: 'L6', lessonIds: [6], title: '图书馆在食堂北边', description: 'Ubicaciones, direcciones, edificios y cómo pedir ayuda.' },
+  'l1-l2-l3-l4-l5-l6': { label: 'Repaso general', shortLabel: 'L1–L6', lessonIds: [1,2,3,4,5,6], title: 'Repaso general', description: 'Repasa el curso hasta la Lección 6.' },
   l5: { label: 'Lección 5', shortLabel: 'L5', lessonIds: [5], title: '祝你生日快乐', description: 'Cumpleaños, fechas, regalos, invitaciones y el zodiaco chino.' },
   'l1-l2-l3-l4-l5': { label: 'Repaso general', shortLabel: 'L1–L5', lessonIds: [1,2,3,4,5], title: 'Repaso general', description: 'Repasa el curso hasta la Lección 5.' },
   l1: { label: 'Lección 1', shortLabel: 'L1', lessonIds: [1], title: '你最近怎么样？', description: 'Saludos, identidad y estados personales.' },
@@ -238,7 +241,7 @@ export const lesson3Grammar: GrammarPoint[] = [
 export const lesson1HanziStages = hanziUnits.filter((unit) => unit.lesson === 1);
 export const lesson2HanziStages = hanziUnits.filter((unit) => unit.lesson === 2);
 export const lesson3HanziStages = hanziUnits.filter((unit) => unit.lesson === 3);
-const unitOrder: HanziUnitId[] = ['1.1','1.2','2.1','2.2','3.1','3.2','4.1','4.2','5.1','5.2'];
+const unitOrder: HanziUnitId[] = ['1.1','1.2','2.1','2.2','3.1','3.2','4.1','4.2','5.1','5.2','6.1','6.2'];
 const canonicalByHanzi = new Map(canonicalCharacters.map((character) => [character.hanzi,character]));
 
 function contextStage(text: string): HanziUnitId {
@@ -307,6 +310,7 @@ export const lesson2Exercises = makeLessonExercises(2, lesson2Vocabulary, lesson
 export const lesson3Exercises = makeLessonExercises(3, lesson3Vocabulary, lesson3Characters, lesson3Sentences, lesson3Grammar);
 
 const lessonData = {
+  6: { vocabulary: lesson6Vocabulary, sentences: lesson6Sentences, grammar: lesson6Grammar, characters: lesson6Characters, stages: lesson6Units, exercises: lesson6Exercises },
   5: { vocabulary: lesson5Vocabulary, sentences: lesson5Sentences, grammar: lesson5Grammar, characters: lesson5Characters, stages: lesson5Units, exercises: lesson5Exercises },
   4: { vocabulary: lesson4Vocabulary, sentences: lesson4Sentences, grammar: lesson4Grammar, characters: lesson4Characters, stages: lesson4Units, exercises: lesson4Exercises },
   1: { vocabulary: lesson1Vocabulary, sentences: lesson1Sentences, grammar: lesson1Grammar, characters: lesson1Characters, stages: lesson1HanziStages, exercises: lesson1Exercises },
@@ -331,10 +335,10 @@ export function getCurriculum(scope: CurriculumScope) {
   return { scope, definition, vocabulary, sentences, grammar, characters, exercises, stages, units: stages };
 }
 
-export const allCurriculumExercises = uniqueBy([lesson1Exercises, lesson2Exercises, lesson3Exercises, lesson4Exercises, lesson5Exercises].flat(), (item) => item.id);
+export const allCurriculumExercises = uniqueBy([lesson1Exercises, lesson2Exercises, lesson3Exercises, lesson4Exercises, lesson5Exercises, lesson6Exercises].flat(), (item) => item.id);
 export const allCurriculumCharacters = contextualizeCharacters(
   canonicalCharacters,
-  [...lesson1Vocabulary,...lesson2Vocabulary,...lesson3Vocabulary,...lesson4Vocabulary,...lesson5Vocabulary],
-  [...lesson1Sentences,...lesson2Sentences,...lesson3Sentences,...lesson4Sentences,...lesson5Sentences],
+  [...lesson1Vocabulary,...lesson2Vocabulary,...lesson3Vocabulary,...lesson4Vocabulary,...lesson5Vocabulary,...lesson6Vocabulary],
+  [...lesson1Sentences,...lesson2Sentences,...lesson3Sentences,...lesson4Sentences,...lesson5Sentences,...lesson6Sentences],
 );
 export function exerciseForId(id: string) { return allCurriculumExercises.find((item) => item.id === id); }

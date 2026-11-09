@@ -9,6 +9,7 @@ const lessons = [
   { scope: 'l3', number: '03', glyph: '家', title: 'Tu familia, tu mundo', description: 'Presenta a tu familia y habla de edades y profesiones.', tone: 'sand' },
   { scope: 'l4', number: '04', glyph: '时', title: 'El ritmo de tu día', description: 'Habla de horarios, clases y actividades cotidianas.', tone: 'mist' },
   { scope: 'l5', number: '05', glyph: '祝', title: '¡Feliz cumpleaños!', description: 'Celebra, invita y habla de fechas, edades y regalos.', tone: 'peach' },
+  { scope: 'l6', number: '06', glyph: '北', title: 'Encuentra tu camino', description: 'Pregunta direcciones y describe los lugares que te rodean.', tone: 'sage' },
 ] as const;
 
 export function LessonCards() {

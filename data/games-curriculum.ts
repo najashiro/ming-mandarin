@@ -1,3 +1,4 @@
+import { lesson6Conversations } from './lesson6-games';
 import { lesson5Conversations } from './lesson5-games';
 import type { CurriculumScope, SentenceEntry } from './types';
 import { getCurriculum } from '@/seed/curriculum';
@@ -29,7 +30,7 @@ export function gamesContent(scope: CurriculumScope) {
     const prompt = retoMixtoCorpus.find(entry => entry.hanzi === item.promptHanzi);
     return answer && prompt ? [{ ...item, answer, prompt }] : [];
   });
-  return { ...curriculum, scenes, conversations: [...conversations, ...(curriculum.definition.lessonIds.includes(5) ? lesson5Conversations : [])] };
+  return { ...curriculum, scenes, conversations: [...conversations, ...(curriculum.definition.lessonIds.includes(5) ? lesson5Conversations : []), ...(curriculum.definition.lessonIds.includes(6) ? lesson6Conversations : [])] };
 }
 export type SceneChallenge = ReturnType<typeof gamesContent>['scenes'][number];
 export type ConversationChallenge = ReturnType<typeof gamesContent>['conversations'][number];

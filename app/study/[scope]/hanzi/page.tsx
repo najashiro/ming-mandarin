@@ -1,6 +1,8 @@
 import { notFound } from 'next/navigation';
 import { getCurrentUser } from '@/app/auth';
 import { HanziLab } from '@/components/hanzi/HanziLab';
+import { BookCharacterDetails } from '@/components/BookReference';
+import studyReference from '@/data/lesson4-study-reference.json';
 import { SiteShell, LessonHeader } from '@/components/SiteShell';
 import { getHanziProgressMap } from '@/lib/server/persistence';
 import type { HanziManifestEntry } from '@/lib/hanzi/types';
@@ -64,6 +66,7 @@ export default async function ScopeHanziPage({
           tracking={supplemental?'supplementary':'course'}
           scope={rawScope}
         />}
+        {data.definition.lessonIds.includes(4) && <div className="shell"><BookCharacterDetails characters={studyReference.bookReference.characterDetails}/></div>}
       </main>
     </SiteShell>
   );

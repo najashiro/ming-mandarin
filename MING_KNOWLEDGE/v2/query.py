@@ -41,10 +41,11 @@ def selected(row: dict, fields: list[str] | None) -> dict:
 
 
 def main() -> None:
-    # L5 is an additive, separately validated extension; preserve the historical v2.2 cache.
-    if '--lesson=5' in sys.argv or any(a == '--lesson' and i + 1 < len(sys.argv) and sys.argv[i+1] == '5' for i,a in enumerate(sys.argv)):
-        runpy.run_path(str(ROOT / 'lesson5/query.py'), run_name='__main__')
-        return
+    # Additive lesson extensions preserve the historical documentary cache.
+    for lesson in (5, 6):
+        if f'--lesson={lesson}' in sys.argv or any(a == '--lesson' and i + 1 < len(sys.argv) and sys.argv[i+1] == str(lesson) for i,a in enumerate(sys.argv)):
+            runpy.run_path(str(ROOT / f'lesson{lesson}/query.py'), run_name='__main__')
+            return
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--word', help='Exact Hanzi or vocabulary ID, e.g. 工作 or v-工作')
     ap.add_argument('--examples', action='store_true', help='With --word, query global pedagogical examples, including approved compounds')
@@ -108,8 +109,12 @@ def main() -> None:
                 word = dict(word)
                 selection = word['lesson4_selection']
                 word.update(pinyin=selection['pinyin'], spanish=selection['spanish'],
-                            pinyin_display=selection['pinyin'], spanish_display=selection['spanish'])
+                            pinyin_display=selection.get('pinyin_display') or selection['pinyin'],
+                            spanish_display=selection.get('spanish_display') or selection['spanish'])
             ids = word.get('example_phrase_ids', []) if args.examples else word['phrase_ids']
+            if args.examples and args.lesson == 4:
+                excluded = word.get('lesson4_selection', {}).get('example_phrase_exclusions', {}).get('phrase_ids', [])
+                ids = [pid for pid in ids if pid not in excluded]
             pp = {row['id']: row for row in read_table('phrases')}
             show = ids[args.offset:args.offset + args.limit]
             result = {'found': True, 'word': selected(word, None if args.full else DEFAULT_FIELDS['vocabulary']),

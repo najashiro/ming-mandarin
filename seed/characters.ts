@@ -1,3 +1,4 @@
+import { lesson6Characters, lesson6Units } from '@/seed/lesson6';
 import { lesson5Characters, lesson5Units } from '@/seed/lesson5';
 import { lesson4Characters, lesson4Units } from '@/seed/lesson4';
 import curriculum from '@/data/lesson1-hanzi.json' with { type: 'json' };
@@ -44,7 +45,7 @@ export const hanziUnits: HanziUnitDefinition[] = rawUnits.map((unit) => ({
   description: unit.description,
   characters: [...new Set(roles.flatMap((role) => uniqueCharacters(unit[role])))],
 }));
-hanziUnits.push(...lesson4Units, ...lesson5Units);
+hanziUnits.push(...lesson4Units, ...lesson5Units, ...lesson6Units);
 export const hanziUnitIds = hanziUnits.map((unit) => unit.id);
 export function isHanziUnitId(value: string): value is HanziUnitId { return hanziUnitIds.includes(value as HanziUnitId); }
 
@@ -126,7 +127,7 @@ export const canonicalCharacters: CharacterEntry[] = order.map((hanzi, curricula
   };
 });
 
-for (const incoming of [...lesson4Characters, ...lesson5Characters]) {
+for (const incoming of [...lesson4Characters, ...lesson5Characters, ...lesson6Characters]) {
   const existing = canonicalCharacters.find(character => character.id === incoming.id);
   if (existing) existing.appearsIn = [...new Set([...existing.appearsIn, ...incoming.appearsIn])];
   else canonicalCharacters.push({ ...incoming, curricularOrder: canonicalCharacters.length });

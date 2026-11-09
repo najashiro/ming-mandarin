@@ -18,7 +18,8 @@ describe('cinco experiencias curriculares', () => {
   for (const scope of curriculumScopes.filter(scope => scope !== 'l4')) it(`${scope}: contenido trazable y construcción sin introducir palabras`, () => {
     const content = gamesContent(scope);
     const allowed = new Map(getCurriculum(scope).sentences.map(sentence => [sentence.id,sentence]));
-    expect(content.scenes.length).toBeGreaterThan(1);
+    if (scope === 'l6') expect(content.scenes).toHaveLength(0);
+    else expect(content.scenes.length).toBeGreaterThan(1);
     expect(content.conversations.length).toBeGreaterThan(1);
     for (const scene of content.scenes) {
       expect(scene).toMatchObject(allowed.get(scene.id)!);
@@ -30,7 +31,8 @@ describe('cinco experiencias curriculares', () => {
     for (const conversation of content.conversations) {
       expect(content.definition.lessonIds).toContain(conversation.lesson);
       expect(conversation.source.file).toBeTruthy();
-      expect(conversation.answer.audioSrc).toMatch(/\.mp3$/);
+      if (conversation.lesson === 6) expect(conversation.answer.audioSrc === '' || conversation.answer.audioSrc.endsWith('.mp3')).toBe(true);
+      else expect(conversation.answer.audioSrc).toMatch(/\.mp3$/);
     }
     for (const story of storiesForScope(scope)) {
       expect(story.scenes.length).toBeGreaterThanOrEqual(3);

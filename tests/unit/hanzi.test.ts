@@ -67,12 +67,12 @@ describe('laboratorio Hanzi', () => {
     expect(characters.every((item) => manifest[item.hanzi as keyof typeof manifest]?.strokeCount === item.strokeCount)).toBe(true);
   });
 
-  it('organiza un solo corpus canónico por las seis unidades reales', () => {
-    expect(canonicalCharacters).toHaveLength(269);
-    expect(new Set(canonicalCharacters.map((item) => item.hanzi)).size).toBe(269);
-    expect(new Set(canonicalCharacters.map((item) => item.id)).size).toBe(269);
-    expect(hanziUnits.map((unit) => unit.id)).toEqual(['1.1','1.2','2.1','2.2','3.1','3.2','4.1','4.2','5.1','5.2']);
-    expect(hanziUnits.map((unit) => unit.characters.length)).toEqual([40,26,57,42,36,39,33,26,47,22]);
+  it('organiza un solo corpus canónico por las doce unidades reales', () => {
+    expect(canonicalCharacters).toHaveLength(295);
+    expect(new Set(canonicalCharacters.map((item) => item.hanzi)).size).toBe(295);
+    expect(new Set(canonicalCharacters.map((item) => item.id)).size).toBe(295);
+    expect(hanziUnits.map((unit) => unit.id)).toEqual(['1.1','1.2','2.1','2.2','3.1','3.2','4.1','4.2','5.1','5.2','6.1','6.2']);
+    expect(hanziUnits.slice(0,10).map((unit) => unit.characters.length)).toEqual([40,26,57,42,36,39,33,26,47,22]);
     expect(hanziUnits.slice(0,6).map((unit) => canonicalCharacters.filter((item) => item.introducedIn === unit.id).length)).toEqual([40,18,45,35,29,25]);
     expect(canonicalCharacters.every((item) => item.writingRequired && item.id === `c-${item.hanzi}`)).toBe(true);
   });
@@ -85,7 +85,7 @@ describe('laboratorio Hanzi', () => {
   });
 
   it('distingue introducción y repaso sin crear copias por unidad', () => {
-    expect(Object.keys(hanziSourceGroups)).toEqual(['1.1','1.2','2.1','2.2','3.1','3.2','4.1','4.2','5.1','5.2']);
+    expect(Object.keys(hanziSourceGroups)).toEqual(['1.1','1.2','2.1','2.2','3.1','3.2','4.1','4.2','5.1','5.2','6.1','6.2']);
     const particle = allCurriculumCharacters.find((item) => item.hanzi === '么')!;
     expect(particle.introducedIn).toBe('1.1');
     expect(particle.appearsIn).toEqual(['1.1','1.2']);

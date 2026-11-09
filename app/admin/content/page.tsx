@@ -10,13 +10,13 @@ import type { HanziSourceCode } from '@/data/types';
 import { PinyinText } from '@/components/PinyinText';
 
 const filters: Array<['all' | HanziSourceCode, string]> = [
-  ['all','Todos'],['1.1','1.1 · Texto 1'],['1.2','1.2 · Texto 2'],['2.1','2.1 · Texto 1'],['2.2','2.2 · Texto 2'],['3.1','3.1 · Texto 1'],['3.2','3.2 · Texto 2'],['4.1','4.1 · Texto 1'],['4.2','4.2 · Texto 2'],['5.1','5.1 · Texto 1'],['5.2','5.2 · Texto 2'],
+  ['all','Todos'],['1.1','1.1 · Texto 1'],['1.2','1.2 · Texto 2'],['2.1','2.1 · Texto 1'],['2.2','2.2 · Texto 2'],['3.1','3.1 · Texto 1'],['3.2','3.2 · Texto 2'],['4.1','4.1 · Texto 1'],['4.2','4.2 · Texto 2'],['5.1','5.1 · Texto 1'],['5.2','5.2 · Texto 2'],['6.1','6.1 · Texto 1'],['6.2','6.2 · Texto 2'],
 ];
 
 export default async function AdminContent({ searchParams }: { searchParams: Promise<{ source?: string }> }) {
   const [, query] = await Promise.all([requireAdmin('/admin/content'), searchParams]);
   const active = filters.some(([code]) => code === query.source) ? query.source as 'all' | HanziSourceCode : 'all';
-  const curriculum=getCurriculum('l1-l2-l3-l4-l5');
+  const curriculum=getCurriculum('l1-l2-l3-l4-l5-l6');
   const generalSources = [...curriculum.vocabulary, ...curriculum.sentences, ...curriculum.grammar];
   const filteredCharacters = active === 'all' ? curriculum.characters : curriculum.characters.filter((item) => item.appearsIn.includes(active));
   return <SiteShell><main>

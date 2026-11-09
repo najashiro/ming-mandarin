@@ -60,7 +60,7 @@ export function examQuestionsForSeed(seed: string): ExamQuestion[] {
 
 function unitExamQuestions(seed: string, scope: HanziUnitId): ExamQuestion[] {
   const characters = charactersForUnits([scope]);
-  if (scope.startsWith('4.')) return Array.from({ length: 20 }, (_, index) => {
+  if (scope.startsWith('4.') || scope.startsWith('6.')) return Array.from({ length: 20 }, (_, index) => {
     const item = characters[(seedIndex(seed, 'l4-unit', characters.length) + index) % characters.length];
     return { id: `e-${scope}-${index + 1}`, section: 'hanzi', points: 5, prompt: `¿Cuántos trazos tiene ${item.hanzi}?`, answer: String(item.strokeCount) };
   });
@@ -83,7 +83,7 @@ function unitExamQuestions(seed: string, scope: HanziUnitId): ExamQuestion[] {
 export function examQuestionsForScope(seed: string, scope: HanziAssessmentScope = 'l1'): ExamQuestion[] {
   if (isHanziUnitId(scope)) return unitExamQuestions(seed,scope);
   const curriculum = getCurriculum(scope);
-  if (curriculum.definition.lessonIds.includes(4)) {
+  if (curriculum.definition.lessonIds.includes(4) || curriculum.definition.lessonIds.includes(6)) {
     const eligible = curriculum.exercises.filter(item => item.type === 'choice' || item.type === 'pinyin');
     return Array.from({ length: 20 }, (_, index) => {
       const item = eligible[(seedIndex(seed, 'l4-start', eligible.length) + index) % eligible.length];

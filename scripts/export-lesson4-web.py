@@ -6,6 +6,7 @@ remain separate from documentary fields and are resolved only for the web.
 Run with --check in CI to verify the committed projection.
 """
 import argparse
+import copy
 import hashlib
 import importlib.util
 import json
@@ -16,6 +17,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'MING_KNOWLEDGE/v2'))
 import query
+from lesson4_grammar_projection import enrich_grammar
+from lesson4_activities import build_activities
+from lesson4_book_projection import build_book_reference
 
 
 def build():
@@ -27,6 +31,7 @@ def build():
     phrases = {r['id']: r for r in query.read_table('phrases')}
     old = json.loads((ROOT / 'data/corpus-v21-public.json').read_text(encoding='utf-8'))
     source_records = {r['id']: r for r in query.read_table('sources')}
+    vocabulary_witnesses = {r['id']: r for r in query.read_table('vocabulary_evidence')}
     def source(row):
         record = source_records[row['source_id']]
         kind = 'hanzi_worksheet' if 'HANZI' in row['source_id'] else 'class_presentation' if 'PPT' in row['source_id'] else 'workbook' if 'WB' in row['source_id'] else 'textbook'
@@ -37,8 +42,13 @@ def build():
         context = row.get('lesson4_selection')
         if not context:
             continue
+        if context.get('publication_excluded'):
+            pending.append(dict(id=row['id'], reason=context['publication_excluded']))
+            continue
         # Select the contextual witness, never the isolated worksheet reading.
-        if not context.get('pinyin') or not context.get('spanish'):
+        pinyin = context.get('pinyin_display') or context.get('pinyin')
+        spanish = context.get('spanish_display') or context.get('spanish')
+        if not pinyin or not spanish:
             pending.append(dict(id=row['id'], reason='missing_contextual_pinyin_or_spanish'))
             continue
         links = [{k: link.get(k) for k in ('lesson', 'role', 'text', 'list_type', 'entry_kind')}
@@ -47,7 +57,8 @@ def build():
         if not visual:
             pending.append(dict(id=row['id'], reason='missing_visual_classification'))
             continue
-        words.append(dict(id=row['id'], hanzi=row['hanzi'], pinyin=context['pinyin'], spanish=context['spanish'],
+        words.append(dict(id=row['id'], hanzi=row['hanzi'], pinyin=pinyin, spanish=spanish,
+                          grammaticalType=vocabulary_witnesses[context['evidence_id']].get('pos_source') or '',
                           lessons=[4], roles=[context['role']], curriculumLinks=links,
                           examplePhraseIds=row.get('example_phrase_ids', []),
                           visual_ming={k: visual[k] for k in ('visual_mode','image_support','image_quiz_eligible','ambiguity_risk')}))
@@ -65,13 +76,23 @@ def build():
         if r['hanzi'] and 'counterexample' not in r['kinds']
         and not any(mark in r['hanzi'] for mark in ('…', '_', '□'))
     }
+    phrase_witnesses = {r['id']: r for r in query.read_table('phrase_evidence')}
+    def example_priority(phrase_id):
+        witnesses = [phrase_witnesses[i] for i in phrases[phrase_id]['evidence_ids']]
+        # Keep supplementary examples, but present the books first. Prioritize
+        # this lesson's book context without changing the global lexical links.
+        return min((0 if w.get('lesson') == 4 else 1)
+                   if source_records[w['source_id']]['kind'] in ('textbook', 'workbook') else 2
+                   for w in witnesses)
     for word in words:
         ids = [i for i in word['examplePhraseIds'] if i in available_examples]
+        excluded = vocab[word['id']]['lesson4_selection'].get('example_phrase_exclusions', {}).get('phrase_ids', [])
+        ids = [i for i in ids if i not in excluded]
         # L4 selects zhǐ (only) and chà (time remaining), not the historical
         # classifier zhī or adjective chā. Keep their L4 witnesses only.
         if word['hanzi'] in ('只', '差'):
             ids = [i for i in ids if 4 in phrases[i]['lessons']]
-        word['examplePhraseIds'] = ids
+        word['examplePhraseIds'] = sorted(ids, key=example_priority)
 
     editorial = json.loads((ROOT / 'MING_KNOWLEDGE/v2/lesson4/dialogue-translations-ming.json').read_text(encoding='utf-8'))
     canonical_turns = {(d['id'], t['turn']): t for d in projection['dialogues'] if d['lesson'] == 4 for t in d['turns']}
@@ -121,7 +142,7 @@ def build():
     readings = []
     for row in query.read_table('readings'):
         ph = phrases.get(row.get('phrase_id'), {})
-        readings.append(dict(id=row['id'], title=row['label'], hanzi=row['text_source'],
+        readings.append(dict(id=row['id'], title=row['label'], hanzi=ph.get('hanzi_display') or row['text_source'],
                              pinyin=ph.get('pinyin_display') or '', spanish=ph.get('spanish_display') or ''))
     # Explicit allowlist: documentary audit fields never reach the learner.
     text_keys = {'text_source','hanzi','pinyin_source','spanish_source','instruction_source','prompt_source','label_source',
@@ -152,6 +173,7 @@ def build():
                   characters=list(dict.fromkeys(r['hanzi'] for r in evidence if r['source_id']==f'SRC-HANZI-04-{n}')))
              for n in (1,2)]
     characters = []
+    character_support = {r['id']: r for r in query.read_table('lesson4_character_support')}
     for hanzi in dict.fromkeys(r['hanzi'] for r in evidence):
         witnesses = [r for r in evidence if r['hanzi']==hanzi]
         row = witnesses[0]
@@ -162,6 +184,9 @@ def build():
         meaning = row.get('spanish_source') or ''
         if not meaning and lexical.get('pinyin') == row.get('pinyin_source'):
             meaning = lexical.get('spanish') or ''
+        support = character_support.get(f'c-{hanzi}')
+        if not meaning and support and support['pinyin'] == row.get('pinyin_source'):
+            meaning = support['traduccion_ming']
         characters.append(dict(id=f'c-{hanzi}',lessonId='lesson-4',hanzi=hanzi,pinyin=row.get('pinyin_source') or '',
             meaning=meaning,strokeCount=row['strokes_source'],radical=row.get('radical_source') or '',
             components=[],structure=row.get('structure_source') or '',recognitionRequired=True,writingRequired=True,
@@ -172,8 +197,63 @@ def build():
                  dialogues=dialogues,grammar=grammar,readings=readings,documentaryExercises=exercises,
                  characters=characters,units=units,pending=pending,sentences=sentences,
                  vocabularySources={w['id']: source(vocab[w['id']]['lesson4_selection']) for w in words})
+    payload['bookRadicals'] = build_book_reference({name: query.read_table(name) for name in
+        ('document_blocks', 'radical_catalog')})['radicals']
     payload['fingerprint']=hashlib.sha256(json.dumps(payload,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
     return payload
+
+
+def study_reference(payload):
+    """Keep full textbook tables and activities out of client vocabulary data."""
+    tables = {name: query.read_table(name) for name in ('document_blocks', 'radical_catalog',
+        'vocabulary', 'hanzi_evidence', 'lesson4_character_support')}
+    phrases = {row['id']: row for row in query.read_table('phrases')}
+    tables['phrases'] = list(phrases.values())
+    return dict(version=1, corpusFingerprint=payload['corpusFingerprint'],
+        grammar=enrich_grammar(copy.deepcopy(payload['grammar']), tables['document_blocks'], phrases),
+        activities=build_activities(query.read_table('exercises'), tables['document_blocks'], payload['readings']),
+        bookReference=build_book_reference(tables))
+
+
+def language_audio_aliases(payload):
+    """Retain existing passage recordings when reading aids are completed.
+
+    Exact normalized Chinese is required; these aliases never create audio or
+    fall back between different readings of single-character vocabulary.
+    """
+    audio = json.loads((ROOT / 'data/lesson4-audio.json').read_text(encoding='utf-8'))
+    clean = lambda value: re.sub(r'[^\u3400-\u9fff]', '', value)
+    aliases = []
+    for reading in payload['readings']:
+        if not reading['pinyin']:
+            continue
+        matches = [clip for clip in audio['clips'] if clean(clip['input']) == clean(reading['hanzi'])]
+        if len(matches) == 1 and not matches[0]['expectedPinyin']:
+            aliases.append(dict(targetId=reading['id'], clipId=matches[0]['id'],
+                                hanzi=reading['hanzi'], pinyin=reading['pinyin']))
+    public_phrases = {r['id']: r for r in payload['phrases']}
+    for entry in query.read_table('lesson4_language_support'):
+        clip_id = entry.get('audio_alias_clip_id')
+        if not clip_id:
+            continue
+        phrase = public_phrases[entry['target_id']]
+        clip = next(c for c in audio['clips'] if c['id'] == clip_id)
+        assert entry.get('pinyin_display_correction') and clean(clip['input']) == clean(phrase['hanzi']), 'Stale audio correction alias'
+        aliases.append(dict(targetId=phrase['id'], clipId=clip_id, hanzi=phrase['hanzi'], pinyin=phrase['pinyin']))
+    # A visually confirmed transcription repair changes only 他/她 in this
+    # passage. Preserve the original recording input and require identical
+    # documentary pinyin; this is never a generic homophone fallback.
+    for entry in query.read_table('lesson4_source_corrections')['audio_homophone_aliases']:
+        reading = next(r for r in payload['readings'] if r['id'] == entry['reading_id'])
+        clip = next(c for c in audio['clips'] if c['id'] == entry['clip_id'])
+        before, after = clean(clip['input']), clean(reading['hanzi'])
+        assert entry['allowed_character_pair'] == ['他', '她']
+        assert before != after and before.replace('他', '她') == after.replace('他', '她')
+        assert clip['expectedPinyin'] == reading['pinyin'], 'Homophone alias requires unchanged documentary pronunciation'
+        aliases.append(dict(targetId=reading['id'], clipId=clip['id'], hanzi=reading['hanzi'],
+            pinyin=reading['pinyin'], mode='reviewed_passage_pronoun_correction',
+            sourceInput=clip['input'], sourcePinyin=clip['expectedPinyin'], correctionId=entry['correction_id']))
+    return dict(version=1, aliases=aliases)
 
 
 if __name__ == '__main__':
@@ -182,8 +262,16 @@ if __name__ == '__main__':
     args=parser.parse_args()
     output=ROOT/'data/lesson4-public.json'
     payload=build()
+    audio_output=ROOT/'data/lesson4-audio-aliases.json'
+    aliases=language_audio_aliases(payload)
+    reference_output=ROOT/'data/lesson4-study-reference.json'
+    reference=study_reference(payload)
     if args.check:
         assert json.loads(output.read_text(encoding='utf-8'))==payload, 'Regenerate lesson4-public.json'
+        assert json.loads(audio_output.read_text(encoding='utf-8'))==aliases, 'Regenerate L4 reading audio aliases'
+        assert json.loads(reference_output.read_text(encoding='utf-8'))==reference, 'Regenerate L4 study reference'
     else:
         output.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+        audio_output.write_text(json.dumps(aliases,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+        reference_output.write_text(json.dumps(reference,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print({k:len(v) for k,v in payload.items() if isinstance(v,list)})

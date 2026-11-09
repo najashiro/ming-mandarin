@@ -1,5 +1,31 @@
 # Lección 4 · imágenes y Reto Mixto
 
+## Revisión del 4 de noviembre de 2026
+
+El catálogo de administración acompaña ahora las **114 palabras publicadas de L4**. El inventario combinado tiene 52 palabras con recurso, de las cuales **33 están aprobadas en los manifiestos locales** (antes, 21 de las 73 publicadas). Las decisiones remotas vigentes de Administración siguen prevaleciendo. Las 19 imágenes pendientes y las 62 palabras sin recurso no se presentan como imágenes aprobadas; muchas son nociones abstractas o sentidos gramaticales.
+
+- Cuatro fotografías nuevas, generadas con ImageGen integrado: `学校` (edificio escolar genérico), `女生` (alumna adulta estudiando), `运动` (ejemplo de ejercicio físico) y `手机` (teléfono celular). Se inspeccionaron sujetos completos, alfa, encuadre y ausencia de texto. No se afirma revisión humana independiente.
+- Una composición determinista nueva para `昨天`: día anterior a HOY. No asigna intervalos horarios inventados a los períodos del día.
+- Dos fotografías existentes revisadas para apoyo contextual: `去` y `说`. Se conservaron sus archivos y prompts; el desplazamiento no distingue por sí solo ir de venir y la conversación no identifica un idioma. Ninguno de estos siete recursos habilita reconocimiento aislado.
+- La ampliación textual recupera además cinco imágenes compartidas ya aprobadas: `书`, `唱歌`, `蛇`, `参加` y `教`.
+- `门` en esta lección es **clasificador de asignaturas**: no se generó ni vinculó una fotografía de una puerta.
+
+Los PNG maestros y WebP normalizados nuevos están en `public/images/vocabulary/lesson4/`:
+
+| Palabra | Archivo WebP | Tamaño |
+| --- | --- | ---: |
+| 学校 | `school-fb3205ec9e42.webp` | 76,232 bytes |
+| 女生 | `female-student-9f8c5bf06fec.webp` | 131,000 bytes |
+| 运动 | `exercise-e7956616852d.webp` | 63,010 bytes |
+| 手机 | `mobile-phone-403c2b496311.webp` | 30,978 bytes |
+| 昨天 | `yesterday-4beb14604956.webp` | 10,646 bytes |
+
+Los prompts exactos usados y la receta determinista están en `docs/lesson4-image-prompts.json`. El importador conserva los hashes del archivo y prompt, sincroniza el plan al ampliar el corpus y admite `--structured --only=v-昨天` para no regenerar otros recursos. La normalización calcula el contorno desde el alfa visible con margen: el ruido casi transparente (alfa 1) del fondo generado ya no reduce inadvertidamente el tamaño del sujeto. La revisión real de tarjetas móviles detectó el botón de giro sobre el teléfono y la cara del atleta: el teléfono termina en x=1360/1618 y el atleta ocupa como máximo 700 px de alto, anclado a y=960. Estos encuadres liberan la esquina del control conservando la figura completa y el texto.
+
+Validación de esta revisión: 21 pruebas de integridad y publicación de imágenes, revisión de hashes y alfa de cada asset L4, inspección visual de las cinco imágenes nuevas y las dos reutilizadas. Las pruebas comprueban que el plan incluye todas las palabras publicadas y que los apoyos contextuales no se usan como preguntas de reconocimiento aislado. Los derivados de tamaño para la web se generan mediante `scripts/prepare-vocabulary-image-sizes.mjs`, conservando intactos los maestros y sus aprobaciones.
+
+## Registro anterior
+
 Solicitud del usuario: completar los recursos compatibles con el corpus, registrar los prompts en administración y usar el vocabulario aprobado en Reto Mixto.
 
 ## Recursos

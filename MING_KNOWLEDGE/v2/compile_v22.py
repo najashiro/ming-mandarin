@@ -9,6 +9,10 @@ import base64, collections, copy, csv, hashlib, json, lzma, re, shutil, unicoded
 from pathlib import Path
 import query_v21 as baseline
 import lesson4_examples
+import lesson4_support
+import lesson4_book_review
+import lesson4_source_corrections
+import lessons123_support
 ROOT = Path(__file__).resolve().parent
 CACHE = ROOT / '.cache-v22'
 L4 = ROOT / 'lesson4'
@@ -118,7 +122,12 @@ def build(force=False):
                     ROOT.parent/'SOURCE_AUTHORITY.json', L4/'documentary-audit.json',
                     L4/'visual-classification.json', L4/'lexical-links.json',
                     ROOT/'lesson4_examples.py', L4/'example-support.json',
+                    ROOT/'lesson4_support.py', L4/'language-support.json', L4/'dialogue-translations-ming.json',
+                    ROOT/'lesson4_book_review.py', L4/'book-review.json',
+                    ROOT/'lesson4_source_corrections.py', L4/'source-corrections.json',
+                    L4/'grammar-table-support.json',
                     L4/'textbook-vocabulary.tsv', L4/'worksheet-rows.tsv', L4/'dialogue-turns.tsv']
+    dependencies += lessons123_support.dependency_paths()
     fingerprint = hashlib.sha256()
     fingerprint.update((baseline.CACHE/'fingerprint.txt').read_bytes())
     for p in dependencies:
@@ -131,6 +140,11 @@ def build(force=False):
     marker.unlink(missing_ok=True)
     tables = {p.stem:load(p) for p in baseline.CACHE.glob('*.json')}
     original = copy.deepcopy(tables)
+    source_corrections = load(L4/'source-corrections.json')
+    corrected_identities = lesson4_source_corrections.apply(docs, source_corrections, textid)
+    tables['lesson4_source_corrections'] = source_corrections
+    grammar_support = load(L4/'grammar-table-support.json')
+    tables['lesson4_grammar_table_support'] = grammar_support['tables']
     manifest = load(L4/'manifest.json')
     policy = load(L4/'selection-policy.json')
     sources = {s['id']:s for s in manifest['sources']}
@@ -219,6 +233,9 @@ def build(force=False):
     def phrase(text,b,field,kind,py=None,es=None,**extra):
         if not text or not cjk(text):return None
         pid=textid('PH-',text);eid=textid('PE-L4-',b['id']+'|'+field+'|'+text)
+        correction = corrected_identities.get((b['id'], field, text))
+        if correction:
+            pid, eid = correction['phrase_id'], correction['phrase_evidence_id']
         if any(x['id']==eid for x in phrase_evidence):return pid
         if pid not in phrases:
             phrases[pid]=dict(id=pid,hanzi=text,normalized_text=clean(text),lessons=[],kinds=[],source_refs=[],
@@ -233,6 +250,8 @@ def build(force=False):
             kind=kind,block_id=b['id'],field_path=field,pinyin_source=py,spanish_source=es,
             authority_tier=b['authority_tier'],review_status='source_transcribed_model_checked',**extra)
         phrase_evidence.append(ev)
+        if correction:
+            ev['source_correction_id'] = correction['correction_id']
         q['lessons']=sorted(set(q['lessons']+[4]));q['kinds']=unique(q['kinds']+[kind])
         q['source_refs']=unique(q['source_refs']+[loc(b['source_id'],b['page'])]);q['evidence_ids'].append(eid)
         q['curriculum_links'].append(dict(id=eid,lesson=4,kind=kind,source_id=b['source_id'],page=b['page']))
@@ -402,6 +421,8 @@ def build(force=False):
             q[field+'_display']=value
         q['pinyin_status']='source_based_selection_see_variants' if q['pinyin'] else 'not_supplied_in_extracted_evidence'
     lesson4_examples.apply(tables, vocab, phrases, load(L4/'example-support.json'))
+    lesson4_support.apply(tables, vocab, phrases, load(L4/'language-support.json'), load(L4/'dialogue-translations-ming.json'))
+    lesson4_book_review.apply(tables, vocab, phrases, load(L4/'book-review.json'))
     tables['lexical_annotation_coverage']=dict(annotations.get('coverage',{}),algorithm='reviewed_literal_spans_not_substring_search',unmatched_runs_do_not_create_vocabulary=True)
 
     # Radical documentary definitions and character assignments are different claims.
@@ -549,6 +570,10 @@ def build(force=False):
         vocabulary_with_source_spanish=sum(bool(vocab[v]['lesson4_selection'].get('spanish')) for v in l4_vocab_ids),
         phrases_with_source_pinyin=sum(any(witness_by[e].get('lesson')==4 and witness_by[e].get('pinyin_source') for e in phrases[p]['evidence_ids']) for p in l4_phrase_ids),
         missing_documentary_fields_are_not_fabricated=True)
+    tables['index']['lesson4_pdf_reread'] = dict(
+        source_corrections=len(source_corrections['corrections']),
+        preserved_phrase_identities=len(corrected_identities),
+        grammar_tables_with_editorial_support=len(grammar_support['tables']))
     tables['validation_v21']=original['validation']
     # Structural and source regression gates are independent from release labels.
     errors=[]
@@ -604,7 +629,10 @@ def build(force=False):
             check(not b['source_answer_key_supplied'] and not b.get('answers'),'Invented listening key')
     check(all(e['id'] in witness_by for e in phrase_evidence),'Evidence indexing')
     check(all(l['vocab_id'] in vocab and l['phrase_id'] in phrases for l in tables['word_phrase_links']),'Dangling lexical link')
-    published_new={v for v in new_vocab if vocab[v].get('pinyin_display') and vocab[v].get('spanish_display')}
+    published_new={v for v in new_vocab if not vocab[v].get('lesson4_selection', {}).get('publication_excluded')
+                   and ((vocab[v].get('pinyin_display') and vocab[v].get('spanish_display'))
+                        or (vocab[v].get('lesson4_selection', {}).get('pinyin_display')
+                            and vocab[v].get('lesson4_selection', {}).get('spanish_display')))}
     classified={r['vocab_id'] for r in classifications['records']}
     check(published_new<=classified,'New publishable vocabulary requires explicit visual classification')
     check(not any(v.startswith('v-') and not re.fullmatch('[\u3400-\u9fff（）]+',v[2:]) for v in new_vocab),'Malformed new lexeme')
@@ -613,6 +641,7 @@ def build(force=False):
         ready_for_chapter4=not errors,global_query_integrated=True,
         documentary_limits=load(L4/'documentary-audit.json')['exclusions'],
         website_validated=False,paid_api_calls=0,independent_human_review=False)
+    lessons123_support.apply(tables)
     for name,value in tables.items():write(CACHE/f'{name}.json',value)
     if errors:raise ValueError('v2.2 validation failed: '+'; '.join(errors[:10]))
     marker.write_text(signature,encoding='utf-8')

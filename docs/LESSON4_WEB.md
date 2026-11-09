@@ -2,6 +2,89 @@
 
 Fuente de verdad: corpus 2.2.0 integrado. La implementación conserva los IDs históricos y separa las lecturas aisladas de Hanzi de la pronunciación contextual.
 
+## Revisión del 4 de noviembre de 2026
+
+El libro básico y el cuaderno tienen prioridad sobre las presentaciones. Se
+conservan los dos diálogos del libro y sus 27 turnos; los ejemplos de las tarjetas
+L4 muestran primero evidencia del libro/cuaderno. El apoyo editorial nuevo está
+en `MING_KNOWLEDGE/v2/lesson4/language-support.json`: completa pinyin y español,
+corrige erratas de presentación expresamente registradas y limpia glosas
+incrustadas en el texto mostrado. Los testigos originales y los IDs permanecen
+intactos. La revisión fue realizada por modelos, sin atribuir revisión humana.
+
+- Vocabulario: **114 tarjetas**, antes 73. Incluye todas las 63 entradas de las
+  listas del libro. `汉西英` queda fuera como secuencia de idiomas de una carrera.
+- **326 de 328 frases** tienen pinyin y español completos. Las dos restantes
+  son plantillas con huecos y no se muestran como ejemplos de tarjeta.
+- **99 tarjetas con ejemplos**, seis lecturas completas y glosas para los 54
+  caracteres de estudio. 上/下 no reciben ejemplos de un sentido diferente.
+- El catálogo global recupera los ejemplos L4 de palabras compartidas. Las
+  lecturas distintas, como 只 zhī/zhǐ, conservan sus ejemplos separados.
+- Se reutilizan las grabaciones existentes. Cuatro lecturas sin pinyin anterior
+  reciben alias comprobados por ID, texto chino y disponibilidad del archivo.
+  Un alias adicional conserva la grabación de 陈明 tras corregir tres 他 por 她,
+  con el mismo pinyin documental y precondiciones exactas. No se generó TTS.
+
+### Relectura directa de los PDF
+
+Se revisaron visualmente las 25 páginas del libro básico y las 11 del cuaderno.
+El detalle por página y las correcciones están en [LESSON4_PDF_REVIEW.md](LESSON4_PDF_REVIEW.md).
+Se recuperaron ocho vínculos de colocaciones y las categorías gramaticales impresas.
+Las correcciones documentales conservan los IDs y la transcripción anterior para auditoría.
+
+La vista de estudio ahora presenta siete tablas de gramática (63 filas, 57 apoyos
+completos de pinyin/español y seis separadores), ejemplos junto a sus explicaciones,
+la introducción, dos situaciones, cuatro funciones y diez frases clave del libro,
+62 actividades estructuradas con tablas, opciones, modelos y premisas visuales,
+las definiciones primarias de 刂/日 y 25 caracteres explícitos del libro/cuaderno.
+Estas referencias se exportan en `data/lesson4-study-reference.json`, usado solo
+por páginas de servidor, sin cargar todo ese material en el catálogo de tarjetas.
+Las lecturas primarias y las variantes de las hojas se muestran separadas.
+
+### Imágenes y carga
+
+L4 dispone de **52 imágenes aprobadas localmente** en el catálogo compartido actual,
+incluidos los recursos reutilizados de L1–L3. Esta revisión añadió cuatro fotografías
+(学校, 女生, 运动, 手机), el diagrama de 昨天 y revisó dos recursos existentes;
+la primera integración de esos cambios elevó la cobertura de 21 a 33 imágenes. Las decisiones remotas
+de publicación siguen prevaleciendo; los conceptos abstractos no reciben fotos
+engañosas. Los prompts exactos y los PNG/WebP están documentados en
+`lesson4-images-review.md` y `lesson4-image-prompts.json`.
+
+El catálogo y Vocabulario Mix sirven derivados estáticos de 400, 800 y 1200 px
+mediante `srcset`, dan prioridad a la primera tarjeta y conservan el maestro como
+respaldo. Los archivos llevan hash y caché inmutable. La consulta pública de
+aprobaciones solicita solo cuatro campos y no se repite al hidratar una respuesta
+ya obtenida del servidor. La retirada de una imagen y el cierre ante errores de
+almacenamiento siguen funcionando.
+
+Medición reproducible a 800 px (tarjeta de 400 px a densidad 2x): los 27 maestros
+propios L4 pasan de **1.360.114 a 374.830 bytes (72 % menos)**; el catálogo compartido actual
+de 321 maestros pasa de 32.034.869 a 7.646.624 bytes (76 % menos). Es una medición
+de peso de archivos, no una promesa de latencia de la web desplegada.
+
+```sh
+pnpm images:vocabulary:resize
+pnpm images:vocabulary:resize:check
+```
+
+Los apartados siguientes describen la integración original; sus conteos y
+limitaciones históricos quedan sustituidos por esta revisión donde difieran.
+
+### Validación de esta revisión
+
+355 pruebas unitarias, 188 pruebas Python globales, 25 específicas del corpus
+L4 y siete de la proyección del libro aprobadas. Los exportadores v2.1, v2.2,
+L1–L3, L4 y L5 pasan `--check`. Compilación y
+TypeScript correctos; lint sin errores (una advertencia previa en un script
+ignorado de `tmp/lesson5/`). Se validaron 61 casos E2E de L4, L5, referencias del libro, actividades,
+correcciones del corpus y carga de imágenes, con repetición de los afectados por las correcciones, en Chromium, móvil y WebKit/iPhone; incluyen tamaño
+real descargado, caché, retirada de aprobaciones, audio existente, las seis
+lecturas, texto largo a 320 px y navegación histórica. Las capturas se guardan
+en `test-results/`, `tmp/lesson4-book-final/` y `tmp/lesson4-image-recheck/`.
+La base de revisión de imágenes se simula en las pruebas;
+estos resultados no certifican el estado de producción.
+
 ## Flujo de datos
 
 `scripts/export-lesson4-web.py` reutiliza `export-corpus-v22.py.build()` y las tablas tipadas de `query.py`; produce `data/lesson4-public.json` sin escribir el corpus. `--check` compara la proyección completa reproducible. No se consulta ningún PDF.

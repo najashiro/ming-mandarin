@@ -1186,5 +1186,345 @@
   "尸": {
     "available": true,
     "strokeCount": 3
+  },
+  "新": {
+    "available": true,
+    "strokeCount": 13
+  },
+  "同": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "食": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "堂": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "门": {
+    "available": true,
+    "strokeCount": 3
+  },
+  "右": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "边": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "跟": {
+    "available": true,
+    "strokeCount": 13
+  },
+  "地": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "图": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "给": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "旁": {
+    "available": true,
+    "strokeCount": 10
+  },
+  "办": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "楼": {
+    "available": true,
+    "strokeCount": 13
+  },
+  "书": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "馆": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "体": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "育": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "里": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "银": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "东": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "宿": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "舍": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "先": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "着": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "急": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "方": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "知": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "道": {
+    "available": true,
+    "strokeCount": 12
+  },
+  "超": {
+    "available": true,
+    "strokeCount": 12
+  },
+  "市": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "过": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "路": {
+    "available": true,
+    "strokeCount": 13
+  },
+  "胡": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "等": {
+    "available": true,
+    "strokeCount": 12
+  },
+  "街": {
+    "available": true,
+    "strokeCount": 12
+  },
+  "卫": {
+    "available": true,
+    "strokeCount": 3
+  },
+  "卧": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "室": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "阳": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "台": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "厨": {
+    "available": true,
+    "strokeCount": 12
+  },
+  "房": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "酒": {
+    "available": true,
+    "strokeCount": 10
+  },
+  "吧": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "清": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "操": {
+    "available": true,
+    "strokeCount": 16
+  },
+  "场": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "左": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "南": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "座": {
+    "available": true,
+    "strokeCount": 10
+  },
+  "桌": {
+    "available": true,
+    "strokeCount": 10
+  },
+  "了": {
+    "available": true,
+    "strokeCount": 2
+  },
+  "或": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "关": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "系": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "以": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "者": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "职": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "务": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "比": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "如": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "长": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "李": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "经": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "理": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "白": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "乌": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "龟": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "它": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "店": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "取": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "伞": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "答": {
+    "available": true,
+    "strokeCount": 12
+  },
+  "想": {
+    "available": true,
+    "strokeCount": 13
+  },
+  "肯": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "定": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "声": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "从": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "传": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "足": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "舌": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "走": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "矢": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "竹": {
+    "available": true,
+    "strokeCount": 6
   }
 }

@@ -1,0 +1,1069 @@
+[
+  {
+    "source": "book",
+    "pdfPage": 1,
+    "printedPage": 162,
+    "content": "Objetivos, calentamiento y laberinto",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "vocabulary:v-南",
+      "documentaryExercises:l6-warmup"
+    ]
+  },
+  {
+    "source": "book",
+    "pdfPage": 2,
+    "printedPage": 163,
+    "content": "Diálogo 1 y mapa del campus",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "DLG-L6-1:1",
+      "DLG-L6-1:2",
+      "DLG-L6-1:3",
+      "DLG-L6-1:4",
+      "DLG-L6-1:5",
+      "DLG-L6-1:6"
+    ]
+  },
+  {
+    "source": "book",
+    "pdfPage": 3,
+    "printedPage": 164,
+    "content": "Diálogo 1 y palabras nuevas 1–4",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "vocabulary:v-新",
+      "vocabulary:v-同学",
+      "vocabulary:v-食堂",
+      "vocabulary:v-哪儿",
+      "vocabulary:v-教学楼",
+      "vocabulary:v-宿舍楼",
+      "DLG-L6-1:7",
+      "DLG-L6-1:8",
+      "DLG-L6-1:9",
+      "DLG-L6-1:10",
+      "DLG-L6-1:11",
+      "DLG-L6-1:12",
+      "DLG-L6-1:13",
+      "DLG-L6-1:14",
+      "DLG-L6-1:15",
+      "DLG-L6-1:16",
+      "DLG-L6-1:17"
+    ]
+  },
+  {
+    "source": "book",
+    "pdfPage": 4,
+    "printedPage": 165,
+    "content": "Palabras nuevas 5–22 y subentradas",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "vocabulary:v-校门",
+      "vocabulary:v-门",
+      "vocabulary:v-右边",
+      "vocabulary:v-右",
+      "vocabulary:v-边",
+      "vocabulary:v-跟",
+      "vocabulary:v-这儿",
+      "vocabulary:v-地图",
+      "vocabulary:v-给",
+      "vocabulary:v-旁边",
+      "vocabulary:v-办公楼",
+      "vocabulary:v-办公",
+      "vocabulary:v-楼",
+      "vocabulary:v-图书馆",
+      "vocabulary:v-书",
+      "vocabulary:v-北边",
+      "vocabulary:v-北",
+      "vocabulary:v-西边",
+      "vocabulary:v-西",
+      "vocabulary:v-体育馆",
+      "vocabulary:v-体育",
+      "vocabulary:v-里边",
+      "vocabulary:v-里",
+      "vocabulary:v-银行",
+      "vocabulary:v-东边",
+      "vocabulary:v-东",
+      "vocabulary:v-宿舍",
+      "vocabulary:v-教学",
+      "vocabulary:v-先",
+      "grammar:g-l6-xian"
+    ]
+  },
+  {
+    "source": "book",
+    "pdfPage": 5,
+    "printedPage": 166,
+    "content": "Notas de uso e inicio de texto 2",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "notes:0"
+    ]
+  },
+  {
+    "source": "book",
+    "pdfPage": 6,
+    "printedPage": 167,
+    "content": "Diálogo 2 completo",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "DLG-L6-2:1",
+      "DLG-L6-2:2",
+      "DLG-L6-2:3",
+      "DLG-L6-2:4",
+      "DLG-L6-2:5",
+      "DLG-L6-2:6",
+      "DLG-L6-2:7",
+      "DLG-L6-2:8",
+      "DLG-L6-2:9",
+      "DLG-L6-2:10",
+      "DLG-L6-2:11",
+      "DLG-L6-2:12",
+      "DLG-L6-2:13",
+      "DLG-L6-2:14"
+    ]
+  },
+  {
+    "source": "book",
+    "pdfPage": 7,
+    "printedPage": 168,
+    "content": "Palabras nuevas del texto 2 y nota 别",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "vocabulary:v-别",
+      "vocabulary:v-着急",
+      "vocabulary:v-小姐",
+      "vocabulary:v-地方",
+      "vocabulary:v-知道",
+      "vocabulary:v-超市",
+      "vocabulary:v-前边",
+      "vocabulary:v-前",
+      "vocabulary:v-对面",
+      "vocabulary:v-饭馆",
+      "vocabulary:v-过",
+      "vocabulary:v-马路",
+      "vocabulary:v-路",
+      "vocabulary:v-后边",
+      "vocabulary:v-后",
+      "vocabulary:v-条",
+      "vocabulary:v-胡同",
+      "vocabulary:v-等",
+      "vocabulary:v-街道",
+      "vocabulary:v-街",
+      "vocabulary:v-老",
+      "grammar:g-l6-bie",
+      "notes:1"
+    ]
+  },
+  {
+    "source": "book",
+    "pdfPage": 8,
+    "printedPage": 169,
+    "content": "Nota 胡同, frases clave y locativos",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "vocabulary:v-南边",
+      "grammar:g-l6-locatives",
+      "culture:1"
+    ]
+  },
+  {
+    "source": "book",
+    "pdfPage": 9,
+    "printedPage": 170,
+    "content": "Notas locativas y ejercicios",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "grammar:g-l6-li",
+      "documentaryExercises:l6-locatives",
+      "documentaryExercises:l6-small-maps"
+    ]
+  },
+  {
+    "source": "book",
+    "pdfPage": 10,
+    "printedPage": 171,
+    "content": "在 y ejercicios",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "grammar:g-l6-zai",
+      "documentaryExercises:l6-small-maps",
+      "documentaryExercises:l6-zai-substitution",
+      "documentaryExercises:l6-party"
+    ]
+  },
+  {
+    "source": "book",
+    "pdfPage": 11,
+    "printedPage": 172,
+    "content": "有/是 y mapa de ejercicio",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "grammar:g-l6-existence",
+      "documentaryExercises:l6-existence-substitution"
+    ]
+  },
+  {
+    "source": "book",
+    "pdfPage": 12,
+    "printedPage": 173,
+    "content": "Existencia, ejercicios y 跟/给",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "grammar:g-l6-gen-gei",
+      "documentaryExercises:l6-existence-substitution",
+      "documentaryExercises:l6-existence-fill"
+    ]
+  },
+  {
+    "source": "book",
+    "pdfPage": 13,
+    "printedPage": 174,
+    "content": "跟/给 y 好吗/对吗",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "grammar:g-l6-confirmation",
+      "documentaryExercises:l6-gen-gei"
+    ]
+  },
+  {
+    "source": "book",
+    "pdfPage": 14,
+    "printedPage": 175,
+    "content": "好吗/对吗 y vocabulario suplementario",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "vocabulary:v-卫生间",
+      "vocabulary:v-卧室",
+      "vocabulary:v-客厅",
+      "vocabulary:v-阳台",
+      "vocabulary:v-厨房",
+      "vocabulary:v-书房",
+      "vocabulary:v-咖啡厅",
+      "vocabulary:v-酒吧",
+      "vocabulary:v-清真餐厅",
+      "vocabulary:v-操场",
+      "vocabulary:v-那儿",
+      "vocabulary:v-左边",
+      "vocabulary:v-左"
+    ]
+  },
+  {
+    "source": "book",
+    "pdfPage": 15,
+    "printedPage": 176,
+    "content": "Suplementario, fonética y conversación",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "vocabulary:v-上边",
+      "vocabulary:v-下边",
+      "vocabulary:v-外边",
+      "documentaryExercises:l6-phonetics",
+      "documentaryExercises:l6-ask-directions",
+      "documentaryExercises:l6-describe-campus"
+    ]
+  },
+  {
+    "source": "book",
+    "pdfPage": 16,
+    "printedPage": 177,
+    "content": "Conversación, escucha y repetición",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "documentaryExercises:l6-repeat-request",
+      "documentaryExercises:l6-meaning-request",
+      "documentaryExercises:l6-listen-repeat"
+    ]
+  },
+  {
+    "source": "book",
+    "pdfPage": 17,
+    "printedPage": 178,
+    "content": "Dos lecturas y comprensión",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "readings:r-l6-campus",
+      "readings:r-l6-home",
+      "documentaryExercises:l6-reading-campus",
+      "documentaryExercises:l6-reading-home"
+    ]
+  },
+  {
+    "source": "book",
+    "pdfPage": 18,
+    "printedPage": 179,
+    "content": "Tareas, mapa y escritura",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "documentaryExercises:l6-lost-call",
+      "documentaryExercises:l6-country"
+    ]
+  },
+  {
+    "source": "book",
+    "pdfPage": 19,
+    "printedPage": 180,
+    "content": "Estructuras, radicales y escritura",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "characters:足",
+      "documentaryExercises:l6-hanzi-structure"
+    ]
+  },
+  {
+    "source": "book",
+    "pdfPage": 20,
+    "printedPage": 181,
+    "content": "Escritura básica y contextual",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "characters:书",
+      "characters:西",
+      "characters:东",
+      "characters:舌",
+      "characters:方",
+      "characters:走",
+      "characters:矢",
+      "characters:竹",
+      "characters:舍",
+      "characters:超",
+      "characters:知",
+      "characters:等"
+    ]
+  },
+  {
+    "source": "book",
+    "pdfPage": 21,
+    "printedPage": 182,
+    "content": "Escritura y cultura",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "characters:跟",
+      "characters:路",
+      "characters:行",
+      "characters:街",
+      "culture:0"
+    ]
+  },
+  {
+    "source": "book",
+    "pdfPage": 22,
+    "printedPage": 183,
+    "content": "Cultura, autoevaluación y Tres tortugas",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "readings:r-l6-turtles",
+      "objectives:l6-objective-1",
+      "objectives:l6-objective-2",
+      "objectives:l6-objective-3",
+      "objectives:l6-objective-4",
+      "culture:0"
+    ]
+  },
+  {
+    "source": "workbook",
+    "pdfPage": 1,
+    "printedPage": 51,
+    "content": "Escucha V/F, huecos y selección",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "documentaryExercises:l6-wb-listen-tf",
+      "documentaryExercises:l6-wb-listen-fill",
+      "documentaryExercises:l6-wb-listen-choice"
+    ]
+  },
+  {
+    "source": "workbook",
+    "pdfPage": 2,
+    "printedPage": 52,
+    "content": "Selección de escucha y tarea de campus",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "documentaryExercises:l6-wb-listen-choice",
+      "documentaryExercises:l6-wb-campus"
+    ]
+  },
+  {
+    "source": "workbook",
+    "pdfPage": 3,
+    "printedPage": 53,
+    "content": "Pinyin y trazos",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "characters:右",
+      "characters:左",
+      "characters:后",
+      "characters:里",
+      "characters:先",
+      "characters:前",
+      "documentaryExercises:l6-wb-pinyin",
+      "documentaryExercises:l6-wb-strokes"
+    ]
+  },
+  {
+    "source": "workbook",
+    "pdfPage": 4,
+    "printedPage": 54,
+    "content": "Componentes, radicales y caracteres",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "characters:哪",
+      "characters:楼",
+      "characters:图",
+      "characters:馆",
+      "characters:体",
+      "characters:胡",
+      "documentaryExercises:l6-wb-components",
+      "documentaryExercises:l6-wb-radicals",
+      "documentaryExercises:l6-wb-fill-hanzi"
+    ]
+  },
+  {
+    "source": "workbook",
+    "pdfPage": 5,
+    "printedPage": 55,
+    "content": "Emparejamiento, preguntas y traducción",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "documentaryExercises:l6-wb-match",
+      "documentaryExercises:l6-wb-questions",
+      "documentaryExercises:l6-wb-translate"
+    ]
+  },
+  {
+    "source": "workbook",
+    "pdfPage": 6,
+    "printedPage": 56,
+    "content": "Traducción y orden de frases",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "documentaryExercises:l6-wb-translate",
+      "documentaryExercises:l6-wb-order"
+    ]
+  },
+  {
+    "source": "workbook",
+    "pdfPage": 7,
+    "printedPage": 57,
+    "content": "Búsqueda de palabras y diálogo con huecos",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "documentaryExercises:l6-wb-search",
+      "documentaryExercises:l6-wb-dialogue"
+    ]
+  },
+  {
+    "source": "workbook",
+    "pdfPage": 8,
+    "printedPage": 58,
+    "content": "Expansión y lectura",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "readings:r-l6-classmates",
+      "documentaryExercises:l6-wb-expansion",
+      "documentaryExercises:l6-wb-reading"
+    ]
+  },
+  {
+    "source": "workbook",
+    "pdfPage": 9,
+    "printedPage": 59,
+    "content": "Comprensión y escritura",
+    "review": "visual",
+    "incorporation": "normalized_content_and_editorial_summary",
+    "records": [
+      "documentaryExercises:l6-wb-reading",
+      "documentaryExercises:l6-wb-writing"
+    ]
+  },
+  {
+    "source": "slides",
+    "pdfPage": 1,
+    "printedPage": null,
+    "content": "第6课\n图书馆在食堂北边\nLa biblioteca está al norte del comedor.",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 2,
+    "printedPage": null,
+    "content": "生词一",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 3,
+    "printedPage": null,
+    "content": "1. 新      xīn               Adj.       nuevo  \n2.同学   tónɡxué     S          compañero de clase\n3.食堂",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 4,
+    "printedPage": null,
+    "content": "9.地图       dìtú               S          mapa\n10.给          ɡěi                Prep.    a; para\n11.旁",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 5,
+    "printedPage": null,
+    "content": "16.体育馆    tǐyùɡuǎn     S         estadio\n17.里边        lǐbiɑn         S        en; dentro de\n18.银行   ",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 6,
+    "printedPage": null,
+    "content": "新\nAdj.       nuevo\n我的新老师是一个中国人。\n新老师\n这是我的新朋友，她叫林娜。\n新朋友",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 7,
+    "printedPage": null,
+    "content": "新\n新年\nAdj.       nuevo\n新书\n这是我的新书，这本书很有意思。\n新年快乐！",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 8,
+    "printedPage": null,
+    "content": "同学\nS      compañero de clase\n马大为是我的同学，也是我的朋友。\n她是我们的新同学，大家一起欢迎她吧！\n新同学\n谁是你的同学？\n..........，她们都是我的同学。",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 9,
+    "printedPage": null,
+    "content": "哪儿\n教室在哪儿？\n食堂在哪儿？\n不好意思，请问，厕所在哪儿？\nPr.int.   dónde\n¿Dónde estɑ + lugar?",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 10,
+    "printedPage": null,
+    "content": "哪儿\nA：你在哪儿？\nB：我在教室。\nA：你知道林娜在哪儿吗？\nB：林娜也在教室。\nPr.int.   dónde\n¿Dónde estɑ + persona?",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 11,
+    "printedPage": null,
+    "content": "食堂\n食堂在哪儿？\n我们学校有两个食堂。\nA：一会儿你去哪儿？\nB：我一会儿去食堂。\nS          comedor",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 12,
+    "printedPage": null,
+    "content": "宿舍\nA：这是谁的宿舍？\nB：这是林娜的宿舍。\nA：你的宿舍在哪儿？\nB：我的宿舍在210。\n S         dormitorio",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 13,
+    "printedPage": null,
+    "content": "右边\nS     derecha (lado)\n左边是苹果，           右边是香蕉。\n左边\nS    izquierda(lado)",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 14,
+    "printedPage": null,
+    "content": "校门\nS         puerta de la escuela / Universidad\n教室门\n宿舍门",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 15,
+    "printedPage": null,
+    "content": "这儿\nPron.     aquí\nA：我们的书在哪儿？\nB：我的书在这儿，你的书在那儿。\n 这                                         那       \n这-",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 16,
+    "printedPage": null,
+    "content": "这儿\nPron.     aquí\nA：你们在哪儿？\nB：我们在这儿！\nA：他们在哪儿？\nB：他们在那儿！",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 17,
+    "printedPage": null,
+    "content": "地图\n一张地图\n  S     mapa\n中国地图\n秘鲁地图\nA：食堂在哪儿？\nB：我也不知道。\n     你看一下地图。",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 18,
+    "printedPage": null,
+    "content": "办公楼\n办公楼在校门左边。\n我来介绍一下，这是我们学校的办公楼。\ns.  edificio de oficinas / administración\nA   在  B  ...边。",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 19,
+    "printedPage": null,
+    "content": "旁边\n你旁边的同学是谁？\n谁在你的旁边？\n她在我的旁边。\nS           lado; al lado de",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 20,
+    "printedPage": null,
+    "content": "旁边\nA：办公楼在哪儿？\nB：办公楼在食堂旁边。\nS           lado; al lado de",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 21,
+    "printedPage": null,
+    "content": "图书馆\n S     biblioteca\nB：图书馆在这儿，就在这儿，看！\nA：不好意思，请问，图书馆在哪儿？",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 22,
+    "printedPage": null,
+    "content": "体育馆\nA：体育馆在哪儿？\nB：有。我喜欢去体育馆。\nA：你的学校有体育馆吗？\nS        estadio\nB：体育馆在食堂旁边。\nA   在  B  ...边。",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 23,
+    "printedPage": null,
+    "content": "银行\nA：我一会儿去银行。\nB：银行在哪儿？\nA： 银行在学校旁边。\nS      banco\nA   在  B  ...边。",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 24,
+    "printedPage": null,
+    "content": "教学\n一座教学楼\nS     enseñanza y aprendizaje\n学校有五座教学楼。\nA：这是办公楼吗？\nB：这不是办公楼，这是教学楼。",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 25,
+    "printedPage": null,
+    "content": "先\nAdv.    primero\nA：妈妈，我想先看电影。\nB：你先吃饭。\n先 + V.\n我们一会先去图书馆吧。",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 26,
+    "printedPage": null,
+    "content": "先\nAdv.    primero\n我先介绍一下教学楼，再介绍一下教学楼。\n先……再……\n你先说，她再说。",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 27,
+    "printedPage": null,
+    "content": "宿舍\nsù shè\n学校\nxué xiào\n家\njiā",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 28,
+    "printedPage": null,
+    "content": "办公楼\n教学楼\njiào xué lóu\n教室\njiào shì",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 29,
+    "printedPage": null,
+    "content": "图书馆\ntú shū ɡuǎn\n食堂\nshí tánɡ",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 30,
+    "printedPage": null,
+    "content": "语法",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 31,
+    "printedPage": null,
+    "content": "在...\nzài\n左边 \n在...\nzài\n右边",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 32,
+    "printedPage": null,
+    "content": "běi biɑn \n  北  边   \nnánbiɑn \n 南  边   \ndōnɡ biɑn \n  东  边   \n xī biɑn \n 西 边",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 33,
+    "printedPage": null,
+    "content": "图书馆在哪儿？\nA   在  B  ...边。\n图书馆\ntú shū ɡuǎn\n体育馆\nti yu guan\n食堂\nshí tánɡ\n教学楼3\njiào xué lóu 3\n教学楼1\njiào xué",
+    "review": "visual",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 34,
+    "printedPage": null,
+    "content": "上  边\nshànɡ bian\n在...\nzài\n在...\nzài\n下边",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 35,
+    "printedPage": null,
+    "content": "在.....前边 \n在.....后边",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 36,
+    "printedPage": null,
+    "content": "上边 \n  下边 \n桌子上边\n桌子下边",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 37,
+    "printedPage": null,
+    "content": "里lǐ 边\n外wài 边\n盒子里边   \n盒子外边",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 38,
+    "printedPage": null,
+    "content": "在...\nzài\n前边\nqián biān   \n在...\nzài\n后边 \nhòu biān",
+    "review": "visual",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 39,
+    "printedPage": null,
+    "content": "",
+    "review": "visual",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 40,
+    "printedPage": null,
+    "content": "我说你做\n      Yo digo, tú haces\n。",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 41,
+    "printedPage": null,
+    "content": "Las palabras 里边，外边，左边，右边，上边，下边，前边，后边，\n东边，西边，南边，北边 son todos sustantivos que expresan \ndirección y l",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 42,
+    "printedPage": null,
+    "content": "左边的书是我的，右边的书是我妹妹的。\nCuando se usa un sustantivo locativo como modificador, se debe usar “de 的” \nentre",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 43,
+    "printedPage": null,
+    "content": "里边 no se puede utlizar después del nombre de un país, un lugar muy \ngrande. \n在中国/北京/利马  √\n在中国里边/北京里",
+    "review": "visual",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 44,
+    "printedPage": null,
+    "content": "A   在  B  ...边。\nA   在  B  ...边吗？\nA   不在  B  ...边。",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 45,
+    "printedPage": null,
+    "content": "+      +            +\nzài  \n在\n在\nshàngbian /xiàbian /  zuŏbian  /      yòubian\n上边/ 下边/ 左边/  右边\n  lĭbi",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 46,
+    "printedPage": null,
+    "content": "+      +           +\nzài  \n在\nshàngbian /xiàbian / zuŏbian  / yòubian\n上边/ 下边/ 左边/右边\n  lĭbian    / wài",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 47,
+    "printedPage": null,
+    "content": "狗在盒子里边。",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 48,
+    "printedPage": null,
+    "content": "狗在盒子外边。",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 49,
+    "printedPage": null,
+    "content": "狗在盒子前边。",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 50,
+    "printedPage": null,
+    "content": "狗在盒子后边。",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 51,
+    "printedPage": null,
+    "content": "妈妈在哪儿？\n房间\n妈妈在房间里边。\n我也在房间里边。\n我在妈妈后边。",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 52,
+    "printedPage": null,
+    "content": "电脑在哪儿？\n电脑在桌子上边。",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 53,
+    "printedPage": null,
+    "content": "Julio在Susan左边。\nJose\nJulio\nSusan\nTa 在 una persona ...边，ta是谁？",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 54,
+    "printedPage": null,
+    "content": "林强在林娜右边。\n马大为在林强旁边。\n蛋糕在寿面旁边。\n林强\n林娜\n马大为",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 55,
+    "printedPage": null,
+    "content": "",
+    "review": "visual",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 56,
+    "printedPage": null,
+    "content": "图书馆前边有一座教学楼。\nhaber\n有：El objeto de una oración con “有” hace referencia a lugares, personas o cosas en",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 57,
+    "printedPage": null,
+    "content": "图书馆前边是一座教学楼。\nser；estar\n是：el objeto de una oración con “是” hace referencia a un lugar, persona o cosa",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 58,
+    "printedPage": null,
+    "content": "Un lugar有 o.\n学校里边有什么？\n学校里边有......\n食堂前边是什么？\nUn lugar是 o.\n食堂前边是图书馆。",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 59,
+    "printedPage": null,
+    "content": "不是\n是\n有没有\n不是",
+    "review": "visual",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 60,
+    "printedPage": null,
+    "content": "跟  ɡēn              Prep.     con\nS+跟+una persona+hacer algo",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 61,
+    "printedPage": null,
+    "content": "A：...........，你常常去哪儿？\nB：我常常去(          )。\nA：你常常跟谁去(             )?\nB：我常跟“......  ”一起.........。",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": []
+  },
+  {
+    "source": "slides",
+    "pdfPage": 62,
+    "printedPage": null,
+    "content": "学校\n医院\n办公楼\n银行\n公园\nDibuja un mapa sencillo \nde los alrededores de tu \ncasa y describe qué hay \ncerca de",
+    "review": "native_text",
+    "incorporation": "secondary_witness_comparison",
+    "records": [
+      "documentaryExercises:l6-slides-neighborhood"
+    ]
+  }
+]

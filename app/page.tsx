@@ -39,7 +39,7 @@ export default function Home() {
     </section>
     <section className="daily-moment shell" aria-labelledby="moment-title">
       <div className="daily-phrase"><p className="eyebrow">UNA FRASE, UNA CONVERSACIÓN · LECCIÓN 5</p><h2 id="moment-title"><Hanzi>祝你生日快乐！</Hanzi></h2><p className="phrase-pinyin"><PinyinText>Zhù nǐ shēngrì kuàilè!</PinyinText></p><p>¡Te deseo un feliz cumpleaños!</p><SpeakButton text="祝你生日快乐！" label="Escuchar la frase"/></div>
-      <div className="daily-invitation"><span className="mini-label"><MingIcon name="games"/> PONLO EN PRÁCTICA</span><h3>Lo que juegas,<br/>lo recuerdas.</h3><p>Une imágenes, sonidos y palabras. Prueba los juegos y aprende de cada respuesta.</p><Link prefetch={false} href="/study/l1-l2-l3-l4-l5/games" className="button button-dark">Elegir un juego <MingIcon name="arrow"/></Link></div>
+      <div className="daily-invitation"><span className="mini-label"><MingIcon name="games"/> PONLO EN PRÁCTICA</span><h3>Lo que juegas,<br/>lo recuerdas.</h3><p>Une imágenes, sonidos y palabras. Prueba los juegos y aprende de cada respuesta.</p><Link prefetch={false} href="/study/l1-l2-l3-l4-l5-l6/games" className="button button-dark">Elegir un juego <MingIcon name="arrow"/></Link></div>
     </section>
     <div className="home-footnote shell"><MingIcon name="book" width="18" height="18"/><p>Pequeños pasos. Práctica constante. Mandarín para tu día a día.</p></div>
   </main></SiteShell>;

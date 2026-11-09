@@ -45,6 +45,7 @@ type WorkbookEvidence = {
 // explicit Míng adaptation made for these games. No original-listening task
 // is scored, and no source records or existing progress IDs are overwritten.
 const workbookFiles: Record<LessonNumber, string> = {
+  6: 'Libro de Ejercicios Lección 06 Túshuguăn.pdf',
   1: 'Libro de Ejercicios Basico 1 - Lección 1 -2.pdf',
   2: 'Libro de Ejercicios Basico 1 - Lección 1 -2.pdf',
   3: 'Libro de Ejecicios Basico 1 - Lección 3 - Nimen jiã you jĩ kou rén.pdf',
@@ -232,6 +233,30 @@ addDialogues(5, 5, 'L5-task-21', [
   ['她教你什么？', '她教我说汉语。', 'La pregunta pide saber qué te enseña ella.', '教 se lee jiāo en este contexto. 教我说汉语 significa «me enseña a hablar chino».'],
   ['我来介绍一下，这是我妹妹林娜。', '林娜，你好！', 'Te presentan a Lin Na: dirígete a ella.', 'Después de la presentación, la respuesta saluda directamente a Lin Na.', undefined, 'Saluda a la persona que te acaban de presentar.'],
 ], 3);
+
+// L6: answers below are explicit Míng adaptations, never official source keys.
+addOrders(6, 6, 'l6-wb-order', [
+  [['我家','对面','有','一个','大','超市'], '我家对面有一个大超市。', 'Wǒ jiā duìmiàn yǒu yí ge dà chāoshì.', 'Enfrente de mi casa hay un supermercado grande.', 'Lugar → 有 → lo que hay.', '对面 se une a 我家; 一个大超市 introduce el establecimiento.'],
+  [['请问','食堂','在','哪儿'], '请问食堂在哪儿？', 'Qǐngwèn shítáng zài nǎr?', 'Disculpa, ¿dónde está el comedor?', '请问 abre la pregunta cortés.', '在 sitúa el comedor; 哪儿 pide su ubicación.'],
+  [['你们','现在','在','哪儿'], '你们现在在哪儿？', 'Nǐmen xiànzài zài nǎr?', '¿Dónde están ustedes ahora?', 'Persona → tiempo → ubicación.', '现在 va antes del verbo 在.'],
+  [['银行','就','在','大学的','右边'], '银行就在大学的右边。', 'Yínháng jiù zài dàxué de yòubian.', 'El banco está justo a la derecha de la universidad.', '就 enfatiza la ubicación.', '大学的右边 es la referencia espacial.'],
+  [['你','给','我','介绍','一下','好吗'], '你给我介绍一下，好吗？', 'Nǐ gěi wǒ jièshào yíxià, hǎo ma?', '¿Me lo presentas un momento, por favor?', '给我 va antes del verbo.', '好吗 pide aceptación; 给 introduce al receptor.'],
+  [['马路','对面','有','没有','商店'], '马路对面有没有商店？', 'Mǎlù duìmiàn yǒu méiyǒu shāngdiàn?', '¿Hay tiendas al otro lado de la calle?', 'Lugar → 有没有 → establecimiento.', '有没有 es la pregunta afirmativa-negativa de 有.'],
+]);
+addCompletions(6, 4, 'l6-wb-fill-hanzi', [
+  ['图书馆在___公楼旁边。','办','力','Se nombra el edificio de oficinas.','办公楼 comienza con 办.'],
+  ['___边的楼是宿舍楼。','右','友','Se indica un lado.','右边 significa a la derecha.'],
+  ['这儿有一___胡同。','条','本','Un callejón es largo y estrecho.','条 es el clasificador usado con 胡同 en el libro.'],
+  ['请问，___育馆在哪儿？','体','休','Se busca el gimnasio.','体育馆 se escribe con 体.'],
+  ['你家___边有商店吗？','北','比','Se pregunta por una dirección cardinal.','北边 indica el norte.'],
+]);
+addDialogues(6, 5, 'l6-wb-match', [
+  ['请问，图书馆在哪儿？','图书馆在东门旁边。','La pregunta pide una ubicación.','东门旁边 sitúa la biblioteca junto a la puerta este.'],
+  ['你现在在哪儿？','我也不知道我在哪儿。','Responde sobre tu ubicación.','La respuesta expresa que no sabe dónde está.'],
+  ['等一下，你说什么？','我说：“你在做什么呢？”','Se pide repetir lo dicho.','我说 introduce la frase que se repite.'],
+  ['什么叫“胡同”？','就是小街道。','Se pide el significado de una palabra.','小街道 explica 胡同 en el texto.'],
+  ['饭馆后面有一个书店，对吗？','对，那个书店很大。','La pregunta solicita confirmación.','对 confirma la información sobre la librería.'],
+]);
 
 /** Source references are deliberately excluded from data passed to the browser. */
 export function getWorkbookQuestions(scope: CurriculumScope, mode?: WorkbookMode): WorkbookQuestion[] {

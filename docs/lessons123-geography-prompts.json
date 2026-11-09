@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "batch": "ming-l123-geography-20261104",
+  "entries": [
+    {
+      "wordId": "v-法国",
+      "prompt": "Diagrama vectorial educativo para 法国 (Fǎguó, Francia): bandera FR auténtica, geometría y proporción originales de country-flags c09927e63705529bbf59ca6684cd9b23225dddad, cotejada con fuentes oficiales; etiquetas grandes Hanzi y pinyin. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "bf7a906b42ecdcb7550d78fc0b134c0ec4ccbf1da23308ac7215b94e3b83589c",
+      "kind": "country",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-德国",
+      "prompt": "Diagrama vectorial educativo para 德国 (Déguó, Alemania): bandera DE auténtica, geometría y proporción originales de country-flags c09927e63705529bbf59ca6684cd9b23225dddad, cotejada con fuentes oficiales; etiquetas grandes Hanzi y pinyin. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "38a8a36cc4c19951c6ad41900be97ab5424c6f29514eaabbc0b3ddb0e859117a",
+      "kind": "country",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-加拿大",
+      "prompt": "Diagrama vectorial educativo para 加拿大 (Jiānádà, Canadá): bandera CA auténtica, geometría y proporción originales de country-flags c09927e63705529bbf59ca6684cd9b23225dddad, cotejada con fuentes oficiales; etiquetas grandes Hanzi y pinyin. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "718e09af35f2e2e787a065a2d7d08853613f78d6a6eda5da66acbdc5026c6666",
+      "kind": "country",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-英国",
+      "prompt": "Diagrama vectorial educativo para 英国 (Yīngguó, Reino Unido; Inglaterra): bandera GB auténtica, geometría y proporción originales de country-flags c09927e63705529bbf59ca6684cd9b23225dddad, cotejada con fuentes oficiales; etiquetas grandes Hanzi y pinyin. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "d0f363e7674c943bd52daa38c4d535843282a464307473d11284ca1c5a3cd4f1",
+      "kind": "country",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-澳大利亚",
+      "prompt": "Diagrama vectorial educativo para 澳大利亚 (Àodàlìyà, Australia): bandera AU auténtica, geometría y proporción originales de country-flags c09927e63705529bbf59ca6684cd9b23225dddad, cotejada con fuentes oficiales; etiquetas grandes Hanzi y pinyin. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "80d646414161345e5ab1d14a8c890eca682eeb010d4d8c7749a64d9f56fcfe94",
+      "kind": "country",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-俄罗斯",
+      "prompt": "Diagrama vectorial educativo para 俄罗斯 (Éluósī, Rusia): bandera RU auténtica, geometría y proporción originales de country-flags c09927e63705529bbf59ca6684cd9b23225dddad, cotejada con fuentes oficiales; etiquetas grandes Hanzi y pinyin. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "18d3991325c3b6dffba87b8abe392dc1f8432894b7a9a05acb055605bf0d020f",
+      "kind": "country",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-日本",
+      "prompt": "Diagrama vectorial educativo para 日本 (Rìběn, Japón): bandera JP auténtica, geometría y proporción originales de country-flags c09927e63705529bbf59ca6684cd9b23225dddad, cotejada con fuentes oficiales; etiquetas grandes Hanzi y pinyin. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "d3771936f8b86744e2c3cffc29bb42907ffeffd2cc61d774283a432406d96ea2",
+      "kind": "country",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-韩国",
+      "prompt": "Diagrama vectorial educativo para 韩国 (Hánguó, Corea del Sur): bandera KR auténtica, geometría y proporción originales de country-flags c09927e63705529bbf59ca6684cd9b23225dddad, cotejada con fuentes oficiales; etiquetas grandes Hanzi y pinyin. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "1f47569ad793181fa958e2b241bbd1d7d7920b3e4821997deb990753b4a9b311",
+      "kind": "country",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-泰国",
+      "prompt": "Diagrama vectorial educativo para 泰国 (Tàiguó, Tailandia): bandera TH auténtica, geometría y proporción originales de country-flags c09927e63705529bbf59ca6684cd9b23225dddad, cotejada con fuentes oficiales; etiquetas grandes Hanzi y pinyin. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "40c494228603d02cf41446a15c28fe63f39a93bf35175887c74ce4af759d7e52",
+      "kind": "country",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-印度",
+      "prompt": "Diagrama vectorial educativo para 印度 (Yìndù, India): bandera IN auténtica, geometría y proporción originales de country-flags c09927e63705529bbf59ca6684cd9b23225dddad, cotejada con fuentes oficiales; etiquetas grandes Hanzi y pinyin. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "e67491a50b6f1548f99d94fbe4ea38b9ae685325f07a0300831fa08c64c5a686",
+      "kind": "country",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-埃及",
+      "prompt": "Diagrama vectorial educativo para 埃及 (Āijí, Egipto): bandera EG auténtica, geometría y proporción originales de country-flags c09927e63705529bbf59ca6684cd9b23225dddad, cotejada con fuentes oficiales; etiquetas grandes Hanzi y pinyin. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "3b5d3938361447991288a2de521fb154cf5345f3f01fa6dace3873e5443f344d",
+      "kind": "country",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-阿根廷",
+      "prompt": "Diagrama vectorial educativo para 阿根廷 (Āgēntíng, Argentina): bandera AR auténtica, geometría y proporción originales de country-flags c09927e63705529bbf59ca6684cd9b23225dddad, cotejada con fuentes oficiales; etiquetas grandes Hanzi y pinyin. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "4262c48247f546c6a6ae7868cca959411900a4aed3bbf0ca43e9b5f151e49e5d",
+      "kind": "country",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-美国人",
+      "prompt": "Diagrama vectorial educativo para 美国人 (Měiguó rén, estadounidense): bandera US auténtica, geometría y proporción originales de country-flags c09927e63705529bbf59ca6684cd9b23225dddad, cotejada con fuentes oficiales; silueta humana neutra debajo, sin inferir apariencia étnica; etiquetas grandes Hanzi y pinyin. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "da1ca15a3eca6558bec5b2a4ee80932225c360f914f66391f002d1d7eafeafa6",
+      "kind": "nationality",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-俄罗斯人",
+      "prompt": "Diagrama vectorial educativo para 俄罗斯人 (Éluósīrén, ruso; persona de Rusia): bandera RU auténtica, geometría y proporción originales de country-flags c09927e63705529bbf59ca6684cd9b23225dddad, cotejada con fuentes oficiales; silueta humana neutra debajo, sin inferir apariencia étnica; etiquetas grandes Hanzi y pinyin. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "7f21285878cfb5958c6a5cd7bdc9e5ce9462a69423dd0c1044194b4f258a63ca",
+      "kind": "nationality",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-北京",
+      "prompt": "Diagrama vectorial educativo para 北京 (Běijīng, Beijing): pin de ubicación dentro de un recuadro rotulado 中国 / Zhōngguó, sin inventar monumentos ni posiciones en un mapa; Hanzi y pinyin grandes debajo. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "7686c3148a37f118c5dc5eabc61a7aa5fa8b48a5b6040c3ec400510700e32251",
+      "kind": "city",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-上海",
+      "prompt": "Diagrama vectorial educativo para 上海 (Shànghǎi, Shanghái): pin de ubicación dentro de un recuadro rotulado 中国 / Zhōngguó, sin inventar monumentos ni posiciones en un mapa; Hanzi y pinyin grandes debajo. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "c905a2692ab9d0dd442ba89bfb40514dfe69384bc28708d4ae14b834cae285e8",
+      "kind": "city",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-西安",
+      "prompt": "Diagrama vectorial educativo para 西安 (Xī’ān, Xi'an): pin de ubicación dentro de un recuadro rotulado 中国 / Zhōngguó, sin inventar monumentos ni posiciones en un mapa; Hanzi y pinyin grandes debajo. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "e81a405912ad4837ac8bb9fb5aaf3552e3993a165611ad5461f21146e0beb0cc",
+      "kind": "city",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-广州",
+      "prompt": "Diagrama vectorial educativo para 广州 (Guǎngzhōu, Guangzhou; Cantón): pin de ubicación dentro de un recuadro rotulado 中国 / Zhōngguó, sin inventar monumentos ni posiciones en un mapa; Hanzi y pinyin grandes debajo. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "4e6e64b70c7093d2d32f8b28f779368e82b4589a734dcaac0a21a6c67a97d822",
+      "kind": "city",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-英语",
+      "prompt": "Diagrama vectorial educativo para 英语 (Yīngyǔ, idioma inglés): burbuja de habla rotulada English, sin equiparar lengua a nacionalidad; Hanzi y pinyin grandes debajo. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "79b19648e30c3b083c38428bdec85dc4bc96a7f379eb13176a3029924b2d5cca",
+      "kind": "language",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-法语",
+      "prompt": "Diagrama vectorial educativo para 法语 (Fǎyǔ, francés): burbuja de habla rotulada Français, sin equiparar lengua a nacionalidad; Hanzi y pinyin grandes debajo. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "a2d56ed2ff53704d023de67ef4766b7281a335ff5d2556b6580e969e4499795f",
+      "kind": "language",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-德语",
+      "prompt": "Diagrama vectorial educativo para 德语 (Déyǔ, alemán): burbuja de habla rotulada Deutsch, sin equiparar lengua a nacionalidad; Hanzi y pinyin grandes debajo. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "e03c44a6097a39383249ecb01dee4f05c7dc32a90d930a271c743c28c40ca25d",
+      "kind": "language",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-俄语",
+      "prompt": "Diagrama vectorial educativo para 俄语 (Éyǔ, ruso): burbuja de habla rotulada Русский, sin equiparar lengua a nacionalidad; Hanzi y pinyin grandes debajo. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "721a9cc6272c55cac1be519a3b8a07713cb8bd5117e83f30dcea87bcc4af5dd9",
+      "kind": "language",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-日语",
+      "prompt": "Diagrama vectorial educativo para 日语 (Rìyǔ, japonés): burbuja de habla rotulada 日本語, sin equiparar lengua a nacionalidad; Hanzi y pinyin grandes debajo. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "0c63ea9e193882239497fab9060d8c58e0d8432ba51299ec8b1539bcde5aedd4",
+      "kind": "language",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-西班牙语",
+      "prompt": "Diagrama vectorial educativo para 西班牙语 (Xībānyá yǔ, español): burbuja de habla rotulada Español, sin equiparar lengua a nacionalidad; Hanzi y pinyin grandes debajo. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "b6a22cfa25864c68df0429a3e18639fb3c30a7d6f38afa7aceba9a4920e2f731",
+      "kind": "language",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-韩语",
+      "prompt": "Diagrama vectorial educativo para 韩语 (Hányǔ, coreano): burbuja de habla rotulada 한국어, sin equiparar lengua a nacionalidad; Hanzi y pinyin grandes debajo. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "172588d521c295cb014e951e1c8847e2daf57f82d4faf1c93fd2929060f03136",
+      "kind": "language",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-意大利语",
+      "prompt": "Diagrama vectorial educativo para 意大利语 (yì dà lì yǔ, idioma italiano): burbuja de habla rotulada Italiano, sin equiparar lengua a nacionalidad; Hanzi y pinyin grandes debajo. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "f88890d50226b5e14df72eace0a6bb1eafa4088b46c0d34fdb66fb7b0c715f03",
+      "kind": "language",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-语言",
+      "prompt": "Diagrama vectorial educativo para 语言 (yǔ yán, idiomas): dos burbujas de habla con muestras escritas de idiomas, sin banderas; Hanzi y pinyin grandes debajo. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "4bb3e1af17b93fe8106fd1066c85a75ee3d45a6ec5ca7e92266ad88cd2427f02",
+      "kind": "languages",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-外语",
+      "prompt": "Diagrama vectorial educativo para 外语 (wàiyǔ, idioma extranjero): dos burbujas de habla con muestras escritas de idiomas, sin banderas; Hanzi y pinyin grandes debajo. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "11b1791e3447df8092904a4dda6003aa772014c0eb52b4c071f2d855195e2f35",
+      "kind": "foreign-language",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-方言",
+      "prompt": "Diagrama vectorial educativo para 方言 (fāngyán, dialecto; variedad regional de una lengua): recuadro 语言 / yǔyán con ramas hacia dos regiones genéricas A y B, identificadas como 地区 / dìqū, y burbujas de voz; sin inventar pronunciaciones dialectales; Hanzi y pinyin grandes debajo. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "4567045381a9a2b661cb9e3410ed28cd6b62a09ce52da215807de2b8b8046f9f",
+      "kind": "regional-language",
+      "status": "approved"
+    },
+    {
+      "wordId": "v-北京人",
+      "prompt": "Diagrama vectorial educativo para 北京人 (Běijīng rén, persona de Pekín): recuadro 北京 / Běijīng con flecha hacia una figura humana neutra para expresar procedencia, sin inferir apariencia; Hanzi y pinyin grandes debajo. Fondo transparente, composición a la derecha con espacio libre a la izquierda. No usar como pregunta de imagen porque el texto da la respuesta.",
+      "promptSha256": "aaa6efd9ab68e05cae40f6530c5b357001cc10f68be1c7718d4f49ce0c3867c7",
+      "kind": "city-origin",
+      "status": "approved"
+    }
+  ]
+}

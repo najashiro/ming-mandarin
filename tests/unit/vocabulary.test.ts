@@ -54,8 +54,11 @@ describe('vocabulario activo: evidencia, búsqueda y recursos', () => {
       expect(existsSync(`public${media.src}`)).toBe(true);
     }
     for (const word of vocabularyCatalog.filter(word => word.visual_ming.visual_mode === 'none')) expect(imageForWord(word.id)).toBeUndefined();
-    expect(vocabularyMedia.filter(media => media.status === 'approved')).toHaveLength(95);
-    expect(imageForWord(vocabularyCatalog.find(word => word.hanzi === '真')!.id)).toBeUndefined();
+    expect(vocabularyMedia.filter(media => media.status === 'approved').length).toBeGreaterThan(200);
+    for (const asset of vocabularyMedia.filter(asset => !asset.imageQuizEligible)) {
+      const word = vocabularyCatalog.find(word => word.id === asset.wordId);
+      if (word) expect(availablePracticeTypes(word)).not.toContain('image');
+    }
     for (const hanzi of ['猫', '饺子', '中国', '老师']) expect(imageForWord(vocabularyCatalog.find(word => word.hanzi === hanzi)!.id)).toBeDefined();
     for (const word of vocabularyCatalog.filter(word => !word.visual_ming.image_quiz_eligible)) expect(availablePracticeTypes(word)).not.toContain('image');
   });
@@ -243,7 +246,7 @@ describe('partición exclusiva y ejemplos globales', () => {
     expect(getVocabularyLesson(cat)).toBe(3);
   });
   it('las fichas conservan apoyos históricos y ejemplos únicos', () => {
-    expect(vocabularyCatalog).toHaveLength(469);
+    expect(vocabularyCatalog).toHaveLength(560);
     expect(vocabularyCatalog.filter(word => word.lessons.some(lesson => lesson < 4))).toHaveLength(337);
     expect(baseline.phrases).toHaveLength(635);
     for (const word of vocabularyCatalog) {
@@ -255,8 +258,8 @@ describe('partición exclusiva y ejemplos globales', () => {
     }
     expect(['l1', 'l2', 'l3', 'l1-l2-l3'].map(scope => getVocabularySet(scope as 'l1').length)).toEqual([85, 126, 116, 327]);
   });
-  it('define cinco alcances elegibles sin nombres personales y conserva lugares, palabras completas y monosílabos', () => {
-    expect(vocabularyMixScopes).toEqual(['l1', 'l2', 'l3', 'l4', 'l5', 'l1-l2-l3-l4-l5', 'l1-l2', 'l1-l2-l3', 'l1-l2-l3-l4']);
+  it('define los alcances elegibles sin nombres personales y conserva lugares, palabras completas y monosílabos', () => {
+    expect(vocabularyMixScopes).toEqual(['l1', 'l2', 'l3', 'l4', 'l5', 'l6', 'l1-l2-l3-l4-l5-l6', 'l1-l2-l3-l4-l5', 'l1-l2', 'l1-l2-l3', 'l1-l2-l3-l4']);
     const sets = Object.fromEntries(vocabularyMixScopes.map(scope => [scope, getVocabularyMixSet(scope)]));
     expect((['l1','l2','l3','l1-l2','l1-l2-l3'] as const).map(scope => sets[scope].length)).toEqual([68, 122, 110, 190, 300]);
     for (const words of Object.values(sets)) expect(new Set(words.map(word => word.id)).size).toBe(words.length);

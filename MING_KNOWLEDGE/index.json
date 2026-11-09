@@ -86,12 +86,32 @@
   },
   "baseline_query": "python3 MING_KNOWLEDGE/v2/query_v21.py --word <hanzi> --limit 8",
   "runtime_extension": {
-    "version": "2.3.0",
-    "lesson": 5,
-    "entrypoint": "v2/lesson5/README.md",
-    "source": "v2/lesson5/content.json",
-    "query": "python3 MING_KNOWLEDGE/v2/query.py --lesson 5 --word 生日 --examples",
-    "validation": "python3 MING_KNOWLEDGE/v2/query.py --lesson 5 --validate",
-    "note": "L1–L4 documentary 2.2 cache remains historical; runtime combines it with the L5 extension."
-  }
+    "version": "2.4.0",
+    "lesson": 6,
+    "entrypoint": "v2/lesson6/README.md",
+    "source": "v2/lesson6/content.json",
+    "validation": "python3 MING_KNOWLEDGE/v2/query.py --lesson 6 --validate",
+    "learner_export": "python3 scripts/export-lesson6-web.py",
+    "original_listening_audio_supplied": false
+  },
+  "runtime_extensions": [
+    {
+      "version": "2.3.0",
+      "lesson": 5,
+      "entrypoint": "v2/lesson5/README.md",
+      "source": "v2/lesson5/content.json",
+      "query": "python3 MING_KNOWLEDGE/v2/query.py --lesson 5 --word 生日 --examples",
+      "validation": "python3 MING_KNOWLEDGE/v2/query.py --lesson 5 --validate",
+      "note": "L1–L4 documentary 2.2 cache remains historical; runtime combines it with the L5 extension."
+    },
+    {
+      "version": "2.4.0",
+      "lesson": 6,
+      "entrypoint": "v2/lesson6/README.md",
+      "source": "v2/lesson6/content.json",
+      "validation": "python3 MING_KNOWLEDGE/v2/query.py --lesson 6 --validate",
+      "learner_export": "python3 scripts/export-lesson6-web.py",
+      "original_listening_audio_supplied": false
+    }
+  ]
 }

@@ -1,10 +1,11 @@
 import { test, expect } from '@playwright/test';
 import media from '../../data/lesson4-media.json' with { type: 'json' };
+import { normalizePinyinForComparison } from '../../lib/pinyin';
 
 test('L4: nuevas fotografías y diagramas se muestran en tarjetas móviles', async ({ page }, info) => {
   test.setTimeout(60_000);
   await page.route('**/api/vocabulary/images', route => route.fulfill({ json: media }));
-  for (const [width, word] of [[320,'v-跑步'],[390,'v-午饭'],[390,'v-明天'],[390,'v-刻'],[430,'v-起床']] as const) {
+  for (const [width, word] of [[320,'v-跑步'],[390,'v-午饭'],[390,'v-明天'],[390,'v-刻'],[430,'v-起床'],[390,'v-学校'],[320,'v-女生'],[430,'v-运动'],[390,'v-手机']] as const) {
     await page.setViewportSize({width,height:844});
     await page.goto(`/study/l4/vocabulary?card=${encodeURIComponent(word)}`);
     await page.waitForLoadState('networkidle');
@@ -76,7 +77,7 @@ test('L4: navegación, módulos, diálogos canónicos y regresión L1–L3', asy
   await visit('/study/l4/readings');
   await expect(page.locator('.corpus-dialogue')).toHaveCount(6);
   await visit('/study/l4/exercises');
-  await expect(page.locator('details')).toHaveCount(62);
+  await expect(page.locator('.documentary-activity')).toHaveCount(62);
   for (const lesson of [1,2,3]) {
     await visit(`/study/l${lesson}/vocabulary`);
     await expect(page.locator('.vocabulary-card').first()).toBeVisible();
@@ -108,7 +109,9 @@ test('L4: audio real, imagen transparente, fallback y cambio de lección', async
   await page.screenshot({ path: `test-results/lesson4-${info.project.name}.png`, fullPage: true });
   const imageSrc = await card.locator('img').getAttribute('src');
   expect(imageSrc).toContain('television');
-  await page.route('**/images/vocabulary/lesson4/television.webp*', route => route.abort());
+  const selectedImage = await card.locator('img').evaluate((image: HTMLImageElement) => image.currentSrc);
+  await page.route(selectedImage, route => route.abort());
+  await page.route(new URL(imageSrc!, page.url()).href, route => route.abort());
   await page.reload();
   await expect(card).toBeVisible();
   await expect(card.locator('img')).toHaveCount(0);
@@ -123,7 +126,7 @@ test('L4: audio real, imagen transparente, fallback y cambio de lección', async
 });
 
 
-test('L4: gira ejemplos globales y ejemplos sin apoyos completos', async ({ page }) => {
+test('L4: gira ejemplos globales con pinyin y traducción completos', async ({ page }) => {
   await page.goto('/study/l4/vocabulary');
   const tired = page.getByRole('article', { name: 'Ficha de 累', exact: true });
   await tired.getByRole('button', { name: 'Ver ejemplo: 累', exact: true }).click();
@@ -132,13 +135,41 @@ test('L4: gira ejemplos globales y ejemplos sin apoyos completos', async ({ page
   await expect(tired.locator('.vocabulary-example-translation')).toBeVisible();
   await tired.getByRole('button', { name: 'Ver palabra: 累', exact: true }).click();
   await expect(tired.locator('.vocabulary-example')).toHaveCount(0);
+  await page.getByRole('button', { name: 'Siguiente', exact: true }).click();
   const half = page.getByRole('article', { name: 'Ficha de 半', exact: true });
   await half.getByRole('button', { name: 'Ver ejemplo: 半', exact: true }).click();
   await expect(half.locator('.vocabulary-example-text')).toBeVisible();
+  await expect(half.locator('.word-pinyin')).not.toBeEmpty();
+  await expect(half.locator('.vocabulary-example-translation')).not.toBeEmpty();
   await expect(half).not.toContainText(/undefined|null/);
   await page.getByRole('button', { name: 'Siguiente', exact: true }).click();
   await page.getByRole('button', { name: 'Anterior', exact: true }).click();
   await expect(half.locator('.vocabulary-example')).toHaveCount(0);
+});
+
+test('L4: tarjetas recuperadas y lecturas tienen apoyos completos sin desbordarse', async ({ page }) => {
+  test.setTimeout(60_000);
+  await page.setViewportSize({ width: 320, height: 844 });
+  for (const [hanzi, pinyin, spanish] of [
+    ['手机', 'shǒujī', 'teléfono celular'],
+    ['昨天', 'zuótiān', 'ayer'],
+    ['语文', 'yǔwén', 'lengua y literatura'],
+    ['里卡多帕尔玛大学孔子学院', "Lǐkǎduō Pà'ěrmǎ Dàxué Kǒngzǐ Xuéyuàn", 'Instituto Confucio de la Universidad Ricardo Palma'],
+  ]) {
+    await page.goto(`/study/l4/vocabulary?card=${encodeURIComponent(`v-${hanzi}`)}`);
+    const card = page.getByRole('article', { name: `Ficha de ${hanzi}`, exact: true });
+    await expect(card).toBeVisible();
+    expect(normalizePinyinForComparison((await card.locator('.word-pinyin').textContent())!)).toBe(normalizePinyinForComparison(pinyin));
+    await expect(card.locator('.vocabulary-translation')).toHaveText(spanish);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBe(true);
+  }
+  await page.goto('/study/l4/readings');
+  const readings = page.locator('.corpus-dialogue');
+  await expect(readings).toHaveCount(6);
+  for (const reading of await readings.all()) {
+    await expect(reading.locator('.pinyin-text')).not.toBeEmpty();
+    await expect(reading.locator(':scope > p').nth(2)).not.toBeEmpty();
+  }
 });
 
 test('L4: 回 y universidad muestran sus ejemplos completos; 下 sigue exceptuada', async ({ page }) => {

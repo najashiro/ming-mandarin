@@ -1,0 +1,7213 @@
+{
+  "version": "2.4.0",
+  "fingerprint": "9ea147def2bcab5b59c3221558e45e6185df71dd2bcdb0a44857ac03a1a2700b",
+  "corpusFingerprint": "9ea147def2bcab5b59c3221558e45e6185df71dd2bcdb0a44857ac03a1a2700b",
+  "vocabulary": [
+    {
+      "id": "v-新",
+      "hanzi": "新",
+      "pinyin": "xīn",
+      "spanish": "nuevo",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-dcace3ea6154c073"
+      ],
+      "visual_ming": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      }
+    },
+    {
+      "id": "v-同学",
+      "hanzi": "同学",
+      "pinyin": "tóngxué",
+      "spanish": "compañero de clase; compañero de escuela",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-936ea7739e63098e"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-食堂",
+      "hanzi": "食堂",
+      "pinyin": "shítáng",
+      "spanish": "comedor",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-64d0a5d711ec6de9"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-哪儿",
+      "hanzi": "哪儿",
+      "pinyin": "nǎr",
+      "spanish": "dónde",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-e424d9409d539e75"
+      ],
+      "visual_ming": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      }
+    },
+    {
+      "id": "v-校门",
+      "hanzi": "校门",
+      "pinyin": "xiàomén",
+      "spanish": "puerta de la escuela; entrada del campus",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-21065f5feef4879b"
+      ],
+      "visual_ming": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      }
+    },
+    {
+      "id": "v-门",
+      "hanzi": "门",
+      "pinyin": "mén",
+      "spanish": "puerta; portón; entrada",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "subentry"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-21065f5feef4879b"
+      ],
+      "visual_ming": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      }
+    },
+    {
+      "id": "v-右边",
+      "hanzi": "右边",
+      "pinyin": "yòubian",
+      "spanish": "derecha (lado)",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-92a8c23752087126"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-右",
+      "hanzi": "右",
+      "pinyin": "yòu",
+      "spanish": "derecha",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "subentry"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-92a8c23752087126"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-边",
+      "hanzi": "边",
+      "pinyin": "bian",
+      "spanish": "lado",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "subentry"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-92a8c23752087126"
+      ],
+      "visual_ming": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      }
+    },
+    {
+      "id": "v-跟",
+      "hanzi": "跟",
+      "pinyin": "gēn",
+      "spanish": "con",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-5ac4ce5e56b103b5"
+      ],
+      "visual_ming": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      }
+    },
+    {
+      "id": "v-这儿",
+      "hanzi": "这儿",
+      "pinyin": "zhèr",
+      "spanish": "aquí",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-328f673da9ffb96e"
+      ],
+      "visual_ming": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      }
+    },
+    {
+      "id": "v-地图",
+      "hanzi": "地图",
+      "pinyin": "dìtú",
+      "spanish": "mapa",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-328f673da9ffb96e"
+      ],
+      "visual_ming": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      }
+    },
+    {
+      "id": "v-给",
+      "hanzi": "给",
+      "pinyin": "gěi",
+      "spanish": "a; para",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-62efc2ddb0bb7cd1"
+      ],
+      "visual_ming": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      }
+    },
+    {
+      "id": "v-旁边",
+      "hanzi": "旁边",
+      "pinyin": "pángbiān",
+      "spanish": "lado; al lado de",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-182828dec4a7cf66"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-办公楼",
+      "hanzi": "办公楼",
+      "pinyin": "bàngōnglóu",
+      "spanish": "edificio de oficinas; edificio de administración",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-182828dec4a7cf66"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-办公",
+      "hanzi": "办公",
+      "pinyin": "bàngōng",
+      "spanish": "despachar asuntos públicos; trabajar (usualmente en una oficina)",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "subentry"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-a66ec61ad5c2651b"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-楼",
+      "hanzi": "楼",
+      "pinyin": "lóu",
+      "spanish": "edificio",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "subentry"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-4c0dc2d0a25c5d90"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-图书馆",
+      "hanzi": "图书馆",
+      "pinyin": "túshūguǎn",
+      "spanish": "biblioteca",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-fd2f0877b78bc5f0"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-书",
+      "hanzi": "书",
+      "pinyin": "shū",
+      "spanish": "libro",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "subentry"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-fd2f0877b78bc5f0"
+      ],
+      "visual_ming": {
+        "visual_mode": "concrete_object",
+        "image_support": true,
+        "image_quiz_eligible": true,
+        "ambiguity_risk": "low"
+      }
+    },
+    {
+      "id": "v-北边",
+      "hanzi": "北边",
+      "pinyin": "běibian",
+      "spanish": "norte (lado)",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-0c63ee9f9c340c10"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-北",
+      "hanzi": "北",
+      "pinyin": "běi",
+      "spanish": "norte",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "subentry"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-0c63ee9f9c340c10"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-西边",
+      "hanzi": "西边",
+      "pinyin": "xībian",
+      "spanish": "oeste (lado)",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-7809742c9852a4bc"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-西",
+      "hanzi": "西",
+      "pinyin": "xī",
+      "spanish": "oeste",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "subentry"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-7809742c9852a4bc"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-体育馆",
+      "hanzi": "体育馆",
+      "pinyin": "tǐyùguǎn",
+      "spanish": "gimnasio; estadio",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-7809742c9852a4bc"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-体育",
+      "hanzi": "体育",
+      "pinyin": "tǐyù",
+      "spanish": "educación física; entrenamiento físico",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "subentry"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-c6a4e2797890a5b1"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-里边",
+      "hanzi": "里边",
+      "pinyin": "lǐbian",
+      "spanish": "en; dentro de",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-cd283fd01c366977"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-里",
+      "hanzi": "里",
+      "pinyin": "lǐ",
+      "spanish": "en; dentro de",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "subentry"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-cd283fd01c366977"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-银行",
+      "hanzi": "银行",
+      "pinyin": "yínháng",
+      "spanish": "banco",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-cd283fd01c366977"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-东边",
+      "hanzi": "东边",
+      "pinyin": "dōngbian",
+      "spanish": "este (lado)",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-3190fc52f3846102"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-东",
+      "hanzi": "东",
+      "pinyin": "dōng",
+      "spanish": "este",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "subentry"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-3190fc52f3846102"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-宿舍",
+      "hanzi": "宿舍",
+      "pinyin": "sùshè",
+      "spanish": "dormitorio",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-7f9564f354342014"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-教学",
+      "hanzi": "教学",
+      "pinyin": "jiàoxué",
+      "spanish": "enseñanza y aprendizaje",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-ced50ccd111628e6"
+      ],
+      "visual_ming": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      }
+    },
+    {
+      "id": "v-先",
+      "hanzi": "先",
+      "pinyin": "xiān",
+      "spanish": "primero; antes",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 1,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-6230fae7c63ec511"
+      ],
+      "visual_ming": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      }
+    },
+    {
+      "id": "v-别",
+      "hanzi": "别",
+      "pinyin": "bié",
+      "spanish": "no",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 2,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-b135ed7f7ebbf80d"
+      ],
+      "visual_ming": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      }
+    },
+    {
+      "id": "v-着急",
+      "hanzi": "着急",
+      "pinyin": "zháojí",
+      "spanish": "preocupado; ansioso",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 2,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-b135ed7f7ebbf80d"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-小姐",
+      "hanzi": "小姐",
+      "pinyin": "xiǎojie",
+      "spanish": "señora; señorita",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 2,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-b135ed7f7ebbf80d"
+      ],
+      "visual_ming": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      }
+    },
+    {
+      "id": "v-地方",
+      "hanzi": "地方",
+      "pinyin": "dìfang",
+      "spanish": "lugar; región",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 2,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-4ffeb5b58ec3dc6a"
+      ],
+      "visual_ming": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      }
+    },
+    {
+      "id": "v-知道",
+      "hanzi": "知道",
+      "pinyin": "zhīdào",
+      "spanish": "saber",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 2,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-6162298b019e2f56"
+      ],
+      "visual_ming": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      }
+    },
+    {
+      "id": "v-超市",
+      "hanzi": "超市",
+      "pinyin": "chāoshì",
+      "spanish": "supermercado",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 2,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-113ae7f85371bab5"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-前边",
+      "hanzi": "前边",
+      "pinyin": "qiánbian",
+      "spanish": "frente a; delante de",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 2,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-113ae7f85371bab5"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-前",
+      "hanzi": "前",
+      "pinyin": "qián",
+      "spanish": "delante",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 2,
+          "list_type": "new_vocabulary",
+          "entry_kind": "subentry"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-113ae7f85371bab5"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-对面",
+      "hanzi": "对面",
+      "pinyin": "duìmiàn",
+      "spanish": "opuesto; enfrente de",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 2,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-db0e4a269b82c08f"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-饭馆",
+      "hanzi": "饭馆",
+      "pinyin": "fànguǎn",
+      "spanish": "restaurante",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 2,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-db0e4a269b82c08f"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-过",
+      "hanzi": "过",
+      "pinyin": "guò",
+      "spanish": "cruzar; pasar",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 2,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-11d1675229a9ef50"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-马路",
+      "hanzi": "马路",
+      "pinyin": "mǎlù",
+      "spanish": "carretera; calle",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 2,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-11d1675229a9ef50"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-路",
+      "hanzi": "路",
+      "pinyin": "lù",
+      "spanish": "carretera; camino; calle",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 2,
+          "list_type": "new_vocabulary",
+          "entry_kind": "subentry"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-11d1675229a9ef50"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-后边",
+      "hanzi": "后边",
+      "pinyin": "hòubian",
+      "spanish": "atrás; detrás; posterior",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 2,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-a3c1dbdd5d6d6f00"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-后",
+      "hanzi": "后",
+      "pinyin": "hòu",
+      "spanish": "atrás",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 2,
+          "list_type": "new_vocabulary",
+          "entry_kind": "subentry"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-a3c1dbdd5d6d6f00"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-条",
+      "hanzi": "条",
+      "pinyin": "tiáo",
+      "spanish": "clasificador para algo largo, estrecho o delgado; franja; pieza larga y estrecha",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 2,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-a3c1dbdd5d6d6f00"
+      ],
+      "visual_ming": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      }
+    },
+    {
+      "id": "v-胡同",
+      "hanzi": "胡同",
+      "pinyin": "hútòng",
+      "spanish": "hutong; callejón",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 2,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-a3c1dbdd5d6d6f00"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-等",
+      "hanzi": "等",
+      "pinyin": "děng",
+      "spanish": "esperar",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 2,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-1ba9b61aae7944da"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-街道",
+      "hanzi": "街道",
+      "pinyin": "jiēdào",
+      "spanish": "calle",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 2,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-f41fbd600b6780d8"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-街",
+      "hanzi": "街",
+      "pinyin": "jiē",
+      "spanish": "calle",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 2,
+          "list_type": "new_vocabulary",
+          "entry_kind": "subentry"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-f41fbd600b6780d8"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-老",
+      "hanzi": "老",
+      "pinyin": "lǎo",
+      "spanish": "viejo",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "core_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "core_textbook",
+          "text": 2,
+          "list_type": "new_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-bf38eb018459e31a"
+      ],
+      "visual_ming": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      }
+    },
+    {
+      "id": "v-卫生间",
+      "hanzi": "卫生间",
+      "pinyin": "wèishēngjiān",
+      "spanish": "cuarto de baño",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "supplementary_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "supplementary_textbook",
+          "text": 2,
+          "list_type": "supplementary_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-840e960dd0befe23"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-卧室",
+      "hanzi": "卧室",
+      "pinyin": "wòshì",
+      "spanish": "dormitorio",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "supplementary_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "supplementary_textbook",
+          "text": 2,
+          "list_type": "supplementary_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-f25ab90fee69ffad"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-客厅",
+      "hanzi": "客厅",
+      "pinyin": "kètīng",
+      "spanish": "salón",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "supplementary_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "supplementary_textbook",
+          "text": 2,
+          "list_type": "supplementary_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-9c6a4f0ee91d82fe"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-阳台",
+      "hanzi": "阳台",
+      "pinyin": "yángtái",
+      "spanish": "balcón",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "supplementary_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "supplementary_textbook",
+          "text": 2,
+          "list_type": "supplementary_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-6210dc410c978586"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-厨房",
+      "hanzi": "厨房",
+      "pinyin": "chúfáng",
+      "spanish": "cocina",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "supplementary_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "supplementary_textbook",
+          "text": 2,
+          "list_type": "supplementary_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-5a0af42646589a84"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-书房",
+      "hanzi": "书房",
+      "pinyin": "shūfáng",
+      "spanish": "cuarto de estudio",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "supplementary_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "supplementary_textbook",
+          "text": 2,
+          "list_type": "supplementary_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-a28648db3062fded"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-咖啡厅",
+      "hanzi": "咖啡厅",
+      "pinyin": "kāfēitīng",
+      "spanish": "cafetería, café",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "supplementary_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "supplementary_textbook",
+          "text": 2,
+          "list_type": "supplementary_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-79cd8f4e7fdff9ff"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-酒吧",
+      "hanzi": "酒吧",
+      "pinyin": "jiǔbā",
+      "spanish": "bar",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "supplementary_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "supplementary_textbook",
+          "text": 2,
+          "list_type": "supplementary_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-17ed2bcbe49445e0"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-清真餐厅",
+      "hanzi": "清真餐厅",
+      "pinyin": "qīngzhēn cāntīng",
+      "spanish": "restaurante musulmán; restaurante halal",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "supplementary_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "supplementary_textbook",
+          "text": 2,
+          "list_type": "supplementary_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-a876596fe8e13c4e"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-操场",
+      "hanzi": "操场",
+      "pinyin": "cāochǎng",
+      "spanish": "campo deportivo",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "supplementary_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "supplementary_textbook",
+          "text": 2,
+          "list_type": "supplementary_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-a8c948e4ee96cdc2"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-那儿",
+      "hanzi": "那儿",
+      "pinyin": "nàr",
+      "spanish": "allí",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "supplementary_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "supplementary_textbook",
+          "text": 2,
+          "list_type": "supplementary_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-671cc16ddb81de9e"
+      ],
+      "visual_ming": {
+        "visual_mode": "text_only",
+        "image_support": false,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "high"
+      }
+    },
+    {
+      "id": "v-左边",
+      "hanzi": "左边",
+      "pinyin": "zuǒbian",
+      "spanish": "izquierda (lado)",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "supplementary_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "supplementary_textbook",
+          "text": 2,
+          "list_type": "supplementary_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-9e0064355f3fadc2"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-上边",
+      "hanzi": "上边",
+      "pinyin": "shàngbian",
+      "spanish": "arriba; encima de",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "supplementary_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "supplementary_textbook",
+          "text": 2,
+          "list_type": "supplementary_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-372e4fba4035f30c"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-下边",
+      "hanzi": "下边",
+      "pinyin": "xiàbian",
+      "spanish": "abajo; debajo; debajo de",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "supplementary_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "supplementary_textbook",
+          "text": 2,
+          "list_type": "supplementary_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-65a058ffcbaa054c"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-外边",
+      "hanzi": "外边",
+      "pinyin": "wàibian",
+      "spanish": "afuera",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "supplementary_textbook"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "supplementary_textbook",
+          "text": 2,
+          "list_type": "supplementary_vocabulary",
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-b09bea1da138e6ee"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-教学楼",
+      "hanzi": "教学楼",
+      "pinyin": "jiàoxuélóu",
+      "spanish": "edificio de aulas",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "context_only"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "context_only",
+          "text": 1,
+          "list_type": null,
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-ced50ccd111628e6"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-宿舍楼",
+      "hanzi": "宿舍楼",
+      "pinyin": "sùshèlóu",
+      "spanish": "edificio de dormitorios",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "context_only"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "context_only",
+          "text": 1,
+          "list_type": null,
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-7f9564f354342014"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-南边",
+      "hanzi": "南边",
+      "pinyin": "nánbian",
+      "spanish": "sur (lado)",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "context_only"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "context_only",
+          "text": 2,
+          "list_type": null,
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-6210dc410c978586"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-南",
+      "hanzi": "南",
+      "pinyin": "nán",
+      "spanish": "sur",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "context_only"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "context_only",
+          "text": 1,
+          "list_type": null,
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-6210dc410c978586"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    },
+    {
+      "id": "v-左",
+      "hanzi": "左",
+      "pinyin": "zuǒ",
+      "spanish": "izquierda",
+      "lessons": [
+        6
+      ],
+      "roles": [
+        "context_only"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "role": "context_only",
+          "text": 2,
+          "list_type": null,
+          "entry_kind": "word"
+        }
+      ],
+      "examplePhraseIds": [
+        "PH-L6-9e0064355f3fadc2"
+      ],
+      "visual_ming": {
+        "visual_mode": "concept_scene",
+        "image_support": true,
+        "image_quiz_eligible": false,
+        "ambiguity_risk": "medium"
+      }
+    }
+  ],
+  "phrases": [
+    {
+      "id": "PH-L6-dcace3ea6154c073",
+      "hanzi": "这是我的新书。",
+      "pinyin": "Zhè shì wǒ de xīn shū.",
+      "spanish": "Este es mi libro nuevo.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-新"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-新"
+      ]
+    },
+    {
+      "id": "PH-L6-936ea7739e63098e",
+      "hanzi": "他是我的同学。",
+      "pinyin": "Tā shì wǒ de tóngxué.",
+      "spanish": "Él es mi compañero de clase.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-同学"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-同学"
+      ]
+    },
+    {
+      "id": "PH-L6-64d0a5d711ec6de9",
+      "hanzi": "我们去食堂。",
+      "pinyin": "Wǒmen qù shítáng.",
+      "spanish": "Vamos al comedor.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-食堂"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-食堂"
+      ]
+    },
+    {
+      "id": "PH-L6-e424d9409d539e75",
+      "hanzi": "你在哪儿？",
+      "pinyin": "Nǐ zài nǎr?",
+      "spanish": "¿Dónde estás?",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-哪儿"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-哪儿"
+      ]
+    },
+    {
+      "id": "PH-L6-21065f5feef4879b",
+      "hanzi": "我在校门外边。",
+      "pinyin": "Wǒ zài xiàomén wàibian.",
+      "spanish": "Estoy fuera de la entrada del campus.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-校门",
+        "v-门"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-校门",
+        "v-门"
+      ]
+    },
+    {
+      "id": "PH-L6-92a8c23752087126",
+      "hanzi": "右边的楼很大。",
+      "pinyin": "Yòubian de lóu hěn dà.",
+      "spanish": "El edificio de la derecha es muy grande.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-右边",
+        "v-右",
+        "v-边"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-右边",
+        "v-右",
+        "v-边"
+      ]
+    },
+    {
+      "id": "PH-L6-5ac4ce5e56b103b5",
+      "hanzi": "你跟我来。",
+      "pinyin": "Nǐ gēn wǒ lái.",
+      "spanish": "Ven conmigo.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example",
+        "key_phrase"
+      ],
+      "vocabIds": [
+        "v-跟"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-跟"
+      ]
+    },
+    {
+      "id": "PH-L6-328f673da9ffb96e",
+      "hanzi": "这儿有地图。",
+      "pinyin": "Zhèr yǒu dìtú.",
+      "spanish": "Aquí hay un mapa.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-这儿",
+        "v-地图"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-这儿",
+        "v-地图"
+      ]
+    },
+    {
+      "id": "PH-L6-62efc2ddb0bb7cd1",
+      "hanzi": "我给你介绍一下。",
+      "pinyin": "Wǒ gěi nǐ jièshào yíxià.",
+      "spanish": "Te lo presento un momento.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-给"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-给"
+      ]
+    },
+    {
+      "id": "PH-L6-182828dec4a7cf66",
+      "hanzi": "食堂旁边是办公楼。",
+      "pinyin": "Shítáng pángbiān shì bàngōnglóu.",
+      "spanish": "Al lado del comedor está el edificio de oficinas.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example",
+        "key_phrase"
+      ],
+      "vocabIds": [
+        "v-旁边",
+        "v-办公楼"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-旁边",
+        "v-办公楼"
+      ]
+    },
+    {
+      "id": "PH-L6-a66ec61ad5c2651b",
+      "hanzi": "他今天不办公。",
+      "pinyin": "Tā jīntiān bù bàngōng.",
+      "spanish": "Él no trabaja en la oficina hoy.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-办公"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-办公"
+      ]
+    },
+    {
+      "id": "PH-L6-4c0dc2d0a25c5d90",
+      "hanzi": "这座楼很大。",
+      "pinyin": "Zhè zuò lóu hěn dà.",
+      "spanish": "Este edificio es muy grande.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-楼"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-楼"
+      ]
+    },
+    {
+      "id": "PH-L6-fd2f0877b78bc5f0",
+      "hanzi": "我去图书馆看书。",
+      "pinyin": "Wǒ qù túshūguǎn kàn shū.",
+      "spanish": "Voy a la biblioteca a leer.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-图书馆",
+        "v-书"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-图书馆",
+        "v-书"
+      ]
+    },
+    {
+      "id": "PH-L6-0c63ee9f9c340c10",
+      "hanzi": "图书馆在食堂北边。",
+      "pinyin": "Túshūguǎn zài shítáng běibian.",
+      "spanish": "La biblioteca está al norte del comedor.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-北边",
+        "v-北"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-北边",
+        "v-北"
+      ]
+    },
+    {
+      "id": "PH-L6-7809742c9852a4bc",
+      "hanzi": "图书馆西边是体育馆。",
+      "pinyin": "Túshūguǎn xībian shì tǐyùguǎn.",
+      "spanish": "Al oeste de la biblioteca está el gimnasio.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-西边",
+        "v-西",
+        "v-体育馆"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-西边",
+        "v-西",
+        "v-体育馆"
+      ]
+    },
+    {
+      "id": "PH-L6-c6a4e2797890a5b1",
+      "hanzi": "我今天有体育课。",
+      "pinyin": "Wǒ jīntiān yǒu tǐyù kè.",
+      "spanish": "Hoy tengo educación física.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-体育"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-体育"
+      ]
+    },
+    {
+      "id": "PH-L6-cd283fd01c366977",
+      "hanzi": "学校里边有银行吗？",
+      "pinyin": "Xuéxiào lǐbian yǒu yínháng ma?",
+      "spanish": "¿Hay un banco dentro de la escuela?",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example",
+        "dialogue_turn",
+        "key_phrase"
+      ],
+      "vocabIds": [
+        "v-里边",
+        "v-里",
+        "v-银行"
+      ],
+      "dialogueIds": [
+        "DLG-L6-1"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-里边",
+        "v-里",
+        "v-银行"
+      ]
+    },
+    {
+      "id": "PH-L6-3190fc52f3846102",
+      "hanzi": "银行在图书馆东边。",
+      "pinyin": "Yínháng zài túshūguǎn dōngbian.",
+      "spanish": "El banco está al este de la biblioteca.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-东边",
+        "v-东"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-东边",
+        "v-东"
+      ]
+    },
+    {
+      "id": "PH-L6-7f9564f354342014",
+      "hanzi": "我们的宿舍楼在这儿。",
+      "pinyin": "Wǒmen de sùshèlóu zài zhèr.",
+      "spanish": "Nuestro edificio de dormitorios está aquí.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-宿舍",
+        "v-宿舍楼"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-宿舍",
+        "v-宿舍楼"
+      ]
+    },
+    {
+      "id": "PH-L6-ced50ccd111628e6",
+      "hanzi": "教学楼在食堂东边。",
+      "pinyin": "Jiàoxuélóu zài shítáng dōngbian.",
+      "spanish": "El edificio de aulas está al este del comedor.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example",
+        "dialogue_turn"
+      ],
+      "vocabIds": [
+        "v-教学",
+        "v-教学楼"
+      ],
+      "dialogueIds": [
+        "DLG-L6-1"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-教学",
+        "v-教学楼"
+      ]
+    },
+    {
+      "id": "PH-L6-6230fae7c63ec511",
+      "hanzi": "你先说。",
+      "pinyin": "Nǐ xiān shuō.",
+      "spanish": "Habla tú primero.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-先"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-先"
+      ]
+    },
+    {
+      "id": "PH-L6-b135ed7f7ebbf80d",
+      "hanzi": "别着急，林小姐。",
+      "pinyin": "Bié zháojí, Lín xiǎojie.",
+      "spanish": "No se preocupe, señorita Lin.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-别",
+        "v-着急",
+        "v-小姐"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-别",
+        "v-着急",
+        "v-小姐"
+      ]
+    },
+    {
+      "id": "PH-L6-4ffeb5b58ec3dc6a",
+      "hanzi": "你现在在什么地方？",
+      "pinyin": "Nǐ xiànzài zài shénme dìfang?",
+      "spanish": "¿Dónde estás ahora?",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-地方"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-地方"
+      ]
+    },
+    {
+      "id": "PH-L6-6162298b019e2f56",
+      "hanzi": "我不知道。",
+      "pinyin": "Wǒ bù zhīdào.",
+      "spanish": "No lo sé.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-知道"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-知道"
+      ]
+    },
+    {
+      "id": "PH-L6-113ae7f85371bab5",
+      "hanzi": "我在超市前边。",
+      "pinyin": "Wǒ zài chāoshì qiánbian.",
+      "spanish": "Estoy delante del supermercado.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-超市",
+        "v-前边",
+        "v-前"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-超市",
+        "v-前边",
+        "v-前"
+      ]
+    },
+    {
+      "id": "PH-L6-db0e4a269b82c08f",
+      "hanzi": "对面有没有一个饭馆？",
+      "pinyin": "Duìmiàn yǒu méiyǒu yí ge fànguǎn?",
+      "spanish": "¿Hay un restaurante enfrente?",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example",
+        "dialogue_turn"
+      ],
+      "vocabIds": [
+        "v-对面",
+        "v-饭馆"
+      ],
+      "dialogueIds": [
+        "DLG-L6-2"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-对面",
+        "v-饭馆"
+      ]
+    },
+    {
+      "id": "PH-L6-11d1675229a9ef50",
+      "hanzi": "你先过马路。",
+      "pinyin": "Nǐ xiān guò mǎlù.",
+      "spanish": "Cruza primero la calle.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-过",
+        "v-马路",
+        "v-路"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-过",
+        "v-马路",
+        "v-路"
+      ]
+    },
+    {
+      "id": "PH-L6-a3c1dbdd5d6d6f00",
+      "hanzi": "饭馆后边有一条胡同。",
+      "pinyin": "Fànguǎn hòubian yǒu yì tiáo hútòng.",
+      "spanish": "Detrás del restaurante hay un callejón.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-后边",
+        "v-后",
+        "v-条",
+        "v-胡同"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-后边",
+        "v-后",
+        "v-条",
+        "v-胡同"
+      ]
+    },
+    {
+      "id": "PH-L6-1ba9b61aae7944da",
+      "hanzi": "等一下，你说什么？",
+      "pinyin": "Děng yíxià, nǐ shuō shénme?",
+      "spanish": "Espera un momento, ¿qué dices?",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example",
+        "dialogue_turn",
+        "key_phrase"
+      ],
+      "vocabIds": [
+        "v-等"
+      ],
+      "dialogueIds": [
+        "DLG-L6-2"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-等"
+      ]
+    },
+    {
+      "id": "PH-L6-f41fbd600b6780d8",
+      "hanzi": "这是一条小街道。",
+      "pinyin": "Zhè shì yì tiáo xiǎo jiēdào.",
+      "spanish": "Esta es una calle pequeña.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-街道",
+        "v-街"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-街道",
+        "v-街"
+      ]
+    },
+    {
+      "id": "PH-L6-bf38eb018459e31a",
+      "hanzi": "这是老北京的胡同。",
+      "pinyin": "Zhè shì lǎo Běijīng de hútòng.",
+      "spanish": "Este es un callejón del antiguo Pekín.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-老"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-老"
+      ]
+    },
+    {
+      "id": "PH-L6-840e960dd0befe23",
+      "hanzi": "请问，卫生间在哪儿？",
+      "pinyin": "Qǐngwèn, wèishēngjiān zài nǎr?",
+      "spanish": "Disculpa, ¿dónde está el baño?",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-卫生间"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-卫生间"
+      ]
+    },
+    {
+      "id": "PH-L6-f25ab90fee69ffad",
+      "hanzi": "我家有两个卧室。",
+      "pinyin": "Wǒ jiā yǒu liǎng ge wòshì.",
+      "spanish": "Mi casa tiene dos dormitorios.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-卧室"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-卧室"
+      ]
+    },
+    {
+      "id": "PH-L6-9c6a4f0ee91d82fe",
+      "hanzi": "妈妈在客厅。",
+      "pinyin": "Māma zài kètīng.",
+      "spanish": "Mamá está en la sala.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-客厅"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-客厅"
+      ]
+    },
+    {
+      "id": "PH-L6-6210dc410c978586",
+      "hanzi": "客厅南边有一个阳台。",
+      "pinyin": "Kètīng nánbian yǒu yí ge yángtái.",
+      "spanish": "Al sur de la sala hay un balcón.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-阳台",
+        "v-南边",
+        "v-南"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-阳台",
+        "v-南边",
+        "v-南"
+      ]
+    },
+    {
+      "id": "PH-L6-5a0af42646589a84",
+      "hanzi": "厨房不太大。",
+      "pinyin": "Chúfáng bú tài dà.",
+      "spanish": "La cocina no es muy grande.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-厨房"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-厨房"
+      ]
+    },
+    {
+      "id": "PH-L6-a28648db3062fded",
+      "hanzi": "我在书房写字。",
+      "pinyin": "Wǒ zài shūfáng xiě zì.",
+      "spanish": "Escribo en el estudio.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-书房"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-书房"
+      ]
+    },
+    {
+      "id": "PH-L6-79cd8f4e7fdff9ff",
+      "hanzi": "我们去咖啡厅。",
+      "pinyin": "Wǒmen qù kāfēitīng.",
+      "spanish": "Vamos a la cafetería.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-咖啡厅"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-咖啡厅"
+      ]
+    },
+    {
+      "id": "PH-L6-17ed2bcbe49445e0",
+      "hanzi": "酒吧在食堂旁边。",
+      "pinyin": "Jiǔbā zài shítáng pángbiān.",
+      "spanish": "El bar está junto al comedor.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-酒吧"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-酒吧"
+      ]
+    },
+    {
+      "id": "PH-L6-a876596fe8e13c4e",
+      "hanzi": "我们在清真餐厅吃饭。",
+      "pinyin": "Wǒmen zài qīngzhēn cāntīng chī fàn.",
+      "spanish": "Comemos en el restaurante halal.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-清真餐厅"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-清真餐厅"
+      ]
+    },
+    {
+      "id": "PH-L6-a8c948e4ee96cdc2",
+      "hanzi": "操场在宿舍楼北边。",
+      "pinyin": "Cāochǎng zài sùshèlóu běibian.",
+      "spanish": "El campo deportivo está al norte de la residencia.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-操场"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-操场"
+      ]
+    },
+    {
+      "id": "PH-L6-671cc16ddb81de9e",
+      "hanzi": "我的书在那儿。",
+      "pinyin": "Wǒ de shū zài nàr.",
+      "spanish": "Mi libro está allí.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-那儿"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-那儿"
+      ]
+    },
+    {
+      "id": "PH-L6-9e0064355f3fadc2",
+      "hanzi": "左边的楼是图书馆。",
+      "pinyin": "Zuǒbian de lóu shì túshūguǎn.",
+      "spanish": "El edificio de la izquierda es la biblioteca.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-左边",
+        "v-左"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-左边",
+        "v-左"
+      ]
+    },
+    {
+      "id": "PH-L6-372e4fba4035f30c",
+      "hanzi": "书在桌子上边。",
+      "pinyin": "Shū zài zhuōzi shàngbian.",
+      "spanish": "El libro está encima de la mesa.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-上边"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-上边"
+      ]
+    },
+    {
+      "id": "PH-L6-65a058ffcbaa054c",
+      "hanzi": "狗在桌子下边。",
+      "pinyin": "Gǒu zài zhuōzi xiàbian.",
+      "spanish": "El perro está debajo de la mesa.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-下边"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-下边"
+      ]
+    },
+    {
+      "id": "PH-L6-b09bea1da138e6ee",
+      "hanzi": "他在教室外边。",
+      "pinyin": "Tā zài jiàoshì wàibian.",
+      "spanish": "Él está fuera del aula.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "editorial_study_example"
+      ],
+      "vocabIds": [
+        "v-外边"
+      ],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "editorial_study_example"
+        }
+      ],
+      "exampleVocabIds": [
+        "v-外边"
+      ]
+    },
+    {
+      "id": "PH-L6-33eccade34fcbd68",
+      "hanzi": "你好，请问食堂在哪儿？",
+      "pinyin": "Nǐ hǎo, qǐngwèn shítáng zài nǎr?",
+      "spanish": "Hola, disculpa, ¿dónde está el comedor?",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-1"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-d0143e70a3b30b26",
+      "hanzi": "食堂在校门右边。你是新同学吗？",
+      "pinyin": "Shítáng zài xiàomén yòubian. Nǐ shì xīn tóngxué ma?",
+      "spanish": "El comedor está a la derecha de la entrada del campus. ¿Eres un estudiante nuevo?",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-1"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-255f9fac1ec4b9ed",
+      "hanzi": "是啊。我上午刚到学校。",
+      "pinyin": "Shì a. Wǒ shàngwǔ gāng dào xuéxiào.",
+      "spanish": "Sí. Acabo de llegar a la escuela esta mañana.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-1"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-5ef61112043c7a88",
+      "hanzi": "你跟我来，这儿有学校的地图，我给你介绍一下，好吗？",
+      "pinyin": "Nǐ gēn wǒ lái, zhèr yǒu xuéxiào de dìtú, wǒ gěi nǐ jièshào yíxià, hǎo ma?",
+      "spanish": "Ven conmigo; aquí hay un mapa de la escuela. Te la presento un momento, ¿te parece?",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-1"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-ada7306311197e06",
+      "hanzi": "好，谢谢你。",
+      "pinyin": "Hǎo, xièxie nǐ.",
+      "spanish": "Bien, gracias.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-1"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-ff7d6a1db37b7245",
+      "hanzi": "不客气。你看，食堂旁边是办公楼。",
+      "pinyin": "Bú kèqi. Nǐ kàn, shítáng pángbiān shì bàngōnglóu.",
+      "spanish": "De nada. Mira, al lado del comedor está el edificio de oficinas.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-1"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-5151b0825080c52f",
+      "hanzi": "办公楼不太大。图书馆大不大？",
+      "pinyin": "Bàngōnglóu bú tài dà. Túshūguǎn dà bu dà?",
+      "spanish": "El edificio de oficinas no es muy grande. ¿Es grande la biblioteca?",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-1"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-66796bd0dc82a540",
+      "hanzi": "图书馆很大，在食堂北边。图书馆西边是体育馆。",
+      "pinyin": "Túshūguǎn hěn dà, zài shítáng běibian. Túshūguǎn xībian shì tǐyùguǎn.",
+      "spanish": "La biblioteca es muy grande y está al norte del comedor. Al oeste de la biblioteca está el gimnasio.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-1"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-37f81c03ea028f55",
+      "hanzi": "有。银行在图书馆东边。",
+      "pinyin": "Yǒu. Yínháng zài túshūguǎn dōngbian.",
+      "spanish": "Sí. El banco está al este de la biblioteca.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-1"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-8e5d75e0a7d0d413",
+      "hanzi": "我们的宿舍楼在这儿，对吗？",
+      "pinyin": "Wǒmen de sùshèlóu zài zhèr, duì ma?",
+      "spanish": "Nuestro edificio de dormitorios está aquí, ¿verdad?",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-1"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-604267c6d289ad8f",
+      "hanzi": "对。右边的楼是新同学的宿舍楼。",
+      "pinyin": "Duì. Yòubian de lóu shì xīn tóngxué de sùshèlóu.",
+      "spanish": "Sí. El edificio de la derecha es la residencia de los estudiantes nuevos.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-1"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-e5b8c3a0924e2d3e",
+      "hanzi": "教学楼在哪儿？",
+      "pinyin": "Jiàoxuélóu zài nǎr?",
+      "spanish": "¿Dónde está el edificio de aulas?",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-1"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-fd2a833a6e3142b0",
+      "hanzi": "我先看一下教学楼吧。",
+      "pinyin": "Wǒ xiān kàn yíxià jiàoxuélóu ba.",
+      "spanish": "Voy a ver primero el edificio de aulas.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-1"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-02ac5a687e85096c",
+      "hanzi": "好的。再见！",
+      "pinyin": "Hǎo de. Zàijiàn!",
+      "spanish": "De acuerdo. ¡Adiós!",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-1"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-d8f4824538bd8443",
+      "hanzi": "谢谢你，再见！",
+      "pinyin": "Xièxie nǐ, zàijiàn!",
+      "spanish": "Gracias, ¡adiós!",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-1"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-f0dda923e4cfbea8",
+      "hanzi": "宋华，你家在哪儿？",
+      "pinyin": "Sòng Huá, nǐ jiā zài nǎr?",
+      "spanish": "Song Hua, ¿dónde está tu casa?",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-2"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-f38391557dcb10fd",
+      "hanzi": "别着急，林小姐。你现在在什么地方？",
+      "pinyin": "Bié zháojí, Lín xiǎojie. Nǐ xiànzài zài shénme dìfang?",
+      "spanish": "No te preocupes, señorita Lin. ¿Dónde estás ahora?",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-2"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-ad35ff5b26714811",
+      "hanzi": "我也不知道。对了，我在一个超市前边。",
+      "pinyin": "Wǒ yě bù zhīdào. Duì le, wǒ zài yí ge chāoshì qiánbian.",
+      "spanish": "Yo tampoco lo sé. Ah, estoy delante de un supermercado.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-2"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-3e1759b369eceb39",
+      "hanzi": "有。有一个很大的饭馆。",
+      "pinyin": "Yǒu. Yǒu yí ge hěn dà de fànguǎn.",
+      "spanish": "Sí. Hay un restaurante muy grande.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-2"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-a7e7977e4025f20f",
+      "hanzi": "你先过马路。饭馆后边有一条胡同。",
+      "pinyin": "Nǐ xiān guò mǎlù. Fànguǎn hòubian yǒu yì tiáo hútòng.",
+      "spanish": "Cruza primero la calle. Detrás del restaurante hay un callejón.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-2"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-f4d57975c626d2b7",
+      "hanzi": "饭馆后边有一条胡同，对吗？",
+      "pinyin": "Fànguǎn hòubian yǒu yì tiáo hútòng, duì ma?",
+      "spanish": "Detrás del restaurante hay un callejón, ¿verdad?",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn",
+        "key_phrase"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-2"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-5462183e034de429",
+      "hanzi": "什么叫“胡同”？",
+      "pinyin": "Shénme jiào “hútòng”?",
+      "spanish": "¿Qué significa «hutong»?",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn",
+        "key_phrase"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-2"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-a67cd2261cd908c4",
+      "hanzi": "就是小街道。",
+      "pinyin": "Jiù shì xiǎo jiēdào.",
+      "spanish": "Es una calle pequeña.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-2"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-31164b1792e0ac27",
+      "hanzi": "对，这儿有一条胡同。",
+      "pinyin": "Duì, zhèr yǒu yì tiáo hútòng.",
+      "spanish": "Sí, aquí hay un callejón.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-2"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-17572494b92ab565",
+      "hanzi": "我家就在这条胡同里，是35号。",
+      "pinyin": "Wǒ jiā jiù zài zhè tiáo hútòng li, shì sānshíwǔ hào.",
+      "spanish": "Mi casa está justo en este callejón, en el número 35.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-2"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-619c56ce3309227e",
+      "hanzi": "好的，谢谢你。这条街真小。",
+      "pinyin": "Hǎo de, xièxie nǐ. Zhè tiáo jiē zhēn xiǎo.",
+      "spanish": "De acuerdo, gracias. Esta calle es realmente pequeña.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-2"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-bbeca2c40d80223f",
+      "hanzi": "这就是老北京的胡同。",
+      "pinyin": "Zhè jiù shì lǎo Běijīng de hútòng.",
+      "spanish": "Así son los callejones del antiguo Pekín.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "dialogue_turn"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [
+        "DLG-L6-2"
+      ],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "dialogue_turn"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-fa432f1831d4f785",
+      "hanzi": "请问食堂在哪儿？",
+      "pinyin": "Qǐngwèn shítáng zài nǎr?",
+      "spanish": "Disculpa, ¿dónde está el comedor?",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "key_phrase"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "key_phrase"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-a764b689ae780ea2",
+      "hanzi": "食堂在校门右边。",
+      "pinyin": "Shítáng zài xiàomén yòubian.",
+      "spanish": "El comedor está a la derecha de la entrada del campus.",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "key_phrase"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "key_phrase"
+        }
+      ],
+      "exampleVocabIds": []
+    },
+    {
+      "id": "PH-L6-2dcff721c6579782",
+      "hanzi": "我给你介绍一下，好吗？",
+      "pinyin": "Wǒ gěi nǐ jièshào yíxià, hǎo ma?",
+      "spanish": "Te lo presento un momento, ¿te parece?",
+      "lessons": [
+        6
+      ],
+      "kinds": [
+        "key_phrase"
+      ],
+      "vocabIds": [],
+      "dialogueIds": [],
+      "curriculumLinks": [
+        {
+          "lesson": 6,
+          "kind": "key_phrase"
+        }
+      ],
+      "exampleVocabIds": []
+    }
+  ],
+  "dialogues": [
+    {
+      "id": "DLG-L6-1",
+      "lesson": 6,
+      "text": 1,
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "新同学",
+          "speakerPinyin": "Xīn tóngxué",
+          "hanzi": "你好，请问食堂在哪儿？",
+          "pinyin": "Nǐ hǎo, qǐngwèn shítáng zài nǎr?",
+          "spanish": "Hola, disculpa, ¿dónde está el comedor?",
+          "phraseId": "PH-L6-33eccade34fcbd68"
+        },
+        {
+          "turn": 2,
+          "speaker": "丁力波",
+          "speakerPinyin": "Dīng Lìbō",
+          "hanzi": "食堂在校门右边。你是新同学吗？",
+          "pinyin": "Shítáng zài xiàomén yòubian. Nǐ shì xīn tóngxué ma?",
+          "spanish": "El comedor está a la derecha de la entrada del campus. ¿Eres un estudiante nuevo?",
+          "phraseId": "PH-L6-d0143e70a3b30b26"
+        },
+        {
+          "turn": 3,
+          "speaker": "新同学",
+          "speakerPinyin": "Xīn tóngxué",
+          "hanzi": "是啊。我上午刚到学校。",
+          "pinyin": "Shì a. Wǒ shàngwǔ gāng dào xuéxiào.",
+          "spanish": "Sí. Acabo de llegar a la escuela esta mañana.",
+          "phraseId": "PH-L6-255f9fac1ec4b9ed"
+        },
+        {
+          "turn": 4,
+          "speaker": "丁力波",
+          "speakerPinyin": "Dīng Lìbō",
+          "hanzi": "你跟我来，这儿有学校的地图，我给你介绍一下，好吗？",
+          "pinyin": "Nǐ gēn wǒ lái, zhèr yǒu xuéxiào de dìtú, wǒ gěi nǐ jièshào yíxià, hǎo ma?",
+          "spanish": "Ven conmigo; aquí hay un mapa de la escuela. Te la presento un momento, ¿te parece?",
+          "phraseId": "PH-L6-5ef61112043c7a88"
+        },
+        {
+          "turn": 5,
+          "speaker": "新同学",
+          "speakerPinyin": "Xīn tóngxué",
+          "hanzi": "好，谢谢你。",
+          "pinyin": "Hǎo, xièxie nǐ.",
+          "spanish": "Bien, gracias.",
+          "phraseId": "PH-L6-ada7306311197e06"
+        },
+        {
+          "turn": 6,
+          "speaker": "丁力波",
+          "speakerPinyin": "Dīng Lìbō",
+          "hanzi": "不客气。你看，食堂旁边是办公楼。",
+          "pinyin": "Bú kèqi. Nǐ kàn, shítáng pángbiān shì bàngōnglóu.",
+          "spanish": "De nada. Mira, al lado del comedor está el edificio de oficinas.",
+          "phraseId": "PH-L6-ff7d6a1db37b7245"
+        },
+        {
+          "turn": 7,
+          "speaker": "新同学",
+          "speakerPinyin": "Xīn tóngxué",
+          "hanzi": "办公楼不太大。图书馆大不大？",
+          "pinyin": "Bàngōnglóu bú tài dà. Túshūguǎn dà bu dà?",
+          "spanish": "El edificio de oficinas no es muy grande. ¿Es grande la biblioteca?",
+          "phraseId": "PH-L6-5151b0825080c52f"
+        },
+        {
+          "turn": 8,
+          "speaker": "丁力波",
+          "speakerPinyin": "Dīng Lìbō",
+          "hanzi": "图书馆很大，在食堂北边。图书馆西边是体育馆。",
+          "pinyin": "Túshūguǎn hěn dà, zài shítáng běibian. Túshūguǎn xībian shì tǐyùguǎn.",
+          "spanish": "La biblioteca es muy grande y está al norte del comedor. Al oeste de la biblioteca está el gimnasio.",
+          "phraseId": "PH-L6-66796bd0dc82a540"
+        },
+        {
+          "turn": 9,
+          "speaker": "新同学",
+          "speakerPinyin": "Xīn tóngxué",
+          "hanzi": "学校里边有银行吗？",
+          "pinyin": "Xuéxiào lǐbian yǒu yínháng ma?",
+          "spanish": "¿Hay un banco dentro de la escuela?",
+          "phraseId": "PH-L6-cd283fd01c366977"
+        },
+        {
+          "turn": 10,
+          "speaker": "丁力波",
+          "speakerPinyin": "Dīng Lìbō",
+          "hanzi": "有。银行在图书馆东边。",
+          "pinyin": "Yǒu. Yínháng zài túshūguǎn dōngbian.",
+          "spanish": "Sí. El banco está al este de la biblioteca.",
+          "phraseId": "PH-L6-37f81c03ea028f55"
+        },
+        {
+          "turn": 11,
+          "speaker": "新同学",
+          "speakerPinyin": "Xīn tóngxué",
+          "hanzi": "我们的宿舍楼在这儿，对吗？",
+          "pinyin": "Wǒmen de sùshèlóu zài zhèr, duì ma?",
+          "spanish": "Nuestro edificio de dormitorios está aquí, ¿verdad?",
+          "phraseId": "PH-L6-8e5d75e0a7d0d413"
+        },
+        {
+          "turn": 12,
+          "speaker": "丁力波",
+          "speakerPinyin": "Dīng Lìbō",
+          "hanzi": "对。右边的楼是新同学的宿舍楼。",
+          "pinyin": "Duì. Yòubian de lóu shì xīn tóngxué de sùshèlóu.",
+          "spanish": "Sí. El edificio de la derecha es la residencia de los estudiantes nuevos.",
+          "phraseId": "PH-L6-604267c6d289ad8f"
+        },
+        {
+          "turn": 13,
+          "speaker": "新同学",
+          "speakerPinyin": "Xīn tóngxué",
+          "hanzi": "教学楼在哪儿？",
+          "pinyin": "Jiàoxuélóu zài nǎr?",
+          "spanish": "¿Dónde está el edificio de aulas?",
+          "phraseId": "PH-L6-e5b8c3a0924e2d3e"
+        },
+        {
+          "turn": 14,
+          "speaker": "丁力波",
+          "speakerPinyin": "Dīng Lìbō",
+          "hanzi": "教学楼在食堂东边。",
+          "pinyin": "Jiàoxuélóu zài shítáng dōngbian.",
+          "spanish": "El edificio de aulas está al este del comedor.",
+          "phraseId": "PH-L6-ced50ccd111628e6"
+        },
+        {
+          "turn": 15,
+          "speaker": "新同学",
+          "speakerPinyin": "Xīn tóngxué",
+          "hanzi": "我先看一下教学楼吧。",
+          "pinyin": "Wǒ xiān kàn yíxià jiàoxuélóu ba.",
+          "spanish": "Voy a ver primero el edificio de aulas.",
+          "phraseId": "PH-L6-fd2a833a6e3142b0"
+        },
+        {
+          "turn": 16,
+          "speaker": "丁力波",
+          "speakerPinyin": "Dīng Lìbō",
+          "hanzi": "好的。再见！",
+          "pinyin": "Hǎo de. Zàijiàn!",
+          "spanish": "De acuerdo. ¡Adiós!",
+          "phraseId": "PH-L6-02ac5a687e85096c"
+        },
+        {
+          "turn": 17,
+          "speaker": "新同学",
+          "speakerPinyin": "Xīn tóngxué",
+          "hanzi": "谢谢你，再见！",
+          "pinyin": "Xièxie nǐ, zàijiàn!",
+          "spanish": "Gracias, ¡adiós!",
+          "phraseId": "PH-L6-d8f4824538bd8443"
+        }
+      ]
+    },
+    {
+      "id": "DLG-L6-2",
+      "lesson": 6,
+      "text": 2,
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "林娜",
+          "speakerPinyin": "Lín Nà",
+          "hanzi": "宋华，你家在哪儿？",
+          "pinyin": "Sòng Huá, nǐ jiā zài nǎr?",
+          "spanish": "Song Hua, ¿dónde está tu casa?",
+          "phraseId": "PH-L6-f0dda923e4cfbea8"
+        },
+        {
+          "turn": 2,
+          "speaker": "宋华",
+          "speakerPinyin": "Sòng Huá",
+          "hanzi": "别着急，林小姐。你现在在什么地方？",
+          "pinyin": "Bié zháojí, Lín xiǎojie. Nǐ xiànzài zài shénme dìfang?",
+          "spanish": "No te preocupes, señorita Lin. ¿Dónde estás ahora?",
+          "phraseId": "PH-L6-f38391557dcb10fd"
+        },
+        {
+          "turn": 3,
+          "speaker": "林娜",
+          "speakerPinyin": "Lín Nà",
+          "hanzi": "我也不知道。对了，我在一个超市前边。",
+          "pinyin": "Wǒ yě bù zhīdào. Duì le, wǒ zài yí ge chāoshì qiánbian.",
+          "spanish": "Yo tampoco lo sé. Ah, estoy delante de un supermercado.",
+          "phraseId": "PH-L6-ad35ff5b26714811"
+        },
+        {
+          "turn": 4,
+          "speaker": "宋华",
+          "speakerPinyin": "Sòng Huá",
+          "hanzi": "对面有没有一个饭馆？",
+          "pinyin": "Duìmiàn yǒu méiyǒu yí ge fànguǎn?",
+          "spanish": "¿Hay un restaurante enfrente?",
+          "phraseId": "PH-L6-db0e4a269b82c08f"
+        },
+        {
+          "turn": 5,
+          "speaker": "林娜",
+          "speakerPinyin": "Lín Nà",
+          "hanzi": "有。有一个很大的饭馆。",
+          "pinyin": "Yǒu. Yǒu yí ge hěn dà de fànguǎn.",
+          "spanish": "Sí. Hay un restaurante muy grande.",
+          "phraseId": "PH-L6-3e1759b369eceb39"
+        },
+        {
+          "turn": 6,
+          "speaker": "宋华",
+          "speakerPinyin": "Sòng Huá",
+          "hanzi": "你先过马路。饭馆后边有一条胡同。",
+          "pinyin": "Nǐ xiān guò mǎlù. Fànguǎn hòubian yǒu yì tiáo hútòng.",
+          "spanish": "Cruza primero la calle. Detrás del restaurante hay un callejón.",
+          "phraseId": "PH-L6-a7e7977e4025f20f"
+        },
+        {
+          "turn": 7,
+          "speaker": "林娜",
+          "speakerPinyin": "Lín Nà",
+          "hanzi": "等一下，你说什么？",
+          "pinyin": "Děng yíxià, nǐ shuō shénme?",
+          "spanish": "Espera un momento, ¿qué dices?",
+          "phraseId": "PH-L6-1ba9b61aae7944da"
+        },
+        {
+          "turn": 8,
+          "speaker": "宋华",
+          "speakerPinyin": "Sòng Huá",
+          "hanzi": "饭馆后边有一条胡同，对吗？",
+          "pinyin": "Fànguǎn hòubian yǒu yì tiáo hútòng, duì ma?",
+          "spanish": "Detrás del restaurante hay un callejón, ¿verdad?",
+          "phraseId": "PH-L6-f4d57975c626d2b7"
+        },
+        {
+          "turn": 9,
+          "speaker": "林娜",
+          "speakerPinyin": "Lín Nà",
+          "hanzi": "什么叫“胡同”？",
+          "pinyin": "Shénme jiào “hútòng”?",
+          "spanish": "¿Qué significa «hutong»?",
+          "phraseId": "PH-L6-5462183e034de429"
+        },
+        {
+          "turn": 10,
+          "speaker": "宋华",
+          "speakerPinyin": "Sòng Huá",
+          "hanzi": "就是小街道。",
+          "pinyin": "Jiù shì xiǎo jiēdào.",
+          "spanish": "Es una calle pequeña.",
+          "phraseId": "PH-L6-a67cd2261cd908c4"
+        },
+        {
+          "turn": 11,
+          "speaker": "林娜",
+          "speakerPinyin": "Lín Nà",
+          "hanzi": "对，这儿有一条胡同。",
+          "pinyin": "Duì, zhèr yǒu yì tiáo hútòng.",
+          "spanish": "Sí, aquí hay un callejón.",
+          "phraseId": "PH-L6-31164b1792e0ac27"
+        },
+        {
+          "turn": 12,
+          "speaker": "宋华",
+          "speakerPinyin": "Sòng Huá",
+          "hanzi": "我家就在这条胡同里，是35号。",
+          "pinyin": "Wǒ jiā jiù zài zhè tiáo hútòng li, shì sānshíwǔ hào.",
+          "spanish": "Mi casa está justo en este callejón, en el número 35.",
+          "phraseId": "PH-L6-17572494b92ab565"
+        },
+        {
+          "turn": 13,
+          "speaker": "林娜",
+          "speakerPinyin": "Lín Nà",
+          "hanzi": "好的，谢谢你。这条街真小。",
+          "pinyin": "Hǎo de, xièxie nǐ. Zhè tiáo jiē zhēn xiǎo.",
+          "spanish": "De acuerdo, gracias. Esta calle es realmente pequeña.",
+          "phraseId": "PH-L6-619c56ce3309227e"
+        },
+        {
+          "turn": 14,
+          "speaker": "宋华",
+          "speakerPinyin": "Sòng Huá",
+          "hanzi": "这就是老北京的胡同。",
+          "pinyin": "Zhè jiù shì lǎo Běijīng de hútòng.",
+          "spanish": "Así son los callejones del antiguo Pekín.",
+          "phraseId": "PH-L6-bbeca2c40d80223f"
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "c-足",
+      "lessonId": "lesson-6",
+      "hanzi": "足",
+      "pinyin": "zú",
+      "meaning": "pie",
+      "strokeCount": 7,
+      "radical": "",
+      "components": [],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 19,
+        "printedPage": 180
+      },
+      "sources": [
+        {
+          "type": "textbook",
+          "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+          "pdfPage": 19,
+          "printedPage": 180
+        }
+      ],
+      "sourceGroups": [
+        "6.1"
+      ],
+      "primaryStage": "6.1",
+      "introducedIn": "6.1",
+      "appearsIn": [
+        "6.1"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 0,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": false,
+      "words": []
+    },
+    {
+      "id": "c-书",
+      "lessonId": "lesson-6",
+      "hanzi": "书",
+      "pinyin": "shū",
+      "meaning": "libro",
+      "strokeCount": 4,
+      "radical": "",
+      "components": [],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 20,
+        "printedPage": 181
+      },
+      "sources": [
+        {
+          "type": "textbook",
+          "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+          "pdfPage": 20,
+          "printedPage": 181
+        }
+      ],
+      "sourceGroups": [
+        "6.1"
+      ],
+      "primaryStage": "6.1",
+      "introducedIn": "6.1",
+      "appearsIn": [
+        "6.1"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 1,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": false,
+      "words": []
+    },
+    {
+      "id": "c-西",
+      "lessonId": "lesson-6",
+      "hanzi": "西",
+      "pinyin": "xī",
+      "meaning": "oeste",
+      "strokeCount": 6,
+      "radical": "",
+      "components": [],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 20,
+        "printedPage": 181
+      },
+      "sources": [
+        {
+          "type": "textbook",
+          "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+          "pdfPage": 20,
+          "printedPage": 181
+        }
+      ],
+      "sourceGroups": [
+        "6.1"
+      ],
+      "primaryStage": "6.1",
+      "introducedIn": "6.1",
+      "appearsIn": [
+        "6.1"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 2,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": false,
+      "words": []
+    },
+    {
+      "id": "c-东",
+      "lessonId": "lesson-6",
+      "hanzi": "东",
+      "pinyin": "dōng",
+      "meaning": "este",
+      "strokeCount": 5,
+      "radical": "",
+      "components": [],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 20,
+        "printedPage": 181
+      },
+      "sources": [
+        {
+          "type": "textbook",
+          "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+          "pdfPage": 20,
+          "printedPage": 181
+        }
+      ],
+      "sourceGroups": [
+        "6.1"
+      ],
+      "primaryStage": "6.1",
+      "introducedIn": "6.1",
+      "appearsIn": [
+        "6.1"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 3,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": false,
+      "words": []
+    },
+    {
+      "id": "c-舌",
+      "lessonId": "lesson-6",
+      "hanzi": "舌",
+      "pinyin": "shé",
+      "meaning": "lengua",
+      "strokeCount": 6,
+      "radical": "",
+      "components": [],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 20,
+        "printedPage": 181
+      },
+      "sources": [
+        {
+          "type": "textbook",
+          "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+          "pdfPage": 20,
+          "printedPage": 181
+        }
+      ],
+      "sourceGroups": [
+        "6.2"
+      ],
+      "primaryStage": "6.2",
+      "introducedIn": "6.2",
+      "appearsIn": [
+        "6.2"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 4,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": false,
+      "words": []
+    },
+    {
+      "id": "c-方",
+      "lessonId": "lesson-6",
+      "hanzi": "方",
+      "pinyin": "fāng",
+      "meaning": "cuadrado",
+      "strokeCount": 4,
+      "radical": "",
+      "components": [],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 20,
+        "printedPage": 181
+      },
+      "sources": [
+        {
+          "type": "textbook",
+          "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+          "pdfPage": 20,
+          "printedPage": 181
+        }
+      ],
+      "sourceGroups": [
+        "6.2"
+      ],
+      "primaryStage": "6.2",
+      "introducedIn": "6.2",
+      "appearsIn": [
+        "6.2"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 5,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": false,
+      "words": []
+    },
+    {
+      "id": "c-走",
+      "lessonId": "lesson-6",
+      "hanzi": "走",
+      "pinyin": "zǒu",
+      "meaning": "caminar",
+      "strokeCount": 7,
+      "radical": "",
+      "components": [],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 20,
+        "printedPage": 181
+      },
+      "sources": [
+        {
+          "type": "textbook",
+          "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+          "pdfPage": 20,
+          "printedPage": 181
+        }
+      ],
+      "sourceGroups": [
+        "6.2"
+      ],
+      "primaryStage": "6.2",
+      "introducedIn": "6.2",
+      "appearsIn": [
+        "6.2"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 6,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": false,
+      "words": []
+    },
+    {
+      "id": "c-矢",
+      "lessonId": "lesson-6",
+      "hanzi": "矢",
+      "pinyin": "shǐ",
+      "meaning": "flecha",
+      "strokeCount": 5,
+      "radical": "",
+      "components": [],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 20,
+        "printedPage": 181
+      },
+      "sources": [
+        {
+          "type": "textbook",
+          "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+          "pdfPage": 20,
+          "printedPage": 181
+        }
+      ],
+      "sourceGroups": [
+        "6.2"
+      ],
+      "primaryStage": "6.2",
+      "introducedIn": "6.2",
+      "appearsIn": [
+        "6.2"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 7,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": false,
+      "words": []
+    },
+    {
+      "id": "c-竹",
+      "lessonId": "lesson-6",
+      "hanzi": "竹",
+      "pinyin": "zhú",
+      "meaning": "bambú",
+      "strokeCount": 6,
+      "radical": "",
+      "components": [],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 20,
+        "printedPage": 181
+      },
+      "sources": [
+        {
+          "type": "textbook",
+          "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+          "pdfPage": 20,
+          "printedPage": 181
+        }
+      ],
+      "sourceGroups": [
+        "6.2"
+      ],
+      "primaryStage": "6.2",
+      "introducedIn": "6.2",
+      "appearsIn": [
+        "6.2"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 8,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": false,
+      "words": []
+    },
+    {
+      "id": "c-舍",
+      "lessonId": "lesson-6",
+      "hanzi": "舍",
+      "pinyin": "shè",
+      "meaning": "alojamiento (en 宿舍)",
+      "strokeCount": 8,
+      "radical": "",
+      "components": [
+        "人",
+        "十",
+        "舌"
+      ],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 20,
+        "printedPage": 181
+      },
+      "sources": [
+        {
+          "type": "textbook",
+          "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+          "pdfPage": 20,
+          "printedPage": 181
+        }
+      ],
+      "sourceGroups": [
+        "6.1"
+      ],
+      "primaryStage": "6.1",
+      "introducedIn": "6.1",
+      "appearsIn": [
+        "6.1"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 9,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": true,
+      "words": []
+    },
+    {
+      "id": "c-超",
+      "lessonId": "lesson-6",
+      "hanzi": "超",
+      "pinyin": "chāo",
+      "meaning": "superar (en 超市: supermercado)",
+      "strokeCount": 12,
+      "radical": "",
+      "components": [
+        "走",
+        "刀",
+        "口"
+      ],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 20,
+        "printedPage": 181
+      },
+      "sources": [
+        {
+          "type": "textbook",
+          "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+          "pdfPage": 20,
+          "printedPage": 181
+        }
+      ],
+      "sourceGroups": [
+        "6.2"
+      ],
+      "primaryStage": "6.2",
+      "introducedIn": "6.2",
+      "appearsIn": [
+        "6.2"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 10,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": true,
+      "words": []
+    },
+    {
+      "id": "c-知",
+      "lessonId": "lesson-6",
+      "hanzi": "知",
+      "pinyin": "zhī",
+      "meaning": "saber",
+      "strokeCount": 8,
+      "radical": "",
+      "components": [
+        "矢",
+        "口"
+      ],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 20,
+        "printedPage": 181
+      },
+      "sources": [
+        {
+          "type": "textbook",
+          "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+          "pdfPage": 20,
+          "printedPage": 181
+        }
+      ],
+      "sourceGroups": [
+        "6.2"
+      ],
+      "primaryStage": "6.2",
+      "introducedIn": "6.2",
+      "appearsIn": [
+        "6.2"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 11,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": true,
+      "words": []
+    },
+    {
+      "id": "c-等",
+      "lessonId": "lesson-6",
+      "hanzi": "等",
+      "pinyin": "děng",
+      "meaning": "esperar",
+      "strokeCount": 12,
+      "radical": "⺮",
+      "components": [
+        "⺮",
+        "土",
+        "寸"
+      ],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 20,
+        "printedPage": 181
+      },
+      "sources": [
+        {
+          "type": "textbook",
+          "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+          "pdfPage": 20,
+          "printedPage": 181
+        }
+      ],
+      "sourceGroups": [
+        "6.2"
+      ],
+      "primaryStage": "6.2",
+      "introducedIn": "6.2",
+      "appearsIn": [
+        "6.2"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 12,
+      "curricular": true,
+      "radicalAudited": true,
+      "componentsAudited": true,
+      "words": []
+    },
+    {
+      "id": "c-跟",
+      "lessonId": "lesson-6",
+      "hanzi": "跟",
+      "pinyin": "gēn",
+      "meaning": "con; seguir",
+      "strokeCount": 13,
+      "radical": "𧾷",
+      "components": [
+        "𧾷",
+        "艮"
+      ],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 21,
+        "printedPage": 182
+      },
+      "sources": [
+        {
+          "type": "textbook",
+          "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+          "pdfPage": 21,
+          "printedPage": 182
+        }
+      ],
+      "sourceGroups": [
+        "6.1"
+      ],
+      "primaryStage": "6.1",
+      "introducedIn": "6.1",
+      "appearsIn": [
+        "6.1"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 13,
+      "curricular": true,
+      "radicalAudited": true,
+      "componentsAudited": true,
+      "words": []
+    },
+    {
+      "id": "c-路",
+      "lessonId": "lesson-6",
+      "hanzi": "路",
+      "pinyin": "lù",
+      "meaning": "camino",
+      "strokeCount": 13,
+      "radical": "𧾷",
+      "components": [
+        "𧾷",
+        "夂",
+        "口"
+      ],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 21,
+        "printedPage": 182
+      },
+      "sources": [
+        {
+          "type": "textbook",
+          "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+          "pdfPage": 21,
+          "printedPage": 182
+        }
+      ],
+      "sourceGroups": [
+        "6.2"
+      ],
+      "primaryStage": "6.2",
+      "introducedIn": "6.2",
+      "appearsIn": [
+        "6.2"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 14,
+      "curricular": true,
+      "radicalAudited": true,
+      "componentsAudited": true,
+      "words": []
+    },
+    {
+      "id": "c-行",
+      "lessonId": "lesson-6",
+      "hanzi": "行",
+      "pinyin": "háng",
+      "meaning": "sector; en 银行: banco",
+      "strokeCount": 6,
+      "radical": "",
+      "components": [
+        "彳",
+        "亍"
+      ],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 21,
+        "printedPage": 182
+      },
+      "sources": [
+        {
+          "type": "textbook",
+          "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+          "pdfPage": 21,
+          "printedPage": 182
+        }
+      ],
+      "sourceGroups": [
+        "6.1"
+      ],
+      "primaryStage": "6.1",
+      "introducedIn": "6.1",
+      "appearsIn": [
+        "6.1"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 15,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": true,
+      "words": []
+    },
+    {
+      "id": "c-街",
+      "lessonId": "lesson-6",
+      "hanzi": "街",
+      "pinyin": "jiē",
+      "meaning": "calle",
+      "strokeCount": 12,
+      "radical": "彳",
+      "components": [
+        "彳",
+        "土",
+        "土",
+        "亍"
+      ],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 21,
+        "printedPage": 182
+      },
+      "sources": [
+        {
+          "type": "textbook",
+          "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+          "pdfPage": 21,
+          "printedPage": 182
+        }
+      ],
+      "sourceGroups": [
+        "6.2"
+      ],
+      "primaryStage": "6.2",
+      "introducedIn": "6.2",
+      "appearsIn": [
+        "6.2"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 16,
+      "curricular": true,
+      "radicalAudited": true,
+      "componentsAudited": true,
+      "words": []
+    },
+    {
+      "id": "c-右",
+      "lessonId": "lesson-6",
+      "hanzi": "右",
+      "pinyin": "yòu",
+      "meaning": "derecha",
+      "strokeCount": 5,
+      "radical": "",
+      "components": [],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "workbook",
+        "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+        "pdfPage": 3,
+        "printedPage": 53
+      },
+      "sources": [
+        {
+          "type": "workbook",
+          "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+          "pdfPage": 3,
+          "printedPage": 53
+        }
+      ],
+      "sourceGroups": [
+        "6.1"
+      ],
+      "primaryStage": "6.1",
+      "introducedIn": "6.1",
+      "appearsIn": [
+        "6.1"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 17,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": false,
+      "words": []
+    },
+    {
+      "id": "c-左",
+      "lessonId": "lesson-6",
+      "hanzi": "左",
+      "pinyin": "zuǒ",
+      "meaning": "izquierda",
+      "strokeCount": 5,
+      "radical": "",
+      "components": [],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "workbook",
+        "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+        "pdfPage": 3,
+        "printedPage": 53
+      },
+      "sources": [
+        {
+          "type": "workbook",
+          "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+          "pdfPage": 3,
+          "printedPage": 53
+        }
+      ],
+      "sourceGroups": [
+        "6.2"
+      ],
+      "primaryStage": "6.2",
+      "introducedIn": "6.2",
+      "appearsIn": [
+        "6.2"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 18,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": false,
+      "words": []
+    },
+    {
+      "id": "c-后",
+      "lessonId": "lesson-6",
+      "hanzi": "后",
+      "pinyin": "hòu",
+      "meaning": "detrás",
+      "strokeCount": 6,
+      "radical": "",
+      "components": [],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "workbook",
+        "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+        "pdfPage": 3,
+        "printedPage": 53
+      },
+      "sources": [
+        {
+          "type": "workbook",
+          "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+          "pdfPage": 3,
+          "printedPage": 53
+        }
+      ],
+      "sourceGroups": [
+        "6.2"
+      ],
+      "primaryStage": "6.2",
+      "introducedIn": "6.2",
+      "appearsIn": [
+        "6.2"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 19,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": false,
+      "words": []
+    },
+    {
+      "id": "c-里",
+      "lessonId": "lesson-6",
+      "hanzi": "里",
+      "pinyin": "lǐ",
+      "meaning": "dentro",
+      "strokeCount": 7,
+      "radical": "",
+      "components": [],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "workbook",
+        "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+        "pdfPage": 3,
+        "printedPage": 53
+      },
+      "sources": [
+        {
+          "type": "workbook",
+          "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+          "pdfPage": 3,
+          "printedPage": 53
+        }
+      ],
+      "sourceGroups": [
+        "6.1"
+      ],
+      "primaryStage": "6.1",
+      "introducedIn": "6.1",
+      "appearsIn": [
+        "6.1"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 20,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": false,
+      "words": []
+    },
+    {
+      "id": "c-先",
+      "lessonId": "lesson-6",
+      "hanzi": "先",
+      "pinyin": "xiān",
+      "meaning": "primero",
+      "strokeCount": 6,
+      "radical": "",
+      "components": [],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "workbook",
+        "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+        "pdfPage": 3,
+        "printedPage": 53
+      },
+      "sources": [
+        {
+          "type": "workbook",
+          "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+          "pdfPage": 3,
+          "printedPage": 53
+        }
+      ],
+      "sourceGroups": [
+        "6.1"
+      ],
+      "primaryStage": "6.1",
+      "introducedIn": "6.1",
+      "appearsIn": [
+        "6.1"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 21,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": false,
+      "words": []
+    },
+    {
+      "id": "c-前",
+      "lessonId": "lesson-6",
+      "hanzi": "前",
+      "pinyin": "qián",
+      "meaning": "delante",
+      "strokeCount": 9,
+      "radical": "",
+      "components": [],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "workbook",
+        "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+        "pdfPage": 3,
+        "printedPage": 53
+      },
+      "sources": [
+        {
+          "type": "workbook",
+          "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+          "pdfPage": 3,
+          "printedPage": 53
+        }
+      ],
+      "sourceGroups": [
+        "6.2"
+      ],
+      "primaryStage": "6.2",
+      "introducedIn": "6.2",
+      "appearsIn": [
+        "6.2"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 22,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": false,
+      "words": []
+    },
+    {
+      "id": "c-哪",
+      "lessonId": "lesson-6",
+      "hanzi": "哪",
+      "pinyin": "nǎ",
+      "meaning": "cuál (en 哪儿: dónde)",
+      "strokeCount": 9,
+      "radical": "",
+      "components": [
+        "口",
+        "那"
+      ],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "workbook",
+        "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+        "pdfPage": 4,
+        "printedPage": 54
+      },
+      "sources": [
+        {
+          "type": "workbook",
+          "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+          "pdfPage": 4,
+          "printedPage": 54
+        }
+      ],
+      "sourceGroups": [
+        "6.1"
+      ],
+      "primaryStage": "6.1",
+      "introducedIn": "6.1",
+      "appearsIn": [
+        "6.1"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 23,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": true,
+      "words": []
+    },
+    {
+      "id": "c-楼",
+      "lessonId": "lesson-6",
+      "hanzi": "楼",
+      "pinyin": "lóu",
+      "meaning": "edificio",
+      "strokeCount": 13,
+      "radical": "",
+      "components": [
+        "木",
+        "娄"
+      ],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "workbook",
+        "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+        "pdfPage": 4,
+        "printedPage": 54
+      },
+      "sources": [
+        {
+          "type": "workbook",
+          "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+          "pdfPage": 4,
+          "printedPage": 54
+        }
+      ],
+      "sourceGroups": [
+        "6.1"
+      ],
+      "primaryStage": "6.1",
+      "introducedIn": "6.1",
+      "appearsIn": [
+        "6.1"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 24,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": true,
+      "words": []
+    },
+    {
+      "id": "c-图",
+      "lessonId": "lesson-6",
+      "hanzi": "图",
+      "pinyin": "tú",
+      "meaning": "mapa",
+      "strokeCount": 8,
+      "radical": "",
+      "components": [
+        "囗",
+        "冬"
+      ],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "workbook",
+        "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+        "pdfPage": 4,
+        "printedPage": 54
+      },
+      "sources": [
+        {
+          "type": "workbook",
+          "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+          "pdfPage": 4,
+          "printedPage": 54
+        }
+      ],
+      "sourceGroups": [
+        "6.1"
+      ],
+      "primaryStage": "6.1",
+      "introducedIn": "6.1",
+      "appearsIn": [
+        "6.1"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 25,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": true,
+      "words": []
+    },
+    {
+      "id": "c-馆",
+      "lessonId": "lesson-6",
+      "hanzi": "馆",
+      "pinyin": "guǎn",
+      "meaning": "establecimiento",
+      "strokeCount": 11,
+      "radical": "",
+      "components": [
+        "饣",
+        "官"
+      ],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "workbook",
+        "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+        "pdfPage": 4,
+        "printedPage": 54
+      },
+      "sources": [
+        {
+          "type": "workbook",
+          "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+          "pdfPage": 4,
+          "printedPage": 54
+        }
+      ],
+      "sourceGroups": [
+        "6.1"
+      ],
+      "primaryStage": "6.1",
+      "introducedIn": "6.1",
+      "appearsIn": [
+        "6.1"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 26,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": true,
+      "words": []
+    },
+    {
+      "id": "c-体",
+      "lessonId": "lesson-6",
+      "hanzi": "体",
+      "pinyin": "tǐ",
+      "meaning": "cuerpo",
+      "strokeCount": 7,
+      "radical": "",
+      "components": [
+        "亻",
+        "本"
+      ],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "workbook",
+        "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+        "pdfPage": 4,
+        "printedPage": 54
+      },
+      "sources": [
+        {
+          "type": "workbook",
+          "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+          "pdfPage": 4,
+          "printedPage": 54
+        }
+      ],
+      "sourceGroups": [
+        "6.1"
+      ],
+      "primaryStage": "6.1",
+      "introducedIn": "6.1",
+      "appearsIn": [
+        "6.1"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 27,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": true,
+      "words": []
+    },
+    {
+      "id": "c-胡",
+      "lessonId": "lesson-6",
+      "hanzi": "胡",
+      "pinyin": "hú",
+      "meaning": "en 胡同: callejón",
+      "strokeCount": 9,
+      "radical": "",
+      "components": [
+        "古",
+        "月"
+      ],
+      "recognitionRequired": true,
+      "writingRequired": true,
+      "source": {
+        "type": "workbook",
+        "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+        "pdfPage": 4,
+        "printedPage": 54
+      },
+      "sources": [
+        {
+          "type": "workbook",
+          "file": "Libro de Ejercicios Lección 06 Túshuguăn.pdf",
+          "pdfPage": 4,
+          "printedPage": 54
+        }
+      ],
+      "sourceGroups": [
+        "6.2"
+      ],
+      "primaryStage": "6.2",
+      "introducedIn": "6.2",
+      "appearsIn": [
+        "6.2"
+      ],
+      "sourceRole": "core",
+      "curricularOrder": 28,
+      "curricular": true,
+      "radicalAudited": false,
+      "componentsAudited": true,
+      "words": []
+    }
+  ],
+  "units": [
+    {
+      "id": "6.1",
+      "lesson": 6,
+      "text": 1,
+      "title": "Lección 6 · Texto 1",
+      "shortTitle": "6.1",
+      "chinese": "图书馆在食堂北边",
+      "description": "Objetivos explícitos de escritura del libro y del cuaderno.",
+      "characters": [
+        "足",
+        "书",
+        "西",
+        "东",
+        "舍",
+        "跟",
+        "行",
+        "右",
+        "里",
+        "先",
+        "哪",
+        "楼",
+        "图",
+        "馆",
+        "体"
+      ]
+    },
+    {
+      "id": "6.2",
+      "lesson": 6,
+      "text": 2,
+      "title": "Lección 6 · Texto 2",
+      "shortTitle": "6.2",
+      "chinese": "你家在哪儿",
+      "description": "Objetivos explícitos de escritura del libro y del cuaderno.",
+      "characters": [
+        "舌",
+        "方",
+        "走",
+        "矢",
+        "竹",
+        "超",
+        "知",
+        "等",
+        "路",
+        "街",
+        "左",
+        "后",
+        "前",
+        "胡"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g-l6-locatives",
+      "slug": "l6-locatives",
+      "title": "Sustantivos locativos",
+      "pattern": "Lugar + 方位词 / 方位词 + 的 + sustantivo",
+      "explanation": "Los locativos funcionan como sujeto, objeto y modificador. Como modificadores llevan 的: 右边的楼. Después de un lugar normalmente se omite 的: 学校里边. Las formas monosilábicas se combinan con otros nombres.",
+      "examples": [
+        "银行在图书馆东边。",
+        "右边的楼是新同学的宿舍楼。"
+      ],
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 8,
+        "printedPage": 169
+      }
+    },
+    {
+      "id": "g-l6-zai",
+      "slug": "l6-zai",
+      "title": "在 · Ubicación",
+      "pattern": "Persona o cosa + 在 / 不在 + lugar",
+      "explanation": "在 sitúa una persona o cosa conocida. Para preguntar, usa 哪儿 o añade 吗. La negación es 不在.",
+      "examples": [
+        "食堂在校门右边。",
+        "教学楼在哪儿？"
+      ],
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 10,
+        "printedPage": 171
+      },
+      "studyBlocks": [
+        {
+          "id": "g-l6-zai-table",
+          "title": "Modelos del libro",
+          "kind": "table",
+          "columns": [
+            "Sujeto",
+            "Negación",
+            "在",
+            "Lugar"
+          ],
+          "rows": [
+            [
+              "我",
+              "",
+              "在",
+              "他右边。"
+            ],
+            [
+              "大为的宿舍",
+              "",
+              "在",
+              "学校里边吗？"
+            ],
+            [
+              "图书馆",
+              "不",
+              "在",
+              "食堂西边。"
+            ]
+          ]
+        }
+      ],
+      "studyBlocks_origin": "source_table_transcription"
+    },
+    {
+      "id": "g-l6-existence",
+      "slug": "l6-existence",
+      "title": "有 / 是 · Existencia e identificación",
+      "pattern": "Lugar + 有 / 没有 / 是 / 不是 + persona o cosa",
+      "explanation": "有 introduce lo que hay en un lugar; 是 identifica lo que ocupa ese lugar. El libro contrasta un dormitorio no identificado con nuestro dormitorio. No usar el contraejemplo impreso como modelo.",
+      "examples": [
+        "学校里边有银行。",
+        "食堂旁边是办公楼。"
+      ],
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 11,
+        "printedPage": 172
+      },
+      "studyBlocks": [
+        {
+          "id": "g-l6-existence-table",
+          "title": "Modelos del libro",
+          "kind": "table",
+          "columns": [
+            "Lugar / tema",
+            "Verbo",
+            "Persona o cosa"
+          ],
+          "rows": [
+            [
+              "学校里边",
+              "有",
+              "银行。"
+            ],
+            [
+              "办公楼对面",
+              "没有",
+              "超市。"
+            ],
+            [
+              "前边",
+              "有没有",
+              "一个小饭馆？"
+            ],
+            [
+              "食堂旁边",
+              "是",
+              "办公楼。"
+            ],
+            [
+              "图书馆东边",
+              "不是",
+              "教学楼。"
+            ],
+            [
+              "你对面",
+              "是不是",
+              "一个银行？"
+            ],
+            [
+              "你前边",
+              "是",
+              "谁？"
+            ]
+          ]
+        }
+      ],
+      "studyBlocks_origin": "source_table_transcription"
+    },
+    {
+      "id": "g-l6-gen-gei",
+      "slug": "l6-gen-gei",
+      "title": "跟 / 给 · Antes del verbo",
+      "pattern": "Sujeto + 跟 / 给 + persona + verbo (+ objeto)",
+      "explanation": "跟 introduce la compañía; 给 introduce al receptor. La frase preposicional se coloca antes del verbo.",
+      "examples": [
+        "你跟我来。",
+        "我给你介绍一下。"
+      ],
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 12,
+        "printedPage": 173
+      },
+      "studyBlocks": [
+        {
+          "id": "g-l6-gen-gei-table",
+          "title": "Modelos del libro",
+          "kind": "table",
+          "columns": [
+            "Sujeto",
+            "跟 / 给",
+            "Persona",
+            "Verbo",
+            "Objeto"
+          ],
+          "rows": [
+            [
+              "你",
+              "跟",
+              "我",
+              "来",
+              "。"
+            ],
+            [
+              "我",
+              "跟",
+              "老师",
+              "学",
+              "中文。"
+            ],
+            [
+              "林娜",
+              "跟",
+              "同学",
+              "去",
+              "食堂。"
+            ],
+            [
+              "我",
+              "给",
+              "你",
+              "介绍一下",
+              "。"
+            ],
+            [
+              "马大为",
+              "给",
+              "大家",
+              "唱",
+              "英语歌。"
+            ],
+            [
+              "林娜",
+              "给",
+              "哥哥",
+              "做",
+              "寿面。"
+            ]
+          ]
+        }
+      ],
+      "studyBlocks_origin": "source_table_transcription"
+    },
+    {
+      "id": "g-l6-confirmation",
+      "slug": "l6-confirmation",
+      "title": "好吗 / 对吗 · Proponer y confirmar",
+      "pattern": "Propuesta + 好吗？ / Afirmación + 对吗？",
+      "explanation": "好吗 pide aceptación de una propuesta; 对吗 solicita confirmar lo que se cree cierto. Una negativa a una propuesta suele expresarse cortésmente, como 对不起 o 恐怕不行.",
+      "examples": [
+        "我给你介绍一下，好吗？",
+        "我们的宿舍楼在这儿，对吗？"
+      ],
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 13,
+        "printedPage": 174
+      }
+    },
+    {
+      "id": "g-l6-bie",
+      "slug": "l6-bie",
+      "title": "别 · Disuadir",
+      "pattern": "别 + verbo / adjetivo",
+      "explanation": "别 expresa una petición de no hacer algo o de no estar de cierto modo.",
+      "examples": [
+        "别着急，林小姐。"
+      ],
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 7,
+        "printedPage": 168
+      }
+    },
+    {
+      "id": "g-l6-xian",
+      "slug": "l6-xian",
+      "title": "先 · Orden de acciones",
+      "pattern": "先 + verbo",
+      "explanation": "先 indica qué acción se hace primero. El patrón 先……再…… de la presentación amplía esta idea; no sustituye el diálogo del libro.",
+      "examples": [
+        "我先看一下教学楼吧。"
+      ],
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 4,
+        "printedPage": 165
+      }
+    },
+    {
+      "id": "g-l6-li",
+      "slug": "l6-li",
+      "title": "里边 y nombres geográficos",
+      "pattern": "在 + nombre de país / ciudad",
+      "explanation": "En los ejemplos básicos del libro se dice 在中国 y 在北京. El libro dice que 里边 generalmente no se añade a nombres de países o lugares muy grandes.",
+      "examples": [
+        "在中国",
+        "在北京"
+      ],
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 9,
+        "printedPage": 170
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r-l6-campus",
+      "title": "Nuestro campus",
+      "hanzi": "我们学校的食堂在校门右边，那儿的包子和饺子很好吃。校门外还有一个饭馆，我们也常去那儿。学校食堂旁边是办公楼。教学楼在食堂东边，图书馆在食堂北边。图书馆旁边有个很大的操场，东边有一个银行。宿舍楼在银行后边，宿舍楼旁边有一个小超市，我们很喜欢去那儿。",
+      "pinyin": "Wǒmen xuéxiào de shítáng zài xiàomén yòubian, nàr de bāozi hé jiǎozi hěn hǎochī. Xiàomén wài hái yǒu yí ge fànguǎn, wǒmen yě cháng qù nàr. Xuéxiào shítáng pángbiān shì bàngōnglóu. Jiàoxuélóu zài shítáng dōngbian, túshūguǎn zài shítáng běibian. Túshūguǎn pángbiān yǒu ge hěn dà de cāochǎng, dōngbian yǒu yí ge yínháng. Sùshèlóu zài yínháng hòubian, sùshèlóu pángbiān yǒu yí ge xiǎo chāoshì, wǒmen hěn xǐhuan qù nàr.",
+      "spanish": "El comedor de nuestra escuela está a la derecha de la entrada; sus baozi y jiaozi son muy ricos. Fuera de la entrada también hay un restaurante al que vamos a menudo. Junto al comedor está el edificio de oficinas. El edificio de aulas está al este del comedor y la biblioteca al norte. Junto a la biblioteca hay un campo deportivo muy grande, y al este hay un banco. La residencia está detrás del banco; junto a ella hay un pequeño supermercado al que nos gusta mucho ir."
+    },
+    {
+      "id": "r-l6-home",
+      "title": "Mi nueva casa",
+      "hanzi": "这是我的新家。我家有两个卧室、一个客厅、一个厨房和一个卫生间。大卧室在客厅的东边，小卧室在客厅的西边。客厅的南边有一个很大的阳台。厨房和卫生间在客厅的对面。厨房不太大，卫生间很大，在厨房的西边。我的新家怎么样？欢迎你来我们家。",
+      "pinyin": "Zhè shì wǒ de xīn jiā. Wǒ jiā yǒu liǎng ge wòshì, yí ge kètīng, yí ge chúfáng hé yí ge wèishēngjiān. Dà wòshì zài kètīng de dōngbian, xiǎo wòshì zài kètīng de xībian. Kètīng de nánbian yǒu yí ge hěn dà de yángtái. Chúfáng hé wèishēngjiān zài kètīng de duìmiàn. Chúfáng bú tài dà, wèishēngjiān hěn dà, zài chúfáng de xībian. Wǒ de xīn jiā zěnmeyàng? Huānyíng nǐ lái wǒmen jiā.",
+      "spanish": "Esta es mi nueva casa. Tiene dos dormitorios, una sala, una cocina y un baño. El dormitorio grande está al este de la sala y el pequeño al oeste. Al sur de la sala hay un balcón muy grande. La cocina y el baño están enfrente de la sala. La cocina no es muy grande; el baño es grande y está al oeste de la cocina. ¿Qué te parece mi nueva casa? Te invito a visitarnos."
+    },
+    {
+      "id": "r-l6-classmates",
+      "title": "Cómo dirigirse a otras personas",
+      "hanzi": "在中国，人们叫一个班或一个学校的人“同学”。在学校里看到学生，不认识没关系，可以叫他/她“同学”。工作的人，叫一起工作的朋友名字，或者姓和职务，比如“王校长”“李经理”“白老师”。",
+      "pinyin": "Zài Zhōngguó, rénmen jiào yí ge bān huò yí ge xuéxiào de rén “tóngxué”. Zài xuéxiào li kàndào xuésheng, bù rènshi méi guānxi, kěyǐ jiào tā “tóngxué”. Gōngzuò de rén, jiào yìqǐ gōngzuò de péngyou míngzi, huòzhě xìng hé zhíwù, bǐrú “Wáng xiàozhǎng” “Lǐ jīnglǐ” “Bái lǎoshī”.",
+      "spanish": "En China se llama tóngxué a alguien de la misma clase o escuela. Si ves a un estudiante en la escuela, puedes dirigirte a él o ella como tóngxué aunque no lo conozcas. Quienes trabajan se dirigen a sus compañeros por su nombre o por su apellido y cargo, por ejemplo: director Wang, gerente Li o profesor Bai."
+    },
+    {
+      "id": "r-l6-turtles",
+      "title": "Tres tortugas",
+      "hanzi": "三只乌龟去喝咖啡，它们刚到咖啡店门口就下雨了。大乌龟对小乌龟说：“你回家取伞吧。”小乌龟说：“你们不喝我的咖啡，我就去。”大乌龟和中乌龟回答：“我们不喝，你去吧。”\n两年后，大乌龟对中乌龟说：“我想它肯定不回来了，我们可以喝它的咖啡了。”这时一个声音从门外传出来：“你们要喝我的咖啡，我就不去了。”",
+      "pinyin": "Sān zhī wūguī qù hē kāfēi, tāmen gāng dào kāfēidiàn ménkǒu jiù xià yǔ le. Dà wūguī duì xiǎo wūguī shuō: “Nǐ huí jiā qǔ sǎn ba.” Xiǎo wūguī shuō: “Nǐmen bù hē wǒ de kāfēi, wǒ jiù qù.” Dà wūguī hé zhōng wūguī huídá: “Wǒmen bù hē, nǐ qù ba.”\nLiǎng nián hòu, dà wūguī duì zhōng wūguī shuō: “Wǒ xiǎng tā kěndìng bù huílai le, wǒmen kěyǐ hē tā de kāfēi le.” Zhè shí yí ge shēngyīn cóng mén wài chuánchūlai: “Nǐmen yào hē wǒ de kāfēi, wǒ jiù bú qù le.”",
+      "spanish": "Tres tortugas van a tomar café y empieza a llover cuando llegan. La grande pide a la pequeña que vuelva a casa por un paraguas. La pequeña acepta si las otras no beben su café. Dos años después, la grande propone beberlo porque cree que no volverá. Desde fuera se oye: «¡Si van a beber mi café, no iré!»."
+    }
+  ],
+  "documentaryExercises": [
+    {
+      "id": "l6-warmup",
+      "title": "Orientarse y preguntar",
+      "texts": [
+        "¿En tu país se usan izquierda/derecha o norte/sur/este/oeste?",
+        "¿Qué edificios buscarías primero en una escuela nueva?",
+        "¿Qué significa 胡同?",
+        "El laberinto de la página original requiere su imagen. Usa 东、南、西、北 para describir el recorrido."
+      ],
+      "sourceTitle": "Libro básico",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-locatives",
+      "title": "Sustituye las partes subrayadas",
+      "texts": [
+        "A: 银行在前边吗？ B: 银行不在前边，在对面。",
+        "Sustituye: 校门 / 西边 / 东边; 体育馆 / 左边 / 右边; 超市 / 楼里边 / 楼外边。",
+        "A: 左边的食堂是学生食堂吗？ B: 左边的食堂不是学生食堂，是老师的食堂。",
+        "Sustituye: 前边的楼 / 图书馆 / 教学楼; 东边的门 / 学校大门 / 后门。"
+      ],
+      "sourceTitle": "Libro básico",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-small-maps",
+      "title": "Describe las ubicaciones de los esquemas",
+      "texts": [
+        "Modelo: 请问学校里边有超市吗？有一个超市。超市在哪儿？超市在食堂旁边。",
+        "Esquema A: comedor al oeste y supermercado al este, algo más al norte.",
+        "Esquema B: gimnasio al oeste y edificio de oficinas al este, algo más al norte.",
+        "Esquema C: comedor al oeste y bar al este. Norte hacia arriba en los tres esquemas."
+      ],
+      "sourceTitle": "Libro básico",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-zai-substitution",
+      "title": "Pregunta dónde está",
+      "texts": [
+        "A: 请问，图书馆在哪儿？ B: 图书馆在教学楼右边。",
+        "Sustituye: 办公楼 / 宿舍楼前边; 清真餐厅 / 学生食堂旁边; 体育馆路 / 前边。"
+      ],
+      "sourceTitle": "Libro básico",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-party",
+      "title": "Describe personas y objetos",
+      "texts": [
+        "谁是林强？（马大为、王小云、林娜）",
+        "林强在____。",
+        "蛋糕在哪儿？（巧克力、咖啡、寿面）",
+        "Describe la imagen de la fiesta del libro. Necesitas consultar esa imagen para situar los objetos."
+      ],
+      "sourceTitle": "Libro básico",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-existence-substitution",
+      "title": "Existencia: pregunta y sustituye",
+      "texts": [
+        "Mapa de esta actividad (norte arriba): fila norte, de oeste a este: 食堂、教学楼1、教学楼2、教学楼3。Debajo de 食堂 está 银行; debajo de 银行, 宿舍楼. 图书馆 está al este de 银行 y 宿舍楼, al sur de los edificios de aulas.",
+        "A: 宿舍楼北边有什么？ B: 宿舍楼北边有一个银行。",
+        "Sustituye: 银行后边 / 一个食堂; 食堂东边 / 三个教学楼; 教学楼前边 / 一个图书馆。"
+      ],
+      "sourceTitle": "Libro básico",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-existence-fill",
+      "title": "Completa con 是、不是、有没有",
+      "texts": [
+        "Mapa de esta actividad (norte arriba): fila norte, de oeste a este: 食堂、教学楼1、教学楼2、教学楼3。Debajo de 食堂 está 银行; debajo de 银行, 宿舍楼. 图书馆 está al este de 银行 y 宿舍楼, al sur de los edificios de aulas.",
+        "银行的前边____图书馆。",
+        "教学楼的西边____食堂。",
+        "宿舍楼的后边____一个银行？",
+        "图书馆的前边____宿舍楼。"
+      ],
+      "sourceTitle": "Libro básico",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-gen-gei",
+      "title": "Practica 跟 y 给",
+      "texts": [
+        "A: 星期天你常常去哪儿？ B: 我常常去超市。 A: 你常跟谁去超市？ B: 我常跟王小云一起去超市。",
+        "Sustituye: 图书馆 / 我同学; 体育馆 / 我哥哥; 朋友家 / 我女朋友。",
+        "A: 宋华给林娜介绍什么？ B: 宋华给林娜介绍老北京的胡同。",
+        "Sustituye: 老师 / 我们 / 汉字的历史; 小云 / 大为 / 上海的点心; 林娜 / 大家 / 英语教学。",
+        "Completa según las escenas: 他们____学____。 她____介绍____。 Escenas: una profesora enseña inglés a estudiantes; una mujer presenta un hutong a visitantes."
+      ],
+      "sourceTitle": "Libro básico",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-phonetics",
+      "title": "Escucha y añade las marcas tonales",
+      "texts": [
+        "nar; zher; pangbian; qianbian; zhaoji; chaoshi; tiyuguan; sushelou",
+        "Women de sushelou zai zher, dui ma?",
+        "Fanguan houbian you yi tiao hutong."
+      ],
+      "sourceTitle": "Libro básico",
+      "requiresOriginalAudio": true
+    },
+    {
+      "id": "l6-ask-directions",
+      "title": "Pregunta una dirección",
+      "texts": [
+        "Escenas: no encuentras el aula; quieres ir a un banco; buscas un baño.",
+        "请问，401教室在哪儿？",
+        "请问，学校里边有银行吗？",
+        "请问，哪儿有卫生间？"
+      ],
+      "sourceTitle": "Libro básico",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-describe-campus",
+      "title": "Describe el campus",
+      "texts": [
+        "Mapa (norte arriba): fila norte 食堂 / 操场 / 图书馆; fila central 教学楼 / 宿舍楼 / 银行; fila sur 体育馆 / 超市 / espacio vacío.",
+        "我的宿舍楼北边有……，东边是……，西边是……，……在……。"
+      ],
+      "sourceTitle": "Libro básico",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-repeat-request",
+      "title": "Pide que repitan",
+      "texts": [
+        "Una persona dice en voz muy baja: 你多大？ Otra habla muy rápido: 请跟我来。",
+        "Practica con 不好意思、等一下、你说什么。"
+      ],
+      "sourceTitle": "Libro básico",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-meaning-request",
+      "title": "Pregunta por palabras que no entiendes",
+      "texts": [
+        "Escenas: la profesora dice 今天的作业是……; alguien pregunta 您贵姓？; un amigo propone comer 火锅.",
+        "Practica con 不好意思、等一下、你说什么、什么意思。"
+      ],
+      "sourceTitle": "Libro básico",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-listen-repeat",
+      "title": "Escucha y repite",
+      "texts": [
+        "A: 请问餐厅在哪儿？ B: 在楼上。 A: 谢谢！ B: 不客气。",
+        "A: 请问这儿有银行吗？ B: 不好意思，我也不知道。",
+        "A: 学校东边是什么地方？ B: 学校东边是超市。 A: 那个超市大不大？ B: 不太大。",
+        "A: 不好意思，您说什么？ B: 我说明天你有空儿吗？ A: “有空儿”是什么意思？ B: 就是“有时间”。"
+      ],
+      "sourceTitle": "Libro básico",
+      "requiresOriginalAudio": true
+    },
+    {
+      "id": "l6-reading-campus",
+      "title": "Comprensión: nuestro campus",
+      "texts": [
+        "Lee «Nuestro campus» en Lecturas y decide si es verdadero o falso.",
+        "校门的左边是我们学校的食堂。",
+        "食堂在图书馆的南边。",
+        "小超市也在银行后边。"
+      ],
+      "sourceTitle": "Libro básico",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-reading-home",
+      "title": "Comprensión: dibuja la casa",
+      "texts": [
+        "Lee «Mi nueva casa» en Lecturas y dibuja el plano del apartamento."
+      ],
+      "sourceTitle": "Libro básico",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-lost-call",
+      "title": "Haz una llamada: te has perdido",
+      "texts": [
+        "A invita a B a su dormitorio. B se pierde en el campus y llama a A para pedir indicaciones.",
+        "A: 你现在在哪儿？ B: ____。 A: ____。",
+        "Mapa de referencia: comedor al norte; fila central, de oeste a este: dormitorio A, banco, campo deportivo, gimnasio; fila sur: supermercado, edificio de aulas 1, edificio de aulas 2, biblioteca. Entrada por el este. B está entre el gimnasio y la biblioteca.",
+        "Usa 东边、西边、南边、北边、旁边、教学楼、食堂、体育馆、图书馆、超市、银行。"
+      ],
+      "sourceTitle": "Libro básico",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-country",
+      "title": "Investiga y escribe sobre tu país",
+      "texts": [
+        "Presenta dónde se encuentra tu país, a qué continente pertenece y qué países o mares están al norte, sur, este y oeste.",
+        "我们国家在……。东边是……，西边是……。我们国家南边有……，……在我们国家北边。"
+      ],
+      "sourceTitle": "Libro básico",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-hanzi-structure",
+      "title": "Estructura de caracteres",
+      "texts": [
+        "Observa las estructuras compuestas: izquierda-derecha (语、都), superior-inferior (您、宿), izquierda-centro-derecha (谢、做) y superior-centro-inferior (意).",
+        "Practica los objetivos de escritura de la lección en Hanzi. Los ejemplos de estructura no son objetivos nuevos por sí solos."
+      ],
+      "sourceTitle": "Libro básico",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-wb-listen-tf",
+      "title": "Escucha: verdadero o falso",
+      "texts": [
+        "Diálogo I: El hombre quiere ir a la biblioteca. / La biblioteca está a la izquierda del comedor.",
+        "Diálogo II: El comedor es muy grande. / La biblioteca está al norte del comedor.",
+        "Diálogo III: La mujer se ha perdido. / Hay una tienda detrás de la mujer. / La avenida está a la derecha de la tienda. / Hay un camino delante de la tienda."
+      ],
+      "sourceTitle": "Cuaderno de ejercicios",
+      "requiresOriginalAudio": true
+    },
+    {
+      "id": "l6-wb-listen-fill",
+      "title": "Escucha y completa en pinyin",
+      "texts": [
+        "Sùshèlóu ____ shì tǐyùguǎn, tǐyùguǎn ____.",
+        "____ yǒu hěn duō hútòng, hútòng jiù shì ____, wǒ jiā jiù zài ____ hútòng li."
+      ],
+      "sourceTitle": "Cuaderno de ejercicios",
+      "requiresOriginalAudio": true
+    },
+    {
+      "id": "l6-wb-listen-choice",
+      "title": "Escucha y elige",
+      "texts": [
+        "1. A 食堂 / B 宿舍 / C 银行 / D 饭馆",
+        "2. A 图书馆 / B 教学楼 / C 办公楼 / D 体育馆",
+        "3. A 马路 / B 街道 / C 胡同 / D 大街",
+        "4. A 后边 / B 右边 / C 左边 / D 旁边",
+        "5. A 过马路 / B 别着急 / C 谢谢你 / D 等一下",
+        "6. A 你家在哪儿？ / B 宿舍大不大？ / C 食堂在哪儿？ / D 你在什么地方？",
+        "7. A 办公楼西边是教学楼。 / B 办公楼东边是教学楼。 / C 宿舍楼南边是教学楼。 / D 宿舍楼北边是教学楼。",
+        "8. A 请问银行在哪儿？ / B 超市在校门右边。 / C 学校里边有银行吗？ / D 房间大不大？",
+        "9. A 等一下，你说什么？ / B 什么叫“超市”？ / C 你跟我来。 / D 我给你介绍一下。"
+      ],
+      "sourceTitle": "Cuaderno de ejercicios",
+      "requiresOriginalAudio": true
+    },
+    {
+      "id": "l6-wb-campus",
+      "title": "Los cinco lugares más importantes",
+      "texts": [
+        "Elige cinco lugares importantes de tu campus, dibuja sus ubicaciones y preséntalos.",
+        "教学楼、银行、宿舍楼、邮局（correo）、图书馆、洗衣店（lavandería）、体育馆、超市、食堂、书店（librería）。"
+      ],
+      "sourceTitle": "Cuaderno de ejercicios",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-wb-pinyin",
+      "title": "Escribe y elige el pinyin",
+      "texts": [
+        "Escribe el pinyin: 食堂、图书馆、宿舍、办公楼。",
+        "着急: A zháojí / B zhejí",
+        "地方: A defāng / B dìfang",
+        "胡同: A hútóng / B hútòng",
+        "教学: A jiāoxué / B jiàoxué"
+      ],
+      "sourceTitle": "Cuaderno de ejercicios",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-wb-strokes",
+      "title": "Traza y copia",
+      "texts": [
+        "右、左、后、里、先、前。",
+        "Sigue el orden de los trazos y escribe los caracteres. Puedes practicarlos en Hanzi."
+      ],
+      "sourceTitle": "Cuaderno de ejercicios",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-wb-components",
+      "title": "Analiza y copia",
+      "texts": [
+        "哪（口 + 那）、楼（木 + 娄）、图（囗 + 冬）、馆（饣 + 官）、体（亻 + 本）、路（𧾷 + 各）、胡（古 + 月）。"
+      ],
+      "sourceTitle": "Cuaderno de ejercicios",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-wb-radicals",
+      "title": "Pinyin y radicales",
+      "texts": [
+        "Escribe el pinyin de cada carácter y el radical compartido de cada pareja. No hay clave oficial suministrada.",
+        "宿 / 字",
+        "图 / 国",
+        "边 / 道",
+        "饭 / 馆",
+        "朋 / 胡"
+      ],
+      "sourceTitle": "Cuaderno de ejercicios",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-wb-fill-hanzi",
+      "title": "Elige los caracteres",
+      "texts": [
+        "图书馆在____公楼旁边。（A 为 / B 办 / C 力）",
+        "____边的楼是宿舍楼。（A 右 / B 友 / C 有）",
+        "这儿有一____胡同。（A 条 / B 支 / C 本）",
+        "请问，____育馆在哪儿？（A 休 / B 本 / C 体）",
+        "你家____边有商店吗？（A 北 / B 比 / C 匕）"
+      ],
+      "sourceTitle": "Cuaderno de ejercicios",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-wb-match",
+      "title": "Une para formar diálogos",
+      "texts": [
+        "I: ① 请问，图书馆在哪儿？ ② 你现在在哪儿？ ③ 等一下，你说什么？ ④ 什么叫“胡同”？ ⑤ 饭馆后面有一个书店，对吗？",
+        "II: A 对，那个书店很大。 B 就是小街道。 C 我说：“你在做什么呢？” D 图书馆在东门旁边。 E 我也不知道我在哪儿。"
+      ],
+      "sourceTitle": "Cuaderno de ejercicios",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-wb-questions",
+      "title": "Pregunta por la parte subrayada",
+      "texts": [
+        "食堂在【校门右边】。",
+        "图书馆【很大】。",
+        "【我在一个超市前边】。",
+        "我对面有【一个很大的饭馆】。",
+        "“小姑娘”就是【岁数小的女孩子】。"
+      ],
+      "sourceTitle": "Cuaderno de ejercicios",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-wb-translate",
+      "title": "Traduce",
+      "texts": [
+        "我家就在学校的北边。",
+        "银行旁边有一个咖啡馆。",
+        "教学楼后边是食堂。",
+        "超市对面有一条小胡同。",
+        "你给我介绍一下，好吗？",
+        "Traduce al chino (puedes usar pinyin): Beijing es una ciudad muy grande, pero simétrica este-oeste. Por ejemplo, tiene Xizhimen y Dongzhimen, Xidan y Dongdan, Xibianmen y Dongbianmen."
+      ],
+      "sourceTitle": "Cuaderno de ejercicios",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-wb-order",
+      "title": "Ordena según el pinyin",
+      "texts": [
+        "Wǒ jiā duìmiàn yǒu yí ge dà chāoshì.（我家 / 超市 / 大 / 有 / 对面 / 一个）",
+        "Qǐngwèn shítáng zài nǎr?（食堂 / 哪儿 / 请问 / 在）",
+        "Nǐmen xiànzài zài nǎr?（现在 / 哪儿 / 你们 / 在）",
+        "Yínháng jiù zài dàxué de yòubian.（大学的 / 就 / 在 / 银行 / 右边）",
+        "Nǐ gěi wǒ jièshào yíxià, hǎo ma?（你 / 给 / 介绍 / 我 / 一下 / 好吗）",
+        "Mǎlù duìmiàn yǒu méiyǒu shāngdiàn?（对面 / 有 / 马路 / 没有 / 商店）"
+      ],
+      "sourceTitle": "Cuaderno de ejercicios",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-wb-search",
+      "title": "Busca palabras",
+      "texts": [
+        "Encuentra palabras horizontal, vertical y diagonalmente; rodéalas y cópialas.",
+        "办　宿　舍　朋",
+        "公　司　友　听",
+        "楼　下　好　力"
+      ],
+      "sourceTitle": "Cuaderno de ejercicios",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-wb-dialogue",
+      "title": "Completa el diálogo",
+      "texts": [
+        "A: 你好，请问____？（Preguntar la dirección）",
+        "B: 图书馆在教学楼旁边。你是新同学吗？",
+        "A: 是啊，我上午____。（刚）",
+        "B: 你有没有学校的地图？",
+        "A: 有，你可以给我____？（介绍）",
+        "B: 没问题。你看，我们在这儿，图书馆在这儿。",
+        "A: 好的。图书馆大不大？我喜欢看书。",
+        "B: ____，那儿有很多书。",
+        "A: 太好了，我____。（先）谢谢你！",
+        "B: ____，再见！",
+        "A: 再见！"
+      ],
+      "sourceTitle": "Cuaderno de ejercicios",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-wb-expansion",
+      "title": "Completa caracteres y pinyin",
+      "texts": [
+        "1① 学校（pinyin: ____）",
+        "1② ____ ____ 学校（wǒmen de ____）",
+        "1③ ____ ____ 学校 ____（wǒmen de ____ pángbiān）",
+        "1④ ____ ____ 学校 ____ ____ ____ ____ ____。（Wǒmen de ____ pángbiān yǒu yí ge dà chāoshì.）",
+        "2① 楼（pinyin: ____）",
+        "2② ____ ____ 楼（yòubian de ____）",
+        "2③ ____ ____ 楼 ____ 宿舍楼。（Yòubian de ____ shì ____.）",
+        "2④ ____ ____ 楼 ____ ____ ____ ____ 宿舍楼。（Yòubian de ____ shì xīn tóngxué de ____.）"
+      ],
+      "sourceTitle": "Cuaderno de ejercicios",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-wb-reading",
+      "title": "Comprensión: cómo dirigirse a otras personas",
+      "texts": [
+        "Lee el texto correspondiente en Lecturas y responde.",
+        "一个人姓王，工作的地方是医院，应该叫他什么？",
+        "人们叫他“白老师”，他工作的地方常常是哪儿？"
+      ],
+      "sourceTitle": "Cuaderno de ejercicios",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-wb-writing",
+      "title": "Invita a tu clase a casa",
+      "texts": [
+        "Este fin de semana habrá una fiesta de tu clase en tu casa. Dibuja un mapa y describe la ubicación usando los modelos de la lección. Puedes escribir pinyin para los caracteres que no sabes escribir."
+      ],
+      "sourceTitle": "Cuaderno de ejercicios",
+      "requiresOriginalAudio": false
+    },
+    {
+      "id": "l6-slides-neighborhood",
+      "title": "Describe tu barrio",
+      "texts": [
+        "Dibuja un mapa sencillo de los alrededores de tu casa y describe qué hay cerca: 学校、医院、办公楼、银行、公园。"
+      ],
+      "sourceTitle": "Presentación",
+      "requiresOriginalAudio": false
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s-l6-1",
+      "hanzi": "请问食堂在哪儿？",
+      "pinyin": "Qǐngwèn shítáng zài nǎr?",
+      "translation": "Disculpa, ¿dónde está el comedor?",
+      "tokens": [
+        "请问",
+        "食堂",
+        "在",
+        "哪儿"
+      ],
+      "grammarTags": [
+        "L6"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 8,
+        "printedPage": 169
+      }
+    },
+    {
+      "id": "s-l6-2",
+      "hanzi": "食堂在校门右边。",
+      "pinyin": "Shítáng zài xiàomén yòubian.",
+      "translation": "El comedor está a la derecha de la entrada del campus.",
+      "tokens": [
+        "食堂",
+        "在",
+        "校门",
+        "右边"
+      ],
+      "grammarTags": [
+        "L6"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 8,
+        "printedPage": 169
+      }
+    },
+    {
+      "id": "s-l6-3",
+      "hanzi": "食堂旁边是办公楼。",
+      "pinyin": "Shítáng pángbiān shì bàngōnglóu.",
+      "translation": "Al lado del comedor está el edificio de oficinas.",
+      "tokens": [
+        "食堂",
+        "旁边",
+        "是",
+        "办公楼"
+      ],
+      "grammarTags": [
+        "L6"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 8,
+        "printedPage": 169
+      }
+    },
+    {
+      "id": "s-l6-4",
+      "hanzi": "学校里边有银行吗？",
+      "pinyin": "Xuéxiào lǐbian yǒu yínháng ma?",
+      "translation": "¿Hay un banco dentro de la escuela?",
+      "tokens": [
+        "学校",
+        "里边",
+        "有",
+        "银行",
+        "吗"
+      ],
+      "grammarTags": [
+        "L6"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 8,
+        "printedPage": 169
+      }
+    },
+    {
+      "id": "s-l6-5",
+      "hanzi": "等一下，你说什么？",
+      "pinyin": "Děng yíxià, nǐ shuō shénme?",
+      "translation": "Espera un momento, ¿qué dices?",
+      "tokens": [
+        "等",
+        "一下",
+        "你",
+        "说",
+        "什么"
+      ],
+      "grammarTags": [
+        "L6"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 8,
+        "printedPage": 169
+      }
+    },
+    {
+      "id": "s-l6-6",
+      "hanzi": "什么叫“胡同”？",
+      "pinyin": "Shénme jiào “hútòng”?",
+      "translation": "¿Qué significa «hutong»?",
+      "tokens": [
+        "什么",
+        "叫",
+        "胡同"
+      ],
+      "grammarTags": [
+        "L6"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 8,
+        "printedPage": 169
+      }
+    },
+    {
+      "id": "s-l6-7",
+      "hanzi": "你跟我来。",
+      "pinyin": "Nǐ gēn wǒ lái.",
+      "translation": "Ven conmigo.",
+      "tokens": [
+        "你",
+        "跟",
+        "我",
+        "来"
+      ],
+      "grammarTags": [
+        "L6"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 8,
+        "printedPage": 169
+      }
+    },
+    {
+      "id": "s-l6-8",
+      "hanzi": "我给你介绍一下，好吗？",
+      "pinyin": "Wǒ gěi nǐ jièshào yíxià, hǎo ma?",
+      "translation": "Te lo presento un momento, ¿te parece?",
+      "tokens": [
+        "我",
+        "给",
+        "你",
+        "介绍",
+        "一下",
+        "好吗"
+      ],
+      "grammarTags": [
+        "L6"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 8,
+        "printedPage": 169
+      }
+    },
+    {
+      "id": "s-l6-9",
+      "hanzi": "饭馆后边有一条胡同，对吗？",
+      "pinyin": "Fànguǎn hòubian yǒu yì tiáo hútòng, duì ma?",
+      "translation": "Detrás del restaurante hay un callejón, ¿verdad?",
+      "tokens": [
+        "饭馆",
+        "后边",
+        "有",
+        "一条",
+        "胡同",
+        "对吗"
+      ],
+      "grammarTags": [
+        "L6"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 8,
+        "printedPage": 169
+      }
+    }
+  ],
+  "vocabularySources": {
+    "v-新": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 3,
+      "printedPage": 164
+    },
+    "v-同学": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 3,
+      "printedPage": 164
+    },
+    "v-食堂": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 3,
+      "printedPage": 164
+    },
+    "v-哪儿": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 3,
+      "printedPage": 164
+    },
+    "v-校门": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-门": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-右边": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-右": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-边": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-跟": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-这儿": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-地图": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-给": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-旁边": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-办公楼": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-办公": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-楼": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-图书馆": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-书": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-北边": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-北": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-西边": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-西": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-体育馆": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-体育": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-里边": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-里": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-银行": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-东边": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-东": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-宿舍": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-教学": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-先": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 4,
+      "printedPage": 165
+    },
+    "v-别": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 7,
+      "printedPage": 168
+    },
+    "v-着急": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 7,
+      "printedPage": 168
+    },
+    "v-小姐": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 7,
+      "printedPage": 168
+    },
+    "v-地方": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 7,
+      "printedPage": 168
+    },
+    "v-知道": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 7,
+      "printedPage": 168
+    },
+    "v-超市": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 7,
+      "printedPage": 168
+    },
+    "v-前边": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 7,
+      "printedPage": 168
+    },
+    "v-前": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 7,
+      "printedPage": 168
+    },
+    "v-对面": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 7,
+      "printedPage": 168
+    },
+    "v-饭馆": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 7,
+      "printedPage": 168
+    },
+    "v-过": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 7,
+      "printedPage": 168
+    },
+    "v-马路": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 7,
+      "printedPage": 168
+    },
+    "v-路": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 7,
+      "printedPage": 168
+    },
+    "v-后边": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 7,
+      "printedPage": 168
+    },
+    "v-后": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 7,
+      "printedPage": 168
+    },
+    "v-条": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 7,
+      "printedPage": 168
+    },
+    "v-胡同": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 7,
+      "printedPage": 168
+    },
+    "v-等": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 7,
+      "printedPage": 168
+    },
+    "v-街道": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 7,
+      "printedPage": 168
+    },
+    "v-街": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 7,
+      "printedPage": 168
+    },
+    "v-老": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 7,
+      "printedPage": 168
+    },
+    "v-卫生间": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 14,
+      "printedPage": 175
+    },
+    "v-卧室": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 14,
+      "printedPage": 175
+    },
+    "v-客厅": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 14,
+      "printedPage": 175
+    },
+    "v-阳台": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 14,
+      "printedPage": 175
+    },
+    "v-厨房": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 14,
+      "printedPage": 175
+    },
+    "v-书房": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 14,
+      "printedPage": 175
+    },
+    "v-咖啡厅": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 14,
+      "printedPage": 175
+    },
+    "v-酒吧": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 14,
+      "printedPage": 175
+    },
+    "v-清真餐厅": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 14,
+      "printedPage": 175
+    },
+    "v-操场": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 14,
+      "printedPage": 175
+    },
+    "v-那儿": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 14,
+      "printedPage": 175
+    },
+    "v-左边": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 14,
+      "printedPage": 175
+    },
+    "v-上边": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 15,
+      "printedPage": 176
+    },
+    "v-下边": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 15,
+      "printedPage": 176
+    },
+    "v-外边": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 15,
+      "printedPage": 176
+    },
+    "v-教学楼": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 3,
+      "printedPage": 164
+    },
+    "v-宿舍楼": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 3,
+      "printedPage": 164
+    },
+    "v-南边": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 8,
+      "printedPage": 169
+    },
+    "v-南": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 1,
+      "printedPage": 162
+    },
+    "v-左": {
+      "type": "textbook",
+      "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+      "pdfPage": 14,
+      "printedPage": 175
+    }
+  },
+  "pending": [
+    "Grabaciones originales del libro 2-06-01 a 2-06-08 y del cuaderno 06-1 a 06-3 no suministradas.",
+    "No se suministró una clave oficial de respuestas. Las actividades documentales permanecen abiertas.",
+    "No se suministró una hoja Hanzi separada para L6. Se usan exclusivamente los objetivos explícitos de libro y cuaderno.",
+    "No se generaron nuevos audios ni fotografías. Se reutilizan los recursos ya disponibles cuando coinciden texto y lectura.",
+    "El laberinto y la imagen de la fiesta no se reproducen; las actividades correspondientes requieren consultar la página original. Los mapas restantes se describen textualmente."
+  ],
+  "objectives": [
+    "Describir los alrededores del lugar donde vivo.",
+    "Hablar sobre la ubicación de algo.",
+    "Preguntar direcciones.",
+    "Pedir ayuda cuando encuentro un problema de idioma."
+  ],
+  "culture": [
+    {
+      "title": "Las viviendas tradicionales de China",
+      "text": "El libro presenta 四合院 sìhéyuàn (casas organizadas alrededor de un patio), 天井 tiānjǐng (patios de viviendas del sur), 窑洞 yáodòng (viviendas excavadas de la meseta de Loess) y 蒙古包 ménggǔbāo (yurtas). Sus descripciones culturales pertenecen al contexto del libro; no se actualizan ni se convierten en objetivos de escritura."
+    },
+    {
+      "title": "胡同",
+      "text": "El libro explica 胡同 como callejón entre conjuntos de viviendas tradicionales. Las cifras de población y de hutong son datos del texto, no estadísticas actuales verificadas."
+    }
+  ],
+  "bookRadicals": [
+    {
+      "id": "RAD-L6-2eae",
+      "radical": "⺮",
+      "name": "",
+      "nameHanzi": "竹字头",
+      "meaning": "relacionado con bambú",
+      "explanation": "Definición del libro: relacionado con bambú",
+      "strokeCount": 6,
+      "lessons": [
+        6
+      ],
+      "examples": [
+        {
+          "hanzi": "等",
+          "pinyin": "děng",
+          "lessons": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RAD-L6-27fb7",
+      "radical": "𧾷",
+      "name": "",
+      "nameHanzi": "足字旁",
+      "meaning": "relacionado con pie",
+      "explanation": "Definición del libro: relacionado con pie",
+      "strokeCount": 7,
+      "lessons": [
+        6
+      ],
+      "examples": [
+        {
+          "hanzi": "跟",
+          "pinyin": "gēn",
+          "lessons": [
+            6
+          ]
+        },
+        {
+          "hanzi": "路",
+          "pinyin": "lù",
+          "lessons": [
+            6
+          ]
+        },
+        {
+          "hanzi": "跳",
+          "pinyin": "tiào",
+          "lessons": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RAD-L6-5f73",
+      "radical": "彳",
+      "name": "",
+      "nameHanzi": "双人旁",
+      "meaning": "relacionado con caminar o camino",
+      "explanation": "Definición del libro: relacionado con caminar o camino",
+      "strokeCount": 3,
+      "lessons": [
+        6
+      ],
+      "examples": [
+        {
+          "hanzi": "街",
+          "pinyin": "jiē",
+          "lessons": [
+            6
+          ]
+        },
+        {
+          "hanzi": "很",
+          "pinyin": "hěn",
+          "lessons": [
+            6
+          ]
+        }
+      ]
+    }
+  ]
+}

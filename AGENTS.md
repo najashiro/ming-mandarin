@@ -15,3 +15,13 @@ Para contenido curricular, consulta solo los shards pertinentes. No inventes voc
 Los Hanzi Writer usan assets versionados en `public/hanzi-data/`. El audio de mandarín se reproduce desde MP3 estáticos en `public/audio/`; no regeneres TTS ni hagas llamadas de pago salvo pedido expreso. Prioriza móvil/iPhone, accesibilidad y controles táctiles. Conserva los IDs de currículo, Hanzi y progreso; cualquier cambio de ID requiere una migración diseñada.
 
 No publiques `.env*`, claves, tokens ni contraseñas. Nunca expongas secretos en `NEXT_PUBLIC_*`. No ejecutes migraciones, cambios de RLS ni despliegues en producción sin autorización. Trabaja cada cambio en su propia rama y ejecuta las validaciones pertinentes. Codex puede preparar, revisar y, con permisos suficientes de GitHub, fusionar un PR expresamente autorizado por el usuario; nunca debe fusionar a `main` por iniciativa propia.
+
+## Revisión activa L1–L3 · 2026-11-04
+
+El usuario pidió releer PDF, completar tarjetas y mejorar imágenes ambiguas. La revisión y ejemplos están en `MING_KNOWLEDGE/v2/lessons123/` (ruta desde la raíz). La consulta global incorpora `lessons123_support.py`; la web usa la proyección reproducible `data/lessons123-public.json`, exportada por `scripts/export-lessons123-web.py`. Mantener el snapshot v2.1 y sus auditorías. Verificar la nueva exportación con `--check`, tests `test_lessons123_support.py` y `tests/unit/lessons123.test.ts`.
+
+Se autorizaron flechas, pinyin y etiquetas didácticas dentro de imágenes ambiguas. La excepción está en el estándar visual. Los diagramas y fotos anotadas tienen `imageQuizEligible:false`: pueden acompañar tarjetas pero no revelar la respuesta en un quiz visual. Conservar retiros administrativos y hashes de cada recurso. Los generadores y catálogos `lessons123-*` son editoriales; no atribuir sus ilustraciones al libro ni afirmar revisión humana independiente.
+
+## Extensión L6 · 2.4.0 · 2026-11-08
+
+El usuario autorizó integrar L6 en corpus y web. Fuente: `MING_KNOWLEDGE/v2/lesson6/content.json` desde la raíz. Consulta su `README.md` y `SOURCE_REVIEW.md`. Los libros prevalecen sobre PPT; ante conflicto entre libros se conserva el corpus avanzado. `query.py --lesson 6 --validate` y `scripts/export-lesson6-web.py --check` validan la extensión sin reemplazar las tablas históricas. Conserva IDs L1–L5, las rutas previas, los audios e imágenes. No atribuyas las adaptaciones Míng a una clave oficial ni generes audio faltante.

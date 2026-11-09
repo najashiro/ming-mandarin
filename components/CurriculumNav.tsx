@@ -5,7 +5,7 @@ import { ScopeSelect } from './ScopeSelect';
 
 export function CurriculumNav({ scope, section }: { scope: CurriculumScope; section?: string }) {
   const suffix = section ? `/${section}` : '';
-  const availableScopes = section === 'readings' ? studyScopeOptions.filter(item => ['l4', 'l5', 'l1-l2-l3-l4', 'l1-l2-l3-l4-l5'].includes(item.value)) : studyScopeOptions;
+  const availableScopes = section === 'readings' ? studyScopeOptions.filter(item => ['l6', 'l1-l2-l3-l4-l5-l6', 'l4', 'l5', 'l1-l2-l3-l4', 'l1-l2-l3-l4-l5'].includes(item.value)) : studyScopeOptions;
   const options = availableScopes.map(item => ({ ...item, href: `/study/${item.value}${suffix}` }));
   return <nav className="curriculum-nav shell" aria-label="Alcance de estudio">
     {section && <Link prefetch={false} href={`/study/${scope}`} aria-label="Volver a la ruta de esta lección">← Ruta</Link>}

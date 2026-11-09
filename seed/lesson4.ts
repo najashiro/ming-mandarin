@@ -6,7 +6,7 @@ export const lesson4Characters = data.characters as CharacterEntry[];
 export const lesson4Grammar = data.grammar as GrammarPoint[];
 export const lesson4Vocabulary: VocabularyEntry[] = data.vocabulary.map(word => ({
   id: word.id, hanzi: word.hanzi, pinyin: word.pinyin, translation: word.spanish,
-  grammaticalType: '', category: word.roles.includes('core_textbook') ? 'core' : word.roles.includes('supplementary_textbook') ? 'supplementary' : 'teacher_supplement',
+  grammaticalType: word.grammaticalType, category: word.roles.includes('core_textbook') ? 'core' : word.roles.includes('supplementary_textbook') ? 'supplementary' : 'teacher_supplement',
   isCore: word.roles.includes('core_textbook'), source: (data.vocabularySources as Record<string, SourceRef>)[word.id],
 }));
 export const lesson4Sentences = data.sentences as SentenceEntry[];

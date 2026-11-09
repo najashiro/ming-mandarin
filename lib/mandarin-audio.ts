@@ -2,6 +2,7 @@ import lesson5Audio from '@/data/lesson5-audio.json';
 import lesson5Available from '@/data/lesson5-audio-available.json';
 import lesson4Audio from '@/data/lesson4-audio.json';
 import lesson4Available from '@/data/lesson4-audio-available.json';
+import lesson4LanguageAliases from '@/data/lesson4-audio-aliases.json';
 import manifest from '@/data/mandarin-audio.json';
 import pronunciation from '@/data/pronunciation.json';
 import availableMandarin from '@/data/mandarin-audio-available.json';
@@ -12,7 +13,14 @@ const normalizeMandarin = (value: string) => value.normalize('NFC').replace(/[^\
 const clipsByText = new Map<string, string>();
 const lesson4ByText = new Map<string, string>();
 const clipsByReading = new Map<string, string>();
-const readingKey = (text: string, pinyin: string) => `${normalizeMandarin(text)}:${pinyin.normalize('NFC').toLowerCase().replace(/[\s'’ʼ.,!?]/g, '')}`;
+// Older PDF transcriptions used breve for third tone, IPA ɡ for Latin g,
+// and Greek ὺ for ù. These are spelling repairs, not pronunciation aliases:
+// preserve every tone, neutral syllable, vowel and final consonant.
+const normalizeRecordedPinyin = (value: string) => value.normalize('NFC').toLowerCase()
+  .replace(/ɡ/g, 'g').replace(/ὺ/g, 'ù')
+  .normalize('NFD').replace(/([aeiou])\u0306/g, '$1\u030c').normalize('NFC')
+  .replace(/[\s'’ʼ.,!?]/g, '');
+const readingKey = (text: string, pinyin: string) => `${normalizeMandarin(text)}:${normalizeRecordedPinyin(pinyin)}`;
 const availableFiles = new Set(availableMandarin.files);
 
 for (const clip of pronunciation.clips) {
@@ -33,6 +41,20 @@ for (const clip of lesson4Audio.clips) {
   // Keep established generic readings. Explicit readings disambiguate L4.
   lesson4ByText.set(normalizeMandarin(clip.input), src);
   if (clip.expectedPinyin && !clipsByReading.has(readingKey(clip.input, clip.expectedPinyin))) clipsByReading.set(readingKey(clip.input, clip.expectedPinyin), src);
+}
+
+// Existing recordings retain aliases for newly completed passage pinyin and
+// reviewed orthographic corrections. Never relax polyphonic word lookup.
+for (const alias of lesson4LanguageAliases.aliases) {
+  const clip = lesson4Audio.clips.find(candidate => candidate.id === alias.clipId);
+  if (!clip || !(lesson4Available.files as string[]).includes(clip.file)) continue;
+  const exactText = normalizeMandarin(clip.input) === normalizeMandarin(alias.hanzi);
+  const reviewedPronounCorrection = alias.mode === 'reviewed_passage_pronoun_correction'
+    && alias.sourceInput === clip.input && alias.sourcePinyin === clip.expectedPinyin
+    && normalizeRecordedPinyin(alias.pinyin) === normalizeRecordedPinyin(clip.expectedPinyin)
+    && normalizeMandarin(clip.input).replace(/他/g, '她') === normalizeMandarin(alias.hanzi).replace(/他/g, '她');
+  if (!exactText && !reviewedPronounCorrection) continue;
+  clipsByReading.set(readingKey(alias.hanzi, alias.pinyin), `/audio/mandarin/${clip.file}`);
 }
 
 for (const clip of lesson5Audio.clips) {

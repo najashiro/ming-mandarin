@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "batch": "ming-l4-pdf-reread-source-20261104",
+  "review_method": "visual_reread_of_original_local_pdf_pages; source_extraction_correction_not_new_editorial_content",
+  "preservation": "Original encoded document pack remains unchanged. Before/after values are queryable; corrected derivations retain existing phrase and evidence IDs.",
+  "corrections": [
+    {
+      "id": "L4-SRCFIX-001",
+      "block_id": "L4-WB-04-09-03",
+      "field_path": "text_source",
+      "source_id": "SRC-WB-04",
+      "pdf_page": 9,
+      "printed_page": 37,
+      "before": "陈明在中学（escuela secundaria）工作。他们学校一共有二十一个班，有四十五个老师。他教（enseñar）英语。他们班一共有三十六个学生，二十个男生，十六个女生。今天下午三点学校有活动，老师和学生们一起看电影《功夫熊猫》。这个电影很有意思，大家都很喜欢看。",
+      "after": "陈明在中学（escuela secundaria）工作。她们学校一共有二十一个班，有四十五个老师。她教（enseñar）英语。她们班一共有三十六个学生，二十个男生，十六个女生。今天下午三点学校有活动，老师和学生们一起看电影《功夫熊猫》。这个电影很有意思，大家都很喜欢看。",
+      "reason": "La página impresa muestra 女 en 她们学校, 她教 y 她们班; se corrige la transcripción, no el contenido del libro."
+    },
+    {
+      "id": "L4-SRCFIX-002",
+      "block_id": "L4-WB-04-10-01",
+      "field_path": "items/1/text_source",
+      "source_id": "SRC-WB-04",
+      "pdf_page": 10,
+      "printed_page": 38,
+      "before": "他们班一共有多少个女生？",
+      "after": "她们班一共有多少个女生？",
+      "reason": "La pregunta ② impresa usa 她们; el panel separado de proporciones de la misma página conserva 他们."
+    },
+    {
+      "id": "L4-SRCFIX-003",
+      "block_id": "L4-WB-04-10-01",
+      "field_path": "items/1/pinyin_source",
+      "source_id": "SRC-WB-04",
+      "pdf_page": 10,
+      "printed_page": 38,
+      "before": "Tāmen bān yígòng yǒu duōshao ge nǚsheng?",
+      "after": "Tāmen bān yígòng yǒu duōshao gè nǚshēng?",
+      "reason": "La pregunta ② impresa marca cuarto tono en gè y primer tono en shēng."
+    },
+    {
+      "id": "L4-SRCFIX-004",
+      "block_id": "L4-WB-04-06-02",
+      "field_path": "items/3/pinyin_source",
+      "source_id": "SRC-WB-04",
+      "pdf_page": 6,
+      "printed_page": 34,
+      "before": "Tāmen bān yǒu duōshao gè xuéshēng?",
+      "after": "Tāmen bān yǒu duōshao gè xuésheng?",
+      "reason": "El ítem ④ impreso usa sheng sin marca tonal."
+    },
+    {
+      "id": "L4-SRCFIX-005",
+      "block_id": "L4-WB-04-07-03",
+      "field_path": "items/0/pinyin_source",
+      "source_id": "SRC-WB-04",
+      "pdf_page": 7,
+      "printed_page": 35,
+      "before": "Wǒmen bān yǒu sānshíbā gè xuéshēng.",
+      "after": "Wǒmen bān yǒu sānshíbā gè xuésheng.",
+      "reason": "La respuesta del ítem ① impreso usa sheng sin marca tonal."
+    },
+    {
+      "id": "L4-SRCFIX-006",
+      "block_id": "L4-BOOK-04-24-02",
+      "field_path": "text_source",
+      "source_id": "SRC-BOOK-04",
+      "pdf_page": 24,
+      "printed_page": 136,
+      "before": "El sistema educativo de China consiste en educación primaria, secundaria y superior. China tiene un sistema educativo obligatorio de nueve años, que incluye seis años de enseñanza primaria y tres años de enseñanza secundaria. En la actualidad, la educación obligatoria de nueve años se ha implementado en la mayor parte del país. El “Proyecto de la Esperanza”, un servicio público bien conocido en China, ayuda a construir escuelas primarias en áreas pobres y asiste a los estudiantes necesitados.\nLa educación elemental consiste en seis años de formación. Los niños chinos suelen ingresar en la escuela primaria a la edad de seis años. La educación primaria sienta una base sólida para el desarrollo futuro de los niños.\nLa educación secundaria incluye tres años de secundaria básica y tres años de secundaria superior. Después de graduarse de la escuela secundaria básica, algunos estudiantes ingresan en escuelas secundarias superiores, otros ingresan en escuelas secundarias vocacionales, y el período de estudio para ambas es de tres años. Después de graduarse, los estudiantes pueden continuar su educación en un nivel educativo más alto o buscar empleo.\nLa educación superior incluye cuatro años de estudio de pregrado (algunos programas como medicina y arquitectura requieren cinco años), dos o tres años de posgrado y tres años de doctorado. Como en la mayoría de los países del mundo, el sistema de título académico en China se divide en licenciatura, maestría y doctorado. Para satisfacer las necesidades de una sociedad que cambia rápidamente, hoy en día las universidades en China se dedican a la capacitación de talentos multidisciplinarios y de alta calidad.",
+      "after": "El sistema educativo de China consiste en educación primaria, secundaria y superior. China tiene un sistema educativo obligatorio de nueve años, que incluye seis años de enseñanza primaria y tres años de enseñanza secundaria. En la actualidad, la educación obligatoria de nueve años se ha implementado en la mayor parte del país. El “Proyecto de la Esperanza”, un servicio público bien conocido en China, ayuda a construir escuelas primarias en áreas pobres y asiste a los estudiantes necesitados.\nLa educación elemental consiste en seis años de formación. Los niños chinos suelen ingresar en la escuela primaria a la edad de seis años. La educación primaria sienta una base sólida para el desarrollo futuro de los niños.\nLa educación secundaria incluye tres años de secundaria básica y tres años de secundaria superior. Después de graduarse de la escuela secundaria básica, algunos estudiantes ingresan en escuelas secundarias superiores, otros estudiantes ingresan en escuelas secundarias vocacionales, y el período de estudio para ambas es de tres años. Después de graduarse, los estudiantes pueden continuar su estudio en un nivel educativo más alto o buscar empleo.\nLa educación superior incluye cuatro años de estudio de pregrado (algunos programas como medicina y arquitectura requieren cinco años), dos o tres años de posgrado y tres años de doctorado. Como en la mayoría de los países del mundo, el sistema de título académico en China se divide en licenciatura, maestría y doctorado. Para satisfacer las necesidades de una sociedad que cambia rápidamente, hoy en día las universidades en China se dedican a la capacitación de talentos multidisciplinarios y de alta calidad.",
+      "reason": "Cotejo visual del tercer párrafo: «otros estudiantes ingresan» y «continuar su estudio»."
+    }
+  ],
+  "phrase_identity_preservations": [
+    {
+      "block_id": "L4-WB-04-09-03",
+      "field_path": "text_source",
+      "before": "陈明在中学（escuela secundaria）工作。他们学校一共有二十一个班，有四十五个老师。他教（enseñar）英语。他们班一共有三十六个学生，二十个男生，十六个女生。今天下午三点学校有活动，老师和学生们一起看电影《功夫熊猫》。这个电影很有意思，大家都很喜欢看。",
+      "after": "陈明在中学（escuela secundaria）工作。她们学校一共有二十一个班，有四十五个老师。她教（enseñar）英语。她们班一共有三十六个学生，二十个男生，十六个女生。今天下午三点学校有活动，老师和学生们一起看电影《功夫熊猫》。这个电影很有意思，大家都很喜欢看。",
+      "phrase_id": "PH-e27f7f07130a6c1d",
+      "phrase_evidence_id": "PE-L4-40d05b3887636d6b",
+      "correction_id": "L4-SRCFIX-001"
+    },
+    {
+      "block_id": "L4-WB-04-09-03",
+      "field_path": "sentence/1",
+      "before": "他们学校一共有二十一个班，有四十五个老师。",
+      "after": "她们学校一共有二十一个班，有四十五个老师。",
+      "phrase_id": "PH-0ab6fb6d47f4b846",
+      "phrase_evidence_id": "PE-L4-1ce9d94fae995dd1",
+      "correction_id": "L4-SRCFIX-001"
+    },
+    {
+      "block_id": "L4-WB-04-09-03",
+      "field_path": "sentence/2",
+      "before": "他教（enseñar）英语。",
+      "after": "她教（enseñar）英语。",
+      "phrase_id": "PH-d241a5d28f363977",
+      "phrase_evidence_id": "PE-L4-a9947e2cd7066a09",
+      "correction_id": "L4-SRCFIX-001"
+    },
+    {
+      "block_id": "L4-WB-04-09-03",
+      "field_path": "sentence/3",
+      "before": "他们班一共有三十六个学生，二十个男生，十六个女生。",
+      "after": "她们班一共有三十六个学生，二十个男生，十六个女生。",
+      "phrase_id": "PH-fc69acf5560d1324",
+      "phrase_evidence_id": "PE-L4-57c828a64553b7d9",
+      "correction_id": "L4-SRCFIX-001"
+    },
+    {
+      "block_id": "L4-WB-04-10-01",
+      "field_path": "items/1",
+      "before": "他们班一共有多少个女生？",
+      "after": "她们班一共有多少个女生？",
+      "phrase_id": "PH-16632dfaa811d437",
+      "phrase_evidence_id": "PE-L4-131b5929239ddb4b",
+      "correction_id": "L4-SRCFIX-002"
+    }
+  ],
+  "audio_homophone_aliases": [
+    {
+      "reading_id": "L4-WB-04-09-03",
+      "clip_id": "l4-fa501a48e640f481",
+      "correction_id": "L4-SRCFIX-001",
+      "allowed_character_pair": [
+        "他",
+        "她"
+      ],
+      "rationale": "Las tres correcciones gráficas 他→她 conservan exactamente tā/tāmen en el pinyin impreso y la grabación existente."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+.documentary-activities { display: grid; gap: 1rem; margin-block: 1.5rem 3rem; }
+.documentary-activity { min-width: 0; scroll-margin-top: 6rem; }
+.documentary-activity > summary { cursor: pointer; min-height: 44px; padding-block: .6rem; font-weight: 600; overflow-wrap: anywhere; }
+.documentary-activity > summary:focus-visible, .documentary-table-scroll:focus-visible { outline: 3px solid #3f6b54; outline-offset: 4px; }
+.documentary-context { display: block; color: #59675e; font-size: .85rem; font-weight: 400; margin-bottom: .4rem; }
+.documentary-body { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.25rem; padding-top: 1rem; }
+.documentary-body > * { min-width: 0; }
+.documentary-body p { margin-block: .4rem; }
+.documentary-instruction, .documentary-chinese, .documentary-pinyin { white-space: pre-line; overflow-wrap: anywhere; line-height: 1.9; }
+.documentary-chinese { font-size: 1.15rem; }
+.documentary-chinese u { text-underline-offset: .25em; text-decoration-thickness: 2px; }
+.documentary-pinyin { color: #466451; }
+.documentary-audio-status { background: #f6f3eb; border-left: 3px solid #a47b46; padding: .8rem 1rem; }
+.documentary-items { list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; }
+.documentary-items > li { min-width: 0; border-top: 1px solid #e5e0d6; padding-top: 1rem; }
+.documentary-item-label { font-size: .9rem; font-weight: 600; color: #466451; margin-bottom: .4rem; }
+.documentary-model-item, .documentary-passage { background: #f2f6ef; border-radius: 10px; padding: 1rem; }
+.documentary-passage h4 { margin-block: 0 .7rem; font-size: 1rem; }
+.documentary-choices { list-style: none; padding: 0; display: grid; gap: .7rem; }
+.documentary-choices li { display: flex; gap: .7rem; align-items: start; }
+.documentary-choice-label { flex: 0 0 1.7rem; font-weight: 700; color: #466451; }
+.documentary-choices li > div { min-width: 0; overflow-wrap: anywhere; }
+.documentary-substitutions ul { padding-left: 1.4rem; line-height: 1.9; }
+.documentary-table-scroll { overflow-x: auto; max-width: 100%; padding-bottom: .5rem; }
+.documentary-table-hint { display: none; color: #59675e; font-size: .85rem; }
+@media (max-width: 720px) { .documentary-table-hint { display: block; } }
+.documentary-table-scroll table { border-collapse: collapse; width: 100%; line-height: 1.6; }
+.documentary-table-scroll caption { text-align: left; font-weight: 600; padding-bottom: .7rem; color: #315848; }
+.documentary-table-scroll th, .documentary-table-scroll td { border: 1px solid #cdd8ca; padding: .65rem; text-align: left; min-width: 5rem; }
+.documentary-table-scroll th { background: #e6eee5; }
+.documentary-table-scroll td:empty { height: 3rem; }
+.documentary-character-grid table { width: auto; }
+.documentary-character-grid td { min-width: 2.6rem; text-align: center; font-size: 1.5rem; }
+.documentary-word-bank p { display: flex; flex-wrap: wrap; gap: .6rem; }
+.documentary-word-bank span { background: #e6eee5; padding: .35rem .7rem; border-radius: 8px; }
+.documentary-scene { color: #59675e; padding: .7rem; border-left: 3px solid #c4d1c0; }
+.documentary-clocks { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .8rem; max-width: 620px; }
+.documentary-clock { margin: 0; color: #315848; text-align: center; }
+.documentary-clock svg { width: 100%; display: block; }
+.documentary-clock figcaption { font-weight: 700; padding-block: .5rem; }
+.documentary-symbol-panels { display: flex; flex-wrap: wrap; gap: 2rem; }
+.documentary-symbol-panels figure { margin: 0; }
+.documentary-symbol-grid { display: grid; grid-template-columns: repeat(5, 1.7rem); gap: .2rem; font-size: 1.6rem; line-height: 1.4; color: #315848; }
+.documentary-symbol-panels figcaption { text-align: center; padding-block: .5rem; }
+.documentary-clipping { background: #fffdf8; border: 1px solid #cdd8ca; padding: 1rem; overflow-wrap: anywhere; }
+.documentary-clipping p:first-child { font-size: 1.8rem; }
+.documentary-visual-descriptions { display: grid; gap: .75rem; margin: 0; }
+.documentary-visual-descriptions dt { font-weight: 600; }
+.documentary-visual-descriptions dd { margin: .3rem 0 0; line-height: 1.7; }
+.documentary-translation > summary { cursor: pointer; min-height: 44px; padding-top: .7rem; }
+@media (max-width: 480px) { .documentary-clocks { grid-template-columns: repeat(2, minmax(0, 1fr)); } .documentary-table-scroll th, .documentary-table-scroll td { padding: .5rem; } }

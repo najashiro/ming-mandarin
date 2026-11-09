@@ -1,27 +1,33 @@
-import baseline from '@/data/corpus-v21-public.json';
+import type baseline from '@/data/corpus-v21-public.json';
+import reviewed from '@/data/lessons123-public.json';
 import lesson4 from '@/data/lesson4-public.json';
 import lesson5 from '@/data/lesson5-public.json';
+import lesson6 from '@/data/lesson6-public.json';
+import { normalizePinyinForComparison } from '@/lib/pinyin';
 
-type Word = (typeof baseline.vocabulary)[number];
+type Word = (typeof baseline.vocabulary)[number] & { grammaticalType?: string };
 type Phrase = (typeof baseline.phrases)[number];
-type Radical = Omit<(typeof baseline.radicals)[number], 'strokeCount'> & { strokeCount: number | null };
-const vocabulary: Word[] = baseline.vocabulary.map(word => ({ ...word }));
-const phrases: Phrase[] = baseline.phrases.map(phrase => ({ ...phrase }));
-const radicals: Radical[] = baseline.radicals.map(radical => ({ ...radical, examples: [...radical.examples], lessons: [...radical.lessons] }));
-for (const [lessonNumber, extension] of [[4, lesson4], [5, lesson5]] as const) {
+type Radical = Omit<(typeof baseline.radicals)[number], 'strokeCount'> & { strokeCount: number | null; nameHanzi?: string };
+const vocabulary: Word[] = reviewed.vocabulary.map(word => ({ ...word }));
+const phrases: Phrase[] = reviewed.phrases.map(phrase => ({ ...phrase }));
+const radicals: Radical[] = reviewed.radicals.map(radical => ({ ...radical, examples: [...radical.examples], lessons: [...radical.lessons] }));
+for (const [lessonNumber, extension] of [[4, lesson4], [5, lesson5], [6, lesson6]] as const) {
   for (const incoming of extension.vocabulary) {
     const existing = vocabulary.find(word => word.id === incoming.id);
-    if (!existing) vocabulary.push(incoming as Word);
-    else if (lessonNumber === 5) {
-      // Preserve the established reading; merge explicit lesson membership and examples.
+    if (!existing) vocabulary.push({ ...incoming } as Word);
+    else {
+      // Keep the established reading while retaining each lesson's explicit links.
       existing.lessons = [...new Set([...existing.lessons, lessonNumber])];
       existing.curriculumLinks = [...existing.curriculumLinks, ...incoming.curriculumLinks as Word['curriculumLinks']];
-      existing.examplePhraseIds = [...new Set([...existing.examplePhraseIds, ...incoming.examplePhraseIds.filter(id => extension.phrases.some(phrase => phrase.id === id && phrase.pinyin && phrase.spanish))])];
+      // A shared Hanzi ID is not a shared reading: 只 zhī must not inherit zhǐ examples.
+      if (normalizePinyinForComparison(existing.pinyin) === normalizePinyinForComparison(incoming.pinyin)) {
+        existing.examplePhraseIds = [...new Set([...existing.examplePhraseIds, ...incoming.examplePhraseIds.filter(id => extension.phrases.some(phrase => phrase.id === id && phrase.pinyin && phrase.spanish))])];
+      }
     }
   }
   for (const incoming of extension.phrases) {
     const existing = phrases.find(phrase => phrase.id === incoming.id);
-    if (!existing) phrases.push(incoming as Phrase);
+    if (!existing) phrases.push({ ...incoming } as Phrase);
     else {
       existing.lessons = [...new Set([...existing.lessons, lessonNumber])];
       existing.exampleVocabIds = [...new Set([...existing.exampleVocabIds, ...incoming.exampleVocabIds])];
@@ -37,9 +43,38 @@ for (const [lessonNumber, extension] of [[4, lesson4], [5, lesson5]] as const) {
     } else radicals.push({ id: `RAD-L${lessonNumber}-${glyph.codePointAt(0)!.toString(16)}`, radical: glyph, name: '', meaning: '', explanation: '', strokeCount: null, lessons: [lessonNumber], examples });
   }
 }
+// Definitions and examples explicitly taught in the textbook take precedence
+// over worksheet-only radical metadata; existing IDs and lesson links remain.
+for (const incoming of lesson4.bookRadicals) {
+  const existing = radicals.find(radical => radical.radical === incoming.radical);
+  if (!existing) radicals.push({ ...incoming });
+  else {
+    existing.nameHanzi = incoming.nameHanzi;
+    existing.meaning = incoming.meaning;
+    existing.explanation = incoming.explanation;
+    existing.strokeCount = incoming.strokeCount;
+    existing.lessons = [...new Set([...existing.lessons, 4])];
+    existing.examples = [...incoming.examples, ...existing.examples.filter(example =>
+      !incoming.examples.some(bookExample => bookExample.hanzi === example.hanzi
+        && bookExample.pinyin === example.pinyin))];
+  }
+}
+// L6 definitions are additive: historical radical definitions remain canonical.
+for (const incoming of lesson6.bookRadicals) {
+  const existing = radicals.find(radical => radical.radical === incoming.radical);
+  if (!existing) radicals.push({ ...incoming });
+  else {
+    if (!existing.nameHanzi) existing.nameHanzi = incoming.nameHanzi;
+    if (!existing.meaning) existing.meaning = incoming.meaning;
+    if (!existing.explanation) existing.explanation = incoming.explanation;
+    if (existing.strokeCount === null) existing.strokeCount = incoming.strokeCount;
+    existing.lessons = [...new Set([...existing.lessons, 6])];
+    for (const example of incoming.examples) if (!existing.examples.some(e => e.hanzi === example.hanzi && e.lessons.includes(6))) existing.examples.push(example);
+  }
+}
 const corpus = {
-  ...baseline, version: lesson5.version, fingerprint: lesson5.fingerprint,
-  vocabulary, phrases, dialogues: [...baseline.dialogues, ...lesson4.dialogues, ...lesson5.dialogues], radicals,
+  ...reviewed, version: lesson6.version, fingerprint: [reviewed.fingerprint, lesson4.fingerprint, lesson5.fingerprint, lesson6.fingerprint].join(':'),
+  vocabulary, phrases, dialogues: [...reviewed.dialogues, ...lesson4.dialogues, ...lesson5.dialogues, ...lesson6.dialogues], radicals,
 };
 export default corpus;
-export { lesson4, lesson5 };
+export { lesson4, lesson5, lesson6 };
