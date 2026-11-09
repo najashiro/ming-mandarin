@@ -1,4 +1,5 @@
 export const arcadeGames = [
+  { id: 'direcciones', name: 'Una llamada, mil vueltas', description: 'Tu amigo se ha perdido. Guíalo en chino por seis laberintos, esquiva agujeros y encuentra su destino.', kind: 'directions', skill: 'Direcciones · Lección 06', cover: '/images/games/covers/directions.svg' },
   { id: 'reto-mixto', name: 'Reto Mixto', description: 'Relaciona imágenes, sonidos y palabras. Revisa tus errores al terminar.', kind: 'mixed', skill: 'Repaso de habilidades', cover: '/images/games/covers/reto-mixto.webp' },
   { id: 'vocabulario-mix', name: 'Vocabulario Mix', description: 'Recuerda una palabra antes de revelarla y decide si necesitas volver a practicarla.', kind: 'vocabulary', skill: 'Memoria y vocabulario', cover: '/images/games/covers/vocabulario-mix.webp' },
   { id: 'hora', name: '¿Qué hora es?', description: 'Lee el reloj y construye la hora en chino. Empieza sin cronómetro.', kind: 'time', skill: 'Práctica de horarios', cover: '/images/games/covers/que-hora-es.webp' },

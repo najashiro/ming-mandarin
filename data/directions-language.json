@@ -1,0 +1,258 @@
+{
+  "version": 1,
+  "origin": "ming_game_adaptation",
+  "entries": {
+    "北边": {
+      "hanzi": "北边",
+      "pinyin": "běibian",
+      "spanish": "norte",
+      "audioSrc": "/audio/directions/directions-bead8cf11a9c9634.mp3",
+      "audioOrigin": "generated"
+    },
+    "东边": {
+      "hanzi": "东边",
+      "pinyin": "dōngbian",
+      "spanish": "este",
+      "audioSrc": "/audio/directions/directions-3df3183cc4215e62.mp3",
+      "audioOrigin": "generated"
+    },
+    "南边": {
+      "hanzi": "南边",
+      "pinyin": "nánbian",
+      "spanish": "sur",
+      "audioSrc": "/audio/directions/directions-7ce86833de599242.mp3",
+      "audioOrigin": "generated"
+    },
+    "西边": {
+      "hanzi": "西边",
+      "pinyin": "xībian",
+      "spanish": "oeste",
+      "audioSrc": "/audio/directions/directions-aa3964776daa16e3.mp3",
+      "audioOrigin": "generated"
+    },
+    "前边": {
+      "hanzi": "前边",
+      "pinyin": "qiánbian",
+      "spanish": "delante",
+      "audioSrc": "/audio/hide-and-seek/hide-5d55ee6f9335daeb.mp3",
+      "audioOrigin": "reused"
+    },
+    "右边": {
+      "hanzi": "右边",
+      "pinyin": "yòubian",
+      "spanish": "derecha",
+      "audioSrc": "/audio/hide-and-seek/hide-f0206de00c95bbc3.mp3",
+      "audioOrigin": "reused"
+    },
+    "后边": {
+      "hanzi": "后边",
+      "pinyin": "hòubian",
+      "spanish": "detrás",
+      "audioSrc": "/audio/hide-and-seek/hide-5bdb0c20d333ea94.mp3",
+      "audioOrigin": "reused"
+    },
+    "左边": {
+      "hanzi": "左边",
+      "pinyin": "zuǒbian",
+      "spanish": "izquierda",
+      "audioSrc": "/audio/hide-and-seek/hide-6f50b9885ac8faa4.mp3",
+      "audioOrigin": "reused"
+    },
+    "图书馆": {
+      "hanzi": "图书馆",
+      "pinyin": "túshūguǎn",
+      "spanish": "biblioteca",
+      "audioSrc": "/audio/directions/directions-ba4b30e27494c728.mp3",
+      "audioOrigin": "generated"
+    },
+    "食堂": {
+      "hanzi": "食堂",
+      "pinyin": "shítáng",
+      "spanish": "comedor",
+      "audioSrc": "/audio/directions/directions-eb8f3ce2eeb4262a.mp3",
+      "audioOrigin": "generated"
+    },
+    "银行": {
+      "hanzi": "银行",
+      "pinyin": "yínháng",
+      "spanish": "banco",
+      "audioSrc": "/audio/directions/directions-f436d9ae66869b13.mp3",
+      "audioOrigin": "generated"
+    },
+    "大学": {
+      "hanzi": "大学",
+      "pinyin": "dàxué",
+      "spanish": "universidad",
+      "audioSrc": "/audio/mandarin/vocab-71dbaa5d0b11774e8432.mp3",
+      "audioOrigin": "reused"
+    },
+    "体育馆": {
+      "hanzi": "体育馆",
+      "pinyin": "tǐyùguǎn",
+      "spanish": "gimnasio",
+      "audioSrc": "/audio/directions/directions-20cbecc9b14590b3.mp3",
+      "audioOrigin": "generated"
+    },
+    "宿舍楼": {
+      "hanzi": "宿舍楼",
+      "pinyin": "sùshèlóu",
+      "spanish": "residencia",
+      "audioSrc": "/audio/directions/directions-5dfbe4309978bac0.mp3",
+      "audioOrigin": "generated"
+    },
+    "教学楼": {
+      "hanzi": "教学楼",
+      "pinyin": "jiàoxuélóu",
+      "spanish": "edificio de aulas",
+      "audioSrc": "/audio/directions/directions-6fc941b1c2e73e95.mp3",
+      "audioOrigin": "generated"
+    },
+    "校门": {
+      "hanzi": "校门",
+      "pinyin": "xiàomén",
+      "spanish": "entrada del campus",
+      "audioSrc": "/audio/directions/directions-b6deced6026bf93c.mp3",
+      "audioOrigin": "generated"
+    },
+    "超市": {
+      "hanzi": "超市",
+      "pinyin": "chāoshì",
+      "spanish": "supermercado",
+      "audioSrc": "/audio/directions/directions-cb580918c1131e8c.mp3",
+      "audioOrigin": "generated"
+    },
+    "饭馆": {
+      "hanzi": "饭馆",
+      "pinyin": "fànguǎn",
+      "spanish": "restaurante",
+      "audioSrc": "/audio/directions/directions-ac2fd54555348e38.mp3",
+      "audioOrigin": "generated"
+    },
+    "地图": {
+      "hanzi": "地图",
+      "pinyin": "dìtú",
+      "spanish": "mapa",
+      "audioSrc": "/audio/mandarin/vocab-ac038bd53a63f5bdacc8.mp3",
+      "audioOrigin": "reused"
+    },
+    "北": {
+      "hanzi": "北",
+      "pinyin": "běi",
+      "spanish": "norte",
+      "audioSrc": "/audio/mandarin/l2-h-48c1462231.mp3",
+      "audioOrigin": "reused"
+    },
+    "林娜": {
+      "hanzi": "林娜",
+      "pinyin": "Lín Nà",
+      "spanish": "Lin Na",
+      "audioSrc": "/audio/mandarin/l1-v-ee48404aa1.mp3",
+      "audioOrigin": "reused"
+    },
+    "大为": {
+      "hanzi": "大为",
+      "pinyin": "Dàwéi",
+      "spanish": "Dawei",
+      "audioSrc": "/audio/mandarin/l1-v-9bacce4cba.mp3",
+      "audioOrigin": "reused"
+    },
+    "好。": {
+      "hanzi": "好。",
+      "pinyin": "Hǎo.",
+      "spanish": "Bien.",
+      "audioSrc": "/audio/mandarin/l1-v-hao.mp3",
+      "audioOrigin": "reused"
+    },
+    "等一下，你说什么？": {
+      "hanzi": "等一下，你说什么？",
+      "pinyin": "Děng yíxià, nǐ shuō shénme?",
+      "spanish": "Espera un momento, ¿qué has dicho?",
+      "audioSrc": "/audio/directions/directions-3a21371d5d00e703.mp3",
+      "audioOrigin": "generated"
+    },
+    "等一下！": {
+      "hanzi": "等一下！",
+      "pinyin": "Děng yíxià!",
+      "spanish": "¡Espera un momento!",
+      "audioSrc": "/audio/directions/directions-ebc65afd396c5232.mp3",
+      "audioOrigin": "generated"
+    },
+    "我在这儿。": {
+      "hanzi": "我在这儿。",
+      "pinyin": "Wǒ zài zhèr.",
+      "spanish": "Estoy aquí.",
+      "audioSrc": "/audio/directions/directions-4d6be7ce7282b5da.mp3",
+      "audioOrigin": "generated"
+    },
+    "谢谢你。": {
+      "hanzi": "谢谢你。",
+      "pinyin": "Xièxie nǐ.",
+      "spanish": "Gracias.",
+      "audioSrc": "/audio/directions/directions-4a5a6e531c94c0ce.mp3",
+      "audioOrigin": "generated"
+    },
+    "好，谢谢你。": {
+      "hanzi": "好，谢谢你。",
+      "pinyin": "Hǎo, xièxie nǐ.",
+      "spanish": "Bien, gracias.",
+      "audioSrc": "/audio/directions/directions-c8d5b43b0b60fb46.mp3",
+      "audioOrigin": "generated"
+    },
+    "谢谢你，再见！": {
+      "hanzi": "谢谢你，再见！",
+      "pinyin": "Xièxie nǐ, zàijiàn!",
+      "spanish": "¡Gracias, adiós!",
+      "audioSrc": "/audio/directions/directions-8b883dffce10fb3c.mp3",
+      "audioOrigin": "generated"
+    },
+    "图书馆在哪儿？": {
+      "hanzi": "图书馆在哪儿？",
+      "pinyin": "Túshūguǎn zài nǎr?",
+      "spanish": "¿Dónde está la biblioteca?",
+      "audioSrc": "/audio/directions/directions-3a59d2149f8b3751.mp3",
+      "audioOrigin": "generated"
+    },
+    "你好，请问图书馆在哪儿？": {
+      "hanzi": "你好，请问图书馆在哪儿？",
+      "pinyin": "Nǐ hǎo, qǐngwèn túshūguǎn zài nǎr?",
+      "spanish": "Hola, disculpa, ¿dónde está la biblioteca?",
+      "audioSrc": "/audio/directions/directions-ce068a29f02e266b.mp3",
+      "audioOrigin": "generated"
+    },
+    "你好，请问食堂在哪儿？": {
+      "hanzi": "你好，请问食堂在哪儿？",
+      "pinyin": "Nǐ hǎo, qǐngwèn shítáng zài nǎr?",
+      "spanish": "Hola, disculpa, ¿dónde está el comedor?",
+      "audioSrc": "/audio/directions/directions-540e83a599264ad4.mp3",
+      "audioOrigin": "generated"
+    },
+    "你好，请问银行在哪儿？": {
+      "hanzi": "你好，请问银行在哪儿？",
+      "pinyin": "Nǐ hǎo, qǐngwèn yínháng zài nǎr?",
+      "spanish": "Hola, disculpa, ¿dónde está el banco?",
+      "audioSrc": "/audio/directions/directions-f7045972f69c0b56.mp3",
+      "audioOrigin": "generated"
+    },
+    "你好，请问大学在哪儿？": {
+      "hanzi": "你好，请问大学在哪儿？",
+      "pinyin": "Nǐ hǎo, qǐngwèn dàxué zài nǎr?",
+      "spanish": "Hola, disculpa, ¿dónde está la universidad?",
+      "audioSrc": "/audio/directions/directions-6fd7b258b340c45f.mp3",
+      "audioOrigin": "generated"
+    },
+    "你好，请问体育馆在哪儿？": {
+      "hanzi": "你好，请问体育馆在哪儿？",
+      "pinyin": "Nǐ hǎo, qǐngwèn tǐyùguǎn zài nǎr?",
+      "spanish": "Hola, disculpa, ¿dónde está el gimnasio?",
+      "audioSrc": "/audio/directions/directions-383b495bcbbb03ae.mp3",
+      "audioOrigin": "generated"
+    },
+    "你好，请问宿舍楼在哪儿？": {
+      "hanzi": "你好，请问宿舍楼在哪儿？",
+      "pinyin": "Nǐ hǎo, qǐngwèn sùshèlóu zài nǎr?",
+      "spanish": "Hola, disculpa, ¿dónde está la residencia?",
+      "audioSrc": "/audio/directions/directions-d86d7e13ccc27fbb.mp3",
+      "audioOrigin": "generated"
+    }
+  }
+}

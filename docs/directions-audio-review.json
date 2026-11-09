@@ -1,0 +1,189 @@
+{
+  "method": "automatic_speech_recognition",
+  "independentHumanReview": false,
+  "results": [
+    {
+      "file": "directions-bead8cf11a9c9634.mp3",
+      "sha256": "bdd05735d4d4121d35d38e0182705f8b7a53ee2169cfd4b89b1de1585c20b18d",
+      "expected": "北边",
+      "heard": "北邊",
+      "matches": true
+    },
+    {
+      "file": "directions-3df3183cc4215e62.mp3",
+      "sha256": "4a3fd81da5d9788737541cefccaacb18f0d7387ab565bbd8fd05960c8fcf3c1f",
+      "expected": "东边",
+      "heard": "東邊",
+      "matches": true,
+      "normalizationNote": "Equivalentes tradicionales: 東→东, 邊→边."
+    },
+    {
+      "file": "directions-7ce86833de599242.mp3",
+      "sha256": "41f213cb8ff91df7b652198043a887b723e354c370f0ed5a9e42c25c44526c49",
+      "expected": "南边",
+      "heard": "南邊",
+      "matches": true
+    },
+    {
+      "file": "directions-aa3964776daa16e3.mp3",
+      "sha256": "391baa3a6296a6bc827e1ee00680b1c32f20c3641e917028026b2971fcdaff4a",
+      "expected": "西边",
+      "heard": "西邊",
+      "matches": true
+    },
+    {
+      "file": "directions-ba4b30e27494c728.mp3",
+      "sha256": "0c29595caa88e22a159282992660a4f0212237af43e79446e154dbff3fe456bb",
+      "expected": "图书馆",
+      "heard": "圖書館",
+      "matches": true
+    },
+    {
+      "file": "directions-eb8f3ce2eeb4262a.mp3",
+      "sha256": "120ba022a6aa24acf4931021bc446219e7d40424efe70b06963aeb8d5e4e9bba",
+      "expected": "食堂",
+      "heard": "食堂",
+      "matches": true
+    },
+    {
+      "file": "directions-f436d9ae66869b13.mp3",
+      "sha256": "a8ebd3b64da0b9dd0b126db9967c5a93edd6ce43cecaa0ca5354a9e8b2cd5b8b",
+      "expected": "银行",
+      "heard": "銀行",
+      "matches": true
+    },
+    {
+      "file": "directions-20cbecc9b14590b3.mp3",
+      "sha256": "d79c37b2900b3681ed908e3c70cf3052db079ecd60f625898a270b7fab9302c5",
+      "expected": "体育馆",
+      "heard": "體育館",
+      "matches": true
+    },
+    {
+      "file": "directions-5dfbe4309978bac0.mp3",
+      "sha256": "e8505992491f55b1f36f3d5d85b70c127d4440ce75e97c96f2107481d69d3660",
+      "expected": "宿舍楼",
+      "heard": "宿舍樓",
+      "matches": true
+    },
+    {
+      "file": "directions-6fc941b1c2e73e95.mp3",
+      "sha256": "49c886cba9532ed55e61649956636ecee009d2840b324dde0793d3130c48a675",
+      "expected": "教学楼",
+      "heard": "教學樓",
+      "matches": true
+    },
+    {
+      "file": "directions-b6deced6026bf93c.mp3",
+      "sha256": "0c25dd3e2a9d18624a186431f4474e37050f0eac3415c043d7c1af865ff6d681",
+      "expected": "校门",
+      "heard": "校門",
+      "matches": true
+    },
+    {
+      "file": "directions-cb580918c1131e8c.mp3",
+      "sha256": "9ad9ae0e9f80a47d99770deb2e585e6307ab5fac9aaba843df54c6b9a5687201",
+      "expected": "超市",
+      "heard": "超市",
+      "matches": true
+    },
+    {
+      "file": "directions-ac2fd54555348e38.mp3",
+      "sha256": "01f014f0fed73b1235f963b8a1d45931107f826737f120bad464669d04442d5e",
+      "expected": "饭馆",
+      "heard": "飯館",
+      "matches": true
+    },
+    {
+      "file": "directions-3a21371d5d00e703.mp3",
+      "sha256": "27f121ad31ce25f6e45c28d719014d93453150928c5a38b3286b074fd608a305",
+      "expected": "等一下，你说什么？",
+      "heard": "等一下,你说什么?",
+      "matches": true
+    },
+    {
+      "file": "directions-ebc65afd396c5232.mp3",
+      "sha256": "a2c4e1a4ff1de7f232897b7196b03599ea2a9e6666de6524cded502d7958fb93",
+      "expected": "等一下！",
+      "heard": "等一下",
+      "matches": true
+    },
+    {
+      "file": "directions-4d6be7ce7282b5da.mp3",
+      "sha256": "ab6861f5dede18cf6815484e5cf748e161334f6341239016cfa269280119e3c1",
+      "expected": "我在这儿。",
+      "heard": "我在這兒。",
+      "matches": true
+    },
+    {
+      "file": "directions-4a5a6e531c94c0ce.mp3",
+      "sha256": "bda7567557738ee0103b80c41b92468f8c99c7386f6c60ea5a20285afa371fea",
+      "expected": "谢谢你。",
+      "heard": "謝謝你",
+      "matches": true
+    },
+    {
+      "file": "directions-c8d5b43b0b60fb46.mp3",
+      "sha256": "9b61239140c8c8f201cf37529458d7a6bfec41317218cebb167d058bed3954c2",
+      "expected": "好，谢谢你。",
+      "heard": "好,謝謝你。",
+      "matches": true
+    },
+    {
+      "file": "directions-8b883dffce10fb3c.mp3",
+      "sha256": "6d75ed7b0fd67668414d7455a7fd91f5c0a960002265aa5e07342b14c03d2e67",
+      "expected": "谢谢你，再见！",
+      "heard": "谢谢你,再见。",
+      "matches": true
+    },
+    {
+      "file": "directions-3a59d2149f8b3751.mp3",
+      "sha256": "27cf3368a4c741acef014bc86fc08c7d678ad62aea9070c90d7930c9835e7c98",
+      "expected": "图书馆在哪儿？",
+      "heard": "图书馆在哪儿?",
+      "matches": true
+    },
+    {
+      "file": "directions-ce068a29f02e266b.mp3",
+      "sha256": "5daf410177f83955a1d16c5d41f98292b5ce4d52a50da69904484468ec38fbb3",
+      "expected": "你好，请问图书馆在哪儿？",
+      "heard": "你好,请问图书馆在哪儿?",
+      "matches": true
+    },
+    {
+      "file": "directions-540e83a599264ad4.mp3",
+      "sha256": "754cb8d55c2068f0904e595e8096d4ad6b5e2c91071d5b87fe3c48397f475f9b",
+      "expected": "你好，请问食堂在哪儿？",
+      "heard": "你好,请问食堂在哪儿?",
+      "matches": true
+    },
+    {
+      "file": "directions-f7045972f69c0b56.mp3",
+      "sha256": "eeb161b88300743b817b80e97f530a641e2561da6449cbc8acf1e34d72063195",
+      "expected": "你好，请问银行在哪儿？",
+      "heard": "你好,请问银行在哪儿?",
+      "matches": true
+    },
+    {
+      "file": "directions-6fd7b258b340c45f.mp3",
+      "sha256": "13bae9361c30f6ca2a0131d6f60a51a9981de2871d98c9fcf6403684ea7a1b46",
+      "expected": "你好，请问大学在哪儿？",
+      "heard": "你好,请问大学在哪儿?",
+      "matches": true
+    },
+    {
+      "file": "directions-383b495bcbbb03ae.mp3",
+      "sha256": "e3b0a07dee6bd3d7dd3e88c113273ef504b02dea7fc25d69ee20f274f7a5d51e",
+      "expected": "你好，请问体育馆在哪儿？",
+      "heard": "你好,请问体育馆在哪儿?",
+      "matches": true
+    },
+    {
+      "file": "directions-d86d7e13ccc27fbb.mp3",
+      "sha256": "b7e1240fc255aaff80d82ea9601c866242c5e54e9d5a94260074dd59027bb573",
+      "expected": "你好，请问宿舍楼在哪儿？",
+      "heard": "你好,请问宿舍楼在哪儿?",
+      "matches": true
+    }
+  ]
+}

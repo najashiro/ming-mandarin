@@ -1,0 +1,215 @@
+{
+  "version": 1,
+  "origin": "ming_game_adaptation",
+  "voiceDisclosure": "Voz generada por IA",
+  "clips": [
+    {
+      "id": "directions-bead8cf11a9c9634",
+      "file": "directions-bead8cf11a9c9634.mp3",
+      "input": "北边",
+      "expectedPinyin": "běibian",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: běibian. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-3df3183cc4215e62",
+      "file": "directions-3df3183cc4215e62.mp3",
+      "input": "东边",
+      "expectedPinyin": "dōngbian",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: dōngbian. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-7ce86833de599242",
+      "file": "directions-7ce86833de599242.mp3",
+      "input": "南边",
+      "expectedPinyin": "nánbian",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: nánbian. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-aa3964776daa16e3",
+      "file": "directions-aa3964776daa16e3.mp3",
+      "input": "西边",
+      "expectedPinyin": "xībian",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: xībian. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-ba4b30e27494c728",
+      "file": "directions-ba4b30e27494c728.mp3",
+      "input": "图书馆",
+      "expectedPinyin": "túshūguǎn",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: túshūguǎn. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-eb8f3ce2eeb4262a",
+      "file": "directions-eb8f3ce2eeb4262a.mp3",
+      "input": "食堂",
+      "expectedPinyin": "shítáng",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: shítáng. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-f436d9ae66869b13",
+      "file": "directions-f436d9ae66869b13.mp3",
+      "input": "银行",
+      "expectedPinyin": "yínháng",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: yínháng. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-20cbecc9b14590b3",
+      "file": "directions-20cbecc9b14590b3.mp3",
+      "input": "体育馆",
+      "expectedPinyin": "tǐyùguǎn",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: tǐyùguǎn. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-5dfbe4309978bac0",
+      "file": "directions-5dfbe4309978bac0.mp3",
+      "input": "宿舍楼",
+      "expectedPinyin": "sùshèlóu",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: sùshèlóu. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-6fc941b1c2e73e95",
+      "file": "directions-6fc941b1c2e73e95.mp3",
+      "input": "教学楼",
+      "expectedPinyin": "jiàoxuélóu",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: jiàoxuélóu. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-b6deced6026bf93c",
+      "file": "directions-b6deced6026bf93c.mp3",
+      "input": "校门",
+      "expectedPinyin": "xiàomén",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: xiàomén. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-cb580918c1131e8c",
+      "file": "directions-cb580918c1131e8c.mp3",
+      "input": "超市",
+      "expectedPinyin": "chāoshì",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: chāoshì. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-ac2fd54555348e38",
+      "file": "directions-ac2fd54555348e38.mp3",
+      "input": "饭馆",
+      "expectedPinyin": "fànguǎn",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: fànguǎn. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-3a21371d5d00e703",
+      "file": "directions-3a21371d5d00e703.mp3",
+      "input": "等一下，你说什么？",
+      "expectedPinyin": "Děng yíxià, nǐ shuō shénme?",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: Děng yíxià, nǐ shuō shénme?. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-ebc65afd396c5232",
+      "file": "directions-ebc65afd396c5232.mp3",
+      "input": "等一下！",
+      "expectedPinyin": "Děng yíxià!",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: Děng yíxià!. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-4d6be7ce7282b5da",
+      "file": "directions-4d6be7ce7282b5da.mp3",
+      "input": "我在这儿。",
+      "expectedPinyin": "Wǒ zài zhèr.",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: Wǒ zài zhèr.. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-4a5a6e531c94c0ce",
+      "file": "directions-4a5a6e531c94c0ce.mp3",
+      "input": "谢谢你。",
+      "expectedPinyin": "Xièxie nǐ.",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: Xièxie nǐ.. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-c8d5b43b0b60fb46",
+      "file": "directions-c8d5b43b0b60fb46.mp3",
+      "input": "好，谢谢你。",
+      "expectedPinyin": "Hǎo, xièxie nǐ.",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: Hǎo, xièxie nǐ.. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-8b883dffce10fb3c",
+      "file": "directions-8b883dffce10fb3c.mp3",
+      "input": "谢谢你，再见！",
+      "expectedPinyin": "Xièxie nǐ, zàijiàn!",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: Xièxie nǐ, zàijiàn!. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-3a59d2149f8b3751",
+      "file": "directions-3a59d2149f8b3751.mp3",
+      "input": "图书馆在哪儿？",
+      "expectedPinyin": "Túshūguǎn zài nǎr?",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: Túshūguǎn zài nǎr?. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-ce068a29f02e266b",
+      "file": "directions-ce068a29f02e266b.mp3",
+      "input": "你好，请问图书馆在哪儿？",
+      "expectedPinyin": "Nǐ hǎo, qǐngwèn túshūguǎn zài nǎr?",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: Nǐ hǎo, qǐngwèn túshūguǎn zài nǎr?. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-540e83a599264ad4",
+      "file": "directions-540e83a599264ad4.mp3",
+      "input": "你好，请问食堂在哪儿？",
+      "expectedPinyin": "Nǐ hǎo, qǐngwèn shítáng zài nǎr?",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: Nǐ hǎo, qǐngwèn shítáng zài nǎr?. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-f7045972f69c0b56",
+      "file": "directions-f7045972f69c0b56.mp3",
+      "input": "你好，请问银行在哪儿？",
+      "expectedPinyin": "Nǐ hǎo, qǐngwèn yínháng zài nǎr?",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: Nǐ hǎo, qǐngwèn yínháng zài nǎr?. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-6fd7b258b340c45f",
+      "file": "directions-6fd7b258b340c45f.mp3",
+      "input": "你好，请问大学在哪儿？",
+      "expectedPinyin": "Nǐ hǎo, qǐngwèn dàxué zài nǎr?",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: Nǐ hǎo, qǐngwèn dàxué zài nǎr?. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-383b495bcbbb03ae",
+      "file": "directions-383b495bcbbb03ae.mp3",
+      "input": "你好，请问体育馆在哪儿？",
+      "expectedPinyin": "Nǐ hǎo, qǐngwèn tǐyùguǎn zài nǎr?",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: Nǐ hǎo, qǐngwèn tǐyùguǎn zài nǎr?. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    },
+    {
+      "id": "directions-d86d7e13ccc27fbb",
+      "file": "directions-d86d7e13ccc27fbb.mp3",
+      "input": "你好，请问宿舍楼在哪儿？",
+      "expectedPinyin": "Nǐ hǎo, qǐngwèn sùshèlóu zài nǎr?",
+      "lessonId": 6,
+      "instructions": "Pronuncia una sola vez. Lectura de referencia; no la leas como letras: Nǐ hǎo, qǐngwèn sùshèlóu zài nǎr?. Respeta los tonos y las sílabas neutras. En los locativos 边 se pronuncia bian neutro. En 一下, yíxià. Voz amable y natural de una llamada, clara para principiantes."
+    }
+  ]
+}
