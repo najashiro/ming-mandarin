@@ -1,0 +1,227 @@
+{
+  "version": 1,
+  "origin": "ming_game_adaptation",
+  "voiceDisclosure": "Voz generada por IA",
+  "clips": [
+    {
+      "id": "hide-7db3b6c3fcd2a137",
+      "file": "hide-7db3b6c3fcd2a137.mp3",
+      "input": "上边",
+      "expectedPinyin": "shàngbian",
+      "kind": "word",
+      "vocabularyId": "v-上边",
+      "lessonId": 6,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: shàngbian La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+    },
+    {
+      "id": "hide-826e03eb2e520736",
+      "file": "hide-826e03eb2e520736.mp3",
+      "input": "它在桌子上边。",
+      "expectedPinyin": "Tā zài zhuōzi shàngbian.",
+      "kind": "positive",
+      "vocabularyId": "v-上边",
+      "lessonId": 6,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā zài zhuōzi shàngbian. La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+    },
+    {
+      "id": "hide-28206f486202d4d9",
+      "file": "hide-28206f486202d4d9.mp3",
+      "input": "它不在桌子上边。",
+      "expectedPinyin": "Tā bú zài zhuōzi shàngbian.",
+      "kind": "negative",
+      "vocabularyId": "v-上边",
+      "lessonId": 6,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā bú zài zhuōzi shàngbian. La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+    },
+    {
+      "id": "hide-22b556e40a906056",
+      "file": "hide-22b556e40a906056.mp3",
+      "input": "下边",
+      "expectedPinyin": "xiàbian",
+      "kind": "word",
+      "vocabularyId": "v-下边",
+      "lessonId": 6,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: xiàbian La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+    },
+    {
+      "id": "hide-b1a5b214558fff5d",
+      "file": "hide-b1a5b214558fff5d.mp3",
+      "input": "它在桌子下边。",
+      "expectedPinyin": "Tā zài zhuōzi xiàbian.",
+      "kind": "positive",
+      "vocabularyId": "v-下边",
+      "lessonId": 6,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā zài zhuōzi xiàbian. La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+    },
+    {
+      "id": "hide-99c4c535d3c51190",
+      "file": "hide-99c4c535d3c51190.mp3",
+      "input": "它不在桌子下边。",
+      "expectedPinyin": "Tā bú zài zhuōzi xiàbian.",
+      "kind": "negative",
+      "vocabularyId": "v-下边",
+      "lessonId": 6,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā bú zài zhuōzi xiàbian. La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+    },
+    {
+      "id": "hide-6f50b9885ac8faa4",
+      "file": "hide-6f50b9885ac8faa4.mp3",
+      "input": "左边",
+      "expectedPinyin": "zuǒbian",
+      "kind": "word",
+      "vocabularyId": "v-左边",
+      "lessonId": 6,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: zuǒbian La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+    },
+    {
+      "id": "hide-a32bc6333a0cca19",
+      "file": "hide-a32bc6333a0cca19.mp3",
+      "input": "它在桌子左边。",
+      "expectedPinyin": "Tā zài zhuōzi zuǒbian.",
+      "kind": "positive",
+      "vocabularyId": "v-左边",
+      "lessonId": 6,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā zài zhuōzi zuǒbian. La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+    },
+    {
+      "id": "hide-89871d8a9be62c8e",
+      "file": "hide-89871d8a9be62c8e.mp3",
+      "input": "它不在桌子左边。",
+      "expectedPinyin": "Tā bú zài zhuōzi zuǒbian.",
+      "kind": "negative",
+      "vocabularyId": "v-左边",
+      "lessonId": 6,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā bú zài zhuōzi zuǒbian. La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+    },
+    {
+      "id": "hide-f0206de00c95bbc3",
+      "file": "hide-f0206de00c95bbc3.mp3",
+      "input": "右边",
+      "expectedPinyin": "yòubian",
+      "kind": "word",
+      "vocabularyId": "v-右边",
+      "lessonId": 6,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: yòubian La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+    },
+    {
+      "id": "hide-e8a9dec04f705cec",
+      "file": "hide-e8a9dec04f705cec.mp3",
+      "input": "它在桌子右边。",
+      "expectedPinyin": "Tā zài zhuōzi yòubian.",
+      "kind": "positive",
+      "vocabularyId": "v-右边",
+      "lessonId": 6,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā zài zhuōzi yòubian. La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+    },
+    {
+      "id": "hide-4ec60fb9dba1ffcf",
+      "file": "hide-4ec60fb9dba1ffcf.mp3",
+      "input": "它不在桌子右边。",
+      "expectedPinyin": "Tā bú zài zhuōzi yòubian.",
+      "kind": "negative",
+      "vocabularyId": "v-右边",
+      "lessonId": 6,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā bú zài zhuōzi yòubian. La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+    },
+    {
+      "id": "hide-5bdb0c20d333ea94",
+      "file": "hide-5bdb0c20d333ea94.mp3",
+      "input": "后边",
+      "expectedPinyin": "hòubian",
+      "kind": "word",
+      "vocabularyId": "v-后边",
+      "lessonId": 6,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: hòubian La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+    },
+    {
+      "id": "hide-a924ac6ef0fb8c74",
+      "file": "hide-a924ac6ef0fb8c74.mp3",
+      "input": "它在桌子后边。",
+      "expectedPinyin": "Tā zài zhuōzi hòubian.",
+      "kind": "positive",
+      "vocabularyId": "v-后边",
+      "lessonId": 6,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā zài zhuōzi hòubian. La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+    },
+    {
+      "id": "hide-8e5012598b5e560a",
+      "file": "hide-8e5012598b5e560a.mp3",
+      "input": "它不在桌子后边。",
+      "expectedPinyin": "Tā bú zài zhuōzi hòubian.",
+      "kind": "negative",
+      "vocabularyId": "v-后边",
+      "lessonId": 6,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā bú zài zhuōzi hòubian. La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+    },
+    {
+      "id": "hide-5d55ee6f9335daeb",
+      "file": "hide-5d55ee6f9335daeb.mp3",
+      "input": "前边",
+      "expectedPinyin": "qiánbian",
+      "kind": "word",
+      "vocabularyId": "v-前边",
+      "lessonId": 6,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: qiánbian La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+    },
+    {
+      "id": "hide-14c121efdf37bcd4",
+      "file": "hide-14c121efdf37bcd4.mp3",
+      "input": "它在桌子前边。",
+      "expectedPinyin": "Tā zài zhuōzi qiánbian.",
+      "kind": "positive",
+      "vocabularyId": "v-前边",
+      "lessonId": 6,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā zài zhuōzi qiánbian. La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+    },
+    {
+      "id": "hide-956228ecdf2287d6",
+      "file": "hide-956228ecdf2287d6.mp3",
+      "input": "它不在桌子前边。",
+      "expectedPinyin": "Tā bú zài zhuōzi qiánbian.",
+      "kind": "negative",
+      "vocabularyId": "v-前边",
+      "lessonId": 6,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā bú zài zhuōzi qiánbian. La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+    },
+    {
+      "id": "hide-45dddf5f22778db4",
+      "file": "hide-45dddf5f22778db4.mp3",
+      "input": "它在哪儿？",
+      "expectedPinyin": "Tā zài nǎr?",
+      "kind": "question",
+      "vocabularyId": "v-哪儿",
+      "lessonId": 6,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tā zài nǎr? La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+    },
+    {
+      "id": "hide-eba5892d8f079763",
+      "file": "hide-eba5892d8f079763.mp3",
+      "input": "桌子",
+      "expectedPinyin": "zhuōzi",
+      "kind": "object",
+      "vocabularyId": "l6-example-table",
+      "lessonId": 6,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: zhuōzi La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+    },
+    {
+      "id": "hide-f25d4c96820ae845",
+      "file": "hide-f25d4c96820ae845.mp3",
+      "input": "在",
+      "expectedPinyin": "zài",
+      "kind": "grammar",
+      "vocabularyId": "g-l6-zai",
+      "lessonId": 6,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: zài La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+    },
+    {
+      "id": "hide-ca407ace6951e4a4",
+      "file": "hide-ca407ace6951e4a4.mp3",
+      "input": "不在",
+      "expectedPinyin": "bú zài",
+      "kind": "grammar",
+      "vocabularyId": "g-l6-zai",
+      "lessonId": 6,
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: bú zài La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+    }
+  ]
+}

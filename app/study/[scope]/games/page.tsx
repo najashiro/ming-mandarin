@@ -1,3 +1,4 @@
+import { hasHideGame } from '@/lib/hide-and-seek';
 import { notFound } from 'next/navigation';
 import { getCurrentUser } from '@/app/auth';
 import { Arcade } from '@/components/Arcade';
@@ -21,6 +22,6 @@ export default async function ScopeGamesPage({params,searchParams}:{params:Promi
   return <SiteShell><main>
     <LessonHeader eyebrow={`${data.definition.shortLabel} · 游戏`} title="Juegos Míng" description="Convierte lo aprendido en mandarín activo."/>
     <CurriculumNav scope={rawScope} section="games"/>
-    <Arcade scope={rawScope} playerName={user?.displayName??'Estudiante'} canCompete={Boolean(user)} initialGame={query.game==='reto-mixto'||query.game==='hora'?query.game:undefined} exercises={data.exercises} hanziCharacters={characters} listeningEntries={getListeningEntriesForScope(rawScope)}/>
+    <Arcade scope={rawScope} playerName={user?.displayName??'Estudiante'} canCompete={Boolean(user)} initialGame={query.game==='reto-mixto'||query.game==='hora'||(query.game==='escondites'&&hasHideGame(rawScope))?query.game:undefined} exercises={data.exercises} hanziCharacters={characters} listeningEntries={getListeningEntriesForScope(rawScope)}/>
   </main></SiteShell>;
 }

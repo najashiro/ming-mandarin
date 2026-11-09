@@ -9,8 +9,9 @@ import { hanziGlyphHref, resolveHanziGlyph } from '@/lib/hanzi/navigation';
 import baseline from '../fixtures/reto-mixto-baseline.json';
 
 describe('cinco experiencias curriculares', () => {
-  it('incorpora direcciones y conserva los juegos anteriores', () => {
-    expect(arcadeGames.map(game => game.id)).toEqual(['direcciones','reto-mixto','vocabulario-mix','hora','conversacion','hanzi-lab','cumpleanos']);
+  it('conserva los juegos históricos e incorpora direcciones y escondites', () => {
+    expect(arcadeGames.map(game => game.id)).toEqual(expect.arrayContaining(['direcciones','reto-mixto','vocabulario-mix','hora','conversacion','hanzi-lab','cumpleanos','escondites']));
+    expect(new Set(arcadeGames.map(game => game.id)).size).toBe(arcadeGames.length);
   });
   it('conserva el contenido del motor, datos y visuales de Reto Mixto', () => {
     for (const [path, hash] of Object.entries(baseline).filter(([path]) => !['components/RetoMixto.tsx', 'data/reto-mixto.ts'].includes(path))) expect(createHash('sha256').update(readFileSync(path, 'utf8').replace(/\r\n/g, '\n')).digest('hex'),path).toBe(hash);

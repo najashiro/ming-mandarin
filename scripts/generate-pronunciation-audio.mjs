@@ -8,6 +8,7 @@ const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectDirectory = path.resolve(scriptDirectory, '..');
 const manifestDefinitions = [
   { path: path.join(projectDirectory, 'data', 'directions-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'directions'), scope: 'directions' },
+  { path: path.join(projectDirectory, 'data', 'hide-and-seek-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'hide-and-seek'), scope: 'hide-and-seek' },
   { path: path.join(projectDirectory, 'data', 'game-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin'), scope: 'games' },
   { path: path.join(projectDirectory, 'data', 'lesson5-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin'), scope: 'lesson5' },
   { path: path.join(projectDirectory, 'data', 'lesson4-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin'), scope: 'lesson4' },
@@ -113,6 +114,6 @@ while (cursor < selectedClips.length) {
   if (generated % 25 === 0) console.log(`Generados: ${generated}/${selectedClips.length}`);
 }
 }
-await Promise.all(Array.from({ length: scope === 'directions' || scope === 'games' || scope === 'time' || scope === 'lesson4' || scope === 'lesson5' ? 3 : 1 }, () => generateNext()));
+await Promise.all(Array.from({ length: scope === 'hide-and-seek' || scope === 'directions' || scope === 'games' || scope === 'time' || scope === 'lesson4' || scope === 'lesson5' ? 3 : 1 }, () => generateNext()));
 
 console.log(`Listo: ${generated} clips nuevos; ${selectedClips.length - generated} ya existentes.`);
