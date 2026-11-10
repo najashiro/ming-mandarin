@@ -1,3 +1,5 @@
+import referenceNames from '@/data/hanzi-reference-stroke-names.json';
+
 export type VerifiedStrokeName = { hanzi: string; pinyin: string };
 
 // The compact sequences come from cnchar-order 3.2.6 (MIT). They are kept as
@@ -152,7 +154,7 @@ const catalog: Record<string, VerifiedStrokeName> = {
 };
 
 export function strokeNamesForCharacter(character: string, strokeCount: number): Array<VerifiedStrokeName | null> {
-  const sequence = sequences[character];
+  const sequence = sequences[character] ?? (referenceNames.sequences as Record<string, string>)[character];
   if (!sequence || [...sequence].length !== strokeCount) return Array.from({ length: strokeCount }, () => null);
   return [...sequence].map((code) => catalog[code] ?? null);
 }

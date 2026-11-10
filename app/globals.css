@@ -394,6 +394,9 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .hanzi-unit-nav a.selected { border-color: var(--jade); color: white; background: var(--jade); }
 .hanzi-unit-nav a.selected small { color: #d7eee7; }
 .hanzi-picker-grid { margin-top: 15px; display: grid; grid-template-columns: repeat(12,minmax(48px,1fr)); gap: 7px; }
+.hanzi-reference-picker { margin-top: 24px; border-top: 1px solid var(--line); padding-top: 16px; }
+.hanzi-reference-picker summary { min-height: 44px; padding: 10px 0; color: var(--jade); font-weight: 700; cursor: pointer; }
+.hanzi-reference-picker > p { color: var(--muted); font-size: 13px; line-height: 1.5; }
 .hanzi-picker-grid button { min-height: 82px; padding: 7px 4px; grid-template-rows: minmax(28px,auto) auto minmax(22px,auto); align-content: center; line-height: 1.12; }
 .hanzi-picker-grid button small { color: var(--jade); font-size: 15px; }
 .hanzi-picker-grid button.state-new { background: var(--hanzi-new-bg); }

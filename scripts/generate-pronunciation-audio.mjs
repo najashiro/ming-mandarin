@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectDirectory = path.resolve(scriptDirectory, '..');
 const manifestDefinitions = [
+  { path: path.join(projectDirectory, 'data', 'hanzi-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin'), scope: 'hanzi' },
   { path: path.join(projectDirectory, 'data', 'directions-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'directions'), scope: 'directions' },
   { path: path.join(projectDirectory, 'data', 'hide-and-seek-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'hide-and-seek'), scope: 'hide-and-seek' },
   { path: path.join(projectDirectory, 'data', 'game-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin'), scope: 'games' },
@@ -114,6 +115,6 @@ while (cursor < selectedClips.length) {
   if (generated % 25 === 0) console.log(`Generados: ${generated}/${selectedClips.length}`);
 }
 }
-await Promise.all(Array.from({ length: scope === 'hide-and-seek' || scope === 'directions' || scope === 'games' || scope === 'time' || scope === 'lesson4' || scope === 'lesson5' ? 3 : 1 }, () => generateNext()));
+await Promise.all(Array.from({ length: scope === 'hanzi' || scope === 'hide-and-seek' || scope === 'directions' || scope === 'games' || scope === 'time' || scope === 'lesson4' || scope === 'lesson5' ? 3 : 1 }, () => generateNext()));
 
 console.log(`Listo: ${generated} clips nuevos; ${selectedClips.length - generated} ya existentes.`);

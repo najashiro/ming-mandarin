@@ -22,7 +22,10 @@ import { trackAnalyticsEvent } from '@/lib/analytics/client';
 
 const tabs = ['Aprender', 'Palabras y frases', 'Trazos', 'Practicar'] as const;
 type Tab = typeof tabs[number];
-export type HanziLabCharacter = Pick<CharacterEntry,'id'|'hanzi'|'pinyin'|'meaning'|'strokeCount'|'radical'|'components'|'writingRequired'|'componentsAudited'|'words'> & {introducedIn:HanziStageId|null;appearsIn:HanziStageId[]};
+export type HanziLabCharacter = Pick<CharacterEntry,'id'|'hanzi'|'pinyin'|'meaning'|'strokeCount'|'radical'|'components'|'writingRequired'|'componentsAudited'> & {
+  introducedIn:HanziStageId|null; appearsIn:HanziStageId[]; referenceLessons?:number[];
+  words?:Array<{hanzi:string;pinyin:string;translation:string}>;
+};
 
 function searchPinyin(value: string) {
   return value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/u:|v/g, 'ü').replace(/[1-5]/g, '').replace(/[^a-zü]/g, '');
@@ -30,7 +33,7 @@ function searchPinyin(value: string) {
 
 type Props = {
   characters: HanziLabCharacter[];
-  canonicalHanzi?: string[];
+  availableHanzi?: string[];
   stages: HanziUnitDefinition[];
   manifest: Record<string, HanziManifestEntry>;
   initialProgress?: HanziProgressMap;
@@ -38,16 +41,20 @@ type Props = {
   initialTab?: Tab;
   focusGlyph?: boolean;
   route?: string;
-  tracking?: 'course'|'supplementary';
   scope?: CurriculumScope;
 };
 
-export function HanziLab({ characters, canonicalHanzi = characters.map((item) => item.hanzi), stages, manifest, initialProgress = {}, initialCharacter = '好', initialTab = 'Aprender', focusGlyph = false, route = '/lesson/1/hanzi', tracking='course', scope='l1' }: Props) {
+export function HanziLab({ characters, availableHanzi = characters.map((item) => item.hanzi), stages, manifest, initialProgress = {}, initialCharacter = '好', initialTab = 'Aprender', focusGlyph = false, route = '/lesson/1/hanzi', scope='l1' }: Props) {
   const lessonScopes = useMemo(() => [...new Set(stages.map((stage) => stage.lesson))]
     .sort((a, b) => a - b)
     .map((lesson) => ({ value: `l${lesson}`, label: `Lección ${lesson}` })), [stages]);
-  const [characterScope, setCharacterScope] = useState<CurriculumScope>(() => scope.split('-').at(-1) as CurriculumScope);
   const firstCharacter = characters.find((item) => item.hanzi === initialCharacter) ?? characters[0];
+  const [characterScope, setCharacterScope] = useState<CurriculumScope>(() => {
+    const routeScope = scope.split('-').at(-1) as CurriculumScope;
+    const lessons = firstCharacter.referenceLessons ?? [];
+    return !firstCharacter.writingRequired && lessons.length && !lessons.includes(Number(routeScope.slice(1)))
+      ? `l${lessons[0]}` as CurriculumScope : routeScope;
+  });
   const [selectedId, setSelectedId] = useState(firstCharacter.id);
   const [tab, setTab] = useState<Tab>(initialTab);
   const [query, setQuery] = useState('');
@@ -60,7 +67,7 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
   const [, setLocalProgress] = useState<LocalHanziProgressMap>({});
   const [saveMessage, setSaveMessage] = useState('');
   const characterIdsByHanzi = useMemo(() => new Map(characters.map((item) => [item.hanzi,item.id])),[characters]);
-  const canonicalHanziSet = useMemo(() => new Set(canonicalHanzi),[canonicalHanzi]);
+  const availableHanziSet = useMemo(() => new Set(availableHanzi),[availableHanzi]);
 
   useEffect(() => {
     const timer = window.setTimeout(() => {
@@ -75,20 +82,26 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
     const lessons = new Set(characterScope.split('-').map((lesson) => lesson.slice(1)));
     return characters.filter((item) => item.appearsIn.some((unit) => lessons.has(unit.split('.')[0])));
   }, [characters, characterScope]);
+  const referenceCharacters = useMemo(() => {
+    const lessons = new Set(characterScope.split('-').map(lesson => Number(lesson.slice(1))));
+    const writingIds = new Set(displayedCharacters.map(item => item.id));
+    return characters.filter(item => !writingIds.has(item.id) && item.referenceLessons?.some(lesson => lessons.has(lesson)));
+  }, [characters, characterScope, displayedCharacters]);
   const suggestions = useMemo(() => {
     const needle = searchPinyin(query);
-    if (!needle) return [];
-    return characters.filter((item) => searchPinyin(item.pinyin).startsWith(needle)).sort((a,b) => {
+    if (!query.trim()) return [];
+    return characters.filter((item) => item.hanzi === query.trim() || (needle && searchPinyin(item.pinyin).startsWith(needle))).sort((a,b) => {
       const exactA = searchPinyin(a.pinyin) === needle ? 0 : 1; const exactB = searchPinyin(b.pinyin) === needle ? 0 : 1;
       return exactA - exactB || characters.indexOf(a) - characters.indexOf(b);
     }).slice(0,10);
   }, [characters,query]);
   const character = characters.find((item) => item.id === selectedId) ?? characters[0];
+  const tracking = character.writingRequired ? 'course' : 'supplementary';
   const technical = manifest[character.hanzi];
   const activeUnit = character.introducedIn;
   const selectedStage = stages.find((stage) => stage.id === activeUnit);
   const selectedStageName = selectedStage?.shortTitle.trim();
-  const stageLabel = tracking==='supplementary'?'Contenido suplementario':`${activeUnit}${selectedStageName ? ` · ${selectedStageName}` : ''}`;
+  const stageLabel = tracking==='supplementary'?'Carácter de consulta':`${activeUnit}${selectedStageName && selectedStageName !== activeUnit ? ` · ${selectedStageName}` : ''}`;
   const data = loaded?.character === character.hanzi ? loaded.data ?? null : null;
   const loadError = loaded?.character === character.hanzi ? loaded.error ?? '' : '';
   useEffect(() => {
@@ -109,11 +122,16 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
       setSearchOpen(false);
       const selected = characters.find((item) => item.id === id);
       if (selected) {
+        if (!selected.writingRequired && selected.referenceLessons?.length
+          && !selected.referenceLessons.includes(Number(characterScope.slice(1)))) {
+          setCharacterScope(`l${selected.referenceLessons[0]}` as CurriculumScope);
+        }
         const url = new URL(window.location.href);
         url.searchParams.set('character', selected.hanzi);
         url.searchParams.set('focus', 'glyph');
         url.searchParams.delete('tab');
         url.searchParams.delete('mode');
+        url.searchParams.delete('content');
         window.history.replaceState(window.history.state, '', url);
       }
       (document.activeElement as HTMLElement | null)?.blur();
@@ -174,17 +192,17 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
 
   return <div className="hanzi-workspace">
     <HanziFocusScroller active={focusRequest > 0} requestKey={focusRequest} expectedCharacter={character.hanzi} />
-    {tracking==='supplementary'&&<section className="panel hanzi-supplemental-note"><p className="eyebrow">CONTENIDO SUPLEMENTARIO</p><h2>Consulta directa de caracteres</h2><p>No forma parte del progreso del curso. La práctica ofrece feedback durante esta visita, pero no se guarda.</p></section>}
+    {tracking==='supplementary'&&<section className="panel hanzi-supplemental-note"><p className="eyebrow">CARÁCTER DE CONSULTA</p><p>Puedes estudiar y practicar este carácter. No se añade a los objetivos de escritura ni al progreso del curso.</p></section>}
 
 
 
-    {tracking==='course'&&<section className="panel hanzi-search-panel" aria-label="Búsqueda por pinyin">
-      <div className="hanzi-combobox"><label htmlFor="hanzi-pinyin-search">Busca por pinyin</label><div><input id="hanzi-pinyin-search" disabled={!hydrated} role="combobox" aria-autocomplete="list" aria-expanded={searchOpen} aria-controls="hanzi-pinyin-options" aria-activedescendant={activeOption >= 0 ? `hanzi-option-${activeOption}` : undefined} value={query} autoCapitalize="none" autoCorrect="off" spellCheck={false} placeholder="Ej.: hao, hǎo o hao3" onFocus={() => query && setSearchOpen(true)} onChange={(event) => { setQuery(event.target.value); setSearchOpen(true); setActiveOption(-1); }} onKeyDown={(event) => { if (event.key === 'ArrowDown') { event.preventDefault(); setActiveOption((value) => Math.min(value + 1, suggestions.length - 1)); } else if (event.key === 'ArrowUp') { event.preventDefault(); setActiveOption((value) => Math.max(value - 1, 0)); } else if (event.key === 'Escape') setSearchOpen(false); else if (event.key === 'Enter' && activeOption >= 0) { event.preventDefault(); const option=suggestions[activeOption]; if(option){selectCharacter(option.id,true);setQuery(option.pinyin);} } }}/>{query&&<button type="button" aria-label="Limpiar consulta" onClick={() => {setQuery('');setSearchOpen(false);}}>×</button>}</div>{searchOpen&&query&&<div id="hanzi-pinyin-options" role="listbox">{suggestions.length?suggestions.map((item,index)=><button id={`hanzi-option-${index}`} role="option" aria-selected={activeOption===index} type="button" key={item.id} onPointerDown={(event)=>event.preventDefault()} onClick={()=>{selectCharacter(item.id,true);setQuery(item.pinyin);}}><PinyinText>{item.pinyin}</PinyinText><Hanzi>{item.hanzi}</Hanzi><span>{item.meaning}</span></button>):<p role="status">Sin resultados por pinyin.</p>}</div>}</div>
-    </section>}
+    <section className="panel hanzi-search-panel" aria-label="Búsqueda por pinyin">
+      <div className="hanzi-combobox"><label htmlFor="hanzi-pinyin-search">Busca por pinyin</label><div><input id="hanzi-pinyin-search" disabled={!hydrated} role="combobox" aria-autocomplete="list" aria-expanded={searchOpen} aria-controls="hanzi-pinyin-options" aria-activedescendant={activeOption >= 0 ? `hanzi-option-${activeOption}` : undefined} value={query} autoCapitalize="none" autoCorrect="off" spellCheck={false} placeholder="Ej.: bian, biān, bian1 o 边" onFocus={() => query && setSearchOpen(true)} onChange={(event) => { setQuery(event.target.value); setSearchOpen(true); setActiveOption(-1); }} onKeyDown={(event) => { if (event.key === 'ArrowDown') { event.preventDefault(); setActiveOption((value) => Math.min(value + 1, suggestions.length - 1)); } else if (event.key === 'ArrowUp') { event.preventDefault(); setActiveOption((value) => Math.max(value - 1, 0)); } else if (event.key === 'Escape') setSearchOpen(false); else if (event.key === 'Enter' && activeOption >= 0) { event.preventDefault(); const option=suggestions[activeOption]; if(option){selectCharacter(option.id,true);setQuery(option.pinyin);} } }}/>{query&&<button type="button" aria-label="Limpiar consulta" onClick={() => {setQuery('');setSearchOpen(false);}}>×</button>}</div>{searchOpen&&query&&<div id="hanzi-pinyin-options" role="listbox">{suggestions.length?suggestions.map((item,index)=><button id={`hanzi-option-${index}`} role="option" aria-selected={activeOption===index} type="button" key={item.id} onPointerDown={(event)=>event.preventDefault()} onClick={()=>{selectCharacter(item.id,true);setQuery(item.pinyin);}}><PinyinText>{item.pinyin}</PinyinText><Hanzi>{item.hanzi}</Hanzi><span>{item.meaning}</span></button>):<p role="status">Sin resultados por pinyin.</p>}</div>}</div>
+    </section>
 
     <section className="hanzi-character-hero panel" id="hanzi-detail-start" data-character={character.hanzi}>
       <div className="hanzi-glyph"><Hanzi>{character.hanzi}</Hanzi></div>
-      <div className="hanzi-character-copy"><p className="eyebrow">{stageLabel}</p><div className="hanzi-pronunciation-row"><h2><PinyinText>{character.pinyin}</PinyinText></h2><div className="hanzi-character-actions"><SpeakButton key={character.id} text={character.hanzi} speechText={character.hanzi} audioSrc={audioForMandarinText(character.hanzi, character.pinyin)} compact ariaLabel={`Escuchar pronunciación de ${character.hanzi}`} title={`Escuchar ${character.hanzi}`} /><CommunityButton compact label={`Preguntar sobre ${character.hanzi}`} context={{ concept: character.hanzi, skill: tab === 'Trazos' ? 'stroke-order' : tab === 'Practicar' ? 'hanzi-writing' : 'hanzi-recognition', route: `${route}?character=${encodeURIComponent(character.hanzi)}&tab=${encodeURIComponent(tab)}` }} /></div></div>
+      <div className="hanzi-character-copy"><p className="eyebrow">{stageLabel}</p><div className="hanzi-pronunciation-row"><h2><PinyinText>{character.pinyin}</PinyinText></h2><div className="hanzi-character-actions"><SpeakButton key={character.id} text={character.hanzi} reading={character.pinyin} audioSrc={audioForMandarinText(character.hanzi, character.pinyin)} compact ariaLabel={`Escuchar pronunciación de ${character.hanzi}`} title={`Escuchar ${character.hanzi}`} /><CommunityButton compact label={`Preguntar sobre ${character.hanzi}`} context={{ concept: character.hanzi, skill: tab === 'Trazos' ? 'stroke-order' : tab === 'Practicar' ? 'hanzi-writing' : 'hanzi-recognition', route: `${route}?character=${encodeURIComponent(character.hanzi)}&tab=${encodeURIComponent(tab)}` }} /></div></div>
         <p className="hanzi-character-meaning"><Hanzi>{character.meaning}</Hanzi></p>
         <p className="hanzi-character-meta"><span>{technical?.strokeCount ?? character.strokeCount} trazos</span>{character.writingRequired && <> · <span>Escritura</span></>}</p>
       </div>
@@ -192,39 +210,44 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
 
     <nav className="hanzi-tabs" aria-label="Secciones del laboratorio">{tabs.map((item) => <button type="button" role="tab" aria-selected={tab === item} className={tab === item ? 'selected' : ''} onClick={() => setTab(item)} key={item}>{item}</button>)}</nav>
 
-    {loadError ? <section className="panel hanzi-fallback" role="status"><h2><Hanzi>{loadError}</Hanzi></h2><p>Puedes continuar con reconocimiento, palabras y frases. Solo la animación y la práctica de trazos quedan desactivadas.</p><button type="button" onClick={() => setTab('Palabras y frases')}>Ver palabras y frases</button>{tab === 'Aprender'&&<LearnPanel key={character.id} character={character}/>}</section> : !data ? <section className="panel hanzi-loading" aria-live="polite">Preparando los trazos de <Hanzi>{character.hanzi}</Hanzi>…</section> : <>
+    {tab === 'Palabras y frases' ? <WordsPanel key={character.id} character={character} characterIdsByHanzi={characterIdsByHanzi} availableHanzi={availableHanziSet} route={route} onSelectCharacter={(id) => selectCharacter(id, true)} /> : loadError ? <section className="panel hanzi-fallback" role="status"><h2><Hanzi>{loadError}</Hanzi></h2><p>Puedes continuar con reconocimiento, palabras y frases. Solo la animación y la práctica de trazos quedan desactivadas.</p><button type="button" onClick={() => setTab('Palabras y frases')}>Ver palabras y frases</button>{tab === 'Aprender'&&<LearnPanel key={character.id} character={character}/>}</section> : !data ? <section className="panel hanzi-loading" aria-live="polite">Preparando los trazos de <Hanzi>{character.hanzi}</Hanzi>…</section> : <>
       {tab === 'Aprender' && <LearnPanel key={character.id} character={character}/>}
-      {tab === 'Palabras y frases' && <WordsPanel key={character.id} character={character} characterIdsByHanzi={characterIdsByHanzi} canonicalHanzi={canonicalHanziSet} route={route} onSelectCharacter={(id) => selectCharacter(id, true)} />}
       {tab === 'Trazos' && <StrokesPanel key={character.id} character={character} data={data} onMastered={markStrokeOrderUnderstood} />}
       {tab === 'Practicar' && <PracticePanel key={character.id} character={character} data={data} onAttempt={persistAttempt} tracking={tracking} />}
     </>}
     {saveMessage && <p className="hanzi-save-message" role="status"><Hanzi>{saveMessage}</Hanzi> {saveMessage.includes('nombre') && <Link href={`/login?returnTo=${encodeURIComponent(route)}`}>Elegir nombre →</Link>}</p>}
-    {tracking==='course'&&<section className="panel hanzi-character-picker" aria-label="Selector de caracteres">
+    <section className="panel hanzi-character-picker" aria-label="Selector de caracteres">
       <div className="hanzi-picker-heading"><h2>Caracteres</h2><span>{displayedCharacters.length}</span></div>
     <div className="hanzi-lesson-toolbar">
       <select id="hanzi-lesson-scope" aria-label="Lección" value={characterScope} onChange={(event) => setCharacterScope(event.target.value as CurriculumScope)}>{lessonScopes.map(({value,label})=><option value={value} key={value}>{label}</option>)}</select>
     </div>
-      {displayedCharacters.length ? <div className="hanzi-picker-grid">{displayedCharacters.map((item) => {
+      <h3>Objetivos de escritura</h3>
+      {displayedCharacters.length ? <div className="hanzi-picker-grid hanzi-writing-grid">{displayedCharacters.map((item) => {
         const selected = item.id === character.id;
         return <button type="button" className={`hanzi-picker-card${selected ? ' selected' : ''}`} aria-label={`${item.hanzi}, ${item.pinyin}, ${item.meaning}`} aria-pressed={selected} onClick={() => selectCharacter(item.id,true)} key={item.id}><Hanzi>{item.hanzi}</Hanzi><small><PinyinText>{item.pinyin}</PinyinText></small><em><Hanzi>{item.meaning}</Hanzi></em></button>;
       })}</div> : <div className="hanzi-filter-empty"><p>No hay caracteres en esta lección.</p></div>}
-    </section>}
+      {referenceCharacters.length > 0 && <details className="hanzi-reference-picker" open={!character.writingRequired || undefined}>
+        <summary>Otros caracteres de la lección · {referenceCharacters.length}</summary>
+        <p>Caracteres presentes en el vocabulario y los textos, además de los objetivos de escritura de esta lección.</p>
+        <div className="hanzi-picker-grid">{referenceCharacters.map(item => <button type="button" className={`hanzi-reference-card${item.id === character.id ? ' selected' : ''}`} aria-label={`${item.hanzi}, ${item.pinyin}, ${item.meaning}`} aria-pressed={item.id === character.id} onClick={() => selectCharacter(item.id, true)} key={item.id}><Hanzi>{item.hanzi}</Hanzi><small><PinyinText>{item.pinyin}</PinyinText></small><em><Hanzi>{item.meaning}</Hanzi></em></button>)}</div>
+      </details>}
+    </section>
   </div>;
 }
 
 type ContextListProps = {
   character: HanziLabCharacter;
   characterIdsByHanzi: Map<string,string>;
-  canonicalHanzi: Set<string>;
+  availableHanzi: Set<string>;
   route: string;
   onSelectCharacter: (id: string) => void;
 };
 
-function ContextList({ character, characterIdsByHanzi, canonicalHanzi, route, onSelectCharacter }: ContextListProps) {
+function ContextList({ character, characterIdsByHanzi, availableHanzi, route, onSelectCharacter }: ContextListProps) {
   if (!character.words?.length) return <p className="context-empty">Esta ficha se practica como forma básica antes de combinarla.</p>;
   return <div className="hanzi-context"><div>{character.words.map((word) => <article key={`${word.hanzi}-${word.pinyin}`}>
     <strong className="context-hanzi-text">{[...word.hanzi].map((hanzi,index) => {
-      if (!canonicalHanzi.has(hanzi)) return <span className="context-hanzi-plain" key={`${hanzi}-${index}`}><Hanzi>{hanzi}</Hanzi></span>;
+      if (!availableHanzi.has(hanzi)) return <span className="context-hanzi-plain" key={`${hanzi}-${index}`}><Hanzi>{hanzi}</Hanzi></span>;
       const localId = characterIdsByHanzi.get(hanzi);
       const href = localId ? `${route}?character=${encodeURIComponent(hanzi)}&focus=glyph` : hanziGlyphHref(hanzi);
       return <Link href={href} scroll={false} aria-label={`Abrir ficha Hanzi de ${hanzi}`} onClick={localId ? (event) => { event.preventDefault(); onSelectCharacter(localId); } : undefined} key={`${hanzi}-${index}`}><Hanzi>{hanzi}</Hanzi></Link>;
@@ -279,7 +302,7 @@ function PracticePanel({ character, data, onAttempt, tracking }: { character: Ha
       </div>
       <HanziWriterStage ref={stage} character={character.hanzi} showCharacter={false} showOutline={mode === 'guided'} interactive onReady={() => setReady(true)} onMistake={(total, mistakesOnStroke) => { setMistakes(total); if ((mode === 'guided' && mistakesOnStroke === 2) || (mode === 'independent' && mistakesOnStroke === 4)) setHints((value) => value + 1); setFeedback('Todavía no. Revisa el punto de inicio y la dirección.'); }} onCorrectStroke={(count) => { setCorrect(count); setFeedback(`Trazo ${count} de ${data.strokes.length} correcto.`); }} onQuizComplete={complete} />
       <div className="hanzi-controls"><button type="button" disabled={!started} aria-pressed={answerVisible} onPointerDown={(event) => { event.preventDefault(); reveal(true); }} onPointerUp={() => reveal(false)} onPointerCancel={() => reveal(false)} onPointerLeave={() => answerVisible && reveal(false)} onKeyDown={(event) => { if (event.key === ' ' || event.key === 'Enter') { event.preventDefault(); reveal(!answerVisible); } }}>Mantén para ver respuesta</button><button type="button" disabled={!started} onClick={() => { stage.current?.cancelQuiz(); setStarted(false); setFeedback('Intento cancelado; no se guardó.'); }}>Cancelar</button></div>
-      <p className="privacy-note">Se guarda solo el resumen del intento; nunca tus coordenadas de escritura.</p>
+      <p className="privacy-note">{tracking === 'course' ? 'Se guarda solo el resumen del intento; nunca tus coordenadas de escritura.' : 'Esta práctica es de consulta y no se guarda en el progreso del curso.'}</p>
     </div><aside><div className="practice-counters"><span><b>{correct}</b>/{data.strokes.length} trazos</span><span><b>{mistakes}</b> errores</span><span><b>{hints}</b> consultas</span></div><p className="practice-feedback" aria-live="polite"><Hanzi>{feedback}</Hanzi></p></aside></div>
   </section>;
 }

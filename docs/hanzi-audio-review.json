@@ -1,0 +1,709 @@
+{
+  "voice": "marin",
+  "model": "gpt-4o-mini-tts",
+  "verification": "MP3 decode, duration, signal and hash; not independent human phonetic review",
+  "results": [
+    {
+      "id": "hanzi-ed9d675b3ff17307",
+      "hanzi": "足",
+      "pinyin": "zú",
+      "sha256": "cc4f58eb62363693decebef74a77115ee266e7ac926d412b379367280f18d874",
+      "bytes": 18432,
+      "duration": 1.152,
+      "rms": 0.05297088124406941
+    },
+    {
+      "id": "hanzi-cf0559cc3be1a236",
+      "hanzi": "舌",
+      "pinyin": "shé",
+      "sha256": "6bdb7e0cef93a61cea91d73a9c42e2638a77d26336f9d32017ee379a76c9eaa8",
+      "bytes": 29568,
+      "duration": 1.848,
+      "rms": 0.04532166289963479
+    },
+    {
+      "id": "hanzi-bf7cd3ea370114f1",
+      "hanzi": "方",
+      "pinyin": "fāng",
+      "sha256": "33ac3975891a4102e551241c3a7abf4ff8837d4e1f739fdd8d6010237e2d227a",
+      "bytes": 27264,
+      "duration": 1.704,
+      "rms": 0.05479377037250711
+    },
+    {
+      "id": "hanzi-01e5bbbbff77363c",
+      "hanzi": "走",
+      "pinyin": "zǒu",
+      "sha256": "d0fd62781abfd99fa8f9fe2703490508fc93fad93d084ced12e580091c4ef940",
+      "bytes": 16896,
+      "duration": 1.056,
+      "rms": 0.05724692094331529
+    },
+    {
+      "id": "hanzi-6bbafa8255af18a8",
+      "hanzi": "矢",
+      "pinyin": "shǐ",
+      "sha256": "dc6cad52b666f29a826f5564f18cb96a35c40e73de9754ff5f812a6ac10281a6",
+      "bytes": 24960,
+      "duration": 1.56,
+      "rms": 0.04424958959116287
+    },
+    {
+      "id": "hanzi-ac5f637174f3c77c",
+      "hanzi": "竹",
+      "pinyin": "zhú",
+      "sha256": "ca4cbc954857a0add6e6cafb08a671cc844e193131f7663611c1004454c40a6a",
+      "bytes": 13056,
+      "duration": 0.816,
+      "rms": 0.08192685373445395
+    },
+    {
+      "id": "hanzi-66c6e035df29536d",
+      "hanzi": "舍",
+      "pinyin": "shè",
+      "sha256": "f6f76d38929315c2ece4fff9e8f276593cc197c864023d6111828aec0e2feedc",
+      "bytes": 23424,
+      "duration": 1.464,
+      "rms": 0.0436864920932258
+    },
+    {
+      "id": "hanzi-fcfc43bbb3ad8e04",
+      "hanzi": "超",
+      "pinyin": "chāo",
+      "sha256": "93c923b0ec2f4cb163a3b39c8103732b92c7cfe0d5f28a6c8b73dd16cd7461c8",
+      "bytes": 25728,
+      "duration": 1.608,
+      "rms": 0.04758036490721008
+    },
+    {
+      "id": "hanzi-636eb6945b45e37c",
+      "hanzi": "知",
+      "pinyin": "zhī",
+      "sha256": "de26b6ce6c3a591745964ef840ed1f057350a3398863d31f0a762f841a1ff78a",
+      "bytes": 13824,
+      "duration": 0.864,
+      "rms": 0.046458016288784536
+    },
+    {
+      "id": "hanzi-8f1d1b228faf9e1b",
+      "hanzi": "等",
+      "pinyin": "děng",
+      "sha256": "0f7b38884fb2bc5a2acefcc42a05b2a3e431967ad4d16f31b61465ead2c1cf32",
+      "bytes": 16896,
+      "duration": 1.056,
+      "rms": 0.0501687089976938
+    },
+    {
+      "id": "hanzi-25c71e9535e09ea3",
+      "hanzi": "跟",
+      "pinyin": "gēn",
+      "sha256": "d24d0e9ea029633daa135527f46bc85ce3096597e2d7d12f2ed03f7c1b325c9d",
+      "bytes": 14592,
+      "duration": 0.912,
+      "rms": 0.06627315387806865
+    },
+    {
+      "id": "hanzi-e09c9d998fc62d07",
+      "hanzi": "路",
+      "pinyin": "lù",
+      "sha256": "6b2d5aabb42ca51da0e427c7b1298cd3a60022d6defe3a90997a549149d98429",
+      "bytes": 17664,
+      "duration": 1.104,
+      "rms": 0.056515260623938204
+    },
+    {
+      "id": "hanzi-3e22e7928bb94349",
+      "hanzi": "街",
+      "pinyin": "jiē",
+      "sha256": "45cb6bf1f2ceec43fe9f9d359d9f886371bb0f5d8c2dac1ecf20e7decd5c7028",
+      "bytes": 22656,
+      "duration": 1.416,
+      "rms": 0.04530236986812416
+    },
+    {
+      "id": "hanzi-80926101512d3493",
+      "hanzi": "左",
+      "pinyin": "zuǒ",
+      "sha256": "1e0e0f58c149f59ff021ae16d5930c32dd866815fe0b242f4e98598f7c74a37e",
+      "bytes": 29568,
+      "duration": 1.848,
+      "rms": 0.041503719486465765
+    },
+    {
+      "id": "hanzi-a712bf8ea327a43f",
+      "hanzi": "后",
+      "pinyin": "hòu",
+      "sha256": "78288b0bb06530d817186a20e466e8f6d0eedfc68a5c1479bd90bd69a93eea77",
+      "bytes": 19200,
+      "duration": 1.2,
+      "rms": 0.04740006419202999
+    },
+    {
+      "id": "hanzi-8365962b0aa31abd",
+      "hanzi": "里",
+      "pinyin": "lǐ",
+      "sha256": "8092e3796386cc8049fe27ca9d40155856f23ed9380e634bc31baff1114ed947",
+      "bytes": 25728,
+      "duration": 1.608,
+      "rms": 0.05271074432068633
+    },
+    {
+      "id": "hanzi-56a2600a6e637f96",
+      "hanzi": "先",
+      "pinyin": "xiān",
+      "sha256": "5cab55fdc42540069e808cd461e443c4abcc0f4aa086ed9a1879f1a9a6b4ea44",
+      "bytes": 25728,
+      "duration": 1.608,
+      "rms": 0.0507890289260576
+    },
+    {
+      "id": "hanzi-69f16d61104de2d5",
+      "hanzi": "前",
+      "pinyin": "qián",
+      "sha256": "f6a9eab9a35bb761c09560028fd93b0460f2d480177f3416da95d960881d5252",
+      "bytes": 16896,
+      "duration": 1.056,
+      "rms": 0.05213158320649066
+    },
+    {
+      "id": "hanzi-4e8b56c9375ad02b",
+      "hanzi": "胡",
+      "pinyin": "hú",
+      "sha256": "097944ce06ee14bdb8a45781d08972097a8d4d4d0ae81752663a2ba6740f318f",
+      "bytes": 19968,
+      "duration": 1.248,
+      "rms": 0.04176643858805742
+    },
+    {
+      "id": "hanzi-4f3ed8319f982dae",
+      "hanzi": "乌",
+      "pinyin": "wū",
+      "sha256": "71d7996b84dd66f64e900ce3e18d4ea8d0dbcaf1c0fede8bb3eb2c2c1feac8ca",
+      "bytes": 21888,
+      "duration": 1.368,
+      "rms": 0.047610758755895766
+    },
+    {
+      "id": "hanzi-f774858f2df5bb4b",
+      "hanzi": "从",
+      "pinyin": "cóng",
+      "sha256": "dd40c0f06ffd800d81a4fc156ccdcb34b2884c4963d8aba0a4098cfa36ea099a",
+      "bytes": 19200,
+      "duration": 1.2,
+      "rms": 0.061466909807218716
+    },
+    {
+      "id": "hanzi-524ad5040db05ee7",
+      "hanzi": "以",
+      "pinyin": "yǐ",
+      "sha256": "84fe8aa60131e2c07b4e6c2c13a198db75aa1318e7c7af74a6aa01ad710e0b9a",
+      "bytes": 38400,
+      "duration": 2.4,
+      "rms": 0.048488632651821094
+    },
+    {
+      "id": "hanzi-785e8511296d08eb",
+      "hanzi": "伞",
+      "pinyin": "sǎn",
+      "sha256": "c55e3b1daf578696330f73916df01df046e74baf601cfd715d0e0f83b50c0851",
+      "bytes": 13824,
+      "duration": 0.864,
+      "rms": 0.05176222254399972
+    },
+    {
+      "id": "hanzi-d96d4574652e4dc4",
+      "hanzi": "传",
+      "pinyin": "chuán",
+      "sha256": "249d986bcee3c4867693480a2f6d8aa0b0df530ee2366580f40a1c406ead36cf",
+      "bytes": 14592,
+      "duration": 0.912,
+      "rms": 0.054763916962617995
+    },
+    {
+      "id": "hanzi-ce6dd665fafe11f7",
+      "hanzi": "关",
+      "pinyin": "guān",
+      "sha256": "3e4171f2a86dc51ce3922eef374083d8ac9d1d12785021e9842dd6558e50db9f",
+      "bytes": 9600,
+      "duration": 0.6,
+      "rms": 0.09478387678433413
+    },
+    {
+      "id": "hanzi-31106048fd426329",
+      "hanzi": "务",
+      "pinyin": "wù",
+      "sha256": "8303b259c895dee5816dec1d5f0c7ce33af38dc9ebc9c6bcd15f3c614e10d337",
+      "bytes": 13824,
+      "duration": 0.864,
+      "rms": 0.07508731363394905
+    },
+    {
+      "id": "hanzi-7191eb228228a53d",
+      "hanzi": "南",
+      "pinyin": "nán",
+      "sha256": "d3917a78b0c4bea5d2803d6df646d4775fe2ae5461ae015b9a7cf5ba491bfb91",
+      "bytes": 25728,
+      "duration": 1.608,
+      "rms": 0.059495037870636466
+    },
+    {
+      "id": "hanzi-52334d63e311774f",
+      "hanzi": "卧",
+      "pinyin": "wò",
+      "sha256": "f37eb491811a09d6c54cc3d2813c049c979ba5e052c7bf46c0b961f44c4ed7bf",
+      "bytes": 9600,
+      "duration": 0.6,
+      "rms": 0.10398412316312973
+    },
+    {
+      "id": "hanzi-105bce25aaf23328",
+      "hanzi": "卫",
+      "pinyin": "wèi",
+      "sha256": "3519ecf4aa528e928b23b5e30d41bdf38987f874606c86c75c94733f6bf48888",
+      "bytes": 17664,
+      "duration": 1.104,
+      "rms": 0.053393443243733726
+    },
+    {
+      "id": "hanzi-f1d36bdd46797036",
+      "hanzi": "厨",
+      "pinyin": "chú",
+      "sha256": "f40d4681f3690f9581b8e703f4c8d0e5b0209486d678a2026af7bfd844f57315",
+      "bytes": 19968,
+      "duration": 1.248,
+      "rms": 0.0532340977964387
+    },
+    {
+      "id": "hanzi-1971b6462f1d6528",
+      "hanzi": "取",
+      "pinyin": "qǔ",
+      "sha256": "0ca3ab38e4d9e35d57d51a0cbc4198e9ce1341b12701090166d2f8cefccbb292",
+      "bytes": 17664,
+      "duration": 1.104,
+      "rms": 0.054927642848931035
+    },
+    {
+      "id": "hanzi-42e402978690a3a2",
+      "hanzi": "台",
+      "pinyin": "tái",
+      "sha256": "49bf9e4293f4acce612f9614e27623ee095af1b52ee8d8dbe2e957ef84a3ebfc",
+      "bytes": 22656,
+      "duration": 1.416,
+      "rms": 0.0481813881414222
+    },
+    {
+      "id": "hanzi-2787962148caf01c",
+      "hanzi": "同",
+      "pinyin": "tóng",
+      "sha256": "bb5d843d74f2406ffb6f7fd5cb66d32028b0937b88397c9eff91597515bded80",
+      "bytes": 34560,
+      "duration": 2.16,
+      "rms": 0.04120261134826092
+    },
+    {
+      "id": "hanzi-ce928686f9d15a2e",
+      "hanzi": "地",
+      "pinyin": "dì",
+      "sha256": "7a40c932a26a319b1e50c58ce90fce3e8612782c5828a390a3fc9d6316b0870c",
+      "bytes": 16128,
+      "duration": 1.008,
+      "rms": 0.031050346095530795
+    },
+    {
+      "id": "hanzi-b4ecac1d12c5a19a",
+      "hanzi": "场",
+      "pinyin": "chǎng",
+      "sha256": "de678c1ca97eca2d7b6ad015afbb6fbc7f6a214cc66f0d6762287fca67e02c66",
+      "bytes": 24192,
+      "duration": 1.512,
+      "rms": 0.04968952708231457
+    },
+    {
+      "id": "hanzi-b32d44e0c55e4d91",
+      "hanzi": "堂",
+      "pinyin": "táng",
+      "sha256": "224fcd67d011e0907e04c1838894890134c1dba8f39e58db262ea8f5e9a84acd",
+      "bytes": 16896,
+      "duration": 1.056,
+      "rms": 0.050137155589427516
+    },
+    {
+      "id": "hanzi-010864de351c1408",
+      "hanzi": "声",
+      "pinyin": "shēng",
+      "sha256": "f894aeb6ac3a271f91a5b9e71095861ca2c6f8948cdf5613ff0a8c35a8a78776",
+      "bytes": 22656,
+      "duration": 1.416,
+      "rms": 0.050226465148773436
+    },
+    {
+      "id": "hanzi-d5d74a86d6b94b23",
+      "hanzi": "如",
+      "pinyin": "rú",
+      "sha256": "e2ed78e9245b0c8f877f439f286beea07bd7370b3be86f131db5fb6b2032089c",
+      "bytes": 18432,
+      "duration": 1.152,
+      "rms": 0.07185442385874932
+    },
+    {
+      "id": "hanzi-6e75c3d6fd439044",
+      "hanzi": "它",
+      "pinyin": "tā",
+      "sha256": "21186ea944bd3563c78e76e35add8ebb9300cf095db2a1d70406d9adad6d7a24",
+      "bytes": 21888,
+      "duration": 1.368,
+      "rms": 0.045132350383416224
+    },
+    {
+      "id": "hanzi-c3bf31f4af052c6a",
+      "hanzi": "定",
+      "pinyin": "dìng",
+      "sha256": "a50149a9b31e3f6ef2a312d10d430d787c2d0945d9bcb969dd75201459ad7739",
+      "bytes": 21120,
+      "duration": 1.32,
+      "rms": 0.05845393073720024
+    },
+    {
+      "id": "hanzi-466f231d527c35da",
+      "hanzi": "室",
+      "pinyin": "shì",
+      "sha256": "8a294164e76e41c3b51549848e0b5385c397ecbbf4e7db1470cf79432e9ec59c",
+      "bytes": 13056,
+      "duration": 0.816,
+      "rms": 0.06799879368693805
+    },
+    {
+      "id": "hanzi-88b593c66b229658",
+      "hanzi": "宿",
+      "pinyin": "sù",
+      "sha256": "ba9e30be7b4aff2496a66272f1064174bf80c1d78a822e0898f2aac8c9a14e61",
+      "bytes": 16896,
+      "duration": 1.056,
+      "rms": 0.04161617644396959
+    },
+    {
+      "id": "hanzi-9ceaf36d99de5a84",
+      "hanzi": "市",
+      "pinyin": "shì",
+      "sha256": "adaaeda076e25909af0d99f0b634f16127bcc8d01d79955b30e9270410ed8ec4",
+      "bytes": 18432,
+      "duration": 1.152,
+      "rms": 0.049383774559572186
+    },
+    {
+      "id": "hanzi-c4c0e6b890d88c1a",
+      "hanzi": "店",
+      "pinyin": "diàn",
+      "sha256": "0114f4fbc49cb37d6b3c15895330d7f3aa5f960b3ae6ebe3899a47fb5bc174af",
+      "bytes": 17664,
+      "duration": 1.104,
+      "rms": 0.04833561157529401
+    },
+    {
+      "id": "hanzi-9abee4a1fc017d35",
+      "hanzi": "座",
+      "pinyin": "zuò",
+      "sha256": "e3d1a24a8eb9270a4b9e61e236af83b73a3dd72c2b5bf08273f1a4491bc8280b",
+      "bytes": 13824,
+      "duration": 0.864,
+      "rms": 0.07013580355176963
+    },
+    {
+      "id": "hanzi-f5d015b64a96cc75",
+      "hanzi": "急",
+      "pinyin": "jí",
+      "sha256": "cf015a721f21f51d48d5dae10c9d82574a94a75b61df70e5bbfa35980a3315f4",
+      "bytes": 21120,
+      "duration": 1.32,
+      "rms": 0.04797944308943626
+    },
+    {
+      "id": "hanzi-16239cfe4fdc906a",
+      "hanzi": "想",
+      "pinyin": "xiǎng",
+      "sha256": "973318146ee21d1fae901c2c17cd902ffd9dd75fc9c4e53f3b8e5319bc39a727",
+      "bytes": 26496,
+      "duration": 1.656,
+      "rms": 0.035133275563311854
+    },
+    {
+      "id": "hanzi-4b474ef4680f5462",
+      "hanzi": "或",
+      "pinyin": "huò",
+      "sha256": "47e0276397d4f22b33afc6e19547c035954aa2a7b589174b0eeaa560ecfe5f75",
+      "bytes": 11520,
+      "duration": 0.72,
+      "rms": 0.07138419150486809
+    },
+    {
+      "id": "hanzi-c557dc2d4c927dc9",
+      "hanzi": "房",
+      "pinyin": "fáng",
+      "sha256": "2c950ee18bbcef9abd3efa12f2179a70b389b88b9cbebf089e0f305f6965567a",
+      "bytes": 15360,
+      "duration": 0.96,
+      "rms": 0.0536568321219882
+    },
+    {
+      "id": "hanzi-6598845a652e6955",
+      "hanzi": "操",
+      "pinyin": "cāo",
+      "sha256": "8e79af82a1322b5da8cf60b4d262f1a5f87489b259ab16be584947995dc5aeb5",
+      "bytes": 15360,
+      "duration": 0.96,
+      "rms": 0.05588374625776625
+    },
+    {
+      "id": "hanzi-ae1015f0967a6046",
+      "hanzi": "旁",
+      "pinyin": "páng",
+      "sha256": "f05a32be9a0cd8f6a3875edb0778efd3229a2aa56a1d4c8743675b390af32c44",
+      "bytes": 16128,
+      "duration": 1.008,
+      "rms": 0.03743578448991331
+    },
+    {
+      "id": "hanzi-aa6565cabd3d9180",
+      "hanzi": "桌",
+      "pinyin": "zhuō",
+      "sha256": "0b4c59eb1490d82b9d4353637d00a4ca3fb6867eb87a33fcceeac12ecc5d77c9",
+      "bytes": 30720,
+      "duration": 1.92,
+      "rms": 0.06028312772949232
+    },
+    {
+      "id": "hanzi-225f88b279aaaaee",
+      "hanzi": "比",
+      "pinyin": "bǐ",
+      "sha256": "d132c13513131980b9a51ac2a49e9289a25c52c13da1ab9c23d61a816ae908b1",
+      "bytes": 21120,
+      "duration": 1.32,
+      "rms": 0.04811440919692974
+    },
+    {
+      "id": "hanzi-9e2a943a2bdce857",
+      "hanzi": "清",
+      "pinyin": "qīng",
+      "sha256": "8a05eaec9929c65623c6e2aab2aa290fcb34c35a208145a7564892e39a78796c",
+      "bytes": 24960,
+      "duration": 1.56,
+      "rms": 0.04099030747041918
+    },
+    {
+      "id": "hanzi-848d151aed8f6938",
+      "hanzi": "理",
+      "pinyin": "lǐ",
+      "sha256": "b021373b2978cda54ad1182b16c6cb11ba7079b9d1521e6fd9e20dcd723f3c53",
+      "bytes": 19200,
+      "duration": 1.2,
+      "rms": 0.07170900678282006
+    },
+    {
+      "id": "hanzi-b1dfbb0b5cddd603",
+      "hanzi": "白",
+      "pinyin": "bái",
+      "sha256": "8202f16471edd89dfbaec6e4b727835000cf0626de0a2844bbb30af879cac8c8",
+      "bytes": 14592,
+      "duration": 0.912,
+      "rms": 0.05041833256718707
+    },
+    {
+      "id": "hanzi-dffc4260a2b8cad8",
+      "hanzi": "着",
+      "pinyin": "zháo",
+      "sha256": "47e402f5b51019c79a1658b1eabd85e8978c43207a2cfb5955a0bf6e837ce126",
+      "bytes": 17664,
+      "duration": 1.104,
+      "rms": 0.061670613836459096
+    },
+    {
+      "id": "hanzi-dfe9f2e25f85af96",
+      "hanzi": "答",
+      "pinyin": "dá",
+      "sha256": "3aec233446a2ec166e1683b0b8b640c2597b89351dbd0f828004af9966844485",
+      "bytes": 17664,
+      "duration": 1.104,
+      "rms": 0.039201408783812064
+    },
+    {
+      "id": "hanzi-d9daedf8f1169242",
+      "hanzi": "经",
+      "pinyin": "jīng",
+      "sha256": "1824c03e5070acc0a753fe61ae69847ab4388fc503763b87ca45853ba17639e7",
+      "bytes": 15360,
+      "duration": 0.96,
+      "rms": 0.052180574202510974
+    },
+    {
+      "id": "hanzi-b5f307e562c518e7",
+      "hanzi": "者",
+      "pinyin": "zhě",
+      "sha256": "7ee389ac8560d9a21b33cad9ff45b0972b86b2a4e68811c831a392cb8ae9f1cc",
+      "bytes": 23424,
+      "duration": 1.464,
+      "rms": 0.05094993093395473
+    },
+    {
+      "id": "hanzi-2f065c0873598599",
+      "hanzi": "职",
+      "pinyin": "zhí",
+      "sha256": "319985827d5a29386bd7d857d83218dc7b819dce1daa0377b88d84a5e3b91ebf",
+      "bytes": 13824,
+      "duration": 0.864,
+      "rms": 0.05650161852186326
+    },
+    {
+      "id": "hanzi-5ce22ccee593b8d8",
+      "hanzi": "肯",
+      "pinyin": "kěn",
+      "sha256": "75de1302f9f733f0fda0efff310cf2fc7e610c7daf2f0eb18868f270bc00c514",
+      "bytes": 14592,
+      "duration": 0.912,
+      "rms": 0.05342352155089768
+    },
+    {
+      "id": "hanzi-6ce8ee5d55a84b0a",
+      "hanzi": "边",
+      "pinyin": "biān",
+      "sha256": "0efcb28fe125a0b7de4adba5ef0e9c654733f3a5aec8780c091a125221c4a7a0",
+      "bytes": 21888,
+      "duration": 1.368,
+      "rms": 0.0619155296012291
+    },
+    {
+      "id": "hanzi-fdf86252efc2c366",
+      "hanzi": "过",
+      "pinyin": "guò",
+      "sha256": "c496498ae1ab55f5c41ada2e953ecdd17e13536fa19af55519ee1c65c6d601ac",
+      "bytes": 17664,
+      "duration": 1.104,
+      "rms": 0.07519194800810906
+    },
+    {
+      "id": "hanzi-25dee903b33e64ca",
+      "hanzi": "道",
+      "pinyin": "dào",
+      "sha256": "c0aaadc19e1df0a51f987b69b6c1579c13de8eacf3f1360dfcad661f18754bdc",
+      "bytes": 16128,
+      "duration": 1.008,
+      "rms": 0.06355153551541665
+    },
+    {
+      "id": "hanzi-e6ece3bcf163c517",
+      "hanzi": "长",
+      "pinyin": "zhǎng",
+      "sha256": "fe62f8bb6588349991ca95b948f5c6ce570c4f21ed805206d902725bc369b237",
+      "bytes": 25728,
+      "duration": 1.608,
+      "rms": 0.049828080252329175
+    },
+    {
+      "id": "hanzi-ddd57fff51ef087e",
+      "hanzi": "阳",
+      "pinyin": "yáng",
+      "sha256": "3e7f618d573dbb9d8f2d8f934a1127ca9de695cb0d9c8d4a0c2e1b3608dd3ed5",
+      "bytes": 25728,
+      "duration": 1.608,
+      "rms": 0.055925237651658175
+    },
+    {
+      "id": "hanzi-67ad5201de1f1f70",
+      "hanzi": "食",
+      "pinyin": "shí",
+      "sha256": "bc6d27195437bcd3bdd6f8c812bbbdf45631ea21b61ac4bb5aef1457b3881f25",
+      "bytes": 15360,
+      "duration": 0.96,
+      "rms": 0.05210901380359055
+    },
+    {
+      "id": "hanzi-798f2b8731abd44b",
+      "hanzi": "龟",
+      "pinyin": "guī",
+      "sha256": "c9f50d667e6ed6a558442d7d702feef2b6c8d80b25b8fcdbf4e3b70a31289234",
+      "bytes": 13056,
+      "duration": 0.816,
+      "rms": 0.08580397212061533
+    },
+    {
+      "id": "hanzi-4cbf176c86968b29",
+      "hanzi": "宠",
+      "pinyin": "chǒng",
+      "sha256": "448f724310107bf05703e2fefbd7ea857c0983552913bfb661243be5de0de590",
+      "bytes": 29568,
+      "duration": 1.848,
+      "rms": 0.02344324890287741
+    },
+    {
+      "id": "hanzi-fb5b17b45fa40e26",
+      "hanzi": "华",
+      "pinyin": "huá",
+      "sha256": "74b4cb0c092df55d2191fe767e6f8b7b5332cc7b06d9a997488df37057100bb5",
+      "bytes": 13056,
+      "duration": 0.816,
+      "rms": 0.07025393126613802
+    },
+    {
+      "id": "hanzi-492a29cb851e973d",
+      "hanzi": "周",
+      "pinyin": "zhōu",
+      "sha256": "ecd4d37e6c6b36fb9393de0a7ff53661c5878412f388bb9da4a68c5af615c670",
+      "bytes": 11520,
+      "duration": 0.72,
+      "rms": 0.07084912694803493
+    },
+    {
+      "id": "hanzi-83de5e5978f678aa",
+      "hanzi": "娜",
+      "pinyin": "nà",
+      "sha256": "a1fa8b9365eb8f6973fee62bc4a77b017873476e74ab6a34060241d4b17895d0",
+      "bytes": 16896,
+      "duration": 1.056,
+      "rms": 0.05937476718650196
+    },
+    {
+      "id": "hanzi-f9c8597cd916cc70",
+      "hanzi": "强",
+      "pinyin": "qiáng",
+      "sha256": "dcb5ef71cbc4e536d65672e61a06e2f643ddbd4b0b2f2f64436a452fcd558dff",
+      "bytes": 28800,
+      "duration": 1.8,
+      "rms": 0.04789417980134585
+    },
+    {
+      "id": "hanzi-3d1e67d178c0daec",
+      "hanzi": "末",
+      "pinyin": "mò",
+      "sha256": "d3151431e88ddb3afb66714044777dee48a4c28fd1a00b5919a44ffa4668b5db",
+      "bytes": 21120,
+      "duration": 1.32,
+      "rms": 0.05620198336695857
+    },
+    {
+      "id": "hanzi-5f6f49bae16f8881",
+      "hanzi": "贺",
+      "pinyin": "hè",
+      "sha256": "925325ca232e28ec7d7af3155977dc2eae5e506a839fc9c1a5d50dfea20ff443",
+      "bytes": 13824,
+      "duration": 0.864,
+      "rms": 0.065219762758423
+    },
+    {
+      "id": "hanzi-87c9d9a511065371",
+      "hanzi": "音",
+      "pinyin": "yīn",
+      "sha256": "1524303b7da70d5ba0c578e1e57d365eea37819dce03a74bbef8f3eba12a08c1",
+      "bytes": 16128,
+      "duration": 1.008,
+      "rms": 0.052064770330085657
+    },
+    {
+      "id": "hanzi-aee6d4f609a2ea78",
+      "hanzi": "首",
+      "pinyin": "shǒu",
+      "sha256": "b88e93fd24a1faecc22243746961a9c29bb1f3a451dd22406879aeb86ff78f25",
+      "bytes": 19968,
+      "duration": 1.248,
+      "rms": 0.050620494123445006
+    }
+  ]
+}

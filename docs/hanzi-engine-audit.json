@@ -1,0 +1,7813 @@
+{
+  "scope": "Fichas del motor: objetivos de escritura y referencias documentadas. Los glifos sin ficha se registran por separado.",
+  "total": 378,
+  "writingTargets": 295,
+  "references": 83,
+  "inventory": [
+    {
+      "id": "c-你",
+      "hanzi": "你",
+      "pinyin": "nǐ",
+      "meaning": "tú",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l1-v-ni.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-好",
+      "hanzi": "好",
+      "pinyin": "hǎo",
+      "meaning": "bueno; bien",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l5-c6e2e80fba0e36d7.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-我",
+      "hanzi": "我",
+      "pinyin": "wǒ",
+      "meaning": "yo",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l1-v-wo.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-叫",
+      "hanzi": "叫",
+      "pinyin": "jiào",
+      "meaning": "llamarse",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l1-v-jiao.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-什",
+      "hanzi": "什",
+      "pinyin": "shén",
+      "meaning": "qué; en 什么",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l1-h-u4ec0.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-么",
+      "hanzi": "么",
+      "pinyin": "me",
+      "meaning": "sílaba neutra en 什么 / 怎么",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 3,
+      "namedStrokes": 3,
+      "audio": "/audio/mandarin/l1-h-u4e48.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-请",
+      "hanzi": "请",
+      "pinyin": "qǐng",
+      "meaning": "por favor; invitar",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/l1-h-u8bf7.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-问",
+      "hanzi": "问",
+      "pinyin": "wèn",
+      "meaning": "preguntar",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l1-h-u95ee.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-名",
+      "hanzi": "名",
+      "pinyin": "míng",
+      "meaning": "nombre",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3,
+        5,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l1-h-u540d.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-字",
+      "hanzi": "字",
+      "pinyin": "zì",
+      "meaning": "carácter; palabra",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l1-h-u5b57.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-姓",
+      "hanzi": "姓",
+      "pinyin": "xìng",
+      "meaning": "apellido",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l1-v-xing.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-认",
+      "hanzi": "认",
+      "pinyin": "rèn",
+      "meaning": "reconocer",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l1-h-u8ba4.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-识",
+      "hanzi": "识",
+      "pinyin": "shi",
+      "meaning": "conocer; en 认识",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l1-h-u8bc6.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-很",
+      "hanzi": "很",
+      "pinyin": "hěn",
+      "meaning": "muy",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l1-h-u5f88.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-高",
+      "hanzi": "高",
+      "pinyin": "gāo",
+      "meaning": "alto",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        5
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/l1-h-u9ad8.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-兴",
+      "hanzi": "兴",
+      "pinyin": "xìng",
+      "meaning": "ánimo; en 高兴",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        5
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l1-h-u5174.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-也",
+      "hanzi": "也",
+      "pinyin": "yě",
+      "meaning": "también",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 3,
+      "namedStrokes": 3,
+      "audio": "/audio/mandarin/l1-h-u4e5f.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-老",
+      "hanzi": "老",
+      "pinyin": "lǎo",
+      "meaning": "mayor; en 老师",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l1-h-u8001.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-师",
+      "hanzi": "师",
+      "pinyin": "shī",
+      "meaning": "maestro; profesor",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l1-h-u5e08.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-再",
+      "hanzi": "再",
+      "pinyin": "zài",
+      "meaning": "de nuevo",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        4,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l1-h-u518d.mp3",
+      "contexts": 7
+    },
+    {
+      "id": "c-见",
+      "hanzi": "见",
+      "pinyin": "jiàn",
+      "meaning": "ver",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        4,
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l1-h-u89c1.mp3",
+      "contexts": 7
+    },
+    {
+      "id": "c-早",
+      "hanzi": "早",
+      "pinyin": "zǎo",
+      "meaning": "temprano; mañana",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/pinyin/zao.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-上",
+      "hanzi": "上",
+      "pinyin": "shàng",
+      "meaning": "arriba; en la mañana",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 3,
+      "namedStrokes": 3,
+      "audio": "/audio/mandarin/l1-h-u4e0a.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-午",
+      "hanzi": "午",
+      "pinyin": "wǔ",
+      "meaning": "mediodía",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l1-h-u5348.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-下",
+      "hanzi": "下",
+      "pinyin": "xià",
+      "meaning": "abajo; después",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 3,
+      "namedStrokes": 3,
+      "audio": "/audio/mandarin/l5-d7a274e7ddddd3a4.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-晚",
+      "hanzi": "晚",
+      "pinyin": "wǎn",
+      "meaning": "tarde; noche",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/l1-h-u665a.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-安",
+      "hanzi": "安",
+      "pinyin": "ān",
+      "meaning": "paz; tranquilo",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l1-h-u5b89.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "c-一",
+      "hanzi": "一",
+      "pinyin": "yī",
+      "meaning": "uno",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 1,
+      "namedStrokes": 1,
+      "audio": "/audio/mandarin/l5-fa491c5c2d4280d7.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-二",
+      "hanzi": "二",
+      "pinyin": "èr",
+      "meaning": "dos",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 2,
+      "namedStrokes": 2,
+      "audio": "/audio/mandarin/l1-h-u4e8c.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-三",
+      "hanzi": "三",
+      "pinyin": "sān",
+      "meaning": "tres",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 3,
+      "namedStrokes": 3,
+      "audio": "/audio/mandarin/l1-h-u4e09.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-四",
+      "hanzi": "四",
+      "pinyin": "sì",
+      "meaning": "cuatro",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l1-h-u56db.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-五",
+      "hanzi": "五",
+      "pinyin": "wǔ",
+      "meaning": "cinco",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l1-h-u4e94.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-六",
+      "hanzi": "六",
+      "pinyin": "liù",
+      "meaning": "seis",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l1-h-u516d.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-七",
+      "hanzi": "七",
+      "pinyin": "qī",
+      "meaning": "siete",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 2,
+      "namedStrokes": 2,
+      "audio": "/audio/mandarin/l1-h-u4e03.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-八",
+      "hanzi": "八",
+      "pinyin": "bā",
+      "meaning": "ocho",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 2,
+      "namedStrokes": 2,
+      "audio": "/audio/mandarin/l1-h-u516b.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-九",
+      "hanzi": "九",
+      "pinyin": "jiǔ",
+      "meaning": "nueve",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 2,
+      "namedStrokes": 2,
+      "audio": "/audio/mandarin/l1-h-u4e5d.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-十",
+      "hanzi": "十",
+      "pinyin": "shí",
+      "meaning": "diez",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 2,
+      "namedStrokes": 2,
+      "audio": "/audio/mandarin/l1-h-u5341.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-百",
+      "hanzi": "百",
+      "pinyin": "bǎi",
+      "meaning": "cien",
+      "writingRequired": true,
+      "referenceLessons": [
+        1
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l1-h-u767e.mp3",
+      "contexts": 2
+    },
+    {
+      "id": "c-千",
+      "hanzi": "千",
+      "pinyin": "qiān",
+      "meaning": "mil",
+      "writingRequired": true,
+      "referenceLessons": [
+        1
+      ],
+      "strokeCount": 3,
+      "namedStrokes": 3,
+      "audio": "/audio/mandarin/l1-h-u5343.mp3",
+      "contexts": 2
+    },
+    {
+      "id": "c-您",
+      "hanzi": "您",
+      "pinyin": "nín",
+      "meaning": "usted",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/l1-v-7a424449a3.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-在",
+      "hanzi": "在",
+      "pinyin": "zài",
+      "meaning": "estar; encontrarse",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l1-h-u5728.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-吗",
+      "hanzi": "吗",
+      "pinyin": "ma",
+      "meaning": "partícula interrogativa",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/pinyin/tone-neutral-ma.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-进",
+      "hanzi": "进",
+      "pinyin": "jìn",
+      "meaning": "entrar",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l1-h-u8fdb.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "c-坐",
+      "hanzi": "坐",
+      "pinyin": "zuò",
+      "meaning": "sentarse",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3,
+        4
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l1-h-u5750.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "c-谢",
+      "hanzi": "谢",
+      "pinyin": "xiè",
+      "meaning": "agradecer",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "strokeCount": 12,
+      "namedStrokes": 12,
+      "audio": "/audio/mandarin/l1-h-u8c22.mp3",
+      "contexts": 9
+    },
+    {
+      "id": "c-最",
+      "hanzi": "最",
+      "pinyin": "zuì",
+      "meaning": "más; el máximo",
+      "writingRequired": true,
+      "referenceLessons": [
+        1
+      ],
+      "strokeCount": 12,
+      "namedStrokes": 12,
+      "audio": "/audio/mandarin/l1-h-u6700.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-近",
+      "hanzi": "近",
+      "pinyin": "jìn",
+      "meaning": "cerca; reciente",
+      "writingRequired": true,
+      "referenceLessons": [
+        1
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l1-h-u8fd1.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-怎",
+      "hanzi": "怎",
+      "pinyin": "zěn",
+      "meaning": "cómo",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l1-h-u600e.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-样",
+      "hanzi": "样",
+      "pinyin": "yàng",
+      "meaning": "forma; manera",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/l1-h-u6837.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-忙",
+      "hanzi": "忙",
+      "pinyin": "máng",
+      "meaning": "ocupado",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l1-v-mang.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-呢",
+      "hanzi": "呢",
+      "pinyin": "ne",
+      "meaning": "partícula interrogativa",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l1-v-dcf66dcd60.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-不",
+      "hanzi": "不",
+      "pinyin": "bù",
+      "meaning": "no; negación",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l5-a64f8a6071bd19cf.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-太",
+      "hanzi": "太",
+      "pinyin": "tài",
+      "meaning": "demasiado; muy",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l1-h-u592a.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-他",
+      "hanzi": "他",
+      "pinyin": "tā",
+      "meaning": "él",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l1-h-u4ed6.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-困",
+      "hanzi": "困",
+      "pinyin": "kùn",
+      "meaning": "tener sueño",
+      "writingRequired": true,
+      "referenceLessons": [
+        1
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l1-v-kun.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "c-渴",
+      "hanzi": "渴",
+      "pinyin": "kě",
+      "meaning": "tener sed",
+      "writingRequired": true,
+      "referenceLessons": [
+        1
+      ],
+      "strokeCount": 12,
+      "namedStrokes": 12,
+      "audio": "/audio/mandarin/l1-v-ke.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "c-饿",
+      "hanzi": "饿",
+      "pinyin": "è",
+      "meaning": "tener hambre",
+      "writingRequired": true,
+      "referenceLessons": [
+        1
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/l1-v-e.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "c-累",
+      "hanzi": "累",
+      "pinyin": "lèi",
+      "meaning": "estar cansado",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        4
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/l1-v-lei.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-陈",
+      "hanzi": "陈",
+      "pinyin": "chén",
+      "meaning": "Chen; apellido",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l2-v-6a5d848e0d.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-们",
+      "hanzi": "们",
+      "pinyin": "men",
+      "meaning": "plural de pronombres",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l5-f8f56a655762525b.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-这",
+      "hanzi": "这",
+      "pinyin": "zhè",
+      "meaning": "este; esta",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l2-v-542523173c.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-那",
+      "hanzi": "那",
+      "pinyin": "nà",
+      "meaning": "ese; esa",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l2-v-327049aa37.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-是",
+      "hanzi": "是",
+      "pinyin": "shì",
+      "meaning": "ser",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l1-v-30160a21b9.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-谁",
+      "hanzi": "谁",
+      "pinyin": "shéi",
+      "meaning": "quién",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/l3-v-f0ef38a883.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-朋",
+      "hanzi": "朋",
+      "pinyin": "péng",
+      "meaning": "amigo; en 朋友",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l2-h-01fd270dc7.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-友",
+      "hanzi": "友",
+      "pinyin": "yǒu",
+      "meaning": "amigo",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l2-h-6cca7a3ec0.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-刚",
+      "hanzi": "刚",
+      "pinyin": "gāng",
+      "meaning": "recién",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        4,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l2-v-9fa1acaa07.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-到",
+      "hanzi": "到",
+      "pinyin": "dào",
+      "meaning": "llegar",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l2-v-792bbe6e08.mp3",
+      "contexts": 9
+    },
+    {
+      "id": "c-北",
+      "hanzi": "北",
+      "pinyin": "běi",
+      "meaning": "norte",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        4,
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l2-h-48c1462231.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-京",
+      "hanzi": "京",
+      "pinyin": "jīng",
+      "meaning": "capital",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        4,
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l2-h-812aba4f00.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-贵",
+      "hanzi": "贵",
+      "pinyin": "guì",
+      "meaning": "honorable; caro",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l1-v-c02ed4f460.mp3",
+      "contexts": 9
+    },
+    {
+      "id": "c-哪",
+      "hanzi": "哪",
+      "pinyin": "nǎ",
+      "meaning": "cuál",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l2-v-cd963c6bfd.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-国",
+      "hanzi": "国",
+      "pinyin": "guó",
+      "meaning": "país",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l5-f24d220f43840dda.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-人",
+      "hanzi": "人",
+      "pinyin": "rén",
+      "meaning": "persona",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 2,
+      "namedStrokes": 2,
+      "audio": "/audio/mandarin/l2-v-4912771a42.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-学",
+      "hanzi": "学",
+      "pinyin": "xué",
+      "meaning": "estudiar",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l2-h-7c7a06f0ea.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-生",
+      "hanzi": "生",
+      "pinyin": "shēng",
+      "meaning": "nacer; estudiante",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l5-4029950460df71ea.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-习",
+      "hanzi": "习",
+      "pinyin": "xí",
+      "meaning": "practicar",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4
+      ],
+      "strokeCount": 3,
+      "namedStrokes": 3,
+      "audio": "/audio/mandarin/l2-h-b047fcdc80.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-汉",
+      "hanzi": "汉",
+      "pinyin": "hàn",
+      "meaning": "chino; Han",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l2-h-8be87291bd.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-语",
+      "hanzi": "语",
+      "pinyin": "yǔ",
+      "meaning": "lengua",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l2-h-21c857be01.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-美",
+      "hanzi": "美",
+      "pinyin": "měi",
+      "meaning": "bello; Estados Unidos",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l2-h-88583a5ba0.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-中",
+      "hanzi": "中",
+      "pinyin": "zhōng",
+      "meaning": "centro; China",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l5-8e4951ccd217c125.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-秘",
+      "hanzi": "秘",
+      "pinyin": "bì",
+      "meaning": "en 秘鲁",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/l2-h-9b1bab382a.mp3",
+      "contexts": 10
+    },
+    {
+      "id": "c-鲁",
+      "hanzi": "鲁",
+      "pinyin": "lǔ",
+      "meaning": "Lu; en 秘鲁",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4
+      ],
+      "strokeCount": 12,
+      "namedStrokes": 12,
+      "audio": "/audio/mandarin/l2-h-1f285a2d00.mp3",
+      "contexts": 10
+    },
+    {
+      "id": "c-英",
+      "hanzi": "英",
+      "pinyin": "yīng",
+      "meaning": "inglés; Inglaterra",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l5-29e72e25d19f0313.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-德",
+      "hanzi": "德",
+      "pinyin": "dé",
+      "meaning": "virtud; Alemania",
+      "writingRequired": true,
+      "referenceLessons": [
+        2
+      ],
+      "strokeCount": 15,
+      "namedStrokes": 15,
+      "audio": "/audio/mandarin/l2-h-69b5356d4f.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "c-法",
+      "hanzi": "法",
+      "pinyin": "fǎ",
+      "meaning": "método; Francia",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        4,
+        5
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l2-h-67be11d8f0.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-日",
+      "hanzi": "日",
+      "pinyin": "rì",
+      "meaning": "día; Japón",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        5
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l5-e59c83c8a7737216.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-本",
+      "hanzi": "本",
+      "pinyin": "běn",
+      "meaning": "origen; clasificador",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l2-h-d3cc0cab9c.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "c-西",
+      "hanzi": "西",
+      "pinyin": "xī",
+      "meaning": "oeste",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l2-h-2f64b5a67e.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-班",
+      "hanzi": "班",
+      "pinyin": "bān",
+      "meaning": "clase; grupo",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/l2-h-1f7fea733e.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-牙",
+      "hanzi": "牙",
+      "pinyin": "yá",
+      "meaning": "diente",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l2-h-87d892e099.mp3",
+      "contexts": 11
+    },
+    {
+      "id": "c-加",
+      "hanzi": "加",
+      "pinyin": "jiā",
+      "meaning": "añadir; Canadá",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        4,
+        5
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l5-fdd6f38e8ba65f4d.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-拿",
+      "hanzi": "拿",
+      "pinyin": "ná",
+      "meaning": "tomar; Canadá",
+      "writingRequired": true,
+      "referenceLessons": [
+        2
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/l2-h-748adc7ea1.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "c-大",
+      "hanzi": "大",
+      "pinyin": "dà",
+      "meaning": "grande",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 3,
+      "namedStrokes": 3,
+      "audio": "/audio/mandarin/l5-96fc7b6a647a4adb.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-墨",
+      "hanzi": "墨",
+      "pinyin": "mò",
+      "meaning": "tinta; México",
+      "writingRequired": true,
+      "referenceLessons": [
+        2
+      ],
+      "strokeCount": 15,
+      "namedStrokes": 15,
+      "audio": "/audio/mandarin/l2-h-e81f8bad67.mp3",
+      "contexts": 2
+    },
+    {
+      "id": "c-哥",
+      "hanzi": "哥",
+      "pinyin": "gē",
+      "meaning": "hermano mayor; México",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        5
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/l3-h-cdfd26daa2.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-澳",
+      "hanzi": "澳",
+      "pinyin": "ào",
+      "meaning": "Australia",
+      "writingRequired": true,
+      "referenceLessons": [
+        2
+      ],
+      "strokeCount": 15,
+      "namedStrokes": 15,
+      "audio": "/audio/mandarin/l2-h-0aafa2dc26.mp3",
+      "contexts": 2
+    },
+    {
+      "id": "c-利",
+      "hanzi": "利",
+      "pinyin": "lì",
+      "meaning": "beneficio",
+      "writingRequired": true,
+      "referenceLessons": [
+        2
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l2-h-1a1001e5f3.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "c-亚",
+      "hanzi": "亚",
+      "pinyin": "yà",
+      "meaning": "Asia",
+      "writingRequired": true,
+      "referenceLessons": [
+        2
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l2-h-3275594afd.mp3",
+      "contexts": 2
+    },
+    {
+      "id": "c-会",
+      "hanzi": "会",
+      "pinyin": "huì",
+      "meaning": "saber; poder",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l5-9106f44ee0fa5e00.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-说",
+      "hanzi": "说",
+      "pinyin": "shuō",
+      "meaning": "hablar; decir",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l2-v-be3058692f.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-俄",
+      "hanzi": "俄",
+      "pinyin": "é",
+      "meaning": "Rusia",
+      "writingRequired": true,
+      "referenceLessons": [
+        2
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l2-h-9e71f0ccfa.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "c-韩",
+      "hanzi": "韩",
+      "pinyin": "hán",
+      "meaning": "Corea",
+      "writingRequired": true,
+      "referenceLessons": [
+        2
+      ],
+      "strokeCount": 12,
+      "namedStrokes": 12,
+      "audio": "/audio/mandarin/l2-h-2a4e9b964e.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "c-点",
+      "hanzi": "点",
+      "pinyin": "diǎn",
+      "meaning": "punto; un poco",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l2-h-1d59ea7cbb-dian3-1ae0b095059d.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-心",
+      "hanzi": "心",
+      "pinyin": "xīn",
+      "meaning": "corazón",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l2-h-481e547b1a.mp3",
+      "contexts": 11
+    },
+    {
+      "id": "c-吃",
+      "hanzi": "吃",
+      "pinyin": "chī",
+      "meaning": "comer",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l2-v-a10d4d5a63.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-爸",
+      "hanzi": "爸",
+      "pinyin": "bà",
+      "meaning": "papá",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l2-h-a732e56e22.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-海",
+      "hanzi": "海",
+      "pinyin": "hǎi",
+      "meaning": "mar",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        4
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/l2-h-b188c5e30d.mp3",
+      "contexts": 11
+    },
+    {
+      "id": "c-喜",
+      "hanzi": "喜",
+      "pinyin": "xǐ",
+      "meaning": "gustar; alegría",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 12,
+      "namedStrokes": 12,
+      "audio": "/audio/mandarin/l2-h-d21b4e3093.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-欢",
+      "hanzi": "欢",
+      "pinyin": "huan",
+      "meaning": "gustar; en 喜欢",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l2-h-7be144783c.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-米",
+      "hanzi": "米",
+      "pinyin": "mǐ",
+      "meaning": "arroz",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l2-h-ee7f305751.mp3",
+      "contexts": 8
+    },
+    {
+      "id": "c-饭",
+      "hanzi": "饭",
+      "pinyin": "fàn",
+      "meaning": "comida; arroz",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l2-h-cded745e11.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-妈",
+      "hanzi": "妈",
+      "pinyin": "mā",
+      "meaning": "mamá",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/pinyin/tone-1-ma.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-面",
+      "hanzi": "面",
+      "pinyin": "miàn",
+      "meaning": "harina; fideos",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        5,
+        6
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l5-84f09a3beface489.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-条",
+      "hanzi": "条",
+      "pinyin": "tiáo",
+      "meaning": "tira; clasificador",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l2-h-bce2ef6151.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-饺",
+      "hanzi": "饺",
+      "pinyin": "jiǎo",
+      "meaning": "empanadilla",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l2-h-16a7886637.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-子",
+      "hanzi": "子",
+      "pinyin": "zi",
+      "meaning": "sufijo nominal; hijo",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "strokeCount": 3,
+      "namedStrokes": 3,
+      "audio": "/audio/mandarin/l2-h-219e08c960.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-包",
+      "hanzi": "包",
+      "pinyin": "bāo",
+      "meaning": "envolver; bollo",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l2-h-7e396634c6.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-小",
+      "hanzi": "小",
+      "pinyin": "xiǎo",
+      "meaning": "pequeño",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 3,
+      "namedStrokes": 3,
+      "audio": "/audio/mandarin/l2-v-922517cc73.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-看",
+      "hanzi": "看",
+      "pinyin": "kàn",
+      "meaning": "mirar; ver",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l2-v-5f386ebdbb.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-都",
+      "hanzi": "都",
+      "pinyin": "dōu",
+      "meaning": "todos; ambos",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/l2-v-d51dd8d130.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-要",
+      "hanzi": "要",
+      "pinyin": "yào",
+      "meaning": "querer; pedir",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l2-v-93e27107a1.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-和",
+      "hanzi": "和",
+      "pinyin": "hé",
+      "meaning": "y; con",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l2-v-9a3eb34097.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-王",
+      "hanzi": "王",
+      "pinyin": "wáng",
+      "meaning": "Wang; rey",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l2-h-c7b16c7c46.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-云",
+      "hanzi": "云",
+      "pinyin": "yún",
+      "meaning": "nube; Yun",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l2-h-2ea617b5cf.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-喝",
+      "hanzi": "喝",
+      "pinyin": "hē",
+      "meaning": "beber",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 12,
+      "namedStrokes": 12,
+      "audio": "/audio/mandarin/l2-v-9982c5ced1.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-水",
+      "hanzi": "水",
+      "pinyin": "shuǐ",
+      "meaning": "agua",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l2-v-8ffbf19293.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "c-茶",
+      "hanzi": "茶",
+      "pinyin": "chá",
+      "meaning": "té",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l2-v-97a08c17dc.mp3",
+      "contexts": 9
+    },
+    {
+      "id": "c-咖",
+      "hanzi": "咖",
+      "pinyin": "kā",
+      "meaning": "café; sonido",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l2-h-3439a0fcc4.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-啡",
+      "hanzi": "啡",
+      "pinyin": "fēi",
+      "meaning": "café; sonido",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/l2-h-4b15cfa5df.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-可",
+      "hanzi": "可",
+      "pinyin": "kě",
+      "meaning": "poder; en 可乐",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l5-203065ed0eb45513.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-乐",
+      "hanzi": "乐",
+      "pinyin": "lè",
+      "meaning": "alegría; en 可乐",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        5
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l5-f668895655ecf6b6.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-牛",
+      "hanzi": "牛",
+      "pinyin": "niú",
+      "meaning": "vaca",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        5
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l5-61de36d009abbe3d.mp3",
+      "contexts": 6
+    },
+    {
+      "id": "c-奶",
+      "hanzi": "奶",
+      "pinyin": "nǎi",
+      "meaning": "leche; abuela",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        5
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l2-h-d449dfee7f.mp3",
+      "contexts": 6
+    },
+    {
+      "id": "c-饮",
+      "hanzi": "饮",
+      "pinyin": "yǐn",
+      "meaning": "beber; bebida",
+      "writingRequired": true,
+      "referenceLessons": [
+        2
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l2-h-db112229d5.mp3",
+      "contexts": 2
+    },
+    {
+      "id": "c-料",
+      "hanzi": "料",
+      "pinyin": "liào",
+      "meaning": "material; bebida",
+      "writingRequired": true,
+      "referenceLessons": [
+        2
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/l2-h-49efc042ad.mp3",
+      "contexts": 2
+    },
+    {
+      "id": "c-果",
+      "hanzi": "果",
+      "pinyin": "guǒ",
+      "meaning": "fruta",
+      "writingRequired": true,
+      "referenceLessons": [
+        2
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l2-h-d62c08d357.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "c-汁",
+      "hanzi": "汁",
+      "pinyin": "zhī",
+      "meaning": "jugo",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l2-h-c5004f91cd.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "c-家",
+      "hanzi": "家",
+      "pinyin": "jiā",
+      "meaning": "familia; hogar",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/l5-64e7f745efaada2d.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-有",
+      "hanzi": "有",
+      "pinyin": "yǒu",
+      "meaning": "tener; haber",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l3-v-fbd5b75066.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-几",
+      "hanzi": "几",
+      "pinyin": "jǐ",
+      "meaning": "cuántos",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 2,
+      "namedStrokes": 2,
+      "audio": "/audio/mandarin/l3-v-68bf29eb00.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-口",
+      "hanzi": "口",
+      "pinyin": "kǒu",
+      "meaning": "boca; clasificador familiar",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 3,
+      "namedStrokes": 3,
+      "audio": "/audio/mandarin/l3-v-1e7b07e714.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-的",
+      "hanzi": "的",
+      "pinyin": "de",
+      "meaning": "partícula posesiva",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l3-v-0746bd6249.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-照",
+      "hanzi": "照",
+      "pinyin": "zhào",
+      "meaning": "foto; iluminar",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4
+      ],
+      "strokeCount": 13,
+      "namedStrokes": 13,
+      "audio": "/audio/mandarin/l3-h-ad26c7835a.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-片",
+      "hanzi": "片",
+      "pinyin": "piàn",
+      "meaning": "lámina; parte",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l3-h-8f603fb51d.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-做",
+      "hanzi": "做",
+      "pinyin": "zuò",
+      "meaning": "hacer",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/l3-v-715fb2c0ef.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-工",
+      "hanzi": "工",
+      "pinyin": "gōng",
+      "meaning": "trabajo",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4,
+        6
+      ],
+      "strokeCount": 3,
+      "namedStrokes": 3,
+      "audio": "/audio/mandarin/l3-h-a26028c019.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-作",
+      "hanzi": "作",
+      "pinyin": "zuò",
+      "meaning": "hacer; trabajo",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l3-h-e8555020c4.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-医",
+      "hanzi": "医",
+      "pinyin": "yī",
+      "meaning": "medicina",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        5
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l3-h-67426806bc.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-弟",
+      "hanzi": "弟",
+      "pinyin": "dì",
+      "meaning": "hermano menor",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l3-h-276330ed97.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-共",
+      "hanzi": "共",
+      "pinyin": "gòng",
+      "meaning": "en total",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l3-h-3b6ef811b8.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-个",
+      "hanzi": "个",
+      "pinyin": "gè",
+      "meaning": "clasificador general",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 3,
+      "namedStrokes": 3,
+      "audio": "/audio/mandarin/l3-v-f7b2a6ee68.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-两",
+      "hanzi": "两",
+      "pinyin": "liǎng",
+      "meaning": "dos antes de clasificador",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l3-v-aaaf4cd738.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-姐",
+      "hanzi": "姐",
+      "pinyin": "jiě",
+      "meaning": "hermana mayor",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l3-h-a151a26775.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-还",
+      "hanzi": "还",
+      "pinyin": "hái",
+      "meaning": "además; todavía",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l3-v-08819c1294.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-妹",
+      "hanzi": "妹",
+      "pinyin": "mèi",
+      "meaning": "hermana menor",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l3-h-28f8949739.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-没",
+      "hanzi": "没",
+      "pinyin": "méi",
+      "meaning": "no tener",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l3-v-ca0bc5e27c.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-狗",
+      "hanzi": "狗",
+      "pinyin": "gǒu",
+      "meaning": "perro",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        5,
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l5-64c6c23ed0873c8b.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-贝",
+      "hanzi": "贝",
+      "pinyin": "bèi",
+      "meaning": "Beibei; concha",
+      "writingRequired": true,
+      "referenceLessons": [
+        3
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l3-h-48d8344774.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-张",
+      "hanzi": "张",
+      "pinyin": "zhāng",
+      "meaning": "clasificador de objetos planos",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l3-v-9273cc90ea.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-爷",
+      "hanzi": "爷",
+      "pinyin": "yé",
+      "meaning": "abuelo",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l3-h-7bedcf1b9c.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "c-外",
+      "hanzi": "外",
+      "pinyin": "wài",
+      "meaning": "exterior; materno",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l3-h-0e0faa1d83.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-公",
+      "hanzi": "公",
+      "pinyin": "gōng",
+      "meaning": "abuelo; público",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l3-h-2eb8ebf6c3.mp3",
+      "contexts": 10
+    },
+    {
+      "id": "c-婆",
+      "hanzi": "婆",
+      "pinyin": "pó",
+      "meaning": "abuela",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/l3-h-3350da940d.mp3",
+      "contexts": 2
+    },
+    {
+      "id": "c-姥",
+      "hanzi": "姥",
+      "pinyin": "lǎo",
+      "meaning": "abuela materna",
+      "writingRequired": true,
+      "referenceLessons": [
+        2
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l3-h-738757461a.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "c-猫",
+      "hanzi": "猫",
+      "pinyin": "māo",
+      "meaning": "gato",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/l3-h-e10bd9f09b.mp3",
+      "contexts": 9
+    },
+    {
+      "id": "c-只",
+      "hanzi": "只",
+      "pinyin": "zhī",
+      "meaning": "clasificador de animales",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4,
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l3-h-462f338ef8.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-真",
+      "hanzi": "真",
+      "pinyin": "zhēn",
+      "meaning": "realmente",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/l3-v-e756c6ef2a.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-漂",
+      "hanzi": "漂",
+      "pinyin": "piào",
+      "meaning": "bonito; en 漂亮",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        5
+      ],
+      "strokeCount": 14,
+      "namedStrokes": 14,
+      "audio": "/audio/mandarin/l3-h-dc06011563.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-亮",
+      "hanzi": "亮",
+      "pinyin": "liàng",
+      "meaning": "luminoso; bonito",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        5
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l3-h-caf3447b27.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-女",
+      "hanzi": "女",
+      "pinyin": "nǚ",
+      "meaning": "mujer; hija",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 3,
+      "namedStrokes": 3,
+      "audio": "/audio/mandarin/l3-h-26bc84961c.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-儿",
+      "hanzi": "儿",
+      "pinyin": "ér",
+      "meaning": "hijo; sufijo",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 2,
+      "namedStrokes": 2,
+      "audio": "/audio/mandarin/l5-e18ab74ae09bd188.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-今",
+      "hanzi": "今",
+      "pinyin": "jīn",
+      "meaning": "actual; hoy",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l3-h-d2130d70a0.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-年",
+      "hanzi": "年",
+      "pinyin": "nián",
+      "meaning": "año",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l3-v-6f14c2641c.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-岁",
+      "hanzi": "岁",
+      "pinyin": "suì",
+      "meaning": "años de edad",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l3-v-86f13375c1.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-天",
+      "hanzi": "天",
+      "pinyin": "tiān",
+      "meaning": "día; cielo",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l5-563250052d3536de.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-钢",
+      "hanzi": "钢",
+      "pinyin": "gāng",
+      "meaning": "acero; en 钢琴",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l3-h-67ea6cdf0c.mp3",
+      "contexts": 11
+    },
+    {
+      "id": "c-琴",
+      "hanzi": "琴",
+      "pinyin": "qín",
+      "meaning": "instrumento de cuerda; piano",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4
+      ],
+      "strokeCount": 12,
+      "namedStrokes": 12,
+      "audio": "/audio/mandarin/l3-h-aef8cdec9f.mp3",
+      "contexts": 11
+    },
+    {
+      "id": "c-课",
+      "hanzi": "课",
+      "pinyin": "kè",
+      "meaning": "clase; lección",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/l3-v-510db33099.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-孩",
+      "hanzi": "孩",
+      "pinyin": "hái",
+      "meaning": "niño; hijo",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l3-h-5ac69ad696.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-啊",
+      "hanzi": "啊",
+      "pinyin": "a",
+      "meaning": "partícula modal",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/l3-v-925718bec9.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "c-陆",
+      "hanzi": "陆",
+      "pinyin": "lù",
+      "meaning": "Lu; tierra firme",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l3-h-87644e683b.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-雨",
+      "hanzi": "雨",
+      "pinyin": "yǔ",
+      "meaning": "lluvia; Yu",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l3-h-8995b89799.mp3",
+      "contexts": 11
+    },
+    {
+      "id": "c-平",
+      "hanzi": "平",
+      "pinyin": "píng",
+      "meaning": "llano; Ping",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l3-h-3c9abaf959.mp3",
+      "contexts": 10
+    },
+    {
+      "id": "c-爱",
+      "hanzi": "爱",
+      "pinyin": "ài",
+      "meaning": "amar; encantador",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        5
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/l3-h-7b8ef4b58a.mp3",
+      "contexts": 10
+    },
+    {
+      "id": "c-男",
+      "hanzi": "男",
+      "pinyin": "nán",
+      "meaning": "hombre; masculino",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l3-h-51625d909c.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-帅",
+      "hanzi": "帅",
+      "pinyin": "shuài",
+      "meaning": "guapo",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l3-h-7bf4a20c82.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "c-餐",
+      "hanzi": "餐",
+      "pinyin": "cān",
+      "meaning": "comida",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        6
+      ],
+      "strokeCount": 16,
+      "namedStrokes": 16,
+      "audio": "/audio/mandarin/l3-h-e463d156c0.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "c-厅",
+      "hanzi": "厅",
+      "pinyin": "tīng",
+      "meaning": "salón",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l3-h-f54d73f7ab.mp3",
+      "contexts": 11
+    },
+    {
+      "id": "c-去",
+      "hanzi": "去",
+      "pinyin": "qù",
+      "meaning": "ir",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l3-h-033fd274f0.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-找",
+      "hanzi": "找",
+      "pinyin": "zhǎo",
+      "meaning": "buscar",
+      "writingRequired": true,
+      "referenceLessons": [
+        3
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l3-h-76aac2ff5f.mp3",
+      "contexts": 2
+    },
+    {
+      "id": "c-弹",
+      "hanzi": "弹",
+      "pinyin": "tán",
+      "meaning": "tocar un instrumento",
+      "writingRequired": true,
+      "referenceLessons": [
+        3
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/l3-h-8dae9fd3c6.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "c-分",
+      "hanzi": "分",
+      "pinyin": "fēn",
+      "meaning": "minuto",
+      "writingRequired": true,
+      "referenceLessons": [
+        4
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l4-c65c4b824d8f2161.mp3",
+      "contexts": 8
+    },
+    {
+      "id": "c-刻",
+      "hanzi": "刻",
+      "pinyin": "kè",
+      "meaning": "cuarto (de una hora)",
+      "writingRequired": true,
+      "referenceLessons": [
+        4
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l4-51b0d9e1178812b8.mp3",
+      "contexts": 9
+    },
+    {
+      "id": "c-半",
+      "hanzi": "半",
+      "pinyin": "bàn",
+      "meaning": "mitad",
+      "writingRequired": true,
+      "referenceLessons": [
+        4
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l4-a816dee397746a56.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-差",
+      "hanzi": "差",
+      "pinyin": "chā",
+      "meaning": "diferencia; desigualdad",
+      "writingRequired": true,
+      "referenceLessons": [
+        4
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l4-689154fdba57ea4a.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "c-明",
+      "hanzi": "明",
+      "pinyin": "míng",
+      "meaning": "claro; brillante",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l4-b7d643150c0f0e32.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-多",
+      "hanzi": "多",
+      "pinyin": "duō",
+      "meaning": "mucho; más",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l5-98e27a4c93f0624f.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-少",
+      "hanzi": "少",
+      "pinyin": "shǎo",
+      "meaning": "poco",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l4-e621c36c60bc2bc7.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-特",
+      "hanzi": "特",
+      "pinyin": "tè",
+      "meaning": "especial",
+      "writingRequired": true,
+      "referenceLessons": [
+        4,
+        5
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/l4-e60f8bf1ef8a6dc4.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-别",
+      "hanzi": "别",
+      "pinyin": "bié",
+      "meaning": "otro; distinto",
+      "writingRequired": true,
+      "referenceLessons": [
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l4-1c5d49248a2ec60c.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-对",
+      "hanzi": "对",
+      "pinyin": "duì",
+      "meaning": "sí; correcto",
+      "writingRequired": true,
+      "referenceLessons": [
+        4,
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l4-a882489d32d25208.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-时",
+      "hanzi": "时",
+      "pinyin": "shí",
+      "meaning": "tiempo; hora",
+      "writingRequired": true,
+      "referenceLessons": [
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l4-e716531a2cfa9a35.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-间",
+      "hanzi": "间",
+      "pinyin": "jiān",
+      "meaning": "espacio; intervalo",
+      "writingRequired": true,
+      "referenceLessons": [
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l4-1f32641c820967a3.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-电",
+      "hanzi": "电",
+      "pinyin": "diàn",
+      "meaning": "electricidad",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l4-70115a45cda13be9.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-影",
+      "hanzi": "影",
+      "pinyin": "yǐng",
+      "meaning": "sombra; imagen",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 15,
+      "namedStrokes": 15,
+      "audio": "/audio/mandarin/l4-3b1d4bd57a9e8b64.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-起",
+      "hanzi": "起",
+      "pinyin": "qǐ",
+      "meaning": "levantarse; comenzar",
+      "writingRequired": true,
+      "referenceLessons": [
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/l4-cb774d40003c4a4b.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-恐",
+      "hanzi": "恐",
+      "pinyin": "kǒng",
+      "meaning": "temer",
+      "writingRequired": true,
+      "referenceLessons": [
+        4
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/l4-9c6559e9d7113ce8.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "c-怕",
+      "hanzi": "怕",
+      "pinyin": "pà",
+      "meaning": "temer; tener miedo",
+      "writingRequired": true,
+      "referenceLessons": [
+        4
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l4-5cc179a76dfe77a4.mp3",
+      "contexts": 7
+    },
+    {
+      "id": "c-行",
+      "hanzi": "行",
+      "pinyin": "xíng",
+      "meaning": "estar bien",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        4,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l4-2acf270f3700a83a.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-练",
+      "hanzi": "练",
+      "pinyin": "liàn",
+      "meaning": "practicar; entrenar",
+      "writingRequired": true,
+      "referenceLessons": [
+        4
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l4-7c3125b2a24a1b2a.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-现",
+      "hanzi": "现",
+      "pinyin": "xiàn",
+      "meaning": "actual; aparecer",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4,
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l4-5bd2ef2c487c5be9.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-回",
+      "hanzi": "回",
+      "pinyin": "huí",
+      "meaning": "regresar",
+      "writingRequired": true,
+      "referenceLessons": [
+        4,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l4-c3a86043ede2a751.mp3",
+      "contexts": 8
+    },
+    {
+      "id": "c-来",
+      "hanzi": "来",
+      "pinyin": "lái",
+      "meaning": "venir",
+      "writingRequired": true,
+      "referenceLessons": [
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l4-e456cb3480df9b4b.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-校",
+      "hanzi": "校",
+      "pinyin": "xiào",
+      "meaning": "escuela",
+      "writingRequired": true,
+      "referenceLessons": [
+        4,
+        6
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/l4-2fec9204e7125490.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-活",
+      "hanzi": "活",
+      "pinyin": "huó",
+      "meaning": "vivir; vivo",
+      "writingRequired": true,
+      "referenceLessons": [
+        4,
+        5
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l4-72237a5ce426b583.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-动",
+      "hanzi": "动",
+      "pinyin": "dòng",
+      "meaning": "moverse; movimiento",
+      "writingRequired": true,
+      "referenceLessons": [
+        4,
+        5
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l4-a40a13d6db8e83df.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-听",
+      "hanzi": "听",
+      "pinyin": "tīng",
+      "meaning": "escuchar",
+      "writingRequired": true,
+      "referenceLessons": [
+        4
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l4-8c6b45ef49046edc.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-意",
+      "hanzi": "意",
+      "pinyin": "yì",
+      "meaning": "idea; intención",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 13,
+      "namedStrokes": 13,
+      "audio": "/audio/mandarin/l5-0121153c2d13faa5.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-思",
+      "hanzi": "思",
+      "pinyin": "sī",
+      "meaning": "pensar; pensamiento",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l5-4f151dfada89fb5f.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-专",
+      "hanzi": "专",
+      "pinyin": "zhuān",
+      "meaning": "especializado",
+      "writingRequired": true,
+      "referenceLessons": [
+        4
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l4-3bcef46008a1c302.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-业",
+      "hanzi": "业",
+      "pinyin": "yè",
+      "meaning": "profesión; actividad",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        3,
+        4
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l4-6df4b908ef4e44f0.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-主",
+      "hanzi": "主",
+      "pinyin": "zhǔ",
+      "meaning": "principal; dueño",
+      "writingRequired": true,
+      "referenceLessons": [
+        4
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l4-104bd8e4ac57b613.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "c-星",
+      "hanzi": "星",
+      "pinyin": "xīng",
+      "meaning": "estrella",
+      "writingRequired": true,
+      "referenceLessons": [
+        4,
+        5
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l5-40964916d98dc6a9.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-期",
+      "hanzi": "期",
+      "pinyin": "qī",
+      "meaning": "período",
+      "writingRequired": true,
+      "referenceLessons": [
+        4,
+        5
+      ],
+      "strokeCount": 12,
+      "namedStrokes": 12,
+      "audio": "/audio/mandarin/l5-3c24d2f622ef4cf7.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-事",
+      "hanzi": "事",
+      "pinyin": "shì",
+      "meaning": "asunto",
+      "writingRequired": true,
+      "referenceLessons": [
+        4,
+        5
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l5-735b72d3837d4402.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "c-聚",
+      "hanzi": "聚",
+      "pinyin": "jù",
+      "meaning": "reunir",
+      "writingRequired": true,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 14,
+      "namedStrokes": 14,
+      "audio": "/audio/mandarin/l5-2b09cbe444be42d1.mp3",
+      "contexts": 7
+    },
+    {
+      "id": "c-唱",
+      "hanzi": "唱",
+      "pinyin": "chàng",
+      "meaning": "cantar",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/l5-0137e7f288e70221.mp3",
+      "contexts": 10
+    },
+    {
+      "id": "c-歌",
+      "hanzi": "歌",
+      "pinyin": "gē",
+      "meaning": "canción",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 14,
+      "namedStrokes": 14,
+      "audio": "/audio/mandarin/l5-03b0fe48bc29ca8b.mp3",
+      "contexts": 11
+    },
+    {
+      "id": "c-跳",
+      "hanzi": "跳",
+      "pinyin": "tiào",
+      "meaning": "saltar",
+      "writingRequired": true,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 13,
+      "namedStrokes": 13,
+      "audio": "/audio/mandarin/l5-50041f365983f635.mp3",
+      "contexts": 7
+    },
+    {
+      "id": "c-舞",
+      "hanzi": "舞",
+      "pinyin": "wǔ",
+      "meaning": "danza",
+      "writingRequired": true,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 14,
+      "namedStrokes": 14,
+      "audio": "/audio/mandarin/l5-8561307b726d057d.mp3",
+      "contexts": 6
+    },
+    {
+      "id": "c-参",
+      "hanzi": "参",
+      "pinyin": "cān",
+      "meaning": "participar",
+      "writingRequired": true,
+      "referenceLessons": [
+        4,
+        5
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l5-58167bc65885afc3.mp3",
+      "contexts": 7
+    },
+    {
+      "id": "c-号",
+      "hanzi": "号",
+      "pinyin": "hào",
+      "meaning": "fecha; número",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        5,
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l5-23b3d32e9b93dd0a.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-月",
+      "hanzi": "月",
+      "pinyin": "yuè",
+      "meaning": "mes",
+      "writingRequired": true,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l5-3b11839ecccb5901.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-惜",
+      "hanzi": "惜",
+      "pinyin": "xī",
+      "meaning": "apreciar; lamentar",
+      "writingRequired": true,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/l5-7d1759f4dab862f4.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "c-送",
+      "hanzi": "送",
+      "pinyin": "sòng",
+      "meaning": "regalar",
+      "writingRequired": true,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l5-5f3385a7a5d2d87e.mp3",
+      "contexts": 9
+    },
+    {
+      "id": "c-礼",
+      "hanzi": "礼",
+      "pinyin": "lǐ",
+      "meaning": "regalo; cortesía",
+      "writingRequired": true,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l5-b6aeb42d6e5efa10.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "c-物",
+      "hanzi": "物",
+      "pinyin": "wù",
+      "meaning": "cosa",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l5-7a390862e3516da9.mp3",
+      "contexts": 9
+    },
+    {
+      "id": "c-蛋",
+      "hanzi": "蛋",
+      "pinyin": "dàn",
+      "meaning": "huevo",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        5
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/l5-f01d9d212e9acd04.mp3",
+      "contexts": 10
+    },
+    {
+      "id": "c-糕",
+      "hanzi": "糕",
+      "pinyin": "gāo",
+      "meaning": "pastel",
+      "writingRequired": true,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 16,
+      "namedStrokes": 16,
+      "audio": "/audio/mandarin/l5-bf8a262ff2517a4f.mp3",
+      "contexts": 8
+    },
+    {
+      "id": "c-盒",
+      "hanzi": "盒",
+      "pinyin": "hé",
+      "meaning": "caja",
+      "writingRequired": true,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/l5-dd3f90b0fa7b9d4c.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "c-巧",
+      "hanzi": "巧",
+      "pinyin": "qiǎo",
+      "meaning": "hábil",
+      "writingRequired": true,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l5-404c6ef44f286bf6.mp3",
+      "contexts": 6
+    },
+    {
+      "id": "c-克",
+      "hanzi": "克",
+      "pinyin": "kè",
+      "meaning": "vencer; sílaba de 巧克力",
+      "writingRequired": true,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l5-b28b194f906d63af.mp3",
+      "contexts": 6
+    },
+    {
+      "id": "c-力",
+      "hanzi": "力",
+      "pinyin": "lì",
+      "meaning": "fuerza",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "strokeCount": 2,
+      "namedStrokes": 2,
+      "audio": "/audio/mandarin/l5-9662df4d04c478e1.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-出",
+      "hanzi": "出",
+      "pinyin": "chū",
+      "meaning": "salir",
+      "writingRequired": true,
+      "referenceLessons": [
+        5,
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l5-442659da9fcb5af2.mp3",
+      "contexts": 9
+    },
+    {
+      "id": "c-属",
+      "hanzi": "属",
+      "pinyin": "shǔ",
+      "meaning": "pertenecer; ser del signo",
+      "writingRequired": true,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 12,
+      "namedStrokes": 12,
+      "audio": "/audio/mandarin/l5-acc8b2a99748f8d5.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-龙",
+      "hanzi": "龙",
+      "pinyin": "lóng",
+      "meaning": "dragón",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        5
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l5-8d4fc302d499998a.mp3",
+      "contexts": 8
+    },
+    {
+      "id": "c-文",
+      "hanzi": "文",
+      "pinyin": "wén",
+      "meaning": "escritura",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l5-da9b1fb5d197b8b6.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-就",
+      "hanzi": "就",
+      "pinyin": "jiù",
+      "meaning": "precisamente",
+      "writingRequired": true,
+      "referenceLessons": [
+        5,
+        6
+      ],
+      "strokeCount": 12,
+      "namedStrokes": 12,
+      "audio": "/audio/mandarin/l5-2c7c5d11fa9d82ec.mp3",
+      "contexts": 10
+    },
+    {
+      "id": "c-迎",
+      "hanzi": "迎",
+      "pinyin": "yíng",
+      "meaning": "recibir",
+      "writingRequired": true,
+      "referenceLessons": [
+        5,
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l5-bbf57faaac38a61e.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "c-快",
+      "hanzi": "快",
+      "pinyin": "kuài",
+      "meaning": "rápido; en 快乐",
+      "writingRequired": true,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l5-4b6c214d7629d9f3.mp3",
+      "contexts": 8
+    },
+    {
+      "id": "c-客",
+      "hanzi": "客",
+      "pinyin": "kè",
+      "meaning": "invitado",
+      "writingRequired": true,
+      "referenceLessons": [
+        5,
+        6
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l5-cc1a3798f699b6ca.mp3",
+      "contexts": 9
+    },
+    {
+      "id": "c-气",
+      "hanzi": "气",
+      "pinyin": "qì",
+      "meaning": "aire",
+      "writingRequired": true,
+      "referenceLessons": [
+        5,
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l5-0d44f7d35489b476.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "c-祝",
+      "hanzi": "祝",
+      "pinyin": "zhù",
+      "meaning": "desear",
+      "writingRequired": true,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l5-78f6937e92778262.mp3",
+      "contexts": 7
+    },
+    {
+      "id": "c-介",
+      "hanzi": "介",
+      "pinyin": "jiè",
+      "meaning": "intermediar; en 介绍",
+      "writingRequired": true,
+      "referenceLessons": [
+        5,
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/l5-9097121a3edaf7d1.mp3",
+      "contexts": 8
+    },
+    {
+      "id": "c-绍",
+      "hanzi": "绍",
+      "pinyin": "shào",
+      "meaning": "enlazar; en 介绍",
+      "writingRequired": true,
+      "referenceLessons": [
+        5,
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l5-410c89e83c887dd9.mp3",
+      "contexts": 8
+    },
+    {
+      "id": "c-常",
+      "hanzi": "常",
+      "pinyin": "cháng",
+      "meaning": "a menudo",
+      "writingRequired": true,
+      "referenceLessons": [
+        5,
+        6
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/l5-e91eba34f95fd85d.mp3",
+      "contexts": 7
+    },
+    {
+      "id": "c-教",
+      "hanzi": "教",
+      "pinyin": "jiāo",
+      "meaning": "enseñar",
+      "writingRequired": true,
+      "referenceLessons": [
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/l5-8c035ab94a745f92.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-写",
+      "hanzi": "写",
+      "pinyin": "xiě",
+      "meaning": "escribir",
+      "writingRequired": true,
+      "referenceLessons": [
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l5-f76a958e8ee1f726.mp3",
+      "contexts": 9
+    },
+    {
+      "id": "c-昨",
+      "hanzi": "昨",
+      "pinyin": "zuó",
+      "meaning": "ayer",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l5-12fe3bb948559e7e.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "c-寿",
+      "hanzi": "寿",
+      "pinyin": "shòu",
+      "meaning": "longevidad",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        5
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l5-145b67ba71a56d91.mp3",
+      "contexts": 11
+    },
+    {
+      "id": "c-咱",
+      "hanzi": "咱",
+      "pinyin": "zán",
+      "meaning": "nosotros",
+      "writingRequired": true,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/l5-bb6a1a0b1892f801.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "c-干",
+      "hanzi": "干",
+      "pinyin": "gān",
+      "meaning": "secar; en 干杯",
+      "writingRequired": true,
+      "referenceLessons": [
+        1,
+        5
+      ],
+      "strokeCount": 3,
+      "namedStrokes": 3,
+      "audio": "/audio/mandarin/l5-44cdc93021353923.mp3",
+      "contexts": 10
+    },
+    {
+      "id": "c-杯",
+      "hanzi": "杯",
+      "pinyin": "bēi",
+      "meaning": "vaso; copa",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        5
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l5-b263a100fdd97a3a.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-其",
+      "hanzi": "其",
+      "pinyin": "qí",
+      "meaning": "su; suyo",
+      "writingRequired": true,
+      "referenceLessons": [],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l5-d477f2610cef4dd1.mp3",
+      "contexts": 0
+    },
+    {
+      "id": "c-耳",
+      "hanzi": "耳",
+      "pinyin": "ěr",
+      "meaning": "oreja",
+      "writingRequired": true,
+      "referenceLessons": [],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l5-b3368a0a90b64cb0.mp3",
+      "contexts": 0
+    },
+    {
+      "id": "c-虫",
+      "hanzi": "虫",
+      "pinyin": "chóng",
+      "meaning": "insecto; gusano",
+      "writingRequired": true,
+      "referenceLessons": [],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l5-733de483f8647f84.mp3",
+      "contexts": 0
+    },
+    {
+      "id": "c-皿",
+      "hanzi": "皿",
+      "pinyin": "mǐn",
+      "meaning": "vasija",
+      "writingRequired": true,
+      "referenceLessons": [],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/l5-402bc49e85e4a9eb.mp3",
+      "contexts": 0
+    },
+    {
+      "id": "c-尸",
+      "hanzi": "尸",
+      "pinyin": "shī",
+      "meaning": "cadáver",
+      "writingRequired": true,
+      "referenceLessons": [],
+      "strokeCount": 3,
+      "namedStrokes": 3,
+      "audio": "/audio/mandarin/l5-98e68b4e7d9dfe61.mp3",
+      "contexts": 0
+    },
+    {
+      "id": "c-足",
+      "hanzi": "足",
+      "pinyin": "zú",
+      "meaning": "pie",
+      "writingRequired": true,
+      "referenceLessons": [],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/hanzi-ed9d675b3ff17307.mp3",
+      "contexts": 0
+    },
+    {
+      "id": "c-书",
+      "hanzi": "书",
+      "pinyin": "shū",
+      "meaning": "libro",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/vocab-0a6b32721772ca255828.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-东",
+      "hanzi": "东",
+      "pinyin": "dōng",
+      "meaning": "este",
+      "writingRequired": true,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/game-5469a6af4ceaad28.mp3",
+      "contexts": 7
+    },
+    {
+      "id": "c-舌",
+      "hanzi": "舌",
+      "pinyin": "shé",
+      "meaning": "lengua",
+      "writingRequired": true,
+      "referenceLessons": [],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/hanzi-cf0559cc3be1a236.mp3",
+      "contexts": 0
+    },
+    {
+      "id": "c-方",
+      "hanzi": "方",
+      "pinyin": "fāng",
+      "meaning": "cuadrado",
+      "writingRequired": true,
+      "referenceLessons": [
+        2,
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/hanzi-bf7cd3ea370114f1.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "c-走",
+      "hanzi": "走",
+      "pinyin": "zǒu",
+      "meaning": "caminar",
+      "writingRequired": true,
+      "referenceLessons": [
+        4
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/hanzi-01e5bbbbff77363c.mp3",
+      "contexts": 2
+    },
+    {
+      "id": "c-矢",
+      "hanzi": "矢",
+      "pinyin": "shǐ",
+      "meaning": "flecha",
+      "writingRequired": true,
+      "referenceLessons": [],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/hanzi-6bbafa8255af18a8.mp3",
+      "contexts": 0
+    },
+    {
+      "id": "c-竹",
+      "hanzi": "竹",
+      "pinyin": "zhú",
+      "meaning": "bambú",
+      "writingRequired": true,
+      "referenceLessons": [],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/hanzi-ac5f637174f3c77c.mp3",
+      "contexts": 0
+    },
+    {
+      "id": "c-舍",
+      "hanzi": "舍",
+      "pinyin": "shè",
+      "meaning": "alojamiento (en 宿舍)",
+      "writingRequired": true,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/hanzi-66c6e035df29536d.mp3",
+      "contexts": 7
+    },
+    {
+      "id": "c-超",
+      "hanzi": "超",
+      "pinyin": "chāo",
+      "meaning": "superar (en 超市: supermercado)",
+      "writingRequired": true,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 12,
+      "namedStrokes": 12,
+      "audio": "/audio/mandarin/hanzi-fcfc43bbb3ad8e04.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "c-知",
+      "hanzi": "知",
+      "pinyin": "zhī",
+      "meaning": "saber",
+      "writingRequired": true,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/hanzi-636eb6945b45e37c.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "c-等",
+      "hanzi": "等",
+      "pinyin": "děng",
+      "meaning": "esperar",
+      "writingRequired": true,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 12,
+      "namedStrokes": 12,
+      "audio": "/audio/mandarin/hanzi-8f1d1b228faf9e1b.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "c-跟",
+      "hanzi": "跟",
+      "pinyin": "gēn",
+      "meaning": "con; seguir",
+      "writingRequired": true,
+      "referenceLessons": [
+        4,
+        6
+      ],
+      "strokeCount": 13,
+      "namedStrokes": 13,
+      "audio": "/audio/mandarin/hanzi-25c71e9535e09ea3.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "c-路",
+      "hanzi": "路",
+      "pinyin": "lù",
+      "meaning": "camino",
+      "writingRequired": true,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 13,
+      "namedStrokes": 13,
+      "audio": "/audio/mandarin/hanzi-e09c9d998fc62d07.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "c-街",
+      "hanzi": "街",
+      "pinyin": "jiē",
+      "meaning": "calle",
+      "writingRequired": true,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 12,
+      "namedStrokes": 12,
+      "audio": "/audio/mandarin/hanzi-3e22e7928bb94349.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "c-右",
+      "hanzi": "右",
+      "pinyin": "yòu",
+      "meaning": "derecha",
+      "writingRequired": true,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/game-14ab1f2bce0a8777.mp3",
+      "contexts": 8
+    },
+    {
+      "id": "c-左",
+      "hanzi": "左",
+      "pinyin": "zuǒ",
+      "meaning": "izquierda",
+      "writingRequired": true,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/hanzi-80926101512d3493.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "c-后",
+      "hanzi": "后",
+      "pinyin": "hòu",
+      "meaning": "detrás",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        5,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/hanzi-a712bf8ea327a43f.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-里",
+      "hanzi": "里",
+      "pinyin": "lǐ",
+      "meaning": "dentro",
+      "writingRequired": true,
+      "referenceLessons": [
+        4,
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/hanzi-8365962b0aa31abd.mp3",
+      "contexts": 10
+    },
+    {
+      "id": "c-先",
+      "hanzi": "先",
+      "pinyin": "xiān",
+      "meaning": "primero",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/hanzi-56a2600a6e637f96.mp3",
+      "contexts": 8
+    },
+    {
+      "id": "c-前",
+      "hanzi": "前",
+      "pinyin": "qián",
+      "meaning": "delante",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        5,
+        6
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/hanzi-69f16d61104de2d5.mp3",
+      "contexts": 8
+    },
+    {
+      "id": "c-楼",
+      "hanzi": "楼",
+      "pinyin": "lóu",
+      "meaning": "edificio",
+      "writingRequired": true,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 13,
+      "namedStrokes": 13,
+      "audio": "/audio/mandarin/game-580f81d6c55c67eb.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-图",
+      "hanzi": "图",
+      "pinyin": "tú",
+      "meaning": "mapa",
+      "writingRequired": true,
+      "referenceLessons": [
+        3,
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/game-8013578e5e8731a6.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-馆",
+      "hanzi": "馆",
+      "pinyin": "guǎn",
+      "meaning": "establecimiento",
+      "writingRequired": true,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/game-56e603f6d1da5a62.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "c-体",
+      "hanzi": "体",
+      "pinyin": "tǐ",
+      "meaning": "cuerpo",
+      "writingRequired": true,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/game-d08d660b7de4e231.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "c-胡",
+      "hanzi": "胡",
+      "pinyin": "hú",
+      "meaning": "en 胡同: callejón",
+      "writingRequired": true,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/hanzi-4e8b56c9375ad02b.mp3",
+      "contexts": 11
+    },
+    {
+      "id": "supplemental-零",
+      "hanzi": "零",
+      "pinyin": "líng",
+      "meaning": "cero",
+      "writingRequired": false,
+      "referenceLessons": [
+        4
+      ],
+      "strokeCount": 13,
+      "namedStrokes": 13,
+      "audio": "/audio/mandarin/l4-d863483f50746749.mp3",
+      "contexts": 2
+    },
+    {
+      "id": "supplemental-乌",
+      "hanzi": "乌",
+      "pinyin": "wū",
+      "meaning": "negro; en 乌龟: tortuga",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/hanzi-4f3ed8319f982dae.mp3",
+      "contexts": 1
+    },
+    {
+      "id": "supplemental-了",
+      "hanzi": "了",
+      "pinyin": "le",
+      "meaning": "partícula aspectual o modal",
+      "writingRequired": false,
+      "referenceLessons": [
+        1,
+        4,
+        6
+      ],
+      "strokeCount": 2,
+      "namedStrokes": 2,
+      "audio": "/audio/mandarin/vocab-269bd31916e2fb53fad8.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "supplemental-从",
+      "hanzi": "从",
+      "pinyin": "cóng",
+      "meaning": "desde",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/hanzi-f774858f2df5bb4b.mp3",
+      "contexts": 1
+    },
+    {
+      "id": "supplemental-以",
+      "hanzi": "以",
+      "pinyin": "yǐ",
+      "meaning": "en 可以: poder",
+      "writingRequired": false,
+      "referenceLessons": [
+        1,
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/hanzi-524ad5040db05ee7.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "supplemental-伞",
+      "hanzi": "伞",
+      "pinyin": "sǎn",
+      "meaning": "paraguas",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/hanzi-785e8511296d08eb.mp3",
+      "contexts": 1
+    },
+    {
+      "id": "supplemental-传",
+      "hanzi": "传",
+      "pinyin": "chuán",
+      "meaning": "transmitir; llegar un sonido",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/hanzi-d96d4574652e4dc4.mp3",
+      "contexts": 1
+    },
+    {
+      "id": "supplemental-关",
+      "hanzi": "关",
+      "pinyin": "guān",
+      "meaning": "en 关系: relación",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/hanzi-ce6dd665fafe11f7.mp3",
+      "contexts": 1
+    },
+    {
+      "id": "supplemental-办",
+      "hanzi": "办",
+      "pinyin": "bàn",
+      "meaning": "gestionar",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/game-fc5b0c1a72a6c88e.mp3",
+      "contexts": 7
+    },
+    {
+      "id": "supplemental-务",
+      "hanzi": "务",
+      "pinyin": "wù",
+      "meaning": "asunto; en 职务: cargo",
+      "writingRequired": false,
+      "referenceLessons": [
+        3,
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/hanzi-31106048fd426329.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "supplemental-南",
+      "hanzi": "南",
+      "pinyin": "nán",
+      "meaning": "sur",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/hanzi-7191eb228228a53d.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "supplemental-卧",
+      "hanzi": "卧",
+      "pinyin": "wò",
+      "meaning": "acostarse; en 卧室: dormitorio",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/hanzi-52334d63e311774f.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "supplemental-卫",
+      "hanzi": "卫",
+      "pinyin": "wèi",
+      "meaning": "proteger; en 卫生间: baño",
+      "writingRequired": false,
+      "referenceLessons": [
+        2,
+        6
+      ],
+      "strokeCount": 3,
+      "namedStrokes": 3,
+      "audio": "/audio/mandarin/hanzi-105bce25aaf23328.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "supplemental-厨",
+      "hanzi": "厨",
+      "pinyin": "chú",
+      "meaning": "cocina",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 12,
+      "namedStrokes": 12,
+      "audio": "/audio/mandarin/hanzi-f1d36bdd46797036.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "supplemental-取",
+      "hanzi": "取",
+      "pinyin": "qǔ",
+      "meaning": "recoger",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/hanzi-1971b6462f1d6528.mp3",
+      "contexts": 1
+    },
+    {
+      "id": "supplemental-台",
+      "hanzi": "台",
+      "pinyin": "tái",
+      "meaning": "plataforma; en 阳台: balcón",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/hanzi-42e402978690a3a2.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "supplemental-同",
+      "hanzi": "同",
+      "pinyin": "tóng",
+      "meaning": "mismo; junto",
+      "writingRequired": false,
+      "referenceLessons": [
+        2,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/hanzi-2787962148caf01c.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "supplemental-吧",
+      "hanzi": "吧",
+      "pinyin": "ba",
+      "meaning": "partícula de sugerencia",
+      "writingRequired": false,
+      "referenceLessons": [
+        4,
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l4-f03dab4e3dcb0526.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "supplemental-地",
+      "hanzi": "地",
+      "pinyin": "dì",
+      "meaning": "tierra; lugar",
+      "writingRequired": false,
+      "referenceLessons": [
+        3,
+        4,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/hanzi-ce928686f9d15a2e.mp3",
+      "contexts": 8
+    },
+    {
+      "id": "supplemental-场",
+      "hanzi": "场",
+      "pinyin": "chǎng",
+      "meaning": "recinto; campo",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/hanzi-b4ecac1d12c5a19a.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "supplemental-堂",
+      "hanzi": "堂",
+      "pinyin": "táng",
+      "meaning": "sala",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/hanzi-b32d44e0c55e4d91.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "supplemental-声",
+      "hanzi": "声",
+      "pinyin": "shēng",
+      "meaning": "sonido; voz",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/hanzi-010864de351c1408.mp3",
+      "contexts": 1
+    },
+    {
+      "id": "supplemental-如",
+      "hanzi": "如",
+      "pinyin": "rú",
+      "meaning": "como",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/hanzi-d5d74a86d6b94b23.mp3",
+      "contexts": 1
+    },
+    {
+      "id": "supplemental-它",
+      "hanzi": "它",
+      "pinyin": "tā",
+      "meaning": "ello (animal o cosa)",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/hanzi-6e75c3d6fd439044.mp3",
+      "contexts": 1
+    },
+    {
+      "id": "supplemental-定",
+      "hanzi": "定",
+      "pinyin": "dìng",
+      "meaning": "fijo; en 肯定: seguramente",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/hanzi-c3bf31f4af052c6a.mp3",
+      "contexts": 1
+    },
+    {
+      "id": "supplemental-室",
+      "hanzi": "室",
+      "pinyin": "shì",
+      "meaning": "habitación",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/hanzi-466f231d527c35da.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "supplemental-宿",
+      "hanzi": "宿",
+      "pinyin": "sù",
+      "meaning": "alojarse",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/hanzi-88b593c66b229658.mp3",
+      "contexts": 7
+    },
+    {
+      "id": "supplemental-市",
+      "hanzi": "市",
+      "pinyin": "shì",
+      "meaning": "mercado; ciudad",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/hanzi-9ceaf36d99de5a84.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "supplemental-店",
+      "hanzi": "店",
+      "pinyin": "diàn",
+      "meaning": "tienda",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/hanzi-c4c0e6b890d88c1a.mp3",
+      "contexts": 1
+    },
+    {
+      "id": "supplemental-座",
+      "hanzi": "座",
+      "pinyin": "zuò",
+      "meaning": "clasificador de edificios",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/hanzi-9abee4a1fc017d35.mp3",
+      "contexts": 1
+    },
+    {
+      "id": "supplemental-急",
+      "hanzi": "急",
+      "pinyin": "jí",
+      "meaning": "urgente; ansioso",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/hanzi-f5d015b64a96cc75.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "supplemental-想",
+      "hanzi": "想",
+      "pinyin": "xiǎng",
+      "meaning": "pensar; querer",
+      "writingRequired": false,
+      "referenceLessons": [
+        4,
+        6
+      ],
+      "strokeCount": 13,
+      "namedStrokes": 13,
+      "audio": "/audio/mandarin/hanzi-16239cfe4fdc906a.mp3",
+      "contexts": 2
+    },
+    {
+      "id": "supplemental-或",
+      "hanzi": "或",
+      "pinyin": "huò",
+      "meaning": "o",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/hanzi-4b474ef4680f5462.mp3",
+      "contexts": 1
+    },
+    {
+      "id": "supplemental-房",
+      "hanzi": "房",
+      "pinyin": "fáng",
+      "meaning": "habitación; casa",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/hanzi-c557dc2d4c927dc9.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "supplemental-操",
+      "hanzi": "操",
+      "pinyin": "cāo",
+      "meaning": "en 操场: campo deportivo",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 16,
+      "namedStrokes": 16,
+      "audio": "/audio/mandarin/hanzi-6598845a652e6955.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "supplemental-新",
+      "hanzi": "新",
+      "pinyin": "xīn",
+      "meaning": "nuevo",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 13,
+      "namedStrokes": 13,
+      "audio": "/audio/mandarin/game-3cc493bc5b3b9b51.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "supplemental-旁",
+      "hanzi": "旁",
+      "pinyin": "páng",
+      "meaning": "lado",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/hanzi-ae1015f0967a6046.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "supplemental-李",
+      "hanzi": "李",
+      "pinyin": "Lǐ",
+      "meaning": "Li (apellido)",
+      "writingRequired": false,
+      "referenceLessons": [
+        3,
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/vocab-30f9ec546f73bfb4913f.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "supplemental-桌",
+      "hanzi": "桌",
+      "pinyin": "zhuō",
+      "meaning": "mesa",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/hanzi-aa6565cabd3d9180.mp3",
+      "contexts": 2
+    },
+    {
+      "id": "supplemental-比",
+      "hanzi": "比",
+      "pinyin": "bǐ",
+      "meaning": "comparar; en 比如: por ejemplo",
+      "writingRequired": false,
+      "referenceLessons": [
+        2,
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/hanzi-225f88b279aaaaee.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "supplemental-清",
+      "hanzi": "清",
+      "pinyin": "qīng",
+      "meaning": "claro; en 清真: halal",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/hanzi-9e2a943a2bdce857.mp3",
+      "contexts": 2
+    },
+    {
+      "id": "supplemental-理",
+      "hanzi": "理",
+      "pinyin": "lǐ",
+      "meaning": "gestionar; en 经理: gerente",
+      "writingRequired": false,
+      "referenceLessons": [
+        3,
+        4,
+        6
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/hanzi-848d151aed8f6938.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "supplemental-白",
+      "hanzi": "白",
+      "pinyin": "bái",
+      "meaning": "blanco; Bai (apellido)",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/hanzi-b1dfbb0b5cddd603.mp3",
+      "contexts": 1
+    },
+    {
+      "id": "supplemental-着",
+      "hanzi": "着",
+      "pinyin": "zháo",
+      "meaning": "en 着急: estar preocupado",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/hanzi-dffc4260a2b8cad8.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "supplemental-答",
+      "hanzi": "答",
+      "pinyin": "dá",
+      "meaning": "responder",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 12,
+      "namedStrokes": 12,
+      "audio": "/audio/mandarin/hanzi-dfe9f2e25f85af96.mp3",
+      "contexts": 1
+    },
+    {
+      "id": "supplemental-系",
+      "hanzi": "系",
+      "pinyin": "xì",
+      "meaning": "relación",
+      "writingRequired": false,
+      "referenceLessons": [
+        3,
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/vocab-a499efca9284492793c9.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "supplemental-经",
+      "hanzi": "经",
+      "pinyin": "jīng",
+      "meaning": "en 经理: gerente",
+      "writingRequired": false,
+      "referenceLessons": [
+        3,
+        4,
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/hanzi-d9daedf8f1169242.mp3",
+      "contexts": 6
+    },
+    {
+      "id": "supplemental-给",
+      "hanzi": "给",
+      "pinyin": "gěi",
+      "meaning": "a; para; dar",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/game-6e55fb9d8a3dacc1.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "supplemental-者",
+      "hanzi": "者",
+      "pinyin": "zhě",
+      "meaning": "en 或者: o",
+      "writingRequired": false,
+      "referenceLessons": [
+        3,
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/hanzi-b5f307e562c518e7.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "supplemental-职",
+      "hanzi": "职",
+      "pinyin": "zhí",
+      "meaning": "cargo; función",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/hanzi-2f065c0873598599.mp3",
+      "contexts": 1
+    },
+    {
+      "id": "supplemental-肯",
+      "hanzi": "肯",
+      "pinyin": "kěn",
+      "meaning": "aceptar; en 肯定: seguramente",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/hanzi-5ce22ccee593b8d8.mp3",
+      "contexts": 1
+    },
+    {
+      "id": "supplemental-育",
+      "hanzi": "育",
+      "pinyin": "yù",
+      "meaning": "educar",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/game-97b68650feef0496.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "supplemental-边",
+      "hanzi": "边",
+      "pinyin": "biān",
+      "meaning": "lado (lectura aislada; neutra en varios locativos)",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/hanzi-6ce8ee5d55a84b0a.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "supplemental-过",
+      "hanzi": "过",
+      "pinyin": "guò",
+      "meaning": "pasar; cruzar",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/hanzi-fdf86252efc2c366.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "supplemental-道",
+      "hanzi": "道",
+      "pinyin": "dào",
+      "meaning": "camino",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 12,
+      "namedStrokes": 12,
+      "audio": "/audio/mandarin/hanzi-25dee903b33e64ca.mp3",
+      "contexts": 6
+    },
+    {
+      "id": "supplemental-酒",
+      "hanzi": "酒",
+      "pinyin": "jiǔ",
+      "meaning": "bebida alcohólica",
+      "writingRequired": false,
+      "referenceLessons": [
+        3,
+        6
+      ],
+      "strokeCount": 10,
+      "namedStrokes": 10,
+      "audio": "/audio/mandarin/vocab-0fead0beae2d9782e51c.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "supplemental-银",
+      "hanzi": "银",
+      "pinyin": "yín",
+      "meaning": "plata",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/game-4d8166e8852048de.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "supplemental-长",
+      "hanzi": "长",
+      "pinyin": "zhǎng",
+      "meaning": "jefe; en 校长: director",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 4,
+      "namedStrokes": 4,
+      "audio": "/audio/mandarin/hanzi-e6ece3bcf163c517.mp3",
+      "contexts": 1
+    },
+    {
+      "id": "supplemental-门",
+      "hanzi": "门",
+      "pinyin": "mén",
+      "meaning": "puerta",
+      "writingRequired": false,
+      "referenceLessons": [
+        4,
+        6
+      ],
+      "strokeCount": 3,
+      "namedStrokes": 3,
+      "audio": "/audio/mandarin/game-a407325e0081cb7d.mp3",
+      "contexts": 7
+    },
+    {
+      "id": "supplemental-阳",
+      "hanzi": "阳",
+      "pinyin": "yáng",
+      "meaning": "sol; en 阳台: balcón",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/hanzi-ddd57fff51ef087e.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "supplemental-食",
+      "hanzi": "食",
+      "pinyin": "shí",
+      "meaning": "comida",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/hanzi-67ad5201de1f1f70.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "supplemental-龟",
+      "hanzi": "龟",
+      "pinyin": "guī",
+      "meaning": "tortuga",
+      "writingRequired": false,
+      "referenceLessons": [
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/hanzi-798f2b8731abd44b.mp3",
+      "contexts": 1
+    },
+    {
+      "id": "supplemental-宠",
+      "hanzi": "宠",
+      "pinyin": "chǒng",
+      "meaning": "En 宠物: mascota; lectura contextual",
+      "writingRequired": false,
+      "referenceLessons": [
+        3
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/hanzi-4cbf176c86968b29.mp3",
+      "contexts": 2
+    },
+    {
+      "id": "supplemental-兔",
+      "hanzi": "兔",
+      "pinyin": "tù",
+      "meaning": "conejo",
+      "writingRequired": false,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l5-f3632a3bc9547785.mp3",
+      "contexts": 2
+    },
+    {
+      "id": "supplemental-华",
+      "hanzi": "华",
+      "pinyin": "huá",
+      "meaning": "Hua, nombre propio",
+      "writingRequired": false,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/hanzi-fb5b17b45fa40e26.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "supplemental-周",
+      "hanzi": "周",
+      "pinyin": "zhōu",
+      "meaning": "semana",
+      "writingRequired": false,
+      "referenceLessons": [
+        4,
+        5
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/hanzi-492a29cb851e973d.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "supplemental-她",
+      "hanzi": "她",
+      "pinyin": "tā",
+      "meaning": "ella",
+      "writingRequired": false,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l1-v-7f2fa5ddbe.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "supplemental-娜",
+      "hanzi": "娜",
+      "pinyin": "nà",
+      "meaning": "Na, nombre propio",
+      "writingRequired": false,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/hanzi-83de5e5978f678aa.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "supplemental-宋",
+      "hanzi": "宋",
+      "pinyin": "Sòng",
+      "meaning": "Song, apellido",
+      "writingRequired": false,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l1-v-f9db359922.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "supplemental-强",
+      "hanzi": "强",
+      "pinyin": "qiáng",
+      "meaning": "Qiang, nombre propio",
+      "writingRequired": false,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 12,
+      "namedStrokes": 12,
+      "audio": "/audio/mandarin/hanzi-f9c8597cd916cc70.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "supplemental-末",
+      "hanzi": "末",
+      "pinyin": "mò",
+      "meaning": "final",
+      "writingRequired": false,
+      "referenceLessons": [
+        4,
+        5
+      ],
+      "strokeCount": 5,
+      "namedStrokes": 5,
+      "audio": "/audio/mandarin/hanzi-3d1e67d178c0daec.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "supplemental-猪",
+      "hanzi": "猪",
+      "pinyin": "zhū",
+      "meaning": "cerdo",
+      "writingRequired": false,
+      "referenceLessons": [
+        2,
+        5
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/l5-4dee88612eb8c6fa.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "supplemental-猴",
+      "hanzi": "猴",
+      "pinyin": "hóu",
+      "meaning": "mono",
+      "writingRequired": false,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 12,
+      "namedStrokes": 12,
+      "audio": "/audio/mandarin/l5-6bf03dfd52373775.mp3",
+      "contexts": 2
+    },
+    {
+      "id": "supplemental-虎",
+      "hanzi": "虎",
+      "pinyin": "hǔ",
+      "meaning": "tigre",
+      "writingRequired": false,
+      "referenceLessons": [
+        1,
+        5
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l5-23b4727beb3f3461.mp3",
+      "contexts": 5
+    },
+    {
+      "id": "supplemental-蛇",
+      "hanzi": "蛇",
+      "pinyin": "shé",
+      "meaning": "serpiente",
+      "writingRequired": false,
+      "referenceLessons": [
+        4,
+        5
+      ],
+      "strokeCount": 11,
+      "namedStrokes": 11,
+      "audio": "/audio/mandarin/l5-30b9597d578e33a7.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "supplemental-贺",
+      "hanzi": "贺",
+      "pinyin": "hè",
+      "meaning": "felicitar",
+      "writingRequired": false,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/hanzi-5f6f49bae16f8881.mp3",
+      "contexts": 1
+    },
+    {
+      "id": "supplemental-音",
+      "hanzi": "音",
+      "pinyin": "yīn",
+      "meaning": "sonido",
+      "writingRequired": false,
+      "referenceLessons": [
+        5,
+        6
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/hanzi-87c9d9a511065371.mp3",
+      "contexts": 4
+    },
+    {
+      "id": "supplemental-首",
+      "hanzi": "首",
+      "pinyin": "shǒu",
+      "meaning": "clasificador de canciones",
+      "writingRequired": false,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 9,
+      "namedStrokes": 9,
+      "audio": "/audio/mandarin/hanzi-aee6d4f609a2ea78.mp3",
+      "contexts": 1
+    },
+    {
+      "id": "supplemental-马",
+      "hanzi": "马",
+      "pinyin": "mǎ",
+      "meaning": "caballo",
+      "writingRequired": false,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 3,
+      "namedStrokes": 3,
+      "audio": "/audio/mandarin/l5-eace98e13d4e401f.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "supplemental-鸡",
+      "hanzi": "鸡",
+      "pinyin": "jī",
+      "meaning": "gallo",
+      "writingRequired": false,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 7,
+      "namedStrokes": 7,
+      "audio": "/audio/mandarin/l5-9170326f567d290a.mp3",
+      "contexts": 2
+    },
+    {
+      "id": "supplemental-鼠",
+      "hanzi": "鼠",
+      "pinyin": "shǔ",
+      "meaning": "rata",
+      "writingRequired": false,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 13,
+      "namedStrokes": 13,
+      "audio": "/audio/mandarin/l5-7adb5a62c887f24c.mp3",
+      "contexts": 3
+    },
+    {
+      "id": "supplemental-林",
+      "hanzi": "林",
+      "pinyin": "Lín",
+      "meaning": "Lin, apellido",
+      "writingRequired": false,
+      "referenceLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "strokeCount": 8,
+      "namedStrokes": 8,
+      "audio": "/audio/mandarin/l1-h-020ff479d2.mp3",
+      "contexts": 12
+    },
+    {
+      "id": "supplemental-羊",
+      "hanzi": "羊",
+      "pinyin": "yáng",
+      "meaning": "oveja; cabra",
+      "writingRequired": false,
+      "referenceLessons": [
+        5
+      ],
+      "strokeCount": 6,
+      "namedStrokes": 6,
+      "audio": "/audio/mandarin/l5-aab5dce1e42163b4.mp3",
+      "contexts": 2
+    }
+  ],
+  "glyphsWithoutCharacterRecord": [
+    {
+      "hanzi": "为",
+      "contexts": [
+        {
+          "hanzi": "马大为",
+          "pinyin": "Mǎ Dàwéi",
+          "spanish": "Ma Dawei; estudiante estadounidense"
+        },
+        {
+          "hanzi": "大为",
+          "pinyin": "Dàwéi",
+          "spanish": "Dawei; nombre propio"
+        },
+        {
+          "hanzi": "我叫马大为。请问，你叫什么名字？",
+          "pinyin": "Wǒ jiào Mǎ Dàwéi. Qǐngwèn, nǐ jiào shénme míngzi?",
+          "spanish": "Me llamo Ma Dawei. Disculpa, ¿cómo te llamas?"
+        }
+      ]
+    },
+    {
+      "hanzi": "丁",
+      "contexts": [
+        {
+          "hanzi": "丁力波",
+          "pinyin": "Dīng Lìbō",
+          "spanish": "Ding Libo; estudiante canadiense"
+        },
+        {
+          "hanzi": "他叫马大为，他叫丁力波，她叫林娜。",
+          "pinyin": "Tā jiào Mǎ Dàwéi, tā jiào Dīng Lìbō, tā jiào Lín Nà.",
+          "spanish": "Él se llama Ma Dawei, él se llama Ding Libo y ella se llama Lin Na."
+        },
+        {
+          "hanzi": "大为很好，丁力波很忙，林娜不太忙，她也很好。",
+          "pinyin": "Dàwéi hěn hǎo, Dīng Lìbō hěn máng, Lín Nà bú tài máng, tā yě hěn hǎo.",
+          "spanish": "Dawei está muy bien; Ding Libo está muy ocupado. Lin Na no está muy ocupada y también está muy bien."
+        }
+      ]
+    },
+    {
+      "hanzi": "波",
+      "contexts": [
+        {
+          "hanzi": "丁力波",
+          "pinyin": "Dīng Lìbō",
+          "spanish": "Ding Libo; estudiante canadiense"
+        },
+        {
+          "hanzi": "力波",
+          "pinyin": "Lìbō",
+          "spanish": "Libo; nombre propio"
+        },
+        {
+          "hanzi": "在。力波，请进，请坐。",
+          "pinyin": "Zài. Lìbō, qǐng jìn, qǐng zuò.",
+          "spanish": "Sí, está. Libo, pasa, por favor, y siéntate."
+        }
+      ]
+    },
+    {
+      "hanzi": "罗",
+      "contexts": [
+        {
+          "hanzi": "俄罗斯",
+          "pinyin": "Éluósī",
+          "spanish": "Rusia"
+        },
+        {
+          "hanzi": "俄罗斯人",
+          "pinyin": "Éluósīrén",
+          "spanish": "ruso; persona de Rusia"
+        },
+        {
+          "hanzi": "他是俄罗斯人。",
+          "pinyin": "Tā shì Éluósī rén.",
+          "spanish": "Él es ruso."
+        }
+      ]
+    },
+    {
+      "hanzi": "斯",
+      "contexts": [
+        {
+          "hanzi": "俄罗斯",
+          "pinyin": "Éluósī",
+          "spanish": "Rusia"
+        },
+        {
+          "hanzi": "俄罗斯人",
+          "pinyin": "Éluósīrén",
+          "spanish": "ruso; persona de Rusia"
+        },
+        {
+          "hanzi": "他是俄罗斯人。",
+          "pinyin": "Tā shì Éluósī rén.",
+          "spanish": "Él es ruso."
+        }
+      ]
+    },
+    {
+      "hanzi": "泰",
+      "contexts": [
+        {
+          "hanzi": "泰国",
+          "pinyin": "Tàiguó",
+          "spanish": "Tailandia"
+        },
+        {
+          "hanzi": "我是泰国人。",
+          "pinyin": "Wǒ shì Tàiguó rén.",
+          "spanish": "Soy tailandés."
+        }
+      ]
+    },
+    {
+      "hanzi": "印",
+      "contexts": [
+        {
+          "hanzi": "印度",
+          "pinyin": "Yìndù",
+          "spanish": "India"
+        },
+        {
+          "hanzi": "印加可乐",
+          "pinyin": "yìnjiā kělè",
+          "spanish": "Inca Kola"
+        },
+        {
+          "hanzi": "我是印度人。",
+          "pinyin": "Wǒ shì Yìndù rén.",
+          "spanish": "Soy indio."
+        }
+      ]
+    },
+    {
+      "hanzi": "度",
+      "contexts": [
+        {
+          "hanzi": "印度",
+          "pinyin": "Yìndù",
+          "spanish": "India"
+        },
+        {
+          "hanzi": "我是印度人。",
+          "pinyin": "Wǒ shì Yìndù rén.",
+          "spanish": "Soy indio."
+        }
+      ]
+    },
+    {
+      "hanzi": "埃",
+      "contexts": [
+        {
+          "hanzi": "埃及",
+          "pinyin": "Āijí",
+          "spanish": "Egipto"
+        },
+        {
+          "hanzi": "我是埃及人。",
+          "pinyin": "Wǒ shì Āijí rén.",
+          "spanish": "Soy egipcio."
+        }
+      ]
+    },
+    {
+      "hanzi": "及",
+      "contexts": [
+        {
+          "hanzi": "埃及",
+          "pinyin": "Āijí",
+          "spanish": "Egipto"
+        },
+        {
+          "hanzi": "我是埃及人。",
+          "pinyin": "Wǒ shì Āijí rén.",
+          "spanish": "Soy egipcio."
+        }
+      ]
+    },
+    {
+      "hanzi": "堡",
+      "contexts": [
+        {
+          "hanzi": "汉堡包",
+          "pinyin": "hànbǎobāo",
+          "spanish": "hamburguesa"
+        },
+        {
+          "hanzi": "汉堡",
+          "pinyin": "hànbǎo",
+          "spanish": "hamburguesa"
+        },
+        {
+          "hanzi": "汉堡包和比萨饼",
+          "pinyin": "Hànbǎobāo hé bǐsàbǐng",
+          "spanish": "Hamburguesas y pizza."
+        }
+      ]
+    },
+    {
+      "hanzi": "萨",
+      "contexts": [
+        {
+          "hanzi": "比萨饼",
+          "pinyin": "bǐsàbǐng",
+          "spanish": "pizza"
+        },
+        {
+          "hanzi": "披萨",
+          "pinyin": "pīsà",
+          "spanish": "pizza"
+        },
+        {
+          "hanzi": "汉堡包和比萨饼",
+          "pinyin": "Hànbǎobāo hé bǐsàbǐng",
+          "spanish": "Hamburguesas y pizza."
+        }
+      ]
+    },
+    {
+      "hanzi": "饼",
+      "contexts": [
+        {
+          "hanzi": "比萨饼",
+          "pinyin": "bǐsàbǐng",
+          "spanish": "pizza"
+        },
+        {
+          "hanzi": "汉堡包和比萨饼",
+          "pinyin": "Hànbǎobāo hé bǐsàbǐng",
+          "spanish": "Hamburguesas y pizza."
+        },
+        {
+          "hanzi": "这是比萨饼。",
+          "pinyin": "Zhè shì bǐsàbǐng.",
+          "spanish": "Esto es pizza."
+        }
+      ]
+    },
+    {
+      "hanzi": "律",
+      "contexts": [
+        {
+          "hanzi": "律师",
+          "pinyin": "lǜshī",
+          "spanish": "abogado/a"
+        },
+        {
+          "hanzi": "我爸爸是律师，我妈妈是工程师，我哥哥是经理。",
+          "pinyin": "Wǒ bàba shì lǜshī, wǒ māma shì gōngchéngshī, wǒ gēge shì jīnglǐ.",
+          "spanish": "Mi papá es abogado, mi mamá es ingeniera y mi hermano mayor es gerente."
+        },
+        {
+          "hanzi": "我爸爸是律师，我妈妈是记者，他们都很忙。",
+          "pinyin": "Wǒ bàba shì lǜshī, wǒ māma shì jìzhě, tāmen dōu hěn máng.",
+          "spanish": "Mi papá es abogado y mi mamá es periodista; ambos están muy ocupados."
+        }
+      ]
+    },
+    {
+      "hanzi": "记",
+      "contexts": [
+        {
+          "hanzi": "记者",
+          "pinyin": "jìzhě",
+          "spanish": "reportero/a"
+        },
+        {
+          "hanzi": "我爸爸是律师，我妈妈是记者，他们都很忙。",
+          "pinyin": "Wǒ bàba shì lǜshī, wǒ māma shì jìzhě, tāmen dōu hěn máng.",
+          "spanish": "Mi papá es abogado y mi mamá es periodista; ambos están muy ocupados."
+        }
+      ]
+    },
+    {
+      "hanzi": "服",
+      "contexts": [
+        {
+          "hanzi": "服务员",
+          "pinyin": "fúwùyuán",
+          "spanish": "camarero/a"
+        },
+        {
+          "hanzi": "我是服务员。",
+          "pinyin": "Wǒ shì fúwùyuán.",
+          "spanish": "Soy camarero."
+        }
+      ]
+    },
+    {
+      "hanzi": "员",
+      "contexts": [
+        {
+          "hanzi": "服务员",
+          "pinyin": "fúwùyuán",
+          "spanish": "camarero/a"
+        },
+        {
+          "hanzi": "我是服务员。",
+          "pinyin": "Wǒ shì fúwùyuán.",
+          "spanish": "Soy camarero."
+        }
+      ]
+    },
+    {
+      "hanzi": "程",
+      "contexts": [
+        {
+          "hanzi": "工程师",
+          "pinyin": "gōngchéngshī",
+          "spanish": "ingeniero/a"
+        },
+        {
+          "hanzi": "我爸爸是律师，我妈妈是工程师，我哥哥是经理。",
+          "pinyin": "Wǒ bàba shì lǜshī, wǒ māma shì gōngchéngshī, wǒ gēge shì jīnglǐ.",
+          "spanish": "Mi papá es abogado, mi mamá es ingeniera y mi hermano mayor es gerente."
+        }
+      ]
+    },
+    {
+      "hanzi": "商",
+      "contexts": [
+        {
+          "hanzi": "商人",
+          "pinyin": "shāngrén",
+          "spanish": "comerciante"
+        },
+        {
+          "hanzi": "我爸爸是商人。",
+          "pinyin": "Wǒ bàba shì shāngrén.",
+          "spanish": "Mi papá es comerciante."
+        }
+      ]
+    },
+    {
+      "hanzi": "橙",
+      "contexts": [
+        {
+          "hanzi": "橙汁",
+          "pinyin": "chéngzhī",
+          "spanish": "jugo de naranja"
+        },
+        {
+          "hanzi": "喜欢橙汁",
+          "pinyin": "Xǐhuan chéngzhī",
+          "spanish": "Gustar del jugo de naranja"
+        }
+      ]
+    },
+    {
+      "hanzi": "豆",
+      "contexts": [
+        {
+          "hanzi": "豆浆",
+          "pinyin": "dòujiāng",
+          "spanish": "leche de soja"
+        },
+        {
+          "hanzi": "喜欢喝豆浆",
+          "pinyin": "Xǐhuan hē dòujiāng",
+          "spanish": "Gustar de beber leche de soja"
+        }
+      ]
+    },
+    {
+      "hanzi": "浆",
+      "contexts": [
+        {
+          "hanzi": "豆浆",
+          "pinyin": "dòujiāng",
+          "spanish": "leche de soja"
+        },
+        {
+          "hanzi": "喜欢喝豆浆",
+          "pinyin": "Xǐhuan hē dòujiāng",
+          "spanish": "Gustar de beber leche de soja"
+        }
+      ]
+    },
+    {
+      "hanzi": "厕",
+      "contexts": [
+        {
+          "hanzi": "厕所",
+          "pinyin": "cè suǒ",
+          "spanish": "baño"
+        },
+        {
+          "hanzi": "可以去厕所吗？",
+          "pinyin": "kě yǐ qù cè suǒ ma?",
+          "spanish": "Puedo ir al baño?"
+        }
+      ]
+    },
+    {
+      "hanzi": "所",
+      "contexts": [
+        {
+          "hanzi": "厕所",
+          "pinyin": "cè suǒ",
+          "spanish": "baño"
+        },
+        {
+          "hanzi": "可以去厕所吗？",
+          "pinyin": "kě yǐ qù cè suǒ ma?",
+          "spanish": "Puedo ir al baño?"
+        }
+      ]
+    },
+    {
+      "hanzi": "嘛",
+      "contexts": [
+        {
+          "hanzi": "干嘛",
+          "pinyin": "gàn má",
+          "spanish": "qué haces"
+        },
+        {
+          "hanzi": "干嘛呢？",
+          "pinyin": "gàn má ne?",
+          "spanish": "Qué haces?"
+        }
+      ]
+    },
+    {
+      "hanzi": "啥",
+      "contexts": [
+        {
+          "hanzi": "干啥",
+          "pinyin": "gàn shá",
+          "spanish": "qué estás haciendo; muy coloquial"
+        },
+        {
+          "hanzi": "在干啥？",
+          "pinyin": "zài gàn shá?",
+          "spanish": "Qué estás haciendo?"
+        }
+      ]
+    },
+    {
+      "hanzi": "丽",
+      "contexts": [
+        {
+          "hanzi": "马丽",
+          "pinyin": "Mǎ Lì",
+          "spanish": "Mary"
+        },
+        {
+          "hanzi": "玛丽",
+          "pinyin": "Mǎlì",
+          "spanish": "Mali; nombre propio"
+        },
+        {
+          "hanzi": "我叫马丽。",
+          "pinyin": "Wǒ jiào Mǎ Lì",
+          "spanish": "Me llamo Mary."
+        }
+      ]
+    },
+    {
+      "hanzi": "言",
+      "contexts": [
+        {
+          "hanzi": "语言",
+          "pinyin": "yǔ yán",
+          "spanish": "idiomas"
+        },
+        {
+          "hanzi": "方言",
+          "pinyin": "fāngyán",
+          "spanish": "dialecto; variedad regional de una lengua"
+        },
+        {
+          "hanzi": "你会说什么语言？",
+          "pinyin": "Nǐ huì shuō shén me yǔ yán?",
+          "spanish": "Qué idioma sabes hablar?"
+        }
+      ]
+    },
+    {
+      "hanzi": "画",
+      "contexts": [
+        {
+          "hanzi": "画画",
+          "pinyin": "huà huà",
+          "spanish": "dibujar; pintar"
+        },
+        {
+          "hanzi": "她学画画。",
+          "pinyin": "tā xué huà huà",
+          "spanish": "Ella aprende a dibujar."
+        }
+      ]
+    },
+    {
+      "hanzi": "厉",
+      "contexts": [
+        {
+          "hanzi": "厉害",
+          "pinyin": "lì hài",
+          "spanish": "impresionante; muy hábil"
+        },
+        {
+          "hanzi": "真厉害！",
+          "pinyin": "zhēn lì hài!",
+          "spanish": "¡Qué impresionante!"
+        }
+      ]
+    },
+    {
+      "hanzi": "害",
+      "contexts": [
+        {
+          "hanzi": "厉害",
+          "pinyin": "lì hài",
+          "spanish": "impresionante; muy hábil"
+        },
+        {
+          "hanzi": "真厉害！",
+          "pinyin": "zhēn lì hài!",
+          "spanish": "¡Qué impresionante!"
+        }
+      ]
+    },
+    {
+      "hanzi": "普",
+      "contexts": [
+        {
+          "hanzi": "普通话",
+          "pinyin": "pǔtōnghuà",
+          "spanish": "mandarín estándar"
+        },
+        {
+          "hanzi": "我学习普通话。",
+          "pinyin": "Wǒ xuéxí Pǔtōnghuà.",
+          "spanish": "Estudio mandarín estándar."
+        }
+      ]
+    },
+    {
+      "hanzi": "通",
+      "contexts": [
+        {
+          "hanzi": "普通话",
+          "pinyin": "pǔtōnghuà",
+          "spanish": "mandarín estándar"
+        },
+        {
+          "hanzi": "我学习普通话。",
+          "pinyin": "Wǒ xuéxí Pǔtōnghuà.",
+          "spanish": "Estudio mandarín estándar."
+        }
+      ]
+    },
+    {
+      "hanzi": "话",
+      "contexts": [
+        {
+          "hanzi": "普通话",
+          "pinyin": "pǔtōnghuà",
+          "spanish": "mandarín estándar"
+        },
+        {
+          "hanzi": "我学习普通话。",
+          "pinyin": "Wǒ xuéxí Pǔtōnghuà.",
+          "spanish": "Estudio mandarín estándar."
+        }
+      ]
+    },
+    {
+      "hanzi": "炸",
+      "contexts": [
+        {
+          "hanzi": "炸猪肉面包",
+          "pinyin": "Zhá zhūròu miànbāo",
+          "spanish": "pan con carne de cerdo frita"
+        },
+        {
+          "hanzi": "我喜欢吃炸猪肉面包。",
+          "pinyin": "Wǒ xǐhuan chī zhá zhūròu miànbāo.",
+          "spanish": "Me gusta comer pan con cerdo frito."
+        }
+      ]
+    },
+    {
+      "hanzi": "肉",
+      "contexts": [
+        {
+          "hanzi": "炸猪肉面包",
+          "pinyin": "Zhá zhūròu miànbāo",
+          "spanish": "pan con carne de cerdo frita"
+        },
+        {
+          "hanzi": "肉夹馍",
+          "pinyin": "ròujiāmó",
+          "spanish": "pan chino relleno de carne"
+        },
+        {
+          "hanzi": "我喜欢吃肉夹馍。",
+          "pinyin": "Wǒ xǐhuan chī ròujiāmó.",
+          "spanish": "Me gusta comer pan chino relleno de carne."
+        }
+      ]
+    },
+    {
+      "hanzi": "夹",
+      "contexts": [
+        {
+          "hanzi": "肉夹馍",
+          "pinyin": "ròujiāmó",
+          "spanish": "pan chino relleno de carne"
+        },
+        {
+          "hanzi": "我喜欢吃肉夹馍。",
+          "pinyin": "Wǒ xǐhuan chī ròujiāmó.",
+          "spanish": "Me gusta comer pan chino relleno de carne."
+        }
+      ]
+    },
+    {
+      "hanzi": "馍",
+      "contexts": [
+        {
+          "hanzi": "肉夹馍",
+          "pinyin": "ròujiāmó",
+          "spanish": "pan chino relleno de carne"
+        },
+        {
+          "hanzi": "我喜欢吃肉夹馍。",
+          "pinyin": "Wǒ xǐhuan chī ròujiāmó.",
+          "spanish": "Me gusta comer pan chino relleno de carne."
+        }
+      ]
+    },
+    {
+      "hanzi": "披",
+      "contexts": [
+        {
+          "hanzi": "披萨",
+          "pinyin": "pīsà",
+          "spanish": "pizza"
+        },
+        {
+          "hanzi": "我喜欢吃披萨。",
+          "pinyin": "Wǒ xǐhuan chī pīsà.",
+          "spanish": "Me gusta comer pizza."
+        }
+      ]
+    },
+    {
+      "hanzi": "热",
+      "contexts": [
+        {
+          "hanzi": "热狗",
+          "pinyin": "règǒu",
+          "spanish": "hot dog"
+        },
+        {
+          "hanzi": "我喜欢吃热狗。",
+          "pinyin": "Wǒ xǐhuan chī règǒu.",
+          "spanish": "Me gusta comer perros calientes."
+        }
+      ]
+    },
+    {
+      "hanzi": "司",
+      "contexts": [
+        {
+          "hanzi": "寿司",
+          "pinyin": "shòusī",
+          "spanish": "sushi"
+        },
+        {
+          "hanzi": "我喜欢吃寿司。",
+          "pinyin": "Wǒ xǐhuan chī shòusī.",
+          "spanish": "Me gusta comer sushi."
+        }
+      ]
+    },
+    {
+      "hanzi": "甜",
+      "contexts": [
+        {
+          "hanzi": "甜品",
+          "pinyin": "tiánpǐn",
+          "spanish": "postre; dulce"
+        },
+        {
+          "hanzi": "我喜欢吃甜品。",
+          "pinyin": "Wǒ xǐhuan chī tiánpǐn.",
+          "spanish": "Me gusta comer postres."
+        }
+      ]
+    },
+    {
+      "hanzi": "品",
+      "contexts": [
+        {
+          "hanzi": "甜品",
+          "pinyin": "tiánpǐn",
+          "spanish": "postre; dulce"
+        },
+        {
+          "hanzi": "我喜欢吃甜品。",
+          "pinyin": "Wǒ xǐhuan chī tiánpǐn.",
+          "spanish": "Me gusta comer postres."
+        }
+      ]
+    },
+    {
+      "hanzi": "挞",
+      "contexts": [
+        {
+          "hanzi": "蛋挞",
+          "pinyin": "dàntà",
+          "spanish": "tartaletas de huevo"
+        },
+        {
+          "hanzi": "我喜欢吃蛋挞。",
+          "pinyin": "Wǒ xǐhuan chī dàntà.",
+          "spanish": "Me gusta comer tartaletas de huevo."
+        }
+      ]
+    },
+    {
+      "hanzi": "筷",
+      "contexts": [
+        {
+          "hanzi": "筷子",
+          "pinyin": "kuàizi",
+          "spanish": "palillos para comer"
+        },
+        {
+          "hanzi": "我会用筷子。",
+          "pinyin": "wǒ huì yòng kuàizi",
+          "spanish": "Sé usar palillos para comer."
+        }
+      ]
+    },
+    {
+      "hanzi": "用",
+      "contexts": [
+        {
+          "hanzi": "用",
+          "pinyin": "yòng",
+          "spanish": "usar; utilizar"
+        },
+        {
+          "hanzi": "我会用筷子。",
+          "pinyin": "wǒ huì yòng kuàizi",
+          "spanish": "Sé usar palillos para comer."
+        }
+      ]
+    },
+    {
+      "hanzi": "苹",
+      "contexts": [
+        {
+          "hanzi": "苹果",
+          "pinyin": "píngguǒ",
+          "spanish": "manzana"
+        },
+        {
+          "hanzi": "我喜欢吃苹果。",
+          "pinyin": "Wǒ xǐhuan chī píngguǒ.",
+          "spanish": "Me gusta comer manzanas."
+        }
+      ]
+    },
+    {
+      "hanzi": "卡",
+      "contexts": [
+        {
+          "hanzi": "卡片",
+          "pinyin": "kǎpiàn",
+          "spanish": "tarjeta"
+        },
+        {
+          "hanzi": "里卡多帕尔玛大学",
+          "pinyin": "lǐ kǎ duō pà ěr mǎ dà xué",
+          "spanish": "Universidad Ricardo Palma"
+        },
+        {
+          "hanzi": "里卡多帕尔玛大学孔子学院",
+          "pinyin": "lǐ kǎ duō pà ěr mǎ dà xué kǒng zǐ xué yuàn",
+          "spanish": "Instituto Confucio de la Universidad Ricardo Palma"
+        }
+      ]
+    },
+    {
+      "hanzi": "龄",
+      "contexts": [
+        {
+          "hanzi": "年龄",
+          "pinyin": "niánlíng",
+          "spanish": "edad"
+        },
+        {
+          "hanzi": "问年龄",
+          "pinyin": "Wèn niánlíng",
+          "spanish": "Preguntar la edad"
+        }
+      ]
+    },
+    {
+      "hanzi": "数",
+      "contexts": [
+        {
+          "hanzi": "岁数",
+          "pinyin": "suìshù",
+          "spanish": "edad; número de años de edad"
+        },
+        {
+          "hanzi": "数学",
+          "pinyin": "shùxué",
+          "spanish": "matemáticas"
+        },
+        {
+          "hanzi": "你今年多大岁数？",
+          "pinyin": "Nǐ jīnnián duōdà suìshù?",
+          "spanish": "¿Qué edad tienes este año?"
+        }
+      ]
+    },
+    {
+      "hanzi": "约",
+      "contexts": [
+        {
+          "hanzi": "约翰",
+          "pinyin": "Yuēhàn",
+          "spanish": "John"
+        },
+        {
+          "hanzi": "我们家一共有五口人，爸爸、妈妈、哥哥和我，还有约翰（John）。",
+          "pinyin": "Wǒmen jiā yígòng yǒu wǔ kǒu rén, bàba, māma, gēge hé wǒ, hái yǒu Yuēhàn.",
+          "spanish": "En nuestra familia somos cinco en total: papá, mamá, mi hermano mayor y yo, y también John."
+        },
+        {
+          "hanzi": "约翰是我的狗，今年两岁。",
+          "pinyin": "Yuēhàn shì wǒ de gǒu, jīnnián liǎng suì.",
+          "spanish": "John es mi perro; este año tiene dos años."
+        }
+      ]
+    },
+    {
+      "hanzi": "翰",
+      "contexts": [
+        {
+          "hanzi": "约翰",
+          "pinyin": "Yuēhàn",
+          "spanish": "John"
+        },
+        {
+          "hanzi": "我们家一共有五口人，爸爸、妈妈、哥哥和我，还有约翰（John）。",
+          "pinyin": "Wǒmen jiā yígòng yǒu wǔ kǒu rén, bàba, māma, gēge hé wǒ, hái yǒu Yuēhàn.",
+          "spanish": "En nuestra familia somos cinco en total: papá, mamá, mi hermano mayor y yo, y también John."
+        },
+        {
+          "hanzi": "约翰是我的狗，今年两岁。",
+          "pinyin": "Yuēhàn shì wǒ de gǒu, jīnnián liǎng suì.",
+          "spanish": "John es mi perro; este año tiene dos años."
+        }
+      ]
+    },
+    {
+      "hanzi": "炒",
+      "contexts": [
+        {
+          "hanzi": "炒饭",
+          "pinyin": "chǎofàn",
+          "spanish": "arroz frito"
+        },
+        {
+          "hanzi": "我喜欢吃炒饭。",
+          "pinyin": "Wǒ xǐhuan chī chǎofàn.",
+          "spanish": "Me gusta comer arroz frito."
+        }
+      ]
+    },
+    {
+      "hanzi": "阿",
+      "contexts": [
+        {
+          "hanzi": "阿根廷",
+          "pinyin": "Āgēntíng",
+          "spanish": "Argentina"
+        },
+        {
+          "hanzi": "他是阿根廷人。",
+          "pinyin": "Tā shì Āgēntíng rén.",
+          "spanish": "Él es argentino."
+        }
+      ]
+    },
+    {
+      "hanzi": "根",
+      "contexts": [
+        {
+          "hanzi": "阿根廷",
+          "pinyin": "Āgēntíng",
+          "spanish": "Argentina"
+        },
+        {
+          "hanzi": "他是阿根廷人。",
+          "pinyin": "Tā shì Āgēntíng rén.",
+          "spanish": "Él es argentino."
+        }
+      ]
+    },
+    {
+      "hanzi": "廷",
+      "contexts": [
+        {
+          "hanzi": "阿根廷",
+          "pinyin": "Āgēntíng",
+          "spanish": "Argentina"
+        },
+        {
+          "hanzi": "他是阿根廷人。",
+          "pinyin": "Tā shì Āgēntíng rén.",
+          "spanish": "Él es argentino."
+        }
+      ]
+    },
+    {
+      "hanzi": "院",
+      "contexts": [
+        {
+          "hanzi": "学院",
+          "pinyin": "xuéyuàn",
+          "spanish": "instituto; facultad"
+        },
+        {
+          "hanzi": "孔子学院",
+          "pinyin": "Kǒngzǐ Xuéyuàn",
+          "spanish": "Instituto Confucio"
+        },
+        {
+          "hanzi": "里卡多帕尔玛大学孔子学院",
+          "pinyin": "lǐ kǎ duō pà ěr mǎ dà xué kǒng zǐ xué yuàn",
+          "spanish": "Instituto Confucio de la Universidad Ricardo Palma"
+        }
+      ]
+    },
+    {
+      "hanzi": "车",
+      "contexts": [
+        {
+          "hanzi": "车牌号",
+          "pinyin": "chēpáihào",
+          "spanish": "número de placa de matrícula"
+        },
+        {
+          "hanzi": "这个车牌号是多少？",
+          "pinyin": "Zhège chēpáihào shì duōshao?",
+          "spanish": "¿Cuál es el número de esta placa de matrícula?"
+        }
+      ]
+    },
+    {
+      "hanzi": "牌",
+      "contexts": [
+        {
+          "hanzi": "车牌号",
+          "pinyin": "chēpáihào",
+          "spanish": "número de placa de matrícula"
+        },
+        {
+          "hanzi": "这个车牌号是多少？",
+          "pinyin": "Zhège chēpáihào shì duōshao?",
+          "spanish": "¿Cuál es el número de esta placa de matrícula?"
+        }
+      ]
+    },
+    {
+      "hanzi": "广",
+      "contexts": [
+        {
+          "hanzi": "广州",
+          "pinyin": "Guǎngzhōu",
+          "spanish": "Guangzhou; Cantón"
+        },
+        {
+          "hanzi": "我妈妈是广州人，她喜欢吃点心。",
+          "pinyin": "Wǒ māma shì Guǎngzhōu rén, tā xǐhuan chī diǎnxin.",
+          "spanish": "Mi mamá es de Guangzhou y le gusta comer bocadillos."
+        }
+      ]
+    },
+    {
+      "hanzi": "州",
+      "contexts": [
+        {
+          "hanzi": "广州",
+          "pinyin": "Guǎngzhōu",
+          "spanish": "Guangzhou; Cantón"
+        },
+        {
+          "hanzi": "我妈妈是广州人，她喜欢吃点心。",
+          "pinyin": "Wǒ māma shì Guǎngzhōu rén, tā xǐhuan chī diǎnxin.",
+          "spanish": "Mi mamá es de Guangzhou y le gusta comer bocadillos."
+        }
+      ]
+    },
+    {
+      "hanzi": "烤",
+      "contexts": [
+        {
+          "hanzi": "北京烤鸭",
+          "pinyin": "Běijīng kǎoyā",
+          "spanish": "pato laqueado de Pekín"
+        },
+        {
+          "hanzi": "我喜欢吃北京烤鸭。",
+          "pinyin": "Wǒ xǐhuan chī Běijīng kǎoyā.",
+          "spanish": "Me gusta comer pato laqueado de Pekín."
+        }
+      ]
+    },
+    {
+      "hanzi": "鸭",
+      "contexts": [
+        {
+          "hanzi": "北京烤鸭",
+          "pinyin": "Běijīng kǎoyā",
+          "spanish": "pato laqueado de Pekín"
+        },
+        {
+          "hanzi": "我喜欢吃北京烤鸭。",
+          "pinyin": "Wǒ xǐhuan chī Běijīng kǎoyā.",
+          "spanish": "Me gusta comer pato laqueado de Pekín."
+        }
+      ]
+    },
+    {
+      "hanzi": "死",
+      "contexts": [
+        {
+          "hanzi": "死",
+          "pinyin": "sǐ",
+          "spanish": "morir; en 累死了, intensifica el cansancio"
+        },
+        {
+          "hanzi": "我累死了。",
+          "pinyin": "Wǒ lèi sǐ le.",
+          "spanish": "Estoy muerto de cansancio."
+        }
+      ]
+    },
+    {
+      "hanzi": "手",
+      "contexts": [
+        {
+          "hanzi": "手",
+          "pinyin": "shǒu",
+          "spanish": "mano"
+        },
+        {
+          "hanzi": "手机",
+          "pinyin": "shǒujī",
+          "spanish": "teléfono celular"
+        },
+        {
+          "hanzi": "他手大，我手小。",
+          "pinyin": "tā shǒu dà, wǒ shǒu xiǎo.",
+          "spanish": "Su mano es grande, mi mano es pequeña."
+        }
+      ]
+    },
+    {
+      "hanzi": "梅",
+      "contexts": [
+        {
+          "hanzi": "梅西",
+          "pinyin": "Méixī",
+          "spanish": "Messi; nombre propio"
+        },
+        {
+          "hanzi": "他是梅西。",
+          "pinyin": "Tā shì Méixī.",
+          "spanish": "Él es Messi."
+        }
+      ]
+    },
+    {
+      "hanzi": "孔",
+      "contexts": [
+        {
+          "hanzi": "孔子学院",
+          "pinyin": "Kǒngzǐ Xuéyuàn",
+          "spanish": "Instituto Confucio"
+        },
+        {
+          "hanzi": "里卡多帕尔玛大学孔子学院",
+          "pinyin": "lǐ kǎ duō pà ěr mǎ dà xué kǒng zǐ xué yuàn",
+          "spanish": "Instituto Confucio de la Universidad Ricardo Palma"
+        },
+        {
+          "hanzi": "孔子学院有二十个汉语老师。",
+          "pinyin": "Kǒngzǐ Xuéyuàn yǒu èrshí ge Hànyǔ lǎoshī.",
+          "spanish": "El Instituto Confucio tiene veinte profesores de chino."
+        }
+      ]
+    },
+    {
+      "hanzi": "冉",
+      "contexts": [
+        {
+          "hanzi": "张王冉",
+          "pinyin": "Zhāng Wángrǎn",
+          "spanish": "Zhang Wangran; nombre propio"
+        },
+        {
+          "hanzi": "大家好，我叫张王冉，我是中国人，我是汉语老师，我在秘鲁工作，我很喜欢我的工作。",
+          "pinyin": "Dàjiā hǎo, wǒ jiào Zhāng Wángrǎn, wǒ shì Zhōngguó rén, wǒ shì Hànyǔ lǎoshī, wǒ zài Bìlǔ gōngzuò, wǒ hěn xǐhuan wǒ de gōngzuò.",
+          "spanish": "Hola a todos. Me llamo Zhang Wangran, soy de China y enseño chino. Trabajo en Perú y me gusta mucho mi trabajo."
+        }
+      ]
+    },
+    {
+      "hanzi": "成",
+      "contexts": [
+        {
+          "hanzi": "成龙",
+          "pinyin": "Chéng Lóng",
+          "spanish": "Cheng Long; nombre propio"
+        },
+        {
+          "hanzi": "他叫成龙，她叫巩俐。",
+          "pinyin": "Tā jiào Chéng Lóng, tā jiào Gǒng Lì.",
+          "spanish": "Él se llama Cheng Long y ella se llama Gong Li."
+        },
+        {
+          "hanzi": "成龙很忙。巩俐也很忙。",
+          "pinyin": "Chéng Lóng hěn máng. Gǒng Lì yě hěn máng.",
+          "spanish": "Cheng Long está muy ocupado. Gong Li también está muy ocupada."
+        }
+      ]
+    },
+    {
+      "hanzi": "巩",
+      "contexts": [
+        {
+          "hanzi": "巩俐",
+          "pinyin": "Gǒng Lì",
+          "spanish": "Gong Li; nombre propio"
+        },
+        {
+          "hanzi": "他叫成龙，她叫巩俐。",
+          "pinyin": "Tā jiào Chéng Lóng, tā jiào Gǒng Lì.",
+          "spanish": "Él se llama Cheng Long y ella se llama Gong Li."
+        },
+        {
+          "hanzi": "成龙很忙。巩俐也很忙。",
+          "pinyin": "Chéng Lóng hěn máng. Gǒng Lì yě hěn máng.",
+          "spanish": "Cheng Long está muy ocupado. Gong Li también está muy ocupada."
+        }
+      ]
+    },
+    {
+      "hanzi": "俐",
+      "contexts": [
+        {
+          "hanzi": "巩俐",
+          "pinyin": "Gǒng Lì",
+          "spanish": "Gong Li; nombre propio"
+        },
+        {
+          "hanzi": "他叫成龙，她叫巩俐。",
+          "pinyin": "Tā jiào Chéng Lóng, tā jiào Gǒng Lì.",
+          "spanish": "Él se llama Cheng Long y ella se llama Gong Li."
+        },
+        {
+          "hanzi": "成龙很忙。巩俐也很忙。",
+          "pinyin": "Chéng Lóng hěn máng. Gǒng Lì yě hěn máng.",
+          "spanish": "Cheng Long está muy ocupado. Gong Li también está muy ocupada."
+        }
+      ]
+    },
+    {
+      "hanzi": "姚",
+      "contexts": [
+        {
+          "hanzi": "姚明",
+          "pinyin": "Yáo Míng",
+          "spanish": "Yao Ming; nombre propio"
+        },
+        {
+          "hanzi": "姚明怎么样？姚明也很忙。",
+          "pinyin": "Yáo Míng zěnmeyàng? Yáo Míng yě hěn máng.",
+          "spanish": "¿Cómo está Yao Ming? Yao Ming también está muy ocupado."
+        }
+      ]
+    },
+    {
+      "hanzi": "玛",
+      "contexts": [
+        {
+          "hanzi": "玛丽",
+          "pinyin": "Mǎlì",
+          "spanish": "Mali; nombre propio"
+        },
+        {
+          "hanzi": "里卡多帕尔玛大学",
+          "pinyin": "lǐ kǎ duō pà ěr mǎ dà xué",
+          "spanish": "Universidad Ricardo Palma"
+        },
+        {
+          "hanzi": "里卡多帕尔玛大学孔子学院",
+          "pinyin": "lǐ kǎ duō pà ěr mǎ dà xué kǒng zǐ xué yuàn",
+          "spanish": "Instituto Confucio de la Universidad Ricardo Palma"
+        }
+      ]
+    },
+    {
+      "hanzi": "钟",
+      "contexts": [
+        {
+          "hanzi": "点（钟）",
+          "pinyin": "diǎn (zhōng)",
+          "spanish": "en punto"
+        },
+        {
+          "hanzi": "九点（钟）",
+          "pinyin": "Jiǔ diǎn (zhōng)",
+          "spanish": "las nueve (en punto)"
+        },
+        {
+          "hanzi": "两点（钟）",
+          "pinyin": "Liǎng diǎn (zhōng)",
+          "spanish": "las dos (en punto)"
+        }
+      ]
+    },
+    {
+      "hanzi": "床",
+      "contexts": [
+        {
+          "hanzi": "起床",
+          "pinyin": "qǐchuáng",
+          "spanish": "levantarse"
+        },
+        {
+          "hanzi": "几点起床",
+          "pinyin": "Jǐ diǎn qǐchuáng",
+          "spanish": "a qué hora levantarse"
+        },
+        {
+          "hanzi": "明天我很忙。我七点起床。上午八点半有语法课，十一点和朋友练习口语。中午十二点吃午饭。我下午没有课。我四点运动，六点半吃晚饭。明天晚上我和朋友一起看电影，十二点睡觉。",
+          "pinyin": "Míngtiān wǒ hěn máng. Wǒ qī diǎn qǐchuáng. Shàngwǔ bā diǎn bàn yǒu yǔfǎ kè, shíyī diǎn hé péngyou liànxí kǒuyǔ. Zhōngwǔ shí'èr diǎn chī wǔfàn. Wǒ xiàwǔ méiyǒu kè. Wǒ sì diǎn yùndòng, liù diǎn bàn chī wǎnfàn. Míngtiān wǎnshang wǒ hé péngyou yìqǐ kàn diànyǐng, shí'èr diǎn shuìjiào.",
+          "spanish": "Mañana estoy muy ocupado. Me levanto a las siete. Por la mañana tengo clase de gramática a las ocho y media y practico expresión oral con amigos a las once. Almuerzo al mediodía, a las doce. No tengo clase por la tarde. Hago ejercicio a las cuatro y ceno a las seis y media. Mañana por la noche veo una película con amigos y me acuesto a las doce."
+        }
+      ]
+    },
+    {
+      "hanzi": "运",
+      "contexts": [
+        {
+          "hanzi": "运动",
+          "pinyin": "yùndòng",
+          "spanish": "deportes; ejercicio/hacer ejercicio físico"
+        },
+        {
+          "hanzi": "喜欢运动",
+          "pinyin": "Xǐhuan yùndòng",
+          "spanish": "gustar de hacer deporte"
+        },
+        {
+          "hanzi": "做运动",
+          "pinyin": "Zuò yùndòng",
+          "spanish": "hacer ejercicio"
+        }
+      ]
+    },
+    {
+      "hanzi": "打",
+      "contexts": [
+        {
+          "hanzi": "打球",
+          "pinyin": "dǎ qiú",
+          "spanish": "jugar a la pelota"
+        },
+        {
+          "hanzi": "去打球",
+          "pinyin": "Qù dǎ qiú",
+          "spanish": "ir a jugar a la pelota"
+        },
+        {
+          "hanzi": "喜欢打球",
+          "pinyin": "Xǐhuan dǎ qiú",
+          "spanish": "gustar de jugar a la pelota"
+        }
+      ]
+    },
+    {
+      "hanzi": "球",
+      "contexts": [
+        {
+          "hanzi": "打球",
+          "pinyin": "dǎ qiú",
+          "spanish": "jugar a la pelota"
+        },
+        {
+          "hanzi": "去打球",
+          "pinyin": "Qù dǎ qiú",
+          "spanish": "ir a jugar a la pelota"
+        },
+        {
+          "hanzi": "喜欢打球",
+          "pinyin": "Xǐhuan dǎ qiú",
+          "spanish": "gustar de jugar a la pelota"
+        }
+      ]
+    },
+    {
+      "hanzi": "跑",
+      "contexts": [
+        {
+          "hanzi": "跑步",
+          "pinyin": "pǎobù",
+          "spanish": "correr; trotar"
+        },
+        {
+          "hanzi": "去跑步",
+          "pinyin": "Qù pǎobù",
+          "spanish": "ir a correr"
+        },
+        {
+          "hanzi": "喜欢跑步",
+          "pinyin": "Xǐhuan pǎobù",
+          "spanish": "gustar de correr"
+        }
+      ]
+    },
+    {
+      "hanzi": "步",
+      "contexts": [
+        {
+          "hanzi": "跑步",
+          "pinyin": "pǎobù",
+          "spanish": "correr; trotar"
+        },
+        {
+          "hanzi": "去跑步",
+          "pinyin": "Qù pǎobù",
+          "spanish": "ir a correr"
+        },
+        {
+          "hanzi": "喜欢跑步",
+          "pinyin": "Xǐhuan pǎobù",
+          "spanish": "gustar de correr"
+        }
+      ]
+    },
+    {
+      "hanzi": "视",
+      "contexts": [
+        {
+          "hanzi": "电视",
+          "pinyin": "diànshì",
+          "spanish": "televisión; TV"
+        },
+        {
+          "hanzi": "看电视",
+          "pinyin": "Kàn diànshì",
+          "spanish": "ver televisión"
+        }
+      ]
+    },
+    {
+      "hanzi": "睡",
+      "contexts": [
+        {
+          "hanzi": "睡觉",
+          "pinyin": "shuìjiào",
+          "spanish": "dormir; acostarse"
+        },
+        {
+          "hanzi": "几点睡觉",
+          "pinyin": "Jǐ diǎn shuìjiào",
+          "spanish": "a qué hora dormir"
+        },
+        {
+          "hanzi": "去睡觉",
+          "pinyin": "Qù shuìjiào",
+          "spanish": "ir a dormir"
+        }
+      ]
+    },
+    {
+      "hanzi": "觉",
+      "contexts": [
+        {
+          "hanzi": "睡觉",
+          "pinyin": "shuìjiào",
+          "spanish": "dormir; acostarse"
+        },
+        {
+          "hanzi": "觉得",
+          "pinyin": "jué de",
+          "spanish": "sentir"
+        },
+        {
+          "hanzi": "几点睡觉",
+          "pinyin": "Jǐ diǎn shuìjiào",
+          "spanish": "a qué hora dormir"
+        }
+      ]
+    },
+    {
+      "hanzi": "历",
+      "contexts": [
+        {
+          "hanzi": "历史",
+          "pinyin": "lìshǐ",
+          "spanish": "historia"
+        },
+        {
+          "hanzi": "历史课",
+          "pinyin": "Lìshǐ kè",
+          "spanish": "clase de historia"
+        },
+        {
+          "hanzi": "学习历史",
+          "pinyin": "Xuéxí lìshǐ",
+          "spanish": "estudiar historia"
+        }
+      ]
+    },
+    {
+      "hanzi": "史",
+      "contexts": [
+        {
+          "hanzi": "历史",
+          "pinyin": "lìshǐ",
+          "spanish": "historia"
+        },
+        {
+          "hanzi": "历史课",
+          "pinyin": "Lìshǐ kè",
+          "spanish": "clase de historia"
+        },
+        {
+          "hanzi": "学习历史",
+          "pinyin": "Xuéxí lìshǐ",
+          "spanish": "estudiar historia"
+        }
+      ]
+    },
+    {
+      "hanzi": "济",
+      "contexts": [
+        {
+          "hanzi": "经济",
+          "pinyin": "jīngjì",
+          "spanish": "ciencias económicas; economía"
+        },
+        {
+          "hanzi": "经济课",
+          "pinyin": "Jīngjì kè",
+          "spanish": "clase de economía"
+        },
+        {
+          "hanzi": "学习经济",
+          "pinyin": "Xuéxí jīngjì",
+          "spanish": "estudiar economía"
+        }
+      ]
+    },
+    {
+      "hanzi": "化",
+      "contexts": [
+        {
+          "hanzi": "文化",
+          "pinyin": "wénhuà",
+          "spanish": "cultura"
+        },
+        {
+          "hanzi": "化学",
+          "pinyin": "huàxué",
+          "spanish": "Química"
+        },
+        {
+          "hanzi": "文化课",
+          "pinyin": "Wénhuà kè",
+          "spanish": "clase de cultura"
+        }
+      ]
+    },
+    {
+      "hanzi": "容",
+      "contexts": [
+        {
+          "hanzi": "容易",
+          "pinyin": "róngyì",
+          "spanish": "fácil"
+        },
+        {
+          "hanzi": "很容易",
+          "pinyin": "Hěn róngyì",
+          "spanish": "muy fácil"
+        },
+        {
+          "hanzi": "不容易",
+          "pinyin": "Bù róngyì",
+          "spanish": "no es fácil"
+        }
+      ]
+    },
+    {
+      "hanzi": "易",
+      "contexts": [
+        {
+          "hanzi": "容易",
+          "pinyin": "róngyì",
+          "spanish": "fácil"
+        },
+        {
+          "hanzi": "很容易",
+          "pinyin": "Hěn róngyì",
+          "spanish": "muy fácil"
+        },
+        {
+          "hanzi": "不容易",
+          "pinyin": "Bù róngyì",
+          "spanish": "no es fácil"
+        }
+      ]
+    },
+    {
+      "hanzi": "难",
+      "contexts": [
+        {
+          "hanzi": "难",
+          "pinyin": "nán",
+          "spanish": "difícil"
+        },
+        {
+          "hanzi": "很难",
+          "pinyin": "Hěn nán",
+          "spanish": "muy difícil"
+        },
+        {
+          "hanzi": "不难",
+          "pinyin": "Bù nán",
+          "spanish": "no es difícil"
+        }
+      ]
+    },
+    {
+      "hanzi": "考",
+      "contexts": [
+        {
+          "hanzi": "口语考试",
+          "pinyin": "kǒuyǔ kǎoshì",
+          "spanish": "examen oral"
+        },
+        {
+          "hanzi": "明天我们有口语考试。",
+          "pinyin": "Míngtiān wǒmen yǒu kǒuyǔ kǎoshì.",
+          "spanish": "Mañana tenemos un examen oral."
+        }
+      ]
+    },
+    {
+      "hanzi": "试",
+      "contexts": [
+        {
+          "hanzi": "口语考试",
+          "pinyin": "kǒuyǔ kǎoshì",
+          "spanish": "examen oral"
+        },
+        {
+          "hanzi": "明天我们有口语考试。",
+          "pinyin": "Míngtiān wǒmen yǒu kǒuyǔ kǎoshì.",
+          "spanish": "Mañana tenemos un examen oral."
+        }
+      ]
+    },
+    {
+      "hanzi": "部",
+      "contexts": [
+        {
+          "hanzi": "部",
+          "pinyin": "bù",
+          "spanish": "clasificador de películas y obras"
+        },
+        {
+          "hanzi": "一部电影",
+          "pinyin": "yí bù diànyǐng",
+          "spanish": "una película"
+        },
+        {
+          "hanzi": "这部电影很好看！",
+          "pinyin": "Zhè bù diànyǐng hěn hǎokàn!",
+          "spanish": "Esta pelícura es muy linda."
+        }
+      ]
+    },
+    {
+      "hanzi": "卦",
+      "contexts": [
+        {
+          "hanzi": "八卦",
+          "pinyin": "bāguà",
+          "spanish": "chisme"
+        },
+        {
+          "hanzi": "我听说了一个八卦。",
+          "pinyin": "Wǒ tīngshuō le yí ge bāguà.",
+          "spanish": "Escuché un chisme."
+        }
+      ]
+    },
+    {
+      "hanzi": "机",
+      "contexts": [
+        {
+          "hanzi": "手机",
+          "pinyin": "shǒujī",
+          "spanish": "teléfono celular"
+        },
+        {
+          "hanzi": "你有几个手机？",
+          "pinyin": "Nǐ yǒu jǐ ge shǒujī?",
+          "spanish": "¿Cuántos celulares tienes?"
+        }
+      ]
+    },
+    {
+      "hanzi": "钱",
+      "contexts": [
+        {
+          "hanzi": "钱",
+          "pinyin": "qián",
+          "spanish": "dinero"
+        },
+        {
+          "hanzi": "你有多少钱？",
+          "pinyin": "Nǐ yǒu duōshao qián?",
+          "spanish": "¿Cuánto dinero tienes?"
+        }
+      ]
+    },
+    {
+      "hanzi": "翻",
+      "contexts": [
+        {
+          "hanzi": "翻译",
+          "pinyin": "fānyì",
+          "spanish": "traducción; traducir"
+        },
+        {
+          "hanzi": "我们学习汉西英翻译专业。",
+          "pinyin": "Wǒmen xuéxíhàn xī yīng fānyìzhuānyè.",
+          "spanish": "Estudiamos la carrera de traducción chino español e inglés."
+        }
+      ]
+    },
+    {
+      "hanzi": "译",
+      "contexts": [
+        {
+          "hanzi": "翻译",
+          "pinyin": "fānyì",
+          "spanish": "traducción; traducir"
+        },
+        {
+          "hanzi": "我们学习汉西英翻译专业。",
+          "pinyin": "Wǒmen xuéxíhàn xī yīng fānyìzhuānyè.",
+          "spanish": "Estudiamos la carrera de traducción chino español e inglés."
+        }
+      ]
+    },
+    {
+      "hanzi": "帕",
+      "contexts": [
+        {
+          "hanzi": "里卡多帕尔玛大学",
+          "pinyin": "lǐ kǎ duō pà ěr mǎ dà xué",
+          "spanish": "Universidad Ricardo Palma"
+        },
+        {
+          "hanzi": "里卡多帕尔玛大学孔子学院",
+          "pinyin": "lǐ kǎ duō pà ěr mǎ dà xué kǒng zǐ xué yuàn",
+          "spanish": "Instituto Confucio de la Universidad Ricardo Palma"
+        },
+        {
+          "hanzi": "我是里卡多帕尔玛大学孔子学院的学生。",
+          "pinyin": "Wǒ shì Lǐkǎduō Pà'ěrmǎ Dàxué Kǒngzǐ Xuéyuàn de xuéshēng.",
+          "spanish": "Soy estudiante del Instituto Confucio de la Universidad Ricardo Palma."
+        }
+      ]
+    },
+    {
+      "hanzi": "尔",
+      "contexts": [
+        {
+          "hanzi": "里卡多帕尔玛大学",
+          "pinyin": "lǐ kǎ duō pà ěr mǎ dà xué",
+          "spanish": "Universidad Ricardo Palma"
+        },
+        {
+          "hanzi": "里卡多帕尔玛大学孔子学院",
+          "pinyin": "lǐ kǎ duō pà ěr mǎ dà xué kǒng zǐ xué yuàn",
+          "spanish": "Instituto Confucio de la Universidad Ricardo Palma"
+        },
+        {
+          "hanzi": "我是里卡多帕尔玛大学孔子学院的学生。",
+          "pinyin": "Wǒ shì Lǐkǎduō Pà'ěrmǎ Dàxué Kǒngzǐ Xuéyuàn de xuéshēng.",
+          "spanish": "Soy estudiante del Instituto Confucio de la Universidad Ricardo Palma."
+        }
+      ]
+    },
+    {
+      "hanzi": "政",
+      "contexts": [
+        {
+          "hanzi": "思想政治",
+          "pinyin": "sīxiǎng zhèngzhì",
+          "spanish": "Ideologia y Politica"
+        }
+      ]
+    },
+    {
+      "hanzi": "治",
+      "contexts": [
+        {
+          "hanzi": "思想政治",
+          "pinyin": "sīxiǎng zhèngzhì",
+          "spanish": "Ideologia y Politica"
+        }
+      ]
+    },
+    {
+      "hanzi": "得",
+      "contexts": [
+        {
+          "hanzi": "觉得",
+          "pinyin": "jué de",
+          "spanish": "sentir"
+        },
+        {
+          "hanzi": "林娜明天有很多课。她上午八点半有语法课，十点四十有汉字课，下午两点一刻还有口语课。她不觉得累。明天晚上她和宋华一起练习口语。\n今天晚上七点半王小云的班有活动。他们班一共有三十个人，有二十六个女生，四个男生。马大为觉得王小云的班很有意思。马大为他们班的女生少，男生多。他们班一共有十八个学生，只有六个女生。王小云说马大为的班也很有意思。",
+          "pinyin": "Lín Nà míngtiān yǒu hěn duō kè. Tā shàngwǔ bā diǎn bàn yǒu yǔfǎ kè, shí diǎn sìshí yǒu Hànzì kè, xiàwǔ liǎng diǎn yí kè hái yǒu kǒuyǔ kè. Tā bù juéde lèi. Míngtiān wǎnshang tā hé Sòng Huá yìqǐ liànxí kǒuyǔ. Jīntiān wǎnshang qī diǎn bàn Wáng Xiǎoyún de bān yǒu huódòng. Tāmen bān yígòng yǒu sānshí ge rén, yǒu èrshíliù ge nǚshēng, sì ge nánshēng. Mǎ Dàwéi juéde Wáng Xiǎoyún de bān hěn yǒu yìsi. Mǎ Dàwéi tāmen bān de nǚshēng shǎo, nánshēng duō. Tāmen bān yígòng yǒu shíbā ge xuéshēng, zhǐ yǒu liù ge nǚshēng. Wáng Xiǎoyún shuō Mǎ Dàwéi de bān yě hěn yǒu yìsi.",
+          "spanish": "Lin Na tiene muchas clases mañana. Ella tiene clase de gramática a las ocho y media de la mañana, de caracteres chinos a las diez y cuarenta, y también de expresión oral a las dos y cuarto de la tarde. Ella no se siente cansada. Mañana por la noche ella y Song Hua practican juntos la expresión oral. Hoy a las siete y media de la noche la clase de Wang Xiaoyun tiene una actividad. En su clase hay treinta personas en total: veintiséis alumnas y cuatro alumnos varones. A Ma Dawei le parece muy interesante la clase de Wang Xiaoyun. En la clase de Ma Dawei hay pocas alumnas y muchos alumnos varones. En su clase hay dieciocho estudiantes en total, y solo seis son alumnas. Wang Xiaoyun dice que la clase de Ma Dawei también es muy interesante."
+        },
+        {
+          "hanzi": "她不觉得累。",
+          "pinyin": "Tā bù juéde lèi.",
+          "spanish": "Ella no se siente cansada."
+        }
+      ]
+    },
+    {
+      "hanzi": "功",
+      "contexts": [
+        {
+          "hanzi": "功夫熊猫",
+          "pinyin": "Gōngfu Xióngmāo",
+          "spanish": "Kung Fu Panda"
+        },
+        {
+          "hanzi": "陈明在中学工作。她们学校一共有二十一个班，有四十五个老师。她教英语。她们班一共有三十六个学生，二十个男生，十六个女生。今天下午三点学校有活动，老师和学生们一起看电影《功夫熊猫》。这个电影很有意思，大家都很喜欢看。",
+          "pinyin": "Chén Míng zài zhōngxué gōngzuò. Tāmen xuéxiào yígòng yǒu èrshíyī gè bān, yǒu sìshíwǔ gè lǎoshī. Tā jiāo Yīngyǔ. Tāmen bān yígòng yǒu sānshíliù gè xuésheng, èrshí gè nánshēng, shíliù gè nǚshēng. Jīntiān xiàwǔ sān diǎn xuéxiào yǒu huódòng, lǎoshī hé xuéshengmen yìqǐ kàn diànyǐng 《Gōngfu Xióngmāo》. Zhège diànyǐng hěn yǒu yìsi, dàjiā dōu hěn xǐhuan kàn.",
+          "spanish": "Chen Ming trabaja en una escuela secundaria. En su escuela hay veintiuna clases y cuarenta y cinco profesores en total. Ella enseña inglés. En su clase hay treinta y seis estudiantes en total: veinte alumnos varones y dieciséis alumnas. Hoy a las tres de la tarde hay una actividad en la escuela: profesores y estudiantes ven juntos la película «Kung Fu Panda». Esta película es muy interesante y a todos les gusta mucho verla."
+        },
+        {
+          "hanzi": "今天下午三点学校有活动，老师和学生们一起看电影《功夫熊猫》。",
+          "pinyin": "Jīntiān xiàwǔ sān diǎn xuéxiào yǒu huódòng, lǎoshī hé xuéshēngmen yìqǐ kàn diànyǐng “Gōngfu Xióngmāo”.",
+          "spanish": "Hoy a las tres de la tarde hay una actividad en la escuela: profesores y estudiantes ven juntos la película «Kung Fu Panda»."
+        }
+      ]
+    },
+    {
+      "hanzi": "夫",
+      "contexts": [
+        {
+          "hanzi": "功夫熊猫",
+          "pinyin": "Gōngfu Xióngmāo",
+          "spanish": "Kung Fu Panda"
+        },
+        {
+          "hanzi": "陈明在中学工作。她们学校一共有二十一个班，有四十五个老师。她教英语。她们班一共有三十六个学生，二十个男生，十六个女生。今天下午三点学校有活动，老师和学生们一起看电影《功夫熊猫》。这个电影很有意思，大家都很喜欢看。",
+          "pinyin": "Chén Míng zài zhōngxué gōngzuò. Tāmen xuéxiào yígòng yǒu èrshíyī gè bān, yǒu sìshíwǔ gè lǎoshī. Tā jiāo Yīngyǔ. Tāmen bān yígòng yǒu sānshíliù gè xuésheng, èrshí gè nánshēng, shíliù gè nǚshēng. Jīntiān xiàwǔ sān diǎn xuéxiào yǒu huódòng, lǎoshī hé xuéshengmen yìqǐ kàn diànyǐng 《Gōngfu Xióngmāo》. Zhège diànyǐng hěn yǒu yìsi, dàjiā dōu hěn xǐhuan kàn.",
+          "spanish": "Chen Ming trabaja en una escuela secundaria. En su escuela hay veintiuna clases y cuarenta y cinco profesores en total. Ella enseña inglés. En su clase hay treinta y seis estudiantes en total: veinte alumnos varones y dieciséis alumnas. Hoy a las tres de la tarde hay una actividad en la escuela: profesores y estudiantes ven juntos la película «Kung Fu Panda». Esta película es muy interesante y a todos les gusta mucho verla."
+        },
+        {
+          "hanzi": "今天下午三点学校有活动，老师和学生们一起看电影《功夫熊猫》。",
+          "pinyin": "Jīntiān xiàwǔ sān diǎn xuéxiào yǒu huódòng, lǎoshī hé xuéshēngmen yìqǐ kàn diànyǐng “Gōngfu Xióngmāo”.",
+          "spanish": "Hoy a las tres de la tarde hay una actividad en la escuela: profesores y estudiantes ven juntos la película «Kung Fu Panda»."
+        }
+      ]
+    },
+    {
+      "hanzi": "熊",
+      "contexts": [
+        {
+          "hanzi": "功夫熊猫",
+          "pinyin": "Gōngfu Xióngmāo",
+          "spanish": "Kung Fu Panda"
+        },
+        {
+          "hanzi": "陈明在中学工作。她们学校一共有二十一个班，有四十五个老师。她教英语。她们班一共有三十六个学生，二十个男生，十六个女生。今天下午三点学校有活动，老师和学生们一起看电影《功夫熊猫》。这个电影很有意思，大家都很喜欢看。",
+          "pinyin": "Chén Míng zài zhōngxué gōngzuò. Tāmen xuéxiào yígòng yǒu èrshíyī gè bān, yǒu sìshíwǔ gè lǎoshī. Tā jiāo Yīngyǔ. Tāmen bān yígòng yǒu sānshíliù gè xuésheng, èrshí gè nánshēng, shíliù gè nǚshēng. Jīntiān xiàwǔ sān diǎn xuéxiào yǒu huódòng, lǎoshī hé xuéshengmen yìqǐ kàn diànyǐng 《Gōngfu Xióngmāo》. Zhège diànyǐng hěn yǒu yìsi, dàjiā dōu hěn xǐhuan kàn.",
+          "spanish": "Chen Ming trabaja en una escuela secundaria. En su escuela hay veintiuna clases y cuarenta y cinco profesores en total. Ella enseña inglés. En su clase hay treinta y seis estudiantes en total: veinte alumnos varones y dieciséis alumnas. Hoy a las tres de la tarde hay una actividad en la escuela: profesores y estudiantes ven juntos la película «Kung Fu Panda». Esta película es muy interesante y a todos les gusta mucho verla."
+        },
+        {
+          "hanzi": "今天下午三点学校有活动，老师和学生们一起看电影《功夫熊猫》。",
+          "pinyin": "Jīntiān xiàwǔ sān diǎn xuéxiào yǒu huódòng, lǎoshī hé xuéshēngmen yìqǐ kàn diànyǐng “Gōngfu Xióngmāo”.",
+          "spanish": "Hoy a las tres de la tarde hay una actividad en la escuela: profesores y estudiantes ven juntos la película «Kung Fu Panda»."
+        }
+      ]
+    },
+    {
+      "hanzi": "每",
+      "contexts": [
+        {
+          "hanzi": "每天",
+          "pinyin": "měi tiān",
+          "spanish": "todos los días"
+        },
+        {
+          "hanzi": "王小云早上六点半起床，七点吃早饭，七点半去学校。她学习英语专业，每天有很多课：上午八点有语法课，十点有口语课，下午两点有写作课，晚上还有英语电影课。她特别忙，她说她不累。周末她和林娜一起练习口语。林娜是英国人，现在在中国。她是小云的好朋友。",
+          "pinyin": "Wáng Xiǎoyún zǎoshang liù diǎn bàn qǐchuáng, qī diǎn chī zǎofàn, qī diǎn bàn qù xuéxiào. Tā xuéxí Yīngyǔ zhuānyè, měi tiān yǒu hěn duō kè: shàngwǔ bā diǎn yǒu yǔfǎkè, shí diǎn yǒu kǒuyǔkè, xiàwǔ liǎng diǎn yǒu xiězuòkè, wǎnshang hái yǒu Yīngyǔ diànyǐngkè. Tā tèbié máng, tā shuō tā bù lèi. Zhōumò tā hé Lín Nà yìqǐ liànxí kǒuyǔ. Lín Nà shì Yīngguórén, xiànzài zài Zhōngguó. Tā shì Xiǎoyún de hǎo péngyou.",
+          "spanish": "Wang Xiaoyun se levanta a las seis y media de la mañana, desayuna a las siete y va a la escuela a las siete y media. Ella estudia la especialidad de inglés y tiene muchas clases todos los días: gramática a las ocho de la mañana, expresión oral a las diez, redacción a las dos de la tarde y también cine en inglés por la noche. Ella está especialmente ocupada y dice que no está cansada. El fin de semana ella y Lin Na practican juntas la expresión oral. Lin Na es británica y ahora está en China. Ella es una buena amiga de Xiaoyun."
+        },
+        {
+          "hanzi": "她学习英语专业，每天有很多课：上午八点有语法课，十点有口语课，下午两点有写作课，晚上还有英语电影课。",
+          "pinyin": "Tā xuéxí Yīngyǔ zhuānyè, měi tiān yǒu hěn duō kè: shàngwǔ bā diǎn yǒu yǔfǎ kè, shí diǎn yǒu kǒuyǔ kè, xiàwǔ liǎng diǎn yǒu xiězuò kè, wǎnshang hái yǒu Yīngyǔ diànyǐng kè.",
+          "spanish": "Ella estudia la especialidad de inglés y tiene muchas clases todos los días: gramática a las ocho de la mañana, expresión oral a las diez, redacción a las dos de la tarde y también cine en inglés por la noche."
+        }
+      ]
+    },
+    {
+      "hanzi": "综",
+      "contexts": [
+        {
+          "hanzi": "综合汉语",
+          "pinyin": "zōnghé Hànyǔ",
+          "spanish": "chino integral"
+        }
+      ]
+    },
+    {
+      "hanzi": "合",
+      "contexts": [
+        {
+          "hanzi": "综合汉语",
+          "pinyin": "zōnghé Hànyǔ",
+          "spanish": "chino integral"
+        }
+      ]
+    },
+    {
+      "hanzi": "位",
+      "contexts": [
+        {
+          "hanzi": "这位老人是我爷爷。",
+          "pinyin": "Zhè wèi lǎorén shì wǒ yéye.",
+          "spanish": "Esta persona mayor es mi abuelo paterno."
+        }
+      ]
+    },
+    {
+      "hanzi": "〇",
+      "contexts": [
+        {
+          "hanzi": "二〇二〇年十二月二十五日星期五晚上八点二十五。",
+          "pinyin": "Èr líng èr líng nián shí'èr yuè èrshíwǔ rì xīngqīwǔ wǎnshang bā diǎn èrshíwǔ.",
+          "spanish": "Viernes 25 de diciembre de 2020 a las ocho y veinticinco de la noche."
+        }
+      ]
+    }
+  ]
+}

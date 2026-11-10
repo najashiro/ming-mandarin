@@ -8,6 +8,8 @@ import pronunciation from '@/data/pronunciation.json';
 import availableMandarin from '@/data/mandarin-audio-available.json';
 import gameAudio from '@/data/game-audio.json';
 import gameAudioAvailable from '@/data/game-audio-available.json';
+import hanziAudio from '@/data/hanzi-audio.json';
+import hanziAudioAvailable from '@/data/hanzi-audio-available.json';
 import { timeTokens } from '@/data/time-game';
 import { timeAudioFile } from './time-audio-key.mjs';
 
@@ -76,6 +78,15 @@ for (const clip of gameAudio.clips) {
   if (clip.expectedPinyin && !clipsByReading.has(readingKey(clip.input, clip.expectedPinyin))) {
     clipsByReading.set(readingKey(clip.input, clip.expectedPinyin), src);
   }
+}
+
+// Isolated-character recordings are indexed by their exact documented reading.
+// Never substitute a neutral syllable or a different reading of a homograph.
+for (const clip of hanziAudio.clips) {
+  if (!(hanziAudioAvailable.files as string[]).includes(clip.file)) continue;
+  const src = `/audio/mandarin/${clip.file}`;
+  if (!clipsByReading.has(readingKey(clip.input, clip.expectedPinyin))) clipsByReading.set(readingKey(clip.input, clip.expectedPinyin), src);
+  if (!clipsByText.has(normalizeMandarin(clip.input)) && !lesson4ByText.has(normalizeMandarin(clip.input))) clipsByText.set(normalizeMandarin(clip.input), src);
 }
 
 export function audioForMandarinText(text: string, pinyin?: string): string | undefined {

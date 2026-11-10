@@ -1,0 +1,553 @@
+{
+  "version": 1,
+  "origin": "ming_hanzi_pronunciation",
+  "voiceDisclosure": "Voz generada por IA",
+  "clips": [
+    {
+      "id": "hanzi-ed9d675b3ff17307",
+      "file": "hanzi-ed9d675b3ff17307.mp3",
+      "input": "足",
+      "expectedPinyin": "zú",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta zú. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-cf0559cc3be1a236",
+      "file": "hanzi-cf0559cc3be1a236.mp3",
+      "input": "舌",
+      "expectedPinyin": "shé",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta shé. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-bf7cd3ea370114f1",
+      "file": "hanzi-bf7cd3ea370114f1.mp3",
+      "input": "方",
+      "expectedPinyin": "fāng",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta fāng. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-01e5bbbbff77363c",
+      "file": "hanzi-01e5bbbbff77363c.mp3",
+      "input": "走",
+      "expectedPinyin": "zǒu",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta zǒu. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-6bbafa8255af18a8",
+      "file": "hanzi-6bbafa8255af18a8.mp3",
+      "input": "矢",
+      "expectedPinyin": "shǐ",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta shǐ. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-ac5f637174f3c77c",
+      "file": "hanzi-ac5f637174f3c77c.mp3",
+      "input": "竹",
+      "expectedPinyin": "zhú",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta zhú. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-66c6e035df29536d",
+      "file": "hanzi-66c6e035df29536d.mp3",
+      "input": "舍",
+      "expectedPinyin": "shè",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta shè. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-fcfc43bbb3ad8e04",
+      "file": "hanzi-fcfc43bbb3ad8e04.mp3",
+      "input": "超",
+      "expectedPinyin": "chāo",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta chāo. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-636eb6945b45e37c",
+      "file": "hanzi-636eb6945b45e37c.mp3",
+      "input": "知",
+      "expectedPinyin": "zhī",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta zhī. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-8f1d1b228faf9e1b",
+      "file": "hanzi-8f1d1b228faf9e1b.mp3",
+      "input": "等",
+      "expectedPinyin": "děng",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta děng. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-25c71e9535e09ea3",
+      "file": "hanzi-25c71e9535e09ea3.mp3",
+      "input": "跟",
+      "expectedPinyin": "gēn",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta gēn. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-e09c9d998fc62d07",
+      "file": "hanzi-e09c9d998fc62d07.mp3",
+      "input": "路",
+      "expectedPinyin": "lù",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta lù. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-3e22e7928bb94349",
+      "file": "hanzi-3e22e7928bb94349.mp3",
+      "input": "街",
+      "expectedPinyin": "jiē",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta jiē. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-80926101512d3493",
+      "file": "hanzi-80926101512d3493.mp3",
+      "input": "左",
+      "expectedPinyin": "zuǒ",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta zuǒ. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-a712bf8ea327a43f",
+      "file": "hanzi-a712bf8ea327a43f.mp3",
+      "input": "后",
+      "expectedPinyin": "hòu",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta hòu. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-8365962b0aa31abd",
+      "file": "hanzi-8365962b0aa31abd.mp3",
+      "input": "里",
+      "expectedPinyin": "lǐ",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta lǐ. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-56a2600a6e637f96",
+      "file": "hanzi-56a2600a6e637f96.mp3",
+      "input": "先",
+      "expectedPinyin": "xiān",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta xiān. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-69f16d61104de2d5",
+      "file": "hanzi-69f16d61104de2d5.mp3",
+      "input": "前",
+      "expectedPinyin": "qián",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta qián. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-4e8b56c9375ad02b",
+      "file": "hanzi-4e8b56c9375ad02b.mp3",
+      "input": "胡",
+      "expectedPinyin": "hú",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta hú. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-4f3ed8319f982dae",
+      "file": "hanzi-4f3ed8319f982dae.mp3",
+      "input": "乌",
+      "expectedPinyin": "wū",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta wū. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-f774858f2df5bb4b",
+      "file": "hanzi-f774858f2df5bb4b.mp3",
+      "input": "从",
+      "expectedPinyin": "cóng",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta cóng. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-524ad5040db05ee7",
+      "file": "hanzi-524ad5040db05ee7.mp3",
+      "input": "以",
+      "expectedPinyin": "yǐ",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta yǐ. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-785e8511296d08eb",
+      "file": "hanzi-785e8511296d08eb.mp3",
+      "input": "伞",
+      "expectedPinyin": "sǎn",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta sǎn. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-d96d4574652e4dc4",
+      "file": "hanzi-d96d4574652e4dc4.mp3",
+      "input": "传",
+      "expectedPinyin": "chuán",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta chuán. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-ce6dd665fafe11f7",
+      "file": "hanzi-ce6dd665fafe11f7.mp3",
+      "input": "关",
+      "expectedPinyin": "guān",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta guān. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-31106048fd426329",
+      "file": "hanzi-31106048fd426329.mp3",
+      "input": "务",
+      "expectedPinyin": "wù",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta wù. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-7191eb228228a53d",
+      "file": "hanzi-7191eb228228a53d.mp3",
+      "input": "南",
+      "expectedPinyin": "nán",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta nán. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-52334d63e311774f",
+      "file": "hanzi-52334d63e311774f.mp3",
+      "input": "卧",
+      "expectedPinyin": "wò",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta wò. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-105bce25aaf23328",
+      "file": "hanzi-105bce25aaf23328.mp3",
+      "input": "卫",
+      "expectedPinyin": "wèi",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta wèi. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-f1d36bdd46797036",
+      "file": "hanzi-f1d36bdd46797036.mp3",
+      "input": "厨",
+      "expectedPinyin": "chú",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta chú. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-1971b6462f1d6528",
+      "file": "hanzi-1971b6462f1d6528.mp3",
+      "input": "取",
+      "expectedPinyin": "qǔ",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta qǔ. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-42e402978690a3a2",
+      "file": "hanzi-42e402978690a3a2.mp3",
+      "input": "台",
+      "expectedPinyin": "tái",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta tái. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-2787962148caf01c",
+      "file": "hanzi-2787962148caf01c.mp3",
+      "input": "同",
+      "expectedPinyin": "tóng",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta tóng. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-ce928686f9d15a2e",
+      "file": "hanzi-ce928686f9d15a2e.mp3",
+      "input": "地",
+      "expectedPinyin": "dì",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta dì. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-b4ecac1d12c5a19a",
+      "file": "hanzi-b4ecac1d12c5a19a.mp3",
+      "input": "场",
+      "expectedPinyin": "chǎng",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta chǎng. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-b32d44e0c55e4d91",
+      "file": "hanzi-b32d44e0c55e4d91.mp3",
+      "input": "堂",
+      "expectedPinyin": "táng",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta táng. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-010864de351c1408",
+      "file": "hanzi-010864de351c1408.mp3",
+      "input": "声",
+      "expectedPinyin": "shēng",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta shēng. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-d5d74a86d6b94b23",
+      "file": "hanzi-d5d74a86d6b94b23.mp3",
+      "input": "如",
+      "expectedPinyin": "rú",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta rú. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-6e75c3d6fd439044",
+      "file": "hanzi-6e75c3d6fd439044.mp3",
+      "input": "它",
+      "expectedPinyin": "tā",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta tā. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-c3bf31f4af052c6a",
+      "file": "hanzi-c3bf31f4af052c6a.mp3",
+      "input": "定",
+      "expectedPinyin": "dìng",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta dìng. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-466f231d527c35da",
+      "file": "hanzi-466f231d527c35da.mp3",
+      "input": "室",
+      "expectedPinyin": "shì",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta shì. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-88b593c66b229658",
+      "file": "hanzi-88b593c66b229658.mp3",
+      "input": "宿",
+      "expectedPinyin": "sù",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta sù. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-9ceaf36d99de5a84",
+      "file": "hanzi-9ceaf36d99de5a84.mp3",
+      "input": "市",
+      "expectedPinyin": "shì",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta shì. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-c4c0e6b890d88c1a",
+      "file": "hanzi-c4c0e6b890d88c1a.mp3",
+      "input": "店",
+      "expectedPinyin": "diàn",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta diàn. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-9abee4a1fc017d35",
+      "file": "hanzi-9abee4a1fc017d35.mp3",
+      "input": "座",
+      "expectedPinyin": "zuò",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta zuò. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-f5d015b64a96cc75",
+      "file": "hanzi-f5d015b64a96cc75.mp3",
+      "input": "急",
+      "expectedPinyin": "jí",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta jí. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-16239cfe4fdc906a",
+      "file": "hanzi-16239cfe4fdc906a.mp3",
+      "input": "想",
+      "expectedPinyin": "xiǎng",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta xiǎng. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-4b474ef4680f5462",
+      "file": "hanzi-4b474ef4680f5462.mp3",
+      "input": "或",
+      "expectedPinyin": "huò",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta huò. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-c557dc2d4c927dc9",
+      "file": "hanzi-c557dc2d4c927dc9.mp3",
+      "input": "房",
+      "expectedPinyin": "fáng",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta fáng. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-6598845a652e6955",
+      "file": "hanzi-6598845a652e6955.mp3",
+      "input": "操",
+      "expectedPinyin": "cāo",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta cāo. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-ae1015f0967a6046",
+      "file": "hanzi-ae1015f0967a6046.mp3",
+      "input": "旁",
+      "expectedPinyin": "páng",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta páng. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-aa6565cabd3d9180",
+      "file": "hanzi-aa6565cabd3d9180.mp3",
+      "input": "桌",
+      "expectedPinyin": "zhuō",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta zhuō. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-225f88b279aaaaee",
+      "file": "hanzi-225f88b279aaaaee.mp3",
+      "input": "比",
+      "expectedPinyin": "bǐ",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta bǐ. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-9e2a943a2bdce857",
+      "file": "hanzi-9e2a943a2bdce857.mp3",
+      "input": "清",
+      "expectedPinyin": "qīng",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta qīng. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-848d151aed8f6938",
+      "file": "hanzi-848d151aed8f6938.mp3",
+      "input": "理",
+      "expectedPinyin": "lǐ",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta lǐ. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-b1dfbb0b5cddd603",
+      "file": "hanzi-b1dfbb0b5cddd603.mp3",
+      "input": "白",
+      "expectedPinyin": "bái",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta bái. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-dffc4260a2b8cad8",
+      "file": "hanzi-dffc4260a2b8cad8.mp3",
+      "input": "着",
+      "expectedPinyin": "zháo",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta zháo. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-dfe9f2e25f85af96",
+      "file": "hanzi-dfe9f2e25f85af96.mp3",
+      "input": "答",
+      "expectedPinyin": "dá",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta dá. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-d9daedf8f1169242",
+      "file": "hanzi-d9daedf8f1169242.mp3",
+      "input": "经",
+      "expectedPinyin": "jīng",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta jīng. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-b5f307e562c518e7",
+      "file": "hanzi-b5f307e562c518e7.mp3",
+      "input": "者",
+      "expectedPinyin": "zhě",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta zhě. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-2f065c0873598599",
+      "file": "hanzi-2f065c0873598599.mp3",
+      "input": "职",
+      "expectedPinyin": "zhí",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta zhí. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-5ce22ccee593b8d8",
+      "file": "hanzi-5ce22ccee593b8d8.mp3",
+      "input": "肯",
+      "expectedPinyin": "kěn",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta kěn. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-6ce8ee5d55a84b0a",
+      "file": "hanzi-6ce8ee5d55a84b0a.mp3",
+      "input": "边",
+      "expectedPinyin": "biān",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta biān. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-fdf86252efc2c366",
+      "file": "hanzi-fdf86252efc2c366.mp3",
+      "input": "过",
+      "expectedPinyin": "guò",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta guò. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-25dee903b33e64ca",
+      "file": "hanzi-25dee903b33e64ca.mp3",
+      "input": "道",
+      "expectedPinyin": "dào",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta dào. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-e6ece3bcf163c517",
+      "file": "hanzi-e6ece3bcf163c517.mp3",
+      "input": "长",
+      "expectedPinyin": "zhǎng",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta zhǎng. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-ddd57fff51ef087e",
+      "file": "hanzi-ddd57fff51ef087e.mp3",
+      "input": "阳",
+      "expectedPinyin": "yáng",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta yáng. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-67ad5201de1f1f70",
+      "file": "hanzi-67ad5201de1f1f70.mp3",
+      "input": "食",
+      "expectedPinyin": "shí",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta shí. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-798f2b8731abd44b",
+      "file": "hanzi-798f2b8731abd44b.mp3",
+      "input": "龟",
+      "expectedPinyin": "guī",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta guī. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-4cbf176c86968b29",
+      "file": "hanzi-4cbf176c86968b29.mp3",
+      "input": "宠",
+      "expectedPinyin": "chǒng",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta chǒng. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-fb5b17b45fa40e26",
+      "file": "hanzi-fb5b17b45fa40e26.mp3",
+      "input": "华",
+      "expectedPinyin": "huá",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta huá. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-492a29cb851e973d",
+      "file": "hanzi-492a29cb851e973d.mp3",
+      "input": "周",
+      "expectedPinyin": "zhōu",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta zhōu. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-83de5e5978f678aa",
+      "file": "hanzi-83de5e5978f678aa.mp3",
+      "input": "娜",
+      "expectedPinyin": "nà",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta nà. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-f9c8597cd916cc70",
+      "file": "hanzi-f9c8597cd916cc70.mp3",
+      "input": "强",
+      "expectedPinyin": "qiáng",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta qiáng. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-3d1e67d178c0daec",
+      "file": "hanzi-3d1e67d178c0daec.mp3",
+      "input": "末",
+      "expectedPinyin": "mò",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta mò. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-5f6f49bae16f8881",
+      "file": "hanzi-5f6f49bae16f8881.mp3",
+      "input": "贺",
+      "expectedPinyin": "hè",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta hè. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-87c9d9a511065371",
+      "file": "hanzi-87c9d9a511065371.mp3",
+      "input": "音",
+      "expectedPinyin": "yīn",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta yīn. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    },
+    {
+      "id": "hanzi-aee6d4f609a2ea78",
+      "file": "hanzi-aee6d4f609a2ea78.mp3",
+      "input": "首",
+      "expectedPinyin": "shǒu",
+      "instructions": "Pronuncia una sola vez el carácter aislado con la lectura exacta shǒu. No leas el pinyin ni añadas ejemplos. Mantén su tono indicado; no lo cambies por la lectura de una palabra compuesta."
+    }
+  ]
+}

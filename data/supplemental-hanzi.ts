@@ -1,6 +1,6 @@
 /**
- * Direct-reference Hanzi for the time game. They are deliberately excluded from
- * every curriculum collection and progress calculation. A future audited lesson
+ * Searchable reference Hanzi for the lessons and time game. They are excluded from
+ * curriculum writing targets and progress calculation. A future audited lesson
  * associates the same glyph/id with a unit; it must not create another asset.
  */
 import vocabularyHanzi from './vocabulary-hanzi.json';
@@ -15,9 +15,10 @@ export type SupplementalHanziEntry = {
   strokeCount: number;
   curricularAssociation: null;
   tracking: 'supplementary';
-  access: 'direct-link-only';
+  access: 'search-and-direct-link';
   linguisticSource: string;
   technicalSource: 'hanzi-writer-data@2.0.1';
+  referenceLessons?: number[];
 };
 
 export const supplementalHanzi = [
@@ -28,14 +29,19 @@ export const supplementalHanzi = [
   ['差','chà','faltar · quedar',9],
 ].map(([hanzi,pinyin,meaning,strokeCount])=>({
   id:`supplemental-${hanzi}`,hanzi,pinyin,meaning,strokeCount,
-  curricularAssociation:null,tracking:'supplementary',access:'direct-link-only',
+  curricularAssociation:null,tracking:'supplementary',access:'search-and-direct-link',
   linguisticSource:'time-game-approved-content-2026-09-23',technicalSource:'hanzi-writer-data@2.0.1',
 })) as SupplementalHanziEntry[];
 
-const vocabularyReferences: SupplementalHanziEntry[] = [...lesson6References, ...vocabularyHanzi, ...lesson5References].map(entry => ({
+const vocabularyReferences: SupplementalHanziEntry[] = [
+  ...lesson6References.map(entry => ({ ...entry, referenceLessons: [6] })),
+  ...vocabularyHanzi.map(entry => ({ ...entry, referenceLessons: [3] })),
+  ...lesson5References.map(entry => ({ ...entry, referenceLessons: [5] })),
+].map(entry => ({
   id: `supplemental-${entry.hanzi}`, hanzi: entry.hanzi, pinyin: entry.pinyin, meaning: entry.meaning,
   strokeCount: (manifest as Record<string, {strokeCount:number}>)[entry.hanzi].strokeCount,
-  curricularAssociation: null, tracking: 'supplementary', access: 'direct-link-only',
+  curricularAssociation: null, tracking: 'supplementary', access: 'search-and-direct-link',
   linguisticSource: entry.source, technicalSource: 'hanzi-writer-data@2.0.1',
+  referenceLessons: entry.referenceLessons,
 }));
 export const supplementalHanziByGlyph = new Map([...supplementalHanzi, ...vocabularyReferences].map(entry=>[entry.hanzi,entry]));

@@ -31,6 +31,7 @@ compact subset derived from **cnchar-order 3.2.6**.
 - Project: https://github.com/theajack/cnchar
 - License: MIT
 - Stroke names and Hanyu Pinyin are normalized against Unicode's CJK Strokes catalog.
+- The reference-character subset is in `data/hanzi-reference-stroke-names.json`; each sequence is checked against the local stroke count. The MIT license is included at `public/licenses/CNCHAR_ORDER_MIT.txt`.
 
 ## Banderas de los apoyos de lecciones 1–3
 
