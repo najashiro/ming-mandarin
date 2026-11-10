@@ -1,0 +1,106 @@
+{
+  "method": "automatic_speech_recognition",
+  "independentHumanReview": false,
+  "scope": "Animal questions and answer feedback; 22 previous clips preserved",
+  "results": [
+    {
+      "file": "hide-0c22b032fcc787b3.mp3",
+      "sha256": "085b565da76db61c77d4e5a5d7ca8fec3cd15736371957591764e50fe5b2b51d",
+      "expected": "兔子在哪儿？",
+      "heard": "兔子在哪兒?",
+      "matches": true,
+      "repairNote": "Initial newly generated clip was rejected by two ASR models for 到 instead of 在; regenerated only this new clip with explicit zài guidance.",
+      "signal": {
+        "duration": 1.704,
+        "rms": 0.0746129989152573,
+        "peak": 0.3866579532623291,
+        "activeRatio": 0.5711071987480438,
+        "audible": true
+      }
+    },
+    {
+      "file": "hide-c5d5eaf51f7e3b63.mp3",
+      "sha256": "8295cca6c7be215bdc6d065c30ae4f17e07237e6eab83eae20abc3e40655f704",
+      "expected": "狗在哪儿？",
+      "heard": "狗在哪兒?",
+      "matches": true,
+      "signal": {
+        "duration": 1.92,
+        "rms": 0.07603942160938042,
+        "peak": 0.5254359245300293,
+        "activeRatio": 0.48934461805555557,
+        "audible": true
+      }
+    },
+    {
+      "file": "hide-9fe53234cdcad078.mp3",
+      "sha256": "3ec259a0592f6000a86d4680bfaf9409021fe420438acc206b47af8dde0c2f7e",
+      "expected": "猫在哪儿？",
+      "heard": "猫在哪儿?",
+      "matches": true,
+      "signal": {
+        "duration": 1.008,
+        "rms": 0.08088931500764233,
+        "peak": 0.41327857971191406,
+        "activeRatio": 0.6648272156084656,
+        "audible": true
+      }
+    },
+    {
+      "file": "hide-72e24c1048818c85.mp3",
+      "sha256": "2beabf1028c87c4cd776e1bd864fd7d46584fb1544ab41e1266833f4082fb662",
+      "expected": "乌龟在哪儿？",
+      "heard": "乌龟在哪儿?",
+      "matches": true,
+      "signal": {
+        "duration": 2.712,
+        "rms": 0.07333351881267147,
+        "peak": 0.49932754039764404,
+        "activeRatio": 0.33329492379547687,
+        "audible": true
+      }
+    },
+    {
+      "file": "hide-4496c1a8b10ec3af.mp3",
+      "sha256": "75e859f408d4aacf625311f005ee1f8bdc2db8bdd5ef0f8968f50681e96a9e77",
+      "expected": "答对了！",
+      "heard": "答對了",
+      "matches": true,
+      "signal": {
+        "duration": 1.2,
+        "rms": 0.057390824509677855,
+        "peak": 0.5793037414550781,
+        "activeRatio": 0.35963541666666665,
+        "audible": true
+      }
+    },
+    {
+      "file": "hide-4f5acbe6936a34a4.mp3",
+      "sha256": "665c367938f00e90e066995cf9a3f27bd259bb47c56287e2af64679256965c5b",
+      "expected": "答错了，再试试！",
+      "heard": "答錯了,再試試。",
+      "matches": true,
+      "signal": {
+        "duration": 2.4,
+        "rms": 0.07010941570131737,
+        "peak": 0.4555016756057739,
+        "activeRatio": 0.4982465277777778,
+        "audible": true
+      }
+    },
+    {
+      "file": "hide-5d2e29fafd685399.mp3",
+      "sha256": "c11666d2b614a5768c8001f70621d0f2763f3c5d1e6b373d5598e3acd2300293",
+      "expected": "答错了。",
+      "heard": "答錯了",
+      "matches": true,
+      "signal": {
+        "duration": 1.248,
+        "rms": 0.07277119538055911,
+        "peak": 0.548313319683075,
+        "activeRatio": 0.39720219017094016,
+        "audible": true
+      }
+    }
+  ]
+}

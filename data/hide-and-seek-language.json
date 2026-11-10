@@ -1,0 +1,14 @@
+{
+  "origin": "ming_game_adaptation",
+  "questions": {
+    "rabbit": { "hanzi": "兔子在哪儿？", "pinyin": "Tùzi zài nǎr?", "spanish": "¿Dónde está el conejo?" },
+    "dog": { "hanzi": "狗在哪儿？", "pinyin": "Gǒu zài nǎr?", "spanish": "¿Dónde está el perro?" },
+    "cat": { "hanzi": "猫在哪儿？", "pinyin": "Māo zài nǎr?", "spanish": "¿Dónde está el gato?" },
+    "turtle": { "hanzi": "乌龟在哪儿？", "pinyin": "Wūguī zài nǎr?", "spanish": "¿Dónde está la tortuga?" }
+  },
+  "feedback": {
+    "correct": { "hanzi": "答对了！", "pinyin": "Dá duì le!", "spanish": "¡Acertaste!" },
+    "retry": { "hanzi": "答错了，再试试！", "pinyin": "Dá cuò le, zài shìshi!", "spanish": "No acertaste. ¡Inténtalo otra vez!" },
+    "missed": { "hanzi": "答错了。", "pinyin": "Dá cuò le.", "spanish": "No acertaste." }
+  }
+}
