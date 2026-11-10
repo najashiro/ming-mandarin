@@ -1,4 +1,6 @@
 import { expect, test } from '@playwright/test';
+import lesson5 from '../../data/lesson5-public.json' with { type: 'json' };
+import lesson6 from '../../data/lesson6-public.json' with { type: 'json' };
 
 test('Hanzi: filtro local conserva la vista, la ficha y la búsqueda universal', async ({ page }) => {
   await page.goto('/study/l1/hanzi?character=好&tab=Trazos');
@@ -38,13 +40,48 @@ test('Hanzi: ficha antes del selector y búsqueda sin títulos repetidos', async
   await expect(page.getByRole('button', { name: 'Lo reconozco' })).toHaveCount(0);
   await expect(page.getByRole('heading', { name: 'Aparece en' })).toHaveCount(0);
   await expect(page.locator('.hanzi-learn-panel')).toBeVisible();
-  expect(await page.locator('#hanzi-lesson-scope option').evaluateAll(options => options.map(option => (option as HTMLOptionElement).value))).toEqual(['l1', 'l2', 'l3', 'l4']);
+  expect(await page.locator('#hanzi-lesson-scope option').evaluateAll(options => options.map(option => (option as HTMLOptionElement).value))).toEqual(['l1', 'l2', 'l3', 'l4', 'l5', 'l6']);
   await expect(page.locator('.hanzi-picker-card').filter({ hasText: '分' }).locator('em')).toHaveText('minuto');
   expect(await page.locator('.hanzi-workspace').evaluate(element =>
     element.lastElementChild?.classList.contains('hanzi-character-picker'))).toBe(true);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
   await page.screenshot({ path: info.outputPath('hanzi-learn.png'), fullPage: true });
 });
+
+for (const { scope, character, corpus } of [
+  { scope: 'l5', character: '祝', corpus: lesson5 },
+  { scope: 'l6', character: '路', corpus: lesson6 },
+]) {
+  test(`Hanzi: el selector ofrece el corpus completo e inicia la práctica ${scope}`, async ({ page }) => {
+    await page.goto('/lesson/1/hanzi');
+    await expect(page.getByRole('combobox', { name: 'Busca por pinyin' })).toBeEnabled();
+    const selector = page.getByRole('combobox', { name: 'Lección', exact: true });
+    await selector.selectOption(scope);
+    const cards = page.locator('.hanzi-picker-card');
+    await expect(cards).toHaveCount(corpus.characters.length);
+    const glyphs = await cards.locator(':scope > .font-hanzi').allTextContents();
+    expect(glyphs.sort()).toEqual(corpus.characters.map(item => item.hanzi).sort());
+    await page.getByRole('button', { name: new RegExp(`^${character},`) }).click();
+    await expect(page.locator('#hanzi-detail-start')).toHaveAttribute('data-character', character);
+    await expect(page.locator('#hanzi-glyph-focus .hanzi-writer-target svg')).toHaveCount(1);
+    await page.getByRole('tab', { name: 'Trazos', exact: true }).click();
+    await expect(page.locator('.stroke-name-list li')).toHaveCount(corpus.characters.find(item => item.hanzi === character)!.strokeCount);
+    await page.getByRole('tab', { name: 'Practicar', exact: true }).click();
+    await page.getByRole('button', { name: 'Comenzar', exact: true }).click();
+    await expect(page.getByRole('button', { name: 'Mantén para ver respuesta' })).toBeEnabled();
+    await expect(selector).toHaveValue(scope);
+  });
+
+  test(`Hanzi: la ruta directa y el repaso conservan el filtro ${scope}`, async ({ page }) => {
+    for (const routeScope of [scope, Array.from({ length: Number(scope.slice(1)) }, (_, index) => `l${index + 1}`).join('-')]) {
+      await page.goto(`/study/${routeScope}/hanzi?character=${character}`);
+      await expect(page.getByRole('combobox', { name: 'Lección', exact: true })).toHaveValue(scope);
+      await expect(page.locator('.hanzi-picker-card')).toHaveCount(corpus.characters.length);
+      await expect(page.locator('.hanzi-picker-card.selected')).toContainText(character);
+      await expect(page.locator('#hanzi-glyph-focus .hanzi-writer-target svg')).toHaveCount(1);
+    }
+  });
+}
 
 test('Hanzi: caracteres de palabras y frases abren Aprender y enfocan la ficha', async ({ page }) => {
   await page.goto('/study/l4/hanzi?character=现&tab=Palabras%20y%20frases');

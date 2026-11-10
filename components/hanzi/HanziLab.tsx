@@ -3,7 +3,7 @@ import { Hanzi } from '@/components/Hanzi';
 
 import Link from 'next/link';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import type { CharacterEntry, CurriculumScope, HanziStageId } from '@/data/types';
+import type { CharacterEntry, CurriculumScope, HanziStageId, HanziUnitDefinition } from '@/data/types';
 import { strokeDirection } from '@/lib/hanzi/geometry';
 import { loadHanziData } from '@/lib/hanzi/loader';
 import { updateLocalHanziProgress } from '@/lib/hanzi/mastery';
@@ -21,14 +21,7 @@ import { audioForMandarinText } from '@/lib/mandarin-audio';
 import { trackAnalyticsEvent } from '@/lib/analytics/client';
 
 const tabs = ['Aprender', 'Palabras y frases', 'Trazos', 'Practicar'] as const;
-const lessonScopes = [
-  ['l1', 'Lección 1'],
-  ['l2', 'Lección 2'],
-  ['l3', 'Lección 3'],
-  ['l4', 'Lección 4'],
-] as const satisfies readonly (readonly [CurriculumScope, string])[];
 type Tab = typeof tabs[number];
-type Stage = { id: HanziStageId; title: string; shortTitle: string; chinese: string; description: string; characters: string[] };
 export type HanziLabCharacter = Pick<CharacterEntry,'id'|'hanzi'|'pinyin'|'meaning'|'strokeCount'|'radical'|'components'|'writingRequired'|'componentsAudited'|'words'> & {introducedIn:HanziStageId|null;appearsIn:HanziStageId[]};
 
 function searchPinyin(value: string) {
@@ -38,7 +31,7 @@ function searchPinyin(value: string) {
 type Props = {
   characters: HanziLabCharacter[];
   canonicalHanzi?: string[];
-  stages: Stage[];
+  stages: HanziUnitDefinition[];
   manifest: Record<string, HanziManifestEntry>;
   initialProgress?: HanziProgressMap;
   initialCharacter?: string;
@@ -50,6 +43,9 @@ type Props = {
 };
 
 export function HanziLab({ characters, canonicalHanzi = characters.map((item) => item.hanzi), stages, manifest, initialProgress = {}, initialCharacter = '好', initialTab = 'Aprender', focusGlyph = false, route = '/lesson/1/hanzi', tracking='course', scope='l1' }: Props) {
+  const lessonScopes = useMemo(() => [...new Set(stages.map((stage) => stage.lesson))]
+    .sort((a, b) => a - b)
+    .map((lesson) => ({ value: `l${lesson}`, label: `Lección ${lesson}` })), [stages]);
   const [characterScope, setCharacterScope] = useState<CurriculumScope>(() => scope.split('-').at(-1) as CurriculumScope);
   const firstCharacter = characters.find((item) => item.hanzi === initialCharacter) ?? characters[0];
   const [selectedId, setSelectedId] = useState(firstCharacter.id);
@@ -206,7 +202,7 @@ export function HanziLab({ characters, canonicalHanzi = characters.map((item) =>
     {tracking==='course'&&<section className="panel hanzi-character-picker" aria-label="Selector de caracteres">
       <div className="hanzi-picker-heading"><h2>Caracteres</h2><span>{displayedCharacters.length}</span></div>
     <div className="hanzi-lesson-toolbar">
-      <select id="hanzi-lesson-scope" aria-label="Lección" value={characterScope} onChange={(event) => setCharacterScope(event.target.value as CurriculumScope)}>{lessonScopes.map(([value,label])=><option value={value} key={value}>{label}</option>)}</select>
+      <select id="hanzi-lesson-scope" aria-label="Lección" value={characterScope} onChange={(event) => setCharacterScope(event.target.value as CurriculumScope)}>{lessonScopes.map(({value,label})=><option value={value} key={value}>{label}</option>)}</select>
     </div>
       {displayedCharacters.length ? <div className="hanzi-picker-grid">{displayedCharacters.map((item) => {
         const selected = item.id === character.id;
