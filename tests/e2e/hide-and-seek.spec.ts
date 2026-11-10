@@ -146,32 +146,49 @@ test('Escondites: nombres con audio, una sola voz, cancelación al avanzar y sil
   expect(await audioSources(page)).toEqual(playsAtClose);
 });
 
-test('Escondites: dos fallos terminan la aventura, muestran y pronuncian la solución; reinicio completo', async ({ page }, info) => {
+test('Escondites: las vidas duran toda la aventura y dos errores en distintas rondas terminan la partida', async ({ page }, info) => {
   test.setTimeout(90_000);
   await observeAudio(page);
   await start(page);
-  for (let round = 0; round < 3; round++) { await correct(page); await advance(page); }
-  await expect(page.getByTestId('hide-score')).toHaveText(/30\s*\/\s*100/);
-  await expect(page.locator('.hide-spot')).toHaveCount(4);
+  await expect(page.locator('.hide-lives')).toHaveAccessibleName('2 vidas restantes');
+  const firstTarget = await answer(page);
+  const firstWrong = page.locator(`.hide-spot:not([data-spot="${firstTarget}"])`).first();
+  let before = (await audioSources(page, 'playing')).length;
+  await firstWrong.click();
+  await waitForClip(page, '不对。', before);
+  await expect(firstWrong).toBeDisabled();
+  await expect(page.locator('.hide-lives')).toHaveAccessibleName('1 vida restante');
+  await expect(page.locator('.hide-lives')).toHaveText('♥ ♡');
+  await correct(page);
+  await expect(page.getByTestId('hide-score')).toHaveText(/5\s*\/\s*100/);
+  await expect(page.locator('.hide-lives')).toHaveAccessibleName('1 vida restante');
+  await advance(page);
+  // Successful rounds, including new animal unlocks, never replenish lives.
+  for (let round = 0; round < 5; round++) {
+    await expect(page.locator('.hide-lives')).toHaveAccessibleName('1 vida restante');
+    await expect(page.locator('.hide-lives')).toHaveText('♥ ♡');
+    await correct(page);
+    await advance(page);
+  }
+  await expect(page.getByTestId('hide-score')).toHaveText(/55\s*\/\s*100/);
+  await expect(page.locator('.hide-spot')).toHaveCount(6);
+  await expect(page.locator('.hide-question')).toContainText('猫在哪儿？');
+  await expect(page.locator('.hide-lives')).toHaveAccessibleName('1 vida restante');
   const target = await answer(page);
   const positiveClue = (await clueTexts(page)).at(-1)!;
   await page.getByRole('button', { name: 'Help', exact: true }).click();
-  const wrongs = page.locator(`.hide-spot:not([data-spot="${target}"])`);
-  let before = (await audioSources(page, 'playing')).length;
-  await wrongs.nth(0).click();
-  await waitForClip(page, '不对。', before);
-  await expect(wrongs.nth(0)).toBeDisabled();
-  await expect(page.locator('.hide-lives')).toHaveAccessibleName(/1 .*restante/);
+  await expect(page.locator('.hide-lives')).toHaveAccessibleName('1 vida restante');
   await expect(page.getByRole('button', { name: 'Volver a intentarlo', exact: true })).toHaveCount(0);
   before = (await audioSources(page, 'playing')).length;
   const playsBeforeLoss = (await audioSources(page)).length;
-  await wrongs.nth(1).click();
+  await page.locator(`.hide-spot:not([data-spot="${target}"])`).first().click();
   await waitForClip(page, '不对。', before);
-  await expect(page.locator('.hide-lives')).toHaveAccessibleName(/0 .*restantes/);
+  await expect(page.locator('.hide-lives')).toHaveAccessibleName('0 vidas restantes');
+  await expect(page.locator('.hide-lives')).toHaveText('♡ ♡');
   await expect(page.locator(`[data-spot="${target}"] .hide-found-animal`)).toBeVisible();
   await expect(page.locator('.hide-spot:not(:disabled)')).toHaveCount(0);
   await expect(page.getByRole('button', { name: /Siguiente escondite/ })).toHaveCount(0);
-  await expect(page.getByTestId('hide-score')).toHaveText(/30\s*\/\s*100/);
+  await expect(page.getByTestId('hide-score')).toHaveText(/55\s*\/\s*100/);
   await expect.poll(async () => (await audioSources(page)).slice(playsBeforeLoss), { timeout: 15_000 }).toEqual([recordingFor('不对。'), recordingFor(positiveClue)]);
   await page.locator('.hide-active').screenshot({ path: info.outputPath('hide-adventure-ended.png'), animations: 'disabled', style: '.topbar, .mobile-nav { visibility: hidden !important; }' });
   before = (await audioSources(page, 'playing')).length;
@@ -179,7 +196,8 @@ test('Escondites: dos fallos terminan la aventura, muestran y pronuncian la solu
   await waitForClip(page, '兔在哪儿？', before);
   await expect(page.getByTestId('hide-score')).toHaveText(/0\s*\/\s*100/);
   await expect(page.locator('.hide-scene-heading')).toContainText('Ronda 1');
-  await expect(page.locator('.hide-lives')).toHaveAccessibleName(/2 .*restantes/);
+  await expect(page.locator('.hide-lives')).toHaveAccessibleName('2 vidas restantes');
+  await expect(page.locator('.hide-lives')).toHaveText('♥ ♥');
   await expect(page.locator('.hide-spot')).toHaveCount(2);
   await expect(page.locator('.hide-spot:disabled, .hide-found-animal')).toHaveCount(0);
   await expect(page.locator('.hide-collection .is-unlocked')).toHaveCount(1);
@@ -215,6 +233,7 @@ test('Escondites: segundo intento suma cinco, cuatro animales del corpus y victo
       checkedMouse = true;
     }
     await correct(page);
+    await expect(page.locator('.hide-lives')).toHaveAccessibleName('1 vida restante');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
     if (!await page.locator('.hide-victory').count()) await advance(page);
   }
@@ -223,10 +242,12 @@ test('Escondites: segundo intento suma cinco, cuatro animales del corpus y victo
   await expect(page.getByTestId('hide-score')).toHaveText(/100\s*\/\s*100/);
   await expect(page.getByRole('heading', { name: '¡Maestro del escondite!' })).toBeVisible();
   await expect(page.locator('.hide-collection .is-unlocked')).toHaveCount(4);
+  await expect(page.locator('.hide-lives')).toHaveText('♥ ♡');
   await page.locator('.hide-active').screenshot({ path: info.outputPath('hide-victory.png'), animations: 'disabled', style: '.topbar, .mobile-nav { visibility: hidden !important; }' });
   await page.getByRole('button', { name: /Jugar otra aventura/ }).click();
   await expect(page.getByTestId('hide-score')).toHaveText(/0\s*\/\s*100/);
   await expect(page.locator('.hide-location-options')).not.toBeVisible();
+  await expect(page.locator('.hide-lives')).toHaveAccessibleName('2 vidas restantes');
   expect(errors).toEqual([]);
 });
 

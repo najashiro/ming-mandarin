@@ -1,6 +1,7 @@
 import lesson6 from '@/data/lesson6-public.json';
 
 export const HIDE_GOAL = 100;
+export const HIDE_LIVES = 2;
 export const positions = ['above', 'below', 'left', 'right', 'behind', 'front'] as const;
 export type HidePosition = typeof positions[number];
 export type Animal = 'rabbit' | 'dog' | 'cat' | 'mouse';
@@ -24,7 +25,7 @@ export const hideLevels: { animal: Animal; name: string; title: string; minimum:
   { animal: 'mouse', name: 'ratón', title: 'Maestro del escondite', minimum: 75, options: 6, description: 'Dos pistas: dónde no está y dónde sí.' },
 ];
 export type HideRound = { level: number; target: HidePosition; options: HidePosition[]; excluded: HidePosition | null };
-export type HideState = { score: number; roundNumber: number; round: HideRound; guesses: HidePosition[]; status: 'searching' | 'found' | 'missed' | 'won'; streak: number; bestStreak: number; found: number; collection: Record<Animal, number>; earned: number };
+export type HideState = { score: number; lives: number; roundNumber: number; round: HideRound; guesses: HidePosition[]; status: 'searching' | 'found' | 'missed' | 'won'; streak: number; bestStreak: number; found: number; collection: Record<Animal, number>; earned: number };
 export function levelForScore(score: number) { return score >= 75 ? 3 : score >= 50 ? 2 : score >= 25 ? 1 : 0; }
 function shuffle<T>(items: readonly T[], random: () => number): T[] {
   const result = [...items];
@@ -40,12 +41,15 @@ export function makeHideRound(score: number, roundNumber: number, previous?: Hid
   return { level, target, options: positions.filter(id => options.includes(id)), excluded: level === 3 ? shuffle(options.filter(id => id !== target), random)[0] : null };
 }
 export function startHideGame(random = Math.random): HideState {
-  return { score: 0, roundNumber: 0, round: makeHideRound(0, 0, undefined, random), guesses: [], status: 'searching', streak: 0, bestStreak: 0, found: 0, collection: { rabbit: 0, dog: 0, cat: 0, mouse: 0 }, earned: 0 };
+  return { score: 0, lives: HIDE_LIVES, roundNumber: 0, round: makeHideRound(0, 0, undefined, random), guesses: [], status: 'searching', streak: 0, bestStreak: 0, found: 0, collection: { rabbit: 0, dog: 0, cat: 0, mouse: 0 }, earned: 0 };
 }
 export function chooseHideSpot(state: HideState, spot: HidePosition): HideState {
-  if (state.status !== 'searching' || !state.round.options.includes(spot) || state.guesses.includes(spot)) return state;
+  if (state.status !== 'searching' || state.lives === 0 || !state.round.options.includes(spot) || state.guesses.includes(spot)) return state;
   const guesses = [...state.guesses, spot];
-  if (spot !== state.round.target) return { ...state, guesses, streak: 0, status: guesses.length === 2 ? 'missed' : 'searching' };
+  if (spot !== state.round.target) {
+    const lives = state.lives - 1;
+    return { ...state, guesses, lives, streak: 0, status: lives === 0 ? 'missed' : 'searching' };
+  }
   const earned = Math.min(guesses.length === 1 ? 10 : 5, HIDE_GOAL - state.score);
   const score = state.score + earned;
   const streak = guesses.length === 1 ? state.streak + 1 : 0;
@@ -53,7 +57,8 @@ export function chooseHideSpot(state: HideState, spot: HidePosition): HideState 
   return { ...state, guesses, score, earned, streak, bestStreak: Math.max(streak, state.bestStreak), found: state.found + 1, collection: { ...state.collection, [animal]: state.collection[animal] + 1 }, status: score === HIDE_GOAL ? 'won' : 'found' };
 }
 export function nextHideRound(state: HideState, random = Math.random): HideState {
-  // Two misses end this adventure. Only an explicit new start clears its score.
+  // Lives belong to the adventure; advancing only clears this round's guesses.
+  // A second error ends it, even when the errors happened in different rounds.
   if (state.status !== 'found') return state;
   return { ...state, roundNumber: state.roundNumber + 1, round: makeHideRound(state.score, state.roundNumber + 1, state.round.target, random), guesses: [], earned: 0, status: 'searching' };
 }

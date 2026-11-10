@@ -3,7 +3,7 @@
 import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import { useHideVoice } from '@/lib/use-hide-voice';
 import { hideAnimal, hideFeedback, hideFeedbackAudio, hideLocationAudio, hideQuestion, hideQuestionAudio, hideRoundAudio } from '@/lib/hide-and-seek-audio';
-import { chooseHideSpot, hideClue, hideLevels, HIDE_GOAL, locations, nextHideRound, startHideGame, type HidePosition, type HideState } from '@/lib/hide-and-seek';
+import { chooseHideSpot, hideClue, hideLevels, HIDE_GOAL, HIDE_LIVES, locations, nextHideRound, startHideGame, type HidePosition, type HideState } from '@/lib/hide-and-seek';
 import { AnimalArt, GardenBackdrop, HidingPlace, PicnicTable } from './HideArtwork';
 import { HideChinese } from './HideChinese';
 import './hide-and-seek.css';
@@ -83,8 +83,8 @@ export function HideAndSeekGame() {
       <p className="hide-eyebrow">UNA AVENTURA DE LA LECCIÓN 06</p>
       <h3>Escucha. Observa.<br/><em>Encuentra a tu amigo.</em></h3>
       <p>Escucha la pregunta y la pista en chino. Encuentra al animal en el jardín.</p>
-      <div className="hide-rules"><span><b>2</b> intentos por ronda</span><span><b>4</b> amigos por descubrir</span><span><b>100</b> puntos para ganar</span></div>
-      <p className="hide-score-rule">Primer intento: +10 · Segundo intento: +5.<br/>Dos fallos en una ronda: vuelve a empezar.</p>
+      <div className="hide-rules"><span><b>{HIDE_LIVES}</b> vidas por aventura</span><span><b>4</b> amigos por descubrir</span><span><b>100</b> puntos para ganar</span></div>
+      <p className="hide-score-rule">Primer intento: +10 · Segundo intento: +5.<br/>Las vidas no se recuperan al avanzar. El segundo error termina la aventura.</p>
       {settings}
       <button type="button" className="hide-primary" onClick={start}>¡Vamos a buscar! <span aria-hidden="true">↗</span></button>
       <span className="hide-no-rush">Sin cronómetro. Aprende a tu ritmo.</span>
@@ -94,7 +94,7 @@ export function HideAndSeekGame() {
   const level = hideLevels[game.round.level], clue = hideClue(game.round);
   const question = hideQuestion(game.round), questionAudio = hideQuestionAudio(game.round);
   const resolved = game.status !== 'searching', won = game.status === 'won', missed = game.status === 'missed';
-  const remaining = 2 - game.guesses.filter(spot => spot !== game.round.target).length;
+  const remaining = game.lives;
   const correct = game.status === 'found' || won;
   const feedback = hideFeedback(correct);
   const nextLevel = hideLevels[game.round.level + 1];
@@ -106,7 +106,7 @@ export function HideAndSeekGame() {
         <strong data-testid="hide-score">{game.score}<small> / {HIDE_GOAL}</small></strong>
         <div className="hide-progress" role="progressbar" aria-label="Puntos de la aventura" aria-valuenow={game.score} aria-valuemin={0} aria-valuemax={HIDE_GOAL}><i style={{ width: `${game.score}%` }}/></div>
       </div>
-      <span className="hide-lives" role="img" aria-label={`${remaining} ${remaining === 1 ? 'intento restante' : 'intentos restantes'}`}><span aria-hidden="true">{remaining > 0 ? '♥' : '♡'} {remaining > 1 ? '♥' : '♡'}</span></span>
+      <span className="hide-lives" role="img" aria-label={`${remaining} ${remaining === 1 ? 'vida restante' : 'vidas restantes'}`}><span aria-hidden="true">{remaining > 0 ? '♥' : '♡'} {remaining > 1 ? '♥' : '♡'}</span></span>
       {settings}
     </div>
     <div className="hide-play-layout">
@@ -138,7 +138,7 @@ export function HideAndSeekGame() {
       </div>
       <aside className="hide-result-panel" aria-label="Resultado">
         <div className="hide-feedback hide-sr-only" role="status" aria-live="polite" aria-atomic="true">
-          {game.guesses.length > 0 && `${feedback.hanzi} ${feedback.spanish} ${!resolved ? 'Te queda un intento.' : missed ? `Fin de la aventura. ${clue.spanish}` : `Has ganado ${game.earned} puntos.`}`}
+          {game.guesses.length > 0 && `${feedback.hanzi} ${feedback.spanish} ${!resolved ? 'Te queda una vida.' : missed ? `Fin de la aventura. ${clue.spanish}` : `Has ganado ${game.earned} puntos.`}`}
         </div>
         {resolved && <div className="hide-round-outcome" ref={resultRef} tabIndex={-1}>
           {game.status === 'found' && <>
