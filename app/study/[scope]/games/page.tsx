@@ -1,5 +1,5 @@
-import { hasHideGame } from '@/lib/hide-and-seek';
-import { notFound } from 'next/navigation';
+import { getArcadeGame, getArcadeGamePath } from '@/data/arcade-games';
+import { notFound, redirect } from 'next/navigation';
 import { getCurrentUser } from '@/app/auth';
 import { Arcade } from '@/components/Arcade';
 import { CurriculumNav } from '@/components/CurriculumNav';
@@ -13,6 +13,8 @@ import { isHanziUnitId } from '@/seed/characters';
 export default async function ScopeGamesPage({params,searchParams}:{params:Promise<{scope:string}>;searchParams:Promise<{unit?:string;game?:string}>}) {
   const [{scope:rawScope},query] = await Promise.all([params,searchParams]);
   if (!isCurriculumScope(rawScope)) notFound();
+  const initialGame = getArcadeGame(rawScope, query.game);
+  if (initialGame?.kind === 'directions' || initialGame?.kind === 'vocabulary') redirect(getArcadeGamePath(rawScope, initialGame));
   const data = getCurriculum(rawScope);
   const activeUnit = query.unit && isHanziUnitId(query.unit) && data.stages.some((unit) => unit.id === query.unit) ? query.unit : undefined;
   const unitCharacters = activeUnit ? data.characters.filter((item) => item.appearsIn.includes(activeUnit)) : data.characters;
@@ -22,6 +24,6 @@ export default async function ScopeGamesPage({params,searchParams}:{params:Promi
   return <SiteShell><main>
     <LessonHeader eyebrow={`${data.definition.shortLabel} · 游戏`} title="Juegos Míng" description="Convierte lo aprendido en mandarín activo."/>
     <CurriculumNav scope={rawScope} section="games"/>
-    <Arcade scope={rawScope} playerName={user?.displayName??'Estudiante'} canCompete={Boolean(user)} initialGame={query.game==='reto-mixto'||query.game==='hora'||(query.game==='escondites'&&hasHideGame(rawScope))?query.game:undefined} exercises={data.exercises} hanziCharacters={characters} listeningEntries={getListeningEntriesForScope(rawScope)}/>
+    <Arcade key={`${rawScope}:${initialGame?.id ?? 'catalog'}`} scope={rawScope} playerName={user?.displayName??'Estudiante'} canCompete={Boolean(user)} initialGame={initialGame?.id} exercises={data.exercises} hanziCharacters={characters} listeningEntries={getListeningEntriesForScope(rawScope)}/>
   </main></SiteShell>;
 }

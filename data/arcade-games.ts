@@ -1,3 +1,5 @@
+import type { CurriculumScope } from './types';
+
 export const arcadeGames = [
   { id: 'direcciones', name: 'Una llamada, mil vueltas', description: 'Tu amigo se ha perdido. Guíalo en chino por seis laberintos, esquiva agujeros y encuentra su destino.', kind: 'directions', skill: 'Direcciones · Lección 06', cover: '/images/games/covers/directions.svg' },
   { id: 'reto-mixto', name: 'Reto Mixto', description: 'Relaciona imágenes, sonidos y palabras. Revisa tus errores al terminar.', kind: 'mixed', skill: 'Repaso de habilidades', cover: '/images/games/covers/reto-mixto.webp' },
@@ -9,3 +11,22 @@ export const arcadeGames = [
   { id: 'escondites', name: '¿Dónde se escondió?', description: 'Sigue pistas en chino, encuentra animales y llega a 100 puntos. Dos intentos, cuatro amigos y un jardín por explorar.', kind: 'hide-and-seek', skill: 'Ubicaciones · Lección 06', cover: '/images/games/covers/escondites.svg' },
 ] as const;
 export const ARCADE_GAME_COUNT = arcadeGames.length;
+export type ArcadeGame = (typeof arcadeGames)[number];
+export type ArcadeGameId = ArcadeGame['id'];
+
+export function isArcadeGameAvailable(game: ArcadeGame, scope: CurriculumScope) {
+  if (game.kind === 'directions' || game.kind === 'hide-and-seek') return scope.split('-').includes('l6');
+  if (game.kind === 'birthday') return scope.split('-').includes('l5');
+  return game.kind !== 'conversation' || scope !== 'l4';
+}
+
+export function getArcadeGame(scope: CurriculumScope, id: string | undefined) {
+  return arcadeGames.find(game => game.id === id && isArcadeGameAvailable(game, scope));
+}
+
+export function getArcadeGamePath(scope: CurriculumScope, game: ArcadeGame) {
+  const base = `/study/${scope}/games`;
+  if (game.kind === 'directions') return `${base}/directions`;
+  if (game.kind === 'vocabulary') return `${base}/vocabulary-mix`;
+  return `${base}?game=${game.id}`;
+}

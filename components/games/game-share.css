@@ -1,0 +1,4 @@
+.game-share-button, .game-grid .game-share-button { position: absolute; top: 8px; right: 8px; width: 44px; height: 44px; display: grid; place-items: center; margin: 0; padding: 0; border: 0; border-radius: 50%; color: var(--jade); background: transparent; text-align: center; cursor: pointer; }
+.game-share-button:hover, .game-share-button:focus-visible { background: var(--jade-soft); }
+.game-share-button:focus-visible { outline: 2px solid var(--jade); outline-offset: 2px; }
+.game-share-status, .game-grid .game-share-status { position: absolute; top: 48px; right: 18px; z-index: 1; border-radius: 6px; color: var(--jade); background: #fffdf8; font: 700 11px system-ui; }

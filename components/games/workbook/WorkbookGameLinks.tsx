@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { CurriculumScope } from '@/data/types';
 import { MingIcon } from '@/components/MingIcon';
 import { Hanzi } from '@/components/Hanzi';
+import { GameShareButton } from '../GameShareButton';
 import './workbook-links.css';
 
 const activities = [
@@ -13,9 +14,9 @@ const activities = [
 export function WorkbookGameLinks({ scope }: { scope: CurriculumScope }) {
   return <section className="workbook-links shell" aria-labelledby="workbook-links-title">
     <div className="workbook-links-intro"><div><p className="eyebrow">DE TUS LIBROS DE EJERCICIOS</p><h2 id="workbook-links-title">Del cuaderno al juego</h2><p>Retos cortos, pistas y una segunda oportunidad para tus errores.</p></div><span className="workbook-links-note"><MingIcon name="book" width="18" height="18"/>A tu ritmo</span></div>
-    <div className="workbook-links-grid">{activities.map(item => <Link prefetch={false} href={`/study/${scope}/games/workbook?mode=${item.mode}`} key={item.mode} className={`workbook-link workbook-link-${item.mode}`}>
+    <div className="workbook-links-grid">{activities.map(item => <article className="workbook-share-card" data-workbook-game={item.mode} key={item.mode}><Link prefetch={false} href={`/study/${scope}/games/workbook?mode=${item.mode}`} className={`workbook-link workbook-link-${item.mode}`}>
       <span className="workbook-link-glyph" aria-hidden="true"><Hanzi>{item.glyph}</Hanzi></span>
       <span className="workbook-link-copy"><strong>{item.title}</strong><span>{item.description}</span><span className="workbook-link-action">Jugar <MingIcon name="arrow" width="17" height="17"/></span></span>
-    </Link>)}</div>
+    </Link><GameShareButton name={item.title} href={`/study/${scope}/games/workbook?mode=${item.mode}`}/></article>)}</div>
   </section>;
 }

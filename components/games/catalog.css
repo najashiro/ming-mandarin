@@ -18,7 +18,6 @@
 .ming-games-grid .thumbnail-story { background: #e6eceb; }
 .ming-games-grid .game-symbol.thumbnail-conversation > span { background: transparent; padding: 0; }
 .ming-games-grid article > .game-coverage { color: #637261; font-size: 11px; padding: 0; line-height: 1.6; }
-.ming-games-grid article .game-share-status { position: absolute; top: 48px; right: 18px; z-index: 1; border-radius: 6px; background: #fffdf8; font-size: 11px; }
 .ming-games-grid article > .game-play { display: flex; justify-content: space-between; align-items: center; width: 100%; min-height: 48px; margin-top: auto; padding: 16px 0 0; border: 0; border-top: 1px solid var(--line); border-radius: 0; background: transparent; color: var(--jade-dark); font-size: 13px; font-weight: 650; cursor: pointer; text-align: left; }
 .game-session-context { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 22px; color: var(--muted); font-size: 12px; }
 .game-session-context > span + span { border-left: 1px solid #b9c6b5; padding-left: 10px; }

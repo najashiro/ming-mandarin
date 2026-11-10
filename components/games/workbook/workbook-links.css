@@ -5,6 +5,8 @@
 .workbook-links-intro .eyebrow{font-size:11px;letter-spacing:.12em}
 .workbook-links-note{display:flex;align-items:center;gap:7px;white-space:nowrap;font-size:13px;color:#4f685c}
 .workbook-links-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.workbook-share-card{position:relative;min-width:0}
+.workbook-share-card .workbook-link{height:100%;padding-right:56px}
 .workbook-link{display:flex;gap:18px;align-items:flex-start;padding:24px 20px;border:1px solid #d5dfcf;border-radius:22px;background:#eef3e8;color:#23483f;text-decoration:none;transition:transform .18s,border-color .18s}
 .workbook-link:hover{transform:translateY(-3px);border-color:#7a9b83}
 .workbook-link:focus-visible{outline:3px solid #af6d2e;outline-offset:4px}

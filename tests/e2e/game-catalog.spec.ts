@@ -5,12 +5,13 @@ const labels = ['Lección 1', 'Lección 2', 'Lección 3', 'Lección 4', 'Repaso 
 test('el catálogo explica las habilidades y se adapta sin desbordes', async ({ page }, info) => {
   for (const width of [320, 390, 1440]) {
     await page.setViewportSize({ width, height: 900 });
-    await page.goto('/study/l1-l2-l3-l4/games');
+    await page.goto('/study/l1-l2-l3-l4/games', { waitUntil: 'domcontentloaded' });
+    await expect(page.locator('.arcade-root')).toHaveAttribute('data-hydrated', 'true');
     await expect(page.locator('.game-grid article')).toHaveCount(5);
     await expect(page.locator('.arcade-catalog')).toBeVisible();
     await expect(page.locator('[data-game="escena-viva"], [data-game="historia-detective"]')).toHaveCount(0);
     await expect(page.locator('#arena')).toBeHidden();
-    await expect(page.locator('.game-catalog-heading')).toContainText('Repaso general');
+    await expect(page.locator('.game-catalog-heading')).toContainText('Repaso hasta la lección 4');
     await expect(page.locator('[data-game="conversacion"]')).toContainText('completa el diálogo');
     await expect(page.locator('[data-game="conversacion"]')).not.toContainText('Habla con personajes');
     await expect(page.locator('.curriculum-nav')).not.toContainText(/1\s*\+/);
