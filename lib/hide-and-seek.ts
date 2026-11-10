@@ -3,7 +3,7 @@ import lesson6 from '@/data/lesson6-public.json';
 export const HIDE_GOAL = 100;
 export const positions = ['above', 'below', 'left', 'right', 'behind', 'front'] as const;
 export type HidePosition = typeof positions[number];
-export type Animal = 'rabbit' | 'dog' | 'cat' | 'turtle';
+export type Animal = 'rabbit' | 'dog' | 'cat' | 'mouse';
 const words: Record<HidePosition, string> = { above: '上边', below: '下边', left: '左边', right: '右边', behind: '后边', front: '前边' };
 const meanings: Record<HidePosition, string> = { above: 'encima de la mesa', below: 'debajo de la mesa', left: 'a la izquierda de la mesa', right: 'a la derecha de la mesa', behind: 'detrás de la mesa', front: 'delante de la mesa' };
 export const locations = Object.fromEntries(positions.map(id => {
@@ -14,13 +14,14 @@ export const locations = Object.fromEntries(positions.map(id => {
 
 // Míng game adaptation of g-l6-zai and g-l6-locatives. The six locatives and
 // their readings come from the L6 projection. 桌子 occurs in the L6 examples
-// for 上边 / 下边. Animals are game characters, not additional curriculum words.
+// for 上边 / 下边. Animal names are drawn from preceding lessons: 狗 / 猫
+// in L3 and 兔 / 老鼠 in L5. Their illustrations are editorial game characters.
 // These generated clues are not quotations or official workbook answers.
 export const hideLevels: { animal: Animal; name: string; title: string; minimum: number; options: number; description: string }[] = [
-  { animal: 'rabbit', name: 'conejo', title: 'Primeras huellas', minimum: 0, options: 2, description: 'Dos escondites y pistas con pinyin.' },
+  { animal: 'rabbit', name: 'conejo', title: 'Primeras huellas', minimum: 0, options: 2, description: 'Dos escondites para empezar a escuchar y observar.' },
   { animal: 'dog', name: 'perro', title: 'Nariz de detective', minimum: 25, options: 4, description: 'Cuatro escondites. ¡Mira bien la mesa!' },
   { animal: 'cat', name: 'gato', title: 'Pasos silenciosos', minimum: 50, options: 6, description: 'Seis escondites. El pinyin queda a tu elección.' },
-  { animal: 'turtle', name: 'tortuga', title: 'Maestro del escondite', minimum: 75, options: 6, description: 'Dos pistas: dónde no está y dónde sí.' },
+  { animal: 'mouse', name: 'ratón', title: 'Maestro del escondite', minimum: 75, options: 6, description: 'Dos pistas: dónde no está y dónde sí.' },
 ];
 export type HideRound = { level: number; target: HidePosition; options: HidePosition[]; excluded: HidePosition | null };
 export type HideState = { score: number; roundNumber: number; round: HideRound; guesses: HidePosition[]; status: 'searching' | 'found' | 'missed' | 'won'; streak: number; bestStreak: number; found: number; collection: Record<Animal, number>; earned: number };
@@ -39,7 +40,7 @@ export function makeHideRound(score: number, roundNumber: number, previous?: Hid
   return { level, target, options: positions.filter(id => options.includes(id)), excluded: level === 3 ? shuffle(options.filter(id => id !== target), random)[0] : null };
 }
 export function startHideGame(random = Math.random): HideState {
-  return { score: 0, roundNumber: 0, round: makeHideRound(0, 0, undefined, random), guesses: [], status: 'searching', streak: 0, bestStreak: 0, found: 0, collection: { rabbit: 0, dog: 0, cat: 0, turtle: 0 }, earned: 0 };
+  return { score: 0, roundNumber: 0, round: makeHideRound(0, 0, undefined, random), guesses: [], status: 'searching', streak: 0, bestStreak: 0, found: 0, collection: { rabbit: 0, dog: 0, cat: 0, mouse: 0 }, earned: 0 };
 }
 export function chooseHideSpot(state: HideState, spot: HidePosition): HideState {
   if (state.status !== 'searching' || !state.round.options.includes(spot) || state.guesses.includes(spot)) return state;
@@ -52,7 +53,8 @@ export function chooseHideSpot(state: HideState, spot: HidePosition): HideState 
   return { ...state, guesses, score, earned, streak, bestStreak: Math.max(streak, state.bestStreak), found: state.found + 1, collection: { ...state.collection, [animal]: state.collection[animal] + 1 }, status: score === HIDE_GOAL ? 'won' : 'found' };
 }
 export function nextHideRound(state: HideState, random = Math.random): HideState {
-  if (state.status !== 'found' && state.status !== 'missed') return state;
+  // Two misses end this adventure. Only an explicit new start clears its score.
+  if (state.status !== 'found') return state;
   return { ...state, roundNumber: state.roundNumber + 1, round: makeHideRound(state.score, state.roundNumber + 1, state.round.target, random), guesses: [], earned: 0, status: 'searching' };
 }
 export function hideClue(round: HideRound) {

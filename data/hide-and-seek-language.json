@@ -1,14 +1,20 @@
 {
   "origin": "ming_game_adaptation",
+  "curriculumScope": "Animals from L3 and L5; printed feedback from L2; location grammar from L6. Full questions remain editorial combinations.",
+  "animals": {
+    "rabbit": { "hanzi": "兔", "pinyin": "tù", "spanish": "conejo", "audioSrc": "/audio/mandarin/l5-f3632a3bc9547785.mp3", "vocabularyId": "v-兔", "sourceLesson": 5 },
+    "dog": { "hanzi": "狗", "pinyin": "gǒu", "spanish": "perro", "audioSrc": "/audio/mandarin/l3-v-2fcbe72fbf.mp3", "vocabularyId": "v-狗", "sourceLesson": 3 },
+    "cat": { "hanzi": "猫", "pinyin": "māo", "spanish": "gato", "audioSrc": "/audio/mandarin/l3-h-e10bd9f09b.mp3", "vocabularyId": "v-猫", "sourceLesson": 3 },
+    "mouse": { "hanzi": "老鼠", "pinyin": "lǎoshǔ", "spanish": "ratón", "audioSrc": "/audio/mandarin/l5-459a9e85b5c22da0.mp3", "vocabularyId": "v-老鼠", "sourceLesson": 5 }
+  },
   "questions": {
-    "rabbit": { "hanzi": "兔子在哪儿？", "pinyin": "Tùzi zài nǎr?", "spanish": "¿Dónde está el conejo?" },
+    "rabbit": { "hanzi": "兔在哪儿？", "pinyin": "Tù zài nǎr?", "spanish": "¿Dónde está el conejo?" },
     "dog": { "hanzi": "狗在哪儿？", "pinyin": "Gǒu zài nǎr?", "spanish": "¿Dónde está el perro?" },
     "cat": { "hanzi": "猫在哪儿？", "pinyin": "Māo zài nǎr?", "spanish": "¿Dónde está el gato?" },
-    "turtle": { "hanzi": "乌龟在哪儿？", "pinyin": "Wūguī zài nǎr?", "spanish": "¿Dónde está la tortuga?" }
+    "mouse": { "hanzi": "老鼠在哪儿？", "pinyin": "Lǎoshǔ zài nǎr?", "spanish": "¿Dónde está el ratón?" }
   },
   "feedback": {
-    "correct": { "hanzi": "答对了！", "pinyin": "Dá duì le!", "spanish": "¡Acertaste!" },
-    "retry": { "hanzi": "答错了，再试试！", "pinyin": "Dá cuò le, zài shìshi!", "spanish": "No acertaste. ¡Inténtalo otra vez!" },
-    "missed": { "hanzi": "答错了。", "pinyin": "Dá cuò le.", "spanish": "No acertaste." }
+    "correct": { "hanzi": "对！", "pinyin": "Duì!", "spanish": "¡Correcto!", "audioSrc": "/audio/mandarin/l4-a882489d32d25208.mp3", "sourceExercise": "EX-SRC-PPT-02-2-023-true-false" },
+    "incorrect": { "hanzi": "不对。", "pinyin": "Bú duì.", "spanish": "Incorrecto.", "sourceExercise": "EX-SRC-PPT-02-2-023-true-false" }
   }
 }

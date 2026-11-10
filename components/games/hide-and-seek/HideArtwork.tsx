@@ -4,7 +4,22 @@ export function AnimalArt({ animal, className = '' }: { animal: Animal; classNam
   const color = animal === 'dog' ? '#d89451' : animal === 'cat' ? '#edb05f' : '#fff7e7';
   return <svg className={className} viewBox="0 0 140 150" fill="none" aria-hidden="true">
     <ellipse cx="70" cy="135" rx="44" ry="9" fill="#244c3a" opacity=".13"/>
-    {animal === 'turtle' ? <><ellipse cx="66" cy="101" rx="48" ry="32" fill="#538c59"/><path d="m36 86 20-12 22 8 7 25-22 18-24-13Z" fill="#8cb86b" stroke="#396e49" strokeWidth="3"/><path d="m56 75 7 26-24 11m24-11 22 6" stroke="#396e49" strokeWidth="3"/><ellipse cx="32" cy="128" rx="12" ry="8" fill="#b6cf7e"/><ellipse cx="91" cy="128" rx="12" ry="8" fill="#b6cf7e"/><ellipse cx="109" cy="86" rx="23" ry="25" fill="#b6cf7e"/><circle cx="114" cy="81" r="3.5" fill="#293f31"/><path d="M116 96q7 5 11-1" stroke="#293f31" strokeWidth="2.5" strokeLinecap="round"/><circle cx="122" cy="88" r="5" fill="#df987b" opacity=".7"/></> : <>
+    {animal === 'mouse' ? <>
+      <path d="M94 123c35 21 48-9 30-18-10-5-15 1-11 7" stroke="#ceaaa0" strokeWidth="5" strokeLinecap="round"/>
+      <ellipse cx="68" cy="111" rx="30" ry="28" fill="#a6aaa0"/>
+      <ellipse cx="68" cy="116" rx="17" ry="20" fill="#ede9dc"/>
+      <circle cx="39" cy="46" r="23" fill="#a6aaa0"/><circle cx="98" cy="46" r="23" fill="#a6aaa0"/>
+      <circle cx="39" cy="46" r="15" fill="#e2b6ac"/><circle cx="98" cy="46" r="15" fill="#e2b6ac"/>
+      <path d="M33 70c0-21 70-21 70 0 0 17-20 34-35 34S33 87 33 70Z" fill="#b9bcb1"/>
+      <ellipse cx="68" cy="88" rx="19" ry="15" fill="#ede9dc"/>
+      <circle cx="52" cy="73" r="4" fill="#34483b"/><circle cx="85" cy="73" r="4" fill="#34483b"/>
+      <circle cx="51" cy="72" r="1.3" fill="white"/><circle cx="84" cy="72" r="1.3" fill="white"/>
+      <ellipse cx="68" cy="85" rx="5" ry="4" fill="#c98d83"/>
+      <path d="M68 89v4m-7 0q7 7 14 0m-31-8-16-4m16 10-17 1m65-7 16-4m-16 10 17 1" stroke="#747e70" strokeWidth="2" strokeLinecap="round"/>
+      <ellipse cx="48" cy="134" rx="13" ry="6" fill="#ceaaa0"/><ellipse cx="87" cy="134" rx="13" ry="6" fill="#ceaaa0"/>
+      <path d="m45 108 9 10m36-10-9 10" stroke="#8e9789" strokeWidth="3" strokeLinecap="round"/>
+      <path d="m53 103 15 7 15-7-2 14-13-6-13 6Z" fill="#367e68"/>
+    </> : <>
       {animal === 'cat' && <path d="M101 118c41 11 30-40 19-29" stroke={color} strokeWidth="15" strokeLinecap="round"/>}
       <ellipse cx="70" cy="110" rx="32" ry="30" fill={color}/><ellipse cx="70" cy="115" rx="18" ry="20" fill="#fff8e9"/>
       {animal === 'rabbit' && <><ellipse cx="49" cy="38" rx="12" ry="34" transform="rotate(-12 49 38)" fill={color}/><ellipse cx="88" cy="36" rx="12" ry="35" transform="rotate(9 88 36)" fill={color}/><ellipse cx="49" cy="33" rx="5" ry="21" transform="rotate(-12 49 33)" fill="#efb6ac"/><ellipse cx="89" cy="31" rx="5" ry="22" transform="rotate(9 89 31)" fill="#efb6ac"/><circle cx="105" cy="119" r="13" fill={color}/></>}

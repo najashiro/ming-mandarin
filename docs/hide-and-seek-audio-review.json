@@ -1,106 +1,251 @@
 {
-  "method": "automatic_speech_recognition",
+  "method": "automatic_speech_recognition_and_decoded_pcm",
   "independentHumanReview": false,
-  "scope": "Animal questions and answer feedback; 22 previous clips preserved",
+  "expectedTextSuppliedToASR": false,
+  "scope": "Current animal words, animal questions and corpus-aligned feedback; three new recordings and seven reused assets",
   "results": [
     {
-      "file": "hide-0c22b032fcc787b3.mp3",
-      "sha256": "085b565da76db61c77d4e5a5d7ca8fec3cd15736371957591764e50fe5b2b51d",
-      "expected": "兔子在哪儿？",
-      "heard": "兔子在哪兒?",
-      "matches": true,
-      "repairNote": "Initial newly generated clip was rejected by two ASR models for 到 instead of 在; regenerated only this new clip with explicit zài guidance.",
+      "audioSrc": "/audio/mandarin/l5-f3632a3bc9547785.mp3",
+      "sha256": "8c2e4b6a5b09ee2e2f023867941c61d7b50fe17e3015e2770ee96780086749d0",
+      "expected": "兔",
+      "expectedPinyin": "tù",
       "signal": {
-        "duration": 1.704,
-        "rms": 0.0746129989152573,
-        "peak": 0.3866579532623291,
-        "activeRatio": 0.5711071987480438,
+        "duration": 0.912,
+        "rms": 0.0445072594545956,
+        "peak": 0.22804513573646545,
+        "activeRatio": 0.303202668128655,
         "audible": true
-      }
+      },
+      "heard": "Tu.",
+      "matches": false,
+      "recognitionAttempts": [
+        {
+          "model": "gpt-4o-mini-transcribe",
+          "heard": "Tu",
+          "matches": false
+        },
+        {
+          "model": "gpt-4o-transcribe",
+          "heard": "Tu.",
+          "matches": false
+        }
+      ],
+      "sequenceVerified": true
     },
     {
-      "file": "hide-c5d5eaf51f7e3b63.mp3",
+      "audioSrc": "/audio/mandarin/l3-v-2fcbe72fbf.mp3",
+      "sha256": "79d1a951f35a4a722c95a68af42da8163b463dcfd7a14e64e2172de8d06449d0",
+      "expected": "狗",
+      "expectedPinyin": "gǒu",
+      "signal": {
+        "duration": 1.56,
+        "rms": 0.03352663800481246,
+        "peak": 0.4336436688899994,
+        "activeRatio": 0.21471688034188033,
+        "audible": true
+      },
+      "heard": "狗",
+      "matches": true,
+      "recognitionAttempts": [
+        {
+          "model": "gpt-4o-mini-transcribe",
+          "heard": "狗",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "audioSrc": "/audio/mandarin/l3-h-e10bd9f09b.mp3",
+      "sha256": "14daeb9d54576a12b2edbb3e00899eaf1398f3557a512f0e75926ca7a33787c2",
+      "expected": "猫",
+      "expectedPinyin": "māo",
+      "signal": {
+        "duration": 0.816,
+        "rms": 0.09653606847568483,
+        "peak": 0.5962376594543457,
+        "activeRatio": 0.33261846405228757,
+        "audible": true
+      },
+      "heard": "Maw",
+      "matches": false,
+      "recognitionAttempts": [
+        {
+          "model": "gpt-4o-mini-transcribe",
+          "heard": "뭐?",
+          "matches": false
+        },
+        {
+          "model": "gpt-4o-transcribe",
+          "heard": "Maw",
+          "matches": false
+        }
+      ],
+      "sequenceVerified": true
+    },
+    {
+      "audioSrc": "/audio/mandarin/l5-459a9e85b5c22da0.mp3",
+      "sha256": "76b637f223a7fefa128a65c3a8b2c379862a894c130a968212653a1ce0e13c2b",
+      "expected": "老鼠",
+      "expectedPinyin": "lǎoshǔ",
+      "signal": {
+        "duration": 1.656,
+        "rms": 0.060579057428869106,
+        "peak": 0.3612777292728424,
+        "activeRatio": 0.4112067230273752,
+        "audible": true
+      },
+      "heard": "老鼠",
+      "matches": true,
+      "recognitionAttempts": [
+        {
+          "model": "gpt-4o-mini-transcribe",
+          "heard": "老鼠",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "audioSrc": "/audio/hide-and-seek/hide-662a1b72a684e844.mp3",
+      "sha256": "25fed66af586798f1b107cc031f8d7d9defdd1b3ac720b5dc71d74ccfdf7b476",
+      "expected": "兔在哪儿？",
+      "expectedPinyin": "Tù zài nǎr?",
+      "signal": {
+        "duration": 1.752,
+        "rms": 0.04644744158834392,
+        "peak": 0.35130372643470764,
+        "activeRatio": 0.3889959094368341,
+        "audible": true
+      },
+      "heard": "兔在哪儿?",
+      "matches": true,
+      "recognitionAttempts": [
+        {
+          "model": "gpt-4o-mini-transcribe",
+          "heard": "兔在哪儿?",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "audioSrc": "/audio/hide-and-seek/hide-c5d5eaf51f7e3b63.mp3",
       "sha256": "8295cca6c7be215bdc6d065c30ae4f17e07237e6eab83eae20abc3e40655f704",
       "expected": "狗在哪儿？",
-      "heard": "狗在哪兒?",
-      "matches": true,
+      "expectedPinyin": "Gǒu zài nǎr?",
       "signal": {
         "duration": 1.92,
         "rms": 0.07603942160938042,
         "peak": 0.5254359245300293,
         "activeRatio": 0.48934461805555557,
         "audible": true
-      }
+      },
+      "heard": "狗在哪儿?",
+      "matches": true,
+      "recognitionAttempts": [
+        {
+          "model": "gpt-4o-mini-transcribe",
+          "heard": "狗在哪儿?",
+          "matches": true
+        }
+      ]
     },
     {
-      "file": "hide-9fe53234cdcad078.mp3",
+      "audioSrc": "/audio/hide-and-seek/hide-9fe53234cdcad078.mp3",
       "sha256": "3ec259a0592f6000a86d4680bfaf9409021fe420438acc206b47af8dde0c2f7e",
       "expected": "猫在哪儿？",
-      "heard": "猫在哪儿?",
-      "matches": true,
+      "expectedPinyin": "Māo zài nǎr?",
       "signal": {
         "duration": 1.008,
         "rms": 0.08088931500764233,
         "peak": 0.41327857971191406,
         "activeRatio": 0.6648272156084656,
         "audible": true
-      }
+      },
+      "heard": "猫在哪儿?",
+      "matches": true,
+      "recognitionAttempts": [
+        {
+          "model": "gpt-4o-mini-transcribe",
+          "heard": "猫在哪儿?",
+          "matches": true
+        }
+      ]
     },
     {
-      "file": "hide-72e24c1048818c85.mp3",
-      "sha256": "2beabf1028c87c4cd776e1bd864fd7d46584fb1544ab41e1266833f4082fb662",
-      "expected": "乌龟在哪儿？",
-      "heard": "乌龟在哪儿?",
-      "matches": true,
+      "audioSrc": "/audio/hide-and-seek/hide-c12a7dd5b73875f9.mp3",
+      "sha256": "48138e89668dd780cb5069e4c670bdf9344f5cc1aab4f893067631fc2200c52c",
+      "expected": "老鼠在哪儿？",
+      "expectedPinyin": "Lǎoshǔ zài nǎr?",
       "signal": {
-        "duration": 2.712,
-        "rms": 0.07333351881267147,
-        "peak": 0.49932754039764404,
-        "activeRatio": 0.33329492379547687,
+        "duration": 1.968,
+        "rms": 0.07941490274404049,
+        "peak": 0.4867916703224182,
+        "activeRatio": 0.5608697493224932,
         "audible": true
-      }
+      },
+      "heard": "老鼠在哪儿?",
+      "matches": true,
+      "recognitionAttempts": [
+        {
+          "model": "gpt-4o-mini-transcribe",
+          "heard": "老鼠在哪儿?",
+          "matches": true
+        }
+      ]
     },
     {
-      "file": "hide-4496c1a8b10ec3af.mp3",
-      "sha256": "75e859f408d4aacf625311f005ee1f8bdc2db8bdd5ef0f8968f50681e96a9e77",
-      "expected": "答对了！",
-      "heard": "答對了",
-      "matches": true,
+      "audioSrc": "/audio/mandarin/l4-a882489d32d25208.mp3",
+      "sha256": "d086f8395d3b23502309afe48520a8fa7e172443b4e21ba3652a2720fa1b8b7b",
+      "expected": "对！",
+      "expectedPinyin": "Duì!",
       "signal": {
-        "duration": 1.2,
-        "rms": 0.057390824509677855,
-        "peak": 0.5793037414550781,
-        "activeRatio": 0.35963541666666665,
+        "duration": 1.104,
+        "rms": 0.053711719094234646,
+        "peak": 0.37029388546943665,
+        "activeRatio": 0.1961616847826087,
         "audible": true
-      }
+      },
+      "heard": "對",
+      "matches": true,
+      "recognitionAttempts": [
+        {
+          "model": "gpt-4o-mini-transcribe",
+          "heard": "對",
+          "matches": true
+        }
+      ]
     },
     {
-      "file": "hide-4f5acbe6936a34a4.mp3",
-      "sha256": "665c367938f00e90e066995cf9a3f27bd259bb47c56287e2af64679256965c5b",
-      "expected": "答错了，再试试！",
-      "heard": "答錯了,再試試。",
-      "matches": true,
+      "audioSrc": "/audio/hide-and-seek/hide-097a97977b72a4a6.mp3",
+      "sha256": "5669db34adaca9b0d2097a24435f67ed2347d0b939c813f32592eacf85f3592a",
+      "expected": "不对。",
+      "expectedPinyin": "Bú duì.",
       "signal": {
-        "duration": 2.4,
-        "rms": 0.07010941570131737,
-        "peak": 0.4555016756057739,
-        "activeRatio": 0.4982465277777778,
+        "duration": 1.704,
+        "rms": 0.05643320025071154,
+        "peak": 0.3534073531627655,
+        "activeRatio": 0.27078442879499215,
         "audible": true
-      }
-    },
-    {
-      "file": "hide-5d2e29fafd685399.mp3",
-      "sha256": "c11666d2b614a5768c8001f70621d0f2763f3c5d1e6b373d5598e3acd2300293",
-      "expected": "答错了。",
-      "heard": "答錯了",
+      },
+      "heard": "不對",
       "matches": true,
-      "signal": {
-        "duration": 1.248,
-        "rms": 0.07277119538055911,
-        "peak": 0.548313319683075,
-        "activeRatio": 0.39720219017094016,
-        "audible": true
-      }
+      "recognitionAttempts": [
+        {
+          "model": "gpt-4o-mini-transcribe",
+          "heard": "不對",
+          "matches": true
+        }
+      ]
     }
-  ]
+  ],
+  "asrModels": [
+    "gpt-4o-mini-transcribe",
+    "gpt-4o-transcribe (only when the first result differs)"
+  ],
+  "animalSequenceCheck": {
+    "method": "gpt-4o-transcribe on the four unchanged isolated clips concatenated with 0.5s silence",
+    "expectedTextSuppliedToASR": false,
+    "expected": "兔、狗、猫、老鼠",
+    "heard": "兔、狗、猫、老鼠",
+    "matches": true
+  }
 }

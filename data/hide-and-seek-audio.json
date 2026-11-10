@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "origin": "ming_game_adaptation",
   "voiceDisclosure": "Voz generada por IA",
   "clips": [
@@ -224,15 +224,15 @@
       "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: bú zài La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
     },
     {
-      "id": "hide-0c22b032fcc787b3",
-      "file": "hide-0c22b032fcc787b3.mp3",
-      "input": "兔子在哪儿？",
-      "expectedPinyin": "Tùzi zài nǎr?",
+      "id": "hide-662a1b72a684e844",
+      "file": "hide-662a1b72a684e844.mp3",
+      "input": "兔在哪儿？",
+      "expectedPinyin": "Tù zài nǎr?",
       "kind": "animal-question",
       "animal": "rabbit",
       "origin": "ming_game_adaptation",
       "lessonId": 6,
-      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tùzi zài nǎr? La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve. 在读 zài，第四声；哪儿读 nǎr。把动物名称和“在哪儿”自然连起来，完整读出问题。"
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Tù zài nǎr? La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve. 在读 zài，第四声；哪儿读 nǎr。兔读 tù，仅一个音节，不加“子”。把动物名称和“在哪儿”自然连起来，完整读出问题。"
     },
     {
       "id": "hide-c5d5eaf51f7e3b63",
@@ -257,48 +257,27 @@
       "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Māo zài nǎr? La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
     },
     {
-      "id": "hide-72e24c1048818c85",
-      "file": "hide-72e24c1048818c85.mp3",
-      "input": "乌龟在哪儿？",
-      "expectedPinyin": "Wūguī zài nǎr?",
+      "id": "hide-c12a7dd5b73875f9",
+      "file": "hide-c12a7dd5b73875f9.mp3",
+      "input": "老鼠在哪儿？",
+      "expectedPinyin": "Lǎoshǔ zài nǎr?",
       "kind": "animal-question",
-      "animal": "turtle",
+      "animal": "mouse",
       "origin": "ming_game_adaptation",
       "lessonId": 6,
-      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Wūguī zài nǎr? La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Lǎoshǔ zài nǎr? La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve. 老鼠读 lǎoshǔ。两个第三声连续时第一个读变调。在哪儿读 zài nǎr。完整读出问题，不加其他字词。"
     },
     {
-      "id": "hide-4496c1a8b10ec3af",
-      "file": "hide-4496c1a8b10ec3af.mp3",
-      "input": "答对了！",
-      "expectedPinyin": "Dá duì le!",
+      "id": "hide-097a97977b72a4a6",
+      "file": "hide-097a97977b72a4a6.mp3",
+      "input": "不对。",
+      "expectedPinyin": "Bú duì.",
       "kind": "feedback",
-      "feedback": "correct",
-      "origin": "ming_game_adaptation",
+      "feedback": "incorrect",
+      "origin": "printed_corpus_response",
+      "sourceExercise": "EX-SRC-PPT-02-2-023-true-false",
       "lessonId": 6,
-      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Dá duì le! La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
-    },
-    {
-      "id": "hide-4f5acbe6936a34a4",
-      "file": "hide-4f5acbe6936a34a4.mp3",
-      "input": "答错了，再试试！",
-      "expectedPinyin": "Dá cuò le, zài shìshi!",
-      "kind": "feedback",
-      "feedback": "retry",
-      "origin": "ming_game_adaptation",
-      "lessonId": 6,
-      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Dá cuò le, zài shìshi! La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
-    },
-    {
-      "id": "hide-5d2e29fafd685399",
-      "file": "hide-5d2e29fafd685399.mp3",
-      "input": "答错了。",
-      "expectedPinyin": "Dá cuò le.",
-      "kind": "feedback",
-      "feedback": "missed",
-      "origin": "ming_game_adaptation",
-      "lessonId": 6,
-      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Dá cuò le. La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve."
+      "instructions": "Pronuncia una vez. Lectura de referencia, no leerla en voz alta: Bú duì. La sílaba 边 (bian) es neutra. En 不在 pronuncia bú zài. Conserva las pausas naturales de una frase breve. 不对读 bú duì。第一个字变调读第二声 bú，第二个字第四声 duì。只读这两个字，平和友善，不加其他字词。"
     }
   ]
 }

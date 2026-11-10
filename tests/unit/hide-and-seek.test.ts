@@ -25,16 +25,33 @@ describe('Escondites L6: aprendizaje y reglas de la aventura', () => {
     expect(chooseHideSpot(found, start.round.target)).toBe(found);
     expect(chooseHideSpot(start, start.round.target)).toMatchObject({ score: 10, streak: 1 });
   });
-  it('revela la respuesta tras dos fallos, conserva puntos y permite seguir', () => {
-    const state = { ...startHideGame(), score: 50, streak: 3, round: makeHideRound(50, 5) };
+  it('termina la aventura tras dos fallos y conserva la respuesta hasta un reinicio explícito', () => {
+    let state = startHideGame(() => 0);
+    for (let round = 0; round < 5; round++) {
+      state = nextHideRound(chooseHideSpot(state, state.round.target), () => .499);
+    }
+    expect(state).toMatchObject({ score: 50, roundNumber: 5, streak: 5, found: 5 });
     const wrong = state.round.options.filter(spot => spot !== state.round.target);
-    const missed = chooseHideSpot(chooseHideSpot(state, wrong[0]), wrong[1]);
-    expect(missed).toMatchObject({ score: 50, status: 'missed', streak: 0 });
+    const firstMiss = chooseHideSpot(state, wrong[0]);
+    expect(firstMiss).toMatchObject({ score: 50, status: 'searching', guesses: [wrong[0]], streak: 0 });
+    const missed = chooseHideSpot(firstMiss, wrong[1]);
+    expect(missed).toMatchObject({ score: 50, status: 'missed', streak: 0, guesses: wrong.slice(0, 2) });
+    expect(missed.round).toBe(state.round);
+    expect(missed.collection).toBe(state.collection);
     expect(chooseHideSpot(missed, state.round.target)).toBe(missed);
-    const next = nextHideRound(missed);
-    expect(next).toMatchObject({ score: 50, status: 'searching', guesses: [] });
-    expect(next.round.target).not.toBe(missed.round.target);
+    expect(chooseHideSpot(missed, wrong[2])).toBe(missed);
+    expect(nextHideRound(missed)).toBe(missed);
     expect(nextHideRound(state)).toBe(state);
+
+    const restarted = startHideGame(() => .499);
+    expect(restarted).toMatchObject({
+      score: 0, roundNumber: 0, status: 'searching', guesses: [], earned: 0,
+      streak: 0, bestStreak: 0, found: 0,
+      collection: { rabbit: 0, dog: 0, cat: 0, mouse: 0 },
+      round: { level: 0, excluded: null },
+    });
+    expect(restarted.round.options).toHaveLength(2);
+    expect(missed.score).toBe(50);
   });
   it('aumenta opciones y cambia animales al cruzar cada umbral, sin repetir la ubicación anterior', () => {
     for (const [score, level] of [[0,0],[20,0],[25,1],[45,1],[50,2],[70,2],[75,3],[95,3]]) {
@@ -61,6 +78,8 @@ describe('Escondites L6: aprendizaje y reglas de la aventura', () => {
         if (state.status !== 'won') state = nextHideRound(state);
       }
       expect(state).toMatchObject({ status: 'won', score: 100 });
+      expect(hideLevels[state.round.level]).toMatchObject({ animal: 'mouse', name: 'ratón' });
+      expect(state.collection.mouse).toBeGreaterThan(0);
       expect(Object.values(state.collection).every(count => count > 0)).toBe(true);
       expect(nextHideRound(state)).toBe(state);
       expect(startHideGame()).toMatchObject({ score: 0, roundNumber: 0, found: 0, bestStreak: 0 });
