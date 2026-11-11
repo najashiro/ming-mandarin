@@ -1,0 +1,89 @@
+.grammar-study { padding-bottom: 36px; }
+.grammar-study button { cursor:pointer; font:inherit; }
+.grammar-study button:disabled { cursor:default; opacity:.45; }
+.grammar-study-controls { position:sticky; top:76px; z-index:12; display:flex; justify-content:space-between; align-items:center; gap:18px; padding:18px 22px; border:1px solid #b8cfc3; border-radius:16px; background:#edf5ef; box-shadow:0 6px 24px #17231f0a; }
+.grammar-controls-copy { display:grid; gap:5px; }
+.grammar-controls-copy strong { font-size:16px; }
+.grammar-controls-copy > span { color:#52675b; font-size:13px; }
+.grammar-controls-buttons { display:flex; flex-wrap:wrap; align-items:center; justify-content:flex-end; gap:10px; }
+.grammar-controls-buttons button { min-height:44px; padding:10px 14px; border:1px solid #bacbc0; border-radius:9px; font-size:13px; font-weight:650; }
+.grammar-controls-buttons .grammar-aids-all { background:var(--jade); color:white; border-color:var(--jade); }
+.grammar-aids-individual { display:flex; gap:6px; }
+.grammar-aids-individual button { background:#fff; color:#4d6155; }
+.grammar-aids-individual button[aria-pressed=true] { color:var(--jade-dark); border-color:var(--jade); background:#fff; }
+.grammar-aids-individual button span { margin-left:6px; }
+.grammar-study-layout { display:grid; grid-template-columns:260px minmax(0,1fr); gap:28px; align-items:start; margin-top:30px; }
+.grammar-topic-menu { padding:12px 0; min-width:0; }
+.grammar-topic-menu h2 { margin:0 0 10px; font:600 25px/1.2 Georgia,serif; }
+.grammar-topic-menu > p:not(.eyebrow) { font-size:14px; color:var(--muted); line-height:1.6; margin:0 0 20px; }
+.grammar-topic-menu nav { display:grid; gap:5px; }
+.grammar-topic-menu nav button { display:flex; gap:11px; align-items:center; width:100%; min-height:48px; text-align:left; border:1px solid transparent; border-radius:10px; padding:10px; background:transparent; font-size:14px; color:#536359; line-height:1.4; }
+.grammar-topic-menu nav button:hover { background:#ffffffa6; }
+.grammar-topic-menu nav button[aria-current=step] { color:var(--jade-dark); background:var(--jade-soft); border-color:#bed2c6; font-weight:700; }
+.grammar-topic-index { display:inline-grid; place-items:center; flex:0 0 28px; height:28px; font-size:11px; border:1px solid var(--line); border-radius:50%; }
+[aria-current=step] .grammar-topic-index { color:white; background:var(--jade); border-color:var(--jade); }
+.grammar-practice-link { margin-top:18px; min-height:48px; display:flex; align-items:center; justify-content:space-between; border-top:1px solid var(--line); color:var(--jade); font-size:14px; font-weight:700; padding:16px 10px; }
+.grammar-study-topic { min-width:0; background:#fffefa; border:1px solid #dce2d7; border-radius:20px; padding:clamp(20px,3vw,38px); scroll-margin-top:200px; }
+.grammar-topic-header h2 { font:600 clamp(27px,3vw,36px)/1.2 Georgia,serif; margin:0 0 20px; scroll-margin-top:210px; }
+.grammar-topic-explanation { color:#48594f; font-size:16px; line-height:1.9; margin:0 0 26px; }
+.grammar-rule-detail { margin:-12px 0 24px; color:#536359; font-size:14px; }
+.grammar-rule-detail summary { cursor:pointer; min-height:44px; padding:10px 0; color:var(--jade); }
+.grammar-rule-detail summary:focus-visible { outline:3px solid #d19b45; outline-offset:3px; }
+.grammar-rule-detail p { line-height:1.9; margin:8px 0; }
+.grammar-inline-reading { display:inline-grid; grid-template-columns:minmax(0,1fr); text-align:center; vertical-align:top; margin:0 .16em .25em; line-height:1.5; max-width:100%; }
+.grammar-inline-reading > span:first-child { font-size:1.1em; color:var(--ink); }
+.grammar-inline-reading .grammar-reading-pinyin { font-size:13px; color:var(--jade); }
+.grammar-inline-reading .grammar-reading-spanish { font-size:12px; color:#626c62; max-width:210px; line-height:1.4; }
+.grammar-study-topic h3 { display:flex; gap:10px; align-items:center; font-size:15px; margin:0 0 16px; }
+.grammar-study-topic h3 > span { font-size:10px; letter-spacing:.08em; color:var(--jade); border:1px solid #adc7b7; padding:5px 6px; border-radius:5px; }
+.grammar-pattern-guide { padding:20px; background:#f0f4ec; border-radius:14px; margin-bottom:28px; }
+.grammar-pattern-parts { display:flex; flex-wrap:wrap; align-items:center; gap:8px; line-height:1.8; }
+.grammar-pattern-part { min-width:0; max-width:100%; padding:10px 14px; background:#fffefa; border:1px solid #d4dfcd; border-radius:9px; font-size:15px; text-align:center; }
+.grammar-pattern-connector { color:#69806b; font-size:18px; }
+.grammar-section-hint { margin:-4px 0 20px; color:var(--muted); font-size:14px; line-height:1.6; }
+.grammar-study-example { display:flex; gap:15px; padding:21px 0; border-top:1px solid var(--line); min-width:0; }
+.grammar-example-number { padding-top:9px; color:#85978a; font-size:11px; font-weight:700; }
+.grammar-example-content { min-width:0; flex:1; }
+.grammar-example-content p { margin:0 0 7px; }
+.grammar-example-hanzi { font-size:clamp(25px,3vw,31px); line-height:1.65; letter-spacing:.03em; overflow-wrap:anywhere; }
+.grammar-example-content > .grammar-reading-pinyin { color:var(--jade); font-size:17px; line-height:1.65; overflow-wrap:anywhere; }
+.grammar-example-content > .grammar-reading-spanish { color:#536359; font-size:15px; line-height:1.6; }
+.grammar-example-audio { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+.grammar-example-audio .audio-button { min-height:44px; }
+.grammar-audio-note { display:block; margin-top:9px; color:var(--muted); font-size:12px; line-height:1.6; }
+.grammar-recall-tip { display:flex; gap:14px; padding:16px 18px; margin-top:18px; border-radius:12px; background:#f6f1e5; color:#76603d; }
+.grammar-recall-tip > span { font-size:25px; }
+.grammar-recall-tip p { margin:0; font-size:13px; line-height:1.7; }
+.grammar-recall-tip strong { display:block; color:#634b29; }
+.grammar-topic-navigation { display:flex; justify-content:space-between; gap:12px; margin-top:26px; padding-top:20px; border-top:1px solid var(--line); }
+.grammar-topic-navigation button, .grammar-topic-navigation a { display:inline-flex; align-items:center; justify-content:center; min-height:46px; border:1px solid #c9d4c9; border-radius:9px; padding:10px 14px; font-size:13px; font-weight:650; background:transparent; color:#506554; text-align:center; }
+.grammar-topic-navigation .grammar-next-topic { background:var(--jade); color:#fff; border-color:var(--jade); }
+.grammar-study-practice { margin-top:38px; scroll-margin-top:200px; }
+@media(max-width:960px) {
+  .grammar-study-controls { align-items:flex-start; }
+  .grammar-controls-buttons { max-width:290px; }
+  .grammar-study-layout { grid-template-columns:220px minmax(0,1fr); gap:18px; }
+}
+@media(max-width:720px) {
+  .grammar-study-controls { top:64px; padding:12px; gap:10px; flex-direction:column; border-radius:12px; }
+  .grammar-controls-copy > span { display:none; }
+  .grammar-controls-copy strong { font-size:13px; }
+  .grammar-controls-buttons { max-width:none; width:100%; justify-content:flex-start; gap:7px; }
+  .grammar-controls-buttons button { font-size:12px; padding:9px 10px; }
+  .grammar-study-layout { grid-template-columns:minmax(0,1fr); gap:18px; margin-top:18px; }
+  .grammar-topic-menu { padding:0; }
+  .grammar-topic-menu h2 { font-size:21px; }
+  .grammar-topic-menu .eyebrow { margin-bottom:8px; }
+  .grammar-topic-menu > p:not(.eyebrow) { margin-bottom:12px; }
+  .grammar-topic-menu nav { display:flex; overflow-x:auto; padding-bottom:8px; scroll-snap-type:x proximity; }
+  .grammar-topic-menu nav button { width:auto; flex:0 0 185px; scroll-snap-align:start; }
+  .grammar-practice-link { margin-top:4px; padding:10px; }
+  .grammar-study-topic { padding:21px 17px; border-radius:14px; }
+  .grammar-pattern-guide { padding:15px; }
+  .grammar-topic-explanation { font-size:15px; }
+  .grammar-study-example { gap:10px; }
+  .grammar-example-content > .grammar-reading-pinyin { font-size:16px; }
+  .grammar-topic-navigation { gap:8px; }
+  .grammar-topic-navigation button, .grammar-topic-navigation a { padding:10px; }
+}
+@media(prefers-reduced-motion:reduce) { .grammar-study * { scroll-behavior:auto; } }

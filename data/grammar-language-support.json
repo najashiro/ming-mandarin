@@ -1,0 +1,636 @@
+{
+  "version": 1,
+  "note": "Learner aids for existing L5 text. Editorial translations and segmentation are separate from documentary/source fields; no curriculum IDs or source exports changed.",
+  "readings": [
+    {
+      "hanzi": "一个",
+      "pinyin": "yí ge",
+      "spanish": "un / una",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#s-l5-3"
+    },
+    {
+      "hanzi": "一九八五年",
+      "pinyin": "yī jiǔ bā wǔ nián",
+      "spanish": "año 1985",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#s-l5-wb-21"
+    },
+    {
+      "hanzi": "三十一号",
+      "pinyin": "sānshíyī hào",
+      "spanish": "día 31",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#s-l5-wb-19"
+    },
+    {
+      "hanzi": "不是",
+      "pinyin": "bú shì",
+      "spanish": "no ser / no es",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#s-l5-9"
+    },
+    {
+      "hanzi": "二〇二〇年",
+      "pinyin": "èr líng èr líng nián",
+      "spanish": "año 2020",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#s-l5-8"
+    },
+    {
+      "hanzi": "二十三号",
+      "pinyin": "èrshísān hào",
+      "spanish": "día 23",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#s-l5-14"
+    },
+    {
+      "hanzi": "二十五日",
+      "pinyin": "èrshíwǔ rì",
+      "spanish": "día 25",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#s-l5-8"
+    },
+    {
+      "hanzi": "五号",
+      "pinyin": "wǔ hào",
+      "spanish": "día cinco",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#s-l5-9"
+    },
+    {
+      "hanzi": "你哥哥",
+      "pinyin": "nǐ gēge",
+      "spanish": "tu hermano mayor",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#s-l5-4"
+    },
+    {
+      "hanzi": "你的生日",
+      "pinyin": "nǐ de shēngrì",
+      "spanish": "tu cumpleaños",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#s-l5-13"
+    },
+    {
+      "hanzi": "八点二十五",
+      "pinyin": "bā diǎn èrshíwǔ",
+      "spanish": "ocho y veinticinco",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#s-l5-8"
+    },
+    {
+      "hanzi": "写汉字",
+      "pinyin": "xiě Hànzì",
+      "spanish": "escribir caracteres chinos",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#s-l5-7"
+    },
+    {
+      "hanzi": "几号",
+      "pinyin": "jǐ hào",
+      "spanish": "qué día del mes",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#s-l5-5"
+    },
+    {
+      "hanzi": "几月",
+      "pinyin": "jǐ yuè",
+      "spanish": "qué mes",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#s-l5-13"
+    },
+    {
+      "hanzi": "小云和宋华",
+      "pinyin": "Xiǎoyún hé Sòng Huá",
+      "spanish": "Xiaoyun y Song Hua",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#s-l5-7"
+    },
+    {
+      "hanzi": "我哥哥",
+      "pinyin": "wǒ gēge",
+      "spanish": "mi hermano mayor",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#s-l5-6"
+    },
+    {
+      "hanzi": "我妹妹",
+      "pinyin": "wǒ mèimei",
+      "spanish": "mi hermana menor",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#s-l5-12"
+    },
+    {
+      "hanzi": "我的生日",
+      "pinyin": "wǒ de shēngrì",
+      "spanish": "mi cumpleaños",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#s-l5-14"
+    },
+    {
+      "hanzi": "生日蛋糕",
+      "pinyin": "shēngrì dàngāo",
+      "spanish": "pastel de cumpleaños",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#s-l5-3"
+    },
+    {
+      "hanzi": "这个",
+      "pinyin": "zhège",
+      "spanish": "este / esta",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#s-l5-5"
+    },
+    {
+      "hanzi": "陈老师",
+      "pinyin": "Chén lǎoshī",
+      "spanish": "el profesor Chen",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#s-l5-wb-22"
+    },
+    {
+      "hanzi": "就是",
+      "pinyin": "jiù shì",
+      "spanish": "ser precisamente",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#s-l5-6"
+    },
+    {
+      "hanzi": "几岁",
+      "pinyin": "jǐ suì",
+      "spanish": "cuántos años (especialmente niños)",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#g-l5-age"
+    },
+    {
+      "hanzi": "一九八八年十月二十五号。",
+      "pinyin": "Yī jiǔ bā bā nián shí yuè èrshíwǔ hào.",
+      "spanish": "25 de octubre de 1988.",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#g-l5-dates"
+    },
+    {
+      "hanzi": "她不是三十二岁。",
+      "pinyin": "Tā bú shì sānshí'èr suì.",
+      "spanish": "Ella no tiene treinta y dos años.",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#g-l5-nominal"
+    },
+    {
+      "hanzi": "你学习英语？",
+      "pinyin": "Nǐ xuéxí Yīngyǔ?",
+      "spanish": "¿Estudias inglés?",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#g-l5-rising"
+    },
+    {
+      "hanzi": "我是学生。",
+      "pinyin": "Wǒ shì xuésheng.",
+      "spanish": "Soy estudiante.",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#g-l5-sentence-parts"
+    },
+    {
+      "hanzi": "他星期天去学校。",
+      "pinyin": "Tā xīngqītiān qù xuéxiào.",
+      "spanish": "Él va a la escuela el domingo.",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#g-l5-modifiers"
+    },
+    {
+      "hanzi": "我朋友在学校写汉字。",
+      "pinyin": "Wǒ péngyou zài xuéxiào xiě Hànzì.",
+      "spanish": "Mi amigo escribe caracteres chinos en la escuela.",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson5-public.json#g-l5-modifiers"
+    },
+    {
+      "hanzi": "一",
+      "pinyin": "yī",
+      "spanish": "uno",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-一"
+    },
+    {
+      "hanzi": "三",
+      "pinyin": "sān",
+      "spanish": "tres",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-三"
+    },
+    {
+      "hanzi": "三十",
+      "pinyin": "sānshí",
+      "spanish": "treinta",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-三十"
+    },
+    {
+      "hanzi": "上午",
+      "pinyin": "shàngwǔ",
+      "spanish": "por la mañana; antes del mediodía",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-上午"
+    },
+    {
+      "hanzi": "下",
+      "pinyin": "xià",
+      "spanish": "abajo; siguiente; último",
+      "origin": "existing_corpus_reading",
+      "source": "data/lesson4-public.json#v-下"
+    },
+    {
+      "hanzi": "下午",
+      "pinyin": "xiàwǔ",
+      "spanish": "en la tarde",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-下午"
+    },
+    {
+      "hanzi": "不",
+      "pinyin": "bù",
+      "spanish": "no",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-不"
+    },
+    {
+      "hanzi": "个",
+      "pinyin": "gè",
+      "spanish": "clasificador de uso general",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-个"
+    },
+    {
+      "hanzi": "九",
+      "pinyin": "jiǔ",
+      "spanish": "nueve",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-九"
+    },
+    {
+      "hanzi": "也",
+      "pinyin": "yě",
+      "spanish": "también",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-也"
+    },
+    {
+      "hanzi": "二",
+      "pinyin": "èr",
+      "spanish": "dos",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-二"
+    },
+    {
+      "hanzi": "二十",
+      "pinyin": "èrshí",
+      "spanish": "veinte",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-二十"
+    },
+    {
+      "hanzi": "二十五",
+      "pinyin": "èrshíwǔ",
+      "spanish": "veinticinco",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-二十五"
+    },
+    {
+      "hanzi": "五",
+      "pinyin": "wǔ",
+      "spanish": "cinco",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-五"
+    },
+    {
+      "hanzi": "今天",
+      "pinyin": "jīntiān",
+      "spanish": "hoy",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-今天"
+    },
+    {
+      "hanzi": "今年",
+      "pinyin": "jīnnián",
+      "spanish": "este año",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-今年"
+    },
+    {
+      "hanzi": "他",
+      "pinyin": "tā",
+      "spanish": "él",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-他"
+    },
+    {
+      "hanzi": "们",
+      "pinyin": "men",
+      "spanish": "sufijo plural",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-们"
+    },
+    {
+      "hanzi": "你",
+      "pinyin": "nǐ",
+      "spanish": "tú",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-你"
+    },
+    {
+      "hanzi": "你最近怎么样？",
+      "pinyin": "Nǐ zuìjìn zěnmeyàng?",
+      "spanish": "¿Cómo has estado últimamente?",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#PH-ecfd3a421f57b8bd"
+    },
+    {
+      "hanzi": "你看！",
+      "pinyin": "Nǐ kàn!",
+      "spanish": "Mira!",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#PH-26e204b34f9170b0"
+    },
+    {
+      "hanzi": "八",
+      "pinyin": "bā",
+      "spanish": "ocho",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-八"
+    },
+    {
+      "hanzi": "几",
+      "pinyin": "jǐ",
+      "spanish": "cuánto",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-几"
+    },
+    {
+      "hanzi": "十",
+      "pinyin": "shí",
+      "spanish": "diez",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-十"
+    },
+    {
+      "hanzi": "去",
+      "pinyin": "qù",
+      "spanish": "ir",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-去"
+    },
+    {
+      "hanzi": "吃",
+      "pinyin": "chī",
+      "spanish": "comer",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-吃"
+    },
+    {
+      "hanzi": "吗",
+      "pinyin": "ma",
+      "spanish": "partícula modal interrogativa",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-吗"
+    },
+    {
+      "hanzi": "哥哥",
+      "pinyin": "gēge",
+      "spanish": "hermano mayor",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-哥哥"
+    },
+    {
+      "hanzi": "在",
+      "pinyin": "zài",
+      "spanish": "estar",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-在"
+    },
+    {
+      "hanzi": "多",
+      "pinyin": "duō",
+      "spanish": "mucho; más",
+      "origin": "existing_corpus_reading",
+      "source": "data/lesson4-public.json#v-多"
+    },
+    {
+      "hanzi": "大",
+      "pinyin": "dà",
+      "spanish": "grande",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-大"
+    },
+    {
+      "hanzi": "天",
+      "pinyin": "tiān",
+      "spanish": "día",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-天"
+    },
+    {
+      "hanzi": "她",
+      "pinyin": "tā",
+      "spanish": "ella",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-她"
+    },
+    {
+      "hanzi": "好",
+      "pinyin": "hǎo",
+      "spanish": "bueno; bien; vale",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-好"
+    },
+    {
+      "hanzi": "妹妹",
+      "pinyin": "mèimei",
+      "spanish": "hermana menor",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-妹妹"
+    },
+    {
+      "hanzi": "学",
+      "pinyin": "xué",
+      "spanish": "estudiar; generalmente acompañado de un objeto",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-学"
+    },
+    {
+      "hanzi": "学习",
+      "pinyin": "xuéxí",
+      "spanish": "estudiar; aprender",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-学习"
+    },
+    {
+      "hanzi": "学校",
+      "pinyin": "xuéxiào",
+      "spanish": "escuela",
+      "origin": "existing_corpus_reading",
+      "source": "data/lesson4-public.json#v-学校"
+    },
+    {
+      "hanzi": "学生",
+      "pinyin": "xuésheng",
+      "spanish": "estudiante",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-学生"
+    },
+    {
+      "hanzi": "岁",
+      "pinyin": "suì",
+      "spanish": "año de edad",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-岁"
+    },
+    {
+      "hanzi": "年",
+      "pinyin": "nián",
+      "spanish": "año",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-年"
+    },
+    {
+      "hanzi": "怎么样",
+      "pinyin": "zěnmeyàng",
+      "spanish": "cómo es; cómo está/están",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-怎么样"
+    },
+    {
+      "hanzi": "意思",
+      "pinyin": "yìsi",
+      "spanish": "significado",
+      "origin": "existing_corpus_reading",
+      "source": "data/lesson4-public.json#v-意思"
+    },
+    {
+      "hanzi": "我",
+      "pinyin": "wǒ",
+      "spanish": "yo; mí",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-我"
+    },
+    {
+      "hanzi": "我们",
+      "pinyin": "wǒmen",
+      "spanish": "nosotros",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-我们"
+    },
+    {
+      "hanzi": "我是Elsa。",
+      "pinyin": "Wǒ shì Elsa.",
+      "spanish": "Soy Elsa.",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#PH-00b310c628c20893"
+    },
+    {
+      "hanzi": "明天",
+      "pinyin": "míngtiān",
+      "spanish": "mañana",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-明天"
+    },
+    {
+      "hanzi": "是",
+      "pinyin": "shì",
+      "spanish": "ser; es; son",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-是"
+    },
+    {
+      "hanzi": "晚上",
+      "pinyin": "wǎnshang",
+      "spanish": "noche",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-晚上"
+    },
+    {
+      "hanzi": "最近",
+      "pinyin": "zuìjìn",
+      "spanish": "últimamente; recientemente",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-最近"
+    },
+    {
+      "hanzi": "朋友",
+      "pinyin": "péngyou",
+      "spanish": "amigo/a",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-朋友"
+    },
+    {
+      "hanzi": "来",
+      "pinyin": "lái",
+      "spanish": "venir",
+      "origin": "existing_corpus_reading",
+      "source": "data/lesson4-public.json#v-来"
+    },
+    {
+      "hanzi": "杯",
+      "pinyin": "bēi",
+      "spanish": "taza; vaso",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-杯"
+    },
+    {
+      "hanzi": "汉字",
+      "pinyin": "Hànzì",
+      "spanish": "carácter chino",
+      "origin": "existing_corpus_reading",
+      "source": "data/lesson4-public.json#v-汉字"
+    },
+    {
+      "hanzi": "看",
+      "pinyin": "kàn",
+      "spanish": "mirar; ver",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-看"
+    },
+    {
+      "hanzi": "真",
+      "pinyin": "zhēn",
+      "spanish": "verdaderamente; verdadero",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-真"
+    },
+    {
+      "hanzi": "英语",
+      "pinyin": "Yīngyǔ",
+      "spanish": "idioma inglés",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-英语"
+    },
+    {
+      "hanzi": "认识",
+      "pinyin": "rènshi",
+      "spanish": "conocer",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-认识"
+    },
+    {
+      "hanzi": "语法",
+      "pinyin": "yǔfǎ",
+      "spanish": "gramática",
+      "origin": "existing_corpus_reading",
+      "source": "data/lesson4-public.json#v-语法"
+    },
+    {
+      "hanzi": "说汉语",
+      "pinyin": "Shuō Hànyǔ",
+      "spanish": "hablar chino",
+      "origin": "existing_corpus_reading",
+      "source": "data/lesson4-public.json#PH-e1c787b7dced4f4f"
+    },
+    {
+      "hanzi": "这",
+      "pinyin": "zhè",
+      "spanish": "esto",
+      "origin": "existing_corpus_reading",
+      "source": "data/lessons123-public.json#v-这"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+.grammar-practice { margin: 0 0 2rem; padding: clamp(1.15rem, 3vw, 2.4rem); border: 1px solid var(--line, #dce1d7); border-radius: 22px; background: #fffefb; color: var(--ink, #263b32); scroll-margin-top: 9rem; }
+.grammar-practice-header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.grammar-practice-header .eyebrow { margin: 0 0 .4rem; }
+.grammar-practice-header h2 { margin: 0; font-size: clamp(1.55rem, 3vw, 2rem); }
+.grammar-practice-count { flex-shrink: 0; padding: .55rem .7rem; border-radius: 100px; background: #edf3e9; color: #355842; font-size: .8rem; font-weight: 750; }
+.grammar-practice-intro { margin: 1rem 0; max-width: 65ch; color: #59675f; line-height: 1.6; }
+.grammar-practice-progress { width: 100%; height: 6px; margin: 0 0 1.65rem; appearance: none; border: 0; border-radius: 10px; overflow: hidden; background: #e9eee5; accent-color: var(--jade, #476b55); }
+.grammar-practice-progress::-webkit-progress-bar { background: #e9eee5; border-radius: 10px; }
+.grammar-practice-progress::-webkit-progress-value { background: var(--jade, #476b55); border-radius: 10px; }
+.grammar-practice-progress::-moz-progress-bar { background: var(--jade, #476b55); border-radius: 10px; }
+.grammar-practice-step { display: block; color: #55715d; font-size: .78rem; font-weight: 800; letter-spacing: .035em; }
+.grammar-practice-prompt { padding: 1.3rem; border-radius: 14px; background: #f4f6ee; }
+.grammar-practice-prompt h3 { margin: .65rem 0 1rem; font-size: clamp(1.25rem, 2.5vw, 1.6rem); line-height: 1.45; overflow-wrap: anywhere; }
+.grammar-practice-audio { display: flex; flex-wrap: wrap; gap: .6rem; }
+.grammar-practice .audio-button { min-height: 44px; font-size: .85rem; background: #fffefb; }
+.grammar-practice-model-toggle { display: block; min-height: 44px; margin-top: .7rem; padding: .5rem 0; border: 0; background: transparent; color: #496950; font: inherit; font-size: .85rem; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }
+.grammar-practice-model { margin-top: 1rem; padding: 1rem; border: 1px solid #d9e4d3; border-radius: 10px; background: #fffefb; }
+.grammar-practice-model p { margin: .4rem 0; line-height: 1.65; }
+.grammar-practice-model-hanzi { font-size: clamp(1.4rem, 2.5vw, 1.8rem); letter-spacing: .055em; }
+.grammar-practice-model .pinyin-text { color: #8a4f27; font-size: 1rem; }
+.grammar-practice-model-translation { color: #536459; font-size: .95rem; }
+.grammar-practice-model .grammar-practice-order-hint { margin-top: .9rem; padding-top: .8rem; border-top: 1px solid #dce6d6; color: #4b6146; font-size: .9rem; line-height: 1.6; }
+.grammar-practice-build { margin-top: 1.7rem; }
+.grammar-practice-build-heading, .grammar-practice-answer-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .5rem; }
+.grammar-practice-build-heading small { color: #657369; font-size: .8rem; }
+.grammar-practice-help { margin: .6rem 0 1rem; color: #59675f; font-size: .9rem; line-height: 1.55; }
+.grammar-practice-bank, .grammar-practice-answer { display: flex; flex-wrap: wrap; align-items: stretch; gap: .6rem; }
+.grammar-practice-bank > button, .grammar-practice-answer > button { position: relative; min-width: 4.5rem; max-width: 100%; min-height: 64px; padding: .8rem .95rem; border: 1px solid #c7d7c6; border-radius: 11px; background: #fff; color: #284a36; font: inherit; cursor: pointer; transition: border-color .15s, background .15s; }
+.grammar-practice-bank > button:hover:not(:disabled) { border-color: #4f7257; background: #f1f6ee; }
+.grammar-practice-bank > button.is-used { border-style: dashed; border-color: #dfe5db; color: #74816e; background: #f3f4ee; opacity: .46; }
+.grammar-practice-word { display: flex; flex-direction: column; align-items: center; gap: .2rem; }
+.grammar-practice-hanzi { font-size: 1.45rem; line-height: 1.5; overflow-wrap: anywhere; }
+.grammar-practice-word .pinyin-text { color: #8a4f27; font-size: .88rem; line-height: 1.5; overflow-wrap: anywhere; }
+.grammar-practice-translation { max-width: 14rem; color: #5f6b5e; font-size: .76rem; line-height: 1.45; overflow-wrap: anywhere; }
+.grammar-practice-answer-heading { margin: 1.25rem 0 .5rem; color: #4f6655; font-size: .82rem; font-weight: 750; }
+.grammar-practice-answer-heading > div { display: flex; gap: .6rem; }
+.grammar-practice-answer-heading button { min-height: 44px; padding: .4rem .2rem; border: 0; background: transparent; color: #657466; font: inherit; font-size: .8rem; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.grammar-practice-answer { min-height: 112px; padding: .9rem; border: 1px dashed #aabda5; border-radius: 13px; background: #f8faf4; }
+.grammar-practice-answer > p { align-self: center; margin: .5rem; color: #6c786a; font-size: .88rem; }
+.grammar-practice-answer > button { padding-top: 1.15rem; background: #fff; }
+.grammar-practice-answer > button:hover:not(:disabled) { border-color: #a8623e; background: #fffaf5; }
+.grammar-practice-position { position: absolute; top: .25rem; left: .45rem; font-size: .65rem; color: #7d8c77; }
+.grammar-practice-check { margin-top: 1.4rem; }
+.grammar-practice-check > small { display: block; margin-top: .6rem; color: #657466; font-size: .78rem; }
+.grammar-practice-rating { margin: 0 0 1.3rem; padding: 0; border: 0; }
+.grammar-practice-rating legend { margin-bottom: .6rem; font-size: .82rem; color: #647061; }
+.grammar-practice-rating > div { display: flex; flex-wrap: wrap; gap: .5rem; }
+.grammar-practice-rating label { display: inline-flex; align-items: center; gap: .4rem; min-height: 44px; padding: .5rem .75rem; border: 1px solid #d9e1d3; border-radius: 8px; color: #566450; font-size: .8rem; cursor: pointer; }
+.grammar-practice-rating label.is-selected { border-color: #627b59; background: #edf3e7; color: #38502f; }
+.grammar-practice-rating input { margin: 0; accent-color: #456738; }
+.grammar-practice-feedback { margin-top: 1.5rem; padding: 1.2rem; border: 1px solid #c5d9ba; border-radius: 14px; background: #f1f7ec; }
+.grammar-practice-feedback.is-review { border-color: #e1cda9; background: #fff8ec; }
+.grammar-practice-feedback h3 { margin: .55rem 0; font-size: 1.35rem; }
+.grammar-practice-feedback > p { margin: .5rem 0; color: #546450; font-size: .92rem; line-height: 1.65; }
+.grammar-practice-feedback-audio { margin-top: .7rem; }
+.grammar-practice-save { margin-top: 1rem; color: #607059; line-height: 1.55; }
+.grammar-practice-save a { color: #355e3f; text-decoration: underline; text-underline-offset: 3px; }
+.grammar-practice-next { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 1rem; }
+.grammar-practice .button { min-height: 46px; }
+.grammar-practice button:disabled { cursor: default; }
+.grammar-practice button:disabled:not(.is-used), .grammar-practice .button:disabled { opacity: .5; }
+.grammar-practice-answer button:disabled { opacity: 1; }
+.grammar-practice button:focus-visible, .grammar-practice a:focus-visible, .grammar-practice input:focus-visible { outline: 3px solid #9a6a3b; outline-offset: 4px; }
+.grammar-practice h3:focus { outline: 0; }
+.grammar-practice h3 { scroll-margin-top:230px; }
+.grammar-practice button { scroll-margin-top:230px; scroll-margin-bottom:100px; }
+.grammar-practice-summary { padding: 1.5rem 0 1rem; text-align: center; }
+.grammar-practice-summary-icon { display: grid; place-items: center; width: 3rem; height: 3rem; margin: 0 auto 1rem; border-radius: 50%; background: #e3eddc; color: #406238; font-size: 1.6rem; }
+.grammar-practice-summary h3 { font-size: 1.6rem; }
+.grammar-practice-summary p { max-width: 55ch; margin: .8rem auto; color: #5d6b57; line-height: 1.6; }
+.grammar-practice-summary .button { margin-top: 1rem; }
+@media (max-width: 480px) {
+  .grammar-practice-header { align-items: flex-start; flex-direction: column; gap: .65rem; }
+  .grammar-practice-count { padding: .3rem .6rem; }
+  .grammar-practice-prompt, .grammar-practice-feedback { padding: 1rem; }
+  .grammar-practice-bank, .grammar-practice-answer { gap: .45rem; }
+  .grammar-practice-bank > button, .grammar-practice-answer > button { padding-inline: .65rem; }
+  .grammar-practice-hanzi { font-size: 1.35rem; }
+  .grammar-practice-translation { max-width: 10rem; }
+  .grammar-practice-next { flex-direction: column; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .grammar-practice-bank > button, .grammar-practice-answer > button { transition: none; }
+}
