@@ -260,7 +260,7 @@ function ContextList({ character, characterIdsByHanzi, availableHanzi, route, on
 function LearnPanel({ character }: { character: HanziLabCharacter }) {
   const stage = useRef<HanziWriterStageHandle>(null);
   function animateOnce() { stage.current?.animate(); }
-  return <section className="panel hanzi-tab-panel hanzi-learn-panel"><div id="hanzi-glyph-focus" className="hanzi-learn-visual"><HanziWriterStage ref={stage} character={character.hanzi} onReady={animateOnce} /><button className="hanzi-replay-control" type="button" onClick={animateOnce} aria-label="Ver animación de nuevo" title="Ver de nuevo"><span aria-hidden="true">↻</span></button></div></section>;
+  return <section className="panel hanzi-tab-panel hanzi-learn-panel"><div id="hanzi-glyph-focus" className="hanzi-learn-visual"><HanziWriterStage ref={stage} character={character.hanzi} showOutline={false} onReady={animateOnce} /><button className="hanzi-replay-control" type="button" onClick={animateOnce} aria-label="Ver animación de nuevo" title="Ver de nuevo"><span aria-hidden="true">↻</span></button></div></section>;
 }
 
 function WordsPanel({ character, ...contextProps }: ContextListProps) {
