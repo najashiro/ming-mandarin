@@ -1,24 +1,24 @@
-import lesson5 from '@/data/lesson5-public.json';
-import support from '@/data/grammar-language-support.json';
+import language from '@/data/grammar-study-language.json';
 import type { SentenceEntry } from '@/data/types';
 import { audioForMandarinText } from '@/lib/mandarin-audio';
+import { normalizeAnswer } from '@/lib/pinyin';
 
 export type GrammarReading = { hanzi: string; pinyin: string; spanish: string };
 export type GrammarTextSegment = { text: string; reading?: GrammarReading };
 
 const hanzi = /\p{Script=Han}/u;
-// Keep letters/numbers: a Spanish sentence containing Hanzi is not a Chinese phrase.
+// Preserve foreign letters/numbers and transformation separators. Never normalize
+// an instructional example into a different utterance by dropping its content.
 const readingKey = (text: string) => text.normalize('NFC').replace(/[\s，。！？、,.!?：:；;（）()“”「」"'‘’…]/g, '');
-const readings = new Map<string, GrammarReading>();
-function addReading(entry: GrammarReading) {
-  if (entry.pinyin && entry.spanish) readings.set(readingKey(entry.hanzi), entry);
+const readings = new Map<string, GrammarReading>(language.readings.map(entry => [readingKey(entry.hanzi), entry]));
+const wordKeys = new Set(language.wordKeys);
+const pinyinKey = (text: string) => text.normalize('NFC').toLowerCase().replace(/[\s'’ʼ.,!?]/g, '');
+const supplementalAudio = new Map(language.supplementalAudio.map(clip => [`${readingKey(clip.hanzi)}:${pinyinKey(clip.pinyin)}`, clip.src]));
+function recordedAudio(text: string, pinyin?: string) {
+  return (pinyin ? supplementalAudio.get(`${readingKey(text)}:${pinyinKey(pinyin)}`) : undefined) ?? audioForMandarinText(text, pinyin);
 }
-for (const entry of [...lesson5.vocabulary, ...lesson5.phrases]) addReading(entry);
-for (const sentence of lesson5.sentences) addReading({ ...sentence, spanish: sentence.translation });
-// Compact reviewed aids keep editorial translations separate from source exports.
-// They include contextual readings (教 jiāo, 一下 yíxià, 不是 bú shì).
-for (const entry of support.readings) addReading(entry);
-const sentences = new Map(lesson5.sentences.map(sentence => [sentence.id, sentence as SentenceEntry]));
+const sentences = new Map(language.sentences.map(sentence => [sentence.id, sentence as SentenceEntry]));
+const sentencesByText = new Map(language.sentences.map(sentence => [readingKey(sentence.hanzi), sentence as SentenceEntry]));
 
 /** Exact phrase/token support. Does not translate arbitrary unseen Chinese. */
 export function grammarReading(text: string): GrammarReading | undefined {
@@ -56,14 +56,61 @@ export function grammarSentence(itemId: string): SentenceEntry | undefined {
   return sentences.get(itemId);
 }
 
-/** Full recordings first. Arrays are word-by-word listening, never fluent speech. */
+/** Find a documented sentence when an old exercise uses a grammar-point ID. */
+export function grammarSentenceForText(text: string): SentenceEntry | undefined {
+  return sentencesByText.get(readingKey(text));
+}
+
+/** Tokenize a known practice answer without importing the full curriculum client-side. */
+export function grammarPracticeTokens(text: string): string[] {
+  const sentence = grammarSentenceForText(text);
+  if (sentence && normalizeAnswer(sentence.tokens.join('')) === normalizeAnswer(text)) return [...sentence.tokens];
+  const tokens: string[] = [];
+  for (const run of text.split(/(\p{Script=Han}+)/u)) {
+    if (!run) continue;
+    if (!hanzi.test(run)) {
+      // The backend ignores these punctuation marks. Retain all other content,
+      // including enumeration marks, Arabic numbers and Latin-script labels.
+      const meaningful = run.replace(/[\s。！？?!,，]/g, '');
+      if (meaningful) {
+        if (tokens.length) tokens[tokens.length - 1] += meaningful;
+        else tokens.push(meaningful);
+      }
+      continue;
+    }
+    let offset = 0;
+    while (offset < run.length) {
+      let match: string | undefined;
+      for (let end = run.length; end > offset; end--) {
+        const part = run.slice(offset, end);
+        if (wordKeys.has(part)) { match = part; break; }
+      }
+      tokens.push(match ?? run[offset]);
+      offset += match?.length ?? 1;
+    }
+  }
+  return tokens;
+}
+
+/** Full recordings first. Arrays preserve phrase boundaries or word-by-word listening. */
 export function grammarAudio(text: string): string | string[] | undefined {
+  // Diagrams, blanks, counterexample markers and foreign text are not utterances.
+  // Reject them BEFORE the shared resolver, which otherwise strips non-Hanzi.
+  if (!/^[\p{Script=Han}\s，。！？、,.!?：:；;（）()“”「」"'‘’…→／/]+$/u.test(text) || !hanzi.test(text)) return undefined;
+  // Treat a transformation or alternatives as separate utterances, never one phrase.
+  if (/[→／/]/u.test(text)) {
+    const parts = text.split(/[→／/]/u).map(part => part.trim());
+    if (parts.some(part => !part || !hanzi.test(part))) return undefined;
+    const clips = parts.map(part => grammarAudio(part));
+    if (clips.some(clip => !clip)) return undefined;
+    return clips.flatMap(clip => Array.isArray(clip) ? clip : [clip!]);
+  }
   const exact = grammarReading(text);
-  const recorded = audioForMandarinText(text, exact?.pinyin) ?? audioForMandarinText(text);
+  const recorded = recordedAudio(text, exact?.pinyin) ?? audioForMandarinText(text);
   if (recorded) return recorded;
   const clean = readingKey(text);
   if (!/^[\p{Script=Han}]+$/u.test(clean)) return undefined;
-  // Memoized complete-coverage segmentation: do not play a misleading partial phrase.
+  // Memoized complete-coverage segmentation: do not play a partial phrase.
   const memo = new Map<number, string[] | undefined>();
   const resolve = (offset: number): string[] | undefined => {
     if (offset === clean.length) return [];
@@ -72,8 +119,7 @@ export function grammarAudio(text: string): string | string[] | undefined {
       const part = clean.slice(offset, end);
       const reading = grammarReading(part);
       if (!reading) continue;
-      // Explicit readings prevent a different pronunciation of a polyphonic glyph.
-      const clip = audioForMandarinText(part, reading.pinyin);
+      const clip = recordedAudio(part, reading.pinyin);
       if (!clip) continue;
       const rest = resolve(end);
       if (rest) { const sources = [clip, ...rest]; memo.set(offset, sources); return sources; }

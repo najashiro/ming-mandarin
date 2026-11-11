@@ -1,0 +1,6882 @@
+{
+  "version": 1,
+  "supplementalAudio": [
+    {
+      "hanzi": "北边",
+      "pinyin": "běibian",
+      "src": "/audio/directions/directions-bead8cf11a9c9634.mp3"
+    },
+    {
+      "hanzi": "东边",
+      "pinyin": "dōngbian",
+      "src": "/audio/directions/directions-3df3183cc4215e62.mp3"
+    },
+    {
+      "hanzi": "南边",
+      "pinyin": "nánbian",
+      "src": "/audio/directions/directions-7ce86833de599242.mp3"
+    },
+    {
+      "hanzi": "西边",
+      "pinyin": "xībian",
+      "src": "/audio/directions/directions-aa3964776daa16e3.mp3"
+    },
+    {
+      "hanzi": "图书馆",
+      "pinyin": "túshūguǎn",
+      "src": "/audio/directions/directions-ba4b30e27494c728.mp3"
+    },
+    {
+      "hanzi": "食堂",
+      "pinyin": "shítáng",
+      "src": "/audio/directions/directions-eb8f3ce2eeb4262a.mp3"
+    },
+    {
+      "hanzi": "银行",
+      "pinyin": "yínháng",
+      "src": "/audio/directions/directions-f436d9ae66869b13.mp3"
+    },
+    {
+      "hanzi": "体育馆",
+      "pinyin": "tǐyùguǎn",
+      "src": "/audio/directions/directions-20cbecc9b14590b3.mp3"
+    },
+    {
+      "hanzi": "宿舍楼",
+      "pinyin": "sùshèlóu",
+      "src": "/audio/directions/directions-5dfbe4309978bac0.mp3"
+    },
+    {
+      "hanzi": "教学楼",
+      "pinyin": "jiàoxuélóu",
+      "src": "/audio/directions/directions-6fc941b1c2e73e95.mp3"
+    },
+    {
+      "hanzi": "校门",
+      "pinyin": "xiàomén",
+      "src": "/audio/directions/directions-b6deced6026bf93c.mp3"
+    },
+    {
+      "hanzi": "超市",
+      "pinyin": "chāoshì",
+      "src": "/audio/directions/directions-cb580918c1131e8c.mp3"
+    },
+    {
+      "hanzi": "饭馆",
+      "pinyin": "fànguǎn",
+      "src": "/audio/directions/directions-ac2fd54555348e38.mp3"
+    },
+    {
+      "hanzi": "等一下，你说什么？",
+      "pinyin": "Děng yíxià, nǐ shuō shénme?",
+      "src": "/audio/directions/directions-3a21371d5d00e703.mp3"
+    },
+    {
+      "hanzi": "等一下！",
+      "pinyin": "Děng yíxià!",
+      "src": "/audio/directions/directions-ebc65afd396c5232.mp3"
+    },
+    {
+      "hanzi": "我在这儿。",
+      "pinyin": "Wǒ zài zhèr.",
+      "src": "/audio/directions/directions-4d6be7ce7282b5da.mp3"
+    },
+    {
+      "hanzi": "谢谢你。",
+      "pinyin": "Xièxie nǐ.",
+      "src": "/audio/directions/directions-4a5a6e531c94c0ce.mp3"
+    },
+    {
+      "hanzi": "好，谢谢你。",
+      "pinyin": "Hǎo, xièxie nǐ.",
+      "src": "/audio/directions/directions-c8d5b43b0b60fb46.mp3"
+    },
+    {
+      "hanzi": "谢谢你，再见！",
+      "pinyin": "Xièxie nǐ, zàijiàn!",
+      "src": "/audio/directions/directions-8b883dffce10fb3c.mp3"
+    },
+    {
+      "hanzi": "图书馆在哪儿？",
+      "pinyin": "Túshūguǎn zài nǎr?",
+      "src": "/audio/directions/directions-3a59d2149f8b3751.mp3"
+    },
+    {
+      "hanzi": "你好，请问图书馆在哪儿？",
+      "pinyin": "Nǐ hǎo, qǐngwèn túshūguǎn zài nǎr?",
+      "src": "/audio/directions/directions-ce068a29f02e266b.mp3"
+    },
+    {
+      "hanzi": "你好，请问食堂在哪儿？",
+      "pinyin": "Nǐ hǎo, qǐngwèn shítáng zài nǎr?",
+      "src": "/audio/directions/directions-540e83a599264ad4.mp3"
+    },
+    {
+      "hanzi": "你好，请问银行在哪儿？",
+      "pinyin": "Nǐ hǎo, qǐngwèn yínháng zài nǎr?",
+      "src": "/audio/directions/directions-f7045972f69c0b56.mp3"
+    },
+    {
+      "hanzi": "你好，请问大学在哪儿？",
+      "pinyin": "Nǐ hǎo, qǐngwèn dàxué zài nǎr?",
+      "src": "/audio/directions/directions-6fd7b258b340c45f.mp3"
+    },
+    {
+      "hanzi": "你好，请问体育馆在哪儿？",
+      "pinyin": "Nǐ hǎo, qǐngwèn tǐyùguǎn zài nǎr?",
+      "src": "/audio/directions/directions-383b495bcbbb03ae.mp3"
+    },
+    {
+      "hanzi": "你好，请问宿舍楼在哪儿？",
+      "pinyin": "Nǐ hǎo, qǐngwèn sùshèlóu zài nǎr?",
+      "src": "/audio/directions/directions-d86d7e13ccc27fbb.mp3"
+    },
+    {
+      "hanzi": "上边",
+      "pinyin": "shàngbian",
+      "src": "/audio/hide-and-seek/hide-7db3b6c3fcd2a137.mp3"
+    },
+    {
+      "hanzi": "它在桌子上边。",
+      "pinyin": "Tā zài zhuōzi shàngbian.",
+      "src": "/audio/hide-and-seek/hide-826e03eb2e520736.mp3"
+    },
+    {
+      "hanzi": "它不在桌子上边。",
+      "pinyin": "Tā bú zài zhuōzi shàngbian.",
+      "src": "/audio/hide-and-seek/hide-28206f486202d4d9.mp3"
+    },
+    {
+      "hanzi": "下边",
+      "pinyin": "xiàbian",
+      "src": "/audio/hide-and-seek/hide-22b556e40a906056.mp3"
+    },
+    {
+      "hanzi": "它在桌子下边。",
+      "pinyin": "Tā zài zhuōzi xiàbian.",
+      "src": "/audio/hide-and-seek/hide-b1a5b214558fff5d.mp3"
+    },
+    {
+      "hanzi": "它不在桌子下边。",
+      "pinyin": "Tā bú zài zhuōzi xiàbian.",
+      "src": "/audio/hide-and-seek/hide-99c4c535d3c51190.mp3"
+    },
+    {
+      "hanzi": "左边",
+      "pinyin": "zuǒbian",
+      "src": "/audio/hide-and-seek/hide-6f50b9885ac8faa4.mp3"
+    },
+    {
+      "hanzi": "它在桌子左边。",
+      "pinyin": "Tā zài zhuōzi zuǒbian.",
+      "src": "/audio/hide-and-seek/hide-a32bc6333a0cca19.mp3"
+    },
+    {
+      "hanzi": "它不在桌子左边。",
+      "pinyin": "Tā bú zài zhuōzi zuǒbian.",
+      "src": "/audio/hide-and-seek/hide-89871d8a9be62c8e.mp3"
+    },
+    {
+      "hanzi": "右边",
+      "pinyin": "yòubian",
+      "src": "/audio/hide-and-seek/hide-f0206de00c95bbc3.mp3"
+    },
+    {
+      "hanzi": "它在桌子右边。",
+      "pinyin": "Tā zài zhuōzi yòubian.",
+      "src": "/audio/hide-and-seek/hide-e8a9dec04f705cec.mp3"
+    },
+    {
+      "hanzi": "它不在桌子右边。",
+      "pinyin": "Tā bú zài zhuōzi yòubian.",
+      "src": "/audio/hide-and-seek/hide-4ec60fb9dba1ffcf.mp3"
+    },
+    {
+      "hanzi": "后边",
+      "pinyin": "hòubian",
+      "src": "/audio/hide-and-seek/hide-5bdb0c20d333ea94.mp3"
+    },
+    {
+      "hanzi": "它在桌子后边。",
+      "pinyin": "Tā zài zhuōzi hòubian.",
+      "src": "/audio/hide-and-seek/hide-a924ac6ef0fb8c74.mp3"
+    },
+    {
+      "hanzi": "它不在桌子后边。",
+      "pinyin": "Tā bú zài zhuōzi hòubian.",
+      "src": "/audio/hide-and-seek/hide-8e5012598b5e560a.mp3"
+    },
+    {
+      "hanzi": "前边",
+      "pinyin": "qiánbian",
+      "src": "/audio/hide-and-seek/hide-5d55ee6f9335daeb.mp3"
+    },
+    {
+      "hanzi": "它在桌子前边。",
+      "pinyin": "Tā zài zhuōzi qiánbian.",
+      "src": "/audio/hide-and-seek/hide-14c121efdf37bcd4.mp3"
+    },
+    {
+      "hanzi": "它不在桌子前边。",
+      "pinyin": "Tā bú zài zhuōzi qiánbian.",
+      "src": "/audio/hide-and-seek/hide-956228ecdf2287d6.mp3"
+    },
+    {
+      "hanzi": "它在哪儿？",
+      "pinyin": "Tā zài nǎr?",
+      "src": "/audio/hide-and-seek/hide-45dddf5f22778db4.mp3"
+    },
+    {
+      "hanzi": "桌子",
+      "pinyin": "zhuōzi",
+      "src": "/audio/hide-and-seek/hide-eba5892d8f079763.mp3"
+    },
+    {
+      "hanzi": "在",
+      "pinyin": "zài",
+      "src": "/audio/hide-and-seek/hide-f25d4c96820ae845.mp3"
+    },
+    {
+      "hanzi": "不在",
+      "pinyin": "bú zài",
+      "src": "/audio/hide-and-seek/hide-ca407ace6951e4a4.mp3"
+    },
+    {
+      "hanzi": "兔在哪儿？",
+      "pinyin": "Tù zài nǎr?",
+      "src": "/audio/hide-and-seek/hide-662a1b72a684e844.mp3"
+    },
+    {
+      "hanzi": "狗在哪儿？",
+      "pinyin": "Gǒu zài nǎr?",
+      "src": "/audio/hide-and-seek/hide-c5d5eaf51f7e3b63.mp3"
+    },
+    {
+      "hanzi": "猫在哪儿？",
+      "pinyin": "Māo zài nǎr?",
+      "src": "/audio/hide-and-seek/hide-9fe53234cdcad078.mp3"
+    },
+    {
+      "hanzi": "老鼠在哪儿？",
+      "pinyin": "Lǎoshǔ zài nǎr?",
+      "src": "/audio/hide-and-seek/hide-c12a7dd5b73875f9.mp3"
+    },
+    {
+      "hanzi": "不对。",
+      "pinyin": "Bú duì.",
+      "src": "/audio/hide-and-seek/hide-097a97977b72a4a6.mp3"
+    }
+  ],
+  "readings": [
+    {
+      "hanzi": "一",
+      "pinyin": "yī",
+      "spanish": "uno"
+    },
+    {
+      "hanzi": "一下",
+      "pinyin": "yíxià",
+      "spanish": "indica una acción corta o informal después de un verbo"
+    },
+    {
+      "hanzi": "一个",
+      "pinyin": "yí ge",
+      "spanish": "un / una"
+    },
+    {
+      "hanzi": "一九八五年",
+      "pinyin": "yī jiǔ bā wǔ nián",
+      "spanish": "año 1985"
+    },
+    {
+      "hanzi": "一九八八年十月二十五号。",
+      "pinyin": "Yī jiǔ bā bā nián shí yuè èrshíwǔ hào.",
+      "spanish": "25 de octubre de 1988."
+    },
+    {
+      "hanzi": "一会儿",
+      "pinyin": "yíhuìr",
+      "spanish": "un momento; dentro de un rato"
+    },
+    {
+      "hanzi": "一会儿大家吃寿面。",
+      "pinyin": "Yíhuìr dàjiā chī shòumiàn.",
+      "spanish": "Dentro de un rato todos comeremos fideos de la longevidad."
+    },
+    {
+      "hanzi": "一共",
+      "pinyin": "yígòng",
+      "spanish": "en total"
+    },
+    {
+      "hanzi": "一月",
+      "pinyin": "yī yuè",
+      "spanish": "enero"
+    },
+    {
+      "hanzi": "一条",
+      "pinyin": "yì tiáo",
+      "spanish": "una (para cosas alargadas)"
+    },
+    {
+      "hanzi": "一点儿",
+      "pinyin": "yì diǎnr",
+      "spanish": "un poco"
+    },
+    {
+      "hanzi": "一起",
+      "pinyin": "yìqǐ",
+      "spanish": "juntos"
+    },
+    {
+      "hanzi": "一起去",
+      "pinyin": "Yìqǐ qù",
+      "spanish": "ir juntos"
+    },
+    {
+      "hanzi": "一起去吧",
+      "pinyin": "Yìqǐ qù ba",
+      "spanish": "vayamos juntos"
+    },
+    {
+      "hanzi": "一部电影",
+      "pinyin": "yí bù diànyǐng",
+      "spanish": "una película"
+    },
+    {
+      "hanzi": "丁力波",
+      "pinyin": "Dīng Lìbō",
+      "spanish": "Ding Libo"
+    },
+    {
+      "hanzi": "丁力波很忙。",
+      "pinyin": "Dīng Lìbō hěn máng.",
+      "spanish": "Ding Libo está muy ocupado."
+    },
+    {
+      "hanzi": "七",
+      "pinyin": "qī",
+      "spanish": "siete"
+    },
+    {
+      "hanzi": "七十五",
+      "pinyin": "qīshíwǔ",
+      "spanish": "setenta y cinco"
+    },
+    {
+      "hanzi": "七月",
+      "pinyin": "qī yuè",
+      "spanish": "julio"
+    },
+    {
+      "hanzi": "七点半我回学校，我们班有活动。",
+      "pinyin": "Qī diǎn bàn wǒ huí xuéxiào, wǒmen bān yǒu huódòng.",
+      "spanish": "A las siete y media vuelvo a la escuela; nuestra clase tiene una actividad."
+    },
+    {
+      "hanzi": "三",
+      "pinyin": "sān",
+      "spanish": "tres"
+    },
+    {
+      "hanzi": "三十",
+      "pinyin": "sānshí",
+      "spanish": "treinta"
+    },
+    {
+      "hanzi": "三十一号",
+      "pinyin": "sānshíyī hào",
+      "spanish": "día 31"
+    },
+    {
+      "hanzi": "三月",
+      "pinyin": "sān yuè",
+      "spanish": "marzo"
+    },
+    {
+      "hanzi": "上",
+      "pinyin": "shàng",
+      "spanish": "arriba; precedente; anterior"
+    },
+    {
+      "hanzi": "上个月",
+      "pinyin": "shàng ge yuè",
+      "spanish": "el mes pasado"
+    },
+    {
+      "hanzi": "上午",
+      "pinyin": "shàngwǔ",
+      "spanish": "por la mañana; antes del mediodía"
+    },
+    {
+      "hanzi": "上午好",
+      "pinyin": "shàngwǔ hǎo",
+      "spanish": "Buenos días"
+    },
+    {
+      "hanzi": "上星期一",
+      "pinyin": "shàng xīngqīyī",
+      "spanish": "el lunes pasado"
+    },
+    {
+      "hanzi": "上海",
+      "pinyin": "Shànghǎi",
+      "spanish": "Shanghái"
+    },
+    {
+      "hanzi": "上海人",
+      "pinyin": "Shànghǎi rén",
+      "spanish": "persona de Shanghái"
+    },
+    {
+      "hanzi": "上课",
+      "pinyin": "shàng kè",
+      "spanish": "asistir a clase; dar clase"
+    },
+    {
+      "hanzi": "上边",
+      "pinyin": "shàngbian",
+      "spanish": "arriba; encima de"
+    },
+    {
+      "hanzi": "下",
+      "pinyin": "xià",
+      "spanish": "abajo; siguiente; último"
+    },
+    {
+      "hanzi": "下个月",
+      "pinyin": "xià ge yuè",
+      "spanish": "el próximo mes"
+    },
+    {
+      "hanzi": "下午",
+      "pinyin": "xiàwǔ",
+      "spanish": "en la tarde"
+    },
+    {
+      "hanzi": "下午两点一刻还有口语课。",
+      "pinyin": "Xiàwǔ liǎng diǎn yí kè hái yǒu kǒuyǔ kè.",
+      "spanish": "A las dos y cuarto de la tarde también tengo clase de chino oral."
+    },
+    {
+      "hanzi": "下午好",
+      "pinyin": "xiàwǔ hǎo",
+      "spanish": "Buenas tardes"
+    },
+    {
+      "hanzi": "下星期一",
+      "pinyin": "xià xīngqīyī",
+      "spanish": "el próximo lunes"
+    },
+    {
+      "hanzi": "下边",
+      "pinyin": "xiàbian",
+      "spanish": "abajo; debajo; debajo de"
+    },
+    {
+      "hanzi": "不",
+      "pinyin": "bù",
+      "spanish": "no"
+    },
+    {
+      "hanzi": "不好意思",
+      "pinyin": "bù hǎoyìsi",
+      "spanish": "lo siento; sentirse avergonzado"
+    },
+    {
+      "hanzi": "不客气",
+      "pinyin": "bú kèqi",
+      "spanish": "de nada"
+    },
+    {
+      "hanzi": "不是",
+      "pinyin": "bú shì",
+      "spanish": "no ser / no es"
+    },
+    {
+      "hanzi": "不行",
+      "pinyin": "Bù xíng",
+      "spanish": "no se puede; no está bien"
+    },
+    {
+      "hanzi": "专业",
+      "pinyin": "zhuānyè",
+      "spanish": "especialidad (asignatura)"
+    },
+    {
+      "hanzi": "东",
+      "pinyin": "dōng",
+      "spanish": "este"
+    },
+    {
+      "hanzi": "东边",
+      "pinyin": "dōngbian",
+      "spanish": "este (lado)"
+    },
+    {
+      "hanzi": "两",
+      "pinyin": "liǎng",
+      "spanish": "dos (antes de clasificador)"
+    },
+    {
+      "hanzi": "两个人",
+      "pinyin": "liǎng ge rén",
+      "spanish": "dos personas"
+    },
+    {
+      "hanzi": "两个姐姐",
+      "pinyin": "Liǎng ge jiějie",
+      "spanish": "Dos hermanas mayores."
+    },
+    {
+      "hanzi": "两口人",
+      "pinyin": "liǎng kǒu rén",
+      "spanish": "dos miembros de la familia"
+    },
+    {
+      "hanzi": "两点一刻",
+      "pinyin": "Liǎng diǎn yí kè",
+      "spanish": "las dos y cuarto"
+    },
+    {
+      "hanzi": "两点（钟）",
+      "pinyin": "Liǎng diǎn (zhōng)",
+      "spanish": "las dos (en punto)"
+    },
+    {
+      "hanzi": "个",
+      "pinyin": "gè",
+      "spanish": "clasificador de uso general"
+    },
+    {
+      "hanzi": "中午",
+      "pinyin": "zhōngwǔ",
+      "spanish": "mediodía"
+    },
+    {
+      "hanzi": "中国",
+      "pinyin": "Zhōngguó",
+      "spanish": "China"
+    },
+    {
+      "hanzi": "中学",
+      "pinyin": "zhōngxué",
+      "spanish": "escuela secundaria"
+    },
+    {
+      "hanzi": "中文",
+      "pinyin": "Zhōngwén",
+      "spanish": "chino (idioma)"
+    },
+    {
+      "hanzi": "主意",
+      "pinyin": "zhǔyi",
+      "spanish": "idea"
+    },
+    {
+      "hanzi": "九",
+      "pinyin": "jiǔ",
+      "spanish": "nueve"
+    },
+    {
+      "hanzi": "九月",
+      "pinyin": "jiǔ yuè",
+      "spanish": "septiembre"
+    },
+    {
+      "hanzi": "也",
+      "pinyin": "yě",
+      "spanish": "también"
+    },
+    {
+      "hanzi": "书",
+      "pinyin": "shū",
+      "spanish": "libro"
+    },
+    {
+      "hanzi": "书房",
+      "pinyin": "shūfáng",
+      "spanish": "cuarto de estudio"
+    },
+    {
+      "hanzi": "了",
+      "pinyin": "le",
+      "spanish": "partícula que indica, según el contexto, un cambio de situación o una acción completada"
+    },
+    {
+      "hanzi": "事",
+      "pinyin": "shì",
+      "spanish": "asunto; cosa"
+    },
+    {
+      "hanzi": "事儿",
+      "pinyin": "shìr",
+      "spanish": "asunto; cosa"
+    },
+    {
+      "hanzi": "二",
+      "pinyin": "èr",
+      "spanish": "dos"
+    },
+    {
+      "hanzi": "二〇二〇年",
+      "pinyin": "èr líng èr líng nián",
+      "spanish": "año 2020"
+    },
+    {
+      "hanzi": "二〇二〇年十二月二十五日星期五晚上八点二十五。",
+      "pinyin": "Èr líng èr líng nián shí'èr yuè èrshíwǔ rì xīngqīwǔ wǎnshang bā diǎn èrshíwǔ.",
+      "spanish": "Viernes 25 de diciembre de 2020 a las ocho y veinticinco de la noche."
+    },
+    {
+      "hanzi": "二十",
+      "pinyin": "èrshí",
+      "spanish": "veinte"
+    },
+    {
+      "hanzi": "二十三号",
+      "pinyin": "èrshísān hào",
+      "spanish": "día 23"
+    },
+    {
+      "hanzi": "二十五",
+      "pinyin": "èrshíwǔ",
+      "spanish": "veinticinco"
+    },
+    {
+      "hanzi": "二十五日",
+      "pinyin": "èrshíwǔ rì",
+      "spanish": "día 25"
+    },
+    {
+      "hanzi": "二月",
+      "pinyin": "èr yuè",
+      "spanish": "febrero"
+    },
+    {
+      "hanzi": "五",
+      "pinyin": "wǔ",
+      "spanish": "cinco"
+    },
+    {
+      "hanzi": "五号",
+      "pinyin": "wǔ hào",
+      "spanish": "día cinco"
+    },
+    {
+      "hanzi": "五月",
+      "pinyin": "wǔ yuè",
+      "spanish": "mayo"
+    },
+    {
+      "hanzi": "人",
+      "pinyin": "rén",
+      "spanish": "persona; habitante"
+    },
+    {
+      "hanzi": "什么",
+      "pinyin": "shénme",
+      "spanish": "qué"
+    },
+    {
+      "hanzi": "什么专业",
+      "pinyin": "Shénme zhuānyè",
+      "spanish": "qué especialidad"
+    },
+    {
+      "hanzi": "什么叫“胡同”？",
+      "pinyin": "Shénme jiào “hútòng”?",
+      "spanish": "¿Qué significa «hutong»?"
+    },
+    {
+      "hanzi": "什么工作",
+      "pinyin": "shénme gōngzuò",
+      "spanish": "qué trabajo"
+    },
+    {
+      "hanzi": "今天",
+      "pinyin": "jīntiān",
+      "spanish": "hoy"
+    },
+    {
+      "hanzi": "今天下午",
+      "pinyin": "Jīntiān xiàwǔ",
+      "spanish": "hoy por la tarde"
+    },
+    {
+      "hanzi": "今天不是五号。",
+      "pinyin": "Jīntiān bú shì wǔ hào.",
+      "spanish": "Hoy no es día cinco."
+    },
+    {
+      "hanzi": "今天晚上",
+      "pinyin": "jīntiān wǎnshang",
+      "spanish": "esta noche"
+    },
+    {
+      "hanzi": "今年",
+      "pinyin": "jīnnián",
+      "spanish": "este año"
+    },
+    {
+      "hanzi": "介绍",
+      "pinyin": "jièshào",
+      "spanish": "presentar"
+    },
+    {
+      "hanzi": "他",
+      "pinyin": "tā",
+      "spanish": "él"
+    },
+    {
+      "hanzi": "他不会说法语。",
+      "pinyin": "Tā bú huì shuō Fǎyǔ.",
+      "spanish": "Él no sabe hablar francés."
+    },
+    {
+      "hanzi": "他不在。",
+      "pinyin": "Tā bú zài.",
+      "spanish": "Él no está."
+    },
+    {
+      "hanzi": "他不是我弟弟，是我哥哥。",
+      "pinyin": "Tā bú shì wǒ dìdi, shì wǒ gēge.",
+      "spanish": "No es mi hermano menor, sino mi hermano mayor."
+    },
+    {
+      "hanzi": "他不是老师。",
+      "pinyin": "Tā bú shì lǎoshī.",
+      "spanish": "Él no es profesor."
+    },
+    {
+      "hanzi": "他也很好。",
+      "pinyin": "Tā yě hěn hǎo.",
+      "spanish": "Él también está muy bien."
+    },
+    {
+      "hanzi": "他们",
+      "pinyin": "tāmen",
+      "spanish": "ellos"
+    },
+    {
+      "hanzi": "他刚到北京。",
+      "pinyin": "Tā gāng dào Běijīng.",
+      "spanish": "Él acaba de llegar a Pekín."
+    },
+    {
+      "hanzi": "（他妈妈）不是（老师）。／不是。他妈妈不是老师。",
+      "pinyin": "(Tā māma) bú shì (lǎoshī). / Bú shì. Tā māma bú shì lǎoshī.",
+      "spanish": "(Su madre) no es (profesora). / No. Su madre no es profesora."
+    },
+    {
+      "hanzi": "（他妈妈）是（老师）。／是。他妈妈是老师。",
+      "pinyin": "(Tā māma) shì (lǎoshī). / Shì. Tā māma shì lǎoshī.",
+      "spanish": "(Su madre) es (profesora). / Sí. Su madre es profesora."
+    },
+    {
+      "hanzi": "他姓宋。",
+      "pinyin": "Tā xìng Sòng.",
+      "spanish": "Su apellido es Song."
+    },
+    {
+      "hanzi": "他就是我哥哥！",
+      "pinyin": "Tā jiù shì wǒ gēge!",
+      "spanish": "¡Es precisamente mi hermano mayor!"
+    },
+    {
+      "hanzi": "他很忙。",
+      "pinyin": "Tā hěn máng.",
+      "spanish": "Él está muy ocupado."
+    },
+    {
+      "hanzi": "他很忙。→ 他忙吗？",
+      "pinyin": "Tā hěn máng. → Tā máng ma?",
+      "spanish": "Él está muy ocupado. → ¿Está ocupado él?"
+    },
+    {
+      "hanzi": "他忙吗？",
+      "pinyin": "Tā máng ma?",
+      "spanish": "¿Está ocupado él?"
+    },
+    {
+      "hanzi": "（他明天）来。／（他明天）不来。",
+      "pinyin": "(Tā míngtiān) lái. / (Tā míngtiān) bù lái.",
+      "spanish": "(Él mañana) viene. / (Él mañana) no viene."
+    },
+    {
+      "hanzi": "他星期天去学校。",
+      "pinyin": "Tā xīngqītiān qù xuéxiào.",
+      "spanish": "Él va a la escuela el domingo."
+    },
+    {
+      "hanzi": "们",
+      "pinyin": "men",
+      "spanish": "sufijo plural"
+    },
+    {
+      "hanzi": "会",
+      "pinyin": "huì",
+      "spanish": "saber; poder (habilidad)"
+    },
+    {
+      "hanzi": "会说",
+      "pinyin": "huì shuō",
+      "spanish": "saber hablar"
+    },
+    {
+      "hanzi": "体育",
+      "pinyin": "tǐyù",
+      "spanish": "educación física; entrenamiento físico"
+    },
+    {
+      "hanzi": "体育馆",
+      "pinyin": "tǐyùguǎn",
+      "spanish": "gimnasio; estadio"
+    },
+    {
+      "hanzi": "作业",
+      "pinyin": "zuòyè",
+      "spanish": "tarea"
+    },
+    {
+      "hanzi": "你",
+      "pinyin": "nǐ",
+      "spanish": "tú"
+    },
+    {
+      "hanzi": "你们",
+      "pinyin": "nǐmen",
+      "spanish": "ustedes; vosotros/as"
+    },
+    {
+      "hanzi": "你们好！",
+      "pinyin": "Nǐmen hǎo!",
+      "spanish": "¡Hola a todos!"
+    },
+    {
+      "hanzi": "你们班",
+      "pinyin": "Nǐmen bān",
+      "spanish": "su clase; la clase de ustedes"
+    },
+    {
+      "hanzi": "你们班一共有多少人？",
+      "pinyin": "Nǐmen bān yígòng yǒu duōshao rén?",
+      "spanish": "¿Cuántas personas hay en tu clase?"
+    },
+    {
+      "hanzi": "你们班有多少（个）学生？",
+      "pinyin": "Nǐmen bān yǒu duōshao (gè) xuéshēng?",
+      "spanish": "¿Cuántos alumnos hay en tu clase?"
+    },
+    {
+      "hanzi": "你叫什么？",
+      "pinyin": "Nǐ jiào shénme?",
+      "spanish": "¿Cómo te llamas?"
+    },
+    {
+      "hanzi": "你叫什么名字？",
+      "pinyin": "Nǐ jiào shénme míngzi?",
+      "spanish": "¿Cómo te llamas?"
+    },
+    {
+      "hanzi": "你哥哥",
+      "pinyin": "nǐ gēge",
+      "spanish": "tu hermano mayor"
+    },
+    {
+      "hanzi": "你哥哥今年多大？",
+      "pinyin": "Nǐ gēge jīnnián duō dà?",
+      "spanish": "¿Cuántos años tiene tu hermano mayor este año?"
+    },
+    {
+      "hanzi": "你喝茶还是咖啡？",
+      "pinyin": "Nǐ hē chá háishi kāfēi?",
+      "spanish": "¿Bebes té o café?"
+    },
+    {
+      "hanzi": "你女儿",
+      "pinyin": "Nǐ nǚ'ér",
+      "spanish": "Tu hija."
+    },
+    {
+      "hanzi": "你女儿今年几岁？",
+      "pinyin": "Nǐ nǚʼér jīnnián jǐ suì?",
+      "spanish": "¿Cuántos años tiene tu hija este año?"
+    },
+    {
+      "hanzi": "你女儿几岁？",
+      "pinyin": "Nǐ nǚ'ér jǐ suì?",
+      "spanish": "¿Cuántos años tiene tu hija?"
+    },
+    {
+      "hanzi": "你好！",
+      "pinyin": "Nǐ hǎo!",
+      "spanish": "¡Hola!"
+    },
+    {
+      "hanzi": "你好吗？",
+      "pinyin": "Nǐ hǎo ma?",
+      "spanish": "¿Cómo estás?"
+    },
+    {
+      "hanzi": "你学习英语？",
+      "pinyin": "Nǐ xuéxí Yīngyǔ?",
+      "spanish": "¿Estudias inglés?"
+    },
+    {
+      "hanzi": "你家",
+      "pinyin": "nǐ jiā",
+      "spanish": "tu familia / tu casa"
+    },
+    {
+      "hanzi": "你家有几口人？",
+      "pinyin": "Nǐ jiā yǒu jǐ kǒu rén?",
+      "spanish": "¿Cuántas personas hay en tu familia?"
+    },
+    {
+      "hanzi": "你家还有谁？",
+      "pinyin": "Nǐ jiā hái yǒu shéi?",
+      "spanish": "¿Quién más hay en tu familia?"
+    },
+    {
+      "hanzi": "你忙吗？",
+      "pinyin": "Nǐ máng ma?",
+      "spanish": "¿Estás ocupado/a?"
+    },
+    {
+      "hanzi": "你明天几点有课？",
+      "pinyin": "Nǐ míngtiān jǐ diǎn yǒu kè?",
+      "spanish": "¿A qué hora tienes clase mañana?"
+    },
+    {
+      "hanzi": "你明天晚上有没有时间？",
+      "pinyin": "Nǐ míngtiān wǎnshang yǒu méiyǒu shíjiān?",
+      "spanish": "¿Tienes tiempo mañana por la noche?"
+    },
+    {
+      "hanzi": "你是哪国人？",
+      "pinyin": "Nǐ shì nǎ guó rén?",
+      "spanish": "¿De qué país eres?"
+    },
+    {
+      "hanzi": "你最近怎么样？",
+      "pinyin": "Nǐ zuìjìn zěnmeyàng?",
+      "spanish": "¿Cómo has estado últimamente?"
+    },
+    {
+      "hanzi": "你爸爸",
+      "pinyin": "nǐ bàba",
+      "spanish": "tu papá"
+    },
+    {
+      "hanzi": "你爸爸做什么工作？",
+      "pinyin": "Nǐ bàba zuò shénme gōngzuò?",
+      "spanish": "¿En qué trabaja tu padre?"
+    },
+    {
+      "hanzi": "你的生日",
+      "pinyin": "nǐ de shēngrì",
+      "spanish": "tu cumpleaños"
+    },
+    {
+      "hanzi": "你的生日是几月几号？",
+      "pinyin": "Nǐ de shēngrì shì jǐ yuè jǐ hào?",
+      "spanish": "¿Qué día y mes es tu cumpleaños?"
+    },
+    {
+      "hanzi": "你看！",
+      "pinyin": "Nǐ kàn!",
+      "spanish": "Mira!"
+    },
+    {
+      "hanzi": "你看一下。",
+      "pinyin": "Nǐ kàn yíxià.",
+      "spanish": "Echa un vistazo."
+    },
+    {
+      "hanzi": "你看不看（电影）？",
+      "pinyin": "Nǐ kàn bu kàn (diànyǐng)?",
+      "spanish": "¿Vas a ver (la película)?"
+    },
+    {
+      "hanzi": "你累不累？",
+      "pinyin": "Nǐ lèi bu lèi?",
+      "spanish": "¿Estás cansada?"
+    },
+    {
+      "hanzi": "你认识我妹妹？",
+      "pinyin": "Nǐ rènshi wǒ mèimei?",
+      "spanish": "¿Conoces a mi hermana menor?"
+    },
+    {
+      "hanzi": "你跟我来。",
+      "pinyin": "Nǐ gēn wǒ lái.",
+      "spanish": "Ven conmigo."
+    },
+    {
+      "hanzi": "俄罗斯",
+      "pinyin": "Éluósī",
+      "spanish": "Rusia"
+    },
+    {
+      "hanzi": "俄罗斯人",
+      "pinyin": "Éluósīrén",
+      "spanish": "ruso; persona de Rusia"
+    },
+    {
+      "hanzi": "俄语",
+      "pinyin": "Éyǔ",
+      "spanish": "ruso"
+    },
+    {
+      "hanzi": "做",
+      "pinyin": "zuò",
+      "spanish": "hacer; dedicarse a"
+    },
+    {
+      "hanzi": "做作业",
+      "pinyin": "zuò zuò yè",
+      "spanish": "hacer la tarea"
+    },
+    {
+      "hanzi": "做饭",
+      "pinyin": "zuò fàn",
+      "spanish": "cocinar; preparar la comida"
+    },
+    {
+      "hanzi": "儿子",
+      "pinyin": "érzi",
+      "spanish": "hijo"
+    },
+    {
+      "hanzi": "先",
+      "pinyin": "xiān",
+      "spanish": "primero; antes"
+    },
+    {
+      "hanzi": "先生",
+      "pinyin": "xiānsheng",
+      "spanish": "Sr.; señor; caballero; marido"
+    },
+    {
+      "hanzi": "兔",
+      "pinyin": "tù",
+      "spanish": "conejo"
+    },
+    {
+      "hanzi": "八",
+      "pinyin": "bā",
+      "spanish": "ocho"
+    },
+    {
+      "hanzi": "八卦",
+      "pinyin": "bāguà",
+      "spanish": "chisme"
+    },
+    {
+      "hanzi": "八月",
+      "pinyin": "bā yuè",
+      "spanish": "agosto"
+    },
+    {
+      "hanzi": "八点二十五",
+      "pinyin": "bā diǎn èrshíwǔ",
+      "spanish": "ocho y veinticinco"
+    },
+    {
+      "hanzi": "八点半",
+      "pinyin": "Bā diǎn bàn",
+      "spanish": "las ocho y media"
+    },
+    {
+      "hanzi": "六",
+      "pinyin": "liù",
+      "spanish": "seis"
+    },
+    {
+      "hanzi": "六个人",
+      "pinyin": "liù ge rén",
+      "spanish": "seis personas"
+    },
+    {
+      "hanzi": "六个女生",
+      "pinyin": "Liù ge nǚshēng",
+      "spanish": "seis alumnas"
+    },
+    {
+      "hanzi": "六月",
+      "pinyin": "liù yuè",
+      "spanish": "junio"
+    },
+    {
+      "hanzi": "再",
+      "pinyin": "zài",
+      "spanish": "después / de nuevo"
+    },
+    {
+      "hanzi": "再见",
+      "pinyin": "zàijiàn",
+      "spanish": "adiós; hasta luego"
+    },
+    {
+      "hanzi": "写",
+      "pinyin": "xiě",
+      "spanish": "escribir"
+    },
+    {
+      "hanzi": "写作",
+      "pinyin": "xiězuò",
+      "spanish": "redacción; escribir"
+    },
+    {
+      "hanzi": "写汉字",
+      "pinyin": "xiě Hànzì",
+      "spanish": "escribir caracteres chinos"
+    },
+    {
+      "hanzi": "几",
+      "pinyin": "jǐ",
+      "spanish": "cuánto"
+    },
+    {
+      "hanzi": "几口人",
+      "pinyin": "jǐ kǒu rén",
+      "spanish": "cuántos miembros de la familia"
+    },
+    {
+      "hanzi": "几号",
+      "pinyin": "jǐ hào",
+      "spanish": "qué día del mes"
+    },
+    {
+      "hanzi": "几岁",
+      "pinyin": "jǐ suì",
+      "spanish": "cuántos años (especialmente niños)"
+    },
+    {
+      "hanzi": "几月",
+      "pinyin": "jǐ yuè",
+      "spanish": "qué mes"
+    },
+    {
+      "hanzi": "出生",
+      "pinyin": "chūshēng",
+      "spanish": "nacer"
+    },
+    {
+      "hanzi": "刂",
+      "pinyin": "lìdāopáng",
+      "spanish": "radical lateral de cuchillo"
+    },
+    {
+      "hanzi": "分",
+      "pinyin": "fēn",
+      "spanish": "minuto"
+    },
+    {
+      "hanzi": "刚",
+      "pinyin": "gāng",
+      "spanish": "acabar de; recién"
+    },
+    {
+      "hanzi": "刚到",
+      "pinyin": "gāng dào",
+      "spanish": "acabar de llegar"
+    },
+    {
+      "hanzi": "别",
+      "pinyin": "bié",
+      "spanish": "no"
+    },
+    {
+      "hanzi": "别着急，林小姐。",
+      "pinyin": "Bié zháojí, Lín xiǎojie.",
+      "spanish": "No se preocupe, señorita Lin."
+    },
+    {
+      "hanzi": "到",
+      "pinyin": "dào",
+      "spanish": "llegar"
+    },
+    {
+      "hanzi": "刻",
+      "pinyin": "kè",
+      "spanish": "cuarto (de una hora)"
+    },
+    {
+      "hanzi": "前",
+      "pinyin": "qián",
+      "spanish": "delante"
+    },
+    {
+      "hanzi": "前天",
+      "pinyin": "qiántiān",
+      "spanish": "anteayer"
+    },
+    {
+      "hanzi": "前年",
+      "pinyin": "qiánnián",
+      "spanish": "el año antepasado"
+    },
+    {
+      "hanzi": "前边",
+      "pinyin": "qiánbian",
+      "spanish": "frente a; delante de"
+    },
+    {
+      "hanzi": "力波",
+      "pinyin": "Lìbō",
+      "spanish": "Libo; nombre propio"
+    },
+    {
+      "hanzi": "办公",
+      "pinyin": "bàngōng",
+      "spanish": "despachar asuntos públicos; trabajar (usualmente en una oficina)"
+    },
+    {
+      "hanzi": "办公楼",
+      "pinyin": "bàngōnglóu",
+      "spanish": "edificio de oficinas; edificio de administración"
+    },
+    {
+      "hanzi": "功夫熊猫",
+      "pinyin": "Gōngfu Xióngmāo",
+      "spanish": "Kung Fu Panda"
+    },
+    {
+      "hanzi": "加拿大",
+      "pinyin": "Jiānádà",
+      "spanish": "Canadá"
+    },
+    {
+      "hanzi": "动词谓语句",
+      "pinyin": "dòngcí wèiyǔjù",
+      "spanish": "oración con predicado verbal"
+    },
+    {
+      "hanzi": "包子",
+      "pinyin": "bāozi",
+      "spanish": "bollo chino relleno al vapor"
+    },
+    {
+      "hanzi": "包子和饺子我都要。",
+      "pinyin": "Bāozi hé jiǎozi wǒ dōu yào.",
+      "spanish": "Quiero tanto baozi como jiaozi."
+    },
+    {
+      "hanzi": "化学",
+      "pinyin": "huàxué",
+      "spanish": "Química"
+    },
+    {
+      "hanzi": "北",
+      "pinyin": "běi",
+      "spanish": "norte"
+    },
+    {
+      "hanzi": "北京",
+      "pinyin": "Běijīng",
+      "spanish": "Pekín"
+    },
+    {
+      "hanzi": "北京人",
+      "pinyin": "Běijīng rén",
+      "spanish": "persona de Pekín"
+    },
+    {
+      "hanzi": "北京烤鸭",
+      "pinyin": "Běijīng kǎoyā",
+      "spanish": "pato laqueado de Pekín"
+    },
+    {
+      "hanzi": "北边",
+      "pinyin": "běibian",
+      "spanish": "norte (lado)"
+    },
+    {
+      "hanzi": "医生",
+      "pinyin": "yīshēng",
+      "spanish": "médico/a"
+    },
+    {
+      "hanzi": "十",
+      "pinyin": "shí",
+      "spanish": "diez"
+    },
+    {
+      "hanzi": "十一月",
+      "pinyin": "shíyī yuè",
+      "spanish": "noviembre"
+    },
+    {
+      "hanzi": "十二个男生",
+      "pinyin": "Shí'èr ge nánshēng",
+      "spanish": "doce alumnos varones"
+    },
+    {
+      "hanzi": "十二月",
+      "pinyin": "shí'èr yuè",
+      "spanish": "diciembre"
+    },
+    {
+      "hanzi": "十月",
+      "pinyin": "shí yuè",
+      "spanish": "octubre"
+    },
+    {
+      "hanzi": "十月二十五号。",
+      "pinyin": "Shí yuè èrshíwǔ hào.",
+      "spanish": "El veinticinco de octubre."
+    },
+    {
+      "hanzi": "千",
+      "pinyin": "qiān",
+      "spanish": "mil"
+    },
+    {
+      "hanzi": "午饭",
+      "pinyin": "wǔfàn",
+      "spanish": "almuerzo"
+    },
+    {
+      "hanzi": "半",
+      "pinyin": "bàn",
+      "spanish": "mitad"
+    },
+    {
+      "hanzi": "南",
+      "pinyin": "nán",
+      "spanish": "sur"
+    },
+    {
+      "hanzi": "南边",
+      "pinyin": "nánbian",
+      "spanish": "sur (lado)"
+    },
+    {
+      "hanzi": "卡片",
+      "pinyin": "kǎpiàn",
+      "spanish": "tarjeta"
+    },
+    {
+      "hanzi": "卧室",
+      "pinyin": "wòshì",
+      "spanish": "dormitorio"
+    },
+    {
+      "hanzi": "卫生间",
+      "pinyin": "wèishēngjiān",
+      "spanish": "cuarto de baño"
+    },
+    {
+      "hanzi": "印加可乐",
+      "pinyin": "yìnjiā kělè",
+      "spanish": "Inca Kola"
+    },
+    {
+      "hanzi": "印度",
+      "pinyin": "Yìndù",
+      "spanish": "India"
+    },
+    {
+      "hanzi": "历史",
+      "pinyin": "lìshǐ",
+      "spanish": "historia"
+    },
+    {
+      "hanzi": "厉害",
+      "pinyin": "lì hài",
+      "spanish": "impresionante; muy hábil"
+    },
+    {
+      "hanzi": "厕所",
+      "pinyin": "cè suǒ",
+      "spanish": "baño"
+    },
+    {
+      "hanzi": "厨房",
+      "pinyin": "chúfáng",
+      "spanish": "cocina"
+    },
+    {
+      "hanzi": "去",
+      "pinyin": "qù",
+      "spanish": "ir"
+    },
+    {
+      "hanzi": "去年",
+      "pinyin": "qùnián",
+      "spanish": "el año pasado"
+    },
+    {
+      "hanzi": "参加",
+      "pinyin": "cānjiā",
+      "spanish": "participar; asistir"
+    },
+    {
+      "hanzi": "口",
+      "pinyin": "kǒu",
+      "spanish": "clasificador para miembros de familia"
+    },
+    {
+      "hanzi": "口语",
+      "pinyin": "kǒuyǔ",
+      "spanish": "idioma hablado"
+    },
+    {
+      "hanzi": "口语考试",
+      "pinyin": "kǒuyǔ kǎoshì",
+      "spanish": "examen oral"
+    },
+    {
+      "hanzi": "口语课",
+      "pinyin": "Kǒuyǔ kè",
+      "spanish": "clase de expresión oral"
+    },
+    {
+      "hanzi": "只",
+      "pinyin": "zhǐ",
+      "spanish": "solo"
+    },
+    {
+      "hanzi": "叫",
+      "pinyin": "jiào",
+      "spanish": "llamarse; llamar"
+    },
+    {
+      "hanzi": "可乐",
+      "pinyin": "kělè",
+      "spanish": "refresco de cola"
+    },
+    {
+      "hanzi": "可以",
+      "pinyin": "kěyǐ",
+      "spanish": "poder; estar permitido"
+    },
+    {
+      "hanzi": "可惜",
+      "pinyin": "kěxī",
+      "spanish": "es una lástima"
+    },
+    {
+      "hanzi": "可是",
+      "pinyin": "kěshì",
+      "spanish": "pero"
+    },
+    {
+      "hanzi": "可爱",
+      "pinyin": "kě'ài",
+      "spanish": "tierno; adorable"
+    },
+    {
+      "hanzi": "右",
+      "pinyin": "yòu",
+      "spanish": "derecha"
+    },
+    {
+      "hanzi": "右边",
+      "pinyin": "yòubian",
+      "spanish": "derecha (lado)"
+    },
+    {
+      "hanzi": "右边的楼是新同学的宿舍楼。",
+      "pinyin": "Yòubian de lóu shì xīn tóngxué de sùshèlóu.",
+      "spanish": "El edificio de la derecha es la residencia de los alumnos nuevos."
+    },
+    {
+      "hanzi": "号",
+      "pinyin": "hào",
+      "spanish": "día del mes; fecha; talla"
+    },
+    {
+      "hanzi": "吃",
+      "pinyin": "chī",
+      "spanish": "comer"
+    },
+    {
+      "hanzi": "吃饭",
+      "pinyin": "Chī fàn",
+      "spanish": "Comer."
+    },
+    {
+      "hanzi": "同学",
+      "pinyin": "tóngxué",
+      "spanish": "compañero de clase; compañero de escuela"
+    },
+    {
+      "hanzi": "名字",
+      "pinyin": "míngzi",
+      "spanish": "nombre"
+    },
+    {
+      "hanzi": "名片",
+      "pinyin": "míngpiàn",
+      "spanish": "tarjeta de presentación"
+    },
+    {
+      "hanzi": "后",
+      "pinyin": "hòu",
+      "spanish": "atrás"
+    },
+    {
+      "hanzi": "后天",
+      "pinyin": "hòutiān",
+      "spanish": "pasado mañana"
+    },
+    {
+      "hanzi": "后年",
+      "pinyin": "hòunián",
+      "spanish": "dentro de dos años"
+    },
+    {
+      "hanzi": "后边",
+      "pinyin": "hòubian",
+      "spanish": "atrás; detrás; posterior"
+    },
+    {
+      "hanzi": "吗",
+      "pinyin": "ma",
+      "spanish": "partícula modal interrogativa"
+    },
+    {
+      "hanzi": "吧",
+      "pinyin": "ba",
+      "spanish": "partícula modal usada al final de una oración para indicar consulta, sugerencia, solicitud, etc."
+    },
+    {
+      "hanzi": "听",
+      "pinyin": "tīng",
+      "spanish": "escuchar"
+    },
+    {
+      "hanzi": "听力",
+      "pinyin": "tīnglì",
+      "spanish": "audición"
+    },
+    {
+      "hanzi": "听说",
+      "pinyin": "tīngshuō",
+      "spanish": "se dice; escuchar; enterarse"
+    },
+    {
+      "hanzi": "听说这个电影很好",
+      "pinyin": "Tīngshuō zhè ge diànyǐng hěn hǎo.",
+      "spanish": "Se dice que esta película es muy buena."
+    },
+    {
+      "hanzi": "呢",
+      "pinyin": "ne",
+      "spanish": "partícula de pregunta elíptica"
+    },
+    {
+      "hanzi": "周末",
+      "pinyin": "zhōumò",
+      "spanish": "fin de semana"
+    },
+    {
+      "hanzi": "和",
+      "pinyin": "hé",
+      "spanish": "y; con"
+    },
+    {
+      "hanzi": "咖啡",
+      "pinyin": "kāfēi",
+      "spanish": "café"
+    },
+    {
+      "hanzi": "咖啡厅",
+      "pinyin": "kāfēitīng",
+      "spanish": "cafetería, café"
+    },
+    {
+      "hanzi": "咱们",
+      "pinyin": "zánmen",
+      "spanish": "nosotros (incluye al oyente)"
+    },
+    {
+      "hanzi": "哥哥",
+      "pinyin": "gēge",
+      "spanish": "hermano mayor"
+    },
+    {
+      "hanzi": "哪",
+      "pinyin": "nǎ",
+      "spanish": "cuál; qué"
+    },
+    {
+      "hanzi": "哪一个",
+      "pinyin": "nǎ yí ge",
+      "spanish": "cuál"
+    },
+    {
+      "hanzi": "哪儿",
+      "pinyin": "nǎr",
+      "spanish": "dónde"
+    },
+    {
+      "hanzi": "哪国人",
+      "pinyin": "nǎ guó rén",
+      "spanish": "de qué país; de qué nacionalidad"
+    },
+    {
+      "hanzi": "唱",
+      "pinyin": "chàng",
+      "spanish": "cantar"
+    },
+    {
+      "hanzi": "唱歌",
+      "pinyin": "chàng gē",
+      "spanish": "cantar (una canción)"
+    },
+    {
+      "hanzi": "商人",
+      "pinyin": "shāngrén",
+      "spanish": "comerciante"
+    },
+    {
+      "hanzi": "啊",
+      "pinyin": "a",
+      "spanish": "partícula modal"
+    },
+    {
+      "hanzi": "喜欢",
+      "pinyin": "xǐhuan",
+      "spanish": "gustar"
+    },
+    {
+      "hanzi": "喝",
+      "pinyin": "hē",
+      "spanish": "beber"
+    },
+    {
+      "hanzi": "喝茶",
+      "pinyin": "Hē chá",
+      "spanish": "Tomar té."
+    },
+    {
+      "hanzi": "四",
+      "pinyin": "sì",
+      "spanish": "cuatro"
+    },
+    {
+      "hanzi": "四口人",
+      "pinyin": "sì kǒu rén",
+      "spanish": "cuatro miembros de la familia"
+    },
+    {
+      "hanzi": "四月",
+      "pinyin": "sì yuè",
+      "spanish": "abril"
+    },
+    {
+      "hanzi": "回",
+      "pinyin": "huí",
+      "spanish": "regresar"
+    },
+    {
+      "hanzi": "回国",
+      "pinyin": "huí guó",
+      "spanish": "volver al país"
+    },
+    {
+      "hanzi": "回学校",
+      "pinyin": "huí xuéxiào",
+      "spanish": "volver al colegio"
+    },
+    {
+      "hanzi": "回家",
+      "pinyin": "huí jiā",
+      "spanish": "volver a casa"
+    },
+    {
+      "hanzi": "困",
+      "pinyin": "kùn",
+      "spanish": "soñoliento/a"
+    },
+    {
+      "hanzi": "国",
+      "pinyin": "guó",
+      "spanish": "país"
+    },
+    {
+      "hanzi": "图书馆",
+      "pinyin": "túshūguǎn",
+      "spanish": "biblioteca"
+    },
+    {
+      "hanzi": "在",
+      "pinyin": "zài",
+      "spanish": "estar"
+    },
+    {
+      "hanzi": "在中国",
+      "pinyin": "zài Zhōngguó",
+      "spanish": "en China"
+    },
+    {
+      "hanzi": "在北京",
+      "pinyin": "zài Běijīng",
+      "spanish": "en Pekín"
+    },
+    {
+      "hanzi": "地图",
+      "pinyin": "dìtú",
+      "spanish": "mapa"
+    },
+    {
+      "hanzi": "地方",
+      "pinyin": "dìfang",
+      "spanish": "lugar; región"
+    },
+    {
+      "hanzi": "地理",
+      "pinyin": "dìlǐ",
+      "spanish": "Geografía"
+    },
+    {
+      "hanzi": "坐",
+      "pinyin": "zuò",
+      "spanish": "sentarse"
+    },
+    {
+      "hanzi": "埃及",
+      "pinyin": "Āijí",
+      "spanish": "Egipto"
+    },
+    {
+      "hanzi": "墨西哥",
+      "pinyin": "Mòxīgē",
+      "spanish": "México"
+    },
+    {
+      "hanzi": "外公",
+      "pinyin": "wàigōng",
+      "spanish": "abuelo materno"
+    },
+    {
+      "hanzi": "外国",
+      "pinyin": "wàiguó",
+      "spanish": "país extranjero"
+    },
+    {
+      "hanzi": "外国人",
+      "pinyin": "wàiguórén",
+      "spanish": "persona extranjera"
+    },
+    {
+      "hanzi": "外婆",
+      "pinyin": "wàipó",
+      "spanish": "abuela materna"
+    },
+    {
+      "hanzi": "外语",
+      "pinyin": "wàiyǔ",
+      "spanish": "idioma extranjero"
+    },
+    {
+      "hanzi": "外边",
+      "pinyin": "wàibian",
+      "spanish": "afuera"
+    },
+    {
+      "hanzi": "多",
+      "pinyin": "duō",
+      "spanish": "mucho; más"
+    },
+    {
+      "hanzi": "多大",
+      "pinyin": "duō dà",
+      "spanish": "cuántos años"
+    },
+    {
+      "hanzi": "多少",
+      "pinyin": "duōshao",
+      "spanish": "cuánto"
+    },
+    {
+      "hanzi": "多少人",
+      "pinyin": "Duōshao rén",
+      "spanish": "cuántas personas"
+    },
+    {
+      "hanzi": "多少张照片",
+      "pinyin": "Duōshao zhāng zhàopiàn",
+      "spanish": "cuántas fotos"
+    },
+    {
+      "hanzi": "大",
+      "pinyin": "dà",
+      "spanish": "grande"
+    },
+    {
+      "hanzi": "大为",
+      "pinyin": "Dàwéi",
+      "spanish": "Dawei; nombre propio"
+    },
+    {
+      "hanzi": "大为好吗？",
+      "pinyin": "Dàwéi hǎo ma?",
+      "spanish": "¿Está bien Dawei?"
+    },
+    {
+      "hanzi": "大卫",
+      "pinyin": "Dàwèi",
+      "spanish": "Dawei; nombre propio"
+    },
+    {
+      "hanzi": "大学",
+      "pinyin": "dà xué",
+      "spanish": "universidad"
+    },
+    {
+      "hanzi": "大家",
+      "pinyin": "dàjiā",
+      "spanish": "todos"
+    },
+    {
+      "hanzi": "天",
+      "pinyin": "tiān",
+      "spanish": "día"
+    },
+    {
+      "hanzi": "太",
+      "pinyin": "tài",
+      "spanish": "demasiado; extremadamente"
+    },
+    {
+      "hanzi": "太太",
+      "pinyin": "tàitai",
+      "spanish": "Sra.; señora; esposa"
+    },
+    {
+      "hanzi": "女",
+      "pinyin": "nǚ",
+      "spanish": "femenino"
+    },
+    {
+      "hanzi": "女儿",
+      "pinyin": "nǚʼér",
+      "spanish": "hija"
+    },
+    {
+      "hanzi": "女朋友",
+      "pinyin": "nǚpéngyou",
+      "spanish": "novia"
+    },
+    {
+      "hanzi": "女生",
+      "pinyin": "nǚshēng",
+      "spanish": "estudiante femenina"
+    },
+    {
+      "hanzi": "奶奶",
+      "pinyin": "nǎinai",
+      "spanish": "abuela paterna"
+    },
+    {
+      "hanzi": "她",
+      "pinyin": "tā",
+      "spanish": "ella"
+    },
+    {
+      "hanzi": "她一九八五年出生。",
+      "pinyin": "Tā yī jiǔ bā wǔ nián chūshēng.",
+      "spanish": "Ella nació en 1985."
+    },
+    {
+      "hanzi": "她不太累。",
+      "pinyin": "Tā bú tài lèi.",
+      "spanish": "Ella no está muy cansada."
+    },
+    {
+      "hanzi": "她不是三十二岁。",
+      "pinyin": "Tā bú shì sānshí'èr suì.",
+      "spanish": "Ella no tiene treinta y dos años."
+    },
+    {
+      "hanzi": "她今天晚上有钢琴课。",
+      "pinyin": "Tā jīntiān wǎnshang yǒu gāngqín kè.",
+      "spanish": "Esta noche ella tiene clase de piano."
+    },
+    {
+      "hanzi": "她今天没有时间。",
+      "pinyin": "Tā jīntiān méiyǒu shíjiān.",
+      "spanish": "Ella no tiene tiempo hoy."
+    },
+    {
+      "hanzi": "她今年八岁。",
+      "pinyin": "Tā jīnnián bā suì.",
+      "spanish": "Ella tiene ocho años este año."
+    },
+    {
+      "hanzi": "她们",
+      "pinyin": "tāmen",
+      "spanish": "ellas"
+    },
+    {
+      "hanzi": "她常常教我们英语。",
+      "pinyin": "Tā chángcháng jiāo wǒmen Yīngyǔ.",
+      "spanish": "Ella nos enseña inglés a menudo."
+    },
+    {
+      "hanzi": "她教我英语。",
+      "pinyin": "Tā jiāo wǒ Yīngyǔ.",
+      "spanish": "Ella me enseña inglés."
+    },
+    {
+      "hanzi": "好",
+      "pinyin": "hǎo",
+      "spanish": "bueno; bien; vale"
+    },
+    {
+      "hanzi": "好吃",
+      "pinyin": "hǎochī",
+      "spanish": "sabroso/a"
+    },
+    {
+      "hanzi": "好吗",
+      "pinyin": "hǎo ma",
+      "spanish": "¿de acuerdo?"
+    },
+    {
+      "hanzi": "妈妈",
+      "pinyin": "māma",
+      "spanish": "mamá; madre"
+    },
+    {
+      "hanzi": "妹妹",
+      "pinyin": "mèimei",
+      "spanish": "hermana menor"
+    },
+    {
+      "hanzi": "姐姐",
+      "pinyin": "jiějie",
+      "spanish": "hermana mayor"
+    },
+    {
+      "hanzi": "姓",
+      "pinyin": "xìng",
+      "spanish": "apellidarse; apellido"
+    },
+    {
+      "hanzi": "姚明",
+      "pinyin": "Yáo Míng",
+      "spanish": "Yao Ming; nombre propio"
+    },
+    {
+      "hanzi": "姥姥",
+      "pinyin": "lǎolao",
+      "spanish": "abuela materna (uso norteño)"
+    },
+    {
+      "hanzi": "姥爷",
+      "pinyin": "lǎoye",
+      "spanish": "abuelo materno (uso norteño)"
+    },
+    {
+      "hanzi": "孔子学院",
+      "pinyin": "kǒng zǐ xué yuàn",
+      "spanish": "Instituto Confucio"
+    },
+    {
+      "hanzi": "学",
+      "pinyin": "xué",
+      "spanish": "estudiar; generalmente acompañado de un objeto"
+    },
+    {
+      "hanzi": "学习",
+      "pinyin": "xuéxí",
+      "spanish": "estudiar; aprender"
+    },
+    {
+      "hanzi": "学校",
+      "pinyin": "xuéxiào",
+      "spanish": "escuela"
+    },
+    {
+      "hanzi": "学校里边有银行。",
+      "pinyin": "Xuéxiào lǐbian yǒu yínháng.",
+      "spanish": "Hay un banco dentro de la escuela."
+    },
+    {
+      "hanzi": "学校里边有银行吗？",
+      "pinyin": "Xuéxiào lǐbian yǒu yínháng ma?",
+      "spanish": "¿Hay un banco dentro de la escuela?"
+    },
+    {
+      "hanzi": "学生",
+      "pinyin": "xuésheng",
+      "spanish": "estudiante"
+    },
+    {
+      "hanzi": "学院",
+      "pinyin": "xuéyuàn",
+      "spanish": "instituto; facultad"
+    },
+    {
+      "hanzi": "孩子",
+      "pinyin": "háizi",
+      "spanish": "niño/a; hijo/a"
+    },
+    {
+      "hanzi": "孩子们",
+      "pinyin": "háizimen",
+      "spanish": "los niños"
+    },
+    {
+      "hanzi": "宋",
+      "pinyin": "Sòng",
+      "spanish": "Song; apellido"
+    },
+    {
+      "hanzi": "宋华",
+      "pinyin": "Sòng Huá",
+      "spanish": "Song Hua"
+    },
+    {
+      "hanzi": "（宋华）有（时间）。／（宋华）没有（时间）。",
+      "pinyin": "(Sòng Huá) yǒu (shíjiān). / (Sòng Huá) méiyǒu (shíjiān).",
+      "spanish": "(Song Hua) tiene (tiempo). / (Song Hua) no tiene (tiempo)."
+    },
+    {
+      "hanzi": "宠物",
+      "pinyin": "chǒngwù",
+      "spanish": "mascota"
+    },
+    {
+      "hanzi": "客厅",
+      "pinyin": "kètīng",
+      "spanish": "salón"
+    },
+    {
+      "hanzi": "客气",
+      "pinyin": "kèqi",
+      "spanish": "cortés"
+    },
+    {
+      "hanzi": "家",
+      "pinyin": "jiā",
+      "spanish": "familia; hogar"
+    },
+    {
+      "hanzi": "家人",
+      "pinyin": "jiā rén",
+      "spanish": "familiares; miembros de la familia"
+    },
+    {
+      "hanzi": "容易",
+      "pinyin": "róngyì",
+      "spanish": "fácil"
+    },
+    {
+      "hanzi": "宿舍",
+      "pinyin": "sùshè",
+      "spanish": "dormitorio"
+    },
+    {
+      "hanzi": "宿舍楼",
+      "pinyin": "sùshèlóu",
+      "spanish": "edificio de dormitorios"
+    },
+    {
+      "hanzi": "对",
+      "pinyin": "duì",
+      "spanish": "sí; correcto"
+    },
+    {
+      "hanzi": "对不起",
+      "pinyin": "duìbuqǐ",
+      "spanish": "lo siento / disculpa"
+    },
+    {
+      "hanzi": "对了",
+      "pinyin": "duìle",
+      "spanish": "(expresión usada para cambiar el tema de una conversación o para recordar al oyente un tema nuevo) a propósito; bueno, sí"
+    },
+    {
+      "hanzi": "对了，你明天晚上有没有时间？",
+      "pinyin": "Duìle, nǐ míngtiān wǎnshang yǒu méiyǒu shíjiān?",
+      "spanish": "A propósito, ¿tienes tiempo mañana por la noche?"
+    },
+    {
+      "hanzi": "对吗",
+      "pinyin": "duì ma",
+      "spanish": "¿es correcto?"
+    },
+    {
+      "hanzi": "对面",
+      "pinyin": "duìmiàn",
+      "spanish": "opuesto; enfrente de"
+    },
+    {
+      "hanzi": "寿司",
+      "pinyin": "shòusī",
+      "spanish": "sushi"
+    },
+    {
+      "hanzi": "寿面",
+      "pinyin": "shòumiàn",
+      "spanish": "tallarines de la longevidad (para cumpleaños)"
+    },
+    {
+      "hanzi": "小",
+      "pinyin": "xiǎo",
+      "spanish": "pequeño/a"
+    },
+    {
+      "hanzi": "小云",
+      "pinyin": "Xiǎoyún",
+      "spanish": "Xiaoyun; nombre propio"
+    },
+    {
+      "hanzi": "小云和宋华",
+      "pinyin": "Xiǎoyún hé Sòng Huá",
+      "spanish": "Xiaoyun y Song Hua"
+    },
+    {
+      "hanzi": "小云和宋华教我说汉语、写汉字。",
+      "pinyin": "Xiǎoyún hé Sòng Huá jiāo wǒ shuō Hànyǔ, xiě Hànzì.",
+      "spanish": "Xiaoyun y Song Hua me enseñan a hablar chino y escribir caracteres."
+    },
+    {
+      "hanzi": "小姐",
+      "pinyin": "xiǎojie",
+      "spanish": "señora; señorita"
+    },
+    {
+      "hanzi": "小孩子",
+      "pinyin": "xiǎo háizi",
+      "spanish": "niño pequeño; niños pequeños"
+    },
+    {
+      "hanzi": "小狗",
+      "pinyin": "xiǎogǒu",
+      "spanish": "perrito"
+    },
+    {
+      "hanzi": "小猫",
+      "pinyin": "xiǎomāo",
+      "spanish": "gatito; gato pequeño"
+    },
+    {
+      "hanzi": "少",
+      "pinyin": "shǎo",
+      "spanish": "poco"
+    },
+    {
+      "hanzi": "就",
+      "pinyin": "jiù",
+      "spanish": "exactamente"
+    },
+    {
+      "hanzi": "就是",
+      "pinyin": "jiù shì",
+      "spanish": "ser precisamente"
+    },
+    {
+      "hanzi": "属",
+      "pinyin": "shǔ",
+      "spanish": "ser del signo de (horóscopo chino)"
+    },
+    {
+      "hanzi": "岁",
+      "pinyin": "suì",
+      "spanish": "año de edad"
+    },
+    {
+      "hanzi": "岁数",
+      "pinyin": "suìshù",
+      "spanish": "edad; número de años de edad"
+    },
+    {
+      "hanzi": "工人",
+      "pinyin": "gōngrén",
+      "spanish": "obrero; trabajador"
+    },
+    {
+      "hanzi": "工作",
+      "pinyin": "gōngzuò",
+      "spanish": "trabajo; trabajar"
+    },
+    {
+      "hanzi": "工作日",
+      "pinyin": "gōngzuòrì",
+      "spanish": "día laborable"
+    },
+    {
+      "hanzi": "工程师",
+      "pinyin": "gōngchéngshī",
+      "spanish": "ingeniero/a"
+    },
+    {
+      "hanzi": "左",
+      "pinyin": "zuǒ",
+      "spanish": "izquierda"
+    },
+    {
+      "hanzi": "左边",
+      "pinyin": "zuǒbian",
+      "spanish": "izquierda (lado)"
+    },
+    {
+      "hanzi": "巧克力",
+      "pinyin": "qiǎokèlì",
+      "spanish": "chocolate"
+    },
+    {
+      "hanzi": "巩俐",
+      "pinyin": "Gǒng Lì",
+      "spanish": "Gong Li; nombre propio"
+    },
+    {
+      "hanzi": "差",
+      "pinyin": "chà",
+      "spanish": "faltar; carecer"
+    },
+    {
+      "hanzi": "差五分七点。",
+      "pinyin": "Chà wǔ fēn qī diǎn.",
+      "spanish": "Son las siete menos cinco."
+    },
+    {
+      "hanzi": "帅",
+      "pinyin": "shuài",
+      "spanish": "guapo"
+    },
+    {
+      "hanzi": "常",
+      "pinyin": "cháng",
+      "spanish": "a menudo"
+    },
+    {
+      "hanzi": "常常",
+      "pinyin": "chángcháng",
+      "spanish": "a menudo"
+    },
+    {
+      "hanzi": "干啥",
+      "pinyin": "gàn shá",
+      "spanish": "qué estás haciendo; muy coloquial"
+    },
+    {
+      "hanzi": "干嘛",
+      "pinyin": "gàn má",
+      "spanish": "qué haces"
+    },
+    {
+      "hanzi": "干杯",
+      "pinyin": "gānbēi",
+      "spanish": "hacer un brindis; salud"
+    },
+    {
+      "hanzi": "年",
+      "pinyin": "nián",
+      "spanish": "año"
+    },
+    {
+      "hanzi": "年龄",
+      "pinyin": "niánlíng",
+      "spanish": "edad"
+    },
+    {
+      "hanzi": "广州",
+      "pinyin": "Guǎngzhōu",
+      "spanish": "Guangzhou; Cantón"
+    },
+    {
+      "hanzi": "弟弟",
+      "pinyin": "dìdi",
+      "spanish": "hermano menor"
+    },
+    {
+      "hanzi": "张",
+      "pinyin": "zhāng",
+      "spanish": "clasificador para objetos planos"
+    },
+    {
+      "hanzi": "张华",
+      "pinyin": "Zhāng Huá",
+      "spanish": "Zhang Hua; nombre propio"
+    },
+    {
+      "hanzi": "张王冉",
+      "pinyin": "Zhāng Wángrǎn",
+      "spanish": "Zhang Wangran; nombre propio"
+    },
+    {
+      "hanzi": "弹",
+      "pinyin": "tán",
+      "spanish": "tocar un instrumento, como el piano"
+    },
+    {
+      "hanzi": "弹钢琴",
+      "pinyin": "Tán gāngqín",
+      "spanish": "tocar al piano"
+    },
+    {
+      "hanzi": "很",
+      "pinyin": "hěn",
+      "spanish": "muy; enlace del predicado adjetival"
+    },
+    {
+      "hanzi": "很多",
+      "pinyin": "hěnduō",
+      "spanish": "muchos"
+    },
+    {
+      "hanzi": "很多课",
+      "pinyin": "Hěn duō kè",
+      "spanish": "muchas clases"
+    },
+    {
+      "hanzi": "很累",
+      "pinyin": "Hěn lèi",
+      "spanish": "muy cansado"
+    },
+    {
+      "hanzi": "律师",
+      "pinyin": "lǜshī",
+      "spanish": "abogado/a"
+    },
+    {
+      "hanzi": "德国",
+      "pinyin": "Déguó",
+      "spanish": "Alemania"
+    },
+    {
+      "hanzi": "德语",
+      "pinyin": "Déyǔ",
+      "spanish": "alemán"
+    },
+    {
+      "hanzi": "忙",
+      "pinyin": "máng",
+      "spanish": "ocupado/a"
+    },
+    {
+      "hanzi": "快乐",
+      "pinyin": "kuàilè",
+      "spanish": "feliz"
+    },
+    {
+      "hanzi": "怎么样",
+      "pinyin": "zěnmeyàng",
+      "spanish": "cómo es; cómo está/están"
+    },
+    {
+      "hanzi": "怕",
+      "pinyin": "pà",
+      "spanish": "temer"
+    },
+    {
+      "hanzi": "思想政治",
+      "pinyin": "sīxiǎng zhèngzhì",
+      "spanish": "Ideologia y Politica"
+    },
+    {
+      "hanzi": "恐怕",
+      "pinyin": "kǒngpà",
+      "spanish": "(indicando una estimación) Me temo que..."
+    },
+    {
+      "hanzi": "恐怕不行。",
+      "pinyin": "Kǒngpà bù xíng.",
+      "spanish": "Me temo que no."
+    },
+    {
+      "hanzi": "您",
+      "pinyin": "nín",
+      "spanish": "usted"
+    },
+    {
+      "hanzi": "您好！",
+      "pinyin": "Nín hǎo!",
+      "spanish": "¡Hola! (formal)"
+    },
+    {
+      "hanzi": "您贵姓？",
+      "pinyin": "Nín guìxìng?",
+      "spanish": "Formal."
+    },
+    {
+      "hanzi": "意大利语",
+      "pinyin": "yì dà lì yǔ",
+      "spanish": "idioma italiano"
+    },
+    {
+      "hanzi": "意思",
+      "pinyin": "yìsi",
+      "spanish": "significado"
+    },
+    {
+      "hanzi": "成龙",
+      "pinyin": "Chéng Lóng",
+      "spanish": "Cheng Long; nombre propio"
+    },
+    {
+      "hanzi": "我",
+      "pinyin": "wǒ",
+      "spanish": "yo; mí"
+    },
+    {
+      "hanzi": "我不太忙。",
+      "pinyin": "Wǒ bú tài máng.",
+      "spanish": "No estoy muy ocupado/a."
+    },
+    {
+      "hanzi": "我不忙。",
+      "pinyin": "Wǒ bù máng.",
+      "spanish": "No estoy ocupado."
+    },
+    {
+      "hanzi": "我不要咖啡。",
+      "pinyin": "Wǒ bú yào kāfēi.",
+      "spanish": "No quiero café."
+    },
+    {
+      "hanzi": "我也不忙。",
+      "pinyin": "Wǒ yě bú máng.",
+      "spanish": "Yo tampoco estoy ocupado."
+    },
+    {
+      "hanzi": "我也学习汉语。",
+      "pinyin": "Wǒ yě xuéxí Hànyǔ.",
+      "spanish": "Yo también estudio chino."
+    },
+    {
+      "hanzi": "我也属马。",
+      "pinyin": "Wǒ yě shǔ mǎ.",
+      "spanish": "Yo también soy del signo del caballo."
+    },
+    {
+      "hanzi": "我也很好。",
+      "pinyin": "Wǒ yě hěn hǎo.",
+      "spanish": "También estoy muy bien."
+    },
+    {
+      "hanzi": "我们",
+      "pinyin": "wǒmen",
+      "spanish": "nosotros"
+    },
+    {
+      "hanzi": "我们一起去吧。",
+      "pinyin": "Wǒmen yìqǐ qù ba.",
+      "spanish": "Vamos juntos."
+    },
+    {
+      "hanzi": "我们一起练习口语吧。",
+      "pinyin": "Wǒmen yìqǐ liànxí kǒuyǔ ba.",
+      "spanish": "Practiquemos juntos la expresión oral."
+    },
+    {
+      "hanzi": "我们学习汉西英翻译专业。",
+      "pinyin": "Wǒmen xuéxíhàn xī yīng fānyìzhuānyè.",
+      "spanish": "Estudiamos la carrera de traducción chino español e inglés."
+    },
+    {
+      "hanzi": "我们家",
+      "pinyin": "wǒmen jiā",
+      "spanish": "nuestra familia / nuestra casa"
+    },
+    {
+      "hanzi": "我们班",
+      "pinyin": "Wǒmen bān",
+      "spanish": "nuestra clase"
+    },
+    {
+      "hanzi": "我们班一共有十八个学生。",
+      "pinyin": "Wǒmen bān yígòng yǒu shíbā ge xuéshēng.",
+      "spanish": "En nuestra clase hay dieciocho estudiantes en total."
+    },
+    {
+      "hanzi": "我们班有三十个学生。",
+      "pinyin": "Wǒmen bān yǒu sānshí gè xuéshēng.",
+      "spanish": "Hay 30 alumnos en nuestra clase."
+    },
+    {
+      "hanzi": "我们班有二十六个女生。你们班呢？（你们班有多少个女生？）",
+      "pinyin": "Wǒmen bān yǒu èrshíliù ge nǚshēng. Nǐmen bān ne? (Nǐmen bān yǒu duōshao ge nǚshēng?)",
+      "spanish": "En nuestra clase hay veintiséis alumnas. ¿Y en la suya? (¿Cuántas alumnas hay en su clase?)"
+    },
+    {
+      "hanzi": "我们的宿舍楼在这儿。",
+      "pinyin": "Wǒmen de sùshèlóu zài zhèr.",
+      "spanish": "Nuestro edificio de dormitorios está aquí."
+    },
+    {
+      "hanzi": "我们的宿舍楼在这儿，对吗？",
+      "pinyin": "Wǒmen de sùshèlóu zài zhèr, duì ma?",
+      "spanish": "Nuestro edificio de dormitorios está aquí, ¿verdad?"
+    },
+    {
+      "hanzi": "我会。",
+      "pinyin": "Wǒ huì.",
+      "spanish": "Yo sí sé hacerlo."
+    },
+    {
+      "hanzi": "我会说汉语。",
+      "pinyin": "Wǒ huì shuō Hànyǔ.",
+      "spanish": "Sé hablar chino."
+    },
+    {
+      "hanzi": "我会说汉语和西班牙语。",
+      "pinyin": "Wǒ huì shuō Hànyǔ hé Xībānyáyǔ.",
+      "spanish": "Sé hablar chino y español."
+    },
+    {
+      "hanzi": "我先看一下教学楼吧。",
+      "pinyin": "Wǒ xiān kàn yíxià jiàoxuélóu ba.",
+      "spanish": "Voy a ver primero el edificio de aulas."
+    },
+    {
+      "hanzi": "我叫林娜。",
+      "pinyin": "Wǒ jiào Lín Nà.",
+      "spanish": "Me llamo Lin Na."
+    },
+    {
+      "hanzi": "我叫林娜。你呢？",
+      "pinyin": "Wǒ jiào Lín Nà. Nǐ ne?",
+      "spanish": "Me llamo Lin Na. ¿Y tú?"
+    },
+    {
+      "hanzi": "我叫马大为。",
+      "pinyin": "Wǒ jiào Mǎ Dàwéi.",
+      "spanish": "Me llamo Ma Dawei."
+    },
+    {
+      "hanzi": "我听说了一个八卦。",
+      "pinyin": "Wǒ tīngshuō le yí ge bāguà.",
+      "spanish": "Escuché un chisme."
+    },
+    {
+      "hanzi": "我哥哥",
+      "pinyin": "wǒ gēge",
+      "spanish": "mi hermano mayor"
+    },
+    {
+      "hanzi": "我喜欢……",
+      "pinyin": "Wǒ xǐhuan…",
+      "spanish": "Me gusta…"
+    },
+    {
+      "hanzi": "我喜欢参加活动。",
+      "pinyin": "Wǒ xǐhuan cānjiā huódòng.",
+      "spanish": "Me gusta participar en las actividades."
+    },
+    {
+      "hanzi": "我喜欢吃米饭和面条。",
+      "pinyin": "Wǒ xǐhuan chī mǐfàn hé miàntiáo.",
+      "spanish": "Me gusta comer arroz y fideos."
+    },
+    {
+      "hanzi": "我喜欢吃饺子。",
+      "pinyin": "Wǒ xǐhuan chī jiǎozi.",
+      "spanish": "Me gusta comer jiaozi."
+    },
+    {
+      "hanzi": "我喜欢咖啡。",
+      "pinyin": "Wǒ xǐhuan kāfēi.",
+      "spanish": "Me gusta el café."
+    },
+    {
+      "hanzi": "我在北京学习汉语。",
+      "pinyin": "Wǒ zài Běijīng xuéxí Hànyǔ.",
+      "spanish": "Estudio chino en Pekín."
+    },
+    {
+      "hanzi": "我妹妹",
+      "pinyin": "wǒ mèimei",
+      "spanish": "mi hermana menor"
+    },
+    {
+      "hanzi": "我姓宋，叫宋华。",
+      "pinyin": "Wǒ xìng Sòng, jiào Sòng Huá.",
+      "spanish": "Me apellido Song y me llamo Song Hua."
+    },
+    {
+      "hanzi": "我家",
+      "pinyin": "wǒ jiā",
+      "spanish": "mi familia / mi casa"
+    },
+    {
+      "hanzi": "我家一共有六个人。",
+      "pinyin": "Wǒ jiā yígòng yǒu liù ge rén.",
+      "spanish": "En mi familia hay seis personas en total."
+    },
+    {
+      "hanzi": "我家有四口人。",
+      "pinyin": "Wǒ jiā yǒu sì kǒu rén.",
+      "spanish": "En mi familia somos cuatro."
+    },
+    {
+      "hanzi": "我家的照片",
+      "pinyin": "wǒ jiā de zhàopiàn",
+      "spanish": "la foto de mi familia"
+    },
+    {
+      "hanzi": "我弟弟",
+      "pinyin": "wǒ dìdi",
+      "spanish": "mi hermano menor"
+    },
+    {
+      "hanzi": "我很好。",
+      "pinyin": "wǒ hěn hǎo.",
+      "spanish": "Estoy bien."
+    },
+    {
+      "hanzi": "我很好。你呢？",
+      "pinyin": "Wǒ hěn hǎo. Nǐ ne?",
+      "spanish": "Estoy muy bien. ¿Y tú?"
+    },
+    {
+      "hanzi": "我很好。你呢？（你好吗？）",
+      "pinyin": "Wǒ hěn hǎo. Nǐ ne? (Nǐ hǎo ma?)",
+      "spanish": "Estoy muy bien. ¿Y tú? (¿Cómo estás?)"
+    },
+    {
+      "hanzi": "我很忙。",
+      "pinyin": "Wǒ hěn máng.",
+      "spanish": "Estoy muy ocupado/a."
+    },
+    {
+      "hanzi": "我明天上午八点半有语法课。",
+      "pinyin": "Wǒ míngtiān shàngwǔ bā diǎn bàn yǒu yǔfǎ kè.",
+      "spanish": "Mañana por la mañana tengo clase de gramática a las ocho y media."
+    },
+    {
+      "hanzi": "我明天有很多课。",
+      "pinyin": "Wǒ míngtiān yǒu hěn duō kè.",
+      "spanish": "Mañana tengo muchas clases."
+    },
+    {
+      "hanzi": "我是学生。",
+      "pinyin": "Wǒ shì xuésheng.",
+      "spanish": "Soy estudiante."
+    },
+    {
+      "hanzi": "我是秘鲁人。",
+      "pinyin": "Wǒ shì Bìlǔ rén.",
+      "spanish": "Soy peruano."
+    },
+    {
+      "hanzi": "我是美国人。",
+      "pinyin": "Wǒ shì Měiguó rén.",
+      "spanish": "Soy estadounidense."
+    },
+    {
+      "hanzi": "我有两个姐姐。",
+      "pinyin": "Wǒ yǒu liǎng ge jiějie.",
+      "spanish": "Tengo dos hermanas mayores."
+    },
+    {
+      "hanzi": "我朋友",
+      "pinyin": "wǒ péngyou",
+      "spanish": "mi amigo"
+    },
+    {
+      "hanzi": "我朋友在学校写汉字。",
+      "pinyin": "Wǒ péngyou zài xuéxiào xiě Hànzì.",
+      "spanish": "Mi amigo escribe caracteres chinos en la escuela."
+    },
+    {
+      "hanzi": "我来介绍一下。",
+      "pinyin": "Wǒ lái jièshào yíxià.",
+      "spanish": "Permíteme hacer una presentación."
+    },
+    {
+      "hanzi": "我没有妹妹。",
+      "pinyin": "Wǒ méiyǒu mèimei.",
+      "spanish": "No tengo hermana menor."
+    },
+    {
+      "hanzi": "我爸爸",
+      "pinyin": "wǒ bàba",
+      "spanish": "mi papá"
+    },
+    {
+      "hanzi": "我爸爸妈妈",
+      "pinyin": "wǒ bàba māma",
+      "spanish": "mi papá y mi mamá"
+    },
+    {
+      "hanzi": "我爸爸妈妈都是上海人。",
+      "pinyin": "Wǒ bàba māma dōu shì Shànghǎi rén.",
+      "spanish": "Mi padre y mi madre son ambos de Shanghái."
+    },
+    {
+      "hanzi": "我爸爸是医生。",
+      "pinyin": "Wǒ bàba shì yīshēng.",
+      "spanish": "Mi padre es médico."
+    },
+    {
+      "hanzi": "我的生日",
+      "pinyin": "wǒ de shēngrì",
+      "spanish": "mi cumpleaños"
+    },
+    {
+      "hanzi": "我的生日是八月二十三号。",
+      "pinyin": "Wǒ de shēngrì shì bā yuè èrshísān hào.",
+      "spanish": "Mi cumpleaños es el 23 de agosto."
+    },
+    {
+      "hanzi": "我给你介绍一下。",
+      "pinyin": "Wǒ gěi nǐ jièshào yíxià.",
+      "spanish": "Te lo presento un momento."
+    },
+    {
+      "hanzi": "我给你介绍一下，好吗？",
+      "pinyin": "Wǒ gěi nǐ jièshào yíxià, hǎo ma?",
+      "spanish": "Te lo presento un momento, ¿te parece?"
+    },
+    {
+      "hanzi": "（我）要（咖啡）。／（我）不要（咖啡）。",
+      "pinyin": "(Wǒ) yào (kāfēi). / (Wǒ) bú yào (kāfēi).",
+      "spanish": "(Yo) quiero (café). / (Yo) no quiero (café)."
+    },
+    {
+      "hanzi": "我要茶。",
+      "pinyin": "Wǒ yào chá.",
+      "spanish": "Quiero té."
+    },
+    {
+      "hanzi": "我还有两个姐姐。",
+      "pinyin": "Wǒ hái yǒu liǎng ge jiějie.",
+      "spanish": "También tengo dos hermanas mayores."
+    },
+    {
+      "hanzi": "我送他一个生日蛋糕。",
+      "pinyin": "Wǒ sòng tā yí ge shēngrì dàngāo.",
+      "spanish": "Le regalo un pastel de cumpleaños."
+    },
+    {
+      "hanzi": "我送她一个生日蛋糕。",
+      "pinyin": "Wǒ sòng tā yí ge shēngrì dàngāo.",
+      "spanish": "Le regalo a ella un pastel de cumpleaños."
+    },
+    {
+      "hanzi": "手",
+      "pinyin": "shǒu",
+      "spanish": "mano"
+    },
+    {
+      "hanzi": "手机",
+      "pinyin": "shǒujī",
+      "spanish": "teléfono celular"
+    },
+    {
+      "hanzi": "打球",
+      "pinyin": "dǎ qiú",
+      "spanish": "jugar a la pelota"
+    },
+    {
+      "hanzi": "找",
+      "pinyin": "zhǎo",
+      "spanish": "buscar"
+    },
+    {
+      "hanzi": "披萨",
+      "pinyin": "pīsà",
+      "spanish": "pizza"
+    },
+    {
+      "hanzi": "操场",
+      "pinyin": "cāochǎng",
+      "spanish": "campo deportivo"
+    },
+    {
+      "hanzi": "教",
+      "pinyin": "jiāo",
+      "spanish": "enseñar"
+    },
+    {
+      "hanzi": "教学",
+      "pinyin": "jiàoxué",
+      "spanish": "enseñanza y aprendizaje"
+    },
+    {
+      "hanzi": "教学楼",
+      "pinyin": "jiàoxuélóu",
+      "spanish": "edificio de aulas"
+    },
+    {
+      "hanzi": "教学楼在哪儿？",
+      "pinyin": "Jiàoxuélóu zài nǎr?",
+      "spanish": "¿Dónde está el edificio de aulas?"
+    },
+    {
+      "hanzi": "数学",
+      "pinyin": "shùxué",
+      "spanish": "matemáticas"
+    },
+    {
+      "hanzi": "文化",
+      "pinyin": "wénhuà",
+      "spanish": "cultura"
+    },
+    {
+      "hanzi": "文学",
+      "pinyin": "wénxué",
+      "spanish": "literatura"
+    },
+    {
+      "hanzi": "新",
+      "pinyin": "xīn",
+      "spanish": "nuevo"
+    },
+    {
+      "hanzi": "方位词",
+      "pinyin": "fāngwèicí",
+      "spanish": "palabras de ubicación"
+    },
+    {
+      "hanzi": "方言",
+      "pinyin": "fāngyán",
+      "spanish": "dialecto; variedad regional de una lengua"
+    },
+    {
+      "hanzi": "旁边",
+      "pinyin": "pángbiān",
+      "spanish": "lado; al lado de"
+    },
+    {
+      "hanzi": "日",
+      "pinyin": "rì",
+      "spanish": "día"
+    },
+    {
+      "hanzi": "日字旁",
+      "pinyin": "rìzìpáng",
+      "spanish": "radical de sol"
+    },
+    {
+      "hanzi": "日本",
+      "pinyin": "Rìběn",
+      "spanish": "Japón"
+    },
+    {
+      "hanzi": "日语",
+      "pinyin": "Rìyǔ",
+      "spanish": "japonés"
+    },
+    {
+      "hanzi": "早",
+      "pinyin": "zǎo",
+      "spanish": "temprano"
+    },
+    {
+      "hanzi": "早上",
+      "pinyin": "zǎoshang",
+      "spanish": "por la mañana; temprano"
+    },
+    {
+      "hanzi": "早上好",
+      "pinyin": "zǎo shàng hǎo",
+      "spanish": "Buenos días"
+    },
+    {
+      "hanzi": "早饭",
+      "pinyin": "zǎofàn",
+      "spanish": "desayuno"
+    },
+    {
+      "hanzi": "时",
+      "pinyin": "shí",
+      "spanish": "tiempo"
+    },
+    {
+      "hanzi": "时间",
+      "pinyin": "shíjiān",
+      "spanish": "tiempo"
+    },
+    {
+      "hanzi": "明",
+      "pinyin": "míng",
+      "spanish": "brillante"
+    },
+    {
+      "hanzi": "明天",
+      "pinyin": "míngtiān",
+      "spanish": "mañana"
+    },
+    {
+      "hanzi": "明天上午",
+      "pinyin": "Míngtiān shàngwǔ",
+      "spanish": "mañana por la mañana"
+    },
+    {
+      "hanzi": "明天十月三十一号。",
+      "pinyin": "Míngtiān shí yuè sānshíyī hào.",
+      "spanish": "Mañana es el treinta y uno de octubre."
+    },
+    {
+      "hanzi": "明天晚上",
+      "pinyin": "Míngtiān wǎnshang",
+      "spanish": "mañana por la noche"
+    },
+    {
+      "hanzi": "明年",
+      "pinyin": "míngnián",
+      "spanish": "el año próximo; el año que viene"
+    },
+    {
+      "hanzi": "星期",
+      "pinyin": "xīngqī",
+      "spanish": "semana"
+    },
+    {
+      "hanzi": "星期一",
+      "pinyin": "xīngqīyī",
+      "spanish": "lunes"
+    },
+    {
+      "hanzi": "星期三",
+      "pinyin": "xīngqīsān",
+      "spanish": "miércoles"
+    },
+    {
+      "hanzi": "星期二",
+      "pinyin": "xīngqīèr",
+      "spanish": "martes"
+    },
+    {
+      "hanzi": "星期五",
+      "pinyin": "xīngqīwǔ",
+      "spanish": "viernes"
+    },
+    {
+      "hanzi": "星期六",
+      "pinyin": "xīngqīliù",
+      "spanish": "sábado"
+    },
+    {
+      "hanzi": "星期四",
+      "pinyin": "xīngqīsì",
+      "spanish": "jueves"
+    },
+    {
+      "hanzi": "星期天",
+      "pinyin": "xīngqītiān",
+      "spanish": "domingo"
+    },
+    {
+      "hanzi": "星期日",
+      "pinyin": "xīngqīrì",
+      "spanish": "domingo"
+    },
+    {
+      "hanzi": "昨天",
+      "pinyin": "zuótiān",
+      "spanish": "ayer"
+    },
+    {
+      "hanzi": "是",
+      "pinyin": "shì",
+      "spanish": "ser; es; son"
+    },
+    {
+      "hanzi": "晚",
+      "pinyin": "wǎn",
+      "spanish": "tarde"
+    },
+    {
+      "hanzi": "晚上",
+      "pinyin": "wǎnshang",
+      "spanish": "noche"
+    },
+    {
+      "hanzi": "晚上好",
+      "pinyin": "wǎnshang hǎo",
+      "spanish": "Buenas noches"
+    },
+    {
+      "hanzi": "晚安",
+      "pinyin": "wǎn’ān",
+      "spanish": "buenas noches; saludo de despedida antes de dormir"
+    },
+    {
+      "hanzi": "晚饭",
+      "pinyin": "wǎnfàn",
+      "spanish": "cena"
+    },
+    {
+      "hanzi": "普通话",
+      "pinyin": "pǔtōnghuà",
+      "spanish": "mandarín estándar"
+    },
+    {
+      "hanzi": "最近",
+      "pinyin": "zuìjìn",
+      "spanish": "últimamente; recientemente"
+    },
+    {
+      "hanzi": "最近怎么样？",
+      "pinyin": "zuì jìn zěn me yàng?",
+      "spanish": "Cómo estás últimamente?"
+    },
+    {
+      "hanzi": "月",
+      "pinyin": "yuè",
+      "spanish": "mes"
+    },
+    {
+      "hanzi": "有",
+      "pinyin": "yǒu",
+      "spanish": "tener; haber"
+    },
+    {
+      "hanzi": "有名",
+      "pinyin": "yǒumíng",
+      "spanish": "famoso"
+    },
+    {
+      "hanzi": "有意思",
+      "pinyin": "yǒu yìsi",
+      "spanish": "interesante"
+    },
+    {
+      "hanzi": "有时间",
+      "pinyin": "Yǒu shíjiān",
+      "spanish": "tener tiempo"
+    },
+    {
+      "hanzi": "有没有时间",
+      "pinyin": "Yǒu méiyǒu shíjiān",
+      "spanish": "¿hay tiempo?; ¿tienes tiempo?"
+    },
+    {
+      "hanzi": "有活动",
+      "pinyin": "Yǒu huódòng",
+      "spanish": "tener una actividad"
+    },
+    {
+      "hanzi": "有点儿",
+      "pinyin": "yǒudiǎnr",
+      "spanish": "un poco"
+    },
+    {
+      "hanzi": "朋友",
+      "pinyin": "péngyou",
+      "spanish": "amigo/a"
+    },
+    {
+      "hanzi": "服务员",
+      "pinyin": "fúwùyuán",
+      "spanish": "camarero/a"
+    },
+    {
+      "hanzi": "本",
+      "pinyin": "běn",
+      "spanish": "clasificador de libros"
+    },
+    {
+      "hanzi": "李",
+      "pinyin": "Lǐ",
+      "spanish": "Li; apellido"
+    },
+    {
+      "hanzi": "条",
+      "pinyin": "tiáo",
+      "spanish": "clasificador para algo largo, estrecho o delgado; franja; pieza larga y estrecha"
+    },
+    {
+      "hanzi": "来",
+      "pinyin": "lái",
+      "spanish": "venir"
+    },
+    {
+      "hanzi": "来，咱们干杯！",
+      "pinyin": "Lái, zánmen gānbēi!",
+      "spanish": "¡Vamos, brindemos!"
+    },
+    {
+      "hanzi": "杯",
+      "pinyin": "bēi",
+      "spanish": "taza; vaso"
+    },
+    {
+      "hanzi": "构成的省略问句",
+      "pinyin": "gòuchéng de shěnglüè wènjù",
+      "spanish": "pregunta elíptica formada con…"
+    },
+    {
+      "hanzi": "林",
+      "pinyin": "Lín",
+      "spanish": "Lin; apellido"
+    },
+    {
+      "hanzi": "林娜",
+      "pinyin": "Lín Nà",
+      "spanish": "Lin Na"
+    },
+    {
+      "hanzi": "林娜在。",
+      "pinyin": "Lín Nà zài.",
+      "spanish": "Lin Na está aquí."
+    },
+    {
+      "hanzi": "林娜在。→ 林娜在吗？",
+      "pinyin": "Lín Nà zài. → Lín Nà zài ma?",
+      "spanish": "Lin Na está aquí. → ¿Está Lin Na aquí?"
+    },
+    {
+      "hanzi": "林娜在吗？",
+      "pinyin": "Lín Nà zài ma?",
+      "spanish": "¿Está Lin Na?"
+    },
+    {
+      "hanzi": "（林娜）很累。／（林娜）不累。",
+      "pinyin": "(Lín Nà) hěn lèi. / (Lín Nà) bú lèi.",
+      "spanish": "(Lin Na) está muy cansada. / (Lin Na) no está cansada."
+    },
+    {
+      "hanzi": "林强",
+      "pinyin": "Lín Qiáng",
+      "spanish": "Lin Qiang (hermano mayor de Lin Na)"
+    },
+    {
+      "hanzi": "果汁",
+      "pinyin": "guǒzhī",
+      "spanish": "jugo de fruta"
+    },
+    {
+      "hanzi": "校门",
+      "pinyin": "xiàomén",
+      "spanish": "puerta de la escuela; entrada del campus"
+    },
+    {
+      "hanzi": "梅西",
+      "pinyin": "Méixī",
+      "spanish": "Messi; nombre propio"
+    },
+    {
+      "hanzi": "楼",
+      "pinyin": "lóu",
+      "spanish": "edificio"
+    },
+    {
+      "hanzi": "橙汁",
+      "pinyin": "chéngzhī",
+      "spanish": "jugo de naranja"
+    },
+    {
+      "hanzi": "欢迎",
+      "pinyin": "huānyíng",
+      "spanish": "dar la bienvenida a"
+    },
+    {
+      "hanzi": "歌",
+      "pinyin": "gē",
+      "spanish": "canción"
+    },
+    {
+      "hanzi": "正反疑问句",
+      "pinyin": "zhèngfǎn yíwènjù",
+      "spanish": "pregunta afirmativo-negativa"
+    },
+    {
+      "hanzi": "死",
+      "pinyin": "sǐ",
+      "spanish": "morir; en 累死了, intensifica el cansancio"
+    },
+    {
+      "hanzi": "每天",
+      "pinyin": "měi tiān",
+      "spanish": "todos los días"
+    },
+    {
+      "hanzi": "比萨饼",
+      "pinyin": "bǐsàbǐng",
+      "spanish": "pizza"
+    },
+    {
+      "hanzi": "水",
+      "pinyin": "shuǐ",
+      "spanish": "agua"
+    },
+    {
+      "hanzi": "汉堡",
+      "pinyin": "hànbǎo",
+      "spanish": "hamburguesa"
+    },
+    {
+      "hanzi": "汉堡包",
+      "pinyin": "hànbǎobāo",
+      "spanish": "hamburguesa"
+    },
+    {
+      "hanzi": "汉字",
+      "pinyin": "Hànzì",
+      "spanish": "carácter chino"
+    },
+    {
+      "hanzi": "汉字知识",
+      "pinyin": "Hànzì zhīshi",
+      "spanish": "conocimientos sobre los caracteres chinos"
+    },
+    {
+      "hanzi": "汉西英",
+      "pinyin": "Hàn Xī Yīng",
+      "spanish": "chino, español e inglés"
+    },
+    {
+      "hanzi": "汉语",
+      "pinyin": "Hànyǔ",
+      "spanish": "lengua china; mandarín"
+    },
+    {
+      "hanzi": "汉语和西班牙语",
+      "pinyin": "Hànyǔ hé Xībānyáyǔ",
+      "spanish": "chino y español"
+    },
+    {
+      "hanzi": "汉语课",
+      "pinyin": "Hànyǔ kè",
+      "spanish": "Clase de chino."
+    },
+    {
+      "hanzi": "没",
+      "pinyin": "méi",
+      "spanish": "no (con 有)"
+    },
+    {
+      "hanzi": "没有",
+      "pinyin": "méiyǒu",
+      "spanish": "no tener; no haber"
+    },
+    {
+      "hanzi": "没有时间",
+      "pinyin": "Méiyǒu shíjiān",
+      "spanish": "no tener tiempo"
+    },
+    {
+      "hanzi": "法国",
+      "pinyin": "Fǎguó",
+      "spanish": "Francia"
+    },
+    {
+      "hanzi": "法语",
+      "pinyin": "Fǎyǔ",
+      "spanish": "francés"
+    },
+    {
+      "hanzi": "注释",
+      "pinyin": "zhùshì",
+      "spanish": "notas"
+    },
+    {
+      "hanzi": "泰国",
+      "pinyin": "Tàiguó",
+      "spanish": "Tailandia"
+    },
+    {
+      "hanzi": "活动",
+      "pinyin": "huódòng",
+      "spanish": "actividad; evento"
+    },
+    {
+      "hanzi": "清真餐厅",
+      "pinyin": "qīngzhēn cāntīng",
+      "spanish": "restaurante musulmán; restaurante halal"
+    },
+    {
+      "hanzi": "渴",
+      "pinyin": "kě",
+      "spanish": "sediento/a; tener sed"
+    },
+    {
+      "hanzi": "漂亮",
+      "pinyin": "piàoliang",
+      "spanish": "bonito/a"
+    },
+    {
+      "hanzi": "澳大利亚",
+      "pinyin": "Àodàlìyà",
+      "spanish": "Australia"
+    },
+    {
+      "hanzi": "炒饭",
+      "pinyin": "chǎofàn",
+      "spanish": "arroz frito"
+    },
+    {
+      "hanzi": "炸猪肉面包",
+      "pinyin": "Zhá zhūròu miànbāo",
+      "spanish": "pan con carne de cerdo frita"
+    },
+    {
+      "hanzi": "点",
+      "pinyin": "diǎn",
+      "spanish": "punto; hora (en el reloj)"
+    },
+    {
+      "hanzi": "点心",
+      "pinyin": "diǎnxin",
+      "spanish": "dim sum; bocadillo"
+    },
+    {
+      "hanzi": "点（钟）",
+      "pinyin": "diǎn (zhōng)",
+      "spanish": "en punto"
+    },
+    {
+      "hanzi": "热狗",
+      "pinyin": "règǒu",
+      "spanish": "hot dog"
+    },
+    {
+      "hanzi": "照片",
+      "pinyin": "zhàopiàn",
+      "spanish": "fotografía"
+    },
+    {
+      "hanzi": "爱",
+      "pinyin": "ài",
+      "spanish": "amar; querer mucho"
+    },
+    {
+      "hanzi": "爷爷",
+      "pinyin": "yéye",
+      "spanish": "abuelo paterno"
+    },
+    {
+      "hanzi": "爸爸",
+      "pinyin": "bàba",
+      "spanish": "papá; padre"
+    },
+    {
+      "hanzi": "牛",
+      "pinyin": "niú",
+      "spanish": "vaca; buey"
+    },
+    {
+      "hanzi": "牛奶",
+      "pinyin": "niúnǎi",
+      "spanish": "leche"
+    },
+    {
+      "hanzi": "物理",
+      "pinyin": "wùlǐ",
+      "spanish": "Física"
+    },
+    {
+      "hanzi": "特别",
+      "pinyin": "tèbié",
+      "spanish": "especialmente"
+    },
+    {
+      "hanzi": "狗",
+      "pinyin": "gǒu",
+      "spanish": "perro"
+    },
+    {
+      "hanzi": "猪",
+      "pinyin": "zhū",
+      "spanish": "cerdo"
+    },
+    {
+      "hanzi": "猫",
+      "pinyin": "māo",
+      "spanish": "gato"
+    },
+    {
+      "hanzi": "猴",
+      "pinyin": "hóu",
+      "spanish": "mono"
+    },
+    {
+      "hanzi": "王",
+      "pinyin": "Wáng",
+      "spanish": "Wang; apellido"
+    },
+    {
+      "hanzi": "王小云",
+      "pinyin": "Wáng Xiǎoyún",
+      "spanish": "Wang Xiaoyun"
+    },
+    {
+      "hanzi": "王小云学英语专业。马大为呢？（马大为学什么专业？）",
+      "pinyin": "Wáng Xiǎoyún xué Yīngyǔ zhuānyè. Mǎ Dàwéi ne? (Mǎ Dàwéi xué shénme zhuānyè?)",
+      "spanish": "Wang Xiaoyun estudia la especialidad de inglés. ¿Y Ma Dawei? (¿Qué especialidad estudia Ma Dawei?)"
+    },
+    {
+      "hanzi": "玛丽",
+      "pinyin": "Mǎlì",
+      "spanish": "Mali; nombre propio"
+    },
+    {
+      "hanzi": "现在",
+      "pinyin": "xiànzài",
+      "spanish": "ahora"
+    },
+    {
+      "hanzi": "现在几点？",
+      "pinyin": "Xiànzài jǐ diǎn?",
+      "spanish": "¿Qué hora es ahora?"
+    },
+    {
+      "hanzi": "班",
+      "pinyin": "bān",
+      "spanish": "clase"
+    },
+    {
+      "hanzi": "甜品",
+      "pinyin": "tiánpǐn",
+      "spanish": "postre; dulce"
+    },
+    {
+      "hanzi": "生日",
+      "pinyin": "shēngrì",
+      "spanish": "cumpleaños"
+    },
+    {
+      "hanzi": "生日快乐！",
+      "pinyin": "Shēngrì kuàilè!",
+      "spanish": "¡Feliz cumpleaños!"
+    },
+    {
+      "hanzi": "生日蛋糕",
+      "pinyin": "shēngrì dàngāo",
+      "spanish": "pastel de cumpleaños"
+    },
+    {
+      "hanzi": "生物",
+      "pinyin": "shēngwù",
+      "spanish": "Biología"
+    },
+    {
+      "hanzi": "用",
+      "pinyin": "yòng",
+      "spanish": "usar; utilizar"
+    },
+    {
+      "hanzi": "电影",
+      "pinyin": "diànyǐng",
+      "spanish": "película"
+    },
+    {
+      "hanzi": "电视",
+      "pinyin": "diànshì",
+      "spanish": "televisión; TV"
+    },
+    {
+      "hanzi": "男",
+      "pinyin": "nán",
+      "spanish": "masculino"
+    },
+    {
+      "hanzi": "男朋友",
+      "pinyin": "nánpéngyou",
+      "spanish": "novio"
+    },
+    {
+      "hanzi": "男生",
+      "pinyin": "nánshēng",
+      "spanish": "estudiante masculino"
+    },
+    {
+      "hanzi": "画画",
+      "pinyin": "huà huà",
+      "spanish": "dibujar; pintar"
+    },
+    {
+      "hanzi": "百",
+      "pinyin": "bǎi",
+      "spanish": "cien"
+    },
+    {
+      "hanzi": "的",
+      "pinyin": "de",
+      "spanish": "partícula posesiva/atributiva"
+    },
+    {
+      "hanzi": "的称数法",
+      "pinyin": "de chēngshùfǎ",
+      "spanish": "forma de contar de…"
+    },
+    {
+      "hanzi": "盒",
+      "pinyin": "hé",
+      "spanish": "caja"
+    },
+    {
+      "hanzi": "看",
+      "pinyin": "kàn",
+      "spanish": "mirar; ver"
+    },
+    {
+      "hanzi": "看书",
+      "pinyin": "kàn shū",
+      "spanish": "leer un libro; leer"
+    },
+    {
+      "hanzi": "看电影",
+      "pinyin": "Kàn diànyǐng",
+      "spanish": "ver una película"
+    },
+    {
+      "hanzi": "真",
+      "pinyin": "zhēn",
+      "spanish": "verdaderamente; verdadero"
+    },
+    {
+      "hanzi": "真不好意思。",
+      "pinyin": "Zhēn bù hǎoyìsi.",
+      "spanish": "Lo siento mucho."
+    },
+    {
+      "hanzi": "真可惜！",
+      "pinyin": "Zhēn kěxī!",
+      "spanish": "¡Qué lástima!"
+    },
+    {
+      "hanzi": "真漂亮！",
+      "pinyin": "Zhēn piàoliang!",
+      "spanish": "¡Qué bonito!"
+    },
+    {
+      "hanzi": "着急",
+      "pinyin": "zháojí",
+      "spanish": "preocupado; ansioso"
+    },
+    {
+      "hanzi": "睡觉",
+      "pinyin": "shuìjiào",
+      "spanish": "dormir; acostarse"
+    },
+    {
+      "hanzi": "知道",
+      "pinyin": "zhīdào",
+      "spanish": "saber"
+    },
+    {
+      "hanzi": "礼物",
+      "pinyin": "lǐwù",
+      "spanish": "regalo; obsequio"
+    },
+    {
+      "hanzi": "祝",
+      "pinyin": "zhù",
+      "spanish": "desear"
+    },
+    {
+      "hanzi": "祝你生日快乐！",
+      "pinyin": "Zhù nǐ shēngrì kuàilè!",
+      "spanish": "¡Te deseo un feliz cumpleaños!"
+    },
+    {
+      "hanzi": "秘鲁",
+      "pinyin": "Bìlǔ",
+      "spanish": "Perú"
+    },
+    {
+      "hanzi": "立刀旁",
+      "pinyin": "lìdāopáng",
+      "spanish": "radical lateral de cuchillo"
+    },
+    {
+      "hanzi": "等",
+      "pinyin": "děng",
+      "spanish": "esperar"
+    },
+    {
+      "hanzi": "等一下，你说什么？",
+      "pinyin": "Děng yíxià, nǐ shuō shénme?",
+      "spanish": "Espera un momento, ¿qué dices?"
+    },
+    {
+      "hanzi": "筷子",
+      "pinyin": "kuàizi",
+      "spanish": "palillos para comer"
+    },
+    {
+      "hanzi": "米饭",
+      "pinyin": "mǐfàn",
+      "spanish": "arroz cocido"
+    },
+    {
+      "hanzi": "米饭和面条",
+      "pinyin": "mǐfàn hé miàntiáo",
+      "spanish": "arroz y fideos"
+    },
+    {
+      "hanzi": "系",
+      "pinyin": "xì",
+      "spanish": "departamento universitario"
+    },
+    {
+      "hanzi": "累",
+      "pinyin": "lèi",
+      "spanish": "cansado; agotado"
+    },
+    {
+      "hanzi": "约会",
+      "pinyin": "yuēhuì",
+      "spanish": "proponer una cita"
+    },
+    {
+      "hanzi": "约翰",
+      "pinyin": "Yuēhàn",
+      "spanish": "John"
+    },
+    {
+      "hanzi": "练习",
+      "pinyin": "liànxí",
+      "spanish": "practicar/ejercicio"
+    },
+    {
+      "hanzi": "练习口语",
+      "pinyin": "liànxí kǒuyǔ",
+      "spanish": "practicar oral"
+    },
+    {
+      "hanzi": "经济",
+      "pinyin": "jīngjì",
+      "spanish": "ciencias económicas; economía"
+    },
+    {
+      "hanzi": "经理",
+      "pinyin": "jīnglǐ",
+      "spanish": "gerente"
+    },
+    {
+      "hanzi": "给",
+      "pinyin": "gěi",
+      "spanish": "a; para"
+    },
+    {
+      "hanzi": "综合汉语",
+      "pinyin": "zōnghé Hànyǔ",
+      "spanish": "chino integral"
+    },
+    {
+      "hanzi": "羊",
+      "pinyin": "yáng",
+      "spanish": "oveja; cabra"
+    },
+    {
+      "hanzi": "美国",
+      "pinyin": "Měiguó",
+      "spanish": "Estados Unidos"
+    },
+    {
+      "hanzi": "美国人",
+      "pinyin": "Měiguó rén",
+      "spanish": "estadounidense"
+    },
+    {
+      "hanzi": "翻译",
+      "pinyin": "fānyì",
+      "spanish": "traducción; traducir"
+    },
+    {
+      "hanzi": "老",
+      "pinyin": "lǎo",
+      "spanish": "viejo"
+    },
+    {
+      "hanzi": "老人",
+      "pinyin": "lǎorén",
+      "spanish": "persona mayor"
+    },
+    {
+      "hanzi": "老师",
+      "pinyin": "lǎoshī",
+      "spanish": "profesor/a"
+    },
+    {
+      "hanzi": "老朋友",
+      "pinyin": "lǎo péngyou",
+      "spanish": "amigo de hace mucho tiempo"
+    },
+    {
+      "hanzi": "老虎",
+      "pinyin": "lǎohǔ",
+      "spanish": "tigre"
+    },
+    {
+      "hanzi": "老鼠",
+      "pinyin": "lǎoshǔ",
+      "spanish": "rata; ratón"
+    },
+    {
+      "hanzi": "聚会",
+      "pinyin": "jùhuì",
+      "spanish": "reunión; fiesta"
+    },
+    {
+      "hanzi": "肉夹馍",
+      "pinyin": "ròujiāmó",
+      "spanish": "pan chino relleno de carne"
+    },
+    {
+      "hanzi": "胡同",
+      "pinyin": "hútòng",
+      "spanish": "hutong; callejón"
+    },
+    {
+      "hanzi": "舞",
+      "pinyin": "wǔ",
+      "spanish": "danza"
+    },
+    {
+      "hanzi": "英国",
+      "pinyin": "Yīngguó",
+      "spanish": "Reino Unido; Inglaterra"
+    },
+    {
+      "hanzi": "英语",
+      "pinyin": "Yīngyǔ",
+      "spanish": "idioma inglés"
+    },
+    {
+      "hanzi": "英语课",
+      "pinyin": "Yīngyǔ kè",
+      "spanish": "Clase de inglés."
+    },
+    {
+      "hanzi": "苹果",
+      "pinyin": "píngguǒ",
+      "spanish": "manzana"
+    },
+    {
+      "hanzi": "茶",
+      "pinyin": "chá",
+      "spanish": "té"
+    },
+    {
+      "hanzi": "虎",
+      "pinyin": "hǔ",
+      "spanish": "tigre (signo del zodiaco)"
+    },
+    {
+      "hanzi": "蛇",
+      "pinyin": "shé",
+      "spanish": "serpiente"
+    },
+    {
+      "hanzi": "蛋挞",
+      "pinyin": "dàntà",
+      "spanish": "tartaletas de huevo"
+    },
+    {
+      "hanzi": "蛋糕",
+      "pinyin": "dàngāo",
+      "spanish": "pastel"
+    },
+    {
+      "hanzi": "行",
+      "pinyin": "xíng",
+      "spanish": "estar bien"
+    },
+    {
+      "hanzi": "街",
+      "pinyin": "jiē",
+      "spanish": "calle"
+    },
+    {
+      "hanzi": "街道",
+      "pinyin": "jiēdào",
+      "spanish": "calle"
+    },
+    {
+      "hanzi": "表时间的词语做状语",
+      "pinyin": "biǎo shíjiān de cíyǔ zuò zhuàngyǔ",
+      "spanish": "expresiones de tiempo como complemento circunstancial"
+    },
+    {
+      "hanzi": "西",
+      "pinyin": "xī",
+      "spanish": "oeste"
+    },
+    {
+      "hanzi": "西安",
+      "pinyin": "Xī’ān",
+      "spanish": "Xi'an"
+    },
+    {
+      "hanzi": "西班牙",
+      "pinyin": "Xībānyá",
+      "spanish": "España"
+    },
+    {
+      "hanzi": "西班牙语",
+      "pinyin": "Xībānyáyǔ",
+      "spanish": "español"
+    },
+    {
+      "hanzi": "西边",
+      "pinyin": "xībian",
+      "spanish": "oeste (lado)"
+    },
+    {
+      "hanzi": "要",
+      "pinyin": "yào",
+      "spanish": "querer; pedir"
+    },
+    {
+      "hanzi": "觉得",
+      "pinyin": "jué de",
+      "spanish": "sentir"
+    },
+    {
+      "hanzi": "认识",
+      "pinyin": "rènshi",
+      "spanish": "conocer"
+    },
+    {
+      "hanzi": "认识你很高兴。",
+      "pinyin": "Rènshi nǐ hěn gāoxìng.",
+      "spanish": "Encantado/a de conocerte."
+    },
+    {
+      "hanzi": "认识你我也很高兴。",
+      "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng.",
+      "spanish": "También estoy encantado/a de conocerte."
+    },
+    {
+      "hanzi": "记者",
+      "pinyin": "jìzhě",
+      "spanish": "reportero/a"
+    },
+    {
+      "hanzi": "语文",
+      "pinyin": "yǔwén",
+      "spanish": "lengua y literatura"
+    },
+    {
+      "hanzi": "语法",
+      "pinyin": "yǔfǎ",
+      "spanish": "gramática"
+    },
+    {
+      "hanzi": "语法课",
+      "pinyin": "Yǔfǎ kè",
+      "spanish": "clase de gramática"
+    },
+    {
+      "hanzi": "语言",
+      "pinyin": "yǔyán",
+      "spanish": "idioma"
+    },
+    {
+      "hanzi": "说",
+      "pinyin": "shuō",
+      "spanish": "decir; hablar"
+    },
+    {
+      "hanzi": "说汉语",
+      "pinyin": "Shuō Hànyǔ",
+      "spanish": "hablar chino"
+    },
+    {
+      "hanzi": "请",
+      "pinyin": "qǐng",
+      "spanish": "por favor; solicitar; invitar"
+    },
+    {
+      "hanzi": "请坐。",
+      "pinyin": "Qǐng zuò.",
+      "spanish": "Siéntate, por favor."
+    },
+    {
+      "hanzi": "请进。",
+      "pinyin": "Qǐng jìn.",
+      "spanish": "Entra, por favor."
+    },
+    {
+      "hanzi": "请问",
+      "pinyin": "qǐngwèn",
+      "spanish": "¿podría preguntar?; disculpe"
+    },
+    {
+      "hanzi": "请问，你叫什么名字？",
+      "pinyin": "Qǐngwèn, nǐ jiào shénme míngzi?",
+      "spanish": "Disculpa, ¿cómo te llamas?"
+    },
+    {
+      "hanzi": "请问，您贵姓？",
+      "pinyin": "Qǐngwèn, nín guìxìng?",
+      "spanish": "Disculpe, ¿cuál es su apellido?"
+    },
+    {
+      "hanzi": "请问食堂在哪儿？",
+      "pinyin": "Qǐngwèn shítáng zài nǎr?",
+      "spanish": "Disculpa, ¿dónde está el comedor?"
+    },
+    {
+      "hanzi": "课",
+      "pinyin": "kè",
+      "spanish": "clase; lección"
+    },
+    {
+      "hanzi": "谁",
+      "pinyin": "shéi",
+      "spanish": "quién"
+    },
+    {
+      "hanzi": "谈学习",
+      "pinyin": "tán xuéxí",
+      "spanish": "hablar sobre los estudios"
+    },
+    {
+      "hanzi": "谢谢。",
+      "pinyin": "Xièxie.",
+      "spanish": "Gracias."
+    },
+    {
+      "hanzi": "豆浆",
+      "pinyin": "dòujiāng",
+      "spanish": "leche de soja"
+    },
+    {
+      "hanzi": "贝贝",
+      "pinyin": "Bèibei",
+      "spanish": "Beibei (nombre del perro)"
+    },
+    {
+      "hanzi": "贝贝是我们家的狗。",
+      "pinyin": "Bèibei shì wǒmen jiā de gǒu.",
+      "spanish": "Beibei es el perro de nuestra familia."
+    },
+    {
+      "hanzi": "贵",
+      "pinyin": "guì",
+      "spanish": "honorable; caro"
+    },
+    {
+      "hanzi": "贵姓",
+      "pinyin": "guìxìng",
+      "spanish": "¿cuál es su apellido?"
+    },
+    {
+      "hanzi": "走",
+      "pinyin": "zǒu",
+      "spanish": "ir; marcharse"
+    },
+    {
+      "hanzi": "起床",
+      "pinyin": "qǐchuáng",
+      "spanish": "levantarse"
+    },
+    {
+      "hanzi": "超市",
+      "pinyin": "chāoshì",
+      "spanish": "supermercado"
+    },
+    {
+      "hanzi": "跑步",
+      "pinyin": "pǎobù",
+      "spanish": "correr; trotar"
+    },
+    {
+      "hanzi": "跟",
+      "pinyin": "gēn",
+      "spanish": "con"
+    },
+    {
+      "hanzi": "路",
+      "pinyin": "lù",
+      "spanish": "carretera; camino; calle"
+    },
+    {
+      "hanzi": "跳",
+      "pinyin": "tiào",
+      "spanish": "saltar"
+    },
+    {
+      "hanzi": "跳舞",
+      "pinyin": "tiàowǔ",
+      "spanish": "bailar"
+    },
+    {
+      "hanzi": "车牌号",
+      "pinyin": "chēpáihào",
+      "spanish": "número de placa de matrícula"
+    },
+    {
+      "hanzi": "边",
+      "pinyin": "bian",
+      "spanish": "lado"
+    },
+    {
+      "hanzi": "过",
+      "pinyin": "guò",
+      "spanish": "cruzar; pasar"
+    },
+    {
+      "hanzi": "运动",
+      "pinyin": "yùndòng",
+      "spanish": "deportes; ejercicio/hacer ejercicio físico"
+    },
+    {
+      "hanzi": "还",
+      "pinyin": "hái",
+      "spanish": "además; también"
+    },
+    {
+      "hanzi": "还是",
+      "pinyin": "háishi",
+      "spanish": "o (en una pregunta de elección)"
+    },
+    {
+      "hanzi": "还行",
+      "pinyin": "hái xíng",
+      "spanish": "no está mal"
+    },
+    {
+      "hanzi": "这",
+      "pinyin": "zhè",
+      "spanish": "esto"
+    },
+    {
+      "hanzi": "这个",
+      "pinyin": "zhège",
+      "spanish": "este / esta"
+    },
+    {
+      "hanzi": "这个星期日几号？",
+      "pinyin": "Zhège xīngqīrì jǐ hào?",
+      "spanish": "¿Qué fecha es este domingo?"
+    },
+    {
+      "hanzi": "这儿",
+      "pinyin": "zhèr",
+      "spanish": "aquí"
+    },
+    {
+      "hanzi": "这就是寿面。",
+      "pinyin": "Zhè jiù shì shòumiàn.",
+      "spanish": "Estos son precisamente los fideos de la longevidad."
+    },
+    {
+      "hanzi": "这张照片",
+      "pinyin": "Zhè zhāng zhàopiàn",
+      "spanish": "Esta foto."
+    },
+    {
+      "hanzi": "这张照片真漂亮。",
+      "pinyin": "Zhè zhāng zhàopiàn zhēn piàoliang.",
+      "spanish": "Esta foto es realmente bonita."
+    },
+    {
+      "hanzi": "这是",
+      "pinyin": "zhè shì",
+      "spanish": "este es; esta es; esto es"
+    },
+    {
+      "hanzi": "这是包子，那是饺子。",
+      "pinyin": "Zhè shì bāozi, nà shì jiǎozi.",
+      "spanish": "Esto es baozi y aquello es jiaozi."
+    },
+    {
+      "hanzi": "这是我家。",
+      "pinyin": "Zhè shì wǒ jiā.",
+      "spanish": "Esta es mi casa."
+    },
+    {
+      "hanzi": "这是我家的照片。",
+      "pinyin": "Zhè shì wǒ jiā de zhàopiàn.",
+      "spanish": "Esta es una foto de mi familia."
+    },
+    {
+      "hanzi": "这是我朋友。",
+      "pinyin": "Zhè shì wǒ péngyou.",
+      "spanish": "Este es mi amigo."
+    },
+    {
+      "hanzi": "这是我朋友，他刚到北京。",
+      "pinyin": "Zhè shì wǒ péngyou, tā gāng dào Běijīng.",
+      "spanish": "Este es mi amigo; acaba de llegar a Pekín."
+    },
+    {
+      "hanzi": "进",
+      "pinyin": "jìn",
+      "spanish": "entrar"
+    },
+    {
+      "hanzi": "送",
+      "pinyin": "sòng",
+      "spanish": "obsequiar; entregar"
+    },
+    {
+      "hanzi": "那",
+      "pinyin": "nà",
+      "spanish": "ese; esa; aquello"
+    },
+    {
+      "hanzi": "那儿",
+      "pinyin": "nàr",
+      "spanish": "allí"
+    },
+    {
+      "hanzi": "那是",
+      "pinyin": "nà shì",
+      "spanish": "ese es; esa es; aquello es"
+    },
+    {
+      "hanzi": "那是什么？",
+      "pinyin": "Nà shì shénme?",
+      "spanish": "¿Qué es eso?"
+    },
+    {
+      "hanzi": "那是饺子。",
+      "pinyin": "Nà shì jiǎozi.",
+      "spanish": "Eso es jiaozi."
+    },
+    {
+      "hanzi": "部",
+      "pinyin": "bù",
+      "spanish": "clasificador de películas y obras"
+    },
+    {
+      "hanzi": "都",
+      "pinyin": "dōu",
+      "spanish": "todos; ambos"
+    },
+    {
+      "hanzi": "酒",
+      "pinyin": "jiǔ",
+      "spanish": "bebida alcohólica"
+    },
+    {
+      "hanzi": "酒吧",
+      "pinyin": "jiǔbā",
+      "spanish": "bar"
+    },
+    {
+      "hanzi": "里",
+      "pinyin": "lǐ",
+      "spanish": "en; dentro de"
+    },
+    {
+      "hanzi": "里卡多帕尔玛大学",
+      "pinyin": "lǐ kǎ duō pà ěr mǎ dà xué",
+      "spanish": "Universidad Ricardo Palma"
+    },
+    {
+      "hanzi": "里卡多帕尔玛大学孔子学院",
+      "pinyin": "lǐ kǎ duō pà ěr mǎ dà xué kǒng zǐ xué yuàn",
+      "spanish": "Instituto Confucio de la Universidad Ricardo Palma"
+    },
+    {
+      "hanzi": "里边",
+      "pinyin": "lǐbian",
+      "spanish": "en; dentro de"
+    },
+    {
+      "hanzi": "钟",
+      "pinyin": "zhōng",
+      "spanish": "reloj; hora"
+    },
+    {
+      "hanzi": "钟点读法",
+      "pinyin": "zhōngdiǎn dúfǎ",
+      "spanish": "cómo decir la hora"
+    },
+    {
+      "hanzi": "钢琴",
+      "pinyin": "gāngqín",
+      "spanish": "piano"
+    },
+    {
+      "hanzi": "钢琴课",
+      "pinyin": "gāngqín kè",
+      "spanish": "Clase de piano."
+    },
+    {
+      "hanzi": "钱",
+      "pinyin": "qián",
+      "spanish": "dinero"
+    },
+    {
+      "hanzi": "银行",
+      "pinyin": "yínháng",
+      "spanish": "banco"
+    },
+    {
+      "hanzi": "银行在图书馆东边。",
+      "pinyin": "Yínháng zài túshūguǎn dōngbian.",
+      "spanish": "El banco está al este de la biblioteca."
+    },
+    {
+      "hanzi": "门",
+      "pinyin": "mén",
+      "spanish": "puerta; portón; entrada"
+    },
+    {
+      "hanzi": "问",
+      "pinyin": "wèn",
+      "spanish": "preguntar"
+    },
+    {
+      "hanzi": "问专业",
+      "pinyin": "wèn zhuānyè",
+      "spanish": "preguntar la especialidad"
+    },
+    {
+      "hanzi": "问时间",
+      "pinyin": "wèn shíjiān",
+      "spanish": "preguntar la hora"
+    },
+    {
+      "hanzi": "阳台",
+      "pinyin": "yángtái",
+      "spanish": "balcón"
+    },
+    {
+      "hanzi": "阿根廷",
+      "pinyin": "Āgēntíng",
+      "spanish": "Argentina"
+    },
+    {
+      "hanzi": "陆",
+      "pinyin": "Lù",
+      "spanish": "Lu; apellido"
+    },
+    {
+      "hanzi": "陆雨平",
+      "pinyin": "Lù Yǔpíng",
+      "spanish": "Lu Yuping"
+    },
+    {
+      "hanzi": "陈",
+      "pinyin": "Chén",
+      "spanish": "Chen (apellido)"
+    },
+    {
+      "hanzi": "陈明",
+      "pinyin": "Chén Míng",
+      "spanish": "Chen Ming (nombre propio)"
+    },
+    {
+      "hanzi": "陈老师",
+      "pinyin": "Chén lǎoshī",
+      "spanish": "el profesor Chen"
+    },
+    {
+      "hanzi": "陈老师教我们语法。",
+      "pinyin": "Chén lǎoshī jiāo wǒmen yǔfǎ.",
+      "spanish": "El profesor Chen nos enseña gramática."
+    },
+    {
+      "hanzi": "陈老师，早上好！",
+      "pinyin": "Chén lǎoshī, zǎoshang hǎo!",
+      "spanish": "¡Profesor Chen, buenos días!"
+    },
+    {
+      "hanzi": "难",
+      "pinyin": "nán",
+      "spanish": "difícil"
+    },
+    {
+      "hanzi": "零",
+      "pinyin": "líng",
+      "spanish": "cero"
+    },
+    {
+      "hanzi": "面包",
+      "pinyin": "miànbāo",
+      "spanish": "pan"
+    },
+    {
+      "hanzi": "面条",
+      "pinyin": "miàntiáo",
+      "spanish": "fideos"
+    },
+    {
+      "hanzi": "面条儿",
+      "pinyin": "miàntiáor",
+      "spanish": "tallarines"
+    },
+    {
+      "hanzi": "韩国",
+      "pinyin": "Hánguó",
+      "spanish": "Corea del Sur"
+    },
+    {
+      "hanzi": "韩语",
+      "pinyin": "Hányǔ",
+      "spanish": "coreano"
+    },
+    {
+      "hanzi": "音乐会",
+      "pinyin": "yīnyuèhuì",
+      "spanish": "concierto"
+    },
+    {
+      "hanzi": "食堂",
+      "pinyin": "shítáng",
+      "spanish": "comedor"
+    },
+    {
+      "hanzi": "食堂在校门右边。",
+      "pinyin": "Shítáng zài xiàomén yòubian.",
+      "spanish": "El comedor está a la derecha de la entrada del campus."
+    },
+    {
+      "hanzi": "食堂旁边是办公楼。",
+      "pinyin": "Shítáng pángbiān shì bàngōnglóu.",
+      "spanish": "Al lado del comedor está el edificio de oficinas."
+    },
+    {
+      "hanzi": "餐厅",
+      "pinyin": "cāntīng",
+      "spanish": "restaurante; comedor"
+    },
+    {
+      "hanzi": "饭",
+      "pinyin": "fàn",
+      "spanish": "arroz cocido; comida"
+    },
+    {
+      "hanzi": "饭馆",
+      "pinyin": "fànguǎn",
+      "spanish": "restaurante"
+    },
+    {
+      "hanzi": "饭馆后边有一条胡同。",
+      "pinyin": "Fànguǎn hòubian yǒu yì tiáo hútòng.",
+      "spanish": "Detrás del restaurante hay un callejón."
+    },
+    {
+      "hanzi": "饭馆后边有一条胡同，对吗？",
+      "pinyin": "Fànguǎn hòubian yǒu yì tiáo hútòng, duì ma?",
+      "spanish": "Detrás del restaurante hay un callejón, ¿verdad?"
+    },
+    {
+      "hanzi": "饮料",
+      "pinyin": "yǐnliào",
+      "spanish": "bebida"
+    },
+    {
+      "hanzi": "饺子",
+      "pinyin": "jiǎozi",
+      "spanish": "empanadilla china hervida"
+    },
+    {
+      "hanzi": "饿",
+      "pinyin": "è",
+      "spanish": "hambriento/a; tener hambre"
+    },
+    {
+      "hanzi": "马",
+      "pinyin": "mǎ",
+      "spanish": "caballo"
+    },
+    {
+      "hanzi": "马丽",
+      "pinyin": "Mǎ Lì",
+      "spanish": "Mary"
+    },
+    {
+      "hanzi": "马云",
+      "pinyin": "Mǎ Yún",
+      "spanish": "Ma Yun; nombre propio"
+    },
+    {
+      "hanzi": "马大为",
+      "pinyin": "Mǎ Dàwéi",
+      "spanish": "Ma Dawei"
+    },
+    {
+      "hanzi": "马路",
+      "pinyin": "mǎlù",
+      "spanish": "carretera; calle"
+    },
+    {
+      "hanzi": "马马虎虎",
+      "pinyin": "mǎmǎhūhū",
+      "spanish": "más o menos; regular"
+    },
+    {
+      "hanzi": "高兴",
+      "pinyin": "gāoxìng",
+      "spanish": "contento; encantado"
+    },
+    {
+      "hanzi": "鸡",
+      "pinyin": "jī",
+      "spanish": "gallo"
+    },
+    {
+      "hanzi": "鼠",
+      "pinyin": "shǔ",
+      "spanish": "rata (signo del zodiaco)"
+    },
+    {
+      "hanzi": "龙",
+      "pinyin": "lóng",
+      "spanish": "dragón"
+    }
+  ],
+  "wordKeys": [
+    "一",
+    "一下",
+    "一个",
+    "一九八五年",
+    "一会儿",
+    "一共",
+    "一月",
+    "一条",
+    "一点儿",
+    "一起",
+    "丁力波",
+    "七",
+    "七十五",
+    "七月",
+    "三",
+    "三十",
+    "三十一号",
+    "三月",
+    "上",
+    "上个月",
+    "上午",
+    "上午好",
+    "上星期一",
+    "上海",
+    "上海人",
+    "上课",
+    "上边",
+    "下",
+    "下个月",
+    "下午",
+    "下午好",
+    "下星期一",
+    "下边",
+    "不",
+    "不好意思",
+    "不客气",
+    "不是",
+    "专业",
+    "东",
+    "东边",
+    "两",
+    "两个人",
+    "两口人",
+    "个",
+    "中午",
+    "中国",
+    "中学",
+    "中文",
+    "主意",
+    "九",
+    "九月",
+    "也",
+    "书",
+    "书房",
+    "了",
+    "事",
+    "事儿",
+    "二",
+    "二〇二〇年",
+    "二十",
+    "二十三号",
+    "二十五",
+    "二十五日",
+    "二月",
+    "五",
+    "五号",
+    "五月",
+    "人",
+    "什么",
+    "什么工作",
+    "今天",
+    "今天晚上",
+    "今年",
+    "介绍",
+    "他",
+    "他们",
+    "们",
+    "会",
+    "会说",
+    "体育",
+    "体育馆",
+    "作业",
+    "你",
+    "你们",
+    "你们好",
+    "你哥哥",
+    "你好",
+    "你家",
+    "你爸爸",
+    "你的生日",
+    "俄罗斯",
+    "俄罗斯人",
+    "俄语",
+    "做",
+    "做作业",
+    "做饭",
+    "儿子",
+    "先",
+    "先生",
+    "兔",
+    "八",
+    "八卦",
+    "八月",
+    "八点二十五",
+    "六",
+    "六个人",
+    "六月",
+    "再",
+    "再见",
+    "写",
+    "写作",
+    "写汉字",
+    "几",
+    "几口人",
+    "几号",
+    "几岁",
+    "几月",
+    "出生",
+    "刂",
+    "分",
+    "刚",
+    "刚到",
+    "别",
+    "到",
+    "刻",
+    "前",
+    "前天",
+    "前年",
+    "前边",
+    "力波",
+    "办公",
+    "办公楼",
+    "功夫熊猫",
+    "加拿大",
+    "动词谓语句",
+    "包子",
+    "化学",
+    "北",
+    "北京",
+    "北京人",
+    "北京烤鸭",
+    "北边",
+    "医生",
+    "十",
+    "十一月",
+    "十二月",
+    "十月",
+    "千",
+    "午饭",
+    "半",
+    "南",
+    "南边",
+    "卡片",
+    "卧室",
+    "卫生间",
+    "印加可乐",
+    "印度",
+    "历史",
+    "厉害",
+    "厕所",
+    "厨房",
+    "去",
+    "去年",
+    "参加",
+    "口",
+    "口语",
+    "口语考试",
+    "只",
+    "叫",
+    "可乐",
+    "可以",
+    "可惜",
+    "可是",
+    "可爱",
+    "右",
+    "右边",
+    "号",
+    "吃",
+    "吃饭",
+    "同学",
+    "名字",
+    "名片",
+    "后",
+    "后天",
+    "后年",
+    "后边",
+    "吗",
+    "吧",
+    "听",
+    "听力",
+    "听说",
+    "呢",
+    "周末",
+    "和",
+    "咖啡",
+    "咖啡厅",
+    "咱们",
+    "哥哥",
+    "哪",
+    "哪一个",
+    "哪儿",
+    "哪国人",
+    "唱",
+    "唱歌",
+    "商人",
+    "啊",
+    "喜欢",
+    "喝",
+    "四",
+    "四口人",
+    "四月",
+    "回",
+    "回国",
+    "回学校",
+    "回家",
+    "困",
+    "国",
+    "图书馆",
+    "在",
+    "在中国",
+    "在北京",
+    "地图",
+    "地方",
+    "地理",
+    "坐",
+    "埃及",
+    "墨西哥",
+    "外公",
+    "外国",
+    "外国人",
+    "外婆",
+    "外语",
+    "外边",
+    "多",
+    "多大",
+    "多少",
+    "大",
+    "大为",
+    "大卫",
+    "大学",
+    "大家",
+    "天",
+    "太",
+    "太太",
+    "女",
+    "女儿",
+    "女朋友",
+    "女生",
+    "奶奶",
+    "她",
+    "她们",
+    "好",
+    "好吃",
+    "好吗",
+    "妈妈",
+    "妹妹",
+    "姐姐",
+    "姓",
+    "姚明",
+    "姥姥",
+    "姥爷",
+    "孔子学院",
+    "学",
+    "学习",
+    "学校",
+    "学生",
+    "学院",
+    "孩子",
+    "孩子们",
+    "宋",
+    "宋华",
+    "宠物",
+    "客厅",
+    "客气",
+    "家",
+    "家人",
+    "容易",
+    "宿舍",
+    "宿舍楼",
+    "对",
+    "对不起",
+    "对了",
+    "对吗",
+    "对面",
+    "寿司",
+    "寿面",
+    "小",
+    "小云",
+    "小云和宋华",
+    "小姐",
+    "小孩子",
+    "小狗",
+    "小猫",
+    "少",
+    "就",
+    "就是",
+    "属",
+    "岁",
+    "岁数",
+    "工人",
+    "工作",
+    "工作日",
+    "工程师",
+    "左",
+    "左边",
+    "巧克力",
+    "巩俐",
+    "差",
+    "帅",
+    "常",
+    "常常",
+    "干啥",
+    "干嘛",
+    "干杯",
+    "年",
+    "年龄",
+    "广州",
+    "弟弟",
+    "张",
+    "张华",
+    "张王冉",
+    "弹",
+    "弹钢琴",
+    "很",
+    "很多",
+    "律师",
+    "德国",
+    "德语",
+    "忙",
+    "快乐",
+    "怎么样",
+    "怕",
+    "思想政治",
+    "恐怕",
+    "您",
+    "您好",
+    "您贵姓",
+    "意大利语",
+    "意思",
+    "成龙",
+    "我",
+    "我们",
+    "我们家",
+    "我哥哥",
+    "我妹妹",
+    "我家",
+    "我家的照片",
+    "我弟弟",
+    "我朋友",
+    "我爸爸",
+    "我爸爸妈妈",
+    "我的生日",
+    "手",
+    "手机",
+    "打球",
+    "找",
+    "披萨",
+    "操场",
+    "教",
+    "教学",
+    "教学楼",
+    "数学",
+    "文化",
+    "文学",
+    "新",
+    "方位词",
+    "方言",
+    "旁边",
+    "日",
+    "日字旁",
+    "日本",
+    "日语",
+    "早",
+    "早上",
+    "早上好",
+    "早饭",
+    "时间",
+    "明天",
+    "明年",
+    "星期",
+    "星期一",
+    "星期三",
+    "星期二",
+    "星期五",
+    "星期六",
+    "星期四",
+    "星期天",
+    "星期日",
+    "昨天",
+    "是",
+    "晚",
+    "晚上",
+    "晚上好",
+    "晚安",
+    "晚饭",
+    "普通话",
+    "最近",
+    "月",
+    "有",
+    "有名",
+    "有意思",
+    "有点儿",
+    "朋友",
+    "服务员",
+    "本",
+    "李",
+    "条",
+    "来",
+    "杯",
+    "构成的省略问句",
+    "林",
+    "林娜",
+    "林强",
+    "果汁",
+    "校门",
+    "梅西",
+    "楼",
+    "橙汁",
+    "欢迎",
+    "歌",
+    "正反疑问句",
+    "死",
+    "每天",
+    "比萨饼",
+    "水",
+    "汉堡",
+    "汉堡包",
+    "汉字",
+    "汉字知识",
+    "汉西英",
+    "汉语",
+    "汉语和西班牙语",
+    "汉语课",
+    "没",
+    "没有",
+    "法国",
+    "法语",
+    "注释",
+    "泰国",
+    "活动",
+    "清真餐厅",
+    "渴",
+    "漂亮",
+    "澳大利亚",
+    "炒饭",
+    "炸猪肉面包",
+    "点",
+    "点心",
+    "点钟",
+    "热狗",
+    "照片",
+    "爱",
+    "爷爷",
+    "爸爸",
+    "牛",
+    "牛奶",
+    "物理",
+    "特别",
+    "狗",
+    "猪",
+    "猫",
+    "猴",
+    "王",
+    "王小云",
+    "玛丽",
+    "现在",
+    "班",
+    "甜品",
+    "生日",
+    "生日蛋糕",
+    "生物",
+    "用",
+    "电影",
+    "电视",
+    "男",
+    "男朋友",
+    "男生",
+    "画画",
+    "百",
+    "的",
+    "的称数法",
+    "盒",
+    "看",
+    "看书",
+    "看电影",
+    "真",
+    "着急",
+    "睡觉",
+    "知道",
+    "礼物",
+    "祝",
+    "秘鲁",
+    "立刀旁",
+    "等",
+    "筷子",
+    "米饭",
+    "米饭和面条",
+    "系",
+    "累",
+    "约会",
+    "约翰",
+    "练习",
+    "经济",
+    "经理",
+    "给",
+    "综合汉语",
+    "羊",
+    "美国",
+    "美国人",
+    "翻译",
+    "老",
+    "老人",
+    "老师",
+    "老朋友",
+    "老虎",
+    "老鼠",
+    "聚会",
+    "肉夹馍",
+    "胡同",
+    "舞",
+    "英国",
+    "英语",
+    "英语课",
+    "苹果",
+    "茶",
+    "虎",
+    "蛇",
+    "蛋挞",
+    "蛋糕",
+    "行",
+    "街",
+    "街道",
+    "表时间的词语做状语",
+    "西",
+    "西安",
+    "西班牙",
+    "西班牙语",
+    "西边",
+    "要",
+    "觉得",
+    "认识",
+    "记者",
+    "语文",
+    "语法",
+    "语言",
+    "说",
+    "说汉语",
+    "请",
+    "请问",
+    "课",
+    "谁",
+    "谈学习",
+    "谢谢",
+    "豆浆",
+    "贝贝",
+    "贵",
+    "贵姓",
+    "走",
+    "起床",
+    "超市",
+    "跑步",
+    "跟",
+    "路",
+    "跳",
+    "跳舞",
+    "车牌号",
+    "边",
+    "过",
+    "运动",
+    "还",
+    "还是",
+    "还行",
+    "这",
+    "这个",
+    "这儿",
+    "这是",
+    "进",
+    "送",
+    "那",
+    "那儿",
+    "那是",
+    "部",
+    "都",
+    "酒",
+    "酒吧",
+    "里",
+    "里卡多帕尔玛大学",
+    "里卡多帕尔玛大学孔子学院",
+    "里边",
+    "钟",
+    "钟点读法",
+    "钢琴",
+    "钢琴课",
+    "钱",
+    "银行",
+    "门",
+    "问",
+    "问专业",
+    "问时间",
+    "阳台",
+    "阿根廷",
+    "陆",
+    "陆雨平",
+    "陈",
+    "陈明",
+    "陈老师",
+    "难",
+    "零",
+    "面包",
+    "面条",
+    "面条儿",
+    "韩国",
+    "韩语",
+    "音乐会",
+    "食堂",
+    "餐厅",
+    "饭",
+    "饭馆",
+    "饮料",
+    "饺子",
+    "饿",
+    "马",
+    "马丽",
+    "马云",
+    "马大为",
+    "马路",
+    "马马虎虎",
+    "高兴",
+    "鸡",
+    "鼠",
+    "龙"
+  ],
+  "sentences": [
+    {
+      "id": "s-nihao",
+      "hanzi": "你好！",
+      "pinyin": "Nǐ hǎo!",
+      "translation": "¡Hola!",
+      "tokens": [
+        "你",
+        "好"
+      ],
+      "grammarTags": [
+        "saludo"
+      ],
+      "difficulty": 1,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 1 y 2 课本内容.pdf",
+        "pdfPage": 45,
+        "printedPage": 44
+      }
+    },
+    {
+      "id": "s-wojiao",
+      "hanzi": "我叫马大为。",
+      "pinyin": "Wǒ jiào Mǎ Dàwéi.",
+      "translation": "Me llamo Ma Dawei.",
+      "tokens": [
+        "我",
+        "叫",
+        "马大为"
+      ],
+      "grammarTags": [
+        "presentación",
+        "sujeto-predicado"
+      ],
+      "difficulty": 1,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 1 y 2 课本内容.pdf",
+        "pdfPage": 45,
+        "printedPage": 44
+      }
+    },
+    {
+      "id": "s-name-question",
+      "hanzi": "请问，你叫什么名字？",
+      "pinyin": "Qǐngwèn, nǐ jiào shénme míngzi?",
+      "translation": "Disculpa, ¿cómo te llamas?",
+      "tokens": [
+        "请问",
+        "你",
+        "叫",
+        "什么",
+        "名字"
+      ],
+      "grammarTags": [
+        "pregunta",
+        "nombre"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 1 y 2 课本内容.pdf",
+        "pdfPage": 45,
+        "printedPage": 44
+      }
+    },
+    {
+      "id": "s-surname",
+      "hanzi": "我姓宋，叫宋华。",
+      "pinyin": "Wǒ xìng Sòng, jiào Sòng Huá.",
+      "translation": "Me apellido Song y me llamo Song Hua.",
+      "tokens": [
+        "我",
+        "姓",
+        "宋",
+        "叫",
+        "宋华"
+      ],
+      "grammarTags": [
+        "presentación",
+        "apellido"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 1 y 2 课本内容.pdf",
+        "pdfPage": 45,
+        "printedPage": 44
+      }
+    },
+    {
+      "id": "s-meet",
+      "hanzi": "认识你很高兴。",
+      "pinyin": "Rènshi nǐ hěn gāoxìng.",
+      "translation": "Encantado/a de conocerte.",
+      "tokens": [
+        "认识",
+        "你",
+        "很",
+        "高兴"
+      ],
+      "grammarTags": [
+        "primer-encuentro",
+        "很"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 1 y 2 课本内容.pdf",
+        "pdfPage": 45,
+        "printedPage": 44
+      }
+    },
+    {
+      "id": "s-meet-too",
+      "hanzi": "认识你我也很高兴。",
+      "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng.",
+      "translation": "También estoy encantado/a de conocerte.",
+      "tokens": [
+        "认识",
+        "你",
+        "我",
+        "也",
+        "很",
+        "高兴"
+      ],
+      "grammarTags": [
+        "也",
+        "primer-encuentro"
+      ],
+      "difficulty": 3,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 1 y 2 课本内容.pdf",
+        "pdfPage": 45,
+        "printedPage": 44
+      }
+    },
+    {
+      "id": "s-linna-home",
+      "hanzi": "林娜在吗？",
+      "pinyin": "Lín Nà zài ma?",
+      "translation": "¿Está Lin Na?",
+      "tokens": [
+        "林娜",
+        "在",
+        "吗"
+      ],
+      "grammarTags": [
+        "吗",
+        "pregunta-sí-no"
+      ],
+      "difficulty": 1,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 1 y 2 课本内容.pdf",
+        "pdfPage": 47,
+        "printedPage": 46
+      }
+    },
+    {
+      "id": "s-please-enter",
+      "hanzi": "请进。",
+      "pinyin": "Qǐng jìn.",
+      "translation": "Entra, por favor.",
+      "tokens": [
+        "请",
+        "进"
+      ],
+      "grammarTags": [
+        "请+verbo"
+      ],
+      "difficulty": 1,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 1 y 2 课本内容.pdf",
+        "pdfPage": 47,
+        "printedPage": 46
+      }
+    },
+    {
+      "id": "s-please-sit",
+      "hanzi": "请坐。",
+      "pinyin": "Qǐng zuò.",
+      "translation": "Siéntate, por favor.",
+      "tokens": [
+        "请",
+        "坐"
+      ],
+      "grammarTags": [
+        "请+verbo"
+      ],
+      "difficulty": 1,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 1 y 2 课本内容.pdf",
+        "pdfPage": 47,
+        "printedPage": 46
+      }
+    },
+    {
+      "id": "s-thanks",
+      "hanzi": "谢谢。",
+      "pinyin": "Xièxie.",
+      "translation": "Gracias.",
+      "tokens": [
+        "谢谢"
+      ],
+      "grammarTags": [
+        "cortesía"
+      ],
+      "difficulty": 1,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 1 y 2 课本内容.pdf",
+        "pdfPage": 47,
+        "printedPage": 46
+      }
+    },
+    {
+      "id": "s-recent",
+      "hanzi": "你最近怎么样？",
+      "pinyin": "Nǐ zuìjìn zěnmeyàng?",
+      "translation": "¿Cómo has estado?",
+      "tokens": [
+        "你",
+        "最近",
+        "怎么样"
+      ],
+      "grammarTags": [
+        "pregunta-abierta",
+        "orden"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 1 y 2 课本内容.pdf",
+        "pdfPage": 47,
+        "printedPage": 46
+      }
+    },
+    {
+      "id": "s-good-you",
+      "hanzi": "我很好。你呢？",
+      "pinyin": "Wǒ hěn hǎo. Nǐ ne?",
+      "translation": "Estoy muy bien. ¿Y tú?",
+      "tokens": [
+        "我",
+        "很",
+        "好",
+        "你",
+        "呢"
+      ],
+      "grammarTags": [
+        "很",
+        "呢"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 1 y 2 课本内容.pdf",
+        "pdfPage": 47,
+        "printedPage": 46
+      }
+    },
+    {
+      "id": "s-busy",
+      "hanzi": "我很忙。",
+      "pinyin": "Wǒ hěn máng.",
+      "translation": "Estoy muy ocupado/a.",
+      "tokens": [
+        "我",
+        "很",
+        "忙"
+      ],
+      "grammarTags": [
+        "很",
+        "predicado-adjetival"
+      ],
+      "difficulty": 1,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 1 y 2 课本内容.pdf",
+        "pdfPage": 47,
+        "printedPage": 46
+      }
+    },
+    {
+      "id": "s-busy-question",
+      "hanzi": "你忙吗？",
+      "pinyin": "Nǐ máng ma?",
+      "translation": "¿Estás ocupado/a?",
+      "tokens": [
+        "你",
+        "忙",
+        "吗"
+      ],
+      "grammarTags": [
+        "吗",
+        "pregunta-sí-no"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 1 y 2 课本内容.pdf",
+        "pdfPage": 47,
+        "printedPage": 46
+      }
+    },
+    {
+      "id": "s-not-too-busy",
+      "hanzi": "我不太忙。",
+      "pinyin": "Wǒ bú tài máng.",
+      "translation": "No estoy muy ocupado/a.",
+      "tokens": [
+        "我",
+        "不",
+        "太",
+        "忙"
+      ],
+      "grammarTags": [
+        "不太",
+        "predicado-adjetival"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 1 y 2 课本内容.pdf",
+        "pdfPage": 47,
+        "printedPage": 46
+      }
+    },
+    {
+      "id": "s-dawei-good",
+      "hanzi": "大为好吗？",
+      "pinyin": "Dàwéi hǎo ma?",
+      "translation": "¿Está bien Dawei?",
+      "tokens": [
+        "大为",
+        "好",
+        "吗"
+      ],
+      "grammarTags": [
+        "吗",
+        "pregunta-sí-no"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 1 y 2 课本内容.pdf",
+        "pdfPage": 47,
+        "printedPage": 46
+      }
+    },
+    {
+      "id": "s-he-too-good",
+      "hanzi": "他也很好。",
+      "pinyin": "Tā yě hěn hǎo.",
+      "translation": "Él también está muy bien.",
+      "tokens": [
+        "他",
+        "也",
+        "很",
+        "好"
+      ],
+      "grammarTags": [
+        "也",
+        "很",
+        "orden"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 1 y 2 课本内容.pdf",
+        "pdfPage": 47,
+        "printedPage": 46
+      }
+    },
+    {
+      "id": "s-ninhao",
+      "hanzi": "您好！",
+      "pinyin": "Nín hǎo!",
+      "translation": "¡Hola! (formal)",
+      "tokens": [
+        "您",
+        "好"
+      ],
+      "grammarTags": [
+        "saludo",
+        "formal"
+      ],
+      "difficulty": 1,
+      "source": {
+        "type": "class_presentation",
+        "file": "1.1 Presentación Curso Ciclo 1 - Junio a Julio 2026 Instituto Confucio 你最近怎么样.pdf",
+        "pdfPage": 20
+      }
+    },
+    {
+      "id": "s-nimenhao",
+      "hanzi": "你们好！",
+      "pinyin": "Nǐmen hǎo!",
+      "translation": "¡Hola a todos!",
+      "tokens": [
+        "你们",
+        "好"
+      ],
+      "grammarTags": [
+        "saludo",
+        "plural"
+      ],
+      "difficulty": 1,
+      "source": {
+        "type": "class_presentation",
+        "file": "1.1 Presentación Curso Ciclo 1 - Junio a Julio 2026 Instituto Confucio 你最近怎么样.pdf",
+        "pdfPage": 19
+      }
+    },
+    {
+      "id": "s-l2-morning",
+      "hanzi": "陈老师，早上好！",
+      "pinyin": "Chén lǎoshī, zǎoshang hǎo!",
+      "translation": "¡Profesor Chen, buenos días!",
+      "tokens": [
+        "陈老师",
+        "早上好"
+      ],
+      "grammarTags": [
+        "saludo"
+      ],
+      "difficulty": 1,
+      "source": {
+        "type": "class_presentation",
+        "file": "2.1 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你是哪国人？.pdf",
+        "pdfPage": 8
+      }
+    },
+    {
+      "id": "s-l2-introduce",
+      "hanzi": "这是我朋友，他刚到北京。",
+      "pinyin": "Zhè shì wǒ péngyou, tā gāng dào Běijīng.",
+      "translation": "Este es mi amigo; acaba de llegar a Pekín.",
+      "tokens": [
+        "这",
+        "是",
+        "我朋友",
+        "他",
+        "刚到",
+        "北京"
+      ],
+      "grammarTags": [
+        "是",
+        "刚"
+      ],
+      "difficulty": 3,
+      "source": {
+        "type": "class_presentation",
+        "file": "2.1 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你是哪国人？.pdf",
+        "pdfPage": 8
+      }
+    },
+    {
+      "id": "s-l2-surname",
+      "hanzi": "请问，您贵姓？",
+      "pinyin": "Qǐngwèn, nín guìxìng?",
+      "translation": "Disculpe, ¿cuál es su apellido?",
+      "tokens": [
+        "请问",
+        "您",
+        "贵姓"
+      ],
+      "grammarTags": [
+        "interrogativa",
+        "cortesía"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "class_presentation",
+        "file": "2.1 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你是哪国人？.pdf",
+        "pdfPage": 10
+      }
+    },
+    {
+      "id": "s-l2-nationality",
+      "hanzi": "你是哪国人？",
+      "pinyin": "Nǐ shì nǎ guó rén?",
+      "translation": "¿De qué país eres?",
+      "tokens": [
+        "你",
+        "是",
+        "哪国人"
+      ],
+      "grammarTags": [
+        "是",
+        "哪"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "class_presentation",
+        "file": "2.1 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你是哪国人？.pdf",
+        "pdfPage": 10
+      }
+    },
+    {
+      "id": "s-l2-american",
+      "hanzi": "我是美国人。",
+      "pinyin": "Wǒ shì Měiguó rén.",
+      "translation": "Soy estadounidense.",
+      "tokens": [
+        "我",
+        "是",
+        "美国人"
+      ],
+      "grammarTags": [
+        "是"
+      ],
+      "difficulty": 1,
+      "source": {
+        "type": "class_presentation",
+        "file": "2.1 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你是哪国人？.pdf",
+        "pdfPage": 10
+      }
+    },
+    {
+      "id": "s-l2-study",
+      "hanzi": "我在北京学习汉语。",
+      "pinyin": "Wǒ zài Běijīng xuéxí Hànyǔ.",
+      "translation": "Estudio chino en Pekín.",
+      "tokens": [
+        "我",
+        "在",
+        "北京",
+        "学习",
+        "汉语"
+      ],
+      "grammarTags": [
+        "在",
+        "orden"
+      ],
+      "difficulty": 3,
+      "source": {
+        "type": "class_presentation",
+        "file": "2.1 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你是哪国人？.pdf",
+        "pdfPage": 10
+      }
+    },
+    {
+      "id": "s-l2-languages",
+      "hanzi": "我会说汉语和西班牙语。",
+      "pinyin": "Wǒ huì shuō Hànyǔ hé Xībānyáyǔ.",
+      "translation": "Sé hablar chino y español.",
+      "tokens": [
+        "我",
+        "会说",
+        "汉语",
+        "和",
+        "西班牙语"
+      ],
+      "grammarTags": [
+        "会",
+        "和"
+      ],
+      "difficulty": 3,
+      "source": {
+        "type": "class_presentation",
+        "file": "2.1 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你是哪国人？.pdf",
+        "pdfPage": 22
+      }
+    },
+    {
+      "id": "s-l2-parents",
+      "hanzi": "我爸爸妈妈都是上海人。",
+      "pinyin": "Wǒ bàba māma dōu shì Shànghǎi rén.",
+      "translation": "Mi padre y mi madre son ambos de Shanghái.",
+      "tokens": [
+        "我爸爸妈妈",
+        "都",
+        "是",
+        "上海人"
+      ],
+      "grammarTags": [
+        "都",
+        "是"
+      ],
+      "difficulty": 3,
+      "source": {
+        "type": "class_presentation",
+        "file": "2.2 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你是哪国人啊？.pdf",
+        "pdfPage": 9
+      }
+    },
+    {
+      "id": "s-l2-likes",
+      "hanzi": "我喜欢吃米饭和面条。",
+      "pinyin": "Wǒ xǐhuan chī mǐfàn hé miàntiáo.",
+      "translation": "Me gusta comer arroz y fideos.",
+      "tokens": [
+        "我",
+        "喜欢",
+        "吃",
+        "米饭",
+        "和",
+        "面条"
+      ],
+      "grammarTags": [
+        "喜欢",
+        "和"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "class_presentation",
+        "file": "2.2 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你是哪国人啊？.pdf",
+        "pdfPage": 9
+      }
+    },
+    {
+      "id": "s-l2-which",
+      "hanzi": "那是什么？",
+      "pinyin": "Nà shì shénme?",
+      "translation": "¿Qué es eso?",
+      "tokens": [
+        "那",
+        "是",
+        "什么"
+      ],
+      "grammarTags": [
+        "什么",
+        "是"
+      ],
+      "difficulty": 1,
+      "source": {
+        "type": "class_presentation",
+        "file": "2.2 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你是哪国人啊？.pdf",
+        "pdfPage": 9
+      }
+    },
+    {
+      "id": "s-l2-baozi",
+      "hanzi": "这是包子，那是饺子。",
+      "pinyin": "Zhè shì bāozi, nà shì jiǎozi.",
+      "translation": "Esto es baozi y aquello es jiaozi.",
+      "tokens": [
+        "这",
+        "是",
+        "包子",
+        "那",
+        "是",
+        "饺子"
+      ],
+      "grammarTags": [
+        "这",
+        "那",
+        "是"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "class_presentation",
+        "file": "2.2 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你是哪国人啊？.pdf",
+        "pdfPage": 9
+      }
+    },
+    {
+      "id": "s-l2-want-both",
+      "hanzi": "包子和饺子我都要。",
+      "pinyin": "Bāozi hé jiǎozi wǒ dōu yào.",
+      "translation": "Quiero tanto baozi como jiaozi.",
+      "tokens": [
+        "包子",
+        "和",
+        "饺子",
+        "我",
+        "都",
+        "要"
+      ],
+      "grammarTags": [
+        "都",
+        "要",
+        "和"
+      ],
+      "difficulty": 3,
+      "source": {
+        "type": "class_presentation",
+        "file": "2.2 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你是哪国人啊？.pdf",
+        "pdfPage": 9
+      }
+    },
+    {
+      "id": "s-l2-drink",
+      "hanzi": "你喝茶还是咖啡？",
+      "pinyin": "Nǐ hē chá háishi kāfēi?",
+      "translation": "¿Bebes té o café?",
+      "tokens": [
+        "你",
+        "喝",
+        "茶",
+        "还是",
+        "咖啡"
+      ],
+      "grammarTags": [
+        "elección"
+      ],
+      "difficulty": 3,
+      "source": {
+        "type": "class_presentation",
+        "file": "2.2 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你是哪国人啊？.pdf",
+        "pdfPage": 24
+      }
+    },
+    {
+      "id": "s-l3-how-many",
+      "hanzi": "你家有几口人？",
+      "pinyin": "Nǐ jiā yǒu jǐ kǒu rén?",
+      "translation": "¿Cuántas personas hay en tu familia?",
+      "tokens": [
+        "你家",
+        "有",
+        "几口人"
+      ],
+      "grammarTags": [
+        "有",
+        "几",
+        "口"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "class_presentation",
+        "file": "3.1 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你家有几口人？.pdf.pdf",
+        "pdfPage": 7
+      }
+    },
+    {
+      "id": "s-l3-four",
+      "hanzi": "我家有四口人。",
+      "pinyin": "Wǒ jiā yǒu sì kǒu rén.",
+      "translation": "En mi familia somos cuatro.",
+      "tokens": [
+        "我家",
+        "有",
+        "四口人"
+      ],
+      "grammarTags": [
+        "有",
+        "口"
+      ],
+      "difficulty": 1,
+      "source": {
+        "type": "class_presentation",
+        "file": "3.1 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你家有几口人？.pdf.pdf",
+        "pdfPage": 7
+      }
+    },
+    {
+      "id": "s-l3-photo",
+      "hanzi": "这是我家的照片。",
+      "pinyin": "Zhè shì wǒ jiā de zhàopiàn.",
+      "translation": "Esta es una foto de mi familia.",
+      "tokens": [
+        "这",
+        "是",
+        "我家",
+        "的",
+        "照片"
+      ],
+      "grammarTags": [
+        "的",
+        "是"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "class_presentation",
+        "file": "3.1 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你家有几口人？.pdf.pdf",
+        "pdfPage": 7
+      }
+    },
+    {
+      "id": "s-l3-work-father",
+      "hanzi": "你爸爸做什么工作？",
+      "pinyin": "Nǐ bàba zuò shénme gōngzuò?",
+      "translation": "¿En qué trabaja tu padre?",
+      "tokens": [
+        "你爸爸",
+        "做",
+        "什么工作"
+      ],
+      "grammarTags": [
+        "什么",
+        "做"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "class_presentation",
+        "file": "3.1 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你家有几口人？.pdf.pdf",
+        "pdfPage": 7
+      }
+    },
+    {
+      "id": "s-l3-doctor",
+      "hanzi": "我爸爸是医生。",
+      "pinyin": "Wǒ bàba shì yīshēng.",
+      "translation": "Mi padre es médico.",
+      "tokens": [
+        "我爸爸",
+        "是",
+        "医生"
+      ],
+      "grammarTags": [
+        "是"
+      ],
+      "difficulty": 1,
+      "source": {
+        "type": "class_presentation",
+        "file": "3.1 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你家有几口人？.pdf.pdf",
+        "pdfPage": 7
+      }
+    },
+    {
+      "id": "s-l3-not-younger",
+      "hanzi": "他不是我弟弟，是我哥哥。",
+      "pinyin": "Tā bú shì wǒ dìdi, shì wǒ gēge.",
+      "translation": "No es mi hermano menor, sino mi hermano mayor.",
+      "tokens": [
+        "他",
+        "不是",
+        "我弟弟",
+        "是",
+        "我哥哥"
+      ],
+      "grammarTags": [
+        "不是",
+        "的-omitido"
+      ],
+      "difficulty": 3,
+      "source": {
+        "type": "class_presentation",
+        "file": "3.1 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你家有几口人？.pdf.pdf",
+        "pdfPage": 7
+      }
+    },
+    {
+      "id": "s-l3-six",
+      "hanzi": "我家一共有六个人。",
+      "pinyin": "Wǒ jiā yígòng yǒu liù ge rén.",
+      "translation": "En mi familia hay seis personas en total.",
+      "tokens": [
+        "我家",
+        "一共",
+        "有",
+        "六个人"
+      ],
+      "grammarTags": [
+        "一共",
+        "个"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "class_presentation",
+        "file": "3.1 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你家有几口人？.pdf.pdf",
+        "pdfPage": 7
+      }
+    },
+    {
+      "id": "s-l3-two-sisters",
+      "hanzi": "我有两个姐姐。",
+      "pinyin": "Wǒ yǒu liǎng ge jiějie.",
+      "translation": "Tengo dos hermanas mayores.",
+      "tokens": [
+        "我",
+        "有",
+        "两个姐姐"
+      ],
+      "grammarTags": [
+        "两",
+        "个",
+        "有"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "class_presentation",
+        "file": "3.1 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你家有几口人？.pdf.pdf",
+        "pdfPage": 7
+      }
+    },
+    {
+      "id": "s-l3-who-else",
+      "hanzi": "你家还有谁？",
+      "pinyin": "Nǐ jiā hái yǒu shéi?",
+      "translation": "¿Quién más hay en tu familia?",
+      "tokens": [
+        "你家",
+        "还",
+        "有",
+        "谁"
+      ],
+      "grammarTags": [
+        "还",
+        "谁",
+        "有"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "class_presentation",
+        "file": "3.1 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你家有几口人？.pdf.pdf",
+        "pdfPage": 7
+      }
+    },
+    {
+      "id": "s-l3-no-sister",
+      "hanzi": "我没有妹妹。",
+      "pinyin": "Wǒ méiyǒu mèimei.",
+      "translation": "No tengo hermana menor.",
+      "tokens": [
+        "我",
+        "没有",
+        "妹妹"
+      ],
+      "grammarTags": [
+        "没有"
+      ],
+      "difficulty": 1,
+      "source": {
+        "type": "class_presentation",
+        "file": "3.1 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你家有几口人？.pdf.pdf",
+        "pdfPage": 7
+      }
+    },
+    {
+      "id": "s-l3-dog",
+      "hanzi": "贝贝是我们家的狗。",
+      "pinyin": "Bèibei shì wǒmen jiā de gǒu.",
+      "translation": "Beibei es el perro de nuestra familia.",
+      "tokens": [
+        "贝贝",
+        "是",
+        "我们家",
+        "的",
+        "狗"
+      ],
+      "grammarTags": [
+        "是",
+        "的"
+      ],
+      "difficulty": 3,
+      "source": {
+        "type": "class_presentation",
+        "file": "3.1 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你家有几口人？.pdf.pdf",
+        "pdfPage": 7
+      }
+    },
+    {
+      "id": "s-l3-pretty",
+      "hanzi": "这张照片真漂亮。",
+      "pinyin": "Zhè zhāng zhàopiàn zhēn piàoliang.",
+      "translation": "Esta foto es realmente bonita.",
+      "tokens": [
+        "这张照片",
+        "真",
+        "漂亮"
+      ],
+      "grammarTags": [
+        "张",
+        "真"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 3 - Nimen jia you jĩ kou rén.pdf",
+        "pdfPage": 4
+      }
+    },
+    {
+      "id": "s-l3-daughter-age",
+      "hanzi": "你女儿今年几岁？",
+      "pinyin": "Nǐ nǚʼér jīnnián jǐ suì?",
+      "translation": "¿Cuántos años tiene tu hija este año?",
+      "tokens": [
+        "你女儿",
+        "今年",
+        "几岁"
+      ],
+      "grammarTags": [
+        "几",
+        "岁"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 3 - Nimen jia you jĩ kou rén.pdf",
+        "pdfPage": 4
+      }
+    },
+    {
+      "id": "s-l3-piano",
+      "hanzi": "她今天晚上有钢琴课。",
+      "pinyin": "Tā jīntiān wǎnshang yǒu gāngqín kè.",
+      "translation": "Esta noche ella tiene clase de piano.",
+      "tokens": [
+        "她",
+        "今天晚上",
+        "有",
+        "钢琴课"
+      ],
+      "grammarTags": [
+        "tiempo",
+        "有"
+      ],
+      "difficulty": 3,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 3 - Nimen jia you jĩ kou rén.pdf",
+        "pdfPage": 4
+      }
+    },
+    {
+      "id": "PH-09bc3992f0207092",
+      "hanzi": "练习口语",
+      "pinyin": "liànxí kǒuyǔ",
+      "translation": "practicar oral",
+      "tokens": [
+        "练习",
+        "口语"
+      ],
+      "grammarTags": [],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 4.pdf",
+        "pdfPage": 4
+      }
+    },
+    {
+      "id": "PH-59e0807490ecd436",
+      "hanzi": "你们班一共有多少人？",
+      "pinyin": "Nǐmen bān yígòng yǒu duōshao rén?",
+      "translation": "¿Cuántas personas hay en tu clase?",
+      "tokens": [
+        "你们",
+        "班",
+        "一共",
+        "有",
+        "多少",
+        "人"
+      ],
+      "grammarTags": [],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 4.pdf",
+        "pdfPage": 8
+      }
+    },
+    {
+      "id": "PH-21825c5dbd28ac7b",
+      "hanzi": "听说这个电影很好",
+      "pinyin": "Tīngshuō zhè ge diànyǐng hěn hǎo.",
+      "translation": "Se dice que esta película es muy buena.",
+      "tokens": [
+        "听说",
+        "这",
+        "个",
+        "电影",
+        "很",
+        "好"
+      ],
+      "grammarTags": [],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 4.pdf",
+        "pdfPage": 7
+      }
+    },
+    {
+      "id": "PH-1c5a1ee9335d075c",
+      "hanzi": "我们班有三十个学生。",
+      "pinyin": "Wǒmen bān yǒu sānshí gè xuéshēng.",
+      "translation": "Hay 30 alumnos en nuestra clase.",
+      "tokens": [
+        "我们",
+        "班",
+        "有",
+        "三十",
+        "个",
+        "学生"
+      ],
+      "grammarTags": [],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 1 - Lección 4.pdf",
+        "pdfPage": 9
+      }
+    },
+    {
+      "id": "PH-84168fba9e33dc63",
+      "hanzi": "一部电影",
+      "pinyin": "yí bù diànyǐng",
+      "translation": "una película",
+      "tokens": [
+        "一",
+        "部",
+        "电影"
+      ],
+      "grammarTags": [],
+      "difficulty": 2,
+      "source": {
+        "type": "class_presentation",
+        "file": "4.1 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026 你几点有课？.pdf",
+        "pdfPage": 31
+      }
+    },
+    {
+      "id": "PH-8f1046a135101985",
+      "hanzi": "我喜欢参加活动。",
+      "pinyin": "Wǒ xǐhuan cānjiā huódòng.",
+      "translation": "Me gusta participar en las actividades.",
+      "tokens": [
+        "我",
+        "喜欢",
+        "参加",
+        "活动"
+      ],
+      "grammarTags": [],
+      "difficulty": 2,
+      "source": {
+        "type": "class_presentation",
+        "file": "4.2 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026你们班有多少人？.pdf",
+        "pdfPage": 8
+      }
+    },
+    {
+      "id": "PH-2b2baa0f790f1dc5",
+      "hanzi": "我听说了一个八卦。",
+      "pinyin": "Wǒ tīngshuō le yí ge bāguà.",
+      "translation": "Escuché un chisme.",
+      "tokens": [
+        "我",
+        "听说",
+        "了",
+        "一",
+        "个",
+        "八卦"
+      ],
+      "grammarTags": [],
+      "difficulty": 2,
+      "source": {
+        "type": "class_presentation",
+        "file": "4.2 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026你们班有多少人？.pdf",
+        "pdfPage": 10
+      }
+    },
+    {
+      "id": "PH-b973c61b2d2e0547",
+      "hanzi": "我们学习汉西英翻译专业。",
+      "pinyin": "Wǒmen xuéxíhàn xī yīng fānyìzhuānyè.",
+      "translation": "Estudiamos la carrera de traducción chino español e inglés.",
+      "tokens": [
+        "我们",
+        "学习",
+        "汉西英",
+        "翻译",
+        "专业"
+      ],
+      "grammarTags": [],
+      "difficulty": 2,
+      "source": {
+        "type": "class_presentation",
+        "file": "4.2 Presentación Curso Ciclo 2 - Agosto a Setiembre 2026你们班有多少人？.pdf",
+        "pdfPage": 15
+      }
+    },
+    {
+      "id": "s-l5-1",
+      "hanzi": "祝你生日快乐！",
+      "pinyin": "Zhù nǐ shēngrì kuàilè!",
+      "translation": "¡Te deseo un feliz cumpleaños!",
+      "tokens": [
+        "祝",
+        "你",
+        "生日",
+        "快乐"
+      ],
+      "grammarTags": [
+        "L5"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 9
+      }
+    },
+    {
+      "id": "s-l5-2",
+      "hanzi": "我来介绍一下。",
+      "pinyin": "Wǒ lái jièshào yíxià.",
+      "translation": "Permíteme hacer una presentación.",
+      "tokens": [
+        "我",
+        "来",
+        "介绍",
+        "一下"
+      ],
+      "grammarTags": [
+        "L5"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 9
+      }
+    },
+    {
+      "id": "s-l5-3",
+      "hanzi": "我送他一个生日蛋糕。",
+      "pinyin": "Wǒ sòng tā yí ge shēngrì dàngāo.",
+      "translation": "Le regalo un pastel de cumpleaños.",
+      "tokens": [
+        "我",
+        "送",
+        "他",
+        "一个",
+        "生日蛋糕"
+      ],
+      "grammarTags": [
+        "L5"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 9
+      }
+    },
+    {
+      "id": "s-l5-4",
+      "hanzi": "你哥哥今年多大？",
+      "pinyin": "Nǐ gēge jīnnián duō dà?",
+      "translation": "¿Cuántos años tiene tu hermano mayor este año?",
+      "tokens": [
+        "你哥哥",
+        "今年",
+        "多大"
+      ],
+      "grammarTags": [
+        "L5"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 9
+      }
+    },
+    {
+      "id": "s-l5-5",
+      "hanzi": "这个星期日几号？",
+      "pinyin": "Zhège xīngqīrì jǐ hào?",
+      "translation": "¿Qué fecha es este domingo?",
+      "tokens": [
+        "这个",
+        "星期日",
+        "几号"
+      ],
+      "grammarTags": [
+        "L5"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 9
+      }
+    },
+    {
+      "id": "s-l5-6",
+      "hanzi": "他就是我哥哥！",
+      "pinyin": "Tā jiù shì wǒ gēge!",
+      "translation": "¡Es precisamente mi hermano mayor!",
+      "tokens": [
+        "他",
+        "就",
+        "是",
+        "我哥哥"
+      ],
+      "grammarTags": [
+        "L5"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 9
+      }
+    },
+    {
+      "id": "s-l5-7",
+      "hanzi": "小云和宋华教我说汉语、写汉字。",
+      "pinyin": "Xiǎoyún hé Sòng Huá jiāo wǒ shuō Hànyǔ, xiě Hànzì.",
+      "translation": "Xiaoyun y Song Hua me enseñan a hablar chino y escribir caracteres.",
+      "tokens": [
+        "小云和宋华",
+        "教",
+        "我",
+        "说汉语",
+        "写汉字"
+      ],
+      "grammarTags": [
+        "L5"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 9
+      }
+    },
+    {
+      "id": "s-l5-8",
+      "hanzi": "二〇二〇年十二月二十五日星期五晚上八点二十五。",
+      "pinyin": "Èr líng èr líng nián shí'èr yuè èrshíwǔ rì xīngqīwǔ wǎnshang bā diǎn èrshíwǔ.",
+      "translation": "Viernes 25 de diciembre de 2020 a las ocho y veinticinco de la noche.",
+      "tokens": [
+        "二〇二〇年",
+        "十二月",
+        "二十五日",
+        "星期五",
+        "晚上",
+        "八点二十五"
+      ],
+      "grammarTags": [
+        "L5"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 10
+      }
+    },
+    {
+      "id": "s-l5-9",
+      "hanzi": "今天不是五号。",
+      "pinyin": "Jīntiān bú shì wǔ hào.",
+      "translation": "Hoy no es día cinco.",
+      "tokens": [
+        "今天",
+        "不是",
+        "五号"
+      ],
+      "grammarTags": [
+        "L5"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 11
+      }
+    },
+    {
+      "id": "s-l5-10",
+      "hanzi": "她教我英语。",
+      "pinyin": "Tā jiāo wǒ Yīngyǔ.",
+      "translation": "Ella me enseña inglés.",
+      "tokens": [
+        "她",
+        "教",
+        "我",
+        "英语"
+      ],
+      "grammarTags": [
+        "L5"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 12
+      }
+    },
+    {
+      "id": "s-l5-11",
+      "hanzi": "这就是寿面。",
+      "pinyin": "Zhè jiù shì shòumiàn.",
+      "translation": "Estos son precisamente los fideos de la longevidad.",
+      "tokens": [
+        "这",
+        "就",
+        "是",
+        "寿面"
+      ],
+      "grammarTags": [
+        "L5"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 13
+      }
+    },
+    {
+      "id": "s-l5-12",
+      "hanzi": "你认识我妹妹？",
+      "pinyin": "Nǐ rènshi wǒ mèimei?",
+      "translation": "¿Conoces a mi hermana menor?",
+      "tokens": [
+        "你",
+        "认识",
+        "我妹妹"
+      ],
+      "grammarTags": [
+        "L5"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 14
+      }
+    },
+    {
+      "id": "s-l5-13",
+      "hanzi": "你的生日是几月几号？",
+      "pinyin": "Nǐ de shēngrì shì jǐ yuè jǐ hào?",
+      "translation": "¿Qué día y mes es tu cumpleaños?",
+      "tokens": [
+        "你的生日",
+        "是",
+        "几月",
+        "几号"
+      ],
+      "grammarTags": [
+        "L5"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 18
+      }
+    },
+    {
+      "id": "s-l5-14",
+      "hanzi": "我的生日是八月二十三号。",
+      "pinyin": "Wǒ de shēngrì shì bā yuè èrshísān hào.",
+      "translation": "Mi cumpleaños es el 23 de agosto.",
+      "tokens": [
+        "我的生日",
+        "是",
+        "八月",
+        "二十三号"
+      ],
+      "grammarTags": [
+        "L5"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 18
+      }
+    },
+    {
+      "id": "s-l5-15",
+      "hanzi": "我也属马。",
+      "pinyin": "Wǒ yě shǔ mǎ.",
+      "translation": "Yo también soy del signo del caballo.",
+      "tokens": [
+        "我",
+        "也",
+        "属",
+        "马"
+      ],
+      "grammarTags": [
+        "L5"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 18
+      }
+    },
+    {
+      "id": "s-l5-16",
+      "hanzi": "她常常教我们英语。",
+      "pinyin": "Tā chángcháng jiāo wǒmen Yīngyǔ.",
+      "translation": "Ella nos enseña inglés a menudo.",
+      "tokens": [
+        "她",
+        "常常",
+        "教",
+        "我们",
+        "英语"
+      ],
+      "grammarTags": [
+        "L5"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 7
+      }
+    },
+    {
+      "id": "s-l5-17",
+      "hanzi": "一会儿大家吃寿面。",
+      "pinyin": "Yíhuìr dàjiā chī shòumiàn.",
+      "translation": "Dentro de un rato todos comeremos fideos de la longevidad.",
+      "tokens": [
+        "一会儿",
+        "大家",
+        "吃",
+        "寿面"
+      ],
+      "grammarTags": [
+        "L5"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 7
+      }
+    },
+    {
+      "id": "s-l5-18",
+      "hanzi": "来，咱们干杯！",
+      "pinyin": "Lái, zánmen gānbēi!",
+      "translation": "¡Vamos, brindemos!",
+      "tokens": [
+        "来",
+        "咱们",
+        "干杯"
+      ],
+      "grammarTags": [
+        "L5"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico 3 - Lección 5 Zhù nĩ shêngrì.pdf",
+        "pdfPage": 7
+      }
+    },
+    {
+      "id": "s-l5-wb-19",
+      "hanzi": "明天十月三十一号。",
+      "pinyin": "Míngtiān shí yuè sānshíyī hào.",
+      "translation": "Mañana es el treinta y uno de octubre.",
+      "tokens": [
+        "明天",
+        "十月",
+        "三十一号"
+      ],
+      "grammarTags": [
+        "L5"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "workbook",
+        "file": "Libro de Ejercicios Basico 3 - Lección 5 Zhù nĩ shêngrì kuàilè.pdf",
+        "pdfPage": 6
+      }
+    },
+    {
+      "id": "s-l5-wb-20",
+      "hanzi": "我送她一个生日蛋糕。",
+      "pinyin": "Wǒ sòng tā yí ge shēngrì dàngāo.",
+      "translation": "Le regalo a ella un pastel de cumpleaños.",
+      "tokens": [
+        "我",
+        "送",
+        "她",
+        "一个",
+        "生日",
+        "蛋糕"
+      ],
+      "grammarTags": [
+        "L5"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "workbook",
+        "file": "Libro de Ejercicios Basico 3 - Lección 5 Zhù nĩ shêngrì kuàilè.pdf",
+        "pdfPage": 6
+      }
+    },
+    {
+      "id": "s-l5-wb-21",
+      "hanzi": "她一九八五年出生。",
+      "pinyin": "Tā yī jiǔ bā wǔ nián chūshēng.",
+      "translation": "Ella nació en 1985.",
+      "tokens": [
+        "她",
+        "一九八五年",
+        "出生"
+      ],
+      "grammarTags": [
+        "L5"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "workbook",
+        "file": "Libro de Ejercicios Basico 3 - Lección 5 Zhù nĩ shêngrì kuàilè.pdf",
+        "pdfPage": 6
+      }
+    },
+    {
+      "id": "s-l5-wb-22",
+      "hanzi": "陈老师教我们语法。",
+      "pinyin": "Chén lǎoshī jiāo wǒmen yǔfǎ.",
+      "translation": "El profesor Chen nos enseña gramática.",
+      "tokens": [
+        "陈老师",
+        "教",
+        "我们",
+        "语法"
+      ],
+      "grammarTags": [
+        "L5"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "workbook",
+        "file": "Libro de Ejercicios Basico 3 - Lección 5 Zhù nĩ shêngrì kuàilè.pdf",
+        "pdfPage": 6
+      }
+    },
+    {
+      "id": "s-l6-1",
+      "hanzi": "请问食堂在哪儿？",
+      "pinyin": "Qǐngwèn shítáng zài nǎr?",
+      "translation": "Disculpa, ¿dónde está el comedor?",
+      "tokens": [
+        "请问",
+        "食堂",
+        "在",
+        "哪儿"
+      ],
+      "grammarTags": [
+        "L6"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 8,
+        "printedPage": 169
+      }
+    },
+    {
+      "id": "s-l6-2",
+      "hanzi": "食堂在校门右边。",
+      "pinyin": "Shítáng zài xiàomén yòubian.",
+      "translation": "El comedor está a la derecha de la entrada del campus.",
+      "tokens": [
+        "食堂",
+        "在",
+        "校门",
+        "右边"
+      ],
+      "grammarTags": [
+        "L6"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 8,
+        "printedPage": 169
+      }
+    },
+    {
+      "id": "s-l6-3",
+      "hanzi": "食堂旁边是办公楼。",
+      "pinyin": "Shítáng pángbiān shì bàngōnglóu.",
+      "translation": "Al lado del comedor está el edificio de oficinas.",
+      "tokens": [
+        "食堂",
+        "旁边",
+        "是",
+        "办公楼"
+      ],
+      "grammarTags": [
+        "L6"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 8,
+        "printedPage": 169
+      }
+    },
+    {
+      "id": "s-l6-4",
+      "hanzi": "学校里边有银行吗？",
+      "pinyin": "Xuéxiào lǐbian yǒu yínháng ma?",
+      "translation": "¿Hay un banco dentro de la escuela?",
+      "tokens": [
+        "学校",
+        "里边",
+        "有",
+        "银行",
+        "吗"
+      ],
+      "grammarTags": [
+        "L6"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 8,
+        "printedPage": 169
+      }
+    },
+    {
+      "id": "s-l6-5",
+      "hanzi": "等一下，你说什么？",
+      "pinyin": "Děng yíxià, nǐ shuō shénme?",
+      "translation": "Espera un momento, ¿qué dices?",
+      "tokens": [
+        "等",
+        "一下",
+        "你",
+        "说",
+        "什么"
+      ],
+      "grammarTags": [
+        "L6"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 8,
+        "printedPage": 169
+      }
+    },
+    {
+      "id": "s-l6-6",
+      "hanzi": "什么叫“胡同”？",
+      "pinyin": "Shénme jiào “hútòng”?",
+      "translation": "¿Qué significa «hutong»?",
+      "tokens": [
+        "什么",
+        "叫",
+        "胡同"
+      ],
+      "grammarTags": [
+        "L6"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 8,
+        "printedPage": 169
+      }
+    },
+    {
+      "id": "s-l6-7",
+      "hanzi": "你跟我来。",
+      "pinyin": "Nǐ gēn wǒ lái.",
+      "translation": "Ven conmigo.",
+      "tokens": [
+        "你",
+        "跟",
+        "我",
+        "来"
+      ],
+      "grammarTags": [
+        "L6"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 8,
+        "printedPage": 169
+      }
+    },
+    {
+      "id": "s-l6-8",
+      "hanzi": "我给你介绍一下，好吗？",
+      "pinyin": "Wǒ gěi nǐ jièshào yíxià, hǎo ma?",
+      "translation": "Te lo presento un momento, ¿te parece?",
+      "tokens": [
+        "我",
+        "给",
+        "你",
+        "介绍",
+        "一下",
+        "好吗"
+      ],
+      "grammarTags": [
+        "L6"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 8,
+        "printedPage": 169
+      }
+    },
+    {
+      "id": "s-l6-9",
+      "hanzi": "饭馆后边有一条胡同，对吗？",
+      "pinyin": "Fànguǎn hòubian yǒu yì tiáo hútòng, duì ma?",
+      "translation": "Detrás del restaurante hay un callejón, ¿verdad?",
+      "tokens": [
+        "饭馆",
+        "后边",
+        "有",
+        "一条",
+        "胡同",
+        "对吗"
+      ],
+      "grammarTags": [
+        "L6"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
+        "pdfPage": 8,
+        "printedPage": 169
+      }
+    }
+  ]
+}

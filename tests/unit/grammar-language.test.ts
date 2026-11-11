@@ -1,9 +1,13 @@
 import { describe, expect, it } from 'vitest';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
+import { grammarGuides } from '@/data/grammar-guides';
+import { getCurriculum } from '@/seed/curriculum';
+import reference from '@/data/lesson4-study-reference.json';
+import { normalizeAnswer } from '@/lib/pinyin';
 import lesson5 from '@/data/lesson5-public.json';
 import support from '@/data/grammar-language-support.json';
-import { grammarAudio, grammarReading, grammarSentence, grammarTextSegments } from '@/lib/grammar-language';
+import { grammarAudio, grammarReading, grammarSentence, grammarTextSegments, grammarSentenceForText, grammarPracticeTokens } from '@/lib/grammar-language';
 
 describe('lesson 5 grammar reading and audio support', () => {
   it('annotates every Chinese run in the 11 grammar cards without changing the text', () => {
@@ -57,9 +61,94 @@ describe('lesson 5 grammar reading and audio support', () => {
     expect(grammarReading('一下')?.pinyin).toBe('yíxià');
     expect(grammarReading('不是')?.pinyin).toBe('bú shì');
     expect(grammarReading('干杯')?.pinyin).toBe('gānbēi');
-    for (const row of support.readings) expect(row.source).toMatch(/^data\//);
+    expect(grammarReading('别')?.spanish).not.toBe('separar');
+    for (const row of support.readings) expect(row.source).toMatch(/^(data|seed)\//);
     expect(grammarReading('un texto español 教')).toBeUndefined();
     expect(grammarAudio('未收录的全新句子')).toBeUndefined();
     expect(grammarSentence('missing')).toBeUndefined();
   });
+});
+
+
+const globalCurriculum = getCurriculum('l1-l2-l3-l4-l5-l6');
+const globalGrammar = globalCurriculum.grammar.map(point => reference.grammar.find(item => item.id === point.id) ?? point);
+function allStrings(value: unknown): string[] {
+  if (typeof value === 'string') return [value];
+  if (Array.isArray(value)) return value.flatMap(allStrings);
+  if (value && typeof value === 'object') return Object.entries(value).flatMap(([field, entry]) =>
+    ['source', 'id', 'slug', 'continuationOf', 'href', 'characterDetails'].includes(field) ? [] : allStrings(entry));
+  return [];
+}
+
+describe('grammar language coverage for the whole course', () => {
+  it('supports every visible Chinese run in all lesson rules, tables and book references', () => {
+    const texts = allStrings([globalGrammar, reference.bookReference]);
+    for (const text of texts) {
+      const parts = grammarTextSegments(text);
+      expect(parts.map(part => part.text).join('')).toBe(text);
+      for (const part of parts) if (/\p{Script=Han}/u.test(part.text)) {
+        expect(part.reading?.pinyin, text).toBeTruthy();
+        expect(part.reading?.spanish, text).toBeTruthy();
+      }
+    }
+    for (const point of globalGrammar) for (const example of point.examples) {
+      expect(grammarReading(example)?.pinyin, example).toBeTruthy();
+      expect(grammarReading(example)?.spanish, example).toBeTruthy();
+      const audio = grammarAudio(example);
+      if (example === '别着急，林小姐。') { expect(audio).toBeUndefined(); continue; }
+      expect(audio, example).toBeTruthy();
+      for (const clip of Array.isArray(audio) ? audio : [audio!]) expect(existsSync(join(process.cwd(), 'public', clip)), example).toBe(true);
+    }
+  });
+
+  it('finds every source sentence by its stable ID and text, with readable tokens', () => {
+    for (const sentence of globalCurriculum.sentences) {
+      expect(grammarSentence(sentence.id)).toEqual(sentence);
+      expect(grammarSentenceForText(sentence.hanzi)?.hanzi).toBe(sentence.hanzi);
+      for (const token of sentence.tokens) {
+        expect(grammarReading(token)?.pinyin, `${sentence.id}: ${token}`).toBeTruthy();
+        expect(grammarReading(token)?.spanish, `${sentence.id}: ${token}`).toBeTruthy();
+      }
+    }
+  });
+
+  it('keeps all original exercise answers reconstructible and audible', () => {
+    const missing: string[] = [];
+    for (const exercise of globalCurriculum.exercises.filter(item => item.dimension === 'grammar')) {
+      const tokens = grammarPracticeTokens(exercise.answer);
+      expect(normalizeAnswer(tokens.join('')), exercise.id).toBe(normalizeAnswer(exercise.answer));
+      const sources = grammarAudio(exercise.answer);
+      if (!sources) missing.push(`${exercise.id}: ${exercise.answer}`);
+      else for (const source of Array.isArray(sources) ? sources : [sources]) {
+        expect(existsSync(join(process.cwd(), 'public', source)), exercise.id).toBe(true);
+      }
+    }
+    expect(missing).toEqual([]);
+  });
+
+  it('does not silently remove numbers, foreign text, alternatives or error markers from audio', () => {
+    expect(grammarAudio('他是A')).toBeUndefined();
+    expect(grammarAudio('我有100元')).toBeUndefined();
+    expect(grammarAudio('*我去学校昨天')).toBeUndefined();
+    expect(grammarAudio('✗ 也我很好')).toBeUndefined();
+    expect(grammarAudio('你 / ?')).toBeUndefined();
+    const transformation = grammarAudio('他很忙。→ 他忙吗？');
+    expect(Array.isArray(transformation)).toBe(true);
+    expect((transformation as string[]).length).toBeGreaterThanOrEqual(2);
+  });
+});
+
+
+it('covers every guide example with complete reading and verified audio', () => {
+  for (const guide of Object.values(grammarGuides)) {
+    if (!guide.example) continue;
+    const reading = grammarReading(guide.example);
+    expect(reading?.pinyin, guide.example).toBeTruthy();
+    expect(reading?.spanish, guide.example).toBeTruthy();
+    const audio = grammarAudio(guide.example);
+    expect(audio, guide.example).toBeTruthy();
+    for (const clip of Array.isArray(audio) ? audio : [audio!]) {
+      expect(existsSync(join(process.cwd(), 'public', clip)), guide.example).toBe(true);
+    }
+  }
 });

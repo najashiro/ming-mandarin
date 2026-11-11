@@ -13,6 +13,8 @@ test('L5: ayudas universales e independientes, visibles al empezar y persistente
   const pattern = topic.locator('.grammar-pattern-guide');
   const practice = page.locator('.grammar-practice');
   const wishToken = practice.getByRole('button', { name: 'Añadir: 祝', exact: true });
+  await expect(practice.getByRole('radio')).toHaveCount(0);
+  await expect(practice).not.toContainText(/Lo sé|Dudé|Tengo dudas|Estoy aprendiendo/);
   await expect(pinyin).toHaveAttribute('aria-pressed', 'true');
   await expect(spanish).toHaveAttribute('aria-pressed', 'true');
   await expect(pattern.locator('.grammar-reading-pinyin').first()).toBeVisible();
@@ -168,8 +170,8 @@ test('L5: sesión finita de 22 frases y reinicio limpio', async ({ page }) => {
   await expect(practice.locator('.grammar-practice-bank').getByRole('button', { name: `Añadir: ${lesson5.sentences[0].tokens[0]}`, exact: true })).toBeEnabled();
 });
 
-test('L5: un error permite estudiar el modelo, reintentar y guardar el progreso', async ({ page }) => {
-  const attempts: Array<{ exerciseId: string; answer: string; selfRating: string; hintsUsed: number }> = [];
+test('L5: un error permite estudiar el modelo, reintentar y guardar sin autoevaluación', async ({ page }) => {
+  const attempts: Array<{ exerciseId: string; answer: string; hintsUsed: number }> = [];
   await page.route('**/api/practice', route => {
     attempts.push(route.request().postDataJSON());
     return route.fulfill({ json: { xp: 8 } });
@@ -178,7 +180,7 @@ test('L5: un error permite estudiar el modelo, reintentar y guardar el progreso'
   const practice = page.locator('.grammar-practice');
   const bank = practice.locator('.grammar-practice-bank');
   const sentence = lesson5.sentences[0];
-  await practice.getByRole('radio', { name: 'Lo sé', exact: true }).check();
+  await expect(practice.getByRole('radio')).toHaveCount(0);
   for (const token of [...sentence.tokens].reverse()) {
     await bank.getByRole('button', { name: `Añadir: ${token}`, exact: true }).and(bank.locator('button:enabled')).first().click();
   }
@@ -191,7 +193,7 @@ test('L5: un error permite estudiar el modelo, reintentar y guardar el progreso'
   await expect(feedback.getByRole('button', { name: 'Escuchar respuesta', exact: true })).toBeVisible();
   await practice.getByRole('button', { name: 'Intentar de nuevo', exact: true }).click();
   await expect(practice.locator('.grammar-practice-answer').getByRole('button')).toHaveCount(0);
-  await expect(practice.getByRole('radio', { name: 'Tengo dudas', exact: true })).toBeChecked();
+  await expect(practice.getByRole('radio')).toHaveCount(0);
   await practice.getByRole('button', { name: 'Ver modelo de apoyo', exact: true }).click();
   await expect(practice.locator('.grammar-practice-model')).toContainText(sentence.hanzi);
   for (const token of sentence.tokens) {
@@ -201,6 +203,7 @@ test('L5: un error permite estudiar el modelo, reintentar y guardar el progreso'
   await expect(feedback).toContainText('¡Bien hecho!');
   await expect(feedback).toContainText('Progreso guardado · +8 XP');
   await expect.poll(() => attempts.length).toBe(2);
-  expect(attempts[0]).toMatchObject({ exerciseId: `l5-order-${sentence.id}`, selfRating: 'know', hintsUsed: 0 });
-  expect(attempts[1]).toMatchObject({ exerciseId: `l5-order-${sentence.id}`, answer: sentence.tokens.join(''), selfRating: 'doubt', hintsUsed: 1 });
+  expect(attempts[0]).toMatchObject({ exerciseId: `l5-order-${sentence.id}`, hintsUsed: 0 });
+  expect(attempts[1]).toMatchObject({ exerciseId: `l5-order-${sentence.id}`, answer: sentence.tokens.join(''), hintsUsed: 1 });
+  for (const attempt of attempts) expect(attempt).not.toHaveProperty('selfRating');
 });

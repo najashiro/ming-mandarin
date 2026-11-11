@@ -16,7 +16,13 @@
 .grammar-topic-menu { padding:12px 0; min-width:0; }
 .grammar-topic-menu h2 { margin:0 0 10px; font:600 25px/1.2 Georgia,serif; }
 .grammar-topic-menu > p:not(.eyebrow) { font-size:14px; color:var(--muted); line-height:1.6; margin:0 0 20px; }
-.grammar-topic-menu nav { display:grid; gap:5px; }
+.grammar-topic-menu nav { display:grid; gap:5px; max-height:65vh; overflow-y:auto; overscroll-behavior:contain; }
+.grammar-topic-menu nav button { scroll-margin-top:230px; scroll-margin-bottom:85px; }
+.grammar-hanzi-hint { font-size:12px; line-height:1.6; color:var(--muted); margin:-12px 0 22px; }
+.grammar-study .linked-chinese-text { font:inherit; }
+.grammar-study .linked-hanzi:hover { color:var(--jade); background:var(--jade-soft); }
+.grammar-study .grammar-source-table { overflow-wrap:anywhere; }
+.grammar-study .book-reference { margin-top:36px; }
 .grammar-topic-menu nav button { display:flex; gap:11px; align-items:center; width:100%; min-height:48px; text-align:left; border:1px solid transparent; border-radius:10px; padding:10px; background:transparent; font-size:14px; color:#536359; line-height:1.4; }
 .grammar-topic-menu nav button:hover { background:#ffffffa6; }
 .grammar-topic-menu nav button[aria-current=step] { color:var(--jade-dark); background:var(--jade-soft); border-color:#bed2c6; font-weight:700; }
@@ -75,7 +81,7 @@
   .grammar-topic-menu h2 { font-size:21px; }
   .grammar-topic-menu .eyebrow { margin-bottom:8px; }
   .grammar-topic-menu > p:not(.eyebrow) { margin-bottom:12px; }
-  .grammar-topic-menu nav { display:flex; overflow-x:auto; padding-bottom:8px; scroll-snap-type:x proximity; }
+  .grammar-topic-menu nav { display:flex; overflow-x:auto; overflow-y:hidden; max-height:none; padding-bottom:8px; scroll-snap-type:x proximity; }
   .grammar-topic-menu nav button { width:auto; flex:0 0 185px; scroll-snap-align:start; }
   .grammar-practice-link { margin-top:4px; padding:10px; }
   .grammar-study-topic { padding:21px 17px; border-radius:14px; }

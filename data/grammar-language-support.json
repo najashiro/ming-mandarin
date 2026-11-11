@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "note": "Learner aids for existing L5 text. Editorial translations and segmentation are separate from documentary/source fields; no curriculum IDs or source exports changed.",
+  "version": 2,
+  "note": "Learner aids for existing lesson 1–6 grammar. Editorial translations, technical labels and segmentation are separate from documentary/source fields; no curriculum IDs or source exports changed.",
   "readings": [
     {
       "hanzi": "一个",
@@ -631,6 +631,510 @@
       "spanish": "esto",
       "origin": "existing_corpus_reading",
       "source": "data/lessons123-public.json#v-这"
+    },
+    {
+      "hanzi": "他很忙。",
+      "pinyin": "Tā hěn máng.",
+      "spanish": "Él está muy ocupado.",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/grammar.ts#g-ma"
+    },
+    {
+      "hanzi": "他忙吗？",
+      "pinyin": "Tā máng ma?",
+      "spanish": "¿Está ocupado él?",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/grammar.ts#g-ma"
+    },
+    {
+      "hanzi": "林娜在。",
+      "pinyin": "Lín Nà zài.",
+      "spanish": "Lin Na está aquí.",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/grammar.ts#g-ma"
+    },
+    {
+      "hanzi": "丁力波很忙。",
+      "pinyin": "Dīng Lìbō hěn máng.",
+      "spanish": "Ding Libo está muy ocupado.",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/grammar.ts#g-hen"
+    },
+    {
+      "hanzi": "她不太累。",
+      "pinyin": "Tā bú tài lèi.",
+      "spanish": "Ella no está muy cansada.",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/grammar.ts#g-bu-tai"
+    },
+    {
+      "hanzi": "我叫林娜。你呢？",
+      "pinyin": "Wǒ jiào Lín Nà. Nǐ ne?",
+      "spanish": "Me llamo Lin Na. ¿Y tú?",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/grammar.ts#g-ne"
+    },
+    {
+      "hanzi": "他姓宋。",
+      "pinyin": "Tā xìng Sòng.",
+      "spanish": "Su apellido es Song.",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/grammar.ts#g-order"
+    },
+    {
+      "hanzi": "他不是老师。",
+      "pinyin": "Tā bú shì lǎoshī.",
+      "spanish": "Él no es profesor.",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#g-l2-shi"
+    },
+    {
+      "hanzi": "米饭和面条",
+      "pinyin": "mǐfàn hé miàntiáo",
+      "spanish": "arroz y fideos",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#g-l2-he"
+    },
+    {
+      "hanzi": "汉语和西班牙语",
+      "pinyin": "Hànyǔ hé Xībānyáyǔ",
+      "spanish": "chino y español",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#g-l2-he"
+    },
+    {
+      "hanzi": "我喜欢吃饺子。",
+      "pinyin": "Wǒ xǐhuan chī jiǎozi.",
+      "spanish": "Me gusta comer jiaozi.",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#g-l2-xihuan"
+    },
+    {
+      "hanzi": "我喜欢咖啡。",
+      "pinyin": "Wǒ xǐhuan kāfēi.",
+      "spanish": "Me gusta el café.",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#g-l2-xihuan"
+    },
+    {
+      "hanzi": "我会说汉语。",
+      "pinyin": "Wǒ huì shuō Hànyǔ.",
+      "spanish": "Sé hablar chino.",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#g-l2-hui"
+    },
+    {
+      "hanzi": "他不会说法语。",
+      "pinyin": "Tā bú huì shuō Fǎyǔ.",
+      "spanish": "Él no sabe hablar francés.",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#g-l2-hui"
+    },
+    {
+      "hanzi": "他刚到北京。",
+      "pinyin": "Tā gāng dào Běijīng.",
+      "spanish": "Él acaba de llegar a Pekín.",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#g-l2-gang"
+    },
+    {
+      "hanzi": "我家的照片",
+      "pinyin": "wǒ jiā de zhàopiàn",
+      "spanish": "la foto de mi familia",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#g-l3-de"
+    },
+    {
+      "hanzi": "我爸爸",
+      "pinyin": "wǒ bàba",
+      "spanish": "mi papá",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#s-l3-doctor"
+    },
+    {
+      "hanzi": "四口人",
+      "pinyin": "sì kǒu rén",
+      "spanish": "cuatro miembros de la familia",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#s-l3-four"
+    },
+    {
+      "hanzi": "两个人",
+      "pinyin": "liǎng ge rén",
+      "spanish": "dos personas",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#g-l3-classifiers"
+    },
+    {
+      "hanzi": "两口人",
+      "pinyin": "liǎng kǒu rén",
+      "spanish": "dos miembros de la familia",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#g-l3-liang"
+    },
+    {
+      "hanzi": "你女儿几岁？",
+      "pinyin": "Nǐ nǚ'ér jǐ suì?",
+      "spanish": "¿Cuántos años tiene tu hija?",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#g-l3-question-words"
+    },
+    {
+      "hanzi": "我还有两个姐姐。",
+      "pinyin": "Wǒ hái yǒu liǎng ge jiějie.",
+      "spanish": "También tengo dos hermanas mayores.",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#g-l3-hai"
+    },
+    {
+      "hanzi": "她今年八岁。",
+      "pinyin": "Tā jīnnián bā suì.",
+      "spanish": "Ella tiene ocho años este año.",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#g-l3-age"
+    },
+    {
+      "hanzi": "右边的楼是新同学的宿舍楼。",
+      "pinyin": "Yòubian de lóu shì xīn tóngxué de sùshèlóu.",
+      "spanish": "El edificio de la derecha es la residencia de los alumnos nuevos.",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson6-public.json#g-l6-locatives"
+    },
+    {
+      "hanzi": "学校里边有银行。",
+      "pinyin": "Xuéxiào lǐbian yǒu yínháng.",
+      "spanish": "Hay un banco dentro de la escuela.",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson6-public.json#g-l6-existence"
+    },
+    {
+      "hanzi": "在中国",
+      "pinyin": "zài Zhōngguó",
+      "spanish": "en China",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson6-public.json#g-l6-li"
+    },
+    {
+      "hanzi": "在北京",
+      "pinyin": "zài Běijīng",
+      "spanish": "en Pekín",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson6-public.json#g-l6-li"
+    },
+    {
+      "hanzi": "一条",
+      "pinyin": "yì tiáo",
+      "spanish": "una (para cosas alargadas)",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson6-public.json#sentences"
+    },
+    {
+      "hanzi": "上海人",
+      "pinyin": "Shànghǎi rén",
+      "spanish": "persona de Shanghái",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#s-l2-parents"
+    },
+    {
+      "hanzi": "什么工作",
+      "pinyin": "shénme gōngzuò",
+      "spanish": "qué trabajo",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#s-l3-work-father"
+    },
+    {
+      "hanzi": "今天晚上",
+      "pinyin": "jīntiān wǎnshang",
+      "spanish": "esta noche",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#s-l3-piano"
+    },
+    {
+      "hanzi": "会说",
+      "pinyin": "huì shuō",
+      "spanish": "saber hablar",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#s-l2-languages"
+    },
+    {
+      "hanzi": "你家",
+      "pinyin": "nǐ jiā",
+      "spanish": "tu familia / tu casa",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#s-l3-how-many"
+    },
+    {
+      "hanzi": "你爸爸",
+      "pinyin": "nǐ bàba",
+      "spanish": "tu papá",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#s-l3-work-father"
+    },
+    {
+      "hanzi": "六个人",
+      "pinyin": "liù ge rén",
+      "spanish": "seis personas",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#s-l3-six"
+    },
+    {
+      "hanzi": "几口人",
+      "pinyin": "jǐ kǒu rén",
+      "spanish": "cuántos miembros de la familia",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#s-l3-how-many"
+    },
+    {
+      "hanzi": "好吗",
+      "pinyin": "hǎo ma",
+      "spanish": "¿de acuerdo?",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson6-public.json#g-l6-confirmation"
+    },
+    {
+      "hanzi": "对吗",
+      "pinyin": "duì ma",
+      "spanish": "¿es correcto?",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson6-public.json#g-l6-confirmation"
+    },
+    {
+      "hanzi": "我们家",
+      "pinyin": "wǒmen jiā",
+      "spanish": "nuestra familia / nuestra casa",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#s-l3-dog"
+    },
+    {
+      "hanzi": "我家",
+      "pinyin": "wǒ jiā",
+      "spanish": "mi familia / mi casa",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#s-l3-four"
+    },
+    {
+      "hanzi": "我弟弟",
+      "pinyin": "wǒ dìdi",
+      "spanish": "mi hermano menor",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#s-l3-not-younger"
+    },
+    {
+      "hanzi": "我朋友",
+      "pinyin": "wǒ péngyou",
+      "spanish": "mi amigo",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#s-l2-introduce"
+    },
+    {
+      "hanzi": "我爸爸妈妈",
+      "pinyin": "wǒ bàba māma",
+      "spanish": "mi papá y mi mamá",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#s-l2-parents"
+    },
+    {
+      "hanzi": "汉西英",
+      "pinyin": "Hàn Xī Yīng",
+      "spanish": "chino, español e inglés",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-public.json#sentences"
+    },
+    {
+      "hanzi": "还是",
+      "pinyin": "háishi",
+      "spanish": "o (en una pregunta de elección)",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/curriculum.ts#s-l2-drink"
+    },
+    {
+      "hanzi": "注释",
+      "pinyin": "zhùshì",
+      "spanish": "notas",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-study-reference.json#grammar"
+    },
+    {
+      "hanzi": "动词谓语句",
+      "pinyin": "dòngcí wèiyǔjù",
+      "spanish": "oración con predicado verbal",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-study-reference.json#grammar"
+    },
+    {
+      "hanzi": "构成的省略问句",
+      "pinyin": "gòuchéng de shěnglüè wènjù",
+      "spanish": "pregunta elíptica formada con…",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-study-reference.json#grammar"
+    },
+    {
+      "hanzi": "正反疑问句",
+      "pinyin": "zhèngfǎn yíwènjù",
+      "spanish": "pregunta afirmativo-negativa",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-study-reference.json#grammar"
+    },
+    {
+      "hanzi": "汉字知识",
+      "pinyin": "Hànzì zhīshi",
+      "spanish": "conocimientos sobre los caracteres chinos",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-study-reference.json#grammar"
+    },
+    {
+      "hanzi": "的称数法",
+      "pinyin": "de chēngshùfǎ",
+      "spanish": "forma de contar de…",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-study-reference.json#grammar"
+    },
+    {
+      "hanzi": "表时间的词语做状语",
+      "pinyin": "biǎo shíjiān de cíyǔ zuò zhuàngyǔ",
+      "spanish": "expresiones de tiempo como complemento circunstancial",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-study-reference.json#grammar"
+    },
+    {
+      "hanzi": "钟点读法",
+      "pinyin": "zhōngdiǎn dúfǎ",
+      "spanish": "cómo decir la hora",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-study-reference.json#grammar"
+    },
+    {
+      "hanzi": "方位词",
+      "pinyin": "fāngwèicí",
+      "spanish": "palabras de ubicación",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson6-public.json#g-l6-locatives"
+    },
+    {
+      "hanzi": "点",
+      "pinyin": "diǎn",
+      "spanish": "punto; hora (en el reloj)",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-study-reference.json#grammar"
+    },
+    {
+      "hanzi": "钟",
+      "pinyin": "zhōng",
+      "spanish": "reloj; hora",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-study-reference.json#grammar"
+    },
+    {
+      "hanzi": "再",
+      "pinyin": "zài",
+      "spanish": "después / de nuevo",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson6-public.json#g-l6-xian"
+    },
+    {
+      "hanzi": "对不起",
+      "pinyin": "duìbuqǐ",
+      "spanish": "lo siento / disculpa",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson6-public.json#g-l6-confirmation"
+    },
+    {
+      "hanzi": "谈学习",
+      "pinyin": "tán xuéxí",
+      "spanish": "hablar sobre los estudios",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-study-reference.json#bookReference"
+    },
+    {
+      "hanzi": "约会",
+      "pinyin": "yuēhuì",
+      "spanish": "proponer una cita",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-study-reference.json#bookReference"
+    },
+    {
+      "hanzi": "问时间",
+      "pinyin": "wèn shíjiān",
+      "spanish": "preguntar la hora",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-study-reference.json#bookReference"
+    },
+    {
+      "hanzi": "问专业",
+      "pinyin": "wèn zhuānyè",
+      "spanish": "preguntar la especialidad",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-study-reference.json#bookReference"
+    },
+    {
+      "hanzi": "立刀旁",
+      "pinyin": "lìdāopáng",
+      "spanish": "radical lateral de cuchillo",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-study-reference.json#bookReference"
+    },
+    {
+      "hanzi": "日字旁",
+      "pinyin": "rìzìpáng",
+      "spanish": "radical de sol",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-study-reference.json#bookReference"
+    },
+    {
+      "hanzi": "刂",
+      "pinyin": "lìdāopáng",
+      "spanish": "radical lateral de cuchillo",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-study-reference.json#bookReference"
+    },
+    {
+      "hanzi": "他很忙。→ 他忙吗？",
+      "pinyin": "Tā hěn máng. → Tā máng ma?",
+      "spanish": "Él está muy ocupado. → ¿Está ocupado él?",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/grammar.ts#g-ma"
+    },
+    {
+      "hanzi": "林娜在。→ 林娜在吗？",
+      "pinyin": "Lín Nà zài. → Lín Nà zài ma?",
+      "spanish": "Lin Na está aquí. → ¿Está Lin Na aquí?",
+      "origin": "editorial_grammar_aid",
+      "source": "seed/grammar.ts#g-ma"
+    },
+    {
+      "hanzi": "下午两点一刻还有口语课。",
+      "pinyin": "Xiàwǔ liǎng diǎn yí kè hái yǒu kǒuyǔ kè.",
+      "spanish": "A las dos y cuarto de la tarde también tengo clase de chino oral.",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-study-reference.json#GR-L4-BOOK-04-04-02"
+    },
+    {
+      "hanzi": "对了，你明天晚上有没有时间？",
+      "pinyin": "Duìle, nǐ míngtiān wǎnshang yǒu méiyǒu shíjiān?",
+      "spanish": "A propósito, ¿tienes tiempo mañana por la noche?",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-study-reference.json#GR-L4-BOOK-04-05-01"
+    },
+    {
+      "hanzi": "我们一起去吧。",
+      "pinyin": "Wǒmen yìqǐ qù ba.",
+      "spanish": "Vamos juntos.",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-study-reference.json#GR-L4-BOOK-04-05-02"
+    },
+    {
+      "hanzi": "恐怕不行。",
+      "pinyin": "Kǒngpà bù xíng.",
+      "spanish": "Me temo que no.",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-study-reference.json#GR-L4-BOOK-04-05-03"
+    },
+    {
+      "hanzi": "七点半我回学校，我们班有活动。",
+      "pinyin": "Qī diǎn bàn wǒ huí xuéxiào, wǒmen bān yǒu huódòng.",
+      "spanish": "A las siete y media vuelvo a la escuela; nuestra clase tiene una actividad.",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson4-study-reference.json#GR-L4-BOOK-04-07-01"
     }
   ]
 }

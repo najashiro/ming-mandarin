@@ -6,6 +6,19 @@ import { examQuestionsForSeed, examTotal } from '@/seed/exam';
 import { vocabulary } from '@/seed/vocabulary';
 import { exercises } from '@/seed/exercises';
 describe('dominio de aprendizaje',()=>{
+  it('no penaliza una respuesta correcta cuando la práctica no solicita autoevaluación', () => {
+    const input = { previousMastery: 20, previousStability: 1, difficulty: 2, correct: true, now: 1_000_000 };
+    const objective = computeMasteryUpdate(input);
+    expect(objective.mastery).toBe(30);
+    expect(objective).toEqual(computeMasteryUpdate({ ...input, selfRating: 'know' }));
+    expect(computeMasteryUpdate({ ...input, selfRating: 'doubt' }).mastery).toBeCloseTo(28.2);
+    expect(computeMasteryUpdate({ ...input, selfRating: 'unknown' }).mastery).toBeCloseTo(26.5);
+    for (const selfRating of [undefined, 'know', 'doubt', 'unknown'] as const) {
+      const incorrect = computeMasteryUpdate({ ...input, correct: false, selfRating });
+      expect(incorrect.mastery).toBe(11);
+      expect(incorrect.nextReviewAt).toBe(input.now + 600_000);
+    }
+  });
   it('programa aciertos en el futuro y fallos en diez minutos',()=>{const now=1_000_000;const right=computeMasteryUpdate({previousMastery:20,previousStability:1,difficulty:2,correct:true,selfRating:'know',now});const wrong=computeMasteryUpdate({previousMastery:20,previousStability:1,difficulty:2,correct:false,now});expect(right.mastery).toBeGreaterThan(20);expect(right.nextReviewAt).toBeGreaterThanOrEqual(now+86_400_000);expect(wrong.mastery).toBe(11);expect(wrong.nextReviewAt).toBe(now+600_000);});
   it('califica en servidor desde respuestas, no desde un score del cliente',()=>{expect(examTotal).toBe(100);expect(scoreExamAnswers(perfectAnswerFixture()).score).toBe(100);expect(scoreExamAnswers({}).score).toBe(0);});
   it('selecciona dos preguntas Hanzi equilibradas sin evaluar el inventario completo',()=>{for(const seed of ['a','b','c','d']){const questions=examQuestionsForSeed(seed);expect(questions).toHaveLength(20);expect(questions.filter(item=>item.section==='hanzi')).toHaveLength(2);expect(questions.reduce((sum,item)=>sum+item.points,0)).toBe(100);}});

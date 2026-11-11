@@ -1,18 +1,20 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState, type DragEvent } from 'react';
 import Link from 'next/link';
-import type { Exercise } from '@/data/types';
-import { grammarReading, grammarSentence } from '@/lib/grammar-language';
+import { usePathname } from 'next/navigation';
+import type { Exercise, SentenceEntry } from '@/data/types';
+import { grammarAudio, grammarReading, grammarTextSegments } from '@/lib/grammar-language';
+import { grammarPracticeModel } from '@/lib/grammar-practice';
 import { compareExerciseAnswer } from '@/lib/pinyin';
 import { trackAnalyticsEvent } from '@/lib/analytics/client';
 import { Hanzi } from './Hanzi';
+import { LinkedChineseText } from './LinkedChineseText';
 import { PinyinText } from './PinyinText';
 import { SpeakButton, stopMandarinAudio } from './SpeakButton';
 import './grammar-practice.css';
 
-type Props = { exercises: Exercise[]; showPinyin: boolean; showSpanish: boolean };
-type Rating = 'know' | 'doubt' | 'unknown';
+type Props = { exercises: Exercise[]; showPinyin: boolean; showSpanish: boolean; returnTo?: string; sentences?: SentenceEntry[] };
 type SaveState = 'idle' | 'saving' | 'saved' | 'guest' | 'unavailable';
 
 // Reading guidance for the existing sentence models; curriculum stays unchanged.
@@ -54,12 +56,21 @@ function PracticeWord({ id, text, showPinyin, showSpanish }: { id: string; text:
   </span>;
 }
 
-export function GrammarPractice({ exercises, showPinyin, showSpanish }: Props) {
+function SupportedInstruction({ text, showPinyin, showSpanish, returnTo }: { text: string; showPinyin: boolean; showSpanish: boolean; returnTo: string }) {
+  return <>{grammarTextSegments(text).map((segment, index) => segment.reading
+    ? <span className="grammar-practice-inline-reading" key={index}>
+      <LinkedChineseText text={segment.text} returnTo={returnTo} newTab />
+      {showPinyin && <PinyinText>{segment.reading.pinyin}</PinyinText>}
+      {showSpanish && <span className="grammar-practice-translation">{segment.reading.spanish}</span>}
+    </span>
+    : <Hanzi key={index}>{segment.text}</Hanzi>)}</>;
+}
+
+export function GrammarPractice({ exercises, showPinyin, showSpanish, returnTo, sentences }: Props) {
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<number[]>([]);
   const [result, setResult] = useState<boolean | null>(null);
   const [firstResults, setFirstResults] = useState<boolean[]>([]);
-  const [rating, setRating] = useState<Rating>('doubt');
   const [showModel, setShowModel] = useState(false);
   const [saveState, setSaveState] = useState<SaveState>('idle');
   const [xp, setXp] = useState<number | null>(null);
@@ -69,6 +80,8 @@ export function GrammarPractice({ exercises, showPinyin, showSpanish }: Props) {
   const usedModel = useRef(false);
   const questionRef = useRef<HTMLHeadingElement>(null);
   const summaryRef = useRef<HTMLHeadingElement>(null);
+  const pathname = usePathname();
+  const studyReturnTo = returnTo ?? pathname ?? '/course';
 
   useEffect(() => {
     startedAt.current = Date.now();
@@ -77,8 +90,10 @@ export function GrammarPractice({ exercises, showPinyin, showSpanish }: Props) {
   }, []);
 
   const exercise = exercises[index];
-  const sentence = exercise ? grammarSentence(exercise.itemId) : undefined;
-  const options = exercise?.options ?? [];
+  const sentence = useMemo(() => exercise ? grammarPracticeModel(exercise, sentences) : undefined, [exercise, sentences]);
+  const audio = useMemo(() => sentence ? grammarAudio(sentence.hanzi) : undefined, [sentence]);
+  const segmentedAudio = Array.isArray(audio);
+  const options = sentence?.options ?? [];
   const answer = selected.map(position => options[position]).join('');
   const completed = Math.min(index + (result === null ? 0 : 1), exercises.length);
   const allSelected = options.length > 0 && selected.length === options.length;
@@ -91,6 +106,36 @@ export function GrammarPractice({ exercises, showPinyin, showSpanish }: Props) {
 
   function removeWord(position: number) {
     if (!checked.current) setSelected(previous => previous.filter(item => item !== position));
+  }
+
+  function startDragging(event: DragEvent<HTMLElement>, position: number) {
+    if (!exercise || checked.current) { event.preventDefault(); return; }
+    event.dataTransfer.effectAllowed = 'move';
+    event.dataTransfer.setData('application/x-ming-grammar-token', JSON.stringify([exercise.id, position]));
+  }
+
+  function acceptDrag(event: DragEvent<HTMLElement>) {
+    if (!checked.current && event.dataTransfer.types.includes('application/x-ming-grammar-token')) {
+      event.preventDefault();
+      event.dataTransfer.dropEffect = 'move';
+    }
+  }
+
+  function dropWord(event: DragEvent<HTMLElement>, beforePosition?: number) {
+    if (!exercise || checked.current) return;
+    let payload: unknown;
+    try { payload = JSON.parse(event.dataTransfer.getData('application/x-ming-grammar-token')); } catch { return; }
+    if (!Array.isArray(payload) || payload[0] !== exercise.id || !Number.isInteger(payload[1]) || payload[1] < 0 || payload[1] >= options.length) return;
+    const position = payload[1] as number;
+    event.preventDefault();
+    event.stopPropagation();
+    if (position === beforePosition) return;
+    setSelected(previous => {
+      const remaining = previous.filter(item => item !== position);
+      const insertion = beforePosition === undefined ? remaining.length : remaining.indexOf(beforePosition);
+      const offset = insertion < 0 ? remaining.length : insertion;
+      return [...remaining.slice(0, offset), position, ...remaining.slice(offset)];
+    });
   }
 
   function revealModel() {
@@ -116,7 +161,6 @@ export function GrammarPractice({ exercises, showPinyin, showSpanish }: Props) {
           exerciseId: exercise.id,
           answer,
           responseMs: Date.now() - startedAt.current,
-          selfRating: rating,
           hintsUsed: Number(usedModel.current),
         }),
       });
@@ -140,7 +184,6 @@ export function GrammarPractice({ exercises, showPinyin, showSpanish }: Props) {
     startedAt.current = Date.now();
     setSelected([]);
     setResult(null);
-    setRating('doubt');
     setShowModel(false);
     setSaveState('idle');
     setXp(null);
@@ -169,10 +212,10 @@ export function GrammarPractice({ exercises, showPinyin, showSpanish }: Props) {
   if (!exercises.length) return null;
 
   const model = sentence && <div className="grammar-practice-model">
-    <p className="grammar-practice-model-hanzi"><Hanzi>{sentence.hanzi}</Hanzi></p>
-    {showPinyin && <p><PinyinText>{sentence.pinyin}</PinyinText></p>}
-    {showSpanish && <p className="grammar-practice-model-translation">{sentence.translation}</p>}
-    {sentenceOrderHints[sentence.id] && <p className="grammar-practice-order-hint"><strong>Fíjate en el orden:</strong> {sentenceOrderHints[sentence.id]}</p>}
+    <p className="grammar-practice-model-hanzi"><LinkedChineseText text={sentence.hanzi} returnTo={studyReturnTo} newTab /></p>
+    {showPinyin && sentence.pinyin && <p><PinyinText>{sentence.pinyin}</PinyinText></p>}
+    {showSpanish && sentence.spanish && <p className="grammar-practice-model-translation">{sentence.spanish}</p>}
+    {exercise && <p className="grammar-practice-order-hint"><strong>Fíjate en el orden:</strong> <SupportedInstruction text={sentenceOrderHints[exercise.itemId] ?? exercise.rule} showPinyin={showPinyin} showSpanish={showSpanish} returnTo={studyReturnTo} /></p>}
   </div>;
 
   return <section className="grammar-practice" aria-labelledby="grammar-practice-title">
@@ -186,18 +229,20 @@ export function GrammarPractice({ exercises, showPinyin, showSpanish }: Props) {
     {finished ? <div className="grammar-practice-summary">
       <span className="grammar-practice-summary-icon" aria-hidden="true">✓</span>
       <h3 ref={summaryRef} tabIndex={-1}>Práctica completada</h3>
-      <p>Has practicado {exercises.length} frases con audio.</p>
+      <p>Has practicado {exercises.length} frases.</p>
       <p><strong>{firstResults.filter(Boolean).length} de {exercises.length}</strong> correctas en el primer intento.</p>
       <p>Puedes repetir la práctica con las ayudas o desactivarlas para recordar por tu cuenta.</p>
       <button type="button" className="button button-primary" onClick={repeat}>Repetir práctica</button>
     </div> : exercise && <>
       <div className="grammar-practice-prompt">
-        <span className="grammar-practice-step">1 · Escucha y comprende</span>
-        <h3 ref={questionRef} tabIndex={-1}>{sentence?.translation ?? exercise.prompt}</h3>
-        {sentence && <div className="grammar-practice-audio">
-          <SpeakButton key={`${exercise.id}-normal`} text={sentence.hanzi} reading={sentence.pinyin} rate={1} label="Escuchar frase" ariaLabel="Escuchar frase" />
-          <SpeakButton key={`${exercise.id}-slow`} text={sentence.hanzi} reading={sentence.pinyin} rate={0.7} label="Escuchar despacio" ariaLabel="Escuchar despacio" />
+        <span className="grammar-practice-step">1 · {audio ? 'Escucha' : 'Lee'} y comprende</span>
+        <h3 ref={questionRef} tabIndex={-1}><SupportedInstruction text={exercise.type === 'order' && sentence?.spanish ? sentence.spanish : exercise.prompt} showPinyin={showPinyin} showSpanish={showSpanish} returnTo={studyReturnTo} /></h3>
+        {sentence && audio && <div className="grammar-practice-audio">
+          <SpeakButton key={`${exercise.id}-normal`} text={sentence.hanzi} audioSrc={audio} reading={sentence.pinyin} rate={1} label={segmentedAudio ? 'Escuchar por partes' : 'Escuchar frase'} ariaLabel={segmentedAudio ? 'Escuchar por partes' : 'Escuchar frase'} />
+          <SpeakButton key={`${exercise.id}-slow`} text={sentence.hanzi} audioSrc={audio} reading={sentence.pinyin} rate={0.7} label="Escuchar despacio" ariaLabel="Escuchar despacio" />
         </div>}
+        {segmentedAudio && <p className="grammar-practice-audio-note">Escucha las palabras por separado y luego une la frase al repetir.</p>}
+        {!audio && <p className="grammar-practice-audio-note">Esta frase aún no tiene audio. Puedes construirla y consultar el modelo.</p>}
         {result === null && <button className="grammar-practice-model-toggle" type="button" aria-expanded={showModel} onClick={revealModel}>{showModel ? 'Ocultar modelo' : 'Ver modelo de apoyo'}</button>}
         {showModel && result === null && model}
       </div>
@@ -206,7 +251,7 @@ export function GrammarPractice({ exercises, showPinyin, showSpanish }: Props) {
         <div className="grammar-practice-build-heading"><span className="grammar-practice-step">2 · Construye la frase</span><small>{selected.length} / {options.length} palabras</small></div>
         <p className="grammar-practice-help">Toca las palabras en orden. Para retirar una, tócala en tu respuesta.</p>
         <div className="grammar-practice-bank" role="group" aria-label="Palabras disponibles">
-          {options.map((token, position) => <button type="button" className={selected.includes(position) ? 'is-used' : ''} key={`${exercise.id}-${position}`} aria-label={`Añadir: ${token}`} aria-describedby={readingDescription(`${exercise.id}-bank-${position}`, showPinyin, showSpanish)} disabled={selected.includes(position) || result !== null} onClick={() => addWord(position)}>
+          {options.map((token, position) => <button type="button" className={selected.includes(position) ? 'is-used' : ''} key={`${exercise.id}-${position}`} aria-label={`Añadir: ${token}`} aria-describedby={readingDescription(`${exercise.id}-bank-${position}`, showPinyin, showSpanish)} disabled={selected.includes(position) || result !== null} draggable={!selected.includes(position) && result === null} onDragStart={event => startDragging(event, position)} onClick={() => addWord(position)}>
             <PracticeWord id={`${exercise.id}-bank-${position}`} text={token} showPinyin={showPinyin} showSpanish={showSpanish} />
           </button>)}
         </div>
@@ -214,8 +259,8 @@ export function GrammarPractice({ exercises, showPinyin, showSpanish }: Props) {
           <button type="button" onClick={() => { if (!checked.current) setSelected(previous => previous.slice(0, -1)); }} disabled={!selected.length || result !== null}>Deshacer</button>
           <button type="button" onClick={() => { if (!checked.current) setSelected([]); }} disabled={!selected.length || result !== null}>Borrar todo</button>
         </div></div>
-        <div className="grammar-practice-answer" role="group" aria-label="Tu frase ordenada">
-          {selected.length ? selected.map((position, order) => <button type="button" key={`${exercise.id}-${position}`} aria-label={`Quitar: ${options[position]}`} aria-describedby={readingDescription(`${exercise.id}-answer-${position}`, showPinyin, showSpanish)} disabled={result !== null} onClick={() => removeWord(position)}>
+        <div className="grammar-practice-answer" role="group" aria-label="Tu frase ordenada" onDragOver={acceptDrag} onDrop={event => dropWord(event)}>
+          {selected.length ? selected.map((position, order) => <button type="button" key={`${exercise.id}-${position}`} aria-label={`Quitar: ${options[position]}`} aria-describedby={readingDescription(`${exercise.id}-answer-${position}`, showPinyin, showSpanish)} disabled={result !== null} draggable={result === null} onDragStart={event => startDragging(event, position)} onDragOver={acceptDrag} onDrop={event => dropWord(event, position)} onClick={() => removeWord(position)}>
             <small className="grammar-practice-position" aria-hidden="true">{order + 1}</small>
             <PracticeWord id={`${exercise.id}-answer-${position}`} text={options[position]} showPinyin={showPinyin} showSpanish={showSpanish} />
           </button>) : <p>Tu frase aparecerá aquí, palabra por palabra.</p>}
@@ -223,23 +268,19 @@ export function GrammarPractice({ exercises, showPinyin, showSpanish }: Props) {
       </div>
 
       {result === null ? <div className="grammar-practice-check">
-        <fieldset className="grammar-practice-rating"><legend>¿Cómo te sientes con esta frase?</legend><div>
-          {([['know', 'Lo sé'], ['doubt', 'Tengo dudas'], ['unknown', 'Estoy aprendiendo']] as const).map(([value, label]) => <label className={rating === value ? 'is-selected' : ''} key={value}>
-            <input type="radio" name="grammar-confidence" value={value} checked={rating === value} onChange={() => setRating(value)} />{label}
-          </label>)}
-        </div></fieldset>
         <button type="button" className="button button-primary" disabled={!allSelected} onClick={() => void checkAnswer()}>Comprobar</button>
         {!allSelected && <small>Coloca todas las palabras para comprobar la frase.</small>}
       </div> : <div className={`grammar-practice-feedback ${result ? 'is-correct' : 'is-review'}`} role="status">
         <span className="grammar-practice-step">3 · Comprueba y repite</span>
         <h3>{result ? '¡Bien hecho!' : 'Vamos a repasarla'}</h3>
-        <p>{result ? 'Has colocado todas las palabras en el orden de la frase. Escúchala otra vez y repítela en voz alta.' : 'Compara tu orden con el modelo. Escucha la frase, fíjate en qué palabra va primero y vuelve a construirla.'}</p>
+        <p>{result ? `Has colocado todas las palabras en el orden de la frase. ${audio ? 'Escúchala' : 'Léela'} otra vez y repítela en voz alta.` : `Compara tu orden con el modelo. ${audio ? 'Escucha' : 'Lee'} la frase, fíjate en qué palabra va primero y vuelve a construirla.`}</p>
+        {exercise.type !== 'order' && <p className="grammar-practice-explanation"><SupportedInstruction text={exercise.explanation} showPinyin={showPinyin} showSpanish={showSpanish} returnTo={studyReturnTo} /></p>}
         {model}
-        {sentence && <div className="grammar-practice-feedback-audio"><SpeakButton text={sentence.hanzi} reading={sentence.pinyin} rate={1} label="Escuchar respuesta" ariaLabel="Escuchar respuesta" /></div>}
+        {sentence && audio && <div className="grammar-practice-feedback-audio"><SpeakButton text={sentence.hanzi} audioSrc={audio} reading={sentence.pinyin} rate={1} label={segmentedAudio ? 'Escuchar respuesta por partes' : 'Escuchar respuesta'} ariaLabel={segmentedAudio ? 'Escuchar respuesta por partes' : 'Escuchar respuesta'} /></div>}
         <div className="grammar-practice-save">
           {saveState === 'saving' && <small>Guardando tu progreso…</small>}
           {saveState === 'saved' && <small>Progreso guardado{xp !== null ? ` · +${xp} XP` : ''}.</small>}
-          {saveState === 'guest' && <small>Puedes seguir practicando. <Link href="/login?returnTo=/study/l5/grammar">Elige un nombre</Link> para guardar tu progreso.</small>}
+          {saveState === 'guest' && <small>Puedes seguir practicando. <Link href={`/login?returnTo=${encodeURIComponent(studyReturnTo)}`}>Elige un nombre</Link> para guardar tu progreso.</small>}
           {saveState === 'unavailable' && <small>La respuesta se ha comprobado, pero no se pudo guardar tu progreso. Puedes continuar practicando.</small>}
         </div>
         <div className="grammar-practice-next">

@@ -1,29 +1,54 @@
 import { test, expect } from '@playwright/test';
+import studyReference from '../../data/lesson4-study-reference.json' with { type: 'json' };
 
 test('L4: tablas de horas, orden temporal y preguntas conservan sus ayudas de lectura', async ({ page }, info) => {
   await page.goto('/study/l4/grammar');
-  await expect(page.locator('.grammar-source-table')).toHaveCount(7);
-  await expect(page.locator('.grammar-row-aid')).toHaveCount(57);
+  const navigation = page.getByTestId('grammar-topics');
+  const selectTopic = async (id: string) => {
+    await navigation.locator(`[data-topic-id="${id}"]`).click();
+    await expect(page.getByTestId('grammar-topic')).toHaveAttribute('id', id);
+  };
+  let tableCount = 0;
+  let aidCount = 0;
+  for (const point of studyReference.grammar) {
+    const tables = point.studyBlocks?.filter(block => block.kind === 'table') ?? [];
+    if (!tables.length) continue;
+    await selectTopic(point.id);
+    await expect(page.locator('.grammar-source-table')).toHaveCount(tables.length);
+    const expectedAids = tables.reduce((total, block) => total + (block.rowAids?.filter(aid => aid.pinyin).length ?? 0), 0);
+    await expect(page.locator('.grammar-row-aid')).toHaveCount(expectedAids);
+    tableCount += await page.locator('.grammar-source-table').count();
+    aidCount += await page.locator('.grammar-row-aid').count();
+  }
+  expect(tableCount).toBe(7);
+  expect(aidCount).toBe(57);
+  await selectTopic('GR-L4-BOOK-04-09-05');
   const time = page.locator('#GR-L4-BOOK-04-09-05');
   await expect(time.getByRole('table')).toBeVisible();
   await expect(time.locator('tbody tr:not(.grammar-row-aid)')).toHaveCount(8);
-  await expect(time).toContainText('两点零（líng, cero）五分');
+  await expect(time).toContainText(/两点零[\s\S]*líng, cero[\s\S]*五分/);
   await expect(time).toContainText('Las tres menos cinco.', { ignoreCase: true });
+  await selectTopic('GR-L4-BOOK-04-10-03');
   const order = page.locator('#GR-L4-BOOK-04-10-03');
   await expect(order.getByRole('table')).toHaveCount(2);
   await expect(order.getByRole('table').first().locator('th').first()).toHaveText('Sujeto');
   await expect(order.getByRole('table').last().locator('th').first()).toHaveText('Complemento circunstancial de tiempo');
+  await selectTopic('GR-L4-BOOK-04-10-06');
   await expect(page.locator('#GR-L4-BOOK-04-10-06')).toContainText('Por ejemplo');
-  await expect(page.locator('#GR-L4-BOOK-04-11-01')).toHaveCount(0);
+  await expect(navigation.locator('[data-topic-id="GR-L4-BOOK-04-11-01"]')).toHaveCount(0);
+  await selectTopic('GR-L4-BOOK-04-11-04');
   const questions = page.locator('#GR-L4-BOOK-04-11-04');
   await expect(questions.getByRole('table')).toHaveCount(2);
   await expect(questions).toContainText('¿Tiene tiempo Song Hua?');
-  await expect(page.locator('#GR-L4-BOOK-04-13-02 .grammar-clarification')).toContainText('No se añade otro 有 después de 没有');
+  await selectTopic('GR-L4-BOOK-04-13-02');
+  await expect(page.locator('#GR-L4-BOOK-04-13-02 .grammar-clarification')).toContainText(/No se añade otro 有[\s\S]*después de 没有/);
+  await selectTopic('GR-L4-BOOK-04-14-03');
   await expect(page.locator('#GR-L4-BOOK-04-14-03 .grammar-worked-example')).toHaveCount(3);
   await expect(page.locator('.book-key-phrases > li')).toHaveCount(10);
   await expect(page.locator('.book-key-phrases .pinyin-text')).toHaveCount(10);
   await expect(page.locator('.book-situations')).toContainText('cafetería');
   await expect(page.getByRole('link', { name: 'Leer diálogo 1 →', exact: true })).toHaveAttribute('href', '/study/l4/dialogues#turn-DLG-L4-BOOK-T1-1');
+  await selectTopic('GR-L4-BOOK-04-09-05');
   await time.scrollIntoViewIfNeeded();
   await time.screenshot({ path: info.outputPath('book-time-table.png') });
   await page.getByRole('link', { name: 'Leer diálogo 1 →', exact: true }).click();
