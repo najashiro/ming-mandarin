@@ -1,6 +1,7 @@
 // Editorial learner introductions to the existing grammar records. The original
 // rules, examples and documentary tables remain available in the study view.
-export const grammarGuides: Record<string, { title: string; summary: string; example?: string }> = {
+type GrammarPatternVariant = { title: string; parts: string[]; example: string; note: string };
+export const grammarGuides: Record<string, { title: string; summary: string; example?: string; patterns?: GrammarPatternVariant[] }> = {
   'g-ma': { title: 'Preguntar sí o no', summary: 'Parte de una afirmación y añade la partícula de pregunta al final. Para responder, afirma o niega la idea sin repetir esa partícula.' },
   'g-hen': { title: 'Decir cómo estás', summary: 'En chino un adjetivo puede expresar cómo está alguien sin el verbo «ser». La palabra que lo acompaña habitualmente no siempre significa «muy».' },
   'g-bu': { title: 'Negar una idea', summary: 'Coloca la negación antes del verbo o del adjetivo. Mantén a la persona al principio de la frase.' },
@@ -41,7 +42,24 @@ export const grammarGuides: Record<string, { title: string; summary: string; exa
   'GR-L4-BOOK-04-14-03': { title: 'Preguntar «¿y…?»', summary: 'Cuando el tema de la pregunta ya está claro, nombra a la otra persona o cosa y añade la partícula final. No necesitas repetir toda la pregunta.' },
   'GR-L4-BOOK-04-21-04': { title: 'Partes de un carácter', summary: 'Algunos caracteres tienen una parte arriba y otra abajo. En este primer modelo, las dos partes ocupan un espacio semejante.' },
   'GR-L4-BOOK-04-22-01': { title: 'Proporciones de un carácter', summary: 'Compara caracteres cuya parte superior es mayor con otros cuya parte inferior ocupa más espacio. Toca el carácter para estudiarlo en el motor Hanzi.' },
-  'g-l6-locatives': { title: 'Indicar una posición', summary: 'Las palabras de posición pueden nombrar un lugar o describir un nombre. Observa cuándo llevan la partícula de relación y cuándo se omite.' },
+  'g-l6-locatives': {
+    title: 'Indicar una posición',
+    summary: 'Puedes indicar una posición respecto a un lugar o identificar un objeto por su posición. Cada uso tiene su propio orden: observa los dos modelos por separado.',
+    patterns: [
+      {
+        title: 'Ubicar respecto a un lugar',
+        parts: ['Lugar de referencia', 'Palabra de posición'],
+        example: '学校里边',
+        note: 'Primero nombra el lugar de referencia y después la posición. En este uso normalmente se omite 的.',
+      },
+      {
+        title: 'Identificar algo por su posición',
+        parts: ['Palabra de posición', '的', 'Objeto'],
+        example: '右边的楼',
+        note: 'Para señalar qué objeto es, coloca la posición delante de 的 y después nombra el objeto.',
+      },
+    ],
+  },
   'g-l6-zai': { title: 'Decir dónde está algo', summary: 'Empieza por la persona o cosa conocida, añade el verbo de ubicación y termina con el lugar. También puedes preguntar dónde está o negar su ubicación.' },
   'g-l6-existence': { title: 'Decir qué hay en un lugar', summary: '«Haber» introduce algo que está en un lugar. «Ser» permite identificar lo que ocupa ese lugar. Compara los modelos de la tabla.' },
   'g-l6-gen-gei': { title: 'Decir con quién y para quién', summary: 'La compañía y la persona que recibe la acción se indican antes del verbo. Observa qué expresión introduce cada una.' },

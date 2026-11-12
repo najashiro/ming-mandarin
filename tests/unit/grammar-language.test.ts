@@ -141,14 +141,17 @@ describe('grammar language coverage for the whole course', () => {
 
 it('covers every guide example with complete reading and verified audio', () => {
   for (const guide of Object.values(grammarGuides)) {
-    if (!guide.example) continue;
-    const reading = grammarReading(guide.example);
-    expect(reading?.pinyin, guide.example).toBeTruthy();
-    expect(reading?.spanish, guide.example).toBeTruthy();
-    const audio = grammarAudio(guide.example);
-    expect(audio, guide.example).toBeTruthy();
-    for (const clip of Array.isArray(audio) ? audio : [audio!]) {
-      expect(existsSync(join(process.cwd(), 'public', clip)), guide.example).toBe(true);
+    const examples = [guide.example, ...(guide.patterns ?? []).map(pattern => pattern.example)]
+      .filter((example): example is string => Boolean(example));
+    for (const example of examples) {
+      const reading = grammarReading(example);
+      expect(reading?.pinyin, example).toBeTruthy();
+      expect(reading?.spanish, example).toBeTruthy();
+      const audio = grammarAudio(example);
+      expect(audio, example).toBeTruthy();
+      for (const clip of Array.isArray(audio) ? audio : [audio!]) {
+        expect(existsSync(join(process.cwd(), 'public', clip)), example).toBe(true);
+      }
     }
   }
 });

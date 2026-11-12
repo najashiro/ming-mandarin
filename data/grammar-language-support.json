@@ -1135,6 +1135,20 @@
       "spanish": "A las siete y media vuelvo a la escuela; nuestra clase tiene una actividad.",
       "origin": "editorial_grammar_aid",
       "source": "data/lesson4-study-reference.json#GR-L4-BOOK-04-07-01"
+    },
+    {
+      "hanzi": "学校里边",
+      "pinyin": "xuéxiào lǐbian",
+      "spanish": "dentro de la escuela",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson6-public.json#g-l6-locatives"
+    },
+    {
+      "hanzi": "右边的楼",
+      "pinyin": "yòubian de lóu",
+      "spanish": "el edificio de la derecha",
+      "origin": "editorial_grammar_aid",
+      "source": "data/lesson6-public.json#g-l6-locatives"
     }
   ]
 }

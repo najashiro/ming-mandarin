@@ -5,7 +5,7 @@ const baseURL = process.env.PLAYWRIGHT_BASE_URL ?? `http://127.0.0.1:${port}`;
 
 export default defineConfig({
   testDir: './tests/e2e',
-  testMatch: ['grammar-study.spec.ts', 'grammar-all-lessons.spec.ts', 'lesson4-book-reference.spec.ts'],
+  testMatch: ['grammar-study.spec.ts', 'grammar-all-lessons.spec.ts', 'grammar-locatives.spec.ts', 'lesson4-book-reference.spec.ts'],
   timeout: 45_000,
   workers: 2,
   use: { baseURL, trace: 'retain-on-failure', serviceWorkers: 'block' },

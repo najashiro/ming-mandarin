@@ -190,11 +190,21 @@ export function GrammarStudy({ points, exercises, sentences, returnTo = '/study/
           </details>
           {point.clarification && <p className="grammar-clarification"><SupportedText text={point.clarification} aids={aids} returnTo={topicReturnTo}/></p>}
         </header>
-        {point.pattern && <section className="grammar-pattern-guide" aria-label="Orden de la frase">
+        {(guide?.patterns?.length || point.pattern) && <section className="grammar-pattern-guide" aria-label="Orden de la frase">
           <h3><span aria-hidden="true">01</span> Observa el orden</h3>
-          <div className="grammar-pattern-parts">{point.pattern.split(/\s*(→|\+|·)\s*/).map((part, index) =>
+          {guide?.patterns?.length ? <div className="grammar-pattern-variants">{guide.patterns.map((variant, index) =>
+            <section key={variant.title} className="grammar-pattern-variant" data-testid="grammar-pattern-variant" aria-label={variant.title}>
+              <h4><span aria-hidden="true">{String.fromCharCode(65 + index)}</span>{variant.title}</h4>
+              <div className="grammar-pattern-parts">{variant.parts.map((part, partIndex) => <Fragment key={partIndex}>
+                {partIndex > 0 && <span className="grammar-pattern-connector" aria-hidden="true">+</span>}
+                <span className="grammar-pattern-part"><SupportedText text={part} aids={aids} returnTo={topicReturnTo}/></span>
+              </Fragment>)}</div>
+              <GrammarExample text={variant.example} index={index} aids={aids} returnTo={topicReturnTo}/>
+              <p className="grammar-pattern-note"><SupportedText text={variant.note} aids={aids} returnTo={topicReturnTo}/></p>
+            </section>)}</div>
+          : <div className="grammar-pattern-parts">{point.pattern.split(/\s*(→|\+|·)\s*/).map((part, index) =>
             /^[→+·]$/.test(part) ? <span className="grammar-pattern-connector" key={index} aria-hidden="true">{part}</span>
-              : <span className="grammar-pattern-part" key={index}><SupportedText text={part} aids={aids} returnTo={topicReturnTo}/></span>)}</div>
+              : <span className="grammar-pattern-part" key={index}><SupportedText text={part} aids={aids} returnTo={topicReturnTo}/></span>)}</div>}
         </section>}
         {examples.length > 0 && <section className="grammar-examples-guide" aria-label="Ejemplos de la regla">
           <h3><span aria-hidden="true">02</span> Escucha y repite</h3>

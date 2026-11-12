@@ -1479,6 +1479,11 @@
       "spanish": "derecha (lado)"
     },
     {
+      "hanzi": "右边的楼",
+      "pinyin": "yòubian de lóu",
+      "spanish": "el edificio de la derecha"
+    },
+    {
       "hanzi": "右边的楼是新同学的宿舍楼。",
       "pinyin": "Yòubian de lóu shì xīn tóngxué de sùshèlóu.",
       "spanish": "El edificio de la derecha es la residencia de los alumnos nuevos."
@@ -1992,6 +1997,11 @@
       "hanzi": "学校",
       "pinyin": "xuéxiào",
       "spanish": "escuela"
+    },
+    {
+      "hanzi": "学校里边",
+      "pinyin": "xuéxiào lǐbian",
+      "spanish": "dentro de la escuela"
     },
     {
       "hanzi": "学校里边有银行。",
@@ -4586,6 +4596,7 @@
     "可爱",
     "右",
     "右边",
+    "右边的楼",
     "号",
     "吃",
     "吃饭",
@@ -4675,6 +4686,7 @@
     "学",
     "学习",
     "学校",
+    "学校里边",
     "学生",
     "学院",
     "孩子",
