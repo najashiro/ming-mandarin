@@ -141,7 +141,7 @@ describe('grammar language coverage for the whole course', () => {
 
 it('covers every guide example with complete reading and verified audio', () => {
   for (const guide of Object.values(grammarGuides)) {
-    const examples = [guide.example, ...(guide.patterns ?? []).map(pattern => pattern.example)]
+    const examples = [guide.example]
       .filter((example): example is string => Boolean(example));
     for (const example of examples) {
       const reading = grammarReading(example);

@@ -199,8 +199,6 @@ export function GrammarStudy({ points, exercises, sentences, returnTo = '/study/
                 {partIndex > 0 && <span className="grammar-pattern-connector" aria-hidden="true">+</span>}
                 <span className="grammar-pattern-part"><SupportedText text={part} aids={aids} returnTo={topicReturnTo}/></span>
               </Fragment>)}</div>
-              <GrammarExample text={variant.example} index={index} aids={aids} returnTo={topicReturnTo}/>
-              <p className="grammar-pattern-note"><SupportedText text={variant.note} aids={aids} returnTo={topicReturnTo}/></p>
             </section>)}</div>
           : <div className="grammar-pattern-parts">{point.pattern.split(/\s*(→|\+|·)\s*/).map((part, index) =>
             /^[→+·]$/.test(part) ? <span className="grammar-pattern-connector" key={index} aria-hidden="true">{part}</span>

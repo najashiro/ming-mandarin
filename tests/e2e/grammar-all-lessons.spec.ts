@@ -100,6 +100,7 @@ for (const scope of lessons) {
       await navigation.locator(`[data-topic-id="${id}"]`).click();
       const topic = page.getByTestId('grammar-topic');
       await expect(topic).toHaveAttribute('id', id);
+      await expect(topic.locator('.grammar-pattern-guide .audio-control, .grammar-pattern-guide .audio-button'), `${scope}/${id}: paso 01 solo explica el orden`).toHaveCount(0);
       const examples = topic.getByTestId('grammar-example');
       const exampleCount = await examples.count();
       if (scope !== 'l4') expect(exampleCount, `${scope}/${id} conserva ejemplos`).toBeGreaterThan(0);

@@ -1,6 +1,6 @@
 // Editorial learner introductions to the existing grammar records. The original
 // rules, examples and documentary tables remain available in the study view.
-type GrammarPatternVariant = { title: string; parts: string[]; example: string; note: string };
+type GrammarPatternVariant = { title: string; parts: string[] };
 export const grammarGuides: Record<string, { title: string; summary: string; example?: string; patterns?: GrammarPatternVariant[] }> = {
   'g-ma': { title: 'Preguntar sí o no', summary: 'Parte de una afirmación y añade la partícula de pregunta al final. Para responder, afirma o niega la idea sin repetir esa partícula.' },
   'g-hen': { title: 'Decir cómo estás', summary: 'En chino un adjetivo puede expresar cómo está alguien sin el verbo «ser». La palabra que lo acompaña habitualmente no siempre significa «muy».' },
@@ -49,14 +49,10 @@ export const grammarGuides: Record<string, { title: string; summary: string; exa
       {
         title: 'Ubicar respecto a un lugar',
         parts: ['Lugar de referencia', 'Palabra de posición'],
-        example: '学校里边',
-        note: 'Primero nombra el lugar de referencia y después la posición. En este uso normalmente se omite 的.',
       },
       {
         title: 'Identificar algo por su posición',
         parts: ['Palabra de posición', '的', 'Objeto'],
-        example: '右边的楼',
-        note: 'Para señalar qué objeto es, coloca la posición delante de 的 y después nombra el objeto.',
       },
     ],
   },
