@@ -43,6 +43,46 @@ test('边 aparece por pinyin, por carácter, por enlace directo y dentro de las 
   await expect(page.locator('#hanzi-detail-start')).toHaveAttribute('data-character', '左');
 });
 
+for (const route of ['/study/l6/hanzi', '/lesson/1/hanzi']) {
+  test(`旁 muestra palabras y una sola frase por tarjeta en ${route}`, async ({ page }, info) => {
+    const errors: string[] = [];
+    page.on('pageerror', error => errors.push(error.message));
+    await page.goto(route);
+    await page.getByRole('combobox', { name: 'Busca por pinyin', exact: true }).fill('pang');
+    await page.getByRole('option').filter({ hasText: '旁' }).click();
+    await expect(page.locator('#hanzi-detail-start')).toHaveAttribute('data-character', '旁');
+    await expect(page.locator('.hanzi-pronunciation-row h2')).toHaveText('páng');
+    await page.getByRole('tab', { name: 'Palabras y frases', exact: true }).click();
+
+    const cards = page.locator('.hanzi-context article');
+    await expect(cards.filter({ has: page.locator('.context-hanzi-text', { hasText: /^旁边$/ }) })).toHaveCount(1);
+    const sentence = cards.filter({ has: page.locator('.context-hanzi-text', { hasText: /^食堂旁边是办公楼。$/ }) });
+    await expect(sentence).toHaveCount(1);
+    await expect(sentence.locator('.context-pinyin')).toHaveText('Shítáng pángbiān shì bàngōnglóu.');
+    await expect(sentence.locator('small')).toHaveText('Al lado del comedor está el edificio de oficinas.');
+    await expect(page.locator('.hanzi-context')).not.toContainText('我们学校的食堂在校门右边');
+
+    for (const card of await cards.all()) {
+      const hanzi = (await card.locator('.context-hanzi-text').textContent())!;
+      expect(hanzi).toContain('旁');
+      expect(hanzi.match(/\p{Script=Han}/gu)!.length).toBeLessThanOrEqual(30);
+      expect(hanzi.split(/[。！？!?]+/u).filter(text => text.trim())).toHaveLength(1);
+      for (const selector of ['.context-pinyin', 'small']) {
+        const text = (await card.locator(selector).textContent())!;
+        expect(text.split(/[.!?]+/u).filter(part => part.trim())).toHaveLength(1);
+      }
+      expect(await card.evaluate(element => element.scrollWidth <= element.clientWidth + 1)).toBe(true);
+    }
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+    await page.locator('.components-panel').screenshot({ path: info.outputPath(`pang-${route.includes('/study/') ? 'study' : 'legacy'}-phrases.png`) });
+
+    await page.getByRole('link', { name: 'Abrir ficha Hanzi de 边', exact: true }).first().click();
+    await expect(page.locator('#hanzi-detail-start')).toHaveAttribute('data-character', '边');
+    await expect(page.getByRole('tab', { name: 'Aprender', exact: true })).toHaveAttribute('aria-selected', 'true');
+    expect(errors).toEqual([]);
+  });
+}
+
 test('左 y 边 tienen reproducción real con su lectura, nombres de trazos y práctica', async ({ page }, info) => {
   await observeAudio(page);
   const errors: string[] = [];

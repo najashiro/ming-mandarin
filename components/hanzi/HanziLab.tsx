@@ -244,7 +244,7 @@ type ContextListProps = {
 };
 
 function ContextList({ character, characterIdsByHanzi, availableHanzi, route, onSelectCharacter }: ContextListProps) {
-  if (!character.words?.length) return <p className="context-empty">Esta ficha se practica como forma básica antes de combinarla.</p>;
+  if (!character.words?.length) return <p className="context-empty">Aún no hay palabras o frases breves disponibles para este carácter.</p>;
   return <div className="hanzi-context"><div>{character.words.map((word) => <article key={`${word.hanzi}-${word.pinyin}`}>
     <strong className="context-hanzi-text">{[...word.hanzi].map((hanzi,index) => {
       if (!availableHanzi.has(hanzi)) return <span className="context-hanzi-plain" key={`${hanzi}-${index}`}><Hanzi>{hanzi}</Hanzi></span>;

@@ -59,7 +59,7 @@ describe('Hanzi: cobertura integral del catálogo', () => {
   it('los contextos añadidos proceden del corpus y se auditan separadamente los glifos sin ficha', () => {
     const references = hanziCatalog.filter(character => !character.writingRequired);
     for (const character of references) for (const word of character.words ?? []) {
-      expect(texts.some(row => row.hanzi === word.hanzi && row.pinyin === word.pinyin && row.spanish === word.translation), `${character.hanzi}: ${word.hanzi}`).toBe(true);
+      expect(texts.some(row => row.hanzi.includes(word.hanzi) && row.pinyin.includes(word.pinyin) && row.spanish.includes(word.translation)), `${character.hanzi}: ${word.hanzi}`).toBe(true);
     }
     const glyphsWithoutCharacterRecord = corpusGlyphs.filter(glyph => !hanziCatalogByGlyph.has(glyph));
     // Source text containing a glyph does not itself supply an isolated reading

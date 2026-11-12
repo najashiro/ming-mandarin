@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-11",
+  "productionBase": "b4c666a673bd85c7d56cb8c3661455b66f1a76af",
+  "scope": "Palabras y frases del motor Hanzi, incluidas rutas por lección, repaso y acceso histórico",
+  "policy": {
+    "maximumSentencesPerCard": 1,
+    "maximumHanziPerCard": 30,
+    "alignment": "Separar únicamente fuentes con igual cantidad de oraciones en chino, pinyin y español; conservar literalmente cada segmento",
+    "excluded": "Fuentes desalineadas, oraciones demasiado largas y ejercicios incompletos con puntos suspensivos o espacios en blanco",
+    "sourceCorpusModified": false
+  },
+  "comparison": {
+    "charactersBefore": 378,
+    "charactersAfter": 378,
+    "characterIdsAndLessonAssociationsPreserved": true,
+    "visibleExamplesBefore": 3179,
+    "visibleExamplesAfter": 3041,
+    "charactersWithChangedExamples": 295,
+    "duplicateExamplesAfter": 0,
+    "charactersWithoutExamplesBefore": 9,
+    "charactersWithoutExamplesAfter": 25,
+    "pangExamplesAfter": 7
+  },
+  "coverageLimit": "16 fichas adicionales quedan sin ejemplo breve seguro; mantienen significado, audio, trazos y lecciones, con un mensaje explícito de ejemplos no disponibles. La lectura r-l6-turtles no se segmenta porque tiene 6 oraciones chinas y pinyin, pero solo 5 españolas. La oración de classmates de 31 Hanzi se excluye por longitud.",
+  "validation": {
+    "lint": "passed",
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "unitTests": "447 passed",
+    "hanziCompleteBrowserTests": "19 passed, 2 intentional skips (inventory runs once on desktop)",
+    "hanziLayoutBrowserTests": "27 passed",
+    "hanziWritingBrowserTests": "15 passed",
+    "browserEngines": ["Chromium desktop", "Chromium mobile", "WebKit iPhone"],
+    "fullInventory": "378 fichas abren sus trazos locales y reproducen el audio correcto en navegador",
+    "visualReview": "旁 en escritorio y móvil: frases completas, sin párrafos ni desbordamiento horizontal",
+    "broaderSuiteLimit": "La ejecución ampliada incluye fallos ajenos al cambio en hanzi-focus/hanzi-font: expectativas antiguas del selector, semillas fijas de Reto Mixto, encuadre y selectores de vocabulario/examen. No se presenta esa suite ampliada como aprobada. Selector y semillas obsoletas se contrastaron también con producción."
+  }
+}

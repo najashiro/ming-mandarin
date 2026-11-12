@@ -2,6 +2,7 @@ import corpus, { lesson4, lesson5, lesson6 } from '@/lib/active-corpus';
 import { allCurriculumCharacters } from '@/seed/curriculum';
 import { supplementalHanziByGlyph } from '@/data/supplemental-hanzi';
 import type { HanziLabCharacter } from '@/components/hanzi/HanziLab';
+import { compactHanziContexts, hanziContextKey } from '@/lib/hanzi/contexts';
 
 // Character containment supplies reading context, never a new writing target
 // or the meaning/pronunciation of an isolated character.
@@ -11,6 +12,10 @@ const contexts = [
   ...[lesson4, lesson5, lesson6].flatMap((lesson, index) =>
     lesson.readings.map(reading => ({ ...reading, lessons: [index + 4] }))),
 ].filter(row => row.pinyin && row.spanish);
+
+const compactContexts = contexts.flatMap(row => compactHanziContexts({
+  hanzi: row.hanzi, pinyin: row.pinyin, translation: row.spanish,
+}));
 
 const curricularGlyphs = new Set(allCurriculumCharacters.map(character => character.hanzi));
 const characters: HanziLabCharacter[] = [
@@ -23,9 +28,9 @@ const characters: HanziLabCharacter[] = [
 export const hanziCatalog: HanziLabCharacter[] = characters.map(character => {
   const matches = contexts.filter(row => row.hanzi.includes(character.hanzi));
   const words = [...new Map([
-    ...(character.words ?? []),
-    ...matches.map(row => ({ hanzi: row.hanzi, pinyin: row.pinyin, translation: row.spanish })),
-  ].map(word => [`${word.hanzi}:${word.pinyin.toLowerCase()}`, word])).values()];
+    ...(character.words ?? []).flatMap(word => compactHanziContexts(word)),
+    ...compactContexts.filter(word => word.hanzi.includes(character.hanzi)),
+  ].filter(word => word.hanzi.includes(character.hanzi)).map(word => [hanziContextKey(word), word])).values()];
   const { id, hanzi, pinyin, meaning, strokeCount, radical, components, componentsAudited, writingRequired, introducedIn, appearsIn } = character;
   return { id, hanzi, pinyin, meaning, strokeCount, radical, components, componentsAudited, writingRequired, introducedIn, appearsIn,
     referenceLessons: [...new Set([...(character.referenceLessons ?? []), ...matches.flatMap(row => row.lessons)])].sort((a, b) => a - b),

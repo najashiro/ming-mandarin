@@ -366,7 +366,7 @@
       "strokeCount": 6,
       "namedStrokes": 6,
       "audio": "/audio/mandarin/l1-h-u518d.mp3",
-      "contexts": 7
+      "contexts": 4
     },
     {
       "id": "c-见",
@@ -383,7 +383,7 @@
       "strokeCount": 4,
       "namedStrokes": 4,
       "audio": "/audio/mandarin/l1-h-u89c1.mp3",
-      "contexts": 7
+      "contexts": 4
     },
     {
       "id": "c-早",
@@ -704,7 +704,7 @@
       "strokeCount": 11,
       "namedStrokes": 11,
       "audio": "/audio/mandarin/l1-v-7a424449a3.mp3",
-      "contexts": 12
+      "contexts": 10
     },
     {
       "id": "c-在",
@@ -757,7 +757,7 @@
       "strokeCount": 7,
       "namedStrokes": 7,
       "audio": "/audio/mandarin/l1-h-u8fdb.mp3",
-      "contexts": 4
+      "contexts": 3
     },
     {
       "id": "c-坐",
@@ -773,7 +773,7 @@
       "strokeCount": 7,
       "namedStrokes": 7,
       "audio": "/audio/mandarin/l1-h-u5750.mp3",
-      "contexts": 5
+      "contexts": 4
     },
     {
       "id": "c-谢",
@@ -791,7 +791,7 @@
       "strokeCount": 12,
       "namedStrokes": 12,
       "audio": "/audio/mandarin/l1-h-u8c22.mp3",
-      "contexts": 9
+      "contexts": 5
     },
     {
       "id": "c-最",
@@ -1174,7 +1174,7 @@
       "strokeCount": 8,
       "namedStrokes": 8,
       "audio": "/audio/mandarin/l2-v-792bbe6e08.mp3",
-      "contexts": 9
+      "contexts": 8
     },
     {
       "id": "c-北",
@@ -1221,7 +1221,7 @@
       "strokeCount": 9,
       "namedStrokes": 9,
       "audio": "/audio/mandarin/l1-v-c02ed4f460.mp3",
-      "contexts": 9
+      "contexts": 7
     },
     {
       "id": "c-哪",
@@ -1413,7 +1413,7 @@
       "strokeCount": 10,
       "namedStrokes": 10,
       "audio": "/audio/mandarin/l2-h-9b1bab382a.mp3",
-      "contexts": 10
+      "contexts": 8
     },
     {
       "id": "c-鲁",
@@ -1429,7 +1429,7 @@
       "strokeCount": 12,
       "namedStrokes": 12,
       "audio": "/audio/mandarin/l2-h-1f285a2d00.mp3",
-      "contexts": 10
+      "contexts": 8
     },
     {
       "id": "c-英",
@@ -1558,7 +1558,7 @@
       "strokeCount": 4,
       "namedStrokes": 4,
       "audio": "/audio/mandarin/l2-h-87d892e099.mp3",
-      "contexts": 11
+      "contexts": 10
     },
     {
       "id": "c-加",
@@ -1574,7 +1574,7 @@
       "strokeCount": 5,
       "namedStrokes": 5,
       "audio": "/audio/mandarin/l5-fdd6f38e8ba65f4d.mp3",
-      "contexts": 12
+      "contexts": 11
     },
     {
       "id": "c-拿",
@@ -1822,7 +1822,7 @@
       "strokeCount": 10,
       "namedStrokes": 10,
       "audio": "/audio/mandarin/l2-h-b188c5e30d.mp3",
-      "contexts": 11
+      "contexts": 10
     },
     {
       "id": "c-喜",
@@ -2269,7 +2269,7 @@
       "strokeCount": 5,
       "namedStrokes": 5,
       "audio": "/audio/mandarin/l2-h-d449dfee7f.mp3",
-      "contexts": 6
+      "contexts": 8
     },
     {
       "id": "c-饮",
@@ -2626,7 +2626,7 @@
       "strokeCount": 8,
       "namedStrokes": 8,
       "audio": "/audio/mandarin/l3-h-28f8949739.mp3",
-      "contexts": 12
+      "contexts": 10
     },
     {
       "id": "c-没",
@@ -2739,7 +2739,7 @@
       "strokeCount": 4,
       "namedStrokes": 4,
       "audio": "/audio/mandarin/l3-h-2eb8ebf6c3.mp3",
-      "contexts": 10
+      "contexts": 9
     },
     {
       "id": "c-婆",
@@ -2832,7 +2832,7 @@
       "strokeCount": 14,
       "namedStrokes": 14,
       "audio": "/audio/mandarin/l3-h-dc06011563.mp3",
-      "contexts": 12
+      "contexts": 11
     },
     {
       "id": "c-亮",
@@ -2847,7 +2847,7 @@
       "strokeCount": 9,
       "namedStrokes": 9,
       "audio": "/audio/mandarin/l3-h-caf3447b27.mp3",
-      "contexts": 12
+      "contexts": 11
     },
     {
       "id": "c-女",
@@ -2965,7 +2965,7 @@
       "strokeCount": 9,
       "namedStrokes": 9,
       "audio": "/audio/mandarin/l3-h-67ea6cdf0c.mp3",
-      "contexts": 11
+      "contexts": 9
     },
     {
       "id": "c-琴",
@@ -2980,7 +2980,7 @@
       "strokeCount": 12,
       "namedStrokes": 12,
       "audio": "/audio/mandarin/l3-h-aef8cdec9f.mp3",
-      "contexts": 11
+      "contexts": 9
     },
     {
       "id": "c-课",
@@ -3029,7 +3029,7 @@
       "strokeCount": 10,
       "namedStrokes": 10,
       "audio": "/audio/mandarin/l3-v-925718bec9.mp3",
-      "contexts": 5
+      "contexts": 3
     },
     {
       "id": "c-陆",
@@ -3081,7 +3081,7 @@
       "strokeCount": 5,
       "namedStrokes": 5,
       "audio": "/audio/mandarin/l3-h-3c9abaf959.mp3",
-      "contexts": 10
+      "contexts": 11
     },
     {
       "id": "c-爱",
@@ -3158,7 +3158,7 @@
       "strokeCount": 4,
       "namedStrokes": 4,
       "audio": "/audio/mandarin/l3-h-f54d73f7ab.mp3",
-      "contexts": 11
+      "contexts": 12
     },
     {
       "id": "c-去",
@@ -3231,7 +3231,7 @@
       "strokeCount": 8,
       "namedStrokes": 8,
       "audio": "/audio/mandarin/l4-51b0d9e1178812b8.mp3",
-      "contexts": 9
+      "contexts": 6
     },
     {
       "id": "c-半",
@@ -3353,7 +3353,7 @@
       "strokeCount": 5,
       "namedStrokes": 5,
       "audio": "/audio/mandarin/l4-a882489d32d25208.mp3",
-      "contexts": 12
+      "contexts": 11
     },
     {
       "id": "c-时",
@@ -3522,7 +3522,7 @@
       "strokeCount": 6,
       "namedStrokes": 6,
       "audio": "/audio/mandarin/l4-c3a86043ede2a751.mp3",
-      "contexts": 8
+      "contexts": 6
     },
     {
       "id": "c-来",
@@ -3568,7 +3568,7 @@
       "strokeCount": 9,
       "namedStrokes": 9,
       "audio": "/audio/mandarin/l4-72237a5ce426b583.mp3",
-      "contexts": 12
+      "contexts": 11
     },
     {
       "id": "c-动",
@@ -3644,7 +3644,7 @@
       "strokeCount": 4,
       "namedStrokes": 4,
       "audio": "/audio/mandarin/l4-3bcef46008a1c302.mp3",
-      "contexts": 12
+      "contexts": 9
     },
     {
       "id": "c-业",
@@ -3733,7 +3733,7 @@
       "strokeCount": 14,
       "namedStrokes": 14,
       "audio": "/audio/mandarin/l5-2b09cbe444be42d1.mp3",
-      "contexts": 7
+      "contexts": 6
     },
     {
       "id": "c-唱",
@@ -3749,7 +3749,7 @@
       "strokeCount": 11,
       "namedStrokes": 11,
       "audio": "/audio/mandarin/l5-0137e7f288e70221.mp3",
-      "contexts": 10
+      "contexts": 9
     },
     {
       "id": "c-歌",
@@ -3765,7 +3765,7 @@
       "strokeCount": 14,
       "namedStrokes": 14,
       "audio": "/audio/mandarin/l5-03b0fe48bc29ca8b.mp3",
-      "contexts": 11
+      "contexts": 10
     },
     {
       "id": "c-跳",
@@ -3779,7 +3779,7 @@
       "strokeCount": 13,
       "namedStrokes": 13,
       "audio": "/audio/mandarin/l5-50041f365983f635.mp3",
-      "contexts": 7
+      "contexts": 6
     },
     {
       "id": "c-舞",
@@ -3793,7 +3793,7 @@
       "strokeCount": 14,
       "namedStrokes": 14,
       "audio": "/audio/mandarin/l5-8561307b726d057d.mp3",
-      "contexts": 6
+      "contexts": 5
     },
     {
       "id": "c-参",
@@ -3808,7 +3808,7 @@
       "strokeCount": 8,
       "namedStrokes": 8,
       "audio": "/audio/mandarin/l5-58167bc65885afc3.mp3",
-      "contexts": 7
+      "contexts": 5
     },
     {
       "id": "c-号",
@@ -3852,7 +3852,7 @@
       "strokeCount": 11,
       "namedStrokes": 11,
       "audio": "/audio/mandarin/l5-7d1759f4dab862f4.mp3",
-      "contexts": 3
+      "contexts": 2
     },
     {
       "id": "c-送",
@@ -3866,7 +3866,7 @@
       "strokeCount": 9,
       "namedStrokes": 9,
       "audio": "/audio/mandarin/l5-5f3385a7a5d2d87e.mp3",
-      "contexts": 9
+      "contexts": 7
     },
     {
       "id": "c-礼",
@@ -3880,7 +3880,7 @@
       "strokeCount": 5,
       "namedStrokes": 5,
       "audio": "/audio/mandarin/l5-b6aeb42d6e5efa10.mp3",
-      "contexts": 5
+      "contexts": 4
     },
     {
       "id": "c-物",
@@ -3896,7 +3896,7 @@
       "strokeCount": 8,
       "namedStrokes": 8,
       "audio": "/audio/mandarin/l5-7a390862e3516da9.mp3",
-      "contexts": 9
+      "contexts": 8
     },
     {
       "id": "c-蛋",
@@ -3911,7 +3911,7 @@
       "strokeCount": 11,
       "namedStrokes": 11,
       "audio": "/audio/mandarin/l5-f01d9d212e9acd04.mp3",
-      "contexts": 10
+      "contexts": 7
     },
     {
       "id": "c-糕",
@@ -3925,7 +3925,7 @@
       "strokeCount": 16,
       "namedStrokes": 16,
       "audio": "/audio/mandarin/l5-bf8a262ff2517a4f.mp3",
-      "contexts": 8
+      "contexts": 5
     },
     {
       "id": "c-盒",
@@ -3939,7 +3939,7 @@
       "strokeCount": 11,
       "namedStrokes": 11,
       "audio": "/audio/mandarin/l5-dd3f90b0fa7b9d4c.mp3",
-      "contexts": 5
+      "contexts": 4
     },
     {
       "id": "c-巧",
@@ -3953,7 +3953,7 @@
       "strokeCount": 5,
       "namedStrokes": 5,
       "audio": "/audio/mandarin/l5-404c6ef44f286bf6.mp3",
-      "contexts": 6
+      "contexts": 5
     },
     {
       "id": "c-克",
@@ -3967,7 +3967,7 @@
       "strokeCount": 7,
       "namedStrokes": 7,
       "audio": "/audio/mandarin/l5-b28b194f906d63af.mp3",
-      "contexts": 6
+      "contexts": 5
     },
     {
       "id": "c-力",
@@ -3999,7 +3999,7 @@
       "strokeCount": 5,
       "namedStrokes": 5,
       "audio": "/audio/mandarin/l5-442659da9fcb5af2.mp3",
-      "contexts": 9
+      "contexts": 7
     },
     {
       "id": "c-属",
@@ -4060,7 +4060,7 @@
       "strokeCount": 12,
       "namedStrokes": 12,
       "audio": "/audio/mandarin/l5-2c7c5d11fa9d82ec.mp3",
-      "contexts": 10
+      "contexts": 7
     },
     {
       "id": "c-迎",
@@ -4075,7 +4075,7 @@
       "strokeCount": 7,
       "namedStrokes": 7,
       "audio": "/audio/mandarin/l5-bbf57faaac38a61e.mp3",
-      "contexts": 4
+      "contexts": 3
     },
     {
       "id": "c-快",
@@ -4089,7 +4089,7 @@
       "strokeCount": 7,
       "namedStrokes": 7,
       "audio": "/audio/mandarin/l5-4b6c214d7629d9f3.mp3",
-      "contexts": 8
+      "contexts": 6
     },
     {
       "id": "c-客",
@@ -4104,7 +4104,7 @@
       "strokeCount": 9,
       "namedStrokes": 9,
       "audio": "/audio/mandarin/l5-cc1a3798f699b6ca.mp3",
-      "contexts": 9
+      "contexts": 10
     },
     {
       "id": "c-气",
@@ -4119,7 +4119,7 @@
       "strokeCount": 4,
       "namedStrokes": 4,
       "audio": "/audio/mandarin/l5-0d44f7d35489b476.mp3",
-      "contexts": 5
+      "contexts": 3
     },
     {
       "id": "c-祝",
@@ -4133,7 +4133,7 @@
       "strokeCount": 9,
       "namedStrokes": 9,
       "audio": "/audio/mandarin/l5-78f6937e92778262.mp3",
-      "contexts": 7
+      "contexts": 6
     },
     {
       "id": "c-介",
@@ -4148,7 +4148,7 @@
       "strokeCount": 4,
       "namedStrokes": 4,
       "audio": "/audio/mandarin/l5-9097121a3edaf7d1.mp3",
-      "contexts": 8
+      "contexts": 4
     },
     {
       "id": "c-绍",
@@ -4163,7 +4163,7 @@
       "strokeCount": 8,
       "namedStrokes": 8,
       "audio": "/audio/mandarin/l5-410c89e83c887dd9.mp3",
-      "contexts": 8
+      "contexts": 4
     },
     {
       "id": "c-常",
@@ -4178,7 +4178,7 @@
       "strokeCount": 11,
       "namedStrokes": 11,
       "audio": "/audio/mandarin/l5-e91eba34f95fd85d.mp3",
-      "contexts": 7
+      "contexts": 5
     },
     {
       "id": "c-教",
@@ -4210,7 +4210,7 @@
       "strokeCount": 5,
       "namedStrokes": 5,
       "audio": "/audio/mandarin/l5-f76a958e8ee1f726.mp3",
-      "contexts": 9
+      "contexts": 5
     },
     {
       "id": "c-昨",
@@ -4226,7 +4226,7 @@
       "strokeCount": 9,
       "namedStrokes": 9,
       "audio": "/audio/mandarin/l5-12fe3bb948559e7e.mp3",
-      "contexts": 4
+      "contexts": 3
     },
     {
       "id": "c-寿",
@@ -4241,7 +4241,7 @@
       "strokeCount": 7,
       "namedStrokes": 7,
       "audio": "/audio/mandarin/l5-145b67ba71a56d91.mp3",
-      "contexts": 11
+      "contexts": 8
     },
     {
       "id": "c-咱",
@@ -4255,7 +4255,7 @@
       "strokeCount": 9,
       "namedStrokes": 9,
       "audio": "/audio/mandarin/l5-bb6a1a0b1892f801.mp3",
-      "contexts": 3
+      "contexts": 2
     },
     {
       "id": "c-干",
@@ -4270,7 +4270,7 @@
       "strokeCount": 3,
       "namedStrokes": 3,
       "audio": "/audio/mandarin/l5-44cdc93021353923.mp3",
-      "contexts": 10
+      "contexts": 8
     },
     {
       "id": "c-杯",
@@ -4285,7 +4285,7 @@
       "strokeCount": 8,
       "namedStrokes": 8,
       "audio": "/audio/mandarin/l5-b263a100fdd97a3a.mp3",
-      "contexts": 12
+      "contexts": 11
     },
     {
       "id": "c-其",
@@ -4415,7 +4415,7 @@
       "strokeCount": 4,
       "namedStrokes": 4,
       "audio": "/audio/mandarin/hanzi-bf7cd3ea370114f1.mp3",
-      "contexts": 5
+      "contexts": 4
     },
     {
       "id": "c-走",
@@ -4509,7 +4509,7 @@
       "strokeCount": 12,
       "namedStrokes": 12,
       "audio": "/audio/mandarin/hanzi-8f1d1b228faf9e1b.mp3",
-      "contexts": 3
+      "contexts": 2
     },
     {
       "id": "c-跟",
@@ -4524,7 +4524,7 @@
       "strokeCount": 13,
       "namedStrokes": 13,
       "audio": "/audio/mandarin/hanzi-25c71e9535e09ea3.mp3",
-      "contexts": 5
+      "contexts": 3
     },
     {
       "id": "c-路",
@@ -4538,7 +4538,7 @@
       "strokeCount": 13,
       "namedStrokes": 13,
       "audio": "/audio/mandarin/hanzi-e09c9d998fc62d07.mp3",
-      "contexts": 4
+      "contexts": 3
     },
     {
       "id": "c-街",
@@ -4566,7 +4566,7 @@
       "strokeCount": 5,
       "namedStrokes": 5,
       "audio": "/audio/mandarin/game-14ab1f2bce0a8777.mp3",
-      "contexts": 8
+      "contexts": 6
     },
     {
       "id": "c-左",
@@ -4596,7 +4596,7 @@
       "strokeCount": 6,
       "namedStrokes": 6,
       "audio": "/audio/mandarin/hanzi-a712bf8ea327a43f.mp3",
-      "contexts": 12
+      "contexts": 9
     },
     {
       "id": "c-里",
@@ -4611,7 +4611,7 @@
       "strokeCount": 7,
       "namedStrokes": 7,
       "audio": "/audio/mandarin/hanzi-8365962b0aa31abd.mp3",
-      "contexts": 10
+      "contexts": 9
     },
     {
       "id": "c-先",
@@ -4626,7 +4626,7 @@
       "strokeCount": 6,
       "namedStrokes": 6,
       "audio": "/audio/mandarin/hanzi-56a2600a6e637f96.mp3",
-      "contexts": 8
+      "contexts": 7
     },
     {
       "id": "c-前",
@@ -4699,7 +4699,7 @@
       "strokeCount": 7,
       "namedStrokes": 7,
       "audio": "/audio/mandarin/game-d08d660b7de4e231.mp3",
-      "contexts": 5
+      "contexts": 4
     },
     {
       "id": "c-胡",
@@ -4713,7 +4713,7 @@
       "strokeCount": 9,
       "namedStrokes": 9,
       "audio": "/audio/mandarin/hanzi-4e8b56c9375ad02b.mp3",
-      "contexts": 11
+      "contexts": 8
     },
     {
       "id": "supplemental-零",
@@ -4741,7 +4741,7 @@
       "strokeCount": 4,
       "namedStrokes": 4,
       "audio": "/audio/mandarin/hanzi-4f3ed8319f982dae.mp3",
-      "contexts": 1
+      "contexts": 0
     },
     {
       "id": "supplemental-了",
@@ -4757,7 +4757,7 @@
       "strokeCount": 2,
       "namedStrokes": 2,
       "audio": "/audio/mandarin/vocab-269bd31916e2fb53fad8.mp3",
-      "contexts": 12
+      "contexts": 11
     },
     {
       "id": "supplemental-从",
@@ -4771,7 +4771,7 @@
       "strokeCount": 4,
       "namedStrokes": 4,
       "audio": "/audio/mandarin/hanzi-f774858f2df5bb4b.mp3",
-      "contexts": 1
+      "contexts": 0
     },
     {
       "id": "supplemental-以",
@@ -4786,7 +4786,7 @@
       "strokeCount": 4,
       "namedStrokes": 4,
       "audio": "/audio/mandarin/hanzi-524ad5040db05ee7.mp3",
-      "contexts": 4
+      "contexts": 3
     },
     {
       "id": "supplemental-伞",
@@ -4800,7 +4800,7 @@
       "strokeCount": 6,
       "namedStrokes": 6,
       "audio": "/audio/mandarin/hanzi-785e8511296d08eb.mp3",
-      "contexts": 1
+      "contexts": 0
     },
     {
       "id": "supplemental-传",
@@ -4814,7 +4814,7 @@
       "strokeCount": 6,
       "namedStrokes": 6,
       "audio": "/audio/mandarin/hanzi-d96d4574652e4dc4.mp3",
-      "contexts": 1
+      "contexts": 0
     },
     {
       "id": "supplemental-关",
@@ -4857,7 +4857,7 @@
       "strokeCount": 5,
       "namedStrokes": 5,
       "audio": "/audio/mandarin/hanzi-31106048fd426329.mp3",
-      "contexts": 3
+      "contexts": 2
     },
     {
       "id": "supplemental-南",
@@ -4885,7 +4885,7 @@
       "strokeCount": 8,
       "namedStrokes": 8,
       "audio": "/audio/mandarin/hanzi-52334d63e311774f.mp3",
-      "contexts": 3
+      "contexts": 4
     },
     {
       "id": "supplemental-卫",
@@ -4900,7 +4900,7 @@
       "strokeCount": 3,
       "namedStrokes": 3,
       "audio": "/audio/mandarin/hanzi-105bce25aaf23328.mp3",
-      "contexts": 5
+      "contexts": 7
     },
     {
       "id": "supplemental-厨",
@@ -4914,7 +4914,7 @@
       "strokeCount": 12,
       "namedStrokes": 12,
       "audio": "/audio/mandarin/hanzi-f1d36bdd46797036.mp3",
-      "contexts": 3
+      "contexts": 5
     },
     {
       "id": "supplemental-取",
@@ -4928,7 +4928,7 @@
       "strokeCount": 8,
       "namedStrokes": 8,
       "audio": "/audio/mandarin/hanzi-1971b6462f1d6528.mp3",
-      "contexts": 1
+      "contexts": 0
     },
     {
       "id": "supplemental-台",
@@ -4972,7 +4972,7 @@
       "strokeCount": 7,
       "namedStrokes": 7,
       "audio": "/audio/mandarin/l4-f03dab4e3dcb0526.mp3",
-      "contexts": 12
+      "contexts": 9
     },
     {
       "id": "supplemental-地",
@@ -4988,7 +4988,7 @@
       "strokeCount": 6,
       "namedStrokes": 6,
       "audio": "/audio/mandarin/hanzi-ce928686f9d15a2e.mp3",
-      "contexts": 8
+      "contexts": 6
     },
     {
       "id": "supplemental-场",
@@ -5030,7 +5030,7 @@
       "strokeCount": 7,
       "namedStrokes": 7,
       "audio": "/audio/mandarin/hanzi-010864de351c1408.mp3",
-      "contexts": 1
+      "contexts": 0
     },
     {
       "id": "supplemental-如",
@@ -5044,7 +5044,7 @@
       "strokeCount": 6,
       "namedStrokes": 6,
       "audio": "/audio/mandarin/hanzi-d5d74a86d6b94b23.mp3",
-      "contexts": 1
+      "contexts": 0
     },
     {
       "id": "supplemental-它",
@@ -5058,7 +5058,7 @@
       "strokeCount": 5,
       "namedStrokes": 5,
       "audio": "/audio/mandarin/hanzi-6e75c3d6fd439044.mp3",
-      "contexts": 1
+      "contexts": 0
     },
     {
       "id": "supplemental-定",
@@ -5072,7 +5072,7 @@
       "strokeCount": 8,
       "namedStrokes": 8,
       "audio": "/audio/mandarin/hanzi-c3bf31f4af052c6a.mp3",
-      "contexts": 1
+      "contexts": 0
     },
     {
       "id": "supplemental-室",
@@ -5086,7 +5086,7 @@
       "strokeCount": 9,
       "namedStrokes": 9,
       "audio": "/audio/mandarin/hanzi-466f231d527c35da.mp3",
-      "contexts": 4
+      "contexts": 5
     },
     {
       "id": "supplemental-宿",
@@ -5128,7 +5128,7 @@
       "strokeCount": 8,
       "namedStrokes": 8,
       "audio": "/audio/mandarin/hanzi-c4c0e6b890d88c1a.mp3",
-      "contexts": 1
+      "contexts": 0
     },
     {
       "id": "supplemental-座",
@@ -5156,7 +5156,7 @@
       "strokeCount": 9,
       "namedStrokes": 9,
       "audio": "/audio/mandarin/hanzi-f5d015b64a96cc75.mp3",
-      "contexts": 3
+      "contexts": 2
     },
     {
       "id": "supplemental-想",
@@ -5171,7 +5171,7 @@
       "strokeCount": 13,
       "namedStrokes": 13,
       "audio": "/audio/mandarin/hanzi-16239cfe4fdc906a.mp3",
-      "contexts": 2
+      "contexts": 1
     },
     {
       "id": "supplemental-或",
@@ -5199,7 +5199,7 @@
       "strokeCount": 8,
       "namedStrokes": 8,
       "audio": "/audio/mandarin/hanzi-c557dc2d4c927dc9.mp3",
-      "contexts": 5
+      "contexts": 7
     },
     {
       "id": "supplemental-操",
@@ -5227,7 +5227,7 @@
       "strokeCount": 13,
       "namedStrokes": 13,
       "audio": "/audio/mandarin/game-3cc493bc5b3b9b51.mp3",
-      "contexts": 5
+      "contexts": 6
     },
     {
       "id": "supplemental-旁",
@@ -5241,7 +5241,7 @@
       "strokeCount": 10,
       "namedStrokes": 10,
       "audio": "/audio/mandarin/hanzi-ae1015f0967a6046.mp3",
-      "contexts": 5
+      "contexts": 7
     },
     {
       "id": "supplemental-李",
@@ -5256,7 +5256,7 @@
       "strokeCount": 7,
       "namedStrokes": 7,
       "audio": "/audio/mandarin/vocab-30f9ec546f73bfb4913f.mp3",
-      "contexts": 3
+      "contexts": 1
     },
     {
       "id": "supplemental-桌",
@@ -5285,7 +5285,7 @@
       "strokeCount": 4,
       "namedStrokes": 4,
       "audio": "/audio/mandarin/hanzi-225f88b279aaaaee.mp3",
-      "contexts": 4
+      "contexts": 3
     },
     {
       "id": "supplemental-清",
@@ -5315,7 +5315,7 @@
       "strokeCount": 11,
       "namedStrokes": 11,
       "audio": "/audio/mandarin/hanzi-848d151aed8f6938.mp3",
-      "contexts": 5
+      "contexts": 4
     },
     {
       "id": "supplemental-白",
@@ -5329,7 +5329,7 @@
       "strokeCount": 5,
       "namedStrokes": 5,
       "audio": "/audio/mandarin/hanzi-b1dfbb0b5cddd603.mp3",
-      "contexts": 1
+      "contexts": 0
     },
     {
       "id": "supplemental-着",
@@ -5343,7 +5343,7 @@
       "strokeCount": 11,
       "namedStrokes": 11,
       "audio": "/audio/mandarin/hanzi-dffc4260a2b8cad8.mp3",
-      "contexts": 3
+      "contexts": 2
     },
     {
       "id": "supplemental-答",
@@ -5357,7 +5357,7 @@
       "strokeCount": 12,
       "namedStrokes": 12,
       "audio": "/audio/mandarin/hanzi-dfe9f2e25f85af96.mp3",
-      "contexts": 1
+      "contexts": 0
     },
     {
       "id": "supplemental-系",
@@ -5388,7 +5388,7 @@
       "strokeCount": 8,
       "namedStrokes": 8,
       "audio": "/audio/mandarin/hanzi-d9daedf8f1169242.mp3",
-      "contexts": 6
+      "contexts": 5
     },
     {
       "id": "supplemental-给",
@@ -5402,7 +5402,7 @@
       "strokeCount": 9,
       "namedStrokes": 9,
       "audio": "/audio/mandarin/game-6e55fb9d8a3dacc1.mp3",
-      "contexts": 4
+      "contexts": 3
     },
     {
       "id": "supplemental-者",
@@ -5417,7 +5417,7 @@
       "strokeCount": 8,
       "namedStrokes": 8,
       "audio": "/audio/mandarin/hanzi-b5f307e562c518e7.mp3",
-      "contexts": 3
+      "contexts": 2
     },
     {
       "id": "supplemental-职",
@@ -5431,7 +5431,7 @@
       "strokeCount": 11,
       "namedStrokes": 11,
       "audio": "/audio/mandarin/hanzi-2f065c0873598599.mp3",
-      "contexts": 1
+      "contexts": 0
     },
     {
       "id": "supplemental-肯",
@@ -5445,7 +5445,7 @@
       "strokeCount": 8,
       "namedStrokes": 8,
       "audio": "/audio/mandarin/hanzi-5ce22ccee593b8d8.mp3",
-      "contexts": 1
+      "contexts": 0
     },
     {
       "id": "supplemental-育",
@@ -5459,7 +5459,7 @@
       "strokeCount": 8,
       "namedStrokes": 8,
       "audio": "/audio/mandarin/game-97b68650feef0496.mp3",
-      "contexts": 5
+      "contexts": 4
     },
     {
       "id": "supplemental-边",
@@ -5487,7 +5487,7 @@
       "strokeCount": 6,
       "namedStrokes": 6,
       "audio": "/audio/mandarin/hanzi-fdf86252efc2c366.mp3",
-      "contexts": 3
+      "contexts": 2
     },
     {
       "id": "supplemental-道",
@@ -5544,7 +5544,7 @@
       "strokeCount": 4,
       "namedStrokes": 4,
       "audio": "/audio/mandarin/hanzi-e6ece3bcf163c517.mp3",
-      "contexts": 1
+      "contexts": 0
     },
     {
       "id": "supplemental-门",
@@ -5559,7 +5559,7 @@
       "strokeCount": 3,
       "namedStrokes": 3,
       "audio": "/audio/mandarin/game-a407325e0081cb7d.mp3",
-      "contexts": 7
+      "contexts": 6
     },
     {
       "id": "supplemental-阳",
@@ -5601,7 +5601,7 @@
       "strokeCount": 7,
       "namedStrokes": 7,
       "audio": "/audio/mandarin/hanzi-798f2b8731abd44b.mp3",
-      "contexts": 1
+      "contexts": 0
     },
     {
       "id": "supplemental-宠",
@@ -5663,7 +5663,7 @@
       "strokeCount": 8,
       "namedStrokes": 8,
       "audio": "/audio/mandarin/hanzi-492a29cb851e973d.mp3",
-      "contexts": 4
+      "contexts": 3
     },
     {
       "id": "supplemental-她",
@@ -5733,7 +5733,7 @@
       "strokeCount": 12,
       "namedStrokes": 12,
       "audio": "/audio/mandarin/hanzi-f9c8597cd916cc70.mp3",
-      "contexts": 4
+      "contexts": 5
     },
     {
       "id": "supplemental-末",
@@ -5748,7 +5748,7 @@
       "strokeCount": 5,
       "namedStrokes": 5,
       "audio": "/audio/mandarin/hanzi-3d1e67d178c0daec.mp3",
-      "contexts": 4
+      "contexts": 3
     },
     {
       "id": "supplemental-猪",
@@ -5836,7 +5836,7 @@
       "strokeCount": 9,
       "namedStrokes": 9,
       "audio": "/audio/mandarin/hanzi-87c9d9a511065371.mp3",
-      "contexts": 4
+      "contexts": 3
     },
     {
       "id": "supplemental-首",

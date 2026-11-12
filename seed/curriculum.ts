@@ -9,6 +9,7 @@ import { vocabulary as lesson1Vocabulary } from '@/seed/vocabulary';
 import { lesson4Vocabulary, lesson4Sentences, lesson4Grammar, lesson4Characters, lesson4Exercises, lesson4Units } from '@/seed/lesson4';
 import { normalizeAnswer, normalizePinyin } from '@/lib/pinyin';
 import { getStudyScopeLabel } from '@/lib/study-options';
+import { compactHanziContexts, hanziContextKey } from '@/lib/hanzi/contexts';
 
 export const scopeDefinitions: Record<CurriculumScope, { label: string; shortLabel: string; lessonIds: LessonNumber[]; title: string; description: string }> = {
   l6: { label: 'Lección 6', shortLabel: 'L6', lessonIds: [6], title: '图书馆在食堂北边', description: 'Ubicaciones, direcciones, edificios y cómo pedir ayuda.' },
@@ -260,13 +261,19 @@ function contextualizeCharacters(characterList: CharacterEntry[], vocabulary: Vo
       ...sentences
         .filter((sentence) => sentence.hanzi.includes(character.hanzi))
         .map((sentence) => ({
-          hanzi:sentence.hanzi.replace(/[。？！]/g,''),
-          pinyin:sentence.pinyin.replace(/[.?!]/g,'').trim(),
+          hanzi:sentence.hanzi,
+          pinyin:sentence.pinyin,
           translation:sentence.translation,
           stage:contextStage(sentence.hanzi),
         })),
     ];
-    const uniqueWords = [...new Map(words.map((word) => [`${word.hanzi}:${word.pinyin.toLocaleLowerCase('es')}`,word])).values()].slice(0,8);
+    const compactWords = words.flatMap(word => compactHanziContexts(word))
+      .filter(word => word.hanzi.includes(character.hanzi))
+      .map(word => ({ ...word, stage: contextStage(word.hanzi),
+        hanzi: word.hanzi.replace(/[。？！]+$/u, ''),
+        pinyin: word.pinyin.replace(/[.?!]+$/u, '').trim(),
+      }));
+    const uniqueWords = [...new Map(compactWords.map(word => [hanziContextKey(word), word])).values()].slice(0,8);
     return { ...character, words:uniqueWords };
   });
 }
