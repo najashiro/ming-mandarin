@@ -45,6 +45,78 @@ test('legacy lesson 1 has the same defaults', async ({ page }) => {
   await expect(page.locator('.dialogue-spanish').first()).toBeVisible();
 });
 
+test('el cursor y el teclado revelan el tono de cada aparición de 谢', async ({ page, hasTouch }) => {
+  test.skip(hasTouch, 'La interacción con el cursor se comprueba en escritorio.');
+  await page.goto('/study/l1/dialogues');
+  await page.getByRole('checkbox', { name: 'Mostrar pinyin', exact: true }).uncheck();
+  const turn = page.locator('.dialogue-turn-text').filter({ hasText: '谢谢。你最近怎么样？' });
+  const thanks = turn.getByRole('link', { name: 'Abrir ficha de 谢', exact: true });
+  const tooltip = page.getByRole('tooltip');
+
+  await thanks.first().hover();
+  await expect(tooltip).toHaveText(/^xiè$/i);
+  await thanks.nth(1).hover();
+  await expect(tooltip).toHaveText(/^xie$/i);
+  await turn.getByText('。', { exact: true }).hover();
+  await expect(tooltip).toBeHidden();
+
+  await thanks.first().focus();
+  await page.keyboard.press('Tab');
+  await expect(thanks.nth(1)).toBeFocused();
+  await expect(tooltip).toHaveText(/^xie$/i);
+  await page.keyboard.press('Shift+Tab');
+  await expect(thanks.first()).toBeFocused();
+  await expect(tooltip).toHaveText(/^xiè$/i);
+  await page.keyboard.press('Escape');
+  await expect(tooltip).toBeHidden();
+  await expect(thanks.first()).toBeFocused();
+});
+
+test('las frases para practicar y la lección original permiten consultar un carácter', async ({ page, hasTouch }) => {
+  test.skip(hasTouch, 'Comprueba el cursor en ambas vistas.');
+  for (const route of ['/study/l1/dialogues', '/lesson/1/dialogues']) {
+    await page.goto(route);
+    await page.getByRole('checkbox', { name: 'Mostrar pinyin', exact: true }).uncheck();
+    const greeting = page.locator('.dialogue-text article').first();
+    await greeting.getByText('好', { exact: true }).hover();
+    await expect(page.getByRole('tooltip')).toHaveText(/^hǎo$/i);
+    await expect(greeting.locator('.dialogue-pinyin')).toBeHidden();
+  }
+});
+
+test('en pantalla táctil se puede consultar un carácter y luego abrir su ficha', async ({ page, hasTouch, browserName }) => {
+  test.skip(!hasTouch, 'Requiere pantalla táctil.');
+  await page.goto('/study/l1/dialogues');
+  await page.getByRole('checkbox', { name: 'Mostrar pinyin', exact: true }).uncheck();
+  const glyph = page.locator('.dialogue-turn-text').first().getByRole('link', { name: 'Abrir ficha de 好', exact: true });
+  await glyph.scrollIntoViewIfNeeded();
+  const bounds = await glyph.boundingBox();
+  if (!bounds) throw new Error('El carácter no está visible');
+  const x = bounds.x + bounds.width / 2;
+  const y = bounds.y + bounds.height / 2;
+  const tooltip = page.getByRole('tooltip');
+
+  if (browserName === 'chromium') {
+    const session = await page.context().newCDPSession(page);
+    await session.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x, y }] });
+    await expect(tooltip).toHaveText(/^hǎo$/i);
+    await session.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+    await session.detach();
+  } else {
+    // Playwright solo expone el toque corto nativo en WebKit.
+    const touch = { pointerType: 'touch', pointerId: 4, isPrimary: true, clientX: x, clientY: y };
+    await glyph.dispatchEvent('pointerdown', { ...touch, button: 0, buttons: 1 });
+    // WebKit puede enviar movimientos del ratón mientras el dedo sigue pulsando.
+    await glyph.dispatchEvent('pointermove', { pointerType: 'mouse', pointerId: 1, clientX: x - 20, clientY: y });
+    await expect(tooltip).toHaveText(/^hǎo$/i);
+    await glyph.dispatchEvent('pointerup', { ...touch, button: 0, buttons: 0 });
+    await glyph.dispatchEvent('click', { detail: 1, button: 0 });
+  }
+  await expect(page).toHaveURL(/\/study\/l1\/dialogues$/);
+  await glyph.tap();
+  await expect(page.locator('#hanzi-detail-start')).toHaveAttribute('data-character', '好');
+});
+
 test('Atrás desde Hanzi recupera el turno o la frase y sus ayudas de lectura', async ({ page }) => {
   const dialogues = '/study/l4/dialogues';
   await page.goto(dialogues);

@@ -3,3 +3,42 @@
 .dialogue-reading-controls input{width:20px;height:20px;accent-color:var(--jade)}
 .dialogue-reading-aids:has(input[name="pinyin"]:not(:checked)) .dialogue-pinyin,
 .dialogue-reading-aids:has(input[name="spanish"]:not(:checked)) .dialogue-spanish{display:none}
+
+.dialogue-pinyin-hint {
+  margin-block: 0 1.25rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.dialogue-text :is(h2, h3) .linked-chinese-text,
+.dialogue-text [data-dialogue-pinyin] {
+  font-size: inherit;
+  color: inherit;
+}
+
+.dialogue-reading-aids [data-dialogue-pinyin] {
+  -webkit-touch-callout: none;
+  border-radius: 0.15em;
+}
+
+.dialogue-reading-aids [data-dialogue-pinyin][aria-describedby] {
+  background: var(--jade-soft);
+  color: var(--jade-dark);
+}
+
+.dialogue-reading-aids [data-dialogue-pinyin]:focus-visible {
+  outline: 2px solid var(--jade);
+  outline-offset: 2px;
+}
+
+.dialogue-pinyin-tooltip {
+  position: fixed;
+  z-index: 25;
+  padding: 0.3rem 0.65rem;
+  border-radius: 0.45rem;
+  background: var(--jade-dark);
+  color: white;
+  box-shadow: 0 2px 6px #17231f26;
+  font: 600 1rem/1.35 var(--pinyin-font);
+  white-space: nowrap;
+}

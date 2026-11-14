@@ -1,6 +1,7 @@
 'use client';
 
 import { useLayoutEffect, useRef, type MouseEvent, type ReactNode } from 'react';
+import { DialoguePinyinTooltip } from './DialoguePinyinTooltip';
 import '@/app/dialogue-reading-aids.css';
 
 type DialoguePosition = {
@@ -11,6 +12,7 @@ type DialoguePosition = {
 };
 
 export function DialogueReadingAids({ children }: { children: ReactNode }) {
+  const reader = useRef<HTMLDivElement>(null);
   const pinyin = useRef<HTMLInputElement>(null);
   const spanish = useRef<HTMLInputElement>(null);
 
@@ -60,11 +62,13 @@ export function DialogueReadingAids({ children }: { children: ReactNode }) {
     window.history.replaceState({ ...window.history.state, dialoguePosition }, '');
   }
 
-  return <div className="dialogue-reading-aids" onClickCapture={rememberPosition}>
+  return <div className="dialogue-reading-aids" ref={reader} onClickCapture={rememberPosition}>
     <div className="dialogue-reading-controls shell" role="group" aria-label="Ayudas de lectura">
       <label><input ref={pinyin} name="pinyin" type="checkbox" defaultChecked /> Mostrar pinyin</label>
       <label><input ref={spanish} name="spanish" type="checkbox" /> Mostrar traducción al español</label>
     </div>
+    <p className="dialogue-pinyin-hint shell">Pasa el cursor sobre un carácter o mantenlo pulsado para ver su pinyin.</p>
     {children}
+    <DialoguePinyinTooltip reader={reader}/>
   </div>;
 }
