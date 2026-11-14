@@ -13,8 +13,6 @@ import { hanziCatalog, hanziCatalogByGlyph } from '@/lib/hanzi/catalog';
 
 export const dynamic = 'force-dynamic';
 
-const tabs = ['Aprender', 'Palabras y frases', 'Trazos', 'Practicar'] as const;
-
 export default async function ScopeHanziPage({
   params,
   searchParams,
@@ -30,12 +28,6 @@ export default async function ScopeHanziPage({
   const supplemental = selected && !selected.writingRequired;
   const explicitlyUnavailable = Boolean(query.character && !selected);
   const progress = user ? await getHanziProgressMap(user) : {};
-  const requested = query.mode === 'practice' ? 'Practicar' : query.tab === 'Componentes' ? 'Palabras y frases' : query.tab;
-  const tab = tabs.includes(requested as (typeof tabs)[number])
-    ? (requested as (typeof tabs)[number])
-    : 'Aprender';
-  const initial = selected?.hanzi ?? data.characters[0]?.hanzi;
-
   // Preserve direct character links while allowing explicit tabs to control the view.
   const focusGlyph = query.focus === 'glyph'
     || Boolean(query.character && !query.tab && !query.mode);
@@ -49,13 +41,12 @@ export default async function ScopeHanziPage({
           description="Reconocimiento, pronunciación estática, orden de trazos y escritura táctil."
         />
         {explicitlyUnavailable?<section className="panel hanzi-unavailable" role="status"><h2>Carácter aún no disponible</h2><p>El carácter solicitado es <strong className="font-hanzi">{query.character}</strong>.</p><p>No se seleccionó otro carácter como sustitución.</p></section>:<HanziLab
-          key={`${initial}:${query.focus??''}:${query.tab??''}:${query.mode??''}`}
+          key={`${rawScope}:${query.character??''}:${query.focus??''}:${query.tab??''}:${query.mode??''}`}
           characters={hanziCatalog}
           stages={hanziUnits}
           manifest={manifest as Record<string, HanziManifestEntry>}
           initialProgress={progress}
-          initialCharacter={initial}
-          initialTab={tab}
+          defaultCharacter={data.characters[0]?.hanzi}
           focusGlyph={focusGlyph}
           route={`/study/${rawScope}/hanzi`}
           scope={rawScope}

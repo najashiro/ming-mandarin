@@ -140,6 +140,84 @@ for (const character of characters) {
   await expectDetailFocused(page, '忙');
 });
 
+test('historial Hanzi: Atrás recupera la frase de origen y Adelante reabre su carácter', async ({ page }) => {
+  const dialogues = '/study/l4/dialogues';
+  await page.goto(dialogues);
+  const source = page.getByRole('link', { name: 'Abrir ficha de 现', exact: true });
+  await source.click();
+  const detail = page.locator('#hanzi-detail-start');
+  const words = page.getByRole('tab', { name: 'Palabras y frases', exact: true });
+  await expect(detail).toHaveAttribute('data-character', '现');
+  await words.click();
+  const linkedCharacter = page.getByRole('link', { name: 'Abrir ficha Hanzi de 在', exact: true }).first();
+  await linkedCharacter.scrollIntoViewIfNeeded();
+  await linkedCharacter.click();
+  await expect(detail).toHaveAttribute('data-character', '在');
+  const destination = page.url();
+
+  await page.goBack();
+  await expect(detail).toHaveAttribute('data-character', '现');
+  await expect(words).toHaveAttribute('aria-selected', 'true');
+  await expect(linkedCharacter).toBeInViewport();
+  await page.goForward();
+  await expect(page).toHaveURL(destination);
+  await expect(detail).toHaveAttribute('data-character', '在');
+  await expect(page.getByRole('tab', { name: 'Aprender' })).toHaveAttribute('aria-selected', 'true');
+
+  await page.goBack();
+  await expect(words).toHaveAttribute('aria-selected', 'true');
+  await page.goBack();
+  await expect(page).toHaveURL(url => url.pathname === dialogues);
+  await expect(source).toBeInViewport();
+});
+
+test('historial Hanzi: un enlace del libro abre la ficha a la vista', async ({ page }) => {
+  await page.goto('/study/l4/hanzi');
+  const origin = page.url();
+  const link = page.getByRole('region', { name: 'Escritura del libro y del cuaderno' })
+    .getByRole('link', { name: 'Abrir ficha de 半', exact: true }).first();
+  await link.click();
+  const detail = page.locator('#hanzi-detail-start');
+  await expect(detail).toHaveAttribute('data-character', '半');
+  await expect(detail).toBeInViewport();
+  await page.goBack();
+  await expect(page).toHaveURL(origin);
+});
+
+test('historial Hanzi: el selector y la búsqueda conservan sus fichas y filtros al retroceder', async ({ page }) => {
+  await page.goto('/lesson/1/hanzi');
+  const detail = page.locator('#hanzi-detail-start');
+  const lesson = page.getByRole('combobox', { name: 'Lección', exact: true });
+  const search = page.getByRole('combobox', { name: 'Busca por pinyin' });
+  await expect(search).toBeEnabled();
+  await expect(detail).toHaveAttribute('data-character', '好');
+  await lesson.selectOption('l4');
+  await page.getByRole('button', { name: /^现,/ }).click();
+  await expect(detail).toHaveAttribute('data-character', '现');
+  const picked = page.url();
+
+  await search.fill('bian');
+  await page.getByRole('option').filter({ hasText: '边' }).click();
+  await expect(detail).toHaveAttribute('data-character', '边');
+  await expect(lesson).toHaveValue('l6');
+  // Seleccionar la ficha abierta vuelve a enfocarla sin duplicar el paso.
+  await search.fill('bian');
+  await page.getByRole('option').filter({ hasText: '边' }).click();
+
+  await page.goBack();
+  await expect(page).toHaveURL(picked);
+  await expect(detail).toHaveAttribute('data-character', '现');
+  await expect(lesson).toHaveValue('l4');
+  await page.goBack();
+  await expect(detail).toHaveAttribute('data-character', '好');
+  await expect(lesson).toHaveValue('l4');
+  await page.goForward();
+  await expect(detail).toHaveAttribute('data-character', '现');
+  await page.goForward();
+  await expect(detail).toHaveAttribute('data-character', '边');
+  await expect(lesson).toHaveValue('l6');
+});
+
  test('enlaces directos mantienen el encuadre con alturas de selector distintas', async ({ page }) => {
   for (const [scope, character] of [['l1', '谢'], ['l2', '语'], ['l3', '弟'], ['l1-l2-l3', '忙']] as const) {
     await page.goto(`/study/${scope}/hanzi?character=${encodeURIComponent(character)}&focus=glyph`);
