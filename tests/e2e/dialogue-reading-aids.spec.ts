@@ -44,3 +44,50 @@ test('legacy lesson 1 has the same defaults', async ({ page }) => {
   await page.getByRole('checkbox', { name: 'Mostrar traducción al español' }).check();
   await expect(page.locator('.dialogue-spanish').first()).toBeVisible();
 });
+
+test('Atrás desde Hanzi recupera el turno o la frase y sus ayudas de lectura', async ({ page }) => {
+  const dialogues = '/study/l4/dialogues';
+  await page.goto(dialogues);
+  const pinyin = page.getByRole('checkbox', { name: 'Mostrar pinyin', exact: true });
+  const spanish = page.getByRole('checkbox', { name: 'Mostrar traducción al español' });
+  await pinyin.uncheck();
+  await spanish.check();
+  await page.evaluate(() => document.fonts.ready.then(() => undefined));
+
+  for (const row of [page.locator('.dialogue-turn').nth(16), page.locator('.dialogue-text article').first()]) {
+    const glyph = row.getByRole('link', { name: /Abrir ficha de/ }).first();
+    await glyph.evaluate(element => {
+      window.scrollBy({ top: element.getBoundingClientRect().top - 220, behavior: 'instant' });
+    });
+    await expect(glyph).toBeInViewport();
+    const initialTop = await glyph.evaluate(element => element.getBoundingClientRect().top);
+    const character = await glyph.innerText();
+    await glyph.click();
+    await expect(page.locator('#hanzi-detail-start')).toHaveAttribute('data-character', character);
+    await expect(page.locator('#hanzi-detail-start')).toBeInViewport();
+    await page.goBack();
+    await expect(page).toHaveURL(url => url.pathname === dialogues);
+    await expect.poll(async () => {
+      const currentTop = await glyph.evaluate(element => element.getBoundingClientRect().top);
+      return Math.abs(currentTop - initialTop);
+    }).toBeLessThanOrEqual(3);
+    await expect(pinyin).not.toBeChecked();
+    await expect(spanish).toBeChecked();
+  }
+
+  const practiceGlyph = page.locator('.dialogue-text article').first().getByRole('link').first();
+  const practiceTop = await practiceGlyph.evaluate(element => element.getBoundingClientRect().top);
+  await page.goForward();
+  await expect(page.locator('#hanzi-detail-start')).toBeInViewport();
+  await page.goBack();
+  await expect(spanish).toBeChecked();
+  await expect.poll(() => practiceGlyph.evaluate((element, top) =>
+    Math.abs(element.getBoundingClientRect().top - top), practiceTop)).toBeLessThanOrEqual(3);
+
+  await page.goForward();
+  await expect(page.locator('#hanzi-detail-start')).toBeInViewport();
+  await page.goto(dialogues);
+  await expect(pinyin).toBeChecked();
+  await expect(spanish).not.toBeChecked();
+  await expect(page.getByRole('heading', { name: 'Diálogos completos' })).toBeInViewport();
+});
