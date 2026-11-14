@@ -7,6 +7,8 @@ import type { CurriculumScope, LessonNumber } from '@/data/types';
 import { retoMixtoForScope } from '@/data/reto-mixto-lesson4';
 import { retoMixtoConversations, type RetoMixtoEntry, type RetoMixtoMode } from '@/data/reto-mixto';
 import { audioForMandarinText } from '@/lib/mandarin-audio';
+import { retoMixtoTokenAudio } from '@/lib/reto-mixto-token-audio';
+import { useMandarinAudioPlayer } from '@/lib/use-mandarin-audio-player';
 import { buildRetoMixtoDeck, buildRetoMixtoWritingDeck, insertRetry, isSilentRetoMixtoToken, primaryRetoMixtoHanziTarget, retryQuestion, type RetoMixtoQuestion } from '@/lib/reto-mixto';
 import { trackAnalyticsEvent } from '@/lib/analytics/client';
 import { PinyinText } from './PinyinText';
@@ -73,13 +75,11 @@ export function RetoMixto({ scope, onClose }: Props) {
   const [selectedOption, setSelectedOption] = useState('');
   const [builtTokens, setBuiltTokens] = useState<number[]>([]);
   const [tokenOrder, setTokenOrder] = useState<number[]>([]);
-  const [audioState, setAudioState] = useState<'idle' | 'playing' | 'unavailable'>('idle');
-  const [activeAudioKey, setActiveAudioKey] = useState('');
+  const voice = useMandarinAudioPlayer();
+  const [lastAudio, setLastAudio] = useState<{ key: string; sources: readonly string[] } | null>(null);
   const [currentStreak, setCurrentStreak] = useState(0);
   const [maxStreak, setMaxStreak] = useState(0);
   const streakRef = useRef(0);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-  const audioRun = useRef(0);
   const feedbackRef = useRef<HTMLDivElement | null>(null);
 
   const currentQuestion = queue[index];
@@ -90,83 +90,47 @@ export function RetoMixto({ scope, onClose }: Props) {
   const options = currentQuestion?.optionIds.map((id) => entriesById.get(id)).filter((entry): entry is RetoMixtoEntry => Boolean(entry)) ?? [];
   const allowedSelections = studyScopeOptions.filter(({ value }) => lessonsByScope[value].every(lesson => lessonsByScope[scope].includes(lesson)));
 
-  useEffect(() => () => {
-    audioRun.current += 1;
-    audioRef.current?.pause();
-  }, []);
-
   useEffect(() => {
     if (!feedback) return;
     const frame = window.requestAnimationFrame(() => feedbackRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }));
     return () => window.cancelAnimationFrame(frame);
   }, [feedback]);
 
-  async function playAudioSource(src: string | undefined, key: string, awaitEnd = false) {
-    const run = ++audioRun.current;
-    if (audioRef.current) {
-      audioRef.current.pause();
-      audioRef.current = null;
-    }
-    if (!src) {
-      setActiveAudioKey(key);
-      setAudioState('unavailable');
-      return false;
-    }
-    const audio = new Audio(src);
-    audioRef.current = audio;
-    setActiveAudioKey(key);
-    setAudioState('playing');
-    try {
-      const ended = new Promise<boolean>((resolve, reject) => {
-        audio.onended = () => resolve(true);
-        audio.onerror = () => reject(new Error('audio'));
-        audio.onpause = () => { if (!audio.ended) resolve(false); };
-      });
-      await audio.play();
-      if (awaitEnd) {
-        const completed = await ended;
-        if (run === audioRun.current) {
-          setAudioState('idle');
-          setActiveAudioKey('');
-        }
-        return completed;
-      }
-      void ended.then(() => {
-        if (run === audioRun.current) {
-          setAudioState('idle');
-          setActiveAudioKey('');
-        }
-      }).catch(() => {
-        if (run === audioRun.current) setAudioState('unavailable');
-      });
-      return true;
-    } catch {
-      if (run === audioRun.current) setAudioState('unavailable');
-      return false;
-    }
+  function playAudioSource(source: string | readonly string[] | undefined, key: string) {
+    const sources = typeof source === 'string' ? [source] : source ?? [];
+    setLastAudio(sources.length ? { key, sources } : null);
+    voice.play(sources);
   }
 
-  function playEntryAudio(entry: RetoMixtoEntry, awaitEnd = false, key = 'answer') {
-    return playAudioSource(entry.audioSrc, key, awaitEnd);
+  function playEntryAudio(entry: RetoMixtoEntry) {
+    if (entry.audioSrc) {
+      playAudioSource(entry.audioSrc, 'answer');
+      return;
+    }
+    // Some construction sentences have recordings for each block only.
+    const sources: string[] = [];
+    for (const [index, token] of (entry.tokens ?? []).entries()) {
+      if (isSilentRetoMixtoToken(token)) continue;
+      const block = retoMixtoTokenAudio(entry, index);
+      if (block.length === 0) { stopAudio(); return; }
+      sources.push(...block);
+    }
+    playAudioSource(sources, 'answer');
   }
 
   function stopAudio() {
-    audioRun.current += 1;
-    audioRef.current?.pause();
-    audioRef.current = null;
-    setAudioState('idle');
-    setActiveAudioKey('');
+    voice.stop();
+    setLastAudio(null);
   }
 
   function playQuestionAudio() {
-    if (!currentConversation) return;
-    void playAudioSource(audioForMandarinText(currentConversation.promptHanzi), 'question');
+    if (currentConversation) playAudioSource(audioForMandarinText(currentConversation.promptHanzi), 'question');
   }
 
   function playToken(tokenIndex: number) {
     const token = currentEntry?.tokens?.[tokenIndex];
-    if (!token || isSilentRetoMixtoToken(token)) return;
-    void playAudioSource(audioForMandarinText(token), `token-${tokenIndex}`);
+    if (!currentEntry || !token || isSilentRetoMixtoToken(token)) return;
+    playAudioSource(retoMixtoTokenAudio(currentEntry, tokenIndex), 'token');
   }
 
   function start(customDeck?: RetoMixtoQuestion[]) {
@@ -183,8 +147,6 @@ export function RetoMixto({ scope, onClose }: Props) {
     setSelectedOption('');
     setBuiltTokens([]);
     setTokenOrder(shuffleIndexes(firstEntry?.tokens?.length ?? 0));
-    setAudioState('idle');
-    setActiveAudioKey('');
     setCurrentStreak(0);
     setMaxStreak(0);
     streakRef.current = 0;
@@ -206,13 +168,11 @@ export function RetoMixto({ scope, onClose }: Props) {
       setSelectedOption('');
       setBuiltTokens([]);
       setTokenOrder(shuffleIndexes(nextEntry?.tokens?.length ?? 0));
-      setAudioState('idle');
-      setActiveAudioKey('');
       setIndex((value) => value + 1);
     }
   }
 
-  async function register(correct: boolean, writing?: WritingSummary) {
+  function register(correct: boolean, writing?: WritingSummary) {
     if (!currentQuestion || !currentEntry || feedback) return;
     setAttempts((values) => [...values, { question: currentQuestion, correct, writing }]);
     setFeedback(correct ? 'correct' : 'incorrect');
@@ -221,9 +181,10 @@ export function RetoMixto({ scope, onClose }: Props) {
       streakRef.current += 1;
       setCurrentStreak(streakRef.current);
       setMaxStreak((value) => Math.max(value, streakRef.current));
-      await playEntryAudio(currentEntry, true);
+      playEntryAudio(currentEntry);
       return;
     }
+    stopAudio();
     streakRef.current = 0;
     setCurrentStreak(0);
     const reinforcement = retryQuestion(currentQuestion, retoMixtoCorpus, retoMixtoConversations);
@@ -233,13 +194,13 @@ export function RetoMixto({ scope, onClose }: Props) {
   function choose(entry: RetoMixtoEntry) {
     if (feedback) return;
     setSelectedOption(entry.id);
-    void register(entry.id === currentEntry?.id);
+    register(entry.id === currentEntry?.id);
   }
 
   function checkConstruction() {
     if (!currentEntry || feedback) return;
     const answer = builtTokens.map((tokenIndex) => currentEntry.tokens?.[tokenIndex] ?? '').join('');
-    void register(normalizeChinese(answer) === normalizeChinese(currentEntry.hanzi));
+    register(normalizeChinese(answer) === normalizeChinese(currentEntry.hanzi));
   }
 
   function addToken(tokenIndex: number) {
@@ -307,14 +268,17 @@ export function RetoMixto({ scope, onClose }: Props) {
   const isAudioPrompt = isWriting ? currentQuestion.writingPrompt === 'audio' : currentQuestion.mode === 'audio-hanzi' || currentQuestion.mode === 'audio-image';
   const isConstruction = !isWriting && currentQuestion.mode === 'construct-response';
   const isConversation = !isWriting && (currentQuestion.mode === 'conversation-response' || currentQuestion.mode === 'construct-response');
+  const supportImage = currentEntry.supportImageSrc;
+  const supportImageAlreadyVisible = (isImagePrompt && currentEntry.imageSrc === supportImage)
+    || (isImageAnswer && options.some(option => option.imageSrc === supportImage));
   if ((isImagePrompt && !currentEntry.imageSrc) || (isImageAnswer && (options.length !== 4 || options.some(entry => !entry.imageSrc)))) {
     return <div className="mixed-challenge"><p>Las imágenes aprobadas han cambiado. Inicia una nueva sesión con el catálogo actualizado.</p><button type="button" onClick={() => setPhase('setup')}>Volver</button></div>;
   }
   const availableTokenIndexes = tokenOrder.filter((tokenIndex) => !builtTokens.includes(tokenIndex));
   const hanziTarget = primaryRetoMixtoHanziTarget(currentEntry);
   const usageExample = currentEntry.hanzi.length === 1 ? currentEntry.usageExample : undefined;
-  const questionAudioActive = activeAudioKey === 'question' && audioState === 'playing';
-  const answerAudioActive = activeAudioKey === 'answer' && audioState === 'playing';
+  const questionAudioActive = lastAudio?.key === 'question' && Boolean(voice.activeSource);
+  const answerAudioActive = lastAudio?.key === 'answer' && Boolean(voice.activeSource);
 
   return <div className="mixed-challenge playing">
     <div className="mixed-progress-head"><p className="eyebrow">{isWriting ? 'Escribir Hanzi · Avanzado' : modeLabels[currentQuestion.mode]}</p><button type="button" onClick={onClose}>Cerrar</button></div>
@@ -329,11 +293,11 @@ export function RetoMixto({ scope, onClose }: Props) {
 
     {isImagePrompt && currentEntry.imageSrc && <div className="mixed-prompt-image"><RetoMixtoVisual entry={currentEntry} alt="Concepto visual de la pregunta" priority /></div>}
     {!isWriting && currentQuestion.mode === 'hanzi-image' && <div className="mixed-prompt-hanzi" lang="zh-Hans"><Hanzi>{currentEntry.hanzi}</Hanzi></div>}
-    {isAudioPrompt && <button className={`audio-button mixed-audio ${answerAudioActive ? 'playing' : ''}`} disabled={feedback === 'correct'} type="button" onClick={() => void playEntryAudio(currentEntry)} aria-label="Escuchar audio de la pregunta"><span aria-hidden="true">{answerAudioActive ? '■' : '▶'}</span> {answerAudioActive ? 'Sonando…' : 'Escuchar'}</button>}
+    {isAudioPrompt && <button className={`audio-button mixed-audio ${answerAudioActive ? 'playing' : ''}`} disabled={feedback === 'correct'} type="button" onClick={() => playEntryAudio(currentEntry)} aria-label="Escuchar audio de la pregunta"><span aria-hidden="true">{answerAudioActive ? '■' : '▶'}</span> {answerAudioActive ? 'Sonando…' : 'Escuchar'}</button>}
     {isConversation && currentConversation && <div className="mixed-dialogue" lang="zh-Hans"><span>Míng</span><div className="mixed-dialogue-bubble"><p><Hanzi>{currentConversation.promptHanzi}</Hanzi></p><button className={`mixed-question-audio ${questionAudioActive ? 'playing' : ''}`} disabled={feedback === 'correct'} type="button" onClick={playQuestionAudio} aria-label={`Escuchar pregunta: ${currentConversation.promptHanzi}`} title="Escuchar pregunta"><span aria-hidden="true">{questionAudioActive ? '■' : '🔊'}</span></button></div><strong><Hanzi>你</Hanzi></strong><p>……</p></div>}
-    {isConstruction && !currentConversation && <p className="mixed-dialogue">{currentEntry.meaningEs}</p>}
+    {isConstruction && !currentConversation && <p className="mixed-sentence-cue" lang="es">{currentEntry.meaningEs}</p>}
 
-    {isWriting && !feedback && <HanziWritingSequence key={currentQuestion.id} expected={normalizeChinese(currentEntry.hanzi)} pinyin={currentEntry.pinyin} meaning={currentEntry.meaningEs} onComplete={(correct, summary) => { void register(correct, summary); }} />}
+    {isWriting && !feedback && <HanziWritingSequence key={currentQuestion.id} expected={normalizeChinese(currentEntry.hanzi)} pinyin={currentEntry.pinyin} meaning={currentEntry.meaningEs} onComplete={(correct, summary) => { register(correct, summary); }} />}
     {!isWriting && !isConstruction && <div className={isImageAnswer ? 'mixed-image-options' : 'mixed-text-options'}>{options.map((entry, optionIndex) => {
       const answerState = feedback && entry.id === currentEntry.id
         ? 'correct'
@@ -345,16 +309,21 @@ export function RetoMixto({ scope, onClose }: Props) {
 
     {isConstruction && <div className="mixed-construction"><div className={`mixed-built${feedback ? ` answer-${feedback}` : ''}`} data-answer-state={feedback ?? undefined} aria-label="Respuesta construida">{feedback && <i className="mixed-option-mark" aria-label={feedback === 'correct' ? 'Respuesta construida correcta' : 'Respuesta construida incorrecta'}>{feedback === 'correct' ? '✓' : '✕'}</i>}{builtTokens.length ? builtTokens.map((tokenIndex) => <button type="button" disabled={Boolean(feedback)} onClick={() => removeToken(tokenIndex)} key={tokenIndex}><Hanzi>{currentEntry.tokens?.[tokenIndex]}</Hanzi></button>) : <span>Toca los bloques en orden</span>}</div>{feedback === 'incorrect' && <div className="mixed-construction-solution" data-answer-state="correct"><i className="mixed-option-mark" aria-label="Respuesta correcta">✓</i><strong lang="zh-Hans"><Hanzi>{currentEntry.hanzi}</Hanzi></strong></div>}<div className="mixed-token-bank">{availableTokenIndexes.map((tokenIndex) => <button type="button" disabled={Boolean(feedback)} onClick={() => addToken(tokenIndex)} key={tokenIndex}><Hanzi>{currentEntry.tokens?.[tokenIndex]}</Hanzi></button>)}</div>{!feedback && <button className="button button-primary" disabled={!builtTokens.length} type="button" onClick={checkConstruction}>Comprobar</button>}</div>}
 
+    {lastAudio && (voice.failed || voice.blocked) && <div className="mixed-audio-retry">
+      <span role="status">No se pudo reproducir el audio.</span>
+      <button className="audio-button" type="button" onClick={() => voice.play(lastAudio.sources)}>Reintentar audio</button>
+    </div>}
+
     <div aria-live="polite">
       {feedback && <div className={`mixed-feedback answer-card ${feedback}`} ref={feedbackRef}>
         <b className={feedback === 'correct' ? 'mixed-correct-title' : 'mixed-incorrect-title'}>{feedback === 'correct' ? '✓ Correcto' : completedWithHelp ? 'Completado con ayuda · vuelve a practicarlo' : '✕ Revisa esta respuesta'}</b>
         <strong lang="zh-Hans"><Hanzi>{currentEntry.hanzi}</Hanzi></strong>
         <h3><PinyinText>{currentEntry.pinyin}</PinyinText></h3>
         <p className="mixed-correction-meaning"><Hanzi>{currentEntry.meaningEs}</Hanzi></p>
-        {currentEntry.supportImageSrc && <div className="mixed-prompt-image"><RetoMixtoVisual entry={{ ...currentEntry, imageSrc: currentEntry.supportImageSrc }} alt={`Apoyo visual de ${currentEntry.meaningEs}`} /></div>}
-        {usageExample && <div className="mixed-usage-example"><div><span lang="zh-Hans"><Hanzi>{usageExample.hanzi}</Hanzi></span><span aria-hidden="true"> · </span><PinyinText>{usageExample.pinyin}</PinyinText>{usageExample.audioSrc && <button type="button" onClick={() => void playAudioSource(usageExample.audioSrc, 'example')} aria-label={`Escuchar ejemplo: ${usageExample.hanzi}`} title="Escuchar ejemplo"><span aria-hidden="true">🔊</span></button>}</div><small><Hanzi>{usageExample.meaningEs}</Hanzi></small></div>}
+        {supportImage && !supportImageAlreadyVisible && <div className="mixed-prompt-image"><RetoMixtoVisual entry={{ ...currentEntry, imageSrc: supportImage }} alt={`Apoyo visual de ${currentEntry.meaningEs}`} /></div>}
+        {usageExample && <div className="mixed-usage-example"><div><span lang="zh-Hans"><Hanzi>{usageExample.hanzi}</Hanzi></span><span aria-hidden="true"> · </span><PinyinText>{usageExample.pinyin}</PinyinText>{usageExample.audioSrc && <button type="button" onClick={() => playAudioSource(usageExample.audioSrc, 'example')} aria-label={`Escuchar ejemplo: ${usageExample.hanzi}`} title="Escuchar ejemplo"><span aria-hidden="true">🔊</span></button>}</div><small><Hanzi>{usageExample.meaningEs}</Hanzi></small></div>}
         <div className="mixed-correction-actions">
-          <button className={`audio-button${answerAudioActive ? ' playing' : ''}`} type="button" onClick={() => void playEntryAudio(currentEntry)} aria-label={`Escuchar pronunciación de ${currentEntry.hanzi}`} title={`Escuchar ${currentEntry.hanzi}`}><span aria-hidden="true">🔊</span> {answerAudioActive ? 'Sonando…' : 'Escuchar'}</button>
+          <button className={`audio-button${answerAudioActive ? ' playing' : ''}`} type="button" onClick={() => playEntryAudio(currentEntry)} aria-label={`Escuchar pronunciación de ${currentEntry.hanzi}`} title={`Escuchar ${currentEntry.hanzi}`}><span aria-hidden="true">🔊</span> {answerAudioActive ? 'Sonando…' : 'Escuchar'}</button>
           {hanziTarget && <a href={hanziGlyphHref(hanziTarget)} target="_blank" rel="noopener noreferrer">Hanzi ↗</a>}
           <button className="button button-primary mixed-continue" type="button" onClick={continueAfterFeedback}>Continuar →</button>
         </div>

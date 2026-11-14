@@ -1,96 +1,1572 @@
 {
+  "/images/vocabulary/vocab-2a358987f9af9a3ac83d.webp": {
+    "sha256": "5dfce999cff9dfa0a2eae9cae616cf69c8fdd78189ac5479edb5a8c5c0d8ba86",
+    "x": 828,
+    "y": 41,
+    "width": 702,
+    "height": 959,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-9792b9b165a4a1933768.webp": {
+    "sha256": "faa3c7cf820bc52a57ffcf53ba682006ef4f8957ef2171f5e474672e23c343b9",
+    "x": 672,
+    "y": 55,
+    "width": 832,
+    "height": 945,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-11ac599bcc4d3d560e7f.webp": {
+    "sha256": "73844a87a14610c3e8a5e2f3dd63e20b95744fb24dc463b9bd1cc86ba1e0d369",
+    "x": 653,
+    "y": 33,
+    "width": 837,
+    "height": 967,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-9eade7042ba11d24699b.webp": {
+    "sha256": "9fbfe21856d1dbb771619015032b64b41c259727960c73f142301651b922440e",
+    "x": 665,
+    "y": 20,
+    "width": 894,
+    "height": 980,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-a1863dd5b44ab9363837.webp": {
+    "sha256": "f27c2facfc1dfa0cf70d8f4cb72ed25b930748eeb1229ce420162273ae23cc9e",
+    "x": 710,
+    "y": 39,
+    "width": 849,
+    "height": 961,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-aa5f3c6ddafa6cf95227.webp": {
+    "sha256": "8ae255e2bc8372f2a34b859d44fced9cd3d76e218b5c1af60f4dfed8ea20b395",
+    "x": 539,
+    "y": 45,
+    "width": 1020,
+    "height": 955,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-b681146eefcf86586470.webp": {
+    "sha256": "a55b13b2115a184b24aaac1f606ed8d0e54d2ee10f27ad86383c0ae053a9b407",
+    "x": 739,
+    "y": 64,
+    "width": 820,
+    "height": 936,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-008c518fc6ca61e8420d.webp": {
+    "sha256": "b817cbf84fd989819c1fa22492221639ce47fb64b008157e1d33d96e70aa5117",
+    "x": 748,
+    "y": 35,
+    "width": 811,
+    "height": 965,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-e7fbcd14cb00ce6dd9a9.webp": {
+    "sha256": "4d7dafa83185040953a142b41c867bd6a19eb35b2d2d3ff00cbe72ad19ab19a8",
+    "x": 698,
+    "y": 76,
+    "width": 861,
+    "height": 924,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-9e984b24f6334c65cb49.webp": {
+    "sha256": "0942a17c102e5b5dc83f071b753c6daf50cc7c26eb0d435587fd7b2904688183",
+    "x": 683,
+    "y": 24,
+    "width": 769,
+    "height": 976,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-893dbe55a52fd9865bc7.webp": {
+    "sha256": "d48118c32f6f29bc2869a6ad3249ba5b9f31f2fd290ef3451ecbe92032577ebd",
+    "x": 656,
+    "y": 42,
+    "width": 903,
+    "height": 958,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/5f88-61d923365aa9.webp": {
+    "sha256": "d462c0d5adab0b6a4bf9a5c1e389ff9fa424c8c0eb8dd3808bd25cf7c946ed53",
+    "x": 863,
+    "y": 107,
+    "width": 546,
+    "height": 790,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-6a0ebb3d1576fd11be53.webp": {
+    "sha256": "0fb742cc3173147919a2c42e88cb3c84892b5329ac7c7fd8c06da871996e1979",
+    "x": 748,
+    "y": 75,
+    "width": 794,
+    "height": 925,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-a7c58aae6bc4c2ccda0e.webp": {
+    "sha256": "d2d09a8a9b2ad47c3416f91568fad7957990c4a6cb9610b27f2be22075d3888a",
+    "x": 636,
+    "y": 83,
+    "width": 923,
+    "height": 917,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/5728-153a3c05be73.webp": {
+    "sha256": "7b317779728d1970f8a0bb15d5b2f5fadb7c7fe93f0d62f61beeb3f8414bd821",
+    "x": 804,
+    "y": 107,
+    "width": 602,
+    "height": 790,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123/enter-annotated-fdac871d6446.webp": {
+    "sha256": "fdac871d6446ea57ed1e862b75be4870cfe67de2f8d913e3c459ba19598e1d93",
+    "x": 724,
+    "y": 101,
+    "width": 667,
+    "height": 834,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-3b1c47e344348be29587.webp": {
+    "sha256": "644090ad1a57988e8b0ac982c1c8c75011e581484f5f77a8eab18f502e90e45a",
+    "x": 866,
+    "y": 58,
+    "width": 492,
+    "height": 889,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-28ca2f15dd0ccf2ee008.webp": {
+    "sha256": "6fb41aa340212eb6471f253ae9d4a4e026ec6e8665887e72e8fc2c82ed0d56a4",
+    "x": 694,
+    "y": 10,
+    "width": 865,
+    "height": 990,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-f2a875beba85ddd81304.webp": {
+    "sha256": "bc02b02098c10ede2c0c4a543042548cade6cbd3be668a2fbc6954be442b1959",
+    "x": 641,
+    "y": 102,
+    "width": 918,
+    "height": 898,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-938e166e2011a4047337.webp": {
+    "sha256": "1b40dad0ad7b6cbc1b3ba55ff563ed51fa94a0f67c1a729b3dddbc6884f6d4c5",
+    "x": 695,
+    "y": 132,
+    "width": 864,
+    "height": 868,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-d84c32be00f1820d4919.webp": {
+    "sha256": "a92b80b3dc95e35fc1e843995405d2c31ad2e33ae39017cf957ab954687edddd",
+    "x": 766,
+    "y": 19,
+    "width": 769,
+    "height": 981,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/592a-a65f12d6b9ca.webp": {
+    "sha256": "9524231bf214d6b0d48e4ce0b656f52730f7eb10a44757857d86e6052e07e5d6",
+    "x": 818,
+    "y": 107,
+    "width": 637,
+    "height": 782,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-10bd0997461f28df760a.webp": {
+    "sha256": "f5226d34cc93570d8a628b7cc46156b8cae8ea67ccf839547d7db33921ea29e0",
+    "x": 692,
+    "y": 81,
+    "width": 857,
+    "height": 919,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-fbd4af877e9d76ff419d.webp": {
+    "sha256": "c3ffbf0eefa71859a7c82341d9c309c80bfe6389c6d82fb87cd1e402cd02044d",
+    "x": 709,
+    "y": 77,
+    "width": 850,
+    "height": 923,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-9d64a09852884a89b07f.webp": {
+    "sha256": "01f65a22d264d2d28c956fb63d6a1d75c6eefee0ae7267c9035065dabffc2674",
+    "x": 520,
+    "y": 78,
+    "width": 1038,
+    "height": 922,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-edfb1fd0fc4cde73d455.webp": {
+    "sha256": "7a45d82c87a4a2896f92a587515b65a04e6672cfa780a30fec00f6996f0a99cc",
+    "x": 735,
+    "y": 17,
+    "width": 804,
+    "height": 983,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-95b520b34d04fe077f34.webp": {
+    "sha256": "588981546545ab40f33b9922f66962a6bf6df6f832b530a86f794f463206eb4a",
+    "x": 776,
+    "y": 41,
+    "width": 731,
+    "height": 959,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-317b59d83163415f17e2.webp": {
+    "sha256": "ff32988ec4af5945bead6a9e1bb652abff6adf654e23b7fa0e11a39a7ba2322e",
+    "x": 654,
+    "y": 48,
+    "width": 873,
+    "height": 952,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-530cb35a38b8145bde5c.webp": {
+    "sha256": "4cfc1088f2f5a1c190428415d61bd923a1d506ffe740948648b65c13fb216823",
+    "x": 573,
+    "y": 55,
+    "width": 969,
+    "height": 945,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-ffa68167e3b384abb4da.webp": {
+    "sha256": "31fe97e0b6fa54673a9ff2c1b7bbbf7ae303c40de8ce0be77170371c73761517",
+    "x": 627,
+    "y": 72,
+    "width": 911,
+    "height": 928,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
   "/images/vocabulary/vocab-3c6651b8c36a0359759d.webp": {
     "sha256": "8f0b84770035617b7bb408f107b9274cc9b6ad28d7b2fbbb91613f3b9ecf4b0f",
     "x": 521,
-    "y": 116,
+    "y": 118,
     "width": 1038,
-    "height": 884,
+    "height": 882,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-bfee5fd5214f8d4d64d3.webp": {
+    "sha256": "8d0a2f1dd76aedf24ce03f10dc25f37253393ef59dccb5e5b9df5864e9972454",
+    "x": 642,
+    "y": 72,
+    "width": 883,
+    "height": 928,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-c2e6f2246c6679a64e04.webp": {
+    "sha256": "1a34239faffd7806f924c3ad2cbd767e8080e9c8454e4ff3b1ab6df2e35136f4",
+    "x": 765,
+    "y": 148,
+    "width": 794,
+    "height": 852,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-055e1421700f0d4c084a.webp": {
+    "sha256": "4f253ff4e70c2ea40a3b1afc4fe6da598c547c7780bd87e62e665125d7b99247",
+    "x": 567,
+    "y": 148,
+    "width": 992,
+    "height": 852,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-3f8f6d6f1bea306af056.webp": {
+    "sha256": "442c3839cc4930cd280c1d192f82bf9f0a314352b6499f6c81b9edd96059e3cb",
+    "x": 662,
+    "y": 100,
+    "width": 892,
+    "height": 836,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-75439be2acc56ab36d9e.webp": {
+    "sha256": "acb81bf0677ab556d0dbda0d6ec691aac2092b34007c090200f45e88a02a38ad",
+    "x": 632,
+    "y": 68,
+    "width": 870,
+    "height": 932,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/662f-733e20ab0a3c.webp": {
+    "sha256": "b5c5d24e1e0ac43a06145113fe72cac67416491c2f7395341804ce6575aa13e3",
+    "x": 837,
+    "y": 110,
+    "width": 647,
+    "height": 779,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-993a86e1cf34a7b67af5.webp": {
+    "sha256": "3fce361156e71702dead2388e75a8973062eb7f2f728a52e4f74d8e9ea3fedd5",
+    "x": 541,
+    "y": 102,
+    "width": 1018,
+    "height": 898,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/521a-d99e80840697.webp": {
+    "sha256": "c29a4ab59e4260f642095c102e1adc6a259d6dadec0a76baeda99507f6539991",
+    "x": 814,
+    "y": 107,
+    "width": 665,
+    "height": 725,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-context/f4f8a29cbc-7b7fbb5fff22.webp": {
+    "sha256": "7b7fbb5fff22216b13298513207308b9ea560e4df98310d2523d9904c957bd19",
+    "x": 786,
+    "y": 152,
+    "width": 663,
+    "height": 623,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-92e5ec49ccb50cb98dce.webp": {
+    "sha256": "8d763072248072f103e3506c8fc826a034592e9efa80ed0d279ccb8d6e18241e",
+    "x": 721,
+    "y": 9,
+    "width": 838,
+    "height": 991,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-13a0168c2a9454d119d4.webp": {
+    "sha256": "c0c4860d128886631753a4d66437945f53fed2305602120bc5f8813f0563d710",
+    "x": 686,
+    "y": 29,
+    "width": 873,
+    "height": 971,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-context/8c0e131434-71c6200c0f77.webp": {
+    "sha256": "71c6200c0f77bf51ad58516d1d94799849d9d6a4e3fc678bc79ac1004cdcfaf0",
+    "x": 759,
+    "y": 152,
+    "width": 722,
+    "height": 528,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-380d1165b490e6dd3f69.webp": {
+    "sha256": "324dbb15cbdfc1ba19810d8f6c6356a41db8d0de4e3b3b75e09db6d14c58cc89",
+    "x": 729,
+    "y": 57,
+    "width": 796,
+    "height": 943,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-7a6cc0aeca02037c2c13.webp": {
     "sha256": "d3a2462b0753e3eda95d702e39670bf3826ba4a8ba4002423c9a3830b5fb7c74",
-    "x": 826,
-    "y": 62,
-    "width": 565,
-    "height": 938,
+    "x": 827,
+    "y": 63,
+    "width": 564,
+    "height": 937,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-6a4bcfe96fe3c438e1c7.webp": {
+    "sha256": "b63463d7c21e3721bcbdd840537a5b18d956c4c5e5ffd576a10c8b03239b42b5",
+    "x": 418,
+    "y": 63,
+    "width": 1141,
+    "height": 925,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-c6dcfa754addc4e1d4f9.webp": {
+    "sha256": "4b4dd3b6c7ce335571062a789f50c87dcbeb4e1d33fda1a4d0a7037ffab37a10",
+    "x": 439,
+    "y": 114,
+    "width": 1113,
+    "height": 755,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-context/1e1fdfd0fd-6c4882766909.webp": {
+    "sha256": "6c4882766909cc19a0a75052e83d84e9c031e01ac625ea9706bee874451064fc",
+    "x": 777,
+    "y": 152,
+    "width": 726,
+    "height": 649,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-521a8a107015ea556786.webp": {
+    "sha256": "5c4498c8db655ce526a1770fd563217614f0c0147750c5960883c464ce042c12",
+    "x": 778,
+    "y": 70,
+    "width": 751,
+    "height": 930,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/5317-4eac-3e05acabf7fe.svg": {
+    "sha256": "3e05acabf7feb51a9abcc474958558d657d48cb99a27fef9ac6c54bfc3743235",
+    "x": 786,
+    "y": 176,
+    "width": 668,
+    "height": 740,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-87428fa42d74f662e3e7.webp": {
     "sha256": "d9e25d5bb75bca7e998ba6e54f2ffe9f8ebd1ca97de8662d528c08241109a00b",
     "x": 619,
-    "y": 75,
-    "width": 890,
-    "height": 925,
+    "y": 76,
+    "width": 889,
+    "height": 924,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-ce1af7b6ba6cd6163156.webp": {
+    "sha256": "5acd2d4945f530d778b1d09542b344297d461241233e4a6df59c7d53ddde95f7",
+    "x": 719,
+    "y": 164,
+    "width": 747,
+    "height": 746,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-ec6780c635ccd2292425.webp": {
+    "sha256": "74baec9111f9bda141890fb1408036dec6eaa88b08c7f23417dbf2771d5cef9e",
+    "x": 651,
+    "y": 68,
+    "width": 905,
+    "height": 932,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-d896fc52e34b4f0b1f33.webp": {
+    "sha256": "6dfeb032a7c85e72ebaaadd5dbca8534ba65b2fb6a0c90b48bb30b167b75932b",
+    "x": 602,
+    "y": 41,
+    "width": 945,
+    "height": 953,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-94b3559df0cea72df621.webp": {
+    "sha256": "a5533044de53d1fc7df2e7808719bba3d1880d17ead6be57063b6095a94ec21d",
+    "x": 722,
+    "y": 49,
+    "width": 730,
+    "height": 951,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-643257f5a3b95cac5305.webp": {
+    "sha256": "123edc21f24bdbecade98ba755be1c9cc3fac37563986c2ecec3b49f24e99995",
+    "x": 606,
+    "y": 31,
+    "width": 953,
+    "height": 969,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-b86ab9d7c3049cdcf82d.webp": {
+    "sha256": "86463c7b6e1e7143035bd39e36f9a64f5b424cb0088f2d2bbf32be9a793ae54c",
+    "x": 589,
+    "y": 222,
+    "width": 932,
+    "height": 597,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-e0527a6b7ac9294f4283.webp": {
     "sha256": "2826d23b26066a3a641ddee3293a843bb6c370e6532b40859b0e1f98fb25b427",
-    "x": 696,
-    "y": 212,
-    "width": 773,
+    "x": 697,
+    "y": 213,
+    "width": 771,
     "height": 637,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-fe7aa0114b823bee728b.webp": {
+    "sha256": "3abe200b6dc5abee4b71cae1c25499866e3f2ead74ac303b51deab8d4afa1760",
+    "x": 734,
+    "y": 223,
+    "width": 780,
+    "height": 642,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-e1f6abb3da93735efa6e.webp": {
+    "sha256": "2a19f214c3b30b91e5a269fe4db3bced557335b523bed11e0cc93a9cfd458973",
+    "x": 701,
+    "y": 35,
+    "width": 720,
+    "height": 965,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-c84e6180a10da4fc3247.webp": {
+    "sha256": "1d6b9f382e76f7d5838e1f3ac7e763e5c1fdaceee188fa683e1de0e43e8c13b2",
+    "x": 637,
+    "y": 172,
+    "width": 846,
+    "height": 698,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-7109aa60edbe7df1e2f1.webp": {
     "sha256": "e3d225bfb26533f2fb330bcdc511985d48a87fbbbf8c91129928d845b17dd165",
-    "x": 584,
-    "y": 203,
-    "width": 966,
-    "height": 627,
+    "x": 585,
+    "y": 204,
+    "width": 964,
+    "height": 626,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-f5d058b9599add82346a.webp": {
     "sha256": "a19ddc71f098e96effea8aa0d774b0b33eaa813b3d7d81214cc75ca0f7362fc3",
-    "x": 669,
+    "x": 670,
     "y": 125,
-    "width": 842,
+    "width": 840,
     "height": 809,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-9613daf77673a4afb7e3.webp": {
+    "sha256": "3932ac4252c9e3838454eb33c4befabfe5a4cc53801696acd53ace0c1a276357",
+    "x": 802,
+    "y": 37,
+    "width": 592,
+    "height": 939,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-38254b3e1ef62ce2eebf.webp": {
+    "sha256": "ad48cbfd414393e0b07894b9758875ceff81a601203fe542d1a944dd42372119",
+    "x": 661,
+    "y": 54,
+    "width": 818,
+    "height": 946,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-5129dc77aee70a9c9b1f.webp": {
+    "sha256": "3e6816c7c7fe61fae8c3f2846a7ee3553c25bbc273b89d4ab0f19f01a5536cc7",
+    "x": 574,
+    "y": 78,
+    "width": 962,
+    "height": 922,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-33a8458bb869ac3bfdd9.webp": {
+    "sha256": "84cdf6c2ee4abbb9a393a70b838b7c1a029f8b4d3cdad98f570dfe111b1a75ae",
+    "x": 500,
+    "y": 90,
+    "width": 1059,
+    "height": 910,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-context/57caa1d92e-04c4aa48c738.webp": {
+    "sha256": "04c4aa48c7381881c41a5bcfe386462be2729d5067940092895a2f1bb145fac1",
+    "x": 794,
+    "y": 152,
+    "width": 652,
+    "height": 649,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-9c4a8de8caa122e0f11b.webp": {
+    "sha256": "387ef86de76365a348c8a7d2488168bac3bd0c4452885a34580936b8565ab04f",
+    "x": 784,
+    "y": 45,
+    "width": 775,
+    "height": 950,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/4e0a-6d77-2d2fe63a8660.svg": {
+    "sha256": "2d2fe63a8660397136fb3dcdb6fed4514e18f43ce2e54178a6ddd56c06463023",
+    "x": 786,
+    "y": 176,
+    "width": 668,
+    "height": 740,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-817bfb96c58dd4e33306.webp": {
     "sha256": "583811d71e271741850ef4dcd828ea93e16bf0e6dd66c64ed5412c6283025878",
-    "x": 799,
-    "y": 42,
-    "width": 696,
-    "height": 958,
+    "x": 800,
+    "y": 43,
+    "width": 694,
+    "height": 957,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-0b15090c7c8ba79ba9ea.webp": {
     "sha256": "823fbb0eb7340e8d5018ea35e5f739a22745011b65d8b11b9d58b1aaadc9c594",
-    "x": 721,
+    "x": 722,
     "y": 24,
-    "width": 813,
+    "width": 811,
     "height": 976,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/6cd5-56fd-8a27e3cc34e2.svg": {
+    "sha256": "8a27e3cc34e29ac4f45424ec953aac5748b177cc40bc9a399a60a388be404813",
+    "x": 806,
+    "y": 236,
+    "width": 638,
+    "height": 650,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/5fb7-56fd-73c0101fc70c.svg": {
+    "sha256": "73c0101fc70c8b1a0b1b9005714b72a1e0a48ca22f6bfaa872bf0431affc1a30",
+    "x": 786,
+    "y": 245,
+    "width": 678,
+    "height": 641,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/52a0-62ff-5927-3b603cda3325.svg": {
+    "sha256": "3b603cda33259e4b80614c981bf7795724879876cb7722ee98ea53d5d0d0a6b0",
+    "x": 786,
+    "y": 279,
+    "width": 678,
+    "height": 594,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/82f1-56fd-77ba1e86feb1.svg": {
+    "sha256": "77ba1e86feb1d7b3765bc22684b4add5022e097f2f49c5690a8b3b58dc3a010d",
+    "x": 786,
+    "y": 279,
+    "width": 678,
+    "height": 607,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/6fb3-5927-5229-4e9a-1e4c67656cd1.svg": {
+    "sha256": "1e4c67656cd1df6aedc3bee56bc15a0aa722d2c28c1e07d2ec0b33c475c3bd29",
+    "x": 786,
+    "y": 279,
+    "width": 678,
+    "height": 606,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/4fc4-7f57-65af-a4fd8838d85b.svg": {
+    "sha256": "a4fd8838d85bff83632eb4b7357abfad678e5d6e3c02a3e7bb8b36f3cbfb8060",
+    "x": 806,
+    "y": 236,
+    "width": 638,
+    "height": 637,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/65e5-672c-9d3c4d973164.svg": {
+    "sha256": "9d3c4d973164c96bcd88d919083b647083e4c060f8a12962d0c72044c33d35de",
+    "x": 806,
+    "y": 236,
+    "width": 638,
+    "height": 637,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/97e9-56fd-92735805264f.svg": {
+    "sha256": "92735805264f4e34bbaa5f7591e91944ab22f7ed5e5152ca317b8b762baed79d",
+    "x": 806,
+    "y": 236,
+    "width": 638,
+    "height": 650,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/6cf0-56fd-814fe7b91c9b.svg": {
+    "sha256": "814fe7b91c9bfc7931c03f437652acfebe6b665a5c4da2df3f9db870902ab444",
+    "x": 806,
+    "y": 236,
+    "width": 638,
+    "height": 650,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/5370-5ea6-2f211d9e1556.svg": {
+    "sha256": "2f211d9e155636f4f62a7e616474ab0950231c657024fe78b73713ee92101aab",
+    "x": 806,
+    "y": 236,
+    "width": 638,
+    "height": 637,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/57c3-53ca-1876d83f1a5d.svg": {
+    "sha256": "1876d83f1a5d18d305ac12eada99514fa61a30d1bc22d83510f4ff05dae5a94a",
+    "x": 806,
+    "y": 236,
+    "width": 638,
+    "height": 649,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-ba4df51f9a9cd8bf49f3.webp": {
+    "sha256": "7bcbf6c3a1c1ea5aea554d1be3c05d4b639d4bf80e1dc9abf445b4e489d0e0a9",
+    "x": 672,
+    "y": 41,
+    "width": 887,
+    "height": 959,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-59ebe5facf1668bc41e3.webp": {
     "sha256": "8e24ea8a420e4d63ce10950e06198c936a3f112036e07455715a4c351616e940",
-    "x": 700,
-    "y": 230,
-    "width": 831,
-    "height": 601,
+    "x": 701,
+    "y": 231,
+    "width": 829,
+    "height": 600,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-258eacb1f7e28ffdc6a3.webp": {
+    "sha256": "ef02e30b6d436564a4df833771b353a5cfcb5d4e9b71ec3e2a83e792124f7a7a",
+    "x": 674,
+    "y": 162,
+    "width": 837,
+    "height": 731,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-fbd9ed923e737f4c0ce0.webp": {
+    "sha256": "2c6757886985f0eff6326cad336557b015a7b4b59a7ffc379e0b96b60884be9a",
+    "x": 590,
+    "y": 120,
+    "width": 945,
+    "height": 773,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-1dc35be7fc01ea7b0fdd.webp": {
+    "sha256": "45862cc3bbe24564586124a3b8adaa4b1466494d5429ea1563a945d141425335",
+    "x": 549,
+    "y": 141,
+    "width": 1010,
+    "height": 859,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-0c66b7f498ee472d8f7e.webp": {
+    "sha256": "f6a58d9e721e2597f5bf11d41b213a1ae6effe227464433bc6fe8694c83c5e21",
+    "x": 775,
+    "y": 35,
+    "width": 685,
+    "height": 965,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-9f1997d27c079a64bdb9.webp": {
+    "sha256": "2a85f6efd8a8b4ec96921803399b6364ef5d6c9bd0e5137b62a8de233d595732",
+    "x": 768,
+    "y": 74,
+    "width": 761,
+    "height": 926,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-caa289106dc16055c731.webp": {
+    "sha256": "9975fccd46b7f56642ddc53135afafda683d9f06203f8796a137bcfd8183a5e4",
+    "x": 705,
+    "y": 56,
+    "width": 718,
+    "height": 944,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-b462d88f8f06b066dd9f.webp": {
     "sha256": "760e74137115d932b1357870f4b2ac649bce5caf8617aa97e957bca3a0867db0",
-    "x": 707,
-    "y": 152,
-    "width": 852,
-    "height": 848,
+    "x": 708,
+    "y": 154,
+    "width": 851,
+    "height": 846,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-08e75ce6c82fef57faaf.webp": {
+    "sha256": "502c8ae2d9387bcb4ee794fa974f0bf11f66c0eadce62e48cb53f702c82195de",
+    "x": 675,
+    "y": 21,
+    "width": 741,
+    "height": 968,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-ed6dc0958a575377c4ad.webp": {
+    "sha256": "259c1cb7c912b3fdd729ee17aac856990a8143b3545989ad53cd0922af79cf53",
+    "x": 643,
+    "y": 91,
+    "width": 916,
+    "height": 815,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-b7762a45fd2fd56c44d6.webp": {
     "sha256": "8f0d9a8873d39f7f9d006880527b7a2f9703bfbb4c819e06859a1dae730833a9",
+    "x": 659,
+    "y": 79,
+    "width": 900,
+    "height": 921,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-4926fb44c9c716ccb847.webp": {
+    "sha256": "6df97be1b6234f63c96417173da3a1f8f359b13eab75f6542044f3cb591f3311",
+    "x": 571,
+    "y": 64,
+    "width": 988,
+    "height": 936,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-76bac0ca2cfcb8eccd2e.webp": {
+    "sha256": "def18d8394267fc0b42cb5acd6b8f3a942626fdc97bd2b75d37d1aaf4fe6762e",
+    "x": 685,
+    "y": 42,
+    "width": 807,
+    "height": 958,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-284cf6967b80a4914da5.webp": {
+    "sha256": "615713ceae0b90d56c88c0ac5c58f2fc24b9cefb4f3bb24e79b1dc8b866ba09e",
+    "x": 646,
+    "y": 30,
+    "width": 911,
+    "height": 970,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-e2d4ba7fca8d256bd2a1.webp": {
+    "sha256": "119a8e028add8a50136cfbfeeaae9e376289d9f5590588a7f48f2942f9fd62a6",
+    "x": 886,
+    "y": 25,
+    "width": 308,
+    "height": 951,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-c5c23a79bef3a70feb98.webp": {
+    "sha256": "fc481708b93c4d450bc71a4c0c6c07e88eb23fde6818216cf578cf7b6e581260",
+    "x": 819,
+    "y": 136,
+    "width": 642,
+    "height": 864,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-fb6f9b99690320918cd5.webp": {
+    "sha256": "ef59688f1a9fb77111cbebf87257653baed9e11e628110a0ff9002288489ee10",
+    "x": 698,
+    "y": 62,
+    "width": 845,
+    "height": 938,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/8fd8-8c5f060e3a07.webp": {
+    "sha256": "4e5da7ea559f69cf7e54902011be900eecb7df57b7dc143ff7057cdd26a8739a",
+    "x": 843,
+    "y": 109,
+    "width": 606,
+    "height": 811,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-ab3d7d89771679bb4046.webp": {
+    "sha256": "dde56c0a2e37673508d07c0d230d0ed6b17ee8731d6585f85915048dc57efbe0",
+    "x": 697,
+    "y": 153,
+    "width": 862,
+    "height": 847,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-8c8171776591bdd3bc22.webp": {
+    "sha256": "4c82cf4559522131340461e45350493582ee7e3be938bdb70fd42073c96c3cb1",
+    "x": 671,
+    "y": 65,
+    "width": 840,
+    "height": 935,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-d1fd977218e55a87648f.webp": {
+    "sha256": "ea6311dced809b98a51bdc2db43f5abe6644286d6cea4dd8ad90ce894759f5c3",
+    "x": 660,
+    "y": 46,
+    "width": 899,
+    "height": 954,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/dog-e40aa5f5b49b.webp": {
+    "sha256": "e40aa5f5b49b5c66081b22028ed52123d0fc9760308f8cfc95d1bf7324b506b7",
+    "x": 927,
+    "y": 175,
+    "width": 620,
+    "height": 727,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-198329b9e93d9c99b367.webp": {
+    "sha256": "fa9a1d842eff03f371f61f7819684d99abf10c11c39f883d356422f8c3d59053",
+    "x": 624,
+    "y": 65,
+    "width": 906,
+    "height": 882,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/771f-fec03b239d17.webp": {
+    "sha256": "7c22aa40d04169d2be4da9cbaed67f18e9a548c2f1705f690721b2cc29b87e11",
+    "x": 848,
+    "y": 107,
+    "width": 569,
+    "height": 790,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-bad24551a50e41602501.webp": {
+    "sha256": "b5c8635a0b12a77ee0f2a6df1a49850a010f5784137bb6c1e7a32e7ecbe168b4",
+    "x": 670,
+    "y": 24,
+    "width": 821,
+    "height": 976,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-37d9fd47384cfe51e787.webp": {
+    "sha256": "f89981448b8386080a37768c7033bc02355cc8cb4804d34385b8dcd32010b393",
+    "x": 715,
+    "y": 63,
+    "width": 778,
+    "height": 937,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-dedca84d96ff1b2baa45.webp": {
+    "sha256": "b4c8ea1c3c5d5f5cb40865dbe449527b520d4e015cbdca68f3c415f17b66539f",
+    "x": 613,
+    "y": 242,
+    "width": 910,
+    "height": 600,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-cd2954eecdbd2779936f.webp": {
+    "sha256": "dbc4a1285b6dd52d06578687b36af95126edac3a6587989a548e727964b46d6f",
+    "x": 654,
+    "y": 28,
+    "width": 905,
+    "height": 972,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-8a966ae502be360289d4.webp": {
+    "sha256": "03f5e10d68107477e59d297a8651d35615ae837cd4f98f70a36282d6170bd410",
+    "x": 664,
+    "y": 85,
+    "width": 848,
+    "height": 915,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-398167c5fc43ca0e8558.webp": {
+    "sha256": "f5b9a995f922de6d6f2a5af38555619ea62a862398311280fc169670114ad1ae",
+    "x": 672,
+    "y": 84,
+    "width": 848,
+    "height": 916,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-083da6831e50a2fd44bd.webp": {
+    "sha256": "7037ad6cd405c1828b713c460af3cd38b9833f4ffe576e7e78e08ac1aefc9350",
+    "x": 762,
+    "y": 43,
+    "width": 777,
+    "height": 957,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/4eca-2ff3e7222caa.webp": {
+    "sha256": "f7613f1af5099669649608849611b33e7883f49117377e8fd4b3c9a66c1aa04e",
+    "x": 746,
+    "y": 106,
+    "width": 796,
+    "height": 665,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/5e74-b4c64c517c14.webp": {
+    "sha256": "b785e0d25df296a0fab3b727be8e297d325f5987e8d0f715a11ea6048dcf917f",
+    "x": 816,
+    "y": 106,
+    "width": 630,
+    "height": 685,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-1f2650edb9525110d3de.webp": {
+    "sha256": "dd18a12bdba549d3c4bbc1a27865250808b94ca999877cf7c419a52534ad005c",
+    "x": 724,
+    "y": 75,
+    "width": 780,
+    "height": 925,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson4/today-31589ffa7321.webp": {
+    "sha256": "31589ffa732155a753e4bcbe2b11021dc1073f843fb5f25c079dbc45a82b21d9",
+    "x": 787,
+    "y": 265,
+    "width": 726,
+    "height": 351,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-453e24eb35de198ac716.webp": {
+    "sha256": "2f2f8e984693ee2af523e6b443fa0a3e85b71d6e7ae7a4c7cf04e28c745cb9a2",
+    "x": 717,
+    "y": 39,
+    "width": 836,
+    "height": 961,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-b4c11934d9b8400532f2.webp": {
+    "sha256": "0930815f337e62f49e6b775a9072f89a7af256a22b8fd662bf41fe06a644c4bd",
+    "x": 687,
+    "y": 48,
+    "width": 806,
+    "height": 917,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-b4d20c3663040f90f540.webp": {
+    "sha256": "a220aeae064689a4341b5013d6e7c6dfcb46ec6ba1fe5a39bb61142775ac44b5",
+    "x": 566,
+    "y": 156,
+    "width": 993,
+    "height": 844,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-4a9f0b4b3462241675d0.webp": {
+    "sha256": "a9fcc64e5235895882995ea0803438bfe98846378f7bdc25c4590b869dedd225",
+    "x": 788,
+    "y": 27,
+    "width": 633,
+    "height": 973,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-7e03d882ccd4fc1d5ab2.webp": {
+    "sha256": "b8a67e6ed70f71bb455b20fd6990dc45c2438ca312a03c4c11017df0ac232bbb",
+    "x": 762,
+    "y": 58,
+    "width": 731,
+    "height": 942,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/665a-6b892a2d09d6.webp": {
+    "sha256": "84defe9036266d2c4a373ff200fafd1ada8b3931434dc933839c9401b01c8b9d",
+    "x": 814,
+    "y": 107,
+    "width": 642,
+    "height": 790,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/82f1-8bed-04cf92ffb765.svg": {
+    "sha256": "04cf92ffb76504226bfc2bf0ca66a273ec66cc1064a3e8a4e8d0ec8e4bd7950d",
+    "x": 796,
+    "y": 256,
+    "width": 648,
+    "height": 665,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-74204c9ea7d443ffa43e.webp": {
+    "sha256": "51ce84698d70634885678183045547b3e0a7a0b886e18486bfac89f48f2a95f2",
+    "x": 735,
+    "y": 46,
+    "width": 791,
+    "height": 954,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-a6fbbed95c530aab9d48.webp": {
+    "sha256": "35faa00d0d625324bdcf65dde4e21c12a46c6299d6f7f58c380761e51effba42",
+    "x": 829,
+    "y": 56,
+    "width": 687,
+    "height": 944,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-915bd5229f937a3d5c11.webp": {
+    "sha256": "84b4cfecdb0b6a1bbc7f1ef3e45a821c9aab152786b45fad6c20628f6fb3ad90",
+    "x": 686,
+    "y": 52,
+    "width": 873,
+    "height": 948,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-7a338e6f080422b7f377.webp": {
+    "sha256": "2beee81ec7d4245f6bb62c647f9905a2397b6f0a59fcb63fd7c93a57df4c9dd6",
+    "x": 626,
+    "y": 76,
+    "width": 933,
+    "height": 848,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-2dc9a76d9bdc749b953f.webp": {
+    "sha256": "c99e769a63fc60f5c6197888882893a110cc33279b24e1926dc9207183cc8a53",
+    "x": 775,
+    "y": 55,
+    "width": 733,
+    "height": 945,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-558175db084f9c5f0676.webp": {
+    "sha256": "2376e83e332eb5645731cacd667f60447fd18bfbfc19fc4b4175f84217bd9704",
+    "x": 529,
+    "y": 76,
+    "width": 1030,
+    "height": 904,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-7f705daab64f797b2f2e.webp": {
+    "sha256": "14e8d517e9ab06a6580f214303dd35e7d53d2ef9d34cedb4511a0bafb0341dac",
+    "x": 691,
+    "y": 106,
+    "width": 868,
+    "height": 894,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-1506c17f80217b82a313.webp": {
+    "sha256": "a625f15eda8e12f8e074ab01071b3529c47f425a9dedaf3b19ad1572058147b4",
+    "x": 545,
+    "y": 24,
+    "width": 950,
+    "height": 976,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-77b54a6a0fe8bd818eb5.webp": {
+    "sha256": "72aa97d0284c426ab9834292540415a7ac1e8c9da15ed94dd868ad7813a1f77f",
+    "x": 660,
+    "y": 36,
+    "width": 899,
+    "height": 964,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-3779b3561ee28e97b1ad.webp": {
+    "sha256": "6ced3fb1a0a7526d6ef1b426e2407acecf5fcda578dca9a37c1d2968054c62da",
+    "x": 683,
+    "y": 61,
+    "width": 793,
+    "height": 939,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-fe75584b63389e700ea1.webp": {
+    "sha256": "5fcfcb1eed36f056eb8d3caf18daab20930941a9d6a1eff121c24442780d6102",
+    "x": 620,
+    "y": 68,
+    "width": 939,
+    "height": 932,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-2c93cf15477f8cbfb090.webp": {
+    "sha256": "d8628959ece3f2cffe4e522e0eb2cdc0d899b5be5b1fc3da6f4acce0a4be99a4",
+    "x": 632,
+    "y": 124,
+    "width": 888,
+    "height": 772,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-519892f1937e46f6349e.webp": {
+    "sha256": "9299b9236442c129b9a4f0824478b53665a35f04cc8d2615593a9271c93e5d71",
+    "x": 970,
+    "y": 77,
+    "width": 463,
+    "height": 861,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-14786f18bb9c0869c946.webp": {
+    "sha256": "51d9c3129a5aa71c94d2ff5ea85ab70892cddad0414b493344b977c9ad7c29fd",
+    "x": 879,
+    "y": 74,
+    "width": 514,
+    "height": 860,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-699c2f82d04a81a10c45.webp": {
+    "sha256": "b556f937767496859ae3c014dd82a26cf0fa3bc805eeb6ee06bb913283849577",
+    "x": 667,
+    "y": 166,
+    "width": 806,
+    "height": 709,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-e635217e8c65bc5e7cdf.webp": {
+    "sha256": "c597a403f1ccdc20a625f2dbbc7987953b14296034523abd21aedd611f41cea5",
+    "x": 643,
+    "y": 57,
+    "width": 916,
+    "height": 943,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-dbf1b4826be737d5e015.webp": {
+    "sha256": "23531b556e62e2df28bf855f36339ff036137011ad408117316877c2da60488d",
+    "x": 790,
+    "y": 193,
+    "width": 769,
+    "height": 769,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-1b761340dc30ceab539a.webp": {
+    "sha256": "d8fbc4292e35e494c0c62d07272de614a6ac436a82bbca47f31797bcf5acf872",
+    "x": 636,
+    "y": 27,
+    "width": 923,
+    "height": 973,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-47beae1b7f43767bcab4.webp": {
+    "sha256": "bb3768e456ef641e0f291cb008f5a92533f631789f6273829c6472c9d0542602",
+    "x": 626,
+    "y": 84,
+    "width": 933,
+    "height": 890,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-41f2236e26957407e984.webp": {
+    "sha256": "df07e83a1f5f5939b13daa674a6d6132bc8c15242d2708e43d6ef3f6952b8b99",
+    "x": 741,
+    "y": 59,
+    "width": 648,
+    "height": 905,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-2ebfe717089acf0dba0a.webp": {
+    "sha256": "f9638c7e88233955edb0315a0dc7f7969d569c709e846a5ba2c20043de495d0f",
+    "x": 638,
+    "y": 131,
+    "width": 921,
+    "height": 869,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-127eabbe8e9a980e35f5.webp": {
+    "sha256": "03711b171369a825de476bd1929a413cfd718d3faede399f5a72d6bcefd1cbf5",
+    "x": 571,
+    "y": 117,
+    "width": 988,
+    "height": 883,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-b9ae4e58e8b81d8c8874.webp": {
+    "sha256": "94f65612853f4a72514f76bc4d12da54fdb70b0cd37fb8b08f3654c3f873443d",
+    "x": 588,
+    "y": 134,
+    "width": 971,
+    "height": 866,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-94e66889cd9a51900c9b.webp": {
+    "sha256": "9af6b82b21d908d5aedcde0a1213cd258810a87808631399c8aa5a195dfdb22a",
+    "x": 641,
+    "y": 24,
+    "width": 918,
+    "height": 976,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-48cd7fb823a15006deb5.webp": {
+    "sha256": "c18d38aa71c5206debf3d2292e0782c6e80504151d2449d165cf9e326378c90c",
+    "x": 668,
+    "y": 44,
+    "width": 891,
+    "height": 956,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-f6ea02c91cb20adbf688.webp": {
+    "sha256": "2b34bcd8756f3e9cdf6427497f0436ab751ab7a86cf56f925af22ddcbd54734a",
+    "x": 731,
+    "y": 22,
+    "width": 828,
+    "height": 978,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-16faee8e6195071f911d.webp": {
+    "sha256": "3237e4a9a94842a39498634028d9c67b8c49b5263d857d627131ade1894fa9e9",
+    "x": 482,
+    "y": 78,
+    "width": 1077,
+    "height": 922,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-671ce64b16673ddac9d8.webp": {
+    "sha256": "03240adec97c96a88f77b47560add86f828a74525cfd17499cf3cf4b65f687d3",
+    "x": 651,
+    "y": 59,
+    "width": 908,
+    "height": 941,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-5bbf043f1a06b9686b57.webp": {
+    "sha256": "e7fcc2c768c9df69e42a1a8998c6fffb2cc2436371ba7bec4bbb9f2b31b794ad",
+    "x": 687,
+    "y": 37,
+    "width": 843,
+    "height": 963,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-14789404bca2b1e87676.webp": {
+    "sha256": "3ab7cee5335ccb021cb66fdaf930fa8903d02943b29f92dee5d93d2918963599",
+    "x": 811,
+    "y": 40,
+    "width": 685,
+    "height": 960,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-cebf2656a17b4d567df6.webp": {
+    "sha256": "61918c6cdb02ddeffcfd45db68c40a3ac5e622cbeee4c7d6b28eadfc518a4de3",
+    "x": 580,
+    "y": 120,
+    "width": 979,
+    "height": 880,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-63e97698d361c65bd4d4.webp": {
+    "sha256": "476b949001d5cb6d02a671e53441dbd50a03e37bdf9021aec919c9ac8b9804a0",
+    "x": 583,
+    "y": 247,
+    "width": 971,
+    "height": 624,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-d6d95333a9bae6981bc8.webp": {
+    "sha256": "fbeaa029a9c79fc80ec1335c19fba6374e95e22e67748af859c40ecca7c6d7c7",
+    "x": 625,
+    "y": 37,
+    "width": 887,
+    "height": 963,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/8bed-8a00-199429695ce5.svg": {
+    "sha256": "199429695ce5982e6cd2cb6c1c482eec71084a9e4353c4acf70075e7a5e77bff",
+    "x": 796,
+    "y": 191,
+    "width": 648,
+    "height": 759,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-8ed789191d66994226fd.webp": {
+    "sha256": "d44659d41021567187c7d553314a7b723d479aec51105b0ac81bc47e2cd769da",
+    "x": 726,
+    "y": 24,
+    "width": 833,
+    "height": 976,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/6cd5-8bed-67622781e757.svg": {
+    "sha256": "67622781e757e5fb09e6a60b06e04488146b0283c5a40857eb8514f2024d5b7d",
+    "x": 796,
+    "y": 256,
+    "width": 648,
+    "height": 664,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/5fb7-8bed-97229bc97b82.svg": {
+    "sha256": "97229bc97b825fcf36919ec58b158e6948b89e8658472a7457a9bd0c4838eac8",
+    "x": 796,
+    "y": 256,
+    "width": 648,
+    "height": 664,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/4fc4-8bed-81d2e0466277.svg": {
+    "sha256": "81d2e04662772d282b38029b3fe86aa506a6ac711dc0845aadbb60e9fd06a182",
+    "x": 796,
+    "y": 256,
+    "width": 648,
+    "height": 664,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/65e5-8bed-789578c316d9.svg": {
+    "sha256": "789578c316d998e765da122124e6f0d5cec959a0432eb10e5450a302e0c2d1ff",
+    "x": 796,
+    "y": 256,
+    "width": 648,
+    "height": 664,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/897f-73ed-7259-8bed-0527ebf4b306.svg": {
+    "sha256": "0527ebf4b306ce9652360fb89d1b3474e5d66fa3a835e48344afc367449a503f",
+    "x": 796,
+    "y": 256,
+    "width": 648,
+    "height": 664,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/97e9-8bed-f6f8b91ad400.svg": {
+    "sha256": "f6f8b91ad400f02689808f03319399a54e78dab690e92de53035b850d1028366",
+    "x": 796,
+    "y": 256,
+    "width": 648,
+    "height": 664,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-38259a61ea78a82bb2f9.webp": {
+    "sha256": "ae213bc9a0f1d26a62f38ee5f98a43fb65ffe38c2230100bb9fdc39e5c196ef4",
+    "x": 672,
+    "y": 37,
+    "width": 846,
+    "height": 963,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/610f-5927-5229-8bed-b5c43981415f.svg": {
+    "sha256": "b5c43981415f85be9f0f390da14cdd222f75c688d12b50c9499031cd53bcbe4c",
+    "x": 796,
+    "y": 256,
+    "width": 648,
+    "height": 664,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-744cbe34404b1a508d17.webp": {
+    "sha256": "0bfb7e5bfb1c64fd4e7a87f2d4f9ddbb2af63dec726be72da372591501077c7e",
+    "x": 731,
+    "y": 13,
+    "width": 739,
+    "height": 987,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-2818d749ea59afe5eb3a.webp": {
+    "sha256": "ae39d7efe69dec4fc502375cc703a63457159bfa934e17429e539aeae37b4483",
+    "x": 675,
+    "y": 1,
+    "width": 884,
+    "height": 999,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/4f1a-06ff10d362ce.webp": {
+    "sha256": "4f5f5735d409819436dd936cc9cd3fcfe91bd6a25c326a880f197fdced75fbe2",
+    "x": 941,
+    "y": 107,
+    "width": 512,
+    "height": 790,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-context/ed27c357f4-c44c8e4600da.webp": {
+    "sha256": "c44c8e4600da2e42a925aadd58e23fc6acdedb074444d07aefd84f785d4a550e",
+    "x": 797,
+    "y": 152,
+    "width": 646,
+    "height": 672,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-8e052b5f503f46948d59.webp": {
+    "sha256": "ebf35deb1bd73769c568fbaa6210815037d4cbd88e2001ae44979ba3b0098091",
+    "x": 569,
+    "y": 52,
+    "width": 990,
+    "height": 897,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-427a2f8503a8ab0907c0.webp": {
+    "sha256": "96821a70074129f032e13851fd0b542a2411437820820dfc3196fca3119216e0",
     "x": 658,
     "y": 78,
     "width": 901,
@@ -98,390 +1574,1245 @@
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
-  "/images/vocabulary/vocab-d9fd314e54e5c9e8f1e7.webp": {
-    "sha256": "9157a90b8e25d137b3f99d5681e42d02fbfd3eff17ff6a85fc7e6068a3b42f65",
-    "x": 837,
-    "y": 67,
-    "width": 677,
-    "height": 899,
+  "/images/vocabulary/lessons123-geography/65b9-8a00-3d80ba6d65dc.svg": {
+    "sha256": "3d80ba6d65dc8281e3b15b2f15729ecd8bc03499e037295de143c13fb47a26f1",
+    "x": 796,
+    "y": 96,
+    "width": 648,
+    "height": 885,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
-  "/images/vocabulary/vocab-dedca84d96ff1b2baa45.webp": {
-    "sha256": "b4c8ea1c3c5d5f5cb40865dbe449527b520d4e015cbdca68f3c415f17b66539f",
-    "x": 613,
-    "y": 241,
-    "width": 911,
-    "height": 602,
+  "/images/vocabulary/vocab-594c22f0100d3c0643bc.webp": {
+    "sha256": "59666fcd0f9d638c67b195218b1288446ca67db9780bc5f0973e10ba3255f45d",
+    "x": 745,
+    "y": 40,
+    "width": 723,
+    "height": 960,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
-  "/images/vocabulary/vocab-cd2954eecdbd2779936f.webp": {
-    "sha256": "dbc4a1285b6dd52d06578687b36af95126edac3a6587989a548e727964b46d6f",
-    "x": 653,
-    "y": 28,
-    "width": 906,
-    "height": 972,
+  "/images/vocabulary/vocab-02afb582d4c03c9f9b8f.webp": {
+    "sha256": "3af441f236d00b851b2e0b493c3868842e223f5f4eba47cca6b4c66e49121108",
+    "x": 620,
+    "y": 53,
+    "width": 927,
+    "height": 947,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
-  "/images/vocabulary/lesson4/today-31589ffa7321.webp": {
-    "sha256": "31589ffa732155a753e4bcbe2b11021dc1073f843fb5f25c079dbc45a82b21d9",
-    "x": 787,
-    "y": 266,
-    "width": 726,
-    "height": 350,
+  "/images/vocabulary/vocab-3f7147db1267610132c7.webp": {
+    "sha256": "0a4e94e217ac46bcb051ace6bb0d3aa67d907203355f94cd8a71d903275b5f57",
+    "x": 733,
+    "y": 78,
+    "width": 750,
+    "height": 922,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
-  "/images/vocabulary/vocab-b4c11934d9b8400532f2.webp": {
-    "sha256": "0930815f337e62f49e6b775a9072f89a7af256a22b8fd662bf41fe06a644c4bd",
-    "x": 687,
+  "/images/vocabulary/vocab-31dbe73c4ce31cef9730.webp": {
+    "sha256": "50b1ad31c272368d4e9b989db8ff167b1bf2018f51632bb9c2df698ce1adc079",
+    "x": 779,
+    "y": 65,
+    "width": 734,
+    "height": 935,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-83827309f112a9c7ce5a.webp": {
+    "sha256": "f1aed4a1fb3421625aea1f0019371fce2696e5bbf21de63969fd99c344bbe73e",
+    "x": 722,
+    "y": 136,
+    "width": 814,
+    "height": 864,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-3ee902921ff1047edf4f.webp": {
+    "sha256": "28822a225677f108f5d42f532a92c822ad46601b8b61c2b051d918466828ff80",
+    "x": 666,
+    "y": 44,
+    "width": 881,
+    "height": 956,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/5916-8bed-e10d776b5fc3.svg": {
+    "sha256": "e10d776b5fc3c72abf05a08de031eae90b6eeada3dc9f3b0290e8cd054f6bdcb",
+    "x": 796,
+    "y": 191,
+    "width": 648,
+    "height": 759,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-8567c3184bcecc04504f.webp": {
+    "sha256": "13db2df26f3c143f365d3ce3c458f8ffebc3172803b33ea08afa56f94a688294",
+    "x": 657,
+    "y": 53,
+    "width": 854,
+    "height": 947,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-ce7994e8db3c11b22211.webp": {
+    "sha256": "a04f8e0e1ff8a16ef40bbf195ac8a8080a7f750fd3e0d9db3316e41f39f76d2d",
+    "x": 715,
     "y": 47,
-    "width": 807,
-    "height": 919,
-    "canvasWidth": 1618,
-    "canvasHeight": 1000
-  },
-  "/images/vocabulary/vocab-558175db084f9c5f0676.webp": {
-    "sha256": "2376e83e332eb5645731cacd667f60447fd18bfbfc19fc4b4175f84217bd9704",
-    "x": 528,
-    "y": 74,
-    "width": 1031,
-    "height": 906,
-    "canvasWidth": 1618,
-    "canvasHeight": 1000
-  },
-  "/images/vocabulary/vocab-2c93cf15477f8cbfb090.webp": {
-    "sha256": "d8628959ece3f2cffe4e522e0eb2cdc0d899b5be5b1fc3da6f4acce0a4be99a4",
-    "x": 631,
-    "y": 123,
-    "width": 890,
-    "height": 774,
-    "canvasWidth": 1618,
-    "canvasHeight": 1000
-  },
-  "/images/vocabulary/vocab-14786f18bb9c0869c946.webp": {
-    "sha256": "51d9c3129a5aa71c94d2ff5ea85ab70892cddad0414b493344b977c9ad7c29fd",
-    "x": 878,
-    "y": 72,
-    "width": 515,
-    "height": 861,
-    "canvasWidth": 1618,
-    "canvasHeight": 1000
-  },
-  "/images/vocabulary/vocab-e635217e8c65bc5e7cdf.webp": {
-    "sha256": "c597a403f1ccdc20a625f2dbbc7987953b14296034523abd21aedd611f41cea5",
-    "x": 642,
-    "y": 56,
-    "width": 917,
-    "height": 944,
-    "canvasWidth": 1618,
-    "canvasHeight": 1000
-  },
-  "/images/vocabulary/vocab-41f2236e26957407e984.webp": {
-    "sha256": "df07e83a1f5f5939b13daa674a6d6132bc8c15242d2708e43d6ef3f6952b8b99",
-    "x": 740,
-    "y": 58,
-    "width": 649,
-    "height": 907,
-    "canvasWidth": 1618,
-    "canvasHeight": 1000
-  },
-  "/images/vocabulary/vocab-63e97698d361c65bd4d4.webp": {
-    "sha256": "476b949001d5cb6d02a671e53441dbd50a03e37bdf9021aec919c9ac8b9804a0",
-    "x": 582,
-    "y": 246,
-    "width": 973,
-    "height": 625,
-    "canvasWidth": 1618,
-    "canvasHeight": 1000
-  },
-  "/images/vocabulary/vocab-d6d95333a9bae6981bc8.webp": {
-    "sha256": "fbeaa029a9c79fc80ec1335c19fba6374e95e22e67748af859c40ecca7c6d7c7",
-    "x": 624,
-    "y": 36,
-    "width": 889,
-    "height": 964,
-    "canvasWidth": 1618,
-    "canvasHeight": 1000
-  },
-  "/images/vocabulary/vocab-38259a61ea78a82bb2f9.webp": {
-    "sha256": "ae213bc9a0f1d26a62f38ee5f98a43fb65ffe38c2230100bb9fdc39e5c196ef4",
-    "x": 671,
-    "y": 36,
-    "width": 847,
-    "height": 964,
+    "width": 762,
+    "height": 953,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-d54b33ab78c3db5c9bfe.webp": {
     "sha256": "c3adc818419b9dddb3b7b193356c6bcec60c594f3318006d1b1dda1f41a53db5",
-    "x": 682,
+    "x": 683,
     "y": 84,
-    "width": 877,
-    "height": 843,
+    "width": 876,
+    "height": 842,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-b89f05a0e23bfe5327f2.webp": {
+    "sha256": "62a0b04cb6cec30e928253e8cf4683470795e13d31b91b743bd4cdffa783f51c",
+    "x": 602,
+    "y": 182,
+    "width": 931,
+    "height": 658,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-181cfe4d34242a4b9d35.webp": {
     "sha256": "f710329276931f02ffcc3f3e091b0dd4c7dffa8616b22e0fad6de67c8b5afbb3",
-    "x": 665,
-    "y": 171,
-    "width": 867,
-    "height": 702,
+    "x": 666,
+    "y": 172,
+    "width": 865,
+    "height": 701,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-3b427da2895d367139f7.webp": {
+    "sha256": "bbb858a940ba4f8e52f14b46af63c12c61df85df39e6513ae75672f0c42d256c",
+    "x": 718,
+    "y": 9,
+    "width": 773,
+    "height": 991,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-742428fe825ecf85b840.webp": {
     "sha256": "f6cec9f6808c9e4471bec0d915ab14abd175b5cc7e87d21da0d800c9fee31ced",
-    "x": 681,
-    "y": 159,
-    "width": 824,
-    "height": 732,
+    "x": 682,
+    "y": 160,
+    "width": 822,
+    "height": 731,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-4350d1b46119786eabd4.webp": {
     "sha256": "e04fc6d5ed11af8975506f2d49b293759621985f3f386e1cb459ce82a7d3006e",
-    "x": 544,
+    "x": 545,
     "y": 171,
-    "width": 1005,
-    "height": 724,
+    "width": 1003,
+    "height": 723,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-6e10da86dd1b147ee758.webp": {
     "sha256": "88e71e6df9be1cb46df821d30a38519e3d1e6bbd936cfd9d1486e03770a23257",
-    "x": 681,
-    "y": 201,
-    "width": 848,
-    "height": 630,
+    "x": 682,
+    "y": 202,
+    "width": 846,
+    "height": 629,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-24396f9d8cd84d6649e8.webp": {
     "sha256": "5b0ea5e5e3599eec6a3807e21548b388122e5119fb36fed4cd4646530fd651b5",
-    "x": 667,
-    "y": 267,
-    "width": 892,
-    "height": 631,
+    "x": 668,
+    "y": 268,
+    "width": 891,
+    "height": 629,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-6a2f48a28d80d7896a4a.webp": {
+    "sha256": "a39bc033d7473fce75f01f0449c2eee84be181e4099a76a78c5e759da89929b5",
+    "x": 646,
+    "y": 101,
+    "width": 904,
+    "height": 820,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-f4bed5e2fcc8be3b47fd.webp": {
     "sha256": "ad30157a5459f8e03fdb0a1af66e3795c57984e3b450a6346ad5780b62bd8a00",
-    "x": 607,
-    "y": 202,
-    "width": 925,
-    "height": 672,
+    "x": 608,
+    "y": 203,
+    "width": 923,
+    "height": 671,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-5d147ecec057367f2c05.webp": {
     "sha256": "edbf70fda0e2223492c9c45974f99566255462bff9fe27dd5976cfc1558a05f1",
-    "x": 624,
+    "x": 625,
     "y": 169,
-    "width": 889,
-    "height": 681,
+    "width": 888,
+    "height": 680,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-9fb58893188f646d4909.webp": {
+    "sha256": "d222e3f1f1de0013dd4b2d87e77af06f178ea7b9a2bd650034608b044ac335b3",
+    "x": 568,
+    "y": 43,
+    "width": 958,
+    "height": 957,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-9a05c31bc47556a059b7.webp": {
+    "sha256": "6bc4482a1a19cece5588e39ea7c63cb229f83364505d4a716bb9bf88eda5eb24",
+    "x": 892,
+    "y": 66,
+    "width": 526,
+    "height": 869,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-0bb68487240476cd487d.webp": {
+    "sha256": "c2adbb5025834f276cb54d740ba9f489432022c1b19e3b1ca31635f2c1a499de",
+    "x": 603,
+    "y": 140,
+    "width": 806,
+    "height": 721,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-a26bb14e56c83d1854b3.webp": {
+    "sha256": "bd4ab5278f5dd1f1b6e2075839e8c9e463263e34187768f9ba5ff2f4f2967b65",
+    "x": 694,
+    "y": 199,
+    "width": 773,
+    "height": 633,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-539512aca3c265e766d5.webp": {
     "sha256": "811a80a3f283940c8737e916c10a7f0512e2454cfb2fb4146de40c807843aff3",
-    "x": 759,
-    "y": 185,
-    "width": 703,
-    "height": 735,
+    "x": 760,
+    "y": 186,
+    "width": 701,
+    "height": 733,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-0ce5b247925750be56a4.webp": {
+    "sha256": "2f0d251713a7733cbffba1d3b8737fde9aed570264aa04c7b128fcc071e6c2d8",
+    "x": 613,
+    "y": 45,
+    "width": 946,
+    "height": 955,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-b660cffb574803794278.webp": {
+    "sha256": "59c15461ad6fbb059e8bf4844b739e300bfe273d8c3a9beb44741c6d51b17d18",
+    "x": 738,
+    "y": 48,
+    "width": 819,
+    "height": 952,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-82104a4a7a4603883ccb.webp": {
     "sha256": "c5bb53d1935c0633a68d6b42f1744e502f2eb8d1d729601ab0b27bcb7ce94cdd",
-    "x": 721,
-    "y": 123,
-    "width": 838,
-    "height": 877,
+    "x": 722,
+    "y": 124,
+    "width": 837,
+    "height": 876,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-f28e9409c8e5ccc8f0fc.webp": {
     "sha256": "4fef139a71cc1f59d1e84da012990330fedc6e45509aa878f9f8fa4330ef881c",
-    "x": 827,
-    "y": 57,
-    "width": 638,
-    "height": 899,
+    "x": 828,
+    "y": 58,
+    "width": 636,
+    "height": 898,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-5ec5b7619a43584bbd5a.webp": {
     "sha256": "17ade3148767cd1d60c6e8c252294b9513f9015a26978e3648ae2fef4b9ab2a0",
     "x": 850,
-    "y": 50,
-    "width": 656,
-    "height": 922,
+    "y": 51,
+    "width": 655,
+    "height": 921,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
-  "/images/vocabulary/vocab-ab6904005b61010305fb.webp": {
-    "sha256": "9bb77f7d2ecccc10e6a212632acc06072bbee17142cb460ea4f41a7509f017af",
+  "/images/vocabulary/vocab-a15bdf8e69b63f6ca704.webp": {
+    "sha256": "37e291782abf1af3cf24306504d54636ca5f75662856b99faef72b8767f3fbe1",
+    "x": 797,
+    "y": 87,
+    "width": 685,
+    "height": 771,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-2fdf17e3c81e79621660.webp": {
+    "sha256": "8d3ede38d35014d83ada8c0b972e230288eaa50c143b9f42f25a6c0295536d15",
+    "x": 710,
+    "y": 58,
+    "width": 785,
+    "height": 942,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-5de5f3cee53f0c3a8c2d.webp": {
+    "sha256": "bb61bc60777a6d40c5cdfa1f2695736ea5bf94afd529ea9c101f886796296db9",
+    "x": 690,
+    "y": 144,
+    "width": 869,
+    "height": 856,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-2ad035b59bb120187af8.webp": {
+    "sha256": "398f7166cf29bdf527c456e6b1555c2fa4b4b0a520174b4ae61972ff10e32543",
+    "x": 499,
+    "y": 132,
+    "width": 1060,
+    "height": 868,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/73b0-4295e1f9481e.webp": {
+    "sha256": "1154af0f5b360264392b5e560b72d86dd803066cd2fd391fdd1c266d3ca1e081",
+    "x": 788,
+    "y": 107,
+    "width": 754,
+    "height": 619,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-b7b082a2a9c4b0225727.webp": {
+    "sha256": "7cc1b7130db2904f18db1074917dffdc3e56d6e2b731a07ba7fd53d991cbc4d8",
+    "x": 739,
+    "y": 47,
+    "width": 781,
+    "height": 953,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/5de5-fa8338d450dc.webp": {
+    "sha256": "b501fc9fe3c3ee2ca97aec3ca5e2ed921c4760014b1dd3a3fa3d3c2436052405",
+    "x": 781,
+    "y": 106,
+    "width": 690,
+    "height": 644,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/horse-ab1c4b87f156.webp": {
+    "sha256": "ab1c4b87f156cb0a1dceaffb9fdc7b743480c83f8fc0a0a3757cef91f33cde4f",
+    "x": 775,
+    "y": 161,
+    "width": 643,
+    "height": 703,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/524d-b8bef673a996.webp": {
+    "sha256": "1b36adb4dc557e8e0e42175621034c05fd5c671a1d95f7744796750650913bab",
     "x": 734,
-    "y": 37,
-    "width": 775,
-    "height": 943,
+    "y": 106,
+    "width": 808,
+    "height": 674,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/53bb-0e6bb53464b6.webp": {
+    "sha256": "c175f76a27ff80f78be7918420f92ec5131639c466a2b41c8d55157aa0e6843e",
+    "x": 746,
+    "y": 106,
+    "width": 796,
+    "height": 674,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/660e-b5dfb720b199.webp": {
+    "sha256": "70f9208117457e38b0bccde39787a8ca13d60eb51e211042f3d7df24292c0616",
+    "x": 746,
+    "y": 106,
+    "width": 796,
+    "height": 674,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/540e-43f244c6db29.webp": {
+    "sha256": "2299022c570c313081488d43d3f474d87bcd4a686b27ec6c8cd8c03c4b7c7a17",
+    "x": 746,
+    "y": 106,
+    "width": 796,
+    "height": 665,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-d5bba40b43440ae66140.webp": {
+    "sha256": "20bfd92601ba276e572d6f42eef4a0ec8b1284557c75fb41e6e04b53c4d193ab",
+    "x": 725,
+    "y": 93,
+    "width": 736,
+    "height": 907,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-d9a01d135d394affdb7c.webp": {
+    "sha256": "2871dde5a05e7126e81cce0cd13c400466d3ce8fa2ef050cf0c70a49de8d6f0d",
+    "x": 560,
+    "y": 44,
+    "width": 954,
+    "height": 925,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-5534061d376280e4d6e6.webp": {
+    "sha256": "440061a24ba87fe10385f165fba223e3353cdeb391775df7cb353e90db842867",
+    "x": 586,
+    "y": 74,
+    "width": 961,
+    "height": 863,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-4a42bc02b9e434525c35.webp": {
     "sha256": "33e758dfb730b73351a4ddecffb2048b3358080ebe573827de6a63874e66510f",
-    "x": 586,
-    "y": 180,
-    "width": 973,
-    "height": 674,
+    "x": 587,
+    "y": 181,
+    "width": 972,
+    "height": 672,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
-  "/images/vocabulary/lesson4/tomorrow-6aa1e71e285b.webp": {
-    "sha256": "6aa1e71e285b8cbd3a9b6e2f5cb002185e6bf0f0f5a873b8e38b10e0c2018793",
-    "x": 787,
-    "y": 266,
-    "width": 729,
-    "height": 350,
+  "/images/vocabulary/vocab-b3557835ef6b69b78f9a.webp": {
+    "sha256": "c4c2be0fc5795f9bd30d04b6ad8214a5fde888f8d2d278658c8b0bc31711fc97",
+    "x": 670,
+    "y": 46,
+    "width": 844,
+    "height": 954,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
-  "/images/vocabulary/lesson4/afternoon-c8fbe495ca31.webp": {
-    "sha256": "c8fbe495ca31eeffddcef66cfdaad7f658662a3fb1587d9e8b18ecf8f820cf20",
-    "x": 789,
-    "y": 325,
-    "width": 732,
-    "height": 266,
+  "/images/vocabulary/vocab-4d698c800431dfc68744.webp": {
+    "sha256": "a4f2d99f83bdf050c415df6e880f6e10415ea214c3cf4fe6edd290f71ac7cd03",
+    "x": 609,
+    "y": 107,
+    "width": 926,
+    "height": 826,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/6628-44960dd77d53.webp": {
+    "sha256": "ae72653b0a779e5a817588a79b9d6386baff21cf9ad72d50ec3504aeea93afc1",
+    "x": 780,
+    "y": 106,
+    "width": 762,
+    "height": 630,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/660e-5a88251309f6.webp": {
+    "sha256": "9d242cc20e2a018b65efb896605fad4423edb18aa9c8c5a566996ff79cafc0dd",
+    "x": 801,
+    "y": 111,
+    "width": 741,
+    "height": 625,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-fe42e7d9474dfc64cb1f.webp": {
+    "sha256": "fee0700fc4642ced931e7ad37df21bb78c413b3f0809ece428f6779241e97466",
+    "x": 500,
+    "y": 108,
+    "width": 1059,
+    "height": 892,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-4b87bc670e09d6400031.webp": {
+    "sha256": "c7198c138179732a376d0b088104f8b08674fc7aff7c1958557547a2f08fa6ec",
+    "x": 561,
+    "y": 139,
+    "width": 998,
+    "height": 861,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-4fad879950726f78b632.webp": {
+    "sha256": "d1a1129dd29b84c75b5a1e0ff750d21e39a3d50dce931e4caffe9bb6b5a36ada",
+    "x": 552,
+    "y": 74,
+    "width": 1007,
+    "height": 926,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-4cdeffea2a74c7cb64c7.webp": {
+    "sha256": "5358291ffd6f40bf031deab15251a8aa048dedafe6c9b1b48a12b197008dd24e",
+    "x": 709,
+    "y": 20,
+    "width": 833,
+    "height": 958,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-fdeda6ea49705d42ce0b.webp": {
+    "sha256": "ec829a13d78699f698e46f8df7b3b9a8251a0456282ca8dea5b153058473a708",
+    "x": 687,
+    "y": 0,
+    "width": 872,
+    "height": 979,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/4e2d-4e687308c739.webp": {
+    "sha256": "54eb6a54f0f639227000baacb0fd4e3972c4826c7cd4ba1f52ba7a2eeabb6a6d",
+    "x": 931,
+    "y": 107,
+    "width": 402,
+    "height": 678,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/4e0b-5069c10960ab.webp": {
+    "sha256": "adad5cb631eda4498282255b5bfbc505ed04945aec76b816015f2759333663cc",
+    "x": 967,
+    "y": 107,
+    "width": 326,
+    "height": 678,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-context/b73e253508-3744a3df2e3a.webp": {
+    "sha256": "3744a3df2e3a5c33c92bc8df68dcdb82d3072c012a4d4837e6efc3628729791e",
+    "x": 806,
+    "y": 152,
+    "width": 628,
+    "height": 701,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-4f0a3566febe2ac8d295.webp": {
     "sha256": "a2fc26ac2aac40edecc0cec9093ca13a05adef93b9273d0926f1262686a67c77",
-    "x": 666,
-    "y": 171,
-    "width": 859,
-    "height": 694,
+    "x": 667,
+    "y": 172,
+    "width": 857,
+    "height": 692,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/963f-6839-5ef7-c0bf94eccdf4.svg": {
+    "sha256": "c0bf94eccdf44186813033b993573501ecdd9d899f202712abd4b189dc90f5f9",
+    "x": 786,
+    "y": 237,
+    "width": 678,
+    "height": 649,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-context/8b9e99fffe-35d7907fea69.webp": {
+    "sha256": "35d7907fea69f48314b53ea1a22dd29caa49c567fdd48cef3db348680f721e49",
+    "x": 794,
+    "y": 152,
+    "width": 652,
+    "height": 764,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-57b370c8e7653fb90f74.webp": {
+    "sha256": "c05015415ff0e94c599f094c5b77081fe335fec34e0c898b17eeacbacce15df5",
+    "x": 683,
+    "y": 340,
+    "width": 876,
+    "height": 517,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-c3ec5e27916fdfc3a79a.webp": {
+    "sha256": "5436722f48a5f0860175b8ba7452d8c57233fe6bc6fad1296abaec5e7a53b9cc",
+    "x": 819,
+    "y": 242,
+    "width": 740,
+    "height": 758,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-c7108424ffe0b319afd3.webp": {
     "sha256": "7915de881c22bf1f8f8a7979d64af940439e71fe51947cdaa6fd816f7383634d",
-    "x": 698,
-    "y": 182,
-    "width": 820,
-    "height": 754,
+    "x": 699,
+    "y": 183,
+    "width": 819,
+    "height": 752,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-847ff86283e074afe49c.webp": {
+    "sha256": "ef625c1d67e36022ac286803995ea6d05d35a86e3a775548bb02a4684680890a",
+    "x": 688,
+    "y": 51,
+    "width": 765,
+    "height": 949,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-context/e3d65f5f82-d5c7489dc3d8.webp": {
+    "sha256": "d5c7489dc3d88e07e49114a7f838868da89d73a7d0653771c1ffc89b30253823",
+    "x": 722,
+    "y": 152,
+    "width": 796,
+    "height": 761,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-2d700397af634aa50a23.webp": {
+    "sha256": "d66dc0a669b8ec9f2612f7854e591e0a7dceee7203cfb8c832d023dc0a841e08",
+    "x": 590,
+    "y": 28,
+    "width": 927,
+    "height": 972,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-67cfa0ae25063f04a6b4.webp": {
+    "sha256": "6ec449affca32ea3c94833854206529f8b327d980d914790f083e28b2a7a350b",
+    "x": 711,
+    "y": 39,
+    "width": 732,
+    "height": 918,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-b2b33a011daf71054ed5.webp": {
+    "sha256": "34eda9769c232508ac08cb8f5d94bb05463ab9e24840bca431904b39e7fb4041",
+    "x": 803,
+    "y": 44,
+    "width": 671,
+    "height": 913,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-c01aee8273ee47d9a007.webp": {
+    "sha256": "24848a4026bc018ef3ff72ae0982a40f91255238e53e7e3d81b33e2d3ebdd087",
+    "x": 786,
+    "y": 45,
+    "width": 714,
+    "height": 903,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-56ca495b1ebaf57e21e7.webp": {
+    "sha256": "ba54489ced6c8095adea4f54b0c9df7240a99aac95649fbea920c568acae0093",
+    "x": 663,
+    "y": 147,
+    "width": 888,
+    "height": 808,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-43c6e9c8585b07b4311a.webp": {
+    "sha256": "d850e9375ab673a8ad683a967a04b9fbe6399d2469262cc80861c0262121efe6",
+    "x": 597,
+    "y": 105,
+    "width": 962,
+    "height": 895,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/sing-4f867975e9ca.webp": {
+    "sha256": "4f867975e9ca7bebf1129d8b561192fd1c9a523d5f0a35d99df7071a3f0313f1",
+    "x": 922,
+    "y": 79,
+    "width": 472,
+    "height": 853,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-89b376d73f45b1af6e4f.webp": {
+    "sha256": "9f9af65ded482a9eb829de99014f0392ef370c10b1b342ae3ab27012d9f8402c",
+    "x": 913,
+    "y": 79,
+    "width": 610,
+    "height": 856,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-14a8ddd85d1ea227102e.webp": {
+    "sha256": "5cd0e99e44d4006dd2d0f4476d596fbe02fbf15fee6f2177b608fa3e017c54cb",
+    "x": 673,
+    "y": 292,
+    "width": 861,
+    "height": 478,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-1e4d823a2349c1c8a350.webp": {
+    "sha256": "bc4674620c2a9d7c18666612625d15a66693166a7ce4d5bee9dcafe8c80b960f",
+    "x": 499,
+    "y": 85,
+    "width": 1015,
+    "height": 849,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-016de08b07f55785877f.webp": {
+    "sha256": "53308c42f2d4ee411e4966e3b788ce5e28fcbd078d30f41046af420790e5e81b",
+    "x": 734,
+    "y": 208,
+    "width": 794,
+    "height": 634,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-e7f33be32742990d8ffa.webp": {
+    "sha256": "62fae8caf0378f569691d9f1bcf4728aee03c6d9922df7d770269022cf79b02a",
+    "x": 569,
+    "y": 110,
+    "width": 984,
+    "height": 846,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-40a24122bf077661cd13.webp": {
+    "sha256": "a6425c7ecfc5a243197e711c87e737c8b46a074f3b29e2234dbfc54d0f784161",
+    "x": 661,
+    "y": 54,
+    "width": 887,
+    "height": 946,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-36ffebd716964ad1cab2.webp": {
+    "sha256": "89c9657de72da21c0cc6fa2f510e9a7973d0c317fc095e010bc9b282c8872515",
+    "x": 680,
+    "y": 54,
+    "width": 823,
+    "height": 946,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123/count-8-b119ca31efe1.webp": {
+    "sha256": "b119ca31efe1cc804efcfd496e3a062bbeff7b916341ea0d001b8836a7dd20a4",
+    "x": 878,
+    "y": 120,
+    "width": 404,
+    "height": 327,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-a95fd66aabddf7615af1.webp": {
+    "sha256": "6c4901b36c91f38428e18a7e2b3b621b0c9a8a4200988efa41d43185025cd0db",
+    "x": 829,
+    "y": 25,
+    "width": 687,
+    "height": 923,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-95da7b6371c738e4145e.webp": {
+    "sha256": "c05f6d5ef13d0c0d389cf6aab5201598e0af0c4a60486386d5fc0c664b0431e9",
+    "x": 492,
+    "y": 138,
+    "width": 1067,
+    "height": 785,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123/count-100-ee9b3d11b98c.webp": {
+    "sha256": "ee9b3d11b98c86b1774d89d0c8eea5f269f5207eb28cee978fc18caca2fc3a46",
+    "x": 897,
+    "y": 120,
+    "width": 404,
+    "height": 561,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123/count-1000-693fdb80eef0.webp": {
+    "sha256": "693fdb80eef039f8b7c9f19fc184563b4699cddd9c8095f97568f123512d78bf",
+    "x": 906,
+    "y": 120,
+    "width": 351,
+    "height": 822,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-56b6da38ee141515538f.webp": {
+    "sha256": "156288954ef6bf96435ef16e3e40c345c38daef7a3fd4abc6abac0bc6776857a",
+    "x": 586,
+    "y": 34,
+    "width": 938,
+    "height": 882,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-0a2e1700586d9a5b8f40.webp": {
+    "sha256": "f2d5254d3dc5d3a6e31af7fe3051534c974e8651c778825cb0910e9241cdff88",
+    "x": 556,
+    "y": 68,
+    "width": 997,
+    "height": 874,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-0a999c7dbb144aa8c140.webp": {
+    "sha256": "cfd7c8f2dad63878ea6b8a2820d3f512843ed0e0aaa52bef810c63b29e432f1c",
+    "x": 676,
+    "y": 41,
+    "width": 883,
+    "height": 941,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-023f9f2f1f77bf1b3a4b.webp": {
+    "sha256": "b17566c5895e90113a7549c4f19a464cb05d5a5421ec53c3a800f4c2098b9951",
+    "x": 567,
+    "y": 43,
+    "width": 971,
+    "height": 957,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/4fc4-7f57-65af-4eba-18f3b4fa7b57.svg": {
+    "sha256": "18f3b4fa7b57ffbc17e86de6d5f54c1966fb0a02c2ec24013a0ca54f0bebde65",
+    "x": 894,
+    "y": 191,
+    "width": 457,
+    "height": 717,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/897f-5b89-46192a630491.svg": {
+    "sha256": "46192a630491895a73d949eb36e3dc2214964c31ee8b85b46ad4a6a4d065d617",
+    "x": 786,
+    "y": 176,
+    "width": 668,
+    "height": 727,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/5e7f-5dde-0ab5310bb25b.svg": {
+    "sha256": "0ab5310bb25bed7cc2b55fcaf0f38098e79bc5a9b41f43516de9b069f7cf0a35",
+    "x": 786,
+    "y": 176,
+    "width": 668,
+    "height": 740,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-e9ae83756d55d9b36b6f.webp": {
     "sha256": "6301dcec3af837cf888b4758e71eed817f4dbc03dd3b3ed5f706e2d8d2f3016a",
-    "x": 582,
-    "y": 196,
-    "width": 954,
+    "x": 583,
+    "y": 195,
+    "width": 952,
     "height": 698,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-e0e03c4cb561b2cae89d.webp": {
+    "sha256": "1fda6efef12b093d560e5820eee466ace32452d0615a7b6e112b4dabd3cb9fa1",
+    "x": 704,
+    "y": 43,
+    "width": 827,
+    "height": 957,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-877913b9f546530d6c7a.webp": {
+    "sha256": "462c3170ca1887cdca58a2a168e7d3263361dd0818a0e567f32b9959f38e2cca",
+    "x": 806,
+    "y": 58,
+    "width": 713,
+    "height": 942,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-5c998d8d50e5d5b9599e.webp": {
+    "sha256": "0fbfeac196befa2d9845bb31a3034db7cee039cea4103bd50d325b2da78694a9",
+    "x": 436,
+    "y": 142,
+    "width": 1123,
+    "height": 858,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-5005ab06cda0bd1eb18c.webp": {
+    "sha256": "13b5ac274425796aa741277fddb0c586c7a10b4c36b3c8f6a62d875b19d428b5",
+    "x": 649,
+    "y": 35,
+    "width": 910,
+    "height": 965,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-006977da52d8d45a18c9.webp": {
+    "sha256": "8588462adeb45569f5a4a57a8382d8e59cbd0d5059f8993a173e30105a57ac36",
+    "x": 764,
+    "y": 78,
+    "width": 787,
+    "height": 922,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-282b6297cb21e7adfc2f.webp": {
+    "sha256": "c6767180c74f2f9175f620df0b506baf27b8cd0c1d95e579b3c94474a3b621d7",
+    "x": 761,
+    "y": 48,
+    "width": 798,
+    "height": 952,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-32f2bdc015c377089aac.webp": {
+    "sha256": "a341da89b360d4c96e5b3abee5ba7fc2ee62c24b452b12bdd3f8d7e359fefe56",
+    "x": 630,
+    "y": 89,
+    "width": 929,
+    "height": 911,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-df03fefebdcc08b56816.webp": {
+    "sha256": "6ff0f84d2aa519e1b5ce07fff5b71f0e972a20cdebf1c8e388fa17347b640c54",
+    "x": 493,
+    "y": 125,
+    "width": 1066,
+    "height": 875,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-context/3cb2b68363-6356cc7b46fb.webp": {
+    "sha256": "6356cc7b46fb4f2f64b864a704cb2d230ad325549f20987b5a5ef95c57e204cd",
+    "x": 765,
+    "y": 152,
+    "width": 648,
+    "height": 621,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-4666e4eedc591b741645.webp": {
+    "sha256": "3409412483295f94602f73b3da719eef23afa153c1ed3388dea214f97dd9d94e",
+    "x": 713,
+    "y": 72,
+    "width": 788,
+    "height": 928,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-9ea018a90560fe4d9f30.webp": {
+    "sha256": "5a87188932890726b8d967fd82752de2660eb05c1978bcf72460c76abff43f7c",
+    "x": 688,
+    "y": 117,
+    "width": 816,
+    "height": 883,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-e67cf7d7460aa606ccac.webp": {
+    "sha256": "e0eee99c5e29689873727317b57d027c6725fed13350539f0f623966a0add1b7",
+    "x": 653,
+    "y": 20,
+    "width": 906,
+    "height": 980,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-fb35aaf3d650b268c7ed.webp": {
+    "sha256": "47a1bd20a3dc817b2418b6fec5309f7ef46265a385b2b3ab589c7c0e9490e860",
+    "x": 618,
+    "y": 55,
+    "width": 941,
+    "height": 945,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-8387757e01679b961d9b.webp": {
+    "sha256": "3f38f937662a062d88cd3d2b7f4e6617525e977d589afa7015fdbfc40331f971",
+    "x": 607,
+    "y": 73,
+    "width": 952,
+    "height": 927,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/6b7b-b83126b58579.webp": {
+    "sha256": "392bc8a7b6dc190e3d1f91ab7fb2ab6d5b79c752259491fe7de2d55408ec2563",
+    "x": 835,
+    "y": 113,
+    "width": 579,
+    "height": 776,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-4bb7f51a2581089ff427.webp": {
     "sha256": "700ec7c471f71c62748cace702a4cb0e755621e4e63dd61fb2a563fb19c20f02",
-    "x": 670,
-    "y": 101,
-    "width": 880,
-    "height": 899,
+    "x": 671,
+    "y": 102,
+    "width": 878,
+    "height": 898,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/8fd9-eefb0d93cdeb.webp": {
+    "sha256": "80a2e701eebe55bedbde9b92f1da379509bf9442013a15e3ff8290689da241f1",
+    "x": 782,
+    "y": 108,
+    "width": 667,
+    "height": 616,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-1f3d8f02478b4b7c939e.webp": {
+    "sha256": "248323aed169e8f7e02be02d570a639ebbc28b9ca56cf3949b2da487b8a37b7f",
+    "x": 800,
+    "y": 24,
+    "width": 629,
+    "height": 945,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/90a3-0d18e3db7bd8.webp": {
+    "sha256": "f2ea66efd3434f60b3c28cb3302814778e4ce01dc9f409d3425a032e9a35e7fe",
+    "x": 782,
+    "y": 108,
+    "width": 667,
+    "height": 616,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/4e00-eda23b1e7319.webp": {
+    "sha256": "8321213498311f387f6808dd5bb72811dbbbb13bd5adbdb4be42f352ed1882cf",
+    "x": 856,
+    "y": 112,
+    "width": 528,
+    "height": 777,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-2fdbed7352fb46fc12d4.webp": {
+    "sha256": "6a8d05c628862d285d51565786179ff854456f29de9101a542536a20ca6be93c",
+    "x": 656,
+    "y": 140,
+    "width": 903,
+    "height": 729,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-416103bdce27254350fd.webp": {
+    "sha256": "c3c2c4ae2862c579247b57b502b03d99bbcb3158783fcd4ef9ce35a7aabb95fa",
+    "x": 791,
+    "y": 176,
+    "width": 622,
+    "height": 709,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-context/630200cb1c-c329a95323a7.webp": {
+    "sha256": "c329a95323a73e9408c88c412d3acb368456c944a9d7274b8301642f4a699194",
+    "x": 788,
+    "y": 121,
+    "width": 664,
+    "height": 795,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123/count-20-bef1ff856928.webp": {
+    "sha256": "bef1ff856928595cdf689939c07e86406d112b26d0782b4ff292d83ae85f3dfc",
+    "x": 878,
+    "y": 120,
+    "width": 404,
+    "height": 487,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/vocab-f02d0d35e82b9698d32b.webp": {
     "sha256": "69a3ff24d14b1779fd51764c58fe978cdee6497b42ca15b5b46f250ed411092d",
-    "x": 650,
+    "x": 651,
     "y": 42,
-    "width": 712,
-    "height": 917,
+    "width": 710,
+    "height": 916,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
-  "/images/vocabulary/lesson4/morning-3b41c26684cb.webp": {
-    "sha256": "3b41c26684cb4213d4e78a22631662c90dc306e3fe66986b8c0d472831777451",
-    "x": 789,
-    "y": 325,
-    "width": 732,
-    "height": 266,
+  "/images/vocabulary/vocab-91b4ff667639c3253611.webp": {
+    "sha256": "f45f13777ad9f29d8d9098f6f6368c1b892089d08b131ac4a5c6bef5232780c2",
+    "x": 607,
+    "y": 60,
+    "width": 902,
+    "height": 904,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/party-311b4bd5d0e6.webp": {
+    "sha256": "311b4bd5d0e601c47f6a26303093575c6cd4579e5e5a4687822d1f15990aaeda",
+    "x": 610,
+    "y": 444,
+    "width": 877,
+    "height": 520,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-f416d98877feab828657.webp": {
+    "sha256": "461ff91aee9acf672b38ae90c3a3137428d086b001d7a34bf655de5515350be1",
+    "x": 747,
+    "y": 51,
+    "width": 783,
+    "height": 949,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123/count-25-ca95f358e0ee.webp": {
+    "sha256": "ca95f358e0eea98249f0f1b10531b3a5f7b0ff52446a0c279f50cac64801f030",
+    "x": 878,
+    "y": 120,
+    "width": 404,
+    "height": 582,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-a716b1dbcda3c1b261d6.webp": {
+    "sha256": "1e2a53cf0dca9fb52a1718005141f7a38c22d22ba1e4488f9f461dd44c8273a0",
+    "x": 721,
+    "y": 41,
+    "width": 836,
+    "height": 959,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-afdb5ed11054adaf68b4.webp": {
+    "sha256": "69c4669ca52f7d0de1226d65d79c87ff02d64c1cd862e9b60398e0548c7a47b5",
+    "x": 639,
+    "y": 67,
+    "width": 920,
+    "height": 933,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-abae4f3713d6e5b312ca.webp": {
+    "sha256": "248b9b0a9077fc1ab73b19b6ec6e0bb18354ad2bb1ccc204216ed7eefd1df8e2",
+    "x": 655,
+    "y": 172,
+    "width": 904,
+    "height": 828,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/vocab-cee6b98d183877e234b1.webp": {
+    "sha256": "d4846dd3bffc9d35572737deb6c7a13584fd1870552bc0e3fbc225b866e78a94",
+    "x": 521,
+    "y": 199,
+    "width": 1038,
+    "height": 801,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-pedagogy/4e0a-2deb91e3dead.webp": {
+    "sha256": "44ccfe87adec21ea3f568982b004a58b766520c83138d7dd772e6aa9b7b08c56",
+    "x": 941,
+    "y": 107,
+    "width": 378,
+    "height": 678,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/5317-4eac-4eba-c355370f5d17.svg": {
+    "sha256": "c355370f5d179a0089c70381d052cd09c141a77c86e692497bfa5bf969ae2f63",
+    "x": 866,
+    "y": 146,
+    "width": 508,
+    "height": 820,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lessons123-geography/7f8e-56fd-4eba-91d77fcf5cae.svg": {
+    "sha256": "91d77fcf5caed1a85fccfa99661752f155fb4c8b0e7e9f0ecadaff9dcba92087",
+    "x": 841,
+    "y": 195,
+    "width": 563,
+    "height": 726,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/lesson4/television.webp": {
     "sha256": "7b0d3df2253ef7e7c1b637208e1aefbcaeaa58a48305f22804d7f3e2b9ca9248",
-    "x": 687,
-    "y": 0,
-    "width": 885,
-    "height": 900,
+    "x": 688,
+    "y": 117,
+    "width": 879,
+    "height": 752,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/lesson4/sleep.webp": {
     "sha256": "1f917b7f04ed9467f413e60f24965ec73c0632e3b28ca509d5c7b84491d0073c",
-    "x": 436,
-    "y": 125,
-    "width": 1160,
-    "height": 858,
+    "x": 567,
+    "y": 127,
+    "width": 1024,
+    "height": 853,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/lesson4/running-55fb8ca62b81.webp": {
     "sha256": "55fb8ca62b81d003f72edcbc7fee3612938c541fddf14531eb764cad32b0af5c",
-    "x": 1013,
-    "y": 50,
-    "width": 521,
-    "height": 885,
+    "x": 1015,
+    "y": 53,
+    "width": 519,
+    "height": 878,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/lesson4/getting-up-d8473ff75882.webp": {
     "sha256": "d8473ff758826d6424e8bcbf205e0dbc407275165d1a61b121be3ba34ecc18fd",
-    "x": 765,
-    "y": 143,
-    "width": 770,
-    "height": 714,
+    "x": 767,
+    "y": 149,
+    "width": 766,
+    "height": 703,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/lesson4/playing-ball-730357613c85.webp": {
     "sha256": "730357613c856b03894d23912c61d41c37992953f7694cb15c90ed5fc69fb009",
-    "x": 892,
-    "y": 50,
-    "width": 643,
-    "height": 900,
+    "x": 895,
+    "y": 53,
+    "width": 633,
+    "height": 891,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/lesson4/listening-e654c191fcee.webp": {
     "sha256": "e654c191fceee6663dcb0454853b10d604341909353fc4e58d6bb3c87fb1b9b8",
-    "x": 1018,
-    "y": 50,
-    "width": 516,
-    "height": 900,
+    "x": 1021,
+    "y": 52,
+    "width": 506,
+    "height": 890,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/lesson4/lunch-d2ef83acdb78.webp": {
     "sha256": "d2ef83acdb78240829c51e8d609abd8d5f70efd26a884c30ad0528f90c6f2a24",
-    "x": 1064,
-    "y": 283,
-    "width": 471,
-    "height": 436,
+    "x": 1066,
+    "y": 284,
+    "width": 467,
+    "height": 435,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
   "/images/vocabulary/lesson4/dinner-fc70807be839.webp": {
     "sha256": "fc70807be8394473c173e95a4da7fefdb1dc2bf745796473744dcddd6d665eb8",
-    "x": 765,
-    "y": 216,
-    "width": 769,
-    "height": 568,
+    "x": 779,
+    "y": 219,
+    "width": 752,
+    "height": 562,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   },
@@ -554,6 +2885,276 @@
     "y": 265,
     "width": 702,
     "height": 450,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson4/school-fb3205ec9e42.webp": {
+    "sha256": "fb3205ec9e4255661842fcaa6fd1935eb233ef8e5426062a47a7bfa59d7a9b06",
+    "x": 767,
+    "y": 265,
+    "width": 765,
+    "height": 469,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson4/female-student-9f8c5bf06fec.webp": {
+    "sha256": "9f8c5bf06fecf79a6a7867f872dff41309ffaa3364c6cf674b9fb5f8e34fa851",
+    "x": 889,
+    "y": 54,
+    "width": 642,
+    "height": 893,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson4/mobile-phone-403c2b496311.webp": {
+    "sha256": "403c2b4963117eb49590c117b051a80c47d1a7a98731d86f561fb8b3628230c6",
+    "x": 974,
+    "y": 53,
+    "width": 382,
+    "height": 893,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson4/exercise-e7956616852d.webp": {
+    "sha256": "e7956616852d3460d6080abc5751de60339ec57cda465354076fcb7c2991125a",
+    "x": 1164,
+    "y": 263,
+    "width": 369,
+    "height": 694,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/birthday-41f37e685fd0.webp": {
+    "sha256": "41f37e685fd0933ee0606440a4ed6fdcc42e5c923fe45df2dea0bc0597c857d2",
+    "x": 858,
+    "y": 235,
+    "width": 482,
+    "height": 676,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/dance-89a7569dbfd0.webp": {
+    "sha256": "89a7569dbfd065feba631750c7fa858c2df8fb3adc9bbca8ac0cfa27afcef022",
+    "x": 880,
+    "y": 43,
+    "width": 520,
+    "height": 898,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/jump-edddaef6082a.webp": {
+    "sha256": "edddaef6082adf3c6eea9a9161761bdc14c07b192ca71c0cd2c9ffcae10602d2",
+    "x": 927,
+    "y": 71,
+    "width": 477,
+    "height": 725,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/give-44201c780851.webp": {
+    "sha256": "44201c780851a9e92338389d11a88b0f9ca3ccf8d14616de79ef1e45ee885577",
+    "x": 908,
+    "y": 261,
+    "width": 374,
+    "height": 593,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/gift-a0161f655cd5.webp": {
+    "sha256": "a0161f655cd59e4079e1bba3e9452b32e7ad949649f32fa10396b8bc174f5380",
+    "x": 833,
+    "y": 334,
+    "width": 609,
+    "height": 509,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/cake-7911f28ccab9.webp": {
+    "sha256": "7911f28ccab970c74f0a4f9249b3a55275237ea9a1a81bbf3ba6656f102e0dd5",
+    "x": 825,
+    "y": 230,
+    "width": 727,
+    "height": 600,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/box-378f90780553.webp": {
+    "sha256": "378f90780553556d8be9fc659751089013fd6099b03f8362e2b09bdcef84a61c",
+    "x": 527,
+    "y": 303,
+    "width": 815,
+    "height": 418,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/chocolate-c7fc0aba829b.webp": {
+    "sha256": "c7fc0aba829b24bbcfb605be5ac5f0e405a726bba920172563e931e4c2331bf0",
+    "x": 804,
+    "y": 173,
+    "width": 620,
+    "height": 698,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/dragon-40571a51b7ab.webp": {
+    "sha256": "40571a51b7ab2ead22cd145de0c1c68f733dab66a280640799c1a22a946f5036",
+    "x": 390,
+    "y": 354,
+    "width": 1080,
+    "height": 556,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/welcome-519b1eafbb49.webp": {
+    "sha256": "519b1eafbb4916ca3bab2a316d8dd9dffa5a824f28f94dbdd3b912613df2ce0f",
+    "x": 601,
+    "y": 246,
+    "width": 587,
+    "height": 606,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/happy-099ee4f4fd96.webp": {
+    "sha256": "099ee4f4fd969b2c35e6566df2f404657d2c56909b8e553ffa5c5a5323a5e6b6",
+    "x": 888,
+    "y": 281,
+    "width": 551,
+    "height": 614,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/introduce-daaf50a17fb5.webp": {
+    "sha256": "daaf50a17fb5986a2b549567bdaab21ee13eb10c7faeca2fbf7334a743724442",
+    "x": 758,
+    "y": 310,
+    "width": 497,
+    "height": 580,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/teach-25e63b5ac646.webp": {
+    "sha256": "25e63b5ac6466399b3ef7a940d2fc0d8e8d52def9c1d731c66cecb9e90c7520f",
+    "x": 843,
+    "y": 109,
+    "width": 407,
+    "height": 761,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/write-15b03a6d35b1.webp": {
+    "sha256": "15b03a6d35b1ca8ab19ce627a7f44f53a7f72205629676255cf7bf1e1a8a6432",
+    "x": 971,
+    "y": 146,
+    "width": 287,
+    "height": 757,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/noodles-a9388d198bc0.webp": {
+    "sha256": "a9388d198bc09eb65d9d4b44b2c84c885641e8bf983e46b4f2572417f107aec9",
+    "x": 816,
+    "y": 328,
+    "width": 664,
+    "height": 551,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/toast-4bcab3bf234d.webp": {
+    "sha256": "4bcab3bf234d7e6dac444dc27a02544ccc5ddb6413f3b0c632a9b91004edfcf5",
+    "x": 973,
+    "y": 300,
+    "width": 369,
+    "height": 612,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/concert-19d3b402c25f.webp": {
+    "sha256": "19d3b402c25f7dfdb6b4d30e6ab51a806b3956298fc4ef8a00cda5c69c2c4269",
+    "x": 679,
+    "y": 298,
+    "width": 713,
+    "height": 617,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/rat-0adc1b0986a2.webp": {
+    "sha256": "0adc1b0986a261baad1b077e8944e96ea8b4036a76115335058bb3bf2c8c3f7f",
+    "x": 596,
+    "y": 341,
+    "width": 893,
+    "height": 417,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/ox-8d083ff8be77.webp": {
+    "sha256": "8d083ff8be7732d0b83bdf77c8c80d8228faa850c29269205b0e2309173a42e2",
+    "x": 850,
+    "y": 163,
+    "width": 654,
+    "height": 715,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/tiger-d636f292e1fd.webp": {
+    "sha256": "d636f292e1fddc893b2dc80f70c469a331ba0be90ba2c43ec87566404aa27f89",
+    "x": 710,
+    "y": 286,
+    "width": 825,
+    "height": 590,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/snake-1fc5ca55a538.webp": {
+    "sha256": "1fc5ca55a538f9c8249112289c0bf12897e460585254e87764120116e2014c1d",
+    "x": 547,
+    "y": 472,
+    "width": 968,
+    "height": 379,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/sheep-69fb81b252da.webp": {
+    "sha256": "69fb81b252dae5ccdbe3413fd6ecf218b5549df331fbab541b6a4d07d79a200c",
+    "x": 954,
+    "y": 179,
+    "width": 509,
+    "height": 716,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/monkey-951d99e16e69.webp": {
+    "sha256": "951d99e16e6962592ff664ace6f2c72c6b1befcf54af2c2028ce8b9451d5340d",
+    "x": 610,
+    "y": 176,
+    "width": 839,
+    "height": 710,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/rooster-1440de8b5d6f.webp": {
+    "sha256": "1440de8b5d6f57044b0fb78ab721cc9228a1bc1b3b2c241b28e325c95ce0fb24",
+    "x": 815,
+    "y": 138,
+    "width": 674,
+    "height": 751,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/rabbit-da240024a1e1.webp": {
+    "sha256": "da240024a1e165fd02ac95c61e0a7fa21e9bad4587cf2c770da307a3613b591c",
+    "x": 877,
+    "y": 145,
+    "width": 615,
+    "height": 772,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson5/pig-ed737cef8c26.webp": {
+    "sha256": "ed737cef8c266a6871b8af98e5aacaf1ba18820f637c12ccd7bf998aaf797dc7",
+    "x": 777,
+    "y": 335,
+    "width": 658,
+    "height": 523,
     "canvasWidth": 1618,
     "canvasHeight": 1000
   }

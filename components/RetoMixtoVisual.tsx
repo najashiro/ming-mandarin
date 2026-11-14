@@ -23,7 +23,8 @@ export function RetoMixtoVisual({ entry, alt, priority = false }: { entry: RetoM
   const bounds = framing[path as keyof typeof framing];
   const version = new URLSearchParams(query).get('v');
   if (!portrait && bounds && (!version || version === bounds.sha256)) {
-    const edge = Math.max(bounds.width, bounds.height) * 1.1;
+    // Center the subject itself, leaving space around ears, tails and soft shadows.
+    const edge = Math.max(bounds.width, bounds.height) / 0.82;
     return <div className="mixed-vocabulary-image"><Image src={entry.imageSrc} alt={alt} width={bounds.canvasWidth} height={bounds.canvasHeight} priority={priority}
       style={{ position: 'absolute', maxWidth: 'none', width: `${bounds.canvasWidth / edge * 100}%`, height: `${bounds.canvasHeight / edge * 100}%`,
         left: `${((edge - bounds.width) / 2 - bounds.x) / edge * 100}%`, top: `${((edge - bounds.height) / 2 - bounds.y) / edge * 100}%` }} /></div>;

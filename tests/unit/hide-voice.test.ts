@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from 'vitest';
 
 vi.mock('@/components/SpeakButton', () => ({ claimMandarinAudio: vi.fn() }));
-import { createHideVoicePlayer } from '@/lib/use-hide-voice';
+import { createMandarinAudioPlayer } from '@/lib/use-mandarin-audio-player';
 
 function setup() {
   const audio = {
@@ -20,7 +20,7 @@ function setup() {
   };
   const onChange = vi.fn();
   const createAudio = vi.fn(() => audio as unknown as HTMLAudioElement);
-  const player = createHideVoicePlayer({ onChange, createAudio, claimFocus });
+  const player = createMandarinAudioPlayer({ onChange, createAudio, claimFocus });
   const end = () => { audio.ended = true; audio.paused = true; audio.onended?.(); };
   return { audio, player, onChange, createAudio, claimFocus, end };
 }

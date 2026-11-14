@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useId, useMemo, useRef, useState } from 'react';
-import { useHideVoice } from '@/lib/use-hide-voice';
+import { useMandarinAudioPlayer } from '@/lib/use-mandarin-audio-player';
 import { hideAnimal, hideFeedback, hideFeedbackAudio, hideLocationAudio, hideQuestion, hideQuestionAudio, hideRoundAudio } from '@/lib/hide-and-seek-audio';
 import { chooseHideSpot, hideClue, hideLevels, HIDE_GOAL, HIDE_LIVES, locations, nextHideRound, startHideGame, type HidePosition, type HideState } from '@/lib/hide-and-seek';
 import { AnimalArt, GardenBackdrop, HidingPlace, PicnicTable } from './HideArtwork';
@@ -19,7 +19,7 @@ export function HideAndSeekGame() {
   const [showAids, setShowAids] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const helpId = useId();
-  const voice = useHideVoice();
+  const voice = useMandarinAudioPlayer();
   const round = game?.round;
   const clueAudio = useMemo(() => round ? hideRoundAudio(round) : [], [round]);
   const focusRef = useRef<HTMLDivElement>(null);

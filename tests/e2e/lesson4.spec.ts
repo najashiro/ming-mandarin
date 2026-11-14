@@ -21,16 +21,17 @@ test('L4: nuevas fotografías y diagramas se muestran en tarjetas móviles', asy
 test('L4: reto mixto incluye imágenes y construcción, y retira aprobaciones ocultas', async ({ page }, info) => {
   test.setTimeout(60_000);
   await page.route('**/api/vocabulary/images', route => route.fulfill({ json: media }));
-  await page.addInitScript(() => { Math.random = () => .42; });
   await page.goto('/study/l4/games');
-  await page.waitForLoadState('networkidle');
+  await expect(page.locator('.arcade-root')).toHaveAttribute('data-hydrated', 'true');
   await page.locator('[data-game="reto-mixto"]').getByRole('button', { name: /Jugar/ }).click();
+  await page.evaluate(() => { Math.random = () => .42; });
   await page.getByRole('button', { name: 'Comenzar reto', exact: true }).click();
   const seen=new Set<string>();
   for(let i=0;i<5;i++) {
     seen.add((await page.locator('.mixed-progress-head .eyebrow').textContent())!);
     const images=page.locator('.mixed-prompt-image img, .mixed-image-options img');
-    if(await images.count()) {
+    const questionImageCount = await images.count();
+    if(questionImageCount) {
       await expect.poll(()=>images.first().evaluate((image:HTMLImageElement)=>image.complete&&image.naturalWidth>0)).toBe(true);
       await page.screenshot({path:info.outputPath(`l4-mixed-${i}.png`),fullPage:true});
     }
@@ -39,6 +40,12 @@ test('L4: reto mixto incluye imágenes y construcción, y retira aprobaciones oc
       while(await page.locator('.mixed-token-bank button').count()) await page.locator('.mixed-token-bank button').first().click();
       await page.getByRole('button',{name:'Comprobar',exact:true}).click();
     } else await page.locator('.mixed-text-options button, .mixed-image-options button').first().click();
+    const feedback = page.locator('.mixed-feedback');
+    await expect(feedback).toBeVisible();
+    if (questionImageCount) {
+      await expect(feedback.locator('img')).toHaveCount(0);
+      await expect(images).toHaveCount(questionImageCount);
+    }
     await page.getByRole('button',{name:'Continuar →',exact:true}).click();
   }
   expect(seen.size).toBeGreaterThanOrEqual(4);
@@ -47,6 +54,19 @@ test('L4: reto mixto incluye imágenes y construcción, y retira aprobaciones oc
   await page.route('**/api/vocabulary/images', route => route.fulfill({ json: [] }));
   await page.evaluate(()=>window.dispatchEvent(new Event('focus')));
   await expect(page.locator('.mixed-prompt-image img, .mixed-image-options img')).toHaveCount(0);
+});
+
+test('Reto mixto conserva el apoyo visual después de responder una pregunta de audio', async ({ page }) => {
+  await page.route('**/api/vocabulary/images', route => route.fulfill({ json: media }));
+  await page.goto('/study/l4/games?game=reto-mixto');
+  await expect(page.locator('.arcade-root')).toHaveAttribute('data-hydrated', 'true');
+  await page.evaluate(() => { Math.random = () => .36; });
+  await page.getByRole('button', { name: 'Comenzar reto' }).click();
+  const game = page.locator('.mixed-challenge.playing');
+  await expect(game.locator('.mixed-progress-head .eyebrow')).toHaveText('Audio → Hanzi');
+  await expect(game.getByRole('img')).toHaveCount(0);
+  await game.locator('.mixed-text-options').getByRole('button', { name: '刻', exact: true }).click();
+  await expect(game.locator('.mixed-feedback.correct').getByRole('img', { name: /Apoyo visual de/ })).toBeVisible();
 });
 
 test('L4: navegación, módulos, diálogos canónicos y regresión L1–L3', async ({ page }) => {

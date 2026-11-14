@@ -286,7 +286,8 @@ test('Reto Mixto pronuncia fichas sin superposición y consolida la frase constr
         active.add(this);
         tracker.active += 1;
         tracker.maxActive = Math.max(tracker.maxActive, tracker.active);
-        tracker.plays.push(this.currentSrc || this.getAttribute('src') || '');
+        // currentSrc can still refer to the previous clip until the new resource loads.
+        tracker.plays.push(this.src);
         this.addEventListener('ended', () => {
           if (active.delete(this)) tracker.active -= 1;
         }, { once: true });

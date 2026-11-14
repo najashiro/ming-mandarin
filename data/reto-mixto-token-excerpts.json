@@ -1,0 +1,86 @@
+{
+  "部": {
+    "src": "/audio/reto-mixto/bu4-measure.mp3",
+    "pinyin": "bù",
+    "source": "/audio/mandarin/l4-a58bcfe2908f009b.mp3",
+    "startMs": 1220,
+    "endMs": 1621
+  },
+  "八卦": {
+    "src": "/audio/reto-mixto/bagua.mp3",
+    "pinyin": "bāguà",
+    "source": "/audio/mandarin/l4-a527e190d67ed853.mp3",
+    "startMs": 1755,
+    "endMs": 2375
+  },
+  "翻译": {
+    "src": "/audio/reto-mixto/fanyi.mp3",
+    "pinyin": "fānyì",
+    "source": "/audio/mandarin/l4-e75d4c2f3c0fea90.mp3",
+    "startMs": 2228,
+    "endMs": 2615
+  },
+  "这个": {
+    "src": "/audio/reto-mixto/zhege.mp3",
+    "pinyin": "zhège",
+    "source": "/audio/mandarin/l5-ae72252d4d2e378e.mp3",
+    "startMs": 48,
+    "endMs": 528
+  },
+  "一条": {
+    "src": "/audio/reto-mixto/yitiao.mp3",
+    "pinyin": "yì tiáo",
+    "source": "/audio/mandarin/game-f4d57975c626d2b7.mp3",
+    "startMs": 1703,
+    "endMs": 2080
+  },
+  "胡同": {
+    "src": "/audio/reto-mixto/hutong.mp3",
+    "pinyin": "hútòng",
+    "source": "/audio/mandarin/game-f88c287359ac2979.mp3",
+    "startMs": 1520,
+    "endMs": 2250
+  },
+  "一": {
+    "src": "/audio/reto-mixto/yi2.mp3",
+    "pinyin": "yí",
+    "source": "/audio/mandarin/l4-a58bcfe2908f009b.mp3",
+    "startMs": 865,
+    "endMs": 1215
+  },
+  "个": {
+    "src": "/audio/reto-mixto/ge-neutral.mp3",
+    "pinyin": "ge",
+    "source": "/audio/mandarin/l4-a527e190d67ed853.mp3",
+    "startMs": 1545,
+    "endMs": 1740
+  },
+  "不": {
+    "src": "/audio/reto-mixto/bu2.mp3",
+    "pinyin": "bú",
+    "source": "/audio/mandarin/l1-s-91eea50d35.mp3",
+    "startMs": 422,
+    "endMs": 701
+  },
+  "小云和宋华": {
+    "src": "/audio/reto-mixto/xiaoyun-he-song-hua.mp3",
+    "pinyin": "Xiǎoyún hé Sòng Huá",
+    "source": "/audio/mandarin/l5-54f6bb6e6ef4ddb2.mp3",
+    "startMs": 5,
+    "endMs": 1990
+  },
+  "说汉语": {
+    "src": "/audio/reto-mixto/shuo-hanyu.mp3",
+    "pinyin": "shuō Hànyǔ",
+    "source": "/audio/mandarin/l5-54f6bb6e6ef4ddb2.mp3",
+    "startMs": 2686,
+    "endMs": 3645
+  },
+  "写汉字": {
+    "src": "/audio/reto-mixto/xie-hanzi.mp3",
+    "pinyin": "xiě Hànzì",
+    "source": "/audio/mandarin/l5-54f6bb6e6ef4ddb2.mp3",
+    "startMs": 3750,
+    "endMs": 4800
+  }
+}

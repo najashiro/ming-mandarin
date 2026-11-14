@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import sharp from 'sharp';
 import { describe, expect, it } from 'vitest';
 import media from '@/data/lesson4-media.json';
+import framing from '@/data/vocabulary-game-framing.json';
 import corpus from '@/data/lesson4-public.json';
 import prompts from '@/docs/lesson4-image-prompts.json';
 import { vocabularyMedia } from '@/lib/vocabulary-media';
@@ -81,6 +82,33 @@ describe('L4 reviewed images and mixed practice', () => {
       expect(entries.some(entry=>entry.vocabularyId===picture.wordId), picture.wordId).toBe(false);
       expect(entries.some(entry=>entry.supportImageSrc===picture.src), picture.wordId).toBe(false);
     }
+  });
+  it('frames the current version of every approved cutout used in mixed rounds', () => {
+    for (const image of vocabularyMedia.filter(image => image.status === 'approved' && image.presentation === 'transparent-cutout')) {
+      const frame = framing[image.src as keyof typeof framing];
+      expect(frame, image.wordId).toMatchObject({ sha256: image.sha256, canvasWidth: image.width, canvasHeight: image.height });
+      expect(frame.x).toBeGreaterThanOrEqual(0);
+      expect(frame.y).toBeGreaterThanOrEqual(0);
+      expect(frame.width).toBeGreaterThan(0);
+      expect(frame.height).toBeGreaterThan(0);
+      expect(frame.x + frame.width).toBeLessThanOrEqual(image.width);
+      expect(frame.y + frame.height).toBeLessThanOrEqual(image.height);
+    }
+  });
+  it('keeps faint background noise outside the frame of the gift illustration', async () => {
+    const gift = vocabularyMedia.find(image => image.wordId === 'v-礼物')!;
+    const frame = framing[gift.src as keyof typeof framing];
+    const { info } = await sharp(`public${gift.src}`)
+      .trim({ background: '#00000000', threshold: 40, lineArt: true }).raw().toBuffer({ resolveWithObject: true });
+    // The measured frame should include the visible box and its soft shadow.
+    const left = -info.trimOffsetLeft!;
+    const top = -info.trimOffsetTop!;
+    expect(frame.x).toBeLessThanOrEqual(left);
+    expect(frame.y).toBeLessThanOrEqual(top);
+    expect(frame.x + frame.width).toBeGreaterThanOrEqual(left + info.width);
+    expect(frame.y + frame.height).toBeGreaterThanOrEqual(top + info.height);
+    expect(frame.width).toBeLessThan(info.width * 1.15);
+    expect(frame.height).toBeLessThan(info.height * 1.15);
   });
   it('does not revive pending, hidden, stale or unavailable approvals as legacy game art', () => {
     const hidden=media.find(entry=>entry.wordId==='v-电视')!;

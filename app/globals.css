@@ -824,13 +824,15 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .mixed-prompt{margin:13px 0 14px;color:#fffaf1;font-size:clamp(1.05rem,2.2vw,1.35rem);font-weight:750;text-align:center}
 .mixed-prompt-image{width:min(300px,78vw);aspect-ratio:1;margin:0 auto 16px;border-radius:24px;overflow:hidden;background:#f3eee8;box-shadow:0 14px 36px #0d261f4d}
 .mixed-prompt-image img,.mixed-image-options img{width:100%;height:100%;display:block;object-fit:contain}
-.mixed-vocabulary-image{position:relative;width:100%;height:100%;overflow:hidden;aspect-ratio:1}
+.mixed-vocabulary-image{position:relative;width:100%;overflow:hidden;aspect-ratio:1}
 .mixed-family-image{position:relative;width:100%;height:100%}
 .mixed-family-image svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 .mixed-family-halo{fill:none;stroke:#49e58c;stroke-width:38;opacity:.55}
 .mixed-family-ring{fill:none;stroke:#00a953;stroke-width:13}
 .mixed-prompt-hanzi{margin:10px 0 18px;color:#fffaf1;font:700 clamp(4.8rem,15vw,8rem)/1 var(--font-hanzi), "Songti SC", "SimSun", serif;text-align:center;text-shadow:0 3px 20px rgba(0,0,0,.22)}
 .mixed-audio{display:flex;margin:12px auto 18px;min-width:164px;min-height:52px;justify-content:center}
+.mixed-audio-retry{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;margin-block:10px;text-align:center}
+.mixed-audio-retry button{min-height:44px;background:#fffaf5}
 .mixed-dialogue{max-width:560px;margin:10px auto 16px;padding:14px;border:1px solid #eadfd3;border-radius:20px;background:#fffaf5;color:var(--ink);display:grid;grid-template-columns:auto 1fr;gap:9px 12px;align-items:center}
 .mixed-dialogue>span,.mixed-dialogue>strong{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#f3ded8;color:var(--red);font-weight:850}
 .mixed-dialogue>strong{background:#e9eee4;color:#43533d}
@@ -839,6 +841,20 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .mixed-dialogue-bubble p{flex:1;margin:0}
 .mixed-question-audio,.mixed-usage-example button{width:44px;height:44px;flex:0 0 44px;padding:0;display:grid;place-items:center;border:1px solid #d8e2db;border-radius:50%;background:#f7fbf8;color:var(--jade);font:inherit;cursor:pointer}
 .mixed-question-audio.playing,.mixed-usage-example button:active{background:var(--jade-soft)}
+.mixed-sentence-cue{
+  max-width:36rem;
+  margin:0 auto 14px;
+  padding:clamp(14px,3vw,22px) clamp(16px,4vw,30px);
+  border:1px solid #eadfd3;
+  border-radius:18px;
+  background:#fffaf5;
+  color:var(--ink);
+  font-size:clamp(1.12rem,2.3vw,1.38rem);
+  font-weight:600;
+  line-height:1.45;
+  text-align:center;
+  text-wrap:balance;
+}
 .mixed-text-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:680px;margin:0 auto}
 .mixed-text-options button{position:relative;min-height:76px;padding:14px;border:3px solid transparent;border-radius:18px;background:#fff;color:var(--ink);font-size:clamp(1.35rem,4vw,2rem);font-weight:800;transition:border-color .13s,background .13s,box-shadow .13s}
 .mixed-image-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:680px;margin:0 auto}
@@ -851,6 +867,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d19b45; outline-offs
 .answer-incorrect>.mixed-option-mark{background:#b33e35}
 .mixed-construction{display:grid;gap:16px;justify-items:center}
 .mixed-built,.mixed-token-bank{position:relative;display:flex;flex-wrap:wrap;justify-content:center;gap:9px;min-height:64px;width:100%;padding:10px;border-radius:18px}
+.mixed-token-bank:empty{display:none}
 .mixed-built{border:2px dashed #dbcdbf;background:#fffaf5;color:var(--ink);transition:border-color .13s,background .13s,box-shadow .13s}
 .mixed-built>span{align-self:center;color:var(--muted)}
 .mixed-built button,.mixed-token-bank button{min-height:48px;padding:9px 15px;border:1px solid #d9cbbd;border-radius:13px;background:#fff;color:var(--ink);font-size:1.15rem;font-weight:800}

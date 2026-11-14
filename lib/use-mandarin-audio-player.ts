@@ -7,7 +7,7 @@ type VoiceState = { activeSource: string | null; blocked: boolean; failed: boole
 const idle: VoiceState = { activeSource: null, blocked: false, failed: false };
 
 // Keep the player separate from React so a render never starts or repeats audio.
-export function createHideVoicePlayer({ onChange, createAudio = () => new Audio(), claimFocus = claimMandarinAudio }: {
+export function createMandarinAudioPlayer({ onChange, createAudio = () => new Audio(), claimFocus = claimMandarinAudio }: {
   onChange: (state: VoiceState) => void;
   createAudio?: () => HTMLAudioElement;
   claimFocus?: (stop: () => void) => () => void;
@@ -32,14 +32,14 @@ export function createHideVoicePlayer({ onChange, createAudio = () => new Audio(
   function update(state: VoiceState) { if (!disposed) onChange(state); }
   function stop() { clearPlayback(); update(idle); }
 
-  function play(sources: string[]) {
+  function play(sources: readonly string[]) {
     if (disposed) return;
     stop();
     const queue = sources.filter(Boolean);
     if (!queue.length) return;
     try {
       // Safari grants playback to this element in the initiating click. Reuse it
-      // for the following clue, feedback and next round, instead of new Audio(src).
+      // for every subsequent clip, including clips in the next round.
       audio ??= createAudio();
       audio.preload = 'auto';
       audio.playbackRate = 1;
@@ -88,11 +88,11 @@ export function createHideVoicePlayer({ onChange, createAudio = () => new Audio(
   return { play, stop, dispose };
 }
 
-export function useHideVoice() {
+export function useMandarinAudioPlayer() {
   const [state, setState] = useState<VoiceState>(idle);
-  const player = useRef<ReturnType<typeof createHideVoicePlayer> | null>(null);
-  const play = useCallback((sources: string[]) => {
-    player.current ??= createHideVoicePlayer({ onChange: setState });
+  const player = useRef<ReturnType<typeof createMandarinAudioPlayer> | null>(null);
+  const play = useCallback((sources: readonly string[]) => {
+    player.current ??= createMandarinAudioPlayer({ onChange: setState });
     player.current.play(sources);
   }, []);
   const stop = useCallback(() => player.current?.stop(), []);

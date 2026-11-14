@@ -3,10 +3,37 @@ import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { retoMixtoAudit, retoMixtoConversations, retoMixtoCorpus, retoMixtoModes } from '@/data/reto-mixto';
 import { audioForMandarinText } from '@/lib/mandarin-audio';
+import { retoMixtoForScope } from '@/data/reto-mixto-lesson4';
+import { retoMixtoTokenAudio } from '@/lib/reto-mixto-token-audio';
+import { curriculumScopes, scopeDefinitions } from '@/seed/curriculum';
 import { buildRetoMixtoDeck, buildRetoMixtoWritingDeck, insertRetry, isSilentRetoMixtoToken, primaryRetoMixtoHanziTarget, retryQuestion } from '@/lib/reto-mixto';
 import hanziManifest from '@/public/hanzi-data/manifest.json';
 
 describe('Reto Mixto', () => {
+  it.each(curriculumScopes)('todas las fichas de construcción y de reintento en %s tienen audio publicado', (scope) => {
+    const entries = retoMixtoForScope(scope);
+    const lessonIds = scopeDefinitions[scope].lessonIds;
+    const phrases = entries.filter(entry => entry.playableModes.includes('construct-response')
+      && entry.lessons.some(lesson => lessonIds.includes(lesson)) && (entry.tokens?.length ?? 0) > 1);
+    expect(phrases.length).toBeGreaterThan(0);
+    const sources = new Set<string>();
+    for (const entry of phrases) {
+      const retry = retryQuestion({ id: 'fallo', entryId: entry.id, lessonIds, mode: 'audio-hanzi', optionIds: [] },
+        entries, retoMixtoConversations, () => 0);
+      expect(retry).toMatchObject({ mode: 'construct-response', entryId: entry.id, retryOf: 'fallo' });
+      for (const [index, token] of entry.tokens!.entries()) {
+        const clips = retoMixtoTokenAudio(entry, index);
+        if (isSilentRetoMixtoToken(token)) expect(clips).toEqual([]);
+        else expect(clips.length, `${entry.hanzi} · ${token}`).toBeGreaterThan(0);
+        for (const src of clips) sources.add(src);
+      }
+    }
+    for (const src of sources) {
+      expect(src).toMatch(/^\/audio\/.+\.mp3$/);
+      expect(statSync(path.join('public', src)).size, src).toBeGreaterThan(0);
+    }
+  });
+
   it('crea escritura avanzada desde el corpus curricular sin revelar opciones', () => {
     const deck = buildRetoMixtoWritingDeck(retoMixtoCorpus, [1, 2, 3], 20, () => 0.42);
     expect(deck).toHaveLength(20);

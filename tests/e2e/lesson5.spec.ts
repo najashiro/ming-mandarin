@@ -43,6 +43,95 @@ test('L5: tarjeta, imagen, audio, ejemplo enlazado y motor Hanzi', async ({page}
   await popup.close();
 });
 
+test('L5: el reto mixto centra la frase y recoge el banco de fichas vacío', async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 700 });
+  await page.route('**/api/vocabulary/images', route => route.fulfill({ json: [] }));
+  await page.goto('/study/l5/games?game=reto-mixto');
+  await expect(page.locator('.arcade-root')).toHaveAttribute('data-hydrated', 'true');
+  await page.evaluate(() => { Math.random = () => 0.295; });
+  await page.getByRole('button', { name: 'Comenzar reto' }).click();
+
+  const cue = page.getByText('Xiaoyun y Song Hua me enseñan a hablar chino y escribir caracteres.', { exact: true });
+  await expect(cue).toBeVisible();
+  await expect(cue).toHaveCSS('text-align', 'center');
+  const lines = await cue.evaluate(paragraph => {
+    const range = document.createRange();
+    range.selectNodeContents(paragraph);
+    return range.getClientRects().length;
+  });
+  expect(lines).toBeLessThanOrEqual(4);
+
+  const bank = page.locator('.mixed-token-bank');
+  const tokens = ['小云和宋华', '教', '我', '说汉语', '写汉字'];
+  for (const token of tokens) {
+    const clip = page.waitForResponse(response => response.url().includes('/audio/') && response.ok());
+    await bank.getByRole('button', { name: token, exact: true }).click();
+    await clip;
+  }
+  await expect(bank).toBeHidden();
+  await page.locator('.mixed-built').getByRole('button', { name: '写汉字', exact: true }).click();
+  await expect(bank.getByRole('button', { name: '写汉字', exact: true })).toBeVisible();
+});
+
+test('L5: las fichas compuestas se oyen completas, se interrumpen al tocar otra y admiten reintentar', async ({ page }) => {
+  const two = '/audio/mandarin/l1-h-u4e8c.mp3';
+  const zero = '/audio/mandarin/l4-d863483f50746749.mp3';
+  const year = [two, zero, two, zero, '/audio/mandarin/l3-v-6f14c2641c.mp3'];
+  const december = '/audio/mandarin/l5-33aa2f306987f87c.mp3';
+  const day = ['/audio/mandarin/vocab-d66359aac7aca249c1a5.mp3', '/audio/mandarin/l5-e59c83c8a7737216.mp3'];
+  type AudioLog = { starts: string[]; ends: string[] };
+  type AudioWindow = typeof window & { gameAudioLog: AudioLog };
+  await page.addInitScript(() => {
+    const log = { starts: [] as string[], ends: [] as string[] };
+    (window as AudioWindow).gameAudioLog = log;
+    const observed = new WeakSet<HTMLMediaElement>();
+    const original = HTMLMediaElement.prototype.play;
+    HTMLMediaElement.prototype.play = function () {
+      if (!observed.has(this)) {
+        this.addEventListener('ended', () => log.ends.push(new URL(this.currentSrc).pathname), true);
+        observed.add(this);
+      }
+      log.starts.push(new URL(this.src).pathname);
+      return original.call(this);
+    };
+  });
+  const log = () => page.evaluate(() => (window as AudioWindow).gameAudioLog);
+  const resetLog = () => page.evaluate(() => {
+    const audio = (window as AudioWindow).gameAudioLog;
+    audio.starts.length = audio.ends.length = 0;
+  });
+  await page.route('**/api/vocabulary/images', route => route.fulfill({ json: [] }));
+  await page.goto('/study/l5/games?game=reto-mixto');
+  await expect(page.locator('.arcade-root')).toHaveAttribute('data-hydrated', 'true');
+  await page.evaluate(() => { Math.random = () => .319; });
+  await page.getByRole('button', { name: 'Comenzar reto' }).click();
+  const bank = page.locator('.mixed-token-bank');
+  const built = page.locator('.mixed-built');
+
+  await bank.getByRole('button', { name: '二〇二〇年', exact: true }).click();
+  await expect.poll(async () => (await log()).ends, { timeout: 12_000 }).toEqual(year);
+  await resetLog();
+  await built.getByRole('button', { name: '二〇二〇年', exact: true }).click();
+  await bank.getByRole('button', { name: '十二月', exact: true }).click();
+  await expect.poll(async () => (await log()).ends).toEqual([december]);
+  expect((await log()).starts).toEqual([two, december]);
+  await expect(built.getByRole('button')).toHaveText(['十二月']);
+
+  // A failed request followed by a retry exercises browser decoding and the real player.
+  const failingClip = '**' + day[0];
+  await page.route(failingClip, route => route.abort());
+  await bank.getByRole('button', { name: '二十五日', exact: true }).click();
+  const retry = page.getByRole('button', { name: 'Reintentar audio' });
+  await expect(retry).toBeVisible();
+  await expect(built.getByRole('button')).toHaveText(['十二月', '二十五日']);
+  await page.unroute(failingClip);
+  await resetLog();
+  await retry.click();
+  await expect.poll(async () => (await log()).ends, { timeout: 12_000 }).toEqual(day);
+  await expect(retry).toBeHidden();
+  await expect(built.getByRole('button')).toHaveText(['十二月', '二十五日']);
+});
+
 test('L5: cumpleaños con reintentos, construcción y conversación', async ({page},info) => {
   await page.addInitScript(()=>{Math.random=()=>.42;});
   await page.goto('/study/l5/games');await page.waitForLoadState('networkidle');
