@@ -2,6 +2,7 @@ import corpus, { lesson4, lesson5, lesson6 } from '@/lib/active-corpus';
 import type { CurriculumScope } from '@/data/types';
 import { scopeDefinitions } from '@/seed/curriculum';
 import { publicExamplesForVocabulary } from '@/lib/vocabulary-examples';
+import { vocabularyExampleSentences } from '@/lib/vocabulary-sentences';
 
 export type ActiveWord = (typeof corpus.vocabulary)[number];
 export type VocabularyExample = { id: string; phraseId: string; hanzi: string; pinyin: string; spanish: string; lessons: number[] };
@@ -109,7 +110,11 @@ export function examplesForWord(word: ActiveWord): VocabularyExample[] {
     pinyin: phrase.pinyin, spanish: phrase.spanish, lessons: phrase.lessons,
   }));
 }
-// Documentary reporting only; the learner UI calls examplesForWord instead.
+// The cards show one relevant sentence while the source examples remain intact.
+export function examplesForVocabularyCard(word: ActiveWord): VocabularyExample[] {
+  return vocabularyExampleSentences(word.hanzi, examplesForWord(word));
+}
+// Documentary reporting only; the learner UI uses examplesForVocabularyCard.
 export function examplesForScope(word: ActiveWord, scope: CurriculumScope) {
   const lessons: readonly number[] = scopeDefinitions[scope].lessonIds;
   return examplesForWord(word).filter(example => example.lessons.some(lesson => lessons.includes(lesson)));

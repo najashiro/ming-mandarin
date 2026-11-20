@@ -2,7 +2,7 @@
 import { Fragment, useState } from 'react';
 import { imageForWord, type VocabularyMediaEntry } from '@/lib/vocabulary-media';
 import type { CurriculumScope } from '@/data/types';
-import { examplesForWord, type ActiveWord } from '@/lib/vocabulary';
+import { examplesForVocabularyCard, type ActiveWord } from '@/lib/vocabulary';
 import { LinkedChineseText } from '@/components/LinkedChineseText';
 import { audioForMandarinText } from '@/lib/mandarin-audio';
 import { PinyinText } from '@/components/PinyinText';
@@ -17,7 +17,7 @@ const grammaticalLabels: Record<string, string> = {
 
 export function VocabularyExample({ word, route }: { word: ActiveWord; scope: CurriculumScope; route: string }) {
   const [index, setIndex] = useState(0);
-  const examples = examplesForWord(word);
+  const examples = examplesForVocabularyCard(word);
   const example = examples[index % examples.length];
   if (!example) return null;
   return <div className="vocabulary-example">
@@ -37,7 +37,7 @@ export function VocabularyCard({ word, scope, route, back, favorite = false, hid
   word: ActiveWord; scope: CurriculumScope; route: string; back: boolean;
   favorite?: boolean; hideTranslation: boolean; media: readonly VocabularyMediaEntry[]; onFlip: () => void; onFavorite?: () => void; showFavorite?: boolean; imagePriority?: boolean;
 }) {
-  const hasExamples = examplesForWord(word).length > 0;
+  const hasExamples = examplesForVocabularyCard(word).length > 0;
   const showBack = back && hasExamples;
   const image = imageForWord(word.id, media);
   // Retry only when a fresh publication check supplies the approved image again.
