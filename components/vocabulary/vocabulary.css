@@ -118,6 +118,7 @@
 .vocabulary-mix-card > .vocabulary-card { margin-inline:auto; }
 .vocabulary-mix-question { position:relative; isolation:isolate; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.7rem; width:100%; max-width:var(--vocab-max-width); min-height:clamp(13rem,42vw,19rem); margin:auto; padding:1.25rem; border:1px solid #e5e0d6; border-radius:var(--vocab-radius); background:var(--vocab-surface); box-shadow:var(--vocab-shadow); text-align:center; }
 .vocabulary-mix-question-body { position:relative; z-index:1; display:flex; flex-direction:column; align-items:center; gap:.7rem; max-width:100%; }
+.vocabulary-mix-image-label-mask { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; border-radius:var(--vocab-radius); fill:var(--vocab-surface); }
 .vocabulary-mix-question.has-image { align-items:flex-start; justify-content:flex-end; min-height:0; aspect-ratio:var(--vocab-ratio); padding:var(--vocab-padding); text-align:left; }
 .vocabulary-mix-question.has-image .vocabulary-mix-question-body { align-items:flex-start; gap:.35rem; }
 .vocabulary-mix-question.has-image .vocabulary-mix-prompt { font-size:var(--vocab-word-size); line-height:1.2; overflow-wrap:anywhere; word-break:normal; }

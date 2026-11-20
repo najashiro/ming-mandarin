@@ -121,6 +121,23 @@ opciones iniciales son Medium y Sin imagen. El alumno no ve referencias
 documentales, etiquetas de confianza ni detalles del algoritmo en sus tarjetas.
 No se modifican las fuentes, los IDs de vocabulario ni el progreso existente.
 
+### Apoyo visual en Mix
+
+«Con imagen» muestra el recurso aprobado y publicado de la palabra junto al
+carácter. No aplica `imageQuizEligible`: ese indicador también excluye imágenes
+ambiguas que siguen siendo útiles como apoyo, y se conserva para los quizzes
+visuales. El selector no cambia el banco ni los cupos de la ronda.
+
+Antes de revelar la respuesta, una capa de presentación cubre las etiquetas
+latinas (pinyin y español) de los diagramas. Las coordenadas se derivan de sus
+fuentes SVG; los diagramas de conteo, tres diagramas L4 sin SVG guardado y la
+ilustración anotada de 进 tienen regiones explícitas.
+`scripts/build-vocabulary-mix-image-masks.mjs --check`
+comprueba la tabla. Cada máscara se vincula al archivo y SHA publicados, sin
+editar los recursos originales. Al revelar se muestra la tarjeta completa.
+Una imagen retirada o que falla al cargar mantiene la palabra jugable y muestra
+«Imagen no disponible para esta palabra».
+
 El reparto 35/35/30 de la tabla y los cupos de partida son parámetros distintos:
 el primero organiza el banco disponible; el segundo determina qué proporción
 practica el alumno. Se podrán recalibrar con una revisión editorial de la tabla

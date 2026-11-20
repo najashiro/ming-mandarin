@@ -7,6 +7,7 @@ import { getVocabularyLesson, getVocabularyMixSet, vocabularyCatalog, type Activ
 import { scopeDefinitions } from '@/seed/curriculum';
 import { evaluateMix, isMixComplete, mixStats, startMix, type MixDifficulty, type MixPresentation, type MixResultSnapshot } from '@/lib/vocabulary-review';
 import { imageForWord, type VocabularyMediaEntry } from '@/lib/vocabulary-media';
+import { mixImageLabelMask } from '@/lib/vocabulary-mix-image';
 import { useVocabularyState } from './useVocabularyState';
 import { VocabularyCard } from './VocabularyCard';
 import { VocabularyPhoto } from './VocabularyPhoto';
@@ -32,17 +33,22 @@ function MixQuestion({ word, presentation, media, autoPlayKey, autoPlayBlocked, 
   word: ActiveWord; presentation: MixPresentation; media: readonly VocabularyMediaEntry[];
   autoPlayKey?: string; autoPlayBlocked: boolean; onAutoPlayBlocked: () => void;
 }) {
-  const candidate = presentation === 'image' && word.visual_ming.image_quiz_eligible ? imageForWord(word.id, media) : undefined;
-  const image = candidate?.imageQuizEligible ? candidate : undefined;
+  // Mix uses the image as support alongside Hanzi, not as an image-only quiz.
+  // Quiz eligibility also excludes ambiguous but useful, approved illustrations.
+  const image = presentation === 'image' ? imageForWord(word.id, media) : undefined;
+  const labelMask = image ? mixImageLabelMask(image) : undefined;
   const [failedImage, setFailedImage] = useState<VocabularyMediaEntry | null>(null);
   const showPhoto = Boolean(image?.src && image !== failedImage);
   return <div className={`vocabulary-mix-question${showPhoto ? ' has-image' : ''}`} data-presentation={presentation}>
     {showPhoto && image && <VocabularyPhoto src={image.src} alt="Pista visual" transparent={'presentation' in image && image.presentation === 'transparent-cutout'} priority onError={() => setFailedImage(image)}/>}
+    {showPhoto && labelMask && <svg className="vocabulary-mix-image-label-mask" aria-hidden="true" focusable="false" viewBox={`0 0 ${labelMask.width} ${labelMask.height}`} preserveAspectRatio="xMaxYMid meet">
+      {labelMask.rects.map((rect, index) => <rect key={index} {...rect}/>)}
+    </svg>}
     <div className="vocabulary-mix-question-body">
       <div className={`vocabulary-mix-prompt${word.hanzi.length > 2 ? ' is-long' : ''}`}><Hanzi>{word.hanzi}</Hanzi></div>
       <SpeakButton text={word.hanzi} reading={word.pinyin} compact label="Escuchar" ariaLabel={`Escuchar ${word.hanzi}`} autoPlayKey={autoPlayKey} onAutoPlayBlocked={onAutoPlayBlocked}/>
       {autoPlayBlocked && <small role="status">Pulsa el audio para escuchar.</small>}
-      {presentation === 'image' && !showPhoto && <small className="vocabulary-mix-image-note">Practica esta palabra sin imagen.</small>}
+      {presentation === 'image' && !showPhoto && <small className="vocabulary-mix-image-note">Imagen no disponible para esta palabra.</small>}
     </div>
   </div>;
 }
@@ -168,7 +174,7 @@ export function VocabularyMix({ scope, userId, route, media }: { scope: Curricul
           <span>{option.label}</span>
         </label>)}
       </div>
-      {presentation === 'image' && <p className="vocabulary-mix-setting-description">Algunas palabras se practican sin imagen para no mostrar la respuesta.</p>}
+      {presentation === 'image' && <p className="vocabulary-mix-setting-description">La imagen acompaña al carácter. El pinyin y la traducción aparecen al ver la respuesta.</p>}
     </fieldset>
     <label>Palabras<select aria-label="Palabras" disabled={!ready} value={size} onChange={event => setSizeOverride(Number(event.target.value))}>{sizes.map(value => <option key={value} value={value}>{value}</option>)}</select></label>
   </div>;
