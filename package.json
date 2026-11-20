@@ -24,6 +24,7 @@
     "images:vocabulary:publish": "node scripts/publish-vocabulary-images.mjs",
     "images:vocabulary:resize": "node scripts/prepare-vocabulary-image-sizes.mjs",
     "images:vocabulary:resize:check": "node scripts/prepare-vocabulary-image-sizes.mjs --check",
+    "images:vocabulary:audit": "node scripts/audit-vocabulary-images.mjs --check",
     "hanzi:sync": "node scripts/sync-hanzi-data.mjs",
     "audit:pinyin": "node scripts/audit-pinyin.mjs",
     "audit:reto-mixto": "vitest run tests/unit/reto-mixto.test.ts",

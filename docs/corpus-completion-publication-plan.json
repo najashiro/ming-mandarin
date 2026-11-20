@@ -1,0 +1,288 @@
+{
+  "date": "2026-11-19",
+  "scope": "Full vocabulary corpus visual completion requested by the user. New assets replace withdrawn imagery and complete pending image corrections.",
+  "review": "Codex editorial and visual review; no independent human review claimed.",
+  "unchanged": "Curricular IDs, senses, progress, database schema and access policies.",
+  "changes": [
+    {
+      "word_id": "v-上",
+      "expected_revision": 1,
+      "previous_status": "no_image",
+      "previous_asset_sha256": "69c4669ca52f7d0de1226d65d79c87ff02d64c1cd862e9b60398e0548c7a47b5",
+      "previous_prompt_sha256": "072dfab61943cac0998ca3c7cfba0d77dcd0f40e4c137f8ce35d4a91050b268a",
+      "status": "approved",
+      "asset_sha256": "a64079f73699c786db644808322f04ecc06ddf02aad0ad4080ba161bcb96d46c",
+      "prompt_sha256": "6b0b4823d380433c5bbb0fb6683ce7c6d3dae75326b35f4f6b39a12f07c41cf9"
+    },
+    {
+      "word_id": "v-也",
+      "expected_revision": 1,
+      "previous_status": "no_image",
+      "previous_asset_sha256": "d2d09a8a9b2ad47c3416f91568fad7957990c4a6cb9610b27f2be22075d3888a",
+      "previous_prompt_sha256": "ff86f581bafa83c425c1ca1f8ce587c63375907adb6f3890d971382ade5ec268",
+      "status": "approved",
+      "asset_sha256": "2ac8d2ce7965d81bbde842522c69a14db566cc02461c9cfef0816aa74de92062",
+      "prompt_sha256": "0f83b69646811e58f307c37fc7d429debdb6da8198941cf0394124e88a4966b1"
+    },
+    {
+      "word_id": "v-什么",
+      "expected_revision": 1,
+      "previous_status": "no_image",
+      "previous_asset_sha256": "b817cbf84fd989819c1fa22492221639ce47fb64b008157e1d33d96e70aa5117",
+      "previous_prompt_sha256": "0f9cd4648e80a88d8bf5e475864940cd2c4f7de8768311de92bc5f540ef74b14",
+      "status": "approved",
+      "asset_sha256": "2b33903ef357c4447a9dab9e7ea66a18fa68807b53a82ab767b30341a68723d5",
+      "prompt_sha256": "1a462922edce70ec96d1efdf7d13df2d41ae95b139a57d0a7201d8b525a4ca0b"
+    },
+    {
+      "word_id": "v-他",
+      "expected_revision": 1,
+      "previous_status": "needs_regeneration",
+      "previous_asset_sha256": "f5226d34cc93570d8a628b7cc46156b8cae8ea67ccf839547d7db33921ea29e0",
+      "previous_prompt_sha256": "ad35a598a96130393f7a2432971162620a3c6326b7d9b2960812879897afcd50",
+      "status": "approved",
+      "asset_sha256": "7a996d1d14551f04d8674a034d578b30a6dfe0b8ca22b0aa5842a3802af32fb4",
+      "prompt_sha256": "39eaf9080e782667f7c3b2a0d2786de127d46d991a0cb5bdb4a0d99b7f787769"
+    },
+    {
+      "word_id": "v-们",
+      "expected_revision": 1,
+      "previous_status": "no_image",
+      "previous_asset_sha256": "442c3839cc4930cd280c1d192f82bf9f0a314352b6499f6c81b9edd96059e3cb",
+      "previous_prompt_sha256": "5c78fac0efbcb0e6eb405f04ac2ce49e2643e1f1831487b7aeef17ca4957b924",
+      "status": "approved",
+      "asset_sha256": "44641f475ad8e2bfd0db41b48d2928aa5a1b370101922ab6deb2ec4f74a5182c",
+      "prompt_sha256": "44e89914991cdc61b1fff06715218a4333c2c7518cced2f6cfe0c191f64e0d0f"
+    },
+    {
+      "word_id": "v-你",
+      "expected_revision": 1,
+      "previous_status": "no_image",
+      "previous_asset_sha256": "5dfce999cff9dfa0a2eae9cae616cf69c8fdd78189ac5479edb5a8c5c0d8ba86",
+      "previous_prompt_sha256": "a16b9f29a83f1549a32c86f4ca994017e9cd8d7611585e7e399836203c32b8e9",
+      "status": "approved",
+      "asset_sha256": "0f19ad7971800de9d6922439898d54dd5c12da5b99b4382ddf075d97cf300091",
+      "prompt_sha256": "58c74a0845e6f4c9896d752b435288d6809c7d5e2cfb8d15b5bac1b74052e33d"
+    },
+    {
+      "word_id": "v-你们",
+      "expected_revision": 1,
+      "previous_status": "needs_regeneration",
+      "previous_asset_sha256": "4f253ff4e70c2ea40a3b1afc4fe6da598c547c7780bd87e62e665125d7b99247",
+      "previous_prompt_sha256": "1b41da3b90b76053d9155303c59d8510866f9c00822d337c178414b18460cc9a",
+      "status": "approved",
+      "asset_sha256": "57c8f092350624effc7c7a402d4f7851942a378177df82ccd16657b7e2d7f8a9",
+      "prompt_sha256": "99d66d0068d34806301e8a10522f0a51791daffee48852632935120f9732d84a"
+    },
+    {
+      "word_id": "v-最近",
+      "expected_revision": 1,
+      "previous_status": "no_image",
+      "previous_asset_sha256": "bc02b02098c10ede2c0c4a543042548cade6cbd3be668a2fbc6954be442b1959",
+      "previous_prompt_sha256": "e9baae21345cd61f4c095c18834a6960767981e18ccc01b1bfcc3f2ee0f98514",
+      "status": "approved",
+      "asset_sha256": "c22a5be4d60dd7cca9d1e7dd1cad6ffe928d5b54ffb336fe7ae4af27bce0dd47",
+      "prompt_sha256": "e416cd7008043ecb7bf19dd11c54dbb11d4bbd126240dae9fa052e148051d540"
+    },
+    {
+      "word_id": "v-只",
+      "expected_revision": 1,
+      "previous_status": "no_image",
+      "previous_asset_sha256": "37e291782abf1af3cf24306504d54636ca5f75662856b99faef72b8767f3fbe1",
+      "previous_prompt_sha256": "0bed9c156a34e5a62ccfb1eab741efb93a8b7bb627b95e6762f456731b0ab54a",
+      "status": "approved",
+      "asset_sha256": "ae5564ba6f7c0e3c113945b6a31b7cd168e95cedc32e31a29c2f9a10b67d1aad",
+      "prompt_sha256": "5d4e016e7cbc787921c9ca764bfd0e8664ecf4597c593852ab64744372e62e0e"
+    },
+    {
+      "word_id": "v-叫",
+      "expected_revision": 1,
+      "previous_status": "no_image",
+      "previous_asset_sha256": "9fbfe21856d1dbb771619015032b64b41c259727960c73f142301651b922440e",
+      "previous_prompt_sha256": "31a0fa90d4dd3e1b508419ef8a6a5ffc6fc898610f73940f65e27cdbd295d7da",
+      "status": "approved",
+      "asset_sha256": "308983d5d540519d751c47f29cf4983270130a6b0e62962226c9535f2b07d6d3",
+      "prompt_sha256": "b49e721459eb9068169e1bfe5ea0c32af84aaf95d0e3e4134b7f11c97f2637e5"
+    },
+    {
+      "word_id": "v-名字",
+      "expected_revision": 1,
+      "previous_status": "no_image",
+      "previous_asset_sha256": "4d7dafa83185040953a142b41c867bd6a19eb35b2d2d3ff00cbe72ad19ab19a8",
+      "previous_prompt_sha256": "bcb9ad3adabbfacee18ff56b0db1ee33c13f9b4023c201c724a1ab5c272d1825",
+      "status": "approved",
+      "asset_sha256": "79f1ddab3adb9934d8e80e15f91f66338b22894c9a2e6fa7855f140df27b4bab",
+      "prompt_sha256": "397fa3e1949008d1b8895028f9abaad4c518a4ed0167540868cf0cd4efeef7df"
+    },
+    {
+      "word_id": "v-在",
+      "expected_revision": 1,
+      "previous_status": "no_image",
+      "previous_asset_sha256": "c4b7b83f386401a97e707bb7027185da5813b9875bdd3a58f1ae7fb0d462433b",
+      "previous_prompt_sha256": "4babaf9d69df82aaa090d3d145556b94fd77497b46d2fd5fa9d26b69231ae6be",
+      "status": "approved",
+      "asset_sha256": "eaf2a2f3794b591ca2efde71ab7e5b7b99240e9063ae84122f5a19d2cdd61322",
+      "prompt_sha256": "26445a587abb659256437274aec86d2f47614a70e7e0dc387bc56704eb9b1b2b"
+    },
+    {
+      "word_id": "v-太",
+      "expected_revision": 1,
+      "previous_status": "no_image",
+      "previous_asset_sha256": "fe1597fa334c86cd957ced690f0d189b940b8e18a98cdf7457fe550a945bc218",
+      "previous_prompt_sha256": "dad245fa8c0ae90c896acb61201bb7c6db97469f24720026b369cb4ea7e82725",
+      "status": "approved",
+      "asset_sha256": "b61d94f7880b8ac4f531e22ab30afb7d04c60ae80dd0fb222342d86e565c2593",
+      "prompt_sha256": "de5e2ebd99dbda77ecd8d5fb03c57dda6db6f641e36aadf1a082c60100e53a01"
+    },
+    {
+      "word_id": "v-她",
+      "expected_revision": 1,
+      "previous_status": "needs_regeneration",
+      "previous_asset_sha256": "31fe97e0b6fa54673a9ff2c1b7bbbf7ae303c40de8ce0be77170371c73761517",
+      "previous_prompt_sha256": "f1ee50420843943730f79dfedba05b0023d822c6bd6996a73c15a3f79f8b8843",
+      "status": "approved",
+      "asset_sha256": "4a7e19541b66be6276d3ac233056b4650758dc9b4e653da1bf908a300ff65cd9",
+      "prompt_sha256": "118742269baf3ec5c3c11132e011502fef7f442947c9104044216a89b59a34e4"
+    },
+    {
+      "word_id": "v-好",
+      "expected_revision": 1,
+      "previous_status": "no_image",
+      "previous_asset_sha256": "faa3c7cf820bc52a57ffcf53ba682006ef4f8957ef2171f5e474672e23c343b9",
+      "previous_prompt_sha256": "3d7b2f357f17223b6623148fe8ca05c6069a39cac160b78ecce8fc4a10c93a77",
+      "status": "approved",
+      "asset_sha256": "051a827a229e523ba80ccd2f8885d504c95966ebba348cc71f987c7404382534",
+      "prompt_sha256": "2303e22ca3d56f5298c37957be4d97360342ef9eefcc40dd20d2d59bddd01727"
+    },
+    {
+      "word_id": "v-姓",
+      "expected_revision": 1,
+      "previous_status": "no_image",
+      "previous_asset_sha256": "0942a17c102e5b5dc83f071b753c6daf50cc7c26eb0d435587fd7b2904688183",
+      "previous_prompt_sha256": "5719dc7d40efda617abea01ef9669f2095c3de91e805cf1d8029611372d2bf6f",
+      "status": "approved",
+      "asset_sha256": "8ea36b4fd243587666ea2bb6880b405e014e38badd6688a23718e2c394697524",
+      "prompt_sha256": "f0799f7f044f465b43637a6234978dc400bf7fcaa073e777d8e15b09aa5c7ad4"
+    },
+    {
+      "word_id": "v-学",
+      "expected_revision": 1,
+      "previous_status": "no_image",
+      "previous_asset_sha256": "4b4dd3b6c7ce335571062a789f50c87dcbeb4e1d33fda1a4d0a7037ffab37a10",
+      "previous_prompt_sha256": "87c8379fdcafb0f17f30ee0c7e6d18652accdc2a2137749a63f2bc438f3d3a16",
+      "status": "approved",
+      "asset_sha256": "c656a2346c89ed19839066ebb5203abb3fc9b2048e1df1794eb0a872ba4449da",
+      "prompt_sha256": "cbac939d71c802b70ab50b5958a2e98230b5fa47c38d8f6b6f9649bdb88db33f"
+    },
+    {
+      "word_id": "v-很",
+      "expected_revision": 1,
+      "previous_status": "no_image",
+      "previous_asset_sha256": "0e47dd02c034bbf793044eda9d281cd9a59583cd7c201bb477c6f04d96c7dea3",
+      "previous_prompt_sha256": "ae29fd86d4d27753f16a024d3ee62e3a87a32a5b0e8bfe2ba879859376e23ca8",
+      "status": "approved",
+      "asset_sha256": "de4e8f6c9d2f73f309441ce17357a79d141aa5c61e2483f4ee04adc351b49c6f",
+      "prompt_sha256": "09bfeb72c11d0007bc9099a7f7b3ea4eae1eec282634d508043eaec26b9dee00"
+    },
+    {
+      "word_id": "v-怎么样",
+      "expected_revision": 1,
+      "previous_status": "no_image",
+      "previous_asset_sha256": "1b40dad0ad7b6cbc1b3ba55ff563ed51fa94a0f67c1a729b3dddbc6884f6d4c5",
+      "previous_prompt_sha256": "f40f00cf5ebe8bf89ac96573267f0042da1220a1dc46a3b13e3272633b10c9c3",
+      "status": "approved",
+      "asset_sha256": "5a7f41e760c19c6a354bacebb38ed0950fed8851949018b987b4d93e0a6ee6f9",
+      "prompt_sha256": "5923a232f6092d8d6a51dbdff89d10be0f33b0537bbcf160740a276930e4a13f"
+    },
+    {
+      "word_id": "v-我",
+      "expected_revision": 1,
+      "previous_status": "needs_regeneration",
+      "previous_asset_sha256": "73844a87a14610c3e8a5e2f3dd63e20b95744fb24dc463b9bd1cc86ba1e0d369",
+      "previous_prompt_sha256": "c7ee213a8a367e974be5dd53813ad372d114f24c9b83e04e7010423f6ed51ef0",
+      "status": "approved",
+      "asset_sha256": "d0d83c6ffffbfa9a7fd323c02beddaecde5335dd2d8b361ff165a160427dc369",
+      "prompt_sha256": "d727625bf1e757eb7bf5590630ef075b12d95f6ba3c2144323ee6c555b3a5a86"
+    },
+    {
+      "word_id": "v-早",
+      "expected_revision": 1,
+      "previous_status": "no_image",
+      "previous_asset_sha256": "1a34239faffd7806f924c3ad2cbd767e8080e9c8454e4ff3b1ab6df2e35136f4",
+      "previous_prompt_sha256": "287abc85a2620e6a6af5244d8ea4099394fa97a360462f7027f3265f4f661205",
+      "status": "approved",
+      "asset_sha256": "6e64f0efeeb636abadf76998f54fad0738171fc362dc6fb4eb34ab8abaaa6e5d",
+      "prompt_sha256": "1823e3ffdb9c49c0a05fb055b3b961323c99f9920982d913bbf6e38c0f6bc7b7"
+    },
+    {
+      "word_id": "v-早上",
+      "expected_revision": 1,
+      "previous_status": "needs_regeneration",
+      "previous_asset_sha256": "8d0a2f1dd76aedf24ce03f10dc25f37253393ef59dccb5e5b9df5864e9972454",
+      "previous_prompt_sha256": "f183c2a8bd29ff2144eba6ec1583eb7fc67513f0933fe25f23c8191409f4ac86",
+      "status": "approved",
+      "asset_sha256": "d3be26075cbc899678a3c497ababd67a4e17be7cf026bd2b19cb6fa446a39303",
+      "prompt_sha256": "7269b08f4a118386dfcabec26c1cbbf79176878fd7892a110d2a54c7f8476c3f"
+    },
+    {
+      "word_id": "v-请",
+      "expected_revision": 1,
+      "previous_status": "no_image",
+      "previous_asset_sha256": "8ae255e2bc8372f2a34b859d44fced9cd3d76e218b5c1af60f4dfed8ea20b395",
+      "previous_prompt_sha256": "e10d34504742bdf864ef5d51cf29132990f44362081ffb4bd288df6592aee68c",
+      "status": "approved",
+      "asset_sha256": "446449c45e3fcdb990275300467cb754826a46d152269f05b73ee48a7a506378",
+      "prompt_sha256": "77a56be1d14dbfac28cedace4e4e1b14f4fdc7a67dc49a453b3695fa299aee66"
+    },
+    {
+      "word_id": "v-请问",
+      "expected_revision": 1,
+      "previous_status": "no_image",
+      "previous_asset_sha256": "f27c2facfc1dfa0cf70d8f4cb72ed25b930748eeb1229ce420162273ae23cc9e",
+      "previous_prompt_sha256": "d95da2b75d8bd45574f76793bb1d2d83d890c963a93b10a56875e3cf3544ff0a",
+      "status": "approved",
+      "asset_sha256": "8d8680bfe7041170bcdefb3e9c564bbabce3dcfe1f30abb0115f48429023ed7b",
+      "prompt_sha256": "0c3d27416e4c520424afa92a1a556b88cf354f613b561aa4922bbdc9c094d82f"
+    },
+    {
+      "word_id": "v-还行",
+      "expected_revision": 1,
+      "previous_status": "no_image",
+      "previous_asset_sha256": "ff32988ec4af5945bead6a9e1bb652abff6adf654e23b7fa0e11a39a7ba2322e",
+      "previous_prompt_sha256": "762d7a4d759dca0350fc642a49a92e7b7a900c520ffdfdd37e02444894b27c41",
+      "status": "approved",
+      "asset_sha256": "16e542d1caba60419ac83ead32d196f4b95b3cd23f4a8d70e1108f9f46b90f8a",
+      "prompt_sha256": "95fbc877bf71ca64af4ac773c09c599c4d38c402376f111ada4ea21394da63e3"
+    },
+    {
+      "word_id": "v-问",
+      "expected_revision": 1,
+      "previous_status": "no_image",
+      "previous_asset_sha256": "a55b13b2115a184b24aaac1f606ed8d0e54d2ee10f27ad86383c0ae053a9b407",
+      "previous_prompt_sha256": "8a774a76f0a3cf2aef0a67e715a343557101be68a58b7adf49698830ee667029",
+      "status": "approved",
+      "asset_sha256": "85de4e24464b4d2825b20812d3b37bf0ff1f5ae25b6e9907d1ca823026af0a42",
+      "prompt_sha256": "a621d6efe8ae41301dbd7cb6a39ea2739cfa6c174aa4946eb12fed46e587df98"
+    },
+    {
+      "word_id": "v-饿",
+      "expected_revision": 1,
+      "previous_status": "needs_regeneration",
+      "previous_asset_sha256": "7a45d82c87a4a2896f92a587515b65a04e6672cfa780a30fec00f6996f0a99cc",
+      "previous_prompt_sha256": "2d69bbd8e5cf9ed3354a8c913a9c5858d7fa38b6e0df7af677da2f41954ee02f",
+      "status": "approved",
+      "asset_sha256": "c7d8033d7b130670873996e8d728d016283923c1f1df3a9e521f43aa7ca93abc",
+      "prompt_sha256": "9a53698a46b1d4f484ce9349b8719f1030a30df76c985f32aee3deea415ee786"
+    },
+    {
+      "word_id": "v-马马虎虎",
+      "expected_revision": 1,
+      "previous_status": "no_image",
+      "previous_asset_sha256": "4cfc1088f2f5a1c190428415d61bd923a1d506ffe740948648b65c13fb216823",
+      "previous_prompt_sha256": "c0e2e394ec3d947d87ff5cfd49f4b475cc5c49a5845316be21771dedb2b4d736",
+      "status": "approved",
+      "asset_sha256": "b85b03aaf49e4cda085bb1db2bd321416c5284fd87b59001653ab0c84e38ace4",
+      "prompt_sha256": "c71fb725dd0c1fbf3e58f598060c98337f585401cda4c941c7a941400ea55f00"
+    }
+  ]
+}

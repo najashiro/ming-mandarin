@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-19",
+  "problem": "Vocabulary Mix exposed words without images, including 厨房. Image manifests stopped before full L4–L6 coverage and 28 older review decisions also suppressed images.",
+  "result": {
+    "corpusWords": 560,
+    "mixWordsAcrossAllScopes": 522,
+    "newlyCoveredWords": 204,
+    "reviewedReplacements": 28,
+    "apiPhotographs": 58,
+    "nativeDiagrams": 169,
+    "missingLocalAssets": 0
+  },
+  "generation": {
+    "mode": "ImageGen bundled CLI, user-authorized OpenAI API key",
+    "model": "gpt-image-1.5",
+    "quality": "medium",
+    "background": "transparent",
+    "prompts": "docs/corpus-completion-image-prompts.json",
+    "diagramPlans": "docs/corpus-completion-diagrams-review.json",
+    "masters": "output/imagegen/corpus-completion",
+    "webAssets": [
+      "public/images/vocabulary/corpus-completion",
+      "public/images/vocabulary/corpus-completion-diagrams"
+    ]
+  },
+  "validation": {
+    "unitTests": 485,
+    "browserTests": 22,
+    "browsers": [
+      "Chromium",
+      "WebKit iPhone"
+    ],
+    "checks": [
+      "ESLint",
+      "TypeScript",
+      "Next.js production build",
+      "complete corpus/Mix coverage",
+      "asset hashes",
+      "alpha and visible subject framing",
+      "responsive sizes",
+      "saved kitchen round at question 16 preserves progress and favorites",
+      "withdrawal and republication behavior"
+    ]
+  },
+  "preserved": [
+    "current lesson label",
+    "one relevant sentence per vocabulary example",
+    "curricular IDs and meanings",
+    "progress and favorites",
+    "administrative withdrawal mechanism",
+    "database schema and access policies"
+  ],
+  "review": "Visual/editorial review by Codex. No independent human review claimed."
+}

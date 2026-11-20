@@ -1,6 +1,4165 @@
 {
   "schema_version": 1,
   "entries": {
+    "/images/vocabulary/corpus-completion-diagrams/4e00-4f1a-513f-aad765498ae2.webp": {
+      "sha256": "aad765498ae2245dbbc5caa69ecd0cfd6c18b82207d8b9840b9b7066389b697d",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/75de0de65a459bb71aa3657c0c4dd659d58edf3c4d845b55643714db674bcf0d.webp",
+          "bytes": 3036
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/44f6ec6149f9cbb01d3ed93fa9308e78221259eac5611f030a593361434818f2.webp",
+          "bytes": 7144
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e00-6708-1e101bc3eefe.webp": {
+      "sha256": "1e101bc3eefeaa86d564ad04997f3cdee9910db74869b97a96d81b9c6b6e94f3",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/b48ebd428bedac52a03a9e92652b18f3ac290e6b120248e597d886ad37aa2ff6.webp",
+          "bytes": 2574
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e00-8d77-31eaafb1c255.webp": {
+      "sha256": "31eaafb1c25553c206edf5b71978e5ba3c8152378400c0e2d5e015d4a200f8ec",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/27502fa0918896f27ec6d44ebb88a5129f5088d4ae63c8b45a6abe27c7e20505.webp",
+          "bytes": 3276
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/5bef1b08582692ed3fce63b3b0bd059c7f89490d58688f1f0fceb65d3b2adc47.webp",
+          "bytes": 7562
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e01-529b-6ce2-eedf9b0f25a8.webp": {
+      "sha256": "eedf9b0f25a8d42858e34f3aaadceaa3b3c433c7c48ce6ddd30d3e8c27882380",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/7906ceb33c29e0596957327f7fd9f6e14727c069254f1237822d34ce3e4ba51e.webp",
+          "bytes": 2452
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/e3b67abaaccfcdde4c7c7df7f22d511fda515e150c98144af994d4805ffaccbb.webp",
+          "bytes": 5816
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/e80e749e6262cfcf4aaf6569c0735b296ad87fa75ebdb261b8463eacb01dc1ea.webp",
+          "bytes": 9700
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e03-6708-9464751754ee.webp": {
+      "sha256": "9464751754ee8f55318cfb4d00eab0bfd665782e251f9e55e0e15e0aa7a5b6a3",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/db57a519a1d25ec521008c41b354818e5d5ab32f0a18b32f537fadf956ced07a.webp",
+          "bytes": 2688
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e09-6708-0e83777da8bc.webp": {
+      "sha256": "0e83777da8bcb4b9851f28521d1cad1cd59c07394196cfaaebc1e62e99529d55",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/20f75dacb28435e82e91cfcb4313a2d39dcd6d0b14a2e694537ca5771a0e1277.webp",
+          "bytes": 2916
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/fee12fda06ee3dc1765cf19860bc11613af2cd05f4570a1c41d45666c6880240.webp",
+          "bytes": 6754
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e0a-4e2a-6708-cb5740e03ef5.webp": {
+      "sha256": "cb5740e03ef5be271c6fff9c9fe39d0c479a60ae74f78dcd1838ebba7085ff75",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/fab0c098ec33f150f196bce73ec804eb2177a4a5066a5965506631bf1c463be7.webp",
+          "bytes": 2352
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/32eb7715baf51ceb978095fda5af41c6d2140d74076257c8486af0c58be5fd18.webp",
+          "bytes": 6036
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e0a-661f-671f-4e00-eb616d0949ea.webp": {
+      "sha256": "eb616d0949ea8246a8b207455901b98a35e35a2dfce01f2db9993c0b9513b43f",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/9de0598842cf4ff835a0451b4439bb195d6b3aae0d881a491b92e37854798a05.webp",
+          "bytes": 2718
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/86b91cdd3eae58499a5b696904ae5d65a18b1d49521835717429446c066b85d3.webp",
+          "bytes": 6972
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e0a-8fb9-4067db3ac3c8.webp": {
+      "sha256": "4067db3ac3c8ee7098ae32dc4358c3d5dc0094ce3b09ad53935ab47121f1857f",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/6d8aaaefcb1fc4cfc6a95d46ef5989dd4a955c27204a9b0a9114d11f695e99ea.webp",
+          "bytes": 1280
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/c0ef458aff8addedaf38e8967e501ac886762694357ebb702ac04ee5e2354946.webp",
+          "bytes": 2938
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e0a-a64079f73699.webp": {
+      "sha256": "a64079f73699c786db644808322f04ecc06ddf02aad0ad4080ba161bcb96d46c",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/a080fae6f20799f74b1400e2228259fca2927f4b2f2211a98625892fd649b473.webp",
+          "bytes": 4182
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/6293199ff6f799d8f58b3602d20133860be364835fe8b21170e37d09aa935d25.webp",
+          "bytes": 10284
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e0b-4e2a-6708-8109d300abbb.webp": {
+      "sha256": "8109d300abbb5f3f25cd4ea308a69a6761ee9f1382d55a7e4f356f049813369e",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/9a60c7e4e9e77cc62fcd127334299701fcccabd1235ff4d5a05a1752d2bae892.webp",
+          "bytes": 2338
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/26cfb87507a7056dcc66e8d434bc836083f1943f50111c2fe2525db986993692.webp",
+          "bytes": 5970
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e0b-661f-671f-4e00-9eca131f56bc.webp": {
+      "sha256": "9eca131f56bc1a0d8001038419ed541c7a834260ea8b068e4e60117b0df6472f",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/6f870aeee79b23ad94c584baca98b1133cf6ebb1723fdb16ca9cda9c4ce9ca65.webp",
+          "bytes": 2706
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/abf1f95eb005a3c9e09ab654265fce758db193b77a6b60d7fbb54ce16d6cbbdb.webp",
+          "bytes": 6990
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e0b-8fb9-fa5ddf440a55.webp": {
+      "sha256": "fa5ddf440a5553843e49c82a3db768761fa088c3953b97f11d5444c061729c87",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/658ce1d6a9572965addf5a5865bbdccde7234d17851985ac83093d978cd4e0b2.webp",
+          "bytes": 1322
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/f25fef96828156b94bc08d64edd15c733a3770a8b10069afe8542b9bff292a8d.webp",
+          "bytes": 3132
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e0b-fa5ddf440a55.webp": {
+      "sha256": "fa5ddf440a5553843e49c82a3db768761fa088c3953b97f11d5444c061729c87",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/658ce1d6a9572965addf5a5865bbdccde7234d17851985ac83093d978cd4e0b2.webp",
+          "bytes": 1322
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/f25fef96828156b94bc08d64edd15c733a3770a8b10069afe8542b9bff292a8d.webp",
+          "bytes": 3132
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e0d-353e46de744b.webp": {
+      "sha256": "353e46de744b4047c0afe61c32b48101397a5278722157103da47d9183b116f9",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/cf9a5620b89986d4f24b12d0fbcdc904573555a094bea1757adaaddc512702a3.webp",
+          "bytes": 1846
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/8f536c4ab350d37bf756e8da627d4879ce9610dc2bf226d214f246afbb43eb97.webp",
+          "bytes": 4020
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e0d-5ba2-6c14-ae4676d0a502.webp": {
+      "sha256": "ae4676d0a5025af6091db3d3fc462d1f75d1dd8ede773cca96621285bd867b1d",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/7efae73449396f7e59a0ee7783c3d8e475ccadfae676ff7b34ffe33d11708dc2.webp",
+          "bytes": 2852
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/78e996c3c748c38af15e068580f9a6b94cc32e00c53e716817f93fbf7d351078.webp",
+          "bytes": 6464
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e13-4e1a-d97c62104d59.webp": {
+      "sha256": "d97c62104d59b8f6fb9c531d1ed4c13b5b6d2d37a200c66cdad82b342b8cd5b5",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/e530158b68d238c0a08d29d5d2c2979f016fe42d852d2f12ed70fc426289b6d7.webp",
+          "bytes": 2852
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/b4ec9c7b4366f57a539b1843a6a8100d853a39f9642cfe4fc9c7e324744365eb.webp",
+          "bytes": 6320
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e1c-84b342b1145c.webp": {
+      "sha256": "84b342b1145c029ff009ed45c6ecb8a4bd03921c2554be09fee9dc03b76ca111",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/5827e1d221aa452df1224d57f98a7761969ad91f7d1eafd2b066c750df46d56e.webp",
+          "bytes": 3240
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/5e2b9319cd4b117e32284f05917348f2403305607f885a78a98539cf8f5f930e.webp",
+          "bytes": 7386
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e1c-8fb9-84b342b1145c.webp": {
+      "sha256": "84b342b1145c029ff009ed45c6ecb8a4bd03921c2554be09fee9dc03b76ca111",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/5827e1d221aa452df1224d57f98a7761969ad91f7d1eafd2b066c750df46d56e.webp",
+          "bytes": 3240
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/5e2b9319cd4b117e32284f05917348f2403305607f885a78a98539cf8f5f930e.webp",
+          "bytes": 7386
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e5d-6708-d6ef0f3ef374.webp": {
+      "sha256": "d6ef0f3ef374c8d099fef0aef39d4d9d3c156248bc7df8b0747ea1dd50841df2",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/b6500aca3c4b1fc85511d00c000f1d97439995618b4c0f8e525fae1469190377.webp",
+          "bytes": 3212
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/47b8b9ebe0aff05b77c6643f6b533492229cdbfddadd83012845c5ed2c2d734f.webp",
+          "bytes": 7608
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e5f-2ac8d2ce7965.webp": {
+      "sha256": "2ac8d2ce7965d81bbde842522c69a14db566cc02461c9cfef0816aa74de92062",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/fca67cc47efa75c7010aab58fe5838a1ba4571b5e76c08b7d7a2392e45b7b9cd.webp",
+          "bytes": 3350
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/eba4a5824918ec44200e739bd223e5167b9b5c4bfc97450fe8639fe5bd10f735.webp",
+          "bytes": 7766
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e86-b1f2d04cc469.webp": {
+      "sha256": "b1f2d04cc4699e9664607f9254c6fb4727d1e06e73f0a8588c465b84daeb2636",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/20dc27861ed605b68526a6ee2df109000d7622ac59601fdadab2b9baf3cae9a5.webp",
+          "bytes": 3674
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/d6ef06d1413449d445b9e16541bfa449a8004a12c7bb40e0572ad5ba962f7204.webp",
+          "bytes": 9150
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e8b-26eeb7660b48.webp": {
+      "sha256": "26eeb7660b48da9f813d166b195d0c68ad7d21b139cbad3e7f22c700cc890b6c",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/cb046b4643c815f481d09aec3509c84a6a2cfe4597f35ed61d0c55c9fae42c5b.webp",
+          "bytes": 1868
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/a9de9584f0f415e125e2d5bafba7df5e6fe64cb4f146d567ae8813d176222fc6.webp",
+          "bytes": 4220
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e8b-513f-26eeb7660b48.webp": {
+      "sha256": "26eeb7660b48da9f813d166b195d0c68ad7d21b139cbad3e7f22c700cc890b6c",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/cb046b4643c815f481d09aec3509c84a6a2cfe4597f35ed61d0c55c9fae42c5b.webp",
+          "bytes": 1868
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/a9de9584f0f415e125e2d5bafba7df5e6fe64cb4f146d567ae8813d176222fc6.webp",
+          "bytes": 4220
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e8c-6708-2101d4fc0912.webp": {
+      "sha256": "2101d4fc0912cc36e134aae370944d1129e8004ba9a73d1ff35623008a867f82",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/c488c55b5deb8ad4d252a2c6702e7dc94d3ec27862b362673bbe8741bbc73cda.webp",
+          "bytes": 2882
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/b8ead65710c86e676ebed1e0f428125f394c87886fde64ca12939338d257d2f5.webp",
+          "bytes": 6850
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4e94-6708-246c97207ebf.webp": {
+      "sha256": "246c97207ebfd6528920115e4c5183fe074a374242687dbb5736e5c99188e0e0",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/c7b4fb1198b34d71388dcf4a90eb6f20c8fc2049fa72dadc80eac6bd68b7a4a2.webp",
+          "bytes": 2832
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/6b1342c815e045f2e8c3406552249bc174f65b21b2997ef63a50d976bbb36237.webp",
+          "bytes": 6656
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4ec0-4e48-2b33903ef357.webp": {
+      "sha256": "2b33903ef357c4447a9dab9e7ea66a18fa68807b53a82ab767b30341a68723d5",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/1a3e15c18abd2e0422b468f8c5d83b351c274f59952fe20caefd41b74b06a85c.webp",
+          "bytes": 2988
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/534bb3623d87c486a947fb9d9876683d52e20f52bb4259daea31c7ec4e47615a.webp",
+          "bytes": 6706
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4ed6-7a996d1d1455.webp": {
+      "sha256": "7a996d1d14551f04d8674a034d578b30a6dfe0b8ca22b0aa5842a3802af32fb4",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/d90f76d257016dfb68f62393e8efeb1f29a793ddf61c9dc9bc234a95f8d0208a.webp",
+          "bytes": 5264
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/90e933df617339b6e813f32d0bf95b567ed76459f8306dde5425c986f51da319.webp",
+          "bytes": 12560
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4eec-44641f475ad8.webp": {
+      "sha256": "44641f475ad8e2bfd0db41b48d2928aa5a1b370101922ab6deb2ec4f74a5182c",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/84431ca50e309d704f6f1fa8d2cb5ef858669732005aac6dc72c419f8dfa760b.webp",
+          "bytes": 3976
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/afe666116fe0d25ad4c8e9762901adc06d460fca7bd70f2c37b7f332b9f5bd94.webp",
+          "bytes": 8766
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4f60-0f19ad797180.webp": {
+      "sha256": "0f19ad7971800de9d6922439898d54dd5c12da5b99b4382ddf075d97cf300091",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/d754ec16bcf8aafb0744f8600805669546ce9dd5ea1e11dcffbe19efebe849b1.webp",
+          "bytes": 4076
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/c9ed66b6647ee44b66892434549da3fc82fa825f8d7671fc3ef58681c2b31270.webp",
+          "bytes": 9610
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/4f60-4eec-57c8f0923506.webp": {
+      "sha256": "57c8f092350624effc7c7a402d4f7851942a378177df82ccd16657b7e2d7f8a9",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/ba3b05176bd8c788087d72ee75bb29b48ef5fe7b14c4ebde17eb0935a5d25b68.webp",
+          "bytes": 5534
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/e4be14976205c371b00fca784eb0d173e0673208b42a3136ade5e77e3bc97be9.webp",
+          "bytes": 13102
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5148-4006dc2c617b.webp": {
+      "sha256": "4006dc2c617b430ec91553048c41cc226bcfe8d3a45bf6fc916d378b5974ae44",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/e81ed596f657a5163ac012c54133a08e9a6e73487249a5a4b4f9f3fff12672f1.webp",
+          "bytes": 2948
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/8b142b2dbd8c2a1cc8ffb5ae04c1c472b4b41cdfe4f8535a0fab6d16b4b90c26.webp",
+          "bytes": 6650
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/516b-6708-a9a2fd04ca81.webp": {
+      "sha256": "a9a2fd04ca81ebe6bb70ff0db2a8d2d2555670e2e1ba588dae5cc5c19158c087",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/7ab8aa14d0e1d3f891de28fb84422b3b3f6fd25915caca39672fbcc484ae4720.webp",
+          "bytes": 2958
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/6b3c217099066756b8f25e284b7b1ec79d953f17bb4d475f7e98c2dfc698804e.webp",
+          "bytes": 7120
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/516d-6708-e6253a9a149d.webp": {
+      "sha256": "e6253a9a149d4dc330c6a1d64d104e0f19d8a4debfff3f96dbfe291e111b0ed4",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/0b440b5e119dcb265731dbe7b6a0cd6c12a9c0cef85d07b7b587d970eca927ce.webp",
+          "bytes": 2844
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/d548d0bfd56344535a0e44ab27fcf4e2660e84d317c9f2fd7de3674a32a4fcd1.webp",
+          "bytes": 6624
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/522b-015e95fc6154.webp": {
+      "sha256": "015e95fc6154bb583d19ee3182327052cfaa254d8f839e0c07bfb312a4f1f216",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/cd1766fa3db6f461048ade49b1ec9dcb44236327ce6f1850bd0d475fbdcecd58.webp",
+          "bytes": 2106
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/d92b07fe925f00dcc7f9ffc4c6dd1395f643c263800e94bc22c6b8aa2eb4f2ab.webp",
+          "bytes": 4778
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/524d-5929-a6537cd0536a.webp": {
+      "sha256": "a6537cd0536a6ec57522a5e0db58c686834d7739fd71e17e67e27fc92a2c6fa7",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/1f3e5683c8eba643620f4772aa551b5927d23b9128b8dca722849a4e67524a80.webp",
+          "bytes": 2562
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/71b32c1c87e873afc669957a4ba4aef88de1758d49539456880c1af3f91c972b.webp",
+          "bytes": 6340
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/524d-7c80910d6e36.webp": {
+      "sha256": "7c80910d6e36db9e7921a187e69127359708ad0983497d0860caa89653aca66f",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/9efe708866905106a3397551832b1d1f7bedc9a815d9daa0485442957efa127b.webp",
+          "bytes": 2092
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/bf059ec1facc198b9eaccee7eb1dd4490e22d17bab4333d1e51804d2cff9e60c.webp",
+          "bytes": 4838
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/524d-8fb9-7c80910d6e36.webp": {
+      "sha256": "7c80910d6e36db9e7921a187e69127359708ad0983497d0860caa89653aca66f",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/9efe708866905106a3397551832b1d1f7bedc9a815d9daa0485442957efa127b.webp",
+          "bytes": 2092
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/bf059ec1facc198b9eaccee7eb1dd4490e22d17bab4333d1e51804d2cff9e60c.webp",
+          "bytes": 4838
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/529b-6ce2-95e2a867b18d.webp": {
+      "sha256": "95e2a867b18d4227bfe5c81480f69886261f3fcc9d0f7e2d5c9baccd2b72c136",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/3fd5240aa88168e16f2a91a9e3828597926d8896e248aeee7fb605e3cdfb9578.webp",
+          "bytes": 2290
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/d198de9919da0701e2d9f466caaca815221e5dc71978fdb35de1e458a1a65210.webp",
+          "bytes": 5484
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/529f-592b-718a-732b-44fdf145160f.webp": {
+      "sha256": "44fdf145160f89fdb43c15b6eb8b12087e8f687a33ad804044c7369213e77f4d",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/13d7f321e7a39270f6f185c2d578b9b5050ea9b0e247aba4fd448e97fc8efd18.webp",
+          "bytes": 2590
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/bd8c7b517ba34de561ad0979387c5156ae31a2fab18c666c513bb25cec3e8574.webp",
+          "bytes": 5730
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5317-8fb9-e7f1374a7deb.webp": {
+      "sha256": "e7f1374a7deb2c882d7c315c835dd73c731481ae5cf576fa08273e4e99ece719",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/05df90090de6e81e96eff8e11413345f86da7f4b2eb01e3d63cc655791ee9934.webp",
+          "bytes": 3254
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/35aba2c6bf4584ef142f5640ae08b94eed027c71a505f873459674a189afb10a.webp",
+          "bytes": 7388
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5317-e7f1374a7deb.webp": {
+      "sha256": "e7f1374a7deb2c882d7c315c835dd73c731481ae5cf576fa08273e4e99ece719",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/05df90090de6e81e96eff8e11413345f86da7f4b2eb01e3d63cc655791ee9934.webp",
+          "bytes": 3254
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/35aba2c6bf4584ef142f5640ae08b94eed027c71a505f873459674a189afb10a.webp",
+          "bytes": 7388
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5341-4e00-6708-d12108dc966c.webp": {
+      "sha256": "d12108dc966cabcb71760116dda3f562e1517834d8a330447ce7b5628c70fa88",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/b3032f7be505d1eaed89977efc94ea7f02fb85a80b2799826f7dd6b7ff43d756.webp",
+          "bytes": 2396
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5341-4e8c-6708-7b5570d0d6a9.webp": {
+      "sha256": "7b5570d0d6a98e22c937ff8846b406a8c730bd873a65ea44b927ca4198112f2c",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/22ac15f845866b1bbc389571cbf2ff09a8dd231390fbbe5a081223ec4524fc08.webp",
+          "bytes": 2634
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5341-6708-254f66b6ec44.webp": {
+      "sha256": "254f66b6ec4475432eddbb234c0098d28a47ec5c8e56de0933eadaa654e9d873",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/e5901e81f3aa369753f60a02e142c17c6afddd88e7a0a71e0c0946d5de918727.webp",
+          "bytes": 2632
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/5e64af8ca2cec490ce5d823dec77ccd2aa0895048b833d813c72b5ccf6c608a4.webp",
+          "bytes": 6296
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5357-574cbfb60ce2.webp": {
+      "sha256": "574cbfb60ce25816a1a6563aa34737293ca6b1a7fafaaa4e3ccf9e55c25eaa29",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/8a46004afbcb84210df1c57eceb20e9d234fa97a09b8faca1377e470818922a1.webp",
+          "bytes": 3144
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/34f37784a9893aba84e0376b10772ca6e29eabe96d96fdc2646d91750e808c9e.webp",
+          "bytes": 7184
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5357-8fb9-574cbfb60ce2.webp": {
+      "sha256": "574cbfb60ce25816a1a6563aa34737293ca6b1a7fafaaa4e3ccf9e55c25eaa29",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/8a46004afbcb84210df1c57eceb20e9d234fa97a09b8faca1377e470818922a1.webp",
+          "bytes": 3144
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/34f37784a9893aba84e0376b10772ca6e29eabe96d96fdc2646d91750e808c9e.webp",
+          "bytes": 7184
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/53ea-ae5564ba6f7c.webp": {
+      "sha256": "ae5564ba6f7c0e3c113945b6a31b7cd168e95cedc32e31a29c2f9a10b67d1aad",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/24406bc2b74966c6c9794505d25c62e784a0e0691136c2da4ca15ac40e513688.webp",
+          "bytes": 4262
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/78f22f72160377115d9b1b75340b0260eff013ed309d93928fe5efa9973ec0f1.webp",
+          "bytes": 10230
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/53eb-308983d5d540.webp": {
+      "sha256": "308983d5d540519d751c47f29cf4983270130a6b0e62962226c9535f2b07d6d3",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/1335c7bc5196767af42415138ac5eb4b504a7ae1ec08a15f08bae69d5019034b.webp",
+          "bytes": 3034
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/cc06bd4b51dd1accab953ae94c5a2f28e978b292254b7ea3757ffa9f9195407f.webp",
+          "bytes": 7170
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/53f3-8fb9-d8dc07a4a415.webp": {
+      "sha256": "d8dc07a4a41579b1157a6c7366515d527ccef0f58427d53d0e02f767d51b3d55",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/1f39c5d0d338c6f64168f42c2169f1a4a0c713f84e5be34d49a10764b7614adb.webp",
+          "bytes": 1626
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/a3811d7c5326d6dd4142cdfa7d1f97a1e7e742740d12435860479077feb6dcdc.webp",
+          "bytes": 3708
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/53f3-d8dc07a4a415.webp": {
+      "sha256": "d8dc07a4a41579b1157a6c7366515d527ccef0f58427d53d0e02f767d51b3d55",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/1f39c5d0d338c6f64168f42c2169f1a4a0c713f84e5be34d49a10764b7614adb.webp",
+          "bytes": 1626
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/a3811d7c5326d6dd4142cdfa7d1f97a1e7e742740d12435860479077feb6dcdc.webp",
+          "bytes": 3708
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/53f7-e8cf3f64a73d.webp": {
+      "sha256": "e8cf3f64a73d27706dcf65f1c85790b2d6953fc0734d777d3f12e2fcf9d43b38",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/7e6150553c36530bc324b32cece2e1c801088d00f5e6ee02c3397fa93e085189.webp",
+          "bytes": 3036
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/0367a4e77afa71e1821e1dc5b8339ec1ee540a064355fea35957c6bc2a97c853.webp",
+          "bytes": 7128
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/540d-5b57-79f1ddab3adb.webp": {
+      "sha256": "79f1ddab3adb9934d8e80e15f91f66338b22894c9a2e6fa7855f140df27b4bab",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/012a868b9131dcbe8830f462c341fc041ecd7337655720cdf0df4c44e0434521.webp",
+          "bytes": 1996
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/93094396d9c302aae03996a563ca4811cca66de09e2ab61191783330b638064d.webp",
+          "bytes": 4938
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/540e-14aaf31e3558.webp": {
+      "sha256": "14aaf31e3558b0d71a3f80c5a51c76258509bd256ed6cc606b084514943b6bf4",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/394aecb744ea47aad41a1d040712e1f443f0a3f6ed0faa9889e57643a92dc4a5.webp",
+          "bytes": 2070
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/3023253054c384ab1314e0ef227244185eb2637e0b514ce33ca77a418a89f24f.webp",
+          "bytes": 4708
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/540e-5929-d383fd3b674e.webp": {
+      "sha256": "d383fd3b674e698a08ab4952e6976a30aa60cf89156a747f082666147ba3031e",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/6b7c40d95e2012f73da74c1a1ba8484febc5d9efb0fedc560aee2d2fbd80cf36.webp",
+          "bytes": 2848
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/23ca3473bfdcc1c021da7729657f2725b429d2a6681081760a43a043a5c1d9e3.webp",
+          "bytes": 7140
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/540e-8fb9-14aaf31e3558.webp": {
+      "sha256": "14aaf31e3558b0d71a3f80c5a51c76258509bd256ed6cc606b084514943b6bf4",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/394aecb744ea47aad41a1d040712e1f443f0a3f6ed0faa9889e57643a92dc4a5.webp",
+          "bytes": 2070
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/3023253054c384ab1314e0ef227244185eb2637e0b514ce33ca77a418a89f24f.webp",
+          "bytes": 4708
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5417-b267402f7498.webp": {
+      "sha256": "b267402f7498f3cd53901e29a028f13f339b705ea094c28c72775de5b6cd4c65",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/d281a12e58ba76592ad9a2d2177c21289be04832e076b17965e4f253c4917681.webp",
+          "bytes": 2212
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/d9425ae9ea6e289be399d35ee1df61ad04d56820733322a023bab38de1830b1d.webp",
+          "bytes": 5054
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5427-fb4836f7bd6d.webp": {
+      "sha256": "fb4836f7bd6d362737bc7e65c1bd9449b2dcc3eae7a757676c06cd979f9c8db2",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/0ae35e62592d7ce5ce8e1ee01306f6e41977c9493d051a8e6ffb5a5b1ea0971d.webp",
+          "bytes": 2156
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/5a5767115fe9c8d9bcd3d19c38d2c957594272eca41d434c92ac943dd08d9b90.webp",
+          "bytes": 5062
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/542c-8bf4-e1808994146a.webp": {
+      "sha256": "e1808994146a0481db23d810764f8d807a38e5d505814212ec0bd60de0188b2a",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/5bdbbde636fb6757026c0c1caa874734699e2358e90e9c516fc9be8b76088fdc.webp",
+          "bytes": 2878
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/17c4bf0d15244fd5ec24b35c5b1a944c1ea4dff7ea9bfd0487cec872c42b845f.webp",
+          "bytes": 6852
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5462-89eec65903ec.webp": {
+      "sha256": "89eec65903ec4dc8008bd92fbeab6c7548621a17c8990e66a3a66b1342d154ae",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/cd0567c263e60fe2290377d4e1bd65c6e8b4db784195fd35208dd087cc8e8281.webp",
+          "bytes": 2034
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/b4b89f5576752e488c7403056201ca099cb98db4cf8650ee10ce410d004357cf.webp",
+          "bytes": 4556
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5468-672b-1097cd733ba7.webp": {
+      "sha256": "1097cd733ba7c13031bd3db86b0468bfe2ab83e422f9a2dc53427034b612c822",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/9be03479da65bc9f5ddebd4eabe9ef3a8c0c84a43b620f7d8965b83313e176d5.webp",
+          "bytes": 3046
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/1b0c5b8c2c27532d86422a45254ddd259d612c9e1bcca951f043dd0940148793.webp",
+          "bytes": 7044
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/54b1-4eec-8d6a0f4b3d17.webp": {
+      "sha256": "8d6a0f4b3d179d8431a44eebee03385a64855253a571bb8dbfd4e93c4ac59780",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/64cf6f8d8f32ca559004bef5888e62b64806d230a49f8340548ab80753dc0aff.webp",
+          "bytes": 5764
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/729ea45314b93ebe742a27fcb09b26116d7f7fad60563db4cc71aec40f12c047.webp",
+          "bytes": 13870
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/554a-f0236a59a52a.webp": {
+      "sha256": "f0236a59a52adf014b2d15c4443b9752f1336cc7a6dcf97b3b81c0a108cf465d",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/cb79c2ab1b0327c375a92b942e3ff6ed287cf226250084a3298f65de1d249b42.webp",
+          "bytes": 2200
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/6b892a8d502d82ca9137119c20ae55b1007574e929d8467a640f908af7248402.webp",
+          "bytes": 5156
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/56db-6708-d600d117e076.webp": {
+      "sha256": "d600d117e07630fb65a067789983fec81fe45066c310c32c860e3f8a78485cbc",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/9cd1b10457acbabcc625df98578f7ac781244c1351e5c1aea50444ccf6881e37.webp",
+          "bytes": 2694
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/56de-56fd-0a19f4bca36a.webp": {
+      "sha256": "0a19f4bca36af1c83ff85b1ebb1f8451f86475d171c16c03b93acb74bc889c51",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/a1e669345280b33291302d70fac4703db18b44e1cd8c179595cafaa9032e4680.webp",
+          "bytes": 3474
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/edd413594ec03e36c5f709224b8efdaec385efe9980462176eb2fcd4c73d103e.webp",
+          "bytes": 8298
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/56de-5b66-6821-9247c9da80bc.webp": {
+      "sha256": "9247c9da80bcd79208d40f7d5a38d31c1e3f102819efa10a46d3b5b200720ec6",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/b5b3a2ad3e36a8e302b9d3651591f62fb0cd9f3127d83460606cda29cee8347c.webp",
+          "bytes": 3310
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/9b07372fd197b3cab221f3558b8cc7a7304e873e7d9fba6a37f9b5a73617653a.webp",
+          "bytes": 7796
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/56de-5bb6-5d82f3887135.webp": {
+      "sha256": "5d82f38871353affe7724bb4845610d185fe9d3b68e16a7463825a6c044e4c61",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/9b13dadfad15a1187c901594d0da9875e0c7955ac0e471d8cce1a4413c1f5386.webp",
+          "bytes": 3048
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/cc9f3bd78a0a1b6d861bce28e048ee3caa9223836c07c78c8d3e69874c93b811.webp",
+          "bytes": 7564
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/56de-ca11db9470bc.webp": {
+      "sha256": "ca11db9470bcfccfe336bbc48483d1b74698f678b952b018b9868e87a90fa10d",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/f0e8501a2a746762dcd68299455c061953c7ab59dbda88ded7446d1ecac87e63.webp",
+          "bytes": 2916
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/c5b4771c159540b7d04fb7e2c6d8b643b75db857f7b07ccd522067ec0c2c47e0.webp",
+          "bytes": 7030
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5728-eaf2a2f3794b.webp": {
+      "sha256": "eaf2a2f3794b591ca2efde71ab7e5b7b99240e9063ae84122f5a19d2cdd61322",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/5e8186eeb5537f0175c8f2b55c65512fa521560681ae7030138e0f9399b2a4ec.webp",
+          "bytes": 3842
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/88b71331929541608a10a269bd1be088cd6afcdc3134faee5ec48735f347289c.webp",
+          "bytes": 8786
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5730-65b9-dfaca716f573.webp": {
+      "sha256": "dfaca716f573e8d76157ed5d4b3cda82b2d288e1a29e1b54ad610d213d0ed8a6",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/49df8efb07f450fe1ef6ef441646394048c11cd0fa75c57d448dd832fdb4d970.webp",
+          "bytes": 2868
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/3db19e7a8c0997de2bb1f455d4882ceafcc3e5f99e527aa44e8be89a4b767326.webp",
+          "bytes": 6232
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5916-8fb9-3d8a0aa88bbb.webp": {
+      "sha256": "3d8a0aa88bbb7fe80fa8a583dcf92c234b3b017670d9a400d77837861c01f56d",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/835a7c166494c03fe56b8f4510d5d5ed88b23812ed0bc08e72e2efc64ce17ba9.webp",
+          "bytes": 1266
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/9b93b9981d8ad73dd889dfbbbf0e79d5bc1a5265fcd6e9e02a2fd373e5a30ec2.webp",
+          "bytes": 3076
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5927-4e3a-ae84ef9fbdd2.webp": {
+      "sha256": "ae84ef9fbdd22a2e2a8298556082ed2a25f1b8fdc0ed855e9a072d28c7a34ccc",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/7e55ba04f202f60c6c4c6e7fb00956c15c070dcbed0d5bcf93b808383000179a.webp",
+          "bytes": 2222
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/0a2515a09c78a69b824c56a9b9aa9827b0ee4bb22cd66e7a1b3820f52fa550d6.webp",
+          "bytes": 5408
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/e8e73273e9db671334dfb4721c89c2878020f809ddfd6c168864a4dd423d9ffd.webp",
+          "bytes": 9136
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5927-536b-eb7673ee187f.webp": {
+      "sha256": "eb7673ee187f79ea68c76dedb9bb54a4a57bd8362816976f1a18a243b58b17e2",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/46236c329bbdf370896dc4febeab645f0103aad7bd607e2c54fc876785f082c9.webp",
+          "bytes": 2166
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/db66e741ce4471a09770b4c2b735b11ea916a5e21bceb8f1a5a448a498a79d8c.webp",
+          "bytes": 5196
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/592a-b61d94f7880b.webp": {
+      "sha256": "b61d94f7880b8ac4f531e22ab30afb7d04c60ae80dd0fb222342d86e565c2593",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/807ae75e6aeff802327631734eff5cf1c4dd36242d99e58141a2f37999028b30.webp",
+          "bytes": 2218
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/86f089927f003a8fc515342f3621ea1e73bd497264e99e90cc62cfb46dd99f52.webp",
+          "bytes": 4918
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5979-4a7e19541b66.webp": {
+      "sha256": "4a7e19541b66be6276d3ac233056b4650758dc9b4e653da1bf908a300ff65cd9",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/596415e5a6b3277e0ffa865e7a22f11b9384f1de360d8ed48d12b976c82c8af2.webp",
+          "bytes": 5322
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/4f2353f7eb344be4292054c8f135a2126c0147f3c297552038568511c99d7569.webp",
+          "bytes": 12716
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/597d-051a827a229e.webp": {
+      "sha256": "051a827a229e523ba80ccd2f8885d504c95966ebba348cc71f987c7404382534",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/ebb4e13f60db38c6990fba891d11da2e168201889d04cbfe44944498a27e32c6.webp",
+          "bytes": 2986
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/9551a60a9e7cda17413031dea401158c5b7b5a82c2275bc35c4b18262dc2af62.webp",
+          "bytes": 6552
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/07159a1cbc700ffd2387e23abb6d6a7d1a612a2d1c9344de2a558ec1572fcad5.webp",
+          "bytes": 11016
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/59d3-8ea36b4fd243.webp": {
+      "sha256": "8ea36b4fd243587666ea2bb6880b405e014e38badd6688a23718e2c394697524",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/b55deb681f9059b268df537f8b947bf564da4ff08b285f2d25fd8fbc12979aa5.webp",
+          "bytes": 2248
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/533371575618395d152845b04b0213d52db7250f183593279701d553873339d0.webp",
+          "bytes": 5658
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/b9170d5e0a449e732b7b27e5c1af3357ac99e0270d8cde01c5cdecb84829816c.webp",
+          "bytes": 9744
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/59da-660e-0bab4ccaab9b.webp": {
+      "sha256": "0bab4ccaab9b75340b60a739c0dd2b314fc37e70399b0064785b86c3ca665040",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/9865491a7121949d0076d5ee0abd8efd1ca3841c038cc5e05642cd318e13a705.webp",
+          "bytes": 2438
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/006480a6d582612d2bae3044271e841a0d37bdbfd2ef6bf279726c22ac15e718.webp",
+          "bytes": 5898
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/bc573bbd457f4ec07605c122a876f8c78adefae392782510c5f67f1f803fc4de.webp",
+          "bytes": 9676
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5b66-c656a2346c89.webp": {
+      "sha256": "c656a2346c89ed19839066ebb5203abb3fc9b2048e1df1794eb0a872ba4449da",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/8fe9f8bd79e106a113cadeb2d446f63939a1a30d90178b7c4ff1491dd1c77f40.webp",
+          "bytes": 2908
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/d9a0bf2a3014b9c46e14d94a06308aa539dab37900e5c85d875cb1c5aed001c6.webp",
+          "bytes": 6678
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5b8b-534e-33f473d21da9.webp": {
+      "sha256": "33f473d21da9123e5a60fcd01534c170d2f64cb85542ddc196f379157552dad3",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/7236a16429bf9e9a2db091b87d25eaece13c7e0585978f9594f22dc68389a58e.webp",
+          "bytes": 2434
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/5eba26f0a91866e4f3123f40f2b98f9f861ee2b9f682c4ca2f08565da9fd93fe.webp",
+          "bytes": 5656
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/e2ce16ca8a595b862327ed078e4cb859e587628a177bfa284d31aaa507ff1709.webp",
+          "bytes": 9492
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5b8b-b9d27ee05923.webp": {
+      "sha256": "b9d27ee0592304f3bdac9e51b1c787d713eed2ab1e5e598ddc9f995f539c607a",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/35fa58d99e58fae3269a5dc56a62e093c16e801e458da20c90ae8f84fa4ff9de.webp",
+          "bytes": 1840
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/e8c27e26e3760545a511a4016fb7ee903985b426f0aaa30d5858aab4c33ff308.webp",
+          "bytes": 4258
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5bb9-6613-d05fe679d479.webp": {
+      "sha256": "d05fe679d4796938173466d9d0efd0fe2a3e8a54ac45136784dadc1ad0349b2b",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/d75a25eb745e1ac338ea1dab88d60b075cb48319e2d3f013aa69de2755d50bb2.webp",
+          "bytes": 1738
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5bf9-4e86-53b0c8209540.webp": {
+      "sha256": "53b0c8209540f195624b2df1f2756cb1b7a7d3038fad2460bf568467791abdd0",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/b11af4062ca697cf7a1350957903bb73d16c4b78ede540d0db32cdc660826286.webp",
+          "bytes": 2784
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/b25dd02a1848bd2a6c313f2d4de985c23eb23934587dc6786ed862fc048c677c.webp",
+          "bytes": 6430
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5bf9-9762-c9064ca0628c.webp": {
+      "sha256": "c9064ca0628c44f51a72ef875900008419a2b820e7b0caf034d393323fb0aef7",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/2932a50f369f3430070402e9b9bc6c51efcc2294114ecacbf097217f717f4909.webp",
+          "bytes": 3108
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/3b4d5a51771b5fc2647dba9ddb489645ae5f355903db489055bf625929dcf115.webp",
+          "bytes": 6900
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5bf9-e0a11d39c7d5.webp": {
+      "sha256": "e0a11d39c7d5e0129c544b1a554247884031900e381e50f3af1ffbe28f6c19d4",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/79a62d415ada3d173d95f25740b6f638141cc9d2b0feea11d0e59ce3aba7a818.webp",
+          "bytes": 2380
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/44119e5d3c4f037cbc4a6e110114b3f82176efe54db2608fe098b2d4f017de92.webp",
+          "bytes": 5530
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/46c51e06e51c609e3827c46871b25a7d6294ce6e89d33fdff50fbd00e346093c.webp",
+          "bytes": 9264
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5c0f-4e91-5e5f3ba4b62f.webp": {
+      "sha256": "5e5f3ba4b62fa0aa1f4c7f052d90ce883247151efcc28cce130bb57bb8cf9f76",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/a1497309b6e0714a4a4da85b6bf8289b444c8cef65f20f62cfa11c9345f50ca4.webp",
+          "bytes": 2224
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/7a9cbc166a9d378b6922191618861db9e591e0cf4f539b7f0e4d64eeace5b760.webp",
+          "bytes": 5342
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/0dad392a880205ffdcc951c826cc8910dee18e1e1c0d64316ec02f937e67112b.webp",
+          "bytes": 9070
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5c31-90e24d8bb622.webp": {
+      "sha256": "90e24d8bb62258727b110c9a307f3e25c64acd95965dfa1ed2c43bf0d5aba1f1",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/087a8e3d7de5de391ee49591aaa3852efec49d4368238f161fb75469e0834fa2.webp",
+          "bytes": 4532
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/d8b97dd3757b25adb5386b3834c7d9fb43a05d802823adee5f27e04dcba7d664.webp",
+          "bytes": 11142
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5c5e-b46464d1896f.webp": {
+      "sha256": "b46464d1896f9498435628a04fd4d049ee3cd61cd727323e97edbec6d37dca2d",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/685ed6384082aeda4360e9c01958391eb34a85af09db1f212917db0dee0a79e2.webp",
+          "bytes": 5934
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/f966af19947de21f4a261e7df5065021dd2435452e271db2c3748e0d4be9ff1e.webp",
+          "bytes": 13832
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5de6-8fb9-ba35ea8c24a3.webp": {
+      "sha256": "ba35ea8c24a3454510540d23d4db16d71b62b632a6ede44518895c84d2fe73e9",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/57a05b1a5b60e85a37d8aa0f147680d516cbd34438962476e6b4e0ad378a2fe1.webp",
+          "bytes": 1732
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/b76072106cbf486d57e52115496022b3088cd6bfe4451ce7044c02a5252f52a8.webp",
+          "bytes": 4078
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5de6-ba35ea8c24a3.webp": {
+      "sha256": "ba35ea8c24a3454510540d23d4db16d71b62b632a6ede44518895c84d2fe73e9",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/57a05b1a5b60e85a37d8aa0f147680d516cbd34438962476e6b4e0ad378a2fe1.webp",
+          "bytes": 1732
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/b76072106cbf486d57e52115496022b3088cd6bfe4451ce7044c02a5252f52a8.webp",
+          "bytes": 4078
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5de9-4fd0-9a32119064c9.webp": {
+      "sha256": "9a32119064c99bbbc63df83e328abe9afca6d415df101535332d78e511783225",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/9771a9f4f8a3ee9e5664d0b554d69f9cfb9f0fdb319f74bc08e0569bf908e47a.webp",
+          "bytes": 2334
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/ce586ec535654f6573eacc3c9e985fcf33d38d890c5192873ab74afa2e37a475.webp",
+          "bytes": 5634
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5dee-3d76e3ea671f.webp": {
+      "sha256": "3d76e3ea671f4976bd19b1d40294f3ff79fef7dd8f2823bff2ab5a637d854759",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/1e772af3c7d1f2763ae0a6d31bb06927085f2ef49bf2197f82e7a71536ad852b.webp",
+          "bytes": 2618
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/73762713836e700b5d8071671dddd9bf5ff6a5d8953caaf1e7df901ba4fcb3ac.webp",
+          "bytes": 5860
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5e38-1d278567b7d1.webp": {
+      "sha256": "1d278567b7d138c4ce47da920b86fd4935baec2df1d80c33fc954cc6eae28b4c",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/dc13c59a0dda7ca7d6266c29d6c748809f02ca61d923bf2d58b5a5d5a3455475.webp",
+          "bytes": 2446
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5e38-5e38-1d278567b7d1.webp": {
+      "sha256": "1d278567b7d138c4ce47da920b86fd4935baec2df1d80c33fc954cc6eae28b4c",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/dc13c59a0dda7ca7d6266c29d6c748809f02ca61d923bf2d58b5a5d5a3455475.webp",
+          "bytes": 2446
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5f20-534e-2922730e04eb.webp": {
+      "sha256": "2922730e04ebb7c838e6df0ed74879c7cedbf0ad41e84c4b29092a2cfc3855d1",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/07f0c20f00e60cc0984b1b4f99441a4713ef0fba5dd3d187b178bdbad18435ed.webp",
+          "bytes": 2450
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/a84b1854b9f2fa0849e4987bc58882f4a36e9aff03b760f1cec74a38ca7fb552.webp",
+          "bytes": 5796
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5f20-738b-5189-8d93e7e472d8.webp": {
+      "sha256": "8d93e7e472d81221e6d746a4586d5e2ba458ecdfdfbed159225ea8c00685267a",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/7bf9b4a7a1dc96a9c93fd295ce987750758c18706d0b5c2963a7b63f5ec47dd5.webp",
+          "bytes": 2666
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/da9bdb33cd0a59945f19c76df2351b321a222185456fb6c425f69ca9737dd351.webp",
+          "bytes": 6254
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/e1b11aa0d40caef01165a3ed679a8243e30f92614602b8a2e47b40a22f73d387.webp",
+          "bytes": 10358
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/5f88-de4e8f6c9d2f.webp": {
+      "sha256": "de4e8f6c9d2f73f309441ce17357a79d141aa5c61e2483f4ee04adc351b49c6f",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/3bcc740d4e249f92135b77e8148873914319f8d3aae82414154d4dc0d60998eb.webp",
+          "bytes": 1620
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/600e-4e48-6837-5a7f41e760c1.webp": {
+      "sha256": "5a7f41e760c19c6a354bacebb38ed0950fed8851949018b987b4d93e0a6ee6f9",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/4b8a98df8aaf24407161a8b71a1a17858d7d1602f6b0b87bcf4e185f3aca4b6c.webp",
+          "bytes": 3544
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/edef3d5e711275e3a6edef318c021968497f6f4c81c8e6d60b8e63abd0070962.webp",
+          "bytes": 8296
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/601d-60f3-653f-6cbb-857c9605517b.webp": {
+      "sha256": "857c9605517bc4ceae3b5dbbfdc2f6e715690f30bfd80196e4f75d0025818945",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/2d55b5ec607b743e50c087d9c06b5ee10fb5a123e47579857b13bfd3108823af.webp",
+          "bytes": 3208
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/9d9114a765b363f56b3b8494e48e12a26184e62bcb08182806224c0a0f604bf2.webp",
+          "bytes": 7864
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/6050-6015-4e3651177433.webp": {
+      "sha256": "4e36511774338336a8ea4d18c92c9d94ae5ca3bc8d9f3e366c6969df2128a287",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/1348f6d13a9d9b7e49b9afca1292b2f5534e7d75e4312676e1f8db10625fe2d9.webp",
+          "bytes": 2672
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/1eb56e03c1dfa7fa8dad9057274ac11d774eb341a56f209db89cd984d44021fc.webp",
+          "bytes": 6246
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/610f-601d-153ff5d0bbf7.webp": {
+      "sha256": "153ff5d0bbf759792291faff0c1ba095b2443dc4935c82c9ed71d0fb5b30091f",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/afc59acd4814baab03e37b82587557d1f33088469028c60aa7750f82c993e62e.webp",
+          "bytes": 2490
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/1b97fcdee5b798e5425f003213acbd2e2a38258a5c17751d9a46c0924b613ac5.webp",
+          "bytes": 5532
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/6210-9f99-8f2eb3943941.webp": {
+      "sha256": "8f2eb3943941bd722a2aa1e3c0fccb12acb0a6a01d7089a648f0dab3f8253215",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/c7e84d978f8bc7b5268009c10eb9a190b8201452b68006a213a92a03dffd0ab0.webp",
+          "bytes": 2482
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/c948b7920e98f2ed8543870c9ee0adac76a37254c17c0734f92c6f575aff6573.webp",
+          "bytes": 5982
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/e4b23452142d9705669d66dc3a3df76fd20126763df2a185baacd952657ae0ac.webp",
+          "bytes": 9878
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/6570-5b66-d93aae5726c8.webp": {
+      "sha256": "d93aae5726c8f44f2a0384187765c3082b21c82f54d5d2adb993b688a729d81f",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/66ceac6e181debe262ef8ea25cb85572f0ffb624f4ed3cd48737c2a300db4581.webp",
+          "bytes": 2094
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/6332e97c5395583cb51d9e1b94a563c43dc643bc79383488eca715cab947cb3c.webp",
+          "bytes": 5170
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/65b0-acff63707f64.webp": {
+      "sha256": "acff63707f647fc838d42a53b24f38af27e4aaaa1b4264d83259496cb042f11b",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/0890fde6c90a8a06228971666ea87e64cf32c031ace14c57aae4d1611234e78e.webp",
+          "bytes": 3162
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/65c1-8fb9-ab802dc464fd.webp": {
+      "sha256": "ab802dc464fdb86879134287ce7790fc327c1a21839e6db60a63a83f956a9fab",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/2545b12894d464e2c867ad91ad823fef4f6f68b08f703cf882ca22e091c6697e.webp",
+          "bytes": 1298
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/916c0bc1dc8139e67840289cc6c195da6f90d5302e91b013f7e27b4e4f6ec60f.webp",
+          "bytes": 3060
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/65e5-54c5ef6fcac7.webp": {
+      "sha256": "54c5ef6fcac778d5088afa337dc1f2f322fa9ae458de7a6e4d839be5b5d9e23c",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/1a834f2788b91c24f155c875e3826c2ff339d95e6e0bf72c2689ee36465c0416.webp",
+          "bytes": 2744
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/b9bf5323ca83404172baeebb852385d2b367460b56041739acd17c891f892d15.webp",
+          "bytes": 6166
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/65e9-4e0a-d3be26075cbc.webp": {
+      "sha256": "d3be26075cbc899678a3c497ababd67a4e17be7cf026bd2b19cb6fa446a39303",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/9ac4f019a300af825b3412b461c9ea0f7eadbb94a173efcf58cf1d8c74c7daf5.webp",
+          "bytes": 2788
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/ddcfaf8318bd6c4d8a32fc8f053b1e866380b238ce45a2e83094ad2f4c667c78.webp",
+          "bytes": 6440
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/65e9-6e64f0efeeb6.webp": {
+      "sha256": "6e64f0efeeb636abadf76998f54fad0738171fc362dc6fb4eb34ab8abaaa6e5d",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/5ce590d15c84805f0bcd3a1a8d7e2a4ece21909de15dbd463d3cf372860c9ff7.webp",
+          "bytes": 3546
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/071bfb67d7e459ade3f32f7a7f62bc3393b3d8cb75d00a34abe1eed490a40948.webp",
+          "bytes": 8358
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/65f6-95f4-71bf8f84b7cf.webp": {
+      "sha256": "71bf8f84b7cffedc93e67d77266ba94105510b3749fede95753e9d50394d2f5e",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/c93b90d705e1eff689bb1f113882c8e2a19ba989b12d4f3a94dedbfa392bf541.webp",
+          "bytes": 2912
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/8320e4afcbb873fe58dd07ff8299206ca29488aeed5bfcd9892f90f43621b125.webp",
+          "bytes": 6254
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/d110f24c4dcbc6da2af9ea71ce6662b129450bfa9526162c9a712398c95ee02d.webp",
+          "bytes": 10160
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/661f-671f-0e077481d307.webp": {
+      "sha256": "0e077481d307794a91a5d9833be9b9873fb6080c875e3f7035278508de4b8618",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/217aa55b6941e8060d291fcbcece6a96ec64b1c78aa0ec55f11bdf7c45e88f9c.webp",
+          "bytes": 3792
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/661f-671f-4e00-a965c726d336.webp": {
+      "sha256": "a965c726d3369533cfc8698e5c6cd39a39487693e3a4f80cd0eab0fb79b0b408",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/9118914e1e860d5b9ee64a42d2ab1b227cc08b42d0f541cc360c35dcd4feddc2.webp",
+          "bytes": 2570
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/905791fa360aad13438c148b34d3709e2b458195db177a96b935ca209dec87fe.webp",
+          "bytes": 5714
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/661f-671f-4e09-ac4a4bf4d1d7.webp": {
+      "sha256": "ac4a4bf4d1d73ead74351b97bbe653444c824318ce6be5500a0d1ef7ef0f02bd",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/f58c4c705a72e0bfc0115fd1f417541f9d7a3fb6b5a03bdcd05f7516003c1a21.webp",
+          "bytes": 2756
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/1ad4060097165da70b6684a96d2d792f04f609e89a1ac8bf951fa95dc9bdd48c.webp",
+          "bytes": 6452
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/661f-671f-4e8c-2018c2a600e1.webp": {
+      "sha256": "2018c2a600e17d0a309e449b1c576e06aa98ae69efee9b07e5b11767c5904e6b",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/0d5449956f62a162a2a036c74bc0a0cff2f2e9d00db96ffb7c8dcddc06714645.webp",
+          "bytes": 2650
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/1db1c02b8b3e93e638ff2321d489f107d7208264b81d73e6a1ed4f818a4c0ec3.webp",
+          "bytes": 6092
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/661f-671f-4e94-ca8252ee0d0d.webp": {
+      "sha256": "ca8252ee0d0dd505ebd4661f8f01994dc84704fb4ff5ed996704f13858ec933e",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/85136f3e83472a1d2bb0a291e8a937f08bcf73e662a050d8a7ca6578ca7c9a1a.webp",
+          "bytes": 2682
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/3bb9bf567294b275ad9f09f4516a9849b142a54bc8d9c310c9461b08fc73c02b.webp",
+          "bytes": 6108
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/661f-671f-516d-62ca097bf95b.webp": {
+      "sha256": "62ca097bf95b65685d13c576ef6583d84cb6ec52a7c4e17571b9fd980b13f67a",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/1ab9eb6905e8bed2946bee5ff3d084cb6caa93d274d436b85cabdee24a593e01.webp",
+          "bytes": 2654
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/39f4f82b17f049f48fc89ff1ee64dc689778feaa24edc06d365e4c66bd4a71e3.webp",
+          "bytes": 6286
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/661f-671f-56db-9b94cfef1566.webp": {
+      "sha256": "9b94cfef156603bbbc4c66a3f8708c9c92d9c474889ee5fa98434d0d86b9b102",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/617777ea895979ed8bd4e3121d0d5ab24aa96a457eb1467644e4f10a134e366a.webp",
+          "bytes": 2682
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/07ee919b77909069f88706f00e841279fd8cd6d72c932de0c01c06f0198ae880.webp",
+          "bytes": 5970
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/661f-671f-5929-6542fdade26f.webp": {
+      "sha256": "6542fdade26fddf421d3286cbf57fb67de1d4f3381223b4925b278dccf5fe2f8",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/75e4ce107dc9b43c0b28f94030cce1b7084e214bb98fe3e0740a7a0fbc2ad2c6.webp",
+          "bytes": 2766
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/2630c19c8022328bb965860689ed2fb5d21af721646799e3d3059dac8252b053.webp",
+          "bytes": 6412
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/661f-671f-65e5-6542fdade26f.webp": {
+      "sha256": "6542fdade26fddf421d3286cbf57fb67de1d4f3381223b4925b278dccf5fe2f8",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/75e4ce107dc9b43c0b28f94030cce1b7084e214bb98fe3e0740a7a0fbc2ad2c6.webp",
+          "bytes": 2766
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/2630c19c8022328bb965860689ed2fb5d21af721646799e3d3059dac8252b053.webp",
+          "bytes": 6412
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/6700-8fd1-c22a5be4d60d.webp": {
+      "sha256": "c22a5be4d60dd7cca9d1e7dd1cad6ffe928d5b54ffb336fe7ae4af27bce0dd47",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/fd128fd88f89be07187ae707823a6305c0c69298e5126ad18f7f3864788acbc9.webp",
+          "bytes": 2776
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/3b89f652a8e9bebce97f673540814e871600dd966efac252f9401ae2205061ec.webp",
+          "bytes": 6290
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/6708-ef212c0cf0c0.webp": {
+      "sha256": "ef212c0cf0c0ece337d8c393caab723f6106c5fdff51e35a10170b9e353cbfd4",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/ac7dd3e945e9841e4342851f1a984e0c41d7bf57598595fac8b87c4707839cfe.webp",
+          "bytes": 2614
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/6709-70b9-513f-efa4cbebb180.webp": {
+      "sha256": "efa4cbebb180701534fe31bb2e5a2b25a5d2b750ed7f544d15eb36b44e69c6db",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/b802d1e8af2e4463f57034f11783debf539107ccc6ffb2076984360f8f13ce81.webp",
+          "bytes": 2026
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/252c79109024f828c767c9027920d89095535ff3c22bc8d7958e03ede7b7f2ac.webp",
+          "bytes": 4776
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/674e-b1b4a2d3833a.webp": {
+      "sha256": "b1b4a2d3833ad7bfef5d8f85ed799202111f91bb271c8ace60bf8bd4d96e7262",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/57d89ccde7d71ca493cc345396819f0705a820131986ccb993ecf7405e5a2b26.webp",
+          "bytes": 1766
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/29c24714a3065a9ecb035d0f98354e122f59f85e9f6208012f7e79143d08810e.webp",
+          "bytes": 4070
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/6761-53df5e6aeefd.webp": {
+      "sha256": "53df5e6aeefdc10ed242ff48360ce716bfc0efb17361551b1f57ca204e1ebbd8",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/880a7f34e3b2458adf32e27af9ff493a66ab394d9ecc036019db8e7981182b4e.webp",
+          "bytes": 2840
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/d7caa98144eddc58d634c5308dd2a7a78efb94b8088802e0b00391db2da5e96f.webp",
+          "bytes": 6518
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/9ef924deb895552b7b8a59300d5889b3f74e45e3ce775591370c584aa162e94f.webp",
+          "bytes": 11132
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/6765-43b085fbebe8.webp": {
+      "sha256": "43b085fbebe86aa6300ce3f95e882d52f993e46ae56d63450c6561f2b6ff5789",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/7e3bfce94ace328e69e41d9e0cc7e2a43ab8a0820576492e22b4517b76718106.webp",
+          "bytes": 2304
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/dc5b90ae66f9cc0109a84f9042bb9ea94040c879717ce647f5672bfff89dc64c.webp",
+          "bytes": 5282
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/6797-5a1c-3397e30bebf4.webp": {
+      "sha256": "3397e30bebf40962dd6a1b9e77669053edc2c5799a25b91c183c5f15db391f3c",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/c79ec292a9782b7acabb742c40417c2dabf52d1ecce9ebbb7f276fd07a3fa7f2.webp",
+          "bytes": 2356
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/7982e0d0b9a24bb3e56dac1fed68c4e54a8b335cfdf399b3710e90ae60442e5b.webp",
+          "bytes": 5706
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/6797-5f3a-74adf24c02f8.webp": {
+      "sha256": "74adf24c02f83820ff05d16fd6436b079c58b642934a6a85b1db2d60a7b9d311",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/e49826ddf5619b4369f0beb975ad337810d38065f5e3b92710725d557747aed0.webp",
+          "bytes": 2400
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/8b9facb090582df8c1a643656dd08fd7cfb3a79c7bbafa09f727baf0d2940cdf.webp",
+          "bytes": 5770
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/6797-d0f390445726.webp": {
+      "sha256": "d0f39044572678fa045f6e12a874d77500ad26e722bdd122a87338e867f8cef3",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/000ceeabaf50d40a98db5b95043e7a6b6e78863a7ec484f9a171f9a4fc406fac.webp",
+          "bytes": 1816
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/de8513f39d8a39acd63a89e69941586df8086e28052908f77197864f2ba7d893.webp",
+          "bytes": 4146
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/6885-897f-8f58d8622b68.webp": {
+      "sha256": "8f58d8622b681aeefe42f20ee74fa2c5ebe2a5c3931e7052831492d15496ce2b",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/005a6c3c64c7017bda6b4ed0b7ad9a3fa5510f9546bf1255be0abd1cce2958fb.webp",
+          "bytes": 2302
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/0647536024db2b1b06c1bf849ebbca072a0611ff7426500f4e07e0838771d202.webp",
+          "bytes": 5660
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/6bcf-5929-9dc0cb9bed33.webp": {
+      "sha256": "9dc0cb9bed33912d9735dfa1f257d8df503d6f4fec7224a2f717476cc4f7f5dc",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/5b652731321b8cffbdefaf5cd121c64ccddcd2db6c8fa552486ccc939bd2033d.webp",
+          "bytes": 3890
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/6c49-5b57-3e8c7a1ae66d.webp": {
+      "sha256": "3e8c7a1ae66dcd370b3924e2bae3f79e1137b5cf6daecb3396e4a280902f91f2",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/3bfb0d00e81f29b394d993ab0724f5ad5fa354eee00fc8cdecd562a276da2aa3.webp",
+          "bytes": 3092
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/c32bfd3473e6b554219fd3bcda4613a19eb55dc96646da1494429d33d1f6bc25.webp",
+          "bytes": 7122
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/6ca1-353e46de744b.webp": {
+      "sha256": "353e46de744b4047c0afe61c32b48101397a5278722157103da47d9183b116f9",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/cf9a5620b89986d4f24b12d0fbcdc904573555a094bea1757adaaddc512702a3.webp",
+          "bytes": 1846
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/8f536c4ab350d37bf756e8da627d4879ce9610dc2bf226d214f246afbb43eb97.webp",
+          "bytes": 4020
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/6d3b-52a8-e80a64c0e302.webp": {
+      "sha256": "e80a64c0e302e67a06bda084a81d74087fc7bd01dbe1be7a3e9314b61578c8eb",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/3df474f88505054aa52aff4099a36674ee89d7cb66000c8b9dc7d63e39c9df31.webp",
+          "bytes": 4674
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/7279-522b-793f241f8c63.webp": {
+      "sha256": "793f241f8c63e9aa0f94098bcc91f134ec65ef4229eb4b3a2421ab05e0ed9cba",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/c7ae530878043cfb611668c1764883203fed38a16a70d91ad9ad3e0e1471564b.webp",
+          "bytes": 2844
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/2d9457560ef8dbf574b244c75d52b0a7aac19422f33dc7f4622a966b3127b545.webp",
+          "bytes": 6700
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/738b-5c0f-4e91-532d91cbeae7.webp": {
+      "sha256": "532d91cbeae7dd6eeac08966ae60ee1a95fd4737c7324824f33cd4e49c8929ca",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/4c12370c7b9df8c622f7b18614befd9f7847fad6f355d18ec0c94089fe16adc5.webp",
+          "bytes": 2484
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/def9e35aa5f3c820ded314b1b62593f5bb5fd90247ed33ec5522f1640ff5f685.webp",
+          "bytes": 5924
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/2522ce890a4ed534620ea0a8ad81e1dd8878cd25ce9d08ffd24c53c8dc7c96c5.webp",
+          "bytes": 10030
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/738b-8fee5f4c9089.webp": {
+      "sha256": "8fee5f4c9089b60289a241f159d919311a1e9f904184893a9f413cf3bb141df5",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/0a44e29c4ac22eb5e32bdfffe2be95d01f1ef9a6bac56294eff37ef09ccea0c1.webp",
+          "bytes": 1782
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/8c35824607523182661a9fb190c841b11dc25ac5920c1f68c2049af16ee89942.webp",
+          "bytes": 4132
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/739b-4e3d-eded881c5cb6.webp": {
+      "sha256": "eded881c5cb60765e2a2a57792dcd095d2d959815a5c37042ff3b5cfd4371ceb",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/e6c495e2bea277cd00f8b73d164e1b266d11a1ac8fca83f5a84beace1bb5e18b.webp",
+          "bytes": 2246
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/85d43fa63e8911e7f3f9da13808f87a16d8ffd9901b36249527471558b46879f.webp",
+          "bytes": 5396
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/7537-0227679f5d31.webp": {
+      "sha256": "0227679f5d3149afb2b34f02b5a35302bbf6da86c892f91d530ccbfc10775d58",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/40035387293fe68e8144a2a6128d6fa863377d7184bed1d8a26f755825eec6a4.webp",
+          "bytes": 2318
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/f53ffcce2ca908a5076219d57b586e8a1e1ce374c400e0e1dda46390d814f748.webp",
+          "bytes": 6418
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/7684-7b479c8d28c6.webp": {
+      "sha256": "7b479c8d28c698b33948a1c0bbf9279ddfe132f661bed0d7f45cb28436709e9c",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/5c48a674b0d9bbdae26f46a14a352e025722b7b285b7cef096a749501f18aaac.webp",
+          "bytes": 3088
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/63cd0cd9e7cdde81b5bb7c2b40eff55fc56165f051280620b8c6bd0927be1ac3.webp",
+          "bytes": 7434
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/77e5-9053-731024f68642.webp": {
+      "sha256": "731024f68642f85332ffb6f6726d840af8acde3cfeac86dd68a80fee69135e34",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/9d46f22e1ee858cec93f48a8733cbaff8b74d30d632f2313d2c4d6e6364b0384.webp",
+          "bytes": 2448
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/3aae8749d9ec07c334ff3ef3a0f61c35aa50456816a9c5d1c58009364da23de0.webp",
+          "bytes": 5672
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/7ed9-9aab822cef16.webp": {
+      "sha256": "9aab822cef16b40e4bb95f3055753805e4e82190ddd4d2fce9da10d2f4ab93bd",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/8e92bf5ccd27e976e6e4addfc56390bbc93ca41d78659e8a2aff5f126b50800d.webp",
+          "bytes": 3032
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/4a119e1e4caacc5fdb59f75d9430fb810f3f76f163e229050272e8f8c209c797.webp",
+          "bytes": 6522
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/7efc-5408-6c49-8bed-945b1fada637.webp": {
+      "sha256": "945b1fada637fd7a3f3188df09cbece416e88961aba9ff6eefc3f492f194a54c",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/90508f3be29f5d7ccf461dd0f52e3d62685b02e32b1a4fb65c283e67a01bf07c.webp",
+          "bytes": 4906
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/06cea7e5c0e832f72ac14d766c1cb14449a1ca9c661d642443ab89ebab5fe222.webp",
+          "bytes": 11940
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/7ffb-8bd1-b7050f253594.webp": {
+      "sha256": "b7050f2535945bdad5a544f1b9302787fb429e841862a5939de7dba888b32800",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/3bcb867c770d53e416a123e7e1f0668ea1e2446503822215948210fef7108f58.webp",
+          "bytes": 2814
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/6f0eb6d5cbb58e7043558a7395118668069464cab6db177474a7450f08e46f40.webp",
+          "bytes": 6432
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/884c-2731d48752fc.webp": {
+      "sha256": "2731d48752fc23bd9a137084f5d10be8f02259b438b064d8bf3dbe306cce864f",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/f80196a8fd84d2eb9d929e0f1b430884502178e487ba5561b3232e54a94c856f.webp",
+          "bytes": 2422
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/9211cf4967f440e1e74c27a4a277bf956132db00aac9ee9e649362534cb1fa99.webp",
+          "bytes": 5560
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/cde319519a9aa36a7251b75b042c0c1c5f4af1bf6eb4c8a7cc8857e7c45bbfd8.webp",
+          "bytes": 9388
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/897f-8fb9-a17ae09a671a.webp": {
+      "sha256": "a17ae09a671a0bcec55eceabebf6896935ac435fd75cbf86947490e9f2e3b871",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/f9a621dff98095144977857f4b2e4ee920c9009ce895ea3da129c367cabe30d8.webp",
+          "bytes": 3234
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/01c15f9c68e296608fbc766450d6b20d8d7a2e3a923981ae6e9c042ce44859ea.webp",
+          "bytes": 7570
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/897f-a17ae09a671a.webp": {
+      "sha256": "a17ae09a671a0bcec55eceabebf6896935ac435fd75cbf86947490e9f2e3b871",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/f9a621dff98095144977857f4b2e4ee920c9009ce895ea3da129c367cabe30d8.webp",
+          "bytes": 3234
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/01c15f9c68e296608fbc766450d6b20d8d7a2e3a923981ae6e9c042ce44859ea.webp",
+          "bytes": 7570
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/89c9-5f97-3d8351725b1c.webp": {
+      "sha256": "3d8351725b1ced16776b5f84405ae575dd3d637263f72249e3c9cb39ea6eb41f",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/c068ab2ee3ee107feba21a313c46795aa92a468b02ab65e068841e8f93de620d.webp",
+          "bytes": 2516
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/b4bdbcfbab59e4df984ed71642b272be1831f252e968d304015ff78d4000b563.webp",
+          "bytes": 5846
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/8bed-6cd5-74103017674f.webp": {
+      "sha256": "74103017674f95d66fe014300549194fe8b195d4687f654fd762a2de869deb17",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/ed746edeb2257ec73795ce94402d476f2bf36b68d9c2a90c4f7ac3751fbc31aa.webp",
+          "bytes": 2566
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/e132f6db0e9fb129da28e39dd8125f95fec3b9419a62c9f540dabee92bf11cd3.webp",
+          "bytes": 5718
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/8bf7-446449c45e3f.webp": {
+      "sha256": "446449c45e3fcdb990275300467cb754826a46d152269f05b73ee48a7a506378",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/645ffedcbea1cae77819cf4238b39fb23b4781139cacee8a011f75a98cd1e83c.webp",
+          "bytes": 3640
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/b546b61a7824e89f292cd25bf5eb2d6a7f786199aa864624612b672287a31263.webp",
+          "bytes": 8430
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/8bf7-95ee-8d8680bfe704.webp": {
+      "sha256": "8d8680bfe7041170bcdefb3e9c564bbabce3dcfe1f30abb0115f48429023ed7b",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/38c4ae6f8669c20d47e865eb1558fa3ffcc7c9decd4bf06766e1bcbab7cf9a93.webp",
+          "bytes": 3752
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/19fa7a5ca2d7d14fc29ef0b2528d1461e794f16cb5bf69f609b37359e70152d0.webp",
+          "bytes": 8710
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/8d70-ebb854a98c19.webp": {
+      "sha256": "ebb854a98c19ead4cc418cdad8ee5bec60f31d323a6ecb7c6c77a50e1d5fada2",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/04c0cb3288cd33333c415014d5216ea0e6531f3be3410bba0acc3a0b824fc6ff.webp",
+          "bytes": 2560
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/132a9b2d680adb1b1566a62754a6f4af6dd99adac1c491b7a05c6e98b092cda5.webp",
+          "bytes": 5808
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/8ddf-960c7f0905e4.webp": {
+      "sha256": "960c7f0905e4e94aee24cab5cf1477b337472544f7b45eeb8d0dc39384cfe888",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/eedf56f8cd411b41081bb09a6d6a29f6e84fb10a949ada3b4665ecc6c2a6eca9.webp",
+          "bytes": 3116
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/54d6998b6a85e913927f0b2fc18a0f325fe4535e8a9fa7b05a62be114b8608fe.webp",
+          "bytes": 7208
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/8fb9-ab802dc464fd.webp": {
+      "sha256": "ab802dc464fdb86879134287ce7790fc327c1a21839e6db60a63a83f956a9fab",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/2545b12894d464e2c867ad91ad823fef4f6f68b08f703cf882ca22e091c6697e.webp",
+          "bytes": 1298
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/916c0bc1dc8139e67840289cc6c195da6f90d5302e91b013f7e27b4e4f6ec60f.webp",
+          "bytes": 3060
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/8fd8-884c-16e542d1caba.webp": {
+      "sha256": "16e542d1caba60419ac83ead32d196f4b95b3cd23f4a8d70e1108f9f46b90f8a",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/b54ce4fe29cc9001247251072e887c0223ad9d543007de268710d2805b9851d9.webp",
+          "bytes": 2882
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/ebefdf2d82fd29b3c975777d11f59114740159d80e0131d5642a68dc81c12a7d.webp",
+          "bytes": 6420
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/bb09073a2b0c4c48e5c14721eaab5a33a0792589cc23fb88d7c50060c11b0c01.webp",
+          "bytes": 10912
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/90e8-89a3baac95de.webp": {
+      "sha256": "89a3baac95deba5097179487b17f4895783e3fc813ef991d2850f272234b7966",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/5ef12c3ced1344bfdb942a7d96e74d660edec9f9289300a8d68d51fe62397bcb.webp",
+          "bytes": 2176
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/2f8d3843124baeef25373999d0c4a79a17beb099cfd4d4cd753b488c9acbaa07.webp",
+          "bytes": 5090
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/91cc-4e7002915f71.webp": {
+      "sha256": "4e7002915f714faa1c49ee280bb403cf6f0610d6350a7b570814cbdd7d8b2cb4",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/0330cd9cdc22feaed85dda4a094d15bab9a3e89bded4947aa93ed6e8b113ca87.webp",
+          "bytes": 1318
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/eebacdb55b99238cc600241fc4a18eff0522b8c37f9f10122c16a5d1ddc59066.webp",
+          "bytes": 3042
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/91cc-5361-591a-5e15-5c14-739b-5927-5b66-5b54-5b50-5b66-9662-d8a07f1476aa.webp": {
+      "sha256": "d8a07f1476aa56f41c7b3403937df82142009077d3b61a0c63cadfa7a79898e0",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/401df279f43f999c764abb388975be53e4a66a1a9a796c4d633eb245e77b8bd7.webp",
+          "bytes": 3226
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/b03f4f91107af4fd59b5bdb66c89c94a670f3fe19f98eb27efccf639bfb37e5e.webp",
+          "bytes": 7718
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/91cc-5361-591a-5e15-5c14-739b-5927-5b66-5d463f0937d0.webp": {
+      "sha256": "5d463f0937d06a41ff7e5697420865fd9fdac72f7c9b56ef22fb24396c759ffc",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/8bb1c475d04885e1a0aa926cfdba7e4d60a9472c8efddb0dfa6eff85f0765d0d.webp",
+          "bytes": 3174
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/c155c51f1621c2a610599bfc10decf9b249cace2536dcca6c30fa8b5e3b50125.webp",
+          "bytes": 7548
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/91cc-8fb9-4e7002915f71.webp": {
+      "sha256": "4e7002915f714faa1c49ee280bb403cf6f0610d6350a7b570814cbdd7d8b2cb4",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/0330cd9cdc22feaed85dda4a094d15bab9a3e89bded4947aa93ed6e8b113ca87.webp",
+          "bytes": 1318
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/eebacdb55b99238cc600241fc4a18eff0522b8c37f9f10122c16a5d1ddc59066.webp",
+          "bytes": 3042
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/95e8-f28148028f92.webp": {
+      "sha256": "f28148028f926ae0eda6abb0806a2981a01cc8028ba2edd30a9600f7072ada38",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/a7d12701bd37801c742d0a63fd9fcf5c115aa2a90d6169b417280258ff21d3a7.webp",
+          "bytes": 3246
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/d61f3f2ff0bb758c668777527739cb4503e101f41febffe82f6c97b3f950fe68.webp",
+          "bytes": 7882
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/95ee-85de4e24464b.webp": {
+      "sha256": "85de4e24464b4d2825b20812d3b37bf0ff1f5ae25b6e9907d1ca823026af0a42",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/0e886b6b735e74a4f726b58ecf577274f2e363b4e1dafbe35b3bc1ebb28c406e.webp",
+          "bytes": 3012
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/2f0e73ae70dabedce747470f000deb09e3e198d8661e8b450ab5139bf025da58.webp",
+          "bytes": 6994
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/9646-96e8-5e73-7c1fba473179.webp": {
+      "sha256": "7c1fba4731798a8708186489b8c7cac6428aa865d68899219832733d1c2ba7f0",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/93b1c3ef6049847b9536a802595a8b35b566c4e09d356804ea1ee5b24961bd50.webp",
+          "bytes": 2560
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/4cda355af34d6e41cf92f2eae9d70187665ed96668aa3c16c6c6d53c76ddb9ef.webp",
+          "bytes": 5964
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/9646-b8c53b868cab.webp": {
+      "sha256": "b8c53b868cab5feabbc1480a03ea27fdc5a7dfb8c8855dc2171ffefebc0df83d",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/ad77ef642e66d195b78d4c6d423ff1f96aa0ae0cfbf236693f04c720d424fefc.webp",
+          "bytes": 1782
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/ef5423e79f781efa530e2d9822d982a096518ec40a16f68754ed1655803b114d.webp",
+          "bytes": 4074
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/9648-1e3413aaa2a3.webp": {
+      "sha256": "1e3413aaa2a3d9fdc8c68106f53e232c98cd26bbc4fa606063b887a7a38d58b0",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/ba730eee028128137c65ea8811def7a5e5cb63df9f5708f4a487fc89a1f4f20a.webp",
+          "bytes": 1900
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/6b6b8e57089a3cdaa86973524503b378bf3423a8e07f03273be25037703cecea.webp",
+          "bytes": 4396
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/9648-660e-4941bd375704.webp": {
+      "sha256": "4941bd375704b7c9a3c0c2ff5fe33c4746442ff66f4344a4485608a3b83a31d0",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/7ab77395db3b116647452331d305848120293467d8659f55c0bc7caecdcf4a81.webp",
+          "bytes": 2404
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/6d255f938e3f90190c94d817f48608f95830b6cb952b9537f962609f9c2e2cdd.webp",
+          "bytes": 5802
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/a06c0d490974dcca88227e5a68c451559ee457cbc73657e84595d1f7954a9f17.webp",
+          "bytes": 9642
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/96be-9967f88eb891.webp": {
+      "sha256": "9967f88eb89101da0726fd9183c6ab64d097d8adc64f1318622f79efe54edbd8",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/27e1f52fb718b6e6d9761a0cb325bec1133c0970c1f0fec96d144483956dbf77.webp",
+          "bytes": 1424
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/9a6c-4e3d-f2ff9e3cc82e.webp": {
+      "sha256": "f2ff9e3cc82ef881689d030721c702e431bedd883210584dc6ebe9ecd82aed12",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/dee7ec39b7a997e48f11a77100310e8e3102854d17763afc365e36991be08654.webp",
+          "bytes": 2208
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/a4f4e4ab9adf69378953810401723e14f8554a86ab6acf3fa37e7a1be2bdcae3.webp",
+          "bytes": 5284
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/9a6c-4e91-9250528d92a6.webp": {
+      "sha256": "9250528d92a6865fddb70be6c3acfaecbdd51f7fa1ab87f1db43c90a8119672b",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/bed27f2178b0cdc5dd4a419211e676f7dea6ee143759133aa8075aaac5a6dafc.webp",
+          "bytes": 2216
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/3866c16927143b66bf2b1b2a934a4adbdf9a036c2275b0ab8711eae8cffa4d82.webp",
+          "bytes": 5332
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/9a6c-5927-4e3a-53a059df45ca.webp": {
+      "sha256": "53a059df45ca209ba9ba6780335819a50faea1b2fec600c77c0785a712dcb167",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/6b3b78f34f70653dfead752a4b2508d1e8f7002584e4379fb42df1f379556490.webp",
+          "bytes": 2424
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/2be48fcbb5331b3d7bb58a0d777063e6b0df28d5da360c5043521341be107e3a.webp",
+          "bytes": 5924
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/8b61d75c9ab22b9181966b6eba035e62a4342a86a1dc38534112bbc4fd6c41fb.webp",
+          "bytes": 9920
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion-diagrams/9a6c-9a6c-864e-864e-b85b03aaf49e.webp": {
+      "sha256": "b85b03aaf49e4cda085bb1db2bd321416c5284fd87b59001653ab0c84e38ace4",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/c54601de3bfc823bb629547a7acaaa1bc62a23ed77bd28444291c76df1ff1d3d.webp",
+          "bytes": 2842
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/ddaed2e9d003e7a888123628e6292a4970891757500d00596fafe110da4dff54.webp",
+          "bytes": 6508
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/anxious-a2384536feb9.webp": {
+      "sha256": "a2384536feb910d244206d3e3c8b473451cc5f3e79ca0a502c0f67aeacf81c8a",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/ed044c6736b0e8f795aa65eff4b8a0c48b7584bbce16238ace9519d9ecf5fdad.webp",
+          "bytes": 6948
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/fa56ae0bb799a3009efd90884b90ad839f9283561c98b58c315457528ccb5ddf.webp",
+          "bytes": 23250
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/f5b2265ae2fb88b83485449687eb85a0673f350fc40d5404baead2f36cc4f2c0.webp",
+          "bytes": 46834
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/balcony-249df12fa00a.webp": {
+      "sha256": "249df12fa00a2b854e134d2da8516bc8116db417bd4a0d437bb206bf628e21b8",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/b3a71fe3d5c86d517783295cce12b344db6d24777a9f1552492f955bff4e6b33.webp",
+          "bytes": 9932
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/4b1ab4591c4a30d2f37e69c98184ea7cfa34ac9ed028423bfc5eda17e27eba62.webp",
+          "bytes": 34052
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/cb97cdd4585050e0ed65340d92e651ab6d516087ff7eba0ca8ac694165c9d4eb.webp",
+          "bytes": 71296
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/bank-5042a004b985.webp": {
+      "sha256": "5042a004b985772752c0d47453edd38307c96492ab13c95d61863019d02e27ce",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/311e6ab50ae7d0ac0510d425ac5bf1d33af2567822079a43b97503af771a628d.webp",
+          "bytes": 6620
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/4baab8e62647d899b48ba072ce6553a60d602db6c77a04a2c0a0d535aede1bbd.webp",
+          "bytes": 21880
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/3e920a6a85d52d680f48be52dfc9ab04c8bd8cdf9bde993bd987b304aac0dcd6.webp",
+          "bytes": 45492
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/bar-892a1fb72c9f.webp": {
+      "sha256": "892a1fb72c9f44ef9fe9eb414e4a07444b8fad323ded2e1adfc024b23afcfdb4",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/c5de80cd31793394ab1209ec1eda3ebb2868386613828b162d729e746841318e.webp",
+          "bytes": 9768
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/97213d08787a44a5fb9972771344820515fc62207524c5de2a726ba558ad033a.webp",
+          "bytes": 32660
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/9f41059c2059dfab694dabdf5fd4e4a744a33dc3989d04283c6899833a02fafa.webp",
+          "bytes": 68022
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/bathroom-8b592c9f5f90.webp": {
+      "sha256": "8b592c9f5f9031ab620133db217597ee95572dd1102f9a213a1ce72e19c2718d",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/da74463f9322a4840f223e9b71e6125172f38f94abaae83ebf0068c8b8c1b429.webp",
+          "bytes": 10160
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/3b8ce90371d5dca28d6698018a2d4ad0381bf5ad49d57e2e7dde39654172f801.webp",
+          "bytes": 35152
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/a08f2796d1f141c600fd4eb10942c5eb345ace7a87805e8290053075b5520696.webp",
+          "bytes": 75308
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/bedroom-4dfbd32d10bb.webp": {
+      "sha256": "4dfbd32d10bb00493db40242463e5b2135481cdb0519aa255dd3b04108d205b7",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/0871792963351812faee3c9a50c9fb8c75b3015d392d3f10638a9c1233b419be.webp",
+          "bytes": 10614
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/30b7dcfefd7e26a7f14d748670d8042997b4bbffa00f6ff09a918291680849fb.webp",
+          "bytes": 36824
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/69517fbfff99fd7cff66ef0b4ca2efe3dde0df1a4ddc3062e65e1b2899833ba6.webp",
+          "bytes": 79274
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/biology-f68beeab355c.webp": {
+      "sha256": "f68beeab355cfcba7354761a0ffd93dc9776059739afa3218ee883003eff4152",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/a25c5b3a50473e994636b9b393f4b361c83b2d18ef0e6e7ea17f944d87f8f254.webp",
+          "bytes": 14176
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/4ab99f1f17c927c82401a6e3b2f72337131e93e3b615f48546d4c0d780c1a804.webp",
+          "bytes": 44248
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/cc7137890011652393d23727588de52d1876fb26dafe4c93e20b51cadfab6ff2.webp",
+          "bytes": 89248
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/birth-d5ac275c044c.webp": {
+      "sha256": "d5ac275c044c7105ecc9a326ddf827a8c128f32b2c5de0d980a1abdd313deb89",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/ae688137029fb71f44cab7d54d39415bf3de4de5e6e1d16f44b542acc8e3d6a0.webp",
+          "bytes": 13394
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/dcdb2bff2c71a2fbab524bb1e3dabdc9276c9a67fd914febaeee25456623a8fe.webp",
+          "bytes": 43926
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/a81840bc64928f51da274b09b2012d461c814fdaafd85e6265096e28d1266bfe.webp",
+          "bytes": 92236
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/cafe-571579c77f93.webp": {
+      "sha256": "571579c77f9365cfd8f3a256d48daab12219d213ff644dfd4a0320399597dcdf",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/1d484acb26bd06cb6fe0f0dd830441a8a7fd1e6dbb7a59d4e51dfaab9739b8e7.webp",
+          "bytes": 9544
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/ecbcfeaba609e3b9ba70f2a52dc343cf2f04f1660f609aa0f57460fc6066f2bf.webp",
+          "bytes": 30830
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/e726def3fd661d62245a515c7cb0e3bb708fc8218d2338eca7f26dfe6532da6c.webp",
+          "bytes": 64356
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/canteen-dc945ff98e39.webp": {
+      "sha256": "dc945ff98e39e0c63cf2bcf55d7038b061eb5a0a1b26fe9c750e2656e312bcab",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/674c5260d57e3652fcebd4a5bd549b69d4bb86c0683545fe3b6511c74a001021.webp",
+          "bytes": 8200
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/8c0962cb42c3615afa835f9daa81ac8d99e3b6edbae36dc1b7deb314afa2d321.webp",
+          "bytes": 25922
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/d86096efbd548c60648dc2b57491231f1d58a4446415493068db7304a6dcba19.webp",
+          "bytes": 52714
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/chemistry-2070e251c931.webp": {
+      "sha256": "2070e251c931d74e8f97f8455ff5d58941254fea4e51f5e4df1e26faa2cf7077",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/6404c205ef42579eeeea40932f9a51d0b990f23718fdc47b0cc78513549ed899.webp",
+          "bytes": 10756
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/1714db3f3aa286fd121778c3b98c78257005cb7d692b8eaeaeb38536f3e857c8.webp",
+          "bytes": 33204
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/eaa3a63acacc7081494aeb585223d0ff80cb91087953c3c57dfe97fb00cfa8e4.webp",
+          "bytes": 68192
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/city-street-ef1fa158c855.webp": {
+      "sha256": "ef1fa158c855541b3f4c1f465ae65b4f3aa11d0d0ae407ec9bd78757f86a0daf",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/8b8dd454ff950cf97af787a344ec9829d8fc670ad254acb0426491e6c87a2c78.webp",
+          "bytes": 7798
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/0e44f31613cb914bd64f9b55fbda53d567c20cab2f090f9c0e1d6a8184cb4b65.webp",
+          "bytes": 24726
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/cd8dd9d347383cf6925f567a312afe88b51c5296913ea17475160002ebb6bb2e.webp",
+          "bytes": 51040
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/classroom-building-2fad980ba606.webp": {
+      "sha256": "2fad980ba606d2e78db1ab988393a2012b04a20f0a4bd3e4fe0fae82ecb08af6",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/cbbbfbe277b70311fe95543f9b901be7f8ee48f3071b6ca5c33d98e5c1d6632a.webp",
+          "bytes": 11166
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/f1df9cf8afdf2595588382baf6c3c041d310e33398c6cb2b272adba4f1a9c7a5.webp",
+          "bytes": 39934
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/6fbf330eb1819da87497de380455e5405579808f01131557ad42ef87924eaa50.webp",
+          "bytes": 83532
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/courteous-addfa53f463c.webp": {
+      "sha256": "addfa53f463c2e3ddc299bc592938251377a97fc8394ff319377482973b14987",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/02192e35a73aade1707e0329b340436a6f1492b9a1722d1bfd5cfc1798458b91.webp",
+          "bytes": 10476
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/f8df4d212103e01706b36a1e7efa1c0fc1f2601abc88e842bab8347fe4d6a6fb.webp",
+          "bytes": 31760
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/ec67ca1db0d15883bed941609566f8c230f2e79a1919638a46112b91e55cfe90.webp",
+          "bytes": 65400
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/cross-street-8ea152d2964c.webp": {
+      "sha256": "8ea152d2964c9b40d9cb72352a60f6f12428b1d548e5f1e0858c2e309f6872f3",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/bdaf4cf743b7e7e0fa7e362734be6c9dce7ff6d74f5169b01772db4d070ca962.webp",
+          "bytes": 8586
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/b0cdbbcf68e9283769d93e4aa6ad58339bf3c6c23aa9b9e36af42f6542e84791.webp",
+          "bytes": 28202
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/c6babfb7fbb6d99345c8eafbbf3be67fbb186ef7fa30ad61d06793f1de374b85.webp",
+          "bytes": 59072
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/culture-00bc8b945621.webp": {
+      "sha256": "00bc8b9456217131c076ee12a030c2d008da4a0781ac97eee85a3b2744067deb",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/794b591361f2dde1ba28976edd6737bee3e8cb88c96babd875c635c4148418ae.webp",
+          "bytes": 9278
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/48c0dadbb56a4091dd0c54281f2ca1f82efe1ba087ca2e565cf0e34c472646d5.webp",
+          "bytes": 29654
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/51f2ffe9772d519fe37e764f091f66870faa021514aaa3d52221ed295a4a0140.webp",
+          "bytes": 59574
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/dance-3c8e7df7e454.webp": {
+      "sha256": "3c8e7df7e4548c4efa204cf0bc8c0aa12db806385f952f44bddd4308282e77b2",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/7729634175e002ffd97e977c71033cb418e23ead2fed6df8e3d9884f582aa405.webp",
+          "bytes": 9116
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/f3494c420082649d55d04323a674611958871a087b072efe5da18c9064cb30cd.webp",
+          "bytes": 27788
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/6c02f029f527da27125aaed2912839d3a9292b9eb021fd73f26bafde57158d8f.webp",
+          "bytes": 56844
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/dormitory-building-0c67c7721f18.webp": {
+      "sha256": "0c67c7721f18ca7393db9a92e4bcf5d0c45a00340598ced3762c320841e40b23",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/6b083c0feb6dd76c2d1befaf9528a28a3962874ef0f065d80eca7371a9c64877.webp",
+          "bytes": 14338
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/da303014415ee7cb6c725346f204a06292183e0fd91f7fd249dbd268b6b4a458.webp",
+          "bytes": 48724
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/a3db834c6cad817e49eef5bed004000e3ceda9cc6de1a098e6c95da742f6c48a.webp",
+          "bytes": 104062
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/economics-bdbb61728f1b.webp": {
+      "sha256": "bdbb61728f1b40ea7d223fc8d489a81462121574e65422f107955934d6f12698",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/6dc15e51f7c05a1a9118b618d41375616920f47df0d6312b5b4dca0b9f3b3fe6.webp",
+          "bytes": 5480
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/f1c3460f4f6219f08fa247c9501723990b857d14777c198f05e3673080b9879a.webp",
+          "bytes": 17206
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/2b97321f70359ff2bb2478ba92557ab8c207ba5f6573023f521731946755915a.webp",
+          "bytes": 33896
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/fear-8ade895e3555.webp": {
+      "sha256": "8ade895e355582cce676129706f87280bef1863a87a86744cac53f34e45ccd5f",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/ab9b072be129b3c41bdd74bdbe6f8d1a59fad6e9303368f946ddeb87ead6e0bb.webp",
+          "bytes": 7478
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/4f832619b498f43b7d1e2166e834d3b967618a57d1ee9cc41bba9105767423c6.webp",
+          "bytes": 23254
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/9c5865c2e62504a93ec2741fbbbb0ceedde8bea8ccdcec4bee412a74540d6c41.webp",
+          "bytes": 47716
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/geography-671f9f1d359e.webp": {
+      "sha256": "671f9f1d359e4c67a646621714d42bc7f9d6e859110f2fb4a80009d7a559fc00",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/647a20f5ee7edf2f8a9e0c154d131fa4b0e327000138d646f536af6bd6f4b53f.webp",
+          "bytes": 8628
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/814d5109d565a103d7d2607b240f7dfe6d84963ed0071fdbec4d5696ae00366f.webp",
+          "bytes": 28296
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/88e29839fd9a3d31c8a27162e1d1ef1b8367afd9d9c74067a179555c1588dae2.webp",
+          "bytes": 59848
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/gossip-892edeaaf0e3.webp": {
+      "sha256": "892edeaaf0e3a6132b6c5ec857a4bde714b9867446ca0de231696d565ff80471",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/79545fbdfee9da95d85f9ef8f7350de71e400a05ef12034ec2b029dc64f1b8c8.webp",
+          "bytes": 11860
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/d0e3fc2daef283bb2fb218d22041e27ead7c11813b0fb87578b15b37e7ff9f43.webp",
+          "bytes": 39518
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/1dd1369a52e374018c2c50b59fd85252873304ae61c39deebfd2c0b0d0ce5aed.webp",
+          "bytes": 81788
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/gymnasium-8f5153e1dfab.webp": {
+      "sha256": "8f5153e1dfabcd98ddf352d1ed8cbd6bb708b1b396757ec00a36acf53e29d24c",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/c6f8e989203f4c065ace317dd608428be4d895c8ba86cdf50010b302f91e048f.webp",
+          "bytes": 9408
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/ef19d2b2a874e50763621b635a6463f3d3ece970eb3fda92918611261c2e2e5a.webp",
+          "bytes": 31110
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/70e9c8c8e18d31a6a02ce646945b5abf6893b59837c876a12e0f82b2e833b01c.webp",
+          "bytes": 64884
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/halal-restaurant-3fbc5e4019b2.webp": {
+      "sha256": "3fbc5e4019b2587c32392810373e7b31084288bf3d1d52e324c5980a97f05a0f",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/6d58ad44219eb2068a3a90a116e2e08be5dd0ddb65ec6eb18c349c3da2f2cbdb.webp",
+          "bytes": 10076
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/37c9a8e4e92bdb678144a9bed99853fca549e4306e8956c93d7317a19cecdd10.webp",
+          "bytes": 32324
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/c53a5cff9e59159db48294991c3e4174e8780d9017d4000ba1cd096c9df0e54d.webp",
+          "bytes": 64920
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/history-5c4c383fcbfb.webp": {
+      "sha256": "5c4c383fcbfb6937898e611bdbe093da9550be551c7f61d2e8a72a1b1290a2a3",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/88e7865612accb7c955718bfe91effb60f1e69f36713774a363de0d3f4fbdf69.webp",
+          "bytes": 6754
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/5a6fdd4bb84522bff10c1e7bcdac034fcee496dc7b5c59cfb69d24925342ae11.webp",
+          "bytes": 20456
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/bcdf88167b109c6539bab3079d02158f42a06e722e38c883f016baca1f633a20.webp",
+          "bytes": 41096
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/hungry-c7d8033d7b13.webp": {
+      "sha256": "c7d8033d7b130670873996e8d728d016283923c1f1df3a9e521f43aa7ca93abc",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/6d32dfd22df1dec78a8065d9655a22b23d7a4862a98b631175eb89579a300d17.webp",
+          "bytes": 12812
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/078f61fe24652832cdfe0502dd447c6765a01b4e60fb2a7ede188adc616e8745.webp",
+          "bytes": 39760
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/bab170e88a32b9a58123ff55863f817561e3142dde8171dcfd2bbed2a7e02d61.webp",
+          "bytes": 80872
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/hutong-c5881714d953.webp": {
+      "sha256": "c5881714d95392cbdfc42e227ba272bc915b93c37bae362287341fe59939d439",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/5e1d6eb3add355f8ae2f382b0187858da7eb096efb583cbdd20beb67ca281c98.webp",
+          "bytes": 6620
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/c1cb9868b987bd647ba35af10e44e13c1a460e3c1d04ff315890f061c6b7de59.webp",
+          "bytes": 21688
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/c3e2025909a9ee0a69386dc9ea761bb3f55d113828d0aac8220ed4425b94efb0.webp",
+          "bytes": 46020
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/idea-9495f41eab12.webp": {
+      "sha256": "9495f41eab128ddb14fea4fdea41959969a8c8a7a89628eccddf1a7d323ae459",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/4bab89b9877a5e8129de09ad5e62b974624bebc92543247ce81f3fcf35287424.webp",
+          "bytes": 7818
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/86f2bed1dc6551f7cbff9bf28e4fc93658aa9b55aa7098f9fec487657a7297af.webp",
+          "bytes": 25260
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/febaf31b05d71d25ee4319983037c052a2788009f93dc02e7d41b8738d73e829.webp",
+          "bytes": 51294
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/kitchen-39e9d845ddf0.webp": {
+      "sha256": "39e9d845ddf0c1b6a8e302b691ac5a2a30ada617a152c462758f96127f4a7fda",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/00485e7a38a2ce095874c12f2f3bd80706d0156a42274f9b8e53d8932a44a346.webp",
+          "bytes": 10378
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/57ec3a10f6cc73af3c6a32b7ac7a876123a8231f736a76bb095abeba0e2b4c1b.webp",
+          "bytes": 35746
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/ed69b350542bf62b1fb8ad022ce37d1bd679aaff881747ea5d5abab7fcc3556d.webp",
+          "bytes": 76274
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/library-01ebe96e1780.webp": {
+      "sha256": "01ebe96e17808ffea6e2b66807fbd3027711b18fcf4de6bdd5ca9974421e45b3",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/467eaca28cf65d015b9f2e35917d0499bf2b3b38f12166632e7ff6f75a70bcd7.webp",
+          "bytes": 11382
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/3d6718e0f66a3c08514794df4c2825631b1fe90ee87cf4e1062c806e9bea7570.webp",
+          "bytes": 39304
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/1244bcb060f2af4bb0b62ca1f5ef6bf004d9a0681de5dc07fc46900688dd14c9.webp",
+          "bytes": 83560
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/listening-7a7819a8fda0.webp": {
+      "sha256": "7a7819a8fda01a14ae838622b36a9f73ec905c2b3567d13d41ab3d6cc1654d22",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/eec4842226146264c1cbbc135ef468df5c07296d1e7f83c8fbdc9960e66592c1.webp",
+          "bytes": 14802
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/742b845f8e8b11e01cf88a31825a8d4d70e02d4f636927967ac6b240cf2a88fc.webp",
+          "bytes": 46364
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/914bc589de6649c363b9563945f3cf6d23660df77798e45de09a71722e809a35.webp",
+          "bytes": 94084
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/literature-7239e0085166.webp": {
+      "sha256": "7239e00851664f3fd782fc80a19146584fe1202779ac5008a5048d0d253fa8f1",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/bfa624b5e1797a5b3ee80475096bd629654c801452de178e7f9e7fd7021ecfda.webp",
+          "bytes": 5260
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/febefa319100833d441e7e013a19d7f6217c283d4211a26154c165996a14e983.webp",
+          "bytes": 16248
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/7544977948946f7314419b0fcb84c67fd80c05cf4c9e8472acb0f8dd6fd05155.webp",
+          "bytes": 32574
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/living-room-a07420178aac.webp": {
+      "sha256": "a07420178aaca21fbdd1c84f6fa7c178db65948afa81520b6694e2c5fffab32b",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/c5659bb94393b632ed464e5abcd14e64cfa504861036e9cc6cbf60d0aa9448de.webp",
+          "bytes": 7454
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/8e5b49cd38eb75a695a06038f5bf8952352bfcdc05a42c6642836029e26021f1.webp",
+          "bytes": 24370
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/b6e7440f5169f4e8f3d670942db2566108634eead25453ceb4942958a884874b.webp",
+          "bytes": 50118
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/miss-db903c3abbf4.webp": {
+      "sha256": "db903c3abbf49dc52631d59276fbf260cef0c356e74dc7210df0d8cf85420f66",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/8010e427436daa5426569f855f6e744b580e40bcda34f6db56f4013885bf36de.webp",
+          "bytes": 5816
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/d80ebb3cd0521554c9ab90cce1c8106cbd829c586f195b6b19c223d6647c8727.webp",
+          "bytes": 18780
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/3f408dd10a04237fba0824b33a19acf1f24fcbd7f40d8daecfeb00595e4c488a.webp",
+          "bytes": 38784
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/money-6f8002248fe0.webp": {
+      "sha256": "6f8002248fe04542e3344e1be4e4f3ef7dd540675fb5d2f454b309a2c041cad9",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/341989ef0f8f1cec5d3860e75154a92d9f56bc0f4385cb18580f7ab41a933bde.webp",
+          "bytes": 7726
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/0a71667681200a1138fd1d31c01fc091badd249924fa333954d23d4c5cb65e11.webp",
+          "bytes": 25336
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/4dd9beca02b4b20b4da45c19cbf30d686cd8eb60b61b3bc84cf60038f7fe540f.webp",
+          "bytes": 52684
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/myself-d0d83c6ffffb.webp": {
+      "sha256": "d0d83c6ffffbfa9a7fd323c02beddaecde5335dd2d8b361ff165a160427dc369",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/686d10edfedfbbe36ebe091e4d803915c1c21b27ef3b5772cf5c7dd09d7fd3c3.webp",
+          "bytes": 13442
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/5f1d43699820230060013c60d355792d264cd3f1146992d43b13b7e7c4af2d4e.webp",
+          "bytes": 42418
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/febe752d84c2f34f8fdd49b905676e3e6d1e83b6b4bee118e760aaf30de0caee.webp",
+          "bytes": 88054
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/office-building-27cd5517497b.webp": {
+      "sha256": "27cd5517497ba24eec60e7aaa6346b4e04517bd81647b89414dd51a3158ea31f",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/42c15566ed827d64836ccef0db0f4fd37d1b6b1db963a112ada7b6971a663191.webp",
+          "bytes": 10202
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/545efd017b46e70adf3e46af2a4e080b0826d90feda1b528f26a52ee47e52a18.webp",
+          "bytes": 35438
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/602d826a4c48e56c0841d8c68512bb3f8ea9445b3533d9157b51c7bb786b1485.webp",
+          "bytes": 75986
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/office-work-d528e0c8c15b.webp": {
+      "sha256": "d528e0c8c15b9e6184920321757e8ce931d3bb0529027319fc3f7848408f52f6",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/7dcac4c22c1f404cb1cf13a3a2f9bf438221b46a4c818c594db4d2a5ab4560f1.webp",
+          "bytes": 9372
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/4a7e77a336c24bc9c561f1972e3cda4e3bd33e592de8c7b6f00b3447880848dd.webp",
+          "bytes": 28676
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/a8be6d0857e50ad970bc3254a0020050c356e51db19d7a4ca53674abbc86f069.webp",
+          "bytes": 58364
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/oral-exam-bf3015a43618.webp": {
+      "sha256": "bf3015a436180d844075cb795c43f35bc9845961a09ac1fd2a8f447f51431a82",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/e02b80891c1eda3edf95d2c2453e15c675d12785cf6a4cb8ad6f22365c828588.webp",
+          "bytes": 11226
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/b78578ecf205bcaa0b71d096ee7fee66258885ccea562ddc9528923867f64b84.webp",
+          "bytes": 33758
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/a76fce3534a79e53b80344b4931004cfe08ce6871d6d074e77f6cbd9f076849a.webp",
+          "bytes": 67886
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/physical-education-149dfa070b53.webp": {
+      "sha256": "149dfa070b5338e932c734fbf06f912d33c2474d81e759063bbf2f2719fb77a5",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/0f54a7d717daba92447cc381bef3a9c2cc4bf0741ff53f9dc089d3e2f057ba64.webp",
+          "bytes": 13952
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/f8cb1c716dcf2277e7820b42e56ba79679c9053deea90cca67039f70c97496bb.webp",
+          "bytes": 42098
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/228340f8cf52226e7c0adf865a7c5f2bf06b66d95120ff8736c25707497c628f.webp",
+          "bytes": 82842
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/physics-da6670edcd26.webp": {
+      "sha256": "da6670edcd26efe1e8c5bea4305bebb0a97696e533c364d015b060a135f01724",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/cc01999b748ff46dff87c3633084daaec1af358411bb83689b64d60b8f535d7f.webp",
+          "bytes": 6446
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/54092fc469427177950aa052da1495bdd1120f29b16a72af831b54718200fceb.webp",
+          "bytes": 19232
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/f447dec7f95755adab7f4ca28436e0a5809f2a981aa4a48221ce8aa1a55b5f4b.webp",
+          "bytes": 37638
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/practise-writing-b2d9fae64345.webp": {
+      "sha256": "b2d9fae643455caf03eb5ba8191fc3b57df9e71ecf4faf04456bd0c952e364e8",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/bec01a5bb2b4b51b23d3832da9a3b9e150f53404b48a67d824dcab1a2ffbb907.webp",
+          "bytes": 13926
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/901f09b64bd4041d627f3fa14eb63f929db236fb81c123c5b1c0bf302f8c47c2.webp",
+          "bytes": 43746
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/f6e7fd102b131c209cc752315900ad919dcc0fa78a724fda97e61a83faad91b2.webp",
+          "bytes": 86022
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/regret-062c626a95ad.webp": {
+      "sha256": "062c626a95ad2624f9f137ef912d5952bcbf200ee48c06342db6a1618ee11718",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/1da6e87205db7abfd43a71f99c37df103c463f698a7834fe129d4475b6439f26.webp",
+          "bytes": 11690
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/e7bc5b96cc6630a857c463118af70555148840ead84a4328b30c0fac871fa1a8.webp",
+          "bytes": 37460
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/977e5ccb8988125717b2efdc213019202cac4e4f94a6c523173124520efe4d48.webp",
+          "bytes": 78430
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/restaurant-4144b6a9ce35.webp": {
+      "sha256": "4144b6a9ce355b372d12281891a65741ba71b3a8a0768b3b34a52f093901e118",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/b033914209d215edeb9d8dcabb750d6ae8167e29d0eb374847d89d56adb6d02d.webp",
+          "bytes": 11300
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/c14286aaca1cc1bcbc894a0c54684d9005eaba40fa2212bd30e2e695ba55025b.webp",
+          "bytes": 36850
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/c5642929f57da30bc091d51e2eb57def7d2c39e1c9b32c4d64ece5e68516868e.webp",
+          "bytes": 76544
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/road-f6856c443c41.webp": {
+      "sha256": "f6856c443c4128e268ae9c720fe27299a979bda1d32e26d72faa0914f8569dd9",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/fd8dc482210400211d2101f5bb9b978a2e833e55fb91e2ba3ba0b322544d20a4.webp",
+          "bytes": 6710
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/dc98f540aac375ccd8a791da52f2483b548f246fe190d1f9781d12548e351ef7.webp",
+          "bytes": 22452
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/74e0cf2f907b509fb400f74fe61f669e4497ddfbb0905075d3df639c30be0893.webp",
+          "bytes": 47394
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/school-gate-3663db493529.webp": {
+      "sha256": "3663db49352944b65af11bfe648af49df2dd089b85fa87ea0c7e1c7b661802bc",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/8f7949a3dc514f44669bb9440e368355a60f6686318a0774052ec6db95a9f002.webp",
+          "bytes": 6412
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/f37f23b21f5efbe14b141e7bf1c10aebf3c61046f742e58cf17f6ee736b5fec7.webp",
+          "bytes": 20620
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/c9bb51bf2dbfb8d889cadd3a5360eb6dc86ed3b6a40556d1238300b3897d35e6.webp",
+          "bytes": 42620
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/secondary-school-90bc57e48c5a.webp": {
+      "sha256": "90bc57e48c5a7b5b2117e53948c41f0639fc4e58d5820e1464d5026c07630421",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/b1094b6b644011c578e412431a7107f36a76b406744d2bfc153b756a666c79ed.webp",
+          "bytes": 7334
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/a1d1fe60f69013cccaa87ce534bf4c7c375ab70d3b2c0ba6f6b58255b8b5b095.webp",
+          "bytes": 24710
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/747f5e46de9394d8694301c2ccbb3092a665f623dceae8d06b145ff9456e694b.webp",
+          "bytes": 51976
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/shared-dormitory-431d0ed8deba.webp": {
+      "sha256": "431d0ed8deba2f0dfb3562acb6d7c33dc9051855f17d4d5ad80df678aecce1a7",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/d88a1ca1e55cecd00bb885c7c213a2f7e9d7d07cd59c0a7b6d858d3213a3a937.webp",
+          "bytes": 9590
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/74378f0c147b558d3f795565621795e50c2482da05ff5e346a9734a8a030409f.webp",
+          "bytes": 30428
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/0cd932e8d17b414c7c2205ed2e8fe5b0fd3e010a13180bfb6efd9fd427cacfba.webp",
+          "bytes": 61856
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/song-eb853c972e6e.webp": {
+      "sha256": "eb853c972e6ecf05d73dbf70071f44c7e2baa2a1f3f607a620b02eb90a96ff8c",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/2aa2f9cd304e79a49ed0a4ed1550f61d783f3e08bf42bacbf4d6caf99b8acd1e.webp",
+          "bytes": 7976
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/a5ffee4c8ceca68fd7f3fc1c15df4fd36f10a7dd3d58cfdb361da75cb823fd19.webp",
+          "bytes": 26322
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/208f330f39851122d6402c6ba877a428596ce733a35b9a7e1cbf49fb5558845f.webp",
+          "bytes": 53756
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/sorry-06e6396ce1f9.webp": {
+      "sha256": "06e6396ce1f9971e068c763aba613b7a2818e06344c9bc5588b5c20903145302",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/391957e19675757c55d03bebd3fafe8bd2ce7ad59a2f27ab9558510c527232fd.webp",
+          "bytes": 7078
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/e094cd8e7c39e01373fa777aa289af24af8f80ca17ed7cb48f825d7d4e0fc306.webp",
+          "bytes": 22566
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/335f72ed4c00d8b491e3bdf54434a8c98564537c1938997d4d87cbf0a7d969d6.webp",
+          "bytes": 45868
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/spoken-language-6ebdd86a795e.webp": {
+      "sha256": "6ebdd86a795ef7a02c7f784827874edeb5f3d59d5a10918c6618e85e7caa686c",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/c8f4afc2daf11e4a4f55ac5f3dbccbcaaa7b261e53e1e56c41944575fa3cf235.webp",
+          "bytes": 13624
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/7b8f221b21100ad98449ff62944f0b4a7da1a319b57007e5b416014ce50b17cd.webp",
+          "bytes": 41994
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/0f4bbfda5302f2d9539a21ab9f090f29e686409d96f3d614c2c3721f7b660337.webp",
+          "bytes": 83766
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/sports-field-cf7822c6ee52.webp": {
+      "sha256": "cf7822c6ee52fda3104cfe88f0e8355cae2e85759a06b48444eef17463575483",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/ee9db6b8362ced3af304b2ce789506b374d81259b177e7bb9d99daf78f452b86.webp",
+          "bytes": 7356
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/2b85ccdce9354ad2af9b6be2ca60ad8729b6f8b2fafe8525d0089212863545c7.webp",
+          "bytes": 23920
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/61a2e281bc26289add2c89309e8eabd07edecd27ec2b729f53d3e861331ed94d.webp",
+          "bytes": 50626
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/study-room-3b9ab519d26c.webp": {
+      "sha256": "3b9ab519d26cc305088bad4b3aa6727ed88b2c898a855e2acb5d764f95a9b672",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/28b3f89daa1107c969d3e2dc46d0224f39a1992c64c9c0dd52a8a80dab4da35c.webp",
+          "bytes": 10796
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/5c9a2dd9f82bbe19b25ae9aaa7360d7e3b2d267964c735cc83a4250bf93fc45b.webp",
+          "bytes": 36606
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/beb418d68961492b06a4c4b90524f75a16483794ee183247c33b606cd4a20a59.webp",
+          "bytes": 76816
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/supermarket-b277b641e5b0.webp": {
+      "sha256": "b277b641e5b0132a605092f0316b94d88b8a4e6b5f923c7f669aa48570b6e273",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/38feaa1a39c188a5d84452eab08c409e9cf67910b1fb289a60d35175dcdcab42.webp",
+          "bytes": 9394
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/9731e5087b1831a8a26c751d33a6b5124cc34064ef73f2d23b6717357bbfd2b0.webp",
+          "bytes": 31800
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/58c2d2a2298bac916d6f6cfbb72609cf2e07496953cfe102e6e16089baa193b3.webp",
+          "bytes": 67498
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/teaching-5167bb47260c.webp": {
+      "sha256": "5167bb47260c3fa5a251128b91e9895879ffdd4579ad70ae0f1850542993c8c1",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/acdd5eb8d9fb0048895378f477a7a5c8512e4d0faeca8dae6dc6c7461b74cdb6.webp",
+          "bytes": 13922
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/c7d851cb81bec3ab4ada059b003464f4b77a00511c29b0d9b14d1d7ce14bfc62.webp",
+          "bytes": 42674
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/de81d06ad3431bd68f8fc3b3f8d29b2f0071d865f99afb4d2388e6b678536b03.webp",
+          "bytes": 86444
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/waiting-d802e4508439.webp": {
+      "sha256": "d802e4508439c0b96366f95e8c522f0a654ee4536d790b4f0a97df94e315c199",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/fdd591f80bfc5bc4478522e032ce845e09a01d107f7fd3682d7a0d6d02c440a0.webp",
+          "bytes": 9218
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/dd5f04abfc1fa8641d4c79cee4d075b6d60805aea228e0eea643d814a798ba77.webp",
+          "bytes": 30080
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/34d494b7c3c6be5a8d018e920404391eef3de538819323f94aaf40f8baa0d28f.webp",
+          "bytes": 62256
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/wish-c130a16caf16.webp": {
+      "sha256": "c130a16caf163499d090c19df64a834b8a8baefc9e271e98866d2c93f6ebcc16",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/26bf3803de40e7ae8a715e0f562a83c3b84a912e1d74635c5cd279295dd9b1e9.webp",
+          "bytes": 12014
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/f45cd2a2989f786180e2f6d83c9fbb13a28c13aaac462a42d254acfa2def2d3e.webp",
+          "bytes": 40852
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/e121af97c6ab47a1b273ec2ca7b42b141eed1bb99243f4aaf3c6163def0d9f62.webp",
+          "bytes": 84536
+        }
+      ]
+    },
+    "/images/vocabulary/corpus-completion/writing-321bb3b60b7b.webp": {
+      "sha256": "321bb3b60b7b196211a139443773bf02caaea1ceba3f18c255352ca5c1e8f82c",
+      "width": 1618,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 400,
+          "src": "/images/vocabulary/responsive/c97e45c82017001efd29f8bd87666b1b01a8e462382b73cc3f59bb9cb18f77a2.webp",
+          "bytes": 13558
+        },
+        {
+          "width": 800,
+          "src": "/images/vocabulary/responsive/b954f47e837e67764beed1fc1d65a598470d25570fa89d20372be8745ae74006.webp",
+          "bytes": 40988
+        },
+        {
+          "width": 1200,
+          "src": "/images/vocabulary/responsive/321751f87d76c673e0327f1a7d80061ce42d3a8df78d823b553b0a06511a9fc9.webp",
+          "bytes": 80894
+        }
+      ]
+    },
     "/images/vocabulary/lesson4/a-lot-18d716cf010c.webp": {
       "sha256": "18d716cf010c22369d0fe49e8edf8a00f798baa43a4fbfd1c4919e6aa2c7f411",
       "width": 1618,
@@ -1552,50 +5711,6 @@
         }
       ]
     },
-    "/images/vocabulary/lessons123-pedagogy/5728-153a3c05be73.webp": {
-      "sha256": "7b317779728d1970f8a0bb15d5b2f5fadb7c7fe93f0d62f61beeb3f8414bd821",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/fc734d739da651f46b12afa5ddb554c590a0be4ac879ee0637e19c51d071ce8f.webp",
-          "bytes": 4594
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/6bb69c5c72a7e28d9fd2d539bf7a78577ecc015edda1307ceb0a7b56cae5d1f4.webp",
-          "bytes": 10644
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/d63d7dd4c80877f482b5100b22131424c2b8acde009d3a884d135517a9ac0f45.webp",
-          "bytes": 17790
-        }
-      ]
-    },
-    "/images/vocabulary/lessons123-pedagogy/592a-a65f12d6b9ca.webp": {
-      "sha256": "9524231bf214d6b0d48e4ce0b656f52730f7eb10a44757857d86e6052e07e5d6",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/3ee9f157b655a8f87790ca6b016b47c64629bd6f92733d00d9eb8b3f21764eb4.webp",
-          "bytes": 4514
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/9e4c0935af54c1c480160a01f2c71b24e232016723b55dbf174e33c9b899b758.webp",
-          "bytes": 10962
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/0259e3e1013e49b45f36c0ae8e58716f76b91ea93f6ab33550d549e093aafdf9.webp",
-          "bytes": 19188
-        }
-      ]
-    },
     "/images/vocabulary/lessons123-pedagogy/5de5-fa8338d450dc.webp": {
       "sha256": "b501fc9fe3c3ee2ca97aec3ca5e2ed921c4760014b1dd3a3fa3d3c2436052405",
       "width": 1618,
@@ -1637,28 +5752,6 @@
           "width": 1200,
           "src": "/images/vocabulary/responsive/8b9cd6c59169b8b912f711433dc49f65334988d5478accf5fad125200942c684.webp",
           "bytes": 15008
-        }
-      ]
-    },
-    "/images/vocabulary/lessons123-pedagogy/5f88-61d923365aa9.webp": {
-      "sha256": "d462c0d5adab0b6a4bf9a5c1e389ff9fa424c8c0eb8dd3808bd25cf7c946ed53",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/e3bea964bcb344a3eea91fe9c4cbbae52592f5194f8c1810557a4fcc371b4cbe.webp",
-          "bytes": 4224
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/e879c83c27c5e12c06a59ec9a8041434c0248cc10d2c678e8b8f39ba93ff9abe.webp",
-          "bytes": 9626
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/a0da9e5501baa1a39987a702d7ddeda8659f3ea4ddde8157bd19aa3c4a365aad.webp",
-          "bytes": 16192
         }
       ]
     },
@@ -1984,28 +6077,6 @@
         }
       ]
     },
-    "/images/vocabulary/vocab-008c518fc6ca61e8420d.webp": {
-      "sha256": "b817cbf84fd989819c1fa22492221639ce47fb64b008157e1d33d96e70aa5117",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/4b4d83484fc8d0d449d234a7f4881d40d9339cab14af7706f802c48a1396d2c2.webp",
-          "bytes": 9364
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/071e478116b854e04e021d83855eb305ea768b68517fb76916e21e4368bd178d.webp",
-          "bytes": 25286
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/759f631d31854a7da5bca482b8d5d8f8fcbe0bda8f00990e49d6d76425d3cb9f.webp",
-          "bytes": 48154
-        }
-      ]
-    },
     "/images/vocabulary/vocab-016de08b07f55785877f.webp": {
       "sha256": "53308c42f2d4ee411e4966e3b788ce5e28fcbd078d30f41046af420790e5e81b",
       "width": 1618,
@@ -2069,28 +6140,6 @@
           "width": 1200,
           "src": "/images/vocabulary/responsive/5036e1090d86aee9b42b62099e9b1612962d118fbf3a400e147536838f3b0451.webp",
           "bytes": 56740
-        }
-      ]
-    },
-    "/images/vocabulary/vocab-055e1421700f0d4c084a.webp": {
-      "sha256": "4f253ff4e70c2ea40a3b1afc4fe6da598c547c7780bd87e62e665125d7b99247",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/7fa9ec3406aa77a8c5ec110e03cd87a1aa30e998825fc7bcb9e320dfd5e36770.webp",
-          "bytes": 10680
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/d6485730a6e828ce9fb998c34f6695d7d20dc60a3b10f56385f84cd25b32663f.webp",
-          "bytes": 28404
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/40ff2c672d1fc0fec37a5a3567450885685dee4abb6b26094df7cff6ce61b37a.webp",
-          "bytes": 52626
         }
       ]
     },
@@ -2267,50 +6316,6 @@
           "width": 1200,
           "src": "/images/vocabulary/responsive/91672bc06046280adeccb5f5f9476fc181ae00f9bafe230ba2e29ee5268534f4.webp",
           "bytes": 57334
-        }
-      ]
-    },
-    "/images/vocabulary/vocab-10bd0997461f28df760a.webp": {
-      "sha256": "f5226d34cc93570d8a628b7cc46156b8cae8ea67ccf839547d7db33921ea29e0",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/0a19b8de5fef876d38c7dce025f213e7fa1d448feeabbc2a953c37b1b30688f2.webp",
-          "bytes": 9502
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/dc49f0b04234fb27dc71ac0bf2918828e882db3f4c5d492f7a3bf6fbe067c804.webp",
-          "bytes": 25708
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/63416d129d071d855ba3cc00db022e07b28cf15708dc09f72addce5f2ab564c3.webp",
-          "bytes": 48716
-        }
-      ]
-    },
-    "/images/vocabulary/vocab-11ac599bcc4d3d560e7f.webp": {
-      "sha256": "73844a87a14610c3e8a5e2f3dd63e20b95744fb24dc463b9bd1cc86ba1e0d369",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/ee0c1514123b227b42034be63e075e30b652e52e73a0a62c6550c0baec5fabc5.webp",
-          "bytes": 6816
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/6ee6b75f1f26813079cd6b5455e5e6d0979960f20c7a4e883c1ec0e9b01e3a4f.webp",
-          "bytes": 21192
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/2b4b56519477291f2956fb3a74f541bb72224ad063ad6edb31af0c511e0d003a.webp",
-          "bytes": 44538
         }
       ]
     },
@@ -2754,28 +6759,6 @@
         }
       ]
     },
-    "/images/vocabulary/vocab-2a358987f9af9a3ac83d.webp": {
-      "sha256": "5dfce999cff9dfa0a2eae9cae616cf69c8fdd78189ac5479edb5a8c5c0d8ba86",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/9df56c4f6c7cede4b14b7e6c68b7ca865f195dd231ac9c4e153beaa728203f57.webp",
-          "bytes": 6802
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/3b87838052397a2602befe6659787c9227897d454c3f8f35ea3555dffa8e1928.webp",
-          "bytes": 20414
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/a8b4098e2a29a81eb8cab549ffdd11b94aaa28a1a3d0b5306b095fee8dd0090f.webp",
-          "bytes": 40464
-        }
-      ]
-    },
     "/images/vocabulary/vocab-2ad035b59bb120187af8.webp": {
       "sha256": "398f7166cf29bdf527c456e6b1555c2fa4b4b0a520174b4ae61972ff10e32543",
       "width": 1618,
@@ -2927,28 +6910,6 @@
           "width": 1200,
           "src": "/images/vocabulary/responsive/f34179fab530297a910a2eed7dc672694097772b8b24390e5c728c564eb325e5.webp",
           "bytes": 58110
-        }
-      ]
-    },
-    "/images/vocabulary/vocab-317b59d83163415f17e2.webp": {
-      "sha256": "ff32988ec4af5945bead6a9e1bb652abff6adf654e23b7fa0e11a39a7ba2322e",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/7c1139fe7505543c8bd01b80841df52fcb299f804af2da4a9a15b42479743327.webp",
-          "bytes": 7352
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/245f6d36cf1ff8dd0f77ae31fb04a2f5e3ab7b2efa4578ee1f5e6e1ee92b0b3f.webp",
-          "bytes": 23390
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/466e9fea8202f8583f9edcf284ce72b94df2fa059ddfc19d60cd13472385cf5f.webp",
-          "bytes": 46102
         }
       ]
     },
@@ -3279,28 +7240,6 @@
           "width": 1200,
           "src": "/images/vocabulary/responsive/051875f72c90daf51d084181f028c2d9be4c9e5363cacee95835328aa492acaa.webp",
           "bytes": 59584
-        }
-      ]
-    },
-    "/images/vocabulary/vocab-3f8f6d6f1bea306af056.webp": {
-      "sha256": "442c3839cc4930cd280c1d192f82bf9f0a314352b6499f6c81b9edd96059e3cb",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/83114e72ae8b24b3dd0c77c416900632b3c53c847e008bbf4294fdc23f4e66e7.webp",
-          "bytes": 13366
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/14e5df606f71a2a22f62fb7992ee9cfddbeb02f3320a6bc7ce9e174fa6fa84e8.webp",
-          "bytes": 35314
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/5fbd6034283fd71916ae11ad67e8c7e557f316bb05e3c36d4d3b7183d276cce4.webp",
-          "bytes": 65086
         }
       ]
     },
@@ -3807,28 +7746,6 @@
           "width": 1200,
           "src": "/images/vocabulary/responsive/e1ff36d17e164faa3c061079435574435851a38809abc578579ef7edb5490d71.webp",
           "bytes": 40334
-        }
-      ]
-    },
-    "/images/vocabulary/vocab-530cb35a38b8145bde5c.webp": {
-      "sha256": "4cfc1088f2f5a1c190428415d61bd923a1d506ffe740948648b65c13fb216823",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/2d65d0ea594706427d25109eee3a4fe0236086045e3add6f44cff288fce4821a.webp",
-          "bytes": 7242
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/020bda791f30d5c7aa113357524923f99205013b049db9a8b4f1bfe650cf8035.webp",
-          "bytes": 23064
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/3aa8919fb4068aaac4cbbf76676aaf02c12c63ac94c813df2dd73c288f4d534a.webp",
-          "bytes": 45606
         }
       ]
     },
@@ -4932,28 +8849,6 @@
         }
       ]
     },
-    "/images/vocabulary/vocab-938e166e2011a4047337.webp": {
-      "sha256": "1b40dad0ad7b6cbc1b3ba55ff563ed51fa94a0f67c1a729b3dddbc6884f6d4c5",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/d3452e1d1bb84bcd61e88147baffa5a77f42a7f5f9c1b15a96dd510d6a87fd5e.webp",
-          "bytes": 8642
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/f92f6febcf618e09abbe3ec3097e3a197f5b32720f67aecc28850ce970de0b72.webp",
-          "bytes": 23738
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/d1b2bf297909becf8a8daec620a84d75a3dc397d1b625d95c6e1a21fd13f9afe.webp",
-          "bytes": 44888
-        }
-      ]
-    },
     "/images/vocabulary/vocab-94b3559df0cea72df621.webp": {
       "sha256": "a5533044de53d1fc7df2e7808719bba3d1880d17ead6be57063b6095a94ec21d",
       "width": 1618,
@@ -5064,28 +8959,6 @@
         }
       ]
     },
-    "/images/vocabulary/vocab-9792b9b165a4a1933768.webp": {
-      "sha256": "faa3c7cf820bc52a57ffcf53ba682006ef4f8957ef2171f5e474672e23c343b9",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/ba5142ab0b4052f298d2f42678a5ae5eabf3716653e6156034647351e94ff098.webp",
-          "bytes": 8394
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/0c27f49670a77dd58871b7f0df9c6ff6c5fe9b8269a9613b46669ab146f034c7.webp",
-          "bytes": 25460
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/8b92fed010d6005d99af7f6b68d33b779e6182856a2ddb62aeb0094919d6f884.webp",
-          "bytes": 47948
-        }
-      ]
-    },
     "/images/vocabulary/vocab-993a86e1cf34a7b67af5.webp": {
       "sha256": "3fce361156e71702dead2388e75a8973062eb7f2f728a52e4f74d8e9ea3fedd5",
       "width": 1618,
@@ -5174,28 +9047,6 @@
         }
       ]
     },
-    "/images/vocabulary/vocab-9e984b24f6334c65cb49.webp": {
-      "sha256": "0942a17c102e5b5dc83f071b753c6daf50cc7c26eb0d435587fd7b2904688183",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/5832c506e46b285638130a275e27da694c564907b90c026cdbd5a92172d3b6c7.webp",
-          "bytes": 6432
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/517c00c274b0faae77f74f641d57a54ec5572369d91857d336db3389ac2645d4.webp",
-          "bytes": 17282
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/8405db746c25025615b65c15e68eaa8eee93eca87bc2ce52f09207c29df44b4a.webp",
-          "bytes": 33446
-        }
-      ]
-    },
     "/images/vocabulary/vocab-9ea018a90560fe4d9f30.webp": {
       "sha256": "5a87188932890726b8d967fd82752de2660eb05c1978bcf72460c76abff43f7c",
       "width": 1618,
@@ -5215,28 +9066,6 @@
           "width": 1200,
           "src": "/images/vocabulary/responsive/fdc1306edb673bca1b8e0e8dfd858702f59b8bf20efa77dfd9beb6590545fb6a.webp",
           "bytes": 46102
-        }
-      ]
-    },
-    "/images/vocabulary/vocab-9eade7042ba11d24699b.webp": {
-      "sha256": "9fbfe21856d1dbb771619015032b64b41c259727960c73f142301651b922440e",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/452d204ca239c6aeae853234976663a4eef60a8b5aeb1adf4f5912837498f4e4.webp",
-          "bytes": 8536
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/3e8f62141d0292a7459e28ba59c0039eb8bed326debf9daaa70640f6e1a99f0e.webp",
-          "bytes": 23944
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/b94bcee7581a5ffc8b2f4c780eaccee283b17237d096f415f11a4ef999c805b1.webp",
-          "bytes": 45362
         }
       ]
     },
@@ -5281,50 +9110,6 @@
           "width": 1200,
           "src": "/images/vocabulary/responsive/8f2cbce9db6503ef83de31770b943b82254d7c49f80b0be9cb978718f20372fa.webp",
           "bytes": 57776
-        }
-      ]
-    },
-    "/images/vocabulary/vocab-a15bdf8e69b63f6ca704.webp": {
-      "sha256": "37e291782abf1af3cf24306504d54636ca5f75662856b99faef72b8767f3fbe1",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/c27b6eac26acf11b6bb7167b99f45a2af33885c558aa9368b057c8379a5904fa.webp",
-          "bytes": 9398
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/9744afbcaf48c1f6621f8c3414de6c1ea7395547f19466bb12fb524b2cfe9996.webp",
-          "bytes": 27046
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/683f16ff55d2a8f092c35b68b6bf01cbc6bacff0ae3a516fd7410e00482a576e.webp",
-          "bytes": 51904
-        }
-      ]
-    },
-    "/images/vocabulary/vocab-a1863dd5b44ab9363837.webp": {
-      "sha256": "f27c2facfc1dfa0cf70d8f4cb72ed25b930748eeb1229ce420162273ae23cc9e",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/9f58e6bc31effe58aa108dd275fe9558322d7db3108eda32ad0666d2063ef520.webp",
-          "bytes": 7668
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/63f6135b9456c165c6f2bbcc18eb354c3e531427593bf218accecccf8b42507c.webp",
-          "bytes": 19020
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/d9038e7b529e98b9fc7fd40c9c23280b79f947cdfe97836ce2dc0a3fae68e4ad.webp",
-          "bytes": 33350
         }
       ]
     },
@@ -5394,28 +9179,6 @@
         }
       ]
     },
-    "/images/vocabulary/vocab-a7c58aae6bc4c2ccda0e.webp": {
-      "sha256": "d2d09a8a9b2ad47c3416f91568fad7957990c4a6cb9610b27f2be22075d3888a",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/99244392ff032364af2bf32120df71ebd0b8507f7e6bc52d131f9bf50818e392.webp",
-          "bytes": 9684
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/59e5dd8d5099bb1703eff72c5b165d0a20c241ba6b3530b63d140a56912bbdc4.webp",
-          "bytes": 29442
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/8fdecd9c530948af53d33b7eb33e351ade38361e4294509c0619c972db0985c3.webp",
-          "bytes": 56664
-        }
-      ]
-    },
     "/images/vocabulary/vocab-a95fd66aabddf7615af1.webp": {
       "sha256": "6c4901b36c91f38428e18a7e2b3b621b0c9a8a4200988efa41d43185025cd0db",
       "width": 1618,
@@ -5435,28 +9198,6 @@
           "width": 1200,
           "src": "/images/vocabulary/responsive/a6d6b49f178bf285fe6cd95bcef329c15307691bf664566f11a8cd2c7846c01e.webp",
           "bytes": 50032
-        }
-      ]
-    },
-    "/images/vocabulary/vocab-aa5f3c6ddafa6cf95227.webp": {
-      "sha256": "8ae255e2bc8372f2a34b859d44fced9cd3d76e218b5c1af60f4dfed8ea20b395",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/5dcece246babd75c5d23d56ea462f5e5e3a36d1cd57678aa3b28a5ac18458dbe.webp",
-          "bytes": 11766
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/a9c03f7d16411a7d76a28d54270de542a29623819845e0526d500de34089c4fe.webp",
-          "bytes": 30136
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/5a1c32202fc410e4293aac346c48b67d89b86358586828e72e75eb2b61236b58.webp",
-          "bytes": 53218
         }
       ]
     },
@@ -5501,28 +9242,6 @@
           "width": 1200,
           "src": "/images/vocabulary/responsive/b7aa9cea4094768c0adcb26e89f661e64648e4fb5df2825f0151c97ec3608cbd.webp",
           "bytes": 45642
-        }
-      ]
-    },
-    "/images/vocabulary/vocab-afdb5ed11054adaf68b4.webp": {
-      "sha256": "69c4669ca52f7d0de1226d65d79c87ff02d64c1cd862e9b60398e0548c7a47b5",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/ad10142219a1dde0d51c7f129bff4782c27474cf7b8bbf446621b37fac9da320.webp",
-          "bytes": 8226
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/4868d120a1758302ee5c9af8dd1857b49ea8f6fd9328b4e4a39f1c4786e54a7b.webp",
-          "bytes": 22026
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/08c635b2536a5572d7ad58f8830d74494828475a60b05c9f04b721052e9009e4.webp",
-          "bytes": 40482
         }
       ]
     },
@@ -5655,28 +9374,6 @@
           "width": 1200,
           "src": "/images/vocabulary/responsive/d3f762f50752a0b8550f5bf6d5ed9c7557b8d58097e0a92c4c381c1c9c99ecef.webp",
           "bytes": 62932
-        }
-      ]
-    },
-    "/images/vocabulary/vocab-b681146eefcf86586470.webp": {
-      "sha256": "a55b13b2115a184b24aaac1f606ed8d0e54d2ee10f27ad86383c0ae053a9b407",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/87f6bc7e48b213180e6cb47da8726345fb00a9db8fee2d7f69b05b922de9f843.webp",
-          "bytes": 9634
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/faabf12d9db7740009d3f6eb607efb93935d4d5a1153f178946471db4cc6afe5.webp",
-          "bytes": 28390
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/08f116c77e03e9f0d9900803c2e97513fd01dd54c5d202cefb5f5e125ee971e3.webp",
-          "bytes": 54824
         }
       ]
     },
@@ -5834,28 +9531,6 @@
         }
       ]
     },
-    "/images/vocabulary/vocab-bfee5fd5214f8d4d64d3.webp": {
-      "sha256": "8d0a2f1dd76aedf24ce03f10dc25f37253393ef59dccb5e5b9df5864e9972454",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/fe64dfbf8947f8dee5174c6b2fd3eb1f778e2fa33d7795a5c944b72407dca0b1.webp",
-          "bytes": 10878
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/2ec742c90e431a10477a8d453211ed925764e2e38ca31506a27046bf410d4fef.webp",
-          "bytes": 27960
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/377f67c418f4c216ef7cfb7d26a0c18fdc25259c1f35ab4a8d98aa04b0e49663.webp",
-          "bytes": 50704
-        }
-      ]
-    },
     "/images/vocabulary/vocab-c01aee8273ee47d9a007.webp": {
       "sha256": "24848a4026bc018ef3ff72ae0982a40f91255238e53e7e3d81b33e2d3ebdd087",
       "width": 1618,
@@ -5875,28 +9550,6 @@
           "width": 1200,
           "src": "/images/vocabulary/responsive/7e231d49bf7837b8e5ced7e1f0ee47ed3174574bacc9366009deec9f950c6559.webp",
           "bytes": 46980
-        }
-      ]
-    },
-    "/images/vocabulary/vocab-c2e6f2246c6679a64e04.webp": {
-      "sha256": "1a34239faffd7806f924c3ad2cbd767e8080e9c8454e4ff3b1ab6df2e35136f4",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/8339fcb3feab51a05791f4b2a4cde5f7a12cc14fa202b1f412bd96ecfbd62e15.webp",
-          "bytes": 7874
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/65f43c81e8d87f4f3ad47fd91bbb0548a78e2d5a24c4a1c85162617cef77ec51.webp",
-          "bytes": 19308
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/fb2293494a6b50acd39d285661c04b4c30d0c19197e9795915647e1024990e2a.webp",
-          "bytes": 35102
         }
       ]
     },
@@ -5941,28 +9594,6 @@
           "width": 1200,
           "src": "/images/vocabulary/responsive/6b9fe6080dc51f72f6d7be9bda44e4fd603c4ef7df231a4d9357693863dd8752.webp",
           "bytes": 21878
-        }
-      ]
-    },
-    "/images/vocabulary/vocab-c6dcfa754addc4e1d4f9.webp": {
-      "sha256": "4b4dd3b6c7ce335571062a789f50c87dcbeb4e1d33fda1a4d0a7037ffab37a10",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/fd5278a42f551b5074dbdd338b618b05369c429e577adcb2de554c49d4cb625b.webp",
-          "bytes": 8048
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/c1095cfeb64cef1c6973ac6624f15f239bf61569753d73c868e1c72dca86f0c1.webp",
-          "bytes": 21830
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/c26e0c8375d229c5419bb9c224b2bc651efbc8b4c5072831a0b0b7edf00066ca.webp",
-          "bytes": 39196
         }
       ]
     },
@@ -6516,28 +10147,6 @@
         }
       ]
     },
-    "/images/vocabulary/vocab-e7fbcd14cb00ce6dd9a9.webp": {
-      "sha256": "4d7dafa83185040953a142b41c867bd6a19eb35b2d2d3ff00cbe72ad19ab19a8",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/158c9c3805366ec333b61455c6e4312fb8e693a45d05af5ff09c7797510f7acc.webp",
-          "bytes": 9958
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/4b2bd0675584cca584b36d03bf81e8e698ca7689d64c91aa96883d7cb2dacec3.webp",
-          "bytes": 29436
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/ccedf11c970d383d4af02713504c8aabf2fc5754491352a0dc5fc0c819bda88d.webp",
-          "bytes": 54118
-        }
-      ]
-    },
     "/images/vocabulary/vocab-e9ae83756d55d9b36b6f.webp": {
       "sha256": "6301dcec3af837cf888b4758e71eed817f4dbc03dd3b3ed5f706e2d8d2f3016a",
       "width": 1618,
@@ -6604,28 +10213,6 @@
         }
       ]
     },
-    "/images/vocabulary/vocab-edfb1fd0fc4cde73d455.webp": {
-      "sha256": "7a45d82c87a4a2896f92a587515b65a04e6672cfa780a30fec00f6996f0a99cc",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/7dabe31c6c6ec09f700361bcf5dc5d5d56ca1b0f3c5ac2c33e21be7db461f479.webp",
-          "bytes": 9736
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/371d2dd4e7f7bb4a0c0c5b41e8cf7ef8f7de514397fa7106cdd85539e6ce987d.webp",
-          "bytes": 29000
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/65a13c8cbc1fa1c9f86ba9e2673c6d7311f237d57debb6c5b2e1b6be0202ac76.webp",
-          "bytes": 53556
-        }
-      ]
-    },
     "/images/vocabulary/vocab-f02d0d35e82b9698d32b.webp": {
       "sha256": "69a3ff24d14b1779fd51764c58fe978cdee6497b42ca15b5b46f250ed411092d",
       "width": 1618,
@@ -6667,28 +10254,6 @@
           "width": 1200,
           "src": "/images/vocabulary/responsive/d3a687462b9b9a1da351d27e567c0c26a8cbd46aea79844c71d3543fbb4d3837.webp",
           "bytes": 57306
-        }
-      ]
-    },
-    "/images/vocabulary/vocab-f2a875beba85ddd81304.webp": {
-      "sha256": "bc02b02098c10ede2c0c4a543042548cade6cbd3be668a2fbc6954be442b1959",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/f17234fdb3d316ab6339f49c74772f8a35c4974aaa421b14cd29d323ce4d79da.webp",
-          "bytes": 10014
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/5f1536ba6e8936dd447f71421650b00c068bd3954072792f6f4e6e7ae6ea13a5.webp",
-          "bytes": 26578
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/173cf47525e3fd4374336e659f1a4d3991bf7d35f3363ba1cc78a7ea095d4f14.webp",
-          "bytes": 48666
         }
       ]
     },
@@ -6953,28 +10518,6 @@
           "width": 1200,
           "src": "/images/vocabulary/responsive/8b18607c5d3dbc63ab755b3a58501a86cad06478a8e61a666a82d8cfc4ce3dc8.webp",
           "bytes": 27070
-        }
-      ]
-    },
-    "/images/vocabulary/vocab-ffa68167e3b384abb4da.webp": {
-      "sha256": "31fe97e0b6fa54673a9ff2c1b7bbbf7ae303c40de8ce0be77170371c73761517",
-      "width": 1618,
-      "height": 1000,
-      "variants": [
-        {
-          "width": 400,
-          "src": "/images/vocabulary/responsive/efc9b3cb5275c66a84249fcab760723a64c9b52599d03f5218e5dde21050557e.webp",
-          "bytes": 9696
-        },
-        {
-          "width": 800,
-          "src": "/images/vocabulary/responsive/84e0159f33d8c9cd24b0fada1eba603894b5da58aef8dc585ee424b7cc8cb85b.webp",
-          "bytes": 27628
-        },
-        {
-          "width": 1200,
-          "src": "/images/vocabulary/responsive/687b6d5f8ec467557a24710c3fd09646ac13458d427e42f1094ac726023f6717.webp",
-          "bytes": 52784
         }
       ]
     }

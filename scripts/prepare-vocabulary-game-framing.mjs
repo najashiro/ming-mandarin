@@ -3,7 +3,7 @@ import { createHash } from 'node:crypto';
 import { readFile, writeFile } from 'node:fs/promises';
 import sharp from 'sharp';
 
-const catalogNames = ['vocabulary', 'lesson4', 'lesson5', 'lessons123', 'lessons123-context', 'lessons123-generated', 'lessons123-pedagogy', 'lessons123-geography'];
+const catalogNames = ['vocabulary', 'lesson4', 'lesson5', 'lessons123', 'lessons123-context', 'lessons123-generated', 'lessons123-pedagogy', 'lessons123-geography', 'corpus-completion', 'corpus-completion-diagrams'];
 const catalogs = await Promise.all(catalogNames.map(async name => JSON.parse(await readFile(`data/${name}-media.json`, 'utf8'))));
 const current = new Map(catalogs.flat().map(entry => [entry.wordId, entry]));
 const bounds = {};

@@ -53,7 +53,13 @@ describe('vocabulario activo: evidencia, búsqueda y recursos', () => {
       expect(vocabularyCatalog.some(w => w.id === media.wordId)).toBe(true);
       expect(existsSync(`public${media.src}`)).toBe(true);
     }
-    for (const word of vocabularyCatalog.filter(word => word.visual_ming.visual_mode === 'none')) expect(imageForWord(word.id)).toBeUndefined();
+    // Editorial diagrams now support abstract words and names without changing
+    // the corpus classification or turning those hints into visual quizzes.
+    for (const word of vocabularyCatalog.filter(word => word.visual_ming.visual_mode === 'none' || word.visual_ming.visual_mode === 'text_only')) {
+      expect(imageForWord(word.id)).toBeDefined();
+      expect(imageForWord(word.id)?.imageQuizEligible).toBe(false);
+      expect(availablePracticeTypes(word)).not.toContain('image');
+    }
     expect(vocabularyMedia.filter(media => media.status === 'approved').length).toBeGreaterThan(200);
     for (const asset of vocabularyMedia.filter(asset => !asset.imageQuizEligible)) {
       const word = vocabularyCatalog.find(word => word.id === asset.wordId);
@@ -269,6 +275,6 @@ describe('partición exclusiva y ejemplos globales', () => {
     expect(sets['l1-l2-l3'].some(word => word.hanzi === '米')).toBe(Boolean(getVocabularySet('l1-l2-l3').find(word => word.hanzi === '米') && !vocabularyMixExcludedIds.has(vocabularyCatalog.find(word => word.hanzi === '米')!.id)));
     expect(sets['l1-l2-l3'].some(word => word.hanzi === '饭')).toBe(Boolean(getVocabularySet('l1-l2-l3').find(word => word.hanzi === '饭') && !vocabularyMixExcludedIds.has(vocabularyCatalog.find(word => word.hanzi === '饭')!.id)));
     expect(sets['l1-l2-l3'].find(word => word.hanzi === '米饭')?.hanzi).toBe('米饭');
-    expect(sets['l1-l2-l3'].some(word => !imageForWord(word.id))).toBe(true);
+    for (const words of Object.values(sets)) expect(words.every(word => imageForWord(word.id))).toBe(true);
   });
 });

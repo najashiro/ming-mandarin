@@ -8,6 +8,8 @@ import contextPrompts from '@/docs/lessons123-context-prompts.json';
 import generatedPrompts from '@/docs/lessons123-generated-prompts.json';
 import lesson4Prompts from '@/docs/lesson4-image-prompts.json';
 import lesson5Prompts from '@/docs/lesson5-image-prompts.json';
+import completionPrompts from '@/docs/corpus-completion-image-prompts.json';
+import completionDiagrams from '@/docs/corpus-completion-diagrams-review.json';
 import lesson4 from '@/data/lesson4-public.json';
 import { vocabularyCatalog, getVocabularyLesson } from '@/lib/vocabulary';
 import { splitImageCorrection, withImageCorrection } from '@/lib/image-prompt-correction';
@@ -24,6 +26,8 @@ export type AdminVocabularyImageEntry = VocabularyMediaEntry & {
 };
 const prompts = new Map<string, { prompt: string; hanzi?: string; pinyin?: string; spanish?: string }>(promptCatalog.entries.map(entry => [entry.wordId, entry]));
 for (const entry of [...lesson4Prompts.entries, ...lesson5Prompts.entries, ...countPrompts.entries, ...contextPrompts.entries, ...generatedPrompts.entries, ...pedagogyPrompts.entries, ...geographyPrompts.entries]) if (entry.prompt) prompts.set(entry.wordId, { prompt: entry.prompt });
+for (const entry of completionPrompts.entries) for (const wordId of entry.ids) prompts.set(wordId, { prompt: entry.prompt });
+for (const entry of completionDiagrams.entries) prompts.set(entry.wordId, { prompt: entry.prompt });
 const words = new Map(vocabularyCatalog.map(word => [word.id, word]));
 const digest = (prompt: string) => createHash('sha256').update(prompt).digest('hex');
 const columns = 'word_id,status,prompt,asset_sha256,prompt_sha256,revision,reviewed_at';

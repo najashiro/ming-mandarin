@@ -1,4 +1,9 @@
 import { test, expect } from '@playwright/test';
+import { readFileSync } from 'node:fs';
+import lesson6 from '../../data/lesson6-public.json' with { type: 'json' };
+import type { ActiveWord } from '../../lib/vocabulary';
+import type { VocabularyMediaEntry } from '../../lib/vocabulary-media';
+import { startMix } from '../../lib/vocabulary-review';
 import type { MixSession } from '../../lib/vocabulary-review';
 import { emptyVocabularyState, parseVocabularyState, vocabularyStorageKey } from '../../lib/vocabulary-storage';
 
@@ -260,4 +265,72 @@ test('mobile Mix keeps controls reachable without horizontal overflow', async ({
   }
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.screenshot({ path: info.outputPath('mix-mobile-revealed.png'), fullPage: true });
+});
+
+test('a saved Mix round shows the kitchen image, preserves progress and respects withdrawal', async ({ page }, info) => {
+  const vocabularyMedia = JSON.parse(readFileSync(new URL('../../data/corpus-completion-media.json', import.meta.url), 'utf8')) as VocabularyMediaEntry[];
+  const image = vocabularyMedia.find(entry => entry.wordId === 'v-厨房' && entry.status === 'approved');
+  expect(image, 'The kitchen must have a reviewed production image').toBeDefined();
+  const words = lesson6.vocabulary as ActiveWord[];
+  const kitchen = words.find(word => word.id === 'v-厨房')!;
+  const otherWords = words.filter(word => word.id !== kitchen.id).slice(0, 29);
+  const deck = [...otherWords.slice(0, 15), kitchen, ...otherWords.slice(15)].map(word => word.id);
+  const session = startMix({ words, scope: 'l6', requestedSize: 30, userId: 'guest', id: 'saved-kitchen-round', now: 1795123200000 });
+  session.deck = deck;
+  session.index = 15;
+  session.revealed = true;
+  session.answers = deck.slice(0, 15).map((wordId, index) => ({
+    id: `${session.id}:${index}:${wordId}`, wordId, known: index < 6, answeredAt: session.startedAt + index,
+  }));
+  const state = { ...emptyVocabularyState(), favorites: [kitchen.id], sessions: { l6: session } };
+  await page.addInitScript(saved => {
+    if (!localStorage.getItem('ming-vocabulary-v1:guest')) localStorage.setItem('ming-vocabulary-v1:guest', JSON.stringify(saved));
+  }, state);
+  await installAudioMock(page);
+  let published = true;
+  await page.route('**/api/vocabulary/images', route => route.fulfill({
+    json: vocabularyMedia.filter(entry => entry.status === 'approved' && (published || entry.wordId !== kitchen.id)),
+  }));
+  await page.setViewportSize({ width: 390, height: 844 });
+  await ready(page, '/study/l6/games/vocabulary-mix');
+  await page.evaluate(() => window.dispatchEvent(new Event('focus')));
+  const card = page.getByRole('article', { name: 'Ficha de 厨房', exact: true });
+  const photo = card.locator('img');
+  await expect(photo).toBeVisible();
+  await expect(photo).toHaveAttribute('loading', 'eager');
+  await expect.poll(() => photo.evaluate((element: HTMLImageElement) => element.complete && element.naturalWidth > 0)).toBe(true);
+  await expect(page.locator('.vocabulary-mix-score')).toContainText('Respondidas: 15/30');
+  await expect(page.locator('.vocabulary-mix-score')).toContainText('Correctas: 6');
+  await expect(page.locator('.vocabulary-mix-score')).toContainText('Incorrectas: 9');
+  await expect(card.locator('.word-pinyin')).toContainText('chúfáng');
+  await expect(card.locator('.vocabulary-translation')).toContainText('cocina');
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.screenshot({ path: info.outputPath('mix-kitchen-image-mobile.png'), fullPage: true });
+
+  await page.reload();
+  await expect(page.locator('.active-vocabulary')).toHaveAttribute('data-ready', 'true');
+  await page.evaluate(() => window.dispatchEvent(new Event('focus')));
+  await expect(photo).toBeVisible();
+  await expect.poll(() => photo.evaluate((element: HTMLImageElement) => element.complete && element.naturalWidth > 0)).toBe(true);
+  const resumed = await page.evaluate(() => JSON.parse(localStorage.getItem('ming-vocabulary-v1:guest')!));
+  expect(resumed.sessions.l6).toEqual(session);
+  expect(resumed.favorites).toEqual([kitchen.id]);
+  await card.getByRole('button', { name: 'Ver ejemplo: 厨房', exact: true }).click();
+  await expect(card.locator('.vocabulary-example-text')).not.toBeEmpty();
+  await card.getByRole('button', { name: 'Ver palabra: 厨房', exact: true }).click();
+  await expect(photo).toBeVisible();
+
+  published = false;
+  await page.evaluate(() => window.dispatchEvent(new Event('focus')));
+  await expect(photo).toHaveCount(0);
+  await expect(card.locator('.vocabulary-translation')).toContainText('cocina');
+  published = true;
+  await page.evaluate(() => window.dispatchEvent(new Event('focus')));
+  await expect(photo).toBeVisible();
+  await page.getByRole('button', { name: 'Lo sabía', exact: true }).click();
+  await expect(page.locator('.vocabulary-mix-score')).toContainText('Respondidas: 16/30');
+  const advanced = await page.evaluate(() => JSON.parse(localStorage.getItem('ming-vocabulary-v1:guest')!).sessions.l6);
+  expect(advanced.deck).toEqual(deck);
+  expect(advanced.answers).toHaveLength(16);
+  expect(advanced.answers[15]).toMatchObject({ wordId: kitchen.id, known: true });
 });

@@ -1,4 +1,6 @@
 import geographyMedia from '@/data/lessons123-geography-media.json';
+import completionMedia from '@/data/corpus-completion-media.json';
+import completionDiagrams from '@/data/corpus-completion-diagrams-media.json';
 import pedagogyMedia from '@/data/lessons123-pedagogy-media.json';
 import contextMedia from '@/data/lessons123-context-media.json';
 import generatedMedia from '@/data/lessons123-generated-media.json';
@@ -8,7 +10,7 @@ import lesson4Media from '@/data/lesson4-media.json';
 import media from '@/data/vocabulary-media.json';
 import type { ActiveWord } from './vocabulary';
 type LegacyPracticeType = 'hanzi' | 'image' | 'context';
-export const vocabularyMedia = [...new Map([...media, ...lesson4Media, ...lesson5Media, ...lessons123Media, ...contextMedia, ...generatedMedia, ...pedagogyMedia, ...geographyMedia].map(entry => [entry.wordId, entry])).values()];
+export const vocabularyMedia = [...new Map([...media, ...lesson4Media, ...lesson5Media, ...lessons123Media, ...contextMedia, ...generatedMedia, ...pedagogyMedia, ...geographyMedia, ...completionMedia, ...completionDiagrams].map(entry => [entry.wordId, entry])).values()];
 export type VocabularyMediaEntry = (typeof media)[number];
 const visibleImageStatuses = new Set(['approved']);
 export function imageForWord(id: string, catalog: readonly VocabularyMediaEntry[] = vocabularyMedia) {

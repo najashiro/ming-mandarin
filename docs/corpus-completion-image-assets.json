@@ -1,0 +1,938 @@
+{
+  "styleId": "ming-vocabulary-transparent-subject-golden-v2",
+  "assets": [
+    {
+      "slug": "kitchen",
+      "wordIds": [
+        "v-厨房"
+      ],
+      "master": "output/imagegen/corpus-completion/kitchen.png",
+      "masterSha256": "001dfbec95ca5f22132405ce8a67777be06d9b349e16fbf906d9dc41747e6117",
+      "normalizedSha256": "39d00faf4e8ea5f6a4772d49c7ba83344b35b521ac488217859a02b2ceb3395c",
+      "src": "/images/vocabulary/corpus-completion/kitchen-39e9d845ddf0.webp",
+      "sha256": "39e9d845ddf0c1b6a8e302b691ac5a2a30ada617a152c462758f96127f4a7fda",
+      "bytes": 164928,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "canteen",
+      "wordIds": [
+        "v-食堂"
+      ],
+      "master": "output/imagegen/corpus-completion/canteen.png",
+      "masterSha256": "9d491fa710e1ca75387fedf78be3d1fb544ce336dd4ed3292427f0b9ab3ef506",
+      "normalizedSha256": "e1ab82d3b9eaaf833b1a857ba25b15df7802dfead04f17fbb8a8dbc9d1c35ea7",
+      "src": "/images/vocabulary/corpus-completion/canteen-dc945ff98e39.webp",
+      "sha256": "dc945ff98e39e0c63cf2bcf55d7038b061eb5a0a1b26fe9c750e2656e312bcab",
+      "bytes": 115890,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "school-gate",
+      "wordIds": [
+        "v-校门"
+      ],
+      "master": "output/imagegen/corpus-completion/school-gate.png",
+      "masterSha256": "52a6386857d4df84c289551b825e811c04f3e68c2978bae72c7289cb3e405afa",
+      "normalizedSha256": "8d4dd8dd45c7c3bb06a6200f330df34bf758ce95360b3a91483724a5208b4b80",
+      "src": "/images/vocabulary/corpus-completion/school-gate-3663db493529.webp",
+      "sha256": "3663db49352944b65af11bfe648af49df2dd089b85fa87ea0c7e1c7b661802bc",
+      "bytes": 93106,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "office-building",
+      "wordIds": [
+        "v-办公楼",
+        "v-楼"
+      ],
+      "master": "output/imagegen/corpus-completion/office-building.png",
+      "masterSha256": "8ffef02572f5e9d1adbd80205c85ca76e2b20bbf7c3fc32079b907d2c6d09a69",
+      "normalizedSha256": "2cc00a07dfc0500b49c51df8808f2c36e40379b663d9f500ddbc857994a3295c",
+      "src": "/images/vocabulary/corpus-completion/office-building-27cd5517497b.webp",
+      "sha256": "27cd5517497ba24eec60e7aaa6346b4e04517bd81647b89414dd51a3158ea31f",
+      "bytes": 169438,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "office-work",
+      "wordIds": [
+        "v-办公"
+      ],
+      "master": "output/imagegen/corpus-completion/office-work-v2.png",
+      "masterSha256": "3602e6f6a4dfc28b1b502cf7b59cbbf8c33dfb753680d8abef0109c0ad355726",
+      "normalizedSha256": "6c89b2513a739ab16e76efdea790789a859f4ba6865a5730e28c4903bc219dd0",
+      "src": "/images/vocabulary/corpus-completion/office-work-d528e0c8c15b.webp",
+      "sha256": "d528e0c8c15b9e6184920321757e8ce931d3bb0529027319fc3f7848408f52f6",
+      "bytes": 121016,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "library",
+      "wordIds": [
+        "v-图书馆"
+      ],
+      "master": "output/imagegen/corpus-completion/library.png",
+      "masterSha256": "06894881c15ff16c7402fdcb0a8507048defc86ba5f6726e86487a79197cae06",
+      "normalizedSha256": "eb57147dfcb2b7201d0be4421805f324df8062e830c07942a8334120557d62e8",
+      "src": "/images/vocabulary/corpus-completion/library-01ebe96e1780.webp",
+      "sha256": "01ebe96e17808ffea6e2b66807fbd3027711b18fcf4de6bdd5ca9974421e45b3",
+      "bytes": 195452,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "gymnasium",
+      "wordIds": [
+        "v-体育馆"
+      ],
+      "master": "output/imagegen/corpus-completion/gymnasium.png",
+      "masterSha256": "ac2f7a109647f560d23dac771fa17a107a11e05d2a8642c04abf5a0ab2a5508c",
+      "normalizedSha256": "7a84dcdddfe41fe97fc2ff01d691ca71d5067ee4f43a07747052429e165200bb",
+      "src": "/images/vocabulary/corpus-completion/gymnasium-8f5153e1dfab.webp",
+      "sha256": "8f5153e1dfabcd98ddf352d1ed8cbd6bb708b1b396757ec00a36acf53e29d24c",
+      "bytes": 147750,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "physical-education",
+      "wordIds": [
+        "v-体育"
+      ],
+      "master": "output/imagegen/corpus-completion/physical-education-v2.png",
+      "masterSha256": "984fc7c15a55646f1fa16000672deec98b8ea0e7465a864e690fe09fc12eeb95",
+      "normalizedSha256": "9db04baff703de5fb5416f033ca43ceba352b674dfcffb578a957baf559ccd2f",
+      "src": "/images/vocabulary/corpus-completion/physical-education-149dfa070b53.webp",
+      "sha256": "149dfa070b5338e932c734fbf06f912d33c2474d81e759063bbf2f2719fb77a5",
+      "bytes": 163180,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "bank",
+      "wordIds": [
+        "v-银行"
+      ],
+      "master": "output/imagegen/corpus-completion/bank.png",
+      "masterSha256": "1f446419d69976e904c7d7084b5fbdd39880c6b46e8bd1b453f1e1870c8ed9d4",
+      "normalizedSha256": "388409cabed84e8d244749b973e2e26c6edd1fcab28f9f9f317cd8831a8a06f2",
+      "src": "/images/vocabulary/corpus-completion/bank-5042a004b985.webp",
+      "sha256": "5042a004b985772752c0d47453edd38307c96492ab13c95d61863019d02e27ce",
+      "bytes": 96970,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "shared-dormitory",
+      "wordIds": [
+        "v-宿舍"
+      ],
+      "master": "output/imagegen/corpus-completion/shared-dormitory.png",
+      "masterSha256": "d8f78e21b32aa1e3435a04bb3ccf603f287814e4db3d9069234280b3ddf6d8b0",
+      "normalizedSha256": "14a63041f7fdf6e8dee7261d20670ce0d2eed4011560923b606bf90839a133a0",
+      "src": "/images/vocabulary/corpus-completion/shared-dormitory-431d0ed8deba.webp",
+      "sha256": "431d0ed8deba2f0dfb3562acb6d7c33dc9051855f17d4d5ad80df678aecce1a7",
+      "bytes": 141828,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "anxious",
+      "wordIds": [
+        "v-着急"
+      ],
+      "master": "output/imagegen/corpus-completion/anxious-v2.png",
+      "masterSha256": "0cccc49c185c1c5e78b64a6796fd9525ea689254813094c125fede39a6e820ea",
+      "normalizedSha256": "5c0da99a04edd210b722bf968fe642ede08e18b17ae8972e07861b8c50ba336b",
+      "src": "/images/vocabulary/corpus-completion/anxious-a2384536feb9.webp",
+      "sha256": "a2384536feb910d244206d3e3c8b473451cc5f3e79ca0a502c0f67aeacf81c8a",
+      "bytes": 98202,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "supermarket",
+      "wordIds": [
+        "v-超市"
+      ],
+      "master": "output/imagegen/corpus-completion/supermarket.png",
+      "masterSha256": "d8851d9f4b90d46be07aae069b48dd488d1ba06832e375090f8980996f386d47",
+      "normalizedSha256": "1de24a2af80c97ff3c66cd63d276588dfd16adb362709d0082cb7d15e44540f4",
+      "src": "/images/vocabulary/corpus-completion/supermarket-b277b641e5b0.webp",
+      "sha256": "b277b641e5b0132a605092f0316b94d88b8a4e6b5f923c7f669aa48570b6e273",
+      "bytes": 154680,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "restaurant",
+      "wordIds": [
+        "v-饭馆"
+      ],
+      "master": "output/imagegen/corpus-completion/restaurant.png",
+      "masterSha256": "2da6ee524ae4caf74bce78bc9511d7ad73bc57bb442bdadc1335fa9b0ba8798d",
+      "normalizedSha256": "06f1d773e92692bb13940d799d5a29f1a29956d4beb1a877c55350dd2ae56df4",
+      "src": "/images/vocabulary/corpus-completion/restaurant-4144b6a9ce35.webp",
+      "sha256": "4144b6a9ce355b372d12281891a65741ba71b3a8a0768b3b34a52f093901e118",
+      "bytes": 173094,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "cross-street",
+      "wordIds": [
+        "v-过"
+      ],
+      "master": "output/imagegen/corpus-completion/cross-street.png",
+      "masterSha256": "7f239f10486a88d7f535b38114065c01905db73bb951f9e135a5e8957eba9750",
+      "normalizedSha256": "948a3886a813cf91a07356cdc3e37450cdd33c2871429ecd70ed4a0b8df0779d",
+      "src": "/images/vocabulary/corpus-completion/cross-street-8ea152d2964c.webp",
+      "sha256": "8ea152d2964c9b40d9cb72352a60f6f12428b1d548e5f1e0858c2e309f6872f3",
+      "bytes": 137950,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "road",
+      "wordIds": [
+        "v-马路",
+        "v-路"
+      ],
+      "master": "output/imagegen/corpus-completion/road.png",
+      "masterSha256": "b01799579a5a964ef5d73bbe64e2e3a265f1c1d4881f129b478f793b670928eb",
+      "normalizedSha256": "60faf469987ccde8f73cf5e7086f6ab970e786250d08283e23ec3a09c837dd7f",
+      "src": "/images/vocabulary/corpus-completion/road-f6856c443c41.webp",
+      "sha256": "f6856c443c4128e268ae9c720fe27299a979bda1d32e26d72faa0914f8569dd9",
+      "bytes": 110672,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "hutong",
+      "wordIds": [
+        "v-胡同"
+      ],
+      "master": "output/imagegen/corpus-completion/hutong-v2.png",
+      "masterSha256": "bb1ebf92816c3597c5f98d46723f51e7a43d4758a8d5d077707d25416bac7a73",
+      "normalizedSha256": "d1d4c40bb0064f79c08310e0b2dfd51fe9ab65d2217e07093961c6dcdfe66c84",
+      "src": "/images/vocabulary/corpus-completion/hutong-c5881714d953.webp",
+      "sha256": "c5881714d95392cbdfc42e227ba272bc915b93c37bae362287341fe59939d439",
+      "bytes": 104818,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "waiting",
+      "wordIds": [
+        "v-等"
+      ],
+      "master": "output/imagegen/corpus-completion/waiting.png",
+      "masterSha256": "cab4668245449d6f7b0247bfa6489eee3723486d21df05f9ccb2b19853c16508",
+      "normalizedSha256": "2d9c9ca0cc33a984036caed7d59d84a3be791f229c182389b013c91576c5097b",
+      "src": "/images/vocabulary/corpus-completion/waiting-d802e4508439.webp",
+      "sha256": "d802e4508439c0b96366f95e8c522f0a654ee4536d790b4f0a97df94e315c199",
+      "bytes": 137498,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "city-street",
+      "wordIds": [
+        "v-街道",
+        "v-街"
+      ],
+      "master": "output/imagegen/corpus-completion/city-street.png",
+      "masterSha256": "710964bd6f7bbd90a68b0280b3de5a181ac90a85cc97db1957365de5d61df0bb",
+      "normalizedSha256": "ea996466ad4e7bceb6f4a550353b1224d4f5722b67025de377991bce79407e29",
+      "src": "/images/vocabulary/corpus-completion/city-street-ef1fa158c855.webp",
+      "sha256": "ef1fa158c855541b3f4c1f465ae65b4f3aa11d0d0ae407ec9bd78757f86a0daf",
+      "bytes": 112804,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "bathroom",
+      "wordIds": [
+        "v-卫生间"
+      ],
+      "master": "output/imagegen/corpus-completion/bathroom.png",
+      "masterSha256": "507f313081cd00377ab56fe1ef9e849c9642e59398017ac62e226fd558683dc8",
+      "normalizedSha256": "67a04c758b36e3793dc6f2991651242ca555d1c43f78a62fa3c685190a2b7710",
+      "src": "/images/vocabulary/corpus-completion/bathroom-8b592c9f5f90.webp",
+      "sha256": "8b592c9f5f9031ab620133db217597ee95572dd1102f9a213a1ce72e19c2718d",
+      "bytes": 167084,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "bedroom",
+      "wordIds": [
+        "v-卧室"
+      ],
+      "master": "output/imagegen/corpus-completion/bedroom.png",
+      "masterSha256": "2629216299d314138f1dd34ff5aefd7f85578fc851b213977eacf644f76f3bd2",
+      "normalizedSha256": "8795060273d8b73f2a55caf103fa4b23fda097174ec671524376eec2bdfe792c",
+      "src": "/images/vocabulary/corpus-completion/bedroom-4dfbd32d10bb.webp",
+      "sha256": "4dfbd32d10bb00493db40242463e5b2135481cdb0519aa255dd3b04108d205b7",
+      "bytes": 183748,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "living-room",
+      "wordIds": [
+        "v-客厅"
+      ],
+      "master": "output/imagegen/corpus-completion/living-room.png",
+      "masterSha256": "2548b8d5e0af406d348b196b44cd6ce7e5eb31051fe4360a68e15ab969534cc4",
+      "normalizedSha256": "eb8790258db9ba87ac2ef268d0ae0fbcf5ead1520f326b29d6d77635206e36bc",
+      "src": "/images/vocabulary/corpus-completion/living-room-a07420178aac.webp",
+      "sha256": "a07420178aaca21fbdd1c84f6fa7c178db65948afa81520b6694e2c5fffab32b",
+      "bytes": 110674,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "balcony",
+      "wordIds": [
+        "v-阳台"
+      ],
+      "master": "output/imagegen/corpus-completion/balcony.png",
+      "masterSha256": "2394a6a3bc15fdc7f23fb692416f0cd0744aeb0bfbaf8670096780c5d019de69",
+      "normalizedSha256": "921d2fb96ebea28c77109707540509b5859dbff4b2e8bab1e0babee0f41ccba2",
+      "src": "/images/vocabulary/corpus-completion/balcony-249df12fa00a.webp",
+      "sha256": "249df12fa00a2b854e134d2da8516bc8116db417bd4a0d437bb206bf628e21b8",
+      "bytes": 159850,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "study-room",
+      "wordIds": [
+        "v-书房"
+      ],
+      "master": "output/imagegen/corpus-completion/study-room.png",
+      "masterSha256": "acfb5e5c4e25db35daa91a909381d72bf51c66c3bf27234e0999de64224e14c4",
+      "normalizedSha256": "805ff427e688e09ba0f86e6e685893069d8cf5c079f77df492b34c463548f431",
+      "src": "/images/vocabulary/corpus-completion/study-room-3b9ab519d26c.webp",
+      "sha256": "3b9ab519d26cc305088bad4b3aa6727ed88b2c898a855e2acb5d764f95a9b672",
+      "bytes": 171326,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "cafe",
+      "wordIds": [
+        "v-咖啡厅"
+      ],
+      "master": "output/imagegen/corpus-completion/cafe.png",
+      "masterSha256": "286165ed9d86ec2e9ef3ad0c98797f39c9e986c51eab1e07f5d50a78d5d99131",
+      "normalizedSha256": "bfb6c5e84699b340628bb75f9f2cfad4ba32e07faffe6e6da3be74b6a55101e8",
+      "src": "/images/vocabulary/corpus-completion/cafe-571579c77f93.webp",
+      "sha256": "571579c77f9365cfd8f3a256d48daab12219d213ff644dfd4a0320399597dcdf",
+      "bytes": 139674,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "bar",
+      "wordIds": [
+        "v-酒吧"
+      ],
+      "master": "output/imagegen/corpus-completion/bar.png",
+      "masterSha256": "dd2cac102020e404f1e10aa25ab0f069510ba37fbc2b77c0a84c4f1e15639b03",
+      "normalizedSha256": "c188f368d9d8eb226ef1655708048aa6bbd88ae70ab6b8e7f240f30513a833aa",
+      "src": "/images/vocabulary/corpus-completion/bar-892a1fb72c9f.webp",
+      "sha256": "892a1fb72c9f44ef9fe9eb414e4a07444b8fad323ded2e1adfc024b23afcfdb4",
+      "bytes": 156238,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "halal-restaurant",
+      "wordIds": [
+        "v-清真餐厅"
+      ],
+      "master": "output/imagegen/corpus-completion/halal-restaurant.png",
+      "masterSha256": "f2c311e752e4388761218e8616cb31445da1b1427bf1ea620b579148a7ee3333",
+      "normalizedSha256": "4f2a0904e9ea8d31a2f794099e1fe80ab1c1509f77fe64c08c9a80c22d2a4fe6",
+      "src": "/images/vocabulary/corpus-completion/halal-restaurant-3fbc5e4019b2.webp",
+      "sha256": "3fbc5e4019b2587c32392810373e7b31084288bf3d1d52e324c5980a97f05a0f",
+      "bytes": 139694,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "sports-field",
+      "wordIds": [
+        "v-操场"
+      ],
+      "master": "output/imagegen/corpus-completion/sports-field.png",
+      "masterSha256": "a56a1c072fed3c51a384f0c099b117818490c07bb3c89013986981a47083c433",
+      "normalizedSha256": "ff47f1849521f10e27cf187897592ff0e376ccd2b0ffbdc00aefcc80bc77e5e3",
+      "src": "/images/vocabulary/corpus-completion/sports-field-cf7822c6ee52.webp",
+      "sha256": "cf7822c6ee52fda3104cfe88f0e8355cae2e85759a06b48444eef17463575483",
+      "bytes": 116610,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "classroom-building",
+      "wordIds": [
+        "v-教学楼"
+      ],
+      "master": "output/imagegen/corpus-completion/classroom-building.png",
+      "masterSha256": "23cbb58dfd7663cd96849e1e548fe1c55cd5b2037c60b49be51e99a0f5b7324b",
+      "normalizedSha256": "897eddd619a921cbf9b0347082bada5e6ae415aeb91a72058d7662275b38a40a",
+      "src": "/images/vocabulary/corpus-completion/classroom-building-2fad980ba606.webp",
+      "sha256": "2fad980ba606d2e78db1ab988393a2012b04a20f0a4bd3e4fe0fae82ecb08af6",
+      "bytes": 190932,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "dormitory-building",
+      "wordIds": [
+        "v-宿舍楼"
+      ],
+      "master": "output/imagegen/corpus-completion/dormitory-building.png",
+      "masterSha256": "c7f7303347a7eb244a3c26bcca0f8eaa6f9c352bfb8f2e7e075f644b05406b50",
+      "normalizedSha256": "4d9f9a43a44eb11787d0c74c2ad4a3e95fa9fa83986395fb00874747eba391b8",
+      "src": "/images/vocabulary/corpus-completion/dormitory-building-0c67c7721f18.webp",
+      "sha256": "0c67c7721f18ca7393db9a92e4bcf5d0c45a00340598ced3762c320841e40b23",
+      "bytes": 242314,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "practise-writing",
+      "wordIds": [
+        "v-练习",
+        "v-做作业"
+      ],
+      "master": "output/imagegen/corpus-completion/practise-writing.png",
+      "masterSha256": "0c281a2c76d7c6377f446bbd5a4baf9207771f5c911508c8ea67919189e1844c",
+      "normalizedSha256": "8e8bb3494563afe1b79ef91be7a59a239dcadda344a4097587c5c730524b4156",
+      "src": "/images/vocabulary/corpus-completion/practise-writing-b2d9fae64345.webp",
+      "sha256": "b2d9fae643455caf03eb5ba8191fc3b57df9e71ecf4faf04456bd0c952e364e8",
+      "bytes": 177150,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "oral-exam",
+      "wordIds": [
+        "v-口语考试"
+      ],
+      "master": "output/imagegen/corpus-completion/oral-exam.png",
+      "masterSha256": "a00d4a9b610b79364e58e9f7f13d62ad1a1a2a61c659efd1ac055e31df50824c",
+      "normalizedSha256": "1f1ae800af3dc1dc0ebd771d39fa312f3683fe88ae250ff59b3631bc1d7cb58f",
+      "src": "/images/vocabulary/corpus-completion/oral-exam-bf3015a43618.webp",
+      "sha256": "bf3015a436180d844075cb795c43f35bc9845961a09ac1fd2a8f447f51431a82",
+      "bytes": 139306,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "spoken-language",
+      "wordIds": [
+        "v-口语"
+      ],
+      "master": "output/imagegen/corpus-completion/spoken-language.png",
+      "masterSha256": "dd08e968cbacf693e6488b75f9df91f5abcafa6942b11ce6d9bf99dae80c528a",
+      "normalizedSha256": "fca0772c1ad6ffd340fa138dc180ebdd78160bbeda8ba5ddcb9b4106641cf6ae",
+      "src": "/images/vocabulary/corpus-completion/spoken-language-6ebdd86a795e.webp",
+      "sha256": "6ebdd86a795ef7a02c7f784827874edeb5f3d59d5a10918c6618e85e7caa686c",
+      "bytes": 173780,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "listening",
+      "wordIds": [
+        "v-听力"
+      ],
+      "master": "output/imagegen/corpus-completion/listening-v2.png",
+      "masterSha256": "4c7bac1821030557aa66f0c57d91f3db3ee9877b1a8163e186406293e57da089",
+      "normalizedSha256": "b84fde35c944563052477783474f17087a31a00a8f2be5a63991985cf2dff025",
+      "src": "/images/vocabulary/corpus-completion/listening-7a7819a8fda0.webp",
+      "sha256": "7a7819a8fda01a14ae838622b36a9f73ec905c2b3567d13d41ab3d6cc1654d22",
+      "bytes": 198954,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "literature",
+      "wordIds": [
+        "v-文学",
+        "v-语文"
+      ],
+      "master": "output/imagegen/corpus-completion/literature.png",
+      "masterSha256": "49eb9a6123819cba62821ddda5e3774d5887b1687aece0188379dedb446d7e07",
+      "normalizedSha256": "247b72c5605c23011fe0dfa09455bfc4e6cb10ff1ffaf7ca99db633514fd7a05",
+      "src": "/images/vocabulary/corpus-completion/literature-7239e0085166.webp",
+      "sha256": "7239e00851664f3fd782fc80a19146584fe1202779ac5008a5048d0d253fa8f1",
+      "bytes": 64552,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "history",
+      "wordIds": [
+        "v-历史"
+      ],
+      "master": "output/imagegen/corpus-completion/history.png",
+      "masterSha256": "24f81c4d00f4a614fb1ffe745fa76bf002008376b1e548ce9752f8568b734d65",
+      "normalizedSha256": "fe0b9ab27bb6fa72e2226b873551f95faf40fe66820ccb74b61498583ab497e7",
+      "src": "/images/vocabulary/corpus-completion/history-5c4c383fcbfb.webp",
+      "sha256": "5c4c383fcbfb6937898e611bdbe093da9550be551c7f61d2e8a72a1b1290a2a3",
+      "bytes": 92230,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "economics",
+      "wordIds": [
+        "v-经济"
+      ],
+      "master": "output/imagegen/corpus-completion/economics.png",
+      "masterSha256": "aff74b89be36e88714b092b774477c8cafcddf112e2cd4f8bc2a23f08a67da08",
+      "normalizedSha256": "c569916c82c54c579a4e76a82f8daabbfe83f1089f17b23ee489173be5e51754",
+      "src": "/images/vocabulary/corpus-completion/economics-bdbb61728f1b.webp",
+      "sha256": "bdbb61728f1b40ea7d223fc8d489a81462121574e65422f107955934d6f12698",
+      "bytes": 73166,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "culture",
+      "wordIds": [
+        "v-文化"
+      ],
+      "master": "output/imagegen/corpus-completion/culture.png",
+      "masterSha256": "948400ec34bd06bb2454b1b0a86c10bbf6d6afa5e54f4bbb7b2f1798585960cd",
+      "normalizedSha256": "c1b8a1dfef9939747071907e14384b3789e33b645493e6bc405908cedecb6cad",
+      "src": "/images/vocabulary/corpus-completion/culture-00bc8b945621.webp",
+      "sha256": "00bc8b9456217131c076ee12a030c2d008da4a0781ac97eee85a3b2744067deb",
+      "bytes": 128110,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "money",
+      "wordIds": [
+        "v-钱"
+      ],
+      "master": "output/imagegen/corpus-completion/money.png",
+      "masterSha256": "bc04aa5a69873cfff676741f9e702762c328759f55b453a77296778a75ce2cc9",
+      "normalizedSha256": "8db13c674ce724aedfe951400b908edaedea7e611ec0a08b550000ef418861de",
+      "src": "/images/vocabulary/corpus-completion/money-6f8002248fe0.webp",
+      "sha256": "6f8002248fe04542e3344e1be4e4f3ef7dd540675fb5d2f454b309a2c041cad9",
+      "bytes": 122498,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "idea",
+      "wordIds": [
+        "v-主意"
+      ],
+      "master": "output/imagegen/corpus-completion/idea.png",
+      "masterSha256": "40834b5900c151a7f4dcfeb6b7d87f656c96b386c090916c2ea9a768820c21ce",
+      "normalizedSha256": "ac9dc979a1a137531bf4c9be3ec5dc4ace9df9b08be0b43a35e7865595a1bbc3",
+      "src": "/images/vocabulary/corpus-completion/idea-9495f41eab12.webp",
+      "sha256": "9495f41eab128ddb14fea4fdea41959969a8c8a7a89628eccddf1a7d323ae459",
+      "bytes": 109384,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "fear",
+      "wordIds": [
+        "v-怕"
+      ],
+      "master": "output/imagegen/corpus-completion/fear.png",
+      "masterSha256": "e1519bf829fd8c32c932cece8a601b1c643cbb3652e496e7124cc62198edf569",
+      "normalizedSha256": "b44c3313ff8b73cde64b86578e5f0019b749020a62141aa1cba18eaa9808df14",
+      "src": "/images/vocabulary/corpus-completion/fear-8ade895e3555.webp",
+      "sha256": "8ade895e355582cce676129706f87280bef1863a87a86744cac53f34e45ccd5f",
+      "bytes": 105802,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "gossip",
+      "wordIds": [
+        "v-八卦"
+      ],
+      "master": "output/imagegen/corpus-completion/gossip.png",
+      "masterSha256": "b631da7f02addef20fa4777d7722d50194143f2f2ae97b97df21439396f2607f",
+      "normalizedSha256": "324ff74ea47adf518c86bd87bfb0f3d2c318deab87400103778ebdefb00d49b5",
+      "src": "/images/vocabulary/corpus-completion/gossip-892edeaaf0e3.webp",
+      "sha256": "892edeaaf0e3a6132b6c5ec857a4bde714b9867446ca0de231696d565ff80471",
+      "bytes": 181922,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "biology",
+      "wordIds": [
+        "v-生物"
+      ],
+      "master": "output/imagegen/corpus-completion/biology.png",
+      "masterSha256": "28daadca3304f6a2e54bf1d69feaf849c60604f40b89da2a7578f4b8e5b06b64",
+      "normalizedSha256": "3da71d9a9cef7d67bbc65e3b9e682141f41ce2c698f46db3db1f778aa4deeafb",
+      "src": "/images/vocabulary/corpus-completion/biology-f68beeab355c.webp",
+      "sha256": "f68beeab355cfcba7354761a0ffd93dc9776059739afa3218ee883003eff4152",
+      "bytes": 188528,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "chemistry",
+      "wordIds": [
+        "v-化学"
+      ],
+      "master": "output/imagegen/corpus-completion/chemistry.png",
+      "masterSha256": "b9797dfe2500ed0c181a82854ac34343dd6f4ad3e68fb5b34f507078529a6062",
+      "normalizedSha256": "9e5a54c13b08106e3fdcc320e04f0dacd32f24bf3e282225c1869e63d35a3bd2",
+      "src": "/images/vocabulary/corpus-completion/chemistry-2070e251c931.webp",
+      "sha256": "2070e251c931d74e8f97f8455ff5d58941254fea4e51f5e4df1e26faa2cf7077",
+      "bytes": 145596,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "physics",
+      "wordIds": [
+        "v-物理"
+      ],
+      "master": "output/imagegen/corpus-completion/physics.png",
+      "masterSha256": "5ac98ff70ed561a97cabaf3ea268d561a01f8f2a715e5580b5f16681d6c05e74",
+      "normalizedSha256": "17b070f742cc644e4369729d331dac771e90e2d84b62acdeced6638fe17e89b8",
+      "src": "/images/vocabulary/corpus-completion/physics-da6670edcd26.webp",
+      "sha256": "da6670edcd26efe1e8c5bea4305bebb0a97696e533c364d015b060a135f01724",
+      "bytes": 74704,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "geography",
+      "wordIds": [
+        "v-地理"
+      ],
+      "master": "output/imagegen/corpus-completion/geography.png",
+      "masterSha256": "6fd2bad05dd24c4c0bc5a7a854b02366aa29afe832857b49925809bc194fc495",
+      "normalizedSha256": "efeeb2b02ac7fa757d94e69a19d3bf6b4f55545ca7e81bb2e10af7232d3411f6",
+      "src": "/images/vocabulary/corpus-completion/geography-671f9f1d359e.webp",
+      "sha256": "671f9f1d359e4c67a646621714d42bc7f9d6e859110f2fb4a80009d7a559fc00",
+      "bytes": 139082,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "writing",
+      "wordIds": [
+        "v-写作"
+      ],
+      "master": "output/imagegen/corpus-completion/writing.png",
+      "masterSha256": "2716664162b2325561b9f39c23a5e061f2b7f02e1ae5f5502b5bac3a8fc6dd62",
+      "normalizedSha256": "d53242e9f51c250c3b1493bee967ad32bfe1ec89aa59ca3486d52ad5422625ef",
+      "src": "/images/vocabulary/corpus-completion/writing-321bb3b60b7b.webp",
+      "sha256": "321bb3b60b7b196211a139443773bf02caaea1ceba3f18c255352ca5c1e8f82c",
+      "bytes": 164470,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "secondary-school",
+      "wordIds": [
+        "v-中学"
+      ],
+      "master": "output/imagegen/corpus-completion/secondary-school.png",
+      "masterSha256": "9a1905c2392b58eb37027d69658c6090107d11c9a511b05c08e330fb70c1b644",
+      "normalizedSha256": "dbb70e77a969ceb345742737a267216a4f332a538ec24d5a8efed3b8eb0dc5b1",
+      "src": "/images/vocabulary/corpus-completion/secondary-school-90bc57e48c5a.webp",
+      "sha256": "90bc57e48c5a7b5b2117e53948c41f0639fc4e58d5820e1464d5026c07630421",
+      "bytes": 118124,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "birth",
+      "wordIds": [
+        "v-出生"
+      ],
+      "master": "output/imagegen/corpus-completion/birth.png",
+      "masterSha256": "c0a59cf182715c036272b6e4d75e17184a48b6d5d26637ba1c36da680f1ef645",
+      "normalizedSha256": "c1cd6d21b3ec06d3f7a6ae7fc5d40e52545111bea705bfda985d136bffff19e5",
+      "src": "/images/vocabulary/corpus-completion/birth-d5ac275c044c.webp",
+      "sha256": "d5ac275c044c7105ecc9a326ddf827a8c128f32b2c5de0d980a1abdd313deb89",
+      "bytes": 200294,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "song",
+      "wordIds": [
+        "v-歌"
+      ],
+      "master": "output/imagegen/corpus-completion/song.png",
+      "masterSha256": "2450796a896b127ee5fc4269bb2125b8cadf21257743485aa88ddd1c133a481d",
+      "normalizedSha256": "e85014dc77b4e84fa4cb664280e34367f6bdca15727757bb198a716c5b675a92",
+      "src": "/images/vocabulary/corpus-completion/song-eb853c972e6e.webp",
+      "sha256": "eb853c972e6ecf05d73dbf70071f44c7e2baa2a1f3f607a620b02eb90a96ff8c",
+      "bytes": 109614,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "dance",
+      "wordIds": [
+        "v-舞"
+      ],
+      "master": "output/imagegen/corpus-completion/dance.png",
+      "masterSha256": "55f357f2b34468617cf82db76de76dcbedc257afc4986a81749328d94c0b4f71",
+      "normalizedSha256": "70e318c715e3dba320ddff7574329a728669f28af3c77120dc232a23f6b85495",
+      "src": "/images/vocabulary/corpus-completion/dance-3c8e7df7e454.webp",
+      "sha256": "3c8e7df7e4548c4efa204cf0bc8c0aa12db806385f952f44bddd4308282e77b2",
+      "bytes": 116496,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "courteous",
+      "wordIds": [
+        "v-客气"
+      ],
+      "master": "output/imagegen/corpus-completion/courteous.png",
+      "masterSha256": "fa045c81d72639a67a8d7face737456e889eb6792e3b056df1a62d9ab2b2fd21",
+      "normalizedSha256": "08526c6b56bed41c84ca407bb9429a2c83bd93d739b77a6691a57c1bfee3fae1",
+      "src": "/images/vocabulary/corpus-completion/courteous-addfa53f463c.webp",
+      "sha256": "addfa53f463c2e3ddc299bc592938251377a97fc8394ff319377482973b14987",
+      "bytes": 135210,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "sorry",
+      "wordIds": [
+        "v-不好意思"
+      ],
+      "master": "output/imagegen/corpus-completion/sorry.png",
+      "masterSha256": "2a93b3500d650305c86e68bc1216c41c7296c27fb1f0075bfcf1ee09d4edacaa",
+      "normalizedSha256": "be955012bf3bfc6c81bed8fb7e54c869b6fdaea2a1d8c6cd7cf7cf28439b8c0c",
+      "src": "/images/vocabulary/corpus-completion/sorry-06e6396ce1f9.webp",
+      "sha256": "06e6396ce1f9971e068c763aba613b7a2818e06344c9bc5588b5c20903145302",
+      "bytes": 97892,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "regret",
+      "wordIds": [
+        "v-可惜"
+      ],
+      "master": "output/imagegen/corpus-completion/regret.png",
+      "masterSha256": "788226c3e4e72146e5919d84a420247d1409dac71717c6b5cf2be3b238379999",
+      "normalizedSha256": "61052b4784f6c1436716f7ac67f275813d1c5d44381748dfaabef3c24963ebeb",
+      "src": "/images/vocabulary/corpus-completion/regret-062c626a95ad.webp",
+      "sha256": "062c626a95ad2624f9f137ef912d5952bcbf200ee48c06342db6a1618ee11718",
+      "bytes": 176812,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "wish",
+      "wordIds": [
+        "v-祝"
+      ],
+      "master": "output/imagegen/corpus-completion/wish.png",
+      "masterSha256": "8e750779e1966be32295ee1ceb547b994e892abc13de194d6ab92d1d9c5bdb47",
+      "normalizedSha256": "7705c520e1e02a4a3dabbc32796a2eca929637d5c9b601520a40776616dcd512",
+      "src": "/images/vocabulary/corpus-completion/wish-c130a16caf16.webp",
+      "sha256": "c130a16caf163499d090c19df64a834b8a8baefc9e271e98866d2c93f6ebcc16",
+      "bytes": 195758,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "teaching",
+      "wordIds": [
+        "v-教学"
+      ],
+      "master": "output/imagegen/corpus-completion/teaching.png",
+      "masterSha256": "52bd131e1e67a433d42314e58121eabfe1b238a4d8d8cf03f9569c392b78e35a",
+      "normalizedSha256": "919b74e46de64a39a5339b745b2d561c12aea4bc63477eb0589dc67bca46703f",
+      "src": "/images/vocabulary/corpus-completion/teaching-5167bb47260c.webp",
+      "sha256": "5167bb47260c3fa5a251128b91e9895879ffdd4579ad70ae0f1850542993c8c1",
+      "bytes": 182874,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "miss",
+      "wordIds": [
+        "v-小姐"
+      ],
+      "master": "output/imagegen/corpus-completion/miss.png",
+      "masterSha256": "4313ae0f2ebdf745318e0a0421ee5fd77ad883bc2322f3ff51d5d14d48c48055",
+      "normalizedSha256": "3d0b64afa740a6d54ee5b4619ae54ae2254cd15f0deecca160a54b6ee807c7f3",
+      "src": "/images/vocabulary/corpus-completion/miss-db903c3abbf4.webp",
+      "sha256": "db903c3abbf49dc52631d59276fbf260cef0c356e74dc7210df0d8cf85420f66",
+      "bytes": 83084,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "myself",
+      "wordIds": [
+        "v-我"
+      ],
+      "master": "output/imagegen/corpus-completion/myself.png",
+      "masterSha256": "b2819c56b9d96062ef7972b70bd9894a5b7b6f268660e9bcf9d7cf166addd190",
+      "normalizedSha256": "7e868ea395ad57c9baa0884e9b362821d0e54bea38182e55de4f1163ad668f9f",
+      "src": "/images/vocabulary/corpus-completion/myself-d0d83c6ffffb.webp",
+      "sha256": "d0d83c6ffffbfa9a7fd323c02beddaecde5335dd2d8b361ff165a160427dc369",
+      "bytes": 188542,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    },
+    {
+      "slug": "hungry",
+      "wordIds": [
+        "v-饿"
+      ],
+      "master": "output/imagegen/corpus-completion/hungry.png",
+      "masterSha256": "a718293381ec832781892d730e63d23f8e943ef90f39463311b0c3e0ce39f416",
+      "normalizedSha256": "2e0663d1c5bd081d082a49e1c2d31b190b1fba28c28eea170200672c593ccc1a",
+      "src": "/images/vocabulary/corpus-completion/hungry-c7d8033d7b13.webp",
+      "sha256": "c7d8033d7b130670873996e8d728d016283923c1f1df3a9e521f43aa7ca93abc",
+      "bytes": 177878,
+      "width": 1618,
+      "height": 1000,
+      "alpha": true,
+      "review": "2026-11-19 · Revisión visual por Codex, sin revisión humana independiente; sujeto completo, sentido de apoyo, alfa real y encuadre comprobados. No habilita reconocimiento por imagen."
+    }
+  ]
+}

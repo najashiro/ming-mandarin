@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "source": "active corpus, imageForWord and getVocabularyMixSet from application modules; local files only",
+  "totalWords": 560,
+  "mediaEntries": 560,
+  "withImages": 560,
+  "withoutImages": 0,
+  "mixWords": 522,
+  "mixWithoutImages": 0,
+  "brokenLocalPaths": [],
+  "hashMismatches": [],
+  "brokenResponsivePaths": [],
+  "byScope": [
+    {
+      "scope": "l1",
+      "total": 68,
+      "withImages": 68,
+      "missing": []
+    },
+    {
+      "scope": "l2",
+      "total": 122,
+      "withImages": 122,
+      "missing": []
+    },
+    {
+      "scope": "l3",
+      "total": 110,
+      "withImages": 110,
+      "missing": []
+    },
+    {
+      "scope": "l4",
+      "total": 114,
+      "withImages": 114,
+      "missing": []
+    },
+    {
+      "scope": "l5",
+      "total": 86,
+      "withImages": 86,
+      "missing": []
+    },
+    {
+      "scope": "l6",
+      "total": 74,
+      "withImages": 74,
+      "missing": []
+    },
+    {
+      "scope": "l1-l2-l3-l4-l5-l6",
+      "total": 520,
+      "withImages": 520,
+      "missing": []
+    },
+    {
+      "scope": "l1-l2-l3-l4-l5",
+      "total": 455,
+      "withImages": 455,
+      "missing": []
+    },
+    {
+      "scope": "l1-l2",
+      "total": 190,
+      "withImages": 190,
+      "missing": []
+    },
+    {
+      "scope": "l1-l2-l3",
+      "total": 300,
+      "withImages": 300,
+      "missing": []
+    },
+    {
+      "scope": "l1-l2-l3-l4",
+      "total": 383,
+      "withImages": 383,
+      "missing": []
+    }
+  ],
+  "missing": []
+}

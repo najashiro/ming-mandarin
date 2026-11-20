@@ -1,0 +1,1385 @@
+{
+  "styleId": "ming-vocabulary-transparent-subject-golden-v2",
+  "authorization": "User requested API key image generation and confirmed gpt-image-1.5 with transparent backgrounds on 2026-11-19",
+  "entries": [
+    {
+      "slug": "kitchen",
+      "ids": [
+        "v-厨房"
+      ],
+      "subject": "a compact kitchen cutaway: a stove with saucepan, countertop, sink and upper cupboards, all together as one complete miniature realistic room vignette, open front, no people",
+      "words": [
+        {
+          "id": "v-厨房",
+          "hanzi": "厨房",
+          "pinyin": "chúfáng",
+          "spanish": "cocina"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational Mandarin vocabulary asset for MÍNG.\nPrimary request: a compact kitchen cutaway: a stove with saucepan, countertop, sink and upper cupboards, all together as one complete miniature realistic room vignette, open front, no people.\nScene/backdrop: genuine transparent alpha background. The subject may be a miniature architectural cutaway, but the canvas behind and around it is completely transparent, no opaque rectangular background, no floor extending outside the vignette.\nStyle: crisp natural premium product photography, realistic materials and proportions, calm soft light. Architectural cutaways are realistic scale models, not flat clipart.\nComposition: horizontal canvas. Place the complete subject in the RIGHT HALF, approximately x=46–95%, y=8–91%. Keep the LEFT 43% fully empty/transparent for accessible text the app will add. Keep all parts visible with generous transparent margins and all four corners transparent. Do not crop heads, hands, furniture, buildings, roofs or objects.\nConstraints: one coherent educational scene, no text, no characters, no labels, no pinyin, no interface elements, no brands, no watermark. A soft semi-transparent contact shadow is allowed. No white, colored or checkerboard background. Return only the subject cutout.\nMeaning supported: cocina. These are editorial illustrations, not documentary likenesses.",
+      "promptSha256": "030cbb62b86b08c5585a957b943382d23bcf26826b9a219b36f8188c1ae7db67",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "kitchen.png"
+    },
+    {
+      "slug": "canteen",
+      "ids": [
+        "v-食堂"
+      ],
+      "subject": "a school canteen miniature cutaway with a cafeteria serving counter holding food trays and two long communal dining tables with chairs, no people",
+      "words": [
+        {
+          "id": "v-食堂",
+          "hanzi": "食堂",
+          "pinyin": "shítáng",
+          "spanish": "comedor"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational Mandarin vocabulary asset for MÍNG.\nPrimary request: a school canteen miniature cutaway with a cafeteria serving counter holding food trays and two long communal dining tables with chairs, no people.\nScene/backdrop: genuine transparent alpha background. The subject may be a miniature architectural cutaway, but the canvas behind and around it is completely transparent, no opaque rectangular background, no floor extending outside the vignette.\nStyle: crisp natural premium product photography, realistic materials and proportions, calm soft light. Architectural cutaways are realistic scale models, not flat clipart.\nComposition: horizontal canvas. Place the complete subject in the RIGHT HALF, approximately x=46–95%, y=8–91%. Keep the LEFT 43% fully empty/transparent for accessible text the app will add. Keep all parts visible with generous transparent margins and all four corners transparent. Do not crop heads, hands, furniture, buildings, roofs or objects.\nConstraints: one coherent educational scene, no text, no characters, no labels, no pinyin, no interface elements, no brands, no watermark. A soft semi-transparent contact shadow is allowed. No white, colored or checkerboard background. Return only the subject cutout.\nMeaning supported: comedor. These are editorial illustrations, not documentary likenesses.",
+      "promptSha256": "f642e1cba76d1c28b824934d06533663782a37d202084837bde46011adca52b1",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "canteen.png"
+    },
+    {
+      "slug": "school-gate",
+      "ids": [
+        "v-校门"
+      ],
+      "subject": "a school campus entrance gate, two modest pillars, open green gate and a small school building visible beyond, no lettering",
+      "words": [
+        {
+          "id": "v-校门",
+          "hanzi": "校门",
+          "pinyin": "xiàomén",
+          "spanish": "puerta de la escuela; entrada del campus"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational Mandarin vocabulary asset for MÍNG.\nPrimary request: a school campus entrance gate, two modest pillars, open green gate and a small school building visible beyond, no lettering.\nScene/backdrop: genuine transparent alpha background. The subject may be a miniature architectural cutaway, but the canvas behind and around it is completely transparent, no opaque rectangular background, no floor extending outside the vignette.\nStyle: crisp natural premium product photography, realistic materials and proportions, calm soft light. Architectural cutaways are realistic scale models, not flat clipart.\nComposition: horizontal canvas. Place the complete subject in the RIGHT HALF, approximately x=46–95%, y=8–91%. Keep the LEFT 43% fully empty/transparent for accessible text the app will add. Keep all parts visible with generous transparent margins and all four corners transparent. Do not crop heads, hands, furniture, buildings, roofs or objects.\nConstraints: one coherent educational scene, no text, no characters, no labels, no pinyin, no interface elements, no brands, no watermark. A soft semi-transparent contact shadow is allowed. No white, colored or checkerboard background. Return only the subject cutout.\nMeaning supported: puerta de la escuela; entrada del campus. These are editorial illustrations, not documentary likenesses.",
+      "promptSha256": "691413928f2bc4a57baf270945c96fbf65fd5b0b6026629aa0ae7c4f298f8f7d",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "school-gate.png"
+    },
+    {
+      "slug": "office-building",
+      "ids": [
+        "v-办公楼",
+        "v-楼"
+      ],
+      "subject": "one modern six-storey office building architectural model with many windows and a clear entrance, whole building including roof and foundation",
+      "words": [
+        {
+          "id": "v-办公楼",
+          "hanzi": "办公楼",
+          "pinyin": "bàngōnglóu",
+          "spanish": "edificio de oficinas; edificio de administración"
+        },
+        {
+          "id": "v-楼",
+          "hanzi": "楼",
+          "pinyin": "lóu",
+          "spanish": "edificio"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational Mandarin vocabulary asset for MÍNG.\nPrimary request: one modern six-storey office building architectural model with many windows and a clear entrance, whole building including roof and foundation.\nScene/backdrop: genuine transparent alpha background. The subject may be a miniature architectural cutaway, but the canvas behind and around it is completely transparent, no opaque rectangular background, no floor extending outside the vignette.\nStyle: crisp natural premium product photography, realistic materials and proportions, calm soft light. Architectural cutaways are realistic scale models, not flat clipart.\nComposition: horizontal canvas. Place the complete subject in the RIGHT HALF, approximately x=46–95%, y=8–91%. Keep the LEFT 43% fully empty/transparent for accessible text the app will add. Keep all parts visible with generous transparent margins and all four corners transparent. Do not crop heads, hands, furniture, buildings, roofs or objects.\nConstraints: one coherent educational scene, no text, no characters, no labels, no pinyin, no interface elements, no brands, no watermark. A soft semi-transparent contact shadow is allowed. No white, colored or checkerboard background. Return only the subject cutout.\nMeaning supported: edificio de oficinas; edificio de administración; edificio. These are editorial illustrations, not documentary likenesses.",
+      "promptSha256": "3bc8d5cafefaac301fd1a870e05b37092b016ecbc95a463bc10e25ab72deb457",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "office-building.png"
+    },
+    {
+      "slug": "office-work",
+      "ids": [
+        "v-办公"
+      ],
+      "subject": "an adult office worker seated at a desk working on an unbranded laptop, complete desk, chair and person, papers neatly arranged",
+      "words": [
+        {
+          "id": "v-办公",
+          "hanzi": "办公",
+          "pinyin": "bàngōng",
+          "spanish": "despachar asuntos públicos; trabajar (usualmente en una oficina)"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: an adult office worker seated at a desk working on an unbranded laptop, complete desk, chair and person, papers neatly arranged.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: despachar asuntos públicos; trabajar (usualmente en una oficina). Editorial illustration, no documentary identity claim.",
+      "promptSha256": "716c9b127b72a010bba454ec78ddbef495ce476d8c14ffa741c2961e41ab4fe1",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "previousPromptSha256": "8e338166ebfcfd7cc696fcf9e3e7e1acc52d5911a23f5d684f8a63e7c8b5eb69",
+      "revisionReason": "Remove unrelated architectural props / show the complete subject and correct spatial meaning.",
+      "master": "office-work-v2.png"
+    },
+    {
+      "slug": "library",
+      "ids": [
+        "v-图书馆"
+      ],
+      "subject": "a compact library room cutaway with tall bookshelves filled with books, reading table and chair, no lettering",
+      "words": [
+        {
+          "id": "v-图书馆",
+          "hanzi": "图书馆",
+          "pinyin": "túshūguǎn",
+          "spanish": "biblioteca"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational Mandarin vocabulary asset for MÍNG.\nPrimary request: a compact library room cutaway with tall bookshelves filled with books, reading table and chair, no lettering.\nScene/backdrop: genuine transparent alpha background. The subject may be a miniature architectural cutaway, but the canvas behind and around it is completely transparent, no opaque rectangular background, no floor extending outside the vignette.\nStyle: crisp natural premium product photography, realistic materials and proportions, calm soft light. Architectural cutaways are realistic scale models, not flat clipart.\nComposition: horizontal canvas. Place the complete subject in the RIGHT HALF, approximately x=46–95%, y=8–91%. Keep the LEFT 43% fully empty/transparent for accessible text the app will add. Keep all parts visible with generous transparent margins and all four corners transparent. Do not crop heads, hands, furniture, buildings, roofs or objects.\nConstraints: one coherent educational scene, no text, no characters, no labels, no pinyin, no interface elements, no brands, no watermark. A soft semi-transparent contact shadow is allowed. No white, colored or checkerboard background. Return only the subject cutout.\nMeaning supported: biblioteca. These are editorial illustrations, not documentary likenesses.",
+      "promptSha256": "e8d022a3e5f07d6e4a8080da20513fa04cc69858d79dbc5010a5598f3e745a0c",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "library.png"
+    },
+    {
+      "slug": "gymnasium",
+      "ids": [
+        "v-体育馆"
+      ],
+      "subject": "a complete miniature indoor sports hall cutaway with basketball court, hoops and small stands, no lettering",
+      "words": [
+        {
+          "id": "v-体育馆",
+          "hanzi": "体育馆",
+          "pinyin": "tǐyùguǎn",
+          "spanish": "gimnasio; estadio"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational Mandarin vocabulary asset for MÍNG.\nPrimary request: a complete miniature indoor sports hall cutaway with basketball court, hoops and small stands, no lettering.\nScene/backdrop: genuine transparent alpha background. The subject may be a miniature architectural cutaway, but the canvas behind and around it is completely transparent, no opaque rectangular background, no floor extending outside the vignette.\nStyle: crisp natural premium product photography, realistic materials and proportions, calm soft light. Architectural cutaways are realistic scale models, not flat clipart.\nComposition: horizontal canvas. Place the complete subject in the RIGHT HALF, approximately x=46–95%, y=8–91%. Keep the LEFT 43% fully empty/transparent for accessible text the app will add. Keep all parts visible with generous transparent margins and all four corners transparent. Do not crop heads, hands, furniture, buildings, roofs or objects.\nConstraints: one coherent educational scene, no text, no characters, no labels, no pinyin, no interface elements, no brands, no watermark. A soft semi-transparent contact shadow is allowed. No white, colored or checkerboard background. Return only the subject cutout.\nMeaning supported: gimnasio; estadio. These are editorial illustrations, not documentary likenesses.",
+      "promptSha256": "656898a8f7add365ffd1454a405e66614b5b6310bda8e12a525449d259358be7",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "gymnasium.png"
+    },
+    {
+      "slug": "physical-education",
+      "ids": [
+        "v-体育"
+      ],
+      "subject": "two adult students in simple sports clothing doing warm-up stretches beside a basketball, complete full bodies, no lettering",
+      "words": [
+        {
+          "id": "v-体育",
+          "hanzi": "体育",
+          "pinyin": "tǐyù",
+          "spanish": "educación física; entrenamiento físico"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: two adult students in simple sports clothing doing warm-up stretches beside a basketball, complete full bodies, no lettering.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: educación física; entrenamiento físico. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "36c2cbe888f0c9da8545fb59a8436401a7f6d3848606107d50d87faf9c1164c9",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "previousPromptSha256": "be09e216be7d28b4da1fe9666c476bf9f89b429826b8af2f60eca0263d9195c0",
+      "revisionReason": "Remove unrelated architectural props / show the complete subject and correct spatial meaning.",
+      "master": "physical-education-v2.png"
+    },
+    {
+      "slug": "bank",
+      "ids": [
+        "v-银行"
+      ],
+      "subject": "a small bank branch cutaway with teller service counter, safe vault and an ATM, no currency logos or lettering",
+      "words": [
+        {
+          "id": "v-银行",
+          "hanzi": "银行",
+          "pinyin": "yínháng",
+          "spanish": "banco"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational Mandarin vocabulary asset for MÍNG.\nPrimary request: a small bank branch cutaway with teller service counter, safe vault and an ATM, no currency logos or lettering.\nScene/backdrop: genuine transparent alpha background. The subject may be a miniature architectural cutaway, but the canvas behind and around it is completely transparent, no opaque rectangular background, no floor extending outside the vignette.\nStyle: crisp natural premium product photography, realistic materials and proportions, calm soft light. Architectural cutaways are realistic scale models, not flat clipart.\nComposition: horizontal canvas. Place the complete subject in the RIGHT HALF, approximately x=46–95%, y=8–91%. Keep the LEFT 43% fully empty/transparent for accessible text the app will add. Keep all parts visible with generous transparent margins and all four corners transparent. Do not crop heads, hands, furniture, buildings, roofs or objects.\nConstraints: one coherent educational scene, no text, no characters, no labels, no pinyin, no interface elements, no brands, no watermark. A soft semi-transparent contact shadow is allowed. No white, colored or checkerboard background. Return only the subject cutout.\nMeaning supported: banco. These are editorial illustrations, not documentary likenesses.",
+      "promptSha256": "4f833a5d5c5a1cffc3dead73144545994ef7671a894622d1174888d4545363ee",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "bank.png"
+    },
+    {
+      "slug": "shared-dormitory",
+      "ids": [
+        "v-宿舍"
+      ],
+      "subject": "a tidy shared student dormitory cutaway with two single beds, study desks and a wardrobe, visibly communal dorm room",
+      "words": [
+        {
+          "id": "v-宿舍",
+          "hanzi": "宿舍",
+          "pinyin": "sùshè",
+          "spanish": "dormitorio"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational Mandarin vocabulary asset for MÍNG.\nPrimary request: a tidy shared student dormitory cutaway with two single beds, study desks and a wardrobe, visibly communal dorm room.\nScene/backdrop: genuine transparent alpha background. The subject may be a miniature architectural cutaway, but the canvas behind and around it is completely transparent, no opaque rectangular background, no floor extending outside the vignette.\nStyle: crisp natural premium product photography, realistic materials and proportions, calm soft light. Architectural cutaways are realistic scale models, not flat clipart.\nComposition: horizontal canvas. Place the complete subject in the RIGHT HALF, approximately x=46–95%, y=8–91%. Keep the LEFT 43% fully empty/transparent for accessible text the app will add. Keep all parts visible with generous transparent margins and all four corners transparent. Do not crop heads, hands, furniture, buildings, roofs or objects.\nConstraints: one coherent educational scene, no text, no characters, no labels, no pinyin, no interface elements, no brands, no watermark. A soft semi-transparent contact shadow is allowed. No white, colored or checkerboard background. Return only the subject cutout.\nMeaning supported: dormitorio. These are editorial illustrations, not documentary likenesses.",
+      "promptSha256": "83b2af0e679cf9ac3193dffd45de223e6b6004e6d641a2de34d609ddd025b38c",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "shared-dormitory.png"
+    },
+    {
+      "slug": "anxious",
+      "ids": [
+        "v-着急"
+      ],
+      "subject": "an adult person looking worried and checking a wristwatch, raised eyebrows and hand on forehead, complete full body, modest neutral clothing",
+      "words": [
+        {
+          "id": "v-着急",
+          "hanzi": "着急",
+          "pinyin": "zháojí",
+          "spanish": "preocupado; ansioso"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: an adult person looking worried and checking a wristwatch, raised eyebrows and hand on forehead, complete full body, modest neutral clothing.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: preocupado; ansioso. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "06beb41f604ff2d4a3dc29b748cf70fe7565a79bef7dc256b2a467876eba5107",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "previousPromptSha256": "988849865d283dae4a179a2f5bb08e740132090d118c056ab859ae4b63ef50c0",
+      "revisionReason": "Remove unrelated architectural props / show the complete subject and correct spatial meaning.",
+      "master": "anxious-v2.png"
+    },
+    {
+      "slug": "supermarket",
+      "ids": [
+        "v-超市"
+      ],
+      "subject": "a miniature supermarket aisle cutaway with shelves of groceries, produce bins and one shopping cart, no readable labels",
+      "words": [
+        {
+          "id": "v-超市",
+          "hanzi": "超市",
+          "pinyin": "chāoshì",
+          "spanish": "supermercado"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational Mandarin vocabulary asset for MÍNG.\nPrimary request: a miniature supermarket aisle cutaway with shelves of groceries, produce bins and one shopping cart, no readable labels.\nScene/backdrop: genuine transparent alpha background. The subject may be a miniature architectural cutaway, but the canvas behind and around it is completely transparent, no opaque rectangular background, no floor extending outside the vignette.\nStyle: crisp natural premium product photography, realistic materials and proportions, calm soft light. Architectural cutaways are realistic scale models, not flat clipart.\nComposition: horizontal canvas. Place the complete subject in the RIGHT HALF, approximately x=46–95%, y=8–91%. Keep the LEFT 43% fully empty/transparent for accessible text the app will add. Keep all parts visible with generous transparent margins and all four corners transparent. Do not crop heads, hands, furniture, buildings, roofs or objects.\nConstraints: one coherent educational scene, no text, no characters, no labels, no pinyin, no interface elements, no brands, no watermark. A soft semi-transparent contact shadow is allowed. No white, colored or checkerboard background. Return only the subject cutout.\nMeaning supported: supermercado. These are editorial illustrations, not documentary likenesses.",
+      "promptSha256": "224e9eb9617273c152dcf57a244985e4a0736df4530a1743c85d0e3c75692ecf",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "supermarket.png"
+    },
+    {
+      "slug": "restaurant",
+      "ids": [
+        "v-饭馆"
+      ],
+      "subject": "a miniature restaurant dining room cutaway with two neatly set dining tables, chairs and a waiter carrying a plate, no lettering",
+      "words": [
+        {
+          "id": "v-饭馆",
+          "hanzi": "饭馆",
+          "pinyin": "fànguǎn",
+          "spanish": "restaurante"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational Mandarin vocabulary asset for MÍNG.\nPrimary request: a miniature restaurant dining room cutaway with two neatly set dining tables, chairs and a waiter carrying a plate, no lettering.\nScene/backdrop: genuine transparent alpha background. The subject may be a miniature architectural cutaway, but the canvas behind and around it is completely transparent, no opaque rectangular background, no floor extending outside the vignette.\nStyle: crisp natural premium product photography, realistic materials and proportions, calm soft light. Architectural cutaways are realistic scale models, not flat clipart.\nComposition: horizontal canvas. Place the complete subject in the RIGHT HALF, approximately x=46–95%, y=8–91%. Keep the LEFT 43% fully empty/transparent for accessible text the app will add. Keep all parts visible with generous transparent margins and all four corners transparent. Do not crop heads, hands, furniture, buildings, roofs or objects.\nConstraints: one coherent educational scene, no text, no characters, no labels, no pinyin, no interface elements, no brands, no watermark. A soft semi-transparent contact shadow is allowed. No white, colored or checkerboard background. Return only the subject cutout.\nMeaning supported: restaurante. These are editorial illustrations, not documentary likenesses.",
+      "promptSha256": "28ebc5b457719d3e41d8c5af90054055d51905a40ecfdde854e0bb177def3ff8",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "restaurant.png"
+    },
+    {
+      "slug": "cross-street",
+      "ids": [
+        "v-过"
+      ],
+      "subject": "an adult pedestrian crossing a short zebra crossing on a narrow isolated strip of street, full person and complete crosswalk visible, safe empty road",
+      "words": [
+        {
+          "id": "v-过",
+          "hanzi": "过",
+          "pinyin": "guò",
+          "spanish": "cruzar; pasar"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational Mandarin vocabulary asset for MÍNG.\nPrimary request: an adult pedestrian crossing a short zebra crossing on a narrow isolated strip of street, full person and complete crosswalk visible, safe empty road.\nScene/backdrop: genuine transparent alpha background. The subject may be a miniature architectural cutaway, but the canvas behind and around it is completely transparent, no opaque rectangular background, no floor extending outside the vignette.\nStyle: crisp natural premium product photography, realistic materials and proportions, calm soft light. Architectural cutaways are realistic scale models, not flat clipart.\nComposition: horizontal canvas. Place the complete subject in the RIGHT HALF, approximately x=46–95%, y=8–91%. Keep the LEFT 43% fully empty/transparent for accessible text the app will add. Keep all parts visible with generous transparent margins and all four corners transparent. Do not crop heads, hands, furniture, buildings, roofs or objects.\nConstraints: one coherent educational scene, no text, no characters, no labels, no pinyin, no interface elements, no brands, no watermark. A soft semi-transparent contact shadow is allowed. No white, colored or checkerboard background. Return only the subject cutout.\nMeaning supported: cruzar; pasar. These are editorial illustrations, not documentary likenesses.",
+      "promptSha256": "d563274c8df9ac05e57343f9f4a4df97aa161bd1715cfa5cd37f8da8665481a8",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "cross-street.png"
+    },
+    {
+      "slug": "road",
+      "ids": [
+        "v-马路",
+        "v-路"
+      ],
+      "subject": "a short isolated straight two-lane road segment with center line and sidewalks, no vehicles, a complete miniature road model, no scenery",
+      "words": [
+        {
+          "id": "v-马路",
+          "hanzi": "马路",
+          "pinyin": "mǎlù",
+          "spanish": "carretera; calle"
+        },
+        {
+          "id": "v-路",
+          "hanzi": "路",
+          "pinyin": "lù",
+          "spanish": "carretera; camino; calle"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational Mandarin vocabulary asset for MÍNG.\nPrimary request: a short isolated straight two-lane road segment with center line and sidewalks, no vehicles, a complete miniature road model, no scenery.\nScene/backdrop: genuine transparent alpha background. The subject may be a miniature architectural cutaway, but the canvas behind and around it is completely transparent, no opaque rectangular background, no floor extending outside the vignette.\nStyle: crisp natural premium product photography, realistic materials and proportions, calm soft light. Architectural cutaways are realistic scale models, not flat clipart.\nComposition: horizontal canvas. Place the complete subject in the RIGHT HALF, approximately x=46–95%, y=8–91%. Keep the LEFT 43% fully empty/transparent for accessible text the app will add. Keep all parts visible with generous transparent margins and all four corners transparent. Do not crop heads, hands, furniture, buildings, roofs or objects.\nConstraints: one coherent educational scene, no text, no characters, no labels, no pinyin, no interface elements, no brands, no watermark. A soft semi-transparent contact shadow is allowed. No white, colored or checkerboard background. Return only the subject cutout.\nMeaning supported: carretera; calle; carretera; camino; calle. These are editorial illustrations, not documentary likenesses.",
+      "promptSha256": "0080b21631e7eb0623174856b576d187b8dfc788ca76cd2d05603004b4a1789c",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "road.png"
+    },
+    {
+      "slug": "hutong",
+      "ids": [
+        "v-胡同"
+      ],
+      "subject": "a miniature Beijing hutong alley: TWO long PARALLEL low gray brick courtyard walls with tiled roofs, separated by a clearly visible NARROW WALKABLE LANE receding into the distance. View diagonally DOWN THE ALLEY, not at a gate or facade. Include small doorways on the sides, no people, no text",
+      "words": [
+        {
+          "id": "v-胡同",
+          "hanzi": "胡同",
+          "pinyin": "hútòng",
+          "spanish": "hutong; callejón"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: a miniature Beijing hutong alley: TWO long PARALLEL low gray brick courtyard walls with tiled roofs, separated by a clearly visible NARROW WALKABLE LANE receding into the distance. View diagonally DOWN THE ALLEY, not at a gate or facade. Include small doorways on the sides, no people, no text.\nStyle: Photorealistic architectural scale model with crisp realistic materials. Rooms are small open-front cutaway vignettes. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: hutong; callejón. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "670c1fe87c0527dce5ec42e62193fb1f15b5f0fa28183c059b727be780b95fda",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "previousPromptSha256": "0b56a99752be6b2b7b6f8f3c1c23e2c3d7055ad8fc8d92c9850cd097bd08afc2",
+      "revisionReason": "Remove unrelated architectural props / show the complete subject and correct spatial meaning.",
+      "master": "hutong-v2.png"
+    },
+    {
+      "slug": "waiting",
+      "ids": [
+        "v-等"
+      ],
+      "subject": "an adult person calmly seated on a small bench looking at a wristwatch, complete body and bench, no signage",
+      "words": [
+        {
+          "id": "v-等",
+          "hanzi": "等",
+          "pinyin": "děng",
+          "spanish": "esperar"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational Mandarin vocabulary asset for MÍNG.\nPrimary request: an adult person calmly seated on a small bench looking at a wristwatch, complete body and bench, no signage.\nScene/backdrop: genuine transparent alpha background. The subject may be a miniature architectural cutaway, but the canvas behind and around it is completely transparent, no opaque rectangular background, no floor extending outside the vignette.\nStyle: crisp natural premium product photography, realistic materials and proportions, calm soft light. Architectural cutaways are realistic scale models, not flat clipart.\nComposition: horizontal canvas. Place the complete subject in the RIGHT HALF, approximately x=46–95%, y=8–91%. Keep the LEFT 43% fully empty/transparent for accessible text the app will add. Keep all parts visible with generous transparent margins and all four corners transparent. Do not crop heads, hands, furniture, buildings, roofs or objects.\nConstraints: one coherent educational scene, no text, no characters, no labels, no pinyin, no interface elements, no brands, no watermark. A soft semi-transparent contact shadow is allowed. No white, colored or checkerboard background. Return only the subject cutout.\nMeaning supported: esperar. These are editorial illustrations, not documentary likenesses.",
+      "promptSha256": "6807801a427b242933dbd73cd45eeaaf4acdda5343b669fb1595f79deba94db7",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "waiting.png"
+    },
+    {
+      "slug": "city-street",
+      "ids": [
+        "v-街道",
+        "v-街"
+      ],
+      "subject": "a short miniature city street block with pedestrian sidewalks and low storefronts on both sides, no lettering or logos, entire vignette isolated",
+      "words": [
+        {
+          "id": "v-街道",
+          "hanzi": "街道",
+          "pinyin": "jiēdào",
+          "spanish": "calle"
+        },
+        {
+          "id": "v-街",
+          "hanzi": "街",
+          "pinyin": "jiē",
+          "spanish": "calle"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational Mandarin vocabulary asset for MÍNG.\nPrimary request: a short miniature city street block with pedestrian sidewalks and low storefronts on both sides, no lettering or logos, entire vignette isolated.\nScene/backdrop: genuine transparent alpha background. The subject may be a miniature architectural cutaway, but the canvas behind and around it is completely transparent, no opaque rectangular background, no floor extending outside the vignette.\nStyle: crisp natural premium product photography, realistic materials and proportions, calm soft light. Architectural cutaways are realistic scale models, not flat clipart.\nComposition: horizontal canvas. Place the complete subject in the RIGHT HALF, approximately x=46–95%, y=8–91%. Keep the LEFT 43% fully empty/transparent for accessible text the app will add. Keep all parts visible with generous transparent margins and all four corners transparent. Do not crop heads, hands, furniture, buildings, roofs or objects.\nConstraints: one coherent educational scene, no text, no characters, no labels, no pinyin, no interface elements, no brands, no watermark. A soft semi-transparent contact shadow is allowed. No white, colored or checkerboard background. Return only the subject cutout.\nMeaning supported: calle; calle. These are editorial illustrations, not documentary likenesses.",
+      "promptSha256": "eaefb21fdb621ca67772e6fa1533d4d5ceab92b3db6b8e788263046a22c2366f",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "city-street.png"
+    },
+    {
+      "slug": "bathroom",
+      "ids": [
+        "v-卫生间"
+      ],
+      "subject": "a small bathroom cutaway with toilet, sink and shower, complete fixture arrangement, no people",
+      "words": [
+        {
+          "id": "v-卫生间",
+          "hanzi": "卫生间",
+          "pinyin": "wèishēngjiān",
+          "spanish": "cuarto de baño"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational Mandarin vocabulary asset for MÍNG.\nPrimary request: a small bathroom cutaway with toilet, sink and shower, complete fixture arrangement, no people.\nScene/backdrop: genuine transparent alpha background. The subject may be a miniature architectural cutaway, but the canvas behind and around it is completely transparent, no opaque rectangular background, no floor extending outside the vignette.\nStyle: crisp natural premium product photography, realistic materials and proportions, calm soft light. Architectural cutaways are realistic scale models, not flat clipart.\nComposition: horizontal canvas. Place the complete subject in the RIGHT HALF, approximately x=46–95%, y=8–91%. Keep the LEFT 43% fully empty/transparent for accessible text the app will add. Keep all parts visible with generous transparent margins and all four corners transparent. Do not crop heads, hands, furniture, buildings, roofs or objects.\nConstraints: one coherent educational scene, no text, no characters, no labels, no pinyin, no interface elements, no brands, no watermark. A soft semi-transparent contact shadow is allowed. No white, colored or checkerboard background. Return only the subject cutout.\nMeaning supported: cuarto de baño. These are editorial illustrations, not documentary likenesses.",
+      "promptSha256": "406b1598f484050fc532d7bc74dbcd7b37422ce8cfbdd81f947861353a755c22",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "bathroom.png"
+    },
+    {
+      "slug": "bedroom",
+      "ids": [
+        "v-卧室"
+      ],
+      "subject": "a cozy bedroom cutaway with one double bed, pillows, bedside lamp and wardrobe, complete furniture, no people",
+      "words": [
+        {
+          "id": "v-卧室",
+          "hanzi": "卧室",
+          "pinyin": "wòshì",
+          "spanish": "dormitorio"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational Mandarin vocabulary asset for MÍNG.\nPrimary request: a cozy bedroom cutaway with one double bed, pillows, bedside lamp and wardrobe, complete furniture, no people.\nScene/backdrop: genuine transparent alpha background. The subject may be a miniature architectural cutaway, but the canvas behind and around it is completely transparent, no opaque rectangular background, no floor extending outside the vignette.\nStyle: crisp natural premium product photography, realistic materials and proportions, calm soft light. Architectural cutaways are realistic scale models, not flat clipart.\nComposition: horizontal canvas. Place the complete subject in the RIGHT HALF, approximately x=46–95%, y=8–91%. Keep the LEFT 43% fully empty/transparent for accessible text the app will add. Keep all parts visible with generous transparent margins and all four corners transparent. Do not crop heads, hands, furniture, buildings, roofs or objects.\nConstraints: one coherent educational scene, no text, no characters, no labels, no pinyin, no interface elements, no brands, no watermark. A soft semi-transparent contact shadow is allowed. No white, colored or checkerboard background. Return only the subject cutout.\nMeaning supported: dormitorio. These are editorial illustrations, not documentary likenesses.",
+      "promptSha256": "1f60f8b4836c4788d386a9f3886b56d63d83872f2a2b0717867ba90bb000c658",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "bedroom.png"
+    },
+    {
+      "slug": "living-room",
+      "ids": [
+        "v-客厅"
+      ],
+      "subject": "a living room cutaway with sofa, armchair, low coffee table and a small potted plant, all furniture fully visible",
+      "words": [
+        {
+          "id": "v-客厅",
+          "hanzi": "客厅",
+          "pinyin": "kètīng",
+          "spanish": "salón"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational Mandarin vocabulary asset for MÍNG.\nPrimary request: a living room cutaway with sofa, armchair, low coffee table and a small potted plant, all furniture fully visible.\nScene/backdrop: genuine transparent alpha background. The subject may be a miniature architectural cutaway, but the canvas behind and around it is completely transparent, no opaque rectangular background, no floor extending outside the vignette.\nStyle: crisp natural premium product photography, realistic materials and proportions, calm soft light. Architectural cutaways are realistic scale models, not flat clipart.\nComposition: horizontal canvas. Place the complete subject in the RIGHT HALF, approximately x=46–95%, y=8–91%. Keep the LEFT 43% fully empty/transparent for accessible text the app will add. Keep all parts visible with generous transparent margins and all four corners transparent. Do not crop heads, hands, furniture, buildings, roofs or objects.\nConstraints: one coherent educational scene, no text, no characters, no labels, no pinyin, no interface elements, no brands, no watermark. A soft semi-transparent contact shadow is allowed. No white, colored or checkerboard background. Return only the subject cutout.\nMeaning supported: salón. These are editorial illustrations, not documentary likenesses.",
+      "promptSha256": "28ffba7975d9181714f64cab600b8bb452098d60982c6501ec0513c29528b73b",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "living-room.png"
+    },
+    {
+      "slug": "balcony",
+      "ids": [
+        "v-阳台"
+      ],
+      "subject": "a small apartment balcony architectural cutaway with railing, glass door behind, a chair and potted plant, clearly an outdoor balcony attached to a wall",
+      "words": [
+        {
+          "id": "v-阳台",
+          "hanzi": "阳台",
+          "pinyin": "yángtái",
+          "spanish": "balcón"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational Mandarin vocabulary asset for MÍNG.\nPrimary request: a small apartment balcony architectural cutaway with railing, glass door behind, a chair and potted plant, clearly an outdoor balcony attached to a wall.\nScene/backdrop: genuine transparent alpha background. The subject may be a miniature architectural cutaway, but the canvas behind and around it is completely transparent, no opaque rectangular background, no floor extending outside the vignette.\nStyle: crisp natural premium product photography, realistic materials and proportions, calm soft light. Architectural cutaways are realistic scale models, not flat clipart.\nComposition: horizontal canvas. Place the complete subject in the RIGHT HALF, approximately x=46–95%, y=8–91%. Keep the LEFT 43% fully empty/transparent for accessible text the app will add. Keep all parts visible with generous transparent margins and all four corners transparent. Do not crop heads, hands, furniture, buildings, roofs or objects.\nConstraints: one coherent educational scene, no text, no characters, no labels, no pinyin, no interface elements, no brands, no watermark. A soft semi-transparent contact shadow is allowed. No white, colored or checkerboard background. Return only the subject cutout.\nMeaning supported: balcón. These are editorial illustrations, not documentary likenesses.",
+      "promptSha256": "f8adb742b77e6ee4ecafd6715c80f71578eecfefa655aa8af2d718ddc72197f0",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "balcony.png"
+    },
+    {
+      "slug": "study-room",
+      "ids": [
+        "v-书房"
+      ],
+      "subject": "a personal study room cutaway with writing desk, desk lamp, chair and bookcase, quiet home workspace, no people",
+      "words": [
+        {
+          "id": "v-书房",
+          "hanzi": "书房",
+          "pinyin": "shūfáng",
+          "spanish": "cuarto de estudio"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: a personal study room cutaway with writing desk, desk lamp, chair and bookcase, quiet home workspace, no people.\nStyle: Photorealistic architectural scale model with crisp realistic materials. Rooms are small open-front cutaway vignettes. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: cuarto de estudio. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "d413a45c1987d8aa451b9d33a4438416653a1266fc1d3159d7f350419af54f75",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "study-room.png"
+    },
+    {
+      "slug": "cafe",
+      "ids": [
+        "v-咖啡厅"
+      ],
+      "subject": "a small cafe cutaway with espresso machine, counter, two round cafe tables and coffee cups, no people, no lettering",
+      "words": [
+        {
+          "id": "v-咖啡厅",
+          "hanzi": "咖啡厅",
+          "pinyin": "kāfēitīng",
+          "spanish": "cafetería, café"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: a small cafe cutaway with espresso machine, counter, two round cafe tables and coffee cups, no people, no lettering.\nStyle: Photorealistic architectural scale model with crisp realistic materials. Rooms are small open-front cutaway vignettes. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: cafetería, café. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "1c640c071ee4a645d675e6d4fe28ae05ee5cdeab2897c4af4ddf57e7d78dc62a",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "cafe.png"
+    },
+    {
+      "slug": "bar",
+      "ids": [
+        "v-酒吧"
+      ],
+      "subject": "a small bar interior cutaway with a drinks counter, three bar stools and bottle shelves, no people, no brands or lettering",
+      "words": [
+        {
+          "id": "v-酒吧",
+          "hanzi": "酒吧",
+          "pinyin": "jiǔbā",
+          "spanish": "bar"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: a small bar interior cutaway with a drinks counter, three bar stools and bottle shelves, no people, no brands or lettering.\nStyle: Photorealistic architectural scale model with crisp realistic materials. Rooms are small open-front cutaway vignettes. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: bar. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "f7eb24dac519a7607b35ae90e239e98bf1a3b3469687ab2c1a6ce29863405b79",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "bar.png"
+    },
+    {
+      "slug": "halal-restaurant",
+      "ids": [
+        "v-清真餐厅"
+      ],
+      "subject": "a modest halal restaurant cutaway with dining tables, plates of lamb skewers and rice, a small crescent motif on the counter, no alcohol, no pork, no people, no lettering",
+      "words": [
+        {
+          "id": "v-清真餐厅",
+          "hanzi": "清真餐厅",
+          "pinyin": "qīngzhēn cāntīng",
+          "spanish": "restaurante musulmán; restaurante halal"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: a modest halal restaurant cutaway with dining tables, plates of lamb skewers and rice, a small crescent motif on the counter, no alcohol, no pork, no people, no lettering.\nStyle: Photorealistic architectural scale model with crisp realistic materials. Rooms are small open-front cutaway vignettes. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: restaurante musulmán; restaurante halal. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "4cdf34c3acda74c4a79fc74cee0ee90fb6fbaaaf2ebf62771091bd597e4548f8",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "halal-restaurant.png"
+    },
+    {
+      "slug": "sports-field",
+      "ids": [
+        "v-操场"
+      ],
+      "subject": "a miniature school sports field with an oval running track surrounding a green football pitch, two goals, no people, whole field visible",
+      "words": [
+        {
+          "id": "v-操场",
+          "hanzi": "操场",
+          "pinyin": "cāochǎng",
+          "spanish": "campo deportivo"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: a miniature school sports field with an oval running track surrounding a green football pitch, two goals, no people, whole field visible.\nStyle: Photorealistic architectural scale model with crisp realistic materials. Rooms are small open-front cutaway vignettes. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: campo deportivo. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "f62fb9c89271f691ad2a82004e9d5ee6357e75907e74484fd7bbd84a8a04f968",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "sports-field.png"
+    },
+    {
+      "slug": "classroom-building",
+      "ids": [
+        "v-教学楼"
+      ],
+      "subject": "a miniature school classroom building cutaway with three storeys, visible rows of desks and blackboards through open front, no writing",
+      "words": [
+        {
+          "id": "v-教学楼",
+          "hanzi": "教学楼",
+          "pinyin": "jiàoxuélóu",
+          "spanish": "edificio de aulas"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: a miniature school classroom building cutaway with three storeys, visible rows of desks and blackboards through open front, no writing.\nStyle: Photorealistic architectural scale model with crisp realistic materials. Rooms are small open-front cutaway vignettes. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: edificio de aulas. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "e80b5365187bbea9fdc02205ca41979fb914176a14583263d285404f34ce3edc",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "classroom-building.png"
+    },
+    {
+      "slug": "dormitory-building",
+      "ids": [
+        "v-宿舍楼"
+      ],
+      "subject": "a miniature student residence building cutaway with repeated bedrooms containing beds and desks across three storeys, whole building visible",
+      "words": [
+        {
+          "id": "v-宿舍楼",
+          "hanzi": "宿舍楼",
+          "pinyin": "sùshèlóu",
+          "spanish": "edificio de dormitorios"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: a miniature student residence building cutaway with repeated bedrooms containing beds and desks across three storeys, whole building visible.\nStyle: Photorealistic architectural scale model with crisp realistic materials. Rooms are small open-front cutaway vignettes. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: edificio de dormitorios. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "d8b473ca32ee84a0a136527b02867de189d8de09771367f12857c05ed11b0ed4",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "dormitory-building.png"
+    },
+    {
+      "slug": "practise-writing",
+      "ids": [
+        "v-练习",
+        "v-做作业"
+      ],
+      "subject": "an adult student sitting at a desk doing written exercises with a pencil and an open notebook, complete body, chair and desk, no legible writing",
+      "words": [
+        {
+          "id": "v-练习",
+          "hanzi": "练习",
+          "pinyin": "liànxí",
+          "spanish": "practicar/ejercicio"
+        },
+        {
+          "id": "v-做作业",
+          "hanzi": "做作业",
+          "pinyin": "zuò zuò yè",
+          "spanish": "hacer la tarea"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: an adult student sitting at a desk doing written exercises with a pencil and an open notebook, complete body, chair and desk, no legible writing.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: practicar/ejercicio; hacer la tarea. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "c86eb7acb3b0c4337c947ae52bbada118a57fccfbd72904f13d94a01fd5427fc",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "practise-writing.png"
+    },
+    {
+      "slug": "oral-exam",
+      "ids": [
+        "v-口语考试"
+      ],
+      "subject": "an adult student seated opposite a teacher across a small desk, student speaking and teacher listening attentively with a clipboard, complete figures and furniture, no text",
+      "words": [
+        {
+          "id": "v-口语考试",
+          "hanzi": "口语考试",
+          "pinyin": "kǒuyǔ kǎoshì",
+          "spanish": "examen oral"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: an adult student seated opposite a teacher across a small desk, student speaking and teacher listening attentively with a clipboard, complete figures and furniture, no text.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: examen oral. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "2eed481cade6e4dd82363b409cfbc64fef8b120095154a13cdde34e5d7af23f9",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "oral-exam.png"
+    },
+    {
+      "slug": "spoken-language",
+      "ids": [
+        "v-口语"
+      ],
+      "subject": "two adult language students having a friendly face-to-face conversation, one speaking while the other listens, natural expressive gestures, complete people",
+      "words": [
+        {
+          "id": "v-口语",
+          "hanzi": "口语",
+          "pinyin": "kǒuyǔ",
+          "spanish": "idioma hablado"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: two adult language students having a friendly face-to-face conversation, one speaking while the other listens, natural expressive gestures, complete people.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: idioma hablado. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "90dce89b0c59aa32d2f7e6dc8b5863a731cf2bab07adb6c4e439ece9c7408af0",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "spoken-language.png"
+    },
+    {
+      "slug": "listening",
+      "ids": [
+        "v-听力"
+      ],
+      "subject": "an adult student wearing headphones listening attentively with a hand near one ear and a notebook on a small desk, complete person and furniture",
+      "words": [
+        {
+          "id": "v-听力",
+          "hanzi": "听力",
+          "pinyin": "tīnglì",
+          "spanish": "audición"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: an adult student wearing headphones listening attentively with a hand near one ear and a notebook on a small desk, complete person and furniture.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: audición. Editorial illustration, no documentary identity claim.\nCritical framing correction: zoom out substantially. Show the complete seated figure, both shoes, every chair leg and every desk leg, inside transparent margins. Do not show a close-up. Keep a 10% transparent margin under all feet and furniture. No objects may touch any canvas edge.",
+      "promptSha256": "800b90936965b9561a2d24850193b2aad2ce38dd85dab5a365930b6cfefdca1c",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "listening-v2.png"
+    },
+    {
+      "slug": "literature",
+      "ids": [
+        "v-文学",
+        "v-语文"
+      ],
+      "subject": "three elegant unbranded hardcover books, one open book and a fountain pen, a complete still-life suggesting literature, no legible text",
+      "words": [
+        {
+          "id": "v-文学",
+          "hanzi": "文学",
+          "pinyin": "wénxué",
+          "spanish": "literatura"
+        },
+        {
+          "id": "v-语文",
+          "hanzi": "语文",
+          "pinyin": "yǔwén",
+          "spanish": "lengua y literatura"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: three elegant unbranded hardcover books, one open book and a fountain pen, a complete still-life suggesting literature, no legible text.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: literatura; lengua y literatura. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "d2d105f2b84bfa5fc99d7d9f4e1e7613420abacef741300031ec211f775b80ab",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "literature.png"
+    },
+    {
+      "slug": "history",
+      "ids": [
+        "v-历史"
+      ],
+      "subject": "an antique rolled parchment scroll beside a small historical clay vessel and an hourglass, complete educational still-life about history, no legible text",
+      "words": [
+        {
+          "id": "v-历史",
+          "hanzi": "历史",
+          "pinyin": "lìshǐ",
+          "spanish": "historia"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: an antique rolled parchment scroll beside a small historical clay vessel and an hourglass, complete educational still-life about history, no legible text.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: historia. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "35248fa45de7582b1ef2e9dc3e1912dfd1b2ac0178894b2d1dacec374cf4a99a",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "history.png"
+    },
+    {
+      "slug": "economics",
+      "ids": [
+        "v-经济"
+      ],
+      "subject": "a compact still-life of stacked coins, a calculator and three increasing-height stacks of plain blocks suggesting economics, no currency logos or writing",
+      "words": [
+        {
+          "id": "v-经济",
+          "hanzi": "经济",
+          "pinyin": "jīngjì",
+          "spanish": "ciencias económicas; economía"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: a compact still-life of stacked coins, a calculator and three increasing-height stacks of plain blocks suggesting economics, no currency logos or writing.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: ciencias económicas; economía. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "728a3521fd561901eeaf07d1acce3e8883659ae722c5b9d390a160649f11330d",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "economics.png"
+    },
+    {
+      "slug": "culture",
+      "ids": [
+        "v-文化"
+      ],
+      "subject": "a traditional Chinese paper fan, tea pot with two cups and calligraphy brush arranged as a complete cultural still-life, no legible text",
+      "words": [
+        {
+          "id": "v-文化",
+          "hanzi": "文化",
+          "pinyin": "wénhuà",
+          "spanish": "cultura"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: a traditional Chinese paper fan, tea pot with two cups and calligraphy brush arranged as a complete cultural still-life, no legible text.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: cultura. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "abe0e2f6b489e6d905ae34ab1a26aa857ed2885d731525ce4697fcda29ea4c15",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "culture.png"
+    },
+    {
+      "slug": "money",
+      "ids": [
+        "v-钱"
+      ],
+      "subject": "a small pile of generic paper banknotes and coins, realistic money but no logos, portraits or readable denominations, complete pile",
+      "words": [
+        {
+          "id": "v-钱",
+          "hanzi": "钱",
+          "pinyin": "qián",
+          "spanish": "dinero"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: a small pile of generic paper banknotes and coins, realistic money but no logos, portraits or readable denominations, complete pile.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: dinero. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "398908d53a3be8bd4f3f6707f6517bc0ab744d775dd69211393621a0ed7c7686",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "money.png"
+    },
+    {
+      "slug": "idea",
+      "ids": [
+        "v-主意"
+      ],
+      "subject": "an adult person with a thoughtful pleased expression raising one index finger as an idea occurs, with a small warm glowing light bulb beside the head, complete person",
+      "words": [
+        {
+          "id": "v-主意",
+          "hanzi": "主意",
+          "pinyin": "zhǔyi",
+          "spanish": "idea"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: an adult person with a thoughtful pleased expression raising one index finger as an idea occurs, with a small warm glowing light bulb beside the head, complete person.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: idea. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "61493fbcfd936fb7c28e03196c5b514b63ce5823d6db78e2874746980990c596",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "idea.png"
+    },
+    {
+      "slug": "fear",
+      "ids": [
+        "v-怕"
+      ],
+      "subject": "an adult person recoiling slightly from a harmless small spider at a comfortable distance, clear fearful expression, full body visible, nonthreatening educational scene",
+      "words": [
+        {
+          "id": "v-怕",
+          "hanzi": "怕",
+          "pinyin": "pà",
+          "spanish": "temer"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: an adult person recoiling slightly from a harmless small spider at a comfortable distance, clear fearful expression, full body visible, nonthreatening educational scene.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: temer. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "9b00a0c6eba0aba8d388cbb10bbf01da17f0b6732015005bd35a51e3e6e8b2b8",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "fear.png"
+    },
+    {
+      "slug": "gossip",
+      "ids": [
+        "v-八卦"
+      ],
+      "subject": "two adults standing, one quietly whispering toward the other person’s ear and the listener reacting with curiosity, natural expressions, both complete full bodies and all hands and feet visible",
+      "words": [
+        {
+          "id": "v-八卦",
+          "hanzi": "八卦",
+          "pinyin": "bāguà",
+          "spanish": "chisme"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: two adults standing, one quietly whispering toward the other person’s ear and the listener reacting with curiosity, natural expressions, both complete full bodies and all hands and feet visible.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: chisme. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "e9897ad4f062ec1372cd143afb60107e24878464471351f15b73330734a1e0cf",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "gossip.png"
+    },
+    {
+      "slug": "biology",
+      "ids": [
+        "v-生物"
+      ],
+      "subject": "a school microscope, a small plant with visible roots in a clear pot and a realistic leaf, complete educational still-life about biology",
+      "words": [
+        {
+          "id": "v-生物",
+          "hanzi": "生物",
+          "pinyin": "shēngwù",
+          "spanish": "Biología"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: a school microscope, a small plant with visible roots in a clear pot and a realistic leaf, complete educational still-life about biology.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: Biología. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "7082b9cfd0a0d2e663fbf999de187d696aef30171bba8e552f5475d687f86c47",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "biology.png"
+    },
+    {
+      "slug": "chemistry",
+      "ids": [
+        "v-化学"
+      ],
+      "subject": "a safe school chemistry still-life with three glass flasks containing different colored liquids and a ball-and-stick molecular model, no labels, all objects complete",
+      "words": [
+        {
+          "id": "v-化学",
+          "hanzi": "化学",
+          "pinyin": "huàxué",
+          "spanish": "Química"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: a safe school chemistry still-life with three glass flasks containing different colored liquids and a ball-and-stick molecular model, no labels, all objects complete.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: Química. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "6cdd2f753420e25892472453cd24f1740413c9609f49b0728447be198dfc64d3",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "chemistry.png"
+    },
+    {
+      "slug": "physics",
+      "ids": [
+        "v-物理"
+      ],
+      "subject": "a Newton's cradle with five metal balls, a horseshoe magnet and a glass prism splitting a small ray of light, complete educational still-life",
+      "words": [
+        {
+          "id": "v-物理",
+          "hanzi": "物理",
+          "pinyin": "wùlǐ",
+          "spanish": "Física"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: a Newton's cradle with five metal balls, a horseshoe magnet and a glass prism splitting a small ray of light, complete educational still-life.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: Física. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "e230e2a186ed3bcecdd5e6ce81084886eb7983aa729301141352e31ea2dec0fe",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "physics.png"
+    },
+    {
+      "slug": "geography",
+      "ids": [
+        "v-地理"
+      ],
+      "subject": "an unbranded terrestrial globe on its stand beside a small compass and folded topographic map, no readable text, complete objects",
+      "words": [
+        {
+          "id": "v-地理",
+          "hanzi": "地理",
+          "pinyin": "dìlǐ",
+          "spanish": "Geografía"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: an unbranded terrestrial globe on its stand beside a small compass and folded topographic map, no readable text, complete objects.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: Geografía. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "4906337f4e41f601b7ff2b579f8b33abc04640bd4f097e04add57961eb8a0ab1",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "geography.png"
+    },
+    {
+      "slug": "writing",
+      "ids": [
+        "v-写作"
+      ],
+      "subject": "an adult student writing in a notebook at a small desk with a fountain pen, a few blank pages neatly beside the notebook, full person and furniture",
+      "words": [
+        {
+          "id": "v-写作",
+          "hanzi": "写作",
+          "pinyin": "xiězuò",
+          "spanish": "redacción; escribir"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: an adult student writing in a notebook at a small desk with a fountain pen, a few blank pages neatly beside the notebook, full person and furniture.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: redacción; escribir. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "472f395f66f9027007a24aaa6c5f5bcaf8af1277d2c35e28d76778324eae1b3a",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "writing.png"
+    },
+    {
+      "slug": "secondary-school",
+      "ids": [
+        "v-中学"
+      ],
+      "subject": "a modest secondary school building model with classroom windows, entrance and a small schoolyard, entire model isolated, no lettering",
+      "words": [
+        {
+          "id": "v-中学",
+          "hanzi": "中学",
+          "pinyin": "zhōngxué",
+          "spanish": "escuela secundaria"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: a modest secondary school building model with classroom windows, entrance and a small schoolyard, entire model isolated, no lettering.\nStyle: Photorealistic architectural scale model with crisp realistic materials. Rooms are small open-front cutaway vignettes. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: escuela secundaria. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "d6c5c4a613703e38462295ff4e869018794592f208ef2841ee005be887e86161",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "secondary-school.png"
+    },
+    {
+      "slug": "birth",
+      "ids": [
+        "v-出生"
+      ],
+      "subject": "a newborn baby safely wrapped in a soft pale blanket resting in a complete bassinet, gentle warm light, no other people, no lettering",
+      "words": [
+        {
+          "id": "v-出生",
+          "hanzi": "出生",
+          "pinyin": "chūshēng",
+          "spanish": "nacer"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: a newborn baby safely wrapped in a soft pale blanket resting in a complete bassinet, gentle warm light, no other people, no lettering.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: nacer. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "70257c7cbc03b373dbc6a7b9e44c2364c59e859fa31eb1a0682d92761eb1b88f",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "birth.png"
+    },
+    {
+      "slug": "song",
+      "ids": [
+        "v-歌"
+      ],
+      "subject": "an adult singer singing into a microphone on a stand, relaxed expressive posture, full body and microphone stand visible, no stage background",
+      "words": [
+        {
+          "id": "v-歌",
+          "hanzi": "歌",
+          "pinyin": "gē",
+          "spanish": "canción"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: an adult singer singing into a microphone on a stand, relaxed expressive posture, full body and microphone stand visible, no stage background.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: canción. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "dd7e98170745ad2c971fc87229ad44d335df6b2db0fe52c7fd8533a51380c43b",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "song.png"
+    },
+    {
+      "slug": "dance",
+      "ids": [
+        "v-舞"
+      ],
+      "subject": "one adult dancer in modest dance clothing in a graceful dynamic pose, entire body including hands and feet visible",
+      "words": [
+        {
+          "id": "v-舞",
+          "hanzi": "舞",
+          "pinyin": "wǔ",
+          "spanish": "danza"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: one adult dancer in modest dance clothing in a graceful dynamic pose, entire body including hands and feet visible.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: danza. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "37f67489949b987cb838a90f9030d7e16b2626907553d0d3ffb3eabf24d2299a",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "dance.png"
+    },
+    {
+      "slug": "courteous",
+      "ids": [
+        "v-客气"
+      ],
+      "subject": "two adults making a courteous exchange, one offering a small gift with both hands and the other acknowledging warmly, full figures and complete hands",
+      "words": [
+        {
+          "id": "v-客气",
+          "hanzi": "客气",
+          "pinyin": "kèqi",
+          "spanish": "cortés"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: two adults making a courteous exchange, one offering a small gift with both hands and the other acknowledging warmly, full figures and complete hands.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: cortés. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "127e55a3c38c11c44376f49ef800de84bfc77d1381750ae3a1bf242f5d16a6c8",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "courteous.png"
+    },
+    {
+      "slug": "sorry",
+      "ids": [
+        "v-不好意思"
+      ],
+      "subject": "an adult person giving a small apologetic bow with one hand near their chest and a slightly embarrassed gentle smile, complete person",
+      "words": [
+        {
+          "id": "v-不好意思",
+          "hanzi": "不好意思",
+          "pinyin": "bù hǎoyìsi",
+          "spanish": "lo siento; sentirse avergonzado"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: an adult person giving a small apologetic bow with one hand near their chest and a slightly embarrassed gentle smile, complete person.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: lo siento; sentirse avergonzado. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "b405dfb6348e7310e91b2a6b299370daca68b1f4262186ee6ba82df0651f40f4",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "sorry.png"
+    },
+    {
+      "slug": "regret",
+      "ids": [
+        "v-可惜"
+      ],
+      "subject": "an adult looking disappointed at an ice cream scoop accidentally fallen beside an empty cone, gentle relatable expression, complete small scene, no text",
+      "words": [
+        {
+          "id": "v-可惜",
+          "hanzi": "可惜",
+          "pinyin": "kěxī",
+          "spanish": "es una lástima"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: an adult looking disappointed at an ice cream scoop accidentally fallen beside an empty cone, gentle relatable expression, complete small scene, no text.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: es una lástima. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "c40986f36b3d1f2ccc2134b013d0004d9d5e74baadb4f9cb29394dbbc29e9fcd",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "regret.png"
+    },
+    {
+      "slug": "wish",
+      "ids": [
+        "v-祝"
+      ],
+      "subject": "two adults smiling warmly while one presents a small wrapped gift and a blank greeting card to the other, complete people, no writing",
+      "words": [
+        {
+          "id": "v-祝",
+          "hanzi": "祝",
+          "pinyin": "zhù",
+          "spanish": "desear"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: two adults smiling warmly while one presents a small wrapped gift and a blank greeting card to the other, complete people, no writing.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: desear. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "280fd7d8476b8ebdc5d41c4a3e008605e8912b57633697ff98a7e1af1b7f6277",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "wish.png"
+    },
+    {
+      "slug": "teaching",
+      "ids": [
+        "v-教学"
+      ],
+      "subject": "an adult teacher explaining an open book to an adult student at a small desk, teacher points to the book and student listens, complete scene, no legible text",
+      "words": [
+        {
+          "id": "v-教学",
+          "hanzi": "教学",
+          "pinyin": "jiàoxué",
+          "spanish": "enseñanza y aprendizaje"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: an adult teacher explaining an open book to an adult student at a small desk, teacher points to the book and student listens, complete scene, no legible text.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: enseñanza y aprendizaje. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "86c8d4374af345106f8950515a5e332f2499096ad0d9ccd35aa69004ac039aff",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "teaching.png"
+    },
+    {
+      "slug": "miss",
+      "ids": [
+        "v-小姐"
+      ],
+      "subject": "one fictional adult woman standing in neutral everyday smart casual clothes with a polite welcoming expression, full body visible, no profession or nationality implied",
+      "words": [
+        {
+          "id": "v-小姐",
+          "hanzi": "小姐",
+          "pinyin": "xiǎojie",
+          "spanish": "señora; señorita"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Educational vocabulary cutout for MÍNG.\nPrimary subject: one fictional adult woman standing in neutral everyday smart casual clothes with a polite welcoming expression, full body visible, no profession or nationality implied.\nStyle: Natural premium photography, realistic human proportions and materials. No miniature buildings, no architectural model, no dollhouse, no buildings or scenery unrelated to the subject. Soft natural light, gentle contrast, realistic colors.\nBackground: genuine transparent alpha, no solid background and no checkerboard. Only the subject described above. All four corners and canvas edges must be fully transparent. No opaque ground or backdrop outside the subject.\nComposition: landscape canvas. Complete subject within the RIGHT HALF x=46–95%, y=8–91%. Leave LEFT 43% completely transparent for app-rendered vocabulary. Keep the entire subject inside the canvas with generous margins. Human figures must include heads, hands, legs and both feet, no cropping. Architecture must include whole roof and foundation.\nConstraints: no text, Chinese, pinyin, labels, UI, brands, watermarks or extraneous objects. Very soft transparent contact shadow allowed. Return just the coherent subject cutout.\nMeaning supported: señora; señorita. Editorial illustration, no documentary identity claim.",
+      "promptSha256": "985615dda43e96513b548914ebf1afbdd8cb418b2e8e4e5a19d36217de07ad7a",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "miss.png"
+    },
+    {
+      "slug": "myself",
+      "ids": [
+        "v-我"
+      ],
+      "subject": "one adult person smiling gently and clearly pointing one index finger toward their OWN chest, direct front view, unmistakable self-reference, complete full body with all feet and hands visible",
+      "words": [
+        {
+          "id": "v-我",
+          "hanzi": "我",
+          "pinyin": "wǒ",
+          "spanish": "yo; mí"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Mandarin educational cutout. Subject: one adult person smiling gently and clearly pointing one index finger toward their OWN chest, direct front view, unmistakable self-reference, complete full body with all feet and hands visible. Natural premium photography and correct human anatomy. Genuine transparent alpha background. Place complete scene in right half of landscape canvas x=46–94%, y=10–89%, left 43% fully transparent. Zoom out enough for full body and complete furniture with generous margins. No buildings, architectural miniatures, floor or scenery. No writing, no letters, no pinyin, no labels, no watermarks. Transparent corners and edges. This is supportive illustration for the audited meaning yo; mí, never a documentary identity.",
+      "promptSha256": "d727625bf1e757eb7bf5590630ef075b12d95f6ba3c2144323ee6c555b3a5a86",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "myself.png",
+      "revisionReason": "Apply previously saved editorial correction to replace an image pending regeneration."
+    },
+    {
+      "slug": "hungry",
+      "ids": [
+        "v-饿"
+      ],
+      "subject": "one hungry adult sitting at a small dining table with a completely EMPTY plate, looking longingly at an imagined delicious meal represented in a small soft-edged thought bubble above their head; a subtle tiny drop of saliva at the corner of the mouth, tasteful not grotesque; the real plate is clearly empty; complete person, table, chair and feet visible",
+      "words": [
+        {
+          "id": "v-饿",
+          "hanzi": "饿",
+          "pinyin": "è",
+          "spanish": "hambriento; tener hambre"
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Mandarin educational cutout. Subject: one hungry adult sitting at a small dining table with a completely EMPTY plate, looking longingly at an imagined delicious meal represented in a small soft-edged thought bubble above their head; a subtle tiny drop of saliva at the corner of the mouth, tasteful not grotesque; the real plate is clearly empty; complete person, table, chair and feet visible. Natural premium photography and correct human anatomy. Genuine transparent alpha background. Place complete scene in right half of landscape canvas x=46–94%, y=10–89%, left 43% fully transparent. Zoom out enough for full body and complete furniture with generous margins. No buildings, architectural miniatures, floor or scenery. No writing, no letters, no pinyin, no labels, no watermarks. Transparent corners and edges. This is supportive illustration for the audited meaning hambriento; tener hambre, never a documentary identity.",
+      "promptSha256": "9a53698a46b1d4f484ce9349b8719f1030a30df76c985f32aee3deea415ee786",
+      "model": "gpt-image-1.5",
+      "quality": "medium",
+      "size": "1536x1024",
+      "background": "transparent",
+      "status": "approved",
+      "master": "hungry.png",
+      "revisionReason": "Apply previously saved editorial correction to replace an image pending regeneration."
+    }
+  ]
+}
