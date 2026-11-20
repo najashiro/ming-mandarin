@@ -3,7 +3,8 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { studyScopeOptions, getStudyScopeLabel } from '@/lib/study-options';
 import type { CurriculumScope } from '@/data/types';
-import { getVocabularyMixSet, vocabularyCatalog } from '@/lib/vocabulary';
+import { getVocabularyLesson, getVocabularyMixSet, vocabularyCatalog } from '@/lib/vocabulary';
+import { scopeDefinitions } from '@/seed/curriculum';
 import { evaluateMix, isMixComplete, mixStats, startMix, type MixResultSnapshot } from '@/lib/vocabulary-review';
 import type { VocabularyMediaEntry } from '@/lib/vocabulary-media';
 import { useVocabularyState } from './useVocabularyState';
@@ -42,6 +43,9 @@ export function VocabularyMix({ scope, userId, route, media }: { scope: Curricul
   const back = backState.turn === turnKey && backState.value;
   const autoPlayBlocked = blockedTurn === turnKey;
   const word = currentId ? vocabularyCatalog.find(entry => entry.id === currentId) : undefined;
+  const selectedLessons = scopeDefinitions[session?.scope ?? scope].lessonIds;
+  const currentLesson = selectedLessons.length === 1 ? selectedLessons[0] : word ? getVocabularyLesson(word) : undefined;
+  const lessonLabel = currentLesson ? <p className="vocabulary-mix-lesson">Lección {currentLesson}</p> : null;
   const complete = Boolean(session && isMixComplete(session));
   const stats = session ? mixStats(session) : { responded: 0, correct: 0, incorrect: 0, total: 0, percentage: 0, incorrectIds: [] as string[] };
   const currentRoute = `/study/${scope}/games/vocabulary-mix`;
@@ -136,6 +140,7 @@ export function VocabularyMix({ scope, userId, route, media }: { scope: Curricul
     <Scoreboard {...stats}/>
     <h2>Partida en pausa</h2>
     <p>{getStudyScopeLabel(session.scope)} · {session.actualSize} palabras</p>
+    {lessonLabel}
     <button type="button" onClick={() => patchSession({ paused: false })}>Reanudar</button>
     <button type="button" onClick={() => { stopMandarinAudio(); update(previous => { const sessions = { ...previous.sessions }; delete sessions[scope]; return { ...previous, sessions }; }); }}>Finalizar partida en curso</button>
   </section>;
@@ -146,6 +151,7 @@ export function VocabularyMix({ scope, userId, route, media }: { scope: Curricul
     <header className="vocabulary-mix-round-header"><span>{getStudyScopeLabel(session.scope)} · {session.kind === 'review' ? 'Repaso' : `${session.actualSize} palabras`}</span><button type="button" onClick={() => { stopMandarinAudio(); patchSession({ paused: true }); }}>Pausar</button></header>
     <Scoreboard {...stats}/>
     <article key={`${session.id}-${session.index}`} className="vocabulary-mix-card">
+      {lessonLabel}
       {!session.revealed ? <div className="vocabulary-mix-question">
         <div className={`vocabulary-mix-prompt${word.hanzi.length > 2 ? ' is-long' : ''}`}><Hanzi>{word.hanzi}</Hanzi></div>
         <SpeakButton text={word.hanzi} reading={word.pinyin} compact label="Escuchar" ariaLabel={`Escuchar ${word.hanzi}`} autoPlayKey={autoPlayTurn === turnKey ? autoPlayTurn : undefined} onAutoPlayBlocked={() => setBlockedTurn(turnKey)}/>

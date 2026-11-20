@@ -1,4 +1,6 @@
 import { test, expect } from '@playwright/test';
+import type { MixSession } from '../../lib/vocabulary-review';
+import { emptyVocabularyState, parseVocabularyState, vocabularyStorageKey } from '../../lib/vocabulary-storage';
 
 async function installAudioMock(page: import('@playwright/test').Page, blocked = false) {
   await page.addInitScript((deny) => {
@@ -40,6 +42,9 @@ test('fixed deck survives reload, completes, reviews misses and starts a new seq
   await expect(page.locator('.vocabulary-mix-score')).toContainText('Correctas: 0');
   await expect(page.locator('.vocabulary-mix-score')).toContainText('Incorrectas: 0');
   await expect(page.locator('.vocabulary-mix-prompt')).toBeVisible();
+  const lesson = page.locator('.vocabulary-mix-lesson');
+  await expect(lesson).toHaveText('Lección 3');
+  await expect(lesson).toBeVisible();
   await expect(page.locator('.word-pinyin')).toHaveCount(0);
   await expect(page.locator('.vocabulary-translation')).toHaveCount(0);
   const original = await page.evaluate(() => JSON.parse(localStorage.getItem('ming-vocabulary-v1:guest')!).sessions.l3);
@@ -51,12 +56,14 @@ test('fixed deck survives reload, completes, reviews misses and starts a new seq
   await page.getByRole('button', { name: 'Ver respuesta', exact: true }).click();
   const card = page.getByRole('article', { name: /Ficha de/ });
   await expect(card).toBeVisible();
+  await expect(lesson).toHaveText('Lección 3');
   await page.screenshot({ path: info.outputPath('mix-answer.png'), fullPage: true });
   await expect(card.getByRole('button', { name: /Favorito:/ })).toHaveCount(0);
   const flip = card.getByRole('button', { name: /Ver ejemplo:/ });
   if (await flip.count()) {
     await flip.click();
     await expect(card).toHaveClass(/is-reversed/);
+    await expect(lesson).toHaveText('Lección 3');
     await page.screenshot({ path: info.outputPath('mix-reverse.png'), fullPage: true });
   }
   await page.getByRole('button', { name: 'Lo sabía', exact: true }).click();
@@ -65,8 +72,11 @@ test('fixed deck survives reload, completes, reviews misses and starts a new seq
 
   await page.getByRole('button', { name: 'Pausar', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'Partida en pausa' })).toBeVisible();
+  await expect(lesson).toHaveText('Lección 3');
   await page.reload();
+  await expect(lesson).toHaveText('Lección 3');
   await page.getByRole('button', { name: 'Reanudar', exact: true }).click();
+  await expect(lesson).toHaveText('Lección 3');
   const resumed = await page.evaluate(() => JSON.parse(localStorage.getItem('ming-vocabulary-v1:guest')!).sessions.l3);
   expect(resumed.deck).toEqual(original.deck);
   expect(resumed.index).toBe(1);
@@ -92,6 +102,7 @@ test('fixed deck survives reload, completes, reviews misses and starts a new seq
   await page.screenshot({ path: info.outputPath('mix-results.png'), fullPage: true });
 
   await page.getByRole('button', { name: 'Repasar incorrectas (1)' }).click();
+  await expect(lesson).toHaveText('Lección 3');
   const review = await page.evaluate(() => JSON.parse(localStorage.getItem('ming-vocabulary-v1:guest')!).sessions.l3);
   expect(review.kind).toBe('review');
   expect(review.deck).toHaveLength(1);
@@ -106,6 +117,48 @@ test('fixed deck survives reload, completes, reviews misses and starts a new seq
   expect(next.deck).not.toEqual(original.deck);
   expect(next.kind).toBe('normal');
   expect(errors).toEqual([]);
+});
+
+test('general review shows the current word lesson across answers and a saved pause', async ({ page }, info) => {
+  await page.setViewportSize({ width: 320, height: 844 });
+  await installAudioMock(page);
+  const scope = 'l1-l2-l3-l4-l5-l6';
+  const session: MixSession = {
+    formatVersion: 2, id: 'mix-lesson-context', userId: 'guest', scope,
+    requestedSize: 10, actualSize: 2, deck: ['v-你', 'v-厨房'], index: 0,
+    revealed: false, paused: false, kind: 'normal', startedAt: Date.now(), answers: [],
+  };
+  const state = { ...emptyVocabularyState(), sessions: { [scope]: session } };
+  const raw = JSON.stringify(state);
+  expect(parseVocabularyState(raw).sessions[scope]).toEqual(session);
+  await ready(page, `/study/${scope}/games/vocabulary-mix`);
+  await page.evaluate(({ key, value }) => localStorage.setItem(key, value), { key: vocabularyStorageKey('guest'), value: raw });
+  await page.reload();
+
+  const lesson = page.locator('.vocabulary-mix-lesson');
+  await expect(page.locator('.vocabulary-mix-round-header')).toContainText('Repaso general');
+  await expect(page.locator('.vocabulary-mix-prompt')).toHaveText('你');
+  await expect(lesson).toHaveText('Lección 1');
+  await expect(lesson).toBeVisible();
+  await page.getByRole('button', { name: 'Ver respuesta', exact: true }).click();
+  await expect(lesson).toHaveText('Lección 1');
+  await page.getByRole('button', { name: 'Lo sabía', exact: true }).click();
+
+  await expect(page.locator('.vocabulary-mix-prompt')).toHaveText('厨房');
+  await expect(lesson).toHaveText('Lección 6');
+  await expect(lesson).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.screenshot({ path: info.outputPath('mix-general-current-lesson-mobile.png'), fullPage: true });
+  await page.getByRole('button', { name: 'Pausar', exact: true }).click();
+  await expect(lesson).toHaveText('Lección 6');
+  await page.reload();
+  await expect(lesson).toHaveText('Lección 6');
+  await page.getByRole('button', { name: 'Reanudar', exact: true }).click();
+  await expect(page.locator('.vocabulary-mix-prompt')).toHaveText('厨房');
+  await expect(lesson).toHaveText('Lección 6');
+  await expect(page.locator('.vocabulary-mix-score')).toContainText('Respondidas: 1/2');
+  await page.getByRole('button', { name: 'Ver respuesta', exact: true }).click();
+  await expect(lesson).toHaveText('Lección 6');
 });
 
 test('blocked autoplay keeps manual audio and score untouched', async ({ page }) => {
