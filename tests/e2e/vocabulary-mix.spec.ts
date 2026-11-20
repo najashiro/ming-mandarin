@@ -8,6 +8,25 @@ import { startMix } from '../../lib/vocabulary-review';
 import type { MixSession } from '../../lib/vocabulary-review';
 import { emptyVocabularyState, parseVocabularyState, vocabularyStorageKey } from '../../lib/vocabulary-storage';
 
+// Check the actual HTTP request against recordings of the displayed sentence,
+// without importing application JSON modules into Playwright's native ESM loader.
+function recordingsForSentence(hanzi: string, pinyin: string) {
+  const definitions = [
+    ['pronunciation', 'pinyin'], ['mandarin-audio', 'mandarin'], ['lesson4-audio', 'mandarin'],
+    ['lesson5-audio', 'mandarin'], ['game-audio', 'mandarin'], ['directions-audio', 'directions'],
+    ['hide-and-seek-audio', 'hide-and-seek'], ['vocabulary-example-audio', 'mandarin'],
+  ];
+  const textKey = (text: string) => text.normalize('NFC').replace(/[\s。！？，,.!?；;：:]/g, '');
+  const readingKey = (reading: string) => reading.normalize('NFC').toLowerCase().replace(/[\s'’.,!?]/g, '');
+  return definitions.flatMap(([name, directory]) => {
+    const manifest = JSON.parse(readFileSync(new URL(`../../data/${name}.json`, import.meta.url), 'utf8')) as {
+      clips: { input: string; expectedPinyin: string; file: string }[];
+    };
+    return manifest.clips.filter(clip => textKey(clip.input) === textKey(hanzi) && readingKey(clip.expectedPinyin) === readingKey(pinyin))
+      .map(clip => `/audio/${directory}/${clip.file}`);
+  });
+}
+
 async function installAudioMock(page: import('@playwright/test').Page, blocked = false) {
   await page.addInitScript((deny) => {
     (window as typeof window & { mixAudioPlays?: number }).mixAudioPlays = 0;
@@ -138,6 +157,120 @@ test('lesson-six audio survives reveal, the next turn, blocked autoplay and paus
   await expect(page.locator('.vocabulary-mix-score')).toContainText('Respondidas: 1/2');
   await page.getByRole('button', { name: 'Ver respuesta', exact: true }).click();
   await expect.poll(async () => (await probe()).active).toEqual([]);
+});
+
+test('the reported bedroom reverse plays its full sentence and preserves the saved round', async ({ page }, info) => {
+  await page.route('**/audio/**', route => route.continue());
+  const session: MixSession = {
+    formatVersion: 2, id: 'mix-bedroom-sentence-audio', userId: 'guest', scope: 'l6',
+    requestedSize: 10, actualSize: 2, deck: ['v-教学楼', 'v-卧室'], index: 1,
+    revealed: false, paused: false, kind: 'normal', startedAt: 1795170000000,
+    answers: [{ id: 'mix-bedroom-sentence-audio:0:v-教学楼', wordId: 'v-教学楼', known: false, answeredAt: 1795170001000 }],
+  };
+  const raw = JSON.stringify({ ...emptyVocabularyState(), sessions: { l6: session } });
+  expect(parseVocabularyState(raw).sessions.l6).toEqual(session);
+  await page.addInitScript(({ key, value }) => {
+    if (!localStorage.getItem(key)) localStorage.setItem(key, value);
+  }, { key: vocabularyStorageKey('guest'), value: raw });
+  await ready(page, '/study/l6/games/vocabulary-mix');
+  await expect(page.locator('.vocabulary-mix-prompt')).toHaveText('卧室');
+  await page.getByRole('button', { name: 'Ver respuesta', exact: true }).click();
+  const card = page.getByRole('article', { name: 'Ficha de 卧室', exact: true });
+  await card.getByRole('button', { name: 'Ver ejemplo: 卧室', exact: true }).click();
+  await expect(card).toHaveClass(/is-reversed/);
+  await expect(card.locator('.vocabulary-example-text')).toHaveText('我家有两个卧室。');
+  await expect(card.locator('.word-pinyin')).toHaveText('Wǒ jiā yǒu liǎng ge wòshì.');
+  const button = card.locator('.audio-button');
+  await expect(button).toBeVisible();
+  await expect(button).toHaveAccessibleName('Escuchar: 我家有两个卧室。');
+  const sources = recordingsForSentence('我家有两个卧室。', 'Wǒ jiā yǒu liǎng ge wòshì.');
+  expect(sources.length, 'The complete sentence needs a recording').toBeGreaterThan(0);
+  const [response] = await Promise.all([
+    page.waitForResponse(response => sources.includes(new URL(response.url()).pathname) && response.status() < 400),
+    button.click(),
+  ]);
+  await expect(button).toHaveClass(/playing/);
+  const recording = await page.request.get(response.url());
+  expect(recording.ok()).toBe(true);
+  expect(recording.headers()['content-type']).toContain('audio/');
+  expect((await recording.body()).length).toBeGreaterThan(1024);
+  await expect(button).toHaveClass(/idle/, { timeout: 20_000 });
+  await expect(card.locator('.audio-button')).toHaveCount(1);
+  await expect(page.locator('.vocabulary-mix-score')).toContainText('Respondidas: 1/2');
+  await expect(page.locator('.vocabulary-mix-score')).toContainText('Incorrectas: 1');
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await card.screenshot({ path: info.outputPath('mix-bedroom-sentence-audio.png'), animations: 'disabled' });
+
+  await page.getByRole('button', { name: 'Pausar', exact: true }).click();
+  await page.reload();
+  await page.getByRole('button', { name: 'Reanudar', exact: true }).click();
+  await expect(card).not.toHaveClass(/is-reversed/);
+  await card.getByRole('button', { name: 'Ver ejemplo: 卧室', exact: true }).click();
+  await expect(button).toBeVisible();
+  await expect(page.locator('.vocabulary-mix-score')).toContainText('Respondidas: 1/2');
+  const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('ming-vocabulary-v1:guest')!).sessions.l6);
+  expect(saved.deck).toEqual(session.deck);
+  expect(saved.answers).toEqual(session.answers);
+  expect(saved.index).toBe(1);
+});
+
+test('Otro ejemplo stops the previous sentence and plays the newly displayed sentence', async ({ page }) => {
+  await page.route('**/audio/**', route => route.continue());
+  await page.addInitScript(() => {
+    const NativeAudio = window.Audio;
+    const recordings: HTMLAudioElement[] = [];
+    (window as typeof window & { sentenceRecordings?: HTMLAudioElement[] }).sentenceRecordings = recordings;
+    window.Audio = function (source?: string | URL) {
+      const audio = new NativeAudio(source === undefined ? undefined : String(source));
+      recordings.push(audio);
+      return audio;
+    } as unknown as typeof Audio;
+  });
+  const scope = 'l1-l2-l3-l4-l5-l6';
+  const session: MixSession = {
+    formatVersion: 2, id: 'mix-cycle-sentence-audio', userId: 'guest', scope,
+    requestedSize: 10, actualSize: 1, deck: ['v-睡觉'], index: 0,
+    revealed: false, paused: false, kind: 'normal', startedAt: Date.now(), answers: [],
+  };
+  await page.addInitScript(({ key, value }) => {
+    if (!localStorage.getItem(key)) localStorage.setItem(key, value);
+  }, { key: vocabularyStorageKey('guest'), value: JSON.stringify({ ...emptyVocabularyState(), sessions: { [scope]: session } }) });
+  await ready(page, `/study/${scope}/games/vocabulary-mix`);
+  await page.getByRole('button', { name: 'Ver respuesta', exact: true }).click();
+  const card = page.getByRole('article', { name: 'Ficha de 睡觉', exact: true });
+  await card.getByRole('button', { name: 'Ver ejemplo: 睡觉', exact: true }).click();
+  const played: string[] = [];
+  const sentences: string[] = [];
+  for (const index of [0, 1]) {
+    if (index) {
+      await card.getByRole('button', { name: /Otro ejemplo/ }).click();
+      await expect.poll(() => page.evaluate(() =>
+        (window as typeof window & { sentenceRecordings: HTMLAudioElement[] }).sentenceRecordings[0]?.paused)).toBe(true);
+    }
+    const hanzi = (await card.locator('.vocabulary-example-text').innerText()).trim();
+    const pinyin = (await card.locator('.word-pinyin').innerText()).trim();
+    expect(hanzi).toContain('睡觉');
+    expect(sentences).not.toContain(hanzi);
+    sentences.push(hanzi);
+    const sources = recordingsForSentence(hanzi, pinyin);
+    expect(sources.length, `${hanzi} (${pinyin})`).toBeGreaterThan(0);
+    const button = card.locator('.audio-button');
+    await expect(button).toHaveAccessibleName(`Escuchar: ${hanzi}`);
+    const [response] = await Promise.all([
+      page.waitForResponse(response => sources.includes(new URL(response.url()).pathname) && response.status() < 400),
+      button.click(),
+    ]);
+    expect(response.ok()).toBe(true);
+    expect(played).not.toContain(response.url());
+    played.push(response.url());
+    await expect(button).toHaveClass(/playing/);
+  }
+  await page.getByRole('button', { name: 'Pausar', exact: true }).click();
+  await expect.poll(() => page.evaluate(() =>
+    (window as typeof window & { sentenceRecordings: HTMLAudioElement[] }).sentenceRecordings.every(audio => audio.paused))).toBe(true);
+  const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('ming-vocabulary-v1:guest')!).sessions['l1-l2-l3-l4-l5-l6']);
+  expect(saved.answers).toHaveLength(0);
+  expect(saved.index).toBe(0);
 });
 
 async function verifySingleSentenceSleepExamples(page: import('@playwright/test').Page, screenshotPath: string) {

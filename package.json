@@ -43,7 +43,9 @@
     "corpus:l123:check": "python3 scripts/export-lessons123-web.py --check",
     "corpus:l6": "python3 scripts/export-lesson6-web.py",
     "corpus:l6:check": "python3 scripts/export-lesson6-web.py --check",
-    "audio:vocabulary:audit": "node scripts/audit-vocabulary-audio.mjs --check"
+    "audio:vocabulary:audit": "node scripts/audit-vocabulary-audio.mjs --check",
+    "audio:vocabulary:examples:audit": "node scripts/audit-vocabulary-example-audio.mjs --check",
+    "audio:vocabulary:examples:verify": "node scripts/verify-vocabulary-example-audio.mjs"
   },
   "dependencies": {
     "hanzi-writer": "3.7.3",

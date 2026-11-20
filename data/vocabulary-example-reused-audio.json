@@ -1,0 +1,18 @@
+{
+  "clips": [
+    {
+      "input": "说汉语",
+      "expectedPinyin": "shuō Hànyǔ",
+      "directory": "reto-mixto",
+      "file": "shuo-hanyu.mp3",
+      "source": "data/reto-mixto-token-excerpts.json#/说汉语"
+    },
+    {
+      "input": "你喜欢吃什么？",
+      "expectedPinyin": "Nǐ xǐhuan chī shénme?",
+      "directory": "oral-final",
+      "file": "9b7b25b78eb60522d43fd0d01461b2ac657da922abc74cf26e2e17f9139886c8.mp3",
+      "source": "data/rehearsals/oral-final-audio.json#/clips/oral-12"
+    }
+  ]
+}

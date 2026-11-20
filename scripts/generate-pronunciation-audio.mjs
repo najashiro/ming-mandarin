@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectDirectory = path.resolve(scriptDirectory, '..');
 const manifestDefinitions = [
+  { path: path.join(projectDirectory, 'data', 'vocabulary-example-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin'), scope: 'vocabulary-examples' },
   { path: path.join(projectDirectory, 'data', 'vocabulary-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin'), scope: 'vocabulary' },
   { path: path.join(projectDirectory, 'data', 'hanzi-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin'), scope: 'hanzi' },
   { path: path.join(projectDirectory, 'data', 'directions-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'directions'), scope: 'directions' },
@@ -92,7 +93,7 @@ while (cursor < selectedClips.length) {
     body: JSON.stringify({
       model: process.env.OPENAI_TTS_MODEL || 'gpt-4o-mini-tts',
       voice,
-      input: clip.input,
+      input: clip.speechInput || clip.input,
       instructions: `${baseInstructions} ${clip.instructions}`,
       response_format: 'mp3'
     })
@@ -116,6 +117,6 @@ while (cursor < selectedClips.length) {
   if (generated % 25 === 0) console.log(`Generados: ${generated}/${selectedClips.length}`);
 }
 }
-await Promise.all(Array.from({ length: scope === 'vocabulary' || scope === 'hanzi' || scope === 'hide-and-seek' || scope === 'directions' || scope === 'games' || scope === 'time' || scope === 'lesson4' || scope === 'lesson5' ? 3 : 1 }, () => generateNext()));
+await Promise.all(Array.from({ length: scope === 'vocabulary-examples' || scope === 'vocabulary' || scope === 'hanzi' || scope === 'hide-and-seek' || scope === 'directions' || scope === 'games' || scope === 'time' || scope === 'lesson4' || scope === 'lesson5' ? 3 : 1 }, () => generateNext()));
 
 console.log(`Listo: ${generated} clips nuevos; ${selectedClips.length - generated} ya existentes.`);

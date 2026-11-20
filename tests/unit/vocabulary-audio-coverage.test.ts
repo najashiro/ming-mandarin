@@ -3,14 +3,14 @@ import { describe, expect, it } from 'vitest';
 import corpus from '@/data/corpus-v21-public.json';
 import reviewed from '@/data/lessons123-public.json';
 import activeCorpus from '@/lib/active-corpus';
-import { getVocabularyMixSet, getVocabularySet } from '@/lib/vocabulary';
+import { examplesForVocabularyCard, getVocabularyMixSet, getVocabularySet, type ActiveWord } from '@/lib/vocabulary';
 import { curriculumScopes } from '@/seed/curriculum';
 import { audioForMandarinText } from '@/lib/mandarin-audio';
 
 describe('audio del vocabulario y ejemplos históricos L1–L3', () => {
   it('conserva todos los archivos originales con su lectura histórica', () => {
     // Resolve against the same snapshot: the active examples now contain
-    // reviewed readings and new teaching material without new recordings.
+    // reviewed readings and sentence recordings without replacing original clips.
     const phrasesById = new Map(corpus.phrases.map(phrase => [phrase.id, phrase]));
     const rows = corpus.vocabulary.flatMap(word => [word, ...word.examplePhraseIds.map(id => {
       const phrase = phrasesById.get(id);
@@ -40,21 +40,14 @@ describe('audio del vocabulario y ejemplos históricos L1–L3', () => {
       const previous = previousById.get(row.id)!;
       const original = audioForMandarinText(previous.hanzi, previous.pinyin);
       const current = audioForMandarinText(row.hanzi, row.pinyin);
-      // 我累死了。 was recovered as a selectable example in this review;
-      // its historical text had never received a recording.
-      if (row.id === 'PH-121d6a3b3b2b5204') {
-        expect(original).toBeUndefined();
-        expect(current).toBeUndefined();
-        continue;
-      }
       expect(original, `${row.id}: ${previous.pinyin}`).toBeTruthy();
       expect(current, `${row.id}: ${row.pinyin}`).toBe(original);
       expect(statSync(`public${current}`).size, row.id).toBeGreaterThan(1024);
     }
   });
 
-  it('uses a separate recording when a vocabulary correction changes a tone or final consonant', () => {
-    for (const id of ['v-后年', 'v-晚上好']) {
+  it('uses a separate recording when a word or sentence correction changes its reading', () => {
+    for (const id of ['v-后年', 'v-晚上好', 'PH-0a3721928d6f00d4']) {
       const previous = [...corpus.vocabulary, ...corpus.phrases].find(row => row.id === id)!;
       const current = [...reviewed.vocabulary, ...reviewed.phrases].find(row => row.id === id)!;
       const previousClip = audioForMandarinText(previous.hanzi, previous.pinyin);
@@ -63,9 +56,6 @@ describe('audio del vocabulario y ejemplos históricos L1–L3', () => {
       expect(currentClip, id).toBeTruthy();
       expect(currentClip, id).not.toBe(previousClip);
     }
-    // Sentence coverage is separate from the completed vocabulary recordings.
-    const changedPhrase = reviewed.phrases.find(row => row.id === 'PH-0a3721928d6f00d4')!;
-    expect(audioForMandarinText(changedPhrase.hanzi, changedPhrase.pinyin)).toBeUndefined();
     // Orthographic repairs must not erase real differences in homographs.
     expect(audioForMandarinText('好', 'hǎo')).toBeTruthy();
     expect(audioForMandarinText('好', 'hào')).toBeUndefined();
@@ -114,5 +104,50 @@ describe('audio del vocabulario activo L1–L6 y Vocabulario Mix', () => {
     expect(audioForMandarinText('教学楼')).toBe(audioForMandarinText('教学楼', 'jiàoxuélóu'));
     expect(audioForMandarinText('北边', 'běibiān')).toBeUndefined();
     expect(audioForMandarinText('教学楼', 'jiāoxuélóu')).toBeUndefined();
+  });
+});
+
+
+describe('audio de las oraciones realmente mostradas en el reverso', () => {
+  function expectExamples(words: readonly ActiveWord[], context: string) {
+    let count = 0;
+    for (const word of words) {
+      for (const example of examplesForVocabularyCard(word)) {
+        const label = `${context}: ${word.id} → ${example.id} ${example.hanzi} (${example.pinyin})`;
+        expect(example.pinyin, label).toBeTruthy();
+        const source = audioForMandarinText(example.hanzi, example.pinyin);
+        expect(source, label).toMatch(/^\/audio\/[a-z0-9/-]+\.mp3$/);
+        expect(statSync(`public${source}`).size, label).toBeGreaterThan(1024);
+        count++;
+      }
+    }
+    expect(count, context).toBeGreaterThan(0);
+  }
+
+  it('covers every catalog example and each lesson-specific card, including segmented sentences', () => {
+    expectExamples(activeCorpus.vocabulary, 'catálogo activo');
+    for (const scope of curriculumScopes) expectExamples(getVocabularySet(scope), `vocabulario ${scope}`);
+  });
+
+  it('covers every Mix reverse and all examples reachable through Otro ejemplo', () => {
+    const catalog = new Map(activeCorpus.vocabulary.map(word => [word.id, word]));
+    for (const scope of curriculumScopes) {
+      const selected = getVocabularyMixSet(scope);
+      expectExamples(selected, `selección Mix ${scope}`);
+      // Saved rounds store IDs; the game renders the active-catalog entry.
+      expectExamples(selected.map(word => catalog.get(word.id)!), `reverso Mix ${scope}`);
+    }
+  });
+
+  it('plays the reported bedroom sentence with its complete documented reading', () => {
+    const bedroom = activeCorpus.vocabulary.find(word => word.id === 'v-卧室')!;
+    const example = examplesForVocabularyCard(bedroom).find(row => row.hanzi === '我家有两个卧室。');
+    expect(example).toBeDefined();
+    expect(example!.pinyin).toBe('Wǒ jiā yǒu liǎng ge wòshì.');
+    const sentence = audioForMandarinText(example!.hanzi, example!.pinyin);
+    expect(sentence).toBeTruthy();
+    expect(sentence).not.toBe(audioForMandarinText(bedroom.hanzi, bedroom.pinyin));
+    // Supplying a different tone must not silently choose the sentence recording.
+    expect(audioForMandarinText(example!.hanzi, 'Wǒ jiā yǒu liǎng ge wōshì.')).toBeUndefined();
   });
 });

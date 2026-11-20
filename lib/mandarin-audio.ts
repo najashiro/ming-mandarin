@@ -14,6 +14,9 @@ import directionsAudio from '@/data/directions-audio.json';
 import hideAndSeekAudio from '@/data/hide-and-seek-audio.json';
 import vocabularyAudio from '@/data/vocabulary-audio.json';
 import vocabularyAudioAvailable from '@/data/vocabulary-audio-available.json';
+import vocabularyExampleAudio from '@/data/vocabulary-example-audio.json';
+import vocabularyExampleReusedAudio from '@/data/vocabulary-example-reused-audio.json';
+import vocabularyExampleAudioAvailable from '@/data/vocabulary-example-audio-available.json';
 import { timeTokens } from '@/data/time-game';
 import { timeAudioFile } from './time-audio-key.mjs';
 
@@ -111,6 +114,14 @@ for (const clip of hideAndSeekAudio.clips) addMissingRecording(clip, 'hide-and-s
 const availableVocabularyFiles = new Set<string>(vocabularyAudioAvailable.files);
 for (const clip of vocabularyAudio.clips) {
   if (availableVocabularyFiles.has(clip.file)) addMissingRecording(clip, 'mandarin');
+}
+
+// Card backs use the displayed sentence, which may be shorter than its source
+// passage. Register complete sentence recordings with their exact reading.
+for (const clip of vocabularyExampleReusedAudio.clips) addMissingRecording(clip, clip.directory);
+const availableExampleFiles = new Set<string>(vocabularyExampleAudioAvailable.files);
+for (const clip of vocabularyExampleAudio.clips) {
+  if (availableExampleFiles.has(clip.file)) addMissingRecording(clip, 'mandarin');
 }
 
 export function audioForMandarinText(text: string, pinyin?: string): string | undefined {
