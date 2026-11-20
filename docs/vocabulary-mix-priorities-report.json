@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "fingerprint": "20ad8e3b60a049b7742acd705f65c83dcc6385e7ee347b6872ba0362ee2ad92b",
+  "eligibleWords": 520,
+  "uniqueWordsAcrossAllScopes": 522,
+  "wordLessonRows": 992,
+  "groups": {
+    "l1": {
+      "core": 24,
+      "consolidation": 24,
+      "extension": 20
+    },
+    "l2": {
+      "core": 43,
+      "consolidation": 43,
+      "extension": 36
+    },
+    "l3": {
+      "core": 39,
+      "consolidation": 38,
+      "extension": 33
+    },
+    "l4": {
+      "core": 40,
+      "consolidation": 40,
+      "extension": 34
+    },
+    "l5": {
+      "core": 31,
+      "consolidation": 30,
+      "extension": 25
+    },
+    "l6": {
+      "core": 26,
+      "consolidation": 26,
+      "extension": 22
+    },
+    "l1-l2": {
+      "core": 67,
+      "consolidation": 66,
+      "extension": 57
+    },
+    "l1-l2-l3": {
+      "core": 105,
+      "consolidation": 105,
+      "extension": 90
+    },
+    "l1-l2-l3-l4": {
+      "core": 135,
+      "consolidation": 134,
+      "extension": 114
+    },
+    "l1-l2-l3-l4-l5": {
+      "core": 160,
+      "consolidation": 159,
+      "extension": 136
+    },
+    "l1-l2-l3-l4-l5-l6": {
+      "core": 182,
+      "consolidation": 182,
+      "extension": 156
+    }
+  },
+  "contextsByLesson": {
+    "1": {
+      "dialogue": 12,
+      "grammar": 21,
+      "reading": 20,
+      "exercise": 29
+    },
+    "2": {
+      "dialogue": 20,
+      "grammar": 18,
+      "reading": 22,
+      "exercise": 46
+    },
+    "3": {
+      "dialogue": 21,
+      "grammar": 26,
+      "exercise": 96,
+      "reading": 31
+    },
+    "4": {
+      "exercise": 395,
+      "dialogue": 27,
+      "grammar": 136,
+      "reading": 35
+    },
+    "5": {
+      "dialogue": 27,
+      "reading": 25,
+      "exercise": 22,
+      "editorialGrammar": 22
+    },
+    "6": {
+      "dialogue": 31,
+      "reading": 23,
+      "exercise": 9,
+      "editorialGrammar": 14
+    }
+  },
+  "confidence": {
+    "curricular_only": 321,
+    "registered_lexical_counts": 394,
+    "derived_lexical_counts": 277
+  },
+  "skipped": {
+    "L5_editorial_activity_records": 29,
+    "L6_editorial_activity_records": 38,
+    "counterexamples_or_unresolved": 13,
+    "non_primary_source_witnesses": 776
+  },
+  "unsegmentedCjkCodepointsL5L6": {
+    "5": 7,
+    "6": 48
+  }
+}

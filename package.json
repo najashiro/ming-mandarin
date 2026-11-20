@@ -12,6 +12,8 @@
     "start": "next start",
     "lint": "eslint . --ignore-pattern .next",
     "typecheck": "tsc --noEmit",
+    "mix:priorities": "python3 scripts/build-vocabulary-mix-priorities.py",
+    "mix:priorities:check": "python3 scripts/build-vocabulary-mix-priorities.py --check",
     "test": "vitest run",
     "test:e2e": "npm run build && node scripts/run-e2e.mjs",
     "audio:generate": "node scripts/generate-pronunciation-audio.mjs",

@@ -3,16 +3,49 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { studyScopeOptions, getStudyScopeLabel } from '@/lib/study-options';
 import type { CurriculumScope } from '@/data/types';
-import { getVocabularyLesson, getVocabularyMixSet, vocabularyCatalog } from '@/lib/vocabulary';
+import { getVocabularyLesson, getVocabularyMixSet, vocabularyCatalog, type ActiveWord } from '@/lib/vocabulary';
 import { scopeDefinitions } from '@/seed/curriculum';
-import { evaluateMix, isMixComplete, mixStats, startMix, type MixResultSnapshot } from '@/lib/vocabulary-review';
-import type { VocabularyMediaEntry } from '@/lib/vocabulary-media';
+import { evaluateMix, isMixComplete, mixStats, startMix, type MixDifficulty, type MixPresentation, type MixResultSnapshot } from '@/lib/vocabulary-review';
+import { imageForWord, type VocabularyMediaEntry } from '@/lib/vocabulary-media';
 import { useVocabularyState } from './useVocabularyState';
 import { VocabularyCard } from './VocabularyCard';
+import { VocabularyPhoto } from './VocabularyPhoto';
 import { Hanzi } from '../Hanzi';
 import { SpeakButton, stopMandarinAudio } from '../SpeakButton';
 
 const sizes = [10, 20, 30, 50] as const;
+const difficulties: readonly { value: MixDifficulty; label: string; description: string }[] = [
+  { value: 'easy', label: 'Easy', description: 'Más vocabulario esencial de la lección.' },
+  { value: 'medium', label: 'Medium', description: 'Una mezcla de palabras esenciales y de ampliación.' },
+  { value: 'hard', label: 'Hard', description: 'Mayor presencia de vocabulario de ampliación.' },
+];
+const presentations: readonly { value: MixPresentation; label: string }[] = [
+  { value: 'image', label: 'Con imagen' },
+  { value: 'hanzi', label: 'Sin imagen' },
+];
+
+function sessionLabel(difficulty: MixDifficulty, presentation: MixPresentation) {
+  return `${difficulties.find(option => option.value === difficulty)?.label ?? 'Medium'} · ${presentation === 'image' ? 'Con imagen' : 'Sin imagen'}`;
+}
+
+function MixQuestion({ word, presentation, media, autoPlayKey, autoPlayBlocked, onAutoPlayBlocked }: {
+  word: ActiveWord; presentation: MixPresentation; media: readonly VocabularyMediaEntry[];
+  autoPlayKey?: string; autoPlayBlocked: boolean; onAutoPlayBlocked: () => void;
+}) {
+  const candidate = presentation === 'image' && word.visual_ming.image_quiz_eligible ? imageForWord(word.id, media) : undefined;
+  const image = candidate?.imageQuizEligible ? candidate : undefined;
+  const [failedImage, setFailedImage] = useState<VocabularyMediaEntry | null>(null);
+  const showPhoto = Boolean(image?.src && image !== failedImage);
+  return <div className={`vocabulary-mix-question${showPhoto ? ' has-image' : ''}`} data-presentation={presentation}>
+    {showPhoto && image && <VocabularyPhoto src={image.src} alt="Pista visual" transparent={'presentation' in image && image.presentation === 'transparent-cutout'} priority onError={() => setFailedImage(image)}/>}
+    <div className="vocabulary-mix-question-body">
+      <div className={`vocabulary-mix-prompt${word.hanzi.length > 2 ? ' is-long' : ''}`}><Hanzi>{word.hanzi}</Hanzi></div>
+      <SpeakButton text={word.hanzi} reading={word.pinyin} compact label="Escuchar" ariaLabel={`Escuchar ${word.hanzi}`} autoPlayKey={autoPlayKey} onAutoPlayBlocked={onAutoPlayBlocked}/>
+      {autoPlayBlocked && <small role="status">Pulsa el audio para escuchar.</small>}
+      {presentation === 'image' && !showPhoto && <small className="vocabulary-mix-image-note">Practica esta palabra sin imagen.</small>}
+    </div>
+  </div>;
+}
 
 function Scoreboard({ responded, correct, incorrect, total }: { responded: number; correct: number; incorrect: number; total: number }) {
   return <div className="vocabulary-mix-score" aria-label={`Respondidas: ${responded} de ${total}. Correctas: ${correct}. Incorrectas: ${incorrect}.`}>
@@ -23,13 +56,15 @@ function Scoreboard({ responded, correct, incorrect, total }: { responded: numbe
 }
 
 function snapshotOf(session: ReturnType<typeof startMix>): MixResultSnapshot {
-  return { sessionId: session.id, scope: session.scope, requestedSize: session.requestedSize, actualSize: session.actualSize, deck: session.deck, answers: session.answers };
+  return { sessionId: session.id, scope: session.scope, requestedSize: session.requestedSize, actualSize: session.actualSize, difficulty: session.difficulty, presentation: session.presentation, deck: session.deck, answers: session.answers };
 }
 
 export function VocabularyMix({ scope, userId, route, media }: { scope: CurriculumScope; userId: string; route: string; media: readonly VocabularyMediaEntry[] }) {
   const router = useRouter();
   const { data, ready, update } = useVocabularyState(userId);
   const [sizeOverride, setSizeOverride] = useState<number | null>(null);
+  const [difficultyOverride, setDifficultyOverride] = useState<MixDifficulty | null>(null);
+  const [presentationOverride, setPresentationOverride] = useState<MixPresentation | null>(null);
   const [backState, setBackState] = useState({ turn: '', value: false });
   const [autoPlayTurn, setAutoPlayTurn] = useState('');
   const [blockedTurn, setBlockedTurn] = useState('');
@@ -40,6 +75,8 @@ export function VocabularyMix({ scope, userId, route, media }: { scope: Curricul
   const currentId = session?.deck[session.index];
   const turnKey = session ? `${session.id}:${session.index}` : '';
   const size = sizeOverride ?? session?.originResult?.requestedSize ?? session?.requestedSize ?? 10;
+  const difficulty = difficultyOverride ?? session?.difficulty ?? 'medium';
+  const presentation = presentationOverride ?? session?.presentation ?? 'hanzi';
   const back = backState.turn === turnKey && backState.value;
   const autoPlayBlocked = blockedTurn === turnKey;
   const word = currentId ? vocabularyCatalog.find(entry => entry.id === currentId) : undefined;
@@ -66,7 +103,7 @@ export function VocabularyMix({ scope, userId, route, media }: { scope: Curricul
     const id = crypto.randomUUID();
     const now = Date.now();
     update(previous => {
-      const next = startMix({ words: eligibleWords, requestedSize: size, scope, userId, id, now, previousSequence: previous.lastSequences[scope] });
+      const next = startMix({ words: eligibleWords, requestedSize: size, scope, difficulty, presentation, userId, id, now, previousSequence: previous.lastSequences[scope] });
       return { ...previous, sessions: { ...previous.sessions, [scope]: next }, lastSequences: { ...previous.lastSequences, [scope]: next.deck } };
     });
     setBackState({ turn: '', value: false });
@@ -78,7 +115,7 @@ export function VocabularyMix({ scope, userId, route, media }: { scope: Curricul
     if (!session || !stats.incorrectIds.length) return;
     const id = crypto.randomUUID();
     const words = stats.incorrectIds.map(id => vocabularyCatalog.find(word => word.id === id)).filter((entry): entry is (typeof vocabularyCatalog)[number] => Boolean(entry));
-    const next = startMix({ words, requestedSize: words.length, scope, userId, id, now: Date.now(), kind: 'review', originSessionId: session.id, originResult: session.originResult ?? snapshotOf(session) });
+    const next = startMix({ words, requestedSize: words.length, scope, difficulty: session.difficulty, presentation: session.presentation, userId, id, now: Date.now(), kind: 'review', originSessionId: session.id, originResult: session.originResult ?? snapshotOf(session) });
     update(previous => ({ ...previous, sessions: { ...previous.sessions, [scope]: next } }));
     setBackState({ turn: '', value: false });
     setBlockedTurn('');
@@ -112,6 +149,27 @@ export function VocabularyMix({ scope, userId, route, media }: { scope: Curricul
 
   const settings = <div className="vocabulary-mix-settings">
     <label>Contenido<select aria-label="Contenido" disabled={!ready} value={scope} onChange={event => router.push(`/study/${event.target.value}/games/vocabulary-mix`)}>{!studyScopeOptions.some(option => option.value === scope) && <option value={scope} disabled hidden>{getStudyScopeLabel(scope)}</option>}{studyScopeOptions.map(({ value, label }) => <option key={value} value={value}>{label}</option>)}</select></label>
+    <fieldset className="vocabulary-mix-level" disabled={!ready} aria-describedby="vocabulary-mix-level-description">
+      <legend>Nivel</legend>
+      <div className="vocabulary-mix-level-track">
+        {difficulties.map(option => <label key={option.value}>
+          <input type="radio" name="vocabulary-mix-difficulty" value={option.value} checked={difficulty === option.value} onChange={() => setDifficultyOverride(option.value)}/>
+          <span className="vocabulary-mix-level-dot" aria-hidden="true"/>
+          <span className="vocabulary-mix-level-label">{option.label}</span>
+        </label>)}
+      </div>
+      <p id="vocabulary-mix-level-description" className="vocabulary-mix-setting-description">{difficulties.find(option => option.value === difficulty)?.description}</p>
+    </fieldset>
+    <fieldset className="vocabulary-mix-presentation" disabled={!ready}>
+      <legend>Tarjeta</legend>
+      <div className="vocabulary-mix-presentation-options">
+        {presentations.map(option => <label key={option.value}>
+          <input type="radio" name="vocabulary-mix-presentation" value={option.value} checked={presentation === option.value} onChange={() => setPresentationOverride(option.value)}/>
+          <span>{option.label}</span>
+        </label>)}
+      </div>
+      {presentation === 'image' && <p className="vocabulary-mix-setting-description">Algunas palabras se practican sin imagen para no mostrar la respuesta.</p>}
+    </fieldset>
     <label>Palabras<select aria-label="Palabras" disabled={!ready} value={size} onChange={event => setSizeOverride(Number(event.target.value))}>{sizes.map(value => <option key={value} value={value}>{value}</option>)}</select></label>
   </div>;
 
@@ -128,6 +186,7 @@ export function VocabularyMix({ scope, userId, route, media }: { scope: Curricul
   if (complete) return <section className="vocabulary-mix vocabulary-mix-results" aria-label="Resultados de Vocabulario Mix">
     <h2>Partida terminada</h2>
     <p>{getStudyScopeLabel(session.scope)} · {session.actualSize} {session.actualSize === 1 ? 'palabra' : 'palabras'}</p>
+    <p className="vocabulary-mix-session-settings">{sessionLabel(session.difficulty, session.presentation)}</p>
     <Scoreboard {...stats}/>
     <p>{stats.percentage}% de aciertos autoevaluados.</p>
     {session.originResult && <p className="vocabulary-mix-origin">La ronda original se conserva por separado.</p>}
@@ -140,6 +199,7 @@ export function VocabularyMix({ scope, userId, route, media }: { scope: Curricul
     <Scoreboard {...stats}/>
     <h2>Partida en pausa</h2>
     <p>{getStudyScopeLabel(session.scope)} · {session.actualSize} palabras</p>
+    <p className="vocabulary-mix-session-settings">{sessionLabel(session.difficulty, session.presentation)}</p>
     {lessonLabel}
     <button type="button" onClick={() => patchSession({ paused: false })}>Reanudar</button>
     <button type="button" onClick={() => { stopMandarinAudio(); update(previous => { const sessions = { ...previous.sessions }; delete sessions[scope]; return { ...previous, sessions }; }); }}>Finalizar partida en curso</button>
@@ -149,14 +209,11 @@ export function VocabularyMix({ scope, userId, route, media }: { scope: Curricul
 
   return <section className="vocabulary-mix" aria-label="Vocabulario Mix">
     <header className="vocabulary-mix-round-header"><span>{getStudyScopeLabel(session.scope)} · {session.kind === 'review' ? 'Repaso' : `${session.actualSize} palabras`}</span><button type="button" onClick={() => { stopMandarinAudio(); patchSession({ paused: true }); }}>Pausar</button></header>
+    <p className="vocabulary-mix-session-settings">{sessionLabel(session.difficulty, session.presentation)}</p>
     <Scoreboard {...stats}/>
     <article key={`${session.id}-${session.index}`} className="vocabulary-mix-card">
       {lessonLabel}
-      {!session.revealed ? <div className="vocabulary-mix-question">
-        <div className={`vocabulary-mix-prompt${word.hanzi.length > 2 ? ' is-long' : ''}`}><Hanzi>{word.hanzi}</Hanzi></div>
-        <SpeakButton text={word.hanzi} reading={word.pinyin} compact label="Escuchar" ariaLabel={`Escuchar ${word.hanzi}`} autoPlayKey={autoPlayTurn === turnKey ? autoPlayTurn : undefined} onAutoPlayBlocked={() => setBlockedTurn(turnKey)}/>
-        {autoPlayBlocked && <small role="status">Pulsa el audio para escuchar.</small>}
-      </div> : <VocabularyCard imagePriority word={word} scope={scope} route={currentRoute || route} back={back} hideTranslation={false} media={media} onFlip={() => setBackState({ turn: turnKey, value: !back })} showFavorite={false}/>}
+      {!session.revealed ? <MixQuestion key={turnKey} word={word} presentation={session.presentation} media={media} autoPlayKey={autoPlayTurn === turnKey ? autoPlayTurn : undefined} autoPlayBlocked={autoPlayBlocked} onAutoPlayBlocked={() => setBlockedTurn(turnKey)}/> : <VocabularyCard imagePriority word={word} scope={scope} route={currentRoute || route} back={back} hideTranslation={false} media={media} onFlip={() => setBackState({ turn: turnKey, value: !back })} showFavorite={false}/>}
       {!session.revealed ? <button type="button" className="vocabulary-reveal" onClick={event => {
         // A second click on a rating can land on this newly rendered button.
         // Keyboard activation has detail 0 and must continue to work.

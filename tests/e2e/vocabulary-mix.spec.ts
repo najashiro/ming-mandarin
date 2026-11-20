@@ -52,6 +52,7 @@ async function ready(page: import('@playwright/test').Page, path = '/study/l3/ga
 
 async function saveLesson6AudioRound(page: import('@playwright/test').Page) {
   const session: MixSession = {
+    difficulty: 'medium', presentation: 'hanzi',
     formatVersion: 2, id: 'mix-lesson6-audio', userId: 'guest', scope: 'l6',
     requestedSize: 10, actualSize: 2, deck: ['v-教学楼', 'v-体育馆'], index: 0,
     revealed: false, paused: false, kind: 'normal', startedAt: Date.now(), answers: [],
@@ -162,6 +163,7 @@ test('lesson-six audio survives reveal, the next turn, blocked autoplay and paus
 test('the reported bedroom reverse plays its full sentence and preserves the saved round', async ({ page }, info) => {
   await page.route('**/audio/**', route => route.continue());
   const session: MixSession = {
+    difficulty: 'medium', presentation: 'hanzi',
     formatVersion: 2, id: 'mix-bedroom-sentence-audio', userId: 'guest', scope: 'l6',
     requestedSize: 10, actualSize: 2, deck: ['v-教学楼', 'v-卧室'], index: 1,
     revealed: false, paused: false, kind: 'normal', startedAt: 1795170000000,
@@ -228,6 +230,7 @@ test('Otro ejemplo stops the previous sentence and plays the newly displayed sen
   });
   const scope = 'l1-l2-l3-l4-l5-l6';
   const session: MixSession = {
+    difficulty: 'medium', presentation: 'hanzi',
     formatVersion: 2, id: 'mix-cycle-sentence-audio', userId: 'guest', scope,
     requestedSize: 10, actualSize: 1, deck: ['v-睡觉'], index: 0,
     revealed: false, paused: false, kind: 'normal', startedAt: Date.now(), answers: [],
@@ -324,6 +327,7 @@ test('Mix reveals and cycles only the relevant sentence for the saved sleep card
   await installAudioMock(page);
   const scope = 'l1-l2-l3-l4-l5-l6';
   const session: MixSession = {
+    difficulty: 'medium', presentation: 'hanzi',
     formatVersion: 2, id: 'mix-sleep-sentence', userId: 'guest', scope,
     requestedSize: 10, actualSize: 1, deck: ['v-睡觉'], index: 0,
     revealed: false, paused: false, kind: 'normal', startedAt: Date.now(), answers: [],
@@ -441,6 +445,7 @@ test('general review shows the current word lesson across answers and a saved pa
   await installAudioMock(page);
   const scope = 'l1-l2-l3-l4-l5-l6';
   const session: MixSession = {
+    difficulty: 'medium', presentation: 'hanzi',
     formatVersion: 2, id: 'mix-lesson-context', userId: 'guest', scope,
     requestedSize: 10, actualSize: 2, deck: ['v-你', 'v-厨房'], index: 0,
     revealed: false, paused: false, kind: 'normal', startedAt: Date.now(), answers: [],
