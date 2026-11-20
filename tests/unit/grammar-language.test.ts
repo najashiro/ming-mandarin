@@ -95,7 +95,6 @@ describe('grammar language coverage for the whole course', () => {
       expect(grammarReading(example)?.pinyin, example).toBeTruthy();
       expect(grammarReading(example)?.spanish, example).toBeTruthy();
       const audio = grammarAudio(example);
-      if (example === '别着急，林小姐。') { expect(audio).toBeUndefined(); continue; }
       expect(audio, example).toBeTruthy();
       for (const clip of Array.isArray(audio) ? audio : [audio!]) expect(existsSync(join(process.cwd(), 'public', clip)), example).toBe(true);
     }

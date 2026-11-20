@@ -1,0 +1,481 @@
+{
+  "method": "Automated independent transcription with gpt-4o-mini-transcribe; gpt-4o-transcribe for ambiguous recognition. Traditional forms and three same-pronunciation spellings reviewed separately. No expected answer supplied to transcription. Not human listening or tone verification.",
+  "results": [
+    {
+      "id": "vocabulary-00e897f844c7faa2",
+      "input": "化学",
+      "expectedPinyin": "huàxué",
+      "transcript": "化學",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "203950d91e3d97ecef492de0d0b165f74333e5bcb72d13575bbe8d2d3d71c564"
+    },
+    {
+      "id": "vocabulary-018fdcd66e0471ee",
+      "input": "街道",
+      "expectedPinyin": "jiēdào",
+      "transcript": "接到",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "homophone-equivalent",
+      "sha256": "361c83b89743bfad56367bea72bc183cd4481708cf9439515099e5bbb41751d1"
+    },
+    {
+      "id": "vocabulary-0534786052122a13",
+      "input": "语文",
+      "expectedPinyin": "yǔwén",
+      "transcript": "語文",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "eadaea920e6184f1cdbddbc3e7c02bb65570954bdc455b7832530a65b0d6a12f"
+    },
+    {
+      "id": "vocabulary-065f64ef6e3e1c29",
+      "input": "每天",
+      "expectedPinyin": "měi tiān",
+      "transcript": "每天",
+      "exact": true,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "exact",
+      "sha256": "37b8e84a658182600b7a376367d5f58c6332eea7c6e6781bd56a64ff90780866"
+    },
+    {
+      "id": "vocabulary-11ed2696be2779fa",
+      "input": "功夫熊猫",
+      "expectedPinyin": "Gōngfu Xióngmāo",
+      "transcript": "功夫熊貓",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "b2a88963bd69acda0bee7a55be3cc93998f74fd4630e4ac29d8d7cff5d6b1a32"
+    },
+    {
+      "id": "vocabulary-1462bd5a550f5541",
+      "input": "钱",
+      "expectedPinyin": "qián",
+      "transcript": "錢",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "30317f494634295cce34e0c13e79fd6eca6b996cfd0fe3727a27bf05754e80df"
+    },
+    {
+      "id": "vocabulary-14c531f3279782c7",
+      "input": "阳台",
+      "expectedPinyin": "yángtái",
+      "transcript": "陽台",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "92d9efa1c0cc7e446fc8181103d0de5220710bc2510a17fc7f099b836e2a2ef2"
+    },
+    {
+      "id": "vocabulary-18a274e90a8ce0db",
+      "input": "宿舍",
+      "expectedPinyin": "sùshè",
+      "transcript": "宿舍",
+      "exact": true,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "exact",
+      "sha256": "0ae8e4153df0d8071e3d7cca974488ed2dd6416355a900e78f7dd546e662dc2b"
+    },
+    {
+      "id": "vocabulary-24ef0c54d93015e4",
+      "input": "清真餐厅",
+      "expectedPinyin": "qīngzhēn cāntīng",
+      "transcript": "清真餐廳",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "1115184db00b48f4b131936dafc2b5c292b2ba3c6c0bd05764e077f957722b5d"
+    },
+    {
+      "id": "vocabulary-2df898ee4a50cf49",
+      "input": "体育",
+      "expectedPinyin": "tǐyù",
+      "transcript": "體育",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "e8eef730b4934a7bdbc7fe00537f8155c3762a7899ef4f63d9d3ec36ec6cb3a9"
+    },
+    {
+      "id": "vocabulary-3782bad9558c9637",
+      "input": "生物",
+      "expectedPinyin": "shēngwù",
+      "transcript": "生物。",
+      "exact": true,
+      "model": "gpt-4o-transcribe",
+      "review": "exact",
+      "sha256": "a7646ccdcb079a85149738a3bcc4f88955de047c3abd07904bbb6b2a314a3303"
+    },
+    {
+      "id": "vocabulary-3e80d0dcdf56bd9e",
+      "input": "部",
+      "expectedPinyin": "bù",
+      "transcript": "不",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "homophone-equivalent",
+      "sha256": "78195ffcc58f23c1a59003f853c7e15d9e1bf9cfb45e06dbdb90f6da3ae21874"
+    },
+    {
+      "id": "vocabulary-4716dc26ac4c9d5e",
+      "input": "翻译",
+      "expectedPinyin": "fānyì",
+      "transcript": "翻譯",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "595bcd66465e3b3764434a96b229051f5adfb592d7375bb6c1f9fc97571dccad"
+    },
+    {
+      "id": "vocabulary-4ad63b5db14f1ecd",
+      "input": "陈明",
+      "expectedPinyin": "Chén Míng",
+      "transcript": "陳明",
+      "exact": false,
+      "model": "gpt-4o-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "005ab404cc4f56d278f15ad0f640a4630a20b01f65fbf95b8e32f4196e6c89ba"
+    },
+    {
+      "id": "vocabulary-59e28b1678e1f0a9",
+      "input": "地理",
+      "expectedPinyin": "dìlǐ",
+      "transcript": "地理",
+      "exact": true,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "exact",
+      "sha256": "b0c8549fbb348826241c413ba3e3c2c0a1cba022f01ff7dab0fef98d8e5efe49"
+    },
+    {
+      "id": "vocabulary-5a2cd7d12219fdfd",
+      "input": "着急",
+      "expectedPinyin": "zháojí",
+      "transcript": "著急",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "c3357bd13970c9e9b4491dd8de8a714e0d6d2f89f4dc7336b0f6b82545a7dd8d"
+    },
+    {
+      "id": "vocabulary-618614bd9264afb3",
+      "input": "思想政治",
+      "expectedPinyin": "sīxiǎng zhèngzhì",
+      "transcript": "思想政治",
+      "exact": true,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "exact",
+      "sha256": "3f3af2f0abcb719313c7d627e8d84d9d0696c46a22507262df4b0e73e22b2ec0"
+    },
+    {
+      "id": "vocabulary-688ff6ba8667c901",
+      "input": "后年",
+      "expectedPinyin": "hòunián",
+      "transcript": "後年",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "f4082d89e914aeb01ef3de9623ad2728709993fde46258cdfb4a61c75219790f"
+    },
+    {
+      "id": "vocabulary-6a4617a22b540f83",
+      "input": "小姐",
+      "expectedPinyin": "xiǎojie",
+      "transcript": "小姐",
+      "exact": true,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "exact",
+      "sha256": "ef247f51ea47820099717094d306e78e471a443580b87f2cd70114819dad5a9c"
+    },
+    {
+      "id": "vocabulary-6fe3d09c2c59dee4",
+      "input": "咖啡厅",
+      "expectedPinyin": "kāfēitīng",
+      "transcript": "咖啡廳",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "c4a1037a6bf92d83fc175d28c2b1c167969d17ed0cfdef73c15638c22ca15016"
+    },
+    {
+      "id": "vocabulary-71c5adc27d3119e9",
+      "input": "操场",
+      "expectedPinyin": "cāochǎng",
+      "transcript": "操场",
+      "exact": true,
+      "model": "gpt-4o-transcribe",
+      "review": "exact",
+      "sha256": "13c73d3b22ba8677486b47bf3aae34b2b7e777e77b0baa921206cc6579e7b608"
+    },
+    {
+      "id": "vocabulary-7c413aed7076547c",
+      "input": "卫生间",
+      "expectedPinyin": "wèishēngjiān",
+      "transcript": "衛生間",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "9c42dabfeaa63af077a562d02bc2042a8d9c6a895e0a8df0b896e6893f722d32"
+    },
+    {
+      "id": "vocabulary-7d600bb7a9f1bf75",
+      "input": "写作",
+      "expectedPinyin": "xiězuò",
+      "transcript": "寫作",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "1ba58ba48424b03f3235b8e79448ccd69e16e486e13f099d2d8ec354aa433665"
+    },
+    {
+      "id": "vocabulary-910ba851895de9fe",
+      "input": "外边",
+      "expectedPinyin": "wàibian",
+      "transcript": "外邊",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "efb7ca84614ae1a7e9e646dd0fb629deb3c0dc913ccdaf9fdf2664fcf6ea6ea4"
+    },
+    {
+      "id": "vocabulary-9ad33a708e346bec",
+      "input": "教学",
+      "expectedPinyin": "jiàoxué",
+      "transcript": "教學",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "91ffb0518c55b346a74579b408a99341b96cfc4b365340c80e2e984f6c8c2707"
+    },
+    {
+      "id": "vocabulary-9bbaa7e36f7d6d59",
+      "input": "里边",
+      "expectedPinyin": "lǐbian",
+      "transcript": "裡邊",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "c5f0986dab5fce404470ab026cdf91224f2cfe44574e04486ef056f278cd7844"
+    },
+    {
+      "id": "vocabulary-a12ce52e824b5642",
+      "input": "卧室",
+      "expectedPinyin": "wòshì",
+      "transcript": "臥室",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "6141e90cf337ae71a75f3d48773e5cebfbaf6840ca98fce10287410ce575eeb2"
+    },
+    {
+      "id": "vocabulary-a4681525c19c1000",
+      "input": "客厅",
+      "expectedPinyin": "kètīng",
+      "transcript": "客廳",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "32da80b9c89bc06bb9929d8601b75e062045fcbcaf12c116bc85f9e41f69d51b"
+    },
+    {
+      "id": "vocabulary-a98aaad29f618050",
+      "input": "中学",
+      "expectedPinyin": "zhōngxué",
+      "transcript": "中學",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "00d5fd02b964144dd07adcd3195de46b01474ef8723206fd7d205de47619124a"
+    },
+    {
+      "id": "vocabulary-b77b7d0aa80ac773",
+      "input": "数学",
+      "expectedPinyin": "shùxué",
+      "transcript": "數學",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "bf11f89de74d25033db06d2e1c3a733150aef64e701f638916e6db0ebf39e28e"
+    },
+    {
+      "id": "vocabulary-bb394015cd3c2d46",
+      "input": "八卦",
+      "expectedPinyin": "bāguà",
+      "transcript": "八卦",
+      "exact": true,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "exact",
+      "sha256": "d8b82f4669a78a0638c0f3e76321052b715d48da0591734a9c9f28cc8a1e730e"
+    },
+    {
+      "id": "vocabulary-bc2a4c88e773c7a1",
+      "input": "做作业",
+      "expectedPinyin": "zuò zuò yè",
+      "transcript": "做作業",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "406d20749a58f1c798d663806015aa01839f1a8632bf5384d94dee878f215fca"
+    },
+    {
+      "id": "vocabulary-bcdcf975fc144dce",
+      "input": "地方",
+      "expectedPinyin": "dìfang",
+      "transcript": "地方",
+      "exact": true,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "exact",
+      "sha256": "f804d6a6c52cf4cace18b36fa4218e7fad4a9f75765956e184b933ac3234fe03"
+    },
+    {
+      "id": "vocabulary-bf64fa7a22393d62",
+      "input": "书房",
+      "expectedPinyin": "shūfáng",
+      "transcript": "書房",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "be0d19f3479f52671acf4e72465055a77a6bd7a84f48c148daeb8cf353fe2a05"
+    },
+    {
+      "id": "vocabulary-c80a1898aa996f33",
+      "input": "里卡多帕尔玛大学孔子学院",
+      "expectedPinyin": "lǐ kǎ duō pà ěr mǎ dà xué kǒng zǐ xué yuàn",
+      "transcript": "里卡多帕尔马大学孔子学院",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "homophone-equivalent",
+      "sha256": "2af72a80b36f37726537e1d88ddbe1ac51dec92e2d4c8454799d3172b4e577fd"
+    },
+    {
+      "id": "vocabulary-cb6f3e02609fd650",
+      "input": "厨房",
+      "expectedPinyin": "chúfáng",
+      "transcript": "廚房",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "a5e288964005751dc833b0cc9c5087c391fdb3a97f20c2a85f0fb561e4bfe02d"
+    },
+    {
+      "id": "vocabulary-d081ba062f1a24bf",
+      "input": "知道",
+      "expectedPinyin": "zhīdào",
+      "transcript": "知道",
+      "exact": true,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "exact",
+      "sha256": "f44e3c529941799c9dca6d388225d33591c1954d2c057046d6e1b62d5f33746d"
+    },
+    {
+      "id": "vocabulary-d5c23c7a41e9bff3",
+      "input": "有点儿",
+      "expectedPinyin": "yǒudiǎnr",
+      "transcript": "有点儿",
+      "exact": true,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "exact",
+      "sha256": "e7decc53313c4e702f4ccc539c4e8b3b8a53cc0cbd1ce73da2e4b800914a7ffe"
+    },
+    {
+      "id": "vocabulary-e01889247cf1be78",
+      "input": "酒吧",
+      "expectedPinyin": "jiǔbā",
+      "transcript": "酒吧",
+      "exact": true,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "exact",
+      "sha256": "737b1a4fcb40cce92bedaff72483ef30e1156a93f81bcc66b59bfbf5b45d263e"
+    },
+    {
+      "id": "vocabulary-e1716a67f67ccf4e",
+      "input": "物理",
+      "expectedPinyin": "wùlǐ",
+      "transcript": "物理",
+      "exact": true,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "exact",
+      "sha256": "c7fe77a87c75b2a7f121895fc50c1debdcaf8b2910ec3a3ca888937dccd0861e"
+    },
+    {
+      "id": "vocabulary-e28e0973fd6dd454",
+      "input": "办公楼",
+      "expectedPinyin": "bàngōnglóu",
+      "transcript": "辦公樓",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "5cbac2c8c9c0de74ba62547694c8dd6f9de63f4c5ad2d6c2182d4d64927a200b"
+    },
+    {
+      "id": "vocabulary-e6c363ddfc657e14",
+      "input": "旁边",
+      "expectedPinyin": "pángbiān",
+      "transcript": "旁邊",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "d802706ae3fc9976533e91a085869e94278af002e4138e144badcd8a083a16b9"
+    },
+    {
+      "id": "vocabulary-f0ee2ffea0c3843f",
+      "input": "办公",
+      "expectedPinyin": "bàngōng",
+      "transcript": "辦公",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "ea0a87148704c4f55cb5736a684d0393d2f1671d1a03905c3bc6eaa778fcf959"
+    },
+    {
+      "id": "vocabulary-f31cd48435a798f6",
+      "input": "综合汉语",
+      "expectedPinyin": "zōnghé Hànyǔ",
+      "transcript": "综合汉语",
+      "exact": true,
+      "model": "gpt-4o-transcribe",
+      "review": "exact",
+      "sha256": "7d45ab045ad754eec235950b131cd771d6147532e9a184c65516565e2ecee73c"
+    },
+    {
+      "id": "vocabulary-f4282ee785383cee",
+      "input": "晚上好",
+      "expectedPinyin": "wǎnshang hǎo",
+      "transcript": "晚上好",
+      "exact": true,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "exact",
+      "sha256": "2fe985884c6a67da3c8be307976e5c696f9030c20b84e72b4030fefae987dbd8"
+    },
+    {
+      "id": "vocabulary-f54d8bb719cc6dbe",
+      "input": "胡同",
+      "expectedPinyin": "hútòng",
+      "transcript": "胡同",
+      "exact": true,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "exact",
+      "sha256": "ef51d3f03ca73354f256e9d14e0cdd344cf1d6edc2c45c8b7f2e485c602b21a8"
+    },
+    {
+      "id": "vocabulary-f79b69e39e89a463",
+      "input": "手机",
+      "expectedPinyin": "shǒujī",
+      "transcript": "手機",
+      "exact": false,
+      "model": "gpt-4o-mini-transcribe",
+      "review": "traditional-equivalent",
+      "sha256": "9ec1d6ee91d02fe2e36e5bd5ce10bd489bee2f8072ca36463425c375a35aa6fa"
+    }
+  ],
+  "summary": {
+    "exact": 16,
+    "traditional-equivalent": 28,
+    "homophone-equivalent": 3,
+    "unresolved": 0
+  }
+}

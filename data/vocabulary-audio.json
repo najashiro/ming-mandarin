@@ -1,0 +1,430 @@
+{
+  "version": 1,
+  "origin": "ming_vocabulary_audio_completion_20261120",
+  "voiceDisclosure": "Voz generada por IA",
+  "clips": [
+    {
+      "id": "vocabulary-688ff6ba8667c901",
+      "file": "vocabulary-688ff6ba8667c901.mp3",
+      "input": "后年",
+      "expectedPinyin": "hòunián",
+      "lessonId": 3,
+      "vocabularyId": "v-后年",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: hòunián. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-f4282ee785383cee",
+      "file": "vocabulary-f4282ee785383cee.mp3",
+      "input": "晚上好",
+      "expectedPinyin": "wǎnshang hǎo",
+      "lessonId": 1,
+      "vocabularyId": "v-晚上好",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: wǎnshang hǎo. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-bc2a4c88e773c7a1",
+      "file": "vocabulary-bc2a4c88e773c7a1.mp3",
+      "input": "做作业",
+      "expectedPinyin": "zuò zuò yè",
+      "lessonId": 4,
+      "vocabularyId": "v-做作业",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: zuò zuò yè. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-d5c23c7a41e9bff3",
+      "file": "vocabulary-d5c23c7a41e9bff3.mp3",
+      "input": "有点儿",
+      "expectedPinyin": "yǒudiǎnr",
+      "lessonId": 4,
+      "vocabularyId": "v-有点儿",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: yǒudiǎnr. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-3e80d0dcdf56bd9e",
+      "file": "vocabulary-3e80d0dcdf56bd9e.mp3",
+      "input": "部",
+      "expectedPinyin": "bù",
+      "lessonId": 4,
+      "vocabularyId": "v-部",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: bù. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-bb394015cd3c2d46",
+      "file": "vocabulary-bb394015cd3c2d46.mp3",
+      "input": "八卦",
+      "expectedPinyin": "bāguà",
+      "lessonId": 4,
+      "vocabularyId": "v-八卦",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: bāguà. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-f79b69e39e89a463",
+      "file": "vocabulary-f79b69e39e89a463.mp3",
+      "input": "手机",
+      "expectedPinyin": "shǒujī",
+      "lessonId": 4,
+      "vocabularyId": "v-手机",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: shǒujī. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-1462bd5a550f5541",
+      "file": "vocabulary-1462bd5a550f5541.mp3",
+      "input": "钱",
+      "expectedPinyin": "qián",
+      "lessonId": 4,
+      "vocabularyId": "v-钱",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: qián. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-4716dc26ac4c9d5e",
+      "file": "vocabulary-4716dc26ac4c9d5e.mp3",
+      "input": "翻译",
+      "expectedPinyin": "fānyì",
+      "lessonId": 4,
+      "vocabularyId": "v-翻译",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: fānyì. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-c80a1898aa996f33",
+      "file": "vocabulary-c80a1898aa996f33.mp3",
+      "input": "里卡多帕尔玛大学孔子学院",
+      "expectedPinyin": "lǐ kǎ duō pà ěr mǎ dà xué kǒng zǐ xué yuàn",
+      "lessonId": 4,
+      "vocabularyId": "v-里卡多帕尔玛大学孔子学院",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: lǐ kǎ duō pà ěr mǎ dà xué kǒng zǐ xué yuàn. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-0534786052122a13",
+      "file": "vocabulary-0534786052122a13.mp3",
+      "input": "语文",
+      "expectedPinyin": "yǔwén",
+      "lessonId": 4,
+      "vocabularyId": "v-语文",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: yǔwén. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-b77b7d0aa80ac773",
+      "file": "vocabulary-b77b7d0aa80ac773.mp3",
+      "input": "数学",
+      "expectedPinyin": "shùxué",
+      "lessonId": 4,
+      "vocabularyId": "v-数学",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: shùxué. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-e1716a67f67ccf4e",
+      "file": "vocabulary-e1716a67f67ccf4e.mp3",
+      "input": "物理",
+      "expectedPinyin": "wùlǐ",
+      "lessonId": 4,
+      "vocabularyId": "v-物理",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: wùlǐ. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-00e897f844c7faa2",
+      "file": "vocabulary-00e897f844c7faa2.mp3",
+      "input": "化学",
+      "expectedPinyin": "huàxué",
+      "lessonId": 4,
+      "vocabularyId": "v-化学",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: huàxué. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-59e28b1678e1f0a9",
+      "file": "vocabulary-59e28b1678e1f0a9.mp3",
+      "input": "地理",
+      "expectedPinyin": "dìlǐ",
+      "lessonId": 4,
+      "vocabularyId": "v-地理",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: dìlǐ. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-618614bd9264afb3",
+      "file": "vocabulary-618614bd9264afb3.mp3",
+      "input": "思想政治",
+      "expectedPinyin": "sīxiǎng zhèngzhì",
+      "lessonId": 4,
+      "vocabularyId": "v-思想政治",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: sīxiǎng zhèngzhì. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-3782bad9558c9637",
+      "file": "vocabulary-3782bad9558c9637.mp3",
+      "input": "生物",
+      "expectedPinyin": "shēngwù",
+      "lessonId": 4,
+      "vocabularyId": "v-生物",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: shēngwù. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos. Articula claramente 生 shēng, con vocal e y final ng; no 商 shāng. 生物 significa biología o ser vivo. Pronuncia únicamente 生物, shēngwù, una vez."
+    },
+    {
+      "id": "vocabulary-11ed2696be2779fa",
+      "file": "vocabulary-11ed2696be2779fa.mp3",
+      "input": "功夫熊猫",
+      "expectedPinyin": "Gōngfu Xióngmāo",
+      "lessonId": 4,
+      "vocabularyId": "v-功夫熊猫",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: Gōngfu Xióngmāo. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-065f64ef6e3e1c29",
+      "file": "vocabulary-065f64ef6e3e1c29.mp3",
+      "input": "每天",
+      "expectedPinyin": "měi tiān",
+      "lessonId": 4,
+      "vocabularyId": "v-每天",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: měi tiān. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-7d600bb7a9f1bf75",
+      "file": "vocabulary-7d600bb7a9f1bf75.mp3",
+      "input": "写作",
+      "expectedPinyin": "xiězuò",
+      "lessonId": 4,
+      "vocabularyId": "v-写作",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: xiězuò. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-a98aaad29f618050",
+      "file": "vocabulary-a98aaad29f618050.mp3",
+      "input": "中学",
+      "expectedPinyin": "zhōngxué",
+      "lessonId": 4,
+      "vocabularyId": "v-中学",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: zhōngxué. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-4ad63b5db14f1ecd",
+      "file": "vocabulary-4ad63b5db14f1ecd.mp3",
+      "input": "陈明",
+      "expectedPinyin": "Chén Míng",
+      "lessonId": 4,
+      "vocabularyId": "v-陈明",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: Chén Míng. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos. Articula claramente 明 míng con consonante inicial m y final ng; no 宁 níng. Es el nombre de una persona, 陈明 Chén Míng. Pronuncia únicamente 陈明 una vez."
+    },
+    {
+      "id": "vocabulary-f31cd48435a798f6",
+      "file": "vocabulary-f31cd48435a798f6.mp3",
+      "input": "综合汉语",
+      "expectedPinyin": "zōnghé Hànyǔ",
+      "lessonId": 4,
+      "vocabularyId": "v-综合汉语",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: zōnghé Hànyǔ. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-e6c363ddfc657e14",
+      "file": "vocabulary-e6c363ddfc657e14.mp3",
+      "input": "旁边",
+      "expectedPinyin": "pángbiān",
+      "lessonId": 6,
+      "vocabularyId": "v-旁边",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: pángbiān. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-e28e0973fd6dd454",
+      "file": "vocabulary-e28e0973fd6dd454.mp3",
+      "input": "办公楼",
+      "expectedPinyin": "bàngōnglóu",
+      "lessonId": 6,
+      "vocabularyId": "v-办公楼",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: bàngōnglóu. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-f0ee2ffea0c3843f",
+      "file": "vocabulary-f0ee2ffea0c3843f.mp3",
+      "input": "办公",
+      "expectedPinyin": "bàngōng",
+      "lessonId": 6,
+      "vocabularyId": "v-办公",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: bàngōng. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-2df898ee4a50cf49",
+      "file": "vocabulary-2df898ee4a50cf49.mp3",
+      "input": "体育",
+      "expectedPinyin": "tǐyù",
+      "lessonId": 6,
+      "vocabularyId": "v-体育",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: tǐyù. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-9bbaa7e36f7d6d59",
+      "file": "vocabulary-9bbaa7e36f7d6d59.mp3",
+      "input": "里边",
+      "expectedPinyin": "lǐbian",
+      "lessonId": 6,
+      "vocabularyId": "v-里边",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: lǐbian. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-18a274e90a8ce0db",
+      "file": "vocabulary-18a274e90a8ce0db.mp3",
+      "input": "宿舍",
+      "expectedPinyin": "sùshè",
+      "lessonId": 6,
+      "vocabularyId": "v-宿舍",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: sùshè. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-9ad33a708e346bec",
+      "file": "vocabulary-9ad33a708e346bec.mp3",
+      "input": "教学",
+      "expectedPinyin": "jiàoxué",
+      "lessonId": 6,
+      "vocabularyId": "v-教学",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: jiàoxué. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-5a2cd7d12219fdfd",
+      "file": "vocabulary-5a2cd7d12219fdfd.mp3",
+      "input": "着急",
+      "expectedPinyin": "zháojí",
+      "lessonId": 6,
+      "vocabularyId": "v-着急",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: zháojí. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-6a4617a22b540f83",
+      "file": "vocabulary-6a4617a22b540f83.mp3",
+      "input": "小姐",
+      "expectedPinyin": "xiǎojie",
+      "lessonId": 6,
+      "vocabularyId": "v-小姐",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: xiǎojie. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-bcdcf975fc144dce",
+      "file": "vocabulary-bcdcf975fc144dce.mp3",
+      "input": "地方",
+      "expectedPinyin": "dìfang",
+      "lessonId": 6,
+      "vocabularyId": "v-地方",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: dìfang. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-d081ba062f1a24bf",
+      "file": "vocabulary-d081ba062f1a24bf.mp3",
+      "input": "知道",
+      "expectedPinyin": "zhīdào",
+      "lessonId": 6,
+      "vocabularyId": "v-知道",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: zhīdào. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-f54d8bb719cc6dbe",
+      "file": "vocabulary-f54d8bb719cc6dbe.mp3",
+      "input": "胡同",
+      "expectedPinyin": "hútòng",
+      "lessonId": 6,
+      "vocabularyId": "v-胡同",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: hútòng. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-018fdcd66e0471ee",
+      "file": "vocabulary-018fdcd66e0471ee.mp3",
+      "input": "街道",
+      "expectedPinyin": "jiēdào",
+      "lessonId": 6,
+      "vocabularyId": "v-街道",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: jiēdào. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-7c413aed7076547c",
+      "file": "vocabulary-7c413aed7076547c.mp3",
+      "input": "卫生间",
+      "expectedPinyin": "wèishēngjiān",
+      "lessonId": 6,
+      "vocabularyId": "v-卫生间",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: wèishēngjiān. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-a12ce52e824b5642",
+      "file": "vocabulary-a12ce52e824b5642.mp3",
+      "input": "卧室",
+      "expectedPinyin": "wòshì",
+      "lessonId": 6,
+      "vocabularyId": "v-卧室",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: wòshì. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-a4681525c19c1000",
+      "file": "vocabulary-a4681525c19c1000.mp3",
+      "input": "客厅",
+      "expectedPinyin": "kètīng",
+      "lessonId": 6,
+      "vocabularyId": "v-客厅",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: kètīng. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-14c531f3279782c7",
+      "file": "vocabulary-14c531f3279782c7.mp3",
+      "input": "阳台",
+      "expectedPinyin": "yángtái",
+      "lessonId": 6,
+      "vocabularyId": "v-阳台",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: yángtái. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-cb6f3e02609fd650",
+      "file": "vocabulary-cb6f3e02609fd650.mp3",
+      "input": "厨房",
+      "expectedPinyin": "chúfáng",
+      "lessonId": 6,
+      "vocabularyId": "v-厨房",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: chúfáng. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-bf64fa7a22393d62",
+      "file": "vocabulary-bf64fa7a22393d62.mp3",
+      "input": "书房",
+      "expectedPinyin": "shūfáng",
+      "lessonId": 6,
+      "vocabularyId": "v-书房",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: shūfáng. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-6fe3d09c2c59dee4",
+      "file": "vocabulary-6fe3d09c2c59dee4.mp3",
+      "input": "咖啡厅",
+      "expectedPinyin": "kāfēitīng",
+      "lessonId": 6,
+      "vocabularyId": "v-咖啡厅",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: kāfēitīng. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-e01889247cf1be78",
+      "file": "vocabulary-e01889247cf1be78.mp3",
+      "input": "酒吧",
+      "expectedPinyin": "jiǔbā",
+      "lessonId": 6,
+      "vocabularyId": "v-酒吧",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: jiǔbā. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-24ef0c54d93015e4",
+      "file": "vocabulary-24ef0c54d93015e4.mp3",
+      "input": "清真餐厅",
+      "expectedPinyin": "qīngzhēn cāntīng",
+      "lessonId": 6,
+      "vocabularyId": "v-清真餐厅",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: qīngzhēn cāntīng. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    },
+    {
+      "id": "vocabulary-71c5adc27d3119e9",
+      "file": "vocabulary-71c5adc27d3119e9.mp3",
+      "input": "操场",
+      "expectedPinyin": "cāochǎng",
+      "lessonId": 6,
+      "vocabularyId": "v-操场",
+      "instructions": "用清晰、稍慢、自然的标准普通话只读一遍输入的两个汉字。拼音参考：cāo chǎng。第一个字是第一声，第二个字是第三声。不要读拼音，不要添加其他内容。"
+    },
+    {
+      "id": "vocabulary-910ba851895de9fe",
+      "file": "vocabulary-910ba851895de9fe.mp3",
+      "input": "外边",
+      "expectedPinyin": "wàibian",
+      "lessonId": 6,
+      "vocabularyId": "v-外边",
+      "instructions": "Pronuncia exactamente la entrada una sola vez. Usa esta lectura de referencia sin leer el pinyin ni las instrucciones: wàibian. Conserva los tonos léxicos y las sílabas neutras indicadas; aplica únicamente el sandhi natural. 儿 final en 有点儿 es erhua integrado, no una sílaba separada. No añadas saludos, explicaciones ni sonidos."
+    }
+  ]
+}

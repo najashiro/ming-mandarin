@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 import lesson6 from '../../data/lesson6-public.json' with { type: 'json' };
+import directionsAudio from '../../data/directions-audio.json' with { type: 'json' };
 import type { ActiveWord } from '../../lib/vocabulary';
 import type { VocabularyMediaEntry } from '../../lib/vocabulary-media';
 import { startMix } from '../../lib/vocabulary-review';
@@ -29,6 +30,115 @@ async function ready(page: import('@playwright/test').Page, path = '/study/l3/ga
   await page.goto(path);
   await expect(page.locator('.active-vocabulary')).toHaveAttribute('data-ready', 'true');
 }
+
+async function saveLesson6AudioRound(page: import('@playwright/test').Page) {
+  const session: MixSession = {
+    formatVersion: 2, id: 'mix-lesson6-audio', userId: 'guest', scope: 'l6',
+    requestedSize: 10, actualSize: 2, deck: ['v-教学楼', 'v-体育馆'], index: 0,
+    revealed: false, paused: false, kind: 'normal', startedAt: Date.now(), answers: [],
+  };
+  const raw = JSON.stringify({ ...emptyVocabularyState(), sessions: { l6: session } });
+  expect(parseVocabularyState(raw).sessions.l6).toEqual(session);
+  await page.addInitScript(({ key, value }) => {
+    if (!localStorage.getItem(key)) localStorage.setItem(key, value);
+  }, { key: vocabularyStorageKey('guest'), value: raw });
+}
+
+test('the reported teaching-building card loads its real MP3 before and after revealing', async ({ page }, info) => {
+  // Continue to the real server while disabling the browser's media HTTP cache,
+  // so both controls must issue an observable request for the same recording.
+  await page.route('**/audio/directions/**', route => route.continue());
+  await saveLesson6AudioRound(page);
+  await ready(page, '/study/l6/games/vocabulary-mix');
+  await expect(page.locator('.vocabulary-mix-prompt')).toHaveText('教学楼');
+  const clip = directionsAudio.clips.find(clip => clip.input === '教学楼' && clip.expectedPinyin === 'jiàoxuélóu')!;
+  const path = `/audio/directions/${clip.file}`;
+
+  for (const revealed of [false, true]) {
+    if (revealed) await page.getByRole('button', { name: 'Ver respuesta', exact: true }).click();
+    const surface = revealed
+      ? page.getByRole('article', { name: 'Ficha de 教学楼', exact: true })
+      : page.locator('.vocabulary-mix-question');
+    const button = surface.locator('.audio-button');
+    await expect(button).toBeVisible();
+    await expect(button).toHaveAccessibleName(/^Escuchar[: ]+教学楼$/);
+    const [response] = await Promise.all([
+      page.waitForResponse(response => new URL(response.url()).pathname === path && response.status() < 400),
+      button.click(),
+    ]);
+    await expect(button).toHaveClass(/playing/);
+    const recording = await page.request.get(response.url());
+    expect(recording.ok()).toBe(true);
+    expect(recording.headers()['content-type']).toContain('audio/');
+    expect((await recording.body()).length).toBeGreaterThan(1024);
+    await expect(button).toHaveClass(/idle/);
+    await expect(page.locator('.vocabulary-mix-score')).toContainText('Respondidas: 0/2');
+    await surface.screenshot({ path: info.outputPath(`mix-teaching-building-audio-${revealed ? 'answer' : 'question'}.png`), animations: 'disabled' });
+  }
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+});
+
+test('lesson-six audio survives reveal, the next turn, blocked autoplay and pause', async ({ page }) => {
+  await saveLesson6AudioRound(page);
+  // Real MP3 responses are checked above. This probe isolates browser playback
+  // permissions and stop behavior from the host's codec and audio device support.
+  await page.addInitScript(() => {
+    const probe = { plays: [] as string[], active: [] as string[], denyNext: false };
+    (window as typeof window & { mixAudioProbe?: typeof probe }).mixAudioProbe = probe;
+    window.Audio = function (source?: string | URL) {
+      const src = String(source);
+      const audio = document.createElement('audio');
+      audio.play = () => {
+        probe.plays.push(src);
+        if (probe.denyNext) {
+          probe.denyNext = false;
+          return Promise.reject(new DOMException('blocked', 'NotAllowedError'));
+        }
+        probe.active.push(src);
+        queueMicrotask(() => audio.dispatchEvent(new Event('playing')));
+        return Promise.resolve();
+      };
+      audio.pause = () => {
+        probe.active = probe.active.filter(active => active !== src);
+        audio.dispatchEvent(new Event('pause'));
+      };
+      return audio;
+    } as unknown as typeof Audio;
+  });
+  type AudioProbe = { plays: string[]; active: string[]; denyNext: boolean };
+  const probe = () => page.evaluate(() => (window as typeof window & { mixAudioProbe: AudioProbe }).mixAudioProbe);
+  const teaching = `/audio/directions/${directionsAudio.clips.find(clip => clip.input === '教学楼')!.file}`;
+  const gym = `/audio/directions/${directionsAudio.clips.find(clip => clip.input === '体育馆')!.file}`;
+  await ready(page, '/study/l6/games/vocabulary-mix');
+  await page.getByRole('button', { name: 'Escuchar 教学楼', exact: true }).click();
+  await expect.poll(async () => (await probe()).active).toEqual([teaching]);
+  await page.getByRole('button', { name: 'Ver respuesta', exact: true }).click();
+  await expect.poll(async () => (await probe()).active).toEqual([]);
+  await page.getByRole('button', { name: 'Escuchar: 教学楼', exact: true }).click();
+  await expect.poll(async () => (await probe()).active).toEqual([teaching]);
+
+  await page.evaluate(() => { (window as typeof window & { mixAudioProbe: AudioProbe }).mixAudioProbe.denyNext = true; });
+  await page.getByRole('button', { name: 'Lo sabía', exact: true }).click();
+  await expect(page.locator('.vocabulary-mix-prompt')).toHaveText('体育馆');
+  await expect(page.getByText('Pulsa el audio para escuchar.')).toBeVisible();
+  await expect.poll(async () => (await probe()).plays).toEqual([teaching, teaching, gym]);
+  await expect.poll(async () => (await probe()).active).toEqual([]);
+  await page.getByRole('button', { name: 'Escuchar 体育馆', exact: true }).click();
+  await expect.poll(async () => (await probe()).active).toEqual([gym]);
+  await expect(page.locator('.vocabulary-mix-score')).toContainText('Respondidas: 1/2');
+
+  await page.getByRole('button', { name: 'Pausar', exact: true }).click();
+  await expect.poll(async () => (await probe()).active).toEqual([]);
+  await page.reload();
+  await expect(page.getByRole('heading', { name: 'Partida en pausa' })).toBeVisible();
+  await page.getByRole('button', { name: 'Reanudar', exact: true }).click();
+  await expect(page.locator('.vocabulary-mix-prompt')).toHaveText('体育馆');
+  await page.getByRole('button', { name: 'Escuchar 体育馆', exact: true }).click();
+  await expect.poll(async () => (await probe()).active).toEqual([gym]);
+  await expect(page.locator('.vocabulary-mix-score')).toContainText('Respondidas: 1/2');
+  await page.getByRole('button', { name: 'Ver respuesta', exact: true }).click();
+  await expect.poll(async () => (await probe()).active).toEqual([]);
+});
 
 async function verifySingleSentenceSleepExamples(page: import('@playwright/test').Page, screenshotPath: string) {
   const card = page.getByRole('article', { name: 'Ficha de 睡觉', exact: true });

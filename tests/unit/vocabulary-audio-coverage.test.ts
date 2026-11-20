@@ -2,6 +2,9 @@ import { statSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import corpus from '@/data/corpus-v21-public.json';
 import reviewed from '@/data/lessons123-public.json';
+import activeCorpus from '@/lib/active-corpus';
+import { getVocabularyMixSet, getVocabularySet } from '@/lib/vocabulary';
+import { curriculumScopes } from '@/seed/curriculum';
 import { audioForMandarinText } from '@/lib/mandarin-audio';
 
 describe('audio del vocabulario y ejemplos históricos L1–L3', () => {
@@ -50,13 +53,19 @@ describe('audio del vocabulario y ejemplos históricos L1–L3', () => {
     }
   });
 
-  it('does not assign an old clip when a correction changes a tone or final consonant', () => {
-    for (const id of ['v-后年', 'v-晚上好', 'PH-0a3721928d6f00d4']) {
+  it('uses a separate recording when a vocabulary correction changes a tone or final consonant', () => {
+    for (const id of ['v-后年', 'v-晚上好']) {
       const previous = [...corpus.vocabulary, ...corpus.phrases].find(row => row.id === id)!;
       const current = [...reviewed.vocabulary, ...reviewed.phrases].find(row => row.id === id)!;
-      expect(audioForMandarinText(previous.hanzi, previous.pinyin), id).toBeTruthy();
-      expect(audioForMandarinText(current.hanzi, current.pinyin), id).toBeUndefined();
+      const previousClip = audioForMandarinText(previous.hanzi, previous.pinyin);
+      const currentClip = audioForMandarinText(current.hanzi, current.pinyin);
+      expect(previousClip, id).toBeTruthy();
+      expect(currentClip, id).toBeTruthy();
+      expect(currentClip, id).not.toBe(previousClip);
     }
+    // Sentence coverage is separate from the completed vocabulary recordings.
+    const changedPhrase = reviewed.phrases.find(row => row.id === 'PH-0a3721928d6f00d4')!;
+    expect(audioForMandarinText(changedPhrase.hanzi, changedPhrase.pinyin)).toBeUndefined();
     // Orthographic repairs must not erase real differences in homographs.
     expect(audioForMandarinText('好', 'hǎo')).toBeTruthy();
     expect(audioForMandarinText('好', 'hào')).toBeUndefined();
@@ -67,5 +76,43 @@ describe('audio del vocabulario y ejemplos históricos L1–L3', () => {
       expect(secondClip).toBeTruthy();
       expect(firstClip).not.toBe(secondClip);
     }
+  });
+});
+
+describe('audio del vocabulario activo L1–L6 y Vocabulario Mix', () => {
+  function expectRecording(word: { id: string; hanzi: string; pinyin: string }, context: string) {
+    const key = `${context}: ${word.id} ${word.hanzi} (${word.pinyin})`;
+    const source = audioForMandarinText(word.hanzi, word.pinyin);
+    expect(source, key).toMatch(/^\/audio\/(mandarin|pinyin|directions|hide-and-seek)\/[a-z0-9-]+\.mp3$/);
+    expect(statSync(`public${source}`).size, key).toBeGreaterThan(1024);
+  }
+
+  it('covers the active catalog, including lesson-specific readings', () => {
+    for (const word of activeCorpus.vocabulary) expectRecording(word, 'catálogo activo');
+    // Lesson decks can use a different reading from the accumulated catalog:
+    // for example, 只 zhǐ in L4 versus the earlier classifier zhī.
+    for (const scope of curriculumScopes) {
+      for (const word of getVocabularySet(scope)) expectRecording(word, scope);
+    }
+  });
+
+  it('covers every playable Mix word and its actual accumulated-catalog prompt', () => {
+    const catalog = new Map(activeCorpus.vocabulary.map(word => [word.id, word]));
+    for (const scope of curriculumScopes) {
+      for (const word of getVocabularyMixSet(scope)) {
+        expectRecording(word, `Mix ${scope}`);
+        const prompt = catalog.get(word.id);
+        expect(prompt, `${scope}: ${word.id}`).toBeDefined();
+        expectRecording(prompt!, `pregunta Mix ${scope}`);
+      }
+    }
+  });
+
+  it('reuses the exact existing L6 recordings and preserves neutral syllables', () => {
+    expect(audioForMandarinText('教学楼', 'jiàoxuélóu')).toBe('/audio/directions/directions-6fc941b1c2e73e95.mp3');
+    expect(audioForMandarinText('前边', 'qiánbian')).toBe('/audio/hide-and-seek/hide-5d55ee6f9335daeb.mp3');
+    expect(audioForMandarinText('教学楼')).toBe(audioForMandarinText('教学楼', 'jiàoxuélóu'));
+    expect(audioForMandarinText('北边', 'běibiān')).toBeUndefined();
+    expect(audioForMandarinText('教学楼', 'jiāoxuélóu')).toBeUndefined();
   });
 });

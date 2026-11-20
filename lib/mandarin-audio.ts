@@ -10,6 +10,10 @@ import gameAudio from '@/data/game-audio.json';
 import gameAudioAvailable from '@/data/game-audio-available.json';
 import hanziAudio from '@/data/hanzi-audio.json';
 import hanziAudioAvailable from '@/data/hanzi-audio-available.json';
+import directionsAudio from '@/data/directions-audio.json';
+import hideAndSeekAudio from '@/data/hide-and-seek-audio.json';
+import vocabularyAudio from '@/data/vocabulary-audio.json';
+import vocabularyAudioAvailable from '@/data/vocabulary-audio-available.json';
 import { timeTokens } from '@/data/time-game';
 import { timeAudioFile } from './time-audio-key.mjs';
 
@@ -87,6 +91,26 @@ for (const clip of hanziAudio.clips) {
   const src = `/audio/mandarin/${clip.file}`;
   if (!clipsByReading.has(readingKey(clip.input, clip.expectedPinyin))) clipsByReading.set(readingKey(clip.input, clip.expectedPinyin), src);
   if (!clipsByText.has(normalizeMandarin(clip.input)) && !lesson4ByText.has(normalizeMandarin(clip.input))) clipsByText.set(normalizeMandarin(clip.input), src);
+}
+
+// These games already ship complete static recordings, including L6 words.
+// Share them by exact reading without replacing any established recording.
+function addMissingRecording(clip: { input: string; expectedPinyin: string; file: string }, directory: string) {
+  const text = normalizeMandarin(clip.input);
+  const key = readingKey(clip.input, clip.expectedPinyin);
+  const src = `/audio/${directory}/${clip.file}`;
+  if (!clipsByReading.has(key)) clipsByReading.set(key, src);
+  if (!clipsByText.has(text) && !lesson4ByText.has(text)) clipsByText.set(text, src);
+}
+
+for (const clip of directionsAudio.clips) addMissingRecording(clip, 'directions');
+for (const clip of hideAndSeekAudio.clips) addMissingRecording(clip, 'hide-and-seek');
+
+// Newly completed vocabulary is published only after its file is verified.
+// A corrected tone or final consonant receives its own clip, never an alias.
+const availableVocabularyFiles = new Set<string>(vocabularyAudioAvailable.files);
+for (const clip of vocabularyAudio.clips) {
+  if (availableVocabularyFiles.has(clip.file)) addMissingRecording(clip, 'mandarin');
 }
 
 export function audioForMandarinText(text: string, pinyin?: string): string | undefined {
