@@ -67,4 +67,4 @@ export function hideClue(round: HideRound) {
   const excluded = round.excluded ? locations[round.excluded] : null;
   return { hanzi: `${excluded ? `它不在桌子${excluded.hanzi}。` : ''}它在桌子${target.hanzi}。`, pinyin: `${excluded ? `Tā bú zài zhuōzi ${excluded.pinyin}. ` : ''}Tā zài zhuōzi ${target.pinyin}.`, spanish: `${excluded ? `No está ${excluded.meaning}. ` : ''}Está ${target.meaning}.` };
 }
-export function hasHideGame(scope: string) { return ['l6', '6.1', '6.2', 'l1-l2-l3-l4-l5-l6'].includes(scope); }
+export function hasHideGame(scope: string) { return ['l6', '6.1', '6.2', 'l1-l2-l3-l4-l5-l6', 'l1-l2-l3-l4-l5-l6-l7'].includes(scope); }

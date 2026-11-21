@@ -1,4 +1,4 @@
-import corpus, { lesson4, lesson5, lesson6 } from '@/lib/active-corpus';
+import corpus, { lesson4, lesson5, lesson6, lesson7 } from '@/lib/active-corpus';
 import { allCurriculumCharacters } from '@/seed/curriculum';
 import { supplementalHanziByGlyph } from '@/data/supplemental-hanzi';
 import type { HanziLabCharacter } from '@/components/hanzi/HanziLab';
@@ -9,7 +9,7 @@ import { compactHanziContexts, hanziContextKey } from '@/lib/hanzi/contexts';
 const contexts = [
   ...corpus.vocabulary,
   ...corpus.phrases,
-  ...[lesson4, lesson5, lesson6].flatMap((lesson, index) =>
+  ...[lesson4, lesson5, lesson6, lesson7].flatMap((lesson, index) =>
     lesson.readings.map(reading => ({ ...reading, lessons: [index + 4] }))),
 ].filter(row => row.pinyin && row.spanish);
 

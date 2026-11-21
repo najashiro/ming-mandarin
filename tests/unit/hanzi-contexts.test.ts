@@ -46,10 +46,10 @@ describe('Palabras y frases: una oración breve por ejemplo Hanzi', () => {
       .toEqual([{ hanzi: '“你好！”', pinyin: '“Nǐ hǎo!”', translation: '«¡Hola!»' }]);
   });
 
-  it('comprueba las 378 fichas y los contextos de todas las lecciones antes de perder puntuación', () => {
+  it('comprueba las 450 fichas y los contextos de todas las lecciones antes de perder puntuación', () => {
     const characters = [...hanziCatalog, ...allCurriculumCharacters,
       ...curriculumScopes.flatMap(scope => getCurriculum(scope).characters)];
-    expect(hanziCatalog).toHaveLength(378);
+    expect(hanziCatalog).toHaveLength(450);
     for (const character of characters) {
       const words = character.words ?? [];
       expect(new Set(words.map(hanziContextKey)).size, character.hanzi).toBe(words.length);

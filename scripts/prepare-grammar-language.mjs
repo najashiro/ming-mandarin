@@ -18,7 +18,7 @@ load.extensions['.ts'] = function (module, filename) {
   module._compile(output.outputText, filename);
 };
 const { getCurriculum } = load(path.join(root, 'seed/curriculum.ts'));
-const curriculum = getCurriculum('l1-l2-l3-l4-l5-l6');
+const curriculum = getCurriculum('l1-l2-l3-l4-l5-l6-l7');
 const { grammarGuides } = load(path.join(root, 'data/grammar-guides.ts'));
 const read = name => JSON.parse(fs.readFileSync(path.join(root, name), 'utf8'));
 const reference = read('data/lesson4-study-reference.json');
@@ -34,7 +34,7 @@ function add(entry, word = false) {
   readings.set(key(entry.hanzi), { hanzi: entry.hanzi, pinyin: entry.pinyin, spanish });
   if (word) wordKeys.add(key(entry.hanzi));
 }
-for (const filename of ['lessons123', 'lesson4', 'lesson5', 'lesson6']) {
+for (const filename of ['lessons123', 'lesson4', 'lesson5', 'lesson6', 'lesson7']) {
   const source = read(`data/${filename}-public.json`);
   for (const entry of source.vocabulary) add(entry, true);
   for (const entry of source.phrases) add(entry);
@@ -47,7 +47,9 @@ function collectAnnotated(value, preserveExisting = false) {
   if (!preserveExisting || !value.hanzi || !readings.has(key(value.hanzi))) add(value);
   Object.values(value).forEach(entry => collectAnnotated(entry, preserveExisting));
 }
+collectAnnotated(grammar);
 collectAnnotated(reference.grammar);
+collectAnnotated(read('data/lesson7-public.json').grammarLanguageSupport);
 collectAnnotated(reference.bookReference.topics);
 collectAnnotated(reference.bookReference.radicals, true);
 for (const entry of support.readings) add(entry, !/[。！？?!.→]/u.test(entry.hanzi));

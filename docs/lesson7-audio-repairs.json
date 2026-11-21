@@ -1,0 +1,257 @@
+{
+  "repairs": [
+    {
+      "id": "l7-a8360bba167463a2",
+      "input": "为",
+      "expectedPinyin": "wéi",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：wéi。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe.",
+      "speechInput": "围。",
+      "voice": "cedar",
+      "standaloneInstructions": "Language: Mandarin Chinese. Native Chinese pronunciation teacher. Read this Chinese character exactly once, clearly and naturally. Pronunciation in pinyin: wéi. Say only the Chinese syllable."
+    },
+    {
+      "id": "l7-326ca8dabb73f616",
+      "input": "仔",
+      "expectedPinyin": "zǎi",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：zǎi。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe.",
+      "speechInput": "崽。",
+      "voice": "cedar",
+      "standaloneInstructions": "Language: Mandarin Chinese. Native Chinese pronunciation teacher. Read this Chinese character exactly once, clearly and naturally. Pronunciation in pinyin: zǎi. Say only the Chinese syllable."
+    },
+    {
+      "id": "l7-32c86d054ecbe788",
+      "input": "件",
+      "expectedPinyin": "jiàn",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：jiàn。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-1afb4a61ca04e83e",
+      "input": "便",
+      "expectedPinyin": "pián",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：pián。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe.",
+      "speechInput": "骈。",
+      "voice": "cedar",
+      "standaloneInstructions": "Language: Mandarin Chinese. Native Chinese pronunciation teacher. Read this Chinese character exactly once, clearly and naturally. Pronunciation in pinyin: pián. Say only the Chinese syllable."
+    },
+    {
+      "id": "l7-04b1122145bb723c",
+      "input": "便宜点儿吧，十四块一斤，好吗？",
+      "expectedPinyin": "Piányi diǎnr ba, shísì kuài yì jīn, hǎo ma?",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：Piányi diǎnr ba, shísì kuài yì jīn, hǎo ma?。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-ed884f740998ceae",
+      "input": "可以便宜一点儿吗？",
+      "expectedPinyin": "Kěyǐ piányi yìdiǎnr ma?",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：Kěyǐ piányi yìdiǎnr ma?。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-539c155ebc81a3ab",
+      "input": "宝",
+      "expectedPinyin": "bǎo",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：bǎo。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-9b5e35d5b6db354b",
+      "input": "币",
+      "expectedPinyin": "bì",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：bì。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe.",
+      "speechInput": "必。",
+      "voice": "cedar",
+      "standaloneInstructions": "Language: Mandarin Chinese. Native Chinese pronunciation teacher. Read this Chinese character exactly once, clearly and naturally. Pronunciation in pinyin: bì. Say only the Chinese syllable."
+    },
+    {
+      "id": "l7-99c7709b7470f5ae",
+      "input": "当",
+      "expectedPinyin": "dāng",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：dāng。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-85638de6c656a3dd",
+      "input": "恤",
+      "expectedPinyin": "xù",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：xù。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe.",
+      "speechInput": "序。",
+      "voice": "cedar",
+      "standaloneInstructions": "Language: Mandarin Chinese. Native Chinese pronunciation teacher. Read this Chinese character exactly once, clearly and naturally. Pronunciation in pinyin: xù. Say only the Chinese syllable."
+    },
+    {
+      "id": "l7-a974081454b93e26",
+      "input": "您卖什么水果？",
+      "expectedPinyin": "Nín mài shénme shuǐguǒ?",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：Nín mài shénme shuǐguǒ?。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-f11e1ed95905c33d",
+      "input": "我想买点儿苹果。",
+      "expectedPinyin": "Wǒ xiǎng mǎi diǎnr píngguǒ.",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：Wǒ xiǎng mǎi diǎnr píngguǒ.。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-fa6fcd5fd3030e2f",
+      "input": "我想买点儿草莓。",
+      "expectedPinyin": "Wǒ xiǎng mǎi diǎnr cǎoméi.",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：Wǒ xiǎng mǎi diǎnr cǎoméi.。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-9839e7f20a1ea37d",
+      "input": "所",
+      "expectedPinyin": "suǒ",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：suǒ。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-601cf06f0df06a8c",
+      "input": "折",
+      "expectedPinyin": "zhé",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：zhé。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-db23bcd125a18218",
+      "input": "有，这条牛仔裤怎么样？",
+      "expectedPinyin": "Yǒu, zhè tiáo niúzǎikù zěnmeyàng?",
+      "instructions": "请用标准普通话读这句话。第一句“有”读 yǒu，第三声，表示有货。两句之间稍停顿。只读文字，不读拼音或解释。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe.",
+      "speechInput": "有。这条牛仔裤怎么样？"
+    },
+    {
+      "id": "l7-d10d2670063d2eb2",
+      "input": "服",
+      "expectedPinyin": "fú",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：fú。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-7e33135cd2fb9f73",
+      "input": "桃",
+      "expectedPinyin": "táo",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：táo。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-9742babd3b7c1530",
+      "input": "樱",
+      "expectedPinyin": "yīng",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：yīng。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-e3bada5e1926c911",
+      "input": "民",
+      "expectedPinyin": "mín",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：mín。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-e3ee1f40044fd310",
+      "input": "称呼",
+      "expectedPinyin": "chēnghu",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：chēnghu。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-7491c99454b1c155",
+      "input": "绿",
+      "expectedPinyin": "lǜ",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：lǜ。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe.",
+      "speechInput": "绿。",
+      "voice": "cedar",
+      "standaloneInstructions": "Language: Mandarin Chinese. Native Chinese pronunciation teacher. Read this Chinese character exactly once, clearly and naturally. Pronunciation in pinyin: lǜ. Say only the Chinese syllable."
+    },
+    {
+      "id": "l7-ccd79b9139850f1e",
+      "input": "羽",
+      "expectedPinyin": "yǔ",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：yǔ。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-24e859b0bd874248",
+      "input": "萄",
+      "expectedPinyin": "táo",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：táo。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-c5e7413291914538",
+      "input": "葡",
+      "expectedPinyin": "pú",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：pú。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-f34a271f860444be",
+      "input": "裙",
+      "expectedPinyin": "qún",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：qún。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-1cbf0b1d195b60b8",
+      "input": "这个……我问您一个问题：这个汉语怎么说？",
+      "expectedPinyin": "Zhège… wǒ wèn nín yí ge wèntí: zhège Hànyǔ zěnme shuō?",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：Zhège… wǒ wèn nín yí ge wèntí: zhège Hànyǔ zěnme shuō?。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-e0e32ceec5324035",
+      "input": "鞋",
+      "expectedPinyin": "xié",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：xié。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-695140174ed635d7",
+      "input": "题",
+      "expectedPinyin": "tí",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：tí。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-31e95de6b969447e",
+      "input": "香",
+      "expectedPinyin": "xiāng",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：xiāng。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-eb080e12ac204e15",
+      "input": "恰",
+      "expectedPinyin": "qià",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：qià。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe.",
+      "speechInput": "恰。",
+      "voice": "cedar",
+      "standaloneInstructions": "Language: Mandarin Chinese. Native Chinese pronunciation teacher. Read this Chinese character exactly once, clearly and naturally. Pronunciation in pinyin: qià. Say only the Chinese syllable."
+    },
+    {
+      "id": "l7-e69b90d9c5ddeced",
+      "input": "宣",
+      "expectedPinyin": "xuān",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：xuān。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    },
+    {
+      "id": "l7-7439059b3365ad5d",
+      "input": "点儿",
+      "expectedPinyin": "diǎnr",
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：diǎnr。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "reason": "Silent or ambiguous initial recording; re-record and independently transcribe."
+    }
+  ]
+}

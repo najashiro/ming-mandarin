@@ -9,10 +9,12 @@ export const studyScopeOptions: readonly { value: CurriculumScope; label: string
   { value: 'l4', label: 'Lección 4' },
   { value: 'l5', label: 'Lección 5' },
   { value: 'l6', label: 'Lección 6' },
-  { value: 'l1-l2-l3-l4-l5-l6', label: 'Repaso general' },
+  { value: 'l7', label: 'Lección 7' },
+  { value: 'l1-l2-l3-l4-l5-l6-l7', label: 'Repaso general' },
 ];
 
 export function getStudyScopeLabel(scope: CurriculumScope): string {
+  if (scope === 'l1-l2-l3-l4-l5-l6') return 'Repaso hasta la lección 6';
   if (scope === 'l1-l2-l3-l4-l5') return 'Repaso hasta la lección 5';
   if (scope === 'l1-l2-l3-l4') return 'Repaso hasta la lección 4';
   if (scope === 'l1-l2') return 'Repaso hasta la lección 2';

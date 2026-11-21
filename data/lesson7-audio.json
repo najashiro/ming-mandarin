@@ -1,0 +1,2947 @@
+{
+  "version": 1,
+  "corpusFingerprint": "41ee06f0765d52f17830fe93b6515ae1b1bb7835703ffe69aa3851e8d20cc9d4",
+  "authorization": {
+    "date": "2026-11-20",
+    "reply": "Sí, audios e imágenes",
+    "scope": "Recursos de L7, incluidos modelos del cuaderno y fragmentos sonoros; generación y revisión local. No autoriza producción."
+  },
+  "clips": [
+    {
+      "id": "l7-df6549807649ccdc",
+      "file": "l7-df6549807649ccdc.mp3",
+      "input": "T恤",
+      "expectedPinyin": "T xù",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: T xù. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-33c8ff13b7f93049",
+      "file": "l7-33c8ff13b7f93049.mp3",
+      "input": "一共两千一百九十一块。",
+      "expectedPinyin": "Yígòng liǎngqiān yìbǎi jiǔshíyī kuài.",
+      "lessonId": 7,
+      "usage": [
+        "phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Yígòng liǎngqiān yìbǎi jiǔshíyī kuài.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-70d380ac826f8446",
+      "file": "l7-70d380ac826f8446.mp3",
+      "input": "一共五十二块钱。我送您两个草莓。您还要什么？",
+      "expectedPinyin": "Yígòng wǔshí'èr kuài qián. Wǒ sòng nín liǎng ge cǎoméi. Nín hái yào shénme?",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Yígòng wǔshí'èr kuài qián. Wǒ sòng nín liǎng ge cǎoméi. Nín hái yào shénme?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-a9abccc2c0a2bb3c",
+      "file": "l7-a9abccc2c0a2bb3c.mp3",
+      "input": "一共六十六块。",
+      "expectedPinyin": "Yígòng liùshíliù kuài.",
+      "lessonId": 7,
+      "usage": [
+        "workbook_model",
+        "workbook_fragment"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Yígòng liùshíliù kuài.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-125f7de894d5ae9a",
+      "file": "l7-125f7de894d5ae9a.mp3",
+      "input": "一千零一",
+      "expectedPinyin": "Yì qiān líng yī",
+      "lessonId": 7,
+      "usage": [
+        "grammar"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Yì qiān líng yī. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-4b2b95fd1ab367de",
+      "file": "l7-4b2b95fd1ab367de.mp3",
+      "input": "一块七毛五",
+      "expectedPinyin": "Yí kuài qī máo wǔ",
+      "lessonId": 7,
+      "usage": [
+        "grammar"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Yí kuài qī máo wǔ. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-28cf0b67c2823742",
+      "file": "l7-28cf0b67c2823742.mp3",
+      "input": "一百零五",
+      "expectedPinyin": "Yì bǎi líng wǔ",
+      "lessonId": 7,
+      "usage": [
+        "grammar"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Yì bǎi líng wǔ. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-fa5e50f829a9fd4a",
+      "file": "l7-fa5e50f829a9fd4a.mp3",
+      "input": "三元五角五分。",
+      "expectedPinyin": "Sān yuán wǔ jiǎo wǔ fēn.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Sān yuán wǔ jiǎo wǔ fēn.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-7ecfe2cdda6d5f0e",
+      "file": "l7-7ecfe2cdda6d5f0e.mp3",
+      "input": "三十块两斤。",
+      "expectedPinyin": "Sānshí kuài liǎng jīn.",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Sānshí kuài liǎng jīn.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-528aa944bcff93db",
+      "file": "l7-528aa944bcff93db.mp3",
+      "input": "三百九十九块。",
+      "expectedPinyin": "Sānbǎi jiǔshíjiǔ kuài.",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase,grammar"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Sānbǎi jiǔshíjiǔ kuài.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-20b9918a3e97a268",
+      "file": "l7-20b9918a3e97a268.mp3",
+      "input": "不好意思，现在不打折。",
+      "expectedPinyin": "Bù hǎoyìsi, xiànzài bù dǎzhé.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,dialogue,phrase,workbook_model",
+        "workbook_fragment"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Bù hǎoyìsi, xiànzài bù dǎzhé.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-74441fa58d741f06",
+      "file": "l7-74441fa58d741f06.mp3",
+      "input": "不要了，谢谢。给您钱。",
+      "expectedPinyin": "Bú yào le, xièxie. Gěi nín qián.",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Bú yào le, xièxie. Gěi nín qián.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-1713b054a581210c",
+      "file": "l7-1713b054a581210c.mp3",
+      "input": "不贵，我的草莓好吃。您可以尝一下。",
+      "expectedPinyin": "Bú guì, wǒ de cǎoméi hǎochī. Nín kěyǐ cháng yíxià.",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Bú guì, wǒ de cǎoméi hǎochī. Nín kěyǐ cháng yíxià.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-08bfb40e5542bb65",
+      "file": "l7-08bfb40e5542bb65.mp3",
+      "input": "不错",
+      "expectedPinyin": "búcuò",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: búcuò. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-421bc63860306be9",
+      "file": "l7-421bc63860306be9.mp3",
+      "input": "且",
+      "expectedPinyin": "qiě",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: qiě. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-5f3c2890aa2ac345",
+      "file": "l7-5f3c2890aa2ac345.mp3",
+      "input": "两千一百零九",
+      "expectedPinyin": "Liǎng qiān yì bǎi líng jiǔ",
+      "lessonId": 7,
+      "usage": [
+        "grammar"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Liǎng qiān yì bǎi líng jiǔ. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-6e36dba3c65c44c5",
+      "file": "l7-6e36dba3c65c44c5.mp3",
+      "input": "两块二",
+      "expectedPinyin": "Liǎng kuài èr",
+      "lessonId": 7,
+      "usage": [
+        "grammar"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Liǎng kuài èr. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-a8360bba167463a2",
+      "file": "l7-a8360bba167463a2.mp3",
+      "input": "为",
+      "expectedPinyin": "wéi",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：wéi。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "speechInput": "围。",
+      "voice": "cedar",
+      "standaloneInstructions": "Language: Mandarin Chinese. Native Chinese pronunciation teacher. Read this Chinese character exactly once, clearly and naturally. Pronunciation in pinyin: wéi. Say only the Chinese syllable."
+    },
+    {
+      "id": "l7-7366d823023b58f8",
+      "file": "l7-7366d823023b58f8.mp3",
+      "input": "九千九百九十九",
+      "expectedPinyin": "Jiǔ qiān jiǔ bǎi jiǔ shí jiǔ",
+      "lessonId": 7,
+      "usage": [
+        "grammar"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Jiǔ qiān jiǔ bǎi jiǔ shí jiǔ. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-75c5c0254daf3488",
+      "file": "l7-75c5c0254daf3488.mp3",
+      "input": "买",
+      "expectedPinyin": "mǎi",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary,hanzi",
+        "listening_practice",
+        "construction_token"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: mǎi. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-d4987112d5e986f9",
+      "file": "l7-d4987112d5e986f9.mp3",
+      "input": "五块五一斤。",
+      "expectedPinyin": "Wǔ kuài wǔ yì jīn.",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase,grammar"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǔ kuài wǔ yì jīn.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-a7eb27b1f1d1028b",
+      "file": "l7-a7eb27b1f1d1028b.mp3",
+      "input": "五毛是一元的一半。",
+      "expectedPinyin": "Wǔ máo shì yì yuán de yíbàn.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǔ máo shì yì yuán de yíbàn.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-ac1ee77b14987934",
+      "file": "l7-ac1ee77b14987934.mp3",
+      "input": "些",
+      "expectedPinyin": "xiē",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary,hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: xiē. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-bedf103a26ff75c8",
+      "file": "l7-bedf103a26ff75c8.mp3",
+      "input": "人民币",
+      "expectedPinyin": "rénmínbì",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: rénmínbì. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-326ca8dabb73f616",
+      "file": "l7-326ca8dabb73f616.mp3",
+      "input": "仔",
+      "expectedPinyin": "zǎi",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：zǎi。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "speechInput": "崽。",
+      "voice": "cedar",
+      "standaloneInstructions": "Language: Mandarin Chinese. Native Chinese pronunciation teacher. Read this Chinese character exactly once, clearly and naturally. Pronunciation in pinyin: zǎi. Say only the Chinese syllable."
+    },
+    {
+      "id": "l7-32c86d054ecbe788",
+      "file": "l7-32c86d054ecbe788.mp3",
+      "input": "件",
+      "expectedPinyin": "jiàn",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary,hanzi",
+        "workbook_fragment",
+        "construction_token"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：jiàn。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-9faa1cf362f7d702",
+      "file": "l7-9faa1cf362f7d702.mp3",
+      "input": "价",
+      "expectedPinyin": "jià",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: jià. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-e4922d870577c352",
+      "file": "l7-e4922d870577c352.mp3",
+      "input": "你想不想看电影？",
+      "expectedPinyin": "Nǐ xiǎng bu xiǎng kàn diànyǐng?",
+      "lessonId": 7,
+      "usage": [
+        "grammar"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Nǐ xiǎng bu xiǎng kàn diànyǐng?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-1afb4a61ca04e83e",
+      "file": "l7-1afb4a61ca04e83e.mp3",
+      "input": "便",
+      "expectedPinyin": "pián",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：pián。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "speechInput": "骈。",
+      "voice": "cedar",
+      "standaloneInstructions": "Language: Mandarin Chinese. Native Chinese pronunciation teacher. Read this Chinese character exactly once, clearly and naturally. Pronunciation in pinyin: pián. Say only the Chinese syllable."
+    },
+    {
+      "id": "l7-f4ab22af9ec78ef3",
+      "file": "l7-f4ab22af9ec78ef3.mp3",
+      "input": "便宜",
+      "expectedPinyin": "piányi",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary",
+        "workbook_fragment",
+        "construction_token"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: piányi. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-20136177bcd462c8",
+      "file": "l7-20136177bcd462c8.mp3",
+      "input": "便宜一点儿吧。",
+      "expectedPinyin": "Piányi yìdiǎnr ba.",
+      "lessonId": 7,
+      "usage": [
+        "workbook_model"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Piányi yìdiǎnr ba.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-04b1122145bb723c",
+      "file": "l7-04b1122145bb723c.mp3",
+      "input": "便宜点儿吧，十四块一斤，好吗？",
+      "expectedPinyin": "Piányi diǎnr ba, shísì kuài yì jīn, hǎo ma?",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：Piányi diǎnr ba, shísì kuài yì jīn, hǎo ma?。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-ecdf8117ad4d4da9",
+      "file": "l7-ecdf8117ad4d4da9.mp3",
+      "input": "便宜点儿吧。",
+      "expectedPinyin": "Piányi diǎnr ba.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase,grammar"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Piányi diǎnr ba.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-0873ff6602865546",
+      "file": "l7-0873ff6602865546.mp3",
+      "input": "元",
+      "expectedPinyin": "yuán",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary,hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: yuán. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-aec8a641c6e9ac15",
+      "file": "l7-aec8a641c6e9ac15.mp3",
+      "input": "先生，您的汉语真好。",
+      "expectedPinyin": "Xiānsheng, nín de Hànyǔ zhēn hǎo.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,dialogue,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Xiānsheng, nín de Hànyǔ zhēn hǎo.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-0f662d937b02e29a",
+      "file": "l7-0f662d937b02e29a.mp3",
+      "input": "六十九角是六元九角。",
+      "expectedPinyin": "Liùshíjiǔ jiǎo shì liù yuán jiǔ jiǎo.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Liùshíjiǔ jiǎo shì liù yuán jiǔ jiǎo.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-8befd15e95eef119",
+      "file": "l7-8befd15e95eef119.mp3",
+      "input": "刷",
+      "expectedPinyin": "shuā",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: shuā. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-dbab783e4d56f35c",
+      "file": "l7-dbab783e4d56f35c.mp3",
+      "input": "刷卡",
+      "expectedPinyin": "shuākǎ",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary",
+        "construction_token"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: shuākǎ. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-d39052a65689eac0",
+      "file": "l7-d39052a65689eac0.mp3",
+      "input": "十六块一斤。",
+      "expectedPinyin": "Shíliù kuài yì jīn.",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Shíliù kuài yì jīn.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-c0d0e2d7c05049a9",
+      "file": "l7-c0d0e2d7c05049a9.mp3",
+      "input": "卖",
+      "expectedPinyin": "mài",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary,hanzi",
+        "construction_token"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: mài. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-ea89951e2392b1b4",
+      "file": "l7-ea89951e2392b1b4.mp3",
+      "input": "卡",
+      "expectedPinyin": "kǎ",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary,hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: kǎ. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-ed884f740998ceae",
+      "file": "l7-ed884f740998ceae.mp3",
+      "input": "可以便宜一点儿吗？",
+      "expectedPinyin": "Kěyǐ piányi yìdiǎnr ma?",
+      "lessonId": 7,
+      "usage": [
+        "workbook_model"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：Kěyǐ piányi yìdiǎnr ma?。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-ca6f2c49ff725229",
+      "file": "l7-ca6f2c49ff725229.mp3",
+      "input": "可以刷卡吗？",
+      "expectedPinyin": "Kěyǐ shuākǎ ma?",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,dialogue,phrase,grammar"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Kěyǐ shuākǎ ma?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-6658e078f9c049fe",
+      "file": "l7-6658e078f9c049fe.mp3",
+      "input": "可以打折吗？",
+      "expectedPinyin": "Kěyǐ dǎzhé ma?",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,dialogue,phrase,grammar",
+        "workbook_fragment"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Kěyǐ dǎzhé ma?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-427be2682bd064bd",
+      "file": "l7-427be2682bd064bd.mp3",
+      "input": "可以给我打九折。",
+      "expectedPinyin": "Kěyǐ gěi wǒ dǎ jiǔ zhé.",
+      "lessonId": 7,
+      "usage": [
+        "grammar"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Kěyǐ gěi wǒ dǎ jiǔ zhé.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-e60c1842a37abc44",
+      "file": "l7-e60c1842a37abc44.mp3",
+      "input": "合",
+      "expectedPinyin": "hé",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: hé. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-1fec10f3d312af4f",
+      "file": "l7-1fec10f3d312af4f.mp3",
+      "input": "合适",
+      "expectedPinyin": "héshì",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary",
+        "listening_practice"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: héshì. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-7426a80fb817971e",
+      "file": "l7-7426a80fb817971e.mp3",
+      "input": "吸",
+      "expectedPinyin": "xī",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: xī. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-307742daf7798c76",
+      "file": "l7-307742daf7798c76.mp3",
+      "input": "吸烟",
+      "expectedPinyin": "xī yān",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: xī yān. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-e5934fed8973be3c",
+      "file": "l7-e5934fed8973be3c.mp3",
+      "input": "员",
+      "expectedPinyin": "yuán",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary,hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: yuán. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-08a61690ef72fabe",
+      "file": "l7-08a61690ef72fabe.mp3",
+      "input": "呼",
+      "expectedPinyin": "hū",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: hū. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-038484c6b535d3ba",
+      "file": "l7-038484c6b535d3ba.mp3",
+      "input": "哪里，我的汉语不太好。",
+      "expectedPinyin": "Nǎli, wǒ de Hànyǔ bú tài hǎo.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase,workbook_model"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Nǎli, wǒ de Hànyǔ bú tài hǎo.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-b6881d39515929e9",
+      "file": "l7-b6881d39515929e9.mp3",
+      "input": "哪里，我的汉语不太好。苹果多少钱一斤？",
+      "expectedPinyin": "Nǎli, wǒ de Hànyǔ bú tài hǎo. Píngguǒ duōshao qián yì jīn?",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Nǎli, wǒ de Hànyǔ bú tài hǎo. Píngguǒ duōshao qián yì jīn?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-895f4c9bdcf3cdd0",
+      "file": "l7-895f4c9bdcf3cdd0.mp3",
+      "input": "哪里",
+      "expectedPinyin": "nǎli",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary,workbook_fragment",
+        "workbook_fragment"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: nǎli. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-0c71a2ddcf5fdc5c",
+      "file": "l7-0c71a2ddcf5fdc5c.mp3",
+      "input": "售",
+      "expectedPinyin": "shòu",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: shòu. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-8da78923679d5bf4",
+      "file": "l7-8da78923679d5bf4.mp3",
+      "input": "售货员",
+      "expectedPinyin": "shòuhuòyuán",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: shòuhuòyuán. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-21040e149e3b2dda",
+      "file": "l7-21040e149e3b2dda.mp3",
+      "input": "售货员给我一件衬衫。",
+      "expectedPinyin": "Shòuhuòyuán gěi wǒ yí jiàn chènshān.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Shòuhuòyuán gěi wǒ yí jiàn chènshān.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-e719cc0e933fc832",
+      "file": "l7-e719cc0e933fc832.mp3",
+      "input": "块",
+      "expectedPinyin": "kuài",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary,hanzi",
+        "construction_token"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: kuài. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-1d2f6221ed5bb552",
+      "file": "l7-1d2f6221ed5bb552.mp3",
+      "input": "大号",
+      "expectedPinyin": "dàhào",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary",
+        "workbook_fragment",
+        "construction_token"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: dàhào. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-e6921dc9b41f1965",
+      "file": "l7-e6921dc9b41f1965.mp3",
+      "input": "太贵了！",
+      "expectedPinyin": "Tài guì le!",
+      "lessonId": 7,
+      "usage": [
+        "workbook_model"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Tài guì le!. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-f7e627df42798c93",
+      "file": "l7-f7e627df42798c93.mp3",
+      "input": "她是售货员。",
+      "expectedPinyin": "Tā shì shòuhuòyuán.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Tā shì shòuhuòyuán.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-97fce2439bfe36bc",
+      "file": "l7-97fce2439bfe36bc.mp3",
+      "input": "她穿白色的衬衫。",
+      "expectedPinyin": "Tā chuān báisè de chènshān.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Tā chuān báisè de chènshān.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-09c22500414d1683",
+      "file": "l7-09c22500414d1683.mp3",
+      "input": "好，您给我六十，我找您八块。好吃您再来。",
+      "expectedPinyin": "Hǎo, nín gěi wǒ liùshí, wǒ zhǎo nín bā kuài. Hǎochī nín zài lái.",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Hǎo, nín gěi wǒ liùshí, wǒ zhǎo nín bā kuài. Hǎochī nín zài lái.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-f884f2b30d0b2038",
+      "file": "l7-f884f2b30d0b2038.mp3",
+      "input": "好吧。我要两斤草莓和四斤苹果。",
+      "expectedPinyin": "Hǎo ba. Wǒ yào liǎng jīn cǎoméi hé sì jīn píngguǒ.",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Hǎo ba. Wǒ yào liǎng jīn cǎoméi hé sì jīn píngguǒ.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-5c5f17fe42520c8a",
+      "file": "l7-5c5f17fe42520c8a.mp3",
+      "input": "宜",
+      "expectedPinyin": "yí",
+      "lessonId": 7,
+      "usage": [
+        "hanzi",
+        "workbook_fragment"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: yí. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-539c155ebc81a3ab",
+      "file": "l7-539c155ebc81a3ab.mp3",
+      "input": "宝",
+      "expectedPinyin": "bǎo",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：bǎo。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-3b3b9a747ea5a528",
+      "file": "l7-3b3b9a747ea5a528.mp3",
+      "input": "小号",
+      "expectedPinyin": "xiǎohào",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: xiǎohào. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-9f145363a50adc61",
+      "file": "l7-9f145363a50adc61.mp3",
+      "input": "尝",
+      "expectedPinyin": "cháng",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary,hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: cháng. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-07013e082d7ae29c",
+      "file": "l7-07013e082d7ae29c.mp3",
+      "input": "屯",
+      "expectedPinyin": "tún",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: tún. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-b867023bf9cfd2ef",
+      "file": "l7-b867023bf9cfd2ef.mp3",
+      "input": "左边有大号的衬衫。",
+      "expectedPinyin": "Zuǒbian yǒu dàhào de chènshān.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zuǒbian yǒu dàhào de chènshān.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-9b5e35d5b6db354b",
+      "file": "l7-9b5e35d5b6db354b.mp3",
+      "input": "币",
+      "expectedPinyin": "bì",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：bì。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "speechInput": "必。",
+      "voice": "cedar",
+      "standaloneInstructions": "Language: Mandarin Chinese. Native Chinese pronunciation teacher. Read this Chinese character exactly once, clearly and naturally. Pronunciation in pinyin: bì. Say only the Chinese syllable."
+    },
+    {
+      "id": "l7-99c7709b7470f5ae",
+      "file": "l7-99c7709b7470f5ae.mp3",
+      "input": "当",
+      "expectedPinyin": "dāng",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：dāng。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-363a98bc0f7e3c2d",
+      "file": "l7-363a98bc0f7e3c2d.mp3",
+      "input": "当然",
+      "expectedPinyin": "dāngrán",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary",
+        "construction_token"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: dāngrán. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-d87aa49f7de0bfde",
+      "file": "l7-d87aa49f7de0bfde.mp3",
+      "input": "当然可以。",
+      "expectedPinyin": "Dāngrán kěyǐ.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,dialogue,phrase,grammar"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Dāngrán kěyǐ.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-8d8d675e42f8674a",
+      "file": "l7-8d8d675e42f8674a.mp3",
+      "input": "很好，我要这条。我还想买一件羽绒服。",
+      "expectedPinyin": "Hěn hǎo, wǒ yào zhè tiáo. Wǒ hái xiǎng mǎi yí jiàn yǔróngfú.",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Hěn hǎo, wǒ yào zhè tiáo. Wǒ hái xiǎng mǎi yí jiàn yǔróngfú.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-159184da1a97d38e",
+      "file": "l7-159184da1a97d38e.mp3",
+      "input": "怎么",
+      "expectedPinyin": "zěnme",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary",
+        "listening_practice",
+        "construction_token"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: zěnme. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-85638de6c656a3dd",
+      "file": "l7-85638de6c656a3dd.mp3",
+      "input": "恤",
+      "expectedPinyin": "xù",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：xù。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "speechInput": "序。",
+      "voice": "cedar",
+      "standaloneInstructions": "Language: Mandarin Chinese. Native Chinese pronunciation teacher. Read this Chinese character exactly once, clearly and naturally. Pronunciation in pinyin: xù. Say only the Chinese syllable."
+    },
+    {
+      "id": "l7-80994610e58b6486",
+      "file": "l7-80994610e58b6486.mp3",
+      "input": "您再试一下这件吧。",
+      "expectedPinyin": "Nín zài shì yíxià zhè jiàn ba.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Nín zài shì yíxià zhè jiàn ba.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-a974081454b93e26",
+      "file": "l7-a974081454b93e26.mp3",
+      "input": "您卖什么水果？",
+      "expectedPinyin": "Nín mài shénme shuǐguǒ?",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：Nín mài shénme shuǐguǒ?。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-c9c421384f3278f2",
+      "file": "l7-c9c421384f3278f2.mp3",
+      "input": "您可以尝一下。",
+      "expectedPinyin": "Nín kěyǐ cháng yíxià.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Nín kěyǐ cháng yíxià.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-0801a2f31565517a",
+      "file": "l7-0801a2f31565517a.mp3",
+      "input": "您可以给我介绍一下吗？",
+      "expectedPinyin": "Nín kěyǐ gěi wǒ jièshào yíxià ma?",
+      "lessonId": 7,
+      "usage": [
+        "workbook_model"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Nín kěyǐ gěi wǒ jièshào yíxià ma?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-681237b959d8f5c6",
+      "file": "l7-681237b959d8f5c6.mp3",
+      "input": "您好，您要什么？",
+      "expectedPinyin": "Nín hǎo, nín yào shénme?",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Nín hǎo, nín yào shénme?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-cc96a3554b56b389",
+      "file": "l7-cc96a3554b56b389.mp3",
+      "input": "您好，这件衬衫多少钱？",
+      "expectedPinyin": "Nín hǎo, zhè jiàn chènshān duōshao qián?",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Nín hǎo, zhè jiàn chènshān duōshao qián?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-3577464bd39b7829",
+      "file": "l7-3577464bd39b7829.mp3",
+      "input": "您怎么称呼？",
+      "expectedPinyin": "Nín zěnme chēnghu?",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Nín zěnme chēnghu?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-282f6fcfe44e4643",
+      "file": "l7-282f6fcfe44e4643.mp3",
+      "input": "您的草莓真贵。",
+      "expectedPinyin": "Nín de cǎoméi zhēn guì.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,dialogue,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Nín de cǎoméi zhēn guì.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-e772f96ac451f577",
+      "file": "l7-e772f96ac451f577.mp3",
+      "input": "您看这件怎么样？",
+      "expectedPinyin": "Nín kàn zhè jiàn zěnmeyàng?",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Nín kàn zhè jiàn zěnmeyàng?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-d64e55a730338a0f",
+      "file": "l7-d64e55a730338a0f.mp3",
+      "input": "您看那件绿色的可以吗？",
+      "expectedPinyin": "Nín kàn nà jiàn lǜsè de kěyǐ ma?",
+      "lessonId": 7,
+      "usage": [
+        "workbook_model"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Nín kàn nà jiàn lǜsè de kěyǐ ma?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-40099f5072e7fa16",
+      "file": "l7-40099f5072e7fa16.mp3",
+      "input": "您给我六十，我找您八块。",
+      "expectedPinyin": "Nín gěi wǒ liùshí, wǒ zhǎo nín bā kuài.",
+      "lessonId": 7,
+      "usage": [
+        "phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Nín gěi wǒ liùshí, wǒ zhǎo nín bā kuài.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-4866c206744b018c",
+      "file": "l7-4866c206744b018c.mp3",
+      "input": "我不喜欢黑色，有绿色的羽绒服吗？",
+      "expectedPinyin": "Wǒ bù xǐhuan hēisè, yǒu lǜsè de yǔróngfú ma?",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ bù xǐhuan hēisè, yǒu lǜsè de yǔróngfú ma?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-02e40415d210bf24",
+      "file": "l7-02e40415d210bf24.mp3",
+      "input": "我不喜欢黑色。",
+      "expectedPinyin": "Wǒ bù xǐhuan hēisè.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ bù xǐhuan hēisè.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-17718216f72ad336",
+      "file": "l7-17718216f72ad336.mp3",
+      "input": "我不想去上海。",
+      "expectedPinyin": "Wǒ bù xiǎng qù Shànghǎi.",
+      "lessonId": 7,
+      "usage": [
+        "grammar"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ bù xiǎng qù Shànghǎi.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-464ae074e4436523",
+      "file": "l7-464ae074e4436523.mp3",
+      "input": "我买两个橙子。",
+      "expectedPinyin": "Wǒ mǎi liǎng ge chéngzi.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ mǎi liǎng ge chéngzi.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-16db3ebbca5bd4d9",
+      "file": "l7-16db3ebbca5bd4d9.mp3",
+      "input": "我买两斤草莓。",
+      "expectedPinyin": "Wǒ mǎi liǎng jīn cǎoméi.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ mǎi liǎng jīn cǎoméi.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-fc060c8a61f0a38d",
+      "file": "l7-fc060c8a61f0a38d.mp3",
+      "input": "我可以试一下吗？",
+      "expectedPinyin": "Wǒ kěyǐ shì yíxià ma?",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,dialogue,phrase,grammar"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ kěyǐ shì yíxià ma?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-e5885e6a76e5b88f",
+      "file": "l7-e5885e6a76e5b88f.mp3",
+      "input": "我喜欢吃香蕉。",
+      "expectedPinyin": "Wǒ xǐhuan chī xiāngjiāo.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ xǐhuan chī xiāngjiāo.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-cd88d7b3447852ad",
+      "file": "l7-cd88d7b3447852ad.mp3",
+      "input": "我喜欢白色的衬衫。",
+      "expectedPinyin": "Wǒ xǐhuan báisè de chènshān.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ xǐhuan báisè de chènshān.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-65f3ea190f3e4fb9",
+      "file": "l7-65f3ea190f3e4fb9.mp3",
+      "input": "我想买一条裙子。",
+      "expectedPinyin": "Wǒ xiǎng mǎi yì tiáo qúnzi.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ xiǎng mǎi yì tiáo qúnzi.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-d7c4a25fb7cd461d",
+      "file": "l7-d7c4a25fb7cd461d.mp3",
+      "input": "我想买一点儿水果。",
+      "expectedPinyin": "Wǒ xiǎng mǎi yìdiǎnr shuǐguǒ.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ xiǎng mǎi yìdiǎnr shuǐguǒ.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-27bd26d21c51f7a6",
+      "file": "l7-27bd26d21c51f7a6.mp3",
+      "input": "我想买些水果。",
+      "expectedPinyin": "Wǒ xiǎng mǎi xiē shuǐguǒ.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ xiǎng mǎi xiē shuǐguǒ.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-f1e7417a716ca7d5",
+      "file": "l7-f1e7417a716ca7d5.mp3",
+      "input": "我想买小号的衬衫。",
+      "expectedPinyin": "Wǒ xiǎng mǎi xiǎohào de chènshān.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ xiǎng mǎi xiǎohào de chènshān.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-f11e1ed95905c33d",
+      "file": "l7-f11e1ed95905c33d.mp3",
+      "input": "我想买点儿苹果。",
+      "expectedPinyin": "Wǒ xiǎng mǎi diǎnr píngguǒ.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,dialogue,phrase,grammar"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：Wǒ xiǎng mǎi diǎnr píngguǒ.。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-fa6fcd5fd3030e2f",
+      "file": "l7-fa6fcd5fd3030e2f.mp3",
+      "input": "我想买点儿草莓。",
+      "expectedPinyin": "Wǒ xiǎng mǎi diǎnr cǎoméi.",
+      "lessonId": 7,
+      "usage": [
+        "workbook_model",
+        "workbook_fragment"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：Wǒ xiǎng mǎi diǎnr cǎoméi.。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-4225f51302738583",
+      "file": "l7-4225f51302738583.mp3",
+      "input": "我想买红色的裙子。",
+      "expectedPinyin": "Wǒ xiǎng mǎi hóngsè de qúnzi.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ xiǎng mǎi hóngsè de qúnzi.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-9a3b9bd7d76cb8c8",
+      "file": "l7-9a3b9bd7d76cb8c8.mp3",
+      "input": "我想试一下这件衬衫。",
+      "expectedPinyin": "Wǒ xiǎng shì yíxià zhè jiàn chènshān.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ xiǎng shì yíxià zhè jiàn chènshān.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-65af38dd7552f90d",
+      "file": "l7-65af38dd7552f90d.mp3",
+      "input": "我找您八块。",
+      "expectedPinyin": "Wǒ zhǎo nín bā kuài.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase,grammar"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ zhǎo nín bā kuài.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-19fb2f5ccc574e6b",
+      "file": "l7-19fb2f5ccc574e6b.mp3",
+      "input": "我有银行卡。",
+      "expectedPinyin": "Wǒ yǒu yínhángkǎ.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ yǒu yínhángkǎ.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-2efff465aae86cc4",
+      "file": "l7-2efff465aae86cc4.mp3",
+      "input": "我给你十块。",
+      "expectedPinyin": "Wǒ gěi nǐ shí kuài.",
+      "lessonId": 7,
+      "usage": [
+        "workbook_model"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ gěi nǐ shí kuài.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-49960bed55e61bed",
+      "file": "l7-49960bed55e61bed.mp3",
+      "input": "我给您六十块。",
+      "expectedPinyin": "Wǒ gěi nín liùshí kuài.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase,grammar"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ gěi nín liùshí kuài.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-3236700990c383f6",
+      "file": "l7-3236700990c383f6.mp3",
+      "input": "我给您钱。",
+      "expectedPinyin": "Wǒ gěi nín qián.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ gěi nín qián.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-db5daec3c8f0310e",
+      "file": "l7-db5daec3c8f0310e.mp3",
+      "input": "我要两斤苹果。",
+      "expectedPinyin": "Wǒ yào liǎng jīn píngguǒ.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ yào liǎng jīn píngguǒ.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-1d6db7ce7a28317f",
+      "file": "l7-1d6db7ce7a28317f.mp3",
+      "input": "我要两斤草莓和四斤苹果。",
+      "expectedPinyin": "Wǒ yào liǎng jīn cǎoméi hé sì jīn píngguǒ.",
+      "lessonId": 7,
+      "usage": [
+        "phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ yào liǎng jīn cǎoméi hé sì jīn píngguǒ.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-63edd3b5821848aa",
+      "file": "l7-63edd3b5821848aa.mp3",
+      "input": "我要两斤葡萄。",
+      "expectedPinyin": "Wǒ yào liǎng jīn pútao.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ yào liǎng jīn pútao.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-812d011a7d2775d7",
+      "file": "l7-812d011a7d2775d7.mp3",
+      "input": "我要这件衬衫。",
+      "expectedPinyin": "Wǒ yào zhè jiàn chènshān.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ yào zhè jiàn chènshān.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-a18f6950a7131ad8",
+      "file": "l7-a18f6950a7131ad8.mp3",
+      "input": "我还想买一件羽绒服。",
+      "expectedPinyin": "Wǒ hái xiǎng mǎi yí jiàn yǔróngfú.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ hái xiǎng mǎi yí jiàn yǔróngfú.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-0e1122a39598ef90",
+      "file": "l7-0e1122a39598ef90.mp3",
+      "input": "我问您一个问题。",
+      "expectedPinyin": "Wǒ wèn nín yí ge wèntí.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase,grammar"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ wèn nín yí ge wèntí.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-9839e7f20a1ea37d",
+      "file": "l7-9839e7f20a1ea37d.mp3",
+      "input": "所",
+      "expectedPinyin": "suǒ",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：suǒ。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-c8775c152eb31b5e",
+      "file": "l7-c8775c152eb31b5e.mp3",
+      "input": "打",
+      "expectedPinyin": "dǎ",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: dǎ. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-05ea92ad869df972",
+      "file": "l7-05ea92ad869df972.mp3",
+      "input": "打折",
+      "expectedPinyin": "dǎzhé",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary",
+        "construction_token"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: dǎzhé. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-c203a0e9d6d6cd66",
+      "file": "l7-c203a0e9d6d6cd66.mp3",
+      "input": "找钱",
+      "expectedPinyin": "zhǎo qián",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: zhǎo qián. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-601cf06f0df06a8c",
+      "file": "l7-601cf06f0df06a8c.mp3",
+      "input": "折",
+      "expectedPinyin": "zhé",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：zhé。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-83ddbb16ab7d091e",
+      "file": "l7-83ddbb16ab7d091e.mp3",
+      "input": "拍",
+      "expectedPinyin": "pāi",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: pāi. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-7fcd2c0fe21bb169",
+      "file": "l7-7fcd2c0fe21bb169.mp3",
+      "input": "拍照",
+      "expectedPinyin": "pāizhào",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: pāizhào. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-9adfcc66e6d276da",
+      "file": "l7-9adfcc66e6d276da.mp3",
+      "input": "斤",
+      "expectedPinyin": "jīn",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary,hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: jīn. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-08deee2d424e162d",
+      "file": "l7-08deee2d424e162d.mp3",
+      "input": "有，左边有大号的衬衫。您再试一下这件吧。",
+      "expectedPinyin": "Yǒu, zuǒbian yǒu dàhào de chènshān. Nín zài shì yíxià zhè jiàn ba.",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Yǒu, zuǒbian yǒu dàhào de chènshān. Nín zài shì yíxià zhè jiàn ba.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-92685fbd8157f9bf",
+      "file": "l7-92685fbd8157f9bf.mp3",
+      "input": "有，您可以看一下这件。",
+      "expectedPinyin": "Yǒu, nín kěyǐ kàn yíxià zhè jiàn.",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Yǒu, nín kěyǐ kàn yíxià zhè jiàn.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-db23bcd125a18218",
+      "file": "l7-db23bcd125a18218.mp3",
+      "input": "有，这条牛仔裤怎么样？",
+      "expectedPinyin": "Yǒu, zhè tiáo niúzǎikù zěnmeyàng?",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "请用标准普通话读这句话。第一句“有”读 yǒu，第三声，表示有货。两句之间稍停顿。只读文字，不读拼音或解释。",
+      "speechInput": "有。这条牛仔裤怎么样？"
+    },
+    {
+      "id": "l7-18b04d2b498c5359",
+      "file": "l7-18b04d2b498c5359.mp3",
+      "input": "有大号的衬衫吗？",
+      "expectedPinyin": "Yǒu dàhào de chènshān ma?",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Yǒu dàhào de chènshān ma?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-81451b63fe52801a",
+      "file": "l7-81451b63fe52801a.mp3",
+      "input": "有没有牛仔裤？",
+      "expectedPinyin": "Yǒu méiyǒu niúzǎikù?",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Yǒu méiyǒu niúzǎikù?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-93e32f2c30c38319",
+      "file": "l7-93e32f2c30c38319.mp3",
+      "input": "有绿色的羽绒服吗？",
+      "expectedPinyin": "Yǒu lǜsè de yǔróngfú ma?",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Yǒu lǜsè de yǔróngfú ma?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-d10d2670063d2eb2",
+      "file": "l7-d10d2670063d2eb2.mp3",
+      "input": "服",
+      "expectedPinyin": "fú",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：fú。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-1cfa161b1279c13c",
+      "file": "l7-1cfa161b1279c13c.mp3",
+      "input": "板",
+      "expectedPinyin": "bǎn",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: bǎn. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-f78a37e13fb0eeee",
+      "file": "l7-f78a37e13fb0eeee.mp3",
+      "input": "林娜想去老北京的胡同。",
+      "expectedPinyin": "Lín Nà xiǎng qù lǎo Běijīng de hútòng.",
+      "lessonId": 7,
+      "usage": [
+        "workbook_model"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Lín Nà xiǎng qù lǎo Běijīng de hútòng.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-7e33135cd2fb9f73",
+      "file": "l7-7e33135cd2fb9f73.mp3",
+      "input": "桃",
+      "expectedPinyin": "táo",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：táo。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-9742babd3b7c1530",
+      "file": "l7-9742babd3b7c1530.mp3",
+      "input": "樱",
+      "expectedPinyin": "yīng",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：yīng。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-d606f5e5d54a910f",
+      "file": "l7-d606f5e5d54a910f.mp3",
+      "input": "樱桃",
+      "expectedPinyin": "yīngtao",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: yīngtao. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-650c669d797fc7cd",
+      "file": "l7-650c669d797fc7cd.mp3",
+      "input": "橙",
+      "expectedPinyin": "chéng",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: chéng. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-77313f774375e7ae",
+      "file": "l7-77313f774375e7ae.mp3",
+      "input": "橙子",
+      "expectedPinyin": "chéngzi",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: chéngzi. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-2142dba300f3df1f",
+      "file": "l7-2142dba300f3df1f.mp3",
+      "input": "毛",
+      "expectedPinyin": "máo",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary,hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: máo. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-e3bada5e1926c911",
+      "file": "l7-e3bada5e1926c911.mp3",
+      "input": "民",
+      "expectedPinyin": "mín",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：mín。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-082e9b26a02c05c7",
+      "file": "l7-082e9b26a02c05c7.mp3",
+      "input": "水果",
+      "expectedPinyin": "shuǐguǒ",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: shuǐguǒ. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-322185d815ecc935",
+      "file": "l7-322185d815ecc935.mp3",
+      "input": "没问题，明天我能来。",
+      "expectedPinyin": "Méi wèntí, míngtiān wǒ néng lái.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Méi wèntí, míngtiān wǒ néng lái.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-15bc9aeaf31b10a3",
+      "file": "l7-15bc9aeaf31b10a3.mp3",
+      "input": "没问题。",
+      "expectedPinyin": "Méi wèntí.",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase",
+        "vocabulary",
+        "listening_practice"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Méi wèntí.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-8a7cb2a12eca02b8",
+      "file": "l7-8a7cb2a12eca02b8.mp3",
+      "input": "烟",
+      "expectedPinyin": "yān",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: yān. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-dd5a5d49c317cbbb",
+      "file": "l7-dd5a5d49c317cbbb.mp3",
+      "input": "然",
+      "expectedPinyin": "rán",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: rán. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-4a388cfd635ac40c",
+      "file": "l7-4a388cfd635ac40c.mp3",
+      "input": "牛仔裤",
+      "expectedPinyin": "niúzǎikù",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary",
+        "listening_practice"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: niúzǎikù. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-3c1cc310c31becc2",
+      "file": "l7-3c1cc310c31becc2.mp3",
+      "input": "白色",
+      "expectedPinyin": "báisè",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: báisè. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-cc43bec1bacd1ce3",
+      "file": "l7-cc43bec1bacd1ce3.mp3",
+      "input": "称",
+      "expectedPinyin": "chēng",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: chēng. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-e3ee1f40044fd310",
+      "file": "l7-e3ee1f40044fd310.mp3",
+      "input": "称呼",
+      "expectedPinyin": "chēnghu",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：chēnghu。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-243015ed553742b9",
+      "file": "l7-243015ed553742b9.mp3",
+      "input": "穿",
+      "expectedPinyin": "chuān",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary,hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: chuān. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-3a0b022d3e4bd05f",
+      "file": "l7-3a0b022d3e4bd05f.mp3",
+      "input": "红",
+      "expectedPinyin": "hóng",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: hóng. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-2f0bb1f4bf7a51b2",
+      "file": "l7-2f0bb1f4bf7a51b2.mp3",
+      "input": "红色",
+      "expectedPinyin": "hóngsè",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: hóngsè. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-6f189494014fe471",
+      "file": "l7-6f189494014fe471.mp3",
+      "input": "绒",
+      "expectedPinyin": "róng",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: róng. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-7491c99454b1c155",
+      "file": "l7-7491c99454b1c155.mp3",
+      "input": "绿",
+      "expectedPinyin": "lǜ",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary,hanzi"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：lǜ。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "speechInput": "绿。",
+      "voice": "cedar",
+      "standaloneInstructions": "Language: Mandarin Chinese. Native Chinese pronunciation teacher. Read this Chinese character exactly once, clearly and naturally. Pronunciation in pinyin: lǜ. Say only the Chinese syllable."
+    },
+    {
+      "id": "l7-0ab7d327c881468d",
+      "file": "l7-0ab7d327c881468d.mp3",
+      "input": "绿色",
+      "expectedPinyin": "lǜsè",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: lǜsè. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-ccd79b9139850f1e",
+      "file": "l7-ccd79b9139850f1e.mp3",
+      "input": "羽",
+      "expectedPinyin": "yǔ",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：yǔ。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-c4ac0d14a2f5a474",
+      "file": "l7-c4ac0d14a2f5a474.mp3",
+      "input": "羽绒服",
+      "expectedPinyin": "yǔróngfú",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary",
+        "listening_practice"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: yǔróngfú. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-b68adeca9e72dc28",
+      "file": "l7-b68adeca9e72dc28.mp3",
+      "input": "老板，您好。",
+      "expectedPinyin": "Lǎobǎn, nín hǎo.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Lǎobǎn, nín hǎo.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-dbdad27047b5d7b6",
+      "file": "l7-dbdad27047b5d7b6.mp3",
+      "input": "老板",
+      "expectedPinyin": "lǎobǎn",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: lǎobǎn. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-af9a4706acd78cf0",
+      "file": "l7-af9a4706acd78cf0.mp3",
+      "input": "老板找钱。",
+      "expectedPinyin": "Lǎobǎn zhǎo qián.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Lǎobǎn zhǎo qián.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-3223d8d95f76dc5a",
+      "file": "l7-3223d8d95f76dc5a.mp3",
+      "input": "能",
+      "expectedPinyin": "néng",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: néng. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-bb8a542acb8e7db8",
+      "file": "l7-bb8a542acb8e7db8.mp3",
+      "input": "色",
+      "expectedPinyin": "sè",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: sè. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-e1a214896b74f1b0",
+      "file": "l7-e1a214896b74f1b0.mp3",
+      "input": "苹",
+      "expectedPinyin": "píng",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: píng. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-a0eebc90ec09bf4d",
+      "file": "l7-a0eebc90ec09bf4d.mp3",
+      "input": "苹果五块五一斤。",
+      "expectedPinyin": "Píngguǒ wǔ kuài wǔ yì jīn.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Píngguǒ wǔ kuài wǔ yì jīn.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-9b95a1d57fb60979",
+      "file": "l7-9b95a1d57fb60979.mp3",
+      "input": "苹果十块钱一斤。",
+      "expectedPinyin": "Píngguǒ shí kuài qián yì jīn.",
+      "lessonId": 7,
+      "usage": [
+        "workbook_model",
+        "workbook_fragment"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Píngguǒ shí kuài qián yì jīn.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-027cc1bc05cbadc2",
+      "file": "l7-027cc1bc05cbadc2.mp3",
+      "input": "苹果多少钱一斤？",
+      "expectedPinyin": "Píngguǒ duōshao qián yì jīn?",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase,grammar",
+        "workbook_fragment"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Píngguǒ duōshao qián yì jīn?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-0576b1b6993004c3",
+      "file": "l7-0576b1b6993004c3.mp3",
+      "input": "草莓",
+      "expectedPinyin": "cǎoméi",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary",
+        "construction_token"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: cǎoméi. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-533515735d7a7427",
+      "file": "l7-533515735d7a7427.mp3",
+      "input": "草莓怎么卖？",
+      "expectedPinyin": "Cǎoméi zěnme mài?",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,dialogue,phrase,workbook_model,grammar"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Cǎoméi zěnme mài?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-20fe6891a41757b6",
+      "file": "l7-20fe6891a41757b6.mp3",
+      "input": "莓",
+      "expectedPinyin": "méi",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: méi. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-24e859b0bd874248",
+      "file": "l7-24e859b0bd874248.mp3",
+      "input": "萄",
+      "expectedPinyin": "táo",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：táo。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-c5e7413291914538",
+      "file": "l7-c5e7413291914538.mp3",
+      "input": "葡",
+      "expectedPinyin": "pú",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：pú。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-a92cef4fedf54370",
+      "file": "l7-a92cef4fedf54370.mp3",
+      "input": "葡萄",
+      "expectedPinyin": "pútao",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: pútao. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-cf236976e666340c",
+      "file": "l7-cf236976e666340c.mp3",
+      "input": "蕉",
+      "expectedPinyin": "jiāo",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: jiāo. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-7a1b2d97993ba802",
+      "file": "l7-7a1b2d97993ba802.mp3",
+      "input": "衣",
+      "expectedPinyin": "yī",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: yī. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-bb366b27507df8b6",
+      "file": "l7-bb366b27507df8b6.mp3",
+      "input": "衣服",
+      "expectedPinyin": "yīfu",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary",
+        "workbook_fragment",
+        "construction_token"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: yīfu. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-fdb04f3fc3e502b6",
+      "file": "l7-fdb04f3fc3e502b6.mp3",
+      "input": "衫",
+      "expectedPinyin": "shān",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: shān. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-5533c60a820a2c09",
+      "file": "l7-5533c60a820a2c09.mp3",
+      "input": "衬",
+      "expectedPinyin": "chèn",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: chèn. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-e3909ae4052bd334",
+      "file": "l7-e3909ae4052bd334.mp3",
+      "input": "衬衫",
+      "expectedPinyin": "chènshān",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary",
+        "listening_practice",
+        "workbook_fragment",
+        "construction_token"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: chènshān. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-d53d62f060506588",
+      "file": "l7-d53d62f060506588.mp3",
+      "input": "衬衫三百九十九块，牛仔裤五百八十七块，羽绒服一千二百零五块，一共两千一百九十一块。",
+      "expectedPinyin": "Chènshān sānbǎi jiǔshíjiǔ kuài, niúzǎikù wǔbǎi bāshíqī kuài, yǔróngfú yìqiān èrbǎi líng wǔ kuài, yígòng liǎngqiān yìbǎi jiǔshíyī kuài.",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Chènshān sānbǎi jiǔshíjiǔ kuài, niúzǎikù wǔbǎi bāshíqī kuài, yǔróngfú yìqiān èrbǎi líng wǔ kuài, yígòng liǎngqiān yìbǎi jiǔshíyī kuài.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-e818435b35b83fe4",
+      "file": "l7-e818435b35b83fe4.mp3",
+      "input": "衬衫在左边。",
+      "expectedPinyin": "Chènshān zài zuǒbian.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Chènshān zài zuǒbian.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-683df5adb1ea63ce",
+      "file": "l7-683df5adb1ea63ce.mp3",
+      "input": "装",
+      "expectedPinyin": "zhuāng",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: zhuāng. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-f34a271f860444be",
+      "file": "l7-f34a271f860444be.mp3",
+      "input": "裙",
+      "expectedPinyin": "qún",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：qún。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-257280774034621a",
+      "file": "l7-257280774034621a.mp3",
+      "input": "裙子",
+      "expectedPinyin": "qúnzi",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: qúnzi. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-ea435ffb61f15828",
+      "file": "l7-ea435ffb61f15828.mp3",
+      "input": "裤",
+      "expectedPinyin": "kù",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: kù. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-d56be824109a33d6",
+      "file": "l7-d56be824109a33d6.mp3",
+      "input": "角",
+      "expectedPinyin": "jiǎo",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary,hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: jiǎo. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-8c67d739100f1b01",
+      "file": "l7-8c67d739100f1b01.mp3",
+      "input": "试",
+      "expectedPinyin": "shì",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary,hanzi",
+        "construction_token"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: shì. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-4a8b329c95cca1c3",
+      "file": "l7-4a8b329c95cca1c3.mp3",
+      "input": "货",
+      "expectedPinyin": "huò",
+      "lessonId": 7,
+      "usage": [
+        "hanzi",
+        "workbook_fragment"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: huò. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-1cbf0b1d195b60b8",
+      "file": "l7-1cbf0b1d195b60b8.mp3",
+      "input": "这个……我问您一个问题：这个汉语怎么说？",
+      "expectedPinyin": "Zhège… wǒ wèn nín yí ge wèntí: zhège Hànyǔ zěnme shuō?",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：Zhège… wǒ wèn nín yí ge wèntí: zhège Hànyǔ zěnme shuō?。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-c4bcd46d625d5079",
+      "file": "l7-c4bcd46d625d5079.mp3",
+      "input": "这个汉字怎么写？",
+      "expectedPinyin": "Zhège Hànzì zěnme xiě?",
+      "lessonId": 7,
+      "usage": [
+        "grammar"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhège Hànzì zěnme xiě?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-63a129fcf90df66c",
+      "file": "l7-63a129fcf90df66c.mp3",
+      "input": "这个汉语怎么说？",
+      "expectedPinyin": "Zhège Hànyǔ zěnme shuō?",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase,grammar",
+        "workbook_fragment"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhège Hànyǔ zěnme shuō?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-97707a380317c3ec",
+      "file": "l7-97707a380317c3ec.mp3",
+      "input": "这些衣服一共多少钱？",
+      "expectedPinyin": "Zhèxiē yīfu yígòng duōshao qián?",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase,workbook_model",
+        "workbook_fragment"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhèxiē yīfu yígòng duōshao qián?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-c9e30cac9b84c5cd",
+      "file": "l7-c9e30cac9b84c5cd.mp3",
+      "input": "这些衣服很合适。",
+      "expectedPinyin": "Zhèxiē yīfu hěn héshì.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhèxiē yīfu hěn héshì.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-bd20e11902d04e1e",
+      "file": "l7-bd20e11902d04e1e.mp3",
+      "input": "这件T恤九十九元。",
+      "expectedPinyin": "Zhè jiàn T xù jiǔshíjiǔ yuán.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè jiàn T xù jiǔshíjiǔ yuán.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-d4074f7403c560aa",
+      "file": "l7-d4074f7403c560aa.mp3",
+      "input": "这件不错。",
+      "expectedPinyin": "Zhè jiàn búcuò.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè jiàn búcuò.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-ef17b0f528440f16",
+      "file": "l7-ef17b0f528440f16.mp3",
+      "input": "这件不错。这些衣服一共多少钱？",
+      "expectedPinyin": "Zhè jiàn búcuò. Zhèxiē yīfu yígòng duōshao qián?",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè jiàn búcuò. Zhèxiē yīfu yígòng duōshao qián?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-4eeac532f899e1b7",
+      "file": "l7-4eeac532f899e1b7.mp3",
+      "input": "这件大号的衣服很合适。",
+      "expectedPinyin": "Zhè jiàn dàhào de yīfu hěn héshì.",
+      "lessonId": 7,
+      "usage": [
+        "workbook_model"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè jiàn dàhào de yīfu hěn héshì.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-d7a6c6eb92455717",
+      "file": "l7-d7a6c6eb92455717.mp3",
+      "input": "这件太小，有大号的衬衫吗？",
+      "expectedPinyin": "Zhè jiàn tài xiǎo, yǒu dàhào de chènshān ma?",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè jiàn tài xiǎo, yǒu dàhào de chènshān ma?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-d3aa8c3490008156",
+      "file": "l7-d3aa8c3490008156.mp3",
+      "input": "这件很合适。",
+      "expectedPinyin": "Zhè jiàn hěn héshì.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè jiàn hěn héshì.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-d73916014b9e1708",
+      "file": "l7-d73916014b9e1708.mp3",
+      "input": "这件很合适。有没有牛仔裤？",
+      "expectedPinyin": "Zhè jiàn hěn héshì. Yǒu méiyǒu niúzǎikù?",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè jiàn hěn héshì. Yǒu méiyǒu niúzǎikù?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-ee8c17eaf894f06a",
+      "file": "l7-ee8c17eaf894f06a.mp3",
+      "input": "这件羽绒服一千块。",
+      "expectedPinyin": "Zhè jiàn yǔróngfú yì qiān kuài.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè jiàn yǔróngfú yì qiān kuài.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-9f2d22eb1091ad00",
+      "file": "l7-9f2d22eb1091ad00.mp3",
+      "input": "这件衣服一百块。",
+      "expectedPinyin": "Zhè jiàn yīfu yì bǎi kuài.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè jiàn yīfu yì bǎi kuài.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-8d2be112d7f42af1",
+      "file": "l7-8d2be112d7f42af1.mp3",
+      "input": "这件衣服不错。",
+      "expectedPinyin": "Zhè jiàn yīfu búcuò.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè jiàn yīfu búcuò.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-8d7ea6ad466888c5",
+      "file": "l7-8d7ea6ad466888c5.mp3",
+      "input": "这件衬衫一百元。",
+      "expectedPinyin": "Zhè jiàn chènshān yì bǎi yuán.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè jiàn chènshān yì bǎi yuán.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-ba674cc1d3e43429",
+      "file": "l7-ba674cc1d3e43429.mp3",
+      "input": "这件衬衫一百零五块。",
+      "expectedPinyin": "Zhè jiàn chènshān yì bǎi líng wǔ kuài.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè jiàn chènshān yì bǎi líng wǔ kuài.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-257461e62580ac88",
+      "file": "l7-257461e62580ac88.mp3",
+      "input": "这件衬衫不错。",
+      "expectedPinyin": "Zhè jiàn chènshān búcuò.",
+      "lessonId": 7,
+      "usage": [
+        "workbook_model"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè jiàn chènshān búcuò.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-4ed01b9b8d7956b7",
+      "file": "l7-4ed01b9b8d7956b7.mp3",
+      "input": "这件衬衫多少钱？",
+      "expectedPinyin": "Zhè jiàn chènshān duōshao qián?",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase,grammar"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè jiàn chènshān duōshao qián?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-9aff829b9bbe414c",
+      "file": "l7-9aff829b9bbe414c.mp3",
+      "input": "这件衬衫太小，有大号的吗？",
+      "expectedPinyin": "Zhè jiàn chènshān tài xiǎo, yǒu dàhào de ma?",
+      "lessonId": 7,
+      "usage": [
+        "workbook_model"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè jiàn chènshān tài xiǎo, yǒu dàhào de ma?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-4e6dc743ef78d02c",
+      "file": "l7-4e6dc743ef78d02c.mp3",
+      "input": "这件衬衫很绿。",
+      "expectedPinyin": "Zhè jiàn chènshān hěn lǜ.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè jiàn chènshān hěn lǜ.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-64a4aa53cc52b3fb",
+      "file": "l7-64a4aa53cc52b3fb.mp3",
+      "input": "这件衬衫很黑。",
+      "expectedPinyin": "Zhè jiàn chènshān hěn hēi.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè jiàn chènshān hěn hēi.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-6e7d1f95cea41de2",
+      "file": "l7-6e7d1f95cea41de2.mp3",
+      "input": "这儿可以拍照吗？",
+      "expectedPinyin": "Zhèr kěyǐ pāizhào ma?",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhèr kěyǐ pāizhào ma?. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-5bdfcb58ea6e1106",
+      "file": "l7-5bdfcb58ea6e1106.mp3",
+      "input": "这叫“樱桃”。",
+      "expectedPinyin": "Zhè jiào “yīngtao”.",
+      "lessonId": 7,
+      "usage": [
+        "workbook_model",
+        "workbook_fragment"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè jiào “yīngtao”.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-c3e35c0708645461",
+      "file": "l7-c3e35c0708645461.mp3",
+      "input": "这叫“草莓”。",
+      "expectedPinyin": "Zhè jiào “cǎoméi”.",
+      "lessonId": 7,
+      "usage": [
+        "dialogue,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè jiào “cǎoméi”.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-bb0681a933c61c5f",
+      "file": "l7-bb0681a933c61c5f.mp3",
+      "input": "这叫樱桃。",
+      "expectedPinyin": "Zhè jiào yīngtao.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè jiào yīngtao.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-97a5f38c2f44beef",
+      "file": "l7-97a5f38c2f44beef.mp3",
+      "input": "这是人民币。",
+      "expectedPinyin": "Zhè shì rénmínbì.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè shì rénmínbì.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-0dddf8226ccf8d83",
+      "file": "l7-0dddf8226ccf8d83.mp3",
+      "input": "这里不可以吸烟。",
+      "expectedPinyin": "Zhèlǐ bù kěyǐ xī yān.",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary_example,phrase"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhèlǐ bù kěyǐ xī yān.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-a5efe0520f1dcb66",
+      "file": "l7-a5efe0520f1dcb66.mp3",
+      "input": "适",
+      "expectedPinyin": "shì",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: shì. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-e6715f18a39a699a",
+      "file": "l7-e6715f18a39a699a.mp3",
+      "input": "错",
+      "expectedPinyin": "cuò",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary,hanzi",
+        "workbook_fragment"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: cuò. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-f552074e66a9b70e",
+      "file": "l7-f552074e66a9b70e.mp3",
+      "input": "问题",
+      "expectedPinyin": "wèntí",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: wèntí. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-71c4179511d32296",
+      "file": "l7-71c4179511d32296.mp3",
+      "input": "雅",
+      "expectedPinyin": "yǎ",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: yǎ. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-e0e32ceec5324035",
+      "file": "l7-e0e32ceec5324035.mp3",
+      "input": "鞋",
+      "expectedPinyin": "xié",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：xié。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-695140174ed635d7",
+      "file": "l7-695140174ed635d7.mp3",
+      "input": "题",
+      "expectedPinyin": "tí",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：tí。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-31e95de6b969447e",
+      "file": "l7-31e95de6b969447e.mp3",
+      "input": "香",
+      "expectedPinyin": "xiāng",
+      "lessonId": 7,
+      "usage": [
+        "hanzi"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：xiāng。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-f89a3634c4779d26",
+      "file": "l7-f89a3634c4779d26.mp3",
+      "input": "香蕉",
+      "expectedPinyin": "xiāngjiāo",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: xiāngjiāo. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-9b1f81b0331f9f32",
+      "file": "l7-9b1f81b0331f9f32.mp3",
+      "input": "黑",
+      "expectedPinyin": "hēi",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary,hanzi"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: hēi. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-bc522853851ba8f5",
+      "file": "l7-bc522853851ba8f5.mp3",
+      "input": "黑色",
+      "expectedPinyin": "hēisè",
+      "lessonId": 7,
+      "usage": [
+        "vocabulary",
+        "listening_practice"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: hēisè. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-ce64ba1068c757c5",
+      "file": "l7-ce64ba1068c757c5.mp3",
+      "input": "马大为想买点儿苹果，苹果五块五一斤。他还想买点儿草莓，草莓很贵，一斤十六块，两斤三十。他想买两斤草莓和四斤苹果，一共五十二块钱。他给老板六十块，老板找他八块，还送他两个草莓。",
+      "expectedPinyin": "Mǎ Dàwéi xiǎng mǎi diǎnr píngguǒ, píngguǒ wǔ kuài wǔ yì jīn. Tā hái xiǎng mǎi diǎnr cǎoméi, cǎoméi hěn guì, yì jīn shíliù kuài, liǎng jīn sānshí. Tā xiǎng mǎi liǎng jīn cǎoméi hé sì jīn píngguǒ, yígòng wǔshí’èr kuài qián. Tā gěi lǎobǎn liùshí kuài, lǎobǎn zhǎo tā bā kuài, hái sòng tā liǎng ge cǎoméi.",
+      "lessonId": 7,
+      "usage": [
+        "reading"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Mǎ Dàwéi xiǎng mǎi diǎnr píngguǒ, píngguǒ wǔ kuài wǔ yì jīn. Tā hái xiǎng mǎi diǎnr cǎoméi, cǎoméi hěn guì, yì jīn shíliù kuài, liǎng jīn sānshí. Tā xiǎng mǎi liǎng jīn cǎoméi hé sì jīn píngguǒ, yígòng wǔshí’èr kuài qián. Tā gěi lǎobǎn liùshí kuài, lǎobǎn zhǎo tā bā kuài, hái sòng tā liǎng ge cǎoméi.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-2aac875748fd2428",
+      "file": "l7-2aac875748fd2428.mp3",
+      "input": "林娜想买一件羽绒服，她想买大号的衣服，大号的羽绒服很合适。她喜欢绿色，这件绿色的羽绒服七百八十块钱，售货员说可以打八五折，是六百六十三块钱。她还想买一条牛仔裤，她想买中号的牛仔裤，这条大号的牛仔裤不合适，太大。她喜欢黑色，那条黑色的牛仔裤四百九十块钱，售货员说可以打七折，是三百四十三块钱，很便宜。羽绒服和牛仔裤一共一千零六块钱。售货员说可以刷卡，刷卡还可以打九五折，一共是九百五十五块钱。林娜没有卡，她给售货员一千零一十块钱，售货员找她四块钱。",
+      "expectedPinyin": "Lín Nà xiǎng mǎi yí jiàn yǔróngfú, tā xiǎng mǎi dàhào de yīfu, dàhào de yǔróngfú hěn héshì. Tā xǐhuan lǜsè, zhè jiàn lǜsè de yǔróngfú qī bǎi bā shí kuài qián, shòuhuòyuán shuō kěyǐ dǎ bā wǔ zhé, shì liù bǎi liù shí sān kuài qián. Tā hái xiǎng mǎi yì tiáo niúzǎikù, tā xiǎng mǎi zhōnghào de niúzǎikù, zhè tiáo dàhào de niúzǎikù bù héshì, tài dà. Tā xǐhuan hēisè, nà tiáo hēisè de niúzǎikù sì bǎi jiǔ shí kuài qián, shòuhuòyuán shuō kěyǐ dǎ qī zhé, shì sān bǎi sì shí sān kuài qián, hěn piányi. Yǔróngfú hé niúzǎikù yígòng yì qiān líng liù kuài qián. Shòuhuòyuán shuō kěyǐ shuākǎ, shuākǎ hái kěyǐ dǎ jiǔ wǔ zhé, yígòng shì jiǔ bǎi wǔ shí wǔ kuài qián. Lín Nà méiyǒu kǎ, tā gěi shòuhuòyuán yì qiān líng yī shí kuài qián, shòuhuòyuán zhǎo tā sì kuài qián.",
+      "lessonId": 7,
+      "usage": [
+        "reading"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Lín Nà xiǎng mǎi yí jiàn yǔróngfú, tā xiǎng mǎi dàhào de yīfu, dàhào de yǔróngfú hěn héshì. Tā xǐhuan lǜsè, zhè jiàn lǜsè de yǔróngfú qī bǎi bā shí kuài qián, shòuhuòyuán shuō kěyǐ dǎ bā wǔ zhé, shì liù bǎi liù shí sān kuài qián. Tā hái xiǎng mǎi yì tiáo niúzǎikù, tā xiǎng mǎi zhōnghào de niúzǎikù, zhè tiáo dàhào de niúzǎikù bù héshì, tài dà. Tā xǐhuan hēisè, nà tiáo hēisè de niúzǎikù sì bǎi jiǔ shí kuài qián, shòuhuòyuán shuō kěyǐ dǎ qī zhé, shì sān bǎi sì shí sān kuài qián, hěn piányi. Yǔróngfú hé niúzǎikù yígòng yì qiān líng liù kuài qián. Shòuhuòyuán shuō kěyǐ shuākǎ, shuākǎ hái kěyǐ dǎ jiǔ wǔ zhé, yígòng shì jiǔ bǎi wǔ shí wǔ kuài qián. Lín Nà méiyǒu kǎ, tā gěi shòuhuòyuán yì qiān líng yī shí kuài qián, shòuhuòyuán zhǎo tā sì kuài qián.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-33a6686a2b457c46",
+      "file": "l7-33a6686a2b457c46.mp3",
+      "input": "周末，我去市场买水果。我想买点儿草莓。草莓十二块一斤，我买两斤，老板说可以给我打九折，我很高兴。",
+      "expectedPinyin": "Zhōumò, wǒ qù shìchǎng mǎi shuǐguǒ. Wǒ xiǎng mǎi diǎnr cǎoméi. Cǎoméi shí’èr kuài yì jīn, wǒ mǎi liǎng jīn, lǎobǎn shuō kěyǐ gěi wǒ dǎ jiǔ zhé, wǒ hěn gāoxìng.",
+      "lessonId": 7,
+      "usage": [
+        "reading"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhōumò, wǒ qù shìchǎng mǎi shuǐguǒ. Wǒ xiǎng mǎi diǎnr cǎoméi. Cǎoméi shí’èr kuài yì jīn, wǒ mǎi liǎng jīn, lǎobǎn shuō kěyǐ gěi wǒ dǎ jiǔ zhé, wǒ hěn gāoxìng.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-de5634eeb87ea19c",
+      "file": "l7-de5634eeb87ea19c.mp3",
+      "input": "周末，大卫去市场买水果。他想买五个苹果、一斤草莓和两斤香蕉，一共二十块。周末市场里打折，买十块钱水果可以送一个苹果，所以市场里人很多。",
+      "expectedPinyin": "Zhōumò, Dàwèi qù shìchǎng mǎi shuǐguǒ. Tā xiǎng mǎi wǔ ge píngguǒ, yì jīn cǎoméi hé liǎng jīn xiāngjiāo, yígòng èrshí kuài. Zhōumò shìchǎng lǐ dǎzhé, mǎi shí kuài qián shuǐguǒ kěyǐ sòng yí ge píngguǒ, suǒyǐ shìchǎng lǐ rén hěn duō.",
+      "lessonId": 7,
+      "usage": [
+        "reading"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhōumò, Dàwèi qù shìchǎng mǎi shuǐguǒ. Tā xiǎng mǎi wǔ ge píngguǒ, yì jīn cǎoméi hé liǎng jīn xiāngjiāo, yígòng èrshí kuài. Zhōumò shìchǎng lǐ dǎzhé, mǎi shí kuài qián shuǐguǒ kěyǐ sòng yí ge píngguǒ, suǒyǐ shìchǎng lǐ rén hěn duō.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-64a3112299412f7a",
+      "file": "l7-64a3112299412f7a.mp3",
+      "input": "在中国，女鞋最大的号是39号或40号，很多外国女孩儿穿41号或42号的鞋，所以她们在中国很难买到合适的鞋。同样，中国女孩儿在国外很多国家也很难买到合适的鞋，国外的很多衣服和鞋都太大了。在北京，很多外国女孩儿去三里屯或雅宝路买衣服和鞋，那儿有很多外国鞋店和服装店。",
+      "expectedPinyin": "Zài Zhōngguó, nǚxié zuì dà de hào shì sānshíjiǔ hào huò sìshí hào, hěn duō wàiguó nǚháir chuān sìshíyī hào huò sìshí’èr hào de xié, suǒyǐ tāmen zài Zhōngguó hěn nán mǎidào héshì de xié. Tóngyàng, Zhōngguó nǚháir zài guówài hěn duō guójiā yě hěn nán mǎidào héshì de xié, guówài de hěn duō yīfu hé xié dōu tài dà le. Zài Běijīng, hěn duō wàiguó nǚháir qù Sānlǐtún huò Yǎbǎolù mǎi yīfu hé xié, nàr yǒu hěn duō wàiguó xiédiàn hé fúzhuāngdiàn.",
+      "lessonId": 7,
+      "usage": [
+        "reading"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zài Zhōngguó, nǚxié zuì dà de hào shì sānshíjiǔ hào huò sìshí hào, hěn duō wàiguó nǚháir chuān sìshíyī hào huò sìshí’èr hào de xié, suǒyǐ tāmen zài Zhōngguó hěn nán mǎidào héshì de xié. Tóngyàng, Zhōngguó nǚháir zài guówài hěn duō guójiā yě hěn nán mǎidào héshì de xié, guówài de hěn duō yīfu hé xié dōu tài dà le. Zài Běijīng, hěn duō wàiguó nǚháir qù Sānlǐtún huò Yǎbǎolù mǎi yīfu hé xié, nàr yǒu hěn duō wàiguó xiédiàn hé fúzhuāngdiàn.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-2cbd40843c37a671",
+      "file": "l7-2cbd40843c37a671.mp3",
+      "input": "尝一下",
+      "expectedPinyin": "cháng yíxià",
+      "lessonId": 7,
+      "usage": [
+        "listening_practice"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: cháng yíxià. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-50ba7a614da3ad43",
+      "file": "l7-50ba7a614da3ad43.mp3",
+      "input": "便宜点儿",
+      "expectedPinyin": "piányi diǎnr",
+      "lessonId": 7,
+      "usage": [
+        "listening_practice"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: piányi diǎnr. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-76f3df4c574503ea",
+      "file": "l7-76f3df4c574503ea.mp3",
+      "input": "我买三斤草莓和两斤苹果。",
+      "expectedPinyin": "Wǒ mǎi sān jīn cǎoméi hé liǎng jīn píngguǒ.",
+      "lessonId": 7,
+      "usage": [
+        "listening_practice"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Wǒ mǎi sān jīn cǎoméi hé liǎng jīn píngguǒ.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-e75e518837d2e5aa",
+      "file": "l7-e75e518837d2e5aa.mp3",
+      "input": "您给我一百，我找您七块。",
+      "expectedPinyin": "Nín gěi wǒ yìbǎi, wǒ zhǎo nín qī kuài.",
+      "lessonId": 7,
+      "usage": [
+        "listening_practice"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Nín gěi wǒ yìbǎi, wǒ zhǎo nín qī kuài.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-6ba966ef55572336",
+      "file": "l7-6ba966ef55572336.mp3",
+      "input": "您要什么？饺子多少钱一斤？二十块一斤。包子呢？包子两块钱一个。我要半斤饺子，四个包子。一共十八块钱。不好意思，这是一百块。我找您八十二块。",
+      "expectedPinyin": "Nín yào shénme? Jiǎozi duōshao qián yì jīn? Èrshí kuài yì jīn. Bāozi ne? Bāozi liǎng kuài qián yí ge. Wǒ yào bàn jīn jiǎozi, sì ge bāozi. Yígòng shíbā kuài qián. Bù hǎoyìsi, zhè shì yìbǎi kuài. Wǒ zhǎo nín bāshí’èr kuài.",
+      "lessonId": 7,
+      "usage": [
+        "listening_practice"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Nín yào shénme? Jiǎozi duōshao qián yì jīn? Èrshí kuài yì jīn. Bāozi ne? Bāozi liǎng kuài qián yí ge. Wǒ yào bàn jīn jiǎozi, sì ge bāozi. Yígòng shíbā kuài qián. Bù hǎoyìsi, zhè shì yìbǎi kuài. Wǒ zhǎo nín bāshí’èr kuài.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-966fbdcc6c0b7a5b",
+      "file": "l7-966fbdcc6c0b7a5b.mp3",
+      "input": "您的汉语真好。哪里，我刚学汉语，我的口语不太好。你常常说汉语吗？是啊，我的中国朋友常常跟我说汉语。我也常常问他们问题。",
+      "expectedPinyin": "Nín de Hànyǔ zhēn hǎo. Nǎli, wǒ gāng xué Hànyǔ, wǒ de kǒuyǔ bú tài hǎo. Nǐ chángcháng shuō Hànyǔ ma? Shì a, wǒ de Zhōngguó péngyou chángcháng gēn wǒ shuō Hànyǔ. Wǒ yě chángcháng wèn tāmen wèntí.",
+      "lessonId": 7,
+      "usage": [
+        "listening_practice"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Nín de Hànyǔ zhēn hǎo. Nǎli, wǒ gāng xué Hànyǔ, wǒ de kǒuyǔ bú tài hǎo. Nǐ chángcháng shuō Hànyǔ ma? Shì a, wǒ de Zhōngguó péngyou chángcháng gēn wǒ shuō Hànyǔ. Wǒ yě chángcháng wèn tāmen wèntí.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-c886e083c9615e92",
+      "file": "l7-c886e083c9615e92.mp3",
+      "input": "里面可以看一下吗？可以，请进。这儿可以拍照吗？不好意思，这儿不可以拍照。",
+      "expectedPinyin": "Lǐmiàn kěyǐ kàn yíxià ma? Kěyǐ, qǐng jìn. Zhèr kěyǐ pāizhào ma? Bù hǎoyìsi, zhèr bù kěyǐ pāizhào.",
+      "lessonId": 7,
+      "usage": [
+        "listening_practice"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Lǐmiàn kěyǐ kàn yíxià ma? Kěyǐ, qǐng jìn. Zhèr kěyǐ pāizhào ma? Bù hǎoyìsi, zhèr bù kěyǐ pāizhào.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-76ec865adf23e39e",
+      "file": "l7-76ec865adf23e39e.mp3",
+      "input": "你是我们学校的学生吗？我是。你好，你贵姓？我姓丁，叫丁力波。您怎么称呼？我叫牛小英，是王小云的同学。牛小姐，认识你很高兴。你可以叫我小英。",
+      "expectedPinyin": "Nǐ shì wǒmen xuéxiào de xuésheng ma? Wǒ shì. Nǐ hǎo, nǐ guìxìng? Wǒ xìng Dīng, jiào Dīng Lìbō. Nín zěnme chēnghu? Wǒ jiào Niú Xiǎoyīng, shì Wáng Xiǎoyún de tóngxué. Niú xiǎojie, rènshi nǐ hěn gāoxìng. Nǐ kěyǐ jiào wǒ Xiǎoyīng.",
+      "lessonId": 7,
+      "usage": [
+        "listening_practice"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Nǐ shì wǒmen xuéxiào de xuésheng ma? Wǒ shì. Nǐ hǎo, nǐ guìxìng? Wǒ xìng Dīng, jiào Dīng Lìbō. Nín zěnme chēnghu? Wǒ jiào Niú Xiǎoyīng, shì Wáng Xiǎoyún de tóngxué. Niú xiǎojie, rènshi nǐ hěn gāoxìng. Nǐ kěyǐ jiào wǒ Xiǎoyīng.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-c480fcd7c2279f08",
+      "file": "l7-c480fcd7c2279f08.mp3",
+      "input": "草莓多少钱一斤？十五块一斤。太贵了，可以便宜点儿吗？可以，十二块一斤。",
+      "expectedPinyin": "Cǎoméi duōshao qián yì jīn? Shíwǔ kuài yì jīn. Tài guì le, kěyǐ piányi diǎnr ma? Kěyǐ, shí’èr kuài yì jīn.",
+      "lessonId": 7,
+      "usage": [
+        "listening_practice"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Cǎoméi duōshao qián yì jīn? Shíwǔ kuài yì jīn. Tài guì le, kěyǐ piányi diǎnr ma? Kěyǐ, shí’èr kuài yì jīn.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-7fc92daf5a1c7153",
+      "file": "l7-7fc92daf5a1c7153.mp3",
+      "input": "现在买衣服可以打折吗？不好意思，现在不打折。可以刷卡吗？可以。",
+      "expectedPinyin": "Xiànzài mǎi yīfu kěyǐ dǎzhé ma? Bù hǎoyìsi, xiànzài bù dǎzhé. Kěyǐ shuākǎ ma? Kěyǐ.",
+      "lessonId": 7,
+      "usage": [
+        "listening_practice"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Xiànzài mǎi yīfu kěyǐ dǎzhé ma? Bù hǎoyìsi, xiànzài bù dǎzhé. Kěyǐ shuākǎ ma? Kěyǐ.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-f8dab7a588b6e39c",
+      "file": "l7-f8dab7a588b6e39c.mp3",
+      "input": "有大号的衬衫吗？没有，只有中号的。这件多少钱？一百六十八块。那件呢？一百四十八块。",
+      "expectedPinyin": "Yǒu dàhào de chènshān ma? Méiyǒu, zhǐ yǒu zhōnghào de. Zhè jiàn duōshao qián? Yìbǎi liùshíbā kuài. Nà jiàn ne? Yìbǎi sìshíbā kuài.",
+      "lessonId": 7,
+      "usage": [
+        "listening_practice"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Yǒu dàhào de chènshān ma? Méiyǒu, zhǐ yǒu zhōnghào de. Zhè jiàn duōshao qián? Yìbǎi liùshíbā kuài. Nà jiàn ne? Yìbǎi sìshíbā kuài.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-e7735b6f14b5157b",
+      "file": "l7-e7735b6f14b5157b.mp3",
+      "input": "这件羽绒服多少钱？一千五百一十块。牛仔裤呢？六百七十九块。好，我买这件羽绒服和这条牛仔裤。一共两千一百八十九块。",
+      "expectedPinyin": "Zhè jiàn yǔróngfú duōshao qián? Yìqiān wǔbǎi yīshí kuài. Niúzǎikù ne? Liùbǎi qīshíjiǔ kuài. Hǎo, wǒ mǎi zhè jiàn yǔróngfú hé zhè tiáo niúzǎikù. Yígòng liǎngqiān yìbǎi bāshíjiǔ kuài.",
+      "lessonId": 7,
+      "usage": [
+        "listening_practice"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè jiàn yǔróngfú duōshao qián? Yìqiān wǔbǎi yīshí kuài. Niúzǎikù ne? Liùbǎi qīshíjiǔ kuài. Hǎo, wǒ mǎi zhè jiàn yǔróngfú hé zhè tiáo niúzǎikù. Yígòng liǎngqiān yìbǎi bāshíjiǔ kuài.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-35a95df5ab690b87",
+      "file": "l7-35a95df5ab690b87.mp3",
+      "input": "您好，您想买什么？我想买一件衬衫。你们这儿有黑色的牛仔裤吗？没有黑色的，有蓝色的。",
+      "expectedPinyin": "Nín hǎo, nín xiǎng mǎi shénme? Wǒ xiǎng mǎi yí jiàn chènshān. Nǐmen zhèr yǒu hēisè de niúzǎikù ma? Méiyǒu hēisè de, yǒu lánsè de.",
+      "lessonId": 7,
+      "usage": [
+        "listening_practice"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Nín hǎo, nín xiǎng mǎi shénme? Wǒ xiǎng mǎi yí jiàn chènshān. Nǐmen zhèr yǒu hēisè de niúzǎikù ma? Méiyǒu hēisè de, yǒu lánsè de.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-5ea3e9b4f54cfa74",
+      "file": "l7-5ea3e9b4f54cfa74.mp3",
+      "input": "林娜去市场买水果。她想买很多水果，有香蕉、苹果、草莓，还有葡萄。老板很好，说可以给林娜打八折。",
+      "expectedPinyin": "Lín Nà qù shìchǎng mǎi shuǐguǒ. Tā xiǎng mǎi hěn duō shuǐguǒ, yǒu xiāngjiāo, píngguǒ, cǎoméi, hái yǒu pútao. Lǎobǎn hěn hǎo, shuō kěyǐ gěi Lín Nà dǎ bā zhé.",
+      "lessonId": 7,
+      "usage": [
+        "listening_practice"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Lín Nà qù shìchǎng mǎi shuǐguǒ. Tā xiǎng mǎi hěn duō shuǐguǒ, yǒu xiāngjiāo, píngguǒ, cǎoméi, hái yǒu pútao. Lǎobǎn hěn hǎo, shuō kěyǐ gěi Lín Nà dǎ bā zhé.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-dd0025b52a4319cf",
+      "file": "l7-dd0025b52a4319cf.mp3",
+      "input": "宋华去商场买衣服。他想买一件衬衫。小号的衬衫很小，他说再试一件中号的衬衫。中号的衬衫很合适，也很漂亮。",
+      "expectedPinyin": "Sòng Huá qù shāngchǎng mǎi yīfu. Tā xiǎng mǎi yí jiàn chènshān. Xiǎohào de chènshān hěn xiǎo, tā shuō zài shì yí jiàn zhōnghào de chènshān. Zhōnghào de chènshān hěn héshì, yě hěn piàoliang.",
+      "lessonId": 7,
+      "usage": [
+        "listening_practice"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Sòng Huá qù shāngchǎng mǎi yīfu. Tā xiǎng mǎi yí jiàn chènshān. Xiǎohào de chènshān hěn xiǎo, tā shuō zài shì yí jiàn zhōnghào de chènshān. Zhōnghào de chènshān hěn héshì, yě hěn piàoliang.. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-d250abfec8a1b558",
+      "file": "l7-d250abfec8a1b558.mp3",
+      "input": "四斤",
+      "expectedPinyin": "sì jīn",
+      "lessonId": 7,
+      "usage": [
+        "listening_practice",
+        "construction_token"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: sì jīn. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-821a09a42e83f3d9",
+      "file": "l7-821a09a42e83f3d9.mp3",
+      "input": "苹果打八折",
+      "expectedPinyin": "Píngguǒ dǎ bā zhé",
+      "lessonId": 7,
+      "usage": [
+        "listening_practice"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Píngguǒ dǎ bā zhé. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-73a2e90121ac2b29",
+      "file": "l7-73a2e90121ac2b29.mp3",
+      "input": "中号衬衫",
+      "expectedPinyin": "zhōnghào chènshān",
+      "lessonId": 7,
+      "usage": [
+        "listening_practice"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: zhōnghào chènshān. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-4f43ab4eb0dd457f",
+      "file": "l7-4f43ab4eb0dd457f.mp3",
+      "input": "老北京",
+      "expectedPinyin": "lǎo Běijīng",
+      "lessonId": 7,
+      "usage": [
+        "workbook_fragment"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: lǎo Běijīng. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-65bdb88b34565264",
+      "file": "l7-65bdb88b34565264.mp3",
+      "input": "这件",
+      "expectedPinyin": "zhè jiàn",
+      "lessonId": 7,
+      "usage": [
+        "workbook_fragment"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: zhè jiàn. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-72e2164dbd7b534c",
+      "file": "l7-72e2164dbd7b534c.mp3",
+      "input": "这些",
+      "expectedPinyin": "zhèxiē",
+      "lessonId": 7,
+      "usage": [
+        "workbook_fragment",
+        "construction_token"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: zhèxiē. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-eb080e12ac204e15",
+      "file": "l7-eb080e12ac204e15.mp3",
+      "input": "恰",
+      "expectedPinyin": "qià",
+      "lessonId": 7,
+      "usage": [
+        "workbook_fragment"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：qià。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。",
+      "speechInput": "恰。",
+      "voice": "cedar",
+      "standaloneInstructions": "Language: Mandarin Chinese. Native Chinese pronunciation teacher. Read this Chinese character exactly once, clearly and naturally. Pronunciation in pinyin: qià. Say only the Chinese syllable."
+    },
+    {
+      "id": "l7-e69b90d9c5ddeced",
+      "file": "l7-e69b90d9c5ddeced.mp3",
+      "input": "宣",
+      "expectedPinyin": "xuān",
+      "lessonId": 7,
+      "usage": [
+        "workbook_fragment"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：xuān。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-cbe68ef1641d764f",
+      "file": "l7-cbe68ef1641d764f.mp3",
+      "input": "借",
+      "expectedPinyin": "jiè",
+      "lessonId": 7,
+      "usage": [
+        "workbook_fragment"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: jiè. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-7439059b3365ad5d",
+      "file": "l7-7439059b3365ad5d.mp3",
+      "input": "点儿",
+      "expectedPinyin": "diǎnr",
+      "lessonId": 7,
+      "usage": [
+        "construction_token"
+      ],
+      "instructions": "请用清晰、自然的普通话朗读输入文本，只读一次。必须完整保留全部汉字，不增删、不解释、不翻译。准确参考拼音：diǎnr。保留正确的声母、韵母和声调，包括儿化音。音量正常，不要低语，起音完整，不要截断结尾。单字请稍微延长韵母以便初学者听清。"
+    },
+    {
+      "id": "l7-907dd2234e92edf7",
+      "file": "l7-907dd2234e92edf7.mp3",
+      "input": "一斤",
+      "expectedPinyin": "yì jīn",
+      "lessonId": 7,
+      "usage": [
+        "construction_token"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: yì jīn. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-3f18a64863de83ab",
+      "file": "l7-3f18a64863de83ab.mp3",
+      "input": "这个",
+      "expectedPinyin": "Zhè ge",
+      "lessonId": 7,
+      "usage": [
+        "construction_token"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: Zhè ge. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-c21391328dfeb7c8",
+      "file": "l7-c21391328dfeb7c8.mp3",
+      "input": "十四块",
+      "expectedPinyin": "shí sì kuài",
+      "lessonId": 7,
+      "usage": [
+        "construction_token"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: shí sì kuài. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-5ce10374c640acb8",
+      "file": "l7-5ce10374c640acb8.mp3",
+      "input": "六十",
+      "expectedPinyin": "liù shí",
+      "lessonId": 7,
+      "usage": [
+        "construction_token"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: liù shí. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-8892b8ad44c5d831",
+      "file": "l7-8892b8ad44c5d831.mp3",
+      "input": "八块",
+      "expectedPinyin": "bā kuài",
+      "lessonId": 7,
+      "usage": [
+        "construction_token"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: bā kuài. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-74a2fab4bf9dae23",
+      "file": "l7-74a2fab4bf9dae23.mp3",
+      "input": "两千一百九十一",
+      "expectedPinyin": "liǎng qiān yì bǎi jiǔ shí yī",
+      "lessonId": 7,
+      "usage": [
+        "construction_token"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: liǎng qiān yì bǎi jiǔ shí yī. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    },
+    {
+      "id": "l7-130cac539b50e1ff",
+      "file": "l7-130cac539b50e1ff.mp3",
+      "input": "两斤",
+      "expectedPinyin": "liǎng jīn",
+      "lessonId": 7,
+      "usage": [
+        "construction_token"
+      ],
+      "instructions": "Pronuncia exactamente una vez, sin introducción. Lectura de referencia: liǎng jīn. No leas el pinyin ni traduzcas. Respeta los tonos y las sílabas neutras de esta lectura."
+    }
+  ]
+}

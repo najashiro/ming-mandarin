@@ -37,6 +37,6 @@ function BirthdayRound({ row, level, result, onCheck, onNext }: {
       <PhraseReinforcement linked hanzi={row.hanzi} pinyin={row.pinyin} translation={row.spanish}/><p>{row.explanation}</p>
       <button type="button" className="button button-primary" onClick={onNext}>Continuar</button>
     </div>}
-    <GameAudioRetry error={audio.error} retry={audio.retry}/>
+    <GameAudioRetry error={audio.error} unavailable={audio.unavailable} retry={audio.retry}/>
   </>;
 }

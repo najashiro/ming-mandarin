@@ -1,0 +1,556 @@
+[
+  {
+    "source": "book",
+    "pdfPage": 1,
+    "printedPage": 184,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "l7-warmup"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 2,
+    "printedPage": 185,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "DLG-L7-1"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 3,
+    "printedPage": 186,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "v-老板",
+      "v-想",
+      "v-买",
+      "DLG-L7-1"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 4,
+    "printedPage": 187,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "v-一点儿",
+      "v-苹果",
+      "v-先生",
+      "v-哪里",
+      "v-钱",
+      "v-斤",
+      "v-块",
+      "v-问题",
+      "v-怎么",
+      "v-草莓",
+      "v-卖",
+      "v-贵",
+      "v-可以",
+      "v-尝",
+      "v-便宜",
+      "v-给",
+      "v-找",
+      "v-再",
+      "v-找钱",
+      "g-l7-diar"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 5,
+    "printedPage": 188,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "v-人民币",
+      "g-l7-money",
+      "notes"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 6,
+    "printedPage": 189,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "v-大号",
+      "DLG-L7-2"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 7,
+    "printedPage": 190,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "v-不好意思",
+      "v-一共",
+      "DLG-L7-2"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 8,
+    "printedPage": 191,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "v-件",
+      "v-衬衫",
+      "v-售货员",
+      "v-员",
+      "v-百",
+      "v-试",
+      "v-当然",
+      "v-左边",
+      "v-左",
+      "v-合适",
+      "v-牛仔裤",
+      "v-羽绒服",
+      "v-黑色",
+      "v-黑",
+      "v-绿色",
+      "v-绿",
+      "v-不错",
+      "v-错",
+      "v-些",
+      "v-衣服",
+      "v-千",
+      "v-零",
+      "v-打折",
+      "v-刷卡",
+      "v-卡",
+      "v-没问题"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 9,
+    "printedPage": 192,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "v-小号",
+      "g-l7-prices",
+      "notes"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 10,
+    "printedPage": 193,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "g-l7-numbers",
+      "l7-numbers-1"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 11,
+    "printedPage": 194,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "g-l7-xiang",
+      "g-l7-permission",
+      "l7-numbers-2"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 12,
+    "printedPage": 195,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "l7-xiang-scenes",
+      "l7-modal-substitute"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 13,
+    "printedPage": 196,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "g-l7-double-object",
+      "l7-double-object-fill",
+      "l7-double-object-order"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 14,
+    "printedPage": 197,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "g-l7-zenme",
+      "l7-zenme-questions",
+      "l7-zenme-dialogues"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 15,
+    "printedPage": 198,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "v-元",
+      "v-角",
+      "v-毛",
+      "v-分",
+      "v-橙子",
+      "v-葡萄",
+      "v-香蕉",
+      "v-樱桃",
+      "v-水果",
+      "v-裙子",
+      "v-T恤",
+      "v-白色",
+      "v-红色",
+      "v-穿",
+      "v-拍照",
+      "v-吸烟",
+      "v-称呼"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 16,
+    "printedPage": 199,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "l7-phonetics",
+      "l7-shopping"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 17,
+    "printedPage": 200,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "l7-bargain",
+      "l7-permission-scenes"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 18,
+    "printedPage": 201,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "l7-listen-repeat"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 19,
+    "printedPage": 202,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "g-l7-discount",
+      "r-l7-fruit",
+      "r-l7-clothes",
+      "l7-read-fruit",
+      "l7-read-clothes"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 20,
+    "printedPage": 203,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "l7-roleplay",
+      "l7-market-research"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 21,
+    "printedPage": 204,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "l7-classifiers",
+      "l7-writing",
+      "l7-radical-dictionary",
+      "notes"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 22,
+    "printedPage": 205,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "果",
+      "草",
+      "且",
+      "衣",
+      "手",
+      "宜",
+      "l7-hanzi-book",
+      "RAD-L7-624c",
+      "RAD-L7-8864",
+      "RAD-L7-9485"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 23,
+    "printedPage": 206,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "钱",
+      "衬",
+      "衫",
+      "裤",
+      "打",
+      "折",
+      "La moneda de China en el libro"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "book",
+    "pdfPage": 24,
+    "printedPage": 207,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "l7-riddles",
+      "l7-objective-1",
+      "l7-objective-2",
+      "l7-objective-3",
+      "l7-objective-4",
+      "l7-objective-5",
+      "l7-objective-6",
+      "La moneda de China en el libro"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "workbook",
+    "pdfPage": 1,
+    "printedPage": 61,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "l7-wb-listen-tf",
+      "l7-wb-listen-fill"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "workbook",
+    "pdfPage": 2,
+    "printedPage": 62,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "l7-wb-listen-choice",
+      "l7-wb-fieldwork"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "workbook",
+    "pdfPage": 3,
+    "printedPage": 62,
+    "method": "local_ocr_plus_visual_review",
+    "status": "duplicate_witness",
+    "duplicateOf": 2,
+    "recordIds": [],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "workbook",
+    "pdfPage": 4,
+    "printedPage": 63,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "斤",
+      "买",
+      "块",
+      "卡",
+      "千",
+      "l7-wb-phonetics",
+      "l7-wb-trace"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "workbook",
+    "pdfPage": 5,
+    "printedPage": 64,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "价",
+      "试",
+      "想",
+      "适",
+      "员",
+      "百",
+      "l7-wb-components",
+      "l7-wb-radicals",
+      "l7-wb-fill-hanzi"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "workbook",
+    "pdfPage": 6,
+    "printedPage": 65,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "l7-wb-match",
+      "l7-wb-questions"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "workbook",
+    "pdfPage": 7,
+    "printedPage": 66,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "r-l7-weekend",
+      "l7-wb-translation",
+      "l7-wb-order"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "workbook",
+    "pdfPage": 8,
+    "printedPage": 67,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "l7-wb-wordsearch",
+      "l7-wb-dialogues"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "workbook",
+    "pdfPage": 9,
+    "printedPage": 68,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "r-l7-market",
+      "r-l7-sizes",
+      "l7-wb-build",
+      "l7-wb-read-market",
+      "l7-wb-read-sizes"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "workbook",
+    "pdfPage": 10,
+    "printedPage": 69,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "r-l7-sizes",
+      "l7-wb-ad"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  },
+  {
+    "source": "workbook",
+    "pdfPage": 11,
+    "printedPage": 70,
+    "method": "local_ocr_plus_visual_review",
+    "status": "reviewed",
+    "duplicateOf": null,
+    "recordIds": [
+      "l7-wb-prices",
+      "l7-wb-writing"
+    ],
+    "scope": "Material lingüístico, consignas y tablas; ilustraciones originales no publicadas."
+  }
+]

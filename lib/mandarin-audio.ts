@@ -1,4 +1,6 @@
 import lesson5Audio from '@/data/lesson5-audio.json';
+import lesson7Audio from '@/data/lesson7-audio.json';
+import lesson7Available from '@/data/lesson7-audio-available.json';
 import lesson5Available from '@/data/lesson5-audio-available.json';
 import lesson4Audio from '@/data/lesson4-audio.json';
 import lesson4Available from '@/data/lesson4-audio-available.json';
@@ -122,6 +124,13 @@ for (const clip of vocabularyExampleReusedAudio.clips) addMissingRecording(clip,
 const availableExampleFiles = new Set<string>(vocabularyExampleAudioAvailable.files);
 for (const clip of vocabularyExampleAudio.clips) {
   if (availableExampleFiles.has(clip.file)) addMissingRecording(clip, 'mandarin');
+}
+
+// L7 practice recordings are added after signal and transcription review.
+// Existing readings and recordings retain precedence.
+const availableLesson7Files = new Set<string>(lesson7Available.files);
+for (const clip of lesson7Audio.clips) {
+  if (availableLesson7Files.has(clip.file)) addMissingRecording(clip, 'mandarin');
 }
 
 export function audioForMandarinText(text: string, pinyin?: string): string | undefined {

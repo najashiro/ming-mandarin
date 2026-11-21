@@ -16,7 +16,7 @@ const filters: Array<['all' | HanziSourceCode, string]> = [
 export default async function AdminContent({ searchParams }: { searchParams: Promise<{ source?: string }> }) {
   const [, query] = await Promise.all([requireAdmin('/admin/content'), searchParams]);
   const active = filters.some(([code]) => code === query.source) ? query.source as 'all' | HanziSourceCode : 'all';
-  const curriculum=getCurriculum('l1-l2-l3-l4-l5-l6');
+  const curriculum=getCurriculum('l1-l2-l3-l4-l5-l6-l7');
   const generalSources = [...curriculum.vocabulary, ...curriculum.sentences, ...curriculum.grammar];
   const filteredCharacters = active === 'all' ? curriculum.characters : curriculum.characters.filter((item) => item.appearsIn.includes(active));
   return <SiteShell><main>

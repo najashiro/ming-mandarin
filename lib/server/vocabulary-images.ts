@@ -8,6 +8,7 @@ import contextPrompts from '@/docs/lessons123-context-prompts.json';
 import generatedPrompts from '@/docs/lessons123-generated-prompts.json';
 import lesson4Prompts from '@/docs/lesson4-image-prompts.json';
 import lesson5Prompts from '@/docs/lesson5-image-prompts.json';
+import lesson7Prompts from '@/docs/lesson7-image-prompts.json';
 import completionPrompts from '@/docs/corpus-completion-image-prompts.json';
 import completionDiagrams from '@/docs/corpus-completion-diagrams-review.json';
 import lesson4 from '@/data/lesson4-public.json';
@@ -28,6 +29,7 @@ const prompts = new Map<string, { prompt: string; hanzi?: string; pinyin?: strin
 for (const entry of [...lesson4Prompts.entries, ...lesson5Prompts.entries, ...countPrompts.entries, ...contextPrompts.entries, ...generatedPrompts.entries, ...pedagogyPrompts.entries, ...geographyPrompts.entries]) if (entry.prompt) prompts.set(entry.wordId, { prompt: entry.prompt });
 for (const entry of completionPrompts.entries) for (const wordId of entry.ids) prompts.set(wordId, { prompt: entry.prompt });
 for (const entry of completionDiagrams.entries) prompts.set(entry.wordId, { prompt: entry.prompt });
+for (const entry of lesson7Prompts.entries) prompts.set(entry.assetWordId ?? entry.wordId, entry);
 const words = new Map(vocabularyCatalog.map(word => [word.id, word]));
 const digest = (prompt: string) => createHash('sha256').update(prompt).digest('hex');
 const columns = 'word_id,status,prompt,asset_sha256,prompt_sha256,revision,reviewed_at';
@@ -63,16 +65,16 @@ export async function listVocabularyImageReviews() {
   const { rows, storageReady } = await reviewRows();
   const reviews = new Map(rows.map(row => [row.word_id, row]));
   const entries = vocabularyMedia.map((entry): AdminVocabularyImageEntry => {
-    const word = words.get(entry.wordId);
+    const word = words.get(entry.curriculumWordId ?? entry.wordId);
     const prompt = prompts.get(entry.wordId);
     const review = reviews.get(entry.wordId);
     return {
       ...entry, src: `${entry.src}?v=${entry.sha256}`,
       hanzi: word?.hanzi ?? prompt?.hanzi ?? entry.wordId,
-      pinyin: word?.pinyin ?? prompt?.pinyin ?? '',
-      spanish: word?.spanish ?? prompt?.spanish ?? entry.sense,
-      lesson: word ? getVocabularyLesson(word) ?? null : null,
-      lessons: [...new Set([...(word?.curriculumLinks.map(link => link.lesson) ?? []), ...(lesson4.vocabulary.some(item => item.id === entry.wordId) ? [4] : [])])],
+      pinyin: entry.curriculumWordId ? prompt?.pinyin ?? word?.pinyin ?? '' : word?.pinyin ?? prompt?.pinyin ?? '',
+      spanish: entry.curriculumWordId ? entry.sense : word?.spanish ?? prompt?.spanish ?? entry.sense,
+      lesson: entry.curriculumWordId ? 7 : word ? getVocabularyLesson(word) ?? null : null,
+      lessons: entry.curriculumWordId ? [7] : [...new Set([...(word?.curriculumLinks.map(link => link.lesson) ?? []), ...(lesson4.vocabulary.some(item => item.id === entry.wordId) ? [4] : [])])],
       correction: splitImageCorrection(review?.prompt ?? prompt?.prompt ?? '').correction,
       prompt: review?.prompt ?? prompt?.prompt ?? '', defaultPrompt: prompt?.prompt ?? '',
       reviewStatus: effectiveImageStatus(entry, review),

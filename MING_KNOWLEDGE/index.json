@@ -86,12 +86,12 @@
   },
   "baseline_query": "python3 MING_KNOWLEDGE/v2/query_v21.py --word <hanzi> --limit 8",
   "runtime_extension": {
-    "version": "2.4.0",
-    "lesson": 6,
-    "entrypoint": "v2/lesson6/README.md",
-    "source": "v2/lesson6/content.json",
-    "validation": "python3 MING_KNOWLEDGE/v2/query.py --lesson 6 --validate",
-    "learner_export": "python3 scripts/export-lesson6-web.py",
+    "version": "2.5.0",
+    "lesson": 7,
+    "entrypoint": "v2/lesson7/README.md",
+    "source": "v2/lesson7/content.json",
+    "validation": "python3 MING_KNOWLEDGE/v2/query.py --lesson 7 --validate",
+    "learner_export": "python3 scripts/export-lesson7-web.py",
     "original_listening_audio_supplied": false
   },
   "runtime_extensions": [
@@ -111,6 +111,15 @@
       "source": "v2/lesson6/content.json",
       "validation": "python3 MING_KNOWLEDGE/v2/query.py --lesson 6 --validate",
       "learner_export": "python3 scripts/export-lesson6-web.py",
+      "original_listening_audio_supplied": false
+    },
+    {
+      "version": "2.5.0",
+      "lesson": 7,
+      "entrypoint": "v2/lesson7/README.md",
+      "source": "v2/lesson7/content.json",
+      "validation": "python3 MING_KNOWLEDGE/v2/query.py --lesson 7 --validate",
+      "learner_export": "python3 scripts/export-lesson7-web.py",
       "original_listening_audio_supplied": false
     }
   ]

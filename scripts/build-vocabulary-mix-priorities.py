@@ -22,8 +22,8 @@ import query  # noqa: E402
 
 CATEGORIES = ("dialogue", "grammar", "reading", "exercise", "editorialGrammar")
 GROUPS = ("core", "consolidation", "extension")
-SCOPES = {f"l{lesson}": [lesson] for lesson in range(1, 7)}
-SCOPES.update({"-".join(f"l{n}" for n in range(1, last + 1)): list(range(1, last + 1)) for last in range(2, 7)})
+SCOPES = {f"l{lesson}": [lesson] for lesson in range(1, 8)}
+SCOPES.update({"-".join(f"l{n}" for n in range(1, last + 1)): list(range(1, last + 1)) for last in range(2, 8)})
 CONTEXT_ROLES = {"workbook_context", "phrase_context", "worksheet_sequence", "numeral_in_context", "context_only"}
 EXTENSION_ROLES = {"classroom_extension", "classroom_expression", "colloquial_classroom", "proper_name", "visual_label", "supplementary_review"}
 
@@ -43,10 +43,10 @@ def included(link):
 
 
 def load_catalog():
-    public = {lesson: read(f"data/lesson{lesson}-public.json") for lesson in (4, 5, 6)}
+    public = {lesson: read(f"data/lesson{lesson}-public.json") for lesson in (4, 5, 6, 7)}
     reviewed = read("data/lessons123-public.json")
     catalog = {word["id"]: deepcopy(word) for word in reviewed["vocabulary"]}
-    for lesson in (4, 5, 6):
+    for lesson in (4, 5, 6, 7):
         for incoming in public[lesson]["vocabulary"]:
             if incoming["id"] in catalog:
                 catalog[incoming["id"]]["curriculumLinks"] += incoming["curriculumLinks"]
@@ -56,7 +56,7 @@ def load_catalog():
     # first-lesson partition and complete, possibly overlapping L4–L6 lists.
     assigned = set()
     exclusive = {}
-    for lesson in range(1, 7):
+    for lesson in range(1, 8):
         candidates = public[lesson]["vocabulary"] if lesson >= 4 else catalog.values()
         ids = [word["id"] for word in candidates if any(link["lesson"] == lesson and included(link) for link in word["curriculumLinks"])]
         exclusive[lesson] = [word_id for word_id in ids if word_id not in assigned]
@@ -174,7 +174,7 @@ def collect_contexts(catalog):
 
     aliases = read("MING_KNOWLEDGE/v2/lesson4/lexical-links.json")["approved_surface_aliases"]
     segment = make_segmenter(catalog, query.read_table("vocabulary"), aliases)
-    for lesson in (5, 6):
+    for lesson in (5, 6, 7):
         source = read(f"MING_KNOWLEDGE/v2/lesson{lesson}/content.json")
 
         def add_derived(category, text, row, key, annotated=None):
@@ -241,7 +241,7 @@ def build():
     for word_id in sorted(set().union(*map(set, scopes.values()))):
         word = catalog[word_id]
         lessons = {}
-        for lesson in range(1, 7):
+        for lesson in range(1, 8):
             links = [link for link in word["curriculumLinks"] if link["lesson"] == lesson]
             if not links and lesson not in by_word[word_id]:
                 continue
@@ -258,7 +258,7 @@ def build():
                                    contexts=len(distinct[(word_id, lesson)]), score=round(score, 6), confidence=confidence)
         stats[word_id] = lessons
     maxima = {lesson: max((values[lesson]["score"] for values in stats.values() if lesson in values), default=1)
-              for lesson in range(1, 7)}
+              for lesson in range(1, 8)}
     rankings = {}
     for scope, ids in scopes.items():
         lessons = SCOPES[scope]
@@ -295,10 +295,10 @@ def build():
                        (";".join(sorted(methods[(word_id, lesson)])) or "none"), (";".join(sorted(references[(word_id, lesson)])) or "none")]
             rows.append([str(value).replace("\t", " ").replace("\n", " ") for value in values])
     table = "\n".join("\t".join(row) for row in rows) + "\n"
-    report = {"version": 1, "fingerprint": fingerprint, "eligibleWords": len(scopes["l1-l2-l3-l4-l5-l6"]),
+    report = {"version": 1, "fingerprint": fingerprint, "eligibleWords": len(scopes["l1-l2-l3-l4-l5-l6-l7"]),
               "uniqueWordsAcrossAllScopes": len(stats), "wordLessonRows": len(rows) - 1,
               "groups": {scope: dict(Counter(value["group"] for value in ranking.values())) for scope, ranking in rankings.items()},
-              "contextsByLesson": {str(lesson): dict(Counter(key[1] for key in contexts if key[0] == lesson)) for lesson in range(1, 7)},
+              "contextsByLesson": {str(lesson): dict(Counter(key[1] for key in contexts if key[0] == lesson)) for lesson in range(1, 8)},
               "confidence": dict(Counter(item["confidence"] for values in stats.values() for item in values.values())),
               "skipped": skipped, "unsegmentedCjkCodepointsL5L6": gaps}
     return payload, table, report

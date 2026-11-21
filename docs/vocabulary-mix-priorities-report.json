@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "fingerprint": "20ad8e3b60a049b7742acd705f65c83dcc6385e7ee347b6872ba0362ee2ad92b",
-  "eligibleWords": 520,
-  "uniqueWordsAcrossAllScopes": 522,
-  "wordLessonRows": 992,
+  "fingerprint": "3bfa54f56aee8954a61c0029bbc1a99408f1916eb198fc0199c0b4a7e47a7b91",
+  "eligibleWords": 578,
+  "uniqueWordsAcrossAllScopes": 580,
+  "wordLessonRows": 1148,
   "groups": {
     "l1": {
       "core": 24,
@@ -35,6 +35,11 @@
       "consolidation": 26,
       "extension": 22
     },
+    "l7": {
+      "core": 25,
+      "consolidation": 24,
+      "extension": 21
+    },
     "l1-l2": {
       "core": 67,
       "consolidation": 66,
@@ -59,6 +64,11 @@
       "core": 182,
       "consolidation": 182,
       "extension": 156
+    },
+    "l1-l2-l3-l4-l5-l6-l7": {
+      "core": 203,
+      "consolidation": 202,
+      "extension": 173
     }
   },
   "contextsByLesson": {
@@ -97,21 +107,29 @@
       "reading": 23,
       "exercise": 9,
       "editorialGrammar": 14
+    },
+    "7": {
+      "dialogue": 35,
+      "reading": 20,
+      "exercise": 16,
+      "editorialGrammar": 25
     }
   },
   "confidence": {
-    "curricular_only": 321,
-    "registered_lexical_counts": 394,
-    "derived_lexical_counts": 277
+    "curricular_only": 353,
+    "registered_lexical_counts": 395,
+    "derived_lexical_counts": 400
   },
   "skipped": {
     "L5_editorial_activity_records": 29,
     "L6_editorial_activity_records": 38,
+    "L7_editorial_activity_records": 44,
     "counterexamples_or_unresolved": 13,
     "non_primary_source_witnesses": 776
   },
   "unsegmentedCjkCodepointsL5L6": {
     "5": 7,
-    "6": 48
+    "6": 47,
+    "7": 59
   }
 }

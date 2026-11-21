@@ -9,6 +9,7 @@ export function useGameAudio() {
   const cleanup = useRef<(() => void) | null>(null);
   const last = useRef<{ text: string; reading?: string } | null>(null);
   const [error, setError] = useState(false);
+  const [unavailable, setUnavailable] = useState(false);
   const stop = useCallback(() => { cleanup.current?.(); cleanup.current = null; }, []);
   useEffect(() => stop, [stop]);
 
@@ -16,8 +17,9 @@ export function useGameAudio() {
     stop();
     last.current = { text, reading };
     setError(false);
-    const src = audioForMandarinText(text, reading) ?? audioForMandarinText(text);
-    if (!src) { setError(true); return; }
+    setUnavailable(false);
+    const src = audioForMandarinText(text, reading);
+    if (!src) { setUnavailable(true); return; }
     const audio = new Audio(src);
     audio.playbackRate = 0.85;
     let cancelled = false;
@@ -39,5 +41,5 @@ export function useGameAudio() {
     void audio.play().catch(failed);
   }, [stop]);
   const retry = () => { if (last.current) play(last.current.text, last.current.reading); };
-  return { play, stop, error, retry };
+  return { play, stop, error, unavailable, retry };
 }

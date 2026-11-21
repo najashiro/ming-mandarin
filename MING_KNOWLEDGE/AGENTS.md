@@ -51,3 +51,11 @@ Se autorizaron flechas, pinyin y etiquetas didácticas dentro de imágenes ambig
 ## Extensión L6 · 2.4.0 · 2026-11-08
 
 El usuario autorizó integrar L6 en corpus y web. Fuente: `MING_KNOWLEDGE/v2/lesson6/content.json` desde la raíz. Consulta su `README.md` y `SOURCE_REVIEW.md`. Los libros prevalecen sobre PPT; ante conflicto entre libros se conserva el corpus avanzado. `query.py --lesson 6 --validate` y `scripts/export-lesson6-web.py --check` validan la extensión sin reemplazar las tablas históricas. Conserva IDs L1–L5, las rutas previas, los audios e imágenes. No atribuyas las adaptaciones Míng a una clave oficial ni generes audio faltante.
+
+## Extensión L7 · 2.5.0 · 2026-11-20
+
+El usuario pidió integrar la lección 07 desde el corpus en todas las secciones de Ming. Fuente: `MING_KNOWLEDGE/v2/lesson7/content.json` desde la raíz. Lee `lesson7/README.md` y `lesson7/SOURCE_REVIEW.md` dentro de v2. Los dos PDF tienen 35 páginas, una duplicada en el cuaderno. Conserva los ámbitos L1–L6 y sus IDs. La extensión añade L7 y el repaso L1–L7. Valida con `query.py --lesson 7 --validate`, `scripts/export-lesson7-web.py --check` y `scripts/audit-lesson7-media.mjs --check`. `media-status.json` registra carencias exactas de recursos; no implica aprobación de generación. Las adaptaciones de cuaderno y conversación se editan en el corpus y se exportan. El audio original y la clave oficial no se suministraron.
+
+El 20 de noviembre de 2026 el usuario autorizó explícitamente generar los audios e imágenes de L7 (respuesta: «Sí, audios e imágenes»). El inventario y alcance del lote están en `docs/lesson7-media-request.json` desde la raíz. Esta autorización no comprende publicar producción ni sustituir las grabaciones originales del libro.
+
+El mismo día el usuario autorizó publicar L7 y pidió completar todo audio pendiente. Se añadieron versiones de práctica de Míng a las cinco actividades de escucha, con transcripciones y respuestas editoriales separadas de la fuente. Se autoriza el despliegue de esta actualización en el proyecto existente de Míng; no se atribuyen las grabaciones generadas al libro.

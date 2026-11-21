@@ -1,3 +1,4 @@
+import lesson7 from '@/data/lesson7-public.json' with { type: 'json' };
 import languageSupport from '@/data/workbook-language-support.json' with { type: 'json' };
 import type { CurriculumScope, LessonNumber, SourceRef } from '@/data/types';
 
@@ -15,6 +16,7 @@ export type WorkbookQuestion = {
   modelHanzi?: string;
   options?: string[];
   tokens?: string[];
+  audioReadings?: Record<string, string>;
   pinyin?: string;
   translation?: string;
   hint: string;
@@ -47,6 +49,7 @@ type WorkbookEvidence = {
 // explicit Míng adaptation made for these games. No original-listening task
 // is scored, and no source records or existing progress IDs are overwritten.
 const workbookFiles: Record<LessonNumber, string> = {
+  7: "Libro de ejercicio Lección 07 Píngguo duõshao qián yì jin.pdf",
   6: 'Libro de Ejercicios Lección 06 Túshuguăn.pdf',
   1: 'Libro de Ejercicios Basico 1 - Lección 1 -2.pdf',
   2: 'Libro de Ejercicios Basico 1 - Lección 1 -2.pdf',
@@ -259,6 +262,11 @@ addDialogues(6, 5, 'l6-wb-match', [
   ['什么叫“胡同”？','就是小街道。','Se pide el significado de una palabra.','小街道 explica 胡同 en el texto.'],
   ['饭馆后面有一个书店，对吗？','对，那个书店很大。','La pregunta solicita confirmación.','对 confirma la información sobre la librería.'],
 ]);
+
+for (const row of lesson7.workbookGames) {
+  const evidence = lesson7.workbookEvidence[row.id as keyof typeof lesson7.workbookEvidence];
+  add(row as WorkbookQuestion, evidence.pdfPage, evidence.sourceExerciseId);
+}
 
 /** Source references are deliberately excluded from data passed to the browser. */
 export function getWorkbookQuestions(scope: CurriculumScope, mode?: WorkbookMode): WorkbookQuestion[] {

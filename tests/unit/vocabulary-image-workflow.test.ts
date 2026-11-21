@@ -67,7 +67,11 @@ describe('image decisions persist and reach the public cards', () => {
   });
   it('uses the existing vocabulary lesson assignment', async () => {
     for (const entry of (await listVocabularyImageReviews()).entries) {
-      expect(entry.lesson).toBe(getVocabularyLesson({id:entry.wordId}) ?? null);
+      expect(entry.lesson).toBe(entry.curriculumWordId ? 7 : getVocabularyLesson({id:entry.wordId}) ?? null);
+      if (entry.curriculumWordId) {
+        expect(entry.lessons).toEqual([7]);
+        expect(entry.spanish).toBe(entry.sense);
+      }
     }
   });
   it('approves a pending static entry and remains visible after reload', async () => {

@@ -42,7 +42,7 @@ def selected(row: dict, fields: list[str] | None) -> dict:
 
 def main() -> None:
     # Additive lesson extensions preserve the historical documentary cache.
-    for lesson in (5, 6):
+    for lesson in (5, 6, 7):
         if f'--lesson={lesson}' in sys.argv or any(a == '--lesson' and i + 1 < len(sys.argv) and sys.argv[i+1] == str(lesson) for i,a in enumerate(sys.argv)):
             runpy.run_path(str(ROOT / f'lesson{lesson}/query.py'), run_name='__main__')
             return

@@ -6,15 +6,15 @@ import { audioForMandarinText } from '@/lib/mandarin-audio';
 import { resolveHanziGlyph } from '@/lib/hanzi/navigation';
 import { strokeNamesForCharacter } from '@/lib/hanzi/stroke-names';
 import { isHanziCharacterData } from '@/lib/hanzi/loader';
-import corpus, { lesson4, lesson5, lesson6 } from '@/lib/active-corpus';
+import corpus, { lesson4, lesson5, lesson6, lesson7 } from '@/lib/active-corpus';
 
 const texts = [...corpus.vocabulary, ...corpus.phrases, ...corpus.dialogues.flatMap(d => d.turns),
-  ...lesson4.readings, ...lesson5.readings, ...lesson6.readings];
+  ...lesson4.readings, ...lesson5.readings, ...lesson6.readings, ...lesson7.readings];
 const corpusGlyphs = [...new Set(texts.flatMap(row => [...row.hanzi].filter(glyph => /\p{Script=Han}/u.test(glyph))))];
 
 describe('Hanzi: cobertura integral del catálogo', () => {
   it('conserva los objetivos y sus IDs, y hace consultables todas las referencias', () => {
-    expect(hanziCatalog).toHaveLength(378);
+    expect(hanziCatalog).toHaveLength(450);
     expect(new Set(hanziCatalog.map(c => c.id)).size).toBe(hanziCatalog.length);
     expect(new Set(hanziCatalog.map(c => c.hanzi)).size).toBe(hanziCatalog.length);
     expect(hanziCatalog.filter(c => c.writingRequired).map(c => c.id)).toEqual(canonicalCharacters.map(c => c.id));
@@ -34,7 +34,7 @@ describe('Hanzi: cobertura integral del catálogo', () => {
     for (const character of hanziCatalog) {
       const audio = audioForMandarinText(character.hanzi, character.pinyin);
       expect(audio, `${character.hanzi}: ${character.pinyin}`).toMatch(/^\/audio\/(mandarin|pinyin)\/[a-z0-9-]+\.mp3$/);
-      expect(statSync(`public${audio}`).size, character.hanzi).toBeGreaterThan(1024);
+      if (audio) expect(statSync(`public${audio}`).size, character.hanzi).toBeGreaterThan(1024);
       const data = JSON.parse(readFileSync(`public/hanzi-data/${character.hanzi}.json`, 'utf8'));
       expect(isHanziCharacterData(data), character.hanzi).toBe(true);
       expect(data.strokes, character.hanzi).toHaveLength(character.strokeCount);

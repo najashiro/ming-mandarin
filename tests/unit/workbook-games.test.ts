@@ -1,3 +1,4 @@
+import lesson7 from '@/data/lesson7-public.json';
 import { describe, expect, it } from 'vitest';
 import lesson6 from '@/data/lesson6-public.json';
 import lesson4 from '@/data/lesson4-public.json';
@@ -6,11 +7,11 @@ import type { CurriculumScope } from '@/data/types';
 import { getWorkbookQuestions, workbookModes, workbookQuestionEvidence } from '@/lib/workbook-games';
 import { normalizeAnswer } from '@/lib/pinyin';
 
-const all = getWorkbookQuestions('l1-l2-l3-l4-l5-l6');
+const all = getWorkbookQuestions('l1-l2-l3-l4-l5-l6-l7');
 
-describe('juegos adaptados de los cuadernos L1–L6', () => {
+describe('juegos adaptados de los cuadernos L1–L7', () => {
   it('ofrece las tres habilidades en cada lección sin mezclar alcances', () => {
-    expect(all).toHaveLength(96);
+    expect(all).toHaveLength(114);
     expect(new Set(all.map((question) => question.id)).size).toBe(all.length);
     for (const lesson of [1, 2, 3, 4, 5]) {
       const scope = `l${lesson}` as CurriculumScope;
@@ -118,12 +119,12 @@ describe('juegos adaptados de los cuadernos L1–L6', () => {
   it('enlaza las adaptaciones L4/L5/L6 con actividades existentes sin usar las que requieren audio ausente', () => {
     for (const question of all.filter((item) => item.lesson >= 4)) {
       const evidence = workbookQuestionEvidence[question.id];
-      const corpus = question.lesson === 4 ? lesson4.documentaryExercises : question.lesson === 6 ? lesson6.documentaryExercises : lesson5.documentaryExercises;
+      const corpus = question.lesson === 7 ? lesson7.documentaryExercises : question.lesson === 4 ? lesson4.documentaryExercises : question.lesson === 6 ? lesson6.documentaryExercises : lesson5.documentaryExercises;
       const exercise = corpus.find((item) => item.id === evidence.sourceExerciseId);
       expect(exercise, question.id).toBeDefined();
       expect(exercise!.requiresOriginalAudio, question.id).toBe(false);
       if (question.mode === 'complete') {
-        const normalizeBlanks = (value: string) => value.replace(/_+/g, '___');
+        const normalizeBlanks = (value: string) => value.replace(/[_＿]+/g, '___');
         expect(exercise!.texts.some((text) => normalizeBlanks(text).startsWith(question.context!)), question.id).toBe(true);
       }
     }

@@ -6,7 +6,7 @@ import type { CurriculumScope } from '@/data/types';
 import { getVocabularyLesson, getVocabularyMixSet, vocabularyCatalog, type ActiveWord } from '@/lib/vocabulary';
 import { scopeDefinitions } from '@/seed/curriculum';
 import { evaluateMix, isMixComplete, mixStats, startMix, type MixDifficulty, type MixPresentation, type MixResultSnapshot } from '@/lib/vocabulary-review';
-import { imageForWord, type VocabularyMediaEntry } from '@/lib/vocabulary-media';
+import { imageForVocabularyWord, type VocabularyMediaEntry } from '@/lib/vocabulary-media';
 import { mixImageLabelMask } from '@/lib/vocabulary-mix-image';
 import { useVocabularyState } from './useVocabularyState';
 import { VocabularyCard } from './VocabularyCard';
@@ -35,7 +35,7 @@ function MixQuestion({ word, presentation, media, autoPlayKey, autoPlayBlocked, 
 }) {
   // Mix uses the image as support alongside Hanzi, not as an image-only quiz.
   // Quiz eligibility also excludes ambiguous but useful, approved illustrations.
-  const image = presentation === 'image' ? imageForWord(word.id, media) : undefined;
+  const image = presentation === 'image' ? imageForVocabularyWord(word, media) : undefined;
   const labelMask = image ? mixImageLabelMask(image) : undefined;
   const [failedImage, setFailedImage] = useState<VocabularyMediaEntry | null>(null);
   const showPhoto = Boolean(image?.src && image !== failedImage);
@@ -85,7 +85,8 @@ export function VocabularyMix({ scope, userId, route, media }: { scope: Curricul
   const presentation = presentationOverride ?? session?.presentation ?? 'hanzi';
   const back = backState.turn === turnKey && backState.value;
   const autoPlayBlocked = blockedTurn === turnKey;
-  const word = currentId ? vocabularyCatalog.find(entry => entry.id === currentId) : undefined;
+  const mixCatalog = scope === 'l7' ? eligibleWords : vocabularyCatalog;
+  const word = currentId ? mixCatalog.find(entry => entry.id === currentId) : undefined;
   const selectedLessons = scopeDefinitions[session?.scope ?? scope].lessonIds;
   const currentLesson = selectedLessons.length === 1 ? selectedLessons[0] : word ? getVocabularyLesson(word) : undefined;
   const lessonLabel = currentLesson ? <p className="vocabulary-mix-lesson">Lección {currentLesson}</p> : null;
@@ -120,7 +121,7 @@ export function VocabularyMix({ scope, userId, route, media }: { scope: Curricul
   function startReview() {
     if (!session || !stats.incorrectIds.length) return;
     const id = crypto.randomUUID();
-    const words = stats.incorrectIds.map(id => vocabularyCatalog.find(word => word.id === id)).filter((entry): entry is (typeof vocabularyCatalog)[number] => Boolean(entry));
+    const words = stats.incorrectIds.map(id => mixCatalog.find(word => word.id === id)).filter((entry): entry is (typeof vocabularyCatalog)[number] => Boolean(entry));
     const next = startMix({ words, requestedSize: words.length, scope, difficulty: session.difficulty, presentation: session.presentation, userId, id, now: Date.now(), kind: 'review', originSessionId: session.id, originResult: session.originResult ?? snapshotOf(session) });
     update(previous => ({ ...previous, sessions: { ...previous.sessions, [scope]: next } }));
     setBackState({ turn: '', value: false });
@@ -196,7 +197,7 @@ export function VocabularyMix({ scope, userId, route, media }: { scope: Curricul
     <Scoreboard {...stats}/>
     <p>{stats.percentage}% de aciertos autoevaluados.</p>
     {session.originResult && <p className="vocabulary-mix-origin">La ronda original se conserva por separado.</p>}
-    {stats.incorrectIds.length > 0 && <details><summary>Ver incorrectas</summary><ul>{stats.incorrectIds.map(id => { const entry = vocabularyCatalog.find(word => word.id === id); return entry ? <li key={id}><Hanzi>{entry.hanzi}</Hanzi> · {entry.spanish}</li> : null; })}</ul></details>}
+    {stats.incorrectIds.length > 0 && <details><summary>Ver incorrectas</summary><ul>{stats.incorrectIds.map(id => { const entry = mixCatalog.find(word => word.id === id); return entry ? <li key={id}><Hanzi>{entry.hanzi}</Hanzi> · {entry.spanish}</li> : null; })}</ul></details>}
     {settings}
     <div className="vocabulary-mix-result-actions"><button type="button" onClick={startNormal}>Nueva partida</button>{stats.incorrectIds.length > 0 && <button type="button" onClick={startReview}>Repasar incorrectas ({stats.incorrectIds.length})</button>}<button type="button" onClick={() => router.push(`/study/${scope}/games`)}>Volver a Juegos</button></div>
   </section>;

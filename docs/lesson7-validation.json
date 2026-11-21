@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-20",
+  "branch": "codex/lesson7-corpus-ming-20261120",
+  "unitTests": 588,
+  "corpusTests": 193,
+  "browserCases": 39,
+  "browserEvidence": [
+    "tmp/lesson7/publish-e2e.log"
+  ],
+  "productionBuild": "passed",
+  "typecheck": "passed",
+  "eslint": "passed",
+  "pinyinAudit": "passed",
+  "missingEditorialAudio": 0,
+  "missingImages": 0,
+  "missingConstructionTokens": 0,
+  "missingWorkbookFragments": 0,
+  "localPreview": "http://127.0.0.1:3108/study/l7",
+  "deployed": false,
+  "originalBookAudioAvailable": false,
+  "audioReview": "Automated signal, transcription, homophone review and 14 audio-model checks; no independent human listening.",
+  "visualReview": "56 masters and desktop/iPhone rendered cards; model review, no independent human review.",
+  "publicationAuthorized": true
+}

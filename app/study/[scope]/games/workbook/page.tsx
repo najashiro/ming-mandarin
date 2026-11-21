@@ -22,7 +22,7 @@ export default async function WorkbookGamesPage({ params, searchParams }: {
   return <SiteShell><main>
     <LessonHeader eyebrow={`${getStudyScopeLabel(scope)} · PRACTICA JUGANDO`} title="Del cuaderno al juego" description="Tres formas de practicar lo que aprendes en tus libros. Piensa, prueba y aprende de cada respuesta."/>
     <CurriculumNav scope={scope} section="games/workbook"/>
-    {scope.split('-').includes('l6') && <p className="shell">Adaptación editorial de Míng para practicar. Las soluciones del juego no son una clave oficial del cuaderno.</p>}
+    {scope.split('-').some(lesson => ['l6', 'l7'].includes(lesson)) && <p className="shell">Adaptación editorial de Míng para practicar. Las soluciones del juego no son una clave oficial del cuaderno.</p>}
     <WorkbookGames key={`${scope}:${mode ?? 'all'}`} scope={scope} questions={getWorkbookQuestions(scope)} initialMode={mode}/>
   </main></SiteShell>;
 }

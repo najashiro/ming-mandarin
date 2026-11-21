@@ -1526,5 +1526,293 @@
   "竹": {
     "available": true,
     "strokeCount": 6
+  },
+  "板": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "买": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "苹": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "钱": {
+    "available": true,
+    "strokeCount": 10
+  },
+  "斤": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "块": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "题": {
+    "available": true,
+    "strokeCount": 15
+  },
+  "草": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "莓": {
+    "available": true,
+    "strokeCount": 10
+  },
+  "卖": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "尝": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "便": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "宜": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "件": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "衬": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "衫": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "售": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "货": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "员": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "试": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "当": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "然": {
+    "available": true,
+    "strokeCount": 12
+  },
+  "合": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "适": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "仔": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "裤": {
+    "available": true,
+    "strokeCount": 12
+  },
+  "羽": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "绒": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "服": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "黑": {
+    "available": true,
+    "strokeCount": 12
+  },
+  "色": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "绿": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "错": {
+    "available": true,
+    "strokeCount": 13
+  },
+  "些": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "衣": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "打": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "折": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "刷": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "卡": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "元": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "角": {
+    "available": true,
+    "strokeCount": 7
+  },
+  "毛": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "橙": {
+    "available": true,
+    "strokeCount": 16
+  },
+  "葡": {
+    "available": true,
+    "strokeCount": 12
+  },
+  "萄": {
+    "available": true,
+    "strokeCount": 11
+  },
+  "香": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "蕉": {
+    "available": true,
+    "strokeCount": 15
+  },
+  "樱": {
+    "available": true,
+    "strokeCount": 15
+  },
+  "桃": {
+    "available": true,
+    "strokeCount": 10
+  },
+  "裙": {
+    "available": true,
+    "strokeCount": 12
+  },
+  "恤": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "红": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "穿": {
+    "available": true,
+    "strokeCount": 9
+  },
+  "拍": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "吸": {
+    "available": true,
+    "strokeCount": 6
+  },
+  "烟": {
+    "available": true,
+    "strokeCount": 10
+  },
+  "称": {
+    "available": true,
+    "strokeCount": 10
+  },
+  "呼": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "民": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "币": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "能": {
+    "available": true,
+    "strokeCount": 10
+  },
+  "为": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "所": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "鞋": {
+    "available": true,
+    "strokeCount": 15
+  },
+  "难": {
+    "available": true,
+    "strokeCount": 10
+  },
+  "屯": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "雅": {
+    "available": true,
+    "strokeCount": 12
+  },
+  "宝": {
+    "available": true,
+    "strokeCount": 8
+  },
+  "装": {
+    "available": true,
+    "strokeCount": 12
+  },
+  "且": {
+    "available": true,
+    "strokeCount": 5
+  },
+  "手": {
+    "available": true,
+    "strokeCount": 4
+  },
+  "价": {
+    "available": true,
+    "strokeCount": 6
   }
 }

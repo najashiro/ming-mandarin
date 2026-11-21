@@ -1,0 +1,20 @@
+[
+  {
+    "id": "l7-9742babd3b7c1530",
+    "input": "樱",
+    "expectedPinyin": "yīng",
+    "source": "public/audio/mandarin/l5-29e72e25d19f0313.mp3",
+    "sourceInput": "英",
+    "sha256": "d65e4c3e96e486a681cecc73e13f972d7565fa1b99f9566cc92b1fe99db80b86",
+    "reason": "Exact isolated homophone, including tone; source already available or ASR exact."
+  },
+  {
+    "id": "l7-24e859b0bd874248",
+    "input": "萄",
+    "expectedPinyin": "táo",
+    "source": "public/audio/mandarin/l7-7e33135cd2fb9f73.mp3",
+    "sourceInput": "桃",
+    "sha256": "2ad2448a975af013997241fc0d64631a30f20f8bb7792ce92405d94759d600c3",
+    "reason": "Exact isolated homophone, including tone; source already available or ASR exact."
+  }
+]

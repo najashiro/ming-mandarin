@@ -10,6 +10,8 @@ const curriculum = JSON.parse(await readFile(join(root, 'data', 'lesson1-hanzi.j
 const lesson4 = JSON.parse(await readFile(join(root, 'data', 'lesson4-public.json'), 'utf8'));
 const lesson5 = JSON.parse(await readFile(join(root, 'data', 'lesson5-public.json'), 'utf8'));
 const lesson6 = JSON.parse(await readFile(join(root, 'data', 'lesson6-public.json'), 'utf8'));
+const lesson7 = JSON.parse(await readFile(join(root, 'data', 'lesson7-public.json'), 'utf8'));
+const lesson7Glyphs = [...new Set([...lesson7.vocabulary, ...lesson7.phrases, ...lesson7.readings, ...lesson7.characters].flatMap(row => [...row.hanzi].filter(glyph => /[\u3400-\u9fff]/.test(glyph))))];
 const lesson6Glyphs = [...new Set([...lesson6.vocabulary, ...lesson6.phrases, ...lesson6.readings, ...lesson6.characters].flatMap(row => [...row.hanzi].filter(glyph => /[\u3400-\u9fff]/.test(glyph))))];
 const lesson5Glyphs = [...new Set([...lesson5.vocabulary, ...lesson5.phrases, ...lesson5.readings, ...lesson5.characters].flatMap(row => [...row.hanzi].filter(glyph => /[\u3400-\u9fff]/.test(glyph))))];
 const curricularCharacters = curriculum.units.flatMap((unit) => [
@@ -28,7 +30,7 @@ try {
   // A first synchronization starts with an empty manifest.
 }
 
-const characters = [...new Set([...Object.keys(previousManifest), ...curricularCharacters, ...lesson4.characters.map(item => item.hanzi), ...lesson5Glyphs, ...lesson6Glyphs])];
+const characters = [...new Set([...Object.keys(previousManifest), ...curricularCharacters, ...lesson4.characters.map(item => item.hanzi), ...lesson5Glyphs, ...lesson6Glyphs, ...lesson7Glyphs])];
 const manifest = {};
 const added = [];
 for (const character of characters) {

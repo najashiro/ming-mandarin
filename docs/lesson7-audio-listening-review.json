@@ -1,0 +1,128 @@
+[
+  {
+    "id": "l7-a8360bba167463a2",
+    "input": "为",
+    "expectedPinyin": "wéi",
+    "sha256": "f30ab706247a319aed188ba049c6c399219807da8ccd78c20e0edbbf3cddf405",
+    "model": "gpt-audio-1.5",
+    "prompt": "Listen to this Mandarin Chinese teaching recording. First identify what is actually audible in pinyin with tones, without assuming any intended word. Then compare to intended 为 (wéi). Is it suitable as a pronunciation model? Be critical about initial consonants, final consonants, tones, omissions, and erhua. Reply as JSON only: {\"heardPinyin\":\"...\",\"verdict\":\"pass|fail|uncertain\",\"reason\":\"...\"}. Do not approve merely because the file has sound.",
+    "review": "{\"heardPinyin\":\"wei2\",\"verdict\":\"pass\",\"reason\":\"The initial 'w' and final 'ei' are clear; tone 2 rising contour matches 'wéi'. No omissions or inappropriate erhua. Suitable as a pronunciation model.\"}"
+  },
+  {
+    "id": "l7-326ca8dabb73f616",
+    "input": "仔",
+    "expectedPinyin": "zǎi",
+    "sha256": "08b6dced155e827568cf0934674cfb2fb3a7a77f56db3a0b6e1ba2039e93478e",
+    "model": "gpt-audio-1.5",
+    "prompt": "Listen to this Mandarin Chinese teaching recording. First identify what is actually audible in pinyin with tones, without assuming any intended word. Then compare to intended 仔 (zǎi). Is it suitable as a pronunciation model? Be critical about initial consonants, final consonants, tones, omissions, and erhua. Reply as JSON only: {\"heardPinyin\":\"...\",\"verdict\":\"pass|fail|uncertain\",\"reason\":\"...\"}. Do not approve merely because the file has sound.",
+    "review": "{\"heardPinyin\":\"zǎi\",\"verdict\":\"pass\",\"reason\":\"The pronunciation clearly has a 'z' initial and 'ai' final with a proper third tone contour, matching zǎi. No omissions or added erhua are present.\"}"
+  },
+  {
+    "id": "l7-1afb4a61ca04e83e",
+    "input": "便",
+    "expectedPinyin": "pián",
+    "sha256": "d3eabba6c94a842e889b97099baa56c8e86e1a31b286252167b4d5459f359320",
+    "model": "gpt-audio-1.5",
+    "prompt": "Listen to this Mandarin Chinese teaching recording. First identify what is actually audible in pinyin with tones, without assuming any intended word. Then compare to intended 便 (pián). Is it suitable as a pronunciation model? Be critical about initial consonants, final consonants, tones, omissions, and erhua. Reply as JSON only: {\"heardPinyin\":\"...\",\"verdict\":\"pass|fail|uncertain\",\"reason\":\"...\"}. Do not approve merely because the file has sound.",
+    "review": "{\"heardPinyin\":\"pián\",\"verdict\":\"pass\",\"reason\":\"The initial consonant 'p', final 'ian', and rising second tone are clearly articulated, matching the intended 便 (pián). There are no omissions or extra sounds like erhua.\"}"
+  },
+  {
+    "id": "l7-9b5e35d5b6db354b",
+    "input": "币",
+    "expectedPinyin": "bì",
+    "sha256": "34414f62d28a7ff150d9869d8f4538a7e9cb5e8a21a98b4a8a8b6791a3e9ed64",
+    "model": "gpt-audio-1.5",
+    "prompt": "Listen to this Mandarin Chinese teaching recording. First identify what is actually audible in pinyin with tones, without assuming any intended word. Then compare to intended 币 (bì). Is it suitable as a pronunciation model? Be critical about initial consonants, final consonants, tones, omissions, and erhua. Reply as JSON only: {\"heardPinyin\":\"...\",\"verdict\":\"pass|fail|uncertain\",\"reason\":\"...\"}. Do not approve merely because the file has sound.",
+    "review": "{\"heardPinyin\":\"bi4\",\"verdict\":\"pass\",\"reason\":\"The initial consonant 'b' and the final 'i' are clearly articulated and the falling fourth tone is accurate. There are no omissions or unnecessary erhua sounds. This matches the intended pronunciation of 币 (bì).\"}"
+  },
+  {
+    "id": "l7-85638de6c656a3dd",
+    "input": "恤",
+    "expectedPinyin": "xù",
+    "sha256": "4bdbd8fe52f65252fffc4daa3e5011be1271f8fb0d727891e933e8457cc42566",
+    "model": "gpt-audio-1.5",
+    "prompt": "Listen to this Mandarin Chinese teaching recording. First identify what is actually audible in pinyin with tones, without assuming any intended word. Then compare to intended 恤 (xù). Is it suitable as a pronunciation model? Be critical about initial consonants, final consonants, tones, omissions, and erhua. Reply as JSON only: {\"heardPinyin\":\"...\",\"verdict\":\"pass|fail|uncertain\",\"reason\":\"...\"}. Do not approve merely because the file has sound.",
+    "review": "{\"heardPinyin\":\"xù\",\"verdict\":\"pass\",\"reason\":\"The initial consonant 'x' and final 'u' are clear, and the falling tone (fourth tone) is accurately produced, matching the intended pronunciation of 恤 (xù).\"}"
+  },
+  {
+    "id": "l7-fa6fcd5fd3030e2f",
+    "input": "我想买点儿草莓。",
+    "expectedPinyin": "Wǒ xiǎng mǎi diǎnr cǎoméi.",
+    "sha256": "36a16cd0f55daeca3198d136bc72bc0e348e8f55addb625828b2630a1a56da7b",
+    "model": "gpt-audio-1.5",
+    "prompt": "Listen to this Mandarin Chinese teaching recording. First identify what is actually audible in pinyin with tones, without assuming any intended word. Then compare to intended 我想买点儿草莓。 (Wǒ xiǎng mǎi diǎnr cǎoméi.). Is it suitable as a pronunciation model? Be critical about initial consonants, final consonants, tones, omissions, and erhua. Reply as JSON only: {\"heardPinyin\":\"...\",\"verdict\":\"pass|fail|uncertain\",\"reason\":\"...\"}. Do not approve merely because the file has sound.",
+    "review": "{\"heardPinyin\":\"wo3 xiang3 mai3 dian3r cao3 mei2\",\"verdict\":\"pass\",\"reason\":\"All syllables are clearly pronounced with correct initials and finals. The tones mostly match the intended ones and the erhua on 'dianr' is present. This is suitable as a pronunciation model.\"}"
+  },
+  {
+    "id": "l7-db23bcd125a18218",
+    "input": "有，这条牛仔裤怎么样？",
+    "expectedPinyin": "Yǒu, zhè tiáo niúzǎikù zěnmeyàng?",
+    "sha256": "1790eeba4f905e71e473672b088b72c219e2e306428237828038959884f29d4d",
+    "model": "gpt-audio-1.5",
+    "prompt": "Listen to this Mandarin Chinese teaching recording. First identify what is actually audible in pinyin with tones, without assuming any intended word. Then compare to intended 有，这条牛仔裤怎么样？ (Yǒu, zhè tiáo niúzǎikù zěnmeyàng?). Is it suitable as a pronunciation model? Be critical about initial consonants, final consonants, tones, omissions, and erhua. Reply as JSON only: {\"heardPinyin\":\"...\",\"verdict\":\"pass|fail|uncertain\",\"reason\":\"...\"}. Do not approve merely because the file has sound.",
+    "review": "{\"heardPinyin\":\"yǒu, zhè tiáo niú zǎi kù zěn me yàng\",\"verdict\":\"pass\",\"reason\":\"The recording clearly articulates the initial consonants, finals, and tones matching 有，这条牛仔裤怎么样? without omissions or irregularities like erhua. All tones correspond correctly and pronunciation is natural and accurate.\"}"
+  },
+  {
+    "id": "l7-9742babd3b7c1530",
+    "input": "樱",
+    "expectedPinyin": "yīng",
+    "sha256": "d65e4c3e96e486a681cecc73e13f972d7565fa1b99f9566cc92b1fe99db80b86",
+    "model": "gpt-audio-1.5",
+    "prompt": "Listen to this Mandarin Chinese teaching recording. First identify what is actually audible in pinyin with tones, without assuming any intended word. Then compare to intended 樱 (yīng). Is it suitable as a pronunciation model? Be critical about initial consonants, final consonants, tones, omissions, and erhua. Reply as JSON only: {\"heardPinyin\":\"...\",\"verdict\":\"pass|fail|uncertain\",\"reason\":\"...\"}. Do not approve merely because the file has sound.",
+    "review": "{\"heardPinyin\":\"ying1\",\"verdict\":\"pass\",\"reason\":\"The initial 'y' and final 'ing' are clear with a high level tone matching yīng (1st tone). There are no omissions or unwanted modifications, and the pronunciation is suitable as a model.\"}"
+  },
+  {
+    "id": "l7-7491c99454b1c155",
+    "input": "绿",
+    "expectedPinyin": "lǜ",
+    "sha256": "c85eb6fdb2b78a0e0a37a426284dfd0d7ee1421ac860a6beb66d8518ab76f8ef",
+    "model": "gpt-audio-1.5",
+    "prompt": "Listen to this Mandarin Chinese teaching recording. First identify what is actually audible in pinyin with tones, without assuming any intended word. Then compare to intended 绿 (lǜ). Is it suitable as a pronunciation model? Be critical about initial consonants, final consonants, tones, omissions, and erhua. Reply as JSON only: {\"heardPinyin\":\"...\",\"verdict\":\"pass|fail|uncertain\",\"reason\":\"...\"}. Do not approve merely because the file has sound.",
+    "review": "{\"heardPinyin\":\"lü4\",\"verdict\":\"pass\",\"reason\":\"The initial consonant 'l', the vowel 'ü', and the falling tone were all clear and accurate, making it a suitable model for 绿 (lǜ).\"}"
+  },
+  {
+    "id": "l7-24e859b0bd874248",
+    "input": "萄",
+    "expectedPinyin": "táo",
+    "sha256": "2ad2448a975af013997241fc0d64631a30f20f8bb7792ce92405d94759d600c3",
+    "model": "gpt-audio-1.5",
+    "prompt": "Listen to this Mandarin Chinese teaching recording. First identify what is actually audible in pinyin with tones, without assuming any intended word. Then compare to intended 萄 (táo). Is it suitable as a pronunciation model? Be critical about initial consonants, final consonants, tones, omissions, and erhua. Reply as JSON only: {\"heardPinyin\":\"...\",\"verdict\":\"pass|fail|uncertain\",\"reason\":\"...\"}. Do not approve merely because the file has sound.",
+    "review": "{\"heardPinyin\":\"táo\",\"verdict\":\"pass\",\"reason\":\"The pronunciation features a clear 't' initial, the 'ao' final without distortion, and maintains a rising second tone. There are no omissions or added sounds such as erhua.\"}"
+  },
+  {
+    "id": "l7-33a6686a2b457c46",
+    "input": "周末，我去市场买水果。我想买点儿草莓。草莓十二块一斤，我买两斤，老板说可以给我打九折，我很高兴。",
+    "expectedPinyin": "Zhōumò, wǒ qù shìchǎng mǎi shuǐguǒ. Wǒ xiǎng mǎi diǎnr cǎoméi. Cǎoméi shí’èr kuài yì jīn, wǒ mǎi liǎng jīn, lǎobǎn shuō kěyǐ gěi wǒ dǎ jiǔ zhé, wǒ hěn gāoxìng.",
+    "sha256": "4d2d77abebfa53f56c8bbdea6b8079df1569a58d2eb63cebfb72bb8b740048a5",
+    "model": "gpt-audio-1.5",
+    "prompt": "Listen to this Mandarin Chinese teaching recording. First identify what is actually audible in pinyin with tones, without assuming any intended word. Then compare to intended 周末，我去市场买水果。我想买点儿草莓。草莓十二块一斤，我买两斤，老板说可以给我打九折，我很高兴。 (Zhōumò, wǒ qù shìchǎng mǎi shuǐguǒ. Wǒ xiǎng mǎi diǎnr cǎoméi. Cǎoméi shí’èr kuài yì jīn, wǒ mǎi liǎng jīn, lǎobǎn shuō kěyǐ gěi wǒ dǎ jiǔ zhé, wǒ hěn gāoxìng.). Is it suitable as a pronunciation model? Be critical about initial consonants, final consonants, tones, omissions, and erhua. Reply as JSON only: {\"heardPinyin\":\"...\",\"verdict\":\"pass|fail|uncertain\",\"reason\":\"...\"}. Do not approve merely because the file has sound.",
+    "review": "{\"heardPinyin\":\"Zhōumò, wǒ qù shìchǎng mǎi shuǐguǒ. Wǒ xiǎng mǎi diǎr cǎoméi. Cǎoméi shí’èr kuài yì jīn, wǒ mǎi liǎng jīn, lǎobǎn shuō kěyǐ gěi wǒ dǎ jiǔ zhé, wǒ hěn gāoxìng.\",\"verdict\":\"pass\",\"reason\":\"Initial and final consonants were clear and aligned with standard pronunciation. Tones were accurate and distinguishable. The slight erhua used in 'diǎr' sounded natural. No significant omissions or errors were detected.\"}"
+  },
+  {
+    "id": "l7-64a3112299412f7a",
+    "input": "在中国，女鞋最大的号是39号或40号，很多外国女孩儿穿41号或42号的鞋，所以她们在中国很难买到合适的鞋。同样，中国女孩儿在国外很多国家也很难买到合适的鞋，国外的很多衣服和鞋都太大了。在北京，很多外国女孩儿去三里屯或雅宝路买衣服和鞋，那儿有很多外国鞋店和服装店。",
+    "expectedPinyin": "Zài Zhōngguó, nǚxié zuì dà de hào shì sānshíjiǔ hào huò sìshí hào, hěn duō wàiguó nǚháir chuān sìshíyī hào huò sìshí’èr hào de xié, suǒyǐ tāmen zài Zhōngguó hěn nán mǎidào héshì de xié. Tóngyàng, Zhōngguó nǚháir zài guówài hěn duō guójiā yě hěn nán mǎidào héshì de xié, guówài de hěn duō yīfu hé xié dōu tài dà le. Zài Běijīng, hěn duō wàiguó nǚháir qù Sānlǐtún huò Yǎbǎolù mǎi yīfu hé xié, nàr yǒu hěn duō wàiguó xiédiàn hé fúzhuāngdiàn.",
+    "sha256": "13808544b5e3bda112bd4c74836020344f7f62122663efa9a44a57274bfa9a2c",
+    "model": "gpt-audio-1.5",
+    "prompt": "Listen to this Mandarin Chinese teaching recording. First identify what is actually audible in pinyin with tones, without assuming any intended word. Then compare to intended 在中国，女鞋最大的号是39号或40号，很多外国女孩儿穿41号或42号的鞋，所以她们在中国很难买到合适的鞋。同样，中国女孩儿在国外很多国家也很难买到合适的鞋，国外的很多衣服和鞋都太大了。在北京，很多外国女孩儿去三里屯或雅宝路买衣服和鞋，那儿有很多外国鞋店和服装店。 (Zài Zhōngguó, nǚxié zuì dà de hào shì sānshíjiǔ hào huò sìshí hào, hěn duō wàiguó nǚháir chuān sìshíyī hào huò sìshí’èr hào de xié, suǒyǐ tāmen zài Zhōngguó hěn nán mǎidào héshì de xié. Tóngyàng, Zhōngguó nǚháir zài guówài hěn duō guójiā yě hěn nán mǎidào héshì de xié, guówài de hěn duō yīfu hé xié dōu tài dà le. Zài Běijīng, hěn duō wàiguó nǚháir qù Sānlǐtún huò Yǎbǎolù mǎi yīfu hé xié, nàr yǒu hěn duō wàiguó xiédiàn hé fúzhuāngdiàn.). Is it suitable as a pronunciation model? Be critical about initial consonants, final consonants, tones, omissions, and erhua. Reply as JSON only: {\"heardPinyin\":\"...\",\"verdict\":\"pass|fail|uncertain\",\"reason\":\"...\"}. Do not approve merely because the file has sound.",
+    "review": "{\"heardPinyin\":\"zài zhōng guó, nǚ xié zuì dà de hào shì sān shí jiǔ hào huò sì shí hào. hěn duō wài guó nǚ hái(r) chuān sì shí yī hào huò sì shí èr hào de xié, suǒ yǐ tā men zài zhōng guó hěn nán mǎi dào hé shì de xié. tóng yàng, zhōng guó nǚ hái(r) zài guó wài hěn duō guó jiā yě hěn nán mǎi dào hé shì de xié, guó wài de hěn duō yī fu hé xié dōu tài dà le. zài běi jīng, hěn duō wài guó nǚ hái(r) qù sān lǐ tún huò yǎ bǎo lù mǎi yī fu hé xié, nàr yǒu hěn duō wài guó xié diàn hé fú zhuāng diàn.\",\"verdict\":\"pass\",\"reason\":\"The recording matches the intended pinyin closely, with clear initial and final consonants and correct tones. Minor erhua endings on 'nǚ háir' are present but acceptable. No significant omissions or tonal errors detected.\"}"
+  },
+  {
+    "id": "l7-eb080e12ac204e15",
+    "input": "恰",
+    "expectedPinyin": "qià",
+    "sha256": "9d9ef7fd7f897a6ad561d74a56818c075d59ded1a5fb1883970ac532334f4f43",
+    "model": "gpt-audio-1.5",
+    "prompt": "Listen to this Mandarin Chinese teaching recording. First identify what is actually audible in pinyin with tones, without assuming any intended word. Then compare to intended 恰 (qià). Is it suitable as a pronunciation model? Be critical about initial consonants, final consonants, tones, omissions, and erhua. Reply as JSON only: {\"heardPinyin\":\"...\",\"verdict\":\"pass|fail|uncertain\",\"reason\":\"...\"}. Do not approve merely because the file has sound.",
+    "review": "{\"heardPinyin\":\"qià\",\"verdict\":\"pass\",\"reason\":\"The initial consonant 'q' is clear with proper aspiration, the vowel is articulated accurately, and the falling fourth tone is distinct; no omissions or unintended erhua are present.\"}"
+  },
+  {
+    "id": "l7-6ba966ef55572336",
+    "input": "您要什么？饺子多少钱一斤？二十块一斤。包子呢？包子两块钱一个。我要半斤饺子，四个包子。一共十八块钱。不好意思，这是一百块。我找您八十二块。",
+    "expectedPinyin": "Nín yào shénme? Jiǎozi duōshao qián yì jīn? Èrshí kuài yì jīn. Bāozi ne? Bāozi liǎng kuài qián yí ge. Wǒ yào bàn jīn jiǎozi, sì ge bāozi. Yígòng shíbā kuài qián. Bù hǎoyìsi, zhè shì yìbǎi kuài. Wǒ zhǎo nín bāshí’èr kuài.",
+    "sha256": "5a4ed6b57c7bcd0812058962bf8c133d22e7f95713858ec065b064b66ebe42be",
+    "model": "gpt-audio-1.5",
+    "prompt": "Listen to this Mandarin Chinese teaching recording. First identify what is actually audible in pinyin with tones, without assuming any intended word. Then compare to intended 您要什么？饺子多少钱一斤？二十块一斤。包子呢？包子两块钱一个。我要半斤饺子，四个包子。一共十八块钱。不好意思，这是一百块。我找您八十二块。 (Nín yào shénme? Jiǎozi duōshao qián yì jīn? Èrshí kuài yì jīn. Bāozi ne? Bāozi liǎng kuài qián yí ge. Wǒ yào bàn jīn jiǎozi, sì ge bāozi. Yígòng shíbā kuài qián. Bù hǎoyìsi, zhè shì yìbǎi kuài. Wǒ zhǎo nín bāshí’èr kuài.). Is it suitable as a pronunciation model? Be critical about initial consonants, final consonants, tones, omissions, and erhua. Reply as JSON only: {\"heardPinyin\":\"...\",\"verdict\":\"pass|fail|uncertain\",\"reason\":\"...\"}. Do not approve merely because the file has sound.",
+    "review": "{\"heardPinyin\":\"nín yào shénme? jiǎozi duōshao qián yì jīn? èrshí kuài yì jīn. bāozi ne? bāozi liǎng kuài qián yí ge. wǒ yào bàn jīn jiǎozi, sì ge bāozi. yígòng shíbā kuài qián. bù hǎoyìsi, zhè shì yì bǎi kuài. wǒ zhǎo nín bāshí'èr kuài.\",\"verdict\":\"pass\",\"reason\":\"The initial and final consonants were clear, tones were accurate throughout, and there were no notable omissions. The pronunciation closely matched the intended phrases, making it suitable as a pronunciation model.\"}"
+  }
+]

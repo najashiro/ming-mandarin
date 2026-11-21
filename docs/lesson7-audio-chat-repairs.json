@@ -1,0 +1,32 @@
+[
+  {
+    "id": "l7-a8360bba167463a2",
+    "input": "为",
+    "expectedPinyin": "wéi",
+    "model": "gpt-audio-1.5",
+    "voice": "alloy",
+    "prompt": "只朗读一次汉字“围”。这是第二声 wéi，音高明显从中低升到高。不是第四声 wèi。不要说明，不要读拼音。",
+    "returnedTranscript": "围",
+    "sha256": "f30ab706247a319aed188ba049c6c399219807da8ccd78c20e0edbbf3cddf405"
+  },
+  {
+    "id": "l7-fa6fcd5fd3030e2f",
+    "input": "我想买点儿草莓。",
+    "expectedPinyin": "Wǒ xiǎng mǎi diǎnr cǎoméi.",
+    "model": "gpt-audio-1.5",
+    "voice": "alloy",
+    "prompt": "请自然地朗读这句话一次：“我想买点儿草莓。” 请用标准北京普通话，点儿读一个清楚的儿化音节 diǎnr，舌尖卷起，保留儿化。只读句子，不解释。",
+    "returnedTranscript": "我想买点儿草莓。",
+    "sha256": "36a16cd0f55daeca3198d136bc72bc0e348e8f55addb625828b2630a1a56da7b"
+  },
+  {
+    "id": "l7-eb080e12ac204e15",
+    "input": "恰",
+    "expectedPinyin": "qià",
+    "model": "gpt-audio-1.5",
+    "voice": "alloy",
+    "prompt": "只朗读一次汉字“洽”。这是标准普通话 qià，第四声，声母是舌面前音 q，韵母 ia。不要读成 chà 或 xià。不要解释，不要读拼音。",
+    "returnedTranscript": "洽",
+    "sha256": "9d9ef7fd7f897a6ad561d74a56818c075d59ded1a5fb1883970ac532334f4f43"
+  }
+]

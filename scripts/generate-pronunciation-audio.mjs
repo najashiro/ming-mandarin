@@ -7,6 +7,8 @@ import { fileURLToPath } from 'node:url';
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectDirectory = path.resolve(scriptDirectory, '..');
 const manifestDefinitions = [
+  { path: path.join(projectDirectory, 'docs', 'lesson7-audio-carrier-plan.json'), directory: path.join(projectDirectory, 'output', 'audio', 'lesson7-carriers'), scope: 'lesson7-carriers' },
+  { path: path.join(projectDirectory, 'data', 'lesson7-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin'), scope: 'lesson7' },
   { path: path.join(projectDirectory, 'data', 'vocabulary-example-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin'), scope: 'vocabulary-examples' },
   { path: path.join(projectDirectory, 'data', 'vocabulary-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin'), scope: 'vocabulary' },
   { path: path.join(projectDirectory, 'data', 'hanzi-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin'), scope: 'hanzi' },
@@ -37,7 +39,7 @@ if (!apiKey && !dryRun) {
   process.exit(1);
 }
 
-const manifests = await Promise.all(manifestDefinitions.filter(definition => !scope || definition.scope === scope).map(async (definition) => ({
+const manifests = await Promise.all(manifestDefinitions.filter(definition => scope ? definition.scope === scope : definition.scope !== 'lesson7-carriers').map(async (definition) => ({
   ...definition,
   clips: JSON.parse(await readFile(definition.path, 'utf8')).clips,
 })));
@@ -92,9 +94,9 @@ while (cursor < selectedClips.length) {
     },
     body: JSON.stringify({
       model: process.env.OPENAI_TTS_MODEL || 'gpt-4o-mini-tts',
-      voice,
+      voice: clip.voice || voice,
       input: clip.speechInput || clip.input,
-      instructions: `${baseInstructions} ${clip.instructions}`,
+      instructions: clip.standaloneInstructions || `${baseInstructions} ${clip.instructions}`,
       response_format: 'mp3'
     })
     });
@@ -117,6 +119,6 @@ while (cursor < selectedClips.length) {
   if (generated % 25 === 0) console.log(`Generados: ${generated}/${selectedClips.length}`);
 }
 }
-await Promise.all(Array.from({ length: scope === 'vocabulary-examples' || scope === 'vocabulary' || scope === 'hanzi' || scope === 'hide-and-seek' || scope === 'directions' || scope === 'games' || scope === 'time' || scope === 'lesson4' || scope === 'lesson5' ? 3 : 1 }, () => generateNext()));
+await Promise.all(Array.from({ length: scope === 'lesson7-carriers' || scope === 'lesson7' || scope === 'vocabulary-examples' || scope === 'vocabulary' || scope === 'hanzi' || scope === 'hide-and-seek' || scope === 'directions' || scope === 'games' || scope === 'time' || scope === 'lesson4' || scope === 'lesson5' ? 3 : 1 }, () => generateNext()));
 
 console.log(`Listo: ${generated} clips nuevos; ${selectedClips.length - generated} ya existentes.`);

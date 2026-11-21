@@ -1,3 +1,4 @@
+import lesson7 from './lesson7-public.json';
 import type { CurriculumScope } from './types';
 import { cleanChinese, gamesContent, type ConversationChallenge } from './games-curriculum';
 
@@ -10,7 +11,7 @@ type MissionTurn = {
 
 type MissionDefinition = {
   id: string;
-  lesson: 1 | 2 | 3 | 5 | 6;
+  lesson: 1 | 2 | 3 | 5 | 6 | 7;
   title: string;
   role: string;
   partner: string;
@@ -22,6 +23,7 @@ type MissionDefinition = {
 // Role cards are pedagogical framing in Spanish. All Chinese, readings and
 // accepted responses resolve from the existing curriculum, without new keys.
 export const conversationMissionDefinitions: MissionDefinition[] = [
+  ...lesson7.conversationPractice.map(mission => ({ ...mission, lesson: 7 as const })),
   { id: 'campus-l6', lesson: 6, title: 'Ayuda a un estudiante nuevo', role: 'Ding Libo', partner: 'Un estudiante nuevo',
     objective: 'Recuperar las indicaciones del diálogo del libro.', facts: ['Comedor: a la derecha de la entrada.', 'Biblioteca: al norte del comedor.', 'Banco: al este de la biblioteca.', 'Edificio de aulas: al este del comedor.'],
     turns: [

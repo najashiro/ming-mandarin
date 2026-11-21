@@ -1,3 +1,4 @@
+import lesson7References from './lesson7-reference-hanzi.json';
 /**
  * Searchable reference Hanzi for the lessons and time game. They are excluded from
  * curriculum writing targets and progress calculation. A future audited lesson
@@ -34,6 +35,7 @@ export const supplementalHanzi = [
 })) as SupplementalHanziEntry[];
 
 const vocabularyReferences: SupplementalHanziEntry[] = [
+  ...lesson7References.map(entry => ({ ...entry, referenceLessons: [7] })),
   ...lesson6References.map(entry => ({ ...entry, referenceLessons: [6] })),
   ...vocabularyHanzi.map(entry => ({ ...entry, referenceLessons: [3] })),
   ...lesson5References.map(entry => ({ ...entry, referenceLessons: [5] })),

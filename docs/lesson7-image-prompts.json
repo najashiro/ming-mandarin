@@ -1,0 +1,898 @@
+{
+  "styleId": "ming-vocabulary-transparent-subject-golden-v2",
+  "authorization": "User approved audio and images on 2026-11-20",
+  "entries": [
+    {
+      "wordId": "v-草莓",
+      "hanzi": "草莓",
+      "pinyin": "cǎoméi",
+      "spanish": "fresa",
+      "slug": "strawberries",
+      "kind": "photo",
+      "prompt": "Use case: photorealistic-natural. Asset for a Mandarin vocabulary learning card. Create ONE clean isolated photographic subject: Three ripe red strawberries with fresh green leafy caps, one cut half showing its pale center and red flesh, tiny realistic seeds.\nComposition: CENTER the complete subject on a landscape canvas with at least 15 percent completely empty margin on ALL four sides. Do not push the subject toward an edge. We will position the cutout inside the card later. Preserve all extremities and complete objects.\nBackground: genuine transparent alpha, absolutely no white, gray, ivory or colored rectangle, no checkerboard, no studio sweep, no floor or opaque shadow. All canvas edges and corners must be fully transparent. Natural diffuse lighting, accurate proportions and colors, realistic crisp textures, no halo. No writing, Chinese characters, pinyin, UI, labels, logos, watermark or frame. Deliver only the fully contained transparent cutout.",
+      "master": "output/imagegen/lesson7/strawberries.png",
+      "status": "approved",
+      "model": "built-in image_gen",
+      "assetWordId": "v-草莓"
+    },
+    {
+      "wordId": "v-衬衫",
+      "hanzi": "衬衫",
+      "pinyin": "chènshān",
+      "spanish": "camisa; blusa",
+      "slug": "shirt",
+      "kind": "photo",
+      "prompt": "Use case: photorealistic-natural. Asset for a Mandarin vocabulary learning card. Create ONE clean isolated photographic subject: One complete pale blue long-sleeve button-down shirt, collar, buttons, both sleeves and bottom hem visible, neatly displayed upright with natural fabric volume.\nComposition: CENTER the complete subject on a landscape canvas with at least 15 percent completely empty margin on ALL four sides. Do not push the subject toward an edge. We will position the cutout inside the card later. Preserve all extremities and complete objects.\nBackground: genuine transparent alpha, absolutely no white, gray, ivory or colored rectangle, no checkerboard, no studio sweep, no floor or opaque shadow. All canvas edges and corners must be fully transparent. Natural diffuse lighting, accurate proportions and colors, realistic crisp textures, no halo. No writing, Chinese characters, pinyin, UI, labels, logos, watermark or frame. Deliver only the fully contained transparent cutout.",
+      "master": "output/imagegen/lesson7/shirt.png",
+      "status": "approved",
+      "model": "built-in image_gen",
+      "assetWordId": "v-衬衫"
+    },
+    {
+      "wordId": "v-牛仔裤",
+      "hanzi": "牛仔裤",
+      "pinyin": "niúzǎikù",
+      "spanish": "pantalones vaqueros",
+      "slug": "jeans",
+      "kind": "photo",
+      "prompt": "Use case: photorealistic-natural. Asset for a Mandarin vocabulary learning card. Create ONE clean isolated photographic subject: One complete pair of medium blue denim jeans, full waistband and both legs with all cuffs visible, authentic seams and denim texture.\nComposition: CENTER the complete subject on a landscape canvas with at least 15 percent completely empty margin on ALL four sides. Do not push the subject toward an edge. We will position the cutout inside the card later. Preserve all extremities and complete objects.\nBackground: genuine transparent alpha, absolutely no white, gray, ivory or colored rectangle, no checkerboard, no studio sweep, no floor or opaque shadow. All canvas edges and corners must be fully transparent. Natural diffuse lighting, accurate proportions and colors, realistic crisp textures, no halo. No writing, Chinese characters, pinyin, UI, labels, logos, watermark or frame. Deliver only the fully contained transparent cutout.",
+      "master": "output/imagegen/lesson7/jeans.png",
+      "status": "approved",
+      "model": "built-in image_gen",
+      "assetWordId": "v-牛仔裤"
+    },
+    {
+      "wordId": "v-羽绒服",
+      "hanzi": "羽绒服",
+      "pinyin": "yǔróngfú",
+      "spanish": "abrigo de plumas",
+      "slug": "down-coat",
+      "kind": "photo",
+      "prompt": "Use case: photorealistic-natural. Asset for a Mandarin vocabulary learning card. Create ONE clean isolated photographic subject: One complete knee-length warm burgundy quilted down puffer coat with hood and sleeves, unbranded, softly padded horizontal baffles.\nComposition: CENTER the complete subject on a landscape canvas with at least 15 percent completely empty margin on ALL four sides. Do not push the subject toward an edge. We will position the cutout inside the card later. Preserve all extremities and complete objects.\nBackground: genuine transparent alpha, absolutely no white, gray, ivory or colored rectangle, no checkerboard, no studio sweep, no floor or opaque shadow. All canvas edges and corners must be fully transparent. Natural diffuse lighting, accurate proportions and colors, realistic crisp textures, no halo. No writing, Chinese characters, pinyin, UI, labels, logos, watermark or frame. Deliver only the fully contained transparent cutout.",
+      "master": "output/imagegen/lesson7/down-coat.png",
+      "status": "approved",
+      "model": "built-in image_gen",
+      "assetWordId": "v-羽绒服"
+    },
+    {
+      "wordId": "v-衣服",
+      "hanzi": "衣服",
+      "pinyin": "yīfu",
+      "spanish": "ropa",
+      "slug": "clothing",
+      "kind": "photo",
+      "prompt": "Use case: photorealistic-natural. Asset for a Mandarin vocabulary learning card. Create ONE clean isolated photographic subject: A compact freestanding clothing rail holding three complete contrasting garments: a shirt, a skirt and a coat. Full rail and feet visible, clothing is the main subject.\nComposition: CENTER the complete subject on a landscape canvas with at least 15 percent completely empty margin on ALL four sides. Do not push the subject toward an edge. We will position the cutout inside the card later. Preserve all extremities and complete objects.\nBackground: genuine transparent alpha, absolutely no white, gray, ivory or colored rectangle, no checkerboard, no studio sweep, no floor or opaque shadow. All canvas edges and corners must be fully transparent. Natural diffuse lighting, accurate proportions and colors, realistic crisp textures, no halo. No writing, Chinese characters, pinyin, UI, labels, logos, watermark or frame. Deliver only the fully contained transparent cutout.",
+      "master": "output/imagegen/lesson7/clothing.png",
+      "status": "approved",
+      "model": "built-in image_gen",
+      "assetWordId": "v-衣服"
+    },
+    {
+      "wordId": "v-卡",
+      "hanzi": "卡",
+      "pinyin": "kǎ",
+      "spanish": "tarjeta",
+      "slug": "bank-card",
+      "kind": "photo",
+      "prompt": "Use case: photorealistic-natural. Asset for a Mandarin vocabulary learning card. Create ONE clean isolated photographic subject: One generic unbranded bank payment card angled slightly in perspective, dark jade color with a gold chip and small contactless symbol. No card number, no personal data, no letters, no bank or company logo. All four rounded corners visible.\nComposition: CENTER the complete subject on a landscape canvas with at least 15 percent completely empty margin on ALL four sides. Do not push the subject toward an edge. We will position the cutout inside the card later. Preserve all extremities and complete objects.\nBackground: genuine transparent alpha, absolutely no white, gray, ivory or colored rectangle, no checkerboard, no studio sweep, no floor or opaque shadow. All canvas edges and corners must be fully transparent. Natural diffuse lighting, accurate proportions and colors, realistic crisp textures, no halo. No writing, Chinese characters, pinyin, UI, labels, logos, watermark or frame. Deliver only the fully contained transparent cutout.",
+      "master": "output/imagegen/lesson7/bank-card.png",
+      "status": "approved",
+      "model": "built-in image_gen",
+      "assetWordId": "v-卡"
+    },
+    {
+      "wordId": "v-橙子",
+      "hanzi": "橙子",
+      "pinyin": "chéngzi",
+      "spanish": "naranja",
+      "slug": "orange",
+      "kind": "photo",
+      "prompt": "Use case: photorealistic-natural. Asset for a Mandarin vocabulary learning card. Create ONE clean isolated photographic subject: One whole bright orange and one cut orange half, with juicy orange segments and natural textured rind. No other fruit.\nComposition: CENTER the complete subject on a landscape canvas with at least 15 percent completely empty margin on ALL four sides. Do not push the subject toward an edge. We will position the cutout inside the card later. Preserve all extremities and complete objects.\nBackground: genuine transparent alpha, absolutely no white, gray, ivory or colored rectangle, no checkerboard, no studio sweep, no floor or opaque shadow. All canvas edges and corners must be fully transparent. Natural diffuse lighting, accurate proportions and colors, realistic crisp textures, no halo. No writing, Chinese characters, pinyin, UI, labels, logos, watermark or frame. Deliver only the fully contained transparent cutout.",
+      "master": "output/imagegen/lesson7/orange.png",
+      "status": "approved",
+      "model": "built-in image_gen",
+      "assetWordId": "v-橙子"
+    },
+    {
+      "wordId": "v-葡萄",
+      "hanzi": "葡萄",
+      "pinyin": "pútao",
+      "spanish": "uva",
+      "slug": "grapes",
+      "kind": "photo",
+      "prompt": "Use case: photorealistic-natural. Asset for a Mandarin vocabulary learning card. Create ONE clean isolated photographic subject: One lush small bunch of purple table grapes with its green stem and a single small leaf. Every grape contained inside the image.\nComposition: CENTER the complete subject on a landscape canvas with at least 15 percent completely empty margin on ALL four sides. Do not push the subject toward an edge. We will position the cutout inside the card later. Preserve all extremities and complete objects.\nBackground: genuine transparent alpha, absolutely no white, gray, ivory or colored rectangle, no checkerboard, no studio sweep, no floor or opaque shadow. All canvas edges and corners must be fully transparent. Natural diffuse lighting, accurate proportions and colors, realistic crisp textures, no halo. No writing, Chinese characters, pinyin, UI, labels, logos, watermark or frame. Deliver only the fully contained transparent cutout.",
+      "master": "output/imagegen/lesson7/grapes.png",
+      "status": "approved",
+      "model": "built-in image_gen",
+      "assetWordId": "v-葡萄"
+    },
+    {
+      "wordId": "v-香蕉",
+      "hanzi": "香蕉",
+      "pinyin": "xiāngjiāo",
+      "spanish": "plátano",
+      "slug": "bananas",
+      "kind": "photo",
+      "prompt": "Use case: photorealistic-natural. Asset for a Mandarin vocabulary learning card. Create ONE clean isolated photographic subject: One small bunch of three ripe yellow bananas with brown-tipped ends, completely visible and naturally curved. No other fruit.\nComposition: CENTER the complete subject on a landscape canvas with at least 15 percent completely empty margin on ALL four sides. Do not push the subject toward an edge. We will position the cutout inside the card later. Preserve all extremities and complete objects.\nBackground: genuine transparent alpha, absolutely no white, gray, ivory or colored rectangle, no checkerboard, no studio sweep, no floor or opaque shadow. All canvas edges and corners must be fully transparent. Natural diffuse lighting, accurate proportions and colors, realistic crisp textures, no halo. No writing, Chinese characters, pinyin, UI, labels, logos, watermark or frame. Deliver only the fully contained transparent cutout.",
+      "master": "output/imagegen/lesson7/bananas.png",
+      "status": "approved",
+      "model": "built-in image_gen",
+      "assetWordId": "v-香蕉"
+    },
+    {
+      "wordId": "v-樱桃",
+      "hanzi": "樱桃",
+      "pinyin": "yīngtao",
+      "spanish": "cereza",
+      "slug": "cherries",
+      "kind": "photo",
+      "prompt": "Use case: photorealistic-natural. Asset for a Mandarin vocabulary learning card. Create ONE clean isolated photographic subject: Five glossy ripe red cherries with slender green stems, two joined as a pair. No other fruit.\nComposition: CENTER the complete subject on a landscape canvas with at least 15 percent completely empty margin on ALL four sides. Do not push the subject toward an edge. We will position the cutout inside the card later. Preserve all extremities and complete objects.\nBackground: genuine transparent alpha, absolutely no white, gray, ivory or colored rectangle, no checkerboard, no studio sweep, no floor or opaque shadow. All canvas edges and corners must be fully transparent. Natural diffuse lighting, accurate proportions and colors, realistic crisp textures, no halo. No writing, Chinese characters, pinyin, UI, labels, logos, watermark or frame. Deliver only the fully contained transparent cutout.",
+      "master": "output/imagegen/lesson7/cherries.png",
+      "status": "approved",
+      "model": "built-in image_gen",
+      "assetWordId": "v-樱桃"
+    },
+    {
+      "wordId": "v-水果",
+      "hanzi": "水果",
+      "pinyin": "shuǐguǒ",
+      "spanish": "fruta",
+      "slug": "mixed-fruit",
+      "kind": "photo",
+      "prompt": "Use case: photorealistic-natural. Asset for a Mandarin vocabulary learning card. Create ONE clean isolated photographic subject: A small complete shallow ceramic bowl holding an apple, an orange, a banana, a small grape bunch and strawberries. A compact clear arrangement of several types of fresh fruit.\nComposition: CENTER the complete subject on a landscape canvas with at least 15 percent completely empty margin on ALL four sides. Do not push the subject toward an edge. We will position the cutout inside the card later. Preserve all extremities and complete objects.\nBackground: genuine transparent alpha, absolutely no white, gray, ivory or colored rectangle, no checkerboard, no studio sweep, no floor or opaque shadow. All canvas edges and corners must be fully transparent. Natural diffuse lighting, accurate proportions and colors, realistic crisp textures, no halo. No writing, Chinese characters, pinyin, UI, labels, logos, watermark or frame. Deliver only the fully contained transparent cutout.",
+      "master": "output/imagegen/lesson7/mixed-fruit.png",
+      "status": "approved",
+      "model": "built-in image_gen",
+      "assetWordId": "v-水果"
+    },
+    {
+      "wordId": "v-裙子",
+      "hanzi": "裙子",
+      "pinyin": "qúnzi",
+      "spanish": "falda",
+      "slug": "skirt",
+      "kind": "photo",
+      "prompt": "Use case: photorealistic-natural. Asset for a Mandarin vocabulary learning card. Create ONE clean isolated photographic subject: One complete soft mustard-yellow pleated knee-length skirt, full waistband and hem visible, naturally hanging without a body or mannequin.\nComposition: CENTER the complete subject on a landscape canvas with at least 15 percent completely empty margin on ALL four sides. Do not push the subject toward an edge. We will position the cutout inside the card later. Preserve all extremities and complete objects.\nBackground: genuine transparent alpha, absolutely no white, gray, ivory or colored rectangle, no checkerboard, no studio sweep, no floor or opaque shadow. All canvas edges and corners must be fully transparent. Natural diffuse lighting, accurate proportions and colors, realistic crisp textures, no halo. No writing, Chinese characters, pinyin, UI, labels, logos, watermark or frame. Deliver only the fully contained transparent cutout.",
+      "master": "output/imagegen/lesson7/skirt.png",
+      "status": "approved",
+      "model": "built-in image_gen",
+      "assetWordId": "v-裙子"
+    },
+    {
+      "wordId": "v-T恤",
+      "hanzi": "T恤",
+      "pinyin": "T xù",
+      "spanish": "camiseta",
+      "slug": "tshirt",
+      "kind": "photo",
+      "prompt": "Use case: photorealistic-natural. Asset for a Mandarin vocabulary learning card. Create ONE clean isolated photographic subject: One complete plain warm coral short-sleeve T-shirt with round neckline, full sleeves and hem visible. No printing or logo.\nComposition: CENTER the complete subject on a landscape canvas with at least 15 percent completely empty margin on ALL four sides. Do not push the subject toward an edge. We will position the cutout inside the card later. Preserve all extremities and complete objects.\nBackground: genuine transparent alpha, absolutely no white, gray, ivory or colored rectangle, no checkerboard, no studio sweep, no floor or opaque shadow. All canvas edges and corners must be fully transparent. Natural diffuse lighting, accurate proportions and colors, realistic crisp textures, no halo. No writing, Chinese characters, pinyin, UI, labels, logos, watermark or frame. Deliver only the fully contained transparent cutout.",
+      "master": "output/imagegen/lesson7/tshirt.png",
+      "status": "approved",
+      "model": "built-in image_gen",
+      "assetWordId": "v-T恤"
+    },
+    {
+      "wordId": "v-尝",
+      "hanzi": "尝",
+      "pinyin": "cháng",
+      "spanish": "probar",
+      "slug": "tasting",
+      "kind": "photo",
+      "prompt": "Use case: photorealistic-natural. Asset for a Mandarin vocabulary learning card. Create ONE clean isolated photographic subject: One fully clothed adult woman with natural proportions, whole figure head to shoes visible, gently tasting a small strawberry held near her mouth, with one other strawberry in her other hand. Clear ordinary food tasting gesture, relaxed neutral expression. No room, furniture, floor or scenery.\nComposition: CENTER the complete subject on a landscape canvas with at least 15 percent completely empty margin on ALL four sides. Do not push the subject toward an edge. We will position the cutout inside the card later. Preserve all extremities and complete objects.\nBackground: genuine transparent alpha, absolutely no white, gray, ivory or colored rectangle, no checkerboard, no studio sweep, no floor or opaque shadow. All canvas edges and corners must be fully transparent. Natural diffuse lighting, accurate proportions and colors, realistic crisp textures, no halo. No writing, Chinese characters, pinyin, UI, labels, logos, watermark or frame. Deliver only the fully contained transparent cutout.",
+      "master": "output/imagegen/lesson7/tasting.png",
+      "status": "approved",
+      "model": "built-in image_gen",
+      "assetWordId": "v-尝"
+    },
+    {
+      "wordId": "v-试",
+      "hanzi": "试",
+      "pinyin": "shì",
+      "spanish": "probar",
+      "slug": "trying-clothes",
+      "kind": "photo",
+      "prompt": "Use case: photorealistic-natural. Asset for a Mandarin vocabulary learning card. Create ONE clean isolated photographic subject: One fully clothed adult man wearing an open green jacket over his shirt and trousers, checking how the jacket fits while facing a complete freestanding full-length mirror. Whole figure head to shoes and complete mirror frame and feet visible. The reflection is anatomically coherent. No room, walls, floor or scenery.\nComposition: CENTER the complete subject on a landscape canvas with at least 15 percent completely empty margin on ALL four sides. Do not push the subject toward an edge. We will position the cutout inside the card later. Preserve all extremities and complete objects.\nBackground: genuine transparent alpha, absolutely no white, gray, ivory or colored rectangle, no checkerboard, no studio sweep, no floor or opaque shadow. All canvas edges and corners must be fully transparent. Natural diffuse lighting, accurate proportions and colors, realistic crisp textures, no halo. No writing, Chinese characters, pinyin, UI, labels, logos, watermark or frame. Deliver only the fully contained transparent cutout.",
+      "master": "output/imagegen/lesson7/trying-clothes.png",
+      "status": "approved",
+      "model": "built-in image_gen",
+      "assetWordId": "v-试"
+    },
+    {
+      "wordId": "v-刷卡",
+      "hanzi": "刷卡",
+      "pinyin": "shuākǎ",
+      "spanish": "pagar con tarjeta de crédito/débito",
+      "slug": "paying-card",
+      "kind": "photo",
+      "prompt": "Use case: photorealistic-natural. Asset for a Mandarin vocabulary learning card. Create ONE clean isolated photographic subject: One compact standalone card payment terminal, with an unbranded plain blue bank card touching the contactless reader. Clearly show card payment, terminal keypad and screen with only a simple check mark. Terminal and card fully visible, no hand needed. No company logo or account details.\nComposition: CENTER the complete subject on a landscape canvas with at least 15 percent completely empty margin on ALL four sides. Do not push the subject toward an edge. We will position the cutout inside the card later. Preserve all extremities and complete objects.\nBackground: genuine transparent alpha, absolutely no white, gray, ivory or colored rectangle, no checkerboard, no studio sweep, no floor or opaque shadow. All canvas edges and corners must be fully transparent. Natural diffuse lighting, accurate proportions and colors, realistic crisp textures, no halo. No writing, Chinese characters, pinyin, UI, labels, logos, watermark or frame. Deliver only the fully contained transparent cutout.",
+      "master": "output/imagegen/lesson7/paying-card.png",
+      "status": "approved",
+      "model": "built-in image_gen",
+      "assetWordId": "v-刷卡"
+    },
+    {
+      "wordId": "v-穿",
+      "hanzi": "穿",
+      "pinyin": "chuān",
+      "spanish": "vestir; ponerse",
+      "slug": "putting-on-coat",
+      "kind": "photo",
+      "prompt": "Use case: photorealistic-natural. Asset for a Mandarin vocabulary learning card. Create ONE clean isolated photographic subject: One fully clothed adult woman wearing a T-shirt and jeans, putting on a lightweight red jacket with one arm already in its sleeve and the other entering the second sleeve. Whole figure head to shoes visible, natural anatomy. No mirror, furniture, floor or scenery.\nComposition: CENTER the complete subject on a landscape canvas with at least 15 percent completely empty margin on ALL four sides. Do not push the subject toward an edge. We will position the cutout inside the card later. Preserve all extremities and complete objects.\nBackground: genuine transparent alpha, absolutely no white, gray, ivory or colored rectangle, no checkerboard, no studio sweep, no floor or opaque shadow. All canvas edges and corners must be fully transparent. Natural diffuse lighting, accurate proportions and colors, realistic crisp textures, no halo. No writing, Chinese characters, pinyin, UI, labels, logos, watermark or frame. Deliver only the fully contained transparent cutout.",
+      "master": "output/imagegen/lesson7/putting-on-coat.png",
+      "status": "approved",
+      "model": "built-in image_gen",
+      "assetWordId": "v-穿"
+    },
+    {
+      "wordId": "v-拍照",
+      "hanzi": "拍照",
+      "pinyin": "pāizhào",
+      "spanish": "tomar una foto",
+      "slug": "taking-photo",
+      "kind": "photo",
+      "prompt": "Use case: photorealistic-natural. Asset for a Mandarin vocabulary learning card. Create ONE clean isolated photographic subject: One fully clothed adult man standing and holding a small unbranded camera with both hands at eye level, clearly taking a photograph. Whole figure head to shoes and full camera visible, natural anatomy. No scenery, no tripod, no background.\nComposition: CENTER the complete subject on a landscape canvas with at least 15 percent completely empty margin on ALL four sides. Do not push the subject toward an edge. We will position the cutout inside the card later. Preserve all extremities and complete objects.\nBackground: genuine transparent alpha, absolutely no white, gray, ivory or colored rectangle, no checkerboard, no studio sweep, no floor or opaque shadow. All canvas edges and corners must be fully transparent. Natural diffuse lighting, accurate proportions and colors, realistic crisp textures, no halo. No writing, Chinese characters, pinyin, UI, labels, logos, watermark or frame. Deliver only the fully contained transparent cutout.",
+      "master": "output/imagegen/lesson7/taking-photo.png",
+      "status": "approved",
+      "model": "built-in image_gen",
+      "assetWordId": "v-拍照"
+    },
+    {
+      "wordId": "v-吸烟",
+      "hanzi": "吸烟",
+      "pinyin": "xī yān",
+      "spanish": "fumar",
+      "slug": "smoking",
+      "kind": "photo",
+      "prompt": "Use case: photorealistic-natural. Asset for a Mandarin vocabulary learning card. Create ONE clean isolated photographic subject: Neutral educational photograph of one ordinary fully clothed middle-aged adult man, whole figure head to shoes visible, holding one small lit cigarette near his mouth with faint smoke. Unstylized, unglamorous factual depiction of the verb smoking, no branding, no advertising, no celebration, no health claim, no text. No scenery or background.\nComposition: CENTER the complete subject on a landscape canvas with at least 15 percent completely empty margin on ALL four sides. Do not push the subject toward an edge. We will position the cutout inside the card later. Preserve all extremities and complete objects.\nBackground: genuine transparent alpha, absolutely no white, gray, ivory or colored rectangle, no checkerboard, no studio sweep, no floor or opaque shadow. All canvas edges and corners must be fully transparent. Natural diffuse lighting, accurate proportions and colors, realistic crisp textures, no halo. No writing, Chinese characters, pinyin, UI, labels, logos, watermark or frame. Deliver only the fully contained transparent cutout.",
+      "master": "output/imagegen/lesson7/smoking.png",
+      "status": "approved",
+      "model": "built-in image_gen",
+      "assetWordId": "v-吸烟"
+    },
+    {
+      "wordId": "v-售货员",
+      "hanzi": "售货员",
+      "pinyin": "shòuhuòyuán",
+      "spanish": "vendedor/a",
+      "slug": "sales-assistant",
+      "kind": "photo",
+      "prompt": "Use case: photorealistic-natural. Asset for a Mandarin vocabulary learning card. Create ONE clean isolated photographic subject: One fully clothed adult woman sales assistant standing beside a small clothing display stand, offering a neatly folded shirt with both hands. Simple shop apron over everyday clothing. Whole figure head to shoes, complete shirt and stand visible, natural anatomy. No store interior, walls, floors or background.\nComposition: CENTER the complete subject on a landscape canvas with at least 15 percent completely empty margin on ALL four sides. Do not push the subject toward an edge. We will position the cutout inside the card later. Preserve all extremities and complete objects.\nBackground: genuine transparent alpha, absolutely no white, gray, ivory or colored rectangle, no checkerboard, no studio sweep, no floor or opaque shadow. All canvas edges and corners must be fully transparent. Natural diffuse lighting, accurate proportions and colors, realistic crisp textures, no halo. No writing, Chinese characters, pinyin, UI, labels, logos, watermark or frame. Deliver only the fully contained transparent cutout.",
+      "master": "output/imagegen/lesson7/sales-assistant.png",
+      "status": "approved",
+      "model": "built-in image_gen",
+      "assetWordId": "v-售货员"
+    },
+    {
+      "wordId": "v-老板",
+      "hanzi": "老板",
+      "pinyin": "lǎobǎn",
+      "spanish": "tendero; propietario; jefe",
+      "slug": "diagram-128edea30a",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-128edea30a.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "owner",
+        "caption": "propietario de la tienda"
+      },
+      "prompt": "Diagrama editorial owner: propietario de la tienda. {\"kind\":\"owner\",\"caption\":\"propietario de la tienda\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-老板"
+    },
+    {
+      "wordId": "v-想",
+      "hanzi": "想",
+      "pinyin": "xiǎng",
+      "spanish": "pensar; querer; gustaría",
+      "slug": "diagram-e5ad2c93a7",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-e5ad2c93a7.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "want",
+        "caption": "querer / pensar"
+      },
+      "prompt": "Diagrama editorial want: querer / pensar. {\"kind\":\"want\",\"caption\":\"querer / pensar\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-想"
+    },
+    {
+      "wordId": "v-买",
+      "hanzi": "买",
+      "pinyin": "mǎi",
+      "spanish": "comprar",
+      "slug": "diagram-e92a3bb27e",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-e92a3bb27e.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "trade",
+        "buy": true,
+        "caption": "comprar"
+      },
+      "prompt": "Diagrama editorial trade: comprar. {\"kind\":\"trade\",\"buy\":true,\"caption\":\"comprar\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-买"
+    },
+    {
+      "wordId": "v-哪里",
+      "hanzi": "哪里",
+      "pinyin": "nǎli",
+      "spanish": "(expresión de modestia) en absoluto",
+      "slug": "diagram-d467db9879",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-d467db9879.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "modesty",
+        "caption": "respuesta de modestia"
+      },
+      "prompt": "Diagrama editorial modesty: respuesta de modestia. {\"kind\":\"modesty\",\"caption\":\"respuesta de modestia\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-哪里"
+    },
+    {
+      "wordId": "v-斤",
+      "hanzi": "斤",
+      "pinyin": "jīn",
+      "spanish": "jin (500g)",
+      "slug": "diagram-06681b9343",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-06681b9343.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "weight",
+        "caption": "1 斤 = 500 g"
+      },
+      "prompt": "Diagrama editorial weight: 1 斤 = 500 g. {\"kind\":\"weight\",\"caption\":\"1 斤 = 500 g\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-斤"
+    },
+    {
+      "wordId": "v-块",
+      "hanzi": "块",
+      "pinyin": "kuài",
+      "spanish": "kuai (clasificador coloquial de dinero)",
+      "slug": "diagram-c2ef8ea085",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-c2ef8ea085.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "money",
+        "a": "1 元",
+        "b": "1 块",
+        "caption": "nombre coloquial"
+      },
+      "prompt": "Diagrama editorial money: nombre coloquial. {\"kind\":\"money\",\"a\":\"1 元\",\"b\":\"1 块\",\"caption\":\"nombre coloquial\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-块"
+    },
+    {
+      "wordId": "v-问题",
+      "hanzi": "问题",
+      "pinyin": "wèntí",
+      "spanish": "pregunta; problema; asunto",
+      "slug": "diagram-2bf9ebd38c",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-2bf9ebd38c.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "question",
+        "caption": "pregunta / problema"
+      },
+      "prompt": "Diagrama editorial question: pregunta / problema. {\"kind\":\"question\",\"caption\":\"pregunta / problema\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-问题"
+    },
+    {
+      "wordId": "v-怎么",
+      "hanzi": "怎么",
+      "pinyin": "zěnme",
+      "spanish": "cómo",
+      "slug": "diagram-983eea06ba",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-983eea06ba.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "question",
+        "caption": "¿cómo?"
+      },
+      "prompt": "Diagrama editorial question: ¿cómo?. {\"kind\":\"question\",\"caption\":\"¿cómo?\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-怎么"
+    },
+    {
+      "wordId": "v-卖",
+      "hanzi": "卖",
+      "pinyin": "mài",
+      "spanish": "vender",
+      "slug": "diagram-110a9cd369",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-110a9cd369.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "trade",
+        "buy": false,
+        "caption": "vender"
+      },
+      "prompt": "Diagrama editorial trade: vender. {\"kind\":\"trade\",\"buy\":false,\"caption\":\"vender\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-卖"
+    },
+    {
+      "wordId": "v-便宜",
+      "hanzi": "便宜",
+      "pinyin": "piányi",
+      "spanish": "económico; barato",
+      "slug": "diagram-d1c11400d9",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-d1c11400d9.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "cheap",
+        "caption": "precio bajo"
+      },
+      "prompt": "Diagrama editorial cheap: precio bajo. {\"kind\":\"cheap\",\"caption\":\"precio bajo\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-便宜"
+    },
+    {
+      "wordId": "v-找",
+      "hanzi": "找",
+      "pinyin": "zhǎo",
+      "spanish": "dar el cambio",
+      "slug": "diagram-b2b33a011d",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-b2b33a011d.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "change",
+        "caption": "dar el cambio"
+      },
+      "prompt": "Diagrama editorial change: dar el cambio. {\"kind\":\"change\",\"caption\":\"dar el cambio\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-找@l7"
+    },
+    {
+      "wordId": "v-再",
+      "hanzi": "再",
+      "pinyin": "zài",
+      "spanish": "de nuevo",
+      "slug": "diagram-88987c234e",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-88987c234e.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "again",
+        "caption": "de nuevo"
+      },
+      "prompt": "Diagrama editorial again: de nuevo. {\"kind\":\"again\",\"caption\":\"de nuevo\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-再"
+    },
+    {
+      "wordId": "v-件",
+      "hanzi": "件",
+      "pinyin": "jiàn",
+      "spanish": "pieza/artículo (de ropa)",
+      "slug": "diagram-6d584324ee",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-6d584324ee.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "classifier",
+        "caption": "una prenda"
+      },
+      "prompt": "Diagrama editorial classifier: una prenda. {\"kind\":\"classifier\",\"caption\":\"una prenda\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-件"
+    },
+    {
+      "wordId": "v-员",
+      "hanzi": "员",
+      "pinyin": "yuán",
+      "spanish": "(sufijo adjunto a ciertas actividades) persona",
+      "slug": "diagram-a3cde07c66",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-a3cde07c66.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "suffix",
+        "caption": "persona que realiza un trabajo"
+      },
+      "prompt": "Diagrama editorial suffix: persona que realiza un trabajo. {\"kind\":\"suffix\",\"caption\":\"persona que realiza un trabajo\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-员"
+    },
+    {
+      "wordId": "v-当然",
+      "hanzi": "当然",
+      "pinyin": "dāngrán",
+      "spanish": "por supuesto",
+      "slug": "diagram-350628c20d",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-350628c20d.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "yes",
+        "caption": "por supuesto"
+      },
+      "prompt": "Diagrama editorial yes: por supuesto. {\"kind\":\"yes\",\"caption\":\"por supuesto\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-当然"
+    },
+    {
+      "wordId": "v-合适",
+      "hanzi": "合适",
+      "pinyin": "héshì",
+      "spanish": "conveniente; adecuado; quedar bien",
+      "slug": "diagram-373c53b3af",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-373c53b3af.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "fit",
+        "caption": "queda bien"
+      },
+      "prompt": "Diagrama editorial fit: queda bien. {\"kind\":\"fit\",\"caption\":\"queda bien\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-合适"
+    },
+    {
+      "wordId": "v-黑色",
+      "hanzi": "黑色",
+      "pinyin": "hēisè",
+      "spanish": "negro",
+      "slug": "diagram-ac9e247915",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-ac9e247915.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "color",
+        "color": "#22252a",
+        "caption": "negro"
+      },
+      "prompt": "Diagrama editorial color: negro. {\"kind\":\"color\",\"color\":\"#22252a\",\"caption\":\"negro\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-黑色"
+    },
+    {
+      "wordId": "v-黑",
+      "hanzi": "黑",
+      "pinyin": "hēi",
+      "spanish": "negro",
+      "slug": "diagram-f256df7cb6",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-f256df7cb6.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "color",
+        "color": "#22252a",
+        "caption": "negro"
+      },
+      "prompt": "Diagrama editorial color: negro. {\"kind\":\"color\",\"color\":\"#22252a\",\"caption\":\"negro\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-黑"
+    },
+    {
+      "wordId": "v-绿色",
+      "hanzi": "绿色",
+      "pinyin": "lǜsè",
+      "spanish": "verde",
+      "slug": "diagram-1c76253696",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-1c76253696.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "color",
+        "color": "#4e8b4e",
+        "caption": "verde"
+      },
+      "prompt": "Diagrama editorial color: verde. {\"kind\":\"color\",\"color\":\"#4e8b4e\",\"caption\":\"verde\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-绿色"
+    },
+    {
+      "wordId": "v-绿",
+      "hanzi": "绿",
+      "pinyin": "lǜ",
+      "spanish": "verde",
+      "slug": "diagram-9cc4814cfc",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-9cc4814cfc.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "color",
+        "color": "#4e8b4e",
+        "caption": "verde"
+      },
+      "prompt": "Diagrama editorial color: verde. {\"kind\":\"color\",\"color\":\"#4e8b4e\",\"caption\":\"verde\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-绿"
+    },
+    {
+      "wordId": "v-不错",
+      "hanzi": "不错",
+      "pinyin": "búcuò",
+      "spanish": "bastante bien",
+      "slug": "diagram-1c3f70ef8d",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-1c3f70ef8d.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "good",
+        "caption": "bastante bien"
+      },
+      "prompt": "Diagrama editorial good: bastante bien. {\"kind\":\"good\",\"caption\":\"bastante bien\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-不错"
+    },
+    {
+      "wordId": "v-错",
+      "hanzi": "错",
+      "pinyin": "cuò",
+      "spanish": "equivocado; incorrecto",
+      "slug": "diagram-d866a61621",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-d866a61621.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "wrong",
+        "caption": "incorrecto"
+      },
+      "prompt": "Diagrama editorial wrong: incorrecto. {\"kind\":\"wrong\",\"caption\":\"incorrecto\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-错"
+    },
+    {
+      "wordId": "v-些",
+      "hanzi": "些",
+      "pinyin": "xiē",
+      "spanish": "algunos; unas",
+      "slug": "diagram-47c1e4473f",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-47c1e4473f.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "some",
+        "caption": "algunos / unas"
+      },
+      "prompt": "Diagrama editorial some: algunos / unas. {\"kind\":\"some\",\"caption\":\"algunos / unas\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-些"
+    },
+    {
+      "wordId": "v-打折",
+      "hanzi": "打折",
+      "pinyin": "dǎzhé",
+      "spanish": "ofrecer un descuento",
+      "slug": "diagram-c374cef8e3",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-c374cef8e3.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "discount",
+        "caption": "8 折: pagar el 80 %"
+      },
+      "prompt": "Diagrama editorial discount: 8 折: pagar el 80 %. {\"kind\":\"discount\",\"caption\":\"8 折: pagar el 80 %\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-打折"
+    },
+    {
+      "wordId": "v-没问题",
+      "hanzi": "没问题",
+      "pinyin": "méi wèntí",
+      "spanish": "no hay problema",
+      "slug": "diagram-ae078bfdf8",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-ae078bfdf8.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "yes",
+        "caption": "no hay problema"
+      },
+      "prompt": "Diagrama editorial yes: no hay problema. {\"kind\":\"yes\",\"caption\":\"no hay problema\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-没问题"
+    },
+    {
+      "wordId": "v-元",
+      "hanzi": "元",
+      "pinyin": "yuán",
+      "spanish": "yuan (clasificador oficial de la moneda china)",
+      "slug": "diagram-6ec55063a7",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-6ec55063a7.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "money",
+        "a": "1 元",
+        "b": "1 块",
+        "caption": "nombre formal"
+      },
+      "prompt": "Diagrama editorial money: nombre formal. {\"kind\":\"money\",\"a\":\"1 元\",\"b\":\"1 块\",\"caption\":\"nombre formal\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-元"
+    },
+    {
+      "wordId": "v-角",
+      "hanzi": "角",
+      "pinyin": "jiǎo",
+      "spanish": "jiao (clasificador oficial de 10 centavos)",
+      "slug": "diagram-bb70dd80f1",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-bb70dd80f1.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "money",
+        "a": "1 元",
+        "b": "10 角",
+        "caption": "1 角 = 0,1 元"
+      },
+      "prompt": "Diagrama editorial money: 1 角 = 0,1 元. {\"kind\":\"money\",\"a\":\"1 元\",\"b\":\"10 角\",\"caption\":\"1 角 = 0,1 元\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-角"
+    },
+    {
+      "wordId": "v-毛",
+      "hanzi": "毛",
+      "pinyin": "máo",
+      "spanish": "mao (clasificador coloquial de 10 centavos)",
+      "slug": "diagram-0f411b91c8",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-0f411b91c8.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "money",
+        "a": "1 角",
+        "b": "1 毛",
+        "caption": "nombre coloquial"
+      },
+      "prompt": "Diagrama editorial money: nombre coloquial. {\"kind\":\"money\",\"a\":\"1 角\",\"b\":\"1 毛\",\"caption\":\"nombre coloquial\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-毛"
+    },
+    {
+      "wordId": "v-分",
+      "hanzi": "分",
+      "pinyin": "fēn",
+      "spanish": "fen (clasificador de un centavo)",
+      "slug": "diagram-c1316a6e20",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-c1316a6e20.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "money",
+        "a": "1 元",
+        "b": "100 分",
+        "caption": "1 分 = 0,01 元"
+      },
+      "prompt": "Diagrama editorial money: 1 分 = 0,01 元. {\"kind\":\"money\",\"a\":\"1 元\",\"b\":\"100 分\",\"caption\":\"1 分 = 0,01 元\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-分@l7"
+    },
+    {
+      "wordId": "v-白色",
+      "hanzi": "白色",
+      "pinyin": "báisè",
+      "spanish": "blanco",
+      "slug": "diagram-f68149ce60",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-f68149ce60.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "color",
+        "color": "#fffefa",
+        "caption": "blanco"
+      },
+      "prompt": "Diagrama editorial color: blanco. {\"kind\":\"color\",\"color\":\"#fffefa\",\"caption\":\"blanco\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-白色"
+    },
+    {
+      "wordId": "v-红色",
+      "hanzi": "红色",
+      "pinyin": "hóngsè",
+      "spanish": "rojo",
+      "slug": "diagram-da6c7364e4",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-da6c7364e4.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "color",
+        "color": "#c44535",
+        "caption": "rojo"
+      },
+      "prompt": "Diagrama editorial color: rojo. {\"kind\":\"color\",\"color\":\"#c44535\",\"caption\":\"rojo\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-红色"
+    },
+    {
+      "wordId": "v-称呼",
+      "hanzi": "称呼",
+      "pinyin": "chēnghu",
+      "spanish": "llamar; tratar a",
+      "slug": "diagram-83aeab09d8",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-83aeab09d8.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "address",
+        "caption": "cómo llamar a alguien"
+      },
+      "prompt": "Diagrama editorial address: cómo llamar a alguien. {\"kind\":\"address\",\"caption\":\"cómo llamar a alguien\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-称呼"
+    },
+    {
+      "wordId": "v-大号",
+      "hanzi": "大号",
+      "pinyin": "dàhào",
+      "spanish": "talla grande",
+      "slug": "diagram-d7423be1e6",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-d7423be1e6.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "size",
+        "large": true,
+        "caption": "talla grande"
+      },
+      "prompt": "Diagrama editorial size: talla grande. {\"kind\":\"size\",\"large\":true,\"caption\":\"talla grande\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-大号"
+    },
+    {
+      "wordId": "v-小号",
+      "hanzi": "小号",
+      "pinyin": "xiǎohào",
+      "spanish": "talla pequeña",
+      "slug": "diagram-05df3f06fe",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-05df3f06fe.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "size",
+        "large": false,
+        "caption": "talla pequeña"
+      },
+      "prompt": "Diagrama editorial size: talla pequeña. {\"kind\":\"size\",\"large\":false,\"caption\":\"talla pequeña\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-小号"
+    },
+    {
+      "wordId": "v-人民币",
+      "hanzi": "人民币",
+      "pinyin": "rénmínbì",
+      "spanish": "renminbi; moneda china",
+      "slug": "diagram-eae2c60656",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-eae2c60656.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "currency",
+        "caption": "moneda china"
+      },
+      "prompt": "Diagrama editorial currency: moneda china. {\"kind\":\"currency\",\"caption\":\"moneda china\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-人民币"
+    },
+    {
+      "wordId": "v-找钱",
+      "hanzi": "找钱",
+      "pinyin": "zhǎo qián",
+      "spanish": "dar el cambio",
+      "slug": "diagram-36e0e1b898",
+      "kind": "diagram",
+      "master": "output/imagegen/lesson7/diagram-36e0e1b898.png",
+      "status": "approved",
+      "model": "deterministic-svg",
+      "plan": {
+        "kind": "change",
+        "caption": "dar el cambio"
+      },
+      "prompt": "Diagrama editorial change: dar el cambio. {\"kind\":\"change\",\"caption\":\"dar el cambio\"}. Fondo transparente; estilo jade de Míng; sin elegibilidad para quiz por imagen.",
+      "assetWordId": "v-找钱"
+    }
+  ]
+}

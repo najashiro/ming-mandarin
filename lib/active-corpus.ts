@@ -1,3 +1,4 @@
+import lesson7 from '@/data/lesson7-public.json';
 import type baseline from '@/data/corpus-v21-public.json';
 import reviewed from '@/data/lessons123-public.json';
 import lesson4 from '@/data/lesson4-public.json';
@@ -5,13 +6,13 @@ import lesson5 from '@/data/lesson5-public.json';
 import lesson6 from '@/data/lesson6-public.json';
 import { normalizePinyinForComparison } from '@/lib/pinyin';
 
-type Word = (typeof baseline.vocabulary)[number] & { grammaticalType?: string };
+type Word = (typeof baseline.vocabulary)[number] & { grammaticalType?: string; imageReuseBlocked?: boolean };
 type Phrase = (typeof baseline.phrases)[number];
 type Radical = Omit<(typeof baseline.radicals)[number], 'strokeCount'> & { strokeCount: number | null; nameHanzi?: string };
 const vocabulary: Word[] = reviewed.vocabulary.map(word => ({ ...word }));
 const phrases: Phrase[] = reviewed.phrases.map(phrase => ({ ...phrase }));
 const radicals: Radical[] = reviewed.radicals.map(radical => ({ ...radical, examples: [...radical.examples], lessons: [...radical.lessons] }));
-for (const [lessonNumber, extension] of [[4, lesson4], [5, lesson5], [6, lesson6]] as const) {
+for (const [lessonNumber, extension] of [[4, lesson4], [5, lesson5], [6, lesson6], [7, lesson7]] as const) {
   for (const incoming of extension.vocabulary) {
     const existing = vocabulary.find(word => word.id === incoming.id);
     if (!existing) vocabulary.push({ ...incoming } as Word);
@@ -60,7 +61,7 @@ for (const incoming of lesson4.bookRadicals) {
   }
 }
 // L6 definitions are additive: historical radical definitions remain canonical.
-for (const incoming of lesson6.bookRadicals) {
+for (const incoming of [...lesson6.bookRadicals, ...lesson7.bookRadicals]) {
   const existing = radicals.find(radical => radical.radical === incoming.radical);
   if (!existing) radicals.push({ ...incoming });
   else {
@@ -68,13 +69,13 @@ for (const incoming of lesson6.bookRadicals) {
     if (!existing.meaning) existing.meaning = incoming.meaning;
     if (!existing.explanation) existing.explanation = incoming.explanation;
     if (existing.strokeCount === null) existing.strokeCount = incoming.strokeCount;
-    existing.lessons = [...new Set([...existing.lessons, 6])];
-    for (const example of incoming.examples) if (!existing.examples.some(e => e.hanzi === example.hanzi && e.lessons.includes(6))) existing.examples.push(example);
+    existing.lessons = [...new Set([...existing.lessons, ...incoming.lessons])];
+    for (const example of incoming.examples) if (!existing.examples.some(e => e.hanzi === example.hanzi && incoming.lessons.every(lesson => e.lessons.includes(lesson)))) existing.examples.push(example);
   }
 }
 const corpus = {
-  ...reviewed, version: lesson6.version, fingerprint: [reviewed.fingerprint, lesson4.fingerprint, lesson5.fingerprint, lesson6.fingerprint].join(':'),
-  vocabulary, phrases, dialogues: [...reviewed.dialogues, ...lesson4.dialogues, ...lesson5.dialogues, ...lesson6.dialogues], radicals,
+  ...reviewed, version: lesson7.version, fingerprint: [reviewed.fingerprint, lesson4.fingerprint, lesson5.fingerprint, lesson6.fingerprint, lesson7.fingerprint].join(':'),
+  vocabulary, phrases, dialogues: [...reviewed.dialogues, ...lesson4.dialogues, ...lesson5.dialogues, ...lesson6.dialogues, ...lesson7.dialogues], radicals,
 };
 export default corpus;
-export { lesson4, lesson5, lesson6 };
+export { lesson4, lesson5, lesson6, lesson7 };

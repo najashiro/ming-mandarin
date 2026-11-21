@@ -1,0 +1,436 @@
+{
+  "method": "PCM energy segmentation of three separated repetitions; middle complete utterance retained with 120/140 ms margins. Independent transcription is run on the resulting clip.",
+  "results": [
+    {
+      "id": "l7-a8360bba167463a2",
+      "input": "围墙。围。",
+      "pinyin": "wéi",
+      "carrier": "output/audio/lesson7-carriers/l7-a8360bba167463a2-carrier.mp3",
+      "sourceSha256": "7dcf41ab7629f0e4cfea4b76876e49ef82ff1176d3979db6243250edb061af84",
+      "spans": [
+        [
+          0,
+          1.04
+        ],
+        [
+          1.31,
+          1.98
+        ]
+      ],
+      "status": "extracted",
+      "retainedSpan": [
+        1.31,
+        1.98
+      ],
+      "sha256": "43e7b7367d93fe91200c45ccbcd0ef9cdb87ab5309c1d4a0364eb384a31aca85"
+    },
+    {
+      "id": "l7-326ca8dabb73f616",
+      "input": "牛仔裤。仔。",
+      "pinyin": "zǎi",
+      "carrier": "output/audio/lesson7-carriers/l7-326ca8dabb73f616-carrier.mp3",
+      "sourceSha256": "ae9b06f150c4e432aa5f954f0fa5b529811825ec9ec67f02104869522e0e322e",
+      "spans": [
+        [
+          0,
+          1.31
+        ],
+        [
+          1.5499999999999998,
+          2.3200000000000003
+        ]
+      ],
+      "status": "extracted",
+      "retainedSpan": [
+        1.5499999999999998,
+        2.3200000000000003
+      ],
+      "sha256": "616b24272da05326fbd3cbdbe3dc8f8c1616ec9fb304e3e195a6e65cbf24333a"
+    },
+    {
+      "id": "l7-1afb4a61ca04e83e",
+      "input": "便宜。便。",
+      "pinyin": "pián",
+      "carrier": "output/audio/lesson7-carriers/l7-1afb4a61ca04e83e-carrier.mp3",
+      "sourceSha256": "cce9628b2cc498bdfcfee2d733bb708044b6943b9f055fbd66f58d57b9f34189",
+      "spans": [
+        [
+          0,
+          0.8200000000000001
+        ],
+        [
+          1.0,
+          1.5300000000000002
+        ]
+      ],
+      "status": "extracted",
+      "retainedSpan": [
+        1.0,
+        1.5300000000000002
+      ],
+      "sha256": "6e25e9464798638a9c42fc2a8a24d4359321013212dcb24293e270ecd5f192e1"
+    },
+    {
+      "id": "l7-9b5e35d5b6db354b",
+      "input": "人民币。币。",
+      "pinyin": "bì",
+      "carrier": "output/audio/lesson7-carriers/l7-9b5e35d5b6db354b-carrier.mp3",
+      "sourceSha256": "8028e77b392d632cd5aca60f1c49ae32dfee976f2d30350e38eb4a5324aee298",
+      "spans": [
+        [
+          0,
+          1.05
+        ],
+        [
+          1.3900000000000001,
+          1.9300000000000002
+        ]
+      ],
+      "status": "extracted",
+      "retainedSpan": [
+        1.3900000000000001,
+        1.9300000000000002
+      ],
+      "sha256": "1f51cc881749f3a8b12d2b3f861c8a4a1d242a90b1cb1e17f5865028bb29f007"
+    },
+    {
+      "id": "l7-85638de6c656a3dd",
+      "input": "体恤。恤。",
+      "pinyin": "xù",
+      "carrier": "output/audio/lesson7-carriers/l7-85638de6c656a3dd-carrier.mp3",
+      "sourceSha256": "94f5abb0091db25ca573c0e93f382d4150733a4b391d6eb0faf2951b83235b4a",
+      "spans": [
+        [
+          0.010000000000000009,
+          1.03
+        ],
+        [
+          1.35,
+          2.064
+        ]
+      ],
+      "status": "extracted",
+      "retainedSpan": [
+        1.35,
+        2.064
+      ],
+      "sha256": "2a8a6d67901d27e03960a4d82fc3a93a08b8989ef581afb617b30d1a48ac8ed1"
+    },
+    {
+      "id": "l7-601cf06f0df06a8c",
+      "input": "折。折。折。",
+      "pinyin": "zhé",
+      "carrier": "output/audio/lesson7-carriers/l7-601cf06f0df06a8c-carrier.mp3",
+      "sourceSha256": "b33629979f932f04824179f5723451693e9f3ac725b7cc6f679462acc86fc18b",
+      "spans": [
+        [
+          0.06,
+          0.73
+        ],
+        [
+          1.06,
+          1.75
+        ],
+        [
+          1.92,
+          2.5300000000000002
+        ]
+      ],
+      "status": "extracted",
+      "retainedSpan": [
+        1.06,
+        1.75
+      ],
+      "sha256": "82c74bd783d43a3dfc6f1d0afd46a1c0bf0774f37dd0e012b46516ee862399fd"
+    },
+    {
+      "id": "l7-d10d2670063d2eb2",
+      "input": "服。服。服。",
+      "pinyin": "fú",
+      "carrier": "output/audio/lesson7-carriers/l7-d10d2670063d2eb2-carrier.mp3",
+      "sourceSha256": "8707f20beed9bcd8bf4d0ae1aa061a251829d91adb93139f6f7613c39b707d47",
+      "spans": [
+        [
+          0.020000000000000018,
+          0.65
+        ],
+        [
+          1.04,
+          1.71
+        ],
+        [
+          2.21,
+          2.9000000000000004
+        ]
+      ],
+      "status": "extracted",
+      "retainedSpan": [
+        1.04,
+        1.71
+      ],
+      "sha256": "cc53f51c4116e1f82d96c7cf485ef234baa1e4316d7dae8e0c91d643f3b615ca"
+    },
+    {
+      "id": "l7-7e33135cd2fb9f73",
+      "input": "逃。逃。逃。",
+      "pinyin": "táo",
+      "carrier": "output/audio/lesson7-carriers/l7-7e33135cd2fb9f73-carrier.mp3",
+      "sourceSha256": "faca93b8f0e751cc593b327ad11dc00ff95c05799684d31f74100bb00eef14b5",
+      "spans": [
+        [
+          0.74,
+          1.46
+        ],
+        [
+          1.7000000000000002,
+          2.4400000000000004
+        ],
+        [
+          2.7399999999999998,
+          3.49
+        ]
+      ],
+      "status": "extracted",
+      "retainedSpan": [
+        1.7000000000000002,
+        2.4400000000000004
+      ],
+      "sha256": "2ad2448a975af013997241fc0d64631a30f20f8bb7792ce92405d94759d600c3"
+    },
+    {
+      "id": "l7-9742babd3b7c1530",
+      "input": "英。英。英。",
+      "pinyin": "yīng",
+      "carrier": "output/audio/lesson7-carriers/l7-9742babd3b7c1530-carrier.mp3",
+      "sourceSha256": "562ffb18bf332bf76d77c4209798aa4d70a8510e32a1130a8839db44efd973e3",
+      "spans": [
+        [
+          0.04000000000000001,
+          0.73
+        ],
+        [
+          0.75,
+          1.4100000000000001
+        ],
+        [
+          1.46,
+          2.1
+        ]
+      ],
+      "status": "extracted",
+      "retainedSpan": [
+        0.75,
+        1.4100000000000001
+      ],
+      "sha256": "e7dd3428c8201d68749f104f26d8dabc14fe8d5ad670da48142f04d2fc67da45"
+    },
+    {
+      "id": "l7-e3bada5e1926c911",
+      "input": "民。民。民。",
+      "pinyin": "mín",
+      "carrier": "output/audio/lesson7-carriers/l7-e3bada5e1926c911-carrier.mp3",
+      "sourceSha256": "ebf87fc8371e8f4b4cfb813d34206f3445129f1c3ea041af0a37bf5afd98bc17",
+      "spans": [
+        [
+          0,
+          0.6900000000000001
+        ],
+        [
+          0.74,
+          1.4500000000000002
+        ],
+        [
+          1.52,
+          2.19
+        ]
+      ],
+      "status": "extracted",
+      "retainedSpan": [
+        0.74,
+        1.4500000000000002
+      ],
+      "sha256": "eb94352ffc9fd27ca3f6160ecad815fb28cc564a57c168e69d56d2515c7e2bbc"
+    },
+    {
+      "id": "l7-e3ee1f40044fd310",
+      "input": "称呼。称呼。称呼。",
+      "pinyin": "chēnghu",
+      "carrier": "output/audio/lesson7-carriers/l7-e3ee1f40044fd310-carrier.mp3",
+      "sourceSha256": "760fd58abf0cb28a9b4618c9d95edf25e0f6df975652b1ac4fc06465929fccc4",
+      "spans": [
+        [
+          0,
+          0.85
+        ],
+        [
+          1.0,
+          1.8900000000000001
+        ],
+        [
+          2.01,
+          2.89
+        ]
+      ],
+      "status": "extracted",
+      "retainedSpan": [
+        1.0,
+        1.8900000000000001
+      ],
+      "sha256": "7250f97bf679391801ecd805a25d4bc15be09c6b64727d32f903750bfff4dc61"
+    },
+    {
+      "id": "l7-7491c99454b1c155",
+      "input": "绿色。绿。",
+      "pinyin": "lǜ",
+      "carrier": "output/audio/lesson7-carriers/l7-7491c99454b1c155-carrier.mp3",
+      "sourceSha256": "114cfbac412da83d61ab59a2e8c9e1a11d07aa3bf82800f55edde98089e974b4",
+      "spans": [
+        [
+          0,
+          0.78
+        ],
+        [
+          1.0899999999999999,
+          1.6400000000000001
+        ]
+      ],
+      "status": "extracted",
+      "retainedSpan": [
+        1.0899999999999999,
+        1.6400000000000001
+      ],
+      "sha256": "704fd9e4d4d15f67bd4373c7caf2b76fdd8a6376f41445b997528770198f43c5"
+    },
+    {
+      "id": "l7-ccd79b9139850f1e",
+      "input": "羽。羽。羽。",
+      "pinyin": "yǔ",
+      "carrier": "output/audio/lesson7-carriers/l7-ccd79b9139850f1e-carrier.mp3",
+      "sourceSha256": "aaa9243cf168659d85a922e381d1e2772ba4f1fcdc0a845aef38faaf3ceb6653",
+      "spans": [
+        [
+          0.25,
+          1.0
+        ],
+        [
+          1.19,
+          1.9300000000000002
+        ],
+        [
+          2.1,
+          2.8600000000000003
+        ]
+      ],
+      "status": "extracted",
+      "retainedSpan": [
+        1.19,
+        1.9300000000000002
+      ],
+      "sha256": "53b043840cf97d9084b3bd406894fe877945ccdb70db5ca1349690c507213adf"
+    },
+    {
+      "id": "l7-24e859b0bd874248",
+      "input": "逃。逃。逃。",
+      "pinyin": "táo",
+      "carrier": "output/audio/lesson7-carriers/l7-24e859b0bd874248-carrier.mp3",
+      "sourceSha256": "d4a26e558545cd4c0bfb2fe8d5aba1a2b321a8e058ccc2063978bf23d124ee42",
+      "spans": [
+        [
+          0.68,
+          1.4
+        ],
+        [
+          1.54,
+          2.2600000000000002
+        ],
+        [
+          2.4499999999999997,
+          3.16
+        ]
+      ],
+      "status": "extracted",
+      "retainedSpan": [
+        1.54,
+        2.2600000000000002
+      ],
+      "sha256": "4607921dff308c91eef85fef25700806f15088b74db3c10a9ff37a236a466208"
+    },
+    {
+      "id": "l7-e0e32ceec5324035",
+      "input": "鞋。鞋。鞋。",
+      "pinyin": "xié",
+      "carrier": "output/audio/lesson7-carriers/l7-e0e32ceec5324035-carrier.mp3",
+      "sourceSha256": "056f4245f5ef583c0937a44a60254a6a39e282f26ddd1b8a5fc6240d0c4153d5",
+      "spans": [
+        [
+          0.29000000000000004,
+          1.09
+        ],
+        [
+          1.4,
+          2.16
+        ],
+        [
+          2.42,
+          3.14
+        ]
+      ],
+      "status": "extracted",
+      "retainedSpan": [
+        1.4,
+        2.16
+      ],
+      "sha256": "a9ccaf51bec1346a835d71eebc70cd198aee10bf31b468682746b16db2cfd8e0"
+    },
+    {
+      "id": "l7-eb080e12ac204e15",
+      "input": "恰好。恰。",
+      "pinyin": "qià",
+      "carrier": "output/audio/lesson7-carriers/l7-eb080e12ac204e15-carrier.mp3",
+      "sourceSha256": "a5223ff490d047d23bf04f1dd2efb8f6788dd867381ca7eb44859e9400bc196f",
+      "spans": [
+        [
+          0,
+          0.9600000000000001
+        ],
+        [
+          1.21,
+          1.83
+        ]
+      ],
+      "status": "extracted",
+      "retainedSpan": [
+        1.21,
+        1.83
+      ],
+      "sha256": "699e91862a81ccd4ca10383ea73e00b5df680dcd4f1c5c6783328adc731f95d1"
+    },
+    {
+      "id": "l7-7439059b3365ad5d",
+      "input": "点儿。点儿。点儿。",
+      "pinyin": "diǎnr",
+      "carrier": "output/audio/lesson7-carriers/l7-7439059b3365ad5d-carrier.mp3",
+      "sourceSha256": "e471f040cb32bea59fb991820ff75a8738e99c281c929fcc3dce322df67557e9",
+      "spans": [
+        [
+          0.1,
+          0.8400000000000001
+        ],
+        [
+          0.9,
+          1.62
+        ],
+        [
+          1.7000000000000002,
+          2.35
+        ]
+      ],
+      "status": "extracted",
+      "retainedSpan": [
+        0.9,
+        1.62
+      ],
+      "sha256": "d5237d17df2acdf17f852e073a9cfe2ca69c078d74e1a5c7dcfa9aff5f4108ef"
+    }
+  ]
+}

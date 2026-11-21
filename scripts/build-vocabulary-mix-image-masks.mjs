@@ -20,12 +20,14 @@ const catalogs = [
   'vocabulary-media', 'lesson4-media', 'lesson5-media', 'lessons123-media',
   'lessons123-context-media', 'lessons123-generated-media', 'lessons123-pedagogy-media',
   'lessons123-geography-media', 'corpus-completion-media', 'corpus-completion-diagrams-media',
+  'lesson7-media',
 ];
 const catalog = [...new Map((await Promise.all(catalogs.map(name => readJson(`data/${name}.json`))))
   .flat().map(entry => [entry.wordId, entry])).values()]
   .filter(entry => entry.status === 'approved' && entry.src && entry.sha256);
 const reviews = (await readJson('docs/corpus-completion-diagrams-review.json')).entries;
 const diagramSources = new Map(reviews.map(entry => [entry.src, entry]));
+for (const entry of (await readJson('docs/lesson7-image-assets.json')).assets) if (entry.source) diagramSources.set(entry.src, entry);
 const lesson4Recipes = await readJson('scripts/lesson4-image-recipes.json');
 const lesson4Entries = new Map((await readJson('data/lesson4-media.json')).map(entry => [entry.src, entry]));
 

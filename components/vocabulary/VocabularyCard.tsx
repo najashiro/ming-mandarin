@@ -1,6 +1,6 @@
 'use client';
 import { Fragment, useState } from 'react';
-import { imageForWord, type VocabularyMediaEntry } from '@/lib/vocabulary-media';
+import { imageForVocabularyWord, type VocabularyMediaEntry } from '@/lib/vocabulary-media';
 import type { CurriculumScope } from '@/data/types';
 import { examplesForVocabularyCard, type ActiveWord } from '@/lib/vocabulary';
 import { LinkedChineseText } from '@/components/LinkedChineseText';
@@ -39,7 +39,7 @@ export function VocabularyCard({ word, scope, route, back, favorite = false, hid
 }) {
   const hasExamples = examplesForVocabularyCard(word).length > 0;
   const showBack = back && hasExamples;
-  const image = imageForWord(word.id, media);
+  const image = imageForVocabularyWord(word, media);
   // Retry only when a fresh publication check supplies the approved image again.
   // A transient network failure must not hide that word's photo for the whole visit.
   const [failedImage, setFailedImage] = useState<VocabularyMediaEntry | null>(null);

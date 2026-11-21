@@ -1,0 +1,252 @@
+{
+  "method": "Three separated repetitions, retain the complete middle utterance after silence analysis.",
+  "clips": [
+    {
+      "id": "l7-a8360bba167463a2-carrier",
+      "targetId": "l7-a8360bba167463a2",
+      "file": "l7-a8360bba167463a2-carrier.mp3",
+      "targetFile": "l7-a8360bba167463a2.mp3",
+      "input": "为。为。为。",
+      "expectedPinyin": "wéi",
+      "instructions": "你是一位标准普通话老师。读输入的两个部分，中间停顿一秒。第二部分是前面词语中一个汉字的读音，声调不变。只读文本，不做解释。自然、清晰、完整地发音。参考单字读音：wéi。",
+      "speechInput": "围墙。围。",
+      "voice": "marin",
+      "phoneticProxy": {
+        "target": "为",
+        "spokenGlyph": "围",
+        "sharedPinyin": "wéi",
+        "reason": "Exact homophone used only to synthesize the isolated syllable; curricular text is preserved."
+      },
+      "expectedSegments": 2,
+      "retainedSegment": 1
+    },
+    {
+      "id": "l7-326ca8dabb73f616-carrier",
+      "targetId": "l7-326ca8dabb73f616",
+      "file": "l7-326ca8dabb73f616-carrier.mp3",
+      "targetFile": "l7-326ca8dabb73f616.mp3",
+      "input": "仔。仔。仔。",
+      "expectedPinyin": "zǎi",
+      "instructions": "你是一位标准普通话老师。读输入的两个部分，中间停顿一秒。第二部分是前面词语中一个汉字的读音，声调不变。只读文本，不做解释。自然、清晰、完整地发音。参考单字读音：zǎi。",
+      "speechInput": "牛仔裤。仔。",
+      "voice": "marin",
+      "phoneticProxy": {
+        "target": "仔",
+        "spokenGlyph": "崽",
+        "sharedPinyin": "zǎi",
+        "reason": "Exact homophone used only to synthesize the isolated syllable; curricular text is preserved."
+      },
+      "expectedSegments": 2,
+      "retainedSegment": 1
+    },
+    {
+      "id": "l7-1afb4a61ca04e83e-carrier",
+      "targetId": "l7-1afb4a61ca04e83e",
+      "file": "l7-1afb4a61ca04e83e-carrier.mp3",
+      "targetFile": "l7-1afb4a61ca04e83e.mp3",
+      "input": "便。便。便。",
+      "expectedPinyin": "pián",
+      "instructions": "你是一位标准普通话老师。读输入的两个部分，中间停顿一秒。第二部分是前面词语中一个汉字的读音，声调不变。只读文本，不做解释。自然、清晰、完整地发音。参考单字读音：pián。",
+      "speechInput": "便宜。便。",
+      "voice": "marin",
+      "phoneticProxy": {
+        "target": "便",
+        "spokenGlyph": "骈",
+        "sharedPinyin": "pián",
+        "reason": "Exact homophone used only to synthesize the isolated syllable; curricular text is preserved."
+      },
+      "expectedSegments": 2,
+      "retainedSegment": 1
+    },
+    {
+      "id": "l7-9b5e35d5b6db354b-carrier",
+      "targetId": "l7-9b5e35d5b6db354b",
+      "file": "l7-9b5e35d5b6db354b-carrier.mp3",
+      "targetFile": "l7-9b5e35d5b6db354b.mp3",
+      "input": "币。币。币。",
+      "expectedPinyin": "bì",
+      "instructions": "你是一位标准普通话老师。读输入的两个部分，中间停顿一秒。第二部分是前面词语中一个汉字的读音，声调不变。只读文本，不做解释。自然、清晰、完整地发音。参考单字读音：bì。",
+      "speechInput": "人民币。币。",
+      "voice": "marin",
+      "phoneticProxy": {
+        "target": "币",
+        "spokenGlyph": "必",
+        "sharedPinyin": "bì",
+        "reason": "Exact homophone used only to synthesize the isolated syllable; curricular text is preserved."
+      },
+      "expectedSegments": 2,
+      "retainedSegment": 1
+    },
+    {
+      "id": "l7-85638de6c656a3dd-carrier",
+      "targetId": "l7-85638de6c656a3dd",
+      "file": "l7-85638de6c656a3dd-carrier.mp3",
+      "targetFile": "l7-85638de6c656a3dd.mp3",
+      "input": "恤。恤。恤。",
+      "expectedPinyin": "xù",
+      "instructions": "你是一位标准普通话老师。读输入的两个部分，中间停顿一秒。第二部分是前面词语中一个汉字的读音，声调不变。只读文本，不做解释。自然、清晰、完整地发音。参考单字读音：xù。",
+      "speechInput": "体恤。恤。",
+      "voice": "marin",
+      "phoneticProxy": {
+        "target": "恤",
+        "spokenGlyph": "序",
+        "sharedPinyin": "xù",
+        "reason": "Exact homophone used only to synthesize the isolated syllable; curricular text is preserved."
+      },
+      "expectedSegments": 2,
+      "retainedSegment": 1
+    },
+    {
+      "id": "l7-601cf06f0df06a8c-carrier",
+      "targetId": "l7-601cf06f0df06a8c",
+      "file": "l7-601cf06f0df06a8c-carrier.mp3",
+      "targetFile": "l7-601cf06f0df06a8c.mp3",
+      "input": "折。折。折。",
+      "expectedPinyin": "zhé",
+      "instructions": "把同一个词读三遍，每次之间停顿一秒。只读输入的词，不解释。每次都用拼音 zhé 的读音。完整发出声母和韵母，严格保持声调。音量正常、自然、清晰。儿化词只用一个连贯音节。"
+    },
+    {
+      "id": "l7-d10d2670063d2eb2-carrier",
+      "targetId": "l7-d10d2670063d2eb2",
+      "file": "l7-d10d2670063d2eb2-carrier.mp3",
+      "targetFile": "l7-d10d2670063d2eb2.mp3",
+      "input": "服。服。服。",
+      "expectedPinyin": "fú",
+      "instructions": "把同一个词读三遍，每次之间停顿一秒。只读输入的词，不解释。每次都用拼音 fú 的读音。完整发出声母和韵母，严格保持声调。音量正常、自然、清晰。儿化词只用一个连贯音节。"
+    },
+    {
+      "id": "l7-7e33135cd2fb9f73-carrier",
+      "targetId": "l7-7e33135cd2fb9f73",
+      "file": "l7-7e33135cd2fb9f73-carrier.mp3",
+      "targetFile": "l7-7e33135cd2fb9f73.mp3",
+      "input": "桃。桃。桃。",
+      "expectedPinyin": "táo",
+      "instructions": "请清楚地读三次输入的汉字，每次之间停顿一秒。读音为 táo。只读汉字，不说拼音、不说说明，不添加词语。普通话，音量适中，发音完整自然。",
+      "speechInput": "逃。逃。逃。",
+      "voice": "alloy",
+      "phoneticProxy": {
+        "target": "桃",
+        "spokenGlyph": "逃",
+        "sharedPinyin": "táo",
+        "reason": "Exact homophone used only to synthesize the isolated syllable; curricular text is preserved."
+      }
+    },
+    {
+      "id": "l7-9742babd3b7c1530-carrier",
+      "targetId": "l7-9742babd3b7c1530",
+      "file": "l7-9742babd3b7c1530-carrier.mp3",
+      "targetFile": "l7-9742babd3b7c1530.mp3",
+      "input": "樱。樱。樱。",
+      "expectedPinyin": "yīng",
+      "instructions": "请清楚地读三次输入的汉字，每次之间停顿一秒。读音为 yīng。只读汉字，不说拼音、不说说明，不添加词语。普通话，音量适中，发音完整自然。",
+      "speechInput": "英。英。英。",
+      "voice": "alloy",
+      "phoneticProxy": {
+        "target": "樱",
+        "spokenGlyph": "英",
+        "sharedPinyin": "yīng",
+        "reason": "Exact homophone used only to synthesize the isolated syllable; curricular text is preserved."
+      }
+    },
+    {
+      "id": "l7-e3bada5e1926c911-carrier",
+      "targetId": "l7-e3bada5e1926c911",
+      "file": "l7-e3bada5e1926c911-carrier.mp3",
+      "targetFile": "l7-e3bada5e1926c911.mp3",
+      "input": "民。民。民。",
+      "expectedPinyin": "mín",
+      "instructions": "把同一个词读三遍，每次之间停顿一秒。只读输入的词，不解释。每次都用拼音 mín 的读音。完整发出声母和韵母，严格保持声调。音量正常、自然、清晰。儿化词只用一个连贯音节。"
+    },
+    {
+      "id": "l7-e3ee1f40044fd310-carrier",
+      "targetId": "l7-e3ee1f40044fd310",
+      "file": "l7-e3ee1f40044fd310-carrier.mp3",
+      "targetFile": "l7-e3ee1f40044fd310.mp3",
+      "input": "称呼。称呼。称呼。",
+      "expectedPinyin": "chēnghu",
+      "instructions": "把同一个词读三遍，每次之间停顿一秒。只读输入的词，不解释。每次都用拼音 chēnghu 的读音。完整发出声母和韵母，严格保持声调。音量正常、自然、清晰。儿化词只用一个连贯音节。"
+    },
+    {
+      "id": "l7-7491c99454b1c155-carrier",
+      "targetId": "l7-7491c99454b1c155",
+      "file": "l7-7491c99454b1c155-carrier.mp3",
+      "targetFile": "l7-7491c99454b1c155.mp3",
+      "input": "绿。绿。绿。",
+      "expectedPinyin": "lǜ",
+      "instructions": "你是一位标准普通话老师。读输入的两个部分，中间停顿一秒。第二部分是前面词语中一个汉字的读音，声调不变。只读文本，不做解释。自然、清晰、完整地发音。参考单字读音：lǜ。",
+      "speechInput": "绿色。绿。",
+      "voice": "marin",
+      "phoneticProxy": {
+        "target": "绿",
+        "spokenGlyph": "绿",
+        "sharedPinyin": "lǜ",
+        "reason": "Exact homophone used only to synthesize the isolated syllable; curricular text is preserved."
+      },
+      "expectedSegments": 2,
+      "retainedSegment": 1
+    },
+    {
+      "id": "l7-ccd79b9139850f1e-carrier",
+      "targetId": "l7-ccd79b9139850f1e",
+      "file": "l7-ccd79b9139850f1e-carrier.mp3",
+      "targetFile": "l7-ccd79b9139850f1e.mp3",
+      "input": "羽。羽。羽。",
+      "expectedPinyin": "yǔ",
+      "instructions": "把同一个词读三遍，每次之间停顿一秒。只读输入的词，不解释。每次都用拼音 yǔ 的读音。完整发出声母和韵母，严格保持声调。音量正常、自然、清晰。儿化词只用一个连贯音节。"
+    },
+    {
+      "id": "l7-24e859b0bd874248-carrier",
+      "targetId": "l7-24e859b0bd874248",
+      "file": "l7-24e859b0bd874248-carrier.mp3",
+      "targetFile": "l7-24e859b0bd874248.mp3",
+      "input": "萄。萄。萄。",
+      "expectedPinyin": "táo",
+      "instructions": "请清楚地读三次输入的汉字，每次之间停顿一秒。读音为 táo。只读汉字，不说拼音、不说说明，不添加词语。普通话，音量适中，发音完整自然。",
+      "speechInput": "逃。逃。逃。",
+      "voice": "alloy",
+      "phoneticProxy": {
+        "target": "萄",
+        "spokenGlyph": "逃",
+        "sharedPinyin": "táo",
+        "reason": "Exact homophone used only to synthesize the isolated syllable; curricular text is preserved."
+      }
+    },
+    {
+      "id": "l7-e0e32ceec5324035-carrier",
+      "targetId": "l7-e0e32ceec5324035",
+      "file": "l7-e0e32ceec5324035-carrier.mp3",
+      "targetFile": "l7-e0e32ceec5324035.mp3",
+      "input": "鞋。鞋。鞋。",
+      "expectedPinyin": "xié",
+      "instructions": "把同一个词读三遍，每次之间停顿一秒。只读输入的词，不解释。每次都用拼音 xié 的读音。完整发出声母和韵母，严格保持声调。音量正常、自然、清晰。儿化词只用一个连贯音节。"
+    },
+    {
+      "id": "l7-eb080e12ac204e15-carrier",
+      "targetId": "l7-eb080e12ac204e15",
+      "file": "l7-eb080e12ac204e15-carrier.mp3",
+      "targetFile": "l7-eb080e12ac204e15.mp3",
+      "input": "恰。恰。恰。",
+      "expectedPinyin": "qià",
+      "instructions": "你是一位标准普通话老师。读输入的两个部分，中间停顿一秒。第二部分是前面词语中一个汉字的读音，声调不变。只读文本，不做解释。自然、清晰、完整地发音。参考单字读音：qià。",
+      "speechInput": "恰好。恰。",
+      "voice": "marin",
+      "phoneticProxy": {
+        "target": "恰",
+        "spokenGlyph": "洽",
+        "sharedPinyin": "qià",
+        "reason": "Exact homophone used only to synthesize the isolated syllable; curricular text is preserved."
+      },
+      "expectedSegments": 2,
+      "retainedSegment": 1
+    },
+    {
+      "id": "l7-7439059b3365ad5d-carrier",
+      "targetId": "l7-7439059b3365ad5d",
+      "file": "l7-7439059b3365ad5d-carrier.mp3",
+      "targetFile": "l7-7439059b3365ad5d.mp3",
+      "input": "点儿。点儿。点儿。",
+      "expectedPinyin": "diǎnr",
+      "instructions": "把同一个词读三遍，每次之间停顿一秒。只读输入的词，不解释。每次都用拼音 diǎnr 的读音。完整发出声母和韵母，严格保持声调。音量正常、自然、清晰。儿化词只用一个连贯音节。"
+    }
+  ]
+}

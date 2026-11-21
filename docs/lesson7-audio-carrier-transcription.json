@@ -1,0 +1,138 @@
+[
+  {
+    "id": "l7-a8360bba167463a2",
+    "input": "围墙。围。",
+    "pinyin": "wéi",
+    "sha256": "7dcf41ab7629f0e4cfea4b76876e49ef82ff1176d3979db6243250edb061af84",
+    "transcript": "圍牆。",
+    "method": "Independent full-carrier transcription, no expected text supplied; not tone verification."
+  },
+  {
+    "id": "l7-1afb4a61ca04e83e",
+    "input": "便宜。便。",
+    "pinyin": "pián",
+    "sha256": "cce9628b2cc498bdfcfee2d733bb708044b6943b9f055fbd66f58d57b9f34189",
+    "transcript": "便宜点。",
+    "method": "Independent full-carrier transcription, no expected text supplied; not tone verification."
+  },
+  {
+    "id": "l7-326ca8dabb73f616",
+    "input": "牛仔裤。仔。",
+    "pinyin": "zǎi",
+    "sha256": "ae9b06f150c4e432aa5f954f0fa5b529811825ec9ec67f02104869522e0e322e",
+    "transcript": "牛仔裤紫。",
+    "method": "Independent full-carrier transcription, no expected text supplied; not tone verification."
+  },
+  {
+    "id": "l7-601cf06f0df06a8c",
+    "input": "折。折。折。",
+    "pinyin": "zhé",
+    "sha256": "b33629979f932f04824179f5723451693e9f3ac725b7cc6f679462acc86fc18b",
+    "transcript": "Jó, jó, jó.",
+    "method": "Independent full-carrier transcription, no expected text supplied; not tone verification."
+  },
+  {
+    "id": "l7-d10d2670063d2eb2",
+    "input": "服。服。服。",
+    "pinyin": "fú",
+    "sha256": "8707f20beed9bcd8bf4d0ae1aa061a251829d91adb93139f6f7613c39b707d47",
+    "transcript": "夫、夫、夫。",
+    "method": "Independent full-carrier transcription, no expected text supplied; not tone verification."
+  },
+  {
+    "id": "l7-7e33135cd2fb9f73",
+    "input": "逃。逃。逃。",
+    "pinyin": "táo",
+    "sha256": "faca93b8f0e751cc593b327ad11dc00ff95c05799684d31f74100bb00eef14b5",
+    "transcript": "逃，逃，逃",
+    "method": "Independent full-carrier transcription, no expected text supplied; not tone verification."
+  },
+  {
+    "id": "l7-9742babd3b7c1530",
+    "input": "英。英。英。",
+    "pinyin": "yīng",
+    "sha256": "562ffb18bf332bf76d77c4209798aa4d70a8510e32a1130a8839db44efd973e3",
+    "transcript": "英、英、英",
+    "method": "Independent full-carrier transcription, no expected text supplied; not tone verification."
+  },
+  {
+    "id": "l7-e3bada5e1926c911",
+    "input": "民。民。民。",
+    "pinyin": "mín",
+    "sha256": "ebf87fc8371e8f4b4cfb813d34206f3445129f1c3ea041af0a37bf5afd98bc17",
+    "transcript": "Min, min, min",
+    "method": "Independent full-carrier transcription, no expected text supplied; not tone verification."
+  },
+  {
+    "id": "l7-e3ee1f40044fd310",
+    "input": "称呼。称呼。称呼。",
+    "pinyin": "chēnghu",
+    "sha256": "760fd58abf0cb28a9b4618c9d95edf25e0f6df975652b1ac4fc06465929fccc4",
+    "transcript": "称呼，称呼，称呼。",
+    "method": "Independent full-carrier transcription, no expected text supplied; not tone verification."
+  },
+  {
+    "id": "l7-85638de6c656a3dd",
+    "input": "体恤。恤。",
+    "pinyin": "xù",
+    "sha256": "94f5abb0091db25ca573c0e93f382d4150733a4b391d6eb0faf2951b83235b4a",
+    "transcript": "體恤。",
+    "method": "Independent full-carrier transcription, no expected text supplied; not tone verification."
+  },
+  {
+    "id": "l7-ccd79b9139850f1e",
+    "input": "羽。羽。羽。",
+    "pinyin": "yǔ",
+    "sha256": "aaa9243cf168659d85a922e381d1e2772ba4f1fcdc0a845aef38faaf3ceb6653",
+    "transcript": "ううう",
+    "method": "Independent full-carrier transcription, no expected text supplied; not tone verification."
+  },
+  {
+    "id": "l7-24e859b0bd874248",
+    "input": "逃。逃。逃。",
+    "pinyin": "táo",
+    "sha256": "d4a26e558545cd4c0bfb2fe8d5aba1a2b321a8e058ccc2063978bf23d124ee42",
+    "transcript": "Tal, tal, tal.",
+    "method": "Independent full-carrier transcription, no expected text supplied; not tone verification."
+  },
+  {
+    "id": "l7-e0e32ceec5324035",
+    "input": "鞋。鞋。鞋。",
+    "pinyin": "xié",
+    "sha256": "056f4245f5ef583c0937a44a60254a6a39e282f26ddd1b8a5fc6240d0c4153d5",
+    "transcript": "鞋，鞋，鞋。",
+    "method": "Independent full-carrier transcription, no expected text supplied; not tone verification."
+  },
+  {
+    "id": "l7-9b5e35d5b6db354b",
+    "input": "人民币。币。",
+    "pinyin": "bì",
+    "sha256": "8028e77b392d632cd5aca60f1c49ae32dfee976f2d30350e38eb4a5324aee298",
+    "transcript": "人民币。币。",
+    "method": "Independent full-carrier transcription, no expected text supplied; not tone verification."
+  },
+  {
+    "id": "l7-7439059b3365ad5d",
+    "input": "点儿。点儿。点儿。",
+    "pinyin": "diǎnr",
+    "sha256": "e471f040cb32bea59fb991820ff75a8738e99c281c929fcc3dce322df67557e9",
+    "transcript": "點兒，點兒，點兒。",
+    "method": "Independent full-carrier transcription, no expected text supplied; not tone verification."
+  },
+  {
+    "id": "l7-7491c99454b1c155",
+    "input": "绿色。绿。",
+    "pinyin": "lǜ",
+    "sha256": "114cfbac412da83d61ab59a2e8c9e1a11d07aa3bf82800f55edde98089e974b4",
+    "transcript": "绿色。",
+    "method": "Independent full-carrier transcription, no expected text supplied; not tone verification."
+  },
+  {
+    "id": "l7-eb080e12ac204e15",
+    "input": "恰好。恰。",
+    "pinyin": "qià",
+    "sha256": "a5223ff490d047d23bf04f1dd2efb8f6788dd867381ca7eb44859e9400bc196f",
+    "transcript": "夏好。",
+    "method": "Independent full-carrier transcription, no expected text supplied; not tone verification."
+  }
+]

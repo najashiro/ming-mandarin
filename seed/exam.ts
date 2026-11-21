@@ -8,6 +8,7 @@ export type ExamQuestion = {
   options?: string[];
   answer: string;
   audioText?: string;
+  audioReading?: string;
 };
 
 const coreExamBank: ExamQuestion[] = [
@@ -60,8 +61,13 @@ export function examQuestionsForSeed(seed: string): ExamQuestion[] {
 
 function unitExamQuestions(seed: string, scope: HanziUnitId): ExamQuestion[] {
   const characters = charactersForUnits([scope]);
-  if (scope.startsWith('4.') || scope.startsWith('6.')) return Array.from({ length: 20 }, (_, index) => {
+  if (scope.startsWith('4.') || scope.startsWith('6.') || scope.startsWith('7.')) return Array.from({ length: 20 }, (_, index) => {
     const item = characters[(seedIndex(seed, 'l4-unit', characters.length) + index) % characters.length];
+    if (scope.startsWith('7.') && index % 4 === 0) return {
+      id: `e-${scope}-${index + 1}`, section: 'listening', points: 5,
+      prompt: 'Escucha y elige el carácter.', answer: item.hanzi, audioText: item.hanzi, audioReading: item.pinyin,
+      options: [...new Set([item.hanzi, ...characters.filter(character => character.id !== item.id).slice(0, 3).map(character => character.hanzi)])],
+    };
     return { id: `e-${scope}-${index + 1}`, section: 'hanzi', points: 5, prompt: `¿Cuántos trazos tiene ${item.hanzi}?`, answer: String(item.strokeCount) };
   });
   const character = (index: number) => characters[seedIndex(seed, `unit-character-${index}`, characters.length)];
@@ -83,9 +89,17 @@ function unitExamQuestions(seed: string, scope: HanziUnitId): ExamQuestion[] {
 export function examQuestionsForScope(seed: string, scope: HanziAssessmentScope = 'l1'): ExamQuestion[] {
   if (isHanziUnitId(scope)) return unitExamQuestions(seed,scope);
   const curriculum = getCurriculum(scope);
-  if (curriculum.definition.lessonIds.includes(4) || curriculum.definition.lessonIds.includes(6)) {
+  if (curriculum.definition.lessonIds.some(lesson => [4, 6, 7].includes(lesson))) {
     const eligible = curriculum.exercises.filter(item => item.type === 'choice' || item.type === 'pinyin');
     return Array.from({ length: 20 }, (_, index) => {
+      if (scope === 'l7' && index % 4 === 0) {
+        const wordIndex = (seedIndex(seed, 'l7-listening', curriculum.vocabulary.length) + index) % curriculum.vocabulary.length;
+        const word = curriculum.vocabulary[wordIndex];
+        return { id: `e-${scope}-${index + 1}`, section: 'listening', points: 5,
+          prompt: 'Escucha y elige la palabra.', answer: word.hanzi, audioText: word.hanzi, audioReading: word.pinyin,
+          options: [word.hanzi, ...[1, 3, 5].map(offset => curriculum.vocabulary[(wordIndex + offset) % curriculum.vocabulary.length].hanzi)],
+        } as ExamQuestion;
+      }
       const item = eligible[(seedIndex(seed, 'l4-start', eligible.length) + index) % eligible.length];
       return { id: `e-${scope}-${index + 1}`, section: item.type === 'pinyin' ? 'pinyin' : 'vocabulary', points: 5,
         prompt: item.prompt, answer: item.answer, options: item.options } as ExamQuestion;

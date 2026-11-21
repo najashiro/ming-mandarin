@@ -4948,5 +4948,509 @@
     "height": 521,
     "canvasWidth": 1618,
     "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/strawberries-fbe57ccbe466.webp": {
+    "sha256": "fbe57ccbe46693c4f380bd7c9a02c374f571c63d8e1ebefb9636c2343c0f5e8f",
+    "x": 813,
+    "y": 195,
+    "width": 754,
+    "height": 609,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/shirt-a89f7996d87f.webp": {
+    "sha256": "a89f7996d87fd479272a1dece983a423b98541dba0d98f99ea0db0b0fd3f3a95",
+    "x": 814,
+    "y": 70,
+    "width": 752,
+    "height": 858,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/jeans-ac5fe99acb70.webp": {
+    "sha256": "ac5fe99acb70a49f940fc34b37fd248ea64761348ac80877a2929ea69606367f",
+    "x": 949,
+    "y": 64,
+    "width": 481,
+    "height": 872,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/down-coat-be7879cf81a8.webp": {
+    "sha256": "be7879cf81a883e5dba517773e550496d9063ad4dfd5078dfe61e14b82a88c25",
+    "x": 909,
+    "y": 64,
+    "width": 562,
+    "height": 872,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/clothing-5ea62624e258.webp": {
+    "sha256": "5ea62624e25832ac0cdf4aac76b31b1af83df04421636973d07abf5337c49313",
+    "x": 814,
+    "y": 100,
+    "width": 752,
+    "height": 800,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/bank-card-c19761f02bd1.webp": {
+    "sha256": "c19761f02bd135332265116f0166901dc6f66003a516ae95cd01b8a830b971d9",
+    "x": 813,
+    "y": 269,
+    "width": 754,
+    "height": 461,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/orange-04e235bc4ad5.webp": {
+    "sha256": "04e235bc4ad5f521fed164746e07281b6936c29cdb092f7d095ab6b18f6b05b8",
+    "x": 813,
+    "y": 196,
+    "width": 754,
+    "height": 607,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/grapes-0fe7d91def11.webp": {
+    "sha256": "0fe7d91def110bcba58cae52899763a298756820d1e23faca4d8c68acbf26ae4",
+    "x": 868,
+    "y": 65,
+    "width": 644,
+    "height": 871,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/bananas-c319d944f07c.webp": {
+    "sha256": "c319d944f07c7ab52c018a3fce14a051b35621ced0fd3688fdfd2be69a60ef78",
+    "x": 813,
+    "y": 220,
+    "width": 754,
+    "height": 559,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/cherries-9f5236c11327.webp": {
+    "sha256": "9f5236c113273befb67b2359a42fec77dea16547b12aa7f9299c31939583e864",
+    "x": 813,
+    "y": 213,
+    "width": 754,
+    "height": 574,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/mixed-fruit-57aa191a5bc6.webp": {
+    "sha256": "57aa191a5bc66dcc103ad8d15cc5aecd6cc937d588f7703178c71a20e55d1468",
+    "x": 813,
+    "y": 206,
+    "width": 754,
+    "height": 588,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/skirt-dc8d8a7ce352.webp": {
+    "sha256": "dc8d8a7ce3522ee295f8d10dd15e41839676c46d70bc80bece08ebe3690f3878",
+    "x": 813,
+    "y": 128,
+    "width": 754,
+    "height": 742,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/tshirt-61863a6c9533.webp": {
+    "sha256": "61863a6c953392c98afb12cca4a3172ea1b50b3a9bc95214a5e28ae20307d094",
+    "x": 814,
+    "y": 121,
+    "width": 752,
+    "height": 757,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/tasting-2273c06323d2.webp": {
+    "sha256": "2273c06323d25fc6a84a66d1be3c5f36fcfec411911307d8579522d3ab229d3d",
+    "x": 1066,
+    "y": 64,
+    "width": 247,
+    "height": 872,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/trying-clothes-df11d93f70ca.webp": {
+    "sha256": "df11d93f70ca77c49680345c44f481b46c9bbd6ade21e753224958a97ef9afe9",
+    "x": 918,
+    "y": 64,
+    "width": 543,
+    "height": 873,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/paying-card-c3f7e67ccb10.webp": {
+    "sha256": "c3f7e67ccb10eaffaf4dac00786222d08024aa46d909a386341e3ca25eb944d3",
+    "x": 817,
+    "y": 65,
+    "width": 745,
+    "height": 871,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/putting-on-coat-7c94e2ac3485.webp": {
+    "sha256": "7c94e2ac3485e684dbf8d947f87f64eb6426a6148e953237eeb17c4e60588fab",
+    "x": 898,
+    "y": 63,
+    "width": 583,
+    "height": 873,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/taking-photo-da3ff7ea004e.webp": {
+    "sha256": "da3ff7ea004e38a340e96afe702ecf0fd16394a9338bfa5430afb51c97e04fca",
+    "x": 1041,
+    "y": 64,
+    "width": 298,
+    "height": 872,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/smoking-85c8e188a478.webp": {
+    "sha256": "85c8e188a4786b40aeda31bea20fa3923aa380f4fd30d686d09685addebb0691",
+    "x": 1035,
+    "y": 64,
+    "width": 309,
+    "height": 873,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/sales-assistant-d5eba7fc45e0.webp": {
+    "sha256": "d5eba7fc45e0f11c3cb650b7f876fa4fd5984870fb08098ec96fb4cbcbfdff08",
+    "x": 927,
+    "y": 63,
+    "width": 526,
+    "height": 873,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-128edea30a-3ab88a9387ea.webp": {
+    "sha256": "3ab88a9387eaccaed776ec69e5e71a6bd73a6d2befe52b48f16cff1772454f43",
+    "x": 815,
+    "y": 125,
+    "width": 751,
+    "height": 751,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-e5ad2c93a7-f2f4c9e0f9ed.webp": {
+    "sha256": "f2f4c9e0f9edff57145298619185fd2c2db0a52d601e67a20fd4c5172ba233b0",
+    "x": 837,
+    "y": 66,
+    "width": 707,
+    "height": 869,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-e92a3bb27e-33bd891b129a.webp": {
+    "sha256": "33bd891b129a6bc9b89df2e89479db395c4b74b5749e4141737423af4651f8c4",
+    "x": 815,
+    "y": 157,
+    "width": 751,
+    "height": 686,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-d467db9879-97b79126225a.webp": {
+    "sha256": "97b79126225a397c1b3d0a9805d3e74e215517f1067e7337397ffc09ba5e9fdf",
+    "x": 815,
+    "y": 165,
+    "width": 751,
+    "height": 671,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-06681b9343-44ed488c9030.webp": {
+    "sha256": "44ed488c90302886268d43aaa830a5d319bbd3b7a4726f74577e57b73cbee826",
+    "x": 816,
+    "y": 92,
+    "width": 749,
+    "height": 817,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-c2ef8ea085-86ce3c4ac8de.webp": {
+    "sha256": "86ce3c4ac8deb442bf2b1e154c4d1c84802e97852aa587e3aa1d0b7f08496b76",
+    "x": 843,
+    "y": 66,
+    "width": 694,
+    "height": 869,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-2bf9ebd38c-42ec576df41f.webp": {
+    "sha256": "42ec576df41f9733081cb72542504e7c6523f1a619e2d3beba334f85ca93b5d2",
+    "x": 856,
+    "y": 66,
+    "width": 669,
+    "height": 869,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-983eea06ba-77910673aa2f.webp": {
+    "sha256": "77910673aa2f6afac1ba8cb8e0f5a72272ed2249ea2bc8d379e967fc61166eee",
+    "x": 857,
+    "y": 66,
+    "width": 666,
+    "height": 868,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-110a9cd369-4e7013a8a274.webp": {
+    "sha256": "4e7013a8a274edb9dcba26650f9463afdd0426bc7a96388195451d1e0b3e9f30",
+    "x": 815,
+    "y": 166,
+    "width": 751,
+    "height": 668,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-d1c11400d9-98ed603db4bd.webp": {
+    "sha256": "98ed603db4bd4586bd38d8c0eccacf31f363f54732b2cd6e655233e3387336f9",
+    "x": 816,
+    "y": 121,
+    "width": 749,
+    "height": 758,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-b2b33a011d-217dd276f40c.webp": {
+    "sha256": "217dd276f40c8e8e06e3264ef285a85e36809c3e054e4e228bb9567caafaab25",
+    "x": 824,
+    "y": 68,
+    "width": 733,
+    "height": 867,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-88987c234e-1d3ea2d2c291.webp": {
+    "sha256": "1d3ea2d2c2916d8376079c9c59387c82568dd0cf6e12fd485955bcb6537d2335",
+    "x": 829,
+    "y": 67,
+    "width": 721,
+    "height": 868,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-6d584324ee-807cc43c1631.webp": {
+    "sha256": "807cc43c163189cf1564c1ddcf4aca91839516eeb69a0df1adb38fa168eac202",
+    "x": 977,
+    "y": 67,
+    "width": 427,
+    "height": 868,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-a3cde07c66-b14ba50ac3f6.webp": {
+    "sha256": "b14ba50ac3f60dbe74e97f5eeca3d52b53494e25bf26bae0d8f900053c799afe",
+    "x": 864,
+    "y": 66,
+    "width": 654,
+    "height": 869,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-350628c20d-5d555ebbe0cd.webp": {
+    "sha256": "5d555ebbe0cd4723a0238bfdb63897268281081dd79c5f9222e9d3b073912f86",
+    "x": 842,
+    "y": 66,
+    "width": 697,
+    "height": 869,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-373c53b3af-1e602afdc19c.webp": {
+    "sha256": "1e602afdc19c9795780336c212f02fddfd6a540669e9f67b4ee720bbd3d2fa39",
+    "x": 868,
+    "y": 66,
+    "width": 643,
+    "height": 869,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-ac9e247915-b4fef55e8faa.webp": {
+    "sha256": "b4fef55e8faaaa223d024cbbd5e2e245e2374df78d6538afb09b5acfff7438a8",
+    "x": 894,
+    "y": 66,
+    "width": 592,
+    "height": 868,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-f256df7cb6-b4fef55e8faa.webp": {
+    "sha256": "b4fef55e8faaaa223d024cbbd5e2e245e2374df78d6538afb09b5acfff7438a8",
+    "x": 894,
+    "y": 66,
+    "width": 592,
+    "height": 868,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-1c76253696-b8aba5b380ee.webp": {
+    "sha256": "b8aba5b380ee824e93316f91e704e732b91cf359f2fe3f3ffc5d5c87d4bfd174",
+    "x": 889,
+    "y": 66,
+    "width": 602,
+    "height": 869,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-9cc4814cfc-b8aba5b380ee.webp": {
+    "sha256": "b8aba5b380ee824e93316f91e704e732b91cf359f2fe3f3ffc5d5c87d4bfd174",
+    "x": 889,
+    "y": 66,
+    "width": 602,
+    "height": 869,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-1c3f70ef8d-ccb883dfb4e8.webp": {
+    "sha256": "ccb883dfb4e8fc989ef329480dc8fdcda48c2a9a9ecbdfc32f54d138c6f44186",
+    "x": 890,
+    "y": 66,
+    "width": 601,
+    "height": 868,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-d866a61621-e593235183b5.webp": {
+    "sha256": "e593235183b5bca902c3ed534d76d0e7664f7d0b421b959f0790bdae41ef714e",
+    "x": 893,
+    "y": 66,
+    "width": 595,
+    "height": 869,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-47c1e4473f-acb796ae9113.webp": {
+    "sha256": "acb796ae9113175e000b05b4c452191ab0394200a890b79d30be9f035d0403da",
+    "x": 816,
+    "y": 106,
+    "width": 749,
+    "height": 788,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-c374cef8e3-a42197d4ae12.webp": {
+    "sha256": "a42197d4ae12b8aa491d373d5e3414ddad129c910318450eb8e9bde07937a0c3",
+    "x": 816,
+    "y": 81,
+    "width": 749,
+    "height": 839,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-ae078bfdf8-7936ea45f9f4.webp": {
+    "sha256": "7936ea45f9f4f19b5729f1c04f9f4781588b1ea6359ff49485293a9db127f789",
+    "x": 842,
+    "y": 66,
+    "width": 695,
+    "height": 868,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-6ec55063a7-eac5878d9516.webp": {
+    "sha256": "eac5878d95165ea42bb3d4e54616eda7d5a00e96a0335d4bb488a18b5a3e7d08",
+    "x": 839,
+    "y": 66,
+    "width": 703,
+    "height": 869,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-bb70dd80f1-745d48b9b7ca.webp": {
+    "sha256": "745d48b9b7caba75010048046d65fa5b0df69a36c98d348edaef2c01d8c35e96",
+    "x": 842,
+    "y": 66,
+    "width": 697,
+    "height": 869,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-0f411b91c8-d353784d74f5.webp": {
+    "sha256": "d353784d74f5d55e21a8ecf9bd0de7b9963fbc1c7d37bf1ddf78de602b291f4f",
+    "x": 843,
+    "y": 66,
+    "width": 694,
+    "height": 869,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-c1316a6e20-d84e75cf8cd0.webp": {
+    "sha256": "d84e75cf8cd04586b6430793b85d685936e5d92b29a1af43463340b86e7ebe23",
+    "x": 842,
+    "y": 66,
+    "width": 696,
+    "height": 868,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-f68149ce60-a6a477375e3f.webp": {
+    "sha256": "a6a477375e3f2abe4548b4c459945512d2e06ec8ae269a1b3916d9321997df0c",
+    "x": 889,
+    "y": 66,
+    "width": 602,
+    "height": 869,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-da6c7364e4-be53aff74d99.webp": {
+    "sha256": "be53aff74d99ad967b043c1c1631c80c1e78bfc7d99885b470215123f88caf21",
+    "x": 894,
+    "y": 66,
+    "width": 592,
+    "height": 868,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-83aeab09d8-2b622b965027.webp": {
+    "sha256": "2b622b965027ea2aaa7429ff2f0f784dfaff254f58e267ac4ad2540f42268156",
+    "x": 815,
+    "y": 127,
+    "width": 751,
+    "height": 746,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-d7423be1e6-084e49ac3d85.webp": {
+    "sha256": "084e49ac3d85c8090b553a8c19f1dd5f89d94cf9d6a30fc039d720b58e702752",
+    "x": 815,
+    "y": 222,
+    "width": 751,
+    "height": 557,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-05df3f06fe-18f95a2791da.webp": {
+    "sha256": "18f95a2791da2db702c9d8d839e32540299d411e1de8e671834ce4aa115b09a6",
+    "x": 815,
+    "y": 222,
+    "width": 751,
+    "height": 556,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-eae2c60656-3a7a578d1a5e.webp": {
+    "sha256": "3a7a578d1a5e4933b90b2e8e69af07d840283e888dd0d657c1cb45ec495f3031",
+    "x": 816,
+    "y": 68,
+    "width": 749,
+    "height": 865,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
+  },
+  "/images/vocabulary/lesson7/diagram-36e0e1b898-217dd276f40c.webp": {
+    "sha256": "217dd276f40c8e8e06e3264ef285a85e36809c3e054e4e228bb9567caafaab25",
+    "x": 824,
+    "y": 68,
+    "width": 733,
+    "height": 867,
+    "canvasWidth": 1618,
+    "canvasHeight": 1000
   }
 }

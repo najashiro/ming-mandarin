@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-20",
+  "request": "ya publicar, nada ausente, los audios los tienes que generar",
+  "projectId": "prj_7w85SRqXwCRw3JEWod3YtLHd1JPm",
+  "teamId": "team_zYTyvn23HxMpeKx3tyVQq39r",
+  "project": "ming-mandarin",
+  "target": "production",
+  "sourceBaseline": "0590473f1d227e0f6e0e48ba0d7b367bd9dc0009",
+  "branch": "codex/lesson7-corpus-ming-20261120",
+  "scope": "Publicar la integración de L7 con todos los apoyos editoriales y las cinco prácticas de escucha completadas. Sin cambios de esquema ni de credenciales."
+}

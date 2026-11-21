@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import { Hanzi } from '@/components/Hanzi';
 import { PinyinText } from '@/components/PinyinText';
+import { SpeakButton } from '@/components/SpeakButton';
 import './documentary-activities.css';
 
 type Choice = { label: string; text: string; pinyin?: string };
@@ -14,12 +15,34 @@ type ActivityItem = {
 type ActivityVisual = { id: string; title: string; description: string; texts: string[]; panels: { label: string; rows: string[] }[]; descriptions: { label: string; text: string }[] };
 export type DocumentaryActivity = {
   id: string; title: string; texts: string[]; requiresOriginalAudio: boolean; context?: string; sourceTitle?: string;
+  listeningPractice?: {
+    origin: string; instruction: string; answerOrigin: string; recordingOrigin: string;
+    tracks: { id: string; title: string; hanzi: string; pinyin: string; spanish: string; task: string; answer: string }[];
+  };
   structured?: {
     instruction: string; items: ActivityItem[]; choices: Choice[]; wordBank: string[];
     tables: ActivityTable[]; passages: Passage[]; visuals: ActivityVisual[]; models: Passage[];
     clocks: { label: string; hour: number; minute: number }[]; relatedActivityIds: string[]; providedInsertions: string[][];
   };
 };
+
+function ListeningPractice({ practice }: { practice: NonNullable<DocumentaryActivity['listeningPractice']> }) {
+  return <div className="documentary-body documentary-listening">
+    <p>{practice.instruction}</p>
+    <p className="documentary-audio-status">Audio de práctica generado con IA. Transcripciones y soluciones de Míng.</p>
+    {practice.tracks.map(track => <section className="documentary-passage documentary-listening-track" key={track.id} aria-labelledby={`${track.id}-title`}>
+      <h4 id={`${track.id}-title`}>{track.title}</h4>
+      {track.task && <p><Hanzi>{track.task}</Hanzi></p>}
+      <SpeakButton text={track.hanzi} reading={track.pinyin} ariaLabel={`Escuchar ${track.title}`} label="Escuchar"/>
+      <details className="documentary-translation"><summary>Ver transcripción y pronunciación</summary>
+        <p className="documentary-chinese"><Hanzi>{track.hanzi}</Hanzi></p>
+        <p className="documentary-pinyin"><PinyinText>{track.pinyin}</PinyinText></p>
+        <p>{track.spanish}</p>
+      </details>
+      {track.answer && <details className="documentary-translation"><summary>Comprobar respuesta</summary><p><Hanzi>{track.answer}</Hanzi></p></details>}
+    </section>)}
+  </div>;
+}
 
 function MarkedText({ text, underlined = '' }: { text: string; underlined?: string }) {
   const targets = underlined.split(/[／/]/).filter(Boolean).sort((a, b) => b.length-a.length);
@@ -118,7 +141,7 @@ export function DocumentaryActivities({ activities }: { activities: readonly Doc
     {activity.sourceTitle && activity.sourceTitle !== activities[index - 1]?.sourceTitle ? <h3>{activity.sourceTitle}</h3> : null}
     <details className="panel documentary-activity" id={activity.id}>
     <summary>{activity.context ? <span className="documentary-context"><Hanzi>{activity.context}</Hanzi></span> : null}<Hanzi>{activity.title}</Hanzi></summary>
-    {activity.requiresOriginalAudio ? <p className="documentary-audio-status" role="status">Esta actividad necesita la grabación original del libro, aún no disponible.</p> : null}
-    {activity.structured ? <StructuredActivity activity={activity}/> : activity.texts.map((text, index) => <p className="documentary-chinese" key={index}><Hanzi>{text}</Hanzi></p>)}
+    {activity.requiresOriginalAudio && !activity.listeningPractice ? <p className="documentary-audio-status" role="status">Esta actividad necesita la grabación original del libro, aún no disponible.</p> : null}
+    {activity.listeningPractice ? <ListeningPractice practice={activity.listeningPractice}/> : activity.structured ? <StructuredActivity activity={activity}/> : activity.texts.map((text, index) => <p className="documentary-chinese" key={index}><Hanzi>{text}</Hanzi></p>)}
   </details></Fragment>)}</div>;
 }

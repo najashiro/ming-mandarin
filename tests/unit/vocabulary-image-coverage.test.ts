@@ -3,19 +3,19 @@ import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { getVocabularyMixSet, vocabularyCatalog, vocabularyMixScopes } from '@/lib/vocabulary';
-import { imageForWord, vocabularyMedia } from '@/lib/vocabulary-media';
+import { imageForVocabularyWord, vocabularyMedia } from '@/lib/vocabulary-media';
 
 describe('complete vocabulary image coverage', () => {
   for (const scope of vocabularyMixScopes) {
     it(`provides an approved image for every card selectable in ${scope}`, () => {
-      const missing = getVocabularyMixSet(scope).filter(word => !imageForWord(word.id))
+      const missing = getVocabularyMixSet(scope).filter(word => !imageForVocabularyWord(word))
         .map(word => `${word.id}: ${word.spanish}`);
       expect(missing).toEqual([]);
     });
   }
 
   it('covers every word throughout the active corpus, including catalog-only entries', () => {
-    const missing = vocabularyCatalog.filter(word => !imageForWord(word.id))
+    const missing = vocabularyCatalog.filter(word => !imageForVocabularyWord(word))
       .map(word => `${word.id}: ${word.spanish}`);
     expect(missing).toEqual([]);
   });

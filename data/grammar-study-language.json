@@ -269,6 +269,11 @@
   ],
   "readings": [
     {
+      "hanzi": "T恤",
+      "pinyin": "T xù",
+      "spanish": "camiseta"
+    },
+    {
       "hanzi": "一",
       "pinyin": "yī",
       "spanish": "uno"
@@ -309,6 +314,21 @@
       "spanish": "en total"
     },
     {
+      "hanzi": "一共两千一百九十一块。",
+      "pinyin": "Yígòng liǎngqiān yìbǎi jiǔshíyī kuài.",
+      "spanish": "Son dos mil ciento noventa y un yuanes en total."
+    },
+    {
+      "hanzi": "一千零一",
+      "pinyin": "Yì qiān líng yī",
+      "spanish": "1001"
+    },
+    {
+      "hanzi": "一块七毛五",
+      "pinyin": "Yí kuài qī máo wǔ",
+      "spanish": "1,75 yuanes"
+    },
+    {
       "hanzi": "一月",
       "pinyin": "yī yuè",
       "spanish": "enero"
@@ -320,8 +340,13 @@
     },
     {
       "hanzi": "一点儿",
-      "pinyin": "yì diǎnr",
-      "spanish": "un poco"
+      "pinyin": "yìdiǎnr",
+      "spanish": "un poco; algo"
+    },
+    {
+      "hanzi": "一百零五",
+      "pinyin": "Yì bǎi líng wǔ",
+      "spanish": "105"
     },
     {
       "hanzi": "一起",
@@ -392,6 +417,11 @@
       "hanzi": "三月",
       "pinyin": "sān yuè",
       "spanish": "marzo"
+    },
+    {
+      "hanzi": "三百九十九块。",
+      "pinyin": "Sānbǎi jiǔshíjiǔ kuài.",
+      "spanish": "Trescientos noventa y nueve yuanes."
     },
     {
       "hanzi": "上",
@@ -481,7 +511,7 @@
     {
       "hanzi": "不好意思",
       "pinyin": "bù hǎoyìsi",
-      "spanish": "lo siento; sentirse avergonzado"
+      "spanish": "disculpe; lo siento"
     },
     {
       "hanzi": "不客气",
@@ -497,6 +527,11 @@
       "hanzi": "不行",
       "pinyin": "Bù xíng",
       "spanish": "no se puede; no está bien"
+    },
+    {
+      "hanzi": "不错",
+      "pinyin": "búcuò",
+      "spanish": "bastante bien"
     },
     {
       "hanzi": "专业",
@@ -529,9 +564,19 @@
       "spanish": "Dos hermanas mayores."
     },
     {
+      "hanzi": "两千一百零九",
+      "pinyin": "Liǎng qiān yì bǎi líng jiǔ",
+      "spanish": "2109"
+    },
+    {
       "hanzi": "两口人",
       "pinyin": "liǎng kǒu rén",
       "spanish": "dos miembros de la familia"
+    },
+    {
+      "hanzi": "两块二",
+      "pinyin": "Liǎng kuài èr",
+      "spanish": "2,20 yuanes"
     },
     {
       "hanzi": "两点一刻",
@@ -579,6 +624,11 @@
       "spanish": "nueve"
     },
     {
+      "hanzi": "九千九百九十九",
+      "pinyin": "Jiǔ qiān jiǔ bǎi jiǔ shí jiǔ",
+      "spanish": "9999"
+    },
+    {
       "hanzi": "九月",
       "pinyin": "jiǔ yuè",
       "spanish": "septiembre"
@@ -597,6 +647,11 @@
       "hanzi": "书房",
       "pinyin": "shūfáng",
       "spanish": "cuarto de estudio"
+    },
+    {
+      "hanzi": "买",
+      "pinyin": "mǎi",
+      "spanish": "comprar"
     },
     {
       "hanzi": "了",
@@ -664,14 +719,29 @@
       "spanish": "día cinco"
     },
     {
+      "hanzi": "五块五一斤。",
+      "pinyin": "Wǔ kuài wǔ yì jīn.",
+      "spanish": "Cinco yuanes con cincuenta por medio kilo."
+    },
+    {
       "hanzi": "五月",
       "pinyin": "wǔ yuè",
       "spanish": "mayo"
     },
     {
+      "hanzi": "些",
+      "pinyin": "xiē",
+      "spanish": "algunos; unas"
+    },
+    {
       "hanzi": "人",
       "pinyin": "rén",
       "spanish": "persona; habitante"
+    },
+    {
+      "hanzi": "人民币",
+      "pinyin": "rénmínbì",
+      "spanish": "renminbi; moneda china"
     },
     {
       "hanzi": "什么",
@@ -814,6 +884,11 @@
       "spanish": "sufijo plural"
     },
     {
+      "hanzi": "件",
+      "pinyin": "jiàn",
+      "spanish": "pieza/artículo (de ropa)"
+    },
+    {
       "hanzi": "会",
       "pinyin": "huì",
       "spanish": "saber; poder (habilidad)"
@@ -944,6 +1019,11 @@
       "spanish": "¿Estás ocupado/a?"
     },
     {
+      "hanzi": "你想不想看电影？",
+      "pinyin": "Nǐ xiǎng bu xiǎng kàn diànyǐng?",
+      "spanish": "¿Te gustaría ver una película?"
+    },
+    {
       "hanzi": "你明天几点有课？",
       "pinyin": "Nǐ míngtiān jǐ diǎn yǒu kè?",
       "spanish": "¿A qué hora tienes clase mañana?"
@@ -1014,6 +1094,21 @@
       "spanish": "Ven conmigo."
     },
     {
+      "hanzi": "便宜",
+      "pinyin": "piányi",
+      "spanish": "económico; barato"
+    },
+    {
+      "hanzi": "便宜点儿吧。",
+      "pinyin": "Piányi diǎnr ba.",
+      "spanish": "Baje un poco el precio, por favor."
+    },
+    {
+      "hanzi": "便宜点儿吧，十四块一斤，好吗？",
+      "pinyin": "Piányi diǎnr ba, shísì kuài yì jīn, hǎo ma?",
+      "spanish": "Baje un poco el precio: catorce yuanes por medio kilo, ¿le parece?"
+    },
+    {
       "hanzi": "俄罗斯",
       "pinyin": "Éluósī",
       "spanish": "Rusia"
@@ -1049,6 +1144,11 @@
       "spanish": "hijo"
     },
     {
+      "hanzi": "元",
+      "pinyin": "yuán",
+      "spanish": "yuan (clasificador oficial de la moneda china)"
+    },
+    {
       "hanzi": "先",
       "pinyin": "xiān",
       "spanish": "primero; antes"
@@ -1056,7 +1156,7 @@
     {
       "hanzi": "先生",
       "pinyin": "xiānsheng",
-      "spanish": "Sr.; señor; caballero; marido"
+      "spanish": "señor; Sr."
     },
     {
       "hanzi": "兔",
@@ -1171,7 +1271,7 @@
     {
       "hanzi": "分",
       "pinyin": "fēn",
-      "spanish": "minuto"
+      "spanish": "fen (clasificador de un centavo)"
     },
     {
       "hanzi": "刚",
@@ -1197,6 +1297,11 @@
       "hanzi": "到",
       "pinyin": "dào",
       "spanish": "llegar"
+    },
+    {
+      "hanzi": "刷卡",
+      "pinyin": "shuākǎ",
+      "spanish": "pagar con tarjeta de crédito/débito"
     },
     {
       "hanzi": "刻",
@@ -1344,6 +1449,11 @@
       "spanish": "mitad"
     },
     {
+      "hanzi": "卖",
+      "pinyin": "mài",
+      "spanish": "vender"
+    },
+    {
       "hanzi": "南",
       "pinyin": "nán",
       "spanish": "sur"
@@ -1352,6 +1462,11 @@
       "hanzi": "南边",
       "pinyin": "nánbian",
       "spanish": "sur (lado)"
+    },
+    {
+      "hanzi": "卡",
+      "pinyin": "kǎ",
+      "spanish": "tarjeta"
     },
     {
       "hanzi": "卡片",
@@ -1404,6 +1519,11 @@
       "spanish": "ir"
     },
     {
+      "hanzi": "去上海",
+      "pinyin": "Qù Shànghǎi",
+      "spanish": "ir a Shanghái"
+    },
+    {
       "hanzi": "去年",
       "pinyin": "qùnián",
       "spanish": "el año pasado"
@@ -1444,6 +1564,11 @@
       "spanish": "llamarse; llamar"
     },
     {
+      "hanzi": "可不可以",
+      "pinyin": "kě bu kěyǐ",
+      "spanish": "¿se puede?"
+    },
+    {
       "hanzi": "可乐",
       "pinyin": "kělè",
       "spanish": "refresco de cola"
@@ -1451,7 +1576,22 @@
     {
       "hanzi": "可以",
       "pinyin": "kěyǐ",
-      "spanish": "poder; estar permitido"
+      "spanish": "poder"
+    },
+    {
+      "hanzi": "可以刷卡吗？",
+      "pinyin": "Kěyǐ shuākǎ ma?",
+      "spanish": "¿Puedo pagar con tarjeta?"
+    },
+    {
+      "hanzi": "可以打折吗？",
+      "pinyin": "Kěyǐ dǎzhé ma?",
+      "spanish": "¿Puede hacerme un descuento?"
+    },
+    {
+      "hanzi": "可以给我打九折。",
+      "pinyin": "Kěyǐ gěi wǒ dǎ jiǔ zhé.",
+      "spanish": "Puede hacerme un descuento del diez por ciento."
     },
     {
       "hanzi": "可惜",
@@ -1502,6 +1642,11 @@
       "hanzi": "吃饭",
       "pinyin": "Chī fàn",
       "spanish": "Comer."
+    },
+    {
+      "hanzi": "合适",
+      "pinyin": "héshì",
+      "spanish": "conveniente; adecuado; quedar bien"
     },
     {
       "hanzi": "同学",
@@ -1569,6 +1714,16 @@
       "spanish": "Se dice que esta película es muy buena."
     },
     {
+      "hanzi": "吸烟",
+      "pinyin": "xī yān",
+      "spanish": "fumar"
+    },
+    {
+      "hanzi": "员",
+      "pinyin": "yuán",
+      "spanish": "(sufijo adjunto a ciertas actividades) persona"
+    },
+    {
       "hanzi": "呢",
       "pinyin": "ne",
       "spanish": "partícula de pregunta elíptica"
@@ -1622,6 +1777,16 @@
       "hanzi": "哪国人",
       "pinyin": "nǎ guó rén",
       "spanish": "de qué país; de qué nacionalidad"
+    },
+    {
+      "hanzi": "哪里",
+      "pinyin": "nǎli",
+      "spanish": "(expresión de modestia) en absoluto"
+    },
+    {
+      "hanzi": "售货员",
+      "pinyin": "shòuhuòyuán",
+      "spanish": "vendedor/a"
     },
     {
       "hanzi": "唱",
@@ -1744,6 +1909,11 @@
       "spanish": "sentarse"
     },
     {
+      "hanzi": "块",
+      "pinyin": "kuài",
+      "spanish": "kuai (clasificador coloquial de dinero)"
+    },
+    {
       "hanzi": "埃及",
       "pinyin": "Āijí",
       "spanish": "Egipto"
@@ -1827,6 +1997,11 @@
       "hanzi": "大卫",
       "pinyin": "Dàwèi",
       "spanish": "Dawei; nombre propio"
+    },
+    {
+      "hanzi": "大号",
+      "pinyin": "dàhào",
+      "spanish": "talla grande"
     },
     {
       "hanzi": "大学",
@@ -2149,6 +2324,11 @@
       "spanish": "Xiaoyun y Song Hua me enseñan a hablar chino y escribir caracteres."
     },
     {
+      "hanzi": "小号",
+      "pinyin": "xiǎohào",
+      "spanish": "talla pequeña"
+    },
+    {
       "hanzi": "小姐",
       "pinyin": "xiǎojie",
       "spanish": "señora; señorita"
@@ -2172,6 +2352,11 @@
       "hanzi": "少",
       "pinyin": "shǎo",
       "spanish": "poco"
+    },
+    {
+      "hanzi": "尝",
+      "pinyin": "cháng",
+      "spanish": "probar"
     },
     {
       "hanzi": "就",
@@ -2324,6 +2509,16 @@
       "spanish": "tocar al piano"
     },
     {
+      "hanzi": "当然",
+      "pinyin": "dāngrán",
+      "spanish": "por supuesto"
+    },
+    {
+      "hanzi": "当然可以。",
+      "pinyin": "Dāngrán kěyǐ.",
+      "spanish": "Por supuesto que puede."
+    },
+    {
       "hanzi": "很",
       "pinyin": "hěn",
       "spanish": "muy; enlace del predicado adjetival"
@@ -2369,6 +2564,11 @@
       "spanish": "feliz"
     },
     {
+      "hanzi": "怎么",
+      "pinyin": "zěnme",
+      "spanish": "cómo"
+    },
+    {
       "hanzi": "怎么样",
       "pinyin": "zěnmeyàng",
       "spanish": "cómo es; cómo está/están"
@@ -2399,14 +2599,29 @@
       "spanish": "usted"
     },
     {
+      "hanzi": "您再试一下这件吧。",
+      "pinyin": "Nín zài shì yíxià zhè jiàn ba.",
+      "spanish": "Pruébese esta otra vez."
+    },
+    {
       "hanzi": "您好！",
       "pinyin": "Nín hǎo!",
       "spanish": "¡Hola! (formal)"
     },
     {
+      "hanzi": "您给我六十，我找您八块。",
+      "pinyin": "Nín gěi wǒ liùshí, wǒ zhǎo nín bā kuài.",
+      "spanish": "Me da sesenta y le devuelvo ocho yuanes."
+    },
+    {
       "hanzi": "您贵姓？",
       "pinyin": "Nín guìxìng?",
       "spanish": "Formal."
+    },
+    {
+      "hanzi": "想",
+      "pinyin": "xiǎng",
+      "spanish": "pensar; querer; gustaría"
     },
     {
       "hanzi": "意大利语",
@@ -2437,6 +2652,11 @@
       "hanzi": "我不忙。",
       "pinyin": "Wǒ bù máng.",
       "spanish": "No estoy ocupado."
+    },
+    {
+      "hanzi": "我不想去上海。",
+      "pinyin": "Wǒ bù xiǎng qù Shànghǎi.",
+      "spanish": "No quiero ir a Shanghái."
     },
     {
       "hanzi": "我不要咖啡。",
@@ -2554,6 +2774,11 @@
       "spanish": "Me llamo Ma Dawei."
     },
     {
+      "hanzi": "我可以试一下吗？",
+      "pinyin": "Wǒ kěyǐ shì yíxià ma?",
+      "spanish": "¿Puedo probármelo?"
+    },
+    {
       "hanzi": "我听说了一个八卦。",
       "pinyin": "Wǒ tīngshuō le yí ge bāguà.",
       "spanish": "Escuché un chisme."
@@ -2649,6 +2874,16 @@
       "spanish": "Estoy muy ocupado/a."
     },
     {
+      "hanzi": "我想买点儿苹果。",
+      "pinyin": "Wǒ xiǎng mǎi diǎnr píngguǒ.",
+      "spanish": "Quisiera comprar unas manzanas."
+    },
+    {
+      "hanzi": "我找您八块。",
+      "pinyin": "Wǒ zhǎo nín bā kuài.",
+      "spanish": "Le devuelvo ocho yuanes."
+    },
+    {
       "hanzi": "我明天上午八点半有语法课。",
       "pinyin": "Wǒ míngtiān shàngwǔ bā diǎn bàn yǒu yǔfǎ kè.",
       "spanish": "Mañana por la mañana tengo clase de gramática a las ocho y media."
@@ -2739,6 +2974,16 @@
       "spanish": "Te lo presento un momento, ¿te parece?"
     },
     {
+      "hanzi": "我给您六十块。",
+      "pinyin": "Wǒ gěi nín liùshí kuài.",
+      "spanish": "Le doy sesenta yuanes."
+    },
+    {
+      "hanzi": "我要两斤草莓和四斤苹果。",
+      "pinyin": "Wǒ yào liǎng jīn cǎoméi hé sì jīn píngguǒ.",
+      "spanish": "Quiero un kilo de fresas y dos kilos de manzanas."
+    },
+    {
       "hanzi": "（我）要（咖啡）。／（我）不要（咖啡）。",
       "pinyin": "(Wǒ) yào (kāfēi). / (Wǒ) bú yào (kāfēi).",
       "spanish": "(Yo) quiero (café). / (Yo) no quiero (café)."
@@ -2764,6 +3009,11 @@
       "spanish": "Le regalo a ella un pastel de cumpleaños."
     },
     {
+      "hanzi": "我问您一个问题。",
+      "pinyin": "Wǒ wèn nín yí ge wèntí.",
+      "spanish": "Le hago una pregunta."
+    },
+    {
       "hanzi": "手",
       "pinyin": "shǒu",
       "spanish": "mano"
@@ -2774,6 +3024,31 @@
       "spanish": "teléfono celular"
     },
     {
+      "hanzi": "打",
+      "pinyin": "dǎ",
+      "spanish": "hacer; en 打折: hacer un descuento"
+    },
+    {
+      "hanzi": "打七折",
+      "pinyin": "dǎ qī zhé",
+      "spanish": "pagar el 70 % del precio"
+    },
+    {
+      "hanzi": "打九折",
+      "pinyin": "dǎ jiǔ zhé",
+      "spanish": "pagar el 90 % del precio"
+    },
+    {
+      "hanzi": "打八五折",
+      "pinyin": "dǎ bā wǔ zhé",
+      "spanish": "pagar el 85 % del precio"
+    },
+    {
+      "hanzi": "打折",
+      "pinyin": "dǎzhé",
+      "spanish": "ofrecer un descuento"
+    },
+    {
       "hanzi": "打球",
       "pinyin": "dǎ qiú",
       "spanish": "jugar a la pelota"
@@ -2781,12 +3056,27 @@
     {
       "hanzi": "找",
       "pinyin": "zhǎo",
-      "spanish": "buscar"
+      "spanish": "dar el cambio"
+    },
+    {
+      "hanzi": "找钱",
+      "pinyin": "zhǎo qián",
+      "spanish": "dar el cambio"
+    },
+    {
+      "hanzi": "折",
+      "pinyin": "zhé",
+      "spanish": "décima parte del precio en un descuento"
     },
     {
       "hanzi": "披萨",
       "pinyin": "pīsà",
       "spanish": "pizza"
+    },
+    {
+      "hanzi": "拍照",
+      "pinyin": "pāizhào",
+      "spanish": "tomar una foto"
     },
     {
       "hanzi": "操场",
@@ -2827,6 +3117,11 @@
       "hanzi": "文学",
       "pinyin": "wénxué",
       "spanish": "literatura"
+    },
+    {
+      "hanzi": "斤",
+      "pinyin": "jīn",
+      "spanish": "jin (500g)"
     },
     {
       "hanzi": "新",
@@ -3039,6 +3334,11 @@
       "spanish": "famoso"
     },
     {
+      "hanzi": "有大号的衬衫吗？",
+      "pinyin": "Yǒu dàhào de chènshān ma?",
+      "spanish": "¿Tiene camisas de talla grande?"
+    },
+    {
       "hanzi": "有意思",
       "pinyin": "yǒu yìsi",
       "spanish": "interesante"
@@ -3164,6 +3464,16 @@
       "spanish": "edificio"
     },
     {
+      "hanzi": "樱桃",
+      "pinyin": "yīngtao",
+      "spanish": "cereza"
+    },
+    {
+      "hanzi": "橙子",
+      "pinyin": "chéngzi",
+      "spanish": "naranja"
+    },
+    {
       "hanzi": "橙汁",
       "pinyin": "chéngzhī",
       "spanish": "jugo de naranja"
@@ -3199,9 +3509,19 @@
       "spanish": "pizza"
     },
     {
+      "hanzi": "毛",
+      "pinyin": "máo",
+      "spanish": "mao (clasificador coloquial de 10 centavos)"
+    },
+    {
       "hanzi": "水",
       "pinyin": "shuǐ",
       "spanish": "agua"
+    },
+    {
+      "hanzi": "水果",
+      "pinyin": "shuǐguǒ",
+      "spanish": "fruta"
     },
     {
       "hanzi": "汉堡",
@@ -3257,6 +3577,11 @@
       "hanzi": "没有时间",
       "pinyin": "Méiyǒu shíjiān",
       "spanish": "no tener tiempo"
+    },
+    {
+      "hanzi": "没问题",
+      "pinyin": "méi wèntí",
+      "spanish": "no hay problema"
     },
     {
       "hanzi": "法国",
@@ -3319,6 +3644,11 @@
       "spanish": "punto; hora (en el reloj)"
     },
     {
+      "hanzi": "点儿",
+      "pinyin": "diǎnr",
+      "spanish": "un poco"
+    },
+    {
       "hanzi": "点心",
       "pinyin": "diǎnxin",
       "spanish": "dim sum; bocadillo"
@@ -3357,6 +3687,11 @@
       "hanzi": "牛",
       "pinyin": "niú",
       "spanish": "vaca; buey"
+    },
+    {
+      "hanzi": "牛仔裤",
+      "pinyin": "niúzǎikù",
+      "spanish": "pantalones vaqueros"
     },
     {
       "hanzi": "牛奶",
@@ -3489,6 +3824,11 @@
       "spanish": "dibujar; pintar"
     },
     {
+      "hanzi": "白色",
+      "pinyin": "báisè",
+      "spanish": "blanco"
+    },
+    {
       "hanzi": "百",
       "pinyin": "bǎi",
       "spanish": "cien"
@@ -3579,6 +3919,16 @@
       "spanish": "Perú"
     },
     {
+      "hanzi": "称呼",
+      "pinyin": "chēnghu",
+      "spanish": "llamar; tratar a"
+    },
+    {
+      "hanzi": "穿",
+      "pinyin": "chuān",
+      "spanish": "vestir; ponerse"
+    },
+    {
       "hanzi": "立刀旁",
       "pinyin": "lìdāopáng",
       "spanish": "radical lateral de cuchillo"
@@ -3619,6 +3969,11 @@
       "spanish": "cansado; agotado"
     },
     {
+      "hanzi": "红色",
+      "pinyin": "hóngsè",
+      "spanish": "rojo"
+    },
+    {
       "hanzi": "约会",
       "pinyin": "yuēhuì",
       "spanish": "proponer una cita"
@@ -3651,12 +4006,22 @@
     {
       "hanzi": "给",
       "pinyin": "gěi",
-      "spanish": "a; para"
+      "spanish": "dar"
     },
     {
       "hanzi": "综合汉语",
       "pinyin": "zōnghé Hànyǔ",
       "spanish": "chino integral"
+    },
+    {
+      "hanzi": "绿",
+      "pinyin": "lǜ",
+      "spanish": "verde"
+    },
+    {
+      "hanzi": "绿色",
+      "pinyin": "lǜsè",
+      "spanish": "verde"
     },
     {
       "hanzi": "羊",
@@ -3672,6 +4037,11 @@
       "hanzi": "美国人",
       "pinyin": "Měiguó rén",
       "spanish": "estadounidense"
+    },
+    {
+      "hanzi": "羽绒服",
+      "pinyin": "yǔróngfú",
+      "spanish": "abrigo de plumas"
     },
     {
       "hanzi": "翻译",
@@ -3697,6 +4067,11 @@
       "hanzi": "老朋友",
       "pinyin": "lǎo péngyou",
       "spanish": "amigo de hace mucho tiempo"
+    },
+    {
+      "hanzi": "老板",
+      "pinyin": "lǎobǎn",
+      "spanish": "tendero; propietario; jefe"
     },
     {
       "hanzi": "老虎",
@@ -3749,9 +4124,29 @@
       "spanish": "manzana"
     },
     {
+      "hanzi": "苹果多少钱一斤？",
+      "pinyin": "Píngguǒ duōshao qián yì jīn?",
+      "spanish": "¿Cuánto cuesta medio kilo de manzanas?"
+    },
+    {
       "hanzi": "茶",
       "pinyin": "chá",
       "spanish": "té"
+    },
+    {
+      "hanzi": "草莓",
+      "pinyin": "cǎoméi",
+      "spanish": "fresa"
+    },
+    {
+      "hanzi": "草莓怎么卖？",
+      "pinyin": "Cǎoméi zěnme mài?",
+      "spanish": "¿A cuánto vende las fresas?"
+    },
+    {
+      "hanzi": "葡萄",
+      "pinyin": "pútao",
+      "spanish": "uva"
     },
     {
       "hanzi": "虎",
@@ -3789,9 +4184,24 @@
       "spanish": "calle"
     },
     {
+      "hanzi": "衣服",
+      "pinyin": "yīfu",
+      "spanish": "ropa"
+    },
+    {
       "hanzi": "表时间的词语做状语",
       "pinyin": "biǎo shíjiān de cíyǔ zuò zhuàngyǔ",
       "spanish": "expresiones de tiempo como complemento circunstancial"
+    },
+    {
+      "hanzi": "衬衫",
+      "pinyin": "chènshān",
+      "spanish": "camisa; blusa"
+    },
+    {
+      "hanzi": "裙子",
+      "pinyin": "qúnzi",
+      "spanish": "falda"
     },
     {
       "hanzi": "西",
@@ -3829,6 +4239,11 @@
       "spanish": "sentir"
     },
     {
+      "hanzi": "角",
+      "pinyin": "jiǎo",
+      "spanish": "jiao (clasificador oficial de 10 centavos)"
+    },
+    {
       "hanzi": "认识",
       "pinyin": "rènshi",
       "spanish": "conocer"
@@ -3847,6 +4262,11 @@
       "hanzi": "记者",
       "pinyin": "jìzhě",
       "spanish": "reportero/a"
+    },
+    {
+      "hanzi": "试",
+      "pinyin": "shì",
+      "spanish": "probar"
     },
     {
       "hanzi": "语文",
@@ -3951,7 +4371,7 @@
     {
       "hanzi": "贵",
       "pinyin": "guì",
-      "spanish": "honorable; caro"
+      "spanish": "caro"
     },
     {
       "hanzi": "贵姓",
@@ -4047,6 +4467,26 @@
       "hanzi": "这个星期日几号？",
       "pinyin": "Zhège xīngqīrì jǐ hào?",
       "spanish": "¿Qué fecha es este domingo?"
+    },
+    {
+      "hanzi": "这个汉字怎么写？",
+      "pinyin": "Zhège Hànzì zěnme xiě?",
+      "spanish": "¿Cómo se escribe este carácter chino?"
+    },
+    {
+      "hanzi": "这个汉语怎么说？",
+      "pinyin": "Zhège Hànyǔ zěnme shuō?",
+      "spanish": "¿Cómo se dice esto en chino?"
+    },
+    {
+      "hanzi": "这些衣服一共多少钱？",
+      "pinyin": "Zhèxiē yīfu yígòng duōshao qián?",
+      "spanish": "¿Cuánto cuesta toda esta ropa?"
+    },
+    {
+      "hanzi": "这件衬衫多少钱？",
+      "pinyin": "Zhè jiàn chènshān duōshao qián?",
+      "spanish": "¿Cuánto cuesta esta camisa?"
     },
     {
       "hanzi": "这儿",
@@ -4209,6 +4649,11 @@
       "spanish": "El banco está al este de la biblioteca."
     },
     {
+      "hanzi": "错",
+      "pinyin": "cuò",
+      "spanish": "equivocado; incorrecto"
+    },
+    {
       "hanzi": "门",
       "pinyin": "mén",
       "spanish": "puerta; portón; entrada"
@@ -4227,6 +4672,11 @@
       "hanzi": "问时间",
       "pinyin": "wèn shíjiān",
       "spanish": "preguntar la hora"
+    },
+    {
+      "hanzi": "问题",
+      "pinyin": "wèntí",
+      "spanish": "pregunta; problema; asunto"
     },
     {
       "hanzi": "阳台",
@@ -4369,6 +4819,11 @@
       "spanish": "hambriento/a; tener hambre"
     },
     {
+      "hanzi": "香蕉",
+      "pinyin": "xiāngjiāo",
+      "spanish": "plátano"
+    },
+    {
       "hanzi": "马",
       "pinyin": "mǎ",
       "spanish": "caballo"
@@ -4409,6 +4864,16 @@
       "spanish": "gallo"
     },
     {
+      "hanzi": "黑",
+      "pinyin": "hēi",
+      "spanish": "negro"
+    },
+    {
+      "hanzi": "黑色",
+      "pinyin": "hēisè",
+      "spanish": "negro"
+    },
+    {
       "hanzi": "鼠",
       "pinyin": "shǔ",
       "spanish": "rata (signo del zodiaco)"
@@ -4420,6 +4885,7 @@
     }
   ],
   "wordKeys": [
+    "T恤",
     "一",
     "一下",
     "一个",
@@ -4457,6 +4923,7 @@
     "不好意思",
     "不客气",
     "不是",
+    "不错",
     "专业",
     "东",
     "东边",
@@ -4474,6 +4941,7 @@
     "也",
     "书",
     "书房",
+    "买",
     "了",
     "事",
     "事儿",
@@ -4487,7 +4955,9 @@
     "五",
     "五号",
     "五月",
+    "些",
     "人",
+    "人民币",
     "什么",
     "什么工作",
     "今天",
@@ -4497,6 +4967,7 @@
     "他",
     "他们",
     "们",
+    "件",
     "会",
     "会说",
     "体育",
@@ -4510,6 +4981,7 @@
     "你家",
     "你爸爸",
     "你的生日",
+    "便宜",
     "俄罗斯",
     "俄罗斯人",
     "俄语",
@@ -4517,6 +4989,7 @@
     "做作业",
     "做饭",
     "儿子",
+    "元",
     "先",
     "先生",
     "兔",
@@ -4544,6 +5017,7 @@
     "刚到",
     "别",
     "到",
+    "刷卡",
     "刻",
     "前",
     "前天",
@@ -4570,8 +5044,10 @@
     "千",
     "午饭",
     "半",
+    "卖",
     "南",
     "南边",
+    "卡",
     "卡片",
     "卧室",
     "卫生间",
@@ -4600,6 +5076,7 @@
     "号",
     "吃",
     "吃饭",
+    "合适",
     "同学",
     "名字",
     "名片",
@@ -4612,6 +5089,8 @@
     "听",
     "听力",
     "听说",
+    "吸烟",
+    "员",
     "呢",
     "周末",
     "和",
@@ -4623,6 +5102,8 @@
     "哪一个",
     "哪儿",
     "哪国人",
+    "哪里",
+    "售货员",
     "唱",
     "唱歌",
     "商人",
@@ -4646,6 +5127,7 @@
     "地方",
     "地理",
     "坐",
+    "块",
     "埃及",
     "墨西哥",
     "外公",
@@ -4660,6 +5142,7 @@
     "大",
     "大为",
     "大卫",
+    "大号",
     "大学",
     "大家",
     "天",
@@ -4711,11 +5194,13 @@
     "小",
     "小云",
     "小云和宋华",
+    "小号",
     "小姐",
     "小孩子",
     "小狗",
     "小猫",
     "少",
+    "尝",
     "就",
     "就是",
     "属",
@@ -4745,6 +5230,7 @@
     "张王冉",
     "弹",
     "弹钢琴",
+    "当然",
     "很",
     "很多",
     "律师",
@@ -4752,6 +5238,7 @@
     "德语",
     "忙",
     "快乐",
+    "怎么",
     "怎么样",
     "怕",
     "思想政治",
@@ -4759,6 +5246,7 @@
     "您",
     "您好",
     "您贵姓",
+    "想",
     "意大利语",
     "意思",
     "成龙",
@@ -4776,9 +5264,12 @@
     "我的生日",
     "手",
     "手机",
+    "打折",
     "打球",
     "找",
+    "找钱",
     "披萨",
+    "拍照",
     "操场",
     "教",
     "教学",
@@ -4786,6 +5277,7 @@
     "数学",
     "文化",
     "文学",
+    "斤",
     "新",
     "方位词",
     "方言",
@@ -4839,6 +5331,8 @@
     "校门",
     "梅西",
     "楼",
+    "樱桃",
+    "橙子",
     "橙汁",
     "欢迎",
     "歌",
@@ -4846,7 +5340,9 @@
     "死",
     "每天",
     "比萨饼",
+    "毛",
     "水",
+    "水果",
     "汉堡",
     "汉堡包",
     "汉字",
@@ -4857,6 +5353,7 @@
     "汉语课",
     "没",
     "没有",
+    "没问题",
     "法国",
     "法语",
     "注释",
@@ -4877,6 +5374,7 @@
     "爷爷",
     "爸爸",
     "牛",
+    "牛仔裤",
     "牛奶",
     "物理",
     "特别",
@@ -4900,6 +5398,7 @@
     "男朋友",
     "男生",
     "画画",
+    "白色",
     "百",
     "的",
     "的称数法",
@@ -4914,6 +5413,8 @@
     "礼物",
     "祝",
     "秘鲁",
+    "称呼",
+    "穿",
     "立刀旁",
     "等",
     "筷子",
@@ -4921,6 +5422,7 @@
     "米饭和面条",
     "系",
     "累",
+    "红色",
     "约会",
     "约翰",
     "练习",
@@ -4928,14 +5430,18 @@
     "经理",
     "给",
     "综合汉语",
+    "绿",
+    "绿色",
     "羊",
     "美国",
     "美国人",
+    "羽绒服",
     "翻译",
     "老",
     "老人",
     "老师",
     "老朋友",
+    "老板",
     "老虎",
     "老鼠",
     "聚会",
@@ -4947,6 +5453,8 @@
     "英语课",
     "苹果",
     "茶",
+    "草莓",
+    "葡萄",
     "虎",
     "蛇",
     "蛋挞",
@@ -4954,7 +5462,10 @@
     "行",
     "街",
     "街道",
+    "衣服",
     "表时间的词语做状语",
+    "衬衫",
+    "裙子",
     "西",
     "西安",
     "西班牙",
@@ -4962,8 +5473,10 @@
     "西边",
     "要",
     "觉得",
+    "角",
     "认识",
     "记者",
+    "试",
     "语文",
     "语法",
     "语言",
@@ -5017,10 +5530,12 @@
     "钢琴课",
     "钱",
     "银行",
+    "错",
     "门",
     "问",
     "问专业",
     "问时间",
+    "问题",
     "阳台",
     "阿根廷",
     "陆",
@@ -5043,6 +5558,7 @@
     "饮料",
     "饺子",
     "饿",
+    "香蕉",
     "马",
     "马丽",
     "马云",
@@ -5051,6 +5567,8 @@
     "马马虎虎",
     "高兴",
     "鸡",
+    "黑",
+    "黑色",
     "鼠",
     "龙"
   ],
@@ -6888,6 +7406,370 @@
         "file": "Libro Basico Lección 06 zài shítáng běibian.pdf",
         "pdfPage": 8,
         "printedPage": 169
+      }
+    },
+    {
+      "id": "s-l7-1",
+      "hanzi": "我想买点儿苹果。",
+      "pinyin": "Wǒ xiǎng mǎi diǎnr píngguǒ.",
+      "translation": "Quisiera comprar unas manzanas.",
+      "tokens": [
+        "我",
+        "想",
+        "买",
+        "点儿",
+        "苹果"
+      ],
+      "grammarTags": [
+        "L7"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 07 Píngguo duõshao qián yì jin.pdf",
+        "pdfPage": 9,
+        "printedPage": 192
+      }
+    },
+    {
+      "id": "s-l7-2",
+      "hanzi": "苹果多少钱一斤？",
+      "pinyin": "Píngguǒ duōshao qián yì jīn?",
+      "translation": "¿Cuánto cuesta medio kilo de manzanas?",
+      "tokens": [
+        "苹果",
+        "多少",
+        "钱",
+        "一斤"
+      ],
+      "grammarTags": [
+        "L7"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 07 Píngguo duõshao qián yì jin.pdf",
+        "pdfPage": 9,
+        "printedPage": 192
+      }
+    },
+    {
+      "id": "s-l7-3",
+      "hanzi": "草莓怎么卖？",
+      "pinyin": "Cǎoméi zěnme mài?",
+      "translation": "¿A cuánto vende las fresas?",
+      "tokens": [
+        "草莓",
+        "怎么",
+        "卖"
+      ],
+      "grammarTags": [
+        "L7"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 07 Píngguo duõshao qián yì jin.pdf",
+        "pdfPage": 9,
+        "printedPage": 192
+      }
+    },
+    {
+      "id": "s-l7-4",
+      "hanzi": "这个汉语怎么说？",
+      "pinyin": "Zhège Hànyǔ zěnme shuō?",
+      "translation": "¿Cómo se dice esto en chino?",
+      "tokens": [
+        "这个",
+        "汉语",
+        "怎么",
+        "说"
+      ],
+      "grammarTags": [
+        "L7"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 07 Píngguo duõshao qián yì jin.pdf",
+        "pdfPage": 9,
+        "printedPage": 192
+      }
+    },
+    {
+      "id": "s-l7-5",
+      "hanzi": "这件衬衫多少钱？",
+      "pinyin": "Zhè jiàn chènshān duōshao qián?",
+      "translation": "¿Cuánto cuesta esta camisa?",
+      "tokens": [
+        "这",
+        "件",
+        "衬衫",
+        "多少",
+        "钱"
+      ],
+      "grammarTags": [
+        "L7"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 07 Píngguo duõshao qián yì jin.pdf",
+        "pdfPage": 10,
+        "printedPage": 193
+      }
+    },
+    {
+      "id": "s-l7-6",
+      "hanzi": "便宜点儿吧，十四块一斤，好吗？",
+      "pinyin": "Piányi diǎnr ba, shísì kuài yì jīn, hǎo ma?",
+      "translation": "Baje un poco el precio: catorce yuanes por medio kilo, ¿le parece?",
+      "tokens": [
+        "便宜",
+        "点儿",
+        "吧",
+        "十四块",
+        "一斤",
+        "好",
+        "吗"
+      ],
+      "grammarTags": [
+        "L7"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 07 Píngguo duõshao qián yì jin.pdf",
+        "pdfPage": 10,
+        "printedPage": 193
+      }
+    },
+    {
+      "id": "s-l7-7",
+      "hanzi": "您给我六十，我找您八块。",
+      "pinyin": "Nín gěi wǒ liùshí, wǒ zhǎo nín bā kuài.",
+      "translation": "Me da sesenta y le devuelvo ocho yuanes.",
+      "tokens": [
+        "您",
+        "给",
+        "我",
+        "六十",
+        "我",
+        "找",
+        "您",
+        "八块"
+      ],
+      "grammarTags": [
+        "L7"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 07 Píngguo duõshao qián yì jin.pdf",
+        "pdfPage": 10,
+        "printedPage": 193
+      }
+    },
+    {
+      "id": "s-l7-8",
+      "hanzi": "一共两千一百九十一块。",
+      "pinyin": "Yígòng liǎngqiān yìbǎi jiǔshíyī kuài.",
+      "translation": "Son dos mil ciento noventa y un yuanes en total.",
+      "tokens": [
+        "一共",
+        "两千一百九十一",
+        "块"
+      ],
+      "grammarTags": [
+        "L7"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 07 Píngguo duõshao qián yì jin.pdf",
+        "pdfPage": 10,
+        "printedPage": 193
+      }
+    },
+    {
+      "id": "s-l7-9",
+      "hanzi": "可以刷卡吗？",
+      "pinyin": "Kěyǐ shuākǎ ma?",
+      "translation": "¿Puedo pagar con tarjeta?",
+      "tokens": [
+        "可以",
+        "刷卡",
+        "吗"
+      ],
+      "grammarTags": [
+        "L7"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 07 Píngguo duõshao qián yì jin.pdf",
+        "pdfPage": 10,
+        "printedPage": 193
+      }
+    },
+    {
+      "id": "s-l7-10",
+      "hanzi": "您再试一下这件吧。",
+      "pinyin": "Nín zài shì yíxià zhè jiàn ba.",
+      "translation": "Pruébese esta otra vez.",
+      "tokens": [
+        "您",
+        "再",
+        "试",
+        "一下",
+        "这",
+        "件",
+        "吧"
+      ],
+      "grammarTags": [
+        "L7"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 07 Píngguo duõshao qián yì jin.pdf",
+        "pdfPage": 10,
+        "printedPage": 193
+      }
+    },
+    {
+      "id": "s-l7-11",
+      "hanzi": "我可以试一下吗？",
+      "pinyin": "Wǒ kěyǐ shì yíxià ma?",
+      "translation": "¿Puedo probármelo?",
+      "tokens": [
+        "我",
+        "可以",
+        "试",
+        "一下",
+        "吗"
+      ],
+      "grammarTags": [
+        "L7"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 07 Píngguo duõshao qián yì jin.pdf",
+        "pdfPage": 6,
+        "printedPage": 189
+      }
+    },
+    {
+      "id": "s-l7-12",
+      "hanzi": "有大号的衬衫吗？",
+      "pinyin": "Yǒu dàhào de chènshān ma?",
+      "translation": "¿Tiene camisas de talla grande?",
+      "tokens": [
+        "有",
+        "大号",
+        "的",
+        "衬衫",
+        "吗"
+      ],
+      "grammarTags": [
+        "L7"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 07 Píngguo duõshao qián yì jin.pdf",
+        "pdfPage": 6,
+        "printedPage": 189
+      }
+    },
+    {
+      "id": "s-l7-13",
+      "hanzi": "可以打折吗？",
+      "pinyin": "Kěyǐ dǎzhé ma?",
+      "translation": "¿Puede hacerme un descuento?",
+      "tokens": [
+        "可以",
+        "打折",
+        "吗"
+      ],
+      "grammarTags": [
+        "L7"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 07 Píngguo duõshao qián yì jin.pdf",
+        "pdfPage": 7,
+        "printedPage": 190
+      }
+    },
+    {
+      "id": "s-l7-14",
+      "hanzi": "这些衣服一共多少钱？",
+      "pinyin": "Zhèxiē yīfu yígòng duōshao qián?",
+      "translation": "¿Cuánto cuesta toda esta ropa?",
+      "tokens": [
+        "这些",
+        "衣服",
+        "一共",
+        "多少",
+        "钱"
+      ],
+      "grammarTags": [
+        "L7"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 07 Píngguo duõshao qián yì jin.pdf",
+        "pdfPage": 7,
+        "printedPage": 190
+      }
+    },
+    {
+      "id": "s-l7-15",
+      "hanzi": "我要两斤草莓和四斤苹果。",
+      "pinyin": "Wǒ yào liǎng jīn cǎoméi hé sì jīn píngguǒ.",
+      "translation": "Quiero un kilo de fresas y dos kilos de manzanas.",
+      "tokens": [
+        "我",
+        "要",
+        "两斤",
+        "草莓",
+        "和",
+        "四斤",
+        "苹果"
+      ],
+      "grammarTags": [
+        "L7"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 07 Píngguo duõshao qián yì jin.pdf",
+        "pdfPage": 3,
+        "printedPage": 186
+      }
+    },
+    {
+      "id": "s-l7-16",
+      "hanzi": "当然可以。",
+      "pinyin": "Dāngrán kěyǐ.",
+      "translation": "Por supuesto que puede.",
+      "tokens": [
+        "当然",
+        "可以"
+      ],
+      "grammarTags": [
+        "L7"
+      ],
+      "difficulty": 2,
+      "source": {
+        "type": "textbook",
+        "file": "Libro Basico Lección 07 Píngguo duõshao qián yì jin.pdf",
+        "pdfPage": 6,
+        "printedPage": 189
       }
     }
   ]

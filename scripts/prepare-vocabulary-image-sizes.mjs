@@ -6,7 +6,7 @@ import sharp from 'sharp';
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const read = async path => JSON.parse(await readFile(path, 'utf8'));
 const check = process.argv.includes('--check');
-const catalogs = await Promise.all(['vocabulary', 'lesson4', 'lesson5', 'lessons123', 'lessons123-context', 'lessons123-generated', 'lessons123-pedagogy', 'lessons123-geography', 'corpus-completion', 'corpus-completion-diagrams'].map(name => read(`data/${name}-media.json`)));
+const catalogs = await Promise.all(['vocabulary', 'lesson4', 'lesson5', 'lessons123', 'lessons123-context', 'lessons123-generated', 'lessons123-pedagogy', 'lessons123-geography', 'corpus-completion', 'corpus-completion-diagrams', 'lesson7'].map(name => read(`data/${name}-media.json`)));
 const current = [...new Map(catalogs.flat().map(entry => [entry.wordId, entry])).values()];
 const sources = [...new Map(current.filter(entry => entry.status === 'approved').map(entry => [entry.src, entry])).values()];
 const directory = 'public/images/vocabulary/responsive';

@@ -1,0 +1,2471 @@
+{
+  "lesson": 7,
+  "policy": "No generation was requested explicitly. Reuse only exact recorded readings and images approved for the same sense.",
+  "originalAudioSupplied": false,
+  "missingAudio": [
+    {
+      "hanzi": "T恤",
+      "pinyin": "T xù",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "一共两千一百九十一块。",
+      "pinyin": "Yígòng liǎngqiān yìbǎi jiǔshíyī kuài.",
+      "usage": [
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "一共五十二块钱。我送您两个草莓。您还要什么？",
+      "pinyin": "Yígòng wǔshí'èr kuài qián. Wǒ sòng nín liǎng ge cǎoméi. Nín hái yào shénme?",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "一共六十六块。",
+      "pinyin": "Yígòng liùshíliù kuài.",
+      "usage": [
+        "workbook_model"
+      ]
+    },
+    {
+      "hanzi": "一千零一",
+      "pinyin": "Yì qiān líng yī",
+      "usage": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "一块七毛五",
+      "pinyin": "Yí kuài qī máo wǔ",
+      "usage": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "一百零五",
+      "pinyin": "Yì bǎi líng wǔ",
+      "usage": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "三元五角五分。",
+      "pinyin": "Sān yuán wǔ jiǎo wǔ fēn.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "三十块两斤。",
+      "pinyin": "Sānshí kuài liǎng jīn.",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "三百九十九块。",
+      "pinyin": "Sānbǎi jiǔshíjiǔ kuài.",
+      "usage": [
+        "dialogue",
+        "phrase",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "不好意思，现在不打折。",
+      "pinyin": "Bù hǎoyìsi, xiànzài bù dǎzhé.",
+      "usage": [
+        "vocabulary_example",
+        "dialogue",
+        "phrase",
+        "workbook_model"
+      ]
+    },
+    {
+      "hanzi": "不要了，谢谢。给您钱。",
+      "pinyin": "Bú yào le, xièxie. Gěi nín qián.",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "不贵，我的草莓好吃。您可以尝一下。",
+      "pinyin": "Bú guì, wǒ de cǎoméi hǎochī. Nín kěyǐ cháng yíxià.",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "不错",
+      "pinyin": "búcuò",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "且",
+      "pinyin": "qiě",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "两千一百零九",
+      "pinyin": "Liǎng qiān yì bǎi líng jiǔ",
+      "usage": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "两块二",
+      "pinyin": "Liǎng kuài èr",
+      "usage": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "为",
+      "pinyin": "wéi",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "九千九百九十九",
+      "pinyin": "Jiǔ qiān jiǔ bǎi jiǔ shí jiǔ",
+      "usage": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "买",
+      "pinyin": "mǎi",
+      "usage": [
+        "vocabulary",
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "五块五一斤。",
+      "pinyin": "Wǔ kuài wǔ yì jīn.",
+      "usage": [
+        "dialogue",
+        "phrase",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "五毛是一元的一半。",
+      "pinyin": "Wǔ máo shì yì yuán de yíbàn.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "些",
+      "pinyin": "xiē",
+      "usage": [
+        "vocabulary",
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "人民币",
+      "pinyin": "rénmínbì",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "仔",
+      "pinyin": "zǎi",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "件",
+      "pinyin": "jiàn",
+      "usage": [
+        "vocabulary",
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "价",
+      "pinyin": "jià",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "你想不想看电影？",
+      "pinyin": "Nǐ xiǎng bu xiǎng kàn diànyǐng?",
+      "usage": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "便",
+      "pinyin": "pián",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "便宜",
+      "pinyin": "piányi",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "便宜一点儿吧。",
+      "pinyin": "Piányi yìdiǎnr ba.",
+      "usage": [
+        "workbook_model"
+      ]
+    },
+    {
+      "hanzi": "便宜点儿吧，十四块一斤，好吗？",
+      "pinyin": "Piányi diǎnr ba, shísì kuài yì jīn, hǎo ma?",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "便宜点儿吧。",
+      "pinyin": "Piányi diǎnr ba.",
+      "usage": [
+        "vocabulary_example",
+        "phrase",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "元",
+      "pinyin": "yuán",
+      "usage": [
+        "vocabulary",
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "先生，您的汉语真好。",
+      "pinyin": "Xiānsheng, nín de Hànyǔ zhēn hǎo.",
+      "usage": [
+        "vocabulary_example",
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "六十九角是六元九角。",
+      "pinyin": "Liùshíjiǔ jiǎo shì liù yuán jiǔ jiǎo.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "刷",
+      "pinyin": "shuā",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "刷卡",
+      "pinyin": "shuākǎ",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "十六块一斤。",
+      "pinyin": "Shíliù kuài yì jīn.",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "卖",
+      "pinyin": "mài",
+      "usage": [
+        "vocabulary",
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "卡",
+      "pinyin": "kǎ",
+      "usage": [
+        "vocabulary",
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "可以便宜一点儿吗？",
+      "pinyin": "Kěyǐ piányi yìdiǎnr ma?",
+      "usage": [
+        "workbook_model"
+      ]
+    },
+    {
+      "hanzi": "可以刷卡吗？",
+      "pinyin": "Kěyǐ shuākǎ ma?",
+      "usage": [
+        "vocabulary_example",
+        "dialogue",
+        "phrase",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "可以打折吗？",
+      "pinyin": "Kěyǐ dǎzhé ma?",
+      "usage": [
+        "vocabulary_example",
+        "dialogue",
+        "phrase",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "可以给我打九折。",
+      "pinyin": "Kěyǐ gěi wǒ dǎ jiǔ zhé.",
+      "usage": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "合",
+      "pinyin": "hé",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "合适",
+      "pinyin": "héshì",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "吸",
+      "pinyin": "xī",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "吸烟",
+      "pinyin": "xī yān",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "员",
+      "pinyin": "yuán",
+      "usage": [
+        "vocabulary",
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "呼",
+      "pinyin": "hū",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "哪里，我的汉语不太好。",
+      "pinyin": "Nǎli, wǒ de Hànyǔ bú tài hǎo.",
+      "usage": [
+        "vocabulary_example",
+        "phrase",
+        "workbook_model"
+      ]
+    },
+    {
+      "hanzi": "哪里，我的汉语不太好。苹果多少钱一斤？",
+      "pinyin": "Nǎli, wǒ de Hànyǔ bú tài hǎo. Píngguǒ duōshao qián yì jīn?",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "哪里",
+      "pinyin": "nǎli",
+      "usage": [
+        "vocabulary",
+        "workbook_fragment"
+      ]
+    },
+    {
+      "hanzi": "售",
+      "pinyin": "shòu",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "售货员",
+      "pinyin": "shòuhuòyuán",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "售货员给我一件衬衫。",
+      "pinyin": "Shòuhuòyuán gěi wǒ yí jiàn chènshān.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "块",
+      "pinyin": "kuài",
+      "usage": [
+        "vocabulary",
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "大号",
+      "pinyin": "dàhào",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "太贵了！",
+      "pinyin": "Tài guì le!",
+      "usage": [
+        "workbook_model"
+      ]
+    },
+    {
+      "hanzi": "她是售货员。",
+      "pinyin": "Tā shì shòuhuòyuán.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "她穿白色的衬衫。",
+      "pinyin": "Tā chuān báisè de chènshān.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "好，您给我六十，我找您八块。好吃您再来。",
+      "pinyin": "Hǎo, nín gěi wǒ liùshí, wǒ zhǎo nín bā kuài. Hǎochī nín zài lái.",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "好吧。我要两斤草莓和四斤苹果。",
+      "pinyin": "Hǎo ba. Wǒ yào liǎng jīn cǎoméi hé sì jīn píngguǒ.",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "宜",
+      "pinyin": "yí",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "宝",
+      "pinyin": "bǎo",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "小号",
+      "pinyin": "xiǎohào",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "尝",
+      "pinyin": "cháng",
+      "usage": [
+        "vocabulary",
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "屯",
+      "pinyin": "tún",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "左边有大号的衬衫。",
+      "pinyin": "Zuǒbian yǒu dàhào de chènshān.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "币",
+      "pinyin": "bì",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "当",
+      "pinyin": "dāng",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "当然",
+      "pinyin": "dāngrán",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "当然可以。",
+      "pinyin": "Dāngrán kěyǐ.",
+      "usage": [
+        "vocabulary_example",
+        "dialogue",
+        "phrase",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "很好，我要这条。我还想买一件羽绒服。",
+      "pinyin": "Hěn hǎo, wǒ yào zhè tiáo. Wǒ hái xiǎng mǎi yí jiàn yǔróngfú.",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "怎么",
+      "pinyin": "zěnme",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "恤",
+      "pinyin": "xù",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "您再试一下这件吧。",
+      "pinyin": "Nín zài shì yíxià zhè jiàn ba.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "您卖什么水果？",
+      "pinyin": "Nín mài shénme shuǐguǒ?",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "您可以尝一下。",
+      "pinyin": "Nín kěyǐ cháng yíxià.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "您可以给我介绍一下吗？",
+      "pinyin": "Nín kěyǐ gěi wǒ jièshào yíxià ma?",
+      "usage": [
+        "workbook_model"
+      ]
+    },
+    {
+      "hanzi": "您好，您要什么？",
+      "pinyin": "Nín hǎo, nín yào shénme?",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "您好，这件衬衫多少钱？",
+      "pinyin": "Nín hǎo, zhè jiàn chènshān duōshao qián?",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "您怎么称呼？",
+      "pinyin": "Nín zěnme chēnghu?",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "您的草莓真贵。",
+      "pinyin": "Nín de cǎoméi zhēn guì.",
+      "usage": [
+        "vocabulary_example",
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "您看这件怎么样？",
+      "pinyin": "Nín kàn zhè jiàn zěnmeyàng?",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "您看那件绿色的可以吗？",
+      "pinyin": "Nín kàn nà jiàn lǜsè de kěyǐ ma?",
+      "usage": [
+        "workbook_model"
+      ]
+    },
+    {
+      "hanzi": "您给我六十，我找您八块。",
+      "pinyin": "Nín gěi wǒ liùshí, wǒ zhǎo nín bā kuài.",
+      "usage": [
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "我不喜欢黑色，有绿色的羽绒服吗？",
+      "pinyin": "Wǒ bù xǐhuan hēisè, yǒu lǜsè de yǔróngfú ma?",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "我不喜欢黑色。",
+      "pinyin": "Wǒ bù xǐhuan hēisè.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "我不想去上海。",
+      "pinyin": "Wǒ bù xiǎng qù Shànghǎi.",
+      "usage": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "我买两个橙子。",
+      "pinyin": "Wǒ mǎi liǎng ge chéngzi.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "我买两斤草莓。",
+      "pinyin": "Wǒ mǎi liǎng jīn cǎoméi.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "我可以试一下吗？",
+      "pinyin": "Wǒ kěyǐ shì yíxià ma?",
+      "usage": [
+        "vocabulary_example",
+        "dialogue",
+        "phrase",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "我喜欢吃香蕉。",
+      "pinyin": "Wǒ xǐhuan chī xiāngjiāo.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "我喜欢白色的衬衫。",
+      "pinyin": "Wǒ xǐhuan báisè de chènshān.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "我想买一条裙子。",
+      "pinyin": "Wǒ xiǎng mǎi yì tiáo qúnzi.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "我想买一点儿水果。",
+      "pinyin": "Wǒ xiǎng mǎi yìdiǎnr shuǐguǒ.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "我想买些水果。",
+      "pinyin": "Wǒ xiǎng mǎi xiē shuǐguǒ.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "我想买小号的衬衫。",
+      "pinyin": "Wǒ xiǎng mǎi xiǎohào de chènshān.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "我想买点儿苹果。",
+      "pinyin": "Wǒ xiǎng mǎi diǎnr píngguǒ.",
+      "usage": [
+        "vocabulary_example",
+        "dialogue",
+        "phrase",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "我想买点儿草莓。",
+      "pinyin": "Wǒ xiǎng mǎi diǎnr cǎoméi.",
+      "usage": [
+        "workbook_model"
+      ]
+    },
+    {
+      "hanzi": "我想买红色的裙子。",
+      "pinyin": "Wǒ xiǎng mǎi hóngsè de qúnzi.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "我想试一下这件衬衫。",
+      "pinyin": "Wǒ xiǎng shì yíxià zhè jiàn chènshān.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "我找您八块。",
+      "pinyin": "Wǒ zhǎo nín bā kuài.",
+      "usage": [
+        "vocabulary_example",
+        "phrase",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "我有银行卡。",
+      "pinyin": "Wǒ yǒu yínhángkǎ.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "我给你十块。",
+      "pinyin": "Wǒ gěi nǐ shí kuài.",
+      "usage": [
+        "workbook_model"
+      ]
+    },
+    {
+      "hanzi": "我给您六十块。",
+      "pinyin": "Wǒ gěi nín liùshí kuài.",
+      "usage": [
+        "vocabulary_example",
+        "phrase",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "我给您钱。",
+      "pinyin": "Wǒ gěi nín qián.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "我要两斤苹果。",
+      "pinyin": "Wǒ yào liǎng jīn píngguǒ.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "我要两斤草莓和四斤苹果。",
+      "pinyin": "Wǒ yào liǎng jīn cǎoméi hé sì jīn píngguǒ.",
+      "usage": [
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "我要两斤葡萄。",
+      "pinyin": "Wǒ yào liǎng jīn pútao.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "我要这件衬衫。",
+      "pinyin": "Wǒ yào zhè jiàn chènshān.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "我还想买一件羽绒服。",
+      "pinyin": "Wǒ hái xiǎng mǎi yí jiàn yǔróngfú.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "我问您一个问题。",
+      "pinyin": "Wǒ wèn nín yí ge wèntí.",
+      "usage": [
+        "vocabulary_example",
+        "phrase",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "所",
+      "pinyin": "suǒ",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "打",
+      "pinyin": "dǎ",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "打折",
+      "pinyin": "dǎzhé",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "找钱",
+      "pinyin": "zhǎo qián",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "折",
+      "pinyin": "zhé",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "拍",
+      "pinyin": "pāi",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "拍照",
+      "pinyin": "pāizhào",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "斤",
+      "pinyin": "jīn",
+      "usage": [
+        "vocabulary",
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "有，左边有大号的衬衫。您再试一下这件吧。",
+      "pinyin": "Yǒu, zuǒbian yǒu dàhào de chènshān. Nín zài shì yíxià zhè jiàn ba.",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "有，您可以看一下这件。",
+      "pinyin": "Yǒu, nín kěyǐ kàn yíxià zhè jiàn.",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "有，这条牛仔裤怎么样？",
+      "pinyin": "Yǒu, zhè tiáo niúzǎikù zěnmeyàng?",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "有大号的衬衫吗？",
+      "pinyin": "Yǒu dàhào de chènshān ma?",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "有没有牛仔裤？",
+      "pinyin": "Yǒu méiyǒu niúzǎikù?",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "有绿色的羽绒服吗？",
+      "pinyin": "Yǒu lǜsè de yǔróngfú ma?",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "服",
+      "pinyin": "fú",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "板",
+      "pinyin": "bǎn",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "林娜想去老北京的胡同。",
+      "pinyin": "Lín Nà xiǎng qù lǎo Běijīng de hútòng.",
+      "usage": [
+        "workbook_model"
+      ]
+    },
+    {
+      "hanzi": "桃",
+      "pinyin": "táo",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "樱",
+      "pinyin": "yīng",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "樱桃",
+      "pinyin": "yīngtao",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "橙",
+      "pinyin": "chéng",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "橙子",
+      "pinyin": "chéngzi",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "毛",
+      "pinyin": "máo",
+      "usage": [
+        "vocabulary",
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "民",
+      "pinyin": "mín",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "水果",
+      "pinyin": "shuǐguǒ",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "没问题，明天我能来。",
+      "pinyin": "Méi wèntí, míngtiān wǒ néng lái.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "没问题。",
+      "pinyin": "Méi wèntí.",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "没问题",
+      "pinyin": "méi wèntí",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "烟",
+      "pinyin": "yān",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "然",
+      "pinyin": "rán",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "牛仔裤",
+      "pinyin": "niúzǎikù",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "白色",
+      "pinyin": "báisè",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "称",
+      "pinyin": "chēng",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "称呼",
+      "pinyin": "chēnghu",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "穿",
+      "pinyin": "chuān",
+      "usage": [
+        "vocabulary",
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "红",
+      "pinyin": "hóng",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "红色",
+      "pinyin": "hóngsè",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "绒",
+      "pinyin": "róng",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "绿",
+      "pinyin": "lǜ",
+      "usage": [
+        "vocabulary",
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "绿色",
+      "pinyin": "lǜsè",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "羽",
+      "pinyin": "yǔ",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "羽绒服",
+      "pinyin": "yǔróngfú",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "老板，您好。",
+      "pinyin": "Lǎobǎn, nín hǎo.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "老板",
+      "pinyin": "lǎobǎn",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "老板找钱。",
+      "pinyin": "Lǎobǎn zhǎo qián.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "能",
+      "pinyin": "néng",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "色",
+      "pinyin": "sè",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "苹",
+      "pinyin": "píng",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "苹果五块五一斤。",
+      "pinyin": "Píngguǒ wǔ kuài wǔ yì jīn.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "苹果十块钱一斤。",
+      "pinyin": "Píngguǒ shí kuài qián yì jīn.",
+      "usage": [
+        "workbook_model"
+      ]
+    },
+    {
+      "hanzi": "苹果多少钱一斤？",
+      "pinyin": "Píngguǒ duōshao qián yì jīn?",
+      "usage": [
+        "vocabulary_example",
+        "phrase",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "草莓",
+      "pinyin": "cǎoméi",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "草莓怎么卖？",
+      "pinyin": "Cǎoméi zěnme mài?",
+      "usage": [
+        "vocabulary_example",
+        "dialogue",
+        "phrase",
+        "workbook_model",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "莓",
+      "pinyin": "méi",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "萄",
+      "pinyin": "táo",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "葡",
+      "pinyin": "pú",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "葡萄",
+      "pinyin": "pútao",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "蕉",
+      "pinyin": "jiāo",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "衣",
+      "pinyin": "yī",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "衣服",
+      "pinyin": "yīfu",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "衫",
+      "pinyin": "shān",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "衬",
+      "pinyin": "chèn",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "衬衫",
+      "pinyin": "chènshān",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "衬衫三百九十九块，牛仔裤五百八十七块，羽绒服一千二百零五块，一共两千一百九十一块。",
+      "pinyin": "Chènshān sānbǎi jiǔshíjiǔ kuài, niúzǎikù wǔbǎi bāshíqī kuài, yǔróngfú yìqiān èrbǎi líng wǔ kuài, yígòng liǎngqiān yìbǎi jiǔshíyī kuài.",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "衬衫在左边。",
+      "pinyin": "Chènshān zài zuǒbian.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "装",
+      "pinyin": "zhuāng",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "裙",
+      "pinyin": "qún",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "裙子",
+      "pinyin": "qúnzi",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "裤",
+      "pinyin": "kù",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "角",
+      "pinyin": "jiǎo",
+      "usage": [
+        "vocabulary",
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "试",
+      "pinyin": "shì",
+      "usage": [
+        "vocabulary",
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "货",
+      "pinyin": "huò",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "这个……我问您一个问题：这个汉语怎么说？",
+      "pinyin": "Zhège… wǒ wèn nín yí ge wèntí: zhège Hànyǔ zěnme shuō?",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "这个汉字怎么写？",
+      "pinyin": "Zhège Hànzì zěnme xiě?",
+      "usage": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "这个汉语怎么说？",
+      "pinyin": "Zhège Hànyǔ zěnme shuō?",
+      "usage": [
+        "vocabulary_example",
+        "phrase",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "这些衣服一共多少钱？",
+      "pinyin": "Zhèxiē yīfu yígòng duōshao qián?",
+      "usage": [
+        "vocabulary_example",
+        "phrase",
+        "workbook_model"
+      ]
+    },
+    {
+      "hanzi": "这些衣服很合适。",
+      "pinyin": "Zhèxiē yīfu hěn héshì.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "这件T恤九十九元。",
+      "pinyin": "Zhè jiàn T xù jiǔshíjiǔ yuán.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "这件不错。",
+      "pinyin": "Zhè jiàn búcuò.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "这件不错。这些衣服一共多少钱？",
+      "pinyin": "Zhè jiàn búcuò. Zhèxiē yīfu yígòng duōshao qián?",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "这件大号的衣服很合适。",
+      "pinyin": "Zhè jiàn dàhào de yīfu hěn héshì.",
+      "usage": [
+        "workbook_model"
+      ]
+    },
+    {
+      "hanzi": "这件太小，有大号的衬衫吗？",
+      "pinyin": "Zhè jiàn tài xiǎo, yǒu dàhào de chènshān ma?",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "这件很合适。",
+      "pinyin": "Zhè jiàn hěn héshì.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "这件很合适。有没有牛仔裤？",
+      "pinyin": "Zhè jiàn hěn héshì. Yǒu méiyǒu niúzǎikù?",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "这件羽绒服一千块。",
+      "pinyin": "Zhè jiàn yǔróngfú yì qiān kuài.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "这件衣服一百块。",
+      "pinyin": "Zhè jiàn yīfu yì bǎi kuài.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "这件衣服不错。",
+      "pinyin": "Zhè jiàn yīfu búcuò.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "这件衬衫一百元。",
+      "pinyin": "Zhè jiàn chènshān yì bǎi yuán.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "这件衬衫一百零五块。",
+      "pinyin": "Zhè jiàn chènshān yì bǎi líng wǔ kuài.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "这件衬衫不错。",
+      "pinyin": "Zhè jiàn chènshān búcuò.",
+      "usage": [
+        "workbook_model"
+      ]
+    },
+    {
+      "hanzi": "这件衬衫多少钱？",
+      "pinyin": "Zhè jiàn chènshān duōshao qián?",
+      "usage": [
+        "vocabulary_example",
+        "phrase",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "这件衬衫太小，有大号的吗？",
+      "pinyin": "Zhè jiàn chènshān tài xiǎo, yǒu dàhào de ma?",
+      "usage": [
+        "workbook_model"
+      ]
+    },
+    {
+      "hanzi": "这件衬衫很绿。",
+      "pinyin": "Zhè jiàn chènshān hěn lǜ.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "这件衬衫很黑。",
+      "pinyin": "Zhè jiàn chènshān hěn hēi.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "这儿可以拍照吗？",
+      "pinyin": "Zhèr kěyǐ pāizhào ma?",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "这叫“樱桃”。",
+      "pinyin": "Zhè jiào “yīngtao”.",
+      "usage": [
+        "workbook_model"
+      ]
+    },
+    {
+      "hanzi": "这叫“草莓”。",
+      "pinyin": "Zhè jiào “cǎoméi”.",
+      "usage": [
+        "dialogue",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "这叫樱桃。",
+      "pinyin": "Zhè jiào yīngtao.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "这是人民币。",
+      "pinyin": "Zhè shì rénmínbì.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "这里不可以吸烟。",
+      "pinyin": "Zhèlǐ bù kěyǐ xī yān.",
+      "usage": [
+        "vocabulary_example",
+        "phrase"
+      ]
+    },
+    {
+      "hanzi": "适",
+      "pinyin": "shì",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "错",
+      "pinyin": "cuò",
+      "usage": [
+        "vocabulary",
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "问题",
+      "pinyin": "wèntí",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "雅",
+      "pinyin": "yǎ",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "鞋",
+      "pinyin": "xié",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "题",
+      "pinyin": "tí",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "香",
+      "pinyin": "xiāng",
+      "usage": [
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "香蕉",
+      "pinyin": "xiāngjiāo",
+      "usage": [
+        "vocabulary"
+      ]
+    },
+    {
+      "hanzi": "黑",
+      "pinyin": "hēi",
+      "usage": [
+        "vocabulary",
+        "hanzi"
+      ]
+    },
+    {
+      "hanzi": "黑色",
+      "pinyin": "hēisè",
+      "usage": [
+        "vocabulary"
+      ]
+    }
+  ],
+  "missingImages": [
+    {
+      "id": "v-老板",
+      "hanzi": "老板",
+      "spanish": "tendero; propietario; jefe",
+      "reason": "no_approved_image",
+      "visualMode": "concept_scene"
+    },
+    {
+      "id": "v-想",
+      "hanzi": "想",
+      "spanish": "pensar; querer; gustaría",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-买",
+      "hanzi": "买",
+      "spanish": "comprar",
+      "reason": "no_approved_image",
+      "visualMode": "concept_scene"
+    },
+    {
+      "id": "v-哪里",
+      "hanzi": "哪里",
+      "spanish": "(expresión de modestia) en absoluto",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-斤",
+      "hanzi": "斤",
+      "spanish": "jin (500g)",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-块",
+      "hanzi": "块",
+      "spanish": "kuai (clasificador coloquial de dinero)",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-问题",
+      "hanzi": "问题",
+      "spanish": "pregunta; problema; asunto",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-怎么",
+      "hanzi": "怎么",
+      "spanish": "cómo",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-草莓",
+      "hanzi": "草莓",
+      "spanish": "fresa",
+      "reason": "no_approved_image",
+      "visualMode": "concrete_object"
+    },
+    {
+      "id": "v-卖",
+      "hanzi": "卖",
+      "spanish": "vender",
+      "reason": "no_approved_image",
+      "visualMode": "concept_scene"
+    },
+    {
+      "id": "v-尝",
+      "hanzi": "尝",
+      "spanish": "probar",
+      "reason": "no_approved_image",
+      "visualMode": "concept_scene"
+    },
+    {
+      "id": "v-便宜",
+      "hanzi": "便宜",
+      "spanish": "económico; barato",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-找",
+      "hanzi": "找",
+      "spanish": "dar el cambio",
+      "reason": "existing_image_has_another_sense",
+      "visualMode": "concept_scene"
+    },
+    {
+      "id": "v-再",
+      "hanzi": "再",
+      "spanish": "de nuevo",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-件",
+      "hanzi": "件",
+      "spanish": "pieza/artículo (de ropa)",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-衬衫",
+      "hanzi": "衬衫",
+      "spanish": "camisa; blusa",
+      "reason": "no_approved_image",
+      "visualMode": "concrete_object"
+    },
+    {
+      "id": "v-售货员",
+      "hanzi": "售货员",
+      "spanish": "vendedor/a",
+      "reason": "no_approved_image",
+      "visualMode": "concept_scene"
+    },
+    {
+      "id": "v-员",
+      "hanzi": "员",
+      "spanish": "(sufijo adjunto a ciertas actividades) persona",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-试",
+      "hanzi": "试",
+      "spanish": "probar",
+      "reason": "no_approved_image",
+      "visualMode": "concept_scene"
+    },
+    {
+      "id": "v-当然",
+      "hanzi": "当然",
+      "spanish": "por supuesto",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-合适",
+      "hanzi": "合适",
+      "spanish": "conveniente; adecuado; quedar bien",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-牛仔裤",
+      "hanzi": "牛仔裤",
+      "spanish": "pantalones vaqueros",
+      "reason": "no_approved_image",
+      "visualMode": "concrete_object"
+    },
+    {
+      "id": "v-羽绒服",
+      "hanzi": "羽绒服",
+      "spanish": "abrigo de plumas",
+      "reason": "no_approved_image",
+      "visualMode": "concrete_object"
+    },
+    {
+      "id": "v-黑色",
+      "hanzi": "黑色",
+      "spanish": "negro",
+      "reason": "no_approved_image",
+      "visualMode": "concept_scene"
+    },
+    {
+      "id": "v-黑",
+      "hanzi": "黑",
+      "spanish": "negro",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-绿色",
+      "hanzi": "绿色",
+      "spanish": "verde",
+      "reason": "no_approved_image",
+      "visualMode": "concept_scene"
+    },
+    {
+      "id": "v-绿",
+      "hanzi": "绿",
+      "spanish": "verde",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-不错",
+      "hanzi": "不错",
+      "spanish": "bastante bien",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-错",
+      "hanzi": "错",
+      "spanish": "equivocado; incorrecto",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-些",
+      "hanzi": "些",
+      "spanish": "algunos; unas",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-衣服",
+      "hanzi": "衣服",
+      "spanish": "ropa",
+      "reason": "no_approved_image",
+      "visualMode": "concrete_object"
+    },
+    {
+      "id": "v-打折",
+      "hanzi": "打折",
+      "spanish": "ofrecer un descuento",
+      "reason": "no_approved_image",
+      "visualMode": "concept_scene"
+    },
+    {
+      "id": "v-刷卡",
+      "hanzi": "刷卡",
+      "spanish": "pagar con tarjeta de crédito/débito",
+      "reason": "no_approved_image",
+      "visualMode": "concept_scene"
+    },
+    {
+      "id": "v-卡",
+      "hanzi": "卡",
+      "spanish": "tarjeta",
+      "reason": "no_approved_image",
+      "visualMode": "concrete_object"
+    },
+    {
+      "id": "v-没问题",
+      "hanzi": "没问题",
+      "spanish": "no hay problema",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-元",
+      "hanzi": "元",
+      "spanish": "yuan (clasificador oficial de la moneda china)",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-角",
+      "hanzi": "角",
+      "spanish": "jiao (clasificador oficial de 10 centavos)",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-毛",
+      "hanzi": "毛",
+      "spanish": "mao (clasificador coloquial de 10 centavos)",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-分",
+      "hanzi": "分",
+      "spanish": "fen (clasificador de un centavo)",
+      "reason": "existing_image_has_another_sense",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-橙子",
+      "hanzi": "橙子",
+      "spanish": "naranja",
+      "reason": "no_approved_image",
+      "visualMode": "concrete_object"
+    },
+    {
+      "id": "v-葡萄",
+      "hanzi": "葡萄",
+      "spanish": "uva",
+      "reason": "no_approved_image",
+      "visualMode": "concrete_object"
+    },
+    {
+      "id": "v-香蕉",
+      "hanzi": "香蕉",
+      "spanish": "plátano",
+      "reason": "no_approved_image",
+      "visualMode": "concrete_object"
+    },
+    {
+      "id": "v-樱桃",
+      "hanzi": "樱桃",
+      "spanish": "cereza",
+      "reason": "no_approved_image",
+      "visualMode": "concrete_object"
+    },
+    {
+      "id": "v-水果",
+      "hanzi": "水果",
+      "spanish": "fruta",
+      "reason": "no_approved_image",
+      "visualMode": "concrete_object"
+    },
+    {
+      "id": "v-裙子",
+      "hanzi": "裙子",
+      "spanish": "falda",
+      "reason": "no_approved_image",
+      "visualMode": "concrete_object"
+    },
+    {
+      "id": "v-T恤",
+      "hanzi": "T恤",
+      "spanish": "camiseta",
+      "reason": "no_approved_image",
+      "visualMode": "concrete_object"
+    },
+    {
+      "id": "v-白色",
+      "hanzi": "白色",
+      "spanish": "blanco",
+      "reason": "no_approved_image",
+      "visualMode": "concept_scene"
+    },
+    {
+      "id": "v-红色",
+      "hanzi": "红色",
+      "spanish": "rojo",
+      "reason": "no_approved_image",
+      "visualMode": "concept_scene"
+    },
+    {
+      "id": "v-穿",
+      "hanzi": "穿",
+      "spanish": "vestir; ponerse",
+      "reason": "no_approved_image",
+      "visualMode": "concept_scene"
+    },
+    {
+      "id": "v-拍照",
+      "hanzi": "拍照",
+      "spanish": "tomar una foto",
+      "reason": "no_approved_image",
+      "visualMode": "concept_scene"
+    },
+    {
+      "id": "v-吸烟",
+      "hanzi": "吸烟",
+      "spanish": "fumar",
+      "reason": "no_approved_image",
+      "visualMode": "concept_scene"
+    },
+    {
+      "id": "v-称呼",
+      "hanzi": "称呼",
+      "spanish": "llamar; tratar a",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-大号",
+      "hanzi": "大号",
+      "spanish": "talla grande",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-小号",
+      "hanzi": "小号",
+      "spanish": "talla pequeña",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-人民币",
+      "hanzi": "人民币",
+      "spanish": "renminbi; moneda china",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    },
+    {
+      "id": "v-找钱",
+      "hanzi": "找钱",
+      "spanish": "dar el cambio",
+      "reason": "no_approved_image",
+      "visualMode": "text_only"
+    }
+  ],
+  "missingConstructionTokens": [
+    {
+      "entryId": "rm-l7-s-l7-1",
+      "index": 2,
+      "token": "买"
+    },
+    {
+      "entryId": "rm-l7-s-l7-1",
+      "index": 3,
+      "token": "点儿"
+    },
+    {
+      "entryId": "rm-l7-s-l7-2",
+      "index": 3,
+      "token": "一斤"
+    },
+    {
+      "entryId": "rm-l7-s-l7-3",
+      "index": 0,
+      "token": "草莓"
+    },
+    {
+      "entryId": "rm-l7-s-l7-3",
+      "index": 1,
+      "token": "怎么"
+    },
+    {
+      "entryId": "rm-l7-s-l7-3",
+      "index": 2,
+      "token": "卖"
+    },
+    {
+      "entryId": "rm-l7-s-l7-4",
+      "index": 2,
+      "token": "怎么"
+    },
+    {
+      "entryId": "rm-l7-s-l7-5",
+      "index": 1,
+      "token": "件"
+    },
+    {
+      "entryId": "rm-l7-s-l7-5",
+      "index": 2,
+      "token": "衬衫"
+    },
+    {
+      "entryId": "rm-l7-s-l7-6",
+      "index": 0,
+      "token": "便宜"
+    },
+    {
+      "entryId": "rm-l7-s-l7-6",
+      "index": 1,
+      "token": "点儿"
+    },
+    {
+      "entryId": "rm-l7-s-l7-6",
+      "index": 3,
+      "token": "十四块"
+    },
+    {
+      "entryId": "rm-l7-s-l7-6",
+      "index": 4,
+      "token": "一斤"
+    },
+    {
+      "entryId": "rm-l7-s-l7-7",
+      "index": 3,
+      "token": "六十"
+    },
+    {
+      "entryId": "rm-l7-s-l7-7",
+      "index": 7,
+      "token": "八块"
+    },
+    {
+      "entryId": "rm-l7-s-l7-8",
+      "index": 1,
+      "token": "两千一百九十一"
+    },
+    {
+      "entryId": "rm-l7-s-l7-8",
+      "index": 2,
+      "token": "块"
+    },
+    {
+      "entryId": "rm-l7-s-l7-9",
+      "index": 1,
+      "token": "刷卡"
+    },
+    {
+      "entryId": "rm-l7-s-l7-10",
+      "index": 2,
+      "token": "试"
+    },
+    {
+      "entryId": "rm-l7-s-l7-10",
+      "index": 5,
+      "token": "件"
+    },
+    {
+      "entryId": "rm-l7-s-l7-11",
+      "index": 2,
+      "token": "试"
+    },
+    {
+      "entryId": "rm-l7-s-l7-12",
+      "index": 1,
+      "token": "大号"
+    },
+    {
+      "entryId": "rm-l7-s-l7-12",
+      "index": 3,
+      "token": "衬衫"
+    },
+    {
+      "entryId": "rm-l7-s-l7-13",
+      "index": 1,
+      "token": "打折"
+    },
+    {
+      "entryId": "rm-l7-s-l7-14",
+      "index": 0,
+      "token": "这些"
+    },
+    {
+      "entryId": "rm-l7-s-l7-14",
+      "index": 1,
+      "token": "衣服"
+    },
+    {
+      "entryId": "rm-l7-s-l7-15",
+      "index": 2,
+      "token": "两斤"
+    },
+    {
+      "entryId": "rm-l7-s-l7-15",
+      "index": 3,
+      "token": "草莓"
+    },
+    {
+      "entryId": "rm-l7-s-l7-15",
+      "index": 5,
+      "token": "四斤"
+    },
+    {
+      "entryId": "rm-l7-s-l7-16",
+      "index": 0,
+      "token": "当然"
+    }
+  ],
+  "missingWorkbookFragments": [
+    {
+      "questionId": "wb-l7-order-1",
+      "hanzi": "便宜",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-order-2",
+      "hanzi": "老北京",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-order-4",
+      "hanzi": "这件",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-order-4",
+      "hanzi": "衬衫",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-order-4",
+      "hanzi": "大号",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-order-5",
+      "hanzi": "哪里",
+      "pinyin": "nǎli"
+    },
+    {
+      "questionId": "wb-l7-order-6",
+      "hanzi": "这些",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-order-6",
+      "hanzi": "衣服",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-complete-2",
+      "hanzi": "恰",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-complete-3",
+      "hanzi": "宜",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-complete-3",
+      "hanzi": "宣",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-complete-5",
+      "hanzi": "错",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-complete-5",
+      "hanzi": "借",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-complete-6",
+      "hanzi": "件",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-complete-7",
+      "hanzi": "货",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-dialogue-1",
+      "hanzi": "苹果十块钱一斤。",
+      "pinyin": "Píngguǒ shí kuài qián yì jīn."
+    },
+    {
+      "questionId": "wb-l7-dialogue-1",
+      "hanzi": "我想买点儿草莓。",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-dialogue-1",
+      "hanzi": "这叫“樱桃”。",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-dialogue-1",
+      "hanzi": "不好意思，现在不打折。",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-dialogue-1",
+      "hanzi": "苹果多少钱一斤？",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-dialogue-2",
+      "hanzi": "我想买点儿草莓。",
+      "pinyin": "Wǒ xiǎng mǎi diǎnr cǎoméi."
+    },
+    {
+      "questionId": "wb-l7-dialogue-2",
+      "hanzi": "苹果十块钱一斤。",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-dialogue-2",
+      "hanzi": "这叫“樱桃”。",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-dialogue-2",
+      "hanzi": "不好意思，现在不打折。",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-dialogue-3",
+      "hanzi": "这叫“樱桃”。",
+      "pinyin": "Zhè jiào “yīngtao”."
+    },
+    {
+      "questionId": "wb-l7-dialogue-3",
+      "hanzi": "苹果十块钱一斤。",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-dialogue-3",
+      "hanzi": "我想买点儿草莓。",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-dialogue-3",
+      "hanzi": "不好意思，现在不打折。",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-dialogue-3",
+      "hanzi": "这个汉语怎么说？",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-dialogue-4",
+      "hanzi": "不好意思，现在不打折。",
+      "pinyin": "Bù hǎoyìsi, xiànzài bù dǎzhé."
+    },
+    {
+      "questionId": "wb-l7-dialogue-4",
+      "hanzi": "苹果十块钱一斤。",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-dialogue-4",
+      "hanzi": "我想买点儿草莓。",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-dialogue-4",
+      "hanzi": "这叫“樱桃”。",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-dialogue-4",
+      "hanzi": "可以打折吗？",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-dialogue-5",
+      "hanzi": "一共六十六块。",
+      "pinyin": "Yígòng liùshíliù kuài."
+    },
+    {
+      "questionId": "wb-l7-dialogue-5",
+      "hanzi": "我想买点儿草莓。",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-dialogue-5",
+      "hanzi": "这叫“樱桃”。",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-dialogue-5",
+      "hanzi": "不好意思，现在不打折。",
+      "pinyin": null
+    },
+    {
+      "questionId": "wb-l7-dialogue-5",
+      "hanzi": "这些衣服一共多少钱？",
+      "pinyin": null
+    }
+  ],
+  "authorization": {
+    "date": "2026-11-20",
+    "reply": "Sí, audios e imágenes",
+    "scope": "Recursos de L7, incluidos modelos del cuaderno y fragmentos sonoros; generación y revisión local. No autoriza producción."
+  }
+}

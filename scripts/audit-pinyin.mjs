@@ -20,7 +20,7 @@ for (const file of trackedFiles) {
       text: line.trim(),
       codepoints: marks.map(({ 0: mark }) => `U+${mark.codePointAt(0).toString(16).toUpperCase().padStart(4, '0')}`),
     };
-    if (/\.pdf(?:['"`|]|$)/i.test(line)) metadataOnly.push(finding);
+    if (/\.pdf(?:\s*['"`|]|$)/i.test(line)) metadataOnly.push(finding);
     else findings.push(finding);
   });
 }

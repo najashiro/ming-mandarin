@@ -1,3 +1,4 @@
+import { lesson7Vocabulary, lesson7Sentences } from '@/seed/lesson7';
 import { lesson6Vocabulary, lesson6Sentences } from '@/seed/lesson6';
 import { lesson5Vocabulary, lesson5Sentences } from '@/seed/lesson5';
 import { lesson4Vocabulary, lesson4Sentences } from '@/seed/lesson4';
@@ -6,7 +7,7 @@ import { audioForMandarinText } from '@/lib/mandarin-audio';
 import { canonicalCharacters } from '@/seed/characters';
 import type { CurriculumScope, LessonNumber } from '@/data/types';
 import { getVocabularySet } from '@/lib/vocabulary';
-import { imageForWord, type VocabularyMediaEntry } from '@/lib/vocabulary-media';
+import { imageForVocabularyWord, type VocabularyMediaEntry } from '@/lib/vocabulary-media';
 
 const known = new Set(canonicalCharacters.map(character => character.hanzi));
 export const retoMixtoLesson4: RetoMixtoEntry[] = lesson4Vocabulary.map(word => ({
@@ -60,10 +61,29 @@ const sentenceEntries6: RetoMixtoEntry[] = lesson6Sentences.map(sentence => ({
   distractorGroup: 'l6-phrase', playableModes: ['construct-response'], tokens: sentence.tokens,
 }));
 
+export const retoMixtoLesson7: RetoMixtoEntry[] = lesson7Vocabulary.map(word => ({
+  id: `rm-l7-${word.id}`, hanzi: word.hanzi, pinyin: word.pinyin, meaningEs: word.translation,
+  vocabularyId: word.id,
+  lesson: 7, lessons: [7], sources: [word.source], sourceTypes: [word.source.type],
+  category: word.isCore ? 'core' : 'supplementary', imageable: false,
+  audioSrc: audioForMandarinText(word.hanzi, word.pinyin) ?? '',
+  hanziTargets: [...word.hanzi].filter(character => known.has(character)),
+  distractorGroup: 'l7-vocabulary', playableModes: ['audio-hanzi'],
+}));
+const sentenceEntries7: RetoMixtoEntry[] = lesson7Sentences.map(sentence => ({
+  id: `rm-l7-${sentence.id}`, hanzi: sentence.hanzi, pinyin: sentence.pinyin, meaningEs: sentence.translation,
+  lesson: 7, lessons: [7], sources: [sentence.source], sourceTypes: [sentence.source.type], category: 'phrase',
+  imageable: false, audioSrc: audioForMandarinText(sentence.hanzi, sentence.pinyin) ?? '',
+  hanziTargets: [...sentence.hanzi].filter(character => known.has(character)),
+  distractorGroup: 'l7-phrase', playableModes: ['construct-response'], tokens: sentence.tokens,
+}));
+
 // Only consume current server-resolved approvals. Empty media hides legacy art too.
 export function retoMixtoForScope(scope: CurriculumScope, media: readonly VocabularyMediaEntry[] = []): RetoMixtoEntry[] {
   const words = getVocabularySet(scope);
-  const source = scope === 'l6' ? [...retoMixtoLesson6, ...sentenceEntries6]
+  const source = scope === 'l7' ? [...retoMixtoLesson7, ...sentenceEntries7]
+    : scope === 'l1-l2-l3-l4-l5-l6-l7' ? [...retoMixtoCorpus, ...retoMixtoLesson4, ...sentenceEntries, ...retoMixtoLesson5, ...sentenceEntries5, ...retoMixtoLesson6, ...sentenceEntries6, ...retoMixtoLesson7, ...sentenceEntries7]
+    : scope === 'l6' ? [...retoMixtoLesson6, ...sentenceEntries6]
     : scope === 'l1-l2-l3-l4-l5-l6' ? [...retoMixtoCorpus, ...retoMixtoLesson4, ...sentenceEntries, ...retoMixtoLesson5, ...sentenceEntries5, ...retoMixtoLesson6, ...sentenceEntries6]
     : scope === 'l5' ? [...retoMixtoLesson5, ...sentenceEntries5]
     : scope === 'l1-l2-l3-l4-l5' ? [...retoMixtoCorpus, ...retoMixtoLesson4, ...sentenceEntries, ...retoMixtoLesson5, ...sentenceEntries5]
@@ -79,9 +99,9 @@ export function retoMixtoForScope(scope: CurriculumScope, media: readonly Vocabu
   for (const word of words) {
     const previous = [...entries.values()].find(entry => entry.category !== 'phrase' && entry.hanzi === word.hanzi && entry.pinyin === word.pinyin);
     if (previous) { previous.vocabularyId = word.id; continue; }
-    const image = imageForWord(word.id, media);
+    const image = imageForVocabularyWord(word, media);
     if (!image) continue;
-    const lessons = word.lessons.filter((lesson): lesson is LessonNumber => [1,2,3,4,5,6].includes(lesson));
+    const lessons = word.lessons.filter((lesson): lesson is LessonNumber => [1,2,3,4,5,6,7].includes(lesson));
     entries.set(`vocab:${word.id}`, {
       id: `rm-vocab-${word.id}`, vocabularyId: word.id, hanzi: word.hanzi, pinyin: word.pinyin, meaningEs: word.spanish,
       lesson: lessons[0], lessons, sources: [], sourceTypes: [], category: 'supplementary', imageable: false,
@@ -91,7 +111,7 @@ export function retoMixtoForScope(scope: CurriculumScope, media: readonly Vocabu
   }
   return [...entries.values()].map(entry => {
     const word = words.find(word => word.id === entry.vocabularyId || (word.hanzi === entry.hanzi && word.pinyin === entry.pinyin));
-    const image = word ? imageForWord(word.id, media) : undefined;
+    const image = word ? imageForVocabularyWord(word, media) : undefined;
     const imageable = Boolean(image?.imageQuizEligible && entry.category !== 'example_only');
     const playableModes: RetoMixtoEntry['playableModes'] = entry.playableModes.filter(mode => mode === 'construct-response');
     if (entry.audioSrc && entry.category !== 'example_only') playableModes.push('audio-hanzi');

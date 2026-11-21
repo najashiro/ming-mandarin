@@ -50,7 +50,7 @@ describe('vocabulario activo: evidencia, búsqueda y recursos', () => {
   });
   it('publica imágenes permitidas y nunca habilita quiz para apoyo contextual', () => {
     for (const media of vocabularyMedia.filter(m => m.status === 'approved')) {
-      expect(vocabularyCatalog.some(w => w.id === media.wordId)).toBe(true);
+      expect(vocabularyCatalog.some(w => w.id === (media.curriculumWordId ?? media.wordId))).toBe(true);
       expect(existsSync(`public${media.src}`)).toBe(true);
     }
     // Editorial diagrams now support abstract words and names without changing
@@ -252,7 +252,7 @@ describe('partición exclusiva y ejemplos globales', () => {
     expect(getVocabularyLesson(cat)).toBe(3);
   });
   it('las fichas conservan apoyos históricos y ejemplos únicos', () => {
-    expect(vocabularyCatalog).toHaveLength(560);
+    expect(vocabularyCatalog).toHaveLength(614);
     expect(vocabularyCatalog.filter(word => word.lessons.some(lesson => lesson < 4))).toHaveLength(337);
     expect(baseline.phrases).toHaveLength(635);
     for (const word of vocabularyCatalog) {
@@ -265,7 +265,7 @@ describe('partición exclusiva y ejemplos globales', () => {
     expect(['l1', 'l2', 'l3', 'l1-l2-l3'].map(scope => getVocabularySet(scope as 'l1').length)).toEqual([85, 126, 116, 327]);
   });
   it('define los alcances elegibles sin nombres personales y conserva lugares, palabras completas y monosílabos', () => {
-    expect(vocabularyMixScopes).toEqual(['l1', 'l2', 'l3', 'l4', 'l5', 'l6', 'l1-l2-l3-l4-l5-l6', 'l1-l2-l3-l4-l5', 'l1-l2', 'l1-l2-l3', 'l1-l2-l3-l4']);
+    expect(vocabularyMixScopes).toEqual(['l1', 'l2', 'l3', 'l4', 'l5', 'l6', 'l7', 'l1-l2-l3-l4-l5-l6-l7', 'l1-l2-l3-l4-l5-l6', 'l1-l2-l3-l4-l5', 'l1-l2', 'l1-l2-l3', 'l1-l2-l3-l4']);
     const sets = Object.fromEntries(vocabularyMixScopes.map(scope => [scope, getVocabularyMixSet(scope)]));
     expect((['l1','l2','l3','l1-l2','l1-l2-l3'] as const).map(scope => sets[scope].length)).toEqual([68, 122, 110, 190, 300]);
     for (const words of Object.values(sets)) expect(new Set(words.map(word => word.id)).size).toBe(words.length);
