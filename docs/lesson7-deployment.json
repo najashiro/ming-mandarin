@@ -1,0 +1,34 @@
+{
+  "verifiedAt": "2026-11-21T00:25:19.240743+00:00",
+  "target": "production",
+  "state": "READY",
+  "project": "ming-mandarin",
+  "projectId": "prj_7w85SRqXwCRw3JEWod3YtLHd1JPm",
+  "deploymentId": "dpl_CV5Y9oFUUnxFCDiFk9gHdHWbJ7Ja",
+  "commit": "7e0a04fbe5f1dcfde17e671be65328563b405c89",
+  "tree": "115a9aa36e812428287851424352b4bfc1a32a46",
+  "url": "https://ming-mandarin-gamma.vercel.app/study/l7",
+  "deploymentURL": "https://ming-mandarin-29f3odty0-najashiro.vercel.app",
+  "productionAliasVerified": true,
+  "staticFilesVerifiedByGitBlobHash": 585,
+  "staticFileFailures": 0,
+  "browserCases": 21,
+  "browsers": [
+    "Chromium desktop",
+    "Chromium mobile",
+    "WebKit iPhone"
+  ],
+  "runtimeErrorAndFatalGroupsDuringVerification": [],
+  "audioFiles": 261,
+  "newVocabularyImages": 56,
+  "listeningActivities": 5,
+  "listeningPracticeTracks": 28,
+  "missingEditorialMedia": 0,
+  "source": "Paid media generation and production publication explicitly authorized in the conversation.",
+  "limits": "Browser checks use unauthenticated access; no authenticated exam attempt or progress write was made. Audio quality review is automated, without independent human listening.",
+  "evidence": [
+    "tmp/lesson7/production-e2e.log",
+    "tmp/lesson7/production-e2e/",
+    "tmp/lesson7/production-assets.json"
+  ]
+}

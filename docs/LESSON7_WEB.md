@@ -58,3 +58,7 @@ La generación de voz utilizó el servicio configurado de OpenAI: `gpt-4o-mini-t
 - 39 casos de navegador validados en Chromium, móvil y WebKit/iPhone; cubren navegación L7, rutas históricas, diálogos completos, lecturas, actividades, fichas y trazos, conversación, los tres juegos del cuaderno y los sentidos de Mix. La regresión de audio comprueba que las grabaciones existentes siguen reproduciéndose y que un fallo de red permite reintentar sin perder la respuesta.
 
 Los comandos de reproducción están en [README.md](../MING_KNOWLEDGE/v2/lesson7/README.md). Los registros y capturas locales están en `tmp/lesson7/` y `test-results/`, excluidos del repositorio. La verificación local no prueba el estado de producción ni el acceso a cuentas o bases de datos remotas.
+
+## Producción comprobada
+
+Publicada en [Míng · Lección 7](https://ming-mandarin-gamma.vercel.app/study/l7), despliegue `dpl_CV5Y9oFUUnxFCDiFk9gHdHWbJ7Ja`, estado `READY`, commit `7e0a04fbe5f1dcfde17e671be65328563b405c89`. El alias público apunta a ese despliegue. Los 585 archivos estáticos nuevos o actualizados coinciden por hash con el árbol verificado. Pasaron otros 21 casos de navegador contra producción en Chromium, móvil y WebKit/iPhone, incluida la reproducción de las cinco actividades de escucha y los sentidos locales de las imágenes. La consulta de logs no devolvió errores ni fallos fatales durante la comprobación. Véase [el registro de despliegue](lesson7-deployment.json).

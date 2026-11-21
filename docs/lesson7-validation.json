@@ -16,9 +16,13 @@
   "missingConstructionTokens": 0,
   "missingWorkbookFragments": 0,
   "localPreview": "http://127.0.0.1:3108/study/l7",
-  "deployed": false,
+  "deployed": true,
   "originalBookAudioAvailable": false,
   "audioReview": "Automated signal, transcription, homophone review and 14 audio-model checks; no independent human listening.",
   "visualReview": "56 masters and desktop/iPhone rendered cards; model review, no independent human review.",
-  "publicationAuthorized": true
+  "publicationAuthorized": true,
+  "productionURL": "https://ming-mandarin-gamma.vercel.app/study/l7",
+  "productionBrowserCases": 21,
+  "productionFilesVerified": 585,
+  "productionCommit": "7e0a04fbe5f1dcfde17e671be65328563b405c89"
 }
