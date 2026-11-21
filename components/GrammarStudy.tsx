@@ -42,7 +42,7 @@ const topicSummaries: Record<string, string> = {
   'g-l5-wishes': 'Para felicitar, expresa el deseo, nombra a la persona y añade la felicitación. También puedes aprender frases breves para agradecer, disculparte o lamentar algo.',
 };
 
-/** Chinese runs keep their reading directly beneath them, even within a rule. */
+/** Stacked readings are reserved for isolated pattern pieces and table cells. */
 function SupportedText({ text, aids, returnTo }: { text: string; aids: ReadingAids; returnTo: string }) {
   return <>{grammarTextSegments(text).map((segment, index) => segment.reading
     ? <span className="grammar-inline-reading" key={index}>
@@ -51,6 +51,28 @@ function SupportedText({ text, aids, returnTo }: { text: string; aids: ReadingAi
       {aids.spanish && <span className="grammar-reading-spanish">{segment.reading.spanish}</span>}
     </span>
     : <LinkedChineseText key={index} text={segment.text} returnTo={returnTo} newTab/>)}</>;
+}
+
+/** Keep prose on a continuous baseline; collect its reading aids below the rule. */
+function GrammarProse({ text, aids, returnTo, className = '' }: { text: string; aids: ReadingAids; returnTo: string; className?: string }) {
+  const readings = [...new Map(grammarTextSegments(text)
+    .filter(segment => segment.reading)
+    .map(segment => [segment.reading!.hanzi, segment.reading!])).values()];
+
+  return <div className={`grammar-prose ${className}`}>
+    {text.split(/\n+/).filter(paragraph => paragraph.trim()).map((paragraph, index) =>
+      <p key={index}><LinkedChineseText text={paragraph} returnTo={returnTo} newTab/></p>)}
+    {readings.length > 0 && (aids.pinyin || aids.spanish) && <section className="grammar-rule-vocabulary" aria-label="Palabras de la regla">
+      <h3>Palabras de la regla</h3>
+      <dl>{readings.map(reading => <div className="grammar-rule-term" key={reading.hanzi}>
+        <dt lang="zh-CN"><LinkedChineseText text={reading.hanzi} returnTo={returnTo} newTab/></dt>
+        <dd>
+          {aids.pinyin && <span className="grammar-reading-pinyin"><PinyinText>{reading.pinyin}</PinyinText></span>}
+          {aids.spanish && <span className="grammar-reading-spanish">{reading.spanish}</span>}
+        </dd>
+      </div>)}</dl>
+    </section>}
+  </div>;
 }
 
 function GrammarExample({ text, index, aids, returnTo, readingAid }: { text: string; index: number; aids: ReadingAids; returnTo: string; readingAid?: { pinyin: string; spanish: string } }) {
@@ -148,14 +170,24 @@ export function GrammarStudy({ points, exercises, sentences, returnTo = '/study/
   if (!point) return null;
   const allAids = aids.pinyin && aids.spanish;
   const guide = grammarGuides[point.id];
+  const introduction = topicSummaries[point.id] ?? guide?.summary ?? point.explanation;
+  const hasSeparateRule = introduction.trim() !== point.explanation.trim();
+  const hasPattern = Boolean(guide?.patterns?.length || point.pattern);
   const examples = point.examples.length ? point.examples : guide?.example ? [guide.example] : [];
+  // Some lessons also document the main examples in a worked block. Show them
+  // once, retaining that block's explicit pronunciation and translation.
+  const workedExamples = point.studyBlocks?.flatMap(block => block.examples ?? []) ?? [];
+  const additionalBlocks = point.studyBlocks?.map(block => block.kind === 'examples'
+    ? { ...block, examples: block.examples?.filter(example => !examples.includes(example.hanzi)) }
+    : block).filter(block => block.kind === 'table' || block.examples?.length);
   const topicReturnTo = `${returnTo}#${point.id}`;
   return <div className="grammar-study shell">
     <div className="grammar-study-controls" role="region" aria-label="Ayudas para toda la gramática">
       <div className="grammar-controls-copy"><strong>Estudia a tu ritmo</strong><span>Las ayudas se aplican a los temas y a la práctica.</span></div>
       <div className="grammar-controls-buttons">
-        <button type="button" className="grammar-aids-all" aria-pressed={allAids} onClick={() => updateAids({ pinyin: !allAids, spanish: !allAids })}>
-          {allAids ? 'Ocultar pinyin y español' : 'Mostrar pinyin y español'}
+        <button type="button" className="grammar-aids-all" aria-label={allAids ? 'Ocultar pinyin y español' : 'Mostrar pinyin y español'} aria-pressed={allAids} onClick={() => updateAids({ pinyin: !allAids, spanish: !allAids })}>
+          <span className="grammar-aids-label-full">{allAids ? 'Ocultar pinyin y español' : 'Mostrar pinyin y español'}</span>
+          <span className="grammar-aids-label-short" aria-hidden="true">{allAids ? 'Ocultar' : 'Mostrar'}</span>
         </button>
         <div className="grammar-aids-individual" role="group" aria-label="Ayudas de lectura">
           <button type="button" aria-pressed={aids.pinyin} onClick={() => updateAids({ ...aids, pinyin: !aids.pinyin })}>Pinyin <span aria-hidden="true">{aids.pinyin ? '✓' : '＋'}</span></button>
@@ -182,34 +214,37 @@ export function GrammarStudy({ points, exercises, sentences, returnTo = '/study/
         <header className="grammar-topic-header">
           <p className="eyebrow">COMPRENDE · TEMA {topicIndex + 1} DE {topics.length}</p>
           <h2 ref={topicHeading} tabIndex={-1}>{topicLabels[point.id] ?? guide?.title ?? point.title}</h2>
-          <p className="grammar-topic-explanation">{topicSummaries[point.id] ?? guide?.summary ?? <SupportedText text={point.explanation} aids={aids} returnTo={topicReturnTo}/>}</p>
-          <p className="grammar-hanzi-hint">Toca un carácter subrayado para abrir su ficha Hanzi en otra pestaña.</p>
-          <details className="grammar-rule-detail" key={point.id}>
+          <GrammarProse className="grammar-topic-explanation" text={introduction} aids={aids} returnTo={topicReturnTo}/>
+          {hasSeparateRule && <details className="grammar-rule-detail" key={point.id}>
             <summary>Ver la regla con sus palabras en chino</summary>
-            <p><SupportedText text={point.explanation} aids={aids} returnTo={topicReturnTo}/></p>
-          </details>
-          {point.clarification && <p className="grammar-clarification"><SupportedText text={point.clarification} aids={aids} returnTo={topicReturnTo}/></p>}
+            <GrammarProse className="grammar-rule-prose" text={point.explanation} aids={aids} returnTo={topicReturnTo}/>
+          </details>}
+          {point.clarification && <GrammarProse className="grammar-clarification" text={point.clarification} aids={aids} returnTo={topicReturnTo}/>}
+          <p className="grammar-hanzi-hint">Los caracteres subrayados abren su ficha Hanzi en otra pestaña.</p>
         </header>
-        {(guide?.patterns?.length || point.pattern) && <section className="grammar-pattern-guide" aria-label="Orden de la frase">
+        {hasPattern && <section className="grammar-pattern-guide" aria-label="Orden de la frase">
           <h3><span aria-hidden="true">01</span> Observa el orden</h3>
           {guide?.patterns?.length ? <div className="grammar-pattern-variants">{guide.patterns.map((variant, index) =>
             <section key={variant.title} className="grammar-pattern-variant" data-testid="grammar-pattern-variant" aria-label={variant.title}>
               <h4><span aria-hidden="true">{String.fromCharCode(65 + index)}</span>{variant.title}</h4>
-              <div className="grammar-pattern-parts">{variant.parts.map((part, partIndex) => <Fragment key={partIndex}>
+              <div className="grammar-pattern-parts">{variant.parts.map((part, partIndex) => <span className="grammar-pattern-unit" key={partIndex}>
                 {partIndex > 0 && <span className="grammar-pattern-connector" aria-hidden="true">+</span>}
                 <span className="grammar-pattern-part"><SupportedText text={part} aids={aids} returnTo={topicReturnTo}/></span>
-              </Fragment>)}</div>
+              </span>)}</div>
             </section>)}</div>
-          : <div className="grammar-pattern-parts">{point.pattern.split(/\s*(→|\+|·)\s*/).map((part, index) =>
-            /^[→+·]$/.test(part) ? <span className="grammar-pattern-connector" key={index} aria-hidden="true">{part}</span>
-              : <span className="grammar-pattern-part" key={index}><SupportedText text={part} aids={aids} returnTo={topicReturnTo}/></span>)}</div>}
+          : <div className="grammar-pattern-parts">{point.pattern.split(/\s*(→|\+|·)\s*/).map((part, index, parts) =>
+            /^[→+·]$/.test(part) ? null : <span className="grammar-pattern-unit" key={index}>
+              {index > 0 && <span className="grammar-pattern-connector" aria-hidden="true">{parts[index - 1]}</span>}
+              <span className="grammar-pattern-part"><SupportedText text={part} aids={aids} returnTo={topicReturnTo}/></span>
+            </span>)}</div>}
         </section>}
         {examples.length > 0 && <section className="grammar-examples-guide" aria-label="Ejemplos de la regla">
-          <h3><span aria-hidden="true">02</span> Escucha y repite</h3>
+          <h3><span aria-hidden="true">{hasPattern ? '02' : '01'}</span> Escucha y repite</h3>
           <p className="grammar-section-hint">Lee la frase y su significado. Escúchala y repítela en voz alta.</p>
-          {examples.map((example, index) => <GrammarExample key={example} text={example} index={index} aids={aids} returnTo={topicReturnTo}/>)}
+          {examples.map((example, index) => <GrammarExample key={example} text={example} index={index} aids={aids} returnTo={topicReturnTo}
+            readingAid={workedExamples.find(worked => worked.hanzi === example)}/>)}
         </section>}
-        {point.studyBlocks && <GrammarStudyBlocks blocks={point.studyBlocks} aids={aids} returnTo={topicReturnTo}/>}
+        {additionalBlocks && <GrammarStudyBlocks blocks={additionalBlocks} aids={aids} returnTo={topicReturnTo}/>}
         <div className="grammar-recall-tip"><span aria-hidden="true">↻</span><p><strong>Ahora, prueba sin ayuda.</strong> Oculta el pinyin y el español e intenta recordar lo que significa cada frase. Puedes volver a mostrarlos cuando lo necesites.</p></div>
         <footer className="grammar-topic-navigation">
           <button type="button" disabled={topicIndex === 0} onClick={() => selectTopic(topicIndex - 1, true)}>← Tema anterior</button>

@@ -8,6 +8,7 @@
 .grammar-controls-buttons { display:flex; flex-wrap:wrap; align-items:center; justify-content:flex-end; gap:10px; }
 .grammar-controls-buttons button { min-height:44px; padding:10px 14px; border:1px solid #bacbc0; border-radius:9px; font-size:13px; font-weight:650; }
 .grammar-controls-buttons .grammar-aids-all { background:var(--jade); color:white; border-color:var(--jade); }
+.grammar-aids-label-short { display:none; }
 .grammar-aids-individual { display:flex; gap:6px; }
 .grammar-aids-individual button { background:#fff; color:#4d6155; }
 .grammar-aids-individual button[aria-pressed=true] { color:var(--jade-dark); border-color:var(--jade); background:#fff; }
@@ -18,7 +19,7 @@
 .grammar-topic-menu > p:not(.eyebrow) { font-size:14px; color:var(--muted); line-height:1.6; margin:0 0 20px; }
 .grammar-topic-menu nav { display:grid; gap:5px; max-height:65vh; overflow-y:auto; overscroll-behavior:contain; }
 .grammar-topic-menu nav button { scroll-margin-top:230px; scroll-margin-bottom:85px; }
-.grammar-hanzi-hint { font-size:12px; line-height:1.6; color:var(--muted); margin:-12px 0 22px; }
+.grammar-hanzi-hint { font-size:12px; line-height:1.6; color:var(--muted); margin:20px 0 26px; }
 .grammar-study .linked-chinese-text { font:inherit; }
 .grammar-study .linked-hanzi:hover { color:var(--jade); background:var(--jade-soft); }
 .grammar-study .grammar-source-table { overflow-wrap:anywhere; }
@@ -31,11 +32,24 @@
 .grammar-practice-link { margin-top:18px; min-height:48px; display:flex; align-items:center; justify-content:space-between; border-top:1px solid var(--line); color:var(--jade); font-size:14px; font-weight:700; padding:16px 10px; }
 .grammar-study-topic { min-width:0; background:#fffefa; border:1px solid #dce2d7; border-radius:20px; padding:clamp(20px,3vw,38px); scroll-margin-top:200px; }
 .grammar-topic-header h2 { font:600 clamp(27px,3vw,36px)/1.2 Georgia,serif; margin:0 0 20px; scroll-margin-top:210px; }
-.grammar-topic-explanation { color:#48594f; font-size:16px; line-height:1.9; margin:0 0 26px; }
-.grammar-rule-detail { margin:-12px 0 24px; color:#536359; font-size:14px; }
-.grammar-rule-detail summary { cursor:pointer; min-height:44px; padding:10px 0; color:var(--jade); }
+.grammar-topic-explanation { color:#48594f; font-size:16px; line-height:1.8; margin:0 0 22px; }
+.grammar-prose > p { margin:0 0 14px; white-space:pre-line; overflow-wrap:anywhere; }
+.grammar-prose > p:last-child { margin-bottom:0; }
+.grammar-prose > p .linked-hanzi { white-space:nowrap; }
+.grammar-rule-detail { margin:0 0 22px; border:1px solid #dce4db; border-radius:12px; background:#fafbf7; color:#48594f; font-size:15px; }
+.grammar-rule-detail summary { cursor:pointer; min-height:48px; padding:14px 16px; color:var(--jade-dark); font-size:14px; font-weight:600; line-height:1.6; }
 .grammar-rule-detail summary:focus-visible { outline:3px solid #d19b45; outline-offset:3px; }
-.grammar-rule-detail p { line-height:1.9; margin:8px 0; }
+.grammar-rule-detail[open] summary { border-bottom:1px solid #dce4db; }
+.grammar-rule-prose { padding:18px 16px; line-height:1.8; }
+.grammar-study .grammar-clarification { padding:16px 18px; margin:0 0 22px; border-radius:0 10px 10px 0; font-size:15px; line-height:1.8; }
+.grammar-rule-vocabulary { margin-top:22px; padding-top:18px; border-top:1px solid var(--line); }
+.grammar-study-topic .grammar-rule-vocabulary h3 { margin:0 0 8px; color:var(--jade-dark); font-size:11px; font-weight:750; letter-spacing:.09em; text-transform:uppercase; }
+.grammar-rule-vocabulary dl { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:0 24px; margin:0; }
+.grammar-rule-term { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.65fr); align-items:start; gap:14px; padding:13px 0; border-bottom:1px solid var(--line); }
+.grammar-rule-term dt { color:var(--ink); font-size:23px; line-height:1.5; overflow-wrap:anywhere; }
+.grammar-rule-term dd { display:grid; gap:3px; min-width:0; margin:0; padding-top:2px; line-height:1.6; }
+.grammar-rule-term .grammar-reading-pinyin { color:var(--jade); font-size:14px; overflow-wrap:anywhere; }
+.grammar-rule-term .grammar-reading-spanish { color:#5e685f; font-size:13px; overflow-wrap:anywhere; }
 .grammar-inline-reading { display:inline-grid; grid-template-columns:minmax(0,1fr); text-align:center; vertical-align:top; margin:0 .16em .25em; line-height:1.5; max-width:100%; }
 .grammar-inline-reading > span:first-child { font-size:1.1em; color:var(--ink); }
 .grammar-inline-reading .grammar-reading-pinyin { font-size:13px; color:var(--jade); }
@@ -44,6 +58,7 @@
 .grammar-study-topic h3 > span { font-size:10px; letter-spacing:.08em; color:var(--jade); border:1px solid #adc7b7; padding:5px 6px; border-radius:5px; }
 .grammar-pattern-guide { padding:20px; background:#f0f4ec; border-radius:14px; margin-bottom:28px; }
 .grammar-pattern-parts { display:flex; flex-wrap:wrap; align-items:center; gap:8px; line-height:1.8; }
+.grammar-pattern-unit { display:flex; align-items:center; gap:8px; min-width:0; max-width:100%; }
 .grammar-pattern-part { min-width:0; max-width:100%; padding:10px 14px; background:#fffefa; border:1px solid #d4dfcd; border-radius:9px; font-size:15px; text-align:center; }
 .grammar-pattern-connector { color:#69806b; font-size:18px; }
 .grammar-pattern-variants { display:grid; gap:20px; }
@@ -76,25 +91,41 @@
   .grammar-study-layout { grid-template-columns:220px minmax(0,1fr); gap:18px; }
 }
 @media(max-width:720px) {
-  .grammar-study-controls { top:64px; padding:12px; gap:10px; flex-direction:column; border-radius:12px; }
-  .grammar-controls-copy > span { display:none; }
-  .grammar-controls-copy strong { font-size:13px; }
-  .grammar-controls-buttons { max-width:none; width:100%; justify-content:flex-start; gap:7px; }
+  .grammar-study-controls { top:64px; padding:10px; border-radius:12px; }
+  .grammar-controls-copy, .grammar-aids-label-full { display:none; }
+  .grammar-aids-label-short { display:inline; }
+  .grammar-controls-buttons { max-width:none; width:100%; flex-wrap:nowrap; justify-content:space-between; gap:6px; }
   .grammar-controls-buttons button { font-size:12px; padding:9px 10px; }
+  .grammar-aids-individual { flex:1; justify-content:flex-end; }
+  .grammar-aids-individual button { flex:1; max-width:110px; }
   .grammar-study-layout { grid-template-columns:minmax(0,1fr); gap:18px; margin-top:18px; }
   .grammar-topic-menu { padding:0; }
-  .grammar-topic-menu h2 { font-size:21px; }
+  .grammar-topic-menu h2, .grammar-topic-menu > p:not(.eyebrow) { display:none; }
   .grammar-topic-menu .eyebrow { margin-bottom:8px; }
   .grammar-topic-menu > p:not(.eyebrow) { margin-bottom:12px; }
   .grammar-topic-menu nav { display:flex; overflow-x:auto; overflow-y:hidden; max-height:none; padding-bottom:8px; scroll-snap-type:x proximity; }
   .grammar-topic-menu nav button { width:auto; flex:0 0 185px; scroll-snap-align:start; }
   .grammar-practice-link { margin-top:4px; padding:10px; }
-  .grammar-study-topic { padding:21px 17px; border-radius:14px; }
+  .grammar-study-topic { padding:24px 19px; border-radius:16px; scroll-margin-top:150px; }
+  .grammar-topic-header h2 { font-size:28px; line-height:1.25; scroll-margin-top:150px; text-wrap:balance; }
   .grammar-pattern-guide { padding:15px; }
+  .grammar-pattern-part { padding:8px 9px; font-size:14px; }
   .grammar-topic-explanation { font-size:15px; }
+  .grammar-topic-header .eyebrow { font-size:10px; }
+  .grammar-rule-term { grid-template-columns:minmax(0,1fr) minmax(0,1.5fr); gap:12px; }
+  .grammar-rule-term dt { font-size:22px; }
+  .grammar-rule-prose { padding:16px 14px; }
+  .grammar-study-practice { scroll-margin-top:150px; }
   .grammar-study-example { gap:10px; }
   .grammar-example-content > .grammar-reading-pinyin { font-size:16px; }
   .grammar-topic-navigation { gap:8px; }
   .grammar-topic-navigation button, .grammar-topic-navigation a { padding:10px; }
+}
+@media(max-width:360px) {
+  .grammar-study-controls { padding:8px; }
+  .grammar-controls-buttons button { padding:9px 7px; font-size:11px; }
+  .grammar-aids-individual button span { margin-left:3px; }
+  .grammar-study-topic { padding:22px 15px; }
+  .grammar-topic-header h2 { font-size:26px; }
 }
 @media(prefers-reduced-motion:reduce) { .grammar-study * { scroll-behavior:auto; } }

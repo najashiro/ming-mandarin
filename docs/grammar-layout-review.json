@@ -1,0 +1,48 @@
+{
+  "request": "Mejorar la presentación de gramática, verificar todas las lecciones y publicar.",
+  "baseline": "e48a62b3400324d4c71c943be66e360eb4e11506",
+  "scope": "Gramática L1–L7 y todos los repasos acumulados",
+  "changes": [
+    "Explicaciones con lectura continua y glosario separado sin palabras repetidas",
+    "Una sola explicación cuando no existe introducción alternativa",
+    "26 ejemplos de L7 sin renderizado duplicado y con sus ayudas documentadas",
+    "Controles compactos en móvil y patrones sin separadores huérfanos",
+    "Ocho bloques de práctica L7 completados desde las frases del corpus"
+  ],
+  "coverage": {
+    "lessons": 7,
+    "visibleTopics": 68,
+    "mainExamples": 112,
+    "grammarExercises": 86,
+    "practiceOptionsPerExercise": 347,
+    "documentaryTableRows": 79
+  },
+  "validation": {
+    "unitTests": 588,
+    "unitFiles": 53,
+    "browserTests": 64,
+    "browsers": [
+      "Chromium escritorio",
+      "WebKit iPhone"
+    ],
+    "extraWidths": [
+      320,
+      390
+    ],
+    "lint": "passed",
+    "typecheck": "passed",
+    "build": "passed",
+    "lesson7PythonTests": 5,
+    "corpusExport": "passed",
+    "grammarLanguageIndex": "passed",
+    "missingMedia": 0
+  },
+  "limits": "Pruebas de navegador sin cuenta; los envíos de progreso de los ejercicios se simulan. No se modifica progreso real de usuarios.",
+  "runtimeNote": "Validación local con el ejecutable Node del runtime de Codex; el Node incluido en ChatGPT bloquea complementos nativos.",
+  "evidence": [
+    "tmp/grammar-layout-final",
+    "tmp/grammar-layout-build.log",
+    "tmp/grammar-layout-iphone.png",
+    "tmp/grammar-layout-desktop.png"
+  ]
+}

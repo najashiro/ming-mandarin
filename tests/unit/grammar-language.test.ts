@@ -8,6 +8,7 @@ import { normalizeAnswer } from '@/lib/pinyin';
 import lesson5 from '@/data/lesson5-public.json';
 import support from '@/data/grammar-language-support.json';
 import { grammarAudio, grammarReading, grammarSentence, grammarTextSegments, grammarSentenceForText, grammarPracticeTokens } from '@/lib/grammar-language';
+import { grammarPracticeModel } from '@/lib/grammar-practice';
 
 describe('lesson 5 grammar reading and audio support', () => {
   it('annotates every Chinese run in the 11 grammar cards without changing the text', () => {
@@ -70,7 +71,7 @@ describe('lesson 5 grammar reading and audio support', () => {
 });
 
 
-const globalCurriculum = getCurriculum('l1-l2-l3-l4-l5-l6');
+const globalCurriculum = getCurriculum('l1-l2-l3-l4-l5-l6-l7');
 const globalGrammar = globalCurriculum.grammar.map(point => reference.grammar.find(item => item.id === point.id) ?? point);
 function allStrings(value: unknown): string[] {
   if (typeof value === 'string') return [value];
@@ -116,6 +117,11 @@ describe('grammar language coverage for the whole course', () => {
     for (const exercise of globalCurriculum.exercises.filter(item => item.dimension === 'grammar')) {
       const tokens = grammarPracticeTokens(exercise.answer);
       expect(normalizeAnswer(tokens.join('')), exercise.id).toBe(normalizeAnswer(exercise.answer));
+      const model = grammarPracticeModel(exercise, globalCurriculum.sentences);
+      for (const token of new Set([...tokens, ...model.tokens, ...model.options])) {
+        expect(grammarReading(token)?.pinyin, `${exercise.id}: ${token}`).toBeTruthy();
+        expect(grammarReading(token)?.spanish, `${exercise.id}: ${token}`).toBeTruthy();
+      }
       const sources = grammarAudio(exercise.answer);
       if (!sources) missing.push(`${exercise.id}: ${exercise.answer}`);
       else for (const source of Array.isArray(sources) ? sources : [sources]) {

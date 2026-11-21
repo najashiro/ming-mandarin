@@ -329,6 +329,11 @@
       "spanish": "1,75 yuanes"
     },
     {
+      "hanzi": "一斤",
+      "pinyin": "yì jīn",
+      "spanish": "medio kilo"
+    },
+    {
       "hanzi": "一月",
       "pinyin": "yī yuè",
       "spanish": "enero"
@@ -564,6 +569,11 @@
       "spanish": "Dos hermanas mayores."
     },
     {
+      "hanzi": "两千一百九十一",
+      "pinyin": "liǎngqiān yìbǎi jiǔshíyī",
+      "spanish": "dos mil ciento noventa y uno"
+    },
+    {
       "hanzi": "两千一百零九",
       "pinyin": "Liǎng qiān yì bǎi líng jiǔ",
       "spanish": "2109"
@@ -577,6 +587,11 @@
       "hanzi": "两块二",
       "pinyin": "Liǎng kuài èr",
       "spanish": "2,20 yuanes"
+    },
+    {
+      "hanzi": "两斤",
+      "pinyin": "liǎng jīn",
+      "spanish": "un kilo"
     },
     {
       "hanzi": "两点一刻",
@@ -1174,6 +1189,11 @@
       "spanish": "chisme"
     },
     {
+      "hanzi": "八块",
+      "pinyin": "bā kuài",
+      "spanish": "ocho yuanes"
+    },
+    {
       "hanzi": "八月",
       "pinyin": "bā yuè",
       "spanish": "agosto"
@@ -1202,6 +1222,11 @@
       "hanzi": "六个女生",
       "pinyin": "Liù ge nǚshēng",
       "spanish": "seis alumnas"
+    },
+    {
+      "hanzi": "六十",
+      "pinyin": "liùshí",
+      "spanish": "sesenta"
     },
     {
       "hanzi": "六月",
@@ -1422,6 +1447,11 @@
       "hanzi": "十二月",
       "pinyin": "shí'èr yuè",
       "spanish": "diciembre"
+    },
+    {
+      "hanzi": "十四块",
+      "pinyin": "shísì kuài",
+      "spanish": "catorce yuanes"
     },
     {
       "hanzi": "十月",
@@ -1832,6 +1862,11 @@
       "hanzi": "四口人",
       "pinyin": "sì kǒu rén",
       "spanish": "cuatro miembros de la familia"
+    },
+    {
+      "hanzi": "四斤",
+      "pinyin": "sì jīn",
+      "spanish": "dos kilos"
     },
     {
       "hanzi": "四月",
@@ -4477,6 +4512,11 @@
       "hanzi": "这个汉语怎么说？",
       "pinyin": "Zhège Hànyǔ zěnme shuō?",
       "spanish": "¿Cómo se dice esto en chino?"
+    },
+    {
+      "hanzi": "这些",
+      "pinyin": "zhèxiē",
+      "spanish": "estos; estas"
     },
     {
       "hanzi": "这些衣服一共多少钱？",

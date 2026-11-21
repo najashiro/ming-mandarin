@@ -1,7 +1,7 @@
 {
   "version": "2.5.0",
-  "fingerprint": "41ee06f0765d52f17830fe93b6515ae1b1bb7835703ffe69aa3851e8d20cc9d4",
-  "corpusFingerprint": "41ee06f0765d52f17830fe93b6515ae1b1bb7835703ffe69aa3851e8d20cc9d4",
+  "fingerprint": "8d49e7ac7f95bc04736becdfcec8635903053f70de9c86bd5efe0be9911bfdc4",
+  "corpusFingerprint": "8d49e7ac7f95bc04736becdfcec8635903053f70de9c86bd5efe0be9911bfdc4",
   "vocabulary": [
     {
       "id": "v-老板",
@@ -8563,6 +8563,79 @@
       "hanzi": "打八五折",
       "pinyin": "dǎ bā wǔ zhé",
       "spanish": "pagar el 85 % del precio"
+    },
+    {
+      "hanzi": "一斤",
+      "pinyin": "yì jīn",
+      "spanish": "medio kilo",
+      "origin": "editorial_sentence_token_support",
+      "sourceSentenceIds": [
+        "s-l7-2",
+        "s-l7-6"
+      ]
+    },
+    {
+      "hanzi": "十四块",
+      "pinyin": "shísì kuài",
+      "spanish": "catorce yuanes",
+      "origin": "editorial_sentence_token_support",
+      "sourceSentenceIds": [
+        "s-l7-6"
+      ]
+    },
+    {
+      "hanzi": "六十",
+      "pinyin": "liùshí",
+      "spanish": "sesenta",
+      "origin": "editorial_sentence_token_support",
+      "sourceSentenceIds": [
+        "s-l7-7"
+      ]
+    },
+    {
+      "hanzi": "八块",
+      "pinyin": "bā kuài",
+      "spanish": "ocho yuanes",
+      "origin": "editorial_sentence_token_support",
+      "sourceSentenceIds": [
+        "s-l7-7"
+      ]
+    },
+    {
+      "hanzi": "两千一百九十一",
+      "pinyin": "liǎngqiān yìbǎi jiǔshíyī",
+      "spanish": "dos mil ciento noventa y uno",
+      "origin": "editorial_sentence_token_support",
+      "sourceSentenceIds": [
+        "s-l7-8"
+      ]
+    },
+    {
+      "hanzi": "这些",
+      "pinyin": "zhèxiē",
+      "spanish": "estos; estas",
+      "origin": "editorial_sentence_token_support",
+      "sourceSentenceIds": [
+        "s-l7-14"
+      ]
+    },
+    {
+      "hanzi": "两斤",
+      "pinyin": "liǎng jīn",
+      "spanish": "un kilo",
+      "origin": "editorial_sentence_token_support",
+      "sourceSentenceIds": [
+        "s-l7-15"
+      ]
+    },
+    {
+      "hanzi": "四斤",
+      "pinyin": "sì jīn",
+      "spanish": "dos kilos",
+      "origin": "editorial_sentence_token_support",
+      "sourceSentenceIds": [
+        "s-l7-15"
+      ]
     }
   ]
 }

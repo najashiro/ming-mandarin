@@ -4,9 +4,10 @@ import studyReference from '../../data/lesson4-study-reference.json' with { type
 import lesson4 from '../../data/lesson4-public.json' with { type: 'json' };
 import lesson5 from '../../data/lesson5-public.json' with { type: 'json' };
 import lesson6 from '../../data/lesson6-public.json' with { type: 'json' };
+import lesson7 from '../../data/lesson7-public.json' with { type: 'json' };
 
-const lessons: CurriculumScope[] = ['l1', 'l2', 'l3', 'l4', 'l5', 'l6'];
-const reviews: CurriculumScope[] = ['l1-l2', 'l1-l2-l3', 'l1-l2-l3-l4', 'l1-l2-l3-l4-l5', 'l1-l2-l3-l4-l5-l6'];
+const lessons: CurriculumScope[] = ['l1', 'l2', 'l3', 'l4', 'l5', 'l6', 'l7'];
+const reviews: CurriculumScope[] = ['l1-l2', 'l1-l2-l3', 'l1-l2-l3-l4', 'l1-l2-l3-l4-l5', 'l1-l2-l3-l4-l5-l6', 'l1-l2-l3-l4-l5-l6-l7'];
 
 test.beforeEach(async ({ context }) => {
   await context.route('**/api/analytics/**', route => route.fulfill({ status: 204, body: '' }));
@@ -21,6 +22,7 @@ const topicIdsByLesson: Record<string, string[]> = {
   l4: studyReference.grammar.filter(point => !point.continuationOf).map(point => point.id),
   l5: lesson5.grammar.map(point => point.id),
   l6: lesson6.grammar.map(point => point.id),
+  l7: lesson7.grammar.map(point => point.id),
 };
 const topicIdsFor = (scope: CurriculumScope) => scope.split('-').flatMap(lesson => topicIdsByLesson[lesson]);
 type FirstExercise = Pick<Exercise, 'id' | 'type' | 'answer' | 'options'>;
@@ -29,7 +31,7 @@ const firstExercises: Record<string, FirstExercise> = {
   l2: { id: 'l2-sentence-1', type: 'order', answer: '陈老师，早上好', options: ['早上好', '陈老师'] },
   l3: { id: 'l3-sentence-1', type: 'order', answer: '你家有几口人', options: ['有', '几口人', '你家'] },
 };
-for (const [scope, data] of [['l4', lesson4], ['l5', lesson5], ['l6', lesson6]] as const) {
+for (const [scope, data] of [['l4', lesson4], ['l5', lesson5], ['l6', lesson6], ['l7', lesson7]] as const) {
   const sentence = data.sentences[0];
   firstExercises[scope] = { id: `${scope}-order-${sentence.id}`, type: 'order', answer: sentence.tokens.join(''), options: [...sentence.tokens.slice(1), sentence.tokens[0]] };
 }
@@ -100,9 +102,19 @@ for (const scope of lessons) {
       await navigation.locator(`[data-topic-id="${id}"]`).click();
       const topic = page.getByTestId('grammar-topic');
       await expect(topic).toHaveAttribute('id', id);
+      const prose = topic.locator('.grammar-topic-explanation > p, .grammar-rule-prose > p, .grammar-clarification > p');
+      await expect(prose.locator('.grammar-inline-reading, .grammar-reading-pinyin, .grammar-reading-spanish'), `${scope}/${id}: las ayudas no interrumpen los párrafos`).toHaveCount(0);
+      const detail = topic.locator('.grammar-rule-detail');
+      if (await detail.count()) {
+        await detail.locator('summary').click();
+        const explanation = (await topic.locator('.grammar-topic-explanation > p').allInnerTexts()).join(' ').trim();
+        expect((await detail.locator('p').first().innerText()).trim(), `${scope}/${id}: la regla no duplica la introducción`).not.toBe(explanation);
+      }
       await expect(topic.locator('.grammar-pattern-guide .audio-control, .grammar-pattern-guide .audio-button'), `${scope}/${id}: paso 01 solo explica el orden`).toHaveCount(0);
       const examples = topic.getByTestId('grammar-example');
       const exampleCount = await examples.count();
+      const exampleTexts = (await examples.locator('.grammar-example-hanzi').allTextContents()).map(text => text.trim());
+      expect(new Set(exampleTexts).size, `${scope}/${id}: cada ejemplo aparece una sola vez`).toBe(exampleTexts.length);
       if (scope !== 'l4') expect(exampleCount, `${scope}/${id} conserva ejemplos`).toBeGreaterThan(0);
       for (let index = 0; index < exampleCount; index++) {
         if (!/\p{Script=Han}/u.test(await examples.nth(index).textContent() ?? '')) continue;
@@ -144,7 +156,7 @@ test('ruta histórica de lección 1 mantiene la misma experiencia de estudio', a
   await checkFirstExercise(page, 'l1');
 });
 
-for (const route of ['/study/l1/grammar', '/study/l5/grammar', '/study/l1-l2-l3-l4-l5-l6/grammar', '/lesson/1/grammar']) {
+for (const route of ['/study/l1/grammar', '/study/l5/grammar', '/study/l7/grammar', '/study/l1-l2-l3-l4-l5-l6-l7/grammar', '/lesson/1/grammar']) {
   test(`${route}: explicación, patrón y ejemplos enlazan Hanzi en otra pestaña`, async ({ page }) => {
     await page.goto(route);
     const topic = page.getByTestId('grammar-topic');
