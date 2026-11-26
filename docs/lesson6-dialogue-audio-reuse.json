@@ -1,0 +1,126 @@
+{
+  "corpusFingerprint": "9ea147def2bcab5b59c3221558e45e6185df71dd2bcdb0a44857ac03a1a2700b",
+  "totalTurns": 31,
+  "reused": [
+    {
+      "dialogueId": "DLG-L6-1",
+      "turn": 1,
+      "phraseId": "PH-L6-33eccade34fcbd68",
+      "input": "你好，请问食堂在哪儿？",
+      "expectedPinyin": "Nǐ hǎo, qǐngwèn shítáng zài nǎr?",
+      "src": "/audio/mandarin/game-33eccade34fcbd68.mp3"
+    },
+    {
+      "dialogueId": "DLG-L6-1",
+      "turn": 2,
+      "phraseId": "PH-L6-d0143e70a3b30b26",
+      "input": "食堂在校门右边。你是新同学吗？",
+      "expectedPinyin": "Shítáng zài xiàomén yòubian. Nǐ shì xīn tóngxué ma?",
+      "src": "/audio/mandarin/game-d0143e70a3b30b26.mp3"
+    },
+    {
+      "dialogueId": "DLG-L6-1",
+      "turn": 5,
+      "phraseId": "PH-L6-ada7306311197e06",
+      "input": "好，谢谢你。",
+      "expectedPinyin": "Hǎo, xièxie nǐ.",
+      "src": "/audio/directions/directions-c8d5b43b0b60fb46.mp3"
+    },
+    {
+      "dialogueId": "DLG-L6-1",
+      "turn": 7,
+      "phraseId": "PH-L6-5151b0825080c52f",
+      "input": "办公楼不太大。图书馆大不大？",
+      "expectedPinyin": "Bàngōnglóu bú tài dà. Túshūguǎn dà bu dà?",
+      "src": "/audio/mandarin/game-5151b0825080c52f.mp3"
+    },
+    {
+      "dialogueId": "DLG-L6-1",
+      "turn": 8,
+      "phraseId": "PH-L6-66796bd0dc82a540",
+      "input": "图书馆很大，在食堂北边。图书馆西边是体育馆。",
+      "expectedPinyin": "Túshūguǎn hěn dà, zài shítáng běibian. Túshūguǎn xībian shì tǐyùguǎn.",
+      "src": "/audio/mandarin/game-66796bd0dc82a540.mp3"
+    },
+    {
+      "dialogueId": "DLG-L6-1",
+      "turn": 9,
+      "phraseId": "PH-L6-cd283fd01c366977",
+      "input": "学校里边有银行吗？",
+      "expectedPinyin": "Xuéxiào lǐbian yǒu yínháng ma?",
+      "src": "/audio/mandarin/game-cd283fd01c366977.mp3"
+    },
+    {
+      "dialogueId": "DLG-L6-1",
+      "turn": 10,
+      "phraseId": "PH-L6-37f81c03ea028f55",
+      "input": "有。银行在图书馆东边。",
+      "expectedPinyin": "Yǒu. Yínháng zài túshūguǎn dōngbian.",
+      "src": "/audio/mandarin/game-37f81c03ea028f55.mp3"
+    },
+    {
+      "dialogueId": "DLG-L6-1",
+      "turn": 13,
+      "phraseId": "PH-L6-e5b8c3a0924e2d3e",
+      "input": "教学楼在哪儿？",
+      "expectedPinyin": "Jiàoxuélóu zài nǎr?",
+      "src": "/audio/mandarin/game-e5b8c3a0924e2d3e.mp3"
+    },
+    {
+      "dialogueId": "DLG-L6-1",
+      "turn": 14,
+      "phraseId": "PH-L6-ced50ccd111628e6",
+      "input": "教学楼在食堂东边。",
+      "expectedPinyin": "Jiàoxuélóu zài shítáng dōngbian.",
+      "src": "/audio/mandarin/game-ced50ccd111628e6.mp3"
+    },
+    {
+      "dialogueId": "DLG-L6-1",
+      "turn": 17,
+      "phraseId": "PH-L6-d8f4824538bd8443",
+      "input": "谢谢你，再见！",
+      "expectedPinyin": "Xièxie nǐ, zàijiàn!",
+      "src": "/audio/directions/directions-8b883dffce10fb3c.mp3"
+    },
+    {
+      "dialogueId": "DLG-L6-2",
+      "turn": 4,
+      "phraseId": "PH-L6-db0e4a269b82c08f",
+      "input": "对面有没有一个饭馆？",
+      "expectedPinyin": "Duìmiàn yǒu méiyǒu yí ge fànguǎn?",
+      "src": "/audio/mandarin/example-797db1479e80f02a.mp3"
+    },
+    {
+      "dialogueId": "DLG-L6-2",
+      "turn": 7,
+      "phraseId": "PH-L6-1ba9b61aae7944da",
+      "input": "等一下，你说什么？",
+      "expectedPinyin": "Děng yíxià, nǐ shuō shénme?",
+      "src": "/audio/mandarin/game-1ba9b61aae7944da.mp3"
+    },
+    {
+      "dialogueId": "DLG-L6-2",
+      "turn": 8,
+      "phraseId": "PH-L6-f4d57975c626d2b7",
+      "input": "饭馆后边有一条胡同，对吗？",
+      "expectedPinyin": "Fànguǎn hòubian yǒu yì tiáo hútòng, duì ma?",
+      "src": "/audio/mandarin/game-f4d57975c626d2b7.mp3"
+    },
+    {
+      "dialogueId": "DLG-L6-2",
+      "turn": 9,
+      "phraseId": "PH-L6-5462183e034de429",
+      "input": "什么叫“胡同”？",
+      "expectedPinyin": "Shénme jiào “hútòng”?",
+      "src": "/audio/mandarin/game-5462183e034de429.mp3"
+    },
+    {
+      "dialogueId": "DLG-L6-2",
+      "turn": 10,
+      "phraseId": "PH-L6-a67cd2261cd908c4",
+      "input": "就是小街道。",
+      "expectedPinyin": "Jiù shì xiǎo jiēdào.",
+      "src": "/audio/mandarin/game-a67cd2261cd908c4.mp3"
+    }
+  ]
+}

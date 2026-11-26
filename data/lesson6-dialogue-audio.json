@@ -1,0 +1,251 @@
+{
+  "version": 1,
+  "corpusFingerprint": "9ea147def2bcab5b59c3221558e45e6185df71dd2bcdb0a44857ac03a1a2700b",
+  "origin": "ming_generated_practice",
+  "authorization": "2026-11-26: completar audios pendientes de los diálogos de la lección 6",
+  "clips": [
+    {
+      "id": "l6-dialogue-0640aee1eddfedbe",
+      "file": "l6-dialogue-0640aee1eddfedbe.mp3",
+      "input": "是啊。我上午刚到学校。",
+      "expectedPinyin": "Shì a. Wǒ shàngwǔ gāng dào xuéxiào.",
+      "lessonId": 6,
+      "usage": [
+        {
+          "dialogueId": "DLG-L6-1",
+          "turn": 3,
+          "phraseId": "PH-L6-255f9fac1ec4b9ed"
+        }
+      ],
+      "instructions": "Pronuncia la intervención completa exactamente una vez, sin introducción ni palabras adicionales. Lectura de referencia: Shì a. Wǒ shàngwǔ gāng dào xuéxiào. No leas el pinyin ni traduzcas. Respeta tonos y sílabas neutras; 这儿 y 哪儿 llevan erhua sin separar 儿."
+    },
+    {
+      "id": "l6-dialogue-ec7e646dfbf5f773",
+      "file": "l6-dialogue-ec7e646dfbf5f773.mp3",
+      "input": "你跟我来，这儿有学校的地图，我给你介绍一下，好吗？",
+      "expectedPinyin": "Nǐ gēn wǒ lái, zhèr yǒu xuéxiào de dìtú, wǒ gěi nǐ jièshào yíxià, hǎo ma?",
+      "lessonId": 6,
+      "usage": [
+        {
+          "dialogueId": "DLG-L6-1",
+          "turn": 4,
+          "phraseId": "PH-L6-5ef61112043c7a88"
+        }
+      ],
+      "instructions": "Pronuncia la intervención completa exactamente una vez, sin introducción ni palabras adicionales. Lectura de referencia: Nǐ gēn wǒ lái, zhèr yǒu xuéxiào de dìtú, wǒ gěi nǐ jièshào yíxià, hǎo ma? No leas el pinyin ni traduzcas. Respeta tonos y sílabas neutras; 这儿 y 哪儿 llevan erhua sin separar 儿."
+    },
+    {
+      "id": "l6-dialogue-ce21a63282caf2fb",
+      "file": "l6-dialogue-ce21a63282caf2fb.mp3",
+      "input": "不客气。你看，食堂旁边是办公楼。",
+      "expectedPinyin": "Bú kèqi. Nǐ kàn, shítáng pángbiān shì bàngōnglóu.",
+      "lessonId": 6,
+      "usage": [
+        {
+          "dialogueId": "DLG-L6-1",
+          "turn": 6,
+          "phraseId": "PH-L6-ff7d6a1db37b7245"
+        }
+      ],
+      "instructions": "Pronuncia la intervención completa exactamente una vez, sin introducción ni palabras adicionales. Lectura de referencia: Bú kèqi. Nǐ kàn, shítáng pángbiān shì bàngōnglóu. No leas el pinyin ni traduzcas. Respeta tonos y sílabas neutras; 这儿 y 哪儿 llevan erhua sin separar 儿. 旁边 se pronuncia pángbiān, con primer tono en biān. 客气 se pronuncia kèqi, con qi neutro."
+    },
+    {
+      "id": "l6-dialogue-31b1cb8315acb6a7",
+      "file": "l6-dialogue-31b1cb8315acb6a7.mp3",
+      "input": "我们的宿舍楼在这儿，对吗？",
+      "expectedPinyin": "Wǒmen de sùshèlóu zài zhèr, duì ma?",
+      "lessonId": 6,
+      "usage": [
+        {
+          "dialogueId": "DLG-L6-1",
+          "turn": 11,
+          "phraseId": "PH-L6-8e5d75e0a7d0d413"
+        }
+      ],
+      "instructions": "Pronuncia la intervención completa exactamente una vez, sin introducción ni palabras adicionales. Lectura de referencia: Wǒmen de sùshèlóu zài zhèr, duì ma? No leas el pinyin ni traduzcas. Respeta tonos y sílabas neutras; 这儿 y 哪儿 llevan erhua sin separar 儿.",
+      "standaloneInstructions": "请用标准普通话清楚、自然、稍慢地只朗读输入的完整句子一次。不要解释、不要加词、不要读拼音。参考读音：Wǒmen de sùshèlóu zài zhèr, duì ma?。宿舍楼 must clearly articulate sù shè lóu, including the e vowel and fourth tone of shè. 保留每个字，轻声自然，不吞音。"
+    },
+    {
+      "id": "l6-dialogue-04123032fb193b4d",
+      "file": "l6-dialogue-04123032fb193b4d.mp3",
+      "input": "对。右边的楼是新同学的宿舍楼。",
+      "expectedPinyin": "Duì. Yòubian de lóu shì xīn tóngxué de sùshèlóu.",
+      "lessonId": 6,
+      "usage": [
+        {
+          "dialogueId": "DLG-L6-1",
+          "turn": 12,
+          "phraseId": "PH-L6-604267c6d289ad8f"
+        }
+      ],
+      "instructions": "Pronuncia la intervención completa exactamente una vez, sin introducción ni palabras adicionales. Lectura de referencia: Duì. Yòubian de lóu shì xīn tóngxué de sùshèlóu. No leas el pinyin ni traduzcas. Respeta tonos y sílabas neutras; 这儿 y 哪儿 llevan erhua sin separar 儿. 右边 se pronuncia yòubian, con bian neutro."
+    },
+    {
+      "id": "l6-dialogue-574e50e07f7b5c07",
+      "file": "l6-dialogue-574e50e07f7b5c07.mp3",
+      "input": "我先看一下教学楼吧。",
+      "expectedPinyin": "Wǒ xiān kàn yíxià jiàoxuélóu ba.",
+      "lessonId": 6,
+      "usage": [
+        {
+          "dialogueId": "DLG-L6-1",
+          "turn": 15,
+          "phraseId": "PH-L6-fd2a833a6e3142b0"
+        }
+      ],
+      "instructions": "Pronuncia la intervención completa exactamente una vez, sin introducción ni palabras adicionales. Lectura de referencia: Wǒ xiān kàn yíxià jiàoxuélóu ba. No leas el pinyin ni traduzcas. Respeta tonos y sílabas neutras; 这儿 y 哪儿 llevan erhua sin separar 儿. 教学楼 se pronuncia jiàoxuélóu."
+    },
+    {
+      "id": "l6-dialogue-66a1101e2ae66884",
+      "file": "l6-dialogue-66a1101e2ae66884.mp3",
+      "input": "好的。再见！",
+      "expectedPinyin": "Hǎo de. Zàijiàn!",
+      "lessonId": 6,
+      "usage": [
+        {
+          "dialogueId": "DLG-L6-1",
+          "turn": 16,
+          "phraseId": "PH-L6-02ac5a687e85096c"
+        }
+      ],
+      "instructions": "Pronuncia la intervención completa exactamente una vez, sin introducción ni palabras adicionales. Lectura de referencia: Hǎo de. Zàijiàn! No leas el pinyin ni traduzcas. Respeta tonos y sílabas neutras; 这儿 y 哪儿 llevan erhua sin separar 儿."
+    },
+    {
+      "id": "l6-dialogue-3dc00d24f490df7d",
+      "file": "l6-dialogue-3dc00d24f490df7d.mp3",
+      "input": "宋华，你家在哪儿？",
+      "expectedPinyin": "Sòng Huá, nǐ jiā zài nǎr?",
+      "lessonId": 6,
+      "usage": [
+        {
+          "dialogueId": "DLG-L6-2",
+          "turn": 1,
+          "phraseId": "PH-L6-f0dda923e4cfbea8"
+        }
+      ],
+      "instructions": "Pronuncia la intervención completa exactamente una vez, sin introducción ni palabras adicionales. Lectura de referencia: Sòng Huá, nǐ jiā zài nǎr? No leas el pinyin ni traduzcas. Respeta tonos y sílabas neutras; 这儿 y 哪儿 llevan erhua sin separar 儿. El nombre 宋华 se pronuncia Sòng Huá."
+    },
+    {
+      "id": "l6-dialogue-7e5297271aa4cccd",
+      "file": "l6-dialogue-7e5297271aa4cccd.mp3",
+      "input": "别着急，林小姐。你现在在什么地方？",
+      "expectedPinyin": "Bié zháojí, Lín xiǎojie. Nǐ xiànzài zài shénme dìfang?",
+      "lessonId": 6,
+      "usage": [
+        {
+          "dialogueId": "DLG-L6-2",
+          "turn": 2,
+          "phraseId": "PH-L6-f38391557dcb10fd"
+        }
+      ],
+      "instructions": "Pronuncia la intervención completa exactamente una vez, sin introducción ni palabras adicionales. Lectura de referencia: Bié zháojí, Lín xiǎojie. Nǐ xiànzài zài shénme dìfang? No leas el pinyin ni traduzcas. Respeta tonos y sílabas neutras; 这儿 y 哪儿 llevan erhua sin separar 儿. 着急 se pronuncia zháojí. 小姐 se pronuncia xiǎojie, con jie neutro. 地方 se pronuncia dìfang, con fang neutro."
+    },
+    {
+      "id": "l6-dialogue-826f105b208f48d2",
+      "file": "l6-dialogue-826f105b208f48d2.mp3",
+      "input": "我也不知道。对了，我在一个超市前边。",
+      "expectedPinyin": "Wǒ yě bù zhīdào. Duì le, wǒ zài yí ge chāoshì qiánbian.",
+      "lessonId": 6,
+      "usage": [
+        {
+          "dialogueId": "DLG-L6-2",
+          "turn": 3,
+          "phraseId": "PH-L6-ad35ff5b26714811"
+        }
+      ],
+      "instructions": "Pronuncia la intervención completa exactamente una vez, sin introducción ni palabras adicionales. Lectura de referencia: Wǒ yě bù zhīdào. Duì le, wǒ zài yí ge chāoshì qiánbian. No leas el pinyin ni traduzcas. Respeta tonos y sílabas neutras; 这儿 y 哪儿 llevan erhua sin separar 儿. 前边 se pronuncia qiánbian, con bian neutro.",
+      "standaloneInstructions": "请用标准普通话清楚、自然、稍慢地只朗读输入的完整句子一次。不要解释、不要加词、不要读拼音。参考读音：Wǒ yě bù zhīdào. Duì le, wǒ zài yí ge chāoshì qiánbian.。前边 must clearly articulate qián bian, with b initial and neutral bian, not liàn. 保留每个字，轻声自然，不吞音。"
+    },
+    {
+      "id": "l6-dialogue-71b982396d0b2fc0",
+      "file": "l6-dialogue-71b982396d0b2fc0.mp3",
+      "input": "有。有一个很大的饭馆。",
+      "expectedPinyin": "Yǒu. Yǒu yí ge hěn dà de fànguǎn.",
+      "lessonId": 6,
+      "usage": [
+        {
+          "dialogueId": "DLG-L6-2",
+          "turn": 5,
+          "phraseId": "PH-L6-3e1759b369eceb39"
+        }
+      ],
+      "instructions": "Pronuncia la intervención completa exactamente una vez, sin introducción ni palabras adicionales. Lectura de referencia: Yǒu. Yǒu yí ge hěn dà de fànguǎn. No leas el pinyin ni traduzcas. Respeta tonos y sílabas neutras; 这儿 y 哪儿 llevan erhua sin separar 儿."
+    },
+    {
+      "id": "l6-dialogue-8152800eacf058be",
+      "file": "l6-dialogue-8152800eacf058be.mp3",
+      "input": "你先过马路。饭馆后边有一条胡同。",
+      "expectedPinyin": "Nǐ xiān guò mǎlù. Fànguǎn hòubian yǒu yì tiáo hútòng.",
+      "lessonId": 6,
+      "usage": [
+        {
+          "dialogueId": "DLG-L6-2",
+          "turn": 6,
+          "phraseId": "PH-L6-a7e7977e4025f20f"
+        }
+      ],
+      "instructions": "Pronuncia la intervención completa exactamente una vez, sin introducción ni palabras adicionales. Lectura de referencia: Nǐ xiān guò mǎlù. Fànguǎn hòubian yǒu yì tiáo hútòng. No leas el pinyin ni traduzcas. Respeta tonos y sílabas neutras; 这儿 y 哪儿 llevan erhua sin separar 儿. 胡同 se pronuncia hútòng, con cuarto tono en tòng. 后边 se pronuncia hòubian, con bian neutro."
+    },
+    {
+      "id": "l6-dialogue-d3cda0c997f5959e",
+      "file": "l6-dialogue-d3cda0c997f5959e.mp3",
+      "input": "对，这儿有一条胡同。",
+      "expectedPinyin": "Duì, zhèr yǒu yì tiáo hútòng.",
+      "lessonId": 6,
+      "usage": [
+        {
+          "dialogueId": "DLG-L6-2",
+          "turn": 11,
+          "phraseId": "PH-L6-31164b1792e0ac27"
+        }
+      ],
+      "instructions": "Pronuncia la intervención completa exactamente una vez, sin introducción ni palabras adicionales. Lectura de referencia: Duì, zhèr yǒu yì tiáo hútòng. No leas el pinyin ni traduzcas. Respeta tonos y sílabas neutras; 这儿 y 哪儿 llevan erhua sin separar 儿. 胡同 se pronuncia hútòng, con cuarto tono en tòng."
+    },
+    {
+      "id": "l6-dialogue-5492270c25ca60df",
+      "file": "l6-dialogue-5492270c25ca60df.mp3",
+      "input": "我家就在这条胡同里，是35号。",
+      "expectedPinyin": "Wǒ jiā jiù zài zhè tiáo hútòng li, shì sānshíwǔ hào.",
+      "lessonId": 6,
+      "usage": [
+        {
+          "dialogueId": "DLG-L6-2",
+          "turn": 12,
+          "phraseId": "PH-L6-17572494b92ab565"
+        }
+      ],
+      "speechInput": "我家就在这条胡同里，是三十五号。",
+      "instructions": "Pronuncia la intervención completa exactamente una vez, sin introducción ni palabras adicionales. Lectura de referencia: Wǒ jiā jiù zài zhè tiáo hútòng li, shì sānshíwǔ hào. No leas el pinyin ni traduzcas. Respeta tonos y sílabas neutras; 这儿 y 哪儿 llevan erhua sin separar 儿. 胡同 se pronuncia hútòng, con cuarto tono en tòng. El número 35 se lee sānshíwǔ. 里 se pronuncia li neutro."
+    },
+    {
+      "id": "l6-dialogue-be6f08c47e8315b5",
+      "file": "l6-dialogue-be6f08c47e8315b5.mp3",
+      "input": "好的，谢谢你。这条街真小。",
+      "expectedPinyin": "Hǎo de, xièxie nǐ. Zhè tiáo jiē zhēn xiǎo.",
+      "lessonId": 6,
+      "usage": [
+        {
+          "dialogueId": "DLG-L6-2",
+          "turn": 13,
+          "phraseId": "PH-L6-619c56ce3309227e"
+        }
+      ],
+      "instructions": "Pronuncia la intervención completa exactamente una vez, sin introducción ni palabras adicionales. Lectura de referencia: Hǎo de, xièxie nǐ. Zhè tiáo jiē zhēn xiǎo. No leas el pinyin ni traduzcas. Respeta tonos y sílabas neutras; 这儿 y 哪儿 llevan erhua sin separar 儿."
+    },
+    {
+      "id": "l6-dialogue-16f1873ad120a04d",
+      "file": "l6-dialogue-16f1873ad120a04d.mp3",
+      "input": "这就是老北京的胡同。",
+      "expectedPinyin": "Zhè jiù shì lǎo Běijīng de hútòng.",
+      "lessonId": 6,
+      "usage": [
+        {
+          "dialogueId": "DLG-L6-2",
+          "turn": 14,
+          "phraseId": "PH-L6-bbeca2c40d80223f"
+        }
+      ],
+      "instructions": "Pronuncia la intervención completa exactamente una vez, sin introducción ni palabras adicionales. Lectura de referencia: Zhè jiù shì lǎo Běijīng de hútòng. No leas el pinyin ni traduzcas. Respeta tonos y sílabas neutras; 这儿 y 哪儿 llevan erhua sin separar 儿. 胡同 se pronuncia hútòng, con cuarto tono en tòng."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-26",
+  "repairs": [
+    {
+      "id": "l6-dialogue-31b1cb8315acb6a7",
+      "previousSha256": "8e8384bcee31e826e20972ae946ee78422ca1162fab6d5baa5bad403b48f113f",
+      "reason": "宿舍楼 must clearly articulate sù shè lóu, including the e vowel and fourth tone of shè.",
+      "instructions": "请用标准普通话清楚、自然、稍慢地只朗读输入的完整句子一次。不要解释、不要加词、不要读拼音。参考读音：Wǒmen de sùshèlóu zài zhèr, duì ma?。宿舍楼 must clearly articulate sù shè lóu, including the e vowel and fourth tone of shè. 保留每个字，轻声自然，不吞音。"
+    },
+    {
+      "id": "l6-dialogue-826f105b208f48d2",
+      "previousSha256": "4df021272156b8a1c7588b95df944e10cea13f649b47b99a0f58e2f48b512d66",
+      "reason": "前边 must clearly articulate qián bian, with b initial and neutral bian, not liàn.",
+      "instructions": "请用标准普通话清楚、自然、稍慢地只朗读输入的完整句子一次。不要解释、不要加词、不要读拼音。参考读音：Wǒ yě bù zhīdào. Duì le, wǒ zài yí ge chāoshì qiánbian.。前边 must clearly articulate qián bian, with b initial and neutral bian, not liàn. 保留每个字，轻声自然，不吞音。"
+    }
+  ]
+}

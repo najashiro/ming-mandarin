@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectDirectory = path.resolve(scriptDirectory, '..');
 const manifestDefinitions = [
+  { path: path.join(projectDirectory, 'data', 'lesson6-dialogue-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin'), scope: 'lesson6-dialogues' },
   { path: path.join(projectDirectory, 'docs', 'lesson7-audio-carrier-plan.json'), directory: path.join(projectDirectory, 'output', 'audio', 'lesson7-carriers'), scope: 'lesson7-carriers' },
   { path: path.join(projectDirectory, 'data', 'lesson7-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin'), scope: 'lesson7' },
   { path: path.join(projectDirectory, 'data', 'vocabulary-example-audio.json'), directory: path.join(projectDirectory, 'public', 'audio', 'mandarin'), scope: 'vocabulary-examples' },

@@ -1,0 +1,167 @@
+{
+  "date": "2026-11-26",
+  "method": "Current-hash MP3 signal checks, independent ASR and automated listening review of every new clip. Focused reviews resolve ASR omissions and number orthography. No independent human listening or comprehensive tone certification.",
+  "total": 16,
+  "results": [
+    {
+      "id": "l6-dialogue-0640aee1eddfedbe",
+      "file": "l6-dialogue-0640aee1eddfedbe.mp3",
+      "input": "是啊。我上午刚到学校。",
+      "expectedPinyin": "Shì a. Wǒ shàngwǔ gāng dào xuéxiào.",
+      "sha256": "2d3a7b6cb4d692b36a4b8a81b3341e37758ddd9062501637c289536171115b73",
+      "status": "accepted",
+      "method": "independent_asr_and_automated_audio_review",
+      "note": "Independent ASR matches the full text after punctuation normalization; automated audio review also passed."
+    },
+    {
+      "id": "l6-dialogue-ec7e646dfbf5f773",
+      "file": "l6-dialogue-ec7e646dfbf5f773.mp3",
+      "input": "你跟我来，这儿有学校的地图，我给你介绍一下，好吗？",
+      "expectedPinyin": "Nǐ gēn wǒ lái, zhèr yǒu xuéxiào de dìtú, wǒ gěi nǐ jièshào yíxià, hǎo ma?",
+      "sha256": "fa4dc8096d8202b58ac9c3dcb1a535a8f9f0496b5daee882a72f21dc57cf058a",
+      "status": "accepted",
+      "method": "independent_asr_and_automated_audio_review",
+      "note": "Independent ASR matches the full text after punctuation normalization; automated audio review also passed."
+    },
+    {
+      "id": "l6-dialogue-ce21a63282caf2fb",
+      "file": "l6-dialogue-ce21a63282caf2fb.mp3",
+      "input": "不客气。你看，食堂旁边是办公楼。",
+      "expectedPinyin": "Bú kèqi. Nǐ kàn, shítáng pángbiān shì bàngōnglóu.",
+      "sha256": "d5fa6b814ec78f2807d19b048c34809ac97ae2b26db7584448fc8409d278f89d",
+      "status": "accepted",
+      "method": "independent_asr_and_automated_audio_review",
+      "note": "Independent ASR matches the full text after punctuation normalization; automated audio review also passed."
+    },
+    {
+      "id": "l6-dialogue-31b1cb8315acb6a7",
+      "file": "l6-dialogue-31b1cb8315acb6a7.mp3",
+      "input": "我们的宿舍楼在这儿，对吗？",
+      "expectedPinyin": "Wǒmen de sùshèlóu zài zhèr, duì ma?",
+      "sha256": "1174f9e7f9dd4ff32f0bfdb13c6fb8041a2716ea7f97fab8dba4e752f0fc0d44",
+      "status": "accepted",
+      "method": "independent_asr_and_automated_audio_review",
+      "note": "Independent ASR matches the full text after punctuation normalization; automated audio review also passed."
+    },
+    {
+      "id": "l6-dialogue-04123032fb193b4d",
+      "file": "l6-dialogue-04123032fb193b4d.mp3",
+      "input": "对。右边的楼是新同学的宿舍楼。",
+      "expectedPinyin": "Duì. Yòubian de lóu shì xīn tóngxué de sùshèlóu.",
+      "sha256": "cc303969944de09603afa7b6c92694f82b1f0d34dc7f3953204809d179d626bd",
+      "status": "accepted",
+      "method": "independent_asr_and_automated_audio_review",
+      "note": "Independent ASR matches the full text after punctuation normalization; automated audio review also passed."
+    },
+    {
+      "id": "l6-dialogue-574e50e07f7b5c07",
+      "file": "l6-dialogue-574e50e07f7b5c07.mp3",
+      "input": "我先看一下教学楼吧。",
+      "expectedPinyin": "Wǒ xiān kàn yíxià jiàoxuélóu ba.",
+      "sha256": "68bebe595516dc324e0acd3d3b4e80210cad8ae5ffbaa8a707a2c10da7a844d1",
+      "status": "accepted",
+      "method": "independent_asr_and_automated_audio_review",
+      "note": "Independent ASR matches the full text after punctuation normalization; automated audio review also passed."
+    },
+    {
+      "id": "l6-dialogue-66a1101e2ae66884",
+      "file": "l6-dialogue-66a1101e2ae66884.mp3",
+      "input": "好的。再见！",
+      "expectedPinyin": "Hǎo de. Zàijiàn!",
+      "sha256": "45679a3595dd242d699f7c478afca238c46bfee8638d8d30cfd41adc612e8037",
+      "status": "accepted",
+      "method": "independent_asr_and_automated_audio_review",
+      "note": "Independent ASR matches the full text after punctuation normalization; automated audio review also passed."
+    },
+    {
+      "id": "l6-dialogue-3dc00d24f490df7d",
+      "file": "l6-dialogue-3dc00d24f490df7d.mp3",
+      "input": "宋华，你家在哪儿？",
+      "expectedPinyin": "Sòng Huá, nǐ jiā zài nǎr?",
+      "sha256": "4fb0303215c4ab72e0aa4a2615204e030f5ad5813aca89b2b795bc5446dce736",
+      "status": "accepted",
+      "method": "independent_asr_and_automated_audio_review",
+      "note": "Independent ASR matches the full text after punctuation normalization; automated audio review also passed."
+    },
+    {
+      "id": "l6-dialogue-7e5297271aa4cccd",
+      "file": "l6-dialogue-7e5297271aa4cccd.mp3",
+      "input": "别着急，林小姐。你现在在什么地方？",
+      "expectedPinyin": "Bié zháojí, Lín xiǎojie. Nǐ xiànzài zài shénme dìfang?",
+      "sha256": "7f95d22b6b113c4330e78821d11f3f083f3ac157f27d971a31c4c13531ab0de1",
+      "status": "accepted",
+      "method": "independent_asr_and_automated_audio_review",
+      "note": "Independent ASR matches the full text after punctuation normalization; automated audio review also passed."
+    },
+    {
+      "id": "l6-dialogue-826f105b208f48d2",
+      "file": "l6-dialogue-826f105b208f48d2.mp3",
+      "input": "我也不知道。对了，我在一个超市前边。",
+      "expectedPinyin": "Wǒ yě bù zhīdào. Duì le, wǒ zài yí ge chāoshì qiánbian.",
+      "sha256": "a29771650b6c2634a92325bf699e336146899d88e6668559f8a8b0193130a54a",
+      "status": "accepted",
+      "method": "independent_asr_and_automated_audio_review",
+      "note": "Independent ASR matches the full text after punctuation normalization; automated audio review also passed."
+    },
+    {
+      "id": "l6-dialogue-71b982396d0b2fc0",
+      "file": "l6-dialogue-71b982396d0b2fc0.mp3",
+      "input": "有。有一个很大的饭馆。",
+      "expectedPinyin": "Yǒu. Yǒu yí ge hěn dà de fànguǎn.",
+      "sha256": "fd1fc52ddd02dcd6185ae78de9276887350d9226ba4ca65922db5f0745919736",
+      "status": "accepted",
+      "method": "independent_asr_and_automated_audio_review",
+      "note": "ASR collapsed the first standalone 有. Audio review and a focused review without the expected text both confirm two audible yǒu separated by a pause."
+    },
+    {
+      "id": "l6-dialogue-8152800eacf058be",
+      "file": "l6-dialogue-8152800eacf058be.mp3",
+      "input": "你先过马路。饭馆后边有一条胡同。",
+      "expectedPinyin": "Nǐ xiān guò mǎlù. Fànguǎn hòubian yǒu yì tiáo hútòng.",
+      "sha256": "e951aec0f3c4d5a17bf61adbf8965a9779da761905b360d736d63017a2f9c356",
+      "status": "accepted",
+      "method": "independent_asr_and_automated_audio_review",
+      "note": "Independent ASR matches the full text after punctuation normalization; automated audio review also passed."
+    },
+    {
+      "id": "l6-dialogue-d3cda0c997f5959e",
+      "file": "l6-dialogue-d3cda0c997f5959e.mp3",
+      "input": "对，这儿有一条胡同。",
+      "expectedPinyin": "Duì, zhèr yǒu yì tiáo hútòng.",
+      "sha256": "a8d8781623982ff65bba12ea2994676a887923b79bf149d54fabfc134e69e961",
+      "status": "accepted",
+      "method": "independent_asr_and_automated_audio_review",
+      "note": "Independent ASR matches the full text after punctuation normalization; automated audio review also passed."
+    },
+    {
+      "id": "l6-dialogue-5492270c25ca60df",
+      "file": "l6-dialogue-5492270c25ca60df.mp3",
+      "input": "我家就在这条胡同里，是35号。",
+      "expectedPinyin": "Wǒ jiā jiù zài zhè tiáo hútòng li, shì sānshíwǔ hào.",
+      "sha256": "d1b15d09ed753d9313d0eb1608de1bf05e82332daef3c187c222a9b1fabfcc82",
+      "status": "accepted",
+      "method": "independent_asr_and_automated_audio_review",
+      "note": "ASR writes 三十五 instead of the displayed 35; both represent sānshíwǔ. Focused review confirms the number, fourth tone in tòng and neutral locative li."
+    },
+    {
+      "id": "l6-dialogue-be6f08c47e8315b5",
+      "file": "l6-dialogue-be6f08c47e8315b5.mp3",
+      "input": "好的，谢谢你。这条街真小。",
+      "expectedPinyin": "Hǎo de, xièxie nǐ. Zhè tiáo jiē zhēn xiǎo.",
+      "sha256": "84eb3412d10e74fc5ef3c4fc792368b2020be838a2d692936408cb1785d80b18",
+      "status": "accepted",
+      "method": "independent_asr_and_automated_audio_review",
+      "note": "Independent ASR matches the full text after punctuation normalization; automated audio review also passed."
+    },
+    {
+      "id": "l6-dialogue-16f1873ad120a04d",
+      "file": "l6-dialogue-16f1873ad120a04d.mp3",
+      "input": "这就是老北京的胡同。",
+      "expectedPinyin": "Zhè jiù shì lǎo Běijīng de hútòng.",
+      "sha256": "c3ae677abeb0fef91b15f9bcdfa56f32a7508d61cc3ebb0bc1f113bab27cd1a9",
+      "status": "accepted",
+      "method": "independent_asr_and_automated_audio_review",
+      "note": "Independent ASR matches the full text after punctuation normalization; automated audio review also passed."
+    }
+  ]
+}

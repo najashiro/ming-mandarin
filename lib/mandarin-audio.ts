@@ -1,4 +1,6 @@
 import lesson5Audio from '@/data/lesson5-audio.json';
+import lesson6DialogueAudio from '@/data/lesson6-dialogue-audio.json';
+import lesson6DialogueAvailable from '@/data/lesson6-dialogue-audio-available.json';
 import lesson7Audio from '@/data/lesson7-audio.json';
 import lesson7Available from '@/data/lesson7-audio-available.json';
 import lesson5Available from '@/data/lesson5-audio-available.json';
@@ -131,6 +133,13 @@ for (const clip of vocabularyExampleAudio.clips) {
 const availableLesson7Files = new Set<string>(lesson7Available.files);
 for (const clip of lesson7Audio.clips) {
   if (availableLesson7Files.has(clip.file)) addMissingRecording(clip, 'mandarin');
+}
+
+// Complete L6 dialogue turns only after current-file audio verification.
+// Preserve existing recordings and require the documented reading to match.
+const availableLesson6DialogueFiles = new Set<string>(lesson6DialogueAvailable.files);
+for (const clip of lesson6DialogueAudio.clips) {
+  if (availableLesson6DialogueFiles.has(clip.file)) addMissingRecording(clip, 'mandarin');
 }
 
 export function audioForMandarinText(text: string, pinyin?: string): string | undefined {
